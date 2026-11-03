@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://ministere-travail-rca.com/wp-content/uploads/2024/12/Code-de-Securite-Sociale-RCA.pdf",
+    "date": "2026-11-01",
+    "result": "curl and urllib TLS failure; normal browser ERR_SSL_PROTOCOL_ERROR. Not read. No certificate check bypass."
+  },
+  {
+    "url": "https://cnsscentrafrique.org/les-cotisations-sociales/",
+    "date": "2026-11-01",
+    "result": "Direct403; web reader404/502; normal browser404NotFound. Not read. Search snippet not promoted to a legal source."
+  },
+  {
+    "url": "https://cnsscentrafrique.org/wp-content/uploads/2024/07/DECLARATION-DE-COTISATIONS-SOCIALES_20240504_0001_compressed.pdf",
+    "date": "2026-11-01",
+    "result": "Web reader502. Not read."
+  }
+]

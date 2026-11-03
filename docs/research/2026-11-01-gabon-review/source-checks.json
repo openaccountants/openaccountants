@@ -1,0 +1,90 @@
+[
+  {
+    "id": "CGI",
+    "file": "cgi-2025.pdf",
+    "sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "manifest_hash_matches": true,
+    "url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "unsandboxed_direct_matches_cache": true
+  },
+  {
+    "id": "LF",
+    "file": "lf-2026.pdf",
+    "sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "manifest_hash_matches": true,
+    "url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "unsandboxed_direct_matches_cache": true
+  },
+  {
+    "id": "LFR",
+    "file": "lfr-2026.pdf",
+    "sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "manifest_hash_matches": true,
+    "url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "unsandboxed_direct_matches_cache": true
+  },
+  {
+    "id": "OHADA",
+    "file": "auscgie-2014.pdf",
+    "sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "manifest_hash_matches": true,
+    "url": "https://www.wto.org/english/thewto_e/acc_e/com_e/WTACCCOM19_LEG2.pdf",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c",
+    "unsandboxed_direct_matches_cache": true
+  },
+  {
+    "id": "CNSS",
+    "file": "cnss-decree.html",
+    "sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
+    "manifest_hash_matches": true,
+    "url": "https://journal-officiel.ga/22255-0487-pr-masi-/",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
+    "unsandboxed_direct_matches_cache": true
+  },
+  {
+    "id": "CNAMGS",
+    "file": "cnamgs.html",
+    "sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2",
+    "manifest_hash_matches": true,
+    "url": "https://cnamgs.ga/payement-des-cotisations-employeurs/",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2",
+    "unsandboxed_direct_matches_cache": true
+  },
+  {
+    "id": "ANPI",
+    "file": "anpi.html",
+    "sha256": "1d3282a10d05ac997523b385e2019251ff58a34e7f9891bde894c8621c5f08aa",
+    "manifest_hash_matches": true,
+    "url": "https://www.investingabon.ga/formalisation",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "446920fea394d0b5e4b4c51cb4c144c3b4e29131ed180592883f9a32b604f89e",
+    "unsandboxed_direct_matches_cache": false
+  },
+  {
+    "id": "CNSSPOST",
+    "file": "cnss-announcement-read-excerpt.txt",
+    "sha256": "e59d658bb289dcb8acabba463eada3c2aaf33a394ed8fe6b413ee7f934f3354e",
+    "manifest_hash_matches": true,
+    "url": "https://fr.linkedin.com/posts/cnss-gabon_cnssemployeur-cnsstravailleur-cnsspluspr%C3%A8sdevous-activity-7416830583407910912-XCKD",
+    "direct_failure": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "unsandboxed_direct_status": 200,
+    "unsandboxed_direct_sha256": "6493432bd214dcfe7d24332fa2aa998431e4cb47cc19f4fff352c9a4c55de31b",
+    "unsandboxed_direct_matches_cache": false
+  }
+]

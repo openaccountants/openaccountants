@@ -1,0 +1,24 @@
+{
+  "status": "Two repairs required before source-fidelity acceptance",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "repair required",
+      "file": "skills/sierra-leone/sl-vat-gst.md",
+      "issue": "Sources row FinanceAct2026 links to GST2016 compilation filename ending .pdfZ. Replace with actual FinanceAct2026 URL already used correctly by the rule links and manifest.",
+      "expected_url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf"
+    },
+    {
+      "id": "F2",
+      "severity": "repair required",
+      "files": [
+        "skills/sierra-leone/sl-vat-gst.md",
+        "evidence/ledgers/sierra-leone-gst-20261101/rules.json",
+        "evidence/ledgers/sierra-leone-gst-20261101/sl-vat-gst.md",
+        "evidence/ledgers/sierra-leone-gst-20261101/source-read-manifest.json"
+      ],
+      "issue": "Wrong physical-page locators: 2022 GST37s19 is physical10 printed11; GST58s20 and ss21-23 are physical9 printed12. 2025 GST19s12 is physical10 printed10; return and penaltys13 is physical11 printed11. Correct Guide Sources physical6-7/9 claims, G26/G36 physical9, G37physical6, G38physical7, and manifestF25 physical9. Actual printed locators substantively correct."
+    }
+  ],
+  "limits": "All41rows checked;12oldtopics checked;2examples recomputed. No new substantive law defect found. Full operative chain, schedule anomalies, current filing, penalty priority and accountant attestation remain open."
+}

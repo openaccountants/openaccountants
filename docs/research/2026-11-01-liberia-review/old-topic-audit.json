@@ -1,0 +1,644 @@
+{
+  "candidate": "ae03c48733c558b6c8df9945a9810c5ebbe30bf8",
+  "files": [
+    {
+      "file": "lr-company-formation.md",
+      "named_bullets": 10,
+      "all_named_bullets_present": true,
+      "extra_narrative_entries": 2
+    },
+    {
+      "file": "lr-corporate-income-tax.md",
+      "named_bullets": 14,
+      "all_named_bullets_present": true,
+      "extra_narrative_entries": 4
+    },
+    {
+      "file": "lr-income-tax.md",
+      "named_bullets": 16,
+      "all_named_bullets_present": true,
+      "extra_narrative_entries": 0
+    },
+    {
+      "file": "lr-payroll-social.md",
+      "named_bullets": 9,
+      "all_named_bullets_present": true,
+      "extra_narrative_entries": 0
+    },
+    {
+      "file": "lr-tax-overview.md",
+      "named_bullets": 11,
+      "all_named_bullets_present": true,
+      "extra_narrative_entries": 0
+    },
+    {
+      "file": "lr-vat-gst.md",
+      "named_bullets": 8,
+      "all_named_bullets_present": true,
+      "extra_narrative_entries": 1
+    }
+  ],
+  "entries": [
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Common entity types",
+      "old_text": "- **Common entity types** \u2014 Sole proprietorship, partnership, limited liability company (LLC), and business corporation (including non-resident/offshore corporations)  _(Associations Law of Liberia (Business Corporation Act) \u2014 https://lbr.gov.lr/about/)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-company-formation.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Governing law",
+      "old_text": "- **Governing law** \u2014 Associations Law, Title 5 of the Liberian Code of Laws Revised \u2014 incl. the Business Corporation Act  _(Associations Law of Liberia (Business Corporation Act))_",
+      "status": "Not yet confirmed; old unsupported claim withheld",
+      "destination": "lr-company-formation.md Sources: Not yet confirmed"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Registration authority",
+      "old_text": "- **Registration authority** \u2014 Liberia Business Registry (LBR), Ministry of Commerce and Industry  _(Liberia Business Registry \u2014 https://lbr.gov.lr/about/)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-company-formation.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Minimum share capital",
+      "old_text": "- **Minimum share capital** \u2014 No statutory minimum paid-up capital for an ordinary domestic company; a nominal authorised capital is declared (approx \u2014 confirm by entity type)  _(Associations Law of Liberia (Business Corporation Act))_",
+      "status": "Not yet confirmed; old unsupported claim withheld",
+      "destination": "lr-company-formation.md Sources: Not yet confirmed"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Name reservation",
+      "old_text": "- **Name reservation** \u2014 Reserve a unique company name online with the LBR; reservation is valid for 6 months  _(Liberia Business Registry)_",
+      "status": "Corrected120days not six months",
+      "destination": "lr-company-formation.md F04"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Core incorporation documents",
+      "old_text": "- **Core incorporation documents** \u2014 Registration Form (RF-001), Articles of Incorporation, incorporator/shareholder forms, ID documents, and tax-authority (TIN) information form  _(Liberia Business Registry)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-company-formation.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Tax registration",
+      "old_text": "- **Tax registration** \u2014 Obtain a Tax Identification Number (TIN) from the Liberia Revenue Authority as part of registration  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-company-formation.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Typical incorporation timeline",
+      "old_text": "- **Typical incorporation timeline** \u2014 Approximately 1 to 3 working days for domestic registration via the LBR (approx \u2014 confirm)  _(Liberia Business Registry)_",
+      "status": "Not yet confirmed; old unsupported claim withheld",
+      "destination": "lr-company-formation.md Sources: Not yet confirmed"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Indicative registration cost",
+      "old_text": "- **Indicative registration cost** \u2014 Government/agent fees commonly from around USD 700, with annual renewal of around USD 900 (varies by provider and entity type) USD (approx \u2014 confirm)  _(Liberia Business Registry)_",
+      "status": "Not yet confirmed; old unsupported claim withheld",
+      "destination": "lr-company-formation.md Sources: Not yet confirmed"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Core annual compliance",
+      "old_text": "- **Core annual compliance** \u2014 Annual business-registration renewal, annual income tax return (by 31 March for calendar-year filers), quarterly advance tax, and monthly PAYE/GST/NASSCORP filings where applicable  _(Liberia Revenue Code; Liberia Business Registry)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-company-formation.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Introductory/bridging paragraph",
+      "old_text": "Companies in Liberia are formed under the Associations Law (Business Corporation Act) and registered with the Liberia Business Registry (LBR). Common forms include the business corporation, limited liability company, partnership and sole proprietorship.",
+      "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
+      "destination": "lr-company-formation.md Who/base, Sources gaps and linked owning Guides"
+    },
+    {
+      "old_file": "lr-company-formation.md",
+      "old_blob": "ea062cc171aca02e5d77ba62ea05c4007680a38a",
+      "topic": "Introductory/bridging paragraph",
+      "old_text": "There is generally no statutory minimum paid-up capital for an ordinary domestic company. Incorporation is largely online via the LBR and can be completed within a few working days.",
+      "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
+      "destination": "lr-company-formation.md Who/base, Sources gaps and linked owning Guides"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Standard corporate income tax rate",
+      "old_text": "- **Standard corporate income tax rate** \u2014 25% percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/taxes-on-corporate-income))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md C01/C09"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Mining and petroleum (extractive) sector rate",
+      "old_text": "- **Mining and petroleum (extractive) sector rate** \u2014 30% percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/taxes-on-corporate-income))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Specialised sectors",
+      "old_text": "- **Specialised sectors** \u2014 Specialised sectors are assessed at rates ranging from 15% to 30% percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/taxes-on-corporate-income))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Minimum / advance turnover tax",
+      "old_text": "- **Minimum / advance turnover tax** \u2014 2% of gross income, creditable against the annual income tax liability (acts as a minimum tax) percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/tax-administration))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Resident company tax base",
+      "old_text": "- **Resident company tax base** \u2014 Worldwide income (net profit after allowable deductions)  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Non-resident company tax base",
+      "old_text": "- **Non-resident company tax base** \u2014 Liberia-source income only  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Corporate residence",
+      "old_text": "- **Corporate residence** \u2014 A company incorporated in Liberia or having its place of effective management in Liberia is treated as resident ((approx \u2014 confirm))  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md C11, full statutory conditional test"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Dividends WHT",
+      "old_text": "- **Dividends WHT** \u2014 15% (residents and non-residents) percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/withholding-taxes))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-cross-border.md W01\u2013W09"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Interest WHT",
+      "old_text": "- **Interest WHT** \u2014 15% (residents and non-residents) percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/withholding-taxes))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-cross-border.md W01\u2013W09"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Royalties WHT",
+      "old_text": "- **Royalties WHT** \u2014 15% (residents and non-residents) percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/withholding-taxes))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-cross-border.md W01\u2013W09"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Services WHT (resident)",
+      "old_text": "- **Services WHT (resident)** \u2014 10% percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/withholding-taxes))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-cross-border.md W01\u2013W09"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Services WHT (non-resident)",
+      "old_text": "- **Services WHT (non-resident)** \u2014 20% percent  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/withholding-taxes))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-cross-border.md W01\u2013W09"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Annual return / final payment deadline",
+      "old_text": "- **Annual return / final payment deadline** \u2014 Last day of the third month after the end of the tax year (31 March for calendar-year taxpayers)  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/tax-administration))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Quarterly advance tax",
+      "old_text": "- **Quarterly advance tax** \u2014 Advance tax (2% of gross income) due quarterly, on the 15th day after the end of each quarter ((approx \u2014 confirm exact date))  _([Liberia Revenue Code](https://taxsummaries.pwc.com/republic-of-liberia/corporate/tax-administration))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Introductory/bridging paragraph",
+      "old_text": "The standard corporate income tax rate is 25%, with higher rates for extractive sectors. A turnover-based minimum/advance tax also applies.",
+      "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
+      "destination": "lr-corporate-income-tax.md Who/base, Sources gaps and linked owning Guides"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Introductory/bridging paragraph",
+      "old_text": "Resident companies are taxed on worldwide income; non-resident companies on Liberia-source income. The base is accounting profit adjusted for tax purposes.",
+      "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
+      "destination": "lr-corporate-income-tax.md Who/base, Sources gaps and linked owning Guides"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Introductory/bridging paragraph",
+      "old_text": "Liberia imposes withholding tax on dividends, interest, royalties and service payments; rates differ for residents and non-residents and may be reduced by treaty.",
+      "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
+      "destination": "lr-corporate-income-tax.md Who/base, Sources gaps and linked owning Guides"
+    },
+    {
+      "old_file": "lr-corporate-income-tax.md",
+      "old_blob": "bc93ec4c24433300b58e770a6f69e63af508ddd8",
+      "topic": "Introductory/bridging paragraph",
+      "old_text": "Companies file an annual income tax return and make quarterly advance payments under the Revenue Code.",
+      "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
+      "destination": "lr-corporate-income-tax.md Who/base, Sources gaps and linked owning Guides"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Resident taxation basis",
+      "old_text": "- **Resident taxation basis** \u2014 Resident individuals are taxed on a progressive scale under the Liberia Revenue Code, with the first LRD 70,000 of taxable income exempt. Salaried employees are taxed through monthly PAYE withholding.  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Band 1: LRD 0 - 70,000",
+      "old_text": "- **Band 1: LRD 0 - 70,000** \u2014 Nil (0%) percent  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Band 2: LRD 70,001 - 200,000",
+      "old_text": "- **Band 2: LRD 70,001 - 200,000** \u2014 5% of the excess over LRD 70,000 percent  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Band 3: LRD 200,001 - 800,000",
+      "old_text": "- **Band 3: LRD 200,001 - 800,000** \u2014 LRD 6,500 + 15% of the excess over LRD 200,000  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Band 4: LRD 800,001 and above",
+      "old_text": "- **Band 4: LRD 800,001 and above** \u2014 LRD 96,500 + 25% of the excess over LRD 800,000  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Tax-free threshold",
+      "old_text": "- **Tax-free threshold** \u2014 LRD 70,000 per year (approx. LRD 5,833 per month) LRD  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Non-resident taxation basis",
+      "old_text": "- **Non-resident taxation basis** \u2014 Non-resident individuals are generally taxed at a flat rate on Liberia-source income, with no benefit of the progressive bands.  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Non-resident flat income tax rate",
+      "old_text": "- **Non-resident flat income tax rate** \u2014 20% (previously 15%) percent  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_",
+      "status": "Corrected: no universal rate; payment classification required",
+      "destination": "lr-cross-border.md W05\u2013W10 and lr-income-tax.md Sources"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Non-resident taxable scope",
+      "old_text": "- **Non-resident taxable scope** \u2014 Liberia-source income only (e.g. employment exercised in Liberia, Liberia-source business income)  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Deductions and residence overview",
+      "old_text": "- **Deductions and residence overview** \u2014 Mandatory NASSCORP pension contributions are deductible in computing taxable income. Residence is generally determined by physical presence in Liberia.  _(Liberia Revenue Code)_",
+      "status": "Not yet confirmed; old unsupported claim withheld",
+      "destination": "lr-income-tax.md Sources: Not yet confirmed"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "NASSCORP pension contribution",
+      "old_text": "- **NASSCORP pension contribution** \u2014 Mandatory employee pension contribution is deductible from taxable income  _(Liberia Revenue Code; NASSCORP Act \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/deductions)_",
+      "status": "Not yet confirmed; old unsupported claim withheld",
+      "destination": "lr-income-tax.md Sources: Not yet confirmed"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Individual residence test",
+      "old_text": "- **Individual residence test** \u2014 An individual present in Liberia for 183 days or more in a 12-month period is generally treated as resident ((approx \u2014 confirm))  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/residence)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Employment income collection",
+      "old_text": "- **Employment income collection** \u2014 Collected via monthly PAYE withholding by the employer  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "PAYE remittance deadline",
+      "old_text": "- **PAYE remittance deadline** \u2014 By the 10th day of the month following the month of payment ((approx \u2014 confirm))  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Annual individual return deadline",
+      "old_text": "- **Annual individual return deadline** \u2014 Last day of the third month after year-end (31 March for calendar-year taxpayers)  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/tax-administration)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-income-tax.md",
+      "old_blob": "0459a19821ae26b6f7a657f211c85026e7b5661a",
+      "topic": "Capital gains",
+      "old_text": "- **Capital gains** \u2014 Generally taxed as ordinary income (no separate CGT regime)  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/individual/income-determination)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "NASSCORP overview",
+      "old_text": "- **NASSCORP overview** \u2014 Employers and employees contribute to NASSCORP, which runs a National Pension Scheme and an Employment Injury Scheme. Expatriate employees are generally not exempt.",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "Employee NASSCORP contribution",
+      "old_text": "- **Employee NASSCORP contribution** \u2014 4% of gross salary (pension scheme) percent  _(NASSCORP Act / Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/corporate/other-taxes)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "Employer NASSCORP contribution",
+      "old_text": "- **Employer NASSCORP contribution** \u2014 6% of gross salary (4% pension + 2% employment-injury) percent  _(NASSCORP Act / Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/corporate/other-taxes)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "Employer pension portion",
+      "old_text": "- **Employer pension portion** \u2014 4% of gross salary (national pension scheme) percent  _(NASSCORP Act)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "Employer employment-injury portion",
+      "old_text": "- **Employer employment-injury portion** \u2014 2% of gross salary (employment injury scheme) percent  _(NASSCORP Act)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "Expatriate coverage",
+      "old_text": "- **Expatriate coverage** \u2014 Expatriate employees are generally not exempt from NASSCORP contributions  _(NASSCORP Act \u2014 https://taxsummaries.pwc.com/republic-of-liberia/corporate/other-taxes)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "Payroll income tax withholding (PAYE)",
+      "old_text": "- **Payroll income tax withholding (PAYE)** \u2014 Employer withholds personal income tax on salaries using the resident progressive bands (or 20% for non-residents)  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "PAYE remittance deadline",
+      "old_text": "- **PAYE remittance deadline** \u2014 By the 10th day of the month following payment of wages (approx \u2014 confirm) (approx \u2014 confirm)  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-payroll-social.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-payroll-social.md",
+      "old_blob": "242bf75527027de9e170ed9becfc4b9e2489ee35",
+      "topic": "NASSCORP remittance deadline",
+      "old_text": "- **NASSCORP remittance deadline** \u2014 Monthly remittance to NASSCORP, generally by the 10th of the following month (approx \u2014 confirm) (approx \u2014 confirm)  _(NASSCORP Act)_",
+      "status": "Corrected; contribution/reporting dates separated",
+      "destination": "lr-payroll-social.md S04\u2013S05"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "National tax authority",
+      "old_text": "- **National tax authority** \u2014 Liberia Revenue Authority (LRA), under the Ministry of Finance and Development Planning  _(Liberia Revenue Authority Act (https://revenue.lra.gov.lr/))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-tax-overview.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Primary tax statute",
+      "old_text": "- **Primary tax statute** \u2014 Liberia Revenue Code of 2000 (as amended, incl. 2011 and 2020 amendments)  _(Liberia Revenue Code (https://revenue.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-tax-overview.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Standard tax year",
+      "old_text": "- **Standard tax year** \u2014 Calendar year (1 January to 31 December); approved substituted accounting periods are possible  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-tax-overview.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Currency",
+      "old_text": "- **Currency** \u2014 Liberian dollar (LRD) and United States dollar (USD) \u2014 dual-currency economy  _(Liberia Revenue Code (https://taxsummaries.pwc.com/republic-of-liberia))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-tax-overview.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Basis of taxation",
+      "old_text": "- **Basis of taxation** \u2014 Residents are taxed on worldwide income; non-residents are taxed on Liberia-source income only  _(Liberia Revenue Code (https://taxsummaries.pwc.com/republic-of-liberia/individual/residence))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-tax-overview.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Top personal income tax rate (resident)",
+      "old_text": "- **Top personal income tax rate (resident)** \u2014 25 percent  _(Liberia Revenue Code (https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-income-tax.md table I01\u2013I05"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Standard corporate income tax rate",
+      "old_text": "- **Standard corporate income tax rate** \u2014 25 percent  _(Liberia Revenue Code (https://taxsummaries.pwc.com/republic-of-liberia/corporate/taxes-on-corporate-income))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-corporate-income-tax.md C01/C09"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Indirect tax (consumption tax)",
+      "old_text": "- **Indirect tax (consumption tax)** \u2014 Goods and Services Tax (GST) applies; VAT is expected to replace GST (announced for on/around 1 Jan 2027 \u2014 confirm timing) ((approx \u2014 confirm))  _(Liberia Revenue Code (https://taxsummaries.pwc.com/republic-of-liberia/corporate/other-taxes))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "GST general rate",
+      "old_text": "- **GST general rate** \u2014 12% (general rate, increased from 10%); communication/telecom services 15% percent (general rate; communication/telecom services rate differs)  _(Liberia Revenue Code (https://taxsummaries.pwc.com/republic-of-liberia/corporate/other-taxes))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Annual income tax return deadline",
+      "old_text": "- **Annual income tax return deadline** \u2014 Last day of the third month after the end of the tax year (31 March for calendar-year taxpayers)  _(Liberia Revenue Code (https://taxsummaries.pwc.com/republic-of-liberia/corporate/tax-administration))_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-tax-overview.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-tax-overview.md",
+      "old_blob": "0c9eeb391fa7dc6acd5d8ec1022029782712d301",
+      "topic": "Social security scheme",
+      "old_text": "- **Social security scheme** \u2014 National Social Security and Welfare Corporation (NASSCORP) \u2014 pension and employment-injury schemes  _(NASSCORP Act / Decree creating the National Social Security and Welfare Corporation)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-tax-overview.md scope/rates/base/filing and rule IDs in its ledger"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "Consumption tax type",
+      "old_text": "- **Consumption tax type** \u2014 GST (single-stage), not a credit-invoice VAT; VAT replacement announced for around 1 Jan 2027 ((approx \u2014 confirm timing))  _(Liberia Revenue Code \u2014 https://www.vatcalc.com/liberia/liberia-looks-to-implement-vat/)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "GST general rate",
+      "old_text": "- **GST general rate** \u2014 12 percent (general rate, increased from 10%)  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/corporate/other-taxes)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "GST on listed goods (Revenue Code base rate)",
+      "old_text": "- **GST on listed goods (Revenue Code base rate)** \u2014 7 percent (on certain manufactured/imported goods listed in the Revenue Code (verify against current LRA notice \u2014 superseded by the general-rate increase) ((approx \u2014 confirm current rate)))  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "GST on listed services (Revenue Code base rate)",
+      "old_text": "- **GST on listed services (Revenue Code base rate)** \u2014 10 percent (on listed services in the Revenue Code (verify against current LRA notice) ((approx \u2014 confirm current rate)))  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "GST on communication/telecom services",
+      "old_text": "- **GST on communication/telecom services** \u2014 15 percent  _(Liberia Revenue Code \u2014 https://taxsummaries.pwc.com/republic-of-liberia/corporate/other-taxes)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "GST registration threshold",
+      "old_text": "- **GST registration threshold** \u2014 5,000,000 LRD (Annual turnover of taxable goods manufacture or taxable services exceeding this amount ((approx \u2014 confirm)))  _(Liberia Revenue Code)_",
+      "status": "Corrected2020baseline; current transition held",
+      "destination": "lr-vat-gst.md V06:3m not unsupported5m"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "GST filing frequency",
+      "old_text": "- **GST filing frequency** \u2014 Monthly return, due by the 21st day of the following month ((approx \u2014 confirm exact date))  _(Liberia Revenue Code)_",
+      "status": "Rechecked/corrected or routed",
+      "destination": "lr-vat-gst.md Rates/base and transition hold V01\u2013V09"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "Input tax credit / reverse charge",
+      "old_text": "- **Input tax credit / reverse charge** \u2014 As a single-stage GST, there is generally no full input-tax-credit chain as under a VAT; broad reverse-charge mechanics do not apply the way they do under EU-style VAT  _(Liberia Revenue Code)_",
+      "status": "Not yet confirmed; old unsupported claim withheld",
+      "destination": "lr-vat-gst.md Sources: Not yet confirmed"
+    },
+    {
+      "old_file": "lr-vat-gst.md",
+      "old_blob": "2ab0c979a6fdd26e5235872cfb85c100588766b4",
+      "topic": "Introductory/bridging paragraph",
+      "old_text": "Liberia operates a Goods and Services Tax (GST), a single-stage tax levied largely at the manufacturing/import stage and on listed services, rather than a multi-stage credit VAT. A move to a full VAT has been announced (targeted for around 2027 \u2014 confirm), which would replace GST.",
+      "status": "Rechecked/routed; unsupported portions withheld and named in Sources",
+      "destination": "lr-vat-gst.md Who/base, Sources gaps and linked owning Guides"
+    }
+  ],
+  "finding": "F2: explicitly restore resident corporate worldwide base under s201(c), or name an exact owning Guide/section rather than a generic destination."
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "skills/mauritania/mr-corporate-income-tax.md",
+    "git_blob": "cbdc08e6fc64a2baea2c4be710922682cced0ae4",
+    "sha256": "45200c37fd1e25e8eb94872b098fe42106c0dc67d54f55363b5c933339323323",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "topics": 14
+  },
+  {
+    "path": "skills/mauritania/mr-tax-overview.md",
+    "git_blob": "cc1e6cae1d835d8b5c067fc5b2aeb20a28156c88",
+    "sha256": "e234f5406bb9f7d342419af47efbae090ab22a85ef4db97d8ebc83c7b818b7f5",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "topics": 9
+  },
+  {
+    "path": "skills/mauritania/mr-company-formation.md",
+    "git_blob": "11e9995a94f086eab4aa556706eeb19ffcbc85bb",
+    "sha256": "3f7d514d5165b327fcd6eadfd2f95349cb23c251ade0c1ae4eeb27e121b521a4",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "topics": 12
+  },
+  {
+    "path": "skills/mauritania/mr-income-tax.md",
+    "git_blob": "afb96c5d2156200717641c0f771b12f65bdd0f39",
+    "sha256": "c7ba0a22268afd910fe09c02ab847d80babc49703869e8f8459615a2e2409aa0",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "topics": 12
+  },
+  {
+    "path": "skills/mauritania/mr-payroll-social.md",
+    "git_blob": "dda939aabf2c0221545dafdb505b053c570541a9",
+    "sha256": "577bfcbcfeffb62fabe0935e5110383b023ef79523c4c5b9a094f19acc361331",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "topics": 12
+  },
+  {
+    "path": "skills/mauritania/mr-vat-gst.md",
+    "git_blob": "c8346430431fbf46e6541da6dfddd32e2068b6ec",
+    "sha256": "064895373bb4a86c66e93c9d31c6a0357154c8621fef84d796ec8d190b8968b3",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "topics": 9
+  }
+]

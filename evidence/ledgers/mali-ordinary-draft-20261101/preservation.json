@@ -1,0 +1,199 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guides": {
+    "ml-company-formation": {
+      "old_git_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "old_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "new_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_identical": true,
+      "platform_fields_identical": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "unchanged_entire_file": true,
+      "old_content_version": null,
+      "new_content_version": null
+    },
+    "ml-corporate-income-tax": {
+      "old_git_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "old_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "new_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_identical": true,
+      "platform_fields_identical": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "unchanged_entire_file": false,
+      "old_content_version": null,
+      "new_content_version": "0.1"
+    },
+    "ml-income-tax": {
+      "old_git_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "old_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "new_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_identical": true,
+      "platform_fields_identical": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "unchanged_entire_file": false,
+      "old_content_version": null,
+      "new_content_version": "0.1"
+    },
+    "ml-payroll-social": {
+      "old_git_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "old_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "new_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_identical": true,
+      "platform_fields_identical": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "unchanged_entire_file": false,
+      "old_content_version": null,
+      "new_content_version": "0.1"
+    },
+    "ml-tax-overview": {
+      "old_git_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "old_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "new_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_identical": true,
+      "platform_fields_identical": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "unchanged_entire_file": true,
+      "old_content_version": null,
+      "new_content_version": null
+    },
+    "ml-vat-gst": {
+      "old_git_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "old_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "new_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_identical": true,
+      "platform_fields_identical": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "unchanged_entire_file": false,
+      "old_content_version": null,
+      "new_content_version": "0.1"
+    },
+    "ml-solidarity-contribution": {
+      "old_git_blob": "41131e8fad49a90703c62197b259a2250cac0a6e",
+      "old_sha256": "a55602764f67c96ba59fad34edf597e04a8016134d779df9f7486ad94dba464f",
+      "new_sha256": "a55602764f67c96ba59fad34edf597e04a8016134d779df9f7486ad94dba464f",
+      "cta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_cta_identical": true,
+      "platform_fields_identical": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true,
+        "authored_by": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "unchanged_entire_file": true,
+      "old_content_version": "0.2",
+      "new_content_version": "0.2"
+    }
+  },
+  "assertions": {
+    "all_six_existing_full_ctas_identical": true,
+    "all_platform_fields_identical": true,
+    "historical_css_entire_file_identical": true,
+    "formation_and_overview_entire_files_identical": true,
+    "no_tables_in_six_original_guides": true
+  },
+  "old_topic_counts": {
+    "ml-company-formation": {
+      "headings_and_bullets": 14,
+      "introductions_or_prose": 1
+    },
+    "ml-corporate-income-tax": {
+      "headings_and_bullets": 12,
+      "introductions_or_prose": 1
+    },
+    "ml-income-tax": {
+      "headings_and_bullets": 15,
+      "introductions_or_prose": 1
+    },
+    "ml-payroll-social": {
+      "headings_and_bullets": 13,
+      "introductions_or_prose": 0
+    },
+    "ml-tax-overview": {
+      "headings_and_bullets": 11,
+      "introductions_or_prose": 1
+    },
+    "ml-vat-gst": {
+      "headings_and_bullets": 10,
+      "introductions_or_prose": 0
+    }
+  }
+}

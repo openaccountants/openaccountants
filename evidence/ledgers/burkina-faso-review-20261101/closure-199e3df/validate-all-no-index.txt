@@ -1,0 +1,14 @@
+checked 10 guides (3 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: 5 guides missing `a `## Sources` section with a URL (tax skills)`
+WARN: 8 guides fail check (a) tax_year_current
+WARN: 8 guides fail check (b) sources_read_dates
+WARN: 8 guides fail check (c) rates_rows_sourced
+WARN: 8 guides fail check (d) canonical_headings
+WARN: 8 guides fail check (e) two_oa_checks
+WARN: 8 guides fail check (f) version_numeric
+WARN: 8 guides fail check (h) no_em_dash
+WARN: 8 guides fail check (i) not_yet_confirmed
+WARN: 0 same-job groups, see skills/DUPLICATES.md
+
+validation passed (10 warning group(s))

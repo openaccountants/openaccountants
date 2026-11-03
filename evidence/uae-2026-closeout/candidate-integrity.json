@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-01",
+  "original_head": "df33d21bbc014420b6433975036b60e09eb0cec6",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "guides": [
+    {
+      "guide": "ae-corporate-tax",
+      "sha256": "68a1bfa11994956df556b509560f0cf6f3779176cd07d52a99c35ce9908fba9a",
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "cta_byte_exact": true,
+      "operative_line_rows": 216,
+      "source_ledger": "ledgers/ae-corporate-tax.md"
+    },
+    {
+      "guide": "ae-payroll-social",
+      "sha256": "538f3ba52ea3442d6229059963ac6901ed68cec62976f3691ef3b61b4e64452b",
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "cta_byte_exact": true,
+      "operative_line_rows": 101,
+      "source_ledger": "ledgers/ae-payroll-social.md"
+    },
+    {
+      "guide": "uae-vat",
+      "sha256": "2eae4edcfbaebf99664fe1e5b23ed9a6b6129ce969fdd35aaa4bde6dd53b677b",
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "cta_byte_exact": true,
+      "operative_line_rows": 214,
+      "source_ledger": "ledgers/uae-vat.md"
+    }
+  ],
+  "named_author_guides_untouched": true,
+  "independent_review": "PENDING",
+  "native_approval": "PENDING"
+}

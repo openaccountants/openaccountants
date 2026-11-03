@@ -1,0 +1,21 @@
+{
+  "status": "HOLD / NOT_SOURCE_READY",
+  "four_initial_continuation_findings": "CLOSED on reviewedcurrentbytes",
+  "remaining168": "All168assignedexplicitphase2dispositions;107accepted,31structure,18scope/referral,3provenance/routing,9findingplacements. Noopaque168rowbacklogremains.",
+  "additional_supersession": "P2-04explicitlysupersedesprioracceptanceofae-payroll-social-L151forthatmissingArticle36(6)qualification;itsotherwage/legal/arithmeticcomponentsremainaccepted.",
+  "remaining_source_gate": "FiveboundedfindinggroupsP2-01throughP2-05mustclose. Nootherunreadcurrentclaimisbeingdeclaredverifiedbythisdisposition;genuinesourcegapP2-03remainsexplicit.",
+  "destination_gate": "User-authorizedcompletewritermapplusindependenttopicclassspotcheckgatemeetsreviewedscope;19representatives/allflaggedpointerschecked.Notall376manualendorsement.NoGuidecontentlostinreviewedclasses;Lostcontentrestoredbyreviewer0.",
+  "prohibited_claims": [
+    "attestation",
+    "filingready",
+    "allcurrentUAElaw",
+    "comprehensivecountrycoverage",
+    "nativeapproval"
+  ],
+  "guide_sha256": {
+    "ae-corporate-tax": "57868107dbcc22d860a47ac1f9213694d4a5e98ab1797c78cee4e92efba83e72",
+    "ae-payroll-social": "f56a8dc5e23a0e21af1027b3349e67be322a8261e2a5bbd74d527a529a2f2bb5",
+    "uae-vat": "1c65052570626fb3c0be17f0afc2dff6c0e22ed886911bf6e00dc8c4d6bf3093"
+  },
+  "readme_sha256": "2f21d25e087adec6256c0471dfbecd36211e4bbb5f9dc8e5c73fed9e1479a206"
+}

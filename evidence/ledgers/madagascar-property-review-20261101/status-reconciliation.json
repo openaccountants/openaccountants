@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-01",
+  "source": "status-only-permission.json",
+  "source_sha256": "8599f5ed59433e426bba607567a3f0b38b24bde13e02006d968bba7263df3dbf",
+  "accepted_writer_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "scope": "Only exact permitted review-status literals; source rules, quotes, cases and holds unchanged by this reconciliation.",
+  "files": [
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "before_sha256": "cb50e663f9171dd3d8186d5b1c683a6e69b45020263e26c4099c49d3d904e36d",
+      "before_git_blob": "57d110d4485c145efbcbfb63ef28292e88ff879e",
+      "after_sha256": "e4a2874e8a83d4ad92b5e4b31224877e61d5c6e6e17c97b9f0de89b42ce451e1",
+      "after_git_blob": "b277fa571e4a88fb1f8e0ef2efec8419014ffb8e",
+      "literal_replacements": [
+        {
+          "before": "This is a partial source-cited computation and statutory filing Guide, awaiting independent review.",
+          "after": "This is a partial source-cited computation and statutory filing Guide, independently reviewed by AI against the cited law on 1 November 2026.",
+          "occurrences": 1
+        },
+        {
+          "before": "No accountant attestation; independent review pending.",
+          "after": "No accountant attestation; independent AI review completed on 1 November 2026 for the stated partial scope.",
+          "occurrences": 1
+        }
+      ],
+      "reverses_exactly_to_accepted_input": true
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "before_sha256": "eb68d28e49fb0206795798be902880897ec64dbc1e056bea36bf97ad4b367e2e",
+      "before_git_blob": "57cf258b95c5d4c22e2a3a2b6cb94cd3584be581",
+      "after_sha256": "a3a29d9d0144ee827faa1645a78660c90595ad50a1a88d934f41b9fcd8bf22d5",
+      "after_git_blob": "7c3635b7b8d0409bc6b2e64c22ebbcdf66c265e6",
+      "literal_replacements": [
+        {
+          "before": "Independent review is pending.",
+          "after": "Independent AI review accepted the stated partial scope on 1 November 2026; see the [closure review](../../evidence/ledgers/madagascar-property-review-20261101/closure-review.md).",
+          "occurrences": 1
+        }
+      ],
+      "reverses_exactly_to_accepted_input": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md",
+      "before_sha256": "8407075e784297b12a39e039c64fcb7b318a1c8aafd451fb9cffccdfb20cea61",
+      "before_git_blob": "5ca9deff456695e888f2b12ac877fbdfeb78df7b",
+      "after_sha256": "c1ed25d4259c66fd54c2a0a0fa1d7c9757cc9f0543bb926d7c4826739d671761",
+      "after_git_blob": "75066b81ab31dba54d6c0dd7d0d5a21a55060648",
+      "literal_replacements": [
+        {
+          "before": "Independent review pending; no accountant attestation.",
+          "after": "Independent AI review completed on 2026-11-01 for the stated partial scope; no accountant attestation.",
+          "occurrences": 1
+        }
+      ],
+      "reverses_exactly_to_accepted_input": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.json",
+      "before_sha256": "04a985d50f9c8a6db007a2f7544f29cc3b1bd6e11f3b95fad38a756cff6340ea",
+      "before_git_blob": "7dbcf47c4ff50f65105321f6fed38ca1f8a56f06",
+      "after_sha256": "f4b738a85f2e2dafdbaef60ab63797a2641859c73689da123cc7d1c4ff4b94c4",
+      "after_git_blob": "d97d6d996ade5e5d4ddc7ab5bb27a9f121b452ee",
+      "literal_replacements": [
+        {
+          "before": "\"status\": \"source-cited draft; independent review pending\"",
+          "after": "\"status\": \"independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation\"",
+          "occurrences": 50
+        }
+      ],
+      "reverses_exactly_to_accepted_input": true
+    }
+  ],
+  "review_evidence_preserved": {
+    "evidence/ledgers/madagascar-property-review-20261101/source-integrity.json": "d6b4759732847636c7883d33469fa1bfae6b75cc8fbcae229656319f24ef65b5",
+    "evidence/ledgers/madagascar-property-review-20261101/machine-checks.json": "d193aa58eff48dd4aba7b8eaf28ab10e47f370a2d0846e93feea4910a20b79ee",
+    "evidence/ledgers/madagascar-property-review-20261101/initial-input-hashes.json": "5cc3477da89b36fee8cdf8be4bd513e8219368c706748158726ad64288dac932",
+    "evidence/ledgers/madagascar-property-review-20261101/independent-cases.json": "a17e975c3fa1fa55e904dbd0df49a19ab8725be90d0e3eee37f19e2e46f20ff1",
+    "evidence/ledgers/madagascar-property-review-20261101/initial-review.md": "0344ac8c0d7e4709c91a8e357bdd27389247deaf32fcdc58e3f9a4c5ddfac79d",
+    "evidence/ledgers/madagascar-property-review-20261101/status-only-permission.json": "8599f5ed59433e426bba607567a3f0b38b24bde13e02006d968bba7263df3dbf",
+    "evidence/ledgers/madagascar-property-review-20261101/ledger-row-review.json": "a6d1b4cf80f6663cd05d91a0a212825bbc895384b2fd76d90d1af805918de1c6",
+    "evidence/ledgers/madagascar-property-review-20261101/closure-artifact-hashes.json": "9ee8932bdd67f8911a96a5341ed4bb73b9f2a946bba16b35b60b99890eb581b6",
+    "evidence/ledgers/madagascar-property-review-20261101/preservation-review.json": "c344d9ac8475d8e3f3ebff34583050d3846fdfe9dc4c9f8322c0a355cd6ddf57",
+    "evidence/ledgers/madagascar-property-review-20261101/closure-checks.json": "c4725150863f056e9f9b68b3f4b4ae6b6cb5dd27a87edb56fa45a7994c3df701",
+    "evidence/ledgers/madagascar-property-review-20261101/review-artifact-hashes.json": "667636407ea39d159ac15c166a35acf979fa329f5a399e80973f364b79b0b130",
+    "evidence/ledgers/madagascar-property-review-20261101/closure-review.md": "960da27752a3c5b4058f7a16f18a2ed0f7a6dab0fca22ea932c1088338361037"
+  },
+  "historical_writer_evidence_preserved": {
+    "evidence/ledgers/madagascar-property-20261101/writer-record.md": "da93fdbadd919e62480f3996d2389224a7b2741f6c596073639805030decd60a",
+    "evidence/ledgers/madagascar-property-20261101/writer-checks.json": "047a51aeee80ded37c39d4534b4de830f3f5970c83671267252ee172084bdc22",
+    "evidence/ledgers/madagascar-property-20261101/writer-check.py": "82950dfee2b7f637cef7b104226d7ff9ff0705f79b96c3d34b3c34bf0a24e195",
+    "evidence/ledgers/madagascar-property-20261101/freeze-receipt.json": "05f1c87ca66f0da46f0b2858041e5f0d50261aec534a035b09d94203dc107455",
+    "evidence/ledgers/madagascar-property-20261101/committed-validation.json": "3e35ee092adf63156308c54217f4d6e3bc786144477f0bb3d019692a9e87f404",
+    "evidence/ledgers/madagascar-property-20261101/source-identities.json": "31b2a83587e3d3b0e38f5b6aae6b05a5edaf3aa814514bc987fc343d0136e7f3",
+    "evidence/ledgers/madagascar-property-20261101/preservation-baseline.json": "f5a3d2fba6186c11cf435cd084791289323ee429e598dc76ec449adf1e6ba9bb",
+    "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.json": "10c78266864e4c6538280eb2a682766f4744ff4cfd24138b64a83bbd2dc6fd92",
+    "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.md": "10d1b8a50a654aeec9cc676ac4f948c8cff0cd851adbc9046118a591a487b05d",
+    "evidence/ledgers/madagascar-property-20261101/readme-addition.json": "96de4f604df9618c255d7725b9feac2c6f7220ecea4dcd7fe0b6803abeeed913"
+  }
+}

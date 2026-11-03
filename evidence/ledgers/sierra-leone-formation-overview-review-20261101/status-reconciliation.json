@@ -1,0 +1,97 @@
+{
+  "authority": "status-reconciliation-authorization.json",
+  "files": [
+    {
+      "file": "skills/sierra-leone/README.md",
+      "before_sha256": "d1b880cf9c037c415b83ab29aba7f3cfe3a2727f8e1b04ecb704a4bff3621b7d",
+      "literal_changes": [
+        {
+          "before": "awaiting independent review",
+          "after": "with independent conditional source corrections closed",
+          "count": 1
+        },
+        {
+          "before": "These two additions await fresh independent review.",
+          "after": "These two additions have completed independent conditional source review, with both focused corrections closed.",
+          "count": 1
+        },
+        {
+          "before": "",
+          "after": "\nThe [independent formation/overview closure](../../evidence/ledgers/sierra-leone-formation-overview-review-20261101/CLOSURE.md) checks all 44 records, 29 old-topic entries and four independent computations. It closes the small-company condition omission and explicitly retains statutory-register work as a gap. The turnover-maximum adjustment applies to a reporting year that is not twelve months. Exact source fidelity is accepted within the stated limits; every current-law, form and partial-domain hold remains, and no accountant attestation is claimed.\n",
+          "operation": "append"
+        }
+      ],
+      "after_sha256": "1b9b0740f8ea96618933de6c33e1ba595bc344ba0b433dd4b8169236ca212f24"
+    },
+    {
+      "file": "evidence/ledgers/sierra-leone-formation-overview-20261101/writer-record.md",
+      "before_sha256": "8ef1d118b7e993ad08c30f53f5095999f386cfca1e415ef10f0d7c0057d4bebd",
+      "literal_changes": [
+        {
+          "before": "independent review pending.",
+          "after": "independent conditional source corrections closed.",
+          "count": 1
+        },
+        {
+          "before": "Fresh independent review of these two additions; actual enacted/commenced reform status",
+          "after": "Independent conditional source corrections are closed. Remaining work includes actual enacted/commenced reform status",
+          "count": 1
+        },
+        {
+          "before": "",
+          "after": "\nThe [independent formation/overview closure](../sierra-leone-formation-overview-review-20261101/CLOSURE.md) checks all 44 records, 29 old-topic entries and four independent computations. It closes the small-company condition omission and explicitly retains statutory-register work as a gap. The turnover-maximum adjustment applies to a reporting year that is not twelve months. Exact source fidelity is accepted within the stated limits; every current-law, form and partial-domain hold remains, and no accountant attestation is claimed.\n",
+          "operation": "append"
+        }
+      ],
+      "after_sha256": "7446bd15b62c4a23c2c5368b87839454f821673bb5091e13b51d6d3f862d04d7"
+    },
+    {
+      "file": "skills/sierra-leone/sl-company-formation.md",
+      "before_sha256": "923e7324322b36c1633ef91abd4b37e1c4f6d827b72d2ad5eb048540026601dc",
+      "literal_changes": [
+        {
+          "before": "Source-bound draft, independent review pending;",
+          "after": "Source-bound draft; independent conditional source corrections closed;",
+          "count": 1
+        }
+      ],
+      "after_sha256": "51dca32b4704524da2baaeb27f895dd403e3c6843b16b056bd545cc0b58df90c"
+    },
+    {
+      "file": "skills/sierra-leone/sl-tax-overview.md",
+      "before_sha256": "faba635e7b43042fa4a08e8df7e9a32234adf838ce7805708c9a24be096676b5",
+      "literal_changes": [
+        {
+          "before": "Source-bound draft, independent review pending;",
+          "after": "Source-bound draft; independent conditional source corrections closed;",
+          "count": 1
+        }
+      ],
+      "after_sha256": "53580d999cbbd94e2428ee701d7c758628684f5c1d330b1639e252bf86bb506e"
+    },
+    {
+      "file": "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md",
+      "before_sha256": "c44183075b4f2f4f5f9a37e629dad7ec93e677575ed29dd44bd5413fbf3460ce",
+      "literal_changes": [
+        {
+          "before": "Writer source checks only. Independent review pending.",
+          "after": "Writer records with independent conditional source corrections closed.",
+          "count": 1
+        }
+      ],
+      "after_sha256": "85b0f576cdfa8ced30635f612a0d501335a89d586cc88c4da3c53b264f1da910"
+    },
+    {
+      "file": "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-tax-overview.md",
+      "before_sha256": "8bf4bad3bc6177059419d7bb70f31ca7e03e821d1c9a81b7751db40ac8077301",
+      "literal_changes": [
+        {
+          "before": "Writer source checks only. Independent review pending.",
+          "after": "Writer records with independent conditional source corrections closed.",
+          "count": 1
+        }
+      ],
+      "after_sha256": "54300b9b8ec3742b3d19ece19eb8e668088058e412d634f3f591c45f16a6acad"
+    }
+  ]
+}

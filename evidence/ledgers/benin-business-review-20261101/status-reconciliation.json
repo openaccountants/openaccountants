@@ -1,0 +1,27 @@
+{
+  "status": "Exact reviewer-permitted status reconciliation applied",
+  "source_closure_sha256": "25d9b80439c21966c971ef56e5219759473a216b64a87bf1db501dd4c7b9f2d0",
+  "changes": [
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "before_sha256": "4523d7f273421df5d1ba85a9949109cfa6f2f9592bb9b052e158a62ae47c6788",
+      "after_sha256": "43f460825997818a329517874b7916d7f24be5543f07a315299e5f4cf4740c2d",
+      "literal_before": "This new job awaits independent source review and has no accountant attestation.",
+      "literal_after": "Independent AI source review and focused repair closure passed on 1 November 2026 for this partial preparation job; no accountant has attested to this version.",
+      "occurrences": 1,
+      "only_literal_replaced": true
+    },
+    {
+      "path": "skills/benin/README.md",
+      "before_sha256": "74ebe94a19595b7f85fdd841e92b5412197657751c315dffe70df5c66ae5e942",
+      "after_sha256": "345d0715ae69d63b13d2a13aa0f8198d19405191f97afc6d488a63cde517402c",
+      "literal_before": "This new writer checkpoint awaits independent review and does not inherit the earlier property/rental or eight-Guide review.",
+      "literal_after": "The [independent IBA review and focused closure](../../evidence/ledgers/benin-business-review-20261101/closure-review.md) checked all 54 ledger rows and both examples, and accepted two repairs on 1 November 2026. This remains a partial preparation job with no accountant attestation.",
+      "occurrences": 1,
+      "only_literal_replaced": true
+    }
+  ],
+  "frontmatter_platform_cta_unchanged": true,
+  "historical_writer_review_artifacts_preserved": true,
+  "all_seven_domains_partial": true
+}

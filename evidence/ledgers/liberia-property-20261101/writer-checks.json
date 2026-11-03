@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "new_guide_sha256": "c61856ab1dfb0bd9cb53f3a4a46f9d2c330bd699dad4d71c79b550fa99938197",
+  "prior_files_preserved": 42,
+  "old_units_replaced": 0,
+  "examples": 2,
+  "ledger_rows": 33,
+  "status": "writer checks only; independent review pending"
+}

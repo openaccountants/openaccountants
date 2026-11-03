@@ -1,0 +1,352 @@
+[
+  {
+    "id": "F1",
+    "quote": "demeurent soumis aux lois non contraires",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F2",
+    "quote": "des parts sociales",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F3",
+    "quote": "Sauf dispositions nationales contraires",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F4",
+    "quote": "de la moitie au moins de leur valeur nominale",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F5",
+    "quote": "est superieure a cinq millions (5.000.000)",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F6",
+    "quote": "font l'objet d'un depot immediat",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F7",
+    "quote": "les actionnaires ne sont responsables des dettes",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F8",
+    "quote": "dix millions (10.000.000) de francs",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F9",
+    "quote": "Les actions ne peuvent representer des apports en industrie",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F10",
+    "quote": "Le montant du capital social ainsi que celui du nominal des actions est fixe par les statuts",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F11",
+    "quote": "Les statuts mentionnent",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F12",
+    "quote": "ne peut pas etre constitue uniquement par une domiciliation a une boite postale",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F13",
+    "quote": "a compter de son immatriculation",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F14",
+    "quote": "dans les six (6) mois de la cloture",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F15",
+    "quote": "deux des conditions suivantes",
+    "layout_text_match": true,
+    "raw_text_match": false,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F16",
+    "quote": "trente (30) jours du commencement",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F17",
+    "quote": "tenir un registre à cet effet",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F18",
+    "quote": "dans les quinze (15) jours",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F19",
+    "quote": "créées au plus tard le 30 juin",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F20",
+    "quote": "dispensées du versement",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "F21",
+    "quote": "être tenue en français",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V1",
+    "quote": "Code général des impôts 2026",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V2",
+    "quote": "Impôt sur les sociétés",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V3",
+    "quote": "Le bénéfice net est constitué",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V4",
+    "quote": "leurs déclarations fiscales par procédés",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V5",
+    "quote": "Ces télédéclarations produisent les",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V6",
+    "quote": "taxe patronale et d’apprentissage",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V7",
+    "quote": "Sous réserve des dispositions",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V8",
+    "quote": "pénalités",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "V9",
+    "quote": "déclaration d’existence",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P1",
+    "quote": "Les sociétés anonymes",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P2",
+    "quote": "trois (3) années consécutives",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P3",
+    "quote": "dans un délai de trente (30) jours",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P4",
+    "quote": "quelle que soit la forme juridique",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P5",
+    "quote": "Pour les autres impôts et taxes, le droit",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P6",
+    "quote": "adressée au service des impôts",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P7",
+    "quote": "L’absence de réponse dans ce délai vaut acceptation",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P8",
+    "quote": "L’option peut être dénoncée à",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P9",
+    "quote": "L’option est irrévocable",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P10",
+    "quote": "réduction de 30 % de l’impôt",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P11",
+    "quote": "à compter de la date de démarrage",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P12",
+    "quote": "réduction de 25 %",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P13",
+    "quote": "abattement de 20 %",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P14",
+    "quote": "exonérées du minimum forfaitaire",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P15",
+    "quote": "des conditions spécifiques de déductibilité",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P16",
+    "quote": "l’ensemble des rétributions",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P17",
+    "quote": "À défaut de pouvoir déterminer précisément",
+    "layout_text_match": false,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P18",
+    "quote": "déclaration",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P19",
+    "quote": "entreprises",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  },
+  {
+    "id": "P20",
+    "quote": "trois cent mille (300 000) francs",
+    "layout_text_match": true,
+    "raw_text_match": true,
+    "note": "Literal quote matches cached source after whitespace/apostrophe normalization."
+  }
+]

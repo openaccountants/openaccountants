@@ -1,0 +1,23 @@
+{
+  "affected_row": "M02",
+  "scope": "Investment Law physical PDF pages1-5, including article14 physicalp5/printedp4, independently read in initialreview. Both Guide Sources corrected.",
+  "original_manifest": "Immutable source-read-manifest.json retained; ML already identifies complete1-5, M is separateHTMLFAQ.",
+  "source_hash": "eb57dceab9071e043380a69820cf70ca3ed506bb9636653ec7c56311e9c60f72",
+  "affected_rule_groups": [
+    "Z02-Z05",
+    "H07",
+    "H14-H16",
+    "H24",
+    "A06",
+    "I03",
+    "Z13",
+    "H17",
+    "P01",
+    "C02-C03",
+    "H02",
+    "H23",
+    "E01-E03",
+    "H13"
+  ],
+  "ledger_scope": "92originalsource/hold/stipulatedrows remain exact. Literal repairs enforce existing conditions/holds at duplicate workflow uses; no new tax rule/figure added."
+}

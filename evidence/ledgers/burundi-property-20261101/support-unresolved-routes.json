@@ -1,0 +1,29 @@
+{
+  "read_date": "2026-11-01",
+  "requested_communal_law": "Law1/09of15May2025",
+  "result": "Not recovered. Actual2016rehostmustnotstandin.",
+  "routes": [
+    {
+      "url": "https://presidence.gov.bi/?s=fiscalit%C3%A9+communale",
+      "direct": "HTTP200 actualHTML103449bytescached; only2016law result",
+      "ordinary_browser": "samevisible2016onlyresult inIABtab1",
+      "scope": "searchindexdoesnotprovenonexistenceof2025PDF"
+    },
+    {
+      "url": "https://communebutihinda.gov.bi/wp-content/uploads/2026/01/loi_fiscalite_communale.pdf",
+      "result": "HTTP200scan31pages; OCRandcovervisual proveLaw1/02of03March2016. Filename2025ishcachelabelkeptforhistory; actualidentityinmanifest."
+    },
+    {
+      "url": "https://www.obr.bi/images/Ordonnance-ministerielle-conjointeportant-determination-des-modalites-dacquisition-du-titre-foncier-electronique-securise-en-application-de-larticle.pdf",
+      "direct": "HTTP404",
+      "ordinary_browser": "writerseparatelyreported404;supporttabcreationblockedbyIABsubagentvisibilityerror",
+      "dated_archive": "20261031000000id_ resolver inaccessible viawebtool; noarchivalbytesread",
+      "web_index": "indexsays3pagePDFbutactualfetchfailed; cannotuseindexasclausesource"
+    }
+  ],
+  "unresolved": [
+    "Actual2025communalAct entireproperty/rentaltaxchain",
+    "Julybudgetart109/Januarystatute104cessiontariffimplementingorder",
+    "Electronic-title2025orderactualbytesandcontinuityinto2026/27"
+  ]
+}

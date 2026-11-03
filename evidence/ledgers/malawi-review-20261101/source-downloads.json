@@ -1,0 +1,118 @@
+{
+  "read_date": "2026-11-01",
+  "method": "Independent direct official URL downloads; SHA-256 of actual PDFs. Full captures/text/page PNGs remain outside Git. Sandbox DNS first failed, authorized network escalation succeeded. Web tool separately opened TAA and Pension PDFs; other content read from downloaded PDFs.",
+  "files": [
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+      "file": "06b35bf5-faa2-4fa1-81f7-af650cce4dff.pdf",
+      "bytes": 822241,
+      "sha256": "381000c90309e1685cbb6f9e5ee338e14307978e56cf9b50faae2971c45f60e2",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content",
+      "file": "21540b28-6bfd-45b5-a910-b80f13db59b4.pdf",
+      "bytes": 3517233,
+      "sha256": "788491221293b032bfdb2da7780a2f8fae60249f6e5724773cbc3f052f2c2773",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/33eae3f0-090c-4dcc-b47a-cfa2ad663851/content",
+      "file": "33eae3f0-090c-4dcc-b47a-cfa2ad663851.pdf",
+      "bytes": 517633,
+      "sha256": "581229355da3f52bdc52d739973b6302750b43c12a4f99b0a5f8a929de1d68ac",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content",
+      "file": "42eb322b-f2a9-48b9-baaf-01c2ade040f5.pdf",
+      "bytes": 396815,
+      "sha256": "7846ce2565e29fd82949347074f7a49f0ce2dcc73eb4fbdc16a791db26dca29b",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content",
+      "file": "72477a6a-7348-4dd8-8a05-a7ea265a5e00.pdf",
+      "bytes": 56702,
+      "sha256": "05e5a8ca32bf219b40657f84dddd861828608a710e0967e31ea1dbe6b4ea6e0a",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content",
+      "file": "73f74c7c-868f-4521-9046-17cc5c13ced2.pdf",
+      "bytes": 898091,
+      "sha256": "116a8df31a5ecef5f39762ca51ebf2df41db90df8257da8fbf126a42e6cff3bb",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/90e7cd40-7761-46f6-9b5a-a0e072208879/content",
+      "file": "90e7cd40-7761-46f6-9b5a-a0e072208879.pdf",
+      "bytes": 462488,
+      "sha256": "b7693cf67bcfa777f6a83ed224015f301fbd2d201816af4e319f560f36a4ccde",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/b0ea0034-2169-45bd-9afe-c7321fb17337/content",
+      "file": "b0ea0034-2169-45bd-9afe-c7321fb17337.pdf",
+      "bytes": 163456,
+      "sha256": "d5f20ed4c24dcd903b606171fcaa570a2ebe5ea42673b5599b6b0cdb29490663",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/d650225f-a811-49bf-aa40-f4757d8c7225/content",
+      "file": "d650225f-a811-49bf-aa40-f4757d8c7225.pdf",
+      "bytes": 76396,
+      "sha256": "4b50285603d9fb5d97b5dcb1a3c1001050751b2e210c0097b1524f8650c20005",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content",
+      "file": "e43a8644-e1e1-46d8-82d7-7e80afd5fd50.pdf",
+      "bytes": 1655253,
+      "sha256": "e6d68ef885810cebf943addcb0eff9147f88820c80f4e7df324423cbaec47002",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/f90f7edf-5012-4ad7-a6f7-bc9866c31195/content",
+      "file": "f90f7edf-5012-4ad7-a6f7-bc9866c31195.pdf",
+      "bytes": 37843,
+      "sha256": "f46ae77c7c5e39af5c239de96ec0d5f483203945a9de67cfc1d6b2b83963c703",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content",
+      "file": "f9c5b41b-5dce-4764-b7c2-923c808bda48.pdf",
+      "bytes": 164670,
+      "sha256": "7b88a2aedc98847d243abfcd651869b5ff106df71e06f9cf5f0a9542a306fc46",
+      "pdf": true
+    },
+    {
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content",
+      "file": "fb807c0f-1335-442a-a1ce-9d6644186525.pdf",
+      "bytes": 87202,
+      "sha256": "7d310218de44911d3a7cdbe610769c37fc2a50339b1bf3d8eb38c33d981d489f",
+      "pdf": true
+    },
+    {
+      "url": "https://www.labour.gov.mw/images/documents/Malawi-Pension-Act_2023.pdf",
+      "file": "pension.pdf",
+      "bytes": 472125,
+      "sha256": "3d98cee4842c4bd6024320022dfe849eaa8eef03623f6f490e8562eaf42f7cb6",
+      "pdf": true
+    },
+    {
+      "url": "https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf",
+      "file": "mra-notice.pdf",
+      "bytes": 137189,
+      "sha256": "62b645f722da8a45434a804aca5f7ed7a8851a4388e921a362daf85750a804c3",
+      "pdf": true
+    },
+    {
+      "url": "https://www.mra.mw/admin/storage/download_files/1767182853_NEW%20TAX%20MEASURES.pdf",
+      "file": "mra-earlier.pdf",
+      "bytes": 169884,
+      "sha256": "23c12bebd7c81749a12c210b366faece5fa17102a627f31559c8afff9080a4b2",
+      "pdf": true
+    }
+  ]
+}

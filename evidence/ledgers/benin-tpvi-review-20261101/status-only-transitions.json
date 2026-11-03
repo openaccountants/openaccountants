@@ -1,0 +1,20 @@
+[
+  {
+    "path": "skills/benin/bj-property-gains-tax.md",
+    "old_literal": "This new job awaits independent source review; no accountant has attested to it.",
+    "new_literal": "This new job passed independent source review on 1 November 2026 for the stated partial working-paper scope; no accountant has attested to it.",
+    "before_sha256": "830ea66a059b1a39e1fb710aaab9666a7544df03bded864338a196caeb1c0bcf",
+    "expected_after_sha256": "8b7e3e843aaaef6d71ca0661c00b38ca0e91cfdd5bf66af041939d8bc83da4f6",
+    "reviewer_applied": false,
+    "conditions": "Single literal replacement only; no other text/metadata edit. Historical writer records remain unchanged."
+  },
+  {
+    "path": "skills/benin/README.md",
+    "old_literal": "The 36-row source ledger and two executable examples are pending independent source review.",
+    "new_literal": "The [independent TPVI source review](../../evidence/ledgers/benin-tpvi-review-20261101/review.md) checked all 36 ledger rows and both executable examples on 1 November 2026.",
+    "before_sha256": "3e2ec478b667203c9d8ad3aebc4771878b5b33c05089586b08c1e2a35a88a719",
+    "expected_after_sha256": "f21341e7abafe9fbbd674d48b12b6dcaa666e24eef9d133095d05ec21d88b773",
+    "reviewer_applied": false,
+    "conditions": "Single literal replacement only; no other text/metadata edit. Historical writer records remain unchanged."
+  }
+]

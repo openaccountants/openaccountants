@@ -1,0 +1,247 @@
+{
+  "head": "26e1b85c0cbb72923709586bdaa76b694e9f6873",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "method": "Fresh git-show reads for both pinned refs; all ten Guides checked independently, not a copy of writer booleans. Baseline line inventory re-derived from each of eight legacy pre-disclaimer bodies, omitting blanks and table divider lines.",
+  "old_topic_total": 348,
+  "independent_old_topic_counts": {
+    "bf-company-formation": 14,
+    "bf-corporate-tax": 47,
+    "bf-income-tax": 72,
+    "bf-payroll": 58,
+    "bf-social-contributions": 48,
+    "bf-tax-optimization": 43,
+    "bf-tax-overview": 12,
+    "bf-vat": 54
+  },
+  "all348_baseline_line_digests_match": true,
+  "guides": {
+    "bf-company-formation": {
+      "path": "skills/burkina-faso/bf-company-formation.md",
+      "baseline_git_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
+      "baseline_sha256": "92eb6e875f970b1220479332c1ca72e140a82320204c8e2c65844501dd06eb3c",
+      "candidate_sha256": "92eb6e875f970b1220479332c1ca72e140a82320204c8e2c65844501dd06eb3c",
+      "byte_identical_to_base": true,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-company-formation",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 3536,
+      "candidate_body_bytes": 3536,
+      "cta_present": true
+    },
+    "bf-corporate-tax": {
+      "path": "skills/burkina-faso/bf-corporate-tax.md",
+      "baseline_git_blob": "41a6b67421755d2c7ce10f9a3361d684e66c9ee0",
+      "baseline_sha256": "7599380d13178ed8b58a677da7136acc9473c55b4b8984558e5531a6f9f72f6a",
+      "candidate_sha256": "0c355b0e698b9dfe3ecea8cffeae056ea84ab17eeb68717ccbb7b2866abe7fc3",
+      "byte_identical_to_base": false,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-corporate-tax",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 5844,
+      "candidate_body_bytes": 14566,
+      "cta_present": true
+    },
+    "bf-income-tax": {
+      "path": "skills/burkina-faso/bf-income-tax.md",
+      "baseline_git_blob": "699ddecd4999c15053873217375e6312deb4a2e6",
+      "baseline_sha256": "8bf95c085bf000911189622a11c6a0b165211a295f0a1ce21321aa19493a66f5",
+      "candidate_sha256": "dc32ce9b55d58fdece779717a30c0a2d24ad1acd469de2c7389965a9bedb86f1",
+      "byte_identical_to_base": false,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-income-tax",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 9902,
+      "candidate_body_bytes": 18306,
+      "cta_present": true
+    },
+    "bf-nonresident-services-withholding": {
+      "path": "skills/burkina-faso/bf-nonresident-services-withholding.md",
+      "baseline_git_blob": "5a6bfbf1af7c69761dab2647c3e6423d3d35caa0",
+      "baseline_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "candidate_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "byte_identical_to_base": true,
+      "full_cta_suffix_sha256": null,
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-nonresident-services-withholding",
+        "jurisdiction": "BF",
+        "review_status": null,
+        "trust_label": null,
+        "tier": "2",
+        "license": null
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 12659,
+      "candidate_body_bytes": 12659,
+      "cta_present": false
+    },
+    "bf-payroll": {
+      "path": "skills/burkina-faso/bf-payroll.md",
+      "baseline_git_blob": "473be4662ef3d581c1f43f109896382d013288d6",
+      "baseline_sha256": "cb630f75a83fad1b3015b93b94ca84e81395026337f3569dee56c9772981b782",
+      "candidate_sha256": "9b44d1403476bed2a88ca434b654d4fbc546f89be880c77237e030f48d856d20",
+      "byte_identical_to_base": false,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-payroll",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 5935,
+      "candidate_body_bytes": 16828,
+      "cta_present": true
+    },
+    "bf-social-contributions": {
+      "path": "skills/burkina-faso/bf-social-contributions.md",
+      "baseline_git_blob": "586d8e8e25f9e5b33d229354e09eaa77765aadbe",
+      "baseline_sha256": "493295d81a9b41973bdc912ea794ef49721418559b11c0cce7a6922c73d15ab3",
+      "candidate_sha256": "493295d81a9b41973bdc912ea794ef49721418559b11c0cce7a6922c73d15ab3",
+      "byte_identical_to_base": true,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-social-contributions",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 5250,
+      "candidate_body_bytes": 5250,
+      "cta_present": true
+    },
+    "bf-tax-optimization": {
+      "path": "skills/burkina-faso/bf-tax-optimization.md",
+      "baseline_git_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
+      "baseline_sha256": "2ac6150522e2c1ef57d60b2000aeb538c20015fe159558df53a43d7a791171de",
+      "candidate_sha256": "2ac6150522e2c1ef57d60b2000aeb538c20015fe159558df53a43d7a791171de",
+      "byte_identical_to_base": true,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-tax-optimization",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 5485,
+      "candidate_body_bytes": 5485,
+      "cta_present": true
+    },
+    "bf-tax-overview": {
+      "path": "skills/burkina-faso/bf-tax-overview.md",
+      "baseline_git_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
+      "baseline_sha256": "5a752bb11b88759ffacb7a9013a72a61caa9afad26dac58091d24061621a7a1e",
+      "candidate_sha256": "5a752bb11b88759ffacb7a9013a72a61caa9afad26dac58091d24061621a7a1e",
+      "byte_identical_to_base": true,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-tax-overview",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 2710,
+      "candidate_body_bytes": 2710,
+      "cta_present": true
+    },
+    "bf-transfer-pricing": {
+      "path": "skills/burkina-faso/bf-transfer-pricing.md",
+      "baseline_git_blob": "c97e897cd388878a52012739cb58ebeaab81d46f",
+      "baseline_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "candidate_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "byte_identical_to_base": true,
+      "full_cta_suffix_sha256": null,
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-transfer-pricing",
+        "jurisdiction": "BF",
+        "review_status": null,
+        "trust_label": null,
+        "tier": "2",
+        "license": null
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 17319,
+      "candidate_body_bytes": 17319,
+      "cta_present": false
+    },
+    "bf-vat": {
+      "path": "skills/burkina-faso/bf-vat.md",
+      "baseline_git_blob": "fb1039611a2c1be561f4bd6f27f2b04aa770a5b7",
+      "baseline_sha256": "f3c48fddfbef31b23daab6b26aa0a0f457a9689eb37cbf21d8a8490211e82656",
+      "candidate_sha256": "f3c48fddfbef31b23daab6b26aa0a0f457a9689eb37cbf21d8a8490211e82656",
+      "byte_identical_to_base": true,
+      "full_cta_suffix_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "full_cta_suffix_equal": true,
+      "platform_fields": {
+        "name": "bf-vat",
+        "jurisdiction": "BF",
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "platform_fields_equal": true,
+      "baseline_body_bytes": 6342,
+      "candidate_body_bytes": 6342,
+      "cta_present": true
+    }
+  },
+  "prior_review_and_ledger_evidence_byte_identical_sha256": {
+    "evidence/ledgers/bf-nonresident-services-withholding.md": "8009a0069c860a4a284f7488780d7e4cc9eefa0fbacac5dfaca483744a1bf7f3",
+    "evidence/ledgers/bf-transfer-pricing.md": "54f484233119bfae3516cb8703c232f5a2ea0f8549e6a2e817f9b9521bbccf46",
+    "evidence/ledgers/burkina-faso-old-topics.md": "28bc5bfecea29f71a2e100b3406f9d877add9d7a3f5af31b7ae8cd7d3fe7b96c",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md": "fa8dbd0ca63fa498535e1db8991c69a511917e1281f448fb0c03b503d3965027",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/coverage-bf.json": "f7a8e75846ed1d8adfa1deef87c2dc34b6635c039f9564742e5bb6c6d00c1301",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/example-checks.txt": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/preservation-and-repair-manifest.json": "565bb2e0cc772e9689d876a9bc8a4f3f07b19e8bb1ffa0f1fcc1de276ff25fbb",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/skill-checks-tp.txt": "4eb466f2b7a3c3f106737f480b0b4e540c661e94b64147321bc0fd14c0402e05",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-all-no-index.txt": "49d8a1bdffb78f61b3a6f0a71b3f847d3f308e362a4ced88d96daff51db20424",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-changed.txt": "2e654d264c138ca4966372f5c908d82ab1376ae245cc883b7e2bb4c65bc0c7df",
+    "evidence/ledgers/burkina-faso-review-20261101/example-checks.txt": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+    "evidence/ledgers/burkina-faso-review-20261101/input-and-check-manifest.json": "9c925117c781e08012c18ad8cafc4f319ff878ba840c71318c487c4d4a2e232a",
+    "evidence/ledgers/burkina-faso-review-20261101/review.md": "b7cae3b96b469870cf6492cd563492297db6cce698d93496899db94fb7fc0c06",
+    "evidence/ledgers/burkina-faso-review-20261101/skill-checks-tp.txt": "4eb466f2b7a3c3f106737f480b0b4e540c661e94b64147321bc0fd14c0402e05",
+    "evidence/ledgers/burkina-faso-review-20261101/skill-checks-withholding.txt": "475f9502d22e982a350a54a959b5f72ee21975d7e3cefe4f1f3583492877d1dd",
+    "evidence/ledgers/burkina-faso-review-20261101/validate-guides.txt": "ba17c1b2061a4e85ae069a9c01f090de6c0abbb8eef27c4d06ad3db6db6c3046"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "commit": "3338b0f742fc9505945915ea7c1af95a97712353",
+  "files": {
+    "skills/mali/ml-company-formation.md": {
+      "git_blob": "4fbfd498a35c96a9b8b56123985a51d0ffb678d0",
+      "sha256": "d0cae971bd8ceedb3bf7e187a3fac13978f4aee20a8626cea656fab21f470296"
+    },
+    "skills/mali/ml-tax-overview.md": {
+      "git_blob": "681a52fa0544a1fb6ae6820fe6f6c8dc283de888",
+      "sha256": "bc92439f45b3ae26c0212b0f5c72c87c23a43894416a1457231affbd831d410e"
+    },
+    "skills/mali/ml-transfer-pricing.md": {
+      "git_blob": "b3d194ed4ec17e558d687fceab3e9416aba7675f",
+      "sha256": "f24490713fc5c52eb31fc11af5ea910e333a33a395a90d11c440ef470a598b7e"
+    },
+    "skills/mali/ml-cross-border-tax.md": {
+      "git_blob": "3a336063aa5ca91db6a4b6e5138b891c2e94b1f6",
+      "sha256": "ef995563853aef80d65c85ed18823b50ec216d539ca4042667e729f964f40a6d"
+    },
+    "skills/mali/README.md": {
+      "git_blob": "0954f1f60515c26b0417cab8ef1e0287a2d75681",
+      "sha256": "0d5985506cc18c58631adbcec09a74c1b37742e3baf7071331f16cc5382b238f"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/change-record.json": {
+      "git_blob": "4ddb94d88c4de1a8b2e273279de2b0081c9b0232",
+      "sha256": "9bc9ee996325a145cc75a22641cd497a7ecb0644924a7a8a2802da726324e53a"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/example-checks.txt": {
+      "git_blob": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+      "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/ledgers/ml-company-formation.md": {
+      "git_blob": "825f24a602617da6b2fa2564dfc27c54d82a24bd",
+      "sha256": "ae99c2109464af1ebafb11c76c92cf01efd2cdc3709f81e092bfae3a98d524d4"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/ledgers/ml-tax-overview.md": {
+      "git_blob": "e5ef6fdde7dea5cf2ce23c96fb389462284d45e7",
+      "sha256": "7bc0ddc727c215f9e32ab438a7c1a0e9d817d19cbdede174f3e5b606f408bfbb"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/old-topics.md": {
+      "git_blob": "e87afb687c2a22315d33466b6db9610c954ce72b",
+      "sha256": "088e84020b5a3b5acaa85001d65a23619eee039967554fb6090cf00cdbbdb94a"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/preservation.json": {
+      "git_blob": "2a61b602fa0bf9f50bd6d987355ad49e59cb0bdf",
+      "sha256": "90449d6f77e989fdfc5e5176b1827a23d9922cf3d63e33280707aa3fb21da750"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/readme-delta.diff": {
+      "git_blob": "4dfc564937c66d0e7c22b71993ae95f4116876f7",
+      "sha256": "c76216adb5d21c82be1d6c1eb3072b12a6f0f9ac8d1eae786c40ed58769b15b6"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/shape-checks.txt": {
+      "git_blob": "ef7b42acfb12278b267801bddf53c5c4398e7a50",
+      "sha256": "fc94db184f8f910734d8b489e852219179e5345621cad2501912ab6e4e25a314"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/source-record.json": {
+      "git_blob": "60d7cf4a755a5c5184aaae7ea06963c37d3e3739",
+      "sha256": "5f107417483c2887e9e8e279f19f4bc648bdfd37e4b4abeb30dd359d1e6d08dc"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/sync-audit.txt": {
+      "git_blob": "dd1479bff24e29b16240b7af3c670e3f0b763dbf",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/writer-record.md": {
+      "git_blob": "b568841fca7e4ca53521e9391d5aa000b6dbbad1",
+      "sha256": "1f6829d050ef7a01fe3a21d521d5c94d390e2f24ab2b4e2d0cf2bc95cb3e5da2"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/change-record.json": {
+      "git_blob": "25dd37e9d552d7b7fd039da4707fdf37951680bd",
+      "sha256": "69123fdee3cf545cd485d69fdf20263f0d2f157fe4f28876436d6b050cd5963f"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/committed-checks.json": {
+      "git_blob": "bf7e22fec3e47defb20be73916615cc57d3c7f2d",
+      "sha256": "4bc0425a383e611506428c286c6fad173cd23e006791f5e140e96f8172f18c54"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/committed-sync-audit.txt": {
+      "git_blob": "dd1479bff24e29b16240b7af3c670e3f0b763dbf",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/committed-validation.txt": {
+      "git_blob": "89fa79ada6d316b46f200f24f277c8d6b6a91d20",
+      "sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/example-checks.txt": {
+      "git_blob": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+      "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/ledgers/ml-cross-border-tax.md": {
+      "git_blob": "123425c7a3010d9136296f2ffb3886dab38061e8",
+      "sha256": "925f10f1f540547f90a12f331136c84253cd09ae0d51838324358e5ec4874728"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/ledgers/ml-transfer-pricing.md": {
+      "git_blob": "e5f85815b3fd5989aa9822ba9af32f4db6acc07c",
+      "sha256": "ba5bdca59464004cbf81433c6f9591c778edc46e2af3e07499ae6065e6ad77dd"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/old-topics.md": {
+      "git_blob": "992003edeebd68b95e0937e4c76dc80e57659c8f",
+      "sha256": "6b4741bbebf87145a22b16d352c959f3ea473f6b4d66082ecf84462e6d014e69"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/preservation.json": {
+      "git_blob": "ddbc589b4dc0d35bfdfcd11c430fc241a149c652",
+      "sha256": "9c233a73fa6b7585554269f40baf47e2e5e1ec0f9b4af2021ae5da5bd7a42cef"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/readme-delta.diff": {
+      "git_blob": "8919976258184c58f18b507c2617b5d89fee7b6b",
+      "sha256": "bf669dd6be324ab3e56dff70cf4f48aa4f43208453457a6cc2c4edaf26f71bfa"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/shape-checks.txt": {
+      "git_blob": "f6294202863b51717a86636fa95f68a572b38464",
+      "sha256": "c141d7570201856c57fb8ddf5f44a46acb55ff9a488f231b661fe259183302cf"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/source-record.json": {
+      "git_blob": "90e13f2881b2b58def4677cac536e498b2f919ef",
+      "sha256": "a7950c70ed78179e73d93744b3b8cfb4dd5fe5d169cb5faa673ca9c644c656b8"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/sync-audit.txt": {
+      "git_blob": "dd1479bff24e29b16240b7af3c670e3f0b763dbf",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+    },
+    "evidence/ledgers/mali-tp-xb-draft-20261101/writer-record.md": {
+      "git_blob": "fec0718512b38faaf3a585e999d94fce4e0cc08a",
+      "sha256": "9536f4f9820fc7dbf7aedf804eb34b91fcfd372d4b7dc665cabcb86d00b83d2f"
+    }
+  }
+}

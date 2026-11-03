@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-01",
+  "review_scope": "Focused independent closure of PR01\u2013PR04 and SC08precision; no repeat of unaffected full source review",
+  "prior_freeze": "48a6568aa0346659987b56f60ab13552f2dc5419",
+  "original_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "candidate_state": "Working-tree candidate identified by exact byte hashes, not a new commit",
+  "accepted_guide_sha256": "a05a0713c51cf92cd7b438f698833e4fd0157759de0b3a3f373da0dead894ab2",
+  "accepted_guide_version": "1.1",
+  "decision": "Source-bound corrections accepted. PR01\u2013PR04 closed; no outstanding correction finding in the reviewed scope. All original substantive current-law/implementation holds remain.",
+  "candidate_inputs": [
+    {
+      "path": "skills/sierra-leone/sl-payroll-social.md",
+      "sha256": "a05a0713c51cf92cd7b438f698833e4fd0157759de0b3a3f373da0dead894ab2",
+      "matches_writer_candidate": true
+    },
+    {
+      "path": "skills/sierra-leone/README.md",
+      "sha256": "435e36d5bbe36733816f0761b3c6ad680f8d8c6f613a37ce0df8cebfb25f1dc6",
+      "matches_writer_candidate": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md",
+      "sha256": "918f3f0a272f83c59ef5813da85c7a8f679e599edf048409d0fd572d8b9aa2e8",
+      "matches_writer_candidate": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.json",
+      "sha256": "c1c32c964897fae4b1c7e6f9736c014778b9775b275b9e6d1236e7078477eef9",
+      "matches_writer_candidate": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/rules.json",
+      "sha256": "23e42b4cd562b4d0802d492ccba8080b2cf3df66bf2ad2bd196194e94507d00c",
+      "matches_writer_candidate": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/sl-payroll-social.md",
+      "sha256": "763b1277478802afa35385ede1863682a53e8026c40bdf1bd18a2935bed06bc2",
+      "matches_writer_candidate": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/source-read-manifest.json",
+      "sha256": "f0bf0db00a91f623684c45ce461bf4de512f281885472a3320b9885b11ab000e",
+      "matches_writer_candidate": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/writer-corrections.json",
+      "sha256": "08c7b47fa2f1ea74c9ea23848f2b69345328093eaae70dd710bb732c820738ba",
+      "matches_writer_candidate": "Receipt itself, separately hashed rather than self-referenced"
+    }
+  ],
+  "findings": [
+    {
+      "id": "PR01",
+      "result": "Closed",
+      "guide_lines": [
+        22
+      ],
+      "ledger_rows": [
+        "SC02"
+      ],
+      "basis": "The remunerated employment / contractor limb now retains in-or-in-connection-with-normal-work-of-the-establishment and remaining-definition conditions. Territorial and permanent-resident limbs remain unchanged. New quote matches the scan."
+    },
+    {
+      "id": "PR02",
+      "result": "Closed",
+      "guide_lines": [
+        36
+      ],
+      "ledger_rows": [
+        "SC15"
+      ],
+      "basis": "Every employer or self-employed person, business-name/address/location change, Director-General recipient and 10 days after change all now appear. New excerpt matches the scan."
+    },
+    {
+      "id": "PR03",
+      "result": "Closed",
+      "guide_lines": [
+        47
+      ],
+      "ledger_rows": [
+        "SC10"
+      ],
+      "basis": "Whole-month entitlement, no contribution payable and equivalent credit on the member\u2019s average monthly earnings over the 12 months preceding entitlement month are now explicit. No new benefit-eligibility rule is asserted."
+    },
+    {
+      "id": "PR04",
+      "result": "Closed",
+      "guide_lines": [
+        34,
+        47
+      ],
+      "ledger_rows": [
+        "SC01",
+        "SC07",
+        "SC10",
+        "SC11",
+        "SC18"
+      ],
+      "basis": "The remittance row has separate Act s. 25(3) / Regulation 8 links. The base paragraph links Act ss. 24, 26 and 28 to act2001.pdf and separately links Regulation 8(2) to Regulations.pdf. No cross-document label remains in these repaired citations."
+    }
+  ],
+  "affected_ledger_rows": {
+    "SC02": {
+      "result": "Accepted",
+      "source": "Act s.2, physical PDF6\u20137",
+      "note": "The remunerated employment / contractor limb now retains in-or-in-connection-with-normal-work-of-the-establishment and remaining-definition conditions. Territorial and permanent-resident limbs remain unchanged. New quote matches the scan.",
+      "accepted_rule_record": {
+        "id": "SC02",
+        "section": "Who this applies to; Cross-border points",
+        "rule": "Remunerated employment by or through a contractor in or in connection with the normal work of the establishment, subject to remaining worker-definition conditions; Sierra Leone non-crew and separate permanent-resident crew/overseas limbs.",
+        "article": "NASSIT Act2001 s.2",
+        "pdf_pages": "6-7",
+        "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+        "quote": "in or in connection with the normal work of the establishment",
+        "read_on": "2026-11-01"
+      }
+    },
+    "SC08": {
+      "result": "Accepted",
+      "source": "Act s.25(5), physical PDF16\u201317",
+      "note": "Guide and both ledger forms now state accidental mistake OR clerical error, with written Trust-inspector instructions. Employer-share recovery remains prohibited.",
+      "accepted_rule_record": {
+        "id": "SC08",
+        "section": "The base",
+        "rule": "No employer-share recovery; no prior-period employee deduction from later pay except accidental mistake OR clerical error, with written Trust-inspector instructions.",
+        "article": "NASSIT Act2001 s.25(5)",
+        "pdf_pages": "16-17",
+        "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+        "quote": "written instructions of a Trust inspector",
+        "read_on": "2026-11-01"
+      }
+    },
+    "SC10": {
+      "result": "Accepted",
+      "source": "Act s.26, physical PDF17",
+      "note": "Whole-month entitlement, no contribution payable and equivalent credit on the member\u2019s average monthly earnings over the 12 months preceding entitlement month are now explicit. No new benefit-eligibility rule is asserted.",
+      "accepted_rule_record": {
+        "id": "SC10",
+        "section": "The base",
+        "rule": "For a whole month of invalidity-pension entitlement no contribution is payable; credit the contribution on average monthly earnings during the 12 months preceding the month entitlement began.",
+        "article": "NASSIT Act2001 s.26",
+        "pdf_pages": "17",
+        "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+        "quote": "a contribution shall not be payable",
+        "read_on": "2026-11-01"
+      }
+    },
+    "SC15": {
+      "result": "Accepted",
+      "source": "Regulations reg.2, physical PDF4",
+      "note": "Every employer or self-employed person, business-name/address/location change, Director-General recipient and 10 days after change all now appear. New excerpt matches the scan.",
+      "accepted_rule_record": {
+        "id": "SC15",
+        "section": "Rates, bands and thresholds; Deadlines and filing",
+        "rule": "Every employer or self-employed person must furnish the Director-General changed business name, address or location details within 10 days after the change.",
+        "article": "NASSIT Regulations2004 reg.2",
+        "pdf_pages": "4",
+        "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+        "quote": "employer or self-employed person",
+        "read_on": "2026-11-01"
+      }
+    }
+  },
+  "unaffected_ledger_rows_unchanged": [
+    "SC01",
+    "SC03",
+    "SC04",
+    "SC05",
+    "SC06",
+    "SC07",
+    "SC09",
+    "SC11",
+    "SC12",
+    "SC13",
+    "SC14",
+    "SC16",
+    "SC17",
+    "SC18",
+    "SC19",
+    "SC20",
+    "SC21",
+    "SC22",
+    "SC23",
+    "SC24",
+    "SC25",
+    "SC26",
+    "SC27",
+    "SC28"
+  ],
+  "source_hash_checks": [
+    {
+      "source": "nassit-act2001.pdf",
+      "sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "unchanged": true
+    },
+    {
+      "source": "nassit-regulations.pdf",
+      "sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "unchanged": true
+    }
+  ],
+  "source_reinspection": "Actual Act PDF pages 6 and 17 and Regulations PDF page 4 images visually re-read for contractor, accidental-mistake/clerical-error, invalidity credit and change-notice repairs; matching source hashes preserve all original source checks and neighbourhood reads.",
+  "platform_metadata": [
+    {
+      "key": "review_status",
+      "prior_value": "pending_review",
+      "candidate_value": "pending_review",
+      "equal": true
+    },
+    {
+      "key": "trust_label",
+      "prior_value": "Built by Michael Cutajar and the OpenAccountants team",
+      "candidate_value": "Built by Michael Cutajar and the OpenAccountants team",
+      "equal": true
+    },
+    {
+      "key": "license",
+      "prior_value": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+      "candidate_value": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+      "equal": true
+    },
+    {
+      "key": "authored_by",
+      "prior_value": null,
+      "candidate_value": null,
+      "equal": true
+    },
+    {
+      "key": "reviewed_by",
+      "prior_value": null,
+      "candidate_value": null,
+      "equal": true
+    },
+    {
+      "key": "reviewed_on",
+      "prior_value": null,
+      "candidate_value": null,
+      "equal": true
+    },
+    {
+      "key": "drafted_by",
+      "prior_value": null,
+      "candidate_value": null,
+      "equal": true
+    },
+    {
+      "key": "approved_by",
+      "prior_value": null,
+      "candidate_value": null,
+      "equal": true
+    },
+    {
+      "key": "validation_status",
+      "prior_value": null,
+      "candidate_value": null,
+      "equal": true
+    },
+    {
+      "key": "validated",
+      "prior_value": null,
+      "candidate_value": null,
+      "equal": true
+    }
+  ],
+  "whole_cta_suffix_unchanged": true,
+  "description_words": 114,
+  "unchanged_legacy_guides": [
+    {
+      "path": "skills/sierra-leone/sl-vat-gst.md",
+      "sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+      "same_as_original_base_and_prior_freeze": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-income-tax.md",
+      "sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+      "same_as_original_base_and_prior_freeze": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-tax-overview.md",
+      "sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+      "same_as_original_base_and_prior_freeze": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-company-formation.md",
+      "sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+      "same_as_original_base_and_prior_freeze": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+      "sha256": "9516b7c22976dafc9ae93115741c90bacca2eea10245fcf13066307d642936c1",
+      "same_as_original_base_and_prior_freeze": true
+    }
+  ],
+  "old_topics": "Both 10-topic preservation artifacts unchanged from original reviewed freeze; source/hold destinations still valid after repairs. Lost content restored: 0.",
+  "examples": "Both prose cases and oa-check blocks exactly unchanged; original legal-premise acceptance retained and arithmetic rerun independently: employee 500, employer 1,000, remittance 1,500, cost 11,000;classification gross 13,000, correct 1,500, wrong 1,950, difference 450.",
+  "validation_artifact": "closure-validation.json",
+  "validation_summary": "15/15 shape checks ; 2 examples ; PR-mode validation zero warnings ; strict metadata WORKTREE audit zero errors/warnings/notices ; pinned/base working-tree whitespace both pass.",
+  "historical_artifacts_preserved": [
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/writer-freeze.json",
+      "sha256": "812fe202d525b00ad62db287dcb0ae2525c2814b54b67d9ddf06b4437b47af16",
+      "role": "Historical original review/freezing evidence; preserved as written"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/REVIEW.md",
+      "sha256": "1c88377e6618995532a5bf6ad5402987b77fe35d4d06b2da1b6a5194e5e6ba29",
+      "role": "Historical original review/freezing evidence; preserved as written"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/review.json",
+      "sha256": "9c7fbe53243d1b717690930db761e81ee2d1513a0caca157e67c8b2205248212",
+      "role": "Historical original review/freezing evidence; preserved as written"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/validation.json",
+      "sha256": "4e8a1d708a92944a2725a5dad954b2496cd1f0d89ef1fb749c57556ebc58898b",
+      "role": "Historical original review/freezing evidence; preserved as written"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/preservation-and-metadata.json",
+      "sha256": "3debae2910410e3235f4bc80cfd20d066374ab6fc49aea40d330008dda7502fe",
+      "role": "Historical original review/freezing evidence; preserved as written"
+    }
+  ],
+  "readme": "README is unchanged from frozen candidate: two drafts, five legacy 2025 Guides,all7domains partial. Its payroll-review-pending language is the pre-closure checkpoint; this closure receipt supplies the later source-bound outcome without certifying current law or full pack.",
+  "status_reconciliation_authorization": "status-reconciliation-authorization.json: only the exact two top-level status changes are authorized,with pre/post SHA-256 values. No status change has been applied by this reviewer.",
+  "original_limits": [
+    "Complete commencement and subsequent amendment/instrument chain, operative 2026 consolidation and additional exemptions/earnings ceiling were not proved.",
+    "Printed included-allowance \u201ccost of leaving\u201d interpretation remains unresolved; no silent correction to \u201cliving\u201d.",
+    "PAYE bands/base/deduction/return fields/penalties and separate remittance calendar, minimum wage and generic employer-cost estimate remain held.",
+    "Detailed benefit eligibility/amounts, treaty/social-security agreements, applicable interest rates/conversion/remission and redenominated fines remain held.",
+    "No current e-registration/payment/SS4B-equivalent authentication or successful live filing test.",
+    "No accountant attestation, full-country coverage signoff, merge/publication authority, or repetition of already closed TP source review."
+  ],
+  "reviewer_mutations": "Only new closure evidence in reviewer directory. No Guide, writer evidence, README, commit, push, PR comment, merge or production modification."
+}

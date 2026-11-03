@@ -1,0 +1,35 @@
+{
+  "accepted_content_head": "13a38f884550d6d220f79100a8fbc1404842a1de",
+  "authority": "Reviewer acceptance scope only; does not create user authority for unrelated actions. Parent may reconcile these two stale status literals only. No change performed by reviewer.",
+  "replacements": [
+    {
+      "path": "skills/burkina-faso/bf-company-property-tax.md",
+      "before_sha256": "cd4f4f84ee95d7469f40835acd9dab58d8d4fc36de2c6b0e714c26c29f1ea16d",
+      "old_exact": "This new job is a source-based writer draft pending independent review, without accountant attestation.",
+      "new_exact": "This new job has completed independent conditional source review for this workpaper scope, without accountant attestation.",
+      "after_sha256_if_only_this_replacement": "43af5e59f006b4a5f4a51565d629798ee8415d549461be2578ae9fa8c2dda83b"
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "before_sha256": "5a2a1462087ea74310e860ebbb6b9b093d49729844109638ac9632044db10756",
+      "old_exact": "Its [writer ledger](../../evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.md) is pending independent review.",
+      "new_exact": "Its [writer ledger](../../evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.md) has completed [independent conditional source review](../../evidence/ledgers/burkina-faso-property-review-20261101/review.md).",
+      "after_sha256_if_only_this_replacement": "0337db456df39338180e7308d06fe69226b9dad202f0452b13d013c6f03ba3c5"
+    }
+  ],
+  "conditions": [
+    "Preserve every other byte of these files.",
+    "Preserve all writer ledgers, initial validation, freezes and earlier evidence as historical receipts.",
+    "Append a status identity receipt recording resulting hashes; rerun relevant validation.",
+    "No tier/attestation field, figure, domain coverage, law/rule, case, metadata version or source-hold change is covered.",
+    "Any other substantive edit requires a fresh source review."
+  ],
+  "excluded": [
+    "commit",
+    "push",
+    "PR edit/comment",
+    "merge",
+    "issue closure",
+    "production or generation changes"
+  ]
+}

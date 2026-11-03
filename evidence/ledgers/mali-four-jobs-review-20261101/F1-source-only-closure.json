@@ -1,0 +1,32 @@
+{
+  "reviewer": "fresh independent mali_four_jobs_review",
+  "review_date": "2026-11-01",
+  "initial_candidate": "3338b0f742fc9505945915ea7c1af95a97712353",
+  "finding_closed": "F1",
+  "accepted_source_bound_candidate_files": {
+    "skills/mali/ml-company-formation.md": "033b288c3c181ccfcef697372ec20e5e68efa2e1460d5e82d8f5e7287b1902e5",
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/ledgers/ml-company-formation.md": "2d53d89cd33d6f2f7d781feea65de716d47899ec46e0b83d8b6678d00f86254b",
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/source-record.json": "025e0f14d99b4522f0971229eb7b8ad603fa8f3281d141fd9f50537a39ab4c0b"
+  },
+  "exact_parent_pins_match": true,
+  "tracked_delta_exactly_three_repair_files": true,
+  "repair_semantic_verdict": "The ordinary-SA capital/payment row now preserves the article389 nominative unpaid cash-share rule and no capital increase except in-kind/no bonds until full payment. The existing quarter/three-year payment rule and full subscription remain unchanged. Ledger row10 carries the same conditions and exact original quotes; source-record adds actual PDF96 repair read scope without rewriting initial writer history.",
+  "new_row10_quote_count": 4,
+  "all_row10_quotes_match_actual_OCR": true,
+  "original_PDF96_independently_viewed": true,
+  "source_hash": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+  "source_record_original_fields_exactly_preserved": true,
+  "formation_case_blocks_unchanged": true,
+  "all_other_eight_Guides_and_prior_receipts_unchanged_from_initial_candidate": true,
+  "initial_review_counts": {
+    "ledger_rows": 103,
+    "exact_quotes_initial": 154,
+    "independent_cases": 8,
+    "old_topic_entries": 27,
+    "predecessor_Guides_preserved_for_TP_XB_addition": 7,
+    "prior_receipts_at_TP_XB_predecessor": 64,
+    "accepted_receipts_at_ordinary_predecessor": 53
+  },
+  "outcome": "All four limited source-reference workpapers accepted after F1 correction. No operative2026, comprehensive country, accountant attestation or merge approval.",
+  "status_reconciliation_permission": "Parent can update README and non-Guide writer/status records with these exact review counts, scope and links while preserving all currentness/form/treaty/domain-partial holds, prior immutable receipt history and platform labels. Record exact status-only delta and hashes. No Guide wording change is necessary; any substantive Guide/ledger change after these accepted hashes requires focused review."
+}

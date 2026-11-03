@@ -1,0 +1,199 @@
+[
+  {
+    "guide": "ga-corporate-income-tax",
+    "case": 1,
+    "name": "Ordinary corporate profit baseline",
+    "independently_recomputed_outputs": {
+      "profit_tax": 3000000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "case": 2,
+    "name": "Decision which corporate floor governs",
+    "independently_recomputed_outputs": {
+      "profit_tax": 900000,
+      "turnover_minimum": 1000000,
+      "liability": 1000000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-income-tax",
+    "case": 1,
+    "name": "One share annual IRPP baseline",
+    "independently_recomputed_outputs": {
+      "rounded": 4800000,
+      "tax": 474000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-income-tax",
+    "case": 2,
+    "name": "Decision family fact changes computation",
+    "independently_recomputed_outputs": {
+      "one_share_tax": 474000,
+      "two_share_tax": 138000,
+      "difference": 336000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-payroll-social",
+    "case": 1,
+    "name": "CNSS pension branch only",
+    "independently_recomputed_outputs": {
+      "worker_pension": 50000,
+      "employer_pension": 110000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-payroll-social",
+    "case": 2,
+    "name": "Decision different contribution ceilings",
+    "independently_recomputed_outputs": {
+      "worker_pension": 75000,
+      "worker_health": 40000,
+      "overstatement": 25000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-vat-gst",
+    "case": 1,
+    "name": "Ordinary VAT working paper",
+    "independently_recomputed_outputs": {
+      "output_vat": 1800000,
+      "net_vat": 1100000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-vat-gst",
+    "case": 2,
+    "name": "Decision prove July local rebar eligibility",
+    "independently_recomputed_outputs": {
+      "local_rebar_vat": 300000,
+      "standard_comparator": 1800000,
+      "difference": 1500000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "case": 1,
+    "name": "Related-party pricing adjustment",
+    "independently_recomputed_outputs": {
+      "add_back": 4000000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "case": 2,
+    "name": "Decision CbCR turnover gateway",
+    "independently_recomputed_outputs": {
+      "lower_gap": 1967750000,
+      "upper_excess": 32250000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-cross-border",
+    "case": 1,
+    "name": "Nonresident service withholding baseline",
+    "independently_recomputed_outputs": {
+      "withholding": 250000,
+      "cash": 750000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-cross-border",
+    "case": 2,
+    "name": "Decision classify payment before rate",
+    "independently_recomputed_outputs": {
+      "service_tax": 250000,
+      "ordinary_movable_tax": 200000,
+      "difference": 50000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-company-formation",
+    "case": 1,
+    "name": "SARL default cash funding",
+    "independently_recomputed_outputs": {
+      "initial": 1000000,
+      "balance": 1000000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-company-formation",
+    "case": 2,
+    "name": "Decision SA statutory default versus proposed SAS funding",
+    "independently_recomputed_outputs": {
+      "sa_initial": 2500000,
+      "sa_balance": 7500000,
+      "sas_initial": 3000000,
+      "cash_difference": 500000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-tax-overview",
+    "case": 1,
+    "name": "Country funding reconciliation of separate tax balances",
+    "independently_recomputed_outputs": {
+      "funding": 4700000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": false,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  },
+  {
+    "guide": "ga-tax-overview",
+    "case": 2,
+    "name": "Decision resident or nonresident income inventory",
+    "independently_recomputed_outputs": {
+      "resident_inventory": 10000000,
+      "nonresident_inventory": 6000000,
+      "difference": 4000000
+    },
+    "matches_declared_expectations": true,
+    "decision_case": true,
+    "acceptance_limit": "Hypothetical facts and baseline/identified amendment only; no current assessment, aggregate payroll, treaty relief, or live filing approval."
+  }
+]

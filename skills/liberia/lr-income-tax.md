@@ -1,41 +1,116 @@
 ---
 name: lr-income-tax
-description: "Source-cited draft: personal income tax for Liberia (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Computes resident personal income tax in Liberia for 2026 from the statutory annual LRD bands, identifies residence and first-arrival conditions, separates employment collection from return obligations, and tests ordinary income, exclusions and disposal gains. Use for Liberian salary tax, individual income tax, a first arrival, a resident business owner, capital gains or an annual personal return. The Guide distinguishes statutory zero-band relief from a second deduction and routes payroll contributions and nonresident withholding to their own Guides. It is a source-cited draft with explicit gaps for pension deductibility, detailed reliefs, current forms and unusual assignment residence cases; no accountant has attested it."
 jurisdiction: LR
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
+version: 0.1
 ---
 
-# Liberia Personal Income Tax
+# Liberia Personal Income Tax v0.1
 
-## Resident personal income tax bands (LRD, annual)
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-- **Resident taxation basis** — Resident individuals are taxed on a progressive scale under the Liberia Revenue Code, with the first LRD 70,000 of taxable income exempt. Salaried employees are taxed through monthly PAYE withholding.  _(Liberia Revenue Code)_
-- **Band 1: LRD 0 - 70,000** — Nil (0%) percent  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_
-- **Band 2: LRD 70,001 - 200,000** — 5% of the excess over LRD 70,000 percent  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_
-- **Band 3: LRD 200,001 - 800,000** — LRD 6,500 + 15% of the excess over LRD 200,000  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_
-- **Band 4: LRD 800,001 and above** — LRD 96,500 + 25% of the excess over LRD 800,000  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_
-- **Tax-free threshold** — LRD 70,000 per year (approx. LRD 5,833 per month) LRD  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_
+Tax year: 2026. Read on: 2026-11-01. Source-cited country draft; currentness gaps are listed below.
 
-## Non-resident individuals
+## Who this applies to
 
-- **Non-resident taxation basis** — Non-resident individuals are generally taxed at a flat rate on Liberia-source income, with no benefit of the progressive bands.  _(Liberia Revenue Code)_
-- **Non-resident flat income tax rate** — 20% (previously 15%) percent  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/taxes-on-personal-income)_
-- **Non-resident taxable scope** — Liberia-source income only (e.g. employment exercised in Liberia, Liberia-source business income)  _(Liberia Revenue Code)_
+Resident natural persons and advisers preparing a 2026 working paper. A nonresident is not assigned the resident table merely because the employer is Liberian. Residence arises from normal abode plus presence at any time, more than 182 days in a twelve-month period ending in the tax year, or government posting abroad. Prior-year nonresidents are excluded for the period before first arrival. Section 800(c) has express non-presence exclusions, including its wording for entry to perform employee services, transit, medical treatment/full-time study and diplomatic presence; do not use a bare 183-day test for an assignee. [s 800(a)–(c)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I08]
 
-## Deductions, residence test and filing
+## Rates, bands and thresholds
 
-- **Deductions and residence overview** — Mandatory NASSCORP pension contributions are deductible in computing taxable income. Residence is generally determined by physical presence in Liberia.  _(Liberia Revenue Code)_
-- **NASSCORP pension contribution** — Mandatory employee pension contribution is deductible from taxable income  _(Liberia Revenue Code; NASSCORP Act — https://taxsummaries.pwc.com/republic-of-liberia/individual/deductions)_
-- **Individual residence test** — An individual present in Liberia for 183 days or more in a 12-month period is generally treated as resident ((approx — confirm))  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/residence)_
-- **Employment income collection** — Collected via monthly PAYE withholding by the employer  _(Liberia Revenue Code)_
-- **PAYE remittance deadline** — By the 10th day of the month following the month of payment ((approx — confirm))  _(Liberia Revenue Code)_
-- **Annual individual return deadline** — Last day of the third month after year-end (31 March for calendar-year taxpayers)  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/tax-administration)_
-- **Capital gains** — Generally taxed as ordinary income (no separate CGT regime)  _(Liberia Revenue Code — https://taxsummaries.pwc.com/republic-of-liberia/individual/income-determination)_
+| Rule | Condition and result | Official source |
+|---|---|---|
+| I01 | Resident annual taxable income through LRD 70,000: nil. | [s 200(a) table](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I01] |
+| I02 | Resident annual taxable income over LRD 70,000 through 200,000:5% of excess over 70,000. | [s 200(a) table](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I02] |
+| I03 | Resident annual taxable income over LRD 200,000 through 800,000:6,500+15% of excess over 200,000. | [s 200(a) table](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I03] |
+| I04 | Resident annual taxable income above LRD 800,000:96,500+25% of excess over 800,000. | [s 200(a) table](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I04] |
+| I05 | The LRD 70,000 standard deduction is already reflected in the zero band. Do not deduct it again before using the table. | [s 205(a)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I05] |
+
+## The base
+
+Resident gross income includes worldwide economic benefits, including employment cash/noncash benefits, business receipts, nonexempt investment income, pensions and gains on investment/business property. Deduct only statutory exclusions, deductions and allowances. [s 201(a)–(c)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I06]
+
+Statutory exclusions include qualifying sickness/disability/death receipts and gifts/transfers by death. Noncash employee benefits are valued at fair market value with only aggregate excess over LRD 100,000 included; personal-use property gain exclusion ends when disposal proceeds reach LRD 1,600,000. Read each exception before treating a receipt as exempt. [s 202(a)–(f)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I07]
+
+Taxable disposal gain/loss starts with proceeds less adjusted tax cost. Gifts, death transfers, personal-use exclusions, rollovers and investment-loss restrictions require their own tests; there is no separate universal flat capital-gains rate in this Guide. [s 207(a)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I11]
+
+Statutory dollar amounts are LRD unless expressly denominated otherwise. Books can be in LRD or USD, but USD books must show LRD taxable-income and tax equivalents. USD payment translates LRD due at the CBL market rate on payment day; other foreign-exchange translations follow s 6(c). [s 6(a),(c)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [O03]
+
+Start with annual gross income, classify exclusions and costs, establish taxable income, then apply exactly one table formula. The employee NASSCORP deduction asserted in the old Guide has not been established from the law read and is withheld. Use the [corporate/business Guide](lr-corporate-income-tax.md) for presumptive-business classification; do not use salary bands for a business that must use that regime.
+
+## Deadlines and filing
+
+A resident with taxable income generally files; the exception includes 90% or more gross income from employment subject to withholding and s 200(c) taxpayers. Eligible persons can elect to file to claim losses, deductions or credits. Small/petty-trader requirements differ. [s 900(a)–(d)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I09]
+
+Income return and final payment are due by the last day of the third month after the tax year, March 31 for a calendar year. [s 902](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I10]
+
+For employment collection use [Payroll](lr-payroll-social.md). The public catalogue names Salary/Wages Schedule A and a monthly withholding return; the individual annual form and actual boxes remain unconfirmed. Use the official [LRA Forms and Schedules](https://www.lra.gov.lr/forms-and-schedules/) catalogue and [LITAS](https://elitas.lra.gov.lr/) link published by LRA. Select the tax kind, year and TIN; reconcile the return with the working paper and withholding credits; submit the applicable return and schedules, pay against the resulting reference and preserve submission/payment confirmation. The public catalogue was read; live portal screens, box numbers, payment references and a successful filing have not been verified. Stop before submission if the live workflow differs. [amended s50(b),(g),(h)](https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf) [O07]
+
+## Penalties and interest
+
+For the general late-filing, late-payment, recordkeeping and interest rules, use [Tax overview](lr-tax-overview.md#penalties-and-interest). Do not invent a fixed interest rate or treat a civil late-payment charge as a criminal conviction.
+
+## Cross-border points
+
+Worldwide income applies to residents, subject to statutory exclusions. Use [Cross-border](lr-cross-border.md) for source, foreign tax credits and treaty conditions; a universal flat nonresident individual rate is not supported. [s 201(a)–(c)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I06]
+
+## Two worked examples that recompute
+
+### Resident income of LRD 500000
+
+Assume LRD 500,000 is established taxable income after verified adjustments. The third band gives 6,500 + 15% × 300,000 = LRD 51,500. The zero bracket is already inside the formula. [s 200(a) table](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I03]
+
+```oa-check
+name: Resident income of LRD 500000
+inputs:
+  taxable: 500000
+steps:
+  - tax: 6500 + (taxable - 200000) * 0.15
+expected:
+  tax: 51500
+```
+
+### Avoid deducting the zero band twice
+
+At LRD 900,000 taxable income the lawful table produces LRD 121,500. Deducting another LRD 70,000 would incorrectly give 104,000, an understatement of 17,500. Use the lawful calculation. [s 200(a) table](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I04] [s 205(a)](https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf) [I05]
+
+```oa-check
+name: Avoid deducting the zero band twice
+inputs:
+  taxable: 900000
+steps:
+  - correct: 96500 + (taxable - 800000) * 0.25
+  - incorrect: 96500 + (taxable - 70000 - 800000) * 0.25
+  - understatement: correct - incorrect
+expected:
+  correct: 121500
+  incorrect: 104000
+  understatement: 17500
+```
+
+## Ask the client first
+
+- Abode, arrival/departure and presence days, including the reason for each stay.
+- Employment, business, investment and foreign income; cash/noncash benefits and disposal costs.
+- Payroll withholding, other credits, prior returns and presumptive-business status.
+- Evidence supporting an exclusion, pension deduction or loss.
+
+## Sources
+
+| Source and actual scope read | Official URL | Read on |
+|---|---|---|
+| December 2024 general amendment, approved 17 December/printed 20 December 2024, substantive pages 1–9 | https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf | 2026-11-01; read in part, specific scope in first column |
+| Revenue Code 2020, selected general, income, nonresident, filing and GST provisions | https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf | 2026-11-01; read in part, specific scope in first column |
+| LRA Forms and Schedules, named return/schedule links read; not a completed portal filing | https://www.lra.gov.lr/forms-and-schedules/ | 2026-11-01; read in part, specific scope in first column |
+| December 2025 amendment, approved 24 March/printed 1 April 2026, cover/preliminary/amended 63,74,76,79,90–92,803,805,806,1000,1021; excise schedule not used | https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf | 2026-11-01; read in part, specific scope in first column |
+
+Not yet confirmed: Employee pension deductibility; practical interpretation of s 800(c)(1) employee-entry non-presence wording; full medical-credit and benefit valuation computations; current annual individual form/boxes; every subsequent inflation adjustment and special regime.
 
 <!-- openaccountants-cta-block -->
 

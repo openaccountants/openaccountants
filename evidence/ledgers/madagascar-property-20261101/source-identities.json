@@ -1,0 +1,96 @@
+[
+  {
+    "source_id": "CDI",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+    "read_on": "2026-11-01",
+    "reuse": "Existing downloaded official source, newly read only listed portions; no network-status-as-read claim.",
+    "read_scopes": [
+      "Complete articles 10.01.01–10 and 10.02.01–13, printed pp.144–149, clauses and neighbours.",
+      "Articles 20.01.51–54, printed pp.172–174; 20.01.56.1–5, printed p.177, property sanctions and neighbours.",
+      "Articles 30.01.14–15 and 30.02.21–23: special-regime boundary only."
+    ],
+    "captures": [
+      {
+        "path": "../sources/cdi-2026.pdf",
+        "bytes": 2788548,
+        "sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254"
+      },
+      {
+        "path": "../sources/cdi-2026.txt",
+        "bytes": 975204,
+        "sha256": "6165252fc74f92531324a1d7581ddad6df25fb0dc5fbc836ba418eeee2400445"
+      }
+    ]
+  },
+  {
+    "source_id": "CPF",
+    "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+    "read_on": "2026-11-01",
+    "reuse": "Existing downloaded official source, newly read only listed portions; no network-status-as-read claim.",
+    "read_scopes": [
+      "Articles I-105–109: complete property declarations I-106–108, printed pp.30–31.",
+      "Complete VII-01–06, printed pp.127–128: notice, payment, deferment, acceleration.",
+      "VII-32 and VII-33 first paragraphs and notification provisions, printed pp.132–133: baseline collection-title scope."
+    ],
+    "captures": [
+      {
+        "path": "../sources/cpf-2026.pdf",
+        "bytes": 1752311,
+        "sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd"
+      },
+      {
+        "path": "../sources/cpf-2026.txt",
+        "bytes": 495529,
+        "sha256": "e3967fda31d17116edb819938d0b0eb6463a68a9b1d2d09c27aa4a037ed3f1f1"
+      }
+    ]
+  },
+  {
+    "source_id": "LFI",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+    "read_on": "2026-11-01",
+    "reuse": "Existing downloaded official source, newly read only listed portions; no network-status-as-read claim.",
+    "read_scopes": [
+      "Property amendments to 10.01.05–09 and 10.02.05–13, printed pp.51–54.",
+      "I-106–107 amendments, printed pp.64–65.",
+      "VII-01–06 and VII-33 amendments, printed pp.75–78.",
+      "Articles 24–25 and promulgation on 20 December 2025; no publication-date inference."
+    ],
+    "captures": [
+      {
+        "path": "../sources/lfi-2026.pdf",
+        "bytes": 3972881,
+        "sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8"
+      },
+      {
+        "path": "../sources/lfi-2026.txt",
+        "bytes": 372006,
+        "sha256": "d2dbea0e21dbddbf060549740e0e0c5add16b51fc866cabda4dfb0396b023e25"
+      }
+    ]
+  },
+  {
+    "source_id": "LFR",
+    "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+    "read_on": "2026-11-01",
+    "reuse": "Existing downloaded official source, newly read only listed portions; no network-status-as-read claim.",
+    "read_scopes": [
+      "Article 20.01.52 amendment and neighbouring 20.01.54.2/56.16, printed pp.26–27.",
+      "VII-32–33 and nearby VII-59 amendments, printed pp.32–33.",
+      "Article 22 and 16 July 2026 promulgation: no radio/posted activation date established.",
+      "Tax-section headings searched for 10.01/10.02/IFT/IFPB; collection-title amendment identified. Not a complete whole-law validation."
+    ],
+    "captures": [
+      {
+        "path": "../sources/lfr-2026.pdf",
+        "bytes": 1907801,
+        "sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c"
+      },
+      {
+        "path": "../sources/lfr-2026.txt",
+        "bytes": 142702,
+        "sha256": "33756e6834fcbef06b95afadb62d5b6e33b6f9e6d9b09d51b0239c75cfae1c6b"
+      }
+    ]
+  }
+]

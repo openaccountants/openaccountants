@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "prior_reviewed_head": "29cfabc028e41f20d6c07f264023dd24071801c3",
+  "prior_review_closure": "evidence/ledgers/sierra-leone-income-review-20261101/closure.json",
+  "status": "One additional held-source interaction for independent delta review; no change to prior accepted receipts",
+  "new_record": {
+    "id": "I29",
+    "section": "The base; Sources",
+    "rule": "FA2018 s12 replaces176(9) with market value of all s23 benefits; older valuation methods not cleared for current payroll until interaction/later chain reconciled.",
+    "article": "FA2018 s12; ITA176(9)",
+    "source_id": "F18",
+    "pdf_pages": "5,printed9",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Finance_Act_2018_1_b96b9c2841.pdf",
+    "quote": "be the market value of all such benefits",
+    "read_on": "2026-11-01"
+  },
+  "source_sha256": "a8a4a98eae248227803439af28089c80f48c2cf3f3426fdf6089fea5fb808c22",
+  "actual_read_scope": "FA2018 physical5/printed9 s12 plusITA2017 historical176(9) comparison; cache used after web502",
+  "candidate_files": {
+    "skills/sierra-leone/sl-income-tax.md": "0f341a7cb10ae87aef268dd03abb3b65215515fca1f31b8590f8a9988a8276e4",
+    "evidence/ledgers/sierra-leone-income-20261101/rules.json": "73f3b44d67173242b2df0ef3a28864d577c4c7937546e04f91fb0a34dd9bd976",
+    "evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md": "e3c35d1c343f6b59e7ca11681c802e0be83abccdeb5f22019e8f8f0a719c9270",
+    "evidence/ledgers/sierra-leone-income-20261101/source-read-manifest.json": "766f26c9bff8968f58a0db0519bc863f74d6af7c2f475679c8fa92d695463d9d",
+    "skills/sierra-leone/README.md": "b654770f1a1ca3b8234273c378b5da47010f1e5e732114cb836776db67c2deea"
+  },
+  "examples": "Both unchanged; no benefit figure asserted by examples",
+  "limits": "All7domains partial; no current-law or filing approval."
+}

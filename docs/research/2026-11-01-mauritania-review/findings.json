@@ -1,0 +1,138 @@
+[
+  {
+    "id": "F1",
+    "priority": 2,
+    "rules": [
+      "C04",
+      "C07",
+      "C08"
+    ],
+    "files": [
+      "mr-corporate-income-tax"
+    ],
+    "source": "cgi2023",
+    "articles": "CGI47-48, physical24-25",
+    "issue": "Intermediate-company treatment omits both a valid normal-regime election and art48 computation exclusions. Generic detailed-depreciation hold does not identify exchange, head-office, gifts/subsidies or provision restrictions for the stated intermediate scope.",
+    "repair": "Add47 election reservation to classification and48(2) restrictions to intermediate taxable-base instructions, with ledger quote/source scope. A normal-only exclusion is also possible if stated next to the relevant rule."
+  },
+  {
+    "id": "F2",
+    "priority": 2,
+    "rules": [
+      "I09"
+    ],
+    "files": [
+      "mr-income-tax"
+    ],
+    "source": "cgi2023",
+    "articles": "CGI114(6),physical46",
+    "issue": "Ordinary ITS formulas are stated without the neighbouring20%maximum for personnel directly working under written contracts with national/foreign press establishments in Mauritania, airlines and air-navigation agencies.",
+    "repair": "State the exact category exception/cap or explicitly exclude these personnel from ordinary formula use; do not invent a cap-computation interpretation if unresolved. Update ledger/source read scope."
+  },
+  {
+    "id": "F3",
+    "priority": 2,
+    "rules": [
+      "C10"
+    ],
+    "files": [
+      "mr-corporate-income-tax",
+      "mr-company-formation",
+      "mr-tax-overview"
+    ],
+    "source": "cgi2023",
+    "articles": "CGI50(3),physical26",
+    "issue": "The year-end rule says close at31December without the express midyear transfer/cessation exception.",
+    "repair": "Carry the transfer/cessation exception next to31December in all C10 placements and ledger. Ordinary no-cessation examples can stay."
+  },
+  {
+    "id": "F4",
+    "priority": 2,
+    "rules": [
+      "F04",
+      "F06"
+    ],
+    "files": [
+      "mr-company-formation"
+    ],
+    "source": "apim",
+    "articles": "Common/specific documents and FAQ local-office question",
+    "issue": "The formation dossier covers individuals and companies but omits the FAQ company-local-address condition and foreign sole-founder marriage/equivalent document in the individual-specific checklist.",
+    "repair": "State both conditions accurately, distinguishing founder domicile evidence from required local company address; retain current form implementation hold. Update ledger/read scope."
+  },
+  {
+    "id": "F5",
+    "priority": 2,
+    "rules": [
+      "X06"
+    ],
+    "files": [
+      "mr-cross-border"
+    ],
+    "source": "cgi2023",
+    "articles": "CGI124(2),127-130;physical49-51",
+    "issue": "Capital withholding calendar says on payment, omitting the tax trigger for interest credited or debited to an account.",
+    "repair": "Add interest account-entry trigger with124 citation next to the payment/calendar rule; preserve separate securities/mining/deemed-distribution calendars."
+  },
+  {
+    "id": "F6",
+    "priority": 2,
+    "rules": [
+      "V04",
+      "V05"
+    ],
+    "files": [
+      "mr-vat-gst",
+      "mr-cross-border"
+    ],
+    "source": "cgi2023",
+    "articles": "CGI221,physical86",
+    "issue": "VAT Guide says the baseline representative/client mechanism is in cross-border, but the cross-border Guide does not set it out. The linked destination does not answer the promised question.",
+    "repair": "Either supply actual221 accredited-representative/separate-return/client-fallback baseline with conditions and ledger, or replace the false routing assertion with an explicit unresolved-mechanism hold. Preserve214 exclusion and2026 digital/currentness holds."
+  },
+  {
+    "id": "F7",
+    "priority": 1,
+    "rules": [
+      "N01",
+      "N02"
+    ],
+    "files": [
+      "mr-tax-overview",
+      "README",
+      "writer source manifest/currentness evidence"
+    ],
+    "source": "lfr2026",
+    "articles": "LFR2026physical6;LFI2026physical6",
+    "issue": "N02 explicitly says the law-number field is blank. Actual PDF image has handwritten2026-035 plus presidential/legislation stamps. January2026image similarly supplies2026-001. Selectable text omitted this image evidence.",
+    "repair": "Correct N02 and dependent ledger/README/source evidence to the visible identities. Keep exact publication/commencement and full-chain holds where genuinely unresolved; column labels alone are not proof of a merely proposed text. Do not infer commencement from upload or handwriting alone."
+  },
+  {
+    "id": "F8",
+    "priority": 2,
+    "rules": [
+      "X01"
+    ],
+    "files": [
+      "mr-cross-border"
+    ],
+    "source": "cgi2023",
+    "articles": "CGI6(3)(b),physical11-12",
+    "issue": "Service-project PE durations omit that services are through employees/other engaged personnel for the same or connected project in Mauritania. The abbreviated rule could attach the duration test to remote services or fragment connected projects.",
+    "repair": "Add personnel,local activity andsame/connected-project conditions next to durations. Preserve other fixed-place/agency tests and treaty reservation."
+  },
+  {
+    "id": "F9",
+    "priority": 3,
+    "rules": [
+      "V07"
+    ],
+    "files": [
+      "mr-vat-gst"
+    ],
+    "source": "cgi2023",
+    "articles": "CGI243(2)final paragraph,physical92",
+    "issue": "Certificate statement is expressed universally while the next paragraph reserves a ministerial list of public/state enterprises dispensed from that obligation. The actual list has not been established.",
+    "repair": "Qualify by any applicable ministerial public/state-enterprise dispensing list and explicitly hold its current identification. Do not invent which entities are exempt."
+  }
+]

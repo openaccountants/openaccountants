@@ -1,0 +1,62 @@
+{
+  "kind": "writer checkpoint pending independent review",
+  "starting_head": "f7482aabcf34d114499f3b621beb1027cc406d5c",
+  "files": [
+    {
+      "path": "skills/burkina-faso/bf-company-property-tax.md",
+      "sha256": "cd4f4f84ee95d7469f40835acd9dab58d8d4fc36de2c6b0e714c26c29f1ea16d",
+      "bytes": 16178
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "sha256": "5a2a1462087ea74310e860ebbb6b9b093d49729844109638ac9632044db10756",
+      "bytes": 10341
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.json",
+      "sha256": "2c1b42368b96c1bb14238716f60a1a05549a20d6650e16c8860842a0ff8b3fe2",
+      "bytes": 22920
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.md",
+      "sha256": "c45ac1f39574b3f32d1f355eec4954c1af852cd7128c220310cbcd9cf438cc92",
+      "bytes": 14812
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/old-topic-destinations.json",
+      "sha256": "1a3b4ae96318a5c5dd77c8cc57fa9b97c99c3b36d601be5d0e00b6d980133b54",
+      "bytes": 543
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/preservation-baseline.json",
+      "sha256": "034121191889571bea6df5e068cd515765d619a64a545682024e07aaf1aaa2c4",
+      "bytes": 35543
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/readme-addition.json",
+      "sha256": "cba7af540b6696abf70ec1f05825cdf4b4635a55c45c08d8d4a16a7b5fe09959",
+      "bytes": 750
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/source-identities.json",
+      "sha256": "3338e18e487adf572c316edd1aa6cd9f6ddfaae1b9006756f491bbda0eed5fe4",
+      "bytes": 2091
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-check.py",
+      "sha256": "6461176d7de49ef53346389adad66fcc49437bd3a1446d7dedf2bac08bd2e90a",
+      "bytes": 1429
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-checks.json",
+      "sha256": "c6a9f2d6db030426ca60eba759452b482077c6e2f64a6b75695178ce4e63afed",
+      "bytes": 15617
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-record.md",
+      "sha256": "24027a8d04fb74b51939f7778ccb89386226703c7333c4d51466302630644098",
+      "bytes": 860
+    }
+  ],
+  "format_repair": "Human ledger trailing blank line removed; no Guide or ledger rule changed."
+}

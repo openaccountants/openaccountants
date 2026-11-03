@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-01",
+  "attempt": 1,
+  "status": "Further targeted correction required",
+  "candidate_manifest_sha256": "b10c055882da2a7c4adade1331e143927676b91ddb9e0e05e3f47fdbf1ccc943",
+  "candidate_files": {
+    "skills/sierra-leone/sl-corporate-income-tax.md": "6ee6a6b94c16eefa88d10347ec9adb0c79d619f9a32d60a8ac97947065fb992d",
+    "skills/sierra-leone/sl-cross-border.md": "6cab6c426800d93843cd6c3fee7d795fd4c1dc479c15f5e0518bcc2037221f7b",
+    "evidence/ledgers/sierra-leone-corporate-20261101/rules.json": "6790b355e62f333ea288b8e2702433d3dcd818eacfffdcda360d72d32e330d8e",
+    "evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md": "8b9d55a2e6fe94db3a88fe89ef82efbfd9ac5b5553fe86f0d2a0d75c0ced1b01",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/rules.json": "fa33ede20fb1bbb6ef5249f573d70b4cdbd2a28ab60baf35ed5a3c964ee6b17b",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md": "a945a89829675171869c6e41aaf19d132f82b164d0b6c395881db3fa1978ac3c"
+  },
+  "hash_matches": {
+    "skills/sierra-leone/sl-corporate-income-tax.md": true,
+    "skills/sierra-leone/sl-cross-border.md": true,
+    "evidence/ledgers/sierra-leone-corporate-20261101/rules.json": true,
+    "evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md": true,
+    "evidence/ledgers/sierra-leone-cross-border-20261101/rules.json": true,
+    "evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md": true
+  },
+  "source_sha256": {
+    "ITA": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+    "F21": "f659b25e9d9816713ec024db85c1ca8ad4597d968a00b24d0446dfaf5f04a7d8",
+    "F23": "dc0eb8a9e8a52d5ff1505e8ea0ccf7b4cd2570bb24a4a5b817eb0b4273ab84da",
+    "F24": "5314b7e510cfa9d39ae25391e8f8f13ae8d0689fc1503d0ec9602a1960712a20",
+    "F25": "3e05fc9d932106fc5b1dad946854583b140afd782dda6f639afbf1672a610cf5",
+    "F26": "372edaf9bae9bc3f1a45d26ab4175e15cdbbc9be958a4135d8ba6dd8abc810cf"
+  },
+  "fix_verdicts": {
+    "CX-R1/C12": "closed: non-depreciable asset gains and business-debt gains explicit; pool balancing remains at step3",
+    "CX-R2/C16": "closed: new business OR investment included with approval and3year condition",
+    "CX-R3/C23": "not closed: first/fourth month added correctly but body and both ledgers add unsupported END of tenth month;113(2)(b) says on or before the tenth month without end",
+    "CX-R4/X12": "closed: foreign branch OF A RESIDENT COMPANY explicit in body and both ledgers"
+  },
+  "remaining_defects": [
+    {
+      "id": "CX-C1",
+      "file": "skills/sierra-leone/sl-corporate-income-tax.md",
+      "line": 12,
+      "problem": "Platform-owned license changed from Guide License v1.0 to v1.1 accidentally with content version bump. Restore exact license string, retain content version/H1 1.1.",
+      "authority": "docs/skill-template.md platform-written keys; immutable base and frozen head both have v1.0 license."
+    },
+    {
+      "id": "CX-C2",
+      "file": "skills/sierra-leone/sl-corporate-income-tax.md",
+      "line": 55,
+      "problem": "Remove invented end-of-tenth-month wording in body/C23 JSON/C23 Markdown ledger; retain the literal on or before the tenth month and its unresolved interpretation.",
+      "source": "ITA113(2)(b), unofficial2017baseline,physical71",
+      "quote": "on or before the tenth month of the substituted year of assessment",
+      "source_url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf"
+    }
+  ],
+  "preservation": {
+    "other_43_review_inputs_exact_to_prior_frozen_head": true,
+    "skills/sierra-leone/sl-corporate-income-tax.md": {
+      "four_case_section_exact": true,
+      "not_yet_confirmed_line_exact": true,
+      "description_words": 115,
+      "version": "1.1"
+    },
+    "skills/sierra-leone/sl-cross-border.md": {
+      "four_case_section_exact": true,
+      "not_yet_confirmed_line_exact": true,
+      "description_words": 115,
+      "version": "0.2"
+    },
+    "corporate_cta_exact": true
+  },
+  "limits": "All7domains remain partial; initial54record source reading preserved. No whole operative2026 approval, accountant attestation or merge readiness. No remote refresh repeated; same hashmatched cache."
+}

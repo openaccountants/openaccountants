@@ -1,0 +1,117 @@
+{
+  "shape": {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/liberia/lr-property-tax.md"
+    ],
+    "returncode": 0,
+    "error_lines": 0,
+    "stdout_file": "shape.txt"
+  },
+  "examples": {
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "skills/liberia/lr-property-tax.md"
+    ],
+    "returncode": 0,
+    "error_lines": 0,
+    "stdout_file": "examples.txt"
+  },
+  "stock-validator": {
+    "command": [
+      "python3",
+      "scripts/validate-guides.py",
+      "--changed-only",
+      "--no-index-check"
+    ],
+    "returncode": 0,
+    "error_lines": 0,
+    "stdout_file": "stock-validator.txt"
+  },
+  "strict-pr-mergebase": {
+    "command": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "aa8fb52e20d1f4083020d7724dabe8c9e5ccfce8",
+      "--head",
+      "79952dad1837653b943adeccbd43fcb935c871aa",
+      "--mode",
+      "audit",
+      "--strict-metadata"
+    ],
+    "returncode": 0,
+    "error_lines": 0,
+    "stdout_file": "strict-pr-mergebase.txt"
+  },
+  "strict-property-only": {
+    "command": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "9694dbd2d4c5d4254faab1ac7a2937a9ebe0421d",
+      "--head",
+      "79952dad1837653b943adeccbd43fcb935c871aa",
+      "--mode",
+      "audit",
+      "--strict-metadata"
+    ],
+    "returncode": 0,
+    "error_lines": 0,
+    "stdout_file": "strict-property-only.txt"
+  },
+  "whitespace-pr-mergebase": {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "aa8fb52e20d1f4083020d7724dabe8c9e5ccfce8",
+      "79952dad1837653b943adeccbd43fcb935c871aa"
+    ],
+    "returncode": 0,
+    "error_lines": 0,
+    "stdout_file": "whitespace-pr-mergebase.txt"
+  },
+  "whitespace-property-only": {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "9694dbd2d4c5d4254faab1ac7a2937a9ebe0421d",
+      "79952dad1837653b943adeccbd43fcb935c871aa"
+    ],
+    "returncode": 0,
+    "error_lines": 0,
+    "stdout_file": "whitespace-property-only.txt"
+  },
+  "failed-two-tip-strict": {
+    "command": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "--head",
+      "79952dad1837653b943adeccbd43fcb935c871aa",
+      "--mode",
+      "audit",
+      "--strict-metadata"
+    ],
+    "returncode": 1,
+    "error_lines": 318,
+    "stdout_file": "failed-two-tip-strict.txt"
+  },
+  "failed-two-tip-whitespace": {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "79952dad1837653b943adeccbd43fcb935c871aa"
+    ],
+    "returncode": 2,
+    "error_lines": 0,
+    "stdout_file": "failed-two-tip-whitespace.txt"
+  }
+}

@@ -1,0 +1,15 @@
+# Focused corporate correction ledger
+
+**Candidate only. Separate independent review required. No publication or operative-law acceptance is claimed.** Baseline: `10a6b7587b0eb7faabfcaca071eab674544e6f6b`. Only the active corporate assertion, its immediate source citation and the required version/H1 change are edited. Existing law, rates, examples, metadata stamps and all prior evidence remain unchanged.
+
+| ID | Correction and boundary | Actual source / printed page | Exact decisive quotation | Official URL | Read on |
+|---|---|---|---|---|---|
+| C1 | The enacted deletion literally names (hb). That alone does not identify which differently labelled historical exemption it removes. | Taxation (Amendment) (No. 2) Act 36/2025, s 5, p 4 | “deleting paragraph (hb).” | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | 2026-11-01 |
+| C2 | The historical principal labels the listed-share holding-period exemption (hc), beside deposit-interest (hb) and personal/domestic assets (hd). The old paragraph is not established as an operative current exemption. | Historical Taxation Act, First Schedule (hb)–(hd), p 86 | “(hc) gains from sale of shares traded on the stock exchange if those shares are held by taxpayer for not less than one year;” | https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content | 2026-11-01 |
+| C3 | The missing paragraph-label chain supports neither a removal conclusion nor continuing availability. The corporate draft keeps earlier/straddling gain calculations unapproved and routes to the existing listed-share Guide and its holds. | Existing independently accepted S19/S20 source verdicts, read with C1/C2 | S19: “Verified literal deletion; its historical paragraph chain remains unresolved”. S20: “Historical only; current applicability NOT established”. These are evidence statuses, not additional statutory quotations. | [S19/S20 review](../malawi-share-review-20261101/all-row-verdicts.json) | 2026-11-01 |
+
+`source-reads.json` records actual cached PDF/reader/image hashes and the narrow pages reread. No fresh source download, new law inventory, intervening renumbering or effective-date conclusion is claimed. The actual Act 36 page 4 and principal page 86 were visually reread with their neighbours.
+
+This additive record **supersedes the unsupported identification in historical corporate ledger row 12** (`evidence/ledgers/mw-corporate-income-tax.md`) and the historical “Capital gains” destination description (`evidence/ledgers/mw-old-topic-destinations.md`) for current reading. Both original files remain byte-exact as review history. The general capital-gain inclusion topic and detailed-basis gap remain in the same corporate Guide section. Lost topics: 0.
+
+F4, appointed TAA/cutover notices, complete operative chain, commencement/period allocation, (hb)/(hc), live-use and all seven partial-domain holds remain. Earlier explicit publication nonacceptance remains controlling until separately disposed of by the independent reviewer.

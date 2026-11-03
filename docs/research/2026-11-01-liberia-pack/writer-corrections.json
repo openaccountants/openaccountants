@@ -1,0 +1,63 @@
+{
+  "reviewed_candidate": "ae03c48733c558b6c8df9945a9810c5ebbe30bf8",
+  "read_date": "2026-11-01",
+  "findings": {
+    "F1": "S05, payroll Guide description/calendar/gaps, payroll ledger, README finding, old-topic destination clarify recording versus unconfirmed transmission",
+    "F2": "Dedicated C12 resident worldwide/nonresident Liberia-source/PE attribution statement restored in corporate base and ledger; exact old-topic destinations restored",
+    "F3": "C05 disallows Liberian/foreign income tax and interest relating to any Liberian tax, not all tax interest"
+  },
+  "source_read_scope": {
+    "F1": "NASSCORP General Regulations2023, regs15\u201318 and neighbouring payment/recording text",
+    "F2": "Revenue Code201(a)\u2013(c),801(c)\u2013(f)",
+    "F3": "Revenue Code205\u2013207, especially206(d)"
+  },
+  "initial_review_evidence_sha256": {
+    "docs/research/2026-11-01-liberia-review/old-topic-audit.json": "7e75d3ee64a86e1170309cc66a12099801d43bf4b7f9a62d9118f6befa24b105",
+    "docs/research/2026-11-01-liberia-review/validate-guides.txt": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+    "docs/research/2026-11-01-liberia-review/examples.txt": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+    "docs/research/2026-11-01-liberia-review/snapshot.json": "209b955c69aaf92610676bd23752bf0404cf21eb8363f313a4f1445c612eb89d",
+    "docs/research/2026-11-01-liberia-review/whitespace.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/research/2026-11-01-liberia-review/sync-integrity.txt": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+    "docs/research/2026-11-01-liberia-review/skill-checks.txt": "7b0d285e6d8e996433087758ee9873f02d6bfa3d4afc1e948c0a4b2e0701c1ac",
+    "docs/research/2026-11-01-liberia-review/review-notes.json": "b664a7e397a1896b9ffe16e7aeac35f01fd489b431b79bd394ed347c88faae0b",
+    "docs/research/2026-11-01-liberia-review/REVIEW.md": "380bfb59a9ec66b5007a26ffc50dad93da1102c86cb999366ab0427e9000db94",
+    "docs/research/2026-11-01-liberia-review/row-checks.json": "6ee7bed25335c5709626019f9c78a5b6191a13034bed9c01c077dfbcc4476089"
+  },
+  "changed_guide_versions": {
+    "lr-corporate-income-tax": "0.2",
+    "lr-payroll-social": "0.2"
+  },
+  "guide_sha256": {
+    "lr-company-formation.md": "bfe248af33d6a125714273006031a257319af5810b3cf1027abb44809b0d7b0d",
+    "lr-corporate-income-tax.md": "06d56dc00683959b085e535dffbfbdf88755825643d91c8c139c55c6d6057bea",
+    "lr-cross-border.md": "46ba572456764bf8edee1216232695ed298f996447da7d87e6300c2288cbe362",
+    "lr-income-tax.md": "3b8d6f0e47368e77cb1a6d76c52c528fb55a54319e1f2cc2234932a12b4cd09c",
+    "lr-payroll-social.md": "3fc054d43cab5da4b2464f14327d7114917d6320943aa0f0b8b2684820ebc002",
+    "lr-tax-overview.md": "a0dda02f1e838ff8990f008b68736882d65103bf6b38d5c389eb18731d86c9d7",
+    "lr-transfer-pricing.md": "18e3d9493dfd60ffba0014f5d987ef1c05ae25430fe3759a96af53d391f59576",
+    "lr-vat-gst.md": "da72d86ce2f5683f73b0eab35935eaed07a725e9a51e3cc702c29db5e5cadb20"
+  },
+  "old_topics": {
+    "total": 75,
+    "named_bullets": 68,
+    "narratives": 7
+  },
+  "checks": {
+    "skill_checks": "8 Guides; all15checks pass on each; exit0",
+    "recomputations": "16cases; zero failures/missing; exit0",
+    "validate_guides": "changed-only8Guides; zero warnings; exit0",
+    "sync_integrity": "worktree public audit strictmetadata8Guides; zero errors/warnings/notices; exit0",
+    "whitespace": "baseline-to-worktree diff --check; exit0"
+  },
+  "candidate_file_sha256": {
+    "skills/liberia/README.md": "e0c8c25660c2823796d966984ba529c3e01cdfa9d2ca7c3606da470d90fbc25f",
+    "skills/liberia/lr-corporate-income-tax.md": "06d56dc00683959b085e535dffbfbdf88755825643d91c8c139c55c6d6057bea",
+    "skills/liberia/lr-payroll-social.md": "3fc054d43cab5da4b2464f14327d7114917d6320943aa0f0b8b2684820ebc002",
+    "docs/research/2026-11-01-liberia-pack/ledgers/lr-corporate-income-tax.md": "a57d5e57b09476a294f25d5e0da46fcb6533d2a37d7e4adb1b92de14da6d49d7",
+    "docs/research/2026-11-01-liberia-pack/ledgers/lr-payroll-social.md": "53aaa75e10cd206e9a371763026f466886abf457c16736370d2ced96e90b6aae",
+    "docs/research/2026-11-01-liberia-pack/old-topics.json": "6311766e51d8999af96f5b3d5e279a64015ffb918b30dd721b3590401e9fc062",
+    "docs/research/2026-11-01-liberia-pack/old-topics.md": "81971637d140d7353146b2f51d64c502e7c85bd310985a4c3c40adce3d0473f2",
+    "docs/research/2026-11-01-liberia-pack/rules.json": "2478668cac25f51021e825366f64b7df83c9d326be16246c98a9bbe77d96be2e"
+  },
+  "preservation_checks": "Both changed Guides retain complete CTA suffixes and platform metadata byte-exact; versions/H1match0.2;75oldentries preserved. Initial review evidence hashes unchanged."
+}

@@ -1,0 +1,82 @@
+{
+  "initial_candidate": "a61fda399fa613455862d3cc72d5c403cd330ccc",
+  "guides": [
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "words": 102,
+      "new_sha256": "54d0ea8a89471609ddd3afed1f008ef09a6646d777eb24986dbf698e2b1f0c41",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "words": 105,
+      "new_sha256": "6512023da176e375199a72b35f984a1ab580349297178ec2824138fb12829099",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "words": 108,
+      "new_sha256": "44cb594832380b8b7580e82faeab3eb23388e867701b6d7018b8dcfb71a3b71f",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "words": 105,
+      "new_sha256": "667232b7bb8753ac3a9f0fae5f0af6ce7a33f0b49ed08c014e61d013d9765de6",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "words": 105,
+      "new_sha256": "b1f8c33b112149d05121eda16812697dfec796d7500b8b072a5a2bb17b45e3d1",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "words": 112,
+      "new_sha256": "38fbf678be1873b5a1c31b5d9eb8b418f543d2afa6c58d97ab6ed5545047b65b",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "words": 109,
+      "new_sha256": "98eb611a0f7ba6e0d7ff22f8ce1fb9e07ff63d79d1814d7f6afcf13e771f47c2",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "words": 104,
+      "new_sha256": "5c1f55f074516d1320cb247d0e0f72faa02c9939bcaac1a0f61f87ddecf4d695",
+      "platforms_preserved": true,
+      "CTA_preserved": true,
+      "examples_unchanged": true
+    }
+  ],
+  "all81_old_topic_strings_unchanged": true,
+  "only_legal_row_changes": [
+    {
+      "path": "evidence/ledgers/bj-transfer-pricing.md",
+      "old": "| 10 | Onsite2/4month limits, latter4extension, reasoned 3daynotice | Deadlines | LFR2026art17 | https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=5 | \u00ab au moins trois (3) jours avant l\u2019\u00e9ch\u00e9ance \u00bb | 2026-11-01 |",
+      "new": "| 10 | On-site 2/4-month limits; declared turnover for any tax in any year under audit, including current year; latter 4-month extension and reasoned 3-day notice | Deadlines | LFR2026art17 | https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=5 | \u00ab l\u2019une quelconque des ann\u00e9es sous contr\u00f4le, y compris celle en cours \u00bb | 2026-11-01 |"
+    },
+    {
+      "path": "evidence/ledgers/bj-cross-border-withholding.md",
+      "old": "| 7 | Interestgrossrecognition and classification | The base | CGI 2026, art. 85 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=48 | \u00ab montant brut des int\u00e9r\u00eats \u00bb | 2026-11-01 |",
+      "new": "| 7 | Gross-interest classification; tax arises on payment OR debit/credit accounting entry, including sums not yet paid | Rates; The base; Deadlines | CGI 2026, art. 85(1)\u2013(2) | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=48 | \u00ab m\u00eame si les sommes concern\u00e9es ne sont pas encore pay\u00e9es \u00bb | 2026-11-01 |"
+    }
+  ]
+}

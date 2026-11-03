@@ -1,0 +1,1072 @@
+[
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "Who this applies to / Sources",
+    "rule": "Statutory baseline; transitional measures can delay/modify operation; not proof a delay exists for each provision",
+    "provision": "105(7),106",
+    "pdf_page": 125,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Tallaabooyinkas waxaa ka mid noqon kara kuwa dib-u-dhigi kara ama wax- ka-beddelli kara",
+    "read_date": "2026-11-01",
+    "id": "SO-001"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "Who this applies to / The base",
+    "rule": "Ordinary taxable-income charge distinct from final withholding and PE repatriation; Schedule2 simplified regime takes priority when applicable",
+    "provision": "9(1)–(6)",
+    "pdf_page": 35,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "shakhsigii hela dakhli canshuurta looga reebo si kama dembeys ah",
+    "read_date": "2026-11-01",
+    "id": "SO-002"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Taxable income aggregates assessable employment/business/investment; pension/charitable relief with aggregate cap; separate calculation per person",
+    "provision": "10(1)–(3)",
+    "pdf_page": 36,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Dakhliga canshuurgalka ah ee shakhsi kastaa waxaa loo xisaabinayaa si gooni ah.",
+    "read_date": "2026-11-01",
+    "id": "SO-003"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base / Cross-border points",
+    "rule": "Resident worldwide scope; nonresident PE worldwide income plus other Somali-source income, separate limbs",
+    "provision": "11",
+    "pdf_page": 37,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "haddii uu Dalka degaan ku yahay, wadarta dakhliga dhammaan dunida",
+    "read_date": "2026-11-01",
+    "id": "SO-004"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "The base",
+    "rule": "Salary, bonus, allowances, overtime, leave, restrictive/termination and other employment amounts included regardless of label",
+    "provision": "12(1)–(3)",
+    "pdf_page": 37,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "iyada oo aan loo eegin magaca loo bixiyay",
+    "read_date": "2026-11-01",
+    "id": "SO-005"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "The base",
+    "rule": "Exempt/final-withholding amounts, business-purpose reimbursement, pension contributions, regulated necessary housing and nonallocable collective benefits excluded on conditions",
+    "provision": "12(4)",
+    "pdf_page": 38,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "xiriir toosan laleh baahida ganacsi ee loo shaqeeyaha",
+    "read_date": "2026-11-01",
+    "id": "SO-006"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Business includes service/trading receipts, taxable disposal/recapture, restriction/gifts/subsidies and closely connected investment amounts; exclude exempt/final amounts and duplication",
+    "provision": "13",
+    "pdf_page": 39,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "dakhliga uu shakhsi sanad canshuureed ka helo ganacsi",
+    "read_date": "2026-11-01",
+    "id": "SO-007"
+  },
+  {
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "The base / Cross-border points",
+    "rule": "Investment includes dividends,debt returns,rent,royalty,pension and taxable investment-asset gains; excludes exempt/final and amounts included elsewhere",
+    "provision": "14",
+    "pdf_page": 40,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "faa’idada kasoo xaroota iska iibinta (disposal) hantida maalgashi ee canshuur-gal ah",
+    "read_date": "2026-11-01",
+    "id": "SO-008"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Exempt amount classification refers Schedule3 and specific provisions; not blanket sector exemption",
+    "provision": "15",
+    "pdf_page": 41,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Qadarta ku taxan Jadwalka Saddexaad ee Sharcigan",
+    "read_date": "2026-11-01",
+    "id": "SO-009"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "The base",
+    "rule": "No general employment expense deduction; private/non-considered expenses excluded; income-producing expense condition; no double deduction",
+    "provision": "8,16(b),16(t)(i),16(j)",
+    "pdf_page": 41,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "marka la xisaabinayo dakhliga shaqada",
+    "read_date": "2026-11-01",
+    "id": "SO-010"
+  },
+  {
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / The base / Worked examples",
+    "rule": "Overall business deduction ceiling is95% of included amounts; examples100000->95000; not automatically loss carryforward",
+    "provision": "16(t)(ii)",
+    "pdf_page": 41,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "aysan ka badan karin sagaashan iyo shan (95%) boqolkiiba",
+    "read_date": "2026-11-01",
+    "id": "SO-011"
+  },
+  {
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Income-producing expenses allowed; capital expense including advantage longer12months excluded from general deduction",
+    "provision": "17(1)–(2)",
+    "pdf_page": 42,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "faa’ido soconaysa in ka badan laba iyo toban (12) bilood",
+    "read_date": "2026-11-01",
+    "id": "SO-012"
+  },
+  {
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Debt-return,repair,depreciation,instrument and disposal limits require separate schedules; no numeric detailed method asserted",
+    "provision": "18–22",
+    "pdf_page": 44,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "loo xisaabinayaa iyadoo la raacayo xeer-nidaamiye loo soo saaray si waafaqsan Jadwalka Afraad",
+    "read_date": "2026-11-01",
+    "id": "SO-013"
+  },
+  {
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Stock allowance opening value plus incurred costs less closing value; closing lower cost/market",
+    "provision": "19(1)–(4)",
+    "pdf_page": 43,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "qiimaha badeecada ganacsiga leedahay dhamaadka sanadka (closing value)",
+    "read_date": "2026-11-01",
+    "id": "SO-014"
+  },
+  {
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Current other-business and preceding10year losses; after other deductions, chronological use and compulsory use; rate matching; exempt/final excluded; special loss definition95%",
+    "provision": "23(1)–(4)",
+    "pdf_page": 46,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "tobankii (10) sanad canshuureed ee la soo dhaafay",
+    "read_date": "2026-11-01",
+    "id": "SO-015"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Investment deduction and loss rules differ from business, no automatic transplantation",
+    "provision": "24",
+    "pdf_page": 47,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Xeerarka kale ee khuseeya lacag ka goynta ganacsiga midkoodna lama dabaqaayo",
+    "read_date": "2026-11-01",
+    "id": "SO-016"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base / Rates, bands and thresholds",
+    "rule": "Calendar year1Jan31Dec; company/trust alternative year requires Ministry approval/conditions and affects instalments",
+    "provision": "25",
+    "pdf_page": 48,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "bilaabmaya maalinta 1- aad ee Janaayo kuna dhammaanaya 31-ka December",
+    "read_date": "2026-11-01",
+    "id": "SO-017"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Employment/investment cash timing; ordinary business accrual unless simplified; avoid omissions/double counting on change",
+    "provision": "26(1)–(3),27–28",
+    "pdf_page": 48,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "hab-xisaabeedka caddaan ah (cash basis)",
+    "read_date": "2026-11-01",
+    "id": "SO-018"
+  },
+  {
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Corporations accrual; entitlement/incurred obligation subject to economic performance",
+    "provision": "26(5),28",
+    "pdf_page": 49,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Shirkadduhu waa in ay dakhligooda ku xisaabiyaan hab-xisaabeedka muteysashada.",
+    "read_date": "2026-11-01",
+    "id": "SO-019"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "The base / Sources",
+    "rule": "Recognised pension framework and civil-service fund not proof of private contribution rate; contribution relief conditions remain separate job",
+    "provision": "69–70",
+    "pdf_page": 83,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Sanduuqyada Hawlgabka ee La Aqoonsaday",
+    "read_date": "2026-11-01",
+    "id": "SO-020"
+  },
+  {
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Only supported pension/charitable deductions, specific fund/charity conditions and regulation limits; complete calculations explicitly held",
+    "provision": "70,76",
+    "pdf_page": 91,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "qaddarta lagu sheegay xeer-nidaamiye loo soo saaray si waafaqsan Sharcigan",
+    "read_date": "2026-11-01",
+    "id": "SO-021"
+  },
+  {
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "Who this applies to / The base",
+    "rule": "Resident employer including SomaliPE taxable employee payments; regulations specify withholding circumstances",
+    "provision": "90(1)",
+    "pdf_page": 109,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "loo shaqeeye Dalka deegan ku ah (oo ay kujirto xarun ganacsi oo joogta ah ee Soomaaliyeed)",
+    "read_date": "2026-11-01",
+    "id": "SO-022"
+  },
+  {
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "The base",
+    "rule": "Other deductions/attachment protections do not reduce withholding obligation",
+    "provision": "90(2)",
+    "pdf_page": 109,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Waajibaadka canshuur kareebidda ee saaran loo shaqeeyaha",
+    "read_date": "2026-11-01",
+    "id": "SO-023"
+  },
+  {
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "Deadlines and filing / Rates, bands and thresholds",
+    "rule": "Withholding payment within14days of monthend; report same time identifies payments,recipient name/address/TIN,tax and prescribed information",
+    "provision": "93(1)–(2)",
+    "pdf_page": 112,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "muddo afar iyo toban (14) maalmood gudahood ah kadib dhammaadka bil kasta",
+    "read_date": "2026-11-01",
+    "id": "SO-024"
+  },
+  {
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "Penalties and interest",
+    "rule": "Agent failure personally liable; recipient jointly/severally liable and14day obligation; agent recovery after paying",
+    "provision": "93(3)–(6)",
+    "pdf_page": 112,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "waa inuu jeebkiisa ka bixiyaa canshuurtii ay ahayd inuu jaro",
+    "read_date": "2026-11-01",
+    "id": "SO-025"
+  },
+  {
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "Deadlines and filing / Rates, bands and thresholds",
+    "rule": "Employment certificate covers employment period,30Jan following year or30days after cessation; different from general monthly certificate",
+    "provision": "94(3)–(4)",
+    "pdf_page": 114,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "ugu dambeyn 30-ka Janaayo, kadib dhammaadka sanadka",
+    "read_date": "2026-11-01",
+    "id": "SO-026"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "The base / Cross-border points",
+    "rule": "Final withholding distinct from ordinary income/credit; payer/source/finality conditions require separate analysis",
+    "provision": "91,95",
+    "pdf_page": 114,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "faa’idada saamiga oo ay shirkad Dalka deegan ku ah siiso shakhsi Dalka deegan ku ah",
+    "read_date": "2026-11-01",
+    "id": "SO-027"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "The base / Deadlines and filing",
+    "rule": "Credit for nonfinal withholding payments; not all gross payments creditable, no duplicate credit",
+    "provision": "96",
+    "pdf_page": 116,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Tixgelinta Canshuureed ee Lacag-bixinta Laga-jaray Canshuur Aan Ku Waajibin",
+    "read_date": "2026-11-01",
+    "id": "SO-028"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Business/investment or employment not subject to employer withholding requires instalment analysis; estimate due with first instalment and exceptions under99",
+    "provision": "97–99",
+    "pdf_page": 117,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "taariikhda la bixinaayo qeyb-qaybta ugu horreysa ee canshuurta",
+    "read_date": "2026-11-01",
+    "id": "SO-029"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Return deadline31March after calendar year; noncalendar30thday; statutory content income/source,tax,credits,balance and attachments, not verified screenfields",
+    "provision": "101(1)–(2)",
+    "pdf_page": 122,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "31-da Maarso ee sanadka dhamaaday kadib",
+    "read_date": "2026-11-01",
+    "id": "SO-030"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Resident employment-only with article90 withholding/no taxable income exemptions unless Ministry written notice or election; nonresident no-taxableincome case",
+    "provision": "102",
+    "pdf_page": 123,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "Haddii Wasaaraddu aysan si kale ogaysiis qoraal ah ugu go’aamin",
+    "read_date": "2026-11-01",
+    "id": "SO-031"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Return self-assessment; balance due on return deadline",
+    "provision": "103",
+    "pdf_page": 123,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "taariikhda ay waajibka tahay in Wasaaradda loo soo gudbiyo warbixinta",
+    "read_date": "2026-11-01",
+    "id": "SO-032"
+  },
+  {
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "Rates, bands and thresholds",
+    "rule": "Resident ordinary annual1,200exempt;1,201–6,0006% printed;6,001–18,000288+12%excess6000;top printed1788+18%excess18000 held conflict;minor and simplified exceptions",
+    "provision": "Schedule1 art.1(1)",
+    "pdf_page": 126,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "$1,788 USD oo lagu daray",
+    "read_date": "2026-11-01",
+    "id": "SO-033"
+  },
+  {
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / Worked examples",
+    "rule": "Under18atyearend20%flat unless Ministry satisfied all included amounts arm’slength and confirms writing; case12000*20%=2400 versus1008",
+    "provision": "Schedule1 art.1(2)",
+    "pdf_page": 127,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "boqolkiiba labaatan (20%) oo ah boqolleey siman",
+    "read_date": "2026-11-01",
+    "id": "SO-034"
+  },
+  {
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "Rates, bands and thresholds",
+    "rule": "Qualifying taxable investment-asset gains/recognisedfund lumpsum: first18000ordinary; above15%up to actual qualifying amount and18%remainder; no completed asset method claimed",
+    "provision": "Schedule1 art.1(3)",
+    "pdf_page": 127,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "boqolkiiba shan iyo toban (15%)",
+    "read_date": "2026-11-01",
+    "id": "SO-035"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "Rates, bands and thresholds",
+    "rule": "Nonresident naturalperson18%taxableincome; employment withholding crossreference; not gross remittance/treaty/corporation rate",
+    "provision": "Schedule1 arts.1(4),5(1)(b)",
+    "pdf_page": 127,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "boqolkiiba siddeed iyo toban (18%) oo ah boqolleey siman",
+    "read_date": "2026-11-01",
+    "id": "SO-036"
+  },
+  {
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / Worked examples",
+    "rule": "Ordinary corporation15%taxableincome;case30000*15%=4500;floor5000*15%=750;not simplified or PE repatriation",
+    "provision": "Schedule1 arts.3–4",
+    "pdf_page": 128,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "boqolkiiba shan iyo toban (15%) oo ah boqolleey siman",
+    "read_date": "2026-11-01",
+    "id": "SO-037"
+  },
+  {
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "Who this applies to / Sources",
+    "rule": "Simplified regime eligibility/modifications delegated to regulation; ordinary rules otherwise; no presumed choice",
+    "provision": "Schedule2 arts.1–2",
+    "pdf_page": 130,
+    "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
+    "quote": "shakhsiyaad Dalka deegaan ku ah ee u qalma",
+    "read_date": "2026-11-01",
+    "id": "SO-038"
+  },
+  {
+    "id": "SO-039",
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "Who this applies to / Sources",
+    "rule": "Formal circulars can adjust listed amounts for inflation. Public notice can postpone specified regulations. Federal Member State collection needs the allocation instrument; precise notices remain unlocated.",
+    "provision": "Reg2-2,106-1,107-1",
+    "pdf_page": "3,38–39",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "shall specify, by public notice, the period",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-040",
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax",
+      "so-payroll-social"
+    ],
+    "section": "Who this applies to / Sources",
+    "rule": "The official annual report describes income-tax implementation delays and FY2026 plans. It is not itself the operative application instrument.",
+    "provision": "Directorate Annual Report2025",
+    "pdf_page": "3,11–13,18",
+    "url": "https://revenuedirectorate.gov.so/sites/default/files/Annual%20Revenue%20Performance_2025_FINAL11.pdf",
+    "quote": "delays in income tax implementation",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-041",
+    "guides": [
+      "so-income-tax",
+      "so-corporate-income-tax"
+    ],
+    "section": "Who this applies to / The base",
+    "rule": "Presumptive taxation applies to qualifying resident individuals with exclusively domestic business income, no partnership membership, and three-year average turnover at most USD 50,000 before adjustments. It is not a corporation regime.",
+    "provision": "Reg9-1(1)",
+    "pdf_page": "5",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "presumptive taxation applies to a resident individual",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-042",
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Professional, principally property-leasing and circular-listed activities are excluded, subject to transition. An adequate-records election out binds the election year and following two years.",
+    "provision": "Reg9-1(2),9-2",
+    "pdf_page": "5–6",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "the year of election and the following two years of assessment",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-043",
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Eligible quarterly business tax is the higher of USD 37.50 and1.5% of defined cash-basis turnover. Other income follows ordinary rules; business immovable property is treated as investment property.",
+    "provision": "Reg9-1(4)–(5)",
+    "pdf_page": "5–6",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "each quarterly instalment is calculated as the higher of $37.50 and 1.5%",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-044",
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "For the first five implementation assessment years, the threshold increases BY 250/200/150/100/50%. Professional/activity exclusions are suspended, but otherwise excluded individuals do not receive the uplift.",
+    "provision": "Reg105-1(1)–(2)",
+    "pdf_page": "34",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "the threshold specified in Regulation 9-1(1)(c) is increased by",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-045",
+    "guides": [
+      "so-income-tax"
+    ],
+    "section": "The base / Sources",
+    "rule": "Modified cash is a distinct accounting regime with ordinary individual rates. Its full eligibility, technology and transition workflow is held.",
+    "provision": "Reg9-3,105-1(3)–(4)",
+    "pdf_page": "6–8,34–35",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "taxed ... at the usual rates specified in the First Schedule",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-046",
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "The base",
+    "rule": "Opening losses retain old-law restrictions, including carryover conditions; they do not receive a fresh unrestricted life.",
+    "provision": "Reg105-4",
+    "pdf_page": "36",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "additionally subject to any restrictions on the use of those losses or deficits",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-047",
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Ordinary instalment=(A-B)/C-D. A=current estimate; B=prior instalments and prior creditable withholding; C=remaining instalments including current; D=current-quarter creditable withholding.",
+    "provision": "Reg97-1",
+    "pdf_page": "29",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "(A-B)/C-D",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-048",
+    "guides": [
+      "so-corporate-income-tax"
+    ],
+    "section": "Deadlines and filing / Sources",
+    "rule": "First-implementation-year company/trust transition relief and instalment floors require a separate eligibility computation. No unconditional relief claim is made.",
+    "provision": "Reg105-10",
+    "pdf_page": "37–38",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "is not liable to pay tax by instalments for the final year of assessment",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-049",
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "Rates, bands and thresholds / The base / Worked examples",
+    "rule": "Published primary monthly guidance: throughUSD100 zero; then6% excessUSD100; aboveUSD500,USD 24+12% excessUSD500; aboveUSD1,500,USD 144+18% excessUSD1,500. This does not amend annual law.",
+    "provision": "Directorate monthlytable",
+    "pdf_page": "HTML",
+    "url": "https://revenuedirectorate.gov.so/direct-tax",
+    "quote": "USD 24 + 12% of the amount exceeding USD 500",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-050",
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "The Ministry must produce primary monthly tables and year-end reconciliation instructions/forms. The regulation contains no numeric monthly table.",
+    "provision": "Reg90-1(1)–(2)",
+    "pdf_page": "26",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "instructions and forms regarding an end of year reconciliation",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-051",
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "The base",
+    "rule": "Primary withholding reduction for recognised contributions is subject to the expected annual statutory-limit restriction; USD 10,000 is not asserted as the whole limit.",
+    "provision": "Reg90-1(3),70-1",
+    "pdf_page": "26–27,21",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "No reduction is permitted where those and similar contributions are likely",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-052",
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "The base",
+    "rule": "Only one primary employment, generally earliest. New employment is secondary on prior/current work, no answer or suspicion. Ministry approval can switch primary status or relieve hardship. Secondary withholding uses the highest ordinary rate, without primary pension reduction; employee list required.",
+    "provision": "Reg90-2(1)–(7)",
+    "pdf_page": "27–28",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "without any reduction under Regulation 90-1(3)",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-053",
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "The base",
+    "rule": "Noncash pay does not remove withholding. Employer funds a cash shortfall; it is credited to employee tax, excluded from employee income, nondeductible and nonrecoverable by employer.",
+    "provision": "Reg90-3",
+    "pdf_page": "28",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "not recoverable by the employer from the employee",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-054",
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "The base / Sources",
+    "rule": "The in-kind benefit phased transition is identified, but full valuation is held. The actual implementation year must be established.",
+    "provision": "Reg105-2",
+    "pdf_page": "35",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "non-cash payments to be included in calculating income from employment are reduced by",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-055",
+    "guides": [
+      "so-payroll-social"
+    ],
+    "section": "Who this applies to / The base / Sources",
+    "rule": "Employer can choose old/new withholding without penalty until earlier mandatory direct/circular notice or the end of the fifth implementation assessment year.",
+    "provision": "Reg105-8",
+    "pdf_page": "37",
+    "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
+    "quote": "at their choice and without penalty",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-056",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Who this applies to",
+    "rule": "Signed instrument dated9December2023; signature commencement under article8. Official-site archive captured15April2025. No complete amendment audit claimed.",
+    "provision": "RegMOF/OM/0089/23 arts.1,8",
+    "pdf_page": "1–5",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "December 9, 2023",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-057",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Who this applies to / The base",
+    "rule": "Regulation expands retail, professional and other sectors with a goods/services catch-all. Payroll/profit taxes are unaffected. This is not proof all sectors currently bear5%.",
+    "provision": "Regarts.1–2",
+    "pdf_page": "2",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "ma saamaynayo canshuurta ku waajibtay mushaarka, faa’iidada, iyo canshuuraha kale",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-058",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base / Worked examples",
+    "rule": "General sales-tax baseline is5% of goods/service value. Application is conditional on ordinary domestic taxable status and current sector treatment.",
+    "provision": "Regart.3(1)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "Tacriifada Canshuurta Gadidda waa 5% qiimaha badeecada ama adeegyada lagu kala gatay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-059",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Seller business/company owes tax when goods exchange or service provision completes; this is not a current return-payment deadline.",
+    "provision": "Regart.3(1)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "mar allaale markii is dhaafsiga badeecada ama bixinta adeega la dhammeeyo",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-060",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Invoice each sale with value and5% tax. Inclusive/exclusive algebra applies only to established actual contract terms.",
+    "provision": "Regart.3(2)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "waa in ay sameeyaan qaansheegto markasta oo ay cid badeeco ama adeeg ka iibayaan",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-061",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Consecutive invoice numbering begins1 each year and must show sale date.",
+    "provision": "Regart.3(3)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "iyagoo ka bilaabanayo kow (1) sanad walba",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-062",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "The base",
+    "rule": "Produce invoices when the responsible revenue officers request them. No statutory retention period is asserted.",
+    "provision": "Regart.4",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "inuu u soo bandhigo mar kasta oo ay waydiistaan Saraakiisha Dakhliga",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-063",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Penalties and interest",
+    "rule": "Penalties do not extinguish tax. Numeric regulation sanctions and their current reconciliation are held.",
+    "provision": "Regart.5",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "markasta waajib ku tahay bixinta canshuurtii ku baaqatay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-064",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Penalties and interest",
+    "rule": "The regulation describes a complaint committee and court appeal; the current route/deadline remains held.",
+    "provision": "Regart.7",
+    "pdf_page": "4",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "wuxuu rafcaan u qaadan karaa maxkamadda awooda u leh",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-065",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / Sources",
+    "rule": "Authority ordinary-goods5% agrees with baseline, while certain sectors conflict. Unsupported sector rates are not adopted.",
+    "provision": "Directorate indirecttax",
+    "pdf_page": "HTML",
+    "url": "https://www.revenuedirectorate.gov.so/indirect-tax",
+    "quote": "Telecommunication",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-066",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Who this applies to / The base",
+    "rule": "Company Registrar is within MOCI. Domestic company and foreign branch packets differ. Certificate, business licence and sector permit are distinct.",
+    "provision": "Reg001/2021 arts.1,6–9,19",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "hoos yimaadda Wasaarada Ganacsiga iyo Warshadaha",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-067",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Registrar name application supplies applicant name/address and proposed name; check restrictions. Published regulation reservation maximum90 days.",
+    "provision": "Regarts.10–11",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "muddo ugu badnaan 90 maalmood ah",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-068",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Certificate within one working day after submission AND acceptance, not a whole-process promise. Certificate contents and written deficiency response are specified.",
+    "provision": "Regart.6(1)–(4)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "hal (1) maalin shaqo gudaheed ka dib marka dukumentiga codsiga la soo gudbiyey lana aqbalay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-069",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Approved application, memorandum/articles with shareholder names/share type/quota, founder/shareholder passports and prescribed additional information.",
+    "provision": "Regart.8",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "Lifaaq baasaboorrada aasaasayaasha iyo saamileyda shirkadda",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-070",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Company/director addresses and each board member passport, telephone, email and bank-account statement are required.",
+    "provision": "Regart.13",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "caddeyn xisaabta bankiga (bank account statement) ee xubin kasta ee golaha maamulka",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-071",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base / Cross-border points",
+    "rule": "Foreign branch requires four notarised/embassy-certified document categories, plus passport/local-director/representative details. Foreign-investment requirements are preserved.",
+    "provision": "Regart.19(1)–(3)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "oo nootaayeysan lagana soo tastiiqay Safaaradda Soomaaliya ee dalka shirkadda shisheeye ka diiwaangashan tahay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-072",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Online application is permitted; this is not evidence of the current authenticated screen sequence.",
+    "provision": "Regart.17",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "ayadoo la isticmaalaayo form khad toos ah (online form)",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-073",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base / Deadlines and filing",
+    "rule": "Incorporation certificate lasts company life subject to major changes/re-registration. This is not a universal annual operating-licence renewal rule.",
+    "provision": "Regart.6(5),7",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "ilaa iyo muddada ay shirkaddu jirto",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-074",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Regulated business cannot start until the required other-agency authorisation is granted, despite certificate/licence.",
+    "provision": "Regart.9",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "waa in aysan bilaabin hawlahooda ganacsi",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-075",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / Worked examples",
+    "rule": "Published incorporation feeUSD100 conflicts with current listed registry service feeUSD50. Operative amount is held; do not automatically choose the cheaper source.",
+    "provision": "Regart.14;livefee table",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "boqol dollar ($100 USD) waqtiga diiwaangelinta koowaad",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-076",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / Sources",
+    "rule": "Live company-registration service entryUSD50. Activity licence fees differ; no complete149-row licence audit is claimed.",
+    "provision": "Registry currentfees",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/fees",
+    "quote": "$50.00",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-077",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / Deadlines and filing",
+    "rule": "Original Somali says30 days after anniversary; English omits anniversary; different indexed PDF was not read. Exact operative annual deadline is held.",
+    "provision": "Regart.15(1)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "muddo 30 maalmood gudahood ah oo ka bilaabaneynsa maalinta sanad-guurada",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-078",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Annual report includes company/management addresses, type/activity, share details, management/share changes and licensed-activity confirmation. Registrar can prescribe forms.",
+    "provision": "Regart.15(2)–(3)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "Xafiiska Diiwaanhayaha Shirkadaha ayaa bixin doona foomam",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-079",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Notify director, shareholder, officer and business-activity changes to Registrar. Numeric deadline is unverified.",
+    "provision": "Regart.12(2)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "waxaa sidoo kale loo gudbin doonaa Diiwaanhayaha Shirkadaha",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-080",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base / Penalties and interest",
+    "rule": "Companies Law has priority. Numeric penalties and the current challenge route remain held.",
+    "provision": "Regarts.6(2),15(4),18,21–22",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "waxaana markasta hortabin leh Sharciga Shirkadaha",
+    "read_date": "2026-11-01"
+  }
+]

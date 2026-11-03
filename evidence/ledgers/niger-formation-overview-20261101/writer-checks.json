@@ -1,0 +1,153 @@
+{
+  "pinned_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guide_checks": {
+    "ne-company-formation": {
+      "all_15_checks": {
+        "tax_year_current": [],
+        "sources_read_dates": [],
+        "rates_rows_sourced": [],
+        "canonical_headings": [],
+        "two_oa_checks": [],
+        "version_numeric": [],
+        "tier_honest": [],
+        "no_em_dash": [],
+        "not_yet_confirmed": [],
+        "reviewed_on": [],
+        "read_date_evidence": [],
+        "sources_columns": [],
+        "source_hosts": [],
+        "jurisdiction_body": [],
+        "year_matches_link": []
+      },
+      "description_words": 101,
+      "sha256": "0aa7222c9a84edde114771663e9c8ec112ee4479eadab9e7625081fb7cf6d70a",
+      "bytes": 19764,
+      "platform_keys_and_full_cta_exact": true
+    },
+    "ne-tax-overview": {
+      "all_15_checks": {
+        "tax_year_current": [],
+        "sources_read_dates": [],
+        "rates_rows_sourced": [],
+        "canonical_headings": [],
+        "two_oa_checks": [],
+        "version_numeric": [],
+        "tier_honest": [],
+        "no_em_dash": [],
+        "not_yet_confirmed": [],
+        "reviewed_on": [],
+        "read_date_evidence": [],
+        "sources_columns": [],
+        "source_hosts": [],
+        "jurisdiction_body": [],
+        "year_matches_link": []
+      },
+      "description_words": 109,
+      "sha256": "3d6f6d3811ee2c954cc23ea5cca15ff45f3b718c3f35b662221a39ae9d7e401d",
+      "bytes": 17281,
+      "platform_keys_and_full_cta_exact": true
+    }
+  },
+  "preserved_files": [
+    {
+      "path": "evidence/ledgers/ne-cash-payment-tax.md",
+      "sha256": "a4971af227c3bb40744d5599100bc38816e89a5a2e5b92f359847f5f98719d67",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/ne-money-transfer-tax-repeal.md",
+      "sha256": "74382f0d98de63ba723efe75f5dc0f9a0d66b7e4c4409cdc3e20d8f0e2b74f11",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-candidate-manifest.json",
+      "sha256": "8eb1025f9ac37914cf28fbcb7ee1ec0e6adf2520b0147851dc4ab7620292726f",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-old-topics.md",
+      "sha256": "caf94922a930ec569bcef74dce52d88f37de5ab2424f1b74168fbec006eb5435",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/examples.txt",
+      "sha256": "19e2a7be540aeed3f0c3b98a05ad619dd38b9cf9540e0435c668237f9204ba4a",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/freeze-after.json",
+      "sha256": "7e9199e7f9dce3900578f11393765e8e070a8e65e429675561ebc012305917e6",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/freeze-before.json",
+      "sha256": "932fa7a1f784a6ea6c92b15e9bcd83017ffd1566f4dbc38b2d44a0fbad5bd48f",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/review.md",
+      "sha256": "4308032f3aaa8cacdae50b8549220f9fa667bcd98884ded9d0faa3b8f61b0bfc",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/scoped-validation.txt",
+      "sha256": "8c1ef923f97078f46e56b33ec299508aed17e9e9dba9ab9f67da5ae20038fe90",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/skill-checks.txt",
+      "sha256": "e3fd8d16439a78b79e3a295f5547043c0c54f02ad005e4c95c94e6d29d8c8959",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-review-20261101/sync-integrity.txt",
+      "sha256": "aab9de77347054149ce2e3e0794642fb17a371419dbd16d59ba7940a56c036f4",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-source-read-20261101.md",
+      "sha256": "9f0cb8bd4ec5251e54c02ee15eb290605ecd0b6a5bc3289e3e4408d741c6a691",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/niger-writer-checks-20261101.md",
+      "sha256": "d2ab535959f8ebc7dbbe62665069ee6fd4d09b2055a49cd30d988e0ae8d3c352",
+      "unchanged": true
+    },
+    {
+      "path": "skills/niger/ne-cash-payment-tax.md",
+      "sha256": "01ed691045f081c6db43c0bb7bc84a412220771fca8ba4930e4ba708c2a53081",
+      "unchanged": true
+    },
+    {
+      "path": "skills/niger/ne-corporate-income-tax.md",
+      "sha256": "6dff9833a45e4c86d90c8a8d3478953b5e9512727008dd910fde3e75736b0f41",
+      "unchanged": true
+    },
+    {
+      "path": "skills/niger/ne-money-transfer-tax-repeal.md",
+      "sha256": "47bb061db02053345e0accbc597623e32a3c1b589775d36715eb22df6aa68f96",
+      "unchanged": true
+    },
+    {
+      "path": "skills/niger/ne-payroll-social.md",
+      "sha256": "59923c83b62ff5babb4813cc6bf03ae78b3070d39917ecdb0ef9f031b2cd7282",
+      "unchanged": true
+    },
+    {
+      "path": "skills/niger/ne-vat-gst.md",
+      "sha256": "c5099936e9d614ceaca4d5d6301bff11f3a1b8c794c721cfcf269623da4a7f95",
+      "unchanged": true
+    }
+  ],
+  "old_topics": {
+    "ne-company-formation": 13,
+    "ne-tax-overview": 12
+  },
+  "source_ledger_records": {
+    "ne-company-formation": 33,
+    "ne-tax-overview": 14
+  },
+  "independent_review": "Pending; writer checks do not establish source acceptance.",
+  "no_accountant_attestation": true
+}

@@ -1,0 +1,29 @@
+{
+  "result": "ACCEPTED for bounded source fidelity",
+  "blocking_findings": [],
+  "repairs_required": 0,
+  "figures_rules_checked": 36,
+  "cases_recomputed": 2,
+  "old_ranges_preserved": 116,
+  "source_fidelity_is_not": [
+    "licensed accountant attestation",
+    "full country coverage",
+    "complete later-law currentness",
+    "authenticated filing approval",
+    "merger approval",
+    "evidence of remote publication"
+  ],
+  "held_items": [
+    "current112 reference-acquisition orders",
+    "negative/no-gain/noncash/gift price minimum",
+    "estate/death",
+    "disputed costs/values/fees/improvements",
+    "property-rich share cost/indirect holdings/loss and CGI81 coordination",
+    "mining agreements/collection/treaties",
+    "foreclosure procedural cross-reference/execution",
+    "local allocation instrument",
+    "registration due-days/forms/fields/payment/acceptance",
+    "later law and transaction-specific sanctions/relief"
+  ],
+  "all_seven_domains_remain_partial": true
+}

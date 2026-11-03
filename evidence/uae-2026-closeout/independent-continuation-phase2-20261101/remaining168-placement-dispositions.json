@@ -1,0 +1,1525 @@
+{
+  "population": 168,
+  "counts": {
+    "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW": 107,
+    "STRUCTURE / NO LEGAL CLAIM": 31,
+    "INTERNAL SCOPE / REFERRAL CONTROL": 18,
+    "SOURCE CHECK FINDING": 9,
+    "PROVENANCE / ROUTING CONTROL": 3
+  },
+  "rows": [
+    {
+      "rule_id": "ae-corporate-tax-L003",
+      "predecessor_current_line": 3,
+      "current_line": 3,
+      "text": "description: \"Use this skill whenever asked about UAE Corporate Tax for freelancers, sole establishments, or small businesses. Trigger on phrases like \\\"how much tax do I pay in UAE\\\", \\\"corporate tax UAE\\\", \\\"CT return\\\", \\\"FTA\\\", \\\"small business relief\\\", \\\"free zone tax\\\", \\\"qualifying free zone person\\\", \\\"AED 375,000\\\", \\\"9% tax\\\", \\\"taxable income UAE\\\", \\\"corporate tax registration\\\", \\\"UAE tax return\\\", \\\"self-employed tax UAE\\\", \\\"freelancer tax Dubai\\\", \\\"EmaraTax\\\", or any question about computing or filing UAE corporate tax. This skill covers the 0%/9% rate structure, small business relief (revenue not exceeding AED 3M), qualifying free zone person rules, deductible and non-deductible expenses, transfer pricing, registration requirements, and filing deadlines. Wages are outside Corporate Tax; natural-person business scope has a turnover test. ALWAYS read this skill before touching any UAE corporate tax work.\"",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L018",
+      "predecessor_current_line": 18,
+      "current_line": 18,
+      "text": "Tax year 2026. In the UAE the tax period is the business's financial year, so \"2026\" here means tax periods running in 2026 (for most businesses, the calendar year 1 January to 31 December 2026). The operative rules below were read on 1 November 2026 in the source scopes listed at the end; held methods are not confirmed. A short dated section covers returns for periods ending in 2025.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L022",
+      "predecessor_current_line": 22,
+      "current_line": 22,
+      "text": "This skill covers federal Corporate Tax under Federal Decree-Law No. 47 of 2022 for:",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L026",
+      "predecessor_current_line": 26,
+      "current_line": 26,
+      "text": "- Small businesses deciding whether to elect Small Business Relief.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L027",
+      "predecessor_current_line": 27,
+      "current_line": 27,
+      "text": "- A summary of the domestic minimum top-up tax for large multinational groups. The detailed work is referred out.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L037",
+      "predecessor_current_line": 37,
+      "current_line": 37,
+      "text": "- **Is the business part of a multinational group?** Ask for group consolidated revenue. A constituent company of a multinational group, as defined in Cabinet Decision No. 44 of 2020 (groups within Cabinet Decision No. 44 of 2020), cannot use Small Business Relief ([Ministerial Decision No. 73 of 2023, Article 3](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Small Business Relief Guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf)). Screen groups against the top-up-tax scope below; this is not a determination of liability. ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf)) **Free zone?** Which free zone, what activities, who the customers are (free zone persons, mainland businesses, individuals), whether audited accounts exist, and whether the company has elected out of the QFZP regime.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L038",
+      "predecessor_current_line": 38,
+      "current_line": 38,
+      "text": "- **Corporate Tax registration.** The date registered, the registration deadline, and whether a late registration penalty was imposed. **Returns already filed or due**, especially for periods ending 31 December 2025 (the due date, 30 September 2026, has passed, so check for late penalties).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L040",
+      "predecessor_current_line": 40,
+      "current_line": 40,
+      "text": "- **Related party and connected person transactions:** owners, directors, family members, group companies, and payments to them. **Entertainment, fines, owner drawings and personal expenses** in the accounts.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L045",
+      "predecessor_current_line": 45,
+      "current_line": 45,
+      "text": "2. **Check registration.** Every Taxable Person registers on EmaraTax by the deadline in FTA Decision No. 3 of 2024 (table below), including businesses that will claim Small Business Relief and free zone companies.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L047",
+      "predecessor_current_line": 47,
+      "current_line": 47,
+      "text": "4. **Test Small Business Relief** for a resident person. Revenue must be AED 3,000,000 or less in this period *and in every previous period*. The period must start on or after 1 June 2023 and end on or before 31 December 2029 (MD 131/2026 Article One). The person must not be a QFZP or a constituent company of a multinational group. If eligible and the client wants it, elect it on the return. Taxable income is then treated as nil and a simplified return is filed. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L048",
+      "predecessor_current_line": 48,
+      "current_line": 48,
+      "text": "5. **For a free zone company, test QFZP status**: adequate substance, qualifying income, the de minimis test, arm's length compliance with transfer pricing documentation, audited financial statements, and no election out. If any condition fails, it is taxed like a mainland company for that period and the next four.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L050",
+      "predecessor_current_line": 50,
+      "current_line": 50,
+      "text": "7. **Apply the general interest limitation** for persons in scope of Article 30, after the separate Article 31 test and historical-debt/infrastructure exclusions; for a 12-month period with net interest expense above AED 12,000,000: the deduction is the higher of AED 12,000,000 and 30% of tax-adjusted EBITDA. The excess carries forward for 10 periods. Pro-rate the monetary threshold for a non-12-month period. ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf))",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L061",
+      "predecessor_current_line": 61,
+      "current_line": 61,
+      "text": "| Who | Taxable income | Rate | Source |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L063",
+      "predecessor_current_line": 63,
+      "current_line": 63,
+      "text": "| Taxable Person (not a QFZP) | Portion not exceeding AED 375,000 | 0% | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L064",
+      "predecessor_current_line": 64,
+      "current_line": 64,
+      "text": "| Taxable Person (not a QFZP) | Portion exceeding AED 375,000 | 9% | https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L074",
+      "predecessor_current_line": 74,
+      "current_line": 74,
+      "text": "| Rule | Detail |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L083",
+      "predecessor_current_line": 83,
+      "current_line": 83,
+      "text": "| Condition or effect | Rule |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L091",
+      "predecessor_current_line": 91,
+      "current_line": 91,
+      "text": "| What switches off | Exempt income, reliefs, deductions, tax loss relief and transfer pricing documentation (Article 55) do not apply in a relief year. Transactions must still be at arm's length when measuring revenue |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L097",
+      "predecessor_current_line": 97,
+      "current_line": 97,
+      "text": "Revenue means gross income under the accounting standards applied, not profit ([Small Business Relief Guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf)). The FTA's small business bulletin still says periods ending on or before 31 December 2026. Ministerial Decision No. 131 of 2026 replaces that text, so rely on the Decision.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L121",
+      "predecessor_current_line": 126,
+      "current_line": 126,
+      "text": "Always taxed at 9% even for a QFZP: income of a domestic or foreign permanent establishment (for example a mainland branch), most immovable property income, and non-qualifying intellectual property income.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L123",
+      "predecessor_current_line": 128,
+      "current_line": 128,
+      "text": "**Consequence of failing:** failure of a condition removes QFZP status from the start of that period and for the next four periods (MD 229/2025 Article 5). An election to use standard rates takes effect from the current or following period under Corporate Tax Law Article 19; the election-duration rules are a separate unconfirmed hold below.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L129",
+      "predecessor_current_line": 134,
+      "current_line": 134,
+      "text": "| Item | Treatment |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L140",
+      "predecessor_current_line": 145,
+      "current_line": 145,
+      "text": "| Payments to connected persons (owners, directors, their related parties) | Deductible only up to market value and only if wholly and exclusively for the business |",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-04",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L149",
+      "predecessor_current_line": 154,
+      "current_line": 154,
+      "text": "- For how losses interact with Small Business Relief, see that section.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L153",
+      "predecessor_current_line": 158,
+      "current_line": 158,
+      "text": "| Rule | Detail |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L156",
+      "predecessor_current_line": 161,
+      "current_line": 161,
+      "text": "| Safe amount | No limit where net interest expenditure does not exceed AED 12,000,000 for a 12-month period (pro-rated for longer or shorter periods) |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L157",
+      "predecessor_current_line": 162,
+      "current_line": 162,
+      "text": "| Above the safe amount | Deduct the higher of AED 12,000,000 and 30% of EBITDA (excluding exempt income) |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L181",
+      "predecessor_current_line": 186,
+      "current_line": 186,
+      "text": "- **What:** a top-up tax computed under the annex's UAE GloBE rules using the 15% minimum rate, with adjustments, exclusions and safe harbours; do not calculate it as 15% of accounting profit.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L182",
+      "predecessor_current_line": 187,
+      "current_line": 187,
+      "text": "- **Registration:** within 7 months after the end of the first fiscal year in scope. Entities with a fiscal year ending before 30 April 2026 register on or before 30 November 2026.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L186",
+      "predecessor_current_line": 191,
+      "current_line": 191,
+      "text": "The computation is specialist work, so refer it out (see \"When to refuse or refer\").",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L190",
+      "predecessor_current_line": 195,
+      "current_line": 195,
+      "text": "| Situation | Outcome |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L198",
+      "predecessor_current_line": 203,
+      "current_line": 203,
+      "text": "| Free zone company, non-qualifying revenue exactly at the lower of 5% or AED 5,000,000 | Passes (the test is \"does not exceed\") |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L202",
+      "predecessor_current_line": 207,
+      "current_line": 207,
+      "text": "| Net interest expenditure of exactly AED 12,000,000 | Fully deductible (limit applies only above it) |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L207",
+      "predecessor_current_line": 212,
+      "current_line": 212,
+      "text": "The amounts are illustrations. Each case uses a calendar-year tax period unless stated.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L209",
+      "predecessor_current_line": 214,
+      "current_line": 214,
+      "text": "1. **Freelance consultant, Small Business Relief.**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L210",
+      "predecessor_current_line": 215,
+      "current_line": 215,
+      "text": "   - **Facts:** a Dubai mainland sole establishment owner had business revenue of AED 1,400,000 in 2024; in 2025 it was AED 2,600,000 and in 2026 it was AED 2,900,000. Turnover passed AED 1,000,000 in 2024, so she was a Taxable Person and had to register by 31 March 2025.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L211",
+      "predecessor_current_line": 216,
+      "current_line": 216,
+      "text": "   - **Relief:** revenue has been AED 3,000,000 or less in 2026 and in every earlier period, the 2026 period ends before 31 December 2029, and she is not in a multinational group. So she can elect Small Business Relief on her 2026 return, due 30 September 2027. Taxable income is treated as nil and the tax is nil.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L212",
+      "predecessor_current_line": 217,
+      "current_line": 217,
+      "text": "   - **If she forgets to elect:** with taxable income of AED 900,000, tax is (AED 900,000 − AED 375,000) × 9% = AED 47,250 ([Cabinet Decision No. 116 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Cabinet%20Decision%20No.%20116%20of%202022%20-%20for%20publishing.pdf)).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L213",
+      "predecessor_current_line": 218,
+      "current_line": 218,
+      "text": "2. **Relief lost for good; standard computation.**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L214",
+      "predecessor_current_line": 219,
+      "current_line": 219,
+      "text": "   - **Facts:** an Abu Dhabi engineering LLC had revenue of AED 3,200,000 in 2025 and AED 4,200,000 in 2026. Its 2026 taxable income after all adjustments is AED 2,380,000.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L215",
+      "predecessor_current_line": 220,
+      "current_line": 220,
+      "text": "   - **Tax:** (AED 2,380,000 − AED 375,000) × 9% = AED 180,450.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L216",
+      "predecessor_current_line": 221,
+      "current_line": 221,
+      "text": "   - **Relief:** if revenue fell to AED 2,400,000 in 2027, Small Business Relief would still not be available, because 2025 revenue exceeded the threshold ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf)).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L217",
+      "predecessor_current_line": 222,
+      "current_line": 222,
+      "text": "3. **Loss cap and entertainment.**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L219",
+      "predecessor_current_line": 224,
+      "current_line": 224,
+      "text": "   - **Loss cap:** it has AED 700,000 of losses from 2024 and 2025. The cap is AED 835,000 × 75% = AED 626,250. Taxable income becomes AED 835,000 − AED 626,250 = AED 208,750, which falls inside the AED 375,000 0% band, so the tax is nil. The remaining AED 73,750 of losses carries forward.",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-05",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L220",
+      "predecessor_current_line": 225,
+      "current_line": 225,
+      "text": "   - **If it had elected Small Business Relief instead:** had its revenue allowed it to elect the relief in 2026, none of the AED 700,000 could be used in 2026, but all of it would survive for later non-relief years ([FTA losses bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2026/CT-Tax-Bulletin-Corporate-Tax-Losses-EN.pdf)).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L221",
+      "predecessor_current_line": 226,
+      "current_line": 226,
+      "text": "4. **Interest limitation.**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L222",
+      "predecessor_current_line": 227,
+      "current_line": 227,
+      "text": "   - **Facts:** a property developer has net interest expenditure of AED 20,000,000 and tax-adjusted EBITDA of AED 50,000,000.",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-05",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L223",
+      "predecessor_current_line": 228,
+      "current_line": 228,
+      "text": "   - **Limit:** 30% of EBITDA is AED 50,000,000 × 30% = AED 15,000,000, which is higher than AED 12,000,000, so AED 15,000,000 is deductible. The other AED 5,000,000 carries forward for up to 10 periods ([Ministerial Decision No. 126 of 2023](https://tax.gov.ae/Datafolder/Files/Pdf/2023/Ministerial%20Decision%20No.%20126%20of%202023%20on%20the%20General%20Interest%20Deduction%20Limitation%20Rule%20-%20for%20publishing.pdf)).",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-05",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L224",
+      "predecessor_current_line": 229,
+      "current_line": 229,
+      "text": "5. **QFZP that passes de minimis, with a mainland branch.**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L225",
+      "predecessor_current_line": null,
+      "current_line": 230,
+      "text": "   - **De minimis test:** a free zone distributor has revenue of AED 20,000,000 after every Article 4(3) exclusion described above, with mainland-branch revenue excluded. Assume no further excluded property or intellectual-property revenue and that a specialist has confirmed the distribution activity and customer conditions. Of that adjusted revenue, AED 800,000 is non-qualifying sales to individuals; the rest is qualifying distribution revenue. The de minimis limit is the lower of AED 20,000,000 × 5% = AED 1,000,000 and AED 5,000,000, so it is AED 1,000,000. AED 800,000 does not exceed it, so the test is met. If it meets the other conditions, its qualifying income is taxed at 0%.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L227",
+      "predecessor_current_line": 232,
+      "current_line": 232,
+      "text": "   - **If the test had failed:** had sales to individuals been AED 1,200,000, it would fail and be taxed at the standard rates for 2026 and the four following periods ([Free Zone Persons bulletin](https://tax.gov.ae/Datafolder/Files/Pdf/2024/CT%20Bulletin/Basic%20Tax%20Information%20bulletin-%20Free%20Zone%20Person-English.pdf)).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L228",
+      "predecessor_current_line": 233,
+      "current_line": 233,
+      "text": "6. **Free zone software house selling to the mainland.**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L229",
+      "predecessor_current_line": 234,
+      "current_line": 234,
+      "text": "   - **Facts:** a free zone software company earns AED 5,000,000, all from mainland companies.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L230",
+      "predecessor_current_line": 235,
+      "current_line": 235,
+      "text": "   - **Outcome:** assume the receipts are ordinary development-service fees, with no qualifying intellectual-property income. Those services are not a listed Qualifying Activity, so all of that revenue is non-qualifying and far above the de minimis limit. It is not a QFZP. It pays 0% on the first AED 375,000 of taxable income and 9% above that, like a mainland company ([Ministerial Decision No. 229 of 2025](https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-229.pdf)).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L231",
+      "predecessor_current_line": 236,
+      "current_line": 236,
+      "text": "7. **Late registration waived.**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L232",
+      "predecessor_current_line": 237,
+      "current_line": 237,
+      "text": "   - **Facts:** a company incorporated on 10 February 2026 with a 31 December year end had to register within 3 months, by 10 May 2026. It registered in August 2026, so the AED 10,000 late registration penalty applies.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L235",
+      "predecessor_current_line": 240,
+      "current_line": 240,
+      "text": "   - **Freelancer:** a freelance designer with AED 750,000 of business turnover in 2026 is not subject to Corporate Tax and does not register. Monitor turnover, because once it exceeds AED 1,000,000 in a calendar year she must register by 31 March of the next year.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L236",
+      "predecessor_current_line": 241,
+      "current_line": 241,
+      "text": "   - **Salaried landlord:** an employee who owns two flats and rents them out without a licence has no Corporate Tax at all. Wages and real estate investment income are not business income ([Cabinet Decision No. 49 of 2023](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf)).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L289",
+      "predecessor_current_line": 294,
+      "current_line": 294,
+      "text": "- **QFZP determinations** where the activities, customer mix or substance are unclear, or where the de minimis test is close. Never apply 0% without evidence of every condition and audited accounts. Refer to an FTA-registered tax agent. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L290",
+      "predecessor_current_line": 295,
+      "current_line": 295,
+      "text": "- **Top-up tax** for groups with EUR 750 million or more of revenue: the scope, the computation, the safe harbours and the information return. Refer to a Pillar Two specialist. ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf))",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L291",
+      "predecessor_current_line": 296,
+      "current_line": 296,
+      "text": "- **Tax groups, loss transfers, qualifying group transfers, business restructuring relief, and participation exemption** claims.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L292",
+      "predecessor_current_line": 297,
+      "current_line": 297,
+      "text": "- **Transfer pricing documentation**, advance pricing agreements, or related party transactions near the disclosure thresholds.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L293",
+      "predecessor_current_line": 298,
+      "current_line": 298,
+      "text": "- **Non-residents:** permanent establishment or nexus questions, effective management and control, withholding tax and treaty relief.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L294",
+      "predecessor_current_line": 299,
+      "current_line": 299,
+      "text": "- **Exempt persons**: government-controlled entities, public benefit entities, investment funds, pension funds, extractive businesses. For the categories and applications within its Articles 2 and 5, exemption procedure follows [FTA Decision No. 15 of 2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTax.pdf), in force from 15 September 2026.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L295",
+      "predecessor_current_line": 300,
+      "current_line": 300,
+      "text": "- **Voluntary disclosures, tax assessments, reconsideration requests**, or unfiled past periods.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L296",
+      "predecessor_current_line": 301,
+      "current_line": 301,
+      "text": "- **Unincorporated partnerships and family foundations.**",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L297",
+      "predecessor_current_line": 302,
+      "current_line": 302,
+      "text": "- **Research and development incentives or tax credits**, which fall outside this skill.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L303",
+      "predecessor_current_line": 308,
+      "current_line": 308,
+      "text": "| Person | Register by |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L313",
+      "predecessor_current_line": 318,
+      "current_line": 318,
+      "text": "Businesses claiming Small Business Relief and free zone companies must register too. Registering for VAT does not register the business for Corporate Tax.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L321",
+      "predecessor_current_line": 326,
+      "current_line": 326,
+      "text": "| Tax period ends | Return and payment due |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L330",
+      "predecessor_current_line": 335,
+      "current_line": 335,
+      "text": "| Tax period ended | Return and payment due |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L336",
+      "predecessor_current_line": 341,
+      "current_line": 341,
+      "text": "The same rates, the AED 375,000 band and the Small Business Relief conditions apply to 2025 periods. For a 2025 period, the Small Business Relief threshold also applied under the original 31 December 2026 end date, so the extension changes nothing for 2025. Audited statements are required above AED 50,000,000 of revenue for periods starting on or after 1 January 2025.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L340",
+      "predecessor_current_line": 345,
+      "current_line": 345,
+      "text": "| Violation | Penalty (AED) |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L355",
+      "predecessor_current_line": 360,
+      "current_line": 360,
+      "text": "- [ ] Registration date checked against the deadline; late registration waiver considered.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L358",
+      "predecessor_current_line": 363,
+      "current_line": 363,
+      "text": "- [ ] Free zone: every QFZP condition evidenced, de minimis test computed (lower of 5% or AED 5,000,000), branch and property income taxed at 9%.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L360",
+      "predecessor_current_line": 365,
+      "current_line": 365,
+      "text": "- [ ] Interest limitation applied above AED 12,000,000.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L364",
+      "predecessor_current_line": 369,
+      "current_line": 369,
+      "text": "- [ ] Audited statements obtained where revenue exceeds AED 50,000,000 or the person is a QFZP.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-corporate-tax-L365",
+      "predecessor_current_line": 370,
+      "current_line": 370,
+      "text": "- [ ] Top-up tax scope checked for multinational groups (EUR 750 million) and referred out.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L003",
+      "predecessor_current_line": 3,
+      "current_line": 3,
+      "text": "description: \"Use this skill for UAE payroll questions in tax year 2026: why wages are outside Corporate Tax, employee versus self-employed, directors' fees, Corporate Tax deduction of staff costs and private pension contributions, and VAT recovery on staff benefits, including the 1 October 2026 rules and the FTA cases for transport, food, accommodation, phones and parking. Names the pension, gratuity, Wage Protection System and unemployment insurance duties and who to confirm them with; it does not state their rates. Trigger on: UAE payroll, Dubai salary tax, gratuity, GPSSA, staff accommodation VAT, employee benefits UAE.\"",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L020",
+      "predecessor_current_line": 20,
+      "current_line": 20,
+      "text": "This skill is for anyone running or advising on a UAE payroll in calendar year 2026: an employer, a payroll provider, or an accountant answering \"what do I deduct from this salary, and what does the company owe?\". The operative federal tax rules were read in the precise scopes listed in Sources on 1 November 2026; social execution remains held.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L022",
+      "predecessor_current_line": 22,
+      "current_line": 22,
+      "text": "What it covers:",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L029",
+      "predecessor_current_line": 29,
+      "current_line": 29,
+      "text": "**Social compliance is held, including coverage.** GPSSA/Abu Dhabi pension routing, nationality and first-insurance rules, gratuity coverage and accrual, free-zone differences, WPS, unemployment insurance, rates, caps, due dates and penalties have not been confirmed from their governing sources in this repair. Do not use the old text to execute payroll. Obtain current authority confirmation through a UAE payroll specialist before processing those items. Original details remain in the immutable evidence and destination table.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L031",
+      "predecessor_current_line": 31,
+      "current_line": 31,
+      "text": "Companion Skills: Corporate Tax for the employer is in `ae-corporate-tax`; the individual's own position (including when a self-employed person must register) is in `ae-income-tax`; VAT registration and returns are in `uae-vat`.",
+      "phase2_status": "PROVENANCE / ROUTING CONTROL",
+      "basis": "Sourceidentity/routingstatement, nottaxlaw.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L045",
+      "predecessor_current_line": 45,
+      "current_line": 45,
+      "text": "**What payroll does involve:**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L047",
+      "predecessor_current_line": 47,
+      "current_line": 47,
+      "text": "| Obligation | Who it applies to | Who runs it | Status in this skill |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L055",
+      "predecessor_current_line": 55,
+      "current_line": 55,
+      "text": "- Is the worker employed under an employment contract, or engaged as a contractor or freelancer? If a contractor, how much business turnover do they have in the calendar year?",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L056",
+      "predecessor_current_line": 56,
+      "current_line": 56,
+      "text": "- What is the worker's nationality: UAE national, another GCC nationality, or expatriate? Keep this for the specialist's coverage check. For a UAE national: in which emirate are they employed? Pension-fund routing is held pending authority confirmation. For a UAE national: when were they first insured? The coverage and regime are held pending authority confirmation.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L057",
+      "predecessor_current_line": 57,
+      "current_line": 57,
+      "text": "- Is the employer on the mainland or in a free zone, and which authority licensed it? Ask the specialist to establish the applicable employment and payroll regime.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L058",
+      "predecessor_current_line": 58,
+      "current_line": 58,
+      "text": "- Is the employer a Taxable Person for Corporate Tax, and what is its Tax Period? Is it VAT-registered?",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L059",
+      "predecessor_current_line": 59,
+      "current_line": 59,
+      "text": "- Which benefits does the employer give beyond cash salary: accommodation, health insurance (and for which family members), cars, flights, staff events? Does the employer pay into a private pension or end-of-service savings fund for staff? How much, and has it actually been paid in the Tax Period?",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L060",
+      "predecessor_current_line": 60,
+      "current_line": 60,
+      "text": "- Are any employees or directors also shareholders, or related to shareholders?",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L065",
+      "predecessor_current_line": 65,
+      "current_line": 65,
+      "text": "2. Before running payroll, resolve the social-compliance holds with a UAE payroll specialist. This Guide supplies no pension deductions, gratuity accrual, WPS timetable or insurance instruction.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L068",
+      "predecessor_current_line": 68,
+      "current_line": 68,
+      "text": "5. File and pay each item on its own timetable (see \"Filing and payment\" below) and keep the payroll records that support the Corporate Tax deduction.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L072",
+      "predecessor_current_line": 72,
+      "current_line": 72,
+      "text": "| Item | 2026 figure | Official source |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L083",
+      "predecessor_current_line": 83,
+      "current_line": 83,
+      "text": "Pension (GPSSA, Abu Dhabi and GCC arrangements), gratuity under the Labour Law, WPS, unemployment insurance and free-zone employment regimes are held. The old coverage assertions and instructions have been preserved in evidence/uae-2026-closeout, rather than treated as verified tax-authority guidance.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L125",
+      "predecessor_current_line": 125,
+      "current_line": 125,
+      "text": "| Situation | Treatment | Watch for |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L186",
+      "predecessor_current_line": null,
+      "current_line": 186,
+      "text": "- Ask a UAE payroll specialist which pension fund, if any, covers this worker and employer, and which authority supplies the applicable rates, caps, deadlines and penalties. Do not assume Abu Dhabi/GPSSA routing from this Guide or quote rates from memory.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L187",
+      "predecessor_current_line": null,
+      "current_line": 187,
+      "text": "- Ask a UAE employment specialist which law and authority govern a leaving employee's gratuity, particularly with unpaid leave, part-time service, a contract change or a dispute; obtain the applicable calculation before execution.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L188",
+      "predecessor_current_line": null,
+      "current_line": 188,
+      "text": "- Ask the specialist which employment regime and authority govern a free-zone employer, including a financial free zone; do not infer the applicable rules from this Guide.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L190",
+      "predecessor_current_line": 190,
+      "current_line": 190,
+      "text": "- Refuse to present the employer's pension, gratuity or insurance figures as confirmed by this skill. It does not contain them.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L197",
+      "predecessor_current_line": null,
+      "current_line": 197,
+      "text": "- **Wage Protection System and unemployment insurance:** ask the specialist which obligations, responsible authority and timetable apply. These remain non-operative holds here.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L207",
+      "predecessor_current_line": 207,
+      "current_line": 207,
+      "text": "- [ ] Every worker classified as employee or self-employed, with the contract on file.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L209",
+      "predecessor_current_line": 209,
+      "current_line": 209,
+      "text": "- [ ] Social coverage and fund routing independently confirmed from current authority sources; no social instruction is taken from held old text.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L210",
+      "predecessor_current_line": 210,
+      "current_line": 210,
+      "text": "- [ ] Gratuity coverage, accrual and payment method independently confirmed before execution.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "ae-payroll-social-L211",
+      "predecessor_current_line": null,
+      "current_line": 211,
+      "text": "- [ ] Specialist asked which WPS and unemployment-insurance obligations, responsible authority and timetable apply; answers obtained from the applicable current authority sources before execution.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L003",
+      "predecessor_current_line": 3,
+      "current_line": 3,
+      "text": "description: Use this skill whenever asked to prepare, review, or classify transactions for a UAE VAT return (VAT201 form) for any client. Trigger on phrases like \"prepare VAT return\", \"do the VAT\", \"fill in VAT201\", \"create the return\", \"UAE VAT filing\", \"FTA return\", or any request involving UAE VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers the UAE only and only standard VAT-registered persons filing VAT201. VAT groups, profit margin schemes, partial exemption with non-trivial exempt supplies, and Designated Zone goods movement classifications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any UAE VAT work.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L018",
+      "predecessor_current_line": 18,
+      "current_line": 18,
+      "text": "Tax year 2026. UAE VAT is filed by tax period (usually a quarter), not by annual return, so \"2026\" here means tax periods that fall in calendar year 2026. The rules below are the law as published on tax.gov.ae and mof.gov.ae read in the scopes listed in Sources on 1 November 2026. Two sets of changes took effect this year (1 January 2026 and 14 April 2026) and one more took effect on 1 October 2026; each is dated where it applies. A short section covers returns for periods that ended before those dates.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L022",
+      "predecessor_current_line": 22,
+      "current_line": 22,
+      "text": "Sources for this section: [VAT Law, consolidated to Decree-Law No. 16 of 2025](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf); [Executive Regulation, consolidated 09-2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf).",
+      "phase2_status": "PROVENANCE / ROUTING CONTROL",
+      "basis": "Sourceidentity/routingstatement, nottaxlaw.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L024",
+      "predecessor_current_line": 24,
+      "current_line": 24,
+      "text": "This skill covers federal Value Added Tax under Federal Decree-Law No. 8 of 2017 (\"VAT Law\") and its Executive Regulation (Cabinet Decision No. 52 of 2017), for:",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L026",
+      "predecessor_current_line": 26,
+      "current_line": 26,
+      "text": "- businesses deciding whether they must or may register;",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L027",
+      "predecessor_current_line": 27,
+      "current_line": 27,
+      "text": "- a single ordinary VAT-registered business (not a Tax Group, government entity or charity) preparing or reviewing its VAT201 return;",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L028",
+      "predecessor_current_line": 28,
+      "current_line": 28,
+      "text": "- classifying sales and purchases: standard rate, zero rate, exempt, not a supply, reverse charge, blocked input tax;",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L029",
+      "predecessor_current_line": 29,
+      "current_line": 29,
+      "text": "- invoicing, record keeping, penalties and the e-invoicing timeline.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L031",
+      "predecessor_current_line": 31,
+      "current_line": 31,
+      "text": "It does not compute partial-exemption apportionment, Tax Group returns, Designated Zone goods movements, capital asset scheme adjustments, the oil and gas reverse charge, or tourist refund scheme entries. Those are referred out (see \"When to refuse or refer\"). It does not cover Corporate Tax or Excise Tax.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L037",
+      "predecessor_current_line": 37,
+      "current_line": 37,
+      "text": "- **Is the business registered, and from what date?** Get the TRN, the effective date of registration and the tax period on the registration certificate. The period the FTA assigned governs, not a rule of thumb. **Is it a single registrant or a member of a Tax Group?** Tax Groups are referred out. **Where is it established?** Which Emirate (for the Box 1 split), and is it in a Designated Zone, a free zone that is not designated, or the mainland?",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L038",
+      "predecessor_current_line": 38,
+      "current_line": 38,
+      "text": "- **What does it sell, and to whom?** Local customers, customers abroad, other GCC countries, consumers or businesses. Any residential property, bare land, financial services, education, healthcare or local passenger transport? **Does it make any exempt supplies?** If more than trivial, input tax must be apportioned: refer.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L039",
+      "predecessor_current_line": 39,
+      "current_line": 39,
+      "text": "- **What did it buy from abroad?** Services or software billed by a supplier with no UAE TRN (reverse charge), and goods imported through UAE customs (Box 6). **Which costs are entertainment, cars, or staff benefits?** These are the main blocked items.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L041",
+      "predecessor_current_line": 41,
+      "current_line": 41,
+      "text": "- **Any errors in earlier returns?** The size of the tax difference decides whether a voluntary disclosure is needed. **Excess input tax carried forward?** And from which tax period it arose (the five-year limit applies from 1 January 2026).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L042",
+      "predecessor_current_line": 42,
+      "current_line": 42,
+      "text": "- **Revenue in the last accounting period?** It decides the e-invoicing deadline (the AED 50,000,000 test in [Ministerial Decision No. 244 of 2025](https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf)).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L046",
+      "predecessor_current_line": 46,
+      "current_line": 46,
+      "text": "1. **Confirm registration.** If not registered, test the mandatory threshold (supplies in the last 12 months, or expected in the next 30 days) and the voluntary threshold ([Executive Regulation, Articles 7 and 8](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf)). A late registrant owes VAT on supplies made from the date it should have been registered.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L049",
+      "predecessor_current_line": 49,
+      "current_line": 49,
+      "text": "4. **Split standard-rated sales by Emirate** for Box 1a-1g.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L050",
+      "predecessor_current_line": 50,
+      "current_line": 50,
+      "text": "5. **Pick up reverse-charge purchases.** Services and goods from suppliers with no UAE place of residence who are not charging UAE VAT go in Box 3 (output VAT) and, if recoverable, Box 10. Imports through UAE customs appear in Box 6; correct them in Box 7.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L051",
+      "predecessor_current_line": 51,
+      "current_line": 51,
+      "text": "6. **Classify each purchase.** Keep only input tax on costs used for taxable supplies, backed by a tax invoice (or import documents), and paid or intended to be paid within six months of the agreed payment date. Strip out blocked items: entertainment of non-employees, motor vehicles available for personal use, and free personal benefits to staff. Conservative defaults where the facts are missing: an item whose blocked status is unknown is treated as blocked; a purchase whose VAT status is unknown is not recovered; if the Emirate of a sale is unknown, ask before filing.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L053",
+      "predecessor_current_line": 53,
+      "current_line": 53,
+      "text": "8. **Compute the return.** Box 12 (due tax) less Box 13 (recoverable tax) gives Box 14. If Box 14 is negative, choose a refund or carry the excess forward, noting the five-year limit.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L054",
+      "predecessor_current_line": 54,
+      "current_line": 54,
+      "text": "9. **File and pay** through the FTA's online portal by the 28th day. Keep the records for at least five years.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L075",
+      "predecessor_current_line": 75,
+      "current_line": 75,
+      "text": "| Treatment | Supplies | Official source |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L079",
+      "predecessor_current_line": 79,
+      "current_line": 79,
+      "text": "| Exempt (no VAT, related input tax not recoverable) | Financial services specified in the Executive Regulation (including margin-based services, and life insurance and its reinsurance); residential buildings other than the zero-rated first supplies, but only where the lease is more than 6 months or the tenant holds a UAE ID card (Executive Regulation Article 43(1)); bare land; local passenger transport in a qualifying means of transport (Article 45, not pleasure trips) | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf; Executive Regulation arts 31-45: https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L080",
+      "predecessor_current_line": 80,
+      "current_line": 80,
+      "text": "| Standard rate, although property | Commercial property: \"Supplies of commercial property\" are listed among the Box 1 standard-rated supplies in the [FTA VAT Returns User Guide](https://tax.gov.ae/DataFolder/Files/Pdf/VAT%20Returns%20User%20GuideEnglishV40%2015%2008%202021%20SEP2021.pdf), so a commercial lease is standard-rated | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf; Executive Regulation arts 31-45: https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L099",
+      "predecessor_current_line": 99,
+      "current_line": 99,
+      "text": "The box layout is from the FTA's August 2021 returns guide, read for form mechanics only. Later law overrides its older penalty and unlimited carry-forward wording. Confirm the current EmaraTax form before submission; its present labels and payment screens have not been read in a signed-in session.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L101",
+      "predecessor_current_line": 101,
+      "current_line": 101,
+      "text": "| Box | What goes in it |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L134",
+      "predecessor_current_line": 134,
+      "current_line": 134,
+      "text": "- A domestic reverse charge applies to crude or refined oil, natural gas and pure hydrocarbons between registrants (Article 48(3)); refer.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L147",
+      "predecessor_current_line": 147,
+      "current_line": 147,
+      "text": "**Blocked (not recoverable) for a business that is not a listed government entity:**",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Heading/introductiononly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L173",
+      "predecessor_current_line": 173,
+      "current_line": 173,
+      "text": "- A deemed supply is reported in Box 1 and needs a tax invoice (delivered to the recipient, or kept on file if there is none).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L182",
+      "predecessor_current_line": 182,
+      "current_line": 182,
+      "text": "- Goods movements into, out of and between zones are referred out.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L205",
+      "predecessor_current_line": 205,
+      "current_line": 205,
+      "text": "| Effective | Measure | What changed |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L215",
+      "predecessor_current_line": 215,
+      "current_line": 215,
+      "text": "| Who | Appoint an Accredited Service Provider by | Implement by | Official source |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L219",
+      "predecessor_current_line": 219,
+      "current_line": 219,
+      "text": "| Revenue of AED 50,000,000 or more | 30 October 2026 (moved from 31 July 2026 by Ministerial Decision No. 66 of 2026) | 1 January 2027 | https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L231",
+      "predecessor_current_line": 231,
+      "current_line": 231,
+      "text": "| Question | Answer | Boundary |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L234",
+      "predecessor_current_line": 234,
+      "current_line": 234,
+      "text": "| No sales yet, taxable expenses above AED 187,500 | May register voluntarily | Expenses count for voluntary, not mandatory, registration |",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-01",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L238",
+      "predecessor_current_line": 238,
+      "current_line": 238,
+      "text": "| Invoice to a registered customer for AED 10,000 | Simplified invoice allowed | Allowed where consideration \"does not exceed\" AED 10,000 |",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-02",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L239",
+      "predecessor_current_line": 239,
+      "current_line": 239,
+      "text": "| Same for AED 10,001 | Full tax invoice | Above the limit |",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-02",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L251",
+      "predecessor_current_line": 251,
+      "current_line": 251,
+      "text": "Sources for this section: [VAT Law, consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf); [Executive Regulation, consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf); [FTA VAT Returns User Guide](https://tax.gov.ae/DataFolder/Files/Pdf/VAT%20Returns%20User%20GuideEnglishV40%2015%2008%202021%20SEP2021.pdf).",
+      "phase2_status": "PROVENANCE / ROUTING CONTROL",
+      "basis": "Sourceidentity/routingstatement, nottaxlaw.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L255",
+      "predecessor_current_line": 255,
+      "current_line": 255,
+      "text": "**Case 2: voluntary registration.** A start-up has no sales yet but taxable expenses of AED 200,000 in the last 12 months. That exceeds AED 187,500, so it may register voluntarily and recover input tax. It is not required to register.",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-01",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L261",
+      "predecessor_current_line": 261,
+      "current_line": 261,
+      "text": "| Line | Amount (AED) | VAT (AED) | Box | Source |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L329",
+      "predecessor_current_line": 329,
+      "current_line": 329,
+      "text": "- **Tax Group members:** consolidation and intra-group supplies need a registered tax agent.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L331",
+      "predecessor_current_line": 331,
+      "current_line": 331,
+      "text": "- **Designated Zone goods movements:** goods entering, leaving or moving between Designated Zones.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L333",
+      "predecessor_current_line": 333,
+      "current_line": 333,
+      "text": "- **Oil, gas and hydrocarbons** between registrants (domestic reverse charge) and other special reverse charges.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L334",
+      "predecessor_current_line": 334,
+      "current_line": 334,
+      "text": "- **Tourist Refund Scheme** operators or retailers.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L335",
+      "predecessor_current_line": 335,
+      "current_line": 335,
+      "text": "- **Complex profit margin scheme** cases (mixed stock, second-hand vehicles, partial exports).",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L336",
+      "predecessor_current_line": 336,
+      "current_line": 336,
+      "text": "- **Tax evasion chain notices** from the FTA, audits, objections and reconsideration requests.",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L337",
+      "predecessor_current_line": 337,
+      "current_line": 337,
+      "text": "- **Penalties for violations that began before 14 April 2026:** the decision text we found does not say whether the new table applies to them; check with the FTA.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L338",
+      "predecessor_current_line": 338,
+      "current_line": 338,
+      "text": "- **Cash-payment input tax block** from 1 October 2026, until the Minister's decision setting the value is found.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L339",
+      "predecessor_current_line": 339,
+      "current_line": 339,
+      "text": "- **GCC implementing-state supplies** (goods or services to or from other GCC countries).",
+      "phase2_status": "INTERNAL SCOPE / REFERRAL CONTROL",
+      "basis": "Stipulatedscope/refer/holdpolicy. Nounderlyingunverifiedlawaccepted.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L351",
+      "predecessor_current_line": 351,
+      "current_line": 351,
+      "text": "- A tax period that ended before 1 January 2026 follows the VAT Law before Decree-Law No. 16 of 2025, including the self-invoice requirement for reverse-charge supplies in that period. Correct past errors on the rules of the period concerned.",
+      "phase2_status": "SOURCE CHECK FINDING",
+      "basis": "P2-03",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L352",
+      "predecessor_current_line": 352,
+      "current_line": 352,
+      "text": "- Penalties for a return or payment due before 14 April 2026 may fall under the earlier table (Cabinet Decision No. 49 of 2021); check.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L357",
+      "predecessor_current_line": 357,
+      "current_line": 357,
+      "text": "| Violation | Penalty (AED) |",
+      "phase2_status": "STRUCTURE / NO LEGAL CLAIM",
+      "basis": "Tableheaderonly.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L373",
+      "predecessor_current_line": 373,
+      "current_line": 373,
+      "text": "| Failure to account for import VAT | 50% of the unpaid or undeclared tax |",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L377",
+      "predecessor_current_line": 377,
+      "current_line": 377,
+      "text": "- Keep: records of all supplies and imports; tax invoices and credit notes issued and received (or alternative documents); records of goods and services used for non-business purposes and of purchases where input tax was not deducted; records of exports; records of adjustments and corrections; and a tax record of due tax, reverse-charge tax, recoverable tax and corrections.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L382",
+      "predecessor_current_line": 382,
+      "current_line": 382,
+      "text": "- [ ] Registration status, TRN, effective date and tax period confirmed from the certificate.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L383",
+      "predecessor_current_line": 383,
+      "current_line": 383,
+      "text": "- [ ] Mandatory (AED 375,000, more-than) or voluntary (AED 187,500) test applied if not registered.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L384",
+      "predecessor_current_line": 384,
+      "current_line": 384,
+      "text": "- [ ] Each sale classified standard, zero, exempt or not a supply; export conditions evidenced.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L385",
+      "predecessor_current_line": 385,
+      "current_line": 385,
+      "text": "- [ ] Box 1 split by Emirate.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L387",
+      "predecessor_current_line": 387,
+      "current_line": 387,
+      "text": "- [ ] Input tax backed by tax invoices, paid or to be paid within six months; blocked items removed.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L389",
+      "predecessor_current_line": 389,
+      "current_line": 389,
+      "text": "- [ ] Credit notes and past errors dealt with; voluntary disclosure if tax was understated by more than AED 10,000.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L391",
+      "predecessor_current_line": 391,
+      "current_line": 391,
+      "text": "- [ ] Filed and paid by the 28th day after the period end.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L392",
+      "predecessor_current_line": 392,
+      "current_line": 392,
+      "text": "- [ ] E-invoicing deadline identified from last year's revenue.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L393",
+      "predecessor_current_line": 393,
+      "current_line": 393,
+      "text": "- [ ] Changes effective 1 October 2026 applied to supplies from that date.",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    },
+    {
+      "rule_id": "uae-vat-L394",
+      "predecessor_current_line": 394,
+      "current_line": 394,
+      "text": "- [ ] Records kept for five years (15 years for real estate).",
+      "phase2_status": "SOURCE CHECK ACCEPTED BY REUSED CLAUSE AND PLACEMENT REVIEW",
+      "basis": "Prior groupedsourceacceptance plus phase2source-addenda; exact placement/conditionsread. Sourcesupport is by operativeclaim, not broad ledgerbundle.",
+      "previous_status": "SOURCE ACCEPTANCE REMAINS OPEN"
+    }
+  ],
+  "meaning": "Other293newlyacceptedplacements/prior53notredone. Identifiedconditionsfindingsremainopen;notallPASS."
+}

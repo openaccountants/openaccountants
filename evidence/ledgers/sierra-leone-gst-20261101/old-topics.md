@@ -1,0 +1,18 @@
+# Sierra Leone GST predecessor destinations
+
+Immutable base ce1c6c38ed868ea2998dc5a12dbe81b6889fcef0. Full original lines, line hashes and Git blob are in old-topics.json. Every opening, heading and substantive bullet has a precise destination. No substantive topic is silently dropped.
+
+| ID | Old topic | Destination | Disposition |
+|---|---|---|---|
+| 1 | # Sierra Leone VAT / GST | H1 | Renamed to Goods and Services Tax v1.0; same country/job. |
+| 2 | ## Goods and Services Tax (GST) | Canonical sections | Legacy single heading replaced with the nine required sections. |
+| 3 | Sierra Leone levies a single-rate Goods and Services Tax (GST), a VAT-style consumption tax introduced in 2010 and administered by the NRA under the Goods and Services Tax Act 2009. There is no separate sales tax. | Who this applies to / Sources: Not yet confirmed | 2010 history and no-separate-sales-tax claim explicitly held; rate/authority facts use primary cited rules. |
+| 4 | - **Standard GST rate** — 15 percent  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_ | Rates / The base s14 | 15% ordinary taxable rate retained with exemptions/zero-rate and GST-exclusive conditions. |
+| 5 | - **GST on imports** — 15 percent (applied to imported goods and services for local use)  _([Goods and Services Tax Act 2009](https://www.pwc.co.za/en/publications/vat-in-africa/sierra-leone-overview.html))_ | Rates / The base ss25-26 / Cross-border s24 | Goods import classification/value retained; blanket imported-services claim corrected to conditional reverse-charge/digital tests. |
+| 6 | - **Zero-rated supplies** — 0 percent (Exports and certain supplies are zero-rated (approx — confirm))  _(Goods and Services Tax Act 2009)_ | Rates / Cross-border s2 andFirstSchedule | Zero-rate goods exports/stores retained with external-delivery evidence, not every foreign-customer service. |
+| 7 | - **Exempt supplies** — Basic foodstuffs, financial services, education, medical services and similar items are exempt (approx — confirm)  _(Goods and Services Tax Act 2009)_ | Rates / Sources | Specific2023entry conditions replace generic categories;2026renewable/HS/numbering conflicts explicitly held. |
+| 8 | - **Registration threshold** — 100,000 NLe (Annual taxable turnover of NLe 100,000 or more (approx — confirm))  _(Goods and Services Tax Act 2009)_ | Rates / The base s15 | Old100000 corrected to2024Le500000 replacement; allturnover and compulsory tests distinguished. |
+| 9 | - **Filing frequency** — Monthly GST returns (approx — confirm)  _(Goods and Services Tax Act 2009)_ | Who this applies to / Deadlines | Monthly statutory period plus otherprescribedperiod condition retained. |
+| 10 | - **Return and payment deadline** — By the last working day of the month following the tax period (approx — confirm)  _(Goods and Services Tax Act 2009)_ | Deadlines / Sources | Oldcombineddeadline corrected to2025return21days and2026paymentendfollowingmonth; currentholiday/procedureheld. |
+| 11 | - **Input tax credit** — Registered persons may credit input GST against output GST on taxable supplies  _(Goods and Services Tax Act 2009)_ | The base ss27-29 | Input netting,blockedcategories,direct/shared attribution,documents andconditions retained. |
+| 12 | - **Reverse charge on imported services** — Recipients of services from non-resident suppliers self-account for GST under the reverse-charge mechanism (approx — confirm)  _(Goods and Services Tax Act 2009)_ | Cross-border s24 | Blanketreversecharge corrected to actualnonresident/agent/taxability/useconditions; digitalinteractionheld. |

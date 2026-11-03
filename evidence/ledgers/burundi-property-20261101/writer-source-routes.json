@@ -1,0 +1,20 @@
+[
+  {
+    "name": "electronic-title-order2025",
+    "url": "https://www.obr.bi/images/Ordonnance-ministerielle-conjointeportant-determination-des-modalites-dacquisition-du-titre-foncier-electronique-securise-en-application-de-larticle.pdf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "registration2020-page",
+    "url": "https://amategeko.gov.bi/laws_and_other_acts/loi-n1-05-du-20-fevrier-2020-portant-fixation-des-droits-denregistrement-en-matiere-fonciere/",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "name": "obr-orders-property",
+    "url": "https://www.obr.bi/index.php/publications/actualites/353-remise-et-reprise-au-commissariat-des-douanes-et-accises?ml=4&mlt=system&tmpl=component",
+    "final_url": "https://www.obr.bi/index.php/publications/actualites/353-remise-et-reprise-au-commissariat-des-douanes-et-accises?ml=4&mlt=system&tmpl=component",
+    "bytes": 182,
+    "sha256": "61484107d4ada9af8f22c7610183c0ec2be7d2857007c77e904b18c74dfba5c9",
+    "file": "obr-orders-property.html"
+  }
+]

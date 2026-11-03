@@ -1,0 +1,18 @@
+{
+  "source_commit": "7ee0c1299efb8595cc18659bdb791a7487c5476b",
+  "files": {
+    "evidence/ledgers/td-import-exemption-eligibility.md": "6f0042bc6a6c0f4c2042700e631d461a15de551d",
+    "evidence/ledgers/chad-old-topics.md": "a46248269387bac6def938669dc461aff767a49a",
+    "evidence/ledgers/chad-repair-1/additional-source-record.json": "d4209a2a0b76e430da1a0159289d589a188a80ae",
+    "evidence/ledgers/chad-repair-1/writer-repair.json": "feaab5edf341ed8a08e15bd0e01e5606d5fe898f",
+    "evidence/ledgers/chad-review-closure-1/closure.md": "4b1522c081681de57f91a55b38c1990bbdfa2864",
+    "evidence/ledgers/chad-review-closure-1/closure-checks.py": "b197f89c742655d850904d95b82767058407f27a",
+    "evidence/ledgers/chad-review-closure-1/pinned-validation.py": "f3ceef9b27ebbbd84165e71116449bc1137f8d59",
+    "evidence/ledgers/chad-review-closure-1/check-results.json": "2012730ced3b4b1582393983ab302bb7b979d4aa",
+    "evidence/ledgers/chad-draft-20261101/source-record.json": "034871276a5dc059f7e4b328fd98ce0de7214b12",
+    "evidence/ledgers/chad-draft-20261101/candidate-manifest.json": "1803259e0d8d02ab5bfdebe3e879d1d28bf118e2",
+    "evidence/ledgers/chad-review-20261101/review-checks.py": "6582a55ea4cd01cdbcf7072c62da785ab7368fc1",
+    "evidence/ledgers/chad-review-20261101/check-results.json": "a22caa2f4ff70a6a91364e3b77470aeda880d561",
+    "evidence/ledgers/chad-review-20261101/review.md": "12c2b777d35f99a8a7835abef1f87deb7b709b55"
+  }
+}

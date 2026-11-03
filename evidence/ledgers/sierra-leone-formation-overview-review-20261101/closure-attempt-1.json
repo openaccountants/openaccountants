@@ -1,0 +1,57 @@
+{
+  "status": "one residual precision correction; not closure accepted",
+  "candidate_hashes_match": {
+    "skills/sierra-leone/sl-company-formation.md": true,
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/rules.json": true,
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md": true,
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.json": true,
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.md": true
+  },
+  "nominee_repair": "accepted",
+  "statutory_register_hold": "accepted",
+  "preservation": {
+    "count": 114,
+    "all_exact": true
+  },
+  "initial_review_evidence_unchanged": true,
+  "shape_checks": {
+    "sl-company-formation": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "sl-tax-overview": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  "source_quote_check": {
+    "additional_quotes_match_physical125": true
+  },
+  "reviewer_clarification": "Initial finding used short year as shorthand. Actual s.302(2) says a period which is a company year but not in fact a year. Proration is not limited to periods shorter than twelve months. Preserve initial evidence and correct candidate Guide table/example and F25 human/JSON ledger to every company reporting period not twelve months."
+}

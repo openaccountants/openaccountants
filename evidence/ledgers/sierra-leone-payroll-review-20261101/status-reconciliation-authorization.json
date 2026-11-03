@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "decision": "Authorized solely as clerical reconciliation after independent source-bound acceptance",
+  "accepted_guide_sha256": "a05a0713c51cf92cd7b438f698833e4fd0157759de0b3a3f373da0dead894ab2",
+  "allowed_changes": [
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/rules.json",
+      "allowed_json_pointer": "/status",
+      "from": "Corrected after independent review; focused closure pending",
+      "to": "source-bound corrections accepted",
+      "pre_change_sha256": "23e42b4cd562b4d0802d492ccba8080b2cf3df66bf2ad2bd196194e94507d00c",
+      "expected_post_change_sha256": "1560c5e84de2fa69370c53b3e1dc3cf1d716d0c9c57adf43c97ec020b2e218da",
+      "operation": "Replace this one top-level status string only, preserving every other byte, including historical candidate file hashes. This receipt supplies the separate post-status hash."
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/writer-corrections.json",
+      "allowed_json_pointer": "/status",
+      "from": "Repairs PR01-PR04 complete; independent focused closure pending",
+      "to": "source-bound corrections accepted",
+      "pre_change_sha256": "08c7b47fa2f1ea74c9ea23848f2b69345328093eaae70dd710bb732c820738ba",
+      "expected_post_change_sha256": "79d8a740851f51cd71680c5edf5b1756f51b62ee55f69ada679714b53225e8a5",
+      "operation": "Replace this one top-level status string only, preserving every other byte, including historical candidate file hashes. This receipt supplies the separate post-status hash."
+    }
+  ],
+  "unchanged_requirements": "No other bytes in either file may change. In particular no rule record, source, candidate-file hash, tax figure, Guide, professional-review field, author attribution, CTA, historical writer-freeze or original reviewer artifact is authorized by this status-only reconciliation.",
+  "receipt_instruction": "After applying, record actual pre/post hashes and exact single-status-value diffs in a separate receipt; require equality with the predicted hashes here. Candidate_files in writer-corrections remains the historical pre-status candidate manifest, with its accepted post-status hashes furnished by this separate authorization/receipt.",
+  "limits": "Source-bound corrections accepted is not operative 2026 law, full payroll/PAYE, live-filing, full-country coverage or accountant attestation approval."
+}

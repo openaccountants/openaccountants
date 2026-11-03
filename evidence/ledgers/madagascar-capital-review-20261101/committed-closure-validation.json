@@ -1,0 +1,42 @@
+{
+  "validated_content_head": "41df774420e5a60d7958590b0d1dc2c90d4da1ae",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "checks": [
+    {
+      "command": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 scripts/validate-guides.py --changed-only --no-index-check",
+      "chunk_id": "ba6a33",
+      "wall_time_seconds": 0.2216255,
+      "exit_code": 0,
+      "original_token_count": 104,
+      "output": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/madagascar/mg-annual-property-tax.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/madagascar/mg-capital-income.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (2 warning group(s))\n"
+    },
+    {
+      "command": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 scripts/check-sync-integrity.py --base 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 --mode audit --strict-metadata",
+      "chunk_id": "d3ac04",
+      "wall_time_seconds": 0.358856625,
+      "exit_code": 0,
+      "original_token_count": 21,
+      "output": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+    },
+    {
+      "command": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 evidence/ledgers/madagascar-capital-20261101/writer-check.py",
+      "chunk_id": "5fecf0",
+      "wall_time_seconds": 2.594411625,
+      "exit_code": 0,
+      "original_token_count": 212,
+      "output": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n{\n  \"source_rule_rows\": 46,\n  \"shape_checks\": 15,\n  \"shape_problems\": {\n    \"tax_year_current\": [],\n    \"sources_read_dates\": [],\n    \"rates_rows_sourced\": [],\n    \"canonical_headings\": [],\n    \"two_oa_checks\": [],\n    \"version_numeric\": [],\n    \"tier_honest\": [],\n    \"no_em_dash\": [],\n    \"not_yet_confirmed\": [],\n    \"reviewed_on\": [],\n    \"read_date_evidence\": [],\n    \"sources_columns\": [],\n    \"source_hosts\": [],\n    \"jurisdiction_body\": [],\n    \"year_matches_link\": []\n  },\n  \"prior_guides_unchanged\": 9,\n  \"prior_evidence_blobs_unchanged\": 48,\n  \"new_guide_sha256\": \"1a0079e3e70d8b10879ebbecb1fcced3b62aa80804d4be99fc208c1e5e47b41a\",\n  \"old_topic_rule\": \"All prior introductions/headings/bullets/tables/frontmatter/CTA remain at identical old Guide blobs; no old Guide rewrite.\"\n}\n"
+    },
+    {
+      "command": "git diff --check 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 HEAD",
+      "chunk_id": "822ab3",
+      "wall_time_seconds": 9.625e-06,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "guide_sha256": "1a0079e3e70d8b10879ebbecb1fcced3b62aa80804d4be99fc208c1e5e47b41a",
+  "readme_sha256": "5ad18a8f6d134e27f46392bf5a56b3f58ce19fdcb2eebec2c0d63071b2da6079",
+  "status_reconciliation": "Exactly three permitted literals. All 18 existing review artifacts, 12 initial review artifacts and 11 original writer evidence files unchanged; nine prior Guides and 48 prior Madagascar evidence files unchanged. Original property 50-row review and F1/F2 closure preserved.",
+  "scope": "46 capital rows independently accepted after exact statutory role repair F1; two cases and 15 shape checks pass. Committed validator checks two Guides and passes with two unclassified-slug warnings. Strict metadata checks two Guides with zero findings. Whole-base whitespace passes. This additive receipt is committed after validated content; Guide/README bytes remain unchanged. All seven domains partial; all source/procedure holds unchanged. No accountant attestation or merge permission."
+}

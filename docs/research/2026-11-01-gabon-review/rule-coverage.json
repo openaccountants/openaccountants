@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "C-SCOPE",
+    "source": "CGI",
+    "article": "CGI art7-I",
+    "quote_present": true,
+    "claimed_main_page": 5,
+    "matching_pages": [
+      5
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-BASE",
+    "source": "CGI",
+    "article": "CGI art8",
+    "quote_present": true,
+    "claimed_main_page": 8,
+    "matching_pages": [
+      8
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-DEDUCT",
+    "source": "LF",
+    "article": "LF041/2025 art4 replacing CGI art11",
+    "quote_present": true,
+    "claimed_main_page": 3,
+    "matching_pages": [
+      3
+    ],
+    "source_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e"
+  },
+  {
+    "id": "C-INVOICE",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art11bis",
+    "quote_present": true,
+    "claimed_main_page": 2,
+    "matching_pages": [
+      2
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "C-LOSS",
+    "source": "CGI",
+    "article": "CGI art11-IV",
+    "quote_present": true,
+    "claimed_main_page": 16,
+    "matching_pages": [
+      16,
+      28,
+      284
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-YEAR",
+    "source": "CGI",
+    "article": "CGI art15",
+    "quote_present": true,
+    "claimed_main_page": 23,
+    "matching_pages": [
+      23,
+      36
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-RATE",
+    "source": "CGI",
+    "article": "CGI art16",
+    "quote_present": true,
+    "claimed_main_page": 23,
+    "matching_pages": [
+      23
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-SECTOR",
+    "source": "CGI",
+    "article": "CGI art16",
+    "quote_present": true,
+    "claimed_main_page": 24,
+    "matching_pages": [
+      24
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-RETURN",
+    "source": "CGI",
+    "article": "CGI art20",
+    "quote_present": true,
+    "claimed_main_page": 24,
+    "matching_pages": [
+      24
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-INSTAL",
+    "source": "CGI",
+    "article": "CGI art21",
+    "quote_present": true,
+    "claimed_main_page": 25,
+    "matching_pages": [
+      25
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-MIN",
+    "source": "CGI",
+    "article": "CGI arts24-25",
+    "quote_present": true,
+    "claimed_main_page": 26,
+    "matching_pages": [
+      26,
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-RELIEF",
+    "source": "CGI",
+    "article": "CGI art26",
+    "quote_present": true,
+    "claimed_main_page": 27,
+    "matching_pages": [
+      27,
+      63
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-BOOKS",
+    "source": "CGI",
+    "article": "CGI art17",
+    "quote_present": true,
+    "claimed_main_page": 24,
+    "matching_pages": [
+      24
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-SCOPE",
+    "source": "CGI",
+    "article": "CGI art74",
+    "quote_present": true,
+    "claimed_main_page": 35,
+    "matching_pages": [
+      35
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-WORLD",
+    "source": "CGI",
+    "article": "CGI art162",
+    "quote_present": true,
+    "claimed_main_page": 58,
+    "matching_pages": [
+      58
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-HOUSE",
+    "source": "CGI",
+    "article": "CGI arts75-79",
+    "quote_present": true,
+    "claimed_main_page": 35,
+    "matching_pages": [
+      35
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-ROUND",
+    "source": "CGI",
+    "article": "CGI art168",
+    "quote_present": true,
+    "claimed_main_page": 60,
+    "matching_pages": [
+      60
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-SHARES",
+    "source": "CGI",
+    "article": "CGI art170",
+    "quote_present": true,
+    "claimed_main_page": 61,
+    "matching_pages": [
+      61
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BANDS",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BASE",
+    "source": "CGI",
+    "article": "CGI art92",
+    "quote_present": true,
+    "claimed_main_page": 41,
+    "matching_pages": [
+      41
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-FEES",
+    "source": "CGI",
+    "article": "CGI art94",
+    "quote_present": true,
+    "claimed_main_page": 41,
+    "matching_pages": [
+      41
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-RETURN",
+    "source": "CGI",
+    "article": "CGI art167",
+    "quote_present": true,
+    "claimed_main_page": 60,
+    "matching_pages": [
+      60
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-MIN",
+    "source": "CGI",
+    "article": "CGI arts175-175bis",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-RENT",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art178bis",
+    "quote_present": true,
+    "claimed_main_page": 3,
+    "matching_pages": [
+      3
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "P-WITHHOLD",
+    "source": "CGI",
+    "article": "CGI arts95-96",
+    "quote_present": true,
+    "claimed_main_page": 42,
+    "matching_pages": [
+      42
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "P-TCS",
+    "source": "CGI",
+    "article": "CGI arts346-351",
+    "quote_present": true,
+    "claimed_main_page": 120,
+    "matching_pages": [
+      120
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "P-CNSS",
+    "source": "CNSS",
+    "article": "Decree0487/PR/MASI arts2-4",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13"
+  },
+  {
+    "id": "P-START",
+    "source": "CNSSPOST",
+    "article": "CNSS official announcement, opening paragraphs",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "e59d658bb289dcb8acabba463eada3c2aaf33a394ed8fe6b413ee7f934f3354e"
+  },
+  {
+    "id": "P-HEALTH",
+    "source": "CNAMGS",
+    "article": "CNAMGS employer page, assessment and private-sector rates",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2"
+  },
+  {
+    "id": "P-HEALTHFILE",
+    "source": "CNAMGS",
+    "article": "CNAMGS employer page, declaration/payment and schedule",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2"
+  },
+  {
+    "id": "P-HOUSING",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI arts401-404bis",
+    "quote_present": true,
+    "claimed_main_page": 10,
+    "matching_pages": [
+      10
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "P-CAR",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art91bis",
+    "quote_present": true,
+    "claimed_main_page": 3,
+    "matching_pages": [
+      3
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-SCOPE",
+    "source": "CGI",
+    "article": "CGI arts207-209",
+    "quote_present": true,
+    "claimed_main_page": 73,
+    "matching_pages": [
+      73
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "V-NONRES",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art208ter",
+    "quote_present": true,
+    "claimed_main_page": 4,
+    "matching_pages": [
+      4
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-BASE",
+    "source": "CGI",
+    "article": "CGI arts212-220",
+    "quote_present": true,
+    "claimed_main_page": 82,
+    "matching_pages": [
+      82
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "V-RATESLF",
+    "source": "LF",
+    "article": "LF041/2025 art4, CGI art221",
+    "quote_present": true,
+    "claimed_main_page": 6,
+    "matching_pages": [
+      6
+    ],
+    "source_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e"
+  },
+  {
+    "id": "V-RATESLFR",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art221",
+    "quote_present": true,
+    "claimed_main_page": 7,
+    "matching_pages": [
+      7
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-EXEMPT",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art210",
+    "quote_present": true,
+    "claimed_main_page": 5,
+    "matching_pages": [
+      5
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-INPUT",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI arts222-224",
+    "quote_present": true,
+    "claimed_main_page": 7,
+    "matching_pages": [
+      7
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-PRORATA",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art227",
+    "quote_present": true,
+    "claimed_main_page": 7,
+    "matching_pages": [
+      7
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-FILE",
+    "source": "CGI",
+    "article": "CGI art237",
+    "quote_present": true,
+    "claimed_main_page": 87,
+    "matching_pages": [
+      87
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "V-RC",
+    "source": "CGI",
+    "article": "CGI art240",
+    "quote_present": true,
+    "claimed_main_page": 88,
+    "matching_pages": [
+      88,
+      266
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "V-DIGITAL",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI arts248septies-248nonies",
+    "quote_present": true,
+    "claimed_main_page": 9,
+    "matching_pages": [
+      9
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-CSS",
+    "source": "CGI",
+    "article": "TFNC section7 CSS arts13-27",
+    "quote_present": true,
+    "claimed_main_page": 265,
+    "matching_pages": [
+      265
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "X-WHT",
+    "source": "CGI",
+    "article": "CGI art206",
+    "quote_present": true,
+    "claimed_main_page": 72,
+    "matching_pages": [
+      72
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "X-DIV",
+    "source": "CGI",
+    "article": "CGI arts108-111",
+    "quote_present": true,
+    "claimed_main_page": 46,
+    "matching_pages": [
+      46,
+      50
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "X-OCAM",
+    "source": "LFR",
+    "article": "LFR002/2026 art7",
+    "quote_present": true,
+    "claimed_main_page": 16,
+    "matching_pages": [
+      16
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "X-PE",
+    "source": "CGI",
+    "article": "CGI art7-II",
+    "quote_present": true,
+    "claimed_main_page": 6,
+    "matching_pages": [
+      6
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "X-EXIT",
+    "source": "CGI",
+    "article": "CGI arts165-166",
+    "quote_present": true,
+    "claimed_main_page": 59,
+    "matching_pages": [
+      59
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "X-GAIN",
+    "source": "LF",
+    "article": "LF041/2025 art4, CGI art23para6",
+    "quote_present": true,
+    "claimed_main_page": 4,
+    "matching_pages": [
+      4
+    ],
+    "source_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e"
+  },
+  {
+    "id": "T-ADJUST",
+    "source": "CGI",
+    "article": "CGI art12",
+    "quote_present": true,
+    "claimed_main_page": 22,
+    "matching_pages": [
+      22
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "T-BENEFIT",
+    "source": "CGI",
+    "article": "CGI art13",
+    "quote_present": true,
+    "claimed_main_page": 22,
+    "matching_pages": [
+      22
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "T-START",
+    "source": "CGI",
+    "article": "CGI artP831",
+    "quote_present": true,
+    "claimed_main_page": 191,
+    "matching_pages": [
+      191
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "T-DOC",
+    "source": "CGI",
+    "article": "CGI artP831bis",
+    "quote_present": true,
+    "claimed_main_page": 192,
+    "matching_pages": [
+      192
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "T-CBCR",
+    "source": "CGI",
+    "article": "CGI artP831ter",
+    "quote_present": true,
+    "claimed_main_page": 192,
+    "matching_pages": [
+      192
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "T-EXTRA",
+    "source": "CGI",
+    "article": "CGI artP831quater",
+    "quote_present": true,
+    "claimed_main_page": 194,
+    "matching_pages": [
+      194
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "T-PEN",
+    "source": "CGI",
+    "article": "CGI artP1010bis",
+    "quote_present": true,
+    "claimed_main_page": 231,
+    "matching_pages": [
+      231
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "T-CBCRPEN",
+    "source": "CGI",
+    "article": "CGI artP1010ter",
+    "quote_present": true,
+    "claimed_main_page": 231,
+    "matching_pages": [
+      231
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "F-FORMS",
+    "source": "OHADA",
+    "article": "AUSCGIE arts309,323,385,853-1",
+    "quote_present": true,
+    "claimed_main_page": 66,
+    "matching_pages": [
+      66
+    ],
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c"
+  },
+  {
+    "id": "F-SARL",
+    "source": "OHADA",
+    "article": "AUSCGIE arts311-311-1",
+    "quote_present": true,
+    "claimed_main_page": 66,
+    "matching_pages": [
+      66
+    ],
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c"
+  },
+  {
+    "id": "F-SA",
+    "source": "OHADA",
+    "article": "AUSCGIE arts387-389",
+    "quote_present": true,
+    "claimed_main_page": 84,
+    "matching_pages": [
+      84
+    ],
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c"
+  },
+  {
+    "id": "F-SAS",
+    "source": "OHADA",
+    "article": "AUSCGIE arts853-4-853-5",
+    "quote_present": true,
+    "claimed_main_page": 192,
+    "matching_pages": [
+      192
+    ],
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c"
+  },
+  {
+    "id": "F-OFFICE",
+    "source": "OHADA",
+    "article": "AUSCGIE arts23-25",
+    "quote_present": true,
+    "claimed_main_page": 6,
+    "matching_pages": [
+      6
+    ],
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c"
+  },
+  {
+    "id": "F-DEPOSIT",
+    "source": "OHADA",
+    "article": "AUSCGIE arts10,313-314",
+    "quote_present": true,
+    "claimed_main_page": 67,
+    "matching_pages": [
+      67
+    ],
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c"
+  },
+  {
+    "id": "F-RCCM",
+    "source": "OHADA",
+    "article": "AUSCGIE arts97-98",
+    "quote_present": true,
+    "claimed_main_page": 21,
+    "matching_pages": [
+      21,
+      198
+    ],
+    "source_sha256": "c7a6c71adeabb69aa588cad72f8d6e34e24353b25d4ff469f24777970d9f713c"
+  },
+  {
+    "id": "F-ANPI",
+    "source": "ANPI",
+    "article": "ANPI formalisation, displayed creation circuit",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "1d3282a10d05ac997523b385e2019251ff58a34e7f9891bde894c8621c5f08aa"
+  },
+  {
+    "id": "F-TAX",
+    "source": "CGI",
+    "article": "CGI artP817",
+    "quote_present": true,
+    "claimed_main_page": 187,
+    "matching_pages": [
+      187
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "F-UBO",
+    "source": "CGI",
+    "article": "CGI artP818quater",
+    "quote_present": true,
+    "claimed_main_page": 189,
+    "matching_pages": [
+      189
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "G-DELAY",
+    "source": "CGI",
+    "article": "CGI artsP998-999",
+    "quote_present": true,
+    "claimed_main_page": 228,
+    "matching_pages": [
+      228
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "G-INTEREST",
+    "source": "CGI",
+    "article": "CGI artP996",
+    "quote_present": true,
+    "claimed_main_page": 228,
+    "matching_pages": [
+      228
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "G-PAY",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI artP1000",
+    "quote_present": true,
+    "claimed_main_page": 12,
+    "matching_pages": [
+      12
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "I-BAND1",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BAND2",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BAND3",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BAND4",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BAND5",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BAND6",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BAND7",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "I-BAND8",
+    "source": "CGI",
+    "article": "CGI art174",
+    "quote_present": true,
+    "claimed_main_page": 62,
+    "matching_pages": [
+      62
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "P-CNSSFAM",
+    "source": "CNSS",
+    "article": "Decree0487/PR/MASI art2",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13"
+  },
+  {
+    "id": "P-CNSSACC",
+    "source": "CNSS",
+    "article": "Decree0487/PR/MASI art2",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13"
+  },
+  {
+    "id": "P-CNSSCAP",
+    "source": "CNSS",
+    "article": "Decree0487/PR/MASI art4",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13"
+  },
+  {
+    "id": "P-HEALTHCAP",
+    "source": "CNAMGS",
+    "article": "CNAMGS employer page, ceiling",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2"
+  },
+  {
+    "id": "P-HEALTHWORK",
+    "source": "CNAMGS",
+    "article": "CNAMGS employer page, private rates",
+    "quote_present": true,
+    "claimed_main_page": null,
+    "matching_pages": [],
+    "source_sha256": "7965c033a34cdc05defe2c51d43e75f9fe7b64df3edc080540dd94bd8af8e9e2"
+  },
+  {
+    "id": "T-CBCRRATE",
+    "source": "CGI",
+    "article": "CGI artP1010ter",
+    "quote_present": true,
+    "claimed_main_page": 231,
+    "matching_pages": [
+      231
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "C-FLOOR",
+    "source": "CGI",
+    "article": "CGI art24",
+    "quote_present": true,
+    "claimed_main_page": 26,
+    "matching_pages": [
+      26
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "V-TEN",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art221(2)",
+    "quote_present": true,
+    "claimed_main_page": 6,
+    "matching_pages": [
+      6
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-FIVE",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art221(3)",
+    "quote_present": true,
+    "claimed_main_page": 7,
+    "matching_pages": [
+      7
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-THREE",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art221(4)",
+    "quote_present": true,
+    "claimed_main_page": 7,
+    "matching_pages": [
+      7
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-ZERO",
+    "source": "LFR",
+    "article": "LFR002/2026 art4, CGI art221(5)",
+    "quote_present": true,
+    "claimed_main_page": 7,
+    "matching_pages": [
+      7
+    ],
+    "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941"
+  },
+  {
+    "id": "V-DOMCAP",
+    "source": "CGI",
+    "article": "CGI art208",
+    "quote_present": true,
+    "claimed_main_page": 53,
+    "matching_pages": [
+      53,
+      73
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "V-FORESTCAP",
+    "source": "CGI",
+    "article": "CGI art208",
+    "quote_present": true,
+    "claimed_main_page": 69,
+    "matching_pages": [
+      69,
+      73,
+      241,
+      247
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  },
+  {
+    "id": "V-CSSCAP",
+    "source": "CGI",
+    "article": "TFNC section7 CSS art14",
+    "quote_present": true,
+    "claimed_main_page": 261,
+    "matching_pages": [
+      261
+    ],
+    "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9"
+  }
+]

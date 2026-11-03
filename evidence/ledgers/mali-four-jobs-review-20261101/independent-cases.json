@@ -1,0 +1,104 @@
+{
+  "candidate": "3338b0f742fc9505945915ea7c1af95a97712353",
+  "case_count": 8,
+  "all_expected_results_match": true,
+  "cases": [
+    {
+      "job": "formation",
+      "case": "capital/shares",
+      "independent_calculation": "1,200,000 / 5,000 = 240 equal shares. 3/5 of240=144; remainder96. At least half of all cash subscription=600,000; balance600,000.",
+      "results": {
+        "shares": 240,
+        "founder_60_percent": 144,
+        "other": 96,
+        "minimum_paid": 600000,
+        "balance": 600000
+      },
+      "boundary": "Nominal-share floor is not a separate total-capital enactment; all cash stipulated."
+    },
+    {
+      "job": "formation",
+      "case": "strict auditor boundary",
+      "independent_calculation": "At equality, assets and turnover each fail strict greater-than;51staff passes. Add1toassets makes two tests.",
+      "results": {
+        "case_a": 1,
+        "case_b": 2
+      },
+      "boundary": "Existing mandate and one-tenth court-request path remain separate."
+    },
+    {
+      "job": "overview",
+      "case": "income schedules",
+      "independent_calculation": "Salary1.5m + profit2m + dividend0.3m =3.8m records. Wage remains1.5m; other schedules2.3m.",
+      "results": {
+        "records": 3800000,
+        "wage": 1500000,
+        "other": 2300000,
+        "wrong_wage_excess": 2300000
+      },
+      "boundary": "No final individual business or investment liability supplied."
+    },
+    {
+      "job": "overview",
+      "case": "principal credits",
+      "independent_calculation": "Three unique1m principal receipts =3m credit against established6m assessment, balance3m.100k increase is excluded.",
+      "results": {
+        "credit": 3000000,
+        "balance": 3000000,
+        "wrong_balance": 2900000,
+        "understatement": 100000
+      },
+      "boundary": "Assessment independently stipulated; excludes increases under LPF282."
+    },
+    {
+      "job": "TP",
+      "case": "purchase correction",
+      "independent_calculation": "10,000 units × (14,000−12,000) =20m overcharge;30m profit plus20m =50m adjusted starting point.",
+      "results": {
+        "booked": 140000000,
+        "supported": 120000000,
+        "transfer": 20000000,
+        "adjusted": 50000000
+      },
+      "boundary": "Comparability and period expense stipulated; no final IS or mandated universal method."
+    },
+    {
+      "job": "TP",
+      "case": "documentation cap",
+      "independent_calculation": "At3bn equality enters threshold.1%is30m/month;2months60m;8months240m, capped5%=150m.",
+      "results": {
+        "two_months": 60000000,
+        "eight_uncapped": 240000000,
+        "cap": 150000000,
+        "eight_capped": 150000000,
+        "below_threshold": false
+      },
+      "boundary": "Foreign relation/legal-person conditions, actual due date and complete months stipulated."
+    },
+    {
+      "job": "XB",
+      "case": "service withholding",
+      "independent_calculation": "20m receipts less50%cost fraction leaves10m source base;30%=3m withholding;cash17m;cash+tax20m.",
+      "results": {
+        "base": 10000000,
+        "tax": 3000000,
+        "cash": 17000000,
+        "gross_reconciled": 20000000
+      },
+      "boundary": "No permanent professional installation, service used Mali, no treaty/special regime; VAT separate."
+    },
+    {
+      "job": "XB",
+      "case": "head-office ceiling",
+      "independent_calculation": "Established10m base ×20%=2m ceiling. Of3m booked,2.5m supported =>2m deduction/1m addback. If1.5m supported =>1.5m deduction/1.5m addback.",
+      "results": {
+        "ceiling": 2000000,
+        "deduction_a": 2000000,
+        "addback_a": 1000000,
+        "deduction_b": 1500000,
+        "addback_b": 1500000
+      },
+      "boundary": "Article80 scope and denominator stipulated; cap creates no evidence or automatic allowance."
+    }
+  ]
+}

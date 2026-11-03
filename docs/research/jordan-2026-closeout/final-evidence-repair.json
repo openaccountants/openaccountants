@@ -1,0 +1,79 @@
+{
+  "inspected_repair_head": "136a5783c6dab634956fb39aaff94d48131f43ea",
+  "scope": "JR07 evidence-only final correction. No Guide body, historical table, currentness hold, prior source-review receipt or tax figure changed. No new network/source hunt.",
+  "associations": {
+    "jordan-gst:C013": [
+      "GSTBASE",
+      "GST7"
+    ],
+    "jo-payroll-social:C002": [
+      "SSC3",
+      "SSC20",
+      "IT12"
+    ],
+    "jordan-gst:C008": [
+      "GST7",
+      "SCHEDULES"
+    ],
+    "jordan-gst:C009": [
+      "RATES",
+      "SCHEDULES"
+    ],
+    "jordan-gst:C049": [
+      "SCHEDULES"
+    ],
+    "jordan-gst:C050": [
+      "RATES"
+    ]
+  },
+  "recovered_primary_evidence": {
+    "SCHEDULES": {
+      "url": "https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA",
+      "cache": "primary-schedule-list-titles.txt",
+      "sha256": "d7c4a89e909f20a2cdb660a31b5f5ec8064997182f3738e0589b1de2b5a7142e",
+      "scope": "Recovered original author tool output of the official list actually fetched/read; reread2026-11-01. Not a fresh retrieval; title/file-list scope only. Cached original-author primary output reread 2026-11-01; no new network retrieval and no complete product schedule read.",
+      "read_date": "2026-11-01",
+      "parent_cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+      "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+      "parent_lines_1_based": [
+        1613,
+        1639
+      ]
+    },
+    "RATES-READ": {
+      "url": "https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+      "cache": "primary-rate-search-first-page.txt",
+      "sha256": "f5d13a659b4445cebf3e401f2a552695a117f8f63ce217ec428728086bff9905",
+      "scope": "Recovered original author official rate-search first-page read, not a schedule-content read. Cached original-author primary output reread 2026-11-01; no new network retrieval and no complete product schedule read.",
+      "read_date": "2026-11-01",
+      "parent_cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+      "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+      "parent_lines_1_based": [
+        2324,
+        2371
+      ]
+    }
+  },
+  "files": {
+    "docs/research/jordan-2026-closeout/claim-evidence-groups.json": {
+      "before_sha256": "927fdedb2005704fce9ed301392f1e2f89e251a1a67b7aecbc60426494c88787",
+      "after_sha256": "9a532f090f0f8a2e6ee60c0df3a5bb96e9e52a775b7148be86d6612e1849ce77"
+    },
+    "docs/research/jordan-2026-closeout/source-manifest.json": {
+      "before_sha256": "4251eadc4b67206cd63b6b74ca6be96b970deaabf4e916dcc1cc1cb5504a9630",
+      "after_sha256": "c60939ffc1218d23c3ff557db88e209bc354d9aa5fd3499ca6ae0a1c9e9b0164"
+    },
+    "docs/research/jordan-2026-closeout/author-repair-manifest.json": {
+      "before_sha256": "8d3449d716d0b50fa2ce447f4c166e2f03cf306ad7ff93cc1e153d80f9e0609c",
+      "after_sha256": "2aed6a29a1cff9f1e824aed69e43d1d5faa3d3e2aa326ad892f953320ce323cc"
+    },
+    "docs/research/jordan-2026-closeout/ledgers/jordan-gst.md": {
+      "before_sha256": "957a2f8f1d96ab02f39bbec50f1b83574f8a3b3b1b25f9b1e556936c6208dfc0",
+      "after_sha256": "f4ef957f22043d203162321073f8ff21d61c13c4af4eb8d1a35a02b13cdb1d84"
+    },
+    "docs/research/jordan-2026-closeout/ledgers/jo-payroll-social.md": {
+      "before_sha256": "e5c57e76e489606c8b0b08448e00180a2f893002cbacd0363d82dcb3071b92a4",
+      "after_sha256": "b11669b32b63870570a20add679b6f4321b8e4971ef42409c286b2309b2d707a"
+    }
+  }
+}

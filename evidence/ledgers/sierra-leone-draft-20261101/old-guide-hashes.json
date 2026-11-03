@@ -1,0 +1,38 @@
+[
+  {
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+    "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
+    "state": "byte-identical legacy2025; not reverified by TP addition"
+  },
+  {
+    "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "sha256": "9516b7c22976dafc9ae93115741c90bacca2eea10245fcf13066307d642936c1",
+    "git_blob": "6dbf21d1bb733c2593a847b28e17bf2b2d68d19e",
+    "state": "byte-identical legacy2025; not reverified by TP addition"
+  },
+  {
+    "path": "skills/sierra-leone/sl-income-tax.md",
+    "sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+    "git_blob": "c8c85bac68701cb8e699f4dc50fdb1ee0a96e692",
+    "state": "byte-identical legacy2025; not reverified by TP addition"
+  },
+  {
+    "path": "skills/sierra-leone/sl-payroll-social.md",
+    "sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "git_blob": "403992db83212ade4f79db85b776a8488c8d66cb",
+    "state": "byte-identical legacy2025; not reverified by TP addition"
+  },
+  {
+    "path": "skills/sierra-leone/sl-tax-overview.md",
+    "sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+    "git_blob": "17adab67c2988333b6f77a4d29027688754a8b5a",
+    "state": "byte-identical legacy2025; not reverified by TP addition"
+  },
+  {
+    "path": "skills/sierra-leone/sl-vat-gst.md",
+    "sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+    "git_blob": "cd508eb620eeaded016ef79e509c40ac6c2dcae4",
+    "state": "byte-identical legacy2025; not reverified by TP addition"
+  }
+]

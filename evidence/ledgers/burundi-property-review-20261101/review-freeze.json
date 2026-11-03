@@ -1,0 +1,54 @@
+{
+  "frozen_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "read_date": "2026-11-01",
+  "decision": "repairs-required-R1-R4; all66literalpropositions pass within stated scope",
+  "scope": "Independent source-fidelity only; no attestation/fullcoverage/mergepermission",
+  "files": [
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/README.md",
+      "sha256": "c6dac056ee3de210f0d39ef28f902490ea023495c78cf9bbec5ba92a687e9ecf",
+      "bytes": 10907
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/build-row-review.py",
+      "sha256": "5a1a38f67dd087bc23cd53c1d15641d15c6ee499b9e51adf2985d745a9585cd2",
+      "bytes": 11425
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/cases.json",
+      "sha256": "ec0262dd60969881772d0d9e917c76c16688554ae72fe2fe9779618bae6c54a6",
+      "bytes": 645
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/cases.md",
+      "sha256": "f15fc2afe3635f92f377c7dbc2a7d150ffd17e626eccd9554d5454847714ab67",
+      "bytes": 2012
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/mechanical-checks.json",
+      "sha256": "08d7582b5e5370735a1e8da255a08cf92d9969f28e524b53468e428db13c0f65",
+      "bytes": 11573
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/review-checks.py",
+      "sha256": "d1869c2b64bf6c792e12b3c3e87b7394380deb05005393fbe31eb3c509304891",
+      "bytes": 4123
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/row-review.json",
+      "sha256": "371d80ebc399d980db35bab8f1c19ca9aa5cc1779067a566960f355b6774a43c",
+      "bytes": 34785
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/row-review.md",
+      "sha256": "bee85d46439a9c5c976cbf792dfe320af29baf201deb80d05f7a564b9cf28707",
+      "bytes": 15221
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/sources-read.json",
+      "sha256": "8bdb342917aed6561a2640a9641ba69c6c4836c3d552a44bd77608f8c2e042dc",
+      "bytes": 5844
+    }
+  ]
+}

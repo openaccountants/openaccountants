@@ -1,0 +1,87 @@
+{
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "initial_pr": "041adf399d122683f887e5a504fa09590a88ca98",
+  "guides": [
+    {
+      "path": "skills/oman/om-company-formation.md",
+      "initial_pr_sha256": "6728266eb1bf6c19edd05072c94b6c1e59e889ee21bb08a518cb64b069d239e2",
+      "candidate_sha256": "4628ac23fd37e90788b672c82416429bbcff8531bbccd61e220136fa15135a87",
+      "cta_unchanged": true,
+      "platform_fields_unchanged": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    },
+    {
+      "path": "skills/oman/om-corporate-income-tax.md",
+      "initial_pr_sha256": "afe23cc1b8ae5bedc3b64269ef607eddd6e1c19502514fa917c244f2cc34db74",
+      "candidate_sha256": "d418a0bdd35ba3240c5ed468d68f5f88afa761a88de1fc18ac805f25e3145915",
+      "cta_unchanged": true,
+      "platform_fields_unchanged": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    },
+    {
+      "path": "skills/oman/om-income-tax.md",
+      "initial_pr_sha256": "5e0a3c410b7e0579cc142620e77b716b54223432451caf4312690b30fb7298cb",
+      "candidate_sha256": "57d5b171ce6078f32a969aaf0a84149668c638aa6c192c8bc294a928cedbf374",
+      "cta_unchanged": true,
+      "platform_fields_unchanged": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    },
+    {
+      "path": "skills/oman/om-payroll-social.md",
+      "initial_pr_sha256": "0da4b572efff1f85e7787bafde46b8f009d28b603c36073afef5b3dafdd65441",
+      "candidate_sha256": "8dd76a5f2a767b501f4e452b375d0b158f2c78d0dde033320f023744753fbde0",
+      "cta_unchanged": true,
+      "platform_fields_unchanged": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    },
+    {
+      "path": "skills/oman/om-tax-overview.md",
+      "initial_pr_sha256": "2866b646822e61cf81b76926a0cce21874e3d00bdf7cffdff5cb4346630d233a",
+      "candidate_sha256": "6c9b61b9780a09dc21a54e0e1f945496dca39033b49720e88e4513f1ce8429ad",
+      "cta_unchanged": true,
+      "platform_fields_unchanged": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    },
+    {
+      "path": "skills/oman/oman-vat.md",
+      "initial_pr_sha256": "6dc1fecb6a9b50c63d61d2ff8b6589cb5dadf5fd61808415fb0a1e4beb97dd34",
+      "candidate_sha256": "fc90659568e602bd40cf4065b5a798ccb91e259f8f570429ca1ad011b8d197ce",
+      "cta_unchanged": true,
+      "platform_fields_unchanged": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    }
+  ],
+  "tracked_changed_paths": [
+    "skills/oman/README.md",
+    "skills/oman/om-company-formation.md",
+    "skills/oman/om-corporate-income-tax.md",
+    "skills/oman/om-income-tax.md",
+    "skills/oman/om-payroll-social.md",
+    "skills/oman/om-tax-overview.md",
+    "skills/oman/oman-vat.md"
+  ]
+}

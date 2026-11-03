@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-01",
+  "kind": "Review-status prose only; additive independent recheck requested",
+  "prior_closure_sha256": "8f2e94daf46525b253a566323e00deb7b25c896c7f5c8029662a0642917676e5",
+  "readme_before_sha256": "c1c28595931b8368a4419335ca99a94a1d2377acda58010a9df88eb1ebc94942",
+  "readme_after_sha256": "0c0a19e2fcfd54c3a74f14b29efc956c52e371d752f4ebfb69633da9764092f2",
+  "all_other_bound_candidate_hashes_unchanged": true,
+  "change": "Replace pending independent review statement with actual completed review/closure link and scope. All currentness, AnnexU, missingjobs and filing holds retained. No Guide/source/ledger/prior receipt changed.",
+  "spacing_corrections": "Normal word spacing in the new status sentence; no source or Guide change."
+}

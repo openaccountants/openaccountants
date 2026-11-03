@@ -1134,13 +1134,6 @@
   "dir": "skills/serbia"
  },
  {
-  "code": "RU",
-  "name": "Russia",
-  "region": "europe",
-  "owner": "michael",
-  "dir": "skills/russia"
- },
- {
   "code": "RW",
   "name": "Rwanda",
   "region": "africa",

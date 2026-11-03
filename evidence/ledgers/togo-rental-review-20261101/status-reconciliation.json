@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-01",
+  "scope": "Exactly two permitted factual status substitutions; before/after hashes verified. No law/rate/example/source/hold/priorGuide/review evidence changed.",
+  "changes": [
+    {
+      "path": "skills/togo/tg-rental-withholding.md",
+      "before_sha256": "6ab10484a0706dbe0144d77ba94594939787cb5ccb93718c132481ab9c47e510",
+      "literal_from": "Independent source review of this addition is pending;",
+      "literal_to": "Independent source review of this conditional addition completed on 2026-11-01;",
+      "expected_after_sha256": "c31040ee58c96d0f5850d75f772c3a2a100e03976475f9d293a3fb533cbfe092",
+      "only_permitted_change": "one exact status literal substitution; all other bytes fixed"
+    },
+    {
+      "path": "skills/togo/README.md",
+      "before_sha256": "db272242fdd09466b3be05a0ff3af8077018989909faa6a83ad7c87544dfa3bc",
+      "literal_from": "independent source review is pending for this addition.",
+      "literal_to": "independent source review completed on 2026-11-01 for this conditional addition.",
+      "expected_after_sha256": "90ca6ae970c2a3f2ac05dc584bbfe30d4759387ddfae3ddf33d54bb4aad1280a",
+      "only_permitted_change": "one exact status literal substitution; all other bytes fixed"
+    }
+  ]
+}

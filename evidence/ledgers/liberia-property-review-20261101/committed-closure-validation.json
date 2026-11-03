@@ -1,0 +1,83 @@
+{
+  "checked_content_commit": "8a11cfd47973efc2f1f7deb1ee9ca66be0ca3965",
+  "actual_pr_merge_base": "aa8fb52e20d1f4083020d7724dabe8c9e5ccfce8",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 10 changed guide file(s)\nchecked 9 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/liberia/lr-property-tax.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "aa8fb52e20d1f4083020d7724dabe8c9e5ccfce8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 9 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "aa8fb52e20d1f4083020d7724dabe8c9e5ccfce8",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "9694dbd2d4c5d4254faab1ac7a2937a9ebe0421d",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 1 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "9694dbd2d4c5d4254faab1ac7a2937a9ebe0421d",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/liberia/lr-property-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    }
+  ],
+  "prior_files_preserved": 42,
+  "status": "Source fidelity accepted only; unchanged genuine holds and partial coverage; no merge permission",
+  "earlier_two_tip_59c23_failures": "Preserved unchanged in writer receipt and review failed-two-tip-* outputs, not counted as passes."
+}

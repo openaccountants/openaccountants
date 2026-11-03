@@ -1,0 +1,250 @@
+{
+  "candidate": "2460f6898fd1eb9bc7ddbf211377c617cc7ce7e9",
+  "examples": 18,
+  "rows": [
+    {
+      "guide": "cf-income-tax",
+      "case": 1,
+      "name": "Salary net2m",
+      "independent_result": 152160,
+      "expected": 152160,
+      "pass_arithmetic": true,
+      "source_condition_check": "Supplied net salary; only first two taxable slices needed; defective first endpoint and currentness remain held."
+    },
+    {
+      "guide": "cf-income-tax",
+      "case": 2,
+      "name": "Individual business minimum",
+      "independent_result": 2220000,
+      "expected": 2220000,
+      "pass_arithmetic": true,
+      "source_condition_check": "Non-agriculture, no exemption, 120m turnover; compare liabilities rather than sum."
+    },
+    {
+      "guide": "cf-corporate-income-tax",
+      "case": 1,
+      "name": "Company profit dominates",
+      "independent_result": 6000000,
+      "expected": 6000000,
+      "pass_arithmetic": true,
+      "source_condition_check": "Ordinary baseline, no exemption or credit; no double tax."
+    },
+    {
+      "guide": "cf-corporate-income-tax",
+      "case": 2,
+      "name": "Agricultural loss minimum",
+      "independent_result": 300000,
+      "expected": 300000,
+      "pass_arithmetic": true,
+      "source_condition_check": "Loss gives no profit tax; 0.3% produces 180,000 below 300,000 floor."
+    },
+    {
+      "guide": "cf-transfer-pricing",
+      "case": 1,
+      "name": "Foreign fee cap",
+      "independent_result": [
+        10000000,
+        2000000
+      ],
+      "expected": [
+        10000000,
+        2000000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Assumes proof of reality/normality and no other disallowance; 20% base before expense."
+    },
+    {
+      "guide": "cf-transfer-pricing",
+      "case": 2,
+      "name": "Half threshold",
+      "independent_result": [
+        1500000,
+        0,
+        300000
+      ],
+      "expected": [
+        1500000,
+        0,
+        300000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Exactly half fails more-than-half test; comparable actual tax amounts, no list/treaty inference."
+    },
+    {
+      "guide": "cf-cross-border",
+      "case": 1,
+      "name": "Foreign service WHT",
+      "independent_result": [
+        1500000,
+        8500000
+      ],
+      "expected": [
+        1500000,
+        8500000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Covered gross foreign service fee; no treaty reduction or gross-up; VAT/deduction separate."
+    },
+    {
+      "guide": "cf-cross-border",
+      "case": 2,
+      "name": "Departure guarantee",
+      "independent_result": [
+        20000000,
+        5000000
+      ],
+      "expected": [
+        20000000,
+        5000000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Only permanent certificate for manager of enterprise under audit; guarantee alone does not ensure clearance."
+    },
+    {
+      "guide": "cf-vat-gst",
+      "case": 1,
+      "name": "VAT net",
+      "independent_result": [
+        1900000,
+        1140000
+      ],
+      "expected": [
+        1900000,
+        1140000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Ordinary 19% domestic supply and supplied eligible inputs; no withholding or adjustments."
+    },
+    {
+      "guide": "cf-vat-gst",
+      "case": 2,
+      "name": "Direct attribution",
+      "independent_result": [
+        418000,
+        399000
+      ],
+      "expected": [
+        418000,
+        399000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Exempt-only 95,000 excluded; 60% only on shared inputs; difference 19,000."
+    },
+    {
+      "guide": "cf-company-formation",
+      "case": 1,
+      "name": "SARL or SA cash",
+      "independent_result": [
+        500000,
+        2500000,
+        2000000
+      ],
+      "expected": [
+        500000,
+        2500000,
+        2000000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "All cash, default minima, no national override or stricter statutes; conditional default, not authenticated CAR floor."
+    },
+    {
+      "guide": "cf-company-formation",
+      "case": 2,
+      "name": "SARL mixed",
+      "independent_result": [
+        400000,
+        1600000,
+        400000
+      ],
+      "expected": [
+        400000,
+        1600000,
+        400000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "In-kind paid fully, cash half; valuation and national formalities remain held."
+    },
+    {
+      "guide": "cf-payroll-social",
+      "case": 1,
+      "name": "Payroll annual to monthly",
+      "independent_result": 12680,
+      "expected": 12680,
+      "pass_arithmetic": true,
+      "source_condition_check": "Fixed full-year payroll with correctly computed annual IRPP; no implied CNSS rate."
+    },
+    {
+      "guide": "cf-payroll-social",
+      "case": 2,
+      "name": "Five or sixworkers",
+      "independent_result": [
+        190200,
+        76080
+      ],
+      "expected": [
+        190200,
+        76080
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Unchanged workforce; five qualifies for quarterly remittance, six monthly; withholding continues in both."
+    },
+    {
+      "guide": "cf-tax-overview",
+      "case": 1,
+      "name": "General25%penalty",
+      "independent_result": 1000000,
+      "expected": 1000000,
+      "pass_arithmetic": true,
+      "source_condition_check": "Applicable paragraph established, no fraud; no automatic flat/special cumulative fine."
+    },
+    {
+      "guide": "cf-tax-overview",
+      "case": 2,
+      "name": "Visa vs generalfine",
+      "independent_result": [
+        100000,
+        400000
+      ],
+      "expected": [
+        100000,
+        400000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Two established breaches; alternative classifications, not summed."
+    },
+    {
+      "guide": "cf-property-tax",
+      "case": 1,
+      "name": "Rentalvaluefloor",
+      "independent_result": [
+        2400000,
+        1440000,
+        216000
+      ],
+      "expected": [
+        2400000,
+        1440000,
+        216000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Non-exempt individual; rental-value floor, 40% allowance, rounded base, 15% above minimum."
+    },
+    {
+      "guide": "cf-property-tax",
+      "case": 2,
+      "name": "Individual or company",
+      "independent_result": [
+        216000,
+        432000,
+        216000
+      ],
+      "expected": [
+        216000,
+        432000,
+        216000
+      ],
+      "pass_arithmetic": true,
+      "source_condition_check": "Identical non-exempt rental value; IS classification controls; other entity taxes separate."
+    }
+  ]
+}

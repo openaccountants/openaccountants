@@ -1,0 +1,58 @@
+[
+  {
+    "file": "lf2026.pdf",
+    "bytes": 137204726,
+    "sha256": "35708d46b1dcb30ef40880fa02de9fe94760585e464e5a21ec9d9ad4de41341f",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+    "read_on": "2026-11-01",
+    "independent_read_scope": "Read pp.2-12 including art9 new/old DSF boundary and arts10-17,29-31; visually inspected actual p6 fiscal visa and overlapping real-regime bis1. Budget amounts not used as tax figures."
+  },
+  {
+    "file": "lf2025.pdf",
+    "bytes": 155079881,
+    "sha256": "0ca701b9387528cd7695a3e6fa622034e1b4c8151cdd91d241070d1aac594bee",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "read_on": "2026-11-01",
+    "independent_read_scope": "Read pp.3-19 general/fiscal section and boundaries, new/old249 and275bis, new LPF4/71/88/171/243; no reliance on budget schedules."
+  },
+  {
+    "file": "lf2024.pdf",
+    "bytes": 187103780,
+    "sha256": "738aafbbc084ace0a25989f0b02fb7a7751bc08128090873026bcf0a2f16f223",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "read_on": "2026-11-01",
+    "independent_read_scope": "Read scanned-PDF OCR pp.18-35, including old/new Lire boundary, replacement VAT246-278 and LPF-creation art11. Visually inspected actual p27 rates/tariff table and p33 repeal/carryforward/refund. Complete new LPF not read."
+  },
+  {
+    "file": "cgi2023.pdf",
+    "bytes": 2444666,
+    "sha256": "9a31a1c421ae4d66a4052333dcc2fae8d328dc468fb816ad9326c983b7a22331",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "read_on": "2026-11-01",
+    "independent_read_scope": "Independently extracted actual primary PDF and read PDF pp.5-9,13-16,20-32,34-43,50-59,65-68,70-75. Visual p30 salary bands/return date; newly rendered p35 cessation and p51 indirect control. No whole-code/current consolidation assertion."
+  },
+  {
+    "file": "lfr2024.pdf",
+    "bytes": 163693881,
+    "sha256": "39fdd1171dd83e881eb8c8c9cfb2dba1a625e72e82250e90df81799ef67829f8",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2024-11/COLLECTIF%202024.pdf",
+    "read_on": "2026-11-01",
+    "independent_read_scope": "Read first fiscal section pp.1-7 to budget boundary; forestry rate/simulation conflict not promoted to Guide. No whole-annex reading claim."
+  },
+  {
+    "file": "ohada-companies-2014.pdf",
+    "bytes": 16313466,
+    "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+    "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "read_on": "2026-11-01",
+    "independent_read_scope": "New extraction read PDF pp.27-30,35-37,76-79,94-96; visual p95 confirms single-SA-shareholder sentence missing in extracted text, minimum and quarter fraction. CAR national overrides remain unverified."
+  },
+  {
+    "file": "lfr2025.pdf",
+    "bytes": 171563074,
+    "sha256": "a9515ee6a8d1dadc6d122481eb19aeee974ea64069a8054a314ee13656ac4f78",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+    "read_on": "2026-11-01",
+    "independent_read_scope": "Read pp.3-9, especially new393 and new LPF28bis in pp.4-5 with neighbouring paragraphs. No immigration fee claim promoted."
+  }
+]

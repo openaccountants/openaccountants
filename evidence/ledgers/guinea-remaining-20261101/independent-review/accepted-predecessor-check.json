@@ -1,0 +1,22 @@
+[
+  {
+    "path": "skills/guinea/gn-property-tax.md",
+    "item_count": 62,
+    "full_source_exact": true,
+    "old_sha256_exact": true,
+    "old_blob_exact": true,
+    "all_source_lines_exact": true,
+    "all_nonblank_body_lines_present": true,
+    "destinations_read": "Property headings, inherited gate/conditions, four rates, no-purchase-price distinction, former procedure/valuation/nonresident holds, both cases, client inputs and source gaps inspected. Invoice entire file unchanged; destination exact line retained."
+  },
+  {
+    "path": "skills/guinea/gn-vat-invoice-control.md",
+    "item_count": 79,
+    "full_source_exact": true,
+    "old_sha256_exact": true,
+    "old_blob_exact": true,
+    "all_source_lines_exact": true,
+    "all_nonblank_body_lines_present": true,
+    "destinations_read": "Property headings, inherited gate/conditions, four rates, no-purchase-price distinction, former procedure/valuation/nonresident holds, both cases, client inputs and source gaps inspected. Invoice entire file unchanged; destination exact line retained."
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-01",
+  "result": "Accepted after all five repairs, for the stated source-bound partial workpaper drafting scope only",
+  "initial_frozen_commit": "de4e2907007c726bd16479b29bee86676ba85f66",
+  "baseline_commit": "f7076093d670d841cdcc4140743541ffa6d72c7b",
+  "repair_manifest_sha256": "244dddc52921610de8705113dc519a856c709d4909b86eeccbf3fbd83e4466cc",
+  "exact_candidate_sha256": {
+    "skills/burkina-faso/bf-vat.md": "d0a6e68f4f55869916431dc7c53930fb19fd49902497b487bb2322426dc3e30b",
+    "skills/burkina-faso/bf-social-contributions.md": "1deb8b0f8743fad13fbc701d08ac767b2c2a9814f7ad13a7ed914d4963b8d5b0",
+    "evidence/burkina-faso-vat-social-20261101/source-identities.json": "400b297c01b1fed3a5efa7bfd1a45356613bba338e85a90def0924542e248b73",
+    "evidence/burkina-faso-vat-social-20261101/ledgers/bf-vat.md": "7fc0141c18875aaff28f49746f09e1b22514c9f7b8c30ebbd5f4c881041d0b3d",
+    "evidence/burkina-faso-vat-social-20261101/ledgers/bf-social-contributions.md": "6d6eb1b9bad4e5353989ed47f1ed9990472cdf71f025466e373a585c7b9f883c"
+  },
+  "frozen_original_review_evidence_sha256": {
+    "input-manifest.json": "978ac7a4da493c8a8fc71c17ed337e144fd05956b62ec62d718e832e3fc43a8a",
+    "old-topic-checks.json": "9a2cc7da81b191bc3bc1be88cf43c783a5e2381cd4b55de81f66ba2576da30d1",
+    "independent-cases.json": "f3e75e5f8d8aa15ef0745373cf001dec663d9b30d2b1eae8e596d97dc9db27f6",
+    "preservation-checks.json": "481f3153232fbe74223be6d5cc72b7ae176c30b6ff1e4bb2355cf0b69bcb2ffa",
+    "findings.json": "8b34965423f99c30d8215185f6e16542a3abfc001d334fb003b89fd47ee7fa09",
+    "review.md": "80648c0d8942bd3d3a52e32ec63d6dbe267223d80d49cb06eaa0421b402b2aa1",
+    "row-checks.json": "68e9426270eeaebbfec087db61d80be98a76a77e41d85e64923951f9a946922d"
+  },
+  "findings_closed": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5"
+  ],
+  "source_rechecks": [
+    {
+      "finding": "F1",
+      "sources": [
+        "cnss-contributions.html: Périodicité/Délai de paiement",
+        "cnss-summary.pdf: p.2 IMPORTANT",
+        "cnss-bnts.pdf: p.2 IMPORTANT"
+      ],
+      "result": "Both published instructions are accurately distinguished; 31-day following-month discrepancy and simultaneous-payment interaction remain explicitly unresolved."
+    },
+    {
+      "finding": "F2",
+      "sources": [
+        "cgi-2026.pdf: printed pp.158–159 art.319 and neighbours318/320"
+      ],
+      "result": "Actual numeric boundary, exclusions and exceptions match; not an unconditional vehicle/expense deduction prohibition."
+    },
+    {
+      "finding": "F3",
+      "sources": [
+        "cnss-bnts.pdf: physical pp.1–3, headers Cot 01 and Cot 02"
+      ],
+      "result": "Three-page identity and reading scope corrected; source bytes unchanged."
+    },
+    {
+      "finding": "F4",
+      "sources": [
+        "CNSS employer registration actual web page: lines164–188"
+      ],
+      "result": "Actual ordinary-company CEFORE source/read date added; no expanded special-category enrolment claim."
+    },
+    {
+      "finding": "F5",
+      "sources": [
+        "cgi-2026.pdf: printed p.133 art.306"
+      ],
+      "result": "BF-registered agency commission location sentence matches source."
+    }
+  ],
+  "source_hashes": {
+    "cgi-2026.pdf": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+    "cnss-contributions.html": "ef6b8f48569dcc9fa1cf40f3d49a83502d811fb1845145d03d8a6d03336fec64",
+    "cnss-ceiling-2022.pdf": "3d2bdac73680e05a312e6d7c7d9f71dead313501ad0e13f43c0c1a3aa51bd573",
+    "cnss-base-2023.pdf": "c5bb0960c4121c9b9116f1d857aa73c1f9480b045040dd7d7e4bbc0c0489ad38",
+    "cnss-risk-2023.pdf": "6f88294c1ee2468e38410f689deb34f0fde24fb36716c3cf654fcbd1bec9089e",
+    "cnss-bnts.pdf": "d96e6de38b8db91a05222175e36253dc71a4d476b115f4e3c97e07e421b28248",
+    "cnss-summary.pdf": "27d53f615ab3cdc5ae71e567edcd2977a7794e26c83f9a4e61a838bde2c5ab77",
+    "cnss-voluntary.pdf": "7e797aca985226228e4369c704162919305b7ea88e431a51e22f6d27818c38ad",
+    "review-cnss-registration-web.json": "71f994870e7fab1707cfafe995345e65b02892e1f1383e49034bf04ec9296d67",
+    "review-amu-rates-web.json": "c7bae76d8b7ad743064fd3aed6dac3d0d4bc143ecff606c27a1ee613fd4d16e8",
+    "review-amu-payment-web.json": "58edeb77755ad42d98eab2831cb9fdaef8bac8d347b01d72a176c5aba21d7023"
+  },
+  "checks": {
+    "all_89_rows_accounted_for": true,
+    "all_102_topics_accounted_for": true,
+    "eight_other_guides_identical": true,
+    "all_39_prior_evidence_blobs_identical": true,
+    "platform_fields_full_ctas_identical": true,
+    "four_independent_case_results_unchanged": true,
+    "executable_checker": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing"
+  },
+  "status_reconciliation_permitted": "Only accurate review-status prose in README/evidence/Guide closing sentences may be reconciled to this limited acceptance. Retain platform review_status and tier unchanged, all seven domains partial, all unresolved source/legal/workflow holds, prior accepted review evidence, and no accountant-attestation or country-completion claim. No numerical, legal-condition, computation or workflow change is covered by this permission. Any future changed bytes need a receipt identifying them; this exact-candidate acceptance binds the hashes above.",
+  "limits": "No complete current-law certification, authenticated filing approval, professional attestation, issue closure, merge or production publication. Missing law/rate-decree text, CNSS sanctions, SMIG, AMU activation, risk recurrence, forms/authenticated workflow and all other stated holds remain unresolved."
+}

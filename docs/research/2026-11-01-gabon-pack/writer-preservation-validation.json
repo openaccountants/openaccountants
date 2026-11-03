@@ -1,0 +1,38 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guides": 8,
+  "old_files_hash_cta_metadata_pass": [
+    "skills/gabon/ga-company-formation.md",
+    "skills/gabon/ga-corporate-income-tax.md",
+    "skills/gabon/ga-payroll-social.md",
+    "skills/gabon/ga-tax-overview.md",
+    "skills/gabon/ga-vat-gst.md"
+  ],
+  "old_topic_items": 77,
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "description_words": {
+    "ga-corporate-income-tax": 107,
+    "ga-income-tax": 106,
+    "ga-payroll-social": 105,
+    "ga-vat-gst": 104,
+    "ga-transfer-pricing": 103,
+    "ga-cross-border": 104,
+    "ga-company-formation": 108,
+    "ga-tax-overview": 110
+  },
+  "figure_quote_rows": 93,
+  "source_quote_checks": "all exact quote snippets asserted against primary text by writer build",
+  "independent_review": "not performed",
+  "visual_source_checks": [
+    "CGI PDF page62 IRPP table: inspected PNG; columns and formulas matched",
+    "LFR PDF page7 / printed6: inspected PNG;3%localrebar and prorata boundary confirmed"
+  ]
+}

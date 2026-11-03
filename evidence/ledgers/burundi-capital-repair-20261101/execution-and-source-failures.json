@@ -1,0 +1,20 @@
+{
+  "writer_literal_guard_failure": {
+    "command": "python3 ../sources/repair-capital-r1-r4.py",
+    "exit_code": 1,
+    "error": "AssertionError: ('R3', 'duty_low', 2, 3)",
+    "effect": "Literal replacement occurrence guard stopped before any Guide write. Expected count corrected to observed two low-duty and three high-duty references; no assertion removed."
+  },
+  "fresh_web_reader_attempts": [
+    {
+      "url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+      "result": "Timeout fetching; not fresh read evidence."
+    },
+    {
+      "url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+      "result": "URL not accessible via this tool; not fresh read evidence."
+    }
+  ],
+  "substantive_read_basis": "The actual recovered primary PDFs match exact independently frozen reviewer hashes; all cited operative clauses and neighbours were read and visually inspected from those original files. No successful fresh web content claimed.",
+  "earlier_failures": "All original writer/reviewer source and mechanical failure records remain byte-identical."
+}

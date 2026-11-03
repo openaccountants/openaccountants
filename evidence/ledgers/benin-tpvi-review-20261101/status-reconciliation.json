@@ -1,0 +1,50 @@
+{
+  "review_target": "d9e75601a6a5e157459baaf7328d0dd709a62a5e",
+  "accepted_scope": "36row/two-case bounded source-fidelity review; no currentness/attestation/comprehensive-country claim.",
+  "literal_changes": [
+    {
+      "path": "skills/benin/bj-property-gains-tax.md",
+      "before_sha256": "830ea66a059b1a39e1fb710aaab9666a7544df03bded864338a196caeb1c0bcf",
+      "after_sha256": "8b7e3e843aaaef6d71ca0661c00b38ca0e91cfdd5bf66af041939d8bc83da4f6",
+      "old_literal": "This new job awaits independent source review; no accountant has attested to it.",
+      "new_literal": "This new job passed independent source review on 1 November 2026 for the stated partial working-paper scope; no accountant has attested to it."
+    },
+    {
+      "path": "skills/benin/README.md",
+      "before_sha256": "3e2ec478b667203c9d8ad3aebc4771878b5b33c05089586b08c1e2a35a88a719",
+      "after_sha256": "f21341e7abafe9fbbd674d48b12b6dcaa666e24eef9d133095d05ec21d88b773",
+      "old_literal": "The 36-row source ledger and two executable examples are pending independent source review.",
+      "new_literal": "The [independent TPVI source review](../../evidence/ledgers/benin-tpvi-review-20261101/review.md) checked all 36 ledger rows and both executable examples on 1 November 2026."
+    }
+  ],
+  "initial_reviewer_hashes_preserved": {
+    "evidence/ledgers/benin-tpvi-review-20261101/cases-review.json": "38a97f373cf6dbca8675f56f84e06737bbad0bf94772a01c4806a51df86760ca",
+    "evidence/ledgers/benin-tpvi-review-20261101/frozen-identities.json": "532f73a4a13914089c70b3c5a8794a3062ef4e28aa9fe2ef837d6fee11b7273c",
+    "evidence/ledgers/benin-tpvi-review-20261101/review-evidence-manifest.json": "5604726f84d1578043a1c3a1d9f14293651efdb6948dd8f5fbd4cc08e3a70c69",
+    "evidence/ledgers/benin-tpvi-review-20261101/every-row-review.json": "f1c9afa83cb8325283bcb3510c39106bdf0a45c49c50d6909249df3ccb1bd2c7",
+    "evidence/ledgers/benin-tpvi-review-20261101/findings.json": "9da0a656c660ac0733967c2ba11768bc406f114c59abec8852af768505afb870",
+    "evidence/ledgers/benin-tpvi-review-20261101/source-review.json": "f89583469fb81bc7a095d7edf457b12e56488dcaf72902e0ce61c39566746cc7",
+    "evidence/ledgers/benin-tpvi-review-20261101/validation-review.json": "b6c56314beb54c0b7246608648e337d8d4323a7831011c46965d206846eda655",
+    "evidence/ledgers/benin-tpvi-review-20261101/preservation-review.json": "6e1aa8a3be45a466d8f82f387d93605a8947eb67122143eb71ea2decbb3c1155",
+    "evidence/ledgers/benin-tpvi-review-20261101/status-only-transitions.json": "d162d4c8703eae33f6f2997accacbd6036f4fbc4b8420bc58bcc558751315b18",
+    "evidence/ledgers/benin-tpvi-review-20261101/review.md": "7f70737c5d9d2250298563d93a9c3544a4ac70ef72c5c95c26638db87464b9c2"
+  },
+  "writer_hashes_preserved": {
+    "evidence/ledgers/benin-tpvi-20261101/old-topics.md": "c599231e3f62bf8fd86a62f43a5a5dadbb74ae770324bb7726942d6cdd1de79f",
+    "evidence/ledgers/benin-tpvi-20261101/preservation-baseline.json": "56c2ffdc03e45ece8183941a059aa873b09766d280f9a49576c993078bd5603b",
+    "evidence/ledgers/benin-tpvi-20261101/visual-read-manifest.json": "446b8083cd2f05b8882b03869dbb61aea06a6d8e72480ccf85af772a15676109",
+    "evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.json": "136d33e2446d5c9bbb25488dacf3b23b21250f04bf6b2e7e607a33791e760033",
+    "evidence/ledgers/benin-tpvi-20261101/committed-validation.json": "04964addb3dc14d789e51191faaebf2000b4806808c8cfebe48f85c48602ed47",
+    "evidence/ledgers/benin-tpvi-20261101/initial-shape-failure.json": "772e404f3f6c9806127abf878fb2fdac7a60ab4260ee10e86837a50bc308078d",
+    "evidence/ledgers/benin-tpvi-20261101/writer-working-checks.json": "f5f3ad6cb3a5ac6ba15381921b7738763a0ba7dd44a8f922424ed68128d06eef",
+    "evidence/ledgers/benin-tpvi-20261101/old-topics.json": "29bc213747b61322832aa73d92afdb41659811e15c0a226ff966e9284c0ddda9",
+    "evidence/ledgers/benin-tpvi-20261101/source-identities.json": "10db37cec26ccf2cab637e968024aea94d8a7d231d19db839493ce42d3974f95",
+    "evidence/ledgers/benin-tpvi-20261101/writer-preservation.json": "79a226991b0ffbad7bb34166fb32d9817e4cd664840d8472670e174ba5c2fbb6",
+    "evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.md": "ae1bab5afcd300a5fe217816a1d28de27b36419a756d9dd4a1a79904bab2863c",
+    "evidence/ledgers/benin-tpvi-20261101/writer-record.md": "2151d28d86c72924b9075ec8fe27a4fa661a9a26c3fcd20483f972b03aa2bb0e",
+    "evidence/ledgers/benin-tpvi-20261101/frozen-candidate.json": "299065eb7d02027c908429c69657f3205cee5785b9215466550e575924a68631",
+    "evidence/ledgers/benin-tpvi-20261101/writer-quote-checks.json": "a0c19f84a3527d5a9d669be15b7a7b8bb06339082620ad3d3ba16c31116427f4"
+  },
+  "working_diff": "diff --git a/skills/benin/README.md b/skills/benin/README.md\nindex 3d0602a75..addddc22e 100644\n--- a/skills/benin/README.md\n+++ b/skills/benin/README.md\n@@ -51,6 +51,6 @@ The numerical TPS eligibility order, June exemption-transition timing, special i\n \n ## Property-disposal TPVI addition, 1 November 2026\n \n-The [property-disposal TPVI working paper](bj-property-gains-tax.md) adds ordinary private immovable-sale computation, the separate business-balance-sheet exemption, land/construction split, gain-based tax versus sale-price minimum, and registration/payment responsibility. Property-rich securities and mining titles are screened without inventing their missing specialist bases or treaty outcomes. The 36-row source ledger and two executable examples are pending independent source review.\n+The [property-disposal TPVI working paper](bj-property-gains-tax.md) adds ordinary private immovable-sale computation, the separate business-balance-sheet exemption, land/construction split, gain-based tax versus sale-price minimum, and registration/payment responsibility. Property-rich securities and mining titles are screened without inventing their missing specialist bases or treaty outcomes. The [independent TPVI source review](../../evidence/ledgers/benin-tpvi-review-20261101/review.md) checked all 36 ledger rows and both executable examples on 1 November 2026.\n \n All eleven preceding Guide bodies and prior Benin evidence remain exact. All seven domains remain partial. Current reference-acquisition-value instruments, noncash/loss and securities/mining interactions, registration due-day/form details and full later-law currentness remain held. This does not reopen the accepted property/rental or IBA review.\ndiff --git a/skills/benin/bj-property-gains-tax.md b/skills/benin/bj-property-gains-tax.md\nindex 40976c8e1..494961da3 100644\n--- a/skills/benin/bj-property-gains-tax.md\n+++ b/skills/benin/bj-property-gains-tax.md\n@@ -124,4 +124,4 @@ Obtain the transferor/transferee and residence details, asset and exact rights,\n \n The [figure/rule ledger](../../evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.md) binds the actual clauses, short French quotes, pages, source hashes and this draft. Eleven prior Guide bodies and all earlier Benin evidence remain unchanged; the complete old-topic map records their existing destinations.\n \n-Not yet confirmed: current CGI 112 reference-acquisition-value instruments; treatment of negative/no gain and noncash/gratuitous transfers under the price minimum; estate/death transfers; disputed value, fee or improvement deductions; property-rich securities cost, indirect holdings, loss use and CGI 81/TPVI coordination; mining agreements, specialised collection and treaty relief; creditor-adjudicatee civil-procedure cross-reference and execution; local revenue-allocation instrument; actual registration due-day rule, prescribed declaration/form boxes, supporting schedules, payment references and authenticated acceptance; complete later-law currentness and transaction-specific sanctions/relief. All seven country domains remain partial. This new job awaits independent source review; no accountant has attested to it.\n+Not yet confirmed: current CGI 112 reference-acquisition-value instruments; treatment of negative/no gain and noncash/gratuitous transfers under the price minimum; estate/death transfers; disputed value, fee or improvement deductions; property-rich securities cost, indirect holdings, loss use and CGI 81/TPVI coordination; mining agreements, specialised collection and treaty relief; creditor-adjudicatee civil-procedure cross-reference and execution; local revenue-allocation instrument; actual registration due-day rule, prescribed declaration/form boxes, supporting schedules, payment references and authenticated acceptance; complete later-law currentness and transaction-specific sanctions/relief. All seven country domains remain partial. This new job passed independent source review on 1 November 2026 for the stated partial working-paper scope; no accountant has attested to it.\n",
+  "no_other_content_changes": true
+}

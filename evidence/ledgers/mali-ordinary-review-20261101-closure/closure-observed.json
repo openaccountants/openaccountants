@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-01",
+  "original_candidate_commit": "15a570e0ef8904526c8814232cb4d9839feb5951",
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "head_at_review": "15a570e0ef8904526c8814232cb4d9839feb5951",
+  "candidate_files_sha256": {
+    "skills/mali/README.md": "c1c28595931b8368a4419335ca99a94a1d2377acda58010a9df88eb1ebc94942",
+    "skills/mali/ml-company-formation.md": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+    "skills/mali/ml-corporate-income-tax.md": "4f147c3bab02e510ec729e239320d92e36fa451c5200eb424ee2ce55a27c0f1d",
+    "skills/mali/ml-income-tax.md": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+    "skills/mali/ml-payroll-social.md": "e2826b52b028f8e695801a2620bea57a0af40919a84a03b165ff163b564a2b50",
+    "skills/mali/ml-solidarity-contribution.md": "a55602764f67c96ba59fad34edf597e04a8016134d779df9f7486ad94dba464f",
+    "skills/mali/ml-tax-overview.md": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+    "skills/mali/ml-vat-gst.md": "1824291c5ca34e84a4bd005007d1bf2398e1d829a5447830a5578921a0de5b1c",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-corporate-income-tax.md": "f460d8553b13aa941bf29c1f13114cfa0eb7e2592c377e54039fba07842793b0",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-payroll-social.md": "47152e0013a6076c14356dcc6e5c00a5f6f24529f171b6a63892ce8afc81cb84",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-vat-gst.md": "4f65324bb4b423929a25710347561f8fccb90d94f84543ffedf5e7eec3217783",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-income-tax.md": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a"
+  },
+  "reviewer_corrections_sha256": "7e757937cc4af38a793f2112a523853aeea502d99523c4dd8a31470649a2dc3b",
+  "initial_receipt_hashes": {
+    "candidate-and-preservation.json": "7754ea3e314307432bdfd99d2e795aba63d20af28822a92c2e7b6d1540dde8b0",
+    "currentness-verdict.json": "5e6035169ed80ad1e9b181ee8bc36b472c5e59b60f8e0d5cebb7b5e9b161abb7",
+    "independent-examples.json": "630380adeda9386c66b3bbd7c65cc1621ec9377407363bf9d8810f65a1d12055",
+    "old-topic-review.json": "1c81f424b6f33ea514be3a1dcf75d276a3d4a91f6cd2b69ca96f1f25b81e7a83",
+    "review.md": "67b722d3f516094c0830863cc860dddb4ceb80e088b7b195180137f9ba36d180",
+    "row-verdicts.json": "3389cc9463219cc1cfb245b3b6fddc72106aa820e642c039a1980e72c96eb0f1"
+  },
+  "findings_closed": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "E1"
+  ],
+  "source_rule_rows_checked": 119,
+  "shared_currentness_rows_checked": 1,
+  "independent_examples": 8,
+  "all8oa_blocks_identical_to_initial_candidate": true,
+  "all75old_labels_4prose_destinations_preserved": true,
+  "all6existing_full_ctas_unchanged": true,
+  "all7guides_platform_fields_unchanged": true,
+  "historical_CSS_formation_overview_byte_identical_to_base": true,
+  "all17prior_evidence_records_unchanged": true,
+  "prior_evidence_sparse_checkout_note": "Prior paths are absent under sparse checkout; checked immutable HEAD and current index blobs plus no worktree diff.",
+  "all7domains_applicable_partial": true,
+  "TP_XB_missing": true,
+  "unresolved_material_gates": [
+    "Complete later amendment chain and enacted 2026 Annex U",
+    "Final ITS 12-A/B primary multiplication wording/amendment chain",
+    "Actual additional corporate minimum-floor computation",
+    "Current INPS legislation, wage floor, ANPE statutory chain and later AMO orders",
+    "Actual current forms/boxes and authenticated filing/payment/confirmation"
+  ],
+  "attestation": false,
+  "operative2026approval": false,
+  "publication_approval": false,
+  "source_baseline_disposition": "Accepted after repair for the explicitly limited older/undated research workpapers only. No remaining source-baseline defect found within reviewed scope.",
+  "initial_review_preserved": true
+}

@@ -1,32 +1,105 @@
 ---
 name: cv-company-formation
-description: "Source-cited draft: company formation & entity choice for Cape Verde (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company formation for Cape Verde (tax year 2026): Lda and SA, Casa do Cidadao, tax and INPS registration, REMPE benefits. Built from official pages; company-law figures are marked unconfirmed."
 jurisdiction: CV
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+version: 0.2
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Cape Verde Company Formation & Entity Choice
+# Cape Verde Company Formation v0.2
 
-## Entity types and incorporation
+## Who this applies to
 
-The most common business vehicles in Cape Verde are the Sociedade por Quotas (Lda) and the Sociedade Anonima (SA). Companies can be incorporated through the one-stop shop Casa do Cidadao under a fast-track procedure. Figures below are indicative and should be confirmed with a local practitioner.
+Founders setting up in Cape Verde. The usual vehicles are the Sociedade por Quotas (Lda) and Sociedade Anonima (SA). The Companies Code could not be opened, so capital and fee figures are not stated.
 
-- **Sociedade por Quotas (Lda)** — Private limited company; members' liability limited to their quotas; most common SME vehicle  _(Codigo das Empresas Comerciais (Commercial Companies Code))_
-- **Sociedade Anonima (SA)** — Public limited company; capital divided into shares; used for larger ventures  _(Codigo das Empresas Comerciais (Commercial Companies Code))_
-- **Minimum share capital (Lda)** — CVE 1 statutory minimum; CVE 100,000 or more is typical in practice CVE ((approx — confirm))  _(Codigo das Empresas Comerciais (Commercial Companies Code) — https://www.expanship.com/cv/blog/incorporation-requirements-in-cabo-verde)_
-- **Minimum share capital (SA)** — CVE 1 statutory minimum; a higher capital is expected in practice CVE ((approx — confirm))  _(Codigo das Empresas Comerciais (Commercial Companies Code))_
-- **Capital pay-up on formation** — Lda: 50% paid up in cash on opening the company bank account, balance over three years; SA: 30% ((approx — confirm))  _(Codigo das Empresas Comerciais (Commercial Companies Code) — https://www.expanship.com/cv/blog/incorporation-requirements-in-cabo-verde)_
-- **One-stop shop incorporation** — Fast-track incorporation via Casa do Cidadao using a pre-selected by-laws model and a chartered accountant's statement  _(Casa do Cidadao (Empresa no Dia) — https://www.addleshawgoddard.com/en/doing-business-in-africa/africa-countries-a-z-list/cape-verde/)_
-- **Incorporation timeline** — Approximately 1 to 2 weeks (faster via the one-stop shop) ((approx — confirm))  _(Casa do Cidadao (Empresa no Dia) — https://www.expanship.com/cv/blog/incorporation-requirements-in-cabo-verde)_
-- **Notary fees** — Approximately CVE 5,000 to 15,000 for drafting and authenticating statutes CVE ((approx — confirm))  _(Casa do Cidadao (Empresa no Dia) — https://www.expanship.com/cv/blog/incorporation-requirements-in-cabo-verde)_
-- **Commercial registration fees** — Approximately CVE 2,500 plus 0.2% stamp duty on capital where applicable CVE ((approx — confirm))  _(Casa do Cidadao (Empresa no Dia) — https://www.expanship.com/cv/blog/incorporation-requirements-in-cabo-verde)_
-- **Chartered accountant requirement** — A chartered accountant must be appointed at incorporation under the fast-track procedure and for ongoing bookkeeping/tax filings  _(Codigo das Empresas Comerciais (Commercial Companies Code) — https://www.addleshawgoddard.com/en/doing-business-in-africa/africa-countries-a-z-list/cape-verde/)_
-- **Core annual compliance** — Annual IRPC return by 31 May, periodic VAT returns, monthly INPS and IRPS withholding remittances, and annual financial statements  _(Codigo do IRPC (Corporate Income Tax Code) — https://taxsummaries.pwc.com/cabo-verde/corporate/tax-administration)_
+## Rates, bands and thresholds
+
+Basis for 2026: the law is the State Budget 2026 (Lei 69/X/2025, in force 1 January 2026), the DNRE Calendario Fiscal 2026 and the base code as published. No consolidated code was found, and Lei 116/IX/2021 could not be opened, so a row resting on original code text carries that limit. The Amending Budget of 13 August 2026 changed no tax rate we could find.
+
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| REMPE acts of formation, capital increase, statute change, closing, registration (art. 44) | Free of stamp duty, fees and emoluments | 2026 | https://boe.incv.cv/Bulletins/Download/6150 |
+| REMPE one-stop shop | Casa do Cidadao for formation and certification | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
+| TEU minimum | CVE 30,000 a year | 2026 | https://boe.incv.cv/Bulletins/Download/1891 |
+| INPS registration | Within 15 days of starting | 2026 | https://inps.cv/inscricao/ |
+
+## The base
+
+REMPE companies keep purchase and sales books for 8 years and need no organised accounts (DNRE leaflet). Others keep organised accounts and certified software from Budget 2026.
+
+## Deadlines and filing
+
+### How to set up
+
+1. Go to the Casa do Cidadao, the single counter for constitution and certification.
+2. Get a NIF (Modelo 109) and file start of activity (Modelo 110) from the [DNRE page](https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos).
+3. Notify the municipality where required (REMPE leaflet).
+4. Register with INPS within 15 days: inscription form, licence copy, the Boletim Oficial publication, NIF, and a statement naming the representative.
+5. Annual duties: see [overview](cv-tax-overview.md).
+
+## Penalties and interest
+
+See the linked skills.
+
+## Cross-border points
+
+Foreign founders: not read.
+
+## Two worked examples that recompute
+
+Case 1: a micro company starting 1 July with turnover under CVE 1,000,000 pays the minimum for 6 months: CVE 15,000.
+
+```oa-check
+name: Pro rata minimum
+inputs:
+  m: 6
+steps:
+  - due: 30000 * m / 12
+expected:
+  due: 15000.00
+```
+
+Case 2, the choice at formation: sales of CVE 900,000 give 4% = CVE 36,000 on the rate alone, but art. 25(2) says a micro company at or under CVE 1,000,000 pays the minimum: CVE 30,000 on that reading.
+
+```oa-check
+name: Rate or minimum
+inputs:
+  s: 900000
+steps:
+  - rate: s * 0.04
+  - gap: rate - 30000
+expected:
+  rate: 36000.00
+  gap: 6000.00
+```
+
+
+## Ask the client first
+
+- Lda or SA?
+- Turnover and workers expected?
+- REMPE or organised accounts?
+- Foreign shareholders?
+- Island of the seat?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-01 |
+| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: searched for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-01 |
+| Lei 70/VIII/2014, REMPE, BO I 51, 26 Aug 2014: arts on the TEU, 25 and 26 read | https://boe.incv.cv/Bulletins/Download/1891 | 2026-11-01 |
+| Lei 45/X/2024, Budget 2025: arts 25 and 26 read | https://boe.incv.cv/Bulletins/Download/6150 | 2026-11-01 |
+| DNRE, REMPE leaflet, 2015: all read | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-01 |
+| INPS, Inscricao: all read | https://inps.cv/inscricao/ | 2026-11-01 |
+| DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
+
+Not yet confirmed: Whether art. 25(2) is a flat CVE 30,000 up to CVE 1,000,000, or a floor under 4%, which would give CVE 36,000 in case 2. Minimum capital (old skill: CVE 1, CVE 100,000 typical); capital pay-up 50% and 30%; timeline 1 to 2 weeks; notary CVE 5,000 to 15,000; registration CVE 2,500 plus 0.2% stamp duty; chartered accountant requirement; annual financial statement duty. All came from secondary sources and are removed from the body until the Commercial Companies Code is read.
 
 <!-- openaccountants-cta-block -->
 

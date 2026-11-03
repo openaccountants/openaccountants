@@ -1,0 +1,25 @@
+[
+  {
+    "id": "SL-FO-1",
+    "severity": "source_condition_omission",
+    "records": [
+      "F25"
+    ],
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "location": "Rates table: Small-company audit classification; second example caveat; F25 ledger",
+    "source": "Companies Act2009 s.302(1)(e),(2), physical125 / printed229",
+    "finding": "All-conditions summary omits a Government/public corporation/agency nominee. It also omits proportional adjustment to the turnover maximum for a company year that is not a full year.",
+    "required_fix": "Include government/public corporation/agency or its nominee, and state the short-year turnover proration. Reflect the conditions in F25 and the human ledger. Preserve unresolved monetary caps and audit cross-reference; no new research tail required."
+  },
+  {
+    "id": "SL-FO-2",
+    "severity": "old_topic_preservation",
+    "records": [
+      "old-topic13"
+    ],
+    "path": "skills/sierra-leone/sl-company-formation.md",
+    "location": "Old Annual return bullet and old-topic destination",
+    "finding": "Predecessor bullet separately says maintain statutory registers. Destination maps only class-specific annual returns; candidate mentions accounting/stock records but never explicitly preserves or holds the statutory-register job. These are not the same records.",
+    "required_fix": "Either source and preserve the statutory-register requirement, or explicitly retain that job as an unresolved statutory-register scope in Sources and the precise old-topic map. User permits explicit partial holds; no need to chase all register provisions."
+  }
+]

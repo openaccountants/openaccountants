@@ -1,0 +1,142 @@
+{
+  "reviewer": "Independent Codex source reviewer; separate from writer",
+  "review_date": "2026-11-01",
+  "frozen_commit": "de4e2907007c726bd16479b29bee86676ba85f66",
+  "base_commit": "f7076093d670d841cdcc4140743541ffa6d72c7b",
+  "input_files": [
+    {
+      "path": "skills/burkina-faso/bf-vat.md",
+      "git_blob": "024cda45fc25a5bbe3f2fddbb5d24d15bcae15ca",
+      "sha256": "c9633208d7e6b759c44f1598b3bfe51b511d26604032971fa8f656ecd6b6fe22"
+    },
+    {
+      "path": "skills/burkina-faso/bf-social-contributions.md",
+      "git_blob": "d258e3936e6fef2b6a5e369773014c8f80017b7c",
+      "sha256": "91a57add55b88cf0dd7cdbc2a98d5a94e6c7c7b71713250465e86c8029a70ec8"
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "git_blob": "81269eed7cb1691d93912923625f5316f04dd1be",
+      "sha256": "86f2d4e902798ff5910d4f9c9cbc4583e4b75312b437c56d1031f14574bb5dcb"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/ledgers/bf-vat.md",
+      "git_blob": "690e78eddcff82c32f96ca17820eb507edaf0e8d",
+      "sha256": "6a290b1fe962f57d0bb0aafb83c8d09e5188d2efa51d73afb64896c49d55d392"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/ledgers/bf-social-contributions.md",
+      "git_blob": "223255e36a987b65b9e3cd9294e7fe59f900b3c7",
+      "sha256": "932dd47c01ccd5983576db568b0aa8be1c6577d5a213f98506772f1076fc166c"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/source-identities.json",
+      "git_blob": "c9bb774dc8c97ab30626e992d4b760b17dc6585f",
+      "sha256": "40ac57df65606251ba6d73af0c5a36f4c340e2a1c657f6207b5d0710c36cf3ac"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/old-topic-destinations.md",
+      "git_blob": "24d79f2a698836e7ec8cd8c245e8bc22e07d0b46",
+      "sha256": "a8d9ed3e716cbe37b53bf38412927448850d97e9a80bf6332b27295dc00d8974"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/preservation-manifest.json",
+      "git_blob": "2b9414522d3cc9e760fad3858f211b89f1ba37fa",
+      "sha256": "0d2a433f4cd7b7226230e22512f6cbf042abb57912d14a3b2c99e313e29f5e5d"
+    }
+  ],
+  "sources": [
+    {
+      "file": "cgi-2026.pdf",
+      "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+      "identity": "Signed consolidated CGI2026, official DGI edition; source PDF cached before review",
+      "read_on": "2026-11-01",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "cnss-contributions.html",
+      "sha256": "ef6b8f48569dcc9fa1cf40f3d49a83502d811fb1845145d03d8a6d03336fec64",
+      "identity": "Official CNSS public contribution guidance; no signed rate-decree certification",
+      "read_on": "2026-11-01",
+      "official_url": "https://cnssbf.org/?p=2078",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "cnss-ceiling-2022.pdf",
+      "sha256": "3d2bdac73680e05a312e6d7c7d9f71dead313501ad0e13f43c0c1a3aa51bd573",
+      "identity": "Signed Arrêté2022-067",
+      "read_on": "2026-11-01",
+      "official_url": "https://cnssbf.org/wp-content/uploads/2024/02/arrete_no_2022-067_fixation_du_plafond_des_salaires_soumis_a_cotisation_du_regime.pdf",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "cnss-base-2023.pdf",
+      "sha256": "c5bb0960c4121c9b9116f1d857aa73c1f9480b045040dd7d7e4bbc0c0489ad38",
+      "identity": "Signed Arrêté2023-017",
+      "read_on": "2026-11-01",
+      "official_url": "https://cnssbf.org/wp-content/uploads/2024/02/Arrete-n%C2%B02023-017-portant-determination.pdf",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "cnss-risk-2023.pdf",
+      "sha256": "6f88294c1ee2468e38410f689deb34f0fde24fb36716c3cf654fcbd1bec9089e",
+      "identity": "Signed Arrêté2023-018",
+      "read_on": "2026-11-01",
+      "official_url": "https://cnssbf.org/wp-content/uploads/2024/02/Arrete-n%C2%B02023-018-portant-determination.pdf",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "cnss-bnts.pdf",
+      "sha256": "d96e6de38b8db91a05222175e36253dc71a4d476b115f4e3c97e07e421b28248",
+      "identity": "Official published BNTS,3physicalpages,Cot01+Cot02",
+      "read_on": "2026-11-01",
+      "official_url": "https://cnss.bf/wp-content/uploads/2024/07/1_Bordereau-Nominatif-des-Travailleurs-Salaries.pdf",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "cnss-summary.pdf",
+      "sha256": "27d53f615ab3cdc5ae71e567edcd2977a7794e26c83f9a4e61a838bde2c5ab77",
+      "identity": "Official published recap,Cot04,2physicalpages",
+      "read_on": "2026-11-01",
+      "official_url": "https://cnss.bf/wp-content/uploads/2024/07/5_Declaration-recapitulative-des-salaires.pdf",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "cnss-voluntary.pdf",
+      "sha256": "7e797aca985226228e4369c704162919305b7ea88e431a51e22f6d27818c38ad",
+      "identity": "Official published voluntary subscription,2pages",
+      "read_on": "2026-11-01",
+      "official_url": "https://cnss.bf/wp-content/uploads/2024/02/SOUSCRIPTION-A-LASSURANCE-VOLONTAIRE.pdf",
+      "matches_writer_hash": true
+    },
+    {
+      "file": "review-cnss-registration-web.json",
+      "sha256": "71f994870e7fab1707cfafe995345e65b02892e1f1383e49034bf04ec9296d67",
+      "identity": "Serialized actual web-tool page read; hash is retrieval representation,not original HTML",
+      "read_on": "2026-11-01"
+    },
+    {
+      "file": "review-amu-rates-web.json",
+      "sha256": "c7bae76d8b7ad743064fd3aed6dac3d0d4bc143ecff606c27a1ee613fd4d16e8",
+      "identity": "Serialized actual web-tool page read; ministry explanatory guidance,not signed decree",
+      "read_on": "2026-11-01"
+    },
+    {
+      "file": "review-amu-payment-web.json",
+      "sha256": "58edeb77755ad42d98eab2831cb9fdaef8bac8d347b01d72a176c5aba21d7023",
+      "identity": "Serialized actual web-tool page read; ministry explanatory guidance,not signed decree",
+      "read_on": "2026-11-01"
+    }
+  ],
+  "frozen_draft_backup": "/tmp/bf-vat-social-independent-review/frozen-draft-backup",
+  "source_faults": "2021 law malformed; rate PDF mislabelled; correct ministry rate PDF unread. The writer acquisition receipt is acknowledged, not independently recertified. No block circumvention.",
+  "actual_read_scopes": [
+    "CGI 2026 printed pp.130–136, arts.296–307; selected art.308 medical/product rows on pp.137–151; arts.310–334 on pp.155–164; art.530 on p.214; arts.776–779 on pp.309–310. Not all 566 pages, product codes or implementing orders.",
+    "Signed 2022 ceiling: both pages. Signed 2023 base: pp.1–5. Signed 2023 risk: pp.1–3. OCR-assisted reading followed by visual reading of substantive scans and signatures. Trailing blank pages are not substantive.",
+    "CNSS contribution HTML: actual rate, base, employer and payment paragraphs; no claim to have read the signed rate decree.",
+    "BNTS: all three physical pages. Recap: both pages, including reverse instructions. Voluntary subscription: both pages. Forms visually inspected; their current authenticated applicability is not established.",
+    "Registration: actual public web lines 164–188, including the CEFORE exceptions and ordinary company dossier. Ministry: actual explanatory paragraphs dated 30 July and 6 August 2025. Web-payload hashes identify the retrieval representation, not original HTML."
+  ],
+  "fresh_access": "Web opened official registration/ministry pages. Web CGI/contribution fetch timed out; reviewed matching cached official sources. Shell direct fetch failed DNS; no inference from failed fetch."
+}

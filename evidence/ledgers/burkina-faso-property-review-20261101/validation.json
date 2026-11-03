@@ -1,0 +1,54 @@
+{
+  "frozen_head": "13a38f884550d6d220f79100a8fbc1404842a1de",
+  "results": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 10 changed guide file(s)\nchecked 9 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/burkina-faso/bf-company-property-tax.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 9 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burkina-faso/bf-company-property-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "13a38f884550d6d220f79100a8fbc1404842a1de"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "interpretation": "Changed-only compares actual committed origin/main...HEAD. Custom property slug warning is acknowledged: separate TFS job routed by exact appended README; it is not a new eighth complete country domain."
+}

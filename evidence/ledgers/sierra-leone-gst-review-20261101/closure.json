@@ -1,0 +1,54 @@
+{
+  "reviewer": "/root/sierra_leone_gst_review",
+  "date": "2026-11-01",
+  "result": "Accepted for source fidelity within explicitly dated partial research scope",
+  "findings_closed": [
+    "F1 actual Finance Act 2026 URL corrected",
+    "F2 exact 2022/2025 physical locators corrected in Guide, JSON, rendered ledger and manifest"
+  ],
+  "candidate_files": {
+    "skills/sierra-leone/sl-vat-gst.md": "28a7f261c756de0a8ada685183c9d73fa6fe6aa6a138329460d9abf0312c5c88",
+    "evidence/ledgers/sierra-leone-gst-20261101/rules.json": "f7da05ce3bd3305b120aa257753f0be63b0de8f05d23f26e994e24f84fc148d2",
+    "evidence/ledgers/sierra-leone-gst-20261101/sl-vat-gst.md": "3a06fcffe048671c1e87fdfbc70ffa8a85d2804db777b7cf9e0034b4639f5697",
+    "evidence/ledgers/sierra-leone-gst-20261101/source-read-manifest.json": "978159cfa080c392c63c38bbcba7b3dda719afdeb82a72a0b20515332627deb8"
+  },
+  "repair_record_sha256": "86c1cf2290669c3fc080711071c5558274885d2584b7ada4dd8bf04d274f9a74",
+  "substantive_Guide_body_examples_and_holds_unchanged": true,
+  "all41_rule_contents_unchanged_except_four_page_locators": true,
+  "all92_preserved_files_unchanged": true,
+  "initial_writer_evidence_unchanged_other_than_bound_candidates": {
+    "evidence/ledgers/sierra-leone-gst-20261101/README.md": "d62d88b97e41243de039c9cd6cdf1b12e6f53930af22a31ca886179931c02b0a",
+    "evidence/ledgers/sierra-leone-gst-20261101/committed-validation.json": "d2bdc3582b237469e7e74ddf5ae5c6944b715e35e946480b5f1da8afe6d45ff7",
+    "evidence/ledgers/sierra-leone-gst-20261101/old-topics.json": "7f97197a4c5ccaaed8fc82b45a4fd517f66454d31298b77a9cf558f6d38358ed",
+    "evidence/ledgers/sierra-leone-gst-20261101/old-topics.md": "1257d39ac28b38ab81b8ba28fd92695719f42f5e409cb338f9e599072e0255cc",
+    "evidence/ledgers/sierra-leone-gst-20261101/quote-check.json": "14ec47e166eb574755ab314cdf9c24cb61b5405a69d0db57f9239b482b489ac1",
+    "evidence/ledgers/sierra-leone-gst-20261101/shape-checks.json": "b8cc41e3ece04240fa047a3955560650284c794a9db4a8b22ccc6bb67fa65a5d",
+    "evidence/ledgers/sierra-leone-gst-20261101/writer-checkpoint.json": "c642f87acbb613087ecd783d6f50dad96a844f2dcbef83b728644ce6fbfaeb2f"
+  },
+  "initial_review_files": {
+    "evidence/ledgers/sierra-leone-gst-review-20261101/REVIEW.md": "c686feb31f6e1c8f0e8347fcfe98335baf0128497495ad4c81f55ae52a8314d4",
+    "evidence/ledgers/sierra-leone-gst-review-20261101/calculations.json": "7997e5970c68198308334593fd5aee892a8f97f53a88582c6668e7c7f6150ec1",
+    "evidence/ledgers/sierra-leone-gst-review-20261101/findings.json": "16a3be31627cca226a259571422b59cf1fdafacacca9eceb64bf8c76fcaf0567",
+    "evidence/ledgers/sierra-leone-gst-review-20261101/initial-bound-hashes.json": "b7f65a6be2da29ef84bf8f7354443195b16d5b4b24c05b570e7ecc00c3c2aaba",
+    "evidence/ledgers/sierra-leone-gst-review-20261101/old-topic-checks.json": "bf0be3a1b3fe65883db60b82236b80bc2dfcc22a464f8acbd308b5eaba068552",
+    "evidence/ledgers/sierra-leone-gst-review-20261101/preservation.json": "02676c16a965c1e833fcb2e2b47dd31efec2edee41adb6de9b949469caafbf28",
+    "evidence/ledgers/sierra-leone-gst-review-20261101/row-verdicts.json": "02567ea2165f517f03feed26f0f64b53d88a87432db32ff69c7ee0a6f1dd270d",
+    "evidence/ledgers/sierra-leone-gst-review-20261101/source-reads.json": "f500b39646485271b678196c1ec44e8ebeac1edbc9faad821e61298872619345"
+  },
+  "status_reconciliation_authorization": {
+    "allowed_files": [
+      "skills/sierra-leone/README.md",
+      "evidence/ledgers/sierra-leone-gst-20261101/README.md"
+    ],
+    "allowed_changes": "Factual review-status/checkpoint text only, reporting all 41 records/12 topics/2 cases independently source checked and both defects closed. Preserve explicit law, filing, classification, penalty-priority and attestation gaps; no change to substantive Guide prose or trust metadata. Save additive reconciliation receipt with before/after hashes.",
+    "further_source_review_required": false
+  },
+  "not_accepted": [
+    "full operative 2026 amendment and subsidiary instrument continuity",
+    "schedule/HS classification and numbering anomalies",
+    "subsection/penalty priority",
+    "current forms and portal operation",
+    "accountant attestation",
+    "comprehensive VAT or country coverage"
+  ]
+}

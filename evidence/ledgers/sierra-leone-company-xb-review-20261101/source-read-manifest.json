@@ -1,0 +1,168 @@
+[
+  {
+    "id": "ITA",
+    "file": "Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "bytes": 900613,
+    "sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "PDF21-22 ss12-16;27 ss24-25;30-33 ss32-32A;35-36 s39/neighbours;56-57 s88;61-62 s97;70-71 s113 and neighbouring72. NRA-hosted unofficial2017 consolidation, not current authoritative consolidation.",
+    "limit": "Acquisition/extraction beyond actual read scope is not verification. Full later-law and subsidiary-instrument reconciliation remains open.",
+    "independent_read_on": "2026-11-01",
+    "independent_physical_pages_read": [
+      1,
+      2,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      70,
+      71,
+      72
+    ],
+    "independent_pdf_hash_and_size_match": true,
+    "independent_pdftotext_reextract_normalized_equal_cache": true,
+    "visual_pages": [],
+    "remote_refreshed_by_reviewer": false,
+    "scope": "Only listed pages/substantive relevant sections and neighbours were read. Extracting full PDF was not a whole-document legal review. Unofficial2017 baseline not certified operative2026. Captured officialPDF source, not a newremote read."
+  },
+  {
+    "id": "F21",
+    "file": "Finance_Act_2021_be1efb0bcc.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Finance_Act_2021_be1efb0bcc.pdf",
+    "bytes": 210947,
+    "sha256": "f659b25e9d9816713ec024db85c1ca8ad4597d968a00b24d0446dfaf5f04a7d8",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "PDF5-6 printed8-11: ss8,11-12; full financialcost continuation and relevant neighbours read.",
+    "limit": "Acquisition/extraction beyond actual read scope is not verification. Full later-law and subsidiary-instrument reconciliation remains open.",
+    "independent_read_on": "2026-11-01",
+    "independent_physical_pages_read": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "independent_pdf_hash_and_size_match": true,
+    "independent_pdftotext_reextract_normalized_equal_cache": true,
+    "visual_pages": [],
+    "remote_refreshed_by_reviewer": false,
+    "scope": "Only listed pages/substantive relevant sections and neighbours were read. Extracting full PDF was not a whole-document legal review. Unofficial2017 baseline not certified operative2026. Captured officialPDF source, not a newremote read."
+  },
+  {
+    "id": "F23",
+    "file": "The_Finance_Act_2023_8629ff7803.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2023_8629ff7803.pdf",
+    "bytes": 736593,
+    "sha256": "dc0eb8a9e8a52d5ff1505e8ea0ccf7b4cd2570bb24a4a5b817eb0b4273ab84da",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Physical PDF5-6: ss5-6 original MAT structure and percentage with neighbours read.",
+    "limit": "Acquisition/extraction beyond actual read scope is not verification. Full later-law and subsidiary-instrument reconciliation remains open.",
+    "independent_read_on": "2026-11-01",
+    "independent_physical_pages_read": [
+      5,
+      6,
+      7
+    ],
+    "independent_pdf_hash_and_size_match": true,
+    "independent_pdftotext_reextract_normalized_equal_cache": true,
+    "visual_pages": [],
+    "remote_refreshed_by_reviewer": false,
+    "scope": "Only listed pages/substantive relevant sections and neighbours were read. Extracting full PDF was not a whole-document legal review. Unofficial2017 baseline not certified operative2026. Captured officialPDF source, not a newremote read."
+  },
+  {
+    "id": "F24",
+    "file": "The_Finance_Act_2024_0d6d83e684.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2024_0d6d83e684.pdf",
+    "bytes": 3410826,
+    "sha256": "5314b7e510cfa9d39ae25391e8f8f13ae8d0689fc1503d0ec9602a1960712a20",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "PDF8-10 printed14-18 ss8-12 and neighbours. Two-up booklet halves differentiated; selected right halves cached separately.",
+    "limit": "Acquisition/extraction beyond actual read scope is not verification. Full later-law and subsidiary-instrument reconciliation remains open.",
+    "independent_read_on": "2026-11-01",
+    "independent_physical_pages_read": [
+      8,
+      9,
+      10
+    ],
+    "independent_pdf_hash_and_size_match": true,
+    "independent_pdftotext_reextract_normalized_equal_cache": true,
+    "visual_pages": [
+      8,
+      9
+    ],
+    "remote_refreshed_by_reviewer": false,
+    "scope": "Only listed pages/substantive relevant sections and neighbours were read. Extracting full PDF was not a whole-document legal review. Unofficial2017 baseline not certified operative2026. Captured officialPDF source, not a newremote read."
+  },
+  {
+    "id": "F25",
+    "file": "The_Finance_Act_2025_beb680faed.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf",
+    "bytes": 701135,
+    "sha256": "3e05fc9d932106fc5b1dad946854583b140afd782dda6f639afbf1672a610cf5",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "PDF7-9 printed7-9: ss7-10 and neighbouring monthly penalties read; source has two-up reversed pairs.",
+    "limit": "Acquisition/extraction beyond actual read scope is not verification. Full later-law and subsidiary-instrument reconciliation remains open.",
+    "independent_read_on": "2026-11-01",
+    "independent_physical_pages_read": [
+      7,
+      8,
+      9
+    ],
+    "independent_pdf_hash_and_size_match": true,
+    "independent_pdftotext_reextract_normalized_equal_cache": true,
+    "visual_pages": [
+      7,
+      8,
+      9
+    ],
+    "remote_refreshed_by_reviewer": false,
+    "scope": "Only listed pages/substantive relevant sections and neighbours were read. Extracting full PDF was not a whole-document legal review. Unofficial2017 baseline not certified operative2026. Captured officialPDF source, not a newremote read."
+  },
+  {
+    "id": "F26",
+    "file": "The_Finance_Act_2026_121df05d9b.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf",
+    "bytes": 960719,
+    "sha256": "372edaf9bae9bc3f1a45d26ab4175e15cdbbc9be958a4135d8ba6dd8abc810cf",
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Commencement and physical5-9 relevant half-pages printed5-9 ss4-15 read, not entire24-page Act; first body pages already read in TP draft.",
+    "limit": "Acquisition/extraction beyond actual read scope is not verification. Full later-law and subsidiary-instrument reconciliation remains open.",
+    "independent_read_on": "2026-11-01",
+    "independent_physical_pages_read": [
+      2,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "independent_pdf_hash_and_size_match": true,
+    "independent_pdftotext_reextract_normalized_equal_cache": true,
+    "visual_pages": [
+      6,
+      8,
+      9
+    ],
+    "remote_refreshed_by_reviewer": false,
+    "scope": "Only listed pages/substantive relevant sections and neighbours were read. Extracting full PDF was not a whole-document legal review. Unofficial2017 baseline not certified operative2026. Captured officialPDF source, not a newremote read."
+  }
+]

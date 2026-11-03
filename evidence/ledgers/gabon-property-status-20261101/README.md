@@ -1,0 +1,9 @@
+# Gabon property review: immutable status closure
+
+The independent property review passed source fidelity with zero substantive findings at `e536c610f22884e70826777242fa3fb3f64978a5`. It checked all 72 grouped records, 160 exact quote placements, 184 published tariff cells and both new cases. Only the three exact status substitutions authorised by `../gabon-property-review-20261101/permitted-status-transitions.json` are applied. Source rules, calculations, numerical values and holds are unchanged. `status-transition.json` pins the permitted before/after hashes and every preserved evidence identity; `verify-status.py` checks those identities and reverses the substitutions to the exact reviewed bytes.
+
+The prior accepted eight-Guide review of 93 grouped rules, 127 placements, 77 topics and 16 cases, including F1-F4 closure, remains unchanged. Historical writer ledgers, frozen receipts and their earlier pending statuses are immutable historical records. The complete new independent review is published without altering any of its 31 files. The original eight Guide bodies and platform/CTA bytes remain exact. No generated exports or ownership records change.
+
+This closes independent source-fidelity review for the partial property draft only. All seven country domains remain partial. Current-law chain, first operative periods, zoning/parcel mapping, untitled interests, valuation priorities, company-base interactions, malformed/excess/fractional algorithms, agricultural calculation/declaration defects, relief implementation, forms/boxes, authenticated filing/payment/receipts and sanctions/cumulation holds remain. There is no accountant attestation, comprehensive-country claim or merge approval. PR 1212 stays draft.
+
+Actual committed validation receipts are added separately after freezing the status commit. The existing classifier warning for the annual-property slug is retained explicitly, not suppressed or turned into a different tax domain.

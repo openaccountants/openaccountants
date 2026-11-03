@@ -1,0 +1,5 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "replaced_guide_body_units": 0,
+  "reason": "New distinct annual-property job; no predecessor Guide body rewritten or removed. Eight existing Guides retain exact bytes; see preservation-baseline.json. README only gains additive routing/status."
+}

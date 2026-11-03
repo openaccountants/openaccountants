@@ -1,0 +1,2175 @@
+[
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-01",
+    "quote_checks": [
+      {
+        "quote": "demeurent soumis aux lois non contraires au présent Acte uniforme",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 1423
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-02",
+    "quote_checks": [
+      {
+        "quote": "des dettes sociales qu’à concurrence de leurs apports",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 24698
+          }
+        ]
+      },
+      {
+        "quote": "Elle peut être instituée par une personne physique ou morale",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 24812
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-03",
+    "quote_checks": [
+      {
+        "quote": "La société anonyme peut ne comprendre qu'un seul actionnaire.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 40246
+          }
+        ]
+      },
+      {
+        "quote": "ne sont responsables des dettes sociales qu’à concurrence de leurs apports",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 24677
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-04",
+    "quote_checks": [
+      {
+        "quote": "Toute personne physique dont l'immatriculation est requise par la loi",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 35739
+          }
+        ]
+      },
+      {
+        "quote": "Les personnes morales soumises par des dispositions légales",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 38987
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-05",
+    "quote_checks": [
+      {
+        "quote": "est librement fixé par les associés dans les statuts et divisé en parts sociales égales",
+        "hits": [
+          {
+            "source": "jo-2015-26.raw.txt",
+            "match": true,
+            "normalised_character_offset": 7081
+          }
+        ]
+      },
+      {
+        "quote": "(5.000) francs CFA.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 25426
+          },
+          {
+            "source": "jo-2015-26.raw.txt",
+            "match": true,
+            "normalised_character_offset": 7220
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-06",
+    "quote_checks": [
+      {
+        "quote": "Sauf dispositions nationales contraires, le capital social",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 25208
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-07",
+    "quote_checks": [
+      {
+        "quote": "souscrites en totalité par les associés",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 25709
+          }
+        ]
+      },
+      {
+        "quote": "intégralement libérées lorsqu’elles représentent des apports en nature.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 25769
+          }
+        ]
+      },
+      {
+        "quote": "la moitié au moins de leur valeur nominale.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 25941
+          }
+        ]
+      },
+      {
+        "quote": "un délai de deux (2) ans",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 26051
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-08",
+    "quote_checks": [
+      {
+        "quote": "est supérieure à cinq millions (5.000.000) de francs CFA.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 26641
+          }
+        ]
+      },
+      {
+        "quote": "L'évaluation des avantages particuliers est obligatoirement contrôlée",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 26699
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-09",
+    "quote_checks": [
+      {
+        "quote": "Le capital social minimum est fixé à dix millions (10.000.000) de francs CFA.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 40614
+          }
+        ]
+      },
+      {
+        "quote": "doit être entièrement souscrit avant la date de la signature des statuts.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 40871
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-10",
+    "quote_checks": [
+      {
+        "quote": "d’un quart au moins de leur valeur nominale.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 41058
+          }
+        ]
+      },
+      {
+        "quote": "ne peut excéder trois (3) ans",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 41388
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-11",
+    "quote_checks": [
+      {
+        "quote": "dont les titres sont inscrits à la bourse des valeurs",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 51464
+          }
+        ]
+      },
+      {
+        "quote": "est de cent millions (100.000.000) de francs CFA.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 51661
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-12",
+    "quote_checks": [
+      {
+        "quote": "à la clôture de l’exercice social, deux des conditions suivantes",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 34287
+          }
+        ]
+      },
+      {
+        "quote": "total du bilan supérieur à cent vingt cinq millions (125.000.000)",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 34358
+          }
+        ]
+      },
+      {
+        "quote": "chiffre d’affaires annuel supérieur à deux cent cinquante millions (250.000.000)",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 34444
+          }
+        ]
+      },
+      {
+        "quote": "effectif permanent supérieur à cinquante (50) personnes",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 34545
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-13",
+    "quote_checks": [
+      {
+        "quote": "pendant les deux (2) exercices précédant",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 34808
+          }
+        ]
+      },
+      {
+        "quote": "l'expiration du mandat du commissaire aux comptes.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 34849
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-14",
+    "quote_checks": [
+      {
+        "quote": "la nomination d’un commissaire aux comptes est facultative.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 34983
+          }
+        ]
+      },
+      {
+        "quote": "au moins, le dixième du capital social.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 35127
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-15",
+    "quote_checks": [
+      {
+        "quote": "Le contrôle est exercé, dans chaque société anonyme, par un ou plusieurs commissaires aux comptes.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 48367
+          }
+        ]
+      },
+      {
+        "quote": "seuls les experts-comptables inscrits au tableau de l’ordre",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 48793
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-16",
+    "quote_checks": [
+      {
+        "quote": "Sauf dispositions nationales contraires, les statuts sont établis par acte notarié",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 5378
+          }
+        ]
+      },
+      {
+        "quote": "Les statuts mentionnent",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 6624
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-17",
+    "quote_checks": [
+      {
+        "quote": "font l’objet d’un dépôt immédiat",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 28205
+          }
+        ]
+      },
+      {
+        "quote": "contre récépissé, dans un compte ouvert au nom de la société en formation",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 28342
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-18",
+    "quote_checks": [
+      {
+        "quote": "Les fonds ainsi déposés sont indisponibles jusqu’au jour de l’immatriculation",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 29268
+          }
+        ]
+      },
+      {
+        "quote": "l’autorisation de retirer le montant de leurs apports.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 29960
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-19",
+    "quote_checks": [
+      {
+        "quote": "établit et arrête les états financiers de synthèse",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 15779
+          }
+        ]
+      },
+      {
+        "quote": "établit un rapport de gestion",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 16099
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-20",
+    "quote_checks": [
+      {
+        "quote": "dans les six (6) mois de la clôture de l’exercice",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 45751
+          }
+        ]
+      },
+      {
+        "quote": "sous réserve de la prorogation de ce délai par décision de justice",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 45802
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-21",
+    "quote_checks": [
+      {
+        "quote": "dans le mois qui suit leur approbation par l’organe compétent",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 20177
+          }
+        ]
+      },
+      {
+        "quote": "En cas de refus d’approbation de ces documents, une copie de la décision",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 20628
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-22",
+    "quote_checks": [
+      {
+        "quote": "Toute société jouit de la personnalité juridique à compter de son immatriculation",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 11640
+          }
+        ]
+      },
+      {
+        "quote": "Toute société est constituée à compter de la signature de ses statuts",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 12497
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-23",
+    "quote_checks": [
+      {
+        "quote": "dans le premier mois de l'exercice de son activité",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 35815
+          }
+        ]
+      },
+      {
+        "quote": "dans le mois de leur constitution",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 39107
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-24",
+    "quote_checks": [
+      {
+        "quote": "Cette demande faite avec le formulaire prévu à l'article 39",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 39316
+          }
+        ]
+      },
+      {
+        "quote": "une copie certifiée conforme des statuts",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 41242
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-25",
+    "quote_checks": [
+      {
+        "quote": "un délai de soixante-quinze (75) jours",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 38107
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-26",
+    "quote_checks": [
+      {
+        "quote": "Guichet Unique au sein de l’Agence pour la Promotion des Investissements au Mali (API-Mali).",
+        "hits": [
+          {
+            "source": "administration-soletrader.txt",
+            "match": true,
+            "normalised_character_offset": 462
+          }
+        ]
+      },
+      {
+        "quote": "Le demandeur reçoit un récépissé de dépôt de demande",
+        "hits": [
+          {
+            "source": "administration-soletrader.txt",
+            "match": true,
+            "normalised_character_offset": 1733
+          }
+        ]
+      },
+      {
+        "quote": "Un reçu de paiement est remis à l’opérateur",
+        "hits": [
+          {
+            "source": "administration-soletrader.txt",
+            "match": true,
+            "normalised_character_offset": 1835
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-27",
+    "quote_checks": [
+      {
+        "quote": "Les pièces à fournir varient selon le type d’entreprise ou de société à créer.",
+        "hits": [
+          {
+            "source": "administration-soletrader.txt",
+            "match": true,
+            "normalised_character_offset": 2007
+          }
+        ]
+      },
+      {
+        "quote": "sous réserve de la présentation du casier judiciaire dans un délai de deux (2) mois",
+        "hits": [
+          {
+            "source": "administration-soletrader.txt",
+            "match": true,
+            "normalised_character_offset": 1174
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-28",
+    "quote_checks": [
+      {
+        "quote": "une copie du registre d’immatriculation du tribunal de commerce",
+        "hits": [
+          {
+            "source": "dgi-nif.txt",
+            "match": true,
+            "normalised_character_offset": 1400
+          }
+        ]
+      },
+      {
+        "quote": "une copie du contrat de bail ou une attestation de domiciliation",
+        "hits": [
+          {
+            "source": "dgi-nif.txt",
+            "match": true,
+            "normalised_character_offset": 1464
+          }
+        ]
+      },
+      {
+        "quote": "dans votre Centre des impôts ou au Guichet unique d’API Mali",
+        "hits": [
+          {
+            "source": "dgi-nif.txt",
+            "match": true,
+            "normalised_character_offset": 2709
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-29",
+    "quote_checks": [
+      {
+        "quote": "Cette déclaration doit être effectuer au cours du mois où vous démarrez vos activités.",
+        "hits": [
+          {
+            "source": "dgi-nif.txt",
+            "match": true,
+            "normalised_character_offset": 1783
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-30",
+    "quote_checks": [
+      {
+        "quote": "Avant son immatriculation, l’existence de la société n’est pas opposable aux tiers.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 12643
+          }
+        ]
+      },
+      {
+        "quote": "A défaut, la société est nulle.",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 30205
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-31",
+    "quote_checks": [
+      {
+        "quote": "elle ne peut invoquer son défaut d'immatriculation",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 53147
+          }
+        ]
+      },
+      {
+        "quote": "pour se soustraire aux responsabilités et aux obligations",
+        "hits": [
+          {
+            "source": "ohada-audcg-2010-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 53244
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-company-formation",
+    "id": "ml-company-formation-32",
+    "quote_checks": [
+      {
+        "quote": "Toutes personnes, quelle que soit leur nationalité",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 2767
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-01",
+    "quote_checks": [
+      {
+        "quote": "un Impôt sur les Traitements et Salaires",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 15574
+          }
+        ]
+      },
+      {
+        "quote": "L’impôt sur les revenus fonciers",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 512
+          }
+        ]
+      },
+      {
+        "quote": "dans la catégorie des revenus des valeurs mobilières",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 37534
+          }
+        ]
+      },
+      {
+        "quote": "dans la catégorie des bénéfices industriels et commerciaux",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 50806
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-02",
+    "quote_checks": [
+      {
+        "quote": "Les bénéfices réalisés par des personnes physiques et les membres des sociétés de personnes",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 96653
+          }
+        ]
+      },
+      {
+        "quote": "un Impôt sur les Sociétés (IS) est établi au nom de la société.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 97069
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-03",
+    "quote_checks": [
+      {
+        "quote": "le Mali",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 26661
+          },
+          {
+            "source": "jo-2015-26.raw.txt",
+            "match": true,
+            "normalised_character_offset": 134134
+          },
+          {
+            "source": "bceao-cfa.txt",
+            "match": true,
+            "normalised_character_offset": 4929
+          }
+        ]
+      },
+      {
+        "quote": "franc de la Communauté Financière Africaine",
+        "hits": [
+          {
+            "source": "bceao-cfa.txt",
+            "match": true,
+            "normalised_character_offset": 5637
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-04",
+    "quote_checks": [
+      {
+        "quote": "ayant une résidence habituelle au Mali",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 25610
+          }
+        ]
+      },
+      {
+        "quote": "l’impôt est dû à raison des bénéfices réalisés au Mali",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 51596
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-05",
+    "quote_checks": [
+      {
+        "quote": "Le bénéfice imposable est le bénéfice net",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 57913
+          }
+        ]
+      },
+      {
+        "quote": "montant du chiffre d’affaires hors taxe",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 98063
+          }
+        ]
+      },
+      {
+        "quote": "Pour les ventes, par la livraison.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 279235
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-06",
+    "quote_checks": [
+      {
+        "quote": "Il existe deux régimes d’imposition",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 84232
+          }
+        ]
+      },
+      {
+        "quote": "Chaque déclaration doit être établie conformément au modèle fourni par l’Administration.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 460756
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-07",
+    "quote_checks": [
+      {
+        "quote": "une copie du statut de l’entreprise",
+        "hits": [
+          {
+            "source": "dgi-nif.txt",
+            "match": true,
+            "normalised_character_offset": 1529
+          }
+        ]
+      },
+      {
+        "quote": "une copie du registre d’immatriculation du tribunal de commerce",
+        "hits": [
+          {
+            "source": "dgi-nif.txt",
+            "match": true,
+            "normalised_character_offset": 1400
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-08",
+    "quote_checks": [
+      {
+        "quote": "Toute société jouit de la personnalité juridique à compter de son immatriculation",
+        "hits": [
+          {
+            "source": "ohada-auscgie-selected.ocr.txt",
+            "match": true,
+            "normalised_character_offset": 11640
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-09",
+    "quote_checks": [
+      {
+        "quote": "Les acomptes provisionnels acquittés, à l’exclusion des majorations, viennent en déduction",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 612743
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-10",
+    "quote_checks": [
+      {
+        "quote": "L’exercice comptable coïncide avec l’année civile.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 56902
+          }
+        ]
+      },
+      {
+        "quote": "la durée de l’exercice est exceptionnellement inférieure à douze mois",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 56964
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-11",
+    "quote_checks": [
+      {
+        "quote": "Elle doit être signée du déclarant ou de son mandataire",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 460845
+          }
+        ]
+      },
+      {
+        "quote": "un certificat de dépôt",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 461287
+          }
+        ]
+      },
+      {
+        "quote": "sont tenus de délivrer quittance",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 598805
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-12",
+    "quote_checks": [
+      {
+        "quote": "Le défaut de déclaration des retenues opérées",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 467128
+          }
+        ]
+      },
+      {
+        "quote": "Lorsque le bénéfice ou le chiffre d’affaires déclaré",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 491464
+          }
+        ]
+      },
+      {
+        "quote": "En cas de retard dans le paiement des retenues exigibles",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 678400
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-13",
+    "quote_checks": [
+      {
+        "quote": "les bénéfices indirectement transférés",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 94400
+          }
+        ]
+      },
+      {
+        "quote": "n’ayant pas au Mali d’installation professionnelle permanente.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 108937
+          }
+        ]
+      },
+      {
+        "quote": "utilisée ou exploitée au Mali, l’imposition est faite au Mali.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 273247
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-tax-overview",
+    "id": "ml-tax-overview-14",
+    "quote_checks": [
+      {
+        "quote": "Pour 2026, l’annexe Fiscale figure à l’état U,",
+        "hits": [
+          {
+            "source": "jo-2025-33-5.txt",
+            "match": true,
+            "normalised_character_offset": 31071
+          }
+        ]
+      },
+      {
+        "quote": "annexé à la présente loi.",
+        "hits": [
+          {
+            "source": "jo-2025-33-5.txt",
+            "match": true,
+            "normalised_character_offset": 25931
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "01",
+    "quote_checks": [
+      {
+        "quote": "les bénéfices indirectement transférés à ces dernières soit par majoration ou diminution des prix d’achat ou de vente, soit par sous-capitalisation, soit par tout autre moyen, sont incorporés aux résultats accusés par les comptabilités.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 94400
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "02",
+    "quote_checks": [
+      {
+        "quote": "l’une détient directement ou par personne interposée la majorité du capital social de l’autre ou y exerce en fait le pouvoir de décision",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 94895
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "03",
+    "quote_checks": [
+      {
+        "quote": "elles sont placées l’une et l’autre, dans les conditions définies au point a, sous le contrôle d’une même entreprise.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 95039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "04",
+    "quote_checks": [
+      {
+        "quote": "La condition de dépendance ou de contrôle n’est pas exigée lorsque le transfert s’effectue avec des entreprises établies dans un État étranger ou dans un territoire situé hors du Mali dont le régime fiscal est privilégié, ou dans un pays non coopératif.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 95160
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "05",
+    "quote_checks": [
+      {
+        "quote": "dont le taux d’imposition est inférieur de plus de 10 points de pourcentage à celui de l’impôt sur les bénéfices ou sur les revenus dont ces entreprises auraient été redevables dans les conditions de droit commun au Mali",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 95624
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "06",
+    "quote_checks": [
+      {
+        "quote": "La liste des États non coopératifs est établie périodiquement par Décision du Ministre chargé des finances.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 96187
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "07",
+    "quote_checks": [
+      {
+        "quote": "Si la liste prévue ci-dessus n’est pas établie pour une période donnée, l’administration se réfère sur celle de l’une des organisations visées ci-dessus.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 96490
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "08",
+    "quote_checks": [
+      {
+        "quote": "Les personnes morales établies au Mali réalisant un chiffre d’affaires supérieur ou égal à trois milliards et placées sous la dépendance ou possédant le contrôle d’entreprises situées hors du Mali au sens de l’article 81 du CGI",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 477358
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "09",
+    "quote_checks": [
+      {
+        "quote": "Le non dépôt de cette documentation dans les délais entraîne l’application d’une amende égale à 1 % du chiffre d’affaires déclaré de l’entreprise par mois de retard avec un maximum de 5 %.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 478185
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "10",
+    "quote_checks": [
+      {
+        "quote": "correspondre à une charge effective et être appuyée de justifications suffisantes",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 58381
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "11",
+    "quote_checks": [
+      {
+        "quote": "à la condition que le débiteur apporte la preuve que les dépenses correspondent à des opérations réelles et qu’elles ne présentent pas un caractère anormal ou exagéré",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 59906
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "12",
+    "quote_checks": [
+      {
+        "quote": "leurs montants ne présentent pas un caractère exagéré ou anormal au regard des règles et principes régissant les prix de transfert.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 71817
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "13",
+    "quote_checks": [
+      {
+        "quote": "ceux pratiqués en pleine concurrence entre deux entités juridiquement distinctes et sans lien de dépendance de droit ou de fait",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 72410
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "14",
+    "quote_checks": [
+      {
+        "quote": "une description générale des fonctions exercées et des risques assumés par les entreprises associées dès lors qu’ils affectent l’entreprise",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 478877
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "15",
+    "quote_checks": [
+      {
+        "quote": "une description des opérations réalisées avec d’autres entreprises associées, incluant la nature et le montant des flux, y compris les redevances",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 479418
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "16",
+    "quote_checks": [
+      {
+        "quote": "une liste des accords de répartition de coûts ainsi qu’une copie des accords préalables en matière de prix de transfert et des rescrits relatifs à la détermination des prix de transfert",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 479571
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "17",
+    "quote_checks": [
+      {
+        "quote": "une présentation de la ou des méthodes de détermination des prix de transfert dans le respect du principe de pleine concurrence, comportant une analyse des fonctions exercées, des actifs utilisés et des risques assumés",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 479805
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "18",
+    "quote_checks": [
+      {
+        "quote": "lorsque la méthode choisie le requiert, une analyse des éléments de comparaison considérés comme pertinents par l’entreprise.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 480128
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "19",
+    "quote_checks": [
+      {
+        "quote": "Cette documentation ne se substitue pas aux justificatifs afférents à chaque transaction, ni la déclaration objet de l’article 57.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 477953
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "20",
+    "quote_checks": [
+      {
+        "quote": "y compris le bilan et le compte de résultat établis dans les conditions prévues par l’article 60 du présent Livre.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 480701
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "21",
+    "quote_checks": [
+      {
+        "quote": "transmettre dans les délais prévus à l’article 57",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 477630
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "22",
+    "quote_checks": [
+      {
+        "quote": "Les contribuables utilisent le modèle d’imprimé mis à leur disposition par l’Administration fiscale.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 476861
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "23",
+    "quote_checks": [
+      {
+        "quote": "en ce qui concerne l’exercice 2016, d’un délai d’un an à compter de la date de promulgation de la présente loi",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 480948
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "24",
+    "quote_checks": [
+      {
+        "quote": "Les demandes visées au premier alinéa doivent être précises et indiquer explicitement, par nature d’activité ou par produit, le pays ou le territoire concerné",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 482243
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "25",
+    "quote_checks": [
+      {
+        "quote": "Ce délai, qui ne peut être inférieur à un mois, peut être prorogé sur demande motivée sans pouvoir excéder au total une durée de trois mois.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 482594
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "26",
+    "quote_checks": [
+      {
+        "quote": "une mise en demeure d’avoir à compléter sa réponse dans un délai d’un mois",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 482818
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "27",
+    "quote_checks": [
+      {
+        "quote": "les bases d’imposition concernées par la demande sont évaluées par l’administration à partir des éléments dont elle dispose.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 483307
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "28",
+    "quote_checks": [
+      {
+        "quote": "les produits imposables sont déterminés par comparaison avec ceux des entreprises similaires exploitées normalement.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 483513
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-transfer-pricing",
+    "id": "29",
+    "quote_checks": [
+      {
+        "quote": "Les contribuables peuvent demander à l’administration fiscale la conclusion d’un accord préalable sur les méthodes de détermination des prix de transfert.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 485152
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "01",
+    "quote_checks": [
+      {
+        "quote": "Sous réserve des dispositions des conventions internationales dûment ratifiées par le Mali et relatives aux non doubles impositions, l’impôt est dû à raison des bénéfices réalisés au Mali",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 51463
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "02",
+    "quote_checks": [
+      {
+        "quote": "une entreprise qui exerce une activité au Mali ou y rend des services utilisés ou exploités sans y posséder un établissement fixe est passible de l’impôt au Mali.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 489321
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "03",
+    "quote_checks": [
+      {
+        "quote": "sous réserve de l’application de conventions fiscales de non double imposition, assujettis à une retenue à la source les sommes ou revenus versés en rémunération d’une activité économique exercée par les personnes n’ayant pas au Mali d’installation professionnelle permanente.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 108723
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "04",
+    "quote_checks": [
+      {
+        "quote": "toutes sommes payées en rémunération des prestations de toute nature fournies ou utilisées au Mali",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 109790
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "05",
+    "quote_checks": [
+      {
+        "quote": "les marchés ou contrats publics quel qu’en soit l’objet.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 109991
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "06",
+    "quote_checks": [
+      {
+        "quote": "que le bénéficiaire des droits ou produits soit une personne physique ou une société, quelle que soit dans ce cas la forme de la société.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 110102
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "07",
+    "quote_checks": [
+      {
+        "quote": "prestataire de services non titulaire d’un numéro d’identification fiscal, en contrepartie d’une prestation de services et dont l’imposition est prévue à l’article 43 du Code Général des Impôts",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 692323
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "08",
+    "quote_checks": [
+      {
+        "quote": "Pour les prestations de services, le montant des sommes imposables est déterminé en appliquant aux encaissements bruts une déduction forfaitaire de 50 % au titre des charges.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 110455
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "09",
+    "quote_checks": [
+      {
+        "quote": "les encaissements bruts sont au préalable diminués des droits et taxes frappant les entrées.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 110738
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "10",
+    "quote_checks": [
+      {
+        "quote": "Pour les marchés, contrats de travaux et/ou de fournitures, le montant des sommes imposables est déterminé en appliquant aux encaissements bruts une déduction forfaitaire de 90 % au titre des charges.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 110831
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "11",
+    "quote_checks": [
+      {
+        "quote": "Le taux de la retenue est fixé à 30 %.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 111052
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "12",
+    "quote_checks": [
+      {
+        "quote": "est indépendante de celle édictée à l’article 116 du Livre de Procédures Fiscales et relative aux taxes sur le chiffre d’affaires.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 111474
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "13",
+    "quote_checks": [
+      {
+        "quote": "est utilisée ou exploitée au Mali, l’imposition est faite au Mali.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 273243
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "14",
+    "quote_checks": [
+      {
+        "quote": "Lorsqu’un assujetti établi au Mali ne peut apporter la preuve que le lieu d’imposition des livraisons de biens ou des prestations de services qu’il a effectuées est situé en dehors du Mali",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 273839
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "15",
+    "quote_checks": [
+      {
+        "quote": "À défaut, cette taxe et le cas échéant, les pénalités qui s’y rapportent, est payée par la personne cliente pour le compte de la personne n’ayant pas d’établissement au Mali.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 274404
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "16",
+    "quote_checks": [
+      {
+        "quote": "la quote-part des frais de siège social incombant aux entreprises établies au Mali ne peut dépasser 20 % des frais généraux desdites entreprises.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 93799
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "17",
+    "quote_checks": [
+      {
+        "quote": "des frais de secrétariat, de la rémunération du personnel employé au siège et des autres frais engagés par la société mère pour les besoins de l’ensemble de ses filiales et/ou établissements stables.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 93976
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "18",
+    "quote_checks": [
+      {
+        "quote": "correspondre à une charge effective et être appuyée de justifications suffisantes",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 58381
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "19",
+    "quote_checks": [
+      {
+        "quote": "elles ne présentent pas un caractère anormal ou exagéré",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 60017
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "20",
+    "quote_checks": [
+      {
+        "quote": "Cette dernière a le droit de restituer à l’opération litigieuse son caractère véritable et de déterminer en conséquence les bases d’imposition.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 780100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "21",
+    "quote_checks": [
+      {
+        "quote": "toutes autres prestations réalisées ou exécutées en dehors du Mali mais utilisées au Mali dans le cadre du marché ou du contrat.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 781141
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "22",
+    "quote_checks": [
+      {
+        "quote": "disposant d’un établissement fiscal stable au Mali et d’un Numéro d’Identification Fiscal délivré au Mali.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 781880
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "23",
+    "quote_checks": [
+      {
+        "quote": "À cette déclaration globale, sera jointe la déclaration intéressant leur activité au Mali.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 477230
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "24",
+    "quote_checks": [
+      {
+        "quote": "doivent annexer à leur déclaration une copie du bilan consolidé ainsi que le relevé détaillé de leurs frais généraux.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 488913
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "25",
+    "quote_checks": [
+      {
+        "quote": "dans les quinze premiers jours du mois suivant ou le cas échéant le premier jour ouvrable suivant cette date lorsque celle-ci tombe sur un jour non ouvrable.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 693881
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "26",
+    "quote_checks": [
+      {
+        "quote": "une amende égale au montant des retenues non effectuées. Cette amende est due en sus du montant des retenues non effectuées.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 694175
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "27",
+    "quote_checks": [
+      {
+        "quote": "une pénalité égale au double des retenues effectuées mais non déclarées.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 501616
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "ml-cross-border-tax",
+    "id": "28",
+    "quote_checks": [
+      {
+        "quote": "un intérêt de retard dont les modalités de calcul sont les mêmes que celles appliquées en matière de taxes sur le chiffre d’affaires.",
+        "hits": [
+          {
+            "source": "dgi-cgi.txt",
+            "match": true,
+            "normalised_character_offset": 694592
+          }
+        ]
+      }
+    ]
+  }
+]

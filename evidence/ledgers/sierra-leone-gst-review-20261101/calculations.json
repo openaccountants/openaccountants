@@ -1,0 +1,23 @@
+{
+  "method": "Independent arithmetic, not executing writer oa-check expressions",
+  "case1": {
+    "output": 3000.0,
+    "exclusive": 20000.0,
+    "allowed": 1200,
+    "net": 1800,
+    "wrong_net": 1500,
+    "excess_credit": 300,
+    "pass": true
+  },
+  "case2": {
+    "ratio": 0.6,
+    "shared_credit": 600,
+    "direct_taxable": 400,
+    "correct_credit": 1000,
+    "wrong_credit": 900.0,
+    "output": 9000,
+    "net": 8000,
+    "wrong_net": 8100,
+    "pass": true
+  }
+}

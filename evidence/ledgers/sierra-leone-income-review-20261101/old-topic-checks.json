@@ -1,0 +1,80 @@
+{
+  "base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "old_sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+  "topics_checked": 12,
+  "all_accounted_for": true,
+  "topics": [
+    {
+      "id": "I-OLD-01",
+      "exact_old_text": "- **Tax-free band (monthly)** \u2014 First NLe 600 per month taxed at 0% NLe  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+      "destination": "Rates:annualsource+currencyconversion+steady-monthlyallocation",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-02",
+      "exact_old_text": "- **Second band (monthly)** \u2014 Next NLe 600 (NLe 601\u20131,200) taxed at 15% percent  _(Income Tax Act 2000)_",
+      "destination": "Rates:slice600-1200at15",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-03",
+      "exact_old_text": "- **Third band (monthly)** \u2014 Next NLe 600 (NLe 1,201\u20131,800) taxed at 20% percent  _(Income Tax Act 2000)_",
+      "destination": "Rates:slice1200-1800at20",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-04",
+      "exact_old_text": "- **Fourth band (monthly)** \u2014 Next NLe 600 (NLe 1,801\u20132,400) taxed at 25% percent  _(Income Tax Act 2000)_",
+      "destination": "Rates:slice1800-2400at25",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-05",
+      "exact_old_text": "- **Top band (monthly)** \u2014 Income above NLe 2,400 per month taxed at 30% percent  _(Income Tax Act 2000)_",
+      "destination": "Rates:excess2400at30",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-06",
+      "exact_old_text": "- **Annual tax-free threshold** \u2014 First NLe 7,200 per year taxed at 0% ((approx \u2014 confirm)) NLe  _(Income Tax Act 2000)_",
+      "destination": "Rates:annualnil7200converted;currentnesshold",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-07",
+      "exact_old_text": "- **Non-resident employment income** \u2014 Taxed at a flat 25% (withheld at source) percent  _([Income Tax Act 2000](https://gordonassociates-sl.com/withholding-taxes-in-sierra-leone/))_",
+      "destination": "Rates/NR25sourceschedule;finalityconditional",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-08",
+      "exact_old_text": "- **Residence test for individuals** \u2014 An individual is resident if present in Sierra Leone for 183 days or more in the tax year, or is a government official posted abroad ((approx \u2014 confirm))  _(Income Tax Act 2000)_",
+      "destination": "Cross-borderGuideownsactualtests;oldtaxyear183shortcutcorrected",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-09",
+      "exact_old_text": "- **Tax-free allowances cap** \u2014 Allowances exceeding NLe 500 per month are included in taxable income and subject to PAYE NLe  _([Income Tax Act 2000](https://thebettsfirmsl.com/blog/pay-as-you-earn-paye-compliance-management-in-sierra-leone))_",
+      "destination": "Thebase:consolidationamountnotautomaticmonthly500;allocation/currentcaphold",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-10",
+      "exact_old_text": "- **NASSIT relief** \u2014 Employee NASSIT contributions (5%) are deductible before computing PAYE ((approx \u2014 confirm))  _(National Social Security and Insurance Trust Act 2001)_",
+      "destination": "Thebase:actualeligibleemployeecontributionbeforePAYE,notallcash;socialGuideownsrate",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-11",
+      "exact_old_text": "- **PAYE remittance deadline** \u2014 Employer remits PAYE by the 15th of the following month  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+      "destination": "Deadlines:15daywithheld/shouldwithheld;formsnotauthenticated",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    },
+    {
+      "id": "I-OLD-12",
+      "exact_old_text": "- **Individual annual return** \u2014 Self-assessment return due within 120 days of year end (by 30 April) for those with non-PAYE income ((approx \u2014 confirm))  _(Income Tax Act 2000)_",
+      "destination": "Deadlines:97/98exceptionsand2020may120daysdistinguished;olduniversalclaimheld",
+      "verdict": "pass: exact predecessor line verified; destination exists as sourced correction/explicit hold/owning-Guide route"
+    }
+  ]
+}

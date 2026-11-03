@@ -1,0 +1,648 @@
+{
+  "original_ledger_commit": "29c8b477f1d659c0042a6ae9de5b10ef615a98d0",
+  "original_ledger_path": "evidence/ledgers/burundi-capital-20261101/bi-capital-income-tax.json",
+  "original_ledger_blob": "8550c438521375e0e05ee3c5b50f2adebaaff3f5",
+  "original_ledger_sha256": "b166af931354bf7a20e98853d889479f0a189b96f15953a10727b5440cda9dc2",
+  "corrections": [
+    {
+      "id": "C15",
+      "finding": "R4",
+      "before": {
+        "id": "C15",
+        "section": "The base",
+        "claim": "Immovable reference price requires ministerial-order method",
+        "act": "Loi n°1/14 du 24 décembre 2020",
+        "article": "89",
+        "pdf_locator": "PDF31",
+        "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+        "exact_quote": "Le prix de référence des biens immeubles est déterminé selon les modalités prévues dans une ordonnance du Ministre.",
+        "read_date": "2026-11-01",
+        "source_path": "income2020.pdf",
+        "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+        "source_read_scope": "Actual complete PDF pages 1–15,18–19,28–34,40–44 read from cached original with OCR aid. Complete arts.2,6–7,19–29,37–39,88–93 and neighbours; art.98 corporate inclusion; arts.122–129 and final clauses. No claim that all other articles were substantively reviewed.",
+        "limits": "Operative order not recovered; all examples assume lawful price already established. Deed price not certified.",
+        "review_status": "writer evidence; independent review pending"
+      },
+      "after": {
+        "id": "C15",
+        "section": "The base",
+        "claim": "Recovered art.89 chain: 2021 order art. 17points to540/188 (13 March 2000), completed540/577 (31 July 2000); actual2025 order defines reference values, higher contractual market value, input/annex predicates and signature commencement.",
+        "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+        "article": "17",
+        "pdf_locator": "physical32 / printed339",
+        "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+        "exact_quote": "les modalités prévues dans l’ordonnance ministérielle n540/188 du 13 mars 2000",
+        "read_date": "2026-11-01",
+        "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+        "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+        "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+        "limits": "Lawful price remains an explicit case assumption. Continuing2026effect/currentreplacement and actual property/annex/location/construction inputs remain held. No current tariff or recovered2000grid certified.",
+        "review_status": "focused repair candidate; independent closure pending",
+        "repair_finding": "R4",
+        "source_supplement_ids": [
+          "G17",
+          "G26",
+          "V02",
+          "V03a",
+          "V03b",
+          "V04",
+          "V06",
+          "V07"
+        ],
+        "supporting_sources": [
+          {
+            "id": "G17",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "17",
+            "pdf_locator": "physical32 / printed339",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "les modalités prévues dans l’ordonnance ministérielle n540/188 du 13 mars 2000",
+            "claim": "Art.89 valuation chain points to2000order",
+            "maps_to": [
+              "C15",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Full sentence also says complétée par l’ordonnance n°540/577 du31juillet2000. Both instrument dates preserved; no recovered2000grid claimed."
+          },
+          {
+            "id": "G26",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "26 and signature",
+            "pdf_locator": "physical33 / printed340",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "entre en vigueur le jour de sa signature",
+            "claim": "2021ordercommencement",
+            "maps_to": [
+              "C15",
+              "C19",
+              "C35",
+              "C37",
+              "C45",
+              "R2",
+              "R3",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Actual signed date05/03/2021; full articles24–26read. No broader oldGuide repair authorised."
+          },
+          {
+            "id": "V02",
+            "source_id": "V25",
+            "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+            "article": "1–2",
+            "pdf_locator": "physical1–2",
+            "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+            "exact_quote": "la valeur de référence par are ou par mètre carré de cession immobilière.",
+            "claim": "2025instrumentimplements2024/25budget77anddefines reference values",
+            "maps_to": [
+              "C15",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/valuation-order2025.pdf",
+            "source_sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+            "source_read_scope": "Actual signed original PDF pages 1–4 and 11–12 visually read: complete operative arts. 1–7, beginning annex I and annex III, definitions, higher contractual market-value condition, valuation-input clauses, contrary-law repeal and signature-day commencement. Annex pages 5–10 not substantively reviewed. No tariff is certified as current; continuing 2026 effect/current replacement and actual-property application remain held.",
+            "notes": "Actual title/signature27February2025. Filename29102026notanewactdate."
+          },
+          {
+            "id": "V03a",
+            "source_id": "V25",
+            "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+            "article": "3 first paragraph",
+            "pdf_locator": "physical2",
+            "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+            "exact_quote": "la présente ordonnance détermine les valeurs de cession sur base desquelles tous les droits et taxes y relatifs doivent être calculés.",
+            "claim": "Related-duty/tax valuation base",
+            "maps_to": [
+              "C15",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/valuation-order2025.pdf",
+            "source_sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+            "source_read_scope": "Actual signed original PDF pages 1–4 and 11–12 visually read: complete operative arts. 1–7, beginning annex I and annex III, definitions, higher contractual market-value condition, valuation-input clauses, contrary-law repeal and signature-day commencement. Annex pages 5–10 not substantively reviewed. No tariff is certified as current; continuing 2026 effect/current replacement and actual-property application remain held.",
+            "notes": "Full opening cites2024/25budget77asmodified. Continuing2026effect/currentreplacementheld."
+          },
+          {
+            "id": "V03b",
+            "source_id": "V25",
+            "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+            "article": "3 second paragraph",
+            "pdf_locator": "physical2",
+            "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+            "exact_quote": "la base taxable est celle de la valeur marchande indiquée dans le contrat.",
+            "claim": "Higher contractualmarketvalue controls if abovecalculated transfer value",
+            "maps_to": [
+              "C15",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/valuation-order2025.pdf",
+            "source_sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+            "source_read_scope": "Actual signed original PDF pages 1–4 and 11–12 visually read: complete operative arts. 1–7, beginning annex I and annex III, definitions, higher contractual market-value condition, valuation-input clauses, contrary-law repeal and signature-day commencement. Annex pages 5–10 not substantively reviewed. No tariff is certified as current; continuing 2026 effect/current replacement and actual-property application remain held.",
+            "notes": "Full condition and taxauthorityrealamountassessmentrightread; not an unconditional deed-price election."
+          },
+          {
+            "id": "V04",
+            "source_id": "V25",
+            "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+            "article": "4",
+            "pdf_locator": "physical2",
+            "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+            "exact_quote": "Les valeurs de cession des terrains sont établies selon leur emplacement et leur superficie.",
+            "claim": "Location/surface and construction inputs; integral annexes",
+            "maps_to": [
+              "C15",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/valuation-order2025.pdf",
+            "source_sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+            "source_read_scope": "Actual signed original PDF pages 1–4 and 11–12 visually read: complete operative arts. 1–7, beginning annex I and annex III, definitions, higher contractual market-value condition, valuation-input clauses, contrary-law repeal and signature-day commencement. Annex pages 5–10 not substantively reviewed. No tariff is certified as current; continuing 2026 effect/current replacement and actual-property application remain held.",
+            "notes": "Complete following paragraphs read: completed construction surface/material/equipment; unfinishedconstruction/pools/fences/gates surface/material; annexes1–3integral. No actual tariff promoted."
+          },
+          {
+            "id": "V06",
+            "source_id": "V25",
+            "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+            "article": "6",
+            "pdf_locator": "physical12",
+            "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+            "exact_quote": "Toutes les dispositions antérieures contraires à la présente ordonnance sont abrogées.",
+            "claim": "Contrary-provisions repeal only",
+            "maps_to": [
+              "C15",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/valuation-order2025.pdf",
+            "source_sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+            "source_read_scope": "Actual signed original PDF pages 1–4 and 11–12 visually read: complete operative arts. 1–7, beginning annex I and annex III, definitions, higher contractual market-value condition, valuation-input clauses, contrary-law repeal and signature-day commencement. Annex pages 5–10 not substantively reviewed. No tariff is certified as current; continuing 2026 effect/current replacement and actual-property application remain held.",
+            "notes": "No inference all prior valuation provisions repealed."
+          },
+          {
+            "id": "V07",
+            "source_id": "V25",
+            "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+            "article": "7 and signatures",
+            "pdf_locator": "physical12",
+            "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+            "exact_quote": "entre en vigueur le jour de sa signature.",
+            "claim": "Commencement27February2025",
+            "maps_to": [
+              "C15",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/valuation-order2025.pdf",
+            "source_sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+            "source_read_scope": "Actual signed original PDF pages 1–4 and 11–12 visually read: complete operative arts. 1–7, beginning annex I and annex III, definitions, higher contractual market-value condition, valuation-input clauses, contrary-law repeal and signature-day commencement. Annex pages 5–10 not substantively reviewed. No tariff is certified as current; continuing 2026 effect/current replacement and actual-property application remain held.",
+            "notes": "Actual signed date27/02/2025visuallyread. Doesnotcertifycontinuing2026effect."
+          }
+        ],
+        "original_statute_evidence": {
+          "act": "Loi n°1/14 du 24 décembre 2020",
+          "article": "89",
+          "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+          "exact_quote": "Le prix de référence des biens immeubles est déterminé selon les modalités prévues dans une ordonnance du Ministre.",
+          "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+          "pdf_locator": "PDF31"
+        }
+      }
+    },
+    {
+      "id": "C19",
+      "finding": "R3",
+      "before": {
+        "id": "C19",
+        "section": "Rates, bands and thresholds; The base",
+        "claim": "Land-registration duty credit capped at corresponding individual gain tax",
+        "act": "Loi n°1/14 du 24 décembre 2020",
+        "article": "93",
+        "pdf_locator": "PDF31",
+        "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+        "exact_quote": "dans la limite du montant de l’impôt correspondant aux plus-values réalisées.",
+        "read_date": "2026-11-01",
+        "source_path": "income2020.pdf",
+        "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+        "source_read_scope": "Actual complete PDF pages 1–15,18–19,28–34,40–44 read from cached original with OCR aid. Complete arts.2,6–7,19–29,37–39,88–93 and neighbours; art.98 corporate inclusion; arts.122–129 and final clauses. No claim that all other articles were substantively reviewed.",
+        "limits": "Full subject is les droits d’enregistrement en matière foncière prévus par la législation foncière. No extra refund or other-charge credit inferred.",
+        "review_status": "writer evidence; independent review pending"
+      },
+      "after": {
+        "id": "C19",
+        "section": "Rates, bands and thresholds; The base",
+        "claim": "Only seller-paid land-registration duties on an immovable sale qualify, capped at tax corresponding to that gain under IR93.",
+        "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+        "article": "18",
+        "pdf_locator": "physical32 / printed339",
+        "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+        "exact_quote": "seuls les droits d’enregistrement payés par le vendeur sont déductibles de l’impôt sur la plus-value réalisée sur la vente d’immeuble.",
+        "read_date": "2026-11-01",
+        "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+        "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+        "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+        "limits": "Require proof this seller paid the duties on that immovable sale; buyer-paid duties do not qualify. Existing cap/arithmetic retained. No refund or credit for other charges inferred.",
+        "review_status": "focused repair candidate; independent closure pending",
+        "repair_finding": "R3",
+        "source_supplement_ids": [
+          "G18",
+          "G26"
+        ],
+        "supporting_sources": [
+          {
+            "id": "G18",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "18",
+            "pdf_locator": "physical32 / printed339",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "seuls les droits d’enregistrement payés par le vendeur sont déductibles de l’impôt sur la plus-value réalisée sur la vente d’immeuble.",
+            "claim": "Seller-paid duties only for the immovable-sale gain credit",
+            "maps_to": [
+              "C19",
+              "C45",
+              "R3"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "IR93still supplies corresponding-gain tax ceiling; buyer-paid duties do not satisfy the seller-paid condition."
+          },
+          {
+            "id": "G26",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "26 and signature",
+            "pdf_locator": "physical33 / printed340",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "entre en vigueur le jour de sa signature",
+            "claim": "2021ordercommencement",
+            "maps_to": [
+              "C15",
+              "C19",
+              "C35",
+              "C37",
+              "C45",
+              "R2",
+              "R3",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Actual signed date05/03/2021; full articles24–26read. No broader oldGuide repair authorised."
+          }
+        ],
+        "original_statute_evidence": {
+          "act": "Loi n°1/14 du 24 décembre 2020",
+          "article": "93",
+          "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+          "exact_quote": "dans la limite du montant de l’impôt correspondant aux plus-values réalisées.",
+          "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+          "pdf_locator": "PDF31"
+        }
+      }
+    },
+    {
+      "id": "C35",
+      "finding": "R2",
+      "before": {
+        "id": "C35",
+        "section": "Deadlines and filing",
+        "claim": "Nonresident buyer withholding is a separate acquisition-price obligation",
+        "act": "Loi n°1/14 du 24 décembre 2020",
+        "article": "123–124",
+        "pdf_locator": "PDF41",
+        "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+        "exact_quote": "du prix d’acquisition du bien.",
+        "read_date": "2026-11-01",
+        "source_path": "income2020.pdf",
+        "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+        "source_read_scope": "Actual complete PDF pages 1–15,18–19,28–34,40–44 read from cached original with OCR aid. Complete arts.2,6–7,19–29,37–39,88–93 and neighbours; art.98 corporate inclusion; arts.122–129 and final clauses. No claim that all other articles were substantively reviewed.",
+        "limits": "Full art123 asset/payer/seller scope and art124 return/clock read; numerical withholding remains in cross-border Guide. No finality inferred for individual seller.",
+        "review_status": "writer evidence; independent review pending"
+      },
+      "after": {
+        "id": "C35",
+        "section": "Deadlines and filing",
+        "claim": "Separate acquisition-price withholding obligation; corrected IR art. 22 finality applies only to Burundi-source nonresident income not attributable to a Burundi PE and withholdings under art. 122 point 4°, art. 123 and art. 125.",
+        "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+        "article": "3 correction-table art.22 finality reference",
+        "pdf_locator": "physical31 / printed338",
+        "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+        "exact_quote": "122 point 4°, 123 et 125",
+        "read_date": "2026-11-01",
+        "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+        "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+        "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+        "limits": "Corrected first cross-reference is123–125. No finality announced for every122payment, residents or PE income. Annual declaration exemption, forms, reconciliation and creditexecution remain separate. Numerical withholding stays in its existing Guide.",
+        "review_status": "focused repair candidate; independent closure pending",
+        "repair_finding": "R2",
+        "source_supplement_ids": [
+          "G03a",
+          "G03b",
+          "G26"
+        ],
+        "supporting_sources": [
+          {
+            "id": "G03a",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "3 correction-table art.22 first reference",
+            "pdf_locator": "physical31 / printed338",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "123 à 125",
+            "claim": "Art.22 initial cross-reference corrected to arts.123–125",
+            "maps_to": [
+              "C35",
+              "R2"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Exact corrected table cell; old cell is119 à121."
+          },
+          {
+            "id": "G03b",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "3 correction-table art.22 finality reference",
+            "pdf_locator": "physical31 / printed338",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "122 point 4°, 123 et 125",
+            "claim": "Final-withholding references under original art.22 nonresident/Burundi-source/noPE predicates",
+            "maps_to": [
+              "C35",
+              "R2"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Exact corrected table cell. Original art.22 sentence supplies source/nonresident/noPE conditions; no extension to residents/every122payment."
+          },
+          {
+            "id": "G26",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "26 and signature",
+            "pdf_locator": "physical33 / printed340",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "entre en vigueur le jour de sa signature",
+            "claim": "2021ordercommencement",
+            "maps_to": [
+              "C15",
+              "C19",
+              "C35",
+              "C37",
+              "C45",
+              "R2",
+              "R3",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Actual signed date05/03/2021; full articles24–26read. No broader oldGuide repair authorised."
+          }
+        ],
+        "original_statute_evidence": {
+          "act": "Loi n°1/14 du 24 décembre 2020",
+          "article": "123–124",
+          "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+          "exact_quote": "du prix d’acquisition du bien.",
+          "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+          "pdf_locator": "PDF41"
+        }
+      }
+    },
+    {
+      "id": "C37",
+      "finding": "R2",
+      "before": {
+        "id": "C37",
+        "section": "Deadlines and filing",
+        "claim": "Annual exemption lists employment and119/120 only",
+        "act": "Loi n°1/14 du 24 décembre 2020",
+        "article": "25–26",
+        "pdf_locator": "PDF14",
+        "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+        "exact_quote": "des revenus qui ont fait l’objet de la retenue à la source visée aux articles 119 et 120 ;",
+        "read_date": "2026-11-01",
+        "source_path": "income2020.pdf",
+        "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+        "source_read_scope": "Actual complete PDF pages 1–15,18–19,28–34,40–44 read from cached original with OCR aid. Complete arts.2,6–7,19–29,37–39,88–93 and neighbours; art.98 corporate inclusion; arts.122–129 and final clauses. No claim that all other articles were substantively reviewed.",
+        "limits": "Complete list and optional filing art26 read. Art122 not in that list; no universal final-withholding exemption inferred.",
+        "review_status": "writer evidence; independent review pending"
+      },
+      "after": {
+        "id": "C37",
+        "section": "Deadlines and filing",
+        "claim": "Corrected art. 25 point 2 annual exemption refers to118 and 119, alongside specified employment or both; tax finality is a separate test.",
+        "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+        "article": "3 correction-table art.25 point2°",
+        "pdf_locator": "physical31 / printed338",
+        "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+        "exact_quote": "118 et 119",
+        "read_date": "2026-11-01",
+        "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+        "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+        "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+        "limits": "Not a blanket122capitalwithholding annual exemption. LaterJanuary146andJuly154art.28lists remain their actual re-enacted text, not overwritten by the earlier2021art.28correction. Optional filing art26 retained.",
+        "review_status": "focused repair candidate; independent closure pending",
+        "repair_finding": "R2",
+        "source_supplement_ids": [
+          "G03c",
+          "G03d",
+          "G26"
+        ],
+        "supporting_sources": [
+          {
+            "id": "G03c",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "3 correction-table art.25 point2°",
+            "pdf_locator": "physical31 / printed338",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "118 et 119",
+            "claim": "Annual-declaration exemption corrected references",
+            "maps_to": [
+              "C37",
+              "R2"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Exact corrected table cell. Annual exemption remains distinct from tax finality."
+          },
+          {
+            "id": "G03d",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "3 correction-table art.28 points2°/3°",
+            "pdf_locator": "physical31 / printed338",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "120 et 122",
+            "claim": "Historical correction noted without overwriting later2026art.28 lists",
+            "maps_to": [
+              "C37",
+              "R2"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Companion corrected cell130; January budget146 and July154 actual enactments re-read separately and preserved. No2026credit figure changed."
+          },
+          {
+            "id": "G26",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "26 and signature",
+            "pdf_locator": "physical33 / printed340",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "entre en vigueur le jour de sa signature",
+            "claim": "2021ordercommencement",
+            "maps_to": [
+              "C15",
+              "C19",
+              "C35",
+              "C37",
+              "C45",
+              "R2",
+              "R3",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Actual signed date05/03/2021; full articles24–26read. No broader oldGuide repair authorised."
+          }
+        ],
+        "original_statute_evidence": {
+          "act": "Loi n°1/14 du 24 décembre 2020",
+          "article": "25–26",
+          "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+          "exact_quote": "des revenus qui ont fait l’objet de la retenue à la source visée aux articles 119 et 120 ;",
+          "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+          "pdf_locator": "PDF14"
+        }
+      }
+    },
+    {
+      "id": "C45",
+      "finding": "R3/R4",
+      "before": {
+        "id": "C45",
+        "section": "Two worked examples that recompute",
+        "claim": "Case1private property8years, established100mprice,15%coefficient,2250000tax; duty1m/3m balances1250000/0",
+        "act": "Loi n°1/14 du 24 décembre 2020",
+        "article": "23,89,93",
+        "pdf_locator": "PDF13,31",
+        "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+        "exact_quote": "la plus-value de cession est égale au prix de cession multiplié par les coefficients ci-après :",
+        "read_date": "2026-11-01",
+        "source_path": "income2020.pdf",
+        "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+        "source_read_scope": "Actual complete PDF pages 1–15,18–19,28–34,40–44 read from cached original with OCR aid. Complete arts.2,6–7,19–29,37–39,88–93 and neighbours; art.98 corporate inclusion; arts.122–129 and final clauses. No claim that all other articles were substantively reviewed.",
+        "limits": "Invented case facts, not source figures. Lawful price/eligible duties assumed, missing order not resolved. Independent recomputation pending.",
+        "review_status": "writer evidence; independent review pending"
+      },
+      "after": {
+        "id": "C45",
+        "section": "Two worked examples that recompute",
+        "claim": "Case 1: eight-year private immovable, lawful BIF 100 million price, gain BIF 15 million, tax BIF 2,250,000; compare seller-paid duties BIF 1 million / BIF 3 million and balances BIF 1,250,000 / zero.",
+        "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+        "article": "18",
+        "pdf_locator": "physical32 / printed339",
+        "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+        "exact_quote": "seuls les droits d’enregistrement payés par le vendeur sont déductibles de l’impôt sur la plus-value réalisée sur la vente d’immeuble.",
+        "read_date": "2026-11-01",
+        "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+        "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+        "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+        "limits": "Invented facts; duties expressly paid by that seller on same immovable sale. Buyer-paid duties excluded. Existing numbers/arithmetic unchanged; only inputnames identify seller payment. Continuing2026valuationeffect and actual-propertyvaluation remain held.",
+        "review_status": "focused repair candidate; independent closure pending",
+        "repair_finding": "R3/R4",
+        "source_supplement_ids": [
+          "G18",
+          "G26"
+        ],
+        "supporting_sources": [
+          {
+            "id": "G18",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "18",
+            "pdf_locator": "physical32 / printed339",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "seuls les droits d’enregistrement payés par le vendeur sont déductibles de l’impôt sur la plus-value réalisée sur la vente d’immeuble.",
+            "claim": "Seller-paid duties only for the immovable-sale gain credit",
+            "maps_to": [
+              "C19",
+              "C45",
+              "R3"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "IR93still supplies corresponding-gain tax ceiling; buyer-paid duties do not satisfy the seller-paid condition."
+          },
+          {
+            "id": "G26",
+            "source_id": "G21",
+            "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+            "article": "26 and signature",
+            "pdf_locator": "physical33 / printed340",
+            "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+            "exact_quote": "entre en vigueur le jour de sa signature",
+            "claim": "2021ordercommencement",
+            "maps_to": [
+              "C15",
+              "C19",
+              "C35",
+              "C37",
+              "C45",
+              "R2",
+              "R3",
+              "R4"
+            ],
+            "read_date": "2026-11-01",
+            "source_path": "reviewer-capital-20261101/gazette202103.pdf",
+            "source_sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+            "source_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed.",
+            "notes": "Actual signed date05/03/2021; full articles24–26read. No broader oldGuide repair authorised."
+          }
+        ],
+        "original_statute_evidence": {
+          "act": "Loi n°1/14 du 24 décembre 2020",
+          "article": "23,89,93",
+          "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+          "exact_quote": "la plus-value de cession est égale au prix de cession multiplié par les coefficients ci-après :",
+          "source_sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+          "pdf_locator": "PDF13,31"
+        }
+      }
+    }
+  ],
+  "unaffected_rows_byte_equal_as_objects": 42,
+  "new_rule_rows_appended": 0,
+  "supplement_is_source_evidence_not_new_scope": true
+}

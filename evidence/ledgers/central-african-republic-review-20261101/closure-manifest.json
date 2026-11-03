@@ -1,0 +1,29 @@
+{
+  "reviewed_on": "2026-11-01",
+  "decision": "accepted_exact_corrected_content_with_partial_scope_and_existing_holds",
+  "prior_candidate": "2460f6898fd1eb9bc7ddbf211377c617cc7ce7e9",
+  "original_receipts_preserved": true,
+  "original_review_manifest_sha256": "890d94dfb3756fc4a0ab25c2a7b0e1c36f3fa11275e718b87ba3ddf654e53f83",
+  "files": [
+    {
+      "file": "CLOSURE.md",
+      "sha256": "365b5414bb8b3506ad42ccf5c778735c8806d3995788100796906edd77c6cdc5",
+      "bytes": 5086
+    },
+    {
+      "file": "closure-invariants.json",
+      "sha256": "abe56d97b563d19e111038a9fbd8e4a9f1363df8cc2d2a1dd8c4431a08738f81",
+      "bytes": 8261
+    },
+    {
+      "file": "closure-lf2024-p35.png",
+      "sha256": "0e7128ede2cc3237d324973387ddc84c49b51434855e1b314cfc97054cb50b1f",
+      "bytes": 2291088
+    },
+    {
+      "file": "closure-validation.json",
+      "sha256": "b9ce3ed458b2be42e0c223b9c22427ccc2fd2d4f4bf79655b7d9ad0272b0116b",
+      "bytes": 7719
+    }
+  ]
+}

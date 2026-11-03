@@ -1,0 +1,92 @@
+{
+  "reviewed_head": "d9e75601a6a5e157459baaf7328d0dd709a62a5e",
+  "content_commit": "7f3f2daf0ddb35c526ff264e63dfd88254a98371",
+  "prior_accepted_head": "eab4e4b027afb4425aadfb2a74b6e6b18b23e36c",
+  "candidate_files": [
+    {
+      "path": "skills/benin/bj-property-gains-tax.md",
+      "expected_sha256": "830ea66a059b1a39e1fb710aaab9666a7544df03bded864338a196caeb1c0bcf",
+      "actual_sha256": "830ea66a059b1a39e1fb710aaab9666a7544df03bded864338a196caeb1c0bcf",
+      "pass": true
+    },
+    {
+      "path": "skills/benin/README.md",
+      "expected_sha256": "3e2ec478b667203c9d8ad3aebc4771878b5b33c05089586b08c1e2a35a88a719",
+      "actual_sha256": "3e2ec478b667203c9d8ad3aebc4771878b5b33c05089586b08c1e2a35a88a719",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.json",
+      "expected_sha256": "136d33e2446d5c9bbb25488dacf3b23b21250f04bf6b2e7e607a33791e760033",
+      "actual_sha256": "136d33e2446d5c9bbb25488dacf3b23b21250f04bf6b2e7e607a33791e760033",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.md",
+      "expected_sha256": "ae1bab5afcd300a5fe217816a1d28de27b36419a756d9dd4a1a79904bab2863c",
+      "actual_sha256": "ae1bab5afcd300a5fe217816a1d28de27b36419a756d9dd4a1a79904bab2863c",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/initial-shape-failure.json",
+      "expected_sha256": "772e404f3f6c9806127abf878fb2fdac7a60ab4260ee10e86837a50bc308078d",
+      "actual_sha256": "772e404f3f6c9806127abf878fb2fdac7a60ab4260ee10e86837a50bc308078d",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/old-topics.json",
+      "expected_sha256": "29bc213747b61322832aa73d92afdb41659811e15c0a226ff966e9284c0ddda9",
+      "actual_sha256": "29bc213747b61322832aa73d92afdb41659811e15c0a226ff966e9284c0ddda9",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/old-topics.md",
+      "expected_sha256": "c599231e3f62bf8fd86a62f43a5a5dadbb74ae770324bb7726942d6cdd1de79f",
+      "actual_sha256": "c599231e3f62bf8fd86a62f43a5a5dadbb74ae770324bb7726942d6cdd1de79f",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/preservation-baseline.json",
+      "expected_sha256": "56c2ffdc03e45ece8183941a059aa873b09766d280f9a49576c993078bd5603b",
+      "actual_sha256": "56c2ffdc03e45ece8183941a059aa873b09766d280f9a49576c993078bd5603b",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/source-identities.json",
+      "expected_sha256": "10db37cec26ccf2cab637e968024aea94d8a7d231d19db839493ce42d3974f95",
+      "actual_sha256": "10db37cec26ccf2cab637e968024aea94d8a7d231d19db839493ce42d3974f95",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/visual-read-manifest.json",
+      "expected_sha256": "446b8083cd2f05b8882b03869dbb61aea06a6d8e72480ccf85af772a15676109",
+      "actual_sha256": "446b8083cd2f05b8882b03869dbb61aea06a6d8e72480ccf85af772a15676109",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/writer-preservation.json",
+      "expected_sha256": "79a226991b0ffbad7bb34166fb32d9817e4cd664840d8472670e174ba5c2fbb6",
+      "actual_sha256": "79a226991b0ffbad7bb34166fb32d9817e4cd664840d8472670e174ba5c2fbb6",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/writer-quote-checks.json",
+      "expected_sha256": "a0c19f84a3527d5a9d669be15b7a7b8bb06339082620ad3d3ba16c31116427f4",
+      "actual_sha256": "a0c19f84a3527d5a9d669be15b7a7b8bb06339082620ad3d3ba16c31116427f4",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/writer-record.md",
+      "expected_sha256": "2151d28d86c72924b9075ec8fe27a4fa661a9a26c3fcd20483f972b03aa2bb0e",
+      "actual_sha256": "2151d28d86c72924b9075ec8fe27a4fa661a9a26c3fcd20483f972b03aa2bb0e",
+      "pass": true
+    },
+    {
+      "path": "evidence/ledgers/benin-tpvi-20261101/writer-working-checks.json",
+      "expected_sha256": "f5f3ad6cb3a5ac6ba15381921b7738763a0ba7dd44a8f922424ed68128d06eef",
+      "actual_sha256": "f5f3ad6cb3a5ac6ba15381921b7738763a0ba7dd44a8f922424ed68128d06eef",
+      "pass": true
+    }
+  ],
+  "no_remote_publication_claim": true
+}

@@ -1,0 +1,7 @@
+# Focused closure: Malawi formation and cross-border
+
+M1–M3 are **closed for cited-text fidelity only**, for the exact seven repaired file hashes in `closure.json`. The initial review and all 67 row verdicts remain preserved. The repairs add the foreign-company service-agent exclusion, expose the exact section 124 alternative eligibility gate, and bind the cached registrar resources HTML to its narrow public-link read. No new defect was found in those changes.
+
+The Guide deltas contain only the two literal condition repairs. The other 65 source rows and original nine statutory manifest entries are unchanged. All four example blocks are byte-identical and retain the independently recomputed results. All six other Guides and 28 earlier evidence files remain exact; existing formation platform fields/full CTA and new cross-border metadata boundaries are preserved. F4, company/tax commencement, complete amendment-chain, treaty, registry and live-use holds remain controlling. This is neither current-law nor live-use/publication-currentness/accountant acceptance.
+
+The parent may reconcile factual review-status wording in README, writer record, human ledger headers and Guide closing review sentences without another source review, provided a receipt preserves literal before/after text and hashes. That covers only these two drafts' conditional cited-text acceptance and must not change rules, source rows, examples, trust metadata, F4, any live-use hold or coverage declarations. The initial review remains historical evidence, not overwritten acceptance.

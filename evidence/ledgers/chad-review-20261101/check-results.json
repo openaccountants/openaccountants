@@ -1,0 +1,169 @@
+{
+  "candidate_commit": "0a85c3bd65f4dc30edf9319cf52d04c395a1d305",
+  "reviewed_utc": "2026-11-01T09:26:26.238872+00:00",
+  "origin_main_at_review": "9c691b5e99b7ef43758541f9488c99c7953e3a60",
+  "candidate_files": {
+    "skills/chad/td-import-exemption-eligibility.md": {
+      "sha256": "18685bed271937b94f6997105b638530091c992ab0c04bde2c0d21c67a38ba01",
+      "matches_frozen_commit": true,
+      "matches_draft_manifest": true
+    },
+    "skills/chad/README.md": {
+      "sha256": "cb285ec4217e2d05f23029655f426d0f12babbdb3c43bbc4bc72d1c78d9469a8",
+      "matches_frozen_commit": true,
+      "matches_draft_manifest": true
+    },
+    "evidence/ledgers/td-import-exemption-eligibility.md": {
+      "sha256": "473732a2a6fe17d17e2e3f6d825b4489b62513f58401660e6f466ffc5b0d93b5",
+      "matches_frozen_commit": true,
+      "matches_draft_manifest": true
+    },
+    "evidence/ledgers/chad-old-topics.md": {
+      "sha256": "8936774361f3092a7301d914396556e953aec6e27abc6b0ac102aee4945f8cf2",
+      "matches_frozen_commit": true,
+      "matches_draft_manifest": true
+    },
+    "evidence/ledgers/chad-draft-20261101/candidate-manifest.json": {
+      "sha256": "18ec844606393c5c37f937a0367b11bcd32158aa8374e03d76ee606d13b9929f",
+      "matches_frozen_commit": true,
+      "matches_draft_manifest": null
+    },
+    "evidence/ledgers/chad-draft-20261101/source-record.json": {
+      "sha256": "bdfb5ec7eda6f99d2e4ece8d67dc084c8bc45d252fbfc6fce6ecc363b34dd34e",
+      "matches_frozen_commit": true,
+      "matches_draft_manifest": null
+    }
+  },
+  "legacy_files": {
+    "td-company-formation.md": {
+      "sha256": "d848cc81cd32e0db312720124b51a8dd909a9c18ffb3569bb2d7b4dc9b39d713",
+      "matches_capture": true,
+      "matches_frozen_parent": true,
+      "matches_fetched_origin_main": true,
+      "topics": 14,
+      "missing_topics": []
+    },
+    "td-corporate-income-tax.md": {
+      "sha256": "563eed97ec6923d94f756992f2a2a0fe2952680d112879f4bdd9766b4c248825",
+      "matches_capture": true,
+      "matches_frozen_parent": true,
+      "matches_fetched_origin_main": true,
+      "topics": 17,
+      "missing_topics": []
+    },
+    "td-income-tax.md": {
+      "sha256": "afeb8d9a2fa372788d0ab72d52e9dc4eec301e1b9f6926a22289d1ccaa5979e5",
+      "matches_capture": true,
+      "matches_frozen_parent": true,
+      "matches_fetched_origin_main": true,
+      "topics": 16,
+      "missing_topics": []
+    },
+    "td-payroll-social.md": {
+      "sha256": "28f5a767820194e5a203489b5dd7f3c07b91d65358cbfcdc688154e0e0b52787",
+      "matches_capture": true,
+      "matches_frozen_parent": true,
+      "matches_fetched_origin_main": true,
+      "topics": 11,
+      "missing_topics": []
+    },
+    "td-tax-overview.md": {
+      "sha256": "f608ec557c514d9c69cf695ebac3bd29ae694e9981ac1addefddf69f4fd67f08",
+      "matches_capture": true,
+      "matches_frozen_parent": true,
+      "matches_fetched_origin_main": true,
+      "topics": 12,
+      "missing_topics": []
+    },
+    "td-vat-gst.md": {
+      "sha256": "93bd9d26f0639167651c7f9aea090133cffb5c8a416ce30684aa565dd9bfed13",
+      "matches_capture": true,
+      "matches_frozen_parent": true,
+      "matches_fetched_origin_main": true,
+      "topics": 12,
+      "missing_topics": []
+    }
+  },
+  "topic_total": 82,
+  "source": {
+    "url": "https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf",
+    "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/chad-pack-2026-11-01/sources/arrete-135-review-20261101.pdf",
+    "bytes": 668632,
+    "sha256": "f92a1e4568b8ac1fead585400209de4ec327a18bd5a9728e1687f59c05758f5a",
+    "matches_writer_capture": true
+  },
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "-sb"
+      ],
+      "returncode": 0,
+      "stdout": "## codex/chad-tax-2026...origin/main [ahead 1, behind 16]\n?? evidence/ledgers/chad-review-20261101/\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--name-status",
+        "origin/main...HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "A\tevidence/ledgers/chad-draft-20261101/candidate-manifest.json\nA\tevidence/ledgers/chad-draft-20261101/source-record.json\nA\tevidence/ledgers/chad-old-topics.md\nA\tevidence/ledgers/td-import-exemption-eligibility.md\nM\tskills/chad/README.md\nA\tskills/chad/td-import-exemption-eligibility.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "pdfinfo",
+        "/Users/michaelcutajar/Documents/ChatGPT/OA/output/chad-pack-2026-11-01/repository/../sources/arrete-135-review-20261101.pdf"
+      ],
+      "returncode": 0,
+      "stdout": "Creator:         Canon \nProducer:         \nCreationDate:    Wed Sep  9 17:48:52 2026 CEST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       595.08 x 842.76 pts (A4)\nPage rot:        0\nFile size:       668632 bytes\nOptimized:       no\nPDF version:     1.3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/chad/td-import-exemption-eligibility.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/chad/td-import-exemption-eligibility.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/chad/td-import-exemption-eligibility.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 2 changed guide file(s)\nchecked 1 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    }
+  ],
+  "additional_sources": [
+    {
+      "url": "https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/chad-pack-2026-11-01/sources/finance-law-review-20261101.pdf",
+      "bytes": 15295926,
+      "sha256": "7bc46241a7c7586d9eece4fb5c95a6587ba637732480b7b4c8cfbf31112d7fd2",
+      "matches_writer_capture": true,
+      "read_scope": "PDF page78 visually, arts64-66 and art65 table. No whole-law review claimed."
+    }
+  ]
+}

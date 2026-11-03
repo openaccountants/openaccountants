@@ -1,0 +1,247 @@
+{
+  "candidate": "827d6eeb4e35c8bb40a3b123077aecf6d457c04e",
+  "sources": [
+    {
+      "source": "tax-principal",
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+      "pdf_sha256": "381000c90309e1685cbb6f9e5ee338e14307978e56cf9b50faae2971c45f60e2",
+      "bytes": 822241,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Taxation Act 11; pages 19",
+        "Taxation Act 123(1)\u2013(3); pages 80\u201381",
+        "Taxation Act 123(3); pages 81",
+        "Taxation Act 124; pages 81",
+        "Taxation Act 27(1)(a); pages 25",
+        "Taxation Act 27(1)(b)\u2013(c); pages 25\u201326",
+        "Taxation Act 27(1)(d); pages 26",
+        "Taxation Act 27(4); pages 26",
+        "Taxation Act 27(5); pages 26",
+        "Taxation Act 27(6)\u2013(7); pages 26",
+        "Taxation Act 2; pages 14\u201315",
+        "Taxation Act 76A(1); pages 54",
+        "Taxation Act 76A(2); pages 54",
+        "Taxation Act 76A(3); pages 54"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "misc2021",
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content",
+      "pdf_sha256": "e6d68ef885810cebf943addcb0eff9147f88820c80f4e7df324423cbaec47002",
+      "bytes": 1655253,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Act 15/2021 s 1 and Schedule; pages 1,2,6"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "tax2023",
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/72477a6a-7348-4dd8-8a05-a7ea265a5e00/content",
+      "pdf_sha256": "05e5a8ca32bf219b40657f84dddd861828608a710e0967e31ea1dbe6b4ea6e0a",
+      "bytes": 56702,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Act 17/2023 s 5; pages 4"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "tax2024",
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/73f74c7c-868f-4521-9046-17cc5c13ced2/content",
+      "pdf_sha256": "116a8df31a5ecef5f39762ca51ebf2df41db90df8257da8fbf126a42e6cff3bb",
+      "bytes": 898091,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Act 12/2024 ss 1,4; pages 1\u20132"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "tax-may2025",
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content",
+      "pdf_sha256": "7d310218de44911d3a7cdbe610769c37fc2a50339b1bf3d8eb38c33d981d489f",
+      "bytes": 87202,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Act 14/2025 s 3; pages 1\u20132"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "tax-dec2025",
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content",
+      "pdf_sha256": "7b88a2aedc98847d243abfcd651869b5ff106df71e06f9cf5f0a9542a306fc46",
+      "bytes": 164670,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Act 36/2025 ss 3\u20136; pages 3\u20135"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "taa-2021",
+      "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content",
+      "pdf_sha256": "7846ce2565e29fd82949347074f7a49f0ce2dcc73eb4fbdc16a791db26dca29b",
+      "bytes": 396815,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "TAA 129(1); pages 80",
+        "TAA 21\u201323; pages 20\u201321",
+        "TAA 28(2); pages 23\u201324",
+        "TAA 4(1)\u2013(2); pages 11",
+        "TAA 4(6)\u2013(7); pages 12",
+        "TAA 73(1)\u2013(6); pages 52"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "companies2013",
+      "url": "https://www.icam.mw/wp-content/uploads/2019/08/Companies-Act-No-15-of-2013-150dpi.pdf",
+      "pdf_sha256": "c3d13b97eb8f48db6d8f49b4a5345935fa298e06ed5ae0c5931b378504fa8aee",
+      "bytes": 5990989,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Companies Act 15/2013 s 1; pages 16",
+        "Companies Act 162; pages 94",
+        "Companies Act 164\u2013166; pages 95",
+        "Companies Act 2(5); pages 24\u201325",
+        "Companies Act 23, 63\u201364; pages 33\u201334,51",
+        "Companies Act 245; pages 139",
+        "Companies Act 246\u2013249; pages 139\u2013140",
+        "Companies Act 248; pages 140",
+        "Companies Act 24; pages 34",
+        "Companies Act 251; pages 140\u2013141",
+        "Companies Act 253; pages 142",
+        "Companies Act 255; pages 142",
+        "Companies Act 256; pages 143",
+        "Companies Act 25; pages 34",
+        "Companies Act 26; pages 34",
+        "Companies Act 28(1)(a)\u2013(c)(ii); pages 34",
+        "Companies Act 28(1)(c)(iii)\u2013(vii); pages 35",
+        "Companies Act 28(2)\u2013(4); pages 35\u201336",
+        "Companies Act 28(3); pages 36",
+        "Companies Act 29; pages 36",
+        "Companies Act 2; pages 19",
+        "Companies Act 30; pages 36",
+        "Companies Act 31\u201332; pages 36\u201337",
+        "Companies Act 33\u201335; pages 37\u201338",
+        "Companies Act 35(2); pages 38",
+        "Companies Act 357\u2013358; pages 204\u2013205",
+        "Companies Act 360; pages 205\u2013206",
+        "Companies Act 361(1); pages 206",
+        "Companies Act 362,365\u2013366; pages 207\u2013208",
+        "Companies Act 45\u201350; pages 41\u201343",
+        "Companies Act 5,17; pages 26,32",
+        "Companies Act 55; pages 45",
+        "Companies Act 6(8); pages 27",
+        "Companies Act 65,144\u2013145; pages 51,85\u201386",
+        "Companies Act 66,244; pages 51,138",
+        "Companies Act 68,223; pages 52,130",
+        "Companies Act 69; pages 52",
+        "Companies Act 72; pages 53",
+        "Companies Act 86,137\u2013138; pages 58,82",
+        "Companies Act 87(1)\u2013(4); pages 58"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "taxation-act3-2026-media",
+      "url": "https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf",
+      "pdf_sha256": "ebfda9d7b0d2731a0a83f7c5e4683a2b677cdeb348c313f7f8d208661758e680",
+      "bytes": 2617646,
+      "source_read_on": "2026-11-01",
+      "scope": [
+        "Act 3/2026 ss 11\u201313; pages 1\u20136"
+      ],
+      "authentication": "Existing cached original statutory payload inspected; no new network download claimed."
+    },
+    {
+      "source": "registry-resources",
+      "url": "https://registrargeneral.gov.mw/resources",
+      "sha256": "27bb8849621d41edf4f3da3f8a8be1226a7a63e53102f0f3f928ddc741bcbff0",
+      "bytes": 183983,
+      "source_read_on": "2026-11-01",
+      "scope": "Cached resource titles and MBRS public entry links only; no actual current authenticated forms or fees. Missing from writer manifest: finding M3."
+    }
+  ],
+  "companies_actual_pages_read": [
+    16,
+    19,
+    24,
+    25,
+    26,
+    27,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    41,
+    42,
+    43,
+    45,
+    51,
+    52,
+    53,
+    58,
+    82,
+    83,
+    85,
+    86,
+    94,
+    95,
+    130,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "visual_pages": {
+    "companies2013": [
+      52,
+      58,
+      94,
+      138,
+      205,
+      206
+    ],
+    "tax2024": [
+      2
+    ]
+  },
+  "tax_principal_pages_read": [
+    14,
+    15,
+    19,
+    20,
+    25,
+    26,
+    54,
+    55,
+    80,
+    81
+  ],
+  "taa_pages_read": [
+    11,
+    12,
+    20,
+    21,
+    23,
+    24,
+    52,
+    80
+  ],
+  "act3": "All six cached OCR pages read; prior independent actual download/render receipts preserved. This review does not repeat or expand operative-law acceptance.",
+  "limitations": "No complete company amendment/appointed-commencement chain or treaty network was researched. F4 stays open."
+}

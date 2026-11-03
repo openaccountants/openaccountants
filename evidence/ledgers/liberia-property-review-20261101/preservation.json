@@ -1,0 +1,268 @@
+{
+  "prior": "9694dbd2d4c5d4254faab1ac7a2937a9ebe0421d",
+  "checks": [
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/example-checks.txt",
+      "sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-company-formation.md",
+      "sha256": "8c333b8eb8e038676078998cb3bec9dec1fc4c49d8518159e945cf62d8314763",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-corporate-income-tax.md",
+      "sha256": "a57d5e57b09476a294f25d5e0da46fcb6533d2a37d7e4adb1b92de14da6d49d7",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-cross-border.md",
+      "sha256": "4849026dcda4291b81fefaede3547bd51645b501dd69630de1aa2f4b10dff335",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-income-tax.md",
+      "sha256": "30be35a657a18f81d81fa96f188a3576932582805bdba7838d7ebe1624154867",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-payroll-social.md",
+      "sha256": "53aaa75e10cd206e9a371763026f466886abf457c16736370d2ced96e90b6aae",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-tax-overview.md",
+      "sha256": "bb7460d0a6062d8438b7b9672ef6b2a7b9737c040a3c2e797e7a89ff8e54055e",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-transfer-pricing.md",
+      "sha256": "2dc65755ef27ecb0bdd4a76280863e582f505f3f2b076de5873a64694540a14c",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/ledgers/lr-vat-gst.md",
+      "sha256": "4cc9f59582f119b8f802bc31bfefd8baa80ce184465eca61c6c798f1fa36520d",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/old-topics.json",
+      "sha256": "6311766e51d8999af96f5b3d5e279a64015ffb918b30dd721b3590401e9fc062",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/old-topics.md",
+      "sha256": "81971637d140d7353146b2f51d64c502e7c85bd310985a4c3c40adce3d0473f2",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/repair-check-outputs.json",
+      "sha256": "10e9f9f633d67da7bb0badcad6d7960e311f73e2b637173db6f5f93752a1b98b",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/rules.json",
+      "sha256": "2478668cac25f51021e825366f64b7df83c9d326be16246c98a9bbe77d96be2e",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/skill-checks.txt",
+      "sha256": "797daac0895b7d9e46d905d8b83c4b00d426dd4a13588058057e990a750a68ff",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/source-manifest.json",
+      "sha256": "c1a3c574bfef611ccddc487a22aeceb25a3cb04636e43b086a4c2d0ded096377",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/writer-corrections.json",
+      "sha256": "ec3346069a845bb38411df02e9977f0c7136df6aa29c30bb65ddff498232b6cf",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-pack/writer-preflight.json",
+      "sha256": "e888cd27ab81252b731fe3718054bd8d783a38a66f9f8fd64755db3688f28b24",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/CLOSURE.md",
+      "sha256": "2bb957c400b50629e96bc9f22f1d219158073fc2c566d8f2f690b6f631dab83b",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/REVIEW.md",
+      "sha256": "380bfb59a9ec66b5007a26ffc50dad93da1102c86cb999366ab0427e9000db94",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/closure-examples.txt",
+      "sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/closure-skill-checks.txt",
+      "sha256": "7b0d285e6d8e996433087758ee9873f02d6bfa3d4afc1e948c0a4b2e0701c1ac",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/closure-snapshot.json",
+      "sha256": "399545bb28436f40705faa5d412abe51a34e0401d8b199bfdc79cf9166a83f40",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/closure-sync-integrity.txt",
+      "sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/closure-validate-guides.txt",
+      "sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/closure-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/examples.txt",
+      "sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/old-topic-audit.json",
+      "sha256": "7e75d3ee64a86e1170309cc66a12099801d43bf4b7f9a62d9118f6befa24b105",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/review-notes.json",
+      "sha256": "b664a7e397a1896b9ffe16e7aeac35f01fd489b431b79bd394ed347c88faae0b",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/row-checks.json",
+      "sha256": "6ee7bed25335c5709626019f9c78a5b6191a13034bed9c01c077dfbcc4476089",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/skill-checks.txt",
+      "sha256": "7b0d285e6d8e996433087758ee9873f02d6bfa3d4afc1e948c0a4b2e0701c1ac",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/snapshot.json",
+      "sha256": "209b955c69aaf92610676bd23752bf0404cf21eb8363f313a4f1445c612eb89d",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/sync-integrity.txt",
+      "sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/validate-guides.txt",
+      "sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "docs/research/2026-11-01-liberia-review/whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-company-formation.md",
+      "sha256": "bfe248af33d6a125714273006031a257319af5810b3cf1027abb44809b0d7b0d",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-corporate-income-tax.md",
+      "sha256": "06d56dc00683959b085e535dffbfbdf88755825643d91c8c139c55c6d6057bea",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-cross-border.md",
+      "sha256": "46ba572456764bf8edee1216232695ed298f996447da7d87e6300c2288cbe362",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-income-tax.md",
+      "sha256": "3b8d6f0e47368e77cb1a6d76c52c528fb55a54319e1f2cc2234932a12b4cd09c",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-payroll-social.md",
+      "sha256": "3fc054d43cab5da4b2464f14327d7114917d6320943aa0f0b8b2684820ebc002",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-tax-overview.md",
+      "sha256": "a0dda02f1e838ff8990f008b68736882d65103bf6b38d5c389eb18731d86c9d7",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-transfer-pricing.md",
+      "sha256": "18e3d9493dfd60ffba0014f5d987ef1c05ae25430fe3759a96af53d391f59576",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    },
+    {
+      "path": "skills/liberia/lr-vat-gst.md",
+      "sha256": "da72d86ce2f5683f73b0eab35935eaed07a725e9a51e3cc702c29db5e5cadb20",
+      "exact_at_prior_freeze_worktree": true,
+      "matches_writer_sha256": true
+    }
+  ],
+  "guide_count": 8,
+  "evidence_count": 34,
+  "all_exact": true,
+  "old_body_replacements": 0,
+  "old_topic_map": {
+    "new_job": true,
+    "old_topics_replaced": 0,
+    "old_source_units": [],
+    "preservation_baseline_commit": "9694dbd2d4c5d4254faab1ac7a2937a9ebe0421d",
+    "explanation": "Additive annual-property job, no replacement. All eight prior Guide bodies and every existing Liberia research/review evidence file remain exact; README only appends route and scoped status."
+  }
+}

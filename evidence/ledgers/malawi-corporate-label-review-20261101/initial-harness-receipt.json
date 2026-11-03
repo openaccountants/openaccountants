@@ -1,0 +1,7 @@
+{
+  "initial_harness": "failed preservation assertion because prior-file manifest includes the deliberately changed corporate Guide at its before hash",
+  "diagnostic": "Only corporate Guide differs from baseline, at the expected accepted candidate hash. Other prior files match.",
+  "repair": "Exclude the deliberately repaired Guide from unchanged-file assertion, independently match its baseline hash and reverse exact four replacements.",
+  "writer_defect": false,
+  "second_probe": "Expected paragraph ordinal was initially typed10; independent full-body reconstruction shows it is11. Corrected expected ordinal; only H1 and intended base paragraph differ."
+}

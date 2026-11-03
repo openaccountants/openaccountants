@@ -1,0 +1,65 @@
+{
+  "frozen_writer_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "repaired_guide_sha256": "1a803b529c02dc5b4dc199c3e37622b48c5a8dc3be8ec2f85290761386595b1e",
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "original_ledger_rows_unchanged": 66,
+  "total_rows": 72,
+  "human_original_ledger_preserved_as_prefix": true,
+  "cases_unchanged": 4,
+  "readme_unchanged": true,
+  "prior_guides_and_evidence_preserved": 22,
+  "other_frozen_writer_evidence_preserved": 15,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burundi/bi-property-transactions.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "committed": false,
+  "review_status": "focused independent closure pending"
+}

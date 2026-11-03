@@ -1,0 +1,900 @@
+{
+  "reviewed_utc": "2026-11-01T16:50:38.366940+00:00",
+  "immutable_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "predecessors": {
+    "skills/chad/td-company-formation.md": {
+      "old_sha256": "d848cc81cd32e0db312720124b51a8dd909a9c18ffb3569bb2d7b4dc9b39d713",
+      "new_sha256": "d848cc81cd32e0db312720124b51a8dd909a9c18ffb3569bb2d7b4dc9b39d713",
+      "unchanged": true,
+      "cta_preserved": true,
+      "old_editorial_lines": 15,
+      "topics": [
+        {
+          "body_line": 3,
+          "original": "# Chad Company Formation & Entity Choice",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 5,
+          "original": "## Entity types and incorporation in Chad",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 7,
+          "original": "Chad applies the OHADA Uniform Act on Commercial Companies (Acte Uniforme sur les Sociétés Commerciales). The most common forms are the SARL (limited liability company) and SA (public limited company). Details below are a source-cited draft for 2025.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 9,
+          "original": "- **Société à Responsabilité Limitée (SARL)** — Limited liability company; 1 to 50 partners, liability limited to contributions  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://www.expanship.com/td/blog/incorporation-requirements-in-chad))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 10,
+          "original": "- **Société Anonyme (SA)** — Public limited company; used for larger ventures and where capital exceeds the SARL ceiling  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 11,
+          "original": "- **Other forms** — SAS (simplified joint-stock), SNC (general partnership), and branch/representative office of a foreign company  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 12,
+          "original": "- **SARL minimum share capital** — XAF 1,000,000 XAF ((approx — OHADA default; confirm whether Chad has lowered it)) XAF  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 13,
+          "original": "- **SA minimum share capital** — XAF 10,000,000 XAF XAF  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://www.expanship.com/td/blog/incorporation-requirements-in-chad))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 14,
+          "original": "- **SA capital payment** — Unpaid portion of subscribed SA capital must be called up and paid within 2 years of incorporation  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://www.expanship.com/td/blog/incorporation-requirements-in-chad))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 15,
+          "original": "- **Commercial registration** — Company is registered with the Registre du Commerce et du Crédit Mobilier (RCCM), commonly via the Guichet Unique (one-stop shop)  _(OHADA Uniform Act / Chad business registration rules)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 16,
+          "original": "- **Core incorporation steps** — Notarised articles of association, deposit of capital, registration at RCCM, tax identification (NIF), and CNPS registration as employer ((approx — confirm current Guichet Unique procedure))  _(OHADA Uniform Act / Chad business registration rules)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 17,
+          "original": "- **Incorporation timeline** — Roughly 2 to 8 weeks via the Guichet Unique ((approx — confirm))  _(Chad business registration practice)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 18,
+          "original": "- **Statutory audit** — A statutory auditor (commissaire aux comptes) is required for SAs and for SARLs exceeding OHADA size thresholds ((approx — confirm SARL audit thresholds))  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 19,
+          "original": "- **Core annual compliance** — Annual general meeting, OHADA-format financial statements (SYSCOHADA), filing of accounts, and annual IS/IRPP and VAT returns  _(OHADA Uniform Act / Code Général des Impôts (Chad))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 20,
+          "original": "- **Tax identification number** — Each company must obtain a Numéro d'Identification Fiscale (NIF) from the DGI  _(Code Général des Impôts (Chad))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        }
+      ]
+    },
+    "skills/chad/td-corporate-income-tax.md": {
+      "old_sha256": "563eed97ec6923d94f756992f2a2a0fe2952680d112879f4bdd9766b4c248825",
+      "new_sha256": "ae92da19350146d3dd47f6c4e898509ed975f9628821c2ed1acf5596bbdf3bac",
+      "unchanged": false,
+      "cta_preserved": true,
+      "old_editorial_lines": 17,
+      "topics": [
+        {
+          "body_line": 3,
+          "original": "# Chad Corporate Income Tax",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 5,
+          "original": "## Corporate income tax (Impôt sur les Sociétés)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 7,
+          "original": "- **Corporate income tax (Impôt sur les Sociétés)** — Companies pay Impôt sur les Sociétés (IS) on net taxable profits sourced in Chad, subject to a turnover-based minimum tax. The figures below are a source-cited draft for 2025.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 8,
+          "original": "- **Standard corporate tax rate** — 35 %  _(Code Général des Impôts (Chad) — Impôt sur les sociétés (https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 9,
+          "original": "- **Minimum tax (Impôt Minimum Forfaitaire)** — 1.5% of annual turnover, payable if it exceeds the IS otherwise due %  _(Code Général des Impôts (Chad) — Impôt Minimum Forfaitaire (https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 10,
+          "original": "- **Tax base** — Net taxable profit after deduction of all charges directly entailed by activities taxable in Chad; foreign-source income is excluded  _(Code Général des Impôts (Chad) — IS income determination (https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 11,
+          "original": "- **Flat-tax (forfait) regime threshold** — Turnover not exceeding XAF 50,000,000 XAF  _(Code Général des Impôts (Chad) — tax regimes (https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 12,
+          "original": "- **Simplified regime threshold** — Turnover between XAF 50,000,000 and XAF 500,000,000 XAF  _(Code Général des Impôts (Chad) — tax regimes (https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 13,
+          "original": "- **Normal regime threshold** — Turnover exceeding XAF 500,000,000 XAF  _(Code Général des Impôts (Chad) — tax regimes (https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 14,
+          "original": "- **Withholding tax on dividends** — 20% (residents and non-residents) %  _(Code Général des Impôts (Chad) — withholding taxes (https://taxsummaries.pwc.com/chad/corporate/withholding-taxes))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 15,
+          "original": "- **Withholding tax on interest (non-resident, outside CEMAC)** — 25 %  _(Code Général des Impôts (Chad) — withholding taxes (https://taxsummaries.pwc.com/chad/corporate/withholding-taxes))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 16,
+          "original": "- **Withholding tax on registered-bond interest** — 20 %  _(Code Général des Impôts (Chad) — withholding taxes (https://taxsummaries.pwc.com/chad/corporate/withholding-taxes))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 17,
+          "original": "- **Withholding tax on service fees (non-resident, general)** — 25 %  _(Code Général des Impôts (Chad) — withholding taxes (https://taxsummaries.pwc.com/chad/corporate/withholding-taxes))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 18,
+          "original": "- **Withholding tax on service fees (CEMAC companies)** — 7.5 %  _(Code Général des Impôts (Chad) — withholding taxes (https://taxsummaries.pwc.com/chad/corporate/withholding-taxes))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 19,
+          "original": "- **Withholding tax on royalties (non-resident, petroleum projects)** — 12.5 %  _(Code Général des Impôts (Chad) — withholding taxes (https://taxsummaries.pwc.com/chad/corporate/withholding-taxes))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 20,
+          "original": "- **Annual IS return / financial statements deadline** — On or before 30 April following the financial year-end (approx — confirm exact statutory date)  _(Code Général des Impôts (Chad) — Tax administration (https://taxsummaries.pwc.com/chad/corporate/tax-administration))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 21,
+          "original": "- **Payment cadence (normal & simplified regimes)** — Tax (including minimum tax) is declared and paid monthly  _(Code Général des Impôts (Chad) — Tax administration (https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        }
+      ]
+    },
+    "skills/chad/td-import-exemption-eligibility.md": {
+      "old_sha256": "63c281d819ad3d9b7d50b10288aa489643c6b6829a05fd955200e94a158bdde6",
+      "new_sha256": "63c281d819ad3d9b7d50b10288aa489643c6b6829a05fd955200e94a158bdde6",
+      "unchanged": true,
+      "cta_preserved": true,
+      "old_editorial_lines": 74,
+      "topics": [
+        {
+          "body_line": 3,
+          "original": "# Chad import-exemption eligibility v0.2",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 5,
+          "original": "> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 7,
+          "original": "## Who this applies to",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 9,
+          "original": "Use this Guide to prepare a line-by-line eligibility working paper for goods imported into Chad from **9 September 2026**, where the goods and their intended use fit the signed order. Article 3 takes effect from signature; the stamped signature date is 9 September 2026. Do not apply it to an earlier import merely because the document is filed under the 2026 finance-law programme. [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 11,
+          "original": "**Wheat is excluded from this Guide’s supported scope.** Finance-law article 65 lists CEMAC-origin produits du cru, including wheat under heading 10 01, at a 5% customs duty for three years from 1 January 2026. The September order also names wheat, but this draft does not resolve the interaction or the authority for overriding that statutory rule. Hold every wheat line for customs/legal reconciliation, including where its origin is unknown. Do not conclude either exemption or a final 5% liability from this draft. [Finance law 2026, art. 65](https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf#page=78); [Arrêté 135, arts. 2–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2).",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 13,
+          "original": "The result identifies a supported exemption basis for the listed goods. It does not provide a tariff code, customs valuation, declaration code or release approval. A missing product description or unresolved use means the line remains on hold. This hold is an instruction for using this Guide, not a finding that the goods are taxable.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 15,
+          "original": "## Rates, bands and thresholds",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 17,
+          "original": "| Goods or timing | Rule and condition | Official source |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 18,
+          "original": "|---|---|---|",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 19,
+          "original": "| Forage seeds, fodder, animal feed and other products exclusively intended for feeding livestock | Exempt from import duties and taxes; document the livestock-feed purpose rather than treating every agricultural product as included | [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2) |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 20,
+          "original": "| Equipment and materials intended for drilling, pumping and water supply | Exempt from import duties and taxes when the equipment's documented intended use matches this category | [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2) |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 21,
+          "original": "| Agricultural equipment, machinery, materials and inputs intended for production of forage crops | Exempt from import duties and taxes for that stated purpose; a generic agricultural label alone does not establish the forage-crop condition | [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2) |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 22,
+          "original": "| Maize, millet, rice, cereal flour other than wheat flour, and semolina; wheat excluded from usable scope above | Article 2 maintains exemption from duties and taxes for the named goods; it does not list wheat flour as cereal flour eligible under that phrase | [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2) |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 23,
+          "original": "| Effective date | From signature: 9 September 2026; do not backdate this order | [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2) |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 25,
+          "original": "The table describes an **exemption**, not a general zero-rated domestic VAT regime. The order's words concern import duties and taxes. Do not extend them to a later domestic sale, transport invoice, brokerage fee or other charge without a separate source. Articles 1–3 supply no turnover threshold, HS tariff codes or numerical duty rates. [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 27,
+          "original": "## The base",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 29,
+          "original": "1. Take the commercial invoice and packing list. Give each product its own line, description, quantity, invoice value and supporting specification. Invoice values in this working paper reconcile the shipment; they are not asserted to be customs values.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 30,
+          "original": "2. First hold all wheat lines and record their origin evidence for reconciliation. For the other goods, match each line to one of the four groups in the table. For livestock-feed products, water equipment and forage-production equipment, document the relevant use. Record the contract, technical sheet or other actual evidence supplied by the importer. These are evidence requests for the working paper, not an invented statutory certificate list. [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 31,
+          "original": "3. Mark a non-wheat line **supported** only when its identity and any required use match the cited wording and there is no unresolved contrary applicable instrument. Mark uncertain descriptions, mixed-use items and goods not established within that wording **hold for customs review**. Do not presume that wheat flour qualifies merely because wheat grain does, or that all farm machinery is forage-production machinery. [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 32,
+          "original": "4. Total the supported and held invoice lines separately. Reconcile their sum to the invoice. This is a line-classification reconciliation, not a percentage exemption for an entire mixed shipment.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 33,
+          "original": "5. Produce an importer review schedule: line ID, product, intended use where relevant, article, evidence, supported/hold decision, invoice value and unresolved question. It does not replace the customs declaration or authorise release.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 35,
+          "original": "## Deadlines and filing",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 37,
+          "original": "Article 3 places implementation with the **Directeur Général des Douanes et Droits Indirects** and makes the order effective from signature. It also repeals contrary earlier provisions. It gives no separate application deadline or submission form. [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 39,
+          "original": "Prepare the schedule and the actual supporting documents for the importer or its customs representative. Before making an exemption claim, confirm origin and any interacting customs instrument, then obtain the current declaration procedure, relevant tariff classification and exemption codes from customs, then match them to the actual goods and applicable date. Retain the classification decision and the resulting declaration/release evidence with the schedule. The codes, form boxes, portal screens and authenticated release process were not accessed; this Guide stops at the eligibility working paper and cannot instruct a completed filing.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 41,
+          "original": "## Penalties and interest",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 43,
+          "original": "The three-article order does not state a penalty, late-payment interest rate or assessment/appeal timetable. No such figure is supplied here. A disputed classification, an earlier import, an assessment or a request for retrospective relief needs the applicable customs procedures checked separately. Do not import a penalty from another country's code or from the legacy Chad Guides. [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 45,
+          "original": "## Cross-border points",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 47,
+          "original": "The scope is the listed **imports into Chad**. The order gives product and use descriptions rather than a general exemption for every food, agricultural or water-sector business. It does not itself establish export relief, a domestic VAT input credit, a treaty benefit or an origin rule. Preserve a separate assessment for any other tax or customs issue that changes the claim. [Arrêté 135, arts. 1–3](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf#page=2)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 49,
+          "original": "Do not treat a line held for review as proof of tax liability, or a supported line as proof that a shipment can clear without customs formalities. Neither conclusion is made by the order's three articles.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 51,
+          "original": "## Two worked examples that recompute",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 53,
+          "original": "**Listed cereals, with product identity established.** A hypothetical post-signature shipment contains rice invoiced at XAF 3 million and maize at XAF 1 million, each confirmed as the named goods. Article 2 supports both product descriptions. The eligible invoice-line subtotal is XAF 4 million and the held subtotal is zero. The example does not calculate customs value or incidental charges.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 55,
+          "original": "```oa-check",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 56,
+          "original": "name: Reconcile named cereal invoice lines",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 57,
+          "original": "inputs:",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 58,
+          "original": "rice_invoice_value: 3000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 59,
+          "original": "maize_invoice_value: 1000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 60,
+          "original": "steps:",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 61,
+          "original": "supported_invoice_subtotal: rice_invoice_value + maize_invoice_value",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 62,
+          "original": "held_invoice_subtotal: 0",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 63,
+          "original": "shipment_invoice_total: supported_invoice_subtotal + held_invoice_subtotal",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 64,
+          "original": "expected:",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 65,
+          "original": "supported_invoice_subtotal: 4000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 66,
+          "original": "held_invoice_subtotal: 0",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 67,
+          "original": "shipment_invoice_total: 4000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 68,
+          "original": "```",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 70,
+          "original": "**Do not extend the forage condition to every tractor.** Assume an importer supplies adequate specifications and use evidence for water-pumping equipment invoiced at XAF 2 million and equipment dedicated to forage-crop production invoiced at XAF 4 million. A further tractor line of XAF 6 million says only “general farm use”, with its actual intended use unresolved. The first two lines match article 1; the tractor remains held. Supported and held subtotals are XAF 6 million each, reconciling to XAF 12 million. The held amount is not a computed taxable customs base and does not prove the tractor is ineligible under any other law.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 72,
+          "original": "```oa-check",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 73,
+          "original": "name: Keep uncertain agricultural use separate",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 74,
+          "original": "inputs:",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 75,
+          "original": "water_pump_invoice_value: 2000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 76,
+          "original": "forage_equipment_invoice_value: 4000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 77,
+          "original": "unresolved_tractor_invoice_value: 6000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 78,
+          "original": "steps:",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 79,
+          "original": "supported_invoice_subtotal: water_pump_invoice_value + forage_equipment_invoice_value",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 80,
+          "original": "held_invoice_subtotal: unresolved_tractor_invoice_value",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 81,
+          "original": "shipment_invoice_total: supported_invoice_subtotal + held_invoice_subtotal",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 82,
+          "original": "expected:",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 83,
+          "original": "supported_invoice_subtotal: 6000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 84,
+          "original": "held_invoice_subtotal: 6000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 85,
+          "original": "shipment_invoice_total: 12000000",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 86,
+          "original": "```",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 88,
+          "original": "## Ask the client first",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 90,
+          "original": "- What are the import date, origin evidence and customs procedure proposed for the goods?",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 91,
+          "original": "- Is any line wheat, requiring the mandatory hold until the finance-law/order interaction is reconciled?",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 92,
+          "original": "- What exact goods, quantities and individual invoice values appear on the invoice and packing list?",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 93,
+          "original": "- For feed, water or agricultural equipment, what actual intended use and specifications support the relevant wording?",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 94,
+          "original": "- Are any goods mixtures, wheat flour, general-purpose farm machinery or described too broadly to classify under this order?",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 95,
+          "original": "- What tariff/exemption classification or written direction has customs already given, and is any liability or earlier import under dispute?",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 97,
+          "original": "## Sources",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 99,
+          "original": "| Official source | What was actually read | Read on |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 100,
+          "original": "|---|---|---|",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 101,
+          "original": "| [Finance law 2026, Loi 008/AN/SENAT/2025](https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf#page=78) | PDF page 78, article 65 and neighbouring articles 64–66 visually checked. Wheat entry, CEMAC origin, rate, three-year duration and 1 January 2026 start read. This is a scoped reading, not a whole-law verification. | 2026-11-01 |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 102,
+          "original": "| [Signed Arrêté 135/MFBEPCI/SE/SG/DGDDI/2026](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf) | Entire two-page order, preamble and arts. 1–3; French text and the stamped signature date visually checked. Page 2 contains all operative articles and the 9 September 2026 date. No expiry date appears in those articles. | 2026-11-01 |",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 104,
+          "original": "Not yet confirmed: finance-law article 65 interaction and exemption authority for wheat (all wheat excluded and held); HS codes and classification of particular products or mixtures; current customs declaration and exemption codes, portal/form boxes and authenticated claim/release workflow; customs valuation, other independently chargeable fees and levies, penalties/interest and dispute time limits; pre-signature imports, retrospective relief and any other exemption basis. A later amendment or contrary applicable instrument must be checked before a live claim; no blanket absence-of-amendment certification is made. Independent source review accepted this narrow non-wheat draft on 2026-11-01; the wider Chad pack remains partial and no accountant has attested to it.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        }
+      ]
+    },
+    "skills/chad/td-income-tax.md": {
+      "old_sha256": "afeb8d9a2fa372788d0ab72d52e9dc4eec301e1b9f6926a22289d1ccaa5979e5",
+      "new_sha256": "ba2555b6740e44c2a03f0a3e1e75a961458ddb03b31fe17f854272855d30a465",
+      "unchanged": false,
+      "cta_preserved": true,
+      "old_editorial_lines": 16,
+      "topics": [
+        {
+          "body_line": 3,
+          "original": "# Chad Personal Income Tax",
+          "destination": "td-income-tax.md, Who this applies to (scope)"
+        },
+        {
+          "body_line": 5,
+          "original": "## Personal income tax (IRPP) rates and bands",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 7,
+          "original": "- **IRPP band — XAF 0 to 800,000** — 0% %  _([Code Général des Impôts (Chad) — IRPP scale](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 8,
+          "original": "- **Tax-free threshold** — XAF 800,000 of annual work income XAF  _([Code Général des Impôts (Chad) — IRPP scale](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 9,
+          "original": "- **IRPP band — XAF 800,001 to 6,000,000** — 10.5% %  _([Code Général des Impôts (Chad) — IRPP scale](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 10,
+          "original": "- **IRPP band — XAF 6,000,001 to 7,500,000** — 15% %  _([Code Général des Impôts (Chad) — IRPP scale](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 11,
+          "original": "- **IRPP band — XAF 7,500,001 to 9,000,000** — 20% %  _([Code Général des Impôts (Chad) — IRPP scale](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 12,
+          "original": "- **IRPP band — XAF 9,000,001 to 12,000,000** — 25% %  _([Code Général des Impôts (Chad) — IRPP scale](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 13,
+          "original": "- **IRPP band — above XAF 12,000,000** — 30% %  _([Code Général des Impôts (Chad) — IRPP scale](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Rates, bands and thresholds (reverified annual marginal bands)"
+        },
+        {
+          "body_line": 14,
+          "original": "- **Deductible employee social-security contribution** — 3.5% of salary is deductible before applying the IRPP scale %  _([Code Général des Impôts (Chad) — IRPP income determination](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, The base step4; actual mandatory deduction replaces automatic3.5%claim"
+        },
+        {
+          "body_line": 15,
+          "original": "- **Other non-taxable allowances** — Transport allowance and representation/expense allowances are excluded from taxable work income (approx — confirm caps per allowance)  _([Code Général des Impôts (Chad) — IRPP income determination](https://taxsummaries.pwc.com/chad/individual/income-determination))_",
+          "destination": "td-income-tax.md, The base step3 and rates (conditions/caps supplied)"
+        },
+        {
+          "body_line": 16,
+          "original": "- **Resident taxable income** — Worldwide work and capital income  _([Code Général des Impôts (Chad) — IRPP](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Who this applies to and Cross-border points (expanded tests/source conditions)"
+        },
+        {
+          "body_line": 17,
+          "original": "- **Non-resident taxable income** — Only income from activities carried on in Chad (Chad-source)  _([Code Général des Impôts (Chad) — IRPP](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Who this applies to and Cross-border points (expanded tests/source conditions)"
+        },
+        {
+          "body_line": 18,
+          "original": "- **Residence test** — Individual is resident if they have their habitual residence / home in Chad (approx — confirm 183-day / domicile criteria)  _(Code Général des Impôts (Chad) — IRPP)_",
+          "destination": "td-income-tax.md, Who this applies to and Cross-border points (expanded tests/source conditions)"
+        },
+        {
+          "body_line": 19,
+          "original": "- **Annual IRPP return deadline** — On or before 30 April following the tax year (approx — confirm exact statutory date)  _(Code Général des Impôts (Chad) — Tax administration)_",
+          "destination": "HOLD: td-income-tax.md, Deadlines and filing and Not yet confirmed; unverified30April removed from operative rule"
+        },
+        {
+          "body_line": 20,
+          "original": "- **Employment income collection** — IRPP on salaries is withheld monthly at source by the employer (retenue à la source)  _([Code Général des Impôts (Chad) — IRPP withholding on salaries](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "td-income-tax.md, Deadlines and filing (847–850;15followingmonth)"
+        }
+      ]
+    },
+    "skills/chad/td-payroll-social.md": {
+      "old_sha256": "28f5a767820194e5a203489b5dd7f3c07b91d65358cbfcdc688154e0e0b52787",
+      "new_sha256": "28f5a767820194e5a203489b5dd7f3c07b91d65358cbfcdc688154e0e0b52787",
+      "unchanged": true,
+      "cta_preserved": true,
+      "old_editorial_lines": 11,
+      "topics": [
+        {
+          "body_line": 3,
+          "original": "# Chad Payroll & Social Contributions",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 5,
+          "original": "## Social security (CNPS) and payroll taxes",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 7,
+          "original": "- **CNPS employer contribution** — 16.5% of gross salaries %  _(Code de Prévoyance Sociale / CNPS (Chad), https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 8,
+          "original": "- **CNPS employer contribution monthly cap** — XAF 82,500 per month per employee XAF  _(Code de Prévoyance Sociale / CNPS (Chad), https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 9,
+          "original": "- **CNPS employee contribution** — 3.5% of gross salary (withheld by the employer) %  _(Code de Prévoyance Sociale / CNPS (Chad), https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 10,
+          "original": "- **CNPS employee contribution monthly cap** — XAF 17,500 per month per employee XAF  _(Code de Prévoyance Sociale / CNPS (Chad), https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 11,
+          "original": "- **Employer payroll tax (taxe sur les salaires)** — 7.5% of total salaries and fringe benefits %  _(Code Général des Impôts (Chad) — taxe sur les salaires, https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 12,
+          "original": "- **Apprenticeship / training tax** — 1.2% of total salaries and fringe benefits (to the national professional training fund) %  _(Code Général des Impôts (Chad) — taxe d'apprentissage, https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 13,
+          "original": "- **IRPP withholding on salaries** — Employer withholds IRPP on the progressive scale each month (retenue à la source)  _(Code Général des Impôts (Chad) — IRPP withholding, https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 14,
+          "original": "- **Payroll tax / withholding remittance** — Withheld IRPP and payroll taxes are declared and remitted monthly, typically by the 15th of the following month (approx — confirm exact monthly due date)  _(Code Général des Impôts (Chad) — Tax administration)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 15,
+          "original": "- **CNPS contribution remittance** — Social-security contributions are remitted to CNPS monthly (quarterly for small employers) (approx — confirm cadence by employer size)  _(Code de Prévoyance Sociale / CNPS (Chad))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        }
+      ]
+    },
+    "skills/chad/td-tax-overview.md": {
+      "old_sha256": "f608ec557c514d9c69cf695ebac3bd29ae694e9981ac1addefddf69f4fd67f08",
+      "new_sha256": "f608ec557c514d9c69cf695ebac3bd29ae694e9981ac1addefddf69f4fd67f08",
+      "unchanged": true,
+      "cta_preserved": true,
+      "old_editorial_lines": 13,
+      "topics": [
+        {
+          "body_line": 3,
+          "original": "# Chad Tax Overview",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 5,
+          "original": "## Chad tax system at a glance",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 7,
+          "original": "Chad (Tchad) is a Central African CEMAC member that taxes income, profits and consumption under its General Tax Code (Code Général des Impôts). Figures below are a source-cited draft for tax year 2025 and require review by a licensed Chad accountant.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 9,
+          "original": "- **Tax year** — Calendar year (1 January to 31 December)  _([Code Général des Impôts (Chad)](https://taxsummaries.pwc.com/chad/corporate/tax-administration))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 10,
+          "original": "- **Currency** — Central African CFA franc (XAF) (CEMAC monetary union)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 11,
+          "original": "- **Tax authority** — Direction Générale des Impôts (DGI), Ministère des Finances et du Budget ((approx — confirm exact authority name))  _(Code Général des Impôts (Chad))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 12,
+          "original": "- **Residence basis of taxation** — Residents taxed on worldwide income; non-residents taxed only on Chad-source income  _([Code Général des Impôts (Chad) — Personal income tax (IRPP)](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 13,
+          "original": "- **Top personal income tax (IRPP) rate** — 30% %  _([Code Général des Impôts (Chad) — IRPP](https://taxsummaries.pwc.com/chad/individual/taxes-on-personal-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 14,
+          "original": "- **Standard corporate income tax (IS) rate** — 35% %  _([Code Général des Impôts (Chad) — Impôt sur les sociétés](https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 15,
+          "original": "- **Does Chad have VAT?** — Yes — VAT (TVA) at a standard rate of 18% %  _([Code Général des Impôts (Chad) — Taxe sur la valeur ajoutée (TVA)](https://taxsummaries.pwc.com/chad/corporate/other-taxes))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 16,
+          "original": "- **Minimum corporate tax (IMF)** — 1.5% of turnover %  _([Code Général des Impôts (Chad) — Impôt Minimum Forfaitaire](https://taxsummaries.pwc.com/chad/corporate/taxes-on-corporate-income))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 17,
+          "original": "- **Annual corporate tax return deadline** — On or before 30 April following the close of the financial year ((approx — confirm exact statutory date))  _([Code Général des Impôts (Chad) — Tax administration](https://taxsummaries.pwc.com/chad/corporate/tax-administration))_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 18,
+          "original": "- **Regional framework** — Member of CEMAC (Central African Economic and Monetary Community) and OHADA business-law zone (CEMAC / OHADA treaties)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        }
+      ]
+    },
+    "skills/chad/td-vat-gst.md": {
+      "old_sha256": "93bd9d26f0639167651c7f9aea090133cffb5c8a416ce30684aa565dd9bfed13",
+      "new_sha256": "b996d4f0f79e8b0fae337325d7a3b6df049e4cdbee63471fd950ffe0668d5814",
+      "unchanged": false,
+      "cta_preserved": true,
+      "old_editorial_lines": 13,
+      "topics": [
+        {
+          "body_line": 3,
+          "original": "# Chad VAT / GST",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 5,
+          "original": "## Value-added tax (TVA)",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 7,
+          "original": "- **Value-added tax (TVA)** —",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 9,
+          "original": "Chad levies value-added tax (Taxe sur la Valeur Ajoutée, TVA) on taxable supplies of goods and services. Rates and rules below are a source-cited draft for 2025.",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 11,
+          "original": "- **Standard VAT rate** — 18% %  _(Code Général des Impôts (Chad) — TVA — https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 12,
+          "original": "- **Reduced VAT rate** — 9% on certain locally produced goods (e.g. cement, sugar, oil, soap, textiles, iron) %  _(Code Général des Impôts (Chad) — TVA — https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 13,
+          "original": "- **Zero-rated supplies** — 0% on exports and related international transport, and on local agri-food products (excluding alcohol) %  _(Code Général des Impôts (Chad) — TVA — https://taxsummaries.pwc.com/chad/corporate/other-taxes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 14,
+          "original": "- **VAT registration threshold** — Businesses under the normal regime (turnover above XAF 500,000,000) charge VAT; smaller taxpayers fall under simplified/flat regimes (approx — confirm exact VAT-specific turnover threshold) XAF  _(Code Général des Impôts (Chad) — TVA / tax regimes)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 15,
+          "original": "- **VAT return frequency** — Monthly — filed and paid by the 15th of the following month (approx — confirm exact monthly due date)  _(Code Général des Impôts (Chad) — TVA administration)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 16,
+          "original": "- **VAT on digital / platform services** — VAT obligation extended to non-resident digital platforms, effective January 2025",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 17,
+          "original": "- **Reverse charge** — VAT on services supplied by a non-established provider is self-assessed by the Chad customer (reverse charge) (approx — confirm reverse-charge mechanics)  _(Code Général des Impôts (Chad) — TVA)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 18,
+          "original": "- **Input VAT recovery** — Input VAT on business purchases is generally creditable against output VAT, subject to exclusions  _(Code Général des Impôts (Chad) — TVA)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        },
+        {
+          "body_line": 19,
+          "original": "- **Exempt supplies** — Certain banking, financial, medical and educational services are exempt (approx — confirm exempt categories)  _(Code Général des Impôts (Chad) — TVA exemptions)_",
+          "destination": "Same file, unchanged byte-for-byte; prior review status and limits retained"
+        }
+      ]
+    }
+  },
+  "total_predecessor_editorial_lines": 159,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/chad/td-company-formation.md",
+        "skills/chad/td-corporate-income-tax.md",
+        "skills/chad/td-income-tax.md",
+        "skills/chad/td-payroll-social.md",
+        "skills/chad/td-tax-overview.md",
+        "skills/chad/td-transfer-pricing.md",
+        "skills/chad/td-vat-gst.md"
+      ],
+      "returncode": 1,
+      "stdout": "skills/chad/td-company-formation.md (scope: tax)\n  (a) tax_year_current     FAIL tax_year 2025 is not 2026 and no tax_year_notes\n  (b) sources_read_dates   FAIL no ## Sources section\n  (c) rates_rows_sourced   FAIL no rates table\n  (d) canonical_headings   FAIL reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources\n  (e) two_oa_checks        FAIL 0 oa-check block(s), need 2\n  (f) version_numeric      FAIL no version\n  (g) tier_honest          pass\n  (h) no_em_dash           FAIL 17 em dash(es)\n  (i) not_yet_confirmed    FAIL no ## Sources section\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-payroll-social.md (scope: tax)\n  (a) tax_year_current     FAIL tax_year 2025 is not 2026 and no tax_year_notes\n  (b) sources_read_dates   FAIL no ## Sources section\n  (c) rates_rows_sourced   FAIL no rates table\n  (d) canonical_headings   FAIL reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources\n  (e) two_oa_checks        FAIL 0 oa-check block(s), need 2\n  (f) version_numeric      FAIL no version\n  (g) tier_honest          pass\n  (h) no_em_dash           FAIL 16 em dash(es)\n  (i) not_yet_confirmed    FAIL no ## Sources section\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-tax-overview.md (scope: tax)\n  (a) tax_year_current     FAIL tax_year 2025 is not 2026 and no tax_year_notes\n  (b) sources_read_dates   FAIL no ## Sources section\n  (c) rates_rows_sourced   FAIL no rates table\n  (d) canonical_headings   FAIL reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources\n  (e) two_oa_checks        FAIL 0 oa-check block(s), need 2\n  (f) version_numeric      FAIL no version\n  (g) tier_honest          pass\n  (h) no_em_dash           FAIL 20 em dash(es)\n  (i) not_yet_confirmed    FAIL no ## Sources section\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/chad/td-company-formation.md",
+        "skills/chad/td-corporate-income-tax.md",
+        "skills/chad/td-income-tax.md",
+        "skills/chad/td-payroll-social.md",
+        "skills/chad/td-tax-overview.md",
+        "skills/chad/td-transfer-pricing.md",
+        "skills/chad/td-vat-gst.md"
+      ],
+      "returncode": 1,
+      "stdout": "MISSING skills/chad/td-payroll-social.md (tax skill with no oa-check block)\nchecked 7 files, 8 oa-check blocks, 0 failures, 1 missing\n",
+      "stderr": ""
+    }
+  ]
+}

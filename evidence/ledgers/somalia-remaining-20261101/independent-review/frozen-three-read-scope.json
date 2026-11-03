@@ -1,0 +1,87 @@
+{
+  "read_date": "2026-11-01",
+  "acquisition": "Reused private official-source cache per review brief; independently recomputed bytes/hash. Web tool independently opened direct-tax HTML; PDF webreader failed. No claim of independent re-download.",
+  "files": [
+    {
+      "filename": "act37.pdf",
+      "bytes": 49409999,
+      "sha256": "ee02cdda1b14270ac385469f2db90c3cc8c233b3b08c62f49e96180a4beaf85a",
+      "visually_read_PDF_pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        83,
+        84,
+        91,
+        109,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        122,
+        123,
+        125,
+        126,
+        127,
+        128,
+        130,
+        131
+      ]
+    },
+    {
+      "filename": "income-tax-regulation-0141-2025.pdf",
+      "bytes": 31658312,
+      "sha256": "161a88e6529fd8200ae8f5b9db07bcedf9d1ab04dc0efae43d5f7b813995c51e",
+      "visually_read_PDF_pages": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        21,
+        26,
+        27,
+        28,
+        29,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "filename": "revenue-annual-performance-2025.pdf",
+      "bytes": 2064773,
+      "sha256": "e519207280f86f1478d27aef1178999c344b1cc8ed24703869774778cf17ff38",
+      "visually_read_PDF_pages": [
+        11,
+        18
+      ]
+    }
+  ],
+  "additional_text_read": {
+    "act37": "OCR articles8\u201328,69\u201370,76,90\u2013103,105\u2013106,Schedule1and2,including111\u2013125 neighbours; not wholeAct or all specialistmethods",
+    "regulation": "OCR/regulatory clauses2-2,9-1to9-3,12-1,70-1,90-1to90-3,97-1,105-1to105-10,106-1,107-1 with neighbours; no latercircularread claimed",
+    "annual_report": "Extracted PDFpages3,11\u201313,18 read; visual11and18; not operative notice",
+    "direct_tax_html": "Official direct-taxpage body corporate/rental/payroll tables and visible form hyperlinks read viaweb; no workbookfieldreador submission attempted"
+  }
+}

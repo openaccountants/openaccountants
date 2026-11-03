@@ -1,0 +1,1349 @@
+{
+  "basis": "Every line of all nine old Guides maps to identical old file and line range. No rewrite or retirement.",
+  "sections": [
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        1,
+        28
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        1,
+        28
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        29,
+        36
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        29,
+        36
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        37,
+        54
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        37,
+        54
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        55,
+        73
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        55,
+        73
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        74,
+        90
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        74,
+        90
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        91,
+        96
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        91,
+        96
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        97,
+        102
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        97,
+        102
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        103,
+        146
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        103,
+        146
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        147,
+        150
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        147,
+        150
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-annual-property-tax.md",
+      "old_lines": [
+        151,
+        160
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-annual-property-tax.md",
+      "destination_lines": [
+        151,
+        160
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        19,
+        22
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        23,
+        33
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        23,
+        33
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        34,
+        37
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        34,
+        37
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        38,
+        45
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        38,
+        45
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        46,
+        49
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        50,
+        53
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        54,
+        88
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        54,
+        88
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        89,
+        92
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        89,
+        92
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        93,
+        105
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        93,
+        105
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        106,
+        118
+      ],
+      "section": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-company-formation.md",
+      "destination_lines": [
+        106,
+        118
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        19,
+        22
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        23,
+        35
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        23,
+        35
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        36,
+        39
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        40,
+        45
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        40,
+        45
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        46,
+        49
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        50,
+        53
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        54,
+        90
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        54,
+        90
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        91,
+        94
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        91,
+        94
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        95,
+        108
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        95,
+        108
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        109,
+        121
+      ],
+      "section": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md",
+      "destination_lines": [
+        109,
+        121
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        1,
+        15
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        16,
+        19
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        16,
+        19
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        20,
+        30
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        20,
+        30
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        31,
+        34
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        31,
+        34
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        35,
+        38
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        35,
+        38
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        39,
+        42
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        39,
+        42
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        43,
+        46
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        43,
+        46
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        47,
+        78
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        47,
+        78
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        79,
+        82
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        79,
+        82
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        83,
+        90
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-cross-border.md",
+      "destination_lines": [
+        83,
+        90
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        19,
+        22
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        23,
+        38
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        23,
+        38
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        39,
+        46
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        39,
+        46
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        47,
+        50
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        47,
+        50
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        51,
+        54
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        51,
+        54
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        55,
+        58
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        55,
+        58
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        59,
+        92
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        59,
+        92
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        93,
+        96
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        93,
+        96
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        97,
+        110
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        97,
+        110
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        111,
+        123
+      ],
+      "section": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-income-tax.md",
+      "destination_lines": [
+        111,
+        123
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        19,
+        22
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        23,
+        34
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        23,
+        34
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        35,
+        38
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        35,
+        38
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        39,
+        42
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        39,
+        42
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        43,
+        46
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        43,
+        46
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        47,
+        50
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        47,
+        50
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        51,
+        84
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        51,
+        84
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        85,
+        88
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        85,
+        88
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        89,
+        103
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        89,
+        103
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        104,
+        116
+      ],
+      "section": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-payroll-social.md",
+      "destination_lines": [
+        104,
+        116
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        19,
+        22
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        23,
+        35
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        23,
+        35
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        36,
+        39
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        40,
+        43
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        40,
+        43
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        44,
+        47
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        44,
+        47
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        48,
+        51
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        48,
+        51
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        52,
+        79
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        52,
+        79
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        80,
+        83
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        80,
+        83
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        84,
+        98
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        84,
+        98
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        99,
+        111
+      ],
+      "section": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-tax-overview.md",
+      "destination_lines": [
+        99,
+        111
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        1,
+        15
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        16,
+        19
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        16,
+        19
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        20,
+        31
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        20,
+        31
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        32,
+        35
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        32,
+        35
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        36,
+        39
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        40,
+        43
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        40,
+        43
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        44,
+        47
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        44,
+        47
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        48,
+        80
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        48,
+        80
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        81,
+        84
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        81,
+        84
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        85,
+        93
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-transfer-pricing.md",
+      "destination_lines": [
+        85,
+        93
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "section": "Frontmatter/title/preamble",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "section": "## Who this applies to",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        19,
+        22
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        23,
+        33
+      ],
+      "section": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        23,
+        33
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        34,
+        41
+      ],
+      "section": "## The base",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        34,
+        41
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        42,
+        45
+      ],
+      "section": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        42,
+        45
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "section": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        46,
+        49
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "section": "## Cross-border points",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        50,
+        53
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        54,
+        87
+      ],
+      "section": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        54,
+        87
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        88,
+        91
+      ],
+      "section": "## Ask the client first",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        88,
+        91
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        92,
+        105
+      ],
+      "section": "## Sources",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        92,
+        105
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    },
+    {
+      "old_file": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        106,
+        118
+      ],
+      "section": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-vat-gst.md",
+      "destination_lines": [
+        106,
+        118
+      ],
+      "decision": "Complete unchanged bytes at the identical blob, including all intervening bullets/tables and suffix."
+    }
+  ]
+}

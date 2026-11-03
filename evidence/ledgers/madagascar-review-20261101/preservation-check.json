@@ -1,0 +1,129 @@
+{
+  "baseline": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "checks": [
+    {
+      "guide": "mg-company-formation",
+      "CTA_suffix_identical": true,
+      "platform_fields_identical": true,
+      "old_topics": [
+        "Société à Responsabilité Limitée (SARL)",
+        "Société Anonyme (SA)",
+        "Entreprise individuelle / sole trader",
+        "SARL minimum share capital",
+        "SARL minimum shareholders / directors",
+        "Incorporation registry / one-stop shop",
+        "Core incorporation steps",
+        "Typical incorporation timeline",
+        "Tax identification number",
+        "Core annual compliance",
+        "Local representation"
+      ],
+      "old_words": 471,
+      "new_words": 963
+    },
+    {
+      "guide": "mg-corporate-income-tax",
+      "CTA_suffix_identical": true,
+      "platform_fields_identical": true,
+      "old_topics": [
+        "Standard corporate income tax (IR) rate — real regime",
+        "Turnover threshold for the real regime",
+        "Synthetic regime (turnover < MGA 400m) — Impôt Synthétique (IS)",
+        "Minimum CIT under the real regime — general activities",
+        "Minimum CIT — agriculture, artisan, transport, industrial, hotel, mining",
+        "Reduced rate — cooperative societies",
+        "Tax base",
+        "Withholding tax on dividends to non-residents (non-treaty)",
+        "Withholding tax on loan interest to non-residents (non-treaty)",
+        "Withholding tax on royalties, management and service fees to non-residents (non-treaty)",
+        "CIT return filing deadline (31 Dec year-end)",
+        "CIT return filing deadline (30 June year-end)",
+        "CIT payment",
+        "Withholding tax remittance deadline"
+      ],
+      "old_words": 525,
+      "new_words": 1300
+    },
+    {
+      "guide": "mg-income-tax",
+      "CTA_suffix_identical": true,
+      "platform_fields_identical": true,
+      "old_topics": [
+        "IRSA band 1 — up to MGA 350,000 / month",
+        "IRSA band 2 — MGA 350,001 to 400,000 / month",
+        "IRSA band 3 — MGA 400,001 to 500,000 / month",
+        "IRSA band 4 — MGA 500,001 to 600,000 / month",
+        "IRSA band 5 — above MGA 600,000 / month",
+        "Tax-free monthly threshold",
+        "Minimum IRSA payable",
+        "Deduction per dependent",
+        "Deductibility of mandatory social contributions",
+        "Non-resident salary income",
+        "IRSA collection mechanism",
+        "Annual income tax filing for individuals with business income (synthetic regime)"
+      ],
+      "old_words": 461,
+      "new_words": 1239
+    },
+    {
+      "guide": "mg-payroll-social",
+      "CTA_suffix_identical": true,
+      "platform_fields_identical": true,
+      "old_topics": [
+        "CNAPS employer contribution",
+        "CNAPS employee contribution",
+        "CNAPS contribution wage cap",
+        "Occupational health organisation (OSTIE/AMIT) employer contribution",
+        "Occupational health organisation employee contribution",
+        "PAYE-equivalent withholding",
+        "IRSA remittance deadline",
+        "CNAPS contribution remittance frequency",
+        "Professional training contribution"
+      ],
+      "old_words": 431,
+      "new_words": 1019
+    },
+    {
+      "guide": "mg-tax-overview",
+      "CTA_suffix_identical": true,
+      "platform_fields_identical": true,
+      "old_topics": [
+        "Currency",
+        "Tax authority",
+        "Standard tax / fiscal year",
+        "Basis of taxation",
+        "Headline top personal salary-tax (IRSA) rate",
+        "Headline corporate income tax (IR) rate",
+        "Does VAT/GST exist?",
+        "Annual corporate/individual income tax return deadline (31 Dec year-end)",
+        "VAT filing frequency",
+        "Turnover threshold for the 'real' tax regime / VAT liability"
+      ],
+      "old_words": 446,
+      "new_words": 923
+    },
+    {
+      "guide": "mg-vat-gst",
+      "CTA_suffix_identical": true,
+      "platform_fields_identical": true,
+      "old_topics": [
+        "Value-added tax (TVA) overview",
+        "Standard TVA rate",
+        "Zero rate on exports",
+        "Reduced rate — butane gas",
+        "Exempt supplies",
+        "VAT registration threshold",
+        "Filing frequency and deadline",
+        "VAT payable computation",
+        "VAT refunds",
+        "Reverse charge on imported services"
+      ],
+      "old_words": 413,
+      "new_words": 1191
+    }
+  ],
+  "original_topic_count": 66,
+  "mapped_topic_count": 66,
+  "lost_content_restored": 0,
+  "note": "All 66 labels compared to map; old scopes and edge conditions traced to body or explicit Sources gaps. None of six rewrites shrank by25%; no deletion/rename."
+}

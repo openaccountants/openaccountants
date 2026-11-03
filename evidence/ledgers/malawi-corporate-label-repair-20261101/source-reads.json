@@ -1,0 +1,73 @@
+{
+  "sources": [
+    {
+      "id": "D1",
+      "official_url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content",
+      "pdf_sha256": "7b88a2aedc98847d243abfcd651869b5ff106df71e06f9cf5f0a9542a306fc46",
+      "pdf_bytes": 164670,
+      "reader_sha256": "ef2e34c30383ab72355e287d447c0b2ac681b50bd7b7ca3d8df98417c5747e84",
+      "read_on": "2026-11-01",
+      "actual_scope": "Act36/2025s5, printedp4 and neighbouring66A/66B/s6 text. Cached page4 visually reread; short Act was previously read in full.",
+      "exact_quote": "deleting paragraph (hb).",
+      "visual_capture_sha256": "264277fa54d7106b8d76191ff20071122e7ae202b2ce1cf271c686453386cff8",
+      "cached_visual_capture": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/malawi-pack-2026-11-01/sources/tax-dec2025-page4.png",
+      "fresh_remote_fetch": false,
+      "operative_law_or_commencement_accepted": false
+    },
+    {
+      "id": "D2",
+      "official_url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+      "pdf_sha256": "381000c90309e1685cbb6f9e5ee338e14307978e56cf9b50faae2971c45f60e2",
+      "pdf_bytes": 822241,
+      "reader_sha256": "cd249b19445665c35fd5afafa4a60603031928b4f544e7d9487d69cb5b60afcc",
+      "read_on": "2026-11-01",
+      "actual_scope": "Historical principal First Schedule printedp86, paragraphs(hb),(hc),(hd) and adjacent(ha)/(i); page86 visually reread from reviewer cached render. Long Act NOT read in full for this repair.",
+      "exact_quote": "(hc) gains from sale of shares traded on the stock exchange if those shares are held by taxpayer for not less than one year;",
+      "visual_capture_sha256": "23726c85a5479b42fb82d64dbc446a82eb22ae1a7aa44add733301b11949db65",
+      "cached_visual_capture": "/tmp/mw-share-independent-review/principal-86.png",
+      "fresh_remote_fetch": false,
+      "operative_law_or_commencement_accepted": false
+    }
+  ],
+  "accepted_existing_source_verdicts": [
+    {
+      "id": "S19",
+      "guide_section": "Transition / Sources hold",
+      "figure_or_rule": "December2025 enacted deletion says(hb), not historical(hc); no silent equivalence",
+      "source": "tax-dec2025",
+      "act_article": "Act36/2025 s5",
+      "printed_page": "4",
+      "official_url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content",
+      "exact_quote": "deleting paragraph (hb).",
+      "read_on": "2026-11-01",
+      "status": "Verified literal deletion; its historical paragraph chain remains unresolved",
+      "verdict": "SUPPORTED_AT_STATED_CONDITIONAL_SOURCE_SCOPE",
+      "reviewer_decisive_quote": "deleting paragraph (hb).",
+      "cached_reader_quote_match_whitespace_only": true,
+      "independent_pdftotext_quote_match": true,
+      "source_pdf_sha256": "7b88a2aedc98847d243abfcd651869b5ff106df71e06f9cf5f0a9542a306fc46",
+      "reviewer_reason": "Original Act36/2025p4 visually says delete(hb), including italic parenthetical. Original printed text controls over MRA removal summary. Guide expressly refuses equivalence to older(hc).",
+      "operative_current_law_accepted": false
+    },
+    {
+      "id": "S20",
+      "guide_section": "Transition / Sources hold",
+      "figure_or_rule": "Historical(hc) holding-period exemption; not revived as current exemption",
+      "source": "tax-principal",
+      "act_article": "First Schedule(hc)",
+      "printed_page": "86",
+      "official_url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
+      "exact_quote": "gains from sale of shares traded on the stock",
+      "read_on": "2026-11-01",
+      "status": "Historical only; current applicability NOT established",
+      "verdict": "SUPPORTED_AT_STATED_CONDITIONAL_SOURCE_SCOPE",
+      "reviewer_decisive_quote": "gains from sale of shares traded on the stock",
+      "cached_reader_quote_match_whitespace_only": true,
+      "independent_pdftotext_quote_match": true,
+      "source_pdf_sha256": "381000c90309e1685cbb6f9e5ee338e14307978e56cf9b50faae2971c45f60e2",
+      "reviewer_reason": "Original principalp86 visually places deposit-interest paragraph at(hb), listed-share one-year holding exemption at(hc), personal/domestic assets at(hd).2023/2024/both2025 and2026 amendment screens do not provide the missing label chain. Current/earlier gain treatment unresolved.",
+      "operative_current_law_accepted": false
+    }
+  ],
+  "no_new_source_law_conclusion": "Literal paragraph mismatch only. No conclusion that holding-period exemption is removed or remains available; complete operative chain remains unresolved."
+}

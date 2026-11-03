@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "reviewer": "Independent follow-up by original Gabon reviewer",
+  "original_commit": "3d6bb690a8801923019a1cadadd2f7d6f31e8945",
+  "path": "docs/research/2026-11-01-gabon-review/all-rule-review.csv",
+  "before_sha256": "63eacf8624cb3b73a3e1f31d3061813029664b5f599fec8f2c028ab27dddbc66",
+  "after_sha256": "ff12ffd3886ec90e95ed189abdc47c8f467962176f64b8b34a6da97a2f868a2b",
+  "before_bytes": 25517,
+  "after_bytes": 25423,
+  "removed_cr_bytes": 94,
+  "original_crlf_count": 94,
+  "normalized_lf_count": 94,
+  "parsed_rows_including_header": 94,
+  "rule_rows": 93,
+  "columns_per_row": 5,
+  "checks": {
+    "exact_crlf_to_lf_equivalence": true,
+    "parsed_rows_equal": true,
+    "original_has_no_bare_cr": true,
+    "normalized_contains_no_cr": true,
+    "before_hash_matches_parent_receipt": true,
+    "after_hash_matches_parent_receipt": true,
+    "only_changed_tracked_file_is_csv": true
+  },
+  "parent_reconciliation_receipt_sha256": "f80ade8004423cd7b2973e06c93b08d78eb25f02333871810319804f5f72396f",
+  "conclusion": "Accepted as CRLF-to-LF formatting only. Every CSV field is identical. Original bytes remain in the named Git commit. No substantive review or tax-content change; prior CLOSURE.md acceptance and limits unchanged.",
+  "reviewer_actions": "Wrote only this follow-up receipt. No CSV, Guide, ledger, source or other historical receipt edited; no commit or push."
+}

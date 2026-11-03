@@ -1,0 +1,72 @@
+{
+  "id": "F2",
+  "identified_by": "parent final template gate; independently confirmed by reviewer",
+  "policy": "docs/skill-template.md, Checks before you open a PR and Platform-written keys",
+  "policy_quote": "Do not add or edit them in a PR",
+  "problem": "The two new TP/XB files copied review_status, trust_label, license and a stamped CTA from an existing Guide. Byte-matching an existing template does not satisfy the prohibition on adding platform-owned content to a new file.",
+  "reviewer_correction": "The initial preservation receipt correctly observed template equality but incorrectly treated that as sufficient new-file compliance. That compliance implication is superseded; source-rule and arithmetic verdicts are unaffected. The writer-record copy statement is also superseded by the additive parent correction record, not erased.",
+  "status": "closed",
+  "remedy": "Only those three new-file frontmatter keys and stamped CTA removed. Required tier2, opening general-reference notice, legal method, source dates/holds and all case blocks remain. Existing exported Guide fields and CTAs remain untouched.",
+  "records": [
+    {
+      "file": "skills/mali/ml-transfer-pricing.md",
+      "before_sha256": "f24490713fc5c52eb31fc11af5ea910e333a33a395a90d11c440ef470a598b7e",
+      "accepted_sha256": "f8dd043b10d003ae5ec707b0d6e920527bd8a2e4da68794cdd8aa9ca87e218f0",
+      "change_exactly_remove_three_platform_keys_and_stamped_CTA": true,
+      "tier_2_and_opening_notice_retained": true,
+      "all_substantive_source_text_holds_and_two_cases_byte_identical": true
+    },
+    {
+      "file": "skills/mali/ml-cross-border-tax.md",
+      "before_sha256": "ef995563853aef80d65c85ed18823b50ec216d539ca4042667e729f964f40a6d",
+      "accepted_sha256": "e278a272fc4c9ad36387101d3dd41324cc54ea588959fc8f887ccd34fea95e85",
+      "change_exactly_remove_three_platform_keys_and_stamped_CTA": true,
+      "tier_2_and_opening_notice_retained": true,
+      "all_substantive_source_text_holds_and_two_cases_byte_identical": true
+    }
+  ],
+  "legacy_checks": [
+    {
+      "file": "skills/mali/ml-company-formation.md",
+      "all_platform_fields_and_full_CTA_preserved": true,
+      "full_bytes_unchanged": false,
+      "intentional_law_repair": true
+    },
+    {
+      "file": "skills/mali/ml-corporate-income-tax.md",
+      "all_platform_fields_and_full_CTA_preserved": true,
+      "full_bytes_unchanged": true,
+      "intentional_law_repair": false
+    },
+    {
+      "file": "skills/mali/ml-income-tax.md",
+      "all_platform_fields_and_full_CTA_preserved": true,
+      "full_bytes_unchanged": true,
+      "intentional_law_repair": false
+    },
+    {
+      "file": "skills/mali/ml-payroll-social.md",
+      "all_platform_fields_and_full_CTA_preserved": true,
+      "full_bytes_unchanged": true,
+      "intentional_law_repair": false
+    },
+    {
+      "file": "skills/mali/ml-solidarity-contribution.md",
+      "all_platform_fields_and_full_CTA_preserved": true,
+      "full_bytes_unchanged": true,
+      "intentional_law_repair": false
+    },
+    {
+      "file": "skills/mali/ml-tax-overview.md",
+      "all_platform_fields_and_full_CTA_preserved": true,
+      "full_bytes_unchanged": true,
+      "intentional_law_repair": false
+    },
+    {
+      "file": "skills/mali/ml-vat-gst.md",
+      "all_platform_fields_and_full_CTA_preserved": true,
+      "full_bytes_unchanged": true,
+      "intentional_law_repair": false
+    }
+  ]
+}

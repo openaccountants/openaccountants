@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-01",
+  "decision": "accepted within expressly partial scope",
+  "closed_findings": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "frozen_head": "29c8b477f1d659c0042a6ae9de5b10ef615a98d0",
+  "actual_full_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "accepted_candidate_sha256": "233d9e7f0e2df6e1d6c65df8713950d7e97126cfecb564a051fdb8af8c238510",
+  "repair_candidate_sha256": "a84e85a093c2110d4721f1a40e25466c95efcbbdc5f0a8fce55c2351fe6bbd84",
+  "original_review_freeze_sha256": "d979284df7a131f493db0c6b347fad58657d6296a3d4d1b44c386d758c984001",
+  "original_review_preserved": true,
+  "effective_ledger_rows": 47,
+  "changed_effective_rows": [
+    "C15",
+    "C19",
+    "C35",
+    "C37",
+    "C45"
+  ],
+  "unchanged_other_objects": 42,
+  "supplemental_source_entries": 13,
+  "all_decisive_repair_quotes_and_conditions_checked_against_actual_pages": true,
+  "all_effective_rows_and_source_supplement_read_date": "2026-11-01",
+  "all_five_cases_arithmetic_and_predicates_pass_with_stated_assumptions": true,
+  "all_requested_checks_pass": true,
+  "preserved_prior_tracked_files": 89,
+  "preserved_initial_review_files": 16,
+  "old_guide_bodies_unchanged_since_frozen_capital_head": 9,
+  "status_only_replacements": 5,
+  "status_variants": [
+    {
+      "path": "skills/burundi/bi-capital-income-tax.md",
+      "before_sha256": "233d9e7f0e2df6e1d6c65df8713950d7e97126cfecb564a051fdb8af8c238510",
+      "after_sha256": "f63f3372afca68e37ab4c767c8e483a48962205eccdfe7b5d88b05615a008d04"
+    },
+    {
+      "path": "skills/burundi/README.md",
+      "before_sha256": "22c30bc4c238d4a1f0861a3757728bb747194a3dd0fe55b75b69d3e3d1ecf030",
+      "after_sha256": "2fde4b1b4a17cd0f502e02c27ad2b8ef6f35ea930f40fd3bb500cc2a378d775e"
+    }
+  ],
+  "all_seven_domains_partial": true,
+  "no_currentness_certificate_accountant_attestation_authenticated_filing_or_merge_permission": true,
+  "guide_readme_status_edits_commits_pushes_github_actions_or_subagents_by_reviewer": false,
+  "source_scope": "Focused reread of actual 2021 correction/valuation/seller-paid/final clauses and actual 2025 operative/repeal/signature clauses. Other initial findings/holds preserved; no broader tariff expansion."
+}

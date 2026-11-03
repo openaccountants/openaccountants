@@ -1,0 +1,18 @@
+{
+  "scope": "Factual status reconciliation after this source-fidelity closure only",
+  "allowed_files": [
+    "skills/sierra-leone/README.md",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/writer-record.md",
+    "skills/sierra-leone/sl-company-formation.md",
+    "skills/sierra-leone/sl-tax-overview.md",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-tax-overview.md"
+  ],
+  "allowed_change": "Replace stale independent review pending status sentences with factual completed conditional source-review wording, naming this closure and recorded repairs where useful. README may record review result/remaining holds, not upgrade completeness. Writer-record Open work may change independent review from pending to complete while all remaining source/currentness work stays open. Human ledger header may state completed review without altering rows. Two Guide closing status sentences only; no other Guide body edits.",
+  "required_receipt": "Parent saves exact before/after SHA256 for every touched file plus literal before/after status text or a zero-context diff, demonstrating only permitted status changes. No fresh source-review cycle needed for precisely this reconciliation.",
+  "forbidden": "No frontmatter/trust fields, CTA suffix, rules/conditions/figures/sources/quotes/examples/old-topic dispositions, completeness claims, prior review evidence or prior six Guides may change. No accountant attestation or full operative-currentness claim.",
+  "accepted_pre_status_guide_hashes": {
+    "skills/sierra-leone/sl-company-formation.md": "923e7324322b36c1633ef91abd4b37e1c4f6d827b72d2ad5eb048540026601dc",
+    "skills/sierra-leone/sl-tax-overview.md": "faba635e7b43042fa4a08e8df7e9a32234adf838ce7805708c9a24be096676b5"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "captures": [
+    {
+      "path": "../sources/cdi-2026.pdf",
+      "bytes": 2788548,
+      "sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "matched": true,
+      "source": "CDI"
+    },
+    {
+      "path": "../sources/cdi-2026.txt",
+      "bytes": 975204,
+      "sha256": "6165252fc74f92531324a1d7581ddad6df25fb0dc5fbc836ba418eeee2400445",
+      "matched": true,
+      "source": "CDI"
+    },
+    {
+      "path": "../sources/cpf-2026.pdf",
+      "bytes": 1752311,
+      "sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "matched": true,
+      "source": "CPF"
+    },
+    {
+      "path": "../sources/cpf-2026.txt",
+      "bytes": 495529,
+      "sha256": "e3967fda31d17116edb819938d0b0eb6463a68a9b1d2d09c27aa4a037ed3f1f1",
+      "matched": true,
+      "source": "CPF"
+    },
+    {
+      "path": "../sources/lfi-2026.pdf",
+      "bytes": 3972881,
+      "sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "matched": true,
+      "source": "LFI"
+    },
+    {
+      "path": "../sources/lfi-2026.txt",
+      "bytes": 372006,
+      "sha256": "d2dbea0e21dbddbf060549740e0e0c5add16b51fc866cabda4dfb0396b023e25",
+      "matched": true,
+      "source": "LFI"
+    },
+    {
+      "path": "../sources/lfr-2026.pdf",
+      "bytes": 1907801,
+      "sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "matched": true,
+      "source": "LFR"
+    },
+    {
+      "path": "../sources/lfr-2026.txt",
+      "bytes": 142702,
+      "sha256": "33756e6834fcbef06b95afadb62d5b6e33b6f9e6d9b09d51b0239c75cfae1c6b",
+      "matched": true,
+      "source": "LFR"
+    }
+  ],
+  "fresh_pdf_extracts": [
+    {
+      "source": "cdi",
+      "pdf_pages": [
+        145,
+        150
+      ],
+      "extract": "../sources/property-review-20261101/cdi-pdf-pages-145-150.txt",
+      "sha256": "84987ef1bd08a3a3f67e4fc0d13bfe900a29da1cb90ea073ce048a109655bb31"
+    },
+    {
+      "source": "cdi",
+      "pdf_pages": [
+        173,
+        175
+      ],
+      "extract": "../sources/property-review-20261101/cdi-pdf-pages-173-175.txt",
+      "sha256": "944d40985bb40a4e92704b37148ac5b224456937c67e12ff0aab0687a874928b"
+    },
+    {
+      "source": "cdi",
+      "pdf_pages": [
+        178,
+        178
+      ],
+      "extract": "../sources/property-review-20261101/cdi-pdf-pages-178-178.txt",
+      "sha256": "11e5333a23bc1d7812b5afef8562009bd20496b5abddef1b62d2fecfbd416cf5"
+    },
+    {
+      "source": "cdi",
+      "pdf_pages": [
+        201,
+        201
+      ],
+      "extract": "../sources/property-review-20261101/cdi-pdf-pages-201-201.txt",
+      "sha256": "8ba6b9bcca5f56a86bf3224ef8e17cbae1affd2112b82fa794e02e4ebaae4cb0"
+    },
+    {
+      "source": "cdi",
+      "pdf_pages": [
+        211,
+        213
+      ],
+      "extract": "../sources/property-review-20261101/cdi-pdf-pages-211-213.txt",
+      "sha256": "260b4a54124222c5f85b6c58a632c2b5b95022da6e55e8637abeca27996dbca0"
+    },
+    {
+      "source": "cpf",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "extract": "../sources/property-review-20261101/cpf-pdf-pages-31-32.txt",
+      "sha256": "e51e6d8eeb4555a6f8366c73200064deba5ec2a42bf6e30acfadfdb655d18542"
+    },
+    {
+      "source": "cpf",
+      "pdf_pages": [
+        128,
+        129
+      ],
+      "extract": "../sources/property-review-20261101/cpf-pdf-pages-128-129.txt",
+      "sha256": "9baa7efc638853b103dce10bcc5c7064576bd32bd85b7e63081ab71da6a7c048"
+    },
+    {
+      "source": "cpf",
+      "pdf_pages": [
+        133,
+        134
+      ],
+      "extract": "../sources/property-review-20261101/cpf-pdf-pages-133-134.txt",
+      "sha256": "f6d277033681e8d5851c624c56c806f018c7e916b82f1cdd43a72bbe0721d694"
+    },
+    {
+      "source": "lfi",
+      "pdf_pages": [
+        53,
+        56
+      ],
+      "extract": "../sources/property-review-20261101/lfi-pdf-pages-53-56.txt",
+      "sha256": "24fdaca5df9d5e5f2d3f018a84708964978d67b11ff46f60435cdba2f4ce2f9d"
+    },
+    {
+      "source": "lfi",
+      "pdf_pages": [
+        66,
+        67
+      ],
+      "extract": "../sources/property-review-20261101/lfi-pdf-pages-66-67.txt",
+      "sha256": "da9f8905cf55ba08cf41636de15b70e13d4050ec874bd49bdab7f20a8b898ab9"
+    },
+    {
+      "source": "lfi",
+      "pdf_pages": [
+        77,
+        80
+      ],
+      "extract": "../sources/property-review-20261101/lfi-pdf-pages-77-80.txt",
+      "sha256": "0922aba680d3edc71f6fc3902512d1a14376d333fd18533c049fdbb4ceea9d08"
+    },
+    {
+      "source": "lfi",
+      "pdf_pages": [
+        131,
+        131
+      ],
+      "extract": "../sources/property-review-20261101/lfi-pdf-pages-131-131.txt",
+      "sha256": "953e8b3765ce819d5484c115b1717e15f9469edd045a30233238878504ca8a4a"
+    },
+    {
+      "source": "lfr",
+      "pdf_pages": [
+        30,
+        32
+      ],
+      "extract": "../sources/property-review-20261101/lfr-pdf-pages-30-32.txt",
+      "sha256": "ee8a55434df3955919ecacef0e7ca2985e4f93c05cb14842e16c25dea0373bb0"
+    },
+    {
+      "source": "lfr",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "extract": "../sources/property-review-20261101/lfr-pdf-pages-36-37.txt",
+      "sha256": "f6519033fa36ea999e01e5d260837282408e0f20005d91147c789a45e267ef86"
+    },
+    {
+      "source": "lfr",
+      "pdf_pages": [
+        52,
+        52
+      ],
+      "extract": "../sources/property-review-20261101/lfr-pdf-pages-52-52.txt",
+      "sha256": "49c6ce4e5097d858e1947ccd8c9b705f7fa03c37ac83309fc6a6d16ecb531b32"
+    }
+  ],
+  "visually_inspected_pdf_pages": {
+    "CDI": [
+      149,
+      150
+    ],
+    "CPF": [
+      134
+    ],
+    "LFI": [
+      131
+    ],
+    "LFR": [
+      37,
+      52
+    ]
+  },
+  "read_basis": "Original cached official PDFs, newly extracted full page ranges and original extracts. Not an HTTP-success read claim. Full extracts and rendered pages remain outside Git. Exact activation dates not established."
+}

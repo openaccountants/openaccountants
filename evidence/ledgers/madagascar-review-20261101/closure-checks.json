@@ -1,0 +1,177 @@
+{
+  "frozen_head": "33539d0e61e92ab2c00795c8934fe4a3526cd927",
+  "expected_changed_paths": [
+    "evidence/ledgers/mg-corporate-income-tax.md",
+    "evidence/ledgers/mg-transfer-pricing.md",
+    "evidence/ledgers/mg-vat-gst.md",
+    "skills/madagascar/mg-corporate-income-tax.md",
+    "skills/madagascar/mg-transfer-pricing.md",
+    "skills/madagascar/mg-vat-gst.md"
+  ],
+  "actual_changed_paths": [
+    "evidence/ledgers/mg-corporate-income-tax.md",
+    "evidence/ledgers/mg-transfer-pricing.md",
+    "evidence/ledgers/mg-vat-gst.md",
+    "skills/madagascar/mg-corporate-income-tax.md",
+    "skills/madagascar/mg-transfer-pricing.md",
+    "skills/madagascar/mg-vat-gst.md"
+  ],
+  "scope_matches": true,
+  "repair_map_matches": [
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "evidence/ledgers/mg-vat-gst.md",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "evidence/ledgers/mg-corporate-income-tax.md",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "evidence/ledgers/mg-transfer-pricing.md",
+      "before_matches": true,
+      "after_matches": true
+    }
+  ],
+  "CTA": [
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "matches": true
+    }
+  ],
+  "examples_byte_identical": [
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "matches": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "matches": true
+    }
+  ],
+  "initial_review_files": [
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-input-hashes.json",
+      "sha256": "fe6b730083c1fa81d585fa3ba74183687ce276709a5a08b1377a33270c75ea95",
+      "matches_committed_initial_review": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-review.md",
+      "sha256": "b388593330051121b04385335ebc13e982dc9436bb65ee0118c2db3050053f89",
+      "matches_committed_initial_review": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-quote-check.json",
+      "sha256": "c225556a77ae58f2c26dcfcb7f3ad3e8e03d470c01fa68f5850e5140521990af",
+      "matches_committed_initial_review": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-row-review.json",
+      "sha256": "11217a54edd37875a8f58b26d557193584ee45cd898c6a024740ae43c219e751",
+      "matches_committed_initial_review": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/machine-checks.json",
+      "sha256": "1abd67cc15983077700f473785b2ef79eb23edfaa5691dea72b9e260b8a64bd6",
+      "matches_committed_initial_review": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/preservation-check.json",
+      "sha256": "a957eef400cc26ec67febc5cd9ee9c0877d56695419ad36f40a3da7611c829a7",
+      "matches_committed_initial_review": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/source-hash-check.json",
+      "sha256": "587c699f4816aca6f2be1e03b75658005f175f9b0ae4ab5f8da86085db0f3da4",
+      "matches_committed_initial_review": true
+    }
+  ],
+  "added_ledger_rows": [
+    {
+      "ledger": "mg-vat-gst.md",
+      "id": "Repair-F2a",
+      "source_quote_found": true
+    },
+    {
+      "ledger": "mg-vat-gst.md",
+      "id": "Repair-F2b",
+      "source_quote_found": true
+    },
+    {
+      "ledger": "mg-transfer-pricing.md",
+      "id": "Repair-F4a",
+      "source_quote_found": true
+    },
+    {
+      "ledger": "mg-transfer-pricing.md",
+      "id": "Repair-F4b",
+      "source_quote_found": true
+    },
+    {
+      "ledger": "mg-transfer-pricing.md",
+      "id": "Repair-F4c",
+      "source_quote_found": true
+    }
+  ],
+  "source_hashes_match": true
+}

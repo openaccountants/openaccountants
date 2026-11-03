@@ -1,0 +1,34 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "status": "open",
+    "ledger_row": "bj-business-income-tax:42",
+    "file": "skills/benin/bj-business-income-tax.md",
+    "line": 56,
+    "source_pdf_pages": [
+      35,
+      36
+    ],
+    "act_article": "CGI60(5)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "exact_decisive_quote": "à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé",
+    "problem": "The IBA-to-IRF removal summary omits the explicit fixed-asset disposal gain/loss carve-out. Its present wording can divert those amounts out of business profit.",
+    "repair": "Add the exclusion next to the removal rule in The base step4 and mirror it in ledger row42 (JSON and Markdown), with the decisive quote and PDF35-36 locator. Do not invent the held partial-use charge allocation. Preserve the frozen writer/reviewer findings as separate historical evidence."
+  },
+  {
+    "id": "F2",
+    "priority": "P3",
+    "status": "open",
+    "ledger_row": "bj-business-income-tax:52",
+    "file": "evidence/ledgers/benin-business-20261101/bj-business-income-tax.json",
+    "act_article": "CGI45(1)",
+    "source_pdf_pages": [
+      28
+    ],
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=28",
+    "exact_decisive_quote": "Pour l’établissement de l’impôt sur le revenu",
+    "problem": "The primary quote is labelled exact but starts with lower-case pour; the original starts with upper-case Pour. Rule substance is supported.",
+    "repair": "Capitalise the initial P in the primary exact quote for row52 in both JSON and Markdown ledger forms."
+  }
+]

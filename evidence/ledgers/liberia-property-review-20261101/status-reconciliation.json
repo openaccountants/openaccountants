@@ -1,0 +1,38 @@
+{
+  "accepted_review": "REVIEW.md",
+  "only_permitted_status_substitutions_applied": true,
+  "changes": [
+    {
+      "path": "skills/liberia/lr-property-tax.md",
+      "before_sha256": "c61856ab1dfb0bd9cb53f3a4a46f9d2c330bd699dad4d71c79b550fa99938197",
+      "after_sha256": "be853aef6c63e8943e28566dd57c008c900ad69bdaae84e956c2ac529417e01e",
+      "literal_replacements": [
+        {
+          "from": "This is a conditional source-cited draft awaiting independent review.",
+          "to": "This is a conditional source-cited draft independently reviewed for source fidelity on 2026-11-01."
+        },
+        {
+          "from": "Source fidelity and independent review of this new job remain pending;",
+          "to": "Source fidelity for this new job was independently reviewed on 2026-11-01;"
+        }
+      ]
+    },
+    {
+      "path": "skills/liberia/README.md",
+      "before_sha256": "6e8d21c78138918db895d4b873bd17144b7009453e3373682775aeae8ee55852",
+      "after_sha256": "1550f489d38b6887499938098623bcfba1256a552a83f112e55fccf22aeefa62",
+      "literal_replacements": [
+        {
+          "from": "Additional conditional draft; independent review pending",
+          "to": "Additional conditional draft; source fidelity independently reviewed 2026-11-01"
+        },
+        {
+          "from": "is pending independent review. The earlier eight Guides",
+          "to": "was independently reviewed for source fidelity on 2026-11-01. The earlier eight Guides"
+        }
+      ]
+    }
+  ],
+  "writer_evidence_unchanged": true,
+  "remaining_holds_unchanged": true
+}

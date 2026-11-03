@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-01",
+  "initial_frozen_head": "26e1b85c0cbb72923709586bdaa76b694e9f6873",
+  "changes": [
+    "Both ordinary-fine passages and ledger corporate38/income53 now include CGI757(2)500k/1.5m branches; TP branches kept separate.",
+    "Corporate56/ledger13 narrowed to managing associates of capital companies and their spouses.",
+    "Old corporatetopic41 IRCM capital reimbursements and director tanti\u00e8mes/attendance fees restored as an explicit Sources hold, with destination disposition corrected."
+  ],
+  "parent_actual_source_read": "Official CGI2026 printed35 art56 and neighbour57; printed304 art757(1)\u2013(4), preceding756 and following758. Cached original extraction lines1980\u20132020,23205\u201323288.",
+  "candidate_files": {
+    "skills/burkina-faso/bf-corporate-tax.md": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+    "skills/burkina-faso/bf-income-tax.md": "ba4a1fb10dc61afcb4ce5672482b5b787245eb43d7add4ab6cc8900aebb96a13",
+    "evidence/burkina-faso-remaining-20261101/ledgers/bf-corporate-tax.md": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+    "evidence/burkina-faso-remaining-20261101/ledgers/bf-income-tax.md": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+    "evidence/burkina-faso-remaining-20261101/old-topic-destinations.md": "944fc91bf89df1e01408cc37439db22a71f118c687e0d2aa37ab3b12b86bca47"
+  },
+  "lost_substantive_topic_destinations_restored": 1,
+  "prior_evidence": "Original frozen receipts and immutable predecessor line hashes retained unchanged; candidate delta is bound here."
+}

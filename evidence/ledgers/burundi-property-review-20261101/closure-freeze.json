@@ -1,0 +1,57 @@
+{
+  "read_date": "2026-11-01",
+  "decision": "accepted-independent-AI-source-fidelity-partial-scope",
+  "frozen_original_writer_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "repair_candidate_sha256": "dc19d6b9927f66720018232514936290e671a102368eea4c7e56b52571d17bbf",
+  "accepted_files": [
+    {
+      "path": "skills/burundi/bi-property-transactions.md",
+      "sha256": "1a803b529c02dc5b4dc199c3e37622b48c5a8dc3be8ec2f85290761386595b1e"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/bi-property-transactions.json",
+      "sha256": "33ada1d9a1635e302a5f9639b126afd9895a8a364bd8c3a5ffb272b9c8e334e7"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md",
+      "sha256": "7913338e454169036e7053cedbf69270a4189d8a0ecf5da6c44b5e84933817f5"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/repaired-sources-read.json",
+      "sha256": "2a4e1e6f5625865c799580903945e46df757670ecaa3dcee6cbdeafe86051f35"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/reviewer-repairs.json",
+      "sha256": "51393ac5f6d22151e7ea09eba7edac0363212b50fbfa40bd7f6e12ce779050eb"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/repair-checks.json",
+      "sha256": "a1327b69cc8aa50a8e94fe9947e4006a8ce58a34d000908d02b5f8815646f6af"
+    }
+  ],
+  "closure_files": [
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/closure.md",
+      "sha256": "43a5ae2cc22a3ffd4622d923ede211df91d15f6525c70dae73e4ea88e9de55f0",
+      "bytes": 7185
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/closure-checks.py",
+      "sha256": "1cdd7d67a3916672b79e35b5e4bac6858a65acb136943a1d9d60b427b8435788",
+      "bytes": 6167
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/closure-checks.json",
+      "sha256": "61f354ab5170ae7804e61af76bae929cceca86f32f5c7b28345193085be7ce2b",
+      "bytes": 9329
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/status-only-permission.json",
+      "sha256": "5987350d454add474b3ecfb0af9b863d1a8657c48809e45ab435edbcf42e48d5",
+      "bytes": 3041
+    }
+  ],
+  "initial_review_receipt_sha256": "e8477f4589cfb79eaf1a86665abc54d09e72af6577be63428347caae207553a9",
+  "no_open_findings": true,
+  "unresolved_scope_holds_retained": true
+}

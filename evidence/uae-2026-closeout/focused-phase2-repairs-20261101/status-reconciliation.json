@@ -1,0 +1,58 @@
+{
+  "permission_file": "evidence/uae-2026-closeout/independent-final-focused-20261101/authorized-status-changes.json",
+  "status_changes": {
+    "exact_status_literal": "PASS / PARTIAL_RESEARCH_PUBLICATION",
+    "readme_replacements": [
+      {
+        "old": "The three team tax Guides remain tier 2 with independent review pending.",
+        "new": "The three team tax Guides remain tier 2; independent source review is complete for their stated partial scope."
+      },
+      {
+        "old": "Final independent correction closure pending.",
+        "new": "Independent source review: PASS for conditional PARTIAL research publication of the three team Guides; the stated specialist, historical, currentness and filing holds remain."
+      }
+    ],
+    "readme_before_sha256": "ab08bfd2f43a8f8cdf4d94200b86aefc566f6a2963f8e327cb36f3c22f91cc72",
+    "readme_expected_after_sha256": "df695f57bb7ebda5e21e32b16a36a7d9a6e96b075153096246716596ecbbdcc1",
+    "current_candidate_before_sha256": "a94bc132c8fc6a82183d91946b44dcdd7e197b691db2d04b5adf1b9f84cc3648",
+    "current_candidate_expected_after_sha256": "951ae1a4ca97d693b70ce5d523609066d503e813c0dea9bb1a91a52ee299a06a",
+    "authorization": "Parent may apply exactly these status-only changes after this PASS; snapshot preserved here. No Guide or platform-owned review metadata change authorized by this review.",
+    "current_candidate_replacement_file": "CURRENT-CANDIDATE.authorized-after.md"
+  },
+  "guide_hashes": {
+    "ae-corporate-tax": "ec9686a8b1ac15fef08e75aabfc34a4e5dca73008bcbe71bdf510a654ef50a70",
+    "ae-payroll-social": "ad563abe4061a5369177842f5905aa9df59114c25191efe395a8616702c2003e",
+    "uae-vat": "9d0152d4fb5d846b851413b67b436607585e22cd0e46a3232ebd0f0fdf5a867f"
+  },
+  "independent_evidence_hashes": {
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/predecessor-destination-continuation.json": "e6c1061333373e9fb2beb0d44cdc0a2391eda7c3400ea617dbd28a6c44eff973",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/receipt-sha256.json": "7f3f6600c1c5f52635a7f034fe4a319bb9322f5e7144dc304f83e58eb9e51ee6",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/per-row-continuation-status.json": "5bca0798cbf29072f40f0b0aa0f0f29b91b876c3fca8997805a673eb1250daf6",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/continuation-summary.json": "b11ba66aa1984ee0886bc750bd7bccea67f03ce5de7f5e6db25ee3baa65b8c6b",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/focused-eight-groups.json": "0107cc75741f5a743c4a0459163b3c752d50755b0566c091e0ed5aa21efeb14a",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/changed-placement-reconciliation.json": "9d44036487521ba6b8a1e3b454fac8bae996b3140548177b3a12a20472064d79",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/review-input-identities.json": "c875c17bb72eb8dd0d465af5e99f07bd9e37e79c39c627fb3cefec1027b0b410",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/findings.json": "89dc27882dcbe1a98781dd39725359e0293e85c7108091303c534be52f3bd79e",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/grouped-source-acceptance.json": "f4cc9bbf83fa1ac44fab9f521b4b3648f8f1d114e2ef82e1f1d114618bfde5bf",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/REVIEW.md": "f51093d7fd426f52bcbdcf16871d1015118f8056f00cf682cb3f098cbdac523f",
+    "evidence/uae-2026-closeout/independent-continuation-684a21d8/affected-case-and-preservation.json": "f8a424514d5ce460716638cfff77cac9ca18bb4150092ac66d972cf02a702f4a",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/remaining168-placement-dispositions.json": "01caeb3441e348d1c8850cef1756348a89dd9e3fd067f1f5592edf22a5e2eb4c",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/receipt-sha256.json": "79c7cf5696f7db7fdfb736d92d52922e1ade422057296108ea4d7ff973a97642",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/source-addenda.json": "fbd063f506ae76a1870f32f2def8b47fad2abbd41b2a49e16d07121486171bdf",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/superseding-disposition.json": "d5db74f81f247245bc229713389ef535e543b806d49b8e338c5e03058dcd019e",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/four-finding-closure.json": "d1dc1d563b44acb00ec4187021a5ef0302fbd856a8c2be9bc43fa0dba5d41418",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/REVIEW.md": "0761f90978e42944807b2db911665cdc8e058490c6fb5e3d1290fbf4c8c6ddf1",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/topic-class-spotchecks.json": "763727a51c6831cb8c902f86e58c1d6da4a2d34afeab92bf2676b4062a3eb335",
+    "evidence/uae-2026-closeout/independent-continuation-phase2-20261101/remaining-findings.json": "ebe7b53473f9faa564c67f259b9888cc59b86a0ee7d0b762f0c257c74a68a816",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/receipt-sha256.json": "4f6bd52d4429bbd5162481011ca053a5d4ab6985e9682398c7036268626c948a",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/authorized-status-changes.json": "88dfbe7eb50909f5ed2401f096830732a862b8ed890ba229a81ccdce43789999",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/README.authorized-after.md": "df695f57bb7ebda5e21e32b16a36a7d9a6e96b075153096246716596ecbbdcc1",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/README.before.md": "ab08bfd2f43a8f8cdf4d94200b86aefc566f6a2963f8e327cb36f3c22f91cc72",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/CURRENT-CANDIDATE.before.md": "a94bc132c8fc6a82183d91946b44dcdd7e197b691db2d04b5adf1b9f84cc3648",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/final-closure-and-identities.json": "73d6b28d055eb97aa6da4eb9cdfbc1d018473acecca8057b15c0fa7995065a21",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/CURRENT-CANDIDATE.authorized-after.md": "951ae1a4ca97d693b70ce5d523609066d503e813c0dea9bb1a91a52ee299a06a",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/REVIEW.md": "6787f3ae09581ecfc2d419485b1a027ce190fdfb4255ee1f51f863556ab19a69",
+    "evidence/uae-2026-closeout/independent-final-focused-20261101/final-placement-closure-overlay.json": "baaa5ac26cdb65d371d62dbd9a4d7370ae37c47f1e2046930fec613659594e5e"
+  },
+  "scope": "Exact2READMEstatusreplacements+authorisedcurrentpointer only; noGuide/platformreviewmetadatachange"
+}

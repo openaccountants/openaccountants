@@ -1,0 +1,79 @@
+{
+  "read_date": "2026-11-01",
+  "sources": [
+    {
+      "official_url": "https://www.lra.gov.lr/wp-content/uploads/2025/02/ANACTT1.pdf",
+      "file": "ANACTT1.pdf",
+      "bytes": 1512914,
+      "sha256": "b63e53e7c77d9a70cb7956f3befd8bd71d6c4dc6119f1f03052cd49f23d8ddd4",
+      "read_on": "2026-11-01",
+      "read_scope": "Cover, identified amendment scope/list and commencement clauses; no property-rate rule inferred",
+      "origin": "Previously captured official-source cache; actual text re-read by this writer, not receipt-only evidence",
+      "reviewer_bytes": 1512914,
+      "reviewer_sha256": "b63e53e7c77d9a70cb7956f3befd8bd71d6c4dc6119f1f03052cd49f23d8ddd4",
+      "identity_matches": true,
+      "reviewer_read_on": "2026-11-01",
+      "reviewer_read_scope": "Cached official PDF OCR full4pages including cover, amended1003/1066, preliminary and final commencement. No property chapter amendment."
+    },
+    {
+      "official_url": "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-2024-AMENDING-CERTAIN-PORTIONS-OF-CHAPTERS-8-AND-10-OF-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+      "file": "TAX-AMENDMENT-ACT-OF-2024-AMENDING-CERTAIN-PORTIONS-OF-CHAPTERS-8-AND-10-OF-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+      "bytes": 1507776,
+      "sha256": "4ee7dea9c9e4bf9280f3893e8e5623d53d1984969672364dfe1d7c8a81c99584",
+      "read_on": "2026-11-01",
+      "read_scope": "Cover, identified amendment scope/list and commencement clauses; no property-rate rule inferred",
+      "origin": "Previously captured official-source cache; actual text re-read by this writer, not receipt-only evidence",
+      "reviewer_bytes": 1507776,
+      "reviewer_sha256": "4ee7dea9c9e4bf9280f3893e8e5623d53d1984969672364dfe1d7c8a81c99584",
+      "identity_matches": true,
+      "reviewer_read_on": "2026-11-01",
+      "reviewer_read_scope": "Cached official PDF OCR cover, full preliminary/provision scope, amended806/1000/1021 and final commencement p1,3\u20134. No property-rate clause."
+    },
+    {
+      "official_url": "https://www.lra.gov.lr/wp-content/uploads/2025/02/TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+      "file": "TAX-AMENDMENT-ACT-OF-DECEMBER-2024-AMENDING-THE-LIBERIA-CONSOLIDATED-REVENUE-CODE-AS-AMENDED.pdf",
+      "bytes": 3435693,
+      "sha256": "c6c0733e0db6d185f7333d3b5b6fa668876180296e5aaeec057f3648d19db8d3",
+      "read_on": "2026-11-01",
+      "read_scope": "Cover, identified amendment scope/list and commencement clauses; no property-rate rule inferred",
+      "origin": "Previously captured official-source cache; actual text re-read by this writer, not receipt-only evidence",
+      "reviewer_bytes": 3435693,
+      "reviewer_sha256": "c6c0733e0db6d185f7333d3b5b6fa668876180296e5aaeec057f3648d19db8d3",
+      "identity_matches": true,
+      "reviewer_read_on": "2026-11-01",
+      "reviewer_read_scope": "Cached official PDF OCR coverp1, full preliminary/method/commencement p4, amended provision listp5, adjacent general filing50/proof of delivery/paymentp5\u20136 and74assessmentp7, finalcommencementp12. No Chapter20 replacement found in identified scope; no completeness certification."
+    },
+    {
+      "official_url": "https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf",
+      "file": "LRC-Amendment-December-2025.pdf",
+      "bytes": 2819192,
+      "sha256": "6d498c8d05fa33a8386bc4d2439efeaced5aa283c0c0ab984c3dd1fbc8a98d88",
+      "read_on": "2026-11-01",
+      "read_scope": "Cover, preliminary/provision list, full amended63/adjacent provisions, finalcommencement physical11; physical6 visually read",
+      "origin": "Previously captured official-source cache; actual text re-read by this writer, not receipt-only evidence",
+      "reviewer_bytes": 2819192,
+      "reviewer_sha256": "6d498c8d05fa33a8386bc4d2439efeaced5aa283c0c0ab984c3dd1fbc8a98d88",
+      "identity_matches": true,
+      "reviewer_read_on": "2026-11-01",
+      "reviewer_read_scope": "Cached source OCR cover p1; full preliminary/amendment list p5\u20136; full63 p6 with neighbouring74 p7; final commencement p11. Original PDF p6 rendered and visually inspected."
+    },
+    {
+      "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+      "file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+      "bytes": 1151092,
+      "sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+      "read_on": "2026-11-01",
+      "read_scope": "Complete Chapter20 ss2000\u20132010 physical/printed240\u2013245, including neighbours",
+      "origin": "Previously captured official-source cache; actual text re-read by this writer, not receipt-only evidence",
+      "reviewer_bytes": 1151092,
+      "reviewer_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+      "identity_matches": true,
+      "reviewer_read_on": "2026-11-01",
+      "reviewer_read_scope": "Fresh pdftotext extraction: full Chapter20 ss2000\u20132010, physical/printed240\u2013245, preceding p239 and following p246 headings; full definitions, exceptions, neighbouring provisions. P240 and244 PNGs visually inspected."
+    }
+  ],
+  "fresh_remote_access": "Code official URL inaccessible via web tool; amendment URL timed out. git fetch failed DNS. No fresh online content or fetch success claimed. Source review relies on matching cached official-PDF bytes, fresh Code extraction and rendered PDF inspections.",
+  "source_hierarchy": "Enacted handbill amendment text governs its amended sections; Code2020 property clauses are treated only as cited text. No administrative announcement, portal or secondary summary supersedes law. No absence-of-amendment inference.",
+  "raw_extracts_and_renders": "../sources/property-review-20261101 (outside Git)",
+  "no_beyond_citation_research_needed": true
+}

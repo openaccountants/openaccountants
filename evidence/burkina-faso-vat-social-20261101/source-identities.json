@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-01",
+  "sources": {
+    "cnss-ceiling-2022.pdf": {
+      "url": "https://cnssbf.org/wp-content/uploads/2024/02/arrete_no_2022-067_fixation_du_plafond_des_salaires_soumis_a_cotisation_du_regime.pdf",
+      "sha256": "3d2bdac73680e05a312e6d7c7d9f71dead313501ad0e13f43c0c1a3aa51bd573",
+      "read_date": "2026-11-01",
+      "scope": "Both scan pages; arts. 1–5, ceiling and signature/effective date, page 2 viewed."
+    },
+    "cnss-base-2023.pdf": {
+      "url": "https://cnssbf.org/wp-content/uploads/2024/02/Arrete-n%C2%B02023-017-portant-determination.pdf",
+      "sha256": "c5bb0960c4121c9b9116f1d857aa73c1f9480b045040dd7d7e4bbc0c0489ad38",
+      "read_date": "2026-11-01",
+      "scope": "Substantive pages 2–5, arts. 1–10, actual salary/benefit/exclusion clauses; pages 4–5 visually checked."
+    },
+    "cnss-risk-2023.pdf": {
+      "url": "https://cnssbf.org/wp-content/uploads/2024/02/Arrete-n%C2%B02023-018-portant-determination.pdf",
+      "sha256": "6f88294c1ee2468e38410f689deb34f0fde24fb36716c3cf654fcbd1bec9089e",
+      "read_date": "2026-11-01",
+      "scope": "Substantive pages 2–3, arts. 1–11; both viewed. Recurrence words/number inconsistency held."
+    },
+    "cnss-bnts.pdf": {
+      "url": "https://cnss.bf/wp-content/uploads/2024/07/1_Bordereau-Nominatif-des-Travailleurs-Salaries.pdf",
+      "sha256": "d96e6de38b8db91a05222175e36253dc71a4d476b115f4e3c97e07e421b28248",
+      "read_date": "2026-11-01",
+      "scope": "All three physical pages: Cot 01 front/reverse on pp1–2 and Cot 02 intercalary on p3; eleven columns, employment/income codes and simultaneous-payment/electronic instructions."
+    },
+    "cnss-summary.pdf": {
+      "url": "https://cnss.bf/wp-content/uploads/2024/07/5_Declaration-recapitulative-des-salaires.pdf",
+      "sha256": "27d53f615ab3cdc5ae71e567edcd2977a7794e26c83f9a4e61a838bde2c5ab77",
+      "read_date": "2026-11-01",
+      "scope": "Both pages: branch/category bases, rates, CNSS-reserved fields, declaration by15th monthly/last following-month day quarterly and simultaneous-payment instructions; quarterly timing discrepancy with web thirty-day payment wording explicitly held."
+    },
+    "cnss-voluntary.pdf": {
+      "url": "https://cnss.bf/wp-content/uploads/2024/02/SOUSCRIPTION-A-LASSURANCE-VOLONTAIRE.pdf",
+      "sha256": "7e797aca985226228e4369c704162919305b7ea88e431a51e22f6d27818c38ad",
+      "read_date": "2026-11-01",
+      "scope": "Both pages, cover/funding, timing/suspension and dossier instructions."
+    },
+    "cgi-2026.pdf": {
+      "url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+      "read_date": "2026-11-01",
+      "scope": "VAT ledger arts. 298–306,310–334,776–778 and stated art.307 branches/selected 308 headings; not all 566 pages/product rows."
+    },
+    "cnss-contributions.html": {
+      "url": "https://cnssbf.org/?p=2078",
+      "sha256": "ef6b8f48569dcc9fa1cf40f3d49a83502d811fb1845145d03d8a6d03336fec64",
+      "read_date": "2026-11-01",
+      "scope": "Contribution rates/split, voluntary rate, base and floor, employer duties, payment size/frequency/deadlines."
+    },
+    "web-only-primary-reads": {
+      "read_date": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://cnssbf.org/immatriculation-de-lemployeur/",
+          "scope": "CEFORE route and ordinary company/employer dossier."
+        },
+        {
+          "url": "https://www.fonction-publique.gov.bf/accueil/actualites/details?cHash=25196f1849f6833010b67cadeb5258be&tx_news_pi1%5Bnews%5D=2504",
+          "scope": "30 July 2025 AMU salary/public/pension/self-employed explanatory text; no operative 2026 calculation adopted."
+        },
+        {
+          "url": "https://www.fonction-publique.gov.bf/accueil/actualites/details?cHash=a4f5423688bb0ffe0c4ef33bc95b172a&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2517",
+          "scope": "6 August 2025 AMU payment/declaration/sanction explanatory text; read to keep separate from CNSS."
+        }
+      ]
+    }
+  },
+  "failed_or_mislabelled_sources": [
+    {
+      "url": "https://cnssbf.org/wp-content/uploads/2024/02/Decret-N%C2%B02023-0129-PRES-TRANS.pdf",
+      "outcome": "CNSS index labels rate decree, actual PDF opens the 2007 EPPS statute. Not used as rate-decree evidence."
+    },
+    {
+      "url": "https://www.fonction-publique.gov.bf/fileadmin/user_upload/storage/01_MARS_2023-_DECRET___N_2023___0129.pdf",
+      "outcome": "Direct ordinary TLS failed with unexpected EOF; Brave ordinary browser reported ERR_CONNECTION_CLOSED; archive 2026 resolver inaccessible, no dated snapshot read. No certificate/security bypass."
+    },
+    {
+      "url": "https://cnssbf.org/wp-content/uploads/2024/02/Loi-N%C2%B0004-2021_AN.pdf",
+      "download_sha256": "58a9b6177d7ca37261a48d4835526c9dcaae7360dcb57332521e7824fdf1fbd3",
+      "outcome": "Server returns 5,532,225 bytes but file lacks EOF/xref and parsers cannot open; official cnss.bf host copy identical. No controlling-law article read is claimed."
+    },
+    {
+      "url": "https://sigramu.cnamu.bf/assets/docs/Loi%20060-2015%20_%20RAMU-BF.pdf",
+      "outcome": "404 on actual fetch; search excerpt not treated as source read."
+    },
+    {
+      "url": "https://cnamu.bf/index.php/documents/reglements?start=0",
+      "outcome": "Direct 404; web tool 500. No signed 2024-0345 text read."
+    }
+  ],
+  "vat_literal_quotes": {
+    "count": 55,
+    "all_whitespace_normalized_matches": true
+  },
+  "social_quote_method": "Signed-order quotes read against viewed scan pages; authority/form quotes against actual opened text. This writer receipt is not independent legal review.",
+  "binaries_location": "Sibling private sources directory, outside Git."
+}

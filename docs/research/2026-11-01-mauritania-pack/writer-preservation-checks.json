@@ -1,0 +1,73 @@
+{
+  "base_commit": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "checks": [
+    {
+      "file": "skills/mauritania/mr-corporate-income-tax.md",
+      "old_blob_verified": true,
+      "platform_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "file": "skills/mauritania/mr-tax-overview.md",
+      "old_blob_verified": true,
+      "platform_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "file": "skills/mauritania/mr-company-formation.md",
+      "old_blob_verified": true,
+      "platform_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "file": "skills/mauritania/mr-income-tax.md",
+      "old_blob_verified": true,
+      "platform_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "file": "skills/mauritania/mr-payroll-social.md",
+      "old_blob_verified": true,
+      "platform_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "file": "skills/mauritania/mr-vat-gst.md",
+      "old_blob_verified": true,
+      "platform_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "file": "skills/mauritania/mr-corporate-income-tax.md",
+      "description_words": 102
+    },
+    {
+      "file": "skills/mauritania/mr-tax-overview.md",
+      "description_words": 101
+    },
+    {
+      "file": "skills/mauritania/mr-cross-border.md",
+      "description_words": 103
+    },
+    {
+      "file": "skills/mauritania/mr-company-formation.md",
+      "description_words": 103
+    },
+    {
+      "file": "skills/mauritania/mr-income-tax.md",
+      "description_words": 103
+    },
+    {
+      "file": "skills/mauritania/mr-payroll-social.md",
+      "description_words": 105
+    },
+    {
+      "file": "skills/mauritania/mr-vat-gst.md",
+      "description_words": 104
+    },
+    {
+      "file": "skills/mauritania/mr-transfer-pricing.md",
+      "description_words": 104
+    }
+  ]
+}

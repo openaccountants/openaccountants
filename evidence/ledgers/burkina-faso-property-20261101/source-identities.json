@@ -1,0 +1,47 @@
+[
+  {
+    "file": "cgi-2026.pdf",
+    "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+    "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+    "bytes": 3933091,
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Full arts. 251–257 with arts. 249–250 and 258–261 neighbours; arts. 271 and 273 exemptions and neighbours; arts. 669–678 collection and arts. 771–774 penalty neighbours. Physical pages 107–108 visually checked. No wider amendment-chain certification.",
+    "cached_reader_files": [
+      {
+        "file": "cgi-2026-raw.txt",
+        "sha256": "a13190c507500fcd5dd257ceca0fec95416179d5e9320a0bda35130ddc6e35d5",
+        "bytes": 1615971
+      },
+      {
+        "file": "property-cgi-107.png",
+        "sha256": "808ef479c850b568a001ac75a9e2f99972b7b2c13ce909e564bfd627659e0c1b",
+        "bytes": 142067
+      },
+      {
+        "file": "property-cgi-108.png",
+        "sha256": "e29ddb004972424b75660828a4eaf972e3e377a9996dc62431f90d1875776bea",
+        "bytes": 164652
+      }
+    ]
+  },
+  {
+    "file": "finance-2026-gazette.pdf",
+    "official_url": "https://dgi.bf/wp-content/uploads/2026/01/JOURNAL-OFFICIEL-N%C2%B001-SPECIAL-LOI-DE-FINANCES-2026.pdf",
+    "sha256": "24242939052ac8dc40b6b59e9dd5e89b5e72e5f29aaeed6362cefa97a02f7d6a",
+    "bytes": 15892649,
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Signed full art. 34 replacing CGI art. 772, including express 1 January 2026 commencement, physical/printed p. 18, visually read against OCR. Promulgation p. 2, identity p. 3 and neighbouring arts. 32–36 read. Other amendment headings screened only, not full-law currentness certification.",
+    "cached_reader_files": [
+      {
+        "file": "finance-2026-ocr/page-18.txt",
+        "sha256": "e46d705abaff3567a505d41513d109f3a43078418b72d050aa41ec0280142579",
+        "bytes": 3104
+      },
+      {
+        "file": "finance-2026-ocr/page-18.png",
+        "sha256": "3c5e9d48871fa4cb019e8f89c99a0f85d5e104149f3b11c977feb7468492ef4e",
+        "bytes": 974058
+      }
+    ]
+  }
+]

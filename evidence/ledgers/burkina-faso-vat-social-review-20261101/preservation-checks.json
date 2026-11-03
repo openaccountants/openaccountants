@@ -1,0 +1,441 @@
+{
+  "base_commit": "f7076093d670d841cdcc4140743541ffa6d72c7b",
+  "frozen_commit": "de4e2907007c726bd16479b29bee86676ba85f66",
+  "guides": [
+    {
+      "path": "skills/burkina-faso/bf-company-formation.md",
+      "base_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
+      "candidate_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
+      "base_sha256": "92eb6e875f970b1220479332c1ca72e140a82320204c8e2c65844501dd06eb3c",
+      "candidate_sha256": "92eb6e875f970b1220479332c1ca72e140a82320204c8e2c65844501dd06eb3c",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/burkina-faso/bf-corporate-tax.md",
+      "base_blob": "fe3ff10edbefd9187b8a3c807c883d07f2b6a7c0",
+      "candidate_blob": "fe3ff10edbefd9187b8a3c807c883d07f2b6a7c0",
+      "base_sha256": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+      "candidate_sha256": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/burkina-faso/bf-income-tax.md",
+      "base_blob": "5c7f032213be8e46f8710bedd16464110df88ce6",
+      "candidate_blob": "5c7f032213be8e46f8710bedd16464110df88ce6",
+      "base_sha256": "ba4a1fb10dc61afcb4ce5672482b5b787245eb43d7add4ab6cc8900aebb96a13",
+      "candidate_sha256": "ba4a1fb10dc61afcb4ce5672482b5b787245eb43d7add4ab6cc8900aebb96a13",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/burkina-faso/bf-nonresident-services-withholding.md",
+      "base_blob": "5a6bfbf1af7c69761dab2647c3e6423d3d35caa0",
+      "candidate_blob": "5a6bfbf1af7c69761dab2647c3e6423d3d35caa0",
+      "base_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "candidate_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": null
+    },
+    {
+      "path": "skills/burkina-faso/bf-payroll.md",
+      "base_blob": "31b4d7d94e4cb34ffdbf13927e52ec1ddb6108d2",
+      "candidate_blob": "31b4d7d94e4cb34ffdbf13927e52ec1ddb6108d2",
+      "base_sha256": "9b44d1403476bed2a88ca434b654d4fbc546f89be880c77237e030f48d856d20",
+      "candidate_sha256": "9b44d1403476bed2a88ca434b654d4fbc546f89be880c77237e030f48d856d20",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/burkina-faso/bf-social-contributions.md",
+      "base_blob": "586d8e8e25f9e5b33d229354e09eaa77765aadbe",
+      "candidate_blob": "d258e3936e6fef2b6a5e369773014c8f80017b7c",
+      "base_sha256": "493295d81a9b41973bdc912ea794ef49721418559b11c0cce7a6922c73d15ab3",
+      "candidate_sha256": "91a57add55b88cf0dd7cdbc2a98d5a94e6c7c7b71713250465e86c8029a70ec8",
+      "byte_identical": false,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/burkina-faso/bf-tax-optimization.md",
+      "base_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
+      "candidate_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
+      "base_sha256": "2ac6150522e2c1ef57d60b2000aeb538c20015fe159558df53a43d7a791171de",
+      "candidate_sha256": "2ac6150522e2c1ef57d60b2000aeb538c20015fe159558df53a43d7a791171de",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/burkina-faso/bf-tax-overview.md",
+      "base_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
+      "candidate_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
+      "base_sha256": "5a752bb11b88759ffacb7a9013a72a61caa9afad26dac58091d24061621a7a1e",
+      "candidate_sha256": "5a752bb11b88759ffacb7a9013a72a61caa9afad26dac58091d24061621a7a1e",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/burkina-faso/bf-transfer-pricing.md",
+      "base_blob": "c97e897cd388878a52012739cb58ebeaab81d46f",
+      "candidate_blob": "c97e897cd388878a52012739cb58ebeaab81d46f",
+      "base_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "candidate_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "byte_identical": true,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": null
+    },
+    {
+      "path": "skills/burkina-faso/bf-vat.md",
+      "base_blob": "fb1039611a2c1be561f4bd6f27f2b04aa770a5b7",
+      "candidate_blob": "024cda45fc25a5bbe3f2fddbb5d24d15bcae15ca",
+      "base_sha256": "f3c48fddfbef31b23daab6b26aa0a0f457a9689eb37cbf21d8a8490211e82656",
+      "candidate_sha256": "c9633208d7e6b759c44f1598b3bfe51b511d26604032971fa8f656ecd6b6fe22",
+      "byte_identical": false,
+      "platform_fields_identical": true,
+      "full_cta_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    }
+  ],
+  "prior_evidence": [
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/README.md",
+      "baseline_blob": "1829d80961c8168008df11d7092ebe133e1340c6",
+      "candidate_blob": "1829d80961c8168008df11d7092ebe133e1340c6",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/examples.txt",
+      "baseline_blob": "e635725cb2d6a973e5c83a1991a1f8c9695ba74b",
+      "candidate_blob": "e635725cb2d6a973e5c83a1991a1f8c9695ba74b",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-corporate-tax.md",
+      "baseline_blob": "05b56c0cdf929d35cc32270657c16beb09bc6b85",
+      "candidate_blob": "05b56c0cdf929d35cc32270657c16beb09bc6b85",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-income-tax.md",
+      "baseline_blob": "3ac6f68a7857cc9f3bd27632d8967e6012b45541",
+      "candidate_blob": "3ac6f68a7857cc9f3bd27632d8967e6012b45541",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-payroll.md",
+      "baseline_blob": "54445e02d35a9d7c0b5e757183105944b88a4c42",
+      "candidate_blob": "54445e02d35a9d7c0b5e757183105944b88a4c42",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/old-topic-destinations.md",
+      "baseline_blob": "35b6863ec2d1847f686042955ec5180793285c3a",
+      "candidate_blob": "35b6863ec2d1847f686042955ec5180793285c3a",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/pack-scope-check.json",
+      "baseline_blob": "f03cd36c02640bb1da47496dbd7f5713ebfea81e",
+      "candidate_blob": "f03cd36c02640bb1da47496dbd7f5713ebfea81e",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/preservation-manifest.json",
+      "baseline_blob": "9fd3ee87b8b0756176c973486a5efb2bb5ef52ae",
+      "candidate_blob": "9fd3ee87b8b0756176c973486a5efb2bb5ef52ae",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/quote-checks.json",
+      "baseline_blob": "c20364e94c0befa683446aea7cd3da31d9f53d26",
+      "candidate_blob": "c20364e94c0befa683446aea7cd3da31d9f53d26",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/reviewer-corrections.json",
+      "baseline_blob": "e450baa6fb8d33a14caaa8e35a93b892e04c0cc8",
+      "candidate_blob": "e450baa6fb8d33a14caaa8e35a93b892e04c0cc8",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/skill-checks.txt",
+      "baseline_blob": "909f1dc4d7806703427b8309178733e587b731ee",
+      "candidate_blob": "909f1dc4d7806703427b8309178733e587b731ee",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/sync-audit.txt",
+      "baseline_blob": "956c7a1566f578f72ea9d2142c79411c267334e9",
+      "candidate_blob": "956c7a1566f578f72ea9d2142c79411c267334e9",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/validate-changed.txt",
+      "baseline_blob": "d9c13854af7dcb43ac694b7e3a496e2c8d53f720",
+      "candidate_blob": "d9c13854af7dcb43ac694b7e3a496e2c8d53f720",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/validation-checkpoint.json",
+      "baseline_blob": "87abc859eed6cd66202194aed51aba8be95e5e84",
+      "candidate_blob": "87abc859eed6cd66202194aed51aba8be95e5e84",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/bf-nonresident-services-withholding.md",
+      "baseline_blob": "d6835210d0d2556da0e398fde12344fa925907b1",
+      "candidate_blob": "d6835210d0d2556da0e398fde12344fa925907b1",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/bf-transfer-pricing.md",
+      "baseline_blob": "be10ad8ab2735174eb438e025559831f48078e89",
+      "candidate_blob": "be10ad8ab2735174eb438e025559831f48078e89",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-old-topics.md",
+      "baseline_blob": "e27af8457b09aacdf54c7f62e0afdb627ef2fe67",
+      "candidate_blob": "e27af8457b09aacdf54c7f62e0afdb627ef2fe67",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-manifest.json",
+      "baseline_blob": "7aa659eb79c98d90eab62c3f77eb307f64b8ae7a",
+      "candidate_blob": "7aa659eb79c98d90eab62c3f77eb307f64b8ae7a",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-row-checks.json",
+      "baseline_blob": "cd70aeaf17eaf9e3bb14535f43e6b63c3b46157b",
+      "candidate_blob": "cd70aeaf17eaf9e3bb14535f43e6b63c3b46157b",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure.md",
+      "baseline_blob": "f2f7c19cc9a7294ad16164099f7e25bc122875e0",
+      "candidate_blob": "f2f7c19cc9a7294ad16164099f7e25bc122875e0",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/example-checks.txt",
+      "baseline_blob": "e635725cb2d6a973e5c83a1991a1f8c9695ba74b",
+      "candidate_blob": "e635725cb2d6a973e5c83a1991a1f8c9695ba74b",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/independent-example-checks.json",
+      "baseline_blob": "e546e9543d0e9ab7aeca3f065fcb10c39e04a934",
+      "candidate_blob": "e546e9543d0e9ab7aeca3f065fcb10c39e04a934",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/old-topic-spot-checks.md",
+      "baseline_blob": "4a59cdd7786a99ce349396287ece173a949c8095",
+      "candidate_blob": "4a59cdd7786a99ce349396287ece173a949c8095",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/preservation-checks.json",
+      "baseline_blob": "ca1f1ec8fef4c884fdc39b1a66d216a0afe47c8e",
+      "candidate_blob": "ca1f1ec8fef4c884fdc39b1a66d216a0afe47c8e",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/review.md",
+      "baseline_blob": "ec1db036a4246510773063e3858912dac54b1855",
+      "candidate_blob": "ec1db036a4246510773063e3858912dac54b1855",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/row-checks.json",
+      "baseline_blob": "90789a48a23c9f496307420d50f708281486602d",
+      "candidate_blob": "90789a48a23c9f496307420d50f708281486602d",
+      "blob_identical": true,
+      "worktree_present": true,
+      "worktree_matches_frozen": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md",
+      "baseline_blob": "a3f532f4ec5714006f54b3238abf53506c46f732",
+      "candidate_blob": "a3f532f4ec5714006f54b3238abf53506c46f732",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/coverage-bf.json",
+      "baseline_blob": "cb52981d86fbc9648368a69c5567153450016755",
+      "candidate_blob": "cb52981d86fbc9648368a69c5567153450016755",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/example-checks.txt",
+      "baseline_blob": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+      "candidate_blob": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/preservation-and-repair-manifest.json",
+      "baseline_blob": "2b33c145bf03b2d77efaf558b2953dbc4d84f76b",
+      "candidate_blob": "2b33c145bf03b2d77efaf558b2953dbc4d84f76b",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/skill-checks-tp.txt",
+      "baseline_blob": "595d2077124960ec0db98e87abd6306fc9df1079",
+      "candidate_blob": "595d2077124960ec0db98e87abd6306fc9df1079",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-all-no-index.txt",
+      "baseline_blob": "968d8c7c5869fc8b2ead0e830cd390d44f26ca25",
+      "candidate_blob": "968d8c7c5869fc8b2ead0e830cd390d44f26ca25",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-changed.txt",
+      "baseline_blob": "44a035a6428a4929330987f32351c41a0fc4c011",
+      "candidate_blob": "44a035a6428a4929330987f32351c41a0fc4c011",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/example-checks.txt",
+      "baseline_blob": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+      "candidate_blob": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/input-and-check-manifest.json",
+      "baseline_blob": "2b79a3134ddab7a2a7eb0a280c4d8794a7f23467",
+      "candidate_blob": "2b79a3134ddab7a2a7eb0a280c4d8794a7f23467",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/review.md",
+      "baseline_blob": "ff5dc4099b4b2d7d00cbc485a40450dd75b2a72d",
+      "candidate_blob": "ff5dc4099b4b2d7d00cbc485a40450dd75b2a72d",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/skill-checks-tp.txt",
+      "baseline_blob": "595d2077124960ec0db98e87abd6306fc9df1079",
+      "candidate_blob": "595d2077124960ec0db98e87abd6306fc9df1079",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/skill-checks-withholding.txt",
+      "baseline_blob": "f4ce53b5bd887176b7e399fdf98a76b6e6bc799e",
+      "candidate_blob": "f4ce53b5bd887176b7e399fdf98a76b6e6bc799e",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/validate-guides.txt",
+      "baseline_blob": "0ce3110a8e45527c40d9b29777eb98b37b5ce251",
+      "candidate_blob": "0ce3110a8e45527c40d9b29777eb98b37b5ce251",
+      "blob_identical": true,
+      "worktree_present": false,
+      "worktree_matches_frozen": null
+    }
+  ],
+  "old_topic_count": 102,
+  "unchanged_guide_count": 8,
+  "all_platform_fields_and_full_ctas_identical": true,
+  "seven_domains_still_partial": true,
+  "accepted_prior_five_preserved": [
+    "bf-transfer-pricing",
+    "bf-nonresident-services-withholding",
+    "bf-corporate-tax",
+    "bf-income-tax",
+    "bf-payroll"
+  ]
+}

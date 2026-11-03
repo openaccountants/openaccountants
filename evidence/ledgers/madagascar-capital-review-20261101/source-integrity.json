@@ -1,0 +1,191 @@
+{
+  "sources": [
+    {
+      "path": "../sources/cdi-2026.pdf",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "matches_writer_identity": true,
+      "bytes": 2788548
+    },
+    {
+      "path": "../sources/cdi-2026.txt",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "sha256": "6165252fc74f92531324a1d7581ddad6df25fb0dc5fbc836ba418eeee2400445",
+      "matches_writer_identity": true,
+      "bytes": 975204
+    },
+    {
+      "path": "../sources/cpf-2026.pdf",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "matches_writer_identity": true,
+      "bytes": 1752311
+    },
+    {
+      "path": "../sources/cpf-2026.txt",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "sha256": "e3967fda31d17116edb819938d0b0eb6463a68a9b1d2d09c27aa4a037ed3f1f1",
+      "matches_writer_identity": true,
+      "bytes": 495529
+    },
+    {
+      "path": "../sources/lfi-2026.pdf",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "matches_writer_identity": true,
+      "bytes": 3972881
+    },
+    {
+      "path": "../sources/lfi-2026.txt",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "sha256": "d2dbea0e21dbddbf060549740e0e0c5add16b51fc866cabda4dfb0396b023e25",
+      "matches_writer_identity": true,
+      "bytes": 372006
+    },
+    {
+      "path": "../sources/lfr-2026.pdf",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "matches_writer_identity": true,
+      "bytes": 1907801
+    },
+    {
+      "path": "../sources/lfr-2026.txt",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "sha256": "33756e6834fcbef06b95afadb62d5b6e33b6f9e6d9b09d51b0239c75cfae1c6b",
+      "matches_writer_identity": true,
+      "bytes": 142702
+    }
+  ],
+  "fresh_pdf_extractions_and_renders": [
+    {
+      "path": "sources/capital-review-20261101/cdi-44.png",
+      "sha256": "4e3016d8bd92838756b2e52133632f292c9dbc6e5cf4eb1a7992957f1c1ad618"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-45.png",
+      "sha256": "dfd6cebf5e8ca4746f5103b52f69a411a62953f5fd4b800b5ff6bdafd2b945ff"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-46.png",
+      "sha256": "4690af825f88a92e77bc88dbd587f531c90260e703c78b9f9a5b9a509b927a81"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-13.txt",
+      "sha256": "de55e2d25e35ed8828f91591068f8ce157302e124d5e0452a801454d8cc13cb5"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-14.txt",
+      "sha256": "1fefeb2c5ffab85ca66b100570434959dfb2ce16f60c9f111002a91f100a99eb"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-173.txt",
+      "sha256": "751a0352047e9eb93ce2595012a94a005739399a4aaa2ff37a5c1f181f5a7eac"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-174.txt",
+      "sha256": "dc8ec13567a6683e00346ed6e304df828613ca76afc766d0e384cf4649b10b8e"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-175.txt",
+      "sha256": "a6126d608029705c1fee755eb1b8ddb7ba236384e95ecf77e290648779710973"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-209.txt",
+      "sha256": "35de13d0232b9f68d657482b340f69c1e2ed1275ac4fd435e1eec730122ac80a"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-210.txt",
+      "sha256": "1e39cdc80b224c42547fe932997bf59bde97e7d2fa9c32bcc34b42c59117699e"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-23.txt",
+      "sha256": "c5100d0055d8c974501d3c793e29114a7cfd49d6f9adfe9c73034e2fa62c3e4c"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-24.txt",
+      "sha256": "d2e863ccf26ccb2b23fce292edf92caea9b3b94d335b0ded8cac75d88758f4e8"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-43.txt",
+      "sha256": "2f81ecefdcda392830fd42c86f20d4da290e2e5ac0b4d8076c1c71b1a836a03e"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-44.txt",
+      "sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-45.txt",
+      "sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9"
+    },
+    {
+      "path": "sources/capital-review-20261101/cdi-physical-46.txt",
+      "sha256": "fc9c900ab0ea00a97bf9cf36fd674f7dbe5af0b636640ef7f9815de8ff80f257"
+    },
+    {
+      "path": "sources/capital-review-20261101/cpf-17.png",
+      "sha256": "bd2a94fa3b7fa15740de6514fcb34ea2afbbba65fc9755af4e170bc059aa6bf5"
+    },
+    {
+      "path": "sources/capital-review-20261101/cpf-18.png",
+      "sha256": "d542c5b97b6644d54a4d51dc49e234cfbf8c45fb6607e941037cede595053d12"
+    },
+    {
+      "path": "sources/capital-review-20261101/cpf-physical-17.txt",
+      "sha256": "c6778bbccfc1eff5a7e3e7a189701f86bf8711e04a4bfc820196e9dcbe4753c7"
+    },
+    {
+      "path": "sources/capital-review-20261101/cpf-physical-18.txt",
+      "sha256": "66a1f646979b3f8c7d047a8b3492607e1092d8d39c0714c0f2a653b9ce07e131"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfi-131.png",
+      "sha256": "892e73bef928959b81bbf03e48be0d6144ac4f0fa648b5022c22bfb2af0f17ef"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfi-44.png",
+      "sha256": "8f5f4560365e82587fe775eb345482ebd0f6ad45a78e75d4a37fc6bbd27bc4f5"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfi-physical-131.txt",
+      "sha256": "953e8b3765ce819d5484c115b1717e15f9469edd045a30233238878504ca8a4a"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfi-physical-44.txt",
+      "sha256": "b79171858961d435101581a88e41fec2529d576875b394c024a5d839cda5ab4f"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfr-24.png",
+      "sha256": "81377113070c51ade8fcc8010e68cd797efc654344fb89a089ddd8504befdb0f"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfr-26.png",
+      "sha256": "f6544bc9064991c0d0c52d7a69044553d9fd13f06b2a0bd5c8c5c8eb0761f883"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfr-52.png",
+      "sha256": "f183fd212776152861f1520c712f57e93c334ea3b19ba80635a625befebb80ef"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfr-physical-24.txt",
+      "sha256": "c3cc9b204193ed7898165c4e939a7e0841d8586f340a0d52d4fdd3e9d055cf28"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfr-physical-26.txt",
+      "sha256": "674ff77d75acfac621edc56c127f244f33d06c358ad53525042015e34e84f9a6"
+    },
+    {
+      "path": "sources/capital-review-20261101/lfr-physical-52.txt",
+      "sha256": "49c6ce4e5097d858e1947ccd8c9b705f7fa03c37ac83309fc6a6d16ecb531b32"
+    }
+  ],
+  "visual_pages_read": [
+    "cdi physical 44/45/46 (printed 43/44/45)",
+    "cpf physical 17/18 (printed 16/17)",
+    "lfi physical 44/131 (printed 42/129)",
+    "lfr physical 24/26/52 (printed 20/22/48)"
+  ],
+  "text_pages_read": "CDI physical 13,14,23,24,43,44,45,46,173,174,175,209,210; CPF17,18; LFI44,131 plus complete 20.01.51-54.1 amendments; LFR24,26,52 plus complete 20.01.52 replacement and neighbouring 54.2 boundary.",
+  "live_refresh": "Official LFI PDF opened successfully through web on 2026-11-01; official LFR URL timed out. Cached signed LFR bound by PDF hash. No new publication activation evidence or complete later-law search claimed.",
+  "git_refresh": "git fetch origin failed: Could not resolve host github.com. Frozen target, local origin/main and merge-base were checked directly; no assertion remote state is newly refreshed."
+}

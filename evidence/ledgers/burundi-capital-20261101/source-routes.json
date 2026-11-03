@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-01",
+  "cached_originals_used": [
+    "IR",
+    "JAN",
+    "JUL",
+    "FORM",
+    "PORTAL"
+  ],
+  "fresh_web_reader": [
+    {
+      "url": "https://www.obr.bi/index.php/lois-et-reglements",
+      "result": "actual catalogue read; identifies both budgets and principal income Act"
+    },
+    {
+      "url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+      "result": "44page official PDF opened; cached original actually read"
+    },
+    {
+      "url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "result": "267page official PDF opened; cached signed original actually read"
+    },
+    {
+      "url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "result": "reader rejected40MB size; not counted as fresh PDF content read; cached actual original used"
+    },
+    {
+      "url": "https://www.obr.bi/index.php/teledeclaration-telepaiement",
+      "result": "actual category routing and documentation read; ordinary browser independently confirmed"
+    },
+    {
+      "url": "https://www.obr.bi/index.php/formulaires-d-impots-et-taxes",
+      "result": "actual public form list read; business form title matches cached PDF; no private-capital field inference"
+    },
+    {
+      "url": "https://www.obr.bi/index.php/ordonnances",
+      "result": "actual list searched for reference/plus/immovable; no operative art89reference-price text recovered; no absence-of-law inference"
+    }
+  ],
+  "direct_capture_attempts": [
+    {
+      "slug": "portal",
+      "url": "https://www.obr.bi/index.php/teledeclaration-telepaiement",
+      "status": 200,
+      "bytes": 182
+    },
+    {
+      "slug": "forms",
+      "url": "https://www.obr.bi/index.php/formulaires-d-impots-et-taxes",
+      "status": 200,
+      "bytes": 182
+    },
+    {
+      "slug": "orders",
+      "url": "https://www.obr.bi/index.php/ordonnances",
+      "status": 200,
+      "bytes": 182
+    },
+    {
+      "slug": "laws",
+      "url": "https://www.obr.bi/index.php/lois-et-reglements",
+      "status": 200,
+      "bytes": 182
+    }
+  ],
+  "direct_capture_semantics": "All four saved182byte HTTP200responses are application-instantiation error pages. None counted as actual law/form/portal read.",
+  "browser_fallback": {
+    "url": "https://www.obr.bi/index.php/teledeclaration-telepaiement",
+    "result": "Ordinary IAB tab title Télédéclaration / Télépaiement; full accessibility tree read routing categories and exact portal URLs. No authentication or submission.",
+    "excerpt_sha256": "4047700aa57e567f986f2b3429644559cb159af643bf6d31b4e7146f56b714f6"
+  },
+  "historical_reference_orders": "Prior property evidence/source failures preserved byte-for-byte; no unavailable reference valuation order promoted to fact."
+}

@@ -1,0 +1,21 @@
+{
+  "reviewed_freeze": "2aa7624745122e9c896b3cc126f38dfe5317d0d0",
+  "date": "2026-11-01",
+  "status": "Writer repairs; focusedclosurepending",
+  "findings": {
+    "F1": "Addedallforeigncomparablesentry/CG/reliability/geo-adjustmentconditions.",
+    "F2": "Preservedliteral150(3)qualifier,actual2025referenceandexplicitinterpretationhold;caseconditionalonapplicability.",
+    "F3": "AddedconjunctiveHTVIentrycriteriaattransactiondate.",
+    "F4": "Addedshippingdate/evidencedactualarm-lengthpricingdateexception,TP40.",
+    "F5": "APAstatutorypowerdoesnotprovecurrentprogram;actualavailabilityheld.",
+    "F6": "CorrectedAPA8(5)/(6)andallcitedmultipagelocators."
+  },
+  "candidate_files": {
+    "skills/sierra-leone/sl-transfer-pricing.md": "2f39aa3dd8260f076ce985ab736f59ed7586c6dd7972c72c8c59eca9ee4c2a5f",
+    "skills/sierra-leone/README.md": "d2babbad2277139710769001c5df55ec699e8ac65187211237381cd3d606838c",
+    "evidence/ledgers/sierra-leone-draft-20261101/README.md": "5616b5c765ce80570b15cf822729da42097ad175b7975f284523352716a607a4",
+    "evidence/ledgers/sierra-leone-draft-20261101/sl-transfer-pricing.md": "2794a9cb784ca6db05d2d36d8a36e219121787dfffc8261cd24cbc62620816c8",
+    "evidence/ledgers/sierra-leone-draft-20261101/tp-ledger-register.json": "3cbd9dacbdcdce071d9ac5ee2a09cd37cc90ddb787f43819f054374d1cf33a27",
+    "evidence/ledgers/sierra-leone-draft-20261101/tp-source-read-manifest.json": "d23cb779c710691c775cce0268d7e665352a0026614dff15ee0fe6fd984cc805"
+  }
+}

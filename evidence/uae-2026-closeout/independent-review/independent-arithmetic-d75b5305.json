@@ -1,0 +1,119 @@
+{
+  "method": "Independently entered Decimal arithmetic and calendar dates, with legal assumptions separately assessed; no predecessor examples counted as new cases.",
+  "named_narrative_cases_including_variant": 22,
+  "executable_blocks": 8,
+  "cases": {
+    "CT1": {
+      "standard": "47250.00",
+      "eligible_sbr": "0",
+      "deadline": "2027-09-30"
+    },
+    "CT2": {
+      "tax": "180450.00",
+      "later_sbr_eligibility": "False"
+    },
+    "CT3": {
+      "adjusted": "835000.0",
+      "loss_used": "626250.000",
+      "taxable": "208750.000",
+      "tax": "0.00",
+      "remaining": "73750.000"
+    },
+    "CT4": {
+      "deduction": "15000000.0",
+      "carry": "5000000.0"
+    },
+    "CT5": {
+      "de_minimis": "1000000.00",
+      "passes": "True",
+      "branch_tax": "45000.00",
+      "fails_at_1200000": "True"
+    },
+    "CT6": {
+      "de_minimis": "250000.00",
+      "nonqualifying": "5000000",
+      "result": "standard rates on taxable income; no profit amount supplied"
+    },
+    "CT7": {
+      "register_by": "2026-05-10",
+      "first_return_waiver_by": "2027-07-31",
+      "payment_by": "2027-09-30",
+      "penalty": "10000"
+    },
+    "CT8": {
+      "freelancer_turnover": "750000",
+      "threshold": "1000000",
+      "freelancer_in_scope": "False",
+      "landlord": "excluded only if Decision49 definition and no other business are satisfied"
+    },
+    "CT9": {
+      "filing": "1500",
+      "payment": "3500.00"
+    },
+    "Payroll1": {
+      "wage_ct_withholding": "0",
+      "social": "held; no result"
+    },
+    "Payroll2": {
+      "wage_ct_withholding": "0",
+      "social": "held; no result"
+    },
+    "Payroll3": {
+      "cap": "90000.00",
+      "deduction": "90000.00",
+      "addback": "30000.00"
+    },
+    "Payroll3variant": {
+      "paid": "80000",
+      "deduction": "80000",
+      "addback": "40000"
+    },
+    "Payroll4": {
+      "threshold_excess": "200000",
+      "payer_withholding": "0",
+      "contractor": "scope triggered; final liability not computed"
+    },
+    "Payroll5": {
+      "recoverable_children": "3",
+      "excluded_child_age": "19",
+      "ordinary_accommodation_cash_option": "fails case3, not automatically case4",
+      "new_employee_max_days": "30"
+    },
+    "Payroll6": {
+      "wage_ct_withholding": "0",
+      "employer_deduction": "market-value limitation where connected, subject to statutory exceptions"
+    },
+    "VAT1": {
+      "excess": "15000",
+      "mandatory": "True"
+    },
+    "VAT2": {
+      "voluntary_excess": "12500",
+      "mandatory": "False",
+      "voluntary": "subject to domestic taxable-expense/business/intention conditions; amounts alone insufficient"
+    },
+    "VAT3": {
+      "output": "183.60",
+      "recovery": "183.60",
+      "payable": "0.00",
+      "blocked_recovery_payable": "183.60"
+    },
+    "VAT4": {
+      "box12": "20183.60",
+      "box13": "10183.60",
+      "box14": "10000.00",
+      "due": "2026-10-28"
+    },
+    "VAT5": {
+      "first_below": "100",
+      "second_above": "200",
+      "output_tax_relief": "aggregate AED2000 cap; no additional executable gift tax amount claimed"
+    },
+    "VAT6": {
+      "above": "2000",
+      "below": "2000",
+      "disclosure_days": "20",
+      "low_value": "earliest eligible return; disclose if no correcting return"
+    }
+  }
+}

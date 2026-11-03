@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Private bare land versus proven IBA/IS booked immovable",
+    "statutory_predicates": [
+      "ordinary domestic cash immovable sale",
+      "no110(1) exemption",
+      "legally certain-date acquisition evidence",
+      "no112 reference adjustment",
+      "no share, mining, gift, treaty or foreclosure issue",
+      "counterfactual110(2) requires both actual asset booking and IBA/IS enterprise status"
+    ],
+    "independent_calculation": {
+      "gain": 12000000,
+      "gain_tax": 600000,
+      "price_floor": 200000,
+      "private_tpvi": 600000,
+      "counterfactual_proven_exempt_tpvi": 0
+    },
+    "result": "PASS; separate IBA/IS tax is not computed"
+  },
+  {
+    "name": "Vacant land acquired then new construction; minimum controls",
+    "statutory_predicates": [
+      "ordinary taxable private cash sale",
+      "acquired vacant land for supported50000000",
+      "subsequent building",
+      "accepted separate60000000 land/40000000 construction disposal values",
+      "positive component gains",
+      "no exemption or reference adjustment"
+    ],
+    "independent_calculation": {
+      "total_price": 100000000,
+      "land_gain": 10000000,
+      "construction_gain": 4000000,
+      "combined_gain": 14000000,
+      "gain_tax": 700000,
+      "price_floor": 1000000,
+      "tpvi": 1000000,
+      "minimum_uplift": 300000
+    },
+    "result": "PASS; no double deduction of construction cost"
+  }
+]

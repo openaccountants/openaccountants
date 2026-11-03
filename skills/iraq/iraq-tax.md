@@ -1,173 +1,99 @@
 ---
 name: iraq-tax
-description: Use this skill whenever asked about Iraq taxation, sales tax, or the absence of VAT in Iraq. Iraq does NOT have a broad-based VAT or GST. It imposes specific sales taxes on enumerated products (up to 300% on alcohol/tobacco) and has an income tax system. ALWAYS read this skill before handling any Iraq tax work.
-version: 2.0
+description: "Federal Iraq intake routing across seven tax jobs, preserving transaction-review flags while holding unsupported tax, exemption and filing conclusions. Use this Guide when a question mentions federal Iraq, the General Commission for Taxes, GCT Baghdad, or Iraqi dinar tax. It identifies the source version, the evidence actually read, the conditions attached to its extracts, the facts needed from the taxpayer, and the unresolved matters that stop a current filing calculation. It does not cover the Kurdistan Region. Follow the linked country Guides for the underlying job and keep every stated hold attached to any answer."
+version: 2.2
 jurisdiction: IQ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iraq Tax
+# Iraq Tax Routing 2.2
 
-## Section 1 -- Quick reference
+> **General reference.** Source extracts and research holds only. This Guide does not establish the law currently in force for a filing.
 
-**Quick reference**
+Tax year: 2026 is the question-routing year, not a certification that these older instruments remain unchanged. **IQ-CURRENT hold:** the complete later-amendment and commencement chain through 2026 has not been established. The extracts below describe only the named source version. Do not use their figures for a current liability until that hold is closed.
 
-| Field | Value |
-| --- | --- |
-| Country | Iraq |
-| VAT/GST status | NOT IMPLEMENTED |
-| Specific sales taxes | Alcohol 300%, tobacco 300%, mobile/internet 20%, travel 15%, cars 15%, hotels 10%, telecom 5% |
-| Corporate income tax | 15% standard |
-| Personal income tax | Progressive 3%-15% |
-| Authority | General Commission for Taxes (GCT), Ministry of Finance |
-| Filing portal | No centralized electronic portal (paper filing) |
-| Currency | IQD (Iraqi Dinar) |
-| Primary legislation | Income Tax Law No. 113 of 1982 (as amended) |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
-| Last research update | April 2026 |
+## Who this applies to
 
-## Section 2 -- Required inputs and refusal catalogue
+Use this intake router for federal Iraq questions spanning individual tax, company tax, consumption tax, payroll, social contributions, transfer pricing or cross-border income. This is a routing recommendation, not a legal classification. A bank statement alone does not establish residence, source, beneficial ownership, exemption or filing obligations.
 
-**Minimum viable** -- bank statement or transaction list. Acceptable from Rasheed Bank, Rafidain Bank, Trade Bank of Iraq, or any Iraqi bank.
+## Rates, bands and thresholds
 
-**Refusal catalogue:**
+| Routing item | Evidence needed | Source or status |
+|---|---|---|
+| Tax rates and thresholds | Use owning job Guide, retaining its currentness hold | unverified: no current rate list in this router |
+| Transfer pricing | Related parties, contracts, pricing method and relevant countries/periods | unverified: operative law and documentation workflow held |
+| Cross-border | Nationality/residence, source, PE, payment type, country and treaty evidence | unverified: country-specific current-law conclusion held |
 
-- **R-IQ-1 -- Oil sector** — Oil sector taxation is T3. Escalate.  _(R-IQ-1 -- Oil sector.)_
-- **R-IQ-2 -- Kurdistan Region** — KRI has separate tax administration. Escalate for dual-filing obligations.  _(R-IQ-2 -- Kurdistan Region.)_
+## The base
 
-### 3.1 Iraqi banks
+Recommended workflow: classify the transaction using contracts and invoices before computing. Route ordinary individual income to [income tax](iq-income-tax.md), company profit/loss to [company tax](iq-corporate-income-tax.md), employment to [payroll/social](iq-payroll-social.md), goods/services to [consumption tax](iq-vat-gst.md), and property to [overview](iq-tax-overview.md). Retain oil, agriculture, e-commerce and KRI as explicit classification questions; do not reuse the old automatic exemption, tax or escalation-tier conclusions.
 
-**Iraqi banks pattern library**
+Bank pattern preservation: RASHEED BANK, RAFIDAIN BANK, TRADE BANK OF IRAQ/TBI, INTEREST, LOAN, GCT/GENERAL COMMISSION FOR TAXES, CUSTOMS and SOCIAL SECURITY are review flags only. Never auto-exclude transactions because a bank or authority name occurs in the description. Inspect principal, interest, fees, counterparties, liability and receipts. The former EXCLUDE tables are superseded, with exact predecessor bytes retained in the evidence directory.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| RASHEED BANK | EXCLUDE | Financial transaction |
-| RAFIDAIN BANK | EXCLUDE | Same |
-| TRADE BANK OF IRAQ, TBI | EXCLUDE | Same |
-| INTEREST, LOAN | EXCLUDE | Out of scope |
+## Deadlines and filing
 
-### 3.2 Government
+Recommended order: collect period and location; identify the taxpayer and transaction; find the owning Guide and source version; close its specific legal/currentness hold; obtain the actual current form/portal and notice; prepare and reconcile; obtain competent sign-off; submit only through the confirmed channel; retain confirmation, payment reference and receipt. If any step lacks evidence, stop that filing step and record what is missing. This router supplies no universal due date or Arabic-document rule.
 
-**Government pattern library**
+## Penalties and interest
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GCT, GENERAL COMMISSION FOR TAXES | EXCLUDE | Tax payment |
-| CUSTOMS | EXCLUDE | Customs duty |
-| SOCIAL SECURITY | EXCLUDE | Social insurance |
+No penalty engine is authorised by this router. Identify the specific tax, notice, event, date, interest basis, relief and appeal provisions in the applicable source before any computation. Owning Guides retain the procedural gaps.
 
-### Example 1 -- Client asks about Iraq VAT
+## Cross-border points
 
-**Input:** "What is the VAT rate in Iraq?"
+**IQ-TP / IQ-XB:** collect group structure, relationship/control, countries, contracts, services/goods/finance, pricing method, year, residence certificates and any PE facts. No transfer-pricing threshold, method, return, documentation date, treaty rate or PE conclusion is cleared here. An ordinary foreign contractor is not automatically taxed like an oil contractor, and a foreign bank description is not an exemption. Keep the source extracts in company tax distinct from current-law advice.
 
-**Resolution:** Iraq does not have VAT. No broad-based consumption tax exists. Specific sales taxes apply to enumerated products only.
+## Two worked examples that recompute
 
-### Example 2 -- Alcohol import
+Intake arithmetic only, using user-supplied evidence counts. These are not tax rates or legally required document counts.
 
-Importer brings alcohol into Iraq. 300% sales tax at customs plus customs duties. No input credit mechanism. Tax is a direct cost.
+A client lists 12 relevant transactions and supplies supporting documents for 9. Three need evidence before classification.
 
-### 5.1 No VAT system
-
-- **No VAT system** — Iraq has no VAT registration, filing, collection, or invoicing requirements.  _(Section 5.1 No VAT system)_
-
-### 5.2 Specific sales taxes
-
-**Specific sales taxes by product**
-
-| Product | Rate |
-| --- | --- |
-| Alcohol | 300% |
-| Tobacco | 300% |
-| Mobile/internet | 20% |
-| Travel tickets | 15% |
-| Cars | 15% |
-| Hotels/restaurants (deluxe) | 10% |
-| Telecom services | 5% |
-
-- **Nature of specific sales taxes** — These are excise-type levies on enumerated goods only. No input credit. No staged collection. No registration system.  _(Section 5.2 Specific sales taxes)_
-
-### 5.3 Corporate income tax
-
-- **Corporate income tax - standard** — 15% percent (flat on net profits from Iraqi-source income)  _(Section 5.3 Corporate income tax)_
-- **Oil & gas sector corporate tax rate** — 35% percent (income from contracts with foreign oil companies, branches, offices and subcontractors in oil/gas production and related industries)  _(Income Tax Law No. 113 of 1982 — https://taxsummaries.pwc.com/iraq/corporate/taxes-on-corporate-income)_
-- **Agricultural income** — Agricultural income: exempt.  _(Section 5.3 Corporate income tax)_
-
-## Section 6 -- Return form structure
-
-- **Return form structure** — No VAT return exists. CIT return filed annually by 31 May, paper-based at GCT offices. Financial statements in Arabic must accompany.  _(Section 6 -- Return form structure)_
-
-## Section 7 -- No reverse charge
-
-- **No reverse charge** — No VAT system means no reverse charge mechanism exists.  _(Section 7 -- No reverse charge)_
-
-## Section 8 -- No input deductibility
-
-- **No input deductibility** — No input credit system for sales taxes. Tax on alcohol/tobacco is embedded cost.  _(Section 8 -- No input deductibility)_
-
-## Section 9 -- Filing, deadlines, and penalties
-
-**Filing, deadlines, and penalties**
-
-| Obligation | Deadline |
-| --- | --- |
-| CIT return | 31 May following year-end |
-| Books/records | Arabic language required |
-
-- **Social security - employer** — 12% percent  _(Section 9 -- Filing, deadlines, and penalties)_
-- **Social security - employee** — 5% percent  _(Section 9 -- Filing, deadlines, and penalties)_
-- **Social security - total** — 17% percent (employer 12% + employee 5%)  _(Section 9 -- Filing, deadlines, and penalties)_
-
-### Edge cases
-
-**EC1 -- VAT question.** Iraq has no VAT.
-
-**EC2 -- Alcohol import.** 300% sales tax at customs. No credit.
-
-**EC3 -- E-commerce/digital.** No VAT/sales tax on digital services. CIT if PE exists (escalate PE).
-
-**EC4 -- Kurdistan Region.** Dual filing may be needed. Escalate.
-
-**EC5 -- Agricultural income.** Exempt from income tax.
-
-### Test suite
-
-**Test 1 -- VAT question.** Expected: "Iraq does not have VAT."
-
-**Test 2 -- CIT.** IQD 100M profit. Expected: CIT IQD 15M (15%). File by 31 May.
-
-**Test 3 -- Alcohol.** IQD 1M cost. Expected: 300% sales tax embedded. No credit.
-
-**Test 4 -- Agriculture.** IQD 50M farming income. Expected: exempt.
-
-**Test 5 -- Foreign contractor.** IQD 500M government contract. Expected: CIT 15%. WHT at source.
-
-### Escalation protocol
-
-```
-REVIEWER FLAG / ESCALATION REQUIRED
-[Standard format]
+```oa-check
+name: Evidence reconciliation
+inputs:
+  transactions: 12
+  supported: 9
+steps:
+  - missing: transactions - supported
+expected:
+  missing: 3
 ```
 
-### Prohibitions
+Decision: option A has 6 unsupported classifications; option B has 2. Resolving B still leaves 2 open and improves the evidence count by 4. This does not make either filing ready or establish that fewer documents satisfy a law.
 
-- NEVER state Iraq has VAT -- it does not
-- NEVER apply VAT calculations to Iraq
-- NEVER apply input credits to specific sales taxes
-- NEVER assume federal rules apply in Kurdistan Region
-- NEVER file without Arabic documentation
-- NEVER compute numbers -- engine handles arithmetic
+```oa-check
+name: Evidence resolution decision
+inputs:
+  missing_a: 6
+  missing_b: 2
+steps:
+  - improvement: missing_a - missing_b
+  - remaining: missing_b
+expected:
+  improvement: 4
+  remaining: 2
+```
 
-## Disclaimer
+## Ask the client first
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+- Taxpayer/entity, nationality/residence and relevant period?
+- Federal Iraq, Kurdistan Region and other countries involved?
+- Exact income, transaction, counterparty and supporting documents?
+- Related parties, oil contract, PE, employment or property facts?
+- Prior filings, authority notices, registrations and disputed items?
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+## Sources
+
+| Source and actual read scope | URL | Read on |
+|---|---|---|
+| Law 113: PDF pp. 5–6 arts. 3–5 and p. 13 art. 11 read with neighbours, source baseline informing the nationality/source/loss routing; no complete 2026 currentness chain | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
+
+Not yet confirmed: **IQ-CURRENT** complete current law; **IQ-TP** transfer-pricing legal basis, scope, methods, thresholds and full documentation/filing workflow; **IQ-XB** residence/PE/source tests, current treaties and payment-specific rules; **IQ-ROUTER-LEGACY** agricultural exemption scope, ordinary foreign-contractor result, oil classification, VAT/GST absence, registration, reverse charge, input credits, digital supplies and KRI dual-filing claim. Old sample answers/tests, mandatory Arabic-books instruction and broad tax prohibitions are superseded holds, not operative answers. Current forms, deadlines, sanctions and sign-off requirements must be established job by job. Historical source extracts are not proof that an obligation is absent.
 
 <!-- openaccountants-cta-block -->
 

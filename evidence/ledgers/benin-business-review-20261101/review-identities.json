@@ -1,0 +1,101 @@
+{
+  "frozen_head": "cf0afc121b77fe7457fefc8bd639bf720e32c98b",
+  "content_commit": "99b3a5980edf872c0271d6de96581058e125ca0b",
+  "guide": {
+    "path": "skills/benin/bj-business-income-tax.md",
+    "sha256": "09111922111237db1e9ea8fdaa5667371ebc292e031f438e5ab748709a503fd0",
+    "git_blob": "fa513bc4a55f43be0ae2e6d194fee71b944c708d"
+  },
+  "ledger_files": [
+    {
+      "path": "evidence/ledgers/benin-business-20261101/bj-business-income-tax.json",
+      "sha256": "fe0d7d2e039c7dda0367d0516199d5e3b635d4242fbedf8769302b1176bb9b34"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/bj-business-income-tax.md",
+      "sha256": "1efbf5f252419192b20c93a13c1e274d27fcc8d6776da2f5c83e6fb89b3c9484"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/committed-validation.json",
+      "sha256": "77ba80ed2679a1564a6322b83872b9f2f98cf0d5ea49f0996bcfb8de6349114d"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/freeze-receipt.json",
+      "sha256": "409d7c8cca1a1d347afe361410f38698f8f1981233cc4b5276c6581d8e9a3637"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/old-topic-destinations.json",
+      "sha256": "ce8e301ad4e4f0918fb952d41708b90ed1ee3839b2f36653c1393272cd5cdfda"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/old-topic-destinations.md",
+      "sha256": "7e731ccd6c30e036267c6c3eb4303673228587cf909b287f18a4e2fbcdad230b"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/preservation-baseline.json",
+      "sha256": "c1100633cd2d946327d194bac207dce86521276094cbf824a78f0c3665414e62"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/readme-routing-change.json",
+      "sha256": "3acdc1fab4d62401f39bd4fbc11c1ce1654f0edd69668bd78e23d05fa062c69e"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/source-holds.json",
+      "sha256": "fb00855b0d4e60542e04e73d06606729a45c950f50da5e79b3e501a5a0964d53"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/source-identities.json",
+      "sha256": "e65e7e3255d4b29961d3ab2028b08c14adc3bd11ca6a9d2417b7bce8056bcfb0"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/visual-quote-anchors.json",
+      "sha256": "5d29beebbdbaf4b544d059e8e158db7bc2949a151b4153b7e18c3c7ed6d33a8f"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-check.py",
+      "sha256": "90bc2bf6b95864ac459d2a97a6ddfc623d123ec422a626d3f67024da3ee13d43"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-checks.json",
+      "sha256": "4b8b2af20ba0b65fa710b83d6ca79007b52fa67300d6d7724f2dfe284c36f387"
+    },
+    {
+      "path": "evidence/ledgers/benin-business-20261101/writer-record.md",
+      "sha256": "aabcef6fde8079204ecb787ec9a8002288d1e158f6953a0c6d1499bebf21d4fb"
+    }
+  ],
+  "review_result": "53 rows substantively accepted,1 substantive repair row; row52 also needs exact-quote capitalisation.2 recomputations passed; closure not accepted until F1/F2 repaired",
+  "reviewer_role": "fresh independent reader; no author or accountant-attestation role",
+  "source_identities": [
+    {
+      "file": "cgi2026.pdf",
+      "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf",
+      "act": "CGI 2026",
+      "sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+      "bytes": 1390109,
+      "read_date": "2026-11-01",
+      "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+      "retrieval": "Reused official raw PDF already cached on 2026-11-01; writer actually read the scopes listed here. No new retrieval claimed."
+    },
+    {
+      "file": "lf2026.pdf",
+      "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf",
+      "act": "Law 2025-22 of 8 December 2025",
+      "sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+      "bytes": 915162,
+      "read_date": "2026-11-01",
+      "read_scope": "OCR fiscal arts1–17 and final47–48 read. Original scans PDF1,4,14 visually inspected for income-period clause, art14/IBA250000 floor, commencement and signature. Not budget-table review.",
+      "retrieval": "Reused official raw PDF already cached on 2026-11-01; writer actually read the scopes listed here. No new retrieval claimed."
+    },
+    {
+      "file": "lfr2026.pdf",
+      "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf",
+      "act": "Law 2026-10 of 24 June 2026",
+      "sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+      "bytes": 6301177,
+      "read_date": "2026-11-01",
+      "read_scope": "OCR fiscal arts1–19 and final48–49 read. Original scans PDF1,3,17 visually inspected for income period, art8/CGI180 exclusion, art9/cessation and final signature. Exact first operative TPS-amendment period not resolved.",
+      "retrieval": "Reused official raw PDF already cached on 2026-11-01; writer actually read the scopes listed here. No new retrieval claimed."
+    }
+  ]
+}

@@ -1,0 +1,1576 @@
+{
+  "frozen_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "ledger_sha256": "4007dfb36023adbd7c81a47d64201062163a7ed51677cb3269132ae450f98333",
+  "row_count": 50,
+  "rows_accepted_as_written": 48,
+  "rows_requiring_qualification": 2,
+  "not_distinct_figure_count": true,
+  "rows": [
+    {
+      "id": "P01",
+      "article": "10.01.01–02",
+      "rule": "IFT is annual on January 1 facts; land is covered regardless of legal status/use, subject to exemptions; owner or actual occupant is assessed.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        145
+      ],
+      "printed_pages": [
+        144
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "un impôt annuel établi en raison des faits existant au 1er Janvier",
+          "found": true
+        },
+        {
+          "quote": "quelles que soient leur situation juridique et leur affectation",
+          "found": true
+        },
+        {
+          "quote": "au nom des propriétaires ou des occupants effectifs au 1er Janvier",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Annual fact date, owner/actual occupant, all land legal status/use and permanent-exemption reservation read together."
+    },
+    {
+      "id": "P02",
+      "article": "10.02.01–02",
+      "rule": "IFPB uses January 1 facts; assess the owner or usufructuary identified after the bare owner, or failing that the apparent owner.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        148
+      ],
+      "printed_pages": [
+        147
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "au 1er Janvier de l’année d’imposition",
+          "found": true
+        },
+        {
+          "quote": "ou de l’usufruitier dont le nom doit figurer sur l’avis d’imposition à la suite de celui du nu-propriétaire",
+          "found": true
+        },
+        {
+          "quote": "ou à défaut, du propriétaire apparent",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Annual fact date and owner/usufructuary-after-bare-owner/apparent-owner order preserved."
+    },
+    {
+      "id": "P03",
+      "article": "10.02.02(1)",
+      "rule": "Construction materials do not remove IFPB; each completed part is assessed separately; habitable or actually inhabited counts as completed.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        148
+      ],
+      "printed_pages": [
+        147
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "toutes les constructions quelle que soit la nature des matériaux utilisés",
+          "found": true
+        },
+        {
+          "quote": "chaque partie est imposable isolément dès qu’elle est achevée",
+          "found": true
+        },
+        {
+          "quote": "habitable ou habité en fait",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "All materials; separately completed parts; habitable OR actually inhabited completion test preserved."
+    },
+    {
+      "id": "P04",
+      "article": "10.02.02(2)–(3)",
+      "rule": "IFPB includes industrial/commercial land occupied by the owner or others free or for consideration, fixed industrial equipment and assimilated commercial installations.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        148
+      ],
+      "printed_pages": [
+        147
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "les terrains employés à usage industriel ou commercial",
+          "found": true
+        },
+        {
+          "quote": "à titre gratuit ou onéreux",
+          "found": true
+        },
+        {
+          "quote": "l’outillage des établissements industriels fixé à perpétuelle demeure",
+          "found": true
+        },
+        {
+          "quote": "reposant sur des fondations spéciales faisant corps avec l’immeuble",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Industrial/commercial land has owner/other occupant and free/paid alternatives; fixed/foundation equipment and assimilated commercial installations retained."
+    },
+    {
+      "id": "P05",
+      "article": "10.01.03(4)",
+      "rule": "Land taxed under IFPB article 10.02.02(2) is exempt from IFT; do not double-assess that category.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        145,
+        148
+      ],
+      "printed_pages": [
+        144,
+        147
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Les terrains visés par l’article 10.02.02, 2° du présent Code imposés à l’IFPB.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Cross-reference is specifically 10.02.02(2), not every building or general business status."
+    },
+    {
+      "id": "P06",
+      "article": "24",
+      "rule": "LFI entry requires radio or posted publication; actual activation date remains unproved.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "LFI",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "pdf_pages_1based": [
+        131
+      ],
+      "printed_pages": [
+        129
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "entrera en vigueur dès qu'elle aura reçu une publication par émission radiodiffusée ou affichage",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Article24 conditions entry on radio or posted publication independently of Gazette insertion. Promulgation is20December2025, not proof of publication."
+    },
+    {
+      "id": "P07",
+      "article": "22",
+      "rule": "July LFR entry requires radio or posted publication; the signature alone does not prove the activation date.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "LFR",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "pdf_pages_1based": [
+        52
+      ],
+      "printed_pages": [
+        48
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "entrera en vigueur dès qu'elle aura reçu une publication par émission radiodiffusée ou affichage",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Article22 has the publication alternatives; signed/ampliation page16July2026 establishes no activation date."
+    },
+    {
+      "id": "P08",
+      "article": "10.01.07",
+      "rule": "IFT categories 1–5 use commune tariffs per hectare voted for four years; absent a vote, prior tariffs/rates carry forward.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146
+      ],
+      "printed_pages": [
+        145
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "un tarif exprimé en Ariary par ha de la première à la cinquième catégorie, voté pour quatre ans",
+          "found": true
+        },
+        {
+          "quote": "A défaut d’un vote de tarif et taux, sont reconduits ceux de la période antérieure",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Per-hectare categories1–5, four-year vote and prior-period fallback all present; actual commune tariff remains an input."
+    },
+    {
+      "id": "P09",
+      "article": "10.01.07",
+      "rule": "IFT category 6 uses 1% of supported market value; the minimum is MGA 2,000 per assessment.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146
+      ],
+      "printed_pages": [
+        145
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "1p.100 de la valeur vénale du terrain.",
+          "found": true
+        },
+        {
+          "quote": "ne peut en aucune façon être inférieur à Ar 2 000 par taxation.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Category6 statutory1% and MGA2000 per taxation preserved; no invented per-hectare floor."
+    },
+    {
+      "id": "P10",
+      "article": "10.02.06(1)",
+      "rule": "For rented IFPB property, annualised declared rent cannot be lower than the commission-criteria rental value.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        149
+      ],
+      "printed_pages": [
+        148
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Au montant des loyers déclarés ramenés à l’année",
+          "found": true
+        },
+        {
+          "quote": "ne doit pas être inférieure à celle obtenue par application des critères d’évaluation",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Declared rents annualised; cannot fall below commission-criteria rental value."
+    },
+    {
+      "id": "P11",
+      "article": "10.02.06(2)",
+      "rule": "Property personally occupied by the owner as principal residence uses 30% of commission rental value, not a landlord allowance.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        149
+      ],
+      "printed_pages": [
+        148
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "30p.100 de la valeur locative obtenue par application des critères d’évaluation",
+          "found": true
+        },
+        {
+          "quote": "pour l’immeuble occupé par le propriétaire lui-même, à titre de résidence principale.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "30% multiplies commission rental value only for owner himself occupying principal residence, not a30% discount or landlord relief."
+    },
+    {
+      "id": "P12",
+      "article": "10.02.06(3)",
+      "rule": "Industrial property uses the 30% rule only for an enterprise approved under the Law on Industrial Development.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        149
+      ],
+      "printed_pages": [
+        148
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "30p.100 de la valeur locative citée précédemment",
+          "found": true
+        },
+        {
+          "quote": "pour les entreprises agréées au titre de la Loi sur le Développement de l’Industrie.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Industrial limb30% requires enterprise approval under industrial-development law; ordinary industrial use alone insufficient."
+    },
+    {
+      "id": "P13",
+      "article": "10.02.10",
+      "rule": "Ordinary IFPB is 5% of the applicable taxable rental value, minimum MGA 5,000 per building.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        150
+      ],
+      "printed_pages": [
+        149
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "application d’un taux fixe de 5p.100 à la valeur locative",
+          "found": true
+        },
+        {
+          "quote": "ne doit pas être inférieur à Ar 5 000 par immeuble.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Ordinary5% applied to article06 rental value with MGA5000 per immeuble; exemptions/flat route considered first."
+    },
+    {
+      "id": "P14",
+      "article": "10.02.10",
+      "rule": "A derogating flat charge requires a commune-authorised building, specific criteria determined after commission opinion and a council-fixed amount.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        150
+      ],
+      "printed_pages": [
+        149
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "les immeubles construits avec l’autorisation de la Commune",
+          "found": true
+        },
+        {
+          "quote": "critères spécifiques déterminés par le secrétaire et/ou les techniciens membres de la commission après avis de la Commission",
+          "found": true
+        },
+        {
+          "quote": "Les montants des forfaits sont fixés par délibération du Conseil Municipal ou Communal.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Commune-authorised construction, specific secretary and/or technician criteria after commission opinion, council-fixed flat amount all retained."
+    },
+    {
+      "id": "P15",
+      "article": "10.02.09",
+      "rule": "Rental values can be revised annually by council vote; absent revision, a 5% base uplift applies for a new three-year period; an intervening revision is immediately applicable.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        150
+      ],
+      "printed_pages": [
+        149
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "peuvent être révisées, chaque année",
+          "found": true
+        },
+        {
+          "quote": "une majoration de 5p.100 de la base sera appliquée pour une nouvelle période de 3 ans",
+          "found": true
+        },
+        {
+          "quote": "la valeur qui en résulte sera immédiatement applicable.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Annual revision permissive; absent revision5% base increase for new3year period, intervening revision immediate. No unsupported annual compounding algorithm."
+    },
+    {
+      "id": "P16",
+      "article": "10.01.07",
+      "rule": "IFT category 1 lists the specified single or associated plantation crops; category 2 covers woods, forests, lakes and marshes.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146
+      ],
+      "printed_pages": [
+        145
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Première catégorie (en plantation unique ou associée)",
+          "found": true
+        },
+        {
+          "quote": "cacao, café, cannes à sucre, cocotiers, coton, girofle, palmiers à huile, plantes à parfum, poivre, sisal, vanille.",
+          "found": true
+        },
+        {
+          "quote": "bois, forêts, lacs, marécages",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Every category1 crop and single/associated wording checked; category2 woods/forests/lakes/marshes exact."
+    },
+    {
+      "id": "P17",
+      "article": "10.01.07",
+      "rule": "IFT category 3 covers market-garden/food crops, rice and unlisted plantations; category 4 covers grazing, unexploitable/fallow land; category 5 covers exploitable but unused land.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146
+      ],
+      "printed_pages": [
+        145
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "cultures maraîchères et vivrières, riz et autres plantations non dénommées",
+          "found": true
+        },
+        {
+          "quote": "pâturages naturels et artificiels, terrains non exploitables, terrains en jachères.",
+          "found": true
+        },
+        {
+          "quote": "terrains exploitables non exploités.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Category3 vegetable/food/rice/unlisted plantations, category4 grazing/nonexploitable/fallow, category5exploitable unused distinction preserved."
+    },
+    {
+      "id": "P18",
+      "article": "10.01.07",
+      "rule": "IFT category 6 includes the stated non-agricultural, urban unbuilt and construction-site classes; mayoral urban-perimeter order and agricultural exclusions must be respected.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146
+      ],
+      "printed_pages": [
+        145
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "périmètre urbanisé de la Commune fixé par arrêté du Maire en conformité, s’il existe, avec le schéma d’urbanisme",
+          "found": true
+        },
+        {
+          "quote": "construction hors d’état d’usage",
+          "found": true
+        },
+        {
+          "quote": "construction de caractéristique sans rapport avec la surface et la localisation du terrain",
+          "found": true
+        },
+        {
+          "quote": "à l’exclusion des terrains destinés à la culture rizicole, maraîchère, vivrière et à la culture d’arbres fruitiers",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Category6 full land classes, mayoral urban perimeter/plan condition and rice/vegetable/food/fruit-tree exclusions retained."
+    },
+    {
+      "id": "P19",
+      "article": "10.01.07",
+      "rule": "IFT market value follows the latest transfer acts or, failing those, comparison with commission standard values.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146
+      ],
+      "printed_pages": [
+        145
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "d’après les actes translatifs les plus récents, ou, à défaut, par comparaison avec des valeurs types fixées par la commission",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Most recent transfer acts first, commission-type comparison only failing them; no estate-agent substitute."
+    },
+    {
+      "id": "P20",
+      "article": "10.01.06–07",
+      "rule": "IFT is assessed in the commune of the land; the competent fiscal centre determines the base and liquidates tax.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        145,
+        146
+      ],
+      "printed_pages": [
+        144,
+        145
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "au chef-lieu de la Commune où est situé le terrain.",
+          "found": true
+        },
+        {
+          "quote": "établi par le Centre fiscal territorialement compétent. Il détermine l’assiette et assure la liquidation.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Commune location and fiscal-centre assessment/liquidation functions read in separate chapters; administration not reassigned to commune."
+    },
+    {
+      "id": "P21",
+      "article": "10.01.03",
+      "rule": "IFT permanent exemptions require the stated public-service/no-income or gratuitous exclusive-use conditions; immediate necessary dependencies have a 20-are limit, with excess treatment held.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        145
+      ],
+      "printed_pages": [
+        144
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "affectés à un service public ou à un service reconnu d’utilité publique et sont improductifs de revenus",
+          "found": true
+        },
+        {
+          "quote": "Les terrains gratuitement et exclusivement affectés",
+          "found": true
+        },
+        {
+          "quote": "à des œuvres gratuites à caractère médical ou social",
+          "found": true
+        },
+        {
+          "quote": "à l’enseignement ou à l’exercice du culte",
+          "found": true
+        },
+        {
+          "quote": "dépendance nécessaire et immédiate des bâtiments tels que cour, passage, jardin, n’excédant pas 20 ares.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Public ownership+public/public-utility service+no revenue; free exclusive specified purpose;20are necessary immediate dependencies; excess expressly held."
+    },
+    {
+      "id": "P22",
+      "article": "10.01.04",
+      "rule": "New cultivation must effectively extend cultivated area; tax starts in the sixth year following development; qualifying reforestation needs at least 1,500 living trees per hectare for relief through the first actual cut year.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        145
+      ],
+      "printed_pages": [
+        144
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "constituant une extension effective de la surface cultivée",
+          "found": true
+        },
+        {
+          "quote": "à compter de la 6ème année qui suit celle de la mise en valeur",
+          "found": true
+        },
+        {
+          "quote": "1 500 arbres vivants par hectare",
+          "found": true
+        },
+        {
+          "quote": "jusqu’à la fin de l’année au cours de laquelle la première coupe est effectivement réalisée.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Effective extension required; sixth following year, not fifth;1500livingtrees/ha inclusive; extension ends first actual cut year."
+    },
+    {
+      "id": "P23",
+      "article": "10.02.08",
+      "rule": "The IFPB commission proposes values for council vote; decisions need at least 50% of members present; owners must be informed before an on-site check; the tax representative is secretary.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        149
+      ],
+      "printed_pages": [
+        148
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "propositions de valeurs locatives qui sont soumises au vote des conseillers municipaux ou communaux",
+          "found": true
+        },
+        {
+          "quote": "en présence d’au moins 50p.100 des membres",
+          "found": true
+        },
+        {
+          "quote": "Les propriétaires doivent être informés en temps utile",
+          "found": true
+        },
+        {
+          "quote": "joue le rôle de secrétaire de la Commission",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Council vote distinct from commission proposal; at least50% member presence; timely owner information for visit; tax representative secretary."
+    },
+    {
+      "id": "P24",
+      "article": "10.02.03",
+      "rule": "IFPB permanent exemptions require the stated public-owner public/general-interest service and no income, or gratuitous exclusive free social/medical, education or worship use.",
+      "verdict": "correction_required",
+      "finding": "F2",
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        148
+      ],
+      "printed_pages": [
+        147
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "affectés à un service public ou d’intérêt général et sont improductifs de revenus.",
+          "found": true
+        },
+        {
+          "quote": "Les immeubles ou partie d’immeubles gratuitement et exclusivement affectés",
+          "found": true
+        },
+        {
+          "quote": "à des œuvres gratuites à caractère social et médical",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "F2: public-owner/no-revenue limb correct. Gratuitous/exclusive purpose text says social ET médical, unlike IFT medical OU social. Slash needs exact conjunction."
+    },
+    {
+      "id": "P25",
+      "article": "10.02.04",
+      "rule": "New construction/reconstruction/additions have a conditional five-year personal exemption; a change of owner ends it except heirs retain the deceased owner's remaining period.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        148
+      ],
+      "printed_pages": [
+        147
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Sous réserve des dispositions de l’article 10.02.05",
+          "found": true
+        },
+        {
+          "quote": "exonérées pendant 5 ans à compter de l’année d’achèvement.",
+          "found": true
+        },
+        {
+          "quote": "L’exonération est personnelle, elle est caduque dès que l’immeuble change de propriétaire",
+          "found": true
+        },
+        {
+          "quote": "les héritiers continuent à bénéficier de l’exonération accordée au de cujus",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Five-year exemption subject article05; personal and lapses on ownership change except heirs remaining deceased period; no inheritance reset."
+    },
+    {
+      "id": "P26",
+      "article": "I-106",
+      "rule": "IFT annual declaration is due to the commune by October 15, written or online, with location, area by use and tenant/rent details.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        31,
+        32
+      ],
+      "printed_pages": [
+        30,
+        31
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "au bureau de la Commune du lieu de la situation de l’immeuble, au plus tard le 15 Octobre",
+          "found": true
+        },
+        {
+          "quote": "une déclaration écrite ou en ligne",
+          "found": true
+        },
+        {
+          "quote": "La superficie par nature de culture ou autres affectations",
+          "found": true
+        },
+        {
+          "quote": "Les noms et prénoms des locataires ainsi que le montant du loyer.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "IFT commune filing au plus tard15October, written/online and listed location/area/use/tenant/rent inputs exact."
+    },
+    {
+      "id": "P27",
+      "article": "I-107",
+      "rule": "IFPB annual declaration is due to the commune before October 15, with bare/furnished rentals/rents, own occupation, free occupation and vacancies.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        32
+      ],
+      "printed_pages": [
+        31
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "avant le 15 Octobre de chaque année",
+          "found": true
+        },
+        {
+          "quote": "la consistance des locaux loués nus d’une part, celle des locaux loués meublés d’autre part",
+          "found": true
+        },
+        {
+          "quote": "Les noms et prénoms des occupants à titre gratuit",
+          "found": true
+        },
+        {
+          "quote": "La consistance des locaux vacants.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "IFPB avant15October deliberately differs from IFT; rented bare/furnished, own, free and vacant premises all retained."
+    },
+    {
+      "id": "P28",
+      "article": "I-106–107",
+      "rule": "Remote rural communes can record verbal declarations in duplicate registers; communes consolidate the information for the competent fiscal centre.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        32
+      ],
+      "printed_pages": [
+        31
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Pour les Communes rurales éloignées",
+          "found": true
+        },
+        {
+          "quote": "simple déclaration verbale consignée sur un registre tenu en double exemplaire par le Maire ou son représentant.",
+          "found": true
+        },
+        {
+          "quote": "transmises au Centre fiscal territorialement compétent pour les besoins de l’assiette et de la liquidation",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Remote rural verbal option is duplicate register by mayor/representative. Commune consolidates and transmits to fiscal centre."
+    },
+    {
+      "id": "P29",
+      "article": "I-106–107",
+      "rule": "Rental changes between October 15 and January 1 require the owner's corrective declaration at the fiscal centre before the assessment year starts.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        32
+      ],
+      "printed_pages": [
+        31
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Si entre le 15 Octobre et le 1er Janvier de l’année d’imposition",
+          "found": true
+        },
+        {
+          "quote": "déclaration rectificative au bureau du Centre fiscal avant le début de l’année d’imposition.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Both I106/I107 include change in rental conditions15October–1January and fiscal-centre corrective filing before year begins."
+    },
+    {
+      "id": "P30",
+      "article": "VII-01",
+      "rule": "The assessment notice needs mayor/deputy signature and fiscal-centre visa or QR code, with identity, commune, year, property/use/category, base, tariff/rate and amount; missing visa/QR makes it void.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        128
+      ],
+      "printed_pages": [
+        127
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "avis d’imposition préalablement signé par le Maire",
+          "found": true
+        },
+        {
+          "quote": "ou doté d’un code QR",
+          "found": true
+        },
+        {
+          "quote": "dépourvu du visa du Centre Fiscal ou d’un code QR est nul et de nul effet.",
+          "found": true
+        },
+        {
+          "quote": "Numéro d’immatriculation fiscale ou numéro de carte d’identité",
+          "found": true
+        },
+        {
+          "quote": "Base imposable",
+          "found": true
+        },
+        {
+          "quote": "Montants à payer",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Prior mayor/deputy signature plus centre visa OR tax QR. Identity/use/category/base/rate/amount contents and nullity clause read."
+    },
+    {
+      "id": "P31",
+      "article": "VII-01",
+      "rule": "Exigibility starts March 1 subject to special local-tax provisions; tax must be paid within three months of notice receipt; the commune collects.",
+      "verdict": "correction_required",
+      "finding": "F1",
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        128,
+        134
+      ],
+      "printed_pages": [
+        127,
+        133
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "exigibles à partir du 1er mars",
+          "found": true
+        },
+        {
+          "quote": "sous réserve des dispositions particulières",
+          "found": true
+        },
+        {
+          "quote": "Les Communes sont chargées du recouvrement des impôts fonciers.",
+          "found": true
+        },
+        {
+          "quote": "dans les 3 mois de la date de la réception de l’avis d’imposition.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "F1: VII01 three-month notice period quoted accurately, but VII33 explicitly includes VII01 debts and notified title demands sans délai, immediately exigible. Final deadline needs explicit interaction hold."
+    },
+    {
+      "id": "P32",
+      "article": "VII-02",
+      "rule": "A mayoral decision can permit instalments based on prior-year tax; taxpayers can request staged payment from the commune collection officer.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        128
+      ],
+      "printed_pages": [
+        127
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Sur décision du Maire",
+          "found": true
+        },
+        {
+          "quote": "acomptes calculés sur les impôts de l’année précédente.",
+          "found": true
+        },
+        {
+          "quote": "demander un paiement échelonné auprès du responsable de recouvrement",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Mayor may choose prior-year-tax instalments; taxpayer may separately request staged payment to commune collection officer."
+    },
+    {
+      "id": "P33",
+      "article": "VII-03",
+      "rule": "The fiscal-centre chief can defer for seasonal-resource reasons, but not beyond November 1.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        128
+      ],
+      "printed_pages": [
+        127
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "de façon à tenir compte du moment où les contribuables disposent dans l’année du maximum de ressources",
+          "found": true
+        },
+        {
+          "quote": "au-delà du 1er Novembre.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Fiscal-centre chief seasonal-resource deferment cannot extend payment limit beyond1November."
+    },
+    {
+      "id": "P34",
+      "article": "VII-04",
+      "rule": "The full assessment is immediately exigible on the listed departure, sale, insolvency or rights-uplift sanction events; do not assume the normal notice period.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        129
+      ],
+      "printed_pages": [
+        128
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Changement de domicile ou de résidence hors de la Commune.",
+          "found": true
+        },
+        {
+          "quote": "Départ définitif du territoire",
+          "found": true
+        },
+        {
+          "quote": "Vente volontaire ou forcée.",
+          "found": true
+        },
+        {
+          "quote": "Faillite ou règlement judiciaire.",
+          "found": true
+        },
+        {
+          "quote": "majoration de droits pour insuffisance ou défaut de déclaration.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "All five live acceleration cases retained; deleted point5 not invented as a current event."
+    },
+    {
+      "id": "P35",
+      "article": "VII-06",
+      "rule": "Payment goes to the commune collection agent through legally valid or minister-authorised methods; actual references and receipt workflow remain held.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        129
+      ],
+      "printed_pages": [
+        128
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "modes de paiement ayant cours légal",
+          "found": true
+        },
+        {
+          "quote": "modes de paiement autorisés par le Ministre",
+          "found": true
+        },
+        {
+          "quote": "auprès de l’agent chargé du recouvrement de la Commune du lieu de la situation de l’immeuble.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Commune agent/location and legally valid/minister-authorised modes exact. Monthly agent report is administrative, not taxpayer proof of acceptance."
+    },
+    {
+      "id": "P36",
+      "article": "10.01.05",
+      "rule": "IFT temporary-exemption request/declaration goes to the fiscal centre by October 15 each year with location, area, cultivation and development/recépage dates; obtain the chief's certificate.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        145
+      ],
+      "printed_pages": [
+        144
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "au bureau du Centre fiscal du lieu de la situation de l’immeuble une demande et une déclaration",
+          "found": true
+        },
+        {
+          "quote": "au plus tard le 15 Octobre de chaque année.",
+          "found": true
+        },
+        {
+          "quote": "date du commencement des travaux de mise en valeur ou de recépage",
+          "found": true
+        },
+        {
+          "quote": "Une attestation d’exonération est délivrée par le Chef du Centre fiscal",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Temporary land request/declaration fiscal centre by15October each year, location/area/culture/development or recépage dates and chief attestation."
+    },
+    {
+      "id": "P37",
+      "article": "10.02.05",
+      "rule": "IFPB exemption needs a fiscal-centre request and required attachments; start follows permit production, end follows the fifth post-completion year; last-quarter completion has a permit-before-April-1 condition.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        148
+      ],
+      "printed_pages": [
+        147
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "une demande en y annexant les pièces requises",
+          "found": true
+        },
+        {
+          "quote": "L’exonération est accordée à partir de l’année suivant celle au cours de laquelle le permis d’habiter a été produit",
+          "found": true
+        },
+        {
+          "quote": "fin de la 5ème année suivant celle de l’achèvement.",
+          "found": true
+        },
+        {
+          "quote": "lorsque la construction a été achevée au cours du dernier trimestre civil",
+          "found": true
+        },
+        {
+          "quote": "si le permis d’habiter est produit avant le 1avril de ladite année.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Article05 permit-production start/end and Q4/before1April exception retained; completion alone insufficient and attachments remain held."
+    },
+    {
+      "id": "P38",
+      "article": "VII-33",
+      "rule": "The baseline CPF requires the IFPB collection title at the same time as the assessment notice.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        134
+      ],
+      "printed_pages": [
+        133
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Pour l’impôt foncier sur la propriété bâtie, le titre de perception est émis en même temps que l’avis d’imposition.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Baseline simultaneous issue is IFPB only; read complete neighbouring title-notification paragraphs as F1, not a blanket exemption from ChapterII."
+    },
+    {
+      "id": "P39",
+      "article": "Amendment to CPF VII-33;22",
+      "rule": "July LFR extends simultaneous collection title/assessment notice to both IFPB and IFT; activation remains unproved.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "LFR",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "pdf_pages_1based": [
+        36,
+        37,
+        52
+      ],
+      "printed_pages": [
+        32,
+        33,
+        48
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Pour l’impôt foncier sur la propriété bâtie et l’impôt foncier sur les terrains",
+          "found": true
+        },
+        {
+          "quote": "émis en même temps que l’avis d’imposition.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "LFR changes second paragraph to include IFT; activation unknown; nearby VII32 rounding insertion read separately, not automatically imported across chapters."
+    },
+    {
+      "id": "P40",
+      "article": "10.01.10",
+      "rule": "Involuntary plantation/crop loss permits an IFT relief request within three months of the event, proportional to established gross-income loss; the mayor can seek collective relief; detailed claim forms remain held.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146,
+        147
+      ],
+      "printed_pages": [
+        145,
+        146
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "circonstances indépendantes de la volonté du contribuable",
+          "found": true
+        },
+        {
+          "quote": "dans les 3 mois qui suivent l’événement",
+          "found": true
+        },
+        {
+          "quote": "proportionnel à la perte de revenu brut constatée au cours de l’année d’imposition.",
+          "found": true
+        },
+        {
+          "quote": "la totalité ou la majorité des terrains d’une Commune",
+          "found": true
+        },
+        {
+          "quote": "demande collective de décharge ou réduction",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Involuntary crop/plantation loss;3months after event to fiscal centre in VI01forms; gross-income proportionality; mayor collective application not automatic relief."
+    },
+    {
+      "id": "P41",
+      "article": "I-108",
+      "rule": "A transfer act presented to the fiscal centre must carry a legal-status certificate; this is not a full conveyance or transactional-tax computation.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CPF",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        32
+      ],
+      "printed_pages": [
+        31
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Tout acte de transfert de propriété présenté au Centre fiscal doit être accompagné d’un certificat de situation juridique.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Legal-status certificate requirement for transfer act presented to centre exact; does not compute transfer duty or capital gain."
+    },
+    {
+      "id": "P42",
+      "article": "20.01.52;20.01.52.2",
+      "rule": "IFT/IFPB declaration default has the specific MGA 20,000 penalty under the general breach and article 52.2.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        173,
+        174
+      ],
+      "printed_pages": [
+        172,
+        173
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Le défaut de dépôt de toute déclaration",
+          "found": true
+        },
+        {
+          "quote": "Le montant de la pénalité est d’Ar 20 000 pour les impôts prévus aux articles 10.01.01, 10.02.01",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "20.01.52 general default read with specific52.2 MGA20000 IFT/IFPB amounts; not generic turnover penalty."
+    },
+    {
+      "id": "P43",
+      "article": "20.01.53;20.01.53.4",
+      "rule": "Book II late remittance has a specific 1%-per-month rule; the general floor/started-month interaction is held, so no final sanction is computed.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        173,
+        174,
+        175
+      ],
+      "printed_pages": [
+        172,
+        173,
+        174
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Tout retard dans le versement des impôts, droits et taxes prévus par les dispositions du Livre II",
+          "found": true
+        },
+        {
+          "quote": "1p.100 par mois de retard.",
+          "found": true
+        },
+        {
+          "quote": "Le montant total des pénalités de retard à payer pour chaque nature d’impôt et pour chaque période",
+          "found": true
+        },
+        {
+          "quote": "Tout mois commencé étant dû en entier.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "20.01.51 cross-application,53 general minimum10000/startedmonth,53.4BookII1% and54neighbours read. General floor interaction expressly held; no final sanction computed."
+    },
+    {
+      "id": "P44",
+      "article": "20.01.56.3",
+      "rule": "Refusal of IFPB access under articles 10.02.08/13 attracts MGA 200,000.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        178
+      ],
+      "printed_pages": [
+        177
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "le refus d’accès prévu aux articles 10.02.08 et 10.02.13 sera puni d’une amende d’Ar 200.000.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "IFPB access refusal references10.02.08and13; MGA200000 exact, separate from generic/other refusal offences."
+    },
+    {
+      "id": "P45",
+      "article": "10.01.09;10.02.13",
+      "rule": "The commune conducts the census; tax agents or mandated entities can census/verify on site at least every five years; a census is not declaration/payment acceptance.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        146,
+        150
+      ],
+      "printed_pages": [
+        145,
+        149
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "La Commune doit effectuer le recensement des immeubles",
+          "found": true
+        },
+        {
+          "quote": "du moins tous les cinq ans",
+          "found": true
+        },
+        {
+          "quote": "du moins tous les cinq (5) ans.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Commune census duty and tax/mandated entity on-site power read; statutory si besoin qualification retained by permissive description; five-year language exact."
+    },
+    {
+      "id": "P46",
+      "article": "30.01.14–15",
+      "rule": "Free zones and enterprises remain subject to the ordinary IFT/IFPB provisions; status alone is not a property exemption.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        201
+      ],
+      "printed_pages": [
+        200
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "relatives à l’IFT et à l’IFPB sont applicables au Zones et Entreprises Franches.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "30.01.14 expressly applies ordinary IFT/IFPB to free zones/enterprises;30.01.15 general computation context read."
+    },
+    {
+      "id": "P47",
+      "article": "30.02.22–23",
+      "rule": "Large-mining-investment holders/transformation entities have separate property and annex-tax rules; refer without computing unproved eligibility, caps or implementing provisions.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "CDI",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "pdf_pages_1based": [
+        211,
+        212,
+        213
+      ],
+      "printed_pages": [
+        210,
+        211,
+        212
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Le Titulaire et l'Entité de Transformation sont assujettis",
+          "found": true
+        },
+        {
+          "quote": "ainsi qu’à la taxe annexe à l’IFPB",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Full30.02.22 through continuation and23read; special1%/bases/exemption/cap/annex exist but no unproved eligibility or executable mining calculation added."
+    },
+    {
+      "id": "P48",
+      "article": "Amendments10.01.05–09;10.02.05–13",
+      "rule": "The original LFI corroborates the 2026 exemption-request and assessment/liquidation reallocations to the fiscal centre.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "LFI",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "pdf_pages_1based": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "printed_pages": [
+        51,
+        52,
+        53,
+        54
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Modifier le groupe de mots « bureau de la Commune »",
+          "found": true
+        },
+        {
+          "quote": "par « bureau du Centre fiscal »",
+          "found": true
+        },
+        {
+          "quote": "Il détermine l’assiette et assure la liquidation.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Original amendments corroborate centre request/attestation, assessment/liquidation, commission and census transfers; compare CDI consolidation."
+    },
+    {
+      "id": "P49",
+      "article": "Amendments I-106–107;VII-01–06;VII-33",
+      "rule": "The original LFI corroborates commune declaration consolidation and the notice/payment framework.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "LFI",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "pdf_pages_1based": [
+        66,
+        67,
+        77,
+        78,
+        79,
+        80
+      ],
+      "printed_pages": [
+        64,
+        65,
+        75,
+        76,
+        77,
+        78
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "La Commune est chargée de collecter et de consolider",
+          "found": true
+        },
+        {
+          "quote": "avant le 15 Octobre de chaque année",
+          "found": true
+        },
+        {
+          "quote": "Les Communes sont chargées du recouvrement des impôts fonciers.",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Original I106/107commune consolidation and VII01/02/06/32/33changes agree with CPF; original VII33 extension explicitly VII01 debts and IFPB issue."
+    },
+    {
+      "id": "P50",
+      "article": "Amendment20.01.52;22",
+      "rule": "July's general article 20.01.52 amendment was read; the observed amendment does not replace property-specific article 52.2; activation remains held.",
+      "verdict": "accepted_with_explicit_scope_holds",
+      "finding": null,
+      "source": "LFR",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "pdf_pages_1based": [
+        30,
+        31,
+        32,
+        52
+      ],
+      "printed_pages": [
+        26,
+        27,
+        28,
+        48
+      ],
+      "read_on": "2026-11-01",
+      "exact_quote_checks": [
+        {
+          "quote": "Le défaut de dépôt de toute déclaration",
+          "found": true
+        },
+        {
+          "quote": "passibles d’une amende",
+          "found": true
+        }
+      ],
+      "independent_condition_review": "Full replacement20.01.52 and neighbours read. It changes general amende wording/beneficial-owner consequences but not52.2; activation still held."
+    }
+  ]
+}

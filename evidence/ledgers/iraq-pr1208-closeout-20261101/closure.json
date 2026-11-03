@@ -1,0 +1,379 @@
+{
+  "review_date": "2026-11-01",
+  "reviewer": "Fresh Codex independent-review agent; focused closure of its preserved every-row review",
+  "accepted_head": "345dbf3249dbaaa95591b5da513e9f3ca622b196",
+  "initial_reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+  "actual_merge_base": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+  "original_pr_head": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+  "verdict": "accepted_for_limited_source_baseline_publication",
+  "remaining_review_blockers": [],
+  "all_51_rows_accepted_only_at_stated_source_version_or_hold_scope": true,
+  "current_2026_operative_law_cleared": false,
+  "accountant_attestation": false,
+  "comprehensive_coverage": false,
+  "issue_435_must_remain_open": true,
+  "initial_review_receipts_preserved": true,
+  "accepted_content_sha256": {
+    "skills/iraq/README.md": "e4f0e6e2ae3af235327c842a7905f6b2990a1e6b498f456da20679e46ed8bd97",
+    "skills/iraq/iq-company-formation.md": "128b45eb43197e727c84d33c6a47369b5d698203bf7afbf452eb6b53ac9e1306",
+    "skills/iraq/iq-corporate-income-tax.md": "c1a64678198eeff2595433a7b7b95359a21398c4e90814acb1e9bd23c72f09c4",
+    "skills/iraq/iq-income-tax.md": "b2a05dc6341c193f068fcf3a99b42760a8a7bfc307fe8b775394f926b6d4e9de",
+    "skills/iraq/iq-payroll-social.md": "a6a4f684179aeac43ab478409cbe4fd93311f76c0142bb64f2814df6987abda5",
+    "skills/iraq/iq-tax-overview.md": "795e1b77b5372b4d639554a4a71db71853d593a043e5b97d88940c9ed3da24f1",
+    "skills/iraq/iq-vat-gst.md": "75f8a12b179865cd875742bd9afa2d1f0dd6b4a6a8f7e83e2aa7c4c88daf0b96",
+    "skills/iraq/iraq-tax.md": "9e720a44ba254f3fc0c33d6ad6ef20234ac7aaebd186f915e21b82cebb7c17fc",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/README.md": "f78d161d8537abfc7b5cc77060577efcd9a7095805488c7dd1f3d081536849cc",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/author-repair.json": "d8d55ab9697793edd9cb65b4d7d7273bc7440410b65f8842fd6051d6fa3e07c2",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/claim-rows.json": "8f39760fe40df85321081579800ac639193186e86cefb842a4d6be9d2a4d7400",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/independent-review.md": "ea619492c6e874b8109672f423d6dd68b03d539caa3c6ec9137f7357a99079f2",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/independent-row-verdicts.json": "bbee7bcb93428b7647e6423d8a0f5c52164f6b878bdf84d401dadce30d4ca37c",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/initial-provenance.json": "39de5091773df63962266dd7d7535eadcc0754d038ff52e2ac39fe1be9aef1e7",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-corporate-income-tax.md": "935362552e87bdacc0ac9faf43a2f76dd18153e1992394be0bb9bd5607f32430",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-income-tax.md": "711d7fe3f5ee71bb08451c92119f3fd16a6a9ef9720e0be2bbd3b3285a46ea92",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-payroll-social.md": "f454d305c9ede9b2d0287a6e864ddaa658371e3e228f5f89c3e9ecfe5e24e3d3",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-tax-overview.md": "72a00a6eaa0df4e580ed709e0545bffb55bec3c8ab588a56ca0a153ff044f0bc",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iq-vat-gst.md": "9778d24deaa72c4b4baf2e897e1c29b3e6c5a4d39066359071f2e31a44470d83",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/iraq-tax.md": "edf27bc7e47b6e46492d3edc22e628f988e59f8a985d4593f04aa487bbaf5dc3",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/old-lines.json": "b9a89817ca0c8f76aedf279c4bee724c271f49656fa15a0a1fbcca3ecff4ecf7",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/old-topic-destinations.md": "6ded3f815f9e3a7a2ac6b212ae90cafc457415de59504c001c377926ad7c7f3b",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/README.md": "92af423d6deac2d6e5a9fb13e60680dcd5243f982407161c583a1ec179f108b4",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-corporate-income-tax.md": "b6e7b707d9865917d290d9983f3005668fa9e754d17595fc1293f86f1cd09355",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-income-tax.md": "98ae819fdd51c68812dbf8407f2dd23bd961856726d46b54eabaae491c34b75b",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-payroll-social.md": "ac93d410908bbefa127471ac99104af762c1185044c69a933b168fd497b9b8ca",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-tax-overview.md": "4534efb7bc427b19c240daa644c82640f5e153f746ea8b42f85f47f8d52755a9",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-vat-gst.md": "fc430f4a65489513645597c4e3f57d43284ffedcf6907ef7fbe2bb1ff09342f7",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iraq-tax.md": "47b369c89e7ae9fff617ab56454c496c0e39d057bc822c149d6de11b2eca23d8",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/README.md": "dd5652102af9711293c34731c743504a39202859d7a341d362472de8d74d41dd",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-corporate-income-tax.md": "197ed658772676530f1ecd41dbea8e5cc574447d9f04f6572acb9c21af71bd40",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-income-tax.md": "c84c896d0e36cf54e9b23340d7337bb260a14987ab02063ea22099049e3811b7",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-payroll-social.md": "02dc8a8fe32849f645b92ef8fbd84b6c46f3b915ca4e58165286879a8480b47b",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-tax-overview.md": "a1bc739fffb07e0e1cbb8ff8444bd54ff3b4075897c728bb7ea454aa43390db4",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-vat-gst.md": "879a1a62472f84d0c70d48080d973fa0aa6215dc688227900b7526e5c04999ff",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iraq-tax.md": "01dac8ccf83be52e350da824026ca8d8e691244b557e7b25b9a70dcb06a5472b",
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/source-manifest.json": "bf2affd24af1f1ed417495696415be96fb5b7522e5642707aff1b2bc6e2369f6"
+  },
+  "focused_findings": [
+    {
+      "finding": "IQ-021 widow/divorce independence condition",
+      "closed": true,
+      "evidence": "Condition adjacent to3.2m in payroll Guide; full original-language condition in JSON/Markdown ledger, source payroll PDF3."
+    },
+    {
+      "finding": "Six exact-quote row repairs IQ-005/010/009/011/036/037",
+      "closed": true,
+      "evidence": "All requested lexical corrections match original pixels inspected in full review; JSON and per-Guide ledger claims/quotes match for all51rows."
+    },
+    {
+      "finding": "IQ-040 hotel quotation cross-reference",
+      "closed": true,
+      "evidence": "Both inventories now point to IQ-031."
+    },
+    {
+      "finding": "Five inherited subject-name holds IQ-045/046/049",
+      "closed": true,
+      "evidence": "Three PIT-BASE subjects, Iraqi unified accounting framework and assessment/calendar-year basis explicitly retained as holds; no obsolete figure restored."
+    },
+    {
+      "finding": "Six precise predecessor destinations",
+      "closed": true,
+      "evidence": "Only destination fields changed in the six identified old-lines rows; old text/stage/file/line/heading unchanged; Markdown mirrors destinations."
+    },
+    {
+      "finding": "Source-manifest actual-read truthfulness and payroll PDF18 context",
+      "closed": true,
+      "evidence": "Six sources marked read at stated limited scopes; five relied on. official09 is limited text read only, not relied on. Four downloaded-only entries remain unread. Payroll source scope includes PDF18–19."
+    }
+  ],
+  "row_closure": [
+    {
+      "id": "IQ-001",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-002",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-003",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-004",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-005",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-006",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-007",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-008",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-009",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-010",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-011",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-012",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-013",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-014",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-015",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-016",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-017",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-018",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-019",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-020",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-021",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-022",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-023",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-024",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-025",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-026",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-027",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-028",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-029",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-030",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-031",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-032",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-033",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-034",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-035",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-036",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-037",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-038",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-039",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-040",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-041",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-042",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-043",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-044",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-045",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-046",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-047",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-048",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-049",
+      "closure": "resolved",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-050",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    },
+    {
+      "id": "IQ-051",
+      "closure": "unchanged_initial_pass",
+      "accepted_scope": "source-version extract, derived illustration, evidence hold or author recommendation only; no current2026clearance"
+    }
+  ],
+  "independent_verification": {
+    "shape_checks": {
+      "passed": 90,
+      "failed": 0
+    },
+    "worked_examples": {
+      "files": 6,
+      "blocks": 12,
+      "failures": 0,
+      "missing": 0
+    },
+    "changed_only_validator": {
+      "errors": 0,
+      "warning_groups": 0
+    },
+    "strict_sync_integrity_actual_base": {
+      "guides": 6,
+      "errors": 0,
+      "warnings": 0,
+      "notices": 0
+    },
+    "whole_base_diff_check": "pass",
+    "source_manifest_sha256": "10/10match",
+    "predecessor_snapshots": "14/14match recorded historical commit bytes",
+    "old_lines": "931;343pre-pr+588original-pr;predecessor content unchanged",
+    "protected_metadata_and_full_stamped_CTA": "7/7match actual merge base",
+    "formation": "byte-identical actual-base2025file, explicitly held",
+    "accepted_delta": "4Guidefiles, focused ledger/map/manifest repairs, additive original review receipts and author-repair receipt; no generated outputs or new Guides"
+  },
+  "preservation_closure": {
+    "lost_content_restored_as_explicit_hold_subjects": 5,
+    "lost_content_restored_as_current_legal_rules": 0,
+    "old_snapshot_and_provenance_bytes_unchanged": true
+  },
+  "author_validation_receipt": "../sources/validation-345dbf3249dbaaa95591b5da513e9f3ca622b196.json"
+}

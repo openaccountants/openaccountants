@@ -1,0 +1,18 @@
+# Malawi focused repair checkpoint, 1 November 2026
+
+**F1–F3 closed for frozen `b8a714cfdcdc43d1493c423c6aa64d0c346d1cd0`. F4 remains OPEN. The pack remains unaccepted for operative 2026 coverage, live use or publication.** This is a partial repair checkpoint, not accountant attestation or country completion.
+
+Compared the repaired candidate with initial `9dcab78579d5e78dbdf7fa615186a8fdab96dcee`, preserved initial rejection `92a81d063ecf3c1f79d36b3950bacf67de0e0aae`, and pinned baseline `db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6`. Later unrelated remote changes were excluded. Only this new closure-evidence folder was added by the reviewer; no Guide/ledger/prior receipt was edited and no commit or remote action was made.
+
+| Finding | Focused closure evidence | Status |
+|---|---|---|
+| F1: corporate deduction conditions | Re-read the actual independently downloaded official Act17/2023 PDF, printed p3, visually. Guide now states 28(2)(a) taxable/exempt restriction, (b) final-tax cost disallowance, (c) common-cost apportionment by taxable/total income, and (d) Commissioner-approved/directed alternative for an unreasonable result. New ledger row19 carries the official URL, exact identifying quotation and read date. PDF SHA256 `05e5a8ca32bf219b40657f84dddd861828608a710e0967e31ea1dbe6b4ea6e0a`. | CLOSED as faithful reconstruction of that cited text; F4 currentness qualification remains. |
+| F2: lost formation subtopics | Actual formation Sources gap line now explicitly includes “restricted share transfers” and “statutory registers”. Map records Lost content restored:2; neither has become an asserted verified legal rule. | CLOSED |
+| F3: description specification | Independently counted words in parsed YAML: formation106, corporate103, individual100, payroll104, overview104, TP101, VAT103. All are within required80–150, explain the bounded jobs and preserve limitations. Version1.2 matches every body heading. | CLOSED |
+| F4: currentness chain | All seven Guides contain the prominent live-use stop, intended-research-year note and explicit Act3/commencement gaps; README carries the hold. These mitigations do not supply the unread law/notices. No fresh Act3/GN research or approval was attempted in this closure. | OPEN; pack UNACCEPTED |
+
+All fourteen oa-check blocks remain byte-for-byte equal to the initial candidate and recompute successfully: 14 blocks,0 failures,0 missing. Seven per-file shape checks, changed-Guide validation, strict pinned-base sync integrity and pinned diff whitespace checks pass. Exact commands/output are in `checks.json`. A shape-check “current year” pass is a metadata result, not legal currentness acceptance.
+
+All six original CTA suffixes are byte-for-byte equal to the pinned baseline. All platform-written/reviewer fields are equal to the initial candidate; no attestation was added. Original85 ledger rows remain intact; row19 brings the physical count to86. The only destination-map change is the restoration receipt. All six original review-evidence files remain byte-identical to the rejected-review commit. The initial capture manifest's82 file entries still match their hashes. These checks, candidate Guide hashes and description counts are in `preservation-and-scope.json`.
+
+Keep all existing partial declarations, missing XB job and source/portal/filing/base/specialist exclusions. The MRA press material in the parent's additive repair record was not treated as a substitute for the unread enacted Act3 or appointed commencement Gazette notices. No current-year, publication or complete-country acceptance follows from closing F1–F3.

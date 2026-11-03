@@ -1,0 +1,458 @@
+{
+  "phase": "frozen-three-initial",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "head": "49415f0ac633ca5eb547d0f2445fc99e6892b1ab",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/somalia/so-income-tax.md",
+        "skills/somalia/so-corporate-income-tax.md",
+        "skills/somalia/so-payroll-social.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/somalia/so-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/somalia/so-income-tax.md",
+        "skills/somalia/so-corporate-income-tax.md",
+        "skills/somalia/so-payroll-social.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 3 files, 6 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 3 changed guide file(s)\nchecked 3 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "49415f0ac633ca5eb547d0f2445fc99e6892b1ab",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 3 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "49415f0ac633ca5eb547d0f2445fc99e6892b1ab"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "files": [
+    {
+      "path": "skills/somalia/so-income-tax.md",
+      "base_blob": "18463bdf68974ac95e84ccc3bfbf34320ab6564a",
+      "candidate_sha256": "7113b7e6e8d3a7b74538bac7eeeb6ebd0ddae9ca4ddd3e0da3b6748629aa87e7",
+      "current_equals_candidate": true,
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true
+    },
+    {
+      "path": "skills/somalia/so-corporate-income-tax.md",
+      "base_blob": "d04a70e8725ed01cb64b967cef4686249fcd4cf9",
+      "candidate_sha256": "33d52f1fb5c6b19eaa0911cdb395e2c598bd787ff4947419e2edca8b9c422ca8",
+      "current_equals_candidate": true,
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true
+    },
+    {
+      "path": "skills/somalia/so-payroll-social.md",
+      "base_blob": "ad49d808b6318427025197391e308c0cc460f98b",
+      "candidate_sha256": "5de5347b59e5d85ec43d894a784f86a7cc7f450338b206fd81e9b63d056e9d49",
+      "current_equals_candidate": true,
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true
+    }
+  ],
+  "old_mapping": [
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": "all",
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 13,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 15,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 17,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 18,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 19,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 20,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 21,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 22,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 23,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 24,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 25,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 26,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 27,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-cross-border-residence.md",
+      "line": "all",
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 13,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 15,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 17,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 18,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 19,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 20,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 21,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 22,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 23,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 24,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 25,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 26,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 27,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 13,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 15,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 17,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 19,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 20,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 21,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 22,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 23,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 24,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 25,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 26,
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-tax-overview.md",
+      "line": "all",
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-transfer-pricing.md",
+      "line": "all",
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": "all",
+      "blob_matches": true,
+      "sha_matches": true,
+      "text_matches": true,
+      "has_destination": true
+    }
+  ],
+  "untouched_guides": {
+    "so-company-formation.md": true,
+    "so-vat-gst.md": true,
+    "so-tax-overview.md": true,
+    "so-cross-border-residence.md": true,
+    "so-transfer-pricing.md": true
+  },
+  "historical_evidence_diff": "",
+  "manual_arithmetic": {
+    "adult_12000": 1008.0,
+    "minor_12000": 2400.0,
+    "minor_difference": 1392.0,
+    "ordinary_company": 4500.0,
+    "floor_company": 750.0,
+    "floor_extra_tax": 300.0,
+    "monthly_1000": 84.0,
+    "monthly_1200": 108.0,
+    "reimbursement_net": 1116,
+    "allowance_net": 1092,
+    "annual_top_derived": 1728.0,
+    "annual_printed_gap": 60.0
+  }
+}

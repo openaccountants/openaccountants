@@ -1,0 +1,34 @@
+{
+  "independent_decimal_recomputations": [
+    {
+      "case": "September15 operative newly usable commercial parcel",
+      "inputs": {
+        "assessed_value_lrd": 8000000,
+        "annual_rate": "0.015",
+        "remaining_months_including_September_fraction": 4
+      },
+      "annual": 120000,
+      "apportioned": 40000,
+      "wrong_whole_month_only": 30000,
+      "omitted_fraction": 10000,
+      "legal_decision": "s2001(f) expressly counts each month or fraction; operative assessment date is assumed, not derived from completion. Nonexempt improved not under-improved and public-land exclusion retained.",
+      "verdict": "pass"
+    },
+    {
+      "case": "Whole owner primary home versus whole house let for private profit",
+      "inputs": {
+        "assessed_value_lrd": 8000000,
+        "home_rate": "0.0025",
+        "letting_rate": "0.015"
+      },
+      "home": 20000,
+      "letting": 120000,
+      "difference": 100000,
+      "legal_decision": "s2000(d)(11) requires natural-person owner wholly occupying primary home and excludes whole/part letting for profit; letting expressly in d(2) and c(1) rate. Each scenario whole year, no income-tax inference.",
+      "verdict": "pass"
+    }
+  ],
+  "stock_checker": "2 oa-check blocks;0 failures",
+  "additional_boundary_read": "Jan31 full tax vs Feb1 proration and five-year start; June15 ordinary determination+notice rules read and kept separate.",
+  "independent_decimal_calculation_executed": true
+}

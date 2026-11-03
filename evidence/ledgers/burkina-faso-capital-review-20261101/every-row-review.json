@@ -1,0 +1,1195 @@
+{
+  "frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "source_sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+  "review_date": "2026-11-01",
+  "count": 60,
+  "accepted": 59,
+  "repair_required": 1,
+  "scope": "Source fidelity to cached official edition and selected signed finance law. Not a later-law/currentness certificate, coverage completion, or accountant attestation.",
+  "rows": [
+    {
+      "id": "C01",
+      "writer_rule": "Receivable products cover mortgage, preferred/unsecured debts other than art.132(6) borrowing, deposits whatever depository/use, cash guarantees, current accounts and bons de caisse.",
+      "article": "129",
+      "cited_pages": [
+        71
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 129,
+          "exact_extracted_text": "Art.129.- Sont soumis à l’impôt sur\nle revenu des capitaux mobiliers, les\nintérêts, arrérages et tous autres produits :\n• 1° des créances hypothécaires,\nprivilégiées et chirographaires, à\nl’exclusion de celles représentées\npar des obligations, effets publics,\net autres titres d’emprunts entrant\ndans les prévisions du point 6° de\nl’article 132 ;\n• 2° des dépôts de sommes d’argent\nà vue ou à échéance fixe, quel que\nsoit le dépositaire et quelle que soit\nl’affectation du dépôt ;\n• 3° des cautionnements en\nnuméraire ;\n• 4° des comptes courants ;\n• 5° des bons de caisse."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "129 lists five receivable categories; read its exclusion together with 132(6), not as a negotiability-only test."
+    },
+    {
+      "id": "C02",
+      "writer_rule": "Distributions of entities subject to Burkina IS are within IRCM even when the distributing entity is IS-exempt.",
+      "article": "131",
+      "cited_pages": [
+        72
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 131,
+          "exact_extracted_text": "Art.131.- Sont soumis à l’impôt sur\nle revenu des capitaux mobiliers, les\nrevenus distribués par les sociétés et\npersonnes morales soumises à l’impôt\nsur les sociétés au Burkina Faso.\nSont également imposables, les revenus\ndistribués par les sociétés et personnes\nmorales exonérées de l’impôt sur les\nsociétés."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "131 expressly includes IS-exempt distributing legal entities as well as entities subject to IS."
+    },
+    {
+      "id": "C03",
+      "writer_rule": "Equity products of entities seated in Burkina include sums/values allocated at any time other than reimbursement of contributions.",
+      "article": "132(1)-(2), final paragraph",
+      "cited_pages": [
+        73
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 132,
+          "exact_extracted_text": "Art.132.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 31) L’impôt\ns’applique :\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n73\n1° aux dividendes, intérêts, arrérages,\nrevenus et tous autres produits des\nactions de toute nature des sociétés\net entreprises commerciales ou civiles\nquelconques, financières, industrielles\nou agricoles, ayant leur siège social au\nBurkina Faso ;\n2° aux intérêts, produits et bénéfices des\nparts d’intérêts et commandites dans les\nsociétés ou entreprises ayant leur siège\nsocial au Burkina Faso, dont le capital\nn’est pas divisé en actions ;\n3° au montant des remboursements et\namortissements totaux ou partiels que les\nsociétés et personnes morales soumises à\nl’impôt sur les sociétés effectuent sur le\nmontant de leurs actions, parts d’intérêts\nou commandites, avant leur dissolution\nou leur mise en liquidation ;\n4° au montant des indemnités de\nfonction, remboursements forfaitaires\nde frais et toutes autres rémunérations\nrevenant à quelque titre que ce soit à\nl’administrateur général ou aux membres\ndes conseils d’administration des sociétés\nvisées au point 1° du présent article, des\nétablissements publics, des associations,\ndes fondations et autres structures;\n5° aux rémunérations versées aux\nactionnaires de ces sociétés à l’occasion\ndes assemblées générales ;\n6° aux intérêts, arrérages et tous autres\nproduits des obligations et emprunts de\ntoute nature des collectivités territoriales,\nétablissements publics ainsi que des\nsociétés ou entreprises désignées aux\npoints 1° et 2° du présent article. Par\nemprunts de toute nature, il faut entendre\ntoutes opérations au moyen desquelles\nune société ou autre personne morale\nassimilée se procure, par souscription\npublique ou autrement, les fonds dont\nelle a besoin même si les emprunts ne\nsont pas constatés par des titres ou sont\nreprésentés par des titres n’ayant pas le\ncaractère d’obligations négociables ;\n7° aux primes de remboursement\npayées aux créanciers des collectivités\nterritoriales, établissements publics ainsi\nque des sociétés ou entreprises désignées\naux points 1° et 2° du présent article ;\n8° aux sommes mises par les sociétés ou\nentités soumises à l’impôt sur les sociétés\nà la disposition des associés directement\nou par personne ou sociétés interposées\nà titre d’avances, de prêts ou d’acomptes.\nNonobstant toute disposition contraire,\nlorsque ces sommes sont remboursées\nà la personne morale moins de cinq (5)\nans après qu’elles aient été mises à la\ndisposition des associés, la fraction des\nimpositions auxquelles leur attribution\navait donné lieu est restituée aux\nbénéficiaires ou à leurs ayants cause ;\n9° aux rémunérations ou avantages\naccordés par les sociétés ou entités\nvisées au point 8° ci-dessus.\nLes dividendes, arrérages, bénéfices et\nproduits visés aux points 1° et 2° du\nprésent article s’entendent de toutes\nsommes ou valeurs attribuées, à quelque\népoque que ce soit, aux associés et\nporteurs de parts, à un autre titre que\ncelui de remboursement de leurs apports."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "132(1),(2) require Burkina seat; final paragraph excludes repayment of contributions from those two definitions only."
+    },
+    {
+      "id": "C04",
+      "writer_rule": "Securities branch includes listed public/company borrowings even without instruments or negotiable bonds; a private company loan is not automatically art.129 receivable income.",
+      "article": "132(6)",
+      "cited_pages": [
+        73
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 132,
+          "exact_extracted_text": "Art.132.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 31) L’impôt\ns’applique :\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n73\n1° aux dividendes, intérêts, arrérages,\nrevenus et tous autres produits des\nactions de toute nature des sociétés\net entreprises commerciales ou civiles\nquelconques, financières, industrielles\nou agricoles, ayant leur siège social au\nBurkina Faso ;\n2° aux intérêts, produits et bénéfices des\nparts d’intérêts et commandites dans les\nsociétés ou entreprises ayant leur siège\nsocial au Burkina Faso, dont le capital\nn’est pas divisé en actions ;\n3° au montant des remboursements et\namortissements totaux ou partiels que les\nsociétés et personnes morales soumises à\nl’impôt sur les sociétés effectuent sur le\nmontant de leurs actions, parts d’intérêts\nou commandites, avant leur dissolution\nou leur mise en liquidation ;\n4° au montant des indemnités de\nfonction, remboursements forfaitaires\nde frais et toutes autres rémunérations\nrevenant à quelque titre que ce soit à\nl’administrateur général ou aux membres\ndes conseils d’administration des sociétés\nvisées au point 1° du présent article, des\nétablissements publics, des associations,\ndes fondations et autres structures;\n5° aux rémunérations versées aux\nactionnaires de ces sociétés à l’occasion\ndes assemblées générales ;\n6° aux intérêts, arrérages et tous autres\nproduits des obligations et emprunts de\ntoute nature des collectivités territoriales,\nétablissements publics ainsi que des\nsociétés ou entreprises désignées aux\npoints 1° et 2° du présent article. Par\nemprunts de toute nature, il faut entendre\ntoutes opérations au moyen desquelles\nune société ou autre personne morale\nassimilée se procure, par souscription\npublique ou autrement, les fonds dont\nelle a besoin même si les emprunts ne\nsont pas constatés par des titres ou sont\nreprésentés par des titres n’ayant pas le\ncaractère d’obligations négociables ;\n7° aux primes de remboursement\npayées aux créanciers des collectivités\nterritoriales, établissements publics ainsi\nque des sociétés ou entreprises désignées\naux points 1° et 2° du présent article ;\n8° aux sommes mises par les sociétés ou\nentités soumises à l’impôt sur les sociétés\nà la disposition des associés directement\nou par personne ou sociétés interposées\nà titre d’avances, de prêts ou d’acomptes.\nNonobstant toute disposition contraire,\nlorsque ces sommes sont remboursées\nà la personne morale moins de cinq (5)\nans après qu’elles aient été mises à la\ndisposition des associés, la fraction des\nimpositions auxquelles leur attribution\navait donné lieu est restituée aux\nbénéficiaires ou à leurs ayants cause ;\n9° aux rémunérations ou avantages\naccordés par les sociétés ou entités\nvisées au point 8° ci-dessus.\nLes dividendes, arrérages, bénéfices et\nproduits visés aux points 1° et 2° du\nprésent article s’entendent de toutes\nsommes ou valeurs attribuées, à quelque\népoque que ce soit, aux associés et\nporteurs de parts, à un autre titre que\ncelui de remboursement de leurs apports."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "132(6) expressly includes collectivités territoriales, établissements publics and 132(1)/(2) companies, and borrowings without instruments or negotiable bonds."
+    },
+    {
+      "id": "C05",
+      "writer_rule": "Capital repayments/amortisations before dissolution/liquidation and redemption premiums of listed issuers enter the statutory scope, subject to exemption examination.",
+      "article": "132(3), (7)",
+      "cited_pages": [
+        73
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 132,
+          "exact_extracted_text": "Art.132.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 31) L’impôt\ns’applique :\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n73\n1° aux dividendes, intérêts, arrérages,\nrevenus et tous autres produits des\nactions de toute nature des sociétés\net entreprises commerciales ou civiles\nquelconques, financières, industrielles\nou agricoles, ayant leur siège social au\nBurkina Faso ;\n2° aux intérêts, produits et bénéfices des\nparts d’intérêts et commandites dans les\nsociétés ou entreprises ayant leur siège\nsocial au Burkina Faso, dont le capital\nn’est pas divisé en actions ;\n3° au montant des remboursements et\namortissements totaux ou partiels que les\nsociétés et personnes morales soumises à\nl’impôt sur les sociétés effectuent sur le\nmontant de leurs actions, parts d’intérêts\nou commandites, avant leur dissolution\nou leur mise en liquidation ;\n4° au montant des indemnités de\nfonction, remboursements forfaitaires\nde frais et toutes autres rémunérations\nrevenant à quelque titre que ce soit à\nl’administrateur général ou aux membres\ndes conseils d’administration des sociétés\nvisées au point 1° du présent article, des\nétablissements publics, des associations,\ndes fondations et autres structures;\n5° aux rémunérations versées aux\nactionnaires de ces sociétés à l’occasion\ndes assemblées générales ;\n6° aux intérêts, arrérages et tous autres\nproduits des obligations et emprunts de\ntoute nature des collectivités territoriales,\nétablissements publics ainsi que des\nsociétés ou entreprises désignées aux\npoints 1° et 2° du présent article. Par\nemprunts de toute nature, il faut entendre\ntoutes opérations au moyen desquelles\nune société ou autre personne morale\nassimilée se procure, par souscription\npublique ou autrement, les fonds dont\nelle a besoin même si les emprunts ne\nsont pas constatés par des titres ou sont\nreprésentés par des titres n’ayant pas le\ncaractère d’obligations négociables ;\n7° aux primes de remboursement\npayées aux créanciers des collectivités\nterritoriales, établissements publics ainsi\nque des sociétés ou entreprises désignées\naux points 1° et 2° du présent article ;\n8° aux sommes mises par les sociétés ou\nentités soumises à l’impôt sur les sociétés\nà la disposition des associés directement\nou par personne ou sociétés interposées\nà titre d’avances, de prêts ou d’acomptes.\nNonobstant toute disposition contraire,\nlorsque ces sommes sont remboursées\nà la personne morale moins de cinq (5)\nans après qu’elles aient été mises à la\ndisposition des associés, la fraction des\nimpositions auxquelles leur attribution\navait donné lieu est restituée aux\nbénéficiaires ou à leurs ayants cause ;\n9° aux rémunérations ou avantages\naccordés par les sociétés ou entités\nvisées au point 8° ci-dessus.\nLes dividendes, arrérages, bénéfices et\nproduits visés aux points 1° et 2° du\nprésent article s’entendent de toutes\nsommes ou valeurs attribuées, à quelque\népoque que ce soit, aux associés et\nporteurs de parts, à un autre titre que\ncelui de remboursement de leurs apports."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "132(3) covers IS entities before dissolution/liquidation; (7) covers redemption premiums of listed issuers; exemptions are separately tested."
+    },
+    {
+      "id": "C06",
+      "writer_rule": "General-administrator/board office allowances, flat expense reimbursements and other remuneration, and shareholders’ general-meeting remuneration, are within the enumerated securities-income scope.",
+      "article": "132(4)-(5)",
+      "cited_pages": [
+        73
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 132,
+          "exact_extracted_text": "Art.132.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 31) L’impôt\ns’applique :\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n73\n1° aux dividendes, intérêts, arrérages,\nrevenus et tous autres produits des\nactions de toute nature des sociétés\net entreprises commerciales ou civiles\nquelconques, financières, industrielles\nou agricoles, ayant leur siège social au\nBurkina Faso ;\n2° aux intérêts, produits et bénéfices des\nparts d’intérêts et commandites dans les\nsociétés ou entreprises ayant leur siège\nsocial au Burkina Faso, dont le capital\nn’est pas divisé en actions ;\n3° au montant des remboursements et\namortissements totaux ou partiels que les\nsociétés et personnes morales soumises à\nl’impôt sur les sociétés effectuent sur le\nmontant de leurs actions, parts d’intérêts\nou commandites, avant leur dissolution\nou leur mise en liquidation ;\n4° au montant des indemnités de\nfonction, remboursements forfaitaires\nde frais et toutes autres rémunérations\nrevenant à quelque titre que ce soit à\nl’administrateur général ou aux membres\ndes conseils d’administration des sociétés\nvisées au point 1° du présent article, des\nétablissements publics, des associations,\ndes fondations et autres structures;\n5° aux rémunérations versées aux\nactionnaires de ces sociétés à l’occasion\ndes assemblées générales ;\n6° aux intérêts, arrérages et tous autres\nproduits des obligations et emprunts de\ntoute nature des collectivités territoriales,\nétablissements publics ainsi que des\nsociétés ou entreprises désignées aux\npoints 1° et 2° du présent article. Par\nemprunts de toute nature, il faut entendre\ntoutes opérations au moyen desquelles\nune société ou autre personne morale\nassimilée se procure, par souscription\npublique ou autrement, les fonds dont\nelle a besoin même si les emprunts ne\nsont pas constatés par des titres ou sont\nreprésentés par des titres n’ayant pas le\ncaractère d’obligations négociables ;\n7° aux primes de remboursement\npayées aux créanciers des collectivités\nterritoriales, établissements publics ainsi\nque des sociétés ou entreprises désignées\naux points 1° et 2° du présent article ;\n8° aux sommes mises par les sociétés ou\nentités soumises à l’impôt sur les sociétés\nà la disposition des associés directement\nou par personne ou sociétés interposées\nà titre d’avances, de prêts ou d’acomptes.\nNonobstant toute disposition contraire,\nlorsque ces sommes sont remboursées\nà la personne morale moins de cinq (5)\nans après qu’elles aient été mises à la\ndisposition des associés, la fraction des\nimpositions auxquelles leur attribution\navait donné lieu est restituée aux\nbénéficiaires ou à leurs ayants cause ;\n9° aux rémunérations ou avantages\naccordés par les sociétés ou entités\nvisées au point 8° ci-dessus.\nLes dividendes, arrérages, bénéfices et\nproduits visés aux points 1° et 2° du\nprésent article s’entendent de toutes\nsommes ou valeurs attribuées, à quelque\népoque que ce soit, aux associés et\nporteurs de parts, à un autre titre que\ncelui de remboursement de leurs apports."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "132(4) includes general administrator, board, public entities, associations and foundations; (5) concerns shareholder general-meeting remuneration."
+    },
+    {
+      "id": "C07",
+      "writer_rule": "Covered IS entities’ direct or interposed advances/loans/instalments to associates and enumerated remuneration/advantages are in the statutory income list.",
+      "article": "132(8)-(9)",
+      "cited_pages": [
+        73
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 132,
+          "exact_extracted_text": "Art.132.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 31) L’impôt\ns’applique :\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n73\n1° aux dividendes, intérêts, arrérages,\nrevenus et tous autres produits des\nactions de toute nature des sociétés\net entreprises commerciales ou civiles\nquelconques, financières, industrielles\nou agricoles, ayant leur siège social au\nBurkina Faso ;\n2° aux intérêts, produits et bénéfices des\nparts d’intérêts et commandites dans les\nsociétés ou entreprises ayant leur siège\nsocial au Burkina Faso, dont le capital\nn’est pas divisé en actions ;\n3° au montant des remboursements et\namortissements totaux ou partiels que les\nsociétés et personnes morales soumises à\nl’impôt sur les sociétés effectuent sur le\nmontant de leurs actions, parts d’intérêts\nou commandites, avant leur dissolution\nou leur mise en liquidation ;\n4° au montant des indemnités de\nfonction, remboursements forfaitaires\nde frais et toutes autres rémunérations\nrevenant à quelque titre que ce soit à\nl’administrateur général ou aux membres\ndes conseils d’administration des sociétés\nvisées au point 1° du présent article, des\nétablissements publics, des associations,\ndes fondations et autres structures;\n5° aux rémunérations versées aux\nactionnaires de ces sociétés à l’occasion\ndes assemblées générales ;\n6° aux intérêts, arrérages et tous autres\nproduits des obligations et emprunts de\ntoute nature des collectivités territoriales,\nétablissements publics ainsi que des\nsociétés ou entreprises désignées aux\npoints 1° et 2° du présent article. Par\nemprunts de toute nature, il faut entendre\ntoutes opérations au moyen desquelles\nune société ou autre personne morale\nassimilée se procure, par souscription\npublique ou autrement, les fonds dont\nelle a besoin même si les emprunts ne\nsont pas constatés par des titres ou sont\nreprésentés par des titres n’ayant pas le\ncaractère d’obligations négociables ;\n7° aux primes de remboursement\npayées aux créanciers des collectivités\nterritoriales, établissements publics ainsi\nque des sociétés ou entreprises désignées\naux points 1° et 2° du présent article ;\n8° aux sommes mises par les sociétés ou\nentités soumises à l’impôt sur les sociétés\nà la disposition des associés directement\nou par personne ou sociétés interposées\nà titre d’avances, de prêts ou d’acomptes.\nNonobstant toute disposition contraire,\nlorsque ces sommes sont remboursées\nà la personne morale moins de cinq (5)\nans après qu’elles aient été mises à la\ndisposition des associés, la fraction des\nimpositions auxquelles leur attribution\navait donné lieu est restituée aux\nbénéficiaires ou à leurs ayants cause ;\n9° aux rémunérations ou avantages\naccordés par les sociétés ou entités\nvisées au point 8° ci-dessus.\nLes dividendes, arrérages, bénéfices et\nproduits visés aux points 1° et 2° du\nprésent article s’entendent de toutes\nsommes ou valeurs attribuées, à quelque\népoque que ce soit, aux associés et\nporteurs de parts, à un autre titre que\ncelui de remboursement de leurs apports."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "132(8) includes direct/interposed advances, loans and instalments; (9) covers remuneration/advantages of those entities."
+    },
+    {
+      "id": "C08",
+      "writer_rule": "Repayment to the entity strictly less than five years after making the associate advance available gives restitution of the fraction of tax attributable to the repaid sum; not an automatic refund of all original withholding.",
+      "article": "132(8)",
+      "cited_pages": [
+        73
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 132,
+          "exact_extracted_text": "Art.132.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 31) L’impôt\ns’applique :\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n73\n1° aux dividendes, intérêts, arrérages,\nrevenus et tous autres produits des\nactions de toute nature des sociétés\net entreprises commerciales ou civiles\nquelconques, financières, industrielles\nou agricoles, ayant leur siège social au\nBurkina Faso ;\n2° aux intérêts, produits et bénéfices des\nparts d’intérêts et commandites dans les\nsociétés ou entreprises ayant leur siège\nsocial au Burkina Faso, dont le capital\nn’est pas divisé en actions ;\n3° au montant des remboursements et\namortissements totaux ou partiels que les\nsociétés et personnes morales soumises à\nl’impôt sur les sociétés effectuent sur le\nmontant de leurs actions, parts d’intérêts\nou commandites, avant leur dissolution\nou leur mise en liquidation ;\n4° au montant des indemnités de\nfonction, remboursements forfaitaires\nde frais et toutes autres rémunérations\nrevenant à quelque titre que ce soit à\nl’administrateur général ou aux membres\ndes conseils d’administration des sociétés\nvisées au point 1° du présent article, des\nétablissements publics, des associations,\ndes fondations et autres structures;\n5° aux rémunérations versées aux\nactionnaires de ces sociétés à l’occasion\ndes assemblées générales ;\n6° aux intérêts, arrérages et tous autres\nproduits des obligations et emprunts de\ntoute nature des collectivités territoriales,\nétablissements publics ainsi que des\nsociétés ou entreprises désignées aux\npoints 1° et 2° du présent article. Par\nemprunts de toute nature, il faut entendre\ntoutes opérations au moyen desquelles\nune société ou autre personne morale\nassimilée se procure, par souscription\npublique ou autrement, les fonds dont\nelle a besoin même si les emprunts ne\nsont pas constatés par des titres ou sont\nreprésentés par des titres n’ayant pas le\ncaractère d’obligations négociables ;\n7° aux primes de remboursement\npayées aux créanciers des collectivités\nterritoriales, établissements publics ainsi\nque des sociétés ou entreprises désignées\naux points 1° et 2° du présent article ;\n8° aux sommes mises par les sociétés ou\nentités soumises à l’impôt sur les sociétés\nà la disposition des associés directement\nou par personne ou sociétés interposées\nà titre d’avances, de prêts ou d’acomptes.\nNonobstant toute disposition contraire,\nlorsque ces sommes sont remboursées\nà la personne morale moins de cinq (5)\nans après qu’elles aient été mises à la\ndisposition des associés, la fraction des\nimpositions auxquelles leur attribution\navait donné lieu est restituée aux\nbénéficiaires ou à leurs ayants cause ;\n9° aux rémunérations ou avantages\naccordés par les sociétés ou entités\nvisées au point 8° ci-dessus.\nLes dividendes, arrérages, bénéfices et\nproduits visés aux points 1° et 2° du\nprésent article s’entendent de toutes\nsommes ou valeurs attribuées, à quelque\népoque que ce soit, aux associés et\nporteurs de parts, à un autre titre que\ncelui de remboursement de leurs apports."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "132(8) says moins de cinq ans; restitution is the fraction attributable to repayment, not an automatic refund of all tax."
+    },
+    {
+      "id": "C09",
+      "writer_rule": "Distributions include non-reserved/non-capitalised profit and non-profit sums made available, except cancelled securities for non-loss capital reductions and loan/service/function remuneration deductible for IS; not a universal exemption of all payments.",
+      "article": "133(1)",
+      "cited_pages": [
+        73
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 133,
+          "exact_extracted_text": "Art.133.- 1) Sont considérés comme des\nrevenus distribués, tous les bénéfices ou\nproduits qui ne sont pas mis en réserve\nou incorporés au capital ainsi que\ntoutes les sommes ou valeurs mises à la\ndisposition des associés actionnaires ou\nporteurs de parts et non prélevées sur les\nbénéfices à l’exception des :\n• remboursements aux associés\nde titres annulés par suite de\nréductions de capital non motivées\npar des pertes ;\n• sommes versées aux associés en\nrémunération d’un prêt, service\nou fonction à condition que ces\nsommes soient déductibles du\nbénéfice soumis à l’impôt sur les\nsociétés.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n74\n2) Sont présumés distribués, tous les\nbénéfices qui ne demeurent pas investis\ndans l’entreprise, quelle que soit la forme\ndu désinvestissement.\nNe constituent pas des\ndésinvestissements :\n• les évaluations des valeurs\nd’exploitation (minorations de\nstock de sortie, majorations de\nstock d’entrée) ;\n• les amortissements excessifs ;\n• les provisions non fiscalement\ndéductibles."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "133(1) has two express exceptions; IS deductibility qualifies loan/service/function remuneration. Neither erases another independently taxable category."
+    },
+    {
+      "id": "C10",
+      "writer_rule": "Profit not remaining invested is presumed distributed; the named stock valuation, excessive-depreciation and non-deductible-provision adjustments are not disinvestment under this paragraph.",
+      "article": "133(2)",
+      "cited_pages": [
+        74
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 133,
+          "exact_extracted_text": "Art.133.- 1) Sont considérés comme des\nrevenus distribués, tous les bénéfices ou\nproduits qui ne sont pas mis en réserve\nou incorporés au capital ainsi que\ntoutes les sommes ou valeurs mises à la\ndisposition des associés actionnaires ou\nporteurs de parts et non prélevées sur les\nbénéfices à l’exception des :\n• remboursements aux associés\nde titres annulés par suite de\nréductions de capital non motivées\npar des pertes ;\n• sommes versées aux associés en\nrémunération d’un prêt, service\nou fonction à condition que ces\nsommes soient déductibles du\nbénéfice soumis à l’impôt sur les\nsociétés.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n74\n2) Sont présumés distribués, tous les\nbénéfices qui ne demeurent pas investis\ndans l’entreprise, quelle que soit la forme\ndu désinvestissement.\nNe constituent pas des\ndésinvestissements :\n• les évaluations des valeurs\nd’exploitation (minorations de\nstock de sortie, majorations de\nstock d’entrée) ;\n• les amortissements excessifs ;\n• les provisions non fiscalement\ndéductibles."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "133(2) names stock valuations, excessive depreciation and non-deductible provisions as exceptions to disinvestment."
+    },
+    {
+      "id": "C11",
+      "writer_rule": "Ordinary receivables and income without a specific rate: 25%, subject to applicable double-tax conventions.",
+      "article": "140(1)",
+      "cited_pages": [
+        77
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 140,
+          "exact_extracted_text": "Art.140.- Sous réserve des conventions\ninternationales relatives aux doubles\nimpositions, le taux de l’impôt sur le\nrevenu des capitaux mobiliers est le\nsuivant :\n1) Pour les revenus des créances, et pour\ntous les revenus non soumis à un taux\nspécifique, le taux de l’impôt est fixé\nà 25 %.\nIl est réduit de moitié pour les intérêts,\narrérages et tous autres produits des\ncomptes de dépôt et des comptes\ncourants, visés à l’article 129 ouverts\ndans les écritures d’une banque, d’un\nétablissement financier, d’un agent\nde change, d’un courtier en valeurs\nmobilières, du Trésor public et des\ncaisses de crédit agricole.\n2) Pour les revenus de valeurs\nmobilières, le taux de l’impôt est fixé\nà :\n• 6 % pour les intérêts, arrérages\net autres produits des obligations\némises au Burkina Faso ;\n• 12,5 % pour tous autres produits,\nsous réserve de la réduction\ntemporaire édictée par l’article\n141."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "140 opening convention reservation applies; (1) fixes 25% for receivables and residual income without specific rate."
+    },
+    {
+      "id": "C12",
+      "writer_rule": "Half of 25%=12.5% only for art.129 deposit/current-account products in books of listed bank, financial institution, stockbroker, securities broker, Treasury or agricultural credit fund.",
+      "article": "140(1)",
+      "cited_pages": [
+        77
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 140,
+          "exact_extracted_text": "Art.140.- Sous réserve des conventions\ninternationales relatives aux doubles\nimpositions, le taux de l’impôt sur le\nrevenu des capitaux mobiliers est le\nsuivant :\n1) Pour les revenus des créances, et pour\ntous les revenus non soumis à un taux\nspécifique, le taux de l’impôt est fixé\nà 25 %.\nIl est réduit de moitié pour les intérêts,\narrérages et tous autres produits des\ncomptes de dépôt et des comptes\ncourants, visés à l’article 129 ouverts\ndans les écritures d’une banque, d’un\nétablissement financier, d’un agent\nde change, d’un courtier en valeurs\nmobilières, du Trésor public et des\ncaisses de crédit agricole.\n2) Pour les revenus de valeurs\nmobilières, le taux de l’impôt est fixé\nà :\n• 6 % pour les intérêts, arrérages\net autres produits des obligations\némises au Burkina Faso ;\n• 12,5 % pour tous autres produits,\nsous réserve de la réduction\ntemporaire édictée par l’article\n141."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "140(1) reduction is limited to deposit/current accounts in the enumerated institutions; 25% divided by two is 12.5%."
+    },
+    {
+      "id": "C13",
+      "writer_rule": "Burkina-issued bond interest/arrears/other products: 6%, subject to prior exemption and convention tests.",
+      "article": "140(2)",
+      "cited_pages": [
+        77
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 140,
+          "exact_extracted_text": "Art.140.- Sous réserve des conventions\ninternationales relatives aux doubles\nimpositions, le taux de l’impôt sur le\nrevenu des capitaux mobiliers est le\nsuivant :\n1) Pour les revenus des créances, et pour\ntous les revenus non soumis à un taux\nspécifique, le taux de l’impôt est fixé\nà 25 %.\nIl est réduit de moitié pour les intérêts,\narrérages et tous autres produits des\ncomptes de dépôt et des comptes\ncourants, visés à l’article 129 ouverts\ndans les écritures d’une banque, d’un\nétablissement financier, d’un agent\nde change, d’un courtier en valeurs\nmobilières, du Trésor public et des\ncaisses de crédit agricole.\n2) Pour les revenus de valeurs\nmobilières, le taux de l’impôt est fixé\nà :\n• 6 % pour les intérêts, arrérages\net autres produits des obligations\némises au Burkina Faso ;\n• 12,5 % pour tous autres produits,\nsous réserve de la réduction\ntemporaire édictée par l’article\n141."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "140(2) fixes 6% for obligations issued in Burkina; 134(5) exempts specified State/local instruments before selecting rate."
+    },
+    {
+      "id": "C14",
+      "writer_rule": "Other securities products: 12.5%, subject to the art.141 temporary reduction.",
+      "article": "140(2)",
+      "cited_pages": [
+        77
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 140,
+          "exact_extracted_text": "Art.140.- Sous réserve des conventions\ninternationales relatives aux doubles\nimpositions, le taux de l’impôt sur le\nrevenu des capitaux mobiliers est le\nsuivant :\n1) Pour les revenus des créances, et pour\ntous les revenus non soumis à un taux\nspécifique, le taux de l’impôt est fixé\nà 25 %.\nIl est réduit de moitié pour les intérêts,\narrérages et tous autres produits des\ncomptes de dépôt et des comptes\ncourants, visés à l’article 129 ouverts\ndans les écritures d’une banque, d’un\nétablissement financier, d’un agent\nde change, d’un courtier en valeurs\nmobilières, du Trésor public et des\ncaisses de crédit agricole.\n2) Pour les revenus de valeurs\nmobilières, le taux de l’impôt est fixé\nà :\n• 6 % pour les intérêts, arrérages\net autres produits des obligations\némises au Burkina Faso ;\n• 12,5 % pour tous autres produits,\nsous réserve de la réduction\ntemporaire édictée par l’article\n141."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "140(2) fixes 12.5% for other securities products and refers to temporary reduction in 141."
+    },
+    {
+      "id": "C15",
+      "writer_rule": "Newly constituted enterprise equity/share-interest/commandite distributions get half ordinary rate, 6.25%, for first three social periods following constitution, no more than 42 months total; not a half-rate on all interest.",
+      "article": "141, first branch",
+      "cited_pages": [
+        77,
+        78
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 141,
+          "exact_extracted_text": "Art.141.- (Loi n°38-2023/ALT du 05\noctobre 2023 art. 8) Les entreprises\nnouvellement constituées paient l’impôt\nau titre des revenus visés au paragraphe\n2 de l’article précédent au tarif réduit :\n• de moitié sur les produits\ndes actions, parts d’intérêts,\ncommandites qu’elles distribuent\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n78\nau titre des trois premiers exercices\nsociaux suivant leur constitution, la\ndurée de ces trois (3) exercices ne\npouvant excéder une durée globale\nde quarante-deux (42) mois ;\n• à 3% pour les revenus des actions\ndistribués par les sociétés ou\nentreprises communautaires au\ntitre des trois premiers exercices\nsociaux suivant leur constitution\nsans excéder une durée globale de\nquarante-deux (42) mois.\nSection 4 - Obligations et paiement\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "141 first bullet concerns equity/interest-part/commandite products, first three social periods, maximum 42 months; half 12.5%=6.25%."
+    },
+    {
+      "id": "C16",
+      "writer_rule": "Separate 3% community-company/enterprise share-income branch has first-three-period and 42-month total conditions; community classification evidence is held.",
+      "article": "141, second branch",
+      "cited_pages": [
+        78
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 141,
+          "exact_extracted_text": "Art.141.- (Loi n°38-2023/ALT du 05\noctobre 2023 art. 8) Les entreprises\nnouvellement constituées paient l’impôt\nau titre des revenus visés au paragraphe\n2 de l’article précédent au tarif réduit :\n• de moitié sur les produits\ndes actions, parts d’intérêts,\ncommandites qu’elles distribuent\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n78\nau titre des trois premiers exercices\nsociaux suivant leur constitution, la\ndurée de ces trois (3) exercices ne\npouvant excéder une durée globale\nde quarante-deux (42) mois ;\n• à 3% pour les revenus des actions\ndistribués par les sociétés ou\nentreprises communautaires au\ntitre des trois premiers exercices\nsociaux suivant leur constitution\nsans excéder une durée globale de\nquarante-deux (42) mois.\nSection 4 - Obligations et paiement\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "141 second bullet is separate 3% community-company share-income branch with same three-period/42-month limits; status classification remains held."
+    },
+    {
+      "id": "C17",
+      "writer_rule": "CNE savings-book interest and legally regulated housing-savings accounts are exempt; not every bank savings account.",
+      "article": "130(1)",
+      "cited_pages": [
+        71
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 130,
+          "exact_extracted_text": "Art.130.- (Loi n°042-2018/AN du 18\ndécembre 2018 art. 27) (Loi n°029-\n2022/ALT du 24 décembre 2022 art.\n30) Sont exonérés de l’impôt :\n1) Les intérêts des sommes inscrites\nsur les livrets de la Caisse nationale\nd’épargne (CNE) et des comptes\nd’épargne logement régis par la loi.\n2) Les intérêts générés par les dépôts\nà terme de la société nationale des\npostes du Burkina Faso (SONAPOST).\n3) Les intérêts, arrérages et tous autres\nproduits des comptes courants\nfigurant dans les recettes provenant\nde l’exercice d’une profession\nindustrielle, commerciale et agricole\nou d’une exploitation minière ou de\ncarrière, sous la double condition\nque :\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n72\n• lescontractantsaient,l’unetl’autre,\nl’une des qualités d’industriel, de\ncommerçant, d’exploitant agricole\nou minier ou de carrière ;\n• les opérations inscrites au compte\ncourantserattachentexclusivement\nà l’industrie, au commerce, à\nl’agriculture ou à l’exploitation\nminière ou de carrière des deux\nparties.\nLes dispositions qui précèdent ne\ns’appliquent qu’aux contractants dont les\nintérêts, arrérages et tous autres produits\ndes comptes courants sont imposés à\nl’impôt sur les bénéfices industriels,\ncommerciaux et agricoles ou à l’impôt\nsur les sociétés au Burkina Faso.\n4) Les intérêts, arrérages et tous autres\nproduits des comptes courants\nouverts dans les établissements de\ncrédit au nom des caisses de crédit\nmutuel agricole et des coopératives\nouvrières, des coopératives agricoles,\nde pêche, d’élevage et leurs unions.\n5) Les intérêts des prêts consentis ou\nles produits des dépôts effectués par\nles sociétés de construction d’habitat\nsocial.\n6) Les intérêts, arrérages et tous autres\nproduits des prêts consentis, sous\nune forme quelconque, par toutes\nles sociétés résidentes autres que\nles personnes exerçant le commerce\nde banque ou une profession s’y\nrattachant, au moyen des fonds\nqu’elles se procurent en contractant\ndes emprunts soumis eux-mêmes à\nl’impôt sur le revenu des capitaux\nmobiliers.\n7) Les intérêts, arrérages et tous autres\nproduits des prêts consentis sous\nune forme quelconque et des\ndépôts effectués par les associations\nconstituées en vue de mettre à la\ndisposition de leurs membres ou des\nassociations similaires auxquelles\nelles sont affiliées, les fonds qu’elles\nse procurent en contractant des\nemprunts ou en recevant des dépôts.\nLe montant des prêts exonérés ne peut\nexcéder celui des emprunts contractés\nou des dépôts reçus et il doit en être\njustifié par la société, la personne ou\nl’association.\n8) Les produits des prêts non représentés\npar des titres négociables ainsi que les\nproduits visés à l’article 129 lorsqu’ils\nsont encaissés par ou pour le compte\nde banquiers ou d’établissements de\nbanque, entreprises de placement ou\nde gestion de valeurs mobilières ainsi\nque de sociétés autorisées par l’État à\nfaire des opérations de crédit foncier.\nCette exonération est strictement\nsubordonnée à la condition que ces\nrevenus et produits soient taxés au\nBurkina Faso à l’impôt sur les bénéfices\nindustriels, commerciaux et agricoles ou\nà l’impôt sur les sociétés.\n9) Les revenus des opérations effectuées\npar l’institut d’émission de la\nmonnaie.\n10) les intérêts des créances et dépôts\ndes Établissements publics de\nprévoyance sociale.\nSous-section 2 - Revenus des valeurs\nmobilières"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "130(1) identifies CNE books and legally governed housing-savings accounts, not all savings."
+    },
+    {
+      "id": "C18",
+      "writer_rule": "SONAPOST fixed-term deposit interest is exempt.",
+      "article": "130(2)",
+      "cited_pages": [
+        71
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 130,
+          "exact_extracted_text": "Art.130.- (Loi n°042-2018/AN du 18\ndécembre 2018 art. 27) (Loi n°029-\n2022/ALT du 24 décembre 2022 art.\n30) Sont exonérés de l’impôt :\n1) Les intérêts des sommes inscrites\nsur les livrets de la Caisse nationale\nd’épargne (CNE) et des comptes\nd’épargne logement régis par la loi.\n2) Les intérêts générés par les dépôts\nà terme de la société nationale des\npostes du Burkina Faso (SONAPOST).\n3) Les intérêts, arrérages et tous autres\nproduits des comptes courants\nfigurant dans les recettes provenant\nde l’exercice d’une profession\nindustrielle, commerciale et agricole\nou d’une exploitation minière ou de\ncarrière, sous la double condition\nque :\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n72\n• lescontractantsaient,l’unetl’autre,\nl’une des qualités d’industriel, de\ncommerçant, d’exploitant agricole\nou minier ou de carrière ;\n• les opérations inscrites au compte\ncourantserattachentexclusivement\nà l’industrie, au commerce, à\nl’agriculture ou à l’exploitation\nminière ou de carrière des deux\nparties.\nLes dispositions qui précèdent ne\ns’appliquent qu’aux contractants dont les\nintérêts, arrérages et tous autres produits\ndes comptes courants sont imposés à\nl’impôt sur les bénéfices industriels,\ncommerciaux et agricoles ou à l’impôt\nsur les sociétés au Burkina Faso.\n4) Les intérêts, arrérages et tous autres\nproduits des comptes courants\nouverts dans les établissements de\ncrédit au nom des caisses de crédit\nmutuel agricole et des coopératives\nouvrières, des coopératives agricoles,\nde pêche, d’élevage et leurs unions.\n5) Les intérêts des prêts consentis ou\nles produits des dépôts effectués par\nles sociétés de construction d’habitat\nsocial.\n6) Les intérêts, arrérages et tous autres\nproduits des prêts consentis, sous\nune forme quelconque, par toutes\nles sociétés résidentes autres que\nles personnes exerçant le commerce\nde banque ou une profession s’y\nrattachant, au moyen des fonds\nqu’elles se procurent en contractant\ndes emprunts soumis eux-mêmes à\nl’impôt sur le revenu des capitaux\nmobiliers.\n7) Les intérêts, arrérages et tous autres\nproduits des prêts consentis sous\nune forme quelconque et des\ndépôts effectués par les associations\nconstituées en vue de mettre à la\ndisposition de leurs membres ou des\nassociations similaires auxquelles\nelles sont affiliées, les fonds qu’elles\nse procurent en contractant des\nemprunts ou en recevant des dépôts.\nLe montant des prêts exonérés ne peut\nexcéder celui des emprunts contractés\nou des dépôts reçus et il doit en être\njustifié par la société, la personne ou\nl’association.\n8) Les produits des prêts non représentés\npar des titres négociables ainsi que les\nproduits visés à l’article 129 lorsqu’ils\nsont encaissés par ou pour le compte\nde banquiers ou d’établissements de\nbanque, entreprises de placement ou\nde gestion de valeurs mobilières ainsi\nque de sociétés autorisées par l’État à\nfaire des opérations de crédit foncier.\nCette exonération est strictement\nsubordonnée à la condition que ces\nrevenus et produits soient taxés au\nBurkina Faso à l’impôt sur les bénéfices\nindustriels, commerciaux et agricoles ou\nà l’impôt sur les sociétés.\n9) Les revenus des opérations effectuées\npar l’institut d’émission de la\nmonnaie.\n10) les intérêts des créances et dépôts\ndes Établissements publics de\nprévoyance sociale.\nSous-section 2 - Revenus des valeurs\nmobilières"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "130(2) expressly names SONAPOST term-deposit interest."
+    },
+    {
+      "id": "C19",
+      "writer_rule": "Current-account business-receipt exemption requires both parties in listed commercial/industrial/agricultural/mining/quarry capacities, operations exclusively linked to both businesses, and current-account products taxable under Burkina IBICA or IS.",
+      "article": "130(3)",
+      "cited_pages": [
+        71,
+        72
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 130,
+          "exact_extracted_text": "Art.130.- (Loi n°042-2018/AN du 18\ndécembre 2018 art. 27) (Loi n°029-\n2022/ALT du 24 décembre 2022 art.\n30) Sont exonérés de l’impôt :\n1) Les intérêts des sommes inscrites\nsur les livrets de la Caisse nationale\nd’épargne (CNE) et des comptes\nd’épargne logement régis par la loi.\n2) Les intérêts générés par les dépôts\nà terme de la société nationale des\npostes du Burkina Faso (SONAPOST).\n3) Les intérêts, arrérages et tous autres\nproduits des comptes courants\nfigurant dans les recettes provenant\nde l’exercice d’une profession\nindustrielle, commerciale et agricole\nou d’une exploitation minière ou de\ncarrière, sous la double condition\nque :\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n72\n• lescontractantsaient,l’unetl’autre,\nl’une des qualités d’industriel, de\ncommerçant, d’exploitant agricole\nou minier ou de carrière ;\n• les opérations inscrites au compte\ncourantserattachentexclusivement\nà l’industrie, au commerce, à\nl’agriculture ou à l’exploitation\nminière ou de carrière des deux\nparties.\nLes dispositions qui précèdent ne\ns’appliquent qu’aux contractants dont les\nintérêts, arrérages et tous autres produits\ndes comptes courants sont imposés à\nl’impôt sur les bénéfices industriels,\ncommerciaux et agricoles ou à l’impôt\nsur les sociétés au Burkina Faso.\n4) Les intérêts, arrérages et tous autres\nproduits des comptes courants\nouverts dans les établissements de\ncrédit au nom des caisses de crédit\nmutuel agricole et des coopératives\nouvrières, des coopératives agricoles,\nde pêche, d’élevage et leurs unions.\n5) Les intérêts des prêts consentis ou\nles produits des dépôts effectués par\nles sociétés de construction d’habitat\nsocial.\n6) Les intérêts, arrérages et tous autres\nproduits des prêts consentis, sous\nune forme quelconque, par toutes\nles sociétés résidentes autres que\nles personnes exerçant le commerce\nde banque ou une profession s’y\nrattachant, au moyen des fonds\nqu’elles se procurent en contractant\ndes emprunts soumis eux-mêmes à\nl’impôt sur le revenu des capitaux\nmobiliers.\n7) Les intérêts, arrérages et tous autres\nproduits des prêts consentis sous\nune forme quelconque et des\ndépôts effectués par les associations\nconstituées en vue de mettre à la\ndisposition de leurs membres ou des\nassociations similaires auxquelles\nelles sont affiliées, les fonds qu’elles\nse procurent en contractant des\nemprunts ou en recevant des dépôts.\nLe montant des prêts exonérés ne peut\nexcéder celui des emprunts contractés\nou des dépôts reçus et il doit en être\njustifié par la société, la personne ou\nl’association.\n8) Les produits des prêts non représentés\npar des titres négociables ainsi que les\nproduits visés à l’article 129 lorsqu’ils\nsont encaissés par ou pour le compte\nde banquiers ou d’établissements de\nbanque, entreprises de placement ou\nde gestion de valeurs mobilières ainsi\nque de sociétés autorisées par l’État à\nfaire des opérations de crédit foncier.\nCette exonération est strictement\nsubordonnée à la condition que ces\nrevenus et produits soient taxés au\nBurkina Faso à l’impôt sur les bénéfices\nindustriels, commerciaux et agricoles ou\nà l’impôt sur les sociétés.\n9) Les revenus des opérations effectuées\npar l’institut d’émission de la\nmonnaie.\n10) les intérêts des créances et dépôts\ndes Établissements publics de\nprévoyance sociale.\nSous-section 2 - Revenus des valeurs\nmobilières"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "130(3) requires both parties' listed business capacities, exclusively business-linked operations and Burkina IBICA/IS taxation of products."
+    },
+    {
+      "id": "C20",
+      "writer_rule": "Rentes/bonds/other public instruments issued by State/local authorities are exempt; do not impose the 6% bond rate merely because the issue is local.",
+      "article": "134(5)",
+      "cited_pages": [
+        74
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 134,
+          "exact_extracted_text": "Art.134.- Sont exonérés de l’impôt :\n1) Les amortissements de tout ou partie\nde leur capital social effectués par\nles sociétés, concessionnaires de\nl’État ou de collectivités territoriales\nlorsque ces amortissements sont\njustifiés par la caducité de tout ou\npartie de l’actif social, notamment\npar dépérissement progressif ou\npar remise de la concession à\nl’autorité concédante. Le caractère\nd’amortissement de l’opération et\nla légitimité de l’exonération sont\nconstatés dans chaque cas dans les\nconditions fixées par les textes en\nvigueur.\n2) Les revenus des emprunts ou\nobligations des groupements\net sociétés coopératives et des\nassociations de toute nature,\nquels qu’en soient l’objet et\nla dénomination, constitués\nexclusivement par ces sociétés\ncoopératives.\n3) Les revenus des parts d’intérêts,\nemprunts ou obligations des sociétés\ncoopératives agricoles ou ouvrières,\ndes caisses de crédit agricole et des\nassociations agricoles.\n4) Les revenus des parts d’intérêts dans\nles sociétés civiles n’ayant pas opté\npour le régime d’imposition à l’impôt\nsur les sociétés.\n5) Les intérêts, arrérages et tous autres\nproduits des rentes, obligations et\nautres effets publics émis par l’État et\nles collectivités territoriales.\n6) Lesdistributionsderéserveseffectuées\nsous la forme d’augmentation de\ncapital.\nSont également exonérés de cet impôt\nles bénéfices incorporés directement au\ncapital.\nToutefois, lorsque ces distributions sont\nconsécutives à une réduction de capital\nnon motivée par des pertes sociales ou\nà une opération quelconque impliquant\nle remboursement direct en franchise\nde l’impôt sur le revenu des capitaux\nmobiliers réalisé depuis moins de cinq\n(5) ans, elles ne peuvent bénéficier de\nl’exonération que si l’augmentation de\ncapital en résultant excède le capital\nremboursé.\nLorsque les distributions sont suivies\ndans le délai de cinq (5) ans d’une\nréduction de capital motivée par des\npertes sociales ou d’une opération\nquelconque impliquant remboursement\ndirect ou indirect du capital en franchise\nd’impôt, elles sont déchues du bénéfice\nde l’exonération pour une somme égale\nau montant du remboursement et les\ndroits exigibles doivent être acquittés\nau plus tard le 20 du mois suivant le\ntrimestre de l’évènement ayant entraîné\nla déchéance, sous les sanctions édictées\npar l’article 765.\n7) Les revenus des commandités dans\nles sociétés en commandite simple.\n8) Les revenus des parts d’intérêts dans\nles sociétés en nom collectif.\n9) Les produits visés aux points 1 et\n2 de l’article 132, distribués par\nune société burkinabè exerçant son\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n75\nactivité en dehors du Burkina Faso,\nà concurrence de la quotité taxée\ndans un autre État pour cette activité\nextérieure.\n10) Les plus-values résultant de\nl’attribution gratuite d’actions, de\nparts sociales ou d’obligations\nà la suite de fusions de sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée.\nLe même régime est applicable\nlorsqu’une société anonyme, par actions\nsimplifiées ou à responsabilité limitée\napporte tout ou partie de son actif à une\nautre société constituée sous l’une de\nces formes.\nToutefois, si dans les cinq (5) ans\nprécédant la fusion, le capital de\nla société absorbée ou des sociétés\nanciennes a fait l’objet d’une réduction\nnon motivée par des pertes sociales,\nles plus-values ne peuvent bénéficier\nde l’exonération prévue ci-dessus qu’à\nconcurrence de la fraction qui excède\nle montant de la réduction.\nSi dans les cinq (5) ans suivant la fusion,\nil est procédé à une réduction de capital\nnon motivée par des pertes sociales ou\nà un remboursement total ou partiel des\nobligations attribuées gratuitement, les\nplus-values sont déchues à concurrence\nde la portion du capital remboursé aux\nactions, parts ou obligations attribuées\ngratuitement, de l’exonération dont elles\navaient bénéficié. Dans ce cas, les droits\nexigibles assortis des sanctions édictées\npar l’article 765, doivent être acquittés\npar la société absorbante ou nouvelle\nau plus tard le 20 du mois suivant le\ntrimestre au cours duquel a été effectué\nle remboursement.\n11) Les sommes attribuées aux membres\ndu conseil d’administration ou\nà l’administrateur général en\nrémunération d’un travail effectif\nde direction à condition qu’elles\nne soient pas exagérées eu égard\nau service rendu. Toutefois,\nl’exonération ne s’applique qu’à\nun seul administrateur nommément\ndésigné.\nEn ce qui concerne les administrateurs\nayant exercé une fonction salariée dans\nla société avant d’accéder au conseil\nd’administration et continuant à occuper\ndans la société un emploi salarié, les\ndispositions du point 4 de l’article 132\nne s’appliquent qu’aux produits leur\nrevenant en leur qualité d’administrateur.\n12) Les dividendes des sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée ayant\nleur siège au Burkina Faso et\nqui possèdent, soit des actions\nnominatives d’une société par\nactions, soit les parts d’intérêts d’une\nsociété à responsabilité limitée.\nLes dividendes distribués par la première\nsociété sont, pour chaque exercice,\nexonérés de l’impôt sur le revenu des\ncapitaux mobiliers dans la mesure du\nmontant net, déduction faite de l’impôt\nsur le revenu des capitaux mobiliers,\ndes produits des actions ou des parts\nd’intérêts de la seconde société touchés\npar elle au cours de l’exercice, à\ncondition :\n• que la société filiale ait son siège\nau Burkina Faso ;\n• que les actions ou parts d’intérêts\npossédées par la première société\nreprésentent au moins 20 % du\ncapital de la seconde société ;\n• qu’elles aient été souscrites ou\nattribuées à l’émission et soient\ntoujours restées inscrites au nom\nde la société, ou qu’elles soient\ndétenues depuis deux (2) années\nconsécutives au moins sous la\nforme nominative.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n76\nEn cas de fusion, le bénéfice des\ndispositions qui précèdent est transporté\nde plein droit de la société absorbée à la\nsociété absorbante ou nouvelle.\n13) Les dividendes distribués par les\nsociétés ayant pour objet exclusif la\ngestion d’un portefeuille de valeurs\nmobilières dans la limite du montant\nnet, déduction faite de l’impôt sur\nle revenu des capitaux mobiliers,\ndes produits encaissés au cours\nde l’exercice, des parts d’intérêt et\ndes obligations qu’elles détiennent,\nà condition de justifier que ces\nproduits ont supporté l’impôt sur le\nrevenu des capitaux mobiliers.\n14) Les intérêts des avances faites aux\nsociétés au moyen d’endossements\nde bordereaux de nantissement de\nstock.\n15) Les revenus des institutions\nmutualistes ou coopératives\nd’épargne et de crédits pour leurs\nopérations de collecte de l’épargne\net de distribution du crédit, ainsi que\nles rémunérations des parts sociales\nde leurs membres ou clients.\n16) Les revenus distribués par l’institut\nd’émission de la monnaie.\nSection 2 - Base imposable - Fait générateur\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "134(5) names State and local-government public instruments; it is an exemption, not a reduced bond rate."
+    },
+    {
+      "id": "C21",
+      "writer_rule": "Reserve distributions through capital increases and directly capitalised profits are exempt, subject to preceding five-year non-loss capital reduction/tax-free repayment condition and increase exceeding repaid capital.",
+      "article": "134(6)",
+      "cited_pages": [
+        74
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 134,
+          "exact_extracted_text": "Art.134.- Sont exonérés de l’impôt :\n1) Les amortissements de tout ou partie\nde leur capital social effectués par\nles sociétés, concessionnaires de\nl’État ou de collectivités territoriales\nlorsque ces amortissements sont\njustifiés par la caducité de tout ou\npartie de l’actif social, notamment\npar dépérissement progressif ou\npar remise de la concession à\nl’autorité concédante. Le caractère\nd’amortissement de l’opération et\nla légitimité de l’exonération sont\nconstatés dans chaque cas dans les\nconditions fixées par les textes en\nvigueur.\n2) Les revenus des emprunts ou\nobligations des groupements\net sociétés coopératives et des\nassociations de toute nature,\nquels qu’en soient l’objet et\nla dénomination, constitués\nexclusivement par ces sociétés\ncoopératives.\n3) Les revenus des parts d’intérêts,\nemprunts ou obligations des sociétés\ncoopératives agricoles ou ouvrières,\ndes caisses de crédit agricole et des\nassociations agricoles.\n4) Les revenus des parts d’intérêts dans\nles sociétés civiles n’ayant pas opté\npour le régime d’imposition à l’impôt\nsur les sociétés.\n5) Les intérêts, arrérages et tous autres\nproduits des rentes, obligations et\nautres effets publics émis par l’État et\nles collectivités territoriales.\n6) Lesdistributionsderéserveseffectuées\nsous la forme d’augmentation de\ncapital.\nSont également exonérés de cet impôt\nles bénéfices incorporés directement au\ncapital.\nToutefois, lorsque ces distributions sont\nconsécutives à une réduction de capital\nnon motivée par des pertes sociales ou\nà une opération quelconque impliquant\nle remboursement direct en franchise\nde l’impôt sur le revenu des capitaux\nmobiliers réalisé depuis moins de cinq\n(5) ans, elles ne peuvent bénéficier de\nl’exonération que si l’augmentation de\ncapital en résultant excède le capital\nremboursé.\nLorsque les distributions sont suivies\ndans le délai de cinq (5) ans d’une\nréduction de capital motivée par des\npertes sociales ou d’une opération\nquelconque impliquant remboursement\ndirect ou indirect du capital en franchise\nd’impôt, elles sont déchues du bénéfice\nde l’exonération pour une somme égale\nau montant du remboursement et les\ndroits exigibles doivent être acquittés\nau plus tard le 20 du mois suivant le\ntrimestre de l’évènement ayant entraîné\nla déchéance, sous les sanctions édictées\npar l’article 765.\n7) Les revenus des commandités dans\nles sociétés en commandite simple.\n8) Les revenus des parts d’intérêts dans\nles sociétés en nom collectif.\n9) Les produits visés aux points 1 et\n2 de l’article 132, distribués par\nune société burkinabè exerçant son\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n75\nactivité en dehors du Burkina Faso,\nà concurrence de la quotité taxée\ndans un autre État pour cette activité\nextérieure.\n10) Les plus-values résultant de\nl’attribution gratuite d’actions, de\nparts sociales ou d’obligations\nà la suite de fusions de sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée.\nLe même régime est applicable\nlorsqu’une société anonyme, par actions\nsimplifiées ou à responsabilité limitée\napporte tout ou partie de son actif à une\nautre société constituée sous l’une de\nces formes.\nToutefois, si dans les cinq (5) ans\nprécédant la fusion, le capital de\nla société absorbée ou des sociétés\nanciennes a fait l’objet d’une réduction\nnon motivée par des pertes sociales,\nles plus-values ne peuvent bénéficier\nde l’exonération prévue ci-dessus qu’à\nconcurrence de la fraction qui excède\nle montant de la réduction.\nSi dans les cinq (5) ans suivant la fusion,\nil est procédé à une réduction de capital\nnon motivée par des pertes sociales ou\nà un remboursement total ou partiel des\nobligations attribuées gratuitement, les\nplus-values sont déchues à concurrence\nde la portion du capital remboursé aux\nactions, parts ou obligations attribuées\ngratuitement, de l’exonération dont elles\navaient bénéficié. Dans ce cas, les droits\nexigibles assortis des sanctions édictées\npar l’article 765, doivent être acquittés\npar la société absorbante ou nouvelle\nau plus tard le 20 du mois suivant le\ntrimestre au cours duquel a été effectué\nle remboursement.\n11) Les sommes attribuées aux membres\ndu conseil d’administration ou\nà l’administrateur général en\nrémunération d’un travail effectif\nde direction à condition qu’elles\nne soient pas exagérées eu égard\nau service rendu. Toutefois,\nl’exonération ne s’applique qu’à\nun seul administrateur nommément\ndésigné.\nEn ce qui concerne les administrateurs\nayant exercé une fonction salariée dans\nla société avant d’accéder au conseil\nd’administration et continuant à occuper\ndans la société un emploi salarié, les\ndispositions du point 4 de l’article 132\nne s’appliquent qu’aux produits leur\nrevenant en leur qualité d’administrateur.\n12) Les dividendes des sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée ayant\nleur siège au Burkina Faso et\nqui possèdent, soit des actions\nnominatives d’une société par\nactions, soit les parts d’intérêts d’une\nsociété à responsabilité limitée.\nLes dividendes distribués par la première\nsociété sont, pour chaque exercice,\nexonérés de l’impôt sur le revenu des\ncapitaux mobiliers dans la mesure du\nmontant net, déduction faite de l’impôt\nsur le revenu des capitaux mobiliers,\ndes produits des actions ou des parts\nd’intérêts de la seconde société touchés\npar elle au cours de l’exercice, à\ncondition :\n• que la société filiale ait son siège\nau Burkina Faso ;\n• que les actions ou parts d’intérêts\npossédées par la première société\nreprésentent au moins 20 % du\ncapital de la seconde société ;\n• qu’elles aient été souscrites ou\nattribuées à l’émission et soient\ntoujours restées inscrites au nom\nde la société, ou qu’elles soient\ndétenues depuis deux (2) années\nconsécutives au moins sous la\nforme nominative.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n76\nEn cas de fusion, le bénéfice des\ndispositions qui précèdent est transporté\nde plein droit de la société absorbée à la\nsociété absorbante ou nouvelle.\n13) Les dividendes distribués par les\nsociétés ayant pour objet exclusif la\ngestion d’un portefeuille de valeurs\nmobilières dans la limite du montant\nnet, déduction faite de l’impôt sur\nle revenu des capitaux mobiliers,\ndes produits encaissés au cours\nde l’exercice, des parts d’intérêt et\ndes obligations qu’elles détiennent,\nà condition de justifier que ces\nproduits ont supporté l’impôt sur le\nrevenu des capitaux mobiliers.\n14) Les intérêts des avances faites aux\nsociétés au moyen d’endossements\nde bordereaux de nantissement de\nstock.\n15) Les revenus des institutions\nmutualistes ou coopératives\nd’épargne et de crédits pour leurs\nopérations de collecte de l’épargne\net de distribution du crédit, ainsi que\nles rémunérations des parts sociales\nde leurs membres ou clients.\n16) Les revenus distribués par l’institut\nd’émission de la monnaie.\nSection 2 - Base imposable - Fait générateur\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "134(6) initially exempts reserve capitalisation/directly capitalised profits; preceding non-loss reduction/direct tax-free repayment under five years triggers the excess-capital condition."
+    },
+    {
+      "id": "C22",
+      "writer_rule": "Following capitalisation, within-five-year loss-motivated reduction or tax-free direct/indirect capital repayment withdraws exemption for repayment amount; tax due by20th of month after event quarter under art.765. The printed loss-motivated wording is retained.",
+      "article": "134(6)",
+      "cited_pages": [
+        74
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 134,
+          "exact_extracted_text": "Art.134.- Sont exonérés de l’impôt :\n1) Les amortissements de tout ou partie\nde leur capital social effectués par\nles sociétés, concessionnaires de\nl’État ou de collectivités territoriales\nlorsque ces amortissements sont\njustifiés par la caducité de tout ou\npartie de l’actif social, notamment\npar dépérissement progressif ou\npar remise de la concession à\nl’autorité concédante. Le caractère\nd’amortissement de l’opération et\nla légitimité de l’exonération sont\nconstatés dans chaque cas dans les\nconditions fixées par les textes en\nvigueur.\n2) Les revenus des emprunts ou\nobligations des groupements\net sociétés coopératives et des\nassociations de toute nature,\nquels qu’en soient l’objet et\nla dénomination, constitués\nexclusivement par ces sociétés\ncoopératives.\n3) Les revenus des parts d’intérêts,\nemprunts ou obligations des sociétés\ncoopératives agricoles ou ouvrières,\ndes caisses de crédit agricole et des\nassociations agricoles.\n4) Les revenus des parts d’intérêts dans\nles sociétés civiles n’ayant pas opté\npour le régime d’imposition à l’impôt\nsur les sociétés.\n5) Les intérêts, arrérages et tous autres\nproduits des rentes, obligations et\nautres effets publics émis par l’État et\nles collectivités territoriales.\n6) Lesdistributionsderéserveseffectuées\nsous la forme d’augmentation de\ncapital.\nSont également exonérés de cet impôt\nles bénéfices incorporés directement au\ncapital.\nToutefois, lorsque ces distributions sont\nconsécutives à une réduction de capital\nnon motivée par des pertes sociales ou\nà une opération quelconque impliquant\nle remboursement direct en franchise\nde l’impôt sur le revenu des capitaux\nmobiliers réalisé depuis moins de cinq\n(5) ans, elles ne peuvent bénéficier de\nl’exonération que si l’augmentation de\ncapital en résultant excède le capital\nremboursé.\nLorsque les distributions sont suivies\ndans le délai de cinq (5) ans d’une\nréduction de capital motivée par des\npertes sociales ou d’une opération\nquelconque impliquant remboursement\ndirect ou indirect du capital en franchise\nd’impôt, elles sont déchues du bénéfice\nde l’exonération pour une somme égale\nau montant du remboursement et les\ndroits exigibles doivent être acquittés\nau plus tard le 20 du mois suivant le\ntrimestre de l’évènement ayant entraîné\nla déchéance, sous les sanctions édictées\npar l’article 765.\n7) Les revenus des commandités dans\nles sociétés en commandite simple.\n8) Les revenus des parts d’intérêts dans\nles sociétés en nom collectif.\n9) Les produits visés aux points 1 et\n2 de l’article 132, distribués par\nune société burkinabè exerçant son\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n75\nactivité en dehors du Burkina Faso,\nà concurrence de la quotité taxée\ndans un autre État pour cette activité\nextérieure.\n10) Les plus-values résultant de\nl’attribution gratuite d’actions, de\nparts sociales ou d’obligations\nà la suite de fusions de sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée.\nLe même régime est applicable\nlorsqu’une société anonyme, par actions\nsimplifiées ou à responsabilité limitée\napporte tout ou partie de son actif à une\nautre société constituée sous l’une de\nces formes.\nToutefois, si dans les cinq (5) ans\nprécédant la fusion, le capital de\nla société absorbée ou des sociétés\nanciennes a fait l’objet d’une réduction\nnon motivée par des pertes sociales,\nles plus-values ne peuvent bénéficier\nde l’exonération prévue ci-dessus qu’à\nconcurrence de la fraction qui excède\nle montant de la réduction.\nSi dans les cinq (5) ans suivant la fusion,\nil est procédé à une réduction de capital\nnon motivée par des pertes sociales ou\nà un remboursement total ou partiel des\nobligations attribuées gratuitement, les\nplus-values sont déchues à concurrence\nde la portion du capital remboursé aux\nactions, parts ou obligations attribuées\ngratuitement, de l’exonération dont elles\navaient bénéficié. Dans ce cas, les droits\nexigibles assortis des sanctions édictées\npar l’article 765, doivent être acquittés\npar la société absorbante ou nouvelle\nau plus tard le 20 du mois suivant le\ntrimestre au cours duquel a été effectué\nle remboursement.\n11) Les sommes attribuées aux membres\ndu conseil d’administration ou\nà l’administrateur général en\nrémunération d’un travail effectif\nde direction à condition qu’elles\nne soient pas exagérées eu égard\nau service rendu. Toutefois,\nl’exonération ne s’applique qu’à\nun seul administrateur nommément\ndésigné.\nEn ce qui concerne les administrateurs\nayant exercé une fonction salariée dans\nla société avant d’accéder au conseil\nd’administration et continuant à occuper\ndans la société un emploi salarié, les\ndispositions du point 4 de l’article 132\nne s’appliquent qu’aux produits leur\nrevenant en leur qualité d’administrateur.\n12) Les dividendes des sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée ayant\nleur siège au Burkina Faso et\nqui possèdent, soit des actions\nnominatives d’une société par\nactions, soit les parts d’intérêts d’une\nsociété à responsabilité limitée.\nLes dividendes distribués par la première\nsociété sont, pour chaque exercice,\nexonérés de l’impôt sur le revenu des\ncapitaux mobiliers dans la mesure du\nmontant net, déduction faite de l’impôt\nsur le revenu des capitaux mobiliers,\ndes produits des actions ou des parts\nd’intérêts de la seconde société touchés\npar elle au cours de l’exercice, à\ncondition :\n• que la société filiale ait son siège\nau Burkina Faso ;\n• que les actions ou parts d’intérêts\npossédées par la première société\nreprésentent au moins 20 % du\ncapital de la seconde société ;\n• qu’elles aient été souscrites ou\nattribuées à l’émission et soient\ntoujours restées inscrites au nom\nde la société, ou qu’elles soient\ndétenues depuis deux (2) années\nconsécutives au moins sous la\nforme nominative.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n76\nEn cas de fusion, le bénéfice des\ndispositions qui précèdent est transporté\nde plein droit de la société absorbée à la\nsociété absorbante ou nouvelle.\n13) Les dividendes distribués par les\nsociétés ayant pour objet exclusif la\ngestion d’un portefeuille de valeurs\nmobilières dans la limite du montant\nnet, déduction faite de l’impôt sur\nle revenu des capitaux mobiliers,\ndes produits encaissés au cours\nde l’exercice, des parts d’intérêt et\ndes obligations qu’elles détiennent,\nà condition de justifier que ces\nproduits ont supporté l’impôt sur le\nrevenu des capitaux mobiliers.\n14) Les intérêts des avances faites aux\nsociétés au moyen d’endossements\nde bordereaux de nantissement de\nstock.\n15) Les revenus des institutions\nmutualistes ou coopératives\nd’épargne et de crédits pour leurs\nopérations de collecte de l’épargne\net de distribution du crédit, ainsi que\nles rémunérations des parts sociales\nde leurs membres ou clients.\n16) Les revenus distribués par l’institut\nd’émission de la monnaie.\nSection 2 - Base imposable - Fait générateur\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "134(6) printed text really says subsequent reduction motivated by losses; five-year withdrawal, repayment-amount measure, quarter-following 20th and 765 sanctions are preserved without correcting statute by intuition."
+    },
+    {
+      "id": "C23",
+      "writer_rule": "Actual management work remuneration not excessive for service is exempt for only one named administrator.",
+      "article": "134(11), first paragraph",
+      "cited_pages": [
+        75
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 134,
+          "exact_extracted_text": "Art.134.- Sont exonérés de l’impôt :\n1) Les amortissements de tout ou partie\nde leur capital social effectués par\nles sociétés, concessionnaires de\nl’État ou de collectivités territoriales\nlorsque ces amortissements sont\njustifiés par la caducité de tout ou\npartie de l’actif social, notamment\npar dépérissement progressif ou\npar remise de la concession à\nl’autorité concédante. Le caractère\nd’amortissement de l’opération et\nla légitimité de l’exonération sont\nconstatés dans chaque cas dans les\nconditions fixées par les textes en\nvigueur.\n2) Les revenus des emprunts ou\nobligations des groupements\net sociétés coopératives et des\nassociations de toute nature,\nquels qu’en soient l’objet et\nla dénomination, constitués\nexclusivement par ces sociétés\ncoopératives.\n3) Les revenus des parts d’intérêts,\nemprunts ou obligations des sociétés\ncoopératives agricoles ou ouvrières,\ndes caisses de crédit agricole et des\nassociations agricoles.\n4) Les revenus des parts d’intérêts dans\nles sociétés civiles n’ayant pas opté\npour le régime d’imposition à l’impôt\nsur les sociétés.\n5) Les intérêts, arrérages et tous autres\nproduits des rentes, obligations et\nautres effets publics émis par l’État et\nles collectivités territoriales.\n6) Lesdistributionsderéserveseffectuées\nsous la forme d’augmentation de\ncapital.\nSont également exonérés de cet impôt\nles bénéfices incorporés directement au\ncapital.\nToutefois, lorsque ces distributions sont\nconsécutives à une réduction de capital\nnon motivée par des pertes sociales ou\nà une opération quelconque impliquant\nle remboursement direct en franchise\nde l’impôt sur le revenu des capitaux\nmobiliers réalisé depuis moins de cinq\n(5) ans, elles ne peuvent bénéficier de\nl’exonération que si l’augmentation de\ncapital en résultant excède le capital\nremboursé.\nLorsque les distributions sont suivies\ndans le délai de cinq (5) ans d’une\nréduction de capital motivée par des\npertes sociales ou d’une opération\nquelconque impliquant remboursement\ndirect ou indirect du capital en franchise\nd’impôt, elles sont déchues du bénéfice\nde l’exonération pour une somme égale\nau montant du remboursement et les\ndroits exigibles doivent être acquittés\nau plus tard le 20 du mois suivant le\ntrimestre de l’évènement ayant entraîné\nla déchéance, sous les sanctions édictées\npar l’article 765.\n7) Les revenus des commandités dans\nles sociétés en commandite simple.\n8) Les revenus des parts d’intérêts dans\nles sociétés en nom collectif.\n9) Les produits visés aux points 1 et\n2 de l’article 132, distribués par\nune société burkinabè exerçant son\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n75\nactivité en dehors du Burkina Faso,\nà concurrence de la quotité taxée\ndans un autre État pour cette activité\nextérieure.\n10) Les plus-values résultant de\nl’attribution gratuite d’actions, de\nparts sociales ou d’obligations\nà la suite de fusions de sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée.\nLe même régime est applicable\nlorsqu’une société anonyme, par actions\nsimplifiées ou à responsabilité limitée\napporte tout ou partie de son actif à une\nautre société constituée sous l’une de\nces formes.\nToutefois, si dans les cinq (5) ans\nprécédant la fusion, le capital de\nla société absorbée ou des sociétés\nanciennes a fait l’objet d’une réduction\nnon motivée par des pertes sociales,\nles plus-values ne peuvent bénéficier\nde l’exonération prévue ci-dessus qu’à\nconcurrence de la fraction qui excède\nle montant de la réduction.\nSi dans les cinq (5) ans suivant la fusion,\nil est procédé à une réduction de capital\nnon motivée par des pertes sociales ou\nà un remboursement total ou partiel des\nobligations attribuées gratuitement, les\nplus-values sont déchues à concurrence\nde la portion du capital remboursé aux\nactions, parts ou obligations attribuées\ngratuitement, de l’exonération dont elles\navaient bénéficié. Dans ce cas, les droits\nexigibles assortis des sanctions édictées\npar l’article 765, doivent être acquittés\npar la société absorbante ou nouvelle\nau plus tard le 20 du mois suivant le\ntrimestre au cours duquel a été effectué\nle remboursement.\n11) Les sommes attribuées aux membres\ndu conseil d’administration ou\nà l’administrateur général en\nrémunération d’un travail effectif\nde direction à condition qu’elles\nne soient pas exagérées eu égard\nau service rendu. Toutefois,\nl’exonération ne s’applique qu’à\nun seul administrateur nommément\ndésigné.\nEn ce qui concerne les administrateurs\nayant exercé une fonction salariée dans\nla société avant d’accéder au conseil\nd’administration et continuant à occuper\ndans la société un emploi salarié, les\ndispositions du point 4 de l’article 132\nne s’appliquent qu’aux produits leur\nrevenant en leur qualité d’administrateur.\n12) Les dividendes des sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée ayant\nleur siège au Burkina Faso et\nqui possèdent, soit des actions\nnominatives d’une société par\nactions, soit les parts d’intérêts d’une\nsociété à responsabilité limitée.\nLes dividendes distribués par la première\nsociété sont, pour chaque exercice,\nexonérés de l’impôt sur le revenu des\ncapitaux mobiliers dans la mesure du\nmontant net, déduction faite de l’impôt\nsur le revenu des capitaux mobiliers,\ndes produits des actions ou des parts\nd’intérêts de la seconde société touchés\npar elle au cours de l’exercice, à\ncondition :\n• que la société filiale ait son siège\nau Burkina Faso ;\n• que les actions ou parts d’intérêts\npossédées par la première société\nreprésentent au moins 20 % du\ncapital de la seconde société ;\n• qu’elles aient été souscrites ou\nattribuées à l’émission et soient\ntoujours restées inscrites au nom\nde la société, ou qu’elles soient\ndétenues depuis deux (2) années\nconsécutives au moins sous la\nforme nominative.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n76\nEn cas de fusion, le bénéfice des\ndispositions qui précèdent est transporté\nde plein droit de la société absorbée à la\nsociété absorbante ou nouvelle.\n13) Les dividendes distribués par les\nsociétés ayant pour objet exclusif la\ngestion d’un portefeuille de valeurs\nmobilières dans la limite du montant\nnet, déduction faite de l’impôt sur\nle revenu des capitaux mobiliers,\ndes produits encaissés au cours\nde l’exercice, des parts d’intérêt et\ndes obligations qu’elles détiennent,\nà condition de justifier que ces\nproduits ont supporté l’impôt sur le\nrevenu des capitaux mobiliers.\n14) Les intérêts des avances faites aux\nsociétés au moyen d’endossements\nde bordereaux de nantissement de\nstock.\n15) Les revenus des institutions\nmutualistes ou coopératives\nd’épargne et de crédits pour leurs\nopérations de collecte de l’épargne\net de distribution du crédit, ainsi que\nles rémunérations des parts sociales\nde leurs membres ou clients.\n16) Les revenus distribués par l’institut\nd’émission de la monnaie.\nSection 2 - Base imposable - Fait générateur\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "134(11) actual direction work, non-excessive remuneration and only one named administrator all retained."
+    },
+    {
+      "id": "C24",
+      "writer_rule": "Continuing employee who held salaried position before joining board is subject to art.132(4) for products received in administrator capacity only.",
+      "article": "134(11), second paragraph",
+      "cited_pages": [
+        75
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 134,
+          "exact_extracted_text": "Art.134.- Sont exonérés de l’impôt :\n1) Les amortissements de tout ou partie\nde leur capital social effectués par\nles sociétés, concessionnaires de\nl’État ou de collectivités territoriales\nlorsque ces amortissements sont\njustifiés par la caducité de tout ou\npartie de l’actif social, notamment\npar dépérissement progressif ou\npar remise de la concession à\nl’autorité concédante. Le caractère\nd’amortissement de l’opération et\nla légitimité de l’exonération sont\nconstatés dans chaque cas dans les\nconditions fixées par les textes en\nvigueur.\n2) Les revenus des emprunts ou\nobligations des groupements\net sociétés coopératives et des\nassociations de toute nature,\nquels qu’en soient l’objet et\nla dénomination, constitués\nexclusivement par ces sociétés\ncoopératives.\n3) Les revenus des parts d’intérêts,\nemprunts ou obligations des sociétés\ncoopératives agricoles ou ouvrières,\ndes caisses de crédit agricole et des\nassociations agricoles.\n4) Les revenus des parts d’intérêts dans\nles sociétés civiles n’ayant pas opté\npour le régime d’imposition à l’impôt\nsur les sociétés.\n5) Les intérêts, arrérages et tous autres\nproduits des rentes, obligations et\nautres effets publics émis par l’État et\nles collectivités territoriales.\n6) Lesdistributionsderéserveseffectuées\nsous la forme d’augmentation de\ncapital.\nSont également exonérés de cet impôt\nles bénéfices incorporés directement au\ncapital.\nToutefois, lorsque ces distributions sont\nconsécutives à une réduction de capital\nnon motivée par des pertes sociales ou\nà une opération quelconque impliquant\nle remboursement direct en franchise\nde l’impôt sur le revenu des capitaux\nmobiliers réalisé depuis moins de cinq\n(5) ans, elles ne peuvent bénéficier de\nl’exonération que si l’augmentation de\ncapital en résultant excède le capital\nremboursé.\nLorsque les distributions sont suivies\ndans le délai de cinq (5) ans d’une\nréduction de capital motivée par des\npertes sociales ou d’une opération\nquelconque impliquant remboursement\ndirect ou indirect du capital en franchise\nd’impôt, elles sont déchues du bénéfice\nde l’exonération pour une somme égale\nau montant du remboursement et les\ndroits exigibles doivent être acquittés\nau plus tard le 20 du mois suivant le\ntrimestre de l’évènement ayant entraîné\nla déchéance, sous les sanctions édictées\npar l’article 765.\n7) Les revenus des commandités dans\nles sociétés en commandite simple.\n8) Les revenus des parts d’intérêts dans\nles sociétés en nom collectif.\n9) Les produits visés aux points 1 et\n2 de l’article 132, distribués par\nune société burkinabè exerçant son\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n75\nactivité en dehors du Burkina Faso,\nà concurrence de la quotité taxée\ndans un autre État pour cette activité\nextérieure.\n10) Les plus-values résultant de\nl’attribution gratuite d’actions, de\nparts sociales ou d’obligations\nà la suite de fusions de sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée.\nLe même régime est applicable\nlorsqu’une société anonyme, par actions\nsimplifiées ou à responsabilité limitée\napporte tout ou partie de son actif à une\nautre société constituée sous l’une de\nces formes.\nToutefois, si dans les cinq (5) ans\nprécédant la fusion, le capital de\nla société absorbée ou des sociétés\nanciennes a fait l’objet d’une réduction\nnon motivée par des pertes sociales,\nles plus-values ne peuvent bénéficier\nde l’exonération prévue ci-dessus qu’à\nconcurrence de la fraction qui excède\nle montant de la réduction.\nSi dans les cinq (5) ans suivant la fusion,\nil est procédé à une réduction de capital\nnon motivée par des pertes sociales ou\nà un remboursement total ou partiel des\nobligations attribuées gratuitement, les\nplus-values sont déchues à concurrence\nde la portion du capital remboursé aux\nactions, parts ou obligations attribuées\ngratuitement, de l’exonération dont elles\navaient bénéficié. Dans ce cas, les droits\nexigibles assortis des sanctions édictées\npar l’article 765, doivent être acquittés\npar la société absorbante ou nouvelle\nau plus tard le 20 du mois suivant le\ntrimestre au cours duquel a été effectué\nle remboursement.\n11) Les sommes attribuées aux membres\ndu conseil d’administration ou\nà l’administrateur général en\nrémunération d’un travail effectif\nde direction à condition qu’elles\nne soient pas exagérées eu égard\nau service rendu. Toutefois,\nl’exonération ne s’applique qu’à\nun seul administrateur nommément\ndésigné.\nEn ce qui concerne les administrateurs\nayant exercé une fonction salariée dans\nla société avant d’accéder au conseil\nd’administration et continuant à occuper\ndans la société un emploi salarié, les\ndispositions du point 4 de l’article 132\nne s’appliquent qu’aux produits leur\nrevenant en leur qualité d’administrateur.\n12) Les dividendes des sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée ayant\nleur siège au Burkina Faso et\nqui possèdent, soit des actions\nnominatives d’une société par\nactions, soit les parts d’intérêts d’une\nsociété à responsabilité limitée.\nLes dividendes distribués par la première\nsociété sont, pour chaque exercice,\nexonérés de l’impôt sur le revenu des\ncapitaux mobiliers dans la mesure du\nmontant net, déduction faite de l’impôt\nsur le revenu des capitaux mobiliers,\ndes produits des actions ou des parts\nd’intérêts de la seconde société touchés\npar elle au cours de l’exercice, à\ncondition :\n• que la société filiale ait son siège\nau Burkina Faso ;\n• que les actions ou parts d’intérêts\npossédées par la première société\nreprésentent au moins 20 % du\ncapital de la seconde société ;\n• qu’elles aient été souscrites ou\nattribuées à l’émission et soient\ntoujours restées inscrites au nom\nde la société, ou qu’elles soient\ndétenues depuis deux (2) années\nconsécutives au moins sous la\nforme nominative.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n76\nEn cas de fusion, le bénéfice des\ndispositions qui précèdent est transporté\nde plein droit de la société absorbée à la\nsociété absorbante ou nouvelle.\n13) Les dividendes distribués par les\nsociétés ayant pour objet exclusif la\ngestion d’un portefeuille de valeurs\nmobilières dans la limite du montant\nnet, déduction faite de l’impôt sur\nle revenu des capitaux mobiliers,\ndes produits encaissés au cours\nde l’exercice, des parts d’intérêt et\ndes obligations qu’elles détiennent,\nà condition de justifier que ces\nproduits ont supporté l’impôt sur le\nrevenu des capitaux mobiliers.\n14) Les intérêts des avances faites aux\nsociétés au moyen d’endossements\nde bordereaux de nantissement de\nstock.\n15) Les revenus des institutions\nmutualistes ou coopératives\nd’épargne et de crédits pour leurs\nopérations de collecte de l’épargne\net de distribution du crédit, ainsi que\nles rémunérations des parts sociales\nde leurs membres ou clients.\n16) Les revenus distribués par l’institut\nd’émission de la monnaie.\nSection 2 - Base imposable - Fait générateur\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "134(11) continuing salaried job must predate board appointment; 132(4) then reaches administrator-capacity receipts only."
+    },
+    {
+      "id": "C25",
+      "writer_rule": "Burkina-seated SA/SAS/SARL redistribution exemption limited to net of IRCM dividends received in period from qualifying Burkina subsidiary holding; not individual recipient IS credit.",
+      "article": "134(12)",
+      "cited_pages": [
+        75,
+        76
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 134,
+          "exact_extracted_text": "Art.134.- Sont exonérés de l’impôt :\n1) Les amortissements de tout ou partie\nde leur capital social effectués par\nles sociétés, concessionnaires de\nl’État ou de collectivités territoriales\nlorsque ces amortissements sont\njustifiés par la caducité de tout ou\npartie de l’actif social, notamment\npar dépérissement progressif ou\npar remise de la concession à\nl’autorité concédante. Le caractère\nd’amortissement de l’opération et\nla légitimité de l’exonération sont\nconstatés dans chaque cas dans les\nconditions fixées par les textes en\nvigueur.\n2) Les revenus des emprunts ou\nobligations des groupements\net sociétés coopératives et des\nassociations de toute nature,\nquels qu’en soient l’objet et\nla dénomination, constitués\nexclusivement par ces sociétés\ncoopératives.\n3) Les revenus des parts d’intérêts,\nemprunts ou obligations des sociétés\ncoopératives agricoles ou ouvrières,\ndes caisses de crédit agricole et des\nassociations agricoles.\n4) Les revenus des parts d’intérêts dans\nles sociétés civiles n’ayant pas opté\npour le régime d’imposition à l’impôt\nsur les sociétés.\n5) Les intérêts, arrérages et tous autres\nproduits des rentes, obligations et\nautres effets publics émis par l’État et\nles collectivités territoriales.\n6) Lesdistributionsderéserveseffectuées\nsous la forme d’augmentation de\ncapital.\nSont également exonérés de cet impôt\nles bénéfices incorporés directement au\ncapital.\nToutefois, lorsque ces distributions sont\nconsécutives à une réduction de capital\nnon motivée par des pertes sociales ou\nà une opération quelconque impliquant\nle remboursement direct en franchise\nde l’impôt sur le revenu des capitaux\nmobiliers réalisé depuis moins de cinq\n(5) ans, elles ne peuvent bénéficier de\nl’exonération que si l’augmentation de\ncapital en résultant excède le capital\nremboursé.\nLorsque les distributions sont suivies\ndans le délai de cinq (5) ans d’une\nréduction de capital motivée par des\npertes sociales ou d’une opération\nquelconque impliquant remboursement\ndirect ou indirect du capital en franchise\nd’impôt, elles sont déchues du bénéfice\nde l’exonération pour une somme égale\nau montant du remboursement et les\ndroits exigibles doivent être acquittés\nau plus tard le 20 du mois suivant le\ntrimestre de l’évènement ayant entraîné\nla déchéance, sous les sanctions édictées\npar l’article 765.\n7) Les revenus des commandités dans\nles sociétés en commandite simple.\n8) Les revenus des parts d’intérêts dans\nles sociétés en nom collectif.\n9) Les produits visés aux points 1 et\n2 de l’article 132, distribués par\nune société burkinabè exerçant son\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n75\nactivité en dehors du Burkina Faso,\nà concurrence de la quotité taxée\ndans un autre État pour cette activité\nextérieure.\n10) Les plus-values résultant de\nl’attribution gratuite d’actions, de\nparts sociales ou d’obligations\nà la suite de fusions de sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée.\nLe même régime est applicable\nlorsqu’une société anonyme, par actions\nsimplifiées ou à responsabilité limitée\napporte tout ou partie de son actif à une\nautre société constituée sous l’une de\nces formes.\nToutefois, si dans les cinq (5) ans\nprécédant la fusion, le capital de\nla société absorbée ou des sociétés\nanciennes a fait l’objet d’une réduction\nnon motivée par des pertes sociales,\nles plus-values ne peuvent bénéficier\nde l’exonération prévue ci-dessus qu’à\nconcurrence de la fraction qui excède\nle montant de la réduction.\nSi dans les cinq (5) ans suivant la fusion,\nil est procédé à une réduction de capital\nnon motivée par des pertes sociales ou\nà un remboursement total ou partiel des\nobligations attribuées gratuitement, les\nplus-values sont déchues à concurrence\nde la portion du capital remboursé aux\nactions, parts ou obligations attribuées\ngratuitement, de l’exonération dont elles\navaient bénéficié. Dans ce cas, les droits\nexigibles assortis des sanctions édictées\npar l’article 765, doivent être acquittés\npar la société absorbante ou nouvelle\nau plus tard le 20 du mois suivant le\ntrimestre au cours duquel a été effectué\nle remboursement.\n11) Les sommes attribuées aux membres\ndu conseil d’administration ou\nà l’administrateur général en\nrémunération d’un travail effectif\nde direction à condition qu’elles\nne soient pas exagérées eu égard\nau service rendu. Toutefois,\nl’exonération ne s’applique qu’à\nun seul administrateur nommément\ndésigné.\nEn ce qui concerne les administrateurs\nayant exercé une fonction salariée dans\nla société avant d’accéder au conseil\nd’administration et continuant à occuper\ndans la société un emploi salarié, les\ndispositions du point 4 de l’article 132\nne s’appliquent qu’aux produits leur\nrevenant en leur qualité d’administrateur.\n12) Les dividendes des sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée ayant\nleur siège au Burkina Faso et\nqui possèdent, soit des actions\nnominatives d’une société par\nactions, soit les parts d’intérêts d’une\nsociété à responsabilité limitée.\nLes dividendes distribués par la première\nsociété sont, pour chaque exercice,\nexonérés de l’impôt sur le revenu des\ncapitaux mobiliers dans la mesure du\nmontant net, déduction faite de l’impôt\nsur le revenu des capitaux mobiliers,\ndes produits des actions ou des parts\nd’intérêts de la seconde société touchés\npar elle au cours de l’exercice, à\ncondition :\n• que la société filiale ait son siège\nau Burkina Faso ;\n• que les actions ou parts d’intérêts\npossédées par la première société\nreprésentent au moins 20 % du\ncapital de la seconde société ;\n• qu’elles aient été souscrites ou\nattribuées à l’émission et soient\ntoujours restées inscrites au nom\nde la société, ou qu’elles soient\ndétenues depuis deux (2) années\nconsécutives au moins sous la\nforme nominative.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n76\nEn cas de fusion, le bénéfice des\ndispositions qui précèdent est transporté\nde plein droit de la société absorbée à la\nsociété absorbante ou nouvelle.\n13) Les dividendes distribués par les\nsociétés ayant pour objet exclusif la\ngestion d’un portefeuille de valeurs\nmobilières dans la limite du montant\nnet, déduction faite de l’impôt sur\nle revenu des capitaux mobiliers,\ndes produits encaissés au cours\nde l’exercice, des parts d’intérêt et\ndes obligations qu’elles détiennent,\nà condition de justifier que ces\nproduits ont supporté l’impôt sur le\nrevenu des capitaux mobiliers.\n14) Les intérêts des avances faites aux\nsociétés au moyen d’endossements\nde bordereaux de nantissement de\nstock.\n15) Les revenus des institutions\nmutualistes ou coopératives\nd’épargne et de crédits pour leurs\nopérations de collecte de l’épargne\net de distribution du crédit, ainsi que\nles rémunérations des parts sociales\nde leurs membres ou clients.\n16) Les revenus distribués par l’institut\nd’émission de la monnaie.\nSection 2 - Base imposable - Fait générateur\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "134(12) applies to Burkina SA/SAS/SARL holding named instruments and caps redistributed exemption at received period net IRCM products; fusion carryover is in following page."
+    },
+    {
+      "id": "C26",
+      "writer_rule": "Redistribution exemption requires subsidiary seat Burkina, at least20% holding, qualifying registered shares/SARL interests subscribed/allotted at issue and continuously in company name OR held registered at least2consecutiveyears.",
+      "article": "134(12)",
+      "cited_pages": [
+        75
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 134,
+          "exact_extracted_text": "Art.134.- Sont exonérés de l’impôt :\n1) Les amortissements de tout ou partie\nde leur capital social effectués par\nles sociétés, concessionnaires de\nl’État ou de collectivités territoriales\nlorsque ces amortissements sont\njustifiés par la caducité de tout ou\npartie de l’actif social, notamment\npar dépérissement progressif ou\npar remise de la concession à\nl’autorité concédante. Le caractère\nd’amortissement de l’opération et\nla légitimité de l’exonération sont\nconstatés dans chaque cas dans les\nconditions fixées par les textes en\nvigueur.\n2) Les revenus des emprunts ou\nobligations des groupements\net sociétés coopératives et des\nassociations de toute nature,\nquels qu’en soient l’objet et\nla dénomination, constitués\nexclusivement par ces sociétés\ncoopératives.\n3) Les revenus des parts d’intérêts,\nemprunts ou obligations des sociétés\ncoopératives agricoles ou ouvrières,\ndes caisses de crédit agricole et des\nassociations agricoles.\n4) Les revenus des parts d’intérêts dans\nles sociétés civiles n’ayant pas opté\npour le régime d’imposition à l’impôt\nsur les sociétés.\n5) Les intérêts, arrérages et tous autres\nproduits des rentes, obligations et\nautres effets publics émis par l’État et\nles collectivités territoriales.\n6) Lesdistributionsderéserveseffectuées\nsous la forme d’augmentation de\ncapital.\nSont également exonérés de cet impôt\nles bénéfices incorporés directement au\ncapital.\nToutefois, lorsque ces distributions sont\nconsécutives à une réduction de capital\nnon motivée par des pertes sociales ou\nà une opération quelconque impliquant\nle remboursement direct en franchise\nde l’impôt sur le revenu des capitaux\nmobiliers réalisé depuis moins de cinq\n(5) ans, elles ne peuvent bénéficier de\nl’exonération que si l’augmentation de\ncapital en résultant excède le capital\nremboursé.\nLorsque les distributions sont suivies\ndans le délai de cinq (5) ans d’une\nréduction de capital motivée par des\npertes sociales ou d’une opération\nquelconque impliquant remboursement\ndirect ou indirect du capital en franchise\nd’impôt, elles sont déchues du bénéfice\nde l’exonération pour une somme égale\nau montant du remboursement et les\ndroits exigibles doivent être acquittés\nau plus tard le 20 du mois suivant le\ntrimestre de l’évènement ayant entraîné\nla déchéance, sous les sanctions édictées\npar l’article 765.\n7) Les revenus des commandités dans\nles sociétés en commandite simple.\n8) Les revenus des parts d’intérêts dans\nles sociétés en nom collectif.\n9) Les produits visés aux points 1 et\n2 de l’article 132, distribués par\nune société burkinabè exerçant son\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n75\nactivité en dehors du Burkina Faso,\nà concurrence de la quotité taxée\ndans un autre État pour cette activité\nextérieure.\n10) Les plus-values résultant de\nl’attribution gratuite d’actions, de\nparts sociales ou d’obligations\nà la suite de fusions de sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée.\nLe même régime est applicable\nlorsqu’une société anonyme, par actions\nsimplifiées ou à responsabilité limitée\napporte tout ou partie de son actif à une\nautre société constituée sous l’une de\nces formes.\nToutefois, si dans les cinq (5) ans\nprécédant la fusion, le capital de\nla société absorbée ou des sociétés\nanciennes a fait l’objet d’une réduction\nnon motivée par des pertes sociales,\nles plus-values ne peuvent bénéficier\nde l’exonération prévue ci-dessus qu’à\nconcurrence de la fraction qui excède\nle montant de la réduction.\nSi dans les cinq (5) ans suivant la fusion,\nil est procédé à une réduction de capital\nnon motivée par des pertes sociales ou\nà un remboursement total ou partiel des\nobligations attribuées gratuitement, les\nplus-values sont déchues à concurrence\nde la portion du capital remboursé aux\nactions, parts ou obligations attribuées\ngratuitement, de l’exonération dont elles\navaient bénéficié. Dans ce cas, les droits\nexigibles assortis des sanctions édictées\npar l’article 765, doivent être acquittés\npar la société absorbante ou nouvelle\nau plus tard le 20 du mois suivant le\ntrimestre au cours duquel a été effectué\nle remboursement.\n11) Les sommes attribuées aux membres\ndu conseil d’administration ou\nà l’administrateur général en\nrémunération d’un travail effectif\nde direction à condition qu’elles\nne soient pas exagérées eu égard\nau service rendu. Toutefois,\nl’exonération ne s’applique qu’à\nun seul administrateur nommément\ndésigné.\nEn ce qui concerne les administrateurs\nayant exercé une fonction salariée dans\nla société avant d’accéder au conseil\nd’administration et continuant à occuper\ndans la société un emploi salarié, les\ndispositions du point 4 de l’article 132\nne s’appliquent qu’aux produits leur\nrevenant en leur qualité d’administrateur.\n12) Les dividendes des sociétés\nanonymes, par actions simplifiées\nou à responsabilité limitée ayant\nleur siège au Burkina Faso et\nqui possèdent, soit des actions\nnominatives d’une société par\nactions, soit les parts d’intérêts d’une\nsociété à responsabilité limitée.\nLes dividendes distribués par la première\nsociété sont, pour chaque exercice,\nexonérés de l’impôt sur le revenu des\ncapitaux mobiliers dans la mesure du\nmontant net, déduction faite de l’impôt\nsur le revenu des capitaux mobiliers,\ndes produits des actions ou des parts\nd’intérêts de la seconde société touchés\npar elle au cours de l’exercice, à\ncondition :\n• que la société filiale ait son siège\nau Burkina Faso ;\n• que les actions ou parts d’intérêts\npossédées par la première société\nreprésentent au moins 20 % du\ncapital de la seconde société ;\n• qu’elles aient été souscrites ou\nattribuées à l’émission et soient\ntoujours restées inscrites au nom\nde la société, ou qu’elles soient\ndétenues depuis deux (2) années\nconsécutives au moins sous la\nforme nominative.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n76\nEn cas de fusion, le bénéfice des\ndispositions qui précèdent est transporté\nde plein droit de la société absorbée à la\nsociété absorbante ou nouvelle.\n13) Les dividendes distribués par les\nsociétés ayant pour objet exclusif la\ngestion d’un portefeuille de valeurs\nmobilières dans la limite du montant\nnet, déduction faite de l’impôt sur\nle revenu des capitaux mobiliers,\ndes produits encaissés au cours\nde l’exercice, des parts d’intérêt et\ndes obligations qu’elles détiennent,\nà condition de justifier que ces\nproduits ont supporté l’impôt sur le\nrevenu des capitaux mobiliers.\n14) Les intérêts des avances faites aux\nsociétés au moyen d’endossements\nde bordereaux de nantissement de\nstock.\n15) Les revenus des institutions\nmutualistes ou coopératives\nd’épargne et de crédits pour leurs\nopérations de collecte de l’épargne\net de distribution du crédit, ainsi que\nles rémunérations des parts sociales\nde leurs membres ou clients.\n16) Les revenus distribués par l’institut\nd’émission de la monnaie.\nSection 2 - Base imposable - Fait générateur\nSous-section 1 - Revenus des\ncréances"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "134(12) cumulatively requires subsidiary Burkina seat and >=20%; issue/continuous registration is alternative to >=two consecutive years' registered holding."
+    },
+    {
+      "id": "C27",
+      "writer_rule": "Receivable tax base is gross interest/arrears/products; creditor exclusively bears tax despite contrary contractual clause.",
+      "article": "135",
+      "cited_pages": [
+        76
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 135,
+          "exact_extracted_text": "Art.135.- L’impôt est liquidé sur le\nmontant brut des intérêts, arrérages et\ntous autres produits des valeurs désignés\nà l’article 129.\nL’impôt est à la charge exclusive du\ncréancier, nonobstant toute clause\ncontraire entre les parties contractantes.\nSous-section 2 - Revenus de valeurs\nmobilières"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "135 gross base and exclusive creditor burden are explicit; no assumed net-payment gross-up is introduced."
+    },
+    {
+      "id": "C28",
+      "writer_rule": "Securities income can be taxable without being paid out of profits; dividend/board bases trace deliberations, borrowing income is distributed amount, premium is repayment less issue basis, other distributions use administration elements.",
+      "article": "136-137",
+      "cited_pages": [
+        76
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 136,
+          "exact_extracted_text": "Art.136.- L’impôt est dû, que les sommes\nou valeurs attribuées soient ou non\nprélevées sur les bénéfices."
+        },
+        {
+          "article": 137,
+          "exact_extracted_text": "Art.137.- La base d’imposition est\ndéterminée :\n• 1° pour les actions, par les\ndividendes fixés d’après les\ndélibérations des assemblées\ngénérales d’actionnaires ou des\nconseils d’administration, les\ncomptes rendus ou tous autres\ndocuments analogues ;\n• 2° pour les obligations ou\nemprunts, par l’intérêt ou le revenu\ndistribué dans l’année ;\n• 3° pour les primes de\nremboursement, par la différence\nentre la somme remboursée et\ncelle résultant de l’application du\ntaux d’émission des emprunts ;\n• 4° pour les rémunérations de\nl’administrateur général ou\ndes membres des conseils\nd’administration des sociétés par\nles délibérations des assemblées\ngénérales d’actionnaires ou des\nconseils d’administration, les\ncomptes rendus ou tous autres\ndocuments analogues ;\n• 5° pour les autres revenus ayant le\ncaractère de revenus distribués, par\ntous les éléments déterminés par\nl’Administration."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "136 says profits origin irrelevant; 137 gives distinct dividend, borrowing, premium, administrator and other-distribution bases."
+    },
+    {
+      "id": "C29",
+      "writer_rule": "Redemption premium issue basis uses single issue rate or weighted issue average; unresolved variable issue uses prior31December situation; fallback20times annual stipulated interest, absent interest estimated declaration. Specialist issue-basis execution held.",
+      "article": "138",
+      "cited_pages": [
+        76,
+        77
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 138,
+          "exact_extracted_text": "Art.138.- 1) Lorsque les obligations, effets\npublics et tous autres titres d’emprunts,\ndont les primes de remboursement sont\nassujetties à l’impôt sur le revenu des\ncapitaux mobiliers, auront été émis à un\ntaux unique, ce taux servira de base à la\nliquidation du droit sur les primes.\n2) Si le taux d’émission a varié, il est\ndéterminé, pour chaque emprunt, par\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n77\nune moyenne établie en divisant par\nle nombre de titres correspondant à\ncet emprunt le montant de l’emprunt\ntotal, sous la seule déduction des\narrérages courus au moment de\nchaque vente.\n3) À l’égard des emprunts dont\nl’émission faite à des taux variables\nn’est pas déterminée, la moyenne\nest établie d’après la situation de\nl’emprunt au 31 décembre de l’année\nqui a précédé celle du tirage.\n4) Lorsque le taux ne peut pas être établi\nconformément aux dispositions des\nparagraphes précédents, ce taux est\nreprésenté par un capital formé de\nvingt (20) fois l’intérêt annuel stipulé\nlors de l’émission au profit du porteur\ndu titre.\n5) À défaut de stipulation d’intérêt,\nil est pourvu à la fixation du taux\nd’émission par une déclaration\nestimative faite dans la forme prévue\npar le présent code.\nSous-section 3 - Fait générateur"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "138(1)-(5) supplies single issue basis, total-less-accrued-interest divided by titles average, prior-31-December fallback, 20-times interest, then estimated declaration; specialist execution remains held."
+    },
+    {
+      "id": "C30",
+      "writer_rule": "Payment in any manner or interest debit/credit is tax point; dividend deemed payment maximum9months after close subject to competent-court extension under cited OHADA146.",
+      "article": "139",
+      "cited_pages": [
+        77
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 139,
+          "exact_extracted_text": "Art.139.- (Loi n°042-2024/ALT du\n23 décembre 2024 art. 16) Le fait\ngénérateur et l’exigibilité sont constitués\npar :\n• le paiement des revenus imposés,\nde quelque manière qu’il soit\neffectué. Pour le cas particulier\ndes dividendes, le paiement est\nréputé intervenir dans un délai\nmaximum de neuf (09) mois à\ncompter de la clôture de l’exercice\nsous réserve d’une prolongation\naccordée par la juridiction\ncompétente conformément aux\ndispositions de l’article 146 de\nl’Acte uniforme relatif au droit\ndes sociétés commerciales et du\ngroupement d’intérêt économique\n(AUDSCGIE) ;\n• l’inscription des intérêts au débit\nou au crédit d’un compte.\nSection 3 -Taux de l’impôt"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "139 provides payment by any means and interest debit/credit; dividend maximum nine months after close with court extension cross-reference retained."
+    },
+    {
+      "id": "C31",
+      "writer_rule": "Banks withhold and pay on bordereaux for interest/products paid or debit/credited; debt procedures depend on statutory payer/recipient route.",
+      "article": "142-143",
+      "cited_pages": [
+        78
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 142,
+          "exact_extracted_text": "Art.142.- L’impôt est payé par les\nredevables, sur états, bordereaux\nou déclarations dans les conditions,\nformes et délais fixés par la présente\nsous-section.\nA. Banques et établissements\nfinanciers"
+        },
+        {
+          "article": 143,
+          "exact_extracted_text": "Art.143.- L’impôt est retenu à la source\net acquitté sur bordereaux lorsqu’il\ns’applique à des intérêts ou autres\nproduits payés ou inscrits par les banques\nau crédit ou au débit d’un compte."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "142 introduces route-specific conditions; 143 source withholding/bordereaux applies to bank paid/posted interest."
+    },
+    {
+      "id": "C32",
+      "writer_rule": "Banks/financial institutions keep special record of taxable-account holder/account number, taxable interest and posting date; tax established at quarter end.",
+      "article": "144",
+      "cited_pages": [
+        78
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 144,
+          "exact_extracted_text": "Art.144.- Les banques et établissements\nfinanciers doivent tenir un état spécial\nsur lequel sont indiqués dans des\ncolonnes distinctes :\n• l’identité du titulaire de tout\ncompte à intérêts passibles de\nl’impôt et le numéro du compte ;\n• le montant des intérêts imposables ;\n• la date de leur inscription au\ncompte.\nLe montant de l’impôt que doit acquitter\nle redevable est établi à la fin de chaque\ntrimestre d’après les énonciations portées\nsur l’état spécial."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "144 special statement has holder/account, taxable interest and posting date; assessment at each quarter end."
+    },
+    {
+      "id": "C33",
+      "writer_rule": "Competent tax receipt office receives certified bordereau of total taxable sums and tax by20monthfollowing each civilquarter; tax paid immediately.",
+      "article": "145",
+      "cited_pages": [
+        78
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 145,
+          "exact_extracted_text": "Art.145.- Le redevable dépose à la\nrecette des impôts compétente, au\nplus tard le 20 du mois qui suit chaque\ntrimestre civil, un bordereau certifié\nfaisant connaître :\n• le total des sommes à raison\ndesquelles l’impôt est dû ;\n• le montant de l’impôt exigible qui\nest immédiatement acquitté."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "145 certified totals bordereau is due no later than 20th after civil quarter; tax immediately paid."
+    },
+    {
+      "id": "C34",
+      "writer_rule": "Commercial person opening product accounts can request DGI permission for arts144145 arrangement; not automatic quarterly election.",
+      "article": "146",
+      "cited_pages": [
+        78
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 146,
+          "exact_extracted_text": "Art.146.- Toute personne physique\nou morale exerçant une activité\ncommerciale et qui ouvre des comptes\npour l’inscription des produits visés par\nl’article 129 peut, sur sa demande, être\nautorisée à bénéficier des dispositions\ndes articles 144 et 145, à charge de\nse conformer à toutes les prescriptions\nqui y sont contenues. La demande\nd’autorisation est adressée au Directeur\ngénéral des impôts qui statue.\nB. Autres redevables"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "146 requires request and DGI authorisation before commercial persons obtain 144/145 route; all prescriptions continue."
+    },
+    {
+      "id": "C35",
+      "writer_rule": "Other natural/legal persons with seat or PE in Burkina paying OR receiving taxable interest must withhold/pay on the administration-model return at their assigned tax receiver, without overriding arts. 144–146.",
+      "article": "147",
+      "cited_pages": [
+        78,
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 147,
+          "exact_extracted_text": "Art.147.- Toute personne physique\nou morale, autre que celle énoncée à\nl’article 144, ayant son siège social ou un\nétablissement stable au Burkina Faso, qui\npaie des intérêts donnant lieu à l’impôt\nréglementé par le présent chapitre ou qui\nreçoit des intérêts donnant ouverture au\nmême impôt, retient obligatoirement cet\nimpôt et le paie sur déclaration souscrite,\nau moyen d’un formulaire conforme au\nmodèle de l’administration fiscale, à la\nrecette des impôts de la direction de\nrattachement.\nCette déclaration est déposée et l’impôt\nest payé avant le 30 avril de l’année qui\nsuit la clôture de l’exercice. À l’appui de\ncette déclaration doit être joint un état\nfaisant apparaître le total des intérêts\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n79\net autres produits payés ou reçus au\ncours de l’exercice donnant ouverture\nà l’impôt.\nLe présent article ne peut faire échec aux\nrègles posées par les articles 144 à 146."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "147 covers payers OR recipients outside 144 with Burkina seat/PE; statute requires withholding and prescribed-form payment to assigned receiver."
+    },
+    {
+      "id": "C36",
+      "writer_rule": "Art. 147 return and payment are before 30 April following the closing year; attach total taxable interest/products paid or received during the period.",
+      "article": "147",
+      "cited_pages": [
+        78,
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 147,
+          "exact_extracted_text": "Art.147.- Toute personne physique\nou morale, autre que celle énoncée à\nl’article 144, ayant son siège social ou un\nétablissement stable au Burkina Faso, qui\npaie des intérêts donnant lieu à l’impôt\nréglementé par le présent chapitre ou qui\nreçoit des intérêts donnant ouverture au\nmême impôt, retient obligatoirement cet\nimpôt et le paie sur déclaration souscrite,\nau moyen d’un formulaire conforme au\nmodèle de l’administration fiscale, à la\nrecette des impôts de la direction de\nrattachement.\nCette déclaration est déposée et l’impôt\nest payé avant le 30 avril de l’année qui\nsuit la clôture de l’exercice. À l’appui de\ncette déclaration doit être joint un état\nfaisant apparaître le total des intérêts\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n79\net autres produits payés ou reçus au\ncours de l’exercice donnant ouverture\nà l’impôt.\nLe présent article ne peut faire échec aux\nrègles posées par les articles 144 à 146."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "147 uses avant le 30 avril after close and supporting total paid/received; last sentence protects 144-146."
+    },
+    {
+      "id": "C37",
+      "writer_rule": "The beneficiary of taxable interest/products from non-established companies/establishments OR private individuals pays the domicile tax service no later than 30 April after the year received.",
+      "article": "148",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 148,
+          "exact_extracted_text": "Art.148.- L’impôt applicable aux intérêts\net autres produits reçus de sociétés ou\nétablissements non installés au Burkina\nFaso ou de particuliers est payé par le\nbénéficiaire au service des impôts de\nson domicile, au plus tard le 30 avril de\nl’année suivant celle de l’encaissement.\nCette déclaration doit être déposée au\nnom du créancier des intérêts, dans les\nmêmes délais, par le notaire en l’étude\nduquel les intérêts ont été payés.\nÀ l’appui de ce paiement, il est déposé\nune déclaration faisant connaître :\n• l’origine de la créance notamment\nles actes notariés ou sous seing\nprivé, avec indication de leur date,\nenregistrement et jugement ;\n• le montant des intérêts et autres\nproduits encaissés au cours de\nl’année écoulée ;\n• le montant de l’impôt exigible ;\n• la période à laquelle\ns’appliquent les intérêts payés et,\néventuellement, le montant des\nintérêts non payés aux échéances."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "148 covers interest/products from non-established entities OR private individuals; beneficiary domicile payment no later than 30 April after receipt year."
+    },
+    {
+      "id": "C38",
+      "writer_rule": "The declaration identifies claim origin and instruments, dates, registration and judgment, amounts received, tax, interest period and unpaid interest if relevant.",
+      "article": "148",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 148,
+          "exact_extracted_text": "Art.148.- L’impôt applicable aux intérêts\net autres produits reçus de sociétés ou\nétablissements non installés au Burkina\nFaso ou de particuliers est payé par le\nbénéficiaire au service des impôts de\nson domicile, au plus tard le 30 avril de\nl’année suivant celle de l’encaissement.\nCette déclaration doit être déposée au\nnom du créancier des intérêts, dans les\nmêmes délais, par le notaire en l’étude\nduquel les intérêts ont été payés.\nÀ l’appui de ce paiement, il est déposé\nune déclaration faisant connaître :\n• l’origine de la créance notamment\nles actes notariés ou sous seing\nprivé, avec indication de leur date,\nenregistrement et jugement ;\n• le montant des intérêts et autres\nproduits encaissés au cours de\nl’année écoulée ;\n• le montant de l’impôt exigible ;\n• la période à laquelle\ns’appliquent les intérêts payés et,\néventuellement, le montant des\nintérêts non payés aux échéances."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "148 requires debt origin and instruments/date/registration/judgment, amounts received, tax, periods and unpaid interest where relevant."
+    },
+    {
+      "id": "C39",
+      "writer_rule": "The notary in whose office interest was paid files the declaration in the creditor’s name within the same deadline.",
+      "article": "148",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 148,
+          "exact_extracted_text": "Art.148.- L’impôt applicable aux intérêts\net autres produits reçus de sociétés ou\nétablissements non installés au Burkina\nFaso ou de particuliers est payé par le\nbénéficiaire au service des impôts de\nson domicile, au plus tard le 30 avril de\nl’année suivant celle de l’encaissement.\nCette déclaration doit être déposée au\nnom du créancier des intérêts, dans les\nmêmes délais, par le notaire en l’étude\nduquel les intérêts ont été payés.\nÀ l’appui de ce paiement, il est déposé\nune déclaration faisant connaître :\n• l’origine de la créance notamment\nles actes notariés ou sous seing\nprivé, avec indication de leur date,\nenregistrement et jugement ;\n• le montant des intérêts et autres\nproduits encaissés au cours de\nl’année écoulée ;\n• le montant de l’impôt exigible ;\n• la période à laquelle\ns’appliquent les intérêts payés et,\néventuellement, le montant des\nintérêts non payés aux échéances."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "148 notary files in creditor name within same period when paid in notary office."
+    },
+    {
+      "id": "C40",
+      "writer_rule": "Debt repayment or release of security with unpaid interest requires corresponding tax on arrears; judicial debt reductions and repayments by distribution or amicable/judicial contribution are excepted.",
+      "article": "149",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 149,
+          "exact_extracted_text": "Art.149.- Dans tous les cas où il est\nprocédé au remboursement total ou\npartiel d’une créance comportant\ndes intérêts impayés, l’impôt doit être\nacquitté à due concurrence sur les\narriérés d’intérêts. Il en est de même s’il\ny a simplement mainlevée de garanties\nprises.\nCette disposition ne s’applique pas aux\nréductions de dettes judiciairement\nconstatées, ni aux remboursements par\nvoie d’ordre ou de contribution amiable\nou judiciaire."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "149 requires arrears tax on whole/partial principal repayment or security release; judicial debt reductions and order/amicable/judicial contribution repayment exceptions retained."
+    },
+    {
+      "id": "C41",
+      "writer_rule": "If the interest payer is not personally responsible for tax, send an annual beneficiary name/forename/address/amount report in duplicate to the residence tax service by 30 April for sums strictly over XOF 50,000 per beneficiary/year.",
+      "article": "150",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 150,
+          "exact_extracted_text": "Art.150.- Dans tous les cas où le\npaiement de l’impôt ne leur incombe\npas personnellement, les personnes\nphysiques ou morales qui versent des\nintérêts, arrérages et tous autres produits\nde créances de toute nature, dépôts,\ncautionnements et comptes courants,\nsont tenues de déclarer, au plus tard\nle 30 avril de chaque année, les nom,\nprénom(s) et adresse des bénéficiaires\nainsi que le montant des sommes versées\npendant l’année précédente lorsque\nces sommes dépassent annuellement\ncinquante mille (50.000) francs CFA par\nbénéficiaire.\nCette déclaration doit être déposée en\ndouble exemplaire au service des impôts\ndu lieu de leur résidence.\nSous-section 2 - Revenus des valeurs\nmobilières"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "150 only where payer is not personally responsible; strict >50,000 per beneficiary/year, prior-year statement, duplicate and residence service by 30 April retained."
+    },
+    {
+      "id": "C42",
+      "writer_rule": "Art. 131 distributing companies withhold at source and remit to their assigned tax service.",
+      "article": "151",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 151,
+          "exact_extracted_text": "Art.151.- Les sociétés visées à l’article\n131 sont tenues de retenir l’impôt à la\nsource et de le reverser à leur service des\nimpôts de rattachement."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "151 withholding obligation attaches to 131 companies and assigned service."
+    },
+    {
+      "id": "C43",
+      "writer_rule": "Board/shareholder meeting minutes and deliberation extracts are filed within one month of the meeting.",
+      "article": "152",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 152,
+          "exact_extracted_text": "Art.152.- Les comptes rendus et les\nextraits des délibérations des conseils\nd’administration ou des assemblées\ngénérales d’actionnaires sont déposés\ndans le délai d’un mois à compter de\nla date de tenue des réunions de ces\ninstances."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "152 filing within one month of board/shareholder meeting, not one month of dividend payment."
+    },
+    {
+      "id": "C44",
+      "writer_rule": "After annual close, dividend tax is liquidated and remitted within thirty days of mise en paiement, not a universal monthly 20th.",
+      "article": "153",
+      "cited_pages": [
+        79
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 153,
+          "exact_extracted_text": "Art.153.- (Loi n°042-2018/AN du 18\ndécembre 2018 art. 28 ; Loi n°042-\n2024/ALT du 23 décembre 2024 art.\n17) Chaque année, après la clôture\ndes écritures relatives à l’exercice,\nil est procédé à la liquidation et au\nreversement de l’impôt dans les trente\njours de la mise en paiement du\ndividende."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "153 liquidation/remittance within thirty days of dividend mise en paiement after annual close, read with 139; no general monthly 20th imported."
+    },
+    {
+      "id": "C45",
+      "writer_rule": "The supporting redemption schedule includes securities amortised, art. 138 issue basis for premiums, quoted repurchase price if applicable, premiums and the taxable sum.",
+      "article": "154",
+      "cited_pages": [
+        79,
+        80
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 154,
+          "exact_extracted_text": "Art.154.- À l’appui du versement, il est\nremis au receveur compétent, un état\nindiquant :\n• le nombre des titres amortis ;\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n80\n• le taux d’émission de ces titres\ndéterminé conformément à\nl’article 138, s’il s’agit de primes\nde remboursement ;\n• le cas échéant, le prix de rachat en\nbourse de ces mêmes titres ;\n• le montant des primes revenant\naux titres amortis ;\n• la somme sur laquelle la taxe est\nexigible."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "154 schedule's amortised titles, 138 issue basis, applicable repurchase quotation, premiums and taxable sum retained."
+    },
+    {
+      "id": "C46",
+      "writer_rule": "Board office/diverse remuneration of the covered entities: tax due by the 20th of the month following for sums distributed during the preceding quarter. Retain the printed calendar instead of importing the dividend thirty-day rule.",
+      "article": "155, first paragraph",
+      "cited_pages": [
+        80
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 155,
+          "exact_extracted_text": "Art.155.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 32) Pour\nles indemnités de fonction et les\nrémunérations diverses distribuées aux\nmembres du conseil d’administration\ndes sociétés, des établissements publics,\ndes associations, des fondations et autres\nstructures, l’impôt est dû au plus tard le\n20 du mois suivant pour les sommes\nmises en distribution au cours du\ntrimestre précédent.\nPour les remboursements ou\namortissements totaux ou partiels,\nl’impôt est versé au plus tard le 20 du\nmois suivant la mise en paiement de ces\nremboursements.\nToutefois, si une demande d’exonération\na été présentée, l’impôt n’est exigible\nqu’après qu’il ait été statué sur ladite\ndemande."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "155 first paragraph covers listed board-office remuneration and uses 20th following preceding quarter's distributions; general-administrator calendar not invented."
+    },
+    {
+      "id": "C47",
+      "writer_rule": "Total/partial capital repayment or amortisation: tax due by the 20th of the month after mise en paiement; if an exemption application was lodged, tax becomes due after the decision.",
+      "article": "155, second-third paragraphs",
+      "cited_pages": [
+        80
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 155,
+          "exact_extracted_text": "Art.155.- (loi n°029-2022/ALT du\n24 décembre 2022 art. 32) Pour\nles indemnités de fonction et les\nrémunérations diverses distribuées aux\nmembres du conseil d’administration\ndes sociétés, des établissements publics,\ndes associations, des fondations et autres\nstructures, l’impôt est dû au plus tard le\n20 du mois suivant pour les sommes\nmises en distribution au cours du\ntrimestre précédent.\nPour les remboursements ou\namortissements totaux ou partiels,\nl’impôt est versé au plus tard le 20 du\nmois suivant la mise en paiement de ces\nremboursements.\nToutefois, si une demande d’exonération\na été présentée, l’impôt n’est exigible\nqu’après qu’il ait été statué sur ladite\ndemande."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "155 second paragraph uses month following repayment mise en paiement; exemption request defers exigibility until decision."
+    },
+    {
+      "id": "C48",
+      "writer_rule": "General-administrator/board remuneration tax payment is supported by a totalled named schedule certified by legal representatives, with each board member’s amount and domicile/residence.",
+      "article": "156",
+      "cited_pages": [
+        80
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 156,
+          "exact_extracted_text": "Art.156.- (loi n°029-2022/ALT du 24\ndécembre 2022 art. 33) À l’appui\ndu paiement de l’impôt sur les\nrémunérations de l’administrateur\ngénéral, ou des membres des conseils\nd’administration, les sociétés, des\nétablissements publics, des associations,\ndes fondations et autres structures sont\ntenus de déposer un état nominatif\ntotalisé, certifié par leurs représentants\nlégaux et énonçant le montant des\nsommes distribuées à chacun des\nmembres des conseils d’administration\navec l’indication de leur domicile ou de\nleur résidence.\nSection 5 - Imposition des sociétés non résidentes"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "156 covers general administrator/board and requires named totalled representative-certified statement with amount and domicile/residence."
+    },
+    {
+      "id": "C49",
+      "writer_rule": "Professional or ancillary securities-paying intermediaries obtain identity/real domicile before payment/account opening and report net amounts by beneficiary; third-party coupon owners are identified and their list annexed.",
+      "article": "610(1)-(2)",
+      "cited_pages": [
+        260,
+        261
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 610,
+          "exact_extracted_text": "Art.610.- 1)Toute personne physique ou\nmorale qui fait profession de payer des\nintérêts, dividendes, revenus et autres\nproduits de valeurs mobilières ou dont\nla profession comporte à titre accessoire\ndes opérations de cette nature, ne peut\neffectuer de ce chef aucun paiement,\nni ouvrir aucun compte sans exiger du\nrequérant la justification de son identité\net l’indication de son domicile réel.\nElle est en outre tenue de remettre\nau service des impôts compétent le\nrelevé des sommes payées par elle sous\nquelque forme que ce soit. Ce relevé\nindique, pour chaque bénéficiaire, ses\nnom(s), prénom(s), son domicile réel et\nle montant net des sommes perçues à\ncet égard.\nLes mêmes obligations incombent\naux collectivités territoriales pour les\ndividendes et intérêts de leurs propres\nactions, parts ou obligations qu’elles\npaient à des personnes ou sociétés autres\nque celles qui sont chargées du service\nde leurs coupons.\n2) Les coupons présentés sont, sauf\npreuve contraire, réputés propriété\ndu requérant. Dans le cas où celui-ci\nprésente des coupons pour le compte\nde tiers, il a la faculté de remettre\nà l’établissement payeur une liste\nindiquant outre ses nom(s), prénom(s)\fCode général des impôts 2026 261\nLivre 5 - Procédures fiscales Titre 1 - Contrôle de l’impôt\net domicile réel, les nom(s), prénom(s)\net domicile réel des propriétaires\nvéritables ainsi que le montant des\ncoupons appartenant à chacun d’eux.\nL’établissement payeur annexe cette liste\nau relevé en exécution du deuxième\nalinéa du paragraphe 1 du présent\narticle.\nLes livres, pièces et documents de nature\nà permettre la vérification des relevés\nprévus au présent article qui ne sont pas\nsoumis à un délai de conservation plus\nétendu doivent être conservés jusqu’à\nla fin de la quatrième année suivant\ncelle au cours de laquelle les paiements\ncorrespondants ont été effectués."
+        }
+      ],
+      "assessment": "repair required",
+      "finding_id": "F01",
+      "reviewer_note": "REPAIR F01: 610(1) identity/reporting statement is correct, but (2) presumes presenter owner absent contrary proof and permits (il a la faculté) third-party true-owner list. Annexation is obligatory if that list is supplied. Draft/ledger wrongly make provision of that list unconditional."
+    },
+    {
+      "id": "C50",
+      "writer_rule": "Supporting books/documents are kept through the end of the fourth year following the payment year unless longer retention applies.",
+      "article": "610, final paragraph",
+      "cited_pages": [
+        261
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 610,
+          "exact_extracted_text": "Art.610.- 1)Toute personne physique ou\nmorale qui fait profession de payer des\nintérêts, dividendes, revenus et autres\nproduits de valeurs mobilières ou dont\nla profession comporte à titre accessoire\ndes opérations de cette nature, ne peut\neffectuer de ce chef aucun paiement,\nni ouvrir aucun compte sans exiger du\nrequérant la justification de son identité\net l’indication de son domicile réel.\nElle est en outre tenue de remettre\nau service des impôts compétent le\nrelevé des sommes payées par elle sous\nquelque forme que ce soit. Ce relevé\nindique, pour chaque bénéficiaire, ses\nnom(s), prénom(s), son domicile réel et\nle montant net des sommes perçues à\ncet égard.\nLes mêmes obligations incombent\naux collectivités territoriales pour les\ndividendes et intérêts de leurs propres\nactions, parts ou obligations qu’elles\npaient à des personnes ou sociétés autres\nque celles qui sont chargées du service\nde leurs coupons.\n2) Les coupons présentés sont, sauf\npreuve contraire, réputés propriété\ndu requérant. Dans le cas où celui-ci\nprésente des coupons pour le compte\nde tiers, il a la faculté de remettre\nà l’établissement payeur une liste\nindiquant outre ses nom(s), prénom(s)\fCode général des impôts 2026 261\nLivre 5 - Procédures fiscales Titre 1 - Contrôle de l’impôt\net domicile réel, les nom(s), prénom(s)\net domicile réel des propriétaires\nvéritables ainsi que le montant des\ncoupons appartenant à chacun d’eux.\nL’établissement payeur annexe cette liste\nau relevé en exécution du deuxième\nalinéa du paragraphe 1 du présent\narticle.\nLes livres, pièces et documents de nature\nà permettre la vérification des relevés\nprévus au présent article qui ne sont pas\nsoumis à un délai de conservation plus\nétendu doivent être conservés jusqu’à\nla fin de la quatrième année suivant\ncelle au cours de laquelle les paiements\ncorrespondants ont été effectués."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "610 last paragraph preserves longer duties and requires records through end of fourth year following payment year."
+    },
+    {
+      "id": "C51",
+      "writer_rule": "Covered habitual securities custodians notify the tax service of account opening/closure on the prescribed form, with holder name/address, within the first ten days of the following month; a receipt is issued.",
+      "article": "611",
+      "cited_pages": [
+        261
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 611,
+          "exact_extracted_text": "Art.611.- Les sociétés, agents de change,\nbanquiers, escompteurs, officiers publics\nou ministériels, associations et toutes\npersonnes recevant habituellement en\ndépôt des valeurs mobilières sont tenus\nd’adresser au service des impôts, avis\nde l’ouverture et de la clôture de tout\ncompte de dépôt de titres, valeurs ou\nespèces, comptes d’avances, comptes\ncourants ou assimilés.\nLes avis sont établis sur des formulaires\ndont le modèle est arrêté par\nl’administration ; ils indiquent les nom(s),\nprénom(s) et adresses des titulaires des\ncomptes. Ils sont envoyés dans les dix\n(10) premiers jours du mois qui suit\ncelui de l’ouverture ou de la clôture des\ncomptes. Il en est donné récépissé.\nChaque année, avant le 1er février,\nles établissements visés au premier\nparagraphe du présent article sont tenus\nd’adresser au service des impôts le relevé\ndes coupons portés au cours de l’année\nprécédente, au crédit des titulaires des\ncomptes de dépôt de titres, valeurs ou\nespèces, comptes d’avances, comptes\ncourants ou assimilés.\nLes contraventions aux dispositions du\nprésent article sont punies d’une amende\nfiscale de vingt mille (20.000) francs\nCFA pour chaque nature d’omission ou\nd’inexactitude."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "611 covered habitual depositaries notify all listed accounts on prescribed form within first ten days after opening/closure month and receive receipt."
+    },
+    {
+      "id": "C52",
+      "writer_rule": "The same institutions send the previous year’s credited-coupon schedule before 1 February.",
+      "article": "611",
+      "cited_pages": [
+        261
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 611,
+          "exact_extracted_text": "Art.611.- Les sociétés, agents de change,\nbanquiers, escompteurs, officiers publics\nou ministériels, associations et toutes\npersonnes recevant habituellement en\ndépôt des valeurs mobilières sont tenus\nd’adresser au service des impôts, avis\nde l’ouverture et de la clôture de tout\ncompte de dépôt de titres, valeurs ou\nespèces, comptes d’avances, comptes\ncourants ou assimilés.\nLes avis sont établis sur des formulaires\ndont le modèle est arrêté par\nl’administration ; ils indiquent les nom(s),\nprénom(s) et adresses des titulaires des\ncomptes. Ils sont envoyés dans les dix\n(10) premiers jours du mois qui suit\ncelui de l’ouverture ou de la clôture des\ncomptes. Il en est donné récépissé.\nChaque année, avant le 1er février,\nles établissements visés au premier\nparagraphe du présent article sont tenus\nd’adresser au service des impôts le relevé\ndes coupons portés au cours de l’année\nprécédente, au crédit des titulaires des\ncomptes de dépôt de titres, valeurs ou\nespèces, comptes d’avances, comptes\ncourants ou assimilés.\nLes contraventions aux dispositions du\nprésent article sont punies d’une amende\nfiscale de vingt mille (20.000) francs\nCFA pour chaque nature d’omission ou\nd’inexactitude."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "611 annual credited-coupon schedule deadline is before 1 February, not by end February or generic IRCM remittance date."
+    },
+    {
+      "id": "C53",
+      "writer_rule": "Statutory authorised payment routes include cash, postal mandate, cheque, transfer and authorised electronic means; a regulatory receipt is issued and amount/date/receipt number recorded on the declaration. Current portal implementation is held.",
+      "article": "671-672",
+      "cited_pages": [
+        286
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 671,
+          "exact_extracted_text": "Art.671.- (Loi n°042-2018/AN du 18\ndécembre 2018 art. 66) Les impôts,\ndroits, taxes, prélèvements, retenues,\nredevances, contributions, majorations,\namendes et pénalités de toute nature\npeuvent être acquittés soit en numéraire\naux caisses des receveurs de la Direction\ngénérale des impôts, soit par mandat\nposte, soit par chèques bancaires ou\npostaux, soit par virements bancaires,\nsoit par procédés électroniques dans les\nconditions fixées par arrêté du ministre\nen charge des finances ou par tout autre\nmoyen autorisé par les textes en vigueur.\nToutefois, pour les chèques bancaires ou\npostaux, l’agent chargé du recouvrement\npeut en exiger la certification préalable.\nEn cas d’envoi par poste, les chèques sont\naccompagnés des actes, déclarations,\navis d’imposition, sommations ou\ntoutes autres pièces nécessaires à la\nliquidation de l’impôt ou à l’imputation\ndu versement.\nLa justification de la libération dans les\ndélais prescrits est établie par la date de\nla poste lorsqu’il s’agit d’un règlement\npar mandat, par la date d’inscription\nau crédit du compte ouvert au nom du\nreceveur compétent, lorsqu’il s’agit d’un\nrèglement effectué par virement direct au\nCentre de chèques postaux (CCP) ou par\nordre de virement donné à un organisme\nbancaire, par la date de la poste ou celle\ndu dépôt au service des impôts lorsqu’il\ns’agit de règlement par chèque bancaire\nou postal accompagnant les déclarations\nou adressés séparément.\nTout paiement, quelle qu’en soit la\nforme, donne lieu à la délivrance d’une\nquittance réglementaire."
+        },
+        {
+          "article": 672,
+          "exact_extracted_text": "Art.672.- Tout paiement doit faire l’objet\nde mention sur les avis d’impositions\net les déclarations. Cette mention doit\nindiquer le montant du paiement total\nou partiel effectué, ainsi que sa date et\nle numéro de sa quittance."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "671 authorises payment means subject to stated electronic conditions and statutory receipt; 672 requires amount/date/receipt mention. Portal workflow explicitly unverified."
+    },
+    {
+      "id": "C54",
+      "writer_rule": "Late IRCM payment: 10% of due sums plus 1% per month or fraction; these are not the ordinary IS sanctions.",
+      "article": "765(1)",
+      "cited_pages": [
+        305,
+        306
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 765,
+          "exact_extracted_text": "Art.765.- 1)Tout retard dans le paiement\nde l’impôt sur le revenu des capitaux\fCode général des impôts 2026 306\nTitre 4 - Sanctions Livre 5 - Procédures fiscales\nmobiliers entraîne l’application aux\nsommes exigibles d’une pénalité de\n10 % augmentée d’un intérêt liquidé au\ntaux de 1 % par mois ou fraction de mois\nde retard.\n2) Toute inexactitude ou omission\nentraînant un préjudice pour leTrésor\npublic donne lieu au paiement d’une\npénalité égale à 100 % des droits\nsimples exigibles, sans pouvoir être\ninférieure à vingt-cinq mille (25.000)\nfrancs CFA.\n3) Toute déclaration inexacte concernant\nla qualification des rémunérations\nversées aux administrateurs visées\nau paragraphe 11 de l’article 134\ndonne ouverture à une amende égale\nà 200 % de l’impôt éludé.\n4) Toute autre contravention en matière\nd’impôt sur le revenu des capitaux\nmobiliers est punie d’une amende de\nvingt-cinq mille (25.000) francs CFA."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "765(1) late IRCM: 10% plus 1% per month or fraction, not IS or payroll sanction."
+    },
+    {
+      "id": "C55",
+      "writer_rule": "Inaccuracy/omission prejudicing the Treasury: 100% of simple tax due, minimum XOF 25,000.",
+      "article": "765(2)",
+      "cited_pages": [
+        306
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 765,
+          "exact_extracted_text": "Art.765.- 1)Tout retard dans le paiement\nde l’impôt sur le revenu des capitaux\fCode général des impôts 2026 306\nTitre 4 - Sanctions Livre 5 - Procédures fiscales\nmobiliers entraîne l’application aux\nsommes exigibles d’une pénalité de\n10 % augmentée d’un intérêt liquidé au\ntaux de 1 % par mois ou fraction de mois\nde retard.\n2) Toute inexactitude ou omission\nentraînant un préjudice pour leTrésor\npublic donne lieu au paiement d’une\npénalité égale à 100 % des droits\nsimples exigibles, sans pouvoir être\ninférieure à vingt-cinq mille (25.000)\nfrancs CFA.\n3) Toute déclaration inexacte concernant\nla qualification des rémunérations\nversées aux administrateurs visées\nau paragraphe 11 de l’article 134\ndonne ouverture à une amende égale\nà 200 % de l’impôt éludé.\n4) Toute autre contravention en matière\nd’impôt sur le revenu des capitaux\nmobiliers est punie d’une amende de\nvingt-cinq mille (25.000) francs CFA."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "765(2) prejudice to Treasury: 100% simple duties, minimum 25,000."
+    },
+    {
+      "id": "C56",
+      "writer_rule": "Incorrect classification of art. 134(11) administrator remuneration: 200% of evaded tax.",
+      "article": "765(3)",
+      "cited_pages": [
+        306
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 765,
+          "exact_extracted_text": "Art.765.- 1)Tout retard dans le paiement\nde l’impôt sur le revenu des capitaux\fCode général des impôts 2026 306\nTitre 4 - Sanctions Livre 5 - Procédures fiscales\nmobiliers entraîne l’application aux\nsommes exigibles d’une pénalité de\n10 % augmentée d’un intérêt liquidé au\ntaux de 1 % par mois ou fraction de mois\nde retard.\n2) Toute inexactitude ou omission\nentraînant un préjudice pour leTrésor\npublic donne lieu au paiement d’une\npénalité égale à 100 % des droits\nsimples exigibles, sans pouvoir être\ninférieure à vingt-cinq mille (25.000)\nfrancs CFA.\n3) Toute déclaration inexacte concernant\nla qualification des rémunérations\nversées aux administrateurs visées\nau paragraphe 11 de l’article 134\ndonne ouverture à une amende égale\nà 200 % de l’impôt éludé.\n4) Toute autre contravention en matière\nd’impôt sur le revenu des capitaux\nmobiliers est punie d’une amende de\nvingt-cinq mille (25.000) francs CFA."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "765(3) inaccurate qualification of administrator payments under 134(11): 200% evaded tax."
+    },
+    {
+      "id": "C57",
+      "writer_rule": "Other IRCM contravention: XOF 25,000 fine.",
+      "article": "765(4)",
+      "cited_pages": [
+        306
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 765,
+          "exact_extracted_text": "Art.765.- 1)Tout retard dans le paiement\nde l’impôt sur le revenu des capitaux\fCode général des impôts 2026 306\nTitre 4 - Sanctions Livre 5 - Procédures fiscales\nmobiliers entraîne l’application aux\nsommes exigibles d’une pénalité de\n10 % augmentée d’un intérêt liquidé au\ntaux de 1 % par mois ou fraction de mois\nde retard.\n2) Toute inexactitude ou omission\nentraînant un préjudice pour leTrésor\npublic donne lieu au paiement d’une\npénalité égale à 100 % des droits\nsimples exigibles, sans pouvoir être\ninférieure à vingt-cinq mille (25.000)\nfrancs CFA.\n3) Toute déclaration inexacte concernant\nla qualification des rémunérations\nversées aux administrateurs visées\nau paragraphe 11 de l’article 134\ndonne ouverture à une amende égale\nà 200 % de l’impôt éludé.\n4) Toute autre contravention en matière\nd’impôt sur le revenu des capitaux\nmobiliers est punie d’une amende de\nvingt-cinq mille (25.000) francs CFA."
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "765(4) residual IRCM contravention fine 25,000."
+    },
+    {
+      "id": "C58",
+      "writer_rule": "Art. 610(1)/611 infractions: XOF 20,000 per omission/inaccuracy; art. 610 last-paragraph record-retention breach: XOF 500,000. No automatic cumulation is inferred.",
+      "article": "766",
+      "cited_pages": [
+        306
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 766,
+          "exact_extracted_text": "Art.766.- En matière de déclaration des\nrevenus mobiliers :\n• les infractions aux dispositions du\nparagraphe 1 de l’article 610 et\nde l’article 611 sont punies d’une\namende fiscale de vingt mille\n(20.000) francs CFA par omission\nou inexactitude ;\n• toute infraction aux dispositions\ndu dernier alinéa de l’article 610\nest sanctionnée par une amende\nde cinq cent mille (500.000) francs\nCFA.\nSous-section 5 - Retenues et\nprélèvements à la source\nA. Prélèvement à la source"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "766 first bullet refers 610(1)/611: 20,000 per omission/inaccuracy; final-paragraph retention breach 500,000. No stacking assumption."
+    },
+    {
+      "id": "C59",
+      "writer_rule": "Rates are subject to conventions. Art. 148 foreign-interest self-payment does not prove a universal foreign-dividend/residence framework; the non-resident company PE distribution job remains separately held.",
+      "article": "140, 148, 157-159",
+      "cited_pages": [
+        77,
+        79,
+        80,
+        81
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 140,
+          "exact_extracted_text": "Art.140.- Sous réserve des conventions\ninternationales relatives aux doubles\nimpositions, le taux de l’impôt sur le\nrevenu des capitaux mobiliers est le\nsuivant :\n1) Pour les revenus des créances, et pour\ntous les revenus non soumis à un taux\nspécifique, le taux de l’impôt est fixé\nà 25 %.\nIl est réduit de moitié pour les intérêts,\narrérages et tous autres produits des\ncomptes de dépôt et des comptes\ncourants, visés à l’article 129 ouverts\ndans les écritures d’une banque, d’un\nétablissement financier, d’un agent\nde change, d’un courtier en valeurs\nmobilières, du Trésor public et des\ncaisses de crédit agricole.\n2) Pour les revenus de valeurs\nmobilières, le taux de l’impôt est fixé\nà :\n• 6 % pour les intérêts, arrérages\net autres produits des obligations\némises au Burkina Faso ;\n• 12,5 % pour tous autres produits,\nsous réserve de la réduction\ntemporaire édictée par l’article\n141."
+        },
+        {
+          "article": 148,
+          "exact_extracted_text": "Art.148.- L’impôt applicable aux intérêts\net autres produits reçus de sociétés ou\nétablissements non installés au Burkina\nFaso ou de particuliers est payé par le\nbénéficiaire au service des impôts de\nson domicile, au plus tard le 30 avril de\nl’année suivant celle de l’encaissement.\nCette déclaration doit être déposée au\nnom du créancier des intérêts, dans les\nmêmes délais, par le notaire en l’étude\nduquel les intérêts ont été payés.\nÀ l’appui de ce paiement, il est déposé\nune déclaration faisant connaître :\n• l’origine de la créance notamment\nles actes notariés ou sous seing\nprivé, avec indication de leur date,\nenregistrement et jugement ;\n• le montant des intérêts et autres\nproduits encaissés au cours de\nl’année écoulée ;\n• le montant de l’impôt exigible ;\n• la période à laquelle\ns’appliquent les intérêts payés et,\néventuellement, le montant des\nintérêts non payés aux échéances."
+        },
+        {
+          "article": 157,
+          "exact_extracted_text": "Art.157.- (Loi n°051-2019/AN du 5\ndécembre 2019 art. 16) Sous réserve des\nconventions internationales relatives aux\ndoubles impositions, les sociétés non\nrésidentes au Burkina Faso mais qui y\ndisposent d’un établissement stable au\nsens de l’article 47, doivent acquitter\nl’impôt sur le revenu des capitaux\nmobiliers au Burkina Faso à raison\nd’une quote-part du revenu distribué,\ndéterminée en fonction de l’activité\nqu’elles exercent au Burkina Faso.\nCette quote-part est fixée forfaitairement,\nen ce qui concerne les sociétés visées\nau paragraphe précédent, à 75 % du\nbénéfice réalisé au Burkina Faso, au\ntitre de l’impôt sur les sociétés, y compris\ntous les redressements éventuels qui\npourraient intervenir au titre desdits\nbénéfices. Les pertes subies dans les\nÉtats où la société non résidente a\nété déficitaire ne sont pas admises en\ndéduction."
+        },
+        {
+          "article": 158,
+          "exact_extracted_text": "Art.158.- L’impôt est liquidé sur la\nquotité résultant de l’article précédent,\nau vu d’une déclaration déposée par\nla société au service des impôts de\nrattachement.\nCette déclaration, qui comporte tous\nles éléments nécessaires pour liquider\nl’impôt, est faite dans les mêmes délais\nqu’en matière d’impôt sur les sociétés.\nTout redressement du bénéfice\nimposable à l’impôt sur les sociétés au\ntitre d’une période est pris en compte\nau titre de la même période, pour le\ncalcul des sommes réputées distribuées.\fCode général des impôts 2026\nLivre 1 - Impôts directs et taxes assimilées Titre 1 - Impôts sur le revenu\n81\nDans ce cas, le complément d’impôt\nsur le revenu des capitaux mobiliers,\nmajoré d’un intérêt de 1 % par mois\nou fraction de mois de retard, doit être\npayé spontanément par la société dès\nconfirmation du redressement."
+        },
+        {
+          "article": 159,
+          "exact_extracted_text": "Art.159.- Les contribuables visés aux\narticles précédents peuvent passer en\nfrais généraux le montant de l’impôt sur\nle revenu des capitaux mobiliers acquitté\nau Burkina Faso, sans qu’il en résulte\nd’imposition supplémentaire au titre de\ndistribution indirecte.\nChapitre 7 -Taxes sur les plus-values\nSection 1 -Taxe sur les plus-values immobilières (TPVI)\nSous-section 1 - Champ\nd’application"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "140 convention reservation verified; 148 does not establish foreign-dividend/residence regime. 157-159 separate nonresident-company PE distribution provisions were read and remain outside execution."
+    },
+    {
+      "id": "C60",
+      "writer_rule": "The corporate IS credit stays in bf-corporate-tax; it is not an individual credit or IRCM exemption. No duplicate corporate-credit computation is introduced here.",
+      "article": "93-94",
+      "cited_pages": [
+        45
+      ],
+      "writer_anchors_verbatim": true,
+      "reviewed_full_clauses_and_neighbours": true,
+      "decisive_full_source_clauses": [
+        {
+          "article": 93,
+          "exact_extracted_text": "Art.93.- Un crédit d’impôt,\ncorrespondant à la retenue à la source\nsur les revenus de capitaux mobiliers\nencaissés par les sociétés et compris\ndans les bénéfices imposables, est\nimputable sur le montant de l’impôt sur\nles sociétés déterminé conformément\naux dispositions de l’article 92."
+        },
+        {
+          "article": 94,
+          "exact_extracted_text": "Art.94.- Lorsque le montant du crédit ne\npeut être imputé, il est reporté sur l’impôt\nsur les sociétés des exercices suivants\nou remboursé si la société cesse son\nactivité.\nIl peut également, à la demande\ndu contribuable, être utilisé pour le\npaiement de tout autre impôt direct\nd’État ou taxes assimilées dont il est par\nailleurs redevable.\nToutefois, en cas d’exonération de\nl’impôt sur les sociétés, le montant des\ncrédits d’impôt résultant des retenues à\nla source au titre de l’impôt sur le revenu\ndes capitaux mobiliers est définitivement\nacquis au Trésor public.\fCode général des impôts 2026\nTitre 1 - Impôts sur le revenu Livre 1 - Impôts directs et taxes assimilées\n46\nSection 5 - Obligations"
+        }
+      ],
+      "assessment": "conditional source fidelity accepted",
+      "finding_id": null,
+      "reviewer_note": "93-94 company credit requires receipts in taxable profits; carryforward/refund/offset and exempt-company Treasury rule remain in preserved corporate paragraph; individual credit not asserted."
+    }
+  ]
+}

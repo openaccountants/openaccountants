@@ -1,0 +1,55 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "rows": [
+      "SC10",
+      "SC11",
+      "SC28"
+    ],
+    "issue": "Known form/web quarterly timing discrepancy is omitted.",
+    "repair": "State the recap declaration deadlines (monthly by the 15th, quarterly by the last day of the following month), the web payment deadlines (first fifteen days or thirty days), and the BNTS/recap simultaneous-payment instruction. Explicitly hold the unresolved 30/31-day interaction and reconciliation with unread current law.",
+    "locator": "cnss-summary.pdf p.2, IMPORTANT; cnss-contributions.html, Délai de paiement; cnss-bnts.pdf p.2, IMPORTANT"
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "rows": [
+      "VAT31"
+    ],
+    "issue": "Verified input-deduction conditions omitted behind generic precise-exceptions wording.",
+    "repair": "State the 3–9 seat passenger/mixed-vehicle rule and the resale, professional rental/leasing, public passenger transport, hotel-customer transport and driving-school exceptions. Include industrial/site surveillance or security lodging; permanent-contract work transport and collective onsite needs; and advertising objects below XOF 10,000 excluding VAT.",
+    "locator": "CGI printed pp.158–159, art.319"
+  },
+  {
+    "id": "F3",
+    "priority": "P3",
+    "rows": [
+      "SC26",
+      "SC27"
+    ],
+    "issue": "BNTS reading scope says both pages although the PDF has three physical pages.",
+    "repair": "Correct the Guide and evidence scopes: Cot 01 front/reverse are physical pages 1–2; Cot 02 intercalary is physical page 3. The source hash is unchanged.",
+    "locator": "cnss-bnts.pdf, physical page 3, header Pr-RCS/Cot 02"
+  },
+  {
+    "id": "F4",
+    "priority": "P3",
+    "rows": [
+      "SC31"
+    ],
+    "issue": "Registration body authority source missing Sources read-scope/read-date row.",
+    "repair": "Add the actual CEFORE and ordinary-company dossier reading scope and date to Sources, without a new legal claim.",
+    "locator": "Official CNSS employer-registration page, lines 164–188"
+  },
+  {
+    "id": "F5",
+    "priority": "P3",
+    "rows": [
+      "VAT9"
+    ],
+    "issue": "Ledger art.306 ticket-commission location is verified but is not explicit in the Guide body.",
+    "repair": "Add a concise sentence for BF-registered travel-agency ticket commissions, irrespective of route, transport mode or carrier seat.",
+    "locator": "CGI printed p.133, art.306"
+  }
+]

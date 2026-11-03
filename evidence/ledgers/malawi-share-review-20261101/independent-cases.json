@@ -1,0 +1,71 @@
+{
+  "all_six_pr_cases_independently_recomputed": true,
+  "new_cases_legal_category_and_exception_predicates_checked": true,
+  "actual_committed_checker": "3 files,6 blocks,0 failures,0 missing",
+  "cases": [
+    {
+      "name": "Listed-share proceeds versus supplied gain",
+      "independent_results": {
+        "withholding": "100000.00",
+        "net": "4900000.00",
+        "wrong_gain_tax": "16000.00",
+        "shortfall": "84000.00"
+      },
+      "predicate_review": "Operative rule expressly assumed; legally classified broker pays ordinary non-exempt seller for listed shares; no reinvestment branch, fees/noncash/FX; supplied gain independently given and not validated. Correct category and two negatives matter. Finality limited to tax so withheld."
+    },
+    {
+      "name": "Ordinary versus income-tax-exempt seller",
+      "independent_results": {
+        "ordinary_withholding": "60000.00",
+        "ordinary_net": "2940000.00",
+        "exempt_withholding": "0",
+        "exempt_net": "3000000",
+        "difference": "60000.00"
+      },
+      "predicate_review": "Same qualifying broker/seller/listed-share category. Ordinary branch negates seller income-tax exemption and reinvestment; alternative independently establishes person exemption. No election, certificate waiver or automatic underlying-tax conclusion. Immediate reinvestment branch correctly disclosed separately, not numerically implemented."
+    },
+    {
+      "name": "Private membership count",
+      "independent_results": {
+        "statutory_members": 50,
+        "wrong_person_count": 51,
+        "headroom": 0,
+        "wrong_excess": 1
+      },
+      "predicate_review": "Earlier accepted conditional company case, public-offer/other gates not established by arithmetic. Block unchanged."
+    },
+    {
+      "name": "No-par consideration",
+      "independent_results": {
+        "shares": 150,
+        "agreed_consideration": 150000,
+        "unpaid": 30000
+      },
+      "predicate_review": "Hypothetical equal-rights agreed issue consideration after assumed commencement; no statutory nominal/minimum capital inferred. Block unchanged."
+    },
+    {
+      "name": "Gross/net fee covenant",
+      "independent_results": {
+        "gross_fee_tax": "150000.00",
+        "gross_fee_net": "850000.00",
+        "gross_for_net_promise": "1176470.59",
+        "net_promise_tax": "176470.59",
+        "wrong_gross": 1150000,
+        "wrong_net": "977500.00"
+      },
+      "predicate_review": "Earlier accepted explicit nonresident/source/no-PE/no-exclusion/treaty and operative-text assumptions. Contract factual alternative, not automatic election. Block unchanged."
+    },
+    {
+      "name": "Foreign tax credit cap",
+      "independent_results": {
+        "limit": 600000,
+        "allowed_credit": 600000,
+        "domestic_after_credit": 2400000,
+        "excess": 200000
+      },
+      "predicate_review": "Earlier accepted same-income eligible proven tax assumes exact legal relief eligibility; example does not establish carryforward/refund. Block unchanged."
+    }
+  ],
+  "all_results_match": true,
+  "operative_2026_or_live_use_accepted": false
+}
