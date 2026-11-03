@@ -1,0 +1,53 @@
+{
+  "baseline": "684a21d845e8fc137e90fbce4887a974d03d8347",
+  "changes": [
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "version: 2.2",
+      "new": "version: 2.3",
+      "before_sha256": "4892c1739436294e004246cb80b1c735ca13d6efb6f05a4ab3d5c34682fd73da",
+      "after_sha256": "87b8f5fe3cc16f9d43c54bf69b5f66678f7ac6ba57fc824b4c0438bbc01a80bb"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "version: 2.3",
+      "new": "version: 2.4",
+      "before_sha256": "93c9cbb9b9104c5800126d93beb0e01e9f962f2275d5554f0d0140b4af374816",
+      "after_sha256": "4527f794e3f14b401f74b8dbf82b366266f5d076f61123c7f31cba8544ce7ec0"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "first supply of buildings designed for charities and of buildings converted to residential",
+      "new": "first sale or lease of a building or part specifically designed to be used by a Charity and solely for a Relevant Charitable Activity; first supply of a building or part converted to residential within 3 years of completion of conversion, only if the original building or part was neither used as nor part of a residential building within the 5 years before conversion work began",
+      "before_sha256": "4527f794e3f14b401f74b8dbf82b366266f5d076f61123c7f31cba8544ce7ec0",
+      "after_sha256": "bf25446bd92c3320b57c448438200715334af194cfe42f5cebf5fd56f177a018"
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "- **Who:** UAE constituent entities of a multinational group whose ultimate parent's consolidated financial statements show annual revenue of EUR 750 million or more in at least two of the four fiscal years immediately before the tested year.",
+      "new": "- **Who:** UAE Constituent Entities of an MNE Group whose ultimate parent's consolidated financial statements show annual revenue of EUR 750 million or more in at least two of the four fiscal years immediately before the tested year. For each comparison fiscal year other than 12 months, adjust the EUR 750 million threshold proportionally to its length. Excluded Entities are not Constituent Entities; apply the Annex 1.3 exclusions. Refer Annex 6.1 special scope/revenue-threshold cases for specialist determination rather than applying this general screen alone (Annex 1.1.1-1.1.2 and 1.3.3).",
+      "before_sha256": "87b8f5fe3cc16f9d43c54bf69b5f66678f7ac6ba57fc824b4c0438bbc01a80bb",
+      "after_sha256": "2b1cf29a914d6923e66df2e48aac9181bea710114cb34a1bca5c1cc40474b4ee"
+    },
+    {
+      "path": "skills/uae/uae-vat.md",
+      "old": "failure to issue and transmit an electronic invoice or credit note AED 100 each, up to AED 5,000 per calendar month",
+      "new": "failure to issue and transmit an electronic invoice AED 100 per invoice, up to AED 5,000 per calendar month for that violation; separately, failure to issue and transmit an electronic credit note AED 100 per credit note, up to AED 5,000 per calendar month for that distinct violation (annex items 2 and 3, not one combined cap)",
+      "before_sha256": "bf25446bd92c3320b57c448438200715334af194cfe42f5cebf5fd56f177a018",
+      "after_sha256": "1c65052570626fb3c0be17f0afc2dff6c0e22ed886911bf6e00dc8c4d6bf3093"
+    },
+    {
+      "path": "skills/uae/ae-corporate-tax.md",
+      "old": "Excluded Entities are not Constituent Entities; apply the Annex 1.3 exclusions.",
+      "new": "Excluded Entities are not Constituent Entities; confirm the entity's Excluded Entity status before including it.",
+      "before_sha256": "2b1cf29a914d6923e66df2e48aac9181bea710114cb34a1bca5c1cc40474b4ee",
+      "after_sha256": "57868107dbcc22d860a47ac1f9213694d4a5e98ab1797c78cee4e92efba83e72"
+    }
+  ],
+  "scope": "Four recorded continuation findings only; originalwriter/initialreview and continuationevidence remain unchanged. Source168remaining placements stillOPEN.",
+  "guides_after": {
+    "skills/uae/ae-corporate-tax.md": "57868107dbcc22d860a47ac1f9213694d4a5e98ab1797c78cee4e92efba83e72",
+    "skills/uae/uae-vat.md": "1c65052570626fb3c0be17f0afc2dff6c0e22ed886911bf6e00dc8c4d6bf3093",
+    "skills/uae/ae-payroll-social.md": "f56a8dc5e23a0e21af1027b3349e67be322a8261e2a5bbd74d527a529a2f2bb5"
+  }
+}

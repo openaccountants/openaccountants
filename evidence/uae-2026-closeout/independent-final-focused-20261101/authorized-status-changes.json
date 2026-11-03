@@ -1,0 +1,19 @@
+{
+  "exact_status_literal": "PASS / PARTIAL_RESEARCH_PUBLICATION",
+  "readme_replacements": [
+    {
+      "old": "The three team tax Guides remain tier 2 with independent review pending.",
+      "new": "The three team tax Guides remain tier 2; independent source review is complete for their stated partial scope."
+    },
+    {
+      "old": "Final independent correction closure pending.",
+      "new": "Independent source review: PASS for conditional PARTIAL research publication of the three team Guides; the stated specialist, historical, currentness and filing holds remain."
+    }
+  ],
+  "readme_before_sha256": "ab08bfd2f43a8f8cdf4d94200b86aefc566f6a2963f8e327cb36f3c22f91cc72",
+  "readme_expected_after_sha256": "df695f57bb7ebda5e21e32b16a36a7d9a6e96b075153096246716596ecbbdcc1",
+  "current_candidate_before_sha256": "a94bc132c8fc6a82183d91946b44dcdd7e197b691db2d04b5adf1b9f84cc3648",
+  "current_candidate_expected_after_sha256": "951ae1a4ca97d693b70ce5d523609066d503e813c0dea9bb1a91a52ee299a06a",
+  "authorization": "Parent may apply exactly these status-only changes after this PASS; snapshot preserved here. No Guide or platform-owned review metadata change authorized by this review.",
+  "current_candidate_replacement_file": "CURRENT-CANDIDATE.authorized-after.md"
+}

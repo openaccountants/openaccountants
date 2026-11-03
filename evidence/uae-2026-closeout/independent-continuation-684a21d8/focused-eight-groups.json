@@ -1,0 +1,74 @@
+{
+  "groups": [
+    {
+      "finding": 1,
+      "status": "CLOSED FOR THE IDENTIFIED REPAIR",
+      "basis": "CurrentCT110 states everyS11Article4(3) exclusion in both totals;CurrentCT230 case assumes all exclusions and specialist-confirmeddistribution."
+    },
+    {
+      "finding": 2,
+      "status": "CLOSED FOR THE IDENTIFIED REPAIR; CLASSIFICATION PARTIAL HOLD RETAINED",
+      "basis": "CurrentCT114headquartersrelatedparties;122ancillaryexcluded;124explicitdetailedclassificationhold. No qualification awarded from listnames."
+    },
+    {
+      "finding": 3,
+      "status": "CLOSED",
+      "basis": "Payroll108incidentalANDinsignificant,unauthorisedrecords;109parkingeligiblecasesapproval;107newemployee30day/twoconditions independent fromcase3."
+    },
+    {
+      "finding": 4,
+      "status": "CLOSED",
+      "basis": "VAT162cashverifiable,commercialreasonpermittedmarketdepartures;163implement/review/supervise,clearresponsibilities,designatedretention."
+    },
+    {
+      "finding": 5,
+      "status": "FOUR NAMED BASE-IDENTITY OVERRIDES CLOSED; OTHER DESTINATIONS OPEN",
+      "basis": "Eachfourcorrectedtext/line matchescurrentGuide andtopic; candidateidentitiesneedC04. Do not extrapolate376acceptances."
+    },
+    {
+      "finding": 6,
+      "status": "CLOSED",
+      "basis": "Fullmarker-throughEOF suffix matches predecessor unchanged for allthree; independentlyrecomputed inreceipt."
+    },
+    {
+      "finding": 7,
+      "status": "CLOSED AS CAPTURE/SCOPE CORRECTION ONLY",
+      "basis": "Fourprivate supplements/hashbindings verified andread; S04Article15.1-15.2 remainsunaccepted; no whole-sourceacceptance."
+    },
+    {
+      "finding": 8,
+      "status": "CLOSED; SOCIAL PARTIAL HOLD RETAINED",
+      "basis": "Currentpayrollspecialistquestions andchecklists donotassertGPSSA/AbuDhabi/MOHRErouting; VATstatutoryMOHREreferences remain legalbenefitexception only."
+    }
+  ],
+  "source_scope_hash_checks": [
+    {
+      "id": "S13",
+      "raw_hash_matches": true,
+      "text_hash_matches": true,
+      "supplement_hash_matches": true,
+      "scope_read": "Exact supplement text read; not whole original source acceptance."
+    },
+    {
+      "id": "S23",
+      "raw_hash_matches": true,
+      "text_hash_matches": true,
+      "supplement_hash_matches": true,
+      "scope_read": "Exact supplement text read; not whole original source acceptance."
+    },
+    {
+      "id": "S24",
+      "raw_hash_matches": true,
+      "text_hash_matches": true,
+      "supplement_hash_matches": true,
+      "scope_read": "Exact supplement text read; not whole original source acceptance."
+    },
+    {
+      "id": "S04",
+      "raw_hash_matches": true,
+      "text_hash_matches": true,
+      "supplement_hash_matches": true,
+      "scope_read": "Exact supplement text read; not whole original source acceptance."
+    }
+  ]
+}

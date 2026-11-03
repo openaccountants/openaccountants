@@ -1,0 +1,93 @@
+[
+  {
+    "command": [
+      "git",
+      "merge-base",
+      "origin/main",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout": "46c01152da0fdd1b722f61190c88413d0a195d02\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/validate-guides.py",
+      "--changed-only",
+      "--no-index-check"
+    ],
+    "exit_code": 0,
+    "stdout": "changed-only mode: validating 4 changed guide file(s)\nchecked 3 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/uae/ae-corporate-tax.md",
+      "skills/uae/ae-payroll-social.md",
+      "skills/uae/uae-vat.md"
+    ],
+    "exit_code": 0,
+    "stdout": "checked 3 files, 8 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "--head",
+      "d75b5305a7e7007900c9e14d57e97fb9d7d0769a",
+      "--strict-metadata"
+    ],
+    "exit_code": 0,
+    "stdout": "Sync integrity checked 3 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "d75b5305a7e7007900c9e14d57e97fb9d7d0769a"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/uae/ae-corporate-tax.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/uae/ae-corporate-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/uae/ae-payroll-social.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/uae/ae-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/uae/uae-vat.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/uae/uae-vat.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  }
+]

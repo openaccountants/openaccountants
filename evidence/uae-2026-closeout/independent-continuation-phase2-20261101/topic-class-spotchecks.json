@@ -1,0 +1,366 @@
+{
+  "population": "Completewriteroldtopicmap1543identities;spotchecksample19identities/classes,includingallflaggedsixpointers. Notall376manualendorsement.",
+  "spots": [
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 37,
+      "old_text": "- **Is the business part of a multinational group?** Ask for group consolidated revenue. A constituent company of a multinational group, as defined in Cabinet Decision No. 44 of 2020 (groups with consolidated revenue of at least AED 3.15 billion), cannot use Small Business Relief ([Ministerial Decision No. 73 of 2023, Article 3](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Small Business Relief Guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf)). Groups with EUR 750 million or more may be in scope of top-up tax. ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf))",
+      "old_snapshot_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "topic_class": "MNEdefinitionseparateholdpluslivethresholdscreen",
+      "actual_current_destinations": [
+        {
+          "line": 37,
+          "text": "- **Is the business part of a multinational group?** Ask for group consolidated revenue. A constituent company of a multinational group, as defined in Cabinet Decision No. 44 of 2020 (groups within Cabinet Decision No. 44 of 2020), cannot use Small Business Relief ([Ministerial Decision No. 73 of 2023, Article 3](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf); [Small Business Relief Guide](https://tax.gov.ae/Datafolder/Files/Guides/CT/Small%20Business%20Relief%20Guide%20-%20EN%20-%2029%2008%202023.pdf)). Screen groups against the top-up-tax scope below; this is not a determination of liability. ([Cabinet Decision No. 142 of 2024](https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf)) **Free zone?** Which free zone, what activities, who the customers are (free zone persons, mainland businesses, individuals), whether audited accounts exist, and whether the company has elected out of the QFZP regime."
+        },
+        {
+          "line": 400,
+          "text": "Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-corporate-tax.md Sources / Not yet confirmed; Article 20 base retained"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 53,
+      "old_text": "6. **Compute taxable income** (Article 20): start from accounting net profit under IFRS (or IFRS for SMEs where allowed). Remove exempt income (for example qualifying dividends and participation income, Articles 22-23). Add back non-deductible items: 50% of entertainment, fines, bribes, owner drawings, Corporate Tax itself, recoverable input VAT, and donations to bodies that are not qualifying public benefit entities (Articles 28, 32, 33). Apportion mixed personal and business costs. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))",
+      "old_snapshot_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "topic_class": "accounting/cashbasisheld;accountingprofitbasecontinues",
+      "actual_current_destinations": [
+        {
+          "line": 49,
+          "text": "6. **Compute taxable income** (Article 20): start from accounting net profit under the accounting standards accepted in the UAE; standards/cash-basis eligibility is held below. Remove exempt income (for example qualifying dividends and participation income, Articles 22-23). Add back non-deductible items: 50% of entertainment, fines, bribes, owner drawings, Corporate Tax itself, recoverable input VAT, and donations to bodies that are not qualifying public benefit entities (Articles 28, 32, 33). Apportion mixed personal and business costs. ([Corporate Tax Law](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf))"
+        },
+        {
+          "line": 400,
+          "text": "Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-corporate-tax.md Sources / Not yet confirmed; Article 20 base retained"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 99,
+      "old_text": "| Accounts | Cash-basis financial statements are allowed when revenue does not exceed AED 3,000,000 |",
+      "old_snapshot_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "topic_class": "cashbasisexplicithold",
+      "actual_current_destinations": [
+        {
+          "line": 95,
+          "text": "| Accounts | NON-OPERATIVE HOLD: confirm MD 114/2023 cash-basis eligibility separately before using cash accounts |"
+        },
+        {
+          "line": 400,
+          "text": "Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-corporate-tax.md Sources / Not yet confirmed; Article 20 base retained"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 107,
+      "old_text": "- It keeps adequate substance in the free zone or designated zone: core income-generating activities carried on there, with adequate assets, qualified full-time staff and operating costs. Outsourcing is allowed only within a free zone and under adequate supervision.",
+      "old_snapshot_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "topic_class": "outsourcingexpandedwithIPexception",
+      "actual_current_destinations": [
+        {
+          "line": 103,
+          "text": "- It keeps adequate substance in the free zone or designated zone: core income-generating activities carried on there, with adequate assets, qualified full-time staff and operating costs. Outsourcing follows the free-zone/designated-zone location and supervision conditions. For Qualifying Intellectual Property, Article 8(3) permits outsourcing anywhere in the UAE or to an unrelated person abroad, with adequate supervision."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-corporate-tax.md line 103"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 127,
+      "old_text": "**Consequence of failing:** a QFZP that fails any condition, or elects out, is taxed at the standard rates from the start of that tax period **and for the four following tax periods**.",
+      "old_snapshot_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "topic_class": "failureversuselectiondurationhold",
+      "actual_current_destinations": [
+        {
+          "line": 128,
+          "text": "**Consequence of failing:** failure of a condition removes QFZP status from the start of that period and for the next four periods (MD 229/2025 Article 5). An election to use standard rates takes effect from the current or following period under Corporate Tax Law Article 19; the election-duration rules are a separate unconfirmed hold below."
+        },
+        {
+          "line": 400,
+          "text": "Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-corporate-tax.md line 227"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 152,
+      "old_text": "- Transfer of losses to a group company needs 75% common ownership, both resident juridical persons, neither exempt nor a QFZP, the same year end and the same accounting standards. The 75% cap applies to own and transferred losses together.",
+      "old_snapshot_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "topic_class": "loss75percentcommonownershipandcontinuity",
+      "actual_current_destinations": [
+        {
+          "line": 153,
+          "text": "- Transfer of losses to a group company needs 75% common ownership, both resident juridical persons, neither exempt nor a QFZP, the same year end and the same accounting standards. The ownership must run continuously from the start of the loss period to the end of the utilisation period (Article 38(1)(d)). The 75% cap applies to own and transferred losses together."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-corporate-tax.md line 148"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 308,
+      "old_text": "| Error found by the FTA without a voluntary disclosure | 15% of the tax difference, plus 1% a month |",
+      "old_snapshot_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "topic_class": "auditnotificationfailurepenalty",
+      "actual_current_destinations": [
+        {
+          "line": 352,
+          "text": "| Failure to disclose an error before audit notification | 15% of the tax difference, plus 1% per month or part; the end date depends on whether a disclosure is later submitted or an assessment is issued (Decision 75/2023 table item 11) |"
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-corporate-tax.md line 346"
+    },
+    {
+      "guide": "ae-payroll-social",
+      "version": "base",
+      "original_line": 70,
+      "old_text": "2. Sort employees by nationality. UAE nationals (and GCC nationals) go through the GPSSA pension process, or the Abu Dhabi Pension Fund for UAE nationals employed in Abu Dhabi (check); expatriates do not, and instead accrue the Labour Law end-of-service gratuity. Get the current rates, contribution salary basis, cap and monthly due date from the right fund before the first run. If you do this step after paying salaries, the employee share will not have been deducted and has to be recovered later.",
+      "old_snapshot_sha256": "e60e40c8ec834bb7be919e8eb491cff46baf44d52a6947952b40fdd53486fa80",
+      "topic_class": "socialcoverage/routing/instructionallheld",
+      "actual_current_destinations": [
+        {
+          "line": 29,
+          "text": "**Social compliance is held, including coverage.** GPSSA/Abu Dhabi pension routing, nationality and first-insurance rules, gratuity coverage and accrual, free-zone differences, WPS, unemployment insurance, rates, caps, due dates and penalties have not been confirmed from their governing sources in this repair. Do not use the old text to execute payroll. Obtain current authority confirmation through a UAE payroll specialist before processing those items. Original details remain in the immutable evidence and destination table."
+        },
+        {
+          "line": 65,
+          "text": "2. Before running payroll, resolve the social-compliance holds with a UAE payroll specialist. This Guide supplies no pension deductions, gratuity accrual, WPS timetable or insurance instruction."
+        },
+        {
+          "line": 186,
+          "text": "- Ask a UAE payroll specialist which pension fund, if any, covers this worker and employer, and which authority supplies the applicable rates, caps, deadlines and penalties. Do not assume Abu Dhabi/GPSSA routing from this Guide or quote rates from memory."
+        },
+        {
+          "line": 211,
+          "text": "- [ ] Specialist asked which WPS and unemployment-insurance obligations, responsible authority and timetable apply; answers obtained from the applicable current authority sources before execution."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-payroll-social.md Sources / Not yet confirmed; social coverage hold; tax components retained in corresponding method/case"
+    },
+    {
+      "guide": "ae-payroll-social",
+      "version": "base",
+      "original_line": 109,
+      "old_text": "- (1) the employer is legally obliged to provide them \"under any applicable labour law in the State or Designated Zone\";",
+      "old_snapshot_sha256": "e60e40c8ec834bb7be919e8eb491cff46baf44d52a6947952b40fdd53486fa80",
+      "topic_class": "historicalbenefitexceptionheld",
+      "actual_current_destinations": [
+        {
+          "line": 91,
+          "text": "**Earlier periods:** the pre-1 October 2026 labour-law and contract/policy exception wording is a non-operative hold: its earlier standalone source did not open. Obtain the historical text before correcting an earlier return."
+        },
+        {
+          "line": 234,
+          "text": ""
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-payroll-social.md Sources / Not yet confirmed, historical employee-benefit wording"
+    },
+    {
+      "guide": "ae-payroll-social",
+      "version": "base",
+      "original_line": 124,
+      "old_text": "- **Contract or policy benefits generally.** The old test (needed for the role, and normal business practice) is replaced by the FTA's own cases and conditions. Check them before claiming.",
+      "old_snapshot_sha256": "e60e40c8ec834bb7be919e8eb491cff46baf44d52a6947952b40fdd53486fa80",
+      "topic_class": "contract/policybenefitcasesrepaired",
+      "actual_current_destinations": [
+        {
+          "line": 103,
+          "text": "- **Contract or policy benefits generally.** The old test (needed for the role, and normal business practice) is replaced by the six cases in [FTA Decision No. 17 of 2026](https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf), issued 9 September 2026 and in force from 1 October 2026 (the FTA publishes it as an unofficial translation). A benefit outside these cases is not within exception (2):"
+        },
+        {
+          "line": 104,
+          "text": "  1. **Transport:** only between home and work or client premises, or directly for the job; not for personal benefit; the employee cannot opt for cash instead."
+        },
+        {
+          "line": 105,
+          "text": "  2. **Food and drink:** the home is remote, distant or isolated; no suitable food preparation facilities at home or work and no nearby restaurants; linked to the work or required residence period; no cash option."
+        },
+        {
+          "line": 106,
+          "text": "  3. **Accommodation:** no cash option; tied to operational needs and not part of benefits or ordinary pay; the work requires living near the workplace, site or client; for the employee alone, with no family or personal use, unless the employee must live permanently near the workplace so that this is the usual home; commensurate with the job and basic needs, with no significant recreational or personal elements."
+        },
+        {
+          "line": 107,
+          "text": "  4. **New employees' accommodation:** temporary, no longer than 30 days, and commensurate with the job and basic needs."
+        },
+        {
+          "line": 108,
+          "text": "  5. **Phones, airtime, data and home internet:** necessary for the job; limited to work, or personal use is incidental and insignificant and is not the primary purpose; a documented internal policy states the permitted use and consequences of misuse; reasonable monitoring to verify compliance, retaining relevant records and justifications where use is unauthorised."
+        },
+        {
+          "line": 109,
+          "text": "  6. **Parking fees:** solely for business and tied to the job or business visits; a documented reimbursement policy specifying eligible cases and the applicable approval mechanism; receipts showing date, time, amount and tax."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-payroll-social.md line 103"
+    },
+    {
+      "guide": "ae-payroll-social",
+      "version": "base",
+      "original_line": 154,
+      "old_text": "**Case 1: expatriate employee on the mainland.** A Dubai mainland company employs an expatriate on a monthly salary with housing and transport allowances. Payroll result: gross pay is paid in full with no tax deduction, because the whole package is a Wage. No GPSSA pension deduction, because the employee is not a UAE or GCC national. The company accrues the Labour Law end-of-service gratuity each month (check the day-count and basis with MOHRE), pays through the Wage Protection System if it applies (check), and confirms the employee holds unemployment insurance (check). The salary and allowances are deductible in the company's Corporate Tax return if not excessive.",
+      "old_snapshot_sha256": "e60e40c8ec834bb7be919e8eb491cff46baf44d52a6947952b40fdd53486fa80",
+      "topic_class": "mixedsalary/socialexamplewagetreatmentretainedsocialheld",
+      "actual_current_destinations": [
+        {
+          "line": 139,
+          "text": "**Case 1: expatriate employee on the mainland.** A Dubai mainland company employs an expatriate on a monthly salary with housing and transport allowances. Corporate Tax result: no Corporate Tax deduction from wages; lawful social and other payroll deductions require a separate determination, because the whole package is a Wage. Social deductions, gratuity, WPS and insurance remain on hold until current coverage and execution instructions are obtained from the relevant authority or specialist. The salary and allowances are deductible in the company's Corporate Tax return if not excessive."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-payroll-social.md Sources / Not yet confirmed; social coverage hold; tax components retained in corresponding method/case"
+    },
+    {
+      "guide": "ae-payroll-social",
+      "version": "base",
+      "original_line": 162,
+      "old_text": "**Case 5: health insurance and accommodation, VAT-registered employer.** An employer buys family health cover for an employee with a spouse and four children (ages 4, 9, 14 and 19) and, from October 2026, pays for a serviced apartment for the employee. Input tax on the cover for the employee, spouse and the three children under 18 is recoverable under exception (3). The cover for the 19-year-old is outside exception (3), so its input tax is blocked unless another exception applies. A serviced apartment is not a \"residential building\" for VAT, so its charge carries VAT. Input tax on the October 2026 serviced-apartment charge is blocked unless a MOHRE decision or directive makes that accommodation mandatory, or the case falls within the contract-or-policy cases the FTA specifies; until those cases are published, do not claim it without checking. Had the employer instead leased an ordinary residential flat for more than six months (or to a tenant holding an Emirates ID card), the lease would be exempt: there would be no input tax on the rent, and the Article 53 change would not arise.",
+      "old_snapshot_sha256": "e60e40c8ec834bb7be919e8eb491cff46baf44d52a6947952b40fdd53486fa80",
+      "topic_class": "health/accommodationconditionalexample",
+      "actual_current_destinations": [
+        {
+          "line": 147,
+          "text": "**Case 5: health insurance and accommodation, VAT-registered employer.** An employer buys family health cover for an employee with a spouse and four children (ages 4, 9, 14 and 19) and, from October 2026, pays for a serviced apartment for the employee. Input tax on the cover for the employee, spouse and the three children under 18 is recoverable under exception (3). The cover for the 19-year-old is outside exception (3), so its input tax is blocked unless another exception applies. A serviced apartment is excluded from the residential-building definition. In this example assume its supplier makes a standard-rated taxable supply; the exclusion itself does not establish registration or every other VAT condition. Input tax on the October 2026 serviced-apartment charge is blocked unless a MOHRE decision or directive makes that accommodation mandatory, or a contract or documented policy provides it and every condition of case 3 of FTA Decision No. 17 of 2026 is met (or case 4, for a new employee, up to 30 days). If the employee could take a housing allowance instead, or the apartment is part of the ordinary package, it fails case 3. Had the employer instead leased an ordinary residential flat for more than six months (or to a tenant holding an Emirates ID card), the lease would be exempt: there would be no input tax on the rent, and the Article 53 change would not arise."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/ae-payroll-social.md line 147"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "original_line": 99,
+      "old_text": "- A refund application must be made within five years from the end of the relevant tax period. Transitional rule: where that five-year period had already run out, the taxpayer may still apply for the refund, or use the balance, within one year from 1 January 2026. A voluntary disclosure linked to such a refund application must be made within two years of the application. Check the facts before relying on it.",
+      "old_snapshot_sha256": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9",
+      "topic_class": "refund5yeartransitionandextendedboundaries",
+      "actual_current_destinations": [
+        {
+          "line": 95,
+          "text": "- A refund application must be made within five years from the end of the relevant tax period. Transitional rule: where that five-year period had already run out, the taxpayer may still apply for the refund, or use the balance, within one year from 1 January 2026. A voluntary disclosure linked to such a refund application must be made within two years of the application, unless the FTA has already issued its decision. Article 38(3)-(4) also gives one year for balances arising from an FTA decision, or 90 days for other balances, arising after the five-year period or during its last 90 days. Check the facts before relying on it."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/uae-vat.md line 95"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "original_line": 135,
+      "old_text": "- A supplier that is UAE-registered (TRN on the invoice) charges UAE VAT in the normal way: Box 9, not Box 3.",
+      "old_snapshot_sha256": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9",
+      "topic_class": "TRNalonecannotdecidereversecharge",
+      "actual_current_destinations": [
+        {
+          "line": 133,
+          "text": "- Do not decide reverse charge from a TRN alone. Check the supplier's residence, the place of supply, who accounts for VAT and any domestic reverse charge. A valid UAE tax invoice for a normal domestic standard-rated purchase belongs in Box 9; a TRN does not override Article 48."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/uae-vat.md line 173"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "original_line": 135,
+      "old_text": "- A supplier that is UAE-registered (TRN on the invoice) charges UAE VAT in the normal way: Box 9, not Box 3.",
+      "old_snapshot_sha256": "f4076f707169d48b3a4885cf7ab76d7b4b443141ea5fa5407770651bd8cc0a99",
+      "topic_class": "allflaggedcandidateTRNpointer",
+      "actual_current_destinations": [
+        {
+          "line": 133,
+          "text": "- Do not decide reverse charge from a TRN alone. Check the supplier's residence, the place of supply, who accounts for VAT and any domestic reverse charge. A valid UAE tax invoice for a normal domestic standard-rated purchase belongs in Box 9; a TRN does not override Article 48."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/uae-vat.md line 173"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "original_line": 171,
+      "old_text": "- Services supplied in a Designated Zone are treated as supplied inside the UAE: 5% as normal. Water and energy too.",
+      "old_snapshot_sha256": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9",
+      "topic_class": "zoneservicesnormalclassificationandshippingexception",
+      "actual_current_destinations": [
+        {
+          "line": 178,
+          "text": "- A Designated Zone does not automatically put services outside UAE VAT. Article 51(6) treats their place of supply as inside the UAE, subject to the tightly conditioned shipping/delivery exception in Article 51(7). Apply the normal rate or exemption rules, rather than assuming every service is 5%. Water and energy are inside the UAE under Article 51(8)."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/uae-vat.md line 181"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "original_line": 180,
+      "old_text": "- Services supplied in a Designated Zone are treated as supplied inside the UAE: 5% as normal. Water and energy too.",
+      "old_snapshot_sha256": "f4076f707169d48b3a4885cf7ab76d7b4b443141ea5fa5407770651bd8cc0a99",
+      "topic_class": "allflaggedcandidatezoneservicespointer",
+      "actual_current_destinations": [
+        {
+          "line": 178,
+          "text": "- A Designated Zone does not automatically put services outside UAE VAT. Article 51(6) treats their place of supply as inside the UAE, subject to the tightly conditioned shipping/delivery exception in Article 51(7). Apply the normal rate or exemption rules, rather than assuming every service is 5%. Water and energy are inside the UAE under Article 51(8)."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/uae-vat.md line 181"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "original_line": 191,
+      "old_text": "- Not available if the invoice for the sale shows an amount of VAT.",
+      "old_snapshot_sha256": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9",
+      "topic_class": "marginschemepurchaseinvoicerestriction",
+      "actual_current_destinations": [
+        {
+          "line": 198,
+          "text": "- For goods bought from a non-registrant or margin-scheme seller under Article 29(1)(a), margin treatment is not available if a tax invoice or other purchase-supply document mentions VAT chargeable on that supply (Article 29(3))."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/uae-vat.md line 198"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "original_line": 353,
+      "old_text": "- Keep them for five years following the tax period they relate to; records about real estate for 15 years after the end of the tax period. The FTA can ask for them in Arabic.",
+      "old_snapshot_sha256": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9",
+      "topic_class": "records5/15yearsplusdispute/auditextensions",
+      "actual_current_destinations": [
+        {
+          "line": 378,
+          "text": "- Keep them for five years following the tax period they relate to; records about real estate for 15 years after the end of the tax period. Decision 74/2023 Article 3 adds four years, or longer until a dispute ends, for disputes, and four years for an ongoing audit or a timely audit notice. A fifth-year voluntary disclosure adds one year. Do not destroy records at the ordinary minimum while an extension applies. The FTA can ask for them in Arabic."
+        }
+      ],
+      "disposition": "TOPIC CLASS PRESERVATION SPOTCHECK PASS; legalacceptance separate",
+      "original_destination_kept": "skills/uae/uae-vat.md line 378"
+    }
+  ],
+  "supersedes_gate": "Earlierreviewdemandforall376individualsemanticendorsementsissupersededonlybyMichael-authorizedcompletewritermapplusindependenttopicclassspotchecks. OriginalHOLDreportsremainimmutable;nohistoricalreviewstatusrewritten."
+}
