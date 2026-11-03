@@ -5,7 +5,7 @@ version: 2.2
 tax_year_notes: Merged from za-vat-return and south-africa-vat on 2026-11-01. Werner Britz validated both in May 2026; he has not yet confirmed the merged file.
 jurisdiction: ZA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 authored_by: Werner Britz, CA(SA)
 review_status: pending_review
 source_checked: 2026-10-17
@@ -107,16 +107,17 @@ Editorial only. After this validation review the "Pending" status should be upda
 - **MISSING: Output adjustments fields (10, 11, 12)** -- Field 10 (VAT-incl value) and Field 11 (Field 10 x 15/115): change in use and export of second-hand goods previously notional-input. Field 12: other and imported services - this is where output VAT on imported services under s 7(1)(c) is declared.  _(SARS VAT201 completion guide)_
 - **MISSING: Input fields (14-19)** -- Field 14: capital goods purchased (VAT amount). Field 14A: imported capital goods (VAT amount). Field 15: other goods/services purchased (VAT amount). Field 15A: imported other goods/services (VAT amount). Field 16: change in use (adjustment). Field 17: bad debts (s 22 relief). Field 18: other. Field 19: total input (sum of 14+14A+15+15A+16+17+18).  _(SARS VAT201 completion guide)_
 - **MISSING: Diesel refund (fields 21-38)** -- For qualifying vendors (mining, farming, electricity generation, rail, foreign-going ships, offshore) the VAT201 includes a diesel refund schedule. Out of scope for a generic skill but worth noting as a "see specialist" item.  _(Customs and Excise Act Sch 6 Part 3; VAT Act s 75)_
-- **Category A: Bimonthly** -- Default for most vendors  _(VAT Act s 27(2))_
-- **Category B: Monthly** -- Taxable supplies > R30M/year  _(VAT Act s 27(3))_
-- **Category C: Six-monthly** -- Farming enterprises (by approval)  _(VAT Act s 27(4))_
-- **Category D: Annual** -- Category D is for connected-party-only farming or rental enterprises (annual). Sub-categories E (annual, certain connected-party rental) and F (four-monthly, micro businesses on turnover tax) exist but are not mentioned.  _(VAT Act s 27(4A) to (5))_
+- **Category A: Two-monthly** -- Periods ending on the last day of January, March, May, July, September and November. SARS decides the category.  _(VAT Act s 27; [SARS tax periods](https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/))_
+- **Category B: Two-monthly** -- Periods ending on the last day of February, April, June, August, October and December. SARS decides the category.  _(VAT Act s 27; [SARS tax periods](https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/))_
+- **Category C: Monthly** -- Taxable supplies over R30 million in any 12 consecutive months, or on written application, or where SARS places a vendor here for repeated failure to meet VAT Act obligations.  _(VAT Act s 27; [SARS tax periods](https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/))_
+- **Category D: Six-monthly** -- Periods ending on the last day of February and August (or another approved month). Farmers with taxable supplies under R1.5 million for 12 months, and micro businesses registered under the Sixth Schedule to the Income Tax Act.  _(VAT Act s 27; [SARS tax periods](https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/))_
+- **Category E: Annual** -- Period ends on the last day of the vendor's year of assessment (or another approved month). Companies or trusts that let fixed property, rent movable goods or manage connected companies. There are five categories (A to E); there is no Category F.  _(VAT Act s 27; [SARS tax periods](https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/))_
 - **eFiling deadline** -- Last business day of month following period end  _(VAT Act s 28; SARS VAT 404 Guide)_
 - **Manual (branch) deadline** -- 25th of month following period end  _(VAT Act s 28)_
 - **Payments basis criteria** -- R2.5m applies to natural persons only. Other eligible categories: public authorities, water boards, municipalities and municipal entities, associations not for gain, SABC, foreign electronic services suppliers. Application via VAT-Reg-02 process; SARS issues a directive on approval (not a Binding Private Ruling).  _(VAT Act s 15(2); SARS VAT Connect Issue 10)_
-- **Late filing** -- For VAT, the main penalty for late submission is the percentage-based penalty under s 213 TAA (10% of the tax due). Fixed-amount administrative penalties under s 210 also apply but the escalating-scale fixed amounts that the skill describes (R250-R16,000) are more characteristic of personal income tax administrative penalties. SARS does also impose understatement penalties under s 222-224 for understatements.  _(TAA s 210, s 213, s 222-224)_
+- **Late filing** -- The fixed-amount penalty of R250 to R16,000 a month (TAA s 211 table) applies only to non-compliance listed in a public notice under TAA s 210(2) (SARS VAT 404 Guide, Issue 15, ch. 11.2.1). SARS lists that non-compliance as outstanding income tax returns of natural persons, companies (after a final demand) and trusts; VAT201 returns are not on the list, so a late VAT return does not attract the R250 to R16,000 scale. Late payment of VAT costs the 10% percentage-based penalty (VAT Act s 39 with TAA s 213) plus interest. Understatement penalties under TAA s 222 to s 224 apply to understatements.  _(TAA s 210 to s 213, s 222 to s 224; [SARS admin penalty page](https://www.sars.gov.za/individuals/what-if-i-do-not-agree/admin-penalty/); [SARS VAT 404](https://www.sars.gov.za/wp-content/uploads/Ops/Guides/Legal-Pub-Guide-VAT404-VAT-404-Guide-for-Vendors.pdf))_
 - **Late payment** -- 10% of amount outstanding  _(TAA s 213)_
-- **Interest** -- Current rate is 10.25% p.a. from 2 March 2026 on late or underpayment of VAT. Interest compounds monthly. Reference the SARS interest rate page rather than hardcoding.  _(TAA s 187; SARS Interest Rates page; SARS Budget 2026 Tax Guide)_
+- **Interest** -- Prescribed rate on outstanding taxes (SARS Table 1): 10.25% a year from 1 March 2026 to 31 August 2026; 10.50% a year from 1 September 2026 until the PFMA rate changes. For VAT, interest is charged per month or part of a month, from the first day of the month after payment was due until paid. The TAA rule of daily balances compounded monthly (TAA Chapter 12, s 187) does not apply until the Commissioner publishes a notice. Check SARS Table 1 for the rate in force.  _([SARS Interest Rates Table 1, September 2026](https://www.sars.gov.za/wp-content/uploads/Legal/Rates/Legal-Pub-IRT-01-Interest-Rates-Table-1.pdf); [SARS VAT 404 ch. 11.3](https://www.sars.gov.za/wp-content/uploads/Ops/Guides/Legal-Pub-Guide-VAT404-VAT-404-Guide-for-Vendors.pdf))_
 - **Understatement** -- 10-200% depending on behaviour  _(TAA s 222 to s 224; Schedule to TAA Chapter 16)_
 - **6.1 Mixed Supplies Apportionment** -- The "revenue-based ratio" is the SARS standard turnover-based method (STM) per BGR 16. Alternative methods (transaction-count, headcount, floor area) require a ruling application under s 41B. The STM is computed as taxable supplies / total supplies, excluding certain items (directors fees, fixed property sales over R100k, capital items, etc). 5% de minimis rule under s 17(1) proviso: if exempt is under 5% of total, claim 100%.  _(VAT Act s 17(1); BGR 16; CSARS v African Bank Ltd [2025] ZASCA 101)_
 - **6.2 Imported Services (Reverse Charge, s 7(1)(c))** -- Substantively correct but the trigger needs tightening: imported service is a service supplied by a non-resident, OR by a resident from outside SA, to a recipient who is a resident, for utilisation otherwise than for making taxable supplies. The "self-assess" works for FULLY taxable recipients (output = input, net zero). For partially exempt recipients, the output is fully payable but input is apportioned - so there IS a real cost. For non-vendors (e.g. an individual buying foreign digital subscriptions in personal capacity), output is payable via VAT215 within 30 days. The latter is widely ignored in practice but technically required.  _(VAT Act s 7(1)(c) and s 14; SARS Form VAT215)_
@@ -135,7 +136,7 @@ Editorial only. After this validation review the "Pending" status should be upda
 - **SARS / RECEIVER OF REVENUE** -- Tax payment or refund / Exclude
 - **BANK CHARGES / SERVICE FEE** -- Bank service fees are STANDARD-RATED at 15% in SA. See critical finding #3. Input is claimable with the monthly VAT tax invoice from the bank.  _(VAT Act s 2(1) proviso; SARS VAT News 7 (1996))_
 - **Question 1 (VAT registration)** -- Are you registered as a VAT vendor? What is your VAT number?
-- **Question 2 (Filing category)** -- Add E and F to the list (see Section 5.2 above).  _(VAT Act s 27)_
+- **Question 2 (Filing category)** -- Add E to the list (see Section 5.2 above). There is no Category F.  _(VAT Act s 27)_
 - **Question 3 (Accounting basis)** -- Are you on invoice basis or payments basis?
 - **Question 4 (Supply types)** -- What types of goods or services do you sell?
 - **Question 5 (Zero-rated supplies)** -- Do you make any zero-rated supplies (exports, basic foodstuffs)?
@@ -392,12 +393,13 @@ Where Google bills via a South African entity registered for VAT and issues a va
 
 | Category | Frequency | Who |
 | --- | --- | --- |
-| A | Bimonthly | Default for most vendors |
-| B | Monthly | Taxable supplies > R30M/year |
-| C | Six-monthly | Farming enterprises (by approval) |
-| D | Annual | Small vendors (by approval) |
-| E | Annual | Connected-party rental enterprises (by approval) |
-| F | Four-monthly | Micro businesses on turnover tax |
+| A | Two-monthly (periods end January, March, May, July, September, November) | Allocated by SARS |
+| B | Two-monthly (periods end February, April, June, August, October, December) | Allocated by SARS |
+| C | Monthly | Taxable supplies over R30 million in any 12 consecutive months, written application, or placed by SARS for repeated non-compliance |
+| D | Six-monthly (periods end February and August, or another approved month) | Farmers with taxable supplies under R1.5 million for 12 months; micro businesses registered under the Sixth Schedule to the Income Tax Act |
+| E | Annual (period ends with the year of assessment, or another approved month) | Companies or trusts letting fixed property, renting movable goods or managing connected companies |
+
+Five categories, A to E. Source: [SARS, tax periods for VAT vendors](https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/); VAT Act s 27.
 
 ### 5.3 Filing Deadlines
 
@@ -418,9 +420,9 @@ Where Google bills via a South African entity registered for VAT and issues a va
 
 | Offence | Penalty |
 | --- | --- |
-| Late filing | Fixed amount penalty (escalating scale) |
-| Late payment | 10% of amount outstanding |
-| Interest | Prescribed rate compounding monthly |
+| Late filing | No fixed-amount penalty for a late VAT201: the R250 to R16,000 a month scale (TAA s 211) applies only to non-compliance listed in a s 210(2) public notice, and SARS lists only outstanding income tax returns |
+| Late payment | 10% of amount outstanding (VAT Act s 39; TAA s 213) |
+| Interest | Prescribed rate (SARS Table 1: 10.50% a year from 1 September 2026), charged per month or part of a month (SARS VAT 404 ch. 11.3) |
 | Understatement | 10-200% depending on behaviour |
 
 ### 6.1 Mixed Supplies Apportionment
@@ -448,7 +450,7 @@ Where Google bills via a South African entity registered for VAT and issues a va
 ```
 SOUTH AFRICA VAT WORKING PAPER (VAT201)
 Vendor: _______________  VAT Number: ___________
-Period: ___________  Category: A / B / C / D / E / F
+Period: ___________  Category: A / B / C / D / E
 Basis: Invoice / Payments
 
 A. OUTPUT (SALES)
@@ -516,7 +518,7 @@ Present these questions:
 ```
 ONBOARDING QUESTIONS -- SOUTH AFRICA VAT
 1. Are you registered as a VAT vendor? What is your VAT number?
-2. What filing category are you (A bimonthly, B monthly, C six-monthly, D annual)?
+2. What filing category are you (A or B two-monthly, C monthly, D six-monthly, E annual)?
 3. Are you on invoice basis or payments basis?
 4. What types of goods or services do you sell?
 5. Do you make any zero-rated supplies (exports, basic foodstuffs)?
@@ -1115,8 +1117,8 @@ Monthly rent. If this is for a commercial office space where the landlord has op
 
 | Offence | Penalty |
 | --- | --- |
-| Late return | ZAR 250–ZAR 16,000 per month late |
-| Late payment | 10% of tax due + interest at prescribed rate |
+| Late return | No fixed-amount penalty for a late VAT201. The ZAR 250 to ZAR 16,000 a month scale (TAA s 211) applies only to non-compliance listed in a s 210(2) public notice, and SARS lists only outstanding income tax returns |
+| Late payment | 10% of tax due (VAT Act s 39; TAA s 213) + interest at the prescribed rate |
 | Understatement | 10%–200% of shortfall depending on intent |
 | Fraud | Criminal prosecution |
 
@@ -1329,6 +1331,11 @@ expected:
 1. SARS, tax periods for VAT vendors, read 2026-11-01 -- https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/
 2. Value-Added Tax Act 89 of 1991 and SARS guides cited inline (not re-read in this update; read date unverified)
 3. Tax Administration Act 28 of 2011 (not re-read in this update; read date unverified)
+4. SARS, Interest Rates Table 1 (September 2026), rows from 01.03.2026 and 01.09.2026, read 2026-11-03 -- https://www.sars.gov.za/wp-content/uploads/Legal/Rates/Legal-Pub-IRT-01-Interest-Rates-Table-1.pdf
+5. SARS, Admin Penalty page (which returns attract the fixed-amount penalty, R250 to R16,000 a month), read 2026-11-03 -- https://www.sars.gov.za/individuals/what-if-i-do-not-agree/admin-penalty/
+6. SARS, Public Notice 1461, GG 45396, 29 October 2021 (s 210(2) list for natural persons; income tax returns only), read 2026-11-03 -- https://www.sars.gov.za/wp-content/uploads/Legal/SecLegis/LSec-TAdm-PN-2021-05-Notice-1461-GG-45396-Incidences-of-non-compliance-by-a-person-in-terms-of-section-2102-29-October-2021.pdf
+7. SARS, VAT 404 Guide for Vendors, Issue 15, chapter 11 (11.1 to 11.3, penalties and interest) only, read 2026-11-03 -- https://www.sars.gov.za/wp-content/uploads/Ops/Guides/Legal-Pub-Guide-VAT404-VAT-404-Guide-for-Vendors.pdf
+8. SARS, tax periods for VAT vendors (categories A to E), re-read 2026-11-03 -- https://www.sars.gov.za/types-of-tax/value-added-tax/tax-periods-for-vat-vendors/
 
 > Contributed by Werner Britz, CA(SA).
 
