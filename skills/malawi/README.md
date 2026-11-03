@@ -3,12 +3,13 @@ jurisdiction: MW
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  IT-IND: [mw-income-tax]
-  IT-CORP: [mw-corporate-income-tax]
+  IT-IND: [mw-income-tax, mw-listed-share-withholding]
+  IT-CORP: [mw-corporate-income-tax, mw-listed-share-withholding]
   VAT: [mw-vat-gst]
   SC: [mw-payroll-social]
   PR: [mw-payroll-social]
   TP: [mw-transfer-pricing]
+  XB: [mw-cross-border-tax]
 partial:
   IT-IND: "Current PAYE/non-employment rate computations only; full base deductions, residence, FBT, annual filing and transition allocation unresolved."
   IT-CORP: "Ordinary non-mining tax/MAT and credit workpapers; annual filing deadline, straddling periods, allowances/losses, capital-gain detail and specialist sectors unresolved."
@@ -16,14 +17,14 @@ partial:
   SC: "Conditional mandatory 2023 Act minimum pension/remittance workpapers; current exemptions/commencement orders, TEVET/other levies and interest directives unresolved."
   PR: "PAYE rate/reconciliation and remittance reference; contribution deductibility, special pay and live forms unresolved."
   TP: "Information-notice penalty/response and audit retention only; full 127A/regulations, annual documentation, thresholds, methods and current point conversion unresolved."
-  XB: "Missing standalone job; treaty network, nonresident withholding, credits and exit remain unverified."
+  XB: "Conditional nonresident/source/foreign-credit workpapers; operative cutover, complete withholding schedules, treaty-specific relief and exit remain unresolved."
 ---
 
 # Malawi: partial 2026 source pack
 
-**CURRENT-YEAR HOLD.** Independent review rejected the initial seven-Guide candidate. Three findings have passed focused independent closure, and Act 3/2026 has now been read and reconciled for the stated jobs. The appointed TAA/cutover commencement notices remain unread. The amendment delta passed a separate independent source review at `6e37fc6093718c07bb554a44194aeb10727cae21`; F4 remains open. No current-year source acceptance or publication approval is claimed. All seven Guides carry a live-use stop; their 2026 label names the intended research period.
+**CURRENT-YEAR HOLD.** Independent review rejected the initial seven-Guide candidate. Three findings have passed focused independent closure, and Act 3/2026 has now been read and reconciled for the stated jobs. The appointed TAA/cutover commencement notices remain unread. The amendment delta passed a separate independent source review at `6e37fc6093718c07bb554a44194aeb10727cae21`; F4 remains open. No current-year or live-use acceptance is claimed. Conditional research publication is accepted only under the focused disposition below; F4 remains open. All eight Guides carry a live-use stop; their 2026 label names the intended research period.
 
-Seven tier-2 drafts, read on 1 November 2026 from official enacted amendments and specified portions of principal Acts. Independent review remains unaccepted because the currentness finding is open. No accountant attestation. Keep [issue 474](https://github.com/openaccountants/openaccountants/issues/474) open.
+Eight tier-2 drafts, read on 1 November 2026 from official enacted amendments and specified portions of principal Acts. Operative-current-law acceptance remains withheld because F4 is open; conditional research publication is accepted only under the focused disposition below. No accountant attestation. Keep [issue 474](https://github.com/openaccountants/openaccountants/issues/474) open.
 
 | Job | Guide | Status |
 |---|---|---|
@@ -32,13 +33,13 @@ Seven tier-2 drafts, read on 1 November 2026 from official enacted amendments an
 | Current domestic VAT/digital boundary | [VAT](mw-vat-gst.md) | Partial 2026 |
 | Pension/PAYE reconciliation | [Payroll/social](mw-payroll-social.md) | Conditional partial 2026 |
 | TP information notices/retention | [TP](mw-transfer-pricing.md) | Bounded partial 2026 |
-| Cross-border | None | Missing |
+| Cross-border source/nonresident/credit workpapers | [Cross-border tax](mw-cross-border-tax.md) | Conditional partial 2026; conditional source corrections closed |
 
-[Overview](mw-tax-overview.md) routes jobs; [formation](mw-company-formation.md) now supplies the verified tax-registration handoff, with company-law/registry conditions explicitly unverified. Exact tax bases and operational filing acceptance must be established before filing. Current annual income-tax deadline is not taken from the deleted old 84(1).
+[Overview](mw-tax-overview.md) routes jobs; [formation](mw-company-formation.md) expands the prior tax-registration handoff into cited original company-law provisions, with company-law commencement/amendments, current forms/fees and identified drafting anomalies held. The two follow-on drafts require fresh independent source review. Exact tax bases and operational filing acceptance must be established before filing. Current annual income-tax deadline is not taken from the deleted old 84(1).
 
 The April 2026 gazette bundle supplies VAT Act 5 and Tax Admin Act 6. The library abstract's statement about increasing a TP threshold is not the law: actual 91(a) increases a first-month penalty in currency points. The two MRA December 2025 notices give conflicting 30/31 December dates; no transition calculation is asserted. Principal source copies include historical consolidations; only the read provisions reconciled to identified amendments support this candidate.
 
-Eight ledger/map files live in [evidence/ledgers](../../evidence/ledgers/mw-old-topic-destinations.md). Full source captures stay outside public history. All original topic labels have a destination; gaps are not completion claims.
+Earlier ledger/map files remain in [evidence/ledgers](../../evidence/ledgers/mw-old-topic-destinations.md). The [formation and cross-border follow-on](../../evidence/ledgers/malawi-formation-crossborder-20261101/writer-record.md) adds 67 grouped rule rows, 25 immutable old formation body units and four recomputing cases. Full source captures stay outside public history. All original topic labels have a destination; gaps are not completion claims.
 
 ## Independent review checkpoint
 
@@ -49,3 +50,25 @@ Initial findings: `evidence/ledgers/malawi-review-20261101/review.md`. Additive 
 The [actual Act 3/2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) has been downloaded, all six pages read, and its relevant corporate, individual-scope and TP assessment changes added. The corporate amendment history is corrected: December 2025 changed the additional rate to 5%, while April 2026 restores 10% and moves the threshold to K5 billion. The final example results are unchanged because they now expressly assume the April combination. Levies are added to the deduction restrictions; the nine-year TP assessment window is distinguished from document retention. Separate rental/listed-share jobs, the printed rental cross-reference and earlier-period allocation remain open. See the additive [repair record](../../evidence/ledgers/malawi-act3-repair-20261101/repair.json). This does not close F4 or confer current-year/publication acceptance.
 
 The [independent Act 3 delta review](../../evidence/ledgers/malawi-act3-review-20261101/review.md) confirms the corrected rate history, levy exclusion, assessment window and scope exclusions. It supersedes the initial source interpretation of the December corporate amendment without altering the historical review. It does not accept the pack for operative 2026 use or publication.
+
+## Formation and cross-border follow-on
+
+The original 2013 Companies Act gazette has been read for the stated formation, ownership/capital, director, reporting and foreign-company jobs. New-company no-par shares replace the old hypothetical nominal-share examples. Private membership counts joint holders once; exemption from a formal share register does not remove the proper-record obligation. Reproduced secretary/audit wording and the meeting-free annual-return procedure remain explicit holds. The new cross-border job separates source, residence, recipient PE attribution, gross nonresident tax, treaty eligibility and the foreign-credit ceiling. The 2023 effective-management insertion is reconciled to its express 2024 deletion; the 2025 foreign-company surcharge deletion is separated from later MAT/company changes.
+
+These draft backups now have independent correction closure for cited-text fidelity only; F4 and currentness acceptance remain open. The original seven-Guide review, F1–F3 closure, Act 3 delta review and open F4 are preserved; none is claimed as acceptance of the new material. No domain is promoted to comprehensive coverage, no current-law stop is removed and no accountant attestation is added.
+
+The [independent formation/cross-border correction closure](../../evidence/ledgers/malawi-formation-crossborder-review-20261101/closure.md) checks all 67 records, 25 old formation units and four computations. Three bounded findings are closed against exact hashes: service-agent eligibility, the foreign-tax-relief gate and registrar HTML source identity. This accepts only the cited-text fidelity of these additions. Every earlier F4, appointed-commencement, current-law, live-use and partial-domain hold remains open. No accountant attestation or current-year/publication acceptance follows.
+
+## Listed-share withholding draft backup
+
+A ninth draft, [listed-share disposal withholding](mw-listed-share-withholding.md), adds the broker/dealer payment job under Act 3/2026 s 13, the amount-realized base, finality and the two express no-deduction branches. Its two cases separate proceeds from a supplied gain and compare an ordinary seller with an income-tax-exempt seller. The earlier references to eight Guides describe the preserved checkpoint; all eight bodies and all previous evidence remain exact. Existing figure owners are linked, with their historical holds retained.
+
+The [new writer evidence](../../evidence/ledgers/malawi-share-withholding-20261101/writer-record.md) records the actual amendment reads and the unresolved First Schedule paragraph-label chain: Act 36/2025 deletes (hb), while the older principal labels the holding-period exemption (hc). Neither that mismatch, commencement, reinvestment implementation nor current filing is resolved by this draft. Fresh independent review accepts this new job for cited-text fidelity only; F4, currentness, appointed-cutover, live-use, publication-currentness and accountant-attestation holds remain. All seven domains remain partial; F4, appointed-cutover, live-use, publication/current-law and accountant-attestation limits remain unchanged.
+
+## Focused corporate correction and conditional publication
+
+The [focused independent review](../../evidence/ledgers/malawi-corporate-label-review-20261101/review.md) accepts the corporate v1.4 correction at SHA-256 `8c7103980ebe451c36547efa01dff3da3ef9d5b8461740fe8c81147016ea14d1`. The active corporate Guide now holds the unresolved (hb)/(hc) paragraph chain without approving either removal or continuing exemption. The [additive correction ledger](../../evidence/ledgers/malawi-corporate-label-repair-20261101/correction-ledger.md) supersedes the old corporate ledger row 12 and destination-map removal description for current reading; those historical files remain unchanged.
+
+The reviewed PR 1216 formation, cross-border and listed-share additions, together with this bounded corporate correction, are accepted for publication as conspicuously conditional, partial source research. This supersedes only the blanket publication nonacceptance in the [earlier focused closure](../../evidence/ledgers/malawi-review-closure-20261101/closure.md), the [Act 3 delta review](../../evidence/ledgers/malawi-act3-review-20261101/review.md) and their corresponding historical README checkpoint wording. Their operative-law and live-use findings remain effective. Historical findings and receipts remain immutable; the older references to no publication acceptance do not bar this conditional research publication.
+
+F4 remains OPEN. Actual appointed TAA/2021 cutover notices including the identified GN 21/23 chain, complete operative/currentness chain, general-law commencement and period allocation, the paragraph-label mismatch and every other stated job hold remain unresolved. All nine Guides retain their live-use stops, and all seven domains remain partial. No operative 2026 position, live calculation, withholding, payment, filing, accountant attestation or country completion is approved. The earlier 67-record/four-case and 29-record/two-case acceptances retain their original boundaries. This is content publication readiness only; required GitHub checks and a genuine native approving review remain separate merge gates.

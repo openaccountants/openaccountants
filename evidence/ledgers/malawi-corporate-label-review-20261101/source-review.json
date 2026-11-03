@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "source": "tax-dec2025",
+      "pdf_sha256": "7b88a2aedc98847d243abfcd651869b5ff106df71e06f9cf5f0a9542a306fc46",
+      "bytes": 164670,
+      "page": 4,
+      "independently_extracted_text_sha256": "be6c3e9c8fbfce321911769716324e4669d40729f04a69be42badcd81fe7ac85",
+      "visually_read_image": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/malawi-pack-2026-11-01/sources/tax-dec2025-page4.png",
+      "image_sha256": "264277fa54d7106b8d76191ff20071122e7ae202b2ce1cf271c686453386cff8",
+      "read_on": "2026-11-01",
+      "scope": "actual narrow original page and neighbours on that page; no full-law/currentness reread",
+      "fresh_fetch": false
+    },
+    {
+      "source": "tax-principal",
+      "pdf_sha256": "381000c90309e1685cbb6f9e5ee338e14307978e56cf9b50faae2971c45f60e2",
+      "bytes": 822241,
+      "page": 86,
+      "independently_extracted_text_sha256": "7fb6202548cf686e3490a5f07c49adb21775b7f4f820123d6193277fa90104c0",
+      "visually_read_image": "/tmp/mw-share-independent-review/principal-86.png",
+      "image_sha256": "23726c85a5479b42fb82d64dbc446a82eb22ae1a7aa44add733301b11949db65",
+      "read_on": "2026-11-01",
+      "scope": "actual narrow original page and neighbours on that page; no full-law/currentness reread",
+      "fresh_fetch": false
+    }
+  ],
+  "verdicts": [
+    {
+      "id": "C1/S19",
+      "verdict": "PASS",
+      "reason": "Original Act36p4s5 literally deletes(hb). Neighbouring66B/s6 text confirms this is First Schedule amendment, not an OCR/ledger label."
+    },
+    {
+      "id": "C2/S20",
+      "verdict": "PASS",
+      "reason": "Original historical principalp86 has(ha)interest,(hb)deposit interest,(hc)listed-share one-year exemption,(hd)personal/domestic assets. Paragraph-label equivalence is not established."
+    },
+    {
+      "id": "C3",
+      "verdict": "PASS",
+      "reason": "Corporate1.4 expressly supports neither removal nor continued availability and holds earlier/straddling gains, consistent with accepted S19/S20 and shareGuide66."
+    }
+  ],
+  "independent_accepted_rows_reopened": 2,
+  "other29row_review_not_repeated": true,
+  "new_legal_conclusions": false
+}

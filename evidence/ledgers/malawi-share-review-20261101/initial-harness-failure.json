@@ -1,0 +1,1 @@
+{"failed_check":"Independent old-topic reconstruction, terminal block newline", "result":"Reviewer harness initially dropped the final newline in each file. All eight final mapped blocks preserve it. Harness corrected to retain source terminal newline; this was not a Guide or writer-map defect.", "guide_or_prior_evidence_edited":false}

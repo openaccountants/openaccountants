@@ -1,0 +1,92 @@
+{
+  "head": "245cc5692e07d82581cbbfdf7b1255c776e2f7f4",
+  "content_head": "c28f56992498fad54901da39966ff87af897da84",
+  "inputs": [
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/baseline.json",
+      "sha256": "f00953b0d8aeeec3940e6827d7bbd518589b549dbd1a824bf5ce31280f428a0c",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/cases.json",
+      "sha256": "469dd05963a50fd94d77a5e3debbcbfaa373ddb5baf11778f176075379e2ebc1",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/mw-listed-share-withholding.json",
+      "sha256": "c73f0b9d5922b7bc5bfcc9949fa62e735ebdd26aee1a9d0c95b477b147d9f2b1",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/mw-listed-share-withholding.md",
+      "sha256": "2385437f04c7f95f74ad3820ab1a3f0897a769398155cb714e6af6d565b6b076",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/old-topics.json",
+      "sha256": "ca31cea704e7807b96facd141244e3695ac907e1718b24f2de8ae04e949f857c",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/old-topics.md",
+      "sha256": "f349ee99cb5c604b651357d64b9983b2e74c32dd4b699481559487c48bc77778",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/pre-commit-validation-initial.json",
+      "sha256": "a4db6ff41968f3d1ab5134b5c4a2c7e428f4c270d3793344a1e43dbdc1c22a63",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/pre-commit-validation.json",
+      "sha256": "2c28a1ae22ad059531f8c860a274cf268339e003bd8a374ad5a27f91a7d3424e",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/preservation.json",
+      "sha256": "40ad8e1832e70ca93dc2f5841444a67f12ba2216aac61bba7649d6370bcd030f",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/quote-checks-initial.json",
+      "sha256": "21b48229454eb1b343a8797bb169d19b4a8c2ce8e5be7e7582ee0610146cee36",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/quote-checks.json",
+      "sha256": "8202e4312aef84e4bcf1d53a7f4984d2837bfb06c12b9eb99f3c6edae61058f3",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/source-read-manifest.json",
+      "sha256": "7e6dee2af8f17cb603e7e00c4205891004c58fb9c7234a0e0050f0506343b180",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/validate-candidate.py",
+      "sha256": "73bbd59356cbccaf364d84decd1f2ac7bef0a95a178b023567cd3aac4a523ad3",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/visual-read-hashes.json",
+      "sha256": "28b0b9c823d6d27a77a7c9da660fac1d09054ea6d53b14fadcf69b020ab5c4a0",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/writer-record.md",
+      "sha256": "987b4d3a1055231642d93b34d4c4a9cc14018ad22766dfc64f866699f403e738",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "skills/malawi/README.md",
+      "sha256": "3f467a7d1b0d35d281795189366fbd7e85fc812e21cab30466ff372ba35e8cd0",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    },
+    {
+      "path": "skills/malawi/mw-listed-share-withholding.md",
+      "sha256": "dadf1168b02e6983ba5f5eb5704f93f99aef70ef01b57b43ece40cb33963309c",
+      "reviewed_committed_bytes_equal_content_manifest": true
+    }
+  ],
+  "read_only_review": true
+}
