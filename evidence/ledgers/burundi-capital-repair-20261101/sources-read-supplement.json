@@ -1,0 +1,22 @@
+{
+  "G21": {
+    "id": "G21",
+    "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+    "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+    "path": "reviewer-capital-20261101/gazette202103.pdf",
+    "sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+    "bytes": 676925,
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Actual complete order arts. 1–26, physical PDF 30–33 / printed 337–340, read in full with all correction-table rows and neighbouring clauses; all four pages visually inspected. Actual title is 214bis; art. 26 commences on signature, 5 March 2021. Other gazette acts not substantively reviewed."
+  },
+  "V25": {
+    "id": "V25",
+    "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+    "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+    "path": "reviewer-capital-20261101/valuation-order2025.pdf",
+    "sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+    "bytes": 5751411,
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Actual signed original PDF pages 1–4 and 11–12 visually read: complete operative arts. 1–7, beginning annex I and annex III, definitions, higher contractual market-value condition, valuation-input clauses, contrary-law repeal and signature-day commencement. Annex pages 5–10 not substantively reviewed. No tariff is certified as current; continuing 2026 effect/current replacement and actual-property application remain held."
+  }
+}

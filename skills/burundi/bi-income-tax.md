@@ -9,11 +9,11 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: income-tax
-version: 1.2
+version: 1.3
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
-# Burundi: individual business and rental income for 2026 v1.2
+# Burundi: individual business and rental income for 2026 v1.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Burundi.
 
@@ -29,7 +29,7 @@ Use for individuals under income law arts. 19–29. A Burundi resident includes 
 | Ordinary individual business profit outside quarterly micro regime | 30% with minimum 1% of turnover where taxable profit < turnover / 30; check statutory free-zone exception | 2026 | [Art. 21](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf) |
 | Individual annual business turnover <= BIF 25,000,000 | Quarterly return at 1% of quarterly turnover; above this annual threshold, annual income return and simplified/full books as appropriate | 1 January–30 June 2026 | [Art. 180](https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf) |
 | Same quarterly business rule continued | Annual threshold BIF 25,000,000, including equality; 1% quarterly turnover | 1 July–31 December 2026 | [Art. 190](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf) |
-| Individual capital income and individual gains category | 15%, subject to the specific base/exemptions and source withholding; not a corporate trading-gain rate | 2026 | [Arts. 23, 88–93](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf) |
+| Individual capital income and individual gains category | Use [capital income and disposal gains](bi-capital-income-tax.md#rates-bands-and-thresholds) for the exact rate, base and exemptions; payer withholding stays separate | 2026 | [Arts. 23, 88–93](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf) |
 
 ## The base
 

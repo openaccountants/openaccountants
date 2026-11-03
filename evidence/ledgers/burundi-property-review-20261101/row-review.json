@@ -1,0 +1,601 @@
+{
+  "frozen_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "read_date": "2026-11-01",
+  "row_count": 66,
+  "rows": [
+    {
+      "id": "P01",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "252",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF249/printed246",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "Final art.252 read with arts.249–251 and signature; 1 January 2026 commencement confirmed visually, physical249/printed246."
+    },
+    {
+      "id": "P02",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "277",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF267",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "Final art.277 read with arts.275–276 and signature; 01 July 2026 commencement confirmed visually at physical267."
+    },
+    {
+      "id": "P03",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "2",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF23/printed187",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.2 expressly makes the annex integral and identifies three duty types; this is not a claim that historic tariffs are the final 2026 bill."
+    },
+    {
+      "id": "P04",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "3(4°)",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF23/printed187",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Full art.3(4) includes joint acquirers, buildings/parts, inter vivos, death and enforceable judgment; ledger summary is accurate."
+    },
+    {
+      "id": "P05",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "138(b)",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January full art.138(b) distinguishes VAT-exclusive rate base from qualification by the higher market/counter-expertise value. Case2 expressly assumes the taxable base equals that evidenced amount."
+    },
+    {
+      "id": "P06",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "138(b)",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January text says égale ou supérieure; equality at BIF500m qualifies. No exclusive-threshold error."
+    },
+    {
+      "id": "P07",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "146(b)",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF44",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July full art.146(b), including its preceding vehicle limb and following property limb, confirms5% VAT-exclusive base for built/unbuilt property/fractions."
+    },
+    {
+      "id": "P08",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "146(b)",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF44",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July text says égale ou supérieure at BIF500m. Both alternative valuations and higher-value selector retained."
+    },
+    {
+      "id": "P09",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "138(c)",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January138(c) first says à partir du troisième then specifies10% if le troisième meets threshold. No5%+10% stacking; later-acquisition interpretation expressly held."
+    },
+    {
+      "id": "P10",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "138(c) final sentence",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "Final purchaser-liability sentence follows the complete property clauses, not an annual wealth schedule. No payer reversal."
+    },
+    {
+      "id": "P11",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "146(c)",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF44–45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July146(c) spans physical44–45; continuation read through10% and purchaser sentence. Same bounded third-property treatment as January."
+    },
+    {
+      "id": "P12",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "146(c) final sentence",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF44–45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July final sentence makes acquirer liable. No residence concession appears in these clauses; none invented."
+    },
+    {
+      "id": "P13",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "140",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January140 expressly replaces annexIV, fixes0.5% total claim/credit, and includes BIF50m cap. Full clause visually checked."
+    },
+    {
+      "id": "P14",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "148",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July148 fully replaces annexIV at0.5% total claim/credit and ends without cap; following149 begins separately. Importing January cap would contradict this replacement."
+    },
+    {
+      "id": "P15",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "142",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF42",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January142 A/B/C/D/E rates150000/100000/50000/25000/12000 BIF per are visually confirmed; joint order required for category composition/location/application."
+    },
+    {
+      "id": "P16",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "142",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF42",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January142 maximum3000000 BIF per title confirmed; it does not cap all conveyancing taxes."
+    },
+    {
+      "id": "P17",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "150",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45–46",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July150 continues from physical45 onto46; all five per-are rates and joint-order clause read. No address-to-category inference made."
+    },
+    {
+      "id": "P18",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "150",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45–46",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July150 maximum3000000 BIF title value/fee read in context after rates and before implementing order."
+    },
+    {
+      "id": "P19",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "139",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January139 uses un pour mille and visible1‰; approved estimate, urban house, serviced/unserviced land and prior authorisation conditions retained. Separate missing permit-insurance prerequisite R2."
+    },
+    {
+      "id": "P20",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "147",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July147 uses un pour mille and visible1‰ despite OCR1%; full clause and fines read. Separate missing permit-insurance prerequisite R2."
+    },
+    {
+      "id": "P21",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "4",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.4 exchange uses agreed value of the prestation giving higher duty if monetised. Rule is valuation, not a new2026tariff."
+    },
+    {
+      "id": "P22",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "5",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.5 three triggers, certified/signed foot-of-deed declaration and registrar/two signing witnesses for non-writer all confirmed."
+    },
+    {
+      "id": "P23",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "6–7",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.6 general market-value floor and art.7 BIF contract currency match; special arts.8–10 rules kept next to them."
+    },
+    {
+      "id": "P24",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "19–20",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF25/printed189",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Arts.19–20 registrar substitution/expertise and competent local court ordered expertise on parties request confirmed; no final value appeal result invented."
+    },
+    {
+      "id": "P25",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "8",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.8 expressly75% full-ownership-market-value floor for priced usufruct including limited time; undetermined price uses full market value."
+    },
+    {
+      "id": "P26",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "9",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.9 expressly distinguishes usufruct reserved by transferor versus not reserved; literal reference to art.6 retained rather than inventing actuarial formula."
+    },
+    {
+      "id": "P27",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "10",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.10 exemption is proportional-only, fixed duties remain, and prior full-value payment must be by bare owner or predecessor from whom rights derive."
+    },
+    {
+      "id": "P28",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "11",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.11 cumulative dues for entire duration confirmed; no sale tariff assigned."
+    },
+    {
+      "id": "P29",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "12–13",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF24/printed188",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Arts.12–13 distinguish remaining dues on transfer of emphyteusis from full-market-value underlying property; both read fully."
+    },
+    {
+      "id": "P30",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "14",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF25/printed189",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.14 State/administrative establishments receive three-duty exemption only inward; communes proportional-only and inward. Principal-text proposition passes, but current gift-to-State/subdivision exemption overlay missing from Guide: R4 (January207/July226)."
+    },
+    {
+      "id": "P31",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "15",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF25/printed189",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.15 legal-personality religious/scientific/philanthropic inward gratuitous transfer and same-nature outward institution conditions read; proportional-only. Do not extend this limit to qualifying gifts to State/subdivisions under budget overlay R4."
+    },
+    {
+      "id": "P32",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "103–104",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF31",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January103 pre-emption for understated built/unbuilt disposal and104 ministerial tariff update read; unavailable order correctly held, historic annex not made a current quote."
+    },
+    {
+      "id": "P33",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "108–109",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF33",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July108–109 same pre-emption and joint minister tariff update confirmed. No inference that search absence repeals a tariff."
+    },
+    {
+      "id": "P34",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "94, 226–227",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF30and54",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January94 undefined-use supply/coefficient and226–227 gifts/mixed-use/implementing order read. Routing is bounded; no unverified full VAT allocation asserted. Sources scope needs R3."
+    },
+    {
+      "id": "P35",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "95, 246–247",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF31and61",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July95 adds natural-person undefined-use industrial/commercial location gate;246 related-person gift exception and repeated-gift text and247mixed-use implementing order read. Guide routes computation, does not claim universal family exemption."
+    },
+    {
+      "id": "P36",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "23",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF25/printed189",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.23 initial extract obligation and60calendar-day validity confirmed; full continuation contains separate weekly notary duty missing from Guide, R1."
+    },
+    {
+      "id": "P37",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "25",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF26/printed190",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.25 applies where changes affect consistance since title; survey/sketch/title updating and underlying registered real-right cases retained."
+    },
+    {
+      "id": "P38",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "141",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41–42",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January141 full authentic-form/deposit requirement and ministerial format order read across41–42; Guide avoids using it as proved operational form."
+    },
+    {
+      "id": "P39",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "141",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41–42",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January141 fees/taxes must be mentioned and exigible no later than30days after authentic signature; distinct from art24communication60days."
+    },
+    {
+      "id": "P40",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "149",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July149 full authentic-form/deposit/format-order clause read. Urban lease wording retained; no outside-city exemption invented."
+    },
+    {
+      "id": "P41",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "149",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July149 repeats no-later-than30days after authentic signature fee/tax schedule; no merger with60-day registration clock."
+    },
+    {
+      "id": "P42",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "24",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF26/printed190",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.24 titled-property/real-right mutation communication to territorially competent registrar within60days following signature; no invented working-day unit."
+    },
+    {
+      "id": "P43",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "32",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF27/printed191",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.32 communal-certificate sale requires buyer conversion within60jours ouvrables from signature; distinct from art24."
+    },
+    {
+      "id": "P44",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "217",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF53",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January217 explicitly requires built-property title-transfer dossier to contain fire-insurance certificate. Art215 separately relevant to building permit, R2."
+    },
+    {
+      "id": "P45",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "237",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF60",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July237 repeats built-property transfer fire-insurance dossier requirement; neighbouring235 independently conditions building permit, R2."
+    },
+    {
+      "id": "P46",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "26",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF26/printed190",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.26 request within8days following constitutive deed plus updated expertise value at deed date under banking law; registrar register/sign/seal retained."
+    },
+    {
+      "id": "P47",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "26",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF26/printed190",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.26 final sentence forbids mandate-to-mortgage annotations and partial inscriptions; no unsupported secured-credit fraction chosen."
+    },
+    {
+      "id": "P48",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "30",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF27/printed191",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.30 communal land services condition, debtor/grantor/possible surety and alternative competent issuers retained; certificate is not presented as general tax clearance for every sale."
+    },
+    {
+      "id": "P49",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "33",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF27/printed191",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.33 certificate to both creditor/debtor and references, act numbers, inscription date, covered claim, validity and renewal confirmed."
+    },
+    {
+      "id": "P50",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "142–143",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF42",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January143 five months from1January2026, holder obligation and directorate form posted on justice site read. No implied specific last-day convention or January50%fine."
+    },
+    {
+      "id": "P51",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "150–151",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45–46",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July150owner obligation and151holder application before31March2027/form read; no express earlier waiver in text, none asserted."
+    },
+    {
+      "id": "P52",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "18",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF25/printed189",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.18 entry after duties payment; challenge cannot attenuate/defer payment, restitution reserved. No claim to actual payment channel."
+    },
+    {
+      "id": "P53",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "139",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January139 requires both authorisation reference and payment proof displayed; fine wording separately identifies non-display of reference."
+    },
+    {
+      "id": "P54",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "147",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July147 same two-part display duty confirmed; no automatic combined fine inference."
+    },
+    {
+      "id": "P55",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "24",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF26/printed190",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.24 late communication1%duties/week, increases to5%if attributable to transferor; buyer damages reserved. Does not include distinct notary list breach, R1."
+    },
+    {
+      "id": "P56",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "26",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF26/printed190",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.26 late mortgage request1%duties/month borne by creditor; no monthly charge applied to transfer notification."
+    },
+    {
+      "id": "P57",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "16–17",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF25/printed189",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Arts.16–17 shortfall at least one fifth of market value triggers evaded-duty equal fine; jointly/indivisibly on transferor and acquirer if alienation contract, other fiscal sanctions reserved."
+    },
+    {
+      "id": "P58",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "27",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF26/printed190",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.27 fine equals evaded proportional duties for partial inscription/concealed total mortgage debt; assisting public/notarial officer also caught for debt/transaction-price concealment."
+    },
+    {
+      "id": "P59",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "151",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF46",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July151 expressly50%secured-title amount for holder missing first-paragraph deadline; no corresponding January fine inserted."
+    },
+    {
+      "id": "P60",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "139",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "January139500000BIF reference non-display and1000000BIF unauthorised start plus1‰expert estimate/expert cost confirmed visually; separate offences not automatically added."
+    },
+    {
+      "id": "P61",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "147",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "July147 same fine amounts, estimate basis and taxpayer expert cost confirmed visually; future implementing order held."
+    },
+    {
+      "id": "P62",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "21",
+      "source_sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "pdf_locator": "PDF25/printed189",
+      "official_url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "reviewer_note": "Art.21 two years from registration for evaded-duty/fine recovery and two years from action arising for restitution; later procedure/fraud interaction expressly held."
+    },
+    {
+      "id": "P63",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "150–151",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45–46",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "61*50000=3050000; min with3000000=3000000; separate eventual deadline fine0.5*3000000=1500000. Category and area assumed evidenced, no timely2026fine."
+    },
+    {
+      "id": "P64",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "146(b)–(c)",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF44–45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "Second499m is below clause threshold; second500m*0.05=25m; third500m*0.10=50m; difference25m. Count and taxable base expressly assumed proved."
+    },
+    {
+      "id": "P65",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "140 / July148",
+      "source_sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "pdf_locator": "PDF41 / July45",
+      "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "reviewer_note": "12bn*0.005=60m; Januarymin(60m,50m)=50m; July60m; difference10m. Full replacements read and actual chargeable period expressly assumed."
+    },
+    {
+      "id": "P66",
+      "verdict": "PASS: proposition supported within stated scope",
+      "article": "147",
+      "source_sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "pdf_locator": "PDF45",
+      "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "reviewer_note": "80m*0.001=80000; separate unauthorised estimate same amount gives80000+1000000=1080000 before expert costs. No automatic display fine."
+    }
+  ]
+}

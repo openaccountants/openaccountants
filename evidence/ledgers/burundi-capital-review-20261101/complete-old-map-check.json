@@ -1,0 +1,9 @@
+{
+  "base": "eae2a469563bc2417596ddfca2db9c43a813a290",
+  "independently_reconstructed_nonempty_body_units": 294,
+  "claimed_units": 294,
+  "multiset_equal_after_outer_whitespace_normalization": true,
+  "all_exact_claimed_bytes_and_destination_checks": "old-topic-review.json",
+  "original_predecessor_complete_bytes": "../burundi-capital-20261101/predecessor-bi-income-tax.md.txt",
+  "meaningful_old_units_removed": 0
+}

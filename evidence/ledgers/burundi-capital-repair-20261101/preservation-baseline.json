@@ -1,0 +1,718 @@
+{
+  "frozen_writer_commit": "29c8b477f1d659c0042a6ae9de5b10ef615a98d0",
+  "review_freeze_sha256": "d979284df7a131f493db0c6b347fad58657d6296a3d4d1b44c386d758c984001",
+  "prior_tracked_files": [
+    {
+      "path": "evidence/ledgers/bi-company-formation.md",
+      "git_blob": "d6b27b19a6b6c7a28c8a4c180cceaff982a2b902",
+      "sha256": "cb51754745b070afdcfd5303b65661f05cba18bbe5bd51fe42d63be60d8e94e6",
+      "bytes": 4924,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-corporate-income-tax.md",
+      "git_blob": "d3b5db43d4c7af0fd6af3d8a48dd2e50f307c400",
+      "sha256": "d59520bc4ccdf854ca9f626b6c1a7910e10410c69409c5a0a002c6754bcdbcb1",
+      "bytes": 7517,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-cross-border-tax.md",
+      "git_blob": "b744eac3f2d957490040cf552625c6a255eae936",
+      "sha256": "2bdb9ffee47dc5201f1e9f921ae01223e94033c786b9e19743defec0f77162b9",
+      "bytes": 5448,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-income-tax.md",
+      "git_blob": "4047ae2f45f6f327ecbc50a396bbf30a1577919d",
+      "sha256": "bf7f6ff5d99c676964ce3b0c744d9461acf29ea70ebd170d5f6d3395c6c7a912",
+      "bytes": 8165,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-old-topic-destinations.md",
+      "git_blob": "b8fdf1c2bccb038385fd302c41e7ff4bda7385fe",
+      "sha256": "1fb7518e1abd651a4f913f0237699878265f120f9797d9919441a9794545c16d",
+      "bytes": 13657,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-payroll-social.md",
+      "git_blob": "a4863f1ffa5a55c6ef0feaad3ce5b1b7215c2b66",
+      "sha256": "0b47d36910d3b1de37a86d19f2c62528dec925712845d7172e37bd391510dbb8",
+      "bytes": 6324,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-tax-overview.md",
+      "git_blob": "b577b359edb4542efcbfb3ef56d550ecd5b10b9c",
+      "sha256": "900dbdd365892e9945b91bb1b9e2491c2a924126028afe3c0a08c8d30afac6fb",
+      "bytes": 4465,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-transfer-pricing.md",
+      "git_blob": "350e96e13c7426005964565e7b38a1df7b213b3e",
+      "sha256": "13ed7436227a2ff231e2707c95fef7917321224bfc3d0519b6224112646c09cb",
+      "bytes": 3825,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/bi-vat-gst.md",
+      "git_blob": "00878df372349704133334d7090fba91946400f5",
+      "sha256": "da1a6e447e56d890bfe637e3722c81e98148545eb563910b0dcd8fe598616da5",
+      "bytes": 8260,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/README.md",
+      "git_blob": "abf9481c16e9d6457e5b5afea686459a1a310c00",
+      "sha256": "a3099b778149ce0461170ef6f47a80efc76d0c5fdc5c451acf8b53aa3c525e68",
+      "bytes": 3957,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/bi-capital-income-tax.json",
+      "git_blob": "8550c438521375e0e05ee3c5b50f2adebaaff3f5",
+      "sha256": "b166af931354bf7a20e98853d889479f0a189b96f15953a10727b5440cda9dc2",
+      "bytes": 54568,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/committed-validation.json",
+      "git_blob": "58313ba3fbbe174f0400da545fbc601e768a14be",
+      "sha256": "c05b32fdb8f32ade40adf1ccefd327b083abcdfb175cca64cd322aa10c8d9c08",
+      "bytes": 3682,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/freeze-receipt.json",
+      "git_blob": "3ce143883de925e6c2bf51ddfeac8de7ed7821ad",
+      "sha256": "9d63273931e80b8a4cce14d46fddcb1d564b18000a1688a2d4b9354af66aad5c",
+      "bytes": 5176,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/ledgers/bi-capital-income-tax.md",
+      "git_blob": "6478a487eb903517ab0046becb8d6cf8198673da",
+      "sha256": "af1c345d267f55b48f030a70132fd3d1ec7f2464bf777f03ae2f05cee6464f0a",
+      "bytes": 23097,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/old-topic-destinations.json",
+      "git_blob": "2ea9c39b2824955a34c9ce4daec56336733d9600",
+      "sha256": "e2e3e7b6aa8ff14b0b2498088395630ae5d352d3e470d09494c3ceb528b776fb",
+      "bytes": 250058,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/old-topic-destinations.md",
+      "git_blob": "33d9bbbc0456f1cf689da12f688df0cb2e8048de",
+      "sha256": "e99ed86554d5a1d8a3750b2de8b6d2029ab57cc6143e1456ac4dd74f41c57876",
+      "bytes": 2400,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/permitted-old-guide-transform.json",
+      "git_blob": "2c27f270728ad1b79ca25e5218e3b43c9b1bef5d",
+      "sha256": "4bc16f3665a98390b1319e71a4f9c7a9efc82abff0edfdf5bb517eab11d71f7c",
+      "bytes": 1596,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/precommit-validation.json",
+      "git_blob": "d04890b9f980bb4b3ecc382e4b9d20ebf857ca02",
+      "sha256": "29996357751cce2e475ddee589000bb30621269d7bd095de55a119b4ca8aa241",
+      "bytes": 2607,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/predecessor-bi-income-tax.md.txt",
+      "git_blob": "caac2c1ebc08b1619519a6d77f04059858f5d183",
+      "sha256": "be4af87235ecb84a6512f3006f5c229037d7f59816147c525d8574222f500117",
+      "bytes": 17600,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/preservation-baseline.json",
+      "git_blob": "18780203726e7394a298c32e26ad546d6fb7b577",
+      "sha256": "6a934ba838a04fed567f298eadb405a515521ca1f92e97c237c60b119c9ebb5f",
+      "bytes": 20546,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/reviewer-handoff.md",
+      "git_blob": "25510a60dc056f53ec957c3dc6195d1b37c13ad4",
+      "sha256": "33ccaa09f1858dbe48d1ab79ea271a08b57d20d1527dd711f3ef375146c52197",
+      "bytes": 2655,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/run-writer-validation.py",
+      "git_blob": "d1f0d72c497ed5335fed8965f33c9edab8459ae1",
+      "sha256": "52c9ff16c4e5f5db945d62841fda6859c20fed8e935589222f2bfbc29f12fcc2",
+      "bytes": 1778,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/source-artifacts.json",
+      "git_blob": "9352c15cc640a7aae34c9831b81336be5d86c50b",
+      "sha256": "a00942c6042b55a3b36c1e448eceff42f0c4b09530a3e4ecbaea0b99ab93071d",
+      "bytes": 3793,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/source-routes.json",
+      "git_blob": "7081d9ad6fbf6100ce195e07787dc24b10d1c5b1",
+      "sha256": "90f22f27c68e45cc957458b65ba2bd33d7c11bf0990391421a169b2eb9a7f64f",
+      "bytes": 2908,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/sources-read.json",
+      "git_blob": "636c41959d52cf6de3801a221de39acdf56fea8d",
+      "sha256": "6ad77b0fea6e83c433de5f256f358125f715e23c6fee012f275f9e31bda4b7c8",
+      "bytes": 3999,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/staging-attempts.json",
+      "git_blob": "89db4a18ef55a7ac5a83abaf81aa9d45c6cc47c2",
+      "sha256": "c9d6c116864171bfc43fd41861ed4f613d6e92e696502ae41a00e88b6767a4b8",
+      "bytes": 584,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/writer-check.py",
+      "git_blob": "70049f60cdbb76eba86d98243d413bbaec0912f5",
+      "sha256": "6484e2b69d8335426694d52af8f77a8b291701cdf630c2ee29d2dc09944f1c95",
+      "bytes": 4143,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/README.md",
+      "git_blob": "e9ef748d2da283d231c997878255094ae4979c77",
+      "sha256": "58b1228774b687585eeae7cb4d22b14347e46bd18c95ffb50f73bac593d970a6",
+      "bytes": 637,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/bi-property-transactions.json",
+      "git_blob": "fa95b1a80d413489d96503fefc67261792ad9300",
+      "sha256": "33ada1d9a1635e302a5f9639b126afd9895a8a364bd8c3a5ffb272b9c8e334e7",
+      "bytes": 81244,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/committed-validation.json",
+      "git_blob": "beb7300ff441913db7d85864fd8ca4683d49aafb",
+      "sha256": "51f5cccf6a76c2086705997f385404cb8fbc1e525f2d2ad3ef98dc8cadb0aedd",
+      "bytes": 2696,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/freeze-receipt.json",
+      "git_blob": "77d89f710b47021b7f9e34af9820d0cc0eb12043",
+      "sha256": "2520c6a717bac02e2ca0fa64f82fa0a741b6e50af551b214e2e1e6123f45b462",
+      "bytes": 3219,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md",
+      "git_blob": "312e08b0a15c155cffb277cf3f6eba678363d293",
+      "sha256": "7913338e454169036e7053cedbf69270a4189d8a0ecf5da6c44b5e84933817f5",
+      "bytes": 38210,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/old-topic-destinations.json",
+      "git_blob": "58690bbbbea214ffc6da429da4c8b1341b08a933",
+      "sha256": "a0b3069fe2ceac2a494defad1e4ace75abfe8d56ee314ae8c1c169fb0b583043",
+      "bytes": 641,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/old-topic-destinations.md",
+      "git_blob": "cbd82a84f52a36d9ca052ffe69eb16116fe45a08",
+      "sha256": "217d7fd97cae51d19a63708936f3ac9b9473a92fc0428345c37224f251f1212f",
+      "bytes": 480,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/preservation-baseline.json",
+      "git_blob": "958898ee33180de71bc382f21aab25c9bb3709d8",
+      "sha256": "2fe86d8d0d38479e46924d8afd5e19ef89b0c784fa709c7734d0f7113657b1ed",
+      "bytes": 6878,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/readme-change-record.json",
+      "git_blob": "f0605af81403fd926d8c713cdabbf03304cd1bde",
+      "sha256": "d433dc1aa5b9f07085b19f922b6ec02c283cb3f06e1c14e3aaf416bbd38a0781",
+      "bytes": 404,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/repair-candidate.json",
+      "git_blob": "34cf801921468aca7abbdf607bd558503a08f338",
+      "sha256": "dc19d6b9927f66720018232514936290e671a102368eea4c7e56b52571d17bbf",
+      "bytes": 1300,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/repair-checks.json",
+      "git_blob": "ef85628a4cb8c2af6b3fa9865a87f0cd32da00cb",
+      "sha256": "a1327b69cc8aa50a8e94fe9947e4006a8ce58a34d000908d02b5f8815646f6af",
+      "bytes": 1615,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/repaired-sources-read.json",
+      "git_blob": "f289b13e0c24cebe90060ae40cad4611a87eb08c",
+      "sha256": "2a4e1e6f5625865c799580903945e46df757670ecaa3dcee6cbdeafe86051f35",
+      "bytes": 1567,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/reviewer-repairs.json",
+      "git_blob": "800829284c2dc39a9da743e96fb1cd94daad314b",
+      "sha256": "51393ac5f6d22151e7ea09eba7edac0363212b50fbfa40bd7f6e12ce779050eb",
+      "bytes": 7874,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/source-identities.json",
+      "git_blob": "f56e801377e64d5fc230d2b74edd4b540811623e",
+      "sha256": "01770649e02f3be57449b3977db721b39fb469f10f7289911201f91a859d49c5",
+      "bytes": 1646,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/support-source-routes.json",
+      "git_blob": "9fcf1c2e94b74526f14b6c073a75dedb5bb2177b",
+      "sha256": "41ec4323b124a23f54a52a524c108136bb0277c403eb9f013ce0515d372f6920",
+      "bytes": 1950,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/support-unresolved-routes.json",
+      "git_blob": "ec16a69ef278beb37a5ac95097629b79e658a9dc",
+      "sha256": "044b60e02385ac62767ebe1bedd8adb2d1747c0257216d2c4f9acefcf2508b6f",
+      "bytes": 1466,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-browser-routes.json",
+      "git_blob": "64a1e153a9d61b504bfb56bb6183a7df28242eab",
+      "sha256": "71c1af72c1c3b7b7e9073cf63da484a41a005c903a8a6cfd12f9e843a53d29bc",
+      "bytes": 1268,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-check.py",
+      "git_blob": "69001188b7f3ea03543b448c3d72c6c7f5df24cb",
+      "sha256": "193c486891dc42dd6d57e2f137410acabbcbe53da56158483c9b025c97f51ad9",
+      "bytes": 2148,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-precommit-checks.json",
+      "git_blob": "c789b3003cf1829e0d5ffbd0f9dd2773c01a44a7",
+      "sha256": "dada4bdf35f2826a139797edc5589c5c416138df104668b73f91a13849505d20",
+      "bytes": 1413,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-record.md",
+      "git_blob": "bfce252c8974cf3d502495100830435b53692688",
+      "sha256": "f517a5b3210fbb235cb94fe1d3ad25e4bbab21e375207e09b70b00667572851f",
+      "bytes": 3472,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/writer-source-routes.json",
+      "git_blob": "765ea54248801ce787002cbbe8c92fc067cb057d",
+      "sha256": "a3069a483a2dd209e63c62d4fb355226722ab8bbaaa17bacff4a673eb318ce79",
+      "bytes": 1045,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/README.md",
+      "git_blob": "38686ae99344266b91bb2b00e7db794d187c814d",
+      "sha256": "c6dac056ee3de210f0d39ef28f902490ea023495c78cf9bbec5ba92a687e9ecf",
+      "bytes": 10907,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/build-row-review.py",
+      "git_blob": "aa10d72716e3369d7ddc1a29b9b7f555c1213fd0",
+      "sha256": "5a1a38f67dd087bc23cd53c1d15641d15c6ee499b9e51adf2985d745a9585cd2",
+      "bytes": 11425,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/cases.json",
+      "git_blob": "6d8774e5e80acd18f0d743ce8adc222f374808bb",
+      "sha256": "ec0262dd60969881772d0d9e917c76c16688554ae72fe2fe9779618bae6c54a6",
+      "bytes": 645,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/cases.md",
+      "git_blob": "6e349648a80a9a3d6dd559c90022b1a5234cfc81",
+      "sha256": "f15fc2afe3635f92f377c7dbc2a7d150ffd17e626eccd9554d5454847714ab67",
+      "bytes": 2012,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/closure-checks.json",
+      "git_blob": "2c103bbe04aa76501256698a9d5c6186588f2a72",
+      "sha256": "61f354ab5170ae7804e61af76bae929cceca86f32f5c7b28345193085be7ce2b",
+      "bytes": 9329,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/closure-checks.py",
+      "git_blob": "a2af1b6544cc9642e34c6700bd675bd7a6a0bd9e",
+      "sha256": "1cdd7d67a3916672b79e35b5e4bac6858a65acb136943a1d9d60b427b8435788",
+      "bytes": 6167,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/closure-freeze.json",
+      "git_blob": "4f836167be7523f6fa300d36d152c2deadbc5fa3",
+      "sha256": "adc1b5d5c6bfa42fbf8d39b60418d2717a50d3b144fc56f78eb4e1285acd7b3f",
+      "bytes": 2385,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/closure.md",
+      "git_blob": "f892d526ec44f367d6427f170001d6c91aaf4f24",
+      "sha256": "43a5ae2cc22a3ffd4622d923ede211df91d15f6525c70dae73e4ea88e9de55f0",
+      "bytes": 7185,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/committed-closure-validation.json",
+      "git_blob": "20474fb3e2d75b6da511dfe0eae2354435f7483a",
+      "sha256": "b0d47f9d532363fc3c71cb37f1599a58fda9e1b25dda787a36181fa5db09a68a",
+      "bytes": 648,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/mechanical-checks.json",
+      "git_blob": "837fe759ef8ff4e867c7abba814c3c676e8e2d6e",
+      "sha256": "08d7582b5e5370735a1e8da255a08cf92d9969f28e524b53468e428db13c0f65",
+      "bytes": 11573,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/review-checks.py",
+      "git_blob": "4eb28ef1b6abda8e9d45d27f4818f22eaa4fb1e5",
+      "sha256": "d1869c2b64bf6c792e12b3c3e87b7394380deb05005393fbe31eb3c509304891",
+      "bytes": 4123,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/review-freeze.json",
+      "git_blob": "a4a069b50ccda60ef6252a0a29725b377841ae68",
+      "sha256": "e8477f4589cfb79eaf1a86665abc54d09e72af6577be63428347caae207553a9",
+      "bytes": 2145,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/row-review.json",
+      "git_blob": "9e421a1fc1ea780314922ef6d3fe84c2b159e4b8",
+      "sha256": "371d80ebc399d980db35bab8f1c19ca9aa5cc1779067a566960f355b6774a43c",
+      "bytes": 34785,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/row-review.md",
+      "git_blob": "e538b8c29098cd2b751aadbf93fdb1dae9875fdf",
+      "sha256": "bee85d46439a9c5c976cbf792dfe320af29baf201deb80d05f7a564b9cf28707",
+      "bytes": 15221,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/sources-read.json",
+      "git_blob": "cf65bffd4419535ebc3a787559aa6034662c4d9f",
+      "sha256": "8bdb342917aed6561a2640a9641ba69c6c4836c3d552a44bd77608f8c2e042dc",
+      "bytes": 5844,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/status-only-permission.json",
+      "git_blob": "6d38e0598e8479688d2e8a2b876ea0d7ebff081d",
+      "sha256": "5987350d454add474b3ecfb0af9b863d1a8657c48809e45ab435edbcf42e48d5",
+      "bytes": 3041,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-review-20261101/status-reconciliation.json",
+      "git_blob": "887aff9fe6fc145a2fda1ca2a781f908bd4bf71a",
+      "sha256": "f52097ff80299b5a19085e3233dbb3089d3c6adf15385160969afd2321f1573d",
+      "bytes": 2700,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-publication-format-20261101/format-only.json",
+      "git_blob": "1cccf838bf25da1ea98e88526fd28bc86a138f8f",
+      "sha256": "fc2335837ff8491888839d43f1601e796cabbf3f1966785129a4895115c9184a",
+      "bytes": 876,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-repair-1/pinned-validation.py",
+      "git_blob": "c4e3b66868eda26e2a2d06a991eaeb137c430a2e",
+      "sha256": "9d42c1152603b2f1577fc01a7a3e8f97f86dfdaa918e3de8b0b96efe219c57cc",
+      "bytes": 1434,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-repair-1/preservation-and-checks.json",
+      "git_blob": "7a459bf4841f80a2b135fe3c07c17f8be4ce3305",
+      "sha256": "fabb014a9787e2cc3f96cd15ca40cb7fcbb8ab1ab4206c335b58a8850062dbee",
+      "bytes": 4669,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-repair-1/repair.json",
+      "git_blob": "894c7cd1b87c31bdf9747e6f21a1048e9ca2a206",
+      "sha256": "e542d7b96f50d62981db546b517ac92fd258280aadc91484bbf4b26122f8424c",
+      "bytes": 2884,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/README.md",
+      "git_blob": "c26f404697dc7de1c0dc27328cfdfc906186b568",
+      "sha256": "e8aec5eb9c9385694e6698adf6349723b0214c909602eb927c80692053f51a71",
+      "bytes": 11538,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/build-row-record.py",
+      "git_blob": "9684f63f5c4fddc2add7220c73717956de2f57fb",
+      "sha256": "e04a857ec283269f7200c1b06d0f0685c1e83e4653206154d95f7879a412ab3f",
+      "bytes": 18136,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/examples.md",
+      "git_blob": "bbdefa5801da9915bc69416243e70095551d0b45",
+      "sha256": "8933fe1df91a005661be496df23b1506df2508938c10ab9958921f1c45e549bc",
+      "bytes": 4148,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/mechanical-checks.json",
+      "git_blob": "202004570a2c2363670d1acd9e48237e26b020b4",
+      "sha256": "c345e5a493e4e312cc573480f992649aff5edef9ddbc306182c1348965e01257",
+      "bytes": 9020,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/review-checks.py",
+      "git_blob": "8e9cd5ad53aa0ea68558228c9413e0c2e8434362",
+      "sha256": "c776e6d42af021b81c62d946805f6bd8531d8ad282be8479b223fe71850f195f",
+      "bytes": 5374,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/row-review.md",
+      "git_blob": "691bbcedb9442e9bbd183b3bfd158240ce689359",
+      "sha256": "0e1831788b8a82e8ec4db8a99b1cde9de72920160b075a7e624335ae8ca6a295",
+      "bytes": 19271,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-closure-20261101/README.md",
+      "git_blob": "016b8224be131e4b98f2a5abf991bb4fe85502d7",
+      "sha256": "fbfd8567b494c432cafd6ae4b6345344d1bb0940107eb565e16eef7623662c2a",
+      "bytes": 7839,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-closure-20261101/check-closure.py",
+      "git_blob": "ecc9699519323a56c6feb074c625ba55115e3e9d",
+      "sha256": "031adac1e277391d919404b2cf0ceaa95424285ae89cb33df6f5f5884ef717fa",
+      "bytes": 4844,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-closure-20261101/closure-checks.json",
+      "git_blob": "7b8ca21371c8c1da663512c63b25c4248a8dff42",
+      "sha256": "3ac8f4d0390019599a7001856734dbafbe1f0315974bbbf26ae220a0aa5b6728",
+      "bytes": 7796,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "evidence/ledgers/burundi-writer-20261101/README.md",
+      "git_blob": "20e1be075dc4ce181d8868df530d9395c1f4da69",
+      "sha256": "ed683ce0229cad9a7da6c7ff35547f504b4cb90de0731c6e21144ce4aae39ab0",
+      "bytes": 5677,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/README.md",
+      "git_blob": "5348abaa26c49f26fde7335fcca018c94cad8ecc",
+      "sha256": "22c30bc4c238d4a1f0861a3757728bb747194a3dd0fe55b75b69d3e3d1ecf030",
+      "bytes": 6460,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-capital-income-tax.md",
+      "git_blob": "91003bc08d10bb6cd155dd3fa08519debc220e7b",
+      "sha256": "0e8f873a93b05130fb60cedd59dc996888740b2eaebca8b874069a3d1b763e18",
+      "bytes": 23465,
+      "treatment": "literal R1–R4 repairs only"
+    },
+    {
+      "path": "skills/burundi/bi-company-formation.md",
+      "git_blob": "9e820a5efdf494a9a836a7c2d5213ac9d78202c1",
+      "sha256": "3f2d7f4ba2b90be758c3f06b07a0cc5bde6fe47a30aff6d7f6864677254068ef",
+      "bytes": 15289,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-corporate-income-tax.md",
+      "git_blob": "cf45de8f1417cb1acc67c5903f1d45fae07155b9",
+      "sha256": "68729b2118991841baf16d0a67be77bef3ff34c68b0f07bf8f50802c1a1cd526",
+      "bytes": 17781,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-cross-border-tax.md",
+      "git_blob": "1ef82646e2e8ed3f57c4b1a8c9f39ec57d22e1ad",
+      "sha256": "6f5fe932f904e7c9265e3560804717cdcdd46b841c6b99d7a8c0f61911bb024b",
+      "bytes": 17019,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-income-tax.md",
+      "git_blob": "9c3a06c76ba349f35c6a19dc140522851fb0b321",
+      "sha256": "7cb014c23ab4cf38730fb6884cc577b708de0306aa013552852fe5101d5f23d4",
+      "bytes": 17664,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-payroll-social.md",
+      "git_blob": "482370cc213119aae3814d9ad1133c6b55c50ca4",
+      "sha256": "25da97f475d107492a72c72295a10de5c008f976bd6a8a3548ff610cf73f8c7c",
+      "bytes": 17864,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-property-transactions.md",
+      "git_blob": "88e3aed894e6b3e99b51c254bc1e932512e5c363",
+      "sha256": "fe429446c3c76e2d940be8d02766fb977c39ae4938d3ea712c9bbd5e420bdd9b",
+      "bytes": 31214,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-tax-overview.md",
+      "git_blob": "f1ff99bc83b7a31ff21c3c30b0576aa420ce7698",
+      "sha256": "07ccd038e5d4c7eb1a59ec744bd883b7b7ced0ece63de2abf0f01c68f3d4db53",
+      "bytes": 15372,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-transfer-pricing.md",
+      "git_blob": "493645523c8aa508677b872db26fd5eb4080b1b9",
+      "sha256": "a9e37922274825f37554c2d375604b21c4a381ca6ac88161465ca8f7c4dc1048",
+      "bytes": 13657,
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "skills/burundi/bi-vat-gst.md",
+      "git_blob": "5e68b950face5238ef4222a977f92881271cd941",
+      "sha256": "30e37485e899594e177d14b7930058c8f6ded22969203a58c82ee57bc4641914",
+      "bytes": 20344,
+      "treatment": "byte-identical"
+    }
+  ],
+  "review_files": [
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/README.md",
+      "sha256": "5104c8f4cb196383726fba07935edf498f36df97d98bfa0748e53f7c3055c98a",
+      "bytes": 10503
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/additional-fetches-network.json",
+      "sha256": "73146b33db66df1a8a85cf763925a3ffa6b74f2507bf9f80299a5c64ebebba5d",
+      "bytes": 570
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/additional-fetches.json",
+      "sha256": "cebbcca73544cecdc968ccaabfd7286446260b6bc51df9f3fcf2efb3a27c2891",
+      "bytes": 455
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/build-row-review.py",
+      "sha256": "780e2b4528a464d62342e260d4097a181506d8a63cb0736cd953b3262d163498",
+      "bytes": 10489
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/cases.json",
+      "sha256": "15fb76172df03b81858a4fd20ae9101ea3724d172a15307d14065452a5939332",
+      "bytes": 520
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/cases.md",
+      "sha256": "06eddf73ca82cb6fa06af910fb84d411ea4e3b0db699b492dba1fdc3759b7f94",
+      "bytes": 3370
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/complete-old-map-check.json",
+      "sha256": "48cfa55f7a8673dace8b01cfcdbaa1b2ca2f3a41b63987c4eaf80d75d6ea963d",
+      "bytes": 421
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/decisive-supplemental-quotes.md",
+      "sha256": "3ad25d3cbe9618eea5ab98a57de050c2f59829d0b3cbe2302ec6bc7fd4c3cce6",
+      "bytes": 4282
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/gazette-fetch.json",
+      "sha256": "bcb8ec74884623d10ac199708aa6d913e3fe957e10319ac10c13e91b23f15bbd",
+      "bytes": 266
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/mechanical-checks.json",
+      "sha256": "3f601dfa90de3f9eb6edab2561bae0598077ede48749ec0f1b16619ea24cf6e9",
+      "bytes": 32794
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/old-topic-review.json",
+      "sha256": "00e05b4e869b82df11162e719c75b197451ee2c79cd36beafd49aa87d9855609",
+      "bytes": 267488
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/review-checks.py",
+      "sha256": "6d27625e92a7539a01d7372b98fd20003908106225b44218a36bfbbfb635c282",
+      "bytes": 5845
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/review-freeze.json",
+      "sha256": "d979284df7a131f493db0c6b347fad58657d6296a3d4d1b44c386d758c984001",
+      "bytes": 5209
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/row-review.json",
+      "sha256": "04d05b65a902f45ca58db1a5c760a0c454c7a391fc78d931190cd359660c61a7",
+      "bytes": 47163
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/row-review.md",
+      "sha256": "4cb6b458d9cbafac9ff5bc592b55999a08d2a1b6ad1130ae96d0a558358ae49e",
+      "bytes": 14582
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-review-20261101/sources-read.json",
+      "sha256": "29134c75a4bd4c28aedb5fa7668692344c61d3a416068c6fa8985efeb490dd6b",
+      "bytes": 4677
+    }
+  ]
+}

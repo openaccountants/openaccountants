@@ -1,0 +1,116 @@
+[
+  {
+    "path": "income2020.pdf",
+    "sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+    "bytes": 2174407,
+    "role": "original PDF"
+  },
+  {
+    "path": "budget2025mod.pdf",
+    "sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+    "bytes": 40392761,
+    "role": "original PDF"
+  },
+  {
+    "path": "budget2026.pdf",
+    "sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+    "bytes": 7715040,
+    "role": "original PDF"
+  },
+  {
+    "path": "form-individual.pdf",
+    "sha256": "7a35ba979bcd5eb35a24398529b7aea92e2acd74fae1814ab534e6e59434f954",
+    "bytes": 342830,
+    "role": "original PDF"
+  },
+  {
+    "path": "support-capital-20261101/portal-browser-excerpt.txt",
+    "sha256": "4047700aa57e567f986f2b3429644559cb159af643bf6d31b4e7146f56b714f6",
+    "bytes": 652,
+    "role": "observed browser text excerpt"
+  },
+  {
+    "path": "support-capital-20261101/capture-results.json",
+    "sha256": "ee4ceb29a10ff4bf743944d895303b543ae03695ea13d02bc2bf8e245980410d",
+    "bytes": 530,
+    "role": "capture metadata"
+  },
+  {
+    "path": "support-capital-20261101/forms.html",
+    "sha256": "61484107d4ada9af8f22c7610183c0ec2be7d2857007c77e904b18c74dfba5c9",
+    "bytes": 182,
+    "role": "capture attempt; errors excluded"
+  },
+  {
+    "path": "support-capital-20261101/laws.html",
+    "sha256": "61484107d4ada9af8f22c7610183c0ec2be7d2857007c77e904b18c74dfba5c9",
+    "bytes": 182,
+    "role": "capture attempt; errors excluded"
+  },
+  {
+    "path": "support-capital-20261101/orders.html",
+    "sha256": "61484107d4ada9af8f22c7610183c0ec2be7d2857007c77e904b18c74dfba5c9",
+    "bytes": 182,
+    "role": "capture attempt; errors excluded"
+  },
+  {
+    "path": "support-capital-20261101/portal.html",
+    "sha256": "61484107d4ada9af8f22c7610183c0ec2be7d2857007c77e904b18c74dfba5c9",
+    "bytes": 182,
+    "role": "capture attempt; errors excluded"
+  },
+  {
+    "path": "income2020-pages/004.png",
+    "sha256": "c1cb23f8e5c077b0e37a35eaab821bfde65e1445bd5a1462cfbb7d94f66ca29c",
+    "bytes": 135260,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "income2020-pages/005.png",
+    "sha256": "2c8af48510613ed1d1df8c086eca22b46bd64d71bf5cac8a50a7ef40755f580b",
+    "bytes": 136008,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "income2020-pages/006.png",
+    "sha256": "2a4cd0b6e5db33e3bf1d103238a639096be14f4a6faed02c9411b2f8ebff8790",
+    "bytes": 139669,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "income2020-pages/030.png",
+    "sha256": "03916c4b03c50142efcc895ae61f81bbabfd6a0692b10a2f330022a5258e110b",
+    "bytes": 139309,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "income2020-pages/031.png",
+    "sha256": "3dbf5cda55715342fe64506c2b661e76ea1dd2e4cc966774f87be60d7c38a161",
+    "bytes": 144978,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "budget2025mod-pages/051.png",
+    "sha256": "3bdb5e93b106003af50256cfc5a3ed428b342e278071cc205bf904afbf74e3b6",
+    "bytes": 1253387,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "budget2025mod-pages/249.png",
+    "sha256": "3c2a41a0bf838e03c54b54f8b543c272f19fe77d7313041c3af84cdb84a3f8c1",
+    "bytes": 664264,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "budget2026-pages/057.png",
+    "sha256": "8a776be4f8f2c0f0ba4426eb0a3e0ae998b62836556d5c4a21cede04d2d7199d",
+    "bytes": 604547,
+    "role": "visual primary page actually inspected"
+  },
+  {
+    "path": "budget2026-pages/267.png",
+    "sha256": "7b003c3165548f405f7e0ebb2aefbc34462b791b2771b23fb7b9c94aff123ee1",
+    "bytes": 346538,
+    "role": "visual primary page actually inspected"
+  }
+]

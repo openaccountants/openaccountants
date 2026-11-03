@@ -1,0 +1,74 @@
+[
+  {
+    "path": "reviewer-capital-20261101/gazette202103.pdf",
+    "sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+    "bytes": 676925,
+    "role": "actual original read"
+  },
+  {
+    "path": "reviewer-capital-20261101/valuation-order2025.pdf",
+    "sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+    "bytes": 5751411,
+    "role": "actual original read"
+  },
+  {
+    "path": "reviewer-capital-20261101/gazette-30.png",
+    "sha256": "5851d2959ed14f2bd66c67f536ad5f667eb4cd928c134fe2a15ae3ddfa4cd254",
+    "bytes": 373707,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/gazette-31.png",
+    "sha256": "ba8ba178dffe27a736d6702c54ed336613bf9c351fd5c46b203826452e121d39",
+    "bytes": 416136,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/gazette-32.png",
+    "sha256": "28b68b649404f34a9f018776341dadbf3217ea33dcc1ffaaf5584cf17f9812c7",
+    "bytes": 494719,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/gazette-33.png",
+    "sha256": "2cac53f95260c0ed26f0252d907ac7cc9fac1adc8c556c44e45ca67d0e10b505",
+    "bytes": 495030,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/valuation-first.png",
+    "sha256": "672809bd3a3c3ded14c0a68640de1d9f1406dfa2547af58a75395725e30f3285",
+    "bytes": 1214053,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/valuation-02.png",
+    "sha256": "a4b15884c9fddcc965d166187777dcada3c7d15276a69f4626d6973c6833df6e",
+    "bytes": 1335058,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/valuation-03.png",
+    "sha256": "0572614abbddd18ad4c9197aecb150521b7c261876f5ce0e937c7a5b387e412e",
+    "bytes": 1138798,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/valuation-04.png",
+    "sha256": "a845f25ef52af969da7562b2bae916ab6d94cf12de4171e880f26f39e71c8f21",
+    "bytes": 954486,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/valuation-11.png",
+    "sha256": "05ac138f89ad06149f0a5da77cfe8269a31dd6e249b3fdcf225a13a3d9fb3642",
+    "bytes": 857083,
+    "role": "actual primary page visually read"
+  },
+  {
+    "path": "reviewer-capital-20261101/valuation-12.png",
+    "sha256": "59007a16a08231a91d1aeae059c7f287f025f0e928d570e82c86e4486db837ed",
+    "bytes": 541854,
+    "role": "actual primary page visually read"
+  }
+]

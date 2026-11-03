@@ -1,0 +1,16 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "new_guide": "bi-property-transactions",
+  "replaced_body_units": 0,
+  "replaced_files": [],
+  "old_guide_count": 8,
+  "existing_topics": "No old Guide body rewritten, moved, cut or removed. All eight prior Guide blobs preserved exactly.",
+  "destinations": [],
+  "readme_before": {
+    "path": "skills/burundi/README.md",
+    "blob": "cab3028f81c2a5bcf8a12d8973956b515d2768f4",
+    "sha256": "b9492a1e126861e11bbf953cc550bfcb88fef03969972ddf353fd3b80da9b428",
+    "bytes": 3997,
+    "preservation": "README exact pre-edit identity; additive inventory/status edit only"
+  }
+}
