@@ -220,6 +220,35 @@ def body_unchanged_vs_main(rel, text):
     return strip(old) == strip(text)
 
 
+def check_approval_resets(rel, text, errors):
+    """An approval covers one version (docs/skill-template.md line 11).
+
+    PR mode: if an approved skill's body changes, the PR must either drop the
+    approval (no reviewed_by, tier 2) or re-approve it (a new reviewed_on).
+    Keeping the old approval on new text would put a name on words that
+    person never saw.
+    """
+    try:
+        old = subprocess.run(
+            ["git", "show", f"origin/main:{rel}"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+    except Exception:
+        return  # new file: nothing approved yet
+    strip = lambda t: re.sub(r"\A---\n.*?\n---\n", "", t, count=1, flags=re.S)
+    if strip(old) == strip(text):
+        return
+    key = lambda t, k: (re.search(rf"^{k}:[ \t]*\"?([^\"\n]*)", t, re.M) or [None, ""])[1].strip()
+    if not real_reviewer(key(old, "reviewed_by")) or not real_reviewer(key(text, "reviewed_by")):
+        return
+    if key(text, "reviewed_on") == key(old, "reviewed_on"):
+        errors.append(
+            f"{rel}: the text of an approved skill changed, so the approval no longer covers it. "
+            "Either remove `reviewed_by` and `reviewed_on` and set `tier: 2`, or have the approver "
+            "re-approve by setting a new `reviewed_on`."
+        )
+
+
 def changed_files_vs_main():
     """Files changed vs origin/main (PR mode). Empty list = nothing relevant."""
     import subprocess
@@ -538,6 +567,8 @@ def check_guides(bi, errors, warnings, only_files=None):
         scope = skill_checks.scope_of(rel, frontmatter)
         results = skill_checks.run_checks(rel, text, frontmatter)
         content_untouched = only_files is not None and body_unchanged_vs_main(rel, text)
+        if only_files is not None and not content_untouched:
+            check_approval_resets(rel, text, errors)
         for letter, name, _func in skill_checks.CHECKS + skill_checks.LESSON_CHECKS:
             problems = results[name]
             if not problems:
