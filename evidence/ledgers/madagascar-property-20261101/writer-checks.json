@@ -1,0 +1,177 @@
+{
+  "classification": "Writer checks only; no independent source review or accountant attestation",
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "preserved_files": [
+    {
+      "path": "evidence/ledgers/madagascar-publication-format-20261101/format-only.json",
+      "sha256": "f0ab81f12997a38eb94ba7e55a491dd455e823b190b9b8e57ed911044298cc56",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-checks.json",
+      "sha256": "1b2f19788147503ca9a27f50f056201ac01b3cec9547c9d9ec29110d526f3641",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-machine-checks.json",
+      "sha256": "485e790ca4ec4bc1fdd00ba2f0920dc04c0a0eb3208ab20609b77a70d52acb85",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-review.md",
+      "sha256": "797e20098705e441cd686b1c7a0f97c335dbd3b875eefc9f10e022e0c08a14a0",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-input-hashes.json",
+      "sha256": "fe6b730083c1fa81d585fa3ba74183687ce276709a5a08b1377a33270c75ea95",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-review.md",
+      "sha256": "b388593330051121b04385335ebc13e982dc9436bb65ee0118c2db3050053f89",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-quote-check.json",
+      "sha256": "c225556a77ae58f2c26dcfcb7f3ad3e8e03d470c01fa68f5850e5140521990af",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-row-review.json",
+      "sha256": "11217a54edd37875a8f58b26d557193584ee45cd898c6a024740ae43c219e751",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/machine-checks.json",
+      "sha256": "1abd67cc15983077700f473785b2ef79eb23edfaa5691dea72b9e260b8a64bd6",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/preservation-check.json",
+      "sha256": "a957eef400cc26ec67febc5cd9ee9c0877d56695419ad36f40a3da7611c829a7",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/source-hash-check.json",
+      "sha256": "587c699f4816aca6f2be1e03b75658005f175f9b0ae4ab5f8da86085db0f3da4",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/writer-repair.json",
+      "sha256": "818e08102d4ff163b29a57e3b9530e517300852532bb63a0874e35d324f1be78",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-company-formation.md",
+      "sha256": "d6bfe97eb8f594fed7f8e22ea309a9cdb31b61d4d687776b7d6a1f5494858a73",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-corporate-income-tax.md",
+      "sha256": "9dc1441e2a1aa0e9611537b76b5d177bdc5b745b6abd08dc480707f1cf8359ae",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-cross-border.md",
+      "sha256": "15fd2bcc003ca44db41b6b11fcb843cd2fe667b5b1e972460101a76a8a266c17",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-income-tax.md",
+      "sha256": "fd39053353510da35253d0f9ab6e1823b3ce574b678ae8b133e16084c682465c",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-old-topic-destinations.md",
+      "sha256": "2135557e6b1fe0c875b50846e184206a0985a946aaab17863b128736110eab71",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-payroll-social.md",
+      "sha256": "eabe180cea4971b3521bc5c150b2043044935ce5158db126c65fad9eaead88a4",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-tax-overview.md",
+      "sha256": "5623d46a1bcea0582b261d84b7af0feafcf90867a16477b4013c58f703d3da91",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-transfer-pricing.md",
+      "sha256": "aba45a767d60ef2c0a50c944a36cb3ab368b53a1b102011b199178c9f626754c",
+      "preserved": true
+    },
+    {
+      "path": "evidence/ledgers/mg-vat-gst.md",
+      "sha256": "f899597b1881f496ce991c476efb98240062f24ffc89c6cbffd0a26f9818dc26",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36",
+      "preserved": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3",
+      "preserved": true
+    }
+  ],
+  "ledger_rows": 50,
+  "quote_substring_check": "All quote anchors found after whitespace normalization; not a substitute for reading conditions",
+  "source_capture_count": 8,
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "worked_cases": {
+    "exit": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n"
+  },
+  "new_guide_sha256": "75f8d4a60134a9d9347aee72b6c3d57b35077bda3622bfaa2aa3da8daefec30d",
+  "readme_additive_only": true
+}

@@ -1,0 +1,1039 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "new_job": "mg-annual-property-tax",
+  "old_guide_body_replacements": 0,
+  "topics": [
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-company-formation.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-company-formation.md:19",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        23,
+        33
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-company-formation.md:23",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        34,
+        37
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-company-formation.md:34",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        38,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-company-formation.md:38",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-company-formation.md:46",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-company-formation.md:50",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        54,
+        88
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-company-formation.md:54",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        89,
+        92
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-company-formation.md:89",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        93,
+        105
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-company-formation.md:93",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        106,
+        118
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-company-formation.md:106",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:19",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        23,
+        35
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:23",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:36",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        40,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:40",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:46",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:50",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        54,
+        90
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:54",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        91,
+        94
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:91",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        95,
+        108
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:95",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        109,
+        121
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:109",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-cross-border.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        16,
+        19
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-cross-border.md:16",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        20,
+        30
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-cross-border.md:20",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        31,
+        34
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-cross-border.md:31",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        35,
+        38
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-cross-border.md:35",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        39,
+        42
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-cross-border.md:39",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        43,
+        46
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-cross-border.md:43",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        47,
+        78
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-cross-border.md:47",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        79,
+        82
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-cross-border.md:79",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        83,
+        90
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-cross-border.md:83",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-income-tax.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-income-tax.md:19",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        23,
+        38
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-income-tax.md:23",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        39,
+        46
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-income-tax.md:39",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        47,
+        50
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-income-tax.md:47",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        51,
+        54
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-income-tax.md:51",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        55,
+        58
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-income-tax.md:55",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        59,
+        92
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-income-tax.md:59",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        93,
+        96
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-income-tax.md:93",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        97,
+        110
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-income-tax.md:97",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        111,
+        123
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-income-tax.md:111",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-payroll-social.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-payroll-social.md:19",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        23,
+        34
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-payroll-social.md:23",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        35,
+        38
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-payroll-social.md:35",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        39,
+        42
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-payroll-social.md:39",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        43,
+        46
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-payroll-social.md:43",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        47,
+        50
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-payroll-social.md:47",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        51,
+        84
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-payroll-social.md:51",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        85,
+        88
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-payroll-social.md:85",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        89,
+        103
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-payroll-social.md:89",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        104,
+        116
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-payroll-social.md:104",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-tax-overview.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-tax-overview.md:19",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        23,
+        35
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-tax-overview.md:23",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-tax-overview.md:36",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        40,
+        43
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-tax-overview.md:40",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        44,
+        47
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-tax-overview.md:44",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        48,
+        51
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-tax-overview.md:48",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        52,
+        79
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-tax-overview.md:52",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        80,
+        83
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-tax-overview.md:80",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        84,
+        98
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-tax-overview.md:84",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        99,
+        111
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-tax-overview.md:99",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        16,
+        19
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:16",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        20,
+        31
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:20",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        32,
+        35
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:32",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:36",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        40,
+        43
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:40",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        44,
+        47
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:44",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        48,
+        80
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:48",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        81,
+        84
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:81",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        85,
+        93
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:85",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-vat-gst.md:1",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-vat-gst.md:19",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        23,
+        33
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-vat-gst.md:23",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        34,
+        41
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-vat-gst.md:34",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        42,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-vat-gst.md:42",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-vat-gst.md:46",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-vat-gst.md:50",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        54,
+        87
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-vat-gst.md:54",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        88,
+        91
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-vat-gst.md:88",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        92,
+        105
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-vat-gst.md:92",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    },
+    {
+      "old_path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        106,
+        118
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-vat-gst.md:106",
+      "decision": "Preserved byte-for-byte in the same file; no body/frontmatter/platform/CTA replacement",
+      "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_file_sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3"
+    }
+  ]
+}

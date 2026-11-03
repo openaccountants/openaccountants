@@ -1,0 +1,62 @@
+{
+  "target": "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78",
+  "content_head": "918a4af3712e455678bf6084874a2f01313bdb12",
+  "scope": "Immutable initial review artifacts; this manifest excludes itself. Original writer and Guide files unchanged after review.",
+  "files": [
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/complete-old-topic-map.json",
+      "sha256": "13be77ec7c6d1e2a81ab08d5089fbb6193f8d63bed858e1da4334a603994bf9b",
+      "bytes": 40065
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/independent-cases.json",
+      "sha256": "95d1a0a248307538aaa60cd7f7db0e9c9ac077b670d5a511906365ad1f1e889f",
+      "bytes": 569
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/independent-check.py",
+      "sha256": "2c08da7f0c904c7aade03050b2d3b9459dbfab38d5207296c4bdcc9364b14307",
+      "bytes": 7752
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/independent-page-quote-check.json",
+      "sha256": "50aa06c6964852dca87ead753fd61561ecacc72ad7f9ec6bc3b386f1ee17f603",
+      "bytes": 30822
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/initial-input-hashes.json",
+      "sha256": "72c225c422d5cc6809deeda00af6235a81b0004da5755e29666fa48831e5a5cc",
+      "bytes": 3792
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/initial-review.md",
+      "sha256": "8414406052c668892de4ee8b45d76b36c6eb49f476cfa98dda0592bfd8db1476",
+      "bytes": 9943
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/ledger-row-review.json",
+      "sha256": "d5a41b23049dfbd3a4842f5e5e0ba0f747cf75d854f0447a580cbbb3e1b62cbf",
+      "bytes": 31708
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/machine-checks.json",
+      "sha256": "265bde7ea56fd6845a08cd30c6c03f10e505e91e99d6e1e61ed27c97c4ea2d10",
+      "bytes": 1990
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/preservation-review.json",
+      "sha256": "88d21b22635ad08d630ef0851ae086cada07348f6f8e122a4db770ec42421b5c",
+      "bytes": 17968
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/shape-checks.json",
+      "sha256": "ffbd53a8a6ae43cad9e3eb5452435e1db012b59853f77fa14ce7d5a708330b20",
+      "bytes": 569
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/source-integrity.json",
+      "sha256": "5a552cb821c04921037ace4a70962dd41004b4c8d7091a492fd4f62ca59415fc",
+      "bytes": 8444
+    }
+  ]
+}

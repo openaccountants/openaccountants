@@ -1,0 +1,67 @@
+{
+  "target": "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78",
+  "actual_local_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "environment": {
+    "PYTHONPATH": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps"
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/madagascar/mg-capital-income.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/madagascar/mg-annual-property-tax.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/madagascar/mg-capital-income.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (2 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

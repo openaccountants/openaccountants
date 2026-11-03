@@ -1,0 +1,41 @@
+{
+  "validated_content_head": "918a4af3712e455678bf6084874a2f01313bdb12",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "read_date": "2026-11-01",
+  "checks": [
+    {
+      "command": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 scripts/validate-guides.py --changed-only --no-index-check",
+      "chunk_id": "ac391b",
+      "wall_time_seconds": 0.589921666,
+      "exit_code": 0,
+      "original_token_count": 104,
+      "output": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/madagascar/mg-annual-property-tax.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/madagascar/mg-capital-income.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (2 warning group(s))\n"
+    },
+    {
+      "command": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 scripts/check-sync-integrity.py --base 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 --mode audit --strict-metadata",
+      "chunk_id": "eb2f45",
+      "wall_time_seconds": 0.828957583,
+      "exit_code": 0,
+      "original_token_count": 21,
+      "output": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+    },
+    {
+      "command": "git diff --check 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 HEAD",
+      "chunk_id": "001321",
+      "wall_time_seconds": 0.037493542,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "command": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 evidence/ledgers/madagascar-capital-20261101/writer-check.py",
+      "chunk_id": "91346d",
+      "wall_time_seconds": 4.4959138339999996,
+      "exit_code": 0,
+      "original_token_count": 212,
+      "output": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n{\n  \"source_rule_rows\": 46,\n  \"shape_checks\": 15,\n  \"shape_problems\": {\n    \"tax_year_current\": [],\n    \"sources_read_dates\": [],\n    \"rates_rows_sourced\": [],\n    \"canonical_headings\": [],\n    \"two_oa_checks\": [],\n    \"version_numeric\": [],\n    \"tier_honest\": [],\n    \"no_em_dash\": [],\n    \"not_yet_confirmed\": [],\n    \"reviewed_on\": [],\n    \"read_date_evidence\": [],\n    \"sources_columns\": [],\n    \"source_hosts\": [],\n    \"jurisdiction_body\": [],\n    \"year_matches_link\": []\n  },\n  \"prior_guides_unchanged\": 9,\n  \"prior_evidence_blobs_unchanged\": 48,\n  \"new_guide_sha256\": \"0ccca3441ab66da12136c8c4d9761f3f3dc6788315be53ec8783899a70e055a0\",\n  \"old_topic_rule\": \"All prior introductions/headings/bullets/tables/frontmatter/CTA remain at identical old Guide blobs; no old Guide rewrite.\"\n}\n"
+    }
+  ],
+  "scope": "Committed validator covers both cumulative new Madagascar Guides (accepted property plus new capital), skips README. Both unclassified slugs warn, not a country-cell/comprehensive coverage proof. Strict audit covers both. New capital checker independently counts 46 source rows, 15 shape checks, two examples, nine prior Guides and48prior evidence blobs exact. Source-fidelity independent review still pending. Receipt-only commit follows; unchanged Guide bytes remain bound.",
+  "review_status": "pending independent capital source review; accepted property review preserved"
+}

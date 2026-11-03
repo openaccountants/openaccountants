@@ -1,0 +1,86 @@
+{
+  "head": "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78",
+  "content_head": "918a4af3712e455678bf6084874a2f01313bdb12",
+  "prior_head": "abe41a37adcb9d3f58a377b8b7219a73674cb234",
+  "actual_local_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "skills/madagascar/mg-capital-income.md",
+      "git_blob": "e25ce21a4641a5bb8fbe95a54916ade1b974c512",
+      "sha256": "0ccca3441ab66da12136c8c4d9761f3f3dc6788315be53ec8783899a70e055a0",
+      "working_copy_equal": true
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "git_blob": "2184189d083761dc95c504b5f2f1df39f2a1754f",
+      "sha256": "a1bd4dbf1ad20fd4bc0728446973bcc2086501303ff7de71c66a37a6255c94e3",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/committed-validation.json",
+      "git_blob": "381ac1994b7e385caa3feccfec79f8ed318eaabd",
+      "sha256": "806fb669f0b3139bfd31827f0234f6cc0d27b49b778880c81799fb3e6946466e",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/freeze-receipt.json",
+      "git_blob": "75a04d1398da8b06c02c5ca55a0986b43866fdbf",
+      "sha256": "dc145cf5a81f112a7da72a4ba52710ac0a0459f654978637526d29439bfa438b",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/mg-capital-income.json",
+      "git_blob": "2d775f5828650006ce25817c5d7f7e222b32afa5",
+      "sha256": "b6aab9a11a3a7af4f9ddc06c0700138023499903f16fd50b89934cfc04c58e7d",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/mg-capital-income.md",
+      "git_blob": "6aceb9351debf5aa74fc629e858bed1e59f5ccfb",
+      "sha256": "d16fa616eec6155493e723c9c406271d732747de302e88e2c694911a5eac242d",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/old-topic-destinations.json",
+      "git_blob": "011a9f3869e19673e8a2817c15b23136fc37931f",
+      "sha256": "8e3ce49364a1b61f01735880863c7e700fc856ff9f4f6c8fc62d2db318c88ba3",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/preservation-baseline.json",
+      "git_blob": "7f5896064547b69fa1a41f27e4d303cd7685112c",
+      "sha256": "4d91b54dee9e1d3b5a1e188b39b47d222e6528c4d4d5002e2ed0dc11fa95d5e2",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/preservation-check.json",
+      "git_blob": "f3efa6019b7b09144c3bc7b2d56aee656628dd2c",
+      "sha256": "9ec3b4b8456c37f87e2e2ca94ad4c5b336afbf638b4d6cef99a9ffe3c23ab65f",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/source-identities.json",
+      "git_blob": "36c13fd447a456d9607fb9b0ee0be0b1721d63a3",
+      "sha256": "ae2127678001fbafb98a1a6b5114bbd52b07b05aef51beb816c946ee753c50e7",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-check.py",
+      "git_blob": "3c5b35cf7ccd765af08a1da427075d7c026b484e",
+      "sha256": "ca3f8114d3692ed254529a66b4ff67b7c3d60de025b97a63324fc1f3ab6d815c",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-checks.json",
+      "git_blob": "988c0225af74db843de4edcf5f15f5c9800fcb03",
+      "sha256": "c9e50045c29b346eefdb044d1b17faf9449ee56b22d2e4b8c398e7f8d662605f",
+      "working_copy_equal": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-record.md",
+      "git_blob": "752841fef9380029f97d35c2a13627b933625a2f",
+      "sha256": "831e690b9510a89d2fa84f0084af8e6591a944979a74bf730237490efd1bb549",
+      "working_copy_equal": true
+    }
+  ]
+}

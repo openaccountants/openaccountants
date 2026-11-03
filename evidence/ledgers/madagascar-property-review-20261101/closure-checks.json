@@ -1,0 +1,574 @@
+{
+  "accepted_worktree_candidate_over_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "original_content_commit": "15695d500186ca1b1d1d6d418b57d1e5d79a54d4",
+  "candidate_files": [
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "sha256": "cb50e663f9171dd3d8186d5b1c683a6e69b45020263e26c4099c49d3d904e36d",
+      "git_blob": "57d110d4485c145efbcbfb63ef28292e88ff879e"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.json",
+      "sha256": "04a985d50f9c8a6db007a2f7544f29cc3b1bd6e11f3b95fad38a756cff6340ea",
+      "git_blob": "7dbcf47c4ff50f65105321f6fed38ca1f8a56f06"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md",
+      "sha256": "8407075e784297b12a39e039c64fcb7b318a1c8aafd451fb9cffccdfb20cea61",
+      "git_blob": "5ca9deff456695e888f2b12ac877fbdfeb78df7b"
+    }
+  ],
+  "repair_receipt_sha256": "fafe0d947c135e6732ccdc9c61bea2ccad9f65b30500026cb5e00de195bb29ac",
+  "exact_guide_replacement_chain_verified": true,
+  "changed_json_rows": [
+    "P24",
+    "P31"
+  ],
+  "other_48_rows_object_identical": true,
+  "human_ledger_only_changed_lines": [
+    30,
+    37
+  ],
+  "row_verdicts": [
+    {
+      "id": "P01",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P02",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P03",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P04",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P05",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P06",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P07",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P08",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P09",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P10",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P11",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P12",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P13",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P14",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P15",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P16",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P17",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P18",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P19",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P20",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P21",
+      "quotes_found": 5,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P22",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P23",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P24",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Changed row independently reread in full original source clauses; initial finding closed",
+      "finding_closed": "F2"
+    },
+    {
+      "id": "P25",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P26",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P27",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P28",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P29",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P30",
+      "quotes_found": 6,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P31",
+      "quotes_found": 8,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Changed row independently reread in full original source clauses; initial finding closed",
+      "finding_closed": "F1"
+    },
+    {
+      "id": "P32",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P33",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P34",
+      "quotes_found": 5,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P35",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P36",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P37",
+      "quotes_found": 5,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P38",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P39",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P40",
+      "quotes_found": 5,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P41",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P42",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P43",
+      "quotes_found": 4,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P44",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P45",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P46",
+      "quotes_found": 1,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P47",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P48",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P49",
+      "quotes_found": 3,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    },
+    {
+      "id": "P50",
+      "quotes_found": 2,
+      "verdict": "accepted_with_explicit_scope_holds",
+      "review_basis": "Initial full-clause independent source review inherited for identical row",
+      "finding_closed": null
+    }
+  ],
+  "source_captures": [
+    {
+      "path": "../sources/cdi-2026.pdf",
+      "sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "unchanged": true
+    },
+    {
+      "path": "../sources/cdi-2026.txt",
+      "sha256": "6165252fc74f92531324a1d7581ddad6df25fb0dc5fbc836ba418eeee2400445",
+      "unchanged": true
+    },
+    {
+      "path": "../sources/cpf-2026.pdf",
+      "sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "unchanged": true
+    },
+    {
+      "path": "../sources/cpf-2026.txt",
+      "sha256": "e3967fda31d17116edb819938d0b0eb6463a68a9b1d2d09c27aa4a037ed3f1f1",
+      "unchanged": true
+    },
+    {
+      "path": "../sources/lfi-2026.pdf",
+      "sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "unchanged": true
+    },
+    {
+      "path": "../sources/lfi-2026.txt",
+      "sha256": "d2dbea0e21dbddbf060549740e0e0c5add16b51fc866cabda4dfb0396b023e25",
+      "unchanged": true
+    },
+    {
+      "path": "../sources/lfr-2026.pdf",
+      "sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "unchanged": true
+    },
+    {
+      "path": "../sources/lfr-2026.txt",
+      "sha256": "33756e6834fcbef06b95afadb62d5b6e33b6f9e6d9b09d51b0239c75cfae1c6b",
+      "unchanged": true
+    }
+  ],
+  "initial_review_evidence_preserved": [
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/independent-cases.json",
+      "sha256": "a17e975c3fa1fa55e904dbd0df49a19ab8725be90d0e3eee37f19e2e46f20ff1",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/initial-input-hashes.json",
+      "sha256": "5cc3477da89b36fee8cdf8be4bd513e8219368c706748158726ad64288dac932",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/initial-review.md",
+      "sha256": "0344ac8c0d7e4709c91a8e357bdd27389247deaf32fcdc58e3f9a4c5ddfac79d",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/ledger-row-review.json",
+      "sha256": "a6d1b4cf80f6663cd05d91a0a212825bbc895384b2fd76d90d1af805918de1c6",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/machine-checks.json",
+      "sha256": "d193aa58eff48dd4aba7b8eaf28ab10e47f370a2d0846e93feea4910a20b79ee",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/preservation-review.json",
+      "sha256": "c344d9ac8475d8e3f3ebff34583050d3846fdfe9dc4c9f8322c0a355cd6ddf57",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/source-integrity.json",
+      "sha256": "d6b4759732847636c7883d33469fa1bfae6b75cc8fbcae229656319f24ef65b5",
+      "unchanged": true
+    }
+  ],
+  "other_writer_freeze_files_unchanged": [
+    "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.json",
+    "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.md",
+    "evidence/ledgers/madagascar-property-20261101/preservation-baseline.json",
+    "evidence/ledgers/madagascar-property-20261101/readme-addition.json",
+    "evidence/ledgers/madagascar-property-20261101/source-identities.json",
+    "evidence/ledgers/madagascar-property-20261101/writer-check.py",
+    "evidence/ledgers/madagascar-property-20261101/writer-checks.json",
+    "evidence/ledgers/madagascar-property-20261101/writer-record.md",
+    "skills/madagascar/README.md"
+  ],
+  "preserved_old_files": [
+    "evidence/ledgers/madagascar-publication-format-20261101/format-only.json",
+    "evidence/ledgers/madagascar-review-20261101/closure-checks.json",
+    "evidence/ledgers/madagascar-review-20261101/closure-machine-checks.json",
+    "evidence/ledgers/madagascar-review-20261101/closure-review.md",
+    "evidence/ledgers/madagascar-review-20261101/initial-input-hashes.json",
+    "evidence/ledgers/madagascar-review-20261101/initial-review.md",
+    "evidence/ledgers/madagascar-review-20261101/ledger-quote-check.json",
+    "evidence/ledgers/madagascar-review-20261101/ledger-row-review.json",
+    "evidence/ledgers/madagascar-review-20261101/machine-checks.json",
+    "evidence/ledgers/madagascar-review-20261101/preservation-check.json",
+    "evidence/ledgers/madagascar-review-20261101/source-hash-check.json",
+    "evidence/ledgers/madagascar-review-20261101/writer-repair.json",
+    "evidence/ledgers/mg-company-formation.md",
+    "evidence/ledgers/mg-corporate-income-tax.md",
+    "evidence/ledgers/mg-cross-border.md",
+    "evidence/ledgers/mg-income-tax.md",
+    "evidence/ledgers/mg-old-topic-destinations.md",
+    "evidence/ledgers/mg-payroll-social.md",
+    "evidence/ledgers/mg-tax-overview.md",
+    "evidence/ledgers/mg-transfer-pricing.md",
+    "evidence/ledgers/mg-vat-gst.md",
+    "skills/madagascar/mg-company-formation.md",
+    "skills/madagascar/mg-corporate-income-tax.md",
+    "skills/madagascar/mg-cross-border.md",
+    "skills/madagascar/mg-income-tax.md",
+    "skills/madagascar/mg-payroll-social.md",
+    "skills/madagascar/mg-tax-overview.md",
+    "skills/madagascar/mg-transfer-pricing.md",
+    "skills/madagascar/mg-vat-gst.md"
+  ],
+  "old_destination_ranges_verified": 86,
+  "readme_still_exact_initial_append": true,
+  "examples_byte_identical": true,
+  "rates_section_byte_identical": true,
+  "decimal_recomputation": {
+    "IFT150000": 2000,
+    "IFT400000": 4000,
+    "IFPB_rented_base": 240000,
+    "IFPB_rented_tax": 12000,
+    "IFPB_principal_base": 72000,
+    "IFPB_principal_percentage": 3600,
+    "IFPB_principal_tax": 5000
+  },
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/skill_checks.py",
+        "skills/madagascar/mg-annual-property-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/madagascar/mg-annual-property-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/madagascar/mg-annual-property-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate-guides.py",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 9 guides (3 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: 0 same-job groups, see skills/DUPLICATES.md\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    }
+  ],
+  "general_reference_and_no_platform_keys_or_CTA": true,
+  "verdict": "ACCEPT for stated partial scope, independent AI source review only",
+  "new_operative_dates_inferred": false,
+  "no_live_workflow_verified": true,
+  "no_accountant_attestation": true,
+  "all_seven_domains_partial": true
+}

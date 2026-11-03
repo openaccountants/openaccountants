@@ -1,0 +1,1380 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "frozen_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "unchanged_files": [
+    {
+      "path": "evidence/ledgers/madagascar-publication-format-20261101/format-only.json",
+      "sha256": "f0ab81f12997a38eb94ba7e55a491dd455e823b190b9b8e57ed911044298cc56",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-checks.json",
+      "sha256": "1b2f19788147503ca9a27f50f056201ac01b3cec9547c9d9ec29110d526f3641",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-machine-checks.json",
+      "sha256": "485e790ca4ec4bc1fdd00ba2f0920dc04c0a0eb3208ab20609b77a70d52acb85",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-review.md",
+      "sha256": "797e20098705e441cd686b1c7a0f97c335dbd3b875eefc9f10e022e0c08a14a0",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-input-hashes.json",
+      "sha256": "fe6b730083c1fa81d585fa3ba74183687ce276709a5a08b1377a33270c75ea95",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-review.md",
+      "sha256": "b388593330051121b04385335ebc13e982dc9436bb65ee0118c2db3050053f89",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-quote-check.json",
+      "sha256": "c225556a77ae58f2c26dcfcb7f3ad3e8e03d470c01fa68f5850e5140521990af",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-row-review.json",
+      "sha256": "11217a54edd37875a8f58b26d557193584ee45cd898c6a024740ae43c219e751",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/machine-checks.json",
+      "sha256": "1abd67cc15983077700f473785b2ef79eb23edfaa5691dea72b9e260b8a64bd6",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/preservation-check.json",
+      "sha256": "a957eef400cc26ec67febc5cd9ee9c0877d56695419ad36f40a3da7611c829a7",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/source-hash-check.json",
+      "sha256": "587c699f4816aca6f2be1e03b75658005f175f9b0ae4ab5f8da86085db0f3da4",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/writer-repair.json",
+      "sha256": "818e08102d4ff163b29a57e3b9530e517300852532bb63a0874e35d324f1be78",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-company-formation.md",
+      "sha256": "d6bfe97eb8f594fed7f8e22ea309a9cdb31b61d4d687776b7d6a1f5494858a73",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-corporate-income-tax.md",
+      "sha256": "9dc1441e2a1aa0e9611537b76b5d177bdc5b745b6abd08dc480707f1cf8359ae",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-cross-border.md",
+      "sha256": "15fd2bcc003ca44db41b6b11fcb843cd2fe667b5b1e972460101a76a8a266c17",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-income-tax.md",
+      "sha256": "fd39053353510da35253d0f9ab6e1823b3ce574b678ae8b133e16084c682465c",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-old-topic-destinations.md",
+      "sha256": "2135557e6b1fe0c875b50846e184206a0985a946aaab17863b128736110eab71",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-payroll-social.md",
+      "sha256": "eabe180cea4971b3521bc5c150b2043044935ce5158db126c65fad9eaead88a4",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-tax-overview.md",
+      "sha256": "5623d46a1bcea0582b261d84b7af0feafcf90867a16477b4013c58f703d3da91",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-transfer-pricing.md",
+      "sha256": "aba45a767d60ef2c0a50c944a36cb3ab368b53a1b102011b199178c9f626754c",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "evidence/ledgers/mg-vat-gst.md",
+      "sha256": "f899597b1881f496ce991c476efb98240062f24ffc89c6cbffd0a26f9818dc26",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": false
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3",
+      "base_equals_frozen": true,
+      "materialised_in_sparse_worktree": true
+    }
+  ],
+  "guide_count": 8,
+  "evidence_count": 21,
+  "sparse_note": "All29 tracked Git blobs checked. Eight Guides are materialised;21 older evidence blobs remain present in Git although absent from sparse worktree.",
+  "destination_count": 86,
+  "destinations": [
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-company-formation.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-company-formation.md:19",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        23,
+        33
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-company-formation.md:23",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        34,
+        37
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-company-formation.md:34",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        38,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-company-formation.md:38",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-company-formation.md:46",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-company-formation.md:50",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        54,
+        88
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-company-formation.md:54",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        89,
+        92
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-company-formation.md:89",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        93,
+        105
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-company-formation.md:93",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "old_lines": [
+        106,
+        118
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-company-formation.md:106",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:19",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        23,
+        35
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:23",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:36",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        40,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:40",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:46",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:50",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        54,
+        90
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:54",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        91,
+        94
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:91",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        95,
+        108
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:95",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "old_lines": [
+        109,
+        121
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-corporate-income-tax.md:109",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-cross-border.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        16,
+        19
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-cross-border.md:16",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        20,
+        30
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-cross-border.md:20",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        31,
+        34
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-cross-border.md:31",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        35,
+        38
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-cross-border.md:35",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        39,
+        42
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-cross-border.md:39",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        43,
+        46
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-cross-border.md:43",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        47,
+        78
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-cross-border.md:47",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        79,
+        82
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-cross-border.md:79",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "old_lines": [
+        83,
+        90
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-cross-border.md:83",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-income-tax.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-income-tax.md:19",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        23,
+        38
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-income-tax.md:23",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        39,
+        46
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-income-tax.md:39",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        47,
+        50
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-income-tax.md:47",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        51,
+        54
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-income-tax.md:51",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        55,
+        58
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-income-tax.md:55",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        59,
+        92
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-income-tax.md:59",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        93,
+        96
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-income-tax.md:93",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        97,
+        110
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-income-tax.md:97",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "old_lines": [
+        111,
+        123
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-income-tax.md:111",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-payroll-social.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-payroll-social.md:19",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        23,
+        34
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-payroll-social.md:23",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        35,
+        38
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-payroll-social.md:35",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        39,
+        42
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-payroll-social.md:39",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        43,
+        46
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-payroll-social.md:43",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        47,
+        50
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-payroll-social.md:47",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        51,
+        84
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-payroll-social.md:51",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        85,
+        88
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-payroll-social.md:85",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        89,
+        103
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-payroll-social.md:89",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "old_lines": [
+        104,
+        116
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-payroll-social.md:104",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-tax-overview.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-tax-overview.md:19",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        23,
+        35
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-tax-overview.md:23",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-tax-overview.md:36",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        40,
+        43
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-tax-overview.md:40",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        44,
+        47
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-tax-overview.md:44",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        48,
+        51
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-tax-overview.md:48",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        52,
+        79
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-tax-overview.md:52",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        80,
+        83
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-tax-overview.md:80",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        84,
+        98
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-tax-overview.md:84",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "old_lines": [
+        99,
+        111
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-tax-overview.md:99",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        16,
+        19
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:16",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        20,
+        31
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:20",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        32,
+        35
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:32",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        36,
+        39
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:36",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        40,
+        43
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:40",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        44,
+        47
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:44",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        48,
+        80
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:48",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        81,
+        84
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:81",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "old_lines": [
+        85,
+        93
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-transfer-pricing.md:85",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "heading": "Frontmatter, title, notice and scope preamble",
+      "destination": "skills/madagascar/mg-vat-gst.md:1",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "heading": "## Who this applies to",
+      "destination": "skills/madagascar/mg-vat-gst.md:19",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        23,
+        33
+      ],
+      "heading": "## Rates, bands and thresholds",
+      "destination": "skills/madagascar/mg-vat-gst.md:23",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        34,
+        41
+      ],
+      "heading": "## The base",
+      "destination": "skills/madagascar/mg-vat-gst.md:34",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        42,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "destination": "skills/madagascar/mg-vat-gst.md:42",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "heading": "## Penalties and interest",
+      "destination": "skills/madagascar/mg-vat-gst.md:46",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "destination": "skills/madagascar/mg-vat-gst.md:50",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        54,
+        87
+      ],
+      "heading": "## Two worked examples that recompute",
+      "destination": "skills/madagascar/mg-vat-gst.md:54",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        88,
+        91
+      ],
+      "heading": "## Ask the client first",
+      "destination": "skills/madagascar/mg-vat-gst.md:88",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        92,
+        105
+      ],
+      "heading": "## Sources",
+      "destination": "skills/madagascar/mg-vat-gst.md:92",
+      "range_valid": true,
+      "same_bytes": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "old_lines": [
+        106,
+        118
+      ],
+      "heading": "## Talk to a verified accountant",
+      "destination": "skills/madagascar/mg-vat-gst.md:106",
+      "range_valid": true,
+      "same_bytes": true
+    }
+  ],
+  "old_topic_content_spot_checks": [
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "lines": [
+        34,
+        37
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\nEDBM describes a SARL as a separate company with partners liable for social debts up to contributions. Capital is allocated from the agreed contributions; obtain valuation support for non-cash contributions and signed partner decisions. Draft statutes identifying form, name, activity/object, partners and contributions, capital and share values, registered office, duration and operation. Name the gérant in the statutes or a later act. [EDBM opening and Etape 1](https://orinasa.edbm.mg/Articles_3/). This operational statement does not settle shareholder-number limits or every liability exception; those require the company law.",
+      "destination_sha256": "3d8e272845825756ab70f6e9fe3c120ff2974bc5cc0f5463fcaae1bb93c29f12"
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "lines": [
+        38,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nPrepare the statutes and the form-specific supporting documents from [EDBM’s selector](https://orinasa.edbm.mg/documentsLegalForm/), including identity and tax-status evidence, premises documents and appointment act when relevant. For a foreign legal-person shareholder, the selector asks for statutes and commercial-registry extract in sworn French translation.",
+      "destination_sha256": "c00b1b5a9274eaca9912f350ff00f68d274dc4425e35861fd95eaaf1bd6a40ee"
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nA foreign company selecting a branch/SDET must use that dossier’s requirements. The SARL document selector distinguishes foreign legal-person shareholders and asks for their statutes and registry extract in sworn French translation. [EDBM documents](https://orinasa.edbm.mg/documentsLegalForm/). A resident-manager requirement does not establish the company’s tax-treaty residence. Use [cross-border triage](mg-cross-border.md) before choosing a foreign branch versus company.",
+      "destination_sha256": "db1f7cf01cd42b67ec95d4d887e15cd2ee9fba8a64a61f97ee944d3cf82028d6"
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "lines": [
+        36,
+        39
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\nStart from net accounting profit and reconcile necessary business expenses supported by documents, non-deductible items, taxable income and exemptions under CDI 01.01.09–11. Do not calculate IR on turnover. Carryforward of qualifying prior deficits is permitted over a five-year period (01.01.10 11°); track each year separately. Do not substitute five accounting exercises for the statutory five years. The accounting year can be the calendar year, July–June or another twelve-month period. A first period can be shorter or longer, capped at eighteen months absent permission (01.01.09). Round taxable profit, calculate ordinary IR, then compare with the applicable minimum. Deduct evidenced provisional payments from the tax liability, preserving any excess for the applicable credit procedure. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf). Investment reductions, sector regimes and complex deduction limitations require a separate calculation.",
+      "destination_sha256": "5fe7d2fa29840009c3da577032374940542bf03a5e6c49bc3a18a7c758911fad"
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "lines": [
+        40,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nFor a 31 December close, declare results and pay by 15 May of the next year. For 30 June, the date is 15 November of that year. Other closes use day 15 of the fourth month after closing. Bimonthly provisional payments fall due by day 15 of the last month of each period (CPF I-11). The amount formula depends on the decision under CDI 01.01.15 and is not assumed here.",
+      "destination_sha256": "d8b99a3368e72ba6ec176999a8672c0de804fdf61fd7a0813395eb7208cb24e9"
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nResident-company income is not limited to Madagascar-source income. Treaty allocation and non-resident service payments go to [cross-border](mg-cross-border.md); related-party adjustments go to [transfer pricing](mg-transfer-pricing.md). Cooperative interest/rebate taxation belongs to the capital-income rules, not a reduced ordinary corporate IR rate. The July LFR adds IR for cooperatives regardless of turnover under 01.01.13 VII; member taxation follows ordinary rules. Merger loss transfers under amended 01.01.11 III require express tax-authority authorization and implementing conditions, so are not an automatic carryforward here. Do not treat a foreign incorporation address as proof of non-residence.",
+      "destination_sha256": "d6709814c5ecc7d01259a80168d8d02ba2d521c4a1e0b46bee3410504d714d64"
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "lines": [
+        31,
+        34
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\nFirst classify service, royalty, capital income, employment or public-contract income. For a service under 01.01.14 II-A, use the amount paid to the foreign provider; check whether a gross-up clause changes contractual consideration. Test treaty entitlement and the actual applicable article before reducing domestic withholding. The accredited representative withholds/remits; absent one, the party receiving the materially performed service must withhold and remit. For royalties, the resident legal-person payer remits under II-C. A PE case needs profit attribution under ordinary IR and [TP](mg-transfer-pricing.md), rather than mechanically applying final gross service withholding. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).",
+      "destination_sha256": "d78546c20b765873dd7f0613515eb6820307202feb126620991910f0571f8b1e"
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "lines": [
+        35,
+        38
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nFor II-A service withholding, the representative or substituted recipient remits to the competent Receveur des Impôts **before** the 15th of the month after withholding. For II-C royalties the stated deadline is **by** the 15th of the month after payment. Keep the contract, invoice, service/use evidence, residence/treaty evidence, gross amount, withholding computation, representative accreditation and remittance receipt. Obtain the current prescribed intermittent declaration and payment reference from the managing fiscal unit before submission; its boxes and portal steps have not been confirmed. [CDI 01.01.14 II](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).",
+      "destination_sha256": "fc0ad0b96f2390eaf8020f2fdb984a04b18bea9f874ba15b46f972f80f289326"
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "lines": [
+        43,
+        46
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nImported-service TVA is separate and belongs to [TVA](mg-vat-gst.md). Foreign salary pay belongs to [IRSA](mg-income-tax.md). The LFI text contains non-resident-dividend language under 01.01.14 II-B; the July LFR repeals II-B and amends 01.04.02 6° to cover dividends and securities-disposal gains of resident/non-resident natural and legal persons. Do not use the repealed separate IR provision for a payment after the LFR takes effect. The LFR also adds 10% under II-D for interest received by non-resident banks/credit establishments on lending operations, excluding 01.01.03 8° interest. This Guide does not compute those capital-income cases or pre/post-transition payments. Treaty rates, treaty-entry dates, foreign-tax-credit mechanics and exit/capital-disposal rules require separate source verification.",
+      "destination_sha256": "5551732867eead42f98ae9e17f4e257da1e657940d9e920b98be5a6d65438e67"
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "lines": [
+        39,
+        46
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\n1. Reconcile pay, bonuses and taxable allowances plus benefits and any employee tax borne by the employer (01.03.07).",
+      "destination_sha256": "a50835ecacf89df6331e71de23c1fcf34a9c39b4882d271ee22b8221efeab04e"
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "lines": [
+        47,
+        50
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nEmployer withholding occurs at payment (CPF I-20–21). The employer declares and pays within the first fifteen days of the following month using the prescribed form and an employee-by-employee statement regardless of each salary amount (I-23). [Payroll operations](mg-payroll-social.md) handles permitted frequency exceptions. With a foreign employer, the taxpayer calculates and pays directly or through an accredited resident representative, attaching payslip/supporting evidence (I-22,25). Multiple payers each withhold provisionally; the authority calculates final withholding. Declare monthly income by payer before 15 January and a change within fifteen days (I-24; CDI 01.03.13). [CPF](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf). Portal boxes and payment-reference instructions remain unverified; obtain the current prescribed form before filing.",
+      "destination_sha256": "36f0afdcb15c3665d5bea26eec5fee1417bacdf60c4b7f39be0b399ffbf9ec0e"
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "lines": [
+        55,
+        58
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nForeign payment does not remove resident IRSA. Employment performed in Madagascar, pay from an employer in Madagascar and resident worldwide salary are addressed by 01.03.04. Apply an actual treaty to the worker’s residence and employment facts before relief. Self-payment for a foreign employer is an express rule, not an optional omission from payroll. [CDI 01.03.04–05](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf); [CPF I-22](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf).",
+      "destination_sha256": "f0953e339c95f27061dccb274a6a6dc995022a03d0fedc0b79f37bff51b854c7"
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "lines": [
+        35,
+        38
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\nReconcile gross cash, benefits, deductions and employee tax computations using [IRSA](mg-income-tax.md). Sum employee withholding by actual payment month and paying location. Net wages equal gross cash less employee deductions and withholding; employer contributions belong in employer expense/payables, not an extra deduction from net pay. [CPF I-20–23](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf) governs withholding and the employee statement. CNaPS states that the employer registers and declares employees through [E-CNaPS](https://espace.cnaps.mg), and its current employer-registration FAQ describes monthly contribution settlement. That conflicts with the old Guide’s blanket quarterly claim. Do not calculate CNaPS, health or training contributions until the current applicable schedule, effective period and payer classification are established. [CNaPS FAQ](https://www.cnaps.mg/).",
+      "destination_sha256": "e48317355548b3117f6c1f49d04bcbb2dad068f4b5a581ef3410cf5dc676e192"
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "lines": [
+        39,
+        42
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nAt payment, retain the calculated IRSA. Prepare the prescribed employer declaration and nominative employee statement, reconcile it to payslips and the payroll control account, and declare/pay at the competent fiscal centre within the applicable period. Where payments originate in multiple places, CPF I-21 points to the office for each beneficiary’s workplace. Keep the submission acknowledgement and remittance evidence; reconcile the tax payable account to zero only after payment. Obtain the current official form and actual portal workflow before submission. A foreign-employer employee self-payment has a separate process under I-22 and I-25. [CPF I-20–25](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf).",
+      "destination_sha256": "2b79c23dd21f89b7bac8b0b72c0b8badfa62397608b113107063d1234eba7c64"
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "lines": [
+        47,
+        50
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nIdentify who pays, where the employee works and resides, whether a treaty applies, and whether foreign-employer self-payment is required. Do not assume an overseas payroll removes local IRSA or social-insurance obligations. International social-security arrangements and posted-worker certificates require their own verification.",
+      "destination_sha256": "14a806b54851ba6b29f0431b35fb8c086213e360762c7419f4e5bc5a866b2994"
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "lines": [
+        36,
+        39
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\nClassify legal entity, activity, income type, residence, annual turnover, accounting close and special regimes first. A company can use a calendar, July–June or other twelve-month year, with a special first-period rule in CDI 01.01.09. Resident IR income is not restricted to local sources: 01.01.04–05 includes income regardless of origin. Salary scope has its own rules under 01.03.04–05. Do not apply the old territorial summary. Use the return-year and activity exceptions in the owning Guide before calculating. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).",
+      "destination_sha256": "f1b2ba2ae41516ab9d00921527b3beabffd9c9deb6be4c65b446e6e850dc6127"
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "lines": [
+        40,
+        43
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nBuild a calendar from the [business](mg-corporate-income-tax.md), [salary](mg-income-tax.md), [TVA](mg-vat-gst.md) and [TP](mg-transfer-pricing.md) Guides. The annual results deadline depends on accounting close; salary and TVA use their separate reporting periods. Keep declared figures, returns, receipts and payment evidence together. Current portal forms and box instructions remain partial; do not mark a filing complete without its actual acceptance and payment evidence. [CPF I-11,20–25,104](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf).",
+      "destination_sha256": "6df59ef84d34b0facbe8b1075110a7ef5bcaaf49d9ec8d44828d89f19e089012"
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "lines": [
+        48,
+        51
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nAsk about foreign income and payers before routing. Use [cross-border](mg-cross-border.md) for residence/PE and service payment triage, [IRSA](mg-income-tax.md) for foreign salary, [TVA](mg-vat-gst.md) for imported services and [TP](mg-transfer-pricing.md) for controlled transactions. Treaty and dividend interaction gaps are explicit in the cross-border Guide.",
+      "destination_sha256": "cd1965fe2926936a8c01c9959b747189e28f65a56c3dbf3f55f2ea093bdf84d0"
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "lines": [
+        32,
+        35
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\nBuild the related-party transaction register from contracts, invoices, accounts and ownership/control facts. Document functions, assets and risks, select the supported arm’s-length price from comparables, and preserve information available at the transaction date. A taxpayer whose controlled terms depart from arm’s length includes the relevant difference in taxable profit when declaring income; it bears the proof burden for its own correction (CDI 01.01.13 IV 1°,4°). The administration can adjust after comparability analysis and bears its statutory proof burden in that assessment (6°). No safe margin, documentation-price tolerance or automatic downward deduction is established here. Pass an established adjustment to the IR reconciliation in [corporate income tax](mg-corporate-income-tax.md). [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).",
+      "destination_sha256": "e1c87e63fad6170a83777ffc904c00d170fbc4389cae0aa141280ef0f077d3bf"
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "lines": [
+        36,
+        39
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nPrepare the capital organization chart and transaction-category details, counterparties and relationships for the dedicated electronic platform under CPF IV-09–10. Download current models from that platform, complete, submit **and validate** the disclosure by the operative statutory date, preserving acknowledgement and the submitted files. Enterprises meeting IV-08 also lodge the remaining documentary annexes on the same platform within the additional period under V-24. CDI 01.01.13 IV 5° requires Malagasy or French documentation. An audit request for complements has a one-month response period, extendable on a reasoned request to at most two months total; an insufficient response can lead to a notice requiring completion within fifteen days (CPF V-25,28). [CPF](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf); [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf). Actual annex numbers, portal URL and accepted file format remain unverified.",
+      "destination_sha256": "b20b990135fce7836e18a87bd729d0b49f157dab25f75a054e9b15c9a0cfe427"
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "lines": [
+        44,
+        47
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nTest foreign and domestic parties, a PE’s allocation and privileged-tax counterparties separately. Treaties can change the associated-enterprise definition and provide a remedy for double taxation; do not promise a corresponding adjustment or treaty outcome without the operative text. No separate country-by-country reporting obligation or threshold has been established in this scope.",
+      "destination_sha256": "30d7ef3f3be07a911248d8b3284fa8375206cebdce699ad57d3fe5d261e81803"
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "lines": [
+        34,
+        41
+      ],
+      "heading": "## The base",
+      "read_excerpt": "## The base\n\nSeparate taxable, zero-rated, exempt and outside-scope transactions. For a sale, liability normally arises on delivery. For services and works it generally arises on receipt of advances, instalments or remuneration; a debit/invoicing option has notification requirements (06.01.10). The base includes other fees/taxes and excludes TVA itself; properly invoiced trade/cash discounts, damages and qualifying client disbursements are excluded under 06.01.11. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).",
+      "destination_sha256": "d91621dcc47c73fa6c5ca1d63100525ef72ec2bace937b81ea13b7422f8ac19c"
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "lines": [
+        42,
+        45
+      ],
+      "heading": "## Deadlines and filing",
+      "read_excerpt": "## Deadlines and filing\n\nCalculate and declare monthly, including nil-payment periods, by the 15th of the following month (CDI 06.01.16; CPF I-104). Declare commencement of taxable activity and relevant changes within ten days to the competent fiscal office (CPF I-105). Prepare the prescribed TVA declaration with taxable and non-taxable operations separately, sales/receipts schedule, purchase/import invoices, payment evidence, input exclusions, credit aging and refund annexes. Submit through the current channel prescribed by the managing office and retain proof of declaration and payment. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf); [CPF](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf). The statutory form is verified; the current electronic portal form number, box labels and confirmation/payment-reference steps are not, so stop before submission until the actual form is obtained.",
+      "destination_sha256": "b203144a8ce86964661c80f27d3b4cfb51ae09d9e14dad83bf4f7fac9ab048a8"
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "lines": [
+        50,
+        53
+      ],
+      "heading": "## Cross-border points",
+      "read_excerpt": "## Cross-border points\n\nA service is taxable where materially performed and/or consumed in Madagascar, or where a non-localisable service/right/rented object is used or exploited there (06.01.09). The non-established supplier accredits a resident representative; absent that representative, the recipient liquidates and remits TVA by the 15th of the following month. Use a distinct intermittent declaration showing the service amount and collected TVA, even when the recipient has a normal monthly return. Input deductibility follows the general rules, not an automatic net-zero assumption (06.01.09 bis). [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).",
+      "destination_sha256": "c1d725774875fd24a2f37649b701128cfbec2e492d3506f11f853d67740d9f89"
+    }
+  ],
+  "readme_minimal_append_only": true,
+  "readme_before_sha256": "6ebc32315e2f0c21632dd6f801565cb3339b16924f94eb941928a628af56209b",
+  "readme_after_sha256": "eb68d28e49fb0206795798be902880897ec64dbc1e056bea36bf97ad4b367e2e",
+  "literal_append": "\n## Annual property-tax follow-on\n\n[Annual land and built-property tax](mg-annual-property-tax.md) adds the distinct IFT/IFPB computation and statutory declaration job. Its [figure ledger](../../evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md) cites the national baseline and July collection-title amendment. Independent review is pending. Actual commune tariffs, valuations, flat charges, live forms/payment references and publication activation dates remain held. This addition does not replace any of the eight reviewed source drafts above or complete any of the seven partial domains.\n",
+  "lost_content_restored": 0,
+  "seven_partial_entries_preserved": true
+}

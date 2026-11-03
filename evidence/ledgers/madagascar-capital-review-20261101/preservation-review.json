@@ -1,0 +1,410 @@
+{
+  "prior_head": "abe41a37adcb9d3f58a377b8b7219a73674cb234",
+  "target": "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78",
+  "guide_count": 9,
+  "evidence_count": 48,
+  "sparse_evidence_compared_from_git": 21,
+  "removed_topics": 0,
+  "lost_content_restored": 0,
+  "files": [
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/committed-validation.json",
+      "prior_and_target_blob": "4a0fd41706543251dca22e86d84c7c2a277d4454",
+      "sha256": "3e35ee092adf63156308c54217f4d6e3bc786144477f0bb3d019692a9e87f404",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/freeze-receipt.json",
+      "prior_and_target_blob": "d69527e2c1857808f599c53e6752e71cd1ba882e",
+      "sha256": "05f1c87ca66f0da46f0b2858041e5f0d50261aec534a035b09d94203dc107455",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.json",
+      "prior_and_target_blob": "d97d6d996ade5e5d4ddc7ab5bb27a9f121b452ee",
+      "sha256": "f4b738a85f2e2dafdbaef60ab63797a2641859c73689da123cc7d1c4ff4b94c4",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md",
+      "prior_and_target_blob": "75066b81ab31dba54d6c0dd7d0d5a21a55060648",
+      "sha256": "c1ed25d4259c66fd54c2a0a0fa1d7c9757cc9f0543bb926d7c4826739d671761",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.json",
+      "prior_and_target_blob": "8c61ab1cd2aa269d9057b794d399af3817571baf",
+      "sha256": "10c78266864e4c6538280eb2a682766f4744ff4cfd24138b64a83bbd2dc6fd92",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/old-topic-destinations.md",
+      "prior_and_target_blob": "d714962d5c0ff3f726636b1ddadce43da660d595",
+      "sha256": "10d1b8a50a654aeec9cc676ac4f948c8cff0cd851adbc9046118a591a487b05d",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/preservation-baseline.json",
+      "prior_and_target_blob": "508addb9d2b9fbb46c3da8237f944f2fbb848094",
+      "sha256": "f5a3d2fba6186c11cf435cd084791289323ee429e598dc76ec449adf1e6ba9bb",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/readme-addition.json",
+      "prior_and_target_blob": "a78008aaec0a64ddd574ec3a1a4500929bc47381",
+      "sha256": "96de4f604df9618c255d7725b9feac2c6f7220ecea4dcd7fe0b6803abeeed913",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/reviewer-repairs.json",
+      "prior_and_target_blob": "e164d79e97f48d008f06dea853b715b49b1465c1",
+      "sha256": "fafe0d947c135e6732ccdc9c61bea2ccad9f65b30500026cb5e00de195bb29ac",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/source-identities.json",
+      "prior_and_target_blob": "d5c0f3210a75524f6658c6bf29044f1134aac257",
+      "sha256": "31b2a83587e3d3b0e38f5b6aae6b05a5edaf3aa814514bc987fc343d0136e7f3",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/writer-check.py",
+      "prior_and_target_blob": "4649f4780e676eea230dd7791ab2df54cf63ebc8",
+      "sha256": "82950dfee2b7f637cef7b104226d7ff9ff0705f79b96c3d34b3c34bf0a24e195",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/writer-checks.json",
+      "prior_and_target_blob": "c132eecd84736c1421573a2847ba37f6f766f237",
+      "sha256": "047a51aeee80ded37c39d4534b4de830f3f5970c83671267252ee172084bdc22",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/writer-record.md",
+      "prior_and_target_blob": "5451be1a645b49c4c13c534a0c54242a0329eb66",
+      "sha256": "da93fdbadd919e62480f3996d2389224a7b2741f6c596073639805030decd60a",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/closure-artifact-hashes.json",
+      "prior_and_target_blob": "f33835b60ad13c6522d6832495c267091bc4b32b",
+      "sha256": "9ee8932bdd67f8911a96a5341ed4bb73b9f2a946bba16b35b60b99890eb581b6",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/closure-checks.json",
+      "prior_and_target_blob": "4c8d5900eb9c42d5c051e54072504978f633d351",
+      "sha256": "c4725150863f056e9f9b68b3f4b4ae6b6cb5dd27a87edb56fa45a7994c3df701",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/closure-review.md",
+      "prior_and_target_blob": "cc6ff2f13f6980191c93fc6a47a28412c4cb4ce5",
+      "sha256": "960da27752a3c5b4058f7a16f18a2ed0f7a6dab0fca22ea932c1088338361037",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/committed-closure-validation.json",
+      "prior_and_target_blob": "6e3ae9e0e26e5b85f871d84da1d406c2116acc60",
+      "sha256": "5bcc21d23a850e73acbf80c1036a1905bd9fa2c7bd026b8ba33be1b32cf22762",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/independent-cases.json",
+      "prior_and_target_blob": "45e1ead4b0df333589fa7c248012a0fd8609858d",
+      "sha256": "a17e975c3fa1fa55e904dbd0df49a19ab8725be90d0e3eee37f19e2e46f20ff1",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/initial-input-hashes.json",
+      "prior_and_target_blob": "84439ed2b975328ecda6a0deeb29c985651eee45",
+      "sha256": "5cc3477da89b36fee8cdf8be4bd513e8219368c706748158726ad64288dac932",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/initial-review.md",
+      "prior_and_target_blob": "7cd87465cba6c27f6f40f65be0cc8398854560ba",
+      "sha256": "0344ac8c0d7e4709c91a8e357bdd27389247deaf32fcdc58e3f9a4c5ddfac79d",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/ledger-row-review.json",
+      "prior_and_target_blob": "c6ffd7bbcabd990349fa1cd2b31c1fe284a7588b",
+      "sha256": "a6d1b4cf80f6663cd05d91a0a212825bbc895384b2fd76d90d1af805918de1c6",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/machine-checks.json",
+      "prior_and_target_blob": "a0c05645dcd7337e7e96bde862415b44fc93fb25",
+      "sha256": "d193aa58eff48dd4aba7b8eaf28ab10e47f370a2d0846e93feea4910a20b79ee",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/preservation-review.json",
+      "prior_and_target_blob": "6136fc2f879de3004ee831d582ac4c1ae59c4653",
+      "sha256": "c344d9ac8475d8e3f3ebff34583050d3846fdfe9dc4c9f8322c0a355cd6ddf57",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/review-artifact-hashes.json",
+      "prior_and_target_blob": "baba9abd1e59ccfe1b7ba829fe018c97120367b2",
+      "sha256": "667636407ea39d159ac15c166a35acf979fa329f5a399e80973f364b79b0b130",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/source-integrity.json",
+      "prior_and_target_blob": "09426dc766523cbe20a2216f4d829990434d70be",
+      "sha256": "d6b4759732847636c7883d33469fa1bfae6b75cc8fbcae229656319f24ef65b5",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/status-only-permission.json",
+      "prior_and_target_blob": "ccfdc092d557f5cd6a9c3e4127dbbd4a550bef08",
+      "sha256": "8599f5ed59433e426bba607567a3f0b38b24bde13e02006d968bba7263df3dbf",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/status-reconciliation.json",
+      "prior_and_target_blob": "d226a6453213228bc7d9d54a8c6925e1d564efac",
+      "sha256": "713125590ca7c38340b698ee73e938d68ce370b6f331a98606888467fffc6876",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "evidence/ledgers/madagascar-publication-format-20261101/format-only.json",
+      "prior_and_target_blob": "a2862f5f172200642fbf34d18a46595bbb8e59d3",
+      "sha256": "f0ab81f12997a38eb94ba7e55a491dd455e823b190b9b8e57ed911044298cc56",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-checks.json",
+      "prior_and_target_blob": "78e0b65284372ef59716e35038bde878f6840b0c",
+      "sha256": "1b2f19788147503ca9a27f50f056201ac01b3cec9547c9d9ec29110d526f3641",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-machine-checks.json",
+      "prior_and_target_blob": "f8a8d07e9623af7428c998c4cb08d27d32bbf4b1",
+      "sha256": "485e790ca4ec4bc1fdd00ba2f0920dc04c0a0eb3208ab20609b77a70d52acb85",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/closure-review.md",
+      "prior_and_target_blob": "5fa4d3a8af4bd145edd5eae9af20dea1b1a98e22",
+      "sha256": "797e20098705e441cd686b1c7a0f97c335dbd3b875eefc9f10e022e0c08a14a0",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-input-hashes.json",
+      "prior_and_target_blob": "68692efa01603800772372989dd57d708f4eb4c5",
+      "sha256": "fe6b730083c1fa81d585fa3ba74183687ce276709a5a08b1377a33270c75ea95",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/initial-review.md",
+      "prior_and_target_blob": "bb5e5488ba8494ca851505161631b597ebb6c421",
+      "sha256": "b388593330051121b04385335ebc13e982dc9436bb65ee0118c2db3050053f89",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-quote-check.json",
+      "prior_and_target_blob": "fc5a82923f2f783af9be21cff369612f42849201",
+      "sha256": "c225556a77ae58f2c26dcfcb7f3ad3e8e03d470c01fa68f5850e5140521990af",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/ledger-row-review.json",
+      "prior_and_target_blob": "18be5124ca07cdebeb2ff8ab0554b58533fa8285",
+      "sha256": "11217a54edd37875a8f58b26d557193584ee45cd898c6a024740ae43c219e751",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/machine-checks.json",
+      "prior_and_target_blob": "5b2f5c7c9958b55800bfcccfe0bd40b40d3332b8",
+      "sha256": "1abd67cc15983077700f473785b2ef79eb23edfaa5691dea72b9e260b8a64bd6",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/preservation-check.json",
+      "prior_and_target_blob": "5bb0ae7bcd51c6399a2c3c46dde5ff17c699ce87",
+      "sha256": "a957eef400cc26ec67febc5cd9ee9c0877d56695419ad36f40a3da7611c829a7",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/source-hash-check.json",
+      "prior_and_target_blob": "5c26bc3397de884a84b0a0494de227a45f5c116b",
+      "sha256": "587c699f4816aca6f2be1e03b75658005f175f9b0ae4ab5f8da86085db0f3da4",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/madagascar-review-20261101/writer-repair.json",
+      "prior_and_target_blob": "0f02b218de38b447592f6383e8a67211e118055e",
+      "sha256": "818e08102d4ff163b29a57e3b9530e517300852532bb63a0874e35d324f1be78",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-company-formation.md",
+      "prior_and_target_blob": "e49fcf388d2dfe8f5de911a2ccdfc00a183d03f0",
+      "sha256": "d6bfe97eb8f594fed7f8e22ea309a9cdb31b61d4d687776b7d6a1f5494858a73",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-corporate-income-tax.md",
+      "prior_and_target_blob": "d1b20573e6ab96f41deeceb85f893886439c3aa2",
+      "sha256": "9dc1441e2a1aa0e9611537b76b5d177bdc5b745b6abd08dc480707f1cf8359ae",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-cross-border.md",
+      "prior_and_target_blob": "485857e46cee6cddfde045dc2d3307d1b9cb142f",
+      "sha256": "15fd2bcc003ca44db41b6b11fcb843cd2fe667b5b1e972460101a76a8a266c17",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-income-tax.md",
+      "prior_and_target_blob": "763c664f19e261a0e4c444a8cc300b200efc1002",
+      "sha256": "fd39053353510da35253d0f9ab6e1823b3ce574b678ae8b133e16084c682465c",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-old-topic-destinations.md",
+      "prior_and_target_blob": "28406a23eaad44873419eeadfbf0017c890d5d64",
+      "sha256": "2135557e6b1fe0c875b50846e184206a0985a946aaab17863b128736110eab71",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-payroll-social.md",
+      "prior_and_target_blob": "2b27896db06354f49b261e2ab033cdce8969747f",
+      "sha256": "eabe180cea4971b3521bc5c150b2043044935ce5158db126c65fad9eaead88a4",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-tax-overview.md",
+      "prior_and_target_blob": "7d2193f18a6982ce6e63f928629610bc9c1edf71",
+      "sha256": "5623d46a1bcea0582b261d84b7af0feafcf90867a16477b4013c58f703d3da91",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-transfer-pricing.md",
+      "prior_and_target_blob": "be6a1180f2c93e527c1b8e398b2c55d73bf1bdd7",
+      "sha256": "aba45a767d60ef2c0a50c944a36cb3ab368b53a1b102011b199178c9f626754c",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "evidence/ledgers/mg-vat-gst.md",
+      "prior_and_target_blob": "2651941ecdfea7f5053c001abe85e8f88f2483d4",
+      "sha256": "f899597b1881f496ce991c476efb98240062f24ffc89c6cbffd0a26f9818dc26",
+      "identical": true,
+      "working_copy_present": false
+    },
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "prior_and_target_blob": "b277fa571e4a88fb1f8e0ef2efec8419014ffb8e",
+      "sha256": "e4a2874e8a83d4ad92b5e4b31224877e61d5c6e6e17c97b9f0de89b42ce451e1",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-company-formation.md",
+      "prior_and_target_blob": "5e77fb06040fe6a87420e64e6fe5ac955ca464d1",
+      "sha256": "f47841bac42abbe5b2bba10c546488e3367c9b260d187ea5ae254fee0856c5d4",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "prior_and_target_blob": "a14325355ce9edee0b81aef96b3a6af24033bab8",
+      "sha256": "629a16f0ee7e548f997c22a4d6aa1b28f0c62ccda6ff79bcd7810f33161096c3",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-cross-border.md",
+      "prior_and_target_blob": "7c2c4f440352ced269272e4375ca134fc36503b1",
+      "sha256": "ff1ba3dad661a4fd574c4b3d4410ee272cab7e6e766ed7eb48e386359178abff",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-income-tax.md",
+      "prior_and_target_blob": "e6f786a96607792b3069658199aec24d0b625ec9",
+      "sha256": "264b3d9041f1549a03d148b43a47520cda03ebcea3c2552ca47cedfdd889ffaf",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-payroll-social.md",
+      "prior_and_target_blob": "be167ab1b55a4eb492b94f3b9adcc54614db6f5e",
+      "sha256": "46090a684f131cede37678c9910126617c50d08d27105d77dad807d440fcaad6",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-tax-overview.md",
+      "prior_and_target_blob": "68f0415844230b5349fe9582eba23e1053e9a3d9",
+      "sha256": "b273089c3af5d5f1aa9b30c64164b6c44ce9d811609643aead400fd7e0ec523f",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "prior_and_target_blob": "96827d5a2be02bdc71516e1a548569fa9afbc7ee",
+      "sha256": "e2b000f270aa3725b2edb717b2d07d6880d0aaa729e3223c1efd476062b44c36",
+      "identical": true,
+      "working_copy_present": true
+    },
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "prior_and_target_blob": "130aac74be845a105d4c44b68db782386b167057",
+      "sha256": "8c541101a4d666a2554afb133382536d6996c6df4bdd6340fb4d6662c88c1ca3",
+      "identical": true,
+      "working_copy_present": true
+    }
+  ]
+}

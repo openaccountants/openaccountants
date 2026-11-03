@@ -1,0 +1,87 @@
+{
+  "permission": "Only exact factual review-status substitutions listed below, applied to exact input hashes. This receipt does not itself edit a file or authorize any other content change.",
+  "accepted_candidate_over_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "date": "2026-11-01",
+  "basis": "Both initial findings closed;50ledger rows accepted within stated holds; independent AI source review, no accountant attestation.",
+  "files": [
+    {
+      "path": "skills/madagascar/mg-annual-property-tax.md",
+      "reviewed_input_sha256": "cb50e663f9171dd3d8186d5b1c683a6e69b45020263e26c4099c49d3d904e36d",
+      "reviewed_input_git_blob": "57d110d4485c145efbcbfb63ef28292e88ff879e",
+      "literal_replacements": [
+        {
+          "before": "This is a partial source-cited computation and statutory filing Guide, awaiting independent review.",
+          "after": "This is a partial source-cited computation and statutory filing Guide, independently reviewed by AI against the cited law on 1 November 2026.",
+          "occurrences": 1
+        },
+        {
+          "before": "No accountant attestation; independent review pending.",
+          "after": "No accountant attestation; independent AI review completed on 1 November 2026 for the stated partial scope.",
+          "occurrences": 1
+        }
+      ],
+      "permitted_output_sha256": "e4a2874e8a83d4ad92b5e4b31224877e61d5c6e6e17c97b9f0de89b42ce451e1",
+      "permitted_output_git_blob": "b277fa571e4a88fb1f8e0ef2efec8419014ffb8e"
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "reviewed_input_sha256": "eb68d28e49fb0206795798be902880897ec64dbc1e056bea36bf97ad4b367e2e",
+      "reviewed_input_git_blob": "57cf258b95c5d4c22e2a3a2b6cb94cd3584be581",
+      "literal_replacements": [
+        {
+          "before": "Independent review is pending.",
+          "after": "Independent AI review accepted the stated partial scope on 1 November 2026; see the [closure review](../../evidence/ledgers/madagascar-property-review-20261101/closure-review.md).",
+          "occurrences": 1
+        }
+      ],
+      "permitted_output_sha256": "a3a29d9d0144ee827faa1645a78660c90595ad50a1a88d934f41b9fcd8bf22d5",
+      "permitted_output_git_blob": "7c3635b7b8d0409bc6b2e64c22ebbcdf66c265e6"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md",
+      "reviewed_input_sha256": "8407075e784297b12a39e039c64fcb7b318a1c8aafd451fb9cffccdfb20cea61",
+      "reviewed_input_git_blob": "5ca9deff456695e888f2b12ac877fbdfeb78df7b",
+      "literal_replacements": [
+        {
+          "before": "Independent review pending; no accountant attestation.",
+          "after": "Independent AI review completed on 2026-11-01 for the stated partial scope; no accountant attestation.",
+          "occurrences": 1
+        }
+      ],
+      "permitted_output_sha256": "c1ed25d4259c66fd54c2a0a0fa1d7c9757cc9f0543bb926d7c4826739d671761",
+      "permitted_output_git_blob": "75066b81ab31dba54d6c0dd7d0d5a21a55060648"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.json",
+      "reviewed_input_sha256": "04a985d50f9c8a6db007a2f7544f29cc3b1bd6e11f3b95fad38a756cff6340ea",
+      "reviewed_input_git_blob": "7dbcf47c4ff50f65105321f6fed38ca1f8a56f06",
+      "literal_replacements": [
+        {
+          "before": "\"status\": \"source-cited draft; independent review pending\"",
+          "after": "\"status\": \"independently reviewed by AI against cited law on 2026-11-01; stated partial scope; no accountant attestation\"",
+          "occurrences": 50
+        }
+      ],
+      "permitted_output_sha256": "f4b738a85f2e2dafdbaef60ab63797a2641859c73689da123cc7d1c4ff4b94c4",
+      "permitted_output_git_blob": "d97d6d996ade5e5d4ddc7ab5bb27a9f121b452ee"
+    }
+  ],
+  "historical_evidence_must_remain_unchanged": [
+    "initial-review.md",
+    "ledger-row-review.json",
+    "initial-input-hashes.json",
+    "source-integrity.json",
+    "machine-checks.json",
+    "preservation-review.json",
+    "independent-cases.json",
+    "review-artifact-hashes.json",
+    "writer freeze receipt and writer-check outputs"
+  ],
+  "limits": [
+    "All seven ordinary domains remain partial.",
+    "Keep commencement, notified-title interaction, local decisions, full-year currentness and operational workflow holds.",
+    "No tier1, accountant name/attestation, complete country coverage, country-issue closure, publish/push/merge/queue permission.",
+    "Do not replace historical pending language in immutable writer/reviewer evidence.",
+    "Any nonliteral or hash-mismatching edit requires a new review."
+  ]
+}

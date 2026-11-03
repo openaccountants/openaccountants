@@ -3,13 +3,13 @@ jurisdiction: MG
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  IT-IND: [mg-income-tax]
-  IT-CORP: [mg-corporate-income-tax]
+  IT-IND: [mg-income-tax, mg-capital-income]
+  IT-CORP: [mg-corporate-income-tax, mg-capital-income]
   VAT: [mg-vat-gst]
   SC: [mg-payroll-social]
   PR: [mg-payroll-social]
   TP: [mg-transfer-pricing]
-  XB: [mg-cross-border]
+  XB: [mg-cross-border, mg-capital-income]
 partial:
   IT-IND: "Ordinary salary IRSA verified; full non-salary individual income/capital regimes and special unit-rate pay remain incomplete."
   IT-CORP: "Ordinary IR/minimum and IS boundary; sector regimes, IS regulatory minima, investment conditions and provisional amount decision remain incomplete."
@@ -36,3 +36,13 @@ Eight tier-2 source drafts, read against the official DGI 2026 codes and the sig
 [Overview](mg-tax-overview.md) routes computations; [formation](mg-company-formation.md) prepares the official SARL dossier, with company-law/fee gaps explicit. Operational filing instructions remain partial until the actual forms, boxes, portal validation and payment references have been read.
 
 The precise radio/posted-publication date activating the July LFR is not established; transition transactions remain outside this candidate. The old salary ceiling and territorial-only resident summary were corrected from the 2026 CDI. The social rates and old quarterly schedule are not carried into executable computations. The full old-topic map is [here](../../evidence/ledgers/mg-old-topic-destinations.md); one ledger per Guide lives alongside it. Full source captures are private and are not committed.
+
+## Annual property-tax follow-on
+
+[Annual land and built-property tax](mg-annual-property-tax.md) adds the distinct IFT/IFPB computation and statutory declaration job. Its [figure ledger](../../evidence/ledgers/madagascar-property-20261101/mg-annual-property-tax.md) cites the national baseline and July collection-title amendment. Independent AI review accepted the stated partial scope on 1 November 2026; see the [closure review](../../evidence/ledgers/madagascar-property-review-20261101/closure-review.md). Actual commune tariffs, valuations, flat charges, live forms/payment references and publication activation dates remain held. This addition does not replace any of the eight reviewed source drafts above or complete any of the seven partial domains.
+
+## Capital-income follow-on
+
+[Ordinary IRCM capital income](mg-capital-income.md) adds dividend withholding, taxable interest/placement and board-income classification, annual cooperative share-interest/rebate computation, exemptions and the statutory payer declaration. Its [46-row figure ledger](../../evidence/ledgers/madagascar-capital-20261101/mg-capital-income.md) reads both original Finance Laws alongside the DGI codes. The LFI deletion of the external-financing exemption and LFR deletion of the direction-function deduction limit are reconciled explicitly. Dividend and securities-disposal scope is separated between the LFI baseline and July wording.
+
+This is the tenth Guide in the cumulative branch, a distinct new capital-income job. All nine preceding Guide bodies and all earlier Madagascar review evidence are preserved exactly. Earlier capital-income holds in those frozen Guides are not a second computation home: use this addition for its supported IRCM cases, while its own holds govern securities-gain measurement, historical nonresident-dividend interaction, publication activation dates, treaties, special regimes and live filing forms. All seven ordinary domains remain partial; independent AI source review accepted this addition’s stated partial scope on 1 November 2026. See the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation.

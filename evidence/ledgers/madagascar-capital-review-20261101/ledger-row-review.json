@@ -1,0 +1,656 @@
+{
+  "target": "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78",
+  "content_head": "918a4af3712e455678bf6084874a2f01313bdb12",
+  "row_count": 46,
+  "exact_quote_pass": 46,
+  "semantic_pass": 45,
+  "semantic_repairs": 1,
+  "rows": [
+    {
+      "id": "C01",
+      "section": "Who this applies to",
+      "article": "01.04.01",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Complete article 01.04.01 names all four groups; retained without inventing territorial collection.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C02",
+      "section": "Who this applies to",
+      "article": "01.04.02(6)",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "printed_page": "42",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Original LFI addition read in full. Resident/nonresident natural/legal dividends are distinct from the particulars disposal limb.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C03",
+      "section": "Who this applies to",
+      "article": "01.04.02(6)",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "printed_page": "22",
+      "physical_pages": [
+        26
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full signed LFR substitution read; natural/legal resident/nonresident wording follows both receipts. No full-year retrospective inference.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C04",
+      "section": "Who this applies to / Cross-border points",
+      "article": "01.01.14 II-B",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "printed_page": "20",
+      "physical_pages": [
+        24
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full II-B repeal and II-C/D context read. Guide holds pre-repeal interaction rather than adding duplicate tax.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C05",
+      "section": "Who this applies to / Sources",
+      "article": "24",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "printed_page": "129",
+      "physical_pages": [
+        131
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full final articles 24 and 25 and promulgation block read. Activation is publication by radio or posting, not the printed signature date.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C06",
+      "section": "Who this applies to / Sources",
+      "article": "22",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "printed_page": "48",
+      "physical_pages": [
+        52
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full article 22 and signed amplification read. No evidence establishes actual radio/posting date; Guide holds it.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C07",
+      "section": "Rates, bands and thresholds / Two worked examples that recompute",
+      "article": "01.04.04",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full calculation article and original LFI replacement read. Round taxable income down to thousand Ariary and apply ordinary 20%, subject to treaty and exemptions.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C08",
+      "section": "Rates, bands and thresholds / Two worked examples that recompute",
+      "article": "01.04.04",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Allowance expressly applies to dividends of resident/nonresident associates. Base allowance before taxable-income rounding is the consistent construction, not a reduced statutory rate.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C09",
+      "section": "Rates, bands and thresholds / Two worked examples that recompute",
+      "article": "01.04.04",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Annual distribution, cooperative member status, share-interest/rebate category and assembly decision all retained. Exemption testing remains required.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C10",
+      "section": "Rates, bands and thresholds",
+      "article": "01.04.04",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Payment, proof and identity of underlying income retained. No general exemption of unrelated income or foreign-credit claim.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C11",
+      "section": "The base",
+      "article": "01.04.02(1)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full 01.04.02(1) read; with/without local seat scope retained without claiming a complete foreign-payer collection route.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C12",
+      "section": "The base",
+      "article": "01.04.02(2)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Complete 01.04.02(2) read; beneficiary nondisclosure condition retained. General term placements separately in 03.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C13",
+      "section": "The base",
+      "article": "01.04.02(3)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "All administrator titles, expense reimbursements and remuneration read. Guide preserves broad charging scope and separately tests direction-function exclusion.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C14",
+      "section": "The base",
+      "article": "01.04.02(4)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Prizes and redemption premiums payable to creditors/bondholders expressly named; subsequent measurement article checked.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C15",
+      "section": "The base",
+      "article": "01.04.02(5)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Receivables, deposits and security deposits named; exemptions are not inferred from the product label.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C16",
+      "section": "The base",
+      "article": "01.04.03(1)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "All institution placements and BTA/BTF examples named in full 03(1); sight-deposit exception read separately.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C17",
+      "section": "The base",
+      "article": "01.04.03(2)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Credit current accounts of shareholders/associates and intragroup advances expressly covered; no debit-account extension.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C18",
+      "section": "The base / Rates, bands and thresholds",
+      "article": "01.04.03(3),04",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "43",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "03(3) covers annual cooperative products and liquidation surplus; 04 reduced-rate wording does not automatically include surplus.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C19",
+      "section": "The base",
+      "article": "01.04.05(1)–(2)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full measurement list read. Bond interest/distributed income and prize amount correctly distinguished.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C20",
+      "section": "The base",
+      "article": "01.04.05(3)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Redemption premium is repayment less issue amount; 06 issue-price hierarchy read. No inference that taux means interest rate here.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C21",
+      "section": "The base",
+      "article": "01.04.05(4)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full 05(4) connects unique administrator/board remuneration to assembly/board records and equivalent documents.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C22",
+      "section": "The base",
+      "article": "01.04.05(5)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "05(5) expressly uses general/managing directors declaration for 03 income; Guide preserves this document requirement.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C23",
+      "section": "The base / Sources",
+      "article": "01.04.06",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full 06 read, including average total issue net of accrued arrears, incomplete issue at prior 31 December, 20-times fallback and estimated no-interest declaration. Execution is held.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C24",
+      "section": "The base / Sources",
+      "article": "01.04.02(6), read with CDI01.04.04–08",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "printed_page": "22",
+      "physical_pages": [
+        26
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Charge established, measurement/collection held. Articles 05/06 discuss bonds/redemption rather than supplying a complete securities-disposal method. No gross-proceeds formula, basis, loss or lot rule invented.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C25",
+      "section": "The base / Two worked examples that recompute",
+      "article": "01.04.10 first bullet",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full first exemption bullet read in context. Credit operations of banks/financial establishments and sight deposits retained; no blanket term-deposit or IR exemption.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C26",
+      "section": "The base",
+      "article": "01.04.10",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "printed_page": "42",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Original LFI expressly deletes second bullet. First and direction-function bullet sets checked: deleted bullet is external financing, not a director role.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C27",
+      "section": "The base",
+      "article": "01.04.10 second bullet",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Stale CDI second bullet identified precisely; Guide grants no current exemption from this unreconciled compilation.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C28",
+      "section": "The base",
+      "article": "01.04.10 direction-function paragraphs",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "repair required in Guide translation (F1)",
+      "reviewer_note": "French quoted roles are exact, and function limitation/deleted cap are handled. Guide translation director-general deputy is ambiguous and does not preserve the administrator-adjunct-to-chairman relation. F1 requires precise role wording.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C29",
+      "section": "The base",
+      "article": "01.04.10 final paragraph",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Baseline final paragraph read as deduction cap. Used only for baseline, expressly not retained after operative LFR deletion.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C30",
+      "section": "The base",
+      "article": "01.04.10",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "printed_page": "22",
+      "physical_pages": [
+        26
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full LFR amendment deletes last paragraph only; does not delete named function test. Guide handles this correctly apart from F1 role wording.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C31",
+      "section": "The base",
+      "article": "01.04.11",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "45",
+      "physical_pages": [
+        46
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full cooperative loan-interest exclusion read, distinct from taxable share-interest/rebates. Guide retains statutory counterparty wording.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C32",
+      "section": "The base",
+      "article": "01.04.12",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "45",
+      "physical_pages": [
+        46
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "All three 12 limbs read under agricultural/mutual-credit heading. Guide preserves actual entity/product screening; no general finance-sector exemption.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C33",
+      "section": "The base",
+      "article": "01.04.13",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "45",
+      "physical_pages": [
+        46
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full 13 read: exclusive effective mutual/material aid, not a true company, borrowings exception. All conditions retained.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C34",
+      "section": "The base",
+      "article": "01.04.14",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "45",
+      "physical_pages": [
+        46
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "14 states endorsement of warrants for advances to companies. No expansion to every secured advance.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C35",
+      "section": "Deadlines and filing",
+      "article": "01.04.08",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "44",
+      "physical_pages": [
+        45
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "08 expressly makes paying body liquidate, retain, declare and remit; 07/09 cross-reference CPF read.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C36",
+      "section": "Deadlines and filing",
+      "article": "I-26",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "printed_page": "16",
+      "physical_pages": [
+        17
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "I-26 is expressly in IRCM chapter; preceding salary and following property boundaries checked. Correct territorial office rule.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C37",
+      "section": "Deadlines and filing",
+      "article": "I-27(A)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "printed_page": "16",
+      "physical_pages": [
+        17
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "I-27 A says at latest the 15th of following month. Guide states the day correctly; ledger shorthand by15th month is read with exact quote, not as a 15-month period.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C38",
+      "section": "Deadlines and filing",
+      "article": "I-27(B)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "printed_page": "16",
+      "physical_pages": [
+        17
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "I-27 B full clause preserves availability or credit to any account, whatever payment mode. Guide rejects cash-withdrawal deferral.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C39",
+      "section": "Deadlines and filing",
+      "article": "I-27(C)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "printed_page": "17",
+      "physical_pages": [
+        18
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "I-27 C associate list, shares count, conditional drawing minutes and redemption schedule retained.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C40",
+      "section": "Deadlines and filing",
+      "article": "I-27(C)(b)–(e)",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "printed_page": "17",
+      "physical_pages": [
+        18
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "I-27 C b-e all four items and premium/where-relevant qualifiers read. No new form field or return route invented.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C41",
+      "section": "Deadlines and filing / Sources",
+      "article": "I-28",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf",
+      "printed_page": "17",
+      "physical_pages": [
+        18
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "I-28 explicitly concerns French/foreign public securities in Madagascar; implementing formalities held. Adjacent IPVI receipt rule not imported.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C42",
+      "section": "Penalties and interest",
+      "article": "20.01.51–54.1",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "172–174",
+      "physical_pages": [
+        173,
+        174,
+        175
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Full general sanctions 51-54.1 read, plus original LFI changes and LFR 52 replacement. No numeric final IRCM sanction asserted. Salary/service sanctions remain distinct; full IRCM relief/calculation held.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C43",
+      "section": "Cross-border points",
+      "article": "01.01.14 II-D",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf",
+      "printed_page": "20",
+      "physical_pages": [
+        24
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "II-D full text and inherited II 10% context checked. Capital Guide links owning cross-border and does not copy separate bank-IR rate. Same numeric 10% elsewhere is expressly cooperative IRCM.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C44",
+      "section": "Cross-border points",
+      "article": "30.02.13",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "209",
+      "physical_pages": [
+        210
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Complete 30.02.13 and neighbours read. Special mining external-loan/affiliate and distribution rules exist; Guide requires eligibility and holds computations.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C45",
+      "section": "Cross-border points",
+      "article": "01.01.05",
+      "official_url": "https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf",
+      "printed_page": "13",
+      "physical_pages": [
+        14
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Complete 01.01.03-05 context read. Legal residence can follow registered seat and/or effective management; no foreign-incorporation-only conclusion.",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "C46",
+      "section": "Rates, bands and thresholds",
+      "article": "01.04.04 replacement",
+      "official_url": "https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/janv/LOI_n%C2%B0_2025-021_VF_LFI__2026.pdf",
+      "printed_page": "42",
+      "physical_pages": [
+        44
+      ],
+      "exact_quote_verdict": "pass, all exact French anchors found on independently extracted actual PDF page(s)",
+      "semantic_verdict": "pass within explicitly held partial scope",
+      "reviewer_note": "Original LFI replacement read and visually checked. Confirms CDI calculation including rounding, allowance, annual cooperative conditions and justified finality; no reliance solely on compiled text.",
+      "read_on": "2026-11-01"
+    }
+  ]
+}

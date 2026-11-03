@@ -1,0 +1,53 @@
+{
+  "kind": "Post-commit writer validation, not independent review",
+  "checked_content_commit": "15695d500186ca1b1d1d6d418b57d1e5d79a54d4",
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "results": [
+    {
+      "cmd": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 scripts/validate-guides.py --changed-only --no-index-check",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "70a4f1",
+        "wall_time_seconds": 0.2763215,
+        "exit_code": 0,
+        "original_token_count": 77,
+        "output": "changed-only mode: validating 2 changed guide file(s)\nchecked 1 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/madagascar/mg-annual-property-tax.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (1 warning group(s))\n"
+      }
+    },
+    {
+      "cmd": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 scripts/check-sync-integrity.py --base 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 --mode audit --strict-metadata",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "e52ae0",
+        "wall_time_seconds": 0.253417167,
+        "exit_code": 0,
+        "original_token_count": 21,
+        "output": "Sync integrity checked 1 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+      }
+    },
+    {
+      "cmd": "git diff --check 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 HEAD",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "a52a32",
+        "wall_time_seconds": 1.0583e-05,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    },
+    {
+      "cmd": "PYTHONPATH=/Users/michaelcutajar/Documents/ChatGPT/OA/output/finland-pack-2026-10-26/validation-deps python3 scripts/check-examples.py --require skills/madagascar/mg-annual-property-tax.md",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "c9c2dd",
+        "wall_time_seconds": 0.093772792,
+        "exit_code": 0,
+        "original_token_count": 15,
+        "output": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n"
+      }
+    }
+  ],
+  "warning_explanation": "The stock validator passes with one warning because annual-property-tax has no token in the seven-domain classifier; country-cell coverage was not mechanically checked. The new Guide is a distinct IFT/IFPB annual property job, and the README routes it explicitly outside the unchanged seven partial domains. All eight previous Guide bodies remain exact.",
+  "review_status": "Independent source review pending; no accountant attestation or merge permission."
+}

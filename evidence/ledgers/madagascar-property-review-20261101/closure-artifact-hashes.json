@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-11-01",
+  "candidate_over_head": "b3e5620d1062e0881d699d3d7ca0c5c3e8e76264",
+  "files": [
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/closure-review.md",
+      "bytes": 7469,
+      "sha256": "960da27752a3c5b4058f7a16f18a2ed0f7a6dab0fca22ea932c1088338361037"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/closure-checks.json",
+      "bytes": 21174,
+      "sha256": "c4725150863f056e9f9b68b3f4b4ae6b6cb5dd27a87edb56fa45a7994c3df701"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-property-review-20261101/status-only-permission.json",
+      "bytes": 4637,
+      "sha256": "8599f5ed59433e426bba607567a3f0b38b24bde13e02006d968bba7263df3dbf"
+    }
+  ]
+}
