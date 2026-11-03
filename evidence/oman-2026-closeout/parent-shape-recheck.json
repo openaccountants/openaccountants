@@ -1,0 +1,62 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/oman/om-company-formation.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/oman/om-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/oman/om-corporate-income-tax.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/oman/om-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/oman/om-income-tax.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/oman/om-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/oman/om-payroll-social.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/oman/om-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/oman/om-tax-overview.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/oman/om-tax-overview.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/oman/oman-vat.md"
+    ],
+    "exit_code": 0,
+    "stdout": "skills/oman/oman-vat.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+    "stderr": ""
+  }
+]
