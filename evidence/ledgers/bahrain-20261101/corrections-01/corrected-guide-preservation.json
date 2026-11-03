@@ -1,0 +1,59 @@
+{
+  "reviewed_candidate": "0bce9f9c7ed1776eab90ae912096a03a6d7dba12",
+  "status": "Writer correction receipt; independent closure pending",
+  "original_review_files": {
+    "independent-review/component-checks.json": "845d8958429f98d9eff2296ef7e603a3cb489b93ac08e712b2b485f6fd102959",
+    "independent-review/review-initial.md": "1b689f560ca3eaf17eda292005d0ad0d603d908804907311cd64f0ab60af1f9a",
+    "independent-review/validation-initial.json": "16f062b96a5d05204eb5bc19c1b8baff982e03e281ab5350689f18bd3bcdff4f",
+    "independent-review/review-initial.json": "fa2ac94970b8c8c8f705ce8217ef9e5ec822ceb49dbace39ed1c78bdf2d0f98c",
+    "independent-review/validation-focused.json": "75fc697a184022372136f834eb69e01cb16c4b82516fae862e30412c058519bb",
+    "independent-review/sijilat-independent-visible-read.md": "02c684767f861bbc2790e18161cd49901ab5dc6f667820f7cd16c9547b7d2bf1",
+    "independent-review/independent-case-outputs.json": "d2655c25340d6857a0e701c5c0c15d094aea6bcb918a09cf28a6fb44f9cffd1d",
+    "independent-review/recompute.py": "789094d93108b363f3064757342c9072d0618e7c38ac763354ecfeeccec6fa8b",
+    "independent-review/byte-source-preservation-audit.json": "671b27698f1817a987a294a4545545e533e06321d1a68a61b550edf00dca9058"
+  },
+  "guide_hashes": {
+    "skills/bahrain/README.md": {
+      "sha256": "bd41edf587577d55f05577407a66ac2fbaf44e8f5eb42addb84e576b873291c3",
+      "changed_from_reviewed_candidate": false
+    },
+    "skills/bahrain/bahrain-vat.md": {
+      "sha256": "1c68347dd27930ab557d86bf4c7ce0a2d0c4f95a4dab28822f638fcfbd2d55be",
+      "changed_from_reviewed_candidate": false,
+      "full_cta_suffix_preserved": true
+    },
+    "skills/bahrain/bh-company-formation.md": {
+      "sha256": "f8a98b973e236f052821c12976c82f5b5de5cf8a839962fec86129e6fad62bf7",
+      "changed_from_reviewed_candidate": false,
+      "full_cta_suffix_preserved": true
+    },
+    "skills/bahrain/bh-corporate-income-tax.md": {
+      "sha256": "00f7b0edc2e45c3a3d3ddf8837b7a3d989bcea81dfa440088b6a763a1626e5cc",
+      "changed_from_reviewed_candidate": true,
+      "full_cta_suffix_preserved": true
+    },
+    "skills/bahrain/bh-cross-border-tax.md": {
+      "sha256": "b72dbddae4feb1850e15453de34367d02d60a20067b21ab1c9bccb8c6304a484",
+      "changed_from_reviewed_candidate": false
+    },
+    "skills/bahrain/bh-income-tax.md": {
+      "sha256": "173bac83317df73f201941b25344a6e8e9d02bc8ca874c1d3409c8b7056fd52c",
+      "changed_from_reviewed_candidate": false,
+      "full_cta_suffix_preserved": true
+    },
+    "skills/bahrain/bh-payroll-social.md": {
+      "sha256": "bfe3dc1cb7cfae9b7e26341f105b5d5b75909ce0518fe51cf877a068894b65f1",
+      "changed_from_reviewed_candidate": true,
+      "full_cta_suffix_preserved": true
+    },
+    "skills/bahrain/bh-tax-overview.md": {
+      "sha256": "9005ef1ce4596f0f9f7cc8a95c7bdb5bc89984e3d2f4ef5aedd38bf0b9399f30",
+      "changed_from_reviewed_candidate": false,
+      "full_cta_suffix_preserved": true
+    },
+    "skills/bahrain/bh-transfer-pricing.md": {
+      "sha256": "ca343c93b95fd194ed183605837aea0f3891a8bb352b68a30b2bc058c1c56b37",
+      "changed_from_reviewed_candidate": false
+    }
+  }
+}

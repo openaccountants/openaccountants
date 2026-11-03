@@ -1,0 +1,32 @@
+[
+  {
+    "view": "guide-preservation.json",
+    "original_private_path": "../sources/evidence-originals/guide-preservation.json",
+    "original_sha256": "005198cc532b7e98fa3b045de53c5cec937c723507ba353900d5c660869ac534"
+  },
+  {
+    "view": "claim-rows.json",
+    "original_private_path": "../sources/evidence-originals/claim-rows.json",
+    "original_sha256": "859d00f8e4e4404f90d8cea0922608641b935b8469443d4a8e769335b97fb43a"
+  },
+  {
+    "view": "context.json",
+    "original_private_path": "../sources/evidence-originals/context.json",
+    "original_sha256": "53a35ab8f71b59645f39313d7abcfa852e89b1969bfd3ad58d99576e646210d9"
+  },
+  {
+    "view": "source-storage-correction.json",
+    "original_private_path": "../sources/evidence-originals/source-storage-correction.json",
+    "original_sha256": "636aced78cdbc530f852acae4a4e0f9833a966d2dc89ce5a172b78810ae6b7b8"
+  },
+  {
+    "view": "old-topics.json",
+    "original_private_path": "../sources/evidence-originals/old-topics.json",
+    "original_sha256": "8f27925d730b06ddf9b75edde352b48d1cfce55208522d6576f27652e6a52013"
+  },
+  {
+    "view": "source-identities.json",
+    "original_private_path": "../sources/evidence-originals/source-identities.json",
+    "original_sha256": "4410cdaaa7f3f343907d1c9e92c95bac75c42f5f9fda877c03134cf0b605c903"
+  }
+]

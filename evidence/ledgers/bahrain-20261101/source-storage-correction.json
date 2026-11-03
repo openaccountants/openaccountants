@@ -1,0 +1,390 @@
+{
+  "historical_commit": "3d9214f5f5762b94558e1c6125649f6741799d45",
+  "source_blobs_removed_from_current_public_tree": [
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/acquisition.json",
+      "private_path": "../sources/acquisition.json",
+      "sha256": "fb50466424e5c495dd4fa05d6000b948388ac2f52ff8e2160585b7d2e2758b28",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/acquisition2.json",
+      "private_path": "../sources/acquisition2.json",
+      "sha256": "bcd02c6a49a3c4d68dd4e2ede35062d2b7266eb3e32aeb4be291ed95c79a3620",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/acquisition3.json",
+      "private_path": "../sources/acquisition3.json",
+      "sha256": "74dbfca3066a2c6f06dfd2ca210143812ae35c0ea0f5810f10746c813c6eb0e6",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/acquisition4.json",
+      "private_path": "../sources/acquisition4.json",
+      "sha256": "1297e392652af018a612e28e758278409b3ed583134db4e9057f43a38c8d120b",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/acquisition5.json",
+      "private_path": "../sources/acquisition5.json",
+      "sha256": "2d5a9e166259d68ee89e18adbdf10c7e9525238daf4d3ead2312762c24b2353c",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/dmtt-amendments.html",
+      "private_path": "../sources/dmtt-amendments.html",
+      "sha256": "ae8af40275bc71eb0a3ad0041153622d7de66c0334271e4e9960f58021b81f77",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/dmtt-amendments.txt",
+      "private_path": "../sources/dmtt-amendments.txt",
+      "sha256": "405290ec06c4191173e1b9ecaca16e3a890ab5438466f780ee12ece82c6ca60b",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/dmtt-er-ar.html",
+      "private_path": "../sources/dmtt-er-ar.html",
+      "sha256": "ce2f5e18588fad3164794ba11194f5a449714366060518d2170f7961d1986a58",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/dmtt-er-ar.txt",
+      "private_path": "../sources/dmtt-er-ar.txt",
+      "sha256": "3f3312522834ae95f3804c7c043bcc06707d8297d08d050a0f1a29e47572715a",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/dmtt-law.html",
+      "private_path": "../sources/dmtt-law.html",
+      "sha256": "30815f6fe46c25a3c7ac3a154d21088715809821583c318baac1b2b279bac382",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/dmtt-law.txt",
+      "private_path": "../sources/dmtt-law.txt",
+      "sha256": "84f1a97ee6bb410c2e8bec88b8f1d880d692ffcb149b258dc28e9a7d06e800a1",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-2026-archive.html",
+      "private_path": "../sources/edb-2026-archive.html",
+      "sha256": "7d46cbf1eecd70cbeaf076fe73d696e7d7e831daddd11c56824c7121de26fb84",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-2026-archive.txt",
+      "private_path": "../sources/edb-2026-archive.txt",
+      "sha256": "ae201f11564b58a7c979abc5c8a5bac3bd6d12da776fb3cf69918bdc5b4a31a4",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-2026-replay.pdf",
+      "private_path": "../sources/edb-2026-replay.pdf",
+      "sha256": "66bebfd1cd1bf29e0824339f8ba81bbc54b4ff8d7cd78ad8ae7aeebd562d4421",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-2026-replay.txt",
+      "private_path": "../sources/edb-2026-replay.txt",
+      "sha256": "b516ca429a406a683a6390f22942308ab125489eb95a3a40c6984101271009a5",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-2026.html",
+      "private_path": "../sources/edb-2026.html",
+      "sha256": "c83e02fa971121111042df6b8e6d3822ff545b287de10e14fefd927667995fdd",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-2026.txt",
+      "private_path": "../sources/edb-2026.txt",
+      "sha256": "aca3547eb7c402bb1fe04303bc55ce974c299ba83960438a0c9882a3d2f99921",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-investor-archive.html",
+      "private_path": "../sources/edb-investor-archive.html",
+      "sha256": "d89d24926bd6d0cad96dd39503d9df3a01f75ec1d7779ba51a342bb64e7bf1fe",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-investor-archive.txt",
+      "private_path": "../sources/edb-investor-archive.txt",
+      "sha256": "5722ae46b3ef7f986757945f08ee91de8e482a1f5c64307d5ae793172feb15c9",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-investor.html",
+      "private_path": "../sources/edb-investor.html",
+      "sha256": "c83e02fa971121111042df6b8e6d3822ff545b287de10e14fefd927667995fdd",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/edb-investor.txt",
+      "private_path": "../sources/edb-investor.txt",
+      "sha256": "aca3547eb7c402bb1fe04303bc55ce974c299ba83960438a0c9882a3d2f99921",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/eosb-ar.html",
+      "private_path": "../sources/eosb-ar.html",
+      "sha256": "b843526a5611f4abd32a81c4e60e0fcefc18cf2e5bf555fec8f10c40b6628799",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/eosb-ar.txt",
+      "private_path": "../sources/eosb-ar.txt",
+      "sha256": "3c1963242c3f5acf7ab8baaaae81d9c933415dad0f57e8a1e74eb0d4fe1a809b",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/eosb-archive.html",
+      "private_path": "../sources/eosb-archive.html",
+      "sha256": "4cd1ea0201337bc0cb9dac57b245554963d81b63a82831162e90645a6e4541a3",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/eosb-archive.txt",
+      "private_path": "../sources/eosb-archive.txt",
+      "sha256": "1aec6c071d68bfe676a6b9f762569977c8fa79216e711b93d0d849d26b98df4c",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/income-amendments.html",
+      "private_path": "../sources/income-amendments.html",
+      "sha256": "ae8af40275bc71eb0a3ad0041153622d7de66c0334271e4e9960f58021b81f77",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/income-amendments.txt",
+      "private_path": "../sources/income-amendments.txt",
+      "sha256": "405290ec06c4191173e1b9ecaca16e3a890ab5438466f780ee12ece82c6ca60b",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/income-law.html",
+      "private_path": "../sources/income-law.html",
+      "sha256": "bb7c5db8eb6dca8861dce678cbccf7864280b2f3d457213ca52e7a7b7abec92f",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/income-law.txt",
+      "private_path": "../sources/income-law.txt",
+      "sha256": "f6ce7ecbac703a7946d8d9d0b14b786340469ed2599d5d0dde4c22c9eb41b098",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/initial-pr-snapshot.json",
+      "private_path": "../sources/initial-pr-snapshot.json",
+      "sha256": "d9e844d35a83852050825d6078d2ffbc2b2235e8e32373eb876fcfba2148507b",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/lloc-L2279.html",
+      "private_path": "../sources/lloc-L2279.html",
+      "sha256": "95022016925b92fed93b3a03c730dc79dec259d57436919d5ee1781cb031cba6",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/lloc-L2279.txt",
+      "private_path": "../sources/lloc-L2279.txt",
+      "sha256": "2deb3067b54609bd0f148b0136903453a050d7892679615a9420c0410f5ab156",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/nbr-dmtt.html",
+      "private_path": "../sources/nbr-dmtt.html",
+      "sha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/nbr-dmtt.txt",
+      "private_path": "../sources/nbr-dmtt.txt",
+      "sha256": "9fb94c9b1e18c4133ec7d13ffb1fb7af8391bf53994162e914f9b880c2834020",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sijilat-browser-read-excerpts.txt",
+      "private_path": "../sources/sijilat-browser-read-excerpts.txt",
+      "sha256": "6718957d8a36aa32ddd95b1089c0f622b696477e37a8da98c77419e71d99dc72",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sijilat-translations.txt",
+      "private_path": "../sources/sijilat-translations.txt",
+      "sha256": "0e49f96774fd3c1e8d7ba6520853c55687ff81267979f388473e5ed81f68f0a9",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sijilat.html",
+      "private_path": "../sources/sijilat.html",
+      "sha256": "20581b97fd8e18f2d51540295d49017e75c48c25e7281d1cc96e6f049be73eb7",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sijilat.txt",
+      "private_path": "../sources/sijilat.txt",
+      "sha256": "09c28e6b82c8072eed908f028cdc9148f3c88e155e2865ba09ad5fcccaa5ab40",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-2026.html",
+      "private_path": "../sources/sio-2026.html",
+      "sha256": "c8166390ce74bb8eae19cd3ca8a15376a5f554af69e4db207689bc0435b392e9",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-2026.txt",
+      "private_path": "../sources/sio-2026.txt",
+      "sha256": "1a3d637dcea17b5e0f19fa6906429ee55e109c394cd14ebe68cc72bb656136bb",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-amendment-2022.html",
+      "private_path": "../sources/sio-amendment-2022.html",
+      "sha256": "0ce2096184a6e09c10438c943b7c5d1e2b3c2f1dc00dc35761a05c856bcc936b",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-amendment-2022.txt",
+      "private_path": "../sources/sio-amendment-2022.txt",
+      "sha256": "94d5dffd13b37e050cbfab269fa761008337b8d62b01048499377487669d8351",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-amendments.html",
+      "private_path": "../sources/sio-amendments.html",
+      "sha256": "51ab265294c0b7c922b7c75e5b7cfdeb343800720ee9a867ed1058a583b6e013",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-amendments.txt",
+      "private_path": "../sources/sio-amendments.txt",
+      "sha256": "dc5e130a31c508416e997ed8342adfc54da1da466996c0dd7d113e94e46ad418",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-cap-2022.html",
+      "private_path": "../sources/sio-cap-2022.html",
+      "sha256": "f10f7fa2a17380da16a6de57575e3b2a710acf36656d0c34fa58b63e17ff6884",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-cap-2022.txt",
+      "private_path": "../sources/sio-cap-2022.txt",
+      "sha256": "c463dbc7d9d5d71c4908b30f5768066a6a51fadb9e0aa286015121d8595c7bcb",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-consolidated.docx",
+      "private_path": "../sources/sio-consolidated.docx",
+      "sha256": "0e68f46e7668f6ab679f9a0601b276cf426b18690921808ac287bb0b7c86acb7",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-consolidated.txt",
+      "private_path": "../sources/sio-consolidated.txt",
+      "sha256": "58ea009bb716cc582d2c2b71a0a51f4025fe8ed15e790b336fc26bad13815719",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-landing.html",
+      "private_path": "../sources/sio-landing.html",
+      "sha256": "08bf9b609efe58cb3b863704c68bc88589909b879289b1f3dbe81ee03767c471",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-landing.txt",
+      "private_path": "../sources/sio-landing.txt",
+      "sha256": "596484f0a3a5591fc405b878df2e95a13dec2a568aeb4293b236f539813acbfa",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-law-ar.html",
+      "private_path": "../sources/sio-law-ar.html",
+      "sha256": "5e6c0203a35ec859ed5ecae8b43233b63841cc729c58944e96053c376eddf944",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-law-ar.txt",
+      "private_path": "../sources/sio-law-ar.txt",
+      "sha256": "4873149881f2481798cf98b88bd70d5d999ddf7f1ec742e601a541e34cb77da1",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-law-archive.html",
+      "private_path": "../sources/sio-law-archive.html",
+      "sha256": "e04ffc0a4961f937e4bae3cc5dc877cc5273404edbd2a05e26f60ca33e2f1441",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/sio-law-archive.txt",
+      "private_path": "../sources/sio-law-archive.txt",
+      "sha256": "75f8477a07785da25691de9f163df8e0775b109bc09b70155539a7b1e78f4e74",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/unemployment-consolidated.docx",
+      "private_path": "../sources/unemployment-consolidated.docx",
+      "sha256": "7dd21d215835a81d1b35ca1efdbb08b7c41715c25ef836c319def971f6fd00ae",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/unemployment-consolidated.txt",
+      "private_path": "../sources/unemployment-consolidated.txt",
+      "sha256": "0b3badc66ecd8143e01200ca4bfe48af405cad6d3d5d2cc1583f2ff74a44969e",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/unemployment-landing.html",
+      "private_path": "../sources/unemployment-landing.html",
+      "sha256": "c298fc974f6f512e340bea2fc7ded16cd9aeb34c66b7edaf1ea87bf76b9017e9",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/unemployment-landing.txt",
+      "private_path": "../sources/unemployment-landing.txt",
+      "sha256": "79cb47080efa0539fb47e600d95ca946cc2dfccf7d21e14a520ca0fe9d322205",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/unemployment-law.html",
+      "private_path": "../sources/unemployment-law.html",
+      "sha256": "435d450d0e0bc7db6611dca03839b7bf0f65be850bf3c48302e3420bf860a005",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/unemployment-law.txt",
+      "private_path": "../sources/unemployment-law.txt",
+      "sha256": "52bde592905c1e76cac35781380c6d1e5eca5ab82a89fa7635cca9d8ed1e2c93",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/vat-filing-archive.html",
+      "private_path": "../sources/vat-filing-archive.html",
+      "sha256": "abdda1eb10ba401658a359d17cb622c61af5b028008db0714be7b94c63d47801",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/vat-filing-archive.txt",
+      "private_path": "../sources/vat-filing-archive.txt",
+      "sha256": "77b9aedc386bb82c39edf9f0cd08a814eda73c072bad368da6b2424449882f95",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/vat-registration-archive.html",
+      "private_path": "../sources/vat-registration-archive.html",
+      "sha256": "8e31f55d117d13ecd429c9a126fd8d4e71ec0d75c4a4511076167d46c43d4637",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    },
+    {
+      "public_path": "evidence/ledgers/bahrain-20261101/sources/vat-registration-archive.txt",
+      "private_path": "../sources/vat-registration-archive.txt",
+      "sha256": "10ab1914a538773bb2ab1652028c752ceaf19169f8f46af57129a9a7a7b4d201",
+      "public_removal_reason": "Raw full source blobs stay outside Git; exact private bytes retained."
+    }
+  ],
+  "preservation": "Every removed public file has an identical original private copy. The historical local commit is preserved; no rebase, reset or force operation used. Only compact quote/identity/read-scope evidence stays public."
+}

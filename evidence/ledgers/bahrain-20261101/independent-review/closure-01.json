@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "previous_candidate": "0bce9f9c7ed1776eab90ae912096a03a6d7dba12",
+  "candidate": "cc3c817059e459802c81345b7d41b11d17a56388",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "closed_findings": [
+    "BH-R01",
+    "BH-R02",
+    "BH-R03",
+    "BH-R04",
+    "BH-R05"
+  ],
+  "scope": "Focused closure only; initial45grouped records/285component checks/821predecessor blocks/10case outputs reused, not re-performed.",
+  "guide_hashes": {
+    "skills/bahrain/README.md": {
+      "sha256": "bd41edf587577d55f05577407a66ac2fbaf44e8f5eb42addb84e576b873291c3",
+      "git_blob": "28c6a4898024af0b321e807706750338c5f3fefd",
+      "unchanged_from_previous": true
+    },
+    "skills/bahrain/bahrain-vat.md": {
+      "sha256": "1c68347dd27930ab557d86bf4c7ce0a2d0c4f95a4dab28822f638fcfbd2d55be",
+      "git_blob": "919cfc829358dc4f2281eca8d48e5c86280f4e83",
+      "unchanged_from_previous": true
+    },
+    "skills/bahrain/bh-company-formation.md": {
+      "sha256": "f8a98b973e236f052821c12976c82f5b5de5cf8a839962fec86129e6fad62bf7",
+      "git_blob": "d8ec71345d60b785d135669d9cc8013b5be6970e",
+      "unchanged_from_previous": true
+    },
+    "skills/bahrain/bh-corporate-income-tax.md": {
+      "sha256": "00f7b0edc2e45c3a3d3ddf8837b7a3d989bcea81dfa440088b6a763a1626e5cc",
+      "git_blob": "e16b86d82e2d06e6491343b2b933c7a71fd9ce73",
+      "unchanged_from_previous": false
+    },
+    "skills/bahrain/bh-cross-border-tax.md": {
+      "sha256": "b72dbddae4feb1850e15453de34367d02d60a20067b21ab1c9bccb8c6304a484",
+      "git_blob": "8aa4bf1df5678d2e1efc3e86d398883981c673b5",
+      "unchanged_from_previous": true
+    },
+    "skills/bahrain/bh-income-tax.md": {
+      "sha256": "173bac83317df73f201941b25344a6e8e9d02bc8ca874c1d3409c8b7056fd52c",
+      "git_blob": "12393ba72e629210e7c8551219133e21dacd85f2",
+      "unchanged_from_previous": true
+    },
+    "skills/bahrain/bh-payroll-social.md": {
+      "sha256": "bfe3dc1cb7cfae9b7e26341f105b5d5b75909ce0518fe51cf877a068894b65f1",
+      "git_blob": "3350aea45dd64a57a1bd2d981c7c444f04631ed7",
+      "unchanged_from_previous": false
+    },
+    "skills/bahrain/bh-tax-overview.md": {
+      "sha256": "9005ef1ce4596f0f9f7cc8a95c7bdb5bc89984e3d2f4ef5aedd38bf0b9399f30",
+      "git_blob": "29eb4eda7f6811378bb26bc44f33c2e472721d97",
+      "unchanged_from_previous": true
+    },
+    "skills/bahrain/bh-transfer-pricing.md": {
+      "sha256": "ca343c93b95fd194ed183605837aea0f3891a8bb352b68a30b2bc058c1c56b37",
+      "git_blob": "5b15bb9e84660852bc063d6c0ad7234b3af98991",
+      "unchanged_from_previous": true
+    }
+  },
+  "initial_review_evidence_preserved": {
+    "independent-review/component-checks.json": true,
+    "independent-review/review-initial.md": true,
+    "independent-review/validation-initial.json": true,
+    "independent-review/review-initial.json": true,
+    "independent-review/validation-focused.json": true,
+    "independent-review/sijilat-independent-visible-read.md": true,
+    "independent-review/independent-case-outputs.json": true,
+    "independent-review/recompute.py": true,
+    "independent-review/byte-source-preservation-audit.json": true
+  },
+  "preserved_original_evidence": {
+    "old-topics.json": true,
+    "guide-preservation.json": true,
+    "claim-rows.json": true,
+    "source-identities.json": true,
+    "README.md": true,
+    "bh-company-formation.md": true,
+    "bh-corporate-income-tax.md": true,
+    "bh-payroll-social.md": true
+  },
+  "source_identity_rechecks": {
+    "BH-R02": true,
+    "BH-R03": true,
+    "BH-R04": true
+  },
+  "case_blocks_unchanged": {
+    "skills/bahrain/bh-company-formation.md": true,
+    "skills/bahrain/bh-corporate-income-tax.md": true,
+    "skills/bahrain/bh-cross-border-tax.md": true,
+    "skills/bahrain/bh-income-tax.md": true,
+    "skills/bahrain/bh-payroll-social.md": true,
+    "skills/bahrain/bh-tax-overview.md": true,
+    "skills/bahrain/bh-transfer-pricing.md": true
+  },
+  "not_accountant_attestation": true,
+  "not_comprehensive_country_acceptance": true,
+  "preservation_override_record_hash_matches": true,
+  "README_override_matches_Git": true,
+  "changed_country_content": [
+    "skills/bahrain/bh-corporate-income-tax.md",
+    "skills/bahrain/bh-payroll-social.md"
+  ],
+  "full_CTA_suffixes_preserved": true,
+  "verification_note": "An exploratory assertion initially compared original_record_sha256 to the text-only hash. The field hashes the complete sorted JSON record; independent recomputation matches. No candidate defect was found."
+}
