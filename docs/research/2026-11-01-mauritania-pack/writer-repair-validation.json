@@ -1,0 +1,114 @@
+{
+  "candidate_from_head": "1acd93fe32b47ed8c8a44ab5fe64a8dba46bbdfd",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "scope": "Eight current worktree Guides, nine country Markdown paths including README; no commit/push/merge.",
+  "results": [
+    {
+      "command": "python3 scripts/skill_checks.py skills/mauritania/mr-*.md",
+      "result": "All fifteen checks pass on each of eight current worktree files."
+    },
+    {
+      "command": "python3 scripts/check-examples.py --require skills/mauritania/mr-*.md",
+      "result": "8 files; 16 oa-check blocks; 0 failures; 0 missing."
+    },
+    {
+      "command": "python3 scripts/validate-guides.py --changed-only --no-index-check",
+      "result": "9 changed paths; 8 current worktree Guides checked; 0 warning groups. All eight existed at reviewed HEAD, so HEAD-based path selection includes every repaired Guide; checker reads current working files."
+    },
+    {
+      "command": "python3 scripts/check-sync-integrity.py --base 46c01152da0fdd1b722f61190c88413d0a195d02 --worktree --mode audit --strict-metadata",
+      "result": "8 source Guides; 0 errors; 0 warnings; 0 notices. Public contributor audit only, not private production CAS."
+    },
+    {
+      "command": "git diff --check 46c01152da0fdd1b722f61190c88413d0a195d02",
+      "result": "pass, current worktree against pinned comparison base"
+    }
+  ],
+  "metadata_preservation": [
+    {
+      "path": "skills/mauritania/mr-company-formation.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 103,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    },
+    {
+      "path": "skills/mauritania/mr-corporate-income-tax.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 102,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    },
+    {
+      "path": "skills/mauritania/mr-cross-border.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 103,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    },
+    {
+      "path": "skills/mauritania/mr-income-tax.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 103,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    },
+    {
+      "path": "skills/mauritania/mr-payroll-social.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 105,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    },
+    {
+      "path": "skills/mauritania/mr-tax-overview.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 101,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    },
+    {
+      "path": "skills/mauritania/mr-transfer-pricing.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 104,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    },
+    {
+      "path": "skills/mauritania/mr-vat-gst.md",
+      "version": "0.2",
+      "h1_matches": true,
+      "description_words": 104,
+      "platform_fields_unchanged": true,
+      "cta_suffix_unchanged_or_absent": true,
+      "two_examples": true
+    }
+  ],
+  "seven_domains_remain_partial": true,
+  "initial_review_files_unchanged": {
+    "docs/research/2026-11-01-mauritania-review/visual-checks.json": "63028045ea2e62346609157742a7b6fb44e14f95d8321ab9637d7557b8204239",
+    "docs/research/2026-11-01-mauritania-review/examples.md": "fda5502b691a10b1efcd1985315422410829841cc67732d7d4b89df0e508330b",
+    "docs/research/2026-11-01-mauritania-review/old-topic-checks.json": "c193440f5814f4239157b90c85ffb95d5dd7efbbf85b2667b0ee5e9ac9195d4c",
+    "docs/research/2026-11-01-mauritania-review/guide-metadata.json": "44db052d6508d6db6977a8a8c1922728656c11d4d848015bf6417c31c2b24986",
+    "docs/research/2026-11-01-mauritania-review/README.md": "2d06b85cc17e94436d70ad69bc8373989698d284fc21eedbe7936e31d9d0b4d1",
+    "docs/research/2026-11-01-mauritania-review/findings.json": "53101ca23bc6d03497c0a9133a0a313ebd17e6d77a853c4f81fd61716972ba67",
+    "docs/research/2026-11-01-mauritania-review/validation.json": "8a0844d04b030010fb4bfec1628bd4827d69482c0c166f72e5a589f5ef521a46",
+    "docs/research/2026-11-01-mauritania-review/source-checks.json": "e90539c8c903f66c2283aa2d3dd220dc741a4c4a477013fc8385ddea21cb17cf",
+    "docs/research/2026-11-01-mauritania-review/rule-and-placement-checks.json": "ce67f30e8093631653d18ee48535c1a596f3e6e2f745f605e21869bd837f1720",
+    "docs/research/2026-11-01-mauritania-review/freeze.json": "c85246f1843c8a3a9870ebce67a869ed476f6d11265718749943179a9ae20a55"
+  }
+}

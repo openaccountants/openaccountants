@@ -1,0 +1,372 @@
+{
+  "candidate_from_head": "1acd93fe32b47ed8c8a44ab5fe64a8dba46bbdfd",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "status": "writer repairs frozen; focused independent closure pending",
+  "new_content_commit": null,
+  "rules": 80,
+  "placements": 98,
+  "old_topics": 68,
+  "old_intro_rows": 6,
+  "examples": 16,
+  "all_seven_domains_partial": true,
+  "initial_review_files_unchanged": {
+    "docs/research/2026-11-01-mauritania-review/visual-checks.json": "63028045ea2e62346609157742a7b6fb44e14f95d8321ab9637d7557b8204239",
+    "docs/research/2026-11-01-mauritania-review/examples.md": "fda5502b691a10b1efcd1985315422410829841cc67732d7d4b89df0e508330b",
+    "docs/research/2026-11-01-mauritania-review/old-topic-checks.json": "c193440f5814f4239157b90c85ffb95d5dd7efbbf85b2667b0ee5e9ac9195d4c",
+    "docs/research/2026-11-01-mauritania-review/guide-metadata.json": "44db052d6508d6db6977a8a8c1922728656c11d4d848015bf6417c31c2b24986",
+    "docs/research/2026-11-01-mauritania-review/README.md": "2d06b85cc17e94436d70ad69bc8373989698d284fc21eedbe7936e31d9d0b4d1",
+    "docs/research/2026-11-01-mauritania-review/findings.json": "53101ca23bc6d03497c0a9133a0a313ebd17e6d77a853c4f81fd61716972ba67",
+    "docs/research/2026-11-01-mauritania-review/validation.json": "8a0844d04b030010fb4bfec1628bd4827d69482c0c166f72e5a589f5ef521a46",
+    "docs/research/2026-11-01-mauritania-review/source-checks.json": "e90539c8c903f66c2283aa2d3dd220dc741a4c4a477013fc8385ddea21cb17cf",
+    "docs/research/2026-11-01-mauritania-review/rule-and-placement-checks.json": "ce67f30e8093631653d18ee48535c1a596f3e6e2f745f605e21869bd837f1720",
+    "docs/research/2026-11-01-mauritania-review/freeze.json": "c85246f1843c8a3a9870ebce67a869ed476f6d11265718749943179a9ae20a55"
+  },
+  "writer_source_visual_checks": [
+    {
+      "source": "lfr2026",
+      "physical_page": 6,
+      "render": "lfr2026-6.png",
+      "sha256": "86a4255b926c8d817fe0f9bd51945bc0fb3f174f02a5117456a00fbba97f0a5b",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "lfi2026",
+      "physical_page": 6,
+      "render": "lfi2026-6.png",
+      "sha256": "c84d9778990b70484ed7ac41e30125ede7840c83e63bf74ead72f72bba7b8ba3",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "lfi2024",
+      "physical_page": 5,
+      "render": "lfi2024-5.png",
+      "sha256": "4b81f896137233b05318ed12822a5bbdeb3c2f4affeddfafb2014c384c6bc186",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "cgi2023",
+      "physical_page": 24,
+      "render": "cgi2023-24.png",
+      "sha256": "3269993ffd4af45c67f786f5e065ce622d1925b64ca40d52de6bbc4ce8769ac0",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "cgi2023",
+      "physical_page": 25,
+      "render": "cgi2023-25.png",
+      "sha256": "63fd6273e513a09cb838ab45909ab0233702b77e3b349edc16bba48276896c5e",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "cgi2023",
+      "physical_page": 46,
+      "render": "cgi2023-46.png",
+      "sha256": "6a3800e3fb8ab507de60463ea2e6ce3265ebd981c1c287c67a0250e7fc99e1ca",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "cgi2023",
+      "physical_page": 49,
+      "render": "cgi2023-49.png",
+      "sha256": "e8f8a48d9723260d79d6ea982f23b249a270a50c848b291726ff991ae0b3d9b6",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "cgi2023",
+      "physical_page": 86,
+      "render": "cgi2023-86.png",
+      "sha256": "62b5f920e2d230f8abd354ab211faa50876f5b405741e4306d492b4725f989b0",
+      "writer_read_on": "2026-11-01"
+    },
+    {
+      "source": "cgi2023",
+      "physical_page": 92,
+      "render": "cgi2023-92.png",
+      "sha256": "d4f55f205fc1e4a9bc9f74306219bb0858a966f7b0007112aa153ea7884ac001",
+      "writer_read_on": "2026-11-01"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "rule_ids": [
+        "C04",
+        "C07",
+        "C08",
+        "C18",
+        "C19"
+      ],
+      "writer_action": "Added valid normal-regime election and all intermediate art.48(2) base restrictions.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-corporate-income-tax.md",
+          "sha256": "55e82d546ca74de7aefad69f029fd6bd120cb30c4a3f0d43817261757ae83a6b"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F2",
+      "rule_ids": [
+        "I09",
+        "I14"
+      ],
+      "writer_action": "Named exact special written-contract personnel categories and20%maximum; excluded them from ordinary formula/example and held cap interpretation.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-income-tax.md",
+          "sha256": "bc46d9f71444c6562451b8282b84a77ce2ed29eb3daaa737736777e26c54c9c4"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F3",
+      "rule_ids": [
+        "C10"
+      ],
+      "writer_action": "Added express midyear transfer/cessation exception next to31December at all three placements.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-corporate-income-tax.md",
+          "sha256": "55e82d546ca74de7aefad69f029fd6bd120cb30c4a3f0d43817261757ae83a6b"
+        },
+        {
+          "path": "skills/mauritania/mr-company-formation.md",
+          "sha256": "5f316ec5edf92a4733f8b3be41c51a71db9f7abadc2a99e118f237096e364d69"
+        },
+        {
+          "path": "skills/mauritania/mr-tax-overview.md",
+          "sha256": "15332ed083a6fdb990b1bb93d3681619261d3112a233196f45c1fdad4758fc3f"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F4",
+      "rule_ids": [
+        "F04",
+        "F06",
+        "F09",
+        "F10"
+      ],
+      "writer_action": "Distinguished national/foreign founder domicile evidence from required local company address; added marriage/equivalent document for foreign personne physique applicants only.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-company-formation.md",
+          "sha256": "5f316ec5edf92a4733f8b3be41c51a71db9f7abadc2a99e118f237096e364d69"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F5",
+      "rule_ids": [
+        "X06"
+      ],
+      "writer_action": "Added interest debit/credit account-entry trigger under124(2), alongside payment and distinct calendars.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-cross-border.md",
+          "sha256": "384aefd0bea22ed59fa991112268906dbcf45c754d5106e1cfc84f4a7fe6a15f"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F6",
+      "rule_ids": [
+        "X10"
+      ],
+      "writer_action": "Supplied actual accredited VAT representative/mandate/separate-return/client-fallback baseline in the previously promised destination;214exclusions/2026hold retained.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-cross-border.md",
+          "sha256": "384aefd0bea22ed59fa991112268906dbcf45c754d5106e1cfc84f4a7fe6a15f"
+        },
+        {
+          "path": "skills/mauritania/mr-vat-gst.md",
+          "sha256": "f02fddd20285a90bbaeb7edb7d79e5de47c60c8c659d7bdfcf34ab15898cf41a"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F7",
+      "rule_ids": [
+        "N01",
+        "N02"
+      ],
+      "writer_action": "Read actual rendered signed/stamped identifiers2026-001/2026-035 and2024-001. Corrected false blank-number/proposal implication across dependent Guides/ledgers/manifest/README. Genuine publication/commencement/full-chain holds retained.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-company-formation.md",
+          "sha256": "5f316ec5edf92a4733f8b3be41c51a71db9f7abadc2a99e118f237096e364d69"
+        },
+        {
+          "path": "skills/mauritania/mr-corporate-income-tax.md",
+          "sha256": "55e82d546ca74de7aefad69f029fd6bd120cb30c4a3f0d43817261757ae83a6b"
+        },
+        {
+          "path": "skills/mauritania/mr-cross-border.md",
+          "sha256": "384aefd0bea22ed59fa991112268906dbcf45c754d5106e1cfc84f4a7fe6a15f"
+        },
+        {
+          "path": "skills/mauritania/mr-income-tax.md",
+          "sha256": "bc46d9f71444c6562451b8282b84a77ce2ed29eb3daaa737736777e26c54c9c4"
+        },
+        {
+          "path": "skills/mauritania/mr-payroll-social.md",
+          "sha256": "2d51b84f27bd360afaea25f4b3104b021256f180803da3bdd13b0857138e1e6c"
+        },
+        {
+          "path": "skills/mauritania/mr-tax-overview.md",
+          "sha256": "15332ed083a6fdb990b1bb93d3681619261d3112a233196f45c1fdad4758fc3f"
+        },
+        {
+          "path": "skills/mauritania/mr-transfer-pricing.md",
+          "sha256": "95159bc573611d143a43c7354c74f5a59e91c1b6c716e329b80f114627500b38"
+        },
+        {
+          "path": "skills/mauritania/mr-vat-gst.md",
+          "sha256": "f02fddd20285a90bbaeb7edb7d79e5de47c60c8c659d7bdfcf34ab15898cf41a"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F8",
+      "rule_ids": [
+        "X01"
+      ],
+      "writer_action": "Added services through engaged employees/personnel, activities in Mauritania and same/connected project conditions next to durations, retaining treaty/other PE tests.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-cross-border.md",
+          "sha256": "384aefd0bea22ed59fa991112268906dbcf45c754d5106e1cfc84f4a7fe6a15f"
+        }
+      ],
+      "review_status": "pending independent closure"
+    },
+    {
+      "id": "F9",
+      "rule_ids": [
+        "V07"
+      ],
+      "writer_action": "Qualified certificate obligation by applicable ministerial public/state-enterprise dispensing list, explicitly holding its identification without inventing entities.",
+      "candidate_guide_hashes": [
+        {
+          "path": "skills/mauritania/mr-vat-gst.md",
+          "sha256": "f02fddd20285a90bbaeb7edb7d79e5de47c60c8c659d7bdfcf34ab15898cf41a"
+        }
+      ],
+      "review_status": "pending independent closure"
+    }
+  ],
+  "candidate_files": [
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/README.md",
+      "sha256": "7b2ab9899dba67bbae5d3e1d9eab8e34fe121164deb9f853e2dad28594bdab0b"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-company-formation.md",
+      "sha256": "46ed089bba871792cd655b69a5d148747266d219241a5f989717d049e157ade1"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-corporate-income-tax.md",
+      "sha256": "567796cab55f7e3db13ea0fb82f472ccec6590119e48b2219436a87f80995be9"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-cross-border.md",
+      "sha256": "1f2254c416c960f7151c588886cb467228585003cc439023f38cbaad20359c62"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-income-tax.md",
+      "sha256": "c585aa01b7e4b93ebfd070ef88da6c7ed3bc511c53cf1aeebeee2c852a92d57a"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-payroll-social.md",
+      "sha256": "c6a0e88958b2c3e5e2b5c80ee5792d855b50e3172253d0e344dd4f71efa7619b"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-tax-overview.md",
+      "sha256": "16fce1d841da887e4ebb1458b71fae3c0762bad809700d781fb2b623da2b00b7"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-transfer-pricing.md",
+      "sha256": "f4bdc8fa61f49dfd9bb628f03a459bf0f602698d9ad705485d39dac7e24fca15"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/ledgers/mr-vat-gst.md",
+      "sha256": "f70b379869f8e750f64a57a01ecb090b1e88393fd5742e7953a34bb2194a1f12"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/old-blobs.json",
+      "sha256": "10361cc30dc307ff3d90ff3cb12110cb965367b9ca84e39c557a177503179404"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/old-topic-map.md",
+      "sha256": "1f1602b3ff242b091a9cf0f3e379bb466b836d63785516a7dc8f6fd02b9188bd"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/rules.json",
+      "sha256": "b301dccc8aa873d5213a3ba851c29188bc07da9ab7a9aa4a2fc7adaed90db498"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/source-manifest.json",
+      "sha256": "7db120dcfd3f35ad8eba1ff984cde334089197781f74e58eded32deb44b8d942"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-preservation-checks.json",
+      "sha256": "94edd6de97771d3b90187bee60cda63afd8b82c3b71bc84b6524ad5f68779c9c"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-repair-validation.json",
+      "sha256": "3650e5adedb2784ca1c18787b31412f879aac5900d01b50b106517f841606718"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-validation.json",
+      "sha256": "0ae7a07071d73108aa16e23e3db8e175cb40ed348420f36858292015f7eb67d1"
+    },
+    {
+      "path": "docs/research/2026-11-01-mauritania-pack/writer-visual-source-checks.md",
+      "sha256": "702cd881d3aacab8cd3bcf7562699f2e7c8625d2be9458fe9a2196d1e91b1a5b"
+    },
+    {
+      "path": "skills/mauritania/README.md",
+      "sha256": "9d33a071bd1403b55a3bd83d291644c38d4189e0db762e9e78c6f0cab0ce0e39"
+    },
+    {
+      "path": "skills/mauritania/mr-company-formation.md",
+      "sha256": "5f316ec5edf92a4733f8b3be41c51a71db9f7abadc2a99e118f237096e364d69"
+    },
+    {
+      "path": "skills/mauritania/mr-corporate-income-tax.md",
+      "sha256": "55e82d546ca74de7aefad69f029fd6bd120cb30c4a3f0d43817261757ae83a6b"
+    },
+    {
+      "path": "skills/mauritania/mr-cross-border.md",
+      "sha256": "384aefd0bea22ed59fa991112268906dbcf45c754d5106e1cfc84f4a7fe6a15f"
+    },
+    {
+      "path": "skills/mauritania/mr-income-tax.md",
+      "sha256": "bc46d9f71444c6562451b8282b84a77ce2ed29eb3daaa737736777e26c54c9c4"
+    },
+    {
+      "path": "skills/mauritania/mr-payroll-social.md",
+      "sha256": "2d51b84f27bd360afaea25f4b3104b021256f180803da3bdd13b0857138e1e6c"
+    },
+    {
+      "path": "skills/mauritania/mr-tax-overview.md",
+      "sha256": "15332ed083a6fdb990b1bb93d3681619261d3112a233196f45c1fdad4758fc3f"
+    },
+    {
+      "path": "skills/mauritania/mr-transfer-pricing.md",
+      "sha256": "95159bc573611d143a43c7354c74f5a59e91c1b6c716e329b80f114627500b38"
+    },
+    {
+      "path": "skills/mauritania/mr-vat-gst.md",
+      "sha256": "f02fddd20285a90bbaeb7edb7d79e5de47c60c8c659d7bdfcf34ab15898cf41a"
+    }
+  ]
+}
