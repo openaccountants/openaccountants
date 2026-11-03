@@ -7,10 +7,10 @@ tax_year: 2026
 tax_year_notes: "Enacted 31 March 2026 replacement text; earlier periods and October rectification status unconfirmed."
 tier: 2
 last_updated: 2026-11-01
-version: 1.1
+version: 1.2
 ---
 
-# Guinea VAT invoice control v1.1
+# Guinea VAT invoice control v1.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.
 
@@ -114,4 +114,4 @@ Obtain evidence establishing the governing version for the invoice, including an
 |---|---|
 | [DGB official enacted 2026 law bundle](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf), scanned law pp. 19–24, especially art. 13 replacing all sixteen items of CGI 383 VI on pp. 20–21; signed promulgation decree arts. 1–2 on p. 27, corroborated on p. 28. Invoice pages and signed decree visually inspected. | 2026-11-01 |
 
-**Not yet confirmed:** underlying CGI 383 I–V and VII+, registration threshold, applicable VAT rates/exemptions/zero-rating and taxable base, scope of recipient liability and fiscal representation, debit/margin eligibility and elections, input deductions/refunds, issue/correction deadlines and instruments, retention duration, penalties/interest, return/payment portal/forms/boxes/deadlines/receipts, periods before the 31 March replacement and final promulgated status/effect of the October 2026 rectifying bill. The six legacy Guides remain historical and do not resolve these current-year gaps.
+**Not yet confirmed:** underlying CGI 383 I–V and VII+, registration threshold, applicable VAT rates/exemptions/zero-rating and taxable base, scope of recipient liability and fiscal representation, debit/margin eligibility and elections, input deductions/refunds, issue/correction deadlines and instruments, retention duration, penalties/interest, return/payment portal/forms/boxes/deadlines/receipts, periods before the 31 March replacement and final promulgated status/effect of the October 2026 rectifying bill. Other country Guides now contain bounded source-led expansions. Use the [current VAT method](gn-vat-gst.md) and [pack scope](README.md) for their actual coverage and unresolved source-version limits; this invoice-field job does not supply those separate conclusions.

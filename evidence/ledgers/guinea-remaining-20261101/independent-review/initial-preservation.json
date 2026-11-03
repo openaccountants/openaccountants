@@ -1,0 +1,1216 @@
+{
+  "status": "PROVISIONAL HOLD: final property expansion and frozen candidate pending",
+  "reviewed_starting_HEAD": "03add907374561f7339d5401cd0d798925d68922",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "predecessor_item_count": 76,
+  "guide_checks": [
+    {
+      "path": "skills/guinea/gn-company-formation.md",
+      "source_file_bytes_match_record": true,
+      "source_sha_matches": true,
+      "source_blob_matches": true,
+      "full_frontmatter_source_matches": true,
+      "full_frontmatter_current_identical": false,
+      "platform_fields_preserved": true,
+      "full_CTA_current_matches_source": true,
+      "source_CTA_matches_record": true,
+      "historical_file_current_identical": false,
+      "current_sha256": "f572c69c1fad8005da80bd159b8e4ac8e163cb91cc99bab13a7f766c5536f359",
+      "items": [
+        {
+          "id": "gn-company-formation:heading_h1:13",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:heading_h2:15",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:introduction_or_context_paragraph:17",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:19",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:20",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:21",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "The method, step by step: choose form and scope",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:22",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Choose form: attributed APIP capital guidance; Boundary and Sources: national instrument hold",
+            "status": "explicit_hold_national_capital_instrument",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:23",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Choose form / Boundary / Sources: Guinea capital mechanism held, CFA never relabelled GNF",
+            "status": "explicit_hold_unverified_minimum",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:24",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Build application; Verify completion; Filing and payment; separate CNSS Guide",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:25",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Build application; Verify completion; Filing and payment; separate CNSS Guide",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:26",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Reconcile published fees; Worked cases; Sources: sliding capital duty held",
+            "status": "expanded_fee_routes_and_explicit_duty_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:27",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Filing and payment: conditional APIP72hour service statement",
+            "status": "replaced_unverified_timing",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-company-formation:bullet:28",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "heading_or_hold": "Verify completion: company-law reporting; separate CNSS; Sources: tax and detailed accounting holds",
+            "status": "expanded_and_explicit_tax_reporting_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Full immutable old text retained here; use only new sourced conditions."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-corporate-income-tax.md",
+      "source_file_bytes_match_record": true,
+      "source_sha_matches": true,
+      "source_blob_matches": true,
+      "full_frontmatter_source_matches": true,
+      "full_frontmatter_current_identical": true,
+      "platform_fields_preserved": true,
+      "full_CTA_current_matches_source": true,
+      "source_CTA_matches_record": true,
+      "historical_file_current_identical": true,
+      "current_sha256": "36e3519ff66d3770a70983d5806914677e57a12d238de0f6925c502c1b617f41",
+      "items": [
+        {
+          "id": "gn-corporate-income-tax:heading_h1:13",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:heading_h2:15",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:introduction_or_context_paragraph:17",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:19",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:20",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:21",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:22",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:23",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:24",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:25",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 25,
+            "line_end_at_pinned_base": 25,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:26",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:27",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 27,
+            "line_end_at_pinned_base": 27,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:28",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 28,
+            "line_end_at_pinned_base": 28,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-income-tax.md",
+      "source_file_bytes_match_record": true,
+      "source_sha_matches": true,
+      "source_blob_matches": true,
+      "full_frontmatter_source_matches": true,
+      "full_frontmatter_current_identical": true,
+      "platform_fields_preserved": true,
+      "full_CTA_current_matches_source": true,
+      "source_CTA_matches_record": true,
+      "historical_file_current_identical": true,
+      "current_sha256": "2671045f22d434771ed9131896f681b6719a8bb29f9566a7d242a99514383eec",
+      "items": [
+        {
+          "id": "gn-income-tax:heading_h1:13",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:heading_h2:15",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:17",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:18",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 18,
+            "line_end_at_pinned_base": 18,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:19",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:20",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:21",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:22",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:23",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:24",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:25",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 25,
+            "line_end_at_pinned_base": 25,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:26",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-income-tax:bullet:27",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 27,
+            "line_end_at_pinned_base": 27,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-payroll-social.md",
+      "source_file_bytes_match_record": true,
+      "source_sha_matches": true,
+      "source_blob_matches": true,
+      "full_frontmatter_source_matches": true,
+      "full_frontmatter_current_identical": false,
+      "platform_fields_preserved": true,
+      "full_CTA_current_matches_source": true,
+      "source_CTA_matches_record": true,
+      "historical_file_current_identical": false,
+      "current_sha256": "2a06226a82b7ff823ea60f081b210dd0a16e429b7689b270ee1e0cede38b701d",
+      "items": [
+        {
+          "id": "gn-payroll-social:heading_h1:13",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:heading_h2:15",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to; The base; Sources",
+            "status": "expanded_with_explicit_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:introduction_or_context_paragraph:17",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to; The base; Sources",
+            "status": "expanded_with_explicit_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:19",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base; Two worked examples that recompute",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:20",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base; Two worked examples that recompute",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:21",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds final paragraph; Sources: separate pension/sickness shares held",
+            "status": "explicit_hold_unverified_allocation",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:22",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds final paragraph; Sources: separate pension/sickness shares held",
+            "status": "explicit_hold_unverified_allocation",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:23",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds sickness combined row and explanation",
+            "status": "corrected_employer_only_misclassification",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:24",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds family/occupational rows",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:25",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base step4",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:26",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to final paragraph; Sources: salary tax hold",
+            "status": "explicit_hold_current_salary_tax",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:27",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Deadlines and filing: separate CNSS frequency and15/20conflict; Sources: salarytax remittancehold",
+            "status": "expanded_and_explicit_tax_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-payroll-social:bullet:28",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base step4",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-tax-overview.md",
+      "source_file_bytes_match_record": true,
+      "source_sha_matches": true,
+      "source_blob_matches": true,
+      "full_frontmatter_source_matches": true,
+      "full_frontmatter_current_identical": true,
+      "platform_fields_preserved": true,
+      "full_CTA_current_matches_source": true,
+      "source_CTA_matches_record": true,
+      "historical_file_current_identical": true,
+      "current_sha256": "a98b1e336b8e2464e2a516536e3ff38395638fdd2796b40346057d9b02e551f7",
+      "items": [
+        {
+          "id": "gn-tax-overview:heading_h1:13",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:heading_h2:15",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:introduction_or_context_paragraph:17",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:19",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:20",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:21",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:22",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:23",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:24",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:25",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 25,
+            "line_end_at_pinned_base": 25,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:26",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:27",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 27,
+            "line_end_at_pinned_base": 27,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-tax-overview:bullet:28",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 28,
+            "line_end_at_pinned_base": 28,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-vat-gst.md",
+      "source_file_bytes_match_record": true,
+      "source_sha_matches": true,
+      "source_blob_matches": true,
+      "full_frontmatter_source_matches": true,
+      "full_frontmatter_current_identical": true,
+      "platform_fields_preserved": true,
+      "full_CTA_current_matches_source": true,
+      "source_CTA_matches_record": true,
+      "historical_file_current_identical": true,
+      "current_sha256": "031265a90237a27278f32b1a06ef914e4ebf068ec79f120b6f7f36f47b2beca6",
+      "items": [
+        {
+          "id": "gn-vat-gst:heading_h1:13",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:heading_h2:15",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:17",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:18",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 18,
+            "line_end_at_pinned_base": 18,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:19",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:20",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:21",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:22",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:23",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:bullet:24",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        },
+        {
+          "id": "gn-vat-gst:introduction_or_context_paragraph:26",
+          "source_slice_matches": true,
+          "source_slice_sha_matches": true,
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          },
+          "review": "Destination read: expanded method or explicit hold for payroll/formation; byte-identical historical text otherwise."
+        }
+      ]
+    }
+  ],
+  "prior_history_checks": [
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/checks.json",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "bb269786003e0eb7cc5bf80ddec29c67ad8251d4476879e16c2f69ce6e25a640",
+      "current_sha256": "bb269786003e0eb7cc5bf80ddec29c67ad8251d4476879e16c2f69ce6e25a640"
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/preservation.json",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "475294129ba0603087ae7e28c2b818b2287910976b06ca970f9f2dfe55f15c37",
+      "current_sha256": "475294129ba0603087ae7e28c2b818b2287910976b06ca970f9f2dfe55f15c37"
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/review.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "b48a11134798c5e2dd674f54b7f8ffa594f3f905ec61d1e96be64ee8151b398e",
+      "current_sha256": "b48a11134798c5e2dd674f54b7f8ffa594f3f905ec61d1e96be64ee8151b398e"
+    },
+    {
+      "path": "evidence/ledgers/guinea-review-20261101/sources.json",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "7ceebc53d26bd90ed99f3fbb2631db0c42fffd2ee9abc01b96280e11bfd8cd2d",
+      "current_sha256": "7ceebc53d26bd90ed99f3fbb2631db0c42fffd2ee9abc01b96280e11bfd8cd2d"
+    },
+    {
+      "path": "evidence/ledgers/guinea-closure-20261101/checks.json",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "8de1fd4ae5877e599b7673dd01a6414e273fdc9b23d3f59b7f2e6353d611d4c7",
+      "current_sha256": "8de1fd4ae5877e599b7673dd01a6414e273fdc9b23d3f59b7f2e6353d611d4c7"
+    },
+    {
+      "path": "evidence/ledgers/guinea-closure-20261101/closure.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "1e5c739693e7f5d3e749a1f1a66be935076e6cfb9e98046b82229ce97e82fc32",
+      "current_sha256": "1e5c739693e7f5d3e749a1f1a66be935076e6cfb9e98046b82229ce97e82fc32"
+    },
+    {
+      "path": "evidence/ledgers/guinea-closure-20261101/integrity.json",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "7c1eb85fc3fbfb8591a54cd7844f2be6f4ca5775b4a8e21af71004e1a6fa2a93",
+      "current_sha256": "7c1eb85fc3fbfb8591a54cd7844f2be6f4ca5775b4a8e21af71004e1a6fa2a93"
+    },
+    {
+      "path": "evidence/ledgers/gn-property-tax.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "5d802f827c99990f666cf96410f7ce8bbd1ede90ace862c3e9c1ae7f4165e93e",
+      "current_sha256": "5d802f827c99990f666cf96410f7ce8bbd1ede90ace862c3e9c1ae7f4165e93e"
+    },
+    {
+      "path": "evidence/ledgers/gn-vat-invoice-control.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "c2cdbad33438bf9a786176df9e8cd9815394d38e401483ad77b89e92bc4b23e0",
+      "current_sha256": "c2cdbad33438bf9a786176df9e8cd9815394d38e401483ad77b89e92bc4b23e0"
+    },
+    {
+      "path": "evidence/ledgers/gn-old-topic-destinations.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "fb853bdbc11613c7fe442217019e6d2d7e10526ebf4bea5baa782197fbeb0ebf",
+      "current_sha256": "fb853bdbc11613c7fe442217019e6d2d7e10526ebf4bea5baa782197fbeb0ebf"
+    },
+    {
+      "path": "evidence/ledgers/gn-source-scope-20261101.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "31ae0e2d1c59c650290c087a614d52fe3252884eb16df2e3754321e0c30ee509",
+      "current_sha256": "31ae0e2d1c59c650290c087a614d52fe3252884eb16df2e3754321e0c30ee509"
+    },
+    {
+      "path": "skills/guinea/gn-vat-invoice-control.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "4d3008a143a2053770005d08becf7f26f838733462058c99ff7e73c3171437c2",
+      "current_sha256": "4d3008a143a2053770005d08becf7f26f838733462058c99ff7e73c3171437c2"
+    },
+    {
+      "path": "skills/guinea/gn-property-tax.md",
+      "unchanged_from_pinned_base": true,
+      "base_sha256": "38945a4cc0390f40310f63d2c737dfd6c09c0876b5476fa1f4bf742b4f9a67c4",
+      "current_sha256": "38945a4cc0390f40310f63d2c737dfd6c09c0876b5476fa1f4bf742b4f9a67c4"
+    }
+  ]
+}
