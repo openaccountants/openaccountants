@@ -4,7 +4,7 @@ description: "Payroll and social contributions for Oman, tax year 2026: Social P
 version: 1.2
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
