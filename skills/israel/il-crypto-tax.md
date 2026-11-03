@@ -4,7 +4,7 @@ description: Use this skill when advising on Israeli cryptocurrency tax reportin
 version: 1.1
 jurisdiction: IL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -27,16 +27,16 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Country | Israel (מדינת ישראל) |
 | Scope | Cryptocurrency capital gains tax, DeFi income classification, reporting |
 | Currency | NIS (Israeli New Shekel: ₪) |
-| Classification | Cryptocurrency = Asset (Neches: נכס) under Section 88 ITO |
+| Classification | A decentralised payment instrument is an asset (Neches: נכס) under Section 88 ITO, not currency or foreign currency (https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf, ss.2.3, 3.1.1) |
 | Primary guidance | ITA Circular 2018/05 (חוזר 05/2018) |
-| Cost basis method | FIFO (First In, First Out): mandatory default |
-| Tax rate: individuals | 25% capital gains (Revach Hon: רווח הון) |
-| Tax rate: significant shareholder (10%+) | 30% |
-| Tax rate: business/traders | Marginal rates (up to 50%) if activity constitutes a business |
-| Corporate rate | 23% |
-| Surtax on capital income above NIS 721,560 | 5% (3% base + 2% additional on capital income) |
-| Advance payment form | Form 1399י (transaction codes 77 and 71) |
-| Advance payment deadline | Within 30 days of disposal |
+| Cost basis method | unverified: FIFO (First In, First Out) as the default |
+| Tax rate: individuals | Capital gain under Part E, at the s.91 rates (Circular 5/2018 s.3.1.2); unverified: 25% |
+| Tax rate: significant shareholder (10%+) | unverified: 30% |
+| Tax rate: business/traders | If the activity amounts to a business, ordinary income at the s.121 or s.126 rates; mining is business income (Circular 5/2018 s.3.1.4) |
+| Corporate rate | unverified: 23% |
+| Surtax above NIS 721,560 | 3% on the part of total taxable income above NIS 721,560, plus 2% on capital-source taxable income above that amount: two bases, not a flat 5% (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.11) |
+| Advance payment form | unverified: Form 1399י (transaction codes 77 and 71) |
+| Advance payment deadline | unverified: within 30 days of disposal |
 | Reporting forms | Forms 1322 / 1325 (attached to annual Form 1301) |
 | Contributor | Open Accountants Community |
 | Validated by | Pending: requires sign-off by Israel-licensed רואה חשבון or יועץ מס |
@@ -71,7 +71,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 3: FIFO cost basis method
 
-Israel mandates FIFO (First In, First Out) for calculating cost basis unless the taxpayer can demonstrate a different method was consistently applied.
+unverified: Israel mandates FIFO (First In, First Out) for calculating cost basis unless the taxpayer can demonstrate a different method was consistently applied. Circular 5/2018 does not set a cost-basis method.
 
 ### 3.1 FIFO rules
 
@@ -86,6 +86,8 @@ Israel mandates FIFO (First In, First Out) for calculating cost basis unless the
 ## Section 4: DeFi and special income classification
 
 **DeFi and special income classification table**
+
+unverified: every row except the first two. Circular 5/2018 covers sale (capital gain), business activity, mining (business income) and payment in crypto (barter); it does not address staking, liquidity mining, airdrops, NFTs, hard forks or lending.
 
 | Activity | Classification | Tax rate | Reporting form |
 | --- | --- | --- | --- |
@@ -138,8 +140,8 @@ Israel mandates FIFO (First In, First Out) for calculating cost basis unless the
 
 ## Section 7: Surtax on crypto gains (Mas Yesafim: מס יסף)
 
-- **Surtax structure from 2026**: From 2026, capital income (including crypto gains) above NIS 721,560 is subject to: 3% base surtax on all income above the threshold; Additional 2% on capital-source income above the same threshold; Effective 5% surtax on crypto gains above NIS 721,560 (effective 2026)
-- **Threshold freeze**: Threshold frozen through 2027
+- **Surtax structure**: 3% on the part of total taxable income above NIS 721,560 (2026), and an additional 2% on taxable income from capital sources above that amount (2026 booklet p.11, s.121B). Work out each base separately; a crypto gain is in the 2% base only to the extent capital-source income exceeds the threshold.
+- **Threshold freeze**: unverified: threshold frozen through 2027
 
 ## Section 8: Voluntary disclosure (Nohal Gilui Mirtzon: נוהל גילוי מרצון)
 
@@ -147,10 +149,10 @@ Israel mandates FIFO (First In, First Out) for calculating cost basis unless the
 
 | Track | Eligibility | Deadline |
 | --- | --- | --- |
-| Green Track | Annual income up to NIS 500,000 and cumulative crypto assets up to NIS 1.5M (as of 31.12.2024) | 31 August 2026 |
-| Regular Track | Larger cases | 31 August 2026 |
+| Green Track | unverified: annual income up to NIS 500,000 and cumulative crypto assets up to NIS 1.5M (as of 31.12.2024) | unverified: 31 August 2026 |
+| Regular Track | unverified: larger cases | unverified: 31 August 2026 |
 
-The 2025–2026 Voluntary Disclosure Procedure expressly covers digital assets and grants criminal immunity. Anonymity is no longer available: all applications filed with identifying details.
+unverified: The 2025–2026 Voluntary Disclosure Procedure expressly covers digital assets and grants criminal immunity. Anonymity is no longer available: all applications filed with identifying details.
 
 ## Section 9: Special rules
 
@@ -164,7 +166,7 @@ The 2025–2026 Voluntary Disclosure Procedure expressly covers digital assets a
 
 ### 9.3 Inflation indexation
 
-- **Inflation indexation split**: Section 91(b)(3) splits capital gain into a "real gain" (taxed at 25%) and an "inflation-component gain" (taxed at 0% for individuals on assets acquired after 1.1.1994). For long-held lots, a CPA should perform the manual indexation pass, which reduces effective tax. (assets acquired after 1.1.1994)  _(Section 91(b)(3))_
+- **Inflation indexation split**: unverified: Section 91(b)(3) splits capital gain into a "real gain" (taxed at 25%) and an "inflation-component gain" (taxed at 0% for individuals on assets acquired after 1.1.1994). For long-held lots, a CPA should perform the manual indexation pass, which reduces effective tax. (assets acquired after 1.1.1994)  _(Section 91(b)(3))_
 
 ## Section 10: Worked examples
 
@@ -174,7 +176,7 @@ The 2025–2026 Voluntary Disclosure Procedure expressly covers digital assets a
 
 **Working:**
 - Capital gain: NIS 120,000 − NIS 80,000 = NIS 40,000
-- Tax: NIS 40,000 × 25% = NIS 10,000
+- Tax (unverified 25% rate): NIS 40,000 × 25% = NIS 10,000
 - Surtax: total income below NIS 721,560 → no surtax
 - Advance payment: Form 1399י within 30 days of August sale → NIS 10,000
 - Annual reporting: Forms 1325/1322 with 2025 Form 1301
@@ -210,12 +212,12 @@ The 2025–2026 Voluntary Disclosure Procedure expressly covers digital assets a
 | --- | --- |
 | Using US capital gains rates (15%/20%) | Israeli rate is 25% for individuals |
 | Treating crypto-to-crypto as non-taxable | Always taxable in Israel |
-| Using average cost or LIFO | Israel mandates FIFO |
+| Using average cost or LIFO | unverified: Israel mandates FIFO |
 | Ignoring stablecoin conversions | USDT/USDC are assets: every swap is a disposal |
 | Treating inherited crypto as zero basis | Carryover basis applies (Section 97(a)(5)) |
 | Applying US wash-sale rule | Israel has no wash-sale rule: loss harvesting is valid |
 | Missing 30-day advance payment deadline | Interest and linkage penalties accrue |
-| Ignoring surtax on crypto gains | 5% additional on capital gains above NIS 721,560 |
+| Ignoring surtax on crypto gains | 3% on total taxable income above NIS 721,560 plus 2% on capital-source income above it (2026 booklet p.11) |
 
 ## Section 12: Reference material
 
@@ -253,23 +255,29 @@ expected:
 ```
 
 ```oa-check
-name: Surtax on capital income NIS 800,000
+name: Surtax when all NIS 800,000 of taxable income is capital-source (2026)
 inputs:
-  p: 800000
+  total: 800000
+  capital: 800000
 steps:
-  - s: (p-721560)*0.05
+  - base3: max(total-721560, 0)*0.03
+  - base2: max(capital-721560, 0)*0.02
+  - s: base3+base2
 expected:
   s: 3922
 ```
+
+The two charges have separate bases (2026 booklet p.11). They add up to 5% only where all the income above the threshold is capital-source, as here. unverified: how the 2% base is measured when income is mixed.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Ordinance, ss. 2, 3, 9, 33A, 39B, 45A, 121, 121B, 122, 126, 132 (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%A4%D7%A7%D7%95%D7%93%D7%AA_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94 | 2026-11-01 |
+| Israel Tax Authority, Circular 5/2018 on decentralised payment instruments ("virtual currencies"), read all six pages (ss.2.3, 3.1.1 to 3.1.5 income tax, 3.2 VAT) | https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf | 2026-11-03 |
+| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.11 (s.121B surtax 3% above NIS 721,560 and 2% on capital-source income) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
 | Israel Tax Authority, Form 1301 service page, tax year 2025 | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals | 2026-11-01 |
 
-Not yet confirmed: the voluntary disclosure dates and tracks; crypto treatment table (no 2026 Authority text opened); indexation rule.
+Not yet confirmed: the 25% and 30% capital gains rates and the 23% corporate rate; FIFO as the cost-basis method; the DeFi, staking, airdrop, NFT, hard-fork and lending rows; Form 1399 and the 30-day advance; loss offsetting and carryforward; gifts and inheritance basis; the voluntary disclosure dates and tracks; the indexation rule; the threshold freeze; how the 2% surtax base is measured for mixed income.
 
 ## Disclaimer
 

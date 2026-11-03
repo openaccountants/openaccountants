@@ -4,7 +4,7 @@ description: Use this skill when advising on Israeli tax withholding at source (
 version: 1.1
 jurisdiction: IL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -32,7 +32,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Governing law | Income Tax Ordinance: Sections 164 and 170 |
 | Tax authority | Israel Tax Authority (ITA: רשות המיסים בישראל) |
 | Periodic report | Form 102 (טופס 102): monthly or bi-monthly |
-| Annual reconciliation | Form 856 (טופס 856): due April 30 |
+| Annual reconciliation | Form 856 (טופס 856): unverified: due April 30 |
 | Certificate verification | gmishurim service: https://taxinfo.taxes.gov.il/gmishurim/firstPage.aspx |
 | Contributor | Open Accountants Community |
 | Validated by | Pending: requires sign-off by Israel-licensed רואה חשבון or יועץ מס |
@@ -45,32 +45,34 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | No withholding certificate provided | Apply default rate for payment type |
 | Certificate year not verified | Treat as expired: apply default rate |
-| Unknown whether payee is resident or non-resident | Treat as non-resident (25% rate) |
-| Payment type unclear | Apply 30% services default |
+| Unknown whether payee is resident or non-resident | Treat as non-resident (unverified: 25% rate) |
+| Payment type unclear | unverified: apply 30% services default |
 | Unknown whether payer exceeds mandatory withholder threshold | Withhold to be safe |
 
 ## Section 2: Default withholding rates
 
 ### 2.1 Rates by payment type (no certificate)
 
+unverified: every rate in this table. The withholding regulations and orders that set the rate for each payment type were not opened in this refresh, and the Tax Authority's own pages describe different regimes by payer and payment type. Use the payee's certificate, or confirm the rate in the governing regulation, before withholding.
+
 **Rates by payment type (no certificate)**
 
 | Payment type | Hebrew | Default rate | ITO Section |
 | --- | --- | --- | --- |
-| Services: individuals, no certificate | שלומים עבור שירותים | 30% (up to ~47% for unverified payees) | 164 |
-| Services: companies, no certificate | שלומים עבור שירותים | 20–30% by ITA classification | 164 |
-| Rent: business/commercial property | שכירות נכסי נדל"ן | 35% | 170 |
-| Rent: residential property | שכר דירה למגורים | 30% | 170 |
-| Royalties | תמלוגים | 23% | 170 |
-| Interest | ריבית | 25% | 164 |
-| Dividends | דיבידנדים | 25–30% | 164 |
-| Payments to non-residents | תשלומים לתושבי חוץ | 25% | 170 |
+| Services: individuals, no certificate | שלומים עבור שירותים | unverified: 30% (up to ~47% for unverified payees) | 164 |
+| Services: companies, no certificate | שלומים עבור שירותים | unverified: 20–30% by ITA classification | 164 |
+| Rent: business/commercial property | שכירות נכסי נדל"ן | unverified: 35% | 170 |
+| Rent: residential property | שכר דירה למגורים | unverified: 30% | 170 |
+| Royalties | תמלוגים | unverified: 23% | 170 |
+| Interest | ריבית | unverified: 25% | 164 |
+| Dividends | דיבידנדים | unverified: 25–30% | 164 |
+| Payments to non-residents | תשלומים לתושבי חוץ | unverified: 25% | 170 |
 
-- **Legacy 20% rate incorrect**: The "20% flat" figure from older guidance is incorrect. The ITA default for a service payment with no certificate is 30%, and the tax office can set it as high as ~47% for an unverified payee. A valid certificate is what brings the rate down (often to 0–5%).  _(164)_
+- **The 20% figure**: unverified. An earlier version called a 20% flat rate for services wrong and gave 30% (up to about 47%) instead; neither figure was confirmed against the regulations. A valid certificate is what sets the payee's rate.
 
 ### 2.2 De minimis threshold
 
-- **De minimis threshold for single payment**: NIS 5,520 NIS (annually indexed; a single payment to a payee below this does not require withholding unless cumulative payments to that payee cross the threshold. Always verify the current-year threshold.)
+- **De minimis threshold for single payment**: the 2026 booklet lists a one-off payment for services or assets exempt from withholding at source at NIS 5,520 (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.15, "other amounts"). unverified: the further conditions (whether payments to the same payee are added together, and how often the figure is indexed).
 
 ## Section 3: Withholding certificates
 
@@ -90,13 +92,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### 3.3 Obtaining a certificate
 
-- **Steps to obtain a certificate**: 1. Apply through the ITA online services (gmishurim system). 2. Provide: TIN, financial statements, tax returns. 3. Certificate valid for the current tax year. 4. Renewal required annually: certificates expire December 31
+- **Steps to obtain a certificate** (unverified): 1. Apply through the ITA online services (gmishurim system). 2. Provide: TIN, financial statements, tax returns. 3. Certificate valid for the current tax year. 4. Renewal required annually: certificates expire December 31
 
 ## Section 4: Withholding calculation
 
 ### 4.1 Basic calculation
 
-- **Basic withholding calculation**: Payment amount (before VAT): X NIS Withholding rate: Y% (from certificate, or default) Withholding amount: X × Y% Net payment to payee: X − Withholding amount VAT (if applicable): Calculated separately on the full pre-withholding amount
+- **Basic withholding calculation** (unverified: that the base excludes VAT): Payment amount (before VAT): X NIS Withholding rate: Y% (from certificate, or default) Withholding amount: X × Y% Net payment to payee: X − Withholding amount VAT (if applicable): Calculated separately on the full pre-withholding amount
 
 ### 4.2 Worked example: Payment to freelancer
 
@@ -107,7 +109,7 @@ Scenario: Business pays NIS 10,000 to a freelancer (Osek Murshe) for consulting,
 | Line | Amount (NIS) |
 | --- | --- |
 | Gross payment (before VAT) | 10,000 |
-| Withholding (30% default) | 3,000 |
+| Withholding (unverified: 30% default) | 3,000 |
 | Net payment to freelancer | 7,000 |
 | VAT (18% on gross) | 1,800 |
 | Total paid by business | 8,800 (net 7,000 + VAT 1,800) |
@@ -126,7 +128,7 @@ If the freelancer provides a valid certificate showing 2% withholding:
 
 ### 4.3 Cross-border payments
 
-- **Cross-border payment rules**: For payments to non-residents: Default: 25% withholding. Tax treaty may reduce the rate: check the Israel–[country] treaty. Common treaties: US-Israel, UK-Israel, Germany-Israel, France-Israel. Treaty benefits require documentation and proper application. Treaty list: https://www.gov.il/he/departments/guides/taxation-agreements  _(https://www.gov.il/he/departments/guides/taxation-agreements)_
+- **Cross-border payment rules**: For payments to non-residents: Default: unverified: 25% withholding. Tax treaty may reduce the rate: check the Israel–[country] treaty. Common treaties: US-Israel, UK-Israel, Germany-Israel, France-Israel. Treaty benefits require documentation and proper application. Treaty list: https://www.gov.il/he/departments/guides/taxation-agreements  _(https://www.gov.il/he/departments/guides/taxation-agreements)_
 
 ## Section 5: Periodic reporting (Form 102)
 
@@ -138,8 +140,8 @@ If the freelancer provides a valid certificate showing 2% withholding:
 
 | Business size | Reporting frequency | Deadline |
 | --- | --- | --- |
-| Small businesses | Bi-monthly | 15th of the month after the period |
-| Larger businesses / employers | Monthly | 15th of the following month |
+| Small businesses | Bi-monthly | unverified: 15th of the month after the period |
+| Larger businesses / employers | Monthly | unverified: 15th of the following month |
 
 - **Late reporting penalties**: Late reporting and late payment carry penalties and indexation (הצמדה + ריבית).
 
@@ -166,15 +168,15 @@ If the freelancer provides a valid certificate showing 2% withholding:
 
 ### 6.3 Deadline
 
-- **Form 856 deadline**: April 30 date (of the year following the reporting year)
+- **Form 856 deadline**: unverified: April 30 (of the year following the reporting year)
 
 ### 6.4 Workflow
 
-- **Form 856 workflow steps**: 1. Deposit withheld amounts periodically via Form 102. 2. At year end, compile the per-payee detail file. 3. Submit Form 856 by April 30. 4. Form 856 is the PAYER's obligation as the withholding agent: separate from the payee's own annual return
+- **Form 856 workflow steps**: 1. Deposit withheld amounts periodically via Form 102. 2. At year end, compile the per-payee detail file. 3. Submit Form 856 by the deadline (unverified: April 30). 4. Form 856 is the PAYER's obligation as the withholding agent: separate from the payee's own annual return
 
 ## Section 7: 2026 deduction-disallowance rule
 
-- **2026 deduction disallowance rule**: Income Tax Circular 3/2026 (effective for payments made from 1.1.2026): An expense or input-VAT deduction is disallowed where the payer: Failed to withhold tax as required, OR Failed to report the withholding as required, OR Breached the Law for Reduction of the Use of Cash (cash over NIS 6,000 in a business-to-business transaction). Treat a missed withholding or a cash-law breach as a deduction risk, not just a reporting issue. The business loses the right to deduct the expense for income tax purposes AND loses the right to claim input VAT on the payment.  _(Income Tax Circular 3/2026)_
+- **2026 deduction disallowance rule**: unverified (the circular and the Law for Reduction of the Use of Cash were not opened): Income Tax Circular 3/2026 (effective for payments made from 1.1.2026): An expense or input-VAT deduction is disallowed where the payer: Failed to withhold tax as required, OR Failed to report the withholding as required, OR Breached the Law for Reduction of the Use of Cash (cash over NIS 6,000 in a business-to-business transaction). Treat a missed withholding or a cash-law breach as a deduction risk, not just a reporting issue. The business loses the right to deduct the expense for income tax purposes AND loses the right to claim input VAT on the payment.  _(Income Tax Circular 3/2026)_
 
 ## Section 8: Red flags and common errors
 
@@ -182,13 +184,13 @@ If the freelancer provides a valid certificate showing 2% withholding:
 
 | Error | Consequence |
 | --- | --- |
-| Using the legacy "20% for services" rate | Under-withholding; payer liable for the shortfall |
+| Using the legacy "20% for services" rate | unverified: under-withholding; payer liable for the shortfall |
 | Not checking certificate expiry | Applying a reduced rate when certificate has expired |
 | Applying domestic rates to non-resident payments | Under-withholding; potential double taxation issues |
-| Using residential rent rate (30%) for commercial property | Should be 35% for commercial |
-| Cash payment over NIS 6,000 in B2B | Expense deduction disallowed under 2026 rules |
+| Using residential rent rate (30%) for commercial property | unverified: should be 35% for commercial |
+| Cash payment over NIS 6,000 in B2B | unverified: expense deduction disallowed under 2026 rules |
 | Missing Form 102 deadline | Penalties and indexation on late payment |
-| Not filing Form 856 by April 30 | Separate annual reconciliation penalty |
+| Not filing Form 856 by April 30 | unverified: separate annual reconciliation penalty |
 
 ## Section 9: Tier 2 items (require professional input)
 
@@ -240,10 +242,10 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Ordinance, ss. 2, 3, 9, 33A, 39B, 45A, 121, 121B, 122, 126, 132 (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%A4%D7%A7%D7%95%D7%93%D7%AA_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94 | 2026-11-01 |
-| VAT Law 1975, ss. 1, 31, 38, 47 and the 18% rate order (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%9E%D7%A1_%D7%A2%D7%A8%D7%9A_%D7%9E%D7%95%D7%A1%D7%A3 | 2026-11-01 |
+| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.15 ("other amounts": one-off payment for services or assets exempt from withholding at source NIS 5,520) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
+| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), read PDF p.140 (VAT rate 18% as at January 2026, used in the examples) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
 
-Not yet confirmed: every domestic withholding rate by payment type, the NIS 5,520 single payment floor, Circular 3/2026 and the NIS 6,000 cash limit: the regulations and circular were not opened. The 25% non-resident default rests on s.170.
+Not yet confirmed: every withholding rate by payment type, including the 30% services default, the 20% figure and the 25% non-resident rate (the withholding regulations and orders were not opened, and no official text of ss.164 and 170 was read); the conditions around the NIS 5,520 one-off payment; whether the withholding base excludes VAT; Form 102 and Form 856 dates; certificate validity and the application steps; the mandatory-withholder threshold; Circular 3/2026 and the NIS 6,000 cash limit. Both worked examples rest on the unconfirmed 30% rate.
 
 ## Disclaimer
 

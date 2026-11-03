@@ -4,7 +4,7 @@ description: Use this skill when calculating Israeli customs duty, VAT, and purc
 version: 1.1
 jurisdiction: IL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -27,8 +27,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Country | Israel (מדינת ישראל) |
 | Scope | Customs duty, VAT, and purchase tax on imports |
 | Currency | NIS (Israeli New Shekel: ₪) |
-| VAT rate | 18% (effective January 2025) |
-| Personal import threshold | USD 75 (as of May 2026: verify before use) |
+| VAT rate | 18% as at January 2026 (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.140); unverified: that the same rate and base apply on import |
+| Personal import threshold | unverified: USD 75 (as of May 2026: verify before use) |
 | Tariff lookup | Shaar Olami: https://shaarolami-query.customs.mof.gov.il/CustomspilotWeb/en/CustomsBook/Import/Doubt |
 | Official calculator | https://www.gov.il/en/service/customs-tax-calculation-import-by-israelis |
 | Exchange rates | Bank of Israel: https://www.boi.org.il/en/economic-roles/financial-markets/exchange-rates/ |
@@ -42,7 +42,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown personal import threshold | Use USD 75: verify via official calculator |
+| Unknown personal import threshold | unverified: use USD 75; verify via official calculator |
 | Unknown HS code (last 2 digits) | Do not guess: request pre-ruling from Israel Customs |
 | Unknown origin of goods | Apply MFN duty rate (no FTA preference) |
 | Unknown whether EUR.1 is valid | Treat as invalid: apply full duty |
@@ -66,19 +66,19 @@ Courier shipments (DHL, FedEx, UPS) are self-cleared by the courier, which bills
 
 ## Section 3: Personal import threshold
 
-- **Personal import VAT exemption threshold**: USD 75 (cost of goods, excluding shipping and insurance)  _(As of May 2026)_
+- **Personal import VAT exemption threshold**: unverified: USD 75 (cost of goods, excluding shipping and insurance)  _(As of May 2026)_
 
-**Recent history:** The threshold was raised to USD 150 via a Smotrich decree in November 2025, then revoked by the Knesset on 24 February 2026, returning to USD 75. **Always verify the current threshold via the official calculator before quoting a number.**
+**Recent history (unverified):** The threshold was raised to USD 150 via a Smotrich decree in November 2025, then revoked by the Knesset on 24 February 2026, returning to USD 75. **Always verify the current threshold via the official calculator before quoting a number.**
 
 **Personal import threshold tax treatment table**
 
 | Value range | Tax treatment |
 | --- | --- |
-| Below USD 75 | No customs, no VAT, no purchase tax |
-| USD 75 – USD 500 (approx) | VAT + purchase tax typically apply; customs duty often waived for personal imports |
-| Above USD 500 | Full duty + VAT + purchase tax; commercial clearance rules apply |
+| Below USD 75 | unverified: no customs, no VAT, no purchase tax |
+| USD 75 – USD 500 (approx) | unverified: VAT + purchase tax typically apply; customs duty often waived for personal imports |
+| Above USD 500 | unverified: full duty + VAT + purchase tax; commercial clearance rules apply |
 
-- **Shipping and insurance treatment**: Shipping and insurance are excluded from the personal import threshold test but are included in CIF for commercial imports. Do not mix the two rules.
+- **Shipping and insurance treatment**: unverified: Shipping and insurance are excluded from the personal import threshold test but are included in CIF for commercial imports. Do not mix the two rules.
 
 ## Section 4: HS code classification
 
@@ -97,8 +97,8 @@ For certainty, request a free binding pre-ruling from Israeli Customs with a pro
 
 | Tax | Typical range | Notes |
 | --- | --- | --- |
-| Customs duty | 0–12% (many goods duty-free under MFN bindings) | Varies by HS code |
-| VAT | 18% standard | Applied on CIF + duty + purchase tax |
+| Customs duty | unverified: 0–12% (many goods duty-free under MFN bindings) | Varies by HS code |
+| VAT | 18% standard (as at January 2026) | unverified: applied on CIF + duty + purchase tax |
 | Purchase tax (Mas Kniya: מס קנייה) | Only on specific items | Alcohol, tobacco, perfumes, some electronics, passenger cars: rates can be very high |
 
 **Purchase tax is NOT a small rounding item.** Alcohol and tobacco can carry rates in the hundreds of percent.
@@ -114,7 +114,7 @@ The three taxes are calculated on a cascading base:
 
 ### 6.2 Cascading tax formula
 
-- **Cascading tax formula**: Duty            = CIF × duty rate Base after duty = CIF + duty Purchase tax    = base after duty × purchase tax rate Base for VAT    = base after duty + purchase tax VAT             = base for VAT × 0.18 Landed cost     = CIF + duty + purchase tax + VAT + broker fees + handling
+- **Cascading tax formula** (unverified: the import VAT base): Duty            = CIF × duty rate Base after duty = CIF + duty Purchase tax    = base after duty × purchase tax rate Base for VAT    = base after duty + purchase tax VAT             = base for VAT × 0.18 Landed cost     = CIF + duty + purchase tax + VAT + broker fees + handling
 
 ### 6.3 Worked example: personal import above threshold
 
@@ -136,6 +136,8 @@ The three taxes are calculated on a cascading base:
 ## Section 7: Free trade agreement (FTA) preferences
 
 **FTA preferences table**
+
+unverified: every row and the EUR.1 rules below; no customs authority page or agreement text was opened in this refresh.
 
 | Origin | Agreement | Origin proof required |
 | --- | --- | --- |
@@ -166,7 +168,7 @@ Plan courier time for the original document to arrive
 | Line | Without EUR.1 | With valid EUR.1 |
 | --- | --- | --- |
 | CIF | €12,000 | €12,000 |
-| Duty (6–12% typical for leather bags) | €720–1,440 | €0 (waived) |
+| Duty (unverified: 6–12% typical for leather bags) | €720–1,440 | €0 (waived) |
 | Purchase tax | Typically 0% | 0% |
 | VAT (18% on CIF + duty) | €2,290–2,419 | €2,160 |
 | **Savings from EUR.1** |: | **€720–1,440 duty saved** |
@@ -180,10 +182,10 @@ Since CIF > €6,000, an EUR.1 movement certificate stamped by Italian customs i
 | Error | Consequence |
 | --- | --- |
 | Using US or EU HS code directly | Last 2 digits are Israel-specific: wrong code = wrong duty rate |
-| Applying old personal import threshold (USD 150) | Reverted to USD 75 in February 2026 |
-| Including shipping in personal threshold test | Shipping is excluded from the USD 75 test |
+| Applying old personal import threshold (USD 150) | unverified: reverted to USD 75 in February 2026 |
+| Including shipping in personal threshold test | unverified: shipping is excluded from the USD 75 test |
 | Forgetting cascading tax calculation | VAT is on CIF + duty + purchase tax, not on product price alone |
-| Accepting electronic EUR.1 | Israel requires wet-ink original |
+| Accepting electronic EUR.1 | unverified: Israel requires wet-ink original |
 | Assuming FTA removes all taxes | FTA removes duty only; VAT and purchase tax still apply |
 | Underestimating purchase tax | Alcohol, tobacco, cars can have very high purchase tax rates |
 
@@ -241,9 +243,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT Law 1975, ss. 1, 31, 38, 47 and the 18% rate order (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%9E%D7%A1_%D7%A2%D7%A8%D7%9A_%D7%9E%D7%95%D7%A1%D7%A3 | 2026-11-01 |
+| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), Annex C VAT guide, read PDF p.140 (VAT rate 18% as at January 2026) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
 
-Not yet confirmed: USD 75 personal import threshold and its February 2026 history; duty ranges; EUR 6,000 invoice declaration limit: the customs pages were not opened.
+Not yet confirmed: the USD 75 personal import threshold, the USD 150 episode and its February 2026 reversal, the USD 500 band and the treatment of shipping in the threshold test; duty ranges and purchase tax; the import VAT base (CIF + duty + purchase tax) used in both examples; every FTA row, the EUR.1 rules and the EUR 6,000 invoice declaration limit; HS digit structure and pre-rulings. The customs pages were not opened.
 
 ## Disclaimer
 

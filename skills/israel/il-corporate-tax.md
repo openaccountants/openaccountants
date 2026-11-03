@@ -4,7 +4,7 @@ description: Use this skill when advising on Israeli corporate tax strategy, pro
 version: 1.1
 jurisdiction: IL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -22,18 +22,18 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Quick reference table**
 
-| Field | Value |
-| --- | --- |
-| Country | Israel (מדינת ישראל) |
-| Scope | Corporate tax, profit extraction methods for controlling shareholders |
-| Currency | NIS (Israeli New Shekel: ₪) |
-| Corporate tax rate | 23% flat on taxable profits |
-| Dividend tax: controlling shareholder (10%+) | 30% |
-| Dividend tax: non-controlling | 25% |
-| Section 3(tet) deemed interest rate (2026) | 6.53% |
-| Section 3(yod) rate (CPI-linked loans, 2026) | 4.9% |
-| Surtax threshold | NIS 721,560 (frozen 2025–2027) |
-| Credit point value | NIS 2,904/year (frozen 2025–2027) |
+| Field | Value | Source |
+| --- | --- | --- |
+| Country | Israel (מדינת ישראל) | |
+| Scope | Corporate tax, profit extraction methods for controlling shareholders | |
+| Currency | NIS (Israeli New Shekel: ₪) | |
+| Corporate tax rate | unverified: 23% flat on taxable profits | unverified |
+| Dividend tax: controlling shareholder (10%+) | unverified: 30% | unverified |
+| Dividend tax: non-controlling | unverified: 25% | unverified |
+| Section 3(tet) interest rate (2026) | 6.53% (s.3(i) interest rate in the 2026 booklet); the s.3(i) loan ceiling linked to CPI rise is NIS 8,640 a year | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.15) |
+| Section 3(yod) rate (CPI-linked loans, 2026) | unverified: 4.9% | unverified |
+| Surtax threshold | NIS 721,560 a year for 2026 (unverified: frozen 2025 to 2027) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
+| Credit point value | NIS 242 a month, NIS 2,904 a year, for 2026 (unverified: frozen 2025 to 2027) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.12) |
 | Tax authority | Israel Tax Authority (ITA: רשות המיסים) |
 | Contributor | Open Accountants Community |
 | Validated by | Pending: requires sign-off by Israel-licensed רואה חשבון or יועץ מס |
@@ -46,8 +46,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Unknown shareholder percentage | Treat as controlling shareholder (30% dividend tax) |
 | Unknown Section 3(tet) rate | Use current year published rate |
-| Unknown whether salary is below minimum | Flag minimum salary requirement for controlling shareholders |
-| Unknown company type | Treat as closely held (Chevra Me'atim) |
+| Unknown whether salary is below minimum | unverified: flag minimum salary requirement for controlling shareholders |
+| Unknown company type | Treat as closely held (Chevra Me'atim) (unverified consequences, see Section 8) |
 
 ## Section 2: Extraction methods overview
 
@@ -81,7 +81,7 @@ Israeli company owners (Baalei Shlita: בעלי שליטה) have four main metho
 
 ### 3.2 Surtax impact (Mas Yesafim: מס יסף)
 
-- **Surtax impact on dividends above threshold**: If total annual income (including dividend) exceeds NIS 721,560: 3% surtax on excess (Section 121B); Additional 2% on non-labor income above threshold (effective 2025+); Total additional: 5% on dividend portion above threshold; Effective rate climbs to ~49.95% on portion above threshold  _(Section 121B)_
+- **Surtax impact on dividends above threshold** (2026 booklet p.11, s.121B): 3% on the part of total taxable income above NIS 721,560; plus 2% on taxable income from capital sources above that amount. These are two bases: work out each one; do not apply a flat 5% to the whole dividend once total income passes the threshold. unverified: that a dividend counts as capital-source income for the 2% charge, and the ~49.95% effective rate  _(Section 121B)_
 
 ### 3.3 When dividend is optimal
 
@@ -97,27 +97,31 @@ Israeli company owners (Baalei Shlita: בעלי שליטה) have four main metho
 
 **Income tax brackets (2026)**
 
-| Annual income (NIS) | Rate |
-| --- | --- |
-| Up to 84,120 | 10% |
-| 84,121 – 120,720 | 14% |
-| 120,721 – 228,000 | 20% |
-| 228,001 – 301,200 | 31% |
-| 301,201 – 560,280 | 35% |
-| 560,281 – 721,560 | 47% |
-| Above 721,560 | 50% (47% + 3% surtax) |
+Income from personal exertion (salary is), 2026:
+
+| Annual income (NIS) | Rate | Source |
+| --- | --- | --- |
+| Up to 84,120 | 10% | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.10) |
+| 84,121 – 120,720 | 14% | same |
+| 120,721 – 228,000 | 20% | same |
+| 228,001 – 301,200 | 31% | same |
+| 301,201 – 560,280 | 35% | same |
+| 560,281 – 721,560 | 47% | same |
+| Above 721,560 | 50% (47% + 3% surtax) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
 
 ### 4.2 Bituach Leumi for controlling shareholder employees (2026)
 
 **Bituach Leumi for controlling shareholder employees (2026)**
 
-| Income range | Employee total (NI plus health) | Share of health in total | Employer NI |
-| --- | --- | --- | --- |
-| Up to NIS 7,703/month | 4.25% | 3.23% | 4.46% |
-| NIS 7,703 – NIS 51,910/month | 11.96% | 5.17% | 7.38% |
-| Above NIS 51,910/month | 0% (ceiling) | 0% (ceiling) | 0% (ceiling) |
+Column 2 of the National Insurance employee table: a controlling shareholder in a closely held company (holds at least 10% of the shares or the right to appoint a director), aged 18 and under retirement age.
 
-- **NI rate difference from regular employees**: Controlling shareholder NI rates (4.46%/7.38% employer) differ slightly from regular employees (4.51%/7.60%).
+| Income range | Employee total (NI plus health) | Share of health in total | Employer NI | Source |
+| --- | --- | --- | --- | --- |
+| Up to NIS 7,703/month (from 01.01.2026) | 4.25% | 3.23% | 4.46% | https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx |
+| NIS 7,703 – NIS 51,910/month (from 01.01.2026) | 11.96% | 5.17% | 7.38% | same |
+| Above NIS 51,910/month | 0% (ceiling) | 0% (ceiling) | 0% (ceiling) | same |
+
+- **NI rate difference from regular employees**: Controlling shareholder employer rates (4.46%/7.38%) differ slightly from an ordinary resident employee in column 1 (4.51%/7.60%) (National Insurance employee page).
 
 ### 4.3 Salary advantages
 
@@ -129,7 +133,7 @@ Israeli company owners (Baalei Shlita: בעלי שליטה) have four main metho
 
 ### 4.5 Minimum salary requirement
 
-- **Minimum salary requirement**: The Tax Authority expects controlling shareholders to draw a reasonable salary (~NIS 6,500+/month) before distributing dividends.
+- **Minimum salary requirement**: unverified: the Tax Authority expects controlling shareholders to draw a reasonable salary (~NIS 6,500+/month) before distributing dividends.
 
 ## Section 5: Shareholder loan (Halvaat Baalim: הלוואת בעלים)
 
@@ -139,16 +143,20 @@ Israeli company owners (Baalei Shlita: בעלי שליטה) have four main metho
 
 **Section 3(tet) rules table (2026)**
 
-| Rule | Detail |
-| --- | --- |
-| Deemed interest rate (2026) | 6.53% per year |
-| Treatment for controlling shareholders | Deemed interest classified as salary income, taxed at marginal rates |
-| Reporting obligation | Company must report deemed interest on Form 126 |
-| Section 3(yod) rate | 4.9% (for CPI-linked loans between related parties) |
+| Rule | Detail | Source |
+| --- | --- | --- |
+| Interest rate under s.3(i) (2026) | 6.53% per year | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.15) |
+| Treatment for controlling shareholders | unverified: deemed interest classified as salary income, taxed at marginal rates | unverified |
+| Reporting obligation | unverified: company must report deemed interest on Form 126 | unverified |
+| Section 3(yod) rate | unverified: 4.9% (for CPI-linked loans between related parties) | unverified |
+
+The 6.53% is the prescribed s.3(i) interest rate. It is not a tax on the loan principal and not a safe harbour against the Authority treating the withdrawal as a dividend or salary; see 5.2.
 
 ### 5.2 Reclassification risks
 
 **Reclassification risks table**
+
+unverified: every row of this table.
 
 | Risk factor | Detail |
 | --- | --- |
@@ -159,7 +167,7 @@ Israeli company owners (Baalei Shlita: בעלי שליטה) have four main metho
 
 ### 5.3 Worked example
 
-- **Worked example: shareholder loan deemed interest**: Loan amount:                NIS 500,000 Annual deemed interest:     NIS 500,000 × 6.53% = NIS 32,650 Tax on deemed interest:     NIS 32,650 × 47% (marginal rate) = NIS 15,346 Net annual cost:            NIS 15,346 (3.07% of loan)  _(Section 5.3)_
+- **Worked example: shareholder loan deemed interest** (the 6.53% is from the 2026 booklet; unverified: the 47% marginal treatment): Loan amount:                NIS 500,000 Annual deemed interest:     NIS 500,000 × 6.53% = NIS 32,650 Tax on deemed interest:     NIS 32,650 × 47% (marginal rate) = NIS 15,346 Net annual cost:            NIS 15,346 (3.07% of loan)  _(Section 5.3)_
 
 Compare with dividend on the same NIS 500,000: tax of ~NIS 230,500 (46.1%). The loan defers this but accumulates cost annually.
 
@@ -181,12 +189,14 @@ Compare with dividend on the same NIS 500,000: tax of ~NIS 230,500 (46.1%). The 
 
 **Self-employed NI rates (2026)**
 
-| Income range | NI rate | Health rate | Total |
-| --- | --- | --- | --- |
-| Up to NIS 7,703/month | 4.47% | 3.23% | 7.70% |
-| NIS 7,703 – NIS 51,910/month | 12.83% | 5.17% | 18.00% |
+Self-employed aged 18 and under retirement age.
 
-- **NI deductibility**: 52% of the NI amount is tax-deductible.
+| Income range | NI rate | Health rate | Total | Source |
+| --- | --- | --- | --- | --- |
+| Up to NIS 7,703/month (from 01.01.2026) | 4.47% | 3.23% | 7.70% | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx |
+| NIS 7,703 – NIS 51,910/month | 12.83% | 5.17% | 18.00% | same |
+
+- **NI deductibility**: unverified: 52% of the NI amount is tax-deductible.
 
 ### 6.3 Requirements and risks
 
@@ -221,7 +231,7 @@ Compare with dividend on the same NIS 500,000: tax of ~NIS 230,500 (46.1%). The 
 
 ## Section 8: Closely held companies (Chevra Me'atim: חברה מעטים)
 
-- **Closely held company annual tax on undistributed profits**: A closely held company is subject to a 2% annual tax on accumulated undistributed profits unless at least 6% of accumulated profits are distributed as dividends. This rule creates pressure to distribute regularly rather than accumulating profits indefinitely within the company.
+- **Closely held company annual tax on undistributed profits**: unverified (the provision was not opened): A closely held company is subject to a 2% annual tax on accumulated undistributed profits unless at least 6% of accumulated profits are distributed as dividends. This rule creates pressure to distribute regularly rather than accumulating profits indefinitely within the company.
 
 ## Section 9: Compliance checklist
 
@@ -232,8 +242,8 @@ Compare with dividend on the same NIS 500,000: tax of ~NIS 230,500 (46.1%). The 
 | Company has a CPA (Roe Cheshbon: רואה חשבון) | All strategies require professional filing |
 | Board resolution for dividends | Required before distribution, must be documented |
 | Loan agreement for shareholder loans | Written agreement with interest rate, repayment schedule, and signatures |
-| Minimum salary for controlling shareholder | ITA expects ~NIS 6,500+/month before dividends |
-| Withholding tax on dividends | Company must withhold 30% and deposit with ITA by the 15th of the following month |
+| Minimum salary for controlling shareholder | unverified: ITA expects ~NIS 6,500+/month before dividends |
+| Withholding tax on dividends | unverified: company must withhold 30% and deposit with ITA by the 15th of the following month |
 | Form 856 reporting | Payments to shareholders must be reported |
 | Section 3(tet) reporting | Deemed interest must be reported on Form 126 |
 | Transfer pricing for management fees | Fees must reflect market rates |
@@ -279,11 +289,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Ordinance, ss. 2, 3, 9, 33A, 39B, 45A, 121, 121B, 122, 126, 132 (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%A4%D7%A7%D7%95%D7%93%D7%AA_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94 | 2026-11-01 |
-| National Insurance, employee rates page | https://www.btl.gov.il/Insurance/Rates/Pages/%d7%9c%d7%a2%d7%95%d7%91%d7%93%d7%99%d7%9d%20%d7%a9%d7%9b%d7%99%d7%a8%d7%99%d7%9d.aspx | 2026-11-01 |
-| National Insurance, self-employed rates page | https://www.btl.gov.il/Insurance/Rates/Pages/%d7%9c%d7%a2%d7%a6%d7%9e%d7%90%d7%99%d7%9d.aspx | 2026-11-01 |
+| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.10 (2026 bands), p.11 (s.121B surtax), p.12 (credit point), p.15 (s.3(i) interest rate 6.53%, s.3(i) ceiling NIS 8,640) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
+| National Insurance, employee rates page, read the NIS 7,703 band and NIS 51,910 ceiling from 01.01.2026 and the column 1 and column 2 (controlling shareholder) working-age rates | https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx | 2026-11-03 |
+| National Insurance, self-employed rates page, read the working-age table from 01.01.2026 | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx | 2026-11-03 |
 
-Not yet confirmed: closely held company 2% tax and the 6% distribution condition; NIS 6,500 salary expectation; the split of controlling shareholder employee contributions between National Insurance and health (the page gives totals); 52% deductibility.
+Not yet confirmed: the 23% corporate rate and the 25% and 30% dividend rates (and so the 46.1% combined figure and the first worked check); the s.3(yod) 4.9% rate; the treatment of s.3(i) interest as salary, its Form 126 reporting and the reclassification risks; closely held company 2% tax and the 6% distribution condition; NIS 6,500 salary expectation; the split of controlling shareholder employee contributions between National Insurance and health (the page gives totals); 52% deductibility; dividend withholding and its deposit date; whether a dividend is capital-source income for the 2% surtax; the effective-rate tables in Sections 2 and 7.
 
 ## Disclaimer
 

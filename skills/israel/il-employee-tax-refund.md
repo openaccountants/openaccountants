@@ -4,7 +4,7 @@ description: Use this skill when advising salaried Israeli employees on voluntar
 version: 1.1
 jurisdiction: IL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -29,9 +29,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Currency | NIS (Israeli New Shekel: ₪) |
 | Primary form | Form 135 (דוח שנתי מקוצר) or online refund portal |
 | Key document | Form 106 (אישור שנתי על משכורת ומס שנוכה) from employer |
-| Refund window | 6 years from end of tax year (Section 160, Income Tax Ordinance) |
+| Refund window | unverified: 6 years from end of tax year (Section 160, Income Tax Ordinance) |
 | Online portal | https://secapp.taxes.gov.il |
-| Credit point value (2026) | NIS 2,904/year (NIS 242/month): frozen 2025–2027 |
+| Credit point value (2026) | NIS 242 a month, NIS 2,904 a year (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.12, s.33A); unverified: frozen 2025 to 2027 |
 | Tax authority | Israel Tax Authority (ITA: רשות המיסים) |
 | Contributor | Open Accountants Community |
 | Validated by | Pending: requires sign-off by Israel-licensed רואה חשבון or יועץ מס |
@@ -49,7 +49,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 2: Refund window
 
-- **Refund window rule**: The retroactive refund window is 6 calendar years from the end of the tax year, per Section 160 of the Income Tax Ordinance  _(Section 160, Income Tax Ordinance)_
+- **Refund window rule**: unverified (s.160 was not opened in an official text): The retroactive refund window is 6 calendar years from the end of the tax year, per Section 160 of the Income Tax Ordinance  _(Section 160, Income Tax Ordinance)_
 
 **Refund window deadlines table**
 
@@ -106,8 +106,8 @@ If the employee received BTL payments during the year, request the annual confir
 | 1 | Mid-year job change / multiple employers | Two or more Form 106s for the same year and no Tium Mas was filed | Section 164 ITO |
 | 2 | Partial-year work / unemployment | Less than 12 months worked | Withholding over-projection |
 | 3 | Maternity / paternity leave | Received דמי לידה from Bituach Leumi | Section 9(6) ITO |
-| 4 | Military reserve duty (Miluim: מילואים) | 30+ days of reserve service in the prior tax year | Section 39B ITO (Amendment 283) |
-| 5 | Charitable donations | Total donations to Section 46-approved institutions ≥ NIS 207 (2026 minimum) | Section 46 ITO |
+| 4 | Military reserve duty (Miluim: מילואים) | unverified: 30+ days of reserve service as a combatant in the prior tax year | Section 39B ITO (Amendment 283, published 23.11.2025, 2026 deduction booklet p.7) |
+| 5 | Charitable donations | unverified: total donations to Section 46-approved institutions ≥ NIS 207 (2026 minimum) | Section 46 ITO |
 | 6 | Yishuv Mezakeh (ישוב מזכה) | Center of life in eligible periphery locality for 12+ months | Section 11 ITO + Negev/Galilee Law |
 | 7 | New immigrant credit points | Oleh Chadash within first 54 months of Aliyah (post-2022) | Section 35 ITO + Amendment 262 |
 | 8 | Completed academic degree | BA: 1 point/year up to 3 years (graduates 2023+); MA: 0.5 point for 2 years | Section 40g ITO |
@@ -122,6 +122,8 @@ If the employee received BTL payments during the year, request the annual confir
 
 **Reserve duty credit points table**  _(Section 39B ITO, Amendment 283)_
 
+unverified: the day bands and points below. The 2026 booklet confirms only that s.39B (Amendment 283) gives credit points for reserve service as a combatant (2026 deduction booklet p.7); the directive with the bands was not opened. The annual values use NIS 2,904 a point (2026 deduction booklet p.12).
+
 | Days served in tax year | Points awarded | Annual value (NIS) |
 | --- | --- | --- |
 | 30–39 | 0.5 | 1,452 |
@@ -130,11 +132,13 @@ If the employee received BTL payments during the year, request the annual confir
 | Each additional 5 days | +0.25 | +726 |
 | Maximum | 4.0 | 11,616 |
 
-- **Realization timing**: Realized in the year AFTER the service (service in 2025 → claim on 2026 refund)  _(Section 39B ITO, Amendment 283)_
+- **Realization timing**: unverified: Realized in the year AFTER the service (service in 2025 → claim on 2026 refund)  _(Section 39B ITO, Amendment 283)_
 
 ### 5.2 New immigrant schedule (post-2022, Amendment 262)
 
 **New immigrant schedule table**  _(Section 35 ITO + Amendment 262)_
+
+unverified: this schedule (s.35, Amendment 262) was not checked against an official text.
 
 | Period from Aliyah date | Monthly points | Annual rate |
 | --- | --- | --- |
@@ -143,15 +147,15 @@ If the employee received BTL payments during the year, request the annual confir
 | Months 31–42 (12 months) | 1/6 | 2 points |
 | Months 43–54 (12 months) | 1/12 | 1 point |
 
-- **Total points and pre-2022 schedule**: Total: 8.5 credit points over 54 months. For Olim who arrived before 1.1.2022, the pre-Amendment 262 schedule applies (7.5 points over 42 months).  _(Section 35 ITO + Amendment 262)_
+- **Total points and pre-2022 schedule**: unverified: Total: 8.5 credit points over 54 months. For Olim who arrived before 1.1.2022, the pre-Amendment 262 schedule applies (7.5 points over 42 months).  _(Section 35 ITO + Amendment 262)_
 
 **Section 35 is for credit points only: there is no "Section 35 mortgage interest deduction for Olim."** Do not promise a mortgage refund under this section.
 
 ### 5.3 Donation credit (Section 46)
 
-- **Minimum donation**: NIS 207 (2026)  _(Section 46 ITO)_
-- **Credit rate**: 35% of donated amount  _(Section 46 ITO)_
-- **Annual ceiling**: NIS 10,354,816 or 30% of taxable income, whichever is lower  _(Section 46 ITO)_
+- **Minimum donation**: unverified: NIS 207 (2026)  _(Section 46 ITO)_
+- **Credit rate**: unverified: 35% of donated amount  _(Section 46 ITO)_
+- **Annual ceiling**: unverified: NIS 10,354,816 or 30% of taxable income, whichever is lower  _(Section 46 ITO)_
 - **Institution approval requirement**: Institution must hold active Section 46 approval for the year of donation  _(Section 46 ITO)_
 - **Valid receipt formats**: Valid receipt formats: original, certified copy, or electronic (marked מסמך ממוחשב)  _(Section 46 ITO)_
 
@@ -165,29 +169,29 @@ If the employee received BTL payments during the year, request the annual confir
 
 | Duration | Exempt earned income ceiling (2026) |
 | --- | --- |
-| 365+ days (long-term) | NIS 445,200/year |
-| 185–364 days (short-term) | NIS 81,960/year |
-| חוק הנכים / חוק נפגעי פעולות איבה pension | NIS 684,000/year |
+| 365+ days (long-term) | unverified: NIS 445,200/year |
+| 185–364 days (short-term) | unverified: NIS 81,960/year |
+| חוק הנכים / חוק נפגעי פעולות איבה pension | unverified: NIS 684,000/year |
 
 - **Qualifying conditions**: Qualifying conditions: 100% medical disability, blindness, or 90%+ via multi-organ-injury calculation (ועדה רפואית determination required).  _(Section 9(5) ITO)_
 
 ## Section 6: Estimating the refund
 
-- **Refund estimate formula**: Correct tax (under brackets and credits) − Tax actually withheld (sum of field 042 across all Form 106s)
+- **Refund estimate formula**: Refund = tax actually withheld (sum of field 042 across all Form 106s) − correct tax for the year (under that year's brackets and credits). A positive result is an estimated refund; a negative result means tax is owed. A credit-point value does not by itself establish entitlement or an automatic refund.
 
 ### 2026 income tax brackets for employees
 
 **2026 income tax brackets table**
 
-| Monthly salary band (NIS) | Annual band (NIS) | Rate |
-| --- | --- | --- |
-| Up to 7,010 | Up to 84,120 | 10% |
-| 7,011 – 10,060 | 84,121 – 120,720 | 14% |
-| 10,061 – 19,000 | 120,721 – 228,000 | 20% |
-| 19,001 – 25,100 | 228,001 – 301,200 | 31% |
-| 25,101 – 46,690 | 301,201 – 560,280 | 35% |
-| 46,691 and above | 560,281 and above | 47% |
-| Plus surtax | Above 721,560 annual | Additional 3% |
+| Monthly salary band (NIS) | Annual band (NIS) | Rate | Source |
+| --- | --- | --- | --- |
+| Up to 7,010 | Up to 84,120 | 10% | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.10) |
+| 7,011 – 10,060 | 84,121 – 120,720 | 14% | same |
+| 10,061 – 19,000 | 120,721 – 228,000 | 20% | same |
+| 19,001 – 25,100 | 228,001 – 301,200 | 31% | same |
+| 25,101 – 46,690 | 301,201 – 560,280 | 35% | same |
+| 46,691 and above | 560,281 and above | 47% | same |
+| Plus surtax | Above 721,560 annual | Additional 3% | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
 
 For prior tax years, use the brackets that applied to that year.
 
@@ -239,8 +243,8 @@ Without this fix, the employee will file the same refund every year for the same
 **Working:**
 - Field 042: NIS 24,800 withheld at A + NIS 22,400 at B = NIS 47,200 total withheld
 - Aggregate annual income: NIS 282,000
-- Correct annual tax (2024 brackets, 2.75 default points for female): ~NIS 43,700
-- Estimated refund: NIS 3,100 – NIS 3,800
+- Correct annual tax (2024 brackets, 2.75 default points for female): ~NIS 43,700 (unverified: the 2024 brackets were not opened)
+- Estimated refund (withheld minus correct tax): NIS 47,200 − ~NIS 43,700 ≈ NIS 3,500; present as a range, NIS 3,100 – NIS 3,800
 - Trigger: #1 (mid-year job change)
 - Documents: both Form 106s, Teudat Zehut, bank confirmation
 - Deadline: 31.12.2030
@@ -250,7 +254,7 @@ Without this fix, the employee will file the same refund every year for the same
 **Scenario:** Teacher served 65 days of reserve duty in 2025.
 
 **Working:**
-- Section 39B schedule: 50 days = 1.0 point; 15 additional days (over 50) at +0.25 per 5 days = +0.75 points
+- Section 39B schedule (unverified day bands, see 5.1): 50 days = 1.0 point; 15 additional days (over 50) at +0.25 per 5 days = +0.75 points
 - Total: 1.75 points × NIS 2,904 = NIS 5,082 expected refund for 2026
 - Points are realized in the year AFTER service → claim on 2026 refund
 - Document: Form 3010 from reserve unit
@@ -261,14 +265,14 @@ Without this fix, the employee will file the same refund every year for the same
 **Scenario:** Employee donated NIS 6,000 to three Section 46-approved nonprofits in 2022.
 
 **Working:**
-- Credit: NIS 6,000 × 35% = NIS 2,100
+- Credit (unverified 35% rate): NIS 6,000 × 35% = NIS 2,100
 - Deadline: 31.12.2028: still open
 - Documents: signed original receipts; verify each institution's Section 46 approval was active in 2022
 
 ## Section 11: After submission
 
-- **Processing timeline**: ITA must process and pay the refund within one year from the assessment date, or two years from the end of the tax year, whichever is later
-- **Late refund interest**: Refunds paid after the statutory window accrue CPI linkage (הצמדה) plus 4% annual interest
+- **Processing timeline**: unverified: ITA must process and pay the refund within one year from the assessment date, or two years from the end of the tax year, whichever is later
+- **Late refund interest**: unverified: Refunds paid after the statutory window accrue CPI linkage (הצמדה) plus 4% annual interest
 - **Document request response**: If the ITA sends a "Drisha LeHashlamat Mismachim" (דרישה להשלמת מסמכים): request for additional documents: respond within the stated deadline or the request closes
 
 ## Section 12: Reference material
@@ -313,9 +317,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Ordinance, ss. 2, 3, 9, 33A, 39B, 45A, 121, 121B, 122, 126, 132 (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%A4%D7%A7%D7%95%D7%93%D7%AA_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94 | 2026-11-01 |
+| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.7 (s.39B, Amendment 283), p.10 (2026 bands), p.11 (s.121B surtax), p.12 (credit point NIS 242) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
 
-Not yet confirmed: foreign posting, disability pension ceilings and other figures not listed in the Ordinance sections read; the worked example kept on 2024 brackets.
+Not yet confirmed: the six-year refund window (s.160) and the claim deadlines table; the reserve-duty day bands and timing; the new immigrant schedule (s.35, Amendment 262); the s.46 donation minimum, rate and ceiling; the disability ceilings; Form 106 field numbers; the refund processing and interest rules; the 2024 brackets behind Example 1; the frozen status of the credit point. No official consolidated text of the Income Tax Ordinance was opened.
 
 ## Disclaimer
 

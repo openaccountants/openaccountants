@@ -4,7 +4,7 @@ description: Use this skill when advising Israeli freelancers (עצמאים) on 
 version: 1.1
 jurisdiction: IL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -22,15 +22,15 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Quick reference table**
 
-| Field | Value |
-| --- | --- |
-| Country | Israel (מדינת ישראל) |
-| Scope | Freelancer tax operations, deadlines, threshold monitoring |
-| Currency | NIS (Israeli New Shekel: ₪) |
-| Business types | Osek Murshe (עוסק מורשה), Osek Patur (עוסק פטור), Esek Za'ir (עסק זעיר) |
-| VAT rate | 18% (effective January 2025) |
-| Osek Patur threshold (2025) | NIS 120,000 annual turnover |
-| Osek Patur threshold (2026) | NIS 122,833 annual turnover (CPI-indexed) |
+| Field | Value | Source |
+| --- | --- | --- |
+| Country | Israel (מדינת ישראל) | |
+| Scope | Freelancer tax operations, deadlines, threshold monitoring | |
+| Currency | NIS (Israeli New Shekel: ₪) | |
+| Business types | Osek Murshe (עוסק מורשה), Osek Patur (עוסק פטור), Esek Za'ir (עסק זעיר) | |
+| VAT rate | 18% as at January 2026 (from January 2025) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.140) |
+| Osek Patur threshold (2025) | unverified: NIS 120,000 annual turnover | unverified |
+| Osek Patur threshold (2026) | NIS 122,833 expected annual turnover as at January 2026, updated once a year | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.139) |
 | Tax authority | Israel Tax Authority (ITA: רשות המיסים בישראל) |
 | Filing portal | Shaam Online: https://www.misim.gov.il |
 | Contributor | Open Accountants Community |
@@ -60,7 +60,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | VAT obligation | Must charge 18% VAT on all invoices |
 | Invoice type | Heshbonit Mas (חשבונית מס: tax invoice) |
 | Input VAT | Can deduct input VAT (Mas Tsumos: מס תשומות) on business expenses |
-| VAT filing | Bi-monthly (turnover < NIS 1.5M) or monthly (turnover > NIS 1.5M) |
+| VAT filing | Two-monthly if turnover in the determining year is up to NIS 1,775,000; monthly above NIS 1,775,000 (as at 1 January 2026, updated yearly), within 15 days after the period (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.141) |
 | Annual return | Form 1301 (דוח שנתי) required |
 | Advance payments | Mkdamot (מקדמות): bi-monthly income tax advances |
 
@@ -70,17 +70,17 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Attribute | Detail |
 | --- | --- |
-| Eligibility | Annual turnover below threshold (NIS 120,000 for 2025; NIS 122,833 for 2026) |
+| Eligibility | Expected annual turnover below NIS 122,833 (as at January 2026); some professions listed in VAT Registration Regulations reg. 13 (for example doctors, architects, bookkeepers) must register as Osek Murshe whatever the turnover (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF pp.139-140) |
 | VAT obligation | Does NOT charge VAT |
 | Invoice type | Kabala (קבלה: receipt) only |
 | Input VAT | Cannot deduct input VAT on purchases |
-| VAT filing | No periodic VAT returns; annual turnover declaration by January 31 |
+| VAT filing | No periodic VAT returns; declare the previous calendar year's turnover once a year, by 31 January (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.140) |
 | Annual return | Form 1301 still required for income tax |
 | Threshold monitoring | Must convert to Osek Murshe if threshold exceeded mid-year |
 
 ### 2.3 Esek Za'ir (עסק זעיר): Micro business
 
-Introduced in 2024 under Income Tax Ordinance Section 17א.
+unverified: every row in this section (introduction date, section number, the 30% deduction, the restrictions and the shared ceiling). No official text for Esek Za'ir was opened.
 
 **Esek Za'ir attributes**
 
@@ -108,12 +108,12 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 
 **Allocation number thresholds**
 
-| Effective date | Invoice threshold (before VAT) |
-| --- | --- |
-| January 2026 | NIS 10,000 |
-| June 2026 | NIS 5,000 |
+| Effective date | Invoice threshold (before VAT) | Source |
+| --- | --- | --- |
+| 1 January 2026 | NIS 10,000 | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.141, VAT Law s.47(a2)(2)) |
+| 1 June 2026 | NIS 5,000 | same |
 
-- **Missing allocation number consequence**: Without an allocation number, the recipient cannot deduct input VAT. Flag any issued invoice above the threshold that is missing an allocation number.
+- **Missing allocation number consequence**: The recipient cannot deduct the input VAT on a tax invoice above the threshold that has no allocation number (rights guide, PDF p.141). Flag any issued invoice above the threshold that is missing an allocation number.
 
 ## Section 4: Tax deadline calendar
 
@@ -123,12 +123,12 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 
 | Deadline | Frequency | Date | Details |
 | --- | --- | --- | --- |
-| VAT filing (Osek Murshe, bi-monthly) | Bi-monthly | 15th of the month after the period | Mar 15, May 15, Jul 15, Sep 15, Nov 15, Jan 15 |
-| VAT filing (monthly filers) | Monthly | 15th of each month | For businesses exceeding the monthly threshold |
-| Detailed VAT report (Doch Meforat, report 874) | Monthly | 23rd of the following month | Required for annual turnover > NIS 500,000; forces monthly filing |
-| Bituach Leumi advances | Monthly | 15th of each month | National Insurance advance payments |
-| Mkdamot (income tax advances): monthly filers | Monthly | 15th of the month after the period | Per Tax Authority assessment letter |
-| Mkdamot: bi-monthly filers | Bi-monthly | 19th of the month after the period | Per Tax Authority assessment letter |
+| VAT filing (Osek Murshe, two-monthly) | Two-monthly | Within 15 days after the period (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.141) | Mar 15, May 15, Jul 15, Sep 15, Nov 15, Jan 15 |
+| VAT filing (monthly filers) | Monthly | same | Turnover above NIS 1,775,000 in the determining year |
+| Detailed VAT report (Doch Meforat, report 874) | Monthly | unverified: 23rd of the following month | unverified: required for annual turnover > NIS 500,000; forces monthly filing |
+| Bituach Leumi advances | Monthly | unverified: 15th of each month | National Insurance advance payments |
+| Mkdamot (income tax advances): monthly filers | Monthly | unverified: 15th of the month after the period | Per Tax Authority assessment letter |
+| Mkdamot: bi-monthly filers | Bi-monthly | unverified: 19th of the month after the period | Per Tax Authority assessment letter |
 
 ### 4.2 Annual deadlines
 
@@ -136,10 +136,10 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 
 | Deadline | Date | Details |
 | --- | --- | --- |
-| Osek Patur annual turnover declaration | January 31 | Report previous year's turnover to VAT office |
+| Osek Patur annual turnover declaration | 31 January | Declare the previous calendar year's turnover (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.140) |
 | Annual income tax report (Form 1301): paper | 29 May 2026 | For tax year 2025 filed in 2026 |
 | Annual income tax report (Form 1301): online | June 30 | Online filing mandatory for most filers |
-| Annual income tax report: CPA extension | July 31 or later | Via CPA association quota arrangement |
+| Annual income tax report: CPA extension | unverified: July 31 or later | Via CPA association quota arrangement |
 | Self-employed pension deposit deadline | December 31 | Last day to deposit for that tax year's benefits |
 
 - **Shabbat/holiday deadline shift**: If a deadline falls on Shabbat (Saturday), it moves to Sunday. If it falls on a Jewish holiday (Chag), check the ITA website for adjusted dates.
@@ -147,12 +147,12 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 ### 4.3 Pension contribution deadlines (December 31)
 
 - **Missed deadline consequence**: Missing December 31 forfeits both tax benefits for the entire year
-- **Section 45א: 35% tax credit (Zikui): credit basis**: Credit on contributions up to 5.5% of business income
-- **Section 45א 2026 cap**: approximately NIS 11,640 + NIS 1,164 NIS
-- **Section 47: Income deduction (Nikui): deduction basis**: Deduction of up to 11% of qualifying income
-- **Section 47 2026 qualifying-income ceiling**: NIS 232,800; max deposit approximately NIS 25,608 NIS
-- **Mandatory self-employed pension contribution 2026 rates**: 4.45% on income up to half the average wage; 12.55% above it
-- **Average wage 2026**: NIS 13,769/month NIS/month
+- **Section 45א: 35% tax credit (Zikui): credit basis**: unverified: credit on contributions up to 5.5% of business income
+- **Section 45א 2026 cap**: unverified: approximately NIS 11,640 + NIS 1,164. The 2026 booklet (2026 deduction booklet p.12) lists the s.47(a) qualifying-income ceiling for a self-employed member at NIS 9,700 a month and the s.47(a)(5) additional-income ceiling at NIS 24,250 a month; how they combine into a credit cap was not confirmed
+- **Section 47: Income deduction (Nikui): deduction basis**: unverified: deduction of up to 11% of qualifying income
+- **Section 47 2026 qualifying-income ceiling**: unverified: NIS 232,800; max deposit approximately NIS 25,608
+- **Mandatory self-employed pension contribution 2026 rates**: unverified: 4.45% on income up to half the average wage; 12.55% above it
+- **Average wage 2026**: NIS 13,769 a month (2026 deduction booklet p.12, "average wage in the economy")
 - **Mandatory pension nature**: This is a legal obligation, not just a tax benefit
 
 ## Section 5: Osek Patur threshold monitoring
@@ -183,16 +183,19 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 
 **Contribution rates table**
 
-| Income range | NI rate | Health rate | Total |
-| --- | --- | --- | --- |
-| Up to NIS 7,703/month | 4.47% | 3.23% | 7.70% |
-| NIS 7,703 – NIS 51,910/month | 12.83% | 5.17% | 18.00% |
+Applies to a self-employed person aged 18 or over who has not reached retirement age. Under 18 or at retirement age the page gives different rates.
 
-- **Minimum monthly advance**: NIS 187 NIS/month
-- **Maximum monthly advance**: NIS 7,850 NIS/month
-- **Minimum income floor**: NIS 2,065/month NIS/month
-- **Direct-debit extension**: Direct-debit payers (הוראת קבע) get an automatic extension to the 22nd
-- **NI tax deductibility**: 52% of the NI amount is tax-deductible for income tax purposes
+| Income range | NI rate | Health rate | Total | Source |
+| --- | --- | --- | --- | --- |
+| Up to NIS 7,703/month (from 01.01.2026) | 4.47% | 3.23% | 7.70% | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx |
+| NIS 7,703 to NIS 51,910/month (the maximum income liable to contributions) | 12.83% | 5.17% | 18.00% | same |
+| Monthly income below NIS 3,442 (from 01.01.2026) | Contributions are paid on the minimum income | | | same |
+
+- **Minimum income floor**: NIS 3,442 a month from 01.01.2026: a self-employed person whose income is lower pays contributions on the minimum income (National Insurance self-employed page).
+- **Minimum monthly advance**: unverified: NIS 187 a month
+- **Maximum monthly advance**: unverified: NIS 7,850 a month (it does not match 18% of NIS 51,910)
+- **Direct-debit extension**: unverified: direct-debit payers (הוראת קבע) get an automatic extension to the 22nd
+- **NI tax deductibility**: unverified: 52% of the NI amount is tax-deductible for income tax purposes
 
 ## Section 7: Accountant package (Havila L'Roe Cheshbon: חבילה לרואה חשבון)
 
@@ -254,6 +257,7 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 **Scenario:** Self-employed consultant, annual business income NIS 300,000. December 15, no pension deposits yet.
 
 **Working:**
+- unverified (the 5.5% and 11% bases and the mandatory rates were not confirmed, and the 2026 qualifying-income ceilings in 2026 deduction booklet p.12 may cap them):
 - Section 45א credit: 35% on up to 5.5% of NIS 300,000 = NIS 16,500 eligible → NIS 5,775 tax credit
 - Section 47 deduction: up to 11% of NIS 300,000 = NIS 33,000 deductible (marginal benefit depends on tax bracket)
 - Mandatory contribution: 4.45% on income up to half the average wage + 12.55% above it
@@ -270,7 +274,7 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 | Confusing Osek Murshe with Osek Patur | Different VAT obligations, invoice types, and filing requirements |
 | Skipping zero-revenue VAT returns | Osek Murshe must file bi-monthly returns even with no revenue; missing reports trigger penalties |
 | Gap in invoice numbering | Violates Tax Authority requirements; sequential numbering is mandatory |
-| Missing allocation number on invoices > NIS 5,000 (NIS 10,000 January to May 2026) | From 2026, recipient loses input VAT deduction |
+| Missing allocation number on invoices > NIS 5,000 before VAT (NIS 10,000 from 1 January to 31 May 2026) | Recipient loses the input VAT deduction (rights guide, PDF p.141) |
 | Wrong annual report deadline | Form 1301 is due 29 May 2026 (paper) / 30 June 2026 (online) for tax year 2025: not April 30 |
 | Confusing Section 45א credit with mandatory pension | They are separate: 45א/47 are voluntary tax benefits; mandatory contribution is a legal floor |
 | Using Bituach Leumi based on monthly actual revenue | BL advances are based on projected annual income, not actual monthly revenue |
@@ -315,12 +319,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Ordinance, ss. 2, 3, 9, 33A, 39B, 45A, 121, 121B, 122, 126, 132 (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%A4%D7%A7%D7%95%D7%93%D7%AA_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94 | 2026-11-01 |
-| VAT Law 1975, ss. 1, 31, 38, 47 and the 18% rate order (consolidated text on Hebrew Wikisource, read in part: those sections) | https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%9E%D7%A1_%D7%A2%D7%A8%D7%9A_%D7%9E%D7%95%D7%A1%D7%A3 | 2026-11-01 |
-| National Insurance, self-employed rates page | https://www.btl.gov.il/Insurance/Rates/Pages/%d7%9c%d7%a2%d7%a6%d7%9e%d7%90%d7%99%d7%9d.aspx | 2026-11-01 |
+| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.12 (2026 adjusted amounts: s.47(a) ceilings NIS 9,700 and NIS 24,250 a month, average wage NIS 13,769) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
+| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), Annex C VAT guide, read PDF pp.139-141 (Osek Patur NIS 122,833 and 31 January declaration, 18% rate, allocation-number limits under VAT Law s.47(a2)(2), two-monthly/monthly NIS 1,775,000 as at 1/1/2026, 15-day deadline) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
+| National Insurance, self-employed rates page, read the working-age table, the NIS 7,703 band and NIS 51,910 ceiling from 01.01.2026, the under-18 and retirement-age rates, and the NIS 3,442 minimum income from 01.01.2026 | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx | 2026-11-03 |
 | Israel Tax Authority, Form 1301 service page, tax year 2025 | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals | 2026-11-01 |
 
-Not yet confirmed: Esek Zair details; Report 874 trigger; ss.45A and 47 2026 caps; mandatory pension rates; average wage; minimum and maximum National Insurance advances (the NIS 7,850 maximum does not match 18% of NIS 51,910, treat as unverified); 52% deductibility.
+Not yet confirmed: Esek Za'ir (all of Section 2.3 and 5.3); the Osek Patur 2025 figure of NIS 120,000; Report 874 trigger and date; National Insurance and income-tax advance dates (15th, 19th, 22nd); the CPA extension date; the s.45A 5.5% base and its 2026 cap, the s.47 11% base and NIS 232,800 ceiling; mandatory pension rates; minimum and maximum National Insurance advances (the NIS 7,850 maximum does not match 18% of NIS 51,910); 52% deductibility; the paper and online Form 1301 dates rest on the tax year 2025 service page.
 
 ## Disclaimer
 
