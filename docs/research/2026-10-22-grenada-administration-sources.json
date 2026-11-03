@@ -1,0 +1,45 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-14-of-2016-Tax-Administration-Act.pdf",
+      "bytes": 625095,
+      "sha256": "c5b8f4ae6bb87968bb0e1ce86817a0ccb486a8eeb8eb015de8f949a794c21e2c"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-34-of-2016-Tax-Administration-Act-Commencement-Order-2016.pdf",
+      "bytes": 51448,
+      "sha256": "674e68eae606bbc781a2918f9dbe56d3d1440abbf71ac2ffea642d086e79cd23"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/10/Act-No.-10-of-2020-Tax-Administration-Amendment-Act-2020-1.pdf",
+      "bytes": 494444,
+      "sha256": "d516a53fef3b72cc77824251ae930cf97c40f1c8fbd38627cc2ac8ac41a774b6"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/07/S.R.O.-75-of-2020-Tax-Administration-Amendment-Act-2020-Commencement-Order.pdf",
+      "bytes": 253694,
+      "sha256": "88cbc2cb0d6e6194845779c2e0e6c8a70371a1caee440b5b8eef2bbe63fb9262"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2025/06/Act-No.-6-of-2025-Tax-Administration-Post-Hurricane-Beryl-Fiscal-Support-Special-Measures-Act-2025.pdf",
+      "bytes": 457372,
+      "sha256": "b5e8bf485cdf90425b8916b655c09faf6a4ff7e4e6279be21d9851b6fb909062"
+    }
+  ],
+  "review_status": "independent review pending",
+  "gaps": [
+    "Later amendments and Beryl extensions",
+    "Current Beryl claim procedures",
+    "Electronic storage and filing directions",
+    "Assessment time-limit exceptions"
+  ],
+  "verified_dates": {
+    "2020_amendment_commencement": "2020-12-31",
+    "beryl_deemed_commencement": "2024-07-01",
+    "beryl_relevant_period": [
+      "2024-06-01",
+      "2025-01-31"
+    ]
+  }
+}
