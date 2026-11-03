@@ -1,0 +1,13 @@
+{
+  "finding": "F1 article389 unpaid-capital conditions",
+  "actual_read": "Original cached ohada-auscgie-page-096.png visually read by parent",
+  "candidate_files": {
+    "skills/mali/ml-company-formation.md": "033b288c3c181ccfcef697372ec20e5e68efa2e1460d5e82d8f5e7287b1902e5",
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/ledgers/ml-company-formation.md": "2d53d89cd33d6f2f7d781feea65de716d47899ec46e0b83d8b6678d00f86254b",
+    "evidence/ledgers/mali-legacy-jobs-draft-20261101/source-record.json": "025e0f14d99b4522f0971229eb7b8ad603fa8f3281d141fd9f50537a39ab4c0b",
+    "skills/mali/ml-transfer-pricing.md": "f8dd043b10d003ae5ec707b0d6e920527bd8a2e4da68794cdd8aa9ca87e218f0",
+    "skills/mali/ml-cross-border-tax.md": "e278a272fc4c9ad36387101d3dd41324cc54ea588959fc8f887ccd34fea95e85"
+  },
+  "scope": "No other Guide, prior review, hold or example changed",
+  "additional_parent_finding": "New TP/XB platform keys and stamped CTA removed to match canonical template; source text and cases unchanged"
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "3338b0f742fc9505945915ea7c1af95a97712353",
+  "finding_count": 1,
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "material condition omission",
+      "status": "open",
+      "guide": "skills/mali/ml-company-formation.md",
+      "line": 38,
+      "ledger": "evidence/ledgers/mali-legacy-jobs-draft-20261101/ledgers/ml-company-formation.md",
+      "ledger_row": "ml-company-formation-10",
+      "source": "https://biblio.ohada.org/doc_num.php?explnum_id=2032#page=96",
+      "act_article": "AUSCGIE 2014 article389, continuation on physical/printed page96",
+      "observed": "The condensed ordinary-SA capital/payment rule gives quarter cash at subscription and a three-year balance period but omits the attached unpaid-capital restrictions. This can make the permitted deferral appear unconditional.",
+      "exact_source_quotes": [
+        "Les actions représentant des apports en numéraire non intégralement libérées doivent rester sous la forme nominative.",
+        "Tant que le capital n’est pas entièrement libéré, la société ne peut ni augmenter son capital sauf si cette augmentation de capital est réalisée par des apports en nature, ni émettre des obligations."
+      ],
+      "required_repair": "Add the nominative-share condition and, until capital fully paid, no increase except in-kind and no bond issue to the Guide ordinary-SA payment rule or immediately adjacent text. Extend ledger row10 with the corresponding original-language source anchors and include PDF96 in the pinpoint/read scope. Preserve all prior accepted Guide and review evidence.",
+      "scope_limit": "The same paragraph also excludes industry contributions from shares; no contrary SA-industry claim was found, so this is a useful boundary rather than a second failing finding."
+    }
+  ]
+}

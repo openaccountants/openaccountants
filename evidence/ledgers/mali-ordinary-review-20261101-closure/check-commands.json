@@ -1,0 +1,46 @@
+[
+  {
+    "name": "skill-checks.txt",
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/mali/ml-corporate-income-tax.md",
+      "skills/mali/ml-income-tax.md",
+      "skills/mali/ml-payroll-social.md",
+      "skills/mali/ml-vat-gst.md"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "examples.txt",
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/mali/ml-corporate-income-tax.md",
+      "skills/mali/ml-income-tax.md",
+      "skills/mali/ml-payroll-social.md",
+      "skills/mali/ml-vat-gst.md"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "changed-validation.txt",
+    "command": [
+      "python3",
+      "evidence/ledgers/mali-ordinary-draft-20261101/pinned-validation.py",
+      "--changed-only",
+      "--no-index-check"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "diff-check.txt",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit": 0
+  }
+]
