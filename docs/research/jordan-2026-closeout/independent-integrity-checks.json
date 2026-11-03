@@ -1,0 +1,137 @@
+{
+  "head": "2cec36c47e29f010fe0884693d40018c1313df7e",
+  "checks": [
+    {
+      "file": "skills/jordan/jo-company-formation.md",
+      "base_blob": "86cf31c3f60c956829df9963317eaf77bd3ef736",
+      "head_blob": "86cf31c3f60c956829df9963317eaf77bd3ef736",
+      "formation_byte_identical": true,
+      "platform_values_preserved_from_base": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true
+      },
+      "full_cta_preserved_from_base": true,
+      "full_cta_preserved_from_original_head": true,
+      "base_authored_words": 339,
+      "head_authored_words": 339,
+      "shrink_percentage": 0.0,
+      "head_metadata": {
+        "tax_year": "2025",
+        "last_updated": "2026-07-13",
+        "version": null,
+        "tier": "2"
+      }
+    },
+    {
+      "file": "skills/jordan/jo-corporate-income-tax.md",
+      "base_blob": "27bbaacc7dbb3e01d3294fb02389f60a089a76df",
+      "head_blob": "7944b2fa1c02431069b82a222785d3fac7ba5732",
+      "formation_byte_identical": null,
+      "platform_values_preserved_from_base": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true
+      },
+      "full_cta_preserved_from_base": true,
+      "full_cta_preserved_from_original_head": true,
+      "base_authored_words": 386,
+      "head_authored_words": 1199,
+      "shrink_percentage": -210.62,
+      "head_metadata": {
+        "tax_year": "2026",
+        "last_updated": "2026-11-01",
+        "version": "1.1",
+        "tier": "2"
+      }
+    },
+    {
+      "file": "skills/jordan/jo-income-tax.md",
+      "base_blob": "361d1946a746fc8b016c10afb69586c2c6a70cba",
+      "head_blob": "53c39c68236d7d41ac2b7e89734be4482a67776e",
+      "formation_byte_identical": null,
+      "platform_values_preserved_from_base": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true
+      },
+      "full_cta_preserved_from_base": true,
+      "full_cta_preserved_from_original_head": true,
+      "base_authored_words": 349,
+      "head_authored_words": 1306,
+      "shrink_percentage": -274.21,
+      "head_metadata": {
+        "tax_year": "2026",
+        "last_updated": "2026-11-01",
+        "version": "1.1",
+        "tier": "2"
+      }
+    },
+    {
+      "file": "skills/jordan/jo-payroll-social.md",
+      "base_blob": "30906be4adc4146af5d0d5e6e701dc853a827f1c",
+      "head_blob": "4b4922ace7e5f732fe6df12d54fc828e1483fc66",
+      "formation_byte_identical": null,
+      "platform_values_preserved_from_base": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true
+      },
+      "full_cta_preserved_from_base": true,
+      "full_cta_preserved_from_original_head": true,
+      "base_authored_words": 294,
+      "head_authored_words": 1085,
+      "shrink_percentage": -269.05,
+      "head_metadata": {
+        "tax_year": "2026",
+        "last_updated": "2026-11-01",
+        "version": "1.1",
+        "tier": "2"
+      }
+    },
+    {
+      "file": "skills/jordan/jo-tax-overview.md",
+      "base_blob": "e8ad3db3f02ba1efe09a3668daa6f6809de17ad5",
+      "head_blob": "0de58f514e67d7e75001067375c4e2b995eac6bb",
+      "formation_byte_identical": null,
+      "platform_values_preserved_from_base": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true
+      },
+      "full_cta_preserved_from_base": true,
+      "full_cta_preserved_from_original_head": true,
+      "base_authored_words": 306,
+      "head_authored_words": 615,
+      "shrink_percentage": -100.98,
+      "head_metadata": {
+        "tax_year": "2026",
+        "last_updated": "2026-11-01",
+        "version": "1.1",
+        "tier": "2"
+      }
+    },
+    {
+      "file": "skills/jordan/jordan-gst.md",
+      "base_blob": "830cdb62a9440499892271351790587ed46df1ff",
+      "head_blob": "3a3dca1debd64ae1a3209076a8b2dc038d0efa9c",
+      "formation_byte_identical": null,
+      "platform_values_preserved_from_base": {
+        "review_status": true,
+        "trust_label": true,
+        "license": true
+      },
+      "full_cta_preserved_from_base": true,
+      "full_cta_preserved_from_original_head": true,
+      "base_authored_words": 1465,
+      "head_authored_words": 1439,
+      "shrink_percentage": 1.77,
+      "head_metadata": {
+        "tax_year": "2026",
+        "last_updated": "2026-11-01",
+        "version": "2.2",
+        "tier": "2"
+      }
+    }
+  ]
+}
