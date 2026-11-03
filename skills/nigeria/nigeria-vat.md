@@ -4,7 +4,7 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 version: 2.1
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,22 +16,26 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Nigeria VAT
 
-Tax year 2026. Unofficial-source warning: see Status columns and "Not yet confirmed".
+Tax year 2026. Figures checked on 3 November 2026 against the gazetted Nigeria Tax Act 2025 and Nigeria Tax Administration Act 2025 (National Assembly copies; see Sources).
 
 ## Who this applies to
 
-Taxable persons making taxable supplies in Nigeria from 1 January 2026, and non-residents supplying into Nigeria. All NTA figures below are read from an unofficial copy and stay marked unverified until confirmed in an official document. "NTA" means the Nigeria Tax Act 2025, in force 1 January 2026 (commencement line of the Act).
+Taxable persons making taxable supplies in Nigeria from 1 January 2026, and non-residents supplying into Nigeria. "NTA" means the Nigeria Tax Act 2025 (Act No. 7, Official Gazette No. 117 of 26 June 2025), in force 1 January 2026 (commencement line of the Act). "NTAA" means the Nigeria Tax Administration Act 2025 (Act No. 5, same Gazette).
 
 For the place-of-supply tests see NTA s.145. For 2025 and earlier see the pre-2026 section.
+
+The small business relief is in the NTAA, not the NTA. NTAA s.22(4) takes a small business out of the monthly return, and s.22(5) describes the relief as covering "registration, charging of tax on its taxable supplies and filing of returns", with a right to opt out of it by written notice to the Nigeria Revenue Service (NRS). It does not reach a company in petroleum operations (s.22(9)). In the turnover test, sales of capital assets and sales on selling or closing the business are left out (s.22(7)). A business that stops being a small business files monthly returns from then (s.22(6)). A person under the relief is also outside the NTAA penalties for failure to register and to keep books (ss.100, 102) and outside NTA s.151 on input VAT (NTAA s.22(8)). The NTAA "small business" test excludes professional services; the NTA "small company" test for the 0% company tax rate does not (NTA s.201), so a professional firm can pay 0% company tax and still have to charge VAT.
 
 ## Rates, bands and thresholds
 
 | Item | Rate or amount | Tax year | Law | Status and link |
 |---|---|---|---|---|
-| Standard rate on taxable supplies | 7.5% | 2026 | NTA s.147 | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Zero rate list, including basic food, medical services, tuition, exported goods other than oil and gas, exported services | 0% | 2026 | NTA s.186 | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| VAT withheld, collected or self-accounted: remit by | 14th day of the following month | 2026 | NTA s.154(4) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Input tax claim window | within 5 years after the end of the tax period | 2026 | NTA s.155(4)(b) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
+| Standard rate on taxable supplies | 7.5% | 2026 | NTA s.147 | https://nass.gov.ng/documents/download/11249 |
+| Zero rate list, including basic food, medical services, tuition, exported goods other than oil and gas, exported services | 0% | 2026 | NTA s.186 | https://nass.gov.ng/documents/download/11249 |
+| VAT withheld, collected or self-accounted: remit by | 14th day of the following month | 2026 | NTA s.154(4) | https://nass.gov.ng/documents/download/11249 |
+| Input tax claim window | within 5 years after the end of the tax period | 2026 | NTA s.155(4)(b) | https://nass.gov.ng/documents/download/11249 |
+| Monthly VAT return, filed whether or not there was activity | on or before the 21st day of the following month | 2026 | NTAA s.22(1) | https://nass.gov.ng/documents/download/11250 |
+| Small business relief: no registration, no charging of VAT, no monthly return, unless it opts out of the relief by written notice | "small business": gross turnover NGN 100,000,000 or less a year and total fixed assets not more than NGN 250,000,000; a business providing professional services is never a small business | 2026 | NTAA ss.22(4), (5), 147 ("Small Business") | https://nass.gov.ng/documents/download/11250 |
 
 ## The base
 
@@ -47,11 +51,15 @@ The earlier text's exempt list is not 2026 law: basic food, medical products, ed
 
 ## Deadlines and filing
 
-The VAT remittance date for a taxable person is "the due date for rendering the relevant tax return prescribed by the Nigeria Tax Administration Act" (s.155(1)); we did not open that Act. Withheld or self-accounted VAT is due by the 14th of the next month with a schedule of supplier, Tax ID, invoice and amount (s.154(3), (4)). VAT invoices need the seven items in s.152(1). E-invoicing can be directed on 30 days' notice (s.152(4)); fiscalisation is mandatory as deployed (s.157). The NRS notice of 20 July 2026 told large taxpayers to "ensure full compliance on or before 31 July 2026".
+A taxable person files a VAT return with the NRS on or before the 21st day of the following month, with or without notice and whether or not there was any activity (NTAA s.22(1)). The return shows input tax paid, output tax collected and VAT payable for the month (s.22(3)). The excess of output over input VAT is remitted by the same date, "the due date for rendering the relevant tax return" (NTA s.155(1)(a)). An extension to file is not an extension to pay (NTAA s.22(2)). Where the NRS deploys technology, returns are rendered in real time or as it prescribes (s.22(10)), and every return gives details of where the supplies were consumed (s.22(11)). Withheld or self-accounted VAT is due by the 14th of the next month with a schedule of supplier, Tax ID, invoice and amount (NTA s.154(3), (4)). VAT invoices need the seven items in s.152(1). E-invoicing can be directed on 30 days' notice (s.152(4)); fiscalisation is mandatory as deployed (NTA s.157; NTAA s.23 on the Electronic Fiscal System). The NRS notice of 20 July 2026 told large taxpayers to "ensure full compliance on or before 31 July 2026".
 
 ## Penalties and interest
 
-Set by the Nigeria Tax Administration Act 2025, not read. See "Not yet confirmed".
+| Default | Penalty | Law |
+|---|---|---|
+| A taxable supply not processed through the fiscalisation system | NGN 200,000 plus 100% of the tax due, plus interest at the Central Bank of Nigeria monetary policy rate a year | NTAA s.104 |
+
+Late filing (NTAA s.101), late payment (s.65(1)), failure to collect or withhold (s.105) and failure to remit withheld or self-accounted VAT (s.107) are tabled in [ng-non-resident-cross-border](ng-non-resident-cross-border.md), "Penalties and interest"; failure to register (s.100) is in [ng-formation](ng-formation.md). Note the dates: NTA s.154(4) makes withheld or self-accounted VAT due by the 14th, while the NTAA s.107 penalty is written for amounts not remitted by the 21st. Remit by the 14th.
 
 ## Cross-border points
 
@@ -92,10 +100,11 @@ expected:
 ## Ask the client first
 
 1. Which period? Before 2026 uses the pre-2026 section.
-2. What is supplied, and which s.185 or s.186 line fits?
-3. Is the customer or supplier non-resident?
-4. Any mixed taxable and non-taxable supplies?
-5. Has NRS appointed the client to withhold or directed e-invoicing?
+2. Gross turnover, total fixed assets, and whether the business provides professional services (the NTAA small business test)?
+3. What is supplied, and which s.185 or s.186 line fits?
+4. Is the customer or supplier non-resident?
+5. Any mixed taxable and non-taxable supplies?
+6. Has NRS appointed the client to withhold or directed e-invoicing?
 
 ## Pre-2026 law (years of assessment to 2025)
 
@@ -495,12 +504,13 @@ Balance     : NGN 25,375,000.00
 
 | Source | URL | Read on |
 |---|---|---|
-| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025. UNOFFICIAL COPY hosted by Premium Times, not an official host. Sections read: ss.143 to 157, 185 to 188 | https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf | 2026-11-01 |
+| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025, gazetted text on the National Assembly site. Sections read: ss.143 to 157, 185 to 188, 195, 201 ("small company") | https://nass.gov.ng/documents/download/11249 | 2026-11-03 |
+| Nigeria Tax Administration Act 2025, Act No. 5, Official Gazette No. 117, 26 June 2025, gazetted text on the National Assembly site. Sections read: ss.22, 23, 65, 100 to 107, 147 ("Small Business") | https://nass.gov.ng/documents/download/11250 | 2026-11-03 |
 | NRS notice of 20 July 2026 on e-invoicing (read by an earlier pass; official) | https://www.nrs.gov.ng/ | 2026-11-01 |
 
-NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read: a page shell loaded, then other NRS pages showed a CAPTCHA, so no cross-check was done.
+The 1 November pass read an unofficial press copy of the NTA (Premium Times). Every NTA figure it took is now checked against the gazetted text above and matches; that copy is no longer cited. NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read on 1 November: a page shell loaded, then other NRS pages showed a CAPTCHA, which was not touched.
 
-Not yet confirmed: every NTA figure in this skill. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text in the pre-2026 section. Lost content restored: 0, nothing removed.
+Not yet confirmed: the wording of the NRS notice of 20 July 2026 (quoted from an earlier pass, not re-read); the prescribed VAT return form and the NRS portal for 2026; the spread over the monetary policy rate for late-payment interest (NTAA s.65(1)(b), set by the Minister); what counts as "professional services" for the small business test (the NTAA does not define it); the Eleventh Schedule items whose collection waits for a ministerial order, and whether any order has been made (NTA s.185(2)); and all earlier text in the pre-2026 section, which was not re-read against the repealed VAT Act. Lost content restored: 0, nothing removed.
 
 ## Disclaimer
 

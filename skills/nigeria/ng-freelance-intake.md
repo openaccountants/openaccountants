@@ -1,10 +1,10 @@
 ---
 name: ng-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help preparing a Nigerian tax return AND mentions freelancing, self-employment, software developer, contractor, sole proprietor, BN business, or private limited company in Nigeria. Trigger on phrases like "prepare my Nigerian tax return", "I'm a freelance developer Lagos", "I have an RC", "I'm self-employed Nigeria", "NTA 2025 small company", "FIRS Tax Pro-Max", "TIN Nigeria", "Lagos LIRS self-assessment", "PITA filing", "CIT 0% small company", "VAT Nigeria registration", or any similar phrasing where the user is a Nigeria-resident self-employed individual, sole proprietor (BN), or small/medium private limited company (RC) founder. This is the REQUIRED entry point for the Nigerian freelance/SME workflow; every downstream skill in the stack (ng-cit, ng-personal-income-tax, ng-paye, ng-statutory-deductions, ng-wht, ng-cgt, ng-vat, ng-payroll, ng-formation, ng-return-assembly) depends on this skill running first. Uses ask_user_input_v0-style structured questions. Nigerian residents only (full-year tax residents and foreigners with > 183 days presence). ALWAYS read this skill first when starting a Nigerian freelance/SME tax workflow.
+description: ALWAYS USE THIS SKILL when a user asks for help preparing a Nigerian tax return AND mentions freelancing, self-employment, software developer, contractor, sole proprietor, BN business, or private limited company in Nigeria. Trigger on phrases like "prepare my Nigerian tax return", "I'm a freelance developer Lagos", "I have an RC", "I'm self-employed Nigeria", "NTA 2025 small company", "FIRS Tax Pro-Max", "TIN Nigeria", "Lagos LIRS self-assessment", "PITA filing", "CIT 0% small company", "VAT Nigeria registration", or any similar phrasing where the user is a Nigeria-resident self-employed individual, sole proprietor (BN), or small/medium private limited company (RC) founder. This is the REQUIRED entry point for the Nigerian freelance/SME workflow; every downstream skill in the stack (ng-cit, ng-personal-income-tax, ng-paye, ng-pension-nhf-social-contributions, ng-wht, ng-cgt, ng-vat, ng-payroll, ng-formation, ng-return-assembly) depends on this skill running first. Uses ask_user_input_v0-style structured questions. Nigerian residents only (full-year tax residents and foreigners with > 183 days presence). ALWAYS read this skill first when starting a Nigerian freelance/SME tax workflow.
 version: 1.1
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -13,11 +13,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # NG Freelance Intake
 
-Tax year 2026. Unofficial-source warning: see Status columns and "Not yet confirmed".
+Tax year 2026. Figures checked on 3 November 2026 against the gazetted Nigeria Tax Act 2025 and Nigeria Tax Administration Act 2025 (National Assembly copies; see Sources).
 
 ## Who this applies to
 
-Nigerian-resident self-employed people, business names and small or larger private companies. This is the entry point for the Nigerian workflow. All NTA figures below are read from an unofficial copy and stay marked unverified until confirmed in an official document. "NTA" means the Nigeria Tax Act 2025, in force 1 January 2026 (commencement line of the Act).
+Nigerian-resident self-employed people, business names and small or larger private companies. This is the entry point for the Nigerian workflow. "NTA" means the Nigeria Tax Act 2025 (Act No. 7, Official Gazette No. 117 of 26 June 2025), in force 1 January 2026 (commencement line of the Act). "NTAA" means the Nigeria Tax Administration Act 2025 (Act No. 5, same Gazette).
 
 Period rule: 2026 and later use the NTA; 2025 and earlier use the repealed Acts (s.195).
 
@@ -25,19 +25,14 @@ Period rule: 2026 and later use the NTA; 2025 and earlier use the repealed Acts 
 
 | Item | Rate or amount | Tax year | Law | Status and link |
 |---|---|---|---|---|
-| Small company: gross turnover NGN 100,000,000 or less a year and total fixed assets not over NGN 250,000,000 | 0% company tax, no development levy | 2026 | NTA ss.56(a), 59(1), definition of small company | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Any other company | 30%; falls to 25% only from a date set by presidential order | 2026 | NTA s.56(b) and proviso | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Development levy, companies other than small and non-resident companies | 4% of assessable profits | 2026 | NTA s.59(1) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Minimum effective tax rate: MNE group turnover at least £750 million as printed in the copy read, or company turnover NGN 50,000,000,000 and above | 15% of net income | 2026 | NTA s.57 | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Standard rate on taxable supplies | 7.5% | 2026 | NTA s.147 | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 1, first NGN 800,000 | 0% | 2026 | NTA s.58, Fourth Schedule (a) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 2, next NGN 2,200,000 | 15% | 2026 | Fourth Schedule (b) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 3, next NGN 9,000,000 | 18% | 2026 | Fourth Schedule (c) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 4, next NGN 13,000,000 | 21% | 2026 | Fourth Schedule (d) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 5, next NGN 25,000,000 | 23% | 2026 | Fourth Schedule (e) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 6, above NGN 50,000,000 | 25% | 2026 | Fourth Schedule (f) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
+| Small company: gross turnover NGN 100,000,000 or less a year and total fixed assets not over NGN 250,000,000 | 0% company tax, no development levy | 2026 | NTA ss.56(a), 59(1), definition of small company | https://nass.gov.ng/documents/download/11249 |
+| Any other company | 30%; falls to 25% only from a date set by presidential order | 2026 | NTA s.56(b) and proviso | https://nass.gov.ng/documents/download/11249 |
+| Development levy, companies other than small and non-resident companies | 4% of assessable profits | 2026 | NTA s.59(1) | https://nass.gov.ng/documents/download/11249 |
+| Minimum effective tax rate: constituent entity of an MNE group with aggregate group turnover of at least "£750 million or its equivalent" (as printed in the gazette), or any other company with aggregate turnover of NGN 50,000,000,000 and above | 15% of net income | 2026 | NTA s.57 | https://nass.gov.ng/documents/download/11249 |
+| Standard rate on taxable supplies | 7.5% | 2026 | NTA s.147 | https://nass.gov.ng/documents/download/11249 |
+| Individual bands, 0% to 25% in six steps | the band figures live in [ng-income-tax](ng-income-tax.md) | 2026 | NTA s.58, Fourth Schedule | https://nass.gov.ng/documents/download/11249 |
 
-Regime from 2026: sole trader or business name, personal bands; small company, 0%; every other company, 30% plus 4% levy. There is no medium band in s.56.
+Regime from 2026: sole trader or business name, personal bands; small company, 0%; every other company, 30% plus 4% levy. There is no medium band in s.56, and the small company test has no professional services exclusion (NTA s.201). VAT is separate: the NTAA small business relief, which does exclude professional services, is in [nigeria-vat](nigeria-vat.md).
 
 ## The base
 
@@ -45,15 +40,23 @@ Individuals: [ng-income-tax](ng-income-tax.md). VAT: [nigeria-vat](nigeria-vat.m
 
 ## Deadlines and filing
 
-Filing dates sit in the Nigeria Tax Administration Act 2025, not read. The runbook below is the working order. References to FIRS mean the Nigeria Revenue Service from 2026; confirm the current portal with the client.
+From 2026 filing follows the NTAA. Each date has one home in the pack:
+
+- individual return (NTAA s.13; no calendar date in the gazetted text): [ng-income-tax](ng-income-tax.md);
+- company return (NTAA s.11(5)): [ng-non-resident-cross-border](ng-non-resident-cross-border.md), "Deadlines and filing";
+- VAT return, 21st of the following month (NTAA s.22(1)): [nigeria-vat](nigeria-vat.md);
+- Tax ID registration and change notices (NTAA ss.4, 9, 10): [ng-formation](ng-formation.md);
+- pension, NHF, NSITF and ITF remittances: [ng-pension-nhf-social-contributions](ng-pension-nhf-social-contributions.md).
+
+The runbook below is the working order. References to FIRS mean the Nigeria Revenue Service from 2026 (NTAA s.3(1)); confirm the current portal with the client.
 
 ## Penalties and interest
 
-Set by the Nigeria Tax Administration Act 2025, not read.
+General NTAA penalties (late filing s.101, late payment s.65, failure to deduct s.105, failure to remit s.107) are tabled in [ng-non-resident-cross-border](ng-non-resident-cross-border.md); failure to register and to keep books (ss.100, 102) in [ng-formation](ng-formation.md); the fiscalisation penalty (s.104) in [nigeria-vat](nigeria-vat.md).
 
 ## Cross-border points
 
-Non-residents go to a separate flow. Resident test: see the definition in [ng-income-tax](ng-income-tax.md); it is wider than the old test and one limb is enough.
+Non-residents go to [ng-non-resident-cross-border](ng-non-resident-cross-border.md), which also holds the 2026 residence tests for individuals and companies (NTA s.201). The individual test is wider than the old one and any one limb is enough.
 
 ## Intake workflow
 
@@ -70,13 +73,13 @@ Job: (1) confirm taxpayer is in scope, (2) classify the regime (PIT for sole/BN 
 #### Section 1: Quick reference: regime decision tree at a glance
 
 ```
-Nigerian tax resident? -> NO = REFUSE (route to non-resident flow)
+Nigerian tax resident? -> NO = REFUSE (route to ng-non-resident-cross-border)
        |
 Entity?
   +-- Sole trader / BN (no separate legal entity)
   |       -> Pre-2026: PITA 7-24%. From 2026: NTA Fourth Schedule 0-25%
   |          File with State Internal Revenue Service (LIRS / FCT-IRS / SIRS)
-  |          Regime: ng-personal-income-tax (always); ng-statutory-deductions (NHF/NHIA/Pension if voluntary)
+  |          Regime: ng-personal-income-tax (always); ng-pension-nhf-social-contributions (NHF/Pension if voluntary)
   |
   +-- Private limited company (RC, "Ltd")
           -> Companies Income Tax Act (CITA) until 31 Dec 2025
@@ -93,8 +96,8 @@ Entity?
 
 Parallel routing (independent of regime):
 
-- Pre-2026 only: taxable turnover ≥ N25m trailing-12 → VAT registration mandatory (FA 2019 s.46). From 2026 no threshold figure appears in the NTA text read: ask whether the client makes taxable supplies → route `ng-vat`.
-- Employees on payroll → route `ng-paye` + `ng-statutory-deductions` + `ng-payroll`.
+- Pre-2026 only: taxable turnover ≥ N25m trailing-12 → VAT registration mandatory (FA 2019 s.46). From 2026 the NTA has no registration threshold; the NTAA small business relief (no registration, charging or returns for turnover NGN 100m or less, fixed assets NGN 250m or less, not professional services) decides it → route `nigeria-vat`.
+- Employees on payroll → route `ng-paye` + `ng-pension-nhf-social-contributions` + `ng-payroll`.
 - Pays Nigerian or foreign suppliers / contractors / rent / royalties → route `ng-wht`.
 - Disposed of chargeable assets in the year → route `ng-cgt`.
 - Entity unclear (sole / BN / RC / partnership / incorporated trustee) → route `ng-formation`.
@@ -134,12 +137,11 @@ All thresholds reflect the rules current as at the period being prepared. Many r
 
 ##### 4.1 Residency gate: NTA definitions from 2026; PITA s.2 and CITA s.13 for pre-2026
 
-- **From 2026, individual**: any one limb of the NTA definition of resident individual: domiciled, permanent place available, habitual abode, substantial economic and immediate family ties, 183 days in a 12-month period, or Nigerian diplomat abroad.
-- **From 2026, company**: a Nigerian company, meaning formed in Nigeria or with central or effective place of management or control in Nigeria (NTA definitions).
+- **From 2026, individual and company**: the NTA s.201 definitions ("resident individual", "Nigerian company"), set out in [ng-non-resident-cross-border](ng-non-resident-cross-border.md). For an individual any one of the six limbs is enough.
 
 - **Pre-2026 individual resident test**: (i) domiciled in Nigeria during the year, OR (ii) present ≥ 183 days in any 12-month period, OR (iii) employed by the Nigerian government or a Nigerian-resident employer.  _(PITA s.2)_
 - **Pre-2026 company resident test**: (i) incorporated in Nigeria (Nigerian company), OR (ii) management and control exercised in Nigeria.  _(CITA s.13)_
-- **Non-resident refusal**: Non-residents (without a Nigerian fixed base / significant economic presence under FA 2019 / NTA 2025) → REFUSE and route to a separate non-resident flow.  _(FA 2019; NTA 2025)_
+- **Non-resident refusal**: Non-residents (without a Nigerian fixed base / significant economic presence under FA 2019 / NTA 2025) → REFUSE here and route to [ng-non-resident-cross-border](ng-non-resident-cross-border.md).  _(FA 2019; NTA 2025 s.17)_
 
 ##### 4.2 Entity gate: sole trader / BN vs RC
 
@@ -158,7 +160,7 @@ The "small company" definition has shifted twice. Use the rule in force for the 
 | --- | --- | --- | --- | --- | --- | --- |
 | Pre-FA 2019 | n/a | 30% flat | 30% | 30% | CITA s.40 | unverified, earlier text not re-read |
 | FA 2019 → FY 2025 | Turnover ≤ N25m | 0% | 20% (turnover N25m-N100m) | 30% (> N100m) | FA 2019 s.16 | unverified, earlier text not re-read |
-| NTA 2025 (from 1 Jan 2026) | Turnover ≤ N100m AND fixed assets ≤ N250m | 0% | none | 30% + 4% Development Levy on every company not small and not non-resident | NTA 2025 ss.56, 59 | unverified, earlier text not re-read |
+| NTA 2025 (from 1 Jan 2026) | Turnover ≤ N100m AND fixed assets ≤ N250m | 0% | none | 30% + 4% Development Levy on every company not small and not non-resident | NTA 2025 ss.56, 59, 201 | https://nass.gov.ng/documents/download/11249 |
 
 - **Pre-FA 2019**: n/a  _(CITA s.40)_
 - **FA 2019 → FY 2025**: Turnover ≤ N25m  _(FA 2019 s.16)_
@@ -177,7 +179,7 @@ The "small company" definition has shifted twice. Use the rule in force for the 
 
 ##### 4.5 VAT gate: NTA Chapter Six from 2026; VATA as amended for pre-2026
 
-- **From 2026**: 7.5% (s.147). Basic food, medical, educational and export items are zero rated (s.186), not exempt. No registration threshold figure appears in the NTA text read. The three lines below are pre-2026 only.
+- **From 2026**: 7.5% (s.147). Basic food, medical, educational and export items are zero rated (s.186), not exempt. The NTA has no registration threshold; the NTAA small business relief applies instead (NTAA ss.22(4), (5), 147; see [nigeria-vat](nigeria-vat.md)). The three lines below are pre-2026 only.
 
 - **VAT registration threshold**: N25m taxable turnover in the trailing-12 months. Below threshold = exempt from VAT registration and from VAT charging obligations, but still no input VAT recovery.  _(FA 2019 s.46)_
 - **VAT standard rate**: 7.5% standard. Exports zero-rated. Basic food, medical and educational items exempt.  _(FA 2019; VATA First Schedule)_
@@ -185,14 +187,14 @@ The "small company" definition has shifted twice. Use the rule in force for the 
 
 ##### 4.6 PAYE / employer gate: PITA s.81; Operation of PAYE Regulations 2002
 
-PITA is repealed from 2026 (NTA s.195). The 10th-of-month date below is pre-2026; the 2026 date sits in the Nigeria Tax Administration Act 2025, not read.
+PITA is repealed from 2026 (NTA s.195). The 10th-of-month date below is pre-2026. From 2026, tax deducted and not remitted by the 21st day of the following month attracts the NTAA s.107 penalty, and the employer files an annual return of emoluments by 31 January (NTAA s.14(1)). PAYE has its own skill, ng-payroll, still on 2025.
 
 - **PAYE withholding and remittance**: Any employees → withhold PAYE monthly and remit to the employee's State Internal Revenue Service by the 10th of the following month. Route `ng-paye` + `ng-payroll`.  _(PITA s.81; Operation of PAYE Regulations 2002)_
-- **Statutory deductions**: Pension PRA 2014 8% employee + 10% employer; NHF 2.5%; NHIA where applicable; ITF 1% of payroll for employers with ≥ 5 staff or ≥ N50m turnover; NSITF 1% → route `ng-statutory-deductions`.  _(PRA 2014; NHF Act 1992; NHIA Act 2022; ITF (Amendment) Act 2011; Employee Compensation Act 2010)_
+- **Statutory deductions**: pension, NHF, NSITF and ITF (rates, thresholds and deadlines in their home skill; the earlier ITF threshold of 5 staff or N50m turnover is not confirmed there); NHIA where applicable → route `ng-pension-nhf-social-contributions`.  _(PRA 2014; NHF Act 1992; NHIA Act 2022; ITF (Amendment) Act 2011; Employee Compensation Act 2010)_
 
 ##### 4.7 Withholding-tax gate: CITA s.78-82; PITA s.69-73; WHT Regulations 1997 (as amended)
 
-The rates below are pre-2026. For 2026 the NTA points to the Nigeria Tax Administration Act 2025 for deduction at source, and that Act was not read.
+The rates below are pre-2026. For 2026 deduction at source runs under NTAA s.51, with rates in regulations not read for this update; monthly returns follow NTAA s.28, and deducted tax is remitted by the 21st day of the following month (NTAA s.107(1)).
 
 - **WHT obligation trigger**: WHT obligation arises if the taxpayer (RC always; sole trader where appointed agent) pays the categories listed below.  _(CITA s.78-82; PITA s.69-73; WHT Regulations 1997)_
 - **Contracts / supplies**: 5% (companies) / 5% (individuals)  _(WHT Regulations 1997)_
@@ -241,7 +243,7 @@ Use `ask_user_input_v0`. Batch where independent.
 | Q3 calendar 2025 / FY ending 2025 | pre-NTA stack: CITA + PITA + FA 2019-2023 | unverified, earlier text not re-read |
 | Q3 FY wholly from 1 Jan 2026 | NTA 2025 stack | unverified, earlier text not re-read |
 | Q3 multiple periods or straddle | run each period through the appropriate stack | unverified, earlier text not re-read |
-| Q4 ≤ N25m | pre-NTA: small company (FA 2019) OR below VAT threshold for sole/BN; NTA 2025: small if fixed assets ≤ N250m, no VAT threshold in text read | unverified, earlier text not re-read |
+| Q4 ≤ N25m | pre-NTA: small company (FA 2019) OR below VAT threshold for sole/BN; NTA 2025: small if fixed assets ≤ N250m (NTA s.201); VAT: NTAA small business relief unless professional services (NTAA ss.22(4), 147) | https://nass.gov.ng/documents/download/11250 |
 | Q4 N25m-N100m | pre-NTA: medium (CIT 20%); NTA 2025: small (CIT 0%) if fixed assets ≤ N250m, else 30% + 4% levy: period flag critical | unverified, earlier text not re-read |
 | Q4 above N100m | pre-NTA: large (CIT 30%); NTA 2025: 30% + 4% levy | unverified, earlier text not re-read |
 | Q4 not sure | defer to inference | unverified, earlier text not re-read |
@@ -264,10 +266,10 @@ Use `ask_user_input_v0`. Batch where independent.
 | Q6 registered | route `ng-vat` | unverified, earlier text not re-read |
 | Q6 not registered, pre-2026 period, turnover > N25m | flag **VAT registration overdue**; route `ng-vat`; reviewer to register | unverified, earlier text not re-read |
 | Q6 not sure | defer to inference; default conservatively to "registration required" if the client makes taxable supplies from 2026, or turnover > N25m in a pre-2026 period | unverified, earlier text not re-read |
-| Q7 ≥ 1 employee | route `ng-paye` + `ng-statutory-deductions` + `ng-payroll` | unverified, earlier text not re-read |
-| Q7 ≥ 5 employees | additionally flag ITF (1% of payroll) and NSITF (1%) obligations | unverified, earlier text not re-read |
+| Q7 ≥ 1 employee | route `ng-paye` + `ng-pension-nhf-social-contributions` + `ng-payroll` | unverified, earlier text not re-read |
+| Q7 ≥ 5 employees | additionally flag ITF and NSITF obligations; rates and thresholds in `ng-pension-nhf-social-contributions` (the 5-employee ITF trigger is not confirmed there) | unverified, earlier text not re-read |
 | Q8 no TIN | route to `ng-formation` onboarding fallback (Section 8); cannot file without TIN | unverified, earlier text not re-read |
-| Q9 some / none | route `ng-statutory-deductions` to remediate; flag for reviewer | unverified, earlier text not re-read |
+| Q9 some / none | route `ng-pension-nhf-social-contributions` to remediate; flag for reviewer | unverified, earlier text not re-read |
 
 ##### 5.3 WHT and CGT questions
 
@@ -305,7 +307,7 @@ REGIME: [PIT progressive | CIT 0% small | CIT 30% + 4% Dev Levy | pre-NTA CIT 20
 DOWNSTREAM SKILLS:
   ng-personal-income-tax [if sole/BN/partnership],
   ng-cit [if RC], ng-vat [if registered or taxable supplies],
-  ng-paye [if employees], ng-statutory-deductions [if employees],
+  ng-paye [if employees], ng-pension-nhf-social-contributions [if employees],
   ng-payroll [if employees], ng-wht [if applicable],
   ng-cgt [if disposals], ng-formation [if entity unclear],
   ng-return-assembly [always last].
@@ -380,15 +382,15 @@ The Nigeria Tax Act 2025 commences 1 January 2026 (s.195 repeals the old Acts fr
 | Item | Pre-NTA 2025 (to 31 Dec 2025) | NTA 2025 (from 1 Jan 2026) | Status |
 | --- | --- | --- | --- |
 | Statutes | CITA, PITA, VATA, CGTA, FA 2019 / 2020 / 2021 / 2023 | NTA 2025 (consolidated) | unverified, earlier text not re-read |
-| Small co. threshold | Turnover ≤ N25m (FA 2019) | Turnover ≤ N100m AND fixed assets ≤ N250m | unverified, earlier text not re-read |
+| Small co. threshold | Turnover ≤ N25m (FA 2019) | Turnover ≤ N100m AND fixed assets ≤ N250m, no professional services exclusion (NTA s.201) | NTA column: https://nass.gov.ng/documents/download/11249; pre-NTA column unverified, earlier text not re-read |
 | Small co. CIT | 0% | 0% | unverified, earlier text not re-read |
 | Medium co. band | N25m-N100m | none | unverified, earlier text not re-read |
 | Medium co. CIT | 20% | none, s.56 has no medium band | unverified, earlier text not re-read |
 | Large co. CIT | 30% | 30% | unverified, earlier text not re-read |
-| Development Levy | n/a (Tertiary Education Tax / NITDA / NASENI / police levy as separate items) | 4% levy on every company other than small and non-resident companies (s.59(1)) | unverified, earlier text not re-read |
-| Minimum tax | 0.5% of turnover where applicable | 15% minimum effective rate only for s.57 companies | unverified, earlier text not re-read |
-| WHT rates | WHT Regulations 1997 + FA amendments | Not in the NTA text read; sits in the Nigeria Tax Administration Act 2025, not read | unverified, earlier text not re-read |
-| VAT | VATA + FA 2019 (7.5%) | 7.5% (NTA s.147); food, medical and education items zero rated (s.186) | unverified, earlier text not re-read |
+| Development Levy | n/a (Tertiary Education Tax / NITDA / NASENI / police levy as separate items) | 4% levy on every company other than small and non-resident companies (s.59(1)) | NTA column: https://nass.gov.ng/documents/download/11249; pre-NTA column unverified, earlier text not re-read |
+| Minimum tax | 0.5% of turnover where applicable | 15% minimum effective rate only for s.57 companies | NTA column: https://nass.gov.ng/documents/download/11249; pre-NTA column unverified, earlier text not re-read |
+| WHT rates | WHT Regulations 1997 + FA amendments | Not in the NTA; deduction at source under NTAA s.51, rates in regulations not read | unverified, earlier text not re-read |
+| VAT | VATA + FA 2019 (7.5%) | 7.5% (NTA s.147); food, medical and education items zero rated (s.186) | NTA column: https://nass.gov.ng/documents/download/11249; pre-NTA column unverified, earlier text not re-read |
 | Filing channel (federal) | FIRS Tax Pro-Max | not confirmed; ask the client | unverified, earlier text not re-read |
 | Filing channel (state PIT/PAYE) | State IRS portal | not confirmed; ask the client | unverified, earlier text not re-read |
 
@@ -396,7 +398,7 @@ The Nigeria Tax Act 2025 commences 1 January 2026 (s.195 repeals the old Acts fr
 
 #### Section 8: State-level considerations (LIRS vs other SIRS)
 
-PIT and PAYE are state taxes; PITA governs pre-2026 periods. For 2026 use the NTA term "relevant tax authority"; its definition points to a Thirteenth Schedule that in the copy read covers agriculture, so the state split below is not confirmed for 2026. The state where the taxpayer is resident (PIT) or where the employee resides (PAYE) administers and collects.
+PIT and PAYE are state taxes; PITA governs pre-2026 periods. For 2026 the "relevant tax authority" means the Nigeria Revenue Service or the Internal Revenue Service of a State or the Federal Capital Territory (NTAA s.147). The NTA definition points to the Thirteenth Schedule, which in the gazette covers agricultural exemptions, and to NTAA s.3; the working rule is NTAA s.3(2): the State or FCT authority administers tax for resident individuals, and the NTAA First Schedule fixes the State by the place of residence on 1 January. The state where the taxpayer is resident (PIT) or where the employee resides (PAYE) administers and collects.
 
 **State administering authorities table**
 
@@ -406,7 +408,7 @@ PIT and PAYE are state taxes; PITA governs pre-2026 periods. For 2026 use the NT
 | Federal Capital Territory (Abuja) | FCT Internal Revenue Service (FCT-IRS) | FCT-IRS e-portal | FCT residents file here, not FIRS | unverified, earlier text not re-read |
 | Rivers | Rivers State IRS | RIRS portal |  | unverified, earlier text not re-read |
 | Kano / Kaduna / Oyo / others | State IRS of residence | Varies | Some states still accept paper filings; flag for reviewer | unverified, earlier text not re-read |
-| Cross-border residence | Pre-2026 apportionment rule (PITA s.2(2)) | n/a | Tax residence determined by principal place of residence on 1 January of the year | unverified, earlier text not re-read |
+| Cross-border residence | Pre-2026 apportionment rule (PITA s.2(2)); from 2026 NTAA First Schedule | n/a | State of residence fixed by the place or principal place of residence on 1 January of the year (NTAA First Schedule, paras 1 to 3) | https://nass.gov.ng/documents/download/11250 |
 
 - For sole traders / BN, PIT is filed where the individual is resident, not where the business is registered or operates.
 - For RC employees, PAYE is remitted to each employee's state of residence: a Lagos-based RC with staff in Ogun must remit Ogun PAYE to Ogun SIRS.
@@ -442,7 +444,7 @@ When uncertain, prefer the safer (higher-tax / stricter-compliance) outcome and 
 | Entity unclear (sole vs BN vs RC) | Treat as sole trader for PIT default; flag `ng-formation` | unverified, earlier text not re-read |
 | Residency borderline (~180 days) | Pre-2026: assume non-resident → REFUSE for individual returns. From 2026: test every NTA limb first; any one limb makes the person resident | unverified, earlier text not re-read |
 | WHT-agent status unclear (sole trader not clearly appointed) | Assume WHT obligation exists for any qualifying payment; flag | unverified, earlier text not re-read |
-| Pension / NHF / NHIA compliance unclear | Assume non-compliant → flag remediation; defer to `ng-statutory-deductions` | unverified, earlier text not re-read |
+| Pension / NHF / NHIA compliance unclear | Assume non-compliant → flag remediation; defer to `ng-pension-nhf-social-contributions` | unverified, earlier text not re-read |
 | Pre-2026 only: minimum tax (PIT 1% / CIT 0.5%) borderline | Apply minimum tax; reviewer can release if computed tax exceeds it | unverified, earlier text not re-read |
 | State of residence unclear | Default Lagos (LIRS) only if documents support; otherwise ask: never guess | unverified, earlier text not re-read |
 | Tax Pro-Max access unknown | Assume not active; flag for onboarding | unverified, earlier text not re-read |
@@ -468,8 +470,8 @@ Run all 15 before invoking `ng-return-assembly`. Any failure → fix, do not han
 5. Period turnover recorded in NGN with bucket band.
 6. Regime selected with reason traced to (a) entity, (b) turnover, (c) period.
 7. VAT status set; `registration_overdue_flag` set if a pre-2026 period has turnover > N25m and no registration.
-8. Employee count set; `ng-paye` + `ng-statutory-deductions` + `ng-payroll` in downstream list if > 0.
-9. ITF / NSITF flags set if ≥ 5 employees or ≥ N50m payroll.
+8. Employee count set; `ng-paye` + `ng-pension-nhf-social-contributions` + `ng-payroll` in downstream list if > 0.
+9. ITF / NSITF flags set for any employer; thresholds per `ng-pension-nhf-social-contributions` (the earlier 5-employee or N50m trigger is not confirmed).
 10. WHT exposure checked; `ng-wht` in list if applicable.
 11. CGT disposals checked; `ng-cgt` in list if applicable.
 12. State of residence captured (PIT path) or state of operation (RC path).
@@ -483,11 +485,11 @@ Once gap-filling and self-checks pass, output a short handoff message naming (a)
 
 Example (sole trader, Lagos, FY 2025 pre-NTA, no employees, below VAT threshold):
 
-> Intake complete. Adebayo Okonkwo, sole trader, Lagos resident, TIN active, LIRS eTax onboarded, no CAC (sole, not BN). Period: CY 2025, pre-NTA stack. Turnover N18m. Regime: PIT progressive (PITA Sixth Schedule); CRA = max(N200k, 1% × gross) + 20% × gross; minimum tax 1% if computed PIT lower. Running: ng-personal-income-tax, ng-wht (Q10 yes on services received), ng-return-assembly. Not running: ng-cit (sole trader), ng-vat (below N25m), ng-paye / ng-statutory-deductions / ng-payroll (no employees), ng-cgt (no disposals). Needs CITN-registered tax practitioner sign-off before LIRS eTax submission. Handing off now.
+> Intake complete. Adebayo Okonkwo, sole trader, Lagos resident, TIN active, LIRS eTax onboarded, no CAC (sole, not BN). Period: CY 2025, pre-NTA stack. Turnover N18m. Regime: PIT progressive (PITA Sixth Schedule); CRA = max(N200k, 1% × gross) + 20% × gross; minimum tax 1% if computed PIT lower. Running: ng-personal-income-tax, ng-wht (Q10 yes on services received), ng-return-assembly. Not running: ng-cit (sole trader), ng-vat (below N25m), ng-paye / ng-pension-nhf-social-contributions / ng-payroll (no employees), ng-cgt (no disposals). Needs CITN-registered tax practitioner sign-off before LIRS eTax submission. Handing off now.
 
 Example (RC, FY ending 31 Dec 2026, NTA 2025 stack, 8 employees, above VAT threshold):
 
-> Intake complete. Pomelo Tech Ltd, RC 1234567, registered office Lagos, TIN active, Tax Pro-Max active. Period: FY ending 31 Dec 2026, NTA 2025 stack. Turnover N420m, fixed assets N80m  → not small, 30% plus levy; earlier label medium company. Regime: CIT 20% (NTA 2025). Running: ng-cit, ng-vat (registered), ng-paye + ng-statutory-deductions + ng-payroll (8 employees; ITF applicable as headcount ≥ 5), ng-wht (paying both contractors and rent), ng-return-assembly. Not running: ng-personal-income-tax (separate workflow for owner salary), ng-cgt (no disposals). Needs ICAN-registered Chartered Accountant sign-off and audited financials (CAMA 2020 s.402) before Tax Pro-Max submission. Handing off now.
+> Intake complete. Pomelo Tech Ltd, RC 1234567, registered office Lagos, TIN active, Tax Pro-Max active. Period: FY ending 31 Dec 2026, NTA 2025 stack. Turnover N420m, fixed assets N80m  → not small. Regime: CIT 30% + 4% Development Levy (NTA 2025 ss.56(b), 59). Running: ng-cit, nigeria-vat (registered), ng-paye + ng-pension-nhf-social-contributions + ng-payroll (8 employees; ITF and NSITF per that skill), ng-wht (paying both contractors and rent), ng-return-assembly. Not running: ng-personal-income-tax (separate workflow for owner salary), ng-cgt (no disposals). Needs ICAN-registered Chartered Accountant sign-off and audited financials (CAMA 2020 s.402) before Tax Pro-Max submission. Handing off now.
 
 #### Section 14: Cross-skill references
 
@@ -498,7 +500,8 @@ Downstream skills (via ng-return-assembly):
 - `ng-personal-income-tax`: PIT progressive 7-24%, CRA, 1% minimum tax (PITA Sixth Schedule).
 - `ng-cit`: Companies Income Tax: 0% / 30% + 4% Development Levy from 2026 (NTA ss.56, 59); 0% / 20% / 30% pre-2026 (CITA).
 - `ng-paye`: Operation of PAYE Regulations 2002; monthly remittance to state IRS by the 10th.
-- `ng-statutory-deductions`: Pension (PRA 2014), NHF, NHIA, ITF, NSITF.
+- `ng-pension-nhf-social-contributions`: Pension (PRA 2014), NHF, NSITF, ITF (NHIA out of its scope).
+- `ng-non-resident-cross-border`: residence tests, non-residents, permanent establishment, double tax relief (NTA 2025).
 - `ng-payroll`: payslip generation; gross-to-net; employer cost summary.
 - `ng-wht`: Withholding tax matrix (CITA s.78-82; PITA s.69-73; WHT Regulations 1997; NTA 2025 simplifications).
 - `ng-cgt`: Capital Gains Tax 10% (CGTA; FA 2021 digital assets and N100m share threshold).
@@ -518,11 +521,11 @@ Primary statutes and regulations cited (reviewer to verify the exact version in 
 - Finance Act 2020 / 2021 / 2023: incremental amendments.
 - Nigeria Tax Act 2025 (NTA 2025): consolidated framework commencing 1 January 2026; small company 0% (N100m turnover, N250m fixed assets), any other company 30% (s.56); 4% Development Levy (s.59). Repeals CITA, PITA, VATA and CGTA (s.195).
 - Companies and Allied Matters Act (CAMA) 2020: entity types; audit requirements (s.402); CAC procedures.
-- Pension Reform Act (PRA) 2014: employer 10% + employee 8% pension contributions.
-- National Housing Fund Act 1992: NHF 2.5% employee deduction.
+- Pension Reform Act (PRA) 2014: contributory pension (rates in ng-pension-nhf-social-contributions).
+- National Housing Fund Act 1992: NHF employee deduction (rate in ng-pension-nhf-social-contributions).
 - National Health Insurance Authority Act 2022: NHIA, replacing NHIS Act 1999.
-- Industrial Training Fund (Amendment) Act 2011: ITF 1% of payroll where headcount ≥ 5 or turnover ≥ N50m.
-- Employee Compensation Act 2010: NSITF 1% of payroll.
+- Industrial Training Fund (Amendment) Act 2011: ITF training contribution (rate in ng-pension-nhf-social-contributions; the earlier trigger of 5 staff or N50m turnover is not confirmed).
+- Employee Compensation Act 2010: NSITF (rate in ng-pension-nhf-social-contributions).
 - Operation of PAYE Regulations 2002.
 - Withholding Tax Regulations 1997 (as amended), pre-2026.
 - Transfer Pricing Regulations 2018 (out of scope here).
@@ -552,7 +555,7 @@ expected:
   total: 20400000.00
 ```
 
-Decision, which period stack? A company with turnover NGN 90,000,000: 2025 pre-2026 text puts it at 20%; 2026 at 0% if fixed assets are within the limit. On NGN 10,000,000 profit that is the difference shown. This assumes the company does not provide professional services and that the NGN 100,000,000 limit in the copy read is right; both are unverified, see Not yet confirmed. If it provides professional services, flag it and use 30% plus the 4% levy until settled.
+Decision, which period stack? A company with turnover NGN 90,000,000: 2025 pre-2026 text puts it at 20%; 2026 at 0% if fixed assets are within the limit. On NGN 10,000,000 profit that is the difference shown. The gazetted small company test (NTA s.201) has no professional services exclusion, so a professional services company inside both limits is at 0% too. For VAT the answer differs: the NTAA small business relief excludes professional services (NTAA s.147), see [nigeria-vat](nigeria-vat.md).
 
 ```oa-check
 name: Period flag, turnover NGN 90,000,000
@@ -580,12 +583,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025. UNOFFICIAL COPY hosted by Premium Times, not an official host. Sections read: ss.27, 28, 34, 56 to 59, 147, 186, 195, Fourth Schedule, definitions | https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf | 2026-11-01 |
+| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025, gazetted text on the National Assembly site. Sections read: ss.17, 27, 28, 34, 56 to 59, 147, 186, 195, 198, 201 ("small company", "resident individual", "relevant tax authority"), Fourth and Thirteenth Schedules | https://nass.gov.ng/documents/download/11249 | 2026-11-03 |
+| Nigeria Tax Administration Act 2025, Act No. 5, Official Gazette No. 117, 26 June 2025, gazetted text on the National Assembly site. Sections read: ss.3, 11, 13, 14, 22, 28, 51, 107, 147 ("Small Business", "Relevant tax authority"), First Schedule | https://nass.gov.ng/documents/download/11250 | 2026-11-03 |
 | NRS notice of 20 July 2026 on e-invoicing (read by an earlier pass; official) | https://www.nrs.gov.ng/ | 2026-11-01 |
 
-NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read: a page shell loaded, then other NRS pages showed a CAPTCHA, so no cross-check was done.
+The 1 November pass read an unofficial press copy of the NTA (Premium Times). Every NTA figure it took is now checked against the gazetted text above and matches; that copy is no longer cited. The gazette settles the small company test: NGN 100,000,000 turnover and NGN 250,000,000 fixed assets, no professional services exclusion and no NGN 50,000,000 limit (NTA s.201). NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read on 1 November: a page shell loaded, then other NRS pages showed a CAPTCHA, which was not touched.
 
-Not yet confirmed: the small company definition (NGN 100,000,000 and no professional services exclusion in the copy read; commentary reports NGN 50,000,000 and an exclusion); every NTA figure in this skill, including the s.57 group test, printed as £750 million in the copy read. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text. Also unconfirmed: how a financial year straddling 1 January 2026 is assessed, since the sections read give the commencement date only. Lost content restored: 0, nothing removed.
+Not yet confirmed: whether the "£" in NTA s.57(2)(a) is meant as euro (the gazette prints a pound sign); the deduction-at-source rates for 2026 (regulations under NTAA s.51, not read); the 2026 portals and forms (Tax Pro-Max, State portals); the calendar due date of the individual return (none in NTAA s.13); what counts as "professional services" for the NTAA small business VAT test; how a financial year straddling 1 January 2026 is assessed (the NTA savings section, s.198, gives no rule); and all earlier text marked "earlier text not re-read". Lost content restored: 0, nothing removed.
 
 ## Disclaimer
 

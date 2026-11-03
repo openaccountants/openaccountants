@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Nigerian personal income tax fo
 version: 2.1
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -13,45 +13,53 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # NG Income Tax
 
-Tax year 2026. Unofficial-source warning: see Status columns and "Not yet confirmed".
+Tax year 2026. Figures checked on 3 November 2026 against the gazetted Nigeria Tax Act 2025 and Nigeria Tax Administration Act 2025 (National Assembly copies; see Sources).
 
 ## Who this applies to
 
-Self-employed individuals, sole proprietors and partners in Nigeria for 2026 and later years of assessment. All NTA figures below are read from an unofficial copy and stay marked unverified until confirmed in an official document. "NTA" means the Nigeria Tax Act 2025, in force 1 January 2026 (commencement line of the Act).
+Self-employed individuals, sole proprietors and partners in Nigeria for 2026 and later years of assessment. "NTA" means the Nigeria Tax Act 2025 (Act No. 7, Official Gazette No. 117 of 26 June 2025), in force 1 January 2026 (commencement line of the Act). "NTAA" means the Nigeria Tax Administration Act 2025 (Act No. 5, same Gazette).
 
-A resident individual is one who, in the year, is domiciled in Nigeria, has a permanent place available for domestic use, has a habitual abode, has substantial economic and immediate family ties, stays at least 183 days in a 12-month period, or serves as a Nigerian diplomat abroad (NTA, definition of resident individual). Any one limb is enough. An individual earning the national minimum wage is outside the rate table (NTA s.58). For 2025 and earlier see the pre-2026 section.
+Residence follows the six alternative tests in NTA s.201 ("resident individual"); any one is enough. The tests are set out in [ng-non-resident-cross-border](ng-non-resident-cross-border.md), which is their home in this pack. A resident individual's income tax is administered by the tax authority of the State, or of the Federal Capital Territory, where the individual is resident (NTAA s.3(2)); the NTAA First Schedule fixes which State by the place of residence on 1 January. An individual earning the national minimum wage is outside the rate table (NTA s.58). For 2025 and earlier see the pre-2026 section.
 
 ## Rates, bands and thresholds
 
 | Item | Rate or amount | Tax year | Law | Status and link |
 |---|---|---|---|---|
-| Band 1, first NGN 800,000 | 0% | 2026 | NTA s.58, Fourth Schedule (a) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 2, next NGN 2,200,000 | 15% | 2026 | Fourth Schedule (b) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 3, next NGN 9,000,000 | 18% | 2026 | Fourth Schedule (c) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 4, next NGN 13,000,000 | 21% | 2026 | Fourth Schedule (d) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 5, next NGN 25,000,000 | 23% | 2026 | Fourth Schedule (e) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Band 6, above NGN 50,000,000 | 25% | 2026 | Fourth Schedule (f) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
-| Rent relief, on declared actual rent | 20% of annual rent, maximum NGN 500,000 | 2026 | NTA s.30(2)(a)(vi) | unverified: unofficial copy only, https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf |
+| Band 1, first NGN 800,000 | 0% | 2026 | NTA s.58, Fourth Schedule (a) | https://nass.gov.ng/documents/download/11249 |
+| Band 2, next NGN 2,200,000 | 15% | 2026 | Fourth Schedule (b) | https://nass.gov.ng/documents/download/11249 |
+| Band 3, next NGN 9,000,000 | 18% | 2026 | Fourth Schedule (c) | https://nass.gov.ng/documents/download/11249 |
+| Band 4, next NGN 13,000,000 | 21% | 2026 | Fourth Schedule (d) | https://nass.gov.ng/documents/download/11249 |
+| Band 5, next NGN 25,000,000 | 23% | 2026 | Fourth Schedule (e) | https://nass.gov.ng/documents/download/11249 |
+| Band 6, above NGN 50,000,000 | 25% | 2026 | Fourth Schedule (f) | https://nass.gov.ng/documents/download/11249 |
+| Rent relief, on declared actual rent | 20% of annual rent, maximum NGN 500,000 | 2026 | NTA s.30(2)(a)(vi) | https://nass.gov.ng/documents/download/11249 |
 
 ## The base
 
-Chargeable income is total income under NTA s.28 less eligible deductions (s.30(1)). Total income includes chargeable gains (s.28(2)(a)(v)) and is after capital allowances (s.28(2)(b)(ii)). Eligible deductions (s.30(2)(a)): National Housing Fund, National Health Insurance Scheme and Pension Reform Act contributions, interest on loans for an owner-occupied house, life insurance or deferred annuity premiums paid in the preceding year, and rent relief. A deduction must be claimed in writing (s.31).
+Chargeable income is total income under NTA s.28 less eligible deductions (s.30(1)). Total income is taxable income (trade profits, employment income, investment income, other income and chargeable gains, s.28(2)(a)) less losses, capital allowances under the First Schedule, exempt income and income already taxed by final deduction at source (s.28(2)(b)). Eligible deductions (s.30(2)(a)): the individual's own National Housing Fund, National Health Insurance Scheme and Pension Reform Act contributions, interest on loans for developing an owner-occupied house, life insurance or deferred annuity premiums paid in the year before the year of assessment, and rent relief. The contribution rates themselves are in [ng-pension-nhf-social-contributions](ng-pension-nhf-social-contributions.md). A deduction must be claimed in writing in the form the relevant tax authority prescribes (s.31), and the authority may refuse it without documentary evidence (s.32(1)).
 
-The consolidated relief allowance and the 1% minimum tax of the old Personal Income Tax Act are not in the NTA provisions read for individuals; that Act is repealed (s.195). Do not apply them to 2026.
+Section 30 has no consolidated relief allowance, and the NTA sets no 1% minimum tax for individuals. The Personal Income Tax Act that held both is repealed from 1 January 2026 (s.195(g)). Do not apply them to 2026.
 
-Losses from a trade carry forward against the same trade profits until recouped; digital asset losses only offset digital asset gains (s.28(3)). If records cannot support an assessment, a presumptive regime applies on regulation terms (s.29).
+A trade loss of the year or the preceding year is deducted from the trade or business profits of the next year of assessment, and of later years until fully recouped (s.28(3)(a) and proviso (ii)). A loss on disposal of a chargeable asset also counts (s.28(3)(b)). A loss on digital or virtual assets is deductible only against digital or virtual asset profits or gains (s.28(3) proviso (iv)). If income cannot be ascertained or records do not allow a proper assessment, the person is assessed under a presumptive regime set by ministerial regulation (s.29).
 
 ## Deadlines and filing
 
-Dates and forms sit in the Nigeria Tax Administration Act 2025, which we did not open. Do not state a 2026 date from this skill. Ask which state revenue service the client files with, and check its current notice.
+Every taxable person files a return of income each year of assessment, without notice or demand, with the relevant tax authority (NTAA s.13(1)). For a self-employed resident individual that is the State or FCT revenue service of residence (NTAA s.3(2)). The return holds (NTAA s.13(2)):
+
+1. the completed self-assessment form;
+2. income from every source for the year preceding the year of assessment, computed under the NTA;
+3. the relief and tax computation;
+4. for trade or business income, audited financial statements or a statement of accounts attested by the taxpayer;
+5. evidence of payment of the tax due.
+
+Tax is paid on or before the due date of filing, in one sum or in instalments, the last instalment by that date (NTAA s.49(1)). Tax on an assessment that is not objected to is payable within 30 days of service of the notice (s.49(2)). The gazetted NTAA s.13 sets no calendar date for the individual return; the 31 March date in the pre-2026 section is from the repealed Act. Ask the State revenue service for its 2026 filing date before stating one. A State may issue guidelines for a simplified return for low-income earners or the informal sector (NTAA s.15).
 
 ## Penalties and interest
 
-Set by the Nigeria Tax Administration Act 2025, not read. See "Not yet confirmed".
+The general NTAA penalties for late filing (s.101), late payment (s.65(1)), failure to deduct (s.105) and failure to remit (s.107) are tabled in [ng-non-resident-cross-border](ng-non-resident-cross-border.md), "Penalties and interest". Failure to register and failure to keep books (NTAA ss.100, 102) are in [ng-formation](ng-formation.md). The relevant tax authority may remit penalty or interest for good cause (NTAA s.66).
 
 ## Cross-border points
 
-Foreign employment rules sit in a schedule to the NTA that was not read in full for this update. Refer non-residents and foreign employment cases to a reviewer.
+Non-residents, foreign income and double tax relief are in [ng-non-resident-cross-border](ng-non-resident-cross-border.md). Which State taxes a person holding a foreign or Nigerian employment on 1 January follows the NTAA First Schedule ("Determination of residence").
 
 ## Two worked examples that recompute
 
@@ -664,12 +672,13 @@ SECTION I: REVIEWER FLAGS
 
 | Source | URL | Read on |
 |---|---|---|
-| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025. UNOFFICIAL COPY hosted by Premium Times, not an official host. Sections read: ss.28 to 31, 56 to 59, 195, Fourth Schedule, definitions | https://media.premiumtimesng.com/wp-content/files/2026/01/Final-Approved-Copy-for-Print-NIGERIA-TAX-ACT-2025.pdf | 2026-11-01 |
+| Nigeria Tax Act 2025, Act No. 7, Official Gazette No. 117, 26 June 2025, gazetted text on the National Assembly site. Sections read: ss.28 to 32, 58, 195, 198, 201 ("resident individual"), Fourth Schedule | https://nass.gov.ng/documents/download/11249 | 2026-11-03 |
+| Nigeria Tax Administration Act 2025, Act No. 5, Official Gazette No. 117, 26 June 2025, gazetted text on the National Assembly site. Sections read: ss.3, 13 to 15, 49, 65, 66, 100 to 107, 147, First Schedule | https://nass.gov.ng/documents/download/11250 | 2026-11-03 |
 | NRS notice of 20 July 2026 on e-invoicing (read by an earlier pass; official) | https://www.nrs.gov.ng/ | 2026-11-01 |
 
-NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read: a page shell loaded, then other NRS pages showed a CAPTCHA, so no cross-check was done.
+The 1 November pass read an unofficial press copy of the NTA (Premium Times). Every NTA figure it took is now checked against the gazetted text above and matches; that copy is no longer cited. NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read on 1 November: a page shell loaded, then other NRS pages showed a CAPTCHA, which was not touched.
 
-Not yet confirmed: every NTA figure in this skill. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text in the pre-2026 section. Lost content restored: 0, nothing removed.
+Not yet confirmed: the calendar due date of the 2026 individual return (the gazetted NTAA s.13 gives none; ask the State revenue service); the forms and portals each State uses; the spread over the Central Bank monetary policy rate for late-payment interest (NTAA s.65(1)(b), set by the Minister); capital allowance rates under the NTA First Schedule, not transcribed in this skill; how a year of assessment straddling 1 January 2026 is handled (the NTA savings section, s.198, gives no rule); and all earlier text in the pre-2026 section, which was not re-read against the repealed Acts. Lost content restored: 0, nothing removed.
 
 ## Disclaimer
 
