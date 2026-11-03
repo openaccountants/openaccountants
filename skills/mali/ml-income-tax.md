@@ -134,21 +134,3 @@ expected:
 | DGI, Impôt COM no. 38, August 2025, p. 36; complete reply to letter 1 about article 10 and the erroneous 2024 finance-law tax-expenditure grid | https://www.dgi.gouv.ml/wp-content/uploads/2025/12/IMPOT_COM-38.pdf#page=36 | 2026-11-01; this reply read, not the whole issue |
 
 Not yet confirmed: complete later amendment chain and enacted 2026 Annex U; operative 2026 ITS grid, family/deduction rules and forms; current monthly payroll conversion and final rounding; primary resolution of the article 12-B multiplication wording and complete two-point-relief amendment chain; AMO deductibility for ITS; expatriate/benefit implementing amendments; treaties, foreign-tax relief and other individual income categories. The August 2025 reply confirms a 2024 issue only. No 2025/2026 continuity, current-year approval or accountant attestation is claimed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

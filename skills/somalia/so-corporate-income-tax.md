@@ -123,21 +123,3 @@ expected:
 | [Revenue Directorate direct-tax page](https://revenuedirectorate.gov.so/direct-tax) | Corporate and payroll tables, old rental-law text and form links opened. Mixed summaries do not override the Act or prove current submission instructions. | 2026-11-01 |
 
 Not yet confirmed: effective implementation and later notices/circulars; corporation classification in unusual entity cases; exact live forms, boxes, submission/payment/acknowledgement and registration process; complete depreciation/interest/repair/financial-instrument/loss workflows; sector/exemption/reorganisation rules; sanctions, appeals, source/PE/repatriation/treaty/foreign-credit and CFC computations; current outcomes of the predecessor's progressive scales, entry threshold and effective-rate estimates. Those older unsupported figures are held, not retained as 2026 rules. Independent source review accepts this conditional baseline only; no accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

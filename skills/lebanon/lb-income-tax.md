@@ -72,7 +72,6 @@ expected:
   tax: 46800000
 ```
 
-
 Classification decision: two separately established taxable bases of LBP 900 million produce different results. Employment costs LBP 28.8 million; business costs LBP 46.8 million. The LBP 18 million difference is why the income character must be evidenced. These are annual taxable-base examples, not gross-to-net salary calculations or an election to relabel employment.
 
 ```oa-check
@@ -89,7 +88,6 @@ expected:
   business_tax: 46800000
   difference: 18000000
 ```
-
 
 ## Ask the client first
 
@@ -109,21 +107,3 @@ expected:
 | Budget 40/2026, arts. 16-18, 27-35, 40-43, 51-52 and closing art. 57; relevant clauses and neighbours read, annexes not read | https://www.finance.gov.lb/en-us/Finance/BI/ABDP/Annual%20Budget%20Documents%20and%20Process/Budget%20Law%202026%20Approved%20by%20Parliament.pdf | 2026-11-01 |
 
 Not yet confirmed: PIT-H1: current salary personal allowances, disability relief, part-year allocation and gross-to-net computation. PIT-H2: annual forms/boxes, portal/payment sequence, 2026 extensions and legal-suspension effect. PIT-H3: current late-filing/payment penalties and any available settlement. PIT-H4: pension rate reduction, treaty relief and non-resident collection frequency. These holds are non-operative; historical claims and every replaced item remain in the per-Guide ledger and immutable Git versions.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

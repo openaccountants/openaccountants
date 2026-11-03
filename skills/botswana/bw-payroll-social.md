@@ -113,21 +113,3 @@ expected:
 | BURS Returns page, form names only (page predates the 2026 Acts) | https://www.burs.org.bw/index.php/tax/returns | 2026-11-01 |
 
 Not yet confirmed: Vocational Training Levy of 0.2% of turnover up to BWP 2 billion and 0.05% above (old file, no official page opened; the BURS and HRDC pages read do not show it); ITW8 date of 31 March from the old file (the Act ties certificates to s 138); Retirement Funds Act detail on occupational funds; whether social security law has changed outside tax law.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

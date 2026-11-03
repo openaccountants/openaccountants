@@ -13,8 +13,6 @@ tier: 2
 
 # Portugal: IRS for the self-employed, Category B (tax year 2026) v2.2
 
-> Source-cited draft: not reviewed by an accountant.
-
 This skill computes the annual IRS of a Portuguese resident who earns business or professional income (Category B): freelancers issuing recibos verdes, sole traders and professionals. It covers the simplified regime and organised accounts, client withholding, payments on account and IRS Jovem. The return for 2026 income is the Modelo 3 with Anexo B, filed from 1 April to 30 June 2027.
 
 Sibling skills, which this one links to and does not repeat:
@@ -253,21 +251,3 @@ expected:
 Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); which simplified-regime coefficient applies to code 1519 (an earlier version said 0.75 as AT's position; the AT ruling read covers withholding only); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -263,21 +263,3 @@ expected:
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text up to 80/2026 (Arts. 75, 177, 178, 180, 182a, 182b) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 
 Not yet confirmed: the 2026 average annual salary, and so the 2026 annual tax threshold, deductions and band edge (published in early 2027); the Art. 12b quarterly standard costs that applied in January 2026, before the 1 February 2026 adjustment, and how they apply to the first quarter of 2026; the Government decree that sets the flat-rate base (the skill reads the amount from the client's decision instead); the current NBS reference rate for late payment interest; the form codes of the entrepreneur's tax return and of the capital gains return.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

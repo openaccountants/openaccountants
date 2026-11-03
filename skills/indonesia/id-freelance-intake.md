@@ -235,21 +235,3 @@ Open points, refusals and conservative defaults: [list]
 Related topics in this library: `id-pph-final-umkm` (0.5% final tax), `id-income-tax` (general rates and NPPN), `id-corporate-tax`, `id-withholding`, `id-payroll-pph21`, `indonesia-vat`, `id-einvoice-coretax`, `id-bookkeeping`, `id-formation`, `id-tax-optimization`, `id-return-assembly`.
 
 This skill is information, not tax advice. Rules change; check the current DJP text before filing, and have a qualified Indonesian tax professional (Konsultan Pajak) check the return before it is submitted on Coretax.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

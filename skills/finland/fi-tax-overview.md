@@ -128,21 +128,3 @@ The independent source review, corrections and remaining gaps are recorded in th
 | Vero, tax rates on capital income | https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/ | 2026-10-31 |
 
 Not yet confirmed: the individual and corporate return dates in the table were not re-read here and belong to the linked skills.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

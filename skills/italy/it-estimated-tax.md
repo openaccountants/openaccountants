@@ -402,21 +402,3 @@ Before delivering output, verify:
 **Not yet confirmed:** taxpayer-specific extensions; detailed addizionale computations/local rates; foreign-credit timing and non-resident payment mechanics; regime-transition bases; post-notice/audit-stage voluntary-correction fractions and successor rules for regularisation in 2027; any 2027 interest rate. The bank matching windows are heuristic cues only. No prior executable check was removed: the earlier skill had none; all six prose examples and seven qualitative scenario checks are retained.
 
 > Contributed by OpenAccountants.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

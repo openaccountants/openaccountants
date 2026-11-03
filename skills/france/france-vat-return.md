@@ -373,21 +373,3 @@ expected:
 | impots.gouv.fr: VAT regimes, modified 21 May 2026, still showing 2023-2025 limits (Internet Archive copy of 29 September 2026) | https://www.impots.gouv.fr/professionnel/les-regimes-dimposition-la-tva | 2026-10-24 |
 
 Not yet confirmed: the non-calendar-year transition-period/form reconciliation where the 2023 BOFiP first-day-of-exercise examples differ from the 2025 CIBS D. 162-8, 2° wording (the ordinary calendar-year crossing date and CA3 sequence are now supplied); the unexamined remainder of the 10% and 5.5% rate catalogue after LF 2026, including the delegated technical/performance list for a particular energy-renovation project (the selected food/books/water/municipal-waste, hotel/meal/passenger/TV and dwelling-work statutory conditions above were actually read on 29 October); Corsican rate rules beyond the CA3 lines; the first-year franchise and next-year basic-versus-higher test where the literal CGI art. 293 D, III proration and the retained DGFiP first-year/no-proration guidance diverge: the actual own statute and F21746 following-year text have now been read, but no authoritative reconciliation is supplied. Ordinary restaurant-meal treatment rests on the actually read CGI annexe II art. 205–206 and documented business/invoice facts; specialist meal arrangements are not a blanket entitlement.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

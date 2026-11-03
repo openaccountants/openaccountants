@@ -162,7 +162,6 @@ An applicable repair excess becomes a separately registered tax asset when the w
 
 On disposal, determine tax undepreciated value from entry/capitalised cost less tax depreciation **through the disposal month**. A sale's tax result is proceeds less that value. A donation produces the positive excess of market value over tax undepreciated value, or zero where the latter is higher, subject to the Code's specific controlling exceptions. An exchange uses the received asset's contractual value adjusted for extra cash receivable/payable, less the transferred asset's tax undepreciated value. A capital contribution uses the participation interest's value less the transferred asset's tax undepreciated value. **Forced loss or early scrapping does not automatically deduct the remaining tax value**: where qualifying insurance/co-insurance compensation is taxable under Code art. 18(i), point 36 permits deduction only up to that taxable income. Historical capped-car and transition assets have separate points 33^1, 35^1 and 38–45; keep their original-period schedules instead of resetting their tax basis to book value. [Code arts. 18(i), 21(5), 26^1(17)][code]; [regulation points 31–45][assetreg].
 
-
 ### Actual asset classes and approved tax-register fields
 
 Identify the category, tariff code and complete description together. The following are selected rows of the actual catalogue annex; the published upper number is not a business taxpayer's mandatory maximum because current point 9 uses the financial-accounting life subject to the minimum, with point 13's manufacturer-documentation exception. Apply the separately stated used-asset/unlisted-asset rules where relevant. [Catalogue points 9, 12–15][assetcatalogue]; [actual numeric annex][assetlifetable].
@@ -190,7 +189,6 @@ The actual HG704 annex-1 register has 29 columns and accompanying instructions. 
 The register expressly permits lives in months. Reconcile those units with the main regulation's annual-rate/month-count formula, and preserve the actual percentage convention in the working paper. The older register layout alone does not verify how a filing system implements the accelerated method introduced later. [Annex 1 instructions 9, 12, 19–29 and final note][assetregister]; [main regulation points 13–16^4][assetreg].
 
 For qualifying rented-asset repairs, actual annex 2 has seven columns: serial number and asset in 1–2; period rental expense **excluding VAT** in 3; the applicable Code art. 26^1(11) percentage times column 3 in 4; actual repair costs in 5; current deduction `min(5, 4)` in 6; and the separately recognised tax asset `5 − 6` in 7. First test the contract-duration and special statutory routes above. In an assumed ordinary contract longer than 12 months with MDL 100,000 qualifying rent excluding VAT and MDL 22,000 repairs, the 15% route gives column 4 of MDL 15,000, current deduction MDL 15,000 and a separately depreciable repair asset of MDL 7,000. This is not a 15% deduction of the repair invoice or permission to depreciate the landlord's entire asset. [Code art. 26^1(3), (11)][code]; [HG704 points 24–30][assetreg]; [actual annex 2 columns 1–7][assetrepair].
-
 
 ## Deadlines and filing
 
@@ -465,21 +463,3 @@ MF Order 10/2024, points 1–2: enacted fixed-asset loss/donation row classifica
 
 [ven12fullform]: https://www.legis.md/UserFiles/Image/RO/2024/mo%20506-508%20ro/an_1_153md.doc
 [ven12fullinstructions]: https://www.legis.md/UserFiles/Image/RO/2024/mo%20506-508%20ro/an_2_153md.docx
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -28,13 +28,11 @@ tier: 2
 
 ## Who this applies to
 
-
 Prepare the formation, ownership, accounting-framework and filing calendar for an ordinary P/F or Sp/F. Keep company registration, TAKS registration and each tax obligation separate. P/F and Sp/F owners have the limited liability stated in Companies Act §1; that does not remove management duties or pre-registration liability. Sole traders, partnerships, ÍVF, foundations, regulated entities, foreign branches, reorganisations, licences and insolvency advice require their own rules. [Companies Act §§1–4, 41][company]
 
 **Period first.** Annual Accounts Act 206 of 12 December 2025 takes effect on 1 January 2026 for **financial years beginning on or after that date**. It repeals Order 1355/2007 and preserves implementing rules until replaced or repealed. Accounts for a financial year beginning in 2025 do not become 2026-framework accounts merely because they are filed in 2026. Use the prior Act for that earlier period. The new law's actual title says **206**, although its official URL contains **203**. [2025 Act §203][accounts]; [prior Act][prior]
 
 ## Rates, bands and thresholds
-
 
 | Item | Requirement / amount | Applicable period and official source |
 |---|---|---|
@@ -57,7 +55,6 @@ A threshold comparison is not an audit-election approval. Do not use current Dan
 
 ### Formation and registration
 
-
 1. **Identify founders, name and governance.** One or more founders are permitted; test capacity and the statutory insolvency/guardianship restrictions. Use the correct P/F or Sp/F suffix and check the proposed name against §2. A P/F has a board/executive or supervisory/executive structure, with at least three on its board or supervisory body. An Sp/F can use executive management, subject to the employee-representation exception. Record the selected structure, office holders and authority. [Companies Act §§2, 24, 111][company]
 2. **Execute documents.** All founders sign the formation document, including articles. Record founders, subscription price, subscription/payment deadlines, legal and accounting effective dates and any formation costs borne by the company. Articles state name, objects, capital/shares and rights, management, general-meeting notice and financial year. Add §27's special-benefit, asset-contribution and audit-election provisions where applicable. [Companies Act §§25–29][company]
 3. **Evidence capital.** Apply the table below to subscribed capital, cash actually paid and premium separately. Noncash assets must have economic value; promised work/services and claims against founders/shareholders do not qualify. Obtain an independent valuation report, ordinarily dated no more than four weeks before signature, unless a verified §38 exception and management report apply. [Companies Act §§31–38][company]
@@ -67,7 +64,6 @@ A threshold comparison is not an audit-election approval. Do not use current Dan
 
 ### Ownership and recurring management duties
 
-
 Maintain the shareholder register promptly after formation, with identity, holdings, acquisition/disposal/pledge dates and voting rights. Foreign holders require unambiguous identity evidence. Shareholder/pledgee notification of an ownership or pledge change reaches the company within two weeks. Significant legal owners notify the company within two weeks after crossing a §55 boundary. At formation, register significant owners, or the absence of such owners, with the Registrar at the latest simultaneously with formation; later threshold changes are notified as soon as possible. These records are distinct from beneficial-owner registration. [Companies Act §§50–58][company]
 
 Identify the natural persons who ultimately own or control, directly, indirectly or by other means, under §5(30). **At formation, collect and register the beneficial-owner information and rights no later than simultaneously with company registration under §58b.** This initial deadline is separate from the later-awareness/update rule. Do not automatically reuse the 5% legal-owner threshold or import an unverified fixed beneficial-owner percentage. Obtain the control chain and rights; §58a requires prompt registration after awareness and prompt updates. If all identification possibilities have been exhausted and there is no identifiable beneficial owner, register the prescribed daily management, with the failed-identification evidence. Review beneficial-owner information **at least annually**, presenting the result at the management meeting approving the annual report. Preserve beneficial-owner evidence for five years after that ownership ends, and identification-attempt evidence for five years after the attempts. [Companies Act §§5(30), 58a–58b][company]
@@ -75,7 +71,6 @@ Identify the natural persons who ultimately own or control, directly, indirectly
 If equity is established to be below half subscribed capital, management must hold a general meeting within six months of that finding, explain the position and propose necessary measures. This capital-loss duty is separate from whether cash remains or an annual filing is due. Keep the finding date and action record. [Companies Act §119][company]
 
 ### Accounts and audit
-
 
 For the new-law period, document class under §7 before choosing the report. Class B's ordinary minimum includes management statement (subject to the one-person exception), balance sheet, profit and loss, notes and management report; include any required audit/assurance report. Class C adds equity and cash-flow statements. Use a consistent framework and accounting policies, accrual recognition and the statutory true-and-fair requirement. This checklist does not supply every recognition/disclosure rule. [Annual Accounts Act §§9–16, 25, 80][accounts]
 
@@ -96,7 +91,6 @@ B/C/D ordinarily require an approved auditor's audit. Test each lawful opt-out o
 Example: an ordinary calendar-year B/C company has its **2025** report due to the Registrar on **30 June 2026**, under the prior §138 framework; its company return has the separate **1 July 2026** date. A calendar-year **2026** report is governed by the new Act and ordinarily reaches the Registrar by **30 June 2027**, with the company-return deadline **1 July 2027**. The latter figures illustrate the law for a 2026 period, not a fresh assurance of future amendments. Keep receipt evidence for each submission. New-law §180 supplies time computation and non-working-day adjustments. [Prior §138][prior]; [new §§162, 180, 203][accounts]; [Tax Act §100][tax]
 
 ## Penalties and interest
-
 
 Late Registrar accounts are not cured by submitting the tax return. New-law §177 provides a demand with at least eight working days to comply and a separate four-week point after which the Registrar can seek dissolution or use the applicable removal route. If accounts arrive after the demand's compliance period, §178 permits a charge for **each** relevant manager/branch manager: DKK 500 for the first commenced month, **cumulative** DKK 2,000 for the second, DKK 3,000 for the third, capped at DKK 3,000 each, calculated from the original filing deadline. The amounts are not DKK 500 + DKK 2,000 + DKK 3,000. Section 179 addresses exceptional relief; blaming staff/advisers does not by itself relieve the manager. Prior §§150–151 provide the corresponding earlier-period demand/charge route. [Annual Accounts Act §§177–179][accounts]; [prior Act §§150–151][prior]
 
@@ -208,11 +202,9 @@ expected:
 
 ### General reference notice
 
-
 General reference material only. These working papers have not been professionally attested or reviewed for a client's particular facts. Obtain qualified Faroese review of documents, periods, law, elections and deadlines before acting.
 
 ## Sources
-
 
 | Source | Provisions actually checked | Read on |
 |---|---|---|
@@ -236,21 +228,3 @@ Not yet confirmed: complete current form/fee execution, detailed UBO implementin
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [forms]: https://www.skraseting.fo/fo/feloeg/stovna-felag
 [start]: https://www.taks.fo/en/business/starting-a-business/starting-a-business
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -79,24 +79,6 @@ A sole trader can move the business into an ehf. without taxable income for the 
 - **Changes.** Changes to the articles or other registered details of an ehf. are notified within one month _(Act 138/1994, Article 123)_.
 - **Other registrations.** A company that pays wages registers on the employer register, and one that sells taxable goods or services above ISK 2,000,000 in 12 months registers for VAT. Detail: `iceland-payroll`, `iceland-vat`.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Sources
 
 | Source | URL | Read on |

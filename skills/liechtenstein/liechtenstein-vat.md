@@ -75,23 +75,19 @@ For the ordinary time-value method, reduce the relevant input VAT by **one fifth
 
 For immovables, article 70(1)'s valuation excludes land and distinguishes value-enhancing from maintenance expenditure; major renovations have their own article 71 rule. Self-manufactured assets, property reconstruction/renovation, disputed values, special schemes and successive mixed-use changes still need their actual detailed method. The ordinary movable example below does not decide those cases. [MWSTV articles 69–72][ordinance]
 
-
 ### Further rate and acquisition checks
 
 #### Qualifying reduced goods and accommodation
 
 Assume separately classified domestic supplies: CHF 1,000 net qualifying reduced-rate goods and CHF 200 net qualifying accommodation. Output VAT is CHF 26 at 2.6% and CHF 7.60 at 3.8%, CHF 33.60 in total. A restaurant meal is not included in the reduced goods assumption.
 
-
 #### Acquisition tax with supported partial input entitlement
 
 Assume an article-10 registered recipient, an established domestic article 8(1) service from a qualifying unregistered foreign supplier, no article 45a exclusion, a CHF 1,000 net base and documented 70% input entitlement under the effective method. Assess CHF 81 acquisition tax, with CHF 56.70 deductible and CHF 24.30 remaining. The supplier brand does not establish these gates.
 
-
 #### Invoice food versus restaurant classification
 
 The same CHF 500 net food value gives CHF 13 at 2.6% only on established qualifying goods/takeaway facts, versus CHF 40.50 for a normal-rate restaurant service. The CHF 27.50 difference is a classification control, not an election for the cheaper result.
-
 
 ## Deadlines and filing
 

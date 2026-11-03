@@ -23,7 +23,6 @@ tier: 2
 
 ## Who this applies to
 
-
 Schedule 1 Part 2 charges specified residential-property and property-holding entity share disposal profits as income under section 11. Test this provision separately from [stamp duty](gi-property-stamp-duty.md), rental income and ordinary property-development trading income. Failure to meet this particular provision does not establish exemption from every other charge. [Income Tax Act, section 11 and Schedule 1 Part 2](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 The provision concerns Gibraltar residential property, including leasehold/freehold interests and off-plan rights, excluding defined exempted property. It includes direct and indirect holdings through entities, which can be companies, trusts, foundations or partnerships formed in Gibraltar **or elsewhere**. A property-holding entity is defined by its principal activity in the last basis period: owning, holding or managing Gibraltar real property. An overseas incorporation certificate alone does not take the holding outside these definitions. [Part 2, paragraph 1(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
@@ -31,7 +30,6 @@ The provision concerns Gibraltar residential property, including leasehold/freeh
 ## Rates, bands and thresholds
 
 ### Thresholds and scope
-
 
 | Test | Statutory scope, checked in 2026 | Official source |
 |---|---|---|
@@ -44,7 +42,6 @@ Source: [Schedule 1 Part 2, paragraph 1(2)](https://www.gibraltarlaws.gov.gi/upl
 ## The base
 
 ### The base and exclusions
-
 
 The statutory charge is on **profits arising**, not on the entire selling price. Identify the disposing taxpayer, transaction and relevant basis period first. This Guide does not yet establish deductible acquisition/development/disposal costs, market-value substitution, rebasing, loss treatment or how a share-sale gain should be attributed where the entity holds mixed assets. Do not use cash received less mortgage repayment as a verified taxable-profit computation. [Section 11 and Part 2, paragraph 1(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -62,21 +59,17 @@ Paragraph 1(3) excludes dispositions due to exercise of a mortgage power of sale
 
 ## Deadlines and filing
 
-
 Once chargeable income and the taxpayer are established, use the relevant income-tax return rather than assuming stamp-duty completion settles the income-tax obligation. Section 28 generally requires non-company returns by 30 November following the assessment-year end; section 29 generally gives companies nine months after the month in which the accounting period ends. Payment dates, instalments and exceptions are addressed in the [individual](gi-individual-income-tax.md) and [corporate](gi-corporate-tax.md) Guides. The exact return box and supporting disposal schedule for this charge remain to be verified. [Sections 28–30 and 39](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Penalties and interest
-
 
 The Act's general late-payment surcharges and return penalties require the taxpayer category and actual due dates. Section 64 starts with 10% of unpaid tax on the day after the due date, then imposes the further statutory 20% charge on tax and surcharge remaining unpaid at its 90-day point. Section 65 distinguishes individual and company return penalties. See the linked taxpayer Guide and [appeals Guide](gi-income-tax-assessment-appeals.md); no separate property-disposal penalty or interest rate has been established here. [Sections 64–65](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Cross-border points
 
-
 Foreign entities and indirect holdings are expressly within the ownership definitions. Determine taxpayer residence, ownership and disposal profit before applying any relevant international agreement or foreign-tax relief. This Guide does not establish treaty allocation, foreign credit eligibility or non-resident collection procedure for a particular structure. See the [foreign-tax relief Guide](gi-foreign-tax-relief.md). [Section 11 and Part 2, paragraph 1(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Two worked examples that recompute
-
 
 **1. Part interests meet the current ownership threshold.** Assume a person holds 10% in each of five distinct Gibraltar rental apartments, all confirmed taxable properties, with no disposal exception. Five properties are counted even though the percentages sum to 50%. The current five-property limb is met; this says nothing yet about the amount of profit. If a selling company separately has established chargeable disposal profit of £100,000 and the ordinary 15% corporate rate applies without relief, its illustrative tax is £15,000. The rate is conditional: rule 6 has special cases, and the profit input is assumed already verified. [Part 2, paragraph 1(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [Rates Rules, rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf).
 
@@ -114,7 +107,6 @@ expected:
 
 ## Ask the client first
 
-
 1. Which direct, indirect, off-plan and connected interests were held, and on which dates across the five relevant basis periods?
 2. What evidence establishes any excluded property or statutory disposal exception?
 3. Who sells the asset or shares, what are their residence/entity status and accounting dates, and what is the ownership chain?
@@ -124,12 +116,9 @@ expected:
 
 ### Sources and limits
 
-
 Read on 22 October 2026: [Income Tax Act, March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf), especially Schedule 1 Part 2, printed pages 146–149; [Rates Rules, July 2024 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf). Historical commencement/application, full profit computation, historical aggregation, subsequent exemption orders, reporting fields and cross-border treatment remain incomplete. An automated arithmetic check does not verify those legal conclusions.
 
-
 ### Disclaimer
-
 
 Source-cited draft, not professionally attested. Obtain independent source review and qualified transaction-specific review before filing, paying or treating a disposal as exempt.
 

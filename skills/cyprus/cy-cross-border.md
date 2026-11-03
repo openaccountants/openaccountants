@@ -12,8 +12,6 @@ tier: 2
 
 # Cyprus cross-border tax: residence, non-residents, leaving, withholding (tax year 2026)
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 Cyprus taxes on the calendar year. Residence is tested year by year, and the law has no split-year rule: a person is resident or non-resident for the whole year. All article numbers below are to the Greek consolidated texts on CyLaw, which include the 2025 reform laws (Income Tax Law amendments up to 67(I)/2026). CyLaw is not the official gazette.
 
 This skill links to its siblings instead of repeating them:
@@ -229,21 +227,3 @@ expected:
 | Regulation (EC) 883/2004, consolidated text, arts. 11 to 13 (EUR-Lex) | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-10-23 |
 
 Not yet confirmed: the jurisdictions on the EU Annex I list at each payment date (the Council page refused automated access); the Tax Department's own guidance pages on gov.cy (they refuse automated access and were not read for this skill); whether the second 5% late-payment charge in article 50A(e) also applies to article 24 withholding; any treaty rates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

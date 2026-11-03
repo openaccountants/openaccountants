@@ -170,21 +170,3 @@ expected:
 | Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 6, 82(1)(b3), 101(3)(d), 153, 154 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
 
 Not yet confirmed: the exact date of the 60/55 and 40+ age tests (the Law came into force on publication in August 2018 and its art. 21 on 1 January 2019, art. 39); whether a small business status taxpayer counts as self-employed for the 4% and on what income; whether the state bands add up salary from several employers; whether a self-employed person's 4% is deducted from his or her income tax base; the Pension Fund's lump-sum limit and its rules for computing lost benefit; how pension data now flows from the Revenue Service return (the old version said a separate pension declaration ended on 1 May 2025, citing a private source); retirement age; minimum wage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

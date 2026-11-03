@@ -47,21 +47,3 @@ The ceiling arithmetic is 5,200 × 12 × 13.5% = EC$8,424. Reconcile the assessm
 ## Review controls and limits
 
 Record earnings classification, contribution period, coverage decision and payment evidence. Pensionable-age changes, employment-injury-only rates, voluntary coverage, special classes, overlapping employment and benefits remain outside this Guide. Current source access and independent accountant review are required before release. No comprehensive payroll coverage or attestation is asserted.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

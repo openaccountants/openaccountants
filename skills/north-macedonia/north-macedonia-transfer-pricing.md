@@ -140,4 +140,3 @@ expected:
 [cit-filing]: https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1204
 
 Not yet confirmed: None within the stated scope.
-

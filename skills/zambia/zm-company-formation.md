@@ -29,7 +29,6 @@ Anyone starting a business in Zambia, 2026.
 | PACRA fees | unverified: fees page is a menu with no figures read | 2026 | unverified |
 | Minimum share capital | unverified: old sources K15,000 or K20,000, both blogs | 2026 | unverified |
 
-
 ## The base
 
 Entity types carried from the old file: private company limited by shares, public company, company limited by guarantee, business name or sole proprietor (not a separate person). A private company lodges financial statements with its annual return; a public company lodges more, including directors' and auditors' reports (s. 273 as replaced).
@@ -94,21 +93,3 @@ expected:
 | ZRA step-by-step applications guide; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/09/STEP-BY-STEP-GUIDE-ON-THE-ZRA-DOMESTIC-TAXES-APPLICATIONS.pdf | 2026-11-01 |
 
 Not yet confirmed: shareholder cap of 50; PACRA timeline of 1 to 5 days; PACRA Act No. 4 of 2020 citation; all fees; share capital; company law text beyond the 2025 amendment.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

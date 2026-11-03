@@ -91,21 +91,3 @@ expected:
 | MOF resolutions list, tax resolution titles and 2025 DMTT material read; index scope only | https://www.mof.gov.kw/MOFDesicions/mofDesicions3.aspx | 2026-11-01 |
 
 Not yet confirmed: NON-OPERATIVE HOLDS. The inherited assertions that Kuwait has no VAT/GST, no general consumption or sales tax, no excise, no registration, return, invoice tax, reverse charge, input recovery or penalties, and that foreign VAT is irrecoverable. Current enactment, commencement and implementation dates require affirmative official evidence. Historical GCC VAT Framework Agreement (2017), claimed 5% framework rate, GCC Excise Framework Agreement (2016) and Kuwait signature/domestic-adoption status have not been read at source. Historical customs 5% of CIF on most goods, higher tobacco/product rates and the description of customs as the main indirect tax remain unverified; customs.gov.kw access failure was reported by the prior writer, not treated as a source reading. Old domestic zero-VAT invoice cases and digital-services no-VAT conclusion must not be used as current tax advice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

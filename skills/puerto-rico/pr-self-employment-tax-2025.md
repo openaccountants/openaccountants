@@ -59,21 +59,3 @@ Retain business income and expense records, the Schedule C/F inputs, all wage st
 ## Remaining review
 
 Checked 22 October 2026. Optional methods, church/ministry rules, approved exemptions, international social-security agreements, additional child tax credit, estimated-payment schedules, late-payment relief and local income-tax deductions remain outside this initial scope. No independent accountant review has occurred. Employer payroll, local unemployment/disability and workers' compensation need separate Guides.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

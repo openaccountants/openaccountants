@@ -339,21 +339,3 @@ expected:
 | ELSTER instructions to the 2026 return (page empty when read) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026 | 2026-10-24 |
 
 Not yet confirmed: the 2026 Anlage V form and instructions (the recorded route returned no substantive content; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the retained 2024 handbook (the checked 2025 handbook route remained inaccessible); the BMF letter of 22 February 2023 on a shorter actual useful life; whether a let property can be a first place of activity for travel; AfA in the month of sale; heirs under § 23(1) sentence 3; treaty treatment of foreign rental property; the BMF letter of 21 October 2026 on paid waiver of usufruct (Nießbrauch), not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

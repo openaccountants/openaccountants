@@ -210,21 +210,3 @@ Where facts are unclear, keep these defaults and flag them: unclear allowance, t
 | GRA, Vehicle Income Tax page, page read in full | https://gra.gov.gh/domestic-tax/tax-types/vehicle-income-tax/ | 2026-11-01 |
 
 Not yet confirmed: (1) The full text of Act 1178 was not on an official site opened; only the GRA notice was read, so how a 2026 annual return spreads the old and new bands across the year is not confirmed. A self-employed person should get that answered by GRA before filing. (2) Example 2 uses the new annual table as if it applied to the whole year, for comparison only. (3) Whether relief amounts changed after the GRA page was last edited in 2022. (4) Life insurance premium relief and an additional aged band, both in the old version of this skill, appear on no official page read. (5) The GHS 200 a month child relief in the old version conflicts with the GRA page and was dropped. (6) GRA page gives a 15% rate for individual gains and gift tax; Act 1094 says 25%, and the statute is followed. (7) The instalment amounts for presumptive instalment taxpayers.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

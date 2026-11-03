@@ -35,7 +35,6 @@ Not covered: companies, trusts, crypto businesses, crypto paid as salary (bindin
 | Filing portal | myIR |
 | Filing deadline | IR3 by 7 July after the year ends, unless you have a tax agent or an extension of time (Section 7) |
 | Capital gains tax | **No general capital gains tax.** Whether a crypto gain is taxable depends mainly on the PURPOSE of acquisition |
-| Validated by | Pending. Requires sign-off by a New Zealand Chartered Accountant (CA) or tax advisor |
 | Guide version | 2.0 (2026 refresh) |
 
 ### The Central Rule
@@ -549,21 +548,3 @@ Not yet confirmed: none beyond the points this skill refers out.
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a New Zealand Chartered Accountant (CA), tax advisor, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 > Contributed by OpenAccountants.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

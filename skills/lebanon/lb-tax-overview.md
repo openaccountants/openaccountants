@@ -62,7 +62,6 @@ expected:
   reserve: 40000000
 ```
 
-
 Cash-planning decision: separately established and undisputed tax payments total LBP 50 million. The bank balance is LBP 80 million; a proposed LBP 40 million distribution would leave a LBP 10 million shortfall. Reserve the reviewed liabilities before deciding a distribution. This does not net one tax against another or prove that a distribution is lawful.
 
 ```oa-check
@@ -78,7 +77,6 @@ expected:
   cash_after_reserve: 30000000
   shortfall: 10000000
 ```
-
 
 ## Ask the client first
 
@@ -96,21 +94,3 @@ expected:
 | IDAL Tax System, all substantive tax and online declaration sections read; undated | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
 
 Not yet confirmed: OV-H1: exact directorate name, complete current filing calendar and portal/payment instructions. OV-H2: procedural penalty and relief rules beyond confirmed domain scope. OV-H3: treaty and transfer-pricing computations, foreign-capital income and non-resident rules. Every old overview rate/deadline is mapped to its domain or a named non-operative hold in the ledger. Read the README partial entries; 2026 does not mean complete or professionally signed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

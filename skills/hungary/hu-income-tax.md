@@ -221,21 +221,3 @@ The edge case: from his third year, if business income ever fell below 2% of rev
 | MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
 
 Not yet confirmed: the form number of the 2026 annual szja return (NAV had not published the 2026 form when read); the full list of revenue-reducing items and the small-business investment allowance conditions (read only in NAV sheet 3, not each paragraph of 49/B. § (6)); the 49/C. § adjustments to the dividend base other than investment spending; the treatment of a sole trader who switches regime during the year; local business tax (helyi iparűzési adó), which is not covered here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

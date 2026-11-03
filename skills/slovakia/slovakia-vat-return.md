@@ -12,8 +12,6 @@ tier: 2
 
 # Slovakia VAT return (2026)
 
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
-
 This skill covers the Slovak VAT return for a business registered in Slovakia for 2026: rates, what goes into the return, the control statement, the EC sales list, refunds, penalties and interest. Every figure is taken from Act No. 222/2004 Coll. on VAT (the "VAT Act") in the version in force from 1 January 2026 to 31 December 2026, and from Act No. 563/2009 Coll. (the Tax Procedure Code). It links to the other Slovakia skills and does not repeat them:
 
 - [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md): whether a client must register under § 4, § 7 or § 7a, the EUR 50,000 and EUR 62,500 turnover tests, and what a § 7 or § 7a registrant may not deduct.
@@ -72,7 +70,6 @@ For a positive denominator, let `N` be the VAT-exclusive value of annual supplie
 During the year use the previous year's coefficient. If it cannot be used, estimate a coefficient from the activity's nature **with the tax administrator's consent**. After year end calculate the coefficient from the completed year's actual values, recompute the annual deductible common-input VAT, and settle the difference from deductions already taken in the **last tax period of that year**, increasing or decreasing deduction as appropriate. Apply the same reconciliation for the part of a year during which a business became or ceased to be a payer. Where the accounting period is a financial year, that financial year replaces calendar year for these calculations ([§ 50(3)–(5)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-50)).
 
 For example, suppose the prior coefficient is0.60, the year's eligible common input VAT is23,000, and the year's included supplies are240,000 with deduction rights and120,000 without. A separate50,000 disposal of a used business asset is excluded from both values. `N=240,000`, `D=360,000`, so the final coefficient is0.67 and annual common deduction15,410. If13,800 was deducted using0.60, increase deduction by1,610 in the last period. Separately attributable eligible input VAT is added in full; blocked/exclusively no-credit input is not added. In a separate case, suppose the provisional coefficient was0.67 and15,410 was actually deducted during the year on23,000 common VAT. If that case's supported final coefficient is0.61, the annual deduction is14,030: reduce the provisional15,410 deduction by1,380. These are illustrative exact-cent inputs, not a return-row mapping.
-
 
 **Classify the underlying supply.** Salary payments for dependent employment and ordinary remittances of tax/social contributions, loan principal and profit distributions are not, merely because money moves, consideration for the business's taxable supply. Identify any underlying goods or service before entering output or input tax. A bank charge requires classification of the actual bank service under § 39; do not label every bank fee outside VAT ([§§ 2–3](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-2), [§ 39](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-39)).
 
@@ -248,21 +245,3 @@ expected:
 Not yet confirmed: the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the annual § 50 method where the actual annual included-supplies denominator is zero.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

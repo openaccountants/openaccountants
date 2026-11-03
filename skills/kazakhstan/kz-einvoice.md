@@ -31,7 +31,6 @@ tier: 2
 | Who must issue ЭСФ | VAT-registered taxpayers; participants in goods-traceability; certain regimes — verify current scope |
 | Tax authority | State Revenue Committee (КГД) |
 | Currency | KZT |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Skill version | 1.0 |
 
 ### Conservative defaults

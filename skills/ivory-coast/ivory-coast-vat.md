@@ -161,21 +161,3 @@ Edge cases: capital goods adjustment and Investment Code firms go to a reviewer.
 | CNPS, employer page (paying contributions read; its SMIG and pension ceiling are out of date, the communiqué wins) | https://www.cnps.ci/employeur | 2026-11-01 |
 
 Not yet confirmed: the full consolidated Code général des Impôts and Livre de Procédures fiscales 2026 (DGI lists them in its paid kiosk; the text was not opened), so article numbers come from the DGI documents above; rule that a reverse charge applies at 18% to foreign services (earlier version, Art. 344 not read for it); blocked input VAT list, prorata and the 500,000 gift limit (Art. 359 to 363 cited earlier; note the DGI places rates at Art. 359, so those references need checking); capital goods adjustment periods; quarterly filing for RSI, which the DGI text does not support (RSI files monthly, https://www.dgi.gouv.ci/assets/documents/EBOOK/LE_SYTEME_FISCAL_IVOIRIEN/files/basic-html/page10.html); late filing 25% and 100%, late payment 1% a month; FNE rules and e-impots form boxes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

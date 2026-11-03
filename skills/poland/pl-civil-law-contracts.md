@@ -241,21 +241,3 @@ The advances are prepayments. The contractor's annual return applies the full sc
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
 Not yet confirmed: nothing open. The independent review on 2026-10-23 settled the PIT-4R / PIT-8AR split (MF forms list and PIT Act art. 41 ust. 4), the reclassification start date (8 July 2026, Sejm ELI record) and health on two titles for a board member (Health Act art. 82 ust. 1).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

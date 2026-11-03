@@ -15,7 +15,6 @@ covered_by:
 | Sales tax | Yes (7.25% minimum; varies by district) |
 | Franchise / gross receipts tax | Yes — SMLLC annual tax & LLC fee |
 | Tax authority | [Franchise Tax Board (FTB)](https://www.ftb.ca.gov) / [CA Dept. of Tax and Fee Administration (CDTFA)](https://www.cdtfa.ca.gov) |
-| Quality tier | Q2 — reviewed content |
 
 ## Files in this folder
 

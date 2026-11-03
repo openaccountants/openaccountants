@@ -80,7 +80,6 @@ The scale applies to revenu global: all IR categories combined. Professional inc
 
 ### Transaction patterns
 
-
 Classify bank-statement lines and ledger entries. Keywords appear in **French**,
 **Moroccan Arabic / Darija (transliterated + script)**, and **English**.
 
@@ -137,7 +136,6 @@ Classify bank-statement lines and ledger entries. Keywords appear in **French**,
 
 ### Bank statements
 
-
 Morocco's main retail banks; statement layouts and label conventions:
 
 ### Attijariwafa Bank
@@ -168,7 +166,6 @@ Morocco's main retail banks; statement layouts and label conventions:
 > fees) to **excluded** and ask the user to confirm any business reclassification.
 
 ### Workbook
-
 
 Suggested workbook (one sheet, formulas shown for the reviewer):
 

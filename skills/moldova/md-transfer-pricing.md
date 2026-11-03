@@ -336,14 +336,6 @@ Not yet confirmed: authenticated portal acceptance, legacy country-code/renamed-
 [iupt24actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an9_135md.docx
 [iupt24instructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an10_135md.docx
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This document is general reference information, not advice for a specific transaction. Consult the cited legislation and a Moldovan transfer-pricing specialist before filing or setting prices.
-
 ## Sources
 
 - Moldova Fiscal Code, Title V, Chapter 11², official consolidated text: https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro (read 2026-10-24)

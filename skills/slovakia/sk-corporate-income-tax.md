@@ -365,21 +365,3 @@ expected:
 The current form and matching instructions are verified from the actual Ministry packages above. The [31 December 2026 Income Tax Act text](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html) was compared with the earlier 2026 text: the corporate provisions used here are unchanged. Its §52zzzm directs the specified new §9/§11 rules to 2027 returns; the fact a2026 return is filed in 2027 does not itself move it to those rules. Future ECB rates still require the actual statutory reference date.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

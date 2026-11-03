@@ -17,8 +17,6 @@ tier: 1
 
 ## Close the UK VAT quarter from Xero v1.1
 
-> Source-cited draft: not reviewed by an accountant.
-
 For VAT periods ending in tax year 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): 2026/27 deadline and penalty rules added with sources; duplicated Step 2 removed; boxes 2, 8 and 9 limited to Northern Ireland goods trade with the EU; claims that uk-vat-return is accountant-reviewed removed (it is a source-cited draft); accountant attribution removed; Sources table added. Review fixes (2026-10-23): em dashes removed.
 
 This skill describes a working METHOD. It does not restate tax law: every rate, threshold and box definition is loaded from the [uk-vat-return](https://www.openaccountants.com/skills/uk-vat-return) skill. Outputs are draft working papers, not filings. A UK accountant should review before anything is submitted or paid. The fuller version of this method is `xero-uk-vat-close`.
@@ -152,21 +150,3 @@ expected:
 Xero report exports and manual journal import: check Xero Central for the user's plan and region (not a tax source).
 
 Not yet confirmed: nothing in this method depends on a figure not listed above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

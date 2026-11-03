@@ -302,21 +302,3 @@ expected:
 | [Current Code 264–266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Full assessment, collection and refund-limitation provisions read; clocks, statutory start dates and conditional extensions separated. Historical/Civil Code/Government implementation gaps remain | 2026-10-31 |
 
 Not yet confirmed: full 2026 amendment-by-amendment commencement reconciliation beyond the dated changes above; actual late-registration assessment period and procedural relief; non-exact prorata rounding representation in SFS practice; Government refund application/proof/limits and 2026 refund-programme amendments; Government capital-contribution, destruction, assistance-project/free-zone/processing and other specialist exemption procedures; full 2026 cross-Nistru transitional law/customs and DCFTA origin procedures; current Ministry energy-trader own-use declaration procedure; current nonresident e-services registration/form/payment implementation; foreign-currency VAT conversion date and supporting BNM rule; case-specific late-charge relief/account allocation; current annex 1 TVA12 DOCX/layout and authenticated portal validation/rounding; counterparty-specific status, bank-export conventions and the legal assumptions of legacy transactions. These gaps remain explicit and this VAT draft does not establish comprehensive country coverage or accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

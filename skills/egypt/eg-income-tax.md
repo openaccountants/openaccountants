@@ -119,7 +119,6 @@ Listed share gains tax left unpaid for 16 June 2023 to the law's start date is f
 | دخل خاضع لخصم نهائي | income under final WHT | Exclude from progressive base (already taxed) |
 | رأس مال / قروض واردة | capital injection / loan in | Not income |
 
-
 ### Working paper
 
 **Excel working paper columns**
@@ -134,7 +133,6 @@ Listed share gains tax left unpaid for 16 June 2023 to the law's start date is f
 | F | Document ref (e-invoice no.) | رقم الفاتورة الإلكترونية |
 | G | Deductible? (Y/N) | قابل للخصم؟ |
 | H | Note / disallowance reason | ملاحظات |
-
 
 Keep one row per band so a reviewer can trace the tax. Summary order: receipts, deductible costs, net profit, insurance relief, taxable income, tax from the table, credits, payable.
 
@@ -166,7 +164,6 @@ Egyptian statements (كشف حساب) appear in Arabic, English, or both. Common
 | نقاط البيع | point of sale (POS) |
 
 Reconcile statement receipts to declared revenue; unexplained deposits should be queried, not assumed taxable or non-taxable (apply R-EG-1/R-EG-2 discipline).
-
 
 ## Deadlines and filing
 
@@ -270,21 +267,3 @@ Refuse to help hide receipts, invent costs or under-declare. Do not present outp
 | ETA Services Guide, 2nd edition: registration and section 18 only | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-01 |
 
 Not yet confirmed: any ETA page or executive regulation stating expressly that the personal exemption is salary-only (the answer above rests on the law's structure; Law 7/2024 art. 2 sets start dates for business taxpayers but for the whole law, including art. 8, so it does not extend art. 13). The premium cap for professionals: art. 13 last para. (Law 53/2014) caps salaries at the lower of 15% of net revenue or EGP 10,000; art. 33's own cap in the 2005 text is unclear in OCR and any amendment was not read. Whether Law 101/2012's repeal of art. 7 survived Law 11/2013, which replaced art. 8 again (art. 7 is absent from all later tables). Whether art. 74 is the current article number for the 30-day notice. The box numbers of the individual annual return. The deemed cost percentage where no regular books are kept (art. 35, OCR digit unclear; the old skill said 10%). Depreciation schedules. Treatment of mixed personal and business costs beyond the general rule. Exact ETA forms for the employee annual settlement belong to `eg-payroll`.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

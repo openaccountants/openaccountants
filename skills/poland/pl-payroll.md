@@ -238,21 +238,3 @@ The advances are only prepayments. If the employee has other income or reliefs (
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
 Not yet confirmed: whether the employer's PPK payment is employment revenue of the employee under PIT Act art. 12(1), and in which month it arises (the PIT Act and PPK Act do not say so expressly; only secondary sources were found); the 2027 minimum wage (Dz.U. 2026 poz. 1213) is out of scope for this 2026 skill.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

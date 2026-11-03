@@ -237,21 +237,3 @@ expected:
 Not yet confirmed: the administrative car rules in R 8.1(9) LStR beyond the list-price rounding and part-month rule; the EUR 60 meal limit and staff-event rules in the wage tax guidelines beyond the statute; church tax rates on flat taxes (for § 37b the BMF letter, Rn. 36, points to the state decrees of 28 and 29 December 2006; the rates themselves were not read); whether a collective agreement can set aside the 15% top-up; whether a bAV top-up is owed where pay exceeds the ceilings (depends on the saving actually made); the written reasons of the 23 July 2026 BSG decision (only the hearing report was read); the wage tax treatment of the Unterstützungskasse and direct-promise routes of bAV, which is not covered here.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

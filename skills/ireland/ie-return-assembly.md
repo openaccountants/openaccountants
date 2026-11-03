@@ -12,8 +12,6 @@ tier: 2
 
 # Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.2
 
-Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not reviewed by an accountant.
-
 This skill is the last step for an individual's Irish return for tax year 2026. The tax year is the calendar year. The authority is the Revenue Commissioners. It does not redo the work of the other skills. It takes their results, checks that they fit together, adds them up, and produces a working paper, the amount to pay and the dates. It does not file anything: the taxpayer or their agent files on ROS or myAccount.
 
 The detail lives in these skills. Read them first and link to them; do not copy their rules here.
@@ -214,21 +212,3 @@ expected:
 Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 2027), which Revenue has not announced; whether the Finance (No. 2) Act 2026 is enacted with the 31% CGT rate unchanged; the earlier version's rule that credits above the year's liability are refunded only where they are PAYE or professional services withholding tax backed by the employment detail summary or Form F45 or F50 certificates, which no saved Revenue source or section of the Taxes Consolidation Act 1997 checked here states in those terms.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

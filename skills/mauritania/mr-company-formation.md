@@ -112,21 +112,3 @@ expected:
 | Amendment hold: signed/stamped law 2026-035 identity on physical page 6 and art. 3.1 printed pp. 6–18 read; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
 
 Not yet confirmed: current Commercial Code and every applicable amendment, SA total minimum capital and statutory subscription/payment rules; universal compulsory name-reservation/notarisation/bank-deposit sequence asserted in the old Guide; current full incorporation cost and registry fees; the cited government fee page is dated 2023; APIM/Khidmaty form field numbers, filing confirmation/payment-reference screens and post-incorporation company-law accounts/audit deadlines; actual 2026 tax commencement chain; monthly VAT/payroll and social calendars must follow their own applicable rules.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

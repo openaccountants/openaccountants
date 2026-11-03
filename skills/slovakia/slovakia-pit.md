@@ -14,8 +14,6 @@ tier: 2
 
 # Slovakia: personal income tax for employees and the self-employed (2026) v1.7
 
-Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
-
 This skill covers the annual income tax of an individual for the 2026 calendar year: employees, the self-employed (SZČO, živnostník) and people with rental, capital or other income. It links to the other Slovakia skills and does not repeat them:
 
 - [sk-payroll-social](sk-payroll-social.md): the employer's monthly withholding and social and health contributions.
@@ -324,21 +322,3 @@ expected:
 Historical source credit from the original Guide: [priznanie-digital/priznanie-digital](https://github.com/priznanie-digital/priznanie-digital) (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -167,21 +167,3 @@ Escalate to a Moroccan expert-comptable: unclear roll-out or start date, opting 
 | cnss.ma, failed: no connection from script or browser | https://www.cnss.ma | not read, connection failed 2026-11-01 |
 
 Not yet confirmed: every rate and the ceiling for 2026; SMIG for 2026 (reported at MAD 17.92 an hour by press, decree text not read) and the annual hours; whether Finance Law 2026 or later decrees changed any multiple; decree list per profession and each profession's start date (doctors, pharmacists, dentists, midwives, physiotherapists, nurses, opticians, notaries, adouls, lawyers, bailiffs, accountants, architects, engineers); TNS pensioner rate; TNS portal steps and penalty; auto-entrepreneur 50% and 20% bases, MAD 300 minimum, 1,200 to 14,400 range, T1 to T8 brackets, 3-month AMO waiting period, decree 2.21.477 reference; pension vesting at 3,240 days; decree numbers 2-18-622 and 2-18-623 as the rate source.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

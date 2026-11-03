@@ -50,7 +50,6 @@ The remaining payday calculations and indexed figures below concern 2026–27. [
 | Sole trader SG to self | NO obligation -- voluntary only |
 | First-year compliance | PCG 2026/1: supportive ATO approach through 2026-27 for employers paying each payday and fixing errors quickly |
 | Contributor | Open Accountants |
-| Validated by | Pending |
 | Validation date | Pending |
 
 **Read this whole section before computing or classifying anything.**
@@ -463,24 +462,4 @@ Sole trader asks about SG to self. -> $0. No obligation. Advise voluntary contri
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

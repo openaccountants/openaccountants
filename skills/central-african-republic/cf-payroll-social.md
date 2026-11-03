@@ -100,21 +100,3 @@ expected:
 | DGID official CGI edition marked updated 2023 (cover also says mise à jour 2022) | https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf | 2026-11-01; Read cited articles and neighbouring scope/definitions/exceptions; not all 442 pages. Mixed edition dates and later-law consolidation unresolved. |
 
 Not yet confirmed: Current payroll amendments and period-attribution instructions; all CNSS rates, branches, wage base/ceiling and filing/payment calendar; employer 19%, pension 4%, family 11%, injury 2%, employee 1.6% and XAF 600,000 claims from the old draft; training/apprenticeship tax around 2%; a universal 15th CNSS deadline. Official CNSS page returned 404 in browser and the Labour Ministry PDF failed TLS; neither was read as law.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -143,7 +143,6 @@ For 2025 gains (year of assessment 2026) the single table in [Act IX of 2025](ht
 - **Judicial sale by auction or winding up by the Court (5A(3)(f)).**
 - **The twelve-year election (5A(3)(b))** is closed for new transfers: from 1 January 2015 it needed a promise of sale notified before 17 November 2014 and a transfer before 1 January 2016.
 
-
 ## Article 5 assets: computing the gain ([Income Tax Act art. 5](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
 **What is an article 5 asset.** Gains or profits from a "transfer" (sale, exchange, donation, settlement on trust, redemption or cancellation of fund units, distributions in a winding up, and more; not a transfer causa mortis) of:
@@ -322,21 +321,3 @@ Do not:
 - Return for the year of assessment filed with the gain declared; balance paid.
 - Duty on the deed considered.
 - Every "check" item confirmed with MTCA or referred.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

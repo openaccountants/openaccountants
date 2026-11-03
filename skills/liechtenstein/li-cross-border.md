@@ -72,7 +72,6 @@ Article 23(2)'s mandatory gates differ: domestic agriculture/PE business categor
 
 For ordinary assessment, fully deduct expenses economically connected with the specified domestic(a)–(f) income; allocate other article 16 deductions proportionately to domestic/total income. Apply the rate corresponding to worldwide wealth and income after the applicable deductions, then the appropriate surcharge. For property/PE/wealth-yield categories(a)/(b)/(g), article 23(5)(a) uses the actual property/PE municipality's surcharge. For the **other article 23(5)(b) cases**, Finance Act 2026 article 2 sets **150% of state tax**. This is not a nationwide municipality rate. Reconcile certified withholding and other credits afterwards under the assessment's applicable rules. Actual mixed-category allocation, valuation and compulsory rounding require the current return/assessment workpaper. [SteG articles 23 and 29][law]; [Finance Act 2026 article 2][finance]
 
-
 ### Individual foreign relief
 
 SteG article 22 distinguishes treaty/reciprocity exemption (with the stated progression cross-reference) from credit relief against the domestic state/municipality tax attributable to the relevant wealth/income. It does not grant an unrestricted deduction of every foreign payment. [SteG, article 22][law]
@@ -87,23 +86,19 @@ Exhaust available source-state reductions. Reconcile foreign-taxed income and th
 
 The business credit requires an application within **three years after the end of the year in which the income fell due**, and applies to that income year. Article 18c's nonbusiness route additionally states the earliest application time as after the relevant year ends. The two-year treaty overwithholding refund, the year-end ordinary-assessment election and the 90-day foreign-adjustment reopening are separate routes. No automatic carryforward or refund of excess credit is established here. [SteV articles 18c and 36c][ordinance]; [SteG articles 26 and 124a][law]
 
-
 ### Further checks
 
 #### Assumed eligible nonbusiness foreign-credit ceiling
 
 Assume a resident individual with all article 18a eligibility gates, no excluded/special category, exhausted source relief, CHF 1,600 qualifying foreign tax and a separately established CHF 1,200 domestic limit under article 18b. Credit is CHF 1,200. The CHF 400 excess is not treated as an automatic carryforward or refund.
 
-
 #### Specified nonresident individual board payment
 
 Assume a CHF 10,000 gross payment within article 24(2)(b), no treaty reduction/authority exemption and no other issue. Article 25(3)'s 12% gives CHF 1,200 withheld and CHF 8,800 paid before any separately applicable deductions. An ordinary employment wage does not inherit this rate.
 
-
 #### Corporate asset exit workpaper
 
 Assume article 51 applies to one asset with CHF 100,000 established arm's-length value and CHF 60,000 tax carrying value. The assumed taxable uplift is CHF 40,000; at 12.5%, the isolated tax effect is CHF 5,000 before equity/loss/other interactions. Whether/when it is paid or deferred must be decided separately from the valuation arithmetic.
-
 
 ## Deadlines and filing
 

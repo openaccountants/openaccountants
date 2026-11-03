@@ -16,8 +16,6 @@ tier: 2
 
 ## Portugal: Optimização Fiscal, Skill v1.3 (ano fiscal 2026)
 
-> Source-cited draft: not reviewed by an accountant.
-
 Esta skill reúne as alavancas legais de planeamento fiscal em Portugal para 2026. Não repete os cálculos completos: liga às skills de domínio do mesmo pacote, que mandam quando os números divergem.
 
 - `pt-income-tax`: IRS da Categoria B (coeficientes, regra dos 15%, IRS Jovem, retenções, pagamentos por conta).
@@ -552,21 +550,3 @@ Esta skill e os seus resultados são fornecidos apenas para fins informativos e 
 A versão mais atualizada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

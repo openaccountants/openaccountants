@@ -507,21 +507,3 @@ Step-by-step for an NH-resident sole proprietor or single-member LLC freelancer 
 - **BET rate** — 0.55% percent (tax periods ending on or after December 31, 2023, continuing for tax year 2024 and tax year 2025)  _(RSA 77-E)_
 
 This skill must be loaded alongside `us-tax-workflow-base` v0.2 or later and any federal content skill the engagement requires (`us-sole-prop-bookkeeping`, `us-schedule-c-and-se-computation`, `us-federal-return-assembly`, etc.). NH-specific verification of indexed thresholds and current IRC reference date is required before producing a final client deliverable. Reviewer signoff under Circular 230 (CPA, EA, or attorney) is required for any return that exceeds workflow-base thresholds.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

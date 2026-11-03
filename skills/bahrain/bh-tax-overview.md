@@ -93,21 +93,3 @@ expected:
 | Social Insurance Law, arts. 1 to 4, 17 to 33 and 47 to 49 read | https://www.lloc.gov.bh/FullAr/L2476.docx | 2026-11-01 |
 
 Not yet confirmed: general corporate-tax enactment status; the older EDB blanket zero corporate-tax statement; excise; universal calendar-fiscal-year assumption; historic VAT rate/registration/filing assertions as current 2026 instructions; social employer phase-in and minimum-base implementation. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -201,21 +201,3 @@ expected:
 | Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
 
 Not yet confirmed: how a service bought abroad by the foreign part of an entity for its Norwegian part was treated before 1 July 2026; the conditions in regulations for the § 8-9 deduction and § 10-5 refund; whether a weekend or holiday deadline moves to the next working day for the VAT return; the full lists of exempt and zero-rated supplies (only the sections named are summarised); joint registration, VAT compensation and property adjustment.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

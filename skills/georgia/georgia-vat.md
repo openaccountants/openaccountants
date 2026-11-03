@@ -176,21 +176,3 @@ expected:
 | Tax Code of Georgia, Georgian text, publication 247 (cross-check of arts. 165, 166, 168, 171, 172, 274; art. 274(1) followed where the English differs) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
 
 Not yet confirmed: arts. 170-172 were amended by laws of June and November 2025 that the English translation does not show in full, so the full exemption lists were read only in summary (the items named above appear in both texts); the Minister of Finance rules on non-resident suppliers to consumers (art. 165^2(2)(e)), reverse-charge reporting (art. 161(4)) and tax invoices (art. 180(5)); whether residential lease is taxable (not listed among the exemptions in arts. 170-172 as read); the old version blocked input VAT on cars and fuel for personal use, which art. 178 does not list (deduction then follows the use test in art. 175); Virtual Zone and Free Industrial Zone rules; the rs.ge return boxes; refund procedure under art. 63; excise and wine rules; the exchange rate for supplies invoiced in foreign currency (the old version named the National Bank of Georgia rate; the article was not read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

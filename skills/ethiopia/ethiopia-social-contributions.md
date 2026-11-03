@@ -96,7 +96,6 @@ Not yet confirmed: coverage of foreign nationals, the penalty cap wording, the p
 
 ### Ethiopia Social Security & Payroll Tax Skill v0.1
 
-
 ### Section 1 -- Quick reference
 
 **Read this whole section before computing or classifying anything.**
@@ -115,7 +114,6 @@ Not yet confirmed: coverage of foreign nationals, the penalty cap wording, the p
 | Pension Authority (private sector) | Private Organisation Employees Social Security Agency (the pension fund administration) |
 | Pension Authority (public sector) | Public Servants' Social Security Agency |
 | Currency | Ethiopian Birr (ETB) only |
-| Validated by | Pending, requires sign-off by a licensed Ethiopian tax practitioner |
 | Validation date | Pending |
 
 **Who is covered by the pension scheme**

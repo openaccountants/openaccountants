@@ -113,21 +113,3 @@ expected:
 | ISTD, transfer pricing page, file list read | https://www.istd.gov.jo/AR/List/%D9%85%D9%86%D8%B5%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9 | 2026-11-01 |
 
 Not yet confirmed: amendments after Law No. 38 of 2018 (the Official Gazette was not searched); Aqaba rates; art. 4 read only in part; Regulation No. 40 of 2021 thresholds; the old 10% to 14% industrial rates, which have no basis in art. 11 as read; development/free-zone rates and sales-tax/customs relief under current investment legislation (the inherited art. 11(i) extract states 5% for manufacturing with at least 30% local value added, 10% for other development-zone activities, and ordinary activity rates for sales inside free zones); art. 11(j) inter-company holdings of at least 10% and the 10% tax cap; the old dividend WHT statement for non-residents; national-contribution treatment of non-resident WHT. All income-law computations remain non-operative until the amendment check is closed (hold JO-IT-CURRENT).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

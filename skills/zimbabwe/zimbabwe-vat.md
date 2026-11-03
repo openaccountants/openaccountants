@@ -116,21 +116,3 @@ expected:
 | ZIMRA VAT 7 form, whole form read, older issue with RTGS wording | https://www.zimra.co.zw/downloads/category/9-domestic-taxes | 2026-11-01 |
 
 Not yet confirmed: the exemption list in the VAT regulations (earlier version: financial, medical, education, residential rental, public transport, postal, water, and as zero-rated: maize meal, bread, milk, sugar, cooking oil, salt, fruit and vegetables, farming inputs, medical supplies, fuel, domestic electricity); blocked input under s.16 (earlier version: vehicles under 9 seats, entertainment, club subscriptions, personal use); gifts over USD 25 as deemed supply; late filing USD 30 a day and late payment 10%; criminal penalty for non-fiscalisation; Category D period; USD to ZiG conversion rule; the 3/23 fraction, which predates 15.5%; SI 81 of 2025 text; the current TaRMS field numbers.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

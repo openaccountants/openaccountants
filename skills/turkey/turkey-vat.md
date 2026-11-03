@@ -164,20 +164,3 @@ expected:
 | Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf | 2026-10-31 |
 
 Not yet confirmed: whether any Presidential Decision after Decision 9126 (November 2024) changed lists (I) or (II) (GİB's consolidated table shows none); the rate on domestic flights and city transport (the old version gave 10% and 1% without a source; neither is on the lists as read, which would put them at 20%); the e-invoice (e-Fatura) and e-archive thresholds under VUK Communiqué 509 (the old version said TRY 3 million); the return boxes on KDV 1 (the old version listed boxes 101 to 113 without a source); the full list of buyers and conditions for each partial withholding item, and full withholding (tam tevkifat); the export refund procedure, documents and the role of a YMM report; the input VAT rule for entertainment (the old version gave a 50% block without a source); exemptions for education, health, land and residential first sales; the transitional rules for dwellings with building permits before 1 April 2022 (Decision 5359); the capital goods adjustment; special bases (özel matrah) for used cars and gold; the tourism VAT refund to foreigners; the text of VUK Circulars 149 and 164 behind GİB's 28th and 25th dates (the power to move the dates is VUK mükerrer art. 28).
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

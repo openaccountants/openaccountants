@@ -61,6 +61,7 @@ import subprocess
 import sys
 
 import job_identity
+import label_boilerplate
 import repo_layout
 import skill_checks
 from frontmatter_yaml import FrontmatterError, load_frontmatter
@@ -204,7 +205,7 @@ def check_staleness(fields, today):
 
 
 def body_unchanged_vs_main(rel, text):
-    """True when only the frontmatter changed against origin/main.
+    """True when only the frontmatter or old label text changed against origin/main.
 
     A relabel (who approved a skill) must not fail on content checks the
     content itself predates: those stay warnings until the body is edited.
@@ -216,8 +217,7 @@ def body_unchanged_vs_main(rel, text):
         ).stdout
     except Exception:  # new file, or no git: treat as changed
         return False
-    strip = lambda t: re.sub(r"\A---\n.*?\n---\n", "", t, count=1, flags=re.S)
-    return strip(old) == strip(text)
+    return label_boilerplate.same_content(old, text)
 
 
 def check_approval_resets(rel, text, errors):
@@ -235,8 +235,7 @@ def check_approval_resets(rel, text, errors):
         ).stdout
     except Exception:
         return  # new file: nothing approved yet
-    strip = lambda t: re.sub(r"\A---\n.*?\n---\n", "", t, count=1, flags=re.S)
-    if strip(old) == strip(text):
+    if label_boilerplate.same_content(old, text):
         return
     key = lambda t, k: (re.search(rf"^{k}:[ \t]*\"?([^\"\n]*)", t, re.M) or [None, ""])[1].strip()
     if not real_reviewer(key(old, "reviewed_by")) or not real_reviewer(key(text, "reviewed_by")):

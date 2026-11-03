@@ -109,21 +109,3 @@ expected:
 | Amendment hold: signed/stamped law 2026-035 identity on physical page 6 and art. 3.1 printed pp. 6–18 read; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
 
 Not yet confirmed: complete operative 2026 amendment chain and current forms/portal screens; blanket worldwide/foreign-taxed-income exemption asserted in the old Guide, not established by the provisions read; special art. 114(6) cap-computation interpretation; benefit-in-kind interaction for actual benefits, tax residence treaty tie-breaks and foreign tax relief; property disposal/holding-period relief, local property contributions and full investment-income exclusions.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

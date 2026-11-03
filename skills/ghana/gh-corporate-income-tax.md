@@ -170,21 +170,3 @@ expected:
 | Transfer Pricing Regulations, 2020 (L.I. 2412); regs 11, 12, 13, 16 read | https://gra.gov.gh/wp-content/uploads/2023/12/Transfer-Pricing-Regulations-2020-LI-24121-_231207_142107.pdf | 2026-11-01 |
 
 Not yet confirmed: (1) The GRA CIT page says businesses pay 1% during holidays; Act 1094 sets 5%, and the Act is followed. (2) Text of the GSL amendment Act 1131 and of a 2026 GSL amendment for gold was not opened; the Finance Ministry report confirms the 3% rate and the sunset to 2028, but the current gold rate is not confirmed. The Category A and C rates are from Act 1095 as enacted; the amendment was not read to confirm they are unchanged. Example figures here leave GSL out. (3) Act 896 is the 2015 scan; later amendments other than Act 1094 and the Act 1178 notice were not read, including Acts 1066 and 1071. (4) Financial Sector Recovery Levy status for 2026. (5) DT 101 screen layout on ETAX.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -147,21 +147,3 @@ expected:
 | RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
 
 Not yet confirmed: whether the Order under art 50 bis has been issued (none on the RRA laws page as read 2026-11-01), so the 1.5% digital tax is not treated as live; the list of treaties and their rates, including the Hong Kong agreement the first draft cited, which no saved source shows; incentive rates under the investment law (Law art 69 points to it, not read); the Handbook line that goods sold in Rwanda fall within 15% was not tested; art 60 items 3 (royalties) was missing in our text extract and rests on the old file.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

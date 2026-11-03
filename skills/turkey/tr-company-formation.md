@@ -69,21 +69,3 @@ expected:
 | MERSIS, Merkezi Sicil Kayıt Sistemi (Ministry of Trade) | https://mersis.ticaret.gov.tr/ | 2026-10-31 |
 
 Not yet confirmed: the date from which Decision No. 7887 applied to new companies (the old version said 1 January 2024; the decision's text has no text layer and was not read); how long incorporation takes in practice (the old version said about 1 to 2 weeks; the law sets only the 30-day registration and announcement period); notary fees, the Trade Registry Gazette announcement fee and chamber registration fees for 2026; which fields of activity need Ministry permission to form a joint stock company (art. 333 communiqué not read); the Uniform Chart of Accounts duty (the old version listed it; the Ministry communiqué under VUK art. 175 was not read); whether the Ministry will use its second and last one-year extension, to 31 December 2028; whether any minimum capital or funding rule applies to a branch of a foreign company (the old version said none; no provision was read); the potential tax number and the apostille or consular legalisation of foreign documents (not read in an official source).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -53,7 +53,6 @@ Bank-statement investigation prompts, not tax classifications:
 | ZAIN JORDAN, ORANGE JORDAN, UMNIAH | Inspect the invoice and legal rate | Old 4% telecom classification is on hold |
 | GOOGLE, MICROSOFT, ADOBE, AWS, ZOOM, SLACK, SALESFORCE | Establish supplier and service facts | Supplier residence, any local GST, place/use of service, rate and recovery evidence |
 
-
 Return working paper: separate output, allowed input, adjustments and brought-forward credit. This is a reconciliation aid, not a verified return-box map. The current form fields and submission/payment procedure are on hold.
 
 ## Deadlines and filing
@@ -115,7 +114,6 @@ expected:
   saving: 12.00
 ```
 
-
 ## Ask the client first
 
 - Registered or not, and the period the Director set.
@@ -137,21 +135,3 @@ Hold any unsupported rate or input claim. Confirm the assigned period before pre
 | ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |
 
 Not yet confirmed: registration limits; any amendment after the 2022 ISTD file; the old 8% rate and 4% telecom rate (ISTD lists 10%, 5%, 4% and 2%, no 8%; list contents read on the first page only); old examples such as bread, rice, sugar, milk, medical, education and residential rent, which need the schedules; monthly filing above JOD 1,000,000; national e-invoicing timing; the Arabic invoice rule. Article numbers come from OCR. Non-operative holds also cover: reported JOD 75,000/50,000/30,000 registration limits; international transport, agricultural, government and charitable classifications; Schedule 4 blocked entertainment/hospitality, private vehicles, non-business purchases, exempt-related purchases and gifts/donations; turnover apportionment/ISTD approval; customs CIF/duty valuation and recovery; automatic equal input for imported services; free-zone re-entry; returned-sale credit-note period; return-box mapping. Original examples/test cases using those assumptions remain held. Additional explicit evidence holds: special-tax-first valuation, input treatment of exempt supplies, purchases/imports and pre-registration-stock deduction entitlement, and exact deduction/refund article and subparagraph numbers. The readable returned-sale, bad-debt and departure-refund fragments do not close those holds. Any later amendment/commencement is JO-GST-CURRENT; no 2026 filing or penalty instruction is cleared until it closes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

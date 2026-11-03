@@ -75,21 +75,3 @@ These are manually reasoned research checks, not signed client filings. The mone
 - Recheck the method for later periods. The Commission publishes revised OSS notes expressly effective from January 2027; do not apply those changes early. Any announced handling fee needs its own operative-date and amount check, rather than being added to this October 2026 calculation.
 
 Before launching the sales route, confirm who charges VAT, who files and pays it, who pays customs duty, and what the buyer will be charged at delivery. Give the intermediary the reconciled monthly sales and adjustment records, and retain the return and payment receipts. Check the UK export treatment separately.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

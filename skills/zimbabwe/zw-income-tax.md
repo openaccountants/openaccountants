@@ -74,7 +74,6 @@ These sections come from the earlier version. Where a figure conflicts with the 
 | Social security authority | National Social Security Authority (NSSA) -- https://www.nssa.org.zw |
 | Annual filing deadline | 30 April of the following year (ITF1 and ITF12C) -- ZIMRA Public Notice 20 of 2026 (as cited earlier, notice not opened) |
 | AIDS Levy | 3% of income tax payable (added after tax computed) -- stated on ZIMRA 2025 PAYE tables |
-| Validated by | Pending -- requires sign-off by a registered Zimbabwean tax practitioner |
 | Validation date | Pending |
 | Skill version | 1.0 |
 
@@ -396,7 +395,6 @@ Taxable portion = USD 0.00. Any bonus ABOVE USD 700 is added to taxable earnings
 
 #### 5.6 Self-employed professionals -- on self-assessment and QPDs: see Who this applies to
 
-
 #### 5.7 Provisional tax (QPDs)
 
 **5.7 Provisional tax (QPDs)**  _(ZIMRA Public Notice 17 of 2025)_
@@ -687,8 +685,6 @@ Expected: income tax = (4,000 x 40%) - 335 = 1,600 - 335 = USD 1,265.00; AIDS le
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a registered tax practitioner, CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Deadlines and filing
 
 | Obligation | Return | Payment | Where |
@@ -768,21 +764,3 @@ expected:
 | ZIMRA Self Assessment Return Notes | https://www.zimra.co.zw/domestic-taxes/corporate/self-assessment-return-notes | 2026-11-01 |
 
 Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; USD 700 bonus exemption; USD 900 credits; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

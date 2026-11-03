@@ -159,21 +159,3 @@ Confirm the entity-choice rationale and all open legal questions; reconcile stat
 | [APIP individual business](https://apip.gov.gn/entreprise-individuelle/), [SA](https://apip.gov.gn/societe-anonyme-sa/), [SAS](https://apip.gov.gn/societe-par-actions-simplifiees-sas/), and [branch](https://apip.gov.gn/succursale/), each full features/documents/limits page. | 2026-11-01 |
 
 Not yet confirmed: Guinea's underlying SARL capital/formality derogation and SA minimum-capital mechanism; exact applicability/meaning of the APIP “DEPOT” route and separate registrations; sliding capital duties, notary/bank fees and complete costs; detailed SA governance, capital-in-kind valuation and audit appointment; sector/foreigner permissions, beneficial ownership and tax regime registration; current detailed financial reporting standards; current income/VAT/payroll-tax deadlines, authenticated submission screens, registry correction and statutory sanctions. Formation and reporting coverage remain partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

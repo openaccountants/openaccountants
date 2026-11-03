@@ -222,7 +222,6 @@ Before completing the boxes, open the relevant VAT201 return in EmaraTax and che
 - Business-to-consumer transactions are outside the system until the Minister decides otherwise; a business that only sells to consumers is not yet subject to it.
 - Penalties (Cabinet Decision No. 106 of 2025, in force from 15 October 2025; not applied to voluntary users): failure to implement, including failure to appoint a provider on time, AED 5,000 for each month or part of a month of delay; failure to issue and transmit an electronic invoice AED 100 per invoice, up to AED 5,000 per calendar month for that violation; separately, failure to issue and transmit an electronic credit note AED 100 per credit note, up to AED 5,000 per calendar month for that distinct violation (annex items 2 and 3, not one combined cap); failure to notify a system failure AED 1,000 per day; failure to notify the accredited service provider of changes to the data registered with the FTA AED 1,000 per day.
 
-
 ## Boundary and exception table
 
 | Question | Answer | Boundary |
@@ -409,21 +408,3 @@ expected:
 | A17: whole original Arabic Decision arts 1-3, all six cases | https://tax.gov.ae//Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing-Arabic.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
 
 Not yet confirmed: NON-OPERATIVE HOLDS: the Minister's decision setting the cash-payment input-tax limit; penalty transition for violations beginning before 14 April 2026; historical employee-benefit exception wording before 1 October 2026; signed-in current EmaraTax/payment screens; detailed zero-rate classifications outside ordinary service exports, GCC implementing-state supplies, Designated Zone goods, capital-asset adjustments and partial-exemption methods. Do not execute these held methods from this Guide. Original detail and rule destinations are preserved in evidence/uae-2026-closeout.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

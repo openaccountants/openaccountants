@@ -233,21 +233,3 @@ expected:
 Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Kamer on 29 September 2026, not yet enacted on 24 October 2026) raises the car rate in Wet IB art. 6.17(6) and 6.36(2) from EUR 0.23 to EUR 0.25 with effect back to 1 January 2026 (art. I parts H and I, art. LXIII(1)(a)), and repeals the specific care-cost deduction (afdeling 6.5) from 1 January 2028 (art. II part G). The "repeal without commencement date" notes on wetten.overheid.nl for art. 6.17 to 6.20 refer to this bill. Recheck the car rates once the Staatsblad text is published.
 
 Not yet confirmed: (0) the older version said a lump-sum buy-out of ground lease and building insurance are not own-home costs, and that a diet not on the diet list gives no deduction; the Belastingdienst chapters read on 27 October 2026 did not state these in words, so they are left out of the rules; (1) whether the Uitvoeringsregeling IB 2001 art. 40 weekend-cost km rate will also be raised to EUR 0.25 for 2026 (the Belastingdienst already says so; the regulation in force says EUR 0.23); (2) a STAP-budget or other non-tax successor to the study-cost deduction: no official page read, so not stated; (3) the belastingrente rate for income tax: left to nl-income-tax.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

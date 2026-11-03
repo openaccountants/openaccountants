@@ -265,21 +265,3 @@ expected:
 | INPS, "Certificato di distacco del lavoratore in paesi Ue" | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html | 2026-10-23 |
 
 Not yet confirmed: no INPS publication for 2026 prints the full rate set for industry and commerce, so the totals are built from the 2022 and 2024 INPS circulars, the INPS 2010 rate tables (CUAF 0.68% for industry and commerce, sickness 2.44% for commerce impiegati) and the statutes; L. 199/2025 was not read line by line for changes to these smaller contributions. The 0.50% of L. 297/1982 is an increase in the employer's FPLD pension rate (art. 3, and INPS Circolare 55/2026 para. 5 calls it the employer's "contributo aggiuntivo IVS"), so it sits inside the 23.81%; no INPS table prints that split. The INAIL rate a given firm pays (its tasso applicato after oscillation and prevention cuts) and any general INAIL premium cut for 2026 were not read; the examples use the voce 0722 tasso medio. The 2026/2027 INAIL autoliquidazione dates, the decree text of D.L. 62/2026 and Circolare 57/2026 on the Bonus donne (read only from the INPS news item; Circolari 55 and 56/2026 were read) and the 2026 rules for foreign employers registering with INPS were not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

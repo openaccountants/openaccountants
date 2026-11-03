@@ -51,21 +51,3 @@ For last assessed tax of EC$24,000, the three equal instalments are EC$8,000 eac
 Section 39(4) separately addresses withholding on remitted Montserrat business profits of non-resident companies, in addition to income tax, with a provision for amounts shown not to have been remitted. Do not assume payment of the 30% company tax settles that obligation. [Section 39(4)](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf).
 
 Residence, special regimes, related-party payments, capital deductions, losses, group structures and international relief need separate Guides and verification. A post-consolidation amendment audit and independent accountant review remain outstanding; this is not comprehensive corporate coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -110,21 +110,3 @@ expected:
 | Loi 190/AN/17/7eme L amending the CGI: articles 1 to 5 read | https://www.journalofficiel.dj/texte-juridique/loi-n190-an-17-7eme-l-portant-modification-du-code-general-des-impots/ | 2026-11-01 |
 
 Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. A reverse charge on imported services was in the old skill; no such rule was found, and art. 181 points to a representative instead. The email address in LF 2015 art. 29 and any current e-filing portal were not confirmed. LF 2022 art. 19 says art. 187 is "rewritten" but gives one paragraph: read here as replacing paragraph f only, since later laws keep charging 10%.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

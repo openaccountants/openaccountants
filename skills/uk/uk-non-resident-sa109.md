@@ -304,21 +304,3 @@ If Ben had UK income, his taxable UK income would use up the basic rate band fir
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-23 |
 
 Not yet confirmed: the 2026/27 SA109 notes and HS300 working sheet (only the 2025/26 editions, published in 2026, were available); the legislation.gov.uk text of SI 1995/2902 is shown in its original form, so later amendments to the regulation wording were not checked (the current HMRC guidance was used for the 20% rate and the GBP 100 a week test).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

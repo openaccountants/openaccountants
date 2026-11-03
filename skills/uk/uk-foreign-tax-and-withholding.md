@@ -328,21 +328,3 @@ expected:
 | Synthesised MLI texts (Ireland, France, Netherlands, Spain, India, China, Japan), example: UK-India | https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force | 2026-10-23 |
 
 Not yet confirmed: whether SI 2006/2867 itself has been amended so that UK-REITs deduct at 22% from 6 April 2027 (ITA s.974 now permits it; the regulations were not read); the 2026/27 (SA106 2027) form and box numbers, not yet published; whether a given loan carries "yearly" interest, which the Act does not define.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

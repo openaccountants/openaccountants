@@ -18,8 +18,6 @@ tier: 2
 
 ## Rates and thresholds
 
-> Source-cited draft: not reviewed by an accountant.
-
 Todos os valores foram lidos no Diário da República (texto consolidado ou original) ou no Portal das Finanças em 30 de outubro de 2026. As fontes estão na secção final. Para as taxas de IRC usadas nos impostos diferidos, a skill `pt-corporate-tax` manda se houver divergência.
 
 ### Demonstrações Financeiras
@@ -351,21 +349,3 @@ Not yet confirmed: the registration fee for the accounts filing (the old version
 Esta skill e os respetivos resultados são disponibilizados apenas para fins informativos e de cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de serem submetidos ou utilizados como base de decisão.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

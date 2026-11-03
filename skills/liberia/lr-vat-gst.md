@@ -114,21 +114,3 @@ expected:
 | VAT amendment, cover and amended 1003/1066(a), substantive pages 1–2 | https://www.lra.gov.lr/wp-content/uploads/2025/02/ANACTT1.pdf | 2026-11-01; read in part, specific scope in first column |
 
 Not yet confirmed: Full 2024 VATAct including 1066(b); binding legal deferral/reconciliation with announced 1 January 2027 rollout; current registration threshold and VAT input credits/reverse charge; telecom treatment across the full transition; operative invoices/returns/boxes and all later amendments.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

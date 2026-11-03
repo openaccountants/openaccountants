@@ -278,25 +278,6 @@ expected:
 
 **31 December boundary.** The later [Income Tax Act text from 31 December 2026](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html) was also read. §§1, 2, 12, 13, 15, 16, 17f, 17g, 43, 43a, 44, 45 and 49 are unchanged between these two texts. §11(4) changes, but §52zzzm applies that change, together with the specified §9 changes, first to returns for 2027. Do not apply those new allowance rules to a 2026 return merely because it is filed in 2027.
 
-
 Not yet confirmed: treaty withholding rates for individual states and the operation of the particular Russian treaty article on the payment date, including any suspension and its Slovak effect. A country-specific treaty reduction is not asserted without that evidence.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

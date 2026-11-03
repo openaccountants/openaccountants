@@ -52,21 +52,3 @@ Category losses offset only income of the same category under article 126(2). Ke
 ## Scope still to complete
 
 Residence, source rules, treaties, category-specific profit calculations, capital gains and the full effect of ministerial implementation decisions are outside this initial Guide. Gather the period, income-category schedules, withholding receipts and deduction documents before preparing a return. The enacted bands have been visually checked against page 45; this is not an accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

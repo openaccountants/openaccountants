@@ -26,21 +26,3 @@ tier: 2
 - **Annual compliance — tax filings** — Annual profit tax return, monthly VAT returns (if VAT-registered), and monthly payroll/Social Fund reporting  _(Tax Code of the Kyrgyz Republic)_
 
 The most common business vehicle in Kyrgyzstan is the Limited Liability Company (OsOO), which has no meaningful minimum capital requirement and can be formed by one or more shareholders. Registration is handled by the Ministry of Justice and is relatively fast.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

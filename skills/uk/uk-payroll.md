@@ -252,21 +252,3 @@ expected:
 | gov.uk, workplace pension contributions | https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay | 2026-10-24 |
 
 Not yet confirmed: the exact PAYE period in which Class 1A on a termination award is paid (GOV.UK says only "through PAYE"); the final regulations and HMRC guidance for mandatory payrolling of benefits from 6 April 2027 (due at Budget 2026), including any penalty easement; minimum wage underpayment penalty figures; how the £15,000 Apprenticeship Levy allowance is shared in a connected group; the legislation text of the 2026/27 student loan thresholds (HMRC rates page used).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

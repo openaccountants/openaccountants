@@ -185,21 +185,3 @@ expected:
 | Skatteverket: Undanröjande av dubbelbeskattning (MAP, Arbitration Convention, Lag 2019:601) | https://www.skatteverket.se/foretagochorganisationer/skatter/internationellt/dubbelbeskattning/undanrojandeavdubbelbeskattning.106.233f91f71260075abe8800018011.html | 2026-10-23 |
 
 Not yet confirmed: how many days Skatteverket gives to hand over documentation on request in practice (the law sets no period); which treaties lack a three-year MAP deadline; the Swedish statute implementing the EU Arbitration Convention (90/436/EEC) was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

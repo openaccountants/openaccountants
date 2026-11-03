@@ -12,8 +12,6 @@ tier: 2
 
 # Greece: personal income tax, tax year 2026
 
-Source-cited draft. Built by Michael Cutajar and the OpenAccountants team.
-
 This skill covers Greek income tax for individuals for tax year 2026: employees, pensioners, the self-employed, landlords and people with dividends, interest or royalties. It links to the pack's other skills instead of repeating them:
 
 - Moving to or from Greece, non-residents, the 5A, 5B and 5C regimes, withholding on payments abroad: `gr-cross-border`
@@ -251,21 +249,3 @@ expected:
 | Ministry of Labour, announcement of the new minimum wage in force from 1 April 2026 | https://ypergasias.gov.gr/se-ischy-apo-simera-o-neos-katotatos-misthos-ofelei-15-ekatommyrio-polites/ | 2026-10-23 |
 
 Not yet confirmed: how AADE annualises the EUR 920 monthly minimum wage for the 2026 art. 28A minimum (the law says "annual amount of the gross minimum wage"; if 14 monthly payments are used, the base is EUR 12,880, but we did not read that figure or the multiplier on an official page); any amendment to the Income Tax Code made during 2026 after ν. 5264/2025, other than the ν. 5301/2026 change to art. 28Γ that AADE circular Ε.2035/2026 describes; the full text of ν. 5301/2026 (only its art. 41, as AADE circular Ε.2035/2026 describes it, was read); the percentage of the late-payment interest rate under ΚΦΔ art. 52 (set by ministerial decision); how the "analogous application" of the art. 15(6) electronic spending rule in art. 40(4) works for rental income; the 2026 E1 form and instructions, which AADE has not yet published.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

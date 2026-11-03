@@ -112,21 +112,3 @@ Confirm intended activity/entity and distribution of profits; ownership, citizen
 | RAA 2017: actual ss.21-24, selected TIN baseline only | https://webtestcms.nra.gov.sl/uploads/Revenue_Administration_Act_2017_a505c603d7.pdf | 2026-11-01 |
 
 **Not yet confirmed:** The separate statutory-register suite, including which registers must be maintained and their contents, location, inspection and update duties, is retained as an unresolved predecessor job; accounting/stock records and annual returns do not establish it.  Complete current company-law/amendment chain and any signed/commenced 2026 replacement; actual small-company monetary limits; s.85(1) capital/payment wording; public capital amount; private s.211(3) liability interaction and the inserted audit exemption’s subsection cross-reference; reporting when an AGM is dispensed with and the s.321 certificate’s s.318 cross-reference; present forms, fees, portal and fine amounts; business-name/sole-proprietor/partnership law, current local-council trade licensing and sector permissions. The old one-to-two-week estimate and “most common vehicle” claim have no verified basis here. All old topics are mapped in the ledger. Source-bound draft; independent conditional source corrections closed; no accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

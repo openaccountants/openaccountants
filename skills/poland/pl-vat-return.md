@@ -12,24 +12,4 @@ tier: 2
 
 # Polish VAT return: see poland-vat-return (v2.1)
 
-> **Source-cited draft: not reviewed by an accountant.**
-
 This skill duplicated `poland-vat-return`. The content now lives in one place: [poland-vat-return](poland-vat-return.md), refreshed for tax year 2026 from the VAT Act (Dz.U. 2026 poz. 1263), the Tax Ordinance and the Ministry of Finance. Load that skill for any Polish VAT question. The slug stays so existing links keep working.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

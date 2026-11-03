@@ -114,21 +114,3 @@ expected:
 | Income Tax Order 1975, ERS consolidated copy to the 2013 amendments; sections cited were read; cited sections read | https://www.ers.org.sz/documents/IncomeTaxOrder1975.pdf | 2026-11-01 |
 
 Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The ERS Income Tax Returns page still gives E1.2 million; the 2025 notice says E3 million and the notice is used here. The guide gives E2 million for TIN registration, unresolved. The old pack's residence day-count test has no source: the Order uses "ordinarily resident" and no day count was found. The Third Schedule text names the year ended 30 June 2023 and no later schedule was found. The exempt lump sum under s 14(1)(l)(iii) was not extracted.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

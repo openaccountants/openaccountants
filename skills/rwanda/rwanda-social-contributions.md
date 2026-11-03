@@ -230,7 +230,6 @@ If the client provides only a bank statement and no payroll detail:
 4. **Do not reverse-engineer individual salaries** from a combined debit without the declaration: the differing bases (gross / net / basic) make this unreliable.
 5. **Flag for reviewer:** "Payroll figures derived from bank statement totals only. Gross/basic/transport split, residency, and RAMA enrolment have not been verified. Reviewer must confirm before relying on the monthly declaration."
 
-
 ### Carried: Quick checks and bank lines
 
 | Case (monthly) | Result |
@@ -344,21 +343,3 @@ expected:
 | RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
 
 Not yet confirmed: occupational hazards rate; the pension and maternity treatment of transport; the definition of net for CBHI; the 7-employee minimum and 10th of the month date for medical; split of pension from 2027.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

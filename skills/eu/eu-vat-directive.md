@@ -347,21 +347,3 @@ Practitioner review required for: rate table accuracy (verify against EC TEDB an
 | Irish Revenue, Current VAT rates | https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx | 2026-10-30 |
 
 Not yet confirmed: each country's domestic zero rates (the old table showed "Yes" for every country; replaced by the parking-rate column and a note); whether any member state's Article 199a reverse charge continues after 31 December 2026 (an extension proposal was not read in the Official Journal); national e-invoicing and SAF-T start dates; Intrastat thresholds.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

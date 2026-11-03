@@ -99,21 +99,3 @@ expected:
 | RSL Guide on Registration for VAT, VAT 101; read in full | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Registration%20For%20Value%20Added%20Tax%20Purposes%20%20-%20VAT%20101%20%281%29.pdf | 2026-11-01 |
 
 Not yet confirmed: everything resting on the Companies Act 2011 and Companies Regulations 2012 (share capital, member and director minimums, annual return, audit, business names): msm.org.ls failed its security certificate and lesotholii.org showed a security check, so neither was read; OBFC site did not load.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

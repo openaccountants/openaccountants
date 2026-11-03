@@ -212,21 +212,3 @@ expected:
 | BiH–Serbia treaty, MFT combined text with the MLI: arts. 10 to 12 | https://chj.mft.gov.ba/data/Fiskalni%20sporazumi%202/fiskala%20sporazumi/BiH_-_Srbija_-_bos._verzija.pdf | 2026-10-30 |
 
 Not yet confirmed: treaty rates for the other 30 treaty partners (only the Croatia, Serbia, Austria, Germany, Italy, Netherlands, Slovenia and Turkey texts were read); the BiH rate on dividends paid by a BiH company to a German resident (the 1987 treaty's dividend article covers only German dividends, and the other-income article was not read); whether the Italy and Turkey treaties are modified by the MLI (MFT publishes no combined text for them); whether treaties signed after the MFT list page date (23 November 2020) are in force; the RS rules for issuing residence certificates to RS companies; the RS deadline for paying withheld tax to the budget beyond "at payment" (Rulebook 115/17 does not set a monthly date); the BD form and procedure for treaty relief; whether the FBiH 4:1 and RS interest rules restrict interest paid abroad beyond withholding (see ba-corporate-income-tax); VAT refunds to foreign businesses on Form PDV SL 1 (conditions not read; see bosnia-vat); Brčko withholding exemption list as amended after 17/22 (none found). The RS law texts were read from OCR of the official gazette scans published by Poreska uprava RS.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

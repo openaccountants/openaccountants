@@ -150,7 +150,6 @@ If taxable, allocate the Icelandic-rule profit to the supported ownership share.
 
 The regulation reproduction says the official Gazette prevails if texts differ. Read it with the current Article 57a, not as authority to override later legislation.
 
-
 ### 9. Approved research and development credit
 
 **Establish entitlement before calculating a percentage.** Act 152/2009 concerns a qualifying legal-entity owner of a Rannís-confirmed project who bears its financial risk. Retain the approval, project/year, ownership and funding contracts. Universities and public institutions are outside the applicant definition. Test financial distress, including the controlling parent's position under the 2026 amendment, and outstanding unlawful-state-aid recovery. A contractor paid to deliver results for someone else's use does not acquire its own credit merely by calling that work R&D. [Articles 2–5 and 10][rd-law]; [Act 27/2026][rd-amendment]

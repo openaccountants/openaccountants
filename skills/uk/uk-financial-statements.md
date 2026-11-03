@@ -350,21 +350,3 @@ This skill and its outputs are provided for informational and computational purp
 | FRC, Recognition of RSBs and RQBs | https://www.frc.org.uk/library/supervision/professional-bodies-supervision/supervision-of-audit/recognition-of-rsbs-and-rqbs/ | 2026-10-30 |
 
 Not yet confirmed: the exact date in April 2028 for the Companies House changes (the announcement says "from April 2028" and "after 1 April 2028"); the content of the strengthened audit-exemption statement and the limit on shortening periods (regulations not yet read); the disclosure table rows other than related parties and directors' remuneration (carried from the previous version, not re-read against FRS 102 Section 1A, FRS 105 or SI 2008/409); the previous version's statements that FRS 105 has "no true and fair override" and that AIM groups must use IFRS (removed: the Companies Act sets the IFRS requirement only for parents on a UK regulated market, s.403(1); the AIM requirement was not checked).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

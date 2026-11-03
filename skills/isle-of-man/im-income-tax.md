@@ -193,21 +193,3 @@ expected:
 Note: the consolidated Income Tax Act 1970 [62] read on 30 October 2026 still prints GBP 14,750 / GBP 29,500 in s.35 (as substituted by SD 2025/0060); it has not yet taken in the 17 February 2026 Tynwald resolution under s.119, which sets GBP 17,000 / GBP 34,000 from 6 April 2026.
 
 Not yet confirmed: the order prescribing the 5% late-payment interest rate under s.111A; personal pension and superannuation contribution limits (PN 201/18 not read); the conditions for the co-habiting couple addition and the TT Homestay Allowance (PN 219/22 not read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

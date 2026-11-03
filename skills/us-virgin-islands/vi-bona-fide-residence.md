@@ -58,21 +58,3 @@ Gross income is measured before deductions and excludes the spouse's income for 
 Retain a travel ledger, work-location evidence, housing and family facts, contracts, prior returns and the source analysis for income as recommended working papers. Section 937(b) separately governs income sourcing; becoming resident does not automatically convert US-source income into USVI-source income. [Section 937](https://uscode.house.gov/us/usc/119-121/t26/s937/).
 
 Checked 22 October 2026. Publication 570 retrieved is the 2025 edition and Form 8898 instructions are revised October 2024. This is a source-cited draft, not a completed residence opinion. Full regulatory amendment reconciliation and independent accountant review remain outstanding.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

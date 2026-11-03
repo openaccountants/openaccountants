@@ -203,21 +203,3 @@ expected:
 Not yet confirmed: the box (campo) numbers of the periodic return (earlier versions listed fields 1 to 41, for example 1/2 standard-rate sales and VAT, 7 exempt with deduction, 16/17 self-assessed services, 21 to 23 deductible VAT on capital goods, stock and other, 40/41 payable or credit; the 2026 form instructions were not read and Portaria 298/2026/1 changes the form); the car cost limit in the ordinance under CIRC art. 34(1)(e), which decides art. 21(2)(f) and (g) (not read); the 2026 late-interest rate (secondary sources give 7.221% under IGCP Aviso 18/2026/2, but the Diário da República page did not render and no official copy was read) and whether it runs by day or by month; whether the Azores 2026 regional budget changed the Azores rates (the Azores budget was not read); whether the supply that takes turnover past the 25% margin is itself taxed or only later supplies; that the AT calendar shows 21 September 2026 and 22 February 2027 (the move follows from CPPT art. 20(1); the AT calendar itself was not read); the deadline for reporting invoice data to AT (left to portugal-einvoice); the return-form changes made by Portaria 298/2026/1 (published 16 July 2026, mostly for periods from 1 July 2027) are not described here.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -22,7 +22,6 @@ Use the 2026 DGI CGI for the selected ordinary-law jobs; the Guide is an intake 
 
 Formation and lawful-choice comparisons are separate companion jobs; use primary-source capital/registration conditions and documented elections, rather than marketing cost/timing or savings claims. [CGI 2026 arts. 530, 535, 557, 561-4](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Rates, bands and thresholds
 
 | Job and figure home | Read the conditions here | Official source |
@@ -37,7 +36,6 @@ Formation and lawful-choice comparisons are separate companion jobs; use primary
 
 Each figure has one home. This table is navigation, not seven completed domains. All remain partial; the social Guide expressly separates signed orders, authority guidance and unverified controlling law.
 
-
 ## The base
 
 Separate owner business profit, company profit, remuneration, VAT, social contributions, controlled transactions and foreign-service withholding into seven source homes. Do not repeat a headline rate without the linked Guide’s conditions. [CGI 2026 arts. 1, 28, 42, 66, 105, 210, 227, 296 and table of contents](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
@@ -46,25 +44,21 @@ Compute business/company profit from accounts and statutory adjustments, not gro
 
 Use separate employer/employee liability columns. IUTS withholding, employer TPA and CNSS are not interchangeable; do not subtract the same deduction twice or call a contribution a tax credit without its source. [CGI 2026 arts. 105, 227, 228–229](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Deadlines and filing
 
 Prepare an obligation calendar by actual taxpayer/job and period. Annual profit declaration, VAT, payroll, social forms and corporate accounts approval are distinct tasks; use their home Guide rather than the old generic monthly or tenth-day claims. [CGI 2026 arts. 95, 116, 230–233, 334, 561-1](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
 Electronic declarations/payments have statutory effect; DGE/DME taxpayers have mandatory electronic declaration/payment rules. Current authenticated eSINTAX screens, current box IDs and confirmations have not been accessed. [CGI 2026 art. 561-1](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Penalties and interest
 
 Route a default by the breached obligation and its date. Ordinary profit, VAT and social sanctions have different sources; no all-purpose penalty rate is provided here. [CGI 2026 arts. 754–758, 776–778](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
-
 
 ## Cross-border points
 
 Individual residence/foreign income, investment income, rental/property taxes, permanent-establishment attribution, treaty relief, customs, exit tax and specialist regimes remain explicit unfinished jobs. The former blanket residence sentence is not a verified answer. The formation and [lawful comparisons](bf-tax-optimization.md) companions also retain their own national/procedural holds.
 
 Before cross-border calculations identify service/use/place, payer, recipient establishment, control and any claimed treaty. Non-resident services withholding is a narrow job, not complete treaty/PE/residence/exit coverage. [CGI 2026 arts. 46–47, 65–66, 210–214, 303–306](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
-
 
 ## Two worked examples that recompute
 
@@ -115,7 +109,6 @@ expected:
 
 Obtain legal form and identifiers, all activities and locations, start/close dates and tax regime/elections, sales excluding VAT, accounts and adjustments, staff/remuneration, existing tax/social registrations and notices, related parties, foreign payments and claimed treaty facts. Identify which actual filing or computation is needed before loading a rate.
 
-
 ## Sources
 
 | Official source | Read on | What was actually read |
@@ -127,21 +120,3 @@ The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-2026110
 Not yet confirmed: The old individual habitual-abode/source-only residence rule, foreign income and investment income; current filing form/box identifiers, authenticated eSINTAX confirmation/payment sequences and any supposedly universal tenth-day payroll or monthly social obligation; complete treaty/PE/exit/property/customs/special-sector coverage; currency/monetary-union descriptive claims not independently sourced in this pass; current controlling social law/rates, timing/AMU/SMIG gaps carried by the social Guide; national formation/registration holds and all remaining home-Guide gaps; comprehensive coverage and accountant attestation.
 
 Written by OpenAccountants from the cited sources. Independent source review: conditional source corrections closed for this rewrite. Accountant attestation: none.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

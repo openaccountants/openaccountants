@@ -105,21 +105,3 @@ expected:
 | Social Protection Fund, contribution-rate FAQ answer checked in cached Fund FAQ HTML; conflicting commencement dates held | https://www.spf.gov.om/en/faq/what-are-the-contribution-rates-to-be-paid-by-the-worker-and-employer/ | 2026-11-01 |
 
 Not yet confirmed: the ministry portal steps, fees, name reservation and timing (mocioman.gov.om and mcti.gov.om did not open, so the old 2 to 3 weeks and the old step list are not carried as fact: reserve name, notarise constitution, security clearance, commercial registration, municipality licence, tax and Fund registration); the old OMR 150,000 foreign LLC capital practice, which comes from a secondary source only; whether any LLC minimum exists (art. 234 states none); the current barred list; the one-person-company procedural Regulations and how art. 278 applies to its particular facts; joint-stock auditor appointment Regulations beyond art. 219.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

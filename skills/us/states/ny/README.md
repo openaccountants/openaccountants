@@ -16,7 +16,6 @@ covered_by:
 | Sales tax | Yes (4% state + local; typically 8–8.875% combined) |
 | Franchise / gross receipts tax | Yes — NYC Unincorporated Business Tax (UBT) |
 | Tax authority | [New York State Dept. of Taxation and Finance (DTF)](https://www.tax.ny.gov) |
-| Quality tier | Q2 — reviewed content |
 
 ## Files in this folder
 

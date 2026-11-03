@@ -61,21 +61,3 @@ For tax planning between an s.p. and a d.o.o., see [slovenia-tax-optimization](s
 | Government of Slovenia, "Twenty years of the SPOT portal" (16 Oct 2025) | https://www.gov.si/novice/2025-10-16-dvajset-let-portala-spot-dvajset-let-digitalne-podpore-podjetnistvu/ | 2026-10-30 |
 
 Not yet confirmed: whether VAT and the notary's office costs are added to the tariff fee, and the fee for certifying signatures on the prescribed form (the Tariff bases it on the value of the subject, and which value applies to a founding form was not confirmed); how many days a simple d.o.o. takes end to end in practice (the law gives only the court's five and ten working day deadlines); the content of ZIURS, which goes to a referendum on 6 December 2026 and, if it enters into force, changes the 2026 normed-expense rules.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

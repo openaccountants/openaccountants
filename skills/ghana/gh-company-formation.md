@@ -116,21 +116,3 @@ expected:
 | GRA, Tax Registration page, page read in full | https://gra.gov.gh/domestic-tax/tax-registration/ | 2026-11-01 |
 
 Not yet confirmed: (1) Act 992 itself was not opened. Minimum directors for a private company and a resident director (old skill: two, one resident), and minimum stated capital (old skill: about GHS 500 for Ghanaian-owned companies, from a US trade page) are not confirmed; ORC confirms two directors for a public company only. (2) Typical timeline of 10 to 15 working days came from a private firm blog and is not confirmed. (3) Whether the ORC online platform replaces any counter step. (4) Name-search fee.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

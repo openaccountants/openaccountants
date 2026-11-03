@@ -50,21 +50,3 @@ Operationally, reconcile the sales ledger to the return, separating product code
 - Use the [Martinique–Guadeloupe movement Guide](../martinique/mq-antilles-goods-movements.md) for qualifying inter-island movements, which have separate reporting rules.
 
 Source-cited draft, not accountant-attested. Rates, exemptions, input deductions, penalties, general VAT, payroll and income taxes remain outside scope. The 2026 threshold was checked against official statutory retrieval; a complete review of amendments to every procedure in the 2025 circular remains outstanding.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

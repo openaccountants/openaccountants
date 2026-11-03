@@ -237,21 +237,3 @@ expected:
 | Finance Act 2026 s 4 (dividend ordinary and upper rates from 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-10-23 |
 
 Not yet confirmed: the SA100 and SA100 notes box wording for Scottish status (the form itself was not read); the rest of HMRC's Scottish Taxpayer Technical Guidance (only STTG4100, 4400 and 4500 were read); whether the Scottish Parliament has set separate Scottish property rates for 2027/28 under s 80C(2B).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

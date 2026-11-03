@@ -244,7 +244,6 @@ expected:
 5. What travel/commuting evidence and actual business purpose support each claimed exclusion?
 6. Which wage/pension returns, certificates, payments and prior-period corrections need reconciliation?
 
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -262,21 +261,3 @@ expected:
 | Official health fund copy of 10/L-028; full normalised text matches the Gazette download | https://fssh.rks-gov.net/wp-content/uploads/2026/05/LIGJI-PER-SIGURIMIN-E-DETYRUESHEM-TE-KUJDESIT-SHENDETESOR-2.pdf | 2026-10-30 |
 
 Not yet confirmed: operative 2026 health-insurance phase, contribution rates, collection commencement and filing instruments; numeric 2026 tax late-interest rate; foreign-travel limit instruments for an actual destination and date. PR remains partial for a complete health-inclusive payroll result.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

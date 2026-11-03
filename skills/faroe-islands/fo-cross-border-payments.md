@@ -123,7 +123,6 @@ Use only income and tax belonging to the same calculation. Deduct foreign-relate
 
 For individuals, TAKS distinguishes ordinary tax credits from refundable child credit: ordinary credits are allocated before foreign relief as described in O.1.8, while child credit follows relief and retains its statutory refund treatment. Relief is allocated proportionally between national, municipal and church tax under O.1.9. Do not copy the older guidance's illustrative bands or foreign-work deduction amounts into a 2026 calculation; use the current income-tax Guides and the actual treaty where relevant. [TAKS VLS O.1.8–O.1.9][relief]; [Assessment Act §§1–3][rate]
 
-
 [Ordinary company credit and its supporting arithmetic](../../../ledgers/faroe-islands-2026-evidence/fo-cross-border-payments-supplementary-controls.md) is retained in supplementary research.
 
 ## Two worked examples that recompute
@@ -208,21 +207,3 @@ Not yet confirmed: actual treaty provisions, beneficial-owner/anti-abuse applica
 [refund]: https://www.taks.fo/en/business/tax/dividend-tax-refunds
 [relief]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/o-tviskatting
 [residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

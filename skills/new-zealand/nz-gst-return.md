@@ -444,21 +444,3 @@ Periods ending on or before 31 March 2026 use the same rate (15%), the same $60,
 | File your GST return | https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst/file-your-gst-return | 2026-10-31 |
 
 Not yet confirmed: which box takes a secondhand goods credit (IRD's pages read do not name it); turnover at exactly $60,000 and a change-of-use adjustment of exactly $1,000, where IRD's documents word the test differently.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -35,7 +35,6 @@ tier: 2
 | Key tax invoice | ใบกำกับภาษี (Bai Kamkap Phaasi) — required for input credit |
 | Tax ID | เลขประจำตัวผู้เสียภาษี (13-digit tax ID) |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a Thai-licensed CPA or tax consultant |
 | Skill version | 2.0 |
 
 ### Key PP.30 return lines
@@ -522,21 +521,3 @@ THAILAND VAT ONBOARDING — MINIMUM QUESTIONS
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional before filing.
 
 The most up-to-date version is maintained at openaccountants.com.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

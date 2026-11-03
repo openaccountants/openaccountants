@@ -109,21 +109,3 @@ expected:
 | [Current registry fees](https://ebusiness.gov.so/fees) | Entire service-fee table and first10 of149licence rows read by source researcher; not the full activity/state licence schedule. USD 50 service entry conflicts with regulationUSD100. | 2026-11-01 |
 
 Not yet confirmed: exact operative fee amendments and annual-report deadline/version; full Companies Law/regulation reconciliation including court/notarial steps, foreign-investment/ownership approvals and minimum capital; current form fields, authenticated registration/payment/receipt workflow; TIN/FormTR1, entity-choice treatment of sole traders/NGOs; beneficial ownership, annual financial statements/audit, change deadlines and licence renewal; current penalties/appeals. The old four-day timeline, no-minimum-capital claim and generic all-document notarisation step are not certified. Independent source review accepts this bounded baseline only; no accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

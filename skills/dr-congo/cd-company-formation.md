@@ -152,22 +152,3 @@ expected:
 | OHADA current-act description, national penal-legislation boundary; its landing-page iframe points to an unrelated act, so the catalogue's actual companies-act download was used | https://www.ohada.org/droit-des-societes-commerciales-et-du-gie/ | 2026-11-01 |
 
 Not yet confirmed: actual current national SARL minimum/nominal/statutes/deposit exceptions and later company-law instruments; complete special-sector/public-offer governance and capital rules; in-kind valuation and audit/publication/accounting requirements; current GUCE fees, forms, available online sequence, legalisation/translation and processing performance; GUCE/CNSS identifier handoff; actual authenticated submission/registration/bank release; currency conversion, immigration and investment licences; national penalties and tax carried-law chain. These gaps block completed-formation and comprehensive-country claims.
-
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

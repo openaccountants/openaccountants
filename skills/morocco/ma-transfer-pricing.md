@@ -127,21 +127,3 @@ expected:
 | DGI, Code General des Impots 2026 (French); Art. 19-I, 154 ter, 185-IV, 185 bis, 199 bis, 210, 211, 213, 214, 219, 234 bis, 234 ter, 234 quater, 247-XXXVII-A and annexed Decrees 2-16-571 and 2-22-1020 read from the PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 
 Not yet confirmed: the first year or audit Decree 2-22-1020 applies to, as the decree states no start date beyond publication; the meaning of "liens de dependance", as the articles and decrees read give no percentage; pricing methods the DGI accepts in practice; the portal and form for the country by country report and for sending the file; treaty mutual agreement and corresponding adjustments.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network : accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

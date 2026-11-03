@@ -42,21 +42,3 @@ The [October 2026 calendar](https://www.impuesto.aw/kalender-digitale-aangifte-o
 Document legal form, annual turnover, registration history, taxable-base analysis and import evidence before computing a return. Reconcile the three taxes separately. Check special sectors, exemptions, foreign services, reverse charge, customs valuation and deduction eligibility against their own rules. None is resolved by the headline 7% rate.
 
 General research reference only. Direct source verification and accountant review remain outstanding; this is not comprehensive Aruba coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

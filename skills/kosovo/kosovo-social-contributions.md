@@ -111,7 +111,6 @@ leaves final health-inclusive payroll open; it does not certify either a zero
 health liability or automatic collection at the standard rate
 ([10/L-028 arts. 21–22, 35–37](https://gzk.rks-gov.net/ActDetail.aspx?ActID=119938&langid=1)).
 
-
 The health law also supplies distinct standard bases for actual-income and
 presumptive self-employment, pension receipts and other mandatory insured
 persons in art. 22(10)–(19). They cannot be replaced by the employee split or
@@ -234,7 +233,6 @@ expected:
 5. What health phase/collection instruments and cross-border coverage certificate apply to that period?
 6. Which TAK returns, payment receipts and Trust allocations are outstanding or inconsistent?
 
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -252,21 +250,3 @@ expected:
 | Official health fund copy of 10/L-028; full normalised text matches the Gazette download | https://fssh.rks-gov.net/wp-content/uploads/2026/05/LIGJI-PER-SIGURIMIN-E-DETYRUESHEM-TE-KUJDESIT-SHENDETESOR-2.pdf | 2026-10-30 |
 
 Not yet confirmed: operative 2026 health-insurance phase, contribution rates, collection commencement and filing instruments; numeric 2026 tax late-interest rate; foreign-worker/social-security agreement outcomes for a specified case. SC remains partial pending the health implementation evidence.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

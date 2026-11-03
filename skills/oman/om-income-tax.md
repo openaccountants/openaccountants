@@ -113,21 +113,3 @@ expected:
 | Tax Authority, PIT FAQs (all 20 read) | https://tms.taxoman.gov.om/portal/web/taxportal/personal-income-tax-faqs | 2026-11-01 |
 
 Not yet confirmed: the Executive Regulations of RD 56/2025, due within a year of publication (decree art. 2), which we did not find on the Tax Authority site or in the portal page list, so return form, employer remittance dates and detailed exemption controls remain open; capital gains for individuals before 2028 (no tax on the same reasoning, no separate source opened); whether non-resident individuals have any Oman tax on pay in 2026 other than art. 18 bis withholding on services.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

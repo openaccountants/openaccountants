@@ -146,21 +146,3 @@ expected:
 | [DGI Précis fiscal 2026, 10 April](https://dgi.gov.gn/wp-content/uploads/2026/04/Guinee-Precis-fiscal-2026.04.10-VF.docx), relevant §5.1 scope, timing, computation, deduction, filing and refund paragraphs. Paper-refund routing is superseded by the enacted 2025 electronic requirement. | 2026-11-01 |
 
 Not yet confirmed: October 2026 final promulgation/text/effect and applicability of every source version; full ordinary-goods exigibility text beyond the available printing defect; detailed exemption/product classifications and later electrical/vehicle concessions; special property/developer/margin/telecom/electronic-service regimes; mixed-use/pro-rata and capital/bad-debt correction methods; withholding/trader/export ordering; all refund documents, guarantees, lapse/category interactions and authenticated portal processes; foreign currency rates and complete VAT sanctions/appeals. Ordinary VAT methods are expanded, but the domain and country pack remain partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

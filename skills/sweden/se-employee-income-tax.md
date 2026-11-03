@@ -203,21 +203,3 @@ expected:
 | Skatteverket, rot- och rutarbete | https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete.4.2e56d4ba1202f95012080002966.html | 2026-10-23 |
 
 Not yet confirmed: the average church fee rate (not on the page read); the base interest rate in force in 2027 when residual tax for 2026 is charged (Skatteverket shows 2.5% from 1 December 2024 and the rate can change); whether the job tax credit uses the price base amount multiple rounded before the municipal rate is applied (the example uses the unrounded product and drops öre as 67 kap. 1 § requires); the date Skatteverket will publish for the 2027 filing round (the law gives 3 May 2027).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -152,21 +152,3 @@ expected:
 Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. Checked against the law (tier 2); no licensed Belarusian accountant has signed it off.
 
 Not yet confirmed: The migration-law minimum salary for foreign employees carried in the old payroll file (five minimum wages from 1 November 2025) is a labour/migration condition, not a tax computation, and was not checked against its act. The January-February director accident-insurance base, exact March director-floor proration, and predecessor engagement-notification rules for 1-7 January 2026 remain unverified. PR is partial for those ordinary cases; do not substitute the later rules for earlier dates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

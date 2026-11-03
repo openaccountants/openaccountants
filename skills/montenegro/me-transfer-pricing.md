@@ -365,21 +365,3 @@ expected:
 | Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year), 24 July 2026 | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |
 
 Not yet confirmed: whether the Article 44b transitional date ("until 2027") covers 2026 documentation, giving 30 June 2027, or ends with 2025 documentation; whether Montenegro now meets the OECD appropriate-use and confidentiality standards that switch on local CbC filing by non-parent members (CbC point 2b); the deadline and electronic format for filing a full CbC report (the instruction sets none); which lines of Form PD and attachment carry the TP adjustment; whether interest on a refund runs from the day of the claim or from day 30 under the new art. 96(2); rules for intangibles, guarantees, cash pools and business restructurings beyond the general methods.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

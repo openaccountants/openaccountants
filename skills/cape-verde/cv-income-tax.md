@@ -98,7 +98,6 @@ expected:
   gap: 1200.00
 ```
 
-
 ## Ask the client first
 
 - Resident under the 183-day or home test?
@@ -120,21 +119,3 @@ expected:
 | DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
 
 Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. Which Category B instalment base applies, calendar or art. 96(3); Whether the employee INPS 8.5% is deductible (the old skill said so; also whether the withholding base is before or after it, the FAQ says "valor base de incidencia"); how the CVE 220,000 exemption interacts with the bands once exceeded; whether the 2014 withholding formula is the one in force; the FAQ also mentions CVE 420,000 and 35,000 a month for 2015; documented health, education and housing expenses scope; category E article references after amendment; non-resident rate equal to resident rate in all cases.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

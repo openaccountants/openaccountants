@@ -85,21 +85,3 @@ Steps to form a d.o.o.:
 | VAT Law, Ministry of Finance consolidation through 12/26, arts. 35 and 55 | https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0 | 2026-10-30 |
 
 Not yet confirmed: how long opening a bank account and the post-registration tax setup take in practice (the old file's three to four weeks was a practitioner estimate); who certifies paper signatures on a founding act (notary or another body under the law on certification of signatures); and whether the 31 March 2026 deadline for 2025 financial statements and tax returns was extended because of the move to IRMS (the old file cited a press report of an extension; no official notice was read). The Tax Administration's IRMS guidance on forming companies gives a 120-working-day name reservation and a three-working-day CRPS decision. The three days were the law until 44/26 took effect on 27 March 2026; the laws above (90 days; 10 working days) are used instead.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

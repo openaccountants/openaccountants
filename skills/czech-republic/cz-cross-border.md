@@ -213,21 +213,3 @@ expected:
 | ČSSZ, Vyslaní pracovníci (posting, A1, Regulation 883/2004) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-10-22 |
 
 Not yet confirmed: the exact filing dates for the 2026 return (in 2027), which the Financial Administration had not published on the page read; registration duties for an arriving self-employed person or a foreign company (Tax Code § 125 and following, not read); the rounding of the final tax to whole koruna (Tax Code § 146, not read); the 25% ownership threshold and other conditions for the EU interest and royalty exemption in ITA § 19 (only summarised here); individual treaty rates and relief methods.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

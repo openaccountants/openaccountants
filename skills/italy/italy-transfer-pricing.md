@@ -226,21 +226,3 @@ Refer an ongoing audit or adjustment notice to a tax adviser/litigator. APA/MAP 
 **Not yet confirmed:** the return coordinates and successor statutory cross-references for 2026 income filed in 2027; the precise violation-date treatment for that filing; current tax-interest rates; CbCR penalties; a general or interest-rate safe harbour (the legacy claims of absence are not asserted); APA processing time (the old 12–24-month estimate is unverified), unilateral application fees beyond the quoted statutory schedule, and annual APA compliance-report requirements under the implementation provision; TP-specific VAT/customs valuation effects and financial-statement related-party disclosure rules; operational Pillar Two dates and hybrid-mismatch requirements; detailed downward-adjustment/MAP/PE/exit-tax procedures; successor TUIR article numbers that apply from 2027. These topics are retained as explicit boundaries, not computation rules. No old executable example was removed: the prior skill had none.
 
 > Contributed by OpenAccountants.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

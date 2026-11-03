@@ -188,21 +188,3 @@ expected:
 | Income Tax Division, Employers: Legislation | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/legislation/ | 2026-10-30 |
 
 Not yet confirmed: the Tynwald order or regulations setting the 2026/27 National Insurance limits and rates (the figures come from PN 227/26 and the Division's rates page, which agree); the section numbers in the Income Tax (Instalment Payments) Act 1974 and its regulations for the employer deadlines and GBP 250 penalties (taken from the Division's Compliance and Penalties page); the current numeric emergency tax code for 'all other cases' (the tax codes page still shows 1450S at 10/21%, which matches the 2024/25 allowance, not GBP 17,000); interest on late ITIP and NI; when the 2026 UK agreement enters into force.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

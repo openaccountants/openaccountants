@@ -112,21 +112,3 @@ Obtain employment category and locations, gross cash and benefits, expense reimb
 | Décret n°2023-096/PR du 4 octobre 2023, AMU. Arts. 1-23, 29-47: employee base/split, nonemployee rules, collection, penalties and commencement; scanned eight-page text read locally. | https://cnss.tg/cnss-media/2024/01/DECRET-2023-096-fixant-les-taux-de-cotisations-AMU.pdf | 2026-11-01 |
 
 Not yet confirmed: An enacted/current primary source establishing the 2026 numeric SMIG (the old CFA 52,500 assertion is withheld until checked for current operation); a contribution ceiling (none is established by the primary explanation read); current DNR periodicity and exact portal/ADC/AMU screen fields; independent/informal AMU category contribution amounts; directors outside the qualifying manager rule; old 3% salary-tax claim; actual monthly IRPP table/annualisation and rounding workflow. PR and SC remain partial; do not label this a complete payroll engine.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

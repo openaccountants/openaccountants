@@ -270,21 +270,3 @@ expected:
 The ISAP pages (isap.sejm.gov.pl) served a browser check to scripted requests on 2026-10-22, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 
 Not yet confirmed: Ministry of Finance explanations on whether the minimum tax ratio is measured before loss relief (none found; the skill follows the wording of art. 24ca(1) and art. 7(1)); how much of the Estonian CIT ryczałt a shareholder can credit against personal income tax on a dividend (PIT Act); treaty withholding rates; whether exit tax can be paid in instalments. The late payment interest rate of 10.50% was still current on 2026-10-22 (NBP lombard rate unchanged since 5 March 2026); it moves with any later NBP change.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

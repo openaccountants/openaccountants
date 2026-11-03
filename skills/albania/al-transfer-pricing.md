@@ -225,21 +225,3 @@ expected:
 | General Directorate of Taxes, instructions list | https://tatime.gov.al/legjislacioni/udhezime/ | 2026-10-23 |
 
 Not yet confirmed: whether the annual notice is now filed only on e-Filing; the Bank of Albania 12-month lending rate figures that cap deductible interest under Law 29/2023 art. 50(1)(dh) (the rule is the rate for the month the loan was taken; the figures were not read); whether the published 7.8% late payment interest rate is an annual rate applied per day (neither Law 9920/2008 art. 76 nor Instruction 24/2008 point 76 says); whether EBITDA starts from taxable income (Law 29/2023 art. 30(2)) or profit before tax (General Instruction 26/2023 point 30.2 as amended) where they differ; how the administration adjusts purely domestic related-party transactions under art. 44 without the art. 32 machinery; the detailed country-by-country report content set by Council of Ministers decision under Law 9920/2008 art. 63/4(2).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

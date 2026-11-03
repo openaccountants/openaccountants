@@ -99,21 +99,3 @@ expected:
 | RSL FBT Public Ruling; read the rate and example parts | https://www.rsl.org.ls/sites/default/files/2024-07/FBT%20Public%20Ruling.pdf | 2026-11-01 |
 
 Not yet confirmed: mandatory social security for private employers, the old-age pension statute, occupational pension rates, the annual reconciliation form name and any wage cap; the older skill's points on these are carried here unverified.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

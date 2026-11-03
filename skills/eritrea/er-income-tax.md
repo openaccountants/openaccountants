@@ -135,21 +135,3 @@ Tax is 8,268 Nakfa. If the same sum covers two years, it is prorated (Notice art
 Scans were read by OCR and the key rate pages checked by eye. The Library of Congress item pages show a security check, which we did not pass; the PDFs came straight from its public file host. Scanned gazettes use "Birr" in 1994 and "Nakfa" in later amendments.
 
 Not yet confirmed: Old guide items dropped as unsupported: an 800 Nakfa tax-free band and bands of 5%, 10%, 15%, 20% (the law has 2% to 30% as above), and the citation "Proclamation 24/2011", which is on no official list. Whether the 2% rehabilitation tax on domestic salaries survives Proc 66/1994 (Tigrinya, partly repeals Proc 17/1991) was not read. Proc 67/1995 was read only in UK translation, and its base was not confirmed as worldwide income. Fiscal year dates; a day-count residence test (none found in the law); whether an annual reconciliation exists (none found). No published 2026 amendment, circular or form could be opened; the Ministry of Finance site did not connect. No official portal or online filing page could be opened either.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

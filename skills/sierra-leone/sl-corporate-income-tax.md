@@ -126,21 +126,3 @@ Obtain residence/management/PE and business-sector facts; incorporation/liquidat
 | Enacted Finance Act2026: commencement and income-tax ss.4-15, printed5-9 and relevant neighbours; actual PDF physical5-9 half-pages read in order. | https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2026_121df05d9b.pdf | 2026-11-01 |
 
 Not yet confirmed: Complete operative2026 amendment/commencement and subsidiary-instrument chain, authoritative current consolidation, application of the2023/2024 MAT schedule percentages to all company cohorts and current MAT-credit/instalment implementation; current special manufacturing/agriculture/priority/mining/petroleum/shipping/insurance/investment agreement regimes; non-resident company rate and foreign-tax/treaty relief; current loss/ownership/group-relief interaction and financial-cost instruments; capital-allowance rates; withholding scope/thresholds/finality/treaty/gross-up/payment forms; full current filing/payment/extension calendar, certified-account requirements by current class and gazetted/ITAS return fields; Revenue Administration Act interactions, late-payment interest/underestimation and current appeal/recovery path. The predecessor's approximate3% MAT, universal120days, agriculture holidays, mining30%, universal non-resident30%, resident/non-resident15% withholding,6.5%/11.5% contractor rates and NLe500 threshold are expressly held or corrected above, never silently retained. Independent corporate source review pending; IT-CORP and related domains remain partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

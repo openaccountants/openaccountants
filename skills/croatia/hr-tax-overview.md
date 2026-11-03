@@ -62,21 +62,3 @@ Tax year 2026. Every figure below is taken from the consolidated texts in the Ta
 | Tax Administration, Obrtnici paušalisti | https://porezna-uprava.gov.hr/hr/obrtnici-pausalisti/4564 | 2026-10-30 |
 
 Not yet confirmed: the 2026 rates chosen by each local unit are not repeated here (see croatia-income-tax); hr-company-formation still carries 2025 content.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

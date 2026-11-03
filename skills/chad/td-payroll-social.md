@@ -128,21 +128,3 @@ expected:
 | [Enacted LF2026](https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf) |2026-11-01| Arts22–28 deleting180–186, plus37 electronic declarations; read old/new clauses pp32–34,56–57 |
 
 Not yet confirmed: later SMIG/rate instruments beyond the2026archived CNPS link, partial-month/multiple-employer/expat rules, annual recap exact filing date, transport allowances without reimbursement character, live CNPS/DGI forms and payment screens, monthly IRPP table and article177 residual-base boundaries. These keep SC/PR partial. For independent AI source review and its limits, see the [country README](README.md). No accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

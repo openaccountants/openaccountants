@@ -121,21 +121,3 @@ expected:
 | Signed 2026 Finance Act, DSF and exemption amendments | https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf | 2026-11-01; Read arts.1–17,29–31 in PDF pp.2–12, including old/new DSF wording; budget tables and 600-page annexes not treated as read. |
 
 Not yet confirmed: Complete later-law/current consolidation and sector exemptions; base-regime calculation; depreciation, provisions, financing caps and special regimes; current DSF forms and online steps; implementing visa order and ambiguous bis-1 scope/signatories; priority of special and general sanctions; any independent 20% royalty rate; verified operative treaty rates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

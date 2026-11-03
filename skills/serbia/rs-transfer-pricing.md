@@ -12,8 +12,6 @@ tier: 2
 
 # Serbia: transfer pricing (transferne cene), tax year 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 The rules sit in the corporate income tax law, the Zakon o porezu na dobit pravnih lica (ZPDPL), Articles 59 to 61v, with Article 10a (depreciation base) and Article 112a (missing documentation). The Minister of Finance's Rulebook on transfer prices and arm's length methods (Pravilnik o transfernim cenama i metodama koje se po principu "van dohvata ruke" primenjuju kod utvrđivanja cene transakcija među povezanim licima, Sl. glasnik RS 61/13, 8/14, 94/19 and 95/21) sets the documentation content and how each method is applied. Article numbers below refer to the Ministry of Finance consolidated text.
 
 Law 80/2026 (in force 8 September 2026) does not change Articles 59 to 61v. It deletes the Article 62 thin capitalisation rule and adds an EBITDA interest limit (Article 62a), but those changes apply only from EU accession, so for 2026 thin capitalisation still applies. See [rs-corporate-tax](rs-corporate-tax.md) for the amendment's dates, the tax balance, thin capitalisation and withholding tax. This skill does not repeat them.
@@ -200,21 +198,3 @@ expected:
 | Tax Administration: corporate income tax secondary legislation list | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp.html | 2026-10-23 |
 
 Not yet confirmed: whether "midpoint" (средишња вредност) in Article 60(10) means the median or the arithmetic middle of the interquartile range, so Example 1 uses a range where both are equal; how the Tax Administration orders the thin capitalisation limit and the arm's length interest test when both bite on the same loan; whether ZPPPA Article 178a fines are imposed before the ZPDPL Article 112a warning period has run out; that no advance pricing agreement procedure exists in any other Serbian law or bylaw (only the ZPDPL and ZPPPA were searched); the tax balance line codes where related-party transactions are shown.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

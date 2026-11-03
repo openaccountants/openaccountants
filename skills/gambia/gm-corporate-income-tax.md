@@ -121,21 +121,3 @@ expected:
 | GRA E-Payment brochure (first part), read for the rows cited | https://www.gra.gm/download-file/2d4c2498-48f5-11ef-b086-029254d29bb1 | 2026-11-01 |
 
 Not yet confirmed: The Income and Value Added Tax Act 2012 and any 2026 amendment. Contract withholding rates, where GRA pages conflict (10% or 8% resident, 15% or 10% non-resident). Withholding on interest and royalties (old file: 15%, no official source). Fringe benefit filing frequency. Final appeal court. Penalty and interest amounts. Treaty rates. Return box numbers. Rent withholding is stated in the brochure as a contract withholding type; who withholds on residential rent was not confirmed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

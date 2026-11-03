@@ -50,21 +50,3 @@ The [Board employer page](https://socialsecurity.kn/employers-2/) requires emplo
 ## Limits
 
 Resolve multiple employment, partial periods, unpaid leave, special coverage, late penalties and self-employed or voluntary assessments separately. This Guide does not calculate benefits or establish eligibility for a pension. A complete post-2017 legislative amendment review and independent accountant review remain required before merge.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

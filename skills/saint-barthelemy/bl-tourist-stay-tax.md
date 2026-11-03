@@ -57,21 +57,3 @@ If tax is collected in another currency, article 125 requires euro conversion us
 The base Code fetched lists amendments through August 2021; the 2024 annex contains marked changes, and the live portal provides current administrative corroboration. The annex was visually checked because extracted text omits some insertions. Complete reconciliation of subsequent instruments remains required before publication beyond draft status.
 
 The 2024 article 125 bis amendment provides an administrative procedure for failure to register; this Guide does not provide a full penalties manual. Rental-profit taxation, residence, social contributions, business contribution, property and other local taxes need separate Guides. Independent accountant review remains outstanding. Checked 22 October 2026; initial topic coverage only.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

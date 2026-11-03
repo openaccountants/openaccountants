@@ -54,21 +54,3 @@ Patente is due **between 1 October and 31 January** of the current fiscal year, 
 Notify creation, transfer, disposal or cessation in writing within **30 days**. Article 28 requires new commune taxpayers to declare and pay the first-year fixed charge at expiry of that period; its transfer exception must be checked for a move between communes. [2026 Code, articles 27–28, page 14](https://mef.gouv.ht/storage/app/uploads/public/6ac/fb4/9bc/6acfb49bca658143176190.pdf#page=14).
 
 The [older DGI patente page](https://dgi.gouv.ht/dgi_sev/la-patente/) mixes 2-per-thousand and 4-per-thousand text and an older commune grouping. Use the enacted articles cited here for this new-code draft. Patente does not establish completion of incorporation, sector licensing, other taxes or all business compliance. Implementation decisions and independent review remain outstanding.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

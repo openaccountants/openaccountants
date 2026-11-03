@@ -70,7 +70,6 @@ Residents and non-residents earning salary, business, professional, rental or in
 | Professional activity tax (TAP) | Removed | DGI circular of 13 Feb 2024 | 2026 | https://web.archive.org/web/20250219180444/http://mfdgi.gov.dz/fr/a-propos/actu-fr/circulaire-relative-a-la-suppression-de-la-taxe-sur-l-lactivite-professionnelle-tap |
 | Interest | unverified: 10% in the old skill | Not read in the law | 2026 | unverified |
 
-
 ## The base
 
 Residents are taxed on worldwide income and non-residents on Algerian income: this is the old skill's rule, and the CIDTA text was not opened, so treat it as unverified.
@@ -103,7 +102,6 @@ Patterns, defaults and refusal rules kept so no work is lost. Any figure here is
 - **R-DZ-4**: Hydrocarbons / mining-sector income. "The hydrocarbons sector has a distinct fiscal regime. Out of scope. Escalate to a specialist."
 - **R-DZ-5**: Arrears / enforcement. "Client has outstanding tax or social-contribution arrears (CNAS 10% + 3%/month, CASNOS 5% + 1%/month, IFU surcharges up to 25%). Do not advise. Escalate to an Algerian tax professional immediately."
 - **R-DZ-6**: VAT (TVA) return requested. "This skill covers income tax (IRG/IFU) and related social contributions only. For Algerian VAT (TVA, standard 19%), use a dedicated VAT skill."
-
 
 This is the deterministic pre-classifier. When a bank statement / ledger transaction matches a pattern below, apply the treatment directly. Patterns use the local terminology (French/Arabic transliteration) common on Algerian bank statements. Match by case-insensitive substring on the counterparty name or description. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
 
@@ -357,7 +355,6 @@ Provisional instalments: new taxpayers skip them in the first year; overpayments
 | Office assessment | Tax increased by 25% (art. 192, LF 2026 art. 17) | https://www.joradp.dz/FTP/JO-FRANCAIS/2025/F2025088.pdf |
 | Tax fraud | 2 to 5 years; 5 to 10 years and 5,000,000 to 10,000,000 DA if organised (art. 303) | same |
 
-
 ## Cross-border points
 
 Pensions paid to people domiciled abroad follow the monthly scale. Artists domiciled abroad bear 15% on fees, with exceptions (https://web.archive.org/web/20260901165005/https://www.mfdgi.gov.dz/fr/particuliers/irg-traitements-et-salaires). Pay from an employer with no Algerian tax home: the employee computes and pays the tax. Treaty relief is out of scope; refer it.
@@ -425,21 +422,3 @@ expected:
 mfdgi.gov.dz and cnas.dz refused every direct and Chrome connection on 2026-11-01; DGI pages are Internet Archive copies, marked as such.
 
 Not yet confirmed: interest withholding rate (10% in the old skill); property capital gains rate; non-resident capital gains rate (20% in the old skill); equity compensation rate; spouse and dependent reductions; entertainment deduction limits; deductions list for individuals; 4-year limitation period; the current text of CIDTA, because the 2026 codes page could not be opened (mfdgi.gov.dz refuses connections, so archived copies were used, and the code PDFs are not archived); whether any complementary finance law for 2026 changes these figures; whether the 30,000 DA gate is tested on gross or on taxable pay, since the DGI page says "revenus" and the formula only joins up on taxable pay; IFU late-declaration rates after LF 2025, since the DGI page predates it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

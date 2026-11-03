@@ -543,22 +543,4 @@ This skill is not tax advice. Check the linked Belastingdienst pages for the per
 | Belastingdienst, KOR voorwaarden | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-10-31 |
 | Belastingdienst, aangifte corrigeren | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren | 2026-10-31 |
 
-Not yet confirmed: the decree that sets the 5% belastingrente for 2026 (only the Belastingdienst overview was read; AWR art. 30hb delegates the rate to a decree); the statutory source of the €1,883 and €10,000 annual-return conditions, of the €50 minimum payment penalty, and of the car private-use percentages (2.7%, 1.5%) and their cap (Belastingdienst pages only); whether belastingrente is charged on an error of €1,000 or less that is corrected in a return filed more than 3 months after the year. How-to: the on-screen labels inside Mijn Belastingdienst Zakelijk were not read, because they sit behind login. 
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the decree that sets the 5% belastingrente for 2026 (only the Belastingdienst overview was read; AWR art. 30hb delegates the rate to a decree); the statutory source of the €1,883 and €10,000 annual-return conditions, of the €50 minimum payment penalty, and of the car private-use percentages (2.7%, 1.5%) and their cap (Belastingdienst pages only); whether belastingrente is charged on an error of €1,000 or less that is corrected in a return filed more than 3 months after the year. How-to: the on-screen labels inside Mijn Belastingdienst Zakelijk were not read, because they sit behind login.

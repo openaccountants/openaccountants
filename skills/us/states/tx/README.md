@@ -15,7 +15,6 @@ covered_by:
 | Sales tax | Yes (6.25% state + up to 2% local) |
 | Franchise / gross receipts tax | Yes — Texas Franchise (Margin) Tax |
 | Tax authority | [Texas Comptroller of Public Accounts](https://comptroller.texas.gov) |
-| Quality tier | Q2 — reviewed content |
 
 ## Files in this folder
 

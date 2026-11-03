@@ -226,21 +226,3 @@ The 2025 Corporate Tax return of a calendar-year company was due by 30 September
 | A17: whole original Arabic Decision arts 1-3, all six cases | https://tax.gov.ae//Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing-Arabic.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
 
 Not yet confirmed: NON-OPERATIVE HOLDS: the broad personal-income-tax assertion beyond the confirmed Wage/Corporate Tax exclusion; all social coverage and routing assertions (UAE/GCC/expatriate, Abu Dhabi fund, first-insurance and free-zone differences), GPSSA/Abu Dhabi contribution rates, bases, caps, deductions, frequency and due dates; Labour Law gratuity coverage, day-count, accrual and payment; WPS and unemployment insurance terms; pre-1 October 2026 employee-benefit exception wording; detailed exemption applications for pension/social security funds. The prior writer recorded blocked GPSSA and legislation-portal access, so the old assertions are preserved as holds, not verified law. The separate MoF Decision 149/2026 URL returned 404 in this repair; the current wording is read in the authority's consolidated Regulation. See immutable old text and destinations in evidence/uae-2026-closeout.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -33,7 +33,6 @@ tier: 2
 | Filing portal | incometax.gov.in |
 | Filing deadline | 31 July 2026 (non-audit cases) |
 | Contributor | Open Accountants Community |
-| Validated by | Pending -- requires sign-off by a Chartered Accountant (India) |
 | Skill version | 2.0 |
 
 ### New Tax Regime Rate Table -- FY 2025-26 (Default) [T1]
@@ -547,5 +546,3 @@ ONBOARDING QUESTIONS -- INDIA INCOME TAX
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Chartered Accountant or equivalent licensed practitioner in India) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

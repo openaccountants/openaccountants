@@ -235,21 +235,3 @@ expected:
 | FOD Financiën, investeringsaftrek | https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/belastingvoordelen/investeringsaftrek | 2026-10-22 |
 
 Not yet confirmed: the Biztax filing deadline for AY 2027 (31 December 2026 year-ends), not published on 22 October 2026; the exact periods to which the earlier temporary 40% basket share applied (the 70% text in force for 2026 was confirmed, the 40% history was not); the size thresholds of art. 1:24 WVV (the FOD Financiën advance payments page shows EUR 9,000,000 turnover and EUR 4,500,000 balance sheet, which may be out of date, so this skill does not rely on them); and the AY 2028 advance payment percentages that follow from the law of 15 July 2026.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

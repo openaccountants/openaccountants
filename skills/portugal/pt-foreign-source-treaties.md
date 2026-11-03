@@ -229,21 +229,3 @@ expected:
 | Aviso 18/2026/2 (IGCP), late payment interest 7.221% from 1 January 2026 | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-23 |
 
 Not yet confirmed: per-country treaty withholding rates (the AT treaty tables were not read; read each treaty); the MLI ratification and entry-into-force dates for Portugal and which treaties it modifies; whether the IFICI exempt income or 20% income changes the rate applied to a foreign pension that is aggregated (art. 81(4) says exempt income counts for the rate on other income, but AT guidance on this case was not read); whether the 25% residential rent rate of art. 72(2) is applied by AT to foreign property; the Anexo J table and code numbers (the 2027 return instructions were not read); the current list of low-tax jurisdictions (Portaria 150/2004 as amended); the late payment interest rate for 2027.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

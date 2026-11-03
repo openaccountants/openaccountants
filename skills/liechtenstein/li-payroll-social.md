@@ -163,11 +163,9 @@ For compulsory accident insurance, UVersG article 79 allocates occupational-acci
 
 This reproduces the institution's section 6 example: 15 April–28 December gives 254 contribution days under its stated convention and CHF 96,200 pay. The cap is CHF 88,900 (254 x CHF 350), giving CHF 889 at the combined 1% (CHF 444.50 each side). This is not 254 ordinary actual-calendar days.
 
-
 #### Assumed established wage-withholding instruction
 
 Assume a single resident employee with CHF 90,000 expected full-year gross, no special category/treaty or revised authority instruction, and a confirmed 9% withholding rate. CHF 7,500 current gross gives CHF 675 withholding, before other deductions. This does not calculate final individual tax.
-
 
 ## Deadlines and filing
 

@@ -94,21 +94,3 @@ Get entity tax regime and any frequency authorization, pay dates and workplaces,
 | [Signed Loi 2026-004, LFR 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), tax amendments and article 22 entry provision read | 2026-11-01 |
 
 **Not yet confirmed:** Exact radio/posted publication date activating the July LFR under article 22; do not resolve a transaction at that transition without the publication evidence. current CNaPS employer/employee rates, category-specific caps and effective dates through all of 2026, binding monthly/quarterly contribution calendar (current FAQ and old Guide disagree), health-provider rates/base, training contribution, social penalties, treaty certificates and live tax portal fields. Old 13%/1%, 5%/1%, eight-SME and training-equals-CNaPS statements remain unverified and must not be used to calculate net pay.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

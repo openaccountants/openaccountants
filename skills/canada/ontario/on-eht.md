@@ -192,21 +192,3 @@ EHT and WSIB use different definitions of "remuneration". EHT includes taxable b
 - **Income Tax Act (Canada), s. 256** — association rules incorporated by reference under s. 1(2) EHT Act.
 
 **Verification status:** pending. This skill must be reviewed and signed off by a credentialed Ontario tax practitioner (CPA Ontario member in good standing with current Ontario payroll-tax experience) before reliance for client work. Coordinate with **canada-payroll** for federal CPP/EI/income-tax-withholding obligations on the same payroll base.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

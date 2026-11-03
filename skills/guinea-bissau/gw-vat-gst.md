@@ -125,21 +125,3 @@ expected:
 | OGE 2026, Lei do Orçamento, arts 6 to 17 (draft-form text, law number blank; the tax chapter only was read) | https://www.mef.gw/publicacoes/orcamento-geral-do-estado/2026-oge2026/viewdocument/195 | 2026-11-01 |
 
 Not yet confirmed: whether the 2026 budget text is in force, which decides the 15%, 7% and new Annex I; the source of the small-taxpayer tax law (art. 45) and its rate; box numbers of the IVA return and whether it runs on Kontaktu; the Annex I in force before the budget; Lei 5/2022 penalty amounts for late IVA (the law text was not on the portal page read). The old 'real estate' exemption is narrowed to housing as art. 13 says.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

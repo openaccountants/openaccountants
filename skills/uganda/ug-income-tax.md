@@ -115,21 +115,3 @@ expected:
 | URA, Object to Tax Assessment | https://ura.go.ug/en/domestic-taxes/objection-appeals/object-to-tax-assessment/ | 2026-11-01 |
 
 Not yet confirmed: the 2021 text writes the UGX 30m to 50m band as "Eight thousand shillings plus 0.5%", which does not run on from the band below (0.4% of 20m is 80,000), and the 2024 text was not re-read on this; the rental rate in the amending Act itself, and whether 2026 changed the rental threshold; the residence test (old file: 183 days in 12 months, permanent home, government officials; the wording was not re-read in law, so do not state it as confirmed); whether employee NSSF is deductible for PAYE (old file said no, confirm); owner-occupier mortgage relief; the old statement that PAYE is final where there is no other income beyond URA's filing exception; the provisional instalment formula in the 2024 text; the enacted text of the Income Tax (Amendment) Act 2026 (ULII blocked script access and it was not found listed).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

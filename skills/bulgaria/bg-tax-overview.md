@@ -47,21 +47,3 @@ Bulgaria taxes personal and corporate income at a flat 10%. Bulgaria adopted the
 | Bulgarian National Bank, National Euro Changeover Plan (the fixed rate BGN 1.95583 = EUR 1) | https://www.bnb.bg/bnbweb/groups/public/documents/bnb_download/eurochangeoverplan_en.pdf | 2026-10-30 |
 
 Not yet confirmed: the State Gazette page of the 2026 State Social Insurance Budget Act did not load (dv.parliament.bg timed out), so the NSSI copy of the Act was used; health insurance rates and contribution splits are not restated here (see bulgaria-social-contributions); nra.bg served a human check on 30 October 2026, so no NRA page was read for this update.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

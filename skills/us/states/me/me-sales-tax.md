@@ -61,8 +61,6 @@ Informational only. Review by qualified professional required before filing.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Checked examples
 
 ```oa-check
@@ -89,21 +87,3 @@ expected:
 
 1. 36 MRSA s.1811(1)(D), read 2026-11-01 -- https://legislature.maine.gov/statutes/36/title36sec1811.html
 2. 36 MRSA s.1754-B(1-B)(B) and (K), read 2026-11-03 -- https://legislature.maine.gov/statutes/36/title36sec1754-B.html (the earlier transaction-count test was removed by PL 2021, c.181, Pt. B, ss.4 and 5, for sales from 1 January 2022; LD 1216 fiscal summary, 130th Legislature: https://legislature.maine.gov/doc/6615)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network -- accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

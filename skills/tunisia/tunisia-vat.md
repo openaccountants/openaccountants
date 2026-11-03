@@ -128,21 +128,3 @@ expected:
 | DGI page on online filing, archived April 2025; steps read | https://web.archive.org/web/20250419084126/https://jibaya.tn/blog/la-tele-declaration-fiscale/ | 2026-11-01 |
 
 Not yet confirmed: Late penalties. Old-file blocks on staff accommodation, entertainment and gifts, and invoices without a tax number, not found in art. 10 as read. Suspension 80% test. Prorata numerator. Table A and B 2026 changes, since the 2026 and 2025 consolidated PDFs would not open and LF 2024 was not read. General rule behind the 22nd in the DGI calendar. Excise example with 25% rate. Return line numbers. Supplier pattern treatments of telecom and water rates, carried from the old file.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

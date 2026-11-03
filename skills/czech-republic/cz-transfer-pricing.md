@@ -241,21 +241,3 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: the form version of the annex for tax periods starting in 2026 (vzor 12 covers periods starting in 2025 and parts of 2026 periods whose filing deadline falls by 31 December 2026; a later vzor had not been found); whether Pokyn GFŘ D-35, announced in D-34 to replace D-334, has been issued (it was not found on the Financial Administration pages read, and D-334 is listed as current); the Czech act that transposes EU directive 2017/1852 and its procedure; the day-count basis the Financial Administration uses to compute late payment interest; whether Article 9(2) appears in each Czech treaty; and the point in the range (median or nearest edge) to which the tax office adjusts a price that falls outside the arm's length range, which the guidance read does not state.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

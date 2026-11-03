@@ -267,21 +267,3 @@ All read on 2026-10-22. Normattiva texts are the versions in force on 30 June 20
 - Agenzia delle Entrate, IRPEF rates and the 2026 change to 33%: https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef
 
 Not yet confirmed: the taxable part of royalties paid to non-resident companies (TUIR art. 54-octies reduces royalties by 25% for individual authors and inventors, which would give 22.5% of the gross, but we did not confirm the same base for companies); the late-payment interest rate and the interest rate on exit tax instalments (D.Lgs. 241/1997 art. 20); any AIRE non-registration penalty; and the Regulation (EC) 883/2004 text, which we could not fetch from EUR-Lex today.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

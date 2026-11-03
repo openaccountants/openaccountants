@@ -125,21 +125,3 @@ expected:
 | [CCIN/Maison de l'Entreprise, formalities leaflet](https://cciniger.org/download/formalites-de-creation-dentreprise/) | One-page SARL and individual document lists, capital-amendment notes and printed administrative/tax claims read; outdated/conflicting assertions are identified, not adopted as current law | 2026-11-01 |
 
 Not yet confirmed: complete 2026 national amendment/currentness chain beyond the read instruments; old claims about SME popularity, larger-business suitability and commonly chosen capital; current guichet forms/portal/fields/acknowledgements, fees and three-day timeline; NIF/CNSS registration sequence and obligations; current foreign-founder/UBO requirements; operative accounting forms/SYSCOHADA application details; corporate tax, ITS/CNSS, monthly TVA and patente schedules; full public offering, SA kind-contribution and SAS procedures; national fines/interest, tax PE, treaty, exchange-control and immigration treatment. The older leaflet's nominal-share floor conflicts with the actual replacement article 5, and its default tax regime/VAT/public-contract assertions are not relied on. No accountant has attested to this draft.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -205,21 +205,3 @@ expected:
 | Belastingdienst, conditional withholding tax return and payment | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/aangifte-doen-en-betalen-+bronbelasting | 2026-10-23 |
 
 Not yet confirmed: which states have a treaty with the Netherlands containing a dividend article, and each treaty's dividend rate (the 10% in example 1 is an assumed treaty rate, and example 2 assumes no treaty covers the Cayman parent); the time limit for each treaty-based refund (3 or 5 years, by treaty); and how a non-resident individual's box 2 charge interacts with the dividend tax (see nl-cross-border).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

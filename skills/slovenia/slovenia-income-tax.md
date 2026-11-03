@@ -278,21 +278,3 @@ expected:
 Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published. The content of ZIURS and whether it enters into force: it goes to a referendum on 6 December 2026, and if it enters into force it changes the 2026 normed-expense rules from 1 January 2026 (FURS, 16 October 2026); its text was not read.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

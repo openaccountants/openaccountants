@@ -220,21 +220,3 @@ Read on 2026-10-22:
 - Kantonales Steueramt Zürich, Zürcher Steuerbuch Nr. 133.1 (filing notice): https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html
 
 Not yet confirmed: the Zurich cantonal and communal tax-at-source rate for non-resident board members; the deadline for a treaty refund claim of Verrechnungssteuer by a German resident; the period for registering with the commune on arrival (cantonal law); the capped rates in the French, Italian and Austrian frontier-worker arrangements.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

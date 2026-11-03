@@ -117,21 +117,3 @@ expected:
 Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-payroll-social.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: Later 2026 law and implementation; CNSS employee/employer/branch splits and wage ceilings, including the conflicting 4% legacy and 4.55% Gazette; CAMU governing rates/base and remittance; TUS headline rates and residency/petroleum categories; current SMIG; operative monthly withholding tables/returns/boxes/payment routes; departmental/regional local tax; social/tax penalties. Do not use this partial pack to run a live payroll.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

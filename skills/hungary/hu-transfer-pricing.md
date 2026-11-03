@@ -12,8 +12,6 @@ tier: 2
 
 # Hungary transfer pricing (szokásos piaci ár): 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 **What changed for 2026.** A new ministerial decree, 45/2025. (XII. 23.) NGM rendelet on transfer pricing records and data supply, replaced 32/2017. (X. 18.) NGM rendelet on 23 January 2026 (45/2025, 14. § and 16. §: in force on the 31st day after its 23 December 2025 promulgation). It applies first to records and data supply for tax years starting in calendar 2026 (decree 45/2025, 15. § (1)). The main changes for a typical client:
 
 - The local file (helyi dokumentum) exemption rises from HUF 100 million to **HUF 150 million** per transaction (or aggregated group of transactions) a year (45/2025, 4. § (4) a); old rule: 32/2017, 1. § (2) e)).
@@ -306,21 +304,3 @@ expected:
 | Nemzeti Jogszabálytár short address (official) | https://njt.hu/jogszabaly/1996-81-00-00 | 2026-10-23: connection refused; the same database answered at njt.jog.gov.hu |
 
 Not yet confirmed: the layout of the 2629 return's transfer pricing sheets for tax year 2026 (not yet published by NAV); whether a 2025 taxpayer opting into 45/2025 under its 15. § (2) can also use the HUF 150 million local file exemption for 2025, or only the new content rules; the Ptk. 8:2. § text on the official site (read in the net.jogtar.hu reprint only); NAV's audit practice on choosing a point other than the median; MAP filing details now that the Minister is the competent authority (whether NAV's TPMAP form is still used, whether the request is free of fees, and which treaties set a 2-year deadline: NAV's archived 2020 guide named Canada, Indonesia, the Philippines and Portugal); whether a request is accepted where a good-faith foreign self-revision caused the double taxation (stated only in the archived NAV guide).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

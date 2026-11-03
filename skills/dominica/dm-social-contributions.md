@@ -50,21 +50,3 @@ For established prior-year earnings of EC$60,000, annual contributions are EC$8,
 ## Self-check and exclusions
 
 Retain the coverage and redundancy classification, earnings reconciliation, ceiling calculation and payment receipt. Confirm age transitions, reciprocal-agreement exemptions, irregular pay and partial periods separately. Voluntary-contributor rates and benefit entitlements are not a substitute for a coverage decision. General research reference; independent review remains pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

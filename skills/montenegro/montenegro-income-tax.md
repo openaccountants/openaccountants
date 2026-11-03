@@ -555,21 +555,3 @@ The [additional controls](../../evidence/ledgers/montenegro-income-tax-evidence/
 [pausalnotice]: https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine
 
 Not yet confirmed: live IRMS GPP-FL fields/acceptance rules and a 2026 return mapping for supplementary entrepreneurship, Montenegro advances already paid on foreign salary, country-level foreign-credit allocations, or foreign gambling after the mid-year rate change (the printed 2025 main calculation uses 15% for its pooled foreign-income line); corrected portal instructions for the documented A/A1/F/H contradictions and any same-country category-allocation rule for foreign credits; partial-year band proration and rounding (A's example rounds 8,400/365 to 23.01 before multiplying by 302, giving 6,949.02 rather than 6,950.14 at full precision); the PIT-specific rulebook classifying assets into depreciation groups (art. 23(8)); each municipality's current surtax rate (only the 13% and 15% caps are confirmed); the 2026 PIO annual ceiling (the old EUR 68,765 was a 2024 figure); the treatment of government grants in business income; the dual net minimum wage of EUR 670 and 800 and the employer Labour Fund and Chamber levies (see the payroll skill); the list of underdeveloped municipalities; and a September 2026 Government proposal to change salary taxation from 1 January 2027, not found enacted. The pausal scale and promulgated printed schedules are now retained, so their former source-access gaps are closed; the remaining ordinary return-mapping gaps keep IT-IND partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

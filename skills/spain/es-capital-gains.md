@@ -220,25 +220,6 @@ expected:
 
 | [LIRPF DT29](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#dtvigesimanovena), [RIRPF42.1/4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a42) | Pre2017listed-rights basis history excluding alreadytaxedamounts; positive-proceeds annuity ratio capped at the gain | 2026-10-28 |
 
-
 **Not yet confirmed:** exact DT 9 equality-at-cap treatment where decisive; specialised non-cash restructuring, succession-agreement or treaty outcomes without the required fact/source record. Ordinary sale basis, savings-loss integration and current savings tax are supplied. Independent whole-pack review remains outstanding.
 
 > Contributed by OpenAccountants.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

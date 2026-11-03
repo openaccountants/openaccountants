@@ -26,21 +26,3 @@ tier: 2
 - **Financial statement filing** — Larger entities must file audited/reviewed financial statements with the Registro de Estados Contables (AIN) within set deadlines after year-end ((approx — thresholds and deadlines vary by size))  _(Auditoria Interna de la Nacion (AIN) - Registro de Estados Contables)_
 
 The common vehicles are the SAS (simplified stock company), SRL (limited liability company) and SA (stock corporation). The SAS is the modern default for SMEs with a largely digital incorporation process. New companies must register with the Registro Nacional de Comercio, DGI and BPS.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

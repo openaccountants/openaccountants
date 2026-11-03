@@ -92,21 +92,3 @@ Get taxpayer/legal identity and TIN, activities, income type/source, actual asse
 | [2021 cutover](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), section 84 deletion and VAT administrative substitutions | 2026-11-01 |
 
 **Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; universal current assessment-year default, annual income-tax filing deadline, full cross-border/TP annual compliance, company-law incorporation, current exemption/commencement orders, specialist sectors and authenticated portals. The partial declarations in README control this pack’s scope. No accountant attestation or full-country completion is claimed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

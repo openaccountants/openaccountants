@@ -84,21 +84,3 @@ Company at TND 100,000 turnover: floor applies, TND 500.
 | Code de la TVA, 2023 French edition, archived copy of the DGI file; arts. 2, 7, 10, 15, 18, 19, 19 bis and Tables A and B read. The 2026 edition PDF could not be opened | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf | 2026-11-01 |
 
 Not yet confirmed: Social Solidarity Contribution rate.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

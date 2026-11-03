@@ -318,21 +318,3 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: the 2026 přehled due dates (3 May, 3 June and 2 August 2027 are computed from the one-month rule; ČSSZ has not yet published them); the 2027 minimum advances (computed from Government Regulation 177/2026 Coll.; ČSSZ and VZP have not yet published them); whether ČSSZ and VZP in practice keep the penalty rate fixed for the whole default as Regulation 351/2013 § 2(1) reads (VZP lists its daily rates by period without saying).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

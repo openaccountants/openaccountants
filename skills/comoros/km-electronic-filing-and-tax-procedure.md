@@ -100,21 +100,3 @@ expected:
 | Law 24-016/AU, Finance Law 2025, articles 1 to 25, scan, OCR read; no CGI or LPF change found beyond art. 20 | https://finances.gouv.km/wp-content/uploads/2024/12/Decret-N%C2%B024-186PR-du-19-decembre-2024-portant-promulgation-loi-N%C2%B024-016PR-Portant-Loi-de-Finances-2025.pdf | 2026-11-01 |
 
 Not yet confirmed: the Amending Finance Law 2025 (Law 25-019/AU) could not be opened (official link returned 404), so any tax change in it is unverified. The Finance Law 2024 was not re-read in this refresh. The official tax authority site could not be reached. No consolidated 2026 code was found.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -40,21 +40,3 @@ A parcel of exactly 22,000 square feet meets the size boundary; 22,001 does not.
 Retain the registered deed, parcel survey, prior-title evidence, loan agreement, trace of loan use and lender statement separating interest paid from principal. Record residential intent and residence evidence. Reconcile this claim separately from owner-occupied dwelling-house deductions and avoid claiming the same expenditure twice without a legal basis.
 
 Joint purchasers, refinanced loans, mixed-use borrowing, pre-registration interest and insufficient assessable income require review of the full Act and the facts. Section 59D does not supply a special credit or a transfer-tax exemption. Current filing mechanics and independent accountant review remain outstanding.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

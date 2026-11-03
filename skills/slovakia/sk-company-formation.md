@@ -46,21 +46,3 @@ The figures below are in force in 2026. From 17 August 2026 the Commercial Regis
 | VAT Act, Act No. 222/2004 Coll., version in force from 01.01.2026: § 4(1) | https://www.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html | 2026-10-30 |
 
 Not yet confirmed: what a notary charges when registering the company as registrar (the Court Fees Act sets no court fee for that route); trade licence (živnosť) fees and steps under the Trade Licensing Act (Act No. 455/1991 Coll.); how a limited partnership's share attributable to limited partners is taxed; the "full setup ~2-4 weeks" in the earlier version of this skill (no official source).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

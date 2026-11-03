@@ -36,21 +36,3 @@ Check the destination's import treatment separately. Customs' general overseas V
 The customs page cites CGI article 294(1) for Mayotte's VAT non-application. Retrieved tax-authority publications give inconsistent dates for replacing CGI references with the CIBS, and a direct current-date Légifrance fetch failed. The non-application statement is corroborated by customs, but this research has not completed the amendment chain governing the precise new reference and commencement. Do not use this Guide to prescribe a future CIBS invoice citation. [Customs](https://www.douane.gouv.fr/fiche/vos-echanges-commerciaux-avec-mayotte); [tax-authority DOM tax page](https://www.impots.gouv.fr/professionnel/questions/quels-impots-dois-je-payer-pour-mon-activite-dans-les-dom).
 
 Current product tariffs, exemptions, detailed customs valuation, service transactions and electronic reporting obligations still need separate verification. The tax-authority URL returned a maintenance page when directly opened; the research record distinguishes that from retrieved search text. Independent source review and accountant attestation remain pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -273,7 +273,6 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | RETENUE A LA SOURCE | Withholding tax | BNC WHT (7.5%) |
 | TVA | VAT (18%) | Liability/recoverable, not income/expense |
 
-
 ## Judgement points
 
 - Parts: use 1 part until the family situation is documented.
@@ -304,21 +303,3 @@ Deterministic pre-classifier. Match by case-insensitive substring on the counter
 | CNPS, employer page (paying contributions read; its SMIG and pension ceiling are out of date, the communiqué wins) | https://www.cnps.ci/employeur | 2026-11-01 |
 
 Not yet confirmed: the full consolidated Code général des Impôts and Livre de Procédures fiscales 2026 (DGI lists them in its paid kiosk; the text was not opened), so article numbers come from the DGI documents above; whether employee CNPS reduces the ITS base (the DGI texts read do not say; this skill uses gross); whether Art. 36 quarterly payment wording for the micro tax sits in Art. 79 or a micro article (the article heading and motives name both, the quoted text amends Art. 79); the DGI late filing and late payment rates carried by the earlier version (5%, 10%, 100%, monthly interest; LPF arts. 161 to 169 not opened); capital gains on buildings 17% and on shares; deductible optional social contributions limit; the SMAG; non-resident withholding 20% (Art. 92 not opened); RSI IMF cap (the 2025 DGI table shows none for RSI).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -84,21 +84,3 @@ E-file and payment portal documentation: citation to confirm
 State tax authority — corporate income tax pages: citation to confirm Form 600 instructions, current year: citation to confirm State statute / regulations on corporate income and net worth tax: citation to confirm E-file and payment portal documentation: citation to confirm
 
 > Contributed by Jeff Watts, ACF-04080.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

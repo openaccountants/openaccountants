@@ -37,14 +37,11 @@ tier: 2
 
 ### Scope and effective periods
 
-
 The agreement entered into force on **24 March 2020**. Withholding provisions apply to amounts paid or credited from **1 May 2020** in both territories. UK income tax and capital gains tax apply from the assessment year beginning **6 April 2020**, and corporation tax from the financial year beginning **1 April 2020**. Gibraltar income tax applies to assessment years beginning from **1 July 2020**, and corporation tax to accounting periods beginning from that date. These are different commencement tests. [HMRC status page](https://www.gov.uk/government/publications/gibraltar-tax-treaties); [Article 29](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-29-entry-into-force).
 
 This Guide covers investment-income source-tax restrictions and capital-gain allocation, not all agreement articles. Determine the domestic charge first, then the agreement's restriction. An agreement ceiling does not impose a tax absent under domestic law. A source exemption does not establish residence-country exemption or eliminate the distributing company's tax. The existing named taxes are Gibraltar income and corporation tax and UK income, corporation and capital gains tax. [Articles 2 and 10–12](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
-
 ### Establish entitlement before using a rate
-
 
 Article 1 covers residents of one or both territories. For a wholly or partly transparent entity or arrangement, income is treated as income of a resident only to the extent that the territory treats it as that resident's income for tax purposes. Establish the actual recipient and beneficial owner; an intermediary's address is insufficient. [Article 1; Articles 10–12](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
@@ -64,14 +61,11 @@ For an individual resident in both territories, apply the sequence: permanent ho
 
 ### Dividends: ordinary exemption and property distributions
 
-
 When the beneficial owner is resident in the other territory, Article 10(2)(a) ordinarily exempts dividends in the paying company's territory. Article 10(2)(b) instead allows source tax capped at **15% of gross dividends** where an investment vehicle pays from income or gains derived directly or indirectly from immovable property, distributes most of that income annually, and that property income is exempt from tax. If the beneficial owner is a pension scheme established in the other territory, the exemption applies instead. This is a specific investment-vehicle exception, not a 15% rate for all property-company dividends. [Article 10(1)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-10-dividends).
 
 The agreement's pension-scheme definition requires general income-tax exemption and operation to administer/provide pension or retirement benefits or earn income for such arrangements. Obtain evidence of those conditions, not just a fund's name. If the dividend holding is effectively connected with the beneficial owner's permanent establishment in the paying company's territory, Article 7 applies instead of Article 10(1)–(2). [Articles 3(1)(k), 10(4)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
-
 ### Interest: recipient or payer qualification is essential
-
 
 Article 11(2) gives exclusive residence-territory taxation only where the beneficial owner is resident there **and at least one Article 11(3) condition is met**. The qualifying recipient categories are:
 
@@ -87,25 +81,19 @@ Alternatively, the payer can qualify as a territory, political subdivision, loca
 
 If none of those routes is established, Article 11(1)–(2) does not supply a fallback reduced percentage: source taxation under domestic law remains permitted. The authority-determination route is not a self-certification. A bank qualifies as a named interest recipient; this does not automatically qualify it for royalty relief. [Articles 11(2)–(3), 12(2)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
-
 ### Royalties: a different eligibility list
-
 
 Article 12(2) also requires the beneficial owner to be resident in the other territory and at least one paragraph (3) condition. Its listed recipients are: that territory, political subdivisions, local authorities or statutory bodies; individuals; companies with substantial regular trading in the principal share class on a recognised stock exchange; companies with **less than 25%** non-resident direct or indirect ownership of shares or other rights; and other persons receiving the prescribed competent-authority principal-purpose determination. Unlike interest, the royalty list has **no separate pension, bank or independent financial-institution category and no qualifying government-payer alternative**. A recipient must establish an actual listed route. [Article 12(2)–(4)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-12-royalties).
 
 Royalties cover consideration for use or rights to use copyright (including cinematograph films), patents, trademarks, designs/models, plans, secret formulae/processes and industrial, commercial or scientific know-how. Classify the contract; a software or service invoice label alone is not a treaty classification. The Protocol defines recognised stock exchanges for Articles 11–13, including named exchanges and exchanges agreed by the authorities. Verify the actual venue and trading conditions, not only the company's listed status. [Article 12(5); Protocol paragraph 2](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
-
 ### Source, permanent establishments and related parties
-
 
 For interest and royalties, source normally follows payer residence. Where a permanent establishment incurred the relevant indebtedness or liability and bears the payment, source follows that establishment instead, regardless of payer residence. If the beneficial owner's debt claim or royalty right/property is effectively connected with its permanent establishment in the source territory, Article 7 replaces the investment-income exemption rules. [Articles 11(6)–(7), 12(6)–(7)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
 Where a special relationship makes the payment exceed the amount independent parties would agree, Articles 11 and 12 protect only the independent amount. The excess remains taxable under each territory's law with regard to the agreement's other provisions. Do not apply a zero treaty rate to an entire related-party payment without checking its amount. [Articles 11(8), 12(8)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
-
 ### Capital gains: classify the disposed asset before allocating tax
-
 
 Article 13(1) allows the territory where immovable property is situated to tax gains on its disposal by a resident of the other territory. Article 6 defines immovable property primarily by the law where it is situated, with specified inclusions such as usufruct and natural-resource payment rights; ships, boats and aircraft are excluded from that definition. Establish the legal interest sold and its location. Treaty permission to tax does not establish a domestic charge, allowable cost or filing deadline. [Articles 6 and 13(1)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
@@ -114,8 +102,6 @@ Article 13(1) allows the territory where immovable property is situated to tax g
 Article 13(2) permits the property territory to tax gains from shares or comparable interests, including partnership or trust interests, deriving **more than 50% of their value directly or indirectly** from immovable property in that territory, unless paragraph (3)'s exclusion applies. This is an asset-value derivation test, not the seller's ownership percentage. Do not substitute turnover, rental-income share, or the dividend withholding ceiling. The paragraph does not specify a 365-day testing window; a time or valuation rule needs its own verified basis. [Article 13(2)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-13-capital-gains).
 
 Paragraph (3) excludes interests with **substantial and regular trading on a recognised stock exchange**, but removes that exclusion for interests in the specified investment vehicle distributing property-derived income/gains where most of that income is exempt and distributed annually. A bare listing is insufficient, and the investment-vehicle exception must still be checked for traded interests. Use the Protocol's recognised-exchange definition. [Article 13(3); Protocol paragraph 2](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
-
-
 
 **Classification example:** assume interests derive 70% of value from relevant property and trade substantially and regularly on a recognised exchange. An ordinary entity outside paragraph (3)'s investment-vehicle exception has excluded interests for paragraph (2). If it meets the specified property-investment-vehicle conditions instead, exchange trading does not provide that exclusion. Then paragraph (2) permits property-territory taxation, subject to the agreement's other rules. Do not apply the **15% dividend** ceiling to the disposal gain: Article 13 specifies taxing rights, not that percentage. [Articles 10(2)(b), 13(2)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
@@ -130,7 +116,6 @@ For every disposal, retain residence evidence, the sale contract, asset/right cl
 ## Deadlines and filing
 
 ### Company UK-interest relief: published application evidence
-
 
 HMRC states that company treaty withholding relief is not automatic: the ordinary certified route uses **DT Company** with residence certification, unless the Treaty Passport Scheme applies. Relief at source and repayment of prior deductions are distinct requests; retain tax vouchers even where not submitted initially. HMRC decides entitlement and authorises the allowed treatment. [Company relief guidance](https://www.gov.uk/guidance/double-taxation-relief-for-companies).
 
@@ -151,9 +136,7 @@ A Gibraltar evidence packet and an HMRC application are not the same as an issue
 
 Exact Gibraltar lodgement mechanics, claim limitation periods, Treaty Passport operation, individual/REIT procedures and treatment of inconsistent residence facts remain open. The directors' declaration must be supported by records and reviewed for the particular company; it is not a form of professional attestation of this Guide.
 
-
 ### Relief file and remaining verification
-
 
 For each payment, retain: both parties and beneficial-owner evidence; residence analysis; payment date and classification; gross amount and domestic source tax; recipient-category proof, ownership chain and rights where relevant; any authority determination; permanent-establishment and independent-price analysis; principal-purpose assessment; and the actual relief application, authority response and repayment record. This is a recommended working-paper structure, not an official form list.
 
@@ -168,7 +151,6 @@ This Guide does not compute a separate penalty or interest amount for the stated
 ## Cross-border points
 
 ### Anti-abuse and dispute procedure
-
 
 Article 28 denies an item-specific benefit where obtaining it was a principal purpose of an arrangement or transaction, unless granting it accords with the relevant provisions' object and purpose. Paragraph (2) provides a request for competent-authority consideration of benefits that would have arisen without the arrangement; it is not automatic reinstatement. Where an individual's residence-territory law taxes the income/gain by remittance or receipt rather than its full amount, paragraph (3) limits source relief to the amount taxed there. Apply this conditional text to verified current domestic facts, not an assumed continuing remittance regime. [Article 28](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-28-entitlement-to-benefits).
 
@@ -194,7 +176,6 @@ expected:
   above_boundary_percent: 51
 ```
 ### Worked examples and boundary checks
-
 
 **Property distribution:** assume all entitlement conditions are proved and a £20,000 dividend falls within Article 10(2)(b). Its source-tax ceiling is **£3,000**. If domestic tax before relief is assumed to be £4,000, treaty-limited tax is £3,000 and the potential reduction is £1,000. This does not prescribe a domestic rate or promise an automatic refund. A qualifying pension scheme instead has a zero source ceiling. [Article 10(2)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-10-dividends).
 
@@ -251,8 +232,6 @@ expected:
 5. Which certified forms, authority determinations, payments, claims and deadlines already exist?
 
 ## Sources
-
-
 
 The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
 

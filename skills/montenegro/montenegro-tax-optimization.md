@@ -138,21 +138,3 @@ expected:
 | MONSTAT (Statistical Office), average wages release of 30 January 2026: 2025 average gross wage EUR 1,206 | https://www.monstat.org/cg/novosti.php?id=4638 | 2026-10-30 |
 
 Not yet confirmed: the Ministry of Finance lump-sum scale and criteria under PIT Law art. 49(2), and so the actual 2026 lump-sum amounts (the old version's statement that the lump sum is one fixed monthly amount covering tax and contributions is not supported: the contribution base is set separately); the surtax rate each municipality has set for 2026; whether the surtax applies to the lump-sum tax; any statutory rule reclassifying a single-client sole trader as an employee (none found in the PIT or contributions law read); the date the EUR 30,000 threshold replaced an earlier EUR 18,000 threshold.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

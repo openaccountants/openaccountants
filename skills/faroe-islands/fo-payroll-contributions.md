@@ -308,21 +308,3 @@ Not yet confirmed: calendar-only part-year annual housing/electricity/heat valua
 [pensionreg]: https://logir.fo/Kunngerd/60-fra-05-05-2021-um-rindan-av-eftirlon-og-eftirlonarskatti
 [foreignoriginal]: https://logir.fo/GetFile/getpdf.aspx?objType=File&objId=38060
 [foreign2023]: https://logir.fo/Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

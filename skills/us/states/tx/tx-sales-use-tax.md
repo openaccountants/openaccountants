@@ -223,23 +223,6 @@ Before delivering output, verify:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 ## 
 
 **Exempt customer documentation and return treatment**  _([https://comptroller.texas.gov/taxes/publications/96-122.php](https://comptroller.texas.gov/taxes/publications/96-122.php))_
@@ -262,21 +245,3 @@ also see the full list of verified accountants at
 | Form 01-114 Item 2 / Taxable Sales | Report only sales subject to Texas tax after supported deductions and exemptions. Exempt, resale, and supported out-of-state destination sales are excluded here. |
 | Deductions / exempt-sales reconciliation | There is no separate universal deduction line in the basic return; Comptroller audit reconciles deductions as Total Sales minus Taxable Sales. Keep certificates and shipping records by transaction. |
 | Tax-free sales holidays or statutory exempt items | Include only in Total Texas Sales, not Taxable Sales, unless Comptroller instructions for a special schedule say otherwise. |
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

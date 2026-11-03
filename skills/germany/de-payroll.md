@@ -399,21 +399,3 @@ Defaults when an answer is missing, for an estimate only: unknown class, estimat
 | svbezgrv_2026 § 2 | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html | 2026-10-31 |
 
 Not yet confirmed: the Federal Gazette text of the labour ministry's 2026 factor F notice itself (0.6619 is taken from an official state circular that cites it, and equals 28 / 42.3); which states levy 8% and which 9% church tax (secondary sources name Bavaria and Baden-Württemberg at 8%), and state church tax caps; U1 and U2 rates (set by each fund) and accident insurance; the 2027 health ceiling amount.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

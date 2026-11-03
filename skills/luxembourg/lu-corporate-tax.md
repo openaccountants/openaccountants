@@ -301,21 +301,3 @@ The `max` step is a simplification. It holds here because the ordinary tax excee
 | ACD, table of communal ICC rates 2016 to 2026 (Excel, 12 December 2025) | https://impotsdirects.public.lu/content/dam/acd/fr/archive/documentsdivers/taux-ic-2016-2026-12122025.xlsx | 2026-10-22 |
 
 Not yet confirmed: the maximum amount of the astreinte; the due dates of net wealth tax advances; any rounding of the ICC base; payment deferral of exit tax in instalments; the 2027 IRC cut, which is a stated government plan, not yet law.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

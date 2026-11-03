@@ -77,21 +77,3 @@ The laws below are read from the consolidated texts on the Portal Jurídic d'And
 | Govern d'Andorra, Impostos a Andorra (list of the main taxes) | https://www.govern.ad/ca/tematiques/impostos-taxes-i-duana/impostos-a-andorra | 2026-10-30 |
 
 Not yet confirmed: (1) no Andorran statute says in terms that there is no wealth, inheritance or gift tax; the "none" line is read from the Govern's list of taxes, which names no such tax. (2) The Govern's "Altres impostos" page still lists the property gains tax (plusvàlua, Llei 21/2006) at 1% to 15%; how it now interacts with the IRPF, IS and IRNR property-gain rules was not read for this overview, so no plusvàlua rate is given here (see `ad-income-tax`, `ad-corporate-income-tax` and `ad-non-resident-income-tax` for property gains). (3) Each parish's 2026 ordinance rates for the comú taxes were not read; only the legal ranges are given. (4) The consolidated texts are marked as having no official status; the BOPA text governs.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

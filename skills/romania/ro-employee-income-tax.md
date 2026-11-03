@@ -222,21 +222,3 @@ expected:
 | ANAF DGRFP Galați, the 2026 minimum tax-free amount (21 January 2026) | https://static.anaf.ro/static/3/Galati/20260123122801_suma%20neimpozabila%20in%202026.pdf | 2026-10-23 |
 
 Not yet confirmed: the early-payment discount under art. 121 for tax paid in 2027 is not set yet. The construction-sector minimum wage for 2026 was not checked. CASS on pensions above RON 3,000 is not covered. Whether payroll reads the personal deduction band from gross salary including the RON 300 or 200 tax-free amount: OUG 89/2025 and the ANAF notes are silent and no ANAF example was found.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

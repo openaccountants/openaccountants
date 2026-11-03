@@ -191,21 +191,3 @@ expected:
 | Law of Georgia on Funded Pension, English, consolidated to 26 June 2025 (translation of the same articles) | https://matsne.gov.ge/en/document/view/4280127?publication=12 | 2026-10-31 |
 
 Not yet confirmed: no Pension Fund or Revenue Service guidance was read to confirm the gross-to-net order (it rests on Tax Code art. 82(1)(b3) and Law art. 22(3)(a)); the exact date for the 60/55 and 40+ age tests (the Law came into force on publication in August 2018, its art. 21 on 1 January 2019; art. 39); whether the 2% contributions are rounded per payment; the statutory minimum wage (the old version cited GEL 20 a month from a 1999 decree; not read); who bears the company car charge economically; the name and layout of the rs.ge monthly return; Ministry of Finance limits for travel allowances; posted workers and social security agreements.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

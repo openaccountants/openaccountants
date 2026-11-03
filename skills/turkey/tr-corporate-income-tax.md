@@ -173,20 +173,3 @@ expected:
 | Yerel ve Küresel Asgari Tamamlayıcı Kurumlar Vergisi Uygulama Genel Tebliği, Official Gazette 26 December 2025 no. 33119 (scope and definitions only) | https://www.resmigazete.gov.tr/eskiler/2025/12/20251226-9.pdf | 2026-10-31 |
 
 Not yet confirmed: whether the President has published any list of harmful-tax countries under art. 30(7) (none was found); withholding on payments to residents under art. 15 and Decision 2009/14594 (other than dividends); the share of financing costs disallowed under art. 11(1)(i) (set by Presidential decision, not read) and art. 11(1)(j); the reduced rate for investment incentive certificates (art. 32/A) and contribution rates; the property and share sale exemption (art. 5(1)(e)); the art. 10 deductions (R&D, venture capital, cash capital increase); the CFC rule (art. 7) in detail; transfer pricing (art. 13), a separate domain; Pillar Two computation detail from the 26 December 2025 communiqué; whether the 30% rate list changed for 2026 beyond Law 7524; the Law 7412 deduction referred to in art. 32/C(2)(d); the procedures for qualified service centres that the Ministry of Industry and Technology sets under Law 4875 ek art. 1 (not read); any Presidential decision changing the art. 10(1)(i) or (j) rates (not searched); which industrial zones the President has approved for the 100% rate (not read); the text of the GİB circular behind the end-of-month return date.
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

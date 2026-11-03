@@ -75,21 +75,3 @@ Greek companies keep statutory accounting records, publish annual financial stat
 | Pack skills for the tax figures: gr-corporate-income-tax (ITC art. 68, ν. 3986/2011 art. 31), greece-vat-return (VAT Code arts. 41, 44α), gr-payroll | skills/international/greece/ | 2026-10-30 |
 
 Not yet confirmed: the Law 4548/2018 rules on how much ΑΕ capital is paid in at formation and when (the earlier version said fully paid at incorporation; the official text in ΦΕΚ Α' 104/2018 and its amendments up to Law 5317/2026 could not be opened, so only the EUR 25,000 minimum from the ministry page is stated); whether the EUR 10 GEMI registration fee is charged on top of the EUR 18 online formation fee (ΚΥΑ art. 5(5) replaces only the formation fee; the e-ΥΜΣ calculator gives the exact total); amendments to Law 4072/2012 after 28.4.2023; how a non-resident, non-EU founder obtains a Greek ΑΦΜ (the earlier version said in person at the tax office or through a tax representative); the 1 to 4 week and 2 to 3 month practical timelines in the earlier version (no official source); the Law 4308/2014 deadline for approving and publishing annual financial statements; notary and lawyer fees.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

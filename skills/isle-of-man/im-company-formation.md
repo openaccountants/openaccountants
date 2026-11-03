@@ -49,21 +49,3 @@ The Isle of Man has two company law regimes running side by side: companies unde
 | Income Tax Division, Economic Substance | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/economic-substance/ | 2026-10-30 |
 
 Not yet confirmed: the Companies Act 2006 text itself (legislation.gov.im was not read for it; the 2006 Act facts come from the Registry's pages); no minimum share capital for a 2006 Act company, no requirement for a company secretary or an AGM, and whether 2006 Act companies file accounts or need an audit (all in the old version; no official source read today states them); which companies count as "excepted" for the lower annual return fee; the eligibility conditions and filings for protected cell companies.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

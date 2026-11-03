@@ -19,7 +19,7 @@ tier: 1
 
 ## Pakistan — Personal Income Tax (Individuals & AOP) — Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -71,7 +71,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Payment instrument | Computerised Payment Receipt (CPR) generated from IRIS, paid at SBP / NBP / authorised bank |
 | Filer status register | Active Taxpayers List (ATL), published weekly by FBR every Monday |
 | NTN format | 7-digit NTN for AOP; CNIC (13-digit) functions as NTN for individuals |
-| Validated by | Pending — requires sign-off by a registered Pakistan tax practitioner |
 | Validation date | Verified by Ibrar Ali (8907) on 2026-06-12 |
 | Skill version | 1.0 |
 
@@ -490,23 +489,3 @@ Specific penalty amounts are TBC under Finance Act 2025. Default surcharge rate 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a registered Pakistan tax practitioner (Income Tax Practitioner, Chartered Accountant, or equivalent licensed professional) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

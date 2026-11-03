@@ -209,21 +209,3 @@ expected:
 | BD Zakon o Poreznoj upravi 11/20: art. 68 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf | 2026-10-30 |
 
 Not yet confirmed: whether the RS Ministry has issued a new transfer pricing rulebook after 114/25 (the Tax Administration's list, updated June 2026, still shows 47/16, so the KM 700,000 annual-return threshold is taken from it; the law's KM 50,000 documentation threshold from 2026 is a separate test); the form number and layout of the RS annual return of controlled transactions; the BD rulebook that sets how market value is found (BD law art. 9(3)), which was not found on an official site; whether a BD transfer pricing adjustment also triggers a general fine under the BD tax administration law; whether the RS Zakon o poreskom postupku art. 115 (30% of an unreported tax) is applied to transfer pricing adjustments; what the FBiH condition that both companies "show transfer prices for the same transaction in their tax base" (Rulebook art. 95(2)(a)) requires of a counterparty that underpaid and so has no adjustment line of its own; the FBiH Ministry of Finance's 2017 position on applying the rulebook (pufbih.ba lists it, but the PDF had no text layer). The RS law and rulebook texts were read from OCR of the official gazette scans published by Poreska uprava RS.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -237,21 +237,3 @@ expected:
 | Global Minimum Tax Law (Zakon o globalnom minimalnom porezu na dobit pravnih lica), Official Gazette 33/26 (published and in force 10 March 2026): arts. 2, 5, 30, 32, 37 | https://www.sluzbenilist.me/propisi/391203/download | 2026-10-30 |
 
 Not yet confirmed: treaty withholding rates for each treaty partner (no treaty text was read); the form and content of the annual withholding report and the Article 29c return; how to allocate the Article 33 cap where total profit crosses the 9% band (the law gives no allocation rule); whether foreign tax above the Article 33 cap can be carried forward (Article 33 is silent; only Article 34a has a five-year carry-forward); the refund procedure where too much tax was withheld; whether refund interest runs from the day of the claim or from day 30 under the new Tax Administration Law art. 96(2); the first fiscal year for which the Global Minimum Tax Law top-up tax is due (the law states no start date other than entry into force on 10 March 2026, and its art. 32 transition table begins with fiscal years starting in 2026).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -69,21 +69,3 @@ expected:
 | URA, File a Tax Return page (still shows the old UGX 2,820,000 threshold) | https://ura.go.ug/en/domestic-taxes/returns/ | 2026-11-01 |
 
 Not yet confirmed (from the old file, secondary sources; official fee schedule not opened): no minimum share capital, UGX 5,000,000 fee band; single-member company with one director; name reservation UGX 35,000; registration UGX 105,000 or 1.5% above UGX 5,000,000; 0.5% stamp duty on formation; all-in cost UGX 300,000 to 700,000; a few days to incorporate; Forms 18 and 20; annual return and audited accounts; business names, guarantee companies and branches as forms.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

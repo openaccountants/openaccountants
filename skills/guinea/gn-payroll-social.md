@@ -144,21 +144,3 @@ expected:
 | [CNSS current registration page](https://cnss.gov.gn/immatriculation/), employer/worker requirements and general-regime scope, read through an ordinary browser after direct HTTP 403. | 2026-11-01 |
 
 Not yet confirmed: implementing instruments establishing the currently published floor, cap and rates; reconciliation of the decree's twenty-day window with current fifteen-day guidance and surcharge fraction/start-date treatment; separate employee/employer sickness and pension allocations; partial-month and multi-employer floor/cap mechanics; special worker categories and increased occupational-risk rates; current tax valuation of in-kind benefits; authenticated e-CNSS form/screens/receipts; current salary income-tax withholding, employer salary/apprenticeship taxes and their remittance rules. This Guide does not establish complete payroll or whole-country coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

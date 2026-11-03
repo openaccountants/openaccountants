@@ -124,21 +124,3 @@ expected:
 Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: The conflict between CGI53 and75 for deferred depreciation remains unresolved; no carryforward duration is selected.  Later 2026 rectifying law and implementation chain; the 86F four-month versus ACPCE 15May filing conflict; live electronic portal/forms/boxes; the old blanket 5% surtax and minimum floors; ordinary enforced late-return/late-payment sanctions; sector incentives and full depreciation tables. These gaps prevent operative or comprehensive 2026 coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

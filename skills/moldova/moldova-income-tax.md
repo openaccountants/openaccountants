@@ -104,7 +104,6 @@ For own education/professional training and covered dependent-child education at
 
 **Education commencement.** The January regulation's point 35^1(4) referred only to dependent-child education, a contract with the educational institution and an invoice/other actual-payment proof. The January Code already permits the covered own education/training and the 20,000 aggregate limit from **1 January 2026**. Decision 321/2026 replaces the Government proof paragraph on **18 June**, adding the provider/beneficiary identification alternative and express cash-provider confirmation. Do not start the statutory own-education right or 20,000 limit in June merely because the regulation was aligned then. Retain payment dates and the applicable proof version; the current CET18 generic-cap inconsistency remains a separate implementation gap. [January Code art. 35^2(6)][jan]; [January regulation point 35^1(4)][personalregjan]; [Decision 321/2026 points 2.2.3, 3][personalamend].
 
-
 A voluntary pension-fund contribution, annuity, donation or other deduction needs the actual statutory route and proof. The form's historic examples are not proof that every current payment qualifies. Keep contributions, personal relief, business expenses, final-withholding receipts and credits in separate schedules. [Arts. 21, 24–36, 64–69, 81–82][code]; [CET18 deduction instructions][cet].
 
 ### Capital gains, property and financial receipts
@@ -136,7 +135,6 @@ The complete, unnumbered annex to MF Order 40/2018 is now retained and read. It 
 | 9. Divorce | The documents for the original acquisition route through which the property entered the spouses' or one spouse's ownership. The divorce document alone does not establish an invented new acquisition price; apply Code 42(1)(c) to the actual division. |
 
 Table source: [Order 40, complete annex rows 1–9 and all 22 document subitems](https://www.legis.md/UserFiles/Image/RO/MF/anexa_40.doc). The published inheritance and cash-receipt interpretations cited above remain corroboration. CET18 instruction 64 calls this “annex 1”; the actual approval has one unnumbered annex. Neither that naming discrepancy nor missing purchase proof removes the statute's specific self-built-property exception.
-
 
 Test non-recognition precisely: qualifying spouse/divorce redistribution, specified issuer redemptions, exercise/conversion of options, first-degree/spouse capital gifts, and the main-home and specified car conditions. A main home requires at least three years' ownership and the stated last-three-years domicile/residence test, including its at-most-90-day cancellation rule. The car rule requires at least three years' ownership and excludes historical/ethnographic collector vehicles. Joint marital-property disposal and stock-option transactions have specific calculation rules. Do not infer a home exemption merely from occupancy on sale day. [Arts. 5(46), 39–42][code].
 
@@ -371,7 +369,6 @@ expected:
   balance_payable: 3000
 ```
 
-
 ## Ask the client first
 
 - What are the person's citizenship, domestic/treaty residence, domicile/travel dates, work locations and any departure/arrival? Supply the supporting records and residence certificates.
@@ -434,21 +431,3 @@ Not yet confirmed: the accepted DAP24 other-cost code where the printed form use
 [personalamend]: https://www.legis.md/cautare/getResults?doc_id=154909&lang=ro
 [capitalorder]: https://www.legis.md/cautare/getResults?doc_id=105006&lang=ro
 [capitalproof]: https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1215
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -177,21 +177,3 @@ Do not help disguise payments to avoid withholding. Do not present output as a f
 Not yet confirmed: the art. 59 rate table (MoF decree 537 of 2005 as amended by decrees 301 of 2013 and 380 of 2018, and any later decree); secondary sources give 1% on supplies and contracting, 3% on services and 5% on commissions, but no ETA or Gazette copy was found, so do not apply those figures without the decree. Whether the EGP 300 floor in art. 59 has since been changed. The ministerial decree listing the goods, activities and rents covered by the arts. 59 bis to 59 bis 2 reporting duties (MoF decree 310 of 2013 per secondary sources) was not found; the law text sets reporting, not a collection rate. The reach of the art. 56 bis exclusion of dividends a resident company received from another resident company (whether it frees all resident company to resident company dividends from the 10% or only the part of a distribution funded by such dividends). Whether ETA accepts treaty rates at source with a residence certificate instead of the refund route; refund time limits. Whether rents paid to non-residents fall under art. 56 (the old skill said 20%; art. 56 lists only interest, royalties, services and athletes or artists). The rate at which a non-resident pays on unlisted share gains, and whether non-resident gains on listed shares are covered by the art. 50 item 7 or art. 31 item 7 exemption. The old skill's software classification rule, record retention period, timing at the earlier of payment, credit or invoice, and annual reconciliation with the corporate return had no official source. Treaty rates by country (the old skill's table): not re-read from the treaties, so dropped; no skill in the pack states them yet.
 
 > Originally contributed by Ahmed Hassan; rebuilt against the law by the OpenAccountants team.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

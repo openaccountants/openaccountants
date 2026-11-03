@@ -200,21 +200,3 @@ expected:
 | State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
 Not yet confirmed: the Cabinet of Ministers procedure and form for the hiring notice; the tax calculation form and its annexes (Ministry of Finance order not read); ЄСВ and the floor for an employee hired or leaving mid-month, on unpaid leave or on sick leave (Ministry of Finance instruction not read); how sick pay and holiday pay are split between employer and social fund; the Law "On remuneration of labour" rule that full-time pay may not be below the minimum wage; the employment test in the draft new Labour Code; ЄСВ for foreign nationals and social security agreements; Diia City gig contracts; the National Bank discount rate for penalty interest; any amendment after the archive captures named above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

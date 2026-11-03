@@ -44,21 +44,3 @@ The most common vehicle is the limited liability company (məhdud məsuliyyətli
 | State Tax Service, "How to start a business" (registration, social fund, employment contracts, 40-day change notice, accounting duty) | https://www.taxes.gov.az/az/page/biznese-nece-baslamali | 2026-10-31 |
 
 Not yet confirmed: whether a separate name-reservation step exists (the old version listed one; the sources read do not mention it); whether a company seal is still needed (the old version listed it; no official source read); the accounting framework by entity category (national standards or IFRS) and the deadline for filing annual financial statements under the Law on Accounting (not read); how long legalising a foreign founder's documents takes in practice, beyond the 2-day statutory period; the Tax Code changes from 1 January 2027 under Law 476-VIIQD (not applied).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

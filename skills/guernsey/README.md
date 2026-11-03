@@ -42,7 +42,6 @@ The [fresh whole-pack review](../../evidence/research/guernsey-2026/review/repor
 
 ## Historical independent source-review records
 
-
 These records identify versions, evidence used, findings corrected and limitations. Several official sites blocked fresh reviewer access, so those checks used saved primary-source copies. Review does not establish complete current legislation or professional attestation.
 
 | Guides | Review record |
@@ -53,6 +52,5 @@ These records identify versions, evidence used, findings corrected and limitatio
 | Formation and accounts/reporting | [Full source review and civil-penalty addition](../../docs/research/2026-10-22-guernsey-registry-full-review.md) |
 | Property document duty and GST transition | [Full source review](../../docs/research/2026-10-22-guernsey-property-gst-full-review.md) |
 | UK treaty corridor | [Full source review and collection-assistance addition](../../docs/research/2026-10-22-guernsey-uk-treaty-full-review.md) |
-
 
 The [statutory gap continuation](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/research.md) adds the statutory annual car reconciliation, employee £900 aggregate, dedicated domestic connected-transaction/records route and linked MAP intake. The [statutory-benefit and domestic-TP whole-pack review](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) accepts `5d8327ad` within the six retained partials; the [final status closure](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md) checks final status edits. All 93 controls independently recompute, including 20 main blocks, the 18 original main blocks remain byte-exact, and all 32 original archived controls are preserved. **Lost content restored: 0 in this continuation**; the historical two restorations remain. No material legal, numerical or content-loss error was found. Reviewer source checks relied on saved official copies after fresh access failures, recorded in the review. The earlier accepted ordinary-method review remains evidence for the published `d4ea7848` predecessor. This is independent AI source review, not accountant attestation or complete-country coverage.

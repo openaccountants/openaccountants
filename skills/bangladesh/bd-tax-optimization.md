@@ -28,7 +28,6 @@ tier: 2
 | Currency | BDT (৳) |
 | Main levers | Investment tax rebate · file the return (avoid higher withholding + penalties) · ICT export cash incentive · allowable expense documentation |
 | Tax authority | National Board of Revenue (NBR) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — The levers (Tier 1)

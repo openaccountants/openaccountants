@@ -50,21 +50,3 @@ tier: 2
 | Pack skills for the tax figures: ro-corporate-income-tax (Fiscal Code arts. 17, 42, 47, 48, 51), ro-vat-return (arts. 310, 316), ro-payroll-social | skills/international/romania/ | 2026-10-30 |
 
 Not yet confirmed: how ONRC and the courts apply art. VI(6) to existing SRLs at or below RON 400,000 turnover (ONRC's 17 December 2025 announcement restates the article without addressing them; legislatie.just.ro did not load); the RON 1 minimum that applied from 2020 to 2025 (the amending Law 223/2020 was not read); the fee for name reservation and the Monitorul Oficial Part IV publication tariff; the representative office of a foreign company (not covered by Law 31/1990; its authorisation rules were not read); practical timelines beyond the one-working-day decision (the earlier version said 5 to 10 business days); the date of the ANAF consolidation of Law 82/1991 and the current fines for late financial statements.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

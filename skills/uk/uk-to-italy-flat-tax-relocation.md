@@ -13,8 +13,6 @@ tier: 2
 
 # Moving from the UK to Italy: the flat-tax corridor (2026/27)
 
-> Source-cited draft: not reviewed by an accountant.
-
 UK tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Italian tax year: the calendar year 2026. Changelog v1.1 (2026-10-23): the flat tax moved to EUR 300,000 (EUR 50,000 per family member) for residence moved from 1 January 2026; impatriati and 7% pensioner rules taken from Agenzia delle Entrate guidance, including the 30,000-inhabitant limit from 7 April 2026; Italian residence test updated; unsourced Italian rates and wealth-tax percentages removed; UK side brought to 2026/27; worked examples and Sources table added. Review fixes (2026-10-23): 7% regime length settled at 10 tax periods from the TUIR text; 30,000-inhabitant limit credited to L. 34/2026 and applied to the earthquake municipalities too; the flat-tax amount tied to the date residence moves; close-company charge limited to material participators; the 1 January 2027 move of these articles into the new Testo unico noted.
 
 **Why this corridor matters.** Italy offers a fixed annual substitute tax on all foreign income for new residents, a partial exemption for relocating workers, and a 7% rate for foreign pensioners in small southern towns. The UK end (the Statutory Residence Test, the 5-year return rule, the inheritance tax tail) applies whatever Italy offers. The main risk is the matching problem: three Italian regimes, three kinds of mover, and costly results from picking the wrong one or electing too late.
@@ -183,21 +181,3 @@ expected:
 | Inheritance Tax Act 1984 s.6A (long-term UK resident) | https://www.legislation.gov.uk/ukpga/1984/51/section/6A | 2026-10-23 |
 
 Not yet confirmed: Italian ordinary IRPEF, IVIE, IVAFE and inheritance tax rates (left out until read from an Agenzia delle Entrate page).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -173,21 +173,3 @@ Never confuse Art. 92 (with deduction) with Art. 91 (without). Never apply 7% or
 | DGI, Note circulaire 737, Finance Law 50-25; title and contents page read | https://www.tax.gov.ma/wps/wcm/connect/e48c5c9d-ae80-4b30-a1b3-80af7ec09be1/NC+737+LF+2026.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-e48c5c9d-ae80-4b30-a1b3-80af7ec09be1-pOvNbSq | 2026-11-01 |
 
 Not yet confirmed: the current SIMPL-TVA screen names, the return form number and box numbers (the old skill's lines 1 to 23 had no source; the official portal guide could not be opened, so they are removed from the steps); the old skill's blocked gifts limit of MAD 100 per item (not found in Art. 106 as read); the old MAD 200,000 services registration figure (not in Art. 91-II-3 or 89 as read); the invoice details in Art. 145-III and VIII, which Art. 146 points to (the old rule against invoices without IF or ICE is kept only through Art. 112-II); the old list named education under Art. 91, and no exemption for school fees was found in the Art. 91 text as read; the old portal address portail.tax.gov.ma was not opened; any 2026 VAT change in Note 737 beyond those in the CGI text; the full Art. 91, 92 and 99 lists, which are abridged here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

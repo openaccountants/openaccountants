@@ -119,21 +119,3 @@ expected:
 | ERS, Income Tax Returns; whole page read | https://www.ers.org.sz/IncomeTax/IncomeTaxReturn | 2026-11-01 |
 
 Not yet confirmed: The commencement notice for the 2023 Act was not opened; 1 July 2024 rests on the ERS Presumptive Tax page. The ERS notice for returns for the year ended 30 June 2026 was not found, so 2025 dates are given as the latest published. The old pack's 5% royalty refund under a treaty and the four-year audit practice: no official source found. The old 120-day rule appears in the ERS guide, but the 2025 notice gives 4 months and 31 October. The old pack's routine 60-day filing extension: no official source found. The transfer pricing threshold, regulations and the intangibles cap percentage were not found.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

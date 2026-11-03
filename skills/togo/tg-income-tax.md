@@ -96,21 +96,3 @@ Obtain the year, fiscal domicile facts, arrival/departure dates, income category
 | Loi n°2025-002 du 31 décembre 2025, finances 2026. Art. 2 and fiscal provisions arts. 7-21, especially the replacement CGI/LPF text in art. 21; scanned PDF read using local OCR with material provisions checked against page images. | https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf | 2026-11-01 |
 
 Not yet confirmed: Current IRPP/GUDEF screen names, return field numbers and payment-reference workflow; full TPU forfait activity tariffs; old claim of a family quotient in parts (replaced by the sourced fixed employment deduction); treaty-specific relief and foreign-tax-credit mechanics; the exact current interface for pension declarations. These gaps prevent treating the ordinary individual-income domain as complete.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

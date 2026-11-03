@@ -38,7 +38,6 @@ tier: 2
 | INSS return deadline | By the **10th** of the following month (RSM 2025 pp.3–4) |
 | Annual Nominal List (Lista Nominal) | By **30 April** each year (RSM 2025 pp.3–4) |
 | Key legislation | Código do IRPS; Lei n.º 11/2025 (IRPS reform, eff. 29 Dec 2025); Código Geral Tributário; Lei do INSS; INSS Note n.º 246/INSS/GAB-DG/432/2024 |
-| Validated by | Pending -- requires sign-off by a licensed Mozambican accountant |
 | Skill version | 0.1 |
 
 ## Section 2 -- Income Tax Withholding (IRPS — Imposto sobre o Rendimento das Pessoas Singulares)
@@ -485,23 +484,3 @@ Currency refusal. Salary stated in USD with no MZN conversion → REFUSE and req
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed accountant in Mozambique) before implementation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

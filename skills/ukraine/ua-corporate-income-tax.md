@@ -195,21 +195,3 @@ expected:
 | State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
 Not yet confirmed: the NBU discount rate that drives penalty interest in 2026; treaty withholding rates; the corporate income tax return form and its annexes (Ministry of Finance order not read); the full Diia City special-conditions base; the bank rate for 2027 and later; any amendment after the 12 October 2026 archive capture.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

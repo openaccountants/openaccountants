@@ -297,21 +297,3 @@ expected:
 | 互联网平台企业涉税信息报送规定（国务院令第 810 号） | https://www.gov.cn/gongbao/2025/issue_12146/202507/content_7030983.html | 2026-10-31 |
 
 Not yet confirmed: 本轮未核对原文、未作为依据的内容：《刑法》第 201、205、205 条之一；次月 15 日补开；查验平台每日 5 次；税负率 ± 30% 预警；纸质专票联次；备注栏要求（公告 2017 年第 16 号）；D 级信用后果；传统发票退出时点；金税四期系统时间表和数据范围。这些条目在正文标注"未核实"或沿用旧版，使用前须查原文。
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network：accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

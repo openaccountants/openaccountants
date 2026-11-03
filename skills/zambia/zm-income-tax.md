@@ -37,7 +37,6 @@ Employees (PAYE), sole traders, partners and landlords. Turnover K5,000,000 or l
 | Artisanal mining | 4% of income after mineral royalty, monthly by the 14th | 2026 | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf |
 | Minimum alternative tax | 1% of turnover for income tax payers, creditable | 2026 | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf |
 
-
 ## The base
 
 ### Transaction Pattern Library
@@ -327,7 +326,6 @@ REVIEWER FLAGS:
 | NAPSA / NHIMA | Statutory payroll deductions | Not a trading expense for the individual |
 | ZRA | Revenue authority | Tax payment : exclude / credit |
 
-
 ## Deadlines and filing
 
 Turnover tax and rental income tax: return and payment by the 14th of the next month. Provisional return 31 March; instalments payable 10 April, 10 July, 10 October, 10 January. Annual return and balance 21 June. Moving between turnover tax and income tax happens only at the start of a charge year. Move at the following year if turnover will pass K5,000,000, and notify ZRA on TaxOnline.
@@ -392,7 +390,6 @@ Client entertainment is private/entertainment in nature and not wholly and exclu
 Transfer between own accounts. Neither income nor expense. Exclude entirely.
 
 **Classification:** EXCLUDE.
-
 
 ## Ask the client first
 
@@ -459,7 +456,6 @@ ONBOARDING QUESTIONS: ZAMBIA INCOME TAX
 10. Have you paid any provisional tax this charge year?
 ```
 
-
 ## PROHIBITIONS
 
 - NEVER compute tax without confirming employee (PAYE) vs self-employed status
@@ -472,7 +468,6 @@ ONBOARDING QUESTIONS: ZAMBIA INCOME TAX
 - NEVER assume the 2025 NAPSA ceiling, NHIMA split, or minimum wage carries into 2026 without confirmation
 - NEVER treat a unconfirmed figure as confirmed : flag it for the reviewer
 - NEVER present tax calculations as definitive: always label as estimated and pending professional review
-
 
 ### Authority and Source References
 
@@ -549,7 +544,6 @@ Expected: Rental income tax at 4% (band K30,000-800,000) = K500,000 × 4% = K20,
 Input: K850 client dinner claimed as expense (income-tax trader).
 Expected: Remove : not deductible.
 
-
 ## Sources
 
 | Source | URL | Read on |
@@ -566,21 +560,3 @@ Expected: Remove : not deductible.
 | ZRA Advance Income Tax on remittances leaflet (2026), first page; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/08/Refunds-of-Advance-Income-Tax-on-Remittance.pdf | 2026-11-01 |
 
 Not yet confirmed: NAPSA and NHIMA (payroll skill), including the old 2025 figures of ceiling K34,164, national average earnings K8,541 and NHIMA 1%; whether turnover tax above K30,000 falls on total turnover or on the excess (ZRA example taxes the excess, its note says total); table cells marked unconfirmed carried from the old file; minimum wage orders; old source labels removed where they named commercial firms.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -440,21 +440,3 @@ This skill is a content reference for use by a credentialed reviewer. Outputs ba
 - Annual update of this skill on or before December 1 of each year to reflect the published DFML rate, DUA Schedule, surtax threshold, SS wage base, and ACA affordability percentage.
 
 No part of this skill constitutes legal advice. Wage Act compliance, ABC-test analysis, and Pay Equity Act compliance are areas in which the line between tax/payroll advice and legal advice is thin; the reviewer must coordinate with employment counsel on any matter that includes a litigation, settlement, or class-action exposure.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

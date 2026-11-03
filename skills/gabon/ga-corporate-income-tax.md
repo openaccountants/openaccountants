@@ -102,21 +102,3 @@ expected:
 | LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
 
 Not yet confirmed: Full depreciation and financing limits, capital-gain reinvestment relief, incentive approvals and sector contracts; the exact scope of the article 26 first-paragraph relief and missing PME law conditions. Old nonresident withholding figures are routed to cross-border, not repeated here. Complete intervening amendments, date-specific commencement, current forms and boxes, and independent review. See the [country evidence](../../docs/research/2026-11-01-gabon-pack/README.md) and [old-topic destination map](../../docs/research/2026-11-01-gabon-pack/old-topic-map.md).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

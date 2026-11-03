@@ -260,21 +260,3 @@ expected:
 | BFH IV R 42/19, B.III.3, threshold retained for both gains and losses | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/STRE202210200/ | 2026-10-29 |
 
 Not yet confirmed: the 2026 forms for the determination return (the ELSTER guide read is for 2025; the 2026 one is not yet published); the rounding of the special rate rests on the official example in the 2025 handbook, not on the statute; whether foreign social security contributions paid in the months before arrival or after departure, on pay not subject to German tax, are special expenses in the year of moving (§ 10(2) sentence 1 no. 1 EStG speaks of tax-free income; no official text read applies it to the § 32b(1) no. 2 case); a GmbH general partner's liability fee would be its Sondervergütung and add to trade income, but Example 1 assumes none.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

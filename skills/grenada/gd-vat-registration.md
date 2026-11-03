@@ -42,21 +42,3 @@ The G-TAX FAQ directs a person seeking cancellation to submit a written request 
 ## Unresolved scope
 
 Confirm registration timing, payment deadlines, rates, zero-rating and exemption schedules, invoices, deductions, imports, refunds and special-sector rules before completing a return. The retrieved VAT page describes tourism/accommodation at 10% in an ambiguously worded general-rate answer; it is not used to establish a universal rate. Do not substitute an assumed VAT percentage for research. Independent review and direct source verification remain pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

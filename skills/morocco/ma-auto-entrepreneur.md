@@ -244,21 +244,3 @@ Social cover: Art. 42 ter-II-B requires membership of the scheme. AMO health cov
 | Decrees 2-15-263 and 2-15-303, as annexed to the CGI 2026 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 
 Not yet confirmed: cnss.ma and ae.gov.ma would not open in a browser on 2026-11-01 and have no 2026 archive copy, so these old-version items are unverified and kept out of the rules: social contribution rules and the "T1 to T8" brackets, whether they match the eight CGI bands; the old minimum of about MAD 300 a quarter for a nil period; the bases of 50% (services) and 20% (commercial) of turnover; Décret 2.21.477 as the AMO source; the RNAE portal address rn.ae.gov.ma, Poste Maroc or Al Barid Bank as designated body, free registration, the 7 to 15 day processing and card; online payment channels; duty to file nil returns and radiation for missed returns. Also unread: the regulation fixing droit complémentaire terms, including part years and whether the withheld surplus counts for the band; the rate on turnover above a ceiling in a year still within the option; the full text of Loi 114-13, including residence as a condition. The old list named engineers, adouls, regulated transport, alcohol and financial intermediaries as excluded; Decree 2-15-263 does not name them, so check any such case individually.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

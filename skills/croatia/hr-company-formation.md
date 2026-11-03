@@ -59,21 +59,3 @@ Croatia has used the euro since 1 January 2023. The Companies Act (Zakon o trgov
 | Zakon o porezu na dobit, consolidated to NN 151/25, arts. 28, 34, 35 | https://porezna-uprava.gov.hr/Propisi | 2026-10-30 |
 
 Not yet confirmed: the current wording of each Companies Act and Court Register Act article was checked against the amending acts in Narodne novine listed above, not against a single official consolidated text (Narodne novine publishes none after NN 152/11); notary fees for the founding documents (set by the notarial tariff, not read); bank charges and practice for the capital account; the FINA fee for public disclosure (fina.hr not read for this update); whether a foreign founder needs a court interpreter at the notary (the old secondary source said so, no official text read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

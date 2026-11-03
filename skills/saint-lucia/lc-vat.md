@@ -40,21 +40,3 @@ The [tourism order, S.I. 188/2020, paragraph 3](https://attorneygeneralchambers.
 Retain registration-trigger evidence, supply classification and separate tax calculations. Reconcile output VAT to invoices, and support every input deduction independently. This Guide does not establish recoverability for all purchases, refund entitlement or a zero-rating/exemption list.
 
 Payment mechanics, invoices, mixed supplies, input apportionment, imports, current sector amendments and the Health and Citizen Security Levy need separate checks. The examples calculate VAT only, not the total of every tax or levy. Independent review and amendment verification remain merge requirements.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

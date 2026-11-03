@@ -141,22 +141,3 @@ Use the [corporate](cd-corporate-income-tax.md#deadlines-and-filing), [individua
 | DGI public page/navigation in the cached VAT page, identifying IS/IRPP/VAT services; no authenticated filing | https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/ | 2026-11-01 |
 
 Not yet confirmed: the full carried 2025/current-law and implementing-order chains, all specialist sectors/provincial and other taxes, complete residence/PE/foreign-credit/exit methods, all exceptions and category calculations, current form/portal mandates and authenticated filing/credit allocation. The seven partial-domain entries and all owning-Guide holds remain in force. This router creates no new comprehensive coverage or accountant attestation.
-
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

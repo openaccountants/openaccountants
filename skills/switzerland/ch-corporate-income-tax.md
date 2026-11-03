@@ -245,21 +245,3 @@ The edge cases: if Beta held 5% worth CHF 1.2 million, the dividend would still 
 | Kantonales Steueramt Zürich, ZStB 133.1, Aufforderung 2027 (deadline for 2026 returns) | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf | 2026-10-23 |
 
 Not yet confirmed: an official ESTV table of 2026 effective profit tax rates for every canton (the ESTV "Steuerbelastung" series for companies was not found; the skill gives the method and works Zurich city only); the Zurich due dates and instalments for cantonal and communal profit tax; the Zurich 2026 notional interest rate (tied to the 10-year Confederation bond yield, set by ordinance, not read); the ESTV practice for allocating financing cost to participations (Kreisschreiben not read); each canton's patent box and R&D percentages other than Zurich; the date the UTPR will apply.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

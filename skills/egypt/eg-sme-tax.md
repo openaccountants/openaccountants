@@ -232,21 +232,3 @@ If turnover is over the limit, the client is outside, or the client wants out in
 | ETA Form 111 guide | https://eta.gov.eg/sites/default/files/2021-01/SMALL-PROJECTS_0.pdf | 2026-11-01 |
 
 Not yet confirmed: ministerial decisions under Law 6/2025 (form 20 text and boxes, simplified records, any activities excepted from the 90% rule, and any 2026 change to the regime). The MSME size bands in Law 152/2020 and any later update. The direct move for Law 152 enterprises rests on the Services Guide, not the statute. Whether regulated sectors, free zones or special economic zones are barred: Law 6 art. 4 does not list them, and the old skill's list had no official source. Whether a company's or a natural person's status changes any rate: the text draws no distinction. How the five-year audit date treats enterprises moved without a request.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

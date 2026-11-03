@@ -129,21 +129,3 @@ expected:
 | [Enacted LF2026](https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf) | 2026-11-01 | Arts29–35,37,73: platform, regime, exemption, rate, invoice, credit and centimes changes; scanned49 and81 visually checked; new text distinguished from old |
 
 Not yet confirmed: lower RSI50–100million entitlement and quarterly/monthly conflict; cement implementing rate; overlapping milk/meat exemption and reduced-rate cases; complete electronic-platform/nonresident procedure; foreign/input-centimes allocation and current e-Tax boxes, payment and normalised-invoice workflow; complete commodity tariff table, banking/financial/medical/educational exemption classification and special refund paths. These keep VAT partial. For independent AI source review and its limits, see the [country README](README.md). No accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

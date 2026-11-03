@@ -12,8 +12,6 @@ tier: 2
 
 # Poland: personal income tax for individuals and the self-employed (2026)
 
-Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
-
 This skill covers the annual PIT for an individual resident in Poland, and the choice of tax form for a sole trader (jednoosobowa działalność gospodarcza). It links to the other Poland skills and does not repeat them:
 
 - [pl-zus-contributions](pl-zus-contributions.md): social and health contributions of the self-employed.
@@ -167,21 +165,3 @@ expected:
 | Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16, 16a, 48, 54, 56, 57) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
 
 Not yet confirmed: the podatki.gov.pl limits page prints the 1 October 2025 EUR rate as 4.2846 (the 2024 rate) while its PLN 851,720 figure uses 4.2586, the NBP rate; the PLN 8,517,200 ryczałt limit is computed here from the NBP rate, not published by the Ministry. PIT Act art. 24a ust. 1e (as reworded by Dz.U. 2026 poz. 779 from 1 July 2026) requires the KPiR and fixed-asset register to be kept with software and sent to the tax office by the return deadline; the first tax year it applies to was not found in the transitional provisions, so it is left out of the deadlines table. The ryczałt rate list above names the main groups only; the full lists in Ryczałt Act art. 12 decide each activity. The art. 27 ust. 8 and 9 treaty methods and art. 44 ust. 7a conditions were taken from the article headings and not worked through in an example.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

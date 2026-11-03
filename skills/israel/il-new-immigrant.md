@@ -127,21 +127,3 @@ The two checks count whole tax years for a person who became resident on 1 Janua
 | Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.4 (2026 temporary provision for immigrants and veteran returning residents arriving 5/11/2025 to 31/12/2026, annual ceilings) and p.12 (credit point NIS 242 a month) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
 
 Not yet confirmed: the conditions of the 2026 temporary provision beyond its dates and ceilings (the Authority said a circular would follow); Amendment 272 itself, and whether a person who becomes resident from 1 January 2026 must report exempt foreign income on the annual return (Circular 4/2026 confirms only the Form 150 duty); the irrevocable election to be taxed; trusts and foundations; ITO s.97(b); the capital gains rates table. The guide that defines the groups is for tax year 2025; the definitions are not year-specific, but no 2026 edition was available.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -269,7 +269,6 @@ REVIEWER FLAGS:
   [ ] Casual-labour 15% applied only where genuinely casual?
 ```
 
-
 ### Carried: Benefits in kind and rates by person
 
 | Item | Treatment | Source |
@@ -440,21 +439,3 @@ expected:
 | RRA, Declare Income Tax page (whole page) | https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/declare-income-tax-1 | 2026-11-01 |
 
 Not yet confirmed: the road transport annex amounts were not captured from the PDF table, so use the annex directly; trading licence declaration by 31 January is carried from the old file and was not re-read; treatment of a home office, vehicle and phone in the real regime is our working practice and not a rule in the law; RRA rounding of monthly PAYE is not stated in the pages read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

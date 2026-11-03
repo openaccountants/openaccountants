@@ -12,8 +12,6 @@ tier: 2
 
 # Portugal: social security contributions (tax year 2026)
 
-> Source-cited draft: not reviewed by an accountant.
-
 This skill computes Portuguese social security contributions for 2026. Its core is the self-employed regime (trabalhadores independentes, recibos verdes). It also gives the headline rates for employees, employers and members of corporate bodies, and the duty of companies that buy most of a freelancer's work (entidades contratantes).
 
 The law is the Código dos Regimes Contributivos do Sistema Previdencial de Segurança Social (the Code), approved by Lei n.º 110/2009 and last amended by Decreto-Lei n.º 127/2025 with effect from 1 January 2026. Articles were read in the consolidated text on the Diário da República on 2026-10-24. The 2026 IAS (indexante dos apoios sociais) is EUR 537.13 (Portaria n.º 480-A/2025/1, art. 2).
@@ -235,21 +233,3 @@ expected:
 Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line with the IAS, but no updated figure was found and the 2026 ISS Guia Prático still gives EUR 20.00, which this skill uses; the employer deadlines that apply during 2026 to employers not yet moved to the new reporting model under DL 127/2025 art. 5 (the old model's declaration date was not read); the regulation (Decreto Regulamentar 1-A/2011) that lists income left out of relevant income, which was read only through the ISS Guia Prático; the EUR 5 de minimis for the excess base, from the ISS Guia Prático only; the EUR 20 threshold for the annual review is in the ISS Guia Prático, not in art. 164-A; other special rates (for example very short contracts, pensioners in work, rural workers) and the contribution reductions for first jobs and long-term unemployed were not read and are left to `portugal-payroll`; EU coordination under Regulation 883/2004 (EUR-Lex did not load) is left to `pt-cross-border`.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -100,7 +100,6 @@ expected:
   balance: 5000.00
 ```
 
-
 ## Ask the client first
 
 - Is the company incorporated on the island, or controlled and managed there?
@@ -122,21 +121,3 @@ expected:
 | Tax Guide 12, Questions on Taxes and Allowances (April 2024), read in full | https://www.sainthelena.gov.sh/documents/Tax-Guide-No.-12-Questions-on-Taxes-Allowances-on-St-Helena | 2026-11-01 |
 
 Not yet confirmed: Any instrument after the 1 October 2021 consolidation: the Laws index, press pages and 2026 Income Tax Office page show no enacted change to these rates, and a full Gazette audit was not done. Whether the Income Tax Office accepts the return by email. Full deduction, loss and investment credit conditions (ss.11, 17 to 24): the rates are in this skill, the detailed tests are not. Treaty relief. Formation duties and company-law reporting.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -71,21 +71,3 @@ Several laws below are read from the Ministry of Finance's consolidated texts on
 | Tax Administration notice on the start of the IRMS system (30 December 2025) | https://www.gov.me/clanak/vazno-obavjestenje-u-vezi-sa-pocetkom-primjene-novog-integrisanog-it-sistema-poreske-uprave-irms | 2026-10-30 |
 
 Not yet confirmed: each municipality's 2026 surtax rate (only the 13% and 15% caps are confirmed); the art. 49 lump-sum tax scale for small entrepreneurs; the 2026 annual pension contribution ceiling (not published by 30 October 2026); and treaty withholding rates by country.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

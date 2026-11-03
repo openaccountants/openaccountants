@@ -117,21 +117,3 @@ Confirm person/entity, activity, ownership/control and relevant countries; resid
 The six figure homes and their reviewed source ledgers are read as preserved routing references at commit `9166cb1accc12699a0e0d14858acefd4b26138fc`. No underlying Guide or prior review receipt is rewritten by this overview.
 
 **Not yet confirmed:** Every domain remains partial, including full operative amendment continuity, actual current forms and portals, unresolved income-benefit and GST schedule/penalty interactions, TP instruments/formats, NASSIT implementation and treaty relief. Mining, petroleum, customs/excise, property/local taxes, investment exemptions and specialist reporting are not made complete by this intake map. The old approximate corporate-return date and combined PAYE/NASSIT remittance line are replaced by separate figure-home routing. Source-bound draft; independent conditional source corrections closed; no accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -12,8 +12,6 @@ tier: 2
 
 # Bulgaria: transfer pricing (трансферно ценообразуване), tax year 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 The arm's length rule is one sentence in the Corporate Income Tax Act (Закон за корпоративното подоходно облагане, ZKPO), Article 15. Everything else sits in the Tax-Insurance Procedure Code (Данъчно-осигурителен процесуален кодекс, DOPK): the related-party definition (Additional Provisions, para. 1, item 3), the list of methods (para. 1, item 10), the burden of proof (Article 116), the documentation rules (Chapter 8a, Articles 71a to 71zh), country-by-country reporting (Articles 143u to 143shch) and the penalties (Article 278a). How the methods are applied is set by the Minister of Finance in Ordinance N-3 of 7 November 2025 (Наредба № Н-3, State Gazette 96/2025). It applies from 1 January 2026 and repeals Ordinance N-9 of 2006 (Ordinance N-3, paras. 3 and 5). Article numbers below refer to the lex.bg consolidated texts (ZKPO to State Gazette 55/2026, DOPK to State Gazette 85/2026).
 
 Bulgaria adopted the euro on 1 January 2026. Some DOPK amounts were rewritten in euro by the Euro Introduction Act. Others are still printed in leva; those are read as euro at the fixed rate of BGN 1.95583, rounded to the cent (Euro Introduction Act, Articles 11(2), 12 and 13). Where this skill shows a euro figure for a leva amount, that is the converted figure.
@@ -217,21 +215,3 @@ Leva amounts: the Euro Introduction Act (para. 34) restated in euro only the DOP
 Not yet confirmed: whether underpricing of sales to a shareholder (not only overpayments) counts as a hidden profit distribution under ZKPO para. 1, item 5(a); the required language of the local file; whether the annual CIT return has a related-party disclosure schedule; the text of Council of Ministers Decree 347/2025 itself (the interest formula is taken from the NRA overdue liabilities page); whether the old NRA Transfer Pricing Manual will be reissued under Ordinance N-3.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

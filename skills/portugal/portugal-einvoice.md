@@ -18,8 +18,6 @@ tier: 2
 
 ## Rates and thresholds
 
-> Source-cited draft: not reviewed by an accountant.
-
 Todos os valores foram lidos em 30 de outubro de 2026 nos textos publicados pela AT no Portal das Finanças ou no Diário da República. As fontes estão na secção final. Para as taxas de IVA, a skill `portugal-vat-return` manda se houver divergência.
 
 ### Faturação Eletrónica
@@ -342,21 +340,3 @@ Not yet confirmed: whether the 2027 State Budget postpones again the end of PDF 
 Esta skill e os respectivos resultados são disponibilizados apenas para fins informativos e de cálculo, não constituindo aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (como um Contabilista Certificado, Revisor Oficial de Contas, advogado fiscalista ou equivalente licenciado na sua jurisdição) antes de serem entregues ou utilizados como base para qualquer actuação.
 
 A versão mais atualizada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

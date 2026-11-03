@@ -90,21 +90,3 @@ expected:
 | Executive Regulations of Law 2 of 2008, art. 8(2), with arts. 1 to 3 and 9 to 14; Arabic OCR read and PDF page 8 visually checked | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
 
 Not yet confirmed: NON-OPERATIVE HOLDS. Social Security Law 61 of 1976 and amendments; historical employer 11.5%, employee basic 8% plus additional 2.5% (10.5% total), KWD 2,750 monthly ceiling, claimed remittance by the following month's 15th; no current statutory text read supports using these. Historical claims that non-GCC expatriates are outside PIFSS, GCC nationals use home-state schemes, and social insurance applies only to Kuwaiti nationals are not operational conclusions. Labour Law 6 of 2010: historical 15 days per year for the first five years, then one month per year, all calculation caps and entitlement conditions, not verified. Current PIFSS penalties and any unemployment contribution. Prior writer reports only PIFSS homepage opened and manpower.gov.kw failed on 2026-11-01; those are access reports, not law readings. Historical calculation examples KWD 2,000 yielding employer 230/employee 210 and KWD 3,000 yielding employer 316.25, and the Kuwaiti-versus-expatriate hiring comparison, are withdrawn from operative use pending those checks.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

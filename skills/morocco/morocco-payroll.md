@@ -183,21 +183,3 @@ Do not file or pay for the user. Produce computations and draft payslips only.
 | cnss.ma, failed: no connection from script or browser | https://www.cnss.ma | not read, connection failed 2026-11-01 |
 
 Not yet confirmed: every CNSS, AMO and TFP rate and the MAD 6,000 ceiling for 2026 (cnss.ma unreachable; the latest read is dated 1 January 2024); SMIG for 2026; Damancom deadline, BDS date, Mon e-ID access, EFI and EDI; CNSS late surcharge; quarterly IR payment for small employers (not in art. 174-I); form number 9421 and portal fields; payslip legal contents and retention period under the Code du travail; IR rounding to the dirham; CNSS treatment of benefits, indemnities (travel, meal, representation) with their limits, overtime, 13th month; apprentices; hiring limits for auto-entrepreneurs; monthly versus year-end spreading of bonuses; CIMR terms; ANAPEC Idmaj and Tahfiz social relief for 2026.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

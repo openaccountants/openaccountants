@@ -51,21 +51,3 @@ tier: 2
 | National Register card, Presidential Decree No. 1 of 16.01.2009 | https://pravo.by/document/?guid=3961&p0=Pd0900001 | 2026-10-31 |
 
 Not yet confirmed: the consolidated text of Decree No. 1 of 16.01.2009 (pravo.by returned "page not found" for the text, and etalonline.by shows it only to subscribers), so the following are not confirmed: which body registers which entity, the time the registrar takes, the documents list, the name-approval step and the 12-month deadline for paying in charter capital that the old version gave (and its note that longer periods apply to companies with foreign capital); the statutory minimum capital of an OAO and a ZAO in basic units; the minimum additional liability of ODO participants; bank account opening rules. The EGR site (egr.gov.by) and the MNS site (nalog.gov.by) did not respond from our network on 31 October 2026.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

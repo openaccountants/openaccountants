@@ -43,21 +43,3 @@ The [July 2026 notice](https://www.gov.tc/revenue/news/inland-revenue-department
 Reconcile registered activity, invoices, tax collected, returns and payments each month. Preserve the records while the retention rule is resolved: the tourism-tax overview says seven years, while the generic FAQ says five. This batch does not certify either as the controlling statutory period.
 
 The link labelled as the hotel-tax ordinance on the Revenue homepage opened a business-licence consultation document. The separately linked February 2024 hotel-tax advisory also describes proposals. Neither has been treated as enacted law. The actual ordinance and amendment chain still need retrieval and reconciliation before merge, including rate, base, exemption, retention and penalty provisions. Independent accountant review is pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

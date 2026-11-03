@@ -11,8 +11,6 @@ tier: 2
 
 # Greece Tax Overview
 
-Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
-
 A map of the main Greek taxes for tax year 2026. It computes nothing; each line points to the skill that holds the detail. Income tax figures are from the Ministry of Finance codification of the Income Tax Code (ΚΦΕ, ν. 4172/2013) with amendments up to ν. 5264/2025. VAT figures are from the AADE codification of the VAT Code (ν. 5144/2024), which replaced ν. 2859/2000.
 
 ## Greek tax system at a glance
@@ -40,21 +38,3 @@ A map of the main Greek taxes for tax year 2026. It computes nothing; each line 
 | e-EFKA home page | https://www.efka.gov.gr | 2026-10-23 |
 
 Not yet confirmed: any amendment to the VAT Code rates made after 31 December 2024 (the AADE codification read runs to that date); any amendment to the Income Tax Code during 2026 after ν. 5264/2025.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

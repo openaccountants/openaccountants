@@ -122,21 +122,3 @@ expected:
 | [OBR portal routing page](https://www.obr.bi/index.php/teledeclaration-telepaiement) | Read for Medium/large and small/micro portal links and linked manuals read; authenticated taxpayer screens not accessed. | 2026-11-01 |
 
 Not yet confirmed: July transition for an entity already above the new annual threshold before 1 July; sector-specific exemptions and every tariff classification; actual current ordinary refund minimum if a later order changes 2021 art. 26; mixed-use prorata/capital adjustment execution; property gifts, mixed-use buildings and lease VAT; all EBMS offence stacking and interest; authenticated submission/payment/refund screens. These gaps are not permission to use blanket reduced rates or unlimited credit carryforward.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

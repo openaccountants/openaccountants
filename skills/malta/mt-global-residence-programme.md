@@ -234,21 +234,3 @@ Reading the example ([S.L. 123.148 rule 5](https://legislation.mt/eli/sl/123.148
 - Income Tax Act, Cap. 123 (consolidated; art. 4(1), art. 56(23), art. 56(27), art. 74): https://legislation.mt/eli/cap/123/eng/pdf
 
 This Guide is general information for tax year 2026, not advice on a particular family's affairs. Confirm current figures on the official sources above before acting.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

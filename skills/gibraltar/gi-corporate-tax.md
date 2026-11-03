@@ -210,7 +210,6 @@ Example: assume a designated company has a Schedule 3 profit measure of £100,00
 
 The [original executable control and assumptions](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
 
-
 The restriction does not apply to losses incurred in periods ending **from 1 July 2021 through 30 June 2023**. Designated persons must use these losses before losses from other periods. Identify the loss period's **end date**: a period ending 30 June 2023 falls within the window; one ending 1 July 2023 does not. Section 20(8) separately excludes the specified designated companies subject to insolvency proceedings. Neither exception removes the other loss eligibility conditions. [Section 20(8)–(10)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ### Mixed protected and restricted losses: statutory working-paper interpretation
@@ -232,8 +231,6 @@ No set-off is given under section 20A(1) if, within the specified three-year per
 3. Separate ordinary and higher-rate profit streams. Check connected-party dealings and interest restrictions independently.
 4. Compute current liability, subtract period-matched payments and reconcile the residual to CT1.
 5. Keep company-registry accounts, corporation-tax filing and payroll reporting as separate calendar events.
-
-
 
 The instalment example in section 4 also recomputes under its stated, verified basis-liability assumptions:
 

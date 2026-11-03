@@ -257,21 +257,3 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: whether the health minimum base applies to DPP and DPČ workers who pass the earnings threshold (VZP describes the minimum for employees in an employment contract; HIPA § 3(8) does not list agreements among the exceptions, and no other statutory exclusion was found); how the employee's one third of the health premium is rounded when the total is not divisible by 3 (PHIA § 9(2) sets the split but not the rounding); the CZK 4,500 small-scope threshold for 2027 (no MPSV communication found).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

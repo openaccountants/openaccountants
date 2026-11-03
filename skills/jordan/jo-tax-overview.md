@@ -89,21 +89,3 @@ expected:
 | Social Security Law No. 1 of 2014, SSC official translation through 16 Apr 2023: arts. 3-7, 19-24, 42-49, 59, 64 read; original Arabic source/pages recorded in closeout ledger | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf | 2026-11-01 |
 
 Not yet confirmed: calendar tax year as the rule for all taxpayers; the dinar peg to the US dollar (no Central Bank of Jordan page read); amendments after the texts above. This overview inherits JO-IT-CURRENT, JO-GST-CURRENT and JO-SSC-CURRENT from the detailed Guides; its headline figures and examples are non-operative until the relevant hold closes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

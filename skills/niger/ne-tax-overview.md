@@ -116,21 +116,3 @@ expected:
 | [OHADA official AUSCGIE original](https://biblio.ohada.org/doc_num.php?explnum_id=2032) | Pages 8,31–32: application, branch and representative-office distinctions; fuller read scope and national sources recorded in formation Guide | 2026-11-01 |
 
 Not yet confirmed: calendar tax year and annual return deadline; old geographic/monetary-union description and declarative-system/DGI administration proposition; currency conversion or monetary-union proposition; current residence/worldwide/source rules and top ITS rate; corporate income-tax rate, TVA rate/exemptions/recovery, ITS/CNSS, patente and property duties; TP, treaties, PE, cross-border withholding, exchange controls and complete 2026 law chain; current form/portal/fields/acknowledgements, numeric sanctions and old TDTA liabilities/refunds; supplier-requested cash calculation and early-period/straddling cases. The CGI2025 itself was not read. The old PwC VAT reference is not a legal source and no figure is adopted from it. All seven tax domains remain partial; no accountant has attested to this draft.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

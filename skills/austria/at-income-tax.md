@@ -294,21 +294,3 @@ expected:
 | BMF, Familienbonus Plus (schedules L 1k, L 1k-bF, E 30) | https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/familienbonus-plus.html | 2026-10-24 |
 
 Not yet confirmed: the 25 km minimum distance for a business trip and the rule that car running costs are business costs only above 50% business use, both read on USP and not found in the EStG or a regulation; the bookkeeping-duty thresholds that decide Basispauschalierung eligibility (§ 125 BAO, § 189 UGB) for 2026; the old version's BMF example of a home computer written off over three years with a 40% private share (Steuerbuch, 2025 assessment), not re-checked and left out; the 10% limit on donations from business assets (§ 4a), not re-read; Liebhaberei (hobby activities produce no tax loss, Liebhabereiverordnung), covered in the old version and not re-checked.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

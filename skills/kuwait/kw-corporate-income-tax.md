@@ -138,21 +138,3 @@ expected:
 | Income Tax Decree 3/1955, bilingual MOF compilation, PDF p. 9 / Arabic printed p. 9; arts. 7 to 9 read and page image checked | https://www.mof.gov.kw/Desicions/Decree/PDF/IncomeTaxDecree1955New.pdf | 2026-11-01 |
 
 Not yet confirmed: NON-OPERATIVE HOLDS. Original Decree art. 8 contains a reasonable-cause exception to the filing/payment fine and a KWD 5,250 low-income filing exception; their present interaction with the 2008 legislation and reg. arts. 13/34 has not been resolved, so do not use this Guide to reject a claimed statutory excuse or decide whether a low-income body must file. Authenticated portal form fields, acknowledgements and payment reference steps; listed Gulf-company NLST treatment and the correct scope/current effect of Ministerial Decision 3/1989. Mixed ownership: how the 15% applies to a company part owned by Kuwaiti and part by foreign holders, and the Kuwaiti and Gulf exemption itself, including the earlier statements here that Gulf nationals are foreign and also exempt (the texts read define the taxpayer as any corporate body; Ministerial Decision 3 of 1989 on equal treatment of Gulf nationals is named in the NLST rule but the copy on the MOF site is a different document); historical KFAS 1% contribution on net profit after transfers to statutory reserve and loss offsets (NON-OPERATIVE HOLD; neither rate, base nor applicability is verified); the 2.5% and 1% interaction with Free Trade Zone exemptions under Law 26 of 1995; the extension of the FY 2026/2027 DMTT retention carve-out and five-year transfer direction to private payers (ordinary retention under reg. arts. 37 to 39 remains sourced); DMTT Executive Regulations detail (Ministerial Resolution 55 of 2025, not read beyond the title page); any business profits tax draft, for which no enacted text was found; the old cap of 50% on the late filing fine, which no text read supports; the earlier statements that dividends carry no withholding tax and that interest and royalties have no fixed withholding rate, with tax collected through the 5% retention
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

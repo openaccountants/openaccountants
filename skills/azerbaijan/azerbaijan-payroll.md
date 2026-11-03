@@ -155,21 +155,3 @@ expected:
 | STS 2026 wage booklet, contract procedure page 1 | https://www.taxes.gov.az/uploads/2026/buklet/1_16.pdf | 2026-10-31 |
 
 Not yet confirmed: which month's schedule applies to pay for December 2025 that is paid in January 2026 (art. 150.3.1 taxes the calculated monthly income; no explicit transition rule was found); whether monthly thresholds are pro-rated for a mid-month joiner or leaver (no pro-rating rule was found in arts. 101–102). Treatment of non-employment corporate-office/director fees outside an employment contract has not been fully resolved; do not calculate them as ordinary salaries by default.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

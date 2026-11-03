@@ -189,21 +189,3 @@ expected:
 | HMRC VAT Notice 700/12, Filling in your VAT return (boxes 1 to 9) | https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012 | 2026-10-30 |
 
 Not yet confirmed: the due date for Island VAT returns and payments (the old version of this skill said 1 month and 7 days after the period end; HMRC Notice 700/12 gives that for UK traders, but no Island source read today states it, and the Island VAT Regulations were not read); whether UK Making Tax Digital record-keeping rules apply in the Island (the old version said they do; the Island pages read today describe filing through the Island's own online portal and do not mention Making Tax Digital); the format of Island VAT numbers (the old version said GB plus 9 digits); the full layout of the Island return beyond box 10 (HMRC Notice 700/12 describes boxes 1 to 9 for the UK return); the late registration penalty amount; any other Island-only zero-rating or exemption differences from the UK (the old version flagged aircraft parts and repairs); whether postponed VAT accounting lets an Island importer declare import VAT on the return instead of paying it at the border (the old version said so; the Imports and Exports page mentions only that postponed-accounting users already have a Customs Declaration Service login).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

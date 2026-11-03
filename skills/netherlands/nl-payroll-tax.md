@@ -254,21 +254,3 @@ expected:
 | Tweede Kamer, Belastingplan 2027, explanatory memorandum (kst. 37022 nr. 3) | https://zoek.officielebekendmakingen.nl/kst-37022-3.html | 2026-10-27 |
 
 Not yet confirmed: the Belastingplan 2027 proposes abolishing the own-products exemption from 2027 (a bill, not law; do not apply to 2026). These older points were not re-read and stay out until checked: maternity and partner leave and their UWV benefits, working-time limits, the full payslip content list, third-party payments reporting, the employee-count limit for filing in Mijn Belastingdienst Zakelijk, the exact customary-wage exceptions for start-ups and loss-making companies, the overtime revision method for multiple contracts and business transfers, director-liability reporting deadlines in the Invorderingswet 1990, and the detailed conditions of the tools, training, workplace and bicycle exemptions (handbook ch. 22 to 23).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

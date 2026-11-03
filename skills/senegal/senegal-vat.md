@@ -114,21 +114,3 @@ expected:
 | DGID Entreprises page: portal descriptions read | https://www.dgid.sn/entreprises | 2026-11-01 |
 
 Not yet confirmed: The text of Loi 2025-17 was not opened; only DGID's summary of it was read, so any CGI change it made beyond that summary is not reflected. The old registration threshold (100M goods, 50M services): no such VAT threshold found in arts. 351 to 355. Old capital goods periods of 20 and 5 years and the old 50% late filing surcharge and 1% monthly interest were not found and conflict with art. 665. Old list of exempt rent and agricultural inputs: read arts. 361 onward. Exact return form boxes. Quarterly filing for the simplified regime.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

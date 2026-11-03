@@ -282,21 +282,3 @@ expected:
 | podatki.gov.pl, Ceny transferowe (TPR-C(6), 2026 safe harbour notice) | https://www.podatki.gov.pl/ceny-transferowe/ | 2026-10-23 |
 
 Not yet confirmed: the WIBOR 3M, WIRON 3M or POLSTR 3M fixing for any particular contract date (example 1 assumes 4.00%; take the actual fixing from the benchmark administrator); whether a calendar-2025 TPR filed after that date must still carry the repealed statement (the transitional rule in art. 4(1) covers only tax years straddling 1 January 2026); the TPR-C form version and regulation for tax year 2026 (not yet published); whether the Ministry of Finance accepts that Tax Ordinance art. 12 § 5 moves the local file preparation deadline (the text applies it to deadlines in tax law; no MF guidance read); the full list of low-value services in annex 6 to the CIT Act (not reproduced here); the detailed content requirements in the documentation regulation (not read in full); treaty-specific MAP time limits.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -181,21 +181,3 @@ expected:
 | Skatteverket: Ränta på skattekontot (basränta and kostnadsränta) | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-10-22 |
 
 Not yet confirmed: which named Skatteverket service, other than accounting software and Filöverföring, will take Inkomstdeklaration 2 for financial years ending September to December 2026 once the e-service is withdrawn on 29 December 2026; whether the basränta changes after 22 October 2026 (Skatteverket showed 2.5% from 1 December 2024 as current); reduced kupongskatt rates under individual tax treaties (not covered here).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

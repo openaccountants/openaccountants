@@ -12,8 +12,6 @@ tier: 2
 
 # Greece: partnerships and other entities on single-entry books (tax year 2026)
 
-Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
-
 A Greek partnership is not transparent. The ΟΕ, the ΕΕ, the civil-law partnership and the joint venture are taxpayers in their own right, and pay legal-entity income tax on their profit. This skill covers those entities when they keep single-entry books (income and expense books). The rules are in the Income Tax Code (Κώδικας Φορολογίας Εισοδήματος, ν. 4172/2013, "ITC"), read in the Ministry of Finance codification up to ν. 5264/2025. Book-keeping categories are in the Greek accounting standards law (ν. 4308/2014). Fines are in the Tax Procedure Code (ν. 5104/2024, "TPC"). The trade fee is in art. 31 of ν. 3986/2011, as replaced by art. 3 of ν. 5162/2024.
 
 Related skills: `gr-corporate-income-tax` (entities on double-entry books: the full base, depreciation table, interest limitation, participation exemption, withholding on payments), `gr-income-tax` (sole traders and the partners' own returns), `gr-cross-border`, `gr-vat-return`, `gr-efka`, `gr-company-formation`.
@@ -195,21 +193,3 @@ expected:
 The AADE PDFs refuse automated downloads (HTTP 403). They were read in a browser on 2026-10-23.
 
 Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art. 52); no AADE circular found that says in terms whether art. 49 applies to single-entry entities (the EUR 3,000,000 floor makes the point academic at single-entry size); the official text of ν. 5164/2024 art. 47, which amended ν. 4308/2014 art. 2 after the Ministry of Finance codified text (posted February 2024) was made (AADE's May 2026 manual still applies the EUR 1,500,000 test); the AADE decision setting the filing window for tax year 2026 returns, and any extension; whether any 2026 law amended the ITC articles above after ν. 5264/2025.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

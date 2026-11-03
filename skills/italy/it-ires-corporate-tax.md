@@ -284,21 +284,3 @@ expected:
 | Agenzia delle Entrate, IRAP 2026 instructions (3.9% rate) | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 | 2026-10-22 |
 
 Not yet confirmed: the exact filing date for the 2026 return (Modello Redditi SC 2027 and its instructions are not yet published; 2 November 2027 is inferred from the weekend and holiday rule); how D.Lgs. 117/2026, D.Lgs. 33/2025 and D.Lgs. 173/2024 (all applying from 1 January 2027) affect the 2026 return, payments and penalties made in 2027; the interest rate on assessed tax; the euro figure of the ISA revenue limit that decides 50/50 acconti (the general instructions 4.2 say only that each ISA approval decree sets it); the "taxable part" of royalties under DPR 600/1973 art. 25(4); treaty withholding rates; the super-depreciation measure in L. 199/2025 art. 1(427)-(436).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

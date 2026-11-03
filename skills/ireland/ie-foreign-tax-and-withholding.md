@@ -290,21 +290,3 @@ expected:
 | Ireland-India convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/synthesised-text-mli-ireland-india-dtc.pdf | 2026-10-23 |
 
 Not yet confirmed: how an individual's foreign tax on income from a country with no treaty is relieved (Revenue's unilateral relief list covers companies and CGT only, and Notes for Guidance say Revenue extends a practice to individuals without stating its terms); the Irish treaty rates for Irish-source dividends to France, Italy, Luxembourg and Japan, where the treaty names only "Irish sur-tax" and relief comes from section 172D; whether Finance (No. 2) Bill 2026 is enacted as initiated.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -112,21 +112,3 @@ expected:
 | GUFE published creation procedure, steps and local dossier | https://gufe-rca.org/creer-mon-entreprise/procedure-de-creation/ | 2026-11-01; Read procedure/dossier/collection sections; live forms, fee tariff and applicable national override not opened. |
 
 Not yet confirmed: Current national capital overrides, full in-kind valuation and foreign-founder conditions, exact GUFE fees/forms, notarisation exceptions and authorised deposit process; registration timeline as a statutory right; all registry/accounting filings and national penalties; an authenticated current SYSCOHADA reporting package. No universal “several weeks” timeline is retained.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

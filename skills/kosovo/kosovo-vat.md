@@ -385,21 +385,3 @@ expected:
 | TAK current TV/LB/LSH/KRR timetable | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-30 |
 
 Not yet confirmed: numeric 2026 tax late-interest rate; current instruments for the amended electronic-services special scheme and tourist-refund operational commencement; whether any sub-legal act implements recipient liability under VAT art. 52(1.4.2)–(1.4.7) beyond construction services (AI 03/2015 art. 70); full current Annex 1 code list of AI 03/2015 for 8% goods.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

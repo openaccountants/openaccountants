@@ -291,21 +291,3 @@ expected:
 | AO § 240(3) and § 224(2) no. 1 (three-day grace payment-method exception), selected operative clauses re-read | https://www.gesetze-im-internet.de/ao_1977/__224.html | 2026-10-29 |
 
 Not yet confirmed: the ELSTER form set for tax year 2026. ELSTER's 2026 instructions page was empty on 2026-10-22, so the skill names the 2025 set (KSt 1 and annexes).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

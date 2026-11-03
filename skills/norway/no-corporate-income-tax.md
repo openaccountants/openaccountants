@@ -197,21 +197,3 @@ expected:
 | Brønnøysundregistrene, how much is the late filing penalty (court fee NOK 1,345) | https://www.brreg.no/en/submission-of-annual-accounts/late-filing-penalty/how-much-is-the-late-filing-penalty/ | 2026-10-30 |
 
 Not yet confirmed: the Petroleum Tax Act's own base rules (uplift, deductions) and the resource rent bases for hydropower, wind and aquaculture, which are given here only by rate; the Supplementary Tax Act (global minimum tax) scope and rate; the full CFC (NOKUS) computation; loss carry-back on cessation (sktl. § 14-7); the amendment to sktl. § 14-6 by lov 19 June 2026 nr. 48, which is not yet in force; how advance tax for companies is set; the 2026 rate of interest on restskatt.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

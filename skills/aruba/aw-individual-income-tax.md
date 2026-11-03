@@ -49,21 +49,3 @@ Keep the income-base calculation, allowance evidence, table year and rounding st
 Annual return deadlines, residence, partial-year treatment, spousal allocation, deductions, special rates and credits are unresolved here. Obtain the relevant current return instructions and taxpayer facts before completing an assessment. Social insurance has a separate base and is outside this table.
 
 General research reference only; professional review and the applicable official instructions are required for an actual return.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

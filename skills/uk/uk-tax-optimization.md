@@ -17,8 +17,6 @@ tier: 1
 
 ## UK Tax Optimization -- Self-Employed Skill v1.2
 
-> Source-cited draft: not reviewed by an accountant.
-
 Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): every figure moved to 2026/27 with the year named; dividend rates 10.75% / 35.75% / 39.35%; employer NIC 15% above GBP 5,000; 55p mileage; 14% main pool and 40% first-year allowance (Finance Act 2026 ss.28 and 29); VCT relief 20% (FA 2026 s.15); voluntary Class 2 abroad withdrawn; Example 2 (incorporation) recomputed, it previously applied corporation tax to the dividend instead of the profit; accountant attribution removed; Sources table added. Review fixes (2026-10-23): Capital Goods Scheme values taken from VAT Regulations 1995 reg 113; simplified expenses no longer tied to the cash basis; the List 3 condition for traders removed; the zero-emission car allowance dated; em dashes removed.
 
 ## Rates and thresholds, 2026/27
@@ -393,8 +391,6 @@ expected:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
 ## Sources
 
 | Source | URL | Read on |
@@ -424,21 +420,3 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | Official page | https://www.gov.uk/vat-registration/when-to-register | 2026-10-31 |
 
 Not yet confirmed: nothing in this skill depends on a figure not read from the sources above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

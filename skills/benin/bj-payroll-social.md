@@ -99,21 +99,3 @@ expected:
 | [Signed law 2026-10 of 24 June 2026](https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf) | Tax provisions arts. 1–19 and final arts. 48–49, PDF pages 1–6 and 17 visually read; adjacent article 20 heading read. OCR of the whole capture is not a whole-law review. | 2026-11-01 |
 
 Not yet confirmed: current CNSS employer pension, family allowances and industrial-injury rates, employee pension rate, contribution base/ceiling and CNSS remittance deadline. These preserve all legacy social-contribution topics as unresolved, rather than presenting the old percentages as current. Official CNSS contribution guidance returned HTTP 500 and a WordPress critical-error page in the ordinary browser, so no successful read date is claimed for it; authenticated DGI portal screens, exact field identifiers and payment-confirmation workflow; later instruments not identified by the sources read; application to a particular taxpayer. Independent AI source review closed on 1 November 2026 for the bounded job (see the [country README](README.md)); no accountant has attested to this version.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

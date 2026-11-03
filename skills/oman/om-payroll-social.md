@@ -103,21 +103,3 @@ expected:
 | Personal Income Tax Law, RD 56/2025, official Tax Authority-hosted gazette issue 1602 pp. 7 to 31, all 25 PDF pages visually read | https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true | 2026-11-01 |
 
 Not yet confirmed: NONOPERATIVE HOLD on current 2026 contribution ceiling decisions and sick-leave implementation date: Fund FAQ gives 1 July 2025 but RD 60/2025 expressly replaces the statutory commencement with three years after 19 July 2023. Do not apply the FAQ date or the statutory starting ceiling as a verified live payroll instruction. Also open: whether the Board has set the start date of the 9% savings system and its current status; the Board decision on work injury and sick leave for non-Omani workers (the old skill said 1% for all expatriates, not confirmed);   Fund portal steps; GCC national contribution rates. The old skill’s employer total of 12.5% omitted the two leave branches and is replaced.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

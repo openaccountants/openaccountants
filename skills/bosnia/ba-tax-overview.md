@@ -70,21 +70,3 @@ For tax planning across these options, see [bosnia-tax-optimization](bosnia-tax-
 | Central Bank of BiH, notice on the official exchange rate of the convertible mark against the euro | https://cbbh.ba/press/ShowNews/321?lang=en | 2026-10-30 |
 
 Not yet confirmed: Brčko District contribution rates (not read; see bosnia-payroll); the RS 8% salary rate in the text of the law itself (RS income tax law art. 4(1) after 119/21 was not on the scanned page; the 8% is taken from the RS Tax Administration's 2026 example); the BD financial statements deadline; treaty withholding rates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

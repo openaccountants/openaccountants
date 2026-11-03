@@ -509,21 +509,3 @@ expected:
 | Official Gazette 2026 issue lists, issues 1 to 159, scanned for amendments to the PIT, contributions, labour, local-finance and disability laws | https://www.sluzbenilist.me/registri?type=0&year=2026 | 2026-10-30 |
 
 Not yet confirmed: which General Collective Agreement sets the lowest contribution base after 30 April 2026 (the 2022 agreement was extended only to that date, [Sl. list CG 45/26][gca]); each municipality's current surtax decision and rate (the Bar 13% decision was read only on a municipal investment portal, investin.bar.me, not in the Gazette); whether the surtax follows the employer's seat, the place of work or the employee's residence when they differ, and whether any municipality requires a separate local return; the 2026 PIO maximum annual base (Ministry rulebook not yet published); whether the disability contribution under art. 22 uses the gross (EUR 1,206) or the net (EUR 1,012) 2025 average salary; the Government's current minimum wage amounts under Labour Law art. 101(3); the Government regulation amounts for tax-free domestic per diem and own-car use; which employers are Chamber of Economy members (Law on the Chamber of Economy, 1/18, not read); statutory overtime, night and holiday premiums under the Labour Law; whether the Government's September 2026 proposal to change the salary bands from 1 January 2027 has been enacted.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

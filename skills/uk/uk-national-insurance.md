@@ -235,21 +235,3 @@ expected:
 | GOV.UK, Pay voluntary Class 2 if you work or live abroad | https://www.gov.uk/pay-class-2-national-insurance/if-you-work-or-live-abroad | 2026-10-24 |
 
 Not yet confirmed: whether an under-21 employee paid at the 0% age-related rate makes a second "payment of earnings" for the single-director Employment Allowance exclusion (NICA 2014 s.2(4A)); the PAYE payment rule in SSCR 2001 Sch.4 (GOV.UK page used); the statutory basis of the MTD for Income Tax late payment penalty rates (GOV.UK page used).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

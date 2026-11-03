@@ -114,21 +114,3 @@ expected:
 | [CNPS employer Guide, dated archive](https://web.archive.org/web/20240717045908id_/https://cnps-tchad.com/wp-content/uploads/2021/06/GUIDE-DE-LEMPLOYEUR.pdf) |2026-11-01| Actual contribution guidance and source-currentness qualification recorded in payroll ledger |
 
 Not yet confirmed: all substantive holds listed in the README and destination Guides, including comprehensive later-law/implementation updates, live filing screens, wider cross-border, property/compliance and specialist accounting scope. The router does not close those gaps. Cases are hypothetical reconciliation controls, not sourced tax amounts. For independent AI source review and its limits, see the [country README](README.md). No accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

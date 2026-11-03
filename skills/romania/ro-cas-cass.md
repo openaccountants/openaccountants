@@ -181,21 +181,3 @@ expected:
 | ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-10-23 |
 
 Not yet confirmed: whether the 2026 state budget law grants an early-payment discount on 2026 CAS and CASS paid in 2027 (art. 151(14), art. 174(17)). The amending texts of Legea 239/2025 and Legea 141/2025 were not read; the 72-wage cap is taken from the consolidated Fiscal Code and the ANAF summary. Which professional pension systems count for the art. 150(1) exemption was not checked.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

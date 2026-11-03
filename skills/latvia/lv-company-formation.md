@@ -59,21 +59,3 @@ This skill covers choosing a legal form in Latvia, registering it in 2026, and t
 | VID, micro-enterprise tax rate | https://www.vid.gov.lv/lv/mikrouznemumu-nodokla-likme | 2026-10-30 |
 
 Not yet confirmed: any amendment to Cabinet Regulation No. 664 after 11 July 2025 (the date of the only readable copy; its base amounts match UR's 2026 pages) and whether an official publication fee is charged on top; any Commercial Law amendment in force after 2 August 2026 (likumi.lv did not respond on 30 October 2026 and the latest archive copy, dated 2 August 2026, lists no later version); the Micro-enterprise Tax Law itself (the micro rules above come from VID), including whether an SIA that registered for micro-enterprise tax in an earlier year keeps that status (CIT Law arts. 2(4) and 4(11) still mention such an SIA).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -173,21 +173,3 @@ Do not apply the flat rate scheme. It is abolished.
 | GRA, E-VAT page, page read in full | https://gra.gov.gh/e-services/e-vat/ | 2026-11-01 |
 
 Not yet confirmed: (1) Whether the ETAX screen has the same box numbers as DT 0135, which dates from 2018; GRA lists no 2026 form. (2) Act 1151 does not itself set NHIL and GETFund; those Acts as amended were not opened, so the levies rest on GRA guidance. (3) The s.66 amounts come from OCR of the scan; the penalty unit is GHS 12 on the GRA penalties page. (4) Six-month and one-month thresholds are in the Guidelines; the Act section read shows the 12-month and three-month tests only. (5) The GRA upfront page still says 15% and GHS 200,000; the Guidelines dated 31 Dec 2025 say 20% and GHS 750,000, and s.17 should be read for a live case. (6) Old skill box map 1 to 21 did not match the form and was replaced. (7) The old skill's 12-month wait before a bad debt claim is not in s.47 and was dropped. (8) Guidelines sect 15.7 reads 15 January in OCR where the Act took effect 1 January; treat as a scan error, not checked against a clean copy.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -77,21 +77,3 @@ For tax planning between a sole trader and a d.o.o., see [bosnia-tax-optimizatio
 | Zakon o dopunama Zakona o PDV, Sl. glasnik BiH 20/25 (latest amendment; first-home refund, no change to the points above) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-6-Z-o-izmj-i-dop-Z-o-PDV-sl-list-20-25-04-04-2025.pdf | 2026-10-30 |
 
 Not yet confirmed: the RS company law (Zakon o privrednim društvima, last amended 45/25), so the RS list of company forms, the minimum capital of a multi-member RS d.o.o. and of an RS a.d. (the copy on fipa.gov.ba returned "not found" and no other official copy was found); the minimum capital of a BD joint stock company; the joint stock company minimum of KM 50,000 that the old version gave for all of BiH (confirmed only for the FBiH); the old version's KM 2,000 d.o.o. minimum, which is no longer the rule in the FBiH (KM 1,000) or BD (KM 1 or KM 1,000 since 2021); how long incorporation takes end to end (the old version said 10 to 15 business days; the FBiH law gives only the court's three-day document check); RS and BD registration deadlines (the RS registration law 67/13 PDF on apif.net is not machine-readable); court, notary and APIF fees; whether a company stamp is still required (the old version listed it as a step); separate municipal registration (the old version listed it; no official source read); BD annual financial statements deadline.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -12,8 +12,6 @@ tier: 2
 
 # UK VAT return: rates, registration, the nine boxes, penalties (position at 24 October 2026)
 
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
-
 VAT is not tied to the 6 April income tax year. Rates change when the law changes, and the registration limits are set by order and have been the same since 1 April 2024. Every figure below says the date it applies from. Return periods are set by HMRC for each business (usually quarterly).
 
 This skill is the method and the figures. It links to the other UK VAT skills and does not repeat them:
@@ -336,21 +334,3 @@ expected:
 | GOV.UK, Flat Rate Scheme, all parts | https://www.gov.uk/vat-flat-rate-scheme/print | 2026-10-31 |
 
 Not yet confirmed: HMRC's interest rate table was last updated 23 December 2025; the 7.75% figure is confirmed only by adding 4% to the Bank of England rate shown on 24 October 2026. The statutory instrument that adds the 7 days to the online return deadline was not read; the deadline is from HMRC's page. The legal basis for Making Tax Digital for VAT (VAT Regulations 1995 Part V) and for late payment interest (Finance Act 2009 s 101) was not read; those rules are from HMRC's notices. The VAT Notice 700/1 supplement threshold table ends at 31 March 2026; the GBP 90,000 figure for later dates rests on the statute, which shows no outstanding changes. How-to: whether the 2% limited cost test runs on turnover with or without VAT was not settled from the page; Example 3 uses goods figures that fall on the same side either way. What the software itself shows as a submission receipt varies by product and was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

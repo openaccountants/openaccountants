@@ -703,21 +703,3 @@ Not yet confirmed: the 2027 State Budget proposal (Proposta de Lei 110/XVII/2.ª
 Esta skill e os respectivos resultados são disponibilizados apenas para fins informativos e de apoio ao cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus colaboradores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (Contabilista Certificado membro da OCC) antes da submissão ou de qualquer actuação com base nos mesmos.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

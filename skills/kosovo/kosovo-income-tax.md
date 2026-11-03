@@ -351,21 +351,3 @@ expected:
 | Gazette record of 05/L-028: 08/L-142 is the only amending act | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11014&langid=2 | 2026-10-30 |
 
 Not yet confirmed: numeric 2026 tax late-interest rate; filing treatment of the PD24 donation-field conflict; case-specific residence exit/cessation treatment; operative health phase for a final payroll/contribution result.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -176,21 +176,3 @@ Not yet confirmed: the interest rate under § 10-70 seventh paragraph letter b; 
 ---
 
 *Built for the OpenAccountants migration desk. On this corridor the destination is straightforward and the exit is the project: a three-year residence tail, a twelve-year tax calendar, and a company that must not emigrate by accident. Fix the departure date, budget the 61 days, choose the payment path deliberately, and take the treaty-safe Swiss regime, with an adviser on each side.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

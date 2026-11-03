@@ -163,21 +163,3 @@ expected:
 | [DGI Précis fiscal 2026, 10 April version](https://dgi.gov.gn/wp-content/uploads/2026/04/Guinee-Precis-fiscal-2026.04.10-VF.docx), §1.2 ordinary scope, base/charges, rate/IMF, payments and annual declaration; §1.6 and VAT-option scope cross-check; cover/introduction identify current administrative doctrine. Typographical dates and incorrect interest-article cross-reference are not treated as law. | 2026-11-01 |
 
 Not yet confirmed: final October 2026 rectifying-law promulgation/wording/effect and operative applicability of all source versions; complete TPU computation and regime-boundary administration; specialised asset depreciation, reinvestment/merger/share-transfer gains, participation relief, donations and finance/related-party deduction methods; current official central-bank rate; investment/CGA/mining/stability approvals; complete withholding filing/gross-up, treaty relief, branch allocations, foreign-credit computation and TP documentation/formats; all current penalty/appeal procedures and authenticated e-Tax fields/receipts. The ordinary methods above are substantive but the full corporate domain remains partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

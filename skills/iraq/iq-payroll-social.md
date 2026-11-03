@@ -101,21 +101,3 @@ expected:
 | Law 113: PDF pp. 18–19 art. 17(1)–(4) and art. 18 read visually with neighbours | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
 
 Not yet confirmed: **IQ-CURRENT** complete later amendments and 2026 payroll table; **IQ-PAY-PRIVATE** private-sector income base, allowance/exemption limits, non-Iraqi full-month proration, child dependency/age/income conditions, multiple employers and secondary employment; **IQ-PAY-PROCEDURE** employer registration, forms/tables, current remittance dates (including the inherited 15-day claim), returns, receipts, refunds and penalties; **IQ-SOCIAL** operative social-insurance legislation, commencement/transitions, contribution rates, oil categories, wage base, ceiling, registration, remittance, benefits and cross-border coordination. Neither the old employee/employer percentages nor a public pension deduction is evidence of the present private-sector liability.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

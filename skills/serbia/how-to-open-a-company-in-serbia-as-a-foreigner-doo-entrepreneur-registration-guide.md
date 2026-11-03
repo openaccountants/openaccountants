@@ -359,21 +359,3 @@ Planning these steps before incorporation can save considerable time and prevent
 | APR, entrepreneur founding instructions: paper or electronic filing, one-stop system (Internet Archive capture of 19 February 2026) | https://web.archive.org/web/20260219073956/https://www.apr.gov.rs/регистри/предузетници/упутства/оснивање.1083.html | 2026-10-30 |
 
 Not yet confirmed: whether the entrepreneur fee differs between paper and electronic filing (the APR page gives one amount); the deadline for recording the beneficial owner when it is not done in the founding filing (APR's page still cites the 2018 Law on the Central Register of Beneficial Owners and its 15-day deadline, but that law was replaced in 2025 and the new law was not read); the text of the Law on the Registration Procedure with APR itself (Article 9(2) is cited through APR's own page); the qualified electronic certificate providers and their conditions for foreigners; the conditions for an entrepreneur's personal salary (lična zarada), which serbia-tax-optimization places in Personal Income Tax Law Article 37a.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

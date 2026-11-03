@@ -264,21 +264,3 @@ The analitico method avoids this risk: it pays 100% of a settlement run on the t
 | Agenzia delle Entrate, "Come pagare l'Iva" | https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva | 2026-10-23 |
 
 Not yet confirmed: row numbers are those of Modello IVA 2026 (VAT year 2025) until Modello IVA 2027 is approved; whether the storico base for a quarterly filer by option includes the 1% interest paid with last year's balance (Example 1 states the base as a single figure); the legal interest rate used in ravvedimento for 2026; when the repeal of art. 19-bis2(3) by D.Lgs. 186/2025 starts to apply.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

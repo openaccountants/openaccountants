@@ -109,21 +109,3 @@ expected:
 | URA compendium of domestic tax laws, as of July 2021: ITA Cap 340, VAT Act Cap 349 (only the sections cited; old numbering) | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ | 2026-11-01 |
 
 Not yet confirmed: no statutory upper NSSF cap (old file; not stated on the page read); the 2021 NSSF amendment and the Act cap number beyond the page's reference to Cap 230; Local Service Tax UGX 5,000 to 100,000 a year, banded by income, paid to the local council (old file cited a secondary source; the law was not opened); NSSF late penalties.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

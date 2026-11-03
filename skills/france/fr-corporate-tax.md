@@ -215,21 +215,3 @@ expected:
 | Selected corporate repair clauses: CGI arts. 1668, 119 ter, 182 B bis/119 quater, 1731, 223 A, 145/216, 187/182 B and 221; F23575 EI option; current 219 and art. 15-II effect clause. Rendered official captures, selected native clauses only; not a full amendment comparison. | Existing official URLs above, with exact quotation/range/hash/read attribution in the corporate ledger | 2026-10-29 |
 
 Not yet confirmed: the conditions of the option for IS under CGI art. 239 (not read today); the interest limitation rules for tax-consolidated groups; and the official 2027 filing calendar for years closed on 31 December 2026 (the dates given above are computed from the statute and the 15-day extension, not taken from a published calendar).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

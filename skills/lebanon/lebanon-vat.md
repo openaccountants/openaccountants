@@ -67,7 +67,6 @@ expected:
   payable: 5000000
 ```
 
-
 Deduction decision under amended art. 28: a USD 40,000 excluding-VAT passenger car has an independently verified VAT charge LBP 400 million and full taxable use. Ordinary business recovery is LBP 300 million under the proportional cap. If the vehicle qualifies for the fare-paying transport exception, the cap does not reduce that LBP 400 million. The classification changes recovery by LBP 100 million. Other eligibility and currency rules still require evidence.
 
 ```oa-check
@@ -86,7 +85,6 @@ expected:
   difference: 100000000
 ```
 
-
 ## Ask the client first
 
 - What are the registration status, period, turnover and supply types?
@@ -104,21 +102,3 @@ expected:
 | MoF VAT declaration page, tax periods, deduction, apportionment and non-residents sections; old 20-day/mail instructions superseded or held | https://www.finance.gov.lb/ar-lb/Taxation/Companies/VAT/Pages/Declaration.aspx | 2026-11-01 |
 
 Not yet confirmed: VAT-H1: current standard rate, any enacted rate change, registration threshold and rolling-period rules. VAT-H2: all legacy supplier-pattern classifications, exemptions, zero rating and blocked-input categories not expressly confirmed above. VAT-H3: full apportionment and annual adjustment. VAT-H4: current form boxes, portal/payment steps and 2026 deadlines after extension/suspension. VAT-H5: stamp amounts and transition implementation. VAT-H6: penalty amounts, settlement and exceptional refund-window availability. VAT-H7: reverse charge, non-resident agent procedure, customs/excise valuation, exchange rate, real estate, gold and special schemes. Prior numeric examples and A-H form rows are historical only in the immutable lineage ledger.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

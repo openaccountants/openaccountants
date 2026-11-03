@@ -210,21 +210,3 @@ expected:
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text (Arts. 41, 75, 177, 178, 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 
 Not yet confirmed: the non-taxable reimbursement amounts that applied in January 2026; the Sl. glasnik number of the 2026 minimum wage decision; whether the CROSO Law has been amended since 2019; the current NBS reference rate for late payment interest.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

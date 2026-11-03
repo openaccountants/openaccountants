@@ -625,21 +625,3 @@ For each Arizona employer engagement, the reviewer should verify:
 This skill produces a draft Arizona payroll compliance analysis. A human reviewer credentialed under Circular 230 (CPA, EA, or attorney) and familiar with Arizona-specific employment-tax practice must sign off on every output. State-employment-tax positions are NOT within IRS Circular 230 directly but the credentialed reviewer should confirm Arizona-specific competence. Workers' compensation and wage-and-hour determinations may require Arizona-licensed counsel.
 
 End of skill.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

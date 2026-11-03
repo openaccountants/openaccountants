@@ -16,7 +16,7 @@ tier: 1
 
 ## Brasil — Imposto de Renda (IRPF e IRPJ) — Skill v2.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -497,21 +497,3 @@ SEÇÃO F — ALERTAS PARA O REVISOR
 Esta skill e seus resultados são fornecidos apenas para fins informativos e de cálculo e não constituem aconselhamento tributário, jurídico ou financeiro. A Open Accountants e seus contribuidores não se responsabilizam por quaisquer erros, omissões ou consequências decorrentes do uso desta skill. Todos os resultados devem ser revisados e assinados por um profissional qualificado (como contador, advogado tributarista ou profissional licenciado equivalente na sua jurisdição) antes de qualquer entrega ou atuação.
 
 A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para acessar a versão mais recente, solicitar uma revisão profissional de um contador licenciado e acompanhar atualizações conforme a legislação tributária mudar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

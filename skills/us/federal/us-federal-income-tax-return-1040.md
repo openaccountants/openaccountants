@@ -335,21 +335,3 @@ expected:
 Not yet confirmed: the IRS page does not say which tax year its USD 95,000 Free File limit and USD 70,244 volunteer limit belong to, so confirm both when Free File reopens in January 2027; the 2026 Form 1040 line numbers; how the IRS validates an e-filed return with the prior-year figure, because the page tried returned 404; how e-file acceptance is shown to a filer.
 
 This skill has not been reviewed or approved by a named accountant.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -134,21 +134,3 @@ The full descriptive wording of code 4582 and the codes whose values feed it is 
 - https://www.sars.gov.za/wp-content/uploads/Ops/Guides/EMP-GEN-02-G01-A-Guide-to-the-Employer-Reconciliation-Process-External-Guide.pdf (e@syFile™ Employer correction procedure, step 8)
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

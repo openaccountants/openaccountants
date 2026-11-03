@@ -61,21 +61,3 @@ Use the official current digital filing procedure linked in the [TGCA Guide](mf-
 Confirm the activity's scope, who operates it, the reference-period premises, area rounding, component-specific cap and any creation/change conditions. Keep licence, patente and additional levies separately visible.
 
 Source-cited draft awaiting independent source and professional review. Detailed patente valuation/rates, value-added ceilings and minimum charges, chamber levy rates, multi-premises allocation, state-aid eligibility and appeals remain outside the completed calculation scope. A licence calculation is not a total annual business-tax bill.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

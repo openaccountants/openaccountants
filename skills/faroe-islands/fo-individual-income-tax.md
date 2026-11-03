@@ -136,7 +136,6 @@ Classify domestic versus treaty residence, work location, payer, actual days, in
 
 Capital Income Act §19 permits capped foreign-tax credit for capital income from a country **without** a double-tax treaty. Tax Act §154 supplies the separate ordinary-income credit; the [cross-border Guide’s bounded method](fo-cross-border-payments.md#ordinary-foreign-tax-credit) explains source expenses, the positive-base fraction and credit ordering. Treaty credits/exemptions, nonpositive bases and the other stated limits require their own authority; do not use §19 as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2f, 19][capital]
 
-
 [Church calculation and its supporting arithmetic](../../../ledgers/faroe-islands-2026-evidence/fo-individual-income-tax-supplementary-controls.md) is retained in supplementary research.
 
 ## Two worked examples that recompute

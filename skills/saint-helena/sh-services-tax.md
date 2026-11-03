@@ -85,7 +85,6 @@ expected:
   toward_charge: 450.00
 ```
 
-
 ## Ask the client first
 
 - Is the service insurance or telecommunications?
@@ -101,21 +100,3 @@ expected:
 | Tax Guide 12, Questions on Taxes and Allowances (April 2024), read in full | https://www.sainthelena.gov.sh/documents/Tax-Guide-No.-12-Questions-on-Taxes-Allowances-on-St-Helena | 2026-11-01 |
 
 Not yet confirmed: The prescribed interest rate. The approved return form and where it is sent. Regulations under s.13: the consolidation says none to 1 November 2017; later instruments were not audited.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -120,7 +120,6 @@ Not yet confirmed: the Council of Ministers income tax regulation that sets the 
 
 ### Ethiopia Payroll Skill v0.1 (Tier 2 -- Sourced from the law)
 
-
 ### Section 1 -- Quick Reference
 
 **Section 1 -- Quick Reference**
@@ -136,9 +135,7 @@ Not yet confirmed: the Council of Ministers income tax regulation that sets the 
 | Pension / social security authority | Private Organisation Employees Social Security Agency (the pension fund administration); parallel public-servant scheme for government staff |
 | Key legislation | Income Tax Proclamation as amended by Proclamation No. 1395/2025 (eff. 7 July 2025); Federal Tax Administration Proclamation No. 983/2016; Private Organisation Employees' Pension Proclamation |
 | Monthly declaration form | Form 17 (monthly salary / withholding declaration) |
-| Validated by | Pending -- requires sign-off by a licensed Ethiopian accountant |
 | Skill version | 0.1 |
-
 
 ### Section 2 -- Employment Income Tax (PAYE / Schedule "A")
 
@@ -161,14 +158,12 @@ The employer withholds employment income tax monthly under Schedule "A". Employe
 
 #### Key facts and 2025 reform changes
 
-
 #### Computation method (per pay run)
 
 - **PAYE computation formula**, taxable_salary  = gross taxable employment income for the month (cash salary + taxable allowances/benefits) PAYE            = taxable_salary x marginal_rate - quick_deduction_constant (apply the row whose range contains taxable_salary)
 - **PAYE not cumulative**, PAYE is not cumulative across the year (unlike Malta's FSS) -- each month is computed standalone on that month's taxable salary.  _(Section 2)_
 
 ### Section 3 -- Pension / Social Security Contributions
-
 
 #### Contribution rates
 
@@ -188,8 +183,6 @@ The employer withholds employment income tax monthly under Schedule "A". Employe
 - Funds old-age pension, survivors', and work-injury / invalidity benefits.
 
 #### Contribution ceiling
-
-
 
 ### Section 4 -- Conservative Defaults
 
@@ -290,7 +283,6 @@ Note: pension is on basic salary (10,000), NOT on the 2,000 allowance.
 - Employer pension: 30,000 x 11% = **ETB 3,300**.
 - Employer total cost = 30,000 + 3,300 = **ETB 33,300**.
 
-
 #### Example 5 -- Boundary at exactly ETB 7,000 (band edge)
 
 - Gross taxable = **ETB 7,000** (top of the 20% band).
@@ -310,9 +302,7 @@ Note: pension is on basic salary (10,000), NOT on the 2,000 allowance.
 | Pension remittance to the pension fund administration | Combined 18% (7% employee + 11% employer) | **Within 30 days** of deduction |
 | Personal annual return | **Not required** for employees with only employment income -- employer withholding is final | N/A |
 
-
 **Calendar note:** Ethiopia uses the Ethiopian calendar (~7--8 day lag from Gregorian); confirm the effective Gregorian due date when scheduling payments.
-
 
 ### Section 9 -- Employer Registration
 
@@ -332,8 +322,6 @@ Governed by the **Federal Tax Administration Proclamation No. 983/2016** (still 
 
 - **Statute of limitations**, 5 years years (from the filing date)
 
-
-
 ### Section 11 -- Minimum Wage
 
 - **No national / private-sector statutory minimum wage** exists in Ethiopia (RemotePeople; WageIndicator).
@@ -343,7 +331,6 @@ Governed by the **Federal Tax Administration Proclamation No. 983/2016** (still 
 Source: RemotePeople -- Minimum wage Ethiopia; WageIndicator -- Ethiopia; Capital Ethiopia (July 2025).
 
 ### Section 12 -- Tier 1 Rules (deterministic -- always apply)
-
 
 ### Section 13 -- Tier 2 Catalogue (reviewer judgement required)
 

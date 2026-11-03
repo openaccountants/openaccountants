@@ -260,21 +260,3 @@ expected:
 | ESTV, Kreisschreiben Nr. 18a, Steuerliche Behandlung von Vorsorgebeiträgen und -leistungen der Säule 3a, 22 December 2025 | https://www.estv.admin.ch/dam/de/sd-web/yQgKmvu80LEr/dbst-ks-2025-1-018a-dv-de.pdf | 2026-10-23 |
 
 Not yet confirmed: the interest rate on own capital for contribution year 2026 (published by the BSV in January 2027; example 2 assumes the 2025 rate of 1%); the minimum contribution and non-employed table for 2027 (only the 2027 sliding-scale limits were read); how the 13th AHV pension will be financed after 2026; each fund's administration cost rate (up to 5%); the EO part of each sliding-scale band (the sheet gives only the total; the IV part is in IVV art. 1bis); the split of the CHF 530 minimum between IV and EO for the self-employed (AHVG art. 8 para. 2 sets only the AHV part, CHF 435).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

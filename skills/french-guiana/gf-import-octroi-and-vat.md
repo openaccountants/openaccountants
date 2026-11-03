@@ -56,21 +56,3 @@ Article 3 of AP-2026-47 preserves relevant exemption treatment following a simpl
 Confirm the transaction date, external column, exact code, customs value and both levies. Retain the enacted schedule and any exemption evidence with the declaration. Do not use the example as a binding classification ruling.
 
 Source-cited draft awaiting independent review. Services, income taxes, full exemption procedures, local-production liability, penalties, origin and valuation disputes are outside scope. The complete post-July amendment chain has not been independently reviewed. VAT code recodification and precise invoice wording require separate current-law verification.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -118,21 +118,3 @@ expected:
 | [Revenue Directorate direct-tax page](https://revenuedirectorate.gov.so/direct-tax) | Monthly payroll table, corporate/rental summaries and form links opened; monthly top constant compared with annual statute, not substituted for it. | 2026-11-01 |
 
 Not yet confirmed: effective implementation and later instruments; authoritative resolution of annual top-band constant and fractional-dollar band boundaries; modified-cash regime and actual simplified transition-year/election determination; current registration/FormTR1 validity, PIT boxes, submission/payment/receipt path; complete rental withholding, asset disposal, pension/charitable relief and foreign-credit/treaty/PE/entry/exit computations; numeric sanctions and procedure. Predecessor USD 200 exemption, ambiguous intermediate monthly bands and old quarterly rental brackets are held as superseded/unverified history, not reproduced as current rules. Independent source review accepts this conditional baseline only; no accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

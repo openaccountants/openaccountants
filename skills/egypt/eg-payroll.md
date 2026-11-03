@@ -247,21 +247,3 @@ expected:
 | National Wages Council, Ministry of Planning, 2025, headline decision | https://mped.gov.eg/singlenews?id=6009 | 2026-11-01 |
 
 Not yet confirmed: the private sector minimum wage after March 2025; delay charge rate under art. 110 as amended and the Unified Tax Procedures Law penalties (the old "up to 80%" could not be traced); the exact annual settlement due date (old text said end January) and the day of the month for Form 4; whether the martyrs contribution base is gross pay and who bears it (the form has an employee and a company field); whether the old 0.05% wording matches EGP 5 per 10,000 on every run type; Law 91 arts. 12 to 16 as amended since 2005 where only the original text was read; Labour Law 14 of 2025 end-of-service formulas (half a month a year for five years, then a full month), not read in the law; Civil Code Law 131/1948 as the contractor test; employee comprehensive health insurance rate; the commencement date of Labour Law 14 of 2025 (old text: 1 September 2025).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

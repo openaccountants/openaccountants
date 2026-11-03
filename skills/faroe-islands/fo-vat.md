@@ -369,21 +369,3 @@ Not yet confirmed: separate authority reconciling Q2 payment under §22 with TAK
 [fuel]: https://www.logir.fo/Logtingslog/36-fra-15-05-2026-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin
 [returns]: https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd
 [tourism]: https://www.taks.fo/fo/vinna/mvg/mvg-og-ferdavinna
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

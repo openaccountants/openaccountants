@@ -54,7 +54,6 @@ Surcharge and interest as in the [VAT](gq-vat-gst.md) skill (arts 410, 412).
 
 See [Cross-border](gq-cross-border.md).
 
-
 ## Two worked examples that recompute
 
 **Audit test.** Balance sheet 100,000,000 XAF and turnover 300,000,000 XAF, 20 staff: only turnover is over a limit, so one is exceeded; a non-SA needs no audit report.
@@ -106,21 +105,3 @@ expected:
 The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
 
 Not yet confirmed: every row marked unverified; the OHADA Uniform Act text did not open on ohada.org or ohada.com; the investment law on boe.gob.gq was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

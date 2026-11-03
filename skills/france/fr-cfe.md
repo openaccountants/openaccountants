@@ -185,21 +185,3 @@ expected:
 | CGI arts. 1657 and 1724, whole-euro direct-tax assessment/liquidation; actual retained official rendered law text, not original HTML | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051219510 ; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006312863 | 2026-10-31 |
 
 Not yet confirmed: the late-payment surcharge rate for the CFE (CGI art. 1730; Légifrance returned 403); how the cessation relief (dégrèvement pour cessation d'activité) is claimed (the rule itself is above); the TCMA rate; the split of the real base across communes for several establishments; the seasonal reduction figure; penalties for a late 1447-C-SD, 1447-M-SD or 1330-CVAE. Two source conflicts, settled: (1) the service-public cap page (vérifié le 01 janvier 2026) applies 1.531% to the CET for 2025; that page is out of date. Loi n° 2025-127 de finances pour 2025, art. 62, kept the cap at 1.531% for the CET due for 2026 and 2027 only, and left 1.438% for 2025 (BOFiP 2594-PGP § 1 and the impots.gouv.fr fiche agree). (2) BOFiP 839-PGP's group-consolidation paragraph still prints the pre-2025 trajectory (EUR 188 for 2024, EUR 125 for 2025, EUR 63 for 2026); the rule paragraph, written after the same art. 62, gives EUR 188 for 2026 and 2027, which is the figure to use.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

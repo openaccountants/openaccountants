@@ -238,21 +238,3 @@ The two historical 2018 sheets remain published, but their 20% rate and seven-da
 Not yet confirmed: the former example's specific conclusion that extracting EUR 2,617.89 VAT from a fixed EUR 14,000 crossing price at EUR 49,500 prior turnover prevents §4(1)(b) payer status (the statutory net-value test and gross-price arithmetic were read, but an official interpretation resolving that exact circularity was not obtained).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -36,7 +36,6 @@ tier: 2
 | Health body | IPM (Institution de Prévoyance Maladie): employer-level institution |
 | Employer payroll tax | CFCE: Contribution Forfaitaire à la Charge de l'Employeur, 3% of payroll |
 | Monthly remittance | First 15 days of the following month, with the art. 186 declaration (CGI art. 185); quarterly for real simplified and CGU employers. F4 is the practitioner name for the form; the CGI does not use it |
-| Validated by | Pending: requires sign-off by a Senegalese chartered accountant (expert-comptable) |
 | Skill version | 0.2 |
 
 ## Section 2: Income Tax Withholding (IRPP)
@@ -591,23 +590,3 @@ Not yet confirmed: whether art. 276 means the TRIMF band amount is charged twice
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. This is a **Tier-2, research-verified draft pending sign-off by a licensed Senegalese accountant (expert-comptable)**; several figures are flagged [RESEARCH GAP: reviewer to confirm] and must be checked against the Code Général des Impôts and current decrees. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before implementation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

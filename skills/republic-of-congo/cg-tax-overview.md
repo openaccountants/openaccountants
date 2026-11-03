@@ -109,21 +109,3 @@ expected:
 Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-tax-overview.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: Later 2026 rectifying law and implementation chain; all domain-specific gaps in the README; operative filing procedures; current monetary-law/euro-peg authority; tax-authority restructuring; the old blanket 5% surtax. General commercial currency statements and organisation labels were not used to certify tax calculations. All old topics remain in the immutable destination map.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
