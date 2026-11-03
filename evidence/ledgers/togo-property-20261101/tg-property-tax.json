@@ -1,0 +1,551 @@
+[
+  {
+    "id": "P01",
+    "guide": "tg-property-tax",
+    "section": "Who this applies to",
+    "rule": "Annual tax on built and unbuilt property, distinct from income or transfer tax.",
+    "act_article": "CGI article 257",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "taxe foncière due sur les propriétés bâties et non bâties",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P02",
+    "guide": "tg-property-tax",
+    "section": "Who this applies to",
+    "rule": "Built-property scope includes listed installations, private works, fixed boats, indispensable land and specified commercial/advertising land; mobile storage and operating tools exception retained.",
+    "act_article": "CGI article 258",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "les propriétés bâties sises au Togo",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "peuvent être déplacés sans faire appel"
+    ]
+  },
+  {
+    "id": "P03",
+    "guide": "tg-property-tax",
+    "section": "Who this applies to",
+    "rule": "Unbuilt scope: urban/agglomeration approved-subdivision land and designated nonagricultural construction land; not every vacant plot.",
+    "act_article": "CGI article 259",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "les immeubles urbains constitués par des terrains",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "ne se rattachent pas à une exploitation agricole"
+    ]
+  },
+  {
+    "id": "P04",
+    "guide": "tg-property-tax",
+    "section": "Who this applies to",
+    "rule": "Liable rights holders: property/superficie, usufruct, emphyteutic, construction/rehabilitation lessees. Special construction lease tenant amortisation value, next-year entry subject262, owner rent/prestation assessment and solidarity; calculation held.",
+    "act_article": "CGI article 260",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "les titulaires du droit de propriété ou de superficie",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "libre de toutes charges au bailleur"
+    ]
+  },
+  {
+    "id": "P05",
+    "guide": "tg-property-tax",
+    "section": "Who this applies to",
+    "rule": "Other fiscal measures apply from 1 January2026, subject to contrary provisions; no complete later chain inferred.",
+    "act_article": "LF article 2",
+    "official_url": "https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf",
+    "original_language_quote": "à compter du 1er janvier 2026 pour les autres dispositions fiscales",
+    "read_on": "2026-11-01",
+    "source_id": "lf2026",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P06",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Built property tax7.5% of net cadastral income.",
+    "act_article": "CGI article 275",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "est fixé à 7,5 % du revenu net cadastral",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P07",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Built property1January cadastral rental value reduced50% for listed ownership costs; includes indispensable building land where relevant.",
+    "act_article": "CGI article 270",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "sous déduction de 50 % de cette valeur",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P08",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Unbuilt property tax0.5% of assessed market value.",
+    "act_article": "CGI article 276",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "est fixé à 0,5 % de la valeur vénale",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P09",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Unbuilt market value at1January.",
+    "act_article": "CGI article 272",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "leur valeur vénale au 1er janvier",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P10",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Unbuilt market evidence: recent conveyances of plot/comparable neighbors, otherwise direct estimate.",
+    "act_article": "CGI article 273",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "des actes translatifs récents de propriété",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P11",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Cadastre determines unbuilt market value.",
+    "act_article": "CGI article 274",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "La valeur vénale est déterminée par les services chargés du cadastre",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P12",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Properly declared new/reconstructed/additional building exemptions: commercial/industrial/professional2years, residential5years, from following completion year; financial/public enterprise enforcement acquisition recovery5year branch.",
+    "act_article": "CGI article 262",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "exonération de deux (02) ans",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "exonération de cinq (05) ans",
+      "destinés à être revendus ou loués en vue du recouvrement de leurs créances"
+    ]
+  },
+  {
+    "id": "P13",
+    "guide": "tg-property-tax",
+    "section": "The base",
+    "rule": "All11 CGI261 branches with express conditions: nonproductive public/general service property; State public-tool port/navigation concessions under cahier des charges; State/prefecture/commune water/energy works; worship; non-property-income school/university; medical/social assistance; rural livestock/crop buildings; unique principal home exclusively and actually occupied by owner/spouse/direct ascendants/direct descendants; State rail; foreign-State property/dependencies as accredited official mission residence; exclusive premises of approved mutual, ancillary acts within sector law.",
+    "act_article": "CGI article 261",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "Cette exonération ne concerne que l'habitation principale unique",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "appartenant à des Etats étrangers",
+      "servant exclusivement à l’activité des sociétés mutualistes"
+    ]
+  },
+  {
+    "id": "P14",
+    "guide": "tg-property-tax",
+    "section": "The base",
+    "rule": "Unbuilt exemptions include listed nonproductive public land, agricultural selection nurseries, school land, built-taxable land, actual1January qualifying cultivation and state railway ways.",
+    "act_article": "CGI article 268",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "les terrains cultivés ou effectivement utilisés au premier janvier",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P15",
+    "guide": "tg-property-tax",
+    "section": "The base",
+    "rule": "Rural immovables exemption; rural status not inferred from vacancy.",
+    "act_article": "CGI article 269",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "Sont exemptés de la taxe les immeubles ruraux",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P16",
+    "guide": "tg-property-tax",
+    "section": "The base",
+    "rule": "Rural building conversion to rental dwelling/factory:5years after completion year.",
+    "act_article": "CGI article 263",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "une exonération temporaire de cinq (05) ans",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P17",
+    "guide": "tg-property-tax",
+    "section": "The base",
+    "rule": "No temporary exemption for commercial/industrial or specified advertising land; entry follows year of assignment.",
+    "act_article": "CGI article 264",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "Aucune exonération temporaire n'est applicable aux terrains",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P18",
+    "guide": "tg-property-tax",
+    "section": "The base",
+    "rule": "Irregular subdivision gets only remaining exemption fraction from year regular authorisation obtained.",
+    "act_article": "CGI article 265",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "pour la période qui reste à courir",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P19",
+    "guide": "tg-property-tax",
+    "section": "The base",
+    "rule": "Paid rental withholding credits require payment evidence and assessment bulletins; property and income allocations separate, full withholding never deducted from property tax; full calculation outside new Guide.",
+    "act_article": "LPF article 100",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "sur justification de son acquittement",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "Les imputations s'opèrent de la façon suivante"
+    ]
+  },
+  {
+    "id": "P20",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Whole-year1January charge, spontaneous payment to receiver in two equal payments by31May/31October, landowner/tenant solidarity.",
+    "act_article": "LPF article 85",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "deux (02) versements de montant égal au plus tard le 31 mai et le 31 octobre",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P21",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Annual31May declaration by owner/principal tenant/manager: tenant and premises/rent/charges, free occupancy, self-occupied, vacant premises and exact taxable unbuilt area.",
+    "act_article": "LPF article 86",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "au plus tard le 31 mai de l’année",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P22",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Construction/reconstruction/additions/size-or-use changes notified within4months definitive completion; presumed completion consequence if missing.",
+    "act_article": "LPF article 87",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "dans les quatre (04) mois de leur réalisation définitive",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P23",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Permit or opening declaration within4months with building nature/use/footprint/land reference/sketch, plus completion declaration within4months; written tax-authority form.",
+    "act_article": "CGI article 266",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "quatre (04) mois à partir du jour de l'ouverture des travaux",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "dans les quatre (04) mois de l'achèvement des travaux"
+    ]
+  },
+  {
+    "id": "P24",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Late declaration restores only unexpired window from1January following production; cannot exempt first year after completion.",
+    "act_article": "CGI article 267",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "pour la fraction de la période d'exonération restant à courir",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "ne saurait entraîner l'exonération pour la première année"
+    ]
+  },
+  {
+    "id": "P25",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Assessment by prefecture/commune location service.",
+    "act_article": "CGI article 281",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "du ressort de la préfecture ou commune où elles sont situées",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P26",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Owners arrange cadastral mutation; titled/cadastral parcel juridical change needs prior cadastral entry or land-register transcription as stated.",
+    "act_article": "CGI article 282",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "faites à la diligence des propriétaires intéressés",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P27",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Old owner remains assessed and can be compelled pending mutation, with recourse against new owner.",
+    "act_article": "CGI article 283",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "l'ancien propriétaire continue à être imposé",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P28",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Name correction for1January owner; titled parcel transfer transcription gate; civil ownership dispute postpones decision until finaljudgment.",
+    "act_article": "CGI article 284",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "subordonnées à la transcription au livre foncier",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "ajournée jusqu'après jugement définitif"
+    ]
+  },
+  {
+    "id": "P29",
+    "guide": "tg-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Correction decision affects named and later years until rolls fixed.",
+    "act_article": "CGI article 285",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "tant pour l'année qu'elles concernent que pour les suivantes",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P30",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Missing declarations assess from1January after completion; first-roll addition counts completion/discovery years under text, maximum five times current-year contribution; actual date/notice required before calculation.",
+    "act_article": "CGI article 266",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "sans toutefois que la majoration puisse dépasser le quintuple",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P31",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Commercial/industrial vacancy relief: involuntary,≥3months, whole or independently rentable/exploitable part; next-month-start to end-of-resumption-month; claimrequired.",
+    "act_article": "CGI article 278",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "indépendante de la volonté du contribuable",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "trois (03) mois au moins"
+    ]
+  },
+  {
+    "id": "P32",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Built destruction/demolition relief from first day of following month, onclaim.",
+    "act_article": "CGI article 279",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "du mois suivant la destruction",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P33",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Extraordinary unbuilt disappearance relief from first day following month, onclaim.",
+    "act_article": "CGI article 280",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "du mois suivant la disparition",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P34",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Claim normally31December of year after listed triggering event, including minimum-duration vacancy year; identify exactevent.",
+    "act_article": "LPF article 374",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "au plus tard le 31 décembre de l'année suivant celle",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P35",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Reassessment case has equal-to-administration-period claimrule; not silently replace with ordinarydeadline.",
+    "act_article": "LPF article 375",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "dispose d'un délai égal à celui de l'Administration fiscale",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P36",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "LPF376 admissibility: individual claim except collectively assessed and partnership-member collective cases; every disputed assessment/grounds/conclusions; addressed to Commissaire des impôts in French on plain paper or typed; date/handwritten signature/NIF/postal box/telephone; assessment notices, provisional/final reassessment notices where from audit, payment/withholding/credit proof. Listed supporting paper may regularise later, not every defect. Stamp-duty exemption.",
+    "act_article": "LPF article 376",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "être individuelle",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "être adressée au Commissaire des impôts, rédigée en français",
+      "Les réclamations ne sont pas soumises aux droits de timbre"
+    ]
+  },
+  {
+    "id": "P37",
+    "guide": "tg-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Representative mandate with filing or registeredbeforeact, statutoryexceptionsincludingbarlawyersretained.",
+    "act_article": "LPF article 377",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "doit justifier d'un mandat régulier",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P38",
+    "guide": "tg-property-tax",
+    "section": "Cross-border points",
+    "rule": "Foreign-domiciled claimant elects Togo domicile; no generaltreatyrateinferred.",
+    "act_article": "LPF article 378",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "doit faire élection de domicile au Togo",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": []
+  },
+  {
+    "id": "P39",
+    "guide": "tg-property-tax",
+    "section": "Two worked examples that recompute",
+    "rule": "Conditional2023completion, timelydeclarations and regularsubdivision:2026commercial2yearwindowexhausted;residential5yearwindow2024–2028,3exemptyearsleft. Baselineassumedrental2m ×50% ×7.5%=75000; actualusecannotbeelected.",
+    "act_article": "CGI article 262",
+    "official_url": "https://web.archive.org/web/20260702000000id_/https://www.otr.tg/index.php/fr/documentation/sur-les-impots/code-general-des-impots/600-code-general-des-impots-livre-des-procedures-fiscales-mis-a-jour-2025/file.html",
+    "original_language_quote": "exonération de deux (02) ans",
+    "read_on": "2026-11-01",
+    "source_id": "cgi2025",
+    "scope": "conditional read-text working paper; later-law and live workflows held",
+    "additional_original_language_quotes": [
+      "exonération de cinq (05) ans"
+    ]
+  },
+  {
+    "id": "P40",
+    "guide": "tg-property-tax",
+    "section": "Rates, bands and thresholds; The base; Two worked examples that recompute",
+    "rule": "LFart21 replacementCGI271: normallease→comparison→directmarket/regionalinterest hierarchy; commercial/industrial premises/installations in enterprise balance-sheet assets use6%marketvalue including land and incorporated improvements. Case100m→6mrental→3mnet→225000tax→112500eachinstalment. Not universal6%tax/housevalue.",
+    "act_article": "Loi2025-002 articles21/CGI271; CGI270/275; LPF85",
+    "official_url": "https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf",
+    "original_language_quote": "locaux et installations commerciales ou industrielles inscrits à l'actif du bilan des entreprises",
+    "read_on": "2026-11-01",
+    "source_id": "lf2026",
+    "scope": "originalPDFp20 visuallychecked; tax/baseandinstalmentlinks separatelyread",
+    "additional_original_language_quotes": [
+      "est égale à 6% de la valeur vénale"
+    ]
+  }
+]

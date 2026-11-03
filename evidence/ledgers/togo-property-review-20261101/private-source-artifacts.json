@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-01",
+  "reason": "Source extracts/renders moved intact outside Git worktree at writer request; no source bytes discarded.",
+  "artifacts": [
+    {
+      "original_review_path": "evidence/ledgers/togo-property-review-20261101/cgi257-287-independent-extract.txt",
+      "private_cache": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/togo-pack-2026-11-01/sources/property-20261101/independent-review/cgi257-287-independent-extract.txt",
+      "sha256": "21499a73f60e4fac1a664cf071dcf76ba9d07997651d07864690522513c6ee0c",
+      "bytes": 19700,
+      "moved_exact_bytes": true
+    },
+    {
+      "original_review_path": "evidence/ledgers/togo-property-review-20261101/lf2026-p3.png",
+      "private_cache": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/togo-pack-2026-11-01/sources/property-20261101/independent-review/lf2026-p3.png",
+      "sha256": "3270e4d45d4583efe0483f89b407768895623fb2ceb421c0412444c413baab23",
+      "bytes": 713768,
+      "moved_exact_bytes": true
+    },
+    {
+      "original_review_path": "evidence/ledgers/togo-property-review-20261101/lpf100-101-independent-extract.txt",
+      "private_cache": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/togo-pack-2026-11-01/sources/property-20261101/independent-review/lpf100-101-independent-extract.txt",
+      "sha256": "035194858bfdeb129f3c8c3c285cd2b97b47ae77f890dddf4663aa47a6c0816b",
+      "bytes": 9260,
+      "moved_exact_bytes": true
+    },
+    {
+      "original_review_path": "evidence/ledgers/togo-property-review-20261101/lpf374-378-independent-extract.txt",
+      "private_cache": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/togo-pack-2026-11-01/sources/property-20261101/independent-review/lpf374-378-independent-extract.txt",
+      "sha256": "e2d3042dc5d4d21382132889419cd24ee9d089db4435597aa26fcf522055317b",
+      "bytes": 9741,
+      "moved_exact_bytes": true
+    },
+    {
+      "original_review_path": "evidence/ledgers/togo-property-review-20261101/lpf85-87-independent-extract.txt",
+      "private_cache": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/togo-pack-2026-11-01/sources/property-20261101/independent-review/lpf85-87-independent-extract.txt",
+      "sha256": "69000564536ebf83485c001cbfa4ceb7999517b18ade6ec4c9a9e8036baa25b2",
+      "bytes": 3709,
+      "moved_exact_bytes": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-01",
+  "content_commit": "1d51437beb3d3fa77137d51a5cf51a68abf55201",
+  "changed_only_validator": {
+    "actual_guides": 1,
+    "result": "pass",
+    "warning_groups": 1,
+    "warning": "Distinct property job has no seven-domain slug mapping"
+  },
+  "strict_sync": {
+    "source_guides": 1,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "examples": {
+    "files": 1,
+    "blocks": 2,
+    "failures": 0
+  },
+  "whole_base_whitespace": "pass",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "scope": "Conditional read-source workpaper, not whole-country currentness or filing approval."
+}

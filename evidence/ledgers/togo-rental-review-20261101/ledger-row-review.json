@@ -1,0 +1,256 @@
+[
+  {
+    "id": "R01",
+    "act_article": "LPF100",
+    "writer_quote": "les loyers bruts dus aux propriétaires",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 opening, physical253/printed252",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Full opening specifies gross rents due to owners from letting immovables belonging to them. Guide preserves owner/property/gross-rent conditions."
+  },
+  {
+    "id": "R02",
+    "act_article": "LPF100",
+    "writer_quote": "les personnes physiques exerçant une activité artisanale, commerciale ou non commerciale",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 payer list, physical253-254/printed252-253",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Read all four classes across page break: collectivites publiques, organisations internationales, public/private legal persons, and natural persons exercising artisanal/commercial/noncommercial activity. Guide preserves every class; ordinary private tenant is outside the enumeration."
+  },
+  {
+    "id": "R03",
+    "act_article": "LPF100",
+    "writer_quote": "Le locataire et le propriétaire restent solidaires",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 solidarity physical253; economic burden physical254",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Joint payment liability is explicit, separately from legal tenant duty and owner's economic burden. Both are retained. No innocent-owner safe harbour asserted."
+  },
+  {
+    "id": "R04",
+    "act_article": "LPF100",
+    "writer_quote": "Cette retenue au taux de 8,75 % du montant des loyers bruts",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 rate paragraph, physical253/printed252",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "8.75% applies to gross rents. Annual income/property assessment deductions do not reduce this stated gross collection base. The single collection is not duplicated."
+  },
+  {
+    "id": "R05",
+    "act_article": "LPF100",
+    "writer_quote": "3,75% sur la taxe foncière",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 first allocation bullet, physical253/printed252",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "3.75 percentage points of gross rent are allocated against property tax within the 8.75% collection. Read with full preceding rate/credit paragraph and second bullet; not 3.75% of withholding."
+  },
+  {
+    "id": "R06",
+    "act_article": "LPF100",
+    "writer_quote": "5% sur l’impôt sur le revenu",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 second allocation bullet, physical253/printed252",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "5 percentage points of gross rent allocated against income tax; sum 3.75+5=8.75. Final income assessment remains in sibling Guide."
+  },
+  {
+    "id": "R07",
+    "act_article": "LPF101",
+    "writer_quote": "les acomptes provisionnels au taux de 8,75%",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF101 entire clause, physical254/printed253",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Recipients of property income not undergoing article100 withholding must pay declared provisional advances at8.75%, under article100 framework. Not final tax, exemption or automatic refund."
+  },
+  {
+    "id": "R08",
+    "act_article": "LPF100",
+    "writer_quote": "sur justification de son acquittement",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 complete credit sentence, physical253/printed252",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Actual acquittement proof plus issued assessment bulletins condition the deduction. Tenant cash deduction alone proves neither remittance nor credit. No final-liability/refund claim inferred."
+  },
+  {
+    "id": "R09",
+    "act_article": "LPF100",
+    "writer_quote": "après établissement des bulletins d’émission",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 complete credit sentence, physical253/printed252",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Read after establishment of assessment bulletins for those taxes. Guide preserves both timing and separate tax allocations, with credit excess held."
+  },
+  {
+    "id": "R10",
+    "act_article": "LPF101",
+    "writer_quote": "ne subissant pas la retenue à la source prévue à l’article 100",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF101 entire clause plus LPF100 list, physical253-254",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Article101 ordinary private-tenant branch follows non-withholding condition. It does not clear listed tenant noncompliance: Guide expressly retains separate default reconciliation and joint liability. No safe harbour invented."
+  },
+  {
+    "id": "R11",
+    "act_article": "LPF100",
+    "writer_quote": "au plus tard le 15 du mois suivant la période au titre de laquelle le loyer est payé",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 final sentence, physical254/printed253",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Exact deadline refers to month following period au titre de laquelle le loyer est paye. Guide follows rental period wording, keeps cash date separately and holds advances/arrears/straddling-period ambiguity."
+  },
+  {
+    "id": "R12",
+    "act_article": "LPF101",
+    "writer_quote": "payer sur déclaration au plus tard le 15 du mois suivant",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF101 entire clause, physical254/printed253",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Same relative period deadline, on declaration. Full source does not name current form/boxes/portal/payment reference; Guide explicitly holds those operational steps."
+  },
+  {
+    "id": "R13",
+    "act_article": "LPF100",
+    "writer_quote": "solidaires pour le paiement de cette retenue",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100-101 entire section3, physical253-254",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "No numeric sanction/interest formula in these two clauses. Guide keeps joint liability and paid-proof condition and routes administration without inventing a penalty or declaring no penalties exist."
+  },
+  {
+    "id": "R14",
+    "act_article": "LPF100",
+    "writer_quote": "les organisations internationales",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 legal payer list, physical253/printed252",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "International organisations appear affirmatively in listed withholding tenants. No universal exemption; treaty/privilege/nonresident and currency questions remain held."
+  },
+  {
+    "id": "R15",
+    "act_article": "LPF100",
+    "writer_quote": "La retenue est faite et reversée au plus tard le 15",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 full rule, physical253-254",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Ordinary corporate tenant is public/private legal-person class. Independently recomputed200000 gross,17500 withholding,182500 owner cash,7500 property and10000 income components. May single-period example gives15June. Credit conditions retained."
+  },
+  {
+    "id": "R16",
+    "act_article": "LPF101",
+    "writer_quote": "conformément aux dispositions de l’article 100 ci-dessus",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LPF100 list and101 full clause, physical253-254",
+    "writer_physical_pages": [
+      253,
+      254
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Business natural-person tenant belongs to list; ordinary private tenant outside listed classes pays full rent and owner declares advance. Independently recomputed17500 and182500 both branches, but responsible party differs. Listed tenant default excluded, final assessments retained."
+  },
+  {
+    "id": "R17",
+    "act_article": "LF2026art21",
+    "writer_quote": "modifie les articles 16, 22, 23, 49, 50, 62, 64, 97, 205, 210, 238, 367, 461, 544",
+    "quote_normalized_exact_match": true,
+    "quote_verdict": "exact short anchor; corroborated against full actual clause and neighbours",
+    "locator_checked": "LF2026 article21 physical14; art2 physical3; signature physical45",
+    "writer_physical_pages": [
+      14
+    ],
+    "source_rule_verdict": "confirmed within explicit conditional scope",
+    "guide_verdict": "accepted for source fidelity; no correction required",
+    "findings": "Full amendment list read visually: LPF creations4bis/99bis/514bis; amendments16,22,23,49,50,62,64,97,205,210,238,367,461,544. No100/101. Art2 distinguishes IRPP2025, IS closed from31December2025, other fiscal provisions from1January2026 subject to contrary provision. Signed31December2025. Only bounded overlay finding; not complete later-law chain."
+  }
+]

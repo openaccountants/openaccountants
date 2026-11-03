@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-01",
+  "scope": "R1fullCGI261conditions;R2LPF376admissibility;R3template-reference-notice;R4decisivequotesandenterpriseassettranslation. Originalreview/freeze untouched.",
+  "guide_literal_changes": [
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "before_sha256": "f3b4b03a41bfada045b53ff5d8de45705d40044c5b79c8749ace5509454cf53d",
+      "after_sha256": "27f39088485fa8daba8f412fc4fb345ffe1261fb20072ac3fc9bd9738b7ba215",
+      "before": "# Togo annual property-tax working paper v0.1\n\n## Who this applies to",
+      "after": "# Togo annual property-tax working paper v0.1\n\n> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Togo.\n\n## Who this applies to"
+    },
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "before_sha256": "27f39088485fa8daba8f412fc4fb345ffe1261fb20072ac3fc9bd9738b7ba215",
+      "after_sha256": "d3d4f7211c33126ab4cb5df8fd692090f87a03093a35f07241842fe9177fba8e",
+      "before": "recorded as company balance-sheet assets",
+      "after": "recorded as enterprise balance-sheet assets"
+    },
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "before_sha256": "d3d4f7211c33126ab4cb5df8fd692090f87a03093a35f07241842fe9177fba8e",
+      "after_sha256": "717d71a56aa8b372debe118443abc57f8062148315923bea705b9da3491f1ffc",
+      "before": "Record the qualifying asset, its use, balance-sheet entry and market value",
+      "after": "Record the qualifying business asset, its use, balance-sheet entry and market value"
+    },
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "before_sha256": "717d71a56aa8b372debe118443abc57f8062148315923bea705b9da3491f1ffc",
+      "after_sha256": "eda36a482795f293602dcf9459de06161fd8cab5cf299607e985733364ecf288",
+      "before": "Article 261 covers qualifying non-income-producing public-service property, specified public concession/water/energy assets, public worship, non-income-producing school/university property, medical/social assistance property, rural livestock/crop-storage buildings, the single principal home actually and exclusively inhabited by the owner or specified immediate family, state railway assets, official foreign diplomatic/consular mission residences and qualifying approved mutual entities. The conditions matter; ownership by a public body or an unoccupied second home alone is insufficient.",
+      "after": "Article 261 exempts: State, prefecture, commune and public-establishment/body property assigned to a public/general-utility service and producing no income; public-tool concessions granted by the State in maritime/river/air ports or inland navigation routes and operated under their concession specifications; drinking-water/electricity distribution works owned by the State, prefecture or commune; public-worship buildings; school/university property producing no property income; medical/social assistance property; rural livestock/crop-storage buildings; the unique principal home used exclusively for habitation and actually occupied by the owner, spouse, direct ascendants or direct descendants; State railway buildings/installations; foreign-state-owned property and dependencies used as the official residence of a diplomatic/consular mission accredited to the Togolese government; and premises exclusively serving a mutual entity approved by its supervisory authority, provided ancillary operations stay within the governing sector law. Ownership by a public body, unspecified family occupation or an unoccupied second home alone is insufficient."
+    },
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "before_sha256": "eda36a482795f293602dcf9459de06161fd8cab5cf299607e985733364ecf288",
+      "after_sha256": "d2ae6e75d798a027beada4f4308daceeadb5a811b92e5748af9a4ba8b2023bb9",
+      "before": "Claims under LPF 376 identify every disputed assessment, grounds and requested result, taxpayer contact/NIF, date, handwritten signature and supporting notices/payment/withholding evidence.",
+      "after": "Under LPF 376, claims are individual, except collectively assessed taxpayers and members of partnerships contesting the partnership tax can claim collectively. Address the claim to the Commissaire des imp\u00f4ts in French, on plain paper or typed, with date, handwritten signature, NIF, postal box and telephone contact. Identify every disputed assessment, its grounds and requested result. Attach the assessment/liquidation notice, provisional and final reassessment notices where the tax arose from an audit, and relevant payment, withholding or tax-credit evidence. A missing listed supporting document can subsequently regularise the claim; this does not make every admissibility defect curable. Claims are exempt from stamp duty."
+    }
+  ],
+  "ledger_changes": [
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.json",
+      "before_sha256": "a457e6a78f8fd2ac78c7c4a902a30754b03caa02ae5c62f6f058027881e6ef1d",
+      "after_sha256": "9df4862a08c2729688d9a28d210d692b75c059c09342cc0105122e9b7de6434a"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.md",
+      "before_sha256": "a5f922fe6e6fa5f28c2e471eaf195e4704480493b7c714bb5fda69c6539ed5dc",
+      "after_sha256": "af267b066ca34f97ab3d89b9a561fc7d54992446530d0b8c47c172725a15e9d9"
+    }
+  ],
+  "rows": 40,
+  "source_artifacts": "Same immutable cached statutory PDFs; no new rate or case."
+}

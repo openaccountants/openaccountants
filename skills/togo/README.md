@@ -44,3 +44,13 @@ The [source manifest](../../docs/research/2026-11-01-togo-pack/sources.json) rec
 The [eight figure ledgers](../../docs/research/2026-11-01-togo-pack/ledgers/) give act/article and short French source excerpts. The [complete old-topic map](../../docs/research/2026-11-01-togo-pack/old-topics.md) and [old blob hashes](../../docs/research/2026-11-01-togo-pack/old-hashes.json) preserve the six original Guides' scope. Downloaded PDFs stay outside Git.
 
 Tracked in [TG pack issue #491](https://github.com/openaccountants/openaccountants/issues/491). Independent review and accountant attestation remain separate outstanding steps.
+
+
+## Annual property-tax follow-on, 1 November 2026
+
+[Annual property-tax working paper](tg-property-tax.md) adds the distinct ownership assessment, cadastral valuation and exemption job with the enacted 2026 CGI271 overlay. It does not replace rental-income tax or transfer duties. Two executable examples and 40 figure/rule records are in [the new ledger](../../evidence/ledgers/togo-property-20261101/tg-property-tax.md). Independent source review completed on 2026-11-01 for this conditional addition. All eight earlier Guides and their accepted review evidence remain exact; their historical review state is recorded in the preserved closure. All seven ordinary domains remain partial. Later-law continuity and current property forms/workflows remain explicit holds, with no accountant attestation or completed-country claim.
+
+
+## Rental collection follow-on, 1 November 2026
+
+[Rental withholding and owner advances](tg-rental-withholding.md) adds the ordinary LPF100–101 collection job, distinct from annual property and income assessments. It has17 rule rows and two executable cases; independent source review completed on 2026-11-01 for this conditional addition. All nine earlier Guides and previous review evidence remain exact. Later-law continuity, current forms, disputed noncompliance, credit excess and unusual payments remain held. All seven domains remain partial; no accountant attestation or authenticated filing is claimed.

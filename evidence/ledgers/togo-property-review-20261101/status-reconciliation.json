@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-01",
+  "allowance_sha256": "4c16b6d56c05da846836b898b2ee139797ff5e93d46e85d77c01c937b8a45157",
+  "result": "Exactly three authorized literal status substitutions; each before/after SHA verified. No rule, figure, case, initial writer/review evidence or hold changed.",
+  "changes": [
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "before": "Independent source review is pending; no accountant attestation or comprehensive country coverage is claimed.",
+      "after": "Independent source review completed on 2026-11-01 for this conditional working paper; no accountant attestation or comprehensive country coverage is claimed.",
+      "before_sha256": "d2ae6e75d798a027beada4f4308daceeadb5a811b92e5748af9a4ba8b2023bb9",
+      "after_sha256": "24f6700844f6bcf205e3eae4c7ccd28cc20f9f2740afc7545e52131d2450969a",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/togo/README.md",
+      "before": "Independent source review is pending for this addition.",
+      "after": "Independent source review completed on 2026-11-01 for this conditional addition.",
+      "before_sha256": "48c5f380ac789b26dbebc2339a674c5e616e14011fbd58fed3c792698795400c",
+      "after_sha256": "fabe56d79b1a940951599cbc62e8d8ba85e0c121a8d9d8ad09dca5ecd8bf760d",
+      "occurrences": 1
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.md",
+      "before": "Source review closure is pending.",
+      "after": "Independent source review closed on 2026-11-01 for this conditional working paper.",
+      "before_sha256": "af267b066ca34f97ab3d89b9a561fc7d54992446530d0b8c47c172725a15e9d9",
+      "after_sha256": "40db8e95919b36876e3cf31ee996a4e27c014b8492129118c3e46f5e845bffc1",
+      "occurrences": 1
+    }
+  ]
+}

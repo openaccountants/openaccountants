@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-01",
+  "review_candidate": "47c65b0646ba12ab7949ae08eaadbb45456e1d8f",
+  "result": "corrections required; preserve initial evidence on closure",
+  "files": [
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/ledger-row-review.json",
+      "sha256": "5c93533fbc819e2e58258544c08389a6ea273742beaeeaf7e179f62ac8c38577",
+      "bytes": 24704
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/ledger-row-review.tsv",
+      "sha256": "86808f7a87cf5cecc2505ad506f470920a8577b782f8ea4e566ad6d044f99818",
+      "bytes": 15858
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/mechanical-receipt.json",
+      "sha256": "a77117ed79bd61505d97625dd0476a4b65dc9d36748c2d3083cc1d266e86cd54",
+      "bytes": 17350
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/private-source-artifacts.json",
+      "sha256": "6c347d5d6ffff2eac0851f4a1962112f314ddb10020efe243dfe9045e35ad7cd",
+      "bytes": 2334
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/review-record.md",
+      "sha256": "f40de736f32c1e0251471dc8ebf04532e84a0820f0c3aa877a8716355ecd8c01",
+      "bytes": 10656
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/validate-review.py",
+      "sha256": "642ee037fff578c844994e0657e435c79b8e5cbf0dba16cb2e235d749cccce52",
+      "bytes": 16170
+    }
+  ]
+}
