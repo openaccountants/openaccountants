@@ -69,6 +69,7 @@ PARTNERS.md                # Stub pointing at VERIFIERS.md; the platform links t
 | `packages/us-federal/**` | **Hand-authored**: form guides + rates JSONs |: (see `ANNUAL-UPDATE-RUNBOOK.md` there) |
 | `index.json` | Generated | `python3 scripts/build-index.py` |
 | `agent-skills/<slug>/SKILL.md`, `agent-skills/index.json` | Generated | `python3 scripts/build-agent-skills.py` (the README there is hand-maintained; its stats block is restamped) |
+| `plugins/openaccountants-hermes/skills/<slug>/SKILL.md` | Generated | `python3 scripts/build-agent-skills.py --hermes-plugin` (the Hermes plugin bundle mirrors the full `agent-skills/` tree; `plugin.json` and `mcp.json` are hand-maintained) |
 | `skills/COUNTRIES.md` | Generated | `python3 scripts/build-country-index.py` |
 | `skills/REGISTER.md`, `skills/REGISTER.csv` | Generated | `python3 scripts/build-register.py` |
 | `skills/DUPLICATES.md` | Generated | `python3 scripts/validate-guides.py --duplicates-report` |

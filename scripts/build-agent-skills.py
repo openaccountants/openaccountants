@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build `agent-skills/` (and the Claude Code plugin's `skills/`) from `skills/**`.
+"""Build `agent-skills/` (and the Claude Code and Hermes plugins' `skills/`) from `skills/**`.
 
 Every published skill in this repo becomes one folder with a `SKILL.md` in the open
 Agent Skills format (agentskills.io): `name` + `description` frontmatter, then the
@@ -16,6 +16,7 @@ follows the library.
 Usage:
   python3 scripts/build-agent-skills.py                       # agent-skills/ for everything
   python3 scripts/build-agent-skills.py --plugin MT,NL,DE,IE,GB  # also plugins/openaccountants/skills/
+  python3 scripts/build-agent-skills.py --hermes-plugin          # also plugins/openaccountants-hermes/skills/ (full library)
   python3 scripts/build-agent-skills.py --check               # exit 1 if the tree is stale
 
 Derived tree: never edit `agent-skills/<slug>/SKILL.md` by hand; edit `skills/**`.
@@ -37,6 +38,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SKILLS_DIR = REPO_ROOT / "skills"
 OUT_DIR = REPO_ROOT / "agent-skills"
 PLUGIN_SKILLS_DIR = REPO_ROOT / "plugins" / "openaccountants" / "skills"
+HERMES_PLUGIN_SKILLS_DIR = REPO_ROOT / "plugins" / "openaccountants-hermes" / "skills"
 SITE = "https://www.openaccountants.com"
 LICENSE_LINE = "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 
@@ -186,7 +188,7 @@ def iter_source_files():
             yield p
 
 
-def build(plugin_countries: set[str], check_only: bool) -> int:
+def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = False) -> int:
     built: dict[str, dict] = {}
     staged: dict[Path, str] = {}
     reviewed = 0  # tier 1 with a named reviewer: the only accountant-reviewed state
@@ -213,6 +215,8 @@ def build(plugin_countries: set[str], check_only: bool) -> int:
             reviewed += 1
         if j.split("-")[0] in plugin_countries:
             staged[PLUGIN_SKILLS_DIR / slug / "SKILL.md"] = content
+        if hermes_plugin:
+            staged[HERMES_PLUGIN_SKILLS_DIR / slug / "SKILL.md"] = content
 
     index = {
         "generated_by": "scripts/build-agent-skills.py",
@@ -228,6 +232,8 @@ def build(plugin_countries: set[str], check_only: bool) -> int:
     # Stale folders (skills retired or renamed since the last build) go away.
     stale: list[Path] = []
     roots = [OUT_DIR] + ([PLUGIN_SKILLS_DIR] if plugin_countries else [])
+    if hermes_plugin:
+        roots.append(HERMES_PLUGIN_SKILLS_DIR)
     for root in roots:
         if not root.is_dir():
             continue
@@ -252,7 +258,8 @@ def build(plugin_countries: set[str], check_only: bool) -> int:
     for v in built.values():
         trust_counts[v["trust_label"] or "unlabelled"] = trust_counts.get(v["trust_label"] or "unlabelled", 0) + 1
     print(f"agent-skills: {len(built)} skills, {len(index['jurisdictions'])} jurisdictions, "
-          f"{len(changed)} written, {len(stale)} removed; plugin countries {sorted(plugin_countries) or '-'}")
+          f"{len(changed)} written, {len(stale)} removed; plugin countries {sorted(plugin_countries) or '-'}; "
+          f"hermes plugin {'on' if hermes_plugin else 'off'}")
     for k, n in sorted(trust_counts.items(), key=lambda kv: -kv[1]):
         print(f"  {n:5d}  {k}")
     return 0
@@ -263,7 +270,7 @@ def main() -> int:
     countries: set[str] = set()
     if "--plugin" in args:
         countries = {c.strip().upper() for c in args[args.index("--plugin") + 1].split(",") if c.strip()}
-    return build(countries, "--check" in args)
+    return build(countries, "--check" in args, "--hermes-plugin" in args)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openaccountants",
+  "version": "0.1.0",
+  "description": "OpenAccountants tax skills for Hermes: 2,100+ jurisdiction tax skills (countries, US states, cross-border, verticals) installed as native skills, plus the OpenAccountants connector for today's figures in 190+ jurisdictions.",
+  "author": { "name": "OpenAccountants", "url": "https://www.openaccountants.com" },
+  "homepage": "https://www.openaccountants.com/connect",
+  "repository": "https://github.com/openaccountants/openaccountants",
+  "license": "AGPL-3.0-only",
+  "keywords": ["tax", "accounting", "vat", "gst", "skills", "openaccountants"]
+}
