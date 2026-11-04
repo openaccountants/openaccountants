@@ -1,0 +1,52 @@
+---
+name: ao-vat-gst
+description: "Source-cited draft: vat / gst for Angola (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+metadata:
+  source: openaccountants
+  openaccountants_url: "https://www.openaccountants.com/skills/ao-vat-gst"
+  jurisdiction: "AO"
+  tax_year: "2025"
+  last_updated: "2026-07-13"
+  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
+  review_status: "pending_review"
+---
+
+# Angola VAT / GST
+
+## Value-Added Tax (IVA)
+
+Angola operates a VAT (Imposto sobre o Valor Acrescentado, IVA) with a standard rate of 14%, introduced in 2019 and subsequently amended. Reduced rates apply to specific goods, services, and the Cabinda province, and a captivation (VAT withholding) regime substitutes for a traditional reverse charge in many cases.
+
+- **Standard VAT rate** — 14 percent  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **Reduced rate on certain food goods and agricultural inputs** — 5 percent  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **Reduced rate on hotel and restaurant services** — 7 percent (subject to conditions)  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **Simplified VAT regime rate** — 7 percent (on turnover)  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **Reduced rate in Cabinda Province** — 1% on imports and supplies (2% for port and water distribution services) percent  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **Standard (general) VAT regime threshold** — Annual turnover exceeding AOA 350,000,000 AOA  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **Simplified VAT regime turnover range** — Annual turnover between AOA 25,000,000 and AOA 350,000,000 AOA  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **VAT return filing frequency** — Monthly  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **VAT payment deadline** — By the last day of the month following the operations ((approx — confirm; PwC notes payment due by the 15th day of the second following month for certain cases))  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+- **VAT captivation (withholding) regime** — Certain entities (e.g. oil companies, banks, the State) withhold part of the VAT on supplier invoices instead of the supplier remitting in full  _(Codigo do Imposto sobre o Valor Acrescentado (VAT Code) https://taxsummaries.pwc.com/angola/corporate/other-taxes)_
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
+
+## Today's figures and who stands behind this skill
+
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ao-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ao-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
