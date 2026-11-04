@@ -1,0 +1,130 @@
+{
+  "source_base": "ab692cc2ef1c6306de9435b63448294d30fc4052",
+  "accepted_guide_count": 31,
+  "files": {
+    "skills/malta/malta-income-tax.md": {
+      "review": "personal",
+      "sha256": "3540a82a4725dc83318991cd3b754000ca3151c746934a77e94903c1a065b42a"
+    },
+    "skills/malta/malta-payroll.md": {
+      "review": "personal",
+      "sha256": "bf049e7c3c7b13e8db9f6f0f913fc6710ae6fd6199e0f5eb228086a5429e4a06"
+    },
+    "skills/malta/malta-ssc.md": {
+      "review": "personal",
+      "sha256": "f71705b25af669cfbb45e26accd993fac7d0fc608dc7490a720cbe9abe967e48"
+    },
+    "skills/malta/mt-estimated-tax.md": {
+      "review": "personal",
+      "sha256": "27a96c8d464e172b575af119af73addd12d5caf67de84792370e4e55331739ec"
+    },
+    "skills/malta/mt-crypto-tax.md": {
+      "review": "personal",
+      "sha256": "869a06210c54a79a5170dcd8af8fcdb84716b19686f897acff3772a49d3a788d"
+    },
+    "skills/malta/mt-non-dom.md": {
+      "review": "personal",
+      "sha256": "494faab72ce1f1c52ae6df2462ba07e1fb02ef43fb6c614e549f400d23f82600"
+    },
+    "skills/malta/moving-to-malta-tax-residence.md": {
+      "review": "personal",
+      "sha256": "ea792d8508f062ede5f7ba77b6f0f5a377801e2c953afecea8f854e6aa8f6148"
+    },
+    "skills/orchestrator/mt-freelance-intake.md": {
+      "review": "personal",
+      "sha256": "2129f7aa32fb69464cb5ffd230179e667a9508be5c0c873336bf01987b361cfa"
+    },
+    "skills/orchestrator/mt-return-assembly.md": {
+      "review": "personal",
+      "sha256": "9fc61651c70ccf809168ac1454f67b5164cf4913b8cc1361c18e251b16124439"
+    },
+    "skills/malta/how-to-account-for-rental-income-in-malta.md": {
+      "review": "property",
+      "sha256": "85e6426cb929ae7407e9bca9739880753c794ff29153e1406b3e6c13019667b5"
+    },
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md": {
+      "review": "property",
+      "sha256": "cfda62818d21a970a503a8d49633d24411d5bc21b6104520cbb75e36d80942b1"
+    },
+    "skills/malta/mt-capital-gains.md": {
+      "review": "property",
+      "sha256": "1c128d760961f80c864cbfc2320bd84aa67cef092eb0fba558912be02aa3c753"
+    },
+    "skills/malta/mt-rental-income.md": {
+      "review": "property",
+      "sha256": "f68e1dbcf9b86b26677bd7f5be5dd4076669288bea11470a8d6d6bb88246a84e"
+    },
+    "skills/malta/mt-property-transfer-tax-the-sale-immovable.md": {
+      "review": "property",
+      "sha256": "a3e3d4556002aa014713ff2c95cbffdc614b563be05cae8877cdfbc723c1ff30"
+    },
+    "skills/malta/mt-global-residence-programme.md": {
+      "review": "property",
+      "sha256": "dfbdbf5c72ad48bc5ffe448f701edb8f0dc9ea2ef14c96b4f06ab638cddd006a"
+    },
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md": {
+      "review": "property",
+      "sha256": "42cec0504eafdac94077be1f0884ae5a8e70d01a58de20c577ac2304c821a131"
+    },
+    "skills/malta/malta-financial-statements.md": {
+      "review": "business",
+      "sha256": "5a992c3854f51fe00c15710355ae989a554c59241ccd0b3f53197cc3ab7002b3"
+    },
+    "skills/malta/malta-bookkeeping.md": {
+      "review": "business",
+      "sha256": "ace7805525900f6860805f7ba6801a3997e725326769a63609bc9841a52a91c2"
+    },
+    "skills/malta/malta-tax-optimization.md": {
+      "review": "business",
+      "sha256": "268c4992982399952045439adbcc67d8c2a3ccba520b477f9e43ff8f4b16bd7c"
+    },
+    "skills/malta/mt-corporate-tax.md": {
+      "review": "business",
+      "sha256": "c15a486b4e1301c8bcec369fa775104b04c22dc6eb36e02fe269a9e523a8cd82"
+    },
+    "skills/malta/malta-transfer-pricing.md": {
+      "review": "business",
+      "sha256": "103370ba81a6dbd79e51da5eb45ef2c6c4345a435a31f29faccadcc0b7a0cad4"
+    },
+    "skills/malta/mt-holding-company-participation-exemption.md": {
+      "review": "business",
+      "sha256": "6ea4ce28a5250051f2564929b7e01d3d57ae8e9bfeae16a2750b618b833f084d"
+    },
+    "skills/malta/mt-foundations-and-trusts.md": {
+      "review": "business",
+      "sha256": "ef8ab3593e0fc7208fb85b7adc71ff82e2e2c3b8bebf4c3cc72bc3395b2c0ede"
+    },
+    "skills/malta/mt-family-office-setup.md": {
+      "review": "business",
+      "sha256": "1b2a24c91716e3738a316a80eb1950154d71f82b03fa4606afdf6718948854fd"
+    },
+    "skills/malta/mt-company-residence-and-substance.md": {
+      "review": "business",
+      "sha256": "134d939634134bd0467fc65131e488cb8c0737e48cd239498a152026af385780"
+    },
+    "skills/malta/malta-formation.md": {
+      "review": "business",
+      "sha256": "92380ed9ed4a4ce29518848ea89557acb3801809e5033c4077ca1383e3bd3a45"
+    },
+    "skills/malta/selling-a-company-in-malta.md": {
+      "review": "business",
+      "sha256": "2c86b483992bbe4ed44a95a505965f0f576dc37bb8d0769d95392657629e1d48"
+    },
+    "skills/malta/malta-vat-return.md": {
+      "review": "vat",
+      "sha256": "4200092b75ef40b1ee816a2dd0892b317a168b758a70f80a03a805fa253d0a7a"
+    },
+    "skills/malta/mt-vat3-quarterly-return-malta.md": {
+      "review": "vat",
+      "sha256": "5e57eaf8fb736042f79a691583ac3c4497b8c8ee5fdb635a0bac821219c8d1e1"
+    },
+    "skills/malta/mt-reverse-charge-acquisition-intra.md": {
+      "review": "vat",
+      "sha256": "1ad2d4ad3dd0a847c19f83e4e5f3d21abcee58f072c866f51a38efd918f323ab"
+    },
+    "skills/malta/mt-reverse-charge-vat-services-received-from.md": {
+      "review": "vat",
+      "sha256": "3e1b71e2983d0214a11d2428e3cfdf8f912db977e185bfc9f29d0a8aa2861a38"
+    }
+  }
+}

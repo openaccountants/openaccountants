@@ -1,13 +1,12 @@
 ---
 name: mt-global-residence-programme
 description: "Malta Global Residence Programme for non-EU nationals and its EU, EEA and Swiss twin, the Residence Programme: who can and cannot apply, the qualifying property bought or rented in Malta, Gozo or the south, the flat rate on foreign income brought to Malta and the yearly minimum tax shared by the beneficiary, the spouse and minor or disabled children, Malta-source income, foreign income kept abroad and capital gains, double tax relief, the day limit in any other country, insurance, resources and language conditions, the authorised registered mandatary and its penalty, the application fee, the 30 April payment and return, and what ends the status. Triggers: \"Malta GRP\", \"Global Residence Programme\", \"Malta Residence Programme EU\", \"Malta flat tax on remittances\"."
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Michael Spiteri Staines"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 ---
 
 # Malta Global Residence Programme and Residence Programme: the flat-rate special tax status
@@ -21,7 +20,7 @@ Figures are for tax year 2026. Malta taxes by year of assessment: income of cale
 | Item | Value | Note (verbatim) |
 | --- | --- | --- |
 | Source | all figures below | https://legislation.mt/eli/sl/123.148/eng/pdf |
-| Rate on foreign income received in Malta by the beneficiary, the spouse and children in paragraphs (b) and (d) of "dependant" (rule 5(1)) | 15% | "(0.15) on every 15% rate." |
+| Rate on foreign income received in Malta by the beneficiary, the spouse and children in paragraphs (b) and (d) of "dependant" (rule 5(1)) | 15% | "rate of fifteen cents (0.15) on every euro" |
 | Minimum tax on the foreign income of those persons together, per year of assessment (rule 5(1) proviso) | EUR 15,000 | "shall be fifteen thousand euro (€15,000) for any year of assessment" |
 | Income of the same persons not taxed at the rule 5(1) rate, charged as separate income (rule 5(2)) | EUR 0.35 per euro | "at the rate of thirty-five cents (0.35) on every euro" |
 | Qualifying owned property in Malta: purchase price at least (rule 2) | EUR 275,000 | "seventy-five thousand euro (€275,000) for a property situated in Malta" |
@@ -39,7 +38,7 @@ Figures are for tax year 2026. Malta taxes by year of assessment: income of cale
 | Item | Value | Note (verbatim) |
 | --- | --- | --- |
 | Source | all figures below | https://legislation.mt/eli/sl/123.160/eng/pdf |
-| Rate on foreign income received in Malta by the beneficiary, the spouse and children in paragraphs (b) and (d) of "dependant" (rule 5(1)) | 15% | "(0.15) on every 15% rate." |
+| Rate on foreign income received in Malta by the beneficiary, the spouse and children in paragraphs (b) and (d) of "dependant" (rule 5(1)) | 15% | "rate of fifteen cents (0.15) on every euro" |
 | Minimum tax on the foreign income of those persons together, per year of assessment (rule 5(1) proviso) | EUR 15,000 | "shall be fifteen thousand euro (€15,000) for any year of assessment" |
 | Income of the same persons not taxed at the rule 5(1) rate, charged as separate income (rule 5(2)) | EUR 0.35 per euro | "at the rate of thirty-five cents (0.35) on every euro" |
 | Qualifying owned property in Malta: purchase price at least (rule 2) | EUR 275,000 | "seventy-five thousand euro (€275,000) for a property situated in Malta" |
@@ -229,8 +228,49 @@ Reading the example ([S.L. 123.148 rule 5](https://legislation.mt/eli/sl/123.148
 
 ## Sources
 
-- Global Residence Programme Rules, S.L. 123.148: https://legislation.mt/eli/sl/123.148/eng/pdf
-- Residence Programme Rules, S.L. 123.160: https://legislation.mt/eli/sl/123.160/eng/pdf
-- Income Tax Act, Cap. 123 (consolidated; art. 4(1), art. 56(23), art. 56(27), art. 74): https://legislation.mt/eli/cap/123/eng/pdf
+- Global Residence Programme Rules, S.L. 123.148: https://legislation.mt/eli/sl/123.148/eng/pdf (read 2026-11-04; read for rules 2 to 6 programme conditions, figures and hypothetical).
+- Residence Programme Rules, S.L. 123.160: https://legislation.mt/eli/sl/123.160/eng/pdf (read 2026-11-04; read for rules 2 to 6 comparative programme conditions and figures).
+- Income Tax Act, Cap. 123 (consolidated; art. 4(1), art. 56(23), art. 56(27), art. 74): https://legislation.mt/eli/cap/123/eng/pdf (read 2026-11-04, articles 5, 5A and 31D for the targeted corrections; unchanged wider claims not re-certified).
 
 This Guide is general information for tax year 2026, not advice on a particular family's affairs. Confirm current figures on the official sources above before acting.
+
+
+### Targeted audit source checks, 4 November 2026
+
+Removed the PDF marginal-heading extraction artifact from the quoted notes; rates and eligibility rules are unchanged. Previous review metadata is not carried onto this revised text. Unread immigration and brochure-only conditions remain held. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- S.L. 123.148 rule 5(1): https://legislation.mt/eli/sl/123.148/eng/pdf (read 2026-11-04; read for rule 5(1), rate quotation).
+- S.L. 123.160 rule 5(1): https://legislation.mt/eli/sl/123.160/eng/pdf (read 2026-11-04; read for rule 5(1), rate quotation).
+
+Not yet confirmed: all legacy-source claims outside the targeted read scopes above, including unread portal, subsidiary-rule and immigration conditions, retain their stated holds. A reference retained here is not proof of a fresh read.
+
+## Targeted executable checks of the existing hypothetical
+
+These reproduce the existing hypothetical with no foreign tax and no double-tax relief. The minimum is on the covered foreign income, while the hypothetical Malta consultancy fees are additional at 35%.
+
+```oa-check
+name: GRP foreign-income minimum plus separate Malta-source fees
+inputs:
+  foreign_income: 60000
+  malta_fees: 4000
+steps:
+  - foreign_charge: pct(foreign_income,15)
+  - foreign_tax: max(foreign_charge,15000)
+  - local_tax: pct(malta_fees,35)
+  - total: foreign_tax + local_tax
+expected:
+  foreign_charge: 9000
+  foreign_tax: 15000
+  local_tax: 1400
+  total: 16400
+```
+
+```oa-check
+name: GRP remittances above the minimum crossover
+inputs:
+  foreign_income: 120000
+steps:
+  - foreign_tax: max(pct(foreign_income,15),15000)
+expected:
+  foreign_tax: 18000
+```

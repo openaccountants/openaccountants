@@ -1,7 +1,7 @@
 ---
 name: malta-formation
 description: "Use this skill whenever asked about forming, incorporating or registering a company in Malta in 2026. Covers the entity types (sole trader, partnership en nom collectif, private limited company, single member company, public limited company), the Companies Act rules on name, memorandum, minimum share capital (EUR 1,164.69 private, EUR 46,587.47 public) and paid-up share (20% and 25%), directors and the company secretary, the Malta Business Registry registration fee (EUR 100 electronic up to EUR 1,500 authorised capital), beneficial owner filings, the annual return (EUR 85 electronic fee, 42 days), accounts deadlines, tax and VAT registration, and post-formation compliance. Trigger on: set up a company in Malta, Malta Ltd, MBR registration, BAROS, incorporate in Malta, Malta company costs, Malta share capital, Malta memorandum and articles, company secretary Malta."
-version: 1.3
+version: 1.4
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-11-04
@@ -12,7 +12,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
-# Malta Formation v1.3
+# Malta Formation v1.4
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-formation.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Tax year 2026. This skill is the workflow for setting up a Maltese company. It does not repeat the tax computations: company tax and refunds are in `mt-corporate-tax`; accounts and audit in `malta-financial-statements`; VAT registration in `malta-vat-return`; employer registration and payroll in `malta-payroll`; the owner's personal tax in `malta-income-tax`; selling the shares later in `selling-a-company-in-malta`; company residence and substance in `mt-company-residence-and-substance`.
 
@@ -40,7 +42,7 @@ Tax year 2026. This skill is the workflow for setting up a Maltese company. It d
 | Company secretary | No | No | Yes | Yes | Cap. 386 art. 138 |
 | Minimum authorised capital | Not applicable | Not applicable | EUR 1,164.69 | EUR 46,587.47 | Cap. 386 art. 72 |
 | Tax | Individual rates (`malta-income-tax`) | Each partner taxed on their share, unless the partnership has elected to be treated as a company (Cap. 372 art. 27) | 35% with refunds (`mt-corporate-tax`) | Same | |
-| Audit | No | No | Required unless the micro exemption applies (`malta-financial-statements`) | Always | Cap. 386 art. 185(2) |
+| Audit | Outside this company workflow | Partnership reporting is outside this company workflow; do not infer a blanket audit exemption | Required unless the micro exemption applies; separate tax review/audit rules also apply (`malta-financial-statements`) | Required under the Companies Act | Cap. 386 art. 185(2); tax audit exemptions in L.N. 139/2025 |
 
 Recommended default for a trading business with outside customers: a private limited company. Run the sole trader or company comparison in `malta-tax-optimization` first.
 
@@ -162,7 +164,7 @@ Banks run their own due diligence on directors, shareholders and beneficial owne
 
 - **R-MT-F1, shell company request.** Refuse to help form a company whose stated purpose is to hold no real activity in order to hide income or ownership. Refer to a licensed adviser.
 - **R-MT-F2, hiding beneficial ownership.** Beneficial owners must be declared (S.L. 386.19). Refuse if the stated purpose is to hide who owns the company.
-- **R-MT-F3, regulated activity.** Financial services, gaming, crypto, insurance and investment management need a licence before trading (art. 77(3)). Refer to a regulated-sector specialist.
+- **R-MT-F3, regulated activity.** Registration does not grant an activity licence (art. 77(3)). Financial-services, gaming, crypto, insurance and investment activities require their own activity-specific authorisation analysis; no universal licensing conclusion is established here. Refer to a regulated-sector specialist.
 - **R-MT-F4, sole director as secretary.** Not allowed unless the company is an exempt company (art. 138(2)(a), 211(4)). Fix the memorandum before filing.
 - **R-MT-F5, single member without the conditions.** A single member company must be an exempt company whose objects state its main activity (art. 212(1)).
 
@@ -222,7 +224,7 @@ expected:
 5. Will the company employ staff or make taxable supplies in Malta soon?
 6. Will profits be paid out or kept? (This feeds the tax plan in `mt-corporate-tax`.)
 
-## Sources
+## Historical source references
 
 | Source | URL | Read on |
 |---|---|---|
@@ -243,3 +245,14 @@ Not yet confirmed:
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
 
 > OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
+
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| Cap386 art185(2),LN139/2025 | https://legislation.mt/eli/ln/2025/139/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap386 art77(3) | https://legislation.mt/eli/cap/386/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

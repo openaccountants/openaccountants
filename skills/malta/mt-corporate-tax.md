@@ -1,16 +1,18 @@
 ---
 name: mt-corporate-tax
 description: "Malta corporate income tax for basis year 2026 (year of assessment 2027): companies resident in Malta and Malta permanent establishments of foreign companies. Covers the 35% company rate, the full imputation system and the five tax accounts, shareholder refunds (six-sevenths, five-sevenths, two-thirds, full), the elective 15% final tax without imputation (LN 188 of 2025), the taxable base, loss carry-forward, group loss relief (51%) and fiscal units (95%), notional interest deduction, provisional tax, the company return and its deadline, interest and additional tax, outbound withholding, and Pillar Two status. Trigger on: Malta corporate tax, Malta company tax rate, 35% Malta, six-sevenths refund, Malta tax accounts, Malta fiscal unit, Malta group relief, Malta provisional tax company, Malta 15% final tax election. Out of scope: participation exemption detail (mt-holding-company-participation-exemption), company residence, CFC and exit tax (mt-company-residence-and-substance), transfer pricing (malta-transfer-pricing), individuals (malta-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-04
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
 # Malta corporate income tax: 35%, imputation, refunds and filing (basis year 2026)
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/mt-corporate-tax.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Malta taxes a company on the profits of its basis year in the following year of assessment. A company with a 31 December 2026 year end is taxed for year of assessment 2027. The company pays tax at 35%. When it pays a dividend, the shareholder can claim back most of that tax. The company's profits are sorted into five tax accounts, and the account decides whether a refund is available. Statute quotes are from the consolidated texts on legislation.mt, read on 22 October 2026.
 
@@ -184,7 +186,7 @@ Gozo Logistics Ltd has chargeable income of EUR 300,000 for basis year 2026, all
 
 Chargeable income is 300,000 - 80,000 - 60,000 = EUR 160,000. Tax at 35% is EUR 56,000. If the profits are paid out and six-sevenths is claimed, Malta tax left is EUR 8,000.
 
-Compare the 15% final tax election for the same year: 15% x 160,000 = EUR 24,000, final and not refundable. The floor in reg. 3(4)(a) is the 35% tax less refunds claimable (EUR 8,000), so the 15% tax stands at EUR 24,000. On profits paid out to a shareholder that is registered for and will claim the six-sevenths refund, the election costs EUR 16,000 more. The election wins where the refund route does not deliver 5% in practice: profits kept in the company (no refund is paid until a dividend is paid, so retained profits carry 35%), or shareholders who would not claim refunds, such as many Malta-resident individual owners, for whom the 35% imputation tax is otherwise the final cost and an FTA dividend bears no further tax (art. 68(1)(c)). This example also assumes losses and group relief reduce the income taxed at 15%; that is not settled (see above). Run the floor on the client's own shareholders before advising (see `mt-holding-company-participation-exemption`).
+Compare the 15% final tax election for the same year: 15% x 160,000 = EUR 24,000, final and not refundable. The floor in reg. 3(4)(a) is the 35% tax less refunds claimable (EUR 8,000), so the 15% tax stands at EUR 24,000. On profits paid out to a shareholder that is registered for and will claim the six-sevenths refund, the election costs EUR 16,000 more. Retaining profits or deciding not to claim a refund does not itself establish a saving under the election. Any cash-flow comparison first requires the regulation 3(4)(a) floor, actual refund entitlement and article 43(6) to be resolved for the shareholders. If no refund is claimable and the ordinary-tax comparator is 35%, the floor is 35%, so the election does not reduce that tax. Do not present the 15% election as cheaper on these unresolved facts. This example also assumes losses and group relief reduce the income taxed at 15%; that is not settled (see above). Run the floor on the client's own shareholders before advising (see `mt-holding-company-participation-exemption`).
 
 ```oa-check
 name: Losses brought forward plus group relief, and the 15% election compared
@@ -221,7 +223,7 @@ expected:
 5. What losses are brought forward, in which account would they have fallen, and what did the last self-assessment show (the provisional tax benchmark)?
 6. Is the company part of a group with consolidated revenue of EUR 750 million or more? This brings in the Pillar Two filing duties.
 
-## Sources
+## Historical source references
 
 | Source | URL | Read on |
 |---|---|---|
@@ -246,3 +248,14 @@ expected:
 MTCA pages sit behind a bot check; they were read in a browser.
 
 Not yet confirmed: whether the Gazette notice and rules that start the 175% deduction in art. 14(1)(ha) have been issued; the names and numbers of the return attachments (TRA forms) in the YA 2027 e-Return; MTCA's online filing extension dates for 2026 year ends; whether losses brought forward and group relief reduce income taxed under the 15% election; how the reg. 3(4)(a) floor treats shareholders not registered for refunds and Malta-resident individuals under article 43(6); the meaning of "specifically empowered to consolidate its results" in rule 6(2) S.L. 123.189; any regulations under article 22B Cap. 123; wear and tear rates under the Deductions (Wear and Tear) Rules (not read for this skill).
+
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| SL123.217 reg3(4)(a) | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap123 art56(6), Cap372 art48 and SL123.217 | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

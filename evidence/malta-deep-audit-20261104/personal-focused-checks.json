@@ -1,0 +1,224 @@
+{
+  "skills/malta/malta-income-tax.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "6 of 6 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [
+        "1 em dash(es)"
+      ],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "6 source rows all dated 2026-11-04, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/malta/malta-payroll.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "6 source rows all dated 2026-11-04, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/malta/malta-ssc.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/malta/mt-estimated-tax.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "24 of 25 amount table row(s) without a URL or an unverified mark (4% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/malta/mt-crypto-tax.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "4 of 11 amount table row(s) without a URL or an unverified mark (63.6% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/malta/mt-non-dom.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/malta/moving-to-malta-tax-residence.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/orchestrator/mt-freelance-intake.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  },
+  "skills/orchestrator/mt-return-assembly.md": {
+    "candidate": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "baseline_note": "Original full body retained in personal-archive; no old failure erased."
+  }
+}

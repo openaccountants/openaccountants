@@ -1,14 +1,17 @@
 ---
 name: mt-family-office-setup
 description: "Hub Guide for setting up a single-family office in Malta: the usual building blocks (family holding company, family investment company, foundation or trust, management company), how each is taxed with links to the deep Guides, the management company's own corporate tax, VAT, payroll and licensing questions, the Family Office Residency programme and the non-dom minimum tax, a setup checklist with the order of steps and documents, what a Malta structure does not do, when another country fits better, and a worked hypothetical family structure."
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-12
+last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
 # Setting up a family office in Malta: building blocks, tax touch-points and the order of steps
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/mt-family-office-setup.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Figures are for tax year 2026. Malta taxes by year of assessment, so income of calendar 2026 is taxed in year of assessment 2027. This Guide is the starting point for a principal, or an adviser, who is thinking about running a family's wealth from Malta. It names the usual Maltese building blocks, says in one table how each is taxed and which Guide covers it in depth, sets out the family office's own running costs, gives the order of the setup steps and the documents each step needs, and says what a Malta structure does not do. It does not repeat the deep Guides; it links to them. Pages were read on legislation.mt and residencymalta.gov.mt on 4 October 2026. The Acts print most rates and fractions in words, and this Guide keeps them in words.
 
@@ -143,7 +146,7 @@ All amounts in this section are hypothetical. The family members live outside Ma
 - What are the assets, where are they, and does any company hold immovable property in Malta? This decides the participation exemption, duty on transfers and the property company rules.
 - For each strategic holding: how much of the equity does the family hold, where is the company resident, and what foreign tax does it pay? Can the subsidiary deduct the dividend it pays? This decides whether the holding is a participating holding and passes the anti-abuse conditions.
 - Will the investment portfolio earn mainly interest, dividends or gains, and with what foreign tax? This decides the refund fraction and whether the final tax election helps.
-- Does the family want a foundation or a trust on top, and will any beneficiary be ordinarily resident and domiciled in Malta? One such beneficiary changes how a trust is taxed.
+- Does the family want a foundation or a trust on top, and will any beneficiary be ordinarily resident and domiciled in Malta? A beneficiary who is ordinarily resident and domiciled and is not wholly exempt under article 12 fails that limb of the look-through condition; use the complete test in `mt-foundations-and-trusts`.
 - What will the management company do, and for whom? This decides VAT, transfer pricing and whether a licence is needed.
 
 ## When to refuse or refer
@@ -158,7 +161,39 @@ All amounts in this section are hypothetical. The family members live outside Ma
 - Any structure whose main purpose is to reduce tax: the Commissioner may disregard a trust used "with the sole or main purpose of reducing the amount of tax payable by a person" ([Cap. 123 art. 27D(10)](https://legislation.mt/eli/cap/123/eng/pdf)). Refer.
 - Malta property, Malta-resident subsidiaries and gains on them: see `mt-capital-gains` and `mt-holding-company-participation-exemption`, and refer where a Malta-resident owner sells a Malta-resident subsidiary.
 
-## Sources
+## Executable checks of the hypothetical structure
+
+The first check assumes the bond income is passive interest, no double-tax relief is claimed and the distributed profits qualify for the five-sevenths refund. The second assumes every management cost is deductible. Neither includes the investment company's share of management fees, VAT or home-country tax; do not total these as a full structure tax estimate.
+
+```oa-check
+name: Distributed passive bond interest with established refund entitlement
+inputs:
+  interest: 400000
+steps:
+  - company_tax: interest * 0.35
+  - refund: company_tax * 5 / 7
+  - net_malta_tax: company_tax - refund
+expected:
+  company_tax: 140000
+  refund: 100000
+  net_malta_tax: 40000
+```
+
+```oa-check
+name: Management company with assumed deductible costs
+inputs:
+  fees: 990000
+  deductible_costs: 900000
+steps:
+  - profit: fees - deductible_costs
+  - ordinary_tax: profit * 0.35
+expected:
+  profit: 90000
+  ordinary_tax: 31500
+```
+
+
+## Historical source references
 
 - Income Tax Act, Cap. 123 (consolidated, point in time 10 March 2026): https://legislation.mt/eli/cap/123/eng/pdf
 - Income Tax Management Act, Cap. 372: https://legislation.mt/eli/cap/372/eng/pdf
@@ -171,3 +206,14 @@ All amounts in this section are hypothetical. The family members live outside Ma
 - Residency Malta Agency home page: https://residencymalta.gov.mt/
 
 This Guide is a draft from official pages, not tax advice. Rules change and facts differ; have a Malta accountant confirm the structure before acting.
+
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| Cap123 art27D(3)(b) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap372 art48(4A) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

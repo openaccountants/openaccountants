@@ -1,10 +1,10 @@
 ---
 name: mt-capital-gains
-description: "Use this skill for any question about capital gains tax in Malta. Trigger on: \"CGT Malta\", \"capital gains Malta\", \"sell shares Malta\", \"dispose of shares Malta\", \"Malta tax on investment gains\", \"sell company Malta\", \"Malta no capital gains\", \"crypto gains Malta\", \"Malta property transfer tax\". Covers the absence of CGT on securities, property transfer rules, and what IS subject to gain taxation in Malta. ALWAYS load before computing Malta tax on any asset disposal."
-version: 1.0
+description: "Use this skill for any question about capital gains tax in Malta. Trigger on: \"CGT Malta\", \"capital gains Malta\", \"sell shares Malta\", \"dispose of shares Malta\", \"Malta tax on investment gains\", \"sell company Malta\", \"Malta no capital gains\", \"crypto gains Malta\", \"Malta property transfer tax\". Covers taxable gains on securities and other listed assets, applicable exemptions, and the separate Malta property transfer-tax rules. ALWAYS load before computing Malta tax on any asset disposal."
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-04
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -21,7 +21,7 @@ This skill covers how Malta taxes gains when an **individual** or a **company** 
 
 **Malta does tax capital gains.** There is no separate capital gains tax act. Instead, article 5 lists the assets whose gains are taxable, and says those gains "shall be charged under article 4(1)". An article 5 gain is added to the person's chargeable income and taxed at their normal rates. Malta property is different: most transfers of Malta property fall under article 5A, which charges a **final tax on the transfer value** (usually 8%, [ITA art. 5A(5)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)), not on the gain. Assets that are not in the article 5 list (for example cars, art, coins held as an investment) are outside the charge unless the profit is trading income.
 
-**What we could not check.** The Malta Tax and Customs Administration (MTCA) site, mtca.gov.mt, refused our automated source checks on 25 September 2026. Everything below is sourced from the Laws of Malta (legislation.mt). Points that depend on MTCA forms, guidance or subsidiary rules we could not read are marked **"check"**.
+**Source-check scope.** The original draft could not access MTCA on 25 September 2026. The targeted 4 November 2026 audit fetched the current Income Tax Act, Duty on Documents and Transfers Act and MTCA 2026 individual rate table for the corrections listed at the end. It did not resolve every earlier form or subsidiary-rule question; those remain marked **"check"**. It is not a fresh full-Guide certification.
 
 **Related Skills.** Rate tables for individuals: malta-income-tax. Crypto-assets: mt-crypto-tax. Non-domiciled residents: mt-non-dom.
 
@@ -105,7 +105,7 @@ A Housing Authority certificate of the benefit period must be produced to the no
 | Commissioner's order on under-declared value | only if the declared value is less than 85% of market value, and within twelve months of notification; the order adds additional tax equal to the shortfall, on top of the correct tax | 2026 and 2025 | ITA art. 5A(12)(d)-(f) |
 | Participating holding (companies) | at least 5% of the equity shares, among other tests | 2026 and 2025 | ITA art. 2(1) |
 | Duty on transfer of immovable property | 5% of the higher of consideration and value | 2026 | Duty on Documents and Transfers Act art. 32(1) |
-| Duty on transfer of marketable securities | 2%, plus 3% more where 75% or more of the company's assets are immovable property | 2026 | Duty on Documents and Transfers Act art. 42 |
+| Duty on transfer of marketable securities | 2%, plus 3% more under the property-company test where 75% or more of the assets, excluding current assets other than immovable property, consist of immovable property or rights over it; test indirect holdings separately | 2026 | Duty on Documents and Transfers Act art. 42 |
 
 ### Individual rates for article 5 gains ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
 
@@ -114,8 +114,8 @@ An individual's article 5 gain is added to chargeable income and taxed at the no
 | Chargeable income | Rate | Subtract |
 | --- | --- | --- |
 | Not over €12,000 | 0% | nil |
-| Over €12,000 and under €16,000 | 15% | €1,800 |
-| Over €16,000 and under €60,000 | 25% | €3,400 |
+| Over €12,000 and up to €16,000 | 15% | €1,800 |
+| Over €16,000 and up to €60,000 | 25% | €3,400 |
 | Over €60,000 | 35% | €9,400 |
 
 For 2025 gains (year of assessment 2026) the single table in [Act IX of 2025](https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5) has the same bands and subtractions. Married, parent and non-resident tables differ: use malta-income-tax.
@@ -321,3 +321,46 @@ Do not:
 - Return for the year of assessment filed with the gain declared; balance paid.
 - Duty on the deed considered.
 - Every "check" item confirmed with MTCA or referred.
+
+## Targeted hypothetical boundary checks
+
+A resident single individual’s chargeable income exactly EUR 16,000 falls in the 15% band; exactly EUR 60,000 falls in the 25% band. These are ordinary-table arithmetic illustrations, not additional exemptions for securities.
+
+```oa-check
+name: Single table: exactly EUR 16000
+inputs:
+  income: 16000
+steps:
+  - tax: pct(income,15) - 1800
+expected:
+  tax: 600
+```
+
+```oa-check
+name: Single table: exactly EUR 60000
+inputs:
+  income: 60000
+steps:
+  - tax: pct(income,25) - 3400
+expected:
+  tax: 11600
+```
+
+
+### Targeted audit source checks, 4 November 2026
+
+Repaired misleading retrieval metadata, exact boundaries and the abbreviated duty asset test. Existing subsidiary-rule, treaty, restructuring and prescribed acquisition-base holds remain. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- Cap. 123 article 5(1)(a)(ii): https://legislation.mt/eli/cap/123/eng/pdf (read 2026-11-04).
+- MTCA Tax Rates for Individuals 2026: https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2026 (read 2026-11-04).
+- Cap. 364 article 42(2)(a): https://legislation.mt/eli/cap/364/eng/pdf (read 2026-11-04).
+
+## Sources
+
+| Source and targeted scope | URL | Read date |
+|---|---|---|
+| Income Tax Act, articles 5 and 5A: securities and valuation threshold | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 |
+| Duty on Documents and Transfers Act, article 42(2): current-asset exclusion | https://legislation.mt/eli/cap/364/eng/pdf | 2026-11-04 |
+| MTCA 2026 individual rates, single table boundaries | https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2026 | 2026-11-04 |
+
+Not yet confirmed: the unchanged prescribed acquisition-value adjustments, forms, treaty and restructuring questions remain held where marked above. Links in the original body retain their historical research role; this table records only the targeted current audit reads.

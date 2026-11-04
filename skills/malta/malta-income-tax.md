@@ -1,10 +1,10 @@
 ---
 name: malta-income-tax
-description: "Use this skill whenever asked about Malta income tax for self-employed individuals. Trigger on phrases like \"how much tax do I pay\", \"income tax return\", \"self-assessment\", \"allowable deductions\", \"capital allowances\", \"provisional tax\", \"TA22 regime\", \"TA24\", \"chargeable income\", \"tax credits\", \"self-employed tax Malta\", or any question about filing or computing income tax for a self-employed or part-time self-employed client. Also trigger when preparing or reviewing the annual income tax return or a TA22, computing deductible expenses, or advising on provisional tax instalments. NOTE: TA24 is the 15% final tax form for RENTAL income (ITA Art. 31D) — if the user means rental income, see Section 5.11; the self-employed annual filing is the personal Income Tax Return. This skill covers tax rates (single/married/parent), the return working-paper structure, allowable deductions, capital allowances, provisional tax, the TA22 part-time regime, penalties, and interaction with VAT and SSC. ALWAYS read this skill before touching any income tax work."
-version: 2.0
+description: "Use this skill whenever asked about Malta income tax for self-employed individuals. Trigger on phrases like \"how much tax do I pay\", \"income tax return\", \"self-assessment\", \"allowable deductions\", \"capital allowances\", \"provisional tax\", \"TA22 regime\", \"TA24\", \"chargeable income\", \"tax credits\", \"self-employed tax Malta\", or any question about filing or computing income tax for a self-employed or part-time self-employed client. Also trigger when preparing or reviewing the annual income tax return or a TA22, computing deductible expenses, or advising on provisional tax instalments. NOTE: TA24 is the 15% final tax form for RENTAL income (ITA Art. 31D) ; if the user means rental income, see Section 5.11; the self-employed annual filing is the personal Income Tax Return. This skill covers tax rates (single/married/parent), the return working-paper structure, allowable deductions, capital allowances, provisional tax, the TA22 part-time regime, penalties, and interaction with VAT and SSC. ALWAYS read this skill before touching any income tax work."
+version: 2.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-04
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -19,11 +19,11 @@ tier: 2
 This skill covers Malta income tax for **individuals**: employees, the self-employed, part-time workers, landlords and people selling Maltese property. Malta taxes a calendar **basis year**, and the tax is charged for the following **year of assessment**.
 
 - **Basis year 2026 = year of assessment 2027.** This is the primary year of this skill. Its return is due by 30 June 2027.
-- **Basis year 2025 = year of assessment 2026.** The dated section "2025 income (year of assessment 2026)" covers the returns being filed now. Their statutory date was 30 June 2026, so a return not filed yet is late (see "Filing and payment").
+- **Basis year 2025 = year of assessment 2026.** The dated section "2025 income (year of assessment 2026)" covers the returns being filed now. The general statutory date was 30 June 2026, but MTCA extended filing and payment to 31 July 2026 (see "Filing and payment").
 
 Marital and family status is tested "in the year immediately preceding the year of assessment", which means the basis year itself.
 
-**Sources.** Every figure here comes from the Laws of Malta (legislation.mt): the Income Tax Act (Cap. 123), the Income Tax Management Act (Cap. 372), their subsidiary rules, and the Budget Measures Implementation Acts (Act IX of 2025 and Act III of 2026). The MTCA website (mtca.gov.mt) refused our automated source checks on 25 September 2026. So items that live only on MTCA's site are marked "check on mtca.gov.mt". These are form names (TA22, TA24, FS3, FS4), any online-filing extension, and the Class 2 contribution tables.
+**Source scope.** The law and the specific official pages identified in Sources were read on 4 November 2026 for this correction. Historical source-access failures are preserved in the evidence archive, not used as a present unavailability claim. Only the listed changed claims were rechecked; remaining specialist or form-layout gaps are explicitly held.
 
 **Not covered:** companies and partnerships, a full non-resident computation, the special residence programmes (Global Residence Programme, Residents Scheme, highly qualified persons), double tax relief, VAT (see the Malta VAT Guide) and the detail of social security contributions.
 
@@ -32,7 +32,7 @@ Marital and family status is tested "in the year immediately preceding the year 
 - Which basis year? 2026 income (year of assessment 2027) uses the Act III of 2026 tables, which add four child categories. 2025 income (year of assessment 2026) uses only the three Act IX of 2025 tables.
 - Residence: were you resident in Malta in that year? Domicile: are you domiciled in Malta, and are you ordinarily resident here? If not domiciled, how much foreign income arose, and how much of it was brought into Malta?
 - Were you married and living together in that year? Do you file jointly (the default), separately (article 49A), or with a separate computation (article 50)?
-- Children: how many, and how old? Each must be under 18, or under 23 and in full-time education. Did you have custody, or did you pay maintenance under article 12(1)(t)? Is either spouse an EU/EEA national or a long-term resident? If not, was each child born in Malta and resident in Malta?
+- Children: how many, and how old? Each must be not over 18, or not over 23 and in full-time education. Did you have custody, or did you pay maintenance under article 12(1)(t)? Is either spouse an EU/EEA national or a long-term resident? If not, was each child born in Malta and resident in Malta?
 - Single parent: did you have sole custody, receive the children's allowance as sole beneficiary, get no maintenance from the other parent, and live apart from them?
 - What kinds of income: employment (FSS), self-employment (full-time or part-time), rent, dividends or interest, foreign income, or a property sale?
 - Part-time work: were you in full-time employment registered with Jobsplus, a pensioner taxed in Malta, or a full-time student or apprentice? Is the part-time work registered with Jobsplus and done for a different employer?
@@ -51,7 +51,7 @@ Marital and family status is tested "in the year immediately preceding the year 
 7. **Credit tax already paid.** This means FSS tax deducted by employers, provisional tax, and part-time tax paid on income the person opted to declare. The balance is due on the tax settlement date, which is the return date.
 8. **File the return** by 30 June of the year of assessment. Pay the final taxes and file their statements by their own dates, most of them 30 April.
 9. **Add interest and additional tax** for anything late. Interest is 0.6% a month, capped at the tax. Late-return additional tax follows Table A. ([ITMA art. 44](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b))
-10. **Set up next year's provisional tax.** The benchmark comes from the last return. Pay 20%, 30% and 50% on 30 April, 31 August and 21 December. File a reduction form if this year's liability will be lower. ([P.T. Rules](https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4))
+10. **Set up next year's provisional tax.** The benchmark comes from the specified benchmark year, normally the basis year two years before the payment year. Pay 20%, 30% and 50% on 30 April, 31 August and 21 December. File a reduction form if this year's liability will be lower. ([P.T. Rules](https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4))
 
 Order matters. If you apply the rate table before removing final-tax income, that income is taxed twice. If you pick a table without checking nationality and custody, the tax can be understated.
 
@@ -66,10 +66,10 @@ Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, re
 | Parent, art. 56(1)(b)(ii) | €13,000 | over €13,000 and under €17,500 (€1,950) | over €17,500 and under €60,000 (€3,700) | over €60,000 (€9,700) |
 | Married, 1 qualifying child, art. 56(1)(a)(ii) | €17,500 | over €17,500 and under €26,500 (€2,625) | over €26,500 and under €60,000 (€5,275) | over €60,000 (€11,275) |
 | Married, 2 or more qualifying children, art. 56(1)(a)(iii) | €22,500 | over €22,500 and under €32,000 (€3,375) | over €32,000 and under €60,000 (€6,575) | over €60,000 (€12,575) |
-| Parent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000 (€10,270, as enacted) |
+| Parent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000: **HOLD**, Act €10,270 / MTCA €10,275 |
 | Parent, 2 or more qualifying children, art. 56(1)(b)(v) | €18,500 | over €18,500 and under €25,500 (€2,775) | over €25,500 and under €60,000 (€5,325) | over €60,000 (€11,325) |
 
-**Note on €10,270.** The enacted text of Act III of 2026 and the consolidated Act both say "subtracting €10,270". That leaves a €5 step at €60,000: the 25% formula gives €10,725, but the 35% formula gives €10,730. A continuous table would subtract €10,275. Use the enacted €10,270. If the difference matters, check with MTCA whether it has been corrected.
+**Calculation HOLD: parent with one qualifying child above €60,000.** The consolidated Act, article 56(1)(b)(iv), prints a subtraction of **€10,270**, while MTCA's amended 13 April 2026 communication and current 2026 table publish **€10,275**. Both primary texts were read on 4 November 2026. Do not silently choose a subtraction or issue a final calculation for this branch until the discrepancy is resolved. Record both candidate amounts and obtain legal/authority clarification. [Consolidated Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c); [MTCA amended table](https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5).
 
 ### Who gets which table ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
@@ -228,7 +228,7 @@ Refer projects, companies, trusts and special designated areas.
 ## Provisional tax for the self-employed ([Payment of Provisional Tax Rules, S.L. 372.18](https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4))
 
 - **Who pays:** an individual who was liable to tax in the benchmark year. This excludes anyone eligible for the article 12 election not to file, typically an employee whose income was all under FSS.
-- **Benchmark:** the tax payable in the self-assessment for the benchmark year, adding back any provisional tax. The benchmark year is the last year of assessment whose return was due before the calendar year of the first payment. The benchmark is never this year's projected income. If there is no self-assessment and no Commissioner determination, the benchmark is nil (rule 7(1)(c)).
+- **Benchmark:** the tax payable in the self-assessment for the benchmark year, adding back any provisional tax. The benchmark year is the last year of assessment whose return was due before the calendar year of the first payment. The benchmark is never this year's projected income. If the benchmark-year self-assessment is absent, use the applicable Commissioner determination; absent that, rule 7 can fall back to an earlier self-assessment before nil. Do not assume nil solely because one return is missing.
 - **Due dates** (rule 4) and amounts (rule 5), all in the basis year:
   - at least 20% of the benchmark by 30 April;
   - a further 30% by 31 August;
@@ -238,7 +238,7 @@ Refer projects, companies, trusts and special designated areas.
 
 ## Employees: the Final Settlement System ([FSS Rules, S.L. 372.14](https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3))
 
-- The employer deducts tax each pay period from the Main Tax Deduction Tables. The table depends on the employee's tax status declaration (form FS4) and the length of the pay period. A year-end adjustment in the final pay period applies the article 56(1)(a) or (b) rates.
+- The employer deducts tax each pay period using the cumulative formula, compulsory with ten or more full-time payees, or the permitted Main Tax Deduction Tables for a smaller payer. The table depends on the employee's tax status declaration (form FS4) and the length of the pay period. A year-end adjustment in the final pay period applies the article 56(1)(a) or (b) rates.
 - The employer gives the employee the Payee Statement of Earnings (commonly FS3) by **31 January** of the following year, or within seven days if the employment ends. The employer files its annual reconciliation statement by **15 February** (rules 21 and 22).
 - **No return needed** (ITMA article 12) in either of these cases:
   - a resident individual whose income was **all** taxed at source under FSS and fully reported in the statements of earnings;
@@ -353,7 +353,7 @@ expected:
 - Shortfall: €5,000 − €1,200 = €3,800, unless the person proves that tax on their worldwide income would be lower.
 
 **Case 8: late return and late payment.**
-- Filing: the return for year of assessment 2026 is filed eight months after 30 June 2026. Additional tax is €50 (later than 6 but within 12 months).
+- Filing: the return for year of assessment 2026 is filed eight months after the extended 31 July 2026 deadline. Additional tax is €50 (later than 6 but within 12 months).
 - Payment: if €2,000 of tax is paid five months late, interest is €2,000 × 0.6% × 5 = €60, capped at the tax.
 
 ## When to refuse or refer
@@ -365,16 +365,19 @@ expected:
 - Refer property transfers involving projects, companies, trusts, special designated areas, intra-group transfers or share transfers.
 - Refer companies, partnerships and group structures.
 - Refer arrears, enquiries, assessments and objections, and any omission already under enquiry.
-- Refer the €10,270 table where the €5 difference matters, until MTCA confirms it. ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
+- Hold final calculations for the parent-one-child 35% branch: Act €10,270 versus MTCA €10,275 remains unresolved. ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
 - Refer any question that turns on an MTCA notice you cannot see, such as an online-filing extension.
 
 ## Filing and payment ([Income Tax (Statutory Dates) Rules, S.L. 372.16](https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2))
+
+
+**Year-specific override, read 4 November 2026:** MTCA extended both manual and electronic individual returns for year of assessment 2026 (basis 2025), and the related tax payment, to **31 July 2026**. Use that actual date for late charges, not the general 30 June date. The statutory date for basis 2026 / assessment 2027 remains **30 June 2027** unless a later notice changes it. [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline).
 
 | Item | Date or rule | Source |
 | --- | --- | --- |
 | Individual return and self-assessment | 30 June of the year of assessment (30 June 2027 for 2026 income) | S.L. 372.16 rule 2(c)(ii) |
 | Balance of tax (tax settlement date) | Same date as the return | S.L. 372.16 rule 5(b) |
-| 2025 income (year of assessment 2026) | Was due 30 June 2026. MTCA usually announces a later date for online filing; check the notice on mtca.gov.mt | S.L. 372.16 |
+| 2025 income (year of assessment 2026) | Filing and related payment extended to **31 July 2026**, both manual and electronic, by the MTCA 3 June 2026 notice | S.L. 372.16 |
 | Article 12 election (no return) | 30 April of the year of assessment | S.L. 372.16 rule 4(b) |
 | Part-time self-employed tax | 30 April after the basis year | ITMA art. 42(4)(a) |
 | 15% rental tax | 30 April after the basis year | ITMA art. 42(4)(c) |
@@ -397,3 +400,25 @@ Late-return additional tax can be remitted for a reasonable excuse. Insufficient
 - Dates are checked: 30 April items, the 30 June return, and the 31 August and 21 December instalments. Any MTCA extension is confirmed on mtca.gov.mt.
 - Interest and additional tax are computed for anything late.
 - The output is labelled as an estimate until reviewed.
+
+## Sources
+
+Earlier section citations and research are preserved in the full evidence archive; the dated rows below identify this correction's actual reads.
+
+
+### Correction source reads, 4 November 2026
+
+Only the identified passages were read for this delta; historical source rows keep their prior dates and are not a blanket re-verification.
+
+| Source and passage actually read | URL | Read on |
+|---|---|---|
+| Cap123: status/rate/minimum and expense framework | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-04 |
+| MTCA parent-rate discrepancy: amended2026table read, not a resolved legal choice | https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5 | 2026-11-04 |
+| MTCA actual YA2026 filing AND payment extension | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
+| S.L.372.18 benchmark fallback: rules2,6,7 read | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-04 |
+| S.L.372.16 future statutory date | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-04 |
+| MTCA part-time cap and excess read | https://mtca.gov.mt/personal-tax/individual/faqs/faqs1 | 2026-11-04 |
+
+Correction ledger and complete old-topic destinations: [personal-malta-income-tax](../../evidence/malta-deep-audit-20261104/ledgers/personal-malta-income-tax.md). Full original research is archived there; this correction is not professional attestation.
+
+Not yet confirmed: unresolved branches explicitly marked HOLD or check in this Guide; see the correction ledger and personal audit for the exact remaining scope. No whole-pack professional review is claimed.

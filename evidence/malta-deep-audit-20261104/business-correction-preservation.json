@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "malta-financial-statements",
+    "sha256": "5a992c3854f51fe00c15710355ae989a554c59241ccd0b3f53197cc3ab7002b3",
+    "old_blocks_preserved": true,
+    "old_block_count": 0,
+    "new_block_count": 2,
+    "old_heading_count": 20,
+    "new_heading_count": 22
+  },
+  {
+    "slug": "malta-bookkeeping",
+    "sha256": "ace7805525900f6860805f7ba6801a3997e725326769a63609bc9841a52a91c2",
+    "old_blocks_preserved": true,
+    "old_block_count": 2,
+    "new_block_count": 2,
+    "old_heading_count": 26,
+    "new_heading_count": 27
+  },
+  {
+    "slug": "malta-tax-optimization",
+    "sha256": "268c4992982399952045439adbcc67d8c2a3ccba520b477f9e43ff8f4b16bd7c",
+    "old_blocks_preserved": true,
+    "old_block_count": 2,
+    "new_block_count": 2,
+    "old_heading_count": 26,
+    "new_heading_count": 27
+  },
+  {
+    "slug": "mt-corporate-tax",
+    "sha256": "c15a486b4e1301c8bcec369fa775104b04c22dc6eb36e02fe269a9e523a8cd82",
+    "old_blocks_preserved": true,
+    "old_block_count": 2,
+    "new_block_count": 2,
+    "old_heading_count": 13,
+    "new_heading_count": 14
+  },
+  {
+    "slug": "malta-transfer-pricing",
+    "sha256": "103370ba81a6dbd79e51da5eb45ef2c6c4345a435a31f29faccadcc0b7a0cad4",
+    "old_blocks_preserved": true,
+    "old_block_count": 2,
+    "new_block_count": 2,
+    "old_heading_count": 28,
+    "new_heading_count": 29
+  },
+  {
+    "slug": "mt-holding-company-participation-exemption",
+    "sha256": "6ea4ce28a5250051f2564929b7e01d3d57ae8e9bfeae16a2750b618b833f084d",
+    "old_blocks_preserved": true,
+    "old_block_count": 0,
+    "new_block_count": 2,
+    "old_heading_count": 15,
+    "new_heading_count": 17
+  },
+  {
+    "slug": "mt-foundations-and-trusts",
+    "sha256": "ef8ab3593e0fc7208fb85b7adc71ff82e2e2c3b8bebf4c3cc72bc3395b2c0ede",
+    "old_blocks_preserved": true,
+    "old_block_count": 0,
+    "new_block_count": 2,
+    "old_heading_count": 18,
+    "new_heading_count": 20
+  },
+  {
+    "slug": "mt-family-office-setup",
+    "sha256": "1b2a24c91716e3738a316a80eb1950154d71f82b03fa4606afdf6718948854fd",
+    "old_blocks_preserved": true,
+    "old_block_count": 0,
+    "new_block_count": 2,
+    "old_heading_count": 14,
+    "new_heading_count": 16
+  },
+  {
+    "slug": "mt-company-residence-and-substance",
+    "sha256": "134d939634134bd0467fc65131e488cb8c0737e48cd239498a152026af385780",
+    "old_blocks_preserved": true,
+    "old_block_count": 0,
+    "new_block_count": 2,
+    "old_heading_count": 13,
+    "new_heading_count": 15
+  },
+  {
+    "slug": "malta-formation",
+    "sha256": "92380ed9ed4a4ce29518848ea89557acb3801809e5033c4077ca1383e3bd3a45",
+    "old_blocks_preserved": true,
+    "old_block_count": 2,
+    "new_block_count": 2,
+    "old_heading_count": 24,
+    "new_heading_count": 25
+  },
+  {
+    "slug": "selling-a-company-in-malta",
+    "sha256": "2c86b483992bbe4ed44a95a505965f0f576dc37bb8d0769d95392657629e1d48",
+    "old_blocks_preserved": true,
+    "old_block_count": 0,
+    "new_block_count": 2,
+    "old_heading_count": 16,
+    "new_heading_count": 20
+  }
+]

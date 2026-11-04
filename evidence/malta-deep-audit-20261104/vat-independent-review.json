@@ -1,0 +1,80 @@
+{
+  "reviewer": "/root/malta_audit_property_residence",
+  "writer": "root",
+  "read_date": "2026-11-04",
+  "base": "ab692cc2ef1c6306de9435b63448294d30fc4052",
+  "result": "PASS_FOR_BOUNDED_CORRECTIONS",
+  "files": [
+    {
+      "path": "skills/malta/malta-vat-return.md",
+      "sha256": "4200092b75ef40b1ee816a2dd0892b317a168b758a70f80a03a805fa253d0a7a",
+      "old_heading_count": 22,
+      "missing_old_headings": [],
+      "oa_checks": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-vat3-quarterly-return-malta.md",
+      "sha256": "5e57eaf8fb736042f79a691583ac3c4497b8c8ee5fdb635a0bac821219c8d1e1",
+      "old_heading_count": 22,
+      "missing_old_headings": [],
+      "oa_checks": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-reverse-charge-acquisition-intra.md",
+      "sha256": "1ad2d4ad3dd0a847c19f83e4e5f3d21abcee58f072c866f51a38efd918f323ab",
+      "old_heading_count": 8,
+      "missing_old_headings": [],
+      "oa_checks": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-reverse-charge-vat-services-received-from.md",
+      "sha256": "3e1b71e2983d0214a11d2428e3cfdf8f912db977e185bfc9f29d0a8aa2861a38",
+      "old_heading_count": 18,
+      "missing_old_headings": [],
+      "oa_checks": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    }
+  ],
+  "ledger_rows": {
+    "V1": "PASS within actual per-file applicability",
+    "V2": "PASS within actual per-file applicability",
+    "V3": "PASS within actual per-file applicability",
+    "V4": "PASS within actual per-file applicability",
+    "V5": "PASS within actual per-file applicability",
+    "V6": "PASS within actual per-file applicability",
+    "V7": "PASS within actual per-file applicability",
+    "V8": "PASS within actual per-file applicability",
+    "V9": "PASS within actual per-file applicability",
+    "V10": "PASS within actual per-file applicability",
+    "V11": "PASS within actual per-file applicability"
+  },
+  "findings": [
+    {
+      "id": "VAT-R1",
+      "severity": "editorial",
+      "description": "Missing pipe delimiters in added source columns",
+      "status": "CLOSED by writer; corrected table structure inspected"
+    }
+  ],
+  "limitations": [
+    "Not an accountant attestation or whole VAT-pack certification.",
+    "Authenticated portal declarations and invoice timing disputes remain held.",
+    "Unrecovered wrongly charged foreign VAT consideration remains unresolved as disclosed.",
+    "Original legal topics and prose examples retained; four old heading inventories checked.",
+    "2025 act browser ref timed out; cached official historical PDF/text independently inspected."
+  ],
+  "focused_closures": [
+    {
+      "date": "2026-11-04",
+      "path": "skills/malta/mt-reverse-charge-acquisition-intra.md",
+      "reason": "Strict YAML rejected unquoted description containing a colon; writer JSON-quoted the same string.",
+      "previous_accepted_sha256": "6777e006930f7d907832cf0e63650b7531423548be21f3d893be90ca4a5ffc65",
+      "accepted_sha256": "1ad2d4ad3dd0a847c19f83e4e5f3d21abcee58f072c866f51a38efd918f323ab",
+      "verification": "Decoded the new JSON-quoted description, reconstructed the previous unquoted line and reproduced the exact previous accepted whole-file SHA256. Body, dates, rules and examples unchanged.",
+      "status": "PASS"
+    }
+  ]
+}

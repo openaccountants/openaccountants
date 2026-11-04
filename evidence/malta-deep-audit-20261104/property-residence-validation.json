@@ -1,0 +1,59 @@
+[
+  {
+    "guide": "how-to-account-for-rental-income-in-malta",
+    "required_errors": [],
+    "remaining_warnings": [
+      "(c) rates_rows_sourced   FAIL no rates table",
+      "(d) canonical_headings   FAIL reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+    ]
+  },
+  {
+    "guide": "how-to-submit-capital-gain-taxes-in-malta",
+    "required_errors": [],
+    "remaining_warnings": [
+      "(c) rates_rows_sourced   FAIL no rates table",
+      "(d) canonical_headings   FAIL reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+    ]
+  },
+  {
+    "guide": "mt-capital-gains",
+    "required_errors": [],
+    "remaining_warnings": [
+      "(c) rates_rows_sourced   FAIL 24 of 24 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)",
+      "(d) canonical_headings   FAIL method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+    ]
+  },
+  {
+    "guide": "mt-rental-income",
+    "required_errors": [],
+    "remaining_warnings": [
+      "(c) rates_rows_sourced   FAIL 18 of 18 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)",
+      "(d) canonical_headings   FAIL reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first",
+      "(k) read_date_evidence   FAIL 9 source rows all dated 2026-10-23, most not saying what was read"
+    ]
+  },
+  {
+    "guide": "mt-property-transfer-tax-the-sale-immovable",
+    "required_errors": [],
+    "remaining_warnings": [
+      "(c) rates_rows_sourced   FAIL 22 of 28 amount table row(s) without a URL or an unverified mark (21.4% linked, 0% unverified)",
+      "(d) canonical_headings   FAIL method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant; method set: headings out of order"
+    ]
+  },
+  {
+    "guide": "mt-global-residence-programme",
+    "required_errors": [],
+    "remaining_warnings": [
+      "(c) rates_rows_sourced   FAIL 34 of 37 amount table row(s) without a URL or an unverified mark (8.1% linked, 0% unverified)",
+      "(d) canonical_headings   FAIL method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant; method set: headings out of order"
+    ]
+  },
+  {
+    "guide": "mt-residence-programmes-for-wealthy-families",
+    "required_errors": [],
+    "remaining_warnings": [
+      "(c) rates_rows_sourced   FAIL 39 of 50 amount table row(s) without a URL or an unverified mark (22% linked, 0% unverified)",
+      "(d) canonical_headings   FAIL method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant; method set: headings out of order"
+    ]
+  }
+]

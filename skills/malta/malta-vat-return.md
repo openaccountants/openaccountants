@@ -1,10 +1,10 @@
 ---
 name: malta-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Malta VAT return (Article 10 periodic return via CFR) or Article 11 annual declaration for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "periodic VAT return", "CFR VAT", "create the return", "Article 11 declaration", or any request involving Malta VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Malta only and only Article 10 (standard) and Article 11 (small enterprise) registrations. Article 12, partial exemption, capital goods scheme adjustments, margin schemes, and VAT groups are all in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Malta VAT work.
-version: 2.0
+description: "Malta VAT return preparation and review for Article 10, Article 11 declarations and distinct Article 12 goods-acquisition and reverse-charge service obligations. Check registration, place of supply, taxability, rates, deduction, actual filing dates and records. Specialist schemes and unsupported portal details remain outside the filing-ready scope."
+version: 2.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
@@ -15,7 +15,7 @@ tier: 2
 
 This skill covers preparing and checking Maltese VAT filings for a business established in Malta: the Article 10 periodic return, the Article 11 small-enterprise declaration and the Article 12 obligations. It covers registration type, rates, input VAT, cross-border reverse charge, recapitulative statements, the One Stop Shop (OSS), penalties, interest and records.
 
-Figures are for tax year 2026. The law is the VAT Act, Chapter 406 of the Laws of Malta, as consolidated on 27 March 2026 (amendments up to Act III of 2026 and Legal Notice 75 of 2026), plus its subsidiary legislation. VAT in Malta is charged per transaction and per tax period, so "tax year 2026" means periods falling in calendar 2026. A short section near the end covers 2025 periods still being filed.
+Figures are for tax year 2026. The law is the VAT Act, Chapter 406 of the Laws of Malta, in the consolidated text fetched on 4 November 2026 (the PDF lists amendments through Act III of 2026 and Legal Notice 75 of 2026), plus its subsidiary legislation. VAT in Malta is charged per transaction and per tax period, so "tax year 2026" means periods falling in calendar 2026. A short section near the end covers 2025 periods still being filed.
 
 The authority is the Malta Tax and Customs Administration (MTCA); the Act calls the office-holder the Commissioner for Tax and Customs. Returns, registrations and statements go through MTCA's online services. This skill does not reproduce the box numbers of the return form. Take them from the live form on the MTCA site, and check MTCA's published filing calendar against the statutory dates below.
 
@@ -30,7 +30,7 @@ Main sources, all on legislation.mt:
 ## Ask the client first
 
 - Which article are you registered under: 10, 11, 11A or 12, or more than one? Send the registration certificate. It states the article, the effective date and the registration number. An MT prefix means Article 10 or 12. An Article 11 number has no MT prefix and is not a VAT identification number.
-- What are the start and end dates of your tax period? Do not assume calendar quarters. The Commissioner sets your first period, and each later period runs three months from the end of the one before.
+- What are the start and end dates of your tax period? Do not assume calendar quarters. The Commissioner sets or varies the period; use the actual period on the account, including any monthly or other special allocation (art. 17).
 - What was your turnover, excluding VAT, in calendar 2025, and so far in 2026? If you are a company, does anyone who owns or controls more than 10% of you also trade? ([Act, Sixth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
 - What do you sell, and to whom? Split sales into: Malta sales by rate, exempt sales, exports outside the EU, EU business customers (goods or services), and EU consumers.
 - Do you buy goods or services from suppliers outside Malta, and do their invoices show foreign VAT, Maltese VAT or no VAT?
@@ -46,7 +46,7 @@ Main sources, all on legislation.mt:
 1. Confirm the registration type from the certificate before anything else ([Act, arts 10-13](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). Article 10 files periodic returns and recovers input VAT. Article 11 charges no VAT, recovers none and files a declaration. Article 12 only pays VAT on its EU acquisitions and reverse-charge services. If you prepare the wrong filing, every later step is wrong.
 2. Fix the period from the certificate or the MTCA account (art. 17). Sort every invoice by the date VAT became chargeable, not by bank date.
 3. Split sales into ([Act, Eighth and Fifth Schedules](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)): taxable at 18%, 12%, 7% or 5%; exempt with credit (exports, intra-EU goods to a valid VAT number, food, medicines, international passenger transport); exempt without credit; and outside the scope (for example B2B services supplied to a customer established abroad). Use the rate table below.
-4. For each foreign purchase, decide whether the supplier charged VAT. No VAT and the supplier is not established in Malta: you, as an Article 10 person, owe the Maltese VAT under art. 20(2) and put it in both output and input tax. Foreign VAT charged: that is not Maltese input tax; do not put it on the return.
+4. Classify each foreign purchase before calculating VAT. Determine goods acquisition, import or service; its place of supply; whether it is taxable; the supplier's establishment and Article 10 status; and the customer-liability condition in art. 20. For a taxable general-rule B2B service supplied in Malta by a supplier not established here and not registered under Article 10, art. 20(2)(b) makes the Malta recipient liable. An Article 10 recipient declares output tax and claims only the deduction legally allowed. A hotel abroad or an exempt service does not become Malta reverse charge merely because its invoice has no VAT. Foreign VAT is not Maltese input tax; if charged incorrectly it does not remove the separate Maltese liability. Obtain a corrected invoice and resolve valuation before filing ([Act, arts 2, 19-22 and Third Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)).
 5. Remove blocked input VAT (Tenth Schedule item 3), then apportion anything partly private (item 4). If you also make exempt-without-credit supplies, stop and refer (partial exemption).
 6. Flag capital goods ([S.L. 406.12](https://legislation.mt/getpdf/60225988bc8272018c0f72fb)): equipment, tools or office furniture at €1,160 or more, and all immovable property. Record the date of first use, because later changes of use are adjusted over 5 or 20 years.
 7. Net output against input tax, deduct any excess credit brought forward that has not been refunded or set off (art. 21(1)), and read the balance: payable, or an excess credit to carry forward or claim.
@@ -69,23 +69,23 @@ Turnover for Article 11 excludes VAT and disposals of capital assets. For a comp
 
 Before 2025, Article 11 used two activity-based thresholds, tested on a rolling twelve months. They no longer apply. Use them only to understand pre-2025 files.
 
-| Category (pre-2025) | Entry threshold | Exit threshold |
-| --- | --- | --- |
-| Economic activities consisting principally in the supply of goods | €35,000 | €28,000 |
-| Other economic activities | €30,000 | €24,000 |
+| Category (pre-2025) | Entry threshold | Exit threshold | Official URL |
+| --- | --- | --- | --- |
+| Economic activities consisting principally in the supply of goods | €35,000 | €28,000 | https://legislation.mt/getpdf/67691cdeb52f1d38d8a4103f |
+| Other economic activities | €30,000 | €24,000 | https://legislation.mt/getpdf/67691cdeb52f1d38d8a4103f |
 
 From 2025 there is one domestic threshold of €35,000 for all activities, measured on the preceding calendar year, with a Union threshold of €100,000 for the cross-border schemes. The current text, after Act IX of 2025 and Act III of 2026, still states €35,000.
 
 ## Rates for 2026 ([Act, art. 19, Eighth Schedule and Fifth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
 
-| Rate | What it covers (summary of the statutory items) |
-| --- | --- |
-| 18% | Every taxable supply not listed below, and imports (art. 19(1) and (4)) |
-| 12% | Custody and management of securities; management of credit and credit guarantees by someone other than the person who granted the credit; hire of a pleasure boat for a term that, with earlier hires to the same person in the previous twelve months, does not exceed five weeks; care of the human body by a profession regulated by the Health Care Professions Act, including health studios, other than exempt medical care |
-| 7% | Accommodation in premises that must be licensed under the Malta Travel and Tourism Services Act; use of sporting facilities |
-| 5% | Electricity; listed confectionery and similar goods by CN code; listed medical accessories; printed matter, including books and audio books on physical media or supplied electronically (not publications mainly advertising, video or music); listed items for the exclusive use of disabled persons; imports of works of art, collectors' items and antiques; minor repairs of bicycles, shoes and leather goods, clothing and household linen; domestic care services; admission to museums, art exhibitions, concerts and theatres |
-| Exempt with credit (zero-rated) | Exports; intra-EU goods to a customer with a valid and active VAT number of another Member State; food for human consumption, excluding catering; pharmaceutical goods; international passenger transport; scheduled bus services; listed sea vessel and aircraft supplies |
-| Exempt without credit | Most lettings of immovable property; transfers of immovable property; insurance; most credit, banking and securities dealing; medical care; education; public postal services; supplies by Article 11, 11A and 11B persons |
+| Rate | What it covers (summary of the statutory items) | Official URL |
+| --- | --- | --- |
+| 18% | Every taxable supply not listed below, and imports (art. 19(1) and (4)) | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| 12% | Custody and management of securities; management of credit and credit guarantees by someone other than the person who granted the credit; hire of a pleasure boat for a term that, with earlier hires to the same person in the previous twelve months, does not exceed five weeks; care of the human body by a profession regulated by the Health Care Professions Act, including health studios, other than exempt medical care | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| 7% | Accommodation in premises that must be licensed under the Malta Travel and Tourism Services Act; use of sporting facilities | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| 5% | Electricity; listed confectionery and similar goods by CN code; listed medical accessories; printed matter, including books and audio books on physical media or supplied electronically (not publications mainly advertising, video or music); listed items for the exclusive use of disabled persons; imports of works of art, collectors' items and antiques; minor repairs of bicycles, shoes and leather goods, clothing and household linen; domestic care services; admission to museums, art exhibitions, concerts and theatres | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| Exempt with credit (zero-rated) | Exports; intra-EU goods to a customer with a valid and active VAT number of another Member State; food for human consumption, excluding catering; pharmaceutical goods; international passenger transport; scheduled bus services; listed sea vessel and aircraft supplies | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| Exempt without credit | Most lettings of immovable property; transfers of immovable property; insurance; most credit, banking and securities dealing; medical care; education; public postal services; supplies by Article 11, 11A and 11B persons | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
 
 Accommodation priced with other goods or services: 80% of the price is treated as accommodation and 20% as the other supplies. The goods lists at 5% are by CN code, so check the code, not the product name.
 
@@ -122,7 +122,7 @@ Excess credit ([Act, art. 24](https://legislation.mt/getpdf/6a7d667d73ff6d305c83
 - Article 10 customer: declare the VAT as output tax and deduct it as input tax on the same return, subject to the blocks above. For a fully taxable business the net is nil.
 - Article 12 customer (including an Article 11 person that registered under Article 12): pays the VAT by the 15th of the second month after the invoice date or the month of receipt, whichever is earlier (art. 21(3)), with a notice of payment (art. 30A). No deduction.
 - Goods bought from another Member State by an Article 10 person are an intra-EU acquisition, taxed at the rate for the same goods in Malta. Declare and deduct as above.
-- A foreign supplier that charged its own VAT has not used the reverse charge. That VAT is not Maltese input tax. Any recovery goes through that State's refund procedure.
+- Foreign VAT is not Maltese input tax. If charged incorrectly on a service whose place of supply is Malta and whose customer is liable under art. 20(2), request correction and still account for Maltese VAT. Legitimate foreign VAT, such as VAT on accommodation abroad, follows the foreign recovery rules; do not treat an incorrectly charged amount as automatically eligible for a foreign refund.
 
 ### Sales to other EU countries
 
@@ -209,7 +209,8 @@ Hypothetical figures, for tax year 2026 periods.
 | Last return after Article 10 cancellation | Within thirty days of the cancellation notice | As above |
 | Article 11 declaration | Calendar-year declaration by 15 February of the next year (15th of the second month after the period ends); a shorter period may be chosen. Filed electronically within seven days after the due date, no late penalty is due (art. 42(1)(d)) | €10 a month or part month, maximum €120 per declaration |
 | Article 11A declaration | Last day of the month after each quarter | As for Article 11 |
-| Article 12 VAT and notice of payment | 15th of the second month after the invoice date or month of receipt, whichever is earlier | 20% of understated or assessed tax; late notice €10 a month, maximum €120 |
+| Article 12 taxable intra-Community goods acquisition and notice of payment | 15th of the month after VAT becomes chargeable (arts 20(1)(b), 21(2), 30A; Fourth Schedule items 5-6). Determine chargeability separately from arrival/payment | 20% of understated or assessed tax; late declaration €10 a month, maximum €120 |
+| Article 12 customer-liable service/supply under art. 20(2) and notice of payment | 15th of the second month following the invoice date or month of receipt, whichever is earlier (art. 21(3)) | 20% of understated or assessed tax; late declaration €10 a month, maximum €120 |
 | Recapitulative statement | See the table in the cross-border section | €50 a month or part month, maximum €600 per statement |
 | Registration under Article 10 | Within thirty days of the first supply | The higher of 1% of the first period's net tax and €20 a month; capped at €250 if that net tax is €2,000 or less, otherwise at 20% of it |
 | Registration under Article 12 | By the date of the acquisition or service | The higher of 1% of the VAT on those transactions and €20 a month; the same €250 or 20% caps around €2,000 |
@@ -217,6 +218,8 @@ Hypothetical figures, for tax year 2026 periods.
 | Article 11 cancellation | Within fifteen days of ceasing to qualify | The higher of 10% of the first period's net tax and €100 a month, maximum €500 |
 
 No administrative penalty is due where there is a reasonable excuse. Lack of funds, or relying on someone else, is not a reasonable excuse. The Commissioner may remit part of a penalty or, for a genuine mistake, all of it (art. 42).
+
+**Calendar adjustment:** under [art. 73(5)](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20), a statutory filing or payment date falling on a Saturday, Sunday, national day or public holiday moves to the first following working day other than Saturday. Apply this before calculating lateness. The [MTCA registration FAQ updated 20 February 2026](https://mtca.gov.mt/docs/default-source/documents/registrations-and-de-registrations-faqs.pdf?sfvrsn=908511fc_1) additionally describes an Article 11 electronic-declaration penalty concession through 22 March; this is administrative guidance, distinct from the statutory 15 February baseline and seven-day rule. Check its application to the actual declaration year before relying on it.
 
 ### Interest ([S.L. 406.19](https://legislation.mt/getpdf/632835ddda6f862638d03ac1))
 
@@ -233,7 +236,7 @@ Unpaid VAT carries interest of 0.6% for each month or part month from the due da
 
 ## Returns being filed now for 2025
 
-The version of the Act in force from 1 January 2025 ([Act as at 1 January 2025](https://legislation.mt/getpdf/6811d40a495e132a18426aea)) already had the €35,000 domestic threshold, the €100,000 Union threshold, the 12-month bar on switching from Article 10, and the Article 11 declaration date (15th of the second month after the period ends). So the calendar-2025 Article 11 declaration was due by 15 February 2026. Late 2025 returns carry the penalties and the 0.6% interest shown above. Use the pre-2025 thresholds only for periods up to 31 December 2024; they were tested on a rolling twelve months, not a calendar year.
+The version of the Act in force from 1 January 2025 ([Act as at 1 January 2025](https://legislation.mt/getpdf/6811d40a495e132a18426aea)) already had the €35,000 domestic threshold, the €100,000 Union threshold, the 12-month bar on switching from Article 10, and the Article 11 declaration date (15th of the second month after the period ends). So the calendar-2025 Article 11 declaration had a statutory baseline of 15 February 2026, shifted to 16 February 2026 because the 15th was Sunday (art. 73(5)); separately distinguish the administrative concession described above. Late 2025 returns carry the penalties and the 0.6% interest shown above. Use the pre-2025 thresholds only for periods up to 31 December 2024; they were tested on a rolling twelve months, not a calendar year.
 
 ## Completion checklist
 
@@ -251,3 +254,53 @@ The version of the Act in force from 1 January 2025 ([Act as at 1 January 2025](
 - Recapitulative statement and OSS return filed where required.
 - Credit notes and price reductions deducted in the period they occur; foreign-currency amounts converted at the Maltese bank selling rate or the ECB rate when the tax became chargeable.
 - VAT account and supporting documents kept for at least six years (capital goods: six years from the end of the adjustment period, plus the capital goods list).
+
+
+## Two worked examples that recompute
+
+For these hypothetical transactions, registration, place of supply, chargeable period and rate eligibility have been established under the [VAT Act, arts 19-23 and Tenth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20). Case A has only deductible domestic purchases. Case B has a taxable general-rule foreign service supplied in Malta; the recipient is Article 11/12 and has no input credit. They do not validate portal boxes or specialist classifications.
+
+```oa-check
+name: Article 10 domestic taxable return with fully deductible purchases
+inputs:
+  sales: 10000
+  purchases: 2000
+  vat_rate: 0.18
+steps:
+  - output_tax: sales * vat_rate
+  - input_credit: purchases * vat_rate
+  - payable: output_tax - input_credit
+expected:
+  output_tax: 1800
+  input_credit: 360
+  payable: 1440
+```
+
+```oa-check
+name: Article 11 and 12 recipient pays service reverse charge without credit
+inputs:
+  service_fee: 1000
+  vat_rate: 0.18
+steps:
+  - output_tax: service_fee * vat_rate
+  - input_credit: 0
+  - payable: output_tax - input_credit
+expected:
+  output_tax: 180
+  input_credit: 0
+  payable: 180
+```
+
+## Sources
+
+| Source and scope actually read | Official URL | Read on |
+|---|---|---|
+| VAT Act, Cap. 406: registration, liability, rates, deductions, filing, penalties, records, calendar shift, SME/OSS and relevant schedules cited above | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 | 2026-11-04 |
+| Recapitulative statement regulations, read for reg. 3 monthly/quarterly periods, EUR 50,000 boundary and due date | https://legislation.mt/eli/sl/406.14/eng/pdf | 2026-11-04 |
+| Capital goods regulations, read for definition, EUR 1,160 exclusion, 5/20-year adjustment and retention | https://legislation.mt/eli/sl/406.12/eng/pdf | 2026-11-04 |
+| VAT interest regulation, read for current and pre-September-2022 balance rates | https://legislation.mt/eli/sl/406.19/eng/pdf | 2026-11-04 |
+| MTCA registration FAQs, updated 20 February 2026: registration conditions and stated administrative declaration concession | https://mtca.gov.mt/docs/default-source/documents/registrations-and-de-registrations-faqs.pdf?sfvrsn=908511fc_1 | 2026-11-04 |
+| MTCA VAT return cycle: online access, authorisation forms and payment channels | https://mtca.gov.mt/personal-tax/self-employed/vat-return-cycle | 2026-11-04 |
+| MTCA VAT rates, read for current headline rate summary | https://mtca.gov.mt/business-tax/vat1/vat-compliance/vat-rates/vat-rates | 2026-11-04 |
+
+Not yet confirmed: authenticated portal box/field mapping and current submission screens; product-specific CN classification; special schemes referred above; the administrative Article 11 concession's application to each future declaration year; treatment of an unrecovered incorrectly charged foreign VAT amount in the consideration; the disclosed late-penalty monthly-wording interpretation. This audit does not certify every later Gazette amendment or every transaction's eligibility.

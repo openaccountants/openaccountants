@@ -1,14 +1,17 @@
 ---
 name: mt-foundations-and-trusts
 description: "Malta foundations and trusts for family wealth, in depth: what a Maltese trust and foundation are (Cap. 331 and the Civil Code Second Schedule), the tax routes (trust default allocation, the article 27D(1) company election, foundation company treatment or trust election, and the final tax without imputation with its lock-in and floor), how beneficiaries are taxed, foundation confidentiality and the trust beneficial owner register, duty on transfers in and out, and when a Malta vehicle does not help. Trigger on: Malta foundation tax, Malta trust tax, private foundation Malta, 27D election, family trust Malta."
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
 # Malta foundations and trusts for family wealth: how they are taxed
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/mt-foundations-and-trusts.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Figures are for tax year 2026. Malta taxes by year of assessment: tax is charged on income "accruing or deriving in the year immediately preceding the year of assessment" ([Income Tax Act, Cap. 123, article 27B](https://legislation.mt/eli/cap/123/eng/pdf)), so 2026 income is taxed in year of assessment 2027. This Guide goes deep on Malta: what a Maltese foundation and a Maltese trust are, the tax options for each, how beneficiaries are taxed, the registers and confidentiality, duty when assets go in and come out, and when neither vehicle helps. It is a working paper for a qualified adviser, not advice.
 
@@ -58,7 +61,7 @@ These rules are in [Cap. 123, articles 27B to 27D](https://legislation.mt/eli/ca
 
 - **Scope.** Tax is payable on income attributable to a trust where at least one of the trustees is a person resident in Malta (article 27B(1)). The trustee answers for the tax, and two or more trustees are jointly and severally answerable (article 27C).
 - **Option 1, transparent by allocation (the default).** Where no election under article 27D(1) and no determination under article 27D(2) has been made, the trust's chargeable income is computed "as if the trust was a person that is ordinarily resident and domiciled in Malta", but amounts allocated to beneficiaries are excluded (article 27D(3)(e)). Allocated amounts are amounts in which beneficiaries had a vested right in the income year, amounts to which they were given an entitlement by the end of that year, and other income of the year distributed to them by the end of that year (article 27D(4)(a)). The exclusion holds only if the trustee files the trust return under article 24A of Cap. 372 AND gives each beneficiary a certificate of the amounts (article 27D(4)(b)(i) and (ii)). If vested or entitled amounts are not paid out by 31 March after the income year, the exclusion also needs a payment of tax on the beneficiaries' behalf at the article 56(6) rate. The trustee owes that tax by 30 June after the income year, and the beneficiary takes it as a credit or refund (article 27D(4)(b)(iii)). Income kept in the trust and not allocated is taxed in the trust at the article 56(6) rate (article 27D(5)).
-- **Look-through for foreign income and foreign beneficiaries.** Under the default route, where ALL the trust's income arises outside Malta or is income under article 12(1)(c), AND ALL the beneficiaries are not ordinarily resident in Malta, or not domiciled in Malta, or fully exempt under article 12, the income is treated as derived directly by the beneficiaries and not by the trust. The trustee must tell each beneficiary (article 27D(3)(b)). A second look-through applies where the income is only such income or certain foreign income account dividends, all beneficiaries are not resident in Malta, and the trustee gives the Commissioner the certificate under article 5(3) of Cap. 372 (article 27D(3)(c)). One beneficiary who is ordinarily resident and domiciled in Malta is enough to shut the article 27D(3)(b) route.
+- **Look-through for foreign income and foreign beneficiaries.** Under the default route, where ALL the trust's income arises outside Malta or is income under article 12(1)(c), AND ALL the beneficiaries are not ordinarily resident in Malta, or not domiciled in Malta, or fully exempt under article 12, the income is treated as derived directly by the beneficiaries and not by the trust. The trustee must tell each beneficiary (article 27D(3)(b)). A second look-through applies where the income is only such income or the dividends covered by article 27D(3)(c), whose final proviso also includes dividends from any taxed account, all beneficiaries are not resident in Malta, and the trustee gives the Commissioner the certificate under article 5(3) of Cap. 372 (article 27D(3)(c)). A beneficiary who is ordinarily resident and domiciled in Malta and is not wholly exempt under article 12 fails that beneficiary limb; the income-source conditions must also be met.
 - **Option 2, taxed as a company (article 27D(1)).** A resident trustee authorised under article 43(3) of Cap. 331, or not needing authorisation under article 43(6), may elect to have the trust's income computed "as if such income was derived by a company ordinarily resident and domiciled in Malta", taxed at the article 56(6) rate. The election is open only where a written trust instrument limits the trust's income to "royalties, dividends, capital gains, interest, rents or any other income from investments". The election is irrevocable. It takes effect on the date the trust is established or the resident trustee is appointed, whichever is later, and the form must reach the Commissioner within the deadline in the table below, counted from that later date. Distributions of allocated profits are then "treated as if they were dividends distributed to shareholders of such a company" (article 27D(1)(c)).
 - **Option 3, the final tax on top of option 2.** A trust that applies article 27D(1) is an "entity" under [S.L. 123.217, regulation 2](https://legislation.mt/eli/sl/123.217/eng/pdf) and may choose the final tax described in "The final tax option". A trust on the default route cannot.
 - **Temporary trusts held by licensed banks or financial institutions** can apply for a determination under article 27D(2), with a flat charge at the article 56(6) rate and no deductions, relief or credit. That route is for commercial transactions, not family wealth.
@@ -127,7 +130,7 @@ Under the [Trusts and Trustees Act (Register of Beneficial Owners) Regulations, 
 
 - A trustee authorised or registered under article 43 or 43B of Cap. 331, or a private trustee under article 43A, must send the MFSA a declaration of beneficial ownership within fourteen days of being appointed as trustee of an express trust, for every such trust (regulation 3(1)).
 - A trustee "whose place of establishment or residence is outside the European Union" files the same declaration where, as trustee, it enters into a business relationship or acquires real estate in Malta, within fourteen days of that event (regulation 3A).
-- A change in beneficial ownership is notified within fourteen days after the trustee records it (regulation 5(1)).
+- A change in beneficial ownership is notified within fourteen days after the trustee records it (regulation 5(1)), subject to the specific class-beneficiary provisions. Regulation 3(3)(iii) gives three months from notification to the trustee for a child born or a marriage within the described family class; regulation 3(3)(vi) also requires information when a beneficiary is determined or appointed. Do not replace these specific triggers with a universal fourteen-day rule.
 - Every trustee who filed a declaration confirms each year, "by not later than 31st January of each year", that there were no changes in the previous calendar year other than notified changes (regulation 5(2)).
 
 ## Duty and capital gains when assets go in and come out
@@ -152,7 +155,7 @@ Duty is charged under the [Duty on Documents and Transfers Act, Cap. 364](https:
 
 ## Worked hypothetical
 
-Hypothetical facts, not a real client. A private interest foundation registered in Malta, with Malta-resident administrators, receives EUR 200,000 of dividends in 2026 from a foreign company. The holding is not a participating holding (see `mt-holding-company-participation-exemption`), no foreign tax is withheld, and there are no expenses. In 2026 the foundation distributes EUR 100,000 to one beneficiary who is ordinarily resident and domiciled in Malta and whose other chargeable income already exceeds the top-band threshold in the table under "Tax on a trust". Because a beneficiary is ordinarily resident and domiciled in Malta, the article 27D(3)(b) look-through is not available. Amounts are Malta tax only.
+Hypothetical facts, not a real client. A private interest foundation registered in Malta, with Malta-resident administrators, receives EUR 200,000 of dividends in 2026 from a foreign company. The holding is not a participating holding (see `mt-holding-company-participation-exemption`), no foreign tax is withheld, and there are no expenses. In 2026 the foundation distributes EUR 100,000 to one beneficiary who is ordinarily resident and domiciled in Malta and whose other chargeable income already exceeds the top-band threshold in the table under "Tax on a trust". The beneficiary is not wholly exempt under article 12, so the article 27D(3)(b) beneficiary condition fails and look-through is not available. Amounts are Malta tax only.
 
 **Route A: the default, foundation taxed as a company** (S.L. 123.114 regulation 3; the result is the same for a trust that elected under article 27D(1)).
 
@@ -215,7 +218,44 @@ The tax due is the higher of the final tax and the floor. If the six-sevenths re
 - Refuse to present a vehicle as confidential from tax authorities or registers: the Note of Initial Registration is public, trustees file beneficial owner declarations, and the Commissioner may disregard tax-driven trusts.
 - Refer trading foundations, segregated cell foundations, temporary trusts under article 27D(2), and transfers of Malta immovable property into or out of the vehicle.
 
-## Sources
+## Executable checks of the hypothetical foundation
+
+Route A assumes the default company treatment applies, no exemption or relief applies and no shareholder refund is included. Route B assumes a valid trust election, an allocation distributed in the income year, the required return and certificate, and a non-exempt beneficiary wholly in the 35% band. The conditional final-tax route remains held on its stated unresolved premises.
+
+```oa-check
+name: Default foundation company treatment without a shareholder refund
+inputs:
+  income: 200000
+  distribution: 100000
+steps:
+  - foundation_tax: income * 0.35
+  - after_tax_profit: income - foundation_tax
+  - remaining_after_distribution: after_tax_profit - distribution
+expected:
+  foundation_tax: 70000
+  after_tax_profit: 130000
+  remaining_after_distribution: 30000
+```
+
+```oa-check
+name: Trust-treatment allocation with a non-exempt top-band beneficiary
+inputs:
+  income: 200000
+  allocated_and_distributed: 100000
+steps:
+  - retained: income - allocated_and_distributed
+  - foundation_tax: retained * 0.35
+  - beneficiary_tax: allocated_and_distributed * 0.35
+  - total_malta_tax: foundation_tax + beneficiary_tax
+expected:
+  retained: 100000
+  foundation_tax: 35000
+  beneficiary_tax: 35000
+  total_malta_tax: 70000
+```
+
+
+## Historical source references
 
 - [Income Tax Act, Cap. 123](https://legislation.mt/eli/cap/123/eng/pdf): articles 5(18), 27B to 27D, 43(6), 56(1), 56(4), 56(6), 68
 - [Income Tax Management Act, Cap. 372](https://legislation.mt/eli/cap/372/eng/pdf): article 48(4A)
@@ -225,3 +265,15 @@ The tax due is the higher of the final tax and the floor. If the six-sevenths re
 - [Trusts and Trustees Act, Cap. 331](https://legislation.mt/eli/cap/331/eng/pdf): articles 3, 6A, 6B, 43, 43A
 - [Trusts and Trustees Act (Register of Beneficial Owners) Regulations, S.L. 331.10](https://legislation.mt/eli/sl/331.10/eng/pdf)
 - [Duty on Documents and Transfers Act, Cap. 364](https://legislation.mt/eli/cap/364/eng/pdf): articles 32, 32B, 32D, 41C, 42, 42(2), 42A
+
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| Cap123 art27D(3)(b) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL331.10 reg3(3)(iii),(vi),5 | https://legislation.mt/eli/sl/331.10/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL123.114 reg3 | https://legislation.mt/eli/sl/123.114/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

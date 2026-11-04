@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-04",
+  "reviewer": "independent non-author business audit agent",
+  "result": "PASS_CHANGED_CLAIMS_WITH_EXPLICIT_HOLDS",
+  "scope": "Nine personal-tax/payroll/SSC/crypto/residence Guides and neutral orchestrator corrections; not whole-pack professional attestation",
+  "accepted_candidate_hashes": {
+    "skills/malta/malta-income-tax.md": "3540a82a4725dc83318991cd3b754000ca3151c746934a77e94903c1a065b42a",
+    "skills/malta/malta-payroll.md": "bf049e7c3c7b13e8db9f6f0f913fc6710ae6fd6199e0f5eb228086a5429e4a06",
+    "skills/malta/malta-ssc.md": "f71705b25af669cfbb45e26accd993fac7d0fc608dc7490a720cbe9abe967e48",
+    "skills/malta/mt-estimated-tax.md": "27a96c8d464e172b575af119af73addd12d5caf67de84792370e4e55331739ec",
+    "skills/malta/mt-crypto-tax.md": "869a06210c54a79a5170dcd8af8fcdb84716b19686f897acff3772a49d3a788d",
+    "skills/malta/mt-non-dom.md": "494faab72ce1f1c52ae6df2462ba07e1fb02ef43fb6c614e549f400d23f82600",
+    "skills/malta/moving-to-malta-tax-residence.md": "ea792d8508f062ede5f7ba77b6f0f5a377801e2c953afecea8f854e6aa8f6148",
+    "skills/orchestrator/mt-freelance-intake.md": "2129f7aa32fb69464cb5ffd230179e667a9508be5c0c873336bf01987b361cfa",
+    "skills/orchestrator/mt-return-assembly.md": "9fc61651c70ccf809168ac1454f67b5164cf4913b8cc1361c18e251b16124439"
+  },
+  "archive_hashes": {
+    "evidence/malta-deep-audit-20261104/personal-archive/malta-income-tax.md": "1a8ab85a0b4afb8bcc8eed72763df73a0c9fa61d9b10efc328276678f9446472",
+    "evidence/malta-deep-audit-20261104/personal-archive/malta-payroll.md": "70e8b99938225d60a1b301eaf0a9e670b663e205012ddcb804c39560cbcb633e",
+    "evidence/malta-deep-audit-20261104/personal-archive/malta-ssc.md": "06ce6b9c7d97d2cf4e5dabf6b93378bd776aee7bf83b610b4ba3dadedc58cf0b",
+    "evidence/malta-deep-audit-20261104/personal-archive/mt-estimated-tax.md": "735043e5cfca969fbeb83082c29d7e84deef52e30d993ec5540d878c6385aceb",
+    "evidence/malta-deep-audit-20261104/personal-archive/mt-crypto-tax.md": "274025a9756f7703f4ced4567b2358aeb375c0a5db495a4b0a3296da141c49d2",
+    "evidence/malta-deep-audit-20261104/personal-archive/mt-non-dom.md": "bea19b8447885626bbcdfb611708995d09f67b446312b9ca91dfe717f0973075",
+    "evidence/malta-deep-audit-20261104/personal-archive/moving-to-malta-tax-residence.md": "72da29da8c3e13bebbbe14f7ed2177f3872e8067d2576ea66cc635e1465e4253",
+    "evidence/malta-deep-audit-20261104/personal-archive/mt-freelance-intake.md": "0e0b74ceed7489c7d1dc67aa704a7e1e0964b5b7319df5beaba2fd60f2e9c37a",
+    "evidence/malta-deep-audit-20261104/personal-archive/mt-return-assembly.md": "48ec2417521c4c655b9989266728456f495cb5ada060087ac80af0c658be3681"
+  },
+  "all_archives_equal_attribution_base_63d81783": true,
+  "initial_audit_base": "ab692cc2ef1c6306de9435b63448294d30fc4052",
+  "ledger_hashes": {
+    "evidence/malta-deep-audit-20261104/ledgers/personal-moving-to-malta-tax-residence.md": "0cc6ce6a41787357e10b19c55fe321cc076660590cc8b7cdca5b7702f235636f",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-malta-payroll.md": "246e0441376c2b7aa019f41d90569a9e4df52f9911176c21cd8819648f30e6a2",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-mt-crypto-tax.md": "8ce05f4192d0cd8b25720eb93e28c328819ac6882e2ea3f41736cd667a88d95d",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-mt-non-dom.md": "d22c9f96f5a2d9f93c0d8016f0674c7fb65d093c1c6fbbca636454fe3b486b68",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-mt-freelance-intake.md": "55a4c0d40ac39a1930e1aca2936bd44723fc375d204d0d1773e29c494cfd8fad",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-mt-estimated-tax.md": "fd9920379847a2f5ab85471903c9c03e1d576cf11bbc704ab4a5d6aa6fa116ba",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-malta-income-tax.md": "02fed0b5959d9f5f9d2829c03e73cfe3ebdc1a2f62be25e5b0e7c0d52b323936",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-mt-return-assembly.md": "4d4f6eed619bbef7094f06fda969738e46fc0ca6940e725c09b7588b745671bc",
+    "evidence/malta-deep-audit-20261104/ledgers/personal-malta-ssc.md": "b9d652d8a085704d59f31d2a1857a3f59920728334b19af4335f70a46197d814"
+  },
+  "examples_output": "checked 9 files, 15 oa-check blocks, 0 failures, 0 missing",
+  "unresolved_review_blockers": [],
+  "closed_review_findings": [
+    "Restored unchanged content licence after accidental version replacements",
+    "Explicit correct maternity cap birth cohorts",
+    "Removed TA24/Box20 business-SSC description mapping",
+    "Student age24+election held consistently, including example",
+    "Turning65scenario distinguishes current73.56 from historical63.46 and keeps partyearliabilityhold",
+    "Estimated bodyversion aligns2.3 and newbusinessillustration requires no priorbenchmark/notice",
+    "Fixedreturntokenclassification separately tests CIS and linkedinsurance unit alternatives"
+  ],
+  "retained_holds": [
+    "Parent-one-child statutory10270/MTCA10275 source conflict",
+    "Student reduced-contribution age conflict",
+    "DeFi recognition/matching/source/VAT and token-specific classification",
+    "Actual official personal-return field mapping and filing-ready packages not supplied",
+    "Part-year contribution liability and historic arrears"
+  ]
+}
