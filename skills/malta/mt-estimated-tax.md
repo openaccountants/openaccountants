@@ -1,10 +1,10 @@
 ---
 name: mt-estimated-tax
 description: 'Use this skill whenever asked about Malta provisional tax (estimated tax) for self-employed or self-occupied individuals. Trigger on phrases like "provisional tax Malta", "estimated tax", "PT instalments", "how much provisional tax do I pay", "20% 30% 50%", "April instalment", "August instalment", "December instalment", "PT benchmark", "PT reduction form", "refund of provisional tax", "Chapter 372", "ITMA article 42", or any question about Malta''s advance income tax payment obligations. Covers basis year 2026: the three-instalment schedule (20/30/50 on 30 April, 31 August, 21 December), the PT benchmark taken from the self-assessment two years earlier, first-year rules, the PT reduction form, interest of 0.6% a month on late payment, and settlement with the tax return by 30 June. ALWAYS read this skill before touching any Malta provisional tax work.'
-version: 2.1
+version: 2.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-04
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -353,4 +353,4 @@ This skill and its outputs are provided for informational and computational purp
 
 Not yet confirmed: the start date of the 0.6% rate for PT (rule 14(1) says periods from 1 June 2022; MTCA pages say 1 September 2022; this does not change any 2026 figure); the 31 December refund date and refund interest, taken from the MTCA Tax Return Cycle page rather than Article 48 ITMA.
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.

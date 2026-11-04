@@ -1,10 +1,10 @@
 ---
 name: malta-formation
 description: "Use this skill whenever asked about forming, incorporating or registering a company in Malta in 2026. Covers the entity types (sole trader, partnership en nom collectif, private limited company, single member company, public limited company), the Companies Act rules on name, memorandum, minimum share capital (EUR 1,164.69 private, EUR 46,587.47 public) and paid-up share (20% and 25%), directors and the company secretary, the Malta Business Registry registration fee (EUR 100 electronic up to EUR 1,500 authorised capital), beneficial owner filings, the annual return (EUR 85 electronic fee, 42 days), accounts deadlines, tax and VAT registration, and post-formation compliance. Trigger on: set up a company in Malta, Malta Ltd, MBR registration, BAROS, incorporate in Malta, Malta company costs, Malta share capital, Malta memorandum and articles, company secretary Malta."
-version: 1.2
+version: 1.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-04
 depends_on:
   - company-formation-workflow-base
 category: formation
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
-# Malta Formation v1.2
+# Malta Formation v1.3
 
 Tax year 2026. This skill is the workflow for setting up a Maltese company. It does not repeat the tax computations: company tax and refunds are in `mt-corporate-tax`; accounts and audit in `malta-financial-statements`; VAT registration in `malta-vat-return`; employer registration and payroll in `malta-payroll`; the owner's personal tax in `malta-income-tax`; selling the shares later in `selling-a-company-in-malta`; company residence and substance in `mt-company-residence-and-substance`.
 
@@ -242,4 +242,4 @@ Not yet confirmed:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.

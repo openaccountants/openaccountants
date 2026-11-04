@@ -1,10 +1,10 @@
 ---
 name: mt-rental-income
 description: 'Use this skill whenever asked about Malta rental income taxation. Trigger on phrases like "rental income Malta", "letting property Malta", "15% final withholding tax", "Article 31D", "TA24 rental", "property letting", "kiri", "rent received", "landlord tax Malta", "Airbnb Malta tax", "short-term rental Malta", "non-resident landlord Malta", "rental declaration CFR", "FWS rental", or any question about computing, filing, or optimising tax on rental income from Maltese immovable property. Covers both the Final Withholding System (15% flat) and the normal progressive system, non-resident landlords, short-term letting, VAT interaction, and property transfer tax. Basis year 2026: the 15% final tax under Article 31D, the L.N. 100 of 1993 deductions (interest, ground rent, licence fees and the 20% further deduction) under the normal system, the 2026 single rate bands, and the TA24 deadline of 30 April. ALWAYS read this skill before touching any Malta rental income work.'
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-04
 depends_on:
   - malta-income-tax
 category: international
@@ -410,4 +410,4 @@ This skill and its outputs are provided for informational and computational purp
 
 Not yet confirmed: the MTCA guidance note's wider reading of "tenement" (land, roof tops) against the Article 31D(8)(a) definition; the MTCA manual's line that gross rent under the 15% is "declared by end of June", which sits against FAQ 5 saying individuals do not declare it in the return; the 31 July online return date for the 2026 basis year; treating platform fees as not deductible from the 15% base; the UK treaty position in Example 3.
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.

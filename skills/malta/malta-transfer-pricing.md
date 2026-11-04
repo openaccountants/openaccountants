@@ -1,10 +1,10 @@
 ---
 name: malta-transfer-pricing
 description: 'Use this skill whenever asked about Malta transfer pricing rules, documentation requirements, or arm''s length pricing for cross-border related-party transactions. Trigger on phrases like "transfer pricing Malta", "TP documentation", "master file Malta", "local file Malta", "arm''s length Malta", "related party transactions Malta", "CbCR Malta", "country-by-country report Malta", "BEPS Malta", "intercompany pricing Malta", or any question about transfer pricing compliance for Maltese entities within multinational groups. Covers basis year 2026: the Transfer Pricing Rules (S.L. 123.207) and the MTCA guidelines, the EUR 6,000,000 revenue and EUR 20,000,000 capital exceptions, grandfathering of pre-2024 arrangements, master file and local file on request, the TRA 135 attachment to the YA 2026 company return, unilateral rulings and APAs.'
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-04
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
@@ -289,4 +289,4 @@ This skill and its outputs are provided for informational and computational purp
 
 Not yet confirmed: CbCR penalty amounts (not checked against S.L. 123.127); the content of TRA 135; the CbCR deadline and notification rules (not re-read in this update); how the S.L. 372.16 return date applies to a company with a 31 December accounting date (see mt-corporate-tax).
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.

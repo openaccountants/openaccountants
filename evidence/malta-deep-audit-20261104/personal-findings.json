@@ -1,0 +1,89 @@
+{
+  "revision": "ab692cc2ef1c6306de9435b63448294d30fc4052",
+  "read_date": "2026-11-04",
+  "not_full_claim_ledger": true,
+  "note": "Focused finding index. Detailed scopes, limitations and remaining claims are in personal-audit.md.",
+  "findings": [
+    {
+      "id": "P1-A",
+      "status": "confirmed",
+      "file": "orchestrator/mt-return-assembly.md",
+      "line": 51,
+      "repository_excerpt": "TA24 self-employed return (annual)",
+      "finding": "TA24 is rental final-tax form, not annual business return.",
+      "primary_url": "https://mtca.gov.mt/personal-tax/individual/tax-on-rental-income-%28ta24%29"
+    },
+    {
+      "id": "P1-B",
+      "status": "confirmed",
+      "file": "orchestrator/mt-return-assembly.md",
+      "line": 185,
+      "repository_excerpt": "Based on 2025 final tax liability",
+      "finding": "2026 PT ordinarily uses basis2024/YA2025 benchmark.",
+      "primary_url": "https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4"
+    },
+    {
+      "id": "P1-C",
+      "status": "confirmed",
+      "file": "orchestrator/mt-freelance-intake.md",
+      "line": 251,
+      "repository_excerpt": "Class 2 quarterly payments",
+      "finding": "Contributions are four-monthly, three periods.",
+      "primary_url": "https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c"
+    },
+    {
+      "id": "P1-D",
+      "status": "confirmed",
+      "file": "malta/moving-to-malta-tax-residence.md",
+      "line": 113,
+      "repository_excerpt": "Long-term residents keep the basis",
+      "finding": "Specific legal long-term status excludes ordinary remittance basis.",
+      "primary_url": "https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf"
+    },
+    {
+      "id": "P1-E",
+      "status": "confirmed",
+      "file": "malta/malta-income-tax.md",
+      "line": 377,
+      "repository_excerpt": "Was due 30 June 2026",
+      "finding": "Operative individual YA2026 filing/payment extension31July2026.",
+      "primary_url": "https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline"
+    },
+    {
+      "id": "P1-F",
+      "status": "unsafe-overstatement",
+      "file": "malta/mt-crypto-tax.md",
+      "line": 137,
+      "repository_excerpt": "Income at euro market value when received",
+      "finding": "Crypto does not change ordinary revenue recognition.",
+      "primary_url": "https://mtca.gov.mt/docs/default-source/documents/guidelines--dlts-income-tax.pdf?sfvrsn=c74e28fc_1"
+    },
+    {
+      "id": "P2-G",
+      "status": "confirmed-omission",
+      "file": "malta/mt-non-dom.md",
+      "line": 248,
+      "repository_excerpt": "would not need to be reported",
+      "finding": "Other taxable income or joint computation require reporting; documentation deadline applies.",
+      "primary_url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/nomad-guidelines---12-03-2026.pdf?sfvrsn=f0cc9971_6"
+    },
+    {
+      "id": "D1",
+      "status": "authority-discrepancy",
+      "file": "malta/malta-income-tax.md",
+      "line": 69,
+      "repository_excerpt": "10,270, as enacted",
+      "finding": "Act10270; current amended MTCA2026table10275. Do not silently pick.",
+      "primary_url": "https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5"
+    },
+    {
+      "id": "D3-HSI",
+      "status": "resolved-source-gap",
+      "file": "malta/moving-to-malta-tax-residence.md",
+      "line": 215,
+      "repository_excerpt": "Whether the first increase falls in 2027 or five years later is not settled",
+      "finding": "Official guideline explicitly2031then2036.",
+      "primary_url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/hqpr-new-amalgamated-rules---guidelines---branded-06-04-(002).pdf?sfvrsn=b605473e_1"
+    }
+  ]
+}

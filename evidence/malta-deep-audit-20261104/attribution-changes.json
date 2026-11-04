@@ -1,0 +1,28 @@
+{
+  "kept_maintenance_scope": [
+    "malta-bookkeeping",
+    "malta-income-tax",
+    "malta-vat-return"
+  ],
+  "changed": [
+    "skills/malta/how-to-account-for-rental-income-in-malta.md",
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md",
+    "skills/malta/malta-formation.md",
+    "skills/malta/malta-tax-optimization.md",
+    "skills/malta/malta-transfer-pricing.md",
+    "skills/malta/moving-to-malta-tax-residence.md",
+    "skills/malta/mt-company-residence-and-substance.md",
+    "skills/malta/mt-estimated-tax.md",
+    "skills/malta/mt-family-office-setup.md",
+    "skills/malta/mt-foundations-and-trusts.md",
+    "skills/malta/mt-holding-company-participation-exemption.md",
+    "skills/malta/mt-inheritance-and-succession.md",
+    "skills/malta/mt-rental-income.md",
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md",
+    "skills/malta/selling-a-company-in-malta.md"
+  ],
+  "approval_added": false,
+  "other_accountant_reviews_changed": false,
+  "tax_rules_changed": false,
+  "platform_change_verified": false
+}

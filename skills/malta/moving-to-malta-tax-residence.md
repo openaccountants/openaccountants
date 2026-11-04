@@ -4,17 +4,15 @@ description: "Cross-border skill for individuals moving to Malta, tax year 2026.
 jurisdiction: MT
 category: international
 tax_year: 2026
-last_updated: 2026-10-23
-version: 1.1
+last_updated: 2026-11-04
+version: 1.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Michael Cutajar"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 ---
 
-# Moving to Malta: residence routes, the remittance basis, and what Malta actually taxes v1.1
+# Moving to Malta: residence routes, the remittance basis, and what Malta actually taxes v1.2
 
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.** Figures are for tax year 2026 (basis year 2026, assessed in 2027).
+Built by the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.** Figures are for tax year 2026 (basis year 2026, assessed in 2027).
 
 **Why this corridor needs a skill.** Malta takes in more relocating wealth per capita than
 almost any EU state, yet most arrival advice is sold by visa agencies and stops at the permit.
@@ -178,7 +176,7 @@ never be designed around the company trick; get the personal residence right fir
 
 ---
 
-*Built by Michael Cutajar and the OpenAccountants team, from the Malta end of the corridor. Malta's offer is simple
+*Built by the OpenAccountants team, from the Malta end of the corridor. Malta's offer is simple
 once stated precisely: it taxes the island and what you bring to it, and ignores what you
 keep outside, with no wealth, inheritance, or exit taxes waiting behind the door. The craft
 is all in the arrival: segregate the money before you land, pick the route by arithmetic

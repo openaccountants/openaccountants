@@ -1,0 +1,1125 @@
+[
+  {
+    "path": "skills/malta/how-to-account-for-rental-income-in-malta.md",
+    "sha256": "afe4ed3bd35f2aca8f4bb879e56348938bec352e3de53689ff1d5e24b7d40d47",
+    "lines": 121,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md",
+    "sha256": "b6a2ebe30aaed13f5b1f2c89b3c5c18fd6469b010eda7a62aef328fa78938502",
+    "lines": 144,
+    "executable_examples": 1,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [
+        "1 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-bookkeeping.md",
+    "sha256": "9598536d598151f4a35432b0be3720d216bb24e9af9f0b2af0ab34fa8cd9950a",
+    "lines": 415,
+    "executable_examples": 2,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "11 of 11 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-financial-statements.md",
+    "sha256": "7a4b23a2a2474d6607bb8c1d51caa5f75d1dabc57c1c295683db76dc4fab68d4",
+    "lines": 272,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-formation.md",
+    "sha256": "7e9c446c35d39639b917247a1751c72dac6956fd1c5e2296f8160ff634fa5f68",
+    "lines": 245,
+    "executable_examples": 2,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "8 of 8 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-income-tax.md",
+    "sha256": "1a8ab85a0b4afb8bcc8eed72763df73a0c9fa61d9b10efc328276678f9446472",
+    "lines": 399,
+    "executable_examples": 3,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "6 of 6 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [
+        "1 em dash(es)"
+      ],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-payroll.md",
+    "sha256": "70e8b99938225d60a1b301eaf0a9e670b663e205012ddcb804c39560cbcb633e",
+    "lines": 267,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-ssc.md",
+    "sha256": "06ce6b9c7d97d2cf4e5dabf6b93378bd776aee7bf83b610b4ba3dadedc58cf0b",
+    "lines": 179,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-tax-optimization.md",
+    "sha256": "6d836d7ef67e0eaf205b60915bd0d35c5f604f6708f47586816f77614f38d2be",
+    "lines": 306,
+    "executable_examples": 2,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "23 of 23 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "10 source rows all dated 2026-10-23, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-transfer-pricing.md",
+    "sha256": "6d975dac1f52e4b0c07bcf22426f3d200f2b7f48d817421072f3848a5a6cdc80",
+    "lines": 292,
+    "executable_examples": 2,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "13 of 13 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "7 source rows all dated 2026-10-23, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/malta-vat-return.md",
+    "sha256": "9df64692e36e3ee19ba23cb19acc9be803e8dc1cfb1d4126472e2844bd4f8725",
+    "lines": 253,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "8 of 8 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/moving-to-malta-tax-residence.md",
+    "sha256": "0a88372c2094f019e1ee0064e8c8e7bc6e2d794b6c1d47151644b52b542275cb",
+    "lines": 216,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "18 source rows all dated 2026-10-23, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-capital-gains.md",
+    "sha256": "363e7e4e796f4716e47229840c8be8f5d71e9e20f44912498fff0445895d6592",
+    "lines": 323,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "24 of 24 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-company-residence-and-substance.md",
+    "sha256": "a2fb7b7432d06b48c1a032631ed9c1c5787e573efdccd8345f7dbed510d298b4",
+    "lines": 180,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "2 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "11 of 15 amount table row(s) without a URL or an unverified mark (26.7% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-corporate-tax.md",
+    "sha256": "6ed0b9b2bd25594fe7cd5767081de36cbb48fbb3b9f9e2babefdf71e902034a7",
+    "lines": 248,
+    "executable_examples": 2,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "17 source rows all dated 2026-10-22, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-crypto-tax.md",
+    "sha256": "274025a9756f7703f4ced4567b2358aeb375c0a5db495a4b0a3296da141c49d2",
+    "lines": 349,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "4 of 11 amount table row(s) without a URL or an unverified mark (63.6% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-estimated-tax.md",
+    "sha256": "daab17a1d8da0b4e244b132e41c3d0db283d0732fcd1cce16aaf782524469a8d",
+    "lines": 356,
+    "executable_examples": 2,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "24 of 25 amount table row(s) without a URL or an unverified mark (4% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "9 source rows all dated 2026-10-23, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-family-office-setup.md",
+    "sha256": "7113b7745a2fe278ac89393911631b1df3d75b6ea96aac2c455cee40941883dd",
+    "lines": 175,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "9 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "14 of 18 amount table row(s) without a URL or an unverified mark (22.2% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-foundations-and-trusts.md",
+    "sha256": "f390ce02e44ec25be17c6c1496188cbea5f534cec73cb9afc198387540494b1a",
+    "lines": 229,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "8 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "27 of 34 amount table row(s) without a URL or an unverified mark (20.6% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-global-residence-programme.md",
+    "sha256": "24c2f081d09d2a2f120b8b5d7724004e03e1b81fd3a45d2262ab74c38ab3f0f7",
+    "lines": 236,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "3 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "34 of 37 amount table row(s) without a URL or an unverified mark (8.1% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-holding-company-participation-exemption.md",
+    "sha256": "bbf45863a7236f948771b4034f1e8e256acefc277381ee98bed9b3548c9b1d78",
+    "lines": 261,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "5 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "32 of 41 amount table row(s) without a URL or an unverified mark (22% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-inheritance-and-succession.md",
+    "sha256": "2442d17462403e5c45addf60f2d6a22a46892176c2a65bedd7b5932e209bf592",
+    "lines": 208,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "4 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "41 of 48 amount table row(s) without a URL or an unverified mark (14.6% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-nomad-residence-permit.md",
+    "sha256": "9c9a37a1928423a94b3071eebd4aa4a94beaf0efda41108c1cfcaf25138c1366",
+    "lines": 137,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "5 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "7 of 9 amount table row(s) without a URL or an unverified mark (22.2% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-non-dom.md",
+    "sha256": "bea19b8447885626bbcdfb611708995d09f67b446312b9ca91dfe717f0973075",
+    "lines": 308,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-permanent-residence-programme.md",
+    "sha256": "7b7f5de63b54aecd255b7763455cfa519e3bf045eb0a92a6de6b117b1a1fa430",
+    "lines": 234,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "6 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "15 of 17 amount table row(s) without a URL or an unverified mark (11.8% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-property-transfer-tax-the-sale-immovable.md",
+    "sha256": "0f8b0cece5d0747a477328c803f7ad7e36a0e8dffb8055878501ea614c044501",
+    "lines": 131,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "9 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "22 of 28 amount table row(s) without a URL or an unverified mark (21.4% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [
+        "22 em dash(es)"
+      ],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-rental-income.md",
+    "sha256": "0eb8022055a96f4cc1e927825e8f3a724177f379eed420c79dfc95ad8f5c6579",
+    "lines": 413,
+    "executable_examples": 2,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "18 of 18 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "9 source rows all dated 2026-10-23, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-residence-programmes-for-wealthy-families.md",
+    "sha256": "a8be0ae264abc1b482778fb25e73745515a8732f8731ee1666f66b59d0defd22",
+    "lines": 200,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "8 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "39 of 50 amount table row(s) without a URL or an unverified mark (22% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-reverse-charge-acquisition-intra.md",
+    "sha256": "fcf338ef73735e3e50a418a5150e7ce80afacc5fa0f52c8d324abe6884b8ed27",
+    "lines": 119,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "5 source line(s) without a read date"
+      ],
+      "rates_rows_sourced": [
+        "8 of 13 amount table row(s) without a URL or an unverified mark (38.5% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+        "method set: headings out of order"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [
+        "12 em dash(es)"
+      ],
+      "not_yet_confirmed": [
+        "no 'Not yet confirmed' line after ## Sources"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-reverse-charge-vat-services-received-from.md",
+    "sha256": "e3b33bbb664d708c55da3e1ec79d7d8de0d96faede64c7d3a5acf284a4991a9c",
+    "lines": 230,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "5 of 5 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Worked cases, Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/mt-vat3-quarterly-return-malta.md",
+    "sha256": "bfdd16f05863ad8c0057103eb11743bc26a4c05168b58de92e4b7fd9e3ae0f54",
+    "lines": 254,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "8 of 8 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "method set: missing heading(s): Talk to a verified accountant"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [
+        "no version"
+      ],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/malta/selling-a-company-in-malta.md",
+    "sha256": "31b25e6d1eb13fd5b68b00007aeb23377674598d89e18eaea8e4a2db31575dda",
+    "lines": 129,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [
+        "11 source rows all dated 2026-10-23, most not saying what was read"
+      ],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/orchestrator/mt-freelance-intake.md",
+    "sha256": "0e0b74ceed7489c7d1dc67aa704a7e1e0964b5b7319df5beaba2fd60f2e9c37a",
+    "lines": 520,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [
+        "tax_year 2025 is not 2026 and no tax_year_notes"
+      ],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "no rates table"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [
+        "5 em dash(es)"
+      ],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  {
+    "path": "skills/orchestrator/mt-return-assembly.md",
+    "sha256": "48ec2417521c4c655b9989266728456f495cb5ada060087ac80af0c658be3681",
+    "lines": 323,
+    "executable_examples": 0,
+    "checks": {
+      "tax_year_current": [
+        "tax_year 2025 is not 2026 and no tax_year_notes"
+      ],
+      "sources_read_dates": [
+        "no ## Sources section"
+      ],
+      "rates_rows_sourced": [
+        "2 of 2 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [
+        "reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first, Sources"
+      ],
+      "two_oa_checks": [
+        "0 oa-check block(s), need 2"
+      ],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [
+        "26 em dash(es)"
+      ],
+      "not_yet_confirmed": [
+        "no ## Sources section"
+      ],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  }
+]
