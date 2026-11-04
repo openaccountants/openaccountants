@@ -74,7 +74,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Employment status unknown | STOP -- do not proceed |
 | Prior contribution weeks unknown | Assume ineligible for Modalidad 40 until confirmed |
-| Desired salary base unknown | IVRO base floor is the minimum wage of the geographic area |
+| Desired salary base unknown | IVRO base floor is the minimum wage of the geographic area; for Modalidad 40 estimates at 4.01 UMA or more use the 18.8% top-band total (sum of the Art. 168 and Art. 25 quotas in the rate table) |
 | UMA value unconfirmed | Direct client to INEGI for current value |
 
 ## Required inputs and refusal catalogue
@@ -207,7 +207,7 @@ This is the deterministic pre-classifier for bank statement lines related to IMS
 
 ## Penalties and interest
 
-Enrolment back-fees can apply when coverage is requested retroactively.
+Late IMSS contributions: under LSS Art. 40 A, when contributions are not paid on time the employer pays the actualización (inflation update) and recargos (surcharges) from the date the amounts became due, in the terms of the Código Fiscal. Enrolment back-fees can apply when coverage is requested retroactively.
 
 ## Cross-border points
 
@@ -482,7 +482,7 @@ ONBOARDING QUESTIONS -- MEXICO IMSS SELF-EMPLOYED
 | IMSS, Procedimiento 9210-003-612, aseguramiento de personas trabajadoras independientes o por cuenta propia (IVRO) | https://reposipot.imss.gob.mx/normatividad/DNMR/Procedimiento/9210-003-612.pdf | 2026-11-02 |
 | IMSS, Procedimiento 9210-003-209, Continuación Voluntaria Régimen Obligatorio Modalidad 40 | https://www.imss.gob.mx/sites/all/statics/pdf/procedimientos/9210-003-209.pdf | 2026-11-02 |
 
-Not yet confirmed: the current illness/maternity in-kind fixed employer cuota (the consolidated LSS text read shows the original 13.9% of one general daily minimum wage in Art. 106 fr. I; the 1995 law's transitional articles raised it, and the current figure is reported as 20.40% of one UMA per insured per day, but the transitorio text is not in the archived copy); the current illness/maternity excess cuotas (the text read shows 6% patronal / 2% obrera on SBC above three times the minimum wage; 1.10% / 0.40% above 3 UMA are reported but not in the archived text); the 2023-2030 transitional employer cesantía y vejez rates (the DOF 16-12-2020 decree's second transitorio phases in the Art. 168 fr. II a) quota gradually from 1 January 2023, but its rate table renders as an image in the archived copy and the yearly values were not read); the 2025 and 2026 general minimum wage peso amounts (the IVRO base floor and the Art. 106 thresholds; no archived DOF wage decree); Seguro de Salud para la Familia fees effective from 1 March 2026 (the page read shows the 1 March 2025 schedule); whether the Seguro de Salud para la Familia annual premium qualifies as an Art. 151 fr. I medical expense; the LSS Art. 154 surcharge and interest mechanics for late contributions (no archived copy of the article text); the 18.8% top-band total for Modalidad 40 estimates at 4.01 UMA or more.
+Not yet confirmed: the current illness/maternity in-kind fixed employer cuota (the consolidated LSS text read shows the original 13.9% of one general daily minimum wage in Art. 106 fr. I; the 1995 law's transitional articles raised it, and the current figure is reported as 20.40% of one UMA per insured per day, but the transitorio text is not in the archived copy); the current illness/maternity excess cuotas (the text read shows 6% patronal / 2% obrera on SBC above three times the minimum wage; 1.10% / 0.40% above 3 UMA are reported but not in the archived text); the 2023-2030 transitional employer cesantía y vejez rates (the DOF 16-12-2020 decree's second transitorio phases in the Art. 168 fr. II a) quota gradually from 1 January 2023, but its rate table renders as an image in the archived copy and the yearly values were not read); the 2025 and 2026 general minimum wage peso amounts (the IVRO base floor and the Art. 106 thresholds; no archived DOF wage decree); Seguro de Salud para la Familia fees effective from 1 March 2026 (the page read shows the 1 March 2025 schedule); whether the Seguro de Salud para la Familia annual premium qualifies as an Art. 151 fr. I medical expense; the Código Fiscal rates for actualización and recargos on late contributions (CFF not archived).
 
 ## Disclaimer
 

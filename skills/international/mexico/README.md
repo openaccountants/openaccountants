@@ -5,8 +5,8 @@ covered_by:
   VAT: mexico-iva
 partial:
   IT-IND: "covers self-employed personas físicas only, not employees or rental income; bank-statement walkthroughs use the 2025 tariff"
-  SC: "IMSS and INFONAVIT quota mechanics, SBC base and PTU deductibility"
-  PR: "employer ISR withholding on wages and monthly payment mechanics"
+  SC: "excludes the 2026 in-kind fixed quota, transitional cesantía y vejez employer rates and state payroll tax rates, pending archived sources"
+  PR: "excludes penalties and savings-fund limits, pending archived sources"
   VAT: "tax year 2025; skills not yet rebuilt to the deep-tax shape"
   TP: "tax year 2025; skill not yet rebuilt to the deep-tax shape"
 ---
