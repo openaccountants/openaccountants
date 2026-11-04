@@ -348,7 +348,7 @@ Contribution (15,000,000) exceeds the ceiling → deductible amount capped at **
 - NEVER treat EPZ/SEZ **domestic-market** sales as income-tax exempt on or after **1 Jul 2025** — FA2025 removed that exemption; only export sales retain the holiday.
 - NEVER shelter more than **60%** of a year's taxable profit with carried-forward losses — the residual 40% is always taxable.
 - NEVER assume perpetual losses are costless — **3 consecutive loss years trigger 1% AMT on turnover** (unless agriculture/health/education, or tea processing to 30 Jun 2027).
-- NEVER ignore the **12-month** distribution window — undistributed/​unapplied after-tax profit risks a deemed 30% distribution and 10% WHT.
+- NEVER ignore the **12-month** distribution window — undistributed/unapplied after-tax profit risks a deemed 30% distribution and 10% WHT.
 - NEVER deduct charitable/CSR contributions above **2% of taxable income**.
 - NEVER apply the **16%** electronic-payment VAT rate before **1 Sep 2025**, or to non-qualifying (non-electronic / non-B2C) supplies.
 - NEVER claim a treaty WHT rate without a valid **residence certificate** — apply the domestic rate by default.
