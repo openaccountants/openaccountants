@@ -5,12 +5,12 @@ jurisdiction: BJ
 category: international
 tax_year: 2026
 tax_year_notes: "2026 ordinary CGI rental rules; June platform amendment recorded with first operative payment period held"
-last_updated: 2026-11-01
-version: 0.1
+last_updated: 2026-11-04
+version: 0.2
 tier: 2
 ---
 
-# Benin rental IRF and rent withholding working paper v0.1
+# Benin rental IRF and rent withholding working paper v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -18,7 +18,7 @@ tier: 2
 
 Prepare a 2026 rental-income IRF and rent-withholding working paper, separately from annual TFU. IRF covers individuals and the article101(1) assimilated persons receiving property income: the State, communes, specified public establishments, associations and NGOs where they hold only property income. [CGI art101(1)](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54)
 
-Partners of a property-predominant company not subject to IS enter IRF. For this chapter, more than 50% of company turnover must be article102 property income. A company subject to IS is not brought into the individual IRF computation merely because it owns a building. [CGI art101(2)](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54)
+Partners of a property-predominant company not subject to IS enter IRF. For this chapter, more than 50% of company turnover must be article 102 property income. A company subject to IS is not brought into the individual IRF computation merely because it owns a building. [CGI art101(2)](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54)
 
 Article102 covers built and non-built property income, furnished letting, fixed industrial installations, building-lease rent and property-right ancillary income, only where the income is not included in business profits of an industrial/commercial enterprise, farm or noncommercial profession. Classify the business-income boundary first. [CGI art102(1)](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54)
 
@@ -35,7 +35,7 @@ Article102 covers built and non-built property income, furnished letting, fixed 
 
 Start with gross rent. Add owner expenses contractually borne by the tenant, and subtract tenant expenses the owner paid for the tenant. Keep supporting contracts and invoices; the statute does not give this job a general percentage expense allowance. [CGI art103(1)](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=54)
 
-Owner-occupied housing has no imputed rental IRF under article102(2). By contrast, free provision to a third person without a legal obligation creates in-kind income valued under article157. The legal-obligation distinction must be evidenced before setting the imputed base to zero. [CGI arts102(2),103(2),157](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55)
+Owner-occupied housing has no imputed rental IRF under article 102(2). By contrast, free provision to a third person without a legal obligation creates in-kind income valued under article157. The legal-obligation distinction must be evidenced before setting the imputed base to zero. [CGI arts102(2),103(2),157](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=55)
 
 Prepare separate columns for gross rent paid, the adjusted article103 IRF base, the ORTB levy, withholding actually remitted and instalments. Article106(5) credits paid-and-remitted tenant withholding against tax due; article106(8) offsets withholding against instalments. A promise or unsupported deduction is not a paid-and-remitted receipt. [CGI art106(5),(8)](https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=56)
 
