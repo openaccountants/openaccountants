@@ -41,3 +41,5 @@ The substantive corrections in this batch carry changed-claim ledgers, old-topic
 - [Per-Guide ledgers](ledgers/) and complete original [personal workflow archives](personal-archive/).
 
 The personal independent review records findings and their closure, including correction of an accidental licence edit, cohort ordering, residual TA24 metadata, student/retirement assumptions and crypto classification. Neither automated arithmetic nor non-author source checking is a licensed accountant's attestation.
+
+See [CLOSEOUT.md](CLOSEOUT.md) for the final correction/test result, preserved preflight failures and remaining limits, and [personal independent review](personal-independent-review.md) for the final accepted personal batch.
