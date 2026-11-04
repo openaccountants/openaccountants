@@ -15,6 +15,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: crypto
 ---
 
 # Kazakhstan Cryptocurrency & Digital Mining Tax — Skill v1.0

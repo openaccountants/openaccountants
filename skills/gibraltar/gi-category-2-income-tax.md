@@ -53,6 +53,7 @@ sources:
     title: "May 2011 qualifying-individual guidance: historical comparison only"
     as_of: "2026-10-31"
 tier: 2
+domain: income-tax
 ---
 
 # Gibraltar Category 2 certificate, income tax and IT1C v0.1

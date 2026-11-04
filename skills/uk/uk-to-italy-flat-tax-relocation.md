@@ -9,6 +9,7 @@ last_updated: 2026-10-23
 source_checked: 2026-10-23
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Moving from the UK to Italy: the flat-tax corridor (2026/27)

@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Romania VAT (TVA): rates, registration, D300, D394 and RO e-TVA (2026)

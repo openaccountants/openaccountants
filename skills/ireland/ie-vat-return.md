@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Irish VAT returns (VAT3 and RTD), tax year 2026

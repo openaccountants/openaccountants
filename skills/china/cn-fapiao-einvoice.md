@@ -7,6 +7,7 @@ last_updated: 2026-10-31
 version: 2.0
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: e-invoicing
 ---
 
 # CN Fapiao Einvoice

@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # France: intake for a self-employed person's tax returns (micro-entrepreneur, entreprise individuelle, profession libérale)

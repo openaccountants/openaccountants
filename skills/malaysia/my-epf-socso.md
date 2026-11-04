@@ -10,6 +10,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Malaysia employer contributions: EPF (KWSP), SOCSO (PERKESO) including LINDUNG 24 Jam, EIS, and registration (2026, with notes on earlier months)

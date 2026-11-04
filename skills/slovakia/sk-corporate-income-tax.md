@@ -8,6 +8,7 @@ last_updated: 2026-10-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: corporate-tax
 ---
 
 # Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing v0.4

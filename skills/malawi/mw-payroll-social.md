@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 1.3
 tier: 2
+domain: payroll
 ---
 
 # Malawi payroll: pension contributions and PAYE reconciliation v1.3

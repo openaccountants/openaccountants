@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
 tier: 2
+domain: income-tax
 ---
 
 # Burkina Faso business income tax (IBICA / IBNC) v1.1

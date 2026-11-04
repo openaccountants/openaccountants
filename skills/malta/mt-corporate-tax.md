@@ -8,6 +8,7 @@ last_updated: 2026-11-04
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: corporate-tax
 ---
 
 # Malta corporate income tax: 35%, imputation, refunds and filing (basis year 2026)

@@ -8,6 +8,7 @@ category: transfer-pricing
 version: 0.2
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
 tier: 2
+domain: transfer-pricing
 ---
 
 # Mauritania Transfer Pricing and CbCR v0.2

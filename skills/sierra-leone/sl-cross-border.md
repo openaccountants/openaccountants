@@ -8,6 +8,7 @@ tax_year_notes: "2026 research intake; unofficial2017 statutory baseline plus id
 last_updated: 2026-11-01
 version: 0.2
 tier: 2
+domain: cross-border
 ---
 
 # Sierra Leone Cross-Border Residence and Foreign Income v0.2

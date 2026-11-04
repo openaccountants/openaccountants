@@ -12,6 +12,7 @@ depends_on:
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: bookkeeping
 ---
 
 # Bookkeeping in Italy: books, registers, accounting basis, chart of accounts and Civil Code formats

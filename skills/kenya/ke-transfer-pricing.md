@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-02
 category: transfer-pricing
 tier: 2
+domain: transfer-pricing
 ---
 
 # Kenyan transfer pricing: arm's length rule, documentation, master file, local file and CbCR (2026)

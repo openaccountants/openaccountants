@@ -9,6 +9,7 @@ approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 version: 1.0
+domain: vat-gst
 ---
 
 # Reverse charge on intra-EU acquisitions in Malta

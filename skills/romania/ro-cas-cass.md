@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Romania: CAS and CASS for the self-employed (PFA, II, IF, liberal professions), 2026

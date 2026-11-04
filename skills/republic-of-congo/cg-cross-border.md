@@ -8,6 +8,7 @@ tax_year_notes: "Initial 2026 enacted-law baseline; later 2026 currentness and f
 last_updated: 2026-11-01
 version: 1.0
 tier: 2
+domain: cross-border
 ---
 
 # Republic of Congo Cross-Border and Nonresident Tax v1.0

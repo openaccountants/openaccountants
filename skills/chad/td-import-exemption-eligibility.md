@@ -9,6 +9,7 @@ tax_year_notes: "Arrêté 135: imports from signature on 9 September 2026; earli
 last_updated: 2026-11-01
 version: 0.2
 tier: 2
+domain: cross-border
 ---
 
 # Chad import-exemption eligibility v0.2

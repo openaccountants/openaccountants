@@ -7,6 +7,7 @@ category: cross-border
 tax_year: 2026
 last_updated: 2026-11-02
 tier: 2
+domain: cross-border
 ---
 
 # Seychelles cross-border: residence, permanent establishment, source and withholding on non-residents (2026) v0.1

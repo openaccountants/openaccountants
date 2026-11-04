@@ -9,6 +9,7 @@ drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Assembling a German freelancer's yearly tax return package

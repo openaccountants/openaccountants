@@ -10,6 +10,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # UA Formation

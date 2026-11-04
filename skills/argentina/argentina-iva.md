@@ -9,6 +9,7 @@ category: international
 depends_on:
   - vat-workflow-base
 tier: 2
+domain: vat-gst
 ---
 
 # Argentina IVA (Impuesto al Valor Agregado) Skill v2.0

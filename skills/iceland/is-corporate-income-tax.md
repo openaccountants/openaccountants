@@ -21,6 +21,7 @@ last_updated: 2026-10-30
 version: 0.9
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: corporate-tax
 ---
 
 # Iceland corporate income tax v0.9

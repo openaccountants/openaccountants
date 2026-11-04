@@ -22,6 +22,7 @@ version: 0.4
 reviewed_by: "Jeff Watts"
 reviewed_on: 2026-11-03
 tier: 1
+domain: cross-border
 ---
 
 # Spain: foral nonresident income tax for2026

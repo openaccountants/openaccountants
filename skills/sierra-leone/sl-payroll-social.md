@@ -9,6 +9,7 @@ version: 1.1
 category: international
 tax_year_notes: "2026 intake; source-bound NASSIT workpaper, later amendments and PAYE reconciliation incomplete"
 tier: 2
+domain: payroll
 ---
 
 # Sierra Leone Payroll and Social Contributions v1.1

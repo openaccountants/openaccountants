@@ -9,6 +9,7 @@ category: international
 version: 1.1
 tax_year_notes: "Income earned in 2026 under the IS reform; ordinary calculation and filing preparation only. Earlier IBP periods, transition cases and the full carried-2025 measure chain require separate work; no final 2026 liability or live filing approval."
 tier: 2
+domain: income-tax
 ---
 
 # DR Congo corporate income tax: ordinary IS workpaper v1.1

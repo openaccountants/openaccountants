@@ -22,6 +22,7 @@ last_updated: 2026-10-30
 version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Norway individual tax residence (2026) v0.3

@@ -8,6 +8,7 @@ last_updated: 2026-11-04
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Malta personal-tax intake v0.2

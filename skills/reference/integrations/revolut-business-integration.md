@@ -8,6 +8,7 @@ description: >
 jurisdiction: GLOBAL
 last_updated: 2026-06-12
 tier: 2
+domain: references
 ---
 
 # Revolut Business Integration Skill v1.0

@@ -8,6 +8,7 @@ version: 1.0
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 tier: 2
+domain: formation
 ---
 
 # Madagascar company formation: SARL dossier and tax handoff

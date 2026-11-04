@@ -27,6 +27,7 @@ sources:
     title: "HMRC: Gibraltar tax treaties, entry into force and effective dates"
     as_of: "2026-10-22"
 tier: 2
+domain: cross-border
 ---
 
 # UK–Gibraltar: investment income and capital gains

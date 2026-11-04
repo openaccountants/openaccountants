@@ -8,6 +8,7 @@ tax_year: 2026
 tax_year_notes: "Year of assessment 1 July 2025 to 30 June 2026"
 last_updated: 2026-11-02
 tier: 2
+domain: cross-border
 ---
 
 # Eswatini cross-border: source, permanent establishment, non-resident taxes, branch profits tax and treaties (year to 30 June 2026) v0.1

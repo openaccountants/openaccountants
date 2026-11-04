@@ -13,6 +13,7 @@ validated: April 2026
 validation_status: ai-drafted-q3
 tier: 2
 status: needs_sources
+domain: vat-gst
 ---
 
 # Texas Sales and Use Tax (Form 01-114) v1.0

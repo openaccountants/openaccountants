@@ -8,6 +8,7 @@ version: 1.0
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 tier: 2
+domain: payroll
 ---
 
 # Madagascar employer payroll: IRSA remittance and social-control checklist

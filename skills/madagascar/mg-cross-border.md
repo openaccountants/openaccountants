@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 version: 1.0
 tier: 2
+domain: cross-border
 ---
 
 # Madagascar cross-border: non-resident services and PE triage

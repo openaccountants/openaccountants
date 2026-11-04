@@ -12,6 +12,7 @@ depends_on:
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Forming a business in France: micro-entrepreneur, EI, SARL, SAS and SA

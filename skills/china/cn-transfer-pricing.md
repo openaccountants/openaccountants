@@ -7,6 +7,7 @@ tax_year: 2026
 version: 1.0
 last_updated: 2026-10-29
 tier: 2
+domain: transfer-pricing
 ---
 
 # China transfer pricing: related-party returns, documentation and adjustments

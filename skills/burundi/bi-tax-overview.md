@@ -9,6 +9,7 @@ category: tax-overview
 version: 1.2
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
+domain: income-tax
 ---
 
 # Burundi: tax classification and compliance routing for 2026 v1.2

@@ -26,6 +26,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: income-tax
 ---
 
 # Kazakhstan Special Tax Regimes for Small Business (СНР) — Self-Employed Skill v1.0

@@ -9,6 +9,7 @@ category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
+domain: cross-border
 ---
 
 # Cross Border Payroll Coordination

@@ -11,6 +11,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Ryan Duguid"
 reviewed_on: 2026-11-03
 tier: 1
+domain: payroll
 ---
 
 # Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.3

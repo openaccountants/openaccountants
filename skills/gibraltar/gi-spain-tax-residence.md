@@ -18,6 +18,7 @@ sources:
     title: "Gibraltar official interpretive FAQ, November 2021, timing examples"
     as_of: "2026-10-22"
 tier: 2
+domain: cross-border
 ---
 
 # Gibraltar–Spain tax residence v0.3

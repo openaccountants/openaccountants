@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: 0.2
 tier: 2
+domain: formation
 ---
 
 # Benin SARL and SA formation working paper v0.2

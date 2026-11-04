@@ -8,6 +8,7 @@ tax_year: 2026
 last_updated: 2026-10-24
 category: international
 tier: 2
+domain: payroll
 ---
 
 # Svalbard: social insurance contributions in 2026 v0.1

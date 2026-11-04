@@ -8,6 +8,7 @@ last_updated: 2026-10-28
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Armenia LLC formation and first compliance steps v0.2

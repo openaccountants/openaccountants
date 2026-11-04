@@ -10,6 +10,7 @@ last_updated: 2026-11-01
 version: 0.1
 tax_year_notes: "2026 preparation from enacted statutory baseline; effective implementation and current filing workflow unresolved."
 tier: 2
+domain: formation
 ---
 
 # Somalia company registration packet and annual-report preparation v0.1

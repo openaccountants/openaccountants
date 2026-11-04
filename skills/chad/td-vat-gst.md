@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.1
 tier: 2
+domain: vat-gst
 ---
 
 # Chad value added tax v1.1

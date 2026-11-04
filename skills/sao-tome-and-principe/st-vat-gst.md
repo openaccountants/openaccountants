@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 0.2
 category: international
 tier: 2
+domain: vat-gst
 ---
 
 # Sao Tome and Principe VAT v0.2

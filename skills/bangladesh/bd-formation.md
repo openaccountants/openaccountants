@@ -14,6 +14,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: formation
 ---
 
 # Bangladesh Business Formation — Skill v1.0

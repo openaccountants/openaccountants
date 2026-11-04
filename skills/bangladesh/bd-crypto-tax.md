@@ -13,6 +13,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: crypto
 ---
 
 # Bangladesh Cryptocurrency — Legal Status & Tax — Skill v1.0

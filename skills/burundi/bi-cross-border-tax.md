@@ -9,6 +9,7 @@ category: cross-border
 version: 1.1
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 tier: 2
+domain: cross-border
 ---
 
 # Burundi: domestic cross-border residence, PE and withholding for 2026 v1.1

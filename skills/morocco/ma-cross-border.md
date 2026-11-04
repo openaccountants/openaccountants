@@ -14,6 +14,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 category: cross-border
 tier: 2
+domain: cross-border
 ---
 
 # Morocco cross-border tax v0.1

@@ -24,6 +24,7 @@ sources:
     title: "Supreme Court Rules 2000: 7 July 2026 consolidation, rules 25–31"
     as_of: "2026-10-22"
 tier: 2
+domain: income-tax
 ---
 
 # Gibraltar: income-tax assessment appeals and payment postponement

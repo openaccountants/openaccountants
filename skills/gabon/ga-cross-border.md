@@ -9,6 +9,7 @@ tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance law
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: cross-border
 ---
 
 # Gabon cross-border tax v0.1

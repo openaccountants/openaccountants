@@ -10,6 +10,7 @@ depends_on:
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: bookkeeping
 ---
 
 # Bookkeeping and record keeping in the UK for sole traders, partnerships and small companies

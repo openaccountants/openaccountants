@@ -12,6 +12,7 @@ depends_on:
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: bookkeeping
 ---
 
 # Bookkeeping in Spain: the books, the Plan General de Contabilidad and the annual accounts

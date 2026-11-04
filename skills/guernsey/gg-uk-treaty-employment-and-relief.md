@@ -9,6 +9,7 @@ last_updated: 2026-10-29
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Guernsey–UK: residence, employment, investment income and relief

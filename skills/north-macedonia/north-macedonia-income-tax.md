@@ -10,6 +10,7 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 0.3
 tier: 2
+domain: income-tax
 ---
 
 # North Macedonia personal income tax v0.3

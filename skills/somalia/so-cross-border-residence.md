@@ -9,6 +9,7 @@ tax_year_notes: "2026 preparation from enacted Act 37 statutory baseline; Regula
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: cross-border
 ---
 
 # Somalia cross-border residence working paper v0.1

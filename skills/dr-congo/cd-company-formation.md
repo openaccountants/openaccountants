@@ -9,6 +9,7 @@ category: formation
 version: 1.0
 tax_year_notes: "2026 research and preparation only; stated national-law, carried-law, implementation and filing holds remain."
 tier: 2
+domain: formation
 ---
 
 # DR Congo company formation and entity choice: research workpaper v1.0

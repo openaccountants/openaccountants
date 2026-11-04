@@ -21,6 +21,7 @@ last_updated: 2026-10-31
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # France: personal income tax for a household (impôt sur le revenu)

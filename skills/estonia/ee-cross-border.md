@@ -8,6 +8,7 @@ last_updated: 2026-10-24
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Estonia cross-border tax: residence, non-residents, withholding, exit (tax year 2026)

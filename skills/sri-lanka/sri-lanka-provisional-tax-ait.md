@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Lal kumarasiri"
 reviewed_on: 2026-11-03
 tier: 1
+domain: income-tax
 ---
 
 # Sri Lanka Provisional Tax / Advance Income Tax (AIT)

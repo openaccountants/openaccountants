@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Michael Spiteri Staines"
 reviewed_on: 2026-11-03
 tier: 1
+domain: cross-border
 ---
 
 # Malta Nomad Residence Permit: who qualifies and how the income is taxed

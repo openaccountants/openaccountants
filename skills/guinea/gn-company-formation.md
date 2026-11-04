@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: 1.1
 tier: 2
+domain: formation
 ---
 
 # Guinea company formation and entity choice v1.1

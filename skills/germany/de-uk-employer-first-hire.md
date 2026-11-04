@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-10-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # A UK company’s first employee in Germany: what the employer needs to arrange

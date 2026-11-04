@@ -21,6 +21,7 @@ last_updated: 2026-11-01
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Faroe Islands payroll and mandatory contributions v0.3

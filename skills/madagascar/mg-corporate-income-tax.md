@@ -8,6 +8,7 @@ version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
+domain: income-tax
 ---
 
 # Madagascar corporate income tax and business-regime routing v1.1

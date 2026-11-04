@@ -6,6 +6,7 @@ tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # MB Rst

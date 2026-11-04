@@ -12,6 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Werner Britz"
 reviewed_on: 2026-11-03
 tier: 1
+domain: transfer-pricing
 ---
 
 # South Africa Transfer Pricing

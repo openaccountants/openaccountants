@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Romania cross-border: residence, arriving, leaving, non-residents and withholding (2026)

@@ -17,6 +17,7 @@ tax_year: 2026
 last_updated: 2026-10-30
 version: 0.3
 tier: 2
+domain: transfer-pricing
 ---
 
 # Iceland transfer pricing v0.3

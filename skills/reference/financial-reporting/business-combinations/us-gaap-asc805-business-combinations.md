@@ -12,6 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "James Wallach"
 reviewed_on: 2026-11-03
 tier: 1
+domain: financial-statements
 ---
 
 # US GAAP Asc805 Business Combinations

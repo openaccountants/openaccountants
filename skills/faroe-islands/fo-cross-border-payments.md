@@ -21,6 +21,7 @@ last_updated: 2026-11-01
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Faroe Islands cross-border payments and migration v0.3

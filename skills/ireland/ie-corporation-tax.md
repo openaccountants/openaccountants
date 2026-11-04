@@ -8,6 +8,7 @@ last_updated: 2026-10-27
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Irish corporation tax (CT1): 2026 rates, preliminary tax, losses, reliefs and filing

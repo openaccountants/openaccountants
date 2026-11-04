@@ -9,6 +9,7 @@ version: 0.2
 last_updated: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Eswatini Payroll and Social Contributions v0.2

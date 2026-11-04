@@ -9,6 +9,7 @@ last_updated: 2026-10-27
 category: property
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Finland property transfer tax v0.5

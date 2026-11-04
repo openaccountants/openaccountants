@@ -7,6 +7,7 @@ last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
+domain: payroll
 ---
 
 # CO Payroll

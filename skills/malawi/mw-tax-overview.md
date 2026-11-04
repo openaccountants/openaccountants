@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
 version: 1.3
 tier: 2
+domain: income-tax
 ---
 
 # Malawi 2026 tax router and evidence checks v1.3

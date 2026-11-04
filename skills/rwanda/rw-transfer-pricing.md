@@ -9,6 +9,7 @@ last_updated: 2026-11-02
 depends_on:
   - rw-corporate-income-tax
 tier: 2
+domain: transfer-pricing
 ---
 
 # Rwanda transfer pricing: related persons, arm's length, documentation and APAs (2026) v0.1

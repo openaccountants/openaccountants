@@ -15,6 +15,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: income-tax
 ---
 
 # Pakistan IT & Freelance Export Tax — Skill v1.0

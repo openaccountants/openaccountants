@@ -19,6 +19,7 @@ tax_year: 2026
 last_updated: 2026-10-28
 version: 0.6
 tier: 2
+domain: corporate-tax
 ---
 
 # Faroe Islands corporate income tax v0.6

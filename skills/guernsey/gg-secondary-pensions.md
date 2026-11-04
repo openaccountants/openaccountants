@@ -9,6 +9,7 @@ last_updated: 2026-10-28
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Guernsey secondary pensions: enrolment, contributions and reporting

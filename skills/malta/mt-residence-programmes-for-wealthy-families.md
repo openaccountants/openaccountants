@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Malta residence programmes for wealthy families: non-dom residence, the Global Residence Programme, permanent residence and the nomad permit

@@ -19,6 +19,7 @@ last_updated: 2026-11-01
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Faroe Islands VAT registration and returns v0.4

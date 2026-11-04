@@ -10,6 +10,7 @@ depends_on:
   - pt-return-assembly
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # PT Return Assembly: Formulários, Anexos e Submissão

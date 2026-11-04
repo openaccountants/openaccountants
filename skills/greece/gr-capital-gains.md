@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Greece: capital gains tax for individuals, tax year 2026

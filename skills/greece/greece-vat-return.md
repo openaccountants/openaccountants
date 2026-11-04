@@ -19,6 +19,7 @@ last_updated: 2026-10-31
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Greece VAT (ΦΠΑ), 2026: rates, returns, reverse charge and penalties (v2.1)

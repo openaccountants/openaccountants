@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-10-12
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Residency regimes for wealthy families compared: Malta, Italy, Portugal, Switzerland, UAE, Singapore, UK, Ireland and Cyprus

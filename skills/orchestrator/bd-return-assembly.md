@@ -14,6 +14,7 @@ category: orchestrator
 depends_on:
   - bd-freelance-intake
 tier: 2
+domain: income-tax
 ---
 
 # Bangladesh Return Assembly — Orchestrator v0.1

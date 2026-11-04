@@ -12,6 +12,7 @@ depends_on:
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Starting a business in Italy (ditta individuale, partnerships, S.r.l. and S.p.A.)

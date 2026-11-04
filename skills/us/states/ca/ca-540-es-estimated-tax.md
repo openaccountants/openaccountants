@@ -5,6 +5,7 @@ version: 0.2
 jurisdiction: US-CA
 last_updated: 2026-06-12
 tier: 2
+domain: income-tax
 ---
 
 # CA Estimated Tax 540-ES Skill v0.2

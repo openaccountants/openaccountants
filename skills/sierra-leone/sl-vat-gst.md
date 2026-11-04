@@ -9,6 +9,7 @@ category: international
 version: 1.0
 tax_year_notes: "2026 research intake; unofficial2016baseline plus read2017–2026amendment passages; full operative law and filing not closed"
 tier: 2
+domain: vat-gst
 ---
 
 # Sierra Leone Goods and Services Tax v1.0

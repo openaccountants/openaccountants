@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: 1.4
 tier: 2
+domain: formation
 ---
 
 # Malawi company formation and registration v1.4

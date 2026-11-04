@@ -9,6 +9,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: income-tax
 ---
 
 # Germany: income tax for the self-employed, from bank statement to tax, tax year 2026

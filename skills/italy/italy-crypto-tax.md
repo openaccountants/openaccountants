@@ -12,6 +12,7 @@ depends_on:
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: crypto
 ---
 
 # Crypto-asset tax in Italy (cripto-attività) v1.1

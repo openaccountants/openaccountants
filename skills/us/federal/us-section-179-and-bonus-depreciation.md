@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-10-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: tax-optimization
 ---
 
 # Section 179 expensing and bonus depreciation in 2026, including business vehicles

@@ -10,6 +10,7 @@ depends_on:
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: crypto
 ---
 
 # Spain cryptocurrency: 2026 individual income tax and foreign-custody reporting v1.3

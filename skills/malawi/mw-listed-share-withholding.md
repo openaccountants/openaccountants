@@ -20,6 +20,7 @@ tax_year_notes: "Intended 2026 research draft; incomplete operative amendment/co
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: cross-border
 ---
 
 # Malawi listed-share disposal withholding v0.1

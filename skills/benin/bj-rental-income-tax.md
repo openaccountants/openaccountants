@@ -8,6 +8,7 @@ tax_year_notes: "2026 ordinary CGI rental rules; June platform amendment recorde
 last_updated: 2026-11-04
 version: 0.2
 tier: 2
+domain: income-tax
 ---
 
 # Benin rental IRF and rent withholding working paper v0.2

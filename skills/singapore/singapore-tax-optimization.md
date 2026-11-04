@@ -11,6 +11,7 @@ depends_on:
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: tax-optimization
 ---
 
 # Singapore Tax Optimization

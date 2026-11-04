@@ -20,6 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.4
 tier: 2
+domain: income-tax
 ---
 
 # Liechtenstein individual income and wealth tax v0.4

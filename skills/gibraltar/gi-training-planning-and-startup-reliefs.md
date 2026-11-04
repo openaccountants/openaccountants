@@ -12,6 +12,7 @@ sources:
     title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, Schedule 3 paragraphs 2, 16, 17 and 17A"
     as_of: "2026-10-22"
 tier: 2
+domain: tax-optimization
 ---
 
 # Gibraltar: training, planning costs and historic start-up relief

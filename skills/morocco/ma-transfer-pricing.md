@@ -15,6 +15,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 category: transfer-pricing
 tier: 2
+domain: transfer-pricing
 ---
 
 # Morocco transfer pricing v0.1

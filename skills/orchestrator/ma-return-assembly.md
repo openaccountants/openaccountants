@@ -10,6 +10,7 @@ category: orchestrator
 depends_on:
   - ma-freelance-intake
 tier: 2
+domain: income-tax
 ---
 
 # Morocco Return Assembly — Filing Package Orchestrator (assemblage de la déclaration marocaine)

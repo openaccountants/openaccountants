@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Maria Valeria Benvenuti"
 reviewed_on: 2026-11-03
 tier: 1
+domain: payroll
 ---
 
 # AR Social Contributions

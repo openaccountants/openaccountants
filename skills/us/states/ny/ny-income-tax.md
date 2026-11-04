@@ -5,6 +5,7 @@ version: 0.1
 jurisdiction: US-NY
 last_updated: 2026-06-12
 tier: 2
+domain: income-tax
 ---
 
 # New York IT-201 Resident Return Skill v0.1

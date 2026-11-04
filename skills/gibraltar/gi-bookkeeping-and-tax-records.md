@@ -15,6 +15,7 @@ sources:
     title: "Gibraltar Companies Act 2014: consolidation dated 1 August 2025, section 239"
     as_of: "2026-10-22"
 tier: 2
+domain: bookkeeping
 ---
 
 # Gibraltar: bookkeeping and tax records

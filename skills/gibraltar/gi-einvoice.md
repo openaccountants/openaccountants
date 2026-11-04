@@ -24,6 +24,7 @@ sources:
     title: "Companies Act 2014, sections 179–180, 1 August 2025 consolidation"
     as_of: "2026-10-22"
 tier: 2
+domain: e-invoicing
 ---
 
 # Gibraltar: invoices and public procurement e-invoicing

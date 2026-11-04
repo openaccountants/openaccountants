@@ -37,6 +37,7 @@ sources:
     as_of: "2026-10-28"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: corporate-tax
 ---
 
 # Gibraltar corporate tax and filing v0.20

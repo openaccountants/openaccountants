@@ -8,6 +8,7 @@ last_updated: 2026-10-16
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Cross-border tax workflow: the shared method for any case that touches more than one country

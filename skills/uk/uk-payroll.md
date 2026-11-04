@@ -10,6 +10,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # UK employer payroll: PAYE, RTI, statutory pay, minimum wage and year-end (2026/27, with 2025/26 notes)

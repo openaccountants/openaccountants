@@ -18,6 +18,7 @@ last_updated: 2026-10-27
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Finland Corporate Cross-Border Tax v0.1

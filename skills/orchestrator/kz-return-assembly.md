@@ -14,6 +14,7 @@ category: orchestrator
 depends_on:
   - kz-freelance-intake
 tier: 2
+domain: income-tax
 ---
 
 # Kazakhstan Return Assembly — Orchestrator v0.1

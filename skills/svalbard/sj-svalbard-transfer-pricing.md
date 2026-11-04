@@ -8,6 +8,7 @@ tax_year: 2026
 last_updated: 2026-10-24
 category: transfer-pricing
 tier: 2
+domain: transfer-pricing
 ---
 
 # Svalbard: transfer pricing in 2026 v0.1

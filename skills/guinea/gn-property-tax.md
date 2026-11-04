@@ -8,6 +8,7 @@ tax_year_notes: "Enacted 31 March 2026 replacement text; earlier periods and Oct
 last_updated: 2026-11-01
 version: 1.2
 tier: 2
+domain: income-tax
 ---
 
 # Guinea CFU: property classification and rate workpaper v1.2

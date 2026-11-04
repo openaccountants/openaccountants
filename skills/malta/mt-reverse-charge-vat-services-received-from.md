@@ -7,6 +7,7 @@ last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 version: 1.0
+domain: vat-gst
 ---
 
 # Reverse charge VAT in Malta on services received from suppliers abroad

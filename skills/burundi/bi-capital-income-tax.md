@@ -9,6 +9,7 @@ version: 0.2
 job: individual-capital-income-disposal-gains
 tax_year_notes: "Calendar 2026; January and July enacted budget periods distinguished. Partial computation scope; independent AI source review and focused repair closure passed."
 tier: 2
+domain: income-tax
 ---
 
 # Burundi: individual capital income and disposal gains for 2026 v0.2

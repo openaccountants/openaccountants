@@ -9,6 +9,7 @@ last_updated: 2026-10-29
 category: financial-statements
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: financial-statements
 ---
 
 # Guernsey: company accounts, records and annual reporting

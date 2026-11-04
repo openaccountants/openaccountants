@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 0.2
 category: international
 tier: 2
+domain: payroll
 ---
 
 # Sao Tome and Principe Payroll and Social Contributions v0.2

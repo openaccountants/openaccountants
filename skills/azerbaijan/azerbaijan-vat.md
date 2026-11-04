@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
+domain: vat-gst
 ---
 
 # Azerbaijan Value Added Tax v2.1

@@ -9,6 +9,7 @@ last_updated: 2026-10-30
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
+domain: vat-gst
 ---
 
 # Kosovo VAT v2.1

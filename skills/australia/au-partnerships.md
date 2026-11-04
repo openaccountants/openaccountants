@@ -11,6 +11,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Ryan Duguid"
 reviewed_on: 2026-11-03
 tier: 1
+domain: corporate-tax
 ---
 
 # Australia Partnerships -- Division 5 Flow-Through Taxation Skill v1.1

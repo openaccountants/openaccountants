@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-10-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # New Jersey gross income tax (Forms NJ-1040 and NJ-1040NR), including sole proprietors

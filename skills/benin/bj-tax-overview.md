@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.2
 tier: 2
+domain: income-tax
 ---
 
 # Benin tax preparation map v0.2

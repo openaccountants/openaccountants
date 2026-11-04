@@ -8,6 +8,7 @@ tax_year_notes: "2026 research intake; conditional source baseline, full current
 last_updated: 2026-11-01
 version: 1.0
 tier: 2
+domain: income-tax
 ---
 
 # Sierra Leone Tax Intake and Figure Map v1.0

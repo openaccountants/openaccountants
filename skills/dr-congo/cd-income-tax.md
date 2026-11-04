@@ -9,6 +9,7 @@ category: international
 version: 1.0
 tax_year_notes: "Intended 2026 IRPP research workpaper only. Original 2025 carried provisions and stated legal/procedure gaps remain unresolved; no final 2026 liability or live-filing approval."
 tier: 2
+domain: income-tax
 ---
 
 # DR Congo individual income tax: IRPP research workpaper v1.0

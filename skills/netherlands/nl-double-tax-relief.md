@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.2

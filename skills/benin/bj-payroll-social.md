@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 0.2
 tier: 2
+domain: payroll
 ---
 
 # Benin employer payroll tax VPS working paper v0.2

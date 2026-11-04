@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.2
 tier: 2
+domain: income-tax
 ---
 
 # Burkina Faso corporate tax (IS) v1.2

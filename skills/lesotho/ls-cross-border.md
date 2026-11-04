@@ -10,6 +10,7 @@ last_updated: 2026-11-02
 depends_on:
   - ls-corporate-income-tax
 tier: 2
+domain: cross-border
 ---
 
 # Lesotho cross-border: residence, source, withholding on non-residents, branch profits and foreign tax credit (2026-27) v0.1

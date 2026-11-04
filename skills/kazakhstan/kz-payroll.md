@@ -16,6 +16,7 @@ depends_on:
   - social-contributions-workflow-base
 tier: 2
 status: needs_sources
+domain: payroll
 ---
 
 # Kazakhstan Payroll & Salary Taxes — Skill v1.0

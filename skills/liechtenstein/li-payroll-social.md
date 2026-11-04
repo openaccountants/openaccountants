@@ -20,6 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 0.3
 tier: 2
+domain: payroll
 ---
 
 # Liechtenstein payroll and social contributions v0.3

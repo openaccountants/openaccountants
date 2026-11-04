@@ -8,6 +8,7 @@ category: cross-border
 version: 0.2
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
 tier: 2
+domain: cross-border
 ---
 
 # Mauritania Cross-border Tax v0.2

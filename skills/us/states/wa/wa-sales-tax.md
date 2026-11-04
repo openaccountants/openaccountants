@@ -10,6 +10,7 @@ depends_on:
 category: state
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Washington retail sales and use tax: 2026 collection, sourcing and filing

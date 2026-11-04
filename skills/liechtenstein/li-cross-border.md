@@ -19,6 +19,7 @@ tax_year: 2026
 last_updated: 2026-10-30
 version: 0.5
 tier: 2
+domain: cross-border
 ---
 
 # Liechtenstein cross-border tax preparation v0.5

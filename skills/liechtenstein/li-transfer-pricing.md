@@ -18,6 +18,7 @@ tax_year: 2026
 last_updated: 2026-10-30
 version: 0.4
 tier: 2
+domain: transfer-pricing
 ---
 
 # Liechtenstein transfer pricing v0.4

@@ -8,6 +8,7 @@ last_updated: 2026-10-16
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # India tax residency for individuals: resident, RNOR and non-resident (Tax Year 2026-27, with FY 2025-26)

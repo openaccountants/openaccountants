@@ -8,6 +8,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 version: 1.0
 tier: 2
+domain: transfer-pricing
 ---
 
 # Togo Transfer Pricing v1.0

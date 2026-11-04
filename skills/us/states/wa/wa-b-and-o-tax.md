@@ -11,6 +11,7 @@ depends_on:
   - us-tax-workflow-base
 validated: April 2026
 tier: 2
+domain: income-tax
 ---
 
 # Washington B&O Tax v1.0

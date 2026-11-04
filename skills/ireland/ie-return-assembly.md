@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.2

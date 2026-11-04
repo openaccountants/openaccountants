@@ -10,6 +10,7 @@ category: international
 depends_on:
   - vat-workflow-base
 tier: 2
+domain: vat-gst
 ---
 
 # Montenegro VAT (PDV), tax year 2026

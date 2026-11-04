@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-10-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: corporate-tax
 ---
 
 # S corporation ordinary business loss on Schedule K-1 (Form 1120-S)

@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-02
 category: payroll
 tier: 2
+domain: payroll
 ---
 
 # Kenyan payroll: PAYE, NSSF, SHIF and the Affordable Housing Levy (2026)

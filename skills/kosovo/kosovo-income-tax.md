@@ -11,6 +11,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants skill License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Kosovo personal income tax v0.2

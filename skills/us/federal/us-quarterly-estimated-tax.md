@@ -11,6 +11,7 @@ depends_on:
 category: federal
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # US Quarterly Estimated Tax

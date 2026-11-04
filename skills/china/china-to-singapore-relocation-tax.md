@@ -6,6 +6,7 @@ tax_year: 2025
 last_updated: 2026-08-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # China to Singapore: domicile, the CRS reckoning, and a clean landing

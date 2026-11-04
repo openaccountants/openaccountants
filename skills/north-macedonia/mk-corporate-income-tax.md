@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 0.3
 category: international
 tier: 2
+domain: corporate-tax
 ---
 
 # North Macedonia corporate income tax v0.3

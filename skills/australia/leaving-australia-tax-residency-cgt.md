@@ -6,6 +6,7 @@ tax_year: 2025
 last_updated: 2026-09-26
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Leaving Australia: residency, the CGT departure choice, and what follows you

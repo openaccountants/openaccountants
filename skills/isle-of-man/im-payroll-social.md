@@ -8,6 +8,7 @@ last_updated: 2026-10-30
 version: 0.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Isle of Man: payroll and National Insurance (2026/27)
