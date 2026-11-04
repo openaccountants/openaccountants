@@ -6,7 +6,6 @@ tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 ---
 
 # Afghanistan Corporate Income Tax
@@ -28,3 +27,5 @@ Afghan companies and other legal persons pay a flat 20% corporate income tax on 
 - **Loss carry-forward** — Trading losses may be carried forward (commonly up to 3 years) ((approx — confirm carry-forward period))  _(Income Tax Law 2009)_
 - **Corporate return filing deadline** — Within 3 months after the end of the tax year ((approx — confirm))  _(Income Tax Law 2009)_
 - **Corporate tax payment** — Balance due with the annual return; BRT paid quarterly  _(Income Tax Law 2009)_
+
+Test line, not for merge.
