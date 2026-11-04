@@ -4,15 +4,13 @@ description: "Working method for the accountant supporting a seller of Malta imm
 jurisdiction: MT
 category: international
 tax_year: 2026
-last_updated: 2026-10-23
-version: 1.1
+last_updated: 2026-11-04
+version: 1.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Michael Cutajar"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 ---
 
-# How to submit capital gain taxes in Malta v1.1
+# How to submit capital gain taxes in Malta v1.2
 
 Tax year 2026. The rates below are the article 5A rates the Malta Tax and Customs Administration (MTCA) publishes for transfers made on or after 1 January 2015; they apply unchanged to deeds in 2026. Full rules, exclusions and article 5 gains are in `mt-capital-gains` and `mt-property-transfer-tax-the-sale-immovable`.
 
@@ -65,7 +63,7 @@ When the occupancy period for the own-residence exemption is uncertain at draft 
 - **The 2% first-home rate.** An individual (or two co-owners) who declared on the purchase deed that the property was bought as their sole ordinary residence, and sells within 3 years while owning no other residential property, pays 2%.
 - **Forgetting the notary is the collector.** The FWT is withheld and remitted by the notary on the deed. Late or wrong figures don't just cost interest; they can hold up the deed itself.
 - **Own-residence exemption assumed, not proven.** The 3-year ownership and occupation and the 12-month transfer window are strict. Assume it and the client may face FWT they never budgeted for.
-- **Undervaluing.** The department's architect can revalue. If the market value it sets exceeds the declared price by more than 15%, an assessment is issued on both buyer and seller.
+- **Undervaluing.** The department's architect can revalue. For the undervalue test, compare the declared value with 85% of the established market value, not the market value with 115% of the declared value. The buyer-side duty and seller-side tax have separate statutory assessment rules; use their respective provisions before calculating additions.
 
 ### [method:cross_check] Cross-checks before signing
 
@@ -97,7 +95,7 @@ The transfer is executed on a notarial deed. A promise of sale is presented at t
 | own_residence | exempt | Owned and occupied as own residence 3 consecutive years before the transfer, sold within 12 months of vacating, declared as main residence: exempt | ITA art. 5A(4) and art. 5(5)(c); MTCA FAQ, Q9 |
 | brokerage | deductible with notary fee | Brokerage fees paid by the transferor are deductible from the transfer value if the Tax on Property Transfers Rules' verification conditions are met | MTCA FAQ, Q18 |
 | buyer_duty | 5% | Buyer's duty: general 5% (MTCA example: EUR 10,000 on EUR 200,000), 1% provisional duty at promise of sale | MTCA General Information on Duty |
-| valuation_tolerance | (missing) | 15% tolerance between declared value and the department's valuation; above that, assessment on buyer and seller | MTCA Selling Property |
+| valuation_tolerance | (missing) | Undervalue test: declared value below 85% of established market value; apply the separate buyer-duty and seller-tax assessment provisions | MTCA Selling Property |
 
 ## FLAGS
 
@@ -142,3 +140,41 @@ expected:
 Not yet confirmed:
 - The brokerage deduction conditions (Tax on Property Transfers Rules) and the 21-day promise-of-sale and DDT1 steps were taken from MTCA pages, not re-read in the rules themselves.
 - Budget 2027 is presented on 26 October 2026. Any change to art. 5A rates or reliefs for 2027 is not reflected here.
+
+## Targeted hypothetical valuation checks
+
+Declared EUR 100,000 against market EUR 116,000 exceeds 85% of market: the undervalue threshold alone is not crossed. Other statutory assessment grounds remain separate. Against market EUR 120,000, the same declaration falls below the threshold.
+
+```oa-check
+name: Market 116000: declared value above 85 percent threshold
+inputs:
+  declared: 100000
+  market: 116000
+steps:
+  - threshold: pct(market,85)
+  - margin: declared - threshold
+expected:
+  threshold: 98600
+  margin: 1400
+```
+
+```oa-check
+name: Market 120000: declared value below 85 percent threshold
+inputs:
+  declared: 100000
+  market: 120000
+steps:
+  - threshold: pct(market,85)
+  - shortfall: threshold - declared
+expected:
+  threshold: 102000
+  shortfall: 2000
+```
+
+
+### Targeted audit source checks, 4 November 2026
+
+Corrected the denominator in the undervalue comparison; prescribed inherited acquisition-value adjustments and temporary relief eligibility remain held. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- Cap. 123 article 5A(12)(d): https://legislation.mt/eli/cap/123/eng/pdf (read 2026-11-04).
+- Cap. 364 article 52(1): https://legislation.mt/eli/cap/364/eng/pdf (read 2026-11-04).

@@ -1,0 +1,105 @@
+{
+  "reviewer": "/root/malta_audit_property_residence",
+  "writer": "business agent",
+  "read_date": "2026-11-04",
+  "baseline": "63d81783",
+  "result": "PASS_FOR_BOUNDED_CORRECTIONS",
+  "files": [
+    {
+      "path": "skills/malta/malta-financial-statements.md",
+      "sha256": "5a992c3854f51fe00c15710355ae989a554c59241ccd0b3f53197cc3ab7002b3",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/malta-financial-statements.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/malta-bookkeeping.md",
+      "sha256": "ace7805525900f6860805f7ba6801a3997e725326769a63609bc9841a52a91c2",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/malta-bookkeeping.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/malta-tax-optimization.md",
+      "sha256": "268c4992982399952045439adbcc67d8c2a3ccba520b477f9e43ff8f4b16bd7c",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/malta-tax-optimization.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-corporate-tax.md",
+      "sha256": "c15a486b4e1301c8bcec369fa775104b04c22dc6eb36e02fe269a9e523a8cd82",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/mt-corporate-tax.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/malta-transfer-pricing.md",
+      "sha256": "103370ba81a6dbd79e51da5eb45ef2c6c4345a435a31f29faccadcc0b7a0cad4",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/malta-transfer-pricing.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-holding-company-participation-exemption.md",
+      "sha256": "6ea4ce28a5250051f2564929b7e01d3d57ae8e9bfeae16a2750b618b833f084d",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/mt-holding-company-participation-exemption.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-foundations-and-trusts.md",
+      "sha256": "ef8ab3593e0fc7208fb85b7adc71ff82e2e2c3b8bebf4c3cc72bc3395b2c0ede",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/mt-foundations-and-trusts.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-family-office-setup.md",
+      "sha256": "1b2a24c91716e3738a316a80eb1950154d71f82b03fa4606afdf6718948854fd",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/mt-family-office-setup.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/mt-company-residence-and-substance.md",
+      "sha256": "134d939634134bd0467fc65131e488cb8c0737e48cd239498a152026af385780",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/mt-company-residence-and-substance.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/malta-formation.md",
+      "sha256": "92380ed9ed4a4ce29518848ea89557acb3801809e5033c4077ca1383e3bd3a45",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/malta-formation.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    },
+    {
+      "path": "skills/malta/selling-a-company-in-malta.md",
+      "sha256": "2c86b483992bbe4ed44a95a505965f0f576dc37bb8d0769d95392657629e1d48",
+      "ledger": "evidence/malta-deep-audit-20261104/ledgers/selling-a-company-in-malta.md",
+      "old_executable_blocks_preserved": true,
+      "examples": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+      "examples_pass": true
+    }
+  ],
+  "blocking_findings": [],
+  "remaining_limits": [
+    "No whole-Guide accountant approval or full-Malta certification.",
+    "Class2 deduction and real-asset classification remain held.",
+    "Refund entitlement, retained-profit comparator and article43(6) treatment remain conditional.",
+    "Prescribed property-company share provisional tax and notification timing remain execution holds.",
+    "Portal, treaty, domicile and specialist structure questions remain unresolved as disclosed."
+  ]
+}

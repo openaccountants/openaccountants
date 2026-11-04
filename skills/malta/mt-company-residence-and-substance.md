@@ -1,16 +1,17 @@
 ---
 name: mt-company-residence-and-substance
 description: "When a company or family holding company is tax resident in Malta: the Income Tax Act test (incorporated in Malta, or managed and controlled in Malta), what the Act says on a company's domicile and the remittance basis, the controlled foreign company rule with its carve-outs, interest limitation and exit tax under the anti-tax avoidance regulations (S.L. 123.187), and the management and control facts to evidence. Trigger on: Malta company residence, management and control Malta, Malta CFC rules, ATAD Malta, Malta holding company substance."
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-05
+last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Michael Cutajar"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 ---
 
 # When a family holding company is tax resident in Malta
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/mt-company-residence-and-substance.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Figures are for tax year 2026. Malta taxes by year of assessment, so income of calendar 2026 is assessed in year of assessment 2027. This Guide covers when a company is "resident in Malta" under the Income Tax Act (Cap. 123), what the Act says about a company that is not domiciled in Malta, the controlled foreign company (CFC) rule, the interest limitation rule and exit taxation in the European Union Anti-Tax Avoidance Directives Implementation Regulations (S.L. 123.187), and the facts a family must be able to show about where its company is managed. It is written for a family holding company and its adviser. The statute text is quoted from the consolidated texts on legislation.mt. Amounts in the worked examples are hypothetical and labelled as such.
 
@@ -49,7 +50,7 @@ What follows from that text:
 - **Foreign company run from Malta.** A company incorporated outside Malta is resident in Malta where "the control and management" of its business is exercised in Malta. "Company" in article 2(1) includes "any body of persons constituted, incorporated or registered outside Malta, and of a nature similar to a company" constituted under Malta law (paragraph (b)(i) of the definition). Such a company is then charged under article 4(1) and article 56(6), subject to the domicile question below.
 - The Act does not define "management and control" or list the facts that decide it. No allowed page prints such a list. See the section on facts below.
 
-## Domicile of a company
+## Domicile of a company: held for common-law and authority guidance
 
 - Article 4(1) proviso (i) of [Cap. 123](https://legislation.mt/eli/cap/123/eng/pdf) reads: "in the case of income arising outside Malta to a person who is not ordinarily resident in Malta or not domiciled in Malta, the tax shall be payable on the amount received in Malta". Proviso (ii) reads: "no tax shall be payable on capital gains arising outside Malta to a person who is not ordinarily resident in Malta or not domiciled in Malta". Both use "person", and "person" in article 2(1) includes "a body of persons".
 - The Act does not define when a company is domiciled or ordinarily resident in Malta. The saved consolidated text of Cap. 123 was searched for a definition of "domicile", "domiciled" and "ordinarily resident" and holds none. Whether a company incorporated outside Malta and managed and controlled in Malta is "not domiciled in Malta", and so taxed on the remittance basis for foreign income, is not settled by the Act text. Do not apply the remittance basis to a company without the adviser's written basis for it.
@@ -57,7 +58,7 @@ What follows from that text:
 
 ## Management and control: the facts to evidence
 
-No allowed Malta page prints a substance test for a holding company, or the factors that decide where "control and management" is exercised. The pages read for this Guide were the Income Tax Act (Cap. 123), the Income Tax Management Act (Cap. 372) and S.L. 123.187 on legislation.mt. The Residency Malta family office page and the mtca.gov.mt site both refused access to the page reader and could not be read. The only "significant people functions" wording found is in two other rules: the CFC rule in regulation 7(2) of S.L. 123.187 (below), and the participation exemption in article 12(1)(u) of Cap. 123 for a subsidiary resident in a jurisdiction on the EU list of non-cooperative jurisdictions (see `mt-holding-company-participation-exemption`).
+The sources inspected in this Guide did not establish a complete Malta test for company domicile, treaty residence or factual management and control. This is a research limitation, not a statement that no official guidance or case law exists. The pages read for this Guide were the Income Tax Act (Cap. 123), the Income Tax Management Act (Cap. 372) and S.L. 123.187 on legislation.mt. The Residency Malta family office page and the mtca.gov.mt site both refused access to the page reader and could not be read. The only "significant people functions" wording found is in two other rules: the CFC rule in regulation 7(2) of S.L. 123.187 (below), and the participation exemption in article 12(1)(u) of Cap. 123 for a subsidiary resident in a jurisdiction on the EU list of non-cooperative jurisdictions (see `mt-holding-company-participation-exemption`).
 
 Where the company was incorporated outside Malta, or where another country claims it is resident there, residence turns on facts. The following are practice questions an adviser will ask. They are not law and no Malta statute lists them:
 
@@ -171,10 +172,56 @@ If instead the foreign company had its own staff who chose and managed the bonds
 - Refuse to state that a company "has substance" or is "managed in Malta" on the client's say-so. It is a finding of fact on evidence.
 - For setting up the structure see `mt-family-office-setup`; for choosing a country see `family-holding-company-location-compared`.
 
-## Sources
+## Executable checks of the CFC hypothetical
+
+These reproduce only the accounting-profit and operating-cost arithmetic above. CFC control, the low-tax comparator, excluded cost categories, non-genuine arrangements and attribution to Malta significant people functions must be established separately. An arithmetic excess alone does not create a CFC inclusion.
+
+```oa-check
+name: Accounting profit and operating-cost carve-out arithmetic
+inputs:
+  interest_income: 900000
+  qualifying_operating_costs: 50000
+steps:
+  - accounting_profit: interest_income - qualifying_operating_costs
+  - cost_based_limit: qualifying_operating_costs * 0.10
+  - profit_above_cost_limit: max(0, accounting_profit - cost_based_limit)
+expected:
+  accounting_profit: 850000
+  cost_based_limit: 5000
+  profit_above_cost_limit: 845000
+```
+
+```oa-check
+name: Small-profit carve-out boundary with both stated ceilings met
+inputs:
+  accounting_profit: 750000
+  non_trading_income: 75000
+steps:
+  - accounting_profit_excess: max(0, accounting_profit - 750000)
+  - non_trading_excess: max(0, non_trading_income - 75000)
+  - combined_excess: accounting_profit_excess + non_trading_excess
+expected:
+  accounting_profit_excess: 0
+  non_trading_excess: 0
+  combined_excess: 0
+```
+
+
+## Historical source references
 
 - Income Tax Act, Cap. 123, consolidated text: https://legislation.mt/eli/cap/123/eng/pdf (art. 2(1) "resident in Malta", "company", "person", "body of persons"; art. 4(1) and provisos; art. 12(1)(u); art. 56(6); art. 56(27)).
 - European Union Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (Legal Notice 411 of 2018, as amended by Legal Notices 348 of 2019 and 29 of 2020): https://legislation.mt/eli/sl/123.187/eng/pdf (regs. 2 to 8).
 - Income Tax Management Act, Cap. 372 (art. 44(2A) interest on deferred exit tax), read on legislation.mt.
 
 This Guide is a working reference. It is not tax advice for any particular company.
+
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| Cap123 art2/4 plusresearchlimitation | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL123.187 reg7(3)(b) | https://legislation.mt/eli/sl/123.187/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

@@ -1,10 +1,10 @@
 ---
 name: malta-bookkeeping
 description: "Use this skill whenever asked about bookkeeping, a chart of accounts, expense classification, asset capitalisation, depreciation against tax wear and tear, bank reconciliation, record keeping or management accounts for a Maltese company or self-employed person in 2026. Covers a recommended chart of accounts mapped to GAPSME statements, revenue and VAT recording, which expenses fail the Income Tax Act test, the S.L. 123.01 minimum years for wear and tear and the EUR 14,000 car cap, the EUR 1,160 VAT capital goods threshold, record retention (10 years Companies Act, 9 years income tax, 6 years VAT), and the GAPSME and Companies Act size tests. Trigger on: chart of accounts Malta, nominal codes, bookkeeping Malta, capitalise or expense, depreciation Malta, wear and tear, bank reconciliation, GAPSME, small company accounts Malta."
-version: 1.2
+version: 1.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-04
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -12,7 +12,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
-# Malta Bookkeeping v1.2
+# Malta Bookkeeping v1.3
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-bookkeeping.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Tax year 2026. This skill is the day-to-day bookkeeping workflow. Statutory accounts, size tests and audit are in `malta-financial-statements`; individual tax in `malta-income-tax`; company tax in `mt-corporate-tax`; provisional tax in `mt-estimated-tax`; VAT in `malta-vat-return`; social security in `malta-ssc`; payroll in `malta-payroll`.
 
@@ -190,7 +192,7 @@ The tax test is article 14(1) of the Income Tax Act: outgoings "wholly and exclu
 | Fines and penalties | 6710 | Not deductible | art. 26 |
 | Depreciation | 6500 | Added back; wear and tear deducted instead | art. 14(1)(f); S.L. 123.01 |
 | General bad debt provision | 6610 | Added back; specific bad debts proved to the Commissioner are deductible | art. 14(1)(d) |
-| SSC Class 2 | 6120 | No deduction in the Income Tax Act; `malta-income-tax` treats it as a memo. Confirm on the MTCA return | Cap. 123 Part IV |
+| SSC Class 2 | 6120 | Held: no positive authority for a personal Class 2 deduction was established in this audit. Keep as a memo, not an automatic deduction or a proved statutory disallowance; see `malta-income-tax` | Cap. 123 Part IV |
 | Drawings | 3300 | Not an expense | |
 
 ## Section 5: Asset or Expense
@@ -214,7 +216,7 @@ These are tax minimums, not accounting lives. Accounting depreciation follows th
 | Electrical and plumbing installations and sanitary fittings | 15 |
 | Cable and pipeline infrastructure | 20 |
 
-Rules: straight line on cost (rule 3); a full year's allowance in the year of acquisition and none in the year of disposal (rule 7); only with proper cost records (rule 5); cut to the business-use share (rule 11). Industrial buildings: at most 2% of cost a year, excluding the land (Cap. 123 art. 14(1)(f), proviso (i)), plus a one-tenth initial deduction in the first year of use (art. 14(1)(j)). Cars: cost capped at EUR 14,000 (S.L. 123.07 rule 3(1)).
+Rules: straight line on cost (rule 3); a full year's allowance on a qualifying acquisition during the year; rule 7(b) denies the deduction for a disposal or other listed event before the year's last day. A last-day disposal requires separate analysis (rule 7); only with proper cost records (rule 5); cut to the business-use share (rule 11). Industrial buildings: at most 2% of cost a year, excluding the land (Cap. 123 art. 14(1)(f), proviso (i)), plus a one-tenth initial deduction in the first year of use (art. 14(1)(j)). Cars: cost capped at EUR 14,000 (S.L. 123.07 rule 3(1)).
 
 ## Section 6: Profit and Loss Layout
 
@@ -294,7 +296,7 @@ Statement layouts differ by bank and change over time. Map the columns from the 
 | Card payment | Expense; check the merchant and the receipt |
 | Bank charges | 6220 |
 | Utility company | 6020 |
-| MTCA (tax, VAT, SSC) payment | Balance sheet (2140 to 2170, 1250), never a P&L expense |
+| MTCA (tax, VAT, SSC) payment | Clear the correctly accrued liability or provisional-tax asset. This payment entry does not decide the original expense: employer SSC, nonrecoverable VAT, tax and penalties need their own charge or capitalisation analysis |
 | Own-account transfer | Exclude |
 
 ## Section 9: Size Tests (summary)
@@ -354,7 +356,7 @@ An Article 10 registrant invoices EUR 2,360 including 18% VAT and buys a printer
 
 - Sale: 2,360 ÷ 1.18 = EUR 2,000 to 4000; EUR 360 to 2140.
 - Purchase: 1,416 ÷ 1.18 = EUR 1,200 to 1150; EUR 216 to 1240.
-- The printer costs at least EUR 1,160 whether or not VAT is counted, so it goes on the VAT capital goods list (S.L. 406.12). It is "other machinery" for tax: minimum 5 years, EUR 240 wear and tear in 2026.
+- The printer costs at least EUR 1,160 whether or not VAT is counted, so it goes on the VAT capital goods list (S.L. 406.12). For this illustration, documented preponderating use places it in "other machinery": minimum 5 years, EUR 240 wear and tear in 2026. Do not apply that classification automatically to a printer-copier: electronic equipment has a different life, and rule 4 requires classification by preponderating use.
 - Net VAT for these two lines: 360 − 216 = EUR 144 payable.
 
 ```oa-check
@@ -388,7 +390,7 @@ expected:
 5. Payroll: are all wages run through FSS?
 6. Which bank exports are available, and in what format?
 
-## Sources
+## Historical source references
 
 | Source | URL | Read on |
 |---|---|---|
@@ -406,10 +408,22 @@ expected:
 Not yet confirmed:
 - Whether Class 2 social security contributions are deductible on the 2026 return.
 - Whether the VAT capital goods threshold of EUR 1,160 is tested with or without VAT (see `malta-vat-return`).
-- Which accounts use the new article 185(1) limits. L.N. 61 of 2026 brought article 26 of Act I of 2026 into force on 20 March 2026 with no transitional rule. MBR's informative note on L.N. 61 says the new limits are mandatory for financial reporting periods starting on or after 20 March 2026 and bars early or retroactive use; on that reading a 31 December 2026 year end still uses the previous limits. `malta-financial-statements` reads it by balance sheet date instead.
+- MBR's instruction applies the higher article 185(1) limits to periods starting on or after 20 March 2026 and prohibits early/retroactive use. This audit corrects the conflicting balance-sheet-date instruction in `malta-financial-statements`; a calendar-year 2026 period uses the previous limits.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
 > Contributed by Michael Cutajar.
+
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| Cap123 arts14/26 | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL123.01 rule7(b) | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| MBR commencement instruction | https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1 | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

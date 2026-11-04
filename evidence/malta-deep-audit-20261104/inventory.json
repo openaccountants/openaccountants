@@ -1,0 +1,299 @@
+{
+  "repository": "openaccountants/openaccountants",
+  "head": "ab692cc2ef1c6306de9435b63448294d30fc4052",
+  "read_date": "2026-11-04",
+  "guides": [
+    {
+      "path": "skills/malta/how-to-account-for-rental-income-in-malta.md",
+      "sha256": "afe4ed3bd35f2aca8f4bb879e56348938bec352e3de53689ff1d5e24b7d40d47",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          10,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md",
+      "sha256": "b6a2ebe30aaed13f5b1f2c89b3c5c18fd6469b010eda7a62aef328fa78938502",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          10,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/malta-bookkeeping.md",
+      "sha256": "9598536d598151f4a35432b0be3720d216bb24e9af9f0b2af0ab34fa8cd9950a",
+      "reviewed_by": null,
+      "michael_mentions": [
+        [
+          415,
+          "> Contributed by Michael Cutajar."
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/malta-financial-statements.md",
+      "sha256": "7a4b23a2a2474d6607bb8c1d51caa5f75d1dabc57c1c295683db76dc4fab68d4",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/malta-formation.md",
+      "sha256": "7e9c446c35d39639b917247a1751c72dac6956fd1c5e2296f8160ff634fa5f68",
+      "reviewed_by": null,
+      "michael_mentions": [
+        [
+          245,
+          "> Contributed by Michael Cutajar."
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/malta-income-tax.md",
+      "sha256": "1a8ab85a0b4afb8bcc8eed72763df73a0c9fa61d9b10efc328276678f9446472",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/malta-payroll.md",
+      "sha256": "70e8b99938225d60a1b301eaf0a9e670b663e205012ddcb804c39560cbcb633e",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/malta-ssc.md",
+      "sha256": "06ce6b9c7d97d2cf4e5dabf6b93378bd776aee7bf83b610b4ba3dadedc58cf0b",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/malta-tax-optimization.md",
+      "sha256": "6d836d7ef67e0eaf205b60915bd0d35c5f604f6708f47586816f77614f38d2be",
+      "reviewed_by": null,
+      "michael_mentions": [
+        [
+          306,
+          "> Contributed by Michael Cutajar."
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/malta-transfer-pricing.md",
+      "sha256": "6d975dac1f52e4b0c07bcf22426f3d200f2b7f48d817421072f3848a5a6cdc80",
+      "reviewed_by": null,
+      "michael_mentions": [
+        [
+          292,
+          "> Contributed by Michael Cutajar."
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/malta-vat-return.md",
+      "sha256": "9df64692e36e3ee19ba23cb19acc9be803e8dc1cfb1d4126472e2844bd4f8725",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/moving-to-malta-tax-residence.md",
+      "sha256": "0a88372c2094f019e1ee0064e8c8e7bc6e2d794b6c1d47151644b52b542275cb",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          10,
+          "reviewed_by: \"Michael Cutajar\""
+        ],
+        [
+          17,
+          "Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.** Figures are for tax year 2026 (basis year 2026, assessed in 2027)."
+        ],
+        [
+          181,
+          "*Built by Michael Cutajar and the OpenAccountants team, from the Malta end of the corridor. Malta's offer is simple"
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-capital-gains.md",
+      "sha256": "363e7e4e796f4716e47229840c8be8f5d71e9e20f44912498fff0445895d6592",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-company-residence-and-substance.md",
+      "sha256": "a2fb7b7432d06b48c1a032631ed9c1c5787e573efdccd8345f7dbed510d298b4",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          8,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-corporate-tax.md",
+      "sha256": "6ed0b9b2bd25594fe7cd5767081de36cbb48fbb3b9f9e2babefdf71e902034a7",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-crypto-tax.md",
+      "sha256": "274025a9756f7703f4ced4567b2358aeb375c0a5db495a4b0a3296da141c49d2",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-estimated-tax.md",
+      "sha256": "daab17a1d8da0b4e244b132e41c3d0db283d0732fcd1cce16aaf782524469a8d",
+      "reviewed_by": null,
+      "michael_mentions": [
+        [
+          356,
+          "> Contributed by Michael Cutajar."
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-family-office-setup.md",
+      "sha256": "7113b7745a2fe278ac89393911631b1df3d75b6ea96aac2c455cee40941883dd",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          8,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-foundations-and-trusts.md",
+      "sha256": "f390ce02e44ec25be17c6c1496188cbea5f534cec73cb9afc198387540494b1a",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          8,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-global-residence-programme.md",
+      "sha256": "24c2f081d09d2a2f120b8b5d7724004e03e1b81fd3a45d2262ab74c38ab3f0f7",
+      "reviewed_by": "\"Michael Spiteri Staines\"",
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-holding-company-participation-exemption.md",
+      "sha256": "bbf45863a7236f948771b4034f1e8e256acefc277381ee98bed9b3548c9b1d78",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          8,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-inheritance-and-succession.md",
+      "sha256": "2442d17462403e5c45addf60f2d6a22a46892176c2a65bedd7b5932e209bf592",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          8,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-nomad-residence-permit.md",
+      "sha256": "9c9a37a1928423a94b3071eebd4aa4a94beaf0efda41108c1cfcaf25138c1366",
+      "reviewed_by": "\"Michael Spiteri Staines\"",
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-non-dom.md",
+      "sha256": "bea19b8447885626bbcdfb611708995d09f67b446312b9ca91dfe717f0973075",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-permanent-residence-programme.md",
+      "sha256": "7b7f5de63b54aecd255b7763455cfa519e3bf045eb0a92a6de6b117b1a1fa430",
+      "reviewed_by": "\"Michael Spiteri Staines\"",
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-property-transfer-tax-the-sale-immovable.md",
+      "sha256": "0f8b0cece5d0747a477328c803f7ad7e36a0e8dffb8055878501ea614c044501",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-rental-income.md",
+      "sha256": "0eb8022055a96f4cc1e927825e8f3a724177f379eed420c79dfc95ad8f5c6579",
+      "reviewed_by": null,
+      "michael_mentions": [
+        [
+          413,
+          "> Contributed by Michael Cutajar."
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-residence-programmes-for-wealthy-families.md",
+      "sha256": "a8be0ae264abc1b482778fb25e73745515a8732f8731ee1666f66b59d0defd22",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          8,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/malta/mt-reverse-charge-acquisition-intra.md",
+      "sha256": "fcf338ef73735e3e50a418a5150e7ce80afacc5fa0f52c8d324abe6884b8ed27",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-reverse-charge-vat-services-received-from.md",
+      "sha256": "e3b33bbb664d708c55da3e1ec79d7d8de0d96faede64c7d3a5acf284a4991a9c",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/mt-vat3-quarterly-return-malta.md",
+      "sha256": "bfdd16f05863ad8c0057103eb11743bc26a4c05168b58de92e4b7fd9e3ae0f54",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/malta/selling-a-company-in-malta.md",
+      "sha256": "31b25e6d1eb13fd5b68b00007aeb23377674598d89e18eaea8e4a2db31575dda",
+      "reviewed_by": "\"Michael Cutajar\"",
+      "michael_mentions": [
+        [
+          10,
+          "reviewed_by: \"Michael Cutajar\""
+        ]
+      ]
+    },
+    {
+      "path": "skills/orchestrator/mt-freelance-intake.md",
+      "sha256": "0e0b74ceed7489c7d1dc67aa704a7e1e0964b5b7319df5beaba2fd60f2e9c37a",
+      "reviewed_by": null,
+      "michael_mentions": []
+    },
+    {
+      "path": "skills/orchestrator/mt-return-assembly.md",
+      "sha256": "48ec2417521c4c655b9989266728456f495cb5ada060087ac80af0c658be3681",
+      "reviewed_by": null,
+      "michael_mentions": []
+    }
+  ]
+}

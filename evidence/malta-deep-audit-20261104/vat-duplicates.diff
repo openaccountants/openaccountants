@@ -1,0 +1,31 @@
+--- malta-vat-return body
++++ mt-vat3-quarterly-return-malta body
+@@ -9,6 +9,8 @@
+ Figures are for tax year 2026. The law is the VAT Act, Chapter 406 of the Laws of Malta, as consolidated on 27 March 2026 (amendments up to Act III of 2026 and Legal Notice 75 of 2026), plus its subsidiary legislation. VAT in Malta is charged per transaction and per tax period, so "tax year 2026" means periods falling in calendar 2026. A short section near the end covers 2025 periods still being filed.
+ 
+ The authority is the Malta Tax and Customs Administration (MTCA); the Act calls the office-holder the Commissioner for Tax and Customs. Returns, registrations and statements go through MTCA's online services. This skill does not reproduce the box numbers of the return form. Take them from the live form on the MTCA site, and check MTCA's published filing calendar against the statutory dates below.
++
++Clients and older software sometimes call the periodic return "VAT3", but no official page used here uses that name: the Act calls it the tax return (art. 27). If a client says "VAT3", confirm from the registration certificate and the MTCA account that they mean the Article 10 periodic return for their own tax period, not an Article 11 declaration or an Article 12 filing.
+ 
+ Main sources, all on legislation.mt:
+ 
+@@ -41,7 +43,7 @@
+ 5. Remove blocked input VAT (Tenth Schedule item 3), then apportion anything partly private (item 4). If you also make exempt-without-credit supplies, stop and refer (partial exemption).
+ 6. Flag capital goods ([S.L. 406.12](https://legislation.mt/getpdf/60225988bc8272018c0f72fb)): equipment, tools or office furniture at €1,160 or more, and all immovable property. Record the date of first use, because later changes of use are adjusted over 5 or 20 years.
+ 7. Net output against input tax, deduct any excess credit brought forward that has not been refunded or set off (art. 21(1)), and read the balance: payable, or an excess credit to carry forward or claim.
+-8. File and pay by the due date. First confirm who files and that access works: the person with their own e-ID, or an authorised tax practitioner or trusted person already set up in MTCA's online services (check the current authorisation form on the MTCA site; allow time before the deadline). The return is filed electronically through the web portal the Commissioner designates, or on a prescribed form, and it counts as furnished only if it is full and complete in all material aspects (art. 27(3)-(4)). The seven-day relief in the filing table works in two parts: filing electronically within seven days after the due date is enough to avoid the late-filing penalty (art. 42(1)(d)), but interest is avoided only if the tax due is also paid with that return (art. 21(4A)). Working steps (check each against the live MTCA service, as the screens change): log in to the VAT online service; open the tax documents for the registration; pick the tax period; complete and submit the VAT return; note the payment reference the service gives for that return; pay by internet banking or the government payment gateway using that reference (check which channels MTCA currently accepts); then view the VAT statement online, because MTCA does not post it (check). Then file the recapitulative statement if you supplied goods or services to EU business customers, and the OSS return if you use OSS.
++8. File and pay by the due date. First confirm who files and that access works: the person with their own e-ID, or an authorised tax practitioner or trusted person already set up in MTCA's online services (check the current authorisation form on the MTCA site; allow time before the deadline). The return is filed electronically through the web portal the Commissioner designates, or on a prescribed form, and it counts as furnished only if it is full and complete in all material aspects (art. 27(3)-(4)). Electronic filing with payment is what earns the seven-day relief in the filing table. Working steps (check each against the live MTCA service, as the screens change): log in to the VAT online service; open the tax documents for the registration; pick the tax period; complete and submit the VAT return; note the payment reference the service gives for that return; pay by internet banking or the government payment gateway using that reference (check which channels MTCA currently accepts); then view the VAT statement online, because MTCA does not post it (check). Then file the recapitulative statement if you supplied goods or services to EU business customers, and the OSS return if you use OSS.
+ 9. Keep the VAT account and working papers with the records listed below, for at least six years. For capital goods, the six years start only when the 5-year or 20-year adjustment period ends.
+ 
+ ## Registration types ([Act, arts 10-12 and Sixth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+@@ -183,9 +185,9 @@
+ - Several persons registered as a single taxable person (VAT group).
+ - A supplier not established in Malta, with or without a representative.
+ - Preparing an OSS or import-scheme return, or Article 11A and 11B cases.
++- VAT refund claims under the Eighth and Thirteenth Directives (refunds of VAT to businesses established in another EU country or outside the EU), and VAT refunds to travellers from outside the EU.
+ - Immovable property transfers or developments, investment gold, new means of transport, excise goods, call-off stock.
+ - An assessment, provisional assessment, investigation or appeal to the Administrative Review Tribunal (thirty days from service to appeal).
+-- VAT refund claims under the Eighth and Thirteenth Directives (refunds of VAT to businesses established in another EU country or outside the EU), and VAT refunds to travellers from outside the EU.
+ - Anything the client cannot evidence with invoices.
+ - A request about Maltese income tax: this skill covers VAT only.
+ 

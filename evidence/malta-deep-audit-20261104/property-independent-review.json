@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-04",
+  "reviewer": "Independent non-author agent /root/malta_audit_personal",
+  "result": "PASS for bounded changed claims; no full-country attestation",
+  "guide_files": [
+    "skills/malta/how-to-account-for-rental-income-in-malta.md",
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md",
+    "skills/malta/mt-capital-gains.md",
+    "skills/malta/mt-rental-income.md",
+    "skills/malta/mt-property-transfer-tax-the-sale-immovable.md",
+    "skills/malta/mt-global-residence-programme.md",
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md"
+  ],
+  "file_hashes": {
+    "skills/malta/how-to-account-for-rental-income-in-malta.md": "85e6426cb929ae7407e9bca9739880753c794ff29153e1406b3e6c13019667b5",
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md": "cfda62818d21a970a503a8d49633d24411d5bc21b6104520cbb75e36d80942b1",
+    "skills/malta/mt-capital-gains.md": "1c128d760961f80c864cbfc2320bd84aa67cef092eb0fba558912be02aa3c753",
+    "skills/malta/mt-rental-income.md": "f68e1dbcf9b86b26677bd7f5be5dd4076669288bea11470a8d6d6bb88246a84e",
+    "skills/malta/mt-property-transfer-tax-the-sale-immovable.md": "a3e3d4556002aa014713ff2c95cbffdc614b563be05cae8877cdfbc723c1ff30",
+    "skills/malta/mt-global-residence-programme.md": "dfbdbf5c72ad48bc5ffe448f701edb8f0dc9ea2ef14c96b4f06ab638cddd006a",
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md": "42cec0504eafdac94077be1f0884ae5a8e70d01a58de20c577ac2304c821a131"
+  },
+  "ledger_hashes": {
+    "evidence/malta-deep-audit-20261104/ledgers/how-to-account-for-rental-income-in-malta.md": "45b59020f4007014aca9baf6c10e6a88e9442ca31ccd2ca78346b5d00611780c",
+    "evidence/malta-deep-audit-20261104/ledgers/how-to-submit-capital-gain-taxes-in-malta.md": "03908d747fc81ee1fa44f760d2138c97b4a5c503c3f27c5cd963a4dc7477ac16",
+    "evidence/malta-deep-audit-20261104/ledgers/mt-capital-gains.md": "df80f8ee2393f67c19605a00057c6192d489999c4b931b3aba7c9d93ab96965f",
+    "evidence/malta-deep-audit-20261104/ledgers/mt-rental-income.md": "1c8c8071647a41d5e06ad52473d56ec55dbbbda380a6d5ada3d1e9e16bf14c9f",
+    "evidence/malta-deep-audit-20261104/ledgers/mt-property-transfer-tax-the-sale-immovable.md": "246992c88ef2e1b2cb4c9e3617b961bffb209eaeac3071a012105766c6322217",
+    "evidence/malta-deep-audit-20261104/ledgers/mt-global-residence-programme.md": "7d4dbd66f484613d93f79ad5cd1b3ac716e0ca43306ab22694b1ef5af1f19971",
+    "evidence/malta-deep-audit-20261104/ledgers/mt-residence-programmes-for-wealthy-families.md": "6a6d78669fda5e2f50b8258a62c6edbea6db441139cd8028264379709e6bf84b"
+  },
+  "primary_checks": [
+    "MTCA Article31D guidance(b): trading rent included; separate services not assumed rent",
+    "Cap123article5A(12)(d) andCap364article52(1): declared below85%market denominator; other assessment grounds separate",
+    "Cap123article5listedsecurities; MTCA2026singlerateedges16000/60000",
+    "Cap364article42(2): currentassets excludingimmovableproperty omitted from denominator; indirectholdings separate",
+    "Cap406FifthSchedulePartTwo1(1)(b)\u2013(e): designatedparking and ordinarygarage exception distinct; companyArticle10 user exclusion",
+    "Cap123article5A(5)(d):10% restoration limb;7%proviso historical2015only",
+    "S.L.123.148/123.160rule5(1): 15%quote corrected without PDFmarginalheading; GRPminimum15000 plusseparate35%localincome",
+    "MTCA2026marriedhighband35%less10550 used only without qualifying-childtable"
+  ],
+  "examples": {
+    "files": 7,
+    "oa_check_blocks": 17,
+    "failures": 0,
+    "missing": 0,
+    "manual_applicability_check": "Conditional facts and held scopes read; examples do not assert eligibility from arithmetic."
+  },
+  "required_ci_errors": [],
+  "warnings": [
+    "7 guides fail check (c) rates_rows_sourced",
+    "7 guides fail check (d) canonical_headings",
+    "1 guides fail check (k) read_date_evidence",
+    "skills/malta/how-to-account-for-rental-income-in-malta.md: (c) rates_rows_sourced: no rates table",
+    "skills/malta/how-to-account-for-rental-income-in-malta.md: (d) canonical_headings: reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first",
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md: (c) rates_rows_sourced: no rates table",
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md: (d) canonical_headings: reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first",
+    "skills/malta/mt-capital-gains.md: (c) rates_rows_sourced: 24 of 24 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)",
+    "skills/malta/mt-capital-gains.md: (d) canonical_headings: method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant",
+    "skills/malta/mt-global-residence-programme.md: (c) rates_rows_sourced: 34 of 37 amount table row(s) without a URL or an unverified mark (8.1% linked, 0% unverified)",
+    "skills/malta/mt-global-residence-programme.md: (d) canonical_headings: method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant; method set: headings out of order",
+    "skills/malta/mt-property-transfer-tax-the-sale-immovable.md: (c) rates_rows_sourced: 22 of 28 amount table row(s) without a URL or an unverified mark (21.4% linked, 0% unverified)",
+    "skills/malta/mt-property-transfer-tax-the-sale-immovable.md: (d) canonical_headings: method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant; method set: headings out of order",
+    "skills/malta/mt-rental-income.md: (c) rates_rows_sourced: 18 of 18 amount table row(s) without a URL or an unverified mark (0% linked, 0% unverified)",
+    "skills/malta/mt-rental-income.md: (d) canonical_headings: reference set: missing heading(s): Who this applies to, Rates, bands and thresholds, The base, Deadlines and filing, Penalties and interest, Cross-border points, Two worked examples that recompute, Ask the client first",
+    "skills/malta/mt-rental-income.md: (k) read_date_evidence: 9 source rows all dated 2026-10-23, most not saying what was read",
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md: (c) rates_rows_sourced: 39 of 50 amount table row(s) without a URL or an unverified mark (22% linked, 0% unverified)",
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md: (d) canonical_headings: method set: missing heading(s): Scope, Worked cases, Talk to a verified accountant; method set: headings out of order"
+  ],
+  "preservation": {
+    "skills/malta/how-to-account-for-rental-income-in-malta.md": {
+      "all_old_headings_present": true,
+      "missing": []
+    },
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md": {
+      "all_old_headings_present": true,
+      "missing": []
+    },
+    "skills/malta/mt-capital-gains.md": {
+      "all_old_headings_present": true,
+      "missing": []
+    },
+    "skills/malta/mt-rental-income.md": {
+      "all_old_headings_present": true,
+      "missing": []
+    },
+    "skills/malta/mt-property-transfer-tax-the-sale-immovable.md": {
+      "all_old_headings_present": true,
+      "missing": []
+    },
+    "skills/malta/mt-global-residence-programme.md": {
+      "all_old_headings_present": true,
+      "missing": []
+    },
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md": {
+      "all_old_headings_present": true,
+      "missing": []
+    }
+  },
+  "untouched_human_reviewed_guides": {
+    "skills/malta/mt-nomad-residence-permit.md": {
+      "byte_exact_original": true,
+      "sha256": "9c9a37a1928423a94b3071eebd4aa4a94beaf0efda41108c1cfcaf25138c1366"
+    },
+    "skills/malta/mt-permanent-residence-programme.md": {
+      "byte_exact_original": true,
+      "sha256": "7b7f5de63b54aecd255b7763455cfa519e3bf045eb0a92a6de6b117b1a1fa430"
+    }
+  },
+  "metadata": {
+    "skills/malta/how-to-account-for-rental-income-in-malta.md": {
+      "reviewed_by": false,
+      "tier": "2"
+    },
+    "skills/malta/how-to-submit-capital-gain-taxes-in-malta.md": {
+      "reviewed_by": false,
+      "tier": "2"
+    },
+    "skills/malta/mt-capital-gains.md": {
+      "reviewed_by": false,
+      "tier": "2"
+    },
+    "skills/malta/mt-rental-income.md": {
+      "reviewed_by": false,
+      "tier": "2"
+    },
+    "skills/malta/mt-property-transfer-tax-the-sale-immovable.md": {
+      "reviewed_by": false,
+      "tier": "2"
+    },
+    "skills/malta/mt-global-residence-programme.md": {
+      "reviewed_by": false,
+      "tier": "2"
+    },
+    "skills/malta/mt-residence-programmes-for-wealthy-families.md": {
+      "reviewed_by": false,
+      "tier": "2"
+    }
+  },
+  "review_reset": "Michael Spiteri Staines review metadata removed from modifiedGRP andtier2set; historicalbaselinepreservesoldreview. Untouchednomad/MPRPretainbyteexactoriginal. NoMichaelCutajarapprovalnewlyclaimed.",
+  "findings": [],
+  "remaining_scope": "Unchangedlegacyproperty/VAT/treaty/forms/immigrationclaims retain originalholds; sourceformatwarnings remainvisible. Review covers changedclaims andnewexamples only."
+}

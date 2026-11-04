@@ -1,10 +1,10 @@
 ---
 name: mt-rental-income
 description: 'Use this skill whenever asked about Malta rental income taxation. Trigger on phrases like "rental income Malta", "letting property Malta", "15% final withholding tax", "Article 31D", "TA24 rental", "property letting", "kiri", "rent received", "landlord tax Malta", "Airbnb Malta tax", "short-term rental Malta", "non-resident landlord Malta", "rental declaration CFR", "FWS rental", or any question about computing, filing, or optimising tax on rental income from Maltese immovable property. Covers both the Final Withholding System (15% flat) and the normal progressive system, non-resident landlords, short-term letting, VAT interaction, and property transfer tax. Basis year 2026: the 15% final tax under Article 31D, the L.N. 100 of 1993 deductions (interest, ground rent, licence fees and the 20% further deduction) under the normal system, the 2026 single rate bands, and the TA24 deadline of 30 April. ALWAYS read this skill before touching any Malta rental income work.'
-version: 1.1
+version: 1.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-04
 depends_on:
   - malta-income-tax
 category: international
@@ -220,7 +220,8 @@ Out of scope here; see [mt-property-transfer-tax-the-sale-immovable](mt-property
 | Accommodation that needs a Malta Travel and Tourism Services Act licence | Taxable; 7% where the landlord is Article 10 registered |
 | Letting by a limited liability company to an Article 10 registered person for its economic activity | Taxable at 18% |
 | Letting for 30 days or less in the course of an economic activity (with the listed exceptions) | Taxable at 18% |
-| Parking sites, garages, stores, installed equipment and machinery, safes | Taxable at 18% |
+| Qualifying designated vehicle-parking premises/sites; permanently installed equipment/machinery; safes | Outside the immovable-letting exemption under the relevant statutory limbs; check registration and applicable rate |
+| Ordinary garages, stores or similar premises | Not automatically taxable: excepted from the short-period exclusion by item 1(1)(e)(iv). Test other exclusion limbs separately, including a limited-company letting to an Article 10 registered person for that person’s economic activity |
 
 ### 6.6 Records and Interest
 
@@ -410,4 +411,37 @@ This skill and its outputs are provided for informational and computational purp
 
 Not yet confirmed: the MTCA guidance note's wider reading of "tenement" (land, roof tops) against the Article 31D(8)(a) definition; the MTCA manual's line that gross rent under the 15% is "declared by end of June", which sits against FAQ 5 saying individuals do not declare it in the return; the 31 July online return date for the 2026 basis year; treating platform fees as not deductible from the 15% base; the UK treaty position in Example 3.
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
+
+## Targeted hypothetical VAT classification checks
+
+These illustrations apply the Fifth Schedule exemption gates. An individual’s ordinary garage lease, with none of the other exclusions and no designated vehicle-parking treatment, is assumed exempt without credit: no output VAT on EUR 1,200 rent. A limited company’s EUR 1,200 net garage letting to an Article 10 registered business for its economic activity is instead within item 1(1)(d); assuming Article 10 supplier registration and the standard 18% rate, output VAT is EUR 216. The property label alone does not decide the result.
+
+```oa-check
+name: Ordinary garage: no exemption exclusion assumed
+inputs:
+  rent: 1200
+steps:
+  - output_vat: pct(rent,0)
+expected:
+  output_vat: 0
+```
+
+```oa-check
+name: Company garage lease to Article 10 economic user
+inputs:
+  net_rent: 1200
+steps:
+  - output_vat: pct(net_rent,18)
+  - gross_invoice: net_rent + output_vat
+expected:
+  output_vat: 216
+  gross_invoice: 1416
+```
+
+
+### Targeted audit source checks, 4 November 2026
+
+Repaired the garage/store and parking classifications. The existing platform-fee and MTA scope limitations remain; an exemption gate is not a registration determination. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- Cap. 406 article 19(1): https://legislation.mt/eli/cap/406/eng/pdf (read 2026-11-04).

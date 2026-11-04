@@ -1,10 +1,10 @@
 ---
 name: malta-tax-optimization
 description: "Use this skill when asked how a self-employed individual or small business owner in Malta can lawfully reduce or time income tax for basis year 2026 (year of assessment 2027). Covers the 10% part-time final tax and its EUR 12,000 cap, joint and parent rate tables, the sole trader or company choice (35% with shareholder refunds, the elective 15% final tax), deductions people miss (article 14 test, home for the elderly fees, the car cost cap), wear and tear timing, losses, provisional tax, VAT registration choice, pension tax credits, and the anti-avoidance rule in article 51. Trigger on: reduce tax Malta, tax planning Malta, save tax Malta, pay less tax Malta, deductions I'm missing, part-time 10% Malta, incorporate in Malta, pension tax credit Malta. Links the computation skills instead of repeating them."
-version: 1.2
+version: 1.4
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-04
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,9 @@ tier: 2
 
 # Malta Tax Optimization
 
-## Malta Tax Optimization: Self-Employed Skill v1.2
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-tax-optimization.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
+
+## Malta Tax Optimization: Self-Employed Skill v1.4
 
 Tax year 2026: basis year 2026, year of assessment 2027. This skill lists the lawful levers and points to the skill that computes each one. It does not repeat the rate tables or the computations:
 
@@ -70,7 +72,7 @@ A salary to a spouse or child is deductible only if it meets the article 14(1) t
 | Rate on profit | 0% to 35% on the individual tables | 35% at company level |
 | Profit paid out as dividend | Not applicable | Shareholder registered for refunds can claim six-sevenths of the tax on Malta trading profit, leaving 5% Malta tax overall (Cap. 372 art. 48(4A)(a)) |
 | Profit kept in the company | Taxed in the year earned | 35% until a dividend triggers a refund claim |
-| Elective 15% final tax | Not available | Available from basis year 2026 under S.L. 123.217; binds for five years of assessment; no refund; floor rules apply |
+| Elective 15% final tax | Not available | Available for the fiscal year preceding YA 2025 and subsequent years (calendar basis year 2024 onward), under S.L. 123.217; binds for five years of assessment; no refund; floor rules apply |
 | Compliance | Return and provisional tax | Annual accounts (audit unless micro-exempt), company return through a tax practitioner, annual return at MBR |
 
 The refund route, the 15% election and the Malta-resident individual shareholder rules (article 43(6) and article 12(1)(c)(iii)) are worked through in `mt-corporate-tax`. Formation steps and costs: `malta-formation`. Accounts and audit: `malta-financial-statements`.
@@ -86,7 +88,7 @@ Every deduction below must pass article 14(1) ("wholly and exclusively incurred 
 | Bad debts | Deductible when proved to the Commissioner to have become bad in the year; a general provision is not | Cap. 123 art. 14(1)(d) |
 | Scientific research | Deductible under article 14(1)(h); capital research spending is spread over six years | Cap. 123 art. 14(1)(h) |
 | Research, development and innovation at 175% | In the Act (article 14(1)(ha), Act III of 2026), marked applicable from year of assessment 2027, but it only starts on a date the Minister sets by Gazette notice, with rules to define the activities. Do not claim it until the notice and rules exist. | Cap. 123 art. 14(1)(ha) |
-| Fees for a private home for the elderly or disabled, or a respite centre | Lower of the amount paid and EUR 4,500, from year of assessment 2027 (basis year 2026). The home must report the payment to MTCA. | Cap. 123 art. 14D |
+| Fees for a private home for the elderly or disabled, or a respite centre | Lower of the amount paid and EUR 4,500, from year of assessment 2027 (basis year 2026). The home must report the payment and claimant details to MTCA. The cap is the aggregate for each resident, not a separate cap for each family member paying. | Cap. 123 art. 14D |
 | Car cost cap | For a car costing more than EUR 14,000, wear and tear is computed as if it cost EUR 14,000. Lease payments on a car listed above EUR 14,000 are cut in the same ratio. | S.L. 123.07 rule 3 |
 
 Entertainment: the Income Tax Act has no specific rule. Treat client entertainment as private unless the article 14(1) test is clearly met, and flag it.
@@ -99,7 +101,7 @@ Social security Class 2: Part IV of the Income Tax Act has no specific provision
 
 ### Timing of purchases
 
-Rule 7(a) of S.L. 123.01: an asset acquired on any day other than the first day of the year is treated "as if the asset had been used for the whole year". Rule 7(b): no allowance in the year of sale or scrapping. So an asset bought and in use by 31 December 2026 gets a full year's allowance in basis year 2026. The purchase must be genuine and the asset in business use.
+Rule 7(a) of S.L. 123.01: an asset acquired on any day other than the first day of the year is treated "as if the asset had been used for the whole year". Rule 7(b): no allowance for a sale, scrapping or other listed event before the year's last day; a last-day event requires separate analysis. So an asset bought and in use by 31 December 2026 gets a full year's allowance in basis year 2026. The purchase must be genuine and the asset in business use.
 
 ### Minimum years (S.L. 123.01 Schedule, straight line on cost)
 
@@ -273,7 +275,7 @@ expected:
 5. Which assets will you buy, when, and what share is business use?
 6. Turnover in 2025 and so far in 2026, and who are your customers (businesses or consumers)?
 
-## Sources
+## Historical source references
 
 | Source | URL | Read on |
 |---|---|---|
@@ -303,4 +305,16 @@ Not yet confirmed:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
+
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| SL123.217 reg3(2)(a) | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL123.01 rule7(b) | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap123 art14D | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.
