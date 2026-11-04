@@ -12,6 +12,7 @@ depends_on:
   - income-tax-workflow-base
 tier: 2
 status: needs_sources
+domain: income-tax
 ---
 
 # India Income Tax (आयकर) -- Self-Employed Skill v2.0

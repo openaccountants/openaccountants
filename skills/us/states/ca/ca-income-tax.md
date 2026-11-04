@@ -6,6 +6,7 @@ jurisdiction: US-CA
 last_updated: 2026-06-12
 tier: 2
 status: needs_sources
+domain: income-tax
 ---
 
 # CA 540 Individual Return Skill v0.2

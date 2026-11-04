@@ -8,6 +8,7 @@ last_updated: 2026-11-04
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Malta capital gains: article 5 gains and the article 5A property transfer tax, for individuals and companies

@@ -7,6 +7,7 @@ last_updated: 2026-10-31
 version: 1.0
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Forming a business in Ireland (2026): sole trader, partnership or company, CRO, RBO and Revenue registration

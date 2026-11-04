@@ -5,6 +5,7 @@ version: 0.2
 jurisdiction: US-NY
 last_updated: 2026-06-12
 tier: 2
+domain: formation
 ---
 
 # New York IT-204-LL SMLLC Filing Fee Skill v0.2

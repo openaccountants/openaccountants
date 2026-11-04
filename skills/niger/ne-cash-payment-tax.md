@@ -9,6 +9,7 @@ tax_year_notes: "Ordinary buyer-chosen cash payments from 21 August 2026; specia
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: income-tax
 ---
 
 # Niger cash-payment tax v0.1

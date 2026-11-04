@@ -7,6 +7,7 @@ category: transfer-pricing
 tax_year: 2026
 last_updated: 2026-11-02
 tier: 2
+domain: transfer-pricing
 ---
 
 # Uganda transfer pricing: associates, the arm's length principle, documentation and APAs (2026-27)

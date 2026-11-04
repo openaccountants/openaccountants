@@ -9,6 +9,7 @@ version: 1.1
 category: international
 tax_year_notes: "2026 source-bound company workpaper; MAT schedule/currentness and live filing not closed"
 tier: 2
+domain: income-tax
 ---
 
 # Sierra Leone Corporate Income Tax v1.1

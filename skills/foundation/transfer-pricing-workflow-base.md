@@ -6,6 +6,7 @@ category: foundation
 jurisdiction: GLOBAL
 last_updated: 2026-06-12
 tier: 2
+domain: transfer-pricing
 ---
 
 # Transfer Pricing Workflow Base Skill v1.0

@@ -8,6 +8,7 @@ tax_year_notes: "Intended 2026 research draft; Act 3/2026 read and relevant effe
 last_updated: 2026-11-01
 version: 1.3
 tier: 2
+domain: transfer-pricing
 ---
 
 # Malawi transfer pricing: information-notice response and retention v1.3

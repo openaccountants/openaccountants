@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-02
 category: international
 tier: 2
+domain: payroll
 ---
 
 # Nigerian social contributions: pension, NHF, NSITF and ITF (2026)

@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
+domain: income-tax
 ---
 
 # Lebanon Personal Income Tax

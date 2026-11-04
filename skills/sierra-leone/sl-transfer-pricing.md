@@ -8,6 +8,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 version: 1.1
 tier: 2
+domain: transfer-pricing
 ---
 
 # Sierra Leone Transfer Pricing v1.1

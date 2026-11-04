@@ -8,6 +8,7 @@ last_updated: 2026-10-30
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: tax-optimization
 ---
 
 # Bulgaria Tax Optimization

@@ -10,6 +10,7 @@ depends_on:
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: crypto
 ---
 
 # Switzerland: crypto-asset tax for individuals (tax year 2026, with 2025 returns)

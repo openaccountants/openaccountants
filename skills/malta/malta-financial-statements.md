@@ -10,6 +10,7 @@ depends_on:
 category: financial-statements
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: financial-statements
 ---
 
 # Malta statutory financial statements: framework, size tests, audit, approval and filing with the Registrar

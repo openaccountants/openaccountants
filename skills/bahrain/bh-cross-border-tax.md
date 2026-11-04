@@ -21,6 +21,7 @@ tax_year: 2026
 last_updated: 2026-10-29
 version: 0.1
 tier: 2
+domain: cross-border
 ---
 
 # Bahrain cross-border tax v0.1

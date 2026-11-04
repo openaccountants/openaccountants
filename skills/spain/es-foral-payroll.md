@@ -19,6 +19,7 @@ version: 0.2
 reviewed_by: "Jeff Watts"
 reviewed_on: 2026-11-03
 tier: 1
+domain: payroll
 ---
 
 # Spain: foral wage withholding for2026

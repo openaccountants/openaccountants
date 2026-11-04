@@ -11,6 +11,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # UK non-doms after April 2025: the 4-year FIG regime, the TRF, rebasing and IHT (2026/27)

@@ -19,6 +19,7 @@ tax_year: 2026
 last_updated: 2026-10-31
 version: "0.2"
 tier: 2
+domain: income-tax
 ---
 
 # Moldova immovable-property and land tax, 2026 v0.2

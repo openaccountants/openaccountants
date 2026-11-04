@@ -10,6 +10,7 @@ last_updated: 2026-11-02
 depends_on:
   - ls-corporate-income-tax
 tier: 2
+domain: transfer-pricing
 ---
 
 # Lesotho transfer pricing: associates, section 113 adjustments and related rules (2026-27) v0.1

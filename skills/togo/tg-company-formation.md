@@ -9,6 +9,7 @@ last_updated: 2026-11-01
 version: 1.0
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Togo Company Formation and Entity Choice v1.0

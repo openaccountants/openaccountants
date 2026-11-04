@@ -10,6 +10,7 @@ last_updated: 2026-11-01
 version: 0.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Central African Republic company formation and annual reporting v0.1

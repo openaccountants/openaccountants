@@ -14,6 +14,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: financial-statements
 ---
 
 # Pakistan Financial Statements & Reporting — Skill v1.0

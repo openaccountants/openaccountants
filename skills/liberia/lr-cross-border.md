@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: cross-border
 ---
 
 # Liberia Cross-border Income, Withholding and Permanent Establishments v0.1

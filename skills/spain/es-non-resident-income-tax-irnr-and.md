@@ -10,6 +10,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
 category: international
 tier: 2
+domain: cross-border
 ---
 
 # Spain: non-residents, permanent establishments and departure v1.1

@@ -19,6 +19,7 @@ tax_year: 2026
 last_updated: 2026-10-25
 version: 0.2
 tier: 2
+domain: transfer-pricing
 ---
 
 # Faroe Islands transfer pricing v0.2

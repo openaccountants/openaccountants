@@ -15,6 +15,7 @@ depends_on:
   - social-contributions-workflow-base
 tier: 2
 status: needs_sources
+domain: payroll
 ---
 
 # Bangladesh Payroll & Salary Withholding — Skill v1.0

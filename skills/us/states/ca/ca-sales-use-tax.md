@@ -5,6 +5,7 @@ version: 2.0
 jurisdiction: US-CA
 last_updated: 2026-06-12
 tier: 2
+domain: income-tax
 ---
 
 # California Sales and Use Tax Skill v2.0

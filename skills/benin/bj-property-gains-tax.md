@@ -8,6 +8,7 @@ tax_year_notes: "DGI CGI 2026 with selected original and June rectifying Finance
 last_updated: 2026-11-01
 version: 1.0.0
 tier: 2
+domain: income-tax
 ---
 
 # Benin Property Gains Tax (TPVI) - v1.0.0

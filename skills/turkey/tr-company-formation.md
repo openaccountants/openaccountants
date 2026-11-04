@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 version: 0.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Turkey Company Formation & Entity Choice

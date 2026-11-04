@@ -8,6 +8,7 @@ last_updated: 2026-10-23
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Ireland: PAYE-only returns (Form 12), rental income (Case V) and non-residents (2026)

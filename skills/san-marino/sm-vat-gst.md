@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.4
 tier: 2
+domain: vat-gst
 ---
 
 # San Marino monofase import tax and the VAT interface with Italy v0.4

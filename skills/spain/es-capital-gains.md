@@ -10,6 +10,7 @@ approved_by: pending
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Spain: individual capital gains and losses v1.4

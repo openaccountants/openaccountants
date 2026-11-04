@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Czech Republic: cross-border tax for people and companies (2026) v0.2

@@ -11,6 +11,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Belgium VAT and the periodic VAT return (btw-aangifte / déclaration TVA): the law, preparing and filing, tax year 2026 v2.4

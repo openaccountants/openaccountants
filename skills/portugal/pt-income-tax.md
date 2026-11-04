@@ -9,6 +9,7 @@ source_checked: 2026-10-16
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Portugal: IRS for the self-employed, Category B (tax year 2026) v2.2

@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.4
 tier: 2
+domain: payroll
 ---
 
 # San Marino payroll and social contributions v0.4

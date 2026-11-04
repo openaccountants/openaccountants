@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.2

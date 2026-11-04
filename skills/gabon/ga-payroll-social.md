@@ -10,6 +10,7 @@ last_updated: 2026-11-03
 version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Gabon payroll and social contributions v0.3

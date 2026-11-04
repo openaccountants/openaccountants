@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-10-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # US state conformity to federal bonus depreciation (§168(k)) and §179: 2026 matrix, with 2025 return notes

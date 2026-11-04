@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Italy: annual VAT return (Dichiarazione IVA) and the December acconto, VAT year 2026

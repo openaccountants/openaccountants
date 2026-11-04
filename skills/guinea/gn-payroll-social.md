@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 1.1
 tier: 2
+domain: payroll
 ---
 
 # Guinea payroll and social contributions v1.1

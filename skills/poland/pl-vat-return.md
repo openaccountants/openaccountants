@@ -9,6 +9,7 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
+domain: vat-gst
 ---
 
 # Polish VAT return: see poland-vat-return (v2.1)

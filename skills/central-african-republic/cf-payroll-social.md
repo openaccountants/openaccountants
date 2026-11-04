@@ -10,6 +10,7 @@ last_updated: 2026-11-01
 version: 0.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Central African Republic payroll withholding and social-security holds v0.2

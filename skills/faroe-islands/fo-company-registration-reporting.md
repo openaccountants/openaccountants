@@ -20,6 +20,7 @@ last_updated: 2026-11-01
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Faroe Islands company registration and annual reporting v0.4

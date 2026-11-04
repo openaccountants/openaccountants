@@ -20,6 +20,7 @@ tax_year_notes: "2026 DGI LFI codes; July LFR collection transition held"
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: income-tax
 ---
 
 # Madagascar annual land and built-property tax v0.1

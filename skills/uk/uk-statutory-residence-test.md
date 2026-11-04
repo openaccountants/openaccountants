@@ -8,6 +8,7 @@ last_updated: 2026-10-26
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # The UK statutory residence test (SRT), tax year 2026/27

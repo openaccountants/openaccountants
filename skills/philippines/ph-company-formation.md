@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Jonathan I. Ruiz"
 reviewed_on: 2026-11-03
 tier: 1
+domain: formation
 ---
 
 # Philippines Company Formation & Entity Choice

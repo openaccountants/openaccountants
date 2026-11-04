@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
 category: international
 tier: 2
+domain: payroll
 ---
 
 # China social insurance and housing provident fund: 2026 national method and dated local calculations

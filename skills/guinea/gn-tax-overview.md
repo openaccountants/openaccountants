@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
 version: 1.1
 tier: 2
+domain: income-tax
 ---
 
 # Guinea tax routing and workpaper controls v1.1

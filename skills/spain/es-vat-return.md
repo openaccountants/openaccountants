@@ -10,6 +10,7 @@ drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Spain: ordinary VAT computation, reconciliation and Modelo 303, 2026

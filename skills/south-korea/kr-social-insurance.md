@@ -9,6 +9,7 @@ last_updated: 2026-06-12
 category: international
 tier: 2
 status: needs_sources
+domain: payroll
 ---
 
 # South Korea Social Insurance Contributions -- Self-Employed Skill v2.0

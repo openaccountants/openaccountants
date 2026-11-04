@@ -9,6 +9,7 @@ category: international
 version: 1.0
 tax_year_notes: "2026 intake; read historical statutory baseline and specific enacted amendments, with current NRA corroboration; full law/forms not closed"
 tier: 2
+domain: income-tax
 ---
 
 # Sierra Leone Personal Income Tax and PAYE v1.0

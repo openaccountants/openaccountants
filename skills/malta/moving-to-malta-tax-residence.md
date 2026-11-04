@@ -8,6 +8,7 @@ last_updated: 2026-11-04
 version: 1.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Moving to Malta: residence routes, the remittance basis, and what Malta actually taxes v1.3

@@ -8,6 +8,7 @@ version: 0.4
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Bahrain Payroll and Social Insurance v0.4

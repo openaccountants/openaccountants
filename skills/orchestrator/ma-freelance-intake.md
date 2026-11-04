@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-10-31
 category: orchestrator
 tier: 2
+domain: income-tax
 ---
 
 # Morocco Self-Employed Intake Skill v0.1 (ma-freelance-intake)

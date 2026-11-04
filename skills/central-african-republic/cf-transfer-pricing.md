@@ -9,6 +9,7 @@ tax_year_notes: "2026 research draft; conditional code baseline and named enacte
 last_updated: 2026-11-01
 version: 0.2
 tier: 2
+domain: transfer-pricing
 ---
 
 # Central African Republic controlled transfers and foreign deductions v0.2

@@ -18,6 +18,7 @@ last_updated: 2026-10-28
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: formation
 ---
 
 # Qatar company formation and entity choice v0.1

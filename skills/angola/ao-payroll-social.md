@@ -8,6 +8,7 @@ last_updated: 2026-11-01
 version: 0.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Angola Payroll and Social Contributions v0.2

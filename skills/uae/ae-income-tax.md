@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-10-31
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # UAE personal income tax position for 2026: what is taxed, when an individual falls into Corporate Tax, and tax residency

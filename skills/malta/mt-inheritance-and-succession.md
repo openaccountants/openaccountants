@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-10-05
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: estate-wealth-tax
 ---
 
 # Inheritance in Malta: duty on death, shares and property passing to the next generation

@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-02
 category: international
 tier: 2
+domain: corporate-tax
 ---
 
 # South African corporate income tax: 2026/27 rates, SBC bands, losses, provisional tax and filing

@@ -8,6 +8,7 @@ last_updated: 2026-10-31
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # UK VAT return: rates, registration, the nine boxes, penalties (position at 24 October 2026)

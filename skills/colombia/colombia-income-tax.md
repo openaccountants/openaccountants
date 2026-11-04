@@ -7,6 +7,7 @@ jurisdiction: CO
 last_updated: 2026-06-12
 tier: 2
 status: needs_sources
+domain: income-tax
 ---
 
 # Colombian Income Tax — Trabajador Independiente / Persona Natural (Renta) v2.0

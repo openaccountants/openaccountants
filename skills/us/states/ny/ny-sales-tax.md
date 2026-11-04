@@ -6,6 +6,7 @@ jurisdiction: US-NY
 last_updated: 2026-06-12
 validation_status: ai-drafted-q3
 tier: 2
+domain: vat-gst
 ---
 
 # New York Sales and Use Tax Skill v2.0

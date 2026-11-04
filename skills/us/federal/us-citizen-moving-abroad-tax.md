@@ -7,6 +7,7 @@ last_updated: 2026-08-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
+domain: cross-border
 ---
 
 # The American abroad: why moving never ends your US tax life

@@ -7,6 +7,7 @@ category: cross-border
 tax_year: 2026
 last_updated: 2026-11-02
 tier: 2
+domain: cross-border
 ---
 
 # Uganda cross-border: residence, source, withholding on non-residents, branch profits and foreign tax credit (2026-27)

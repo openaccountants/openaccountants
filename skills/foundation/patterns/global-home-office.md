@@ -8,6 +8,7 @@ last_updated: 2026-10-16
 category: patterns
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: bookkeeping
 ---
 
 # Home office and working from home deductions: one method, worked for the US, UK and Canada

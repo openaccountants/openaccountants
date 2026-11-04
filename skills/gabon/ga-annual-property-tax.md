@@ -9,6 +9,7 @@ tax_year_notes: "2026 partial research draft; enacted CFU text read, full law ch
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: income-tax
 ---
 
 # Gabon annual property tax v0.1

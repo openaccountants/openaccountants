@@ -18,6 +18,7 @@ sources:
     title: "HMRC DT8152 treaty summary: pension and arbitration discrepancies, not adopted as overriding the agreement"
     as_of: "2026-10-22"
 tier: 2
+domain: cross-border
 ---
 
 # UK–Gibraltar: employment, pensions and related income

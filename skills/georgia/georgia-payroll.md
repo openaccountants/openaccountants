@@ -10,6 +10,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Gvantsa Amiridze"
 reviewed_on: 2026-11-03
 tier: 1
+domain: payroll
 ---
 
 # Georgia (country): payroll for employers (2026) v0.2

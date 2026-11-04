@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-06-12
 category: orchestrator
 tier: 2
+domain: income-tax
 ---
 
 # Bangladesh Self-Employed Intake — Orchestrator v0.1

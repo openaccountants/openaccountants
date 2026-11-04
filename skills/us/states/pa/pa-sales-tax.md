@@ -10,6 +10,7 @@ depends_on:
 category: us-states
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Pennsylvania sales and use tax: 2026 collection, nexus and filing

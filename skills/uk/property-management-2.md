@@ -11,6 +11,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Nadir Khan"
 reviewed_on: 2026-11-03
 tier: 1
+domain: income-tax
 ---
 
 # Property Management in United Kingdom: Rental Income Tax (SA105)

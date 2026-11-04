@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-10-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # US research costs: §174A expensing, §174 foreign amortization and the §41 research credit

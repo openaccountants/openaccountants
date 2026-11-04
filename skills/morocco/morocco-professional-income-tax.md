@@ -18,6 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: income-tax
 ---
 
 # Morocco: personal income tax on professional income (IR), 2026

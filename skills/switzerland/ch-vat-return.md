@@ -8,6 +8,7 @@ last_updated: 2026-10-26
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Swiss VAT return (MWST-Abrechnung), tax year 2026 v2.2

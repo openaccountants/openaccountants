@@ -7,6 +7,7 @@ category: cross-border
 tax_year: 2026
 last_updated: 2026-11-02
 tier: 2
+domain: cross-border
 ---
 
 # Egypt cross-border: residence, source, permanent establishment, non-resident withholding and foreign tax credit v0.1

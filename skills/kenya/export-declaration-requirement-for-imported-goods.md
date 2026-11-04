@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Julian Njoroge Maina"
 reviewed_on: 2026-11-03
 tier: 1
+domain: corporate-tax
 ---
 
 # Export declaration requirement for imported goods: a guide for importers

@@ -20,6 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: 0.3
 tier: 2
+domain: formation
 ---
 
 # Liechtenstein company formation and entity screening v0.3

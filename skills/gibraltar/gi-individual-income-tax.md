@@ -73,6 +73,7 @@ sources:
     as_of: "2026-10-28"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Gibraltar individual income tax: ordinary assessment v0.12

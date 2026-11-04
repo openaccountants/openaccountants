@@ -8,6 +8,7 @@ tax_year_notes: "Conditional collection working paper from LPF 2025 articles100â
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: cross-border
 ---
 
 # Togo rental withholding and owner advances v0.1

@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-11-02
 category: cross-border
 tier: 2
+domain: cross-border
 ---
 
 # Nigeria cross-border: residence, non-residents, permanent establishment and double tax relief (2026)

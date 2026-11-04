@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.5
 tier: 2
+domain: corporate-tax
 ---
 
 # San Marino corporate income tax v0.5

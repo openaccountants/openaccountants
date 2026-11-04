@@ -19,6 +19,7 @@ last_updated: 2026-10-27
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Finland employer payroll reporting v0.11

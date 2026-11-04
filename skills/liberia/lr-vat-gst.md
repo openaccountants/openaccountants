@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.1
 tier: 2
+domain: vat-gst
 ---
 
 # Liberia GST and VAT Transition v0.1

@@ -7,6 +7,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Brandon Iverach"
 reviewed_on: 2026-11-03
 tier: 1
+domain: income-tax
 ---
 
 # South Africa — Capital Gains Tax Rate Tables (natural persons)

@@ -8,6 +8,7 @@ last_updated: 2026-10-29
 version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: cross-border
 ---
 
 # Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026

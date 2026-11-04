@@ -14,6 +14,7 @@ category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
+domain: e-invoicing
 ---
 
 # Pakistan E-Invoicing & Digital Compliance — Skill v1.0

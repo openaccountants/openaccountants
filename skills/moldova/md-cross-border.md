@@ -19,6 +19,7 @@ last_updated: 2026-10-31
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: "0.10"
 tier: 2
+domain: cross-border
 ---
 
 # Moldova cross-border income tax, 2026

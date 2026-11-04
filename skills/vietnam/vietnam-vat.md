@@ -10,6 +10,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # Vietnam VAT (thuế giá trị gia tăng, GTGT): rates, methods, input credit, returns and refunds

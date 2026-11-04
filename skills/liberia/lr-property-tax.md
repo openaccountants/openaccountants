@@ -9,6 +9,7 @@ tax_year_notes: "2026 intake workpaper; cited 2020 Chapter20 and April2026 secur
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: income-tax
 ---
 
 # Liberia Annual Real Property Tax v0.1

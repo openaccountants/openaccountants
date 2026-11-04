@@ -10,6 +10,7 @@ approved_by: pending
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # New Zealand capital gains: when a gain is taxed

@@ -10,6 +10,7 @@ depends_on:
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: bookkeeping
 ---
 
 # Egypt record-keeping, e-invoices and e-receipts for the self-employed (2026)

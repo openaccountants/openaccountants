@@ -9,6 +9,7 @@ tax_year_notes: "2026 research job; identified older DGI baseline through 2017 o
 version: 0.1
 last_updated: 2026-11-01
 tier: 2
+domain: cross-border
 ---
 
 # Mali cross-border payment and allocation source-reference draft v0.1

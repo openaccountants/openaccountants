@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: "0.9"
 tier: 2
+domain: formation
 ---
 
 # Moldova company formation and entity choice, 2026 v0.9

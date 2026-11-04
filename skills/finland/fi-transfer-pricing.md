@@ -19,6 +19,7 @@ last_updated: 2026-10-28
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: transfer-pricing
 ---
 
 # Finland transfer-pricing documentation v0.7

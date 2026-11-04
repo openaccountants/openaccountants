@@ -9,6 +9,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: income-tax
 ---
 
 # Burkina Faso annual company property tax v0.1

@@ -22,6 +22,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 reviewed_by: "Jeff Watts"
 reviewed_on: 2026-11-03
 tier: 1
+domain: payroll
 ---
 
 # Kansas payroll withholding, tax year 2026

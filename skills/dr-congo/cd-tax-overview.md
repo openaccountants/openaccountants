@@ -9,6 +9,7 @@ category: orchestrator
 version: 1.0
 tax_year_notes: "2026 research and preparation only; stated national-law, carried-law, implementation and filing holds remain."
 tier: 2
+domain: income-tax
 ---
 
 # DR Congo tax overview: intake and routing method v1.0

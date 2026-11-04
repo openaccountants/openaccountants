@@ -9,6 +9,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.3
 tier: 2
+domain: income-tax
 ---
 
 # Malawi individual income tax: current salary bands v1.3

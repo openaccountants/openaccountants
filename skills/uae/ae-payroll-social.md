@@ -8,6 +8,7 @@ tax_year: 2026
 last_updated: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # UAE payroll for tax year 2026: wages outside Corporate Tax, what the employer's tax return and VAT return do with payroll, and the pension, gratuity and insurance points to confirm

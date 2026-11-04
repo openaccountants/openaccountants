@@ -20,6 +20,7 @@ last_updated: 2026-06-12
 category: international
 depends_on: [social-contributions-workflow-base]
 tier: 2
+domain: payroll
 ---
 
 # Kazakhstan Mandatory Social Payments — Self-Employed (ИП) & Employers (2026)

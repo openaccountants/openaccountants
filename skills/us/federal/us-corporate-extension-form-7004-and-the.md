@@ -8,6 +8,7 @@ drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: corporate-tax
 ---
 
 # Form 7004 corporate extension and the timely mailing is timely filing rule under section 7502 in United States

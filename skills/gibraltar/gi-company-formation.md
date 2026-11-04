@@ -45,6 +45,7 @@ sources:
     title: "Gibraltar: Companies Act 2014: consolidation dated 1 August 2025"
     as_of: "2026-10-22"
 tier: 2
+domain: formation
 ---
 
 # Gibraltar: formation of a private company limited by shares

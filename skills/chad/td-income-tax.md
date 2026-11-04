@@ -8,6 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.2
 tier: 2
+domain: income-tax
 ---
 
 # Chad personal income tax v1.2

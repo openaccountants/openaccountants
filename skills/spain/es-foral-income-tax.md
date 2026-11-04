@@ -16,6 +16,7 @@ tax_year: 2026
 last_updated: 2026-10-31
 version: 0.8
 tier: 2
+domain: income-tax
 ---
 
 # Spain: foral resident income tax for2026

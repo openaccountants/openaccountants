@@ -21,6 +21,7 @@ last_updated: 2026-10-30
 version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Norway employer payroll (2026) v0.4

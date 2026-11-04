@@ -37,6 +37,7 @@ sources:
     title: "ITO Form GMTA1 and payment notes, June 2026"
     as_of: "2026-10-31"
 tier: 2
+domain: income-tax
 ---
 
 # Gibraltar global minimum tax v0.3

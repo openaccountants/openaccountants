@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-10-30
 version: 0.1
 tier: 2
+domain: transfer-pricing
 ---
 
 # North Macedonia transfer pricing v0.1

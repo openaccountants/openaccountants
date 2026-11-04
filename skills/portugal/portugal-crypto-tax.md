@@ -10,6 +10,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: crypto
 ---
 
 # Portugal: IRS on crypto assets (tax year 2026) v1.2

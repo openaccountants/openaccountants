@@ -10,6 +10,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Austrian income tax for individuals (Einkommensteuer): the E 1 return, the employee assessment (L 1) and prepayments (2026)

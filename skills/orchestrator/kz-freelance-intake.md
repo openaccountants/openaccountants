@@ -7,6 +7,7 @@ tax_year: 2026
 last_updated: 2026-06-12
 category: orchestrator
 tier: 2
+domain: income-tax
 ---
 
 # Kazakhstan Self-Employed Intake Skill v0.1 (kz-freelance-intake)

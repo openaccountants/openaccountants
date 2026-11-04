@@ -12,6 +12,7 @@ depends_on:
 category: invoicing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: e-invoicing
 ---
 
 # E-invoicing in Italy (fattura elettronica, FatturaPA and the SdI)

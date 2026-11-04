@@ -10,6 +10,7 @@ depends_on:
   - vat-workflow-base
 category: international
 tier: 2
+domain: vat-gst
 ---
 
 

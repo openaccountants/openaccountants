@@ -8,6 +8,7 @@ tax_year_notes: Rates and reliefs reviewed for the year of income 2025 only. The
 last_updated: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # KE Income Tax

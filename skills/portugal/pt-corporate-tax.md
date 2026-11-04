@@ -8,6 +8,7 @@ last_updated: 2026-10-28
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Portugal: corporate income tax (IRC), tax year 2026 v0.2

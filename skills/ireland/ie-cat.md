@@ -8,6 +8,7 @@ last_updated: 2026-10-26
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: estate-wealth-tax
 ---
 
 # Ireland Capital Acquisitions Tax (CAT), 2026

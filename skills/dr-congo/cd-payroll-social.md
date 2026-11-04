@@ -9,6 +9,7 @@ category: payroll
 version: 1.0
 tax_year_notes: "2026 source-bound research only; carried-law, implementation and currentness holds remain. No filing approval or complete-domain claim."
 tier: 2
+domain: payroll
 ---
 
 # DR Congo payroll and CNSS: employer research workpaper v1.0

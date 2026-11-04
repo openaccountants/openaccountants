@@ -10,6 +10,7 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Malta social security contributions: Class 2 (self-employed and self-occupied), Class 1 and the Maternity Leave Fund

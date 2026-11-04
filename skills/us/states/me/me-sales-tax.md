@@ -8,6 +8,7 @@ tax_year_notes: Rates for prepared food, lodging and short-term auto rental chec
 last_updated: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: vat-gst
 ---
 
 # ME Sales Tax

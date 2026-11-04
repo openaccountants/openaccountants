@@ -8,6 +8,7 @@ version: 0.3
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # Bahrain Tax Overview v0.3

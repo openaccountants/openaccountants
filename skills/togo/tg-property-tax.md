@@ -8,6 +8,7 @@ tax_year_notes: "Conditional 2026 working paper: OTR 2025 CGI/LPF consolidation 
 last_updated: 2026-11-01
 version: 0.1
 tier: 2
+domain: income-tax
 ---
 
 # Togo annual property-tax working paper v0.1

@@ -6,6 +6,7 @@ tax_year: 2026
 last_updated: 2026-09-25
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: income-tax
 ---
 
 # New York State resident return (Form IT-201): 2026 method, with 2025 return notes

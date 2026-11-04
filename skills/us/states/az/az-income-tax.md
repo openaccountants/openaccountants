@@ -6,6 +6,7 @@ last_updated: 2026-06-12
 version: "0.1"
 validation_status: ai-drafted-q3
 tier: 2
+domain: income-tax
 ---
 
 # Arizona Individual Income Tax Skill — Self-Employed / Sole Proprietor

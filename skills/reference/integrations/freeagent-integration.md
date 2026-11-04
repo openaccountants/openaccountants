@@ -9,6 +9,7 @@ description: >
 jurisdiction: GLOBAL
 last_updated: 2026-06-12
 tier: 2
+domain: references
 ---
 
 # FreeAgent Integration Skill v1.0

@@ -8,6 +8,7 @@ last_updated: 2026-10-23
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+domain: payroll
 ---
 
 # Ireland: PRSI for posted and cross-border workers, and Class K (2026)

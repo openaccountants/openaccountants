@@ -19,6 +19,7 @@ depends_on:
 jurisdiction: GLOBAL
 last_updated: 2026-06-12
 tier: 2
+domain: cross-border
 ---
 
 # Cross-Border Workflow Base — Master Multi-Jurisdiction Orchestrator

@@ -15,6 +15,7 @@ depends_on:
   - social-contributions-workflow-base
 tier: 2
 status: needs_sources
+domain: payroll
 ---
 
 # Pakistan Social Security & Pension Contributions — Skill v1.0
