@@ -248,6 +248,19 @@ def check_approval_resets(rel, text, errors):
         )
 
 
+SOURCE_LINK_RE = re.compile(r"https?://(?!(?:www\.)?(?:openaccountants\.com|github\.com))[^\s)>\]]+")
+
+
+def has_source_link(text):
+    """Any link outside our own site and GitHub, in the body."""
+    return bool(SOURCE_LINK_RE.search(label_boilerplate.body_of(text)))
+
+
+def needs_sources(text):
+    m = re.match(r"---\n(.*?)\n---\n", text, re.S)
+    return bool(m and re.search(r"^status:\s*needs_sources\s*$", m.group(1), re.M))
+
+
 def changed_files_vs_main():
     """Files changed vs origin/main (PR mode). Empty list = nothing relevant."""
     import subprocess
@@ -568,6 +581,13 @@ def check_guides(bi, errors, warnings, only_files=None):
         content_untouched = only_files is not None and body_unchanged_vs_main(rel, text)
         if only_files is not None and not content_untouched:
             check_approval_resets(rel, text, errors)
+            # A tax skill with figures and no source link must say so (status: needs_sources).
+            # The site keeps a flagged skill off the site and out of the AI plugin.
+            if scope == "tax" and not has_source_link(text) and not needs_sources(text):
+                errors.append(
+                    f"{rel}: a tax skill with no source link. Add official sources, or set "
+                    "`status: needs_sources` in the frontmatter so it stays off the site until they are added."
+                )
         for letter, name, _func in skill_checks.CHECKS + skill_checks.LESSON_CHECKS:
             problems = results[name]
             if not problems:
