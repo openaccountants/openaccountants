@@ -6,6 +6,7 @@ version: 2.0
 jurisdiction: AR
 last_updated: 2026-06-12
 tier: 2
+status: needs_sources
 ---
 
 # Argentine Income Tax — Autónomo / Profesional Independiente (Ganancias) v2.0

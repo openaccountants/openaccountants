@@ -6,6 +6,7 @@ category: vertical
 jurisdiction: GLOBAL
 last_updated: 2026-06-12
 tier: 2
+status: needs_sources
 ---
 
 # Property Investor Vertical Skill v1.0

@@ -12,6 +12,7 @@ depends_on:
 validated: April 2026
 validation_status: ai-drafted-q3
 tier: 2
+status: needs_sources
 ---
 
 # Florida Sales and Use Tax (DR-15) v1.0

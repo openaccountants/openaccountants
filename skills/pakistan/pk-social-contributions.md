@@ -14,6 +14,7 @@ category: international
 depends_on:
   - social-contributions-workflow-base
 tier: 2
+status: needs_sources
 ---
 
 # Pakistan Social Security & Pension Contributions — Skill v1.0

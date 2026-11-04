@@ -236,6 +236,7 @@ Edit `skills/**` only. Never edit `packages/`, `index.json` or `llms-full.txt`, 
 | `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`. Its presence is what lets `check_tax_year_current` accept a `tax_year` other than the current year. The platform does not store this key, so the daily export drops it when it re-renders a skill. Put the year label in the body text too, such as a "Tax year" row in the quick-reference table, so it survives |
 | `verified_by` | legacy | Do not add to new skills. The platform is retiring it; accountant review uses `reviewed_by` and `reviewed_on` (line 11) |
 | `reviewed_by` | `Name` | The approving accountant's name, matching their openaccountants.com account. Set only by them, with `reviewed_on` (`YYYY-MM-DD`) and `tier: 1`. No licence number in the file |
+| `status` | `needs_sources` | Set when a tax skill cites no official source yet. The site keeps it off the site and out of the AI plugin until sources are added and this line is removed. CI requires it on an edited tax skill with no source link |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change. Keep any body-heading version in step |
 

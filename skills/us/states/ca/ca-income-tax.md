@@ -5,6 +5,7 @@ version: 0.2
 jurisdiction: US-CA
 last_updated: 2026-06-12
 tier: 2
+status: needs_sources
 ---
 
 # CA 540 Individual Return Skill v0.2
