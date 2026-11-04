@@ -62,7 +62,7 @@ Quotas or capitales constitutivos not paid on time bear inflation updating and s
 
 ## Worked examples
 
-Both examples use only the percentage-of-SBC quotas confirmed in the table above. They leave out the illness-and-maternity benefits-in-kind quotas (a fixed quota per worker plus a quota on SBC above three times the reference wage) and the employer cesantía y vejez quota, whose 2026 rates are not yet confirmed, so they are **partial** costs, not a payroll total.
+Both examples use only the percentage-of-SBC quotas confirmed in the table above. They leave out the illness-and-maternity benefits-in-kind quotas (a fixed quota per worker plus a quota on SBC above three times the reference wage) and the employer cesantía y vejez quota, so they are **partial** costs, not a payroll total.
 
 ### Example 1: employer quotas on a MXN 30,000 monthly SBC, class I (confirmed branches only)
 

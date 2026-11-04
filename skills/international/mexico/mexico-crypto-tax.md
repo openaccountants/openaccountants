@@ -223,7 +223,6 @@ The SAT distinguishes between occasional disposals and habitual business activit
 ## Cross-border points
 
 - Sales through foreign exchanges remain fully taxable Mexican income for residents; compute each disposal in MXN at the exchange rate in effect on the transaction date.
-- CARF: Mexico has adopted the OECD Crypto-Asset Reporting Framework (adoption date flagged in Not yet confirmed); reporting flows from exchanges to the SAT.
 - Non-resident holders: apply Mexican-source rules before using this guide; flag for professional review.
 
 ## Section 4 -- Cost Basis Methods
@@ -557,7 +556,7 @@ Before finalising any Mexico crypto tax computation, verify:
 | RMF 2025 Anexo 8 (tarifas Art. 152, TY2025) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo8_RMF2025-30122024.pdf | 2026-10-28 |
 | UMA valores diario/mensual/anual (INEGI) | https://www.inegi.org.mx/temas/uma/ | 2026-11-02 |
 
-Not yet confirmed: Ley Fintech Art. 30 full text (not archived; reviewer-confirmed); CARF adoption effective 1 April 2026; SAT oficios 2019-2025 classifying crypto as intangible movable property; whether the Art. 93 fr. XIX b) exemption extends to virtual assets.
+Not yet confirmed: Ley Fintech Art. 30 full text (not archived; reviewer-confirmed); CARF adoption effective 1 April 2026; SAT oficios 2019-2025 classifying crypto as intangible movable property; whether the Art. 93 fr. XIX b) exemption extends to virtual assets; CARF reporting flows from exchanges to the SAT.
 
 ## Disclaimer
 
