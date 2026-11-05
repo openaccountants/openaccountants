@@ -1,5 +1,6 @@
 """Exercise real Git collection and the workflow entry point, with HTTP stubbed."""
 from contextlib import redirect_stdout
+from datetime import datetime, timedelta, timezone
 import importlib.util
 import io
 import json
@@ -44,7 +45,7 @@ class GitFixture:
         return subprocess.check_output(["git", "-C", str(self.repo), *args],
                                        env=env, encoding="utf-8", stderr=subprocess.PIPE).strip()
 
-    def commit(self, files, name="Alice Writer", email="alice@example.test", committer=None):
+    def commit(self, files, name="Alice Writer", email="alice@example.test", committer=None, date=None):
         for path, text in files.items():
             target = self.repo / path
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -55,6 +56,8 @@ class GitFixture:
         self.git("add", "-A")
         env = {**os.environ, "GIT_AUTHOR_NAME": name, "GIT_AUTHOR_EMAIL": email,
                "GIT_COMMITTER_NAME": name, "GIT_COMMITTER_EMAIL": committer or email}
+        if date:
+            env.update(GIT_AUTHOR_DATE=date, GIT_COMMITTER_DATE=date)
         self.git("commit", "-m", "Fictional test fixture", env=env)
         return self.git("rev-parse", "HEAD")
 
@@ -64,7 +67,7 @@ class GitFixture:
 
 @unittest.skipUnless(shutil.which("git") and shutil.which("bash"), "requires git and bash")
 class IngestWorkflowTests(GitFixture, unittest.TestCase):
-    def run_workflow(self, api_failure=False):
+    def run_workflow(self, api_failure=False, event="push", stale_event_head=False):
         self.commit({"skills/mt/example.md": "old", "skills/mt/removed.md": "old",
                      "skills/mt/old-name.md": "old"})
         since = self.git("rev-parse", "HEAD")
@@ -94,7 +97,8 @@ raise SystemExit(module.main(sys.argv[2:]))
         shim = "python3() { " + shlex.quote(sys.executable) + " " + shlex.quote(str(harness)) + ' "$@"; }\n'
         env = {**os.environ, "PLATFORM_INGEST_SECRET": "synthetic-test-value",
                "SINCE_SHA": "unreadable-commit" if api_failure else since,
-               "HEAD_SHA": head, "PAYLOAD": json.dumps([{"id": head, "author": {"name": "Writer"}}])}
+               "HEAD_SHA": since if stale_event_head else head, "DELIVERY_EVENT": event,
+               "PAYLOAD": json.dumps([{"id": head, "author": {"name": "Writer"}}])}
         return subprocess.run([shutil.which("bash"), "--noprofile", "--norc"],
                               input=shim + script, cwd=self.repo, env=env,
                               text=True, capture_output=True)
@@ -115,6 +119,21 @@ raise SystemExit(module.main(sys.argv[2:]))
         self.assertNotEqual(result.returncode, 0)
         self.assertNotIn("CAPTURED_BODY=", result.stderr)
 
+    def test_scheduled_sweep_runs_the_same_real_git_collector(self):
+        result = self.run_workflow(api_failure=True, event="schedule")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        bodies = [json.loads(line.removeprefix("CAPTURED_BODY="))
+                  for line in result.stderr.splitlines() if line.startswith("CAPTURED_BODY=")]
+        self.assertEqual(bodies[0]["headSha"], self.git("rev-parse", "HEAD"))
+        self.assertEqual(bodies[0]["paths"], ["skills/mt/example.md", "skills/mt/new.md", "skills/mt/renamed.md"])
+
+    def test_queued_event_uses_the_actual_checkout_head(self):
+        result = self.run_workflow(stale_event_head=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        bodies = [json.loads(line.removeprefix("CAPTURED_BODY="))
+                  for line in result.stderr.splitlines() if line.startswith("CAPTURED_BODY=")]
+        self.assertEqual(bodies[0]["headSha"], self.git("rev-parse", "HEAD"))
+
     def test_workflow_keeps_secret_scope_and_uses_one_shared_verified_entry(self):
         doc = yaml.safe_load((ROOT / ".github/workflows/ingest-to-platform.yml").read_text())
         self.assertEqual(doc["permissions"], {"contents": "read"})
@@ -124,11 +143,68 @@ raise SystemExit(module.main(sys.argv[2:]))
         self.assertEqual(job["if"], "github.ref == 'refs/heads/main'")
         self.assertEqual(job["steps"][0]["with"]["fetch-depth"], 0)
         self.assertFalse(job["steps"][0]["with"]["persist-credentials"])
+        self.assertEqual(job["steps"][0]["with"]["ref"], "main")
+        self.assertEqual(doc["concurrency"], {"group": "platform-skill-delivery", "queue": "max"})
+        events = doc.get("on", doc.get(True))
+        self.assertEqual(events["schedule"], [{"cron": "17 6 * * *"}])
+        self.assertIn('--batch-size 20', job["steps"][-1]["run"])
         self.assertIn("--send", job["steps"][-1]["run"])
         self.assertEqual(job["steps"][-1]["env"]["SINCE_SHA"], "${{ github.event.before || inputs.since_sha }}")
 
 
 class DeliveryPlanTests(GitFixture, unittest.TestCase):
+    def old_base(self):
+        date = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+        self.git("commit", "--amend", "--no-edit", env={**os.environ, "GIT_AUTHOR_DATE": date, "GIT_COMMITTER_DATE": date})
+        self.base = self.git("rev-parse", "HEAD")
+
+    def test_scheduled_boundary_uses_main_history_and_keeps_an_older_merged_writer(self):
+        self.old_base()
+        self.git("checkout", "-b", "writer")
+        old = (datetime.now(timezone.utc) - timedelta(days=20)).isoformat()
+        self.commit({"skills/mt/older-branch.md": "writer"}, date=old)
+        self.git("checkout", "main")
+        self.commit({"docs/current.md": "current"})
+        self.git("merge", "--no-ff", "writer", "-m", "Merge old writing today")
+        since = delivery.lookback_since(self.repo, "HEAD", 7)
+        self.assertEqual(since, self.base)
+        self.assertEqual(self.plan(since)[0]["paths"], ["skills/mt/older-branch.md"])
+
+    def test_recent_root_is_included_and_invalid_lookback_is_rejected(self):
+        self.assertEqual(delivery.lookback_since(self.repo, "HEAD", 7), "0" * 40)
+        with self.assertRaises(ValueError):
+            delivery.lookback_since(self.repo, "HEAD", 0)
+
+    def test_a_shallow_history_cannot_claim_a_complete_sweep(self):
+        self.commit({"skills/mt/recent.md": "fixture"})
+        shallow = Path(self.temp.name) / "shallow"
+        subprocess.run(["git", "clone", "--depth=1", self.repo.as_uri(), str(shallow)], check=True, capture_output=True)
+        with self.assertRaises(ValueError):
+            delivery.lookback_since(shallow, "HEAD", 7)
+        with self.assertRaises(ValueError):
+            delivery.collect_batches(shallow, "0" * 40)
+
+    def test_collection_needs_no_file_blobs_or_network_from_a_full_partial_clone(self):
+        self.commit({"skills/mt/recent.md": "fixture"})
+        self.git("config", "uploadpack.allowFilter", "true")
+        partial = Path(self.temp.name) / "partial"
+        subprocess.run(["git", "clone", "--filter=blob:none", "--no-checkout", self.repo.as_uri(), str(partial)], check=True, capture_output=True)
+        subprocess.run(["git", "-C", str(partial), "remote", "set-url", "origin", (Path(self.temp.name) / "missing-source").as_uri()], check=True)
+        batches = delivery.collect_batches(partial, self.base)
+        self.assertEqual(batches[0]["paths"], ["skills/mt/recent.md"])
+        self.assertEqual(batches[0]["authors"][0]["email"], "alice@example.test")
+
+    def test_smaller_workflow_batches_preserve_every_path_and_author(self):
+        paths = {f"skills/mt/topic-{i:04}.md": "Fictional test" for i in range(2210)}
+        self.commit(paths)
+        batches = delivery.collect_batches(self.repo, self.base, batch_size=20)
+        self.assertEqual(len(batches), 111)
+        self.assertEqual(sorted(path for batch in batches for path in batch["paths"]), sorted(paths))
+        self.assertTrue(all(len(batch["paths"]) <= 20 and len(batch["authors"]) == 1 for batch in batches))
+        for size in (0, -1, 201):
+            with self.assertRaises(ValueError):
+                delivery.collect_batches(self.repo, self.base, batch_size=size)
+
     def test_2210_file_change_has_twelve_complete_batches(self):
         paths = {f"skills/mt/topic-{i:04}.md": "Fictional test" for i in range(2210)}
         head = self.commit(paths)
@@ -224,16 +300,16 @@ class DeliveryVerificationTests(unittest.TestCase):
             result = delivery.deliver(self.batch, "synthetic-secret", attempts=attempts)
         return result, post, sleep
 
-    def test_match_and_superseded_are_successful(self):
-        for state in ("match", "superseded"):
+    def test_only_an_actual_match_is_successful(self):
+        for state in ("match",):
             with self.subTest(state=state):
                 result, post, sleep = self.run_delivery(self.reply(state))
                 self.assertTrue(result)
                 self.assertEqual(post.call_count, 2)
                 sleep.assert_not_called()
 
-    def test_held_mismatch_and_failed_do_not_report_delivery(self):
-        for state in ("held", "mismatch", "failed"):
+    def test_held_superseded_mismatch_and_failed_do_not_report_delivery(self):
+        for state in ("held", "superseded", "mismatch", "failed"):
             with self.subTest(state=state):
                 self.assertFalse(self.run_delivery(self.reply(state))[0])
 

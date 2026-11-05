@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timedelta, timezone
 import json
 import os
 from pathlib import Path
@@ -38,7 +39,26 @@ def author(name: str, email: str) -> dict:
             "login": match[1] if match else None}
 
 
-def collect_batches(repo: Path, since: str, head: str = "HEAD") -> list[dict]:
+def require_full_history(repo: Path) -> None:
+    if git(repo, "rev-parse", "--is-shallow-repository").strip() == "true":
+        raise ValueError("Full Git history is required; fetch the missing history first")
+
+
+def lookback_since(repo: Path, head: str, days: int) -> str:
+    if days < 1:
+        raise ValueError("Lookback days must be positive")
+    require_full_history(repo)
+    sha = git(repo, "rev-parse", "--verify", "--end-of-options", f"{head}^{{commit}}").strip()
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+    # Pick a boundary on main, then include its entire reachable Git range.
+    # A branch written earlier but merged recently still belongs to the sweep.
+    return git(repo, "rev-list", "--first-parent", "--max-count=1", f"--before={cutoff}", sha, "--").strip() or "0" * 40
+
+
+def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int = BATCH_SIZE) -> list[dict]:
+    if not 1 <= batch_size <= BATCH_SIZE:
+        raise ValueError("Batch size must be between 1 and 200")
+    require_full_history(repo)
     head_sha = git(repo, "rev-parse", "--verify", "--end-of-options", f"{head}^{{commit}}").strip()
     if re.fullmatch(r"0{40}|0{64}", since):
         revision_range = head_sha
@@ -55,7 +75,7 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD") -> list[dict]:
     merge_owners: dict[str, dict] = {}
     for sha in git(repo, "rev-list", "--date-order", revision_range).splitlines():
         name, email, committer, parents = git(
-            repo, "show", "-s", "--format=%an%x00%ae%x00%ce%x00%P", sha
+            repo, "log", "-1", "--no-notes", "--format=%an%x00%ae%x00%ce%x00%P", sha
         ).rstrip("\n").split("\0")
         if SYNC_BOT in (email.lower(), committer.lower()):
             continue
@@ -77,10 +97,10 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD") -> list[dict]:
         key = (person["email"], person["login"], person["name"])
         groups.setdefault(key, {"author": person, "paths": []})["paths"].append(path)
     return [
-        {"headSha": head_sha, "paths": group["paths"][offset:offset + BATCH_SIZE],
+        {"headSha": head_sha, "paths": group["paths"][offset:offset + batch_size],
          "authors": [group["author"]]}
         for group in groups.values()
-        for offset in range(0, len(group["paths"]), BATCH_SIZE)
+        for offset in range(0, len(group["paths"]), batch_size)
     ]
 
 
@@ -129,7 +149,7 @@ def deliver(batch: dict, secret: str, attempts: int = 20) -> bool:
                 for row in outcomes:
                     report("Verified path", path=row["path"], status=row["status"])
                 # A held proposal needs action; it is not a delivered skill.
-                return all(state in {"match", "superseded"} for state in states)
+                return all(state == "match" for state in states)
         except (urllib.error.URLError, TimeoutError) as error:
             report("Verification request failed", error=str(error))
         if attempt + 1 < attempts:
@@ -140,13 +160,18 @@ def deliver(batch: dict, secret: str, attempts: int = 20) -> bool:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--since", required=True, help="Last delivered commit; excluded from the range")
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("--since", help="Last delivered commit; excluded from the range")
+    source.add_argument("--lookback-days", type=int, help="Sweep changes merged within this many days")
     parser.add_argument("--head", default="HEAD", help="Commit to deliver, default HEAD")
+    parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help="Paths per writer batch, at most 200")
     parser.add_argument("--send", action="store_true", help="Send the complete plan and verify each batch")
     args = parser.parse_args(argv)
     # Finish all Git reads before sending anything. An unreadable commit must
     # never cause partial delivery, and event payload file arrays are not needed.
-    batches = collect_batches(Path.cwd(), args.since, args.head)
+    repo = Path.cwd()
+    since = args.since if args.since is not None else lookback_since(repo, args.head, args.lookback_days)
+    batches = collect_batches(repo, since, args.head, args.batch_size)
     if not args.send:
         print(json.dumps({"dry_run": True, "batches": batches}, indent=2))
         return 0

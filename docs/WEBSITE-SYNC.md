@@ -8,8 +8,8 @@ write back to `skills/**`.
 ## Delivery after merge
 
 The [ingest workflow](../.github/workflows/ingest-to-platform.yml) uses
-[deliver-to-platform.py](../scripts/deliver-to-platform.py) for both pushes and
-manual recovery. The production environment retains the ingestion credential;
+[deliver-to-platform.py](../scripts/deliver-to-platform.py) for pushes, scheduled
+catch-up and manual recovery. The production environment retains the ingestion credential;
 the job runs only on `main` with read-only repository permissions.
 
 The runner:
@@ -19,16 +19,28 @@ The runner:
 2. Excludes sync-bot authors/committers, removed files, templates and index files.
 3. Groups paths by their last non-merge human writer. A maintainer's merge does
    not replace the writer; a file created only in the merge uses its author.
-4. Sends at most200 paths per request, with one author and the same requested
+4. Sends 20 paths per workflow request (the API permits at most 200), with one author and the same requested
    head SHA in every batch.
 5. Polls the platform's read-only verifier for every requested path before
-   moving to the next batch. Both automatic delivery and manual recovery verify.
+   moving to the next batch. Pushes, scheduled sweeps and manual recovery all verify.
 
-Only a complete response containing `match` or `superseded` for every path
+Only a complete response containing `match` for every path
 passes. Held proposals need action and fail delivery, as do mismatches, failed
 or unsettled paths, missing outcomes and unknown states. This does not bypass
 any source, accountant or repository review. Independent batches still run
 when one fails, and the final job reports failure.
+
+Runs share a `queue: max` concurrency group, without cancelling in-progress work.
+The workflow checks out current `main` after acquiring the queue. It does not
+replay the event's older head when a newer run reached the queue first. GitHub
+allows up to 100 pending runs; queue order alone does not prove commit order.
+See [GitHub's concurrency contract](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#concurrency).
+
+The daily 06:17 UTC sweep chooses a seven-day boundary on main's first-parent
+history, then examines the entire reachable range. Writing merged recently is
+included even when its branch commits have older dates. Repeating a failed
+range is safe: already-served documents compare identical, while failed paths
+still need verification. Recovery outside that window uses `since_sha`.
 
 A missing ingestion credential fails a non-empty delivery. A failed commit
 lookup stops before any request is sent. Redirects are not followed with the
@@ -45,7 +57,14 @@ python3 scripts/deliver-to-platform.py --since <last-delivered-sha> --head HEAD
 
 The JSON lists each batch, its exact head SHA, paths and author. The range must
 start at an ancestor of the requested head. A shallow checkout needs the missing
-history fetched before it can plan that range.
+history fetched before it can plan that range. The runner rejects shallow
+repositories rather than claiming an incomplete plan is complete.
+
+To inspect the same range and batch size as scheduled recovery, without sending:
+
+```bash
+python3 scripts/deliver-to-platform.py --lookback-days 7 --head HEAD --batch-size 20
+```
 
 For recovery, the existing `workflow_dispatch` input `since_sha` supplies the
 last delivered commit. Its delivery and verification use the same runner as a
@@ -58,10 +77,18 @@ AI-client bundles from the repository sources. Contributors edit the sources, no
 those generated trees. Updating source delivery does not itself prove that a
 later derived export succeeded.
 
-The private catch-up cron has its own collection/attribution path and still
-needs pagination and batching work. Concurrent or out-of-order push handling
-also needs separate verification. These are open parts of the complete delivery
-chain; this runner does not establish that the whole chain is finished.
+The companion private-platform change replaces its truncated REST collector
+with a check of the latest scheduled workflow and its actual delivery step.
+Only a fresh successful verified sweep produces its catch-up heartbeat, dated
+at the sweep's completion rather than the later monitoring request. It does
+not start a second ingestion beside the workflow.
+
+Deploy the public scheduled runner before the private monitoring change, after
+existing delivery runs have finished. Verify a scheduled sweep before calling
+that deployment complete. These draft changes have not dispatched a live
+delivery or backfill. Direct privileged ingestion outside this workflow and
+other platform writers still need their own ordering evidence; the workflow
+queue does not lock unrelated callers or certify every historical skill.
 
 <details>
 <summary>Historical source-writing safeguard, inactive</summary>

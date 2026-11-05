@@ -1,5 +1,5 @@
 # Deliver and verify every human-edited skill after merge, with one author per
-# batch and at most200 paths. Manual recovery uses the same checked path.
+# batch. Pushes, scheduled catch-up and manual recovery use the same checked path.
 name: Ingest to platform
 
 on:
@@ -12,9 +12,18 @@ on:
       since_sha:
         description: "Last commit whose skills reached the platform"
         required: true
+  schedule:
+    - cron: "17 6 * * *"
 
 permissions:
   contents: read
+
+# Keep pending events instead of replacing earlier pushes. Read main only after
+# this lock is acquired: an older queued event must not replay an older head.
+# https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#concurrency
+concurrency:
+  group: platform-skill-delivery
+  queue: max
 
 jobs:
   ring:
@@ -22,15 +31,22 @@ jobs:
     if: github.ref == 'refs/heads/main'
     environment: production
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-          ref: ${{ github.sha }}
+          ref: main
           persist-credentials: false
       - name: Deliver and verify every human-edited skill
         env:
           PLATFORM_INGEST_SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
           SINCE_SHA: ${{ github.event.before || inputs.since_sha }}
-          HEAD_SHA: ${{ github.sha }}
-        run: python3 scripts/deliver-to-platform.py --since "$SINCE_SHA" --head "$HEAD_SHA" --send
+          DELIVERY_EVENT: ${{ github.event_name }}
+        run: |
+          HEAD_SHA="$(git rev-parse HEAD)"
+          if [ "${DELIVERY_EVENT:-}" = "schedule" ]; then
+            python3 scripts/deliver-to-platform.py --lookback-days 7 --head "$HEAD_SHA" --batch-size 20 --send
+          else
+            python3 scripts/deliver-to-platform.py --since "$SINCE_SHA" --head "$HEAD_SHA" --batch-size 20 --send
+          fi
