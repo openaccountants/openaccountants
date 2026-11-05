@@ -1,21 +1,22 @@
 ---
 name: mx-imss
 description: Use this skill whenever asked about Mexican IMSS social security for self-employed individuals. Trigger on phrases like "IMSS", "seguro social Mexico", "regimen voluntario", "incorporacion voluntaria", "IMSS freelancer", "aseguramiento voluntario", "Modalidad 40", or any question about voluntary IMSS enrollment, contribution calculation, or benefits for self-employed persons in Mexico. Covers voluntary inscription (Modalidad 40, regimen voluntario), contribution bases, health/maternity/retirement/disability benefits, and tax deductibility. ALWAYS read this skill before touching any Mexican IMSS work.
-version: 2.0
+version: 2.1
 jurisdiction: MX
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-02
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: payroll
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # MX Imss
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
 **Quick Reference**
 
@@ -25,22 +26,23 @@ domain: payroll
 | Tax/Contribution | IMSS Social Security (voluntary self-employed) |
 | Currency | MXN only |
 | Primary legislation | Ley del Seguro Social (LSS) |
-| Supporting legislation | Reglamento de la LSS en materia de Afiliacion; Ley del INFONAVIT; Ley del ISR Art. 151 |
+| Supporting legislation | Reglamento de la LSS en materia de Afiliacion; Ley del INFONAVIT; Ley del ISR Arts. 25 fr. VI, 28 |
 | Authority | Instituto Mexicano del Seguro Social (IMSS) |
 | Portal | IMSS Digital (imss.gob.mx) |
 | Filing deadline | Monthly contributions; enrolment at any time |
 | Contributor | Open Accountants Community |
-| Skill version | 2.0 |
+| Validated by | Pending -- requires sign-off by a Mexican contador publico or social security specialist |
+| Skill version | 2.1 |
 
-### UMA Reference Values (2025 -- verify with INEGI)
+### UMA Reference Values (2026, INEGI)
 
 **UMA Reference Values**
 
-| Item | Approximate Value |
+| Item | Value |
 | --- | --- |
-| Daily UMA | MXN 113.14 |
-| Monthly UMA | MXN 3,439.46 |
-| Annual UMA | MXN 41,273.52 |
+| Daily UMA | MXN 117.31 |
+| Monthly UMA | MXN 3,566.22 |
+| Annual UMA | MXN 42,794.64 |
 
 ### IMSS Five Branches of Insurance
 
@@ -60,9 +62,9 @@ domain: payroll
 
 | Option | Who | Coverage | Key Detail |
 | --- | --- | --- | --- |
-| IVRO (Art. 13) | Self-employed, freelancers | All 5 branches | Total contribution approx. 31-33% of chosen base |
-| Seguro de Salud para la Familia (Art. 240) | Any non-covered person | Health only | Fixed annual cost by age bracket; NO pension |
-| Modalidad 40 (Art. 218) | Former employees with 52+ prior weeks | Pension only (Invalidez y Vida + Retiro) | Total approx. 10.075% of chosen base; max 25 UMA |
+| IVRO (Art. 13) | Self-employed, freelancers | All 5 branches | Total approx. 25-30% of chosen base, varying with the base (the illness/maternity in-kind quota is a fixed daily employer cuota per insured, not a percentage of the base) |
+| Seguro de Salud para la Familia (Art. 240) | Any non-covered person | Health only | Fixed annual fee in pesos by age bracket; NO pension |
+| Modalidad 40 (Art. 218) | Former employees with 52+ prior weeks | Pension only (Invalidez y Vida + Retiro) | Total 10.075% only when the base is 1 salario minimo; approx. 18.8% at bases of 4.01 UMA or more; max 25 UMA |
 
 ### Conservative Defaults
 
@@ -72,25 +74,25 @@ domain: payroll
 | --- | --- |
 | Employment status unknown | STOP -- do not proceed |
 | Prior contribution weeks unknown | Assume ineligible for Modalidad 40 until confirmed |
-| Desired salary base unknown | Use 1 UMA (minimum) for estimates |
+| Desired salary base unknown | IVRO base floor is the minimum wage of the geographic area; for Modalidad 40 estimates at 4.01 UMA or more use the 18.8% top-band total (sum of the Art. 168 and Art. 25 quotas in the rate table) |
 | UMA value unconfirmed | Direct client to INEGI for current value |
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+## Required inputs and refusal catalogue
 
 ### Required Inputs
 
-- **Minimum viable inputs** — Confirmation of self-employed status, CURP, RFC, and whether currently enrolled in any IMSS regime.
-- **Recommended inputs** — Prior IMSS contribution history (semanas cotizadas), desired salary base for contributions, family members to cover.
-- **Ideal inputs** — Full contribution statement from IMSS, prior year ISR return, INFONAVIT status.
+- **Minimum viable inputs** -- Confirmation of self-employed status, CURP, RFC, and whether currently enrolled in any IMSS regime.
+- **Recommended inputs** -- Prior IMSS contribution history (semanas cotizadas), desired salary base for contributions, family members to cover.
+- **Ideal inputs** -- Full contribution statement from IMSS, prior year ISR return, INFONAVIT status.
 
 ### Refusal Catalogue
 
-- **R-MX-1 -- Salaried employees** — If the client is a salaried employee, the EMPLOYER handles IMSS. This skill covers self-employed/voluntary enrolment only. Stop.  _(R-MX-1)_
-- **R-MX-2 -- Employer-employee IMSS disputes** — Disputes between employers and IMSS regarding contributions or registrations are outside this skill scope. Escalate to a specialist.  _(R-MX-2)_
-- **R-MX-3 -- Disability claims** — IMSS disability benefit claims require medical and legal evaluation. Escalate.  _(R-MX-3)_
-- **R-MX-4 -- INFONAVIT complex cases** — INFONAVIT credit interaction with voluntary IMSS is outside this skill scope. Escalate.  _(R-MX-4)_
+- **R-MX-1 -- Salaried employees** -- If the client is a salaried employee, the EMPLOYER handles IMSS. This skill covers self-employed/voluntary enrolment only. Stop.  _(R-MX-1)_
+- **R-MX-2 -- Employer-employee IMSS disputes** -- Disputes between employers and IMSS regarding contributions or registrations are outside this skill scope. Escalate to a specialist.  _(R-MX-2)_
+- **R-MX-3 -- Disability claims** -- IMSS disability benefit claims require medical and legal evaluation. Escalate.  _(R-MX-3)_
+- **R-MX-4 -- INFONAVIT complex cases** -- INFONAVIT credit interaction with voluntary IMSS is outside this skill scope. Escalate.  _(R-MX-4)_
 
-## Section 3 -- Transaction Pattern Library
+## Transaction pattern library
 
 This is the deterministic pre-classifier for bank statement lines related to IMSS.
 
@@ -100,10 +102,10 @@ This is the deterministic pre-classifier for bank statement lines related to IMS
 
 | Pattern | Category | Treatment | Notes |
 | --- | --- | --- | --- |
-| IMSS CUOTA OBRERO PATRONAL / IMSS PAGO | IMSS contribution | EXCLUDE from business expenses | Personal social security -- ISR deduction (Art. 151) |
-| IMSS REGIMEN VOLUNTARIO / IMSS IVRO | IVRO contribution | EXCLUDE from business expenses | Personal deduction for ISR |
-| IMSS MODALIDAD 40 / IMSS MOD 40 | Modalidad 40 payment | EXCLUDE from business expenses | Personal deduction for ISR |
-| IMSS SEGURO SALUD FAMILIA / IMSS SSF | Family health insurance | EXCLUDE from business expenses | Medical expense deduction (limited) |
+| IMSS CUOTA OBRERO PATRONAL / IMSS PAGO | IMSS contribution | EXCLUDE from business expenses | Employer-share IMSS cuotas are deductible under LISR Art. 25 fr. VI; Art. 151 personal deductions do not list IMSS cuotas |
+| IMSS REGIMEN VOLUNTARIO / IMSS IVRO | IVRO contribution | EXCLUDE from business expenses | Employer-share portion deductible under LISR Art. 25 fr. VI (business-income context) |
+| IMSS MODALIDAD 40 / IMSS MOD 40 | Modalidad 40 payment | EXCLUDE from business expenses | Same LISR Art. 25 fr. VI basis for the employer-share portion |
+| IMSS SEGURO SALUD FAMILIA / IMSS SSF | Family health insurance | EXCLUDE from business expenses | Art. 151 fr. I medical-expense treatment not confirmed (see Sources) |
 | INFONAVIT / INFONAVIT PAGO | Housing contribution | EXCLUDE | Not IMSS; separate programme |
 
 ### 3.2 IMSS Benefit Patterns (Credits)
@@ -116,99 +118,66 @@ This is the deterministic pre-classifier for bank statement lines related to IMS
 | IMSS INCAPACIDAD / SUBSIDIO IMSS | Disability/sickness benefit | Verify tax treatment | May be exempt up to certain amounts |
 | IMSS REEMBOLSO | IMSS refund | EXCLUDE | Not income |
 
-## Section 4 -- Worked Examples
+## Rates, bands and thresholds
 
-### Example 1 -- IVRO at Minimum Base (1 UMA)
+### 5.1 IVRO Contribution Rates (Art. 13, 106, 107, 147, 168, 211)
 
-**Input:** Self-employed designer, no prior IMSS coverage, wants minimum coverage for self and family.
+- **IVRO both shares** -- For IVRO, the self-employed person pays BOTH employer and employee portions.  _(LSS Art. 13, 106, 107, 147, 168, 211)_
+- **IVRO base range** -- Base floor is the minimum wage of the geographic area; ceiling is 25 times the UMA.  _(IMSS procedure 9210-003-612, sec. 5.2.17)_
 
-**Reasoning:**
-IVRO at 1 UMA daily (approx. MXN 113.14/day). Monthly base approx. MXN 3,439.46. Self-employed pays both employer and employee shares. Total rate approx. 31% of base. Monthly cost approx. MXN 1,066. Covers all 5 branches including health for family.
+**IVRO Contribution Rates**  _(LSS Art. 13, 106, 107, 147, 168, 211)_
 
-**Classification:** IVRO monthly contribution MXN 1,066. Deductible for ISR purposes under Art. 151.
-
-### Example 2 -- Modalidad 40 at Moderate Base
-
-**Input:** Former employee with 200 weeks prior contributions. Left employment 2 years ago. Chose base of 10 UMA daily.
-
-**Reasoning:**
-Eligible for Modalidad 40 (has 52+ weeks, within 5-year window). Daily base: approx. MXN 1,131.40. Monthly base: approx. MXN 34,394.60. Rate: approx. 10.075%. Monthly cost: approx. MXN 3,465. Covers pension only -- NO health coverage.
-
-**Classification:** Modalidad 40 contribution MXN 3,465/month. Deductible for ISR. Client needs separate health coverage.
-
-### Example 3 -- Seguro de Salud para la Familia
-
-**Input:** Family of 4: 2 adults (age 35, 33), 2 children (age 8, 5). No current IMSS coverage.
-
-**Reasoning:**
-Annual cost per person based on age brackets. Adults (19-39): approx. 7.5% of annual UMA each. Children (under 19): approx. 5.9% of annual UMA each. Total annual: approx. MXN 11,061. Health coverage only; no pension.
-
-**Classification:** Annual family health premium MXN 11,061. Deductible as medical expense (limited).
-
-### Example 4 -- Modalidad 40 at Maximum Base
-
-**Input:** High earner wanting maximum pension. 500 weeks prior contributions. Chose 25 UMA daily.
-
-**Reasoning:**
-Maximum Modalidad 40 base: 25 UMA daily = approx. MXN 2,828.50/day = approx. MXN 85,987/month. Monthly cost: approx. 10.075% = MXN 8,663. Maximum pension accumulation strategy.
-
-**Classification:** Modalidad 40 contribution MXN 8,663/month. Maximum pension strategy. Flag for reviewer to assess long-term pension impact.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 IVRO Contribution Rates (Art. 13, 106, 147, 168, 211)
-
-- **IVRO both shares** — For IVRO, the self-employed person pays BOTH employer and employee portions.  _(LSS Art. 13, 106, 147, 168, 211)_
-
-**IVRO Contribution Rates**  _(LSS Art. 13, 106, 147, 168, 211)_
-
-| Branch | Total Rate (% of base salary) |
+| Branch | Rate |
 | --- | --- |
-| Enfermedades y Maternidad (in kind, fixed) | approx. 20.40% |
-| Enfermedades y Maternidad (in kind, excess) | Varies by salary above 3 UMA |
-| Enfermedades y Maternidad (cash) | approx. 1.00% |
-| Invalidez y Vida | approx. 2.375% |
-| Retiro | 2.00% |
-| Cesantia en Edad Avanzada y Vejez | approx. 4.375% (increasing under 2020 reform) |
-| Guarderias | 1.00% |
-| Riesgos de Trabajo | approx. 0.54% (office/low-risk average) |
-| **Approximate total** | **approx. 31-33%** |
+| Enfermedades y Maternidad (in kind) | Fixed employer cuota diaria per insured (Art. 106 fr. I reads 13.9% of one general daily minimum wage in the consolidated text; current value on the Not yet confirmed line) PLUS additional 6% patronal and 2% obrera on SBC above three times the minimum wage (Art. 106 fr. II) |
+| Enfermedades y Maternidad (cash) | 1% of SBC (Art. 107: 70% patronal, 25% obrera, 5% federal) |
+| Invalidez y Vida | 1.75% patronal + 0.625% obrera = 2.375% (Art. 147) |
+| Retiro | 2.00% (Art. 168 fr. I) |
+| Cesantia en Edad Avanzada y Vejez | Patronal 3.150%-11.875% of SBC by wage band (Art. 168 fr. II a table; 11.875% at 4.01 UMA and above) + obrera 1.125% (Art. 168 fr. II b) |
+| Guarderias | 1.00% (Art. 211) |
+| Riesgos de Trabajo | Prima media clase I 0.54355% (Art. 73; office/low-risk default) |
+| **Approximate total** | **approx. 25-30% of base, varying with the base** |
 
 ### 5.2 Modalidad 40 Contribution Rates (Art. 218)
 
-**Modalidad 40 Contribution Rates**  _(LSS Art. 218)_
+**Modalidad 40 Contribution Rates**  _(LSS Art. 218, 147, 168, 25 para. 2)_
 
 | Component | Rate |
 | --- | --- |
-| Invalidez y Vida | approx. 2.375% |
-| Retiro | 2.00% |
-| Cesantia y Vejez | approx. 4.375% |
-| **Total** | **approx. 10.075%** |
+| Invalidez y Vida | 1.75% + 0.625% (Art. 147) |
+| Retiro | 2.00% (the full quota) |
+| Cesantia y Vejez | Patronal 3.150%-11.875% by wage band + obrera 1.125% |
+| Art. 25 second-paragraph quota | 1.425% (1.05% + 0.375%) |
+| **Total** | **10.075% only when the base is 1 salario minimo; approx. 18.8% at bases of 4.01 UMA or more** |
 
-- **Modalidad 40 maximum base** — 25 UMA daily UMA  _(LSS Art. 218)_
+- **Modalidad 40 maximum base** -- 25 UMA daily  _(LSS Art. 218; IMSS procedure 9210-003-209)_
 
 ### 5.3 Seguro de Salud para la Familia (Art. 240-245)
 
-**Seguro de Salud para la Familia Annual Cost by Age**  _(LSS Art. 240-245)_
+**Seguro de Salud para la Familia Annual Fee by Age**  _(LSS Art. 240-245; IMSS fee schedule effective 1 March 2025)_
 
-| Age Group | Annual Cost (approx. % of annual UMA) |
+| Age Group | Annual Fee (MXN) |
 | --- | --- |
-| Under 19 | approx. 5.9% |
-| 19-39 | approx. 7.5% |
-| 40-59 | approx. 9.1% |
-| 60+ | approx. 11.9% |
+| 0-19 | 8,900 |
+| 20-29 | 11,100 |
+| 30-39 | 11,850 |
+| 40-49 | 13,800 |
+| 50-59 | 14,250 |
+| 60-69 | 19,800 |
+| 70-79 | 20,650 |
+| 80 and over | 21,300 |
 
-- **Payment schedule** — Payment: annual, upfront.  _(LSS Art. 240-245)_
+- **Payment schedule** -- Payment: annual, upfront.  _(LSS Art. 240-245)_
 
-### 5.4 Tax Deductibility (ISR Art. 151)
+### 5.4 Tax Deductibility (LISR Arts. 25 fr. VI, 28)
 
-**Tax Deductibility**  _(Ley del ISR Art. 151)_
+**Tax Deductibility**  _(Ley del ISR Art. 25 fr. VI, Art. 28 fr. I)_
 
 | Contribution Type | Deductible? |
 | --- | --- |
-| IVRO contributions | Yes -- social security contribution deduction |
-| Modalidad 40 | Yes -- deductible for ISR |
-| Seguro de Salud para la Familia | Yes -- medical expense deduction (limited) |
+| IVRO cuotas | Employer-share IMSS cuotas are authorized deductions under LISR Art. 25 fr. VI (business-income context); Art. 151 personal deductions list no IMSS item |
+| Modalidad 40 | Same LISR Art. 25 fr. VI basis for the employer-share portion; amounts that originally correspond to third parties are non-deductible under Art. 28 fr. I |
+| Seguro de Salud para la Familia | Not confirmed -- Art. 151 fr. I medical-expense treatment unverified (see Sources) |
 
 ### 5.5 Eligibility Rules
 
@@ -222,9 +191,120 @@ Maximum Modalidad 40 base: 25 UMA daily = approx. MXN 2,828.50/day = approx. MXN
 
 ### 5.6 2020 Reform Impact
 
-- **2020 pension reform impact** — The 2020 pension reform gradually increases the employer share of Cesantia en Edad Avanzada y Vejez from 3.15% (2023) to 11.875% (2030). For IVRO, the self-employed pays both shares, so total contribution increases annually through 2030.  _(Reforma LSS 2020)_
+- **2020 pension reform impact** -- The DOF 16-12-2020 reform rewrote LSS Art. 168 fr. II: the employer Cesantia en Edad Avanzada y Vejez quota is a wage-band table, 3.150% at 1.00 salario minimo rising to 11.875% at SBC of 4.01 UMA and above. The archived copy also contains the decree's second transitorio, which phases in that Art. 168 fr. II a) employer quota gradually starting 1 January 2023, but the transitorio's rate table renders as an image in the archived text and its yearly values were not read; 11.875% is the top rate of the final table. The 2023-2030 transitional rates are on the Not yet confirmed line.  _(Reforma LSS DOF 16-12-2020)_
 
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
+## The taxable base
+
+- **IVRO base range** -- Base floor is the minimum wage of the geographic area; ceiling is 25 times the UMA.  _(IMSS procedure 9210-003-612, sec. 5.2.17)_
+- **Modalidad 40 maximum base** -- 25 UMA daily  _(LSS Art. 218; IMSS procedure 9210-003-209)_
+- **Monthly base** -- The monthly base is the daily SBC multiplied by 30.4 days.  _(INEGI UMA methodology; IMSS procedures)_
+
+## Deadlines and filing
+
+- **Contribution frequency** -- IVRO and Modalidad 40 contributions are paid monthly; enrolment can be done at any time.  _(IMSS procedures 9210-003-612, 9210-003-209)_
+- **Seguro de Salud payment** -- Annual, upfront.  _(LSS Art. 240-245)_
+- **Payment channel** -- IMSS Digital portal (imss.gob.mx) or authorised banks via the IMSS payment line.
+
+## Penalties and interest
+
+Late IMSS contributions: under LSS Art. 40 A, when contributions are not paid on time the employer pays the actualización (inflation update) and recargos (surcharges) from the date the amounts became due, in the terms of the Código Fiscal. Enrolment back-fees can apply when coverage is requested retroactively.
+
+## Cross-border points
+
+- Foreign residents lawfully in Mexico may enrol in IVRO on the same terms; coverage is Mexican-territory based.
+- ISSSTE (public sector) and INFONAVIT (housing) are separate regimes and out of this skill's scope.
+- Totalization of IMSS pension weeks with another country's scheme depends on bilateral agreements -- flag for a specialist.
+
+## Worked examples
+
+### Worked example 1: IVRO at a 10 UMA base
+
+**Input:** Self-employed designer, no prior IMSS coverage, wants coverage for self and family. Chosen base: 10 UMA daily.
+
+**Reasoning:**
+The IVRO base floor is the minimum wage of the geographic area and the ceiling is 25 UMA (IMSS procedure 9210-003-612). 10 UMA daily = MXN 1,173.10 (2026 UMA MXN 117.31); monthly base = 1,173.10 x 30.4 = MXN 35,662.24. The self-employed person pays both shares of the percentage-based financing premiums: illness/maternity cash 1% (Art. 107) + Invalidez y Vida 2.375% (Art. 147) + Retiro 2% (Art. 168 fr. I) + Cesantia y Vejez 13% (11.875% patronal top band + 1.125% obrera, Art. 168 fr. II, base at or above 4.01 UMA) + Guarderias 1% (Art. 211) + Riesgos de Trabajo prima media clase I 0.54355% (Art. 73) = 19.91855% of base = MXN 7,103.40/month. On top of that come the fixed illness/maternity in-kind employer cuota per insured per day (Art. 106 fr. I) and the excess cuotas on SBC above three times the minimum wage (Art. 106 fr. II); their peso amounts are not computable from the archived sources (see Sources).
+
+```oa-check
+name: IVRO percentage cuotas at 10 UMA base 2026
+inputs:
+  uma_d: 117.31
+steps:
+  - sbc_d: uma_d * 10
+  - sbc_m: sbc_d * 30.4
+  - pct: 0.01 + 0.02375 + 0.02 + 0.13 + 0.01 + 0.0054355
+  - cuotas_pct_based: sbc_m * pct
+expected:
+  sbc_m: 35662.24
+  cuotas_pct_based: 7103.40
+```
+
+**Classification:** IVRO percentage-based cuotas approx. MXN 7,103.40/month plus the fixed in-kind employer cuota per insured. Deductibility basis is LISR Art. 25 fr. VI for the employer-share portion, not Art. 151.
+
+### Worked example 2: Modalidad 40 at a 10 UMA base
+
+**Input:** Former employee with 200 weeks prior contributions. Left employment 2 years ago. Chose base of 10 UMA daily.
+
+**Reasoning:**
+Eligible for Modalidad 40 (has 52+ weeks, within 5-year window). Daily base: MXN 1,173.10; monthly base: MXN 35,662.24. Total rate at 4.01 UMA or more: 18.8% (Invalidez y Vida 2.375% + Retiro 2% + Cesantia y Vejez 11.875% patronal + 1.125% obrera + the Art. 25 second-paragraph quota 1.425%). Monthly cost: MXN 6,704.50. Covers pension only -- NO health coverage.
+
+```oa-check
+name: Modalidad 40 at 10 UMA base 2026
+inputs:
+  sbc_m: 35662.24
+steps:
+  - pct: 0.02375 + 0.02 + 0.11875 + 0.01125 + 0.01425
+  - cuota: sbc_m * pct
+expected:
+  pct: 0.188
+  cuota: 6704.50
+```
+
+**Classification:** Modalidad 40 contribution MXN 6,704.50/month. Client needs separate health coverage.
+
+### Worked example 3: Seguro de Salud para la Familia
+
+**Input:** Family of 4: 2 adults (age 35, 33), 2 children (age 8, 5). No current IMSS coverage.
+
+**Reasoning:**
+Annual fee per person is a fixed peso amount by age bracket (IMSS fee schedule effective 1 March 2025). Adults 35 and 33 fall in the 30-39 bracket: MXN 11,850 each. Children under 19: MXN 8,900 each. Total annual: MXN 41,500. Health coverage only; no pension.
+
+```oa-check
+name: Seguro de Salud para la Familia family of four
+inputs:
+  adulto_30_39: 11850
+  menor_19: 8900
+steps:
+  - total_anual: 2 * adulto_30_39 + 2 * menor_19
+expected:
+  total_anual: 41500
+```
+
+**Classification:** Annual family health premium MXN 41,500. Whether the premium qualifies as an Art. 151 fr. I medical expense is not confirmed (see Sources).
+
+### Worked example 4: Modalidad 40 at Maximum Base
+
+**Input:** High earner wanting maximum pension. 500 weeks prior contributions. Chose 25 UMA daily.
+
+**Reasoning:**
+Maximum Modalidad 40 base: 25 UMA daily = MXN 2,932.75/day; monthly base = MXN 89,155.60. Total rate 18.8% (base far above 4.01 UMA). Monthly cost: MXN 16,761.25. Maximum pension accumulation strategy.
+
+```oa-check
+name: Modalidad 40 at 25 UMA ceiling 2026
+inputs:
+  uma_d: 117.31
+steps:
+  - sbc_d: uma_d * 25
+  - sbc_m: sbc_d * 30.4
+  - pct: 0.02375 + 0.02 + 0.11875 + 0.01125 + 0.01425
+  - cuota: sbc_m * pct
+expected:
+  sbc_m: 89155.60
+  cuota: 16761.25
+```
+
+**Classification:** Modalidad 40 contribution MXN 16,761.25/month. Maximum pension strategy. Flag for reviewer to assess long-term pension impact.
+
+## Tier 2 catalogue (reviewer judgement required)
 
 ### 6.1 Choosing Between IVRO and Seguro de Salud
 
@@ -242,7 +322,7 @@ Modalidad 40 allows choosing up to 25 UMA base to maximize future pension. This 
 
 If client had employer IMSS, left more than 5 years ago with no contributions since, the Modalidad 40 right has lapsed. IVRO is the only voluntary option.
 
-## Section 7 -- Working Paper Template
+## Working paper template
 
 ```
 MEXICO IMSS SELF-EMPLOYED WORKING PAPER
@@ -274,17 +354,17 @@ D. COVERAGE
 
 E. TAX DEDUCTIBILITY
   E1. ISR deduction type                         ___________
-  E2. Estimated ISR benefit                      ___________
+  E2. Estimated ISR benefit                       ___________
 
 REVIEWER FLAGS:
   [ ] Employment status confirmed (self-employed only)?
   [ ] Prior weeks verified for Modalidad 40 eligibility?
   [ ] 5-year window checked for Modalidad 40?
   [ ] UMA values verified with INEGI?
-  [ ] 2020 reform rate adjustments applied?
+  [ ] Art. 168 fr. II wage-band table applied (no annual escalator)?
 ```
 
-## Section 8 -- Bank Statement Reading Guide
+## Bank statement reading guide
 
 ### Mexican Bank Statement Formats
 
@@ -305,18 +385,18 @@ REVIEWER FLAGS:
 
 | Narration | Meaning | Classification Hint |
 | --- | --- | --- |
-| IMSS CUOTA / PAGO IMSS | IMSS contribution | Social security -- personal deduction |
-| IMSS MOD 40 / MODALIDAD 40 | Modalidad 40 payment | Pension contribution -- personal deduction |
-| IMSS SSF / SEGURO SALUD | Family health insurance | Medical expense deduction |
+| IMSS CUOTA / PAGO IMSS | IMSS contribution | Social security -- LISR Art. 25 fr. VI basis for the employer share |
+| IMSS MOD 40 / MODALIDAD 40 | Modalidad 40 payment | Pension contribution -- LISR Art. 25 fr. VI basis |
+| IMSS SSF / SEGURO SALUD | Family health insurance | Medical-expense treatment not confirmed |
 | INFONAVIT / PAGO INFONAVIT | Housing fund payment | Separate from IMSS |
 | PENSION IMSS / RETIRO IMSS | Pension receipt | Taxable pension income |
 
-## Section 9 -- Onboarding Fallback
+## Ask the client first
 
 If the client provides a bank statement but cannot answer onboarding questions immediately:
 
 1. Identify all IMSS-related debits (contributions paid)
-2. Classify as personal deductions (NOT business expenses)
+2. Classify as personal social-security payments (NOT business expenses); deductibility basis for the employer share is LISR Art. 25 fr. VI
 3. Flag Modalidad 40 payments separately from IVRO
 4. Do NOT assume eligibility for any programme without confirmation
 
@@ -334,7 +414,7 @@ ONBOARDING QUESTIONS -- MEXICO IMSS SELF-EMPLOYED
 8. Are you interested in health coverage, pension coverage, or both?
 ```
 
-## Section 10 -- Reference Material
+## Reference material
 
 ### Key Legislation
 
@@ -346,10 +426,10 @@ ONBOARDING QUESTIONS -- MEXICO IMSS SELF-EMPLOYED
 | IVRO voluntary enrolment | LSS Art. 13 |
 | Modalidad 40 | LSS Art. 218 |
 | Seguro de Salud para la Familia | LSS Art. 240-245 |
-| Contribution rates | LSS Art. 106, 147, 168, 211 |
-| ISR deductibility | Ley del ISR Art. 151 |
+| Contribution rates | LSS Art. 106, 107, 147, 168, 211 |
+| ISR deductibility | Ley del ISR Art. 25 fr. VI, 28 |
 | UMA usage | Decreto DOF 27/01/2016 |
-| 2020 pension reform | Reforma LSS 2020 (Cesantia rates) |
+| 2020 pension reform | Reforma LSS DOF 16-12-2020 (Art. 168 fr. II quota table) |
 
 ### Known Gaps / Out of Scope
 
@@ -365,6 +445,7 @@ ONBOARDING QUESTIONS -- MEXICO IMSS SELF-EMPLOYED
 
 | Version | Date | Change |
 | --- | --- | --- |
+| 2.1 | 2026-11-02 | Deep-review corrections: IVRO/Modalidad 40 rates (Art. 106 fixed cuota, Art. 168 fr. II wage-band table, Art. 25 para. 2 quota), Seguro de Salud fixed peso fees, LISR Art. 25 fr. VI deductibility basis, 2026 UMA, worked examples recomputed |
 | 2.0 | April 2026 | Full rewrite to v2.0 structure; bank statement patterns; worked examples |
 | 1.0 | 2025 | Initial version |
 
@@ -374,21 +455,53 @@ ONBOARDING QUESTIONS -- MEXICO IMSS SELF-EMPLOYED
 - [ ] Prior IMSS weeks verified before Modalidad 40 recommendation?
 - [ ] 5-year Modalidad 40 window checked?
 - [ ] UMA values verified with INEGI for current year?
-- [ ] 2020 reform rate increases applied?
-- [ ] Contributions classified as personal deductions (NOT business expenses)?
+- [ ] Art. 168 fr. II wage-band table applied (no annual escalator)?
+- [ ] Deductibility cited to LISR Art. 25 fr. VI (not Art. 151)?
 
 ## PROHIBITIONS
 
 - NEVER enrol in Modalidad 40 without verifying at least 52 weeks of prior contributions
 - NEVER assume Seguro de Salud para la Familia provides pension or disability coverage -- it is health only
-- NEVER use salario minimo for IMSS calculations -- use UMA since 2017
+- NEVER use salario minimo for UMA-based IMSS calculations -- UMA governs since 2017; the exceptions are the IVRO base floor and the illness/maternity in-kind fixed cuota, which remain salario-minimo based
 - NEVER ignore the 5-year window for Modalidad 40 enrolment after leaving employment
-- NEVER assume IVRO rates are fixed -- the 2020 reform increases Cesantia rates annually through 2030
+- NEVER apply one flat Cesantia y Vejez rate -- the employer quota is the LSS Art. 168 fr. II wage-band table (3.150% at 1.00 salario minimo to 11.875% at 4.01 UMA and above)
+- NEVER apply an illness/maternity in-kind percentage to the whole chosen base -- Art. 106 finances it with a fixed employer cuota diaria per insured plus excess cuotas only on SBC above three times the minimum wage
 - NEVER present IMSS calculations as exact -- use the IMSS calculator at imss.gob.mx for precise amounts
 - NEVER advise on Modalidad 40 as a pension strategy without flagging for a qualified advisor
-- NEVER classify IMSS contributions as business expenses -- they are personal deductions under ISR Art. 151
+- NEVER cite ISR Art. 151 as the IMSS deductibility basis -- Art. 151 lists no IMSS cuotas; the employer share is deductible under LISR Art. 25 fr. VI
 - NEVER present calculations as definitive -- always label as estimated and direct client to IMSS or a qualified Mexican contador publico
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Ley del Seguro Social, consolidated text (Cámara de Diputados), last reform DOF 15-01-2026 -- Arts. 13, 25, 28, 73, 106, 107, 147, 168, 211, 218 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf | 2026-10-28 |
+| Ley del Impuesto Sobre la Renta, consolidated text (Cámara de Diputados), last reform DOF 01-04-2024 -- Arts. 25 fr. VI, 28, 151 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
+| INEGI, Unidad de Medida y Actualización, valores por año (2026: MXN 117.31 daily) | https://www.inegi.org.mx/temas/uma/ | 2026-11-02 |
+| IMSS, Seguro de Salud para la Familia, cuotas vigentes a partir del 1 de marzo de 2025 | https://www.imss.gob.mx/derechoH/segurosalud-familia | 2026-11-02 |
+| IMSS, Procedimiento 9210-003-612, aseguramiento de personas trabajadoras independientes o por cuenta propia (IVRO) | https://reposipot.imss.gob.mx/normatividad/DNMR/Procedimiento/9210-003-612.pdf | 2026-11-02 |
+| IMSS, Procedimiento 9210-003-209, Continuación Voluntaria Régimen Obligatorio Modalidad 40 | https://www.imss.gob.mx/sites/all/statics/pdf/procedimientos/9210-003-209.pdf | 2026-11-02 |
+
+Not yet confirmed: the current illness/maternity in-kind fixed employer cuota (the consolidated LSS text read shows the original 13.9% of one general daily minimum wage in Art. 106 fr. I; the 1995 law's transitional articles raised it, and the current figure is reported as 20.40% of one UMA per insured per day, but the transitorio text is not in the archived copy); the current illness/maternity excess cuotas (the text read shows 6% patronal / 2% obrera on SBC above three times the minimum wage; 1.10% / 0.40% above 3 UMA are reported but not in the archived text); the 2023-2030 transitional employer cesantía y vejez rates (the DOF 16-12-2020 decree's second transitorio phases in the Art. 168 fr. II a) quota gradually from 1 January 2023, but its rate table renders as an image in the archived copy and the yearly values were not read); the 2025 and 2026 general minimum wage peso amounts (the IVRO base floor and the Art. 106 thresholds; no archived DOF wage decree); Seguro de Salud para la Familia fees effective from 1 March 2026 (the page read shows the 1 March 2025 schedule); whether the Seguro de Salud para la Familia annual premium qualifies as an Art. 151 fr. I medical expense; the Código Fiscal rates for actualización and recargos on late contributions (CFF not archived).
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a contador publico, social security specialist, or equivalent licensed practitioner in Mexico) before filing or acting upon.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network -- accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
