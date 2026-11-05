@@ -1,62 +1,74 @@
-# Website ↔ repo sync
+# Website and repository delivery
 
-The platform database (openaccountants.com) is the operational source for
-website guide content. This repository is its public projection, and merged
-external changes to `skills/**` must be ingested back into the platform before
-the next outbound export.
+`skills/**` on this repository's `main` branch is the editable source. Merged
+changes are ingested by the platform, then served on the website and through
+MCP. The platform also runs repository-derived exports. Its current export job does not
+write back to `skills/**`.
 
-The `ingest-to-platform.yml` workflow notifies the private platform after a human
-guide change reaches `main`, when its repository secret is configured. It reads
-changed files from the paginated Commits API because Actions push payloads omit
-file lists. A successful notification still requires verified ingestion and
-export; the public workflow cannot confirm the platform's stored guide state.
+## Delivery after merge
 
-Earlier runs that reported `No human-edited guide files in this push.` while
-guides changed need maintainer backfill. This includes the three Australian
-guides merged in PR 157 at `e48c2f96909cb9ddd5e90324dc19fdf553ef6326`.
+The [ingest workflow](../.github/workflows/ingest-to-platform.yml) uses
+[deliver-to-platform.py](../scripts/deliver-to-platform.py) for both pushes and
+manual recovery. The production environment retains the ingestion credential;
+the job runs only on `main` with read-only repository permissions.
 
-## Outbound (platform → repo), daily
+The runner:
 
-A scheduled job in the separate, private platform repository renders published
-guides using the same serving code as the website:
+1. Collects every changed skill from the complete Git range, without depending
+   on file lists in an Actions event or a single Commits API response.
+2. Excludes sync-bot authors/committers, removed files, templates and index files.
+3. Groups paths by their last non-merge human writer. A maintainer's merge does
+   not replace the writer; a file created only in the merge uses its author.
+4. Sends at most200 paths per request, with one author and the same requested
+   head SHA in every batch.
+5. Polls the platform's read-only verifier for every requested path before
+   moving to the next batch. Both automatic delivery and manual recovery verify.
 
-- `skills/**` is rendered per guide (`skills.github_path` in the platform DB).
-- An existing guide edited by an accountant is committed under that
-  accountant's name (git author); the committer is
-  `openaccountants-sync[bot]`.
-- Derived trees — `packages/`, `index.json`, `llms-full.txt` — are regenerated
-  in the same run and committed by the bot. **Never edit them in a PR.**
-- Frontmatter uses `reviewed_by` plus `review_status` (`current` |
-  `pending_review`). The export also writes `license`, and `authored_by` plus
-  `trust_label` on team-authored revisions; the key list is in
-  [skill-template.md](skill-template.md#platform-written-keys). The legacy
-  `verified_by` key is removed on rewrite.
+Only a complete response containing `match` or `superseded` for every path
+passes. Held proposals need action and fail delivery, as do mismatches, failed
+or unsettled paths, missing outcomes and unknown states. This does not bypass
+any source, accountant or repository review. Independent batches still run
+when one fails, and the final job reports failure.
 
-The exporter must not use the platform database's timestamp, `last_updated`, or
-content `version` as its concurrency decision. Those fields describe content;
-they do not prove that the platform ingested the current repository blob.
+A missing ingestion credential fails a non-empty delivery. A failed commit
+lookup stops before any request is sent. Redirects are not followed with the
+credential. Paths and author names are passed as data, not shell commands.
 
-## Inbound (repo → platform)
+## Inspect a plan without sending
 
-Once successfully ingested, merged pull requests touching `skills/**` replace
-or create the corresponding platform guide and retain the pull-request author's
-attribution. A substantive edit supersedes any professional review of the
-previous text and therefore sets the guide back to `pending_review` until it is
-reviewed again.
+Run from the repository checkout. This command needs no platform credential
+and makes no platform request:
 
-If notification or ingestion fails, or a prior merge needs backfill, the
-maintainer sequence is:
+```bash
+python3 scripts/deliver-to-platform.py --since <last-delivered-sha> --head HEAD
+```
 
-1. Identify every changed `skills/**` path in the merge commit.
-2. Pause outbound writes for those paths.
-3. Run the private ingest tool against the exact merge commit.
-4. Verify that the complete body and frontmatter were stored atomically, prior
-   review was invalidated when appropriate, and the merge's Git blob hash was
-   recorded for each path.
-5. Resume outbound sync only after that verification succeeds.
+The JSON lists each batch, its exact head SHA, paths and author. The range must
+start at an ancestor of the requested head. A shallow checkout needs the missing
+history fetched before it can plan that range.
 
-If ingestion fails or cannot be verified, keep the affected paths quarantined;
-do not allow an older platform record to replace them.
+For recovery, the existing `workflow_dispatch` input `since_sha` supplies the
+last delivered commit. Its delivery and verification use the same runner as a
+push. A green notification alone is not proof that a skill is served.
+
+## Derived exports
+
+The platform builds `packages/`, `index.json`, `llms-full.txt` and the generated
+AI-client bundles from the repository sources. Contributors edit the sources, not
+those generated trees. Updating source delivery does not itself prove that a
+later derived export succeeded.
+
+The private catch-up cron has its own collection/attribution path and still
+needs pagination and batching work. Concurrent or out-of-order push handling
+also needs separate verification. These are open parts of the complete delivery
+chain; this runner does not establish that the whole chain is finished.
+
+<details>
+<summary>Historical source-writing safeguard, inactive</summary>
+
+The protocol below describes the former platform-to-source writer. Source
+writes are currently disabled; retain this contract if that writer is ever
+restored. It is not the current contribution or recovery procedure.
 
 ## Required private-platform integrity contract (not deployed here)
 
@@ -164,13 +176,15 @@ Enabling blocking rules before the bot uses branches would only break the
 scheduled job. Leaving the direct-push bot exempt would preserve the stale-write
 path this contract is intended to close.
 
+
+</details>
+
 ## What this means for contributors
 
-1. Edit `skills/**` only; generated files are rebuilt by the platform sync.
-2. A merge accepts the repository contribution. Platform publication is
-   complete only after the maintainer confirms inbound ingestion.
-3. `last_updated` must never move backwards. Bump `version` on substantive
-   changes when the guide has that field, but do not treat either value as a
+1. Edit `skills/**`; generated files are rebuilt from ingested sources.
+2. A merge accepts the contribution. Platform delivery is confirmed separately
+   by the complete path verification, not guide presence or an HTTP acknowledgement.
+3. Keep `last_updated` and any content version accurate; neither is a
    synchronization token.
-4. Set your GitHub username in your accountant profile on openaccountants.com
-   so platform edits can be attributed to your GitHub account.
+4. Set your GitHub username in your accountant profile so merged work can be
+   linked to that profile. Attribution does not imply approval.

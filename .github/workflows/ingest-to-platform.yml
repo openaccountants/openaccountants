@@ -1,12 +1,5 @@
-# The doorbell: after a human's guide edit merges to main, tell the platform so
-# it ingests the change into the database (drafts apply automatically; a Guide
-# with an accountant's byline waits for that accountant's one-click approval).
-#
-# Deliberately a DOORBELL, not a payload: we send paths + the SHA, and the
-# platform re-fetches the content itself from raw.githubusercontent.com at that
-# SHA. Loop guard: sync-bot pushes (the nightly DB->repo render) never ring.
-#
-# Inert until the PLATFORM_INGEST_SECRET repo secret is set.
+# Deliver and verify every human-edited skill after merge, with one author per
+# batch and at most200 paths. Manual recovery uses the same checked path.
 name: Ingest to platform
 
 on:
@@ -14,13 +7,10 @@ on:
     branches: [main]
     paths:
       - "skills/**"
-  # Re-send guides a failed doorbell missed (e.g. 22-23 Oct 2026, secret
-  # mismatch). Sends every human-edited guide changed since `since_sha`, at
-  # the current main SHA, in batches of 200 (the platform's limit).
   workflow_dispatch:
     inputs:
       since_sha:
-        description: "Last commit whose guides reached the platform"
+        description: "Last commit whose skills reached the platform"
         required: true
 
 permissions:
@@ -28,138 +18,19 @@ permissions:
 
 jobs:
   ring:
-    # Secrets live in the `production` environment, which only the default
-    # branch may use. Any branch can run workflows, and repo-level secrets would
-    # be readable from a workflow edited on an unmerged branch; environment
-    # secrets are not.
-    environment: production
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.event.head_commit.author.email != 'sync@openaccountants.com'
-    steps:
-      - name: Collect changed guide files and ring the platform
-        env:
-          SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
-          PAYLOAD: ${{ toJson(github.event.commits) }}
-          HEAD_SHA: ${{ github.sha }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          if [ -z "$SECRET" ]; then
-            echo "PLATFORM_INGEST_SECRET not set — doorbell inert."; exit 0
-          fi
-          # Actions omits file lists from push commits. Fetch each human
-          # commit's paginated files before preparing the ingestion request.
-          PATHS=$(
-            jq -r '.[] | select(.author.email != "sync@openaccountants.com") | .id' <<< "$PAYLOAD" |
-            while IFS= read -r commit; do
-              gh api --paginate "repos/$GITHUB_REPOSITORY/commits/$commit" \
-                --jq '[.files[] | select(.status != "removed") | .filename]' || exit 1
-            done |
-            jq -sc 'add // [] | map(select(startswith("skills/") and endswith(".md"))) | unique'
-          )
-          BODY=$(jq -cn --arg sha "$HEAD_SHA" --argjson commits "$PAYLOAD" --argjson paths "$PATHS" '
-            {
-              headSha: $sha,
-              paths: $paths,
-              authors: ([ $commits[] | {name: .author.name, email: .author.email,
-                                        login: (.author.username // null)} ]
-                        | unique)
-            }')
-          COUNT=$(echo "$BODY" | jq '.paths | length')
-          if [ "$COUNT" = "0" ]; then
-            echo "No human-edited guide files in this push."; exit 0
-          fi
-          echo "Ringing platform for $COUNT file(s)."
-          # Print the status and the start of the reply, so a failure says why
-          # (401 = secret mismatch, 400 = bad body, 5xx = platform error).
-          STATUS=$(curl -s -o resp.txt -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
-            -H "Authorization: Bearer $SECRET" \
-            -H "Content-Type: application/json" \
-            -d "$BODY") || STATUS=000
-          echo "Platform answered HTTP $STATUS: $(head -c 300 resp.txt 2>/dev/null)"
-          case "$STATUS" in 2*) ;; *) exit 1 ;; esac
-          echo "$BODY" > "$RUNNER_TEMP/ingest-body.json"
-
-      # A green doorbell only means the platform accepted the request. The 22-24
-      # Oct 2026 check found refused ingests, held proposals and bodies served
-      # with text cut out, all behind "success". This asks the platform to compare
-      # what it now serves with the file at this SHA, and goes red on a mismatch
-      # or a failed ingest. Held proposals are warnings: a human decides those.
-      - name: Verify the platform serves what was merged
-        env:
-          SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
-        run: |
-          set -euo pipefail
-          F="$RUNNER_TEMP/ingest-body.json"
-          [ -f "$F" ] || { echo "Nothing was rung; nothing to verify."; exit 0; }
-          BODY=$(jq -c '{headSha, paths}' "$F")
-          # Ingest runs in the background after the ack: poll until no path is pending.
-          for i in $(seq 1 20); do
-            sleep 30
-            STATUS=$(curl -s -o verify.json -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest/verify" \
-              -H "Authorization: Bearer $SECRET" -H "Content-Type: application/json" -d "$BODY") || STATUS=000
-            case "$STATUS" in 2*) ;; *) echo "verify HTTP $STATUS: $(head -c 300 verify.json)"; continue ;; esac
-            PENDING=$(jq '[.outcomes[] | select(.status=="pending")] | length' verify.json)
-            [ "$PENDING" = "0" ] && break
-            echo "Try $i: $PENDING path(s) still ingesting."
-          done
-          [ -f verify.json ] && jq -e '.outcomes' verify.json >/dev/null || { echo "::error::verify never answered"; exit 1; }
-          jq -r '.outcomes[] | "\(.status)\t\(.path)\t\(.detail // "")"' verify.json | sort
-          jq -r '.outcomes[] | select(.status=="held") | "::warning file=\(.path)::held for a human: \(.detail)"' verify.json
-          jq -r '.outcomes[] | select(.status=="mismatch" or .status=="failed" or .status=="pending") | "::error file=\(.path)::\(.status): \(.detail // "")"' verify.json
-          BAD=$(jq '[.outcomes[] | select(.status=="mismatch" or .status=="failed" or .status=="pending")] | length' verify.json)
-          [ "$BAD" = "0" ] || { echo "$BAD guide(s) not served as merged."; exit 1; }
-
-  backfill:
-    if: github.event_name == 'workflow_dispatch'
+    # Keep ingestion secrets restricted to the protected production environment.
+    if: github.ref == 'refs/heads/main'
     environment: production
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-      - name: Re-send guides changed since since_sha, in batches
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Deliver and verify every human-edited skill
         env:
-          SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
-          SINCE: ${{ inputs.since_sha }}
-        run: |
-          set -euo pipefail
-          [ -n "$SECRET" ] || { echo "PLATFORM_INGEST_SECRET not set"; exit 1; }
-          HEAD_SHA=$(git rev-parse HEAD)
-          git cat-file -e "$SINCE^{commit}"
-          # Human commits only; the sync bot's renders came from the platform.
-          git log --no-merges --format='%H%x09%an%x09%ae' "$SINCE..$HEAD_SHA" \
-            | awk -F'\t' '$3 != "sync@openaccountants.com"' > commits.tsv
-          cut -f1 commits.tsv | while read -r c; do
-            git diff-tree --no-commit-id --name-only -r --diff-filter=d "$c" -- 'skills/**/*.md' 'skills/*.md'
-          done | sort -u | while read -r f; do
-            case "$(basename "$f" | tr 'A-Z' 'a-z')" in readme*) continue ;; esac
-            [ -f "$f" ] && echo "$f"
-          done > paths.txt
-          # Each guide goes with the author of the last human commit that touched it,
-          # one batch per author. A single merged author list let the platform credit
-          # every guide to whichever listed author has a profile (23 Oct 2026).
-          while read -r f; do
-            git log --format='%ae%x09%an' "$SINCE..$HEAD_SHA" -- "$f" \
-              | awk -F'\t' '$1 != "sync@openaccountants.com"' | head -1 \
-              | awk -v f="$f" -F'\t' '{print $1"\t"$2"\t"f}'
-          done < paths.txt | sort > owned.tsv
-          echo "$(wc -l < paths.txt) guide(s) to re-send at $HEAD_SHA"
-          FAILED=0
-          cut -f1 owned.tsv | sort -u | while read -r email; do
-            awk -F'\t' -v e="$email" '$1 == e {print $3}' owned.tsv > mine.txt
-            NAME=$(awk -F'\t' -v e="$email" '$1 == e {print $2; exit}' owned.tsv)
-            rm -f batch_*; split -l 200 mine.txt batch_
-            for b in batch_*; do
-              [ -s "$b" ] || continue
-              BODY=$(jq -cn --arg sha "$HEAD_SHA" --arg n "$NAME" --arg e "$email" --rawfile p "$b" \
-                '{headSha: $sha, paths: ($p | split("\n") | map(select(length>0))), authors: [{name: $n, email: $e, login: null}]}')
-              STATUS=$(curl -s -o resp.txt -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
-                -H "Authorization: Bearer $SECRET" -H "Content-Type: application/json" -d "$BODY") || STATUS=000
-              echo "$NAME $b ($(wc -l < "$b") paths): HTTP $STATUS $(head -c 200 resp.txt)"
-              case "$STATUS" in 2*) ;; *) echo 1 > failed.flag ;; esac
-              sleep 20
-            done
-          done
-          [ -f failed.flag ] && FAILED=1
-          exit $FAILED
+          PLATFORM_INGEST_SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
+          SINCE_SHA: ${{ github.event.before || inputs.since_sha }}
+          HEAD_SHA: ${{ github.sha }}
+        run: python3 scripts/deliver-to-platform.py --since "$SINCE_SHA" --head "$HEAD_SHA" --send
