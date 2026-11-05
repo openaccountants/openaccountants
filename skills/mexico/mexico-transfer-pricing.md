@@ -1,10 +1,10 @@
 ---
 name: mexico-transfer-pricing
 description: Use this skill whenever asked about Mexico transfer pricing rules, documentation requirements, or precios de transferencia compliance. Trigger on phrases like "transfer pricing Mexico", "Mexican TP documentation", "precios de transferencia Mexico", "master file Mexico", "local file Mexico", "CbCR Mexico", "APA Mexico", "SAT transfer pricing", "maquiladora safe harbor", "Article 76 LISR", or any question about intercompany pricing for Mexican entities.
-version: 1.0
+version: 1.1
 jurisdiction: MX
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-05
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:

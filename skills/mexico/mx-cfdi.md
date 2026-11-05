@@ -1,9 +1,10 @@
 ---
 name: mx-cfdi
+version: 2.1
 description: Use this skill whenever asked about Mexican CFDI electronic invoicing. Trigger on phrases like "CFDI", "factura electronica", "PAC", "complemento de pago", "comprobante fiscal", "SAT factura", "CFDI 4.0", "timbrado", "cancelacion CFDI", or any question about issuing, receiving, or managing electronic invoices in Mexico. Covers CFDI 4.0 structure, PAC certification, complemento de pago, uso de CFDI, cancellation rules, and SAT obligations. ALWAYS read this skill before touching any Mexican CFDI work.
 jurisdiction: MX
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-05
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2

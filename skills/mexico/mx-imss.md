@@ -1,10 +1,10 @@
 ---
 name: mx-imss
 description: Use this skill whenever asked about Mexican IMSS social security for self-employed individuals. Trigger on phrases like "IMSS", "seguro social Mexico", "regimen voluntario", "incorporacion voluntaria", "IMSS freelancer", "aseguramiento voluntario", "Modalidad 40", or any question about voluntary IMSS enrollment, contribution calculation, or benefits for self-employed persons in Mexico. Covers voluntary inscription (Modalidad 40, regimen voluntario), contribution bases, health/maternity/retirement/disability benefits, and tax deductibility. ALWAYS read this skill before touching any Mexican IMSS work.
-version: 2.1
+version: 2.2
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-05
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:

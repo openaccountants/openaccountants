@@ -1,10 +1,10 @@
 ---
 name: mexico-einvoice
 description: Use this skill whenever asked about Mexico e-invoicing, CFDI (Comprobante Fiscal Digital por Internet), SAT (Servicio de Administración Tributaria), PAC (Proveedor Autorizado de Certificación), timbrado (digital stamping), Anexo 20, CFDI version 4.0, XML schema for Mexican invoices, UUID/folio fiscal, RFC validation, complemento de pago, carta porte, nomina, cancelación de CFDI, or any question about generating, validating, certifying, or troubleshooting Mexican electronic invoices. Also trigger when advising on SAT compliance, PAC selection, XML structure, fiscal regime codes, product catalog codes (c_ClaveProdServ), or CFDI workflow. ALWAYS read this skill before touching any Mexico e-invoice work.
-version: 1.0
+version: 1.1
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-11-05
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:

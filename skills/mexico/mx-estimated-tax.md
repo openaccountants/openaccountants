@@ -1,10 +1,10 @@
 ---
 name: mx-estimated-tax
 description: Use this skill whenever asked about Mexican provisional income tax payments (pagos provisionales de ISR) for self-employed individuals and sole proprietors. Trigger on phrases like "pagos provisionales", "ISR provisional", "estimated tax Mexico", "coeficiente de utilidad", "SAT monthly payment", "declaracion provisional", "Mexican advance tax", "RESICO", or any question about monthly provisional income tax obligations under the Ley del ISR. Covers the monthly payment schedule, cumulative computation method, RESICO simplified rates, penalties for late payment, and SAT filing procedures. ALWAYS read this skill before touching any estimated tax work for Mexico.
-version: 2.0
+version: 2.1
 jurisdiction: MX
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-05
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:

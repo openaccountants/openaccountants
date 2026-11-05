@@ -6,8 +6,8 @@ jurisdiction: MX
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-29
-version: 0.3
+last_updated: 2026-11-05
+version: 0.4
 ---
 
 # Mexico payroll withholding (ISR retenciones)
