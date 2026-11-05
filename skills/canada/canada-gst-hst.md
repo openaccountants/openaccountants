@@ -549,15 +549,11 @@ Columns A–L per the base. Column H ("Line code") accepts GST34 line references
 
 ### Mandatory recalc step
 
-After building the workbook, recalculate every formula and cache the results so the
-values can be read back. On a normal machine, recalc with LibreOffice headless:
+After building the workbook, run:
 
 ```bash
-soffice --headless --convert-to xlsx --outdir /tmp /mnt/user-data/outputs/canada-gst-hst-<period>-working-paper.xlsx
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/canada-gst-hst-<period>-working-paper.xlsx
 ```
-
-Then re-open the converted file and confirm no cell shows a formula error before
-presenting it.
 
 ## Section 8 — Canadian bank statement reading guide
 

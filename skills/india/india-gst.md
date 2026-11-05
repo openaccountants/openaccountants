@@ -864,15 +864,13 @@ Blue for values typed from the bank statement or invoice. Black for formulas. Gr
 
 ### Mandatory recalc step
 
-After building the workbook, recalculate every formula and cache the results so the
-values can be read back. On a normal machine, recalc with LibreOffice headless:
+After building the workbook, run:
 
 ~~~bash
-soffice --headless --convert-to xlsx --outdir /tmp /mnt/user-data/outputs/india-gst-PERIOD-working-paper.xlsx
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/india-gst-PERIOD-working-paper.xlsx
 ~~~
 
-Then re-open the converted file and check for formula errors. If any cell shows an
-error, fix the formulas and recalc again.
+Check the JSON output. If `status` is `errors_found`, fix the formulas and run it again.
 
 ## Section 8: Indian bank statement reading guide
 
