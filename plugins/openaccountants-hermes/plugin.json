@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "openaccountants",
   "version": "0.1.0",
-  "description": "OpenAccountants tax skills for Hermes: 2,100+ jurisdiction tax skills (countries, US states, cross-border, verticals) installed as native skills, plus the OpenAccountants connector for today's figures in 190+ jurisdictions.",
+  "description": "OpenAccountants connector for Hermes: today's tax figures for 190+ jurisdictions via the hosted MCP server. Skills install separately, per jurisdiction, from the agent-skills tree.",
   "author": { "name": "OpenAccountants", "url": "https://www.openaccountants.com" },
   "homepage": "https://www.openaccountants.com/connect",
   "repository": "https://github.com/openaccountants/openaccountants",

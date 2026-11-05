@@ -45,7 +45,8 @@ jobs:
             'agent-skills/*/SKILL.md' 'agent-skills/index.json' \
             'plugins/openaccountants/skills/**' \
             'plugins/openaccountants-hermes/skills/**' \
-            ':(exclude)packages/us-federal/**' | head -20)
+            ':(exclude)packages/us-federal/**' \
+            ':(exclude)plugins/openaccountants-hermes/skills/*/SKILL.md' | head -20)
           if [ -n "$BAD" ]; then
             echo "generated_files_touched<<EOM" >> "$GITHUB_OUTPUT"
             echo "$BAD" >> "$GITHUB_OUTPUT"

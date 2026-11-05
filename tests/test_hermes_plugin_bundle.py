@@ -1,6 +1,8 @@
 """The Hermes plugin bundle (plugins/openaccountants-hermes/) must be a valid portable
-Agent Plugins v1 package: plugin.json and mcp.json parse, and every skills/<slug>/SKILL.md
-carries frontmatter the Hermes loader accepts (name matches the folder, description present).
+Agent Plugins v1 package: plugin.json and mcp.json parse, and the bundle ships no
+skills. Every enabled plugin skill adds a row to the skills index on every turn, so
+the full library lives in agent-skills/ and installs per jurisdiction via install.sh
+instead of registering as plugin skills.
 """
 from __future__ import annotations
 
@@ -31,27 +33,19 @@ class HermesBundleTests(unittest.TestCase):
         self.assertEqual(server["type"], "streamable-http")
         self.assertEqual(server["url"], "https://www.openaccountants.com/api/mcp")
 
-    def test_skills_mirror_agent_skills(self) -> None:
-        bundle_slugs = {
-            p.parent.name for p in (BUNDLE / "skills").glob("*/SKILL.md")
-        }
-        agent_slugs = {
-            p.parent.name for p in (ROOT / "agent-skills").glob("*/SKILL.md")
-        }
-        self.assertTrue(bundle_slugs, "the bundle ships no skills")
-        self.assertEqual(bundle_slugs, agent_slugs)
+    def test_bundle_ships_no_plugin_skills(self) -> None:
+        # 2,000+ plugin-skill rows cost tens of thousands of tokens per turn.
+        # The library installs per jurisdiction from agent-skills/ instead.
+        skills = BUNDLE / "skills"
+        self.assertFalse(
+            skills.exists() and any(skills.glob("*/SKILL.md")),
+            "the Hermes bundle must not register the full skill library as plugin skills",
+        )
 
-    def test_every_skill_frontmatter_matches_its_folder(self) -> None:
-        for skill_md in (BUNDLE / "skills").glob("*/SKILL.md"):
-            text = skill_md.read_text(encoding="utf-8")
-            self.assertTrue(text.startswith("---\n"), f"{skill_md} has no frontmatter")
-            end = text.index("\n---\n", 3)
-            fm = text[3:end]
-            self.assertIn(
-                f"\nname: {skill_md.parent.name}\n", fm + "\n",
-                f"{skill_md} frontmatter name does not match its folder",
-            )
-            self.assertIn("description:", fm, f"{skill_md} has no description")
+    def test_agent_skills_tree_is_the_install_path(self) -> None:
+        # The skills-hub tap the README points users at must exist and be browsable.
+        self.assertTrue((ROOT / "agent-skills" / "index.json").exists())
+        self.assertTrue((ROOT / "agent-skills" / "install.sh").exists())
 
 
 if __name__ == "__main__":
