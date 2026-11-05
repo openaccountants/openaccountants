@@ -1,14 +1,15 @@
 # Skill quality states
 
-Every skill in this repository is in exactly one of two tiers. There is no third. Tier 2 has two names, depending on how the skill was built.
+Every skill shows **Built from the law**. When an approved accountant stands behind it, it also shows **Approved by [name]**. Otherwise it shows **Not yet approved**.
 
-| `tier` | Label | What it means |
-|---|---|---|
-| `1` | **Accountant-reviewed** | A named, licensed accountant (CPA, CA, EA, Steuerberater, expert-comptable, or the local equivalent) has reviewed the whole skill and put their name and credential on it: `reviewed_by` and `reviewed_on` in frontmatter. The reviewer is credited on the skill and at openaccountants.com. |
-| `2` | **Checked against the law** | Built to the standard in [skill-template.md](skill-template.md) (deep-tax shape, `## Sources` table with read dates, independent review before merge). Every figure is cited to the law and checked against the statute by an independent review before merge. No accountant has signed it off yet. |
-| `2` | **Sourced from the law** | An older skill not yet rebuilt to that standard. Every figure is cited to an official source. No accountant has signed it off yet. |
+The numeric tiers remain frontmatter metadata:
 
-The stored identifiers do not change: frontmatter uses `tier: 1` or `tier: 2`, and the legacy `verified_by` key keeps its spelling. In prose, say "Accountant-reviewed" for tier 1, and "Checked against the law" or "Sourced from the law" for tier 2, and nothing else. The retired name "source-cited draft" is not used.
+| `tier` | What the file records |
+|---|---|
+| `1` | A named accountant's approval claim, recorded in `reviewed_by` and `reviewed_on`. The website resolves that name to a current approved accountant account before showing an approval. |
+| `2` | No named accountant approval. Source verification and the independent review required before merge still apply. |
+
+An unresolved name, a withdrawn account or historical authorship does not establish approval. Licence numbers remain private. Follow [CONTRIBUTING.md](../CONTRIBUTING.md) for the GitHub contribution steps.
 
 ## Rules
 
@@ -25,20 +26,20 @@ Do not hand-type counts into any document. `python3 scripts/coverage-report.py -
 ## What the user sees
 
 ```
-Malta VAT Return v1.0
-ACCOUNTANT-REVIEWED
-Reviewed by: Name, Credential (Malta) · Reviewed on: YYYY-MM-DD
+Malta VAT Return
+Built from the law
+Approved by Name
 
-France VAT Return (CA3) v0.1
-CHECKED AGAINST THE LAW
-Sources: impots.gouv.fr, CGI (read 2026-04-12) · No accountant has signed it off yet
+France VAT Return (CA3)
+Built from the law
+Not yet approved
 ```
 
 ## How a tier-2 skill becomes reviewed
 
 1. A licensed accountant in the jurisdiction picks up the skill.
 2. They check the rates, thresholds, forms and deadlines against current law and recompute the worked examples.
-3. They submit corrections by pull request, or through openaccountants.com.
+3. They submit corrections by pull request to this repository.
 4. A maintainer listed in [OWNERS.md](OWNERS.md) merges; the skill gets `tier: 1`, `reviewed_by` and `reviewed_on`.
 
 The accountant is credited publicly on the skill and in [VERIFIERS.md](../VERIFIERS.md).
