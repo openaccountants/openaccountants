@@ -29,18 +29,18 @@ You do not need to be an accountant. You need the law and care.
 6. **Open a PR with `Closes #N`.**
 7. **Get a separate reviewer.** Someone other than the writer (a person, or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment with three parts: figures checked (a count), fixes made with sources, items still not confirmed. Only then does the PR merge. A maintainer merges; nothing counts until merged.
 
-The skill lands as **Built from the law** (`tier: 2`). Code contributions (`mcp/`, `scripts/`, `calculators/`, `.github/`) follow the same PR route.
+Without an accountant's approval, the skill lands as **Built from the law**, **Not yet approved** (`tier: 2`). An approved accountant publishing their own professional work records their own approval in this same PR, as described below. Code contributions (`mcp/`, `scripts/`, `calculators/`, `.github/`) follow the same PR route.
 
 ## I am an accountant
 
 Your name goes on the tax knowledge AI actually uses.
 
 1. Sign up at [openaccountants.com](https://www.openaccountants.com) and finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number. Provisional and student members of a professional body count, once checked.
-2. Set your GitHub username in your profile so we can match your pull requests to you.
+2. Connect your GitHub account from your [skills workspace](https://www.openaccountants.com/accountant/verify#contribute) so we can confirm which account owns the pull request. A typed username alone does not prove ownership.
 3. Pick a skill in your jurisdiction, ideally in a pack that says Needs signature, and review the whole skill.
-4. In a PR of your own, set `tier: 1`, `reviewed_by` (your name) and `reviewed_on`. The skill shows **Approved by** your name here and on the AI answers that cite it. Your licence number stays private: we check it against your account, and it is never published. The tiers are defined in [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
+4. In your publishing PR, set `tier: 1`, `reviewed_by` (your name) and `reviewed_on` (the actual approval date). If you wrote the skill and are publishing it as your professional work, you are its approver. No second accountant or separate approval PR is required. The skill shows **Approved by** your name here and on the AI answers that cite it. Your licence number stays private. The tiers are defined in [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
 
-You can also write skills through the first door.
+The independent source check before merge still applies. A separate AI reviewer can do that check; it is distinct from your professional approval. An AI committing under your Git identity, an old credit line or a maintenance assignment does not establish that you published the current version as your work.
 
 ## I found a mistake
 
@@ -137,7 +137,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review and merge
 
-Maintainers listed in [docs/OWNERS.md](docs/OWNERS.md) merge. A merged skill without an accountant's approval is `tier: 2` (Built from the law). When a licensed accountant approves it, they set `tier: 1`, `reviewed_by` and `reviewed_on` in a PR of their own, and the skill shows **Approved by** their name here and on every AI answer that cites it. The name must match an approved accountant account on openaccountants.com.
+Maintainers listed in [docs/OWNERS.md](docs/OWNERS.md) merge. An approved accountant publishing their own work records their approval in that publishing PR with `tier: 1`, `reviewed_by` and `reviewed_on`. They do not need a separate approval PR. A merged skill without an accountant's approval remains `tier: 2`, **Not yet approved**. The name must match an approved accountant account on openaccountants.com. A merge records acceptance on GitHub; the skill is live only after delivery and a check against the published content.
 
 ## Contributor License Agreement (CLA)
 

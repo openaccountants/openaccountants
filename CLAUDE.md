@@ -2,7 +2,7 @@
 
 ## For AI agents landing here
 
-- This repo is a library of open-source **AI skills** (tax rules your AI follows): plain-markdown tax rules for 190+ jurisdictions that any AI agent can read. Each skill is in one of two tiers, **Accountant-reviewed** (`tier: 1`, a named licensed accountant signed off) or `tier: 2`, called **Checked against the law** when built to the standard in `docs/skill-template.md` and independently reviewed before merge, or **Sourced from the law** for older skills not yet rebuilt; no accountant has signed off a tier-2 skill. See `docs/QUALITY-TIERS.md`.
+- This repo is a library of **AI skills** (tax rules your AI follows): plain-markdown tax rules for 190+ jurisdictions that any AI agent can read. Every skill shows **Built from the law** and either **Approved by [name]** (`tier: 1`) or **Not yet approved** (`tier: 2`). An approved accountant publishing their own professional work is its approver and records that approval in the original PR. A second accountant or separate approval PR is not required. An AI commit under a person's identity, a maintenance assignment or an old credit line does not establish professional approval. See `docs/QUALITY-TIERS.md`.
 - The goal and the milestone are in `docs/GOAL.md`; who owns each jurisdiction is in `docs/OWNERS.md`. If you are here to work, start with the open `[XX] Complete the pack` issues described there.
 - The full machine-readable skill inventory is `index.json` at the repo root — read it first to find what exists.
 - Load Skills from `packages/<jurisdiction>/` (e.g. `packages/malta/`, `packages/us-ca/`) — each file is self-contained markdown.

@@ -22,7 +22,7 @@ If you cannot agree, do not open this PR — contact **info@openaccountants.com*
 - [ ] Jurisdiction is clear (folder path or `jurisdiction:` in frontmatter)
 - [ ] I only edited files under `skills/**` (generated trees rebuild automatically)
 - [ ] **Name for attribution** (as it should appear on the skill): ______
-- [ ] My OpenAccountants profile GitHub username matches this account (optional — set it at openaccountants.com/profile for full credit)
+- [ ] If publishing as an accountant, I have connected this GitHub account in my OpenAccountants skills workspace
 
 ### Content quality
 
@@ -30,7 +30,7 @@ If you cannot agree, do not open this PR — contact **info@openaccountants.com*
 - [ ] `## Sources` section present, each URL with the date it was read
 - [ ] Worked examples included, each in an `oa-check` block that recomputes
 - [ ] Pack `README.md` updated if a domain was added (`applicable:` / `not_applicable:`)
-- [ ] `tier` is `2` unless a named accountant reviewed it (then `1` with `reviewed_by` and `reviewed_on`)
+- [ ] If I am publishing this as my own professional work as an approved accountant, my own approval is recorded in this PR (`tier: 1`, my name in `reviewed_by`, the actual date in `reviewed_on`). Otherwise `tier: 2` carries no approval claim
 - [ ] Disclaimer present at the end
 - [ ] `python3 scripts/validate-guides.py --changed-only` passes
 - [ ] `python3 scripts/check-examples.py --changed-only` passes

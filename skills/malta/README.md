@@ -19,7 +19,7 @@ partial: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 
 ## Named maintenance scope
 
-Michael Cutajar's requested ongoing scope is limited to these three core Guides. This is an ownership assignment, not a new professional approval or a statement that their outstanding findings are fixed.
+Michael Cutajar's ongoing scope is limited to these three core skills. On 5 November 2026 he confirmed that all three are his own professional work and should carry **Approved by Michael Cutajar**. That approval is recorded in each file's frontmatter. Existing source-check dates and outstanding findings remain as recorded.
 
 | Guide | Maintainer | Current state |
 |---|---|---|

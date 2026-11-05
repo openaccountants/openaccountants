@@ -161,14 +161,16 @@ The section names the facts the AI must have before it computes (residence, turn
 
 ### 11. Tier and name are honest and bound to the version
 
-A skill has one label with two states. `tier: 2` shows **Built from the law**, with source links and the last check date where those exist. `tier: 1` adds **Approved by [name]**: a licensed accountant with an approved account on openaccountants.com approved the whole skill and set `reviewed_by` (their name only; the licence stays private) and `reviewed_on`. No one else sets these keys. A content change after the approval drops the name and the skill returns to `tier: 2` until it is approved again. Who wrote or edited a skill is credited from the git history, not from a frontmatter key.
+A skill has one label with two states. `tier: 2` shows **Built from the law**, with source links and the last check date where those exist. `tier: 1` adds **Approved by [name]**: an accountant with an approved account on openaccountants.com stands behind the whole skill. An accountant who writes and publishes it as their own professional work is also its approver. They set `reviewed_by` (their own name), `reviewed_on` (the actual approval date) and `tier: 1` in the publishing PR. No second accountant or separate approval PR is required. A maintenance assignment, old credit line or AI commit under a person's Git identity does not establish professional publication of that version. Licence numbers stay private.
+
+A substantive content change after approval requires the accountant to approve that version or the approval to be removed. Who wrote or edited a skill remains in the Git history; a commit author's name alone is not professional approval.
 
 - **Evidence:** the fidelity exam of Aug 2026 (31 items, three models) found invented attribution the top error (31 of 44). The 17 wrong figures in wave 1 (Oct 2026) all sat in two US skills carrying the accountant-signed label; the label never tracked accuracy.
 - **Check:** `check_tier_honest` (g): `reviewed_by` implies `tier: 1` and `tier: 1` implies `reviewed_by`; `check_reviewed_on` (j): a signed skill names the date it was signed. That `reviewed_on` moved with the content: reviewer.
 
 ### 12. An independent second reader before merge
 
-Someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment with three parts: figures checked (a count), fixes made with sources, items still not confirmed. Only then does the PR merge, as **Checked against the law** (`tier: 2`).
+Someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment with three parts: figures checked (a count), fixes made with sources, items still not confirmed. Only then does the PR merge. This source check can be done by a separate AI reviewer. It is distinct from the accountant author's own professional approval, recorded in the same PR under line 11. Without that approval, the skill remains **Not yet approved** (`tier: 2`).
 
 - **Evidence:** not one first draft was clean in any wave since September 2026. Reviewer records on 266 merged PRs (22 to 31 Oct 2026) count about 12,234 figures checked.
 - **Check:** reviewer; the PR comment pattern is the record. Scripts do not test it.
@@ -293,7 +295,7 @@ jurisdiction: XX           # REQUIRED: MT, GB, DE, US, US-CA, GLOBAL, INTL, EU-2
 category: international    # see the category vocabulary above
 tax_year: 2026             # bare integer = the current year the figures apply to
 tax_year_notes: "2026-27"  # optional; the export drops it, so repeat the label in the body
-tier: 2                    # 1 = accountant-reviewed | 2 = checked against the law / sourced from the law
+tier: 2                    # 1 = Approved by the named accountant | 2 = Not yet approved
 last_updated: 2026-10-31   # YYYY-MM-DD
 version: 0.1
 depends_on:
