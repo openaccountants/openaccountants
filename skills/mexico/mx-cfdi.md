@@ -138,6 +138,34 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Issue complemento de pago | By the fifth natural day of the month immediately following the month the payment(s) were received (RMF 2025, Regla 2.7.1.32) |
 | Late issuance | May trigger SAT queries or penalties |
 
+## Worked examples
+
+```oa-check
+name: Complemento de pago deadline
+inputs:
+  payment_day_of_month: 27
+  days_in_month: 30
+steps:
+  - deadline_day: 5
+  - days_allowed: days_in_month - payment_day_of_month + deadline_day
+expected:
+  deadline_day: 5
+  days_allowed: 8
+```
+
+```oa-check
+name: Early-month payment still due 5th of next month
+inputs:
+  payment_day_of_month: 3
+  deadline_day: 5
+steps:
+  - next_month: 1
+  - days_allowed: deadline_day + next_month * 0
+expected:
+  deadline_day: 5
+  days_allowed: 5
+```
+
 ## Step 3: Common Uso de CFDI Codes [T1]
 
 **Common Uso de CFDI Codes**

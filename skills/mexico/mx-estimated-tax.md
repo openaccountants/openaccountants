@@ -148,6 +148,28 @@ The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the u
 
 **Output:** No provisional payment due. Loss carries forward in cumulative computation.
 
+```oa-check
+name: RESICO monthly 40000
+inputs:
+  income: 40000
+steps:
+  - rate: 0.011
+  - payment: income * rate
+expected:
+  payment: 440
+```
+
+```oa-check
+name: RESICO monthly 83333
+inputs:
+  income: 83333
+steps:
+  - rate: 0.015
+  - payment: income * rate
+expected:
+  payment: 1249.995
+```
+
 ### Example 4 -- Bank statement classification
 
 **Input line:** `17.02.2025 ; SAT PAGO PROVISIONAL ISR ENE 2025 ; CARGO ; -3,500.00 ; MXN`
