@@ -29,7 +29,7 @@ You do not need to be an accountant. You need the law and care.
 6. **Open a PR with `Closes #N`.**
 7. **Get a separate reviewer.** Someone other than the writer (a person, or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment with three parts: figures checked (a count), fixes made with sources, items still not confirmed. Only then does the PR merge. A maintainer merges; nothing counts until merged.
 
-The skill lands as **Checked against the law** (`tier: 2`). Code contributions (`mcp/`, `scripts/`, `calculators/`, `.github/`) follow the same PR route.
+The skill lands as **Built from the law** (`tier: 2`). Code contributions (`mcp/`, `scripts/`, `calculators/`, `.github/`) follow the same PR route.
 
 ## I am an accountant
 
@@ -71,8 +71,6 @@ Every skill in `skills/` that should appear on [openaccountants.com](https://www
 
 1. Live in a **recognized country folder** (`skills/<country>/`, `skills/us/federal/`, `skills/us/states/<code>/`), **or**
 2. Include **`jurisdiction:` in YAML frontmatter** (e.g. `MT`, `GB`, `US`, `US-CA`, `GLOBAL`, `INTL`)
-
-Skill changes made on openaccountants.com land here through the scheduled sync, committed under the responsible accountant's name. A merged pull request must be ingested and verified in the platform before the next outbound export. The ingestion workflow notifies the platform when configured; a maintainer handles failed notifications and backfills. The exporter must fail closed if its stored Git blob does not match the current source guide. Frontmatter uses `reviewed_by` + `review_status` (the legacy `verified_by` key is being retired automatically). Want your platform edits credited to your GitHub account? Set your GitHub username in your accountant profile on openaccountants.com.
 
 Full details: [docs/WEBSITE-SYNC.md](docs/WEBSITE-SYNC.md)
 
