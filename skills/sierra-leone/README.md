@@ -32,8 +32,8 @@ Eight source drafts now: the six independently source-reviewed tax workpapers, p
 | Payroll and social | [Payroll](sl-payroll-social.md) | New NASSIT source rewrite; independent source corrections closed, PAYE incomplete |
 | Transfer pricing | [Transfer pricing](sl-transfer-pricing.md) | New 2026 conditional source draft; independent correction closure recorded |
 | Cross-border | [Residence and foreign income](sl-cross-border.md) | Conditional source draft; independent source corrections closed, currentness/treaty holds remain |
-| Formation | [Formation](sl-company-formation.md) | Conditional 2026 rewrite; independent source review pending |
-| Tax intake | [Overview](sl-tax-overview.md) | Conditional 2026 rewrite; independent source review pending |
+| Formation | [Formation](sl-company-formation.md) | Conditional 2026 rewrite; independent conditional source corrections closed |
+| Tax intake | [Overview](sl-tax-overview.md) | Conditional 2026 rewrite; independent conditional source corrections closed |
 
 The writer actually read the 2021 transfer-pricing regulations, the 2026 filing/penalty amendments and neighbouring conditions using cached primary PDFs; critical 2026 and conflicting 2021 text was visually checked. Sources were downloaded once for offline work. The acquisition cache includes other tax statutes and Finance Acts; downloaded material is not automatically recorded as read or verified.
 
@@ -41,7 +41,7 @@ The TP draft separates contemporaneous preparation, annual declarations, 45-day 
 
 The initial69-topic, six-file snapshot is preserved in [the old-topic map](../../evidence/ledgers/sierra-leone-draft-20261101/sl-old-topic-map.md), backed by immutable predecessor hashes. The subsequent payroll delta maps all ten old payroll topics to exact new sections or explicit holds in [its preservation record](../../evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md). No predecessor topic is silently removed.
 
-Remaining country work includes independent review of formation/overview, full current cross-border/withholding implementation, full operative company-law reconciliation, the full income/GST amendment reconciliation and genuine current filing instructions. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
+Remaining country work includes full current cross-border/withholding implementation, full operative company-law reconciliation, the full income/GST amendment reconciliation and genuine current filing instructions. Specialist investment/mining/petroleum/exemption/customs/property topics remain subject to the same rule-by-rule source requirement.
 
 Tracked in [Sierra Leone issue484](https://github.com/openaccountants/openaccountants/issues/484), which remains open.
 
