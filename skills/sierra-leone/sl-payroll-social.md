@@ -3,16 +3,16 @@ name: sl-payroll-social
 description: "Sierra Leone payroll and social contribution workpaper for the 2026 tax year, covering NASSIT membership, statutory earnings, employee and employer contributions, registration, monthly schedules and payment evidence. Use for Sierra Leone payroll, NASSIT, SS4A, employee deductions, an unpaid salary or an employer taking over an establishment. It reads the actual National Social Security and Insurance Trust Act and Regulations alongside current authority instructions. It distinguishes social contribution earnings from every amount on a payslip, preserves separate duties for concurrent employers and explains the restriction on recovering missed deductions. PAYE computation, minimum wage, later statutory changes and live electronic filing are explicitly unfinished. Two examples compare the contribution split and the effect of misclassifying allowances."
 jurisdiction: SL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 category: international
 tax_year_notes: "2026 intake; source-bound NASSIT workpaper, later amendments and PAYE reconciliation incomplete"
 tier: 2
 domain: payroll
 ---
 
-# Sierra Leone Payroll and Social Contributions v1.1
+# Sierra Leone Payroll and Social Contributions v1.2
 
 **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -20,7 +20,9 @@ domain: payroll
 
 Employers and workers within the NASSIT Act's definitions and coverage provisions, plus self-employed persons who opt to join on the prescribed conditions. Private/company pension arrangements do not by themselves exempt an otherwise covered employer. Other-law exemptions still require checking. The worker definition includes remunerated employment by or through a contractor in or in connection with the normal work of the establishment, subject to its remaining conditions. It also has specific territorial, permanent-resident and ship-crew limbs. Nationality alone does not decide coverage. [NASSIT Act 2001 ss. 2, 23-24](https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf).
 
-This Guide rebuilds the social-contribution workpaper from opened statutory text and the authority's current public instructions. It is not certification of the complete later-law chain. PAYE, minimum wage and current electronic submission remain unfinished; the old 2025 income Guide is historical material rather than an approved current computation. Independent source review does not establish complete current-law or filing approval.
+This Guide rebuilds the social-contribution workpaper from opened statutory text and the authority's current public instructions. It is not certification of the complete later-law chain. PAYE computation belongs to the separate [income/PAYE Guide](sl-income-tax.md), with its recorded conditions and currentness holds. The underlying wage instrument, category coverage and current electronic submission remain unfinished. Independent source review does not establish complete current-law or filing approval.
+
+**NRA-reported minimum-wage guidance.** The NRA’s report of its 13 February 2026 employer session states a minimum wage of Le 1,200 from 1 April 2026. This is authority guidance, not an independently checked wage instrument. Covered employment categories and the instrument’s application remain unverified here. Do not substitute that amount for the NASSIT statutory-earnings definition or treat it as a contribution ceiling. [NRA employer-session report, opening paragraphs](https://nra.gov.sl/news/87).
 
 ## Rates, bands and thresholds
 
@@ -121,5 +123,6 @@ Obtain employment/apprenticeship/contractor and work-location facts, any exempti
 | NASSIT Act2001, official NASSIT scan. Cover and definitions ss. 1-2 PDF4-7, ss. 20-30 PDF15-18 and benefit classes s. 38 PDF21-22 read; original scans PDF5,16,17 visually checked. Not the whole34-page Act or a complete current consolidation. | https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf | 2026-11-01 |
 | NASSIT Regulations2004, official40-page scan. Cover and regs. 1-18, physical PDF4-9 read, especially registration, payment/schedules/receipt and retention; original PDF4 and7 images visually checked; extracted/OCR material outside that span is not claimed read. | https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf | 2026-11-01 |
 | NASSIT current contributions and compliance pages: main-body contribution split, timing, employee categories, SS4A and enforcement instructions read; not the linked benefits manuals. | https://nassit.org.sl/our-services/contributions?a=7-727-1 ; https://nassit.org.sl/our-services/nassit-compliance | 2026-11-01 |
+| NRA employer-session report: opening paragraphs on the 13 February 2026 session and announced wage amount/date read from the saved official HTML; underlying wage instrument and category coverage not read. | https://nra.gov.sl/news/87 | 2026-11-03 |
 
 Not yet confirmed: Complete later-law and commencement/amendment chain, any operative earnings ceiling or additional exemptions, interpretation of the printed s. 2 included-allowance wording “cost of leaving”, current electronic registration/payment/SS4B equivalent, rate conversion and live interest inputs, denomination/later changes to offence fines, detailed benefit eligibility and international agreements. PAYE bands, base, contribution deduction, remittance/return calendar and current fields still require the separate full income-tax reconciliation; the old 0%–30% range is not adopted as a verified current computation. The old NLe800 minimum-wage claim and generic10%–12% employer add-on estimate are not supported current figures and are held, not applied. NASSIT's verified employer contribution is the specific10% above; other employment costs need their own sources. Independent source review is separate from current-law approval; SC/PR remain partial.

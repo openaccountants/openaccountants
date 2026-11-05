@@ -1,0 +1,7 @@
+{
+  "reason": "The rates-row checker requires absolute URLs even for the six nonnumeric routing rows. Current-main Guide URLs retain current destinations without pinning an obsolete commit. Other nine sibling links remain relative. No tax figure/rule changed.",
+  "changed_table_links": 6,
+  "before_sha256": "d5d788e48533b1c6010ca18a0c4662f5092fc690f5d9b356e7155dd3561643be",
+  "after_sha256": "e5de075da5c904cffa4124977e409872d6dd422f915fd75985c832462620bc1d",
+  "original_failure": "overview rates_rows_sourced: 6 of6rows without URL/unverified marker; preserved in initial independent review."
+}

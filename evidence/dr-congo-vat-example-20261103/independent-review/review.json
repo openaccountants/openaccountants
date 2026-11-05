@@ -1,0 +1,65 @@
+{
+  "result": "PASS",
+  "reviewer": "Independent Codex review agent separate from writer",
+  "date": "2026-11-03",
+  "scope": "One existing VAT example assumption clarification; no whole-pack/current-law-chain review",
+  "base": "e0f2a6d492373c6532eda048ceef2559332a82aa",
+  "guide": "skills/dr-congo/cd-vat-gst.md",
+  "before_sha256": "0b82d6106341930c9fac0d948deaaba28b659aaf464bbdf2ec48d663f20b0c14",
+  "candidate_sha256": "f040359e81f62239889607cbeaaf6220ca7c99dca3435b2e94fd239653b81e68",
+  "exact_delta": "Candidate reconstructed byte-for-byte from HEAD using only clarified phrase plus matching update date/version/H1.",
+  "preservation": {
+    "all_other_tracked_files_exact": true,
+    "code_examples_rules_rates_sources_conditions_cta_protected_metadata_exact": true,
+    "original_rows8_30_31_verbatim": true,
+    "old_topics": "All old text/topics retained outside the clarified phrase; same rice comparison and payment-control topic preserved."
+  },
+  "sources": [
+    {
+      "file": "../sources/lfr-2026-recettes.pdf",
+      "sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+      "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+      "read_scope": "Visually read cached physical8-9: article13 acquisition/sale wording and tariff1006.20.00 brown rice8%",
+      "read_on": "2026-11-03"
+    },
+    {
+      "file": "../sources/vat2012.pdf",
+      "sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+      "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+      "read_scope": "Visually read cached physical12: arts59bis/74bis, adjacent minister-adjustment and commencement provisions",
+      "read_on": "2026-11-03"
+    },
+    {
+      "file": "../sources/lf-2026-recettes.pdf",
+      "sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+      "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_scope": "Visually read cached physical33 rice1% table; bounded accepted row8 check",
+      "read_on": "2026-11-03"
+    }
+  ],
+  "case_facts": "Same CDF2m tax-exclusive qualifying rice purchase at8% between VAT taxable persons now explicitly supports CDF160000 deduction amount. CDF2m exceeds historical CDF1m threshold even excluding VAT. Transfer satisfies only named payment condition; applicability, period and all other deduction conditions remain assumptions.",
+  "independent_recomputations": [
+    "10000000*0.16=1600000;1600000-640000=960000;incorrect800000;understatement160000",
+    "2000000*0.01=20000;2000000*0.08=160000;difference140000;bankpotential160000-cash0=deductionatrisk160000"
+  ],
+  "example_checker": "1 file,2 blocks,0 failures,0 missing",
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "findings": [],
+  "limits": "Conditional source research only; no operative2026 acceptance, comprehensive country coverage, attestation, approved invoicing/deduction/payment or filing conclusion. Existing legal-chain/rate-period/payment holds unchanged."
+}

@@ -3,16 +3,16 @@ name: cd-vat-gst
 description: "Prepare a source-bound VAT research workpaper for DR Congo transactions in 2026. Use this Guide to screen mandatory registration and voluntary options, classify supplies, compare the original and August rectifying rate schedules, test selected invoice and payment conditions, and prepare the monthly declaration. It includes two computations covering net VAT and a transaction-date rate decision. The workpaper distinguishes enacted text from an established operative position: the carried 2025 provisions, complete exemption and deduction rules, rate implementation, imported-service collection and authenticated filing remain unresolved. It is suitable for research and preparation, with the stated holds resolved before anyone invoices, deducts, pays or files using its figures."
 jurisdiction: CD
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.0
+version: 1.1
 tax_year_notes: "2026 source-bound research only; carried-law, implementation and currentness holds remain. No filing approval or complete-domain claim."
 tier: 2
 domain: vat-gst
 ---
 
-# DR Congo VAT: registration and monthly research workpaper v1.0
+# DR Congo VAT: registration and monthly research workpaper v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -98,7 +98,7 @@ expected:
 
 ### 2. Decision: rice rate version and payment control
 
-Assume one CDF 2,000,000 tax-exclusive supply of qualifying tariff 1006.20.00 rice in each of two independently established tax periods, one governed by the original rate text and the other by the rectifier. Original-text output is CDF 20,000; rectifier-text output is CDF 160,000, a CDF 140,000 difference. A purchaser separately considering an otherwise deductible CDF 2,000,000 VAT-taxpayer transaction tests bank transfer against cash under the cited article 59 bis: if that historical rule is proved applicable, cash loses CDF 160,000 deduction while a compliant transfer preserves that condition only. Neither the transfer nor this example proves every deduction condition. Stop if the rate period or current payment rule is unresolved.
+Assume one CDF 2,000,000 tax-exclusive supply of qualifying tariff 1006.20.00 rice in each of two independently established tax periods, one governed by the original rate text and the other by the rectifier. Original-text output is CDF 20,000; rectifier-text output is CDF 160,000, a CDF 140,000 difference. A purchaser considering an otherwise deductible CDF 2,000,000 purchase of the same rice at the illustrated 8% rectifier rate, between VAT taxable persons, tests bank transfer against cash under the cited article 59 bis: if that historical rule is proved applicable, cash loses CDF 160,000 deduction while a compliant transfer preserves that condition only. Neither the transfer nor this example proves every deduction condition. Stop if the rate period or current payment rule is unresolved.
 
 ```oa-check
 name: Conditional rice rate version and cash versus bank deduction control

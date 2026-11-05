@@ -1,0 +1,15 @@
+{
+  "base": "e0f2a6d492373c6532eda048ceef2559332a82aa",
+  "changed_paths": [
+    "skills/sierra-leone/sl-payroll-social.md",
+    "skills/sierra-leone/sl-tax-overview.md",
+    "skills/sierra-leone/README.md"
+  ],
+  "before_sha256": {
+    "skills/sierra-leone/sl-payroll-social.md": "ddbefc5bfdcb475e6f81d521077c3b8fa17bd1845c9874064104efa05ab5b5db",
+    "skills/sierra-leone/sl-tax-overview.md": "9e27f0fdce27d8899dc2cee44e51ac0c4eef75805c2377334e123f63bfbbb3d5",
+    "skills/sierra-leone/README.md": "1b9b0740f8ea96618933de6c33e1ba595bc344ba0b433dd4b8169236ca212f24"
+  },
+  "scope": "One reported-guidance note; current relative sibling routing; existing formation/overview review-status reconciliation. No new Guide or country-completeness claim.",
+  "prior_acceptance": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/CLOSURE.md; README already links this accepted44-row review."
+}

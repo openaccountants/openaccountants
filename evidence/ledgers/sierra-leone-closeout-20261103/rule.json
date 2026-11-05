@@ -1,0 +1,15 @@
+{
+  "id": "SL-MW-NRA-2026",
+  "classification": "authority-reported guidance; statutory application held",
+  "guide": "skills/sierra-leone/sl-payroll-social.md",
+  "section": "Who this applies to / NRA-reported minimum-wage guidance",
+  "source_url": "https://nra.gov.sl/news/87",
+  "source_language": "English",
+  "act_article": "No wage instrument checked; official employer-session report opening paragraphs",
+  "exact_quote": "new minimum wage of Le 1,200 which will come into effect on 1st April 2026.",
+  "read_on": "2026-11-03",
+  "source_sha256": "b05cf24e3d84e3efd12ab74818ff4bc3523e68124d9a911a153eb82cfa922cf1",
+  "source_capture": "../sources/nra-paye2026-news87.html; cached official HTML, original acquisition timestamp not newly attested",
+  "scope": "Read main article from cached HTML; not a whole Finance Act or wage-instrument read. Live retries returned502; no security bypass or replacement claim.",
+  "conditions": "Do not infer category coverage, complete wage-law currentness, NASSIT base or contribution ceiling. Old NLe800 remains explicit unverified history."
+}
