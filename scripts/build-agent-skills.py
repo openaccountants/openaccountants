@@ -16,7 +16,7 @@ follows the library.
 Usage:
   python3 scripts/build-agent-skills.py                       # agent-skills/ for everything
   python3 scripts/build-agent-skills.py --plugin MT,NL,DE,IE,GB  # also plugins/openaccountants/skills/
-  python3 scripts/build-agent-skills.py --hermes-plugin          # also plugins/openaccountants-hermes/skills/ (full library)
+  python3 scripts/build-agent-skills.py --hermes-plugin          # prunes any stale plugins/openaccountants-hermes/skills/ (the bundle ships no skills; install per jurisdiction from agent-skills/)
   python3 scripts/build-agent-skills.py --check               # exit 1 if the tree is stale
 
 Derived tree: never edit `agent-skills/<slug>/SKILL.md` by hand; edit `skills/**`.
@@ -38,7 +38,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SKILLS_DIR = REPO_ROOT / "skills"
 OUT_DIR = REPO_ROOT / "agent-skills"
 PLUGIN_SKILLS_DIR = REPO_ROOT / "plugins" / "openaccountants" / "skills"
-HERMES_PLUGIN_SKILLS_DIR = REPO_ROOT / "plugins" / "openaccountants-hermes" / "skills"
+HERMES_PLUGIN_BUNDLE_DIR = REPO_ROOT / "plugins" / "openaccountants-hermes"
 SITE = "https://www.openaccountants.com"
 LICENSE_LINE = "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 
@@ -188,6 +188,16 @@ def iter_source_files():
             yield p
 
 
+def sanitize(text: str) -> str:
+    """Drop invisible characters the Hermes plugin scanner flags (U+200B and friends).
+
+    A zero-width space once rode a sync commit into the generated trees after its
+    source fix merged, which tripped the scanner's HIGH finding. Strip them at
+    generation time so a stale sync can never re-publish one.
+    """
+    return re.sub(r"[\u200b\u200c\u200d\ufeff]", "", text)
+
+
 def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = False) -> int:
     built: dict[str, dict] = {}
     staged: dict[Path, str] = {}
@@ -200,7 +210,7 @@ def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = Fa
             continue
         if slug in built:
             continue  # first occurrence wins; duplicates live in retired folders
-        content = skill_md(slug, meta, body)
+        content = sanitize(skill_md(slug, meta, body))
         staged[OUT_DIR / slug / "SKILL.md"] = content
         j = str(meta.get("jurisdiction") or "").strip()
         built[slug] = {
@@ -215,8 +225,6 @@ def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = Fa
             reviewed += 1
         if j.split("-")[0] in plugin_countries:
             staged[PLUGIN_SKILLS_DIR / slug / "SKILL.md"] = content
-        if hermes_plugin:
-            staged[HERMES_PLUGIN_SKILLS_DIR / slug / "SKILL.md"] = content
 
     index = {
         "generated_by": "scripts/build-agent-skills.py",
@@ -233,7 +241,7 @@ def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = Fa
     stale: list[Path] = []
     roots = [OUT_DIR] + ([PLUGIN_SKILLS_DIR] if plugin_countries else [])
     if hermes_plugin:
-        roots.append(HERMES_PLUGIN_SKILLS_DIR)
+        roots.append(HERMES_PLUGIN_BUNDLE_DIR / "skills")
     for root in roots:
         if not root.is_dir():
             continue

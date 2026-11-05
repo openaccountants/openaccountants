@@ -658,13 +658,17 @@ Per the xlsx skill: blue for hardcoded values from the bank statement (Columns A
 
 ### Mandatory recalc step
 
-After building the workbook, run:
+After building the workbook, recalculate every formula and cache the results so the
+values can be read back. On a normal machine, recalc with LibreOffice headless:
 
 ```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/schedule-c-<year>-working-paper.xlsx
+soffice --headless --convert-to xlsx --outdir /tmp /mnt/user-data/outputs/schedule-c-<year>-working-paper.xlsx
 ```
 
-Check the JSON output. If `status` is `errors_found`, fix and re-run. If `status` is `success`, present via `present_files`.
+Then re-open the converted file and confirm no cell shows a formula error before
+presenting it.
+
+Check the converted file for formula errors. If any cell shows an error, fix the formulas and recalc again. If clean, present via `present_files`.
 
 ## Section 8 — US bank statement reading guide
 
