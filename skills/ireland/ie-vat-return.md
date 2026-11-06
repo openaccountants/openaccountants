@@ -1,10 +1,10 @@
 ---
 name: ie-vat-return
 description: "Irish VAT for tax year 2026 under the Value-Added Tax Consolidation Act 2010 (VATCA) as revised to 1 August 2026, including Finance Act 2025. Covers the 23%, 13.5%, 9%, 4.8% and 0% rates, the move of catering, hot take-away food and hairdressing from 13.5% to 9% on 1 July 2026, the EUR 42,500 services and EUR 85,000 goods registration thresholds, the two-monthly VAT3 return and payment by the 19th (23rd on ROS), the annual Return of Trading Details (RTD), the EUR 2,000,000 cash (moneys received) basis, reverse charge on services from abroad, EU goods and RCT construction, VIES statements, blocked input credit and qualifying cars, 0.0274% daily interest and EUR 4,000 fixed and tax-geared penalties. Trigger on 'Irish VAT', 'VAT3', 'ROS VAT return', 'RTD', 'do I need to register for VAT in Ireland', 'Irish reverse charge', 'VIES Ireland'. Out of scope: income tax (ie-income-tax-form11), corporation tax (ie-corporation-tax), payroll (ie-payroll), withholding and treaties (ie-foreign-tax-and-withholding), residence (ie-cross-border); VAT groups, property, Capital Goods Scheme, margin schemes and OSS are referred."
-version: 2.3
+version: 2.4
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-06
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -34,7 +34,7 @@ See also: `ie-income-tax-form11`, `ie-corporation-tax`, `ie-payroll`, `ie-foreig
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Standard rate (most goods and services; Revenue's examples: solicitor and consultancy services, furniture, motor vehicles, tyres, batteries) | 23% | 2025 and 2026 | VATCA s.46(1)(a), https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html; Revenue current rates, https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx; https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/standard-rate-vat.aspx |
+| Standard rate (most goods and services; Revenue's examples: solicitor and consultancy services, furniture, motor vehicles, tyres, batteries) | 21% | 2025 and 2026 | VATCA s.46(1)(a), https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html; Revenue current rates, https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-vat-rates.aspx; https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/standard-rate-vat.aspx |
 | Reduced rate (Schedule 3 goods and services: hotel and guesthouse lettings, cinema, theatre and museum admissions, amusement parks, open farms, certain printed matter (not books), certain fuels, building services, repair, cleaning and maintenance, tour guides, short-term hire, greyhounds and more) | 13.5% | 2025 and 2026 | VATCA s.46(1)(c) and Sch. 3; https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/reduced-rate-vat.aspx |
 | Restaurant and catering services (not alcohol, soft drinks or bottled water), hot take-away food, hot tea and coffee, hairdressing (Sch. 3 paras 3(1), 3(3), 13(3)) | 13.5% from 1 September 2023 to 30 June 2026 (Revenue second reduced rate page: "From 01 September 2023 to 30 June 2026, the reduced rate applies"); **9% from 1 July 2026** | 2026 | https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx; Finance Act 2025 s.71, https://www.irishstatutebook.ie/eli/2025/act/18/section/71/enacted/en/html; VATCA s.46(1)(cb); https://www.revenue.ie/en/vat/vat-on-services/restaurant-catering-and-canteen-services/index.aspx |
 | Second reduced rate: periodicals and e-periodicals, sporting facilities (not non-profit), heat pump systems (Sch. 3 paras 7(a), 7A, 12, 12A) | 9% | 2025 and 2026 | VATCA s.46(1)(ca); https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx |
