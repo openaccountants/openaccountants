@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "HR"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Croatia cross-border tax: residence, non-residents, withholding, exit (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Croatia taxes on the calendar year for individuals and, as a rule, for companies (Profit Tax Act, art. 29(1)). The authority is the Tax Administration (Porezna uprava). Currency: euro. Article numbers below are to the Profit Tax Act (Zakon o porezu na dobit, "ZPD"), the Personal Income Tax Act (Zakon o porezu na dohodak, "ZPDoh"), the General Tax Act (Opći porezni zakon, "OPZ") and the Profit Tax Rulebook (Pravilnik o porezu na dobit). The 2026 amendments to the Profit Tax Act (NN 151/25, in force 1 January 2026) rewrote the foreign tax credit (art. 30) but did not touch the article 31 withholding rates.
 
@@ -260,24 +256,6 @@ expected:
 Not yet confirmed: which jurisdictions are on the EU Annex I list on a given payment date (the Council list was not read for this skill); the late-payment interest rate for 2026 (the special law setting it was not read); the footnotes to the Tax Administration treaty table (rates shown with footnote marks, such as Austria and Belgium dividends, were not used); the Rulebook arts. 49 to 52 were read in the Tax Administration consolidated text to NN 39/26, not against each amending rulebook; whether the art. 28 rate applied to an exit base spread over five periods follows each later period's revenue.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

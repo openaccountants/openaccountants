@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cancelling-a-vat-registration-and-the-exit-vat-charge"
   jurisdiction: "ZA"
   last_updated: "2026-09-02"
-  authored_by: "Brandon Iverach"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Brandon Iverach"
 ---
 
 # South Africa — Cancelling a VAT Registration
@@ -167,24 +165,6 @@ The exit charge is a one-off; the input tax loss is permanent. A vendor near the
 Value-Added Tax Act 89 of 1991 s 8(2) and its proviso, s 10(5), s 17(2), s 22(3), s 24(1)–(3) and s 24(7). SARS — Cancellation of VAT registration: https://www.sars.gov.za/types-of-tax/value-added-tax/cancellation-of-vat-registration/ SARS — Budget 2026 FAQs (thresholds): https://www.sars.gov.za/about/sars-tax-and-customs-system/budget/budget-2026-frequently-asked-questions/ SARS — VAT 404 Guide for Vendors. Forms VAT123e / VAT123T.
 
 > Contributed by Brandon Iverach, SAIPA 18504 / SARS PR0025122.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

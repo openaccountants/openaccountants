@@ -24,7 +24,6 @@ metadata:
 | Provincial services | Provincial authorities (SRB/PRA/KPRA/BRA) have their own e-invoicing/return systems |
 | Authority | Federal Board of Revenue (FBR) + provincial revenue authorities |
 | Currency | PKR |
-| Quality tier | Research-verified — pending sign-off by a Pakistani practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

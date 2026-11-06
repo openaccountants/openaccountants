@@ -4,12 +4,11 @@ description: "Use this skill whenever asked about Nigerian Companies Income Tax 
 jurisdiction: NG
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Omolola Fasasi, CA
-reviewed_by: Omolola Fasasi 
-review_status: current
-trust_label: Checked by Omolola Fasasi
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Omolola Fasasi"
+reviewed_on: 2026-11-03
+tier: 1
+domain: corporate-tax
 ---
 
 # NG Cit
@@ -20,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 >
 > This skill is for informational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a Nigerian chartered tax practitioner (ICAN / ANAN / CITN) before filing or acting upon.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -495,21 +494,3 @@ This skill and its outputs are for informational and computational purposes only
 ## OpenAccountants footer
 
 *OpenAccountants — open-source accounting skills for AI*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

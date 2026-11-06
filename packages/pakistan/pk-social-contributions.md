@@ -9,11 +9,13 @@ description: >
 version: 1.0
 jurisdiction: PK
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - social-contributions-workflow-base
+tier: 2
+status: needs_sources
+domain: payroll
 ---
 
 # Pakistan Social Security & Pension Contributions — Skill v1.0
@@ -32,7 +34,6 @@ depends_on:
 |---|---|
 | Currency | PKR |
 | Authorities | EOBI (federal); provincial ESSIs |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

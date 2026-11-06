@@ -7,14 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gr-income-tax"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Greece: personal income tax, tax year 2026
-
-Source-cited draft. Built by Michael Cutajar and the OpenAccountants team.
 
 This skill covers Greek income tax for individuals for tax year 2026: employees, pensioners, the self-employed, landlords and people with dividends, interest or royalties. It links to the pack's other skills instead of repeating them:
 
@@ -254,26 +250,6 @@ expected:
 
 Not yet confirmed: how AADE annualises the EUR 920 monthly minimum wage for the 2026 art. 28A minimum (the law says "annual amount of the gross minimum wage"; if 14 monthly payments are used, the base is EUR 12,880, but we did not read that figure or the multiplier on an official page); any amendment to the Income Tax Code made during 2026 after ν. 5264/2025, other than the ν. 5301/2026 change to art. 28Γ that AADE circular Ε.2035/2026 describes; the full text of ν. 5301/2026 (only its art. 41, as AADE circular Ε.2035/2026 describes it, was read); the percentage of the late-payment interest rate under ΚΦΔ art. 52 (set by ministerial decision); how the "analogous application" of the art. 15(6) electronic spending rule in art. 40(4) works for rental income; the 2026 E1 form and instructions, which AADE has not yet published.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "HN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Honduras Tax Overview
@@ -27,24 +25,6 @@ metadata:
 - **VAT/GST** — Yes - a sales tax (Impuesto sobre Ventas, ISV) applies at a standard rate of 15% percent  _(Ley del Impuesto sobre Ventas (Sales Tax Law) - https://taxsummaries.pwc.com/honduras/corporate/other-taxes)_
 - **Annual income tax return deadline** — 30 April following the close of the tax year ((approx - confirm))  _(Ley del Impuesto sobre la Renta (Income Tax Law))_
 - **Double tax treaties** — Honduras has not signed comprehensive bilateral double tax treaties (DTTs); it maintains tax information exchange agreements with the US and certain Central American states  _(PwC Worldwide Tax Summaries - Honduras - https://taxsummaries.pwc.com/honduras/corporate/withholding-taxes)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

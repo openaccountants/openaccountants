@@ -9,8 +9,6 @@ metadata:
   tax_year: "2025"
   last_updated: "2026-07-13"
   reviewed_by: "James Wallach"
-  trust_label: "Checked by James Wallach"
-  review_status: "current"
 ---
 
 # US State New Hire Reporting Matrix
@@ -319,24 +317,6 @@ The big four payroll-services platforms — Gusto, ADP RUN, Paychex Flex, and Qu
 ## 10. References and Authorities
 
 - **References and authorities list** — - 42 U.S.C. §653a (Social Security Act §453A) — federal new-hire reporting statute. - Pub. L. 104-193 (PRWORA), §313 (1996) — enacting legislation. - 45 C.F.R. §303.108 — federal implementing regulation. - OCSS Employer Services portal: <https://www.acf.hhs.gov/css/employers/employer-responsibilities/new-hire-reporting>. - California Unemployment Insurance Code §1088.8 — CA contractor reporting. - N.Y. Tax Law §171-h — NY contractor reporting. - N.J.S.A. 2A:17-56.61 — NJ contractor reporting. - M.G.L. c. 62E §2 — MA contractor reporting. - KRS 405.435 — KY contractor reporting. - Ohio Revised Code §3121.892 — OH contractor reporting (soft). - IRS Pub. 15 (Circular E) — referenced for employer definition (§3401(d)).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

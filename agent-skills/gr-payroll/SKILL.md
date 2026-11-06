@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gr-payroll"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Greece: running payroll, 2026
-
-Source-cited draft. Built by Michael Cutajar and the OpenAccountants team.
 
 This skill is the employer's monthly and yearly payroll routine in Greece for pay periods in 2026. It links to the pack's other skills instead of repeating them:
 
@@ -247,26 +242,6 @@ expected:
 
 Not yet confirmed: how tax is withheld on the Christmas bonus, Easter bonus and holiday allowance payrolls (ΠΟΛ 1104/2014 sets only the tax on each monthly salary); the statutory amount of the holiday allowance (επίδομα αδείας) under labour law, which the examples take as half a month's salary because ΠΟΛ 1104/2014 treats the three payments as two salaries; the payment dates of the Christmas and Easter bonuses; whether the employer must still give each employee an annual pay and withholding certificate in 2026, and its deadline (set by an annual AADE decision we have not found); the 2026 APD periods for the bonuses; whether ERGANI II hiring must be declared before the first day of work; the amounts of the Labour Inspectorate fines (undeclared work, digital work card); the late-payment interest rate under ΚΦΔ art. 52 (set by ministerial decision); how age is measured for the under-30 rates in monthly withholding; how employer registration with e-EFKA is done for a first-time employer.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

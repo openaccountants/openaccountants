@@ -3,11 +3,11 @@ name: au-nonresident-cgt-2
 description: "Australian CGT for foreign residents: taxable Australian property, rates, discounts, the former home and purchaser withholding."
 jurisdiction: AU
 last_updated: 2026-09-08
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # Australian CGT for foreign residents
@@ -53,21 +53,3 @@ Record the asset, ownership and associate interests, valuations, holding history
 - **Withholding is a credit, not final tax** — Withholding is a credit towards the vendor's tax, not a calculation of the final gain or tax. Reconcile it with the Australian return and retain the purchaser's payment evidence. Confirm lodgement obligations and the applicable deadline for the taxpayer's entity and circumstances.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

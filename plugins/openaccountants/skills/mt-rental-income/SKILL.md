@@ -7,14 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-rental-income"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-04"
 ---
 
 # MT Rental Income
-
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
 
 Tax year: basis year 2026, return and TA24 due in 2027. Rate tables are in [malta-income-tax](malta-income-tax.md); sales of property are in [mt-property-transfer-tax-the-sale-immovable](mt-property-transfer-tax-the-sale-immovable.md); [how-to-account-for-rental-income-in-malta](how-to-account-for-rental-income-in-malta.md) covers the bookkeeping side.
 
@@ -222,7 +218,8 @@ Out of scope here; see [mt-property-transfer-tax-the-sale-immovable](mt-property
 | Accommodation that needs a Malta Travel and Tourism Services Act licence | Taxable; 7% where the landlord is Article 10 registered |
 | Letting by a limited liability company to an Article 10 registered person for its economic activity | Taxable at 18% |
 | Letting for 30 days or less in the course of an economic activity (with the listed exceptions) | Taxable at 18% |
-| Parking sites, garages, stores, installed equipment and machinery, safes | Taxable at 18% |
+| Qualifying designated vehicle-parking premises/sites; permanently installed equipment/machinery; safes | Outside the immovable-letting exemption under the relevant statutory limbs; check registration and applicable rate |
+| Ordinary garages, stores or similar premises | Not automatically taxable: excepted from the short-period exclusion by item 1(1)(e)(iv). Test other exclusion limbs separately, including a limited-company letting to an Article 10 registered person for that person’s economic activity |
 
 ### 6.6 Records and Interest
 
@@ -396,8 +393,6 @@ ALWAYS compute both options and present to reviewer for confirmation.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Sources
 
 | Source | URL | Read on |
@@ -414,26 +409,41 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 Not yet confirmed: the MTCA guidance note's wider reading of "tenement" (land, roof tops) against the Article 31D(8)(a) definition; the MTCA manual's line that gross rent under the 15% is "declared by end of June", which sits against FAQ 5 saying individuals do not declare it in the return; the 31 July online return date for the 2026 basis year; treating platform fees as not deductible from the 15% base; the UK treaty position in Example 3.
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
 
-<!-- openaccountants-cta-block -->
+## Targeted hypothetical VAT classification checks
 
----
+These illustrations apply the Fifth Schedule exemption gates. An individual’s ordinary garage lease, with none of the other exclusions and no designated vehicle-parking treatment, is assumed exempt without credit: no output VAT on EUR 1,200 rent. A limited company’s EUR 1,200 net garage letting to an Article 10 registered business for its economic activity is instead within item 1(1)(d); assuming Article 10 supplier registration and the standard 18% rate, output VAT is EUR 216. The property label alone does not decide the result.
 
-## Talk to a verified accountant
+```oa-check
+name: Ordinary garage: no exemption exclusion assumed
+inputs:
+  rent: 1200
+steps:
+  - output_vat: pct(rent,0)
+expected:
+  output_vat: 0
+```
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+```oa-check
+name: Company garage lease to Article 10 economic user
+inputs:
+  net_rent: 1200
+steps:
+  - output_vat: pct(net_rent,18)
+  - gross_invoice: net_rent + output_vat
+expected:
+  output_vat: 216
+  gross_invoice: 1416
+```
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+### Targeted audit source checks, 4 November 2026
+
+Repaired the garage/store and parking classifications. The existing platform-fee and MTA scope limitations remain; an exemption gate is not a registration determination. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- Cap. 406 article 19(1): https://legislation.mt/eli/cap/406/eng/pdf (read 2026-11-04).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.

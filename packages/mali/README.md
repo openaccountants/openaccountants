@@ -7,14 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ml-company-formation.md`
-4. `ml-corporate-income-tax.md`
-5. `ml-income-tax.md`
-6. `ml-payroll-social.md`
-7. `ml-tax-overview.md`
-8. `ml-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ml-company-formation.md`
+5. `ml-corporate-income-tax.md`
+6. `ml-cross-border-tax.md`
+7. `ml-income-tax.md`
+8. `ml-payroll-social.md`
+9. `ml-solidarity-contribution.md`
+10. `ml-tax-overview.md`
+11. `ml-transfer-pricing.md`
+12. `ml-vat-gst.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

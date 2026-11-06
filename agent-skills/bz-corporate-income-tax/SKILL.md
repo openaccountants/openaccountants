@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BZ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Belize Corporate Income Tax
@@ -30,24 +28,6 @@ metadata:
 - **Withholding tax — royalties to non-residents** — 15% percent ((approx — sources vary 15%/25%, confirm))  _(Income and Business Tax Act (Cap. 55))_
 - **Withholding tax — management/technical fees, equipment rental** — 25% percent ((approx — confirm rate))  _(Income and Business Tax Act (Cap. 55))_
 - **Business tax filing frequency** — Monthly business tax returns; annual income tax return due 31 March ((approx — confirm monthly vs annual filing for entity type))  _(Income and Business Tax Act (Cap. 55))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

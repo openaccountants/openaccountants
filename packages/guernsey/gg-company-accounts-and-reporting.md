@@ -6,11 +6,10 @@ version: 0.5
 jurisdiction: GG
 tax_year: 2026
 last_updated: 2026-10-29
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: financial-statements
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: financial-statements
 ---
 
 # Guernsey: company accounts, records and annual reporting
@@ -169,24 +168,6 @@ expected:
 | [Audit Exemption Amendment 2021](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265841) | Full instrument, replaced thresholds/revocations | 2026-10-27 |
 | Registry sources listed in frontmatter | Original guidance read and prior independent scoped reviews retained; current fee schedule rechecked | 2026-10-22; fees 2026-10-27 |
 
-Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
+Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

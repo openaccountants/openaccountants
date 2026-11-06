@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "MC"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Monaco VAT v2.3
@@ -149,24 +147,6 @@ expected:
 **Not yet confirmed:** special margin/travel/online schemes, development property and the detailed classification of specialised reduced-rate products; these require their own primary-law analysis. Ordinary rates, input coefficients, trade and filing methods above do not establish eligibility for those schemes. Version 2.3 builds on the retained correction of the earlier unsourced Nice route and bank-name defaults.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -4,12 +4,11 @@ description: Florida local-option transient rental (tourist development) tax rat
 jurisdiction: US-FL
 tax_year: 2026
 last_updated: 2026-07-13
-authored_by: Rob Hoffman, EA
-reviewed_by: Rob Hoffman
-review_status: current
-trust_label: Checked by Rob Hoffman
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Rob Hoffman"
+reviewed_on: 2026-11-03
+tier: 1
+domain: vat-gst
 ---
 
 # Florida Transient Rental Tax (Tourist Development) — by County
@@ -83,21 +82,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Wakulla County transient rental tax** — 4% (collected by DOR)  _(FDOR Form DR-15TDT, R. 03/25)_
 - **Walton County transient rental tax** — 5% (collected by County — 5% for ZIPs 32459/32550/32454/32461 & Walton portion of 32413; 2% rest of county)  _(FDOR Form DR-15TDT, R. 03/25)_
 - **Washington County transient rental tax** — 3% (collected by DOR)  _(FDOR Form DR-15TDT, R. 03/25)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

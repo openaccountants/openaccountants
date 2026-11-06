@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-NY"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # New York State and local sales and use tax: 2026 registration, taxability and filing
@@ -274,24 +271,6 @@ Interest runs on any amount not paid by the due date, from the due date until pa
 - [ ] Returns filed within 20 days of each period, zero returns included, and Web Filed where the mandate applies.
 - [ ] Vendor collection credit taken only on a timely, fully paid quarterly or annual return, at 5% up to $200.
 - [ ] Any late period costed with the TB-ST-805 penalties and daily compounded interest.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

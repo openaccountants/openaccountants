@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "SD"
   tax_year: "2025"
   last_updated: "2026-07-22"
-  authored_by: "Ahmed Hassan"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Ahmed Hassan"
 ---
 
 # Sudan Tax Overview Skill v0.1
@@ -283,29 +281,9 @@ Sudan's currency history is complex:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, tax attorney, or equivalent licensed practitioner in Sudan) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 **Sources:** Sudan Taxation Chamber (tax.gov.sd); Income Tax Act 1986; VAT Act 2001 / 2017 Regulations; Stamp Duty Tax Law 2019; Zakat Act 2001; Free Zones Act 2001; Companies Act; Investment Incentive Law 2021; PwC Worldwide Tax Summaries — Sudan; Britacom tax profile; US State Department Investment Climate Statement 2022; ILO Social Protection; SSA Social Security Worldwide.
 
 > Contributed by Ahmed Hassan.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

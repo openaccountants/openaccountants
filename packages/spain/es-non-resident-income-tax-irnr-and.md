@@ -4,14 +4,13 @@ description: Use this Guide to select and compute Spain’s ordinary non-residen
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
 category: international
+tier: 2
+domain: cross-border
 ---
 
 # Spain: non-residents, permanent establishments and departure v1.1
@@ -210,21 +209,3 @@ expected:
 [TRLIRNR art. 25/DA 4/DT 1](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527), [LIRPF art.9 and operative85](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1#a85), and [AEAT residence documentation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-tributacion-no-residentes/capitulo-05-declaracion-rentas-obtenidas-ep/documentacion.html) reread **2026-10-27** for specialist rates, residence exclusion/certificate validity, time-share boundary and historical gain gateways.
 
 **Not yet confirmed:** case-specific treaty/MLI entitlement and rates; detailed former-main-home reinvestment and the precise equality-at-cap old-asset abatement boundary where decisive, specialist combined-foral/fiscal-group allocation and PE attribution/election outcomes without their required facts. Ordinary Basque/Navarra nonresident methods are in the separate foral Guide, independently reviewed for its supplied ordinary scope. General ordinary residence, non-PE rental/property, PE accounting-to-tax, individual share exit and PE transfer computations are supplied. Independent whole-pack review remains outstanding.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

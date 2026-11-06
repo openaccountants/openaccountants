@@ -7,7 +7,8 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gp-producer-octroi-compliance.md`
+3. `README.md`
+4. `gp-producer-octroi-compliance.md`
 
 ## How to use
 

@@ -2,16 +2,14 @@
 name: ms-nonresident-withholding
 description: >
   Montserrat nonresident withholding tax reference checked for 2026 against the official consolidated Income and Corporation Tax Act. Covers domestic rates for dividends, property rentals and other specified income payments, year-end accrual treatment, certificates, remittance timing and payer liability. Includes gross-payment examples and an accrual example to distinguish withholding from cash settlement. Use only after recipient residence, payment character and statutory scope have been established. Treaty reductions require their own entitlement and direction checks; this Guide does not provide a treaty rate matrix. Branch remittances, permanent establishments and later amendments need separate analysis. Independent accountant review is pending.
-version: 0.1
+version: 0.2
 jurisdiction: MS
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # Montserrat withholding on payments to non-residents
@@ -63,23 +61,3 @@ As a closing control, reconcile supplier accruals, payment dates and withholding
 ## Remaining work
 
 Permanent-establishment classification, branch remitted-profit withholding under section 39(4), treaty eligibility, source disputes, specific exemptions and post-consolidation amendments need further analysis. Independent accountant review remains pending.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

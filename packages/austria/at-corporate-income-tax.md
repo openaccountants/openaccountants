@@ -1,20 +1,17 @@
 ---
 name: at-corporate-income-tax
 description: "Austrian corporate income tax (Körperschaftsteuer, KöSt) for tax year 2026: GmbH, AG, FlexCo and foreign companies with Austrian income. Covers liability (seat or management), the 23% rate (KStG § 22(1)) and the enacted 24% on income above EUR 1,000,000 for financial years starting after 31 December 2027, the minimum tax (EUR 500 a year for a GmbH, EUR 3,500 for an AG), the 75% loss offset limit (§ 8(4) Z 2), the participation exemption and international participations (§§ 10 and 10a), group taxation (§ 9), the interest limit (§ 12a), the clearing-account rule from 2027 (§ 8(2a)), KESt on distributions (27.5%, or 23% to a company), filing deadlines, quarterly prepayments, late-filing surcharge and Anspruchszinsen. Trigger on: Körperschaftsteuer, KöSt, Mindestkörperschaftsteuer, Verlustvortrag GmbH, Schachtelbeteiligung, Gruppenbesteuerung, Zinsschranke, Austrian company tax. Out of scope: at-transfer-pricing, at-cross-border, at-vat-return, at-income-tax, at-company-formation."
-version: 1.1
+version: 1.2
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-10-23
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: corporate-tax
 ---
 
 # Austria corporate income tax (Körperschaftsteuer): tax year 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 This skill covers how Austria taxes companies: who is liable, the rate, the minimum tax, the taxable base (losses, the participation exemption, the interest limit, group taxation), the return, prepayments, surcharges and interest, and the tax on dividends a company pays or receives. All statute text was read on RIS (the federal legal information system) on 23 October 2026, in the version in force on that day unless a row says otherwise. Tax year 2026 means the calendar year 2026, or a financial year that ends in 2026.
 
@@ -224,23 +221,3 @@ expected:
 | BMF form catalogue (K 3, G 4) | https://service.bmf.gv.at/service/anwend/formulare/show_mast.asp?s=g4 | 2026-10-23 |
 
 Not yet confirmed: the percentages and dates in the BMF quota regulation under § 134a(5) BAO; how KESt withheld on a domestic dividend to a company holding under 10% is credited or refunded in the assessment; the minimum tax of an SE (Article 4 of Regulation (EC) No 2157/2001 was not read); the KStR 2013 guidance on §§ 9, 10, 10a and 12a, which was not read for this refresh.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

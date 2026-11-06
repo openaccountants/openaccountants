@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # The UK statutory residence test (SRT), tax year 2026/27
@@ -290,24 +287,6 @@ In the check, a `ties_needed` of 5 would mean no number of ties is enough (22 da
 | GOV.UK, SA109 Residence and FIG regime etc (page updated 28 September 2026) | https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109 | 2026-10-24 |
 
 Not yet confirmed: whether the age-10 condition in ITTOIA 2005 s845B(1)(d), in force from 18 March 2026, also governs claims for 2025/26 (FA 2026 Sch 3 para 3 has no commencement rule of its own; 2026/27 is covered either way).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

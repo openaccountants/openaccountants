@@ -1,21 +1,19 @@
 ---
 name: dk-payroll
 description: "Use this skill to run Danish payroll for 2026: registering as an employer on virk.dk, the monthly eIndkomst report and its 2026 deadlines (the 10th of the next month for small and medium employers, the last banking day of the month for large ones), the eSkattekort (hovedkort, bikort, frikort) and the forskudsopgørelse behind it, the withholding order (ATP, then 8% AM-bidrag, then A-skat at the trækprocent after the monthly fradrag), ATP of DKK 99 employee and DKK 198 employer a month, holiday pay under the Holiday Act (ferietillæg 1%, feriegodtgørelse 12.5%, FerieKonto), free car and free phone, payslips and penalties. Trigger phrases: lønkørsel, A-skat, am-bidrag, trækprocent, skattekort, eIndkomst, feriepenge, fri bil, Danish payroll. Out of scope: the employee's own tax computation (dk-income-tax), employer social contributions and Samlet Betaling (dk-social-contributions), self-employed B-tax (dk-income-tax), company tax (dk-corporate-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Denmark payroll: withholding, eIndkomst and holiday pay (2026)
 
-This skill covers what an employer in Denmark withholds from wages each month, what it reports to eIndkomst, and when it pays. It links to the other Denmark skills and does not repeat them: `dk-income-tax` (the rates behind the trækprocent, the personal allowance, the employee's annual return and the self-employed), `dk-social-contributions` (employer contributions collected through Samlet Betaling, and social security for posted workers), `dk-corporate-tax` and `dk-vat-return`.
+This skill covers what an employer in Denmark withholds from wages each month, what it reports to eIndkomst, and when it pays. It links to the other Denmark skills and does not repeat them: `dk-income-tax` (the rates behind the trækprocent, the personal allowance, the employee's annual return and the self-employed), `dk-social-contributions` (employer contributions collected through Samlet Betaling, and social security for posted workers), `dk-corporate-tax` and `denmark-vat-return`.
 
 All figures are for the 2026 calendar year. Statute text was read on retsinformation.dk on 23 October 2026. Practice figures come from skat.dk, the Danish legal guide (Den juridiske vejledning, info.skat.dk), virk.dk and borger.dk, all read the same day.
 
@@ -275,23 +273,3 @@ expected:
 | virk.dk, Feriepenge: arbejdsgiver (FerieKonto deadlines, DKK 4 fee) | https://virk.dk/vejledning/feriepenge/fp-arbejdsgiver/ | 2026-10-23 |
 
 Not yet confirmed: the statutory basis of the monthly payslip duty (Skattestyrelsen's guidance says "must" in Danish and "should" in English, and names no provision).
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

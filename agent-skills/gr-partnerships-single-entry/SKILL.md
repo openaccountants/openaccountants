@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gr-partnerships-single-entry"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Greece: partnerships and other entities on single-entry books (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
 A Greek partnership is not transparent. The ΟΕ, the ΕΕ, the civil-law partnership and the joint venture are taxpayers in their own right, and pay legal-entity income tax on their profit. This skill covers those entities when they keep single-entry books (income and expense books). The rules are in the Income Tax Code (Κώδικας Φορολογίας Εισοδήματος, ν. 4172/2013, "ITC"), read in the Ministry of Finance codification up to ν. 5264/2025. Book-keeping categories are in the Greek accounting standards law (ν. 4308/2014). Fines are in the Tax Procedure Code (ν. 5104/2024, "TPC"). The trade fee is in art. 31 of ν. 3986/2011, as replaced by art. 3 of ν. 5162/2024.
 
@@ -199,26 +194,6 @@ The AADE PDFs refuse automated downloads (HTTP 403). They were read in a browser
 
 Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art. 52); no AADE circular found that says in terms whether art. 49 applies to single-entry entities (the EUR 3,000,000 floor makes the point academic at single-entry size); the official text of ν. 5164/2024 art. 47, which amended ν. 4308/2014 art. 2 after the Ministry of Finance codified text (posted February 2024) was made (AADE's May 2026 manual still applies the EUR 1,500,000 test); the AADE decision setting the filing window for tax year 2026 returns, and any extension; whether any 2026 law amended the ITC articles above after ν. 5264/2025.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-partnerships-single-entry` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-partnerships-single-entry. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-partnerships-single-entry` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-partnerships-single-entry. If neither is available, confirm every figure against the official source pages cited above before relying on it.

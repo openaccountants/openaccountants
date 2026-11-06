@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "general"
   tax_year: "2026"
   last_updated: "2026-10-12"
-  authored_by: "Michael Cutajar, CPA, ACCA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
 ---
 
 # Succession, forced heirship and inheritance tax compared: France, Italy, Spain, Germany, Switzerland, Malta, UK, UAE and US
@@ -330,24 +327,6 @@ These are each country's charge on its own. Where two countries tax the same sha
 - Switzerland: [ZGB](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/233_245_233/20260101/de/pdf-a/fedlex-data-admin-ch-eli-cc-24-233_245_233-20260101-de-pdf-a.pdf); [DBG](https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1991/1184_1184_1184/20260101/de/pdf-a/fedlex-data-admin-ch-eli-cc-1991-1184_1184_1184-20260101-de-pdf-a.pdf)
 - Malta: [Civil Code, Cap. 16](https://legislation.mt/eli/cap/16/eng/pdf)
 - United Kingdom: [Inheritance Tax](https://www.gov.uk/inheritance-tax); [residence nil rate band](https://www.gov.uk/guidance/inheritance-tax-residence-nil-rate-band); [long-term UK residents](https://www.gov.uk/guidance/inheritance-tax-if-youre-a-long-term-uk-resident); [if you die when based outside the UK](https://www.gov.uk/inheritance-tax/when-someone-living-outside-the-uk-dies); [Inheritance (Provision for Family and Dependants) Act 1975, section 1](https://www.legislation.gov.uk/ukpga/1975/63/section/1)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

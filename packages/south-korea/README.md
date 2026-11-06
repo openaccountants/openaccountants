@@ -7,13 +7,14 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `kr-income-tax.md`
-4. `kr-social-insurance.md`
-5. `references.md`
-6. `simplified-business-operator-registration-under-vat-act.md`
-7. `south-korea-crypto-tax.md`
-8. `south-korea-vat.md`
-9. `crypto-tax-workflow-base.md`
+3. `README.md`
+4. `kr-income-tax.md`
+5. `kr-social-insurance.md`
+6. `references.md`
+7. `simplified-business-operator-registration-under-vat-act.md`
+8. `south-korea-crypto-tax.md`
+9. `south-korea-vat.md`
+10. `crypto-tax-workflow-base.md`
 
 ## Also known as
 

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-09-03"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Form 7004 corporate extension and the timely mailing is timely filing rule under section 7502 in United States
@@ -119,24 +117,6 @@ Private delivery services designated by the IRS
 - https://www.law.cornell.edu/cfr/text/26/301.7502-1 (Regulations section 301.7502-1, postmark and proof of delivery rules)
 - https://www.irs.gov/filing/private-delivery-services-pds (designated private delivery services)
 - https://www.irs.gov/filing/submission-processing-center-street-addresses-for-private-delivery-service-pds (PDS street addresses)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

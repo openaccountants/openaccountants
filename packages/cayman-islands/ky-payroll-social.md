@@ -4,10 +4,9 @@ description: "Source-cited draft: payroll & social contributions for Cayman Isla
 jurisdiction: KY
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Cayman Islands Payroll & Social Contributions
@@ -26,21 +25,3 @@ There is no income tax withholding (PAYE) and no state social-security tax in th
 - **Pension remittance deadline** — Contributions due by the 15th of the month following the month of deduction  _(National Pensions Act (Cayman Islands) https://caymanresident.com/work/pension-requirements/cayman-pension-law)_
 - **Mandatory health insurance** — Employers must provide at least standard health insurance (SHIC) from an approved insurer for each eligible employee; premium is generally shared, with the employer paying at least 50% ((employer share approx — confirm))  _(Health Insurance Act (Cayman Islands) https://caymanresident.com/work/pension-requirements)_
 - **Work-permit fees (employer cost)** — Employers of non-Caymanian staff pay annual work-permit fees that vary by occupation and sector; these are a payroll-related government cost (not a tax on wages)  _(Immigration (Transition) Act (Cayman Islands) https://www.bizlatinhub.com/labour-law-in-the-cayman-islands/)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

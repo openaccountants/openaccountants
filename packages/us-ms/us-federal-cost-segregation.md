@@ -4,11 +4,8 @@ description: "Cost segregation studies for US real property: reclassifiable basi
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # US federal cost segregation for real property: 2026 method, with 2025 return notes
@@ -227,21 +224,3 @@ Amounts marked "assumed" are illustrations, not official figures.
 - Basis, at-risk, passive, real estate professional and excess business loss limits are applied in order, and suspended amounts are recorded.
 - Recapture on a future sale is modelled and explained to the client.
 - State treatment is checked separately.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -5,11 +5,10 @@ version: 1.1
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-09-27
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # AU Tax Residency
@@ -85,21 +84,3 @@ A person is an Australian tax resident if they satisfy **any one** of these:
 > **Working paper only.** Residency determination is highly fact-specific. Engage an Australian tax adviser for a formal residency opinion before making decisions that rely on non-resident status.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

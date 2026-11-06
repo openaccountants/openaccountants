@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "KE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Kenya Tax Overview
@@ -28,24 +26,6 @@ metadata:
 - **Annual individual income tax return deadline** — 30 June following the end of the year of income  _(Tax Procedures Act, 2015 — https://www.kra.go.ke/file-my-returns)_
 - **Annual corporation tax return deadline** — Within 6 months of the company's financial year end (e.g. 30 June for a 31 December year end)  _(Tax Procedures Act, 2015 — https://taxsummaries.pwc.com/kenya/corporate/tax-administration)_
 - **Monthly VAT return and payment deadline** — By the 20th day of the following month  _(VAT Act, 2013 — https://www.kra.go.ke/)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

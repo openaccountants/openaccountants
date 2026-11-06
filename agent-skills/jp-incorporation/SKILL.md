@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "JP"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # JP Incorporation
@@ -29,7 +27,6 @@ metadata:
 | Legislation | Companies Act (会社法), Corporate Tax Act (法人税法), Income Tax Act (所得税法), Consumption Tax Act (消費税法) |
 | Tax Authority | National Tax Agency (国税庁 NTA), Legal Affairs Bureau (法務局) |
 | Contributor | Open Accountants Community |
-| Validated by | Pending -- requires sign-off by a Japanese 税理士 (Zeirishi) |
 | Skill version | 1.0 |
 | Tax year basis | 2025 (令和7年) |
 
@@ -515,26 +512,6 @@ This skill and its outputs are provided for informational and computational purp
 Incorporation involves tax, legal, and social insurance considerations that vary significantly based on individual circumstances. All decisions must be reviewed and confirmed by qualified professionals (税理士 for tax, 司法書士 for company registration, 社会保険労務士 for social insurance) before acting upon.
 
 Information is based on the 2025 tax year (令和7年分) tax system. Tax laws, social insurance rates, and registration fees change annually.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

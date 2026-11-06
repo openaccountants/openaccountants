@@ -8,6 +8,7 @@ metadata:
   jurisdiction: "ES"
   tax_year: "2026"
   last_updated: "2026-10-28"
+  reviewed_by: "Jeff Watts"
 ---
 
 # Spain: ordinary IPSI in Ceuta and Melilla for2026
@@ -25,7 +26,6 @@ The supplier normally accounts for IPSI on taxable local activity. For local pro
 ## Rates, bands and thresholds
 
 ### Ceuta
-
 
 Use art33 with the amendments, not the unamended2019 text. In particular, the March/June2020 changes remove the old general6% treatment of Annex3 professional entries: the June2020 version of33.2.2(a) places the listed Annex3 entries within IAE84 at the general service rate. [BOCCE13March2020](https://www.ceuta.es/ceuta/component/jdownloads/finish/1619-marzo/20188-bocce-5973-13-03-2020?Itemid=534); [BOCCE29June2020, art33.2](https://www.ceuta.es/ceuta/component/jdownloads/finish/1830-junio/20334-bocce-extra54-29-06-2020?Itemid=534)
 
@@ -57,7 +57,6 @@ Operations in a project formally declared strategic by the Assembly can use0.5% 
 
 ### Melilla
 
-
 The full ordinance republished by Decree584/30April2021, BOME5857/4May2021, Annex1 supplies the operative interior rates. Production/elaboration uses the same goods tariff as imports, now supplied by the2022 import ordinance. [Melilla arts15–16 and Annex1](https://bomemelilla.es/bome/descargar/BOME-A-2021-410.pdf); [Melilla import art15 and AnnexI](https://bomemelilla.es/bome/descargar/BOME-AX-2022-6.pdf)
 
 | Melilla category | Rate/condition |Official source |Tax year / period |
@@ -82,7 +81,6 @@ Goods examples from the actual2022 tariff: CN8471 computers and8473 specified pa
 
 For postal H7 simplified imports below€150, the ordinance sets10% unless a CN heading is supplied, in which case use the heading's actual tariff rate. That is a simplified-rate rule, not a€150 IPSI exemption. [Melilla import art28.1](https://bomemelilla.es/bome/descargar/BOME-AX-2022-6.pdf)
 
-
 ## The base
 
 For each taxable transaction, establish the **base excluding IPSI**, select the actual local rate at the tax point, and calculate `tax=base×rate/100`. Add the quotas for the relevant return and subtract only separately justified deductible IPSI. Exempt or outside-scope transactions require their own legal basis and are not a zero-rate default. If the agreed price already includes IPSI, recover the base as `inclusive_price/(1+rate/100)` and the tax as the difference. Split supplies with different rates before calculating; do not apply an average rate to the turnover. [Ley8/1991 arts14–19](https://www.boe.es/buscar/act.php?id=BOE-A-1991-7645); [Ceuta arts26–29,32–34](https://www.ceuta.es/ceuta/component/jdownloads/finish/1583-enero/9410-bocce-extra2-30-01-2019?Itemid=534); [Melilla arts11–16](https://bomemelilla.es/bome/descargar/BOME-A-2021-410.pdf)
@@ -93,9 +91,7 @@ For imports, first establish the customs value. Add import taxes/charges other t
 
 The import tax point is admission of the import declaration or, absent that, entry of the goods, subject to the relevant special regime. Ordinary import payment is before clearance/entry. It is separate from the subsequent quarterly return and is not postponed by the Ceuta2026 quarterly extension. [Ley8/1991 arts11,22](https://www.boe.es/buscar/act.php?id=BOE-A-1991-7645); [Melilla import arts6,28,45](https://bomemelilla.es/bome/descargar/BOME-AX-2022-6.pdf)
 
-
 ### Selective input recovery and refunds
-
 
 IPSI does **not** allow general VAT-style recovery on every business expense. Ley8/1991 art20 allows qualifying locally borne IPSI on goods acquired/imported for taxable production/elaboration, or qualifying definitive export. Goods used only to provide ordinary services do not acquire deduction entitlement just because the service business charges IPSI. Quotas relating to property deliveries, services, electricity consumption and complementary tobacco/fuel levies are excluded, subject to the specific statutory levy refund routes. Keep the goods link to production and the original tax invoice/import assessment and payment proof. The VAT deduction evidence, restrictions and limitations adopted by the statute still apply. [Ley8/1991 art20](https://www.boe.es/buscar/act.php?id=BOE-A-1991-7645); [Ceuta arts58–61](https://www.ceuta.es/ceuta/component/jdownloads/finish/1583-enero/9410-bocce-extra2-30-01-2019?Itemid=534); [Melilla arts17–19](https://bomemelilla.es/bome/descargar/BOME-A-2021-410.pdf)
 
@@ -125,9 +121,7 @@ For the used assets actually covered by import ordinance **38(E)** and used in a
 
 With `Q` the original IPSI paid, `r` the applicable monthly percentage as a decimal, and `m` the elapsed months **counting any fractional month as a full month**, the reduction is `Q × r × m` and refund is `Q - reduction`, subject to the entitlement and evidence gates. For eligible information-processing equipment with original IPSI EUR 1,000 and elapsed time **10 months plus one day**, count 11 months: reduction `1,000 × 2% × 11 = EUR 220`, refund **EUR 780** before any separately applicable inspection charge. Exactly ten elapsed months gives EUR 800. At eleven months, machinery's 1% instead gives EUR 890; do not use the IT rate for every asset. The fee is a separate payment, subject to the same-supplier-return exception already stated, rather than another percentage depreciation of the original tax.
 
-
 ### Objective-assessment gateways
-
 
 The examples deliberately stipulate direct assessment. Ceuta63 applies objective assessment, absent waiver, to qualifying natural persons/IRPF attribution entities with a public establishment, listed activity and prior-year activity turnover no more than€600,000production,€100,000services or€300,000construction; its detailed exclusions include Annex3 services, rentals, mixed-rate activities, electricity, reverse charge, first property transfers, occasional operations and public works. Qualifying first-year activities also enter absent waiver. Its method uses the actual local Annex4 sector modules/instructions, a quarter of provisional annual base forQ1–Q3 and an annual-average reconciliation inQ4, proportional calendar days for commencement/cessation, with no input deduction. Do not substitute the Melilla income-tax module multiplier for Ceuta's local modules. A specific Ceuta module activity requires the complete current sector schedule before calculation. [Ceuta62–68](https://www.ceuta.es/ceuta/component/jdownloads/finish/1583-enero/9410-bocce-extra2-30-01-2019?Itemid=534)
 
@@ -136,7 +130,6 @@ Melilla21 sets a prior-year taxable-base ceiling of€450,000 and a first-year r
 ## Deadlines and filing
 
 ### Ceuta
-
 
 Ceuta's official model list and procedural instructions identify:
 
@@ -157,9 +150,7 @@ Import payment normally precedes clearance/entry. Ceuta91 contains an authorised
 
 The public online model generator prepares a printable declaration; it does not by itself complete electronic presentation. OASTCE directs electronic filing through its Virtual Office using a digital certificate. Retain filing and payment receipts. The001 instructions route positive payments through the collection service/authorised financial entities and negative returns to the tax authority register. [Official electronic-filing instructions](https://www.tributosceuta.org/index2.cfm?codigo=0081); [Official001 instructions](https://oac.tributosceuta.org/web/fichaAsunto.do?asunto_ide=1043&op=26&simular=1)
 
-
 ### Melilla
-
 
 The current official FAQ, updated10April2026, confirms400/412/413/420/421. The full2021 ordinance Annex3 gives their purpose and deadlines; it is also expressly relied on in the2026 extension order. [Melilla current FAQ](https://www.melilla.es/melillaportal/contenedor.jsp?codMenu=19&codMenuPN=602&codMenuSN=609&contenido=391&nivel=1400&seccion=s_fdes_d4_v1.jsp&tipo=6); [Melilla Annex3](https://bomemelilla.es/bome/descargar/BOME-A-2021-410.pdf)
 
@@ -286,7 +277,6 @@ expected:
 |[ceuta-ipsi-form009](https://oac.tributosceuta.org/web/fichaAsunto.do?simular=1&op=26&asunto_ide=1050) |Official ordinance, amendment, rate/form/filing provision cited above |2026-10-27 |
 |[ipsi-vat-crossreference2026](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) |Official ordinance, amendment, rate/form/filing provision cited above |2026-10-27 |
 | [Melilla import ordinance38(A–E)](https://bomemelilla.es/bome/descargar/BOME-AX-2022-6.pdf) | Used-business-asset export refund: all11 monthly reduction classes, month/fraction rule, original-tax base and document/fee gates; actual printed pages32–33 visually checked |2026-10-28 |
-
 
 **Not yet confirmed:** full current Ceuta modules for a specific objective activity; Melilla eligibility beyond its actual art21.3 wording; authorised Ceuta import-deferral day-count interaction; any current pandemic-linked healthcare concession; particular strategic-project declarations and commodity classifications. Tobacco/fuel complementary levies and special warehouses/temporary admissions need their separate methods. The ordinary Melilla article38(E) used-business-asset export reduction is supplied above; it does not extend to an asset or export that fails article38's conditions. Ordinary direct assessment and the dated2026 filing exceptions are supplied. Ceuta's011 form page retains old rate text: the2025 bulletin controls the current housing rate. Independent review remains pending; no accountant attestation is claimed.
 

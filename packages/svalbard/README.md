@@ -7,10 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `sj-svalbard-company-income-tax.md`
-4. `sj-svalbard-payroll-tax.md`
-5. `sj-svalbard-tax-residence.md`
-6. `payroll-workflow-base.md`
+3. `README.md`
+4. `sj-svalbard-coal-export-duty.md`
+5. `sj-svalbard-company-beneficial-owners.md`
+6. `sj-svalbard-company-income-tax.md`
+7. `sj-svalbard-income-tax.md`
+8. `sj-svalbard-payroll-tax.md`
+9. `sj-svalbard-project-group-payroll.md`
+10. `sj-svalbard-social-contributions.md`
+11. `sj-svalbard-tax-residence.md`
+12. `sj-svalbard-transfer-pricing.md`
+13. `sj-svalbard-visitor-environmental-levy.md`
+14. `payroll-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

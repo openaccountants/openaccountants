@@ -7,13 +7,14 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ht-business-patente.md`
-4. `ht-company-tax-and-advances.md`
-5. `ht-payroll-withholding-and-employer-tax.md`
-6. `ht-personal-income-tax-new-code.md`
-7. `ht-service-withholding-and-payment-reporting.md`
-8. `ht-turnover-tax-tca.md`
-9. `payroll-workflow-base.md`
+3. `README.md`
+4. `ht-business-patente.md`
+5. `ht-company-tax-and-advances.md`
+6. `ht-payroll-withholding-and-employer-tax.md`
+7. `ht-personal-income-tax-new-code.md`
+8. `ht-service-withholding-and-payment-reporting.md`
+9. `ht-turnover-tax-tca.md`
+10. `payroll-workflow-base.md`
 
 ## How to use
 

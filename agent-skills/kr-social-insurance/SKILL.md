@@ -28,7 +28,6 @@ Read this whole section before computing anything.
 | Tax Year | 2025 |
 | Currency | KRW only |
 | Contributor | Open Accountants |
-| Validated By | Pending -- licensed Korean practitioner sign-off required |
 | Validation Date | Pending |
 | Skill Version | 2.0 |
 | Confidence Coverage | Tier 1: NPS rate/ceiling, NHIS rate, LTCI rate, payment schedule, tax deductibility. Tier 2: NHIS property-based assessment, income reclassification, voluntary employment insurance. Tier 3: disability exemptions, international social security agreements, arrears disputes. |
@@ -346,8 +345,6 @@ Expected output: LTCI = KRW 350,000 x 12.95% = KRW 45,325/month. Total health in
 ### Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
 ## Today's figures and who stands behind this skill
 

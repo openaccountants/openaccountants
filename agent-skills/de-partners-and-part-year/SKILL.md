@@ -1,16 +1,13 @@
 ---
 name: de-partners-and-part-year
-description: "Use this skill for two German income tax cases in tax year 2026. Part 1, partners: how a partnership's profit (OHG, KG, GmbH & Co. KG, GbR, PartG) is fixed in the separate and uniform determination (gesonderte und einheitliche Feststellung, § 180 AO), the partnership return and its deadline, how each partner's share, Sondervergütungen and Sonderbetriebsausgaben reach the partner's own return, § 15a loss limits for limited partners, the § 35(2) trade tax credit split, the § 34a retained-profits option, and freelancer partnerships. Part 2, the year of moving to or from Germany: one resident assessment for the whole year (§ 2(7) EStG) with foreign-period income raising the rate (§ 32b). Trigger on: Mitunternehmer, Feststellungserklärung, ESt 1 B, Sondervergütung, Kommanditist Verlust, Thesaurierung, Zuzug, Wegzug, Progressionsvorbehalt. Out of scope: sole traders (de-income-tax), trade tax computation (de-trade-tax), non-residents (de-non-resident-tax), exit tax (leaving-germany-exit-tax)"
+description: "Use this skill for two German income tax cases in tax year 2026. Part 1, partners: how a partnership's profit (OHG, KG, GmbH & Co. KG, GbR, PartG) is fixed in the separate and uniform determination (gesonderte und einheitliche Feststellung, § 180 AO), the partnership return and its deadline, how each partner's share, Sondervergütungen and Sonderbetriebsausgaben reach the partner's own return, § 15a loss limits for limited partners, the § 35(2) trade tax credit split, the § 34a retained-profits option, and freelancer partnerships. Part 2, the year of moving to or from Germany: one resident assessment for the whole year (§ 2(7) EStG) with foreign-period income raising the rate (§ 32b). Trigger on: Mitunternehmer, Feststellungserklärung, ESt 1 B, Sondervergütung, Kommanditist Verlust, Thesaurierung, Zuzug, Wegzug, Progressionsvorbehalt. Out of scope: sole traders (germany-income-tax), trade tax computation (de-trade-tax), non-residents (de-non-resident-tax), exit tax (leaving-germany-exit"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/de-partners-and-part-year"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Germany: partners' profit shares and the year of moving to or from Germany, tax year 2026
@@ -19,7 +16,7 @@ This skill covers two gaps the other Germany skills leave open. Part 1 is the pa
 
 See also, and do not repeat here:
 
-- **de-income-tax**: the 2026 tariff, special expenses, solidarity surcharge, church tax, the § 35 credit for a sole trader, deadlines and penalties for the partner's own return.
+- **germany-income-tax**: the 2026 tariff, special expenses, solidarity surcharge, church tax, the § 35 credit for a sole trader, deadlines and penalties for the partner's own return.
 - **de-trade-tax**: trade tax at partnership level (add-backs, reductions, the EUR 24,500 allowance, multiplier), Abfärbung and gewerbliche Prägung in detail.
 - **de-employee-income-tax**: wages, Werbungskosten, joint assessment, Anlage N-AUS.
 - **de-non-resident-tax**: limited liability, German-source income (§ 49 EStG), the § 1(3) option, foreign tax credits (§ 34c EStG).
@@ -31,9 +28,13 @@ See also, and do not repeat here:
 
 - **In scope.** A person resident in Germany (§ 1(1) EStG) who is a co-entrepreneur (Mitunternehmer) of a partnership: a partner in an OHG, a KG (general or limited partner), a GmbH & Co. KG, a GbR or a PartG that runs a business or a profession. Their income is "die Gewinnanteile der Gesellschafter ... und die Vergütungen, die der Gesellschafter von der Gesellschaft für seine Tätigkeit im Dienst der Gesellschaft oder für die Hingabe von Darlehen oder für die Überlassung von Wirtschaftsgütern bezogen hat" (§ 15(1) sentence 1 no. 2 EStG). A partner holding through another partnership is treated the same way (§ 15(1) sentence 1 no. 2 sentence 2).
 - **Trade or profession.** A partnership whose partners all practise a free profession (§ 18(1) no. 1 EStG: doctors, lawyers, engineers, architects, tax advisers and the like) has income from self-employed work; § 18(4) applies § 15(1) no. 2 and § 15a to it, so the same profit share and Sondervergütung rules apply. It pays no trade tax unless one of two rules makes the whole activity a trade:
-  - **Abfärbung (§ 15(3) no. 1 EStG).** Any commercial activity of its own, or commercial income from a share in another partnership, makes the whole activity commercial, whether that part makes a profit or a loss.
+  - **Abfärbung (§ 15(3) no. 1 EStG).** A separable own commercial activity can make the whole activity commercial, subject to the two-gate de minimis exception below, whether that branch makes a profit or a loss. Commercial participation income is a separate limb without that de minimis exception. Its trade-tax treatment follows the separate route in `de-trade-tax`.
   - **Gewerbliche Prägung (§ 15(3) no. 2 EStG).** A partnership with no commercial activity whose only personally liable partners are capital companies, managed only by them or by non-partners. A GmbH & Co. KG run by its GmbH is the usual case.
 - **Out of scope.** Partnerships that opted to be taxed as a company (§ 1a KStG); partners that are companies (de-corporate-tax); sale or closing of a partnership share (§§ 16, 34 EStG); a change of partners during the year; foreign partnerships. Refer.
+
+**Separable own commercial side activity: annual net-receipt test.** Under the BFH interpretation adopted in BMF EStH 2025 H 15.8(5), an otherwise noncommercial partnership's separable own commercial activity does not reclassify the rest if BOTH `commercial net receipts ≤ 0.03 × total partnership net receipts` AND `commercial net receipts ≤ EUR 24,500` for the assessment period. Total receipts include the commercial and noncommercial activities, excluding VAT. Apply the same test whether the commercial branch makes a profit or a loss. The branch remains commercial in its own right; an inseparably commercial overall activity does not become a free profession under this exception. This own-activity test does not apply to commercial income received through a participation in another partnership; keep that income-tax limb and its separate trade-tax treatment distinct.
+
+For an otherwise qualifying separable professional partnership, total net receipts of EUR 500,000 and commercial net receipts of EUR 15,000 pass both gates exactly; EUR 15,000.01 fails the 3% gate. At total net receipts of EUR 1,000,000, commercial receipts of EUR 24,500 pass both; EUR 24,500.01 fails the absolute gate although below 3%. These are receipts tests, not a profit allowance. The outcome under these two gates is unchanged if the commercial branch has a loss.
 
 **Part 2, the year of moving.**
 
@@ -45,7 +46,7 @@ See also, and do not repeat here:
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Tariff, basic allowance, splitting | See de-income-tax; basic allowance EUR 12,348, zones 2 to 5 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
+| Tariff, basic allowance, splitting | See germany-income-tax; basic allowance EUR 12,348, zones 2 to 5 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
 | Basic allowance in the year of moving | In full, not cut by months: one resident assessment for the whole year | 2026 | https://www.gesetze-im-internet.de/estg/__2.html (§ 2(7)) |
 | Special rate (progression clause) | Tax on taxable income plus the foreign income, divided by that sum; the rate is applied to taxable income alone | 2026 | https://www.gesetze-im-internet.de/estg/__32b.html (§ 32b(1) and (2)) |
 | Special rate, rounding | Cut (not rounded) to four decimal places of a percent, as in the official example (2,540 / 37,000 = 6.86486% shown as 6.8648%) | 2025 | https://esth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/IV-Tarif-31-34b/Paragraf-32b/inhalt.html (H 32b "Allgemeines") |
@@ -71,13 +72,13 @@ See also, and do not repeat here:
 4. **The split.** Profit share by the partnership agreement, plus the partner's own items from 2 and 3.
 5. **Other items**: income exempt under a treaty that matters for the partners' rate (§ 180(5) no. 1 AO), and tax withheld to be credited (§ 180(5) no. 2 AO); for a commercial partnership, the § 35 figures (Step 3).
 
-**Step 2: the partner's own return.** The partner takes the determined share into their own return as business income (trade or self-employed), adds any other income, and from there follows de-income-tax: special expenses, tariff, surcharge, church tax. The partner does not recompute the share; if it is wrong, the determination notice is what gets challenged.
+**Step 2: the partner's own return.** The partner takes the determined share into their own return as business income (trade or self-employed), adds any other income, and from there follows germany-income-tax: special expenses, tariff, surcharge, church tax. The partner does not recompute the share; if it is wrong, the determination notice is what gets challenged.
 
 **Step 3: trade tax and the § 35 credit.** A commercial partnership pays trade tax itself (§ 5 GewStG; see de-trade-tax). Its trade income starts from the profit fixed in Step 1, Sondervergütungen and special items included (§ 7 GewStG). A partner's share of profit from another partnership is taken out again (§ 9 no. 2 GewStG), because that partnership pays its own trade tax. The base amount, the trade tax actually payable and each partner's share of both are fixed in the same determination (§ 35(2) sentence 1 and (4) EStG). Each partner's share follows the general profit-sharing key, ignoring advance shares (§ 35(2) sentence 2). The BMF letter on § 35 says the same for Sondervergütungen and for results of special and supplementary balance sheets (BMF 3 November 2016, Rn. 22), and a partner that cannot use the credit, such as a GmbH general partner, still takes its key share (Rn. 24). A managing partner's Sondervergütung therefore gives no extra credit. The partner's credit is the lowest of: 4 × share of the base amount; the tax on trade income in the partner's own return (positive trade income / all positive income × tariff tax, § 35(1) sentence 2); the share of trade tax actually payable. Unused credit is lost.
 
-**Step 4: losses of limited partners (§ 15a EStG).** A limited partner's loss share cannot be set against other income, or carried back or forward under § 10d, so far as it creates or increases a negative capital account. Exception: losses up to the amount by which the registered liability exceeds the contribution actually paid, if the partner is entered in the commercial register, the liability is proven, and a claim under it is not excluded by contract or unlikely (§ 15a(1) sentences 2 and 3). The blocked loss is only set against later profits from the same partnership (§ 15a(2)). It is fixed each year in a separate notice (§ 15a(4)). Withdrawals that create or increase a negative capital account are added as profit, up to the losses that were deductible in that year and the ten years before (§ 15a(3)). The same rule applies to atypical silent partners and to GbR partners whose liability is excluded or unlikely (§ 15a(5)).
+**Step 4: losses of limited partners (§ 15a EStG).** A limited partner's loss share cannot be set against other income, or carried back or forward under § 10d, so far as it creates or increases a negative capital account. Exception: losses up to the amount by which the registered liability exceeds the contribution actually paid, if the partner is entered in the commercial register, the liability is proven, and a claim under it is not excluded by contract or unlikely (§ 15a(1) sentences 2 and 3). The blocked loss is only set against later profits from the same partnership (§ 15a(2)). It is fixed each year in a separate notice (§ 15a(4)). Withdrawals that create or increase a negative capital account are added as profit only to the extent they are not covered by qualifying outside liability that exists or arises because of those withdrawals under § 15a(1) sentence 2, subject to its register, proof and genuine-exposure conditions. The add-back is capped at the losses deductible in that year and the ten years before (§ 15a(3)). The same rule applies to atypical silent partners and to GbR partners whose liability is excluded or unlikely (§ 15a(5)).
 
-**Step 5: the retained-profits option (§ 34a EStG), in summary.** A partner whose profit is computed from balance sheets (§ 4(1) or § 5) and whose share is over 10% or over EUR 10,000 may apply, per partnership share and per year, for profit left in the business to be taxed at 28.25% in 2026 instead of the tariff. Profit left in = profit less the positive balance of withdrawals over contributions, plus trade tax (§ 34a(2)). When later withdrawals exceed later profits, the amount fixed as liable to recapture is taxed at 25% (§ 34a(4)). The surcharge applies to both. The calculation is not set out here: refer.
+**Step 5: the retained-profits option (§ 34a EStG), in summary.** A partner whose profit is computed from balance sheets (§ 4(1) or § 5) and whose share is over 10% or over EUR 10,000 may apply, per partnership share and per year, for profit left in the business to be taxed at 28.25% in 2026 instead of the tariff. Profit left in = profit less the positive balance of withdrawals over contributions, plus trade tax (§ 34a(2)). Exclude withdrawals for the income tax under § 34a(1) sentence 1 and its related solidarity surcharge; withdrawals are deemed used first for these taxes up to their amount (§ 34a(2) sentences 2–3). When later withdrawals exceed later profits, the amount fixed as liable to recapture is taxed at 25% (§ 34a(4)). The surcharge applies to both. The calculation is not set out here: refer.
 
 ### Part 2: the year of moving
 
@@ -98,7 +99,7 @@ See also, and do not repeat here:
 
 **Step 4: the amount added (§ 32b(2)).** Foreign income is computed under German rules: profit or surplus, not gross receipts. For foreign pay, the EUR 1,230 employee lump sum is deducted only to the extent it was not already deducted against German pay, and actual Werbungskosten only so far as all Werbungskosten together exceed the lump sum (§ 32b(2) sentence 2 (a) and (b)). Extraordinary income in it counts at one fifth. Foreign losses lower the rate and can bring it to zero (EStH 2025, H 32b "Ausländische Verluste"). Contributions to the Swiss AHV do not reduce the amount added (same, citing BFH 18 April 2012).
 
-**Step 5: the tax.** Tariff tax on (taxable income + amount added), divided by that sum, cut to four decimal places of a percent = special rate. Special rate × taxable income, rounded down = income tax. Then the surcharge and church tax on that tax (de-income-tax).
+**Step 5: the tax.** Tariff tax on (taxable income + amount added), divided by that sum, cut to four decimal places of a percent = special rate. Special rate × taxable income, rounded down = income tax. Then the surcharge and church tax on that tax (germany-income-tax).
 
 **Joint assessment in the year of moving.** Spouses may choose it if both were fully liable and not permanently separated at some time in the year (§ 26(1) EStG). If both move together, the year qualifies.
 
@@ -110,14 +111,14 @@ See also, and do not repeat here:
 | Partnership return deadline, own preparation | Seven months after year end (§ 149(2) AO, applied by § 181(1) AO): 31 July 2027 is a Saturday, so Monday 2 August 2027 (§ 108(3) AO) |
 | Partnership return deadline, tax adviser | Last day of February of the second year after: 29 February 2028 (§ 149(3) no. 5 AO). The office can ask for it earlier (§ 149(4) AO) |
 | Trade tax return of a commercial partnership | Same deadlines (§ 149(3) no. 3 AO); see de-trade-tax |
-| Partner's own return | Deadlines in de-income-tax (2 August 2027, or 29 February 2028 with an adviser) |
+| Partner's own return | Deadlines in germany-income-tax (2 August 2027, or 29 February 2028 with an adviser) |
 | Changes flow through | A change to the determination changes the partner's assessment; a change to profit changes the trade tax base amount notice (§ 35b(1) GewStG) |
-| Year of moving | One return for the whole year, on the normal deadlines in de-income-tax. Foreign pay of the other period goes on Anlage N-AUS (de-employee-income-tax). Arrival and departure dates and foreign income must be declared |
+| Year of moving | One return for the whole year, on the normal deadlines in germany-income-tax. Foreign pay of the other period goes on Anlage N-AUS (de-employee-income-tax). Arrival and departure dates and foreign income must be declared |
 
 ## Penalties and interest
 
 - **Late partnership return (§ 152(6) and (7) AO).** The late-filing surcharge rules for tax returns apply. Amount: 0.0625% of the positive sum of the determined income for each started month late, at least EUR 25 a month, rounded down to whole euros, at most EUR 25,000 (§ 152(10) AO). It must be set if the return is not filed within 14 months after the end of the year (for 2026: by 29 February 2028), unless the deadline was extended (§ 152(2) and (3) no. 1 AO, applied by § 152(6)). The nil-tax let-outs of § 152(3) nos. 2 and 3 do not apply to this return. It is set first against the partnership if it has legal capacity (§ 152(4) sentence 3 AO).
-- **Partner's own return.** Late filing, interest (0.15% a month from 1 April 2028) and late payment: see de-income-tax.
+- **Partner's own return.** Late filing, interest (0.15% a month from 1 April 2028) and late payment: see germany-income-tax.
 - **Interest is charged on the partner, not the partnership.** The determination sets no tax, so § 233a AO interest runs only on each partner's income tax.
 - **Wrong figures.** Tax evasion (§ 370 AO) and reckless understatement (§ 378 AO): refer.
 
@@ -218,7 +219,7 @@ expected:
 ## Ask the client first
 
 1. **Partners:** the partnership agreement's profit-sharing key, any advance shares, and every payment the partnership made to each partner (pay, interest, rent). This decides the share, the Sondervergütungen and the § 35 split.
-2. **Partners:** what the partnership does and who manages it. A commercial side line or a GmbH as sole liable partner makes the whole partnership commercial and liable to trade tax.
+2. **Partners:** what the partnership does, who manages it, whether own commercial and professional activities are separable, annual net receipts of each and total net receipts, and whether any commercial income instead comes from a participation. These decide the two-gate exception and separate participation rule. For commercial imprinting, identify every personally liable partner and everyone authorised to manage.
 3. **Limited partners with a loss:** the capital account at year end, the registered liability and the contribution actually paid (§ 15a).
 4. **Year of moving:** the exact date the German home was taken up or given up, and where the person lived before or after.
 5. **Year of moving:** all foreign income of the other months, by type and amount, and any foreign income in the resident months that a treaty exempts (and where the property or establishment is).
@@ -254,29 +255,12 @@ expected:
 | BMF letter on Vorsorgeaufwendungen, Rn. 199 (contributions linked to tax-free pay), Amtliches Einkommensteuer-Handbuch 2025, Anhang 1a II | https://esth.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-01a/II/inhalt.html | 2026-10-23 |
 | EStG § 10 (special expenses, § 10(2) sentence 1 no. 1) | https://www.gesetze-im-internet.de/estg/__10.html | 2026-10-23 |
 | ELSTER, help for the 2025 determination return (ESt 1 B, Anlage FB, FE-G, FE-S) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_fein_2025 | 2026-10-23 |
+| BMF EStH 2025 H 15.8(5), judicial two-gate de minimis interpretation, losses and separate participation-income limb | https://grsth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/II-Einkommen-2-24b/8-Die-einzelnen-Einkunftsarten-13-24b/b-Gewerbebetrieb-15-17/Paragraf-15/paragraf-15.html | 2026-10-29 |
+| BFH VIII R 6/12, separability and inclusive net-receipt gates | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765 | 2026-10-29 |
+| BFH IV R 42/19, B.III.3, threshold retained for both gains and losses | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/STRE202210200/ | 2026-10-29 |
 
 Not yet confirmed: the 2026 forms for the determination return (the ELSTER guide read is for 2025; the 2026 one is not yet published); the rounding of the special rate rests on the official example in the 2025 handbook, not on the statute; whether foreign social security contributions paid in the months before arrival or after departure, on pay not subject to German tax, are special expenses in the year of moving (§ 10(2) sentence 1 no. 1 EStG speaks of tax-free income; no official text read applies it to the § 32b(1) no. 2 case); a GmbH general partner's liability fee would be its Sondervergütung and add to trade income, but Example 1 assumes none.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-partners-and-part-year` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-partners-and-part-year. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-partners-and-part-year` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-partners-and-part-year. If neither is available, confirm every figure against the official source pages cited above before relying on it.

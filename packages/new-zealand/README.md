@@ -7,8 +7,8 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `new-zealand-crypto-tax.md`
-4. `new-zealand-gst.md`
+3. `README.md`
+4. `new-zealand-crypto-tax.md`
 5. `nz-acc-levies.md`
 6. `nz-capital-gains.md`
 7. `nz-gst-return.md`

@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Tunisia 
 jurisdiction: TN
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Tunisia Company Formation & Entity Choice
@@ -25,21 +24,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Annual financial statements** — Companies must keep accounts under Tunisian accounting standards and file annual financial statements with the tax return  _(Système Comptable des Entreprises (Tunisian Accounting System); Code des Sociétés Commerciales — https://taxsummaries.pwc.com/tunisia/corporate/tax-administration)_
 - **Annual corporate tax filing** — File annual IS return by 25 March (25 June for audited companies) and pay advance instalments during the year  _(IRPP-IS Code (CIRPPIS) — tax administration provisions — https://taxsummaries.pwc.com/tunisia/corporate/tax-administration)_
 - **Statutory audit requirement** — A commissaire aux comptes (statutory auditor) is required for SAs and for companies exceeding size thresholds ((approx — confirm thresholds))  _(Code des Sociétés Commerciales (Commercial Companies Code))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "EE"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Estonia VAT return (KMD and KMD INF)
@@ -300,24 +297,6 @@ Source: [ETCB, Changes in the Estonian Value Added Tax Act](https://www.emta.ee/
 - [ ] OSS or IOSS supplies kept off the KMD.
 - [ ] Line 12 or 13 reconciled to the ledger; refund application made if wanted.
 - [ ] Filed and paid by the 20th of the following month.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

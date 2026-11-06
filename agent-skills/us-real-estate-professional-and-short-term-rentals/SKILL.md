@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-10-03"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Rental losses, real estate professional status and the short-term rental rule (US federal)
@@ -221,24 +218,6 @@ The regulation lets participation be shown "by any reasonable means". Contempora
 - Rev. Proc. 2011-34 (late § 1.469-9(g) election relief): https://www.irs.gov/pub/irs-drop/rp-11-34.pdf
 - Rev. Proc. 2025-32 (2026 inflation adjustments): https://www.irs.gov/pub/irs-drop/rp-25-32.pdf
 - Public Law 119-21 (One Big Beautiful Bill Act), govinfo.gov: https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

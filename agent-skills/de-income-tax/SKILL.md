@@ -1,262 +1,446 @@
 ---
 name: de-income-tax
-description: "Use this skill to turn a German self-employed person's year of bank transactions into profit (Anlage EÜR) and the 2026 income tax, for a Freiberufler (Anlage S) or a sole trader (Anlage G) resident in Germany. Tax year 2026, filed in 2027. Covers sorting receipts and costs, the § 4(5) EStG limits (entertainment 70%, gifts EUR 50, home office EUR 6 a day up to EUR 1,260), cars, low-value assets (EUR 800), depreciation, § 7g, the § 19 UStG small-business limits (EUR 25,000 / 100,000), the 2026 tariff, solidarity surcharge, church tax, the § 35 trade tax credit, prepayments, deadlines and penalties. Trigger on: Einkommensteuer Selbständige, Anlage EÜR, Betriebsausgaben, Bewirtung, Arbeitszimmer, GWG, Vorauszahlungen, Gewerbesteuer Anrechnung, Freiberufler tax. Out of scope: employees (de-employee-income-tax), non-residents (de-non-resident-tax), trade tax computation (de-trade-tax), companies (de-corporate-tax), partnerships."
+description: "Delaware Individual Income Tax Return (Form PIT-RES) for sole proprietors and single-member LLCs. Covers the seven-bracket graduated system (0%–6.6%), Delaware standard deduction, modifications to federal AGI, and personal credits. Trigger: taxpayer is a Delaware resident with gross income exceeding filing thresholds."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/de-income-tax"
-  jurisdiction: "DE"
+  jurisdiction: "US-DE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-16"
 ---
 
-# Germany: income tax for the self-employed, from bank statement to tax, tax year 2026
+# Delaware individual income tax (Form PIT-RES / PIT-NON), tax year 2026
 
-This skill takes one self-employed person's business transactions for 2026, sorts them into the cash-basis profit statement (Einnahmen-Überschuss-Rechnung, EÜR), and works out the income tax, solidarity surcharge and church tax. It is for the 2026 return, filed in 2027.
+## Scope and who this is for
 
-See also, and do not repeat here:
+This skill covers the Delaware personal income tax on individuals under Title 30, Chapter 11 of the Delaware Code:
 
-- **de-einkommensteuer-freelancer**: the full method for Freiberufler and traders (EÜR or books, losses, the 30% and 25% flat expense rates for writers and teachers, 2025 figures for returns filed now).
-- **de-trade-tax**: trade tax (Gewerbesteuer), add-backs, the municipal multiplier.
-- **de-estimated-tax**: planning prepayments.
-- **de-employee-income-tax**: wages, Werbungskosten, child allowances against Kindergeld, extraordinary burdens.
-- **de-non-resident-tax**: a person who does not live in Germany but has German business income.
-- **de-social-contributions**: contribution rates for the self-employed.
-- **germany-bookkeeping** and **germany-vat-return**: records, asset pools and VAT returns.
+- **Full-year residents** file Form PIT-RES.
+- **Nonresidents** with Delaware-source income file Form PIT-NON.
+- **Part-year residents** choose either form (see the method, step 2).
 
-## Who this applies to
+It is written for **tax year 2026** (returns due 30 April 2027). The section "Tax year 2025 returns" covers **2025 returns** that are still open on extension until 15 October 2026.
 
-- **In scope.** An individual with a residence or habitual abode in Germany, taxed on worldwide income (§ 1(1) EStG), who earns profit from self-employed work (§ 18 EStG, Anlage S) or a trade (§ 15 EStG, Anlage G), and works out profit by the cash method (§ 4(3) EStG). Single or jointly assessed with a spouse.
-- **Freiberufler or trade.** Only a trade pays trade tax and gets the § 35 credit. The named professions in § 18(1) no. 1 EStG (doctors, lawyers, engineers, architects, tax advisers, journalists, translators and similar) and scientific, artistic, writing and teaching work are Freiberufler. Everything else run for profit is a trade (§ 15(2) EStG). Unclear cases: refer (see de-einkommensteuer-freelancer).
-- **Cash method or books.** A trader must keep books once the tax office gives notice after turnover over EUR 800,000 or trade profit over EUR 80,000 in a year (§ 141 AO). A Freiberufler can always use the cash method. Books are out of scope here.
-- **Who must file.** Without wages, anyone whose total income is above the basic allowance (twice it for spouses) (§ 56 EStDV). With business income the return and the EÜR must be sent electronically (§ 25(4) EStG, § 60(4) EStDV).
-- **Out of scope.** Companies (GmbH, UG): de-corporate-tax. Partnerships (GbR, OHG, KG, PartG), whose profit is fixed at partnership level. Non-residents with German business income: de-non-resident-tax. Selling or closing the business, extraordinary income (§ 34 EStG), retained profits (§ 34a EStG), foreign income and treaties.
+It does not cover:
 
-## Rates, bands and thresholds
+- Delaware's gross receipts tax, corporate income tax, or fiduciary and partnership returns.
+- City taxes. A city wage tax withheld from pay is not Delaware income tax, and the resident instructions say "DO NOT INCLUDE CITY WAGE TAX" in Delaware tax withheld. Handle any city tax separately.
 
-| Item | Rate or amount | Year | Source |
-|---|---|---|---|
-| Tariff zone 1, basic allowance (Grundfreibetrag) | Taxable income EUR 0 to 12,348: no tax | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
-| Tariff zone 2 | EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000 | 2026 | Same |
-| Tariff zone 3 | EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000 | 2026 | Same |
-| Tariff zone 4 (42%) | EUR 69,879 to 277,825: 0.42 × x − 11,135.63 | 2026 | Same |
-| Tariff zone 5 (45%) | From EUR 277,826: 0.45 × x − 19,470.38 | 2026 | Same |
-| Rounding | Taxable income x and the tax are both rounded down to whole euros | 2026 | Same, § 32a(1) sentences 1 and 6 |
-| Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5) |
-| Solidarity surcharge | 5.5% of income tax; nothing while the tax is at most EUR 20,350 (EUR 40,700 under splitting); above that, at most 11.9% of the excess | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html and https://www.gesetze-im-internet.de/solzg_1995/__4.html |
-| Church tax (members only) | 8% or 9% of income tax, by state; base ignores the § 35 credit | 2026 | https://www.gesetze-im-internet.de/estg/__51a.html; BMF booklet "Steuern von A bis Z" (Stand January 2025): "je nach Bundesland 8 oder 9 Prozent" |
-| Trade tax credit (§ 35) | 4.0 × trade tax base amount (Messbetrag), capped at the tax on trade income and at the trade tax actually payable | 2026 | https://www.gesetze-im-internet.de/estg/__35.html |
-| Trade tax allowance, base rate | EUR 24,500 off trade income (rounded down to EUR 100); base rate 3.5% | 2026 | https://www.gesetze-im-internet.de/gewstg/__11.html |
-| Trade tax multiplier floor | 200% for 2026; 280% from 2027 | 2026 | Law of 29 June 2026 (BGBl. 2026 I Nr. 197), Art. 8: in § 16(4) sentence 2 GewStG "wird die Angabe „200“ durch die Angabe „280“ ersetzt", first applied for 2027 (https://www.gesetze-im-internet.de/gewstg/__36.html, § 36(5b)). The § 16 page already shows only the 2027 wording |
-| Trade tax itself | Not a business expense | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5b)) |
-| Small business (Kleinunternehmer) | Prior-year turnover not over EUR 25,000 and current-year turnover not over EUR 100,000 | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Business entertainment (Bewirtung) | 70% deductible, with a proper receipt | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5) no. 2) |
-| Gifts to non-employees | Deductible only if the year's gifts to one person cost at most EUR 50 | 2026 | Same, § 4(5) no. 1 |
-| Home office day rate (Tagespauschale) | EUR 6 per day worked mainly at home without going to an outside place of work, max EUR 1,260 a year | 2026 | Same, § 4(5) no. 6c |
-| Home office room that is the centre of all work | Actual cost, or EUR 1,260 a year flat (one twelfth less per month not met) | 2026 | Same, § 4(5) no. 6b |
-| Home to own premises | EUR 0.38 per full km one way, per day; cap EUR 4,500 unless a car is used | 2026 | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) sentence 3 no. 4), applied by § 4(5) no. 6 EStG |
-| Meals on business trips | EUR 28 for a full day away; EUR 14 for arrival, departure, or more than 8 hours away | 2026 | Same, § 9(4a), applied by § 4(5) no. 5 EStG |
-| Business trips in a private car | EUR 0.30 per km, or the actual cost share | 2026 | BMF, 2026 Anlage EÜR instructions, line 72 (URL in Sources) |
-| Business car, private use | 1% of list price per month, only if business use is over 50% | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 4) |
-| Low-value asset (GWG) | Expensed at once if cost net of deductible VAT is at most EUR 800; register if over EUR 250 | 2026 | Same, § 6(2) |
-| Pool (Sammelposten), instead | Assets over EUR 250 up to EUR 1,000, one fifth a year over five years | 2026 | Same, § 6(2a) |
-| Computer hardware and software | Useful life of one year may be taken: full cost in the year bought, still listed on Anlage AVEÜR | 2026 | BMF, 2026 Anlage EÜR instructions, line 34, citing the BMF letter of 22 February 2022 |
-| Declining balance | Movable assets bought 1 July 2025 to 31 December 2027: up to 3 × straight-line rate, max 30% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(2)) |
-| Electric vehicles bought 1 July 2025 to 31 December 2027 | 75% in the year bought, then 10%, 5%, 5%, 3%, 2% | 2026 | Same, § 7(2a) |
-| Investment deduction (§ 7g) | Up to 50% of expected cost; profit before it not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
-| § 7g special depreciation | Up to 40% in total over the year bought and the four after | 2026 | Same, § 7g(5) |
-| Pension contributions | 100% within a cap of EUR 30,826 (EUR 61,652 joint) | 2026 | https://www.gesetze-im-internet.de/estg/__10.html (§ 10(3)); ceiling https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html |
-| Health, care and other insurance | Cap EUR 2,800 (EUR 1,900 with tax-free help towards cover, such as the Künstlersozialkasse); basic health and care cover always in full; statutory health with sick pay cut by 4% | 2026 | Same, § 10(1) no. 3 and § 10(4) |
-| Special expenses lump sum | EUR 36 (EUR 72 joint) | 2026 | https://www.gesetze-im-internet.de/estg/__10c.html |
-| Prepayments | 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 a date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |
+Official sources used throughout:
 
-## The taxable base
+- Delaware Code, Title 30, Chapter 11:
+  - residency and rates: https://delcode.delaware.gov/title30/c011/sc01/index.html
+  - residents' taxable income and credits: https://delcode.delaware.gov/title30/c011/sc02/index.html
+  - nonresidents: https://delcode.delaware.gov/title30/c011/sc03/index.html
+  - returns and estimated tax: https://delcode.delaware.gov/title30/c011/sc08/index.html
+- Penalties and interest, Title 30, Chapter 5: https://delcode.delaware.gov/title30/c005/sc03/index.html
+- 2025 PIT-RES instructions: https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf
+- 2025 PIT-NON instructions: https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-NON_Instructions_2025-01.pdf
+- 2026 estimated tax (PIT-EST) instructions: https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-EST_Instructions_2026-01.pdf
 
-**Step 1: profit (Anlage EÜR).** Receipts when received, costs when paid (§ 11 EStG). Regular payments made shortly before or after the year end count in the year they belong to.
-
-| On the bank statement | Treatment |
-|---|---|
-| Client payments, fees (Honorar), platform payouts (Stripe, PayPal) | Receipts. Normal VAT scheme: the VAT collected is also a receipt and VAT paid to the tax office an expense. Kleinunternehmer: the gross amount |
-| Rent for business premises, office supplies, software, advertising, bank fees, adviser fees, chamber dues, business liability insurance | Expense in full |
-| Restaurant with a client (Bewirtung) | 70% of the reasonable cost. Needs a receipt naming place, date, guests and reason, with the till receipt. Input VAT is still fully deductible |
-| Gifts to clients | In full if the year's gifts to that person cost EUR 50 or less; above that, nothing at all. Record each recipient |
-| Rent of the home, home office | Day rate EUR 6 per day worked mainly at home, max EUR 1,260. Room costs only if the room is the centre of all work |
-| Fuel, car costs | Depends on the car method; see below. No method confirmed: deduct nothing yet |
-| Laptop, phone, furniture | Over EUR 800 net: depreciate (computers and software: one year allowed). EUR 800 or less: expense now or pool |
-| Health, care, pension insurance (Krankenkasse, DRV, KSK) | Not a business expense. Special expense in Step 2 |
-| Income tax, surcharge, church tax, prepayments | Never a business expense (§ 12 no. 3 EStG). Church tax paid is a special expense in Step 2 (§ 10(1) no. 4 EStG) |
-| Trade tax (Gewerbesteuer) | Never deductible (§ 4(5b) EStG). Records that call it an expense are wrong for any year since 2008 |
-| Fines from a court or authority | Not deductible (§ 4(5) no. 8 EStG) |
-| Transfers between own accounts, loan principal, private withdrawals | Leave out. Interest on a business loan is an expense |
-| Wages, rent received, interest, dividends | Not business income. Other forms (Anlage N, V, KAP) |
-| Cash withdrawals | Ask what the cash paid for. Default: leave out |
-
-**Cars.** A car used more than 50% for business can be a business asset: all costs are expenses and private use is added back at 1% of the gross list price per month (§ 6(1) no. 4 EStG), or by logbook. A private car used for business trips: EUR 0.30 per km or the actual cost share. Trips from home to the own office count only at EUR 0.38 per km one way. Electric and hybrid cars have special rules: refer.
-
-**Phone and internet.** Deduct the business share shown by records. The employee flat rate from the wage tax guidelines is not a rule for the self-employed.
-
-**Mixed and unknown items.** Default to no deduction until the client confirms the business share.
-
-**Step 2: from profit to taxable income** (§ 2 EStG). Profit plus any other income = total income. Less special expenses: pension contributions within the cap; basic health and care cover in full; other insurance only if the cap has room; church tax paid, donations, or the EUR 36 lump sum. Less extraordinary burdens and child allowances (see de-employee-income-tax). Round down to whole euros.
-
-**Step 3: tax.** Apply the tariff (or splitting). For a trader, subtract the § 35 credit: the lowest of 4.0 × Messbetrag, the tax that falls on trade income (positive trade income / all positive income × tariff tax), and the trade tax actually payable. Unused credit is lost. Then the surcharge on the tax after the credit, and church tax on the tax before the credit (§ 51a(2) EStG). Subtract prepayments paid.
-
-**Losses.** A loss offsets other income of the same year, then goes back one year or forward without time limit (§ 10d EStG; see de-einkommensteuer-freelancer).
-
-## Deadlines and filing
-
-| Step | Rule |
-|---|---|
-| Register the business | Within one month of starting (§ 138 AO): a trade with the municipality, a Freiberufler with the tax office online |
-| Forms | Main form, Anlage S or G, Anlage EÜR with Anlage AVEÜR (one set per business), Anlage Vorsorgeaufwand, Anlage Sonderausgaben. Electronic, through ELSTER (§ 25(4) EStG, § 60(4) EStDV) |
-| Own return | Seven months after year end (§ 149(2) AO): 31 July 2027 is a Saturday, so Monday 2 August 2027 (§ 108(3) AO) |
-| Prepared by a tax adviser | Last day of February of the second year after (§ 149(3) AO): Tuesday 29 February 2028. The office can call for an earlier return with four months' notice (§ 149(4) AO) |
-| Balance due | One month after the notice (§ 36(4) EStG) |
-| Prepayments | 10 March, 10 June, 10 September, 10 December, set by notice from the last assessed tax. The office can adjust them until 15 months after year end; a rise after year end is due one month after the notice and only if at least EUR 5,000 (§ 37(3) to (5) EStG) |
-
-## Penalties and interest
-
-- **Late-filing surcharge (§ 152 AO).** May be set for any late return. Must be set if the return is not in within 14 months after year end (for 2026: after 29 February 2028), unless the deadline was extended, the tax is nil, or the tax is not more than prepayments and tax withheld. Amount: 0.25% per started month of the tax less prepayments and tax withheld, at least EUR 25 per started month, at most EUR 25,000, rounded down to euros (§ 152(5) and (10) AO).
-- **Interest (§ 233a AO).** From 15 months after year end (1 April 2028 for 2026) until the notice: 0.15% per full month, 1.8% a year (§ 238(1a) AO), on the balance rounded down to EUR 50. Refunds earn the same.
-- **Late payment (§ 240 AO).** 1% per started month on the overdue amount rounded down to EUR 50. Applies to late prepayments too.
-- **Wrong returns.** Tax evasion is a crime (§ 370 AO). Reckless understatement is an administrative offence with a fine of up to EUR 50,000 (§ 378 AO). Either case: refer.
-
-## Cross-border points
-
-- **Non-residents.** A person without a German home or habitual abode is taxed only on German income, including profit from a German permanent establishment or self-employed work done in Germany (§ 49 EStG). Use de-non-resident-tax.
-- **Foreign clients.** Fees from foreign clients for work done in Germany by a resident are German income in full. VAT on cross-border services: germany-vat-return.
-- **Foreign tax, foreign establishment, moving in or out.** Foreign tax credits are in de-non-resident-tax (§ 34c EStG). A treaty may exempt profit of a foreign establishment, which then raises the rate (§ 32b EStG): refer. Departure with shares: leaving-germany-exit-tax.
-- **§ 7g abroad.** The investment deduction needs the asset used in a German establishment (§ 7g(1) EStG).
-
-## Worked examples
-
-### Example 1: Freiberufler designer, single, normal VAT scheme
-
-Anna is a self-employed designer in Hamburg, single, no church, normal VAT scheme. 2026 fees net of VAT: EUR 72,000. Ordinary costs (software, studio share, insurance, adviser): EUR 9,000. A client dinner: EUR 400 net. A gift to one client: EUR 80. 140 days worked mainly at home without going to the studio, no separate room. All VAT she collected in 2026 she also paid over in 2026, so VAT nets to nil in the EÜR. A laptop for EUR 1,800 net. Basic health and care cover per the insurer's certificate (already net of the 4% cut): EUR 7,200. Private pension (Rürup) EUR 3,000. Prepayments paid: EUR 10,000. (Invented case.)
-
-- Dinner: 70% of 400 = EUR 280. Gift: over EUR 50, so EUR 0. Home office: 140 × 6 = EUR 840. Laptop: one-year life, EUR 1,800.
-- Profit: 72,000 − 9,000 − 280 − 0 − 840 − 1,800 = EUR 60,080.
-- Taxable income: 60,080 − 7,200 − 3,000 − 36 = EUR 49,844. Zone 3.
-- Tax: z = 3.2045; (173.10 × 3.2045 + 2,397) × 3.2045 + 1,034.87 = 10,493.59, rounded down EUR 10,493. Below EUR 20,350: no surcharge.
-- Balance: 10,493 − 10,000 = EUR 493 to pay one month after the notice.
-
-```oa-check
-name: DE Freiberufler 2026, single, profit from EÜR items, zone 3
-inputs:
-  fees: 72000
-  ordinary_costs: 9000
-  dinner: 400
-  gift: 80
-  home_days: 140
-  laptop: 1800
-  basic_cover: 7200
-  pension: 3000
-  prepaid: 10000
-steps:
-  - dinner_deductible: dinner * 0.70
-  - gift_deductible: 0
-  - home_office: min(home_days * 6, 1260)
-  - profit: fees - ordinary_costs - dinner_deductible - gift_deductible - home_office - laptop
-  - taxable: floor(profit - basic_cover - pension - 36)
-  - z: (taxable - 17799) / 10000
-  - tax: floor((173.10 * z + 2397) * z + 1034.87)
-  - balance: tax - prepaid
-expected:
-  profit: 60080
-  taxable: 49844
-  tax: 10493
-  balance: 493
-```
-
-`gift_deductible` is 0 because the EUR 80 gift is over the EUR 50 limit, so none of it counts.
-
-### Example 2: sole trader with the trade tax credit capped, church member
-
-Bernd runs an online shop in a town with a trade tax multiplier of 360%. 2026 profit EUR 95,000, his only income; no trade tax add-backs. Single, church member at 9%. Special expenses: basic health and care cover EUR 9,000, pension EUR 6,000. 2026 is his first year of trading, so no church tax or prepayments were paid in it and the EUR 36 lump sum applies. (Invented case; the multiplier is an input, each town sets its own.)
-
-- Trade tax: 95,000 − 24,500 = 70,500 × 3.5% = Messbetrag EUR 2,467.50; × 360% = EUR 8,883. Not deductible, so profit stays EUR 95,000.
-- Taxable income: 95,000 − 9,000 − 6,000 − 36 = EUR 79,964. Zone 4: 0.42 × 79,964 − 11,135.63 = 22,449.25, so EUR 22,449.
-- Credit: 4 × 2,467.50 = 9,870. Cap on trade share: all income is trade, so EUR 22,449. Cap on trade tax payable: EUR 8,883. The lowest is EUR 8,883; the other EUR 987 is lost.
-- Income tax: 22,449 − 8,883 = EUR 13,566. Below EUR 20,350: no surcharge.
-- Church tax at 9% on the tax before the credit: 9% × 22,449 = EUR 2,020.41 (state rounding rules may differ).
-
-```oa-check
-name: DE sole trader 2026, § 35 credit capped by trade tax payable, church tax base
-inputs:
-  profit: 95000
-  hebesatz: 3.60
-  basic_cover: 9000
-  pension: 6000
-steps:
-  - trade_income: floor(profit / 100) * 100
-  - messbetrag: (trade_income - 24500) * 0.035
-  - trade_tax: messbetrag * hebesatz
-  - taxable: floor(profit - basic_cover - pension - 36)
-  - tariff_tax: floor(0.42 * taxable - 11135.63)
-  - credit: min(4 * messbetrag, tariff_tax, trade_tax)
-  - income_tax: tariff_tax - credit
-  - church_tax: tariff_tax * 0.09
-expected:
-  messbetrag: 2467.50
-  trade_tax: 8883
-  taxable: 79964
-  tariff_tax: 22449
-  credit: 8883
-  income_tax: 13566
-  church_tax: 2020.41
-```
-
-In `credit`, the second term is the tax on trade income: here trade income is all the income, so the share is the whole tariff tax.
+The Division of Revenue had not published 2026 return instructions when this skill was written (25 September 2026). Where a 2026 figure comes from the statute rather than a 2026 form, this skill says so.
 
 ## Ask the client first
 
-1. What exactly is the work, and is a trade registered? This decides Anlage S or G, trade tax and the § 35 credit.
-2. VAT status: turnover in 2025 and expected in 2026, and whether the small-business rule is used. This decides gross or net figures.
-3. Home office: days worked mainly at home, and whether a separate room is the centre of all work.
-4. Car: business asset or private, business-use share, and logbook or 1% method.
-5. Health and pension cover: statutory, private or Künstlersozialkasse, and the insurer's annual certificates.
-6. Married and assessed jointly? Church member, and in which state?
+1. **Residency.**
+   - Where was the client domiciled during 2026, and did that change during the year?
+   - Did they keep a place of abode in Delaware? How many days were they in Delaware?
+   - Were they abroad for a long period (the foreign-presence exception)?
+2. **Federal return.**
+   - What is federal adjusted gross income (AGI), and which items make it up?
+   - Did they itemize federally?
+   - Did they claim the federal earned income credit?
+   - Did they place business property in service in 2026 and take bonus depreciation?
+3. **Filing status.** For a married couple: joint, separate, or combined separate? Is either spouse a nonresident?
+4. **Age and status on 31 December 2026.**
+   - Is either spouse 60 or over (pension exclusion, extra credit)?
+   - Is either spouse 65 or over, or blind (extra standard deduction)?
+   - Is the client someone else's dependent?
+5. **Retirement income.**
+   - What pensions, IRA/401(k) distributions, US military pension or Social Security did they receive?
+   - How many years has each person aged 60 or over been domiciled in Delaware?
+6. **Other-state income.** Did a Delaware resident pay income tax to another state (or DC) on the same income?
+7. **Payments already made.** Delaware withholding (not city wage tax), 2026 estimated payments, and credit carried forward from 2025.
+8. **Nonresident source income.** Which wages, business or rental income came from Delaware?
 
-## Sources
+## Residency tests (30 Del. C. § 1103)
 
-| Source | URL | Read on |
+A **resident** is an individual who either:
+
+- **(1)** is domiciled in Delaware, "to the extent of the period of such domicile"; or
+- **(2)** "maintains a place of abode in this State and spends in the aggregate **more than 183 days** of the taxable year in this State."
+
+On test (2):
+
+- Exactly 183 days is not enough.
+- The abode and the days must both be present.
+
+**Foreign-presence exception to test (1).** A domiciliary is not treated as a resident for the period if all of these hold:
+
+- they are present in a foreign country or countries for at least 495 full days in any consecutive 18-month period;
+- during those 18 months they are in Delaware for not more than 45 days;
+- they keep no permanent place of abode in Delaware where their spouse, children or parents are present for more than 45 days; and
+- they are not a US government employee (including the Armed Forces).
+
+Everyone who is not a resident is a **nonresident** (§ 1104).
+
+## The method, step by step
+
+### Step 1: Filing requirement (§ 1161; thresholds from the [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf))
+
+**A resident must file if** they are required to file a federal return, or their Delaware-modified AGI is above the thresholds in the table below. The Division prints the thresholds in each year's instructions. The 2026 table is not yet published; the 2025 table is:
+
+| 2025 threshold, by age/status (individual AGI) | Single / HoH / MFS | Joint | Claimed as a dependent |
+|---|---|---|---|
+| Under 60 | $9,400 | $15,450 | $5,250 |
+| 60 to 64 | $12,200 | $17,950 | $5,250 |
+| 65 and over, or blind | $14,700 | $20,450 | $7,750 |
+| 65 and over and blind | $17,200 | $22,950 | $10,250 |
+
+**A nonresident must file** if they had any gross income from Delaware sources.
+
+**A part-year resident must file** if they had income from any source while a resident, or Delaware-source income while a nonresident.
+
+### Step 2: Choose the return
+
+- **Full-year resident:** PIT-RES.
+- **Nonresident:** PIT-NON.
+- **Part-year resident** (§ 1125) may choose either:
+  - a **resident** return for the whole year, with the credit for tax paid to other states; or
+  - a **nonresident** return, where the resident period's income counts as Delaware-source income.
+
+  The instructions say you may prepare both and file the one that is more advantageous.
+
+The Volunteer Firefighter, Child Care and Earned Income Tax Credits cannot be taken on PIT-NON.
+
+**Spouses** (§ 1162):
+
+- If they filed separate federal returns, they must file separate Delaware returns.
+- If they filed a joint federal return, they may file joint, separate, or "combined separate" (filing status 4) in Delaware.
+- If one spouse is a resident and the other is not, they file separately unless both elect to file jointly as residents.
+
+Delaware applies **one rate schedule to every filing status.** For a two-earner couple, separate or combined separate filing is often cheaper; compare both.
+
+If spouses file separately:
+
+- both must use the same deduction method, standard or itemized; and
+- each reports their own income plus half of jointly held investment income.
+
+### Step 3: Start from federal AGI (§§ 1101, 1105)
+
+Delaware taxable income starts from **federal adjusted gross income**. Delaware adopts the Internal Revenue Code "as the same may have been or shall become effective, for any taxable year." This is rolling conformity: federal changes, including P.L. 119-21 (the One Big Beautiful Bill Act, OBBBA), apply automatically unless Delaware decouples.
+
+The Division states: "Delaware conforms with Federal Adjusted Gross Income (AGI) and with federal definition of Itemized Deductions." It also states that the OBBBA deductions for tips, overtime and car loan interest "are not defined federally as itemized deductions and will not flow through to the Delaware Personal Income Tax." Source: https://revenue.delaware.gov/tax-season-updates/
+
+The Division's page does not address the federal additional deduction for seniors. Confirm with the Division before assuming it affects Delaware.
+
+### Step 4: Additions ([§ 1106(a), (d)](https://delcode.delaware.gov/title30/c011/sc02/index.html))
+
+1. **Other states' bond interest.** Add interest on state and local bonds of states other than Delaware, and the matching mutual-fund dividends.
+2. **Oil and gas percentage depletion.** Add it back to the extent it exceeds cost depletion.
+3. **Net operating loss carryback.** Add the part of a federal carryback deduction above the $30,000 limit.
+4. **OBBBA depreciation decoupling (new for 2026).** Under HB 255 (85 Del. Laws c. 231), for individuals from 1 January 2026:
+   - Property acquired and placed in service after 31 December 2025 and before 1 January 2031, if it would otherwise get 100% expensing under OBBBA § 70301, is depreciated in Delaware under the Code "in effect immediately before the enactment of § 70301."
+   - Qualified production property (OBBBA § 70307) placed in service in the same window follows the same rule.
+   - The Division's Technical Information Memorandum 2025-2 says the TCJA schedule continues: "tax year 2026 bonus depreciation is permitted at 20%; and tax year 2027 and later bonus depreciation is 0%."
+   - Keep a separate Delaware depreciation schedule for these assets. Their Delaware basis and later gain or loss will differ from federal.
+   - The Act names only §§ 70301 and 70307. It does not decouple from the other OBBBA provisions.
+   - The 2026 PIT-RES line for this adjustment is not yet published.
+
+   Sources: https://delcode.delaware.gov/sessionlaws/ga153/chp231.shtml and https://revenuefiles.delaware.gov/2025/TIMs/HB_255_TIM.pdf
+
+### Step 5: Subtractions ([§ 1106(b)](https://delcode.delaware.gov/title30/c011/sc02/index.html))
+
+1. **US government interest.** Subtract interest on US obligations (and the matching mutual-fund dividends) that federal law exempts from state tax. Agency paper that is not a US obligation, such as Fannie Mae, is not exempt.
+2. **Social Security and Railroad Retirement benefits.** Subtract the amount included in federal AGI.
+3. **Pension exclusion, per person, for 2026** (§ 1106(b)(3)b, which applies to taxable years beginning on 1 January 2022 and ending before 1 January 2027):
+
+   **Under age 60:** the greater of:
+   - pensions received, up to **$2,000**; or
+   - a US military pension, up to **$12,500**.
+
+   **Age 60 or older:** pensions plus "eligible retirement income", up to **$12,500**. Eligible retirement income means:
+   - qualified-plan, 401(k) and 457 distributions;
+   - dividends, capital gains and interest;
+   - rental income from real property, less deductible rental expenses.
+
+   Income held by spouses as joint tenants with right of survivorship, or as tenants by the entirety, is treated as received half by each.
+
+   **Each person gets one exclusion.** An early distribution (Form 1099-R code 1, or a distribution subject to the federal early-withdrawal penalty) does not qualify.
+
+   **Domicile condition for age 60 or older.** A 2026 Act, SB 219 as amended by SA 1 (85 Del. Laws c. 426), added § 1106(b)(3)f.4. Under it, a person aged 60 or older gets this subtraction only if:
+   - they were legally domiciled in Delaware before 1 January 2027 and have been domiciled there for **at least 3 years**; or
+   - they became domiciled on or after 1 January 2027 and have been domiciled there for **at least 5 years**.
+
+   For this rule, "legally domiciled" means being a "resident individual" under § 1103 (§ 1106(b)(3)f.4.B). That includes a statutory resident under test (2): a place of abode plus more than 183 days, even without domicile in the ordinary sense.
+
+   The Act has no effective-date section, and the Code text gives no starting tax year. The 2025 instructions predate the Act, and no 2026 instructions exist yet. For a client aged 60 or over who has been domiciled in Delaware for less than 3 years, confirm with the Division before claiming the exclusion.
+
+   **From 2027** (§ 1106(b)(3)c to e):
+   - The US military pension cap rises to **$15,000** for 2027, **$20,000** for 2028, and **$25,000** for 2029 and later.
+   - People aged 60 or over get the greater of the $12,500 exclusion or the military amount.
+4. **Elderly or disabled low-income exclusion.** Available to a person over 60, or totally and permanently disabled, whose earned income is less than $2,500 **and** whose AGI does not exceed $10,000. The exclusion is $2,000.
+   - On a joint return where both spouses qualify: $4,000, if combined earned income is less than $5,000 and AGI does not exceed $20,000.
+5. **Delaware income tax refunds** included in federal AGI.
+6. **DE529 contributions**, up to $1,000 ($2,000 for a joint return).
+   - Not allowed if federal AGI is greater than $100,000, or greater than $200,000 on a joint return.
+   - Rollovers, beneficiary changes and K–12 tuition contributions do not count.
+7. **Delaware ABLE contributions**, up to $5,000 ($10,000 for a joint return).
+8. **Other items:** the work opportunity credit wage adjustment, Delaware NOL carryforwards blocked by the carryback limit, and fiduciary adjustments.
+
+The result is **Delaware AGI**.
+
+### Step 6: Deduction ([§§ 1107–1109](https://delcode.delaware.gov/title30/c011/sc02/index.html))
+
+**Standard deduction.** It is fixed in the statute and not indexed, so the 2026 amounts are the § 1108 amounts:
+
+| Filing status | Standard deduction |
+|---|---|
+| Single, head of household | $3,250 |
+| Married filing jointly | $6,500 |
+| Married filing separately (each) | $3,250 |
+
+**Additional standard deduction.** Add $2,500 for each of:
+
+- the taxpayer being 65 before the end of the year;
+- the taxpayer being blind at year end;
+- the same for a spouse, subject to the rules on a spouse's own filing.
+
+This applies only if the standard deduction is used. The maximum is $5,000 per person.
+
+**Itemized deductions.** The client may itemize in Delaware even if they took the federal standard deduction. Start from the federal itemized deductions, then:
+
+- **remove** Delaware income tax;
+- **remove** other states' income tax claimed as a credit under § 1111;
+- **add** the self-employed health insurance not deducted federally, subject to the conditions in § 1109(a)(2)b;
+- **add** union dues up to $500 where not deducted federally.
+
+Spouses who both must file may itemize only if both elect to.
+
+**Delaware AGI minus the deduction = Delaware taxable income.**
+
+### Step 7: Tax ([§ 1102(a)(14)](https://delcode.delaware.gov/title30/c011/sc01/index.html): rates for taxable years beginning after 31 December 2013)
+
+| Taxable income | Rate on the slice |
+|---|---|
+| $0 – $2,000 | 0% |
+| over $2,000 – $5,000 | 2.2% |
+| over $5,000 – $10,000 | 3.9% |
+| over $10,000 – $20,000 | 4.8% |
+| over $20,000 – $25,000 | 5.2% |
+| over $25,000 – $60,000 | 5.55% |
+| over $60,000 | 6.6% |
+
+**Which method to use:**
+
+- **Below $60,000:** use the Division's tax table (§ 1102(d)). It works in $50 bands, so it can differ by a few dollars from the formula.
+- **$60,000 or more:** tax = **$2,943.50** plus 6.6% of the excess over $60,000. The $2,943.50 is the tax on the first $60,000 from the published tax schedule. Note that the 2026 PIT-EST worksheet prints this figure as $2,943.00; the statute and rate schedule give $2,943.50.
+
+**Cumulative tax at each bracket top:**
+
+| At | Tax |
+|---|---|
+| $5,000 | $66 |
+| $10,000 | $261 |
+| $20,000 | $741 |
+| $25,000 | $1,001 |
+| $60,000 | $2,943.50 |
+
+**No 2026 rate change is in the Code.** Bills to add higher brackets were introduced in the 2025–2026 session, but § 1102 as published on delcode.delaware.gov still shows paragraph (a)(14) as the current schedule. Re-check § 1102 before filing if the client has income well above $60,000.
+
+**Lump-sum distributions** have a separate tax (§ 1102(b), Form PIT-STC). Refer these (see "When to refuse or refer").
+
+### Step 8: Credits ([§§ 1110–1117](https://delcode.delaware.gov/title30/c011/sc02/index.html))
+
+- **Personal credit (§ 1110):**
+  - $110 for each personal exemption the client would be entitled to federally: themselves, a spouse on a joint return, and each dependent.
+  - The instructions confirm it is still allowed "even though you do not recognize personal exemptions on your federal return."
+  - Add an extra $110 for each person aged 60 or over.
+  - A person claimed as someone else's dependent gets no personal credit.
+  - The credit cannot exceed the tax.
+- **Credit for tax paid to another state (§ 1111).** Residents only; covers income taxed by another state or DC.
+  - It is limited to Delaware tax × (income from that state ÷ total taxable income).
+  - Attach a signed copy of the other state's return.
+- **Earned income tax credit (§ 1117).** Residents may choose either:
+  - a non-refundable credit of **20%** of the federal credit; or
+  - a refundable credit of **4.5%** of the federal credit.
+- **Volunteer firefighter credit, child and dependent care credit, and business credits (Form PIT-CRS).** These are outside the core method. Check each one's conditions in the instructions.
+
+### Step 9: Nonresidents (§§ 1121–1124)
+
+1. Compute Delaware AGI on **all** income, as if the client were a resident (PIT-NON Column A).
+2. Compute Delaware-source income (Column B):
+   - employee pay for services **(a)** rendered in Delaware, or **(b)** "attributable to employment in this State and not required to be performed elsewhere" (§ 1124(b)(1));
+   - Delaware real or tangible property;
+   - a business carried on in Delaware.
+
+   **Days worked outside Delaware for a Delaware job.** Pay for these days can be excluded only if the employer required the work to be done outside Delaware.
+   - Claim the exclusion on Form PIT-SCW: https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf
+   - The form apportions by days: Delaware-source wages = wages × (days worked in Delaware ÷ total days worked).
+   - The allowance "must be based on necessity of work outside the State of Delaware in performance of duties for the employer, as opposed to solely for the convenience of the employee."
+   - The PIT-NON instructions say: "Working from home does not qualify for an exclusion on Form PIT-SCW."
+   - The form adds one exception: a home office counts only if "working from home is a requirement of employment with your employer."
+   - Days worked from home by choice stay Delaware days.
+
+   Intangible income (interest, dividends, gains) is Delaware-source only if the property is used in a Delaware business. Military pay of a nonresident servicemember is not Delaware-source income.
+3. Compute the tax on the full taxable income with the full rate schedule. Subtract the personal credits.
+4. Multiply by the **proration decimal**: Delaware-source income ÷ Delaware AGI. The instructions say to round it to four decimal places; it cannot exceed 1.0000 or be below zero.
+
+## Figures and years at a glance ([Title 30, Chapter 11](https://delcode.delaware.gov/title30/c011/sc02/index.html))
+
+| Item | 2026 | 2025 | Source |
+|---|---|---|---|
+| Top rate | 6.6% over $60,000 | same | § 1102(a)(14) |
+| Standard deduction (single / joint) | $3,250 / $6,500 | same | § 1108 |
+| Additional standard deduction (65+ or blind) | $2,500 each | same | § 1108(b) |
+| Personal credit | $110 per exemption, plus $110 for 60+ | same | § 1110 |
+| Pension exclusion, under 60 | $2,000 (US military pension: $12,500) | same | § 1106(b)(3)b |
+| Pension exclusion, 60+ | $12,500 (domicile condition, see step 5) | $12,500 | § 1106(b)(3)b, f.4 |
+| Bonus depreciation, individuals | 20% (TCJA schedule), not OBBBA 100% | follows federal | HB 255; Technical Information Memorandum 2025-2 |
+| Estimated tax required if tax less credits exceeds | $800 | same | § 1169 |
+| Interest on late payment | 0.5% per month | same | § 533 |
+
+## Boundary and exception table ([§ 1103](https://delcode.delaware.gov/title30/c011/sc01/index.html))
+
+| Situation | Rule | Result |
 |---|---|---|
-| EStG § 2 (order from income to taxable income) | https://www.gesetze-im-internet.de/estg/__2.html | 2026-10-23 |
-| EStG § 4 (§ 4(5) limits, home office, trade tax not deductible) | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-23 |
-| EStG § 6 (EUR 800, pool, 1% car rule) | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-23 |
-| EStG § 7 (declining balance 30%, electric vehicles) | https://www.gesetze-im-internet.de/estg/__7.html | 2026-10-23 |
-| EStG § 7g (investment deduction) | https://www.gesetze-im-internet.de/estg/__7g.html | 2026-10-23 |
-| EStG § 9 (EUR 0.38 per km, meal rates) | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-23 |
-| EStG § 10 (special expenses, caps) | https://www.gesetze-im-internet.de/estg/__10.html | 2026-10-23 |
-| EStG § 10c (lump sum EUR 36) | https://www.gesetze-im-internet.de/estg/__10c.html | 2026-10-23 |
-| EStG § 10d (losses) | https://www.gesetze-im-internet.de/estg/__10d.html | 2026-10-23 |
-| EStG § 11 (cash basis, ten-day rule) | https://www.gesetze-im-internet.de/estg/__11.html | 2026-10-23 |
-| EStG § 12 (personal taxes not deductible) | https://www.gesetze-im-internet.de/estg/__12.html | 2026-10-23 |
-| EStG §§ 15, 18 (trade, self-employed work) | https://www.gesetze-im-internet.de/estg/__18.html | 2026-10-23 |
-| EStG § 25 (electronic filing) | https://www.gesetze-im-internet.de/estg/__25.html | 2026-10-23 |
-| EStG § 32a (2026 tariff) | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-23 |
-| EStG § 35 (trade tax credit) | https://www.gesetze-im-internet.de/estg/__35.html | 2026-10-23 |
-| EStG § 36 (payment of balance) | https://www.gesetze-im-internet.de/estg/__36.html | 2026-10-23 |
-| EStG § 37 (prepayments) | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-23 |
-| EStG § 51a (church tax base) | https://www.gesetze-im-internet.de/estg/__51a.html | 2026-10-23 |
-| EStDV §§ 56, 60 (duty to file, EÜR electronically) | https://www.gesetze-im-internet.de/estdv_1955/__56.html | 2026-10-23 |
-| GewStG § 11 (EUR 24,500, 3.5%) | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-10-23 |
-| GewStG §§ 16, 36 (multiplier floor 280% only from 2027) | https://www.gesetze-im-internet.de/gewstg/__36.html | 2026-10-23 |
-| BGBl. 2026 I Nr. 197, law of 29 June 2026, Art. 8 (floor 200 to 280) | https://www.recht.bund.de/bgbl/1/2026/197/VO.html | 2026-10-23 |
-| UStG § 19 (EUR 25,000 / 100,000) | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-23 |
-| SolzG §§ 3, 4 (EUR 20,350 / 40,700, 5.5%, 11.9%) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |
-| AO §§ 108, 138, 141, 149 (deadlines, registration, books) | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-10-23 |
-| AO § 152 (late-filing surcharge) | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-23 |
-| AO §§ 233a, 238 (interest 0.15% a month) | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-10-23 |
-| AO § 240 (late payment 1%) | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-23 |
-| AO §§ 370, 378 (evasion, reckless understatement, fine up to EUR 50,000) | https://www.gesetze-im-internet.de/ao_1977/__378.html | 2026-10-23 |
-| EStG § 49 (German income of non-residents) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |
-| SVBezGrV 2026 § 4 (miners' pension ceiling EUR 124,800) | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-23 |
-| BMF, Anlage EÜR 2026 form and instructions (letter of 1 September 2026) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
-| BMF booklet "Steuern von A bis Z" (Stand January 2025; church tax 8 or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-23 |
+| Abode in Delaware, domiciled elsewhere, exactly 183 days in Delaware | Statutory residency needs **more than 183 days** | Nonresident |
+| Same, 184 days | More than 183 days, with an abode | Resident for the whole year |
+| Domiciliary abroad 495+ days in 18 months, 45 or fewer days in Delaware, no family abode in use over 45 days, not a US employee | § 1103(1) exception | Not a resident for that period |
+| Taxable income exactly $60,000 | Instructions: "$60,000 or greater, use the tax schedule" | $2,943.50 |
+| Expected tax after withholding and credits exactly $800 | A declaration is required only if it "can reasonably be expected to exceed $800" | No estimated tax declaration required |
+| Turns 60 on 31 December 2026 | Age is tested at year end ("60 years of age or over on December 31") | 60+ exclusion and extra $110 credit apply, if the domicile condition is met |
+| Turns 65 on 31 December 2026 | § 1108(b): "attained the age of 65 before the close of the taxable year" | Extra $2,500, standard deduction only |
+| Under 60 with an early IRA distribution (1099-R code 1) | Not a qualifying pension | No exclusion for that distribution |
+| DE529 contribution, single filer with federal AGI just over $100,000 | Denied if AGI is "greater than $100,000" | No subtraction |
+| Nonresident spouse of a resident | § 1162(a)(4) | Separate returns unless both elect to file jointly as residents |
+| 2026 equipment, 100% bonus depreciation federally | HB 255, § 1106(d) | Delaware allows 20% bonus plus regular depreciation; add back the difference |
+| Nonresident with a Delaware job, working some days at home by choice | § 1124(b)(1)b; the PIT-NON instructions say "Working from home does not qualify for an exclusion on Form PIT-SCW" ([instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-NON_Instructions_2025-01.pdf)) | Home days remain Delaware-source wages |
+| Same, but the employer requires out-of-state client work on some days | [Form PIT-SCW](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf): allowance for days worked outside Delaware out of necessity | Exclude wages × (required days outside ÷ total days worked) |
+| City wage tax withheld | Not Delaware tax | Leave it out of Delaware tax withheld |
 
-Not yet confirmed: which states charge 8% and which 9% church tax, and their rounding (state church tax rules, not on a federal page); the one-year life for computers rests on a BMF letter of 22 February 2022 as cited in the 2026 EÜR instructions, not on the statute; the EUR 0.30 per km rate for business trips rests on the same instructions; the 2026 main form and Anlage S and G line numbers (ELSTER's 2026 guide is not yet published).
+## Worked cases (tax year 2026; rates from [§ 1102](https://delcode.delaware.gov/title30/c011/sc01/index.html))
+
+**Case A: single resident, wages only.**
+- Federal AGI = wages $85,000; no modifications. Delaware AGI = $85,000.
+- Standard deduction $3,250, so taxable income = $81,750.
+- Tax = $2,943.50 + ($81,750 − $60,000) × 6.6% = $2,943.50 + $1,435.50 = $4,379.00.
+- Personal credit $110.
+- **Delaware tax = $4,269.00.**
+
+**Case B: married couple, both 67, joint return.** Both have been domiciled in Delaware for more than 3 years.
+- Federal AGI $130,000, made up of:
+  - taxable Social Security $20,000;
+  - two employer pensions of $15,000 each;
+  - jointly held interest and dividends of $80,000.
+- **Subtractions:**
+  - Social Security: $20,000.
+  - Pension exclusion: each spouse has $15,000 of pension plus $40,000 of eligible retirement income, so each is capped at $12,500. Together $25,000.
+- Delaware AGI = $130,000 − $20,000 − $25,000 = $85,000.
+- **Deduction:** $6,500 + 2 × $2,500 = $11,500. Taxable income = $73,500.
+- **Tax** = $2,943.50 + $13,500 × 6.6% = $2,943.50 + $891.00 = $3,834.50.
+- **Credits:** two personal credits plus two 60+ credits, 4 × $110 = $440.
+- **Tax = $3,394.50.**
+- Also compute combined separate (filing status 4). With one rate schedule, splitting income can lower the total.
+
+**Case C: nonresident.** Lives in Pennsylvania, works in Delaware, single, age 45.
+- Delaware wages $70,000 plus Pennsylvania-source interest $10,000, so federal AGI and Delaware AGI (Column A) = $80,000.
+- Taxable income as if resident = $80,000 − $3,250 = $76,750.
+- Tax = $2,943.50 + $16,750 × 6.6% = $2,943.50 + $1,105.50 = $4,049.00. Less the personal credit $110 = $3,939.00.
+- Proration = $70,000 ÷ $80,000 = 0.8750.
+- **Delaware tax = $3,939.00 × 0.8750 = $3,446.63.**
+- The interest is not Delaware-source because it is investment income, not income from property used in a Delaware business.
+
+**Case D: sole proprietor, 2026 equipment.**
+- The client buys a $100,000 machine and places it in service in June 2026. They take 100% bonus depreciation federally, deducting $100,000.
+- **Delaware:** bonus depreciation is 20%, which is $20,000. The remaining $80,000 is depreciated under the pre-OBBBA rules (regular MACRS) from 2026.
+- **Addition for 2026** = $100,000 minus the Delaware-allowed depreciation.
+- **Later years:** subtract the Delaware depreciation claimed each year until the Delaware basis is used up.
+- **On sale:** compute gain on the Delaware basis.
+
+**Case E: nonresident, some work outside Delaware** ([Form PIT-SCW](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf)).
+- Lives in Maryland and works for a Delaware employer. Wages $90,000; 240 days worked in 2026.
+- The employer required 40 days of client work in other states. The employee also worked 20 days from home by choice.
+- Only the 40 required days are excluded. The 20 home days stay Delaware days.
+- Delaware days = 240 − 40 = 200.
+- **Delaware-source wages** = $90,000 × 200 ÷ 240 = $75,000. Exclusion = $15,000.
+- If the home days were wrongly excluded too, Delaware wages would be understated by $7,500.
+
+## When to refuse or refer
+
+Refer to a Delaware-experienced professional, or the Division of Revenue (302-577-8200), for:
+
+- **Residency disputes:** domicile changes, the foreign-presence exception, or dual-resident situations.
+- **Military cases** involving the Servicemembers Civil Relief Act or the military spouse exemption (Form WTH-EXM).
+- **Lump-sum distribution tax** (Form PIT-STC).
+- **Business credits** (Form PIT-CRS), historic rehabilitation credits, and S corporation composite or nonresident-shareholder issues.
+- **Allocation for a business carried on inside and outside Delaware** (§ 1124(f)).
+- **Pension exclusion for a person aged 60 or over domiciled in Delaware for less than 3 years** (see step 5).
+- **The 2026 depreciation adjustment** before the 2026 PIT-RES instructions are published, if the amounts are large.
+- **City taxes**, including a city wage tax.
+- **Fiduciary returns, estates and trusts.**
+
+## Tax year 2025 returns (still open on extension to 15 October 2026; [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf))
+
+- **Rates, standard deduction, credits and pension exclusion amounts are the same as 2026.**
+  - The 60-or-over domicile condition in step 5 was enacted after the 2025 instructions were issued.
+  - The Act does not say whether it reaches a 2025 return. For a recent arrival aged 60 or over, confirm with the Division before claiming the exclusion.
+- **Bonus depreciation.** For individuals, Delaware's decoupling applies only to property placed in service after 31 December 2025. So 2025 PIT-RES follows the federal depreciation taken.
+- **SALT cap.** The 2025 itemized deductions follow the federal cap of $40,000 ($20,000 married filing separately). It is reduced for federal modified AGI over $500,000 ($250,000 married filing separately). Delaware income tax must still be removed from itemized deductions.
+- **Tips, overtime and car loan interest** deductions do not reduce Delaware income.
+- **Extension.** It runs to 15 October 2026 only if Form PIT-EXT was filed by 30 April 2026. "THERE IS NO EXTENSION OF TIME FOR PAYMENT OF TAX." Interest has run at 0.5% per month from 30 April 2026 on any unpaid balance.
+- **Penalty exceptions for 2025 estimated tax.** The prior-year safe harbour uses the 2024 tax, at 110% if 2024 Delaware AGI was over $150,000 ($75,000 married filing separately).
+
+## Filing and payment steps with deadlines (2026 tax year; [PIT-EST instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-EST_Instructions_2026-01.pdf))
+
+1. **Estimated tax (§§ 1169–1170; PIT-EST).**
+   - Required if 2026 tax, less withholding and credits, can reasonably be expected to exceed $800.
+   - Due dates: 30 April 2026, 15 June 2026, 15 September 2026 and 15 January 2027. Pay online at tax.delaware.gov or by paper voucher.
+   - **Underpayment penalty:** 1.5% per month on each late or short instalment.
+   - **No penalty if each instalment is paid on time and totals at least:**
+     - 90% of the 2026 tax; or
+     - 100% of the 2025 tax, or 110% if 2025 AGI exceeded $150,000 ($75,000 married filing separately).
+
+     The PIT-EST instructions test federal AGI for the previous year; the PIT-RES and PIT-UND instructions test Delaware AGI. If only one of the two is over the limit, use 110% to be safe.
+   - **No payment is required** if there was no tax liability for a full 12-month prior year.
+   - **Farmers and fishermen** have their own rule.
+   - Compute the penalty on Form PIT-UND, not federal Form 2210.
+2. **Return due 30 April 2027** (§ 1168: the 30th day of the fourth month after year end). Pay any balance by the same date.
+3. **Extension.** File PIT-EXT, with the estimated balance, by 30 April 2027. This moves the filing date, but not the payment date.
+   - The 2025 form extended filing to 15 October.
+   - Confirm the 2026 date on the 2026 PIT-EXT when it is published.
+4. **Attachments:**
+   - pages 1 and 2 of federal Form 1040 and its schedules;
+   - W-2 and 1099-R forms;
+   - the signed other-state return if claiming § 1111;
+   - Form PIT-RSA if itemizing;
+   - Form PIT-UND if a penalty is computed.
+5. **Federal changes (§ 514).** Report an IRS change, or file an amended Delaware return, within 90 days of the final federal determination or amended federal return.
+
+**Penalties and interest (Title 30, Chapter 5):**
+
+- **Late filing** (§ 534(a)): 5% of the net tax due per month or part month, up to 50%.
+- **Late payment** (§ 534(b)): 1% per month, up to 25%.
+- **Interest** (§ 533): 0.5% per month or fraction, from the original due date regardless of any extension.
+- **Accuracy-related penalty** (§ 536): 20% of the underpayment for negligence or a substantial understatement, 40% for a gross valuation misstatement.
+- Fraud penalties are separate (§ 535).
+
+## Completion checklist ([2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf))
+
+- [ ] Residency tested under both § 1103 tests, (1) and (2), with the day count recorded.
+- [ ] Correct form (PIT-RES / PIT-NON). For a part-year resident, both options compared.
+- [ ] Federal AGI taken from the final federal return. OBBBA below-the-line deductions not carried into Delaware.
+- [ ] Additions made: non-Delaware municipal interest, and the 2026 depreciation adjustment for post-2025 property.
+- [ ] Subtractions made: US interest, Social Security, the pension exclusion (per person, age and domicile checked), DE529 and ABLE within their limits.
+- [ ] Standard or itemized deduction chosen; both spouses consistent if filing separately.
+- [ ] Tax from the table (below $60,000) or the schedule ($60,000 and above).
+- [ ] Personal credits ($110 each, plus the 60+ credit). Other-state credit limited by the ratio. EITC option chosen.
+- [ ] For a married couple, joint versus combined separate compared.
+- [ ] Withholding excludes city wage tax. Estimated payments and carryforward matched to Division records.
+- [ ] PIT-UND checked if the balance due is more than 10% of the tax: the client "may owe" the penalty. Attach PIT-UND if the computed penalty is greater than zero, or if Part 3 (annualised method) is used.
+- [ ] Filed and paid by 30 April 2027, or PIT-EXT filed with payment.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ma-payroll"
   jurisdiction: "US-MA"
   tax_year: "2025"
-  last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # MA Payroll
@@ -41,7 +39,7 @@ Out of scope and deferred to other skills:
 
 - Federal payroll: deferred to the federal payroll skill (Form 941, W-2/W-3, Form 940 FUTA, federal Form 1099-NEC). This skill assumes federal payroll is handled.
 - Massachusetts corporate excise tax: deferred to ma-corporate-excise.
-- Massachusetts personal income tax for the individual filer: deferred to ma-income-tax.
+- Massachusetts personal income tax for the individual filer: deferred to morocco-professional-income-tax.
 - Multi-state withholding allocation for telecommuters not specifically involving MA residents: deferred to the federal multi-state payroll skill.
 - Massachusetts paid sick time accrual mechanics for employers with under 11 employees (unpaid sick time still required, but the accrual mechanics differ — out of scope here beyond a high-level note).
 - Workers' compensation insurance under M.G.L. c. 152 (separate compliance regime, not a tax).
@@ -441,24 +439,6 @@ This skill is a content reference for use by a credentialed reviewer. Outputs ba
 
 No part of this skill constitutes legal advice. Wage Act compliance, ABC-test analysis, and Pay Equity Act compliance are areas in which the line between tax/payroll advice and legal advice is thin; the reviewer must coordinate with employment counsel on any matter that includes a litigation, settlement, or class-action exposure.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

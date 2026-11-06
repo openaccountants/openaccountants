@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland PRSI Class S for the self-employed
@@ -181,24 +178,6 @@ expected:
 | Revenue, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
 Not yet confirmed: (1) whether Class S is deductible in computing taxable income for income tax (no source read says so either way); (2) whether pension contribution relief reduces reckonable income; (3) how the EUR 650 minimum is collected for a director whose only Class S is through PAYE and whose pay gives less than EUR 650; (4) the part-year treatment for someone awarded the State Pension (Contributory) between 66 and 70 during the year; (5) how a mid-year start or finish is treated beyond the annual floor and minimum (the law read has no pro-rating rule); (6) the full list of "prescribed relatives" in art. 94 of S.I. 312 of 1996 (taken from the DSP leaflet, not the regulation); (7) whether interest also runs on the late filing surcharge; (8) the text of arts. 81 to 84 of S.I. 312 of 1996 (para. 5 exceptions), not read; (9) the Social Welfare Bill for Budget 2027 was not enacted on 24 October 2026 and was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

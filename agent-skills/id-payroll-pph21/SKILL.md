@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "RILIA PUTRI, CA, CPA"
   reviewed_by: "RILIA PUTRI"
-  trust_label: "Checked by RILIA PUTRI"
-  review_status: "current"
 ---
 
 # ID Payroll Pph21
@@ -20,7 +17,7 @@ metadata:
 
 > **2025 changes summary (v1.1 refresh):** PPh 21 monthly withholding continues under the TER system (PP 58/2023, PMK 168/2023 — Categories A/B/C by PTKP, year-end reconciliation under Article 17 brackets). From **1 July 2024**, Indonesian-citizen employees use their **16-digit NIK as NPWP**; foreign-national employees keep the 15-digit NPWP. From **1 January 2025**, all PPh 21 filings — monthly **SPT Masa PPh 21 / e-Bupot Unifikasi** and the **1721-A1 / 1721-A2** annual slips — flow through **Coretax DJP** (the legacy DJP Online e-Bupot 21/26 desktop app is being retired). See `id-einvoice-coretax` for the Coretax workflow.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -89,7 +86,6 @@ metadata:
 | Governing law | UU PPh No. 36/2008, as amended by UU HPP No. 7/2021; PP 58/2023; PMK 168/2023 |
 | Source credit | `steevenz/id-payroll-calculator` (MIT) + `KejawenLab/PPH21` (MIT) + DJP / official regulations |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a qualified Indonesian tax consultant |
 | Skill version | 1.0 |
 
 ## Section 2 — PPh 21 progressive tax brackets (Tarif Pasal 17 UU HPP)
@@ -558,24 +554,6 @@ When in doubt:
 
 OpenAccountants — open-source accounting skills for AI
 This is not tax advice. All outputs must be reviewed by a qualified professional before filing.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,13 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `tanzania-income-tax.md`
-4. `tanzania-payroll.md`
-5. `tanzania-social-contributions.md`
-6. `tanzania-tax-optimization.md`
-7. `tanzania-vat.md`
-8. `tanzania-withholding-tax.md`
-9. `payroll-workflow-base.md`
+3. `README.md`
+4. `tanzania-income-tax.md`
+5. `tanzania-payroll.md`
+6. `tanzania-social-contributions.md`
+7. `tanzania-tax-optimization.md`
+8. `tanzania-vat.md`
+9. `tanzania-withholding-tax.md`
+10. `tz-corporate-income-tax.md`
+11. `tz-cross-border.md`
+12. `tz-transfer-pricing.md`
+13. `payroll-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

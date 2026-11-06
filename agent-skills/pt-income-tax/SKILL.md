@@ -7,14 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pt-income-tax"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Portugal: IRS for the self-employed, Category B (tax year 2026) v2.2
-
-> Source-cited draft: not reviewed by an accountant.
 
 This skill computes the annual IRS of a Portuguese resident who earns business or professional income (Category B): freelancers issuing recibos verdes, sole traders and professionals. It covers the simplified regime and organised accounts, client withholding, payments on account and IRS Jovem. The return for 2026 income is the Modelo 3 with Anexo B, filed from 1 April to 30 June 2027.
 
@@ -131,7 +127,7 @@ The current rates for both kinds of interest are in `pt-irs-employees-investment
 - **Foreign clients** do not withhold Portuguese tax. The whole IRS is then paid through payments on account and the final balance. Foreign tax withheld by a client's country is credited under the treaty; see `pt-foreign-source-treaties`.
 - **NHR and IFICI** holders: see `pt-nhr-ifici`. They cannot use IRS Jovem (art. 12-B(9)).
 - **Leaving Portugal** with crypto held in the business is treated as a sale (art. 31(18)(b)). See `portugal-crypto-tax`.
-- **VAT** on the same fees is separate. The EUR 15,000 CIVA art. 53 exemption limit also drives the withholding waiver. See `pt-vat-return`.
+- **VAT** on the same fees is separate. The EUR 15,000 CIVA art. 53 exemption limit also drives the withholding waiver. See `portugal-vat-return`.
 
 ## Worked examples
 
@@ -253,28 +249,8 @@ expected:
 
 Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); which simplified-regime coefficient applies to code 1519 (an earlier version said 0.75 as AT's position; the AT ruling read covers withholding only); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
 
-> Contributed by Ryan Duguid.
-
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

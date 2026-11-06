@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-23"
-  authored_by: "OpenAccountants team"
-  reviewed_by: "pending"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  reviewed_by: "James Power"
 ---
 
 # UK transfer pricing (TIOPA 2010 Part 4 and Part 4A), 2026

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "MC"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Monaco individual income tax and residence
@@ -123,24 +121,6 @@ expected:
 **Not yet confirmed:** estate, gift and transaction-duty computations (the earlier version's 0% direct-line/spouse and 16% unrelated-person succession rates on Monaco-situs assets were found only in secondary sources) and other-country tax applications beyond the cited French screening/routing. France and other states compute their own taxes on the relevant income; those duties require separate Guides. Those taxes are not erased by the Monaco personal-income-tax result or a residence certificate. The government page was freshly read in the normal browser on 25 October after the scripted request returned 403.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

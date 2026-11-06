@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: PK
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: financial-statements
 ---
 
 # Pakistan Financial Statements & Reporting — Skill v1.0
@@ -30,7 +31,6 @@ depends_on:
 | Audit | Companies above size thresholds require a statutory audit; small private companies may be exempt (verify) |
 | Authorities | FBR (tax); SECP (companies) |
 | Currency | PKR |
-| Quality tier | Research-verified — pending sign-off by a Pakistani practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Who prepares what (Tier 1)

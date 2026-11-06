@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-payroll"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Hungary payroll (bérszámfejtés): 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 This skill covers a Hungarian employer paying wages under an employment contract (munkaviszony). The employer withholds personal income tax and the employee's social security contribution, pays its own social contribution tax, and reports all three on one monthly return. Self-employed contributions are in `hu-social-contributions`; the self-employed income tax is in `hu-income-tax`; both still carry 2025 figures. Company tax is in `hu-corporate-tax`. This skill does not repeat them.
 
@@ -211,26 +206,6 @@ If the same household's mother were the employee, born in 1986 or later, her who
 
 Not yet confirmed: the text of Art. 1. melléklet 3. pont itself (the registration timing is taken from NAV's 08E filling guide; the annex did not load on njt.jog.gov.hu); the conditions of each szocho reduction other than the labour market entrants and the unskilled and farm jobs (read in Szocho tv. 10.-11. §); the employer's year-end tax assessment rules; the rules for fringe benefits, simplified employment and the rehabilitation contribution.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

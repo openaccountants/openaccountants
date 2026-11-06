@@ -26,7 +26,6 @@ metadata:
 | Currency | BDT (৳) |
 | Tax year | 1 July – 30 June |
 | Tax authority | National Board of Revenue (NBR); e-Return portal; TIN required |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi tax practitioner |
 | Skill version | 1.0 |
 
 ### Conservative defaults

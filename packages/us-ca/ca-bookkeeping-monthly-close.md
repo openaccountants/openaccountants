@@ -16,12 +16,14 @@ version: 0.1
 jurisdiction: US-CA
 tax_year: 2026
 last_updated: 2026-09-21
-review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "DeFiAccountant21"
+reviewed_on: 2026-11-03
+tier: 1
+domain: bookkeeping
 ---
 
 # California Bookkeeping and Monthly Close v0.1
@@ -37,7 +39,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ## What this file is
 
 This is the California companion to the universal
-[bookkeeping-workflow-base](../../foundation/bookkeeping-workflow-base.md).
+[bookkeeping-workflow-base](../../../foundation/bookkeeping-workflow-base.md).
 It supplies the California chart of accounts, management-reporting layout,
 transaction patterns, agency-control reconciliations, 2026 calendar inputs, and
 tax-return handoff rules that the base requires. The base supplies the
@@ -880,21 +882,3 @@ taking a tax position.
   handoff schedules, worked examples, and validation tests.
 
 > Contributed by DeFiAccountant21.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

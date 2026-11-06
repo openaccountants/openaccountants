@@ -1,20 +1,17 @@
 ---
 name: pt-social-contributions
 description: "Portuguese social security contributions (Segurança Social) for tax year 2026 under the Código dos Regimes Contributivos (Lei 110/2009). Covers self-employed workers (trabalhadores independentes): 21.4% (25.2% for empresários em nome individual and EIRL holders), relevant income at 70% of services and 20% of goods, the quarterly declaration and the monthly payment from the 10th to the 20th, the EUR 20 minimum, the first-12-months rule, the 4 x IAS exemption with employment and the 12 x IAS ceiling on the 2026 IAS of EUR 537.13, organised accounts, the 25% option, and contracting entities (10% or 7%). Also the headline employee and employer rates (11% and 23.75%), special rates, members of corporate bodies (MOE), employer deadlines, fines and late interest. Trigger on: 'Segurança Social independente', 'declaração trimestral', 'recibos verdes contribuições', 'entidade contratante', 'MOE gerente', 'TSU'. Out of scope: payroll computation (portugal-payroll), IRS (pt-income-tax), cross-border cover (pt-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-24
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Portugal: social security contributions (tax year 2026)
-
-> Source-cited draft: not reviewed by an accountant.
 
 This skill computes Portuguese social security contributions for 2026. Its core is the self-employed regime (trabalhadores independentes, recibos verdes). It also gives the headline rates for employees, employers and members of corporate bodies, and the duty of companies that buy most of a freelancer's work (entidades contratantes).
 
@@ -236,24 +233,4 @@ expected:
 
 Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line with the IAS, but no updated figure was found and the 2026 ISS Guia Prático still gives EUR 20.00, which this skill uses; the employer deadlines that apply during 2026 to employers not yet moved to the new reporting model under DL 127/2025 art. 5 (the old model's declaration date was not read); the regulation (Decreto Regulamentar 1-A/2011) that lists income left out of relevant income, which was read only through the ISS Guia Prático; the EUR 5 de minimis for the excess base, from the ISS Guia Prático only; the EUR 20 threshold for the annual review is in the ISS Guia Prático, not in art. 164-A; other special rates (for example very short contracts, pensioners in work, rural workers) and the contribution reductions for first jobs and long-term unemployed were not read and are left to `portugal-payroll`; EU coordination under Regulation 883/2004 (EUR-Lex did not load) is left to `pt-cross-border`.
 
-> Contributed by Ryan Duguid.
-
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

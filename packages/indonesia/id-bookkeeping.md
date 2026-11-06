@@ -4,12 +4,11 @@ description: "Use this skill whenever asked about Indonesian bookkeeping or tran
 jurisdiction: ID
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: RILIA PUTRI, CA, CPA
-reviewed_by: RILIA PUTRI
-review_status: current
-trust_label: Checked by RILIA PUTRI
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "RILIA PUTRI"
+reviewed_on: 2026-11-03
+tier: 1
+domain: bookkeeping
 ---
 
 # ID Bookkeeping
@@ -20,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This skill classifies money movements. It does NOT compute the tax. For PPh Orang Pribadi (individual) calculations see `id-income-tax`. For PPh Badan (corporate) calculations see `id-corporate-tax`. For PPN see `indonesia-vat`.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -373,21 +372,3 @@ No SPT figure leaves this skill without a numbered citation. No NPPN coefficient
 ## End of skill.
 
 *End of skill.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

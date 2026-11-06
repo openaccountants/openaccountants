@@ -4,11 +4,9 @@ description: "Qualified Opportunity Zone investing under sections 1400Z-1 and 14
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-03
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: tax-optimization
 ---
 
 # Qualified Opportunity Zone investments: deferring and excluding capital gains
@@ -268,21 +266,3 @@ If the investor holds past 1 March 2037 (10 years) and elects, basis becomes fai
 - [About Form 8997, irs.gov](https://www.irs.gov/forms-pubs/about-form-8997)
 - [Form 8997, irs.gov](https://www.irs.gov/pub/irs-pdf/f8997.pdf)
 - [Rev. Proc. 2025-32, irs.gov](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

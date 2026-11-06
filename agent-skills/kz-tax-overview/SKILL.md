@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "KZ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Kazakhstan Tax Overview
@@ -29,24 +27,6 @@ Kazakhstan operates a worldwide-income system for residents administered by the 
 - **CIT return filing deadline** — 31 March of the year following the reporting year  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/corporate/tax-administration))_
 - **Individual annual declaration deadline (where required)** — 31 March of the year following the reporting year (approx — confirm)  _(Tax Code of the Republic of Kazakhstan — https://taxsummaries.pwc.com/kazakhstan/individual/tax-administration)_
 - **New Tax Code** — A new Tax Code was signed 18 July 2025 and takes effect 1 January 2026 (VAT to 16%, progressive PIT, etc.) — does not affect tax year 2025  _(New Tax Code of the Republic of Kazakhstan (signed 18 July 2025) — https://www.ey.com/en_kz/technical/tax-alerts/kazakhstan-tax-legislation-update)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

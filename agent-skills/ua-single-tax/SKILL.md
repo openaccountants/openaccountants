@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UA"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # UA Single Tax
@@ -30,7 +28,6 @@ metadata:
 | Tax authority | Державна податкова служба (ДПС / State Tax Service) |
 | Filing portal | Електронний кабінет платника (cabinet.tax.gov.ua) |
 | Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a Ukrainian accountant/auditor |
 | Skill version | 1.0 |
 
 > **Wartime note:** A 1% → 5% increase to the military levy (військовий збір) took effect 1 Dec 2024 and is in force throughout 2026 under martial law. Figures below are as of **1 January 2026**. Fixed amounts are pinned at their 1 Jan value for the whole year and do **not** change mid-year even if the minimum/living wage rises.
@@ -149,26 +146,6 @@ A Group 3 FOP hits ₴10.09 m of income in November. Any income above the 1,167 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Rates, wage-linked amounts, and martial-law measures change frequently — confirm the current minimum wage, living wage, and military-levy status with the Державна податкова служба before relying on any figure. All outputs must be reviewed and signed off by a qualified professional (a Ukrainian accountant or auditor) before filing.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

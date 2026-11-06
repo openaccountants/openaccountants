@@ -4,10 +4,10 @@ description: Tier 2 Virginia content skill for employer payroll compliance cover
 jurisdiction: US-VA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: payroll
 ---
 
 # VA Payroll
@@ -520,21 +520,3 @@ Before producing a reviewer-facing Virginia payroll work product, confirm:
 - **R-VA-5** — Will not produce a Virginia payroll work product for a household domestic employer paying below the federal Schedule H threshold ($2,800 FICA / $1,000-quarter FUTA) unless the household has voluntarily elected coverage — refer the user to the federal Schedule H skill.  _(17. Refusal Catalogue (Virginia-specific additions to base R-US refusals))_
 - **R-VA-6** — Will not provide BPOL guidance — refer-out to `va-corporate-tax-and-bpol`.  _(17. Refusal Catalogue (Virginia-specific additions to base R-US refusals))_
 - **R-VA-7** — Will not produce a Virginia individual income tax return (Form 760) — refer-out to `va-income-tax`.  _(17. Refusal Catalogue (Virginia-specific additions to base R-US refusals))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

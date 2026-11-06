@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-DC"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # District of Columbia individual income tax (Form D-40), including sole proprietors
@@ -377,24 +374,6 @@ Client facts: a single renter aged 40, not anyone's dependent, who rented the sa
 - **D-30:** the need is considered for any business with DC-source gross income over $12,000.
 - **Estimates and interest:** the D-2210 is reviewed. The 110% prior-year route is used only if the client was a full-year DC resident in the prior year.
 - **Extension:** the FR-127 is filed with payment if a balance was expected.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "HN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Honduras Corporate Income Tax
@@ -31,24 +29,6 @@ Resident companies pay corporate income tax (ISR) at 25% of net taxable income o
 - **Branch profit remittance withholding** — 10% on profits transferred from a Honduran branch to its head office percent  _(Ley del Impuesto sobre la Renta (Income Tax Law) — https://taxsummaries.pwc.com/honduras/corporate/withholding-taxes)_
 - **Annual corporate return filing and payment deadline** — 30 April following the close of the tax year ((approx - confirm))  _(Ley del Impuesto sobre la Renta (Income Tax Law))_
 - **Advance income tax payments** — Quarterly advance payments (pagos a cuenta) are due during the year, credited against the annual ISR liability ((approx - confirm))  _(Ley del Impuesto sobre la Renta (Income Tax Law))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

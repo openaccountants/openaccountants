@@ -4,12 +4,11 @@ description: Use this skill whenever asked about Tanzania payroll processing for
 jurisdiction: TZ
 tax_year: 2026
 last_updated: 2026-07-13
-authored_by: Baraka Cassian, CPA, CA, CTA
-reviewed_by: Baraka Cassian
-review_status: current
-trust_label: Checked by Baraka Cassian
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Baraka Cassian"
+reviewed_on: 2026-11-03
+tier: 1
+domain: payroll
 ---
 
 # Tanzania Payroll
@@ -18,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **Tier 2 (research-verified) — NOT yet accountant-verified.** A small number of figures carry `[RESEARCH GAP — reviewer to confirm]` markers (notably the full sectoral minimum-wage schedule, the floating late-payment interest rate, and any NSSF wage ceiling). A licensed Tanzanian tax practitioner / accountant must reconcile those before any output is presented as final.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Baraka Cassian** on 2026-06-12.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -83,7 +82,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Key legislation | Income Tax Act (Cap. 332); NSSF Act; PSSSF Act; Vocational Education & Training Act (SDL); Workers Compensation Act |
 | Payment form | **ITX 300.01.E — Employment Taxes Payment Credit Slip** (PAYE + SDL); **NSSF/CON.5** (NSSF schedule) |
 | Filing portal | TRA online portal (IDRAS / e-filing); NSSF online; WCF online (www.wcf.go.tz) |
-| Validated by | Pending -- requires sign-off by a licensed Tanzanian tax practitioner |
 | Skill version | 0.1 |
 
 > Figures verified against TRA, NSSF and WCF official sites and PwC Worldwide Tax Summaries
@@ -545,23 +543,3 @@ Each test recomputes end-to-end. Expected values use the 2026 resident PAYE tabl
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax practitioner in Tanzania) before implementation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

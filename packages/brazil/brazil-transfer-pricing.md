@@ -5,21 +5,21 @@ version: 1.0
 jurisdiction: BR
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ariane Marrocos"
+reviewed_on: 2026-11-03
+tier: 1
+domain: transfer-pricing
 ---
 
 # Brazil Transfer Pricing
 
 ## Brasil — Preços de Transferência (TP) — Skill v1.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -246,21 +246,3 @@ Observação: outros métodos da legislação anterior — PCI, PCEx, MMA, MMR, 
 ## Aviso Legal
 
 Esta skill e seus resultados são fornecidos apenas para fins informativos e computacionais e não constituem aconselhamento tributário, jurídico ou financeiro. A Open Accountants e seus colaboradores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes do uso desta skill. Todos os resultados devem ser revisados e validados por profissional qualificado antes da entrega ou utilização.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

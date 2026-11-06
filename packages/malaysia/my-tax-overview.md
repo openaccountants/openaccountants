@@ -4,12 +4,11 @@ description: "Source-cited draft: tax overview for Malaysia (tax year 2025) — 
 jurisdiction: MY
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: MUHAMMAD HANIS MAT HUSSIN, MIA-MY
-reviewed_by: MUHAMMAD HANIS MAT HUSSIN
-review_status: current
-trust_label: Checked by MUHAMMAD HANIS MAT HUSSIN
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "MUHAMMAD HANIS MAT HUSSIN"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # Malaysia Tax Overview
@@ -28,21 +27,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Consumption tax system** — Sales and Service Tax (SST) — Malaysia has no VAT/GST (GST was abolished in 2018)  _(Sales Tax Act 2018 / Service Tax Act 2018)_
 - **Individual return deadline (employment income, Form BE)** — 30 April following the year of assessment (e-Filing typically extended to 15 May)  _([Income Tax Act 1967](https://www.pwc.com/my/en/publications/mtb/important-filing-furnishing-dates.html))_
 - **Company return deadline (Form C)** — Within 7 months after the company's financial year-end  _([Income Tax Act 1967](https://www.pwc.com/my/en/publications/mtb/important-filing-furnishing-dates.html))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
