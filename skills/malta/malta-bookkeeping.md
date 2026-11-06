@@ -1,21 +1,23 @@
 ---
 name: malta-bookkeeping
 description: "Use this skill whenever asked about bookkeeping, a chart of accounts, expense classification, asset capitalisation, depreciation against tax wear and tear, bank reconciliation, record keeping or management accounts for a Maltese company or self-employed person in 2026. Covers a recommended chart of accounts mapped to GAPSME statements, revenue and VAT recording, which expenses fail the Income Tax Act test, the S.L. 123.01 minimum years for wear and tear and the EUR 14,000 car cap, the EUR 1,160 VAT capital goods threshold, record retention (10 years Companies Act, 9 years income tax, 6 years VAT), and the GAPSME and Companies Act size tests. Trigger on: chart of accounts Malta, nominal codes, bookkeeping Malta, capitalise or expense, depreciation Malta, wear and tear, bank reconciliation, GAPSME, small company accounts Malta."
-version: 1.3
+version: 1.4
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-05
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-tier: 2
+tier: 1
+reviewed_by: Michael Cutajar
+reviewed_on: 2026-11-05
 domain: bookkeeping
 ---
 
-# Malta Bookkeeping v1.3
+# Malta Bookkeeping v1.4
 
-**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-bookkeeping.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
+**4 November audit correction scope:** that correction addressed only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-bookkeeping.md). Unchanged claims outside that ledger were not rechecked during that correction. Other stated holds and specialist questions remain unresolved.
 
 Tax year 2026. This skill is the day-to-day bookkeeping workflow. Statutory accounts, size tests and audit are in `malta-financial-statements`; individual tax in `malta-income-tax`; company tax in `mt-corporate-tax`; provisional tax in `mt-estimated-tax`; VAT in `malta-vat-return`; social security in `malta-ssc`; payroll in `malta-payroll`.
 

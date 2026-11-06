@@ -137,7 +137,7 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 ### Handover rules
 
 - One active writer per country. Before another writer starts, record a handover on the country issue with the topic, branch or PR, unfinished scope and next action. Inactivity or a merged PR alone does not transfer a country.
-- An independent review does not transfer writing. Keep author and reviewer records. Accountant review is separate and is the only way a skill becomes Accountant-reviewed.
+- An independent source review does not transfer writing. Keep author and source-reviewer records. An approved accountant publishing their own professional work records their own approval in that same PR; no second accountant is required. The public label is Approved by [name]. A maintenance assignment or AI commit under a person's identity is not professional publication.
 
 This allocation covers only the 55 jurisdictions labelled `europe` below. Ryan's Asia-Pacific and Africa allocation, Jeff's Americas allocation and Michael's Middle East accountability are unchanged. Caribbean and Middle East drafts in the #514 split are preserved contributions, not a new regional assignment. Assign Jersey or Åland work here before adding it to this table.
 
