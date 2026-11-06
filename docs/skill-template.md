@@ -163,7 +163,7 @@ A figure that belongs to another skill in the pack is linked, not restated. If a
 
 ### 9. Two worked examples that recompute, one of them a decision
 
-One simple case, one with an edge case. The number follows the shape: two for `situation-rules`, `computation` and `decision`, one for `filing-howto` and `cross-country-method`, none for `rates-card` and `router`. Each has the prose walk-through for the reader and, under it, an `oa-check` block that CI recomputes with `scripts/check-examples.py`. Where the topic invites a "which should I" question (sole trader or company, cash or accrual, register for OSS or not, monthly or quarterly), one of the two cases is that decision, worked both ways to the figure that decides it.
+One simple case, one with an edge case. The number follows the shape: two for `situation-rules`, `computation` and `decision`, one for `filing-howto`, `cross-country-method` and `rates-card`, none for `router` unless it carries rates, deadlines or worked cases. Each has the prose walk-through for the reader and, under it, an `oa-check` block that CI recomputes with `scripts/check-examples.py`. Where the topic invites a "which should I" question (sole trader or company, cash or accrual, register for OSS or not, monthly or quarterly), one of the two cases is that decision, worked both ways to the figure that decides it.
 
 ```oa-check
 name: Sole trader, profit EUR 40,000 (2026 bands)
