@@ -4,15 +4,13 @@ description: "Cyprus transfer pricing for tax year 2026: the arm's length rule i
 jurisdiction: CY
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+tier: 2
+domain: transfer-pricing
 ---
 
 # Cyprus transfer pricing (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Cyprus transfer pricing rules sit in article 33 of the Income Tax Law 118(I)/2002 (arm's length rule and documentation), article 33C (advance pricing agreements), the Income Tax (Transfer Pricing Documentation File and Advance Pricing Agreement) Regulations of 2022 (K.D.P. 273/2022), the Tax Commissioner's notice on the content of the file (K.D.P. 314/2022) and article 50Z of the Assessment and Collection of Taxes Law 4/1978 (penalties). The documentation regime applies from tax year 2022. The Income Tax (Amendment) (No. 4) Law 244(I)/2025 raised the local file thresholds from 1 January 2026. The Tax Commissioner's circulars add three things: optional simplification measures with fixed returns for persons exempt from the local file (Circular 6/2023, rates revised from tax year 2026 by Circular 5/2026), the comparable uncontrolled price (CUP) method as the expected method for financing, including back-to-back financing (Circular 7/2023), and the end of the 2017 back-to-back circular from 1 January 2022 (Circular 1/2023).
 

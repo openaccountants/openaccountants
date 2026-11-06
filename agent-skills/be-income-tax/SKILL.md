@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/be-income-tax"
   jurisdiction: "BE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Belgium: income tax for the self-employed (income 2026, assessment year 2027) v2.1
@@ -270,26 +268,6 @@ expected:
 
 Not yet confirmed: whether a royal decree under art. 162 set a different increase rate for assessment year 2027 (FPS Finance pages at financien.belgium.be were behind a human-verification check and could not be read; the rates above follow the law and the ECB rate); the Tax-on-web opening date and any administrative extension for income 2026; the deductible percentage for zero-emission cars (the art. 66, §1 text on Fisconetplus does not print it); the regional surcharge rates and autonomy factor for income 2026 (the examples assume they offset exactly); the VAPZ maximum in euro for 2026; whether art. 64 still allows declining-balance depreciation for a self-employed person in 2026.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

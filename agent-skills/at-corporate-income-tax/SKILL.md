@@ -7,14 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/at-corporate-income-tax"
   jurisdiction: "AT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Austria corporate income tax (Körperschaftsteuer): tax year 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 This skill covers how Austria taxes companies: who is liable, the rate, the minimum tax, the taxable base (losses, the participation exemption, the interest limit, group taxation), the return, prepayments, surcharges and interest, and the tax on dividends a company pays or receives. All statute text was read on RIS (the federal legal information system) on 23 October 2026, in the version in force on that day unless a row says otherwise. Tax year 2026 means the calendar year 2026, or a financial year that ends in 2026.
 
@@ -225,26 +221,6 @@ expected:
 
 Not yet confirmed: the percentages and dates in the BMF quota regulation under § 134a(5) BAO; how KESt withheld on a domestic dividend to a company holding under 10% is credited or refunded in the assessment; the minimum tax of an SE (Article 4 of Regulation (EC) No 2157/2001 was not read); the KStR 2013 guidance on §§ 9, 10, 10a and 12a, which was not read for this refresh.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `at-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/at-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `at-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/at-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

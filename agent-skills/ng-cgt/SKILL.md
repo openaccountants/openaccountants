@@ -8,17 +8,14 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Omolola Fasasi, CA"
   reviewed_by: "Omolola Fasasi"
-  trust_label: "Checked by Omolola Fasasi"
-  review_status: "current"
 ---
 
 # NG Cgt
 
 ## Nigeria — Capital Gains Tax (CGT) — Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 - **CGT rate - companies** — 0.3  _(NIGERIA TAX ACT 2025)_
 - **CGT rate - individuals** — 0% - 25%  _(NIGERIA TAX ACT 2025)_
@@ -242,24 +239,6 @@ The CGT is reported with the 2025 PIT return. If Mrs Okonkwo had reinvested ≥ 
 ## End of Skill — Nigeria CGT v1.0
 
 End of Skill — Nigeria CGT v1.0
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

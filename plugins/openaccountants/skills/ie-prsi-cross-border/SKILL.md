@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland: PRSI for posted and cross-border workers, and Class K (2026)
@@ -194,24 +192,6 @@ expected:
 Not yet confirmed: whether Class K extends past 66 for employees born on or after 1 January 1958 who have not been awarded the State Pension (Contributory) (the PRSI Employer Guide and SW74 keep employee and Class S PRSI running to 70 for them, but DSP's Class K guidance still says under 66); whether the EUR 650 minimum applies to Class K9 (SW14 and SW19 attach the self-employed footnote with the minimum to K9, but the 2005 Act sets the minimum for self-employment contributions and DSP's guidelines do not repeat it for Class K); DSP's Class K page prints blended rates of 4.0125% (2025) and 4.235% (2026), which conflict with SW14 and SW19 (4.125% and 4.2375%) and with the arithmetic of the period rates, so this skill uses SW14 and SW19; the posting period under the Ireland-UK Convention for Great Britain and Northern Ireland, since DSP's page applies the EU Regulation's 24 months to UK postings without citing the Trade and Cooperation Agreement Protocol.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -4,12 +4,11 @@ description: "Source-cited tax guide for US-FL: fl corporate income tax. Unverif
 jurisdiction: US-FL
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Rob Hoffman, EA
-reviewed_by: Rob Hoffman
-review_status: current
-trust_label: Checked by Rob Hoffman
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Rob Hoffman"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # FL Corporate Income Tax
@@ -572,21 +571,3 @@ Before signing off on an F-1120:
 - **florida-sales-and-use-tax (separate skill)** — Ch. 212, F.S. obligations for taxable sales.  _(Companion skills)_
 
 Version 0.1, pending review by a Florida-credentialed reviewer (CPA or licensed Florida attorney). Last updated 2025-11-15. Confirm the IRC conformity date and any 2025 legislative changes against the FL DOR website (floridarevenue.com/taxes/taxesfees/Pages/corporate.aspx) and the most recent F-1120 instructions before signing off on a 2025 return.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "general"
   tax_year: "2026"
   last_updated: "2026-10-12"
-  authored_by: "Michael Cutajar, CPA, ACCA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
 ---
 
 # Exit taxes when a wealthy family changes country
@@ -269,24 +266,6 @@ Reading the result. France: the French high-income contributions are not include
 - Canada: [dispositions of property for emigrants](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html); [leaving Canada (emigrants)](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html)
 - United States: [IRS, expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax)
 - United Kingdom: [HMRC RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

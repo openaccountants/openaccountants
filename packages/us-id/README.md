@@ -32,48 +32,47 @@ This package contains **federal** tax skills (which apply to all US states) plus
 22. `us-federal-section-1031-like-kind-exchange.md`
 23. `us-foreign-earned-income-2555.md`
 24. `us-foreign-tax-credit-1116.md`
-25. `us-form-1040-individual-income-tax-return.md`
-26. `us-form-1040-individual-return.md`
-27. `us-form-1041-trust-and-estate-income.md`
-28. `us-form-1065-partnership.md`
-29. `us-form-1120-c-corp.md`
-30. `us-form-5471-cfc-information.md`
-31. `us-form-5472-foreign-owned-us.md`
-32. `us-form-941-940-payroll.md`
-33. `us-gilti-fdii-beat.md`
-34. `us-hiring-your-children-and-accountable-plans.md`
-35. `us-irs-collections-and-controversy.md`
-36. `us-multi-state-residency-and-allocation.md`
-37. `us-nft-tax.md`
-38. `us-opportunity-zones.md`
-39. `us-pl-86-272-income-tax-nexus.md`
-40. `us-pte-state-matrix.md`
-41. `us-qbi-deduction.md`
-42. `us-quarterly-estimated-tax.md`
-43. `us-r-and-d-section-174-and-41.md`
-44. `us-real-estate-professional-and-short-term-rentals.md`
-45. `us-s-corp-election-decision.md`
-46. `us-sales-tax-nexus-50-state-matrix.md`
-47. `us-sales-tax.md`
-48. `us-schedule-c-and-se-computation.md`
-49. `us-section-1031-like-kind-exchange.md`
-50. `us-section-1202-qsbs.md`
-51. `us-section-179-and-bonus-depreciation.md`
-52. `us-secure-2-and-retirement-updates.md`
-53. `us-self-employed-health-insurance.md`
-54. `us-self-employed-retirement.md`
-55. `us-sole-prop-bookkeeping.md`
-56. `us-state-bonus-depreciation-conformity-matrix.md`
-57. `us-state-estimated-tax-safe-harbors-matrix.md`
-58. `us-state-formation-matrix.md`
-59. `us-state-new-hire-reporting-matrix.md`
-60. `us-state-payroll-matrix.md`
-61. `us-tax-return-review-supporting-documents-findings.md`
-62. `us-federal-return-assembly.md`
-63. `global-router.md`
-64. `id-income-tax.md`
-65. `id-sales-tax.md`
-66. `idaho-sales-tax.md`
+25. `us-form-1040-individual-return.md`
+26. `us-form-1041-trust-and-estate-income.md`
+27. `us-form-1065-partnership.md`
+28. `us-form-1120-c-corp.md`
+29. `us-form-5471-cfc-information.md`
+30. `us-form-5472-foreign-owned-us.md`
+31. `us-form-941-940-payroll.md`
+32. `us-gilti-fdii-beat.md`
+33. `us-hiring-your-children-and-accountable-plans.md`
+34. `us-irs-collections-and-controversy.md`
+35. `us-multi-state-residency-and-allocation.md`
+36. `us-nft-tax.md`
+37. `us-opportunity-zones.md`
+38. `us-pl-86-272-income-tax-nexus.md`
+39. `us-pte-state-matrix.md`
+40. `us-qbi-deduction.md`
+41. `us-quarterly-estimated-tax.md`
+42. `us-r-and-d-section-174-and-41.md`
+43. `us-real-estate-professional-and-short-term-rentals.md`
+44. `us-s-corp-election-decision.md`
+45. `us-sales-tax-nexus-50-state-matrix.md`
+46. `us-sales-tax.md`
+47. `us-schedule-c-and-se-computation.md`
+48. `us-section-1031-like-kind-exchange.md`
+49. `us-section-1202-qsbs.md`
+50. `us-section-179-and-bonus-depreciation.md`
+51. `us-secure-2-and-retirement-updates.md`
+52. `us-self-employed-health-insurance.md`
+53. `us-self-employed-retirement.md`
+54. `us-sole-prop-bookkeeping.md`
+55. `us-state-bonus-depreciation-conformity-matrix.md`
+56. `us-state-estimated-tax-safe-harbors-matrix.md`
+57. `us-state-formation-matrix.md`
+58. `us-state-new-hire-reporting-matrix.md`
+59. `us-state-payroll-matrix.md`
+60. `us-tax-return-review-supporting-documents-findings.md`
+61. `us-federal-return-assembly.md`
+62. `global-router.md`
+63. `id-income-tax.md`
+64. `id-sales-tax.md`
+65. `idaho-sales-tax.md`
 
 ## How to use
 
@@ -109,7 +108,7 @@ These Idaho tax skills need your eye. Every rate, threshold, and form reference 
 
 We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
 
-Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/us-states/id/` or `skills/federal/`, and submit a PR.
+Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/us/states/id/` or `skills/us/federal/`, and submit a PR.
 
 **Your name goes on the skill either way.**
 

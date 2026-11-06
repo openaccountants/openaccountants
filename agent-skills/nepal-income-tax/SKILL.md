@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "NP"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Ashish Bista, ICAI, OTHER, CA"
   reviewed_by: "Ashish Bista"
-  trust_label: "Checked by Ashish Bista"
-  review_status: "current"
 ---
 
 # Nepal Income Tax
@@ -20,7 +17,7 @@ metadata:
 
 > **Tier 2 — research-verified, pending accountant sign-off.** Figures below are drawn from the Income Tax Act, 2058 (2002), Inland Revenue Department (IRD) guidance, the Social Security Fund (SSF), and the PKF Trunco "Tax Rates for FY 2082-83 (2025-26)" publication. Items marked **[RESEARCH GAP — reviewer to confirm]** could not be locked to a primary source and MUST be confirmed by a Nepali tax professional before filing.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Ashish Bista** on 2026-06-06.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -72,7 +69,6 @@ metadata:
 | Filing portal | taxpayerportal.ird.gov.np |
 | Individual return form | D-01 (natural persons; also presumptive) |
 | Filing deadline | Within 3 months of FY end → end of Ashoj (~mid-October); extendable +3 months to end of Poush (~mid-January) |
-| Validated by | Pending — requires sign-off by a Nepali tax professional |
 | Validation date | Verified by Ashish Bista (ICAN: 1765) on 2026-06-06 |
 | Skill version | 0.1 |
 
@@ -720,26 +716,6 @@ Expected: REJECT presumptive/turnover scheme → file normal return at slab rate
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

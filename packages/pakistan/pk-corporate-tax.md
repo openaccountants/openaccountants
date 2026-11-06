@@ -4,11 +4,11 @@ description: "ALWAYS read this skill before touching any Pakistan corporate inco
 jurisdiction: PK
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ibrar Ali"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # PK Corporate Tax
@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 >
 > This skill is for informational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a Pakistani tax professional (ICAP CA, ICMA Pakistan, or FBR-recognised tax adviser) before filing or acting upon. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -84,7 +84,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing portal | IRIS (FBR's online tax administration system at iris.fbr.gov.pk) |
 | Tax authority | Federal Board of Revenue (FBR), Government of Pakistan |
 | Record retention | 6 years from end of tax year (Section 174 ITO 2001) |
-| Validated by | Pending — sign-off by an ICAP CA / ICMA Pakistan member or FBR-recognised tax adviser |
 | Skill version | 1.0 |
 
 ### 1.1 Conservative Defaults
@@ -505,21 +504,3 @@ This skill and its outputs are for informational and computational purposes only
 ## OpenAccountants footer
 
 *OpenAccountants — open-source accounting skills for AI*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

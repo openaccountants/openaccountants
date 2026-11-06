@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # US Form 1099-K: payment cards, payment apps and marketplaces (tax year 2026)
@@ -190,24 +187,6 @@ Attach a short statement giving this bridge. [Schedule C line 1 statement](https
 - [ ] Digital-asset gain or loss is computed from the transaction history, with basis supplied for noncovered assets.
 - [ ] Requests for corrected forms, platform statements and basis evidence are kept in the file.
 - [ ] Any CP2000 reply is sent before the date on the notice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,16 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ba-company-formation.md`
-4. `ba-corporate-income-tax.md`
-5. `ba-tax-overview.md`
-6. `bosnia-income-tax.md`
-7. `bosnia-payroll.md`
-8. `bosnia-social-contributions.md`
-9. `bosnia-tax-optimization.md`
-10. `bosnia-vat.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ba-company-formation.md`
+5. `ba-corporate-income-tax.md`
+6. `ba-cross-border.md`
+7. `ba-tax-overview.md`
+8. `ba-transfer-pricing.md`
+9. `bosnia-income-tax.md`
+10. `bosnia-payroll.md`
+11. `bosnia-social-contributions.md`
+12. `bosnia-tax-optimization.md`
+13. `bosnia-vat.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

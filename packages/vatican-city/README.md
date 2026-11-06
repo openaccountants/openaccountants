@@ -7,7 +7,8 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `va-italy-remuneration-and-financial-assets.md`
+3. `README.md`
+4. `va-italy-remuneration-and-financial-assets.md`
 
 ## How to use
 

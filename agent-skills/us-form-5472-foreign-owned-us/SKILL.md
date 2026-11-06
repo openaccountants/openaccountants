@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "James Wallach"
   reviewed_by: "Christopher Aryee"
-  trust_label: "Checked by Christopher Aryee"
-  review_status: "current"
 ---
 
 # US Form 5472 Foreign Owned US
@@ -438,24 +435,6 @@ This skill is marked verified_by: pending. It must be reviewed by a Circular 230
 - Watch for changes to the §6038A(d) penalty amount (currently $25,000; could change by statute).
 - Watch for changes to the SMLLC pro forma 1120 filing channel (e-file may become available in future).
 - Confirm treaty rates for FDAP withholding on dividends / royalties / interest paid to foreign related parties (separate Form 1042 workstream, but informs 5472 reporting amounts).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

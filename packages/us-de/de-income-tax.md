@@ -5,11 +5,9 @@ version: "0.1"
 jurisdiction: US-DE
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Delaware individual income tax (Form PIT-RES / PIT-NON), tax year 2026
@@ -442,21 +440,3 @@ Refer to a Delaware-experienced professional, or the Division of Revenue (302-57
 - [ ] Withholding excludes city wage tax. Estimated payments and carryforward matched to Division records.
 - [ ] PIT-UND checked if the balance due is more than 10% of the tax: the client "may owe" the penalty. Attach PIT-UND if the computed penalty is greater than zero, or if Part 3 (annualised method) is used.
 - [ ] Filed and paid by 30 April 2027, or PIT-EXT filed with payment.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

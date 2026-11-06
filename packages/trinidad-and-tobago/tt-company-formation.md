@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Trinidad
 jurisdiction: TT
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Trinidad and Tobago Company Formation & Entity Choice
@@ -26,21 +25,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Tax registration after incorporation** — Obtain a BIR (Board of Inland Revenue) file number; register for PAYE, NIS, and VAT (where the threshold is met)  _(Income Tax Act (Chap. 75:01) — https://www.ird.gov.tt/)_
 - **Annual return filing** — Every company must file an Annual Return with the Companies Registry each year  _(Companies Act (Chap. 81:01) — https://legalaffairs.gov.tt/faqs.php)_
 - **Annual tax compliance** — File corporation tax return by 30 April, pay quarterly instalments, and account for Green Fund Levy and Business Levy as applicable  _(Corporation Tax Act (Chap. 75:02) — https://taxsummaries.pwc.com/trinidad-and-tobago/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

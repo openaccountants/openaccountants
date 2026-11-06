@@ -1,15 +1,14 @@
 ---
 name: mt-property-transfer-tax-the-sale-immovable
 description: A drafting reference on the final withholding tax charged to the seller on transfers of immovable property situated in Malta and the duty charged to the buyer, for advisers handling an inter vivos sale by deed.
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-09-03
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-11-04
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Property transfer tax and stamp duty on the sale of immovable property in Malta
@@ -28,7 +27,7 @@ It does not cover transfers causa mortis or declarations of causa mortis, share 
 
 ### Property transfer tax on the seller
 
-**Property transfer tax on the seller — FAQ figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq)_
+**Property transfer tax on the seller : FAQ figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq)_
 
 | What | Value | Note |
 | --- | --- | --- |
@@ -36,12 +35,12 @@ It does not cover transfers causa mortis or declarations of causa mortis, share 
 | Standard final withholding tax on transfer value | 8% | The page states that with effect from 1st January 2015 the earlier system "will be replaced by one final withholding tax of 8% on the value of the property transferred". |
 | Property acquired before 1 January 2004 | 10% final withholding tax | The page contrasts transfers "subject to either 8% final withholding tax or else 10% final withholding tax in the case where the property was acquired before the 1st January, 2004". |
 | Restored grade 1 or grade 2 scheduled property, or property in an urban conservation area, where a notice of promise of sale or transfer was given before 17 November 2014 | 10% of the transfer value | Stated as "chargeable at the rate of 10% of the transfer value" for transfers made on or after 1 January 2015 under the relevant restoration scheme. |
-| Transfers in the circumstances of article 31C(1) of the Income Tax Act | 7% of the transfer value | The page states the transfer "shall be chargeable at the rate of 7% of the transfer value. The 7% tax is final." |
+| Transfers in the circumstances of article 31C(1), subject to overriding applicable reliefs | 10% of the transfer value under article 5A(5)(d) | The statute limits its transitional 7% proviso to specified transfers made on or after 1 January 2015 and before 1 January 2016. That historical proviso is not a 2026 rate. |
 | Transfers where a notice of promise of sale or transfer was given to the CfR before 17 November 2014, in the cancelled or expired promise of sale cases described | 12% final tax | The page states that "such transfers will remain taxable at the rate of 12% final tax". |
 | Provisional tax where a non-resident opts out of the final withholding system and is taxed under article 5 (capital gains) | 7% provisional tax | The page states that for transfers on or after 1 January 2015 this 7% provisional tax "shall not be available for refund under article 48 of the Income Tax Management Act". |
 | Brokerage fees | Deductible from the transfer value | The page states brokerage fees "will remain deductible" and that the amount paid by the transferor continues to be allowable as a deduction from the transfer value. |
 
-**Property transfer tax on the seller — Examples figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---examples)_
+**Property transfer tax on the seller : Examples figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---examples)_
 
 | What | Value | Note |
 | --- | --- | --- |
@@ -52,7 +51,7 @@ It does not cover transfers causa mortis or declarations of causa mortis, share 
 
 ### Duty on documents and transfers on the buyer
 
-**Duty on documents and transfers on the buyer — Buying Property figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/buying-property)_
+**Duty on documents and transfers on the buyer : Buying Property figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/buying-property)_
 
 | What | Value | Note |
 | --- | --- | --- |
@@ -63,7 +62,7 @@ It does not cover transfers causa mortis or declarations of causa mortis, share 
 | Interest where the claim is not paid | 0.75% for every 30 days or part thereof | Interest "shall start accruing after the expiration of three months from the date of notification of the original assessment". |
 | Time limit to object to an assessment | Within thirty days from the date of service of assessment | An objection in writing is valid only if it specifies the valid grounds it is based upon. |
 
-**Duty on documents and transfers on the buyer — General Information on Duty figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty)_
+**Duty on documents and transfers on the buyer : General Information on Duty figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty)_
 
 | What | Value | Note |
 | --- | --- | --- |
@@ -73,14 +72,14 @@ It does not cover transfers causa mortis or declarations of causa mortis, share 
 | Issue of receipts after submission of the notice of transfer (DDT1) | Normally not later than 3 weeks from the date of submission | Stated for receipts issued by the Property Tax Directorate. |
 | Time limit to present the promise of sale to the Property Tax Directorate | Within 21 days of the actual signing | Stated on the same page. |
 
-**Duty on documents and transfers on the buyer — Promise of Sale figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale)_
+**Duty on documents and transfers on the buyer : Promise of Sale figures**  _(https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale)_
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale |
 | Provisional duty payable when the notary registers the promise of sale | 20% of the duty payable on the final deed | Registered by the notary within 21 days from the signing of the promise of sale agreement, together with that payment. |
 
-**Duty on documents and transfers on the buyer — Guidelines (second-time buyers) figures**  _(https://mtca.gov.mt/docs/default-source/documents/guidelines-stb.pdf?sfvrsn=cae8b349_1)_
+**Duty on documents and transfers on the buyer : Guidelines (second-time buyers) figures**  _(https://mtca.gov.mt/docs/default-source/documents/guidelines-stb.pdf?sfvrsn=cae8b349_1)_
 
 | What | Value | Note |
 | --- | --- | --- |
@@ -90,14 +89,14 @@ It does not cover transfers causa mortis or declarations of causa mortis, share 
 
 ## The method, step by step
 
-- **Step 1 — Engage the notary** — Engage the notary. For a transfer of property to take place in Malta a notary must be engaged to process property searches and file the necessary deeds; the notary is usually chosen by the buyer and is also engaged to process provisional duty payments on behalf of the buyer. The seller may use an estate agent to find a prospective buyer, and the parties then delegate a notary.  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property); [Selling Property](https://mtca.gov.mt/personal-tax/property-taxes/selling-property))_
-- **Step 2 — Register the promise of sale and pay provisional duty** — Register the promise of sale and pay provisional duty. Once the promise of sale is signed it is presented to the Property Tax Directorate within the period in the table above, and the purchaser pays the provisional duty at that stage. The notice is given on form DDT3, "Notice of Promise of Sale / Transfer of Immovable Property".  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property), [Promise of Sale](https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale); [Downloads](https://mtca.gov.mt/personal-tax/property-taxes/downloads))_
-- **Step 3 — Obtain the provisional duty receipt** — Obtain the provisional duty receipt. A receipt for provisional stamp duty is issued to the taxpayer once payment is received by the Property Tax Directorate, confirming that the notary has submitted a copy of the promise of sale and that provisional duty has been paid by the buyer.  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property))_
-- **Step 4 — Decide, before the deed, whether the seller elects out of the final withholding system** — Decide, before the deed, whether the seller elects out of the final withholding system. Where the election is available it is made by declaration to the notary at the time of the publication of the deed, provisional tax is paid at the rate in the table above, and the gain or profit is declared in the tax return.  _([New Property Tax System - Examples](https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---examples))_
-- **Step 5 — Publish the deed and submit the DDT1** — Publish the deed and submit the DDT1. Upon signing of the contract the notary publishing the deed submits the DDT1 form at the Property Tax Directorate together with site-plans, a copy of the Public Registry note, the stamp duty payment due by the buyer, the capital gains tax payment due by the seller, and Schedule 8 for residential property only. Schedule 8 is listed as "DDT - Eight Schedule – Physical Attributes of Immovable Property".  _([General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty); [Downloads](https://mtca.gov.mt/personal-tax/property-taxes/downloads))_
-- **Step 6 — Await the receipts and any valuation** — Await the receipts and any valuation. Receipts are normally issued within the period in the table above; at this stage an internal departmental board decides whether an architect is sent to inspect the property to establish its market value, subject to the tolerance in the table above.  _([General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty))_
-- **Step 7 — Deal with any claim or assessment** — Deal with any claim or assessment. Where the architect adds value, the buyer's claim includes the duty due plus the additional duty (penalty), and the vendor is charged the additional duty (penalty) only; unpaid claims attract interest at the rate and from the point set out in the table above.  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property), [General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty))_
-- **Step 8 — Object in writing if the assessment is disputed** — Object in writing if the assessment is disputed, within the period in the table above, specifying the valid grounds; if no agreement upon objection is reached, the Commissioner issues a Refusal.  _([General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty))_
+- **Step 1 : Engage the notary** : Engage the notary. For a transfer of property to take place in Malta a notary must be engaged to process property searches and file the necessary deeds; the notary is usually chosen by the buyer and is also engaged to process provisional duty payments on behalf of the buyer. The seller may use an estate agent to find a prospective buyer, and the parties then delegate a notary.  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property); [Selling Property](https://mtca.gov.mt/personal-tax/property-taxes/selling-property))_
+- **Step 2 : Register the promise of sale and pay provisional duty** : Register the promise of sale and pay provisional duty. Once the promise of sale is signed it is presented to the Property Tax Directorate within the period in the table above, and the purchaser pays the provisional duty at that stage. The notice is given on form DDT3, "Notice of Promise of Sale / Transfer of Immovable Property".  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property), [Promise of Sale](https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale); [Downloads](https://mtca.gov.mt/personal-tax/property-taxes/downloads))_
+- **Step 3 : Obtain the provisional duty receipt** : Obtain the provisional duty receipt. A receipt for provisional stamp duty is issued to the taxpayer once payment is received by the Property Tax Directorate, confirming that the notary has submitted a copy of the promise of sale and that provisional duty has been paid by the buyer.  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property))_
+- **Step 4 : Decide, before the deed, whether the seller elects out of the final withholding system** : Decide, before the deed, whether the seller elects out of the final withholding system. Where the election is available it is made by declaration to the notary at the time of the publication of the deed, provisional tax is paid at the rate in the table above, and the gain or profit is declared in the tax return.  _([New Property Tax System - Examples](https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---examples))_
+- **Step 5 : Publish the deed and submit the DDT1** : Publish the deed and submit the DDT1. Upon signing of the contract the notary publishing the deed submits the DDT1 form at the Property Tax Directorate together with site-plans, a copy of the Public Registry note, the stamp duty payment due by the buyer, the capital gains tax payment due by the seller, and Schedule 8 for residential property only. Schedule 8 is listed as "DDT - Eight Schedule – Physical Attributes of Immovable Property".  _([General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty); [Downloads](https://mtca.gov.mt/personal-tax/property-taxes/downloads))_
+- **Step 6 : Await the receipts and any valuation** : Await the receipts and any valuation. Receipts are normally issued within the period in the table above; at this stage an internal departmental board decides whether an architect is sent to inspect the property to establish its market value, subject to the tolerance in the table above.  _([General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty))_
+- **Step 7 : Deal with any claim or assessment** : Deal with any claim or assessment. Where the architect adds value, the buyer's claim includes the duty due plus the additional duty (penalty), and the vendor is charged the additional duty (penalty) only; unpaid claims attract interest at the rate and from the point set out in the table above.  _([Buying Property](https://mtca.gov.mt/personal-tax/property-taxes/buying-property), [General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty))_
+- **Step 8 : Object in writing if the assessment is disputed** : Object in writing if the assessment is disputed, within the period in the table above, specifying the valid grounds; if no agreement upon objection is reached, the Commissioner issues a Refusal.  _([General Information on Duty](https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty))_
 
 ## Ask the client first
 
@@ -120,32 +119,49 @@ It does not cover transfers causa mortis or declarations of causa mortis, share 
 
 ## Sources
 
-- https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq
-- https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---examples
-- https://mtca.gov.mt/personal-tax/property-taxes/buying-property
-- https://mtca.gov.mt/personal-tax/property-taxes/selling-property
-- https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty
-- https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale
-- https://mtca.gov.mt/personal-tax/property-taxes/downloads
-- https://mtca.gov.mt/docs/default-source/documents/guidelines-stb.pdf?sfvrsn=cae8b349_1
-- https://mtca.gov.mt/docs/default-source/documents/guidelines-ftb.pdf?sfvrsn=60c3eece_1
+- https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq (read 2026-11-04, questions 13 to 18; question 16 is historical guidance and does not override current statute).
+- https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---examples (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
+- https://mtca.gov.mt/personal-tax/property-taxes/buying-property (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
+- https://mtca.gov.mt/personal-tax/property-taxes/selling-property (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
+- https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
+- https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
+- https://mtca.gov.mt/personal-tax/property-taxes/downloads (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
+- https://mtca.gov.mt/docs/default-source/documents/guidelines-stb.pdf?sfvrsn=cae8b349_1 (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
+- https://mtca.gov.mt/docs/default-source/documents/guidelines-ftb.pdf?sfvrsn=60c3eece_1 (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 
-<!-- openaccountants-cta-block -->
+Not yet confirmed: all legacy-source claims outside the targeted read scopes above, including unread portal, subsidiary-rule and immigration conditions, retain their stated holds. A reference retained here is not proof of a fresh read.
 
----
+## Targeted hypothetical restoration-rate checks
 
-## Talk to a verified accountant
+For a hypothetical 2026 deed falling within article 5A(5)(d), assume no exemption, election or overriding rate applies and no deductible brokerage. EUR 300,000 at the statutory limb’s 10% is EUR 30,000. The 7% illustration below is historical only: it assumes a qualifying 2015 deed meeting every proviso condition, including the notice condition; it must not be used for a 2026 deed.
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+```oa-check
+name: 2026 restoration limb: no other relief assumed
+inputs:
+  transfer_value: 300000
+steps:
+  - tax: pct(transfer_value,10)
+expected:
+  tax: 30000
+```
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+```oa-check
+name: Historical qualifying 2015 proviso only
+inputs:
+  transfer_value: 300000
+steps:
+  - historical_tax: pct(transfer_value,7)
+  - difference_from_10: pct(transfer_value,10) - historical_tax
+expected:
+  historical_tax: 21000
+  difference_from_10: 9000
+```
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+
+### Targeted audit source checks, 4 November 2026
+
+The current law controls over the stale FAQ wording; the 7% restoration proviso is retained only as an expressly historical illustration. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- Cap. 123 article 5A(5)(d): https://legislation.mt/eli/cap/123/eng/pdf (read 2026-11-04).

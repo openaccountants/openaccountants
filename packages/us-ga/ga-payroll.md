@@ -4,10 +4,9 @@ description: Tier 2 Georgia content skill for employer payroll compliance coveri
 jurisdiction: US-GA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # GA Payroll
@@ -598,21 +597,3 @@ A reviewer signing off on a 2025 Georgia payroll engagement should confirm:
 - HB 1015 (Ga. 2024 Regular Session) — rate acceleration.
 - HB 111 (Ga. 2025) — signed April 15, 2025; reduced PIT rate to 5.19% retroactive to January 1, 2025; accelerated phase-down schedule toward 4.99% target.
 - GA DOR Employer's Tax Guide (TSD-WH), June 2025 revision — implementation guidance for HB 111 mid-year rate change.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

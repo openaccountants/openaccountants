@@ -4,11 +4,9 @@ description: Tier 2 US federal content skill for the §174 mandatory R&E capital
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # US research costs: §174A expensing, §174 foreign amortization and the §41 research credit
@@ -173,21 +171,3 @@ Excluded, even if the four parts are met: research after commercial production b
 - §41(h): receipts test, five-year window, prior-election count and carryforward limit checked; Form 8974 quarter identified.
 - Form 6765 Section G completed or an exception confirmed (required for tax years beginning after 2025).
 - State conformity checked separately.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

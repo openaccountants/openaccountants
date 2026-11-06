@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BT"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bhutan Tax Overview
@@ -29,24 +27,6 @@ Bhutan's direct taxes for income year 2025 run under the Income Tax Act of the K
 - **Business Income Tax (BIT) rate** — 30% (unincorporated businesses) ((approx — confirm)) percent  _(Income Tax Act of the Kingdom of Bhutan 2001)_
 - **VAT / GST in 2025** — No GST in force in 2025; indirect tax was Sales Tax. GST at 5% takes effect 1 January 2026  _([Goods and Services Tax Act of Bhutan 2020 (as amended 2025)](https://www.drc.gov.bt/wp-content/uploads/2025/12/Consolidated-GST-Act-of-Bhutan-2020-and-amendment-thereof.pdf))_
 - **Annual income tax filing deadline** — By 31 March following the close of the income year (e.g. 31 March 2026 for income year 2025) ((approx — confirm exact date in DRC annual notification))  _([Income Tax Act of the Kingdom of Bhutan 2001](https://www.drc.gov.bt/notification-tax-filing-for-income-year-2025/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

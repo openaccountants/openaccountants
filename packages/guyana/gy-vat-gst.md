@@ -4,10 +4,9 @@ description: "Source-cited draft: vat / gst for Guyana (tax year 2025) — rates
 jurisdiction: GY
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Guyana VAT / GST
@@ -23,21 +22,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Input tax credit** — Registered persons may credit VAT paid on business inputs against output VAT (subject to documentation and exclusions) (approx — confirm)  _(Value-Added Tax Act 2005 (https://taxdo.com/resources/blog/post/guyana-vat-act-guide-global-businesses))_
 - **Reverse charge on imported services** — Recipients of certain imported services must self-account for VAT (reverse charge) where the supplier is non-resident (approx — confirm)  _(Value-Added Tax Act 2005 (https://taxdo.com/resources/blog/post/guyana-vat-act-guide-global-businesses))_
 - **VAT on imports** — 14 percent (VAT charged on the value of imported goods at the point of entry (in addition to applicable duties) (approx — confirm))  _(Value-Added Tax Act 2005 (https://gra.gov.gy/vat-registration/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

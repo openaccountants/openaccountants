@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mc-payroll-social"
   jurisdiction: "MC"
   tax_year: "2026"
-  last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Monaco payroll and social contributions
@@ -28,11 +26,11 @@ Use the **pay-acquisition period**, not the payment date. The social year change
 
 | Component | 1 January–30 September 2026 | 1 October–31 December 2026 | Employer / employee rate |
 |---|---|---|---|
-| CCSS monthly cap | EUR 9,800; full social-year cap EUR 117,600 | EUR 10,000; full social-year cap EUR 120,000 | 13.40% including OMT; 13.45% with CGCS / no employee CCSS deduction |
-| CAR monthly cap | EUR 6,112; full social-year cap EUR 73,344 (base salary EUR 1,528) | EUR 6,276; full social-year cap EUR 75,312 | 8.33% to September (7.45% base + 0.88% variable), 8.39% from October / 6.85% |
-| Unemployment monthly cap | EUR 16,020 | EUR 16,020 | 4.00% / 2.40% throughout |
-| CMRC A cap | EUR 3,971 | EUR 4,067 | 10.02% total, 60% employer / 40% employee |
-| CMRC B | Above A to EUR 31,768 (8 × A) | Above A to EUR 32,536 | 24.29% total, 60% employer / 40% employee |
+| CCSS monthly cap | EUR 9,800; full social-year cap EUR 117,600 | EUR 10,000; full social-year cap EUR 120,000 | 13.40% including OMT; 13.45% with CGCS / no employee CCSS deduction Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| CAR monthly cap | EUR 6,112; full social-year cap EUR 73,344 (base salary EUR 1,528) | EUR 6,276; full social-year cap EUR 75,312 | 8.33% to September (7.45% base + 0.88% variable), 8.39% from October / 6.85% Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| Unemployment monthly cap | EUR 16,020 | EUR 16,020 | 4.00% / 2.40% throughout Source: https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| CMRC A cap | EUR 3,971 | EUR 4,067 | 10.02% total, 60% employer / 40% employee Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| CMRC B | Above A to EUR 31,768 (8 × A) | Above A to EUR 32,536 | 24.29% total, 60% employer / 40% employee Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
 
 Sources: [official October 2025 circular, p. 1, preserved capture 15 December 2025](https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [dated current CSM schedule](https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations); [2025–26 CAR base](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-584/), [variable rate](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-585/), [adjustment](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-586/), [CMRC cap](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-589/). CAR base is four times the statutory salary base under [Law 455, arts. 8 ter–9](https://legimonaco.mc/tnc/loi/1947/06-27-455/).
 
@@ -40,11 +38,11 @@ CCSS totals include CCSS 13.15%, OMT 0.25% and CGCS 0.05% where affiliated. Do n
 
 | Independent contribution per full quarter | January–September 2026, social year 2025–26 | From October 2026, social year 2026–27 |
 |---|---|---|
-| CAMTI | EUR 1,101 | EUR 1,128 |
-| CARTI class 1 | EUR 550.08 | EUR 564.84 |
-| CARTI class 2 | EUR 1,100.16 | EUR 1,129.68 |
-| CARTI class 3 | EUR 1,650.24 | EUR 1,694.52 |
-| CARTI class 4 | EUR 2,200.32 | EUR 2,259.36 |
+| CAMTI | EUR 1,101 | EUR 1,128 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 1 | EUR 550.08 | EUR 564.84 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 2 | EUR 1,100.16 | EUR 1,129.68 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 3 | EUR 1,650.24 | EUR 1,694.52 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 4 | EUR 2,200.32 | EUR 2,259.36 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
 
 Sources: [official October 2025 independent circular, p. 2, preserved capture 16 October 2025](https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf); [October 2026 independent circular, p. 2](https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf). CARTI's 2025–26 additional rate is **0%**, confirmed by [Ordinance 11.574, art. 1](https://legimonaco.mc/tnc/ordonnance/2025/11-11-11.574/); the current circular also states 0% for 2026–27.
 
@@ -201,24 +199,6 @@ The earlier official PDFs were read and visually checked from dated archive capt
 
 > Contributed by Michael Cutajar.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mc-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mc-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mc-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mc-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

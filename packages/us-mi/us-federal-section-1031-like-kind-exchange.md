@@ -4,12 +4,11 @@ description: Rules, timing, boot, basis, related-party and TIC structures for IR
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: James Wallach
-reviewed_by: James Wallach
-review_status: current
-trust_label: Checked by James Wallach
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Wallach"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # US Federal Section 1031 Like-Kind Exchange
@@ -69,21 +68,3 @@ Cal. R&TC §18032 (AB 92, 2013); Cal. R&TC §19133.5 (Form 3840 claw-back and pe
 Form 8824, Form 4797, Form 4868, California Form 3840
 
 > Contributed by James Wallach.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

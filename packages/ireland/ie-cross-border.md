@@ -4,10 +4,10 @@ description: "Use this skill when a person or company crosses the Irish border f
 jurisdiction: IE
 category: cross-border
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+tier: 2
+domain: cross-border
 ---
 
 # Ireland: cross-border tax for people and companies (2026)

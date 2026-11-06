@@ -1,20 +1,17 @@
 ---
 name: serbia-vat
 description: "Serbian value added tax (porez na dodatu vrednost, PDV) for 2026 under the Zakon o porezu na dodatu vrednost, consolidated to Law 80/2026. Covers who must register (the RSD 8,000,000 threshold in Article 38) and small taxpayers; the 20% general rate and the 10% special rate and what each covers; exemptions with and without input deduction; input tax and blocked items; monthly and quarterly tax periods and the 15-day return and payment deadline; the PPPDV return with its POPDV schedule; the SEF e-invoicing system and the e-VAT records (EEO and EPP) due by the 12th; reverse charge and the tax debtor rules; refunds; penalties under the ZPPPA; and which 80/2026 changes start in 2027. Trigger on: Serbia VAT, PDV Srbija, PPPDV, POPDV, SEF, e-faktura, Serbian reverse charge, Serbian VAT refund. Out of scope: corporate tax (rs-corporate-tax), income tax (serbia-income-tax), payroll (serbia-payroll), cross-border structuring (rs-cross-border)."
-version: 0.1
+version: 0.2
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-23
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Serbia: value added tax (PDV), 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The statute is the Zakon o porezu na dodatu vrednost (ZPDV), Službeni glasnik RS 84/2004 with amendments up to 80/2026. The Ministry of Finance publishes the Official Gazette's unofficial consolidated text. Article numbers below refer to it. E-invoicing and the e-VAT records sit in a separate law, the Zakon o elektronskom fakturisanju (ZEF). Penalties and interest sit in the Zakon o poreskom postupku i poreskoj administraciji (ZPPPA).
 
@@ -187,23 +184,3 @@ expected:
 | efaktura.gov.rs, electronic recording of VAT (EEO) and input tax (EPP) | https://www.efaktura.gov.rs/tekst/4071/elektronsko-evidentiranje-obracuna-pdv-u-sef.php | 2026-10-23 |
 
 Not yet confirmed: the PDV Rulebook (Pravilnik o PDV) text for the POPDV fields, which the Tax Administration page did not display. The current NBS reference rate is not stated; take it from nbs.rs on the day.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

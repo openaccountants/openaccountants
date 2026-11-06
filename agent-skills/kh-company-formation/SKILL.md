@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "KH"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cambodia Company Formation & Entity Choice
@@ -31,24 +29,6 @@ The most common vehicle is the private limited company (PLC), registered online 
 - **Annual MoC declaration** — File an annual declaration of commercial enterprise with the Ministry of Commerce  _(Law on Commercial Enterprises (https://cambodia.acclime.com/guides/annual-filing-requirements/))_
 - **Core annual tax compliance** — Monthly tax returns (salary, VAT, PTOI, withholding) by the 20th; annual TOI return by 31 March; patent tax renewal by 31 March  _(Law on Taxation (https://cambodia.acclime.com/guides/annual-filing-requirements/))_
 - **Statutory audit** — Independent audit required for enterprises meeting size thresholds (e.g. larger turnover/assets/employees) and for QIPs ((approx — confirm thresholds))  _(Prakas on Independent Audit (Ministry of Economy and Finance) (https://cambodia.acclime.com/guides/annual-filing-requirements/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

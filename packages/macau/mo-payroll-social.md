@@ -4,10 +4,9 @@ description: "Source-cited draft: payroll & social contributions for Macau (tax 
 jurisdiction: MO
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Macau Payroll & Social Contributions
@@ -25,21 +24,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Professional tax withholding (PAYE)** — Employer withholds professional tax from each employee's pay and remits it; this is the PAYE-equivalent  _(Macau Professional Tax Regulation)_
 - **Professional tax remittance deadline** — Quarterly — by 15 April, 15 July, 15 October and 15 January for the preceding quarter  _([Macau Professional Tax Regulation](https://www.mdme.com/en/knowledge/taxation-doing-business-in-macau-2025/22402/))_
 - **Employer annual employee return (M3/M4)** — Employer files an annual statement of employees and remuneration with the DSF (by 31 January for the prior year) ((approx — confirm) form references and exact date)  _(Macau Professional Tax Regulation)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

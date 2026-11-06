@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `fiji-vat.md`
-4. `fj-company-formation.md`
-5. `fj-corporate-income-tax.md`
-6. `fj-income-tax.md`
-7. `fj-payroll-social.md`
-8. `fj-tax-overview.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `fiji-vat.md`
+5. `fj-company-formation.md`
+6. `fj-corporate-income-tax.md`
+7. `fj-income-tax.md`
+8. `fj-payroll-social.md`
+9. `fj-tax-overview.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

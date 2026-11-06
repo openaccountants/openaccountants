@@ -4,13 +4,11 @@ description: ALWAYS USE THIS SKILL when a user asks for help preparing their Net
 version: 1.0
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-30
 category: orchestrator
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Netherlands freelance tax intake — 2025 returns and 2026 records
@@ -71,7 +69,7 @@ Request the records needed for the agreed scope, then identify gaps:
 
 A bank description is a clue, not a final tax classification. Revenue is not simply all deposits; expenditure is not automatically deductible. Apply the business-purpose test and separate private expenditure and capital assets. Recoverable VAT is excluded from income-tax costs; irrecoverable VAT can form part of an otherwise allowable cost or asset basis, subject to the same restrictions. [Business costs](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/zakelijke_kosten) [Investment timing](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/investeringsaftrek_en_desinvesteringsbijtelling/voorwaarden_investeringsregelingen)
 
-Keep VAT and income-tax decisions separate. KOR affects VAT charging, routine returns and input recovery; it is not an exemption from income tax. KOR participation has effective dates and exceptional VAT-return situations. Reconcile VAT turnover to the income-tax records with explanations for differences, rather than forcing a VAT box to equal business profit. Use the current `nl-vat-return` or `netherlands-vat-return` skill for VAT preparation. [KOR effects](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/wat-betekent-meedoen-met-de-kleineondernemersregeling)
+Keep VAT and income-tax decisions separate. KOR affects VAT charging, routine returns and input recovery; it is not an exemption from income tax. KOR participation has effective dates and exceptional VAT-return situations. Reconcile VAT turnover to the income-tax records with explanations for differences, rather than forcing a VAT box to equal business profit. Use the current `nl-vat-return` skill for VAT preparation. [KOR effects](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/wat-betekent-meedoen-met-de-kleineondernemersregeling)
 
 ### Step 3: Gather eligibility evidence without pre-awarding deductions
 
@@ -157,21 +155,3 @@ Downstream Skills are inputs to inspect, not permission to import stale figures.
 - [ ] Personal deductions, partner allocation and mixed-use issues routed separately.
 - [ ] Correct-year deduction method selected; unresolved dependencies remain visible.
 - [ ] Handoff identifies what is ready, what is provisional and what needs specialist review; no submission implied.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

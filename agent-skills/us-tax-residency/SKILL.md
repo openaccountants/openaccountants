@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # US tax residency for non-citizens: green card test, substantial presence test, elections and dual-status years
@@ -194,7 +191,6 @@ Restrictions on a dual-status return ([Pub 519, ch. 6, "Restrictions for Dual-St
 - no education credits, earned income credit or credit for the elderly or disabled unless married and electing full-year residence with a joint return;
 - non-effectively-connected US income of the nonresident period is taxed at a flat 30% or a lower treaty rate, with no deductions against it. [Pub 519, ch. 6, "How To Figure Your Tax"](https://www.irs.gov/publications/p519)
 
-
 ## Worked cases (tax year 2026 unless stated)
 
 **Case 1: plain SPT.** An H-1B worker was in the US on 150 days in 2026, 99 days in 2025 and none in 2024. Weighted total: 150 + 99/3 + 0 = 150 + 33 = 183. That equals 183, so the SPT is met ("equals or exceeds"). With 150 days the closer connection exception is open in principle, but it needs a foreign tax home all year, and a worker whose job is in the US will normally have a US tax home. [§7701(b)(3)](https://www.law.cornell.edu/uscode/text/26/7701)
@@ -250,24 +246,6 @@ Restrictions on a dual-status return ([Pub 519, ch. 6, "Restrictions for Dual-St
 - Treaty position: specific treaty article applied, Form 8833 attached, long-term resident check done **before** claiming.
 - Form 8854 prepared where a long-term resident's LPR status ended.
 - Correct return (1040 or 1040-NR, "Dual Status Return" where applicable) and due date recorded.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

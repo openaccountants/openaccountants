@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TW"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Taiwan VAT
@@ -36,7 +34,6 @@ metadata:
 | Deadline | 15th of month following reporting period (e.g., Jan–Feb period → 15 March) |
 | Uniform invoice (統一發票) | Mandatory for B2B and B2C; government-issued invoice numbers |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a Taiwan-licensed 會計師 (CPA) |
 | Skill version | 2.0 |
 
 ### Key 401 return boxes
@@ -519,24 +516,6 @@ TAIWAN BUSINESS TAX ONBOARDING — MINIMUM QUESTIONS
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional (會計師 or equivalent) before filing.
 
 The most up-to-date version is maintained at openaccountants.com.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

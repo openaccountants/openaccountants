@@ -4,10 +4,9 @@ description: "Source-cited draft: tax overview for Chile (tax year 2025) — rat
 jurisdiction: CL
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Chile Tax Overview
@@ -27,21 +26,3 @@ Chile's tax system is administered by the Servicio de Impuestos Internos (SII) a
 - **VAT / GST** — Yes — IVA (Impuesto al Valor Agregado) at a standard 19% rate  _([Ley sobre Impuesto a las Ventas y Servicios (IVA), DL 825](https://www.avalara.com/us/en/vatlive/country-guides/south-america/chile/chilean-vat-rates-and-vat-compliance.html))_
 - **Annual income tax return deadline (Operación Renta)** — Filed in April of the year following the tax year (typically by 30 April; SII may extend to early May) (approx — confirm exact date each year)  _([SII Operación Renta](https://www.sii.cl))_
 - **Monthly VAT return (Formulario 29) deadline** — By the 12th of the following month (electronic filers with e-payment may file by the 20th)  _([Formulario 29 — SII](https://www.avalara.com/us/en/vatlive/country-guides/south-america/chile/chilean-vat-rates-and-vat-compliance.html))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

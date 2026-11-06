@@ -5,14 +5,14 @@ version: 2.0
 jurisdiction: PH
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: Jonathan I. Ruiz, CPA
-review_status: current
-trust_label: Checked by Jonathan I. Ruiz, CPA
 depends_on:
   - vat-workflow-base
 category: international
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jonathan I. Ruiz"
+reviewed_on: 2026-11-03
+tier: 1
+domain: vat-gst
 ---
 
 # Philippines VAT
@@ -40,7 +40,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | TIN | Tax Identification Number (9 or 12 digits) |
 | RDO | Revenue District Office — taxpayer's registered district |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a Philippine CPA or tax practitioner |
 | Skill version | 2.0 |
 
 ### Key Form 2550M/Q lines
@@ -526,21 +525,3 @@ PHILIPPINES VAT ONBOARDING — MINIMUM QUESTIONS
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional before filing.
 
 The most up-to-date version is maintained at openaccountants.com.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

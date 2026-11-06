@@ -7,13 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-payroll-social-insurance"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-10-28"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Guernsey payroll and social contributions v0.10
+# Guernsey payroll and social contributions v0.11
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -79,7 +76,7 @@ The current **CF130b (01/26), under pension age**, and **CF130a (01/26), over pe
 
 **Boundary working paper:** assuming accepted income-related assessment, under-pension-age Class 3 status and verified assessable income, £24,959 is below the £24,960 exemption threshold. At £24,960 the below-limit exemption is not established: the calculation base after £11,122 allowance is £13,838. Multiplying by 11.8% gives £1,632.884 as annual-rate arithmetic, not a payment demand. The official weekly minimum is £31.40; reconcile the assessed weeks and rounding to Revenue Service's notice rather than paying a self-generated annual figure. [Exemption and allowance](https://gov.gg/non-employedcontributions); [2026 table](https://gov.gg/CHttpHandler.ashx?id=185595&p=0).
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 ### Current statutory Class 2 and Class 3 method
 
@@ -107,7 +104,7 @@ A distinct erroneous-payment claim under regulation 44 must be made in writing: 
 
 **Worked contribution working papers.** These are actual gated statutory methods, with amounts chosen to avoid an unverified penny-rounding convention. An income-related Class 2 certificate for ordinary current-year relevant income £52,000 gives £124 weekly and £6,448 for 52 liable weeks. If the same full-year contributor also has £144,560 employment earnings and £60,000 relevant self-employment earnings, and the simultaneous-class gates hold, the remaining annual headroom is £52,000, so Class 2 is £6,448 rather than £7,440 on the whole £60,000. Class 1 remains separate.
 
-For established Class 3 status, accepted current-year relevant income £37,122 and no regulation 38 exception/disregard, the post-allowance base is £26,000. Under pension age the certificate formula gives £59 weekly and £3,068 over 52 weeks; at pensionable age it gives £19 weekly and £988. For an accepted period of 26 contribution weeks at the same £59 weekly certificate amount, the period calculation is £1,534; that does not establish a certificate rate for someone merely earning the stated income over six months, or override a regulation 11 partial-year adjustment. If a Class 2 certificate changes from £124 to £186 for 52 covered weeks following a timely relevant-income reassessment from £52,000 to £78,000, the additional amount is £3,224 before any applicable authority direction. [Recomputing supplementary controls](../../research/guernsey-2026/ordinary-completion-2026-10-28/contribution-controls.md) retain these calculations without adding main Guide blocks.
+For established Class 3 status, accepted current-year relevant income £37,122 and no regulation 38 exception/disregard, the post-allowance base is £26,000. Under pension age the certificate formula gives £59 weekly and £3,068 over 52 weeks; at pensionable age it gives £19 weekly and £988. For an accepted period of 26 contribution weeks at the same £59 weekly certificate amount, the period calculation is £1,534; that does not establish a certificate rate for someone merely earning the stated income over six months, or override a regulation 11 partial-year adjustment. If a Class 2 certificate changes from £124 to £186 for 52 covered weeks following a timely relevant-income reassessment from £52,000 to £78,000, the additional amount is £3,224 before any applicable authority direction. [Recomputing supplementary controls](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/contribution-controls.md) retain these calculations without adding main Guide blocks.
 
 ### Dividends and qualifying loans
 
@@ -185,11 +182,11 @@ Under SoP E15, deductions from salary for a benefit do not reduce gross emolumen
 
 Section 11 supplies a specific ordinary **percentage-based accommodation** method: days the benefit is available divided by days the employee is in Guernsey, multiplied by the percentage benefit based on the actual relevant emoluments. Its example gives furnished accommodation for all 50 days of a new employee's stay, with £3,000 emoluments: `(50 / 50) × £3,000 × 17.5% = £525`. Dividing by 365 instead would incorrectly dilute that particular percentage-of-actual-emoluments calculation. First establish the ordinary furnished-housing category, emoluments, period, qualifying employee contributions and any timely rental-value election. [2026 Benefits Guide section 11, example 5 and Fact Sheet 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-For a split-employment housing case under E28, reconcile emoluments from **all employers**, rather than only the accommodation provider. With verified relevant emoluments £30,000 from one job and £10,000 from the provider, full-year furnished ordinary accommodation, no employee contribution and no lower-value election, the percentage method gives `£40,000 × 17.5% = £7,000`, not £1,750 based only on the provider's £10,000. The employer uses information reasonably available, and Revenue Service handles further recalculation; record the disclosure and adjustment route. Spouses employed by the same employer use their own relevant emoluments/use and their own applicable 15%/17.5% calculation and timely rental-value election, as E28 states. This does **not** settle allocation of the separate £900 miscellaneous-benefit exemption across employers. [SoP E28](https://gov.gg/CHttpHandler.ashx?id=202739&p=0); [supplementary controls](../../research/guernsey-2026/ordinary-completion-2026-10-28/benefit-period-controls.md).
+For a split-employment housing case under E28, reconcile emoluments from **all employers**, rather than only the accommodation provider. With verified relevant emoluments £30,000 from one job and £10,000 from the provider, full-year furnished ordinary accommodation, no employee contribution and no lower-value election, the percentage method gives `£40,000 × 17.5% = £7,000`, not £1,750 based only on the provider's £10,000. The employer uses information reasonably available, and Revenue Service handles further recalculation; record the disclosure and adjustment route. Spouses employed by the same employer use their own relevant emoluments/use and their own applicable 15%/17.5% calculation and timely rental-value election, as E28 states. This does **not** settle allocation of the separate £900 miscellaneous-benefit exemption across employers. [SoP E28](https://gov.gg/CHttpHandler.ashx?id=202739&p=0); [supplementary controls](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/benefit-period-controls.md).
 
 **Use the statutory day-based annual car valuation.** Regulation 5 of the [current 2010 Valuation Regulations](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267239), confirmed in the [authentic original regulation 5](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267223), requires annual benefit × available days ÷ **365** for the covered benefits. It excepts regulation 3(1)'s weekly hotel rule and provides the separate days-in-Guernsey denominator for regulation 3(3) percentage housing. The [authentic 2025 amendment, rr2–4 and7](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265330), sets the 2026 vehicle tables and commencement; it does not replace regulation 5. For an established unrestricted £30,000 car available for 171 days from 1 January through 20 June 2026, the statutory annual benefit is `£30,000 × 20% × 171 / 365 = £2,810.96`.
 
-The Revenue Guide's section 11/example 4 instead combines five £500 monthly entries with `20 / 30 × £500 = £333.33` in June, giving **£2,833.33**. Preserve this guidance conflict explicitly: its monthly illustration exceeds the statutory annual amount by **£22.37**. If £2,500 has already been included, the remaining annual benefit reconciliation is **£310.96**, not £333.33. Use the statutory annual figure in the assessment working paper and reconcile the employer records to it through the actual correction procedure. This calculation is not authority to make a unilateral tax refund, negative ETI deduction or notice change. [Section 11, example 4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0); [original supplementary comparison retained](../../research/guernsey-2026/ordinary-completion-2026-10-28/benefit-period-controls.md); [new statutory controls](../../research/guernsey-2026/statutory-gap-closure-2026-10-28/benefit-controls.md).
+The Revenue Guide's section 11/example 4 instead combines five £500 monthly entries with `20 / 30 × £500 = £333.33` in June, giving **£2,833.33**. Preserve this guidance conflict explicitly: its monthly illustration exceeds the statutory annual amount by **£22.37**. If £2,500 has already been included, the remaining annual benefit reconciliation is **£310.96**, not £333.33. Use the statutory annual figure in the assessment working paper and reconcile the employer records to it through the actual correction procedure. This calculation is not authority to make a unilateral tax refund, negative ETI deduction or notice change. [Section 11, example 4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0); [original supplementary comparison retained](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/benefit-period-controls.md); [new statutory controls](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/benefit-controls.md).
 
 Complex controlling-employee cases beyond the stated company-deduction gate, share schemes, relocation and preferential loans require their own review. Those specialist limits do not erase the ordinary housing and split-employment methods now supplied.
 
@@ -230,7 +227,7 @@ The same guidance describes a written surcharge appeal to the Director within **
 
 ### Separate statutory contribution enforcement and review
 
-Do not apply the income-tax surcharge formula to social insurance. **Social Insurance Law s104(1A)** makes an employer's overdue primary/secondary Class 1 contributions subject to an initial **2.5% penalty** plus **2.5% per month interest on the outstanding contribution from its due date until paid**. The statutory text does not supply the older manual's £50 minimum or its six-month tax-surcharge interval for this provision. For an unchanged £5,000 contribution principal and an established two full months outstanding, the statutory arithmetic is £125 penalty plus £250 interest = £375, before the facts of any payment, part-month calculation or authority relief. Do not compound that interest on the penalty without an applicable source. The older employer-manual treatment above is preserved as attributed administrative guidance; its reconciliation with the statutory monthly calculation, including actual part-month practice, remains a specific unresolved point. [Social Insurance Law s104(1A)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253497); [supplementary control](../../research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md).
+Do not apply the income-tax surcharge formula to social insurance. **Social Insurance Law s104(1A)** makes an employer's overdue primary/secondary Class 1 contributions subject to an initial **2.5% penalty** plus **2.5% per month interest on the outstanding contribution from its due date until paid**. The statutory text does not supply the older manual's £50 minimum or its six-month tax-surcharge interval for this provision. For an unchanged £5,000 contribution principal and an established two full months outstanding, the statutory arithmetic is £125 penalty plus £250 interest = £375, before the facts of any payment, part-month calculation or authority relief. Do not compound that interest on the penalty without an applicable source. The older employer-manual treatment above is preserved as attributed administrative guidance; its reconciliation with the statutory monthly calculation, including actual part-month practice, remains a specific unresolved point. [Social Insurance Law s104(1A)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253497); [supplementary control](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md).
 
 The **employer registration/schedule default** route is section 17A: by notice the Director can impose up to **£300**, with up to **£50 per continuing day after the original penalty is imposed** for the schedule failure. These are ceilings tied to the statutory trigger, not an automatic charge on every debt. Sections 17E–17F have a different notice route: the fixed penalty has a prescribed amount capped at £50,000 and a payment date at least four weeks after issue; the escalating notice requires the stated prior fixed notice and continuing non-compliance, with the prescribed daily rate capped at £10,000. A ceiling alone does not establish the prescribed charge. Pending review/appeal of the specified underlying notices restricts issue of these further notices as sections 17E(2) and 17F(2) provide. Keep the actual notice, prescribed-rate authority, service/issue dates, required action and eventual compliance date. [Social Insurance Law ss17A,17E–17H](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253497).
 
@@ -295,25 +292,25 @@ Both examples use the [2026 leaflet, p19](https://gov.gg/CHttpHandler.ashx?id=10
 
 **Ongoing eligible benefit.** Assume individual medical cover costs £100 monthly, no specific exemption/concession applies, and the full £900 general exemption is available for the year. Following section 9's example, allocate £75 exemption monthly, leaving a £25 monthly taxable benefit. Annual taxable benefit is £300. Add £25 to the applicable monthly payroll base; do not deduct £900 every month. [Section 9, example 3](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 **Employer bears income tax.** For an established £5,000 taxable benefit, with 20% applying throughout and no remaining exemption/allowance affecting the incremental charge, grossed-up income is £6,250. The £1,250 tax reimbursement is itself taxable and total income tax is £1,250, leaving £5,000 after tax. This reproduces the E4 mechanism; contributions and pension costs are additional analyses. [SoP E4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 ### Vehicle and housing boundary examples
 
 **Gross car cost.** A car costs £30,000 before a £5,000 trade-in, plus £3,000 extras. The employee contributes £2,000 to the extras. Following Fact Sheet 1's example, the benefit cost basis is £31,000. If no exemption or limited category applies, the annual benefit is **£6,200**. The cash paid after trade-in is not the benefit cost basis. [Fact Sheet 1, sections 2.2 and 4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 **Strict business-use boundary.** Assume a £30,000 employer car, 10,000 total miles, no exemption, no qualifying pool arrangement, and private use beyond commuting. At 7,500 business miles the fraction is exactly 75%, which fails the **more-than-75%** test; the ordinary annual value is £6,000. At 7,510 miles it is 75.1%, satisfying that limb and giving the £1,565 limited value. Mileage evidence and the other assumptions decide classification; arithmetic alone does not. [Fact Sheet 1, section 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 **Furnished housing election.** Assume a full-year ordinary non-proprietary employee with an independently established £40,000 assessable-emoluments base, no contributions and a supported £6,000 annual open-market rental value. The percentage benefit is £7,000. With a valid timely election, the rental-value cap gives £6,000; without it, this calculation does not establish entitlement to the lower amount. Utilities remain separate. [Fact Sheet 2, section 2; SoP E24](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 ## Ask the client first
 
@@ -353,32 +350,12 @@ Original sources read on 22 October 2026: [Benefits in Kind Guide 2026](https://
 | [Original 2010 Valuation Regulations](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267223), [current consolidation](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267239), [2025 amendment](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265330) | Original reg5 including page4 fraction visually checked; current rr1–2,5–6; complete2025 rr1–7. Statutory annual car value controls over the inconsistent monthly guidance illustration | 2026-10-28 |
 | [Exemption Ordinance](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263414), [authentic 2022 No.3 amendment](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263409) | ss1,2(1)(v),2(2),3 and notes;2022ss12,14: one annual aggregate eligible-benefit exemption,900from2023 | 2026-10-28 |
 
-Not yet confirmed: exact Class 3 lower-limit/deeming interaction under regulation 38(1), (6)–(7), Class 2/3 penny rounding beyond the published weekly limits, and authority-directed part-year reassessment outcomes; actual contribution part-month interest and reconciliation of older manual relief with s104(1A), prescribed fixed/escalating penalty amounts and full notice-specific enforcement procedures; current employer-specific £900 withholding allocation instructions (the statutory annual aggregate and car day-based reconciliation are supplied); share schemes, relocation and scheme-specific pension/foreign coverage cases. These are explicit limits, not nil-charge findings. The new 28 October ordinary-contribution, benefit-period and enforcement methods are checked in the [fresh ordinary-method whole-pack review](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); earlier published review covers their predecessor. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; professional attestation remains pending. The subsequent statutory car reconciliation and annual £900 aggregate methods are accepted within their stated limits in the [statutory-benefit and domestic-TP whole-pack review](../../research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) and [final status closure](../../research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md); those earlier reviews cover the published predecessor.
+Not yet confirmed: exact Class 3 lower-limit/deeming interaction under regulation 38(1), (6)–(7), Class 2/3 penny rounding beyond the published weekly limits, and authority-directed part-year reassessment outcomes; actual contribution part-month interest and reconciliation of older manual relief with s104(1A), prescribed fixed/escalating penalty amounts and full notice-specific enforcement procedures; current employer-specific £900 withholding allocation instructions (the statutory annual aggregate and car day-based reconciliation are supplied); share schemes, relocation and scheme-specific pension/foreign coverage cases. These are explicit limits, not nil-charge findings. The new 28 October ordinary-contribution, benefit-period and enforcement methods are checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); earlier published review covers their predecessor. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; professional attestation remains pending. The subsequent statutory car reconciliation and annual £900 aggregate methods are accepted within their stated limits in the [statutory-benefit and domestic-TP whole-pack review](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) and [final status closure](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md); those earlier reviews cover the published predecessor.
 
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-payroll-social-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-payroll-social-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-payroll-social-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-payroll-social-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.

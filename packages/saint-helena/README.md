@@ -7,10 +7,13 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `sh-company-income-tax.md`
-4. `sh-individual-tax-residence.md`
-5. `sh-paye-compliance.md`
-6. `sh-personal-income-tax.md`
+3. `README.md`
+4. `sh-company-income-tax.md`
+5. `sh-cross-border.md`
+6. `sh-individual-tax-residence.md`
+7. `sh-paye-compliance.md`
+8. `sh-personal-income-tax.md`
+9. `sh-services-tax.md`
 
 ## How to use
 

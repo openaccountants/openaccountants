@@ -4,11 +4,10 @@ description: "The US taxes citizens wherever they live. What that actually means
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-08-03
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: cross-border
 ---
 
 # The American abroad: why moving never ends your US tax life
@@ -244,21 +243,3 @@ California FTB Publication 1031 and equivalents.
 cross-border tax problem never ends — which also makes them the clients who need a named,
 credentialed accountant on both ends of every move, permanently. Every figure above
 inflation-adjusts annually: treat numbers as pointers to their primary sources.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

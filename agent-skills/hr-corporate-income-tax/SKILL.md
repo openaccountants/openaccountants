@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "HR"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Croatia: profit tax (2026) v0.2
@@ -254,24 +252,6 @@ expected:
 Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law; the register lists the Interest Act (NN 94/04), whose rate decree (NN 153/04, 15%) predates the Obligations Act art. 29 formula, and no Tax Administration text naming the 2026 rate was found. The Croatian National Bank lists the Obligations Act art. 29 non-commercial default rate at 5.40% for 1 July to 31 December 2026 (https://www.hnb.hr/documents/d/guest/h-tablica_max-nks-eks-1), but no official text was found saying that rate applies to tax debts. Also not confirmed: whether the advance for March or for April is the first one paid at the new amount (Rulebook art. 48(1) fixes it on 30 April); the list of bodies named for the new sponsorship deduction (the art. 6(8) decision was not read); EU directive and treaty relief from withholding (left to the cross-border skill); and the content of the Investment Promotion Act and Tourism Act reliefs, which this skill only flags.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

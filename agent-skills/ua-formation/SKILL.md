@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UA"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # UA Formation
@@ -35,7 +33,6 @@ This skill covers **how a self-employed person sets up a business in Ukraine**: 
 | Living wage (прожитковий мінімум) 2026 | ₴3,328 for an able-bodied person *(verify current value)* |
 | Primary legislation | Tax Code of Ukraine (Податковий кодекс); Law "On State Registration of Legal Entities, Individual Entrepreneurs and Public Formations" No. 755-IV; Law "On Limited and Additional Liability Companies" No. 2275-VIII; Law on ЄСВ No. 2464-VI |
 | Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a Ukrainian accountant |
 | Skill version | 1.0 |
 
 > **Wartime note (martial law):** Figures below are as of **1 January 2026**. Single-tax fixed amounts and the ЄСВ minimum are pinned at their 1-Jan values for the whole year and do **not** change mid-year. The elevated 5% military levy (військовий збір) on wages and the 1% military levy on Group 3 income remain in force under martial law. *(Verify current procedure — wartime rules change frequently.)*
@@ -240,24 +237,6 @@ Stop and route to a credentialed Ukrainian accountant/lawyer when:
 ## Disclaimer
 
 This skill is **research-verified** against public sources (State Tax Service tax.gov.ua, Diia diia.gov.ua, Ministry of Justice, and Big-4/PwC material) for the **2026** tax year as of **May 2026**, but is **pending sign-off by a qualified Ukrainian accountant**. Ukrainian rules — especially under martial law — change frequently; figures, thresholds, and procedures marked "verify current value/procedure" must be confirmed against current official sources before relying on them. This is general information, **not** tax, legal, or accounting advice, and does not create a professional relationship. Every output must be reviewed and signed off by a qualified Ukrainian accountant or licensed adviser before it reaches a taxpayer or any authority. Part of the Open Accountants open-source tax-skills project — **openaccountants.com**.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

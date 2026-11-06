@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pt-foreign-source-treaties"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Portugal: foreign income of residents and double tax relief (tax year 2026)
@@ -232,26 +230,6 @@ expected:
 
 Not yet confirmed: per-country treaty withholding rates (the AT treaty tables were not read; read each treaty); the MLI ratification and entry-into-force dates for Portugal and which treaties it modifies; whether the IFICI exempt income or 20% income changes the rate applied to a foreign pension that is aggregated (art. 81(4) says exempt income counts for the rate on other income, but AT guidance on this case was not read); whether the 25% residential rent rate of art. 72(2) is applied by AT to foreign property; the Anexo J table and code numbers (the 2027 return instructions were not read); the current list of low-tax jurisdictions (Portaria 150/2004 as amended); the late payment interest rate for 2027.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-foreign-source-treaties` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-foreign-source-treaties. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-foreign-source-treaties` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-foreign-source-treaties. If neither is available, confirm every figure against the official source pages cited above before relying on it.

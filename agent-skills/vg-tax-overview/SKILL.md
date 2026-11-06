@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "VG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # British Virgin Islands Tax Overview
@@ -32,24 +30,6 @@ The British Virgin Islands is a no-direct-tax jurisdiction: there is no personal
 - **Basis of taxation** — Not income-based; Payroll Tax applies to remuneration paid by employers/self-employed persons carrying on business in the BVI, regardless of residence  _(Payroll Taxes Act, 2004)_
 - **Main recurring filing deadline (Payroll Tax)** — Monthly — payroll tax return and payment due by the 21st day of the following month ((approx — confirm))  _(Payroll Taxes Act, 2004)_
 - **Annual land and house tax due date** — Due annually by 1 September  _(Land and House Tax Act)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

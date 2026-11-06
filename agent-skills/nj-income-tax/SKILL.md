@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-NJ"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # New Jersey gross income tax (Forms NJ-1040 and NJ-1040NR), including sole proprietors
@@ -268,24 +265,6 @@ Assumed facts, computed with the rate schedules. Below $100,000 of line 42 the r
 - [ ] BAIT share from Schedule NJ-BUS-1 on line 63, with Schedule PTE-K-1 or NJK-1 enclosed.
 - [ ] Use tax line 51 completed (0.00 if none) and health coverage questions answered.
 - [ ] Extension only with at least 80% paid by 15 April; 2026 estimates set up if the tax will be more than $400.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

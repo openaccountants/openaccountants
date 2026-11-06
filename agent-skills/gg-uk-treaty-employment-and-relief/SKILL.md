@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "GG"
   tax_year: "2026"
   last_updated: "2026-10-29"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Guernsey–UK: residence, employment, investment income and relief
@@ -61,11 +59,11 @@ Other articles continue to govern separately covered income/gains under Article 
 
 **Ownership boundary example:** assume 100 equal beneficial interests with no special rights or indirect interests. Holding 50 is 50%; holding 51 is 51%. Only the latter necessarily meets the more-than-50% numerical limb. Both still require the paragraph 5 business facts, and the first can be closely related through factual control. The arithmetic does not decide a PE.
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 **Attribution working-paper illustration:** assume a separately supported Article 7 analysis attributes £200,000 revenue and £130,000 allowable costs to a PE. Attributed profit is **£70,000**. If review of an internal dealing establishes an additional £10,000 attributable profit adjustment, the revised base is **£80,000**. These are hypothetical evidence inputs, not a treaty-prescribed margin, cost deduction or tax rate. Apply domestic tax law and corresponding-adjustment procedures separately.
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 Unresolved: detailed project aggregation/timing, remote-worker premises analysis, agency interpretation and transaction-specific attribution, including unsupported internal financing or head-office charges. The ordinary domestic base and return sequence is supplied below; the illustrations do not establish a PE or validate those fact-dependent amounts.
 
@@ -123,7 +121,7 @@ If the holding is effectively connected with the beneficial owner's permanent es
 
 **Ceiling example:** for an established qualifying property-income dividend of £10,000, the treaty ceiling is **£1,500**. If independently verified domestic source tax would be £2,000, the treaty-limited amount is £1,500, subject to claim procedures. If domestic tax instead is £1,000, the treaty does not raise it to £1,500. No domestic rate is asserted by these assumed figures.
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 ### Interest and royalties: qualifying owners differ
 
@@ -133,7 +131,7 @@ Interest has additional express routes, including a pension scheme, bank/buildin
 
 For the ownership route, a company with 24% non-resident ownership passes the numeric limb; exactly 25% does not. Count direct and indirect shares or other rights using supported ownership records. Failure of this route does not rule out another paragraph 3 route. For example, 24 of 100 equal shares represent 24%, while 25 represent 25%; no alternative rights or indirect holdings are assumed in this illustration.
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 Interest and royalty source is generally the payer's residence, subject to the relevant permanent-establishment liability/cost-bearing provisions in paragraph 7. Effectively connected debt claims or IP rights require the paragraph 6/Article 7 analysis. Article 12(6)'s published wording refers specifically to paragraph 1; its interaction with paragraph 2 needs case-specific review rather than silently rewriting the treaty. The excessive related-party amount restrictions in paragraph 8 are addressed below. Classification, beneficial ownership, permanent-establishment connection and claim clearance are not established by a payment description alone. [Articles 11(5)–(8), 12(5)–(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
@@ -149,7 +147,7 @@ Articles 11(8) and 12(8) separately limit their interest/royalty provisions to t
 
 **Adjustment illustration:** assume an accepted pricing analysis establishes independent-enterprise remuneration of £120,000 for a service priced at £90,000 and that the Article 9 conditions are met. The profit adjustment under review is **£30,000**. If the same profit was already included in the counterparty's tax base, identify that overlap for the corresponding-adjustment request; do not treat £30,000 as the tax refund. Likewise, if a £50,000 related-party interest payment has an established independent amount of £40,000, separate the **£10,000 excess** before testing the relevant treaty article. The benchmark figures are assumed evidence, not published safe-harbour prices or rates.
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 ### Domestic connected-party controls: keep their scope distinct
 
@@ -167,7 +165,7 @@ For a UK-resident company entitled to this treaty, establish the Article 5 PE an
 4. Register the foreign company/branch/PE using the currently linked **Form 706 (08/21)**. It requires registration by **14 July after the first calendar year for which a return is required**, and instructs submission to **revenueservice@gov.gg**, subject **Foreign Incorporated Company Registration**. Complete company/PE identity, activities, period and contact particulars; retain representative authority. Its opening instructions expressly include branches/PEs, but **section 6 requires a declaration of central management/control or control in Guernsey**. Check that declaration against the actual facts; do not sign either statement unless true. If neither fits the non-resident PE, obtain Revenue Service's completion instructions before submission. The opening PE reference does not permit a false residence/control declaration or settle that completion gap. [Form 706, opening instructions and sections 1–6](https://gov.gg/CHttpHandler.ashx?id=183549&p=0).
 5. Complete the company income return and required accounts, identifying the Guernsey source/rate calculation and treaty position. Section 68 applies following the actual individual or published notice even where no tax is payable; its specified period cannot be shorter than 21 days from issue. Section 68AA requires electronic company returns/attachments unless the Director permits another form. The current company page's **30 November 2026 deadline concerns the 2025 return**, not an announced deadline for 2026 income. Track that later return's actual notice and assessment instalments using the [company filing/payment method](gg-corporate-tax-substance.md#statutory-assessment-payment-dates). [Sections 68,68AA,81](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [current company page](https://gov.gg/RevenueService/Companies).
 
-**Domestic bridge illustration:** assume a supported attribution gives £200,000 revenue and £130,000 accounts costs, including £10,000 book depreciation. All other costs qualify, independently established statutory capital allowances are £5,000, and there are no losses or other adjustments. Accounts profit £70,000 + £10,000 depreciation − £5,000 allowances gives **£75,000 taxable profit**. Established standard-rate income produces £0 tax; the same base in an established 10% category produces £7,500. This compares classifications; it neither establishes either category nor dispenses with the return. [Sections 7,84–86 and Fifth Schedule](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [supplementary controls](../../research/guernsey-2026/remaining-methods-2026-10-28/controls.md).
+**Domestic bridge illustration:** assume a supported attribution gives £200,000 revenue and £130,000 accounts costs, including £10,000 book depreciation. All other costs qualify, independently established statutory capital allowances are £5,000, and there are no losses or other adjustments. Accounts profit £70,000 + £10,000 depreciation − £5,000 allowances gives **£75,000 taxable profit**. Established standard-rate income produces £0 tax; the same base in an established 10% category produces £7,500. This compares classifications; it neither establishes either category nor dispenses with the return. [Sections 7,84–86 and Fifth Schedule](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [supplementary controls](../../evidence/research/guernsey-2026/remaining-methods-2026-10-28/controls.md).
 
 ## Pensions and government service
 
@@ -212,7 +210,7 @@ The exception concerns shares with **substantial and regular trading on a recogn
 
 **Value boundary:** assume supported valuations, ordinary untraded shares, no offshore activity and no other applicable allocation rule. With total value of £1m and £500,000 derived from relevant property, the ratio is exactly 50% and does not exceed the threshold. At £510,000 of relevant property value, the ratio is 51%, so this value condition is met. Neither result establishes the domestic gain or tax payable.
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 Movable business property of a PE, including disposal of the PE itself, can be taxed in the PE territory. Gains of an enterprise operating ships or aircraft in international traffic from those vessels/aircraft and associated operating movables are allocated exclusively to its territory. Other gains fall to the alienator's residence territory under Article 13(5), subject to the agreement's other applicable provisions. [Article 13(3)–(5)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
@@ -224,7 +222,7 @@ The paragraph 4 exception applies where relevant activity totals **no more than 
 
 **Aggregation boundary:** assume one enterprise has 22 days and an associated enterprise has 14 substantially similar days, with six overlapping days, in a tested twelve-month window. The total is **22 + 14 − 6 = 30** days. One additional non-overlapping day gives 31 and defeats this particular exception. Check every relevant window and the actual activity facts before reaching a PE conclusion.
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 Paragraph 5 instead allocates specified supply/personnel transport and towing/anchor-handling profits exclusively to the resident's territory. Paragraph 6 allows the activity territory to tax the specified exploration/exploitation-rights income and disposal gains, relevant property gains, and shares whose value or greater part of value derives from those rights/property. The paragraph 4 enterprise-duration exception is not a blanket exemption from paragraph 6. [Article 21(5)–(6)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
@@ -352,9 +350,9 @@ Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media
 | Guernsey Form 675 (02/23), both pages, and its current index linkage | https://gov.gg/CHttpHandler.ashx?id=149847&p=0 and https://gov.gg/revenue-service/income-tax-forms | 2026-10-28 |
 | Form 706 opening instructions/sections 1–6; current Law ss6–7,47G–47I,68,68AA,81,84–86 and Fifth Schedule, limited cited provisions | https://gov.gg/CHttpHandler.ashx?id=183549&p=0 and https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-28 |
 
-The ordinary PE domestic bridge/electronic-return and UK pension submission additions are accepted at `cd3dc1b8` in the [bounded independent source/no-loss review](../../research/guernsey-2026/remaining-methods-2026-10-28/independent-review/report.md). The non-resident PE registration declaration-completion gap, Guernsey domestic credit submission and the other exact limits below remain unresolved. The earlier reviews cover their accepted predecessor.
+The ordinary PE domestic bridge/electronic-return and UK pension submission additions are accepted at `cd3dc1b8` in the [bounded independent source/no-loss review](../../evidence/research/guernsey-2026/remaining-methods-2026-10-28/independent-review/report.md). The non-resident PE registration declaration-completion gap, Guernsey domestic credit submission and the other exact limits below remain unresolved. The earlier reviews cover their accepted predecessor.
 
-Not yet confirmed: full domestic transfer-pricing/documentation scope, transaction-specific PE attribution/internal-dealing support and Form 706 completion for a non-resident PE unable truthfully to make either section 6 declaration; the ordinary domestic bridge and electronic-return procedure are supplied, Guernsey domestic credit submission forms and any separate domestic change-notification deadline beyond section 173(10), domestic pension/ordinary-residence/lump-sum classification, arbitration-specific intake and the stated arbitration-status discrepancy, and source-specific exit/disposal tax. Other treaty corridors are excluded. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. The new domestic relief methods are checked in the [fresh ordinary-method whole-pack review](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); the earlier review covers the published predecessor. The later current-MAP-intake extension is accepted within its stated limits in the [statutory-benefit and domestic-TP whole-pack review](../../research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) and [final status closure](../../research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md).
+Not yet confirmed: full domestic transfer-pricing/documentation scope, transaction-specific PE attribution/internal-dealing support and Form 706 completion for a non-resident PE unable truthfully to make either section 6 declaration; the ordinary domestic bridge and electronic-return procedure are supplied, Guernsey domestic credit submission forms and any separate domestic change-notification deadline beyond section 173(10), domestic pension/ordinary-residence/lump-sum classification, arbitration-specific intake and the stated arbitration-status discrepancy, and source-specific exit/disposal tax. Other treaty corridors are excluded. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. The new domestic relief methods are checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); the earlier review covers the published predecessor. The later current-MAP-intake extension is accepted within its stated limits in the [statutory-benefit and domestic-TP whole-pack review](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) and [final status closure](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md).
 
 Additional source read on **28 October 2026**: [Revenue MAP Guidance issue8,12 February 2024](https://www.gov.gg/CHttpHandler.ashx?id=178595&p=0), sections7.1–7.4 and7.7.1–7.7.5. Other sections were not used to resolve the retained arbitration conflict.
 
@@ -363,24 +361,6 @@ Additional source read on **28 October 2026**: [Revenue MAP Guidance issue8,12 F
 Source-cited draft. A qualified reviewer must establish the taxpayer's facts, domestic law and treaty entitlement before filing, paying or relying on relief.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -5,19 +5,18 @@ version: 2.0
 jurisdiction: TZ
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Baraka Cassian, CPA, CA, CTA
-reviewed_by: Baraka Cassian
-review_status: current
-trust_label: Checked by Baraka Cassian
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Baraka Cassian"
+reviewed_on: 2026-11-03
+tier: 1
+domain: vat-gst
 ---
 
 # Tanzania VAT
 
 ## Tanzania VAT Return Skill v2.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Baraka Cassian** on 2026-06-12.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -71,7 +70,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Primary legislation | VAT Act 2014 (Act No. 5) |
 | EAC members | Kenya, Uganda, Rwanda, Burundi, South Sudan, DRC |
 | Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
 | Last research update | April 2026 |
 
 ## Section 2 -- Required inputs and refusal catalogue
@@ -167,23 +165,3 @@ Out of scope: CIT 30%, PAYE 0%-30%, SDL 4%, NSSF/PPF 10%+10%.
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -50,7 +50,6 @@ e-invoice), ИС ЭСФ (information system for ЭСФ), ККМ (контрол�
 | Unit of account | МРП (MCI). For 2026, 1 МРП = **verify current value** (widely reported ~4,325 KZT — confirm against the 2026 budget law) |
 | Retention | Generally **5 years** for tax records and primary documents — verify under the new Tax Code |
 | Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Version | 1.0 |
 
 ### Conservative defaults (apply when facts are missing or ambiguous)

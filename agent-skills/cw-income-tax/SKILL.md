@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CW"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Curacao Personal Income Tax
@@ -28,24 +26,6 @@ metadata:
 - **Expatriate (deskundige) regime** — Qualifying foreign experts may exclude certain reimbursements; from 1 February 2025 the regime requires mandatory training of local employees  _([Income Tax Ordinance / Wage Tax expatriate decree](https://www.grantthornton.com.cw/insights/TaxLawChanges2025/))_
 - **Wage tax as advance levy** — Wage tax (loonbelasting) withheld by employers is creditable against the final income tax liability  _(Wage Tax Ordinance (Landsverordening op de loonbelasting 1976))_
 - **Income tax return filing deadline** — Within the period stated on the assessment/invitation; commonly by 31 May following the tax year, with extensions available on request (approx — confirm exact date)  _(General National Ordinance on National Taxes (Algemene landsverordening Landsbelastingen))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "SE"
   tax_year: "2026"
   last_updated: "2026-09-25"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Sweden cryptoasset tax: calculate, reconcile and report
@@ -134,24 +131,6 @@ Keep bank and exchange records, wallet ownership evidence, transaction hashes, v
 - Unclear NFT underlying rights or use; self-created assets; compensation/airdrop/fork characterisation; wrappers or staking arrangements outside the sourced facts: resolve the specific legal classification before finalising those transactions.
 - Entity holdings, business inventory, disputed residency, foreign-entity/CFC structures and emigration: use the relevant taxpayer and treaty method. Do not apply a general crypto exit-tax rule or an invented residence-duration test; the Income Tax Act's limited-taxpayer asset scope and treaties require separate analysis.
 - Unresolved insolvency, fictitious/related-party loss, missing entitlement, or material uncertain deduction: obtain a reasoned decision from an appropriately qualified Swedish adviser before claiming it. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

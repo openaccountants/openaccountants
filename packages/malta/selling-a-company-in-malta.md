@@ -4,21 +4,20 @@ description: "Working method for the accountant handling a sale of shares in a M
 jurisdiction: MT
 category: international
 tax_year: 2026
-last_updated: 2026-10-23
-version: 1.1
-verified_by: pending
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
+last_updated: 2026-11-04
+version: 1.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
-# Selling a company in Malta v1.1
+# Selling a company in Malta v1.2
 
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/selling-a-company-in-malta.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Tax year 2026. This skill is the working order for a share sale. The income tax rules on the gain (article 5 of the Income Tax Act, the participation exemption, non-resident and listed-share exemptions) are in `mt-capital-gains` and `mt-holding-company-participation-exemption`; it does not repeat them.
+
+**Execution hold:** the prescribed property-company share provisional-tax amount and the Commissioner notification deadline/late-notification duty consequences are not verified here. Do not execute a transfer or produce a filing package using this workflow until those inputs and any applicable exemption are established from current official authority. The two filing periods below are different obligations; satisfying one does not establish the other.
 
 ## METHOD
 
@@ -110,7 +109,50 @@ The market value working, the duty computation, the property valuation and site 
 
 Until v1.1 this file held a copy of the rental income skill under the company-sale title. That text has been removed; it lives in `how-to-account-for-rental-income-in-malta`.
 
-## Sources
+## Worked duty examples: computations only
+
+Assume an ordinary taxable sale with no duty exemption or relief, and an accepted share real value. The first company fails the property-company duty test; the second meets it. These computations do not establish the seller's gain, provisional tax, property valuation, notification deadline or a complete filing package. The execution hold above remains.
+
+### Example 1: non-property company, real value above price
+
+Price EUR 100,000; accepted real value EUR 120,000. The higher base is EUR 120,000; at 2%, duty is EUR 2,400 (Cap. 364 article 42). Both amounts are exact multiples of EUR 100, so no part-of-hundred rounding issue arises.
+
+```oa-check
+name: Non-property share sale with real value above consideration
+inputs:
+  consideration: 100000
+  real_value: 120000
+steps:
+  - duty_base: max(consideration, real_value)
+  - duty: ceil(duty_base / 100) * 2
+expected:
+  duty_base: 120000
+  duty: 2400
+```
+
+### Example 2: property-company duty test established separately
+
+Price EUR 200,000; accepted real value EUR 180,000. Assume the article 42(2) property-company condition is met. Duty is 2% plus three additional euro per EUR 100 or part, giving EUR 10,000 on the higher EUR 200,000 base. This is share-transfer duty, not a property-transfer income-tax rate.
+
+```oa-check
+name: Property-company share sale with consideration above real value
+inputs:
+  consideration: 200000
+  real_value: 180000
+steps:
+  - duty_base: max(consideration, real_value)
+  - basic_duty: ceil(duty_base / 100) * 2
+  - property_addition: ceil(duty_base / 100) * 3
+  - total_duty: basic_duty + property_addition
+expected:
+  duty_base: 200000
+  basic_duty: 4000
+  property_addition: 6000
+  total_duty: 10000
+```
+
+
+## Historical source references
 
 | Source | URL | Read on |
 |---|---|---|
@@ -132,20 +174,13 @@ Not yet confirmed:
 - The deadline for notifying the Commissioner of a share transfer, and the late-notification duty penalty.
 - Budget 2027 is presented on 26 October 2026; nothing from it is reflected here.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| Cap372 art43 | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap364 art42(1) | https://legislation.mt/eli/cap/364/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 
-## Talk to a verified accountant
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

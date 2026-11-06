@@ -4,12 +4,11 @@ description: ALWAYS read this skill before touching any Sri Lanka withholding ta
 jurisdiction: LK
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Lal kumarasiri, CA
-reviewed_by: Lal kumarasiri
-review_status: current
-trust_label: Checked by Lal kumarasiri
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Lal kumarasiri"
+reviewed_on: 2026-11-03
+tier: 1
+domain: cross-border
 ---
 
 # Sri Lanka Withholding Tax
@@ -47,7 +46,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Statute | Inland Revenue Act No. 24 of 2017, as amended by Act No. 02 of 2025 (eff. 1 April 2025) |
 | Year of assessment | 1 April – 31 March |
 | Mechanism | AIT (Advance Income Tax) deducted at source by the payer; creditable against the recipient's income tax |
-| Validated by | Pending — Sri Lankan CA / IRD-registered practitioner |
 | Skill version | 1.0 |
 
 - **Country / authority** — Sri Lanka — Inland Revenue Department (IRD)
@@ -181,21 +179,3 @@ Remittance and statement due dates — VERIFY against the current IRD WHT/AIT sc
 ## Disclaimer
 
 This skill and its outputs are for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Sri Lankan professional (CA / IRD-registered tax practitioner) before filing or acting upon. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

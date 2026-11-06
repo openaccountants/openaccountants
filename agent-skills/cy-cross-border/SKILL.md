@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cy-cross-border"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Cyprus cross-border tax: residence, non-residents, leaving, withholding (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Cyprus taxes on the calendar year. Residence is tested year by year, and the law has no split-year rule: a person is resident or non-resident for the whole year. All article numbers below are to the Greek consolidated texts on CyLaw, which include the 2025 reform laws (Income Tax Law amendments up to 67(I)/2026). CyLaw is not the official gazette.
 
@@ -233,26 +228,6 @@ expected:
 
 Not yet confirmed: the jurisdictions on the EU Annex I list at each payment date (the Council page refused automated access); the Tax Department's own guidance pages on gov.cy (they refuse automated access and were not read for this skill); whether the second 5% late-payment charge in article 50A(e) also applies to article 24 withholding; any treaty rates.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

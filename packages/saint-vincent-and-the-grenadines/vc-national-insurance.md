@@ -2,16 +2,14 @@
 name: vc-national-insurance
 description: >
   Saint Vincent and the Grenadines national insurance contribution reference checked for 2026. Covers ordinary employee and employer shares, current weekly and monthly earnings ceilings, earnings inclusions, registration and monthly remittance. Includes worked payroll examples and a distinction between cash salary and remuneration in kind. Uses current NIS employer guidance and the published contribution regulations, while expressly separating superseded historical rate and age provisions from current rules. Use after employment coverage is established. Special age groups, multiple employers, self-employment, benefit entitlement and the complete amendment chain require further review. Independent accountant review is pending.
-version: 0.1
+version: 0.2
 jurisdiction: VC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Saint Vincent and the Grenadines national insurance
@@ -47,23 +45,3 @@ Reconcile worker registration numbers, period earnings, the capped base and both
 ## Legislative limits
 
 The downloadable regulations are an older compilation. Their historical rate and age provisions have not been used as the current 2026 schedule. Current figures above come from NIS's employer guidance; the complete later amendment chain remains to be reconciled before merge. Age transitions, special coverage, multiple employers, self-employed and voluntary contributions, penalties and benefits require separate analysis. Independent accountant review is pending.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

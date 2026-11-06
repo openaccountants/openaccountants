@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "GT"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Guatemala Payroll
@@ -35,7 +33,6 @@ metadata:
 | Recreation levy authority | Instituto de Recreación de los Trabajadores (IRTRA) |
 | Key legislation | Ley de Actualización Tributaria (Decreto 10-2012); Código Tributario (Decreto 6-91); Bonificación Incentivo (Decreto 78-89); Aguinaldo (Decreto 76-78); Bono 14 (Decreto 42-92) |
 | Filing portal | SAT — Agencia Virtual / RetenISR (Sistema de Retenciones Web -ISR-) (portal.sat.gob.gt) |
-| Validated by | Pending -- requires sign-off by a licensed Guatemalan Contador Público y Auditor / tax adviser |
 | Skill version | 0.1 |
 
 **Read this whole section before computing anything. The shared payroll runbook lives in `payroll-workflow-base` — follow that runbook with this skill supplying the Guatemala-specific content.**
@@ -624,26 +621,6 @@ Run these to validate any implementation of this skill. Expected results use 202
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed Contador Público y Auditor or tax adviser in Guatemala) before implementation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

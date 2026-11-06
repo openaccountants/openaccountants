@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Tonga (t
 jurisdiction: TO
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Tonga Company Formation & Entity Choice
@@ -25,21 +24,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Outcome of registration** — Certificate of Incorporation issued and the company listed on the Tongan Register  _(Companies Act 1995 (https://www.businessregistries.gov.to/header-footer/how-to-register-a-company-2/))_
 - **Online registry system** — New online registration system for companies, business licenses, business names and foreign investments launched 11 December 2024  _(Companies Regulations 2025 (https://www.businessregistries.gov.to/))_
 - **Core annual compliance** — File annual return with the Registrar, maintain a registered office and records, file annual income tax return, and file periodic Consumption Tax returns if registered (approx — confirm annual return due date)  _(Companies Act 1995)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

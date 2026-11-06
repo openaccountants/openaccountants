@@ -8,16 +8,13 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
 ---
 
 # US Sole Prop Bookkeeping
 
 ## US Sole Prop Bookkeeping Skill v2.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **a licensed accountant** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -660,13 +657,17 @@ Per the xlsx skill: blue for hardcoded values from the bank statement (Columns A
 
 ### Mandatory recalc step
 
-After building the workbook, run:
+After building the workbook, recalculate every formula and cache the results so the
+values can be read back. On a normal machine, recalc with LibreOffice headless:
 
 ```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/schedule-c-<year>-working-paper.xlsx
+soffice --headless --convert-to xlsx --outdir /tmp /mnt/user-data/outputs/schedule-c-<year>-working-paper.xlsx
 ```
 
-Check the JSON output. If `status` is `errors_found`, fix and re-run. If `status` is `success`, present via `present_files`.
+Then re-open the converted file and confirm no cell shows a formula error before
+presenting it.
+
+Check the converted file for formula errors. If any cell shows an error, fix the formulas and recalc again. If clean, present via `present_files`.
 
 ## Section 8 — US bank statement reading guide
 
@@ -835,26 +836,6 @@ This skill is incomplete without the companion workflow file loaded alongside it
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/albania-income-tax"
   jurisdiction: "AL"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Albania personal income tax, tax year 2026
@@ -254,26 +252,6 @@ expected:
 
 Not yet confirmed: the payment date for the balance on DVAP and on the annual business return (Law 29/2023 art. 61 sets only the filing date, and tatime.gov.al refers to "official instructions"); whether a self-employed person's or trader's late business return is fined ALL 3,000 (art. 113(c), individuals) or ALL 5,000 (art. 113(b)); how "gross income" is measured for the ALL 14,000,000 test in art. 69(1)(dh); the tatime.gov.al self-employed page says "three or fewer clients" for the 90% test while art. 12(1)(ç) says "fewer than 3" (this skill follows the law); how employment income from a foreign employer with no Albanian payroll agent is taxed during the year; the Council of Ministers decision classifying activities for the art. 14 presumed-expense rates; the 2026 national minimum wage that caps the private pension deduction under art. 20(4) (see `albania-social-contributions`).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `albania-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/albania-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `albania-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/albania-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,31 +7,32 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `do-asset-tax.md`
-4. `do-capital-gains-tax.md`
-5. `do-company-formation.md`
-6. `do-corporate-income-tax.md`
-7. `do-customs.md`
-8. `do-donations-estates.md`
-9. `do-municipal-taxes.md`
-10. `do-real-estate-tax.md`
-11. `do-selective-consumption-tax.md`
-12. `do-simplified-regimes.md`
-13. `do-special-tax-regimes.md`
-14. `do-tax-defense.md`
-15. `do-tax-overview.md`
-16. `do-tax-registration.md`
-17. `do-tax-treaties.md`
-18. `do-transfer-pricing.md`
-19. `do-withholding-tax.md`
-20. `dominican-republic-income-tax.md`
-21. `dominican-republic-itbis.md`
-22. `dominican-republic-payroll.md`
-23. `dominican-republic-social-contributions.md`
-24. `dominican-republic-tax-optimization.md`
-25. `payroll-workflow-base.md`
-26. `company-formation-workflow-base.md`
-27. `transfer-pricing-workflow-base.md`
+3. `README.md`
+4. `do-asset-tax.md`
+5. `do-capital-gains-tax.md`
+6. `do-company-formation.md`
+7. `do-corporate-income-tax.md`
+8. `do-customs.md`
+9. `do-donations-estates.md`
+10. `do-municipal-taxes.md`
+11. `do-real-estate-tax.md`
+12. `do-selective-consumption-tax.md`
+13. `do-simplified-regimes.md`
+14. `do-special-tax-regimes.md`
+15. `do-tax-defense.md`
+16. `do-tax-overview.md`
+17. `do-tax-registration.md`
+18. `do-tax-treaties.md`
+19. `do-transfer-pricing.md`
+20. `do-withholding-tax.md`
+21. `dominican-republic-income-tax.md`
+22. `dominican-republic-itbis.md`
+23. `dominican-republic-payroll.md`
+24. `dominican-republic-social-contributions.md`
+25. `dominican-republic-tax-optimization.md`
+26. `payroll-workflow-base.md`
+27. `company-formation-workflow-base.md`
+28. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "NE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Niger VAT / GST
@@ -26,24 +24,6 @@ Niger levies a value-added tax (Taxe sur la Valeur Ajoutée, TVA) under the Code
 - **VAT filing frequency** — Monthly — return and payment by the 15th of the following month ((approx — confirm))  _(Code Général des Impôts (Niger) — TVA)_
 - **Reverse charge on imported services** — Services supplied by non-residents to Niger customers are subject to reverse-charge VAT accounted for by the local recipient ((approx — confirm))  _(Code Général des Impôts (Niger) — TVA)_
 - **Input VAT recovery** — Registered taxable persons may deduct input VAT against output VAT, subject to the usual exclusions ((approx — confirm))  _(Code Général des Impôts (Niger) — TVA)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

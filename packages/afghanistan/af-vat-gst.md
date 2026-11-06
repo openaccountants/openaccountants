@@ -4,10 +4,9 @@ description: "Source-cited draft: vat / gst for Afghanistan (tax year 2025) — 
 jurisdiction: AF
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Afghanistan VAT / GST
@@ -26,21 +25,3 @@ Afghanistan has enacted a VAT Law but, as of 2025, its commencement has been rep
 - **BRT tax base** — Total gross receipts (sales) before any deduction; no input credit  _(Income Tax Law 2009)_
 - **BRT filing / payment frequency** — Quarterly  _([Income Tax Law 2009](https://ard.gov.af/820/quarterly-business-receipts-tax-brt-user-guides))_
 - **Reverse charge** — Not applicable while VAT is not operational; BRT has no reverse-charge mechanism  _(Income Tax Law 2009)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

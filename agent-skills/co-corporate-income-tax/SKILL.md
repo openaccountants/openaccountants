@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Colombia Corporate Income Tax
@@ -28,24 +26,6 @@ metadata:
 - **WHT on royalties to non-residents (incl. software)** — 20% %  _(Estatuto Tributario Nacional, art. 408 — https://taxsummaries.pwc.com/colombia/corporate/withholding-taxes)_
 - **Treaty relief** — Reduced WHT rates may apply under Colombia's double-tax treaties  _(Applicable double taxation conventions (Convenios para evitar la doble imposición) — https://taxsummaries.pwc.com/colombia/corporate/withholding-taxes)_
 - **CIT return filing and payment** — Annual return filed electronically with DIAN; deadlines (typically Apr–May) staggered by NIT, with an advance payment installment for large taxpayers ((approx — confirm exact dates in DIAN annual deadline decree))  _(DIAN annual tax deadline decree (Decreto de plazos) — https://en.tpcgroup-int.com/news/2026-tax-calendar-in-colombia-transfer-pricing-and-key-obligations/)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

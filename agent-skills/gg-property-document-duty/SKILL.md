@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-property-document-duty"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Guernsey property document duty v0.5
@@ -20,7 +18,7 @@ metadata:
 
 This Guide covers ordinary realty conveyance calculations in the **island of Guernsey** using the current-rate table in the official response dated **21 May 2026**. The 2025 amendment ordinances expressly have effect in Guernsey; do not transplant these calculations to Alderney, Sark or another territory. [2025 amendment ordinances, section 3 of each](https://parliament.gg/parliamentary-business/assets/propositions/P2025-121).
 
-The Royal Court describes duty on prescribed documents presented to it, with transaction-dependent rates, fixed amounts and exemptions. The legal library now provides the current charging Laws and Rates Ordinances used below. Earlier HTTP 403 receipts are historical, not a current availability blocker. The new statutory extension is checked in the [fresh ordinary-method whole-pack review](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); the previous published review covers its predecessor. [Direct charging Law](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253627); [indirect charging Law](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253628).
+The Royal Court describes duty on prescribed documents presented to it, with transaction-dependent rates, fixed amounts and exemptions. The legal library now provides the current charging Laws and Rates Ordinances used below. Earlier HTTP 403 receipts are historical, not a current availability blocker. The new statutory extension is checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); the previous published review covers its predecessor. [Direct charging Law](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253627); [indirect charging Law](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253628).
 
 ## Rates and calculation
 
@@ -28,13 +26,13 @@ Apply each rate to the **slice of established chargeable realty value** within t
 
 | Chargeable realty slice | Rate |
 |---|---:|
-| First £300,000 | 2.25% |
-| Above £300,000 to £500,000 | 3.50% |
-| Above £500,000 to £950,000 | 4.00% |
-| Above £950,000 to £1,250,000 | 4.25% |
-| Above £1,250,000 to £2,500,000 | 4.50% |
-| Above £2,500,000 to £5,000,000 | 5.50% |
-| Above £5,000,000 | 7.00% |
+| First £300,000 | 2.25% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £300,000 to £500,000 | 3.50% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £500,000 to £950,000 | 4.00% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £950,000 to £1,250,000 | 4.25% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £1,250,000 to £2,500,000 | 4.50% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £2,500,000 to £5,000,000 | 5.50% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £5,000,000 | 7.00% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
 
 Source: [21 May 2026 official response, Table 1](https://parliament.gg/parliamentary-business/assets/questions/2026-16). Table 2 in the same document models a **proposed 15% band**, not the current schedule. Do not use it as the operative rate table. The existing 2026 schedule must also be checked against any later enactment at the transaction date.
 
@@ -52,7 +50,7 @@ Working-paper sequence:
 
 **Value before bands.** For an arm's-length transaction, section 6 uses total consideration; otherwise it uses market value of the real property transferred. Money's-worth consideration is valued at its market value. Even where arm's length and good faith are asserted, section 6(3) permits the Greffier to deem the transaction otherwise than at arm's length if the stated consideration is inadequate. Foreign-currency consideration is converted to Guernsey currency at the rate on the **registration date**. Reconcile realty/personalty, every element of consideration and valuation evidence before applying the bands. Section 5 requires the joint consideration/market-value declaration, the grounds for exemption and arm's-length treatment, and full and frank disclosure. [Direct Law ss5–6](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253627).
 
-The current [Direct Rates Ordinance s1](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263098) independently confirms every graduated rate above. Its section 2 sets **0.00% of the sum secured** for a non-exempt registered charge within the charging Law's section 2(1)(b); that does not set conveyance duty or cancel Court/registration fees. An established non-exempt, non-arm's-length acquisition with £600,000 stated consideration and £900,000 market value therefore uses £900,000: £6,750 + £7,000 + £16,000 = **£29,750**, rather than £17,750 on the lower consideration. These assumptions do not override an actual exemption or establish the valuation. [Supplementary control](../../research/guernsey-2026/ordinary-completion-2026-10-28/property-controls.md).
+The current [Direct Rates Ordinance s1](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263098) independently confirms every graduated rate above. Its section 2 sets **0.00% of the sum secured** for a non-exempt registered charge within the charging Law's section 2(1)(b); that does not set conveyance duty or cancel Court/registration fees. An established non-exempt, non-arm's-length acquisition with £600,000 stated consideration and £900,000 market value therefore uses £900,000: £6,750 + £7,000 + £16,000 = **£29,750**, rather than £17,750 on the lower consideration. These assumptions do not override an actual exemption or establish the valuation. [Supplementary control](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/property-controls.md).
 
 **Exemptions are conditions, not labels.** Direct Law section 3 identifies the following routes; retain the documents proving the precise statutory limb:
 
@@ -128,7 +126,7 @@ expected:
 
 Without relief, £500,000 chargeable realty produces £13,750. An additional £100 is charged at 4%, adding £4; it does not reprice the earlier slices. These examples use whole-pound results and do not determine statutory fractional-pound rounding. [Official rate table](https://parliament.gg/parliamentary-business/assets/questions/2026-16).
 
-[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+[Supplementary regression control retained byte-exact](../../evidence/research/guernsey-2026/original-controls.md).
 
 ## Direct conveyance: authority and completion evidence
 
@@ -158,7 +156,7 @@ The current **Anti-Avoidance Law** now supplies the ordinary route. Section 1 re
 
 First run the section 1(4) exclusions: the listed succession/court-order, lease/licence, servitude/wayleave/covenant, recognised-exchange shares, unchanged-beneficial-owner nominee transfer, collective-investment, unexercised option, bona fide loan-security and arm's-length property-management circumstances. Exercise of an option is separately capable of conferring the benefit. Then run section 2's actual exemption tests: the defined family transaction, specified transferee status, fully-owned company/group routes, qualifying unchanged-economic-share partnership reorganisations, and the active-business company/partnership property routes. The latter expressly exclude using the property for **letting for money or money's worth**; a rental property company's trade label alone does not satisfy that exemption. [Indirect Law ss1(4),2–3](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253628).
 
-For a non-exempt relevant transaction, section 4 uses the **market value of the significant benefit at the transaction date**. The separate [Indirect Rates Ordinance s1](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263097) supplies the same graduated percentages as the direct table, applied to this different statutory base. Obtain the actual benefit valuation and rights/ownership evidence. Do not mechanically substitute the share price, gross property value, percentage shareholding or company value net of borrowing for that valuation. For a separately established non-exempt benefit worth £600,000, ordinary indirect duty is **£17,750**; the 2026 non-exempt registration fee is **£158**, so the two identified items total **£17,908** before other costs. For a relevant transaction actually exempt under the Law, duty is nil but its prescribed registration fee is **£79** and its filing duties remain. [Indirect Law ss4–5](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253628); [2025 Fees Regulations rr1,4, effective 1 January 2026](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265347); [supplementary controls](../../research/guernsey-2026/ordinary-completion-2026-10-28/property-controls.md).
+For a non-exempt relevant transaction, section 4 uses the **market value of the significant benefit at the transaction date**. The separate [Indirect Rates Ordinance s1](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263097) supplies the same graduated percentages as the direct table, applied to this different statutory base. Obtain the actual benefit valuation and rights/ownership evidence. Do not mechanically substitute the share price, gross property value, percentage shareholding or company value net of borrowing for that valuation. For a separately established non-exempt benefit worth £600,000, ordinary indirect duty is **£17,750**; the 2026 non-exempt registration fee is **£158**, so the two identified items total **£17,908** before other costs. For a relevant transaction actually exempt under the Law, duty is nil but its prescribed registration fee is **£79** and its filing duties remain. [Indirect Law ss4–5](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253628); [2025 Fees Regulations rr1,4, effective 1 January 2026](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265347); [supplementary controls](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/property-controls.md).
 
 ## Filing, payment, penalties and exclusions
 
@@ -192,7 +190,7 @@ Deliver the band calculation, relief assessment, source copies, unresolved legal
 | [Direct Rates Ordinance](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263098) and [Indirect Rates Ordinance](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263097) | 2026-10-28: complete operative sections; consolidation errors checked against the already adopted 2025 amendments |
 | [GSI127/2025 indirect-transfer Fees Regulations](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265347) | 2026-10-28: complete instrument; amount/commencement page also rendered and visually checked |
 
-Original source receipts and scoped independent review are preserved. Not yet confirmed: transaction-specific significant-benefit valuation and complex exemption evidence; detailed prescribed direct submission/relief-claim administration, 2025 transition refund processing/deadline, complete current court rules and criminal fine-scale currency amounts. Annual property taxes, rental/capital-gains tax and title advice remain outside this Guide. The new ordinary direct/indirect statutory methods are checked in the [fresh ordinary-method whole-pack review](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md). The earlier [whole-pack review](../../research/guernsey-2026/review/report.md) accepts the published revision at 6ae8c8a2, not this subsequent extension; professional attestation remains pending.
+Original source receipts and scoped independent review are preserved. Not yet confirmed: transaction-specific significant-benefit valuation and complex exemption evidence; detailed prescribed direct submission/relief-claim administration, 2025 transition refund processing/deadline, complete current court rules and criminal fine-scale currency amounts. Annual property taxes, rental/capital-gains tax and title advice remain outside this Guide. The new ordinary direct/indirect statutory methods are checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md). The earlier [whole-pack review](../../evidence/research/guernsey-2026/review/report.md) accepts the published revision at 6ae8c8a2, not this subsequent extension; professional attestation remains pending.
 
 ## Disclaimer
 
@@ -200,24 +198,6 @@ General tax and accounting reference material. A qualified local professional mu
 
 > Contributed by Michael Cutajar.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-property-document-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-property-document-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-property-document-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-property-document-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.

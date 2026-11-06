@@ -6,18 +6,13 @@ jurisdiction: GB
 category: international
 tax_year: 2026
 last_updated: 2026-10-23
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 source_checked: 2026-10-23
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # Moving from the UK to the UAE: the tax corridor (2026/27)
-
-> Source-cited draft: not reviewed by an accountant.
 
 Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): figures moved to 2026/27; temporary non-residence updated for the Finance Act 2026 change to close-company distributions; voluntary National Insurance abroad updated for the April 2026 changes; IHT tail table taken from IHTA 1984 s.6A; UAE section cut back to the one fact this skill relies on; unsourced figures removed; Sources table added. Review fixes (2026-10-23): close-company charge limited to material participators and their associates; the next-year non-residence condition added to the split-year cases.
 
@@ -245,21 +240,3 @@ expected:
 | UAE Ministry of Finance, Retail T-Sukuk ("The United Arab Emirates does not impose personal income tax") | https://mof.gov.ae/en/public-finance/public-debt/retail-t-sukuk/ | 2026-10-23 |
 
 Not yet confirmed: whether HMRC requires the UAE authority to certify residence on the DT-Individual claim (the form page read on 2026-10-23 does not say); the full list of "other listed income" caught by temporary non-residence beyond gains and close-company distributions.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

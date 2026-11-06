@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "KY"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cayman Islands Tax Overview
@@ -29,24 +27,6 @@ metadata:
 - **Inheritance, estate, gift and net wealth taxes** — None  _([PwC Worldwide Tax Summaries — Cayman Islands (Overview), https://taxsummaries.pwc.com/cayman-islands](https://taxsummaries.pwc.com/cayman-islands))_
 - **Annual tax filing** — No tax returns, forms, or procedures are required for tax compliance purposes (corporate annual returns and economic-substance/CRS/FATCA reporting still apply)  _([PwC Worldwide Tax Summaries — Cayman Islands (Tax administration), https://taxsummaries.pwc.com/cayman-islands/individual/tax-administration](https://taxsummaries.pwc.com/cayman-islands/individual/tax-administration))_
 - **Company annual return / fee deadline** — Annual return and government annual fee due in January each year following the year of registration  _([Companies Act (2025 Revision) (Cayman Islands), https://www.ciregistry.ky/fees/](https://www.ciregistry.ky/fees/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
