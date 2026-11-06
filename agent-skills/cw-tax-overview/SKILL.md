@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CW"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Curacao Tax Overview
@@ -27,24 +25,6 @@ metadata:
 - **Standard turnover tax (OB) rate** — 6% percent  _(Turnover Tax Ordinance (Landsverordening omzetbelasting 1999))_
 - **Personal income tax return deadline** — Generally within the period stated on the assessment notice; typically by 31 May following the tax year (extensions available) ((approx — confirm exact date on notice))  _(General National Ordinance on National Taxes (Algemene landsverordening Landsbelastingen))_
 - **Withholding taxes** — Curacao levies no withholding tax on dividends, interest, or royalties  _([Profit Tax Ordinance (Landsverordening op de winstbelasting 1940) — https://hbnlawtax.com/tax-instant-news/end-of-the-year-tax-tips-curacao/](https://hbnlawtax.com/tax-instant-news/end-of-the-year-tax-tips-curacao/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

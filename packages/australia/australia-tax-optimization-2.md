@@ -3,11 +3,11 @@ name: australia-tax-optimization-2
 description: "Australian tax planning for 2026–27: compare deductions, structures, losses, capital expenditure and superannuation using dated legislation."
 jurisdiction: AU
 last_updated: 2026-09-08
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
+domain: tax-optimization
 ---
 
 # Australia Tax Optimisation
@@ -63,21 +63,3 @@ For a full-year Australian resident individual in 2026–27, basic income tax is
 - **Documentation and integrity** — Keep a dated comparison with assumptions, eligibility evidence, implementation deadlines and whole-year tax and cash effects. Do not fabricate expenses, defer already derived income by changing invoice dates, or assume a transaction is acceptable merely because its documents use a tax-effective label.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "PH"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Jonathan I. Ruiz, CPA"
-  trust_label: "Checked by Jonathan I. Ruiz, CPA"
-  review_status: "current"
+  reviewed_by: "Jonathan I. Ruiz"
 ---
 
 # Philippines Company Formation & Entity Choice
@@ -29,24 +27,6 @@ metadata:
 - **Annual SEC compliance** — File the General Information Sheet (GIS) within 30 days of the annual stockholders' meeting and Audited Financial Statements (AFS) per SEC schedule  _(Revised Corporation Code of the Philippines (RA 11232))_
 - **Annual BIR compliance** — File the annual income tax return (BIR Form 1702) with audited financial statements; renew BIR registration and pay the documentary stamp tax; renew the LGU business permit each January  _(NIRC Sections 52, 232; Local Government Code (RA 7160))_
 - **Statutory audit requirement** — Independent audit and AFS required where gross annual sales/receipts exceed PHP 3,000,000 PHP  _(NIRC Section 232; SEC rules)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

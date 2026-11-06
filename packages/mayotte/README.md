@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `yt-employer-payroll-relief.md`
-4. `yt-vat-and-goods-imports.md`
-5. `payroll-workflow-base.md`
+3. `README.md`
+4. `yt-employer-payroll-relief.md`
+5. `yt-vat-and-goods-imports.md`
+6. `payroll-workflow-base.md`
 
 ## How to use
 

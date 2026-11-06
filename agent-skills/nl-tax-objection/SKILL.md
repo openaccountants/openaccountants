@@ -1,6 +1,6 @@
 ---
 name: nl-tax-objection
-description: "Objecting to a Dutch national tax assessment, decision or payment (bezwaar) and appealing to the court (beroep), for 2026. Covers the 6-week objection period and when it starts (AWR art. 22j), the postal rule, what an objection must contain, protective (pro forma) objections, payment postponement and invorderingsrente at 4.3%, the hearing on request, the 6-week decision period and the 6-week extension, the default notice and penalty payment (dwangsom) of EUR 23/35/45 a day up to EUR 1,442, the EUR 666 cost award, late objections and ex officio reduction within 5 years, mass objections and the court appeal. Trigger phrases: bezwaar, bezwaarschrift, pro forma bezwaar, bezwaartermijn, uitspraak op bezwaar, hoorzitting, ingebrekestelling, dwangsom, ambtshalve vermindering, beroep belastingrechter, kostenvergoeding bezwaar, tax objection Netherlands. Out of scope: the tax itself (nl-income-tax, nl-corporate-tax, netherlands-vat-return, netherlands-payroll), penalties for late returns (nl-in"
+description: "Objecting to a Dutch national tax assessment, decision or payment (bezwaar) and appealing to the court (beroep), for 2026. Covers the 6-week objection period and when it starts (AWR art. 22j), the postal rule, what an objection must contain, protective (pro forma) objections, payment postponement and invorderingsrente at 4.3%, the hearing on request, the 6-week decision period and the 6-week extension, the default notice and penalty payment (dwangsom) of EUR 23/35/45 a day up to EUR 1,442, the EUR 666 cost award, late objections and ex officio reduction within 5 years, mass objections and the court appeal. Trigger phrases: bezwaar, bezwaarschrift, pro forma bezwaar, bezwaartermijn, uitspraak op bezwaar, hoorzitting, ingebrekestelling, dwangsom, ambtshalve vermindering, beroep belastingrechter, kostenvergoeding bezwaar, tax objection Netherlands. Out of scope: the tax itself (nl-income-tax, nl-corporate-tax, nl-vat-return, nl-payroll-tax), penalties for late returns (nl-income-tax), toe"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "NL"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Netherlands tax objections and appeals (bezwaar and beroep), 2026
@@ -214,24 +211,6 @@ expected:
 | Belastingdienst, invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-27 |
 
 Not yet confirmed: (1) the exact current routes for VAT objections that must be made by letter (VAT paid on a return, cash-accounting refusal) and the business-portal list beyond VAT and corporate tax, carried from the old version and taken from the Belastingdienst overview page, not re-read in full; (2) the intermediary (commercial software) authorisation rule, carried from the old version, not re-read today; (3) court filing for professionals through Mijn Rechtspraak, carried from the old version, not re-read; (4) the Awb and AWR amendments without a commencement date flagged on wetten.overheid.nl, not reviewed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

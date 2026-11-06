@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gr-cross-border"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Greece: cross-border tax (arriving, leaving, non-residents, withholding)
@@ -259,26 +257,6 @@ Note: AADE's English page "Income categories and income taxation in Greece" stil
 
 Not yet confirmed: the percentage of the late-payment interest rate in decision ΔΠΕΙΣ 1198598 ΕΞ 2013 (Β' 19/2014), which Α.1120/2025 keeps in force (the decision itself was not read on an official page); any amendments to the Income Tax Code after ν. 5264/2025 or to the Tax Procedure Code after ν. 5259/2025 made during 2026; whether the art. 16(2) phase-out for a 5C taxpayer is measured on the taxable half or on the whole salary; the A1 certificate rules in Regulation (EC) 987/2009; the list of states with an administrative cooperation agreement on tax with Greece; the Greece-Germany treaty treatment of rent in Example 2.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

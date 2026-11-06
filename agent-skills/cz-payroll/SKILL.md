@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cz-payroll"
   jurisdiction: "CZ"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Czech Republic: running payroll (2026)
@@ -244,26 +241,6 @@ expected:
 
 Not yet confirmed: whether the health insurance minimum base applies to a worker insured only through a DPP or DPČ (Act 592/1992 Sb. § 3(8) does not list them; the examples avoid the point); how the employee's one-third health share is rounded when 13.5% of the base does not divide by three (the examples use bases where it does); the legal basis, and the 2026 form, of any monthly statement each health insurer asks employers for (JMHZ does not replace it under the ČSSZ list); the current Civil Code default interest rate used for late-payment interest and penále (not given on the pages read); how the reduced hourly figure for sick pay is rounded when it is not a whole number of haléře (Labour Code § 192(2) applies the sickness benefit method "in a similar way"; Example 3 uses earnings below the first threshold, where the point does not arise).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

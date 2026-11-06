@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `vc-corporate-income-tax.md`
-4. `vc-national-insurance.md`
-5. `vc-vat.md`
+3. `README.md`
+4. `vc-corporate-income-tax.md`
+5. `vc-national-insurance.md`
+6. `vc-vat.md`
 
 ## How to use
 

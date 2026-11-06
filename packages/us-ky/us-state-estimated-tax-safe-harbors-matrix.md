@@ -4,11 +4,9 @@ description: Tier 2 US federal-level reference skill providing the 50-state matr
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # State estimated tax safe harbors for individuals: 50-state matrix
@@ -177,21 +175,3 @@ These are illustrations with invented numbers. Each uses only the rules in the m
 - [ ] Farmer and fisher status tested (two-thirds of gross income).
 - [ ] Any cell marked **check** confirmed on the state's current form.
 - [ ] Penalty exposure on missed installments noted, with the state's penalty form.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

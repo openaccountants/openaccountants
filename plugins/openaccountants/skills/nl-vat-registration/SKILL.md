@@ -1,21 +1,18 @@
 ---
 name: nl-vat-registration
-description: "Netherlands VAT (btw, omzetbelasting) registration for 2026: who is an entrepreneur for VAT, how a Dutch business gets its btw-id and ob-nummer through the KVK, how a business not established in the Netherlands registers with the Aanmelding Onderneming buitenland form, when the reverse charge (art. 12 Wet OB 1968) means it need not register, and when a fiscal representative is required. Covers the small business scheme (KOR, EUR 20,000), the EU-KOR (EUR 100,000), joining and leaving deadlines, the EUR 10,000 EU distance-sales threshold, registration for the OSS Union, non-Union and import schemes and their quarterly and monthly returns, and penalties. Trigger on \"do I need a Dutch VAT number\", \"register for btw\", \"join the KOR\", \"OSS Netherlands\", \"foreign company VAT Netherlands\", \"fiscal representative Netherlands\". Out of scope: filling in the return boxes (nl-vat-return, netherlands-vat-return), income tax (nl-income-tax), cross-border income (nl-cross-border)."
+description: "Netherlands VAT (btw, omzetbelasting) registration for 2026: who is an entrepreneur for VAT, how a Dutch business gets its btw-id and ob-nummer through the KVK, how a business not established in the Netherlands registers with the Aanmelding Onderneming buitenland form, when the reverse charge (art. 12 Wet OB 1968) means it need not register, and when a fiscal representative is required. Covers the small business scheme (KOR, EUR 20,000), the EU-KOR (EUR 100,000), joining and leaving deadlines, the EUR 10,000 EU distance-sales threshold, registration for the OSS Union, non-Union and import schemes and their quarterly and monthly returns, and penalties. Trigger on \"do I need a Dutch VAT number\", \"register for btw\", \"join the KOR\", \"OSS Netherlands\", \"foreign company VAT Netherlands\", \"fiscal representative Netherlands\". Out of scope: filling in the return boxes (nl-vat-return), income tax (nl-income-tax), cross-border income (nl-cross-border)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nl-vat-registration"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Netherlands VAT registration, KOR, OSS and non-established businesses (2026)
 
-This skill answers one question: does this business need to be registered for Dutch VAT, and if so, how and under which scheme? It does not fill in returns. For the boxes, rates per supply, input VAT and corrections, use [nl-vat-return](nl-vat-return.md) or [netherlands-vat-return](netherlands-vat-return.md).
+This skill answers one question: does this business need to be registered for Dutch VAT, and if so, how and under which scheme? It does not fill in returns. For the boxes, rates per supply, input VAT and corrections, use [nl-vat-return](nl-vat-return.md).
 
 Tax year 2026 (calendar year). Law: Wet op de omzetbelasting 1968 (Wet OB 1968) as in force from 1 January 2026.
 
@@ -262,26 +259,6 @@ expected:
 
 Not yet confirmed: the exact OSS start rule for a non-EU business registering through the Netherlands (the Belastingdienst page read describes the route for Dutch businesses); the text of the Uitvoeringsbesluit omzetbelasting 1968 on when a fiscal representative is compulsory (the list above is the Belastingdienst's).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-vat-registration` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-vat-registration. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-vat-registration` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-vat-registration. If neither is available, confirm every figure against the official source pages cited above before relying on it.

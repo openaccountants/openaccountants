@@ -8,14 +8,9 @@ metadata:
   jurisdiction: "CY"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cyprus personal income tax (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Cyprus taxes individuals on the calendar year. The 2026 tax reform applies from tax year 2026: Law 244(I)/2025 amends the Income Tax Law (ITL), Law 243(I)/2025 amends the Assessment and Collection of Taxes Law (ACL) and Law 245(I)/2025 amends the Special Defence Contribution (SDC) Law. All three were published on 31 December 2025 and took effect on 1 January 2026. Article numbers below are to the Greek consolidated texts on CyLaw (ITL consolidated up to Law 67(I)/2026). CyLaw is not the official gazette. For tax year 2025 and earlier, use the 2025 rules, not this skill.
 
@@ -265,24 +260,6 @@ expected:
 | Tax Department, presentation on the ACL amendments (default interest 3.5% from 1 January 2026) | https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%9D%CF%8C%CE%BC%CE%BF%CE%B9-%CE%A0%CE%92%CE%95-%CE%95%CE%B9%CF%83%CF%80%CF%81%CE%AC%CE%BE%CE%B5%CF%89%CF%82-%CE%A7%CE%B1%CF%81%CF%84%CE%BF%CF%83%CE%AE%CE%BC%CF%89%CE%BD.pdf | 2026-10-24 |
 
 Not yet confirmed: the general wear-and-tear rates by asset class (set by the notification under art. 52A of the repealed Income Tax Law 58/1961, kept in force by ITL art. 47; no official copy found on CyLaw or the Tax Department site, and secondary tables are not cited); the publication date of the Income Tax (Amendment) (No. 6) Law of 2022 that opens art. 8(21A) (the Tax Department table read for v0.1 gave 26 July 2022); the transitional art. 8(23A) rules for 2016 to 2021 starters; the pre-2023 art. 8(23A) conditions (v0.1 gave, from the Tax Department table: for employment started 1 January 2022 to 29 June 2023, non-residence for at least 10 years and the exemption ending when the first employment ends; not printed in the consolidated text); whether art. 8(21A) also ends when the first employment ends and whether 8(21) and 8(21A) are given whether or not the person becomes resident (v0.1, Tax Department explanatory table, not in the consolidated text); the pre-2026 figures of EUR 70,000 (accounts threshold) and EUR 3,420 (foreign pension threshold) from v0.1 (Tax Department presentations, not re-read; not needed for 2026); how the art. 14B(1)(β) ownership proviso applies to the rent limb; whether the art. 20ΣΤ 20% rate applies to the whole payment or only to the part over EUR 200,000; the self-employed GHS rate, Social Insurance categories, the 2.65% GHS on pay and the 2026 insurable earnings ceiling from v0.1 (now only in `cyprus-social-contributions`, not re-read here); the landlord's GHS self-assessment on rent with no withholding (v0.1, FAQs question 54, not re-read); the bad-debt conditions, home-office, phone and vehicle apportionment working rules, VAT interaction table, bank-statement classification patterns, Cyprus bank formats and the working-paper template from v0.1 (practice notes, not law, not carried).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

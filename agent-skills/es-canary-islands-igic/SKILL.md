@@ -8,6 +8,7 @@ metadata:
   jurisdiction: "ES"
   tax_year: "2026"
   last_updated: "2026-10-28"
+  reviewed_by: "Jeff Watts"
 ---
 
 # Canary Islands: ordinary IGIC for 2026
@@ -217,7 +218,6 @@ expected:
 | [ATC 420 current page](https://www3.gobiernodecanarias.org/tributos/atc/w/modelo-420), [linked instructions](https://www3.gobiernodecanarias.org/tributos/atc/documents/65729/201004/Instrucciones_modelo_420.pdf/59fbc2b2-7aff-4a68-95ea-4984da563cfc?t=1742821063325) |Scope, quarterly/debit deadlines, portal validity and published result/input mapping; PDF retains pre-consolidation statutory references |2026-10-27 |
 | [LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) |Arts. 26–28/188/191/198: interest, late filing, collection and conduct-specific sanctions |2026-10-27 |
 | [Ley 20/1991 arts.40–42](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a42) | Single remaining-period investment-good disposal adjustment, output/hypothetical-output cap and non-entitling/subrogation branches |2026-10-28 |
-
 
 **Not yet confirmed:** final 2026 program field/rate-row parity beyond the current published instructions; product-specific AIEM amounts and specialist housing/LaPalma, retail, module, cash, agricultural, margin, travel or group claims outside the supplied ordinary computation. The July 2026 franchise entry and deduction transition are supplied, not assumed to be an automatic 50,000 all-year exemption. Independent review is pending; no accountant attestation or accepted filing is claimed.
 

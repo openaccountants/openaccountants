@@ -7,24 +7,25 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `br-carn-monthly-income-tax-rental-income.md`
-4. `br-estimated-tax.md`
-5. `br-income-tax.md`
-6. `br-indirect-tax.md`
-7. `br-inss.md`
-8. `br-simples-nacional.md`
-9. `brazil-crypto-tax.md`
-10. `brazil-einvoice.md`
-11. `brazil-payroll.md`
-12. `brazil-transfer-pricing.md`
-13. `brazil-vat.md`
-14. `references.md`
-15. `einvoice-workflow-base.md`
-16. `payroll-workflow-base.md`
-17. `transfer-pricing-workflow-base.md`
-18. `crypto-tax-workflow-base.md`
-19. `brazil-guided-intake.md`
-20. `brazil-return-assembly.md`
+3. `README.md`
+4. `br-carn-monthly-income-tax-rental-income.md`
+5. `br-estimated-tax.md`
+6. `br-income-tax.md`
+7. `br-indirect-tax.md`
+8. `br-inss.md`
+9. `br-simples-nacional.md`
+10. `brazil-crypto-tax.md`
+11. `brazil-einvoice.md`
+12. `brazil-payroll.md`
+13. `brazil-transfer-pricing.md`
+14. `brazil-vat.md`
+15. `references.md`
+16. `einvoice-workflow-base.md`
+17. `payroll-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
+19. `crypto-tax-workflow-base.md`
+20. `brazil-guided-intake.md`
+21. `brazil-return-assembly.md`
 
 ## Also known as
 

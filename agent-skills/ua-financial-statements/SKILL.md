@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UA"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # UA Financial Statements
@@ -36,7 +34,6 @@ For ФОП record-keeping read **ua-bookkeeping**; for single-tax groups, rates 
 | Authorities | **ДПС** (Державна податкова служба / State Tax Service) and **Держстат** (Державна служба статистики / State Statistics Service) |
 | Filing deadlines | Annual statements: file with **ДПС by 1 March** and with **Держстat by 28 February** of the year following the reporting year; PIEs/issuers/extractors **publish by 30 April**; large & medium enterprises **publish by 1 June** (see Section 3) |
 | Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a Ukrainian accountant |
 | Skill version | 1.0 |
 
 - **Reporting period** — The financial year in Ukraine is the calendar year (1 January – 31 December). Figures, forms and thresholds are stated as of May 2026 for the 2025 reporting year filed in 2026.
@@ -203,24 +200,6 @@ This skill is research-verified open-source content contributed by the Open Acco
 It is not legal, accounting or tax advice and does not substitute for sign-off by a qualified Ukrainian accountant or auditor. Ukrainian financial-reporting law, standards, forms, deadlines and martial-law measures change; verify against the current consolidated legislation and the ДПС / Держstat portals before relying on any figure. Every output produced with this skill must be reviewed and signed off by a credentialed professional before filing.
 
 Part of openaccountants.com — open-source tax skills for the self-employed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

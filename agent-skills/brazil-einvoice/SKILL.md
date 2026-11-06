@@ -8,16 +8,14 @@ metadata:
   jurisdiction: "BR"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
+  reviewed_by: "Ariane Marrocos"
 ---
 
 # Brazil Einvoice
 
 ## Brasil — Notas Fiscais Eletrônicas e Coretax (NF-e/NFS-e/CT-e) — Skill v1.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -515,24 +513,6 @@ As penalidades se acumulam quando múltiplas infrações ocorrem no mesmo perío
 Esta skill e suas saídas são fornecidas apenas para fins informativos e computacionais e não constituem aconselhamento tributário, jurídico ou financeiro. A Open Accountants e seus colaboradores não se responsabilizam por quaisquer erros, omissões ou resultados decorrentes do uso desta skill. Toda saída deve ser revisada e validada por um profissional qualificado (Contador registrado no CRC ou profissional licenciado equivalente em sua jurisdição) antes da entrega ou ato fiscal.
 
 A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

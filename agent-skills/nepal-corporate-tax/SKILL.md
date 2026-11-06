@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "NP"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Ashish Bista, ICAI, OTHER, CA"
   reviewed_by: "Ashish Bista"
-  trust_label: "Checked by Ashish Bista"
-  review_status: "current"
 ---
 
 # Nepal Corporate Tax
@@ -20,7 +17,7 @@ metadata:
 
 > **Produced by OpenAccountants (openaccountants.com).** Research-grade (tier 2) for FY 2082/83. **Source provenance:** figures derive from Nepali professional-firm tax-fact publications (PKF T.R. Upadhya, Baker Tilly Nepal) reflecting the Income Tax Act 2058 and Finance Act 2082 — not re-anchored to primary IRD pages. A Nepali CA must confirm against the statute before reliance. Not tax advice.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Ashish Bista** on 2026-06-06.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -57,7 +54,6 @@ metadata:
 | **Normal rate** | **25%** of taxable income (general companies, firms, industries) |
 | **Sector rate** | **30%** — see §3.2 |
 | **Special industries (Sec 11)** | Effective **20%** (25% normal less a 20% rebate) |
-| Validated by | Pending — Nepali CA / registered tax practitioner |
 | Skill version | 1.0 |
 
 ### Conservative defaults
@@ -127,24 +123,6 @@ Research-grade, FY 2082/83. **Secondary firm publications — re-anchor to prima
 ## Disclaimer
 
 For informational and computational purposes only; not tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Nepali professional (CA / registered tax practitioner) before filing or acting upon. Latest verified version at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

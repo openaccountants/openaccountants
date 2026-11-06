@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CW"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Curacao VAT / GST
@@ -26,24 +24,6 @@ metadata:
 - **Default filing frequency** — Monthly OB return and payment, generally by the 15th day of the following month (approx — confirm exact due day)  _(Turnover Tax Ordinance (Landsverordening omzetbelasting 1999))_
 - **OB on imported / foreign digital services** — OB applies to services supplied from abroad to Curacao recipients, levied via a reverse-charge / self-assessment mechanism  _([Turnover Tax Ordinance (Landsverordening omzetbelasting 1999)](https://www.vatcalc.com/curacao/curacao-sales-tax-on-foreign-digital-services/))_
 - **Registration** — Entrepreneurs making taxable supplies in Curacao must register with the Inspectorate of Taxes; no general de minimis turnover exemption for registration (approx — confirm small-entrepreneur relief)  _(Turnover Tax Ordinance (Landsverordening omzetbelasting 1999))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "ES"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Spain transfer pricing v1.2
@@ -204,24 +202,6 @@ expected:
 |[Gipuzkoa OF444/2018](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2018/09/20/c1806246.pdf) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
 | [Law 31/2022, DA 90(c)/(d)](https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128), [RDL 3/2004, art. 2.3](https://www.boe.es/buscar/act.php?id=BOE-A-2004-12010), [SEPE current 2026 amounts](https://www.sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html) | Annual IPREM of EUR 7,200, the conditional EUR 8,400 for substituted SMI references, and the full-year direct-IPREM statutory construction; not a numerical administrative ruling | 2026-10-27 |
 Not yet confirmed: special foral documentation circumstances outside the ordinary four-territory methods in [foral corporate tax](es-foral-corporate-tax.md#cross-border-points); professional-shareholder part-year/apportionment treatment and any directly responsive numerical administrative interpretation beyond the full-year statutory construction above; public corporate CbCR reporting and case-specific treaty relief. These are not represented as confirmed computations here. Independent whole-pack review is pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

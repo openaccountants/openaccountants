@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "KZ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Kazakhstan Company Formation & Entity Choice
@@ -27,24 +25,6 @@ metadata:
 - **Core incorporation documents** — Charter (and a foundation agreement where there is more than one founder); for foreign founders, legalized/apostilled and notarized translated corporate documents  _(Law on State Registration of Legal Entities (https://chandrawatpartners.com/how-to-incorporate-an-llc-too-llp-in-kazakhstan-key-insights-practical-overview/))_
 - **Incorporation timeline** — Small-business LLP registration is often completed within 1-3 business days once documents are in order (approx — confirm)  _(Law on State Registration of Legal Entities (https://leinonen.eu/kaz/news/establishing-a-llc-too-in-kazakhstan/))_
 - **Core annual compliance** — Annual CIT return by 31 March, periodic VAT returns (if registered), monthly payroll-tax reporting and statutory accounting records  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/corporate/tax-administration))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

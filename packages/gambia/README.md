@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gm-company-formation.md`
-4. `gm-corporate-income-tax.md`
-5. `gm-income-tax.md`
-6. `gm-payroll-social.md`
-7. `gm-tax-overview.md`
-8. `gm-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `gm-company-formation.md`
+5. `gm-corporate-income-tax.md`
+6. `gm-income-tax.md`
+7. `gm-payroll-social.md`
+8. `gm-tax-overview.md`
+9. `gm-vat-gst.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

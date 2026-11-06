@@ -24,7 +24,6 @@ metadata:
 | Audit | Companies require a statutory audit; the financial statements + audit are filed with RJSC and the NBR |
 | Authorities | NBR (tax); RJSC (companies); ICAB (audit profession) |
 | Currency | BDT (৳) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Who prepares what (Tier 1)

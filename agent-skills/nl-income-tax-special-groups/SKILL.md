@@ -7,13 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-income-tax-special-groups"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.1
+# Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from wetten.overheid.nl, belastingdienst.nl or eerstekamer.nl, read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -225,26 +222,6 @@ expected:
 
 Not yet confirmed: which of the two Belastingdienst monthly first-band tables is exact for April, May, June, October, November and December (the box 1 page and the Toelichting ch. 29 differ by 0.01 point); the general credit, labour credit and IACK amounts for someone who reaches AOW age during 2026 (the Toelichting gives no part-year table); the exact rounding of the tax part of each credit for non-residents; how art. 5.28 to 5.30 treat income that is received into a box 3 bank account and then withdrawn (the worked example counts it once, as a regular benefit); the final 2026 box 3 percentages for bank balances and debts (set early 2027); the 2026 filing date (the 2027 invitation to file is not yet published; 1 May is the usual date); whether and when the Eerste Kamer adopts the Wet werkelijk rendement box 3 and its novelle.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-income-tax-special-groups` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-income-tax-special-groups. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-income-tax-special-groups` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-income-tax-special-groups. If neither is available, confirm every figure against the official source pages cited above before relying on it.

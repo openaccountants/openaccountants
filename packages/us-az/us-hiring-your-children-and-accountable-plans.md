@@ -4,11 +4,9 @@ description: How a US business owner can pay their own child a reasonable wage (
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-03
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: tax-optimization
 ---
 
 # Hiring your children and reimbursing owners through an accountable plan
@@ -244,21 +242,3 @@ If the corporation had paid all 2,000 miles at the March rate, the September mil
 - IRS, Standard mileage rates: https://www.irs.gov/tax-professionals/standard-mileage-rates
 - IRS, Rev. Proc. 2019-48 (per diem): https://www.irs.gov/pub/irs-drop/rp-19-48.pdf
 - 26 U.S.C. 267, LII mirror of the U.S. Code: https://www.law.cornell.edu/uscode/text/26/267
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TJ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Tajikistan Payroll & Social Contributions
@@ -27,24 +25,6 @@ Employers in Tajikistan withhold personal income tax from wages and pay social t
 - **Payroll tax remittance deadline** — By the 15th day of the month following the payroll month ((approx — confirm))  _(Tax Code of the Republic of Tajikistan)_
 - **Statutory retirement age** — 63 for men, 58 for women ((approx — confirm))  _(Law on Pension Insurance and State Pensions)_
 - **Employer registration** — Employers must register with the tax authority and Social Protection Fund before running payroll  _(Tax Code of the Republic of Tajikistan)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Fiji (ta
 jurisdiction: FJ
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Fiji Company Formation & Entity Choice
@@ -27,21 +26,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Foreign investment registration** — Foreign-owned businesses must obtain a Foreign Investment Registration Certificate before operating ((approx — confirm current foreign investment statute and reserved activities))  _(Investment Act 2021)_
 - **Core annual compliance** — Annual return to the Registrar, maintenance of statutory registers, annual income tax return to FRCS, and (if registered) VAT returns  _(Companies Act 2015)_
 - **Post-incorporation tax registration** — New companies must register with FRCS for a TIN and, where applicable, VAT, PAYE and FNPF  _(Tax Administration Act 2009)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

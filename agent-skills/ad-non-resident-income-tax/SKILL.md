@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AD"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Andorra non-resident income tax and cross-border methods, 2026
@@ -193,24 +191,6 @@ expected:
 Not yet confirmed: no complete current treaty-rate/social-agreement matrix, universal residence-certificate validity period or live form/schema is certified; apply the actual period's instrument and document. Full MAP/arbitration, reorganisation, foreign-investment/ITP and special-regime procedures are separate specialist work. A case-specific property-rich share exemption needs the exact interaction of article 15 with the equivalent-property facts and treaty; do not automatically grant or deny it solely from a share label. Consolidations lack official legal status and authentic treaty/MLI texts prevail over authority syntheses. Ordinary source, non-PE base, PE profit/cessation, withholding, filing and refund methods are supplied above; historical transitions require the actual event date and underlying enactment.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # US reporting of foreign trusts and large foreign gifts (Forms 3520 and 3520-A)
@@ -202,24 +199,6 @@ A US citizen working abroad belongs to an employer pension. It is tax-favored lo
 - [ ] Deadlines set (Form 3520, Form 3520-A, Form 7004, box 1k) and prior-year gaps listed with penalty exposure.
 - [ ] Foreign-country treatment and any section 2801 issue referred.
 - [ ] Output labelled as a working paper for a qualified professional to check before filing.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

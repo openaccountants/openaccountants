@@ -7,12 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cz-tax-overview"
   jurisdiction: "CZ"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
-# Czech Republic: tax overview (2026) v0.1
+# Czech Republic: tax overview (2026) v0.2
 
 > **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team. No accountant has reviewed this skill yet. Figures come from the consolidated laws on e-Sbírka and from financnisprava.gov.cz and cnb.cz, read on 23 October 2026, and match the other 2026 skills in this pack. It is a map, not a computation: open the linked skill before advising.
 
@@ -48,7 +46,9 @@ For the calendar year 2026:
 
 - paper or electronic: **1 April 2027**;
 - electronic, after 1 April: **3 May 2027**, because 1 May 2027 is a Saturday and a public holiday;
-- tax adviser, or audited accounts: **1 July 2027**.
+- tax adviser files after 1 April, or the accounts must be audited: **1 July 2027**.
+
+Statutory audit: for accounting periods that start on or after 1 January 2026, small companies no longer have to be audited under the Accounting Act. Act No. 316/2025 Coll. repealed Accounting Act § 20(1)(c) and (d), so only large and medium accounting units, and units a special law names, must be audited (Accounting Act § 20(1); Act 316/2025, Art. I point 12, Art. II point 1, Art. VII). A small company without a tax adviser therefore files its 2026 return by 1 April 2027, or by 3 May 2027 electronically; it gets 1 July 2027 only if a tax adviser files. Detail: [cz-corporate-income-tax](cz-corporate-income-tax.md).
 
 For the 2025 return the Financial Administration gave 1 April, 4 May and 1 July 2026 ([Finanční správa](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace)). The 2027 dates are counted the same way.
 
@@ -60,6 +60,8 @@ For the 2025 return the Financial Administration gave 1 April, 4 May and 1 July 
 | Act No. 589/1992 Coll., social security premiums, version in force from 1 July 2026: § 23b(4) (average wage rounded up to whole CZK) | https://e-sbirka.gov.cz/sb/1992/589/2026-07-01 | 2026-10-23 |
 | Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 135, 136, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-10-23 |
 | Act No. 235/2004 Coll., VAT Act, version in force from 1 January 2026: §§ 6, 47 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-10-23 |
+| Act No. 563/1991 Coll., Accounting Act, version in force from 1 January 2026: § 20(1) | https://e-sbirka.gov.cz/sb/1991/563/2026-01-01 | 2026-10-30 |
+| Act No. 316/2025 Coll., amending the Accounting Act: Art. I point 12, Art. II point 1, Art. VII | https://e-sbirka.gov.cz/sb/2025/316 | 2026-10-30 |
 | Government Regulation No. 365/2025 Coll. (general assessment base for 2024 and coefficient) | https://e-sbirka.gov.cz/sb/2025/365 | 2026-10-23 |
 | Government Regulation No. 351/2013 Coll., § 2(1) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
 | Finanční správa, Daň z příjmů fyzických osob, obecné informace (2025 filing dates) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace | 2026-10-23 |
@@ -67,26 +69,6 @@ For the 2025 return the Financial Administration gave 1 April, 4 May and 1 July 
 
 Not yet confirmed: the Financial Administration had not published the filing dates for 2026 returns; 1 April, 3 May and 1 July 2027 are counted from Tax Code §§ 33(4) and 136.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.

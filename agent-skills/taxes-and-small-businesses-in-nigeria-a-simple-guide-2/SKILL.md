@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-08-24"
-  authored_by: "Omolola Fasasi, CA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Omolola Fasasi"
 ---
 
 # Taxes and Small Businesses in Nigeria: A Simple Guide
@@ -105,24 +103,6 @@ For now, the smartest thing any small business owner can do is start keeping cle
 *Note: Tax rules can be updated, so it is always good to check the NRS website or ask a tax professional for the latest information before making big decisions. The 0% and 4% figures above are marked "confirm before filing" because NRS's site currently blocks automated verification of its specific pages — please check nrs.gov.ng or the Rev360 portal directly before relying on them.*
 
 > Contributed by Omolola Fasasi, MB058950.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

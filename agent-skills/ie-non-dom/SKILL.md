@@ -8,16 +8,11 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland: tax for people who are not domiciled in Ireland
 
 This skill covers how Ireland taxes an individual who is resident or ordinarily resident in Ireland but not domiciled here. It sets out the residence and ordinary residence tests, the remittance basis for foreign income and foreign gains, what the remittance basis does not cover, and the domicile levy (which applies only to people who ARE Irish domiciled). Figures are for tax year 2026. The Irish tax year is the calendar year, 1 January to 31 December.
-
-Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not reviewed by an accountant.
 
 ## Quick reference
 
@@ -208,24 +203,6 @@ Revenue's How to calculate CGT page was read again on 23 October 2026 for the 31
 Not yet confirmed: whether the Finance (No. 2) Act 2026 is enacted with the 31% rate unchanged. The rate on a remitted gain from a disposal before 7 October 2026 rests on the wording of section 29(4)(b), the resolution and Bill 98 section 36(2); no Revenue guidance deals with remittances across this rate change.
 
 > **Working paper only.** Irish domicile determination is fact-specific and can have significant gift and inheritance tax implications in addition to income tax. Engage a qualified Irish tax adviser.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

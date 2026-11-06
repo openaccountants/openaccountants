@@ -10,11 +10,13 @@ description: >
 version: 1.0
 jurisdiction: BD
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - social-contributions-workflow-base
+tier: 2
+status: needs_sources
+domain: payroll
 ---
 
 # Bangladesh Social Security & Pension — Skill v1.0
@@ -36,7 +38,6 @@ depends_on:
 |---|---|
 | Currency | BDT (৳) |
 | Authority | National Pension Authority (NPA); employers for PF/gratuity |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "MC"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Monaco tax overview and routing
@@ -39,7 +37,7 @@ The new-activity exemption is conditional and period-specific; there is no gener
 
 ## Dates and evidence
 
-Law, government guidance and retrieval are distinct evidence. The ISB statute says at least 25%, despite the government summary's stricter wording. The live employer PDF URL says October 2025 while it serves October 2026. Dated archived 2025 employer/independent letters and native annual instruments establish the earlier 2026 periods; do not backdate the October rates. The full-year tables and effective-date changes are in the payroll/social Guide. The minimum-tax page is a project record; proposed dates do not establish operative law. The [current completion research](../../research/monaco-2026/completion-research.md) records the expanded source reading, calculations and fresh review. The earlier public [research report](../../../docs/research/2026-10-24-monaco-research.md) and [retrieval register](../../../docs/research/2026-10-24-monaco-sources.json) preserve those distinctions. [Art. 1](https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152); [Actual employer letter](https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [Project 1.129](https://legimonaco.mc/projet/1.129).
+Law, government guidance and retrieval are distinct evidence. The ISB statute says at least 25%, despite the government summary's stricter wording. The live employer PDF URL says October 2025 while it serves October 2026. Dated archived 2025 employer/independent letters and native annual instruments establish the earlier 2026 periods; do not backdate the October rates. The full-year tables and effective-date changes are in the payroll/social Guide. The minimum-tax page is a project record; proposed dates do not establish operative law. The [current completion research](../../evidence/research/monaco-2026/completion-research.md) records the expanded source reading, calculations and fresh review. The earlier public [research report](../../docs/research/2026-10-24-monaco-research.md) and [retrieval register](../../docs/research/2026-10-24-monaco-sources.json) preserve those distinctions. [Art. 1](https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152); [Actual employer letter](https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [Project 1.129](https://legimonaco.mc/projet/1.129).
 
 ## Sources
 
@@ -61,24 +59,6 @@ The earlier government personal-tax retrieval and failed recheck remain in the h
 **Not yet confirmed:** the specialist schemes listed in the README, complete formation/accounts/audit implementation, operative multinational minimum-tax calculations and named professional sign-off. Ordinary filing procedures are documented; no taxpayer return was filed or account accessed. Arithmetic checks establish arithmetic only.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

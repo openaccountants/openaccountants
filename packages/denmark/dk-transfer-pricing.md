@@ -1,19 +1,17 @@
 ---
 name: dk-transfer-pricing
-description: "Danish transfer pricing for income year 2026: companies, permanent establishments and controlling shareholders that deal with related parties. Covers the arm's length rule in Ligningsloven § 2 (more than 50% control, group links, secondary and corresponding adjustments, § 2 B Amount B), reporting of controlled transactions in the corporate return (TastSelv Selskabsskat; form 05.021 only for hydrocarbon companies), the written documentation duty in Skattekontrolloven §§ 37-40 (master file and local file, the DKK 5m / DKK 50m exemption from 2025, the 250 employees / DKK 195m / DKK 391m small-group test, filing 60 days after the return deadline), the DKK 250,000 fine plus 10% of the adjustment, estimated assessments, the six-year assessment window, country-by-country reporting and APAs. Trigger on: transfer pricing Denmark, armslængde, kontrollerede transaktioner, TP-dokumentation, LL § 2, SKL § 39, master file, local file, land for land-rapport, APA. Out of scope: corporate rates, base and interest limits (dk-corporate-tax), individuals (dk-income-tax), VAT (dk-vat-return)."
-version: 0.1
+description: "Danish transfer pricing for income year 2026: companies, permanent establishments and controlling shareholders that deal with related parties. Covers the arm's length rule in Ligningsloven § 2 (more than 50% control, group links, secondary and corresponding adjustments, § 2 B Amount B), reporting of controlled transactions in the corporate return (TastSelv Selskabsskat; form 05.021 only for hydrocarbon companies), the written documentation duty in Skattekontrolloven §§ 37-40 (master file and local file, the DKK 5m / DKK 50m exemption from 2025, the 250 employees / DKK 195m / DKK 391m small-group test, filing 60 days after the return deadline), the DKK 250,000 fine plus 10% of the adjustment, estimated assessments, the six-year assessment window, country-by-country reporting and APAs. Trigger on: transfer pricing Denmark, armslængde, kontrollerede transaktioner, TP-dokumentation, LL § 2, SKL § 39, master file, local file, land for land-rapport, APA. Out of scope: corporate rates, base and interest limits (dk-corporate-tax), individuals (dk-income-tax), VAT (denmark-vat-return)."
+version: 0.2
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: transfer-pricing
 ---
 
-# Denmark: transfer pricing (armslængdeprincippet) v0.1
+# Denmark: transfer pricing (armslængdeprincippet) v0.2
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, transactions or filings. Do not rely on it to file, price a transaction or take a tax position without review by a qualified professional in Denmark.
 
@@ -28,7 +26,7 @@ Tax year: income year 2026 (indkomståret 2026). Currency: Danish kroner (DKK). 
 
 The same law added LL § 2 B (Amount B, see Cross-border points).
 
-See also: dk-corporate-tax (rates, base, interest limitation, return and payment), dk-income-tax (individuals), dk-capital-gains, dk-vat-return.
+See also: dk-corporate-tax (rates, base, interest limitation, return and payment), dk-income-tax (individuals), dk-capital-gains, denmark-vat-return.
 
 ## Who this applies to
 
@@ -249,23 +247,3 @@ expected:
 | Juridisk Vejledning C.D.11.15.3.3, Den typiske APA-proces (version 3.17) | https://info.skat.dk/data.aspx?oid=2060568 | 2026-10-23 |
 
 Not yet confirmed: (1) whether the documentation deadline moves when the 60th day falls on a weekend. SKL § 39, stk. 3 counts the 60 days from the return deadline "jf. §§ 11-13", but the § 13 weekend rule itself covers only the return deadlines, and Juridisk Vejledning C.D.11.13.1.3.2 gives 29 August for calendar years without a weekend rule. For calendar year 2026, 29 August 2027 is a Sunday, so file by Friday 27 August 2027. (2) The rules for the EU Dispute Resolution Directive and the EU Arbitration Convention in Danish law, and any time limits in specific Danish treaties, were not read for this skill. (3) Whether Skattestyrelsen offers unilateral APAs, beyond binding rulings (bindende svar), was not confirmed. (4) Which characterisation applies to a given secondary adjustment (for example whether an overpayment by a Danish subsidiary to its foreign parent is a dividend with Danish withholding tax) was not researched.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

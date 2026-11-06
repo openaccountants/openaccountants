@@ -5,16 +5,13 @@ version: 0.2
 jurisdiction: LT
 tax_year: 2026
 last_updated: 2026-10-24
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # Lithuania: cross-border tax for people and companies (2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 This is the hub for the Lithuanian cross-border (XB) domain. It links rather than repeats:
 
@@ -251,21 +248,3 @@ expected:
 Not yet confirmed: whether DAS-1 forms go to VMI with the annual financial statements and CIT return or only on request (VMI's PMĮ commentary says the first under article 52 and the second under article 34; VMI order No. 159 was not read); the rate and interest charged when the small-company 0% rate is lost under PMĮ article 5(2); the current list of target territories (Minister of Finance order No. 344) and VMI's own treaty list page (the PMĮ commentary's treaty lists still name Russia and Belarus; the GPMĮ commentary of 2026-10-19 marks both as no longer applied from 2026-01-01); the CFC rules (PMĮ article 39), which this skill does not cover.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

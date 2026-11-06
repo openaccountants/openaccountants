@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Cayman I
 jurisdiction: KY
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Cayman Islands Company Formation & Entity Choice
@@ -29,21 +28,3 @@ The Cayman Islands is a leading offshore incorporation centre. The most common v
 - **Annual return filing** — Every company must file an annual return and pay the annual government fee in January each year following its year of registration  _(Companies Act (2025 Revision) (Cayman Islands) — https://www.ciregistry.ky/fees/)_
 - **Beneficial ownership register** — Most Cayman companies must maintain an adequate, accurate and current beneficial ownership register and file required particulars  _(Beneficial Ownership Transparency Act (Cayman Islands) — https://www.harneys.com/our-blogs/regulatory/cayman-islands-companies-act/)_
 - **Economic substance / annual compliance** — In-scope entities must file an annual economic substance notification and (where carrying on relevant activities) an ES return; CRS/FATCA reporting applies to financial institutions  _(International Tax Co-operation (Economic Substance) Act (Cayman Islands) — https://taxsummaries.pwc.com/cayman-islands/corporate/other-issues)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

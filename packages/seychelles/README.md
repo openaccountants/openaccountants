@@ -7,13 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `sc-company-formation.md`
-4. `sc-corporate-income-tax.md`
-5. `sc-payroll-social.md`
-6. `sc-tax-overview.md`
-7. `sc-vat-gst.md`
-8. `payroll-workflow-base.md`
-9. `company-formation-workflow-base.md`
+3. `README.md`
+4. `sc-company-formation.md`
+5. `sc-corporate-income-tax.md`
+6. `sc-cross-border.md`
+7. `sc-payroll-social.md`
+8. `sc-personal-income-tax.md`
+9. `sc-tax-overview.md`
+10. `sc-transfer-pricing.md`
+11. `sc-vat-gst.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

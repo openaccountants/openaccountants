@@ -7,14 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/serbia-vat"
   jurisdiction: "RS"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Serbia: value added tax (PDV), 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The statute is the Zakon o porezu na dodatu vrednost (ZPDV), Službeni glasnik RS 84/2004 with amendments up to 80/2026. The Ministry of Finance publishes the Official Gazette's unofficial consolidated text. Article numbers below refer to it. E-invoicing and the e-VAT records sit in a separate law, the Zakon o elektronskom fakturisanju (ZEF). Penalties and interest sit in the Zakon o poreskom postupku i poreskoj administraciji (ZPPPA).
 
@@ -188,26 +184,6 @@ expected:
 
 Not yet confirmed: the PDV Rulebook (Pravilnik o PDV) text for the POPDV fields, which the Tax Administration page did not display. The current NBS reference rate is not stated; take it from nbs.rs on the day.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `serbia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/serbia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `serbia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/serbia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "DO"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Dominican Republic tax system overview for 2026: income tax (ISR), corporate rate, ITBIS, withholding, asset tax, RST, penalties and deadlines
@@ -304,24 +301,6 @@ If a date falls on a weekend or public holiday, it moves to the next working day
 - [ ] RST status and limits confirmed with DGII.
 - [ ] Deadlines diarised (IR-1, IR-2, IT-1, IR-3, IR-17, advances), with weekend roll-forward.
 - [ ] Any late amount priced with the 3% surcharge and interest; discounts, payment plan or amnesty (until 31 December 2026) considered. ([Law 30-26](https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf))
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

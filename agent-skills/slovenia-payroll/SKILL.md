@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "SI"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Slovenia payroll (2026)
@@ -192,24 +190,6 @@ expected:
 Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); the minimum wage decision in the Uradni list was not read (the figure is from the ministry's notice); the exact payment date from which employers moved from EUR 1,436.95 to EUR 1,521.62 as the minimum base (FURS applies the 2025 average from the February 2026 self-employed contributions); who bears the employee's 0.24% parental care and employment share on the gap to the minimum base (ZPIZ-2 and ZZVZZ put the pension and health shares on the employer; the employment and parental care acts were not read); the deadline for registering a new employee for insurance; the 2026 version of the REK-O field list with the long-term care fields.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

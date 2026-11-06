@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland payroll: PAYE, USC, PRSI and auto-enrolment, tax year 2026 (v0.2)
@@ -246,24 +243,6 @@ expected:
 | DETE, national minimum wage from 1 January 2026 | https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/ | 2026-10-24 |
 
 Not yet confirmed: (1) whether the pay date or the week worked decides the PRSI rate for a pay period that straddles 1 October 2026; (2) the DSP MyFutureFund examples say contributions are taken on the whole pay of the month in which yearly pay passes EUR 80,000, while AE Act s.58(3) says no contribution on the part above EUR 80,000, so follow the AEPN; (3) how salary sacrifice affects USC and PRSI; (4) the Income Tax, USC and PRSI treatment of the employee auto-enrolment contribution rests on the DSP page (no tax relief), not on a TCA section; (5) which car BIK category to use while a car's CO2 figure is unknown (no Revenue page read states a default); (6) Illness Benefit and other DSP payments through payroll follow the RPN and are not covered here; (7) Budget 2027 (6 October 2026) and Finance Bill 2026 changes for 2027 were not read; (8) an employee with more than one employment with the same employer: the earlier version said to follow the RPN for each employment and refer if the RPNs look inconsistent, but no Revenue page read for this skill states that rule. Note: the Law Reform Commission revised s.13(2)(d) still prints EUR 527 in the text, but its own annotations F115 and F117 record the substitution of EUR 552 from 1 January 2026 by Act 19 of 2025 s.2, which this skill follows.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

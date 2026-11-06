@@ -4,10 +4,9 @@ description: "Source-cited draft: personal income tax for Cuba (tax year 2025) �
 jurisdiction: CU
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Cuba Personal Income Tax
@@ -28,21 +27,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Early-payment bonus** — 5% bonus (reduction) for paying the annual settlement before 28 February %  _([Decreto-Ley No. 93/2024 (https://ivacalculator.com/cuba/impuestos-mipymes-empresas-privadas/)](https://ivacalculator.com/cuba/impuestos-mipymes-empresas-privadas/))_
 - **Advance payments** — Self-employed and individual taxpayers make periodic (monthly/quarterly) advance payments during the year, reconciled in the annual Declaración Jurada ((approx — confirm))  _(Ley No. 113 del Sistema Tributario)_
 - **Non-resident taxation** — Non-residents are taxed only on Cuban-source income; employment income earned through Cuban entities is subject to withholding ((approx — confirm))  _(Ley No. 113 del Sistema Tributario)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

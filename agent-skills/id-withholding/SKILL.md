@@ -8,17 +8,14 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "RILIA PUTRI, CA, CPA"
   reviewed_by: "RILIA PUTRI"
-  trust_label: "Checked by RILIA PUTRI"
-  review_status: "current"
 ---
 
 # ID Withholding
 
 ## Indonesia Withholding Tax — PPh 23, PPh 26, PPh 4(2) Final — Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -71,7 +68,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Monthly payment deadline | 10th of the month following the tax point (kode billing via SSP) |
 | Monthly return deadline | 20th of the month following the tax point (SPT Masa PPh Unifikasi via Coretax) |
 | Governing law | UU PPh No. 36/2008 as last amended by UU HPP No. 7/2021; PP 9/2021 (bond interest); PP 51/2008 jo. PP 9/2022 (construction services); PMK 141/PMK.03/2015 (services subject to PPh 23); PMK 34/PMK.010/2017 (land/building rental); PER-2/PJ/2024 (e-Bupot Unifikasi); P3B treaty network with ~70 countries |
-| Validated by | Pending — requires sign-off by a qualified Indonesian tax consultant (Konsultan Pajak bersertifikat) |
 | Skill version | 1.0 |
 
 ### Quick-look: payment type → article → rate
@@ -392,24 +388,6 @@ The general principle: withhold the higher rate when in doubt and let the recipi
 ## Footer notice
 
 *Skill version 1.0. Tax year 2025. Pending sign-off by a qualified Indonesian Konsultan Pajak. Do not file a withholding tax return based solely on this skill without credentialed local review.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

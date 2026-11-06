@@ -8,17 +8,14 @@ metadata:
   jurisdiction: "SA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Mehran Habib, CA"
   reviewed_by: "Mehran Habib"
-  trust_label: "Checked by Mehran Habib"
-  review_status: "current"
 ---
 
 # SA Withholding Tax
 
 ## Saudi Arabia — Withholding Tax — Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Mehran Habib** on 2026-06-06.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -55,7 +52,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Remittance deadline | **Within 10 days of the end of the month in which the payment was made** (Article 68(b), Income Tax Law) |
 | Annual reconciliation deadline | Within 120 days of the payer's financial year-end |
 | Governing law | **Income Tax Law (Royal Decree No. M/1 dated 15/1/1425H, 15 March 2004) — Article 68**, supplemented by the **Implementing Regulations (Resolution of the Minister of Finance No. 1535 dated 11/6/1425H) — Articles 63–67** |
-| Validated by | Pending — requires sign-off by a SOCPA-licensed Saudi tax practitioner |
 | Skill version | 1.0 |
 
 ### Quick-look: payment type → standard WHT rate (resident payer → non-resident recipient)
@@ -366,24 +362,6 @@ The general principle: withhold the higher rate and let the recipient claim a re
 ## Skill version 1.0. Tax year 2025. Pending sign-off by a SOCPA-licensed Saudi tax practitioner. Pillar Two GloBE rules and KSA QDMTT implementation are evolving — do not rely on this skill for top-up tax computation. Treaty relief at source requires ZATCA pre-approval — do not apply treaty rates without confirmed approval.
 
 Skill version 1.0. Tax year 2025. Pending sign-off by a SOCPA-licensed Saudi tax practitioner. Pillar Two GloBE rules and KSA QDMTT implementation are evolving — do not rely on this skill for top-up tax computation. Treaty relief at source requires ZATCA pre-approval — do not apply treaty rates without confirmed approval.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

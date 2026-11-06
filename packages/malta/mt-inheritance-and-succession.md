@@ -4,11 +4,9 @@ description: "Inheritance and succession in Malta for families: there is no inhe
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-10-05
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: estate-wealth-tax
 ---
 
 # Inheritance in Malta: duty on death, shares and property passing to the next generation
@@ -207,21 +205,3 @@ Reading the 12% as a charge on the price would give a much larger and wrong figu
 - Civil Code, Cap. 16 (consolidated): https://legislation.mt/eli/cap/16/eng/pdf
 
 This Guide is a working reference for a professional. It is not legal or tax advice on a particular estate.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

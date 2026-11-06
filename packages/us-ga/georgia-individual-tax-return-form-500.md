@@ -4,11 +4,11 @@ description: Georgia Individual Income Tax Return (Form 500) — STARTER DRAFT
 jurisdiction: US-GA
 tax_year: 2025
 last_updated: 2026-08-10
-authored_by: Jeff Watts
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jeff Watts"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # Georgia Individual Tax Return (Form 500)
@@ -85,21 +85,3 @@ State tax authority — individual income tax pages (rates, exclusions, credits)
 State statutes/regulations on individual income tax: citation to confirm.
 
 > Contributed by Jeff Watts, ACF-04080.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Vanuatu 
 jurisdiction: VU
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Vanuatu Company Formation & Entity Choice
@@ -26,21 +25,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Core incorporation steps** — Submit VFSC application form with passport ID of foreign shareholders/directors and the fee; obtain Certificate of Incorporation; procure company seal  _(Companies Act No. 25 of 2012 (https://www.investvanuatu.org/wp-content/uploads/2019/07/VFSC-FS.pdf))_
 - **Core annual compliance** — Pay annual company fee to VFSC, renew Business Licence, and (international companies) keep accounting records  _(Companies Act No. 25 of 2012 / International Companies Act (https://www.vfsc.vu/companies-fees-and-penalties/))_
 - **Business Licence incentive** — New businesses in certain priority sectors may qualify for licence-fee exemption for the first three years (approx — confirm eligible sectors)  _(Business Licence Act (https://vanuatucustoms.gov.vu/taxes-and-licensing/taxes/rent-tax.html))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

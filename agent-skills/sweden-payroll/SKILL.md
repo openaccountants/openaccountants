@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "SE"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Sweden payroll and PAYE
@@ -223,24 +220,6 @@ expected:
 | Skatteverket, rättslig vägledning: Skattetabeller (one-off amounts) | https://www4.skatteverket.se/rattsligvagledning/325047.html | 2026-10-24 |
 
 Not yet confirmed: nothing open. Settled on review: the no-PE rate basis (Skatteverket legal guidance 1333), the one-off annual-pay rule (legal guidance 325047), the table-number rounding (Skatteverket, skattetabeller) and how växa and the youth reduction combine (Lag 2025:1334 8 and 10 §§).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

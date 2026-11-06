@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "EE"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Estonia social contributions, tax year 2026
@@ -232,24 +230,6 @@ expected:
 Not yet confirmed: the 2026 State Budget Act text that sets the EUR 886 monthly rate (taken from EMTA and the Ministry of Finance, not read in the Act itself); the Social Tax Act version in force from 25.10.2026 (not read); whether the FIE II pillar contribution is computed on the profit before or after the 1.33 division (KoPS § 11(2¹) refers to the SMS § 2(1) point 5 income; EMTA's calculation not checked); the EMTA page with the 2026 FIE advance due dates (the page read still shows 2025 dates, so the EUR 877.14 figure is computed from SMS § 9(3) and the EUR 886 rate).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

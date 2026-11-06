@@ -4,10 +4,10 @@ description: "Source-cited draft: corporate income tax for Cambodia (tax year 20
 jurisdiction: KH
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: income-tax
 ---
 
 # Cambodia Corporate Income Tax
@@ -28,21 +28,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Domestic WHT on interest paid to residents** — 15% (6% on interest on fixed-term deposits and 4% on savings deposits paid by domestic banks) percent  _(Law on Taxation — https://taxsummaries.pwc.com/cambodia/corporate/withholding-taxes)_
 - **Reduced WHT under double tax agreements** — Typically reduced to 10% for dividends, interest, royalties and technical/management fees under most Cambodian DTAs percent  _(Applicable Double Taxation Agreement — https://taxsummaries.pwc.com/cambodia/corporate/withholding-taxes)_
 - **Annual TOI return and payment deadline** — Within 3 months after financial year-end (31 March for calendar-year taxpayers)  _(Law on Taxation — https://taxsummaries.pwc.com/cambodia/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

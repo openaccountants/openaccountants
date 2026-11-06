@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/luxembourg-income-tax"
   jurisdiction: "LU"
   tax_year: "2026"
-  last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Luxembourg personal income tax: residents and the self-employed (2026) v0.4
@@ -290,28 +288,8 @@ expected:
 
 Not yet confirmed: the year-of-acquisition rule rests only on the Guichet.lu page (last changed 2018, and it still says depreciation cannot be deferred, which art. 32(1a) has allowed since 2017); neither the LIR nor an ACD circular states it, so a reviewer must confirm current ACD practice before a part-year charge is filed. Whether the ACD smooths the step from 7% to 9% surcharge just above EUR 150,000 / 300,000 on assessment (the ACD page shows a plain step). The AED rates page was last updated 28 December 2023, and the consolidated VAT law (LTVA) was not read for 2026.
 
-> Contributed by Ryan Duguid.
-
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `luxembourg-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/luxembourg-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `luxembourg-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/luxembourg-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

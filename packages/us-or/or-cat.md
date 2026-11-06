@@ -4,10 +4,9 @@ description: Oregon Corporate Activity Tax is a gross receipts tax (not an incom
 jurisdiction: US-OR
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: corporate-tax
 ---
 
 # OR Cat
@@ -454,21 +453,3 @@ This skill is derived from the following primary sources:
 This skill is at tier 2 (content). It must be loaded alongside us-tax-workflow-base v0.2 or later. It does not replace credentialed Oregon CPA or attorney sign-off and is not a substitute for direct consultation of current statutory text.
 
 Verified by: pending. Last updated: 2025-11-15. Version 0.1.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

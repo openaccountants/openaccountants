@@ -7,7 +7,8 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `mq-antilles-goods-movements.md`
+3. `README.md`
+4. `mq-antilles-goods-movements.md`
 
 ## How to use
 

@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cy-corporate-tax"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Cyprus corporate income tax (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The Cyprus tax year is the calendar year. The Tax Department (Τμήμα Φορολογίας) administers corporate income tax under the Income Tax Law 118(I)/2002, with filing and payment rules in the Assessment and Collection of Taxes Law 4/1978. The 2026 reform (Income Tax (Amendment) Law 244(I)/2025, the Special Defence Contribution (Amendment) (No. 4) Law of 2025 and Law 243(I)/2025 amending the Assessment and Collection of Taxes Law) applies from 1 January 2026. Figures for tax year 2025 and earlier are different; do not mix them.
 
@@ -193,26 +188,6 @@ The gov.cy PDFs refuse automated downloads (HTTP 403); they were read in a brows
 
 Not yet confirmed: the 10-year government bond yields used for the 2026 NID reference rate; the Capital Gains Tax rate (not read for this skill); the name of the e-filing portal for the IR4; whether any decree has extended the 2025 or 2026 filing dates; the number and in-force date of the Pillar Two law.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

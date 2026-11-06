@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: BD
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: formation
 ---
 
 # Bangladesh Business Formation — Skill v1.0
@@ -30,7 +31,6 @@ depends_on:
 | Core registrations | **TIN** (NBR, etaxnbr.gov.bd) + **trade licence** (city corporation / pourashava / union parishad) |
 | VAT | **BIN** (Business Identification Number) registration with NBR if over the VAT threshold |
 | E-commerce | DBID (Digital Business Identification) for online sellers |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ### Conservative defaults

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "GG"
   tax_year: "2026"
   last_updated: "2026-10-29"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Guernsey: forming a local company limited by shares
@@ -66,7 +64,7 @@ Before using the application, reconcile the constitution, founder, director, own
 
 Section 17 now confirms the memorandum, first-director consents/particulars, registered office, resident-agent information/beneficial-owner compliance statement, founder details, initial share capital or guarantee, required consents/resolutions and compliance declaration. Distinguish cash from non-cash consideration in the initial-capital statement. The application may propose an incorporation date no later than **three months after application**; French constitutional text requires an English translation. The Registrar rejects a non-compliant application. These controls supplement the original application checklist rather than replacing it. [Companies Law s17(1)–(11)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
 
-Still to verify: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
+Still to verify: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
 
 ## Two recomputing fee examples
 
@@ -109,27 +107,9 @@ expected:
 | [Registry fee schedule](https://www.guernseyregistry.com/companyfees) | Current incorporation/reservation fees, effective 1 December 2025 | 2026-10-27 |
 | All original Registry sources in frontmatter | Original scope, ownership and handover guidance and prior review retained | 2026-10-22 |
 
-Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
+Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

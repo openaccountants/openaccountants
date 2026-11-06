@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AF"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Afghanistan Company Formation & Entity Choice
@@ -29,24 +27,6 @@ metadata:
 - **Incorporation / licence cost** — Government registration and licence fees apply (varies by capital and sector) ((approx — confirm current fee schedule))  _(Law on Limited Liability Companies)_
 - **Annual business licence renewal** — Business licences must be periodically renewed with the registry ((approx — confirm renewal period))  _(Law on Limited Liability Companies)_
 - **Annual tax compliance** — File annual income tax return within 3 months of year-end; file BRT quarterly; remit salary withholding monthly ((approx — confirm deadlines))  _(Income Tax Law 2009)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

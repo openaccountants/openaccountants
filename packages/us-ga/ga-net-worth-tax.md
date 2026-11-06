@@ -4,10 +4,9 @@ description: Tier 2 Georgia content skill for the Net Worth Tax under Form 600 P
 jurisdiction: US-GA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # GA Net Worth Tax
@@ -573,21 +572,3 @@ When this skill is invoked, produce a reviewer-ready package containing:
 ## 16. Reviewer Sign-Off Required
 
 - **Sign-off requirement** — Every output of this skill requires sign-off by a Circular 230-credentialed reviewer (Enrolled Agent, CPA, or attorney) before filing. Georgia-specific sign-off should come from a reviewer with current Georgia experience — the bracket cliffs, apportionment subtleties, and the dual-base computation are easy to misapply without local familiarity. Per the verification model, Georgia state-tax outputs require the Georgia lead accountant or a contributor accountant sign-off in addition to the general federal reviewer.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

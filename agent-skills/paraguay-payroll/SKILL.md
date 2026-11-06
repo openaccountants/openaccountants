@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "PY"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Paraguay Payroll Skill v0.1 (Tier 2 — research-verified, reviewer sign-off pending)
@@ -46,7 +44,6 @@ metadata:
 | Labour authority (minimum wage) | MTESS — Ministerio de Trabajo, Empleo y Seguridad Social |
 | Key legislation | Ley N° 6380/2019 (IRP) + Decreto N° 3184/2019; Ley N° 98/92 & Ley N° 213/93 (Código del Trabajo, IPS), reformed by Ley N° 7446/2024; Ley N° 417/73 (aguinaldo) |
 | Filing portals | IPS: **REI** (Registro del Empleador por Internet); DNIT/IRP: **Marangatú** |
-| Validated by | Pending — requires sign-off by a licensed Paraguayan accountant |
 | Skill version | 0.1 (Tier 2) |
 
 ## Section 2 -- Income Tax Position (IRP — self-assessed, NOT employer-withheld)
@@ -521,26 +518,6 @@ If any required input is missing, state what is missing and do not fabricate a f
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed accountant in Paraguay) before implementation. This is a Tier 2 (research-verified) skill: figures are sourced to named authorities (DNIT, IPS, MTESS) and Big-4 summaries but have not yet been verified section-by-section by a licensed Paraguayan accountant, and items marked "[RESEARCH GAP — reviewer to confirm]" carry residual uncertainty.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

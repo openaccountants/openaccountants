@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Omolola Fasasi, CA"
   reviewed_by: "Omolola Fasasi"
-  trust_label: "Checked by Omolola Fasasi"
-  review_status: "current"
 ---
 
 # NG Payroll
@@ -22,7 +19,7 @@ metadata:
 >
 > **2025 changes summary (v1.0):** The Nigeria Tax Administration Act 2025 (NTA 2025), passed in Q1 2025 with phased commencement through 2026, introduces a **unified payroll module under FIRS Tax Pro-Max** intended to consolidate PAYE filings for federal MDAs and (subject to MoU) state Internal Revenue Services. As of the 2025 tax year, **state IRS portals (LIRS e-tax, FCT-IRS, OGIRS, etc.) remain the primary PAYE remittance channel** for private-sector employers. See Section 5 for the current remittance routing.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -428,24 +425,6 @@ Minimum tax check: 1% × 500,000 = 5,000 → not binding (computed PAYE is highe
 ## *OpenAccountants — open-source accounting skills for AI*
 
 *This is not tax advice. All outputs must be reviewed by a qualified Nigerian payroll professional or tax consultant before any payslip is issued or any remittance is made.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

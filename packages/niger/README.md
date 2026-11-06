@@ -7,13 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ne-company-formation.md`
-4. `ne-corporate-income-tax.md`
-5. `ne-payroll-social.md`
-6. `ne-tax-overview.md`
-7. `ne-vat-gst.md`
-8. `payroll-workflow-base.md`
-9. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ne-cash-payment-tax.md`
+5. `ne-company-formation.md`
+6. `ne-corporate-income-tax.md`
+7. `ne-money-transfer-tax-repeal.md`
+8. `ne-payroll-social.md`
+9. `ne-tax-overview.md`
+10. `ne-vat-gst.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## How to use
 

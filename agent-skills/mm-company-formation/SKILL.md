@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "MM"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Myanmar Company Formation & Entity Choice
@@ -29,24 +27,6 @@ Companies are incorporated under the Myanmar Companies Law 2017 and registered o
 - **Ongoing annual return** — Subsequent annual returns due no later than one month after the anniversary of incorporation  _(Myanmar Companies Law 2017 (https://www.vdb-loi.com/mm_publications/new-requirements-for-the-first-annual-return-of-a-newly-incorporated-company/))_
 - **Tax registration** — New companies must register with the Internal Revenue Department (IRD) and obtain a Taxpayer Identification Number (TIN)  _(Income Tax Law (Myanmar) (https://taxsummaries.pwc.com/myanmar))_
 - **Annual financial statements / audit** — Companies must prepare annual financial statements; audited accounts are filed with the annual income tax return to the IRD  _(Myanmar Companies Law 2017 (https://www.lawplusltd.com/2024/04/reports-and-filings-required-for-companies-in-myanmar/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

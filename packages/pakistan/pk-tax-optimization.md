@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: PK
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: tax-optimization
 ---
 
 # Pakistan Tax Optimization (Self-Employed) — Skill v1.0
@@ -28,7 +29,6 @@ depends_on:
 | Currency | PKR |
 | Biggest levers | PSEB IT-export concession · Filer/ATL status · banking-channel remittance · advance-tax management |
 | Tax authority | FBR (IRIS) |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — The levers (Tier 1)

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # US §1202 qualified small business stock (QSBS) exclusion
@@ -188,24 +185,6 @@ These are hypothetical. Each one assumes every QSBS test passes except where sta
 - [ ] Exclusion percentage applied to the capped gain; section 1202 gain, gain above the cap, AMT and NIIT classified.
 - [ ] Form 8949 code Q/R, 28% worksheet, Form 6251 line 2h done; §1045 election on a timely return. [Schedule D instructions](https://www.irs.gov/instructions/i1040sd)
 - [ ] State treatment checked separately.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

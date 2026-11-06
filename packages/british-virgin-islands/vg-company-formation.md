@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for British 
 jurisdiction: VG
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # British Virgin Islands Company Formation & Entity Choice
@@ -30,21 +29,3 @@ The most common BVI vehicle is the Business Company (BC) incorporated under the 
 - **Economic substance reporting** — Annual reporting to the registered agent within 6 months of the financial period end; substance required where relevant activities are carried on  _(Economic Substance (Companies and Limited Partnerships) Act, 2018)_
 - **Statutory registers** — Must maintain register of directors (filed with Registry, non-public), register of members, and beneficial ownership information  _(BVI Business Companies Act, 2004; Beneficial Ownership Secure Search System Act, 2017)_
 - **Late annual return penalty** — Failure to file the annual financial return on time is an offence; fines up to a maximum aggregate of US$5,000 USD  _(BVI Business Companies Act (As Revised))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "HK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Hong Kong Tax Overview
@@ -30,24 +28,6 @@ Hong Kong operates a simple, low-rate, territorial (source-based) tax system adm
 - **Capital gains tax** — None — Hong Kong does not levy capital gains tax  _([Inland Revenue Ordinance (Cap. 112)](https://taxsummaries.pwc.com/hong-kong-sar))_
 - **Profits tax return filing** — Returns issued in bulk on the first working day of April; due ~1 month from issue, with block extensions by accounting-date code (extended dates commonly Nov for 31 Dec year-ends, mid-Aug for 31 Mar year-ends) ((approx — confirm))  _([Inland Revenue Ordinance (Cap. 112), section 51](https://www.gov.hk/en/residents/taxes/taxfiling/taxrates/profitsrates.htm))_
 - **Individual tax return filing** — Individual tax return (BIR60) issued early May; due within 1 month of issue (3 months if filed for sole-proprietorship business), with a 1-month extension for e-filing ((approx — confirm))  _(Inland Revenue Ordinance (Cap. 112), section 51)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

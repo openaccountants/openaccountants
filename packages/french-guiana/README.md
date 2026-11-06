@@ -7,8 +7,9 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gf-import-octroi-and-vat.md`
-4. `gf-space-sector-octroi.md`
+3. `README.md`
+4. `gf-import-octroi-and-vat.md`
+5. `gf-space-sector-octroi.md`
 
 ## How to use
 

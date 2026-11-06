@@ -4,10 +4,9 @@ description: Tier 2 Wyoming content skill for entity formation covering tax year
 jurisdiction: US-WY
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # WY Formation
@@ -617,21 +616,3 @@ This skill draws on the following authorities. Citations are to 2025 versions of
 - **Nevada commerce tax** — Nevada commerce tax.  _(NRS Chapter 363C)_
 
 This skill is a planning aid for tax-year 2025 work. It does not constitute legal advice, does not establish an attorney-client relationship, and does not substitute for review and sign-off by a credentialed Wyoming-licensed attorney and a Circular 230 federal tax practitioner. The Wyoming Secretary of State filing fees and statutory cross-references are current as of the `last_updated` date in the frontmatter; confirm current fees on the Wyoming Secretary of State website before filing.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

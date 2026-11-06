@@ -4,10 +4,9 @@ description: Pennsylvania Local Earned Income Tax (LEIT) — Act 32 of 2008
 jurisdiction: US-PA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # PA Local Eit
@@ -467,21 +466,3 @@ Add the current-year DCED rate table for all 67 counties at a point-in-time snap
 ## End of pa-local-eit v0.1
 
 End of pa-local-eit v0.1 — Pennsylvania Local Earned Income Tax (Act 32 of 2008). Tax year 2025.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

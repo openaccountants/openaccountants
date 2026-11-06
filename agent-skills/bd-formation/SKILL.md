@@ -24,7 +24,6 @@ metadata:
 | Core registrations | **TIN** (NBR, etaxnbr.gov.bd) + **trade licence** (city corporation / pourashava / union parishad) |
 | VAT | **BIN** (Business Identification Number) registration with NBR if over the VAT threshold |
 | E-commerce | DBID (Digital Business Identification) for online sellers |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ### Conservative defaults

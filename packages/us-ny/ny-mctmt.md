@@ -4,10 +4,9 @@ description: "The NY Metropolitan Commuter Transportation Mobility Tax (MCTMT, T
 jurisdiction: US-NY
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # NY Mctmt
@@ -361,21 +360,3 @@ Last updated: 2025-11-15. Next scheduled review: prior to 2026 tax-filing season
 - **us-ny-return-assembly** — Final assembly of the NY filing package; MCTMT output feeds this skill.
 - **us-quarterly-estimated-tax** — Federal Form 1040-ES; parallel quarterly cadence; do NOT include MCTMT in the federal estimate base.
 - **us-self-employed-retirement** — SEP-IRA / Solo 401(k) contributions reduce Schedule C net profit but do NOT reduce the §1402 net SE earnings base used for MCTMT (retirement contributions reduce AGI but not SE tax or MCTMT base).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

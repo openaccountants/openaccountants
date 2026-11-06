@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "GG"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Guernsey domestic connected transactions and transfer-pricing evidence
@@ -145,27 +143,9 @@ expected:
 | Revenue MAP Guidance issue 8,12 February 2024:7.1–7.4,7.7.1–7.7.5; linked in Guernsey's 17 March 2025 dispute-resolution profile | https://www.gov.gg/CHttpHandler.ashx?id=178595&p=0 | 2026-10-28 |
 | OECD 2020 best-practices peer review, paragraph 3: dated Guernsey-reported no-specific-TP-legislation statement only | https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/beps-action-14-peer-review-best-practices-guernsey-2020.pdf | 2026-10-28 |
 
-Not yet confirmed: whether a general domestic arm's-length adjustment regime or TP-specific master-file/local-file requirement applies for 2026 beyond the verified provisions and ordinary records duties above, including any operative scope/threshold/method/filing/penalty instrument. The2020statement does not establish current absence. Specialist CbCR/Pillar Two and regulated-sector regimes are excluded, not treated as absent. Detailed privilege, compulsory production/search and source-specific foreign-information appeals require separate legal review. The [statutory-benefit and domestic-TP whole-pack review](../../research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) accepts these methods at `5d8327ad`, with the [final status closure](../../research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md) checking later status edits. No professional attestation is claimed.
+Not yet confirmed: whether a general domestic arm's-length adjustment regime or TP-specific master-file/local-file requirement applies for 2026 beyond the verified provisions and ordinary records duties above, including any operative scope/threshold/method/filing/penalty instrument. The2020statement does not establish current absence. Specialist CbCR/Pillar Two and regulated-sector regimes are excluded, not treated as absent. Detailed privilege, compulsory production/search and source-specific foreign-information appeals require separate legal review. The [statutory-benefit and domestic-TP whole-pack review](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) accepts these methods at `5d8327ad`, with the [final status closure](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md) checking later status edits. No professional attestation is claimed.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

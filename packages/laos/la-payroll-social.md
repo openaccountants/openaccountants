@@ -4,10 +4,9 @@ description: "Source-cited draft: payroll & social contributions for Laos (tax y
 jurisdiction: LA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Laos Payroll & Social Contributions
@@ -29,21 +28,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Social security remittance deadline** — By the 15th of the following month (approx — confirm; sources cite 15th or 20th)  _(Law on Social Security (Lao PDR) — https://laos.acclime.com/guides/social-security-obligations/)_
 - **Payroll PIT remittance deadline** — By the 20th of the following month (approx — confirm)  _(Tax Administration Law (Lao PDR) — https://laos.acclime.com/guides/taxation-overview/)_
 - **Employer registration** — Employers must register themselves and their employees with the LSSO  _(Law on Social Security (Lao PDR) — https://laos.acclime.com/guides/social-security-obligations/)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

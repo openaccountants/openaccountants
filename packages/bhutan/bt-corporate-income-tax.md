@@ -4,10 +4,9 @@ description: "Source-cited draft: corporate income tax for Bhutan (tax year 2025
 jurisdiction: BT
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Bhutan Corporate Income Tax
@@ -29,21 +28,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Loss carry-forward** — Tax losses carried forward (extended to indefinite carry-forward under the Income Tax Act 2025) ((approx — confirm 2025 carry-forward period))  _(Income Tax Act of the Kingdom of Bhutan 2001)_
 - **Presumptive / small business regime** — Simplified presumptive tax for businesses with turnover under Nu 5 million (introduced under the Income Tax Act 2025; professionals excluded)  _([Income Tax Act of Bhutan 2025](https://thebhutanese.bt/major-changes-in-bhutans-income-tax-from-2026-explained/))_
 - **CIT / BIT filing and payment deadline** — By 31 March following the close of the income year ((approx — confirm exact date))  _([Income Tax Act of the Kingdom of Bhutan 2001](https://www.drc.gov.bt/notification-tax-filing-for-income-year-2025/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

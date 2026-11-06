@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gr-efka"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Greece: social insurance contributions of the self-employed (e-EFKA), 2026
@@ -187,26 +185,6 @@ expected:
 
 Not yet confirmed: the text of art. 2(4) ν. 4158/2013 itself (the late-payment rate is taken from e-EFKA circular 3/2020, section 6, and the law was not fetched), and the ECB refinancing rate in force on any given day; the exact dates of the December 2026 to January 2027 window for choosing 2027 categories; which professions are compulsorily insured in the supplementary and lump-sum branches beyond the former OAEE groups the e-EFKA FAQ lists (check the client's e-EFKA record); whether an engineer such as the one in Example 2 is compulsorily insured in both branches (the example assumes it).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-efka` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-efka. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-efka` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-efka. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `zambia-vat.md`
-4. `zm-company-formation.md`
-5. `zm-corporate-income-tax.md`
-6. `zm-income-tax.md`
-7. `zm-payroll-social.md`
-8. `zm-tax-overview.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `zambia-vat.md`
+5. `zm-company-formation.md`
+6. `zm-corporate-income-tax.md`
+7. `zm-income-tax.md`
+8. `zm-payroll-social.md`
+9. `zm-tax-overview.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

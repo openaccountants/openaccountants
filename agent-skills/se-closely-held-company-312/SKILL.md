@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/se-closely-held-company-312"
   jurisdiction: "SE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Sweden: the 3:12 rules for owners of closely held companies (income year 2026)
@@ -222,26 +219,6 @@ expected:
 
 Not yet confirmed: the wording of the repealed 57 kap. 12 § second paragraph, 21 § second paragraph and 25-35 §§ that still apply until 2028 (data.riksdagen.se shows only the current text; Skatteverket calls them the index and capital-base rules for shares bought before 1990 or 1992); the new wording of the outsider rule in 57 kap. 5 § beyond the shorter four-year period from 2027; whether the 30% outsider threshold stays Skatteverket's practice under the new wording; whether a foreign company can be a fåmansföretag for a Swedish resident owner; that the part of a dividend taxed in tjänst carries no social contributions and is not pensionable income (socialavgiftslagen and socialförsäkringsbalken not read); the K10 form version for income year 2026, not yet published on 23 October 2026.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `se-closely-held-company-312` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/se-closely-held-company-312. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `se-closely-held-company-312` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/se-closely-held-company-312. If neither is available, confirm every figure against the official source pages cited above before relying on it.

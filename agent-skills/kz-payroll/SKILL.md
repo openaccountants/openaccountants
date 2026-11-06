@@ -31,7 +31,6 @@ metadata:
 |---|---|
 | Tax authority | State Revenue Committee (КГД, kgd.gov.kz) |
 | Reporting | Form 200.00 (quarterly) |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Skill version | 1.0 |
 
 ### Conservative defaults

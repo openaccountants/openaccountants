@@ -8,16 +8,14 @@ metadata:
   jurisdiction: "PK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
+  reviewed_by: "Ibrar Ali"
 ---
 
 # PK Withholding Tax
 
 ## Pakistan — Withholding Tax — Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -77,7 +75,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | ATL impact | Recipients not on the Active Taxpayers List published weekly by FBR pay penal rates under the **Tenth Schedule** — typically 2x the standard rate, and up to 3x for certain categories |
 | WHT credit | Tax deducted under most sections (Section 153 services, 153 goods adjustable, 155 rent, 148 imports adjustable, etc.) is creditable against the recipient's annual income tax liability; tax deducted under "final tax regime" (FTR) sections (e.g. 150 dividends, 151 profit on debt for individuals, 152(1) royalties/fees for technical services to non-residents, some 153 goods, 156 prizes) is **final** and not refundable |
 | Governing law | **Income Tax Ordinance 2001** as amended by Finance Act 2024 and Finance Act 2025; Income Tax Rules 2002; **Tenth Schedule** (ATL/non-ATL rates); **First Schedule** (rates of tax) |
-| Validated by | Pending — requires sign-off by a qualified Pakistan tax practitioner (ICAP-registered Chartered Accountant or ICMAP-registered Cost & Management Accountant or FBR-registered Income Tax Practitioner) |
 | Skill version | 1.0 |
 
 ### Quick-look: section → payment type → rate (filer vs non-filer)
@@ -477,24 +474,6 @@ In practice, most withholding agents deposit weekly to stay current. The Section
 ## End of skill v1.0 — pk-withholding-tax.
 
 **Reviewer note.** Pakistan WHT rates change with every Finance Act and frequently within the year via SROs. Every figure in this skill is stated "as per FA 2025 — verify against current First Schedule" and must be confirmed against the live FBR text before any client-facing computation. Sign-off by an ICAP-registered Chartered Accountant or FBR-registered Income Tax Practitioner is required before reliance.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
