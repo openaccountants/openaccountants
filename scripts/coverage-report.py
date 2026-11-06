@@ -23,6 +23,8 @@ So state `complete` is stricter than the `complete` flag, which does not ask for
 a signature.
 
 Owner, region and display name come from scripts/data/jurisdictions.json.
+Countries in scripts/data/sanctioned.yml are not covered: they get no row and no
+coverage issue, and are listed apart as "Not covered (sanctioned)".
 A pack README.md with an `applicable:` / `not_applicable:` block narrows the
 domains that count as missing for that jurisdiction.
 
@@ -49,6 +51,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(REPO_ROOT, "scripts", "data", "jurisdictions.json")
 sys.path.insert(0, os.path.join(REPO_ROOT, "scripts"))
 
+import sanctioned  # noqa: E402
 import skill_checks  # noqa: E402
 from frontmatter_yaml import FrontmatterError, load_frontmatter  # noqa: E402
 
@@ -237,10 +240,13 @@ def build_report(today=None):
 
     rows = []
     pseudo = {}
+    blocked = sanctioned.codes()
     for code, guides in by_code.items():
         if code in PSEUDO_CODES:
             pseudo[code] = len(guides)
             continue
+        if code.split("-")[0] in blocked:
+            continue  # validate-guides.py refuses these files; never a pack to finish
         info = meta.get(code, {})
         dirs = collections.Counter(os.path.dirname(g["path"]) for g in guides)
         pack_dir = info.get("dir") or dirs.most_common(1)[0][0]
@@ -278,7 +284,7 @@ def build_report(today=None):
         })
     # Jurisdictions listed in the data file but with no guide at all.
     for code, info in meta.items():
-        if code not in by_code and code not in PSEUDO_CODES:
+        if code not in by_code and code not in PSEUDO_CODES and code not in blocked:
             rows.append({
                 "code": code, "name": info.get("name") or code, "region": info.get("region") or "unassigned",
                 "owner": info.get("owner") or "open", "dir": info.get("dir") or "", "skills": 0, "reviewed": 0,
@@ -296,6 +302,10 @@ def build_report(today=None):
         "with_readme": sum(1 for r in rows if r["has_readme"]),
         "reviewed_skills": index["counts"]["accountant_reviewed"],
         "rows": rows,
+        "not_covered_sanctioned": [
+            {"code": c["code"], "name": c["name"], "state": "Not covered (sanctioned)"}
+            for c in sanctioned.countries()
+        ],
     }
 
 
@@ -308,6 +318,8 @@ def summary_lines(report):
         f"Reviewed skills: {report['reviewed_skills']}",
         "States: " + "  ".join(f"{k}: {v}" for k, v in report["states"].items()),
         f"Pseudo-codes (not jurisdictions): {', '.join(f'{k} ({v})' for k, v in sorted(report['pseudo_codes'].items()))}",
+        "Not covered (sanctioned, scripts/data/sanctioned.yml): "
+        + ", ".join(f"{c['name']} ({c['code']})" for c in report["not_covered_sanctioned"]),
         "",
         f"{'Owner':<9}{'Juris':>6}{'Complete':>10}{'Thin(<=7)':>11}{'No skills':>11}{'Stale skills':>14}",
     ]

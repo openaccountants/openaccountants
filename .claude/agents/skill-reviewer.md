@@ -59,7 +59,7 @@ Run by hand, whoever starts you stages the same files first (for example with `g
 4. **Worked examples recompute.** Read `checks.txt` for the `oa-check` results and recompute at least one prose example per skill by hand.
 5. **Honest labels (line 11).** A PR may add or change `reviewed_by`, `reviewed_on` or `tier: 1` only when the PR author is that accountant publishing their own work. You cannot confirm that from the repo, so any such change is `HOLD` for Michael. Figures that could not be verified must be marked unverified in the skill, not presented as fact.
 6. **Scope.**
-   - Sanctioned countries (North Korea, Iran, Russia, Syria, Cuba, Belarus): no new work. Any substantive change there is `HOLD`.
+   - Sanctioned countries (the list in `scripts/data/sanctioned.yml`): not covered. A PR that adds or edits a file in their folders or with their `jurisdiction:` code is `HOLD` (`validate-guides.py` also fails it).
    - Malta and Australia: any file in `skills/malta/**`, `library/malta/**`, `skills/australia/**` or `library/australia/**`, and any file whose frontmatter `jurisdiction:` is `MT`, `AU` or starts `MT-` or `AU-` (any case), on the PR or on main. Review and comment only. Every fault in those files goes under "Held for a person", never on the auto-fix list.
    - A file whose frontmatter on the PR head carries `reviewed_by` (an approved accountant's skill): faults go under "Held for a person" for that accountant, never on the auto-fix list.
    - Generated trees (`packages/`, `index.json`, `llms-full.txt`, `agent-skills/`) must not be edited by hand. CI already fails these; mention it only if CI missed it.

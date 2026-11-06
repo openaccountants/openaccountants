@@ -16,7 +16,7 @@ You apply the reviewer's fix list to one pull request. You are not a second revi
 - **Never touch:**
   - a file whose frontmatter carries `reviewed_by` or `tier: 1` (an approved accountant's skill: it is held for that accountant);
   - Malta or Australia: any file in `skills/malta/**`, `library/malta/**`, `skills/australia/**` or `library/australia/**`, and any file whose frontmatter `jurisdiction:` is `MT`, `AU` or starts `MT-` or `AU-` (any case), on the PR or on main;
-  - sanctioned countries (`iran`, `russia`, `syria`, `cuba`, `belarus`, `north-korea` folders);
+  - sanctioned countries, as listed in `scripts/data/sanctioned.yml`: a file in a listed `folder` under `skills/` or `library/`, or with a listed `code` as frontmatter `jurisdiction:`;
   - `.github/`, `scripts/`, `tests/`, `docs/`, `.claude/`, `packages/`, `index.json`, `llms-full.txt`, `agent-skills/`;
   - the platform-written keys (`license`, `drafted_by`, `approved_by`, `validation_status`, `validated`) and the `openaccountants-cta-block`.
 - **Never add or change `reviewed_by`, `reviewed_on`, `verified_by` or `tier`.**

@@ -3,7 +3,8 @@
 
 Region, country, state (scripts/coverage-report.py), owner (scripts/data/jurisdictions.json),
 number of skills, how many are on the current tax year, and how many an accountant has
-reviewed. Read from the skill files, so it never needs editing by hand. Run again after skills change:
+reviewed. Read from the skill files, so it never needs editing by hand. The countries in
+scripts/data/sanctioned.yml are listed last as "Not covered (sanctioned)". Run again after skills change:
 
     python3 scripts/build-country-index.py
 """
@@ -12,6 +13,10 @@ import importlib.util
 import json
 import pathlib
 import re
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import sanctioned  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SKILLS = ROOT / "skills"
@@ -71,6 +76,15 @@ def main():
         for name, folder, n, cur, signed, _, state in sorted(rows[key]):
             out.append(f"| [{name}]({folder}/) | {STATE_LABELS[state]} | {n} | {cur} | {signed} |")
         out.append("")
+    data_file = sanctioned.load()
+    out += ["## Not covered (sanctioned)", "",
+            "No skills for these countries: they are under broad embargo. The list is "
+            "[scripts/data/sanctioned.yml](../scripts/data/sanctioned.yml) "
+            f"({data_file['decided_by']}), and the checks refuse new files for them. "
+            f"{data_file['stay_live']}", "",
+            "| Country | State |", "|---|---|"]
+    out += [f"| {c['name']} | Not covered (sanctioned) |" for c in sanctioned.countries()]
+    out.append("")
     (SKILLS / "COUNTRIES.md").write_text("\n".join(out))
     print(f"{total} countries")
     counts = collections.Counter(r[6] for v in rows.values() for r in v)

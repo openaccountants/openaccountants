@@ -21,6 +21,8 @@ Every part of a skill answers one of four questions. A field that answers none o
 
 **Strict on shape, local on content.** The fields, the blocks and the checks are the same in all jurisdictions. Only the values change: figures, portals, forms, sources, language. Where a job does not exist in a jurisdiction, the pack README says so, with the reason. Federal systems (the US, Canada, Spain's foral regions) add one field, not a different shape.
 
+**Countries we do not cover.** No skill, library or evidence file for a country under broad embargo: Russia, Belarus, Cuba, Iran, North Korea and Syria. The list, its codes and folders live in [`scripts/data/sanctioned.yml`](../scripts/data/sanctioned.yml); `scripts/validate-guides.py` fails a PR that adds or edits a file in their folders or with their `jurisdiction:` code. Countries under targeted sanctions only (Myanmar, Venezuela, Afghanistan, Sudan, South Sudan, Libya) stay covered.
+
 The frontmatter below is what the platform reads today. A smaller field list follows these four questions and moves with the server, in one planned change.
 
 ## What a perfect skill does

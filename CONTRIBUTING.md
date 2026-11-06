@@ -10,7 +10,7 @@ Anyone can improve a skill. Only an accountant can approve one.
 
 You don't need to be an accountant, and you don't need an account with us. Many people write with their own AI.
 
-1. **Pick the work.** Find your country in [skills/COUNTRIES.md](skills/COUNTRIES.md), or take an open issue for it. Comment `taking` so nobody duplicates you.
+1. **Pick the work.** Find your country in [skills/COUNTRIES.md](skills/COUNTRIES.md), or take an open issue for it. Comment `taking` so nobody duplicates you. We do not cover Russia, Belarus, Cuba, Iran, North Korea or Syria (broad embargo; the list is [scripts/data/sanctioned.yml](scripts/data/sanctioned.yml)), and the checks refuse files for them.
 2. **Check it doesn't exist.** One task in one country has one skill. Search [skills/REGISTER.csv](skills/REGISTER.csv). If it exists, improve it.
 3. **Write it** to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law, a `## Sources` section, two worked examples that recompute.
 4. **Run the checks:** `python3 scripts/validate-guides.py --changed-only` and `python3 scripts/check-examples.py --changed-only`.

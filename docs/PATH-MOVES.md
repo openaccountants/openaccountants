@@ -11080,3 +11080,49 @@ Moved with `git mv`, no text changed. Orchestrators went to their country's fold
 | skills/foundation/patterns/global-saas-vendors.md | skills/global/expense-patterns/global-saas-vendors.md |
 | skills/foundation/patterns/global-travel-expenses.md | skills/global/expense-patterns/global-travel-expenses.md |
 | skills/foundation/patterns/global-vehicle-expenses.md | skills/global/expense-patterns/global-vehicle-expenses.md |
+
+## 2026-11-06: removed (sanctioned)
+
+Removed with `git rm`, not moved: Belarus, Cuba and Iran are on the sanctioned list (`scripts/data/sanctioned.yml`, Michael 6 Nov 2026). Git history keeps every file. The new-path cell has no path, so no platform row is pointed at it.
+
+| Old path | New path |
+|---|---|
+| evidence/research/belarus-2026/final-country-blobs.json | removed (sanctioned) |
+| evidence/research/belarus-2026/independent-review/FINAL-REVIEW.md | removed (sanctioned) |
+| evidence/research/belarus-2026/independent-review/arithmetic.json | removed (sanctioned) |
+| evidence/research/belarus-2026/independent-review/candidate-manifest.json | removed (sanctioned) |
+| evidence/research/belarus-2026/independent-review/preservation.json | removed (sanctioned) |
+| evidence/research/belarus-2026/independent-review/review-artifacts-manifest.json | removed (sanctioned) |
+| evidence/research/belarus-2026/independent-review/reviewed-assertions.json | removed (sanctioned) |
+| evidence/research/belarus-2026/independent-review/source-receipts-manifest.json | removed (sanctioned) |
+| evidence/research/belarus-2026/preservation-baseline.json | removed (sanctioned) |
+| evidence/research/belarus-2026/preservation-check.json | removed (sanctioned) |
+| evidence/research/belarus-2026/research.md | removed (sanctioned) |
+| evidence/research/belarus-2026/single-tax-source-receipts.json | removed (sanctioned) |
+| evidence/research/belarus-2026/single-tax-support.md | removed (sanctioned) |
+| evidence/research/belarus-2026/validation.json | removed (sanctioned) |
+| skills/belarus/README.md | removed (sanctioned) |
+| skills/belarus/belarus-cross-border-tax.md | removed (sanctioned) |
+| skills/belarus/belarus-income-tax.md | removed (sanctioned) |
+| skills/belarus/belarus-payroll.md | removed (sanctioned) |
+| skills/belarus/belarus-social-contributions.md | removed (sanctioned) |
+| skills/belarus/belarus-tax-optimization.md | removed (sanctioned) |
+| skills/belarus/belarus-transfer-pricing.md | removed (sanctioned) |
+| skills/belarus/belarus-vat.md | removed (sanctioned) |
+| skills/belarus/by-company-formation.md | removed (sanctioned) |
+| skills/belarus/by-corporate-income-tax.md | removed (sanctioned) |
+| skills/belarus/by-tax-overview.md | removed (sanctioned) |
+| skills/cuba/README.md | removed (sanctioned) |
+| skills/cuba/cu-company-formation.md | removed (sanctioned) |
+| skills/cuba/cu-corporate-income-tax.md | removed (sanctioned) |
+| skills/cuba/cu-income-tax.md | removed (sanctioned) |
+| skills/cuba/cu-payroll-social.md | removed (sanctioned) |
+| skills/cuba/cu-tax-overview.md | removed (sanctioned) |
+| skills/cuba/cu-vat-gst.md | removed (sanctioned) |
+| skills/iran/README.md | removed (sanctioned) |
+| skills/iran/ir-company-formation.md | removed (sanctioned) |
+| skills/iran/ir-corporate-income-tax.md | removed (sanctioned) |
+| skills/iran/ir-income-tax.md | removed (sanctioned) |
+| skills/iran/ir-payroll-social.md | removed (sanctioned) |
+| skills/iran/ir-tax-overview.md | removed (sanctioned) |
+| skills/iran/iran-vat.md | removed (sanctioned) |
