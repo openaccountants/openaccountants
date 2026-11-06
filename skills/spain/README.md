@@ -16,7 +16,7 @@ partial:
 
 # Spain: 2026 tax pack
 
-Select residence, competent territory and transaction period before choosing a Guide. The pack contains 22 tax Guides: 16 rewritten originals and six territorial additions. Each has a [figure/rule ledger](../../evidence/ledgers/) with official-source quotations, actual read scopes and an old-topic destination table.
+Select residence, competent territory and transaction period before choosing a Guide. The pack contains 22 tax Guides: 16 rewritten originals and six territorial additions. Each has a [figure/rule ledger](../../evidence/ledgers/) with official-source quotations, actual read scopes and an old-topic destination table. On 6 November 2026 the credits Guide `es-irpf-deductions` was split, without changing a rule, into the national Guide, the attributable-tax worksheet (`es-irpf-deductions-attributable-tax`) and fifteen regional catalogues (`es-irpf-deductions-<community>`), so that each file stays within the size the site can deliver; their ledger remains the `es-irpf-deductions` ledger, and each regional catalogue carries one executable example.
 
 The [dated independent ledger-review checkpoint](../../evidence/ledgers/spain-2026-evidence/independent-review/final-country-review.json) records review of all 22 Guide/ledger pairs at that checkpoint, their source conditions and years, calculation checks and selected old-topic preservation checks. It binds exact file hashes and preserves the reports, repairs and earlier review evidence. The 44 existing example cases remain, with the documented Beckham intermediate-rate correction; attribution, CTA and protected trust metadata are preserved. This checkpoint records its dated agent-review scope. The [31 October closeout record](../../evidence/ledgers/spain-closeout-20261031/README.md) binds the two subsequent Guide/ledger changes and their independent reviews. The [earlier integrated research checkpoint](../../evidence/research/spain-2026/regional-attribution-22-guide-checkpoint.json) and its linked reviews describe their own pinned historical versions.
 
@@ -26,7 +26,7 @@ The [dated independent ledger-review checkpoint](../../evidence/ledgers/spain-20
 
 | Tax | Main and territorial Guides | Status |
 |---|---|---|
-| Income tax | [Resident IRPF](es-income-tax.md), [regional/national credits](es-irpf-deductions.md), [four foral systems](es-foral-income-tax.md) | partial: two crypto computations |
+| Income tax | [Resident IRPF](es-income-tax.md), [national credits](es-irpf-deductions.md) with [regional credits, one Guide per community](es-irpf-deductions.md#regional-credits-one-guide-per-community), [four foral systems](es-foral-income-tax.md) | partial: two crypto computations |
 | Company tax | [Common-territory corporate tax](es-corporate-tax.md), [foral corporate tax](es-foral-corporate-tax.md) | ordinary methods supplied; see recorded limits |
 | VAT or sales tax | [IVA computation and return reconciliation](es-vat-return.md), [Canary IGIC](es-canary-islands-igic.md), [Ceuta/Melilla IPSI](es-ceuta-melilla-ipsi.md) | ordinary methods supplied; see recorded limits |
 | Social contributions | [Employee, RETA, household and agricultural-employee contributions](es-social-contributions.md) | ordinary methods supplied; see recorded limits |
