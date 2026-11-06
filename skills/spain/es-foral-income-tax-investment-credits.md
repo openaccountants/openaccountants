@@ -6,7 +6,7 @@ jurisdiction: ES
 category: international
 tax_year: 2026
 last_updated: 2026-11-06
-version: 0.9
+version: 0.10
 tier: 2
 domain: income-tax
 type: rates-card
