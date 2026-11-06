@@ -29,6 +29,37 @@ A perfect skill makes a frontier model give the right answer, with its condition
 
 Each of the twelve lines below is in the standard because a measurement says so. Each line carries its **Evidence** (the test or reading that justifies it) and its **Check** (the function in `scripts/skill_checks.py` that tests it, or "reviewer" when only a human reading the law can). The checks run from `scripts/validate-guides.py`: an error on a PR for a tax skill, a warning on the backlog. Where a line is marked **unmeasured**, it is reasoning, not a result, and the weekly loop owes it a test.
 
+## The fixed core and the seven shapes
+
+**Strict on the core, flexible on the body.** There is one perfect result and several perfect shapes. The result is the line above. The shape that gets there depends on the job: a rates question, a "how do I file" question and a "should I" question need different things in the skill.
+
+**The fixed core.** Every skill, whatever its shape, carries:
+
+1. The job and the place: country (and state or province), the job, who it covers (lines 6 and 7).
+2. The tax year, current (line 1).
+3. Every figure with its official URL on the row and a read date in `## Sources` (lines 1 and 2).
+4. The conditions next to each figure (line 3).
+5. Who stands behind it, honestly (line 11).
+6. An answer layer at the top: the key figures and the facts to ask before anything else. When a model can choose sections, "Quick reference" and "Required inputs" are the two it asks for first (section demand, 60 days to 6 Nov 2026). **Unmeasured** as a ranking effect: the shape tests owe it a result.
+
+**The body follows one of seven shapes.** Declare it with `type:` in the frontmatter. The checks then test the body against its own shape (`SKILL_TYPES` in `scripts/skill_checks.py`); a skill with no `type:` is checked as before.
+
+| `type:` | The job | What the body must hold | Worked examples | Example in use |
+|---|---|---|---|---|
+| `situation-rules` | "Does this apply to me, and how": the rule applied to a set of facts | Who is in and out, the rule, conditions, an exception table, the facts to ask | 2 | `nl-corporate-tax` |
+| `filing-howto` | Register, file, pay | The steps in the order the filer meets them: portal, form, box or field, what happens after (line 4) | 1 | `uk-vat-return` |
+| `computation` | Work out the figure | Inputs, the computation in order, the form lines it lands on | 2, recomputing | `us-schedule-c-and-se-computation` |
+| `decision` | "Which should I" | The options side by side, the figure that decides, a worked decision both ways | 2, one a decision | `us-s-corp-election-decision` |
+| `rates-card` | Figures for one country and year | The rates tables, every row linked; no method needed | 0 | `au-rates-2026-27` |
+| `cross-country-method` | One topic across several countries | One method, then a section per country with its values | 1 | `global-home-office` |
+| `router` | Which skills to load, in what order | The routing steps, what is out of scope, the handoff | 0 | `cross-border-tax-router` |
+
+`situation-rules`, `filing-howto`, `computation` and `decision` keep either canonical heading set (line 7). `rates-card` needs `## Rates, bands and thresholds` and `## Sources`; `cross-country-method` needs `## The method, step by step` and `## Sources`; `router` needs `## The method, step by step`, `## When to refuse or refer` and `## Sources`.
+
+- **Evidence:** a study of 6 Nov 2026 (all 2,376 skills, 60 days of plugin use, 60 real questions read by hand). About 60% of real questions are a person's situation, 15% a figure, 10% developers building on the data, 10% a return or computation. The scoreboard of 30 Oct 2026 scored figure questions 100% and condition questions 95% with our skills, decisions 56% and how-tos 21%: the gaps are the content a shape needs (steps, decision cases), not the layout. 1,370 skills (58%) use neither canonical heading set, including most of the 44 most-used; the single most-used skill (`global-home-office`, 156 loads by 78 people in 60 days) is a cross-country method, a shape the earlier standard did not have.
+- **Unmeasured:** that each shape beats the others for its own questions. The next step is a question set by shape, a baseline, then two skills per shape rewritten and re-run; a shape stays only if `right` rises and confident-wrong does not.
+- **Check:** `check_type_declared` (p, a warning) for the key; checks c, d and e read the declared shape.
+
 ## How to read a source
 
 Every figure comes from the official page, actually opened by the writer. Memory and secondary summaries do not count.
@@ -88,7 +119,7 @@ One job in one country has one skill. The pack `README.md` names it under `cover
 
 ### 7. The headings are one of the two canonical sets, verbatim, in order
 
-Every tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) uses one of two heading sets, with every heading present and in this order, so an AI reading any two jurisdictions finds the same things in the same places. A numbering prefix ("## 1.") is tolerated; a source link in brackets after the heading text is tolerated; nothing else is. A skill does not mix the two sets.
+This line applies to the `situation-rules`, `filing-howto`, `computation` and `decision` shapes and to any skill with no `type:`; the other three shapes have their own short sets (see "The fixed core and the seven shapes"). Every such tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) uses one of two heading sets, with every heading present and in this order, so an AI reading any two jurisdictions finds the same things in the same places. A numbering prefix ("## 1.") is tolerated; a source link in brackets after the heading text is tolerated; nothing else is. A skill does not mix the two sets.
 
 The reference set (about 440 skills, the September waves):
 
@@ -132,7 +163,7 @@ A figure that belongs to another skill in the pack is linked, not restated. If a
 
 ### 9. Two worked examples that recompute, one of them a decision
 
-One simple case, one with an edge case. Each has the prose walk-through for the reader and, under it, an `oa-check` block that CI recomputes with `scripts/check-examples.py`. Where the topic invites a "which should I" question (sole trader or company, cash or accrual, register for OSS or not, monthly or quarterly), one of the two cases is that decision, worked both ways to the figure that decides it.
+One simple case, one with an edge case. The number follows the shape: two for `situation-rules`, `computation` and `decision`, one for `filing-howto` and `cross-country-method`, none for `rates-card` and `router`. Each has the prose walk-through for the reader and, under it, an `oa-check` block that CI recomputes with `scripts/check-examples.py`. Where the topic invites a "which should I" question (sole trader or company, cash or accrual, register for OSS or not, monthly or quarterly), one of the two cases is that decision, worked both ways to the figure that decides it.
 
 ```oa-check
 name: Sole trader, profit EUR 40,000 (2026 bands)
@@ -239,6 +270,7 @@ Edit `skills/**` only. Never edit `packages/`, `index.json` or `llms-full.txt`, 
 | `verified_by` | legacy | Do not add to new skills. The platform is retiring it; accountant review uses `reviewed_by` and `reviewed_on` (line 11) |
 | `reviewed_by` | `Name` | The approving accountant's name, matching their openaccountants.com account. Set only by them, with `reviewed_on` (`YYYY-MM-DD`) and `tier: 1`. No licence number in the file |
 | `status` | `needs_sources` | Set when a tax skill cites no official source yet. The site keeps it off the site and out of the AI plugin until sources are added and this line is removed. CI requires it on an edited tax skill with no source link |
+| `type` | one of `situation-rules`, `filing-howto`, `computation`, `decision`, `rates-card`, `cross-country-method`, `router` | The skill's shape ("The fixed core and the seven shapes"). The checks test the body against it. Missing or unknown: checked as before, with a warning |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change. Keep any body-heading version in step |
 

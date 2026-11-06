@@ -43,6 +43,29 @@ except Exception:  # pragma: no cover - the regex below is the same shape
 #: The tax year the figures must apply to (rule 8). Bump each December.
 CURRENT_TAX_YEAR = 2026
 
+#: The seven shapes a skill may declare with ``type:`` (docs/skill-template.md, "The fixed core
+#: and the seven shapes", 6 Nov 2026). The core checks apply to every shape; these settings only
+#: change what the body must hold. A skill with no ``type:`` is checked exactly as before.
+#:   min_examples  oa-check blocks required (check e)
+#:   rates_table   True: a rates table is required (check c); False: one is optional
+#:   headings      None: either canonical set (check d); a list: these headings, in order
+SKILL_TYPES = {
+    "situation-rules": {"min_examples": 2, "rates_table": True, "headings": None},
+    "filing-howto": {"min_examples": 1, "rates_table": False, "headings": None},
+    "computation": {"min_examples": 2, "rates_table": True, "headings": None},
+    "decision": {"min_examples": 2, "rates_table": False, "headings": None},
+    "rates-card": {"min_examples": 0, "rates_table": True, "headings": ["Rates, bands and thresholds", "Sources"]},
+    "cross-country-method": {"min_examples": 1, "rates_table": False, "headings": ["The method, step by step", "Sources"]},
+    "router": {"min_examples": 0, "rates_table": False, "headings": ["The method, step by step", "When to refuse or refer", "Sources"]},
+}
+
+
+def skill_type(fm):
+    """The declared shape, or None when ``type:`` is missing or not one of SKILL_TYPES."""
+    value = str((fm or {}).get("type") or "").strip()
+    return value if value in SKILL_TYPES else None
+
+
 #: The nine section headings of the deep-tax shape, in order, as
 #: docs/skill-template.md lists them. A numbering prefix ("## 1.") is tolerated.
 CANONICAL_HEADINGS = [
@@ -295,6 +318,9 @@ def check_rates_rows_sourced(path, text, fm):
     inherits the row above) or explicitly marked unverified. An unmarked row fails."""
     c = rates_row_counts(text)
     if not c["total"]:
+        shape = skill_type(fm)
+        if shape and not SKILL_TYPES[shape]["rates_table"]:
+            return []
         return ["no rates table"]
     if c["missing"]:
         return [
@@ -329,6 +355,10 @@ def check_canonical_headings(path, text, fm):
     METHOD_HEADINGS. A skill passes if either set passes. The failure message
     reports the set it came closest to."""
     titles = [t for t, _ in _headings(text)]
+    shape = skill_type(fm)
+    if shape and SKILL_TYPES[shape]["headings"]:
+        own = _heading_set_problems(titles, SKILL_TYPES[shape]["headings"], HEADING_ALIASES)
+        return [f"{shape} set: " + p for p in own]
     ref = _heading_set_problems(titles, CANONICAL_HEADINGS, HEADING_ALIASES)
     if not ref:
         return []
@@ -340,9 +370,12 @@ def check_canonical_headings(path, text, fm):
 
 
 def check_two_oa_checks(path, text, fm):
-    """(e) at least two ```oa-check blocks (the two worked examples CI recomputes)."""
+    """(e) enough ```oa-check blocks (worked examples CI recomputes): two, or the number the
+    declared ``type:`` sets in SKILL_TYPES."""
+    shape = skill_type(fm)
+    need = SKILL_TYPES[shape]["min_examples"] if shape else 2
     n = len(OA_CHECK_BLOCK_RE.findall(text))
-    return [] if n >= 2 else [f"{n} oa-check block(s), need 2"]
+    return [] if n >= need else [f"{n} oa-check block(s), need {need}"]
 
 
 def check_version_numeric(path, text, fm):
@@ -718,6 +751,16 @@ def merge_record_problems(loser_slug, loser_text, pr_body):
     return [], warnings
 
 
+def check_type_declared(path, text, fm):
+    """(p) ``type:`` names one of the seven shapes, so the body is checked against its own job."""
+    value = str((fm or {}).get("type") or "").strip()
+    if not value:
+        return ["no type: declared (one of " + ", ".join(SKILL_TYPES) + ")"]
+    if value not in SKILL_TYPES:
+        return [f"type {value!r} is not one of " + ", ".join(SKILL_TYPES)]
+    return []
+
+
 #: Warnings in both modes, outside the register. Letters follow CHECKS.
 LESSON_CHECKS = [
     ("k", "read_date_evidence", check_read_date_evidence),
@@ -725,6 +768,7 @@ LESSON_CHECKS = [
     ("m", "source_hosts", check_source_hosts),
     ("n", "jurisdiction_body", check_jurisdiction_body),
     ("o", "year_matches_link", check_year_matches_link),
+    ("p", "type_declared", check_type_declared),
 ]
 
 #: (letter in the standard's list, column name, function). Order is the report order.
