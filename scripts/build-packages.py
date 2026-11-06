@@ -45,6 +45,10 @@ from repo_layout import country_dirs
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
 PACKAGES_DIR = os.path.join(REPO_ROOT, "packages")
+# Skills that belong to no one place (see the "How the folders work" note in skills/README.md).
+GLOBAL_DIR = os.path.join(SKILLS_DIR, "global")
+METHODS_DIR = os.path.join(GLOBAL_DIR, "methods")
+US_FEDERAL_DIR = os.path.join(SKILLS_DIR, "us", "federal")
 
 # ============================================================================
 # HAND-AUTHORED PACKAGES — DO NOT WIPE, DO NOT REGENERATE.
@@ -533,8 +537,10 @@ REGISTRY_DIR_TO_CODE = _load_registry_dir_to_code()
 
 
 def find_orchestrator_files(country_dir_name):
-    """Find intake and assembly files for a country."""
-    orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
+    """Find the intake and assembly files a country's package ships under guided names.
+
+    They sit in the country's own folder as <code>-freelance-intake.md and
+    <code>-return-assembly.md."""
     prefix_map = {
         "malta": "mt-", "uk": "uk-", "germany": "de-", "australia": "au-",
         "canada": "ca-", "india": "in-", "spain": "es-",
@@ -546,16 +552,11 @@ def find_orchestrator_files(country_dir_name):
     if not prefix:
         return None, None
 
-    intake = None
-    assembly = None
-
-    for f in os.listdir(orch_dir):
-        if f.startswith(prefix) and 'intake' in f:
-            intake = os.path.join(orch_dir, f)
-        if f.startswith(prefix) and 'assembly' in f:
-            assembly = os.path.join(orch_dir, f)
-
-    return intake, assembly
+    country_dir = os.path.join(SKILLS_DIR, country_dir_name)
+    intake = os.path.join(country_dir, f"{prefix}freelance-intake.md")
+    assembly = os.path.join(country_dir, f"{prefix}return-assembly.md")
+    return (intake if os.path.isfile(intake) else None,
+            assembly if os.path.isfile(assembly) else None)
 
 
 def build_package(country_dir_name, country_dir):
@@ -569,8 +570,11 @@ def build_package(country_dir_name, country_dir):
     name = COUNTRY_NAMES.get(code, country_dir_name.replace('-', ' ').title())
     practitioner = PRACTITIONER_TITLES.get(code, "qualified tax professional")
 
-    # Find content skills
-    content_skills = find_country_skills(country_dir)
+    # Find content skills. The intake and assembly files are copied under their
+    # guided names further down, so they are not content skills here.
+    intake_file, assembly_file = find_orchestrator_files(country_dir_name)
+    content_skills = [(f, path) for f, path in find_country_skills(country_dir)
+                      if path not in (intake_file, assembly_file)]
     if not content_skills:
         return None
 
@@ -613,13 +617,12 @@ def build_package(country_dir_name, country_dir):
     }
     for keyword, base_file in DOMAIN_BASES.items():
         if base_file and any(keyword in f for f, _ in content_skills):
-            base_path = os.path.join(SKILLS_DIR, "foundation", base_file)
+            base_path = os.path.join(METHODS_DIR, base_file)
             if os.path.exists(base_path):
                 shutil.copy2(base_path, os.path.join(pkg_dir, base_file))
                 copied_files.append(base_file)
 
     # Copy orchestrator files if they exist
-    intake_file, assembly_file = find_orchestrator_files(country_dir_name)
     if intake_file and os.path.exists(intake_file):
         shutil.copy2(intake_file, os.path.join(pkg_dir, f"{country_dir_name}-guided-intake.md"))
         copied_files.append(f"{country_dir_name}-guided-intake.md")
@@ -765,24 +768,23 @@ def build_us_state_package(state_code):
     copied_files = []
 
     # 1. US workflow base (foundation equivalent)
-    us_base = os.path.join(SKILLS_DIR, "foundation", "us-tax-workflow-base.md")
+    us_base = os.path.join(METHODS_DIR, "us-tax-workflow-base.md")
     if os.path.isfile(us_base):
         shutil.copy2(us_base, os.path.join(pkg_dir, "us-tax-workflow-base.md"))
         copied_files.append("us-tax-workflow-base.md")
 
-    # 2. All federal skills
-    federal_dir = os.path.join(SKILLS_DIR, "us", "federal")
+    # 2. All federal skills (the federal return assembly is added in step 3)
+    federal_dir = US_FEDERAL_DIR
     if os.path.isdir(federal_dir):
         for f in sorted(os.listdir(federal_dir)):
-            if f.endswith(".md"):
+            if f.endswith(".md") and f != "us-federal-return-assembly.md":
                 shutil.copy2(os.path.join(federal_dir, f), os.path.join(pkg_dir, f))
                 copied_files.append(f)
 
     # 3. Core US orchestrator files
-    orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
     core_orch = [
-        os.path.join(orch_dir, "us-federal-return-assembly.md"),
-        os.path.join(SKILLS_DIR, "foundation", "global-router.md"),
+        os.path.join(US_FEDERAL_DIR, "us-federal-return-assembly.md"),
+        os.path.join(METHODS_DIR, "global-router.md"),
     ]
     for src in core_orch:
         f = os.path.basename(src)
@@ -790,24 +792,24 @@ def build_us_state_package(state_code):
             shutil.copy2(src, os.path.join(pkg_dir, f))
             copied_files.append(f)
 
-    # 4. State-specific orchestrator files (CA, NY, TX)
+    # 4. State-specific orchestrator files (CA, NY, TX), from the state's folder
+    state_dir = os.path.join(SKILLS_DIR, "us", "states", state_code)
     state_orch_map = {
         "ca": ["us-ca-freelance-intake.md", "us-ca-return-assembly.md"],
         "ny": ["us-ny-freelance-intake.md", "us-ny-return-assembly.md"],
         "tx": ["us-tx-freelance-intake.md", "us-tx-return-assembly.md"],
     }
     for f in state_orch_map.get(state_code, []):
-        src = os.path.join(orch_dir, f)
+        src = os.path.join(state_dir, f)
         if os.path.isfile(src):
             shutil.copy2(src, os.path.join(pkg_dir, f))
             copied_files.append(f)
 
-    # 5. State-specific skill files (everything except README.md)
-    state_dir = os.path.join(SKILLS_DIR, "us", "states", state_code)
+    # 5. State-specific skill files (everything except README.md and step 4's files)
     state_skill_count = 0
     if os.path.isdir(state_dir):
         for f in sorted(os.listdir(state_dir)):
-            if f.endswith(".md") and f != "README.md":
+            if f.endswith(".md") and f != "README.md" and f not in state_orch_map.get(state_code, []):
                 shutil.copy2(os.path.join(state_dir, f), os.path.join(pkg_dir, f))
                 copied_files.append(f)
                 state_skill_count += 1
@@ -948,12 +950,14 @@ def build_canada_province_package(province_code):
         fh.write(build_intake("Canada", "CPA", "CA"))
     copied_files.append("intake.md")
 
-    # 3. Federal Canadian skills (top-level .md files in skills/canada/)
+    # 3. Federal Canadian skills (top-level .md files in skills/canada/; the intake
+    # and return assembly are added in step 6)
     canada_root = os.path.join(SKILLS_DIR, "canada")
+    canada_orch = ("ca-freelance-intake.md", "ca-return-assembly.md")
     if os.path.isdir(canada_root):
         for f in sorted(os.listdir(canada_root)):
             full = os.path.join(canada_root, f)
-            if os.path.isfile(full) and f.endswith(".md"):
+            if os.path.isfile(full) and f.endswith(".md") and f not in canada_orch:
                 shutil.copy2(full, os.path.join(pkg_dir, f))
                 copied_files.append(f)
 
@@ -968,7 +972,7 @@ def build_canada_province_package(province_code):
     }
     for keyword, base_file in DOMAIN_BASES.items():
         if any(keyword in f for f in copied_files):
-            base_path = os.path.join(SKILLS_DIR, "foundation", base_file)
+            base_path = os.path.join(METHODS_DIR, base_file)
             if os.path.isfile(base_path) and base_file not in copied_files:
                 shutil.copy2(base_path, os.path.join(pkg_dir, base_file))
                 copied_files.append(base_file)
@@ -984,11 +988,9 @@ def build_canada_province_package(province_code):
                 province_skill_count += 1
 
     # 6. Core orchestrator files (Canada freelance intake + return assembly, global router)
-    orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
     for src in (
-        os.path.join(orch_dir, "ca-freelance-intake.md"),
-        os.path.join(orch_dir, "ca-return-assembly.md"),
-        os.path.join(SKILLS_DIR, "foundation", "global-router.md"),
+        *(os.path.join(canada_root, f) for f in canada_orch),
+        os.path.join(METHODS_DIR, "global-router.md"),
     ):
         orch_file = os.path.basename(src)
         if os.path.isfile(src):
@@ -1138,7 +1140,7 @@ def main():
     # ---- Cross-border package ----
     xb_result = None
     if not us_only:
-        xb_dir = os.path.join(SKILLS_DIR, "cross-border")
+        xb_dir = os.path.join(GLOBAL_DIR, "cross-border")
         if os.path.isdir(xb_dir):
             xb_pkg = os.path.join(PACKAGES_DIR, "_cross-border")
             os.makedirs(xb_pkg, exist_ok=True)
@@ -1155,8 +1157,8 @@ def main():
                     if f.endswith(".md"):
                         shutil.copy2(os.path.join(corridors_dir, f), os.path.join(xb_pkg, f))
                         xb_files.append(f)
-            # Copy cross-border workflow base from foundation
-            xb_base = os.path.join(SKILLS_DIR, "foundation", "cross-border-workflow-base.md")
+            # Copy cross-border workflow base from global/methods
+            xb_base = os.path.join(METHODS_DIR, "cross-border-workflow-base.md")
             if os.path.isfile(xb_base):
                 shutil.copy2(xb_base, os.path.join(xb_pkg, "cross-border-workflow-base.md"))
                 xb_files.append("cross-border-workflow-base.md")
@@ -1183,7 +1185,7 @@ def main():
     # ---- Industry verticals package ----
     vert_result = None
     if not us_only:
-        vert_dir = os.path.join(SKILLS_DIR, "reference", "verticals")
+        vert_dir = os.path.join(GLOBAL_DIR, "industries")
         if os.path.isdir(vert_dir):
             vert_pkg = os.path.join(PACKAGES_DIR, "_verticals")
             os.makedirs(vert_pkg, exist_ok=True)
@@ -1211,7 +1213,7 @@ def main():
     # ---- Integrations package ----
     integ_result = None
     if not us_only:
-        integ_dir = os.path.join(SKILLS_DIR, "reference", "integrations")
+        integ_dir = os.path.join(GLOBAL_DIR, "integrations")
         if os.path.isdir(integ_dir):
             integ_pkg = os.path.join(PACKAGES_DIR, "_integrations")
             os.makedirs(integ_pkg, exist_ok=True)

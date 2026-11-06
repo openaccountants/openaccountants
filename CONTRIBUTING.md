@@ -46,8 +46,10 @@ The skill stays yours. When the next tax year comes, you update it and approve i
 | One country (all topics) | `skills/<country>/` |
 | US federal | `skills/us/federal/` |
 | US state | `skills/us/states/<code>/` |
-| Across borders | `skills/cross-border/` with `jurisdiction: INTL` |
-| An industry or a platform | `skills/reference/verticals/` or `skills/reference/integrations/` with `jurisdiction: GLOBAL` |
+| A rule every EU member state shares | `skills/eu/` |
+| Across borders | `skills/global/cross-border/` with `jurisdiction: INTL` |
+| An industry or a platform | `skills/global/industries/` or `skills/global/integrations/` with `jurisdiction: GLOBAL` |
+| A method, accounting standard or other topic for no one place | the matching folder under `skills/global/` (see [skills/README.md](skills/README.md)) |
 
 Always set `jurisdiction:` in the frontmatter too. The full spec (frontmatter keys, section order) is [docs/skill-template.md](docs/skill-template.md); the folder map is [docs/REPO-LAYOUT.md](docs/REPO-LAYOUT.md).
 

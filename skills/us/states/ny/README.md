@@ -42,4 +42,4 @@ covered_by:
 - Industry-specific taxes (petroleum, highway use, etc.)
 
 ## How to use
-Upload all `.md` files in this folder PLUS the federal skills from `skills/foundation/` and `skills/federal/` to your LLM. See the main README for details.
+Upload all `.md` files in this folder PLUS the federal skills from `skills/global/methods/` and `skills/us/federal/` to your LLM. See the main README for details.

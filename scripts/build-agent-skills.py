@@ -42,9 +42,12 @@ HERMES_PLUGIN_BUNDLE_DIR = REPO_ROOT / "plugins" / "openaccountants-hermes"
 SITE = "https://www.openaccountants.com"
 LICENSE_LINE = "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 
-# Content skills only. Foundation/orchestrator/templates are workflow scaffolding
-# that the MCP assembles; they are not something a person installs on its own.
-TOPIC_SOURCES = ("cross-border", "reference")
+# Content skills only. The workflow scaffolding in skills/global/ (methods/, audit/,
+# expense-patterns/, planning-tools/) and templates are assembled by the MCP; they are
+# not something a person installs on its own.
+TOPIC_SOURCES = (
+    "global/cross-border", "global/financial-reporting", "global/integrations", "global/industries",
+)
 KEEP_FILES = {"README.md", "LICENSE.md", "install.sh", "index.json"}
 BAD_DESCRIPTIONS = {"", "---", ">", "|", "null", "none"}
 GLOSS = "tax rules your AI follows"

@@ -12,17 +12,22 @@ One page on how this repo is organized, what is generated vs hand-maintained, an
 
 ```
 skills/                    # SOURCE: edit tax content here
-  <country>/               #   one folder per country, all domains together (eu/ is the EU layer)
+  <country>/               #   one folder per country, all domains together, incl. intake + return assembly
   canada/<province>/       #   provincial skills sit inside canada/
   us/                      #   us/federal/, us/states/<code>/ and national files
+  eu/                      #   the EU layer: rules every member state shares
+  global/                  #   skills that belong to no one place:
+    cross-border/          #     treaty + multi-jurisdiction rules (treaty-corridors/ for WHT)
+    methods/               #     workflow bases and global-router.md
+    audit/                 #     statutory audit workflow base
+    financial-reporting/   #     accounting standards: ifrs/, us-gaap/, router + workflow base
+    industries/            #     industry-specific skills
+    integrations/          #     software and payment platform exports
+    expense-patterns/      #     vendor classification patterns
+    planning-tools/        #     deadline engine, threshold alerts, optimisation advisor
   COUNTRIES.md             #   GENERATED directory of country packs, with each pack's state
   REGISTER.md, REGISTER.csv #  GENERATED one row per skill: country, domain, year, checks
   DUPLICATES.md            #   GENERATED skills doing the same job in one jurisdiction
-  cross-border/            #   treaty + multi-jurisdiction rules (treaty-corridors/ for WHT)
-  foundation/              #   workflow bases, global-router, patterns/, intelligence/
-  reference/               #   verticals/, integrations/, financial-reporting/
-  orchestrator/            #   per-country intake + return-assembly orchestrators
-  templates/               #   shared file templates
 
 packages/                  # GENERATED per-jurisdiction bundles: do not edit (one exception)
   <jurisdiction>/          #   one folder per country / US state / CA province (malta/, us-ca/, ...)
@@ -95,7 +100,9 @@ If you need a machine-readable listing, read `index.json` or run `python3 script
 - **Fix a US state skill:** `skills/us/states/<code>/`.
 - **Fix a US federal form guide or federal rates JSON:** `packages/us-federal/` directly. Do NOT look for a source in `skills/us/federal/` for these; the us-federal package is the source.
 - **Add a US federal source skill (non-form-guide):** `skills/us/federal/`.
-- **Cross-border / treaty rules:** `skills/cross-border/`.
+- **Cross-border / treaty rules:** `skills/global/cross-border/`.
+- **A rule every EU member state shares:** `skills/eu/`.
+- **A workflow base, industry, integration or accounting standard:** the matching folder under `skills/global/` (see [skills/README.md](../skills/README.md)).
 - **A guided workflow:** `workflows/`.
 - **A calculator:** `calculators/<name>/`.
 - **The MCP server:** `mcp/`.

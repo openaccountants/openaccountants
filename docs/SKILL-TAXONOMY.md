@@ -43,9 +43,9 @@ The second milestone, **Accounting packs**, adds these. They never count as miss
 
 ## Infrastructure skills
 
-Foundation workflow bases live in `skills/foundation/` and are bundled into packages by the build: `workflow-base.md` (universal), `vat-workflow-base.md`, `us-tax-workflow-base.md`, `bookkeeping-workflow-base.md`, `einvoice-workflow-base.md`, `payroll-workflow-base.md`, `company-formation-workflow-base.md`, `financial-statements-workflow-base.md`, `transfer-pricing-workflow-base.md` and `cross-border-workflow-base.md`.
+Workflow bases live in `skills/global/methods/` (the statutory audit base in `skills/global/audit/`) and are bundled into packages by the build: `workflow-base.md` (universal), `vat-workflow-base.md`, `us-tax-workflow-base.md`, `bookkeeping-workflow-base.md`, `einvoice-workflow-base.md`, `payroll-workflow-base.md`, `company-formation-workflow-base.md`, `financial-statements-workflow-base.md`, `transfer-pricing-workflow-base.md` and `cross-border-workflow-base.md`.
 
-Orchestrators (`skills/orchestrator/`) are the per-country intake and return-assembly pairs; the global router is `skills/foundation/global-router.md`. `skills/foundation/intelligence/` holds the deadline engine, threshold alerts and optimisation triggers; `skills/foundation/patterns/` holds vendor pattern libraries.
+Orchestrators are the per-country intake and return-assembly pairs, kept in each country's folder (US: `skills/us/federal/` and `skills/us/states/<code>/`); the global router is `skills/global/methods/global-router.md`. `skills/global/planning-tools/` holds the deadline engine, threshold alerts and optimisation triggers; `skills/global/expense-patterns/` holds vendor pattern libraries.
 
 ## The universal skill skeleton
 

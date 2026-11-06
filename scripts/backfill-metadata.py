@@ -29,23 +29,24 @@ What gets backfilled (missing keys only):
                   convention; genuinely ambiguous dirs are left + reported
                   (skills/eu — a shared EU-wide base, not a
                   country).
-                - skills/orchestrator/*                -> sibling filename
+                - orchestrator files (the old skills/orchestrator/, now in
+                  their country folder) -> sibling filename
                   convention: <code>-… prefix (gb-* -> GB, us-ny-* -> US-NY),
                   so au-/ca-/de-/es-/in-/mt- -> AU/CA/DE/ES/IN/MT,
                   us-ca-* -> US-CA, us-federal-* -> US.
-                - skills/foundation/patterns/*                    -> dir convention
+                - skills/global/expense-patterns/*              -> dir convention
                   (all jurisdiction-bearing siblings say GLOBAL).
-                - skills/cross-border/*.md             -> nearest sibling
+                - skills/global/cross-border/*.md      -> nearest sibling
                   convention, per-file (EU-directive content -> EU-27 like
                   cbam/eu-directives; any-jurisdiction service/treaty guides
                   -> INTL like cross-border-vat-gst; *-matrix -> GLOBAL like
                   every other matrix sibling).
-                - skills/foundation/us-tax-workflow-base.md -> US (the one
+                - skills/global/methods/us-tax-workflow-base.md -> US (the one
                   jurisdiction-specific file in an otherwise GLOBAL dir; the
                   us- filename prefix convention matches skills/us/federal).
                 Dirs whose existing convention is "no jurisdiction key"
-                (skills/cross-border/treaty-corridors and
-                skills/foundation/intelligence) are LEFT ALONE and reported — we do not
+                (skills/global/cross-border/treaty-corridors and
+                skills/global/planning-tools) are LEFT ALONE and reported — we do not
                 invent a convention.
 
 Insertion point: after the last tax_year / tax_year_notes / jurisdiction
@@ -113,19 +114,19 @@ COUNTRY_CODES = {
 # Per-file assignments where the dir convention is mixed but the sibling
 # match is clear (reasoning in the module docstring).
 FILE_JURISDICTION = {
-    "skills/cross-border/eu-oss-digital.md": "EU-27",
-    "skills/cross-border/eu-reverse-charge.md": "EU-27",
-    "skills/cross-border/non-eu-export-services.md": "INTL",
-    "skills/cross-border/permanent-establishment-risk.md": "INTL",
-    "skills/cross-border/withholding-tax-matrix.md": "GLOBAL",
-    "skills/foundation/us-tax-workflow-base.md": "US",
+    "skills/global/cross-border/eu-oss-digital.md": "EU-27",
+    "skills/global/cross-border/eu-reverse-charge.md": "EU-27",
+    "skills/global/cross-border/non-eu-export-services.md": "INTL",
+    "skills/global/cross-border/permanent-establishment-risk.md": "INTL",
+    "skills/global/cross-border/withholding-tax-matrix.md": "GLOBAL",
+    "skills/global/methods/us-tax-workflow-base.md": "US",
 }
 
 # Dirs deliberately left without jurisdiction: their existing convention is
 # "no jurisdiction key" (or, for international/eu, no single country applies).
 LEAVE_DIRS = {
-    "skills/cross-border/treaty-corridors",
-    "skills/foundation/intelligence",
+    "skills/global/cross-border/treaty-corridors",
+    "skills/global/planning-tools",
     "skills/eu",
 }
 

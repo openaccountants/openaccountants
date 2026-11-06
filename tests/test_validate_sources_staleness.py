@@ -15,7 +15,7 @@ spec.loader.exec_module(vg)
 
 class SourcesCheckTest(unittest.TestCase):
     def test_non_tax_skill_is_ignored(self):
-        self.assertIsNone(vg.check_sources("skills/foundation/bookkeeping-workflow-base.md", "# no sources"))
+        self.assertIsNone(vg.check_sources("skills/global/methods/bookkeeping-workflow-base.md", "# no sources"))
 
     def test_tax_skill_without_section_warns(self):
         self.assertEqual(vg.check_sources("skills/malta/malta-income-tax.md", "# Body\n\n## Rates\n"),

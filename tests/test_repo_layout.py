@@ -10,7 +10,7 @@ class RepoLayoutTests(unittest.TestCase):
     def test_country_and_topic_paths(self):
         self.assertTrue(repo_layout.is_country_path("skills/malta/malta-vat-return.md"))
         self.assertTrue(repo_layout.is_country_path("skills/us/states/tx/tx-sales-tax.md"))
-        self.assertFalse(repo_layout.is_country_path("skills/cross-border/eu-oss-digital.md"))
+        self.assertFalse(repo_layout.is_country_path("skills/global/cross-border/eu-oss-digital.md"))
         self.assertFalse(repo_layout.is_country_path("skills/COUNTRIES.md"))
 
     def test_topic_folders_are_not_countries(self):

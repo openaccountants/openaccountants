@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { assessEuVatRegistration as run, rules } from "./index.mjs";
 
-// The three worked cases from skills/cross-border/eu-oss-digital.md, plus the branches
+// The three worked cases from skills/global/cross-border/eu-oss-digital.md, plus the branches
 // that decide registrations: B2B, stock abroad, non-EU goods, missing numbers.
 
 test("EU seller under the EUR 10,000 threshold in both years charges home VAT", () => {

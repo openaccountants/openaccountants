@@ -21,7 +21,7 @@ Tier-1 workflow architectures. Every domain has a base that explains *how* the w
 |---|---|
 | [`bookkeeping-workflow-base.md`](bookkeeping-workflow-base.md) | Chart of accounts, double-entry posting, P&L / balance sheet |
 | [`financial-statements-workflow-base.md`](financial-statements-workflow-base.md) | Annual accounts preparation under IFRS / local GAAP |
-| [`statutory-audit-workflow-base.md`](statutory-audit-workflow-base.md) | ISA-aligned audit lifecycle (engagement → reporting) |
+| [`statutory-audit-workflow-base.md`](../audit/statutory-audit-workflow-base.md) | ISA-aligned audit lifecycle (engagement → reporting) |
 | [`payroll-workflow-base.md`](payroll-workflow-base.md) | PAYE withholding, social security, payslip generation |
 | [`einvoice-workflow-base.md`](einvoice-workflow-base.md) | Structured invoice issuance under EN 16931, Peppol BIS, country mandates |
 | [`company-formation-workflow-base.md`](company-formation-workflow-base.md) | Entity formation lifecycle |
@@ -34,4 +34,4 @@ Tier-1 workflow architectures. Every domain has a base that explains *how* the w
 
 You generally don't load these directly — they're loaded automatically by the country / state content skills that depend on them. If you're building a new country skill, load the relevant workflow base first; it gives you the contract every country skill must fulfill.
 
-See [docs/skill-template.md](../../docs/skill-template.md) for the slot contract that every content skill must populate.
+See [docs/skill-template.md](../../../docs/skill-template.md) for the slot contract that every content skill must populate.

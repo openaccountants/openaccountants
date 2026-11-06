@@ -32,4 +32,4 @@
 - Payroll taxes (Alaska has no state withholding requirement for income tax)
 
 ## How to use
-For Alaska-based self-employed individuals, the **income** side is **federal only** — upload the skills from `skills/foundation/` and `skills/federal/`. For the **sales** side, load `ak-sales-tax.md`: in-state sellers register with their local municipality, while remote sellers register once with the Alaska Remote Seller Sales Tax Commission (ARSSTC) and file a single consolidated return.
+For Alaska-based self-employed individuals, the **income** side is **federal only** — upload the skills from `skills/global/methods/` and `skills/us/federal/`. For the **sales** side, load `ak-sales-tax.md`: in-state sellers register with their local municipality, while remote sellers register once with the Alaska Remote Seller Sales Tax Commission (ARSSTC) and file a single consolidated return.

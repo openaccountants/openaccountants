@@ -27,4 +27,4 @@
 
 ## How to use
 
-Upload all `.md` files in this folder PLUS `skills/foundation/` and `skills/federal/` to your LLM.
+Upload all `.md` files in this folder PLUS `skills/global/methods/` and `skills/us/federal/` to your LLM.

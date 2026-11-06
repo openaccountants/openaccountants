@@ -59,4 +59,4 @@ These skills supplement country packages. Load them when the situation crosses b
 
 For a single-country freelancer, you don't need any of these. For an EU company with US customers, you do.
 
-See the [README](../../README.md) for how to load skills into your AI.
+See the [README](../../../README.md) for how to load skills into your AI.
