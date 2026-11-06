@@ -35,9 +35,15 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      accounting-pack and router files. Rates-row URLs, the nine canonical
      headings and the "Not yet confirmed" line WARN in both modes until the
      backlog is cleared. The full run prints a count of failures per check.
-     The reviewer-lesson checks (k to o: read-date evidence, Sources columns,
-     source hosts, jurisdiction against body, row year against linked page)
-     WARN in both modes, so old content never fails on them.
+     The reviewer-lesson checks (k to r: read-date evidence, Sources columns,
+     source hosts, jurisdiction against body, row year against linked page,
+     shape, library figures, a known `domain:`) WARN in both modes, so old
+     content never fails on them.
+     Domains (docs/domains.yml): a skill's `domain:` picks the date rule of
+     check (a) and the official hosts of check (m). Tax, no domain, and the
+     values the website writes keep the tax rules exactly as before; an
+     active non-tax domain is dated by its own keys (an IFRS skill by
+     `standard` and `effective_date`, not `tax_year`). An unknown domain warns.
   8. PR mode only: one job in one jurisdiction has one skill
      (docs/skill-template.md, scripts/job_identity.py). ERROR if an added or
      renamed skill has the job or stripped name of another skill there, unless
@@ -186,8 +192,12 @@ def check_sources(rel, text):
     return None
 
 
-def check_staleness(fields, today):
-    """Return a problem string when the figures are probably out of date."""
+def check_staleness(fields, today, dated_by_tax_year=True):
+    """Return a problem string when the figures are probably out of date.
+
+    ``dated_by_tax_year`` is False for a skill in an active non-tax domain
+    (docs/domains.yml): its date rule is check (a), so a leftover `tax_year`
+    is not judged here."""
     from datetime import datetime
     problems = []
     last_updated = fields.get("last_updated")
@@ -199,7 +209,7 @@ def check_staleness(fields, today):
         except ValueError:
             pass
     tax_year = fields.get("tax_year")
-    if tax_year and str(tax_year).isdigit() and int(tax_year) < today.year - 1:
+    if dated_by_tax_year and tax_year and str(tax_year).isdigit() and int(tax_year) < today.year - 1:
         problems.append(f"tax_year {tax_year} is two or more years behind")
     return "; ".join(problems) or None
 
@@ -568,14 +578,15 @@ def check_guides(bi, errors, warnings, only_files=None):
             warn_counts["a `## Sources` section with a URL (tax skills)"] += 1
             if only_files is not None:
                 per_file_warnings.append(f"{rel}: {problem}")
-        problem = check_staleness(fields, today)
+        frontmatter = skill_checks.read_frontmatter(text)
+        dated_by_tax_year = skill_checks.applied_domain(rel, frontmatter)[0] is None
+        problem = check_staleness(fields, today, dated_by_tax_year)
         if problem:
             warn_counts["fresh figures (last_updated within a year, tax_year current)"] += 1
             if only_files is not None:
                 per_file_warnings.append(f"{rel}: {problem}")
         # The standard's mechanical lines (scripts/skill_checks.py). A PR that
         # touches a tax skill must pass PR_ERROR_CHECKS; everything else warns.
-        frontmatter = skill_checks.read_frontmatter(text)
         scope = skill_checks.scope_of(rel, frontmatter)
         results = skill_checks.run_checks(rel, text, frontmatter)
         content_untouched = only_files is not None and body_unchanged_vs_main(rel, text)

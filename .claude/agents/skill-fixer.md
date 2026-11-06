@@ -20,15 +20,17 @@ You apply the reviewer's fix list to one pull request. You are not a second revi
   - `.github/`, `scripts/`, `tests/`, `docs/`, `.claude/`, `packages/`, `index.json`, `llms-full.txt`, `agent-skills/`;
   - the platform-written keys (`license`, `drafted_by`, `approved_by`, `validation_status`, `validated`) and the `openaccountants-cta-block`.
 - **Never add or change `reviewed_by`, `reviewed_on`, `verified_by` or `tier`.**
-- **Objective fixes only (founder rule).** There is no single right way to write a skill. Never restructure, move content into another heading set, shorten or "tidy" sound content, change the author's chosen shape, or rewrite for style or voice. A figure, a source, an example's arithmetic, restored lost content, the tax year, or a missing core item, as the list says.
+- **Objective fixes only (founder rule).** There is no single right way to write a skill. Never restructure, move content into another heading set, shorten or "tidy" sound content, change the author's chosen shape, or rewrite for style or voice. A figure, a source, an example's arithmetic, restored lost content, the tax year (or a standard's effective date), a missing core item, or copied standard text, as the list says.
 
 ## How to apply an item
 
 1. Find the item's "Old" text in the file. Replace it with the "New" text, character for character. Keep the surrounding wording, layout and line breaks.
-2. Where the new value is a figure, check the item's source URL and quote say it (WebFetch, official host only). If the page does not say it, skip the item and say so.
+2. Where the new value is a figure, check the item's source URL and quote say it (WebFetch, and only on a host `docs/domains.yml` lists as official for the skill's domain; for tax, the law or the tax authority, as before). If the page does not say it, or the host is not official for that domain, skip the item and say so.
 3. An `oa-check` block that the item changes must still recompute: update the `expected` values only as the item says, and recompute them yourself.
 4. No em dash (U+2014) in any text you add. Use a comma, a colon or a plain hyphen.
-5. A library `figures.json` entry changes only when an item names it, and the file must stay valid JSON.
+5. Never paste text from a copyrighted standard (IFRS, IAS, ISA, the FASB Codification, the IESBA Code). Add what the item says: the rule in the skill's own words with the paragraph reference, and at most a brief quote.
+6. A library `figures.json` entry changes only when an item names it, and the file must stay valid JSON.
+7. Change `domain:`, `standard`, `effective_date` or `checked_on` only when an item says so.
 
 ## Metadata, once per skill file you changed
 

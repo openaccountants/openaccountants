@@ -15,6 +15,7 @@ One folder per country, named as under `skills/`: `library/ireland/` for `skills
 | `source_url` | The official page: a government, legislature, official gazette, tax authority or other public body of the country, or a statutory body's own legal text. Never a firm, a vendor, a university mirror, study material or Wikipedia. The build refuses any other host (see The rule). |
 | `quote` | Verbatim text from that page, in the page's own language and number style, containing the figure. |
 | `read_on` | The date the page was read and the quote checked. An entry read again after the rest of its country carries its own later date. |
+| `domain` | Only on a figure outside tax: its domain id from [docs/domains.yml](../docs/domains.yml). |
 | `status` | Only on an announced figure: a change that has been announced or put in a bill but is not yet law. The one value today is `announced, Finance Bill not yet enacted`. |
 | `used_by` | Skills in the folder with a rates-table row containing the exact value. Best effort: a common value such as `20%` also lists skills that use 20% for another rule. |
 
@@ -30,7 +31,7 @@ Every distinct http(s) URL cited by the skills in the folder, plus every library
 
 A figure is in the library only if it is proven by an exact quote from the official page: the quote must be found, as written, on the page at `source_url`, and it must contain the figure. Never a computed number, a summary, a search snippet or memory. When the page changes, the figure is read again and its `read_on` moves.
 
-Official sources only. `scripts/build-library.py` checks every `source_url` host against an allow-list: government domains (`.gov`, `.gov.ie`, `.gob.mx`, `.gouv.fr`, `.govt.nz`, `.gv.at` and the like) and a named list of official hosts outside them (`OFFICIAL_HOSTS`: `revenue.ie`, `oireachtas.ie`, `boe.es`, `legislation.mt` and others, each with whose it is). A figure on any other host is refused and printed, and does not reach the library. A new official host is added to that list with a comment, never by loosening the check.
+Official sources only. `scripts/build-library.py` checks every `source_url` host against an allow-list in [docs/domains.yml](../docs/domains.yml): government domains (`.gov`, `.gov.ie`, `.gob.mx`, `.gouv.fr`, `.govt.nz`, `.gv.at` and the like) and the named official hosts of the figure's domain, each with whose it is. A figure is a tax figure unless its pack entry carries `domain` (an active domain id, such as `financial-reporting`); the tax hosts are `revenue.ie`, `oireachtas.ie`, `boe.es`, `legislation.mt` and the others under `tax`. A standard setter such as ifrs.org counts only for a figure in its own domain, never for a tax figure. A figure on any other host is refused and printed, and does not reach the library. A new official host is added to its domain in that file with whose it is, never by loosening the check.
 
 The saved copies of the pages (with retrieval date and fingerprint) are kept privately, for copyright and size; only the URL, the quote and the read date are published here.
 

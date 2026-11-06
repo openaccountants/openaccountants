@@ -1,0 +1,262 @@
+# Domains: what a skill is about.
+#
+# A skill sits in a place (its folder: a country, skills/eu/ or skills/global/...) and
+# carries a label: a domain from this file (`domain:` in its frontmatter) and a job
+# (`job:`, or its file name). This file is the one list of domains, and the checks read it.
+# Change a rule here, not in the scripts.
+#
+# What each domain sets:
+#   id                The value a skill writes in `domain:`.
+#   label, examples   Plain words, so a contributor can find the right one.
+#   status            active: the checks use its rules. proposed: listed for discussion;
+#                     a skill that uses it is checked as before, with a warning.
+#   date_field        How a skill says it is still current. The checks demand these
+#                     frontmatter keys. A key ending in _date or _on is a YYYY-MM-DD date.
+#                     tax_year keeps the tax rule exactly as before (a bare year, the current
+#                     one, or tax_year_notes).
+#   official_sources  Which hosts count as an official source for this domain.
+#                     government: true accepts any government domain (.gov, .gov.uk,
+#                     .gouv.fr, .gob.mx, .govt.nz, .gv.at, .go.jp and the like).
+#                     hosts: a host accepts itself and its subdomains; each says whose it is.
+#                     also: [tax] accepts the tax domain's hosts too (law registers, gazettes
+#                     and tax authorities publish law for every domain).
+#   copyright_note    What may be quoted from the domain's own texts.
+#   rates_table       optional: a skill in this domain needs no rates table (check c);
+#                     any rates table it carries is still checked row by row.
+#
+# How the checks use it (scripts/skill_checks.py, scripts/validate-guides.py,
+# scripts/build-library.py):
+#   - No `domain:`, `domain: tax`, or one of the website_values below: checked exactly
+#     as before this file existed.
+#   - An active domain from this list: its date_field and official_sources apply.
+#     payroll and bookkeeping are website values too, so their rules apply only to a
+#     file that also carries their date field (checked_on).
+#   - A file name that names a tax (a tax word in scripts/coverage-report.py, or a
+#     word in tax.slug_words) is always checked as tax, whatever `domain:` says.
+#   - Any other value: a warning, "propose it in docs/domains.yml", and checked as before.
+#
+# How to propose a new domain:
+#   1. Open an issue titled "Propose a domain: <name>". Say what jobs it covers, two or
+#      three example skills, how a skill shows it is current (date_field) and which
+#      hosts publish the official texts (official_sources).
+#   2. A maintainer adds it here with status: proposed, then active once the rules are
+#      agreed. Until then, write the skill under the closest active domain.
+
+version: 1
+
+# The values the website writes in `domain:` today (its skills.domain facet). About 2,200
+# skill files carry one because the website wrote it. A file carrying one is checked exactly
+# as before; new skills use an id from the list below instead.
+website_values:
+  - income-tax
+  - vat-gst
+  - payroll
+  - bookkeeping
+  - e-invoicing
+  - formation
+  - financial-statements
+  - transfer-pricing
+  - tax-optimization
+  - crypto
+  - cross-border
+  - corporate-tax
+  - estate-wealth-tax
+  - references
+  - sector-guidance
+  - tooling
+
+domains:
+  - id: tax
+    label: Tax
+    status: active
+    examples:
+      - VAT return in Germany
+      - Corporate income tax in Kenya
+      - Payroll withholding in the United Kingdom
+      - Transfer pricing documentation in India
+    date_field: [tax_year]
+    # The tax sub-domains the coverage report counts (docs/GOAL.md). Which one a skill
+    # covers still comes from its file name and category (scripts/coverage-report.py).
+    sub_domains:
+      - {code: IT-IND, label: "Individual income tax"}
+      - {code: IT-CORP, label: "Corporate income tax"}
+      - {code: VAT, label: "VAT, GST or sales tax"}
+      - {code: SC, label: "Social contributions"}
+      - {code: PR, label: "Payroll withholding"}
+      - {code: TP, label: "Transfer pricing"}
+      - {code: XB, label: "Cross-border (exit, treaties, non-residents)"}
+    # A file name with one of these words is checked as tax whatever `domain:` says.
+    slug_words: [tax]
+    official_sources:
+      government: true
+      hosts:
+        boe.es: Spain, Boletín Oficial del Estado (official gazette)
+        seg-social.es: Spain, Seguridad Social
+        ipyme.org: Spain, Dirección General de Industria y de la PYME portal
+        gesetze-im-internet.de: Germany, Federal Ministry of Justice, federal law
+        recht.bund.de: Germany, Bundesgesetzblatt (official gazette)
+        bundesfinanzministerium.de: Germany, Federal Ministry of Finance
+        bundesgesundheitsministerium.de: Germany, Federal Ministry of Health
+        bundesregierung.de: Germany, Federal Government
+        bundesjustizamt.de: Germany, Federal Office of Justice
+        deutsche-rentenversicherung.de: Germany, statutory pension insurance
+        minijob-zentrale.de: Germany, Minijob-Zentrale (statutory pension insurance)
+        gkv-spitzenverband.de: Germany, statutory health insurance federation (public-law body)
+        existenzgruendungsportal.de: Germany, Federal Ministry for Economic Affairs portal
+        urssaf.fr: France, URSSAF (social security collection)
+        legislation.mt: Malta, official legislation
+        revenue.ie: Ireland, Revenue Commissioners
+        irishstatutebook.ie: Ireland, Irish Statute Book (Attorney General)
+        oireachtas.ie: Ireland, Houses of the Oireachtas (bills and debates)
+        skatturinn.is: Iceland, tax authority
+        stjornarradid.is: Iceland, Government Offices
+        normattiva.it: Italy, official legislation database
+        inps.it: Italy, national social security institute
+        svs.at: Austria, social insurance for the self-employed
+        chinhphu.vn: Vietnam, Government portal and official gazette
+        zimra.co.zw: Zimbabwe Revenue Authority
+        inegi.org.mx: Mexico, national statistics institute (constitutional body)
+    copyright_note: >-
+      Laws, gazettes and tax authority pages are cited by article or section, with the
+      exact words that hold each figure.
+
+  - id: financial-reporting
+    label: Financial reporting (accounting standards)
+    status: active
+    examples:
+      - IFRS 18 Presentation and Disclosure in Financial Statements
+      - IFRS 15 revenue recognition
+      - US GAAP ASC 842 leases
+      - FRS 102 for small companies in the United Kingdom
+    # Versioned by the standard and the date it takes effect, not by tax year.
+    # standard: the standard's name as its setter writes it ("IFRS 18 Presentation and
+    # Disclosure in Financial Statements"). effective_date: the date from which the
+    # version the skill describes applies (the latest amendment it covers).
+    date_field: [standard, effective_date]
+    rates_table: optional
+    official_sources:
+      government: true
+      also: [tax]
+      hosts:
+        ifrs.org: IFRS Foundation, IFRS Accounting Standards and the IASB
+        eifrs.ifrs.org: IFRS Foundation, eIFRS (the standards text)
+        fasb.org: Financial Accounting Standards Board (US GAAP)
+        asc.fasb.org: FASB Accounting Standards Codification (US GAAP text)
+        efrag.org: EFRAG, endorsement advice for IFRS in the EU
+        eur-lex.europa.eu: EU law, including the IFRS adopted for use in the EU
+        frc.org.uk: United Kingdom, Financial Reporting Council (UK GAAP, FRS 102)
+        socpa.org.sa: Saudi Arabia, Saudi Organization for Chartered and Professional Accountants
+        icai.org: India, Institute of Chartered Accountants of India (accounting standards)
+        frascanada.ca: Canada, Financial Reporting and Assurance Standards Canada
+        asbj.or.jp: Japan, Accounting Standards Board of Japan
+        drsc.de: Germany, Accounting Standards Committee of Germany
+    copyright_note: >-
+      IFRS Accounting Standards are copyright of the IFRS Foundation and the FASB Codification
+      is copyright of the Financial Accounting Foundation. Cite paragraph numbers
+      (IFRS 18.47, ASC 842-20-25-1), quote briefly where the exact words matter, and explain
+      in your own words. Never reproduce the standard's text.
+
+  - id: audit-assurance
+    label: Audit and assurance
+    status: active
+    examples:
+      - ISA 315 identifying and assessing the risks of material misstatement
+      - ISA 700 forming an opinion and the auditor's report
+      - Statutory audit thresholds and exemptions in one country
+      - ISAE 3000 assurance engagements
+    date_field: [standard, effective_date]
+    rates_table: optional
+    official_sources:
+      government: true
+      also: [tax]
+      hosts:
+        iaasb.org: IAASB, International Standards on Auditing
+        ifac.org: IFAC, handbooks of the international standards
+        pcaobus.org: United States, PCAOB auditing standards
+        aicpa-cima.com: United States, AICPA Auditing Standards Board (US GAAS)
+        frc.org.uk: United Kingdom, Financial Reporting Council (ISAs (UK), audit regulator)
+        icai.org: India, Institute of Chartered Accountants of India (standards on auditing)
+        frascanada.ca: Canada, Financial Reporting and Assurance Standards Canada
+    copyright_note: >-
+      ISA and other IAASB text is copyright of IFAC. Cite paragraph numbers (ISA 315.12),
+      quote briefly where the exact words matter, and explain in your own words. Never
+      reproduce the standard's text.
+
+  - id: bookkeeping
+    label: Bookkeeping
+    status: active
+    examples:
+      - Chart of accounts in France (Plan comptable général)
+      - Month-end close for a small company
+      - How long records must be kept, by country
+    date_field: [checked_on]
+    official_sources:
+      government: true
+      also: [tax]
+      hosts: {}
+
+  - id: payroll
+    label: Payroll (running it)
+    status: active
+    examples:
+      - Payroll calendar and payslip contents in Germany
+      - Holiday pay and final pay under employment law
+      - Payroll journals and reconciliations
+    # Withholding and social contribution figures are tax (sub-domains PR and SC): a file
+    # name with payroll, PAYE, withholding or contributions in it is checked as tax.
+    date_field: [checked_on]
+    official_sources:
+      government: true
+      also: [tax]
+      hosts: {}
+
+  - id: practice-management
+    label: Practice management (running an accounting practice)
+    status: active
+    examples:
+      - Engagement letters
+      - Client due diligence (anti-money-laundering) checks for accountants
+      - Professional ethics under the IESBA Code
+      - Keeping working papers
+    date_field: [checked_on]
+    official_sources:
+      government: true
+      also: [tax]
+      hosts:
+        ethicsboard.org: IESBA, International Code of Ethics for Professional Accountants
+        ifac.org: IFAC, handbooks of the international standards
+        icaew.com: United Kingdom, ICAEW (regulator of its members)
+        accaglobal.com: ACCA (regulator of its members)
+        aicpa-cima.com: United States, AICPA (professional standards)
+        icai.org: India, Institute of Chartered Accountants of India
+    copyright_note: >-
+      The IESBA Code is copyright of IFAC. Cite section numbers, quote briefly, and explain
+      in your own words.
+
+  - id: advisory
+    label: Advisory
+    status: active
+    examples:
+      - Choosing a business structure
+      - Company formation steps and costs
+      - Cash-flow forecasting for a small business
+    date_field: [checked_on]
+    official_sources:
+      government: true
+      also: [tax]
+      hosts: {}
+
+  - id: sustainability-reporting
+    label: Sustainability reporting
+    status: proposed
+    examples:
+      - IFRS S1 and IFRS S2 (ISSB)
+      - European Sustainability Reporting Standards (ESRS)
+    date_field: [standard, effective_date]
+    official_sources:
+      government: true
+      also: [tax]
+      hosts:
+        ifrs.org: IFRS Foundation, ISSB standards
+        efrag.org: EFRAG, ESRS
+        eur-lex.europa.eu: EU law

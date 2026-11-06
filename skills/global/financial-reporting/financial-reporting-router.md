@@ -4,11 +4,11 @@ description: Entry point for the OpenAccountants financial-reporting (US GAAP / 
 version: 0.1
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-06
 category: financial-reporting
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: tooling
+domain: financial-reporting
 ---
 
 # Financial Reporting Router

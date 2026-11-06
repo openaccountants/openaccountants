@@ -1,5 +1,17 @@
 # Contributing to OpenAccountants
 
+## What can I contribute?
+
+Any accounting topic: tax, financial reporting, audit, bookkeeping, payroll, running a practice, advisory. Each skill needs three things:
+
+1. **A place.** The folder: a country (`skills/germany/`), the EU (`skills/eu/`), or `skills/global/` when it belongs to no one place.
+2. **A domain.** One id from [docs/domains.yml](docs/domains.yml), written as `domain:` in the frontmatter. The domain decides how the skill shows it is current and which sources count as official.
+3. **A job.** The one task it does, in its file name.
+
+Your topic is not in the list? Open an issue titled "Propose a domain: ..." and we add it.
+
+**Example.** IFRS 18 goes in `skills/global/financial-reporting/ifrs/ifrs18-presentation.md`, with `domain: financial-reporting` and `type: situation-rules`. An IFRS standard is global, so `jurisdiction: GLOBAL`. It is dated by the standard, not a tax year: `standard: "IFRS 18 Presentation and Disclosure in Financial Statements"` and `effective_date: 2027-01-01`. Cite ifrs.org by paragraph number and quote briefly: the standard's text is copyrighted.
+
 OpenAccountants is a free, open-source plugin that gives AI the instructions accountants follow. Each instruction set is a **skill**: **one task, in one country, for one tax year** (for example, *UK VAT return, 2026*), built from the law.
 
 Anyone can improve a skill. Only an accountant can approve one.
