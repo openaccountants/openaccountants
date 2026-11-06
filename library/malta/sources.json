@@ -1,0 +1,1417 @@
+{
+  "country": "malta",
+  "code": "MT",
+  "url_count": 162,
+  "sources": [
+    {
+      "url": "https://dier.gov.mt/en/services/employment-conditions/wages/bonus-and-weekly-allowances/",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/act/2016/15/eng",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/act/2020/8/eng",
+      "skills": [
+        "how-to-submit-capital-gain-taxes-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/123/eng",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta",
+        "how-to-submit-capital-gain-taxes-in-malta",
+        "moving-to-malta-tax-residence",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta",
+        "how-to-submit-capital-gain-taxes-in-malta",
+        "malta-bookkeeping",
+        "malta-formation",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-nomad-residence-permit",
+        "mt-permanent-residence-programme",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": [
+        "mt.it.single.zero-band.top",
+        "mt.it.single.zero-band.rate",
+        "mt.it.single.15.upper",
+        "mt.it.single.15.rate",
+        "mt.it.single.15.subtract",
+        "mt.it.single.25.rate",
+        "mt.it.single.25.subtract",
+        "mt.it.top-band.threshold",
+        "mt.it.top-rate",
+        "mt.it.single.35.subtract",
+        "mt.it.married.zero-band.top",
+        "mt.it.married.15.upper",
+        "mt.it.married.15.subtract",
+        "mt.it.married.25.subtract",
+        "mt.it.married.35.subtract",
+        "mt.it.parent.single.zero-band.top",
+        "mt.it.married.one-child.zero-band.top",
+        "mt.it.married.two-children.zero-band.top",
+        "mt.nondom.min-tax.amount",
+        "mt.nondom.min-tax.income-threshold",
+        "mt.co.rate",
+        "mt.px.holding.min-equity",
+        "mt.px.holding.min-investment",
+        "mt.px.holding.min-period",
+        "mt.px.anti-abuse.foreign-tax",
+        "mt.px.anti-abuse.passive-income",
+        "mt.co.residence.incorporation-date",
+        "mt.trust.company-election.deadline",
+        "mt.it.parent.single.15.upper",
+        "mt.it.parent.single.15.subtract",
+        "mt.it.parent.single.25.subtract",
+        "mt.it.parent.single.35.subtract",
+        "mt.it.married.one-child.15.upper",
+        "mt.it.married.one-child.15.subtract",
+        "mt.it.married.one-child.25.subtract",
+        "mt.it.married.one-child.35.subtract",
+        "mt.it.married.two-children.15.upper",
+        "mt.it.married.two-children.15.subtract",
+        "mt.it.married.two-children.25.subtract",
+        "mt.it.married.two-children.35.subtract",
+        "mt.it.parent.one-child.zero-band.top",
+        "mt.it.parent.one-child.15.upper",
+        "mt.it.parent.one-child.15.subtract",
+        "mt.it.parent.one-child.25.subtract",
+        "mt.it.parent.one-child.35.subtract",
+        "mt.it.parent.two-children.zero-band.top",
+        "mt.it.parent.two-children.15.upper",
+        "mt.it.parent.two-children.15.subtract",
+        "mt.it.parent.two-children.25.subtract",
+        "mt.it.parent.two-children.35.subtract",
+        "mt.ptt.general",
+        "mt.ptt.inherited",
+        "mt.ptt.inherited-pre-1992",
+        "mt.nondom.cg-foreign",
+        "mt.nondom.remittance"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/16/eng/pdf",
+      "skills": [
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-inheritance-and-succession"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/252/eng/pdf",
+      "skills": [
+        "mt-reverse-charge-vat-services-received-from"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/318/eng",
+      "skills": [
+        "malta-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/331/eng/pdf",
+      "skills": [
+        "mt-foundations-and-trusts"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/364/eng",
+      "skills": [
+        "moving-to-malta-tax-residence",
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "skills": [
+        "how-to-submit-capital-gain-taxes-in-malta",
+        "mt-capital-gains",
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-inheritance-and-succession",
+        "selling-a-company-in-malta"
+      ],
+      "figures": [
+        "mt.duty.immovable.rate",
+        "mt.duty.cm.home.exempt-first",
+        "mt.duty.cm.home.reduced-rate",
+        "mt.duty.cm.home.reduced-rate.ceiling",
+        "mt.duty.cm.home.spouse",
+        "mt.duty.cm.usufruct-spouse",
+        "mt.duty.shares.rate",
+        "mt.duty.shares.property-company-uplift",
+        "mt.duty.family-business.property.cap",
+        "mt.duty.family-business.shares.exempt",
+        "mt.duty.family-business.claw-back"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/372/eng",
+      "skills": [
+        "how-to-submit-capital-gain-taxes-in-malta",
+        "malta-transfer-pricing",
+        "mt-estimated-tax",
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/372/eng/pdf",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-tax-optimization",
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption",
+        "selling-a-company-in-malta"
+      ],
+      "figures": [
+        "mt.refund.participating",
+        "mt.refund.six-sevenths",
+        "mt.refund.five-sevenths",
+        "mt.refund.two-thirds"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/386/eng/pdf",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-financial-statements",
+        "malta-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/cap/406/eng/pdf",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-tax-optimization",
+        "mt-family-office-setup",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/ln/2025/139/eng/pdf",
+      "skills": [
+        "malta-financial-statements",
+        "malta-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/ln/2025/146/eng/pdf",
+      "skills": [
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/ln/2025/306/eng",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/ln/2026/156/eng",
+      "skills": [
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/ln/2026/158/eng",
+      "skills": [
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/ln/2026/20/eng",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/ln/2026/61/eng",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-financial-statements",
+        "malta-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.1/eng/pdf",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.114/eng/pdf",
+      "skills": [
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts"
+      ],
+      "figures": [
+        "mt.foundation.trust-election"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.127/eng/pdf",
+      "skills": [
+        "malta-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.134/eng",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "skills": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": [
+        "mt.grp.rate",
+        "mt.grp.min-tax",
+        "mt.grp.other-income-rate",
+        "mt.grp.property.buy.malta",
+        "mt.grp.property.buy.gozo-south",
+        "mt.grp.property.rent.malta",
+        "mt.grp.property.rent.gozo-south",
+        "mt.grp.fee",
+        "mt.grp.fee.south",
+        "mt.grp.mandatary-penalty",
+        "mt.grp.stay-limit"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "skills": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": [
+        "mt.rp.rate",
+        "mt.rp.min-tax",
+        "mt.rp.other-income-rate",
+        "mt.rp.property.buy.malta",
+        "mt.rp.property.buy.gozo-south",
+        "mt.rp.property.rent.malta",
+        "mt.rp.property.rent.gozo-south",
+        "mt.rp.fee",
+        "mt.rp.fee.south"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.175/eng/pdf",
+      "skills": [
+        "malta-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.176/eng/pdf",
+      "skills": [
+        "mt-corporate-tax",
+        "mt-holding-company-participation-exemption"
+      ],
+      "figures": [
+        "mt.nid.premium",
+        "mt.nid.cap"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "skills": [
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-holding-company-participation-exemption"
+      ],
+      "figures": [
+        "mt.atad.cfc.control",
+        "mt.atad.cfc.exempt.profits",
+        "mt.atad.cfc.exempt.non-trading",
+        "mt.atad.cfc.exempt.margin",
+        "mt.atad.ilr.ebitda",
+        "mt.atad.ilr.safe-harbour",
+        "mt.atad.associated"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.189/eng/pdf",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.204/eng/pdf",
+      "skills": [
+        "malta-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.207/eng",
+      "skills": [
+        "malta-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.207/eng/pdf",
+      "skills": [
+        "malta-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.210/eng/pdf",
+      "skills": [
+        "mt-nomad-residence-permit",
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": [
+        "mt.nomad.tax-rate",
+        "mt.nomad.foreign-tax-test"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.212/eng/pdf",
+      "skills": [
+        "malta-transfer-pricing",
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.217/eng/pdf",
+      "skills": [
+        "malta-tax-optimization",
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption"
+      ],
+      "figures": [
+        "mt.co.fitwi.rate",
+        "mt.co.fitwi.lock-in",
+        "mt.co.fitwi.floor"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/123.7/eng/pdf",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "skills": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": [
+        "mt.mprp.admin-fee.main",
+        "mt.mprp.admin-fee.first-instalment",
+        "mt.mprp.admin-fee.balance",
+        "mt.mprp.admin-fee.dependant",
+        "mt.mprp.contribution",
+        "mt.mprp.donation",
+        "mt.mprp.property.buy",
+        "mt.mprp.property.rent",
+        "mt.mprp.capital.option-a.total",
+        "mt.mprp.capital.option-a.financial",
+        "mt.mprp.capital.option-b.total",
+        "mt.mprp.capital.option-b.financial",
+        "mt.mprp.agent-pi-cover"
+      ]
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/217.4/eng/pdf",
+      "skills": [
+        "mt-nomad-residence-permit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/281.5/eng/pdf",
+      "skills": [
+        "malta-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/331.10/eng/pdf",
+      "skills": [
+        "mt-foundations-and-trusts"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/364.6/eng/pdf",
+      "skills": [
+        "mt-inheritance-and-succession"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/372.16/eng",
+      "skills": [
+        "malta-transfer-pricing",
+        "mt-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/372.16/eng/pdf",
+      "skills": [
+        "malta-formation",
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/372.18/eng",
+      "skills": [
+        "mt-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/372.18/eng/pdf",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/372.26/eng/pdf",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/372.28/eng",
+      "skills": [
+        "mt-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/372.28/eng/pdf",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/386.19/eng/pdf",
+      "skills": [
+        "malta-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/386.3/eng/pdf",
+      "skills": [
+        "malta-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/406.12/eng/pdf",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-tax-optimization",
+        "malta-vat-return",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/406.14/eng/pdf",
+      "skills": [
+        "malta-vat-return",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/406.19/eng/pdf",
+      "skills": [
+        "malta-vat-return",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/eli/sl/595.40/eng/pdf",
+      "skills": [
+        "mt-nomad-residence-permit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/602258ccbc8272018c0e3b92",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6022592ebc8272018c0ede95",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6022592fbc8272018c0edf9a",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2",
+      "skills": [
+        "malta-income-tax",
+        "mt-capital-gains",
+        "mt-crypto-tax",
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/60225973bc8272018c0f5156",
+      "skills": [
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/60225987bc8272018c0f70f1",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/60225988bc8272018c0f72fb",
+      "skills": [
+        "malta-vat-return",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6022599cbc8272018c0f9636",
+      "skills": [
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/62026ae5c9c73a144cfb58eb",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4",
+      "skills": [
+        "malta-income-tax",
+        "mt-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/632835ddda6f862638d03ac1",
+      "skills": [
+        "malta-vat-return",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/65815fd48a3ed618b0827fe2",
+      "skills": [
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6641e0860419230b5c3872a1",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9",
+      "skills": [
+        "malta-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/67516323b52f3e3cf890a2e0",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/67691cdeb52f1d38d8a4103f",
+      "skills": [
+        "malta-vat-return",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/678a0da50dba9f0950780cb6",
+      "skills": [
+        "malta-vat-return",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/67a08f18b52f3e3cf8949c52",
+      "skills": [
+        "malta-ssc"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6811d40a495e132a18426aea",
+      "skills": [
+        "malta-vat-return",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5",
+      "skills": [
+        "malta-income-tax",
+        "mt-capital-gains",
+        "mt-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/688b3e0cbed0ef08a863ffa1",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/68c1374a22d5d32e6c111563",
+      "skills": [
+        "mt-capital-gains",
+        "mt-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/695277d8cc8c701d50c749db",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/695d0bd4d2130a2e4cdb89d2",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/696e2f8c52ff32215ce13d7b",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/696e3268cc8c701d50c97020",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b",
+      "skills": [
+        "malta-financial-statements",
+        "malta-income-tax",
+        "malta-ssc",
+        "mt-capital-gains",
+        "mt-crypto-tax",
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c",
+      "skills": [
+        "malta-payroll",
+        "malta-ssc"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/69d8a9187da37f0580d5140c",
+      "skills": [
+        "malta-financial-statements",
+        "malta-income-tax",
+        "malta-payroll",
+        "mt-capital-gains",
+        "mt-crypto-tax",
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430",
+      "skills": [
+        "malta-income-tax",
+        "malta-payroll",
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-crypto-tax",
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/69dce8d06fe5fd3994d17860",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/69faf83e2eb86e24207539ec",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a183289becdc821c019724f",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a1836349844fb1e280ec744",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a1837c7becdc821c0197266",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a183871becdc821c019727f",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a3101a4d3e9ed28acd19036",
+      "skills": [
+        "mt-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3",
+      "skills": [
+        "malta-income-tax",
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a6c4e3652fe433f00006353",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a6c60bcab8952298c312cae",
+      "skills": [
+        "mt-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20",
+      "skills": [
+        "malta-vat-return",
+        "mt-crypto-tax",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mbr.mt/fees/",
+      "skills": [
+        "malta-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt",
+      "skills": [
+        "mt-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/InternationalAffairs/international-direct-taxation/transfer-pricing/advanced-pricing-arrangements-(apa",
+      "skills": [
+        "malta-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/InternationalAffairs/international-direct-taxation/transfer-pricing/transfer-pricing-overview",
+      "skills": [
+        "malta-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/corporate/Income_Tax",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/corporate/corporate_tax",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/corporate/downloads",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/corporate/irdservicesonline",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/legislative-developments/2026",
+      "skills": [
+        "mt-estimated-tax",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/business-tax/vat1/vat-compliance/vat-rates/vat-rates",
+      "skills": [
+        "malta-vat-return",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5",
+      "skills": [
+        "malta-income-tax",
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/business-tax/international-affairs/international-direct-taxation/transfer-pricing/useful-links/guidelines---transfer-pricing-rules.pdf",
+      "skills": [
+        "malta-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/guidelines--dlts-income-tax.pdf?sfvrsn=c74e28fc_1",
+      "skills": [
+        "mt-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/guidelines-ftb.pdf?sfvrsn=60c3eece_1",
+      "skills": [
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/guidelines-stb.pdf?sfvrsn=cae8b349_1",
+      "skills": [
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/legislative-developments/2026/overview-of-recently-published-legal-notices-january-to-june-2026-memo.pdf?sfvrsn=1191b20d_1",
+      "skills": [
+        "moving-to-malta-tax-residence",
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/legislative-developments/2026/overview-of-recently-published-legal-notices-july-to-december-2025-memo.pdf?sfvrsn=eaa8dda1_1",
+      "skills": [
+        "how-to-submit-capital-gain-taxes-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta",
+        "mt-estimated-tax",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/mtca-guidance-note-art31d.pdf",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf",
+      "skills": [
+        "moving-to-malta-tax-residence",
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/individual/special-schemes/the-global-residence-programme/guidelines-grp.pdf?sfvrsn=4c05bc98_1",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/individual/special-schemes/the-malta-retirement-programme/guidelines-mrp.pdf?sfvrsn=62844ae3_1",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/individual/tax-return-booklet-individuals/mtca-tax-booklet-2026-eng-17-03.pdf?sfvrsn=5ca02b73_1",
+      "skills": [
+        "malta-tax-optimization",
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/individual/tax-return-cycle/pt-booklet730742a2-5244-4a68-81a5-6af28f61d15f.pdf",
+      "skills": [
+        "mt-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/audit-exemption-rules---guidelines.pdf?sfvrsn=14aab6d_1",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/hqpr-new-amalgamated-rules---guidelines---branded-06-04-(002",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/nomad-guidelines---12-03-2026.pdf?sfvrsn=f0cc9971_6",
+      "skills": [
+        "moving-to-malta-tax-residence",
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/docs/default-source/documents/registrations-and-de-registrations-faqs.pdf?sfvrsn=908511fc_1",
+      "skills": [
+        "malta-vat-return",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/home",
+      "skills": [
+        "mt-reverse-charge-acquisition-intra"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/home/2026/01/13/electronic-filing-extension-of-corporate-income-tax-returns-for-2026",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/news-results-page/2026/03/27/election-for-final-income-tax-without-imputation",
+      "skills": [
+        "mt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/news-results-page/2026/05/07/year-of-assessment-2026-tax-return-for-companies",
+      "skills": [
+        "malta-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline",
+      "skills": [
+        "malta-income-tax",
+        "moving-to-malta-tax-residence",
+        "mt-crypto-tax",
+        "mt-estimated-tax",
+        "mt-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates",
+      "skills": [
+        "malta-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates",
+      "skills": [
+        "malta-ssc"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/individual/faqs/faqs1",
+      "skills": [
+        "malta-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/individual/special-schemes",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/individual/tax-on-rental-income-(ta24",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/individual/tax-residence",
+      "skills": [
+        "moving-to-malta-tax-residence"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/individual/tax-return-cycle",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta",
+        "mt-estimated-tax",
+        "mt-rental-income",
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/faqs---general-questions",
+      "skills": [
+        "mt-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/rental-income-taxed-at-15----article-31d-of-the-income-tax-act",
+      "skills": [
+        "how-to-account-for-rental-income-in-malta",
+        "moving-to-malta-tax-residence",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/property-taxes/buying-property",
+      "skills": [
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/property-taxes/downloads",
+      "skills": [
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---examples",
+      "skills": [
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq",
+      "skills": [
+        "how-to-submit-capital-gain-taxes-in-malta",
+        "moving-to-malta-tax-residence",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty",
+      "skills": [
+        "how-to-submit-capital-gain-taxes-in-malta",
+        "moving-to-malta-tax-residence",
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/property-taxes/promise-of-sale",
+      "skills": [
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/property-taxes/selling-property",
+      "skills": [
+        "how-to-submit-capital-gain-taxes-in-malta",
+        "mt-property-transfer-tax-the-sale-immovable"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/self-employed/registration",
+      "skills": [
+        "mt-reverse-charge-acquisition-intra"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/self-employed/vat-return-cycle",
+      "skills": [
+        "malta-vat-return",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-vat3-quarterly-return-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/sharetransfers/faqs-share-transfers",
+      "skills": [
+        "moving-to-malta-tax-residence",
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/sharetransfers/share-transfers",
+      "skills": [
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtca.gov.mt/personal-tax/tax-rates/tax-ratesindividuals/2026",
+      "skills": [
+        "mt-capital-gains",
+        "mt-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://residencymalta.gov.mt/",
+      "skills": [
+        "mt-family-office-setup",
+        "mt-nomad-residence-permit",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://residencymalta.gov.mt/wp-content/uploads/2024/09/MPRP-FAQs-V2.6.5.pdf",
+      "skills": [
+        "mt-permanent-residence-programme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://residencymalta.gov.mt/wp-content/uploads/2025/07/L.N-146-of-2025.pdf",
+      "skills": [
+        "mt-permanent-residence-programme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://residencymalta.gov.mt/wp-content/uploads/2026/08/MPRP-Brochure-English.pdf",
+      "skills": [
+        "moving-to-malta-tax-residence",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ],
+      "figures": [
+        "mt.mprp.residence-card-fee"
+      ]
+    },
+    {
+      "url": "https://socialsecurity.gov.mt/en/information-and-applications-for-benefits-and-services/social-security-contributions/social-security-contributions/",
+      "skills": [
+        "malta-ssc"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mbr.mt/post/duty-on-document-evidence",
+      "skills": [
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mbr.mt/post/important-notice-single-point-of-submission-for-form-t-form-h-and-msr-form-f-via-baros",
+      "skills": [
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1",
+      "skills": [
+        "malta-bookkeeping",
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mbr.mt/post/notice-to-the-public-submission-of-financial-statements-to-the-registrar",
+      "skills": [
+        "malta-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mbr.mt/website-pages/change-in-company-details",
+      "skills": [
+        "selling-a-company-in-malta"
+      ],
+      "figures": []
+    }
+  ]
+}

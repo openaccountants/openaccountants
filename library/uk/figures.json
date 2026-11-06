@@ -1,0 +1,2205 @@
+{
+  "country": "uk",
+  "code": "GB",
+  "figure_count": 156,
+  "figures": [
+    {
+      "id": "gb.it.tax-year",
+      "item": "The UK tax year the figures below belong to. It runs 6 April to 5 April, not the calendar year. Corporation tax uses a financial year from 1 April instead.",
+      "value": "6 April 2026 to 5 April 2027",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "The current tax year is from 6 April 2026 to 5 April 2027.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-crypto-tax"
+      ]
+    },
+    {
+      "id": "gb.it.personal-allowance",
+      "item": "Standard Personal Allowance: income each individual may have before income tax. England, Wales and Northern Ireland; the allowance is the same in Scotland, only the rates and bands differ. Per person, not per couple. Frozen at this amount to the end of 2027 to 2028.",
+      "value": "GBP 12,570",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "The standard Personal Allowance is £12,570, which is the amount of income you do not have to pay tax on.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-non-resident-sa109",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.personal-allowance.income-limit",
+      "item": "Adjusted net income at which the Personal Allowance starts to be withdrawn. Not a cliff: the allowance tapers away above this figure.",
+      "value": "GBP 100,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "Your personal allowance goes down by £1 for every £2 that your adjusted net income is above £100,000.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.personal-allowance.taper",
+      "item": "The taper rate for the Personal Allowance above the income limit, as gov.uk prints it. It is a ratio, not a percentage: the allowance falls by GBP 1 for each GBP 2 of adjusted net income over the limit.",
+      "value": "GBP 1 for every GBP 2",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "Your personal allowance goes down by £1 for every £2 that your adjusted net income is above",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.personal-allowance.zero-at",
+      "item": "Adjusted net income at or above which the Personal Allowance is nil. Same number as the additional rate threshold, but this is the allowance rule, not the rate band.",
+      "value": "GBP 125,140",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "This means your allowance is zero if your income is £125,140 or above.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-dividends",
+        "uk-income-tax-sa100",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.basic-rate",
+      "item": "Basic rate of income tax on non-savings non-dividend income, England, Wales and Northern Ireland. Scotland has six bands and different rates.",
+      "value": "20%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "Basic rate £12,571 to £50,270 20%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "gb-vat-eu-goods-sellers",
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-capital-gains-sa108",
+        "uk-corporation-tax",
+        "uk-crypto-tax",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-payroll",
+        "uk-scottish-income-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.it.basic-rate.band",
+      "item": "Width of the basic rate band, that is taxable income after the Personal Allowance has been deducted. Not the income figure: the income figure is GBP 50,270.",
+      "value": "GBP 37,700",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past",
+      "quote": "Basic rate 20% Up to £37,700 Up to £37,700",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109"
+      ]
+    },
+    {
+      "id": "gb.it.basic-rate.income-top",
+      "item": "Total income at which the basic rate band ends for someone with the standard Personal Allowance. Also the Class 1 upper earnings limit and the Class 4 upper profits limit.",
+      "value": "GBP 50,270",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "Basic rate £12,571 to £50,270 20%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.higher-rate",
+      "item": "Higher rate of income tax on non-savings non-dividend income, England, Wales and Northern Ireland.",
+      "value": "40%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "Higher rate £50,271 to £125,140 40%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-corporation-tax",
+        "uk-crypto-tax",
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.additional-rate",
+      "item": "Additional rate of income tax on non-savings non-dividend income, England, Wales and Northern Ireland.",
+      "value": "45%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "Additional rate over £125,140 45%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-crypto-tax",
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payroll",
+        "uk-scottish-income-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.additional-rate.threshold",
+      "item": "Total income above which the additional rate applies. The HMRC rates publication prints the same band as 'Over £125,141'; the taxpayer page prints 'over £125,140'.",
+      "value": "GBP 125,140",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "quote": "Additional rate over £125,140 45%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-dividends",
+        "uk-income-tax-sa100",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.dividend.allowance",
+      "item": "Dividend allowance: dividend income taxed at 0% before the dividend rates bite. It is an allowance inside the bands, not an extra band, and it uses up part of whichever band it falls in.",
+      "value": "GBP 500",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/tax-on-dividends",
+      "quote": "You also get a dividend allowance of £500 each year.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.dividend.ordinary-rate",
+      "item": "Dividend ordinary rate, on dividends above the dividend allowance that fall in the basic rate band. RAISED from 8.75% for 2026 to 2027 by Budget 2025; applies to distributions made on or after 6 April 2026, UK-wide including Scotland.",
+      "value": "10.75%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/tax-on-dividends",
+      "quote": "Tax band Tax rate on dividends over the allowance Basic rate 10.75%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-scottish-income-tax",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.dividend.upper-rate",
+      "item": "Dividend upper rate, on dividends in the higher rate band. RAISED from 33.75% for 2026 to 2027; applies to distributions made on or after 6 April 2026, UK-wide.",
+      "value": "35.75%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/tax-on-dividends",
+      "quote": "Basic rate 10.75% Higher rate 35.75%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-scottish-income-tax",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.dividend.additional-rate",
+      "item": "Dividend additional rate, on dividends in the additional rate band. UNCHANGED at this rate for 2026 to 2027.",
+      "value": "39.35%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/tax-on-dividends",
+      "quote": "Higher rate 35.75% Additional rate 39.35%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-scottish-income-tax",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.savings.starting-rate-band",
+      "item": "Starting rate band for savings interest, taxed at 0%. Available only while other taxable income (excluding savings interest and dividends) is below GBP 17,570, and reduced GBP 1 for GBP 1 by other income above the Personal Allowance.",
+      "value": "GBP 5,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free",
+      "quote": "This means you can earn up to £5,000 of interest and not have to pay tax on it.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.savings.starting-rate-limit",
+      "item": "Other taxable income below which any starting rate for savings is available at all.",
+      "value": "GBP 17,570",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free",
+      "quote": "If your other taxable income (not including savings interest or dividends) is less than £17,570, you can get the starter rate for savings.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100"
+      ]
+    },
+    {
+      "id": "gb.it.savings.psa.basic",
+      "item": "Personal Savings Allowance for a basic rate taxpayer: interest taxed at 0%. Separate from, and on top of, the starting rate band.",
+      "value": "GBP 1,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free",
+      "quote": "Income Tax band Personal Savings Allowance Basic rate £1,000 Higher rate £500",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.it.savings.psa.higher",
+      "item": "Personal Savings Allowance for a higher rate taxpayer.",
+      "value": "GBP 500",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free",
+      "quote": "Basic rate £1,000 Higher rate £500 Additional rate £0",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.it.savings.psa.additional",
+      "item": "Personal Savings Allowance for an additional rate taxpayer: there is none.",
+      "value": "GBP 0",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free",
+      "quote": "Basic rate £1,000 Higher rate £500 Additional rate £0",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.it.savings.rates.2026",
+      "item": "Savings income is taxed at the ordinary basic, higher and additional rates for 2026 to 2027. The separate savings rates of 22%, 42% and 47% start only from 6 April 2027, so do NOT use them for tax year 2026.",
+      "value": "20%, 40% and 45%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income",
+      "quote": "Since April 2017 the rates have been 20% for basic rate taxpayers, 40% for higher rate taxpayers, and 45% for additional rate taxpayers.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.it.savings.rates.2027",
+      "item": "Savings basic, higher and additional rates, FUTURE. They apply from 6 April 2027 for the 2027 to 2028 tax year, UK-wide. Do NOT use them for tax year 2026, when savings income is still taxed at 20%, 40% and 45%.",
+      "value": "22%, 42% and 47%",
+      "tax_year": "2027 to 2028, from 6 April 2027",
+      "source_url": "https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income",
+      "quote": "The rates for the 2027 to 2028 tax year will be: the savings basic rate at 22% the savings higher rate at 42% the savings additional rate at 47%",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.it.property.rates.2027",
+      "item": "Property income basic, higher and additional rates, FUTURE. Separate rates for letting income start 6 April 2027 in England, Wales and Northern Ireland. For tax year 2026 property income is taxed at the ordinary 20%, 40% and 45%.",
+      "value": "22%, 42% and 47%",
+      "tax_year": "2027 to 2028, from 6 April 2027",
+      "source_url": "https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income",
+      "quote": "The rates for the 2027 to 2028 tax year will be the property basic rate at 22% the property higher rate at 42% the property additional rate at 47%",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.it.trading-allowance",
+      "item": "Trading allowance: gross self-employment or casual income that can be received tax free. Full relief below it (no tax return needed for that income alone); above it the allowance may be deducted INSTEAD of actual expenses, never as well.",
+      "value": "GBP 1,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income",
+      "quote": "You can get up to £1,000 each tax year in tax-free allowances for property or trading income from 6 April 2017.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.it.property-allowance",
+      "item": "Property allowance: gross property income that can be received tax free. A separate GBP 1,000 from the trading allowance; someone with both types of income gets both. Cannot be used with the Rent a Room Scheme on the same income.",
+      "value": "GBP 1,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income",
+      "quote": "If you have both types of income, you’ll get a £1,000 allowance for each.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.it.self-assessment.trigger",
+      "item": "Gross sole trader income above which a Self Assessment return is required. Same number as the trading allowance, but this is the filing trigger, not the deduction.",
+      "value": "GBP 1,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return",
+      "quote": "you were self-employed as a ‘sole trader’ and earned more than £1,000",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.it.marriage-allowance.transfer",
+      "item": "Marriage Allowance: the fixed slice of Personal Allowance a lower earner may transfer to a spouse or civil partner. All or nothing, not a chosen amount.",
+      "value": "GBP 1,260",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/marriage-allowance",
+      "quote": "Marriage Allowance lets you transfer £1,260 of your Personal Allowance to your husband, wife or civil partner.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100"
+      ]
+    },
+    {
+      "id": "gb.it.marriage-allowance.benefit",
+      "item": "The most Marriage Allowance can reduce the receiving partner's tax by in a tax year.",
+      "value": "GBP 252",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/marriage-allowance",
+      "quote": "This reduces their tax by up to £252 in the tax year",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100"
+      ]
+    },
+    {
+      "id": "gb.hicbc.threshold",
+      "item": "High Income Child Benefit Charge: the adjusted net income of the higher-earning partner at which the charge starts. Per individual, never household income added together.",
+      "value": "GBP 60,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/child-benefit-tax-charge",
+      "quote": "If you or your partner earn more than £60,000 a year, you’ll have to pay some of your Child Benefit back.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.hicbc.full-clawback",
+      "item": "High Income Child Benefit Charge: adjusted net income at which the whole of the Child Benefit is clawed back.",
+      "value": "GBP 80,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/child-benefit-tax-charge",
+      "quote": "If you or your partner earn £80,000 or more, you’ll have to pay all of it back.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100"
+      ]
+    },
+    {
+      "id": "gb.hicbc.rate",
+      "item": "High Income Child Benefit Charge: the clawback step. 1% of the Child Benefit for each GBP 200 of income over the threshold. For years up to 2023 to 2024 it was 1% per GBP 100 over GBP 50,000.",
+      "value": "1% for every GBP 200",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/child-benefit-tax-charge",
+      "quote": "You’ll pay back 1% of your Child Benefit for every £200 you earn over the threshold.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.sa.poa.threshold",
+      "item": "Payments on account are not required if last year's Self Assessment tax bill was below this amount. A cliff: at or above it, both instalments are due.",
+      "value": "GBP 1,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/understand-self-assessment-bill/payments-on-account",
+      "quote": "the amount of tax you owed last year was less than £1,000",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.sa.poa.paye-share",
+      "item": "Payments on account are also not required if more than this share of last year's tax was collected outside Self Assessment, for example through a tax code.",
+      "value": "80%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/understand-self-assessment-bill/payments-on-account",
+      "quote": "last year you paid more than 80% of the tax you owed outside of Self Assessment",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-payments-on-account",
+        "uk-payroll",
+        "uk-transfer-pricing"
+      ]
+    },
+    {
+      "id": "gb.sa.poa.instalment",
+      "item": "Each payment on account is half of the previous year's Self Assessment bill, due 31 January and 31 July. Class 4 National Insurance is included; Class 2 and capital gains tax are not.",
+      "value": "half of the previous year's tax",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/understand-self-assessment-bill/payments-on-account",
+      "quote": "Each payment is half of the tax you owed last year.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.sa.penalty.late-filing.initial",
+      "item": "Self Assessment late filing penalty, charged the day after the filing deadline even if no tax is owed.",
+      "value": "GBP 100",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-assessment-tax-returns/penalties",
+      "quote": "an initial £100 penalty",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-non-resident-sa109"
+      ]
+    },
+    {
+      "id": "gb.sa.penalty.late-filing.daily",
+      "item": "Self Assessment late filing: daily penalty once the return is 3 months late.",
+      "value": "GBP 10 a day",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-assessment-tax-returns/penalties",
+      "quote": "after 3 months, additional daily penalties of £10 per day, up to a maximum of £900",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.sa.penalty.late-filing.daily-max",
+      "item": "Cap on the GBP 10 daily late filing penalties (90 days).",
+      "value": "GBP 900",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-assessment-tax-returns/penalties",
+      "quote": "additional daily penalties of £10 per day, up to a maximum of £900",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.sa.penalty.late-filing.6-month",
+      "item": "Self Assessment late filing: penalty at 6 months late, the GREATER of 5% of the tax due or GBP 300.",
+      "value": "5% of the tax due or GBP 300, whichever is greater",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-assessment-tax-returns/penalties",
+      "quote": "after 6 months, a further penalty of 5% of the tax due or £300, whichever is greater",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.sa.penalty.late-filing.12-month",
+      "item": "Self Assessment late filing: a second penalty at 12 months late, again the greater of 5% or GBP 300. It is on top of the 6-month penalty, not instead of it.",
+      "value": "5% of the tax due or GBP 300, whichever is greater",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-assessment-tax-returns/penalties",
+      "quote": "after 12 months, another 5% or £300 charge, whichever is greater",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.sa.penalty.late-payment",
+      "item": "Self Assessment late payment penalties: 5% of the tax still unpaid at each of 30 days, 6 months and 12 months. Three separate 5% charges, and interest runs as well.",
+      "value": "5%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-assessment-tax-returns/penalties",
+      "quote": "You’ll get penalties of 5% of the tax unpaid at: 30 days 6 months 12 months",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-payments-on-account",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.hmrc.interest.late-payment.margin",
+      "item": "How HMRC sets late payment interest on income tax, National Insurance, capital gains tax, corporation tax self assessment and VAT: Bank of England base rate plus a fixed margin. The margin was 2.5% on or before 5 April 2025.",
+      "value": "base rate plus 4%",
+      "tax_year": "from 6 April 2025",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates",
+      "quote": "late payment interest set at base rate plus 4% from 6 April 2025",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.hmrc.interest.late-payment.rate",
+      "item": "The late payment interest rate HMRC prints as current. Read the page before quoting it: it moves with the Bank of England base rate and this is the rate shown on 19 September 2026.",
+      "value": "7.75%",
+      "tax_year": "current rate from 9 January 2026",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates",
+      "quote": "late payment interest rate — 7.75% from 9 January 2026",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.hmrc.interest.repayment.margin",
+      "item": "How HMRC sets repayment interest on tax it holds and must give back.",
+      "value": "base rate minus 1%",
+      "tax_year": "from 6 April 2025",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates",
+      "quote": "repayment interest, set at base rate minus 1%, with a lower limit of 0.5%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ]
+    },
+    {
+      "id": "gb.hmrc.interest.repayment.rate",
+      "item": "The repayment interest rate HMRC prints as current on 19 September 2026.",
+      "value": "2.75%",
+      "tax_year": "current rate from 9 January 2026",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates",
+      "quote": "repayment interest rate — 2.75% from 9 January 2026",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ]
+    },
+    {
+      "id": "gb.hmrc.interest.repayment.floor",
+      "item": "Minimum repayment interest rate, the 'minimum floor', whatever the base rate does.",
+      "value": "0.5%",
+      "tax_year": "from 6 April 2025",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates",
+      "quote": "with a lower limit of 0.5% (known as the ‘minimum floor’)",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-payments-on-account",
+        "uk-payroll",
+        "uk-self-employment-sa103"
+      ]
+    },
+    {
+      "id": "gb.ni.class1.primary-threshold.yearly",
+      "item": "Class 1 primary threshold, yearly. Same number as the Personal Allowance, but it is a National Insurance threshold, not an allowance.",
+      "value": "GBP 12,570",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Primary threshold £242 per week £1,048 per month £12,570 per year",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-non-resident-sa109",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class1.secondary-threshold.yearly",
+      "item": "Class 1 secondary threshold, yearly. Far below the employee threshold: an employer pays from GBP 5,000 while the employee pays from GBP 12,570.",
+      "value": "GBP 5,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Secondary threshold £96 per week £417 per month £5,000 per year",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class1.uel.yearly",
+      "item": "Class 1 upper earnings limit, yearly.",
+      "value": "GBP 50,270",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Upper earnings limit £967 per week £4,189 per month £50,270 per year",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class1.employee.main-rate",
+      "item": "Employee (primary) Class 1 rate, category letter A, on earnings between the primary threshold and the upper earnings limit.",
+      "value": "8%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Balance of earnings above upper earnings limit A 0% 8% 2%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-payroll"
+      ]
+    },
+    {
+      "id": "gb.ni.class1.employee.upper-rate",
+      "item": "Employee Class 1 rate on earnings above the upper earnings limit, category letter A.",
+      "value": "2%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "A 0% 8% 2% B 0% 1.85% 2%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-dividends",
+        "uk-national-insurance",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.ni.class1.employer.rate",
+      "item": "Employer (secondary) Class 1 rate, category letter A, on all earnings above the secondary threshold. There is no upper limit for the employer.",
+      "value": "15%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Balance of earnings above upper earnings limit, upper secondary thresholds for under 21s, apprentices and veterans A 15% 15% 15% 15% B 15% 15% 15% 15%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "real-estate-and-property",
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-non-dom",
+        "uk-payroll",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class1a.rate",
+      "item": "Class 1A rate the employer pays on taxable benefits in kind reported on form P11D, and on termination awards above GBP 30,000.",
+      "value": "15%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Class 1A rate on expenses and benefits for 2026 to 2027 is 15%.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "real-estate-and-property",
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-non-dom",
+        "uk-payroll",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.employment-allowance",
+      "item": "Employment Allowance: the most an eligible employer can knock off its employer Class 1 National Insurance bill in the year. It is a reduction of liability, not a cash payment, and a one-director company with no other employee cannot claim it.",
+      "value": "GBP 10,500",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Employment Allowance for 2026 to 2027 is £10,500.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-national-insurance"
+      ]
+    },
+    {
+      "id": "gb.ni.class2.small-profits-threshold",
+      "item": "Class 2 small profits threshold. At or above it Class 2 contributions are TREATED AS PAID, so the year counts for the State Pension and nothing is payable.",
+      "value": "GBP 7,105",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+      "quote": "If your profits are £7,105 or more a year Class 2 contributions are treated as having been paid",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-national-insurance",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class2.rate",
+      "item": "Class 2 weekly rate. For 2026 to 2027 it is only payable VOLUNTARILY, by someone with profits below the small profits threshold who wants the year to count.",
+      "value": "GBP 3.65 a week",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+      "quote": "The Class 2 rate for tax year 2026 to 2027 is £3.65 a week.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-national-insurance",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class3.rate",
+      "item": "Class 3 voluntary weekly rate, used to fill a gap in the National Insurance record where Class 2 is not available.",
+      "value": "GBP 18.40 a week",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/voluntary-national-insurance-contributions/rates",
+      "quote": "£3.65 a week for Class 2 £18.40 a week for Class 3",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-national-insurance"
+      ]
+    },
+    {
+      "id": "gb.ni.class4.lower-profits-limit",
+      "item": "Class 4 lower profits limit: self-employed profits above this pay Class 4.",
+      "value": "GBP 12,570",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+      "quote": "If your profits are more than £12,570 a year, you must pay Class 4 contributions.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-non-resident-sa109",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class4.main-rate",
+      "item": "Class 4 main rate on self-employed profits between the lower and upper profits limits.",
+      "value": "6%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+      "quote": "For tax year 2026 to 2027 you’ll pay: 6% on profits over £12,570 up to £50,270",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-student-loan-repayment",
+        "uk-tax-optimization",
+        "uk-transfer-pricing"
+      ]
+    },
+    {
+      "id": "gb.ni.class4.upper-profits-limit",
+      "item": "Class 4 upper profits limit: above it the rate drops to 2%.",
+      "value": "GBP 50,270",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+      "quote": "6% on profits over £12,570 up to £50,270 2% on profits over £50,270",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ni.class4.upper-rate",
+      "item": "Class 4 rate on profits above the upper profits limit.",
+      "value": "2%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-employed-national-insurance-rates",
+      "quote": "6% on profits over £12,570 up to £50,270 2% on profits over £50,270",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-dividends",
+        "uk-national-insurance",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.mtd.itsa.threshold.50000",
+      "item": "Making Tax Digital for Income Tax, first wave. Qualifying income (GROSS self-employment and property income, before expenses) over this figure in the 2024 to 2025 tax year means quarterly updates from 6 April 2026.",
+      "value": "GBP 50,000",
+      "tax_year": "tested on 2024 to 2025 income; start 6 April 2026",
+      "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+      "quote": "£50,000 for the 2024 to 2025 tax year, you should’ve started using Making Tax Digital for Income Tax from 6 April 2026",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "property-management-2",
+        "uk-dividends",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.mtd.itsa.threshold.30000",
+      "item": "Making Tax Digital for Income Tax, second wave: qualifying income over this figure in 2025 to 2026 means joining from 6 April 2027.",
+      "value": "GBP 30,000",
+      "tax_year": "tested on 2025 to 2026 income; start 6 April 2027",
+      "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+      "quote": "£30,000 for the 2025 to 2026 tax year, you will need to use it from 6 April 2027",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-national-insurance",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ]
+    },
+    {
+      "id": "gb.mtd.itsa.threshold.20000",
+      "item": "Making Tax Digital for Income Tax, third wave: qualifying income over this figure in 2026 to 2027, the current tax year, means joining from 6 April 2028. This is the test a 2026 return will be measured against.",
+      "value": "GBP 20,000",
+      "tax_year": "tested on 2026 to 2027 income; start 6 April 2028",
+      "source_url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+      "quote": "£20,000 for the 2026 to 2027 tax year, you will need to use it from 6 April 2028",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "property-management-2",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.vat.standard-rate",
+      "item": "Standard rate of VAT.",
+      "value": "20%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-rates",
+      "quote": "Standard rate 20% Most goods and services",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "gb-vat-eu-goods-sellers",
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-capital-gains-sa108",
+        "uk-corporation-tax",
+        "uk-crypto-tax",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-payroll",
+        "uk-scottish-income-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.reduced-rate",
+      "item": "Reduced rate of VAT, for example domestic fuel and power and children's car seats.",
+      "value": "5%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-rates",
+      "quote": "Reduced rate 5% Some goods and",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-payments-on-account",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.zero-rate",
+      "item": "Zero rate of VAT. Zero-rated is a taxable supply: it counts towards the registration threshold and allows input tax recovery. Exempt does neither.",
+      "value": "0%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-rates",
+      "quote": "Zero rate 0% Zero-rated goods and",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-crypto-tax",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-payroll",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.registration.threshold",
+      "item": "VAT registration threshold on a rolling 12 months of taxable turnover, and also the figure for the forward look over the next 30 days. Unchanged since 1 April 2024.",
+      "value": "GBP 90,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "Total taxable turnover More than £90,000 Register for VAT",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.deregistration.threshold",
+      "item": "VAT deregistration threshold: a registered business may cancel if taxable turnover falls below it. Optional, not automatic.",
+      "value": "GBP 88,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "VAT -registered - taxable turnover Less than £88,000 Cancel VAT registration",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.frs.join-threshold",
+      "item": "Flat Rate Scheme: VAT turnover (excluding VAT) at or below which a business may join.",
+      "value": "GBP 150,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "Flat Rate Scheme £150,000 or less More than £230,000",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.frs.leave-threshold",
+      "item": "Flat Rate Scheme: total business income above which a business must leave. Note it is a different, higher figure than the joining limit.",
+      "value": "GBP 230,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "Flat Rate Scheme £150,000 or less More than £230,000",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.frs.limited-cost.rate",
+      "item": "Flat Rate Scheme rate for a 'limited cost business', whatever its trade sector.",
+      "value": "16.5%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay",
+      "quote": "This means you pay a higher rate of 16.5%.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.frs.limited-cost.goods-test",
+      "item": "Limited cost business test, first limb: goods cost less than this share of turnover.",
+      "value": "2%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay",
+      "quote": "You’re classed as a ‘limited cost business’ if your goods cost less than either: 2% of your turnover",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-dividends",
+        "uk-national-insurance",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.frs.limited-cost.amount-test",
+      "item": "Limited cost business test, second limb: goods cost less than this in a year even if that is more than 2% of turnover. The tests are OR, not AND.",
+      "value": "GBP 1,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay",
+      "quote": "2% of your turnover £1,000 a year (if your costs are more than 2%)",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.frs.first-year-discount",
+      "item": "Flat Rate Scheme: reduction of the sector rate during the first year of VAT registration.",
+      "value": "1%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay",
+      "quote": "You get a 1% discount if you’re in your first year as a VAT -registered business.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-income-tax-sa100",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.frs.capital-asset-limit",
+      "item": "Flat Rate Scheme: input VAT cannot be reclaimed except on capital assets above this amount (VAT-inclusive price of the single purchase).",
+      "value": "GBP 2,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-flat-rate-scheme",
+      "quote": "you cannot reclaim the VAT on your purchases - except for certain capital assets over £2,000",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.vat.frs.rate.accountancy",
+      "item": "Flat Rate Scheme sector rate for accountancy or book-keeping, the rate most relevant to a bookkeeping practice itself. Applied to VAT-INCLUSIVE turnover.",
+      "value": "14.5%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay",
+      "quote": "Type of business VAT flat rate (%) Accountancy or book-keeping 14.5",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ]
+    },
+    {
+      "id": "gb.vat.cash-accounting.join",
+      "item": "Cash Accounting Scheme: estimated VAT taxable turnover at or below which a business may join.",
+      "value": "GBP 1.35 million",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "Cash Accounting Scheme £1.35 million or less More than £1.6 million",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.cash-accounting.leave",
+      "item": "Cash Accounting Scheme: turnover above which a business must leave.",
+      "value": "GBP 1.6 million",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "Cash Accounting Scheme £1.35 million or less More than £1.6 million",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.annual-accounting.join",
+      "item": "Annual Accounting Scheme: estimated VAT taxable turnover at or below which a business may join. Same numbers as cash accounting, different scheme.",
+      "value": "GBP 1.35 million",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "Annual Accounting Scheme £1.35 million or less More than £1.6 million",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.annual-accounting.leave",
+      "item": "Annual Accounting Scheme: turnover above which a business must leave.",
+      "value": "GBP 1.6 million",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "quote": "Annual Accounting Scheme £1.35 million or less More than £1.6 million",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.late-submission.points.annual",
+      "item": "Late submission penalty points threshold for a business filing VAT returns annually.",
+      "value": "2 points",
+      "tax_year": "VAT periods starting on or after 1 January 2023",
+      "source_url": "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late",
+      "quote": "Accounting period Penalty points threshold Annually 2 Quarterly 4 Monthly 5",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.vat.late-submission.points.quarterly",
+      "item": "Late submission penalty points threshold for quarterly VAT returns, the normal case.",
+      "value": "4 points",
+      "tax_year": "VAT periods starting on or after 1 January 2023",
+      "source_url": "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late",
+      "quote": "Annually 2 Quarterly 4 Monthly 5",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.late-submission.points.monthly",
+      "item": "Late submission penalty points threshold for monthly VAT returns.",
+      "value": "5 points",
+      "tax_year": "VAT periods starting on or after 1 January 2023",
+      "source_url": "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late",
+      "quote": "Accounting period Penalty points threshold Annually 2 Quarterly 4 Monthly 5",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.late-submission.penalty",
+      "item": "The fixed penalty charged when the points threshold is reached, and again for EVERY later late return while at the threshold. Charged even on a nil or repayment return.",
+      "value": "GBP 200",
+      "tax_year": "VAT periods starting on or after 1 January 2023",
+      "source_url": "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late",
+      "quote": "When you reach the threshold, you’ll receive a £200 penalty.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.late-payment.first-penalty",
+      "item": "First late payment penalty for VAT: nothing up to day 15; 3% of what is outstanding at day 15 if paid between day 16 and day 30; and if still unpaid at day 31, a further 3% of what was outstanding at day 30 on top.",
+      "value": "3%",
+      "tax_year": "VAT periods starting on or after 1 January 2023",
+      "source_url": "https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late",
+      "quote": "The first late payment penalty is calculated at 3% on the VAT you owe at day 15.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-payments-on-account",
+        "uk-payroll",
+        "uk-transfer-pricing",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.vat.late-payment.second-penalty",
+      "item": "Second late payment penalty for VAT: an annual rate charged daily on the balance outstanding from day 31 until it is paid.",
+      "value": "10% per year",
+      "tax_year": "VAT periods starting on or after 1 January 2023",
+      "source_url": "https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late",
+      "quote": "The second late payment penalty is calculated at a daily rate of 10% per year on the outstanding balance.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.vat.late-payment.interest.margin",
+      "item": "VAT late payment interest, charged from the first day the payment is overdue and separately from the penalties.",
+      "value": "base rate plus 4%",
+      "tax_year": "from 1 January 2023",
+      "source_url": "https://www.gov.uk/guidance/late-payment-interest-if-you-do-not-pay-vat-or-penalties-on-time",
+      "quote": "It’s calculated at the Bank of England base rate plus 4%.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.partial-exemption.deminimis.monthly",
+      "item": "Partial exemption de minimis, first limb: exempt input tax no more than this on average each month (GBP 7,500 a year). BOTH limbs must be met.",
+      "value": "GBP 625 a month",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/guidance/partial-exemption-vat-notice-706",
+      "quote": "You can be treated as fully taxable in any tax period or longer period (section 12) if the total value of your exempt input tax is not more than: £625 per month on average",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.partial-exemption.deminimis.share",
+      "item": "Partial exemption de minimis, second limb: exempt input tax no more than half of total input tax in the period.",
+      "value": "half of total input tax",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/guidance/partial-exemption-vat-notice-706",
+      "quote": "£625 per month on average half of your total input tax in the relevant period",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.vat.cgs.land-buildings",
+      "item": "Capital Goods Scheme: VAT-exclusive value at or above which land, buildings, civil engineering works and refurbishments are capital items, adjusted over 10 intervals. RAISED: VAT Notice 706/2 was updated on 29 July 2026 and now prints GBP 600,000. VAT Notice 700 section 13 still prints the old GBP 250,000.",
+      "value": "GBP 600,000",
+      "tax_year": "as printed on 19 September 2026; the notice gives no start date",
+      "source_url": "https://www.gov.uk/guidance/capital-goods-scheme-notice-7062",
+      "quote": "The CGS applies to capital expenditure on land and buildings with a value of £600,000 or more (exclusive of VAT )",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.cgs.vessels-aircraft",
+      "item": "Capital Goods Scheme: VAT-exclusive value at or above which aircraft, ships, boats and other vessels are capital items. Computers are NO LONGER capital items: the 29 July 2026 update removed them.",
+      "value": "GBP 50,000",
+      "tax_year": "as printed on 19 September 2026",
+      "source_url": "https://www.gov.uk/guidance/capital-goods-scheme-notice-7062",
+      "quote": "The CGS also applies to capital expenditure on aircraft, ships, boats and other vessels with a VAT exclusive value of £50,000 or more",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "property-management-2",
+        "uk-dividends",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.vat.simplified-invoice.limit",
+      "item": "A simplified VAT invoice may be issued where the value of the supply is at or below this amount and the customer agrees.",
+      "value": "GBP 250",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/guidance/vat-guide-notice-700",
+      "quote": "You can issue a simplified invoice if all of the following conditions exist: the value of the supply you are making is £250 or less",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ca.aia",
+      "item": "Annual investment allowance: 100% deduction for qualifying plant and machinery in the year of purchase. Available to sole traders, partnerships and companies. NOT available on cars, on items owned before the business used them, or on gifts. Pro-rated for a period that is not 12 months.",
+      "value": "GBP 1 million",
+      "tax_year": "from 1 January 2019, still current for 2026",
+      "source_url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+      "quote": "The AIA amount is £1 million.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ca.full-expensing",
+      "item": "Full expensing: 100% first-year deduction on new and unused main-rate plant and machinery. COMPANIES ONLY, and never on cars. A sole trader uses the annual investment allowance instead.",
+      "value": "100%",
+      "tax_year": "expenditure from 1 April 2023",
+      "source_url": "https://www.gov.uk/capital-allowances/full-expensing",
+      "quote": "Full expensing lets you deduct 100% of the cost of qualifying plant and machinery from your profits before tax in the year it was bought.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-bookkeeping",
+        "uk-corporation-tax",
+        "uk-income-tax-sa100",
+        "uk-self-employment-sa103",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.ca.fya.special-rate",
+      "item": "50% first-year allowance on new and unused SPECIAL RATE plant and machinery, for example integral features. Companies only; the remaining 50% goes into the special rate pool.",
+      "value": "50%",
+      "tax_year": "expenditure from 1 April 2023",
+      "source_url": "https://www.gov.uk/capital-allowances/full-expensing",
+      "quote": "The 50% first-year allowance lets you deduct 50% of the cost from your profits before tax in the year it was bought.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-bookkeeping",
+        "uk-corporation-tax",
+        "uk-payments-on-account",
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.ca.fya.40-percent",
+      "item": "NEW 40% first-year allowance on main-rate plant and machinery bought on or after 1 January 2026. It must be new and unused and not a car; the remaining 60% is written down in later periods. Unlike full expensing this is open to unincorporated businesses as well.",
+      "value": "40%",
+      "tax_year": "purchases on or after 1 January 2026",
+      "source_url": "https://www.gov.uk/capital-allowances/40-first-year-allowance",
+      "quote": "If you buy plant or machinery that qualifies for 40% first-year allowance, you can deduct 40% of the cost from your profits before tax.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-corporation-tax",
+        "uk-crypto-tax",
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ca.wda.main-rate",
+      "item": "Main pool writing down allowance. CUT from 18%: the new rate applies from 1 April 2026 for corporation tax and 6 April 2026 for income tax, and a period straddling that date needs a hybrid rate.",
+      "value": "14%",
+      "tax_year": "from 1 April 2026 (CT) and 6 April 2026 (IT)",
+      "source_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+      "quote": "main pool with a rate of 14% from April 2026, and 18% before",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-bookkeeping",
+        "uk-capital-gains-sa108",
+        "uk-corporation-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ca.wda.main-rate.previous",
+      "item": "Main pool writing down allowance before the change, still the rate for earlier periods and for the pre-change part of a straddling period.",
+      "value": "18%",
+      "tax_year": "to 31 March 2026 (CT) and 5 April 2026 (IT)",
+      "source_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+      "quote": "The main rate of writing down allowance changed from 18% to 14% on: 1 April 2026 for Corporation Tax 6 April 2026 for Income Tax",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-capital-gains-sa108",
+        "uk-corporation-tax",
+        "uk-crypto-tax",
+        "uk-non-resident-sa109",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ca.wda.special-rate",
+      "item": "Special rate pool writing down allowance: integral features, long-life assets, solar panels, thermal insulation and higher-emission cars.",
+      "value": "6%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+      "quote": "special rate pool with a rate of 6%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-student-loan-repayment",
+        "uk-tax-optimization",
+        "uk-transfer-pricing"
+      ]
+    },
+    {
+      "id": "gb.ca.small-pools",
+      "item": "Small pools allowance: the whole balance of a main or special rate pool may be written off if it is at or below this figure. Not available for single asset pools, and it is either this or writing down allowances, not both.",
+      "value": "GBP 1,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/work-out-capital-allowances/work-out-what-you-can-claim",
+      "quote": "You can claim the full amount if the balance in your main or special rate pool is £1,000 or less before you work out your allowance.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.ca.sba.rate",
+      "item": "Structures and buildings allowance: straight line relief on the cost of constructing, buying or renovating non-residential structures, over 33 and one third years. The rate was 2% before April 2020.",
+      "value": "3%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings",
+      "quote": "You may claim 3% a year from 6 April 2020 on qualifying costs",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-payments-on-account",
+        "uk-payroll",
+        "uk-transfer-pricing",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.expenses.simplified.mileage.car-first",
+      "item": "Simplified expenses for the SELF-EMPLOYED: flat rate per mile for a car or goods vehicle, first 10,000 business miles in the tax year. RAISED from 45p. Once used for a vehicle it must be used for that vehicle for as long as it is in the business, and no capital allowances may be claimed on it.",
+      "value": "55p per mile",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles",
+      "quote": "Vehicle Flat rate per mile for 2026-2027 tax year Flat rate per mile before 6 April 2026 Cars and goods vehicles first 10,000 miles 55p 45p",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.mileage.car-after",
+      "item": "Simplified expenses for the self-employed: flat rate per mile for a car or goods vehicle after the first 10,000 business miles. Unchanged.",
+      "value": "25p per mile",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles",
+      "quote": "Cars and goods vehicles after 10,000 miles 25p 25p",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.mileage.motorcycle",
+      "item": "Simplified expenses for the self-employed: flat rate per mile for a motorcycle, with no 10,000 mile step.",
+      "value": "24p per mile",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles",
+      "quote": "Motorcycles 24p 24p",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.home.25-50",
+      "item": "Simplified expenses, working from home: flat rate per month for 25 to 50 hours of business use. Below 25 hours a month the flat rates cannot be used at all. Telephone and internet are not covered and are claimed on actual cost.",
+      "value": "GBP 10 a month",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home",
+      "quote": "Hours of business use per month Flat rate per month 25 to 50 £10 51 to 100 £18 101 and more £26",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.home.51-100",
+      "item": "Simplified expenses, working from home: flat rate per month for 51 to 100 hours of business use.",
+      "value": "GBP 18 a month",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home",
+      "quote": "25 to 50 £10 51 to 100 £18 101 and more £26",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.home.101-plus",
+      "item": "Simplified expenses, working from home: flat rate per month for 101 hours or more of business use.",
+      "value": "GBP 26 a month",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home",
+      "quote": "51 to 100 £18 101 and more £26",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.premises.1",
+      "item": "Living at your business premises (for example a guest house): the monthly amount DEDUCTED from total premises costs for private use by one person. It is a disallowance, not a claim.",
+      "value": "GBP 350 a month",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises",
+      "quote": "Number of people Flat rate per month 1 £350 2 £500 3+ £650",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.premises.2",
+      "item": "Living at your business premises: monthly private use deduction for two people.",
+      "value": "GBP 500 a month",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises",
+      "quote": "1 £350 2 £500 3+ £650",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.expenses.simplified.premises.3plus",
+      "item": "Living at your business premises: monthly private use deduction for three or more people.",
+      "value": "GBP 650 a month",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises",
+      "quote": "2 £500 3+ £650",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.amap.car.first-10000",
+      "item": "Approved mileage allowance payment for an EMPLOYEE using their own car or van, first 10,000 business miles in the tax year. Same number as the self-employed simplified rate but a different rule: this is the tax-free amount an employer may pay. RAISED from 45p during 2026 to 2027.",
+      "value": "55p per mile",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Car For tax purposes — 55 pence for the first 10,000 business miles in a tax year, then 25 pence for each subsequent mile",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.amap.car.after-10000",
+      "item": "Approved mileage allowance payment for an employee, car or van, after 10,000 business miles. For NATIONAL INSURANCE the rate stays at 55 pence for all business miles, so the tax and NI figures differ above 10,000 miles.",
+      "value": "25p per mile",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "then 25 pence for each subsequent mile For National Insurance purposes — 55 pence for all business miles",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.amap.motorcycle",
+      "item": "Approved mileage allowance payment for an employee using their own motorcycle, all business miles.",
+      "value": "24p per mile",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Motorcycle 24 pence for both tax and National Insurance purposes and for all business miles",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.amap.cycle",
+      "item": "Approved mileage allowance payment for an employee using their own cycle, all business miles.",
+      "value": "20p per mile",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "quote": "Cycle 20 pence for both tax and National Insurance purposes and for all business miles",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ct.main-rate",
+      "item": "Corporation tax main rate, on augmented profits over the upper limit.",
+      "value": "25%",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+      "quote": "Main rate (companies with profits over £250,000) 25% 25%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-formation",
+        "uk-non-resident-sa109",
+        "uk-rental-sa105",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-transfer-pricing"
+      ]
+    },
+    {
+      "id": "gb.ct.small-profits-rate",
+      "item": "Corporation tax small profits rate, on profits at or below the lower limit. Not available to a close investment holding company or a non-UK resident company.",
+      "value": "19%",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+      "quote": "Small profits rate (companies with profits under £50,000) 19%",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-formation",
+        "uk-income-tax-sa100",
+        "uk-payroll",
+        "uk-scottish-income-tax",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.ct.lower-limit",
+      "item": "Marginal relief lower limit. Divided by the number of associated companies plus one, and pro-rated for a period shorter than 12 months.",
+      "value": "GBP 50,000",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+      "quote": "Marginal Relief lower limit £50,000 £50,000",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "property-management-2",
+        "uk-dividends",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.ct.upper-limit",
+      "item": "Marginal relief upper limit. Also divided among associated companies.",
+      "value": "GBP 250,000",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+      "quote": "Marginal Relief upper limit £250,000 £250,000",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "uk-dividends",
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.ct.marginal-relief.fraction",
+      "item": "The standard marginal relief fraction, as HMRC prints it. Do not convert it to a percentage or an effective rate.",
+      "value": "3/200",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+      "quote": "Standard fraction 3/200 3/200",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-corporation-tax"
+      ]
+    },
+    {
+      "id": "gb.ct.instalments.large",
+      "item": "Annual rate of profit above which a company normally pays corporation tax by quarterly instalments ('large'). Divided by the number of associated companies plus one for periods beginning on or after 1 April 2023.",
+      "value": "GBP 1.5 million",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/guidance/corporation-tax-paying-in-instalments",
+      "quote": "If your company’s profits for an accounting period are at an annual rate of more than £1.5 million, you must normally pay your Corporation Tax for that period electronically and in instalments.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ct.instalments.very-large",
+      "item": "Annual rate of profit above which the 'very large' instalment timetable applies instead, for periods beginning on or after 1 April 2019.",
+      "value": "GBP 20 million",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/guidance/corporation-tax-paying-in-instalments",
+      "quote": "if your profits exceed £20 million, you will pay any tax due on non-ring fence profits by instalments using the rules for very large",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ct.instalments.deminimis",
+      "item": "A large company need not pay by instalments if its total corporation tax liability for the period is below this amount.",
+      "value": "GBP 10,000",
+      "tax_year": "financial year 2026 (year beginning 1 April 2026)",
+      "source_url": "https://www.gov.uk/guidance/corporation-tax-paying-in-instalments",
+      "quote": "the amount of its total liability for the accounting period is less than £10,000",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-dividends",
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ]
+    },
+    {
+      "id": "gb.rd.rdec.rate",
+      "item": "Merged scheme R&D expenditure credit rate, for accounting periods beginning on or after 1 April 2024. The credit is taxable trading income, so the cash benefit is lower than the headline rate.",
+      "value": "20%",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "quote": "The rate of R&D expenditure credit under the merged RDEC scheme is 20%.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "gb-vat-eu-goods-sellers",
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-capital-gains-sa108",
+        "uk-corporation-tax",
+        "uk-crypto-tax",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-payroll",
+        "uk-scottish-income-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ]
+    },
+    {
+      "id": "gb.rd.rdec.notional-tax.loss-maker",
+      "item": "Merged scheme step 2 notional tax restriction for a loss-making company: the small profits rate, not the main rate. A company with profits chargeable at the main rate uses the main rate instead.",
+      "value": "19%",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/government/publications/research-development-rd-tax-relief-reforms/merger-of-current-small-or-medium-enterprise-sme-and-research-and-development-expenditure-credit-rdec-schemes",
+      "quote": "The notional tax rate applied to loss-makers in the merged scheme will be the small profits rate of 19%, rather than the 25% main rate set in the current RDEC",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-formation",
+        "uk-income-tax-sa100",
+        "uk-payroll",
+        "uk-scottish-income-tax",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.rd.eris.intensity-condition",
+      "item": "Enhanced R&D intensive support: relevant R&D expenditure must be at least this share of the company's total expenditure, counting connected companies worldwide.",
+      "value": "30%",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "quote": "relevant R&D expenditure is at least 30% of its total expenditure",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "uk-corporation-tax",
+        "uk-non-dom",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.rd.eris.additional-deduction",
+      "item": "Enhanced R&D intensive support: the EXTRA deduction on qualifying costs, on top of the 100% already in the accounts.",
+      "value": "86%",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "quote": "deduct an extra 86% of their qualifying costs in calculating their adjusted trading",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ]
+    },
+    {
+      "id": "gb.rd.eris.total-deduction",
+      "item": "Enhanced R&D intensive support: total deduction, the 100% in the accounts plus the 86% extra. Do not add these two figures yourself in a Guide; HMRC prints the total.",
+      "value": "186%",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "quote": "as well as the 100% deduction which already appears in the accounts (or in the computations as a result of s1308 CTA 2009), to make a total of 186% deduction",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ]
+    },
+    {
+      "id": "gb.rd.eris.payable-credit",
+      "item": "Enhanced R&D intensive support: payable tax credit, worth up to this share of the surrenderable loss. It is not liable to tax. Only a LOSS-MAKING R&D intensive SME can claim it.",
+      "value": "14.5%",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "quote": "claim a payable tax credit, which is not liable to tax and is worth up to 14.5% of the surrenderable loss",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ]
+    },
+    {
+      "id": "gb.rd.paye-cap.fixed",
+      "item": "PAYE and National Insurance cap on an R&D claim, fixed part. The cap is this amount PLUS 300% of the company's relevant PAYE and NIC liabilities, and it applies to both the merged scheme and enhanced R&D intensive support.",
+      "value": "GBP 20,000",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "quote": "The PAYE cap amount is £20,000 plus 300% of the company’s relevant PAYE and National Insurance contributions liabilities for the period",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "property-management-2",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.rd.paye-cap.multiple",
+      "item": "PAYE and National Insurance cap on an R&D claim, variable part: this multiple of the company's relevant PAYE and NIC liabilities for the period.",
+      "value": "300%",
+      "tax_year": "accounting periods beginning on or after 1 April 2024",
+      "source_url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "quote": "£20,000 plus 300% of the company’s relevant PAYE and National Insurance contributions liabilities",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ]
+    },
+    {
+      "id": "gb.nondom.trf.rate.2025-26",
+      "item": "Temporary repatriation facility charge on designated pre-6 April 2025 foreign income and gains, for the 2025 to 2026 tax year. A charge on capital: no foreign tax credit is available against it, and the amount need not be remitted in the same year.",
+      "value": "12%",
+      "tax_year": "2025 to 2026",
+      "source_url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet/hs264-remittance-of-pre-6-april-2025-foreign-income-and-gains-and-the-temporary-repatriation-facility-trf",
+      "quote": "For the 2025 to 2026 and 2026 to 2027 tax years that rate is 12%.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-non-dom"
+      ]
+    },
+    {
+      "id": "gb.nondom.trf.rate.2026-27",
+      "item": "Temporary repatriation facility rate for the 2026 to 2027 tax year, the year these Guides are written for.",
+      "value": "12%",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet/hs264-remittance-of-pre-6-april-2025-foreign-income-and-gains-and-the-temporary-repatriation-facility-trf",
+      "quote": "For the 2025 to 2026 and 2026 to 2027 tax years that rate is 12%.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "real-estate-and-property",
+        "uk-non-dom"
+      ]
+    },
+    {
+      "id": "gb.nondom.trf.rate.2027-28",
+      "item": "Temporary repatriation facility rate for the final year of the facility, 2027 to 2028.",
+      "value": "15%",
+      "tax_year": "2027 to 2028",
+      "source_url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet/hs264-remittance-of-pre-6-april-2025-foreign-income-and-gains-and-the-temporary-repatriation-facility-trf",
+      "quote": "For the 2027 to 2028 tax year that rate is 15%.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "real-estate-and-property",
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-national-insurance",
+        "uk-non-dom",
+        "uk-payroll",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.nondom.owr.cap.amount",
+      "item": "Overseas workday relief financial limit, cash cap. The relief for a qualifying year is the LOWER of this amount and 30% of relevant qualifying employment income. Section 41R ITEPA 2003.",
+      "value": "GBP 300,000",
+      "tax_year": "from 6 April 2025",
+      "source_url": "https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43600",
+      "quote": "30% of the relevant qualifying employment income for the qualifying year arising out of the employment(s) to which the claim relates and which is charged to tax, or £300,000.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ]
+    },
+    {
+      "id": "gb.nondom.owr.cap.percentage",
+      "item": "Overseas workday relief financial limit, percentage cap: 30% of relevant qualifying employment income, taken with the GBP 300,000 cash cap, whichever is lower.",
+      "value": "30%",
+      "tax_year": "from 6 April 2025",
+      "source_url": "https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43600",
+      "quote": "will be the lower of : 30% of the relevant qualifying employment income",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "uk-corporation-tax",
+        "uk-non-dom",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.nondom.rbc.30000.history",
+      "item": "HISTORY ONLY. Remittance basis charge for someone UK resident in at least 7 of the 9 preceding tax years. The remittance basis was replaced by the 4-year foreign income and gains regime on 6 April 2025, so no charge arises for tax year 2026. Quote it only when describing a past year.",
+      "value": "GBP 30,000",
+      "tax_year": "history, tax years up to 2024 to 2025",
+      "source_url": "https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis/rdrm32210",
+      "quote": "The remittance basis charge is an annual charge of either £30,000 for individuals who have been tax resident in at least seven out of the nine preceding tax",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "property-management-2",
+        "uk-national-insurance",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ]
+    },
+    {
+      "id": "gb.nondom.rbc.60000.history",
+      "item": "HISTORY ONLY. Remittance basis charge for someone UK resident in at least 12 of the 14 preceding tax years. Abolished from 6 April 2025.",
+      "value": "GBP 60,000",
+      "tax_year": "history, tax years up to 2024 to 2025",
+      "source_url": "https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis/rdrm32210",
+      "quote": "£60,000 for individuals who have been tax resident in at least twelve out of the fourteen preceding tax years",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-income-tax-sa100",
+        "uk-tax-optimization"
+      ]
+    },
+    {
+      "id": "gb.co.micro.turnover",
+      "item": "Micro-entity size test, turnover limit. Two of the three tests must be met, and from the second year a change only counts if it happens in two consecutive financial years. Raised by SI 2024/1303 with effect from 6 April 2025.",
+      "value": "GBP 1 million",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/384A",
+      "quote": "1. Turnover [ F2 Not more than £1 million ]",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.micro.balance-sheet",
+      "item": "Micro-entity size test, balance sheet total (total assets, before deducting liabilities).",
+      "value": "GBP 500,000",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/384A",
+      "quote": "2. Balance sheet total [ F3 Not more than £500,000 ]",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.micro.employees",
+      "item": "Micro-entity size test, average number of employees in the year.",
+      "value": "10 employees",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/384A",
+      "quote": "3. Number of employees Not more than 10",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.small.turnover",
+      "item": "Small company size test, turnover limit. Section 382 Companies Act 2006, raised from GBP 10.2 million by SI 2024/1303 for financial years beginning on or after 6 April 2025.",
+      "value": "GBP 15 million",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/382",
+      "quote": "1. Turnover [ F3 Not more than £15 million ]",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.small.balance-sheet",
+      "item": "Small company size test, balance sheet total. Raised from GBP 5.1 million.",
+      "value": "GBP 7.5 million",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/382",
+      "quote": "2. Balance sheet total [ F4 Not more than £7.5 million ]",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.small.employees",
+      "item": "Small company size test, average number of employees. Unchanged by the 2024 regulations.",
+      "value": "50 employees",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/382",
+      "quote": "3. Number of employees Not more than 50",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.medium.turnover",
+      "item": "Medium-sized company size test, turnover limit. Section 465 Companies Act 2006, raised from GBP 36 million.",
+      "value": "GBP 54 million",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/465",
+      "quote": "1. Turnover [ F1 Not more than £54 million ]",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.medium.balance-sheet",
+      "item": "Medium-sized company size test, balance sheet total. Raised from GBP 18 million.",
+      "value": "GBP 27 million",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/465",
+      "quote": "2. Balance sheet total [ F2 Not more than £27 million ]",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.medium.employees",
+      "item": "Medium-sized company size test, average number of employees.",
+      "value": "250 employees",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/465",
+      "quote": "3. Number of employees Not more than 250",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.co.audit-exemption",
+      "item": "Audit exemption for a company that qualifies as small: the test is the section 382 small company test, so the same GBP 15 million turnover and GBP 7.5 million balance sheet limits apply. Subject to sections 476, 478 and 479: members holding 10% may demand an audit, and some regulated companies and group companies are excluded.",
+      "value": "the small company thresholds",
+      "tax_year": "financial years beginning on or after 6 April 2025",
+      "source_url": "https://www.legislation.gov.uk/ukpga/2006/46/section/477",
+      "quote": "A company that [ F1 qualifies as a small company in relation to ] a financial year is exempt from the requirements of this Act relating to the audit of accounts for that year.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ch.late-filing.private.1month",
+      "item": "Companies House late filing penalty, private company or LLP, accounts up to 1 month late. Automatic. Doubled if accounts were also filed late for the previous financial year.",
+      "value": "GBP 150",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/government/publications/late-filing-penalties/late-filing-penalties",
+      "quote": "Not more than 1 month £150 £750",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ch.late-filing.private.3month",
+      "item": "Companies House late filing penalty, private company or LLP, more than 1 month but not more than 3 months late.",
+      "value": "GBP 375",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/government/publications/late-filing-penalties/late-filing-penalties",
+      "quote": "More than 1 month but not more than 3 months £375 £1,500",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ch.late-filing.private.6month",
+      "item": "Companies House late filing penalty, private company or LLP, more than 3 months but not more than 6 months late.",
+      "value": "GBP 750",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/government/publications/late-filing-penalties/late-filing-penalties",
+      "quote": "More than 3 months but not more than 6 months £750 £3,000",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ch.late-filing.private.over6month",
+      "item": "Companies House late filing penalty, private company or LLP, more than 6 months late.",
+      "value": "GBP 1,500",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/government/publications/late-filing-penalties/late-filing-penalties",
+      "quote": "More than 6 months £1,500 £7,500",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.ch.fee.incorporation.online",
+      "item": "Companies House fee to incorporate a company online or by software.",
+      "value": "GBP 100",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees",
+      "quote": "Company incorporation and registration Online Software Paper Incorporation £100 £100 £124",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-non-resident-sa109"
+      ]
+    },
+    {
+      "id": "gb.ch.fee.confirmation-statement",
+      "item": "Companies House confirmation statement fee, charged once in each 12 month payment period, filed online.",
+      "value": "GBP 50",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees",
+      "quote": "Confirmation statement fee (with your first statement in the 12 month payment period ) £50 £50 £110",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.records.penalty.max",
+      "item": "Maximum penalty for failing to keep or preserve the records required for a Self Assessment return. Section 12B(5) Taxes Management Act 1970. A maximum, not a fixed charge.",
+      "value": "GBP 3,000",
+      "tax_year": "current on 19 September 2026",
+      "source_url": "https://www.legislation.gov.uk/ukpga/1970/9/section/12B",
+      "quote": "shall be liable to a penalty not exceeding £3,000.",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-non-resident-sa109",
+        "uk-payments-on-account"
+      ]
+    },
+    {
+      "id": "gb.records.retention.self-employed",
+      "item": "How long a sole trader or partner must keep business records: measured from the 31 January filing deadline, not from the end of the accounting period.",
+      "value": "5 years after 31 January",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/self-employed-records/how-long-to-keep-your-records",
+      "quote": "You must keep your records for at least 5 years after the 31 January submission deadline of the relevant tax year.",
+      "read_on": "2026-09-19",
+      "used_by": []
+    },
+    {
+      "id": "gb.cgt.annual-exempt-amount",
+      "item": "Capital gains tax annual exempt amount for an individual. Needed when assembling a return; GBP 1,500 for most trusts.",
+      "value": "GBP 3,000",
+      "tax_year": "2026 to 2027 (6 April 2026 to 5 April 2027)",
+      "source_url": "https://www.gov.uk/capital-gains-tax/allowances",
+      "quote": "The Capital Gains tax-free allowance is: £3,000 £1,500 for trusts",
+      "read_on": "2026-09-19",
+      "used_by": [
+        "uk-non-resident-sa109",
+        "uk-payments-on-account"
+      ]
+    }
+  ]
+}

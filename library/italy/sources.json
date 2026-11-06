@@ -1,0 +1,3106 @@
+{
+  "country": "italy",
+  "code": "IT",
+  "url_count": 408,
+  "sources": [
+    {
+      "url": "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://data.consilium.europa.eu/doc/document/ST-10872-2026-INIT/en/pdf",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/dec_impl/2026/1728/oj/eng",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02004R0883-20190731",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/FatturaElettronica/FatturaElettronica.NET",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/lenny76/FatturaHub",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/nogarasimone/bonusperme",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/vjt/decaf",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://servizi2.inps.it/CircolariZIP/circolare%20numero%2025%20del%2018-02-2010_Allegato%20n%2014.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://servizi2.inps.it/servizi/Bussola/visualizzadoc.aspx?svirtualurl=%2Fcircolari%2Fcircolare+numero+40+del+22-02-2011.htm",
+      "skills": [
+        "it-employer-contributions",
+        "it-irpef-employees",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica/guida-fatturazione-elettronica/i-servizi-dell-agenzia-fe/servizio-conservazione-elettronica",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva",
+      "skills": [
+        "it-dichiarazione-iva-annuale",
+        "italy-vat-return"
+      ],
+      "figures": [
+        "it.iva.quarterly.services",
+        "it.iva.quarterly.other",
+        "it.iva.quarterly.interest",
+        "it.iva.monthly.deadline",
+        "it.iva.q4.deadline",
+        "it.iva.acconto.deadline"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "skills": [
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.acconto.irpef.min",
+        "it.acconto.irpef.total",
+        "it.acconto.irpef.single-threshold",
+        "it.acconto.irpef.first",
+        "it.acconto.irpef.second",
+        "it.acconto.isa-forf.single-threshold",
+        "it.acconto.late-surcharge"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/conseguenze-della-fuoriuscita",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "skills": [
+        "it-regime-forfettario",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.forf.coeff.food-industry",
+        "it.forf.coeff.retail-wholesale",
+        "it.forf.coeff.street-other",
+        "it.forf.coeff.construction-realestate",
+        "it.forf.coeff.trade-intermediaries",
+        "it.forf.coeff.hospitality",
+        "it.forf.coeff.professional",
+        "it.forf.coeff.other"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/2794495/Provv_prot_0360494_del_23112020.pdf/87a55907-b275-a3b5-1bc7-a6e316b70fef",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/297699/Circolare+n+28+del+15+12+2017_Circolare+N.+28_E+DEL+15+DICEMBRE+2017+Acconto+IVA+Split.pdf/cc9c097b-405b-1680-c674-2b65887968ef",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/3394067/Guida_Bollo_sulle_fatture_elettroniche2024.pdf",
+      "skills": [],
+      "figures": [
+        "it.einv.bollo.threshold"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/3930122/Circolare+oneri+documentali+TP+26+11+21+h.+13.20+-+REV.pdf/5f23fab7-0853-68c6-cb5d-868fdfed9490",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5589638/Circolare+criptoattivita+del+27+ottobre+2023.pdf",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5986193/IVA+period_2024.pdf/04990f53-edc9-048a-c953-49592ebea05f",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/6314639/Risposta+n.+174_2024.pdf/f2013dc1-acb4-2459-77e9-bac69cc74e74",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410900/RISOLUZIONE+ATECO+2025/05fdbeda-c727-bf26-ecab-a2e6c1080753",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9602686/IVA_ANNUALE_2026_istr.pdf/2a42fb92-1b76-229a-d0f5-06069d79b514?t=1768504755711",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9741427/allegato+1+-+codici+tributo+F24_770-2026.pdf/d9d83f8b-d8e0-3045-4469-e7bd3301026a?t=1771600455976",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764103/SC_istr_2026.pdf/51e462b7-2907-b093-4028-198631cbabdd?t=1772181405366",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414",
+      "skills": [
+        "it-estimated-tax",
+        "it-irap",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-financial-statements",
+        "italy-formation",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.irap.rate.standard",
+        "it.irap.rate.concessionaires",
+        "it.irap.rate.banks",
+        "it.irap.rate.insurers",
+        "it.irap.regional-variation"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9771542/Parte_Generale_istr_2026.pdf/2ad66f68-6f28-a982-8570-c130cdcdddfa?t=1772195389363",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9962362/SC_istr_2026.pdf/7c2fd2b6-6264-88eb-5c92-9d9ecf81e2c4?t=1779895444801",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026",
+      "skills": [
+        "it-regime-forfettario",
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026",
+      "skills": [
+        "it-impatriati",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-13-05-2026",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026",
+      "skills": [
+        "it-estimated-tax",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf3_istruzioni_2026",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf3_istruzioni_2026_agg-13-05-2026",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari",
+      "skills": [
+        "it-regime-forfettario",
+        "italy-einvoice"
+      ],
+      "figures": [
+        "it.einv.bollo.amount"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/fatturazione-elettronica-e-dati-fatture-transfrontaliere-new",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef",
+      "skills": [
+        "it-cross-border",
+        "it-income-tax",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.irpef.band1.rate",
+        "it.irpef.band2.rate",
+        "it.irpef.band2.rate.2025",
+        "it.irpef.band3.rate",
+        "it.irpef.tax-at-50000"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/lavoratori-impatriati-209-2023/infogen-lavoratori-impatriati-209-2023-cittadini",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/lavoratori-impatriati-che-cos-%C3%A8",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/normativa-e-prassi-lavoratori-impatriati-209-2023-cittadini",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/quando-e-come-presentare-il-730-2026",
+      "skills": [
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "skills": [
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-formation",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.forf.ceiling.entry",
+        "it.forf.ceiling.immediate-exit",
+        "it.forf.staff-costs",
+        "it.forf.employment-cutoff.2026",
+        "it.forf.employment-cutoff.base",
+        "it.forf.rate",
+        "it.forf.startup-rate",
+        "it.forf.non-resident-share"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/modalita-di-accesso-al-regime",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/semplificazioni-e-adempimenti",
+      "skills": [
+        "it-regime-forfettario",
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/comunicazioni/rendicontazione-dati-nazionali-paese-per-paese/swcontrollo-cbcr-dati-nazionali",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/istanze/aa9_11-apertura-variazione-chiusura-pf/scheda-informativa-aa9_11",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24-acconto-iva-f24ivaacc/chi-deve-versare-f24ivaacc",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24-acconto-iva-f24ivaacc/come-si-calcola-f24ivaacc",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24-acconto-iva-f24ivaacc/come-si-versa-f24ivaacc",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24verstassareg/comequando",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24verstassareg/f24-tassa-ccgg",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/aliquote-f24_rit_red_lav_aut",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": [
+        "it.iva.rate.standard",
+        "it.iva.rate.super-reduced",
+        "it.iva.rate.5",
+        "it.iva.rate.10",
+        "it.iva.cumulative-register"
+      ]
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/rendicontazione-dati-nazionali-paese-per-paese/scheda-informativa-rendicontazione-dati-nazionali",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/aa7_10/schedainfo-aa7_10",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/pagamenti/f24-acconto-iva-f24ivaacc/casi-particolari-f24ivaacc",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cassaforense.it/media/4vuhg4fg/vademecum_gennaio-2025.pdf",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cassaforense.it/media/btuftmyc/note-illustrative-mod5-2026.pdf",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cassaforense.it/media/pkxmzmvw/tabella-contributi-minimi.pdf",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnpadc.it/comunicazione/avvisi/contributi-minimi-2026-seconda-rata-scadenza-02/11/2026.html",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnpadc.it/la-cassa-per-me/contribuzione/contributo-soggettivo.html",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnpadc.it/la-cassa-per-me/contribuzione/quanto-quando-e-come-versare-i-contributi.html",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.enpam.it/comefareper/pagare-i-contributi/contributi-di-quota-a/",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.enpam.it/comefareper/pagare-i-contributi/contributi-per-la-libera-professione/aliquota-intera-quota-b/",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticoloDefault/originario?atto.dataPubblicazioneGazzetta=2025-12-13&atto.codiceRedazionale=25A06705&atto.tipoProvvedimento=DECRETO",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.dataPubblicazioneGazzetta=2025-12-13&atto.codiceRedazionale=25A06705&tipoSerie=serie_generale&tipoVigenza=originario",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gazzettaufficiale.it/eli/id/2015/02/03/15A00690/sg",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gazzettaufficiale.it/eli/id/2018/05/23/18A03544/sg",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gazzettaufficiale.it/eli/id/2025/12/13/25A06705/sg",
+      "skills": [
+        "it-ires-corporate-tax",
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inail.it/content/dam/assicurazione/documenti/2025/12/Guida%20autoliquidazione%202025-2026.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inail.it/content/dam/inail-hub-site/documenti/circolari/2025/06/Circolare%20n%2038_24%20giugno%202025.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inarcassa.it/articoli/contributi-gli-iscritti",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=%2FCircolari%2FCircolare+numero+35+del+19-02-2016.htm",
+      "skills": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=/Messaggi/Messaggio+numero+1478+del+10-04-2019.htm",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2012/05/Circolare_10983/Allegati/7928_Messaggio-numero-7751-del-07-05-2012.pdf",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2022/10/Circolare_13970/Allegati/14969_Circolare-numero-117-del-20-10-2022_Allegato-n-1.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/04/Circolare_14535/Allegati/15128_Circolare-numero-53-del-03-04-2024.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/07/Circolare_14640/Allegati/15257_Circolare-numero-84-del-23-07-2024.pdf",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2025/01/Circolare_14812/Allegati/15880_Circolare-numero-32-del-30-01-2025.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2025/02/Circolare_14820/Allegati/15892_Circolare-numero-38-del-07-02-2025.pdf",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15147/Allegati/16539_Circolare-numero-4-del-28-01-2026.pdf",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15151/Allegati/16546_Circolare-numero-6-del-30-01-2026.pdf",
+      "skills": [
+        "it-employer-contributions",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "skills": [
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.inps.gs.rate.professionals",
+        "it.inps.gs.rate.professionals.ivs",
+        "it.inps.gs.rate.professionals.iscro",
+        "it.inps.gs.rate.pensioners",
+        "it.inps.gs.rate.cococo",
+        "it.inps.gs.rate.cococo.ivs",
+        "it.inps.gs.rate.no-discoll",
+        "it.inps.gs.massimale",
+        "it.inps.gs.minimale",
+        "it.inps.gs.full-year-contribution.professionals",
+        "it.inps.gs.payment-deadline.client"
+      ]
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15160/Allegati/16559_Circolare-numero-12-del-05-02-2026.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "skills": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.inps.ivs.rate.artigiani",
+        "it.inps.ivs.rate.commercianti",
+        "it.inps.ivs.commercianti-surcharge",
+        "it.inps.ivs.minimale",
+        "it.inps.ivs.min-contribution.artigiani",
+        "it.inps.ivs.min-contribution.commercianti",
+        "it.inps.ivs.band1.upper",
+        "it.inps.ivs.rate.artigiani.above-band",
+        "it.inps.ivs.rate.commercianti.above-band",
+        "it.inps.ivs.massimale.pre1996",
+        "it.inps.ivs.massimale.post1995",
+        "it.inps.ivs.forfettario-reduction",
+        "it.inps.ivs.over65-reduction",
+        "it.inps.ivs.minimale-instalments"
+      ]
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/05/Circolare_15271/Allegati/16793_Circolare-numero-62-del-27-05-2026.pdf",
+      "skills": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/Libretto_INPS_giovani.pdf",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49847.aliquote-e-contributi-artigiani.html",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49849.aliquote-e-contributi-commercianti.html",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49923.f24-per-artigiani-e-commercianti.html",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html",
+      "skills": [
+        "it-employer-contributions",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50018.tfr-a-carico-del-fondo-di-tesoreria.html",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.05.circolare-numero-55-del-14-05-2026_15258.html",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.05.circolare-numero-56-del-14-05-2026_15259.html",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.circolare-numero-98-del-11-09-2026_15369.html",
+      "skills": [
+        "it-employer-contributions",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/inps-comunica/diritti-e-obblighi-in-materia-di-sicurezza-sociale-nell-unione-e/per-le-imprese/aliquote-contributive.html",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.04.artigiani-e-commercianti-riduzione-contributiva-ai-nuovi-iscritti.html",
+      "skills": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.05.giovani-donne-e-zes-incentivi-per-la-stabilizzazione-professionale.html",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.finanze:decreto:1999-05-31;164~art13!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.finanze:decreto:1999-05-31;164~art13!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633:1~allA!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art1!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art16!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art17!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art17ter!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art19!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art19bis.1!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art19bis.2!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art21!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art30!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art35!vig=2026-06-30",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art38bis!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art74!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art7ter!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art18!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art23!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art25!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art26!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art26quater!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art27!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art27bis!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art31ter!vig=2026-10-29",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art10",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art102!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art102!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art108!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art11!vig=2026-10-22",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art11!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art110!vig=2026-10-29",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art117!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art120!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art15!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art152!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art164!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art164!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art166!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art167!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art16ter!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art19!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art23!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art49!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art51!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54quinquies!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54septies!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art67!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art68!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art73!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art77!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art77!vig=2027-01-02",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art83!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art84!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art86!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art87!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art89!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art95!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art96!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art99!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-03-23;100~art1!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-22",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax",
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art4!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art8!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art8!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-10-14;542~art6!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-10-14;542~art7!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-10-14;542~art7!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2001-12-07;435~art17!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art21!vig=2026-06-30",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art23!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art35!vig=",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art39!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art14!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art16!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig=",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": [
+        "it.books.simplified.services",
+        "it.books.simplified.other"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art22!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=",
+      "skills": [],
+      "figures": [
+        "it.wht.fees.2026",
+        "it.wht.fees.2028.start"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art26quater!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art27bis!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art10!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.irpef.band1.upper",
+        "it.irpef.band2.upper"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=2026-06-30",
+      "skills": [
+        "it-impatriati",
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art12!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art165!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art166!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art16ter!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art2!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art23!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2024-01-01",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2025-06-30",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24bis!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art24ter!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art37!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art5!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54octies!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art66!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art67!vig=2026-06-30",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art73!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art76!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-financial-statements",
+        "italy-formation",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.ires.rate"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art8!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "it-irpef-employees",
+        "italy-crypto-tax",
+        "italy-formation",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art2!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art4!vig=2026-06-30",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art4!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art5!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art5!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1993-08-30;331~art41!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2008-11-29;185~art6",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2009-07-01;78~art10!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2010-05-31;78~art21bis!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-05-13;70~art7!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-05-13;70~art7!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll",
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-12-06;201~art19!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-12-06;201~art19!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-12-06;201~art2",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-01-24;1~art3!vig=",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-06-22;83~art32bis!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "it-irpef-employees",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2017-04-24;50~art4!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2018-10-23;119~art10bis!vig=2026-06-30",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-04-30;34~art5!vig=2023-12-28",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-06-30",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-10-22",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-02-20;21~art3",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-03-27;38~art11!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1996-04-01;239~art2!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-07-09;241~art17!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-07-09;241~art18!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-07-09;241~art18!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-07-09;241~art20!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-09-02;314~art6!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-11-21;461~art6!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art11",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art16!vig=",
+      "skills": [],
+      "figures": [
+        "it.irap.sector-surcharge.2026",
+        "it.irap.banks-surcharge.2026"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art3",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art3!vig=2026-06-30",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art49!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art49!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art50!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art5bis",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art8",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471",
+      "skills": [
+        "it-impatriati",
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax",
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax",
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "it-estimated-tax",
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax",
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-tax-optimization",
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax",
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art14!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art2!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art5!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13",
+      "skills": [
+        "it-irap"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-06-30",
+      "skills": [
+        "it-estimated-tax",
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll",
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-18;47~art11!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-03-10;74~art2!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-03-10;74~art4!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-03-10;74~art5!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-26;151~art34!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-04-08;66~art10!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art4!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art11!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees",
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-02-06;49~art2!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-11-21;231~art49!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-03-14;23~art3!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30",
+      "skills": [
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-18;139~art12",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28",
+      "skills": [
+        "it-impatriati"
+      ],
+      "figures": [
+        "it.imp.old.share",
+        "it.imp.old.south",
+        "it.imp.old.extension",
+        "it.imp.old.extension-3children"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art13!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art23!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;148~art29!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30",
+      "skills": [
+        "it-cross-border",
+        "it-impatriati",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.imp.new.share",
+        "it.imp.new.cap",
+        "it.imp.new.child",
+        "it.imp.new.start",
+        "it.imp.old.cutoff"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-06-14;87~art5!vig=2026-10-29",
+      "skills": [
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art16!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-06;125~art17!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-11-05;173:1~art102!vig=",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-11-05;173:1~art102!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-11-05;173:1~art102!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax",
+        "italy-crypto-tax",
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-03-24;33",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-03-24;33:1~art243!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-03-24;33:1~art243!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-06-12;81~art1!vig=2026-10-22",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-19;10:1~art111!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-19;10:1~art114!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-19;10:1~art116!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-19;10:1~art170!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-19;10:1~art171!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117",
+      "skills": [
+        "it-cross-border",
+        "it-impatriati",
+        "it-ires-corporate-tax",
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.law.new-tuir.start"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax",
+        "italy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-08-07;148~art21",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026;10",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-04-30;153~art12!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-05-29;297~art3!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1985-08-08;443~art2",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-10-27;470~art6!vig=2026-06-30",
+      "skills": [
+        "it-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-02;233~art1",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-02;233~art1!vig=2026-10-24",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-12-29;405~art6!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-08-08;335~art2",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-08-08;335~art2!vig=2026-10-24",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1996-12-23;662~art1",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1996-12-23;662~art1!vig=2026-10-24",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1999-12-23;488~art7!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art116!vig=2026-10-22",
+      "skills": [
+        "it-inps-artigiani-commercianti"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art116!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art116!vig=2026-10-24",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art34!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;311~art1!vig=2026-10-23",
+      "skills": [
+        "it-dichiarazione-iva-annuale"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;183~art14!vig=2026-10-24",
+      "skills": [
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-06-28;92~art2!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1",
+      "skills": [
+        "it-inps-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22",
+      "skills": [
+        "it-inps-artigiani-commercianti",
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "it-inps-contributions",
+        "italy-tax-optimization",
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29",
+      "skills": [
+        "it-estimated-tax",
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2027-01-02",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-12-27;205~art1!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2022-12-29;197~art1!vig=2026-10-24",
+      "skills": [
+        "it-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207",
+      "skills": [
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.forf.employment-cutoff.law",
+        "it.crypto.threshold-removed",
+        "it.crypto.revaluation.rate",
+        "it.crypto.revaluation.deadline"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll",
+        "italy-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1-com436!vig=2026-10-22",
+      "skills": [
+        "it-ires-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "skills": [
+        "it-cross-border",
+        "it-impatriati",
+        "it-inps-contributions",
+        "it-irap",
+        "it-ires-corporate-tax",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.irpef.band2.rate.law",
+        "it.irpef.high-income.threshold",
+        "it.irpef.high-income.cut",
+        "it.crypto.rate.2026",
+        "it.crypto.rate.emt-euro",
+        "it.flat-tax-new-residents.2026",
+        "it.flat-tax-new-residents.family.2026"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1",
+      "skills": [
+        "it-regime-forfettario"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-06-30",
+      "skills": [
+        "it-irpef-employees"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24",
+      "skills": [
+        "it-income-tax",
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-29",
+      "skills": [
+        "italy-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=",
+      "skills": [],
+      "figures": [
+        "it.payroll.tfr.divisor",
+        "it.payroll.tfr.revaluation.fixed",
+        "it.payroll.tfr.revaluation.cpi-share"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-23",
+      "skills": [
+        "it-employer-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=2026-10-24",
+      "skills": [
+        "italy-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2217!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2296!vig=",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2327!vig=",
+      "skills": [],
+      "figures": [
+        "it.formation.spa.capital"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2330!vig=",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2364!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2396novies!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2409bis!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2424!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2424bis!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2425!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2426!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2427!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2429!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig=",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-financial-statements"
+      ],
+      "figures": [
+        "it.fs.abbreviated.assets",
+        "it.fs.abbreviated.revenue",
+        "it.fs.abbreviated.employees"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig=",
+      "skills": [
+        "italy-bookkeeping",
+        "italy-financial-statements"
+      ],
+      "figures": [
+        "it.fs.micro.assets",
+        "it.fs.micro.revenue",
+        "it.fs.micro.employees"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463!vig=",
+      "skills": [
+        "italy-formation",
+        "italy-tax-optimization"
+      ],
+      "figures": [
+        "it.formation.srl.capital"
+      ]
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463bis!vig=",
+      "skills": [
+        "italy-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2477!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2478bis!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2630!vig=",
+      "skills": [
+        "italy-financial-statements"
+      ],
+      "figures": []
+    }
+  ]
+}

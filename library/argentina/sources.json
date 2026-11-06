@@ -1,0 +1,347 @@
+{
+  "country": "argentina",
+  "code": "AR",
+  "url_count": 38,
+  "sources": [
+    {
+      "url": "https://github.com/googlesky/thue-2026",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/thangtd-0050/pit",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25553/texact.htm",
+      "skills": [],
+      "figures": [
+        "ar.form.sa.capital",
+        "ar.form.srl.quota"
+      ]
+    },
+    {
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/texact.htm",
+      "skills": [],
+      "figures": [
+        "ar.form.sas.capital.rule",
+        "ar.form.sas.cash.paidin",
+        "ar.form.sas.inkind"
+      ]
+    },
+    {
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "skills": [],
+      "figures": [
+        "ar.cit.indexation",
+        "ar.cit.dividends.rate",
+        "ar.cit.branch.remittance",
+        "ar.cit.gambling.rate"
+      ]
+    },
+    {
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42701/texact.htm",
+      "skills": [],
+      "figures": [
+        "ar.ref.iva.general",
+        "ar.ref.iva.increased",
+        "ar.ref.iva.reduced.rule"
+      ]
+    },
+    {
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/66533/texact.htm",
+      "skills": [],
+      "figures": [
+        "ar.icd.law.max"
+      ]
+    },
+    {
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/66561/texact.htm",
+      "skills": [],
+      "figures": [
+        "ar.icd.rate.general",
+        "ar.icd.rate.doubled"
+      ]
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/argentina/corporate/taxes-on-corporate-income",
+      "skills": [
+        "ar-corporate-income-tax",
+        "ar-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/argentina/corporate/withholding-taxes",
+      "skills": [
+        "ar-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/argentina/individual/taxes-on-personal-income",
+      "skills": [
+        "ar-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.afip.gob.ar",
+      "skills": [
+        "argentina-iva"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.ref.aut.period",
+        "ar.ref.aut.min.i",
+        "ar.ref.aut.min.ii",
+        "ar.ref.aut.min.iii",
+        "ar.ref.aut.min.iv",
+        "ar.ref.aut.min.v",
+        "ar.ref.aut.pensioner"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/creditosyDebitos/casos-especiales/computo-en-ganancias.asp",
+      "skills": [],
+      "figures": [
+        "ar.icd.credit.ganancias",
+        "ar.icd.credit.pyme",
+        "ar.icd.credit.medianas"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "skills": [],
+      "figures": [
+        "ar.bp.2025.band1.rate",
+        "ar.bp.2025.band1.top",
+        "ar.bp.2025.band2.rate",
+        "ar.bp.2025.band2.top",
+        "ar.bp.2025.band3.rate",
+        "ar.bp.2025.band3.fixed",
+        "ar.bp.2025.compliant.top",
+        "ar.bp.reibp.rate",
+        "ar.bp.reibp.regularised"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/que-es.asp",
+      "skills": [],
+      "figures": [
+        "ar.bp.2025.mni",
+        "ar.bp.2025.home",
+        "ar.bp.2024.mni"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/determinativa/anticipos.asp",
+      "skills": [],
+      "figures": [
+        "ar.pit.anticipos.count"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/determinativa/vencimientos.asp",
+      "skills": [],
+      "figures": [
+        "ar.pit.return.2026.filing",
+        "ar.pit.return.2026.payment"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-liquidacion-anual-y-final-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.pit.2026.annual.band1.top",
+        "ar.pit.2026.annual.band1.rate",
+        "ar.pit.2026.annual.top.threshold",
+        "ar.pit.2026.annual.top.fixed",
+        "ar.pit.2026.annual.top.rate"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-ene-a-jun-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.pit.2026.h1.band1.top",
+        "ar.pit.2026.h1.top.threshold"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-jul-a-dic-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.pit.2026.h2.band1.top",
+        "ar.pit.2026.h2.top.threshold"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-ene-a-jun-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.pit.2026.h1.gni"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-jul-dic-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.pit.2026.h2.gni"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.pit.2026.annual.gni",
+        "ar.pit.2026.annual.spouse",
+        "ar.pit.2026.annual.child",
+        "ar.pit.2026.annual.child.disabled",
+        "ar.pit.2026.annual.special.ap1",
+        "ar.pit.2026.annual.special.new",
+        "ar.pit.2026.annual.special.ap2"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/declaracion-jurada/anticipos.asp",
+      "skills": [],
+      "figures": [
+        "ar.cit.anticipos.count",
+        "ar.cit.anticipos.pct",
+        "ar.cit.anticipos.minimum"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/declaracion-jurada/documentos/Ganancias-vencimientos-PJ.pdf",
+      "skills": [],
+      "figures": [
+        "ar.cit.return.deadline",
+        "ar.cit.return.dec2025"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2025.pdf",
+      "skills": [],
+      "figures": [
+        "ar.cit.2025.band1.top",
+        "ar.cit.2025.band2.top",
+        "ar.cit.2025.band2.fixed",
+        "ar.cit.2025.band3.fixed"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "skills": [],
+      "figures": [
+        "ar.cit.2026.band1.rate",
+        "ar.cit.2026.band1.top",
+        "ar.cit.2026.band2.rate",
+        "ar.cit.2026.band2.top",
+        "ar.cit.2026.band2.fixed",
+        "ar.cit.2026.band3.rate",
+        "ar.cit.2026.band3.fixed"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/escala.asp",
+      "skills": [],
+      "figures": [
+        "ar.cit.2026.period"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/iva/documentos/Libro-IVA-Digital-Tablas-del-Sistema.pdf",
+      "skills": [],
+      "figures": [
+        "ar.ref.iva.reduced"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/monotributo-unificado.asp",
+      "skills": [],
+      "figures": [
+        "ar.iibb.provincial"
+      ]
+    },
+    {
+      "url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "skills": [],
+      "figures": [
+        "ar.ref.mono.period",
+        "ar.ref.mono.cat-a.limit",
+        "ar.ref.mono.cat-b.limit",
+        "ar.ref.mono.cat-c.limit",
+        "ar.ref.mono.cat-d.limit",
+        "ar.ref.mono.cat-e.limit",
+        "ar.ref.mono.cat-f.limit",
+        "ar.ref.mono.cat-g.limit",
+        "ar.ref.mono.cat-h.limit",
+        "ar.ref.mono.cat-i.limit",
+        "ar.ref.mono.cat-j.limit",
+        "ar.ref.mono.cat-k.limit",
+        "ar.ref.mono.cat-a.total",
+        "ar.ref.mono.cat-a.sipa",
+        "ar.ref.mono.cat-a.obrasocial",
+        "ar.ref.mono.cat-k.total.services",
+        "ar.ref.mono.cat-k.total.goods",
+        "ar.ref.mono.cat-k.integrado.services",
+        "ar.ref.mono.unit.price"
+      ]
+    },
+    {
+      "url": "https://www.argentina.gob.ar/justicia/igj/sociedad-por-acciones-simplificada",
+      "skills": [],
+      "figures": [
+        "ar.form.sas.capital.igj"
+      ]
+    },
+    {
+      "url": "https://www.argentina.gob.ar/servicio/constituir-una-sociedad-por-acciones",
+      "skills": [],
+      "figures": [
+        "ar.form.sau.paidin"
+      ]
+    },
+    {
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/304167/20240301",
+      "skills": [],
+      "figures": [
+        "ar.form.sa.capital.decree"
+      ]
+    },
+    {
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/316055/20241025",
+      "skills": [],
+      "figures": [
+        "ar.arca.decree"
+      ]
+    },
+    {
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346775/20260902",
+      "skills": [],
+      "figures": [
+        "ar.form.smvm.2026-09",
+        "ar.form.smvm.2026-10",
+        "ar.form.smvm.2026-11",
+        "ar.form.smvm.2026-12"
+      ]
+    },
+    {
+      "url": "https://www.commenda.io/argentina/corporate-tax-rates",
+      "skills": [
+        "ar-corporate-income-tax"
+      ],
+      "figures": []
+    }
+  ]
+}

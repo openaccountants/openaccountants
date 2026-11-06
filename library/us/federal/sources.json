@@ -1,0 +1,5597 @@
+{
+  "country": "us/federal",
+  "code": "US",
+  "url_count": 757,
+  "sources": [
+    {
+      "url": "https://arsstc.org",
+      "skills": [
+        "no-sales-tax-states"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://budget.digital.mass.gov/summary/fy22/outside-section/section-39-taxation-of-pass-through-entities",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-1803.03",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/publications/94-108.php",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers-marketplace-faq.php",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/sales/remote-sellers.php",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dam.assets.ohio.gov/image/upload/v1735926006/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dam.assets.ohio.gov/image/upload/v1762982566/tax.ohio.gov/forms/ohio_individual/individual/2025/itsd2210-fi.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dam.assets.ohio.gov/image/upload/v1769121383/tax.ohio.gov/forms/pass-through_entities/2025/it4738-instructions.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dam.ldr.la.gov/lawspolicies/RIB%2025-007%20-%20State%20Sales%20Tax%20Rate.pdf",
+      "skills": [
+        "us-sales-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://data.capitol.hawaii.gov/sessions/session2026/bills/HB2329_CD1_.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://delcode.delaware.gov/sessionlaws/ga153/chp231.shtml",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://delcode.delaware.gov/title30/c011/sc01/index.html",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://delcode.delaware.gov/title30/c011/sc03/index.html",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/document/document/2025-4562-depreciation-amortization-including-information-listed-property/download",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/document/document/2025-it-711-partnership-income-tax-booklet/download",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/document/document/2026-500-es-estimated-tax-individuals-and-fiduciaries/download",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/document/document/beginning-or-after-january-1-2025-500-uet-underpayment-estimated-tax-individuals/download",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/hb-149-pass-through-entity-tax-faq",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/media/35301/download",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/media/35306/download",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/penalty-and-interest-rates",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/residency-filing-requirements",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.georgia.gov/taxes/important-tax-updates",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/faq/taxation/business/entity-tax.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/faq/taxation/business/remote-seller-and-marketplace-facilitator.html",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/faq/taxation/business/salt-parity-act.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/forms/MO-1040ES_2026.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/forms/MO-2210_2025.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/forms/MO-PTE%20Instructions_2025.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.mo.gov/resources/official-final-rules/documents/12_CSR_10-2_436_SALT_Parity_Act_Implementation-_Law_9-30-2025.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sc.gov/resources-site/lawandpolicy/Advisory%20Opinions/RR%2021-15.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2013%20-%20Nexus.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/SCTIED-2025-Chapter%203.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sc.gov/sites/dor/files/forms/SC1040ES_2026.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sc.gov/sites/dor/files/forms/SC1040Instr_2025.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sc.gov/sites/dor/files/forms/SC2210_2025.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sd.gov/businesses/taxes/sales-use-tax/2023-legislative-updates/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.sd.gov/media/e0ajtwlg/marketplace-provider-bulletin.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax/frequently-asked-questions-about-washingtons-capital-gains-tax",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://edd.ca.gov/en/payroll_taxes/new_hire_reporting/",
+      "skills": [
+        "us-state-new-hire-reporting-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.hawaii.gov/tax/forms/2025/n11ins.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.hawaii.gov/tax/forms/current/n11ins.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.hawaii.gov/tax/forms/current/n210ins.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.hawaii.gov/tax/legal/hrs/hrs_237.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.hawaii.gov/tax/legal/tir/tir19-03_rev2.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.hawaii.gov/tax/news/announce/ann26-06.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://floridarevenue.com/Forms_library/current/f1120n.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_21A01-03.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://governor.wv.gov/article/governor-patrick-morrisey-proposes-tax-relief-package-upcoming-legislative-session-build",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://incometax.utah.gov/credits/pass-through-entity-credit",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://incometax.utah.gov/filing/extensions-and-prepayments",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://incometax.utah.gov/line-by-line-page2/",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://incometax.utah.gov/paying/tax-rates",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca6/22-6023/22-6023-2023-08-18.html",
+      "skills": [
+        "us-crypto-income-events"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-302/",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.3/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leg.colorado.gov/bills/hb26-1222",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0250/section_0120/0150-0300-0250-0120.html",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0330/section_0270/0150-0300-0330-0270.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17014",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17016",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25122",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=25135",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legis.delaware.gov/BillDetail/129844",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislature.maine.gov/statutes/36/title36sec5228.html",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Ways%20and%20Means/Corporate%20Income%20Tax/W~Michael%20Hackett~Vermont%20Tax%20Link-Up%20Presentation~2-5-2026.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislature.vermont.gov/bill/status/2024/S.45",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://legislature.vermont.gov/statutes/section/32/151/05855",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://marylandtaxes.gov/forms/Tax_Publications/Tax_Alerts/SUT_Tax_Alert_Sept2019.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=10-210.1&enactments=false",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mtrevenue.gov",
+      "skills": [
+        "no-sales-tax-states"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://newhire-reporting.com/KY-Newhire/",
+      "skills": [
+        "us-state-new-hire-reporting-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/businesses/corporate-income-tax/current/586.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/businesses/corporate-income-tax/current/587-PTE.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-Pkt.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/OW-8-ES.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/other/OW-8-P.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/streamlines-sales-tax/WayfairFAQs-06152020.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://ota.ca.gov/wp-content/uploads/sites/54/2019/07/18042575_Kimberly-Clark-Worldwide-Inc_Decision_OTA_051019SDNP.pdf",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://otr.cfo.dc.gov/sites/default/files/dc/sites/otr/publication/attachments/2025_D-2210_021226.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://otr.cfo.dc.gov/sites/default/files/dc/sites/otr/publication/attachments/2025_D30_Book_Final_wLinks_02232026.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://otr.cfo.dc.gov/sites/default/files/dc/sites/otr/publication/attachments/2026_D40ES_Book_wLinks04012026.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/DRS/Publications/OCG/OCG-8.pdf?la=en",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/drs/forms/2025/income/2025-ct-1040-instructions_1225.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/drs/forms/2025/income/ct1040es-flat0126.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/drs/forms/2025/pass-through/ct-pet-instructions_1225.pdf?rev=eebfb4ef8af8449e91daef1e6548c758",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portal.ct.gov/drs/businesses/new-business-resource-center/registering-with-drs",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portal.ct.gov/drs/individuals/resident-income-tax/tax-information",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portal.ct.gov/drs/taxes/pass-through-entity/tax-information",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://realfile.tax.newmexico.gov/2025rpd-41272.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.delaware.gov",
+      "skills": [
+        "no-sales-tax-states"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.delaware.gov/business-tax-forms/gross-receipts-tax/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/media/2725/download?inline=",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/media/4367/download?inline=",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/media/4399/download?inline=",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/media/4407/download?inline=",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/news/2024-12-23/idr-modifies-pass-through-entity-tax-election-deadline",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/taxes/tax-guidance/business-income-tax/pass-through-entity-tax-ptet",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/taxes/tax-guidance/individual-income-tax/estimated-income-tax-payments",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/remote-sellers-marketplace-facilitators",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/740%20Packet%20Instructions.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/740-ES%20Instructions%20%282025%29.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/740-NP%20Instructions%20Packet.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/740-NP-R%20%282025%29.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/Form%20740-PTET%202024.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/Form%20PTET%20Instructions.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/Forms/INSTR-41APTE%28I%29%20%282025%29.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/News/Pages/Kentucky-Sales-and-Use-Tax-Collections-by-Remote-Retailers-U.S.-Supreme-Court-Ruling.aspx",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.ky.gov/News/Pages/Tax-Interest-Rate-Update-for-01-01-26.aspx",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.louisiana.gov/individuals/general-resources/declaration-of-estimated-income-taxes/",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.louisiana.gov/tax-education-and-faqs/faqs/corporation-income-franchise-taxes/does-a-corporation-taxed-as-an-s-corporation-federally-have-to-make-the-pass-through-entity-tax-election/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.louisiana.gov/tax-education-and-faqs/faqs/income-tax-reform/does-louisiana-offer-a-deduction-for-bonus-depreciation/",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.louisiana.gov/tax-education-and-faqs/faqs/income-tax-reform/what-are-the-income-tax-rates-for-s-corps-and-other-pass-through-entities-making-the-pte-election/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.mt.gov/taxes/pass-through-entities/pass-through-entity-tax",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.mt.gov/taxes/penalty-and-interest",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/pass-through-entity-tax-faqs",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.nebraska.gov/about/frequently-asked-questions/remote-seller-and-marketplace-facilitator-faqs",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.nebraska.gov/individuals/bonus-depreciation-and-enhanced-section-179-expense-deduction-nebraska-income-tax",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/business/Cir_En_2025/2026_instruct.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_1040N-ES.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_2210N.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.nebraska.gov/tax-credits/nebraska-pass-through-entity-tax-ptet",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-EST_Instructions_2026-01.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenuefiles.delaware.gov/2025/TIMs/HB_255_TIM.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenuefiles.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenueonline.dor.oregon.gov",
+      "skills": [
+        "no-sales-tax-states"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://rules.sos.ri.gov/regulations/part/280-20-55-1",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://secure.in.gov/dor/business-tax/remote-seller-information/marketplace-facilitators",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://sfa.senate.michigan.gov/Publications/Notes/2023Notes/NotesFal23dzel.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://sfa.senate.michigan.gov/publications/budupdates/statebudgetoverview_mostrecent.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.colorado.gov/income-tax-topics-salt-parity-act",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.colorado.gov/out-of-state-businesses",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.colorado.gov/sites/tax/files/documents/Book104_2025.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.colorado.gov/sites/tax/files/documents/DR0106K-I_2025.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.colorado.gov/sites/tax/files/documents/DR0204_2025.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.colorado.gov/sites/tax/files/documents/DR1705_2026.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.colorado.gov/sites/tax/files/documents/DR_0104EP_2026.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.hawaii.gov/pte/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/individual/il-1040-es.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/individual/il-1040-instr.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/individual/il-2210-instr.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/content/dam/soi/en/web/tax/research/publications/pubs/documents/pub-103.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html",
+      "skills": [
+        "us-sales-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/research/publications/bulletins/fy-2026-15.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/research/publications/bulletins/fy-2027-01.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.illinois.gov/research/publications/pubs/pass-through-information.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.nv.gov/faqs/marketplace-facilitator-seller-faqs/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix",
+        "us-sales-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.ohio.gov/business/commercial-activity-tax",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.ohio.gov/business/pass-through-entity-and-fiduciary-income-tax/it-4738",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.ohio.gov/help-center/faqs/employer-withholding-reciprocity/employer-withholding-reciprocity",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.ohio.gov/help-center/faqs/sales-and-use-tax-substantial-nexus-and-marketplace-facilitator",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.vermont.gov/business-and-corp/sales-and-use-tax/marketplace",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.vermont.gov/business-and-corp/sales-and-use-tax/wayfair/faqs",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.vermont.gov/sites/tax/files/documents/IN-114-Instr-2026.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.vermont.gov/sites/tax/files/documents/IN-152-2025.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.vermont.gov/sites/tax/files/documents/TB44.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.wv.gov/Business/ElectivePassThroughEntityTax/Pages/ElectivePassThroughEntityTax.aspx",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/PIT/2025/it140.PersonalIncomeTaxFormsAndInstructions.2025.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/PTE/2025/ept100.Instructions.2025.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/TSD/tsd442.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/TaxForms/it140esi.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=(title:26%20section:250%20edition:prelim",
+      "skills": [
+        "us-gilti-fdii-beat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=(title:26%20section:59A%20edition:prelim",
+      "skills": [
+        "us-gilti-fdii-beat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=(title:26%20section:951a%20edition:prelim",
+      "skills": [
+        "us-gilti-fdii-beat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section960&num=0&edition=prelim",
+      "skills": [
+        "us-gilti-fdii-beat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.acf.hhs.gov/css/employers/employer-responsibilities/new-hire-reporting",
+      "skills": [
+        "us-state-new-hire-reporting-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2021R%2FPublic%2FACT1019.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/ars/42/01125.htm",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/ars/42/05044.htm",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/ars/43/00581.htm",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/ars/43/01014.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/ars/43/01022.htm",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/ars/43/01077.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/legtext/57leg/1R/summary/S.1318FIN_REVISED.DOCX.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.azleg.gov/legtext/57leg/2R/summary/S.1861-4168ATT_ASENACTED.DOCX.htm",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cdtfa.ca.gov/industry/MPFAct.htm",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cdtfa.ca.gov/industry/wayfair.htm",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cga.ct.gov/current/pub/chap_228z.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cga.ct.gov/current/pub/chap_229.htm",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/remote-sellers/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation",
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR2210_Instructions.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/2026_Final_AR1000ES_2.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dfa.arkansas.gov/wp-content/uploads/AR1100PET_Instructions_2025_1.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dor.ms.gov/business/business-tax-frequently-asked-questions",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dor.ms.gov/individual/individual-income-tax-frequently-asked-questions",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dor.ms.gov/news/notice-marketplace-facilitators",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dor.ms.gov/sites/default/files/business/Updated%20EPTE%20FAQ.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dor.ms.gov/sites/default/files/tax-forms/business/2025%20PTE%20INSTRUCTIONS%2084-100%20-%20Final%20%2001.14.2026.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dor.ms.gov/sites/default/files/tax-forms/individual/80320258%201.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-26?part=301&section=301.6221(b",
+      "skills": [
+        "us-form-1065-partnership"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR0259fc8ecd1fce7/section-1.168%28k%29-2",
+      "skills": [
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR3dff4ee5ffb0ae6/section-1.469-1",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR3dff4ee5ffb0ae6/section-1.469-1T",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": [
+        "us.469.str-7day",
+        "us.469.str-30day"
+      ]
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR3dff4ee5ffb0ae6/section-1.469-5T",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR3dff4ee5ffb0ae6/section-1.469-9",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR4f0b2f9ff1b8a63/section-1.170A-10",
+      "skills": [
+        "us-charitable-giving-strategies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-C/part-31/subpart-E/section-31.3402%28g%29-1",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.1366-2",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.1367-1",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.1367-2",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.1400Z2%28a%29-1",
+      "skills": [
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.1400Z2%28b%29-1",
+      "skills": [
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.1400Z2%28c%29-1",
+      "skills": [
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.162-7",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.469-5T",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.61-2",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.62-2",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.83-3",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.83-4",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-1.951A-2",
+      "skills": [
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-301.7701-2",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-31.3121%28b%29%283%29-1",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-26/section-31.3121%28d%29-1",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-31/section-1010.821",
+      "skills": [
+        "us-fbar-and-fatca-8938"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2022/04/27/2022-08865/estate-and-gift-taxes-limitation-on-the-special-rule-regarding-a-difference-in-the-basic-exclusion",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2024/07/09/2024-14004/gross-proceeds-and-basis-reporting-by-brokers-and-determination-of-amount-realized-and-basis-for",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2024/07/19/2024-14542/required-minimum-distributions",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2024/07/19/2024-14543/required-minimum-distributions",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2025/07/11/2025-12967/gross-proceeds-reporting-by-brokers-that-regularly-provide-services-effectuating-digital-asset-sales",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2025/09/16/2025-17865/catch-up-contributions",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/full_text/text/2023/04/11/2023-07315.txt",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/full_text/text/2025/07/11/2025-12967.txt",
+      "skills": [
+        "us-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.fincen.gov/sites/default/files/shared/Notice-Virtual%20Currency%20Reporting%20on%20the%20FBAR%20123020.pdf",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.fincen.gov/system/files/2025-12/FBAR-FBAR-Filing-Requirement-for-Certain-Financial-Professionals.pdf",
+      "skills": [
+        "us-fbar-and-fatca-8938"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/help.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/index.html",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/file/business/doing-business-in-california.html",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/file/business/types/corporations/s-corporations.html",
+      "skills": [
+        "us-s-corp-election-decision"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/forms/2025/2025-1001-publication.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/forms/2025/2025-1100-publication.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/forms/2025/2025-3885a-instructions.html",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/forms/2025/2025-540-s-instructions.html",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/forms/misc/1050.pdf",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/pay/penalties-and-interest/interest-and-estimate-penalty-rates.html",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ftb.ca.gov/tax-pros/law/litigation-roster.html",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-form-1040-individual-return",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-opportunity-zones",
+        "us-real-estate-professional-and-short-term-rentals",
+        "us-schedule-c-and-se-computation",
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": [
+        "us.obbba.salt.cap-2025",
+        "us.obbba.salt.cap-2026",
+        "us.obbba.salt.indexing",
+        "us.obbba.salt.cap-2030",
+        "us.obbba.salt.phasedown-rate",
+        "us.obbba.salt.threshold-2025",
+        "us.obbba.salt.threshold-2026",
+        "us.obbba.salt.floor",
+        "us.obbba.tips.cap",
+        "us.obbba.tips.phaseout",
+        "us.obbba.tips.phaseout-joint",
+        "us.obbba.overtime.cap",
+        "us.obbba.overtime.cap-joint",
+        "us.obbba.terminate-2028",
+        "us.obbba.senior.amount",
+        "us.obbba.senior.phaseout",
+        "us.obbba.senior.threshold",
+        "us.obbba.carloan.cap",
+        "us.obbba.carloan.phaseout",
+        "us.obbba.bonus.rate",
+        "us.obbba.bonus.start",
+        "us.obbba.bonus.transition-40",
+        "us.obbba.174a.start",
+        "us.obbba.174a.amortize",
+        "us.obbba.174a.small-retro",
+        "us.obbba.qbi.phasein-range",
+        "us.obbba.qbi.phasein-range-joint",
+        "us.obbba.charity.nonitemizer",
+        "us.obbba.charity.nonitemizer-joint",
+        "us.obbba.charity.floor-individual",
+        "us.obbba.charity.cash-60",
+        "us.obbba.charity.corp-floor",
+        "us.obbba.charity.corp-cap",
+        "us.obbba.itemized.2-37",
+        "us.obbba.1099k",
+        "us.obbba.1099k.count",
+        "us.obbba.qsbs.cap",
+        "us.obbba.qsbs.cap-old",
+        "us.obbba.qsbs.3yr",
+        "us.obbba.qsbs.4yr",
+        "us.obbba.qsbs.5yr",
+        "us.obbba.qsbs.assets",
+        "us.obbba.oz.start",
+        "us.obbba.oz.basis-5yr",
+        "us.obbba.oz.basis-rural",
+        "us.obbba.oz.30yr",
+        "us.obbba.oz.decennial"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm",
+      "skills": [],
+      "figures": [
+        "us.121.single",
+        "us.121.joint",
+        "us.121.2yrs"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280A.htm",
+      "skills": [],
+      "figures": [
+        "us.280a.augusta-14",
+        "us.280a.residence-14"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
+      "skills": [],
+      "figures": [
+        "us.469.allowance",
+        "us.469.phaseout-start",
+        "us.469.phaseout-rate",
+        "us.469.mfs",
+        "us.469.rep-hours",
+        "us.469.rep-half"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partIII-sec1031.htm",
+      "skills": [],
+      "figures": [
+        "us.1031.45day",
+        "us.1031.180day"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm",
+      "skills": [],
+      "figures": [
+        "us.se.oasdi",
+        "us.se.medicare",
+        "us.se.addl-medicare",
+        "us.se.addl-medicare.joint",
+        "us.se.addl-medicare.single"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1402.htm",
+      "skills": [],
+      "figures": [
+        "us.se.min-400"
+      ]
+    },
+    {
+      "url": "https://www.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/miscellaneous/il-4562-instr.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.in.gov/dor/files/ib03.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.in.gov/dor/files/ib118.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.in.gov/dor/i-am-a/business-corp/business-faq/remote-seller-faqs/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.in.gov/dor/resources/tax-rates-and-reports/rates-fees-and-penalties/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.in.gov/dor/tax-forms/other-forms/ptet/faq/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/appeals/collection-due-process-cdp-faqs",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/appeals/preparing-a-request-for-appeals",
+      "skills": [
+        "us-tax-return-review-supporting-documents-findings"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z",
+      "skills": [
+        "us-gilti-fdii-beat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/audits-records-request",
+      "skills": [
+        "us-tax-return-review-supporting-documents-findings"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/backup-withholding",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-gift-tax-treaties-international",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/family-help",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/form-8300-and-reporting-cash-payments-of-over-10000",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-the-estate-tax-closing-letter",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records",
+      "skills": [
+        "us-tax-return-review-supporting-documents-findings"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/irs-audits",
+      "skills": [
+        "us-tax-return-review-supporting-documents-findings"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/qualified-small-business-payroll-tax-credit-for-increasing-research-activities",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/questions-and-answers-for-the-additional-medicare-tax",
+      "skills": [],
+      "figures": [
+        "us.se.addl-medicare.mfs"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/revocation-or-denial-of-passport-in-cases-of-certain-unpaid-taxes",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+      "skills": [
+        "us-crypto-income-events"
+      ],
+      "figures": [
+        "us.se.total"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/temporarily-delay-the-collection-process",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/understanding-a-federal-tax-lien",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/voluntary-classification-settlement-program",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/understanding-your-form-1099-k",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/businesses/what-to-do-with-form-1099-k",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/credits-deductions/audit-reconsideration-process-for-correspondence-examination-audits-by-mail",
+      "skills": [
+        "us-tax-return-review-supporting-documents-findings"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/credits-deductions/opportunity-zones-frequently-asked-questions",
+      "skills": [
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/e-file-providers/e-filing-form-7004-application-for-automatic-extension-to-file-certain-business-income-tax-information-and-other-returns",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/amended-return-frequently-asked-questions",
+      "skills": [
+        "us-amended-return-form-1040-including-capital",
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/determine-how-to-answer-the-digital-asset-question",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/digital-assets",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/file-an-amended-return",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/get-an-extension-to-file-your-tax-return",
+      "skills": [
+        "us-education-credits-8863",
+        "us-federal-cost-segregation",
+        "us-federal-income-tax-return-1040",
+        "us-multi-state-residency-and-allocation",
+        "us-section-1031-like-kind-exchange",
+        "us-section-1202-qsbs",
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/individuals/how-to-file",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/individuals/when-to-file",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/private-delivery-services-pds",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/submission-processing-center-street-addresses-for-private-delivery-service-pds",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/time-irs-can-assess-tax",
+      "skills": [
+        "us-tax-return-review-supporting-documents-findings"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/filing/wheres-my-amended-return",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/forms-pubs/about-form-1040",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/forms-pubs/about-form-2848",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/forms-pubs/about-form-7004",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/forms-pubs/about-form-8821",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/forms-pubs/about-form-8863",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/forms-pubs/about-form-8997",
+      "skills": [
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/forms-pubs/extension-of-time-to-file-your-tax-return",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individual-tax-filing",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/check-if-you-need-to-file-a-tax-return",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/equitable-relief",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/get-ready-to-file-your-taxes",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/innocent-spouse-relief",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures",
+      "skills": [
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions",
+      "skills": [
+        "us-crypto-reporting",
+        "us-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-virtual-currency-transactions",
+      "skills": [
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/net-investment-income-tax",
+      "skills": [
+        "us-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/understanding-your-cp2000-series-notice",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/understanding-your-cp3219a-notice",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/understanding-your-cp504-notice",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/individuals/understanding-your-cp59-notice",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1040gi",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-crypto-reporting",
+        "us-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1040sc",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-sole-prop-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1040sca",
+      "skills": [
+        "us-sole-prop-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1040sd",
+      "skills": [
+        "us-crypto-tax",
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1040x",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1041",
+      "skills": [
+        "us-form-1041-trust-and-estate-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1065",
+      "skills": [
+        "us-form-1065-partnership"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1065s23",
+      "skills": [
+        "us-form-1065-partnership"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1099da",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1099gi",
+      "skills": [
+        "us-1099-nec-issuance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1099k",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1099mec",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-1099-nec-issuance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1116",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1116sb",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1116sc",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1120",
+      "skills": [
+        "us-form-1120-c-corp",
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1120ssk",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i2555",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i3115",
+      "skills": [
+        "us-federal-cost-segregation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i3921",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i4562",
+      "skills": [
+        "us-federal-cost-segregation",
+        "us-sole-prop-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i461",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i5471",
+      "skills": [
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i5472",
+      "skills": [
+        "us-form-5472-foreign-owned-us"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i6198",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i6251",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-foreign-tax-credit-1116",
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i6765",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i7004",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the",
+        "us-form-1120-c-corp",
+        "us-form-5472-foreign-owned-us"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i709",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i7203",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i7206",
+      "skills": [
+        "us-self-employed-health-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8283",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8582",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8824",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8863",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8867",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8938",
+      "skills": [
+        "us-fbar-and-fatca-8938"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8949",
+      "skills": [
+        "us-crypto-reporting",
+        "us-crypto-tax",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8960",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8974",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i940",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i941x",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/irm/part20/irm_20-001-001r",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/irm/part20/irm_20-001-009",
+      "skills": [
+        "us-form-5472-foreign-owned-us"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/irm/part3/irm_03-042-004r",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/irm/part5/irm_05-001-019",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-23500-for-2025-ira-limit-remains-7000",
+      "skills": [
+        "us-self-employed-retirement"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "skills": [
+        "us-self-employed-retirement"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/act-now-to-file-pay-or-request-an-extension",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/final-regulations-and-related-irs-guidance-for-reporting-by-brokers-on-sales-and-exchanges-of-digital-assets",
+      "skills": [
+        "us-crypto-reporting",
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/form-1099-k-faqs-common-situations",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/form-1099-k-faqs-general-information",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/form-1099-k-faqs-what-to-do-if-you-receive-a-form-1099-k",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/irs-sets-forth-required-information-for-a-valid-research-credit-claim-for-refund",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/new-and-enhanced-deductions-for-individuals",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/tax-professionals-can-prepare-now-to-assist-their-clients-with-reporting-proceeds-from-certain-digital-asset-transactions",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-the-additional-first-year-depreciation-deduction-amended-as-part-of-the-one-big-beautiful-bill",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/when-and-how-to-amend-a-tax-return",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/newsroom/who-needs-to-file-a-tax-return",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the",
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/accuracy-related-penalty",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/failure-to-file-penalty",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/failure-to-pay-penalty",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/offer-in-compromise",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/online-account-for-individuals",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/payment-plans-installment-agreements",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/penalty-relief-due-to-first-time-abate-or-other-administrative-waiver",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/quarterly-interest-rates",
+      "skills": [
+        "us-irs-collections-and-controversy",
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/payments/simple-payment-plans-for-individuals-and-businesses",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-dft/i8863--dft.pdf",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-dft/i8991--dft.pdf",
+      "skills": [
+        "us-gilti-fdii-beat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/a-24-04.pdf",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-14-21.pdf",
+      "skills": [
+        "us-crypto-income-events",
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-18-97.pdf",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-20-75.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-23-27.pdf",
+      "skills": [
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-23-55.pdf",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-23-80.pdf",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "skills": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": [
+        "us.ret.415c",
+        "us.ret.415b",
+        "us.ret.402g",
+        "us.ret.catchup-50",
+        "us.ret.catchup-60-63",
+        "us.ret.roth-catchup-wage",
+        "us.ret.simple",
+        "us.ret.simple.higher",
+        "us.ret.simple.catchup-50",
+        "us.ret.simple.catchup-60-63",
+        "us.ret.hce",
+        "us.ret.key-employee",
+        "us.ret.comp-cap",
+        "us.ret.sep-min-comp",
+        "us.ira.limit",
+        "us.ira.catchup",
+        "us.roth.phaseout.mfj",
+        "us.roth.phaseout.single"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-26-10.pdf",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans",
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": [
+        "us.mileage.business-h1",
+        "us.mileage.charity",
+        "us.mileage.depreciation"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-26-11.pdf",
+      "skills": [
+        "us-federal-cost-segregation",
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-00-37.pdf",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-02-22.pdf",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-05-14.pdf",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-08-16.pdf",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-11-34.pdf",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-15-13.pdf",
+      "skills": [
+        "us-federal-cost-segregation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-18-58.pdf",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-19-13.pdf",
+      "skills": [
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-19-46.pdf",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-19-48.pdf",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "skills": [
+        "us-education-credits-8863",
+        "us-federal-cost-segregation",
+        "us-form-1040-individual-return",
+        "us-qbi-deduction",
+        "us-s-corp-election-decision"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "skills": [],
+      "figures": [
+        "us.hsa.self",
+        "us.hsa.family",
+        "us.hsa.hdhp-min-deductible",
+        "us.hsa.hdhp-oop-max"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-23.pdf",
+      "skills": [
+        "us-federal-cost-segregation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-28.pdf",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-augusta-rule-home-rental-to-your-business",
+        "us-charitable-giving-strategies",
+        "us-education-credits-8863",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-cost-segregation",
+        "us-federal-income-tax-return-1040",
+        "us-foreign-tax-credit-1116",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-irs-collections-and-controversy",
+        "us-opportunity-zones",
+        "us-real-estate-professional-and-short-term-rentals",
+        "us-section-179-and-bonus-depreciation",
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": [
+        "us.brackets.mfj.10-top",
+        "us.brackets.mfj.12-top",
+        "us.brackets.mfj.22-top",
+        "us.brackets.mfj.24-top",
+        "us.brackets.mfj.32-top",
+        "us.brackets.mfj.37-start",
+        "us.brackets.hoh.10-top",
+        "us.brackets.hoh.12-top",
+        "us.brackets.hoh.22-top",
+        "us.brackets.hoh.24-top",
+        "us.brackets.hoh.32-top",
+        "us.brackets.hoh.37-start",
+        "us.brackets.single.10-top",
+        "us.brackets.single.12-top",
+        "us.brackets.single.22-top",
+        "us.brackets.single.24-top",
+        "us.brackets.single.32-top",
+        "us.brackets.single.37-start",
+        "us.brackets.mfs.37-start",
+        "us.brackets.trust.37-start",
+        "us.brackets.top-rate",
+        "us.kiddie.unearned-amount",
+        "us.cg.zero-top.mfj",
+        "us.cg.15-top.mfj",
+        "us.cg.zero-top.single",
+        "us.cg.15-top.single",
+        "us.cg.zero-top.hoh",
+        "us.cg.15-top.hoh",
+        "us.adoption.max",
+        "us.adoption.phaseout-start",
+        "us.adoption.refundable",
+        "us.ctc.max",
+        "us.ctc.refundable",
+        "us.eitc.max.three",
+        "us.eitc.max.two",
+        "us.eitc.max.one",
+        "us.eitc.max.none",
+        "us.eitc.investment-income",
+        "us.amt.exemption.mfj",
+        "us.amt.exemption.single",
+        "us.amt.exemption.mfs",
+        "us.amt.28-threshold",
+        "us.amt.phaseout.mfj",
+        "us.amt.phaseout.single",
+        "us.std.mfj",
+        "us.std.hoh",
+        "us.std.single",
+        "us.std.aged-blind",
+        "us.std.aged-blind.unmarried",
+        "us.fsa.health",
+        "us.fsa.carryover",
+        "us.fringe.transit-parking",
+        "us.s179.limit",
+        "us.s179.phaseout",
+        "us.s179.suv-cap",
+        "us.qbi.threshold.mfj",
+        "us.qbi.phasein-end.mfj",
+        "us.qbi.threshold.other",
+        "us.qbi.phasein-end.other",
+        "us.cash-method.gross-receipts",
+        "us.ebl.threshold",
+        "us.ebl.threshold.joint",
+        "us.feie",
+        "us.gift.annual-exclusion",
+        "us.estate.basic-exclusion",
+        "us.qbi.min-deduction",
+        "us.qbi.min-qbi",
+        "us.1099.threshold-2026"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rp-26-15.pdf",
+      "skills": [
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": [
+        "us.auto.cap-y1-bonus",
+        "us.auto.cap-y1-nobonus",
+        "us.auto.cap-y2",
+        "us.auto.cap-y3",
+        "us.auto.cap-later"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rr-19-24.pdf",
+      "skills": [
+        "us-crypto-income-events"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rr-23-14.pdf",
+      "skills": [
+        "us-crypto-income-events"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/rr-25-13.pdf",
+      "skills": [
+        "us-form-1120-c-corp"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040.pdf",
+      "skills": [
+        "us-federal-income-tax-return-1040",
+        "us-form-1040-individual-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040s1.pdf",
+      "skills": [
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf",
+      "skills": [
+        "us-form-1040-individual-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040s2.pdf",
+      "skills": [
+        "us-form-1040-individual-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040sa.pdf",
+      "skills": [
+        "us-form-1040-individual-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040sc.pdf",
+      "skills": [
+        "us-sole-prop-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040sse.pdf",
+      "skills": [
+        "us-schedule-c-and-se-computation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040v.pdf",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f2210.pdf",
+      "skills": [
+        "us-quarterly-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f5472.pdf",
+      "skills": [
+        "us-form-5472-foreign-owned-us"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f656b.pdf",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f7004.pdf",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f7206.pdf",
+      "skills": [
+        "us-self-employed-health-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f8995.pdf",
+      "skills": [
+        "us-qbi-deduction"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f8997.pdf",
+      "skills": [
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f940sa.pdf",
+      "skills": [
+        "us-s-corp-election-decision"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf",
+      "skills": [
+        "us-qbi-deduction"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i1040sd.pdf",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i1099mec.pdf",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i2553.pdf",
+      "skills": [
+        "us-s-corp-election-decision"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i4562.pdf",
+      "skills": [
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i461.pdf",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i7004.pdf",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i709.pdf",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i8582.pdf",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i8995.pdf",
+      "skills": [
+        "us-s-corp-election-decision",
+        "us-schedule-c-and-se-computation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p1281.pdf",
+      "skills": [
+        "us-1099-nec-issuance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": [
+        "us.ss.wage-base",
+        "us.ss.rate",
+        "us.medicare.rate",
+        "us.child-employee.fica",
+        "us.child-employee.futa"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p15b.pdf",
+      "skills": [
+        "us-2026-federal-tax-changes"
+      ],
+      "figures": [
+        "us.fringe.dependent-care",
+        "us.fringe.educational",
+        "us.fringe.achievement"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p1660.pdf",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p463.pdf",
+      "skills": [
+        "us-section-179-and-bonus-depreciation",
+        "us-sole-prop-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p5.pdf",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p509.pdf",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p526.pdf",
+      "skills": [
+        "us-charitable-giving-strategies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p527.pdf",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p542.pdf",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p544.pdf",
+      "skills": [
+        "us-charitable-giving-strategies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p561.pdf",
+      "skills": [
+        "us-charitable-giving-strategies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p5653.pdf",
+      "skills": [
+        "us-federal-cost-segregation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p587.pdf",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p590b.pdf",
+      "skills": [
+        "us-charitable-giving-strategies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p594.pdf",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p925.pdf",
+      "skills": [
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": [
+        "us.469.phaseout-end"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p946.pdf",
+      "skills": [
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-prior/f1040es--2025.pdf",
+      "skills": [
+        "us-quarterly-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-prior/f940sa--2025.pdf",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-prior/f941--2025.pdf",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-prior/i706--2025.pdf",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-prior/i941--2025.pdf",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-prior/iw2w3--2025.pdf",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-prior/p15--2025.pdf",
+      "skills": [
+        "us-form-941-940-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-wd/202124008.pdf",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-wd/202302012.pdf",
+      "skills": [
+        "us-crypto-reporting",
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p15",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p15b",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p15t",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p501",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p505",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p514",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p525",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p526",
+      "skills": [
+        "us-crypto-reporting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p527",
+      "skills": [
+        "us-federal-cost-segregation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p54",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p544",
+      "skills": [
+        "us-federal-cost-segregation",
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p550",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p560",
+      "skills": [
+        "us-secure-2-and-retirement-updates",
+        "us-self-employed-retirement"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p590a",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p590b",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p925",
+      "skills": [
+        "us-federal-cost-segregation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p946",
+      "skills": [
+        "us-federal-cost-segregation",
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/publications/p970",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/refunds",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits",
+      "skills": [
+        "us-self-employed-retirement"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits",
+      "skills": [
+        "us-self-employed-retirement"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/tax-professionals/standard-mileage-rates",
+      "skills": [
+        "us-2026-federal-tax-changes",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": [
+        "us.mileage.business-h2"
+      ]
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc301",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc305",
+      "skills": [
+        "us-tax-return-review-supporting-documents-findings"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc308",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc409",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc415",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc427",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc501",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc553",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.irs.gov/taxtopics/tc652",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0101_section/079_032_0101_k/",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0102_section/079_032_0102_k/",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0103_section/079_032_0103_k/",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0107_section/079_032_0107_k/",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0110_section/079_032_0110_k/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0286_section/079_032_0286_k/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0287_section/079_032_0287_k/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0288_section/079_032_0288_k/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_037_0000_article/079_037_0002_section/079_037_0002_k/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.1031%28a%29-3",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.1031%28d%29-2",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.1031%28k%29-1",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.1202-2",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.168%28i%29-6",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.183-2",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.199A-5",
+      "skills": [
+        "us-qbi-deduction"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.401%28k%29-1",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.41-2",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.41-4",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.41-4A",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.41-9",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.6038A-1",
+      "skills": [
+        "us-form-5472-foreign-owned-us"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.83-4",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/cfr/text/26/301.7502-1",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/supremecourt/text/13-485",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/supremecourt/text/17-494",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/supremecourt/text/505/214",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/15/381",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus",
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/15/383",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1",
+      "skills": [
+        "us-federal-cost-segregation",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-nft-tax",
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1001",
+      "skills": [
+        "us-crypto-income-events"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1011",
+      "skills": [
+        "us-crypto-income-events"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1012",
+      "skills": [
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1031",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1045",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1091",
+      "skills": [
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/11",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1202",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/121",
+      "skills": [
+        "us-section-1031-like-kind-exchange"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1211",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1212",
+      "skills": [
+        "us-amended-return-form-1040-including-capital"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1223",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1245",
+      "skills": [
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/127",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1366",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1367",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1400Z-1",
+      "skills": [
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1400Z-2",
+      "skills": [
+        "us-2026-federal-tax-changes",
+        "us-opportunity-zones"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1402",
+      "skills": [
+        "us-crypto-income-events",
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/1411",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/162",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business",
+        "us-crypto-income-events",
+        "us-self-employed-health-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/163",
+      "skills": [
+        "us-2026-federal-tax-changes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/164",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/168",
+      "skills": [
+        "us-federal-cost-segregation",
+        "us-section-179-and-bonus-depreciation",
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/170",
+      "skills": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/174",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/174A",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/179",
+      "skills": [
+        "us-section-179-and-bonus-depreciation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/183",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-crypto-income-events"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/199A",
+      "skills": [
+        "us-s-corp-election-decision",
+        "us-sole-prop-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/250",
+      "skills": [
+        "us-foreign-tax-credit-1116",
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/2503",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/25A",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/25B",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/25D",
+      "skills": [
+        "us-form-1040-individual-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/267",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/280A",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/280C",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/280F",
+      "skills": [
+        "us-section-179-and-bonus-depreciation",
+        "us-sole-prop-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/3121",
+      "skills": [
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/3406",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/401",
+      "skills": [
+        "us-secure-2-and-retirement-updates",
+        "us-self-employed-retirement"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/408",
+      "skills": [
+        "us-charitable-giving-strategies",
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/41",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/414",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/414A",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/422",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/451",
+      "skills": [
+        "us-crypto-income-events"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/461",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/465",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-federal-cost-segregation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "skills": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-federal-cost-segregation",
+        "us-real-estate-professional-and-short-term-rentals"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/4966",
+      "skills": [
+        "us-charitable-giving-strategies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/4974",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/529",
+      "skills": [
+        "us-2026-federal-tax-changes",
+        "us-education-credits-8863",
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/53",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/530",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/55",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/56",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/57",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/59",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6015",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6017",
+      "skills": [
+        "us-federal-income-tax-return-1040"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6038A",
+      "skills": [
+        "us-form-5472-foreign-owned-us"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6072",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/61",
+      "skills": [
+        "us-crypto-income-events",
+        "us-nft-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6213",
+      "skills": [
+        "us-education-credits-8863",
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6226",
+      "skills": [
+        "us-form-1065-partnership"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/63",
+      "skills": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-hiring-your-children-and-accountable-plans"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6330",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6332",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6334",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6404",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/643",
+      "skills": [
+        "us-section-1202-qsbs"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6433",
+      "skills": [
+        "us-secure-2-and-retirement-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6501",
+      "skills": [
+        "us-fbar-and-fatca-8938",
+        "us-form-5471-cfc-information",
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6503",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6511",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6532",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6621",
+      "skills": [
+        "us-form-1120-c-corp"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6622",
+      "skills": [
+        "us-quarterly-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6651",
+      "skills": [
+        "us-form-1120-c-corp",
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6654",
+      "skills": [
+        "us-form-1041-trust-and-estate-income",
+        "us-quarterly-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6662",
+      "skills": [
+        "us-1099-k-and-payment-processors",
+        "us-irs-collections-and-controversy",
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6663",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6664",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6676",
+      "skills": [
+        "us-r-and-d-section-174-and-41"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/6695",
+      "skills": [
+        "us-education-credits-8863"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/67",
+      "skills": [
+        "us-1099-k-and-payment-processors"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/707",
+      "skills": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/7463",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/7502",
+      "skills": [
+        "us-corporate-extension-form-7004-and-the"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/7521",
+      "skills": [
+        "us-irs-collections-and-controversy"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/83",
+      "skills": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/904",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/911",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/951",
+      "skills": [
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/951A",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/954",
+      "skills": [
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/958",
+      "skills": [
+        "us-form-5471-cfc-information"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/960",
+      "skills": [
+        "us-foreign-tax-credit-1116"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/4/114",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legis.iowa.gov/docs/code/2026/422.16C.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legis.iowa.gov/docs/publications/FTNO/1543015.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ma-newhire.com",
+      "skills": [
+        "us-state-new-hire-reporting-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/26_1040es_fillable.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/Bonusdep_guidance_2022.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/IB43RegistrationofSellers02_2022.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/legischange26.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.maine.gov/revenue/tax-return-forms/interest-rates",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/guidance-documents/remote-sellers",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/instructions/2025/nonresident-booklet.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix",
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-changes-to-standard-and-itemized-deductions-and-to-state-and-local-income-tax-rates-from-the-2025-legislative-session.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.marylandtaxes.gov/forms/Tax_Publications/Tax_Alerts/Income-Tax-Alert-Process-Change-Instructions-for-Electing-and-Nonelecting-PTEs.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.marylandtaxes.gov/legal-pubs/tech-bulletins/income-estate-tax/tb-it6.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ncdor.gov/2025-d-401-individual-income-tax-instructions/open",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ncdor.gov/2025-form-d-422-underpayment-estimated-tax-individuals/open",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ncdor.gov/taxes-forms/individual-income-tax/estimated-income-tax",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ncdor.gov/taxes-forms/individual-income-tax/tax-rate-schedules",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ncdor.gov/taxes-forms/information-tax-professionals/tax-bulletins-directives-and-other-important-notices/important-notices-and-frequently-asked-questions-personal-taxes/important-notice-regarding-north-carolinas-recently-enacted-pass-through-entity-tax",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ncdor.gov/taxes-forms/partnership-tax/partnership-tax-forms-and-instructions/2026-nc-40-pte-taxed-partnership-estimated-income-tax",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/other-sales-and-use-tax-resources/sales-and-use-tax-division-directives/sales-and-use-tax-directive-24-1",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nd.gov/tax/remoteseller",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj-newhire.com",
+      "skills": [
+        "us-state-new-hire-reporting-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/baitpte/index.shtml",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/conveniencerulefaq.shtml",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/pdf/current/gitdep.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git6.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git8.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nj.gov/treasury/taxation/remotesellersfaq.shtml",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nynewhire.com",
+      "skills": [
+        "us-state-new-hire-reporting-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oregon.gov/dor/Pages/2026-summary-of-legislation.aspx",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oregon.gov/dor/forms/FormsPubs/form-or-10-instructions_101-031-1_2025.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oregon.gov/dor/forms/FormsPubs/publication-or-estimate_101-026_2026.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oregon.gov/dor/programs/businesses/pages/corporate-activity-tax.aspx",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/agencies/revenue/forms-and-publications/pa-personal-income-tax-guide/gross-compensation",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/agencies/revenue/forms-and-publications/pa-personal-income-tax-guide/net-income-loss-from-the-operation-of-a-business,-profession-or-farm",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-law-policies-bulletins-notices/telework-guidance",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/online-retailers",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_rev-413i.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_overviewrequirements.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/taxlawpoliciesbulletinsnotices/taxbulletins/sut/documents/st_bulletin_2019-01.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.alabama.gov/faq-categories/electing-pass-through-entity-2/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.alabama.gov/faqs/are-all-remote-sellers-required-to-register-in-alabama/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.alabama.gov/individual-corporate/electing-pass-through-entities/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.alabama.gov/sales-use/simplified-sellers-use-tax-ssut/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.alabama.gov/wp-content/uploads/2025/11/OBBBA-Executive-Summary_FinalwAppendixA_10.31.25.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f2210al_inst.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26f40esinstr.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.nh.gov",
+      "skills": [
+        "no-sales-tax-states"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.state.mn.us/sites/default/files/2026-05/hf2438sf2082-enacted-otb.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/ise-passthrough-general.aspx",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-underpayment.aspx",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/Pages/TaxPro/2018/Registration-and-Collection-Dates-for-Remote-Sellers.aspx",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/TaxForms2025/2025-Form1-Inst.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/TaxForms2025/2025-Schedule3-ET-Inst.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/TaxForms2025/2025-Schedule5S-ET-Inst.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/TaxForms2025/2025-ScheduleU-Inst.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revenue.wi.gov/TaxForms2026/2026-Form1-ES-Inst.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revisor.mn.gov/laws/2026/0/Session+Law/Chapter/128/",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revisor.mn.gov/statutes/cite/289A.08",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revisor.mn.gov/statutes/cite/289A.25",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revisor.mn.gov/statutes/cite/290.0131",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revisor.mn.gov/statutes/cite/290.0132",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.revisor.mn.gov/statutes/cite/297a.66",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.scstatehouse.gov/code/t12c006.php",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.sstregister.org",
+      "skills": [
+        "us-sales-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.streamlinedsalestax.org/Shared-Pages/faqs/faqs---about-streamlined",
+      "skills": [
+        "us-sales-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.newmexico.gov/businesses/corporate-income-franchise-tax-overview/pass-through-entity/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.newmexico.gov/businesses/determining-nexus/",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.newmexico.gov/individuals/file-your-taxes-overview/estimated-payments/",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/bus/ct/article9a_deriving_receipts.htm",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/bus/ptet/",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/bus/ptet/city.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/bus/ptet/faq.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/e-services/ptet/calculations-city.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/e-services/ptet/calculations.htm",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/forms/n-notices/n-26-1.htm",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/current_forms/ct/ct3i.pdf",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/current_forms/it/it112ri.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/current_forms/it/it203fi.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/current_forms/it/it203i.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/current_forms/it/it2105_9i.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/memos/income/m06_5i.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/memos/sales/m19-2-1s.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pdf/rulemaking/dec1123/corpreform/text.pdf",
+      "skills": [
+        "us-pl-86-272-income-tax-nexus"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pit/estate/etidx.htm",
+      "skills": [
+        "us-estate-gift-706-709"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pit/file/nonresident-faqs.htm",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pit/file/pit_definitions.htm",
+      "skills": [
+        "us-multi-state-residency-and-allocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/clothing_and_footwear.htm",
+      "skills": [
+        "us-sales-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.virginia.gov/remote-sellers-marketplace-facilitators-economic-nexus",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.virginia.gov/sites/default/files/inline-files/2026-legislative-summary.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.virginia.gov/sites/default/files/inline-files/tb-26-1-date-of-irc-conformity-advanced.pdf",
+      "skills": [
+        "us-state-bonus-depreciation-conformity-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.virginia.gov/sites/default/files/taxforms/corporation-and-pass-through-entity-tax/2025/502ptet-instruction-package-2025.pdf",
+      "skills": [
+        "us-pte-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf",
+      "skills": [
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf",
+      "skills": [
+        "us-multi-state-residency-and-allocation",
+        "us-state-estimated-tax-safe-harbors-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tn.gov/revenue/taxes/sales-and-use-tax/out-of-state-dealers-marketplace-facilitators.html",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf",
+      "skills": [
+        "us-sales-tax-nexus-50-state-matrix"
+      ],
+      "figures": []
+    }
+  ]
+}

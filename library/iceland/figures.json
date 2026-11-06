@@ -1,0 +1,1032 @@
+{
+  "country": "iceland",
+  "code": "IS",
+  "figure_count": 85,
+  "figures": [
+    {
+      "id": "is.it.wht.bracket1.rate",
+      "item": "Combined withholding rate (staðgreiðsla) on monthly wage income in bracket 1 (ISK 0 to 498,122 a month), 2026. It is state income tax PLUS the weighted average municipal tax (útsvar) of 14.94%; the actual útsvar depends on the municipality and is settled at assessment.",
+      "value": "31.49%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Skattþrep 1 : Af tekjum 0 – 498.122 kr. 31,49%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.wht.bracket1.upper.monthly",
+      "item": "Top of withholding bracket 1, per MONTH, per employer chain, 2026. Monthly figure, not yearly.",
+      "value": "ISK 498,122",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/stadgreidsla/skattthrep/2026/",
+      "quote": "Skattþrep 1 Af tekjum 0 – 498.122 kr. 31,49%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.wht.bracket2.rate",
+      "item": "Combined withholding rate on monthly wage income in bracket 2 (ISK 498,123 to 1,398,450 a month), 2026, including 14.94% average útsvar.",
+      "value": "37.99%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Skattþrep 2: Af tekjum 498.123 - 1.398.450 kr. 37,99%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.wht.bracket2.upper.monthly",
+      "item": "Top of withholding bracket 2, per MONTH, 2026.",
+      "value": "ISK 1,398,450",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/stadgreidsla/skattthrep/2026/",
+      "quote": "Skattþrep 2 Af tekjum 498.123 - 1.398.450 kr. 37,99%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.wht.bracket3.rate",
+      "item": "Combined withholding rate on monthly wage income above ISK 1,398,450 a month (bracket 3), 2026, including 14.94% average útsvar.",
+      "value": "46.29%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Skattþrep 3: Af tekjum yfir 1.398.450 kr. 46,29%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.bracket2.threshold.annual",
+      "item": "Annual income threshold where the middle bracket (miðþrep) starts, tax year 2026 (yearly equivalent of the ISK 498,122 monthly limit). Applies to the income tax base (tekjuskattsstofn).",
+      "value": "ISK 5,977,470",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Þrepamörk upp í miðþrep 5.664.062 472.005 5.977.470 498.122",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.bracket3.threshold.annual",
+      "item": "Annual income threshold where the top bracket (háþrep) starts, tax year 2026.",
+      "value": "ISK 16,781,397",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Þrepamörk upp í háþrep 15.901.523 1.325.127 16.781.397 1.398.450",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.utsvar.average",
+      "item": "Weighted average municipal income tax (útsvar) for 2026, the figure built into the withholding rates. Each municipality sets its own rate; this is an average, not a legal rate for any one person. Unchanged from 2025.",
+      "value": "14.94%",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "31,49% (þar af 14,94% útsvar) 31,49% (þar af 14,94% útsvar)",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization",
+        "is-cross-border"
+      ]
+    },
+    {
+      "id": "is.it.state.bracket1.rate.2025",
+      "item": "STATE income tax rate (without útsvar) in the lowest band, as applied at the 2026 assessment of 2025 income. The page prints 2025-income bands; the rates are unchanged for 2026 per the ministry.",
+      "value": "16.55%",
+      "tax_year": "2025 income (assessed 2026); rate unchanged in 2026",
+      "source_url": "https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026",
+      "quote": "16,55% af stofni 0 - 5.664.062 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll"
+      ]
+    },
+    {
+      "id": "is.it.state.range.2025",
+      "item": "State income tax range (lowest to highest band, without útsvar) on the income tax base at the 2026 assessment of 2025 income.",
+      "value": "31.35%",
+      "tax_year": "2025 income (assessed 2026); rate unchanged in 2026",
+      "source_url": "https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026",
+      "quote": "Tekjuskattur er á bilinu 16,55% - 31,35% af tekjuskattsstofni",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll"
+      ]
+    },
+    {
+      "id": "is.it.state.bracket2.rate.2025",
+      "item": "State income tax rate (without útsvar) in the middle band, 2026 assessment of 2025 income.",
+      "value": "23.05%",
+      "tax_year": "2025 income (assessed 2026); rate unchanged in 2026",
+      "source_url": "https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026",
+      "quote": "23,05% af stofni 5.664.063",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll"
+      ]
+    },
+    {
+      "id": "is.pc.monthly",
+      "item": "Personal tax credit (persónuafsláttur) per MONTH, 2026. Residents aged 16 or older; deducted from computed income tax and, if any is left, from útsvar. Not a deduction from income.",
+      "value": "ISK 72,492",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Persónuafsláttur á mánuði 72.492 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.pc.annual",
+      "item": "Personal tax credit (persónuafsláttur) per YEAR, 2026, per person. Unused credit accumulates within the year but does NOT carry to the next year.",
+      "value": "ISK 869,898",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Persónuafsláttur á ári 869.898 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.pc.annual.2025",
+      "item": "Personal tax credit for income year 2025 (used at the 2026 assessment). NOT the 2026 figure.",
+      "value": "ISK 824,288",
+      "tax_year": "2025",
+      "source_url": "https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026",
+      "quote": "persónuafsláttur, sem er 824.288 kr. fyrir tekjuárið 2025",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.pc.indexation",
+      "item": "Yearly uplift of the personal credit and bracket thresholds for 2026: CPI rise of 4.5% plus 1% productivity, total 5.5%.",
+      "value": "5.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Heildarhækkun viðmiðunarfjárhæða verður því 5,5%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "is-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "is.pc.cpi",
+      "item": "CPI rise used for the 2026 indexation of the personal credit and thresholds.",
+      "value": "4.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Hækkun vísitölu neysluverðs liggur nú fyrir og nemur hún 4,5%",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.it.taxfree.base.annual",
+      "item": "Tax-free threshold of the income tax base (skattleysismörk tekjuskattsstofns), yearly, 2026: the base at which tax equals the personal credit.",
+      "value": "ISK 2,762,458",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Skattleysismörk tekjuskattsstofns 2.617.618 218.136 2.762.458",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.it.taxfree.wages.annual",
+      "item": "Tax-free threshold of WAGES, yearly, 2026, after the mandatory 4% employee pension contribution.",
+      "value": "ISK 2,877,560",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Skattleysismörk launa* 2.726.686 227.225 2.877.560",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.taxfree.wages.monthly",
+      "item": "Tax-free threshold of wages, per MONTH, 2026.",
+      "value": "ISK 239,798",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Skattleysismörk launa* 2.726.686 227.225 2.877.560 239.798",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.it.children.rate",
+      "item": "Tax rate on income of children (born 2011 or later) above ISK 300,000 a year, 2026 (4% income tax plus 2% útsvar). Children get no personal credit.",
+      "value": "6%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Skatthlutfall barna (fædd 2011 eða síðar) af tekjum umfram 300.000 kr. á ári 6%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization",
+        "is-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "is.it.children.threshold",
+      "item": "Yearly tax-free amount for children under 16, 2026 (raised from ISK 180,000).",
+      "value": "ISK 300,000",
+      "tax_year": 2026,
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "quote": "Skattleysismörk barna yngri en 16 ára hækka úr 180.000 í 300.000",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.it.children.threshold.2025",
+      "item": "Children tax-free amount for income year 2025 (old figure). NOT 2026.",
+      "value": "ISK 180,000",
+      "tax_year": "2025",
+      "source_url": "https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026",
+      "quote": "2% útsvar af fjárhæð sem er umfram 180.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.pen.mandatory.deduction",
+      "item": "Maximum deduction for the employee's mandatory pension fund contribution: 4% of the contribution base. Same for employees and the self-employed; contributions must be paid regularly.",
+      "value": "4%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/",
+      "quote": "Hámarksfrádráttur er 4% af iðgjaldsstofni",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.pen.supplementary.deduction",
+      "item": "Additional deduction for supplementary private pension (séreignarsparnaður, viðbótartryggingavernd): up to 4% of the contribution base, ON TOP of the mandatory 4%. Regular payments required.",
+      "value": "4%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/",
+      "quote": "Einnig má færa til frádráttar allt að 4% vegna iðgjalda samkvæmt samningi um viðbótartryggingavernd",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.pen.sereign.firsthome.annual",
+      "item": "First home (fyrsta íbúð): maximum tax-free use of séreignarsparnaður per person per 12 months, for up to 10 consecutive years. Buyer must acquire at least 30% and apply within 12 months of the contract; first home or no home in five years.",
+      "value": "ISK 500,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/",
+      "quote": "Árleg hámarksnýting séreignarsparnaðar er kr. 500.000,- fyrir hvern einstakling",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "iceland-vat"
+      ]
+    },
+    {
+      "id": "is.pen.sereign.firsthome.own",
+      "item": "First home scheme: the individual's own contribution counts up to 4% of the contribution base, max ISK 333 thousand a year.",
+      "value": "4%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/",
+      "quote": "Eigið framlag einstaklings getur numið allt að 4% af iðgjaldsstofni",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.pen.sereign.firsthome.employer",
+      "item": "First home scheme: employer contribution counts up to 2%, max ISK 167 thousand a year; it cannot exceed the individual's own.",
+      "value": "2%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/",
+      "quote": "Framlag launagreiðanda getur numið allt að 2% og að hámarki 167 þús. kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.pen.sereign.firsthome.total",
+      "item": "First home scheme: total maximum over the 10-year continuous period.",
+      "value": "ISK 5,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/",
+      "quote": "Samtals nemur hámarksheimild því 5.000.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.pen.sereign.firsthome.ownhome",
+      "item": "First home scheme: minimum ownership share the applicant must acquire.",
+      "value": "30%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/",
+      "quote": "Umsækjandi eignist 30% eignarhlut í eigninni",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "is.cap.rate",
+      "item": "Capital income tax (fjármagnstekjuskattur) on interest, dividends, capital gains and qualifying rent of individuals, 2026. Flat; no útsvar.",
+      "value": "22%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Skattur á fjármagnstekjur er 22%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax",
+        "is-cross-border"
+      ]
+    },
+    {
+      "id": "is.cap.allowance.single",
+      "item": "Yearly capital income allowance per person (interest, and dividends/gains on LISTED shares only), 2026. Not for unlisted ehf. dividends.",
+      "value": "ISK 300,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Frítekjumark er 300.000 kr. samtals á manni, 600.000 kr. fyrir hjón",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.cap.allowance.couple",
+      "item": "Yearly capital income allowance for a married couple (interest and listed-share income).",
+      "value": "ISK 600,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Frítekjumark er 300.000 kr. samtals á manni, 600.000 kr. fyrir hjón",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.cap.rental.taxable",
+      "item": "Share of residential rent (lease under the Rent Act, max two properties) that is taxed as capital income, with no deductions, from 2026 (previously 50% exempt, now 25%).",
+      "value": "75%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "greiddur fjármagnstekjuskattur af 75% af leigutekjunum",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-cross-border"
+      ]
+    },
+    {
+      "id": "is.cap.rental.exempt.old",
+      "item": "Residential rent exemption share BEFORE 2026 (old rule). NOT the 2026 rule.",
+      "value": "50%",
+      "tax_year": "before 2026",
+      "source_url": "https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/",
+      "quote": "Frítekjumarkið var áður 50%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.div.rate",
+      "item": "Dividends from a company received by an individual are capital income taxed at 22% (since 1 January 2018), withheld by the paying company. Unlawful distributions are taxed as wages or gift at ordinary rates.",
+      "value": "22%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/",
+      "quote": "er 22% frá og með 1. janúar 2018",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax",
+        "is-cross-border"
+      ]
+    },
+    {
+      "id": "is.div.allowance",
+      "item": "Yearly allowance covering interest, dividends and listed-share gains together (since income year 2020). Applies to dividends only on LISTED shares per the summary page.",
+      "value": "ISK 300,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/",
+      "quote": "samtals 300.000 kr. frítekjumark á ári",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.cit.ehf",
+      "item": "Corporate income tax for hf. and ehf. (private and public limited companies) and cooperatives, 2026.",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Tekjuskattur í almennu þrepi (hlutafélög, einkahlutafélög o.fl.) 20%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax",
+        "is-cross-border"
+      ]
+    },
+    {
+      "id": "is.cit.partnership",
+      "item": "Income tax for partnerships that are separate taxpayers (sf./slf.), estates and other entities, 2026.",
+      "value": "37.6%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Tekjuskattur í efra þrepi (sameignarfélög, dánarbú, þrotabú o.fl.) 37,6%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax",
+        "is-cross-border"
+      ]
+    },
+    {
+      "id": "is.cit.partnership.dividends",
+      "item": "Partnerships and other upper-rate entities pay this rate on dividends received from companies (2026 assessment of 2025 year).",
+      "value": "22%",
+      "tax_year": "2025 operating year (assessed 2026)",
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026/",
+      "quote": "Tekjuskattur félaga í efra þrepi af fengnum arði frá hlutafélögum 22%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax",
+        "is-cross-border"
+      ]
+    },
+    {
+      "id": "is.cit.asset.expensing",
+      "item": "Maximum immediate expensing of asset groups (hámarks gjaldfærsla á eignasamstæðum), 2026 assessment of 2025 year.",
+      "value": "ISK 600,000",
+      "tax_year": "2025 operating year (assessed 2026)",
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026/",
+      "quote": "Hámarks gjaldfærsla á eignasamstæðum kr. 600.000",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.cit.prepay",
+      "item": "Monthly prepayment rate of last year's company tax until assessment (eight due dates in 2026).",
+      "value": "8.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026/",
+      "quote": "ákveðinn hundraðshluta skatta er greiða bar næstliðið ár (8,5%)",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "is-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "is.re.control.total",
+      "item": "Reiknað endurgjald applies to a person working in a company where he and family/working shareholders together own this share or more, AND he owns at least 5%. Not for listed companies.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "á samtals 50% hlut eða meira í lögaðila",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.control.own",
+      "item": "Own minimum share for the controlling-party rule (with the 50% group test).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "og á sjálfur 5% hlut eða meira í lögaðilanum",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "is.re.below.withholding",
+      "item": "Estimated calculated remuneration below this amount a year falls outside withholding (staðgreiðsla). It is still taxable income.",
+      "value": "ISK 700,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Reiknað endurgjald innan við 700.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.otherjob.floor",
+      "item": "When the person has another paid job, the benchmark may be reduced, but never below 25% of the benchmark (reduction = other pay above 50% of the benchmark).",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "aldrei lægra en 25% af viðmiðunarfjárhæðinni",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization",
+        "is-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "is.re.a1.monthly",
+      "item": "Minimum calculated remuneration 2026, category A(1): specialist managing more than 15 staff. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 2,397,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 2.397.000 kr. Árslaun 28.764.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.a1.annual",
+      "item": "Minimum calculated remuneration 2026, category A(1), yearly.",
+      "value": "ISK 28,764,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 2.397.000 kr. Árslaun 28.764.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.a3.monthly",
+      "item": "Minimum calculated remuneration 2026, category A(3): specialist with 6 to 9 staff; doctors, lawyers, auditors and engineers working alone or with up to two staff. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 2,038,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 2.038.000 kr. Árslaun 24.456.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.a3.annual",
+      "item": "Minimum calculated remuneration 2026, category A(3), yearly.",
+      "value": "ISK 24,456,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 2.038.000 kr. Árslaun 24.456.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.a5.monthly",
+      "item": "Minimum calculated remuneration 2026, category A(5): specialist (not those in A(2)/A(3)/A(4)) alone or with one or two staff. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 1,679,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.679.000 kr. Árslaun 20.148.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.a5.annual",
+      "item": "Minimum calculated remuneration 2026, category A(5), yearly.",
+      "value": "ISK 20,148,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.679.000 kr. Árslaun 20.148.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.a6.monthly",
+      "item": "Minimum calculated remuneration 2026, category A(6): specialist working alone. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 1,440,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.440.000 kr. Árslaun 17.280.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.a6.annual",
+      "item": "Minimum calculated remuneration 2026, category A(6), yearly.",
+      "value": "ISK 17,280,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.440.000 kr. Árslaun 17.280.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.a9.monthly",
+      "item": "Minimum calculated remuneration 2026, category A(9): specialist starting out for the first time, first year only. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 1,199,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.199.000 kr. Árslaun 14.388.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.a9.annual",
+      "item": "Minimum calculated remuneration 2026, category A(9), yearly.",
+      "value": "ISK 14,388,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.199.000 kr. Árslaun 14.388.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.b4.monthly",
+      "item": "Minimum calculated remuneration 2026, category B(4): general business manager with 2 to 5 staff. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 1,173,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.173.000 kr. Árslaun 14.076.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.b4.annual",
+      "item": "Minimum calculated remuneration 2026, category B(4), yearly.",
+      "value": "ISK 14,076,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.173.000 kr. Árslaun 14.076.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.b5.monthly",
+      "item": "Minimum calculated remuneration 2026, category B(5): general business, alone or with fewer than two staff. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 933,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 933.000 kr. Árslaun 11.196.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.b5.annual",
+      "item": "Minimum calculated remuneration 2026, category B(5), yearly.",
+      "value": "ISK 11,196,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 933.000 kr. Árslaun 11.196.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.b9.monthly",
+      "item": "Minimum calculated remuneration 2026, category B(9): general business starting out, first year only. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 681,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 681.000 kr. Árslaun 8.172.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.b9.annual",
+      "item": "Minimum calculated remuneration 2026, category B(9), yearly.",
+      "value": "ISK 8,172,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 681.000 kr. Árslaun 8.172.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.c5.monthly",
+      "item": "Minimum calculated remuneration 2026, category C(5): media/arts/specialised sales/bookkeeping etc. with fewer than two staff. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 1,129,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.129.000 kr. Árslaun 13.548.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.c5.annual",
+      "item": "Minimum calculated remuneration 2026, category C(5), yearly.",
+      "value": "ISK 13,548,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 1.129.000 kr. Árslaun 13.548.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.c6.monthly",
+      "item": "Minimum calculated remuneration 2026, category C(6): category C working alone, no staff or bought-in labour. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 795,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 795.000 kr. Árslaun 9.540.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.c6.annual",
+      "item": "Minimum calculated remuneration 2026, category C(6), yearly.",
+      "value": "ISK 9,540,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 795.000 kr. Árslaun 9.540.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.re.c9.monthly",
+      "item": "Minimum calculated remuneration 2026, category C(9): category C starting out, first year only. Monthly benchmark set by the tax authority; may be lower or higher on evidence.",
+      "value": "ISK 709,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 709.000 kr. Árslaun 8.508.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.re.c9.annual",
+      "item": "Minimum calculated remuneration 2026, category C(9), yearly.",
+      "value": "ISK 8,508,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "quote": "Mánaðarlaun 709.000 kr. Árslaun 8.508.000 kr.",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.tg.total",
+      "item": "Social security tax (tryggingagjald) total, 2026, paid by employers on wages and by the self-employed on their calculated remuneration.",
+      "value": "6.35%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "quote": "Á staðgreiðsluárinu 2026 er tryggingagjaldshlutfallið samtals 6,35 %",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.tg.general",
+      "item": "General tryggingagjald component, 2026.",
+      "value": "4.90%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "quote": "Þar af er tryggingagjaldið sjálft 4,90%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-social-contributions"
+      ]
+    },
+    {
+      "id": "is.tg.unemployment",
+      "item": "Unemployment insurance component (atvinnutryggingagjald), 2026.",
+      "value": "1.35%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "quote": "atvinnutryggingagjald 1,35%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-social-contributions"
+      ]
+    },
+    {
+      "id": "is.tg.wageguarantee",
+      "item": "Wage guarantee fund levy, part of the 6.35%, 2026. Same 0.05% as the market levy.",
+      "value": "0.05%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "quote": "gjald í ábyrgðasjóð launa (0,05%)",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-social-contributions"
+      ]
+    },
+    {
+      "id": "is.tg.seamen.extra",
+      "item": "Extra rate for seamen on fishing vessels, added to the general rate.",
+      "value": "0.65%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "quote": "Sérstök trygging vegna sjómanna á fiskiskipum er 0,65%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll"
+      ]
+    },
+    {
+      "id": "is.tg.selfemployed.minbase",
+      "item": "Minimum yearly base for tryggingagjald on own work of the self-employed, full time.",
+      "value": "ISK 748,224",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "quote": "en þó ekki lægri en 748.224 kr. árstekjur",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-tax-optimization"
+      ]
+    },
+    {
+      "id": "is.tg.annual.filing.limit",
+      "item": "If wages plus own remuneration average under ISK 42,000 a month, returns may start in the month the year total reaches this amount.",
+      "value": "ISK 504,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "quote": "ná 504.000 kr. á árinu",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll"
+      ]
+    },
+    {
+      "id": "is.tg.a1",
+      "item": "Rate for EEA workers with an A1 certificate, 2026 assessment.",
+      "value": "0.293%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026/",
+      "quote": "Tryggingagjald vegna erlendra starfsmanna með A1-vottorð 0,293%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-social-contributions"
+      ]
+    },
+    {
+      "id": "is.vat.standard",
+      "item": "Standard VAT rate, 2026.",
+      "value": "24%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Skattþrep virðisaukaskatts 24% 11%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-vat"
+      ]
+    },
+    {
+      "id": "is.vat.reduced",
+      "item": "Reduced VAT rate (food, accommodation, books, passenger transport outside public transport etc.), 2026.",
+      "value": "11%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skattskylda-og-skattprosentur/",
+      "quote": "skal innheimta 11% virðisaukaskatt",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-vat"
+      ]
+    },
+    {
+      "id": "is.vat.fraction.standard",
+      "item": "VAT fraction of a VAT-inclusive price at 24%.",
+      "value": "19.35%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Afreikniprósenta 19,35% 9,91%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-vat"
+      ]
+    },
+    {
+      "id": "is.vat.fraction.reduced",
+      "item": "VAT fraction of a VAT-inclusive price at 11%.",
+      "value": "9.91%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Afreikniprósenta 19,35% 9,91%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-vat"
+      ]
+    },
+    {
+      "id": "is.vat.threshold",
+      "item": "VAT registration exemption: sales of ISK 2,000,000 or less (excluding VAT) in each 12-month period from start of activity. Register as soon as sales pass it; the invoice that crosses it carries VAT. Voluntary registration allowed below.",
+      "value": "ISK 2,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra/",
+      "quote": "Aðila ber að skrá sig um leið og tekjur án virðisaukaskatts fara yfir kr. 2.000.000",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-vat"
+      ]
+    },
+    {
+      "id": "is.vat.refund.housing",
+      "item": "Refund share of VAT on labour for building, maintaining and renovating residential housing.",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Endurgreiðsluhlutfall virðisaukaskatts vegna vinnu við nýbyggingar, viðhald og endurbætur á íbúðarhúsnæði 35%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "is-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "is.levy.broadcast",
+      "item": "Broadcasting fee (útvarpsgjald) per person at the 2026 assessment, for those with income base above ISK 2,617,618. Also charged on companies.",
+      "value": "ISK 22,200",
+      "tax_year": "2025 income (assessed 2026)",
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Í álagningu 2026 kr. 22.200 2.617.618",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.levy.elderly",
+      "item": "Elderly fund levy (framkvæmdasjóður aldraðra) at the 2026 assessment.",
+      "value": "ISK 14,614",
+      "tax_year": "2025 income (assessed 2026)",
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Í álagningu 2026 kr. 14.614 2.617.618",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "is.inh.rate",
+      "item": "Inheritance tax rate 2026; first ISK 6,789,790 of the estate exempt.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Erfðafjárskattur 2026 er 10%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "iceland-payroll",
+        "iceland-vat"
+      ]
+    },
+    {
+      "id": "is.inh.exempt",
+      "item": "Inheritance tax exempt amount of the estate base, 2026, regardless of heirs.",
+      "value": "ISK 6,789,790",
+      "tax_year": 2026,
+      "source_url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "quote": "Undanþegnar erfðafjárskatti eru fyrstu 6.789.790",
+      "read_on": "2026-10-12",
+      "used_by": []
+    }
+  ]
+}

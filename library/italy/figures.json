@@ -1,0 +1,1675 @@
+{
+  "country": "italy",
+  "code": "IT",
+  "figure_count": 112,
+  "figures": [
+    {
+      "id": "it.irpef.band1.upper",
+      "item": "IRPEF (personal income tax): upper limit of the first bracket of taxable income (reddito imponibile), for 2026 income. Three brackets since 2024; the bracket limits did not change for 2026.",
+      "value": "EUR 28,000",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=",
+      "quote": "a) fino a 28.000 euro, 23 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.irpef.band1.rate",
+      "item": "IRPEF rate on taxable income up to EUR 28,000 (first bracket), 2026 income. TUIR art. 11(1)(a). The statute prints it in words ('23 per cento'); the Agenzia page prints 23%.",
+      "value": "23%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef",
+      "quote": "fino a euro 28.000 23% 23% sull’intero importo",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.irpef.band2.upper",
+      "item": "IRPEF: upper limit of the second bracket (income over EUR 28,000 up to EUR 50,000), 2026 income.",
+      "value": "EUR 50,000",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=",
+      "quote": "b) oltre 28.000 euro e fino a 50.000 euro, ((33 per cento))",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-dichiarazione-iva-annuale",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-payroll",
+        "italy-transfer-pricing"
+      ]
+    },
+    {
+      "id": "it.irpef.band2.rate",
+      "item": "IRPEF rate on the part of taxable income over EUR 28,000 up to EUR 50,000, from 2026 income. Cut from 35% by Legge 199/2025 (Budget Law 2026) art. 1 comma 3. 35% applied to 2024 and 2025 income: do not carry it as current. The Agenzia rate table still shows 35% with a note underneath.",
+      "value": "33%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef",
+      "quote": "la legge di Bilancio 2026 ha ridotto la seconda aliquota dell’Irpef dal 35 al 33 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-income-tax",
+        "it-inps-contributions",
+        "it-irpef-employees",
+        "italy-crypto-tax",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.irpef.band2.rate.law",
+      "item": "The Budget Law 2026 provision that changes the IRPEF middle-bracket rate: Legge 30 dicembre 2025 n. 199, art. 1 comma 3, replacing '35 per cento' with '33 per cento' in TUIR art. 11(1)(b). Law in force 1 January 2026.",
+      "value": "33%",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "quote": "sono sostituite dalle seguenti: &laquo;33 per cento&raquo;",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-income-tax",
+        "it-inps-contributions",
+        "it-irpef-employees",
+        "italy-crypto-tax",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.irpef.band2.rate.2025",
+      "item": "HISTORY: IRPEF middle-bracket rate that applied to 2024 and 2025 income (the Agenzia table 'Dall’anno 2024'). NOT the 2026 rate.",
+      "value": "35%",
+      "tax_year": "2024 and 2025 (history)",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef",
+      "quote": "da 28.001 fino a euro 50.000 35% 6.440 euro + 35%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-income-tax",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.irpef.band3.rate",
+      "item": "IRPEF rate on the part of taxable income over EUR 50,000 (top bracket), 2026 income.",
+      "value": "43%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef",
+      "quote": "43% sul reddito eccedente i 50.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.irpef.tax-at-50000",
+      "item": "Gross IRPEF on the first EUR 50,000 of taxable income under the 2026 rates, as the Agenzia prints it (tax on higher incomes = this + 43% of the excess). The old 2024-2025 figure was EUR 14,140.",
+      "value": "EUR 13,700",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef",
+      "quote": "l’imposta dovuta è pari a 13.700 euro (non più 14.140)",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.irpef.high-income.threshold",
+      "item": "Total income (reddito complessivo) above which certain IRPEF deductions for expenses (oneri, e.g. 19% items) are cut by EUR 440, to neutralise the 2026 rate cut for high earners. TUIR art. 16-ter(5-bis), inserted by Legge 199/2025 art. 1 comma 4.",
+      "value": "EUR 200,000",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "quote": "Per i contribuenti titolari di un reddito complessivo superiore a 200.000 euro è diminuito di un importo pari a 440 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees"
+      ]
+    },
+    {
+      "id": "it.irpef.high-income.cut",
+      "item": "Amount by which the tax deductions for oneri are reduced for taxpayers with total income over EUR 200,000 (TUIR art. 16-ter(5-bis)), from 2026.",
+      "value": "EUR 440",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "quote": "diminuito di un importo pari a 440 euro l'ammontare della detrazione",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-income-tax",
+        "it-irpef-employees"
+      ]
+    },
+    {
+      "id": "it.forf.ceiling.entry",
+      "item": "Forfettario (flat-rate regime) entry condition: revenue or fees in the PREVIOUS year, annualised, not above this amount (sum across all ATECO codes). Crossing it ends the regime from the FOLLOWING year. Not the same as the EUR 100,000 immediate exit.",
+      "value": "EUR 85,000",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "conseguito ricavi o percepito compensi, ragguagliati ad anno, non superiori a 85.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-formation",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.forf.ceiling.immediate-exit",
+      "item": "Forfettario: revenue or fees above this amount during the year end the regime in that SAME year, and VAT is due from the operations that cause the overshoot.",
+      "value": "EUR 100,000",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "se però si va oltre i 100.000 euro di ricavi/compensi, non è più applicabile dallo stesso anno",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-impatriati",
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.forf.staff-costs",
+      "item": "Forfettario entry condition: previous-year gross spending on employees, occasional workers and collaborators not above this amount.",
+      "value": "EUR 20,000",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "sostenuto spese per un importo complessivo non superiore a 20.000 euro lordi",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-income-tax",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.forf.employment-cutoff.2026",
+      "item": "Forfettario exclusion: employment (or similar) income in the previous year above this amount excludes the taxpayer, unless that employment ended in that year. Raised from EUR 30,000 for 2025 and 2026 only (Legge 207/2024 art. 1 comma 12, extended to 2026 by Legge 199/2025 art. 1 comma 27).",
+      "value": "EUR 35,000",
+      "tax_year": "2025 and 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "per gli anni 2025 e 2026 il limite è elevato a 35.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.forf.employment-cutoff.base",
+      "item": "Forfettario employment-income exclusion limit in the statute (L. 190/2014 art. 1 comma 57 lett. d-ter) outside the 2025-2026 temporary increase. Not the 2026 figure.",
+      "value": "EUR 30,000",
+      "tax_year": "standing rule; replaced by EUR 35,000 for 2025 and 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "redditi di lavoro dipendente e/o assimilati di importo superiore a 30.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization",
+        "italy-transfer-pricing"
+      ]
+    },
+    {
+      "id": "it.forf.employment-cutoff.law",
+      "item": "Statute raising the forfettario employment-income limit to EUR 35,000: Legge 207/2024 art. 1 comma 12 (text as amended to cover 2025 and 2026).",
+      "value": "EUR 35,000",
+      "tax_year": "2025 and 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207",
+      "quote": "della legge 23 dicembre 2014, n. 190 , è elevato a 35.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.forf.rate",
+      "item": "Forfettario: single substitute tax on taxable income (replaces IRPEF and the regional and municipal surcharges).",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "nella misura del 15% , sostitutiva di quelle ordinariamente previste",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-income-tax",
+        "it-ires-corporate-tax",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-formation",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.forf.startup-rate",
+      "item": "Forfettario start-up rate: substitute tax reduced for the first five years of a new activity, if the conditions are met (no business/professional activity in the previous three years, etc.).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "L’imposta sostitutiva è ridotta al 5% per i primi cinque anni di attività",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-impatriati",
+        "it-income-tax",
+        "it-ires-corporate-tax",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-einvoice",
+        "italy-formation",
+        "italy-payroll",
+        "italy-tax-optimization",
+        "italy-transfer-pricing",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.forf.non-resident-share",
+      "item": "Forfettario: an EU/EEA resident who is not Italian resident may use the regime only if at least this share of total income is produced in Italy.",
+      "value": "75%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+      "quote": "producono in Italia almeno il 75% del reddito complessivamente realizzato",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-employer-contributions",
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.rate.artigiani",
+      "item": "INPS artigiani (craftsmen): IVS contribution rate for owners and family helpers, on business income from the minimum up to EUR 56,224, for 2026 (INPS Circolare n. 14 of 9 February 2026).",
+      "value": "24%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "Titolari e coadiuvanti/ coadiutori 24% 24,48%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-financial-statements",
+        "italy-formation",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.rate.commercianti",
+      "item": "INPS commercianti (traders): contribution rate for owners and family helpers up to EUR 56,224, 2026: the 24% IVS rate plus the 0.48% surcharge that funds the closure indemnity (INPS Circolare 14/2026).",
+      "value": "24.48%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "Titolari e coadiuvanti/ coadiutori 24% 24,48%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.commercianti-surcharge",
+      "item": "Additional contribution due only by commercianti (traders), for the closure indemnity fund, 2026. Not due by artigiani.",
+      "value": "0.48%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "un’aliquota contributiva aggiuntiva nella misura dello 0,48%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.minimale",
+      "item": "INPS artigiani and commercianti: minimum annual income (minimale) on which IVS contributions are due in 2026, per person working in the business. Same figure is the gestione separata minimale for crediting a full year: do not confuse the two uses.",
+      "value": "EUR 18,808",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "è pari a 18.808,00 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.min-contribution.artigiani",
+      "item": "INPS artigiani: fixed annual contribution on the minimale for 2026, owners and helpers, including EUR 7.44 maternity (paid in four instalments).",
+      "value": "EUR 4,521.36",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "Titolari e € 4.521,36 (4.513,92",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.min-contribution.commercianti",
+      "item": "INPS commercianti: fixed annual contribution on the minimale for 2026, owners and helpers, including the closure-indemnity surcharge and EUR 7.44 maternity.",
+      "value": "EUR 4,611.64",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "€ 4611,64 (4.604,20 IVS e finanziamento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.band1.upper",
+      "item": "INPS artigiani and commercianti: income above which the rate rises by one point (24% to 25%, 24.48% to 25.48%), 2026. Per person.",
+      "value": "EUR 56,224",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "fino al limite della prima fascia di retribuzione annua pensionabile pari, per il corrente anno, all’importo di 56.224,00 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-employer-contributions",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.rate.artigiani.above-band",
+      "item": "INPS artigiani: rate on business income above EUR 56,224 in 2026.",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "superiore a € 56.224,00 25% 25,48%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.rate.commercianti.above-band",
+      "item": "INPS commercianti: rate on business income above EUR 56,224 in 2026.",
+      "value": "25.48%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "superiore a € 56.224,00 25% 25,48%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.massimale.pre1996",
+      "item": "INPS artigiani and commercianti: maximum annual income on which IVS is due in 2026 for people with contributions before 1 January 1996. Per person.",
+      "value": "EUR 93,707",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "il massimale di reddito annuo entro il quale sono dovuti i contributi IVS è pari a 93.707,00 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.massimale.post1995",
+      "item": "INPS artigiani and commercianti: maximum annual income for people with no contributions before 1 January 1996 (enrolled from 1996), 2026. Not split by month. Same figure as the gestione separata massimale.",
+      "value": "EUR 122,295",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "il massimale annuo è pari, per il 2026, a 122.295,00 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-employer-contributions",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.forfettario-reduction",
+      "item": "Optional INPS contribution reduction for forfettario artigiani/commercianti who apply (L. 190/2014 art. 1 commi 77-84), 2026. New 2025 starters had to apply by 28 February 2026.",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "consiste nella riduzione contributiva del 35%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-income-tax",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.over65-reduction",
+      "item": "INPS artigiani/commercianti over 65 who already draw an INPS pension: contributions reduced by this share, still in force for 2026.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "relative alla riduzione del 50% dei contributi dovuti dagli artigiani",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-income-tax",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-ires-corporate-tax",
+        "italy-payroll",
+        "italy-transfer-pricing"
+      ]
+    },
+    {
+      "id": "it.inps.ivs.minimale-instalments",
+      "item": "INPS artigiani/commercianti 2026: due dates of the four instalments of the contribution on the minimale (F24). Contributions above the minimale follow the income-tax deadlines instead.",
+      "value": "18 maggio 2026, 20 agosto 2026, 16 novembre 2026 e 16 febbraio 2027",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+      "quote": "18 maggio 2026, 20 agosto 2026, 16 novembre 2026 e 16 febbraio 2027",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.inps.gs.rate.professionals",
+      "item": "INPS gestione separata: total rate for self-employed professionals with a VAT number and no other compulsory pension cover, 2026 (25% IVS + 0.72% + 0.35% ISCRO). INPS Circolare n. 8 of 3 February 2026.",
+      "value": "26.07%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "Soggetti non assicurati presso altra forma di 26,07%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.gs.rate.professionals.ivs",
+      "item": "INPS gestione separata professionals: IVS (pension) part of the 26.07% rate, 2026.",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "aliquota contributiva IVS in misura pari al 25%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.inps.gs.rate.professionals.iscro",
+      "item": "INPS gestione separata professionals: ISCRO surcharge part of the 26.07% rate, 2026.",
+      "value": "0.35%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "aliquota aggiuntiva pari allo 0,35%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-contributions"
+      ]
+    },
+    {
+      "id": "it.inps.gs.rate.pensioners",
+      "item": "INPS gestione separata: rate for professionals (TUIR art. 53 income) and collaborators who are already pensioners or insured with another compulsory scheme, 2026.",
+      "value": "24%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "per l’anno 2026, l’aliquota è confermata al 24%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-financial-statements",
+        "italy-formation",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.gs.rate.cococo",
+      "item": "INPS gestione separata: total rate for collaborators (co.co.co.), company directors and similar with no other cover and no VAT number, who are entitled to DIS-COLL, 2026 (33% IVS + 0.50 + 0.22 + 1.31 DIS-COLL). Split one third collaborator, two thirds client.",
+      "value": "35.03%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "33,00 0,50 0,22 1,31 35,03",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-contributions"
+      ]
+    },
+    {
+      "id": "it.inps.gs.rate.cococo.ivs",
+      "item": "INPS gestione separata: IVS rate for collaborators and similar enrolled exclusively, 2026.",
+      "value": "33%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "è pari al 33%, così come stabilito dall’articolo 1, comma 79",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-income-tax",
+        "it-inps-contributions",
+        "it-irpef-employees",
+        "italy-crypto-tax",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.gs.rate.no-discoll",
+      "item": "INPS gestione separata: total rate for collaborator categories with no DIS-COLL contribution (e.g. occasional self-employed, board and commission members), 2026.",
+      "value": "33.72%",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "33,00 0,50 0,22 33,72",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-contributions"
+      ]
+    },
+    {
+      "id": "it.inps.gs.massimale",
+      "item": "INPS gestione separata: maximum income on which contributions are due, 2026.",
+      "value": "EUR 122,295",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "è pari a 122.295,00 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-employer-contributions",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.gs.minimale",
+      "item": "INPS gestione separata: minimum income needed to have the whole year credited for pension, 2026 (there is no fixed minimum payment in the gestione separata).",
+      "value": "EUR 18,808",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "è pari a 18.808,00 euro. Conseguentemente",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.inps.gs.full-year-contribution.professionals",
+      "item": "INPS gestione separata: annual contribution a professional at 26.07% must reach to have all of 2026 credited.",
+      "value": "EUR 4,903.25",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "4.903,25 euro (di cui 4.702,00 euro ai fini pensionistici) per i professionisti",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-inps-contributions"
+      ]
+    },
+    {
+      "id": "it.inps.gs.payment-deadline.client",
+      "item": "INPS gestione separata collaborators: the client pays by this day of the month after the fee is actually paid, via F24.",
+      "value": "giorno 16 del mese successivo",
+      "tax_year": 2026,
+      "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+      "quote": "entro il giorno 16 del mese successivo a quello di effettiva corresponsione del compenso",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.forf.coeff.food-industry",
+      "item": "Forfettario profitability coefficient, food and beverage industry (ATECO 10-11): share of revenue treated as taxable income. L. 190/2014 Allegato 4 as replaced by L. 145/2018 Allegato 2.",
+      "value": "40%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "Industrie alimentari e 1 (10-11) 40%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-ires-corporate-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.forf.coeff.retail-wholesale",
+      "item": "Forfettario coefficient, wholesale and retail trade (ATECO 45, 46.2-46.9, 47.1-47.7, 47.9).",
+      "value": "40%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "Commercio all’ingrosso 45 – (da 46.2 a 46.9) – 2 40%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-ires-corporate-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.forf.coeff.street-other",
+      "item": "Forfettario coefficient, street trading of non-food products (ATECO 47.82-47.89). Street trading of food (47.81) is 40%.",
+      "value": "54%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "47.82 – 47.89 54%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-regime-forfettario"
+      ]
+    },
+    {
+      "id": "it.forf.coeff.construction-realestate",
+      "item": "Forfettario coefficient, construction and real estate activities (ATECO 41-43, 68).",
+      "value": "86%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "5 (41-42-43) – (68) 86%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-regime-forfettario"
+      ]
+    },
+    {
+      "id": "it.forf.coeff.trade-intermediaries",
+      "item": "Forfettario coefficient, trade intermediaries / agents (ATECO 46.1).",
+      "value": "62%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "6 46.1 62%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-regime-forfettario"
+      ]
+    },
+    {
+      "id": "it.forf.coeff.hospitality",
+      "item": "Forfettario coefficient, accommodation and food service (ATECO 55-56).",
+      "value": "40%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "(55-56) 40%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-ires-corporate-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.forf.coeff.professional",
+      "item": "Forfettario coefficient, professional, scientific, technical, health, education, financial and insurance services (ATECO 64-66, 69-75, 85, 86-88).",
+      "value": "78%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "72-73-74-75) – (85) – 78%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-regime-forfettario"
+      ]
+    },
+    {
+      "id": "it.forf.coeff.other",
+      "item": "Forfettario coefficient, all other economic activities (includes ATECO 62 IT services, 58-63, 77-82, etc.).",
+      "value": "67%",
+      "tax_year": "from 2019, unchanged in 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218",
+      "quote": "(36-37-38-39) – (49-50- 67%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-regime-forfettario"
+      ]
+    },
+    {
+      "id": "it.crypto.rate.2026",
+      "item": "Crypto-assets (TUIR art. 67(1)(c-sexies) gains and other income): ordinary substitute tax rate for 2026, as the Budget Law 2026 names it. Set by Legge 207/2024 art. 1 comma 24 (26% before 2026). Normattiva now shows comma 24 'abrogato' by D.Lgs. 117/2026, but that new TUIR applies only from 1 January 2027.",
+      "value": "33%",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "quote": "in luogo di quella ordinaria del 33 per cento, ai redditi diversi",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-income-tax",
+        "it-inps-contributions",
+        "it-irpef-employees",
+        "italy-crypto-tax",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.crypto.rate.emt-euro",
+      "item": "Crypto: reduced rate kept for euro-denominated e-money tokens (MiCA art. 3 EMTs) held, sold or used, instead of the ordinary 33%. Legge 199/2025 art. 1 comma 28.",
+      "value": "26%",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "quote": "si applicano con l'aliquota del 26 per cento, in luogo di quella ordinaria del 33 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-crypto-tax",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.crypto.threshold-removed",
+      "item": "HISTORY: the EUR 2,000 yearly minimum for taxable crypto gains was deleted from TUIR art. 67(1)(c-sexies) by Legge 207/2024 art. 1 comma 25, from 2025. There is NO exemption threshold in 2026.",
+      "value": "EUR 2,000",
+      "tax_year": "removed from 2025",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207",
+      "quote": "le parole: &laquo;, non inferiori complessivamente a 2.000 euro nel periodo d'imposta&raquo; sono soppresse",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-irap",
+        "italy-crypto-tax",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.law.new-tuir.start",
+      "item": "The new Testo unico delle imposte sui redditi (D.Lgs. 19 giugno 2026 n. 117, art. 377) applies from this date. It is in force since 4 July 2026, so Normattiva's current view shows many old provisions (e.g. impatriati art. 5 D.Lgs. 209/2023, crypto comma 24 L. 207/2024) as 'abrogato', but for 2026 income the old rules still apply.",
+      "value": "1° gennaio 2027",
+      "tax_year": "from 2027",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377",
+      "quote": "si applicano a decorrere dal 1° gennaio 2027",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.imp.new.share",
+      "item": "Impatriati regime for people who move tax residence to Italy from 2024 (D.Lgs. 209/2023 art. 5): qualifying employment and professional income counts towards taxable income for only this share (50% exempt), for the year of the move and the next four. Conditions: not resident in the previous 3 years (6 or 7 if same employer/group), high qualification, commit to stay.",
+      "value": "50%",
+      "tax_year": "arrivals from 2024; text as in force 30 June 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30",
+      "quote": "limitatamente al 50 per cento del loro ammontare al ricorrere delle seguenti condizioni",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-income-tax",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-ires-corporate-tax",
+        "italy-payroll",
+        "italy-transfer-pricing"
+      ]
+    },
+    {
+      "id": "it.imp.new.cap",
+      "item": "Impatriati regime from 2024: yearly cap on the qualifying income that benefits from the 50% rule.",
+      "value": "EUR 600,000",
+      "tax_year": "arrivals from 2024",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30",
+      "quote": "entro il limite annuo di 600.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-impatriati"
+      ]
+    },
+    {
+      "id": "it.imp.new.child",
+      "item": "Impatriati regime from 2024: the taxable share falls to this percentage (60% exempt) if the worker moves with a minor child, or a child is born or adopted during the regime.",
+      "value": "40%",
+      "tax_year": "arrivals from 2024",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30",
+      "quote": "La percentuale di cui al comma 1 è ridotta al 40 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-ires-corporate-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.imp.new.start",
+      "item": "The 2024 impatriati regime applies to people who move tax residence to Italy from this tax year. The old regime (art. 16 D.Lgs. 147/2015) keeps applying to those who moved registered residence by 31 December 2023.",
+      "value": "periodo d'imposta 2024",
+      "tax_year": "arrivals from 2024",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30",
+      "quote": "trasferiscono la residenza fiscale in Italia a decorrere dal periodo d'imposta 2024",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.imp.old.cutoff",
+      "item": "Old impatriati regime (art. 16 D.Lgs. 147/2015) still covers people who moved their registered residence (residenza anagrafica) to Italy by this date.",
+      "value": "31 dicembre 2023",
+      "tax_year": "arrivals up to 2023",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30",
+      "quote": "hanno trasferito la loro residenza anagrafica in Italia entro il 31 dicembre 2023",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.imp.old.share",
+      "item": "Old impatriati regime (arrivals up to 31 December 2023): qualifying income counts for only this share of its amount (70% exempt), for the year of the move and the next four.",
+      "value": "30%",
+      "tax_year": "arrivals up to 2023; text as in force 28 December 2023",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28",
+      "quote": "limitatamente al 30 per cento del loro ammontare al ricorrere delle seguenti condizioni",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-impatriati",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.imp.old.south",
+      "item": "Old impatriati regime: taxable share for people who moved to Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardegna or Sicilia (90% exempt).",
+      "value": "10%",
+      "tax_year": "arrivals up to 2023",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28",
+      "quote": "La percentuale di cui al comma 1 è ridotta al 10 per cento per i soggetti che trasferiscono la residenza",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-irap",
+        "it-irpef-employees",
+        "italy-einvoice",
+        "italy-payroll",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.imp.old.extension",
+      "item": "Old impatriati regime: in the extra five years (worker with a minor child, or who bought a home in Italy), qualifying income counts for this share.",
+      "value": "50%",
+      "tax_year": "arrivals up to 2023",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28",
+      "quote": "negli ulteriori cinque periodi di imposta, concorrono alla formazione del reddito complessivo limitatamente al 50 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-income-tax",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-ires-corporate-tax",
+        "italy-payroll",
+        "italy-transfer-pricing"
+      ]
+    },
+    {
+      "id": "it.imp.old.extension-3children",
+      "item": "Old impatriati regime: in the extra five years, workers with at least three minor or dependent children count only this share.",
+      "value": "10%",
+      "tax_year": "arrivals up to 2023",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-09-14;147~art16!vig=2023-12-28",
+      "quote": "negli ulteriori cinque periodi di imposta, concorrono alla formazione del reddito complessivo limitatamente al 10 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-irap",
+        "it-irpef-employees",
+        "italy-einvoice",
+        "italy-payroll",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.flat-tax-new-residents.2026",
+      "item": "Optional flat substitute tax on foreign income for people who become Italian resident (TUIR art. 24-bis), per year, raised from EUR 200,000 by Legge 199/2025 art. 1 comma 25 for those who move residence from the law's entry into force, 1 January 2026 (comma 26). Earlier arrivals keep the amount that applied when they arrived (not proven in this pack).",
+      "value": "EUR 300,000",
+      "tax_year": "arrivals from 1 January 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "quote": "sostituite dalle seguenti: &laquo;euro 300.000&raquo;",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-impatriati"
+      ]
+    },
+    {
+      "id": "it.flat-tax-new-residents.family.2026",
+      "item": "TUIR art. 24-bis flat tax: yearly amount for each family member included, for those moving residence from 1 January 2026.",
+      "value": "EUR 50,000",
+      "tax_year": "arrivals from 1 January 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "quote": "sostituite dalle seguenti: &laquo;euro 50.000&raquo;",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-dichiarazione-iva-annuale",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irpef-employees",
+        "italy-payroll",
+        "italy-transfer-pricing"
+      ]
+    },
+    {
+      "id": "it.irap.rate.standard",
+      "item": "IRAP (regional tax on productive activities): ordinary rate on net value of production (D.Lgs. 446/1997 art. 16(1)). TRAP: Normattiva's consolidated text still prints '3,50 per cento', a cut that was repealed retroactively; the Agenzia's IRAP instructions print 3.9. Regions may vary it by up to 0.92 points. Some ATECO sectors pay 2 points more in 2026 and 2027 (D.L. 21/2026).",
+      "value": "3.9%",
+      "tax_year": "IRAP 2026 return (tax year 2025); rate unchanged for 2026 except the sector surcharges",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414",
+      "quote": "l’imposta è determinata applicando al valore della produzione netta l’aliquota del 3,9 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-irap",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-financial-statements",
+        "italy-formation",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.irap.rate.concessionaires",
+      "item": "IRAP rate for concession-holding companies other than motorway and tunnel concessionaires.",
+      "value": "4.2%",
+      "tax_year": "IRAP 2026 return (tax year 2025)",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414",
+      "quote": "si applica l’aliquota del 4,20 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-irap"
+      ]
+    },
+    {
+      "id": "it.irap.rate.banks",
+      "item": "IRAP rate for banks and financial intermediaries (art. 6). For 2026, 2027 and 2028 increased by 2 points for most of them (Legge 199/2025 art. 1 comma 74).",
+      "value": "4.65%",
+      "tax_year": "IRAP 2026 return (tax year 2025)",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414",
+      "quote": "si applica l’aliquota del 4,65 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-irap"
+      ]
+    },
+    {
+      "id": "it.irap.rate.insurers",
+      "item": "IRAP rate for insurance companies (art. 7). For 2026 to 2028 increased by 2 points (Legge 199/2025 art. 1 comma 74).",
+      "value": "5.9%",
+      "tax_year": "IRAP 2026 return (tax year 2025)",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414",
+      "quote": "si applica l’aliquota del 5,90 per c",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-irap"
+      ]
+    },
+    {
+      "id": "it.irap.regional-variation",
+      "item": "Maximum amount (percentage points) by which a region may raise or lower the IRAP rate.",
+      "value": "0.92",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414",
+      "quote": "fino ad un massimo di 0,92 punti per- centuale",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-irap"
+      ]
+    },
+    {
+      "id": "it.irap.sector-surcharge.2026",
+      "item": "IRAP surcharge of two percentage points for 2026 and 2027 on companies whose main activity is in the ATECO codes of Table 1 of D.L. 20 febbraio 2026 n. 21 (art. 3(1)). Written in words on Normattiva ('due punti percentuali'); no digit proven.",
+      "value": "due punti percentuali",
+      "tax_year": "2026 and 2027",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art16!vig=",
+      "quote": "è aumentata di due punti percentuali per i soggetti esercenti",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.irap.banks-surcharge.2026",
+      "item": "IRAP surcharge for banks/financial intermediaries and insurers for 2026, 2027 and 2028 (Legge 199/2025 art. 1 comma 74).",
+      "value": "2 punti percentuali",
+      "tax_year": "2026 to 2028",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art16!vig=",
+      "quote": "sono incrementate di 2 punti percentuali per i soggetti diversi",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.ires.rate",
+      "item": "IRES (corporate income tax) standard rate on net total income (TUIR art. 77). Surcharges apply to some sectors; a reduced 'IRES premiale' needs separate checking.",
+      "value": "24%",
+      "tax_year": 2026,
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=",
+      "quote": "con l'aliquota del 24 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-financial-statements",
+        "italy-formation",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.iva.rate.standard",
+      "item": "IVA (VAT) standard rate (DPR 633/1972 art. 16, which prints it in words).",
+      "value": "22%",
+      "tax_year": "current on 22 September 2026 (page last updated 12/12/2020)",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote",
+      "quote": "In Italia l’aliquota ordinaria Iva è del 22%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "italy-einvoice",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.rate.super-reduced",
+      "item": "IVA super-reduced rate, e.g. basic food, drinks and agricultural products (Tabella A parte II).",
+      "value": "4%",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote",
+      "quote": "4% , per esempio per alimentari, bevande e prodotti agricoli",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-estimated-tax",
+        "it-inps-contributions",
+        "italy-einvoice",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.rate.5",
+      "item": "IVA reduced rate, e.g. some foods (Tabella A parte II-bis).",
+      "value": "5%",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote",
+      "quote": "5% , per esempio per alcuni alimenti",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-impatriati",
+        "it-income-tax",
+        "it-ires-corporate-tax",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-einvoice",
+        "italy-formation",
+        "italy-payroll",
+        "italy-tax-optimization",
+        "italy-transfer-pricing",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.rate.10",
+      "item": "IVA reduced rate, e.g. domestic electricity and gas, medicines, building renovation (Tabella A parte III).",
+      "value": "10%",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote",
+      "quote": "10% , per esempio per la fornitura di energia elettrica",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-irap",
+        "it-irpef-employees",
+        "italy-einvoice",
+        "italy-payroll",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.cumulative-register",
+      "item": "IVA: invoices each below this amount issued in one calendar month may be recorded in one summary document.",
+      "value": "EUR 300",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote",
+      "quote": "fatture di importo unitario inferiore a 300 euro",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.acconto.irpef.min",
+      "item": "IRPEF payments on account (acconto) are due only if the tax declared this year (for the previous year), after deductions, credits and withholdings, is above this amount.",
+      "value": "EUR 51.65",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "quote": "è superiore a 51,65 euro una volta sottratti le detrazioni",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-estimated-tax"
+      ]
+    },
+    {
+      "id": "it.acconto.irpef.total",
+      "item": "IRPEF acconto: total payments on account equal this share of the tax declared for the previous year (historic method), or of the lower tax the taxpayer expects for the current year.",
+      "value": "100%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "quote": "L’acconto è pari al 100% dell’imposta dichiarata nell’anno",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "it-estimated-tax",
+        "it-ires-corporate-tax",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.acconto.irpef.single-threshold",
+      "item": "IRPEF acconto below this amount is paid in one instalment by 30 November; at or above it, in two instalments (general rule, not ISA/forfettario taxpayers).",
+      "value": "EUR 257.52",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "quote": "se l’acconto è inferiore a 257,52 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-estimated-tax"
+      ]
+    },
+    {
+      "id": "it.acconto.irpef.first",
+      "item": "IRPEF acconto, general rule: first instalment share, due by 30 June with the balance for the previous year.",
+      "value": "40%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "quote": "la prima è pari al 40% e va versata entro il 30 giugno",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-employer-contributions",
+        "it-estimated-tax",
+        "it-impatriati",
+        "it-ires-corporate-tax",
+        "it-regime-forfettario",
+        "italy-tax-optimization",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.acconto.irpef.second",
+      "item": "IRPEF acconto, general rule: second instalment share, due by 30 November.",
+      "value": "60%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "quote": "la seconda è pari al restante 60% e va versata entro il 30 novembre",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-estimated-tax",
+        "it-ires-corporate-tax",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.acconto.isa-forf.single-threshold",
+      "item": "Taxpayers subject to ISA and forfettario taxpayers: acconto not above this amount is paid once by 30 November; otherwise two EQUAL instalments (30 June and 30 November), not 40/60.",
+      "value": "EUR 206",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "quote": "un unico versamento entro il 30 novembre se l’importo totale dovuto non supera 206 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-estimated-tax"
+      ]
+    },
+    {
+      "id": "it.acconto.late-surcharge",
+      "item": "Balance and first acconto may be paid within 30 days after 30 June with this surcharge.",
+      "value": "0.40%",
+      "tax_year": 2026,
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef",
+      "quote": "pagando una maggiorazione dello 0,40%",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "it-employer-contributions",
+        "it-estimated-tax",
+        "it-inps-artigiani-commercianti",
+        "it-inps-contributions",
+        "it-ires-corporate-tax",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.quarterly.services",
+      "item": "IVA quarterly settlement option: previous-year turnover (volume d'affari) limit for professionals and service businesses. Same figure as the simplified-accounting limit for services, a separate rule. TRAP: Normattiva's DPR 542/1999 art. 7 still prints old lire amounts.",
+      "value": "EUR 500,000",
+      "tax_year": "current on 22 September 2026 (page updated 20/09/2024)",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva",
+      "quote": "500.000 euro, per i lavoratori autonomi e per le imprese",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "italy-bookkeeping",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.quarterly.other",
+      "item": "IVA quarterly settlement option: previous-year turnover limit for businesses in other activities.",
+      "value": "EUR 800,000",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva",
+      "quote": "800.000 euro, per le imprese che esercitano altre attività",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "italy-bookkeeping",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.quarterly.interest",
+      "item": "IVA quarterly payers add this interest to each quarterly payment (not to the December acconto).",
+      "value": "1%",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva",
+      "quote": "L’imposta dovuta va maggiorata dell’1% a titolo di interessi",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "it-employer-contributions",
+        "it-income-tax",
+        "italy-payroll",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.iva.monthly.deadline",
+      "item": "IVA monthly payers settle and pay by this day of each month for the previous month.",
+      "value": "giorno 16",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva",
+      "quote": "Entro il giorno 16 di ciascun mese",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.iva.q4.deadline",
+      "item": "IVA quarterly payers: settlement for the fourth quarter is due by this date of the following year (first three quarters: 16th of the second month after the quarter).",
+      "value": "16 marzo",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva",
+      "quote": "va effettuata entro il 16 marzo dell’anno successivo",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.iva.acconto.deadline",
+      "item": "IVA December acconto (on the December or Q4 payment) due by this date each year.",
+      "value": "27 dicembre",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva",
+      "quote": "Entro il 27 dicembre di ogni anno",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.books.simplified.services",
+      "item": "Simplified accounting (contabilità semplificata), DPR 600/1973 art. 18: sole traders and partnerships whose revenue in a full year did not exceed this amount for SERVICE businesses may use simplified books the next year.",
+      "value": "EUR 500,000",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig=",
+      "quote": "non abbiano superato l'ammontare di 500.000 euro per le imprese aventi per oggetto prestazioni di servizi",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "italy-bookkeeping",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.books.simplified.other",
+      "item": "Simplified accounting limit for businesses in OTHER activities (DPR 600/1973 art. 18).",
+      "value": "EUR 800,000",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig=",
+      "quote": "ovvero di 800.000 euro per le imprese aventi per oggetto altre attività",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "italy-bookkeeping",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.fs.abbreviated.assets",
+      "item": "Abbreviated financial statements (bilancio in forma abbreviata, Civil Code art. 2435-bis): total-assets limit; a company qualifies if it does not exceed two of the three limits in the first year or two consecutive years. Raised by D.Lgs. 125/2024; check its art. 17 for the first year it applies.",
+      "value": "EUR 5,500,000",
+      "tax_year": "text in force 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig=",
+      "quote": "1) totale dell'attivo dello stato patrimoniale: 5.500.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "italy-bookkeeping",
+        "italy-financial-statements"
+      ]
+    },
+    {
+      "id": "it.fs.abbreviated.revenue",
+      "item": "Abbreviated financial statements (art. 2435-bis c.c.): revenue limit.",
+      "value": "EUR 11,000,000",
+      "tax_year": "text in force 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig=",
+      "quote": "2)ricavi delle vendite e delle prestazioni: 11.000.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "italy-bookkeeping",
+        "italy-financial-statements"
+      ]
+    },
+    {
+      "id": "it.fs.abbreviated.employees",
+      "item": "Abbreviated financial statements (art. 2435-bis c.c.): average employees limit.",
+      "value": "50",
+      "tax_year": "text in force 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig=",
+      "quote": "3) dipendenti occupati in media durante l'esercizio: 50 unità",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "it-employer-contributions",
+        "it-estimated-tax",
+        "it-income-tax",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-financial-statements",
+        "italy-transfer-pricing",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.fs.micro.assets",
+      "item": "Micro-company financial statements (art. 2435-ter c.c.): total-assets limit (two of three limits).",
+      "value": "EUR 220,000",
+      "tax_year": "text in force 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig=",
+      "quote": "1) totale dell'attivo dello stato patrimoniale: 220.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "italy-bookkeeping",
+        "italy-financial-statements"
+      ]
+    },
+    {
+      "id": "it.fs.micro.revenue",
+      "item": "Micro-company financial statements (art. 2435-ter c.c.): revenue limit.",
+      "value": "EUR 440,000",
+      "tax_year": "text in force 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig=",
+      "quote": "2) ricavi delle vendite e delle prestazioni: 440.000 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "italy-bookkeeping",
+        "italy-financial-statements"
+      ]
+    },
+    {
+      "id": "it.fs.micro.employees",
+      "item": "Micro-company financial statements (art. 2435-ter c.c.): average employees limit.",
+      "value": "5",
+      "tax_year": "text in force 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig=",
+      "quote": "3) dipendenti occupati in media durante l'esercizio: 5 unità",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-dichiarazione-iva-annuale",
+        "it-employer-contributions",
+        "it-impatriati",
+        "it-income-tax",
+        "it-irap",
+        "it-ires-corporate-tax",
+        "it-irpef-employees",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-einvoice",
+        "italy-financial-statements",
+        "italy-payroll",
+        "italy-tax-optimization",
+        "italy-transfer-pricing",
+        "italy-vat-return"
+      ]
+    },
+    {
+      "id": "it.payroll.tfr.divisor",
+      "item": "TFR (severance, trattamento di fine rapporto, Civil Code art. 2120): each year's accrual equals that year's pay divided by this number. Accrual, not a tax rate.",
+      "value": "13.5",
+      "tax_year": "standing rule, current 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=",
+      "quote": "retribuzione dovuta per l'anno stesso divisa per 13,5",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-employer-contributions",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.payroll.tfr.revaluation.fixed",
+      "item": "TFR revaluation each 31 December: fixed part of the rate (plus 75% of the rise in the consumer price index for blue- and white-collar families).",
+      "value": "1.5%",
+      "tax_year": "standing rule, current 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=",
+      "quote": "un tasso costituito dall'1,5 per cento in misura fissa e dal 75 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-employer-contributions",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.payroll.tfr.revaluation.cpi-share",
+      "item": "TFR revaluation: share of the consumer-price-index rise added to the 1.5% fixed part.",
+      "value": "75%",
+      "tax_year": "standing rule, current 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2120!vig=",
+      "quote": "dal 75 per cento dell'aumento dell'indice dei prezzi al consumo",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-employer-contributions",
+        "it-income-tax",
+        "it-regime-forfettario",
+        "italy-bookkeeping",
+        "italy-payroll"
+      ]
+    },
+    {
+      "id": "it.formation.srl.capital",
+      "item": "S.r.l. (limited company) standard minimum share capital, Civil Code art. 2463. The code prints it only in WORDS ('diecimila euro'); no digit is proven, so a Guide should write it in words or cite the article. A lower capital, at least one euro (also in words), is allowed if paid in cash in full.",
+      "value": "diecimila euro",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463!vig=",
+      "quote": "4) l'ammontare del capitale, non inferiore a diecimila euro",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.formation.spa.capital",
+      "item": "S.p.A. (joint-stock company) minimum share capital, Civil Code art. 2327, printed in WORDS ('cinquantamila euro'); no digit proven.",
+      "value": "cinquantamila euro",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2327!vig=",
+      "quote": "capitale non inferiore a ((cinquantamila)) euro",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.einv.bollo.amount",
+      "item": "Stamp duty (imposta di bollo) on an e-invoice without VAT (e.g. forfettario invoice, exempt or out-of-scope operations) above EUR 77.47: amount per invoice, included in the invoice total.",
+      "value": "EUR 2",
+      "tax_year": "current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari",
+      "quote": "i 2 euro dell’imposta di bollo",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-dichiarazione-iva-annuale",
+        "it-regime-forfettario",
+        "italy-einvoice"
+      ]
+    },
+    {
+      "id": "it.einv.bollo.threshold",
+      "item": "E-invoice stamp duty applies when the total of the non-VAT operations on the invoice is above this amount (Agenzia guide on stamp duty on e-invoices, 2024).",
+      "value": "EUR 77.47",
+      "tax_year": "guide 2024; current on 22 September 2026",
+      "source_url": "https://www.agenziaentrate.gov.it/portale/documents/20143/3394067/Guida_Bollo_sulle_fatture_elettroniche2024.pdf",
+      "quote": "risulta maggiore di 77,47 euro",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-regime-forfettario",
+        "italy-einvoice"
+      ]
+    },
+    {
+      "id": "it.wht.fees.2026",
+      "item": "Withholding on account (ritenuta d'acconto) on fees paid to resident self-employed professionals, DPR 600/1973 art. 25. Normattiva's body text still prints the unamended 1973 rate; the 20% comes from later amending laws shown only in its notes. Forfettari are not subject to this withholding.",
+      "value": "20%",
+      "tax_year": "payments in 2026",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=",
+      "quote": "le parole: \"19 per cento\" sono sostituite dalle seguenti: \"20 per cento\"",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "it-cross-border",
+        "it-income-tax",
+        "it-ires-corporate-tax",
+        "italy-bookkeeping",
+        "italy-payroll",
+        "italy-tax-optimization"
+      ]
+    },
+    {
+      "id": "it.wht.fees.2028.start",
+      "item": "Start date (comma 115) of L. 199/2025 art. 1 commi 112-114, which amend DPR 600/1973 art. 25 (heading now adds 'sui redditi d'impresa'). Not shown to change the 20% on professional fees.",
+      "value": "1° gennaio 2028",
+      "tax_year": "from 2028",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=",
+      "quote": "ai pagamenti effettuati a decorrere dal 1° gennaio 2028",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "it.crypto.revaluation.rate",
+      "item": "Crypto: substitute tax for the optional step-up of the tax cost of crypto-assets held on 1 January 2025 to their value at that date (Legge 207/2024 art. 1 comma 26). One-off, not the yearly gains rate.",
+      "value": "18%",
+      "tax_year": "holdings at 1 January 2025",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207",
+      "quote": "assoggettato a un'imposta sostitutiva delle imposte sui redditi nella misura del 18 per cento",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "italy-crypto-tax"
+      ]
+    },
+    {
+      "id": "it.crypto.revaluation.deadline",
+      "item": "Crypto cost step-up (L. 207/2024 art. 1 commi 26-28): substitute tax due by this date, or in up to three equal yearly instalments from it (3% yearly interest on later instalments). Past for new elections.",
+      "value": "30 novembre 2025",
+      "tax_year": "holdings at 1 January 2025",
+      "source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207",
+      "quote": "n. 241 , entro il 30 novembre 2025",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "italy-crypto-tax"
+      ]
+    }
+  ]
+}

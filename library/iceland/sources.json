@@ -1,0 +1,804 @@
+{
+  "country": "iceland",
+  "code": "IS",
+  "url_count": 94,
+  "sources": [
+    {
+      "url": "https://files.reglugerd.is/pdf/0192-1993/current",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0223-2003/current",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0515-1996/current",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0576-1989/current",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0577-1989/current",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0591-1987/current",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/1102-2013/current",
+      "skills": [
+        "is-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/1165-2016/current",
+      "skills": [
+        "is-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/1243-2019/current",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d",
+      "skills": [
+        "iceland-income-tax",
+        "is-cross-border",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://sedlabanki.is/gagnatorg/vextir",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://voes.rsk.is/Application/Register",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/altext/150/s/0626.html",
+      "skills": [
+        "is-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/altext/stjt/2020.033.html",
+      "skills": [
+        "is-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1903042.html",
+      "skills": [
+        "is-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1987045.html",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1988050.html",
+      "skills": [
+        "iceland-vat",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1990113.html",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1991088.html",
+      "skills": [
+        "is-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1994138.html",
+      "skills": [
+        "is-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1995002.html",
+      "skills": [
+        "is-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1995004.html",
+      "skills": [
+        "iceland-income-tax",
+        "is-cross-border",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/1997129.html",
+      "skills": [
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2003017.html",
+      "skills": [
+        "is-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2003090.html",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "iceland-tax-optimization",
+        "is-company-formation",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2006003.html",
+      "skills": [
+        "is-company-formation",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2007050.html",
+      "skills": [
+        "is-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2009152.html",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2011165.html",
+      "skills": [
+        "iceland-payroll",
+        "iceland-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/iceland-tax-treaties",
+      "skills": [
+        "is-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/iceland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-iceland-uk-double-taxation-convention-in-force",
+      "skills": [
+        "is-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/almennt-um-vsk/",
+      "skills": [
+        "iceland-vat",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/launagreidendaskra/",
+      "skills": [
+        "iceland-payroll",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026/",
+      "skills": [],
+      "figures": [
+        "is.cit.partnership.dividends",
+        "is.cit.asset.expensing",
+        "is.cit.prepay",
+        "is.tg.a1"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/",
+      "skills": [
+        "is-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/",
+      "skills": [
+        "iceland-payroll",
+        "iceland-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/rafraen-skil/stadgreidsla/",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/skattamal/endurgreidslur-virdisaukaskatts/erlendir-adilar/",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "skills": [
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.tg.total",
+        "is.tg.general",
+        "is.tg.unemployment",
+        "is.tg.wageguarantee",
+        "is.tg.seamen.extra",
+        "is.tg.selfemployed.minbase",
+        "is.tg.annual.filing.limit"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026/",
+      "skills": [
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.re.control.total",
+        "is.re.control.own",
+        "is.re.below.withholding",
+        "is.re.otherjob.floor",
+        "is.re.a1.monthly",
+        "is.re.a1.annual",
+        "is.re.a3.monthly",
+        "is.re.a3.annual",
+        "is.re.a5.monthly",
+        "is.re.a5.annual",
+        "is.re.a6.monthly",
+        "is.re.a6.annual",
+        "is.re.a9.monthly",
+        "is.re.a9.annual",
+        "is.re.b4.monthly",
+        "is.re.b4.annual",
+        "is.re.b5.monthly",
+        "is.re.b5.annual",
+        "is.re.b9.monthly",
+        "is.re.b9.annual",
+        "is.re.c5.monthly",
+        "is.re.c5.annual",
+        "is.re.c6.monthly",
+        "is.re.c6.annual",
+        "is.re.c9.monthly",
+        "is.re.c9.annual"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skattskylda-og-skattprosentur/",
+      "skills": [],
+      "figures": [
+        "is.vat.reduced"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra/",
+      "skills": [],
+      "figures": [
+        "is.vat.threshold"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/ardur/",
+      "skills": [
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.div.rate",
+        "is.div.allowance"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.cap.rental.exempt.old"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": [
+        "is.it.state.bracket1.rate.2025",
+        "is.it.state.range.2025",
+        "is.it.state.bracket2.rate.2025",
+        "is.pc.annual.2025",
+        "is.it.children.threshold.2025"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/",
+      "skills": [
+        "is-company-formation",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/helstutolur/2026/helstu-tolur-og-prosentur-2026",
+      "skills": [
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.it.wht.bracket1.rate",
+        "is.it.wht.bracket2.rate",
+        "is.it.wht.bracket3.rate",
+        "is.pc.monthly",
+        "is.pc.annual",
+        "is.it.children.rate",
+        "is.cap.rate",
+        "is.cap.allowance.single",
+        "is.cap.allowance.couple",
+        "is.cap.rental.taxable",
+        "is.cit.ehf",
+        "is.cit.partnership",
+        "is.vat.standard",
+        "is.vat.fraction.standard",
+        "is.vat.fraction.reduced",
+        "is.vat.refund.housing",
+        "is.levy.broadcast",
+        "is.levy.elderly",
+        "is.inh.rate",
+        "is.inh.exempt"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/sjalfsafgreidsla/stadgreidsla-af-launum/",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/",
+      "skills": [
+        "iceland-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/skattamal/nyting-sereignarsparnadar/fyrsta-ibud/",
+      "skills": [
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.pen.sereign.firsthome.annual",
+        "is.pen.sereign.firsthome.own",
+        "is.pen.sereign.firsthome.employer",
+        "is.pen.sereign.firsthome.total",
+        "is.pen.sereign.firsthome.ownhome"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/",
+      "skills": [
+        "iceland-income-tax",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/skattar-og-gjold/utvarpsgjald/",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/stadgreidsla/ofnyttur-personuafslattur/",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/stadgreidsla/skattthrep/2026/",
+      "skills": [
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.it.wht.bracket1.upper.monthly",
+        "is.it.wht.bracket2.upper.monthly"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-social-contributions",
+        "iceland-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.pen.mandatory.deduction",
+        "is.pen.supplementary.deduction"
+      ]
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/",
+      "skills": [
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/companies/double-taxation-conventions/",
+      "skills": [
+        "is-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/companies/value-added-tax/",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/companies/vat/",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/individuals/filing-a-tax-return/",
+      "skills": [
+        "iceland-income-tax",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/individuals/limited-tax-liability/",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/individuals/personal-tax-credit/",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/individuals/posted-workers/",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/english/individuals/tax-liability/",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/fagadilar/akvardandi-bref/obeinir-skattar/akvardandi-bref-1-2026",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/fyrirtaekjaskra/gjaldskra/",
+      "skills": [
+        "is-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/",
+      "skills": [
+        "is-company-formation",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/",
+      "skills": [
+        "iceland-payroll",
+        "iceland-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll",
+        "iceland-social-contributions",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/baeklingar/VSK_Skraning_a_vsk_skra.pdf",
+      "skills": [
+        "iceland-vat",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf",
+      "skills": [
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf",
+      "skills": [
+        "iceland-income-tax",
+        "iceland-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk04/rsk_0427.is.pdf",
+      "skills": [
+        "is-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf",
+      "skills": [
+        "iceland-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026",
+      "skills": [
+        "is-company-formation",
+        "is-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/22/Breytingar-a-stadgreidslu-um-aramotin/",
+      "skills": [
+        "iceland-tax-optimization"
+      ],
+      "figures": [
+        "is.it.bracket2.threshold.annual",
+        "is.it.bracket3.threshold.annual",
+        "is.it.utsvar.average",
+        "is.pc.indexation",
+        "is.pc.cpi",
+        "is.it.taxfree.base.annual",
+        "is.it.taxfree.wages.annual",
+        "is.it.taxfree.wages.monthly",
+        "is.it.children.threshold"
+      ]
+    },
+    {
+      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/",
+      "skills": [
+        "iceland-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://yskn.is/urskurdir/skoda-urskurd/?nr=2912",
+      "skills": [
+        "is-cross-border"
+      ],
+      "figures": []
+    }
+  ]
+}

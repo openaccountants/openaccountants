@@ -1,0 +1,1250 @@
+{
+  "country": "portugal",
+  "code": "PT",
+  "figure_count": 91,
+  "figures": [
+    {
+      "id": "pt.irc.rate.2026",
+      "item": "IRC general rate for tax periods STARTING during 2026 (transitional rule, art. 3 of Law 64/2025, printed under art. 87 CIRC). Applies to the general rate (art. 87(1)) and to resident non-business entities (art. 87(5)). The code text itself prints 17%, which only applies from 2028.",
+      "value": "19%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "2 - Nos períodos de tributação que se iniciem durante o ano de 2026, a taxa prevista nos n.os 1 e 5 do artigo 87.º do Código do IRC é de 19 %. 3 -",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.irc.rate.2027",
+      "item": "IRC general rate for tax periods starting during 2027 (transitional rule, art. 3 of Law 64/2025). Not the 2026 rate.",
+      "value": "18%",
+      "tax_year": "2027 periods",
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "3 - Nos períodos de tributação que se iniciem durante o ano de 2027, a taxa prevista nos n.os 1 e 5 do artigo 87.º do Código do IRC é de 18 %. 4 - A",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border"
+      ]
+    },
+    {
+      "id": "pt.irc.rate.code-text",
+      "item": "IRC general rate as printed in art. 87(1) CIRC (wording of Law 64/2025). Per the transitional rule it applies only to tax periods starting on or after 1 January 2028; for 2026 the rate is 19%. Do NOT state 17% as the 2026 rate.",
+      "value": "17%",
+      "tax_year": "2028 onwards",
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "1** - A taxa do IRC é de 17 %, exceto nos casos previstos",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border"
+      ]
+    },
+    {
+      "id": "pt.irc.sme.rate",
+      "item": "Reduced IRC rate for SMEs and Small Mid Caps (as defined in the annex to Decree-Law 372/2007) carrying on an agricultural, commercial or industrial activity directly and as main activity: applies to the FIRST EUR 50,000 of taxable income (materia colectavel); the excess pays the general rate. Applies to periods starting on or after 1 January 2026 (Law 64/2025). Subject to EU de minimis aid rules (art. 87(3)).",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "50 000 € de matéria coletável é de 15 %, aplicando-se a",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-income-tax",
+        "pt-irs-employees-investment"
+      ]
+    },
+    {
+      "id": "pt.irc.sme.threshold",
+      "item": "Band of taxable income (materia colectavel) taxed at the reduced SME IRC rate: the first EUR 50,000 per tax period; above it the general rate applies. An allowance band, not a cliff.",
+      "value": "EUR 50,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "50 000 € de matéria coletável é de 15 %, aplicando-se a",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.irc.startup.rate",
+      "item": "Reduced IRC rate on the first EUR 50,000 for entities qualified as a startup under Law 21/2023 that meet the conditions of art. 2(1)(f) of that law (art. 87(8) CIRC). Also de minimis.",
+      "value": "12.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "reduzida para 12,5 %. (Aditado pela Lei",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.irc.nonresident.rate",
+      "item": "IRC rate on income of a non-resident entity with no permanent establishment in Portugal to which the income is attributable (art. 87(4) CIRC); in practice the final withholding rate on dividends, interest and royalties paid to non-resident companies, before any treaty or directive relief.",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "aí não possuam estabelecimento estável ao qual os mesmos sejam imputáveis, a taxa do IRC é de 25%, excepto",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.irc.nonresident.blacklist",
+      "item": "IRC rate on capital income of non-resident entities domiciled in a listed tax haven (regime fiscal claramente mais favoravel), on capital income paid into accounts held for unidentified third parties, and on lottery and raffle prizes (art. 87(4)(d),(h),(i) CIRC).",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "Ministro das Finanças, em que a taxa é de 35%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.irc.smallcap-restructuring",
+      "item": "Transitional rule (art. 229 of Law 24-D/2022, printed under art. 87): the SME reduced rate keeps applying for the two periods after mergers, divisions, asset contributions or share exchanges carried out between 1 January 2023 and 31 December 2026 where all parties were SMEs or Small Mid Caps. The digit 2026 here is a date, not a rate.",
+      "value": "31 December 2026",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "quote": "realizadas entre 1 de janeiro de 2023 e 31 de dezembro de 2026, em que a",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.derrama-estadual.start",
+      "item": "State surcharge (derrama estadual) applies only to the part of TAXABLE PROFIT (lucro tributavel, before loss relief) above this amount, for residents with a commercial, industrial or agricultural main activity and non-residents with a permanent establishment (art. 87-A CIRC).",
+      "value": "EUR 1,500,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "Sobre a parte do lucro tributável superior a (euro) 1 500 000 sujeito e não",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.derrama-estadual.band1",
+      "item": "Derrama estadual rate on the slice of taxable profit above EUR 1,500,000 up to EUR 7,500,000 (a slice of EUR 6,000,000). Progressive by slices, not a cliff.",
+      "value": "3%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "uma, igual a (euro) 6 000 000, à qual se aplica a taxa de 3 %; outra,",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.derrama-estadual.band1.top",
+      "item": "Upper limit of the first derrama estadual slice (taxable profit above EUR 1,500,000 up to EUR 7,500,000).",
+      "value": "EUR 7,500,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "De mais de 1500 000 até 7 500 000 . . .",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.derrama-estadual.band2",
+      "item": "Derrama estadual rate on the slice of taxable profit above EUR 7,500,000 up to EUR 35,000,000.",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "igual ao lucro tributável que exceda (euro) 7 500 000, à qual se aplica a taxa de 5%;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "portugal-payroll",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.derrama-estadual.band2.top",
+      "item": "Upper limit of the second derrama estadual slice; profit above it is in the top slice.",
+      "value": "EUR 35,000,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "De mais de 7 500 000 até 35 000 000 . .",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.derrama-estadual.band3",
+      "item": "Derrama estadual rate on taxable profit above EUR 35,000,000.",
+      "value": "9%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "igual ao lucro tributável que exceda € 35 000 000, à qual se aplica a taxa de 9 %.",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.derrama-estadual.slice1",
+      "item": "Size of the first derrama estadual slice (from EUR 1,500,000 to EUR 7,500,000) taxed at 3%.",
+      "value": "EUR 6,000,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "uma, igual a (euro) 6 000 000, à qual",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.derrama-estadual.slice2",
+      "item": "Size of the second derrama estadual slice (from EUR 7,500,000 to EUR 35,000,000) taxed at 5%, used when profit exceeds EUR 35,000,000.",
+      "value": "EUR 27,500,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "quote": "outra, igual a € 27 500 000, à qual se aplica a taxa de 5 %, e outra",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.derrama-municipal.max",
+      "item": "Municipal surcharge (derrama municipal, art. 18 of Law 73/2013) maximum rate on TAXABLE PROFIT (lucro tributavel) subject to and not exempt from IRC, for residents with a commercial, industrial or agricultural main activity and non-residents with a PE. Each municipality sets its own rate up to this ceiling (list published yearly by AT). This is the true rule behind the example \"130,000 x 1.5% = 1,950\": the rate is 1.5%, not 5%.",
+      "value": "1.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/irc/Documents/M22ANA.PDF",
+      "quote": "A taxa pode variar até ao limite máximo de 1,5% do lucro tributável apurado no período.",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.derrama-municipal.reduced.threshold",
+      "item": "Municipalities may set a REDUCED derrama municipal rate for taxpayers whose turnover (volume de negocios) in the PRIOR year does not exceed this amount (art. 18(24) of Law 73/2013, per AT Modelo 22 Annex A instructions). AT's field 364 help sheet words it as \"inferior a\" (below); the Annex A instructions say \"nao ultrapasse\" (not above).",
+      "value": "EUR 150,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/irc/Documents/M22ANA.PDF",
+      "quote": "cujo volume de negócios no ano anterior não ultrapasse € 150.000,00. Neste",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.derrama-municipal.example",
+      "item": "AT worked example (field 364 help): derrama municipal = taxable profit x municipal rate, e.g. EUR 15,000 x 1.5% = EUR 225. Shows the base is taxable profit and the rate 1.5%.",
+      "value": "EUR 225",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/irc/Documents/Mod_22_Q_7_Campo_364_derrama_ajudas_preench.pdf",
+      "quote": "Lucro tributável * taxa = € 15 000,00 * 1,5% = € 225,00",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.ta.undocumented",
+      "item": "Autonomous tax on undocumented expenses (despesas nao documentadas), in addition to their non-deductibility (art. 88(1) CIRC).",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "As despesas não documentadas são tributadas autonomamente, à taxa de 50 %, sem prejuízo",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.ta.undocumented.exempt",
+      "item": "Autonomous tax rate on undocumented expenses incurred by wholly or partly exempt entities or entities without a commercial, industrial or agricultural main activity (art. 88(2)).",
+      "value": "70%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "é elevada para 70 % nos casos",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "pt-corporate-tax",
+        "pt-income-tax",
+        "pt-social-contributions"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.low",
+      "item": "Autonomous tax on charges with light passenger cars, light goods vehicles of art. 7(1)(b) Vehicle Tax Code, motorbikes (depreciation, rent, insurance, maintenance, fuel, taxes), cars with acquisition cost BELOW EUR 37,500 (art. 88(3)(a), wording of Law 45-A/2024). Only for taxpayers with a commercial, industrial or agricultural main activity not subjectively exempt.",
+      "value": "8%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "a) 8 % no caso de viaturas com um custo de aquisição inferior a 37 500 €;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.threshold1",
+      "item": "Acquisition cost boundary between the 8% and 25% car autonomous tax bands (art. 88(3)).",
+      "value": "EUR 37,500",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "custo de aquisição inferior a 37 500 €;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.mid",
+      "item": "Autonomous tax on car charges where the acquisition cost is EUR 37,500 or more and below EUR 45,000 (art. 88(3)(b)).",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "b) 25 % no caso de viaturas com um custo de aquisição igual ou superior a 37 500 € e inferior a 45 000 €;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.threshold2",
+      "item": "Acquisition cost from which the top 32% car autonomous tax band applies (art. 88(3)(c)).",
+      "value": "EUR 45,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "igual ou superior a 45 000 €.",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.high",
+      "item": "Autonomous tax on car charges where the acquisition cost is EUR 45,000 or more (art. 88(3)(c)).",
+      "value": "32%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "c) 32 % no caso de viaturas com um custo de aquisição igual ou superior a 45 000 €.",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.phev.low",
+      "item": "Autonomous tax on plug-in hybrid cars (minimum 50 km electric range and emissions below 50 gCO2/km, or 80 gCO2/km under Euro 6e-bis) and natural gas (GNV) cars, lowest band (cost below EUR 37,500); wording of Law 73-A/2025 (2026 Budget).",
+      "value": "2.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "são, respetivamente, de 2,5 %, 7,5 % e 15 %",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.phev.mid",
+      "item": "Autonomous tax on qualifying plug-in hybrid and GNV cars, middle band (EUR 37,500 to below EUR 45,000).",
+      "value": "7.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "são, respetivamente, de 2,5 %, 7,5 % e 15 %",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.phev.high",
+      "item": "Autonomous tax on qualifying plug-in hybrid and GNV cars, top band (EUR 45,000 or more).",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "são, respetivamente, de 2,5 %, 7,5 % e 15 %",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-income-tax",
+        "pt-irs-employees-investment"
+      ]
+    },
+    {
+      "id": "pt.ta.cars.electric",
+      "item": "Autonomous tax on charges with fully electric vehicles, ONLY where the acquisition cost exceeds the limit set by the ordinance under art. 34(1)(e) (art. 88(20)); below that limit no autonomous tax. Same 10% as representation expenses, a different rule.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "apenas são sujeitos a tributação, à taxa autónoma de 10 %,",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions"
+      ]
+    },
+    {
+      "id": "pt.ta.representation",
+      "item": "Autonomous tax on representation expenses (receptions, meals, trips offered to clients, suppliers or others), art. 88(7), wording of Law 45-A/2024. Not applicable under the simplified regime (art. 88(16)).",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "São tributados autonomamente à taxa de 10 % os encargos efetuados ou suportados relativos a despesas de representação,",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions"
+      ]
+    },
+    {
+      "id": "pt.ta.blacklist-payments",
+      "item": "Autonomous tax on payments to persons resident in a listed preferential tax regime (or paid into accounts there), unless the taxpayer proves the operations are real and normal: 35% for ordinary taxpayers (art. 88(8)).",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "sendo as taxas aplicáveis, respetivamente, 35 % ou 55 %, as",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.ta.blacklist-payments.exempt",
+      "item": "Same blacklist-payment autonomous tax for exempt or non-business entities (art. 88(8) via art. 88(2)).",
+      "value": "55%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "sendo as taxas aplicáveis, respetivamente, 35 % ou 55 %, as",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.allowances",
+      "item": "Autonomous tax on per diem allowances (ajudas de custo) and compensation for use of an employee's own car, not invoiced to clients, except the part taxed in the employee's IRS (art. 88(9)).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "São ainda tributados autonomamente, à taxa de 5 %, os",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "portugal-payroll",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.ta.dividends-exempt",
+      "item": "Autonomous tax on profits distributed to wholly or partly exempt IRC taxpayers where the shares were not held for one year without interruption (art. 88(11)).",
+      "value": "23%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "São tributados autonomamente, à taxa de 23 %, os",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-income-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.manager-payments",
+      "item": "Autonomous tax on termination compensation to managers/directors not tied to productivity goals, and on bonuses to managers above 25% of annual pay and above EUR 27,500 unless 50% is deferred for 3 years (art. 88(13)).",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "13 — São tributados autonomamente, à taxa de 35",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.ta.manager-bonus.amount",
+      "item": "Bonus amount above which (together with exceeding 25% of annual pay) manager bonuses are hit by the 35% autonomous tax (art. 88(13)(b)); both conditions must hold (AND).",
+      "value": "EUR 27,500",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "possuam valor superior a (euro) 27 500, salvo se",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.manager-bonus.share",
+      "item": "Share of annual remuneration that variable pay to managers must exceed (AND above EUR 27,500) to fall under the 35% autonomous tax (art. 88(13)(b)).",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "parcela superior a 25 % da remuneração anual e",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.ta.loss-uplift",
+      "item": "Increase of ALL autonomous tax rates, in percentage points, for taxpayers with a tax loss in the period (art. 88(14)). Not applied in the start-up period and the next (art. 88(15)). For 2026 also not applied if the company had taxable profit in one of the three prior periods and filed Modelo 22 and IES for the two prior periods on time, or is in its first three periods (art. 95(5) Law 73-A/2025). Stated in points, not as a percentage.",
+      "value": "10 percentage points",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "são elevadas em 10 pontos percentuais",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ta.phev.range",
+      "item": "Minimum electric-mode range for a plug-in hybrid to get the reduced car autonomous tax rates (art. 88(18)).",
+      "value": "50 km",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "quote": "uma autonomia mínima, no modo elétrico, de 50 km",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.wht.irc.resident",
+      "item": "IRC withholding rate on income paid to resident companies (and PEs) covered by art. 94(1): IP royalties, know-how, equipment rental, interest and other capital income, rental income, etc. A payment on account of the final IRC, not final (art. 94(3)). Dividends meeting art. 51 conditions are exempt from withholding under other rules.",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx",
+      "quote": "As retenções na fonte de IRC são efetuadas à taxa de 25 %,",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.wht.irc.board-members",
+      "item": "IRC withholding on remuneration of members of statutory bodies (board fees) paid to companies (art. 94(1)(d) and (4)).",
+      "value": "21.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx",
+      "quote": "aplicando-se aos rendimentos referidos na alínea d) do n.º 1 a taxa de 21,5 %. 5 —",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-cross-border"
+      ]
+    },
+    {
+      "id": "pt.wht.irc.payment-deadline",
+      "item": "IRC withheld must be paid to the State by this day of the month following the deduction (art. 94(6)).",
+      "value": "20th of the following month",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx",
+      "quote": "até ao dia 20 do mês seguinte àquele em",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.wht.irs.capital-28",
+      "item": "Final (liberatoria) IRS withholding on capital income (dividends, interest) paid to residents or non-residents by Portuguese entities with organised accounts (art. 71(1) CIRS). Residents may opt to aggregate (englobamento) outside business activity.",
+      "value": "28%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx",
+      "quote": "à taxa liberatória de 28 %: a) Os",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment"
+      ]
+    },
+    {
+      "id": "pt.wht.irs.nonresident-25",
+      "item": "Final IRS withholding on non-residents' Portuguese employment income, business and professional income, certain capital income (art. 5(2)(m),(n)), pensions (art. 71(4) CIRS).",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx",
+      "quote": "à taxa liberatória de 25 %, os seguintes rendimentos obtidos em território português por não residentes: a)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.wht.irs.blacklist-35",
+      "item": "Final IRS withholding at 35% (art. 71(17) CIRS) on, among others, capital income paid to entities in listed tax havens or to accounts for unidentified holders.",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx",
+      "quote": "à taxa liberatória de 35 %: (Anterior",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.pex.holding",
+      "item": "Participation exemption on dividends received by a Portuguese resident company (art. 51(1)(a) CIRC): holding of at least 10% of capital OR voting rights, direct or direct-and-indirect.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc51.aspx",
+      "quote": "uma participação não inferior a 10 % do capital social ou dos direitos de voto",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions"
+      ]
+    },
+    {
+      "id": "pt.pex.period",
+      "item": "Participation exemption holding period (art. 51(1)(b)): held without interruption for the year before the distribution, or kept until one year is completed.",
+      "value": "one year",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc51.aspx",
+      "quote": "tenha sido detida, de modo ininterrupto, durante o ano anterior à distribuição",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.pex.subject-to-tax",
+      "item": "Participation exemption subject-to-tax test (art. 51(1)(d)): the paying entity must be subject to and not exempt from IRC or a similar tax, with a statutory rate not below 60% of the art. 87(1) IRC rate (waived under art. 51(2) where art. 66(7) conditions are met; never for listed tax havens, art. 51(1)(e)).",
+      "value": "60%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc51.aspx",
+      "quote": "não seja inferior a 60 % da taxa do IRC prevista no n.º 1 do artigo 87.º; e) A",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "pt-corporate-tax",
+        "pt-cross-border"
+      ]
+    },
+    {
+      "id": "pt.pex.gains.period",
+      "item": "Capital gains participation exemption (art. 51-C): gains and losses on shares held without interruption for at least one year are excluded, if art. 51(1)(a),(c),(e) and (d) or (2) are met, whatever percentage is sold.",
+      "value": "one year",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc51c.aspx",
+      "quote": "detidas ininterruptamente por um período não inferior a um ano, desde",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.pex.gains.realestate",
+      "item": "Capital gains participation exemption does NOT apply where Portuguese real estate (other than property used in an agricultural, industrial or commercial activity that is not property trading) represents directly or indirectly more than this share of the assets (art. 51-C(4)).",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc51c.aspx",
+      "quote": "represente, direta ou indiretamente, mais de 50 % do ativo.",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.outbound-div.holding",
+      "item": "Withholding exemption on dividends paid by a Portuguese company to an EU/EEA parent, or treaty-country parent with exchange of information (art. 14(3) CIRC): parent holds at least 10% of capital or voting rights, for one year uninterrupted before the payment, and (treaty case) the parent's statutory rate is not below 60% of the IRC rate. Proof must be given before payment.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc14.aspx",
+      "quote": "c) Detenha direta ou direta e indiretamente, nos termos do n.º 6 do artigo 69.º, uma participação não inferior a 10 % do capital",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions"
+      ]
+    },
+    {
+      "id": "pt.outbound-div.subject-to-tax",
+      "item": "Outbound dividend exemption, treaty-country parents only: the parent's statutory rate must be at least 60% of the art. 87(1) IRC rate (art. 14(3)(b)).",
+      "value": "60%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc14.aspx",
+      "quote": "a taxa legal aplicável à entidade não seja inferior a 60 % da taxa do",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "pt-corporate-tax",
+        "pt-cross-border"
+      ]
+    },
+    {
+      "id": "pt.losses.cap",
+      "item": "Tax losses are carried forward WITHOUT time limit (art. 52(1), wording of Law 24-D/2022, for periods from 1 Jan 2023 and older losses still in their deduction window), but the deduction in each period is capped at 65% of that period's taxable profit; the unused part rolls forward.",
+      "value": "65%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc52.aspx",
+      "quote": "não pode exceder o montante correspondente a 65 % do respetivo lucro tributável, não",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-income-tax"
+      ]
+    },
+    {
+      "id": "pt.losses.ownership-change",
+      "item": "Loss carry-forward is lost when more than 50% of share capital or the majority of voting rights changes hands, unless the change was not mainly tax-driven (valid economic reasons) or an art. 52(9) exception applies.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc52.aspx",
+      "quote": "se verificou a alteração da titularidade de mais de 50 % do capital social ou",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.interest.fixed",
+      "item": "Net financing expenses are deductible up to the HIGHER of EUR 1,000,000 and 30% of tax EBITDA (art. 67(1) CIRC). The EUR 1,000,000 is pro-rated for periods shorter than a year (art. 67(10)). Banks and insurers excluded (art. 67(11)).",
+      "value": "EUR 1,000,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc67.aspx",
+      "quote": "a) (euro) 1 000 000; ou b) 30 % do",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.interest.ebitda",
+      "item": "EBITDA-based limit on net financing expenses: 30% of the result before depreciation, amortisation, net financing expenses and taxes (art. 67(1)(b)); the higher of this and EUR 1,000,000 applies.",
+      "value": "30%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc67.aspx",
+      "quote": "b) 30 % do resultado antes de depreciações, amortizações, gastos de financiamento líquidos e impostos",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-irs-employees-investment"
+      ]
+    },
+    {
+      "id": "pt.interest.carryforward",
+      "item": "Non-deductible net financing expenses may be carried forward to the following five tax periods; unused EBITDA capacity is also carried forward up to the 5th later period (art. 67(2),(3)). The law prints the word cinco (five), no digit, for the expense carry-forward.",
+      "value": "five tax periods",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc67.aspx",
+      "quote": "um ou mais dos cinco períodos de tributação posteriores,",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.pec.status",
+      "item": "Special payment on account (Pagamento Especial por Conta, art. 106 CIRC) is REPEALED by Law 12/2022 for tax periods starting on or after 1 January 2022. No company pays it in 2026.",
+      "value": "repealed from 2022",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc106.aspx",
+      "quote": "Pagamento especial por conta (Revogado.) (Revogação pela Lei n.º 12/2022, de 27 de junho; de acordo com o n.º 2 do",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.ppc.small",
+      "item": "Payments on account (pagamentos por conta) for companies with PRIOR-year turnover of EUR 500,000 or less: 80% of the prior year's IRC (art. 90(1) liability, net of withholding), split in three equal instalments rounded up to the euro (art. 105(2)). Due July, September and 15 December (art. 104(1)(a)).",
+      "value": "80%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105.aspx",
+      "quote": "correspondem a 80 % do montante do imposto",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-social-contributions"
+      ]
+    },
+    {
+      "id": "pt.ppc.large",
+      "item": "Payments on account for companies with prior-year turnover ABOVE EUR 500,000: 95% of the prior year's IRC, in three equal instalments (art. 105(3)).",
+      "value": "95%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105.aspx",
+      "quote": "correspondem a 95 % do montante do imposto",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ppc.threshold",
+      "item": "Prior-year turnover dividing the 80% and 95% payment-on-account rates (art. 105(2),(3)): up to and including EUR 500,000 = 80%; above = 95%.",
+      "value": "EUR 500,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105.aspx",
+      "quote": "seja igual ou inferior a (euro) 500 000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.ppc.dispense",
+      "item": "No payments on account are due when the IRC of the reference (prior) period is below this amount (art. 104(4)).",
+      "value": "EUR 200",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc104.aspx",
+      "quote": "for inferior a € 200. 5 - Se",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ppc.min-settlement",
+      "item": "No final balance payment or refund under art. 104 when the amount is below this figure (art. 104(7)).",
+      "value": "EUR 25",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc104.aspx",
+      "quote": "quando o seu montante for inferior a € 25. (* -",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax",
+        "pt-income-tax"
+      ]
+    },
+    {
+      "id": "pt.ppc.due-dates",
+      "item": "Payments on account due dates for calendar-year companies (art. 104(1)(a)): July, September and 15 December of the year the profit relates to (7th month, 9th month and 15th day of 12th month for non-calendar periods).",
+      "value": "July, September and 15 December",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc104.aspx",
+      "quote": "Em três pagamentos por conta, com vencimento em Julho, Setembro e 15 de Dezembro do",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.ppa.band1",
+      "item": "Additional payment on account (pagamento adicional por conta, art. 105-A) for companies liable to derrama estadual in the prior period: rate on the PRIOR-year taxable profit above EUR 1,500,000 up to EUR 7,500,000.",
+      "value": "2.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105a.aspx",
+      "quote": "à qual se aplica a taxa de 2,5 %; outra, igual ao lucro tributável que exceda (euro) 7 500 000, à",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.ppa.band2",
+      "item": "Additional payment on account rate on prior-year taxable profit above EUR 7,500,000 up to EUR 35,000,000 (art. 105-A(3)).",
+      "value": "4.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105a.aspx",
+      "quote": "que exceda (euro) 7 500 000, à qual se aplica a taxa de 4,5 %;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.ppa.band3",
+      "item": "Additional payment on account rate on prior-year taxable profit above EUR 35,000,000 (art. 105-A(3)(b)).",
+      "value": "8.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105a.aspx",
+      "quote": "que exceda € 35 000 000, à qual se aplica a taxa de 8,5 %. (Redação",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.filing.m22",
+      "item": "Modelo 22 (annual IRC return) deadline for calendar-year taxpayers: last day of MAY of the following year, working day or not (art. 120(1)). Non-calendar periods: last day of the 5th month after period end (art. 120(2)). The balance of IRC is paid by the same deadline (art. 104(1)(b)).",
+      "value": "last day of May",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx",
+      "quote": "até ao último dia do mês de Maio, independentemente de esse dia ser útil ou não útil. 2 -",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.filing.m22.cessation",
+      "item": "Modelo 22 after cessation of activity: by the last day of the third month after cessation (art. 120(3)).",
+      "value": "last day of the third month after cessation",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx",
+      "quote": "até ao último dia do terceiro mês seguinte ao da data da cessação,",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.filing.ies",
+      "item": "IES (annual accounting and tax information return) deadline: 15 July, working day or not (art. 121(2)); non-calendar periods: 15th day of the 7th month after period end (art. 121(3)).",
+      "value": "15 July",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx",
+      "quote": "até ao dia 15 de Julho, independentemente de esse dia ser útil ou não útil. 3 -",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.refund.deadline",
+      "item": "IRC refunds are paid by the end of the 3rd month after the return is filed, if filed on time and without errors (art. 104(3)).",
+      "value": "end of 3rd month",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc104.aspx",
+      "quote": "até ao fim do 3.º mês seguinte ao do seu envio .",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.group.threshold",
+      "item": "Special group taxation regime (RETGS, art. 69 CIRC): the parent must hold, directly or indirectly, at least 75% of the capital of each subsidiary, and that holding must give more than 50% of voting rights.",
+      "value": "75%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc69.aspx",
+      "quote": "pelo menos, 75 % do capital de outra ou outras sociedades ditas dominadas,",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "pt-corporate-tax",
+        "pt-income-tax"
+      ]
+    },
+    {
+      "id": "pt.irs.band1",
+      "item": "IRS 2026 general rate table (art. 68 CIRS, wording of Law 73-A/2025): taxable income up to EUR 8,342, marginal (normal) rate.",
+      "value": "12.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "12,50 12,500 De mais de 8 342",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-corporate-tax"
+      ]
+    },
+    {
+      "id": "pt.irs.band2",
+      "item": "IRS 2026: taxable income over EUR 8,342 up to EUR 12,587, marginal rate.",
+      "value": "15.7%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "De mais de 8 342 até 12 587 15,70",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.irs.band3",
+      "item": "IRS 2026: over EUR 12,587 up to EUR 17,838, marginal rate.",
+      "value": "21.2%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "De mais de 12 587 até 17 838 21,20",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.irs.band4",
+      "item": "IRS 2026: over EUR 17,838 up to EUR 23,089, marginal rate.",
+      "value": "24.1%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "De mais de 17 838 até 23 089 24,10",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.irs.band5",
+      "item": "IRS 2026: over EUR 23,089 up to EUR 29,397, marginal rate.",
+      "value": "31.1%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "De mais de 23 089 até 29 397 31,10",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.irs.band6",
+      "item": "IRS 2026: over EUR 29,397 up to EUR 43,090, marginal rate.",
+      "value": "34.9%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "De mais de 29 397 até 43 090 34,90",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.irs.band7",
+      "item": "IRS 2026: over EUR 43,090 up to EUR 46,566, marginal rate.",
+      "value": "43.1%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "De mais de 43 090 até 46 566 43,10",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.irs.band8",
+      "item": "IRS 2026: over EUR 46,566 up to EUR 86,634, marginal rate.",
+      "value": "44.6%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "até 86 634 44,60",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "pt.irs.band9",
+      "item": "IRS 2026: taxable income above EUR 86,634, top marginal rate (before the solidarity surcharge).",
+      "value": "48%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "quote": "Superior a 86 634 48,00",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "pt-cross-border"
+      ]
+    },
+    {
+      "id": "pt.irs.solidarity.1",
+      "item": "IRS additional solidarity rate (art. 68-A CIRS) on taxable income above EUR 80,000 up to EUR 250,000 (per half of income for joint filers).",
+      "value": "2.5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx",
+      "quote": "à qual se aplica a taxa de 2,5 %;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.irs.solidarity.2",
+      "item": "IRS additional solidarity rate on taxable income above EUR 250,000 (art. 68-A(2)).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx",
+      "quote": "igual ao rendimento coletável que exceda (euro) 250 000, à qual se aplica a taxa de 5 %.",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "portugal-payroll",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.irs.solidarity.start",
+      "item": "Taxable income above which the IRS solidarity surcharge starts (art. 68-A(1)).",
+      "value": "EUR 80,000",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx",
+      "quote": "ao quantitativo do rendimento coletável superior a (euro) 80 000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ]
+    },
+    {
+      "id": "pt.irs.special-28",
+      "item": "IRS special autonomous rate (art. 72(1) CIRS) on net capital gains on securities etc., capital income not withheld, non-residents' other income, and rental income other than housing leases.",
+      "value": "28%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx",
+      "quote": "São tributados à taxa autónoma de 28 %:",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-crypto-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment"
+      ]
+    },
+    {
+      "id": "pt.irs.housing-rent",
+      "item": "IRS autonomous rate on residential lease income (art. 72(2) CIRS), before the reductions for long leases (10, 15 or 20 points).",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx",
+      "quote": "são tributados à taxa autónoma de 25 %.",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-social-contributions",
+        "pt-transfer-pricing"
+      ]
+    },
+    {
+      "id": "pt.iva.reduced",
+      "item": "VAT (IVA) reduced rate, mainland Portugal, goods and services in List I (art. 18(1)(a) CIVA). Azores and Madeira set their own lower rates (art. 18(3)).",
+      "value": "6%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx",
+      "quote": "constantes da lista I anexa a este diploma, a taxa de 6%;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-vat-return"
+      ]
+    },
+    {
+      "id": "pt.iva.intermediate",
+      "item": "VAT intermediate rate, mainland, List II (art. 18(1)(b) CIVA).",
+      "value": "13%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx",
+      "quote": "constantes da lista II anexa a este diploma, a taxa de 13%;",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-vat-return"
+      ]
+    },
+    {
+      "id": "pt.iva.standard",
+      "item": "VAT standard rate, mainland, all other supplies (art. 18(1)(c) CIVA). Azores and Madeira rates differ.",
+      "value": "23%",
+      "tax_year": 2026,
+      "source_url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx",
+      "quote": "transmissões de bens e prestações de serviços, a taxa de 23%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-income-tax"
+      ]
+    }
+  ]
+}

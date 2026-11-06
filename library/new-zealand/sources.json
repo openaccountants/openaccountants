@@ -1,0 +1,1121 @@
+{
+  "country": "new-zealand",
+  "code": "NZ",
+  "url_count": 141,
+  "sources": [
+    {
+      "url": "https://gazette.govt.nz/notice/id/2025-au1361",
+      "skills": [],
+      "figures": [
+        "nz.acc.work-levy.average.2026-27"
+      ]
+    },
+    {
+      "url": "https://github.com/BetterRules/openfisca-aotearoa",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/digitalaotearoa/openfisca-aotearoa",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.business.govt.nz/tax-and-money/guide-to-business-tax/acc-levies",
+      "skills": [],
+      "figures": [
+        "nz.acc.weekly-comp"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3b/ir3b-2026.pdf",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir260/ir260.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir265/ir265-march-2026.pdf",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir289/ir289.pdf",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf",
+      "skills": [
+        "new-zealand-crypto-tax",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ],
+      "figures": [
+        "nz.gst.rate"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir328/ir328-2026-27.pdf",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir330c/ir330c-2024.pdf",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": [
+        "nz.gst.tax-fraction",
+        "nz.gst.tsi.low",
+        "nz.gst.tsi.band",
+        "nz.gst.change-in-use.small",
+        "nz.gst.change-in-use.pct",
+        "nz.gst.adjust-periods.small",
+        "nz.gst.adjust-periods.mid",
+        "nz.gst.records"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir400---ir499/ir461/ir461.pdf",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/about-us/information-sharing/mous/acc",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/aim",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.prov.aim.turnover"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/airdrops-and-hard-forks",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/buying-selling",
+      "skills": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/buying-selling/acquiring-sell-exchange",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/buying-selling/profit-making-scheme",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/buying-selling/trading",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/mining",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/tax-residence",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/individual/tax-residence/new-returning",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/non-fungible-tokens",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/taxing",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/taxing/cryptoassets-and-gst",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/taxing/declare-cryptoasset-income-or-loss",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/taxing/income-expenses/calculating-cryptoasset-income",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/cryptoassets/taxing/record-keeping",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/close-companies",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/about",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/calculating-taxable-value",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/exemptions",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/ways-to-value",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/changing-your-filing-frequency-or-accounting-basis/changing-your-gst-accounting-basis",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/charging-gst",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/charging-gst/exempt-supplies",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/charging-gst/special-supplies",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/claiming-gst",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/calculating-your-gst",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": [
+        "nz.gst.return-due-standard",
+        "nz.gst.return-due-march",
+        "nz.gst.return-due-november"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst/file-your-gst-return",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/paying-gst",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/gst-adjustments",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/gst-adjustments/change-in-use-adjustments-for-gst",
+      "skills": [
+        "nz-gst-return",
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/gst-adjustments/other-gst-credit-adjustments",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/gst-adjustments/other-gst-debit-adjustments",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/gst-cancellation/when-to-cancel-your-gst-registration",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-low-value-imported-goods",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-remote-services-into-new-zealand",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/registering-for-gst",
+      "skills": [
+        "new-zealand-crypto-tax",
+        "nz-gst-return",
+        "nz-income-tax-ir3"
+      ],
+      "figures": [
+        "nz.gst.registration-threshold"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/registering-for-gst/registering-for-gst-voluntarily",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/registering-for-gst/which-gst-accounting-basis-and-filing-frequency-should-i-use",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": [
+        "nz.gst.payments-basis-limit",
+        "nz.gst.monthly-compulsory",
+        "nz.gst.six-monthly-limit"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/tax-invoices-for-gst",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/tax-invoices-for-gst/how-taxable-supply-information-for-gst-works",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/gst/what-gst-is",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/balance-dates",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/look-through-companies/acc-levies-for-a-look-through-company",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": [
+        "nz.corp.rate",
+        "nz.maori-authority.rate"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": [
+        "nz.trust.rate",
+        "nz.trust.de-minimis",
+        "nz.trust.low-rate"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses/kilometre-rates-2025-2026",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses/use-a-logbook",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/claiming-depreciation",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use",
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/managing-depreciation",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/entertainment-expenses",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/new-assets---investment-boost/what--you-can-claim-with-investment-boost",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/using-your-home-for-your-business",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/foreign-investment-funds-fifs",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/foreign-investment-funds-fifs/foreign-investment-fund-rules-exemptions",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/interest-and-dividends/financial-arrangements-rules",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/trading-stock",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-income/trading-stock/valuing-trading-stock",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "skills": [
+        "nz-acc-levies",
+        "nz-income-tax-ir3"
+      ],
+      "figures": [
+        "nz.acc.earners-levy.2026-27",
+        "nz.acc.earners-levy.2026-27.per100",
+        "nz.acc.max-earnings.2026-27",
+        "nz.acc.max-levy.2026-27",
+        "nz.acc.earners-levy.2025-26",
+        "nz.acc.max-earnings.2025-26",
+        "nz.acc.earners-levy.2027-28",
+        "nz.acc.max-earnings.2027-28",
+        "nz.acc.max-earnings.2024-25",
+        "nz.acc.earners-levy.2024-25"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/donation-tax-credits",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": [
+        "nz.ietc.lower",
+        "nz.ietc.upper",
+        "nz.ietc.weekly",
+        "nz.ietc.abatement-start",
+        "nz.ietc.abatement-rate",
+        "nz.ietc.max"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "skills": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ],
+      "figures": [
+        "nz.it.band1.rate",
+        "nz.it.band1.top",
+        "nz.it.band2.rate",
+        "nz.it.band2.top",
+        "nz.it.band3.rate",
+        "nz.it.band3.top",
+        "nz.it.band4.rate",
+        "nz.it.band4.top",
+        "nz.it.band5.rate",
+        "nz.it.band5.from",
+        "nz.it.2024-25.composite-12.82"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/types-of-individual-income/share-investments",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3",
+      "skills": [
+        "new-zealand-crypto-tax",
+        "nz-income-tax-ir3",
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": [
+        "nz.ir3.untaxed-income-trigger",
+        "nz.ir3.due"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/timelines-at-the-end-of-the-tax-year",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": [
+        "nz.it.terminal-tax-due"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax",
+      "skills": [
+        "new-zealand-crypto-tax",
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.prov.rit-threshold"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/choosing-to-be-a-provisional-tax-payer",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/interest-on-provisional-tax",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.prov.uomi-safe-harbour",
+        "nz.prov.uomi-de-minimis"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/paying-tax-in-your-first-year-in-business",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax/payment-dates-for-provisional-tax",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/estimation-option",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.prov.estimation.3-instalments"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/estimation-option/work-out-provisional-tax-using-the-estimation-option",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.prov.ratio.rit-range"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option/work-out-provisional-tax-using-the-ratio-option",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.prov.standard.uplift-prior",
+        "nz.prov.standard.uplift-2yr"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option/work-out-provisional-tax-using-the-standard-option",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.prov.dates"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/income-tax/withholding-taxes/schedular-payments/getting-schedular-payments/work-out-and-declare-my-tax-rate-for-schedular-payments",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/international-tax/exchange-of-information/crypto-asset-reporting-framework/crypto-asset-reporting-framework-overview",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/international-tax/individuals/tax-residency-status-for-individuals",
+      "skills": [
+        "nz-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "skills": [
+        "nz-gst-return",
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.uomi.under.2026-01-16",
+        "nz.uomi.over.2026-01-16",
+        "nz.uomi.under.2025-05-08",
+        "nz.uomi.over.2025-05-08",
+        "nz.uomi.under.2025-01-16",
+        "nz.uomi.over.2025-01-16",
+        "nz.uomi.de-minimis"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties",
+      "skills": [
+        "nz-gst-return",
+        "nz-income-tax-ir3"
+      ],
+      "figures": [
+        "nz.gst.late-filing.payments-basis",
+        "nz.gst.late-filing.invoice-basis",
+        "nz.penalty.late-filing.it.low",
+        "nz.penalty.late-filing.it.mid",
+        "nz.penalty.late-filing.it.high"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties",
+      "skills": [
+        "nz-gst-return",
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ],
+      "figures": [
+        "nz.penalty.late-payment.initial",
+        "nz.penalty.late-payment.day7",
+        "nz.penalty.late-payment.monthly"
+      ]
+    },
+    {
+      "url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/shortfall-penalties",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property-interest-rules",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/buying-intending-to-resell",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/dealers-developers-builders",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/property-sold-before-1-july-2024",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-test",
+      "skills": [
+        "nz-capital-gains",
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-test/exclusions-to-the-brightline-test",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property/renting-out-residential-property/residential-rental-income-and-paying-tax-on-it",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/property/renting-out-residential-property/residential-rental-property-deductions",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/roles/nz-tax-residents/exemption",
+      "skills": [
+        "nz-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/roles/tax-agents/updating-client-bic-code",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/sharing-economy/listing-intermediary-rules/flat-rate-credit-scheme",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/sharing-economy/sellers-of-listed-services/gst-for-listed-services",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/sharing-economy/sellers-of-listed-services/short-stay-accommodation",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/situations/i-am-self-employed-and-making-a-loss",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/situations/work-or-study-in-new-zealand",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/topics/intermediaries/extension-of-time-arrangements",
+      "skills": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax",
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ird.govt.nz/updates/news-folder/2025/acc-earners-levies-set",
+      "skills": [
+        "nz-acc-levies"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2009/2009-other-determination-e12/2009-other-determination-e12-pdf.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxpolicy.ird.govt.nz/-/media/project/ir/tp/publications/2026/is-foreign-investment-fund.pdf",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxpolicy.ird.govt.nz/publications/2026/ac-taxation-budget-measures-act",
+      "skills": [
+        "nz-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/2022/is-22-05.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/2025/is-25-21.pdf?modified=20251023203446",
+      "skills": [
+        "nz-gst-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/is1403.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/questions-we-ve-been-asked/2019/qb19-04.pdf",
+      "skills": [
+        "nz-provisional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/questions-we-ve-been-asked/2021/qb-21-06.pdf",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/rulings/public/pub00300-august2018.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tds/2025/tds-25-23.pdf?modified=20251006020051",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-03---1991-1992/tib-vol3-no09.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-29---2017/tib-vol29-no4.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no5.pdf?modified=20220803034927&modified=20220803034927",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no9.pdf",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-36---2024/tib-vol36-no7.pdf",
+      "skills": [
+        "nz-income-tax-ir3"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/case-summaries/2007/timing-of-deduction-for-accounting-services",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/consultations/2026/irruip18",
+      "skills": [
+        "new-zealand-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/determinations/miscellaneous/det-e12-persons-excused-from-complying-with-section-ea-3-of-the-income-tax-act-2007",
+      "skills": [
+        "nz-timing-deductions-when-expense-incurred"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.taxtechnical.ird.govt.nz/operational-statements/2026/os-19-04-km-2026",
+      "skills": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ],
+      "figures": []
+    }
+  ]
+}

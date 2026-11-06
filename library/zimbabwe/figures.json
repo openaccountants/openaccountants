@@ -1,0 +1,746 @@
+{
+  "country": "zimbabwe",
+  "code": "ZW",
+  "figure_count": 69,
+  "figures": [
+    {
+      "id": "zw.paye.usd.month.rate.0",
+      "item": "PAYE, USD monthly table: rate on monthly USD remuneration in the 0% band (tax = income x rate minus the deduct amount). Applies to remuneration paid in USD; salaries with both ZWG and USD parts use the USD table and apportion. 2025 table, still the latest on ZIMRA.",
+      "value": "0%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from - to 100.00 multiply by 0%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zimbabwe-vat",
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.paye.usd.month.band.0.upper",
+      "item": "PAYE, USD monthly table: top of the 0% band (monthly remuneration in USD).",
+      "value": "USD 100.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from - to 100.00 multiply by 0%",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.rate.20",
+      "item": "PAYE, USD monthly table: rate on monthly USD remuneration in the 20% band (tax = income x rate minus the deduct amount). Applies to remuneration paid in USD; salaries with both ZWG and USD parts use the USD table and apportion. 2025 table, still the latest on ZIMRA.",
+      "value": "20%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 100.01 to 300.00 multiply by 20% Deduct 20.00",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.paye.usd.month.band.20.upper",
+      "item": "PAYE, USD monthly table: top of the 20% band (monthly remuneration in USD).",
+      "value": "USD 300.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 100.01 to 300.00 multiply by 20% Deduct 20.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.deduct.20",
+      "item": "PAYE, USD monthly table: fixed amount deducted after multiplying monthly USD remuneration by 20% (the quick-deduction column, not a credit).",
+      "value": "USD 20.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 100.01 to 300.00 multiply by 20% Deduct 20.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.rate.25",
+      "item": "PAYE, USD monthly table: rate on monthly USD remuneration in the 25% band (tax = income x rate minus the deduct amount). Applies to remuneration paid in USD; salaries with both ZWG and USD parts use the USD table and apportion. 2025 table, still the latest on ZIMRA.",
+      "value": "25%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 300.01 to 1,000.00 multiply by 25% Deduct 35.00",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.paye.usd.month.band.25.upper",
+      "item": "PAYE, USD monthly table: top of the 25% band (monthly remuneration in USD).",
+      "value": "USD 1,000.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 300.01 to 1,000.00 multiply by 25% Deduct 35.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.deduct.25",
+      "item": "PAYE, USD monthly table: fixed amount deducted after multiplying monthly USD remuneration by 25% (the quick-deduction column, not a credit).",
+      "value": "USD 35.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 300.01 to 1,000.00 multiply by 25% Deduct 35.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.rate.30",
+      "item": "PAYE, USD monthly table: rate on monthly USD remuneration in the 30% band (tax = income x rate minus the deduct amount). Applies to remuneration paid in USD; salaries with both ZWG and USD parts use the USD table and apportion. 2025 table, still the latest on ZIMRA.",
+      "value": "30%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 1,000.01 to 2,000.00 multiply by 30% Deduct 85.00",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.paye.usd.month.band.30.upper",
+      "item": "PAYE, USD monthly table: top of the 30% band (monthly remuneration in USD).",
+      "value": "USD 2,000.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 1,000.01 to 2,000.00 multiply by 30% Deduct 85.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.deduct.30",
+      "item": "PAYE, USD monthly table: fixed amount deducted after multiplying monthly USD remuneration by 30% (the quick-deduction column, not a credit).",
+      "value": "USD 85.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 1,000.01 to 2,000.00 multiply by 30% Deduct 85.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.rate.35",
+      "item": "PAYE, USD monthly table: rate on monthly USD remuneration in the 35% band (tax = income x rate minus the deduct amount). Applies to remuneration paid in USD; salaries with both ZWG and USD parts use the USD table and apportion. 2025 table, still the latest on ZIMRA.",
+      "value": "35%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 2,000.01 to 3,000.00 multiply by 35% Deduct 185.00",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.paye.usd.month.band.35.upper",
+      "item": "PAYE, USD monthly table: top of the 35% band (monthly remuneration in USD).",
+      "value": "USD 3,000.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 2,000.01 to 3,000.00 multiply by 35% Deduct 185.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.deduct.35",
+      "item": "PAYE, USD monthly table: fixed amount deducted after multiplying monthly USD remuneration by 35% (the quick-deduction column, not a credit).",
+      "value": "USD 185.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 2,000.01 to 3,000.00 multiply by 35% Deduct 185.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.month.rate.40",
+      "item": "PAYE, USD monthly table: rate on monthly USD remuneration in the 40% band (tax = income x rate minus the deduct amount). Applies to remuneration paid in USD; salaries with both ZWG and USD parts use the USD table and apportion. 2025 table, still the latest on ZIMRA.",
+      "value": "40%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 3,000.01 and above multiply by 40% Deduct 335.00",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.paye.usd.month.deduct.40",
+      "item": "PAYE, USD monthly table: fixed amount deducted after multiplying monthly USD remuneration by 40% (the quick-deduction column, not a credit).",
+      "value": "USD 335.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 3,000.01 and above multiply by 40% Deduct 335.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.band.0.upper",
+      "item": "PAYE, USD annual table: top of the 0% band (annual remuneration in USD).",
+      "value": "USD 1,200.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 0 to 1,200.00 multiply by 0%",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.band.20.upper",
+      "item": "PAYE, USD annual table: top of the 20% band (annual remuneration in USD).",
+      "value": "USD 3,600.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 1,201 to 3,600.00 multiply by 20% Deduct 240",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.deduct.20",
+      "item": "PAYE, USD annual table: quick-deduction amount for the 20% band.",
+      "value": "USD 240",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 1,201 to 3,600.00 multiply by 20% Deduct 240",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.band.25.upper",
+      "item": "PAYE, USD annual table: top of the 25% band (annual remuneration in USD).",
+      "value": "USD 12,000.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 3,601 to 12,000.00 multiply by 25% Deduct 420",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.deduct.25",
+      "item": "PAYE, USD annual table: quick-deduction amount for the 25% band.",
+      "value": "USD 420",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 3,601 to 12,000.00 multiply by 25% Deduct 420",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.band.30.upper",
+      "item": "PAYE, USD annual table: top of the 30% band (annual remuneration in USD).",
+      "value": "USD 24,000.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 12,001 to 24,000.00 multiply by 30% Deduct 1,020",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.deduct.30",
+      "item": "PAYE, USD annual table: quick-deduction amount for the 30% band.",
+      "value": "USD 1,020",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 12,001 to 24,000.00 multiply by 30% Deduct 1,020",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.band.35.upper",
+      "item": "PAYE, USD annual table: top of the 35% band (annual remuneration in USD).",
+      "value": "USD 36,000.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 24,001 to 36,000.00 multiply by 35% Deduct 2,220",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.deduct.35",
+      "item": "PAYE, USD annual table: quick-deduction amount for the 35% band.",
+      "value": "USD 2,220",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 24,001 to 36,000.00 multiply by 35% Deduct 2,220",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.deduct.40",
+      "item": "PAYE, USD annual table: quick-deduction amount for the 40% band.",
+      "value": "USD 4,020",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 36,001 and above multiply by 40% Deduct 4,020",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.usd.year.band.40.lower",
+      "item": "PAYE, USD annual table: annual remuneration from which the top 40% rate applies.",
+      "value": "USD 36,001",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "from 36,001 and above multiply by 40% Deduct 4,020",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.band.0.upper",
+      "item": "PAYE, ZWG (ZiG) monthly table: top of the 0% band (monthly remuneration in ZWG, for salaries paid wholly in ZWG).",
+      "value": "ZWG 2,800",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from - to 2800 multiply by 0%",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.band.20.upper",
+      "item": "PAYE, ZWG (ZiG) monthly table: top of the 20% band (monthly remuneration in ZWG, for salaries paid wholly in ZWG).",
+      "value": "ZWG 8,400",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 2800.01 to 8400 multiply by 20% Deduct 560",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.deduct.20",
+      "item": "PAYE, ZWG monthly table: quick-deduction amount for the 20% band.",
+      "value": "ZWG 560",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 2800.01 to 8400 multiply by 20% Deduct 560",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.band.25.upper",
+      "item": "PAYE, ZWG (ZiG) monthly table: top of the 25% band (monthly remuneration in ZWG, for salaries paid wholly in ZWG).",
+      "value": "ZWG 28,000",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 8400.01 to 28000 multiply by 25% Deduct 980",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.deduct.25",
+      "item": "PAYE, ZWG monthly table: quick-deduction amount for the 25% band.",
+      "value": "ZWG 980",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 8400.01 to 28000 multiply by 25% Deduct 980",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.band.30.upper",
+      "item": "PAYE, ZWG (ZiG) monthly table: top of the 30% band (monthly remuneration in ZWG, for salaries paid wholly in ZWG).",
+      "value": "ZWG 56,000",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 28000.01 to 56000 multiply by 30% Deduct 2,380",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.deduct.30",
+      "item": "PAYE, ZWG monthly table: quick-deduction amount for the 30% band.",
+      "value": "ZWG 2,380",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 28000.01 to 56000 multiply by 30% Deduct 2,380",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.band.35.upper",
+      "item": "PAYE, ZWG (ZiG) monthly table: top of the 35% band (monthly remuneration in ZWG, for salaries paid wholly in ZWG).",
+      "value": "ZWG 84,000",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 56000.01 to 84000 multiply by 35% Deduct 5,180",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.deduct.35",
+      "item": "PAYE, ZWG monthly table: quick-deduction amount for the 35% band.",
+      "value": "ZWG 5,180",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 56000.01 to 84000 multiply by 35% Deduct 5,180",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.deduct.40",
+      "item": "PAYE, ZWG monthly table: quick-deduction amount for the 40% band.",
+      "value": "ZWG 9,380",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 84000.01 and above multiply by 40% Deduct 9,380",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.band.0.upper",
+      "item": "PAYE, ZWG annual table: top of the 0% band (annual remuneration in ZWG).",
+      "value": "ZWG 33,600",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 0 to 33600 multiply by 0%",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.band.20.upper",
+      "item": "PAYE, ZWG annual table: top of the 20% band (annual remuneration in ZWG).",
+      "value": "ZWG 100,800",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 33601 to 100800 multiply by 20% Deduct 6,720",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.deduct.20",
+      "item": "PAYE, ZWG annual table: quick-deduction amount for the 20% band.",
+      "value": "ZWG 6,720",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 33601 to 100800 multiply by 20% Deduct 6,720",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.band.25.upper",
+      "item": "PAYE, ZWG annual table: top of the 25% band (annual remuneration in ZWG).",
+      "value": "ZWG 336,000",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 100801 to 336000 multiply by 25% Deduct 11,760",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.deduct.25",
+      "item": "PAYE, ZWG annual table: quick-deduction amount for the 25% band.",
+      "value": "ZWG 11,760",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 100801 to 336000 multiply by 25% Deduct 11,760",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.band.30.upper",
+      "item": "PAYE, ZWG annual table: top of the 30% band (annual remuneration in ZWG).",
+      "value": "ZWG 672,000",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 336001 to 672000 multiply by 30% Deduct 28,560",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.deduct.30",
+      "item": "PAYE, ZWG annual table: quick-deduction amount for the 30% band.",
+      "value": "ZWG 28,560",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 336001 to 672000 multiply by 30% Deduct 28,560",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.band.35.upper",
+      "item": "PAYE, ZWG annual table: top of the 35% band (annual remuneration in ZWG).",
+      "value": "ZWG 1,008,000",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 672001 to 1008000 multiply by 35% Deduct 62,160",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.deduct.35",
+      "item": "PAYE, ZWG annual table: quick-deduction amount for the 35% band.",
+      "value": "ZWG 62,160",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 672001 to 1008000 multiply by 35% Deduct 62,160",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.year.deduct.40",
+      "item": "PAYE, ZWG annual table: quick-deduction amount for the 40% band.",
+      "value": "ZWG 112,560",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 1008001 and above multiply by 40% Deduct 112,560",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.month.rate.40",
+      "item": "PAYE, ZWG monthly table: top marginal rate (same 40% as the USD table).",
+      "value": "40%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "quote": "from 84000.01 and above multiply by 40% Deduct 9,380",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.paye.usd.taxfree.month",
+      "item": "PAYE: tax-free threshold per MONTH for USD remuneration (the 0% band). Not an annual figure.",
+      "value": "USD 100",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye",
+      "quote": "Tax-Free Threshold (for the Month) 2,800.00 100",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.zwg.taxfree.month",
+      "item": "PAYE: tax-free threshold per MONTH for ZWG remuneration. The quote prints ZWG first, then USD.",
+      "value": "ZWG 2,800",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye",
+      "quote": "Tax-Free Threshold (for the Month) 2,800.00 100",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.top.rate",
+      "item": "PAYE: highest marginal rate on employment income, both currency tables.",
+      "value": "40%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye",
+      "quote": "Highest tax rate 40% 40%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.aids.levy.rate",
+      "item": "AIDS levy: 3% of the income tax payable (after credits), added on top of PAYE; not 3% of income.",
+      "value": "3%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye",
+      "quote": "Calculate 3% Aids Levy and add to tax after credits",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.aids.levy.rate.tables",
+      "item": "AIDS levy as printed at the foot of the USD PAYE tables: 3% of the individual's tax payable.",
+      "value": "3%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "quote": "Aids Levy is 3% of the Individuals' Tax payable",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.credit.elderly.blind.disabled",
+      "item": "Tax credit per year for an elderly (55 or over before the year starts), blind or disabled person, deducted from tax; ZWG equivalent for ZWG income.",
+      "value": "USD 900.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye",
+      "quote": "(US$900.00 or ZWG equivalent per annum)",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.credit.elderly",
+      "item": "Elderly persons credit per year (aged 55 or more), USD income, or ZWG equivalent at the rate on the day of payment.",
+      "value": "USD 900.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/tax-concession-for-the-elderly",
+      "quote": "Entitled to an elderly persons’ credit of US$900.00 per annum",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.credit.medical.ratio",
+      "item": "Medical credit: USD 1 of credit for every USD 2 paid (medical aid contributions / medical expenses), i.e. half; deducted from tax.",
+      "value": "USD 1.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye",
+      "quote": "medical credit $1.00 of every $2.00 paid",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.elderly.rent.exempt",
+      "item": "Exempt rental income of an elderly person (55 or over), per year, USD income.",
+      "value": "USD 1500",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/tax-concession-for-the-elderly",
+      "quote": "rental income shall be US$1500",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.elderly.interest.exempt",
+      "item": "Exempt interest on deposits with financial institutions for an elderly person, first amount per year.",
+      "value": "USD 3,000.00",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/tax-concession-for-the-elderly",
+      "quote": "Exemption from Income Tax of the first US$3,000.00 per annum on income earned from interest",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.bonus.exempt.usd",
+      "item": "Tax-free bonus / performance award per employee per year, paid in foreign currency (USD) or ZiG equivalent; page states this \"with effect from 1 January 2024\" and gives no later figure. Confirm it is unchanged for 2026.",
+      "value": "USD 400",
+      "tax_year": "from 1 January 2024 (page gives no later figure)",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/paye-explained",
+      "quote": "the tax-free threshold for those paid in foreign currency is USD400",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.fb.data.airtime",
+      "item": "Fringe benefit: data and airtime for home/outside-work use, deemed benefit as a share of the employer cost (nil if proven wholly business).",
+      "value": "30%",
+      "tax_year": "from 1 January 2022",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/paye-explained",
+      "quote": "The deemed benefit is pegged at 30% of the cost to the employer",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.fb.car.1500",
+      "item": "Fringe benefit: deemed yearly value of a company car by engine size (Up to 1500cc), USD; reduce pro rata for under 12 months. Page labels these \"for 2024\".",
+      "value": "USD 625.00",
+      "tax_year": "2024 (page labels them 2024; no later figure)",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/paye-explained",
+      "quote": "Up to 1500cc 625.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.fb.car.2000",
+      "item": "Fringe benefit: deemed yearly value of a company car by engine size (Over 1500cc -2000cc), USD; reduce pro rata for under 12 months. Page labels these \"for 2024\".",
+      "value": "USD 830.00",
+      "tax_year": "2024 (page labels them 2024; no later figure)",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/paye-explained",
+      "quote": "Over 1500cc -2000cc 830.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.fb.car.3000",
+      "item": "Fringe benefit: deemed yearly value of a company car by engine size (Over 2000cc -3000cc), USD; reduce pro rata for under 12 months. Page labels these \"for 2024\".",
+      "value": "USD 1,250.00",
+      "tax_year": "2024 (page labels them 2024; no later figure)",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/paye-explained",
+      "quote": "Over 2000cc -3000cc 1,250.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.fb.car.over3000",
+      "item": "Fringe benefit: deemed yearly value of a company car by engine size (Over 3000cc), USD; reduce pro rata for under 12 months. Page labels these \"for 2024\".",
+      "value": "USD 1,660.00",
+      "tax_year": "2024 (page labels them 2024; no later figure)",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/individual/paye-explained",
+      "quote": "Over 3000cc 1,660.00",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.payment.day",
+      "item": "PAYE payment due date: by the 10th of the following month (tax payment calendar).",
+      "value": "10th",
+      "tax_year": 2026,
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-payment-dates",
+      "quote": "Employees’ Tax (Pay As You Earn - PAYE) By the 10 th day",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.return.day.2026",
+      "item": "PAYE return (on TaRMS) due on or before the 5th of the following month in 2026 under SI 81 of 2025; payment by the 10th. June 2026 example.",
+      "value": "5th",
+      "tax_year": 2026,
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4510:public-notice-33-of-2026",
+      "quote": "due on or before 5th June 2026",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.paye.payment.day.2026",
+      "item": "PAYE remittance due on or before the 10th of the following month (June 2026 notice).",
+      "value": "10th",
+      "tax_year": 2026,
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4510:public-notice-33-of-2026",
+      "quote": "Remittances are due on or before 10th June 2026",
+      "read_on": "2026-10-12",
+      "used_by": []
+    },
+    {
+      "id": "zw.cit.rate",
+      "item": "Income tax rate on a company or trust (context for employer).",
+      "value": "25%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates",
+      "quote": "Income of company or trust 14(2c) 25%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    },
+    {
+      "id": "zw.aids.levy.rate.corporate",
+      "item": "AIDS levy on tax chargeable, tax rates page (applies to companies too).",
+      "value": "3%",
+      "tax_year": "2025 (ZIMRA tables for 1 January to 31 December 2025); no 2026 table published on zimra.co.zw as at 12 Oct 2026",
+      "source_url": "https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates",
+      "quote": "Aids Levy: Rate is based on tax chargeable 3%",
+      "read_on": "2026-10-12",
+      "used_by": [
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ]
+    }
+  ]
+}

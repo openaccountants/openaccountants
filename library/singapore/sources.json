@@ -1,0 +1,587 @@
+{
+  "country": "singapore",
+  "code": "SG",
+  "url_count": 64,
+  "sources": [
+    {
+      "url": "https://sso.agc.gov.sg/Act/GSTA1993?ProvIds=pr16-",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.gst.rate",
+        "sg.gst.rate.2023"
+      ]
+    },
+    {
+      "url": "https://sso.agc.gov.sg/Act/ITA1947?ProvIds=Sc2-",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.iit.resident.top-rate",
+        "sg.iit.resident.top-threshold",
+        "sg.iit.resident.pre2024-top"
+      ]
+    },
+    {
+      "url": "https://sso.agc.gov.sg/Act/ITA1947?ProvIds=pr37-",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cpf.gov.sg/employer/employer-obligations/how-much-cpf-contributions-to-pay",
+      "skills": [
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cpf.gov.sg/member/infohub/news/news-releases/cpf-related-changes-taking-place-in-2026-what-you-need-to-know",
+      "skills": [
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/schemes/individual-income-tax/not-ordinarily-resident-%28nor%29-scheme",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/schemes/individual-income-tax/not-ordinarily-resident-(nor)-scheme",
+      "skills": [],
+      "figures": [
+        "sg.nor.last-status",
+        "sg.nor.time-apport.days",
+        "sg.nor.time-apport.income"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-filing-season-2026",
+      "skills": [],
+      "figures": [
+        "sg.cit.filing.due"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "skills": [
+        "singapore-tax-optimization"
+      ],
+      "figures": [
+        "sg.cit.rate",
+        "sg.cit.rebate.ya2026.rate",
+        "sg.cit.rebate.ya2026.cap",
+        "sg.cit.rebate.ya2026.grant",
+        "sg.cit.rebate.ya2026.budget-rate",
+        "sg.cit.rebate.ya2026.budget-grant",
+        "sg.cit.rebate.ya2026.budget-cap",
+        "sg.cit.startup.first.pct",
+        "sg.cit.startup.first.amount",
+        "sg.cit.startup.next.pct",
+        "sg.cit.startup.max",
+        "sg.cit.startup.shareholders",
+        "sg.cit.pte.first.pct",
+        "sg.cit.pte.first.amount",
+        "sg.cit.pte.next.amount",
+        "sg.cit.pte.max"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-(eci)-filing",
+      "skills": [],
+      "figures": [
+        "sg.cit.eci.waiver-revenue"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/overview-of-form-c-s-form-c-s-(lite)-form-c",
+      "skills": [],
+      "figures": [
+        "sg.cit.form-cs.revenue",
+        "sg.cit.form-cs-lite.revenue"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/business-expenses/tax-treatment-of-business-expenses-%28m-r%29",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/capital-allowances",
+      "skills": [
+        "sg-income-tax",
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-allowances/writing-down-allowances-for-intellectual-property-rights-(iprs",
+      "skills": [
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/corporate-income-tax/income-deductions-for-companies/claiming-reliefs/loss-carry-back-relief",
+      "skills": [
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/basics-of-gst/current-gst-rates",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/charging-gst-%28output-tax%29/when-is-gst-not-charged/supplies-exempt-from-gst",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/charging-gst-%28output-tax%29/when-to-charge-0-gst-%28zero-rate%29/providing-international-services",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/claiming-input-tax-incurred-to-make-exempt-supplies",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/claiming-gst-%28input-tax%29/conditions-for-claiming-input-tax",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/completing-gst-returns",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/correcting-errors-made-in-gst-return-%28filing-gst-f7%29",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/due-dates-and-requests-for-extension",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/filing-gst/late-filing-or-non-filing-of-GST-returns-f5-f8",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-and-digital-economy/local-businesses",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-and-digital-economy/overseas-businesses",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-invoicenow-requirement",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-payments-refunds/late-payment-or-non-payment-of-gst",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst",
+      "skills": [
+        "sg-gst-return",
+        "sg-income-tax",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/factors-to-consider-before-registering-voluntarily-for-gst",
+      "skills": [
+        "sg-gst-return",
+        "singapore-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst",
+      "skills": [
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst",
+      "skills": [],
+      "figures": [
+        "sg.gst.registration.threshold"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/consequences-of-non-compliance/errors-in-tax-returns",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/receive-tax-bill-pay-tax-check-refunds/late-payment-or-non-payment-of-individual-income-tax",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/donations",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.relief.cap"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund(cpf)-relief-for-employees",
+      "skills": [],
+      "figures": [
+        "sg.relief.cpf.ow-ceiling.2025",
+        "sg.relief.cpf.ow-ceiling.2026",
+        "sg.relief.cpf.annual-ceiling"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-%28cpf%29-cash-top-up-relief",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-%28cpf%29-relief-for-self-employed-employee-who-is-also-self-employed",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-(cpf)-cash-top-up-relief",
+      "skills": [],
+      "figures": [
+        "sg.relief.cpf-topup.total",
+        "sg.relief.cpf-topup.self"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/course-fees-relief",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.relief.course-fees.last-ya"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.relief.eir.below55",
+        "sg.relief.eir.55to59",
+        "sg.relief.eir.60plus",
+        "sg.relief.eir-disability.below55",
+        "sg.relief.eir-disability.55to59",
+        "sg.relief.eir-disability.60plus"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/life-insurance-relief",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.relief.life.cpf-limit",
+        "sg.relief.life.pct"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-%28disability%29",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-(disability)",
+      "skills": [],
+      "figures": [
+        "sg.relief.parent.with",
+        "sg.relief.parent-disability.with",
+        "sg.relief.parent.apart",
+        "sg.relief.parent-disability.apart",
+        "sg.relief.parent.support-min",
+        "sg.relief.parent.age"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/personal-income-tax-rebate",
+      "skills": [
+        "sg-income-tax",
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/qualifying-child-relief-%28qcr%29-child-relief-%28disability%29",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/qualifying-child-relief-(qcr)-child-relief-(disability)",
+      "skills": [],
+      "figures": [
+        "sg.relief.qcr",
+        "sg.relief.qcr-disability",
+        "sg.relief.qcr-wmcr-cap"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/spouse-relief-spouse-relief-%28disability%29",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/spouse-relief-spouse-relief-(disability",
+      "skills": [
+        "singapore-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/spouse-relief-spouse-relief-(disability)",
+      "skills": [],
+      "figures": [
+        "sg.relief.dependant-income-limit",
+        "sg.relief.dependant-income-limit.old",
+        "sg.relief.spouse",
+        "sg.relief.spouse-disability"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/supplementary-retirement-scheme-%28srs%29-relief",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/supplementary-retirement-scheme-(srs)-relief",
+      "skills": [],
+      "figures": [
+        "sg.relief.srs.cap.citizen",
+        "sg.relief.srs.cap.foreigner",
+        "sg.relief.srs.withdrawal-taxable"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother%27s-child-relief-%28wmcr%29",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "skills": [],
+      "figures": [
+        "sg.relief.wmcr.fixed.1st",
+        "sg.relief.wmcr.fixed.2nd",
+        "sg.relief.wmcr.fixed.3rd",
+        "sg.relief.wmcr.pct.1st",
+        "sg.relief.wmcr.pct.2nd",
+        "sg.relief.wmcr.pct.3rd",
+        "sg.relief.wmcr.total-cap"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-savings-for-married-couples-and-families",
+      "skills": [],
+      "figures": [
+        "sg.relief.nsman-wife",
+        "sg.rebate.ptr.1st",
+        "sg.rebate.ptr.2nd",
+        "sg.rebate.ptr.3rd"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "skills": [
+        "sg-income-tax",
+        "singapore-tax-optimization"
+      ],
+      "figures": [
+        "sg.iit.resident.band1.rate",
+        "sg.iit.resident.band1.amount",
+        "sg.iit.resident.band2.rate",
+        "sg.iit.resident.tax-at-30000",
+        "sg.iit.resident.band3.rate",
+        "sg.iit.resident.tax-at-40000",
+        "sg.iit.resident.band4.rate",
+        "sg.iit.resident.tax-at-80000",
+        "sg.iit.resident.band5.rate",
+        "sg.iit.resident.tax-at-120000",
+        "sg.iit.resident.band6.rate",
+        "sg.iit.resident.tax-at-160000",
+        "sg.iit.resident.band7.rate",
+        "sg.iit.resident.tax-at-200000",
+        "sg.iit.resident.band8.rate",
+        "sg.iit.resident.tax-at-240000",
+        "sg.iit.resident.band9.rate",
+        "sg.iit.resident.tax-at-280000",
+        "sg.iit.resident.band10.rate",
+        "sg.iit.resident.tax-at-320000",
+        "sg.iit.resident.band11.rate",
+        "sg.iit.resident.tax-at-500000",
+        "sg.iit.resident.band12.rate",
+        "sg.iit.resident.tax-at-1000000",
+        "sg.iit.pitr.ya2025.rate",
+        "sg.iit.pitr.ya2025.cap",
+        "sg.iit.pitr.ya2024.rate",
+        "sg.iit.nonres.employment.flat",
+        "sg.iit.nonres.other-income",
+        "sg.iit.nonres.other-income.pre2024",
+        "sg.wht.nonres.professional.gross",
+        "sg.wht.nonres.professional.net",
+        "sg.wht.nonres.entertainer",
+        "sg.wht.nonres.interest",
+        "sg.wht.nonres.royalty",
+        "sg.wht.srs.concession-limit"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.iit.nonres.short-term-days",
+        "sg.res.days",
+        "sg.res.basis"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/filing-a-paper-income-tax-return",
+      "skills": [
+        "sg-income-tax",
+        "singapore-tax-optimization"
+      ],
+      "figures": [
+        "sg.filing.paper-due"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/late-filing-or-non-filing-of-individual-income-tax-returns-form-b1-b-p-m",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/tax-season-2026---all-you-need-to-know",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": [
+        "sg.filing.due",
+        "sg.filing.threshold.income",
+        "sg.filing.threshold.selfemployed"
+      ]
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/business-expenses-and-deductions/fixed-expense-deduction-ratio-for-self-employed-persons-and-platform-workers",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.iras.gov.sg/taxes/individual-income-tax/self-employed-and-partnerships/tax-obligations-of-self-employed-persons/basic-guide-for-self-employed-persons",
+      "skills": [
+        "sg-income-tax"
+      ],
+      "figures": []
+    }
+  ]
+}

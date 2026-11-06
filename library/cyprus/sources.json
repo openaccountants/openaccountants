@@ -1,0 +1,769 @@
+{
+  "country": "cyprus",
+  "code": "CY",
+  "url_count": 85,
+  "sources": [
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731",
+      "skills": [
+        "cy-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://sisweb.mlsi.gov.cy/anotato2025/",
+      "skills": [
+        "cy-cross-border",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": [
+        "cy.si.max-insurable.monthly",
+        "cy.si.max-insurable.weekly"
+      ]
+    },
+    {
+      "url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "skills": [
+        "cy-cross-border",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.si.employee",
+        "cy.si.employer",
+        "cy.si.state",
+        "cy.si.total-employee",
+        "cy.si.self-employed",
+        "cy.si.self-employed-total",
+        "cy.si.voluntary",
+        "cy.payroll.redundancy-fund",
+        "cy.payroll.hrdf",
+        "cy.payroll.social-cohesion",
+        "cy.payroll.minimum-wage",
+        "cy.it.audited-accounts-threshold"
+      ]
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/2026.html",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2001_1_314.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2010_1_289.pdf",
+      "skills": [
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2022_1_273.pdf",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2022_1_314.pdf",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2025_1_337.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2025_1_376.pdf",
+      "skills": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cyprus-income-tax",
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_102.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_103.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_167.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_168.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_172.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_221.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_354.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_362.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_363.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/KDP/data/2026_1_82.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2023_1_051.pdf",
+      "skills": [
+        "cy-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2025_1_047.pdf",
+      "skills": [
+        "cy-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2025_1_104.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2025_1_223.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2025_1_243.pdf",
+      "skills": [
+        "cyprus-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2025_1_244.pdf",
+      "skills": [
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2025_1_245.pdf",
+      "skills": [
+        "cy-non-dom",
+        "cyprus-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/arith/2026_1_109.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html",
+      "skills": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html",
+      "skills": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html",
+      "skills": [
+        "cy-cross-border",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html",
+      "skills": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cy-transfer-pricing",
+        "cyprus-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html",
+      "skills": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/2010_1_59/full.html",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cylaw.org/nomoi/enop/non-ind/2012_1_205/full.html",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesy.org.cy/en-us/hiofinancing",
+      "skills": [
+        "cy-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesy.org.cy/sites/Sites?d=Desktop&locale=en_US&lookuphost=/en-us/&lookuppage=hiofinancing",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/ergasia-kai-koinonikes-asfaliseis/dilosi-tou-ypourgou-ergasias-kai-koinonikon-asfaliseon-gia-tin-afxisi-tou-ethnikou-katotatou-misthou/",
+      "skills": [
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/01/%CE%95%CE%95-11_2023.pdf",
+      "skills": [],
+      "figures": [
+        "cy.vat.first-residence.value-cap",
+        "cy.vat.first-residence.total-value-cliff",
+        "cy.vat.first-residence.area-cliff"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/01/%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%B3%CE%B9%CE%B1-%CE%A3%CF%85%CE%BC%CF%80%CE%BB%CE%AE%CF%81%CF%89%CF%83%CE%B7-%CE%94%CE%AE%CE%BB%CF%89%CF%83%CE%B7%CF%82-%CE%A6%CE%A0%CE%91-06082024.pdf",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/01/2023-1.pdf",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/01/EE6_2023.pdf",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/01/EE7_2023.pdf",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/01/implementation-of-sections-21-and-21A-of-article-8-24072023.pdf",
+      "skills": [
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.it.exempt.21a.rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.it.ded.housing",
+        "cy.it.ded.green",
+        "cy.it.ded.home-insurance",
+        "cy.it.ded.rent-expenses",
+        "cy.it.ded.contributions-cap",
+        "cy.it.ded.life-insurance-cap",
+        "cy.it.ded.medical-fund-cap",
+        "cy.it.aif-carried-interest.rate",
+        "cy.it.aif-carried-interest.min-tax",
+        "cy.it.exempt.21a.cap",
+        "cy.payroll.thirteenth-salary",
+        "cy.ghs.employee",
+        "cy.ghs.cap"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%9D%CF%8C%CE%BC%CE%BF%CE%B9-%CE%A0%CE%92%CE%95-%CE%95%CE%B9%CF%83%CF%80%CF%81%CE%AC%CE%BE%CE%B5%CF%89%CF%82-%CE%A7%CE%B1%CF%81%CF%84%CE%BF%CF%83%CE%AE%CE%BC%CF%89%CE%BD.pdf",
+      "skills": [
+        "cyprus-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "skills": [
+        "cy-corporate-tax",
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.cit.rate",
+        "cy.it.foreign-pension.rate",
+        "cy.it.foreign-pension.threshold",
+        "cy.it.crypto.rate",
+        "cy.it.share-options.rate",
+        "cy.it.share-options.decade-cap",
+        "cy.cit.entertainment-cap",
+        "cy.cit.rd-super-deduction",
+        "cy.it.ded.cultural-donations"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "skills": [
+        "cy-corporate-tax",
+        "cy-non-dom",
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.sdc.dividend.individual",
+        "cy.sdc.dividend.pre-2026-profits",
+        "cy.sdc.interest.individual",
+        "cy.sdc.interest.reduced",
+        "cy.sdc.rent.abolished",
+        "cy.sdc.deemed-distribution.share",
+        "cy.sdc.deemed-distribution.rate",
+        "cy.sdc.hidden-distribution.rate",
+        "cy.sdc.nondom-lump.annual",
+        "cy.cgt.general-exemption.extra",
+        "cy.cgt.property-rich-shares",
+        "cy.cgt.non-regulated-listed-shares",
+        "cy.cgt.main-residence-restructuring"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "skills": [
+        "cy-non-dom",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.it.band.0.upper",
+        "cy.it.rate.0",
+        "cy.it.rate.20",
+        "cy.it.band.20.upper",
+        "cy.it.rate.25",
+        "cy.it.band.25.upper",
+        "cy.it.rate.30",
+        "cy.it.band.30.upper",
+        "cy.it.rate.35",
+        "cy.it.band.35.lower",
+        "cy.it.tax-free.previous",
+        "cy.it.filing.age-from",
+        "cy.it.filing.deadline-2026",
+        "cy.it.ded.child.first",
+        "cy.it.ded.child.second",
+        "cy.it.ded.child.third-plus",
+        "cy.it.ded.income-criterion.family-0-2",
+        "cy.it.ded.income-criterion.family-3-4",
+        "cy.it.ded.income-criterion.family-5-plus",
+        "cy.it.ded.income-criterion.single"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/06/%CE%A0%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%B1%CF%80%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CF%8E%CE%BD-823-%CE%BA%CE%B1%CE%B9-823%CE%91.pdf",
+      "skills": [
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.it.exempt.23a.rate",
+        "cy.it.exempt.23.min-pay",
+        "cy.it.exempt.23a.min-pay",
+        "cy.it.exempt.23a.duration"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/06/Application-Extension-of-Non-Dom.pdf",
+      "skills": [
+        "cy-non-dom",
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.sdc.nondom-lump.5yr"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/06/Article-8-21B-of-the-Income-Tax-Law-N.118-I-2002.pdf",
+      "skills": [
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.it.exempt.21b.rate",
+        "cy.it.exempt.21b.min-earnings",
+        "cy.it.exempt.21b.cap"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/06/Guide-for-completion-of-tax-return-2025.pdf",
+      "skills": [
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.ghs.self-employed"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/media/sites/167/2026/10/EE5_2026.pdf",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/sychnes-erotiseis-gia-tin-eggrafi-f-p-a/",
+      "skills": [],
+      "figures": [
+        "cy.vat.registration.b2b-services-eu"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": [
+        "cy.vat.registration.threshold",
+        "cy.vat.registration.late-penalty",
+        "cy.vat.registration.ic-acquisitions"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/kefalaioychika-kerdi/",
+      "skills": [
+        "cy-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/nomothesia-egkyklioi-kai-synafes-yliko-amesis-forologias/egkyklioi/",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/paroches-se-eidos/",
+      "skills": [
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": [
+        "cy.vat.rate.standard",
+        "cy.vat.rate.reduced-9",
+        "cy.vat.rate.reduced-5",
+        "cy.vat.rate.super-reduced-3",
+        "cy.vat.rate.zero",
+        "cy.vat.zero-basic-goods.end"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/ypovoli-diloseon-t-f-7/dilosi-parakratisis-f-e-kai-eisforon-paye/sychnes-erotiseis-diloseon-parakratisis-f-e-kai-eisforon-paye/",
+      "skills": [
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/",
+      "skills": [],
+      "figures": [
+        "cy.vat.return.period"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-dilosis-f-p-a/",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": [
+        "cy.vat.return.late-filing-penalty",
+        "cy.vat.return.late-additional-tax"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-se-schesi-me-tis-diorthoseis-lathon/",
+      "skills": [
+        "cyprus-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/en/documents/10-year-government-bond-yields/",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/en/documents/certificate-of-earnings-t-d-63/",
+      "skills": [
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/en/documents/declaration-for-claiming-tax-deductions-t-d-59/",
+      "skills": [
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/",
+      "skills": [
+        "cyprus-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/en/documents/registration-deregistration-as-an-employer/",
+      "skills": [
+        "cyprus-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/",
+      "skills": [
+        "cy-non-dom",
+        "cyprus-tax-optimization"
+      ],
+      "figures": [
+        "cy.res.183-day",
+        "cy.res.60-day",
+        "cy.dom.deemed-17-of-20",
+        "cy.dom.origin-exception-20",
+        "cy.sdc.nondom-exemption"
+      ]
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/en/documents/transfer-pricing/frequently-asked-questions-about-transfer-pricing/",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.cy/mof-tax/prothesmies/",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-vat-return"
+      ],
+      "figures": [
+        "cy.vat.return.deadline-example",
+        "cy.payroll.paye.monthly-deadline",
+        "cy.payroll.paye.annual-deadline-2026",
+        "cy.it.deadline.self-employed-no-audit",
+        "cy.it.provisional-tax.instalments"
+      ]
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/00DDEF169CC27CAEC22586B7003F35FE?OpenDocument",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/A0E4DA6A3979A4EAC22586A100418A7A?OpenDocument",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/D5322D5E5CD6F735C22586A10044EC34",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/DF541D1E90F75C56C22586A10042515C?OpenDocument",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/EA4F396F80C4BAA8C22586A10042659F?OpenDocument",
+      "skills": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/CC73852B37301B20C2258E37002C21E4?OpenDocument",
+      "skills": [
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/D6FCFB1C24EE0455C2257B5100299E53?OpenDocument",
+      "skills": [
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/E3FAA841210065C3C2258E37002C0420?OpenDocument",
+      "skills": [
+        "cyprus-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf",
+      "skills": [
+        "cy-transfer-pricing"
+      ],
+      "figures": []
+    }
+  ]
+}

@@ -1,0 +1,912 @@
+{
+  "country": "new-zealand",
+  "code": "NZ",
+  "figure_count": 77,
+  "figures": [
+    {
+      "id": "nz.it.band1.rate",
+      "item": "Personal income tax: rate on each dollar of taxable income from NZD 0 to NZD 15,600. Individuals (resident). Table headed 'From 1 April 2025'; no later table is published, so these bands apply for the whole 2026-27 year (the composite 2024-25 rates do not).",
+      "value": "10.5%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "0 - $15,600 10.5% $15,601 - $53,500 17.5",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band1.top",
+      "item": "Personal income tax: top of the first (10.5%) band. Bands apply to each dollar of income, not to the whole income (progressive, not a cliff).",
+      "value": "NZD 15,600",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "0 - $15,600 10.5% $15,601 - $53,500 17.5",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band2.rate",
+      "item": "Personal income tax: rate on each dollar from NZD 15,601 to NZD 53,500.",
+      "value": "17.5%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$15,601 - $53,500 17.5% $53,501 - $78,10",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band2.top",
+      "item": "Personal income tax: top of the 17.5% band.",
+      "value": "NZD 53,500",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$15,601 - $53,500 17.5% $53,501 - $78,10",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band3.rate",
+      "item": "Personal income tax: rate on each dollar from NZD 53,501 to NZD 78,100.",
+      "value": "30%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$53,501 - $78,100 30% $78,101 - $180,000",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-motor-vehicle-expenses-logbook-business-use",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band3.top",
+      "item": "Personal income tax: top of the 30% band.",
+      "value": "NZD 78,100",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$53,501 - $78,100 30% $78,101 - $180,000",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band4.rate",
+      "item": "Personal income tax: rate on each dollar from NZD 78,101 to NZD 180,000.",
+      "value": "33%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$78,101 - $180,000 33% $180,001 and over",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band4.top",
+      "item": "Personal income tax: top of the 33% band; income above this is taxed at the top rate.",
+      "value": "NZD 180,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$78,101 - $180,000 33% $180,001 and over",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band5.rate",
+      "item": "Personal income tax: top marginal rate, on each dollar of income from NZD 180,001. Same 39% number is also the trustee rate above NZD 10,000 (a different rule).",
+      "value": "39%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$180,001 and over 39% From 1 April 2024 ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.band5.from",
+      "item": "Personal income tax: income level at which the 39% top rate starts.",
+      "value": "NZD 180,001",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$180,001 and over 39% From 1 April 2024 ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.it.2024-25.composite-12.82",
+      "item": "HISTORY, not 2026-27: composite rate for NZD 14,001 to NZD 15,600 in the 2024-25 year (1 April 2024 to 31 March 2025) only, because the thresholds changed from 31 July 2024. Never use for 2026-27.",
+      "value": "12.82%",
+      "tax_year": "2024-25 (1 April 2024 to 31 March 2025; IRD: 2025 income year) - history only",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+      "quote": "$14,001 - $15,600 12.82% $15,601 - $48,0",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-income-tax-ir3"
+      ]
+    },
+    {
+      "id": "nz.ietc.lower",
+      "item": "Independent earner tax credit (IETC): lower income limit. NZ tax residents only; not available if receiving Working for Families, an income-tested benefit, NZ Super or Veteran's Pension. Per person.",
+      "value": "NZD 24,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+      "quote": "between $24,000 and $70,000 in a tax year, you might be able",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.ietc.upper",
+      "item": "IETC: upper income limit; no credit at income above this.",
+      "value": "NZD 70,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+      "quote": "between $24,000 and $70,000 in a tax year, you might be able",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.ietc.weekly",
+      "item": "IETC amount for income between NZD 24,000 and NZD 66,000 (rules 'From July 2024').",
+      "value": "NZD 10 per week",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+      "quote": "$24,000 and $66,000 – you get $10 per week $66,001 and $70,0",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.ietc.abatement-start",
+      "item": "IETC abatement: entitlement reduces for income over this amount.",
+      "value": "NZD 66,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+      "quote": "$66,001 and $70,000 – your entitlement reduces by 13 cents for every dollar you earn over $66,000. Your before",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.ietc.abatement-rate",
+      "item": "IETC abatement rate: 13 cents per dollar of income over NZD 66,000. Written in cents, not a percentage.",
+      "value": "13 cents per dollar",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+      "quote": "reduces by 13 cents for every dollar you earn over $66,000. ",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.ietc.max",
+      "item": "IETC maximum per year.",
+      "value": "NZD 520",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/individual-tax-credits/independent-earner-tax-credit-ietc",
+      "quote": "The most you can receive is $520 per year. How to get the IE",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.ir3.untaxed-income-trigger",
+      "item": "IR3 filing trigger: an individual must file if they received more than this amount (before tax) of income IRD has not been told about. More than, not at least.",
+      "value": "NZD 200",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3",
+      "quote": "more than $200 (before tax) in income that we have not been told about, even if ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.ir3.due",
+      "item": "IR3 due date for individuals without a tax agent or extension of time: 7 July after the end of the tax year (for 2026-27: 7 July 2027). With a tax agent the later date is not printed on this page.",
+      "value": "7 July",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3",
+      "quote": "by 7 July unless you have a tax agent or an extension of time. Getting",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.it.terminal-tax-due",
+      "item": "End-of-year tax bill (terminal tax) due date for most people: 7 February of the year after the tax year ends (IRD example: 2024-25 bill due 7 February 2026). Later (7 April) if a tax agent has an extension of time.",
+      "value": "7 February",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/timelines-at-the-end-of-the-tax-year",
+      "quote": "by 7 February the year after receiving a bill. For example, ",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.corp.rate",
+      "item": "Company income tax rate for most companies. Flat.",
+      "value": "28%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses",
+      "quote": "Most companies 28% Māori autho",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.maori-authority.rate",
+      "item": "Maori authority income tax rate.",
+      "value": "17.5%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses",
+      "quote": "Māori authorities 17.5% Non-pr",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.trust.rate",
+      "item": "Trustee income tax rate on undistributed trustee income when the trust earns more than NZD 10,000 in the year (from 1 April 2024).",
+      "value": "39%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates",
+      "quote": "If your trust earns more than $10,000, you&rsquo;ll need to pay 39%. You can fin",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.trust.de-minimis",
+      "item": "Trustee income of NZD 10,000 or less in a year (after annual deductions, before losses brought forward) is taxed at 33%, not 39%.",
+      "value": "NZD 10,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates",
+      "quote": "If your trust earns $10,000 or less in a tax year (after ann",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.trust.low-rate",
+      "item": "Trustee rate for trusts earning NZD 10,000 or less, and for estates (year of death and next 3 years) and disabled beneficiary trusts.",
+      "value": "33%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates",
+      "quote": "you&rsquo;ll pay at a 33% rate. If your ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-capital-gains",
+        "nz-income-tax-ir3",
+        "nz-tax-residency"
+      ]
+    },
+    {
+      "id": "nz.gst.rate",
+      "item": "GST standard rate.",
+      "value": "15%",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf",
+      "quote": "The current rate is 15%. When ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax",
+        "nz-gst-return"
+      ]
+    },
+    {
+      "id": "nz.gst.tax-fraction",
+      "item": "GST tax fraction: the GST inside a GST-inclusive price is 3/23 of it (equivalent to 15% of the GST-exclusive amount).",
+      "value": "3/23",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "3/23rds of the GST inclusive amount. Was",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-gst-return"
+      ]
+    },
+    {
+      "id": "nz.gst.registration-threshold",
+      "item": "Compulsory GST registration threshold: turnover from a taxable activity in the last 12 months, or expected in the next 12 months. IRD web page says 'at least $60,000'; IR375 says 'over $60,000' (see country/NZ.md). Voluntary registration below it is allowed.",
+      "value": "NZD 60,000",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/gst/registering-for-gst",
+      "quote": "your turnover was at least $60,000 in the last 12 months, or you expec",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.gst.payments-basis-limit",
+      "item": "Payments (cash) basis eligibility: total sales NZD 2 million or less in the last 12 months or likely in any 12-month period. Above it, invoice or hybrid basis.",
+      "value": "NZD 2 million",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/gst/registering-for-gst/which-gst-accounting-basis-and-filing-frequency-should-i-use",
+      "quote": "$2 million or less in the last 12 months likely to",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.monthly-compulsory",
+      "item": "Monthly GST filing is compulsory if sales are over this in any 12-month period (GST group measured as a whole). Two-monthly is available only below it.",
+      "value": "NZD 24 million",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/gst/registering-for-gst/which-gst-accounting-basis-and-filing-frequency-should-i-use",
+      "quote": "You must file monthly if your sales are over $24 million in any 12-mon",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.six-monthly-limit",
+      "item": "Six-monthly GST filing is available only with sales under this in any 12-month period (GST group as a whole).",
+      "value": "NZD 500,000",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/gst/registering-for-gst/which-gst-accounting-basis-and-filing-frequency-should-i-use",
+      "quote": "6-monthly Anyone with sales under $500,000 in any 12-month p",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.return-due-standard",
+      "item": "GST return and payment due by the 28th of the month after the taxable period ends. Exceptions: period ending 31 March due 7 May; period ending 30 November due 15 January.",
+      "value": "28th of the month",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst",
+      "quote": "Your GST return is due by the 28 th of the month after the end of your taxable period. For",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.return-due-march",
+      "item": "GST return for the period ending 31 March is due by 7 May (exception to the 28th rule).",
+      "value": "7 May",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst",
+      "quote": "The GST return for the taxable period ending 31 March is due by 7 May.",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.gst.return-due-november",
+      "item": "GST return for the period ending 30 November is due by 15 January (exception to the 28th rule).",
+      "value": "15 January",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst",
+      "quote": "The GST return for the taxable period ending 30 November is due by 15 January. Y",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.gst.late-filing.payments-basis",
+      "item": "GST late filing penalty per return when on the payments basis.",
+      "value": "NZD 50",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties",
+      "quote": "There is a late filing penalty of $50 if you&rsquo;re on the payments basis. The",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.late-filing.invoice-basis",
+      "item": "GST late filing penalty per return when on the invoice or hybrid basis.",
+      "value": "NZD 250",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties",
+      "quote": "There is a $250 penalty for late filing on the hybrid or invoice basis. These pe",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.tsi.low",
+      "item": "Taxable supply information: for a sale of this amount or less (including GST) the seller need not provide taxable supply information to the buyer.",
+      "value": "NZD 200",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "If the sale is $200 or less (including GST), you d",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.gst.tsi.band",
+      "item": "Taxable supply information bands (GST-inclusive): NZD 200 or less; more than NZD 200 up to NZD 1,000; more than NZD 1,000 (full buyer details required).",
+      "value": "NZD 1,000",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "Taxable supply amounts $200 or less More than $200 and up to $1,000 More than $1,000 Selle",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.change-in-use.small",
+      "item": "Change-in-use adjustment: no adjustment needed where the change is within 10% or NZD 1,000 (IR375 wording).",
+      "value": "NZD 1,000",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "within the 10% or $1,000 threshold. Exam",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.change-in-use.pct",
+      "item": "Change-in-use adjustment de minimis percentage, paired with NZD 1,000.",
+      "value": "10%",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "within the 10% or $1,000 threshold. Exam",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.gst.adjust-periods.small",
+      "item": "Number of change-in-use adjustment periods: not required for goods and services costing NZD 10,000 or less (GST-exclusive).",
+      "value": "NZD 10,000",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "$10,000 or less Not required periods. $1",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.gst.adjust-periods.mid",
+      "item": "Change-in-use adjustment periods: NZD 20,001 to NZD 500,000 has up to 5 adjustment periods.",
+      "value": "NZD 500,000",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "$20,001 - $500,000 5 Miriama b",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.gst.records",
+      "item": "GST business records must be kept for this period.",
+      "value": "7 years",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf",
+      "quote": "Keep business records for 7 years. debit",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.prov.rit-threshold",
+      "item": "Provisional tax applies if residual income tax (RIT) from the last return was more than NZD 5,000. More than, not at least; measured on the prior year.",
+      "value": "NZD 5,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax",
+      "quote": "if you had to pay more than $5,000 tax at the end of the year from your last return. It's ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.prov.standard.uplift-prior",
+      "item": "Standard option: instalments based on previous year's RIT plus this uplift.",
+      "value": "5%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option",
+      "quote": "your previous year&rsquo;s residual income tax (RIT) plus 5% your RIT ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-capital-gains",
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.prov.standard.uplift-2yr",
+      "item": "Standard option: where the previous year's return is not yet filed (with extension of time), RIT from 2 years ago plus this uplift.",
+      "value": "10%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option",
+      "quote": "your RIT from 2 years ago plus 10%. The ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.prov.dates",
+      "item": "Provisional tax instalment dates, standard option, 31 March balance date (3 instalments). For 2026-27: 28 August 2026, 15 January 2027, 7 May 2027. Six-monthly GST filers pay 2 instalments with their GST returns.",
+      "value": "28 August, 15 January and 7 May",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option/work-out-provisional-tax-using-the-standard-option",
+      "quote": "your 3 instalments will be due on 28 August, 15 January and 7 May. If ",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.prov.uomi-safe-harbour",
+      "item": "UOMI safe harbour line for standard option users: if RIT is less than NZD 60,000, interest runs only from the day after the end-of-year tax due date; at NZD 60,000 or more, from the day after the final instalment date (other instalments paid in full and on time).",
+      "value": "NZD 60,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax/interest-on-provisional-tax",
+      "quote": "If your residual income tax (RIT) is less than $60,000, we'l",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.prov.uomi-de-minimis",
+      "item": "No interest charged or paid on provisional tax under/overpayments of NZD 100 or less.",
+      "value": "NZD 100",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax/interest-on-provisional-tax",
+      "quote": "We will not charge or pay interest if you under or overpay by $100 or less. Ther",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.prov.estimation.3-instalments",
+      "item": "Estimation option: if estimated RIT will be more than NZD 60,000, provisional tax is generally paid in 3 instalments.",
+      "value": "NZD 60,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/estimation-option",
+      "quote": "If you estimate your residual income tax will be more than $60,000, yo",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "new-zealand-crypto-tax"
+      ]
+    },
+    {
+      "id": "nz.prov.ratio.rit-range",
+      "item": "Ratio (GST ratio) option: previous year's RIT must be greater than NZD 5,000 and up to NZD 150,000; must file GST monthly or 2-monthly; not a partnership.",
+      "value": "NZD 150,000",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option",
+      "quote": "is greater than $5,000 and up to $150,000. You fil",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.prov.aim.turnover",
+      "item": "Accounting income method (AIM): available to individuals and companies with yearly turnover under NZD 5 million.",
+      "value": "NZD 5 million",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/aim",
+      "quote": "with a yearly turnover under $5 million. Using AIM",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.uomi.under.2026-01-16",
+      "item": "Use-of-money interest (UOMI) rate IRD CHARGES on underpaid tax, in effect from 16 January 2026 (still current on 22 September 2026). Calculated daily, not compounded.",
+      "value": "8.97%",
+      "tax_year": "from 16 January 2026",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "quote": "16 January 2026 8.97% 2.25% 8 ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-gst-return",
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.uomi.over.2026-01-16",
+      "item": "UOMI rate IRD PAYS on overpaid tax, in effect from 16 January 2026. Interest received is gross income.",
+      "value": "2.25%",
+      "tax_year": "from 16 January 2026",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "quote": "16 January 2026 8.97% 2.25% 8 ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-gst-return",
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.uomi.under.2025-05-08",
+      "item": "UOMI underpayment rate from 8 May 2025 to 15 January 2026 (history).",
+      "value": "9.89%",
+      "tax_year": "8 May 2025 to 15 January 2026",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "quote": "8 May 2025 9.89% 3.27% 16",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.uomi.over.2025-05-08",
+      "item": "UOMI overpayment rate from 8 May 2025 to 15 January 2026 (history).",
+      "value": "3.27%",
+      "tax_year": "8 May 2025 to 15 January 2026",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "quote": "8 May 2025 9.89% 3.27% 16",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-income-tax-ir3",
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.uomi.under.2025-01-16",
+      "item": "UOMI underpayment rate from 16 January 2025 to 7 May 2025 (history).",
+      "value": "10.88%",
+      "tax_year": "16 January 2025 to 7 May 2025",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "quote": "16 January 2025 10.88% 4.30% 2",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.uomi.over.2025-01-16",
+      "item": "UOMI overpayment rate from 16 January 2025 to 7 May 2025 (history).",
+      "value": "4.30%",
+      "tax_year": "16 January 2025 to 7 May 2025",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "quote": "16 January 2025 10.88% 4.30% 2",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.uomi.de-minimis",
+      "item": "IRD does not apply use-of-money interest to amounts under NZD 100.",
+      "value": "NZD 100",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments",
+      "quote": "amounts under $100 c",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.penalty.late-filing.it.low",
+      "item": "Income tax return late filing penalty, net income less than NZD 100,000 (initially charged at NZD 50 for everyone, then adjusted to actual net income).",
+      "value": "NZD 50",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties",
+      "quote": "Less than $100,000 $50 $100,00",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.penalty.late-filing.it.mid",
+      "item": "Income tax return late filing penalty, net income NZD 100,000 to NZD 1 million.",
+      "value": "NZD 250",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties",
+      "quote": "$100,000 to $1 million $250 Mo",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.penalty.late-filing.it.high",
+      "item": "Income tax return late filing penalty, net income more than NZD 1 million.",
+      "value": "NZD 500",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties",
+      "quote": "More than $1 million $500 Late",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.penalty.late-payment.initial",
+      "item": "Late payment penalty stage 1: charged the day after the payment due date.",
+      "value": "1%",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties",
+      "quote": "1% penalty on the day after payment due date 4% pe",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-gst-return",
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.penalty.late-payment.day7",
+      "item": "Late payment penalty stage 2: on the 7th day after the due date, on the remaining tax including penalties.",
+      "value": "4%",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties",
+      "quote": "4% penalty for remaining tax including penalties on 7th day after payment due date 1% pena",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-gst-return",
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.penalty.late-payment.monthly",
+      "item": "Late payment penalty stage 3: monthly on unpaid tax, BUT NOT for GST, income tax including provisional tax, or Working for Families overpayments. So a Guide on GST or income tax must not add 1% a month.",
+      "value": "1% every month",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties",
+      "quote": "1% penalty every month the remaining tax including penalties is unpaid (except for GST, income tax including provisional tax, and ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-provisional-tax"
+      ]
+    },
+    {
+      "id": "nz.acc.earners-levy.2026-27",
+      "item": "ACC earners' levy rate (includes GST), deducted from employees through PAYE and charged to the self-employed. Applies to earnings up to the maximum.",
+      "value": "1.75%",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2026 to 31 March 2027 $1.75 per $100 (1.75%) 1 ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-acc-levies",
+        "nz-income-tax-ir3"
+      ]
+    },
+    {
+      "id": "nz.acc.earners-levy.2026-27.per100",
+      "item": "Same ACC earners' levy for 2026-27, written the way IRD prints it per NZD 100 of liable earnings.",
+      "value": "NZD 1.75 per NZD 100",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2026 to 31 March 2027 $1.75 per $100 (1.75",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.acc.max-earnings.2026-27",
+      "item": "ACC earners' levy maximum liable earnings for 2026-27; no earners' levy on earnings above this.",
+      "value": "NZD 156,641",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2026 to 31 March 2027 $156,641 $2,741.22 1",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.acc.max-levy.2026-27",
+      "item": "Maximum ACC earners' levy payable per person for 2026-27.",
+      "value": "NZD 2,741.22",
+      "tax_year": "2026-27 (1 April 2026 to 31 March 2027; IRD: 2027 income year)",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2026 to 31 March 2027 $156,641 $2,741.22 1",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.acc.earners-levy.2025-26",
+      "item": "ACC earners' levy rate for 2025-26 (history; the rate current Guides print).",
+      "value": "1.67%",
+      "tax_year": "2025-26 (1 April 2025 to 31 March 2026; IRD: 2026 income year) - history",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2025 to 31 March 2026 $1.67 per $100 (1.67%) 1 ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-acc-levies",
+        "nz-income-tax-ir3"
+      ]
+    },
+    {
+      "id": "nz.acc.max-earnings.2025-26",
+      "item": "ACC maximum liable earnings for 2025-26 (history).",
+      "value": "NZD 152,790",
+      "tax_year": "2025-26 (1 April 2025 to 31 March 2026; IRD: 2026 income year) - history",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2025 to 31 March 2026 $152,790 $2,551.59 1",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.acc.earners-levy.2027-28",
+      "item": "ACC earners' levy rate already published for 2027-28 (future; do not use for 2026-27).",
+      "value": "1.83%",
+      "tax_year": "2027-28 (1 April 2027 to 31 March 2028; IRD: 2028 income year) - future",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2027 to 31 March 2028 $1.83 per $100 (1.83%) 1 ",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-acc-levies"
+      ]
+    },
+    {
+      "id": "nz.acc.max-earnings.2027-28",
+      "item": "ACC maximum liable earnings already published for 2027-28 (future).",
+      "value": "NZD 160,244",
+      "tax_year": "2027-28 (1 April 2027 to 31 March 2028; IRD: 2028 income year) - future",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2027 to 31 March 2028 $160,244 $2,932.47 1",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.acc.work-levy.average.2026-27",
+      "item": "AVERAGE ACC Work levy per NZD 100 of liable earnings for 2026/27 as decided by Government (Gazette report on ACC levy consultation). An average across all industries, NOT the rate for any classification unit; a self-employed person's work levy depends on their CU and is not provable on an allowed host.",
+      "value": "NZD 0.69",
+      "tax_year": "2026-27 (ACC levy year 1 April 2026 to 31 March 2027)",
+      "source_url": "https://gazette.govt.nz/notice/id/2025-au1361",
+      "quote": "2026/27 $0.69 $0.69 $0.00 2027",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.acc.weekly-comp",
+      "item": "ACC weekly compensation: up to this share of income if unable to work because of a covered injury.",
+      "value": "80%",
+      "tax_year": "current on 22 September 2026 (no fixed tax year; stands until changed)",
+      "source_url": "https://www.business.govt.nz/tax-and-money/guide-to-business-tax/acc-levies",
+      "quote": "ACC will pay up to 80% of your income if",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "nz-motor-vehicle-expenses-logbook-business-use"
+      ]
+    },
+    {
+      "id": "nz.acc.max-earnings.2024-25",
+      "item": "ACC maximum liable earnings for 2024-25 (history; figure some current Guides still print). Not for 2026-27.",
+      "value": "NZD 142,283",
+      "tax_year": "2024-25 (1 April 2024 to 31 March 2025; IRD: 2025 income year) - history",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2024 to 31 March 2025 $142,283 $2,276.52 1",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "nz.acc.earners-levy.2024-25",
+      "item": "ACC earners' levy rate for 2024-25 (history).",
+      "value": "1.60%",
+      "tax_year": "2024-25 (1 April 2024 to 31 March 2025; IRD: 2025 income year) - history",
+      "source_url": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates",
+      "quote": "1 April 2024 to 31 March 2025 $1.60 per $100 (1.60%) 1 ",
+      "read_on": "2026-09-22",
+      "used_by": []
+    }
+  ]
+}

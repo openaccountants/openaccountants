@@ -1,0 +1,1429 @@
+{
+  "country": "singapore",
+  "code": "SG",
+  "figure_count": 114,
+  "figures": [
+    {
+      "id": "sg.iit.resident.band1.rate",
+      "item": "Resident individual income tax: rate on the first SGD 20,000 of chargeable income (nil). Applies from YA 2024 onwards, so to YA 2026. Chargeable income = assessable income less personal reliefs.",
+      "value": "0%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $20,000 Next $10,000 0 2 0 200",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band1.amount",
+      "item": "Resident band: the first slice of chargeable income taxed at 0%.",
+      "value": "SGD 20,000",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $20,000 Next $10,000 0 2 0 200",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band2.rate",
+      "item": "Resident rate on the next SGD 10,000 after the first SGD 20,000.",
+      "value": "2%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $20,000 Next $10,000 0 2 0 200",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-30000",
+      "item": "Resident: gross tax payable on the first SGD 30,000 of chargeable income (cumulative column of the IRAS table).",
+      "value": "SGD 200",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $30,000 Next $10,000 - 3.50 200 350",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band3.rate",
+      "item": "Resident rate on the next SGD 10,000 after the first SGD 30,000.",
+      "value": "3.5%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $30,000 Next $10,000 - 3.50 200 350",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-40000",
+      "item": "Resident: gross tax payable on the first SGD 40,000 of chargeable income.",
+      "value": "SGD 550",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $40,000 Next $40,000 - 7 550 2,800",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band4.rate",
+      "item": "Resident rate on the next SGD 40,000 after the first SGD 40,000.",
+      "value": "7%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $40,000 Next $40,000 - 7 550 2,800",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-gst-return",
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-gst",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-80000",
+      "item": "Resident: gross tax payable on the first SGD 80,000 of chargeable income.",
+      "value": "SGD 3,350",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $80,000 Next $40,000 - 11.5 3,350 4,600",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band5.rate",
+      "item": "Resident rate on the next SGD 40,000 after the first SGD 80,000.",
+      "value": "11.5%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $80,000 Next $40,000 - 11.5 3,350 4,600",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-120000",
+      "item": "Resident: gross tax payable on the first SGD 120,000 of chargeable income.",
+      "value": "SGD 7,950",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $120,000 Next $40,000 - 15 7,950 6,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band6.rate",
+      "item": "Resident rate on the next SGD 40,000 after the first SGD 120,000.",
+      "value": "15%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $120,000 Next $40,000 - 15 7,950 6,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-160000",
+      "item": "Resident: gross tax payable on the first SGD 160,000 of chargeable income.",
+      "value": "SGD 13,950",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $160,000 Next $40,000 - 18 13,950 7,200",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band7.rate",
+      "item": "Resident rate on the next SGD 40,000 after the first SGD 160,000.",
+      "value": "18%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $160,000 Next $40,000 - 18 13,950 7,200",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-200000",
+      "item": "Resident: gross tax payable on the first SGD 200,000 of chargeable income.",
+      "value": "SGD 21,150",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $200,000 Next $40,000 - 19 21,150 7,600",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band8.rate",
+      "item": "Resident rate on the next SGD 40,000 after the first SGD 200,000.",
+      "value": "19%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $200,000 Next $40,000 - 19 21,150 7,600",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-240000",
+      "item": "Resident: gross tax payable on the first SGD 240,000 of chargeable income.",
+      "value": "SGD 28,750",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $240,000 Next $40,000 - 19.5 28,750 7,800",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band9.rate",
+      "item": "Resident rate on the next SGD 40,000 after the first SGD 240,000.",
+      "value": "19.5%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $240,000 Next $40,000 - 19.5 28,750 7,800",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-280000",
+      "item": "Resident: gross tax payable on the first SGD 280,000 of chargeable income.",
+      "value": "SGD 36,550",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $280,000 Next $40,000 - 20 36,550 8,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band10.rate",
+      "item": "Resident rate on the next SGD 40,000 after the first SGD 280,000.",
+      "value": "20%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $280,000 Next $40,000 - 20 36,550 8,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-320000",
+      "item": "Resident: gross tax payable on the first SGD 320,000 of chargeable income (same figure in the YA 2017 to 2023 table).",
+      "value": "SGD 44,550",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $320,000 Next $180,000 - 22 44,550 39,600",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band11.rate",
+      "item": "Resident rate on the next SGD 180,000 after the first SGD 320,000 (from YA 2024; before YA 2024, 22% applied to ALL income above SGD 320,000).",
+      "value": "22%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $320,000 Next $180,000 - 22 44,550 39,600",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-500000",
+      "item": "Resident: gross tax payable on the first SGD 500,000 of chargeable income.",
+      "value": "SGD 84,150",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $500,000 Next $500,000 - 23 84,150 115,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.band12.rate",
+      "item": "Resident rate on the next SGD 500,000 after the first SGD 500,000 (new band from YA 2024).",
+      "value": "23%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $500,000 Next $500,000 - 23 84,150 115,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.tax-at-1000000",
+      "item": "Resident: gross tax payable on the first SGD 1,000,000 of chargeable income.",
+      "value": "SGD 199,150",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "First $1,000,000 In excess of $1,000,000 - 24 199,150",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.top-rate",
+      "item": "Top resident rate, on chargeable income in excess of SGD 1,000,000 (from YA 2024). Statute: Income Tax Act 1947, Second Schedule, Table 3.",
+      "value": "24%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://sso.agc.gov.sg/Act/ITA1947?ProvIds=Sc2-",
+      "quote": "For every dollar exceeding $1,000,000 24%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.top-threshold",
+      "item": "Chargeable income above which the 24% top resident rate applies (from YA 2024).",
+      "value": "SGD 1,000,000",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://sso.agc.gov.sg/Act/ITA1947?ProvIds=Sc2-",
+      "quote": "For every dollar exceeding $1,000,000 24%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.resident.pre2024-top",
+      "item": "Top resident rate for YA 2017 to YA 2023, on income exceeding SGD 320,000. STALE for YA 2026: do not use.",
+      "value": "22%",
+      "tax_year": "YA 2017 to YA 2023 (superseded)",
+      "source_url": "https://sso.agc.gov.sg/Act/ITA1947?ProvIds=Sc2-",
+      "quote": "For every dollar exceeding $320,000 22%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.pitr.ya2025.rate",
+      "item": "Personal Income Tax Rebate for YA 2025 (income of 2024), tax residents: share of tax payable rebated. IRAS prints NO rebate for YA 2026; do not carry this to YA 2026.",
+      "value": "60%",
+      "tax_year": "YA 2025 only",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "For YA 2025, a Personal Income Tax Rebate of 60% of tax payable, up to maximum of $200",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.iit.pitr.ya2025.cap",
+      "item": "Maximum Personal Income Tax Rebate for YA 2025 (per tax-resident individual). Same cap applied for YA 2024 (at 50%). Not a YA 2026 figure.",
+      "value": "SGD 200",
+      "tax_year": "YA 2025 only",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "For YA 2025, a Personal Income Tax Rebate of 60% of tax payable, up to maximum of $200",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.pitr.ya2024.rate",
+      "item": "Personal Income Tax Rebate for YA 2024, tax residents, capped at SGD 200. Historical.",
+      "value": "50%",
+      "tax_year": "YA 2024 only",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "For YA 2024, a Personal Income Tax Rebate of 50% of tax payable, up to maximum of $200",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-crypto-tax"
+      ]
+    },
+    {
+      "id": "sg.iit.nonres.employment.flat",
+      "item": "Non-resident individual: employment income is taxed at this flat rate OR at the progressive resident rates, WHICHEVER GIVES THE HIGHER TAX. Non-residents get no personal reliefs.",
+      "value": "15%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "Employment income of a non-resident individual is taxed at the flat rate of 15% or the progressive resident tax rates",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.nonres.other-income",
+      "item": "Non-resident individual: rate on director fees, consultation fees, rental, pension and all other income except employment income and income at reduced withholding rates (from YA 2024; 22% before).",
+      "value": "24%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "The tax rate for non-resident individuals is currently at 24%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.nonres.other-income.pre2024",
+      "item": "Non-resident rate on non-employment income BEFORE YA 2024. Stale for YA 2026.",
+      "value": "22%",
+      "tax_year": "before YA 2024 (superseded)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "Before YA 2024, the tax rate was 22% for non-resident individuals",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.iit.nonres.short-term-days",
+      "item": "Short-term employment exemption: a NON-resident who exercised employment in Singapore for this many days or less in a calendar year is exempt on that employment income. Not for directors, public entertainers or professionals.",
+      "value": "60 days",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency",
+      "quote": "Short-term employment (60 days or less)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.wht.nonres.professional.gross",
+      "item": "Withholding on non-resident professionals (consultants, trainers, coaches) for services in Singapore: rate on GROSS income; alternative is 24% of NET income (from YA 2024).",
+      "value": "15%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "15% of gross income or 24% of net income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.wht.nonres.professional.net",
+      "item": "Withholding on non-resident professionals: rate on NET income, the alternative to 15% of gross (from YA 2024; 22% before).",
+      "value": "24%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "15% of gross income or 24% of net income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.wht.nonres.entertainer",
+      "item": "Withholding on non-resident public entertainers for services in Singapore: concessionary rate (from 1 Apr 2022).",
+      "value": "15%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "15% concessionary rate 4. SRS withdrawals",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.wht.nonres.interest",
+      "item": "Reduced final withholding rate on interest, commission or fee on a loan paid to a non-resident individual (subject to conditions; 24% if not applicable).",
+      "value": "15%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "15% reduced final withholding tax rate (subject to conditions) or 24%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.wht.nonres.royalty",
+      "item": "Reduced final withholding rate on royalties or lump sums for use of movable property paid to a non-resident individual (subject to conditions; 24% if not applicable).",
+      "value": "10%",
+      "tax_year": "YA 2024 onwards (still in force for YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "10% reduced final withholding tax rate (subject to conditions) or 24%",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.wht.srs.concession-limit",
+      "item": "SRS withdrawals by a non-Singaporean SRS holder get a concessionary 15% withholding rate only if cumulative withdrawals in the calendar year do not exceed this amount AND he has no other income that year.",
+      "value": "SGD 200,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates",
+      "quote": "Cumulative amount withdrawn by the SRS account holder in the calendar year does not exceed $200,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.res.days",
+      "item": "Tax residence test for a foreigner: stayed or worked in Singapore at least this many days in the calendar year BEFORE the YA. Alternatives (OR): 3 consecutive years (administrative concession, even if under 183 days in first or third year); or employment straddling 2 calendar years with a continuous stay of at least 183 days (employees only, not directors, public entertainers or professionals).",
+      "value": "183 days",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency",
+      "quote": "for at least 183 days in the previous calendar year",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.res.basis",
+      "item": "Preceding year basis: tax for YA 2026 is on income earned 1 Jan 2025 to 31 Dec 2025. A Guide saying \"tax year 2026\" must say which: YA 2026 (2025 income) or income earned in 2026 (YA 2027).",
+      "value": "YA 2026",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/working-out-my-tax-residency",
+      "quote": "income taxed in Year of Assessment 2026, refers to income earned from 1 Jan 2025 to 31 Dec 2025",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.relief.cap",
+      "item": "Overall personal income tax relief cap: total of ALL personal reliefs claimed per YA is limited to this amount (since YA 2018). Excess is lost, cannot be transferred.",
+      "value": "SGD 80,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs",
+      "quote": "A personal income tax relief cap of $80,000 applies to the total amount of all tax reliefs claimed for each Year of Assessment",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.eir.below55",
+      "item": "Earned Income Relief, age below 55 at 31 Dec of the previous year: maximum, limited to taxable earned income. Granted automatically.",
+      "value": "SGD 1,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+      "quote": "Below 55 $1,000 55 to 59 $6,000 60 and above $8,000",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.relief.eir.55to59",
+      "item": "Earned Income Relief, age 55 to 59 at 31 Dec of the previous year: maximum, limited to taxable earned income.",
+      "value": "SGD 6,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+      "quote": "Below 55 $1,000 55 to 59 $6,000 60 and above $8,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.eir.60plus",
+      "item": "Earned Income Relief, age 60 and above at 31 Dec of the previous year: maximum, limited to taxable earned income.",
+      "value": "SGD 8,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+      "quote": "Below 55 $1,000 55 to 59 $6,000 60 and above $8,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.eir-disability.below55",
+      "item": "Earned Income Relief (Disability), age below 55: maximum.",
+      "value": "SGD 4,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+      "quote": "Below 55 $4,000 55 to 59 $10,000 60 and above $12,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.eir-disability.55to59",
+      "item": "Earned Income Relief (Disability), age 55 to 59: maximum.",
+      "value": "SGD 10,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+      "quote": "Below 55 $4,000 55 to 59 $10,000 60 and above $12,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.eir-disability.60plus",
+      "item": "Earned Income Relief (Disability), age 60 and above: maximum.",
+      "value": "SGD 12,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/earned-income-relief",
+      "quote": "Below 55 $4,000 55 to 59 $10,000 60 and above $12,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.dependant-income-limit",
+      "item": "Annual income limit for a dependant (spouse, child for QCR, parent) in the year before the YA: dependant must NOT have income of more than this (from YA 2025; SGD 4,000 for YA 2024 and before). For spouse and parent, annual income includes tax-exempt and foreign income.",
+      "value": "SGD 8,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/spouse-relief-spouse-relief-(disability)",
+      "quote": "From the YA 2025, the annual income threshold of $4,000 has been increased to $8,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.dependant-income-limit.old",
+      "item": "OLD dependant income limit, YA 2024 and before. Stale for YA 2026.",
+      "value": "SGD 4,000",
+      "tax_year": "YA 2024 and before (superseded)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/spouse-relief-spouse-relief-(disability)",
+      "quote": "From the YA 2025, the annual income threshold of $4,000 has been increased to $8,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.spouse",
+      "item": "Spouse Relief: amount (spouse living with or supported by the taxpayer, spouse income not more than SGD 8,000 in 2025). Not for divorced spouses paying alimony. From YA 2026 also covers legally separated wives paying maintenance to husbands.",
+      "value": "SGD 2,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/spouse-relief-spouse-relief-(disability)",
+      "quote": "Deed of Separation $2,000 $5,500",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.spouse-disability",
+      "item": "Spouse Relief (Disability): amount.",
+      "value": "SGD 5,500",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/spouse-relief-spouse-relief-(disability)",
+      "quote": "Deed of Separation $2,000 $5,500",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.qcr",
+      "item": "Qualifying Child Relief: per child (unmarried; below 16, or full-time student; child income not over SGD 8,000). Can be shared between parents.",
+      "value": "SGD 4,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/qualifying-child-relief-(qcr)-child-relief-(disability)",
+      "quote": "$4,000 per child $7,500 per child",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.qcr-disability",
+      "item": "Child Relief (Disability): per child.",
+      "value": "SGD 7,500",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/qualifying-child-relief-(qcr)-child-relief-(disability)",
+      "quote": "$4,000 per child $7,500 per child",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.qcr-wmcr-cap",
+      "item": "QCR (or Child Relief (Disability)) plus WMCR on the same child are capped at this amount PER CHILD.",
+      "value": "SGD 50,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/qualifying-child-relief-(qcr)-child-relief-(disability)",
+      "quote": "QCR/Child Relief (Disability)+ WMCR is capped at $50,000 per child",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.wmcr.fixed.1st",
+      "item": "WMCR for a Singapore Citizen child born or adopted ON OR AFTER 1 Jan 2024, 1st child: fixed amount (from YA 2025). Working mothers only (married, divorced or widowed).",
+      "value": "SGD 8,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "quote": "1st $8,000 15% of mother's earned income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.wmcr.fixed.2nd",
+      "item": "WMCR fixed amount for a child born or adopted on or after 1 Jan 2024, 2nd child.",
+      "value": "SGD 10,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "quote": "2nd $10,000 20% of mother's earned income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.wmcr.fixed.3rd",
+      "item": "WMCR fixed amount for a child born or adopted on or after 1 Jan 2024, 3rd and each later child.",
+      "value": "SGD 12,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "quote": "3rd and beyond $12,000 25% of mother's earned income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.wmcr.pct.1st",
+      "item": "WMCR for a child born or adopted BEFORE 1 Jan 2024, 1st child: share of the mother's earned income. A child born before 2024 who became a citizen only after 1 Jan 2024 gets the fixed amount instead.",
+      "value": "15%",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "quote": "1st $8,000 15% of mother's earned income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.relief.wmcr.pct.2nd",
+      "item": "WMCR for a child born or adopted before 1 Jan 2024, 2nd child: share of mother's earned income.",
+      "value": "20%",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "quote": "2nd $10,000 20% of mother's earned income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.relief.wmcr.pct.3rd",
+      "item": "WMCR for a child born or adopted before 1 Jan 2024, 3rd and later child: share of mother's earned income.",
+      "value": "25%",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "quote": "3rd and beyond $12,000 25% of mother's earned income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.relief.wmcr.total-cap",
+      "item": "Total WMCR over all children is capped at this share of the mother's earned income (and the SGD 80,000 overall cap still applies).",
+      "value": "100%",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/working-mother's-child-relief-(wmcr)",
+      "quote": "the total claim is capped at 100% of her earned income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.parent.with",
+      "item": "Parent Relief, taxpayer STAYS with the dependant: per dependant (dependant aged 55 or above, income not over SGD 8,000 in 2025).",
+      "value": "SGD 9,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-(disability)",
+      "quote": "Taxpayer stays with dependant $9,000 per dependant $14,000 per dependant",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.parent-disability.with",
+      "item": "Parent Relief (Disability), taxpayer stays with dependant: per dependant.",
+      "value": "SGD 14,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-(disability)",
+      "quote": "Taxpayer stays with dependant $9,000 per dependant $14,000 per dependant",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.parent.apart",
+      "item": "Parent Relief, taxpayer does NOT stay with dependant: per dependant (taxpayer must have spent at least SGD 2,000 supporting him or her in 2025).",
+      "value": "SGD 5,500",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-(disability)",
+      "quote": "Taxpayer does not stay with dependant $5,500 per dependant $10,000 per dependant",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.parent-disability.apart",
+      "item": "Parent Relief (Disability), taxpayer does not stay with dependant: per dependant.",
+      "value": "SGD 10,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-(disability)",
+      "quote": "Taxpayer does not stay with dependant $5,500 per dependant $10,000 per dependant",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.parent.support-min",
+      "item": "Parent Relief for a dependant in a SEPARATE household: minimum support spent by the taxpayer in the year.",
+      "value": "SGD 2,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-(disability)",
+      "quote": "you have incurred $2,000 or more in supporting him/her",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.parent.age",
+      "item": "Parent Relief: dependant must be at least this age (not required for the disability version).",
+      "value": "55",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/parent-relief-parent-relief-(disability)",
+      "quote": "Your dependant was 55 years of age or above",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.relief.cpf.ow-ceiling.2025",
+      "item": "CPF Ordinary Wage ceiling (monthly) for wages of 1 Jan to 31 Dec 2025: the ceiling that governs CPF Relief in YA 2026. CPF Relief is limited to compulsory employee contributions on wages within the OW and AW ceilings.",
+      "value": "SGD 7,400",
+      "tax_year": "calendar 2025 wages (YA 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund(cpf)-relief-for-employees",
+      "quote": "1 Jan to 31 Dec 2025 $7,400",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.cpf.ow-ceiling.2026",
+      "item": "CPF Ordinary Wage ceiling (monthly) on or after 1 Jan 2026 (final phase of the rise announced in Budget 2023). This governs 2026 wages, i.e. CPF Relief for YA 2027, NOT YA 2026.",
+      "value": "SGD 8,000",
+      "tax_year": "calendar 2026 wages (YA 2027)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund(cpf)-relief-for-employees",
+      "quote": "On or after 1 Jan 2026 $8,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.cpf.annual-ceiling",
+      "item": "CPF annual salary ceiling: the Additional Wage ceiling is this amount less total ordinary wages subject to CPF in the year.",
+      "value": "SGD 102,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund(cpf)-relief-for-employees",
+      "quote": "the CPF annual salary ceiling will remain at $102,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.srs.cap.citizen",
+      "item": "Yearly maximum SRS contribution (and so SRS Relief) for Singapore Citizens and PRs. Contribution must be made by 31 Dec 2025 for YA 2026.",
+      "value": "SGD 15,300",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/supplementary-retirement-scheme-(srs)-relief",
+      "quote": "Singapore Citizens/Singapore Permanent Residents Foreigners $15,300 $35,700",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.srs.cap.foreigner",
+      "item": "Yearly maximum SRS contribution (and SRS Relief) for foreigners.",
+      "value": "SGD 35,700",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/supplementary-retirement-scheme-(srs)-relief",
+      "quote": "Singapore Citizens/Singapore Permanent Residents Foreigners $15,300 $35,700",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.srs.withdrawal-taxable",
+      "item": "Share of SRS withdrawals that is taxable at retirement.",
+      "value": "50%",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/supplementary-retirement-scheme-(srs)-relief",
+      "quote": "only 50% of the withdrawals from SRS are taxable at retirement",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-crypto-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.cpf-topup.total",
+      "item": "CPF Cash Top-up Relief: yearly maximum (SGD 8,000 for self plus SGD 8,000 for family members) for top-ups that do not attract MRSS or MMSS matching grants.",
+      "value": "SGD 16,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-(cpf)-cash-top-up-relief",
+      "quote": "tax relief of up to $16,000 (maximum $8,000 for self and maximum $8,000 for family members)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.cpf-topup.self",
+      "item": "CPF Cash Top-up Relief: maximum for top-ups to own account (and the separate maximum for family members).",
+      "value": "SGD 8,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/central-provident-fund-(cpf)-cash-top-up-relief",
+      "quote": "tax relief of up to $16,000 (maximum $8,000 for self and maximum $8,000 for family members)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.life.cpf-limit",
+      "item": "Life Insurance Relief: only if total compulsory employee CPF (or self-employed MediSave or voluntary CPF) in the previous year was LESS than this amount; relief is the lower of the shortfall and the premium or 7% of insured value.",
+      "value": "SGD 5,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/life-insurance-relief",
+      "quote": "The total CPF contribution for the following was less than $5,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.life.pct",
+      "item": "Life Insurance Relief: limit as a share of the insured value of own or spouse's life.",
+      "value": "7%",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/life-insurance-relief",
+      "quote": "up to 7% of the insured value of your own/your spouse's life",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-gst-return",
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax",
+        "singapore-gst",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.relief.nsman-wife",
+      "item": "NSman Wife Relief: amount.",
+      "value": "SGD 750",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-savings-for-married-couples-and-families",
+      "quote": "NSman Wife Relief of $750 is given to the wives of NSmen",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.rebate.ptr.1st",
+      "item": "Parenthood Tax Rebate, 1st Singapore Citizen child: one-time claim in the year after birth; can be shared with spouse; unused balance carries forward.",
+      "value": "SGD 5,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-savings-for-married-couples-and-families",
+      "quote": "1st child: $5,000 2nd child: $10,000 3rd and subsequent child: $20,000 for each child",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.rebate.ptr.2nd",
+      "item": "Parenthood Tax Rebate, 2nd child.",
+      "value": "SGD 10,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-savings-for-married-couples-and-families",
+      "quote": "1st child: $5,000 2nd child: $10,000 3rd and subsequent child: $20,000 for each child",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.rebate.ptr.3rd",
+      "item": "Parenthood Tax Rebate, 3rd and each subsequent child.",
+      "value": "SGD 20,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-savings-for-married-couples-and-families",
+      "quote": "1st child: $5,000 2nd child: $10,000 3rd and subsequent child: $20,000 for each child",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.relief.course-fees.last-ya",
+      "item": "Course Fees Relief is DISCONTINUED from YA 2026; the last YA it may be claimed is YA 2025. A Guide must not offer it for YA 2026.",
+      "value": "YA 2025",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/course-fees-relief",
+      "quote": "The final year in which Course Fees Relief may be claimed is in YA 2025",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.nor.last-status",
+      "item": "NOR scheme has CEASED. Last NOR status granted ran from YA 2020 to YA 2024. No new NOR status; do not present it as available.",
+      "value": "YA 2024",
+      "tax_year": "ceased (last status YA 2020 to YA 2024)",
+      "source_url": "https://www.iras.gov.sg/schemes/individual-income-tax/not-ordinarily-resident-(nor)-scheme",
+      "quote": "The last NOR status granted will run / be valid from YA 2020 to YA 2024",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax",
+        "sg-tax-residency",
+        "singapore-crypto-tax"
+      ]
+    },
+    {
+      "id": "sg.nor.time-apport.days",
+      "item": "Historical NOR time-apportionment concession: at least this many days outside Singapore for business. Only for people already holding NOR status; scheme ceased.",
+      "value": "90 days",
+      "tax_year": "ceased",
+      "source_url": "https://www.iras.gov.sg/schemes/individual-income-tax/not-ordinarily-resident-(nor)-scheme",
+      "quote": "You must have spent at least 90 days outside Singapore for business reasons",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.nor.time-apport.income",
+      "item": "Historical NOR time-apportionment concession: Singapore employment income of at least this amount. Scheme ceased.",
+      "value": "SGD 160,000",
+      "tax_year": "ceased",
+      "source_url": "https://www.iras.gov.sg/schemes/individual-income-tax/not-ordinarily-resident-(nor)-scheme",
+      "quote": "Your total Singapore employment income must be at least $160,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.filing.due",
+      "item": "Individual income tax return (Form B, B1, P, M) for YA 2026: file between 1 Mar and 18 Apr 2026. From YA 2025 the PAPER deadline is also 18 Apr (it used to be 15 Apr).",
+      "value": "18 Apr 2026",
+      "tax_year": "YA 2026",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/tax-season-2026---all-you-need-to-know",
+      "quote": "You may start filing your Income Tax between 1 Mar and 18 Apr 2026",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.filing.paper-due",
+      "item": "Paper Income Tax Return deadline (same as e-Filing now).",
+      "value": "18 Apr",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/filing-a-paper-income-tax-return",
+      "quote": "Please submit your paper Tax Return by 18 Apr",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.filing.threshold.income",
+      "item": "Must file (if no notice received) when total income in the preceding calendar year is MORE than this; OR self-employed net profit more than SGD 6,000; OR non-resident with Singapore income.",
+      "value": "SGD 22,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/tax-season-2026---all-you-need-to-know",
+      "quote": "Your total income is more than $22,000; or You have self-employment income with a net profit more than $6,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.filing.threshold.selfemployed",
+      "item": "Must file when self-employment net profit in the preceding year is more than this.",
+      "value": "SGD 6,000",
+      "tax_year": "YA 2026 (income of calendar year 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/understanding-my-income-tax-filing/tax-season-2026---all-you-need-to-know",
+      "quote": "Your total income is more than $22,000; or You have self-employment income with a net profit more than $6,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.rate",
+      "item": "Corporate income tax rate on chargeable income, local and foreign companies.",
+      "value": "17%",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "Your company is taxed at a flat rate of 17% of its chargeable income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-crypto-tax",
+        "singapore-formation",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.cit.rebate.ya2026.rate",
+      "item": "CIT Rebate for YA 2026 as ENHANCED (energy-crisis update): share of corporate tax payable. Budget 2026 first announced 40%; the enhanced figure replaces it.",
+      "value": "50%",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "the enhanced CIT Rebate will be 50% of the corporate tax payable",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-crypto-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.rebate.ya2026.cap",
+      "item": "Enhanced YA 2026 total maximum of CIT Rebate plus CIT Rebate Cash Grant per company.",
+      "value": "SGD 40,000",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "The total maximum benefits of the enhanced CIT Rebate and CIT Rebate Cash Grant that a company may receive for YA 2026 is $40,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.rebate.ya2026.grant",
+      "item": "Enhanced YA 2026 CIT Rebate Cash Grant: for active companies with at least one local (citizen or PR) employee, excluding shareholder-directors, in 2025. Not taxable.",
+      "value": "SGD 2,000",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "the enhanced CIT Rebate Cash Grant will be $2,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.rebate.ya2026.budget-rate",
+      "item": "Budget 2026 ORIGINAL announcement of the YA 2026 CIT Rebate, later enhanced to 50%. Stale: do not use as the YA 2026 rate.",
+      "value": "40%",
+      "tax_year": "superseded by enhanced 50%",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "a CIT Rebate of 40% of the corporate tax payable",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.rebate.ya2026.budget-grant",
+      "item": "Budget 2026 ORIGINAL minimum cash grant, later enhanced to SGD 2,000. Stale.",
+      "value": "SGD 1,500",
+      "tax_year": "superseded by SGD 2,000",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "minimum benefit of $1,500 in the form of a CIT Rebate Cash Grant",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.rebate.ya2026.budget-cap",
+      "item": "Budget 2026 ORIGINAL total cap, later enhanced to SGD 40,000. Stale.",
+      "value": "SGD 30,000",
+      "tax_year": "superseded by SGD 40,000",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "The total maximum benefits of the CIT Rebate and CIT Rebate Cash Grant that a company may receive is $30,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.startup.first.pct",
+      "item": "Start-up tax exemption (s 43 Income Tax Act 1947), first 3 consecutive YAs, YA 2020 onwards: exemption share on the first SGD 100,000 of normal chargeable income. Not for investment holding or property development companies; max 20 shareholders.",
+      "value": "75%",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "75% exemption on the first $100,000 of normal chargeable income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-crypto-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.startup.first.amount",
+      "item": "Start-up exemption: first slice of normal chargeable income exempt at 75% (and the next slice of the same size at 50%).",
+      "value": "SGD 100,000",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "75% exemption on the first $100,000 of normal chargeable income",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.startup.next.pct",
+      "item": "Start-up exemption: further exemption share on the next SGD 100,000.",
+      "value": "50%",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "A further 50% exemption on the next $100,000 of normal chargeable income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-crypto-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.startup.max",
+      "item": "Start-up exemption: maximum exempt amount per YA.",
+      "value": "SGD 125,000",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "The maximum exemption for each YA is $125,000",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.startup.shareholders",
+      "item": "Start-up exemption: shareholding held directly by no more than this many shareholders, all individuals OR at least one individual holding at least 10%.",
+      "value": "20",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "beneficially held directly by no more than 20 shareholders",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.pte.first.pct",
+      "item": "Partial tax exemption (all companies not on the start-up scheme), YA 2020 onwards: exemption on the first SGD 10,000 of normal chargeable income.",
+      "value": "75%",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "75% exemption on the first $10,000 of normal chargeable income*; and A further 50% exemption on the next $190,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "singapore-crypto-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.pte.first.amount",
+      "item": "Partial tax exemption: first slice exempt at 75%.",
+      "value": "SGD 10,000",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "75% exemption on the first $10,000 of normal chargeable income*; and A further 50% exemption on the next $190,000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.pte.next.amount",
+      "item": "Partial tax exemption: next slice exempt at 50%.",
+      "value": "SGD 190,000",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "75% exemption on the first $10,000 of normal chargeable income*; and A further 50% exemption on the next $190,000",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.pte.max",
+      "item": "Partial tax exemption: maximum exempt amount per YA.",
+      "value": "SGD 102,500",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes",
+      "quote": "The maximum exemption for each YA is $102,500",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.filing.due",
+      "item": "YA 2026 corporate income tax return (Form C-S, C-S (Lite), C) deadline, including loss-making and non-trading companies.",
+      "value": "30 Nov 2026",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-filing-season-2026",
+      "quote": "All companies must file their YA 2026 Corporate Income Tax Return by the deadline of 30 Nov 2026",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.form-cs.revenue",
+      "item": "Form C-S: Singapore-incorporated companies with annual revenue of this amount or below (and only 17% income).",
+      "value": "SGD 5 million",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/overview-of-form-c-s-form-c-s-(lite)-form-c",
+      "quote": "Singapore-incorporated companies with annual revenue of $5 million or below",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.cit.form-cs-lite.revenue",
+      "item": "Form C-S (Lite): companies qualifying for Form C-S with annual revenue of this amount or below.",
+      "value": "SGD 200,000",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/form-c-s-form-c-s-(lite)-form-c-filing/overview-of-form-c-s-form-c-s-(lite)-form-c",
+      "quote": "Singapore-incorporated companies with annual revenue of $200,000 or below",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    },
+    {
+      "id": "sg.cit.eci.waiver-revenue",
+      "item": "ECI (due within 3 months of the financial year end) need not be filed if ECI is nil AND annual revenue is this amount or below.",
+      "value": "SGD 5 million",
+      "tax_year": "YA 2026 (financial year ending in 2025)",
+      "source_url": "https://www.iras.gov.sg/taxes/corporate-income-tax/estimated-chargeable-income-(eci)-filing",
+      "quote": "You do not need to file the ECI for your company if it is nil and your company's annual revenue is $5 million or below",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "sg.gst.rate",
+      "item": "GST standard rate from 1 January 2024 (Goods and Services Tax Act 1993, s 16(cb)).",
+      "value": "9%",
+      "tax_year": "from 1 Jan 2024 (in force in 2026)",
+      "source_url": "https://sso.agc.gov.sg/Act/GSTA1993?ProvIds=pr16-",
+      "quote": "( cb ) 9% from and including 1 January 2024",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-gst-return",
+        "sg-income-tax",
+        "singapore-gst",
+        "singapore-tax-optimization"
+      ]
+    },
+    {
+      "id": "sg.gst.rate.2023",
+      "item": "GST rate for calendar 2023 only. Stale.",
+      "value": "8%",
+      "tax_year": "2023 only (superseded)",
+      "source_url": "https://sso.agc.gov.sg/Act/GSTA1993?ProvIds=pr16-",
+      "quote": "( ca ) 8% for the period from 1 January 2023 to 31 December 2023",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-gst-return",
+        "singapore-gst"
+      ]
+    },
+    {
+      "id": "sg.gst.registration.threshold",
+      "item": "Compulsory GST registration: taxable turnover more than this at the end of the calendar year (retrospective view: apply 1 to 30 Jan, registered from 1 Mar) OR expected to exceed it in the next 12 months (prospective view).",
+      "value": "SGD 1 million",
+      "tax_year": "from 1 Jan 2024 (in force in 2026)",
+      "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst",
+      "quote": "more than $1 million at the end of the calendar year",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "sg-income-tax"
+      ]
+    }
+  ]
+}

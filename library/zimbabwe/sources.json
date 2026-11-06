@@ -1,0 +1,248 @@
+{
+  "country": "zimbabwe",
+  "code": "ZW",
+  "url_count": 22,
+  "sources": [
+    {
+      "url": "https://mytaxselfservice.zimra.co.zw",
+      "skills": [
+        "zw-payroll-social"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nssa.org.zw",
+      "skills": [
+        "zw-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nssa.org.zw/contributions/",
+      "skills": [
+        "zw-payroll-social"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.nssa.org.zw/scheduleofinsurableearnings/",
+      "skills": [
+        "zw-payroll-social"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf",
+      "skills": [
+        "zimbabwe-vat",
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social",
+        "zw-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw",
+      "skills": [
+        "zw-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw/",
+      "skills": [
+        "zw-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/corporate/self-assessment-return-notes",
+      "skills": [
+        "zw-corporate-income-tax",
+        "zw-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates",
+      "skills": [
+        "zw-company-formation",
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social"
+      ],
+      "figures": [
+        "zw.cit.rate",
+        "zw.aids.levy.rate.corporate"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye",
+      "skills": [
+        "zw-payroll-social"
+      ],
+      "figures": [
+        "zw.paye.usd.taxfree.month",
+        "zw.paye.zwg.taxfree.month",
+        "zw.paye.top.rate",
+        "zw.aids.levy.rate",
+        "zw.credit.elderly.blind.disabled",
+        "zw.credit.medical.ratio"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/individual/paye-explained",
+      "skills": [
+        "zw-payroll-social"
+      ],
+      "figures": [
+        "zw.bonus.exempt.usd",
+        "zw.fb.data.airtime",
+        "zw.fb.car.1500",
+        "zw.fb.car.2000",
+        "zw.fb.car.3000",
+        "zw.fb.car.over3000"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/individual/tax-concession-for-the-elderly",
+      "skills": [],
+      "figures": [
+        "zw.credit.elderly",
+        "zw.elderly.rent.exempt",
+        "zw.elderly.interest.exempt"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/tax-payment-dates",
+      "skills": [],
+      "figures": [
+        "zw.paye.payment.day"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/tax-tables",
+      "skills": [
+        "zw-income-tax",
+        "zw-payroll-social"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables",
+      "skills": [
+        "zw-income-tax",
+        "zw-payroll-social"
+      ],
+      "figures": [
+        "zw.paye.zwg.month.band.0.upper",
+        "zw.paye.zwg.month.band.20.upper",
+        "zw.paye.zwg.month.deduct.20",
+        "zw.paye.zwg.month.band.25.upper",
+        "zw.paye.zwg.month.deduct.25",
+        "zw.paye.zwg.month.band.30.upper",
+        "zw.paye.zwg.month.deduct.30",
+        "zw.paye.zwg.month.band.35.upper",
+        "zw.paye.zwg.month.deduct.35",
+        "zw.paye.zwg.month.deduct.40",
+        "zw.paye.zwg.year.band.0.upper",
+        "zw.paye.zwg.year.band.20.upper",
+        "zw.paye.zwg.year.deduct.20",
+        "zw.paye.zwg.year.band.25.upper",
+        "zw.paye.zwg.year.deduct.25",
+        "zw.paye.zwg.year.band.30.upper",
+        "zw.paye.zwg.year.deduct.30",
+        "zw.paye.zwg.year.band.35.upper",
+        "zw.paye.zwg.year.deduct.35",
+        "zw.paye.zwg.year.deduct.40",
+        "zw.paye.zwg.month.rate.40"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables",
+      "skills": [
+        "zw-income-tax",
+        "zw-payroll-social"
+      ],
+      "figures": [
+        "zw.paye.usd.month.rate.0",
+        "zw.paye.usd.month.band.0.upper",
+        "zw.paye.usd.month.rate.20",
+        "zw.paye.usd.month.band.20.upper",
+        "zw.paye.usd.month.deduct.20",
+        "zw.paye.usd.month.rate.25",
+        "zw.paye.usd.month.band.25.upper",
+        "zw.paye.usd.month.deduct.25",
+        "zw.paye.usd.month.rate.30",
+        "zw.paye.usd.month.band.30.upper",
+        "zw.paye.usd.month.deduct.30",
+        "zw.paye.usd.month.rate.35",
+        "zw.paye.usd.month.band.35.upper",
+        "zw.paye.usd.month.deduct.35",
+        "zw.paye.usd.month.rate.40",
+        "zw.paye.usd.month.deduct.40",
+        "zw.paye.usd.year.band.0.upper",
+        "zw.paye.usd.year.band.20.upper",
+        "zw.paye.usd.year.deduct.20",
+        "zw.paye.usd.year.band.25.upper",
+        "zw.paye.usd.year.deduct.25",
+        "zw.paye.usd.year.band.30.upper",
+        "zw.paye.usd.year.deduct.30",
+        "zw.paye.usd.year.band.35.upper",
+        "zw.paye.usd.year.deduct.35",
+        "zw.paye.usd.year.deduct.40",
+        "zw.paye.usd.year.band.40.lower",
+        "zw.aids.levy.rate.tables"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4510:public-notice-33-of-2026",
+      "skills": [],
+      "figures": [
+        "zw.paye.return.day.2026",
+        "zw.paye.payment.day.2026"
+      ]
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/vat/mechanics-of-vat",
+      "skills": [
+        "zimbabwe-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw/domestic-taxes/vat/vat-registration",
+      "skills": [
+        "zimbabwe-vat",
+        "zw-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw/downloads/category/9-domestic-taxes",
+      "skills": [
+        "zimbabwe-vat"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.zimra.co.zw/public-notices",
+      "skills": [
+        "zimbabwe-vat",
+        "zw-corporate-income-tax",
+        "zw-income-tax",
+        "zw-payroll-social",
+        "zw-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://zimdef.org.zw/faqs/",
+      "skills": [
+        "zw-payroll-social"
+      ],
+      "figures": []
+    }
+  ]
+}

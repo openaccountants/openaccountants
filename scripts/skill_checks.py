@@ -772,6 +772,220 @@ def check_type_declared(path, text, fm):
     return []
 
 
+# ---------------------------------------------------------------------------
+# The library (check q): library/<folder>/figures.json holds each figure once,
+# proven by a verbatim quote on its official page (scripts/build-library.py).
+# A skill's rates rows should state those figures. Warning only, and kept
+# conservative: a row is compared with a library figure only when the match is
+# plain (see check_figure_in_library), so a warning means "look at this row".
+# ---------------------------------------------------------------------------
+
+#: Where scripts/build-library.py writes: library/<folder under skills/>/figures.json.
+LIBRARY_DIR = os.path.join(REPO_ROOT, "library")
+_library_cache = {}
+#: Share of the row label's words that must appear in the figure's item text.
+LIBRARY_LABEL_SHARE = 0.6
+LIBRARY_STOP_WORDS = {
+    "this", "that", "with", "from", "than", "they", "their", "there", "which", "where", "when",
+    "what", "will", "would", "shall", "must", "have", "been", "only", "also", "each", "other",
+    "into", "over", "under", "above", "below", "more", "less", "same", "year", "years",
+}
+#: A number in a row, with an optional scale word ("EUR 1.5 million").
+LIBRARY_NUMBER_RE = re.compile(
+    r"(?<![\d.,])(\d+(?:[.,]\d+)*)(?:\s*(million|billion|thousand|lakh|crore|bn|m)\b|(?!\w)(?![.,]\d))",
+    re.IGNORECASE,
+)
+#: The value shapes the implicit match compares: "EUR 1,270", "INR 20 lakh", "4.2%".
+LIBRARY_VALUE_RE = re.compile(r"(?:([A-Z]{3}) )?(\d+(?:[.,]\d+)*)(?: (million|billion|thousand|lakh|crore))?(%?)")
+LIBRARY_SCALE = {"million": 1e6, "m": 1e6, "billion": 1e9, "bn": 1e9, "thousand": 1e3, "lakh": 1e5, "crore": 1e7}
+LIBRARY_ID_RE = re.compile(r"\b[a-z]{2}(?:\.[a-z0-9_-]+)+")
+#: An announced figure (status set, not yet law) has the id of the figure in force
+#: plus this suffix; a row stating either value of the pair passes (build-library.py).
+LIBRARY_ANNOUNCED_SUFFIX = ".announced"
+YEAR_IN_TEXT_RE = re.compile(r"\b(20\d{2})\b")
+
+
+def value_in_text(value, text):
+    """True when ``value`` appears in ``text`` exactly, as a whole figure: ``EUR 1,000``
+    is not found in ``EUR 1,000,000`` and ``5%`` is not found in ``5.5%``."""
+    value = str(value).strip()
+    if not value:
+        return False
+    pre = r"(?<!\w)(?<!\d[.,])" if value[0].isalnum() else ""
+    post = r"(?![\w%])(?![.,]\d)" if value[-1].isalnum() else ""
+    return re.search(pre + re.escape(value) + post, text) is not None
+
+
+def library_folder(path):
+    """``ireland`` for skills/ireland/x.md, ``us/federal`` for skills/us/federal/x.md, else None."""
+    parts = rel_path(path).split("/")
+    if len(parts) < 3 or parts[0] != "skills":
+        return None
+    return "/".join(parts[1:-1])
+
+
+def _words(text):
+    return re.findall(r"[^\W_]+", str(text).lower())
+
+
+def _numbers(text):
+    """Every number in ``text`` as floats, read with English separators; a scale word
+    adds the scaled number, and ``1.000`` (a European thousands point) adds 1000 too."""
+    out = set()
+    for m in LIBRARY_NUMBER_RE.finditer(text):
+        raw = m.group(1)
+        try:
+            number = float(raw.replace(",", ""))
+        except ValueError:
+            continue
+        out.add(number)
+        if m.group(2):
+            out.add(number * LIBRARY_SCALE[m.group(2).lower()])
+        if re.fullmatch(r"\d{1,3}(?:\.\d{3})+", raw):
+            out.add(float(raw.replace(".", "")))
+    return out
+
+
+def _value_unit(value):
+    """``EUR``, ``%`` or None (a value the implicit match does not compare)."""
+    m = LIBRARY_VALUE_RE.fullmatch(str(value).strip())
+    if not m or bool(m.group(1)) == bool(m.group(4)):
+        return None
+    return m.group(1) or "%"
+
+
+def _unit_count(unit, text):
+    if unit == "%":
+        return len(re.findall(r"\d\s?%", text))
+    return len(re.findall(rf"\b{unit}\s?\d", text))
+
+
+def _norm_url(url):
+    url = url.strip().rstrip(".,;:'\"`*_").split("#")[0]
+    return re.sub(r"^https?://(?:www\.)?", "", url, flags=re.IGNORECASE).rstrip("/").lower()
+
+
+def library_figures(folder):
+    """The prepared library for one folder (``None`` when it has no figures.json)."""
+    key = (LIBRARY_DIR, folder)
+    if key not in _library_cache:
+        import json
+        path = os.path.join(LIBRARY_DIR, *folder.split("/"), "figures.json")
+        lib = None
+        if folder and os.path.isfile(path):
+            with open(path, encoding="utf-8") as fh:
+                figures = json.load(fh).get("figures", [])
+            for fig in figures:
+                tail = fig["id"].split(".", 1)[-1]
+                fig["_id_words"] = [w for w in re.split(r"[.\-_]", tail.lower()) if w]
+                fig["_item_words"] = set(_words(fig.get("item", "")))
+                fig["_unit"] = _value_unit(fig["value"])
+                fig["_numbers"] = _numbers(fig["value"])
+                fig["_url"] = _norm_url(fig.get("source_url", ""))
+            by_id = {f["id"]: f for f in figures}
+            for fig in figures:
+                partner = (fig["id"][: -len(LIBRARY_ANNOUNCED_SUFFIX)]
+                           if fig["id"].endswith(LIBRARY_ANNOUNCED_SUFFIX)
+                           else fig["id"] + LIBRARY_ANNOUNCED_SUFFIX)
+                fig["_partners"] = [by_id[partner]] if partner in by_id else []
+            lib = {"figures": figures, "by_id": by_id}
+        _library_cache[key] = lib
+    return _library_cache[key]
+
+
+def _covers(needed, have):
+    """Every word in ``needed`` is in ``have`` (a word of 4+ letters may be a prefix: profit, profits)."""
+    return all(any(h == w or (len(w) >= 4 and h.startswith(w)) for h in have) for w in needed)
+
+
+def _label_share(label, item_words):
+    words = [w for w in _words(label) if len(w) >= 4 and w.isalpha() and w not in LIBRARY_STOP_WORDS]
+    if not words:
+        return 0.0
+    hit = sum(1 for w in words if any(i == w or (len(i) >= 4 and (w.startswith(i) or i.startswith(w))) for i in item_words))
+    return hit / len(words)
+
+
+def _same_year(row_years, fig):
+    """False only when the row and the figure both name years and share none."""
+    fig_years = set(YEAR_IN_TEXT_RE.findall(str(fig.get("tax_year", ""))))
+    return not fig_years or bool(row_years & fig_years)
+
+
+def check_figure_in_library(path, text, fm):
+    """(q) where library/<folder>/figures.json exists, a rates row does not state a
+    different number for a figure the library holds. Warning only.
+
+    Explicit match: a row that names a library id (``ie.cgt.exemption.personal``) must
+    hold that figure's value exactly, character for character.
+
+    Implicit match, all of: the row links the figure's ``source_url`` (``same`` takes
+    the URL of the row above); every word of the id after the country prefix is in
+    the row or the skill's file name; at least 60% of the words of the row's first
+    cell are in the figure's ``item``; the value is a currency amount or a percentage
+    and the row states exactly one amount of that unit. The row passes when any number
+    in it equals a matched figure, or any figure the library read on the same page
+    (``4.20%`` equals ``4.2%``). A row whose years are all different from the figure's
+    tax year is about another year and is skipped. Otherwise it warns, naming the most
+    specific matched figure (the longest id).
+
+    Announced figures: where the library holds both a figure in force and its
+    announced change (same id plus ``.announced``, with a ``status``), a row stating
+    either value passes, in both the explicit and the implicit match."""
+    folder = library_folder(path)
+    lib = library_figures(folder) if folder else None
+    if not lib:
+        return []
+    slug_words = set(_words(slug_of(path)))
+    found = []
+    previous = None
+    for header, cells in _rates_rows(text)[1]:
+        row = " | ".join(cells)
+        urls = URL_RE.findall(row)
+        if not urls and previous and previous[0] is header and any(c.lower().startswith("same") for c in cells):
+            urls = previous[1]
+        previous = (header, urls)
+        plain = re.sub(r"\]\([^)]*\)", "] ", URL_RE.sub(" ", row))
+        named = [lib["by_id"][i] for i in LIBRARY_ID_RE.findall(plain) if i in lib["by_id"]]
+        if named:
+            for fig in named:
+                if not any(value_in_text(f["value"], plain) for f in [fig, *fig["_partners"]]):
+                    found.append(f"row names {fig['id']} but does not state {fig['value']}")
+            continue
+        page_urls = {_norm_url(u) for u in urls}
+        if not page_urls:
+            continue
+        context = set(_words(plain)) | slug_words
+        page = [f for f in lib["figures"] if f["_url"] in page_urls]
+        matched = [
+            f for f in page
+            if f["_unit"] and _unit_count(f["_unit"], plain) == 1
+            and _covers(f["_id_words"], context)
+            and _label_share(cells[0] if cells else "", f["_item_words"]) >= LIBRARY_LABEL_SHARE
+        ]
+        if not matched:
+            continue
+        row_numbers = _numbers(plain)
+        if any(f["_numbers"] & row_numbers for f in page if f["_unit"]):  # matched is part of page
+            continue
+        if any(p["_numbers"] & row_numbers for f in matched for p in f["_partners"]):
+            continue
+        row_years = set(YEAR_IN_TEXT_RE.findall(DATE_RE.sub("", plain)))
+        if row_years:
+            matched = [f for f in matched if _same_year(row_years, f)]
+        if not matched:
+            continue
+        longest = max(len(f["_id_words"]) for f in matched)
+        top = [f for f in matched if len(f["_id_words"]) == longest]
+        if len({f["value"] for f in top}) != 1:
+            continue
+        label = re.sub(r"\s+", " ", cells[0])[:60] if cells else ""
+        found.append(f"'{label}' differs from {top[0]['id']} ({top[0]['value']})")
+    if not found:
+        return []
+    return [f"{len(found)} rates row(s) differ from library/{folder}/figures.json: " + "; ".join(found[:3])]
+
+
 #: Warnings in both modes, outside the register. Letters follow CHECKS.
 LESSON_CHECKS = [
     ("k", "read_date_evidence", check_read_date_evidence),
@@ -780,6 +994,7 @@ LESSON_CHECKS = [
     ("n", "jurisdiction_body", check_jurisdiction_body),
     ("o", "year_matches_link", check_year_matches_link),
     ("p", "type_declared", check_type_declared),
+    ("q", "figure_in_library", check_figure_in_library),
 ]
 
 #: (letter in the standard's list, column name, function). Order is the report order.
