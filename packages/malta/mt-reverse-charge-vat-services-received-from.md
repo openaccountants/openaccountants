@@ -3,19 +3,18 @@ name: mt-reverse-charge-vat-services-received-from
 description: How a Malta-established recipient self-accounts for VAT on services bought from a taxable supplier in another EU Member State, for business owners, self-employed persons and the accountants reviewing their VAT returns.
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
+last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+version: 1.0
+domain: vat-gst
 ---
 
 # Reverse charge VAT in Malta on services received from suppliers abroad
 
 ## Scope
 
-This skill covers one situation: a person established in Malta buys a service from a supplier that is not established in Malta, and the supplier does not charge Maltese VAT. Maltese law then makes the customer, not the supplier, liable for the Maltese VAT. This is the "reverse charge". It applies to suppliers in other EU Member States and to suppliers outside the EU alike.
+This Guide covers customer liability for a taxable service supplied in Malta under article 20(2): the supplier is not established in Malta and not registered under Article 10, and the recipient satisfies the relevant customer condition. Establish the service's place of supply and taxability first. An invoice showing no VAT alone does not establish reverse charge. Eligible suppliers can be in another EU Member State or outside the EU ([VAT Act, arts 2, 20 and Third Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)).
 
 It covers:
 
@@ -26,7 +25,7 @@ It covers:
 - how the VAT goes on the return or the notice of payment, and the right to deduct it as input tax;
 - penalties and interest that attach to the reverse charge itself.
 
-Figures are for tax year 2026. VAT is charged per transaction and per tax period, so "tax year 2026" means services whose VAT becomes chargeable in calendar 2026. The law is the VAT Act, Chapter 406 of the Laws of Malta, as consolidated on 27 March 2026 (in force on 25 September 2026): [VAT Act, Cap. 406](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20). Interest is set by [S.L. 406.19](https://legislation.mt/getpdf/632835ddda6f862638d03ac1). A short section near the end covers 2025 periods still being filed.
+Figures are for tax year 2026. VAT is charged per transaction and per tax period, so "tax year 2026" means services whose VAT becomes chargeable in calendar 2026. The law is the VAT Act, Chapter 406 of the Laws of Malta, in the consolidated PDF fetched on 4 November 2026 (the amendment header lists Act III and Legal Notice 75 of 2026): [VAT Act, Cap. 406](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20). Interest is set by [S.L. 406.19](https://legislation.mt/getpdf/632835ddda6f862638d03ac1). A short section near the end covers 2025 periods still being filed.
 
 The authority is the Malta Tax and Customs Administration (MTCA). This skill does not give box numbers for the Article 10 return or the Article 12 notice of payment: they appear only on MTCA's forms. Take them from the live form (check).
 
@@ -36,7 +35,7 @@ Not covered: goods (intra-EU acquisitions, imports, distance sales), services a 
 
 ## Ask the client first
 
-- Which article are you registered under: 10, 11, 12, or none? Send the registration certificate. An Article 11 number has no MT prefix and is not a VAT identification number ([Act, art. 13(3)](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)), so an Article 11 person who buys services from abroad also needs an Article 12 number.
+- Which article are you registered under: 10, 11, 12, or none? Send the registration certificate. An Article 11 number has no MT prefix and is not a VAT identification number ([Act, art. 13(3)](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)), so an Article 11 person receiving a service for which it is liable under art. 20(2) must also register under Article 12; an exempt service or a hotel abroad is not enough by itself.
 - Who is the supplier, where is it established, and does it have any office, branch or VAT registration in Malta? Did that Malta establishment take part in this supply?
 - What exactly is the service? Is it tied to land or a building, passenger transport, admission to an event, restaurant or catering, or hire of a car or boat? Is it a service that would be exempt if supplied in Malta (for example insurance or most financial services)?
 - Which of your establishments received the service: the Malta business or a branch abroad?
@@ -88,17 +87,17 @@ Two definitions widen the net ([Act, Third Schedule Part Two item 1](https://leg
 
 The customer charges itself the Maltese VAT that would apply if the same service were supplied in Malta. Rates for 2026:
 
-| Rate | Where it comes from | Examples of services |
-| --- | --- | --- |
-| 18% | Standard rate: "eighteen per cent of the taxable value of the supply" (art. 19(1)) | Most business services: consultancy, legal, accounting, software, advertising, hosting |
-| 12% | Eighth Schedule | "Custody and management of securities", credit management by a person other than the grantor |
-| 7% | Eighth Schedule | "Use of sporting facilities"; accommodation in licensed premises |
-| 5% | Eighth Schedule | "The supply of electricity"; listed minor repairs |
-| No VAT | Fifth Schedule (exempt with credit or exempt without credit) | No reverse charge: an exempt supply is not a "taxable supply" (art. 2) |
+| Rate | Where it comes from | Examples of services | Official URL |
+| --- | --- | --- | --- |
+| 18% | Standard rate: "eighteen per cent of the taxable value of the supply" (art. 19(1)) | Most business services: consultancy, legal, accounting, software, advertising, hosting | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| 12% | Eighth Schedule | "Custody and management of securities", credit management by a person other than the grantor | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| 7% | Eighth Schedule | "Use of sporting facilities"; accommodation in licensed premises | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| 5% | Eighth Schedule | "The supply of electricity"; listed minor repairs | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
+| No VAT | Fifth Schedule (exempt with credit or exempt without credit) | No reverse charge: an exempt supply is not a "taxable supply" (art. 2) | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 |
 
 Most services bought from abroad by a business fall under the 18% rate. Check the Eighth Schedule item before using a reduced rate; the skill on Malta VAT returns has the fuller rate table.
 
-**Taxable value.** The value is "the total value of the consideration paid or payable to the supplier ... but excluding the value added tax chargeable under this Act" ([Act, Seventh Schedule item 1](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). It includes other taxes and incidental expenses such as commissions charged by the supplier (item 2) and excludes early-payment discounts and rebates allowed at the time the tax becomes chargeable (item 3). Because the invoice carries no Maltese VAT, the invoiced net amount is normally the value. Foreign VAT wrongly charged is not part of the Maltese value and is not Maltese input tax: ask the supplier for a corrected invoice.
+**Taxable value.** The value is "the total value of the consideration paid or payable to the supplier ... but excluding the value added tax chargeable under this Act" ([Act, Seventh Schedule item 1](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). It includes other taxes and incidental expenses such as commissions charged by the supplier (item 2) and excludes early-payment discounts and rebates allowed at the time the tax becomes chargeable (item 3). Because the invoice carries no Maltese VAT, the invoiced net amount is normally the value. Foreign VAT is not Maltese input tax. Ask the supplier to correct wrongly charged VAT. Use the evidenced contractual consideration and corrected invoice; the taxable-value treatment of an unrecovered foreign-VAT amount has not been confirmed here and must be resolved before filing.
 
 **Foreign currency.** Convert at "the latest selling rate recorded, at the time the tax becomes chargeable, applied by commercial banks in Malta", or at the latest European Central Bank rate at that time ([Act, Seventh Schedule item 8](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)).
 
@@ -150,18 +149,18 @@ All cases use the [VAT Act](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d
 
 **Case 2: Article 11 designer buys a software subscription from the US.** A graphic designer registered under Article 11 buys a software subscription from a US company with no Malta establishment. The supplier invoices €600 on 5 February 2026, with no VAT. The designer is a taxable person receiving a general-rule service, so it is liable (art. 20(2)(b)) and must also register under Article 12 (art. 11(10)(b)), applying by 5 February 2026, the date it receives the service (art. 12(3)). VAT: €600 at 18% = €108, payable by 15 April 2026 (the fifteenth day of the second month after February, art. 21(3)), with a notice of payment (art. 30A). It cannot deduct the €108, and it still charges no VAT on its own sales.
 
-**Case 3: exempt insurer buys IT consultancy from the UK.** A Malta insurance company makes only exempt-without-credit supplies and is not registered under Article 10. A UK consultancy with no Malta establishment invoices €10,000 on 12 June 2026 for IT work, no VAT. The insurer is a taxable person, so it is liable (art. 20(2)(b)) and must register under Article 12 by 12 June 2026 (art. 12(3)). VAT: €10,000 at 18% = €1,800, payable by 15 August 2026 (art. 21(3)). No deduction: the €1,800 is a cost.
+**Case 3: exempt insurer buys IT consultancy from the UK.** A Malta insurance company makes only exempt-without-credit supplies and is not registered under Article 10. A UK consultancy with no Malta establishment invoices €10,000 on 12 June 2026 for IT work, no VAT. The insurer is a taxable person, so it is liable (art. 20(2)(b)) and must register under Article 12 by 12 June 2026 (art. 12(3)). VAT: €10,000 at 18% = €1,800, payable by 17 August 2026: the art. 21(3) baseline of 15 August falls on a Saturday/public holiday and shifts under art. 73(5). No deduction: the €1,800 is a cost.
 
-**Case 4: late Article 12 registration, payment and notice.** An Article 11 person receives a general-rule service from a French supplier on 10 January 2026 and is invoiced €2,000 that day, no VAT. It should have applied for Article 12 by 10 January 2026. It applies on 20 April 2026 and pays the VAT the same day with the notice of payment.
+**Case 4: late Article 12 registration, payment and notice.** An Article 11 person receives a general-rule service from a French supplier on 10 January 2026 and is invoiced €2,000 that day, no VAT. The receipt date is 10 January 2026; because that is Saturday, its application deadline shifts to 12 January 2026 under art. 73(5). It applies on 20 April 2026 and pays the VAT the same day with the notice of payment.
 
-- VAT: €2,000 at 18% = €360, due by 15 March 2026 (art. 21(3)).
-- Late registration (art. 39(2)): 10 January to 20 April is three months and part of a fourth, so four months. Reading the penalty as the higher of 1% of the VAT and €20 for each month, as the Malta VAT returns Guide does: 1% of €360 is €3.60, less than €20, so €20 a month for four months = €80. The VAT (€360) is €2,000 or less, so the €250 cap applies and is not reached.
-- Interest (art. 21(4), [S.L. 406.19](https://legislation.mt/getpdf/632835ddda6f862638d03ac1)): 0.6% for each month or part month unpaid. 15 March to 20 April is one month and part of a second, so two months: €360 x 0.6% = €2.16 a month, €4.32 in total.
-- Late notice of payment (art. 38(2)(a)), a reading (check): art. 30A binds "a person registered under article 12", and this person was not registered until 20 April 2026, so the Act does not settle whether a notice was late before registration. If the penalty runs from 15 March 2026: €10 for each month or part month, two months = €20, below the €120 cap. Confirm with MTCA before quoting it.
+- VAT: €2,000 at 18% = €360, due by 16 March 2026: 15 March is Sunday, so art. 73(5) shifts the date.
+- Late registration (art. 39(2)): 12 January to 20 April is three months and part of a fourth, so four months. Reading the penalty as the higher of 1% of the VAT and €20 for each month, as the Malta VAT returns Guide does: 1% of €360 is €3.60, less than €20, so €20 a month for four months = €80. The VAT (€360) is €2,000 or less, so the €250 cap applies and is not reached.
+- Interest (art. 21(4), [S.L. 406.19](https://legislation.mt/getpdf/632835ddda6f862638d03ac1)): 0.6% for each month or part month unpaid. 16 March to 20 April is one month and part of a second, so two months: €360 x 0.6% = €2.16 a month, €4.32 in total.
+- Late notice of payment (art. 38(2)(a)), a reading (check): art. 30A binds "a person registered under article 12", and this person was not registered until 20 April 2026, so the Act does not settle whether a notice was late before registration. If the penalty runs from the shifted 16 March 2026 deadline: €10 for each month or part month, two months = €20, below the €120 cap. Confirm with MTCA before quoting it.
 
 **Case 5: hotel in Italy for staff.** An Article 10 company pays an Italian hotel for staff accommodation during a trade fair in Milan. The hotel charges Italian VAT. Accommodation is a service connected with immovable property and is supplied where the property is (Third Schedule Part Two item 4). There is no Maltese VAT, no reverse charge, and the Italian VAT is not Maltese input tax. Any recovery goes through Italy's refund procedure.
 
-**Case 6: German supplier charges German VAT by mistake.** An Article 10 company receives a general-rule marketing service from a German agency, which charges German VAT. The place of supply is still Malta and the company is still liable for the Maltese VAT (art. 20(2)(b)). It accounts for the Maltese VAT on the net fee as output and input tax, and asks the supplier to credit the German VAT. The German VAT is not Maltese input tax.
+**Case 6: German supplier charges German VAT by mistake.** An Article 10 company receives a general-rule marketing service from a German agency, which charges German VAT. The place of supply is still Malta and the company is still liable for the Maltese VAT (art. 20(2)(b)). It requests a credit for the German VAT, establishes the correct contractual consideration and accounts for Maltese output tax and the legally allowed input deduction. An unrecovered foreign-VAT amount is not assumed to have a verified taxable-value treatment. The German VAT is not Maltese input tax.
 
 ## When to refuse or refer
 
@@ -184,6 +183,7 @@ All cases use the [VAT Act](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d
 | Article 10 | The periodic tax return, with the reverse-charged VAT as output tax and, where deductible, as input tax | By the fifteenth day of the second month after the month in which the tax period ends (art. 27(1)) | Net amount by the same date (art. 21(1)) |
 | Article 12, including an Article 11 person also registered under Article 12, and a VAT-identified non-taxable legal person | A notice of payment for purchases where the customer is liable under art. 20(2)(b) and (c) (art. 30A, art. 21(5)) | With the payment | By the fifteenth day of the second month after the invoice date or the month the service is received, whichever is earlier (art. 21(3)) |
 
+- **Calendar adjustment.** Statutory filing, registration-application and payment dates falling on Saturday, Sunday, a national day or public holiday move to the first following working day other than Saturday ([art. 73(5)](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). The public-holiday list is in [Cap. 252](https://legislation.mt/eli/cap/252/eng/pdf).
 - **Box numbers (check).** The Act does not say which box of the Article 10 return or of the notice of payment carries reverse-charged services. Take them from the live MTCA form. MTCA's own filing calendar should also be checked against the statutory dates above.
 - **Electronic filing relief.** No interest is due where an Article 10 return is filed electronically with payment not later than seven days after the tax became payable (art. 21(4A)). Late-return penalties are in the Malta VAT returns Guide.
 - **Interest.** Unpaid VAT carries interest at 0.6% for each month or part month ([S.L. 406.19, reg. 2](https://legislation.mt/getpdf/632835ddda6f862638d03ac1); Act, art. 21(4)). Balances that became payable before 1 September 2022 keep the old rate of 0.33%.
@@ -214,8 +214,8 @@ A person registered under Article 12 because it receives reverse-charged service
 
 The Act as in force from 1 January 2025 ([VAT Act as at 1 January 2025](https://legislation.mt/getpdf/6811d40a495e132a18426aea)) already contained the same rules used above: Article 12 registration by the date a reverse-charged service is received (art. 12(3)), payment by the fifteenth day of the second month after the invoice date or month of receipt, whichever is earlier (art. 21(3)), the notice of payment (art. 30A), and the 18% standard rate. So:
 
-- An Article 10 return for a tax period ending in December 2025 (for example October to December 2025) was due by 15 February 2026 and includes reverse-charged services whose VAT became chargeable in that period. Tax periods are set per registration, so check the client's own dates.
-- Article 12 VAT on a service invoiced in December 2025 was due by 15 February 2026.
+- An Article 10 return for a tax period ending in December 2025 (for example October to December 2025) had a baseline of 15 February 2026, shifted to 16 February 2026 under art. 73(5), and includes reverse-charged services whose VAT became chargeable in that period. Tax periods are set per registration, so check the client's own dates.
+- Article 12 VAT on a service invoiced in December 2025 had a baseline of 15 February 2026, shifted to 16 February 2026 because the 15th was Sunday (art. 73(5)).
 - Unpaid 2025 amounts carry interest at 0.6% for each month or part month.
 
 ## Completion checklist ([VAT Act, Cap. 406](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
@@ -232,20 +232,48 @@ The Act as in force from 1 January 2025 ([VAT Act as at 1 January 2025](https://
 - Box numbers taken from the live MTCA form.
 - Supplier invoice held; records kept for at least six years.
 
-<!-- openaccountants-cta-block -->
 
----
+## Two worked examples that recompute
 
-## Talk to a verified accountant
+Assume the supplier/recipient, taxable Malta general-rule service, 18% rate and evidenced consideration tests above are met. Case A is an Article 10 recipient with wholly deductible use. Case B is an Article 11/12 recipient with no input-credit entitlement ([Act, arts 19-23 and Tenth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)).
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+```oa-check
+name: Fully deductible Article 10 service reverse charge
+inputs:
+  consideration: 4000
+  rate: 0.18
+steps:
+  - output_tax: consideration * rate
+  - input_credit: output_tax
+  - net_payable: output_tax - input_credit
+expected:
+  output_tax: 720
+  input_credit: 720
+  net_payable: 0
+```
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+```oa-check
+name: Article 11 and 12 service has no input deduction
+inputs:
+  consideration: 600
+  rate: 0.18
+steps:
+  - output_tax: consideration * rate
+  - input_credit: 0
+  - net_payable: output_tax - input_credit
+expected:
+  output_tax: 108
+  input_credit: 0
+  net_payable: 108
+```
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+## Sources
+
+| Source and scope read | Official URL | Read on |
+|---|---|---|
+| VAT Act: arts 2, 12, 13, 19-23, 27, 30A, 37-42, 48 and 73; Third/Fourth/Seventh/Eighth/Tenth/Eleventh/Twelfth Schedule service rules cited above | https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20 | 2026-11-04 |
+| Interest regulation: reg. 2 rate and older-balance condition | https://legislation.mt/eli/sl/406.19/eng/pdf | 2026-11-04 |
+| National Holidays and Other Public Holidays Act: arts 2, 5 and Schedule; 15 August | https://legislation.mt/eli/cap/252/eng/pdf | 2026-11-04 |
+| MTCA registration FAQ updated 20 February 2026: service place/taxability and Article 12 conditions | https://mtca.gov.mt/docs/default-source/documents/registrations-and-de-registrations-faqs.pdf?sfvrsn=908511fc_1 | 2026-11-04 |
+
+Not yet confirmed: authenticated portal boxes; the invoice/performance cross-period proviso application to a specific disputed invoice; use-and-enjoyment directions; input partial-exemption computations; taxable-value treatment of unrecovered wrongly charged foreign VAT; notice-penalty treatment before actual registration. Preserve the stated specialist referral boundaries; no assertion that every future legislative change is captured.

@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/india-payroll"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-10-17"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-06"
 ---
 
 # India Payroll: Salary TDS, Provident Fund, ESI, Professional Tax, Bonus and Gratuity
@@ -416,7 +413,7 @@ Provident fund: twelve per cent of wages from the employee and the same from the
 | --- | --- |
 | `in-pf-esi-employer` | Detailed provident fund and ESI employer procedure |
 | `in-professional-tax` | State professional tax slabs and registration |
-| `in-income-tax` | The employee's own return, regime choice and other income |
+| `india-income-tax` | The employee's own return, regime choice and other income |
 | `in-tds-freelance` | TDS on payments to contractors and professionals (not salary) |
 | `in-tax-residency` | Whether an employee is resident, which decides the section 156 rebate |
 | `india-tax-optimization` | Old versus new regime planning |
@@ -487,24 +484,6 @@ This Guide and its outputs are provided for informational and computational purp
 
 The most up-to-date version of this Guide is maintained at openaccountants.com.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "PE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Peru Company Formation & Entity Choice
@@ -30,24 +28,6 @@ metadata:
 - **Step 4 — SUNAT RUC registration** — Obtain the RUC tax identification number from SUNAT and elect the tax regime  _(SUNAT - Registro Unico de Contribuyentes (RUC) — https://www.sunat.gob.pe)_
 - **Core annual compliance** — Annual income tax return, monthly IGV and PLAME filings, electronic accounting books, annual shareholder meeting and ultimate beneficial owner reporting  _(Ley General de Sociedades (Ley 26887) and SUNAT obligations — https://taxsummaries.pwc.com/peru/corporate/tax-administration)_
 - **Ultimate beneficial owner (UBO) declaration** — Companies must file a beneficial-ownership affidavit with SUNAT  _(Decreto Legislativo 1372 (beneficiario final) — https://nodomiciliados.sunat.gob.pe/en/node/67)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

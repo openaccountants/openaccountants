@@ -1,17 +1,16 @@
 ---
 name: italy-payroll
 description: "Italian payroll for employees, tax year 2026: how the employer, as sostituto d'imposta, withholds IRPEF each month and settles it at the conguaglio. Covers the 2026 bands (23%, 33%, 43%), the employment detrazione, the cuneo fiscale (tax-free sum up to EUR 20,000, extra detrazione to EUR 40,000), the 2026 substitute taxes on pay rises, shift pay and productivity bonuses, regional and municipal surcharges, employee INPS (9.19% plus 1% above EUR 56,224, massimale EUR 122,295), TFR accrual and revaluation, tredicesima and quattordicesima, fringe benefits (EUR 1,000 or 2,000 with children; meal vouchers), F24 by the 16th, UniEmens, CU, 770, penalties and leave pay. Trigger on: busta paga, cedolino, ritenute IRPEF dipendenti, conguaglio, CU, 770, F24 1001, TFR, tredicesima, fringe benefit. Out of scope, see: it-employer-contributions, it-irpef-employees, it-income-tax, it-inps-contributions, it-impatriati, it-cross-border."
-version: 1.1
+version: 1.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-24
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 depends_on:
   - payroll-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Italian payroll for employees: IRPEF withholding, INPS, TFR, CU and F24 (2026)
@@ -324,24 +323,4 @@ Not yet confirmed:
 
 > Contributed by OpenAccountants.
 
-> Contributed by Ryan Duguid.
-
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

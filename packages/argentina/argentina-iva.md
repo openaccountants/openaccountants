@@ -4,11 +4,12 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 version: 2.0
 jurisdiction: AR
 tax_year: 2025
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - vat-workflow-base
+tier: 2
+domain: vat-gst
 ---
 
 # Argentina IVA (Impuesto al Valor Agregado) Skill v2.0
@@ -38,7 +39,6 @@ depends_on:
 | e-Invoice | Factura Electrónica mandatory via AFIP RCEL / ARCA portal |
 | CUIT | Clave Única de Identificación Tributaria — 11-digit taxpayer ID |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by Argentina-licensed CPN (Contador Público Nacional) |
 | Skill version | 2.0 |
 
 ### Key DJ IVA fields
@@ -453,5 +453,3 @@ When client cannot provide Facturas Electrónicas for all transactions:
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

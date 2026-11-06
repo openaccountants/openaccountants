@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "MV"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Maldives Tax Overview
@@ -31,24 +29,6 @@ The Maldives historically had no broad income tax; the Income Tax Act (Law No. 2
 - **Green Tax (environmental tourism levy)** — Per-guest, per-night tax on tourist establishments, collected and remitted to MIRA monthly  _([Maldives Tourism Act (Law No. 2/99) / Green Tax Regulation](https://www.dreamingofmaldives.com/maldives-tourism-tax-2025-increase/))_
 - **Annual income tax final return & payment deadline** — 30 June of the year following the tax year  _([Income Tax Act (Law No. 25/2019)](https://www.legal500.com/guides/chapter/maldives-tax/))_
 - **GST return & payment deadline** — 28th of the month following the end of the taxable period  _([Goods and Services Tax Act (Law No. 10/2011)](https://www.mira.gov.mv/Pages/View/gstreturn))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

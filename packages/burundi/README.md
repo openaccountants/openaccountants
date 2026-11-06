@@ -7,14 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bi-company-formation.md`
-4. `bi-corporate-income-tax.md`
-5. `bi-income-tax.md`
-6. `bi-payroll-social.md`
-7. `bi-tax-overview.md`
-8. `bi-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `bi-capital-income-tax.md`
+5. `bi-company-formation.md`
+6. `bi-corporate-income-tax.md`
+7. `bi-cross-border-tax.md`
+8. `bi-income-tax.md`
+9. `bi-payroll-social.md`
+10. `bi-property-transactions.md`
+11. `bi-tax-overview.md`
+12. `bi-transfer-pricing.md`
+13. `bi-vat-gst.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

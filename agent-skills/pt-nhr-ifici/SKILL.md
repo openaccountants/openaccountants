@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "PT"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Portugal: IFICI and the old NHR regime, for 2026
@@ -300,24 +297,6 @@ tolerance: 0.01
 | Lei 64-B/2026 of 22 October 2026, authorisation to cut the first six 2026 IRS rates | https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177 | 2026-10-24 |
 
 Not yet confirmed: the decree-law under Lei 64-B/2026 that would lower the 2026 bands used in the comparisons (none published by 24 October 2026); an official consolidated copy of the full low-tax list (Portaria 150/2004 with all amendments to Portaria 292/2025/1); whether the solidarity surcharge reaches income taxed at the IFICI 20% rate (art. 68-A charges "rendimento coletável", which art. 22(1) defines as aggregated income, and art. 22(3)(b) leaves out income taxed under arts. 71 and 72, but the IFICI rate sits in EBF art. 58-A and no AT guidance on the point was found); the original text of Despacho 24/2025-XXIV (taken from the AT leaflet); whether AT will publish different 2027 dates for 2026 arrivals than the Portaria's general dates; the exact day Lei 2/2020 came into force for the pre-2020 pension test; which RGIT fine AT applies to a missed IFICI change notice under Portaria art. 5; any regional decree for letter (g) in the Azores or Madeira.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

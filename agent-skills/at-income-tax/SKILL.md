@@ -1,6 +1,6 @@
 ---
 name: at-income-tax
-description: "Austrian income tax (Einkommensteuer) for resident individuals, tax year 2026: employees, pensioners, sole traders, freelancers and private landlords. Covers the 2026 bands (0/20/30/40/48/50/55%) as indexed by two thirds of 2.6% inflation, the credits (Verkehrsabsetzbetrag, sole-earner and single-parent, pensioner, Pendlereuro), Familienbonus Plus and Kindermehrbetrag, the Gewinnfreibetrag (15% on the first EUR 33,000), the Basispauschalierung (6% or 15%, EUR 420,000 limit), the 2026 investment allowance, special and extraordinary expenses, losses, the E 1 and L 1 returns, deadlines (30 April paper, 30 June FinanzOnline), prepayments, Anspruchszinsen and surcharges. Trigger on: Einkommensteuer, ESt, E 1, Arbeitnehmerveranlagung, L 1, Gewinnfreibetrag, Basispauschalierung, Familienbonus Plus, Absetzbeträge, Austrian income tax, self-employed tax Austria. Out of scope: SVS contributions in at-svs-contributions; payroll in at-payroll-and-social-insurance; VAT in austria-vat-return and at-"
+description: "Austrian income tax (Einkommensteuer) for resident individuals, tax year 2026: employees, pensioners, sole traders, freelancers and private landlords. Covers the 2026 bands (0/20/30/40/48/50/55%) as indexed by two thirds of 2.6% inflation, the credits (Verkehrsabsetzbetrag, sole-earner and single-parent, pensioner, Pendlereuro), Familienbonus Plus and Kindermehrbetrag, the Gewinnfreibetrag (15% on the first EUR 33,000), the Basispauschalierung (6% or 15%, EUR 420,000 limit), the 2026 investment allowance, special and extraordinary expenses, losses, the E 1 and L 1 returns, deadlines (30 April paper, 30 June FinanzOnline), prepayments, Anspruchszinsen and surcharges. Trigger on: Einkommensteuer, ESt, E 1, Arbeitnehmerveranlagung, L 1, Gewinnfreibetrag, Basispauschalierung, Familienbonus Plus, Absetzbeträge, Austrian income tax, self-employed tax Austria. Out of scope: SVS contributions in at-svs-contributions; payroll in at-payroll-and-social-insurance; VAT in at-vat-return; companies i"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "AT"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Austrian income tax for individuals (Einkommensteuer): the E 1 return, the employee assessment (L 1) and prepayments (2026)
@@ -21,7 +18,7 @@ metadata:
 
 **Tax year.** The calendar year 2026, assessed in 2027. Each figure names its year.
 
-**Sibling skills.** Social insurance for the self-employed (SVS, GSVG and FSVG) is in [at-svs-contributions](at-svs-contributions.md). Monthly wage tax, the 13th and 14th salaries and employee social insurance are in [at-payroll-and-social-insurance](at-payroll-and-social-insurance.md). VAT and the small business exemption are in [austria-vat-return](austria-vat-return.md) and [at-vat-return](at-vat-return.md). Companies are in [at-corporate-income-tax](at-corporate-income-tax.md). Non-residents, moving in or out and treaties are in [at-cross-border](at-cross-border.md). The map of all Austrian taxes is [at-tax-overview](at-tax-overview.md). This skill does not repeat them.
+**Sibling skills.** Social insurance for the self-employed (SVS, GSVG and FSVG) is in [at-svs-contributions](at-svs-contributions.md). Monthly wage tax, the 13th and 14th salaries and employee social insurance are in [at-payroll-and-social-insurance](at-payroll-and-social-insurance.md). VAT and the small business exemption are in [at-vat-return](at-vat-return.md). Companies are in [at-corporate-income-tax](at-corporate-income-tax.md). Non-residents, moving in or out and treaties are in [at-cross-border](at-cross-border.md). The map of all Austrian taxes is [at-tax-overview](at-tax-overview.md). This skill does not repeat them.
 
 ## Who this applies to
 
@@ -295,24 +292,6 @@ expected:
 | BMF, Familienbonus Plus (schedules L 1k, L 1k-bF, E 30) | https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/familienbonus-plus.html | 2026-10-24 |
 
 Not yet confirmed: the 25 km minimum distance for a business trip and the rule that car running costs are business costs only above 50% business use, both read on USP and not found in the EStG or a regulation; the bookkeeping-duty thresholds that decide Basispauschalierung eligibility (§ 125 BAO, § 189 UGB) for 2026; the old version's BMF example of a home computer written off over three years with a 40% private share (Steuerbuch, 2025 assessment), not re-checked and left out; the 10% limit on donations from business assets (§ 4a), not re-read; Liebhaberei (hobby activities produce no tax loss, Liebhabereiverordnung), covered in the old version and not re-checked.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

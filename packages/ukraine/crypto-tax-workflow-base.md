@@ -9,8 +9,9 @@ description: >
 version: 1.0
 category: foundation
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
+domain: crypto
 ---
 
 # Crypto Tax Workflow Base v1.0

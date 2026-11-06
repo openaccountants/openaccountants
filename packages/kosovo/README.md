@@ -7,12 +7,17 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `kosovo-income-tax.md`
-4. `kosovo-payroll.md`
-5. `kosovo-social-contributions.md`
-6. `kosovo-tax-optimization.md`
-7. `kosovo-vat.md`
-8. `payroll-workflow-base.md`
+3. `README.md`
+4. `kosovo-income-tax.md`
+5. `kosovo-payroll.md`
+6. `kosovo-social-contributions.md`
+7. `kosovo-tax-optimization.md`
+8. `kosovo-vat.md`
+9. `xk-corporate-income-tax.md`
+10. `xk-cross-border.md`
+11. `xk-transfer-pricing.md`
+12. `payroll-workflow-base.md`
+13. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

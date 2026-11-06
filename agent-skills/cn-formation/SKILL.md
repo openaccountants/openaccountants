@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # CN Formation
@@ -639,24 +637,6 @@ Q9: 2 人及以上创业 + 需要有限责任 + 计划扩张和融资？
 本技能及其输出仅供信息与计算参考，不构成中国法律、税务或财务建议。Open Accountants 及其贡献者不对因使用本技能而产生的任何错误、遗漏或后果承担责任。所有输出在依赖之前均须经由具有中国执业资质的律师、注册会计师（CPA）、税务师（CTA）或资产评估师审查并签署确认。外籍创始人尚须另行聘请出入境 / 移民事务律师处理工作许可、居留许可、永久居留等不在本技能范围内的事项。
 
 最新版本维护于 [openaccountants.com](https://openaccountants.com)。
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

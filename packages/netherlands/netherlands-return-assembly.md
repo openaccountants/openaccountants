@@ -4,13 +4,11 @@ description: Final orchestrator skill that assembles the complete Netherlands fi
 version: 1.0
 jurisdiction: NL
 tax_year: 2025
-last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-30
 category: orchestrator
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Netherlands annual return assembly for a sole proprietor
@@ -23,7 +21,7 @@ This skill connects bookkeeping, business deductions, personal income tax, Zvw a
 
 ## Ask the client first
 
-Start with `nl-freelance-intake`, `netherlands-bookkeeping`, `nl-zzp-deductions`, `nl-deductions`, `nl-income-tax` and one of `nl-vat-return` or `netherlands-vat-return`, where relevant. Inspect each retrieved Guide's year, source dates, scope and actual contents. A matching title does not prove that its calculations are compatible. If a referenced Guide is unavailable or stale, obtain the official year-specific method and record the substitution. Do not invent a missing Guide or assume that an old `nl-btw-return` or `nl-zvw` reference resolved.
+Start with `nl-freelance-intake`, `netherlands-bookkeeping`, `nl-zzp-deductions`, `nl-deductions`, `nl-income-tax` and `nl-vat-return`, where relevant. Inspect each retrieved Guide's year, source dates, scope and actual contents. A matching title does not prove that its calculations are compatible. If a referenced Guide is unavailable or stale, obtain the official year-specific method and record the substitution. Do not invent a missing Guide or assume that an old `nl-btw-return` or `nl-zvw` reference resolved.
 
 Create an input register containing the taxpayer, tax year, residence and insurance periods, fiscal-partner status, business identity, accounting period, source document, amount, currency, conversion method, owner and open question for every material item. Distinguish supplied evidence, confirmed facts, calculations and assumptions. Redact personal identifiers from any public or shared example.
 
@@ -164,21 +162,3 @@ Record cash already paid separately from tax expense and show the expected remai
 - Amounts in the summary trace to schedules; rounding differences are explicit; no prepayment is counted twice.
 - Every unresolved material issue prevents approval of the affected return; unaffected work is retained.
 - Filing, payment and proposed corrections each have an owner and evidence-backed deadline. No submission is claimed without its receipt.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

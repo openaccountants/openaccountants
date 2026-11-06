@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "LV"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Latvia: state social insurance contributions (2026) v0.2
@@ -160,24 +158,6 @@ likumi.lv and vid.gov.lv refused connections from our network on 23 and 24 Octob
 Not yet confirmed: the Cabinet regulation that splits the reduced rates (pensioners, board members, self-employed, foreign workers) by insurance type (rates taken from the VID table, which says it was published 28 September 2022); Cabinet Regulation No. 656 on the 2026 minimum wage (EUR 780 is from VID pages); whether the employer's minimum contributions on the quarterly gap are at the full 34.09% for a fully insured employee (s. 20.4 says the employer pays from its own funds but the rate split was not confirmed); the Cabinet regulation on the self-employed minimum base under SI Law s. 14(2); how contributions on royalties to a person not registered for business are collected in 2026 (SI Law s. 14(19)); the Cabinet regulation on the solidarity tax refund method; SI Law amendments adopted after 3 October 2026.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -4,10 +4,10 @@ description: Tier 2 Missouri content skill for employer payroll compliance cover
 jurisdiction: US-MO
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: payroll
 ---
 
 # MO Payroll
@@ -540,21 +540,3 @@ Before signoff on a Missouri payroll engagement, the reviewer must confirm:
 ## End of mo-payroll.md verification note
 
 *End of mo-payroll.md. Verified against Missouri Department of Revenue Form 4282 (2025), MO Division of Employment Security 2025 contribution rate notice, Kansas City Revenue Division 2025 employer guidance, and City of St. Louis Collector of Revenue Earnings Tax Division 2025 employer guidance.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

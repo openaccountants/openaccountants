@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "SA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Mehran Habib, CA"
   reviewed_by: "Mehran Habib"
-  trust_label: "Checked by Mehran Habib"
-  review_status: "current"
 ---
 
 # SA Gosi Saudization
@@ -22,7 +19,7 @@ metadata:
 >
 > **Tax year 2025 note:** Contribution rates below reflect the structure in force following the GOSI reforms phased in from 2024 onward. The **9%/9% annuity split** is the pre-reform baseline for existing Saudi insured workers; newly insured Saudis (first GOSI registration on or after 3 July 2024) are subject to a phased increase under the Civil Pension and Social Insurance Schemes reform — verify current rate for any Saudi employee first registered after that date. **SANED unemployment insurance** has applied to Saudi nationals since 2014. **Wage base cap** of SAR 45,000/month is the long-standing ceiling — verify against the current GOSI portal before filing. **Saudization quotas were tightened across multiple sectors in 2024–2025** (engineering, accounting, dentistry, pharmacy, retail outlets, telecom retail, real estate brokerage, project management, customer service, etc.) — always flag "verify current sector quota against the latest MHRSD notification" before relying on a percentage.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Mehran Habib** on 2026-06-06.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -334,24 +331,6 @@ If a Saudi senior manager earns contractual basic SAR 50,000 + housing SAR 12,00
 - **Civil Pension and Social Insurance Schemes reform** — phased adjustments to annuity contribution rates for Saudis first registered on or after 3 July 2024; verify current rate per cohort.
 
 > **Verification discipline:** Before completing any Saudi employer compliance task, verify on the official portals (GOSI, Qiwa, Mudad, MHRSD) that the rates, caps, sector quotas, and size bands quoted in this skill have not been superseded by a subsequent notification. Saudi compliance changes frequently and the cost of relying on stale figures is high.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

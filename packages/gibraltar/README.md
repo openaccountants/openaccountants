@@ -7,12 +7,30 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gi-corporate-tax.md`
-4. `gi-individual-income-tax.md`
-5. `gi-payroll-social-insurance.md`
-6. `gi-property-stamp-duty.md`
-7. `gi-transaction-tax-transition.md`
-8. `payroll-workflow-base.md`
+3. `README.md`
+4. `gi-bookkeeping-and-tax-records.md`
+5. `gi-category-2-income-tax.md`
+6. `gi-company-accounts-and-reporting.md`
+7. `gi-company-formation.md`
+8. `gi-connected-party-pricing-and-interest.md`
+9. `gi-corporate-tax.md`
+10. `gi-einvoice.md`
+11. `gi-foreign-tax-relief.md`
+12. `gi-global-minimum-tax.md`
+13. `gi-income-tax-assessment-appeals.md`
+14. `gi-individual-income-tax.md`
+15. `gi-payroll-social-insurance.md`
+16. `gi-property-stamp-duty.md`
+17. `gi-residential-property-disposals.md`
+18. `gi-spain-tax-residence.md`
+19. `gi-training-planning-and-startup-reliefs.md`
+20. `gi-transaction-tax-transition.md`
+21. `gi-uk-employment-pensions-treaty.md`
+22. `gi-uk-investment-income-treaty.md`
+23. `bookkeeping-workflow-base.md`
+24. `einvoice-workflow-base.md`
+25. `payroll-workflow-base.md`
+26. `company-formation-workflow-base.md`
 
 ## How to use
 

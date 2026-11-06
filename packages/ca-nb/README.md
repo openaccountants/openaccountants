@@ -12,35 +12,37 @@ financial statements, transfer pricing, tax optimization) plus
 
 1. `foundation.md`
 2. `intake.md`
-3. `ca-capital-gains.md`
-4. `ca-crypto-tax.md`
-5. `ca-fed-cpp-ei.md`
-6. `ca-fed-instalments.md`
-7. `ca-fed-t1-return.md`
-8. `ca-fed-t1135.md`
-9. `ca-fed-t2125.md`
-10. `ca-nonresident-cgt.md`
-11. `ca-tax-residency.md`
-12. `canada-bookkeeping.md`
-13. `canada-financial-statements.md`
-14. `canada-formation.md`
-15. `canada-gst-hst.md`
-16. `canada-payroll.md`
-17. `canada-tax-optimization.md`
-18. `canada-transfer-pricing.md`
-19. `leaving-canada-departure-tax.md`
-20. `qc-corporate-tax-co17.md`
-21. `references.md`
-22. `bookkeeping-workflow-base.md`
-23. `payroll-workflow-base.md`
-24. `company-formation-workflow-base.md`
-25. `financial-statements-workflow-base.md`
-26. `transfer-pricing-workflow-base.md`
-27. `crypto-tax-workflow-base.md`
-28. `nb-individual-return.md`
-29. `ca-freelance-intake.md`
-30. `ca-return-assembly.md`
-31. `global-router.md`
+3. `README.md`
+4. `ca-capital-gains.md`
+5. `ca-crypto-tax.md`
+6. `ca-fed-cpp-ei.md`
+7. `ca-fed-instalments.md`
+8. `ca-fed-t1-return.md`
+9. `ca-fed-t1135.md`
+10. `ca-fed-t2125.md`
+11. `ca-nonresident-cgt.md`
+12. `ca-tax-residency.md`
+13. `canada-bookkeeping.md`
+14. `canada-financial-statements.md`
+15. `canada-formation.md`
+16. `canada-gst-hst.md`
+17. `canada-payroll.md`
+18. `canada-tax-optimization.md`
+19. `canada-transfer-pricing.md`
+20. `leaving-canada-departure-tax.md`
+21. `qc-corporate-tax-co17.md`
+22. `references.md`
+23. `bookkeeping-workflow-base.md`
+24. `payroll-workflow-base.md`
+25. `company-formation-workflow-base.md`
+26. `financial-statements-workflow-base.md`
+27. `transfer-pricing-workflow-base.md`
+28. `crypto-tax-workflow-base.md`
+29. `nb-individual-return.md`
+30. `nb-tax-credits.md`
+31. `ca-freelance-intake.md`
+32. `ca-return-assembly.md`
+33. `global-router.md`
 
 ## How to use
 
@@ -76,7 +78,7 @@ These New Brunswick tax skills need your eye. Every rate, threshold, and form re
 
 We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
 
-Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/international/canada/new-brunswick/`, and submit a PR.
+Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/canada/new-brunswick/`, and submit a PR.
 
 **Your name goes on the skill either way.**
 

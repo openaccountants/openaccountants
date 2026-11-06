@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "HR"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Croatia: value added tax (PDV), 2026 (v3.0)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The statute is the Zakon o porezu na dodanu vrijednost (ZPDV), Narodne novine (NN) 73/13 with amendments up to NN 48/26. The Tax Administration (Porezna uprava) keeps the consolidated text in its register of regulations. Article numbers below refer to it. Forms and line rules sit in the Pravilnik o porezu na dodanu vrijednost (VAT Rulebook). E-invoicing sits in a separate law, the Zakon o fiskalizaciji (NN 89/25). Interest and the limitation period sit in the Opći porezni zakon (OPZ, General Tax Act).
 
@@ -210,24 +206,6 @@ expected:
 Not yet confirmed: the rate of late-payment interest on tax debts for 2026 (OPZ Art. 130(1) points to a special regulation; the register still lists the Interest Act NN 94/04 and the 15% decree NN 153/04, which predate the Obligations Act Art. 29 formula, and no official text read ties a 2026 rate to tax debts); whether receiving EU services alone counts as an "intra-EU transaction" that rules out quarterly filing under Article 84(3); the exact treatment of the single supply that takes a small business over EUR 60,000 (Article 90.f(2) says the exemption stops "from the moment" the threshold is passed); the Rulebook amendments in NN 11/26 beyond the PDV form lines, which were not read in full.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ph-company-formation.md`
-4. `ph-corporate-income-tax.md`
-5. `ph-income-tax.md`
-6. `ph-sss-philhealth.md`
-7. `ph-tax-overview.md`
-8. `ph-withholding.md`
-9. `philippines-vat.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ph-company-formation.md`
+5. `ph-corporate-income-tax.md`
+6. `ph-income-tax.md`
+7. `ph-sss-philhealth.md`
+8. `ph-tax-overview.md`
+9. `ph-withholding.md`
+10. `philippines-vat.md`
+11. `company-formation-workflow-base.md`
 
 ## Also known as
 

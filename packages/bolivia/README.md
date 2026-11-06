@@ -7,12 +7,13 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bolivia-income-tax.md`
-4. `bolivia-iva.md`
-5. `bolivia-payroll.md`
-6. `bolivia-social-contributions.md`
-7. `bolivia-tax-optimization.md`
-8. `payroll-workflow-base.md`
+3. `README.md`
+4. `bolivia-income-tax.md`
+5. `bolivia-iva.md`
+6. `bolivia-payroll.md`
+7. `bolivia-social-contributions.md`
+8. `bolivia-tax-optimization.md`
+9. `payroll-workflow-base.md`
 
 ## How to use
 

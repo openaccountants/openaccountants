@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "NE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Niger Corporate Income Tax
@@ -26,24 +24,6 @@ metadata:
 - **Capital gains (professional/business)** — Taxed as business income; a 20% rate is referenced for certain professional gains percent (approx — confirm)  _(Code Général des Impôts (Niger))_
 - **Annual corporate return filing deadline** — Generally 30 April (or by 30 April / within 4 months of year-end) — confirm exact date (approx — confirm)  _(Code Général des Impôts (Niger))_
 - **Advance/instalment payments** — Corporate tax is paid via instalments/advances during the year with a final balancing payment on filing (approx — confirm)  _(Code Général des Impôts (Niger))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

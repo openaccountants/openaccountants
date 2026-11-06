@@ -7,14 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/malta-transfer-pricing"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-04"
 ---
 
 # Malta Transfer Pricing
 
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-transfer-pricing.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Tax year: basis year 2026 (year of assessment 2027). Company tax computation is in [mt-corporate-tax](mt-corporate-tax.md).
 
@@ -34,7 +32,7 @@ Tax year: basis year 2026 (year of assessment 2027). Company tax computation is 
 | Currency | EUR |
 | Documentation language | English or Maltese |
 | Tax year | Basis year 2026 |
-| Skill version | 1.1 |
+| Skill version | 1.3 |
 
 ## Section 2 -- Documentation Requirements
 
@@ -144,10 +142,10 @@ The Transfer Pricing Rules apply first, then the Notional Interest Deduction Rul
 
 | Item | Deadline |
 | --- | --- |
-| Documentation preparation | Have it ready by the time the company return is filed; TRA 135 goes in with the return |
+| Documentation preparation | Keep required records and be able to provide them within a reasonable timeframe on MTCA request. Preparing them before filing is a workflow target, not an explicit statutory preparation date established by this Guide; confirm applicable return attachment duties |
 | Documentation submission on request | Within reasonable timeframe upon MTCA request |
 | CbCR filing | Within 12 months of end of reporting FY |
-| CbCR notification | As per EU DAC requirements |
+| CbCR notification | Held: confirm the Malta-specific notification date and reporting-entity condition under S.L. 123.127 before filing |
 | Corporate tax return | For a person to whom Article 11(2) ITA applies, the last day of the ninth month after the accounting date, or 31 March of the year of assessment if later (S.L. 372.16, rule 2(c)(i)); see mt-corporate-tax |
 
 ## Section 6 -- Penalties
@@ -157,7 +155,7 @@ The Transfer Pricing Rules apply first, then the Notional Interest Deduction Rul
 | Offence | Penalty |
 | --- | --- |
 | TP documentation failure | No TP-specific penalty appears in the MTCA guidelines (read 23 October 2026); general Income Tax Acts penalties apply to any additional tax |
-| CbCR non-compliance | EUR 200 to EUR 50,000 (under EU DAC implementation; not re-checked in this update) |
+| CbCR non-compliance | Held for a trigger-specific computation under S.L. 123.127 regulation 48: reporting, records and information-request defaults have different fixed/daily amounts and caps; no single generic penalty range is supplied here |
 | General non-compliance | Standard income tax penalties may apply if TP adjustments lead to additional tax |
 | Estimated assessment | MTCA may estimate income where documentation is inadequate |
 
@@ -186,7 +184,7 @@ Malta does not currently have formal safe harbour provisions for transfer pricin
 | --- | --- |
 | Low-value intra-group services | OECD Chapter VII simplified approach (5% cost-plus) may be accepted but is not a statutory safe harbour |
 | Interest rates | No safe harbour; arm's length rate must be demonstrated (an interest-free loan to or from an associated enterprise abroad is priced like any other loan) |
-| Routine services | No simplified pricing rule; standard TP analysis required |
+| Routine services | Standard TP analysis unless the service qualifies for the separate low-value-adding approach described above |
 | SME exemption | SMEs (per EU State Aid Rules) are entirely outside scope of the TP Rules |
 | Exceptions | Rule 9: the Rules do not apply in a period where revenue items are at or below EUR 6m AND capital items are at or below EUR 20m |
 
@@ -208,7 +206,7 @@ The Rule 2(1) definition of "company" excludes micro, small and medium-sized ent
 | 2024 | MTCA Guidelines in relation to the Transfer Pricing Rules published (Article 96(2) ITA) |
 | 2024 | L.N. 9 of 2024 amends Rule 1: arrangements entered into before 1 January 2024 and not materially altered come in for basis years commencing on or after 1 January 2027 |
 | 7 May 2026 | YA 2026 company return: new attachment TRA 135 for the Transfer Pricing Rules |
-| Ongoing | BEPS Pillar Two: Malta implementing GloBE rules (15% minimum tax) via EU Minimum Tax Directive |
+| Ongoing | S.L. 123.212 transposes the EU minimum-tax directive with the Article 50 deferral; do not infer a current Malta 15% top-up charge. See `mt-corporate-tax` for the deferral and continuing information duties |
 | Ongoing | No BEPS Pillar One Amount B adoption announced |
 
 ## Section 10 -- Interaction with Other Skills
@@ -218,7 +216,7 @@ The Rule 2(1) definition of "company" excludes micro, small and medium-sized ent
 | Related skill | Interaction |
 | --- | --- |
 | mt-corporate-tax | TP adjustments change the company's chargeable income |
-| malta-vat-return | TP adjustments may affect the value of supply for VAT purposes |
+| malta-vat-return | Rule 8 makes these TP adjustments relevant only for the Income Tax Acts. Any VAT adjustment needs its own VAT-law basis; do not automatically copy the income-tax adjustment into a VAT return |
 | Corporate tax (general) | TP rules apply when determining the total income of a company from cross-border arrangements |
 | Financial statements | Related-party disclosures under IAS 24 should be consistent with TP documentation |
 | CbCR | Feeds into global TP risk assessment by tax authorities |
@@ -227,7 +225,7 @@ The Rule 2(1) definition of "company" excludes micro, small and medium-sized ent
 
 ### Example 1 -- Does a company fall inside the Rules in 2026?
 
-A Malta company that is not an SME (it is part of a large group) has cross-border arrangements with associated enterprises in its 2026 financial period. Revenue items (sales, services, interest, excluding dividends paid) total EUR 4,500,000 at arm's length. Capital items (loans and asset transfers) total EUR 25,000,000. Revenue stays under EUR 6,000,000, but capital goes over EUR 20,000,000. Rule 9 only takes a period out of scope when both stay within their limits, so the Rules apply for 2026. The company needs a master file and local file ready on request and completes TRA 135 with its return.
+A Malta company that is not an SME (it is part of a large group) has cross-border arrangements with associated enterprises in its 2026 financial period, all entered into on or after 1 January 2024. No arrangement in this example qualifies for pre-2024 grandfathering. Revenue items (sales, services, interest, excluding dividends paid) total EUR 4,500,000 at arm's length. Capital items (loans and asset transfers) total EUR 25,000,000. Revenue stays under EUR 6,000,000, but capital goes over EUR 20,000,000. Rule 9 only takes a period out of scope when both stay within their limits, so the Rules apply for 2026. The company needs a master file and local file ready on request and completes TRA 135 with its return.
 
 ```oa-check
 name: Rule 9 exception test, revenue EUR 4.5m and capital EUR 25m
@@ -277,7 +275,7 @@ expected:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
-## Sources
+## Historical source references
 
 | Source | URL | Read on |
 |---|---|---|
@@ -291,26 +289,21 @@ This skill and its outputs are provided for informational and computational purp
 
 Not yet confirmed: CbCR penalty amounts (not checked against S.L. 123.127); the content of TRA 135; the CbCR deadline and notification rules (not re-read in this update); how the S.L. 372.16 return date applies to a company with a 31 December accounting date (see mt-corporate-tax).
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| SL123.207 rule1(2) | https://legislation.mt/eli/sl/123.207/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| MTCA TPguidelines rule6 | https://mtca.gov.mt/docs/default-source/documents/business-tax/international-affairs/international-direct-taxation/transfer-pricing/useful-links/guidelines---transfer-pricing-rules.pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL123.127 reg48 | https://legislation.mt/eli/sl/123.127/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL123.212 reg2 | https://legislation.mt/eli/sl/123.212/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 
-## Talk to a verified accountant
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malta-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malta-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malta-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malta-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

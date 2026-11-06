@@ -10,11 +10,12 @@ description: >
 version: 1.0
 jurisdiction: PK
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: income-tax
 ---
 
 # Pakistan IT & Freelance Export Tax — Skill v1.0
@@ -34,7 +35,6 @@ depends_on:
 | Tax year | 1 July – 30 June |
 | Tax authority | Federal Board of Revenue (FBR) — IRIS portal (iris.fbr.gov.pk) |
 | Registrations | NTN (FBR) + PSEB registration (pseb.org.pk) for the lower rate |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 ### Conservative defaults

@@ -4,14 +4,13 @@ description: Use this skill whenever asked about the taxation and legal status o
 version: 1.0
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: crypto
 ---
 
 # MA Crypto Tax
@@ -42,7 +41,6 @@ The relevant authorities are **Bank Al-Maghrib (BAM)** — the central bank, the
 | Specific crypto tax | **None** — the Code Général des Impôts (CGI) has **no crypto-specific article** *(verify)* |
 | Possible IR treatment of gains | **Uncertain** — by analogy either *profits de capitaux mobiliers* (occasional disposal) **or** *revenus professionnels* (habitual / trading activity) |
 | Exchange control | Crypto transactions treated as an **infraction à la réglementation des changes** — sanctions/fines possible *(verify)* |
-| Quality tier | **Research-verified — pending sign-off by a Moroccan accountant (expert-comptable)** |
 | Skill version | 1.0 |
 
 ### Conservative defaults
@@ -79,7 +77,7 @@ If a **Moroccan tax resident** has **realised** a gain (sold crypto for fiat, sw
 
 ### 3.2 Habitual activity → *revenus professionnels*
 
-- **Habitual activity analogy** — If the activity is **habitual, organised, and speculative** (frequent trading, mining as a business, running it like a profession), the DGI could instead treat it as **revenus professionnels** (business / professional income) taxed on **net profit** through the **progressive IR scale**, with the **cotisation minimale** and bookkeeping obligations that implies. For how professional income is computed, see **`ma-income-tax`**. Whether a given pattern crosses into "habitual" is a **facts-and-circumstances** judgement for the reviewer — do not decide it mechanically.  _(see ma-income-tax)_
+- **Habitual activity analogy** — If the activity is **habitual, organised, and speculative** (frequent trading, mining as a business, running it like a profession), the DGI could instead treat it as **revenus professionnels** (business / professional income) taxed on **net profit** through the **progressive IR scale**, with the **cotisation minimale** and bookkeeping obligations that implies. For how professional income is computed, see **`morocco-professional-income-tax`**. Whether a given pattern crosses into "habitual" is a **facts-and-circumstances** judgement for the reviewer — do not decide it mechanically.  _(see morocco-professional-income-tax)_
 
 ### 3.3 What this skill will and will not say
 
@@ -117,7 +115,7 @@ Verify **every** figure, date, and classification before use. Primary > secondar
 - **Direction Générale des Impôts (DGI)** — tax.gov.ma — the **Code Général des Impôts (CGI)**; confirm there is (or is not) any crypto-specific provision or circular; categories *profits de capitaux mobiliers* and *revenus professionnels*.
 - **Secrétariat Général du Gouvernement (SGG)** / **Bulletin Officiel** — to confirm whether **projet de loi n°42.25** and its **décrets d'application** have been **adopted and published**.
 - **PwC Worldwide Tax Summaries — Morocco** — for the general IR framework and any note on crypto *(verify whether PwC has yet added a crypto section)*.
-- **Companion skills:** `ma-income-tax` (professional income / IR computation), `morocco-vat` (TVA), `ma-bookkeeping` (records).
+- **Companion skills:** `morocco-professional-income-tax` (professional income / IR computation), `morocco-vat` (TVA), `ma-bookkeeping` (records).
 
 ## PROHIBITIONS
 
@@ -126,21 +124,3 @@ Verify **every** figure, date, and classification before use. Primary > secondar
 ## Disclaimer
 
 This skill is **research-verified** against public sources — the **Office des Changes** (oc.gov.ma), **Bank Al-Maghrib** (bkam.ma), the **AMMC**, the **DGI** (tax.gov.ma) and **PwC Worldwide Tax Summaries (Morocco)**, plus 2025–2026 reporting on **projet de loi n°42.25** — as of **May 2026**. It is **YMYL, high-risk** content covering an **unsettled area of law** and is **pending sign-off by a Moroccan accountant (expert-comptable)**. There is **no settled crypto tax regime** in Morocco; everything about how gains might be taxed is **analogy, not established law**, and the legal status rests on a **2017 prohibition notice** with a **draft law still pending**. Dates, the status of Law 42.25, classifications, and any rate must be **re-verified** against the official authorities before use. Nothing here is a substitute for advice from a licensed Moroccan expert-comptable, the DGI, or the Office des Changes. Part of **openaccountants.com** — open-source tax skills for the self-employed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

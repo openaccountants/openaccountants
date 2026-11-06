@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ma-tax-optimization"
   jurisdiction: "MA"
   tax_year: "2026"
-  last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # MA Tax Optimization
@@ -22,7 +20,7 @@ The decisive idea: a self-employed person in Morocco is taxed under the **Impôt
 
 This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (auto-entrepreneur, CPU, RNS, RNR, IR, TVA, CNSS, cotisation minimale, DGI) and explain them in the user's chosen language.
 
-> **Cross-references.** For the mechanics of each regime, defer to the dedicated skills: **ma-auto-entrepreneur** (the 0.5% / 1% turnover status and its CNSS/AMO cover), **ma-cpu** (the Contribution Professionnelle Unique), and **ma-income-tax** (the IR scale, RNS/RNR net-profit regimes, and deductions). This skill sits *above* them and helps choose between them.
+> **Cross-references.** For the mechanics of each regime, defer to the dedicated skills: **ma-auto-entrepreneur** (the 0.5% / 1% turnover status and its CNSS/AMO cover), **ma-cpu** (the Contribution Professionnelle Unique), and **morocco-professional-income-tax** (the IR scale, RNS/RNR net-profit regimes, and deductions). This skill sits *above* them and helps choose between them.
 
 ## 1. Quick Reference
 
@@ -73,7 +71,7 @@ A self-employed Moroccan has, broadly, three families of regime. The first lever
 
 ### 2.1 The three options at a glance
 
-> RNS (**Résultat Net Simplifié**) and RNR (**Résultat Net Réel**) both tax *real net profit* on the IR scale; RNR requires fuller accounting. See **ma-income-tax**.
+> RNS (**Résultat Net Simplifié**) and RNR (**Résultat Net Réel**) both tax *real net profit* on the IR scale; RNR requires fuller accounting. See **morocco-professional-income-tax**.
 
 ### 2.2 The IR scale (the engine behind CPU and RNS/RNR)
 
@@ -235,7 +233,7 @@ These are largely **corporate (IS)** incentives, but relevant when a freelancer 
 - Cotisation minimale: **0.25%** standard; **4%** professions libérales *(verify)*; **36-month** new-business exemption (CGI Art. 144).
 - VAT: standard **20%**, reduced **10%**; optional registration binds **3 years**.
 
-**Cross-references:** ma-auto-entrepreneur · ma-cpu · ma-income-tax
+**Cross-references:** ma-auto-entrepreneur · ma-cpu · morocco-professional-income-tax
 
 ## PROHIBITIONS
 
@@ -247,24 +245,6 @@ This skill is **research-verified** against public DGI guidance, the Loi de Fina
 
 Part of **OpenAccountants** — open-source tax skills for the self-employed. openaccountants.com
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

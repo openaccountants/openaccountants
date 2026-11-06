@@ -14,14 +14,14 @@ version: 0.2
 jurisdiction: US-KS
 tax_year: 2026
 last_updated: 2026-10-29
-authored_by: Jeff Watts
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - ks-income-tax
 category: state-tax
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jeff Watts"
+reviewed_on: 2026-11-03
+tier: 1
+domain: corporate-tax
 ---
 
 # Kansas corporate income tax, tax year 2026
@@ -156,21 +156,3 @@ expected:
 Not yet confirmed: the late-filing addition percentage under the K.S.A. 79-3228 series; the current interest-rate value under K.S.A. 79-2968(b); Kansas taxation of S-corporation shareholders' distributive share (cited in v0.2 as K.S.A. 79-32,139, not archived) and the form nonresident S-shareholders file (K-40 vs K-40PN).
 
 > Contributed by Jeff Watts.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -24,7 +24,6 @@ metadata:
 | Income tax | Filed via the NBR e-Return (etaxnbr.gov.bd) — no universal mandatory e-invoicing for income tax |
 | Authority | National Board of Revenue (NBR) |
 | Currency | BDT (৳) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

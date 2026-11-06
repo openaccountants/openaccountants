@@ -4,11 +4,9 @@ description: "China is the world's largest source of relocating wealth and Singa
 jurisdiction: CN
 tax_year: 2025
 last_updated: 2026-08-03
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # China to Singapore: domicile, the CRS reckoning, and a clean landing
@@ -176,21 +174,3 @@ nine: the origin country's claim doesn't end at the border, it ends where your* 
 household registration, family, the operating business. Move the facts, paper the timeline,
 respect the currency rules, and Singapore's side is the easiest landing in this collection —
 with a named accountant on each end.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

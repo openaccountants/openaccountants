@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-PA"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Pennsylvania personal income tax (Form PA-40), including sole proprietors
@@ -229,24 +226,6 @@ Illustrations with assumed facts.
 - [ ] Line 27 penalties with the right code; REV-1630 if an estimated-tax exception applies.
 - [ ] 2026 estimated payments set up if the $14,000 income and $430 tax tests are met.
 - [ ] Local earned income tax handled separately (pa-local-eit skill).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

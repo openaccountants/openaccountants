@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UY"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Uruguay Corporate Income Tax
@@ -28,24 +26,6 @@ metadata:
 - **Low/no-tax-jurisdiction (LNTJ) premium rate** — 25 % (IRNR on income obtained by entities resident/located in low-or-no-tax jurisdictions)  _(Titulo 8 Texto Ordenado 1996 (IRNR))_
 - **Domestic minimum top-up tax (Pillar Two)** — 15 % (qualified domestic minimum top-up tax (IMC) for in-scope large multinational groups (approx — confirm exact law number and effective period))  _(Ley 20.341 (Impuesto Minimo Complementario) - Pilar 2 OCDE)_
 - **IRAE filing & payment** — Annual IRAE return and balance due after fiscal year-end (commonly within about 4 months), with monthly IRAE advance payments during the year; DGI sets exact dates by taxpayer group ((approx — DGI publishes exact due dates annually))  _(Resoluciones DGI - calendario de vencimientos)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

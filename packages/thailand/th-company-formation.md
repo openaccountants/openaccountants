@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Thailand
 jurisdiction: TH
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Thailand Company Formation & Entity Choice
@@ -27,21 +26,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Annual general meeting** — Must be held within 4 months of fiscal year-end  _(Civil and Commercial Code — https://www.juslaws.com/articles/filing-financial-statements-thailand-deadlines-and-liabilities)_
 - **Financial statement filing with DBD** — Audited financial statements filed with the DBD within 1 month of the AGM approval  _(Accounting Act B.E. 2543 (2000) — https://www.juslaws.com/articles/filing-financial-statements-thailand-deadlines-and-liabilities)_
 - **Corporate income tax return after audit** — Form PND.50 filed within 150 days of fiscal year-end  _(Thai Revenue Code, Section 68; Form PND.50 — https://taxsummaries.pwc.com/thailand/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

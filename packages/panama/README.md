@@ -7,11 +7,12 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `panama-income-tax.md`
-4. `panama-itbms.md`
-5. `panama-payroll.md`
-6. `panama-social-contributions.md`
-7. `payroll-workflow-base.md`
+3. `README.md`
+4. `panama-income-tax.md`
+5. `panama-itbms.md`
+6. `panama-payroll.md`
+7. `panama-social-contributions.md`
+8. `payroll-workflow-base.md`
 
 ## How to use
 

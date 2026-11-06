@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-10-03"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Section 179 expensing and bonus depreciation in 2026, including business vehicles
@@ -255,24 +252,6 @@ Keep, for each asset, as permanent records ([Instructions for Form 4562](https:/
 - [Instructions for Form 4562 (2025)](https://www.irs.gov/pub/irs-pdf/i4562.pdf)
 - [Publication 946 (2025), How To Depreciate Property](https://www.irs.gov/pub/irs-pdf/p946.pdf)
 - [Publication 463 (2025), Travel, Gift, and Car Expenses](https://www.irs.gov/pub/irs-pdf/p463.pdf)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

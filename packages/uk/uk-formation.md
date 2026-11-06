@@ -1,18 +1,16 @@
 ---
 name: uk-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in the United Kingdom. Trigger on phrases like "set up a company in the UK", "UK Ltd", "Companies House", "incorporate in England", "UK company formation", "register a business UK", "limited company UK", "LLP formation UK", "UK company costs", "confirmation statement", or any question about starting a business entity in England, Wales, Scotland, or Northern Ireland. Covers entity types, registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on UK company formation.
-version: 1.0
+version: 1.1
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-30
 depends_on:
   - company-formation-workflow-base
 category: formation
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Starting a business in the UK: structure, registration, Companies House identity rules and first filings
@@ -163,7 +161,7 @@ Identity verification became voluntary on 8 April 2025 and a legal requirement o
 These appear in Companies House's outline transition plan and should not be treated as law until commenced:
 
 - by no earlier than November 2027: identity verification of anyone who files documents, and a requirement for third-party agents filing for companies to be registered ACSPs (with at least 6 months' notice)
-- from April 2028: accounts changes, including software-only filing and the end of abridged accounts (see uk-financial-statements)
+- from April 2028: every company files its accounts in iXBRL using commercial software, and web and paper filing close for accounts. The requirement for small companies and micro-entities to file a profit and loss account is paused, so abridged accounts and "filleting" the profit and loss account stay available after 1 April 2028. Also from April 2028: a strengthened eligibility statement for companies claiming audit exemption, the component parts of the accounts filed together, and a limit on how often a company can shorten its accounting reference period ([Companies House update to accounts filing from April 2028, 23 October 2026](https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028); see uk-financial-statements)
 - restrictions on corporate directors, on a date not yet fixed
 
 ## Figures and deadlines, with years
@@ -300,21 +298,3 @@ Anyone who started self-employment, or became a partner, between 6 April 2025 an
 - [ ] PAYE registered before the first payday (not more than 2 months before)
 - [ ] VAT turnover tested every month against £90,000
 - [ ] Anything on the refer list sent to a specialist
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

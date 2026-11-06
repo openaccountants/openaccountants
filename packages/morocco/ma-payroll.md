@@ -4,14 +4,14 @@ description: Tier 2 Massachusetts content skill for employer payroll compliance 
 version: 1.0
 jurisdiction: US-MA
 tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: payroll
 ---
 
 # MA Payroll
@@ -43,7 +43,7 @@ Out of scope and deferred to other skills:
 
 - Federal payroll: deferred to the federal payroll skill (Form 941, W-2/W-3, Form 940 FUTA, federal Form 1099-NEC). This skill assumes federal payroll is handled.
 - Massachusetts corporate excise tax: deferred to ma-corporate-excise.
-- Massachusetts personal income tax for the individual filer: deferred to ma-income-tax.
+- Massachusetts personal income tax for the individual filer: deferred to morocco-professional-income-tax.
 - Multi-state withholding allocation for telecommuters not specifically involving MA residents: deferred to the federal multi-state payroll skill.
 - Massachusetts paid sick time accrual mechanics for employers with under 11 employees (unpaid sick time still required, but the accrual mechanics differ — out of scope here beyond a high-level note).
 - Workers' compensation insurance under M.G.L. c. 152 (separate compliance regime, not a tax).
@@ -442,21 +442,3 @@ This skill is a content reference for use by a credentialed reviewer. Outputs ba
 - Annual update of this skill on or before December 1 of each year to reflect the published DFML rate, DUA Schedule, surtax threshold, SS wage base, and ACA affordability percentage.
 
 No part of this skill constitutes legal advice. Wage Act compliance, ABC-test analysis, and Pay Equity Act compliance are areas in which the line between tax/payroll advice and legal advice is thin; the reviewer must coordinate with employment counsel on any matter that includes a litigation, settlement, or class-action exposure.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

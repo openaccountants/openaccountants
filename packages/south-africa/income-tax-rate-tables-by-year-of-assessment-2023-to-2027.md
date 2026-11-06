@@ -3,11 +3,11 @@ name: income-tax-rate-tables-by-year-of-assessment-2023-to-2027
 description: Year-keyed rate tables for individuals — brackets and base amounts, rebates, tax thresholds, medical credits and the main annual limits, for years of assessment 2023 to 2027.
 jurisdiction: ZA
 last_updated: 2026-09-02
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # South Africa — Income Tax Rate Tables (individuals)
@@ -257,21 +257,3 @@ Run these before relying on any bracket table, including this one:
 SARS, Rates of Tax for Individuals — https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/ (brackets, base amounts, rebates and thresholds confirmed for all five years, 2 September 2026). Income Tax Act 58 of 1962 s 5, s 6, s 6A, s 11F, s 18A, s 10(1)(i), s 10B(3), s 10(1)(o)(ii).
 
 > Contributed by Brandon Iverach, SAIPA 18504 / SARS PR0025122.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

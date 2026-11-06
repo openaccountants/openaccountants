@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "HK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Hong Kong Corporate Income Tax
@@ -31,24 +29,6 @@ Hong Kong levies profits tax on income arising in or derived from a trade, profe
 - **Withholding tax on royalties to an associated non-resident (IP previously HK-owned)** — Effective up to 16.5% (deemed assessable profits = 100% of royalties); 8.25% on first HKD 2,000,000 where two-tiered applies %  _([Inland Revenue Ordinance (Cap. 112), section 21A](https://taxsummaries.pwc.com/hong-kong-sar/corporate/withholding-taxes))_
 - **Profits tax return filing** — Issued on first working day of April; due within 1 month, with block extensions by accounting-date code (e.g. 'D' code 31 Dec year-end ~mid-November; 'M' code 31 Mar year-end ~mid-August) ((approx — confirm))  _([Inland Revenue Ordinance (Cap. 112), section 51](https://www.gov.hk/en/residents/taxes/taxfiling/taxrates/profitsrates.htm))_
 - **Provisional profits tax** — Provisional profits tax for the following year is charged with the final assessment and is generally payable with the final tax in instalments ((approx — confirm))  _(Inland Revenue Ordinance (Cap. 112), Part X)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

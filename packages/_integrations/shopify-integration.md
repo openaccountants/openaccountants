@@ -6,8 +6,9 @@ description: >
   Integration skill for Shopify Payments and Orders CSV exports. Activate when the user uploads a Shopify CSV,
   Shopify payments export, Shopify orders export, or mentions Shopify transactions.
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
+domain: references
 ---
 
 # Shopify Integration Skill v1.0

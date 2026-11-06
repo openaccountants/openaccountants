@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "SI"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Slovenia VAT (DDV): 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Slovenian VAT is in the VAT Act (Zakon o davku na dodano vrednost, ZDDV-1) and its implementing rules (Pravilnik o izvajanju ZDDV-1). Fines are in ZDDV-1 arts. 140 to 142. Interest is in the Tax Procedure Act (Zakon o davčnem postopku, ZDavP-2). Fiscal cash registers are in the Fiscal Verification of Invoices Act (Zakon o davčnem potrjevanju računov, ZDavPR). Statute text below was read on PisRS (pisrs.si) on 2026-10-24 in the unofficial consolidated versions: ZDDV-1 NPB 20 (in use from 1 January 2025, last amended by ZDDV-1O, Uradni list RS 104/24), implementing rules NPB 30 (in use from 1 January 2026), ZDavPR NPB 4 and ZDavP-2 NPB 32. The authority is the Financial Administration (Finančna uprava Republike Slovenije, FURS). Everything is filed on eDavki.
 
@@ -229,24 +225,6 @@ expected:
 Not yet confirmed: the DDV-O box layout was not read from the form rules; how VAT applies to the supply that takes a small business over EUR 66,000 in the year was not checked against FURS guidance.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

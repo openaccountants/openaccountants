@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Angola Company Formation & Entity Choice
@@ -28,24 +26,6 @@ The most common Angolan business vehicle is the Sociedade por Quotas (Lda), a pr
 - **Incorporation step — commercial registration** — Register the company with the Commercial Registry (Conservatoria do Registo Comercial), typically via the GUE one-stop desk  _(Lei das Sociedades Comerciais (Commercial Companies Law) — https://chandrawatpartners.com/incorporating-an-llc-in-angola-key-steps-requirements-and-benefits/)_
 - **Incorporation timeline** — GUE one-stop registration can be completed in roughly 3-5 business days; full end-to-end (incl. bank account) typically 4-6 weeks ((approx — confirm)) business days / weeks  _(Guiche Unico da Empresa (GUE) — https://chandrawatpartners.com/incorporating-an-llc-in-angola-key-steps-requirements-and-benefits/)_
 - **Core annual compliance** — Annual financial statements, corporate income tax return (by end of May, general regime), and monthly VAT/IRT/social security filings  _(Codigo do Imposto Industrial (Corporate Income Tax Code) — https://taxsummaries.pwc.com/angola/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

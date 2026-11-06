@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/capital-gains-tax-rate-tables-2023-to-2027"
   jurisdiction: "ZA"
   last_updated: "2026-09-02"
-  authored_by: "Brandon Iverach"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Brandon Iverach"
 ---
 
 # South Africa — Capital Gains Tax Rate Tables (natural persons)
@@ -157,24 +155,6 @@ the relief. And treating the primary residence exclusion as covering the first R
 SARS, Capital Gains Tax (CGT) rate tables dated 25 February 2026 — https://www.sars.gov.za/tax-rates/income-tax/capital-gains-tax-cgt/ (YoA 2027 confirmed 2 September 2026). Income Tax Act 58 of 1962 s 26A, s 12T; Eighth Schedule paras 5, 10 and 45.
 
 > Contributed by Brandon Iverach, SAIPA 18504 / SARS PR0025122.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

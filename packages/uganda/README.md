@@ -7,14 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ug-company-formation.md`
-4. `ug-corporate-income-tax.md`
-5. `ug-income-tax.md`
-6. `ug-payroll-social.md`
-7. `ug-tax-overview.md`
-8. `uganda-vat.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ug-company-formation.md`
+5. `ug-corporate-income-tax.md`
+6. `ug-cross-border.md`
+7. `ug-income-tax.md`
+8. `ug-payroll-social.md`
+9. `ug-tax-overview.md`
+10. `ug-transfer-pricing.md`
+11. `uganda-vat.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

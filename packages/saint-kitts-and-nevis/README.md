@@ -7,8 +7,9 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `kn-housing-social-development-levy.md`
-4. `kn-social-security-contributions.md`
+3. `README.md`
+4. `kn-housing-social-development-levy.md`
+5. `kn-social-security-contributions.md`
 
 ## How to use
 

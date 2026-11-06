@@ -7,15 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `chile-iva.md`
-4. `cl-company-formation.md`
-5. `cl-corporate-income-tax.md`
-6. `cl-income-tax.md`
-7. `cl-social-contributions.md`
-8. `cl-tax-overview.md`
-9. `cl-vat-return.md`
-10. `references.md`
-11. `company-formation-workflow-base.md`
+3. `README.md`
+4. `chile-iva.md`
+5. `cl-company-formation.md`
+6. `cl-corporate-income-tax.md`
+7. `cl-income-tax.md`
+8. `cl-social-contributions.md`
+9. `cl-tax-overview.md`
+10. `cl-vat-return.md`
+11. `references.md`
+12. `company-formation-workflow-base.md`
 
 ## Also known as
 

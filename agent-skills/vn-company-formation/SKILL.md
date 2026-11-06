@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "VN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Vietnam Company Formation & Entity Choice
@@ -30,24 +28,6 @@ Foreign investors most commonly use a limited liability company (single- or mult
 - **Annual statutory audit** — Foreign-invested enterprises must have annual financial statements audited by an independent auditor  _([Law on Independent Audit (No. 67/2011/QH12)](https://www.vietnam-briefing.com/doing-business-guide/vietnam))_
 - **Annual financial statement filing deadline** — Within 90 days of the financial year-end (audited statements submitted to tax/statistics/licensing authorities)  _([Law on Accounting (No. 88/2015/QH13)](https://www.vietnam-briefing.com/doing-business-guide/vietnam))_
 - **Annual business licence fee (mon bai)** — VND 1,000,000 to VND 3,000,000 per year based on registered charter capital VND/year ((approx - confirm current bands))  _([Decree on Business Licence Fee](https://taxsummaries.pwc.com/vietnam/corporate/other-taxes))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

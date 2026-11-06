@@ -9,8 +9,6 @@ metadata:
   tax_year: "2025"
   last_updated: "2026-07-13"
   reviewed_by: "Christopher Aryee"
-  trust_label: "Checked by Christopher Aryee"
-  review_status: "current"
 ---
 
 # US Crypto Income Events
@@ -49,24 +47,6 @@ Taxpayers (Joshua & Jessica Jarrett) have argued that newly created staking toke
 - **Referral and learn-and-earn rewards** — Crypto received as a referral bonus or learn-and-earn reward is includible in gross income at FMV when received, ordinary in character, as an accession to wealth (akin to a rebate/incentive paid in property rather than a non-taxable purchase price adjustment). (UNCERTAIN — no crypto-specific guidance; some incentives received for a purchase may instead be a basis-reducing rebate. Fact-specific.)  _([IRC § 61(a); Commissioner v. Glenshaw Glass Co., 348 U.S. 426 (1955)](https://www.law.cornell.edu/uscode/text/26/61))_
 - **Play-to-earn rewards** — Cryptocurrency earned through play-to-earn games or platforms is includible in gross income at FMV when the taxpayer gains dominion and control, ordinary in character; if the activity rises to a trade or business, the net earnings may also be subject to self-employment tax. (UNCERTAIN — no crypto-specific IRS guidance for play-to-earn; treated under general § 61 / trade-or-business principles.)  _([IRC § 61(a); IRC § 1402 (SE tax if a business); IRS Notice 2014-21](https://www.law.cornell.edu/uscode/text/26/61))_
 - **When SE tax applies vs. not** — Self-employment tax applies to crypto income only where the receipt arises from a trade or business carried on by a non-employee (e.g., business mining, contractor services paid in crypto, possibly business-scale play-to-earn). Investment-type receipts (staking on personal holdings, airdrops, hard-fork coins, ordinary investment rewards) are ordinary income but generally not subject to SE tax. (Whether staking/DeFi activity rises to a trade or business is fact-specific; the IRS has not ruled that passive staking is SE income.)  _([IRC § 1402(a); IRS Notice 2014-21 Q&A-9 and Q&A-10](https://www.law.cornell.edu/uscode/text/26/1402))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

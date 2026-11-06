@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-CA"
   tax_year: "2026"
   last_updated: "2026-10-03"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Leaving California: residency, domicile and the part-year return
@@ -211,24 +208,6 @@ The notes to Examples 1 to 3 in Regulation 17014(b) apply the same tests where "
 - LII mirror of the U.S. Code, 4 U.S.C. 114, Limitation on State income taxation of certain pension income: https://www.law.cornell.edu/uscode/text/4/114
 
 This Guide is general information and not tax or legal advice. Residency turns on facts; confirm every California figure on the Franchise Tax Board website and have a qualified adviser review the facts before relying on it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

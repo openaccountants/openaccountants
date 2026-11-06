@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gl-mandatory-pension.md`
-4. `gl-payroll-ama.md`
-5. `payroll-workflow-base.md`
+3. `README.md`
+4. `gl-mandatory-pension.md`
+5. `gl-payroll-ama.md`
+6. `payroll-workflow-base.md`
 
 ## How to use
 

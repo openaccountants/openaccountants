@@ -4,11 +4,9 @@ description: Workbench method for AI agents. Pull the quarter from Xero (connect
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Close a UK VAT quarter from Xero and file it under Making Tax Digital (VAT periods in 2026/27)
@@ -240,21 +238,3 @@ Sense check: 20% of £49,000 is £9,800. Box 1 is £1,000 higher, and the differ
 - Return submitted from MTD software or via a digital link, not re-keyed; payment arranged to reach HMRC by the deadline.
 - Lock date set in Xero after filing (working step); working paper and statements kept for at least 6 years.
 - Output labelled "draft for review by a licensed accountant", with the reviewer named.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-capital-and-rental-income"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Hungary: capital income, rental income and the annual return for individuals (2026)
@@ -215,26 +212,6 @@ expected:
 
 Not yet confirmed: whether rental income, which bears no szocho, still counts towards the HUF 7,747,200 szocho cap. Szocho tv. 2. § (2) counts income under 1. § (1)-(3); rental income is consolidated-base income under 1. § (1), but 5. § (2) h) takes it out of the 1. § (1)-(3) liability, and neither the act, NAV information sheet 49 nor the 25SZJA guide (line 286) says whether exempt income still counts. Also not read: the depreciation rates for let property in the Szja tv. 11. számú melléklet and the cost list in the 3. számú melléklet; the definition of a tax-free NYESZ pension payout in the NYESZ act (2005. évi CLVI. törvény) and whether szocho applies to the other income from a non-pension NYESZ withdrawal.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-capital-and-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-capital-and-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-capital-and-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-capital-and-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.

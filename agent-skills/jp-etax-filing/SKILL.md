@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "JP"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # JP Etax Filing
@@ -33,7 +31,6 @@ metadata:
 | Filing Deadline (Income Tax) | 15 March of the following year |
 | Filing Deadline (Consumption Tax) | 31 March of the following year |
 | Contributor | Open Accountants Community |
-| Validated by | Pending -- requires sign-off by a Japanese 税理士 (Zeirishi) |
 | Skill version | 1.0 |
 
 ## Section 2 -- Prerequisites
@@ -479,46 +476,11 @@ This skill and its outputs are provided for informational and computational purp
 
 The 確定申告書等作成コーナー screen layout and form fields are maintained by the National Tax Agency and may change without notice. Always verify against the live system.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 ## Section 4 -- Step-by-Step Filing Workflow
 
 0. **Prerequisite step: income tax calculations** — Use jp-income-tax skill to compute all figures before starting e-Tax filing
 0. **Prerequisite step: consumption tax calculations** — Use jp-consumption-tax skill to compute consumption tax figures if applicable
 0. **Submission Method Selection** — Select submission method (My Number Card + smartphone or IC card reader)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

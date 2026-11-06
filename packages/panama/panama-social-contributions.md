@@ -5,13 +5,13 @@ version: 0.1
 jurisdiction: PA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - social-contributions-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: payroll
 ---
 
 # Panama Social Security Contributions (CSS) -- Payroll & Self-Employed
@@ -37,7 +37,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Self-employed IVM (mandatory) | **9.36%** of declared income [Ley 462; Morgan & Morgan] |
 | Personal income tax | Territorial — Panama-source income only; 0% / 15% / 25% bands [PwC] |
 | 13th month (Décimo) | Mandatory; paid 15 Apr, 15 Aug, 15 Dec [Código de Trabajo] |
-| Validated by | Pending — requires sign-off by a Panamanian-qualified accountant (Contador Público Autorizado) |
 | Validation date | Pending |
 
 **Cuota obrero-patronal overview (current period, from 1 Apr 2025)**
@@ -494,23 +493,3 @@ If the client provides only a bank statement and no other information:
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

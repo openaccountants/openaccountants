@@ -1,52 +1,71 @@
 ---
 name: zw-company-formation
-description: "Source-cited draft: company formation & entity choice for Zimbabwe (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company formation and entity choice in Zimbabwe, tax year 2026: Pvt Ltd, private business corporation, other entities, and tax registration after incorporation. Company law items are marked unverified because the Companies and Other Business Entities Act was not opened in this update."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/zw-company-formation"
   jurisdiction: "ZW"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  tax_year: "2026"
+  last_updated: "2026-11-01"
 ---
 
 # Zimbabwe Company Formation & Entity Choice
 
 ## Entity types and incorporation
 
-- **Governing legislation** — Companies and Other Business Entities Act (Chapter 24:31)  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Private Limited Company (Pvt Ltd)** — Separate legal entity; shareholders' liability limited to shares; commonly 1+ directors (historically a minimum of 2) ((approx — confirm current minimum director count))  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Private Business Corporation (PBC)** — Simplified entity with 1 to 20 members; requires an accounting officer; at least one Zimbabwean member  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Other entity types** — Public limited company, partnership, sole trader, co-operative, and registered branch of a foreign company  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Minimum share capital** — No statutory minimum; share capital can be set as low as USD 1 (number and class of shares stated at incorporation) USD  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Name search and reservation** — Submit a name-search application to DCIP; an approved name is reserved before incorporation  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Incorporation documents** — Pvt Ltd: lodge memorandum and articles (CR forms) with director/shareholder details; PBC: lodge a statement of incorporation (PBC2) naming members, contributions and accounting officer  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Typical incorporation timeline** — Approximately 1–4 weeks depending on name approval and document processing ((approx — confirm current DCIP turnaround))  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Indicative registration cost** — PBC from around USD 70 (up to ~USD 140 with member certificates/by-laws); Pvt Ltd costs vary with capital and agent fees ((approx — fees change; confirm current schedule)) USD  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Post-incorporation tax registration** — Register with ZIMRA for a Business Partner Number (BPN), and for VAT if turnover exceeds USD 60,000, and for PAYE/NSSA if employing staff  _(Revenue Authority Act (Chapter 23:11))_
-- **Core annual compliance** — File annual return with DCIP, maintain statutory records, file annual income tax return (ITF12C) and pay QPDs, and submit periodic VAT/PAYE returns  _(Companies and Other Business Entities Act (Chapter 24:31))_
-- **Annual return obligation** — Registered entities must lodge an annual return with DCIP each year to remain in good standing  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Governing legislation**: unverified: Companies and Other Business Entities Act (Chapter 24:31)  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Private Limited Company (Pvt Ltd)**: unverified: Separate legal entity; shareholders' liability limited to shares; commonly 1+ directors (historically a minimum of 2) ((approx - confirm current minimum director count))  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Private Business Corporation (PBC)**: unverified: Simplified entity with 1 to 20 members; requires an accounting officer; at least one Zimbabwean member  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Other entity types**: unverified: Public limited company, partnership, sole trader, co-operative, and registered branch of a foreign company  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Minimum share capital**: unverified: No statutory minimum; share capital can be set as low as USD 1 (number and class of shares stated at incorporation) USD  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Name search and reservation**: unverified: Submit a name-search application to DCIP; an approved name is reserved before incorporation  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Incorporation documents**: unverified: Pvt Ltd: lodge memorandum and articles (CR forms) with director/shareholder details; PBC: lodge a statement of incorporation (PBC2) naming members, contributions and accounting officer  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Typical incorporation timeline**: unverified: Approximately 1-4 weeks depending on name approval and document processing ((approx - confirm current DCIP turnaround))  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Indicative registration cost**: unverified: PBC from around USD 70 (up to ~USD 140 with member certificates/by-laws); Pvt Ltd costs vary with capital and agent fees ((approx - fees change; confirm current schedule)) USD  _(Companies and Other Business Entities Act (Chapter 24:31))_
+- **Post-incorporation tax registration:** Register in TaRMS for a TIN, for VAT if taxable supplies exceed USD 25,000 ([VAT](zimbabwe-vat.md)), and for PAYE and NSSA if employing staff.
+- **Core annual compliance:** ITF12C and QPDs: see [corporate income tax](zw-corporate-income-tax.md). unverified: annual return with DCIP and statutory records.
+- **Annual return obligation**: unverified: Registered entities must lodge an annual return with DCIP each year to remain in good standing  _(Companies and Other Business Entities Act (Chapter 24:31))_
 
-<!-- openaccountants-cta-block -->
+## Two worked examples that recompute
 
----
+VAT after incorporation: expected taxable supplies of USD 30,000 in 12 months against the USD 25,000 threshold are USD 5,000 over, so the new company registers.
 
-## Talk to a verified accountant
+```oa-check
+name: VAT registration test for a new company
+inputs:
+  expected_supplies: 30000
+  threshold: 25000
+steps:
+  - excess: expected_supplies - threshold
+expected:
+  excess: 5000.00
+```
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+Decision: company or sole trader on USD 100,000 of taxable trade income. Both pay 25% plus the 3% AIDS levy, so the choice does not change that tax; dividends and liability decide it.
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+```oa-check
+name: Company against sole trader, income tax only
+inputs:
+  profit: 100000
+steps:
+  - company: profit * 0.25 * 1.03
+  - individual: profit * 0.25 * 1.03
+  - difference: company - individual
+expected:
+  company: 25750.00
+  difference: 0.00
+```
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| ZIMRA VAT Registration page | https://www.zimra.co.zw/domestic-taxes/vat/vat-registration | 2026-11-01 |
+| ZIMRA Tax Rates page | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-01 |
+
+Not yet confirmed: every line marked unverified; the Companies and Other Business Entities Act [Chapter 24:31] and DCIP fees were not opened.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

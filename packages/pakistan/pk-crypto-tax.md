@@ -8,11 +8,12 @@ description: >
 version: 1.0
 jurisdiction: PK
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: crypto
 ---
 
 # Pakistan Cryptocurrency Tax — Skill v1.0
@@ -28,7 +29,6 @@ depends_on:
 | Currency | PKR |
 | Possible tax treatment | Gains may be taxed as income/capital gains under the Income Tax Ordinance; a dedicated regime/rate may be introduced (verify) |
 | Tax authority | Federal Board of Revenue (FBR) |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 > **High uncertainty.** Pakistan's crypto position is changing quickly (SBP restrictions historically; a new virtual-asset regulator and possible taxation framework in progress). Do NOT assert a settled regime — verify the current law before relying on anything here.

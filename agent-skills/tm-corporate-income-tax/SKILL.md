@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TM"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Turkmenistan Corporate Income Tax
@@ -29,24 +27,6 @@ metadata:
 - **Property (real estate) tax on entities** — 1% of the average annual net book value of immovable property percent (approx — confirm)  _(Tax Code of Turkmenistan (https://gsl.org/en/taxes/turkmenistan/))_
 - **Annual corporate tax return deadline** — Generally by 31 March following the tax year (approx — confirm)  _(Tax Code of Turkmenistan)_
 - **Advance / interim payments** — Profits tax is generally paid in periodic (monthly or quarterly) advance instalments during the year, with a final reconciliation on filing (approx — confirm frequency)  _(Tax Code of Turkmenistan)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

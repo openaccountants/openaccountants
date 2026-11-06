@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Tonga Personal Income Tax
@@ -29,24 +27,6 @@ metadata:
 - **Employee tax withholding certificate** — Employer must provide Form 4 within 14 days after the end of the employer's financial year  _(Income Tax Act 2007 (https://www.revenue.gov.to/individual-employee))_
 - **Monthly PAYE remittance deadline** — By the 15th day of the following month ((approx — confirm))  _(Income Tax Act 2007 (https://www.rivermate.com/guides/tonga/taxes))_
 - **Company income tax return deadline** — On or about 30 April following the tax year ((approx — confirm))  _(Income Tax Act 2007 (https://www.revenue.gov.to/Tax-Due-Dates-and-Extensions))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

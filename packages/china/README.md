@@ -7,22 +7,25 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `china-pit.md`
-4. `china-to-singapore-relocation-tax.md`
-5. `china-vat.md`
+3. `README.md`
+4. `china-pit.md`
+5. `china-to-singapore-relocation-tax.md`
 6. `cn-corporate-tax.md`
-7. `cn-fapiao-einvoice.md`
-8. `cn-formation.md`
-9. `cn-freelance-intake.md`
-10. `cn-iit.md`
-11. `cn-return-assembly.md`
-12. `cn-social-insurance.md`
-13. `cn-stamp-tax.md`
-14. `cn-vat.md`
-15. `cn-withholding.md`
-16. `references.md`
-17. `einvoice-workflow-base.md`
-18. `company-formation-workflow-base.md`
+7. `cn-cross-border.md`
+8. `cn-fapiao-einvoice.md`
+9. `cn-formation.md`
+10. `cn-freelance-intake.md`
+11. `cn-iit.md`
+12. `cn-return-assembly.md`
+13. `cn-social-insurance.md`
+14. `cn-stamp-tax.md`
+15. `cn-transfer-pricing.md`
+16. `cn-vat.md`
+17. `cn-withholding.md`
+18. `references.md`
+19. `einvoice-workflow-base.md`
+20. `company-formation-workflow-base.md`
+21. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

@@ -9,8 +9,6 @@ metadata:
   tax_year: "2025"
   last_updated: "2026-07-13"
   reviewed_by: "James Wallach"
-  trust_label: "Checked by James Wallach"
-  review_status: "current"
 ---
 
 # US Nft Tax
@@ -34,24 +32,6 @@ metadata:
 - **Qualified appraisal threshold for donated NFTs** — $5,000 USD (A charitable contribution deduction of more than $5,000 for donated property such as an NFT/cryptocurrency requires a QUALIFIED APPRAISAL by a qualified appraiser and Form 8283 (Section B) attached to the return; for donations of $500,000 or more the appraisal itself must be attached. Digital assets are not 'cash' or a 'publicly traded security', so the appraisal exception for those does not apply, and using an exchange-reported value is not a substitute (no reasonable-cause relief on that basis). (CCA 202302012 addresses cryptocurrency; the same §170(f)(11) appraisal regime applies to a donated NFT as noncash property. A CCA is not precedent that may be cited or relied on by other taxpayers.))  _([IRC §170(f)(11)(C); Treas. Reg. §1.170A-16; IRS CCA 202302012; Form 8283](https://www.irs.gov/pub/irs-wd/202302012.pdf))_
 - **Appraisal attachment threshold for donated NFTs** — $500,000 USD (For donations of $500,000 or more the appraisal itself must be attached to the return.)  _([IRC §170(f)(11)(C); Treas. Reg. §1.170A-16](https://www.irs.gov/pub/irs-wd/202302012.pdf))_
 - **FMV / valuation difficulty and gifting** — All NFT amounts (income, basis, amount realized, donation value) are measured at fair market value in U.S. dollars. NFTs are frequently thinly traded or unique, so a reliable arm's-length FMV may be hard to establish — this drives the qualified-appraisal requirement for donations over $5,000 and creates valuation risk on income/gain measurement. A gratuitous transfer of an NFT (not for consideration) is a gift valued at FMV for gift-tax purposes and is not an income-tax realization event to the donor; the donee takes a carryover/dual basis. (UNCERTAIN — establishing FMV for unique/illiquid NFTs is fact-specific; appraisal/valuation methodology should be confirmed by the verifying CPA/EA.)  _([IRS Virtual Currency FAQs (FMV in USD); IRC §2501/§2512 (gift, FMV); IRC §1015 (carryover basis on gifts); IRC §170(f)(11) (appraisal)](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-virtual-currency-transactions))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -2,16 +2,14 @@
 name: kn-social-security-contributions
 description: >
   Saint Kitts and Nevis social security contribution reference checked for 2026. Covers the ordinary employee and employer shares, monthly insurable earnings ceiling, pay classifications, age-transition weeks and monthly reporting. Uses the official revised Social Security Act and contribution regulations together with the Board’s administrative guidance. Includes worked monthly calculations and distinguishes social insurance from the uncapped housing levy and severance contribution. Use after covered employment and the relevant payroll period have been established. A complete post-revision amendment audit and independent accountant review remain outstanding. This draft does not determine benefit entitlement or self-employed assessments.
-version: 0.1
+version: 0.2
 jurisdiction: KN
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Saint Kitts and Nevis social security contributions
@@ -53,23 +51,3 @@ The [Board employer page](https://socialsecurity.kn/employers-2/) requires emplo
 ## Limits
 
 Resolve multiple employment, partial periods, unpaid leave, special coverage, late penalties and self-employed or voluntary assessments separately. This Guide does not calculate benefits or establish eligibility for a pension. A complete post-2017 legislative amendment review and independent accountant review remain required before merge.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -29,7 +29,6 @@ metadata:
 |---|---|
 | Currency | BDT (৳) |
 | Authority | National Pension Authority (NPA); employers for PF/gratuity |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

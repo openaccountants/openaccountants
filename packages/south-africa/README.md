@@ -7,27 +7,30 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `cancelling-a-vat-registration-and-the-exit-vat-charge.md`
-4. `capital-gains-tax-rate-tables-2023-to-2027.md`
-5. `foreign-employment-income-exemption-section-10-1-o-ii.md`
-6. `income-tax-rate-tables-by-year-of-assessment-2023-to-2027.md`
-7. `leaving-south-africa-tax-emigration.md`
-8. `ring-fencing-of-assessed-losses-under-section-20a.md`
-9. `south-africa-transfer-pricing.md`
-10. `south-africa-vat.md`
+3. `README.md`
+4. `cancelling-a-vat-registration-and-the-exit-vat-charge.md`
+5. `capital-gains-tax-rate-tables-2023-to-2027.md`
+6. `foreign-employment-income-exemption-section-10-1-o-ii.md`
+7. `income-tax-rate-tables-by-year-of-assessment-2023-to-2027.md`
+8. `leaving-south-africa-tax-emigration.md`
+9. `ring-fencing-of-assessed-losses-under-section-20a.md`
+10. `south-africa-transfer-pricing.md`
 11. `travel-allowance-and-logbook-rate-tables-2023-to-2027.md`
 12. `za-assessed-loss-ring-fencing.md`
 13. `za-capital-gains-tables.md`
 14. `za-capital-gains.md`
-15. `za-emp501-reconciliation-and-irp5-corrections-syfile.md`
-16. `za-foreign-employment-exemption.md`
-17. `za-income-tax-tables.md`
-18. `za-income-tax.md`
-19. `za-provisional-tax.md`
-20. `za-tax-residency.md`
-21. `za-travel-allowance-tables.md`
-22. `za-vat-return.md`
-23. `transfer-pricing-workflow-base.md`
+15. `za-corporate-income-tax.md`
+16. `za-emp501-reconciliation-and-irp5-corrections-syfile.md`
+17. `za-foreign-employment-exemption.md`
+18. `za-income-tax-tables.md`
+19. `za-income-tax.md`
+20. `za-payroll-paye-uif-sdl.md`
+21. `za-provisional-tax.md`
+22. `za-tax-residency.md`
+23. `za-travel-allowance-tables.md`
+24. `za-vat-return.md`
+25. `payroll-workflow-base.md`
+26. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

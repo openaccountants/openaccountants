@@ -9,8 +9,6 @@ metadata:
   tax_year: "2025"
   last_updated: "2026-07-13"
   reviewed_by: "James Wallach"
-  trust_label: "Checked by James Wallach"
-  review_status: "current"
 ---
 
 # US GILTI FDII BEAT
@@ -845,24 +843,6 @@ The following are out of scope for this skill and the assistant must refuse and 
 - **R-INTL-8** — US trust / foreign trust / §6048 reporting — refer to international trust specialist.  _(R-INTL-8)_
 - **R-INTL-9** — PFIC (§1291 / §1297) analysis or QEF / mark-to-market elections — refer to PFIC specialist skill (not yet authored).  _(R-INTL-9)_
 - **R-INTL-10** — Cross-border M&A tax structuring — outside content-skill scope; full advisory engagement.  _(R-INTL-10)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-rental-sa105"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # UK property income on the SA105 pages
@@ -72,11 +69,11 @@ Out of scope: companies, partnership and trust returns, overseas property (the "
 
 | Item | Figure | Years |
 | --- | --- | --- |
-| Property allowance | £1,000 a year | Each tax year from 6 April 2017, including 2025/26 and 2026/27 |
-| Rent-a-Room limit | £7,500 (£3,750 if someone else also gets letting income from the same property) | 2025/26 (HS223 2026); HMRC's current guidance gives the same figure |
-| Cash basis ceiling | Receipts £150,000 or less | 2017/18 onwards |
-| Consolidated expenses (one figure in box 29) | Property income before expenses below £90,000 | 2025/26 return |
-| Loss set against total income (capital allowances or agricultural losses only) | Relief capped at the greater of £50,000 or 25% of adjusted total income | 2025/26 return |
+| Property allowance | £1,000 a year | Each tax year from 6 April 2017, including 2025/26 and 2026/27 Source: https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income (tax year 2026) (read 2026-10-31) |
+| Rent-a-Room limit | £7,500 (£3,750 if someone else also gets letting income from the same property) | 2025/26 (HS223 2026); HMRC's current guidance gives the same figure Source: https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet/hs223-rent-a-room-scheme-2026 (tax year 2026) (read 2026-10-31) |
+| Cash basis ceiling | Receipts £150,000 or less | 2017/18 onwards Source: https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1092 (tax year 2026) (read 2026-10-31) |
+| Consolidated expenses (one figure in box 29) | Property income before expenses below £90,000 | 2025/26 return Source: https://assets.publishing.service.gov.uk/media/69cbb66fa60a12ca3913c62a/UK_property_notes.pdf (tax year 2026) (read 2026-10-31) |
+| Loss set against total income (capital allowances or agricultural losses only) | Relief capped at the greater of £50,000 or 25% of adjusted total income | 2025/26 return Source: https://assets.publishing.service.gov.uk/media/69cbb66fa60a12ca3913c62a/UK_property_notes.pdf (tax year 2026) (read 2026-10-31) |
 
 ### Mileage for landlords ([PIM2220](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2220))
 
@@ -333,24 +330,39 @@ The working sheet adds boxes 20, 22, 23, 30 and 31, then subtracts boxes 24 to 2
 - [ ] MTD position checked for April 2026, April 2027 and April 2028.
 - [ ] Return filed and balance and payments on account paid by the deadlines.
 
-<!-- openaccountants-cta-block -->
+## Checked examples
 
----
+```oa-check
+name: Rents GBP 3,000, property allowance instead of expenses
+inputs:
+  rents: 3000
+  allowance: 1000
+steps:
+  - taxable: rents - allowance
+expected:
+  taxable: 2000
+```
 
-## Talk to a verified accountant
+```oa-check
+name: Rent-a-Room, receipts GBP 9,000, alternative method
+inputs:
+  rents: 9000
+  limit: 7500
+steps:
+  - taxable: rents - limit
+expected:
+  taxable: 1500
+```
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+## Sources
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+- https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income (read 2026-10-31)
+- https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet/hs223-rent-a-room-scheme-2026 (read 2026-10-31)
+- https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1092 (read 2026-10-31)
+- https://assets.publishing.service.gov.uk/media/69cbb66fa60a12ca3913c62a/UK_property_notes.pdf (read 2026-10-31)
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: nothing outstanding from this pass.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-rental-sa105` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-rental-sa105. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-rental-sa105` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-rental-sa105. If neither is available, confirm every figure against the official source pages cited above before relying on it.
