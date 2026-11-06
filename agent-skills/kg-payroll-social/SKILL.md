@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "KG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Kyrgyzstan Payroll & Social Contributions
@@ -30,24 +28,6 @@ Employers in Kyrgyzstan withhold 10% personal income tax and the employee's Soci
 - **Payroll income tax withholding (PAYE-equivalent)** — 10% flat, withheld by the employer as tax agent percent  _(Tax Code of the Kyrgyz Republic)_
 - **Monthly remittance / reporting deadline** — Withheld PIT and Social Fund contributions remitted and reported monthly, by the 15th–20th of the following month (approx — confirm exact day)  _(Tax Code of the Kyrgyz Republic)_
 - **Contribution wage base / cap** — No published upper earnings cap on the standard Social Fund base; contributions apply to full gross salary (approx — confirm)  _(Law on State Social Insurance of the Kyrgyz Republic)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

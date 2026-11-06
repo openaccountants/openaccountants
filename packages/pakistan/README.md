@@ -7,29 +7,32 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `pakistan-sales-tax.md`
-4. `pk-bookkeeping.md`
-5. `pk-cgt.md`
-6. `pk-corporate-tax.md`
-7. `pk-crypto-tax.md`
-8. `pk-einvoice.md`
-9. `pk-financial-statements.md`
-10. `pk-formation.md`
-11. `pk-income-tax.md`
-12. `pk-it-export-tax.md`
-13. `pk-payroll-eobi.md`
-14. `pk-payroll.md`
-15. `pk-sales-tax-federal.md`
-16. `pk-sales-tax-services.md`
-17. `pk-social-contributions.md`
-18. `pk-tax-optimization.md`
-19. `pk-withholding-tax.md`
-20. `bookkeeping-workflow-base.md`
-21. `einvoice-workflow-base.md`
-22. `payroll-workflow-base.md`
-23. `company-formation-workflow-base.md`
-24. `financial-statements-workflow-base.md`
-25. `crypto-tax-workflow-base.md`
+3. `README.md`
+4. `pakistan-sales-tax.md`
+5. `pk-bookkeeping.md`
+6. `pk-cgt.md`
+7. `pk-corporate-tax.md`
+8. `pk-crypto-tax.md`
+9. `pk-einvoice.md`
+10. `pk-financial-statements.md`
+11. `pk-formation.md`
+12. `pk-freelance-intake.md`
+13. `pk-income-tax.md`
+14. `pk-it-export-tax.md`
+15. `pk-payroll-eobi.md`
+16. `pk-payroll.md`
+17. `pk-return-assembly.md`
+18. `pk-sales-tax-federal.md`
+19. `pk-sales-tax-services.md`
+20. `pk-social-contributions.md`
+21. `pk-tax-optimization.md`
+22. `pk-withholding-tax.md`
+23. `bookkeeping-workflow-base.md`
+24. `einvoice-workflow-base.md`
+25. `payroll-workflow-base.md`
+26. `company-formation-workflow-base.md`
+27. `financial-statements-workflow-base.md`
+28. `crypto-tax-workflow-base.md`
 
 ## How to use
 

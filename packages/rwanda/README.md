@@ -7,16 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `rw-company-formation.md`
-4. `rw-corporate-income-tax.md`
-5. `rw-income-tax.md`
-6. `rw-tax-overview.md`
-7. `rwanda-income-tax.md`
-8. `rwanda-payroll.md`
-9. `rwanda-social-contributions.md`
-10. `rwanda-vat.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `rw-company-formation.md`
+5. `rw-corporate-income-tax.md`
+6. `rw-cross-border.md`
+7. `rw-tax-overview.md`
+8. `rw-transfer-pricing.md`
+9. `rwanda-income-tax.md`
+10. `rwanda-payroll.md`
+11. `rwanda-social-contributions.md`
+12. `rwanda-vat.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/spain-crypto-tax"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-06"
 ---
 
 # Spain cryptocurrency: 2026 individual income tax and foreign-custody reporting v1.3
@@ -18,7 +16,7 @@ metadata:
 
 This Guide covers **2026** common-territory IRPF for an individual investing in cryptocurrency, including sales, swaps, qualifying staking income, losses and foreign-custody information reporting. Spanish residents ordinarily bring worldwide income into IRPF under [LIRPF arts. 2 and 8–9](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a2). A foreign platform does not exempt its income. Foral law, a valid incoming-worker election and non-residence require their own route; see [es-income-tax](es-income-tax.md), [es-beckham](es-beckham.md) and [IRNR/cross-border](es-non-resident-income-tax-irnr-and.md).
 
-**Foral ordinary disposals use their own method.** For Bizkaia, Álava, Gipuzkoa or Navarra, use [the foral PIT crypto method](es-foral-income-tax.md#ordinary-nonbusiness-crypto-sales-swaps-and-loss-timing) and [dated local foreign-custody reporting route](es-foral-income-tax.md#foreign-crypto-custody2026-balances-and-the2027-procedure). Those additions supply local fiat-sale costs/update, Basque fungible FIFO, statutory different-coin swap valuation, source-specific loss treatment and local annual savings routing. The common-territory DGT/AEAT explanations below do not establish another territory's rules. The foral method supplies labelled own-law B/G/Navarra received-swap-basis derivations, evidenced mixed-fee and separate fee-token ledgers, and Navarra actual-provenance calculations. It preserves Álava's loss-release cross-reference conflict, Navarra indistinguishable-unit identification and fungible reacquisition questions, plus2027 model/procedure boundaries; these ordinary limits are distinct from the special-token/wealth work reserved below.
+**Foral ordinary disposals use their own method.** For Bizkaia, Álava, Gipuzkoa or Navarra, use [the foral PIT crypto method](es-foral-income-tax-savings.md#ordinary-nonbusiness-crypto-sales-swaps-and-loss-timing) and [dated local foreign-custody reporting route](es-foral-income-tax-savings.md#foreign-crypto-custody2026-balances-and-the2027-procedure). Those additions supply local fiat-sale costs/update, Basque fungible FIFO, statutory different-coin swap valuation, source-specific loss treatment and local annual savings routing. The common-territory DGT/AEAT explanations below do not establish another territory's rules. The foral method supplies labelled own-law B/G/Navarra received-swap-basis derivations, evidenced mixed-fee and separate fee-token ledgers, and Navarra actual-provenance calculations. It preserves Álava's loss-release cross-reference conflict, Navarra indistinguishable-unit identification and fungible reacquisition questions, plus2027 model/procedure boundaries; these ordinary limits are distinct from the special-token/wealth work reserved below.
 
 Classify each transaction by its actual contract and activity. A platform's “earn”, “staking”, “airdrop” or “yield” label is insufficient. Own-account investment is distinct from organised production/services under [art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27); frequent purchases alone are not the complete legal test. Company holdings use corporate tax and accounting, not this individual rate computation. Security tokens, NFTs and a transfer of a claim against an insolvent exchange can have different legal rights from an ordinary fungible coin.
 
@@ -239,24 +237,6 @@ expected:
 
 **Not yet confirmed:** specific common-territory art. 33.5.e reacquisition application to fungible coin units; the foral Guide supplies ordinary sale/swap/savings methods and dated local reporting gates, with labelled own-law B/G/Navarra received-basis derivations and evidenced mixed-fee/fee-token calculations now supplied; Álava's43(i) release conflict, Navarra indistinguishable-unit identification and fungible reacquisition, unsupported fee allocation or simultaneous ordering, and applicable2027 reporting-procedure limits remain unconfirmed; complete wealth/solidarity calculations; fork/bridge/wrapping/liquid-staking/LP-token/NFT and individual insolvency-case outcomes; Spanish DAC8 implementation/procedures and final 2026-income Modelo 100 schema/campaign dates. No blanket conclusion on these points is certified. Independent whole-pack review remains pending.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

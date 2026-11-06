@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-CA"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # California entity formation: LLCs, corporations and out-of-state registration (2026)
@@ -289,24 +286,6 @@ An LLC formed in 2024 or 2025 had no first-year waiver. Tax or fee paid with an 
 - [ ] Return form and due date matched to classification and owner
 - [ ] BOI: domestic entity exempt; foreign-country entity checked
 - [ ] Unsettled points (the 2027 first-year rate after a 15-day stub; the 2026 indexed amounts) flagged to the client
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

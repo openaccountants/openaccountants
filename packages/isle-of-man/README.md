@@ -7,7 +7,17 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `isle-of-man-vat.md`
+3. `README.md`
+4. `im-company-formation.md`
+5. `im-corporate-income-tax.md`
+6. `im-income-tax.md`
+7. `im-non-resident-income-tax.md`
+8. `im-payroll-social.md`
+9. `im-related-party-uk-treaty.md`
+10. `im-tax-overview.md`
+11. `isle-of-man-vat.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
 
 ## How to use
 

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CL"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Chile Company Formation & Entity Choice
@@ -29,24 +27,6 @@ Most foreign founders in Chile incorporate a SpA (Sociedad por Acciones) for its
 - **Typical incorporation cost** — RES online filing is free; notary/legal and Diario Oficial publication fees apply (commonly a few hundred USD for a simple SpA) ((approx — confirm current fees))  _([Ley 20.659 (RES)](https://www.varelaabogados.cl/en/post/how-to-incorporate-a-company-in-chile-a-step-by-step-guide))_
 - **Tax registration** — Obtain a RUT (tax ID) and file inicio de actividades with the SII before operating  _([Codigo Tributario Art. 66 / Art. 68 — RUT e inicio de actividades](https://www.sii.cl))_
 - **Core annual compliance** — Monthly VAT (Formulario 29) and PPM; annual income tax return (Operacion Renta) each April; annual informational returns (Declaraciones Juradas); statutory accounting records  _([Codigo Tributario / LIR / DL 825 (IVA)](https://www.sii.cl))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

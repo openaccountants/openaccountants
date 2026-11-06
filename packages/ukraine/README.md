@@ -9,23 +9,28 @@
 2. `intake.md`
 3. `ua-bookkeeping.md`
 4. `ua-corporate-income-tax.md`
-5. `ua-crypto-tax.md`
-6. `ua-einvoice.md`
-7. `ua-financial-statements.md`
-8. `ua-formation.md`
-9. `ua-income-tax.md`
-10. `ua-payroll.md`
-11. `ua-single-tax.md`
-12. `ua-social-contributions.md`
-13. `ua-tax-optimization.md`
-14. `ua-tax-overview.md`
-15. `ukraine-vat.md`
-16. `bookkeeping-workflow-base.md`
-17. `einvoice-workflow-base.md`
-18. `payroll-workflow-base.md`
-19. `company-formation-workflow-base.md`
-20. `financial-statements-workflow-base.md`
-21. `crypto-tax-workflow-base.md`
+5. `ua-cross-border.md`
+6. `ua-crypto-tax.md`
+7. `ua-einvoice.md`
+8. `ua-financial-statements.md`
+9. `ua-formation.md`
+10. `ua-freelance-intake.md`
+11. `ua-income-tax.md`
+12. `ua-payroll.md`
+13. `ua-return-assembly.md`
+14. `ua-single-tax.md`
+15. `ua-social-contributions.md`
+16. `ua-tax-optimization.md`
+17. `ua-tax-overview.md`
+18. `ua-transfer-pricing.md`
+19. `ukraine-vat.md`
+20. `bookkeeping-workflow-base.md`
+21. `einvoice-workflow-base.md`
+22. `payroll-workflow-base.md`
+23. `company-formation-workflow-base.md`
+24. `financial-statements-workflow-base.md`
+25. `transfer-pricing-workflow-base.md`
+26. `crypto-tax-workflow-base.md`
 
 ## How to use
 

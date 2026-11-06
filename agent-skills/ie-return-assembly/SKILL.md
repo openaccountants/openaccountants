@@ -1,20 +1,16 @@
 ---
 name: ie-return-assembly
-description: "Use this skill last, to put together an Irish individual's income tax return for tax year 2026 from the work done in the other Ireland skills. It decides Form 11 or Form 12, lists the 2026 figures each part uses (rate bands EUR 44,000 single and EUR 53,000 married at 20%, then 40%; main credits EUR 2,000; USC bands to 8%; PRSI Class S at 4.2375%; CGT 33% or 31% by disposal date), adds income tax, USC and PRSI, takes off PAYE and preliminary tax, and sets out the pay and file dates (31 October 2027 for the 2026 Form 11), the late filing surcharge and interest. Trigger on: assemble Irish return, Form 11 2026, Form 12 2026, ROS pay and file, Statement of Liability, balance due Ireland. Out of scope: companies and CT1 (ie-corporation-tax), VAT (ireland-vat-return), CAT (ie-cat)."
+description: "Use this skill last, to put together an Irish individual's income tax return for tax year 2026 from the work done in the other Ireland skills. It decides Form 11 or Form 12, lists the 2026 figures each part uses (rate bands EUR 44,000 single and EUR 53,000 married at 20%, then 40%; main credits EUR 2,000; USC bands to 8%; PRSI Class S at 4.2375%; CGT 33% or 31% by disposal date), adds income tax, USC and PRSI, takes off PAYE and preliminary tax, and sets out the pay and file dates (31 October 2027 for the 2026 Form 11), the late filing surcharge and interest. Trigger on: assemble Irish return, Form 11 2026, Form 12 2026, ROS pay and file, Statement of Liability, balance due Ireland. Out of scope: companies and CT1 (ie-corporation-tax), VAT (ie-vat-return), CAT (ie-cat)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ie-return-assembly"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.2
-
-Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not reviewed by an accountant.
 
 This skill is the last step for an individual's Irish return for tax year 2026. The tax year is the calendar year. The authority is the Revenue Commissioners. It does not redo the work of the other skills. It takes their results, checks that they fit together, adds them up, and produces a working paper, the amount to pay and the dates. It does not file anything: the taxpayer or their agent files on ROS or myAccount.
 
@@ -37,7 +33,7 @@ The detail lives in these skills. Read them first and link to them; do not copy 
 - **Individuals filing for tax year 2026.** Self-employed people, proprietary directors, landlords, and employees or pensioners with income or gains that PAYE has not dealt with.
 - **Form 11 or Form 12.** A person must file Form 11 if they are in self-assessment, are a proprietary director (or the jointly assessed spouse or civil partner of one), or their taxable non-PAYE income is more than EUR 5,000 a year, or their gross non-PAYE income is more than EUR 30,000. A PAYE worker whose taxable non-PAYE income is EUR 5,000 or less (gross EUR 30,000 or less), and who asks Revenue to collect the tax by reducing credits and rate band, files Form 12 ([Revenue: do you need to submit a tax return?](https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/need-to-submit-a-tax-return.aspx)). Detail: [ie-paye-rental-nonresident](ie-paye-rental-nonresident.md).
 - **Capital gains.** A PAYE worker with a gain reports it on the paper Form 12 or on Form CG1; CGT cannot be reported on the online eForm 12. A Form 11 filer reports it on Form 11 ([Revenue: when and how do you pay and file CGT](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx)).
-- **Out of scope here.** Companies (CT1: [ie-corporation-tax](ie-corporation-tax.md)), VAT returns ([ireland-vat-return](ireland-vat-return.md)), gift and inheritance tax ([ie-cat](ie-cat.md)), trusts and estates (Form 1). Refer those.
+- **Out of scope here.** Companies (CT1: [ie-corporation-tax](ie-corporation-tax.md)), VAT returns ([ie-vat-return](ie-vat-return.md)), gift and inheritance tax ([ie-cat](ie-cat.md)), trusts and estates (Form 1). Refer those.
 
 ## Rates, bands and thresholds
 
@@ -217,24 +213,6 @@ Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 
 
 > Contributed by Michael Cutajar.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

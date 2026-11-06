@@ -4,12 +4,11 @@ description: Sri Lanka betting & gaming levy, excise duty and customs import dut
 jurisdiction: LK
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Lal kumarasiri, CA
-reviewed_by: Lal kumarasiri
-review_status: current
-trust_label: Checked by Lal kumarasiri
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Lal kumarasiri"
+reviewed_on: 2026-11-03
+tier: 1
+domain: sector-guidance
 ---
 
 # Sri Lanka Betting, Gaming Levy & Excise
@@ -39,21 +38,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **BOI / SDP exemptions** — Companies with Board of Investment (BOI) agreements and companies identified as Strategic Development Projects (SDPs) may receive customs duty exemptions and deferrals on capital goods and raw materials.  _(BOI Act No. 4 of 1978; Strategic Development Projects Act; Customs Ordinance)_
 - **VAT at import** — 18% percent of CIF value plus customs duty (Collected by Sri Lanka Customs at the point of importation.)  _(VAT Act No. 14 of 2002; Customs Ordinance; IRD VAT Import Guidance)_
 - **SSCL at import** — 2.5% percent (Payable by importers at the point of importation regardless of turnover threshold. Collected by Sri Lanka Customs.)  _(SSCL Act No. 25 of 2022; Customs Ordinance)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

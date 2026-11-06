@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-GA"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Georgia corporate income tax, net worth tax and the pass-through entity tax election
@@ -364,24 +361,6 @@ Client facts: a 2025 Form 600S with one nonresident shareholder who did not sign
 - **PTET:** box ticked by the due date or extended due date; estimates paid as a C corporation; no composite return; owners told to use PTEDED or PTEADD and claim no Georgia credit.
 - **Estimated tax:** the $25,000 test checked; Form 600 UET attached with the exception box if used; EFT used where quarterly payments exceed $10,000.
 - **Payment and extension:** paid by the original due date with IT-560C; extension box ticked; Form 7004 attached.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

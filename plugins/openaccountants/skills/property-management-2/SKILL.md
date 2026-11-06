@@ -8,14 +8,10 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-23"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  reviewed_by: "Nadir Khan"
 ---
 
 # Property Management in United Kingdom: Rental Income Tax (SA105)
-
-> Source-cited draft: not reviewed by an accountant.
 
 This skill is a short routine for computing UK rental profit and tax for individual landlords. Tax year in force: **2026/27** (6 April 2026 to 5 April 2027). Returns filed now are for 2025/26, where the same rules and rates apply. Changelog v1.1 (2026-10-23): figures moved to 2026/27 with the year named; finance cost restriction credited to ITTOIA 2005 s.272A and ss.274A to 274C; MTD thresholds and the enacted 2027/28 property rates added; worked example completed; accountant attribution removed; Sources table added. The full method, box map, losses and joint ownership are in `uk-rental-sa105`.
 
@@ -118,24 +114,6 @@ expected:
 Not yet confirmed: the legislation that moves the finance cost reduction to 22% for 2027/28 (HM Treasury says it "will be provided"; ITTOIA s.274A read on 2026-10-23 shows no Finance Act 2026 change); whether the Scottish and Welsh property rates for 2027/28 follow the same figures.
 
 *This is a working paper aid, not a filed return. Review and sign off before filing with HMRC.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

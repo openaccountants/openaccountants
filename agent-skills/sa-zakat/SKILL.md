@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "SA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Mehran Habib, CA"
   reviewed_by: "Mehran Habib"
-  trust_label: "Checked by Mehran Habib"
-  review_status: "current"
 ---
 
 # SA Zakat
@@ -22,7 +19,7 @@ metadata:
 >
 > This skill is for informational purposes only and does not constitute tax, legal, religious, or financial advice. All outputs must be reviewed and signed off by a Saudi-licensed Zakat advisor (SOCPA member or ZATCA-approved consultant) before filing or acting upon. Zakat carries both a fiscal and a religious dimension; this skill addresses only the fiscal compliance administered by ZATCA.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Mehran Habib** on 2026-06-06.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -62,7 +59,6 @@ metadata:
 | Late-payment penalty | **5% per month** of unpaid Zakat, capped at **25%** |
 | Failure-to-file penalty | Per ZATCA penalty schedule (variable; verify current circular) |
 | Calendar election | Taxpayer may elect Hijri or Gregorian fiscal year; most large taxpayers elect Gregorian (rate adjusted) |
-| Validated by | Pending — sign-off by SOCPA-licensed Zakat advisor |
 | Skill version | 1.0 |
 
 ### 1.1 Conservative Defaults
@@ -300,24 +296,6 @@ Every output of this skill MUST end with:
 > "This Zakat computation is preliminary. The Zakat base is provisional pending verification against the latest ZATCA circular (most recently amended 1446H/2024-2025G affecting financing arrangements and intangibles). The final return MUST be reviewed and signed off by a SOCPA-licensed Zakat advisor or ZATCA-approved consultant before submission to the ZATCA portal."
 
 ## End of sa-zakat skill v1.0.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -5,15 +5,13 @@ version: 1.2
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-27
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - uk-income-tax-sa100
   - uk-statutory-residence-test
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # UK non-doms after April 2025: the 4-year FIG regime, the TRF, rebasing and IHT (2026/27)
@@ -242,21 +240,3 @@ expected:
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 
 Not yet confirmed: the 2026/27 SA109 box numbers for the TRF and FIG claims; the 2026/27 Self Assessment dates as printed by GOV.UK (pattern applied); the RFIG42100 quantification rule, carried from version 1.0 but not re-read; the remittance basis charge figures (RDRM32210) and deemed domicile Conditions A and B (ITA s835BA), kept as history only; the OWR claim time limit; the commencement of the age-10 test for 2025/26.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -8,15 +8,12 @@ metadata:
   jurisdiction: "SA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Mehran Habib, CA"
   reviewed_by: "Mehran Habib"
-  trust_label: "Checked by Mehran Habib"
-  review_status: "current"
 ---
 
 # SA RETT
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 - **RETT rate** — 5% on transaction value or FMV (higher)  _(RETT Bylaws, Article 4.1 & 4.2 Detailed Guidelines for RETT)_
 - **Effective from** — 1 October 2020 (replaced 15% VAT on RE)  _(RETT Bylaws + VAT law)_
@@ -49,7 +46,6 @@ Reviewed against the cited tax authorities by Mehran Habib on 2026-06-06. Items 
 | Payment | At declaration; notary / Ministry of Justice will not register the transfer without a ZATCA RETT clearance reference |
 | Legal liability | The **seller (transferor)** is the legal taxpayer; commercial practice often shifts the economic burden to the buyer |
 | Replaces | The pre-1 October 2020 regime where real-estate disposals were subject to 15% VAT |
-| Validated by | Pending — requires sign-off by a Saudi-licensed tax practitioner or ZATCA-registered consultant |
 | Skill version | 1.0 |
 
 ### Rate and exemption at a glance
@@ -272,24 +268,6 @@ The fact that the property was acquired by inheritance does NOT carry forward an
 10. **ZATCA Information Circulars and FAQs on RETT** — periodic clarifications on edge cases (sale-leaseback, sukuk, restructuring, mixed-use, non-resident sellers).
 11. **Saudi Vision 2030 Housing Programme** documentation — policy context for the first-home exemption.
 12. **GAZT-era guidance (pre-merger)** retained in archived form for transactions in the transitional 2020–2021 window when GAZT became ZATCA.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

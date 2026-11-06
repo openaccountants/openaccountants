@@ -24,7 +24,6 @@ metadata:
 | Core records | Income/receipts, expenses, bank statements, invoices, asset register |
 | IT exporter must keep | Bank **remittance/encashment certificates** for every foreign receipt (also unlocks the export cash incentive) |
 | Retention | Keep records to support the return (generally 6 years — verify) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — What to keep (Tier 1)

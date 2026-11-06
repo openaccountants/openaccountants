@@ -4,12 +4,11 @@ description: For an individual with US and Indian tax connections who needs to f
 jurisdiction: IN
 tax_year: 2026
 last_updated: 2026-09-06
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # US-India dual residence and foreign tax credit in India
@@ -138,21 +137,3 @@ Individuals who are resident taxpayers in India and have paid tax in a country o
 - https://www.incometax.gov.in/iec/foportal/formsfaqs (e-verification and authorised representative for Form 67)
 - https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM (treaty relief information form for non-residents under the Income Tax Act, 2025)
 - https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online (return due date and late fee stated on the ITR-4 page)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

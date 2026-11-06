@@ -7,15 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gh-company-formation.md`
-4. `gh-corporate-income-tax.md`
-5. `gh-payroll-social.md`
-6. `gh-tax-overview.md`
-7. `ghana-pit.md`
-8. `ghana-vat.md`
-9. `references.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+3. `README.md`
+4. `gh-company-formation.md`
+5. `gh-corporate-income-tax.md`
+6. `gh-cross-border.md`
+7. `gh-payroll-social.md`
+8. `gh-tax-overview.md`
+9. `gh-transfer-pricing.md`
+10. `ghana-pit.md`
+11. `ghana-vat.md`
+12. `references.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

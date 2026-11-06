@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "ES"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Spanish social contributions: RETA and employer payroll v2.4
@@ -473,24 +470,6 @@ expected:
 | [TGSS current system guide, Prórroga Tarifa Plana](https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096?changeLanguage=es), [current LETA art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5), [RD 2064 arts. 44/46](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a44) | Published equality/above-SMI extension assessment, separate calendar years and exact remaining regularisation-text boundary | 2026-10-27 |
 
 **Not yet confirmed:** the general 2026 statutory monetary bridge and authoritative MEI/assessment reconciliation beyond the supplied literal 88.64 complete-month published-TGSS administrative worksheet, including a contrary/corrected tariff or legal challenge; the legal reconciliation of the literal 'exceeds' regularisation wording in art. 38 ter.6/RD 2064 art. 46.1 at exactly SMI, despite art. 44.3.f's equal-or-higher ordinary-base rule and TGSS's explicit assessment route above. Sea, self-employed agricultural, artist/training and other special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards remain outside the supplied ordinary, household and agricultural-employee computations. Independent whole-pack review remains outstanding.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

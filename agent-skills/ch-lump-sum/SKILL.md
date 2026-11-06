@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ch-lump-sum"
   jurisdiction: "CH"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Switzerland: expenditure-based (lump-sum) taxation, 2026
@@ -240,26 +238,6 @@ expected:
 
 Not yet confirmed: the Ticino minimum comes from the ESTV cantonal sheet of February 2026, not the canton's own legislation site (which did not load); Vaud indexes its CHF 415,000 under LI art. 60 (RILI art. 1 para. 4) but its law of 1 May 2026 still prints CHF 415,000, and Ticino indexes its CHF 434,700 under LT art. 13 para. 8; neither 2026 indexed figure was found; whether Geneva or Bern index their CHF 400,000 (the law texts state a fixed figure); how Graubünden capitalises living costs into a wealth base; whether the 2020 revision of the ordinance on the credit for foreign withholding taxes (SR 672.201) changed the rule in circular no. 44, section 5.2, that lump-sum taxpayers generally get no credit; the special treaty rules for France, Belgium, Germany, Italy, Norway, Canada, Austria and the USA treaty by treaty; cantonal filing deadlines.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ch-lump-sum` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ch-lump-sum. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ch-lump-sum` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ch-lump-sum. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-crypto-tax-2"
   jurisdiction: "AU"
   last_updated: "2026-09-08"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Ryan Duguid"
 ---
 
 # Australian crypto asset tax
@@ -48,24 +46,6 @@ Determine whether the taxpayer invests, carries on a trading or mining business,
 - **Lost access, theft and administration** — Lost access, theft and an exchange entering administration need evidence of what asset or enforceable right remains and whether a loss event has occurred. Do not write off an account solely because withdrawals are suspended. Keep unresolved transactions outside the final calculation until their facts and treatment are documented, then reconcile income, gains, losses and holdings to the return workpapers.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

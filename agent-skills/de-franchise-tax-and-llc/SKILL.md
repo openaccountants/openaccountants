@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-DE"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Delaware franchise tax and LLC annual tax
@@ -249,24 +246,6 @@ The company is listed, with consolidated revenues of $900,000,000 and consolidat
 - [ ] LLC, LP and GP annual tax and each registered series paid by 1 June; the 2025 amount confirmed with the Division, not assumed.
 - [ ] Any late amounts include the penalty and interest; void, cancelled or revival status resolved first.
 - [ ] Workpapers and the filing confirmation saved.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

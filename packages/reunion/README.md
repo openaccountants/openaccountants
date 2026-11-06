@@ -7,7 +7,7 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `re-octroi-producer-registration-and-returns.md`
+3. `README.md`
 
 ## How to use
 

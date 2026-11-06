@@ -4,10 +4,10 @@ description: "Source-cited draft: corporate income tax for Timor-Leste (tax year
 jurisdiction: TL
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: income-tax
 ---
 
 # Timor-Leste Corporate Income Tax
@@ -30,21 +30,3 @@ Companies pay corporate income tax (CIT) at a flat rate, with special rates for 
 - **Withholding tax — payments to non-residents** — 10 percent (on Timor-Leste-source income paid by a resident to a non-resident)  _([Taxes and Duties Act (Law No. 8/2008)](https://taxsummaries.pwc.com/timor-leste/corporate/withholding-taxes))_
 - **Annual CIT return filing deadline** — Last day of the third month after the tax year-end (≈ 31 March for calendar-year filers)  _([Taxes and Duties Act (Law No. 8/2008)](https://taxsummaries.pwc.com/timor-leste/corporate/tax-administration))_
 - **CIT payment deadline** — Final tax due by the annual return filing date  _([Taxes and Duties Act (Law No. 8/2008)](https://taxsummaries.pwc.com/timor-leste/corporate/tax-administration))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

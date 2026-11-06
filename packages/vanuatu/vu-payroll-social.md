@@ -4,10 +4,9 @@ description: "Source-cited draft: payroll & social contributions for Vanuatu (ta
 jurisdiction: VU
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Vanuatu Payroll & Social Contributions
@@ -26,21 +25,3 @@ Vanuatu has no PAYE income tax withholding because there is no personal income t
 - **VNPF contribution base** — Employee's gross monthly remuneration (approx — confirm any minimum/maximum earnings limits)  _(National Provident Fund Act (https://www.vnpf.com.vu/employers.html))_
 - **VNPF remittance deadline** — Monthly contributions are payable to the VNPF in the month following the contribution month (approx — confirm exact day of month)  _(National Provident Fund Act (https://www.vnpf.com.vu/employers.html))_
 - **Employer registration obligation** — Employers must register with the VNPF and remit contributions for eligible employees  _(National Provident Fund Act (https://employmentvanuatu.gov.vu/index.php/resources-2/employer-guideline/vnpf-employers-and-their-responsibilities))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

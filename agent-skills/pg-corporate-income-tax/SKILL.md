@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "PG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Papua New Guinea Corporate Income Tax
@@ -34,24 +32,6 @@ metadata:
 - **Corporate tax year** — Calendar year (1 January to 31 December); substituted accounting periods require IRC approval  _(Income Tax Act — https://taxsummaries.pwc.com/papua-new-guinea/corporate/tax-administration)_
 - **Corporate return deadline** — 28 February following the year of income (extended to 30 June where lodged by a registered tax agent) (approx — confirm against current IRC lodgment program)  _(Income Tax Act — https://taxsummaries.pwc.com/papua-new-guinea/corporate/tax-administration)_
 - **Corporate tax payment** — Companies pay provisional tax in instalments; balance of assessed tax due within 30 days of service of the assessment notice  _(Income Tax Act — https://taxsummaries.pwc.com/papua-new-guinea/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

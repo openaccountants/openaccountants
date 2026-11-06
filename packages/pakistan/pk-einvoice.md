@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: PK
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: e-invoicing
 ---
 
 # Pakistan E-Invoicing & Digital Compliance — Skill v1.0
@@ -30,7 +31,6 @@ depends_on:
 | Provincial services | Provincial authorities (SRB/PRA/KPRA/BRA) have their own e-invoicing/return systems |
 | Authority | Federal Board of Revenue (FBR) + provincial revenue authorities |
 | Currency | PKR |
-| Quality tier | Research-verified — pending sign-off by a Pakistani practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "ZA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Werner Britz, CA(SA)"
   reviewed_by: "Werner Britz"
-  trust_label: "Checked by Werner Britz"
-  review_status: "current"
 ---
 
 # ZA Capital Gains
@@ -83,29 +80,11 @@ marginal income tax rate.
 > Working paper only. The valuation date election for pre-October 2001 assets requires
 > specific analysis. Have a qualified South African CA(SA) or tax practitioner review.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Werner Britz** on 2026-06-12.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

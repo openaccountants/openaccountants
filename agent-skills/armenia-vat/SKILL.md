@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AM"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Armenia VAT: ordinary 2026 computation and evidence
@@ -282,24 +280,6 @@ Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https:
 **Not yet confirmed:** return-period/restoration mapping when the exporter fails its own required export-declaration deadline. Ordinary timely-export proof and filing are supplied; the buyer statement missing alone is not that failure. The unresolved late-filing recovery is a conditional failure boundary, not a missing ordinary timely-export method. Ordinary loss classification/documentation, current norm lookup and annual VATtrue-up are supplied in the corporate/VAT methods. Specialist exemption/base/vehicle/leasing schemes and January 2027 implementation are separate boundaries. Actual taxpayer evidence, portal acceptance and professional attestation are not represented as obtained; fresh whole-pack review remains pending.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

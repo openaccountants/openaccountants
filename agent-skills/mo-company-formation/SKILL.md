@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "MO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Macau Company Formation & Entity Choice
@@ -31,24 +29,6 @@ The most common vehicle in Macau is the private limited company by quotas (Socie
 - **Annual compliance — tax return** — File the complementary (profits) tax return annually (Group B by 31 March, Group A by 30 June)  _(Macau Complementary (Profits) Tax Regulation (https://www.mdme.com/en/knowledge/taxation-doing-business-in-macau-2025/22402/))_
 - **Annual compliance — accounts** — Group A companies must maintain audited financial statements; Group B keep simplified records  _(Macau Complementary (Profits) Tax Regulation)_
 - **Annual compliance — payroll/FSS** — Operate professional tax PAYE (quarterly remittance) and FSS contributions for local staff  _(Macau Professional Tax Regulation and Social Security System Law)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

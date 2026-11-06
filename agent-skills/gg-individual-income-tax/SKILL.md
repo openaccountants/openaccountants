@@ -7,13 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-individual-income-tax"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-10-28"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Guernsey individual income tax and residence v0.10
+# Guernsey individual income tax and residence v0.11
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -127,11 +124,11 @@ Assume one individual, full-year qualifying residence, valid elections and indep
 
 **Qualifying-income route:** £1 million qualifying income, £100,000 other included Guernsey income and £20,000 taxable Guernsey rent. Ordinary tax is £224,000. The qualifying route gives £160,000 + £20,000 + £4,000 = **£184,000**. The combined route gives £220,000 + £4,000 = £224,000, so it offers no reduction on these facts. A cap is not a compulsory charge above ordinary liability.
 
-[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
+[Supplementary regression control preserved](../../evidence/research/guernsey-2026/individual-original-controls.md).
 
 **Combined route with excluded rent:** change the other included income to £1 million. Ordinary tax is £404,000; the qualifying route gives £364,000. The combined route gives £320,000 plus £4,000 property tax, or **£324,000**. Reporting £320,000 as total tax would omit the property exclusion. Social contributions remain additional in both examples.
 
-[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
+[Supplementary regression control preserved](../../evidence/research/guernsey-2026/individual-original-controls.md).
 
 **Screening example:** a married couple cannot simply combine their income under the former general joint cap. Review each person's election and income categories. If either receives a pension triviality payment or Guernsey rental income, isolate it for separate tax analysis before comparing a cap with ordinary taxation. This is a classification check, not a computed cap liability. [Cap guidance](https://gov.gg/taxcap); [exclusions, page 5](https://gov.gg/CHttpHandler.ashx?id=174308&p=0).
 
@@ -169,7 +166,7 @@ Revenue Service currently describes an individual late-return penalty of £200 p
 
 **Conditional arithmetic:** if the notice and receipt establish 40 chargeable days, the unreduced individual penalty is £200 + 40 × £10 = £600. If filing satisfies the 30-day grace condition, only £200 remains. Confirm the day count against the notice; this example does not decide inclusive-date counting. [Penalty guidance](https://gov.gg/taxpenalties).
 
-[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
+[Supplementary regression control preserved](../../evidence/research/guernsey-2026/individual-original-controls.md).
 
 For income below the personal allowance, the guidance limits the late-filing penalty to £50 **after the return is received and assessment issued**. Low income does not dispense with filing. An appeal alone does not stop daily accrual: file and retain submission evidence. [Penalty FAQ](https://gov.gg/taxpenalties).
 
@@ -189,7 +186,7 @@ The **£50 minimum applies to the total surcharge and additional surcharges**, n
 
 Keep an event ledger of due dates, payments and surcharge dates. Section 199(6) can backdate charges following the specified late/incomplete-return or omitted-liability assessments; for post-2022 years its references are the quarterly statutory dates. Mere non-enforcement does not defer settlement: section 199(10) requires the express agreement and complete-return conditions it states. Section 199(11)(b) separately protects the stated timely complete-return/assessment/payment case. A return is not complete until required supporting documents/information are also received under subsection (12). Do not use a later assessment notice to erase an already incurred surcharge without applying the actual provision. [Section 199(6), (10)–(12)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
-**Ordinary arrears control:** assume a £10,000 balance lawfully due, no relevant exemption/deferral/backdating complication, no payment and no other charge throughout the following twelve months. Initial surcharge is £500; the first six-month additional surcharge is 5% of £10,500 = £525; the next is 5% of £11,025 = £551.25. Total surcharges are £1,576.25 and total outstanding is £11,576.25. Apply actual payment dates in a real case. [Supplementary recomputing control](../../research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md).
+**Ordinary arrears control:** assume a £10,000 balance lawfully due, no relevant exemption/deferral/backdating complication, no payment and no other charge throughout the following twelve months. Initial surcharge is £500; the first six-month additional surcharge is 5% of £10,500 = £525; the next is 5% of £11,025 = £551.25. Total surcharges are £1,576.25 and total outstanding is £11,576.25. Apply actual payment dates in a real case. [Supplementary recomputing control](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md).
 
 ### Tribunal preparation and further appeal
 
@@ -225,7 +222,7 @@ expected:
 
 **Protected pension edge case.** Assume £200,000 full-year reviewed income, eligible personal allowance £15,200, eligible mortgage relief £3,500 and **independently established deductible** pension contributions £5,000, with no other allowances. Withdrawal is £23,000. It removes £15,200 personal allowance, £3,500 mortgage relief, then the £2,500 withdrawable pension portion. The remaining £1,800 withdrawal does not remove the protected £2,500. Tax before credits is (£200,000 − £2,500) × 20% = **£39,500**. This does not establish pension-scheme eligibility or the ordinary contribution deduction limit. [Withdrawal order and protection](https://gov.gg/wopa).
 
-[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
+[Supplementary regression control preserved](../../evidence/research/guernsey-2026/individual-original-controls.md).
 
 ### Rental base with the 2026 transition
 
@@ -295,32 +292,12 @@ Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [sectio
 
 | Surcharges and Supplements Regulations 2005, rr1–9 (complete); current Law s199 operative subsections (complete) | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079 and https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-28 |
 
-The legal-library consolidation is expressly non-authoritative; authentic enactments and their effective dates control. Not yet confirmed: the implementing instrument reconciling the published 2026 £50,000 standard charge with consolidated s5B’s £40,000; special Open Market/Alderney cap eligibility and transitions; full pension deduction/encashment limits; fractional-period allowance/withdrawal allocation outside the cited practice; complete Tribunal/court rules and case-specific credit/claim operations. These exact limits do not cancel the ordinary source/base, rental-transition, payment or residence methods now supplied. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2. The new surcharge method is checked in the [fresh ordinary-method whole-pack review](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md) and [repair closure](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/closure.md); professional attestation remains pending.
+The legal-library consolidation is expressly non-authoritative; authentic enactments and their effective dates control. Not yet confirmed: the implementing instrument reconciling the published 2026 £50,000 standard charge with consolidated s5B’s £40,000; special Open Market/Alderney cap eligibility and transitions; full pension deduction/encashment limits; fractional-period allowance/withdrawal allocation outside the cited practice; complete Tribunal/court rules and case-specific credit/claim operations. These exact limits do not cancel the ordinary source/base, rental-transition, payment or residence methods now supplied. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2. The new surcharge method is checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md) and [repair closure](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/closure.md); professional attestation remains pending.
 
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-individual-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-individual-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-individual-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-individual-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

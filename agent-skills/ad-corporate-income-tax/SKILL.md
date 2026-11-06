@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AD"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Andorra corporate income tax, 2026
@@ -197,24 +195,6 @@ expected:
 Not yet confirmed: historic pre-July-2017 holding gain allocations require the actual old authorisation/acquisition workpaper; the precise article 13 client-cost average for a new, short-period or loss-history case and interaction of a particular donation expense with its separate credit require a supported case-specific treatment. No current new-company 5%-on-EUR-50,000 incentive is established. Treaty-by-treaty rates, consolidation/CFC/reorganisation and sector-specific calculations are outside this ordinary standalone method. Portal consolidations are not the official gazette; retain their amendment/application annotations and check the operative act where a historical transition matters.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

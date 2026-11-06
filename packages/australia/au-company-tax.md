@@ -13,10 +13,12 @@ version: 1.1
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-09-22
-review_status: pending_review
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # Australia Company Income Tax -- Private SME Company Skill
@@ -54,7 +56,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | PAYG instalment GDP uplift | 5% for 2026-27 (4% for 2025-26) |
 | Amendment period (SMB, aggregated turnover < $50m) | Generally 2 years, subject to statutory exceptions. For 2024-25 and later assessments, an approved-form taxpayer application can use the additional 2-year window, limited to giving effect to that application. Other companies generally have 4 years. |
 | Contributor | Open Accountants |
-| Validated by | Pending |
 
 **Conservative defaults:**
 
@@ -413,26 +414,6 @@ If the client provides only financial statements and a trial balance:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 > Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

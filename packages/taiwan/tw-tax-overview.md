@@ -4,10 +4,9 @@ description: "Source-cited draft: tax overview for Taiwan (tax year 2025) — ra
 jurisdiction: TW
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Taiwan Tax Overview
@@ -26,21 +25,3 @@ Taiwan (Republic of China) taxes individuals and profit-seeking enterprises on a
 - **Annual individual income tax filing deadline** — 1 May – 31 May of the year following the tax year  _([Income Tax Act](https://taxsummaries.pwc.com/taiwan/individual/tax-administration))_
 - **Annual corporate income tax filing deadline** — By 31 May following the fiscal year-end (last day of the fifth month after year-end for non-calendar years)  _([Income Tax Act](https://taxsummaries.pwc.com/taiwan/corporate/tax-administration))_
 - **Income Basic Tax (Alternative Minimum Tax)** — Individuals 20%; enterprises 12% (a 15% rate is proposed for in-scope multinational groups under the global minimum tax from 2025 — confirm) percent ((approx — confirm 15% MNE rate status))  _([Income Basic Tax Act](https://taxsummaries.pwc.com/taiwan/corporate/taxes-on-corporate-income))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

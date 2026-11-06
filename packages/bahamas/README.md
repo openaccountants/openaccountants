@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bahamas-vat.md`
-4. `bs-company-formation.md`
-5. `bs-corporate-income-tax.md`
-6. `bs-income-tax.md`
-7. `bs-payroll-social.md`
-8. `bs-tax-overview.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `bahamas-vat.md`
+5. `bs-company-formation.md`
+6. `bs-corporate-income-tax.md`
+7. `bs-income-tax.md`
+8. `bs-payroll-social.md`
+9. `bs-tax-overview.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

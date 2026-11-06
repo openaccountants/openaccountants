@@ -7,13 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-transfer-pricing"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Romania: transfer pricing (prețuri de transfer) v0.2
+# Romania: transfer pricing (prețuri de transfer) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, transactions or filings. Do not rely on it to file, price a transaction or take a tax position without review by a qualified professional in Romania.
 
@@ -299,26 +296,6 @@ expected:
 
 Not yet confirmed: (1) Whether several contracts of the same category with one affiliated person are added together for the Order 828/2026 thresholds. The Order measures "each individual transaction with each affiliated person" (art. 2(3) and (8)) and does not define a transaction. (2) Whether filing the annual file late in SPV, while it was prepared on time, is itself fined under CPF art. 336(1)(e). (3) The Portal Legislativ (legislatie.just.ro) could not be loaded on 23 October 2026, so no later amendment to Order 828/2026 was checked there. ANAF's consolidated Procedure Code still lists Order "446/2016" (a typing error for 442/2016) under art. 108(2) and does not yet list Order 828/2026. (4) Whether ANAF spreads the non-declaration penalty on a corporate tax difference across the quarterly due dates rather than starting it after the annual due date, as Example 2 does. (5) Whether a reduced fine for paying half the minimum within 15 days applies under the general contraventions law (OG 2/2001), which was not read. (6) The treatment of secondary adjustments, such as whether an excess paid to a foreign parent becomes a dividend, was not researched. (7) Whether the CbCR report, the CbCR notification and the SPV filing deadline move when they fall on a non-working day was not checked.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

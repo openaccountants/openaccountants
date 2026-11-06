@@ -7,12 +7,13 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `costa-rica-income-tax.md`
-4. `costa-rica-iva.md`
-5. `costa-rica-payroll.md`
-6. `costa-rica-social-contributions.md`
-7. `costa-rica-tax-optimization.md`
-8. `payroll-workflow-base.md`
+3. `README.md`
+4. `costa-rica-income-tax.md`
+5. `costa-rica-iva.md`
+6. `costa-rica-payroll.md`
+7. `costa-rica-social-contributions.md`
+8. `costa-rica-tax-optimization.md`
+9. `payroll-workflow-base.md`
 
 ## How to use
 

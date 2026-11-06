@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BT"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bhutan Payroll & Social Contributions
@@ -28,24 +26,6 @@ metadata:
 - **TDS / salary tax remittance deadline** — TDS deducted is remitted to DRC by the deadline in the TDS Guidelines (typically within the month/quarter following deduction) ((approx — confirm exact remittance schedule))  _(Income Tax Act of the Kingdom of Bhutan 2001 (TDS provisions))_
 - **NPPF contribution remittance** — Employer remits combined employee + employer contributions to NPPF monthly  _(National Pension and Provident Fund Plan Rules and Regulations, https://www.nppf.org.bt/remittance-of-contribution/)_
 - **Annual PIT reconciliation** — Employees with income above the threshold file an annual PIT return by 31 March, reconciling TDS already withheld  _(Income Tax Act of the Kingdom of Bhutan 2001, https://www.drc.gov.bt/personal-income-tax-pit/)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

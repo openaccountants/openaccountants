@@ -8,15 +8,12 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  reviewed_by: "Nadir Khan"
 ---
 
 # VAT returns for small businesses in the UK
 
 ## VAT returns for small businesses in the UK
-
-> Source-cited draft: not reviewed by an accountant.
 
 A VAT-registered small business in the UK files a VAT return regularly, usually every quarter. This skill is the short routine for a straightforward return in 2026/27. The full method, box by box, is in `uk-vat-return`.
 
@@ -143,24 +140,6 @@ expected:
 | GOV.UK, Making Tax Digital for VAT | https://www.gov.uk/guidance/making-tax-digital-for-vat | 2026-10-23 |
 
 Not yet confirmed: the full table of Flat Rate Scheme sector percentages (only the 11% photography example and the 16.5% limited cost rate were read today); the limited cost test amount for a single quarter.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

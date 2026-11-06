@@ -5,14 +5,14 @@ version: 3.4
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-27
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Power"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # UK payments on account (2026-27)
@@ -279,17 +279,3 @@ expected:
 | GOV.UK, Find out if and when you need to use Making Tax Digital for Income Tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-24 |
 
 Not yet confirmed: the Bank Rate after the 5 November 2026 decision; the online payment plan limit for Self Assessment debts (not stated here); and the treatment of foreign tax credit relief in the s. 59A assessed amount (stated from the structure of s. 59A(1), not from an HMRC page). Carried from v3.2: the bank statement pattern library (now the 31 January note under Deadlines) and the refusal list (now the out of scope lines under Who this applies to).
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

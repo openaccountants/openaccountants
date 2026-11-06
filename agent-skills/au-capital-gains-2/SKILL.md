@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-capital-gains-2"
   jurisdiction: "AU"
   last_updated: "2026-09-08"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Ryan Duguid"
 ---
 
 # Australian capital gains tax
@@ -47,24 +45,6 @@ CGT generally includes a net capital gain in assessable income. It is not a sepa
 Prepare a separate eligibility record for each proposed concession before calculating its effect. Retain the event date, proceeds, adjusted cost bases, loss applications, discount calculation, supporting valuations and any choice or rollover documentation with the return workpapers.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

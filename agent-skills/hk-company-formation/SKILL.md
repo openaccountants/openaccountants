@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "HK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Hong Kong Company Formation & Entity Choice
@@ -31,24 +29,6 @@ The most common vehicle is a private company limited by shares incorporated unde
 - **Business Registration renewal** — Business Registration Certificate must be renewed annually (or every 3 years if a 3-year certificate is held)  _([Business Registration Ordinance (Cap. 310)](https://www.ird.gov.hk/eng/tax/bre.htm))_
 - **Annual audit** — Every Hong Kong company (with very limited dormant exceptions) must prepare audited financial statements by a HK CPA (practising) for the directors and for the profits tax return  _([Companies Ordinance (Cap. 622), Part 9](https://www.cr.gov.hk/))_
 - **Significant Controllers Register (SCR)** — Companies must keep a Significant Controllers Register at their registered office / a HK location and make it available to law enforcement  _([Companies Ordinance (Cap. 622), Part 12 Division 2A](https://www.cr.gov.hk/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

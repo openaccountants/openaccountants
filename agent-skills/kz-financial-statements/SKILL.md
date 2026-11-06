@@ -24,7 +24,6 @@ metadata:
 | Filing | Depository of Financial Statements (web portal of the Ministry of Finance) for entities required to publish |
 | Standards body | Ministry of Finance; Tax authority КГД for tax filings |
 | Currency | KZT |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Skill version | 1.0 |
 
 ### Conservative defaults

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AM"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Armenia social payments, stamp payments and health insurance
@@ -237,24 +235,6 @@ Targeted commencement recheck, **25 October 2026**: [current Health Law arts. 16
 **Not yet confirmed:** operative Government procedure/commencement forHealth 14(12) mistaken/no-liability payments and specified suspended/age 65 entrepreneur refunds. Specialist populations, agreements, related-person coverage, all state-paid priority exceptions and historic stamp-family refunds remain separate boundaries. No live participant refund, accepted return, fresh independent country review or named accountant attestation is represented as obtained. The current statutory transitional deadline and ordinary contribution/participant-excess methods are supplied. The unresolved mistake/suspension/age-65 refund implementation is a conditional recovery boundary, not a universal refund entitlement or a missing ordinary contribution computation.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

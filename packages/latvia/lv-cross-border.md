@@ -5,11 +5,10 @@ version: 0.1
 jurisdiction: LV
 tax_year: 2026
 last_updated: 2026-10-24
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # Latvia: cross-border tax for people and companies (2026) v0.1
@@ -243,21 +242,3 @@ likumi.lv (the official legal acts portal of the publisher Latvijas Vēstnesis) 
 Not yet confirmed: the Cabinet of Ministers regulation on applying treaty relief and the residence certificate forms (Regulation No. 178 of 30 April 2001 is the one named in VID material; not read); the Cabinet list of low-tax and no-tax jurisdictions in force in 2026 (not read); whether Latvia gives the ATAD article 5(2) exit-tax instalments anywhere outside the CIT Law and LTF section 24 (none found in those texts); the 2026 maximum social insurance contribution base that sets the 33% band and the later declaration window (set under the law On State Social Insurance, not read); the Cabinet rules on reporting payments to non-residents under CIT Law section 16(2); amendments to the PIT Law adopted after 1 September 2026; individual treaty rates and tie-breakers.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

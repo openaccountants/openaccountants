@@ -4,10 +4,9 @@ description: "Source-cited draft: payroll & social contributions for British Vir
 jurisdiction: VG
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # British Virgin Islands Payroll & Social Contributions
@@ -29,21 +28,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **National Health Insurance (NHI) — total rate** — 7.5% of insurable earnings (3.75% employee + 3.75% employer) percent  _([National Health Insurance Regulations](https://www.vinhi.vg/nhi-contribution-breakdown/))_
 - **NHI maximum insurable earnings** — US$102,000 per year (2025); rising to US$106,800 per year from 1 January 2026 USD  _([National Health Insurance Regulations](https://www.vinhi.vg/wp-content/uploads/2024/09/NHI-Maximum-Insurable-Earnings-2025-13.09.2024.pdf))_
 - **Self-employed Payroll Tax** — Self-employed persons pay Payroll Tax at the applicable class rate (10% Class 1 / 14% Class 2) on their deemed remuneration percent  _(Payroll Taxes Act, 2004)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

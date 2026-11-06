@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "SA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Mehran Habib, CA"
   reviewed_by: "Mehran Habib"
-  trust_label: "Checked by Mehran Habib"
-  review_status: "current"
 ---
 
 # SA Corporate Tax
@@ -22,7 +19,7 @@ metadata:
 >
 > This skill is for informational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a Saudi-licensed tax professional (SOCPA member or ZATCA-recognised tax adviser) before filing or acting upon. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Mehran Habib** on 2026-06-06.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -70,7 +67,6 @@ metadata:
 | Filing portal | ZATCA portal at zatca.gov.sa |
 | Record retention | Minimum **10 years** (verify against current ZATCA guidance and Implementing Regulations) |
 | **Penalties** | **5% per month** late payment (capped at **25%**); separate failure-to-file fines |
-| Validated by | Pending — sign-off by a SOCPA member or ZATCA-recognised tax adviser |
 | Skill version | 1.0 |
 
 ### 1.1 Conservative Defaults
@@ -480,24 +476,6 @@ This skill and its outputs are for informational and computational purposes only
 ## OpenAccountants footer
 
 *OpenAccountants — open-source accounting skills for AI*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

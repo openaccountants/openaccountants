@@ -7,16 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `belarus-income-tax.md`
-4. `belarus-payroll.md`
-5. `belarus-social-contributions.md`
-6. `belarus-tax-optimization.md`
-7. `belarus-vat.md`
-8. `by-company-formation.md`
-9. `by-corporate-income-tax.md`
-10. `by-tax-overview.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `belarus-cross-border-tax.md`
+5. `belarus-income-tax.md`
+6. `belarus-payroll.md`
+7. `belarus-social-contributions.md`
+8. `belarus-tax-optimization.md`
+9. `belarus-transfer-pricing.md`
+10. `belarus-vat.md`
+11. `by-company-formation.md`
+12. `by-corporate-income-tax.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

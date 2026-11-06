@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TT"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Trinidad and Tobago Personal Income Tax
@@ -30,24 +28,6 @@ metadata:
 - **Individual return filing deadline** — 30 April of the year following the year of income  _(Income Tax Act (Chap. 75:01) — https://taxsummaries.pwc.com/trinidad-and-tobago/individual/tax-administration)_
 - **Self-employed quarterly instalments** — Estimated tax payable in quarterly instalments by 31 March, 30 June, 30 September and 31 December, with the balance due by 30 April  _(Income Tax Act (Chap. 75:01) — https://www.finance.gov.tt/services/income-tax/paying-your-taxes/)_
 - **Business levy on self-employed** — 0.6% on gross income/receipts exceeding TTD 360,000 per year, where it exceeds the income tax liability  _(Income Tax Act (Chap. 75:01) — https://taxsummaries.pwc.com/trinidad-and-tobago/individual/other-taxes)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

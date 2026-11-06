@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "DO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Miguel Lantigua, CPA"
   reviewed_by: "Miguel Lantigua"
-  trust_label: "Checked by Miguel Lantigua"
-  review_status: "current"
 ---
 
 # Dominican Republic Withholding Taxes (Retenciones, Dividends, Foreign Payments)
@@ -33,24 +30,6 @@ metadata:
 - **Renta de fuente dominicana (art. 272 CT)** — ¿La normativa define como renta de fuente dominicana, sujeta a retención cuando se paga a no residentes, aquella que proviene de bienes situados, derechos utilizados económicamente o actividades desarrolladas en territorio dominicano, conforme al artículo 272 del Código Tributario, incluyendo expresamente: (a) servicios prestados o utilizados económicamente en RD; (b) regalías y licencias por uso de derechos en RD; (c) intereses por capitales colocados o utilizados en RD; (d) rentas inmobiliarias y ganancias por venta de inmuebles ubicados en RD; (e) rentas de actividades comerciales ejercidas en RD? (regla normativa) — Código Tributario art. 272 — concepto de renta de fuente dominicana; art. 269 — rentas sujetas al ISR; Reglamento 139-98 arts. correspondientes · Evidencia: Análisis de fuente por cada pago al exterior, contratos que especifiquen lugar de prestación del servicio o utilización del derecho, documentación de la conexión económica con el territorio dominicano  _(Ley 11-92 arts. 269 y 272 — https://dgii.gov.do/legislacion/codigoTributario/Cdigo%20Tributario/Titulo2.pdf; Reglamento 139-98 — https://dgii.gov.do/legislacion/reglamentos)_
 - **Tasa interna CT — Pagos generales al exterior (art. 305)** — 27%  _(CT art. 305 — retención 27% pagos generales exterior)_
 - **Exigencia de análisis de precios de transferencia en pagos al exterior a partes relacionadas** — ¿Cuando el pago al exterior se realiza a una parte relacionada (vinculación accionaria, control, dirección común, paraíso fiscal), la normativa exige análisis de precios de transferencia conforme al artículo 281 del Código Tributario y al Reglamento 78-14 para validar que el valor del pago corresponde al de mercado entre partes independientes, además de la retención del 27% (o tasa aplicable) sobre el monto? (regla normativa) — Código Tributario art. 281 (precios de transferencia entre partes relacionadas); Reglamento 78-14 sobre Precios de Transferencia (mod. por Decreto 256-21); Normas Generales DGII sobre PT; instrucciones operativas de la DGII; art. 281 bis CT (definición de paraíso fiscal) · Evidencia: Análisis de comparabilidad, estudio de precios de transferencia, informe DIOR (cuando supere umbrales), declaración informativa de operaciones con relacionadas, contratos intercompañía, política de PT del grupo  _(Ley 11-92 art. 281 — https://dgii.gov.do/legislacion/codigoTributario/Cdigo%20Tributario/Titulo2.pdf; Reglamento 78-14 sobre Precios de Transferencia — https://dgii.gov.do/legislacion/reglamentos; Normas Generales DGII sobre PT — https://dgii.gov.do/legislacion/normasGenerales)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

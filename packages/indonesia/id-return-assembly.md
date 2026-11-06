@@ -4,10 +4,9 @@ description: Use this skill whenever asked to assemble, finalize, or package an 
 jurisdiction: ID
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # ID Return Assembly
@@ -54,7 +53,6 @@ The output is a reviewer-ready package: line-by-line SPT working paper, cross-sk
 | Confirmation receipt | BPE — Bukti Penerimaan Elektronik (electronic filing receipt) |
 | Governing law | UU KUP No. 6/1983 (as amended); UU PPh No. 36/2008; UU HPP No. 7/2021; PMK 81/2024 (Coretax implementation) |
 | Skill version | 1.0 |
-| Validated by | Pending — requires sign-off by Konsultan Pajak bersertifikat (certified Indonesian tax consultant) |
 
 ## Section 2 — Required inputs from upstream skills
 
@@ -670,16 +668,6 @@ v1.0 (May 2026): Initial release. Modelled on mt-return-assembly and us-ca-retur
 
 OpenAccountants — open-source accounting skills for AI. This is not tax advice. All outputs must be reviewed and signed off by a qualified Indonesian tax consultant (Konsultan Pajak bersertifikat) before filing via Coretax DJP.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 ### 2.1 Individual return (SPT 1770) — inputs
 
 0. **Consume id-bookkeeping output** — General ledger trial balance; income/expense detail feeding Lampiran I
@@ -705,21 +693,3 @@ We'll route you to the named verifier covering your country or state. You can al
 ## Section 14 — Output files
 
 0. **Produce final output files** — Generate master workbook, reviewer_brief.md, and taxpayer_action_list.md and place them in /mnt/user-data/outputs/
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -4,11 +4,11 @@ description: "The Malta Permanent Residence Programme (MPRP) for non-EU, non-EEA
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-10-24
-authored_by: Michael Spiteri Staines
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Michael Spiteri Staines"
+reviewed_on: 2026-11-03
+tier: 1
+domain: cross-border
 ---
 
 # Malta Permanent Residence Programme (MPRP): who qualifies, what it costs, and the conditions to keep it
@@ -233,21 +233,3 @@ Refuse to:
 - [Residency Malta Agency, MPRP Frequently Asked Questions, version 2.6.5](https://residencymalta.gov.mt/wp-content/uploads/2024/09/MPRP-FAQs-V2.6.5.pdf)
 - [Income Tax Act, Cap. 123, article 4(1) proviso (legislation.mt)](https://legislation.mt/eli/cap/123/eng/pdf)
 - [Residency Malta Agency, home page](https://residencymalta.gov.mt/)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -8,16 +8,14 @@ metadata:
   jurisdiction: "PK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
+  reviewed_by: "Ibrar Ali"
 ---
 
 # PK Cgt
 
 ## Pakistan — Capital Gains Tax — Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -62,7 +60,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Securities collection agent | National Clearing Company of Pakistan Limited (NCCPL) |
 | Property collection agent | Buyer's bank / property registrar at execution |
 | Filing | Annual income tax return — IRIS portal |
-| Validated by | Pending — requires sign-off by a Pakistani Chartered Accountant (ICAP) or Cost & Management Accountant (ICMAP) or registered FBR tax practitioner |
 | Skill version | 1.0 |
 
 ### CGT rate at a glance — TY 2025-26 (verify against current Finance Act)
@@ -316,24 +313,6 @@ Mr. Iqbal, a resident filer, acquired BTC in 2023 for Rs. 2,000,000 (equivalent 
 12. **FBR Information Circulars on Capital Gains** — including the post-FA 2024 circulars clarifying the flat-rate regime on PSX securities.
 
 ## End of Skill — Pakistan CGT v1.0
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

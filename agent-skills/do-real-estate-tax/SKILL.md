@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "DO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Miguel Lantigua, CPA"
   reviewed_by: "Miguel Lantigua"
-  trust_label: "Checked by Miguel Lantigua"
-  review_status: "current"
 ---
 
 # Dominican Republic Real Estate Tax (IPI) & Property Transfer
@@ -27,24 +24,6 @@ metadata:
 - **¿La adquisición del inmueble está sujeta al impuesto de transferencia inmobiliaria?** — 3% % (Tasa del impuesto de transferencia inmobiliaria; sujeta a Ley 173-07 arts. 7-8, Res. DDG-AR1-2026-00001 (Décimo), NG 03-24 (condición para transferencia; sustituye NG 08-14). Evidencia: Contrato de compraventa, liquidación DGII.)  _(Ley 288-04 art. 7 (tasa 3%); Ley 173-07 arts. 7-8; Res. DDG-AR1-2026-00001 (Décimo); NG 03-24 · dgii.gov.do/legislacion/resoluciones/Documents/DDG-AR1-2026-00001.pdf)_
 - **¿Existe exención aplicable (CONFOTUR, vivienda de bajo costo u otro régimen)?** — Regímenes de exención: Ley 158-01 (CONFOTUR); Ley 189-11 arts. 129-131 (fideicomiso bajo costo); Ley 288-04; Res. DDG-AR1-2026-00001 (Décimo Segundo). Evidencia: Resolución de exención, documentación del régimen.  _(Ley 158-01 (CONFOTUR); Ley 189-11 arts. 129-131; Ley 288-04; Res. DDG-AR1-2026-00001 (Décimo Segundo) · dgii.gov.do/legislacion/resoluciones/Documents/DDG-AR1-2026-00001.pdf)_
 - **¿El valor de liquidación coincide con el valor fiscal DGII y se verificaron cargas, gravámenes y titularidad?** — Base imponible de la transferencia inmobiliaria es el mayor entre precio contractual y valor fiscal DGII (Ley 288-04); inscripción en Registro Inmobiliario condicionada a pago del impuesto de transferencia (Ley 108-05); modificación de tasas (Ley 253-12); NG 03-24 (descargo inmuebles — base del proceso de inscripción posterior a la transferencia). Evidencia: Certificación de título, tasación, certificación DGII.  _(Ley 288-04: https://dgii.gov.do/legislacion/leyesTributarias | Ley 108-05: https://dgii.gov.do/legislacion/leyesTributarias | NG 03-24: https://dgii.gov.do/legislacion/normasGenerales/Documents/Otras%20Normas%20de%20Inter%C3%A9s/Norma%2003-24.pdf)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

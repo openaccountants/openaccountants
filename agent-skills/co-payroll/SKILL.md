@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "US-CO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # CO Payroll
@@ -451,24 +449,6 @@ Before producing reviewer output that incorporates this skill's content, verify:
 ## 15. Skill Slot Contract
 
 - **Slot satisfaction and dependencies** — This skill SATISFIES the `state-payroll` slot for jurisdiction US-CO in the us-tax-workflow-base v0.2 workflow. It DEPENDS ON: - `us-tax-workflow-base` v0.2 or later (workflow architecture). - `us-payroll-fundamentals` (federal payroll baseline; planned). It is COMPLEMENTED BY (load alongside for full Colorado payroll): - `co-income-tax` (employee/owner-side Colorado PIT — already in the package). - `co-local-opt` (Denver/Aurora/Glendale/Greenwood Village/Sheridan occupational privilege taxes; planned). - `co-securesavings` (state retirement registration mandate; planned). - `co-prevailing-wage` (HB 21-1264 prevailing wage; planned). End of co-payroll v0.1.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

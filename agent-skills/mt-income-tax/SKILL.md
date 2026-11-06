@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-MT"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Montana individual income tax (Form 2), including sole proprietors
@@ -342,24 +339,6 @@ Client facts: lived all year in a rented Montana apartment on taxable property. 
 - **Page 2:** net long-term capital gains are split out; qualified dividends stay in ordinary income.
 - **Schedule II** (with Form DE for nonresident business income) for part-year, nonresident and mixed residency returns.
 - **Credits and payments:** other-state credit with that state's return, EITC, Schedule 2EC, withholding, estimates, extension payment and Schedule IV interest and penalties.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

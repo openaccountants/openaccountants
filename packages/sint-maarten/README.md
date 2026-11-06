@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `sx-personal-income-tax-tables.md`
-4. `sx-turnover-tax.md`
-5. `sx-wage-tax-tables.md`
+3. `README.md`
+4. `sx-personal-income-tax-tables.md`
+5. `sx-turnover-tax.md`
+6. `sx-wage-tax-tables.md`
 
 ## How to use
 

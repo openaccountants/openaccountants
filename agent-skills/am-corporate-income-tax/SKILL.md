@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AM"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Armenia corporate income tax preparation v0.4
@@ -326,24 +324,6 @@ Read **24 October 2026**: targeted current Armenian Code Articles 103–125, 130
 **Not yet confirmed:** actual electronic resolution of the printed foreign-credit 95 formula defect. Reopening pre 2019 debt assessments, exhaustive commodity norms, mixed-period specialist dairy losses and sector incentives require their separate instruments/facts. Specialist schemes and actual taxpayer facts require their stated separate evidence; no professional attestation has been obtained.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "SS"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # South Sudan Company Formation & Entity Choice
@@ -27,24 +25,6 @@ metadata:
 - **Tax registration** — Obtain a Tax Identification Number (TIN) from the SSRA after incorporation  _(Taxation Act, 2009 (https://legallinesouthsudan.com/blog/how-to-register-a-company-in-south-sudan-a-comprehensive-guide))_
 - **Core annual compliance** — Annual return / filings to the Business Registry, annual BPT return to SSRA, and monthly PAYE/WHT/sales-tax and NSIF remittances (approx — confirm specific annual return requirements)  _(Companies Act, 2012; Taxation Act, 2009)_
 - **Foreign investment incentives** — Investment incentives (e.g. capital allowances, duty relief) available under the Investment Promotion Act (approx — confirm current incentive schedule)  _(Investment Promotion Act, 2009)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -5,11 +5,9 @@ version: "0.1"
 jurisdiction: US-MD
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Maryland individual income tax: resident Form 502 for tax year 2026
@@ -250,21 +248,3 @@ These are illustrations for tax year 2026 using the 2026 rates and, for the stan
 - [ ] Credits supported (other-state return attached; PTE K-1 attached).
 - [ ] Withholding and estimated payments reconciled; Form 502UP interest checked.
 - [ ] Filed and paid by the due date, or extension with payment made by the original due date.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

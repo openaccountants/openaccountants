@@ -5,11 +5,9 @@ version: 0.2
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # US federal workflow for individual and self-employed returns: 2026 method, with 2025 return notes
@@ -233,21 +231,3 @@ The amounts in these cases are made up for illustration. The rates, limits and t
 - The 2026 estimated tax is set against the right safe harbor, including 110% where 2025 AGI was more than $150,000 ($75,000 MFS).
 - Every provisional treatment is resolved or disclosed, and nothing is filed on a guess ([26 U.S.C. 6694](https://www.law.cornell.edu/uscode/text/26/6694)).
 - Referral items are listed, and state tax is flagged as a separate check.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
