@@ -11,7 +11,7 @@ covered_by:
   TP: spain-transfer-pricing
   XB: es-non-resident-income-tax-irnr-and
 partial:
-  IT-IND: "Two ordinary crypto computations remain unconfirmed in es-foral-income-tax: Navarra acquisition-cost allocation for indistinguishable same-type units acquired in multiple lots, and Álava release timing/amount for losses already blocked by article43(i). The 31October closeout record preserves all other interpretation, specialist and future-operation reservations; these are not silently treated as settled."
+  IT-IND: "Two ordinary crypto computations remain unconfirmed in es-foral-income-tax-savings (split from es-foral-income-tax): Navarra acquisition-cost allocation for indistinguishable same-type units acquired in multiple lots, and Álava release timing/amount for losses already blocked by article43(i). The 31October closeout record preserves all other interpretation, specialist and future-operation reservations; these are not silently treated as settled."
 ---
 
 # Spain: 2026 tax pack
@@ -35,6 +35,8 @@ The [dated independent ledger-review checkpoint](../../evidence/ledgers/spain-20
 | Cross-border | [Non-residents, PE and departure](es-non-resident-income-tax-irnr-and.md), [foral nonresident tax](es-foral-non-resident-tax.md), [incoming-worker election](es-beckham.md) | ordinary methods supplied; see recorded limits |
 
 The resident calculation routes also include [capital gains](es-capital-gains.md), [rental income](es-rental-income.md), [self-employment](es-autonomous-worker.md), [instalments](es-estimated-tax.md) and [crypto](spain-crypto-tax.md). Each tax Guide retains its two executable examples. Five additional controls check the part-year and multiple-payer foreign-assignment addition in the [closeout calculation appendix](../../evidence/ledgers/spain-closeout-20261031/foreign-assignment-controls.md). The foral annual-return and payroll rules are separate methods; State scales and withholding tables are not substituted for local ones.
+
+The four foral systems are split by job, without changing a rule (6 November 2026): [es-foral-income-tax](es-foral-income-tax.md) keeps residence, bases, scales, pensions and the annual return, and routes to [foreign-assignment exemption](es-foral-income-tax-foreign-assignment.md), [savings income, gains, crypto and rental income](es-foral-income-tax-savings.md), [Basque personal, family and housing credits](es-foral-income-tax-basque-credits.md), [investment, business and gift credits](es-foral-income-tax-investment-credits.md), [Navarra credits](es-foral-income-tax-navarra-credits.md) and [personal-business instalments](es-foral-income-tax-instalments.md). Their ledger remains the `es-foral-income-tax` ledger.
 
 The Sources sections retain precise unresolved points, dated transitions and unpublished 2027 operational forms. The [baseline status archive](../../evidence/ledgers/spain-closeout-20261031/baseline-country-status.txt) and [73-family classification](../../evidence/ledgers/spain-closeout-20261031/scope-review/scope-matrix.json) preserve the former six-domain descriptions and the reason for every scope classification. The energy rules retain the actual published CPI outcomes and the December condition whose October index is unavailable at the read date. Passing arithmetic checks does not resolve an unconfirmed legal branch.
 
