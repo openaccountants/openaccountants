@@ -1,9 +1,10 @@
 ---
 name: ny-it-201-resident-return
-description: Tier 2 New York content skill for preparing Form IT-201 (Full-Year Resident Income Tax Return) for New York State full-year residents who are sole proprietors or single-member LLCs disregarded for federal tax purposes. Covers the NYAGI computation starting from federal AGI, Form IT-225 addition and subtraction modifications (notably A-201 for unincorporated business taxes deducted federally), Form IT-558 OBBBA decoupling adjustments including the §168(k) bonus depreciation add-back and the §174A R&E expensing uncertainty, the standard vs itemized deduction decision, NY state tax computation including the $107,650 recapture worksheet, NYC resident tax computation (lines 47a-53) including the NYC UBT credit flow via Form IT-219, Yonkers resident surcharge and nonresident earnings tax (lines 55-57), MCTMT for self-employed individuals in the MCTD (lines 54a-54b), credits and payments, and the reviewer brief for the complete NY state-level return package. Does NOT cover part-year or nonresident returns (Form IT-203), itemized deduction limitations above $100,000 NYAGI in detail, PTET election scenarios, convenience-of-the-employer rule cases, NY source income allocation for multi-state activity, or NYC Unincorporated Business Tax computation itself — see Section 7. MUST be loaded alongside us-tax-workflow-base v0.2 or later. Typically loaded alongside ny-llc-filing-fee-it-204-ll (if SMLLC), nyc-unincorporated-business-tax (if NYC resident), and ny-estimated-tax-it-2105. New York State full-year residents only.
+description: Tier 2 New York content skill for preparing Form IT-201 (Full-Year Resident Income Tax Return) for New York State full-year residents who are sole proprietors or single-member LLCs disregarded for federal tax purposes. Covers the NYAGI computation starting from federal AGI, Form IT-225 addition and subtraction modifications (notably A-201 for unincorporated business taxes deducted federally), Form IT-558 OBBBA decoupling adjustments including the §168(k) bonus depreciation add-back and the §174A R&E expensing uncertainty, the standard vs itemized deduction decision, NY state tax computation including the $107,650 recapture worksheet, NYC resident tax computation (lines 47a-53) including the NYC UBT credit flow via Form IT-219, Yonkers resident surcharge and nonresident earnings tax (lines 55-57), MCTMT for self-employed individuals in the MCTD (lines 54a-54b), credits and payments, and the reviewer brief for the complete NY state-level return package. Does NOT cover part-year or nonresident returns (Form IT-203), itemized deduction limitations above $100,000 NYAGI in detail, PTET election scenarios, convenience-of-the-employer rule cases, NY source income allocation for multi-state activity, or NYC Unincorporated Business Tax computation itself (see "When to refuse or refer"). MUST be loaded alongside us-tax-workflow-base v0.2 or later. Typically loaded alongside ny-llc-filing-fee-it-204-ll (if SMLLC), nyc-unincorporated-business-tax (if NYC resident), and ny-estimated-tax-it-2105. New York State full-year residents only.
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-09-25
+last_updated: 2026-11-06
+version: 0.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -25,6 +26,7 @@ Figures are for tax year 2026 unless a line says 2025. The 2026 New York State r
 - Which tax year (2025 or 2026)? What was the federal filing status? New York generally requires the same status. The exception is a married couple where only one spouse is a New York resident.
 - Where was the client domiciled all year? Did they keep a permanent place of abode in New York State, in New York City or in Yonkers, and how many days (any part of a day counts) did they spend there? Keep the day-count records.
 - Did the client move into or out of New York, New York City or Yonkers during the year? If so, this is a part-year case (see "When to refuse or refer").
+- What public school district did the client live in on December 31? The return needs the district name and code number even if the client was away from the district for a while, their children went to school elsewhere, or they have no children in school ([IT-201-I (2025), school district name and code number](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 - Get the finished federal return, W-2s, 1099s, Schedules C and SE, and any K-1s with New York modification statements (Form IT-204-IP).
 - For the self-employed: where was the business carried on? How much of the net earnings from self-employment is allocated to the MCTMT district, Zone 1 or Zone 2? Was NYC UBT or MCTMT paid and deducted on the federal return?
 - Did the client receive a pension or annuity? From what payer (New York State or local government, federal government, private plan, or IRA)? What is the client's date of birth, to check the age 59½ test?
@@ -101,6 +103,8 @@ For 2026, the rates on the first five brackets are lower than in 2025. The brack
 | Qualifying surviving spouse | $16,050 [(standard deductions)](https://www.tax.ny.gov/pit/file/standard_deductions.htm) |
 
 - **Dependent exemption:** $1,000 per dependent. There is no exemption for the taxpayer or the spouse ([IT-201-I (2025), line 36](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+  - Count the dependents listed at item H of Form IT-201 (and item H continued, for more than 7) and multiply by $1,000 ([IT-201-I (2025), line 36](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+  - If line 36 is more than line 35, leave taxable income (lines 37 and 38) blank. There is no negative taxable income ([IT-201-I (2025), lines 37 and 38](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 - **New York State household credit** (nonrefundable). It is not allowed to anyone who can be claimed as a dependent. It applies only if federal AGI is $28,000 or less for single filers, or $32,000 or less for the other statuses. For single filers it is at most $75 ([household credit](https://www.tax.ny.gov/pit/credits/household_credit.htm); [IT-201-I (2025), table 1](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 
 ### Itemized deductions ([IT-196-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it196i.pdf))
@@ -120,6 +124,7 @@ For 2026, the rates on the first five brackets are lower than in 2025. The brack
 
 | Code (Form IT-225) | What it is | When it applies |
 | --- | --- | --- |
+| A-101 | New York City flexible benefits program (IRC 125) | Add back amounts that a Form W-2 shows were deducted or deferred from salary under a flexible benefits program of New York City or certain other New York City public employers |
 | A-201 | Personal income taxes and unincorporated business taxes deducted in computing federal AGI | Add back NYC UBT deducted on Schedule C |
 | A-214 | MCTMT | Add back any MCTMT deducted on the federal return |
 | A-209 / S-213 | Section 168(k) property depreciation. For 2025 on, also section 168(n) qualified production property | Add back the federal accelerated depreciation. Subtract depreciation calculated as if the special election had not been made. Compute on Form IT-398 |
@@ -148,7 +153,12 @@ For 2026, the rates on the first five brackets are lower than in 2025. The brack
 - The rates and brackets are the same in the 2025 instructions and the 2026 estimated tax instructions. For single filers, the tax at the start of each bracket is $369, $858 and $1,813 ([IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf)).
 - Use the city tax table if city taxable income is less than $65,000. Otherwise use the rate schedule. There is no city recapture.
 - **City household credit (line 48):** single filers get it only if federal AGI is $12,500 or less (at most $15). For joint, head of household and surviving spouse filers, the limit is $22,500 ([IT-201-I (2025), tables 4 to 6](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+  - Table 5 (joint, head of household and surviving spouse) gives an amount for each person counted: the taxpayer, the spouse on a joint return, and each dependent at item H. It is $30 a person with federal AGI of $15,000 or less, $25 over $15,000 to $17,500, $15 over $17,500 to $20,000, and $10 over $20,000 to $22,500 ([IT-201-I (2025), table 5](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+  - Nobody who can be claimed as a dependent (item C marked Yes) gets the city household credit ([IT-201-I (2025), line 48](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 - **UBT credit (Form IT-219):** 100% of the UBT imposed if city taxable income is $42,000 or less. It falls gradually to 23% when city taxable income is $142,000 or more. The credit cannot exceed the city tax ([IT-219-I](https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf)).
+  - **The percentage between $42,000 and $142,000** (Form IT-219, Worksheet B): take city taxable income (Form IT-201, line 47), subtract $42,000, divide by $100,000 and round to three decimals. Multiply by 0.770 and subtract the result from 1.000 ([Form IT-219 (2025), Part 4 and Worksheet B](https://www.tax.ny.gov/pdf/current_forms/it/it219_fill_in.pdf)).
+  - The UBT the percentage applies to comes from Form NYC-202, line 21, or Form NYC-202S, line 8. A joint return uses the couple's joint city taxable income ([IT-219-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf)).
+  - The credit is the lesser of that amount and the city tax less the city household credit (with the IT-201-ATT, lines 32 and 33 amounts). It goes to Form IT-201-ATT, line 8, then through Section C (line 10) to Form IT-201, line 53. Any unused credit is not refunded or carried over ([Form IT-219 (2025), lines 12 to 16](https://www.tax.ny.gov/pdf/current_forms/it/it219_fill_in.pdf); [IT-201-I (2025), line 53](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf); [IT-219-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf)).
 - **School tax credit, fixed amount (line 69):** $63 for single, married filing separately and head of household, or $125 for joint and surviving spouse filers. It is available only if income is $250,000 or less and the client cannot be claimed as a dependent. The **rate reduction amount (line 69a)** is available only if income is $500,000 or less ([IT-201-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 - **City earned income credit (line 70):** a city resident who claimed, or could have claimed, the federal earned income credit completes Worksheet C of Form IT-215. It can apply even when the state credit does not ([IT-215-I](https://www.tax.ny.gov/pdf/current_forms/it/it215i.pdf)).
 
@@ -156,6 +166,9 @@ For 2026, the rates on the first five brackets are lower than in 2025. The brack
 
 - **Resident surcharge:** 16.75% of the net New York State tax, computed on the Yonkers worksheet. The worksheet starts from line 46, less certain credits such as the Empire State child credit. The rate is the same for 2026 ([IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf)).
 - A Yonkers **nonresident** who earned wages or carried on business in Yonkers files Form Y-203, and the tax goes on line 56.
+  - **Nonresident earnings tax:** 0.5% of Yonkers wages and net earnings from self-employment allocated to Yonkers, after an exclusion ([Form Y-203 (2025), line 6](https://www.tax.ny.gov/pdf/current_forms/it/y203_fill_in.pdf); [Y-203-I (2025), line 6](https://www.tax.ny.gov/pdf/current_forms/it/y203i.pdf)).
+  - **Exclusion for a full year of nonresidence:** $3,000 if those wages and earnings are $10,000 or less, $2,000 if over $10,000 up to $20,000, and $1,000 if over $20,000 up to $30,000. Above $30,000 there is no exclusion. For part of a year, use the months of nonresidence in the Form Y-203 table ([Form Y-203 (2025), exclusion table](https://www.tax.ny.gov/pdf/current_forms/it/y203_fill_in.pdf)).
+  - If both spouses owe it, each files a separate Form Y-203. On a joint New York return, add the two amounts on line 56 ([Y-203-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/y203i.pdf)).
 
 ### MCTMT on self-employment earnings ([IT-201-I (2025), lines 54a to 54e](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf); [IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf))
 
@@ -168,6 +181,8 @@ For 2026, the rates on the first five brackets are lower than in 2025. The brack
 - Once a zone's earnings exceed the threshold, the rate applies to **all** of that zone's earnings, not only to the excess. In the 2025 example in the instructions, $70,000 in Zone 2 gives a tax of $238.
 - The threshold is tested **per person and per zone**, even on a joint return. If one spouse's base in a zone is at or below the threshold, leave that spouse's base out.
 - No credit can reduce the MCTMT. Anyone who owes MCTMT must make estimated payments of it.
+- **The base** is net earnings from self-employment: generally federal Schedule SE (Form 1040), Part 1, line 6, for that source of self-employment income. If the earnings are not subject to federal self-employment tax, compute them on Schedule SE as if they were ([IT-201-I (2025), lines 54a and 54b](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+- **Allocation to a zone** follows where the business activity is carried on. If all of it is inside Zone 1 (or Zone 2), all the earnings go to that zone. If it is carried on both inside and outside the zone, use Form IT-203-A to work out the amount for line 54a (or 54b) ([IT-201-I (2025), lines 54a and 54b](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 
 ## Credits
 
@@ -179,6 +194,8 @@ For 2026, the rates on the first five brackets are lower than in 2025. The brack
 - **New York State earned income credit** (Form IT-215) ([earned income credit](https://www.tax.ny.gov/pit/credits/earned_income_credit.htm)).
   - Generally 30% of the allowable federal earned income credit, reduced by the household credit. It is fully refundable for full-year residents ([earned income credit](https://www.tax.ny.gov/pit/credits/earned_income_credit.htm)).
   - The client must have claimed the federal credit and must not have claimed the noncustodial parent credit. Valid SSNs are needed by the due date, including extensions.
+- **Real property tax credit (line 67):** check the Form IT-214 instructions. If the client qualifies, complete Form IT-214, carry the amount to line 67 and submit the form with the return ([IT-201-I (2025), line 67](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+- **College tuition credit (line 68):** if the client, the spouse or a dependent paid college tuition and the client did not take the college tuition itemized deduction on Form IT-196, complete Form IT-272 and carry the credit to line 68 ([IT-201-I (2025), line 68](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 - **Resident credit (Form IT-112-R):** a nonrefundable credit for income that another state sourced and taxed while the client was a New York resident ([residency FAQ](https://www.tax.ny.gov/pit/file/nonresident-faqs.htm)). Refer the computation.
 
 ## Boundaries and exceptions
@@ -192,6 +209,7 @@ For 2026, the rates on the first five brackets are lower than in 2025. The brack
 | Pension exclusion age | 59½ before January 1 of the tax year for the full year. Otherwise only the amounts after reaching 59½. At most $20,000 per person, and the total with the disability income exclusion cannot exceed $20,000 | [IT-201-I (2025), line 29](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf) |
 | MCTMT threshold | Tested **per person, per zone**. "Exceed" means an amount exactly at the threshold owes nothing. For 2026 the threshold is $150,000 | [IT-201-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf); [IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
 | Joint return, one spouse nonresident | File separately, or file jointly as if both were residents | [IT-201-I (2025), Item A](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf) |
+| Joint federal return, separate New York return for other reasons | Allowed only if (a) the spouse's address or whereabouts is unknown, reasonable efforts were made to find them and there is good cause, or (b) the spouse refuses to sign, reasonable efforts were made to get the signature, there is objective evidence of alienation (an order of protection, a legal separation, or living apart for the 12 months before applying or before certain divorce or family court proceedings began) and there is good cause | [IT-201-I (2025), Item A](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf) |
 | Itemizing | Allowed even if the client took the federal standard deduction. The reduction starts only when New York AGI is **more than** $100,000 | [IT-196-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it196i.pdf) |
 | Empire State child credit age | Under 17 on December 31. Full-year residents only | [Empire State child credit](https://www.tax.ny.gov/pit/credits/empire_state_child_credit.htm) |
 | OBBBA decoupling | Applies to tax years beginning on or after January 1, 2025. A 2025 return filed without it must be amended | [Notice N-26-1](https://www.tax.ny.gov/forms/n-notices/n-26-1.htm) |
@@ -206,6 +224,27 @@ The amounts in these cases are made up for illustration. The rates and threshold
 - State tax: $4,191 + 5.90% × ($87,000 - $80,650 = $6,350) = $4,191 + $374.65 = $4,565.65, rounded to $4,566.
 - City tax: $1,813 + 3.876% × ($87,000 - $50,000 = $37,000) = $1,813 + $1,434.12 = $3,247.12, rounded to $3,247.
 - For comparison, the same income in 2025 gives a state tax of $4,652: the excess is taxed at 6% × $6,350 = $381, and $4,271 + $381 = $4,652 ([IT-201-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+
+```oa-check
+name: Case 1, 2026 single New York City resident, rate schedule (IT-2105-I 2026)
+inputs:
+  ny_agi: 95000
+  standard_deduction: 8000
+  state_base_tax: 4191
+  state_bracket_start: 80650
+  state_rate: 0.059
+  city_base_tax: 1813
+  city_bracket_start: 50000
+  city_rate: 0.03876
+steps:
+  - taxable_income: ny_agi - standard_deduction
+  - state_tax: state_base_tax + state_rate * (taxable_income - state_bracket_start)
+  - city_tax: city_base_tax + city_rate * (taxable_income - city_bracket_start)
+expected:
+  taxable_income: 87000
+  state_tax: 4565.65
+  city_tax: 3247.12
+```
 
 ### Case 2: 2025 single filer, recapture ([IT-201-I (2025), worksheet 7](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf))
 
@@ -240,6 +279,36 @@ The amounts in these cases are made up for illustration. The rates and threshold
 - The client is domiciled in Connecticut. They rent a Manhattan apartment all year that is suitable for year-round use, and spend 190 days (counting part days) in New York City.
 - They are a statutory resident of both New York State and New York City. They file Form IT-201, and are taxed by the state and the city on all their income. They claim the Form IT-112-R resident credit for income taxed by another state.
 - On 183 days they would not be a statutory resident. They would be a nonresident, taxed by New York State only on New York source income (Form IT-203), and not liable for New York City personal income tax.
+
+### Case 8: 2025 New York City UBT credit in the phase-down range ([Form IT-219 (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it219_fill_in.pdf); [IT-201-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf))
+
+- A single New York City resident freelancer has city taxable income (Form IT-201, line 47) of $95,000. Form NYC-202, line 21 shows UBT of $2,500.
+- $95,000 is more than $42,000 and less than $142,000, so use Worksheet B. ($95,000 - $42,000) / $100,000 = 0.530. 0.530 × 0.770 = 0.4081. The credit percentage is 1.000 - 0.4081 = 0.5919.
+- Credit before the limit: $2,500 × 0.5919 = $1,479.75.
+- The limit is the city tax less the city household credit. The 2025 city tax on $95,000 is $1,813 + 3.876% × ($95,000 - $50,000) = $3,557.20, and there is no household credit at this income. The credit of $1,479.75 is below the limit, so it is allowed in full. It goes to Form IT-201-ATT, line 8, and then to Form IT-201, line 53.
+- At city taxable income of $142,000 or more the same UBT would give 23%: $2,500 × 0.23 = $575.
+
+```oa-check
+name: Case 8, 2025 NYC UBT credit (Form IT-219 Worksheet B)
+inputs:
+  city_taxable_income: 95000
+  ubt: 2500
+  city_base_tax: 1813
+  city_bracket_start: 50000
+  city_rate: 0.03876
+steps:
+  - ratio: round((city_taxable_income - 42000) / 100000, 3)
+  - percentage: 1 - ratio * 0.77
+  - credit_before_limit: ubt * percentage
+  - city_tax: city_base_tax + city_rate * (city_taxable_income - city_bracket_start)
+  - credit: min(credit_before_limit, city_tax)
+expected:
+  ratio: 0.53
+  percentage: 0.5919
+  credit_before_limit: 1479.75
+  city_tax: 3557.20
+  credit: 1479.75
+```
 
 ## 2025 returns: tax year 2025, extended deadline October 15, 2026 ([IT-201-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf))
 
@@ -279,6 +348,12 @@ Use the 2025 Form IT-201 and its instructions. The standard deductions, the New 
   - The instalments are due April 15, June 15, September 15, 2026 and January 15, 2027. The January instalment is not needed if the 2026 return is filed and paid in full by January 31, 2027.
   - To avoid the underpayment penalty (Form IT-2105.9), pay 90% of the 2026 tax, or 100% of the 2025 tax. Use 110% of the 2025 tax if New York AGI (or MCTD self-employment earnings) on the 2025 return was more than $150,000, or $75,000 if married filing separately. The prior-year rule needs a full 12-month 2025 return ([IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf)).
 - **Refund claims:** generally within three years of filing or two years of paying, whichever is later ([IT-201-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+- **How to pay a balance due** ([IT-201-I (2025), payment options](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)):
+  - Electronic funds withdrawal from a US bank account, authorized on the return: mark the box at line 80, give the account on line 83 and the withdrawal date on line 84, on or before the due date.
+  - Check or money order payable to New York State Income Tax, with the last four digits of the Social Security number and the tax year written on it, sent with Form IT-201-V.
+  - Online through an Individual Online Services account: bank withdrawal, or debit or credit card (the card vendor charges a fee).
+- **Sales or use tax (line 59):** report sales or use tax owed on untaxed purchases, such as items bought online or out of state and brought into New York. Use Form ST-141 for any item or service costing $1,000 or more, and for purchases of a business not registered for sales tax, rental real estate or royalty activities; the instructions' chart covers smaller personal purchases. If line 59 is $1,700 or more, also submit Form IT-135. If nothing is owed, enter 0; do not leave line 59 blank ([IT-201-I (2025), line 59](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
+- **Records:** keep copies of the return for at least seven years after filing, with the books, schedules and statements behind it ([IT-201-I (2025), keep a copy of your tax records](https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf)).
 
 ## Completion checklist
 
@@ -293,3 +368,30 @@ Use the 2025 Form IT-201 and its instructions. The standard deductions, the New 
 - The Empire State child credit is computed for the right year's amounts and phase-down. The state earned income credit is checked.
 - The Notice N-26-1 modifications are reported, or a 2025 amendment is flagged.
 - Payments, the IT-370 payment and estimated tax are reconciled. Penalty exposure is noted, and next year's estimated payments are set up.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| IT-201-I (2025), read for Item A, Item C, school district, lines 36 to 38, 48 and table 5, 53, 54a and 54b, 56, 59, 67, 68, payment options and record keeping | https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf | 2026-11-06 |
+| Form IT-201 (2025), read for lines 27, 83 and 84 | https://www.tax.ny.gov/pdf/current_forms/it/it201_fill_in.pdf | 2026-11-06 |
+| IT-2105-I (2026), read for the 2026 rate schedules, the $150,000 MCTMT threshold and the estimated tax rules | https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf | 2026-11-06 |
+| NYS-50-T-NYS (1/26), read for the Chapter 59 of the Laws of 2025, Part A, rate cut | https://www.tax.ny.gov/pdf/publications/withholding/nys50_t_nys.pdf | 2026-11-06 |
+| Form IT-219 (2025), read for Part 4, lines 8 to 16, and Worksheet B | https://www.tax.ny.gov/pdf/current_forms/it/it219_fill_in.pdf | 2026-11-06 |
+| IT-219-I (2025), read for the credit percentage, married taxpayers and Part 4 | https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf | 2026-11-06 |
+| Form Y-203 (2025), read for line 6 and the exclusion table | https://www.tax.ny.gov/pdf/current_forms/it/y203_fill_in.pdf | 2026-11-06 |
+| Y-203-I (2025), read for who must file and lines 4 and 6 | https://www.tax.ny.gov/pdf/current_forms/it/y203i.pdf | 2026-11-06 |
+| IT-225-I (2025), read for codes A-101, A-201, A-209, A-214, A-219 and S-213 | https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf | 2026-11-06 |
+| Notice N-26-1, read for codes A-209, S-213, A-225, S-221 and S-222 and the amendment rule | https://www.tax.ny.gov/forms/n-notices/n-26-1.htm | 2026-11-06 |
+| IT-196-I (2025), read for the itemized deduction reduction bands | https://www.tax.ny.gov/pdf/current_forms/it/it196i.pdf | 2026-11-06 |
+| Residency FAQ, read for the 184-day test and Yonkers residence | https://www.tax.ny.gov/pit/file/nonresident-faqs.htm | 2026-11-06 |
+| Income tax definitions, read for resident and the 548-day test | https://www.tax.ny.gov/pit/file/pit_definitions.htm | 2026-11-06 |
+| Standard deductions, read for the amounts by filing status | https://www.tax.ny.gov/pit/file/standard_deductions.htm | 2026-11-06 |
+| Household credit, read for the federal AGI limits | https://www.tax.ny.gov/pit/credits/household_credit.htm | 2026-11-06 |
+| Empire State child credit, read for the 2025 and 2026 amounts and the phase-down | https://www.tax.ny.gov/pit/credits/empire_state_child_credit.htm | 2026-11-06 |
+| IT-213-I (2025), read for the 2025 decoupling note | https://www.tax.ny.gov/pdf/current_forms/it/it213i.pdf | 2026-11-06 |
+| Earned income credit, read for the 30% rule | https://www.tax.ny.gov/pit/credits/earned_income_credit.htm | 2026-11-06 |
+| IT-215-I (2025), read for Worksheet C | https://www.tax.ny.gov/pdf/current_forms/it/it215i.pdf | 2026-11-06 |
+| IT-370-I (2025), read for the extension and the penalties | https://www.tax.ny.gov/pdf/current_forms/it/it370i.pdf | 2026-11-06 |
+
+Not yet confirmed: the 2026 Form IT-201, IT-219 and Y-203 and their instructions are not published, so the IT-219 Worksheet B figures, the Yonkers 0.5% rate and exclusion table, the city household credit table 5 amounts, the school district, payment and line 59 rules are taken from the 2025 forms. Confirm them against the 2026 forms for a 2026 return. The 2026 return due date in April 2027 is also unconfirmed until those instructions are out.

@@ -109,7 +109,7 @@ All domain skills for a country live in the same directory (e.g., `skills/german
 |-----------------|-------------|---------|
 | Country-specific (Malta crypto, UK VAT, Germany payroll) | `skills/[country]/` | `skills/malta/mt-crypto-tax.md` |
 | US federal | `skills/us/federal/` | `skills/us/federal/us-crypto-tax.md` |
-| US state | `skills/us/states/[code]/` | `skills/us/states/ny/ny-income-tax.md` |
+| US state | `skills/us/states/[code]/` | `skills/us/states/ny/ny-it-201-resident-return.md` |
 | Global / cross-border (not one country) | `skills/cross-border/` + `jurisdiction:` in frontmatter | `skills/cross-border/oecd-model-treaty-defaults.md` with `jurisdiction: INTL` |
 | Industry vertical (developer, e-commerce) | `skills/reference/verticals/` + `jurisdiction: GLOBAL` | `skills/reference/verticals/freelance-developer.md` |
 | Platform integration (Stripe, Xero) | `skills/reference/integrations/` + `jurisdiction: GLOBAL` | `skills/reference/integrations/stripe-integration.md` |
