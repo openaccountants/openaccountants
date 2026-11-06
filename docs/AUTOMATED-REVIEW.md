@@ -9,7 +9,8 @@ A GitHub workflow reviews every PR that changes `skills/**` or `library/**`, pos
 
 1. **Gate** (no AI). Runs when a skill PR is opened, reopened, marked ready or pushed to; when someone with write access comments `/review`; or when the workflow is run by hand. It skips drafts, closed PRs, PRs not aimed at `main`, and PRs that change `.github/`, `scripts/`, `.claude/`, a `CLAUDE.md` or an `AGENTS.md` (those stay human-only). It also skips once 25 reviews have run in the UTC day, with a short comment saying so.
 2. **Review** (Claude, read-only). Checks figures against official sources (10 spot checks, or a quote check when the PR gives a URL and quote per figure), content lost against main (the 25% rule), worked examples, honest labels, scope (sanctioned countries; Malta and Australia are comment-only) and duplicates. It asks only for objective fixes: a wrong figure, a missing or unofficial or undated source, arithmetic, lost content, a stale tax year, a missing core item. Style and layout are optional notes, never fixes.
-3. **Publish** (no AI). Posts the comment, starting `VERDICT: MERGE`, `FIX` or `HOLD`, with a figures table and, for FIX, a numbered list of exact changes.
+   The verdict judges only what the PR changes (its added, changed and removed lines and what they directly feed). Faults in lines the PR does not touch go under "Found on main (not caused by this PR)" and never change the verdict.
+3. **Publish** (no AI). Posts the comment, starting `VERDICT: MERGE`, `FIX` or `HOLD`, with a figures table and, for FIX, a numbered list of exact changes. Each file listed under "Found on main" gets one open issue, "Found by review: <path>", labelled `found-by-review`: a new issue the first time, a comment on the same issue after that.
 4. **Fix** (Claude, only on FIX). Applies exactly the numbered `[auto]` items to a copy of the PR's files. Nothing else.
 5. **Push-fix** (no AI). Checks the edits, commits them as Michael Cutajar (no AI trailer) with each fix named (item, old value, new value, source), and starts a new review.
 
@@ -17,6 +18,7 @@ A GitHub workflow reviews every PR that changes `skills/**` or `library/**`, pos
 |---|---|
 | `review-round-1`, `review-round-2` | An automatic fix round has run on this PR |
 | `needs-michael` | The loop stopped: HOLD, two fix rounds used, or a fix it was not allowed to make |
+| `found-by-review` | On an issue: faults already on main, found while reviewing a PR (one issue per file) |
 
 ## What it can and cannot change
 

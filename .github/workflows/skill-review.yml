@@ -454,6 +454,34 @@ jobs:
           echo "fix=$fix" >> "$GITHUB_OUTPUT"
           echo "round=$next_round" >> "$GITHUB_OUTPUT"
 
+          # Faults in lines the PR does not touch never count against it. They go
+          # to one open issue per file, "Found by review: <path>", deduped by title.
+          awk '/^## Found on main \(not caused by this PR\)/{f=1; next} f && /^## /{f=0} f' body.md > found.md
+          grep -q '^### ' found.md || exit 0
+          gh label create found-by-review --repo "$REPO" --color fbca04 --description "Fault on main found while reviewing a PR" >/dev/null 2>&1 || true
+          mkdir -p found
+          awk '/^### /{n++; out=sprintf("found/%03d.md", n)} n>0{print > out}' found.md
+          filed=0
+          for f in found/*.md; do
+            # shellcheck disable=SC2016 # the backticks are literal markdown
+            path=$(sed -nE '1s/^### +`?([^` ]+)`?[[:space:]]*$/\1/p' "$f")
+            if ! [[ "$path" =~ ^(skills|library)/[A-Za-z0-9._/+-]+$ && "$path" != *..* ]]; then
+              echo "::warning::skipping a found-on-main section with no usable path"
+              continue
+            fi
+            filed=$((filed + 1))
+            [ "$filed" -le 10 ] || { echo "::warning::more than 10 files found on main; filed the first 10"; break; }
+            title="Found by review: $path"
+            { echo "Found while reviewing #$PR ([run]($RUN_URL)). These faults are on main, not caused by that PR."; echo; tail -n +2 "$f"; } > issue.md
+            num=$(gh api --paginate "repos/$REPO/issues?labels=found-by-review&state=open&per_page=100" \
+                    | jq -r --arg t "$title" '.[] | select(.title == $t) | .number' | sed -n 1p)
+            if [ -n "$num" ]; then
+              gh api -X POST "repos/$REPO/issues/$num/comments" -F body=@issue.md >/dev/null
+            else
+              gh api -X POST "repos/$REPO/issues" -f title="$title" -F body=@issue.md -f "labels[]=found-by-review" >/dev/null
+            fi
+          done
+
   # Claude applies the [auto] items to a copy of the PR's files. Read-only
   # token, no Bash: it can edit files on the runner and nothing else. The patch
   # it leaves behind is checked and committed by push-fix.
