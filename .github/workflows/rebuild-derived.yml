@@ -16,7 +16,16 @@
 # fine-grained token (or GitHub App token) for this repository only, with
 # Contents: read and write, and Pull requests: read and write. The built-in
 # GITHUB_TOKEN cannot do this job: a PR it opens never starts the required
-# checks, so the bot PR could not pass guard-derived-trees.
+# checks, so the bot PR could not pass guard-derived-trees. Use a bot account
+# or GitHub App, not an org admin's token: rulesets let admins push to main.
+#
+# The token is only in the environment of the last step, which runs git and gh
+# and nothing from the repo. The checkout keeps no credentials, so pip and the
+# build scripts never run next to it.
+#
+# Closing the bot PR without merging pauses it: later pushes to main do not
+# open a new one while the bot branch still exists. Run this workflow by hand,
+# or delete the branch, to start again.
 
 name: Rebuild derived files
 
@@ -56,7 +65,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: main
-          token: ${{ secrets.DERIVED_BUILD_TOKEN }}
+          persist-credentials: false
 
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
@@ -79,6 +88,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.DERIVED_BUILD_TOKEN }}
           GH_REPO: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
         run: |
           set -euo pipefail
           git add -A
@@ -91,6 +101,17 @@ jobs:
                 --comment "main already matches a fresh rebuild of skills/, so this PR is no longer needed."
             fi
             exit 0
+          fi
+
+          # A human closed the last bot PR without merging and kept its branch:
+          # treat that as "not now" and do not reopen on every push.
+          if [ -z "$OPEN_PR" ] && [ "$EVENT" = "push" ] && git rev-parse -q --verify "refs/remotes/origin/$BRANCH" >/dev/null; then
+            CLOSED=$(gh pr list --head "$BRANCH" --base main --state closed --limit 1 --json number,mergedAt \
+              -q '.[0] | select(.mergedAt == null) | .number')
+            if [ -n "$CLOSED" ]; then
+              echo "::notice::Bot PR #$CLOSED was closed without merging. Not opening a new one; run this workflow by hand to do so."
+              exit 0
+            fi
           fi
 
           MAIN_SHA=$(git rev-parse HEAD)
@@ -121,7 +142,10 @@ jobs:
           fi
           COMMIT=$(git commit-tree "$TREE" "${PARENTS[@]}" \
             -m "Rebuild $CHANGED derived file(s) from skills/ at ${MAIN_SHA::7}")
-          git push origin "$COMMIT:refs/heads/$BRANCH"
+          # The checkout kept no credentials; authenticate this one push.
+          AUTH=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $AUTH" \
+            push origin "$COMMIT:refs/heads/$BRANCH"
 
           TITLE="Rebuild derived files from skills/"
           BODY=$(cat <<EOF
