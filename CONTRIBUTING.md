@@ -56,10 +56,10 @@ Skills are added and changed only through pull requests to this repository.
 1. Fork this repo
 2. Create your skill in the appropriate **source** directory (`skills/us/federal/`, `skills/us/states/[code]/`, `skills/[country]/`, etc.)
 3. Follow the [skill template](docs/skill-template.md)
-4. Do **not** run any generator scripts: `index.json`, `llms-full.txt` and `packages/` rebuild in the scheduled platform sync after the source change is ingested
+4. Do **not** run any generator scripts: `index.json`, `llms-full.txt` and `packages/` are rebuilt from `skills/` after your PR merges (a bot opens a PR with the rebuilt files)
 5. Open a PR with a description of what tax forms/schedules the skill covers
 
-> **Important:** edit `skills/**` only. `packages/`, `index.json` and `llms-full.txt` are generated: CI will ask you to revert any changes to them, and the scheduled platform sync regenerates them after confirmed source ingestion. One exception for now: **`packages/us-federal/`** is hand-authored and may be edited directly.
+> **Important:** edit `skills/**` only. `packages/`, `index.json` and `llms-full.txt` are generated: CI will ask you to revert any changes to them, and the rebuild-derived workflow regenerates them from `skills/` after your PR merges. One exception for now: **`packages/us-federal/`** is hand-authored and may be edited directly.
 
 ## Repo layout
 
@@ -131,7 +131,7 @@ All domain skills for a country live in the same directory (e.g., `skills/german
 | Router | `skills/foundation/global-router.md` |
 | Orchestrator files (intake, assembly) | `skills/orchestrator/` |
 
-You never need to run the generators: the scheduled platform sync regenerates every derived tree after your source change has been ingested.
+You never need to run the generators: the rebuild-derived workflow regenerates every derived tree from `skills/` after your PR merges.
 
 If you add a `references.md` to a country's source directory, it will be included in the generated package automatically.
 

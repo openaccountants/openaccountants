@@ -1,0 +1,141 @@
+# Rebuild the derived files from skills/** after every push to main, and offer
+# them as ONE pull request from the bot branch `bot/rebuild-derived`.
+#
+# Skills live here; GitHub is the source of truth. This workflow replaces the
+# platform's sync-public-repo.yml as the writer of the derived files. That job
+# pushed straight to main and is switched off; nothing here reads production.
+#
+# Derived files: packages/** (not us-federal), index.json, the counts line in
+# llms.txt, llms-full.txt, agent-skills/**, plugins/openaccountants/skills/**.
+# The builders and their order live in scripts/build-derived.sh. validate.yml
+# (guard-derived-trees) lets a PR touch these files only when it comes from
+# `bot/rebuild-derived` in this repository, touches nothing else, and matches a
+# fresh run of that script byte for byte.
+#
+# Token: DERIVED_BUILD_TOKEN, a secret in the `production` environment. A
+# fine-grained token (or GitHub App token) for this repository only, with
+# Contents: read and write, and Pull requests: read and write. The built-in
+# GITHUB_TOKEN cannot do this job: a PR it opens never starts the required
+# checks, so the bot PR could not pass guard-derived-trees.
+
+name: Rebuild derived files
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One run at a time. A newer push to main replaces any run still waiting, and
+# each run builds from main as it is when the run starts.
+concurrency:
+  group: rebuild-derived
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    if: github.ref == 'refs/heads/main'
+    # Secrets live in the `production` environment, which only main may use.
+    environment: production
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      BRANCH: bot/rebuild-derived
+    steps:
+      - name: Check the token is set
+        env:
+          TOKEN: ${{ secrets.DERIVED_BUILD_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::DERIVED_BUILD_TOKEN is not set in the production environment, so the rebuilt files cannot be offered as a PR. See the header of rebuild-derived.yml."
+            exit 1
+          fi
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          token: ${{ secrets.DERIVED_BUILD_TOKEN }}
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+
+      - name: Install build dependencies
+        run: python3 -m pip install -r scripts/requirements-validation.txt
+
+      - name: Rebuild derived files from skills/
+        run: |
+          # If the bot branch exists, fetch it first so an unchanged index.json
+          # keeps that branch's timestamp and the rebuild is not a new commit.
+          if git fetch --depth=1 origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH" 2>/dev/null; then
+            bash scripts/build-derived.sh "origin/$BRANCH"
+          else
+            bash scripts/build-derived.sh
+          fi
+
+      - name: Open or update the bot PR
+        env:
+          GH_TOKEN: ${{ secrets.DERIVED_BUILD_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git add -A
+          OPEN_PR=$(gh pr list --head "$BRANCH" --base main --state open --json number -q '.[0].number // empty')
+
+          if git diff --cached --quiet; then
+            echo "Derived files on main already match skills/. Nothing to do."
+            if [ -n "$OPEN_PR" ]; then
+              gh pr close "$OPEN_PR" --delete-branch \
+                --comment "main already matches a fresh rebuild of skills/, so this PR is no longer needed."
+            fi
+            exit 0
+          fi
+
+          MAIN_SHA=$(git rev-parse HEAD)
+          CHANGED=$(git diff --cached --name-only | wc -l | tr -d ' ')
+          {
+            echo "### Derived files rebuilt from main at ${MAIN_SHA::7}"
+            echo
+            echo "$CHANGED file(s) changed:"
+            echo
+            git diff --cached --name-only | cut -d/ -f1 | sort | uniq -c | sed 's/^/    /'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          TREE=$(git write-tree)
+
+          # The commit's first parent is main. If the bot branch already exists,
+          # its tip becomes a second parent: the push is then a plain
+          # fast-forward (never a force push) and the PR still shows only this
+          # rebuild against main.
+          PARENTS=(-p "$MAIN_SHA")
+          if git rev-parse -q --verify "refs/remotes/origin/$BRANCH" >/dev/null; then
+            if [ "$(git rev-parse "origin/$BRANCH^{tree}")" = "$TREE" ] && [ -n "$OPEN_PR" ]; then
+              echo "PR #$OPEN_PR already holds exactly this rebuild."
+              exit 0
+            fi
+            PARENTS+=(-p "origin/$BRANCH")
+          fi
+          COMMIT=$(git commit-tree "$TREE" "${PARENTS[@]}" \
+            -m "Rebuild $CHANGED derived file(s) from skills/ at ${MAIN_SHA::7}")
+          git push origin "$COMMIT:refs/heads/$BRANCH"
+
+          TITLE="Rebuild derived files from skills/"
+          BODY=$(cat <<EOF
+          This PR was opened by the **Rebuild derived files** workflow. Nobody wrote these changes by hand.
+
+          It rebuilds the generated files (packages/, index.json, llms.txt counts, llms-full.txt, agent-skills/, plugins/openaccountants/skills/) from the skills on main at ${MAIN_SHA}. **$CHANGED file(s) changed.** Nothing under skills/ is touched.
+
+          The guard-derived-trees check runs scripts/build-derived.sh again on this PR and fails if any file differs from a fresh build.
+
+          Merge it to publish the rebuilt files. If main moves on first, the next run updates this PR in place.
+          EOF
+          )
+          if [ -n "$OPEN_PR" ]; then
+            gh pr edit "$OPEN_PR" --title "$TITLE" --body "$BODY"
+          else
+            gh pr create --base main --head "$BRANCH" --title "$TITLE" --body "$BODY"
+          fi

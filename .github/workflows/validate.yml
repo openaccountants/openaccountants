@@ -1,12 +1,16 @@
 # PR contract:
 #   - Contributors edit skills/** ONLY. Guides are validated file-by-file.
 #   - index.json, llms-full.txt and packages/** (except the us-federal carve-out,
-#     until it too becomes generated) are DERIVED: the platform's daily sync is
-#     their only writer. A PR touching them fails with an explanation instead of
-#     forcing every contributor to regenerate 586KB of JSON that conflicts with
-#     every other open PR.
-#   - Push-to-main runs guide validation only; derived-tree freshness is checked
-#     where it can actually be a bug: inside the sync that generates them.
+#     until it too becomes generated) are DERIVED: rebuild-derived.yml is their
+#     only writer. It runs scripts/build-derived.sh after each push to main and
+#     opens one PR from the branch bot/rebuild-derived. Any other PR touching
+#     them fails with an explanation instead of forcing every contributor to
+#     regenerate 586KB of JSON that conflicts with every other open PR.
+#   - The bot PR passes guard-derived-trees only if it comes from
+#     bot/rebuild-derived in this repository (not a fork), touches nothing but
+#     derived files, and matches a fresh run of scripts/build-derived.sh. The
+#     branch name alone proves nothing; the rebuild is the proof.
+#   - Push-to-main runs guide validation only.
 
 name: Validate Guides
 
@@ -37,6 +41,9 @@ jobs:
         id: guard
         env:
           BASE_REF: ${{ github.base_ref }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          HEAD_BRANCH: ${{ github.head_ref }}
+          THIS_REPO: ${{ github.repository }}
         run: |
           BASE="origin/$BASE_REF"
           git fetch origin "$BASE_REF" --depth 50
@@ -47,14 +54,47 @@ jobs:
             'plugins/openaccountants-hermes/skills/**' \
             ':(exclude)packages/us-federal/**' \
             ':(exclude)plugins/openaccountants-hermes/skills/*/SKILL.md' | head -20)
+          # The rebuild bot's PR (rebuild-derived.yml): same repository, fixed
+          # branch, and nothing but derived files. The next step then proves
+          # the files match a fresh build; until it does, the check is red.
+          if [ -n "$BAD" ] && [ "$HEAD_REPO" = "$THIS_REPO" ] && [ "$HEAD_BRANCH" = "bot/rebuild-derived" ]; then
+            OTHER=$(git diff --name-only "$BASE"...HEAD | grep -v -E \
+              '^(index\.json|llms\.txt|llms-full\.txt|packages/|agent-skills/|plugins/openaccountants/skills/)' || true)
+            FEDERAL=$(git diff --name-only "$BASE"...HEAD -- 'packages/us-federal/**')
+            if [ -z "$OTHER" ] && [ -z "$FEDERAL" ]; then
+              echo "rebuild_bot_pr=true" >> "$GITHUB_OUTPUT"
+              echo "Rebuild bot PR: derived files only. Checking them against a fresh build next."
+              exit 0
+            fi
+            echo "::error::A PR from bot/rebuild-derived may change derived files only. It also changes:"
+            printf '%s\n' "$OTHER" "$FEDERAL" | sed '/^$/d' | head -20
+            exit 1
+          fi
           if [ -n "$BAD" ]; then
             echo "generated_files_touched<<EOM" >> "$GITHUB_OUTPUT"
             echo "$BAD" >> "$GITHUB_OUTPUT"
             echo "EOM" >> "$GITHUB_OUTPUT"
-            echo "::error::This PR edits generated files. Edit skills/** only — index.json, llms-full.txt, packages/, agent-skills/<slug>/SKILL.md, agent-skills/index.json, plugins/openaccountants/skills/ and plugins/openaccountants-hermes/skills/ are rebuilt by the scheduled platform sync after confirmed source ingestion."
+            echo "::error::This PR edits generated files. Edit skills/** only: index.json, llms-full.txt, packages/, agent-skills/<slug>/SKILL.md, agent-skills/index.json, plugins/openaccountants/skills/ and plugins/openaccountants-hermes/skills/ are rebuilt from skills/ by the rebuild-derived workflow after your PR merges."
             exit 1
           fi
           echo "clean"
+      - name: Set up Python (rebuild bot PR only)
+        if: steps.guard.outputs.rebuild_bot_pr == 'true'
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+      - name: Prove the bot PR matches a fresh build
+        if: steps.guard.outputs.rebuild_bot_pr == 'true'
+        run: |
+          python3 -m pip install -r scripts/requirements-validation.txt
+          bash scripts/build-derived.sh > /dev/null
+          DIFF=$(git status --porcelain)
+          if [ -n "$DIFF" ]; then
+            echo "::error::The derived files in this PR differ from a fresh run of scripts/build-derived.sh. If main moved on, the next rebuild-derived run updates this PR."
+            echo "$DIFF" | head -20
+            exit 1
+          fi
+          echo "Every derived file matches a fresh build."
       - name: Explain in a comment
         if: failure() && steps.guard.outputs.generated_files_touched != ''
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
@@ -72,7 +112,7 @@ jobs:
               body: [
                 "Thanks for the contribution! One fix needed: this PR touches **generated files** —",
                 "```", files, "```",
-                "`index.json`, `llms-full.txt` and `packages/` are rebuilt by the scheduled platform sync after confirmed source ingestion, so please revert those paths and keep only your `skills/**` changes. No generator scripts to run — your guide edits are all that's needed. 🙌",
+                "`index.json`, `llms-full.txt` and `packages/` are rebuilt from `skills/` automatically after your PR merges, so please revert those paths and keep only your `skills/**` changes. No generator scripts to run: your guide edits are all that's needed. 🙌",
               ].join("\n"),
             });
 

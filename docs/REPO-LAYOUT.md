@@ -99,6 +99,6 @@ If you need a machine-readable listing, read `index.json` or run `python3 script
 - **A guided workflow:** `workflows/`.
 - **A calculator:** `calculators/<name>/`.
 - **The MCP server:** `mcp/`.
-- **Anything under `packages/`, `agent-skills/<slug>/` or `plugins/openaccountants/skills/`:** do not. Edit the source in `skills/`; the nightly sync regenerates the derived trees after the change is ingested. Do not run the generators in a PR.
+- **Anything under `packages/`, `agent-skills/<slug>/` or `plugins/openaccountants/skills/`:** do not. Edit the source in `skills/`; after it merges, `.github/workflows/rebuild-derived.yml` runs `scripts/build-derived.sh` and opens a bot PR with the regenerated trees. Do not run the generators in a PR.
 
 Contribution process, frontmatter conventions, and the website-sync rule: [CONTRIBUTING.md](../CONTRIBUTING.md) and [WEBSITE-SYNC.md](WEBSITE-SYNC.md).
