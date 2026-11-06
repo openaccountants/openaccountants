@@ -37,8 +37,9 @@
 #     shell script: every value goes through env.
 #  7. Quota cannot be burned from outside: a daily cap (review and fix jobs),
 #     a per-author cap for people without write access, one automatic review
-#     per head commit, and /review comments from non-writers can neither start
-#     nor cancel a run. Every cap fails closed when GitHub cannot be read.
+#     per head commit, and no comment can cancel a run. The gate's own API use
+#     per run is bounded. Every cap fails closed when GitHub cannot be read.
+#     Runs a maintainer starts (/review, dispatch) are exempt from the caps.
 #
 # The action's own actor check is relaxed (allowed_non_write_users: "*") because
 # fork authors do not have write access and reviewing their PRs is the point.
@@ -76,8 +77,9 @@ concurrency:
   cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
 
 env:
-  DAILY_CAP: "25" # review and fix jobs started per UTC day, all PRs
+  DAILY_CAP: "25" # review and fix jobs per UTC day, from automatic (pull_request_target) runs
   AUTHOR_CAP: "5" # the same, per person without write access
+  MAX_LOOKUPS: "40" # most per-run job lookups one gate makes to count the daily cap
   MAX_FIX_ROUNDS: "2"
   FIX_AUTHOR_NAME: "Michael Cutajar"
   FIX_AUTHOR_EMAIL: "107185374+michaelcutajar1995@users.noreply.github.com"
@@ -246,43 +248,57 @@ jobs:
           case " $labels " in *" review-round-2 "*) round=2 ;; esac
           out round "$round"
 
-          # Caps, counted over runs of this workflow created today (UTC) before
-          # this one (lower run id), so runs that start together cannot all see
-          # the same count. Only pull_request_target and workflow_dispatch runs
-          # are listed: comments cannot inflate the API calls. A run counts for
-          # its review and fix jobs, or as one while its gate has not decided.
-          # The per-person cap counts runs, whatever their jobs did. Any API
-          # failure stops here: the caps fail closed.
-          capfail="Automated review skipped: the bot could not count today's reviews, so it stops rather than risk going over its daily limit. Comment \`/review\` later."
-          today=$(date -u +%F)
-          list_runs() {
-            gh api -X GET --paginate "repos/$REPO/actions/workflows/skill-review.yml/runs" \
-              -f created=">=$today" -f event="$1" -f per_page=100 \
-              --jq '.workflow_runs[] | "\(.id) \(.event) \(.triggering_actor.login // "-")"'
-          }
-          prt=$(list_runs pull_request_target) || skip "could not list today's runs" "$capfail"
-          wd=$(list_runs workflow_dispatch) || skip "could not list today's runs" "$capfail"
-          total=0
-          mine=0
-          while read -r id event actor; do
-            [ -n "$id" ] || continue
-            [ "$id" -lt "$RUN_ID" ] || continue
-            if [ "$event" = pull_request_target ] && [ "$actor" = "$TRIGGER" ]; then mine=$((mine + 1)); fi
-            # shellcheck disable=SC2016 # jq variables, not shell ones
-            n=$(gh api "repos/$REPO/actions/runs/$id/jobs?per_page=100" --jq '
-                  ([.jobs[] | select((.name == "review" or .name == "fix") and .conclusion != "skipped")] | length) as $n
-                  | ([.jobs[] | select(.name == "gate" and .status == "completed")] | length) as $decided
-                  | if $decided == 0 and $n == 0 then 1 else $n end') \
-              || skip "could not read jobs of run $id" "$capfail"
-            total=$((total + n))
-          done <<<"$prt
-          $wd"
-          echo "Review and fix jobs today before this run: $total (cap $DAILY_CAP); pull_request_target runs by $TRIGGER: $mine"
-          if [ "$total" -ge "$DAILY_CAP" ]; then
-            skip "daily cap reached" "Automated review skipped: the daily limit of $DAILY_CAP automated review and fix runs has been reached (UTC day). Nothing is wrong with this PR. Comment \`/review\` after midnight UTC to queue it again."
-          fi
-          if [ "$EVENT" = pull_request_target ] && [ "$mine" -ge "$AUTHOR_CAP" ] && ! is_writer "$TRIGGER"; then
-            skip "per-author cap reached" "Automated review skipped: the daily limit of $AUTHOR_CAP automated runs per contributor has been reached (UTC day). A maintainer can start a review with \`/review\`."
+          # Caps (pull_request_target runs only). /review needs write access and
+          # a dispatch needs write access too, so those runs are exempt: a
+          # maintainer can always override. They still meet the one-run-per-PR
+          # concurrency and the two fix rounds.
+          # Counted over runs of this workflow created today (UTC) before this
+          # one (lower run id), so runs that start together cannot all see the
+          # same count. Only pull_request_target and workflow_dispatch runs are
+          # listed, so comments cannot inflate the work. The per-person cap comes
+          # first and uses the listing alone. The global cap then looks up jobs
+          # only for each person's first AUTHOR_CAP runs (any later ones were
+          # capped) and for dispatches, stops at the cap, and never makes more
+          # than MAX_LOOKUPS calls. Any API failure stops here: fail closed.
+          if [ "$EVENT" = pull_request_target ]; then
+            capfail="Automated review skipped: the bot could not count today's reviews, so it stops rather than risk going over its daily limit. Comment \`/review\` later."
+            today=$(date -u +%F)
+            list_runs() {
+              gh api -X GET --paginate "repos/$REPO/actions/workflows/skill-review.yml/runs" \
+                -f created=">=$today" -f event="$1" -f per_page=100 \
+                --jq '.workflow_runs[] | "\(.id) \(.event) \(.triggering_actor.login // "-")"'
+            }
+            prt=$(list_runs pull_request_target) || skip "could not list today's runs" "$capfail"
+            wd=$(list_runs workflow_dispatch) || skip "could not list today's runs" "$capfail"
+            earlier=$(printf '%s\n%s\n' "$prt" "$wd" | awk -v me="$RUN_ID" 'NF == 3 && $1 + 0 < me + 0' | sort -n)
+
+            mine=$(awk -v who="$TRIGGER" '$2 == "pull_request_target" && $3 == who {c++} END {print c + 0}' <<<"$earlier")
+            if [ "$mine" -ge "$AUTHOR_CAP" ] && ! is_writer "$TRIGGER"; then
+              skip "per-author cap reached" "Automated review skipped: the daily limit of $AUTHOR_CAP automated runs per contributor has been reached (UTC day). A maintainer can start a review with \`/review\`."
+            fi
+
+            candidates=$(awk -v cap="$AUTHOR_CAP" '$2 != "pull_request_target" || ++seen[$3] <= cap' <<<"$earlier")
+            total=0
+            lookups=0
+            while read -r id _event _actor; do
+              [ -n "$id" ] || continue
+              lookups=$((lookups + 1))
+              if [ "$lookups" -gt "$MAX_LOOKUPS" ]; then
+                skip "more than $MAX_LOOKUPS runs to count" "$capfail"
+              fi
+              # shellcheck disable=SC2016 # jq variables, not shell ones
+              n=$(gh api "repos/$REPO/actions/runs/$id/jobs?per_page=100" --jq '
+                    ([.jobs[] | select((.name == "review" or .name == "fix") and .conclusion != "skipped")] | length) as $n
+                    | ([.jobs[] | select(.name == "gate" and .status == "completed")] | length) as $decided
+                    | if $decided == 0 and $n == 0 then 1 else $n end') \
+                || skip "could not read jobs of run $id" "$capfail"
+              total=$((total + n))
+              if [ "$total" -ge "$DAILY_CAP" ]; then break; fi
+            done <<<"$candidates"
+            echo "Review and fix jobs today before this run: at least $total (cap $DAILY_CAP); runs by $TRIGGER: $mine; lookups: $lookups"
+            if [ "$total" -ge "$DAILY_CAP" ]; then
+              skip "daily cap reached" "Automated review skipped: the daily limit of $DAILY_CAP automated review and fix runs has been reached (UTC day). Nothing is wrong with this PR. Comment \`/review\` after midnight UTC to queue it again."
+            fi
           fi
           out run true
 

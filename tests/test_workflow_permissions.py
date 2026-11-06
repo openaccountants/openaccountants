@@ -197,14 +197,101 @@ class SkillReviewWorkflowTests(unittest.TestCase):
 
     def test_caps_cannot_be_raced_or_spammed(self) -> None:
         """Re-review items 2 and 7: only earlier runs count, an undecided gate
-        counts as one, the per-person cap counts runs, and only
-        pull_request_target and workflow_dispatch runs are listed."""
+        counts as one, and only pull_request_target and workflow_dispatch runs
+        are listed."""
         gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
         self.assertIn('-f event="$1"', gate)
-        self.assertIn('[ "$id" -lt "$RUN_ID" ] || continue', gate)
+        self.assertIn("NF == 3 && $1 + 0 < me + 0", gate)
         self.assertIn("if $decided == 0 and $n == 0 then 1 else $n end", gate)
-        self.assertIn('[ "$actor" = "$TRIGGER" ]; then mine=$((mine + 1)); fi', gate)
-        self.assertIn('[ "$mine" -ge "$AUTHOR_CAP" ]', gate)
+
+    # Final review: the gate's API use is bounded, and maintainers are exempt.
+    # These run the gate's real caps block in bash against a fake `gh` that
+    # serves the run listings and counts every call.
+
+    _FAKE_GH = """#!/usr/bin/env bash
+    echo "$*" >> "$GH_LOG"
+    case "$*" in
+      *skill-review.yml/runs*event=pull_request_target*) cat "$PRT_FILE" ;;
+      *skill-review.yml/runs*event=workflow_dispatch*) cat "$WD_FILE" ;;
+      */jobs*) echo "${JOB_N:-1}" ;;
+      *collaborators*) echo "${PERM:-none}" ;;
+      *) echo "unexpected gh call: $*" >&2; exit 1 ;;
+    esac
+    """
+
+    def _run_caps(self, event: str, trigger: str, prt: list[tuple[int, str]], wd=(), job_n: int = 1):
+        import os
+        import shutil
+        import subprocess
+        import tempfile
+        import textwrap
+
+        bash = shutil.which("bash")
+        if not bash:
+            self.skipTest("bash not available")
+        gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
+        helpers = gate[: gate.index("# Explain a skip")]
+        caps = gate[gate.index("# Caps (pull_request_target runs only)"):]
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            gh = tmp / "gh"
+            gh.write_text(textwrap.dedent(self._FAKE_GH), encoding="utf-8")
+            gh.chmod(0o755)
+            (tmp / "prt").write_text("".join(f"{i} pull_request_target {a}\n" for i, a in prt), encoding="utf-8")
+            (tmp / "wd").write_text("".join(f"{i} workflow_dispatch {a}\n" for i, a in wd), encoding="utf-8")
+            (tmp / "log").write_text("", encoding="utf-8")
+            (tmp / "out").write_text("", encoding="utf-8")
+            env = dict(os.environ, PATH=f"{tmp}:{os.environ.get('PATH', '')}", GH_LOG=str(tmp / "log"),
+                       PRT_FILE=str(tmp / "prt"), WD_FILE=str(tmp / "wd"), JOB_N=str(job_n),
+                       GITHUB_OUTPUT=str(tmp / "out"), EVENT=event, TRIGGER=trigger, RUN_ID="100000",
+                       REPO="o/r", **{k: str(v) for k, v in self.doc["env"].items()})
+            proc = subprocess.run([bash, "-c", helpers + caps], env=env, capture_output=True, text=True, timeout=60)
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            calls = (tmp / "log").read_text(encoding="utf-8").splitlines()
+            out = (tmp / "out").read_text(encoding="utf-8")
+        return calls, out, proc.stdout
+
+    @staticmethod
+    def _jobs_calls(calls: list[str]) -> int:
+        return sum("/jobs" in c for c in calls)
+
+    def test_over_cap_author_is_stopped_from_the_listing_alone(self) -> None:
+        spam = [(i, "spammer") for i in range(1, 1001)]
+        calls, out, _ = self._run_caps("pull_request_target", "spammer", spam)
+        self.assertIn("run=false", out)
+        self.assertEqual(self._jobs_calls(calls), 0, "no per-run lookup before the per-author cap")
+        self.assertLessEqual(len(calls), 3, calls)
+
+    def test_spam_runs_cost_another_author_a_bounded_number_of_lookups(self) -> None:
+        spam = [(i, "spammer") for i in range(1, 1001)]
+        calls, out, _ = self._run_caps("pull_request_target", "alice", spam, job_n=0)
+        self.assertIn("run=true", out)
+        self.assertEqual(self._jobs_calls(calls), int(self.doc["env"]["AUTHOR_CAP"]))
+
+    def test_global_count_stops_at_the_cap(self) -> None:
+        runs = [(i, f"user{i}") for i in range(1, 61)]
+        calls, out, _ = self._run_caps("pull_request_target", "alice", runs, job_n=1)
+        self.assertIn("run=false", out)
+        self.assertEqual(self._jobs_calls(calls), int(self.doc["env"]["DAILY_CAP"]))
+
+    def test_lookups_never_exceed_the_ceiling(self) -> None:
+        runs = [(i, f"user{i}") for i in range(1, 201)]
+        calls, out, _ = self._run_caps("pull_request_target", "alice", runs, job_n=0)
+        self.assertIn("run=false", out, "too many runs to count fails closed")
+        self.assertEqual(self._jobs_calls(calls), int(self.doc["env"]["MAX_LOOKUPS"]))
+
+    def test_only_earlier_runs_count(self) -> None:
+        later = [(200000 + i, "alice") for i in range(10)]
+        calls, out, _ = self._run_caps("pull_request_target", "alice", later)
+        self.assertIn("run=true", out)
+        self.assertEqual(self._jobs_calls(calls), 0)
+
+    def test_maintainer_runs_are_exempt_from_the_caps(self) -> None:
+        busy = [(i, f"user{i}") for i in range(1, 61)]
+        for event in ("issue_comment", "workflow_dispatch"):
+            calls, out, _ = self._run_caps(event, "michael", busy)
+            self.assertIn("run=true", out, event)
+            self.assertEqual(calls, [], f"{event}: the caps make no API calls")
 
     def test_reviewed_head_marker_is_the_shell_footer_only(self) -> None:
         """Re-review item 4: the marker is the comment's last line, written by
