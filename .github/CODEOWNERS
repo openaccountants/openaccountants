@@ -4,6 +4,11 @@
 # Workflows, CI and this file: they hold deploy keys and decide what runs.
 /.github/ @michaelcutajar1995
 
+# The builders of the generated files. The rebuild bot publishes whatever they
+# produce, and its PR passes the guard because it matches them.
+/scripts/build-*.py @michaelcutajar1995
+/scripts/build-derived.sh @michaelcutajar1995
+
 # Licence and legal terms: changes here change what we can sell.
 /LICENSE @michaelcutajar1995
 /LICENSES/ @michaelcutajar1995
