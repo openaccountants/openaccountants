@@ -9,9 +9,10 @@ A GitHub workflow reviews every PR that changes `skills/**` or `library/**`, pos
 
 1. **Gate** (no AI). Runs when a skill PR is opened, reopened, marked ready or pushed to; when someone with write access comments `/review`; or when the workflow is run by hand. It skips drafts, closed PRs and PRs not aimed at `main`. It reviews a PR only if **every** file it changes is under `skills/` or `library/` (an allow-list); anything else stays human-only, and so does a PR with more files than GitHub can list. Limits, all of which fail closed (if GitHub cannot be read, nothing runs):
    - 25 review and fix runs a day in total (UTC);
-   - 5 a day per person without write access;
+   - 5 runs a day per person without write access;
    - one automatic review per commit (reopening a PR does not buy another; `/review` and a manual run can);
-   - a `/review` comment from someone without write access neither starts nor cancels anything.
+   - each run counts only the runs started before it, so a burst of PRs cannot all slip under a limit at once;
+   - a `/review` comment from someone without write access starts nothing, and no comment ever cancels a review.
 2. **Review** (Claude, read-only, no shell). Main's scripts run first, in plain shell, and their output is staged as files with the PR's files and main's version of each. Claude then checks figures against official sources (10 spot checks, or a quote check when the PR gives a URL and quote per figure), content lost against main (the 25% rule), worked examples, honest labels, scope (sanctioned countries; Malta and Australia are comment-only) and duplicates. It asks only for objective fixes: a wrong figure, a missing or unofficial or undated source, arithmetic, lost content, a stale tax year, a missing core item. Style and layout are optional notes, never fixes.
    The verdict judges only what the PR changes (its added, changed and removed lines and what they directly feed). Faults in lines the PR does not touch go under "Found on main (not caused by this PR)" and never change the verdict.
 3. **Publish** (no AI). Posts the comment, starting `VERDICT: MERGE`, `FIX` or `HOLD`, with a figures table and, for FIX, a numbered list of exact changes. Each file listed under "Found on main" gets one open issue, "Found by review: <path>", labelled `found-by-review`: a new issue the first time, a comment on the same issue after that.
@@ -37,7 +38,7 @@ It cannot, and the push-fix job refuses a patch that tries:
 - changing `reviewed_by`, `reviewed_on`, `verified_by`, `tier`, `jurisdiction` or a platform-written key (`approved_by`, `drafted_by`, `validation_status`, `validated`, `license`), compared by parsing the frontmatter;
 - adding an em dash; breaking library JSON.
 
-It never pushes to a fork, and no commit from a fork ever lands on a branch here. For a fork PR, the bot makes branch `claude/fix-pr-<n>`: one new commit on `main` holding the PR's `skills/` and `library/` files with the fixes, crediting the PR's author as co-author. It refuses if `main` changed any of those files since the PR branched (the PR needs a rebase first). For a same-repo PR it adds the fix on top of the branch, never on `main`, `test`, the CLA branch, a release or bot branch, or any branch a ruleset protects.
+It never pushes to a fork, and no commit from a fork ever lands on a branch here. For a fork PR, the bot makes branch `claude/fix-pr-<n>`: one new commit on `main` holding the PR's `skills/` and `library/` files with the fixes. The PR's author is the commit's author; the bot is only the committer. Before it creates anything, every file of the PR (not only the fixes) is checked against `main` by the same rules as the fixes, so the branch can never carry Malta, Australia, sanctioned-country or approved files, or new approval and platform keys. It refuses if `main` changed any of those files since the PR branched (the PR needs a rebase first). For a same-repo PR it adds the fix on top of the branch, never on `main`, `test`, the CLA branch, a release or bot branch, or any branch a ruleset protects.
 
 It never runs the PR's code. Claude never holds a token that can write and has no shell; the comment, labels and commit are made by plain shell steps in separate jobs.
 

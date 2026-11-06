@@ -175,11 +175,14 @@ class SkillReviewWorkflowTests(unittest.TestCase):
 
     # Item 2.
 
-    def test_only_writers_review_comments_share_the_pr_group(self) -> None:
+    def test_no_comment_shares_the_pr_group(self) -> None:
+        """Re-review item 6: every issue_comment run keys on its run id, so no
+        comment, /review included, can cancel a review in flight."""
         group = self.doc["concurrency"]["group"]
-        self.assertIn("github.event.comment.author_association", group)
-        self.assertIn('["OWNER","MEMBER","COLLABORATOR"]', group)
-        self.assertTrue(group.rstrip("} ").endswith("github.run_id"), "other comments must fall back to the run id")
+        self.assertEqual(
+            group,
+            "skill-review-${{ github.event.pull_request.number || github.event.inputs.pr || github.run_id }}",
+        )
 
     # Item 3.
 
@@ -188,11 +191,33 @@ class SkillReviewWorkflowTests(unittest.TestCase):
         for job in self.doc["jobs"].values():
             for step in job.get("steps", []):
                 self.assertNotRegex(step.get("run", ""), r"for \w+ in \$\(gh ", "a failed API call in a for list is ignored")
-        self.assertRegex(gate, r'runs=\$\(gh api [^)]*\)[^\n]*\n?[^\n]*\|\| skip', "listing today's runs must stop the gate on failure")
+        self.assertIn('prt=$(list_runs pull_request_target) || skip', gate)
+        self.assertIn('wd=$(list_runs workflow_dispatch) || skip', gate)
         self.assertIn('.name == "review" or .name == "fix"', gate)
-        self.assertIn("AUTHOR_CAP", gate)
-        self.assertIn("Reviewed head: \\`$head_sha\\`", gate)
-        self.assertIn("Reviewed head: \\`$HEAD_SHA\\`", self.doc["jobs"]["publish"]["steps"][0]["run"])
+
+    def test_caps_cannot_be_raced_or_spammed(self) -> None:
+        """Re-review items 2 and 7: only earlier runs count, an undecided gate
+        counts as one, the per-person cap counts runs, and only
+        pull_request_target and workflow_dispatch runs are listed."""
+        gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
+        self.assertIn('-f event="$1"', gate)
+        self.assertIn('[ "$id" -lt "$RUN_ID" ] || continue', gate)
+        self.assertIn("if $decided == 0 and $n == 0 then 1 else $n end", gate)
+        self.assertIn('[ "$actor" = "$TRIGGER" ]; then mine=$((mine + 1)); fi', gate)
+        self.assertIn('[ "$mine" -ge "$AUTHOR_CAP" ]', gate)
+
+    def test_reviewed_head_marker_is_the_shell_footer_only(self) -> None:
+        """Re-review item 4: the marker is the comment's last line, written by
+        shell; the model's text is defused; a skip on an older verdict says so."""
+        publish = self.doc["jobs"]["publish"]["steps"][0]["run"]
+        self.assertIn("s/[Rr]eviewed[[:space:]]+[Hh]ead/reviewed (quoted) head/g", publish)
+        block = publish[publish.index('echo "VERDICT: $verdict"'):publish.index("} > comment.md")]
+        self.assertEqual(block.strip().splitlines()[-1].strip(), 'echo "<sub>Reviewed head: \\`$HEAD_SHA\\`</sub>"')
+        self.assertLess(publish.index("head -c 60000 body.md"), publish.index("} > comment.md"))
+        gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
+        self.assertIn('split("\\n") | last', gate)
+        self.assertIn('grep -qxF "$marker" markers.txt', gate)
+        self.assertIn("was already reviewed earlier on this PR", gate)
 
     # Item 4.
 
@@ -202,9 +227,52 @@ class SkillReviewWorkflowTests(unittest.TestCase):
         self.assertIn("jq -r .changed_files pr.json", gate)
         self.assertIn('[ "$listed" -lt "$declared" ]', gate)
 
+    def test_fork_path_guards_every_pr_file_before_creating_anything(self) -> None:
+        """Re-review item 1: the guard runs over files.tsv (the whole PR) against
+        main before any blob, tree, commit or branch, and the fork author is
+        the git author of the commit."""
+        push = self.doc["jobs"]["push-fix"]["steps"][-1]["run"]
+        fork = push[push.index("# Fork PR: never push to the fork"):]
+        guard_call = fork.index('guard.py" "$path" "$b" "$a" "$m") || refuse')
+        loop_end = fork.index("done < files.tsv")
+        self.assertLess(guard_call, loop_end)
+        for later in ('s=$(blob "$path")', "git/trees", "git/refs", "gh pr create"):
+            self.assertLess(loop_end, fork.index(later), later)
+        self.assertIn('"$pr_login" "$pr_id+$pr_login@users.noreply.github.com"', fork)
+        self.assertIn('"github-actions[bot]" "41898282+github-actions[bot]@users.noreply.github.com"', fork)
+        self.assertNotIn("FIX_AUTHOR", fork)
+        self.assertNotIn("Co-authored-by", fork)
+
+    def test_main_is_read_from_git_not_an_api_that_can_fail_open(self) -> None:
+        push = self.doc["jobs"]["push-fix"]["steps"][-1]["run"]
+        self.assertIn('"+refs/heads/$DEFAULT_BRANCH:refs/oa/main"', push)
+        self.assertNotIn("|| : > main.txt", push)
+        self.assertIn("grep -q 'HTTP 404'", push)
+
+    def test_fixer_cannot_write_git_metadata(self) -> None:
+        """Re-review item 5."""
+        stage = self.doc["jobs"]["fix"]["steps"][1]["run"]
+        for rule in ('"Write(//**/.git/**)"', '"Write(//**/.gitattributes)"', '"Write(//**/.gitmodules)"',
+                     '"Edit(//**/.git/**)"', '"Edit(//**/.gitattributes)"', '"Edit(//**/.gitmodules)"'):
+            self.assertIn(rule, stage)
+        collect = next(s["run"] for s in self.doc["jobs"]["fix"]["steps"] if s.get("name") == "Collect the edits as a patch")
+        self.assertIn('add -u', collect)
+        self.assertNotIn("add -A", collect)
+
+    def test_gate_blocks_agent_and_git_config_files(self) -> None:
+        gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
+        m = re.search(r"if grep -qE '([^']+)' <<<\"\$paths\"; then\n\s*say \"agent or git config file\"", gate)
+        self.assertIsNotNone(m)
+        blocked = re.compile(m.group(1))
+        for path in ("skills/x/.gitattributes", "skills/x/.gitmodules", "skills/x/.git/config",
+                     "library/.claude/settings.json", "skills/x/CLAUDE.md", "skills/x/AGENTS.md", "skills/.mcp.json"):
+            self.assertTrue(blocked.search(path), path)
+        for path in ("skills/germany/de-vat.md", "skills/x/github-notes.md", "library/ireland/figures.json"):
+            self.assertIsNone(blocked.search(path), path)
+
     def test_fork_fix_branch_is_one_commit_on_main(self) -> None:
         push = self.doc["jobs"]["push-fix"]["steps"][-1]["run"]
-        self.assertIn('sha=$(commit "$tree" "$main_sha"', push)
+        self.assertIn('sha=$(commit "$tree" "$main_sha" "$RUNNER_TEMP/forkmsg.txt"', push)
         self.assertIn('base_tree: $base', push)
         self.assertNotIn('refs/heads/$branch" -f sha="$HEAD_SHA"', push)
 
@@ -267,6 +335,39 @@ class SkillReviewWorkflowTests(unittest.TestCase):
         self.assertIsNotNone(check("skills/germany/x.md", before, "---\nname: [unclosed\n---\n"), "unparseable")
         self.assertIsNone(check("skills/austria/x.md", skill("name: x\njurisdiction: AT\ntier: 2"),
                                 skill("name: x\njurisdiction: AT\ntier: 2", "rate 21%")), "AT is not AU")
+
+    def test_frontmatter_guard_parsing_gaps(self) -> None:
+        """Re-review item 3: BOM, duplicate keys, every file type."""
+        check = self._guard()
+        open_fm = "---\nname: x\njurisdiction: DE\ntier: 2\n---\nrate 19%\n"
+        approved = "---\nname: x\njurisdiction: DE\ntier: 1\nreviewed_by: Jane Doe\n---\nrate 19%\n"
+        # A new file reads as {} if the BOM hides its frontmatter, and would pass.
+        self.assertIsNotNone(check("skills/germany/new.md", None, "\ufeff" + approved), "BOM before the frontmatter")
+        self.assertIsNotNone(check("skills/germany/new.md", None, "\n  " + approved), "blank space before the frontmatter")
+        self.assertIsNotNone(check("skills/germany/x.md", "\ufeff" + open_fm, "\ufeff" + approved), "BOM on both")
+        dup = "---\nname: x\njurisdiction: DE\ntier: 2\nreviewed_by: Jane\nreviewed_by:\n---\nrate\n"
+        self.assertIsNotNone(check("skills/germany/x.md", open_fm, dup), "duplicate key")
+        dup_case = "---\nname: x\njurisdiction: DE\ntier: 2\nReviewed_By: Jane\nreviewed_by:\n---\nrate\n"
+        self.assertIsNotNone(check("skills/germany/x.md", open_fm, dup_case), "duplicate key in another case")
+        for path in ("skills/germany/x.MD", "skills/germany/x.markdown", "skills/germany/x.txt"):
+            self.assertIsNotNone(check(path, open_fm, approved), path)
+
+    def test_frontmatter_guard_on_whole_pr_files(self) -> None:
+        """Re-review item 1: the cases the fork path sends through the guard."""
+        check = self._guard()
+        new_ok = "---\nname: x\njurisdiction: DE\ntier: 2\n---\nrate 19%\n"
+        self.assertIsNone(check("skills/germany/new.md", None, new_ok, None), "a new tier 2 skill")
+        for key, line in (("tier 1", "tier: 1"), ("reviewed_by", "tier: 2\nreviewed_by: Jane"),
+                          ("license", "tier: 2\nlicense: MIT"), ("approved_by", "tier: 2\napproved_by: Jane"),
+                          ("reviewed_on", "tier: 2\nreviewed_on: 2026-11-06"), ("Malta", "tier: 2\njurisdiction: MT")):
+            text = new_ok.replace("tier: 2", line)
+            self.assertIsNotNone(check("skills/germany/new.md", None, text, None), f"new file with {key}")
+        held_main = "---\nname: x\njurisdiction: DE\ntier: 1\nreviewed_by: Jane\n---\nbody\n"
+        self.assertIsNotNone(check("skills/germany/x.md", held_main, None, held_main), "deleting an approved file")
+        self.assertIsNone(check("skills/germany/x.md", new_ok, None, new_ok), "deleting an open file")
+        for folder in ("skills/malta/x.md", "library/australia/figures.json", "skills/Russia/x.md", "skills/iran/x.md"):
+            self.assertIsNotNone(check(folder, new_ok, new_ok, new_ok), folder)
+        self.assertIsNotNone(check("skills/germany/x.md", new_ok, new_ok, "---\nname: [x\n---\n"), "main unparseable")
 
 
 if __name__ == "__main__":

@@ -67,13 +67,12 @@ on:
 # Nothing by default. Each job asks for exactly what it needs.
 permissions: {}
 
-# One loop per PR. A new push, or /review from someone with write access,
-# cancels the review in flight (it is stale). A /review from anyone else, and
-# every other comment, gets its own group (the run id), so it cancels nothing.
-# A dispatched re-review (from push-fix, or by hand) waits for the current run
-# instead, so it never cancels the fix that started it.
+# One loop per PR. A new push cancels the review in flight (it is stale). A
+# dispatched re-review (from push-fix, or by hand) waits for the current run
+# instead, so it never cancels the fix that started it. Every comment, /review
+# included, gets its own group (the run id), so no comment can cancel anything.
 concurrency:
-  group: skill-review-${{ github.event.pull_request.number || github.event.inputs.pr || (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/review') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association) && github.event.issue.number) || github.run_id }}
+  group: skill-review-${{ github.event.pull_request.number || github.event.inputs.pr || github.run_id }}
   cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
 
 env:
@@ -207,8 +206,8 @@ jobs:
           if grep -vqE '^(skills|library)/' <<<"$paths"; then
             say "changes outside skills/ and library/" "Automated review skipped: this PR changes files outside skills/ and library/, which a maintainer reviews by hand."
           fi
-          if grep -qE '(^|/)\.claude/|(^|/)(CLAUDE(\.local)?|AGENTS)\.md$|(^|/)\.mcp\.json$' <<<"$paths"; then
-            say "agent config file" "Automated review skipped: this PR adds or changes an AI agent configuration file. A maintainer reviews it by hand."
+          if grep -qE '(^|/)\.claude/|(^|/)(CLAUDE(\.local)?|AGENTS)\.md$|(^|/)\.mcp\.json$|(^|/)\.git(/|$)|(^|/)\.git(attributes|modules)$' <<<"$paths"; then
+            say "agent or git config file" "Automated review skipped: this PR adds or changes an AI agent or git configuration file. A maintainer reviews it by hand."
           fi
           if grep -vqE '^[A-Za-z0-9._/+-]+$' <<<"$paths" || grep -q '\.\.' <<<"$paths"; then
             say "unusual file names" "Automated review skipped: a file name has characters the bot does not handle. A maintainer reviews this PR by hand."
@@ -219,9 +218,18 @@ jobs:
 
           # One automatic review per head commit: reopening or re-running the
           # same commit does not buy another review. /review and a manual run
-          # (both need write access) may review it again.
-          if [ "$EVENT" = pull_request_target ] \
-             && jq -e --arg s "Reviewed head: \`$head_sha\`" 'any(.[]; .body | contains($s))' bot.json >/dev/null; then
+          # (both need write access) may review it again. The marker is the last
+          # line of a verdict, which the publish job writes; the model's text
+          # above it cannot end the comment, and "Reviewed head" in it is defused.
+          jq -r '[.[] | select(.body | startswith("VERDICT:")) | .body | rtrimstr("\n") | split("\n") | last] | .[]' bot.json > markers.txt
+          marker="<sub>Reviewed head: \`$head_sha\`</sub>"
+          if [ "$EVENT" = pull_request_target ] && grep -qxF "$marker" markers.txt; then
+            last_marker=$(tail -n 1 markers.txt)
+            if [ "$last_marker" != "$marker" ]; then
+              # shellcheck disable=SC2016 # literal markdown backticks
+              last_sha=$(sed -nE 's/^<sub>Reviewed head: `([0-9a-f]{40})`<\/sub>$/\1/p' <<<"$last_marker")
+              skip "this commit was already reviewed" "Automated review skipped: commit $head_sha was already reviewed earlier on this PR (scroll up for that verdict). The latest automated verdict was for ${last_sha:-another commit}, so it does not describe this one. Comment \`/review\` for a fresh review."
+            fi
             skip "this commit was already reviewed"
           fi
 
@@ -238,31 +246,42 @@ jobs:
           case " $labels " in *" review-round-2 "*) round=2 ;; esac
           out round "$round"
 
-          # Caps: count review and fix jobs started today (UTC) in every run of
-          # this workflow but this one, in total and for this run's triggering
-          # person. Any API failure stops here: the caps fail closed.
+          # Caps, counted over runs of this workflow created today (UTC) before
+          # this one (lower run id), so runs that start together cannot all see
+          # the same count. Only pull_request_target and workflow_dispatch runs
+          # are listed: comments cannot inflate the API calls. A run counts for
+          # its review and fix jobs, or as one while its gate has not decided.
+          # The per-person cap counts runs, whatever their jobs did. Any API
+          # failure stops here: the caps fail closed.
           capfail="Automated review skipped: the bot could not count today's reviews, so it stops rather than risk going over its daily limit. Comment \`/review\` later."
           today=$(date -u +%F)
-          runs=$(gh api -X GET --paginate "repos/$REPO/actions/workflows/skill-review.yml/runs" \
-                   -f created=">=$today" -f per_page=100 \
-                   --jq '.workflow_runs[] | "\(.id) \(.triggering_actor.login // "-")"') \
-            || skip "could not list today's runs" "$capfail"
+          list_runs() {
+            gh api -X GET --paginate "repos/$REPO/actions/workflows/skill-review.yml/runs" \
+              -f created=">=$today" -f event="$1" -f per_page=100 \
+              --jq '.workflow_runs[] | "\(.id) \(.event) \(.triggering_actor.login // "-")"'
+          }
+          prt=$(list_runs pull_request_target) || skip "could not list today's runs" "$capfail"
+          wd=$(list_runs workflow_dispatch) || skip "could not list today's runs" "$capfail"
           total=0
           mine=0
-          while read -r id actor; do
+          while read -r id event actor; do
             [ -n "$id" ] || continue
-            [ "$id" = "$RUN_ID" ] && continue
-            n=$(gh api "repos/$REPO/actions/runs/$id/jobs?per_page=100" \
-                  --jq '[.jobs[] | select((.name == "review" or .name == "fix") and .conclusion != "skipped")] | length') \
+            [ "$id" -lt "$RUN_ID" ] || continue
+            if [ "$event" = pull_request_target ] && [ "$actor" = "$TRIGGER" ]; then mine=$((mine + 1)); fi
+            # shellcheck disable=SC2016 # jq variables, not shell ones
+            n=$(gh api "repos/$REPO/actions/runs/$id/jobs?per_page=100" --jq '
+                  ([.jobs[] | select((.name == "review" or .name == "fix") and .conclusion != "skipped")] | length) as $n
+                  | ([.jobs[] | select(.name == "gate" and .status == "completed")] | length) as $decided
+                  | if $decided == 0 and $n == 0 then 1 else $n end') \
               || skip "could not read jobs of run $id" "$capfail"
             total=$((total + n))
-            if [ "$actor" = "$TRIGGER" ]; then mine=$((mine + n)); fi
-          done <<<"$runs"
-          echo "Review and fix jobs today: $total (cap $DAILY_CAP); by $TRIGGER: $mine"
+          done <<<"$prt
+          $wd"
+          echo "Review and fix jobs today before this run: $total (cap $DAILY_CAP); pull_request_target runs by $TRIGGER: $mine"
           if [ "$total" -ge "$DAILY_CAP" ]; then
             skip "daily cap reached" "Automated review skipped: the daily limit of $DAILY_CAP automated review and fix runs has been reached (UTC day). Nothing is wrong with this PR. Comment \`/review\` after midnight UTC to queue it again."
           fi
-          if [ "$EVENT" != workflow_dispatch ] && [ "$mine" -ge "$AUTHOR_CAP" ] && ! is_writer "$TRIGGER"; then
+          if [ "$EVENT" = pull_request_target ] && [ "$mine" -ge "$AUTHOR_CAP" ] && ! is_writer "$TRIGGER"; then
             skip "per-author cap reached" "Automated review skipped: the daily limit of $AUTHOR_CAP automated runs per contributor has been reached (UTC day). A maintainer can start a review with \`/review\`."
           fi
           out run true
@@ -484,8 +503,12 @@ jobs:
           esac
           # Our VERDICT line goes first, whatever the model wrote; drop its own.
           sed -i '1{/^[[:space:]]*VERDICT:/d}' body.md
-          # Defuse @mentions so a review cannot ping people.
+          # Defuse @mentions so a review cannot ping people, and any "Reviewed
+          # head" text, so only the footer below can mark a commit as reviewed.
           sed -i -E 's/(^|[^[:alnum:]_`])@([[:alnum:]])/\1@\xE2\x80\x8B\2/g' body.md
+          sed -i -E 's/[Rr]eviewed[[:space:]]+[Hh]ead/reviewed (quoted) head/g' body.md
+          # Leave room for the footer: truncate the model's text, never the footer.
+          head -c 60000 body.md > body.trim.md && mv body.trim.md body.md
 
           label() {
             gh label create "$1" --repo "$REPO" --color "$2" --description "$3" >/dev/null 2>&1 || true
@@ -521,10 +544,11 @@ jobs:
             echo "---"
             echo "$next"
             echo
-            echo "<sub>Automated review by the Skill review workflow ([run]($RUN_URL)). Reviewed head: \`$HEAD_SHA\`. Advisory: it never approves or merges. Re-run: comment \`/review\`.</sub>"
+            echo "<sub>Automated review by the Skill review workflow ([run]($RUN_URL)). Advisory: it never approves or merges. Re-run: comment \`/review\`.</sub>"
+            echo
+            echo "<sub>Reviewed head: \`$HEAD_SHA\`</sub>"
           } > comment.md
-          head -c 65000 comment.md > comment.trim.md
-          gh api -X POST "repos/$REPO/issues/$PR/comments" -F body=@comment.trim.md >/dev/null
+          gh api -X POST "repos/$REPO/issues/$PR/comments" -F body=@comment.md >/dev/null
           echo "fix=$fix" >> "$GITHUB_OUTPUT"
           echo "round=$next_round" >> "$GITHUB_OUTPUT"
 
@@ -646,7 +670,10 @@ jobs:
               "Read(//proc/**)", "Read(//sys/**)", "Read(//etc/**)", "Read(//root/**)",
               "Read(//home/runner/.claude/**)", "Read(\($rt)/_runner_file_commands/**)",
               "Edit(./**)", "Write(./**)",
-              "Edit(\($t)/.git/**)", "Write(\($t)/.git/**)"
+              "Edit(\($t)/.git/**)", "Write(\($t)/.git/**)",
+              "Edit(//**/.git/**)", "Write(//**/.git/**)",
+              "Edit(//**/.gitattributes)", "Write(//**/.gitattributes)",
+              "Edit(//**/.gitmodules)", "Write(//**/.gitmodules)"
             ] + ([
               "skills/malta", "skills/australia", "library/malta", "library/australia",
               "skills/iran", "skills/russia", "skills/syria", "skills/cuba", "skills/belarus", "skills/north-korea"
@@ -692,7 +719,12 @@ jobs:
         run: |
           set -euo pipefail
           D="$RUNNER_TEMP/oa-review"
-          git -C "$D/tree" add -A
+          # Tracked files only (-u), plus the PR's own files by name: anything
+          # else the fixer may have created, such as a .git folder, is left out.
+          git -C "$D/tree" add -u
+          while read -r p; do
+            if [ -e "$D/tree/$p" ]; then git -C "$D/tree" add -- "$p"; fi
+          done < "$D/changed.txt"
           git -C "$D/tree" diff --cached --binary > "$RUNNER_TEMP/fix.patch"
           git -C "$D/tree" diff --cached --stat
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -748,10 +780,14 @@ jobs:
             exit 0
           }
 
-          # Frontmatter guard: refuses a file held for a person (reviewed_by,
-          # tier 1, or a Malta or Australia jurisdiction, on the PR or on main)
-          # and any change to an approval or platform key. Parsed with
-          # yaml.safe_load, so quoted keys and CRLF line ends do not slip past.
+          # Frontmatter guard, run on every file the bot would commit: refuses a
+          # file in a held folder (Malta, Australia, sanctioned countries), a file
+          # held for a person on the starting version, the new version or main
+          # (reviewed_by, tier 1, a Malta or Australia jurisdiction), and any new
+          # or changed approval or platform key. Parsed with a SafeLoader that
+          # refuses duplicate keys, after stripping a BOM and leading blank space,
+          # so quoted keys, CRLF and repeated keys do not slip past. Every file
+          # type is checked; a file with no frontmatter reads as {}.
           cat > "$RUNNER_TEMP/guard.py" <<'PY'
           import re
           import sys
@@ -760,20 +796,48 @@ jobs:
 
           GUARDED = ("reviewed_by", "reviewed_on", "verified_by", "tier", "approved_by",
                      "drafted_by", "validation_status", "validated", "license", "jurisdiction")
+          HELD_FOLDER = re.compile(
+              r"^(skills|library)/(malta|australia|iran|russia|syria|cuba|belarus|north-korea)/", re.I)
+          LEADING_JUNK = "\ufeff \t\r\n"
+
+
+          class UniqueKeyLoader(yaml.SafeLoader):
+              """SafeLoader that refuses duplicate keys, so a later key cannot hide an earlier one."""
+
+
+          def _unique_mapping(loader, node, deep=False):
+              loader.flatten_mapping(node)
+              mapping = {}
+              for key_node, value_node in node.value:
+                  key = loader.construct_object(key_node, deep=deep)
+                  norm = str(key).strip().lower()
+                  if norm in mapping:
+                      raise yaml.constructor.ConstructorError(
+                          None, None, f"duplicate key {key!r}", key_node.start_mark)
+                  mapping[norm] = loader.construct_object(value_node, deep=deep)
+              return mapping
+
+
+          UniqueKeyLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _unique_mapping)
 
 
           def frontmatter(text):
-              """The frontmatter as a dict ({} if none), or None if it does not parse."""
-              lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
-              if not lines or lines[0].strip() != "---":
+              """Top-level keys (lower case) as a dict: {} for no file or no frontmatter,
+              None when the frontmatter does not parse or is not a mapping."""
+              if text is None:
+                  return {}
+              lines = text.lstrip(LEADING_JUNK).replace("\r\n", "\n").replace("\r", "\n").split("\n")
+              if lines[0].strip() != "---":
                   return {}
               for i in range(1, len(lines)):
                   if lines[i].strip() == "---":
                       try:
-                          data = yaml.safe_load("\n".join(lines[1:i]))
+                          data = yaml.load("\n".join(lines[1:i]), Loader=UniqueKeyLoader)
                       except yaml.YAMLError:
                           return None
-                      return data if isinstance(data, dict) else {}
+                      if data is None:
+                          return {}
+                      return data if isinstance(data, dict) else None
               return None
 
 
@@ -788,36 +852,67 @@ jobs:
               return None
 
 
-          def check(path, before, after, main=""):
-              """None if the fix may be committed, else the reason it may not."""
-              if not path.endswith(".md"):
-                  return None
-              b, a = frontmatter(before), frontmatter(after)
-              if b is None or a is None:
-                  return f"{path}: the frontmatter does not parse"
-              for where, data in (("the PR", b), ("main", frontmatter(main) or {})):
+          def check(path, before, after, main=None):
+              """None if the bot may commit `after` at `path`, else the reason it may not.
+
+              before: the version the change starts from (None: a new file).
+              after: the version to commit (None: the file is deleted).
+              main: main's copy at `path` (None: not on main).
+              """
+              if HELD_FOLDER.match(path):
+                  return f"{path} is in a folder held for a person (Malta, Australia or a sanctioned country)"
+              parsed = {}
+              for where, text in (("the starting version", before), ("the new version", after), ("main", main)):
+                  data = frontmatter(text)
+                  if data is None:
+                      return f"{path}: the frontmatter of {where} does not parse (or repeats a key)"
                   reason = held(data)
                   if reason:
                       return f"{path} {reason} on {where}; it is held for a person"
+                  parsed[where] = data
+              if after is None:
+                  return None
+              b, a = parsed["the starting version"], parsed["the new version"]
               for key in GUARDED:
+                  if before is None:
+                      # A new skill must carry tier 2 and a jurisdiction; nothing else.
+                      if key not in a or key == "jurisdiction":
+                          continue
+                      if key == "tier" and str(a[key]).strip() == "2":
+                          continue
+                      return f"{path}: a new file may not set {key}"
                   if b.get(key) != a.get(key):
-                      return f"{path}: the fix changes {key}"
+                      return f"{path}: the change adds or changes {key}"
               return None
 
 
           if __name__ == "__main__":
+              def read(name):
+                  return None if name == "-" else open(name, encoding="utf-8", errors="replace").read()
+
               path, before, after, main = sys.argv[1:5]
-              read = lambda f: open(f, encoding="utf-8", errors="replace").read()
               reason = check(path, read(before), read(after), read(main))
               if reason:
                   print(reason)
                   sys.exit(1)
           PY
 
-          # A bare repository with the PR head's objects only. Nothing is checked out.
+          # A bare repository with main's and the PR head's objects. Nothing is
+          # checked out. main is read from git, so a lookup cannot fail open.
           git init -q work && cd work
           git remote add origin "https://github.com/$REPO.git"
+          git fetch -q --no-tags --depth=1 origin "+refs/heads/$DEFAULT_BRANCH:refs/oa/main"
           git fetch -q --no-tags --depth=1 origin "+refs/pull/$PR/head:refs/oa/pr-head"
+          # main's copy of a path into a file, printing the file name, or "-" when
+          # main has no such file.
+          main_copy() {
+            if git cat-file -e "refs/oa/main:$1" 2>/dev/null; then
+              git show "refs/oa/main:$1" > "$2"
+              echo "$2"
+            else
+              echo -
+            fi
+          }
           [ "$(git rev-parse refs/oa/pr-head)" = "$HEAD_SHA" ] || refuse "the PR changed while the fix ran."
           [ "$(gh api "repos/$REPO/pulls/$PR" --jq .head.sha)" = "$HEAD_SHA" ] || refuse "the PR changed while the fix ran."
 
@@ -852,8 +947,8 @@ jobs:
             if [[ "$p" =~ $SANCTIONED ]]; then refuse "the patch touches $p (sanctioned country)."; fi
             git show "$HEAD_SHA:$p" > before.txt
             git show ":$p" > after.txt
-            gh api -H "Accept: application/vnd.github.raw" "repos/$REPO/contents/$p?ref=$DEFAULT_BRANCH" > main.txt 2>/dev/null || : > main.txt
-            why=$(python3 -I "$RUNNER_TEMP/guard.py" "$p" before.txt after.txt main.txt) || refuse "$why"
+            m=$(main_copy "$p" main.txt)
+            why=$(python3 -I "$RUNNER_TEMP/guard.py" "$p" before.txt after.txt "$m") || refuse "$why"
             case "$p" in
               *.json) python3 -I -c 'import json,sys; json.load(open(sys.argv[1]))' after.txt || refuse "$p is no longer valid JSON." ;;
             esac
@@ -885,12 +980,12 @@ jobs:
             [ "$sha" = "$(git rev-parse ":$1")" ] || return 1
             echo "$sha"
           }
-          commit() { # tree parent message-file [extra trailer]
+          commit() { # tree parent message-file author-name author-email committer-name committer-email
             local now
             now=$(date -u +%FT%TZ)
             jq -n --rawfile m "$3" --arg t "$1" --arg p "$2" \
-                  --arg n "$FIX_AUTHOR_NAME" --arg e "$FIX_AUTHOR_EMAIL" --arg d "$now" \
-                  '{message: $m, tree: $t, parents: [$p], author: {name: $n, email: $e, date: $d}, committer: {name: $n, email: $e, date: $d}}' > commit.json
+                  --arg an "$4" --arg ae "$5" --arg cn "$6" --arg ce "$7" --arg d "$now" \
+                  '{message: $m, tree: $t, parents: [$p], author: {name: $an, email: $ae, date: $d}, committer: {name: $cn, email: $ce, date: $d}}' > commit.json
             gh api -X POST "repos/$REPO/git/commits" --input commit.json --jq .sha
           }
 
@@ -910,7 +1005,8 @@ jobs:
             jq -n --arg base "$(git rev-parse "$HEAD_SHA^{tree}")" --argjson e "$entries" '{base_tree: $base, tree: $e}' > tree.json
             tree=$(gh api -X POST "repos/$REPO/git/trees" --input tree.json --jq .sha) || refuse "could not create the tree."
             [ "$tree" = "$(git write-tree)" ] || refuse "the commit tree did not match the checked patch."
-            sha=$(commit "$tree" "$HEAD_SHA" "$RUNNER_TEMP/msg.txt") || refuse "could not create the commit."
+            sha=$(commit "$tree" "$HEAD_SHA" "$RUNNER_TEMP/msg.txt" "$FIX_AUTHOR_NAME" "$FIX_AUTHOR_EMAIL" "$FIX_AUTHOR_NAME" "$FIX_AUTHOR_EMAIL") \
+              || refuse "could not create the commit."
             [ -n "$sha" ] || refuse "could not create the commit."
             gh api -X PATCH "repos/$REPO/git/refs/heads/$HEAD_REF" -f sha="$sha" -F force=false >/dev/null \
               || refuse "the branch moved; nothing was overwritten."
@@ -920,22 +1016,52 @@ jobs:
           else
             # Fork PR: never push to the fork, and never bring a fork commit into
             # this repository. claude/fix-pr-<n> is ONE new commit on main: main's
-            # tree plus the PR's skills/ and library/ files (with the fixes).
-            # Refuse if main changed any of those files since the PR branched,
-            # so an old copy can never overwrite newer work on main.
+            # tree plus the PR's skills/ and library/ files (with the fixes),
+            # authored by the PR's author (the bot is only the committer).
+            # Before anything is created, every file of the PR goes through the
+            # guard against main, not only the fixer's patch: a fork cannot use
+            # this branch to carry Malta, Australia, sanctioned-country or
+            # approved files, or approval and platform keys, into the repository.
+            # Also refuse if main changed any of those files since the PR
+            # branched, so an old copy can never overwrite newer work on main.
             branch="claude/fix-pr-$PR"
             [ "$(wc -l < files.tsv)" -le 200 ] || refuse "the PR changes more than 200 files."
-            main_sha=$(gh api "repos/$REPO/git/ref/heads/$DEFAULT_BRANCH" --jq .object.sha) || refuse "could not read $DEFAULT_BRANCH."
-            main_tree=$(gh api "repos/$REPO/git/commits/$main_sha" --jq .tree.sha) || refuse "could not read $DEFAULT_BRANCH."
+            while IFS=$'\t' read -r status path prev; do
+              start="$path"
+              if [ -n "$prev" ]; then start="$prev"; fi
+              b=$(main_copy "$start" start.txt)
+              m=$(main_copy "$path" mainp.txt)
+              a=-
+              if [ "$status" != removed ]; then git show ":$path" > new.txt; a=new.txt; fi
+              why=$(python3 -I "$RUNNER_TEMP/guard.py" "$path" "$b" "$a" "$m") || refuse "$why"
+              if [ -n "$prev" ]; then
+                why=$(python3 -I "$RUNNER_TEMP/guard.py" "$prev" "$b" - "$b") || refuse "$why"
+              fi
+            done < files.tsv
+
+            main_sha=$(git rev-parse refs/oa/main)
+            main_tree=$(git rev-parse "refs/oa/main^{tree}")
             mb=$(gh api "repos/$REPO/compare/$main_sha...$HEAD_SHA" --jq .merge_base_commit.sha) || mb=""
             [ -n "$mb" ] || refuse "could not find where the PR branched from main."
-            sha_at() { gh api "repos/$REPO/contents/$1?ref=$2" --jq .sha 2>/dev/null || echo none; }
+            # Blob sha of a path at a ref: "absent" on a clean 404, failure otherwise.
+            sha_at() {
+              local out
+              if out=$(gh api "repos/$REPO/contents/$1?ref=$2" --jq .sha 2> "$RUNNER_TEMP/sha_at.err"); then
+                echo "$out"
+              elif grep -q 'HTTP 404' "$RUNNER_TEMP/sha_at.err"; then
+                echo absent
+              else
+                return 1
+              fi
+            }
+            main_blob() { git rev-parse -q --verify "refs/oa/main:$1" 2>/dev/null || echo absent; }
             entries='[]'
             while IFS=$'\t' read -r status path prev; do
               qs=("$path")
               if [ -n "$prev" ]; then qs+=("$prev"); fi
               for q in "${qs[@]}"; do
-                [ "$(sha_at "$q" "$mb")" = "$(sha_at "$q" "$main_sha")" ] \
+                then_sha=$(sha_at "$q" "$mb") || refuse "could not read $q where the PR branched."
+                [ "$then_sha" = "$(main_blob "$q")" ] \
                   || refuse "main changed $q after the PR branched; the PR needs a rebase first."
               done
               if [ -n "$prev" ]; then
@@ -950,17 +1076,21 @@ jobs:
             done < files.tsv
             jq -n --arg base "$main_tree" --argjson e "$entries" '{base_tree: $base, tree: $e}' > tree.json
             tree=$(gh api -X POST "repos/$REPO/git/trees" --input tree.json --jq .sha) || refuse "could not create the tree."
-            author=$(gh api "repos/$REPO/pulls/$PR" --jq '"\(.user.login) <\(.user.id)+\(.user.login)@users.noreply.github.com>"')
-            { echo "Changes from #$PR, with automatic review fixes (round $ROUND)"; echo
-              echo "The skills/ and library/ files of #$PR (a fork PR) on top of $DEFAULT_BRANCH, plus:"; echo
-              cat list.md; echo
-              echo "Co-authored-by: $author"; } > "$RUNNER_TEMP/forkmsg.txt"
-            sha=$(commit "$tree" "$main_sha" "$RUNNER_TEMP/forkmsg.txt") || refuse "could not create the commit."
+            pr_login=$(gh api "repos/$REPO/pulls/$PR" --jq .user.login) || refuse "could not read the PR's author."
+            pr_id=$(gh api "repos/$REPO/pulls/$PR" --jq .user.id) || refuse "could not read the PR's author."
+            { echo "Changes from #$PR by $pr_login, with automatic review fixes (round $ROUND)"; echo
+              echo "The skills/ and library/ files of #$PR (a fork PR, written by $pr_login) on top of $DEFAULT_BRANCH."
+              echo "The automated review then made these fixes:"; echo
+              cat list.md; } > "$RUNNER_TEMP/forkmsg.txt"
+            sha=$(commit "$tree" "$main_sha" "$RUNNER_TEMP/forkmsg.txt" \
+                    "$pr_login" "$pr_id+$pr_login@users.noreply.github.com" \
+                    "github-actions[bot]" "41898282+github-actions[bot]@users.noreply.github.com") \
+              || refuse "could not create the commit."
             [ -n "$sha" ] || refuse "could not create the commit."
             gh api -X POST "repos/$REPO/git/refs" -f ref="refs/heads/$branch" -f sha="$sha" >/dev/null \
               || refuse "branch $branch already exists."
             { echo "Fixes for #$PR from the automated review (round $ROUND)."; echo
-              echo "#$PR comes from a fork, so the bot does not push to it. This branch is $DEFAULT_BRANCH plus #$PR's skills/ and library/ changes and the fixes below, in one commit that credits the PR's author. No commit from the fork is on it."; echo
+              echo "#$PR comes from a fork, so the bot does not push to it. This branch is $DEFAULT_BRANCH plus #$PR's skills/ and library/ changes and the fixes below, in one commit authored by the PR's author. No commit from the fork is on it."; echo
               cat list.md; } > fixpr.md
             if url=$(gh pr create --repo "$REPO" --base "$DEFAULT_BRANCH" --head "$branch" --title "Fixes for #$PR" --body-file fixpr.md); then
               target=$(gh pr view "$url" --repo "$REPO" --json number --jq .number)
