@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "FJ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Fiji Corporate Income Tax
@@ -34,24 +32,6 @@ Fiji taxes resident and non-resident companies on Fiji-source income, with a num
 - **Provisional / advance corporate tax** — Companies generally pay tax in advance instalments during the year, reconciled on lodgement ((approx — confirm instalment schedule))  _(Tax Administration Act 2009)_
 
 The corporate tax base is net business profit computed under the Income Tax Act. Fiji applies withholding taxes to certain payments to non-residents, often reduced by tax treaty.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

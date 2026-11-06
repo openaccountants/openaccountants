@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ma-cpu"
   jurisdiction: "MA"
   tax_year: "2026"
-  last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Morocco: Contribution Professionnelle Unique (CPU) for small individual businesses
@@ -26,7 +23,7 @@ The CPU (*Contribution Professionnelle Unique*, المساهمة المهنية 
 
 CPU taxpayers are fully and permanently exempt from the *taxe professionnelle* (TP) and the *taxe de services communaux* (TSC) from 1 January 2021 (Loi 07-20 amending Loi 47-06, as stated in the [DGI CPU practical guide](https://www.tax.gov.ma/wps/wcm/connect/cecc3309-6ca8-494c-903b-160c1649cd9a/CPU+guide+pratique+Version+fran%C3%A7aise.pdf?MOD=AJPERES&CACHEID=cecc3309-6ca8-494c-903b-160c1649cd9a)). They must still register for TP under other laws.
 
-Not covered here: the auto-entrepreneur regime (ma-auto-entrepreneur), the real-accounts regimes RNR and RNS (ma-income-tax), VAT, payroll and companies. Reply in the user's language and keep the native terms (CPU, IR, DGI, AMO, SIMPL).
+Not covered here: the auto-entrepreneur regime (ma-auto-entrepreneur), the real-accounts regimes RNR and RNS (morocco-professional-income-tax), VAT, payroll and companies. Reply in the user's language and keep the native terms (CPU, IR, DGI, AMO, SIMPL).
 
 ## Ask the client first
 
@@ -41,7 +38,7 @@ Not covered here: the auto-entrepreneur regime (ma-auto-entrepreneur), the real-
 
 ## The method, step by step
 
-1. **Check the exclusions first.** If the activity is on the list in décret n° 2-08-124 (doctors, lawyers, IT service providers, importers, property developers and others; full list below), CPU is not available at any turnover. Stop and route to ma-income-tax. Doing the sums first wastes the client's time and invites a wrong filing.
+1. **Check the exclusions first.** If the activity is on the list in décret n° 2-08-124 (doctors, lawyers, IT service providers, importers, property developers and others; full list below), CPU is not available at any turnover. Stop and route to morocco-professional-income-tax. Doing the sums first wastes the client's time and invites a wrong filing.
 2. **Check the ceiling for the right branch.** Compare turnover (VAT included) with the commercial/industrial/artisanal ceiling or the services ceiling. If there are two branches, apply the Art. 43-1° test (each branch within its own ceiling, or total within the ceiling of the main activity). Remember that exit happens only after **two consecutive years** over the ceiling.
 3. **Check the entry conditions.** The person must hold AMO membership (Art. 41-II-B) and have filed the option in time (Art. 44). Someone coming from RNR or RNS must have stayed under the ceiling for three consecutive years (Art. 43).
 4. **Pick the coefficient** from the Art. 40-I table for each activity. Do not use the old 2021 annex, which was abolished on 1 January 2022.
@@ -206,12 +203,12 @@ The relief applies to sales or withdrawals of the *fonds de commerce* from 1 Jan
 | Situation | Rule | What to do |
 | --- | --- | --- |
 | Turnover over the ceiling in one year only | Option stays valid; exit only after two consecutive years (Art. 41-II) | Stay on CPU; warn the client about next year |
-| Over the ceiling two years running | RNR from 1 January of the following year (Art. 41-II) | Route to ma-income-tax; check VAT |
+| Over the ceiling two years running | RNR from 1 January of the following year (Art. 41-II) | Route to morocco-professional-income-tax; check VAT |
 | On RNS/RNR, turnover now small | CPU only after three consecutive years below the ceiling (Art. 43) | Count the years before filing an option |
 | Mixed goods and services | Each branch within its ceiling, or total within the main activity's ceiling (Art. 43-1°) | Split turnover by branch |
 | Two trades with different coefficients | Compute each separately and add (Art. 40-I) | One line per activity on ADP150B |
 | Services over MAD 80,000 to one client | Client withholds 30% on the excess (Art. 40-I, 73-II-G-8°) | Leave the excess out of the CPU base; report it on the return |
-| Excluded profession (décret 2-08-124) | CPU not available at any turnover | Route to ma-income-tax |
+| Excluded profession (décret 2-08-124) | CPU not available at any turnover | Route to morocco-professional-income-tax |
 | No AMO membership | Condition of the option not met (Art. 41-II-B) | Enrol in AMO; confirm status with the tax office |
 | Sale of land or buildings used in the business | Real-estate gains rules, not the 20% CPU rate (Note circulaire n° 737) | Route to the real-estate gains guide |
 | Owner 65+, no pension, final closure in 2026 | 50% relief on intangible gains up to MAD 1,000,000 (Art. 31-V) | Check all four conditions |
@@ -265,7 +262,7 @@ Cases 1, 2 and 5 use invented client figures with the 2026 rates. Cases 3, 4, 6 
 
 ## When to refuse or refer
 
-- The activity is on the décret 2-08-124 list, or close to it (IT services, consulting, medical, legal, import or export): refuse CPU and route to ma-income-tax, or ask the tax office in writing.
+- The activity is on the décret 2-08-124 list, or close to it (IT services, consulting, medical, legal, import or export): refuse CPU and route to morocco-professional-income-tax, or ask the tax office in writing.
 - The trade could sit in two rows of the coefficient table with different coefficients: do not pick one. Check the category on the pre-filled SIMPL return or with the tax office.
 - Turnover is over a ceiling in the current or previous year, or the client is moving between regimes: refer. The two-year exit, the three-year re-entry and VAT registration interact.
 - The client is not an AMO member, or has AMO arrears: refer to the tax office and the AMO body before filing. The option condition and the droit may both be affected.
@@ -320,24 +317,6 @@ What the turnover return contains (Art. 82 quater-I):
 - Any sale or cessation: gains return within 45 days, land and buildings split out, retirement relief conditions checked.
 - Email address on file with the DGI. Purchase invoices kept.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-cpu` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-cpu. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-cpu` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-cpu. If neither is available, confirm every figure against the official source pages cited above before relying on it.

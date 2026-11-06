@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "PA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Panama Payroll Skill v0.1 (Tier 2 — research-verified, pending accountant sign-off)
@@ -33,7 +31,6 @@ metadata:
 | Labour / minimum-wage authority | Ministerio de Trabajo y Desarrollo Laboral (MITRADEL) |
 | Key legislation | Código Fiscal (ISR brackets, confirmed on DGI *Tarifa* page); **Ley No. 462 de 18 marzo 2025** (CSS reform, employer-rate phase-in); Cabinet Decree No. 221 of 18 Nov 1971 (décimo); Executive Decree No. 13 of 31 Dec 2025 (2026 minimum wage) |
 | Filing portals | SIPE (Sistema de Ingresos y Prestaciones Económicas -- CSS planilla, consolidates CSS + ISR); DGI e-Tax |
-| Validated by | Pending -- requires sign-off by a Panamanian Contador Público Autorizado (CPA) |
 | Skill version | 0.1 |
 
 > **Tier-2 note.** Figures below are research-verified. The load-bearing fully-verified figures are: the three ISR brackets (0 / 15 / 25% at B/.11,000 / B/.50,000), confirmed on the DGI *Tarifa* page and PwC; and the post-Law-462 CSS rates (employee 9.75%, employer 13.25% rising to 14.25% / 15.25%, educational 1.25% / 1.50%, **no wage ceiling**), confirmed by PwC and Fabrega Molino. Several specifics could NOT be obtained from a primary CSS/DGI page and are flagged inline as `[RESEARCH GAP — reviewer to confirm]`: the riesgos-profesionales rate-by-class table, the internal health/pension split of the 9.75%, the 7.25% décimo SS rate, exact late-payment penalty formulas, and the full 59-rate minimum-wage annex.
@@ -482,26 +479,6 @@ If you cannot identify the correct figures for a specific employee or period:
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Contador Público Autorizado in Panama) before implementation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

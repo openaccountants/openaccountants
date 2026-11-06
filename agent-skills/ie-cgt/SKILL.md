@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland Capital Gains Tax (CGT) for individuals, 2026
@@ -226,24 +223,6 @@ expected:
 | Revenue eBrief 034/26 (ROS extension 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-02 |
 
 Not yet confirmed: (1) whether the Finance (No. 2) Act 2026 is enacted with the 31% rate unchanged (Bill 98 had completed only Dáil First Stage on 26 October 2026); (2) s.601(3) and (5) were read as enacted, with no official consolidated TCA text to confirm later Finance Acts changed only the amount (Revenue TDM 19-07-01 confirms EUR 1,270 and subsection (5)); (3) the s.1084 surcharge figures come from Revenue's Form 11 guide and Notes for Guidance; no Revenue page was found applying them to a stand-alone Form CG1; (4) Revenue's rate table prints the 33% start date as 6 December 2021, read as a misprint of 6 December 2012 (Finance Act 2013 s.43); (5) the CGT indexation multipliers are not reproduced here; (6) no record retention period is stated.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

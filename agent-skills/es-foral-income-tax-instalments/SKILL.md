@@ -1,0 +1,128 @@
+---
+name: es-foral-income-tax-instalments
+description: "File and pay 2026 personal income tax instalments on business and professional income in Bizkaia, Álava, Gipuzkoa and Navarra. Covers who is exempt by the withholding share of receipts, the ordinary 5% of penultimate-year net income less withholding, fallback and start-year routes, primary-sector half-yearly payments, the 2026 territorial exemptions, the Navarra first and second modalities with single-rate bands and annualisation, the deadlines, Modelo 130 filing and authority proposals. Use for pagos fraccionados, Modelo 130 foral, Diputación Foral, Hacienda Foral de Navarra, autónomos instalments and quarterly payments in the foral territories. Load es-foral-income-tax for residence and the annual return. Split unchanged from es-foral-income-tax on 6 November 2026."
+license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+metadata:
+  source: openaccountants
+  openaccountants_url: "https://www.openaccountants.com/skills/es-foral-income-tax-instalments"
+  jurisdiction: "ES"
+  tax_year: "2026"
+  last_updated: "2026-11-06"
+---
+
+# Spain: foral personal-business income tax instalments, 2026
+
+This Guide holds part of [es-foral-income-tax](es-foral-income-tax.md), moved here unchanged on 6 November 2026 so that each Guide stays within the size the site can deliver. Built from the law; not yet approved by an accountant.
+
+## Who this applies to
+
+A sole trader or professional whose foral IRPF is Bizkaia, Álava, Gipuzkoa or Navarra under [es-foral-income-tax](es-foral-income-tax.md#who-this-applies-to) and who carries on an economic activity during 2026. The annual return, the scales and the credits stay in es-foral-income-tax.
+
+## Rates, bands and thresholds
+
+The instalment rates and bands are in the territorial rules below; the annual scales are in [es-foral-income-tax](es-foral-income-tax.md#rates-bands-and-thresholds).
+
+## The base
+
+The instalment base is penultimate-year (or current-year cumulative) net activity income as each territory defines it below; the annual computation is in [es-foral-income-tax](es-foral-income-tax.md#the-base).
+
+## Deadlines and filing
+
+### Ordinary foral personal-business instalments
+
+First establish the final competent administration and whether the particular activity is exempt from instalments. These are payments toward annual IRPF, not extra deductible business costs. **Penultimate year means 2024 for ordinary 2026 payments.** Keep actual withholding amounts separate from the share of receipts subject to withholding. Use the 2026 Q1 Basque exemption below only for that quarter, after identifying the ordinary route.
+
+**Bizkaia, [DF 47/2014 arts. 109–112](https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf).** Professionals are exempt for the relevant activity if at least 70% of its penultimate-year receipts were subject to withholding/payments on account. Agriculture/livestock/forestry has a separate 70% test excluding current/capital grants and indemnities. In the start year and following year use that payment period's receipt share instead. Ordinary established activities pay **5% of penultimate-year net activity income each quarter**, less 25% of the corresponding penultimate-year activity withholding/payments on account. If the penultimate year was the start year, annualise that year's net income. If penultimate net income was nonpositive, the general fallback is **0.5% of that year's sales/receipts less 25% of that year's activity withholding/payments on account**; wholesalers use **0.25% of that year's sales/receipts**. The current [specific authority explanation](https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?idregistro=900001002&IdEtiquetaBuscar=190&Idioma=CA&Tem_Codigo=7884&pant=listado) and [official form instructions](https://www.bizkaia.eus/fitxategiak/05/ogasuna/ereduak/Argitaratu/130CasInst.pdf) confirm these branches: the visually checked [form](https://www.bizkaia.eus/ogasuna/ereduak/descargar_documento.asp?Idioma=CA&val1=8AA405AF81D76CC992B77CD9B7C7112FCA1B1651B529D2961D5EFE269326793A) has general fallback boxes 15–18 with the 25% withholding deduction in box 17, while its wholesale branch uses boxes 19–20 without an additional deduction box. Do not invent the general branch's offset in the wholesale branch. In the start year and next year the general route is **20% of the current calendar quarter's accrued income less deductible expenses**, less that quarter's activity withholding/payments on account. It is not the State cumulative year-to-date method. Agriculture/livestock/forestry/fishing instead uses **2% of current-quarter sales/receipts**, excluding capital grants and indemnities, **less that quarter's withholding/payments on account**. The [current authority explanation](https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?idregistro=900001003&IdEtiquetaBuscar=190&Idioma=CA&Tem_Codigo=7884&pant=listado) and actual form boxes 05–08 implement this deduction; its box 07 is current-quarter withholding. An established ordinary business with 2024 net income 40,000 and withholding 800 pays `2,000 − 200 = 1,800` for an otherwise payable quarter; a start-year quarter with income 15,000, expenses 10,000 and withholding 100 gives `1,000 − 100 = 900`. With penultimate net income zero, receipts 100,000 and corresponding activity withholding 80, the ordinary fallback is `500 − 20 = 480`; the wholesale branch gives 250. Qualifying primary-sector quarterly receipts 10,000 with withholding 50 give `200 − 50 = 150`.
+
+Bizkaia's statutory filing/payment windows are **1–25 April, July, October and January**. If no amount is payable, art. 111 still requires a negative declaration unless a separate exemption removes the obligation. Higher voluntary percentages are allowed. Exceptional mismatch can support an art. 110.4 revision request to the tax service, which determines the revised base after its checks; a request is not a self-selected lower payment. Attribution-entity members pay in proportion to their participation only where the attributed income has the activity character required by art. 23. [Arts. 109–112](https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf).
+
+**Álava, [DF 40/2014 arts. 105–108](https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf).** Ordinary established activities pay **5% of penultimate-year net activity income each quarter**, less one quarter of that year's activity withholding/payments on account. The Diputación assesses and notifies these payments **of its own motion**. If the penultimate year's economic income came exclusively from agriculture/livestock/forestry/fishing, use **6% of penultimate-year net income each half year**, less half that year's activity withholding. In the start year, self-assess **5% of current-quarter net income** for the general route, or **6% of current-half-year net income** for exclusively qualifying primary activities, subtracting withholding on the income used. In the next year the Diputación's assessment uses the total payments made in the start year, annualised, as its reference. Do not carry Bizkaia's 20% start-year route or professional 70% exemption into Álava. A general start-year quarter with net income 5,000 and withholding 100 gives 150; established exclusive farming with penultimate net income 40,000 and withholding 800 gives `2,400 − 400 = 2,000` each half year.
+
+Álava's ordinary quarterly payment windows are **1 April–10 May, 1 July–10 August, 1 October–10 November and 1 January–10 February**; the semiannual route uses the July–August and January–February windows. Start-year self-assessment uses the approved provincial form; established taxpayers pay the notified assessment. An exceptional art. 106.5 revision request concerns one tax year, does not itself suspend payment and does not reopen payments already assessed; an approved adjustment is compensated against later payments or otherwise implemented by the authority. Attribution-entity members pay their profit shares, excluding civil-company income taxed under the ordinary corporate regime. [Arts. 105–108](https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf).
+
+**Gipuzkoa, [DF 33/2014 arts. 121–125](https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd).** The professional exemption requires **at least 50% of the preceding calendar year's** receipts subject to withholding, while agriculture/livestock/forestry requires **at least 70%**, excluding current/capital grants and indemnities. For a new activity use the current payment period's ratio. The ordinary payment is `max(0, 5% × penultimate-year net activity income excluding business-asset gains and losses − 25% × penultimate-year activity withholding/payments on account)`. The exclusion removes both gains and losses; do not subtract gains while retaining an asset loss in the reference base. Seasonal/start/change-of-activity cases, no activity or nonpositive net income in the penultimate year, or current-quarter turnover below the corresponding penultimate-year quarter can use **1% of current-quarter turnover**, less that quarter's withholding/payments on account under arts. 108/117. The same 1% turnover rate applies to wholesalers and qualifying tobacco retailers. Higher voluntary percentages are permitted. With penultimate net income 40,000 including a business-asset gain 10,000, no asset losses and withholding 800, the ordinary payment is `1,500 − 200 = 1,300`. An eligible exceptional quarter with turnover 20,000 and relevant withholding 50 gives 150.
+
+Gipuzkoa's statutory windows are **1 April–10 May, 1 July–10 August, 1 October–10 November and 1 January–10 February**. No amount payable means **no self-assessment**, unlike Bizkaia's negative-declaration rule. Art. 122 permits prescribed assessment-of-own-motion arrangements; attribution-entity members use their profit shares, excluding the specified civil-company corporate-tax income. Apply an actual official extension or approved procedure where relevant, rather than assuming all Basque deadlines coincide. [Arts. 121–125](https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd).
+
+**Navarra, [DF 174/1999 arts. 91–94](https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true).** Check the statutory exclusions first. Art. 91 excludes the agricultural/livestock/forestry and specified road-freight/removal activities in art. 78.4–6; road freight/removals under direct assessment normal/simplified do not inherit the special-regime withholding route. [IRPF DA 62](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1#da-63) expressly removes instalments for the named special-direct-assessment freight/removal income subject to its 1% withholding. [IRPF DA 44](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1#da-45) incorporates [corporate-law DA 3](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356#da-3): qualifying statutory entrepreneurs have no IRPF instalment obligation during their qualifying first five exercises. Establish small-enterprise status and continuous IAE registration, the single-customer/dependent-worker exclusions, prior-activity and continuity tests; a new IAE registration alone is not proof of qualification. **Separately apply for and obtain inscription in the Registro de personas o entidades emprendedoras under DA3.6. Benefits run only from the Registry inscription date**, within the maximum five tax periods counted from activity start; inscription does not restart that clock or establish automatic retrospective entitlement. An otherwise qualifying IAE-registered startup with no entry in that separate Registry cannot claim this entrepreneur instalment exemption. Check the actual inscription and activity-start dates. DA3.7 additionally requires the relevant tax and Social Security compliance and applies its specified final-conviction exclusions (disloyal administration, punishable insolvency, corporate offences, money laundering, terrorist financing, tax/Social Security offences, prevaricación, bribery, influence peddling, embezzlement, fraud/illegal exactions and urban-planning offences), the stated loss of public-aid eligibility and loss of capacity to contract with the Administration. Apply that provision to the actual person/entity and founding/directing arrangements, including intermediated arrangements; a Registry entry does not itself prove these continuing conditions. DA3.8 denies/excludes inscription and removes benefits where its conditions fail or Registry information is false/inexact. Source: the same [current Navarra CIT DA3.1–3/6–8](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356#da-3), incorporated through IRPF DA44.
+
+Navarra's **automatic first modality**, generally available from the third activity year, selects **one rate for the whole penultimate-year net business/professional income**, not marginal slices: 6% for 6,500–12,000; 12% for 12,000.01–24,000; 18% for 24,000.01–36,000; 24% above 36,000. Subtract that year's activity withholding/payments on account, then divide the result by four. Under [OF 40/2009 art. 2](https://www.lexnavarra.navarra.es/detalle.asp?r=29810), as amended by the actual [OF 48/2011 art. 1.2](https://bon.navarra.es/es/anuncio/-/texto/2011/75/3), no first-modality return is required if penultimate-year aggregate net income **does not exceed 6,500**, or if the quarterly result is **less than 100**. Exactly 100 does not meet the latter exemption. The official Lexnavarra page's 4,500 wording is historical, as its amendment note and the enacted 2011 text establish. With penultimate net income 20,000 and withholding 800, each ordinary quarterly payment is `(2,400 − 800) / 4 = 400`. With 10,000 and withholding 200, the result is exactly 100 and remains payable; withholding 200.04 gives 99.99 and meets the first-modality exemption.
+
+The **second modality** applies the selected single rate to current-year **cumulative** net business/professional income, then subtracts cumulative relevant withholding/payments on account and previous quarters' instalments. In the first three quarters, annualise the cumulative net income to select the rate; for an activity running from 1 January the annualisation factors are 4, 2 and 4/3, with factor 1 at year end. The rate applies to actual cumulative income, not the annualised figure. For a later start, art. 92 requires annualisation using the calendar-day period from commencement to 31 December; retain the actual start and period facts and use the approved form's calculation rather than replacing that period with a full 365-day activity. The start year and following year must use this modality unless a separate statutory exemption applies. An established taxpayer elects it expressly in the timely first-quarter return for all activities and all quarters of that year. Returns are required even at zero. For Q2 cumulative net income 10,000 from an activity running since 1 January, the annualised reference is 20,000 and the selected rate 12%; with cumulative withholding 200 and prior payments 300, the payment is `1,200 − 200 − 300 = 700`. [Arts. 91–94](https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true).
+
+Navarra's statutory deadlines are **20 April, 5 August, 20 October and 31 January**, subject to the actual nonbusiness-day rule/official extension. [OF 23/2026](https://bon.navarra.es/es/anuncio/-/texto/2026/63/0) confirms electronic Modelo 130 filing and the updated payment options; a State Modelo 130 submitted to AEAT is not a Navarra filing. A properly paid authority proposal has self-assessment effect under [IRPF art. 80.6](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1#a80); an unconfirmed proposal leaves the underlying self-assessment/payment obligation in place. If a second-modality taxpayer omits a later quarter, art. 92 permits provisional first-modality assessment; after notification, a late declaration triggers the stated regularisation only where its payable amount exceeds that assessment. Attribution-entity members pay their attributed activity-income shares. [Arts. 92–94](https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true), [art. 80.6](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1#a80).
+
+For business-income instalments, Bizkaia DFN1/2026 art3, Álava DNUF2/2026 art3 and Gipuzkoa DF-Norma2/2026 art3 remove the **Q1 2026** obligation. An otherwise valid voluntary payment does not become an undue payment refundable solely because of that exemption. This is a personal-business instalment measure, not a corporate instalment exemption ([Bizkaia](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-441_cas.pdf), [Álava](https://www.araba.eus/botha/Boletines/2026/045/2026_045_01089_C.pdf), [Gipuzkoa](https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf)).
+
+## Penalties and interest
+
+Late filing, late payment, interest and offences follow the territorial general tax laws set out in [es-foral-income-tax](es-foral-income-tax.md#penalties-and-interest).
+
+## Cross-border points
+
+Residence and the competent territory are settled in [es-foral-income-tax](es-foral-income-tax.md#cross-border-points).
+
+## Worked examples
+
+### The text's own controls: Bizkaia fallback, Gipuzkoa ordinary and Navarra first modality
+
+These are the controls stated under "Ordinary foral personal-business instalments", recomputed. **Bizkaia fallback:** penultimate net income zero, receipts **100,000**, withholding **80**: `0.5% × 100,000 − 25% × 80 = 480`. **Gipuzkoa ordinary:** penultimate net income **40,000** including a business-asset gain **10,000**, withholding **800**: `5% × 30,000 − 25% × 800 = 1,300`. **Navarra first modality:** penultimate net income **20,000** (12% band), withholding **800**: `(2,400 − 800) / 4 = 400`; with **10,000** (6% band) and withholding **200** the quarterly result is exactly **100** and remains payable.
+
+```oa-check
+name: Foral quarterly instalments, Bizkaia, Gipuzkoa and Navarra controls
+inputs:
+  bizkaia_receipts: 100000
+  bizkaia_withholding: 80
+  gipuzkoa_net: 40000
+  gipuzkoa_asset_gain: 10000
+  gipuzkoa_withholding: 800
+  navarra_net_a: 20000
+  navarra_withholding_a: 800
+  navarra_net_b: 10000
+  navarra_withholding_b: 200
+steps:
+  bizkaia_fallback: bizkaia_receipts * 0.005 - bizkaia_withholding * 0.25
+  gipuzkoa_payment: max(0, (gipuzkoa_net - gipuzkoa_asset_gain) * 0.05 - gipuzkoa_withholding * 0.25)
+  navarra_quarter_a: (navarra_net_a * 0.12 - navarra_withholding_a) / 4
+  navarra_quarter_b: (navarra_net_b * 0.06 - navarra_withholding_b) / 4
+expected:
+  bizkaia_fallback: 480.00
+  gipuzkoa_payment: 1300.00
+  navarra_quarter_a: 400.00
+  navarra_quarter_b: 100.00
+```
+
+## Ask the client first
+
+1. Which territory is competent for your IRPF, and when did the activity start?
+2. What were the penultimate-year net activity income, receipts and activity withholding, and did they include business-asset gains or losses?
+3. What share of the relevant receipts was subject to withholding?
+4. Is the activity agricultural, livestock, forestry, fishing, wholesale or special-regime road freight?
+
+
+## Sources
+
+| Official source | Provisions read | Read on |
+|---|---|---|
+|[Navarra DFL4/2008, current revision20April2026](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) |Current residence/base/scales/credits/settlement and withholding allocation provisions cited above |2026-10-27 |
+|[Navarra DF174/1999, annotated current regulation with historical versions distinguished](https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true) |Current residence/base/scales/credits/settlement and withholding allocation provisions cited above |2026-10-27 |
+|[BR: official housing/IRPF source](https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf) |Current landlord/home/advance method or expressly preserved historical provision cited above |2026-10-27 |
+|[AR: official housing/IRPF source](https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf) |Current landlord/home/advance method or expressly preserved historical provision cited above |2026-10-27 |
+|[GR: official housing/IRPF source](https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd) |Current landlord/home/advance method or expressly preserved historical provision cited above |2026-10-27 |
+|[P: official housing/IRPF source](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) |Current landlord/home/advance method or expressly preserved historical provision cited above |2026-10-27 |
+|[R: official housing/IRPF source](https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true) |Current landlord/home/advance method or expressly preserved historical provision cited above |2026-10-27 |
+| [Bizkaia DFN1/2026 art.3](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/04/20/I-441_cas.pdf) | Q1 2026 IRPF business-instalment exemption and voluntary-payment treatment | 2026-10-27 |
+| [Álava DNUF2/2026 art.3](https://www.araba.eus/botha/Boletines/2026/045/2026_045_01089_C.pdf) | Q1 2026 IRPF business-instalment exemption and voluntary-payment treatment | 2026-10-27 |
+| [Gipuzkoa DFN2/2026 art.3](https://www.gipuzkoa.eus/documents/2456431/8.813641E7/DF-Norma%202-2026%20medidas%20para%20mitigar%20Crisis%20Oriente%20Medio.pdf/925d814a-7f73-6e58-f249-a1437b1d76bf) | Q1 2026 IRPF business-instalment exemption and voluntary-payment treatment | 2026-10-27 |
+| [Navarra LF26/2016 art.67](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356) | Credit pools, pre-activity exception, ordering and15-year carry incorporated by PIT arts.62.3/64.2 | 2026-10-27 |
+| [B DF47/2014](https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf), [A DF40/2014](https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf), [G DF33/2014](https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd) | Entire operative instalment chapters B109–112/A105–108/G121–125: obligations, reference years, computations, offsets and filing | 2026-10-28 |
+| [Navarra regulation](https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true), [IRPF law](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1), [OF40/2009](https://www.lexnavarra.navarra.es/detalle.asp?r=29810), [2011 enacted amendment](https://bon.navarra.es/es/anuncio/-/texto/2011/75/3), [2026 enacted amendment](https://bon.navarra.es/es/anuncio/-/texto/2026/63/0), [entrepreneur DA3](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356) | R78/91–94, L80.6/DA44/DA62, OF40art2 with enacted6500 correction, current electronic filing and actual entrepreneur instalment exemption | 2026-10-28 |
+| [Bizkaia official instructions](https://www.bizkaia.eus/fitxategiak/05/ogasuna/ereduak/Argitaratu/130CasInst.pdf), [actual form](https://www.bizkaia.eus/ogasuna/ereduak/descargar_documento.asp?Idioma=CA&val1=8AA405AF81D76CC992B77CD9B7C7112FCA1B1651B529D2961D5EFE269326793A), [nonpositive-reference explanation](https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?idregistro=900001002&IdEtiquetaBuscar=190&Idioma=CA&Tem_Codigo=7884&pant=listado), [primary-sector explanation](https://www.bizkaia.eus/ogasuna/faq/faq_detalle.asp?idregistro=900001003&IdEtiquetaBuscar=190&Idioma=CA&Tem_Codigo=7884&pant=listado) | Both instruction pages, actual form page1 visually checked and both current FAQ answers: withholding matching for historical-receipts and primary-sector branches; FAQs expressly nonbinding guidance under unchanged current DF47/2014 | 2026-10-28 |
+
+**Additional payment boundaries still requiring confirmation:** Navarra exact partial-start annualisation/form rounding where the selected band changes at the boundary; period-specific direct-debit cutoffs and authority adjustments not documented in the taxpayer record. The ordinary positive-reference, start-year general, territorial exemption, statutory window and full-year Navarra methods above are supplied.
+
+**Not yet confirmed:** 2026-income annual campaign deadlines not yet published. No accountant attestation is claimed.
+
+## Today's figures and who stands behind this skill
+
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-foral-income-tax-instalments` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-foral-income-tax-instalments. If neither is available, confirm every figure against the official source pages cited above before relying on it.

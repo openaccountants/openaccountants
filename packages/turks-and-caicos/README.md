@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `tc-hotel-tourism-tax.md`
-4. `tc-national-health-insurance.md`
-5. `tc-national-insurance.md`
+3. `README.md`
+4. `tc-hotel-tourism-tax.md`
+5. `tc-national-health-insurance.md`
+6. `tc-national-insurance.md`
 
 ## How to use
 

@@ -7,16 +7,14 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/croatia-income-tax"
   jurisdiction: "HR"
   tax_year: "2026"
-  last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-30"
 ---
 
 # Croatia: personal income tax (2026)
 
 This skill covers personal income tax in Croatia for 2026. The law is the Income Tax Act (Zakon o porezu na dohodak, "ZPD"), Narodne novine 115/16, 106/18, 121/19, 32/20, 138/20, 151/22, 114/23 and 152/24. The Tax Administration (Porezna uprava) keeps a consolidated text in force from 1 January 2025. The authority is the Tax Administration of the Ministry of Finance. The currency is the euro. The tax year is the calendar year (art. 7).
 
-Detail lives in the sibling skills. Read [hr-cross-border](hr-cross-border.md) for residence tie-breakers, non-residents, treaty forms and withholding on payments abroad, [hr-corporate-income-tax](hr-corporate-income-tax.md) for companies and for an obrt that opts into profit tax, and [hr-transfer-pricing](hr-transfer-pricing.md) for related-party pricing. Read [croatia-payroll](croatia-payroll.md) for the full gross-to-net and the JOPPD report, [croatia-social-contributions](croatia-social-contributions.md) for contributions and [croatia-vat-return](croatia-vat-return.md) for VAT; those three still carry 2025 figures.
+Detail lives in the sibling skills. Read [hr-cross-border](hr-cross-border.md) for residence tie-breakers, non-residents, treaty forms and withholding on payments abroad, [hr-corporate-income-tax](hr-corporate-income-tax.md) for companies and for an obrt that opts into profit tax, and [hr-transfer-pricing](hr-transfer-pricing.md) for related-party pricing. Read [croatia-payroll](croatia-payroll.md) for the full gross-to-net and the JOPPD report, [croatia-social-contributions](croatia-social-contributions.md) for contributions and [croatia-vat-return](croatia-vat-return.md) for VAT.
 
 **What changed for 2026.** The Act itself did not change for 2026. The last amendment, NN 152/2024, took effect on 1 January 2025. It raised the basic allowance from EUR 560 to EUR 600 a month, moved the band limit from EUR 50,400 to EUR 60,000 a year (EUR 5,000 a month for withholding), narrowed the local rate ranges, added the five-year relief for returning emigrants, and tightened the rules on property sales and rent. What does change in 2026:
 
@@ -250,24 +248,6 @@ Not yet confirmed: the late payment interest rate on tax debts for 2026 (General
 
 > Contributed by Michael Cutajar.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `croatia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/croatia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `croatia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/croatia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

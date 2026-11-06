@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "LT"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Lithuania: personal income tax for residents (2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The law is the Law on Personal Income Tax (Gyventojų pajamų mokesčio įstatymas, No. IX-1007, "GPMĮ"), read in the consolidated version in force from 11 June 2026 to 31 December 2026 on e-tar.lt, together with the State Tax Inspectorate's (VMI) commentary of 19 October 2026. Penalties and interest come from the Law on Tax Administration (No. IX-2112, "MAĮ"). The tax year is the calendar year (GPMĮ article 7). Currency: euro.
 
@@ -193,24 +189,6 @@ expected:
 Not yet confirmed: the fine for filing the annual return late (Code of Administrative Offences, not read); whether individual activity needs advance tax payments during the year; crypto-asset rules beyond the general gain rules above; Sodra figures for the self-employed (lt-payroll-social still carries 2025 figures).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

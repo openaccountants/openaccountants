@@ -4,10 +4,9 @@ description: "Source-cited draft: personal income tax for Bhutan (tax year 2025)
 jurisdiction: BT
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Bhutan Personal Income Tax
@@ -28,21 +27,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Deduction — housing loan interest** — Interest on a housing loan deductible against rental income per the Act ((approx — confirm))  _(Income Tax Act of the Kingdom of Bhutan 2001)_
 - **Tax residence / liability** — Taxation is primarily source-based; Bhutanese-source personal income is taxable regardless of citizenship ((approx — confirm residence definition))  _(Income Tax Act of the Kingdom of Bhutan 2001)_
 - **PIT filing and payment deadline** — By 31 March following the income year (income year 2025 filed by 31 March 2026) ((approx — confirm exact date in DRC notification))  _(Income Tax Act of the Kingdom of Bhutan 2001 (https://www.drc.gov.bt/notification-tax-filing-for-income-year-2025/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

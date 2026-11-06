@@ -1,15 +1,14 @@
 ---
 name: it-irap
 description: "Italian regional tax on productive activities (IRAP) for tax year 2026. Covers who pays (companies, partnerships, professional associations, entities, public bodies) and who does not (individual traders, professionals and forfettari since 2022), the 3.9% standard rate and the 4.2%, 4.65% and 5.9% special rates, regional variation up to 0.92 points, the 2026 sector and bank surcharges, the base for companies (art. 5), partnerships (art. 5-bis) and professional associations (art. 8), the staff deductions and the flat deduction for small bases, the IRAP return, saldo and acconti, penalties, the multi-region split and the IRAP deduction in income tax. Trigger on: IRAP, imposta regionale sulle attività produttive, valore della produzione netta, dichiarazione IRAP, acconto IRAP, IRAP studio associato. Out of scope: IRES (it-ires-corporate-tax), individual income tax (it-income-tax, it-regime-forfettario), payroll (italy-payroll), cross-border hub (it-cross-border)."
-version: 0.3
+version: 0.5
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-27
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Italian regional tax on productive activities (IRAP)
@@ -36,14 +35,14 @@ IRAP is a regional tax on the net value of production of an organised activity c
 | Energy-sector surcharge on the art. 16(1) and (1-bis) rates, main activity in an ATECO code of Table 1 to D.L. 21/2026 | +2 points | 2026 and 2027 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-02-20;21~art3 |
 | Bank and insurer surcharge (art. 16(1-bis)(b) and (c)), except art. 6(2), (3), (4) and (9) entities | +2 points | 2026, 2027, 2028 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 (art. 1(74)) |
 | Detrazione for banks and insurers, only up to the extra tax the surcharge causes | EUR 90,000 | 2027 and 2028 | same law, art. 1(74) |
-| Fixed-term staff deduction, per worker, up to 5 workers, if positive components do not exceed EUR 400,000 (art. 11(4-bis.1)) | EUR 1,850 | 2025, used for 2026 | IRAP instructions above |
+| Fixed-term staff deduction, per worker, up to 5 workers, if positive components do not exceed EUR 400,000 (art. 11(4-bis.1)) | EUR 1,850 | 2025, used for 2026 | IRAP instructions above, https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
 | Seasonal workers, 120+ days in two years, from the second contract (art. 11(4-octies)) | 70% of cost | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art11 |
-| Flat deduction, base up to EUR 180,759.91 (companies / partnerships and associations) | EUR 8,000 / EUR 13,000 | 2025, used for 2026 | IRAP instructions above |
-| Base over 180,759.91 up to 180,839.91 | EUR 6,000 / EUR 9,750 | 2025, used for 2026 | IRAP instructions above |
-| Base over 180,839.91 up to 180,919.91 | EUR 4,000 / EUR 6,500 | 2025, used for 2026 | IRAP instructions above |
-| Base over 180,919.91 up to 180,999.91 | EUR 2,000 / EUR 3,250 | 2025, used for 2026 | IRAP instructions above |
+| Flat deduction, base up to EUR 180,759.91 (companies / partnerships and associations) | EUR 8,000 / EUR 13,000 | 2025, used for 2026 | IRAP instructions above, https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
+| Base over 180,759.91 up to 180,839.91 | EUR 6,000 / EUR 9,750 | 2025, used for 2026 | IRAP instructions above, https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
+| Base over 180,839.91 up to 180,919.91 | EUR 4,000 / EUR 6,500 | 2025, used for 2026 | IRAP instructions above, https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
+| Base over 180,919.91 up to 180,999.91 | EUR 2,000 / EUR 3,250 | 2025, used for 2026 | IRAP instructions above, https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
 | IRAP deductible for IRES and IRPEF, flat share linked to interest | 10% of IRAP | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2008-11-29;185~art6 |
-| Minimum per region: no tax due or refunded if not more than | EUR 10.33 | 2025, used for 2026 | IRAP instructions above |
+| Minimum per region: no tax due or refunded if not more than | EUR 10.33 | 2025, used for 2026 | IRAP instructions above, https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
 
 Do not read the rates from the Normattiva current view of art. 16: it still prints a 2014 cut that was repealed back to its start. The rate for a given region, sector and year is published by the Dipartimento delle Finanze ("Fiscalità regionale e locale, IRAP"). Never assume the standard rate holds in a region. Since 2013 an ordinary-statute region may cut the rate to zero; regions under a health-deficit plan may have automatic increases.
 
@@ -158,7 +157,7 @@ These groups follow their own base rules or a separate regime. Do not compute th
 
 | Source | URL | Read on |
 |---|---|---|
-| Agenzia delle Entrate, IRAP 2026 return instructions (tax year 2025) | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 | 2026-10-27 |
+| Agenzia delle Entrate, IRAP 2026 return instructions (tax year 2025) | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 | 2026-10-31 |
 | D.Lgs. 446/1997 art. 3, with note 70 (Law 234/2021 art. 1(8)) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art3 | 2026-10-27 |
 | D.Lgs. 446/1997 art. 5-bis | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art5bis | 2026-10-27 |
 | D.Lgs. 446/1997 art. 8 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art8 | 2026-10-27 |
@@ -170,24 +169,6 @@ These groups follow their own base rules or a separate regime. Do not compute th
 | D.Lgs. 471/1997 art. 1 and 13 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471 | 2026-10-24 |
 | D.Lgs. 472/1997 art. 13 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13 | 2026-10-24 |
 
-Not yet confirmed: the 2026 IRAP return instructions (figures above are the tax year 2025 ones carried forward); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes; the IRAP treatment of group reorganisations (mergers, demergers, contributions), which is not covered here: refer.
+Not yet confirmed: the IRAP instructions for tax year 2026 (the 2027 return edition; the published IRAP 2026 instructions cited above cover tax year 2025); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes; the IRAP treatment of group reorganisations (mergers, demergers, contributions), which is not covered here: refer.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

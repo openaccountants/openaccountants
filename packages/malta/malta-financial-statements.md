@@ -1,21 +1,21 @@
 ---
 name: malta-financial-statements
 description: Use this skill when preparing, reviewing, or advising on annual financial statements for a Maltese company. Trigger on phrases like "annual accounts Malta", "financial statements Malta", "Companies Act filing", "MBR filing", "balance sheet format", "profit and loss format", "directors' report", "audit exemption Malta", "small company Malta", "abridged accounts", "year-end adjustments", or any question about preparing statutory accounts under the Malta Companies Act (Cap. 386). Covers reporting frameworks, size thresholds, required statements, P&L and balance sheet formats, notes disclosures, filing deadlines, and audit requirements.
-version: 1.0
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-11-04
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: financial-statements
 ---
 
 # Malta statutory financial statements: framework, size tests, audit, approval and filing with the Registrar
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-financial-statements.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 ## Scope ([Companies Act, Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 
@@ -26,11 +26,11 @@ This skill covers the annual accounts that a company registered in Malta under t
 - the audit requirement under the Companies Act and the separate audit requirement for income tax under article 19(4)(a) of the Income Tax Management Act, as relaxed by the Audit Exemption Rules 2025;
 - the directors' report, signing, laying before the general meeting, delivery to the Registrar, and the penalties for default.
 
-**Year.** Malta companies may use any accounting reference date. Figures are for accounting periods reported in tax year 2026 (calendar 2026), using the law as consolidated on legislation.mt at 28 April 2026. Most companies with a 31 December year-end are now finishing their **2025** accounts: see Case 1 and "When the higher limits started".
+**Year.** Malta companies may use any accounting reference date. Figures are for accounting periods reported in tax year 2026 (calendar 2026), using the statutory text and the period-start instruction identified below. Most companies with a 31 December year-end are now finishing their **2025** accounts: see Case 1 and "When the higher limits started".
 
-**Not covered.** Corporate income tax computations, tax rates, refunds and the company tax return: see the **malta-income-tax** skill. VAT: see the **malta-vat-return** skill. Banks, financial institutions and insurers follow their own sector rules for the form and content of their accounts (article 168); insurance-related entities may have their own principles ([S.L. 281.07](https://legislation.mt/getpdf/695d0bd4d2130a2e4cdb89d2)). Investment companies with variable share capital (SICAVs) use the Fifth Schedule format (article 169). Partnerships are not covered. Corporate sustainability reporting (CSRD) is flagged only: large undertakings and listed entities must take specialist advice.
+**Not covered.** Corporate income tax computations, tax rates, refunds and the company tax return: see the **mt-corporate-tax** skill. VAT: see the **malta-vat-return** skill. Banks, financial institutions and insurers follow their own sector rules for the form and content of their accounts (article 168); insurance-related entities may have their own principles ([S.L. 281.07](https://legislation.mt/getpdf/695d0bd4d2130a2e4cdb89d2)). Investment companies with variable share capital (SICAVs) use the Fifth Schedule format (article 169). Partnerships are not covered. Corporate sustainability reporting (CSRD) is flagged only: large undertakings and listed entities must take specialist advice.
 
-**Sources.** Everything below is from the Laws of Malta. The Malta Tax and Customs Administration (MTCA) website and the MBR website could not be read for this skill. Anything that depends on them (review-report guidelines, portal steps, current MBR fees in practice) is marked **check**.
+**Sources.** The statutory text is supplemented by the MBR commencement instruction, its annual-accounts filing notice and MTCA review-report guidelines, read on 4 November 2026 and recorded in the correction ledger. Detailed portal steps, professional signing eligibility and actual fee collection remain outside the verified scope.
 
 ## Ask the client first
 
@@ -57,7 +57,7 @@ This skill covers the annual accounts that a company registered in Malta under t
 8. **Audit (if required),** then send copies to members and debenture holders at least fourteen days before the general meeting. ([Cap. 386 art. 179 and 180](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 9. **Lay the accounts** before the general meeting for approval: within ten months of the year-end for a private company, seven months for a public company. ([Cap. 386 art. 181 and 182](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 10. **Deliver to the Registrar** within forty-two days from the end of that laying period, with any exemption declaration. File the annual return on its own cycle. ([Cap. 386 art. 183 and 184](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
-11. **Hand over to tax.** The audited (or reviewed, or exempt) accounts support the company tax return. See the **malta-income-tax** skill.
+11. **Hand over to tax.** The audited (or reviewed, or exempt) accounts support the company tax return. See the **mt-corporate-tax** skill.
 
 Order matters. If you choose the framework before testing size, a company may be put on IFRS or GAPSME wrongly. If you drop the audit because of the tax rules, you may breach the Companies Act, which has its own, different test.
 
@@ -74,13 +74,13 @@ A company meets a set of limits when, on its balance sheet date, it stays at or 
 | Small group (art. 185(5)), net | €5,000,000 | €10,000,000 | 50 | Parent can be small; parent exempt from consolidated accounts (art. 173) |
 | Small group (art. 185(5)), gross | €6,000,000 | €12,000,000 | 50 | Same; the group may use either net or gross figures |
 
-- **When the higher limits started.** The €5,000,000 and €10,000,000 small-company limits, and the higher small-group limits, were substituted by article 26 of [Act I of 2026](https://legislation.mt/getpdf/6a183289becdc821c019724f). [L.N. 61 of 2026](https://legislation.mt/getpdf/69dce8d06fe5fd3994d17860) brought article 26 into force on the date it was published, which was 20 March 2026 ([Gazette No. 21,607](https://legislation.mt/eli/ln/2026/61/eng)). The notice has no transitional rule tied to financial years. So:
-  - accounts for balance sheet dates on or after 20 March 2026 are tested against the new limits;
-  - for earlier balance sheet dates (including 31 December 2025), the law does not say whether accounts approved after 20 March 2026 use the new or the previous limits. Where the answer differs (see Case 2), the safe course is to prepare the directors' report, or to take advice.
+- **When the higher limits started.** The €5,000,000 and €10,000,000 small-company limits, and the higher small-group limits, were substituted by article 26 of [Act I of 2026](https://legislation.mt/getpdf/6a183289becdc821c019724f). [L.N. 61 of 2026](https://legislation.mt/getpdf/69dce8d06fe5fd3994d17860) brought article 26 into force on the date it was published, which was 20 March 2026 ([Gazette No. 21,607](https://legislation.mt/eli/ln/2026/61/eng)). The commencement notice itself has no financial-year transition. The MBR instruction specifies its application as follows:
+  - the [MBR commencement instruction](https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1) applies the higher limits to financial reporting periods **starting on or after 20 March 2026** and prohibits early or retroactive application;
+  - a calendar-year period starting 1 January 2026 therefore uses the previous limits. Do not substitute its balance-sheet or approval date for the period-start date. The instruction is the Registrar's stated application of the commencement; do not override it by inference from the consolidated figures.
 
 Previous limits (article 185 before Act I of 2026 art. 26), from the [consolidated Cap. 386 at 16 December 2025](https://legislation.mt/getpdf/695277d8cc8c701d50c749db):
 
-| Test (before 20 March 2026) | Balance sheet total | Net turnover | Average employees |
+| Test (reporting periods starting before 20 March 2026) | Balance sheet total | Net turnover | Average employees |
 | --- | --- | --- | --- |
 | Small company (art. 185(1)) | €4,000,000 | €8,000,000 | 50 |
 | Small group (art. 185(5)), net | €4,000,000 | €8,000,000 | 50 |
@@ -154,18 +154,18 @@ The micro limits in article 185(2) (€46,600, €93,000, 2 employees) did not c
   - **Rule 3 (start-up waiver):** no auditor's report for the first two accounting periods of a newly registered company whose sole shareholders are individuals with an MQF level 3 (or higher) qualification who set up the company within three years of qualifying, and whose turnover does not exceed €80,000 (pro rata for a period that is not twelve months). ([L.N. 139 of 2025](https://legislation.mt/getpdf/688b3e0cbed0ef08a863ffa1))
   - **Rule 4:** if such a company has an audit anyway, it may deduct 120% of the audit cost, up to €700 for each accounting period. ([L.N. 139 of 2025](https://legislation.mt/getpdf/688b3e0cbed0ef08a863ffa1))
   - **Rule 5:** both reliefs end at once if a shareholder change means the shareholders are no longer all qualifying individuals.
-- **Review report.** The Rules give "review report" the meaning in guidelines published on the Commissioner for Tax and Customs' website. That site could not be read for this skill: **check** the current MTCA guidelines for who may sign the review report and what it must contain.
+- **Review report.** The [MTCA guidelines](https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/audit-exemption-rules---guidelines.pdf?sfvrsn=14aab6d_1) define a review engagement under ISRE 2400 (Revised), including subsequent amendments and interpretations issued or adopted by IAASB. The guidelines do not replace professional eligibility rules; confirm the proposed signer is authorised for that engagement.
 - **Watch the mismatch.** The start-up waiver in rule 3 is a tax rule only. Unless the company also meets the article 185(2) test, the Companies Act still requires an audit.
 
 ## Year-end adjustments checklist ([GAPSME Schedule](https://legislation.mt/getpdf/6641e0860419230b5c3872a1))
 
 Use the framework the company reports under: the GAPSME Section is named, and IFRS reporters use the matching standard.
 
-- Depreciation (GAPSME Section 7). Tax capital allowances are separate: see **malta-income-tax**.
+- Depreciation (GAPSME Section 7). Tax capital allowances are separate: see **mt-corporate-tax**.
 - Accruals and prepayments: audit or review fees, bonuses, utilities; insurance, rent and licences spanning the year-end.
 - Provisions and contingencies (Section 17); receivables impairment (Section 9; IFRS 9 expected credit losses for IFRS reporters).
 - Inventories at the lower of cost and net realisable value (Section 15).
-- Current and deferred tax (Section 16). The company rate is 35% (Income Tax Act art. 56(6), [Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
+- Current and deferred tax (Section 16). The ordinary company rate is 35% (Income Tax Act art. 56(6), [Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)); elections and tax-account conditions are in **mt-corporate-tax**.
 - Foreign currency: monetary items at the closing rate (Section 18).
 - Leases: GAPSME finance or operating lease (Section 14); IFRS 16 right-of-use model for IFRS reporters of any size.
 - Revenue cut-off (Section 6), investment property (Section 8), accrued leave and bonuses, post balance sheet events (Section 19).
@@ -194,9 +194,9 @@ All amounts are illustrations. Each company is private, not a PIE, not a parent,
 - Tax: rule 6(1)(a) of L.N. 139 of 2025 applies (two of three), so the company can satisfy the tax audit-report requirement with a **review report** instead of an audit. ([L.N. 139 of 2025](https://legislation.mt/getpdf/688b3e0cbed0ef08a863ffa1))
 - Deadlines: lay before the general meeting by 31 October 2026; deliver to the Registrar by 12 December 2026 (42 days after 31 October).
 
-**Case 2: small under article 185, medium-sized under GAPSME.** Net turnover €9,000,000; balance sheet total €4,500,000; 30 employees, the same in 2024 and 2025. ([Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
-- Article 185(1): turnover under €10,000,000, total assets under €5,000,000, employees under 50: **small** under the limits in force from 20 March 2026, so no directors' report is required for a balance sheet date on or after that day.
-- Under the previous limits (€4,000,000 and €8,000,000), it exceeds both, so it is **not small** and must prepare and deliver a directors' report. For a 31 December 2025 balance sheet date, where the law is unclear, prepare the directors' report.
+**Case 2: comparing the old and new article 185 limits with GAPSME.** Net turnover €9,000,000; balance sheet total €4,500,000; 30 employees, the same in 2024 and 2025. ([Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
+- Article 185(1): turnover under €10,000,000, total assets under €5,000,000, employees under 50: **small** under the limits in force from 20 March 2026, so the higher-limit exemption is used only for a financial reporting period starting on or after that day, under MBR's instruction.
+- Under the previous limits (€4,000,000 and €8,000,000), it exceeds both, so it is **not small** and must prepare and deliver a directors' report. For the calendar-year 2025 and 2026 periods, use those previous limits under MBR's period-start instruction and prepare the directors' report.
 - Not micro, so a **full audit** is required.
 - GAPSME: revenue over €8,000,000 and total assets over €4,000,000 for two years, so not a small entity; within €40,000,000 and €20,000,000, so a **medium-sized entity**. GAPSME accounts must include a statement of changes in equity and a statement of cash flows. ([S.L. 281.05 reg. 5](https://legislation.mt/getpdf/6641e0860419230b5c3872a1))
 
@@ -213,7 +213,7 @@ All amounts are illustrations. Each company is private, not a PIE, not a parent,
 **Case 5: late delivery.** Case 1's company delivers its 2025 accounts 60 days after 12 December 2026.
 - Maximum administrative penalty under article 183(6): €2,329, plus €46 for each day the default continues. Maximum = €2,329 + €46 × 60 = €2,329 + €2,760 = €5,089. The Registrar may impose less. The company is jointly and severally liable with its officers, and recovery lapses after five years. ([Cap. 386 art. 427 and Eleventh Schedule](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 
-**Case 6: parent company and the group test.** A parent's own figures are tiny. Its group, consolidated, has net turnover €11,000,000 net and €11,800,000 gross; balance sheet total €5,500,000 net and €5,900,000 gross; 40 employees. ([Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
+**Case 6: parent company and the group test.** For this case only, assume a financial reporting period starting on or after 20 March 2026, so the higher limits apply; the default 2025-period assumption above does not apply. A parent's own figures are tiny. Its group, consolidated, has net turnover €11,000,000 net and €11,800,000 gross; balance sheet total €5,500,000 net and €5,900,000 gross; 40 employees. ([Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 - Net basis: turnover over €10,000,000 and total assets over €5,000,000: fails. Gross basis: turnover under €12,000,000, total assets under €6,000,000, employees under 50: passes. Either basis may be used, so the group is a **small group** (art. 185(5) and (7)).
 - The parent can be treated as small, and it is exempt from preparing consolidated accounts under article 173, unless a group company is listed or a PIE.
 
@@ -224,10 +224,10 @@ All amounts are illustrations. Each company is private, not a PIE, not a parent,
 - **Sustainability reporting (CSRD):** large undertakings and PIEs may have sustainability reporting and assurance duties under S.L. 386.31. This skill does not cover them. Refer.
 - **Merchant Shipping Act companies:** the tax audit waiver follows rule 7 of L.N. 139 of 2025 and S.L. 234.42. Refer.
 - **Groups with overseas parents or subsidiaries** claiming the article 174 exemption: the conditions are strict (equivalence, audit of the larger group's accounts, filing them in Malta). Refer unless you have checked every condition.
-- **Pre-20 March 2026 balance sheet dates:** if small-company status turns on old versus new article 185 limits, say that the law is unclear and recommend preparing the directors' report, or refer. ([L.N. 61 of 2026](https://legislation.mt/getpdf/69dce8d06fe5fd3994d17860))
-- **Review-report content** for tax: the MTCA guidelines could not be read. Do not describe the standard as settled; tell the client to check the current guidelines.
+- **Periods starting before 20 March 2026:** use the previous article 185 limits under the MBR instruction; do not early-adopt the higher limits. ([L.N. 61 of 2026](https://legislation.mt/getpdf/69dce8d06fe5fd3994d17860))
+- **Review engagements** for tax: apply the MTCA-defined ISRE 2400 (Revised) standard and refer professional signing eligibility or engagement-specific questions not resolved by that definition.
 - **Refuse** to present accounts as exempt from audit, or to sign or date documents for directors, where the size test is not met or the records do not support it. Directors who approve non-compliant accounts face a penalty (art. 176(4)). Failing to keep proper records is a criminal offence with a fine of up to €11,646 (art. 163(6)). ([Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
-- **Tax questions** (chargeable income, rates, refunds, the tax return deadline): route to the **malta-income-tax** skill. **VAT**: route to the **malta-vat-return** skill.
+- **Tax questions** (chargeable income, rates, refunds, the tax return deadline): route to the **mt-corporate-tax** skill. **VAT**: route to the **malta-vat-return** skill.
 
 ## Filing and payment ([Companies Act art. 180 to 184](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 
@@ -244,7 +244,7 @@ All amounts are illustrations. Each company is private, not a PIE, not a parent,
 | Registering annual accounts | The Fees Regulations list no separate fee; **check** the MBR for current practice | [S.L. 386.03](https://legislation.mt/getpdf/6022592ebc8272018c0ede95) |
 | Keep accounting records | Ten years (Companies Act); nine years for tax records | [Cap. 386 art. 163(5)](https://legislation.mt/getpdf/6a1836349844fb1e280ec744); [ITMA art. 19(5)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b) |
 
-- **How to file.** Electronic copies must be authenticated under article 82. The MBR portal steps could not be checked for this skill: **check** the MBR's current online filing instructions.
+- **How to file.** Electronic copies must be authenticated under article 82. The [MBR notice](https://www.mbr.mt/post/notice-to-the-public-submission-of-financial-statements-to-the-registrar), read 4 November 2026, confirms BAROS submission by 12 December 2026 for 31 December 2025 year ends. This does not verify every portal field or attachment.
 - **Pending wording change.** Act XVIII of 2025 rewrites article 183(2) so that the second relief refers to a private company "in terms of the provisions of article 211" rather than an "exempt company". That article (25(b)) is not yet in force: the only part of article 25 brought into force is 25(a), by [L.N. 110 of 2026](https://legislation.mt/getpdf/6a183871becdc821c019727f), and the consolidated Act at 28 April 2026 still shows the "exempt company" wording. Apply the consolidated text until a further commencement notice. ([Act XVIII of 2025](https://legislation.mt/getpdf/6a1837c7becdc821c0197266))
 
 ### Penalties (maximum administrative penalties, [Cap. 386 Eleventh Schedule](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
@@ -266,28 +266,60 @@ These are maximums set by the Registrar (art. 427(1)). The penalty is due on the
 
 ## Completion checklist ([Companies Act, Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 
-- [ ] Article 185 and GAPSME size tests run for this and the previous balance sheet date, figures kept on file, and old versus new limits considered for dates before 20 March 2026.
+- [ ] Article 185 and GAPSME size tests run for this and the previous balance sheet date, figures kept on file, and the period-start transition applied under the MBR instruction.
 - [ ] Board resolution on file if IFRS is chosen; comparatives on the same framework.
 - [ ] Small-company exemption used: own-share information put in the notes.
 - [ ] Audit decision recorded twice: Companies Act, and L.N. 139 of 2025 for tax (audit, review report, or none).
 - [ ] Filing-exemption declaration and any translations delivered with the accounts.
 - [ ] Annual return filed within forty-two days of the registration anniversary.
-- [ ] Accounts handed to the tax preparer (see **malta-income-tax**).
+- [ ] Accounts handed to the tax preparer (see **mt-corporate-tax**).
 
-<!-- openaccountants-cta-block -->
+## Executable checks of the worked cases
 
----
+These checks verify arithmetic in Cases 3 and 5, not size-test eligibility, signing authority or whether the Registrar imposes the maximum.
 
-## Talk to a verified accountant
+```oa-check
+name: Qualifying ten-month start-up turnover cap and capped audit deduction
+inputs:
+  months: 10
+  annual_turnover_cap: 80000
+  turnover: 50000
+  audit_fee: 1000
+steps:
+  - period_cap: round(annual_turnover_cap * months / 12, 2)
+  - headroom: period_cap - turnover
+  - audit_deduction: min(audit_fee * 1.20, 700)
+expected:
+  period_cap: 66666.67
+  headroom: 16666.67
+  audit_deduction: 700
+```
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+```oa-check
+name: Sixty-day late accounts maximum administrative penalty
+inputs:
+  days: 60
+  initial_maximum: 2329
+  daily_maximum: 46
+steps:
+  - daily_component: days * daily_maximum
+  - maximum: initial_maximum + daily_component
+expected:
+  daily_component: 2760
+  maximum: 5089
+```
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+## Sources
+
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| MBR commencement instruction, article185 / ActI2026 art26 | https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1 | 2026-11-04 | Changed claim only; see ledger |
+| MTCA audit-exemption guideline, Definitions | https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/audit-exemption-rules---guidelines.pdf?sfvrsn=14aab6d_1 | 2026-11-04 | Changed claim only; see ledger |
+| MBR Oct12 annual-accounts notice | https://www.mbr.mt/post/notice-to-the-public-submission-of-financial-statements-to-the-registrar | 2026-11-04 | Changed claim only; see ledger |
+| LN139/2025 rules3/4 | https://legislation.mt/eli/ln/2025/139/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap386 EleventhSchedule art183(6) | https://legislation.mt/eli/cap/386/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
+
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.

@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "LK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Lal kumarasiri, CA"
   reviewed_by: "Lal kumarasiri"
-  trust_label: "Checked by Lal kumarasiri"
-  review_status: "current"
 ---
 
 # Sri Lanka Capital Gains Tax (CGT)
@@ -50,24 +47,6 @@ House (non-primary residence) in Rajagiriya bought 2019 for LKR 18m, sold 2026 f
 - **Rate increase impact (10% → 15% for individuals)** — Individuals and partnerships who completed the realisation (sale, transfer) of investment assets BEFORE 3 June 2026 (date of enactment of IRA Amendment Act No. 11 of 2026) are taxed at the old 10% rate. Realisations on or after 3 June 2026 are taxed at 15%. Critical to record transaction date accurately.  _(IRA (Amendment) Act No. 11 of 2026)_
 - **Valuation by qualified valuer** — To substantiate the cost basis (acquisition cost) and avoid IRD substituting a different market value, it is advisable to obtain a professionally qualified valuer's report at the time of realisation.  _(IRA s 37)_
 - **TIN now required for property transfers (from 1 April 2026)** — From 1 April 2026, a TIN (Tax Identification Number) must be verified before permitting registration of a motor vehicle, building plan approval, or transfer of shares. Property-related transactions increasingly linked to TIN compliance.  _(IRA (Amendment) Act No. 11 of 2026)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

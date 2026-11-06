@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "WS"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Samoa Payroll & Social Contributions
@@ -26,24 +24,6 @@ metadata:
 - **Combined SNPF + ACC employer cost** — ~11% of gross wages (10% SNPF + 1% ACC) % (approx — confirm)  _(National Provident Fund Act 1972 / Accident Compensation Act 1989)_
 - **PAYE remittance** — Employers remit PAYE withheld to the Ministry of Customs and Revenue monthly (confirm due date) (approx — confirm)  _(Tax Administration Act 2012)_
 - **SNPF / ACC remittance** — Contributions remitted to SNPF monthly (confirm due date) (approx — confirm)  _([National Provident Fund Act 1972](https://www.npf.ws/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

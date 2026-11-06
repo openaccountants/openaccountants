@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland Universal Social Charge (USC), tax year 2026
@@ -231,24 +228,6 @@ Refer to a qualified practitioner: property relief surcharge cases where the Hig
 | Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
 Not yet confirmed: (1) the consolidated text of Part 18D: the Law Reform Commission's Revised Acts do not include the Taxes Consolidation Act 1997 (revisedacts.lawreform.ie returns 404 for it, and it is not in the alphabetical list, checked 2026-10-24), so section wording is taken from Revenue's Notes for Guidance (Finance Act 2025 edition), checked against the enacted Finance Act 2011 s.3, Finance Act 2012 s.3 and Finance Act 2025 s.2; later amendments between 2011 and 2024 were not read in their enacting acts; (2) that the s.1084 late filing surcharge is computed on USC as part of "tax due": it follows from s.531AAA(e) applying Part 47, but no Revenue page read says so in terms; (3) the increased exemption and Standard Capital Superannuation Benefit figures for termination payments (Tax and Duty Manual Part 05-05-19, not read here); (4) Budget 2027 and Finance Bill 2026 changes to USC for 2027 were not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

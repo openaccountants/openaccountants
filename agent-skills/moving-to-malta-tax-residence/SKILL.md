@@ -7,20 +7,17 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/moving-to-malta-tax-residence"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-04"
 ---
 
-# Moving to Malta: residence routes, the remittance basis, and what Malta actually taxes v1.1
+# Moving to Malta: residence routes, the remittance basis, and what Malta actually taxes v1.3
 
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.** Figures are for tax year 2026 (basis year 2026, assessed in 2027).
+Built by the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.** Figures are for tax year 2026 (basis year 2026, assessed in 2027).
 
 **Why this corridor needs a skill.** Malta takes in more relocating wealth per capita than
 almost any EU state, yet most arrival advice is sold by visa agencies and stops at the permit.
-The tax layer is where Malta actually competes: a **remittance-basis system** open to any
-resident non-domiciled person (not a special permit: the default law), **no wealth tax, no
+The tax layer is where Malta actually competes: a **remittance-basis system** for eligible
+resident non-domiciled persons, subject to the statutory exclusions below, **no wealth tax, no
 inheritance or estate tax, no gift tax, no personal exit tax**, and a treaty network of 70+
 conventions inside the EU's legal order. The catch is that "Malta is tax-free" is wrong in
 five specific ways, and the people who get burned are the ones who never learned what Malta
@@ -35,8 +32,7 @@ Pillar Two) is flagged but not the focus.
 **1. Ordinary residence (the default, and often the best).** EU/EEA nationals can simply
 move: register, spend **more than 183 days** in Malta in a year (or come to establish Malta as
 the regular base), and you are resident. Taxed at progressive rates on Malta-source income and on **remitted** foreign
-income; the remittance basis applies automatically to anyone resident but **not domiciled**
-in Malta. No programme fee, no minimum property value.
+income; the remittance basis applies by law when its conditions are met, but not to an individual with the specified statutory long-term resident status or permanent residence certificate/card, or whose spouse is ordinarily resident and domiciled in Malta. These legal categories must be checked separately from the duration of residence or an MPRP permit. See [mt-non-dom](mt-non-dom.md). No programme fee, no minimum property value.
 
 **2. The Residence Programme (TRP, EU/EEA nationals) / Global Residence Programme (GRP,
 third-country nationals).** The classic "15% ticket": foreign income **remitted** to Malta is
@@ -67,8 +63,7 @@ income up to **€7 million** (above that, the normal progressive rates), where 
 qualifying contract is at least **€65,000** (rising by €10,000 every five years). Where a
 replaced regime had a lower minimum, that lower minimum applies for 2026, rises by €10,000
 for 2027, and the standard minimum applies from 2028 (LN 20/2026, rules 3, 7 and 9). The benefit runs for five years with up to two five-year extensions, and never
-beyond 31 December 2040. This is the one route where Malta-source salary escapes progressive
-rates.
+beyond 31 December 2040. This is one special employment route; the nomad authorised-work rules below are a separate exception.
 
 **5. Nomad Residence Permit (third-country remote workers).** Permit to live in Malta while
 working for foreign employers/clients; income from authorised work is taxed at a flat
@@ -88,7 +83,7 @@ not passports.
 
 ## Part 3: Remittance-basis mechanics (where the value lives)
 
-A resident **non-dom** is taxed on:
+An **eligible** resident non-dom, after the legal-status and spouse exclusions have been checked, is taxed on:
 1. Malta-source income and gains: always;
 2. Foreign-source **income**: only to the extent **received in / remitted to** Malta;
 3. Foreign-source **capital gains**: **never**, even if remitted the same day.
@@ -99,8 +94,7 @@ gain element is outside the charge. Discipline still matters:
 - **Segregate accounts before arriving.** Pre-arrival capital ("clean capital") remits
   tax-free forever, but only if you can *prove* what was capital on the landing date. Keep
   three buckets: clean capital / post-arrival foreign income / post-arrival gains. Mixed
-  accounts remit on a worst-first basis in practice, and unpicking them years later is
-  forensic accounting at hourly rates.
+  accounts require evidence tracing the remittance to capital or income. MTCA guidance presumes ordinary living remittances are income unless their capital origin is proved; it does not establish a universal worst-first ordering rule.
 - **"Remitted" is broad**: card spending in Malta from a foreign account, paying a Maltese
   bill from foreign income, moving money to a Maltese brokerage: all remittances. Loans
   secured on foreign income used in Malta can be too.
@@ -111,7 +105,7 @@ gain element is outside the charge. Discipline still matters:
   whole system, often the entire Maltese tax bill of a careful non-dom.
 - **No deemed-domicile clock.** Unlike the UK's old regime, Malta's remittance basis does not
   expire after N years. Domicile shifts only if you genuinely adopt Malta as your permanent
-  home. Long-term residents keep the basis, but a person who dies domiciled elsewhere also
+  home. Acquiring the specified legal long-term resident status excludes the remittance basis; merely living in Malta for many years is a different question. A person who dies domiciled elsewhere also
   keeps their *origin* country's succession reach; plan the estate on both ends.
 
 ---
@@ -122,7 +116,7 @@ gain element is outside the charge. Discipline still matters:
 |---|---|
 | Malta employment / self-employment | Progressive to **35%** (unless Highly Skilled Individuals or nomad regime) |
 | Malta rental income | 15% **final** flat option on gross rent (form TA24 by 30 April), or progressive net basis; elect yearly |
-| Sale of Malta immovable property | **8% final tax on the transfer value** (not the gain); 5% within 5 years of buying, 10% if bought before 2004; main-home exemption after 3 years' occupation (sale within 12 months of vacating) |
+| Sale of Malta immovable property | Article 5A has transfer-value rates, conditional reductions and exemptions. A sale within five years is not automatically 5%: project, works and related-party conditions matter. Route the actual acquisition, occupation and development history to [Malta income tax, property section](malta-income-tax.md) and [mt-capital-gains](mt-capital-gains.md) before quoting a tax cost |
 | Buying Malta property | Duty **5%** (1% provisional at promise of sale; first-time-buyer and other reliefs exist) |
 | Foreign income remitted | Progressive, or **15%** under GRP/Residence Programme with the €15k minimum |
 | Foreign income kept offshore | Not taxed (but counts toward the €35k trigger for the €5k minimum) |
@@ -141,6 +135,10 @@ elected the transitional deferral; verify current status). A personal relocation
 never be designed around the company trick; get the personal residence right first.
 
 ---
+
+## Filing calendar
+
+**Year-specific override, read 4 November 2026:** MTCA extended both manual and electronic individual returns for year of assessment 2026 (basis 2025), and the related tax payment, to **31 July 2026**. Use that actual date for late charges, not the general 30 June date. The statutory date for basis 2026 / assessment 2027 remains **30 June 2027** unless a later notice changes it. [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline).
 
 ## Part 5: The corridor discipline (both ends)
 
@@ -171,7 +169,7 @@ never be designed around the company trick; get the personal residence right fir
 | Taking GRP with modest remitted income | The €15,000 minimum can exceed what ordinary progressive rates would have charged. Run both numbers before buying the 15% ticket. |
 | Forgetting the €5,000 minimum | Foreign income ≥€35,000 triggers it even with zero remittances. Budget it as the annual subscription fee. |
 | Treating MPRP as a tax deal | It's a residence permit. The tax outcome is whatever your actual residence + non-dom status produces; some MPRP holders aren't even Maltese tax residents. |
-| Buying property in year one "to qualify" | 5% duty in, then final tax on the full transfer value out (5% if sold within 5 years, 8% after); renting satisfies most programmes and keeps the exit cheap while you test the island. |
+| Buying property in year one "to qualify" | Purchase duty and sale tax depend on reliefs and transaction facts. Do not assume a five-year sale qualifies for 5% or that renting is always the cheaper route. Compare only after the property and programme conditions have been verified. |
 | Ignoring the origin country's estate reach | Malta not taxing inheritance doesn't stop a UK domicile (or the new residence-based UK IHT tail), French 750 ter, or US estate tax from reaching the same assets. |
 | Assuming the corporate 5% is personal | Refund money landing in your hands is your income; your origin country's CFC/anti-avoidance rules may tax the structure anyway if you botched the personal move. |
 
@@ -179,12 +177,41 @@ never be designed around the company trick; get the personal residence right fir
 
 ---
 
-*Built by Michael Cutajar and the OpenAccountants team, from the Malta end of the corridor. Malta's offer is simple
+*Built by the OpenAccountants team, from the Malta end of the corridor. Malta's offer is simple
 once stated precisely: it taxes the island and what you bring to it, and ignores what you
 keep outside, with no wealth, inheritance, or exit taxes waiting behind the door. The craft
 is all in the arrival: segregate the money before you land, pick the route by arithmetic
 rather than brochure, and close the origin country properly with a named accountant on each
 end.*
+
+## Worked checks: route comparison is conditional
+
+These check the ordinary non-dom minimum and worldwide cap already discussed above. Each assumes ordinary residence, foreign domicile, no legal-status/spouse exclusion, no special programme, no foreign-tax credit and evidence proving the stated income. They do not validate any residence permit or property purchase.
+
+```oa-check
+name: Eligibleordinarynondomminimumwith1200Maltatax
+inputs:
+  eligible_minimum: 5000
+  tax_counting_toward_minimum: 1200
+steps:
+  - top_up: max(eligible_minimum - tax_counting_toward_minimum, 0)
+  - total: tax_counting_toward_minimum + top_up
+expected:
+  top_up: 3800
+  total: 5000
+```
+
+```oa-check
+name: Eligiblejointcoupleworldwidecap35000
+inputs:
+  worldwide_income: 35000
+steps:
+  - worldwide_tax: worldwide_income * 0.25 - 4550
+  - liability_if_cap_proved: min(5000, worldwide_tax)
+expected:
+  worldwide_tax: 4200
+  liability_if_cap_proved: 4200
+```
 
 ## Sources
 
@@ -205,7 +232,7 @@ end.*
 | LN 306 of 2025, Reduced Rate of Duty on Transfers Causa Mortis of a Dwelling House Rules (3.5%, EUR 35,000 / 400,000) | https://legislation.mt/eli/ln/2025/306/eng | 2026-10-23 |
 | Duty on Documents and Transfers Act, Cap. 364, arts. 35 and 42 | https://legislation.mt/eli/cap/364/eng | 2026-10-23 |
 | LN 20 of 2026, Tax Treatment of Highly Skilled Individuals Rules | https://legislation.mt/eli/ln/2026/20/eng | 2026-10-23 |
-| Income Tax Act, Cap. 123, art. 56(1)(c) (EUR 5,000 minimum tax), art. 5A | https://legislation.mt/eli/cap/123/eng | 2026-10-23 |
+| Income Tax Act, Cap. 123, art. 56(27) (EUR 5,000 minimum tax), art. 5A | https://legislation.mt/eli/cap/123/eng | 2026-10-23 |
 | Malta Retirement Programme Rules, S.L. 123.134 (15%, EUR 7,500, EUR 500, 75%) | https://legislation.mt/eli/sl/123.134/eng | 2026-10-23 |
 | MTCA, Rental Income Taxed at 15% - Article 31D FAQ | https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/rental-income-taxed-at-15----article-31d-of-the-income-tax-act | 2026-10-23 |
 
@@ -213,27 +240,22 @@ Not yet confirmed:
 - The Residence Programme (EU/EEA/Swiss) thresholds were not re-read in this refresh; this skill points to `mt-residence-programmes-for-wealthy-families` for them.
 - The CJEU ruling on investor citizenship (C-181/23, April 2025), the size of Malta's treaty network, the 18% VAT rate and the Pillar Two deferral were not re-read from an official source today.
 - The Global Residence Programme and Nomad Residence Permit figures were checked against MTCA's guidelines, not the rules themselves.
-- LN 20/2026 rule 3(1) raises the EUR 65,000 minimum by EUR 10,000 "every five (5) years with effect from the year subsequent to the year in which these rules come into force". Whether the first increase falls in 2027 or five years later is not settled by the text.
+- LN 20/2026 rule 3(1) raises the EUR 65,000 minimum by EUR 10,000 "every five (5) years with effect from the year subsequent to the year in which these rules come into force". MTCA's linked HSI guidance expressly confirms €75,000 from basis 2031 and €85,000 from basis 2036; read 4 November 2026.
 - Budget 2027 is presented on 26 October 2026; nothing from it is reflected here.
 
-<!-- openaccountants-cta-block -->
 
----
+### Correction source reads, 4 November 2026
 
-## Talk to a verified accountant
+Only the identified passages were read for this delta; historical source rows keep their prior dates and are not a blanket re-verification.
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+| Source and passage actually read | URL | Read on |
+|---|---|---|
+| MTCAremittanceguidance exclusions and proof of capital read | https://mtca.gov.mt/docs/default-source/documents/mtca-guidelines-on-the-remittance-under-the-income-tax.pdf | 2026-11-04 |
+| MTCAHSI minimum increases2031and2036 read | https://mtca.gov.mt/docs/default-source/documents/personal-tax/legal-and-technical/guidelines/hqpr-new-amalgamated-rules---guidelines---branded-06-04-(002).pdf?sfvrsn=b605473e_1 | 2026-11-04 |
+| MTCAactualYA2026deadline read | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Correction ledger and complete old-topic destinations: [personal-moving-to-malta-tax-residence](../../evidence/malta-deep-audit-20261104/ledgers/personal-moving-to-malta-tax-residence.md). Full original research is archived there; this correction is not professional attestation.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `moving-to-malta-tax-residence` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/moving-to-malta-tax-residence. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `moving-to-malta-tax-residence` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/moving-to-malta-tax-residence. If neither is available, confirm every figure against the official source pages cited above before relying on it.

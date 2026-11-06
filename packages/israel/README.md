@@ -7,17 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `il-corporate-tax.md`
-4. `il-crypto-tax.md`
-5. `il-customs-duty.md`
-6. `il-employee-tax-refund.md`
-7. `il-freelancer-ops.md`
-8. `il-income-tax-returns.md`
-9. `il-new-immigrant.md`
-10. `il-tax-withholding.md`
-11. `israel-vat.md`
-12. `references.md`
-13. `crypto-tax-workflow-base.md`
+3. `README.md`
+4. `il-corporate-tax.md`
+5. `il-crypto-tax.md`
+6. `il-customs-duty.md`
+7. `il-employee-tax-refund.md`
+8. `il-freelancer-ops.md`
+9. `il-income-tax-returns.md`
+10. `il-new-immigrant.md`
+11. `il-tax-withholding.md`
+12. `israel-vat.md`
+13. `references.md`
+14. `crypto-tax-workflow-base.md`
 
 ## Also known as
 

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "general"
   tax_year: "2026"
   last_updated: "2026-10-05"
-  authored_by: "Michael Cutajar, CPA, ACCA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
 ---
 
 # Where to put the family holding company: nine countries compared
@@ -378,24 +375,6 @@ Not computed: Ireland, Luxembourg, Switzerland, Singapore, the UAE and the UK fa
 - Singapore: [Corporate income tax rate](https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/corporate-income-tax-rate-rebates-and-tax-exemption-schemes); [FSIE e-Tax Guide](https://www.iras.gov.sg/media/docs/default-source/e-tax/tax-exemption-for-foreign-sourced-income285e5d43d6af4001b3ce35da1e9005b5.pdf); [Section 13W e-Tax Guide](https://www.iras.gov.sg/docs/default-source/e-tax/etaxguide_certainty-of-non-taxation-of-companies-gain-on-disposal-of-equity-investments.pdf?sfvrsn=ceb9a99_18); [Dividends](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/dividends)
 - UAE: [General Corporate Tax Guide](https://tax.gov.ae/DataFolder/Files/Guides/CT/CT%20General%20Guide%20-%20EN%20-%2010%2009%202023.pdf); [Exempt Income: Dividends and Participation Exemption](https://tax.gov.ae/Datafolder/Files/Guides/CT/CT%20-%20Exempt%20Income%20-%20Dividends%20and%20Participation%20Exemption%20-%2016%2010%202023.pdf); [Federal Decree-Law No. 47 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/CT%20law%20final/Federal%20Decree-Law%20No.%2047%20of%202022%20-%20For%20publishing.pdf)
 - United Kingdom: [Corporation tax rates](https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax); [INTM653010](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm653010); [INTM650000](https://www.gov.uk/hmrc-internal-manuals/international-manual/intm650000); [Marginal Relief for Corporation Tax](https://www.gov.uk/guidance/corporation-tax-marginal-relief); [CG53072](https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg53072); [CG53078](https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg53078); [CG53106](https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg53106); [MTT11010](https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt11010)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

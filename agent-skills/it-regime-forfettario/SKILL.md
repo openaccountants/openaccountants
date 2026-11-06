@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-regime-forfettario"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Italy: the regime forfettario (flat-rate regime), tax year 2026
@@ -117,7 +114,7 @@ The person confirms these by ticking LM21 column 3. If one year's income has to 
 
 **INPS for artigiani and commercianti (commi 76 to 84).** Forfettari who run a business may ask INPS to compute the artigiani or commercianti contributions on the forfettario income, cut by 35% (comma 77). Someone already in business must apply by 28 February of the year; someone starting applies online when they start. A late application works from the following year (comma 83). The cut ends from the year after the regime ends, and once someone is back on the ordinary INPS regime they can never use the cut again (comma 82). The cut does not apply to professionals in the gestione separata. Contribution rates, the minimum income base and worked figures for the cut are in `it-inps-artigiani-commercianti`.
 
-**VAT (commi 58 to 60).** A forfettario charges no VAT on domestic sales, deducts no input VAT, keeps no VAT registers and files no annual VAT return. They still number and keep purchase invoices and customs documents. On reverse-charge purchases, and other operations where they are the debtor, they self-charge VAT and pay it by the 16th of the following month (comma 60). A forfettario may issue a simplified invoice whatever the amount (comma 59). The Agenzia's "Semplificazioni e adempimenti" page still gives the older deadline for this self-charged VAT (the 16th of the second month after each quarter); comma 60 as in force sets the 16th of the following month.
+**VAT (commi 58 to 60).** A forfettario charges no VAT on domestic sales, deducts no input VAT, keeps no VAT registers and files no annual VAT return. They still number and keep purchase invoices and customs documents. For purchases of goods or services subject to reverse charge under DPR 633/1972 article 17, including intra-EU purchases, comma 58(e-bis) specifically requires payment by the **16th of the second month after each calendar quarter**. Paragraph 60 retains the duty to issue/integrate the invoice and its general following-month deadline for debtor operations; do not replace the specific reverse-charge-purchase deadline with that general sentence. Classify other debtor operations under their applicable rule. A forfettario may issue a simplified invoice whatever the amount (comma 59). The authority's quarterly guidance matches comma 58(e-bis). Source: [Law 190/2014 art.1(58)(e-bis), (59) and (60), current text read 29 October 2026](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29).
 
 **Invoice wording** (Agenzia, "Fattura elettronica per i forfettari"):
 - Tax regime field: "Regime forfettario (art.1, c.54-89, L. 190/2014)" (RF19).
@@ -291,29 +288,10 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | TUIR, art. 13 (detrazioni) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22 | 2026-10-22 |
 | Agenzia, IRPEF rates (updated 13 January 2026; 2026 middle rate in its note) | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef | 2026-10-22 |
 | INPS Circolare n. 35 of 19 February 2016 (forfettari: 35% cut on the minimale and above, maternity on the fixed dates) | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=%2FCircolari%2FCircolare+numero+35+del+19-02-2016.htm | 2026-10-23 |
+| Law190/2014 art.1(58)(e-bis), (59)–(60), reverse-charge purchases and debtor-operation duties | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29 | 2026-10-29 |
 
 Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which employment-income year the EUR 35,000 limit tests; the reading above rests on the law text and the Fascicolo 3 instructions; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) whether the impatriati regime can be combined with the forfettario.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-regime-forfettario` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-regime-forfettario. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-regime-forfettario` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-regime-forfettario. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,8 +7,9 @@ description: >
   FreeAgent CSV, FreeAgent bank statement, or mentions FreeAgent. Popular UK accounting software for freelancers
   and micro-businesses.
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
+domain: references
 ---
 
 # FreeAgent Integration Skill v1.0

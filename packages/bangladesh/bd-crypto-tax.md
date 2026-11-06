@@ -8,11 +8,12 @@ description: >
 version: 1.0
 jurisdiction: BD
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: crypto
 ---
 
 # Bangladesh Cryptocurrency — Legal Status & Tax — Skill v1.0
@@ -28,7 +29,6 @@ depends_on:
 | Tax framework | **None** — there is no dedicated crypto tax regime |
 | Currency | BDT (৳) |
 | Authorities | Bangladesh Bank (central bank); NBR (tax) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 > **High risk / restricted.** Do NOT present crypto trading as a legal, taxable activity in Bangladesh. Verify the current Bangladesh Bank position before saying anything definitive.

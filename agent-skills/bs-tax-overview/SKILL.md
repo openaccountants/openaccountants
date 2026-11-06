@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BS"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bahamas Tax Overview
@@ -29,24 +27,6 @@ The Bahamas is a no-direct-tax jurisdiction: there is no personal income tax, no
 - **Inheritance / estate / gift tax** — None — there is no inheritance, estate, or gift tax  _([PwC Worldwide Tax Summaries — Bahamas](https://taxsummaries.pwc.com/the-bahamas/individual/other-taxes))_
 - **Business licence renewal / return filing deadline** — Renew by 31 January; business licence tax payable by 31 March each year  _([Business Licence Act, 2023](https://www.mof.gov.bs/about-business-licence-and-real-property-tax))_
 - **Main payroll / social security remittance deadline** — National Insurance contributions due by the 15th of the month following the contribution month  _([National Insurance Act](https://www.nib-bahamas.com/about-nib/contributions/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

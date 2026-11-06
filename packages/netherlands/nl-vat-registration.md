@@ -11,23 +11,21 @@ description: >
   import schemes and their quarterly and monthly returns, and penalties. Trigger on "do
   I need a Dutch VAT number", "register for btw", "join the KOR", "OSS Netherlands",
   "foreign company VAT Netherlands", "fiscal representative Netherlands". Out of scope:
-  filling in the return boxes (nl-vat-return, netherlands-vat-return), income tax
+  filling in the return boxes (nl-vat-return), income tax
   (nl-income-tax), cross-border income (nl-cross-border).
-version: 0.1
+version: 0.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Netherlands VAT registration, KOR, OSS and non-established businesses (2026)
 
-This skill answers one question: does this business need to be registered for Dutch VAT, and if so, how and under which scheme? It does not fill in returns. For the boxes, rates per supply, input VAT and corrections, use [nl-vat-return](nl-vat-return.md) or [netherlands-vat-return](netherlands-vat-return.md).
+This skill answers one question: does this business need to be registered for Dutch VAT, and if so, how and under which scheme? It does not fill in returns. For the boxes, rates per supply, input VAT and corrections, use [nl-vat-return](nl-vat-return.md).
 
 Tax year 2026 (calendar year). Law: Wet op de omzetbelasting 1968 (Wet OB 1968) as in force from 1 January 2026.
 
@@ -273,23 +271,3 @@ expected:
 | Belastingdienst: late payment penalty | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_betaalt_niet_te_laat_of_te_weinig | 2026-10-23 |
 
 Not yet confirmed: the exact OSS start rule for a non-EU business registering through the Netherlands (the Belastingdienst page read describes the route for Dutch businesses); the text of the Uitvoeringsbesluit omzetbelasting 1968 on when a fiscal representative is compulsory (the list above is the Belastingdienst's).
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

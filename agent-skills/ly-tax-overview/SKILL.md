@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "LY"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Libya Tax Overview
@@ -29,24 +27,6 @@ metadata:
 - **Jihad tax** — Abolished (was 4% on CIT and 3% on PIT prior to 2011)  _(Income Tax Law No. 7 of 2010 (https://taxsummaries.pwc.com/libya/corporate/significant-developments))_
 - **Corporate return filing deadline** — Within four months of year-end, or within one month of the audit report, whichever is earlier  _(Income Tax Law No. 7 of 2010 (https://taxsummaries.pwc.com/libya/corporate/tax-administration))_
 - **Social Unity (Solidarity) Fund contribution** — 1% of monthly gross salary, collected by the Tax Department percent  _(Income Tax Law No. 7 of 2010 (https://taxsummaries.pwc.com/libya/individual/taxes-on-personal-income))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

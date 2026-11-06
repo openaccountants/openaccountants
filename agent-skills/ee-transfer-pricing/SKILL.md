@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "EE"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Estonian transfer pricing (siirdehinnad): tax year 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Estonia taxes company profit when it leaves the company, not when it is earned. Transfer pricing fits that system. If a price between associated persons is not at market value, the profit the Estonian company gave away (income it did not receive, or a cost it should not have borne) is treated like a hidden distribution. It is taxed in the month of the transaction at the corporate income tax rate on a grossed-up basis, 22/78 of the net amount, through the monthly TSD return (Income Tax Act (TuMS) §§ 8(2), 50(4), 4(1) and (1¹), 54(2) and (4)).
 
@@ -235,24 +231,6 @@ expected:
 Not yet confirmed: that the TSD annex 6 layout and code 6000 as worded by regulation nr 24 of 22 June 2020 are unchanged for 2026 periods; whether EMTA accepts or runs bilateral APAs through the treaty mutual agreement procedure (no emta.ee page on APAs was found, and no statute sets one up); which point inside the interquartile range EMTA adjusts to (Regulation No. 53 § 11(8) says only that the result must fall inside the range); whether a 2026 English EMTA page on transfer pricing replaces the 2011 guide.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

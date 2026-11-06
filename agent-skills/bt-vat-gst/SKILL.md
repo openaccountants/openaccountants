@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BT"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bhutan VAT / GST
@@ -28,24 +26,6 @@ Bhutan did NOT have a VAT/GST in force during income year 2025; the indirect tax
 - **GST return filing frequency** — Periodic (typically monthly) returns under the GST Act and Rules ((approx — confirm frequency in GST Rules))  _(Goods and Services Tax Act of Bhutan 2020 (as amended 2025))_
 - **Reverse charge on imported services** — GST on taxable imports of goods and services is collected, including reverse-charge mechanism on imported services ((approx — confirm reverse-charge scope))  _(Goods and Services Tax Act of Bhutan 2020 (as amended 2025))_
 - **Excise Tax** — Excise Equalization Tax provisions repealed from the GST Act; a standalone Excise Tax Act introduced  _([Excise Tax Act of Bhutan 2025](https://nab.gov.bt/index.php/post/third-reading-of-the-goods-and-services-tax-amendment-bill-of-bhutan-2025))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

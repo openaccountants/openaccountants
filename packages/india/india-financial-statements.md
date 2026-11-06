@@ -4,15 +4,13 @@ description: Use this skill when preparing, reviewing, or advising on annual fin
 version: 1.0
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-11-06
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: financial-statements
 ---
 
 # India Company Financial Statements: Framework, Formats, Audit and Filing
@@ -342,7 +340,7 @@ Source: ICAI chapter on accounts of companies, https://resource.cdn.icai.org/747
 - Restatement, reopening or voluntary revision of earlier accounts (sections 130 and 131): refer.
 - A company that has missed filings for several years and needs condonation or a compounding application: refer to a company secretary.
 - Any question that turns on the Corporate Laws (Amendment) Bill, 2026 or a proposed rule: say it is not law and refer for the position on the filing date.
-- Income tax computation, tax audit and the return: outside this Guide; see `in-income-tax` for individuals and `india-transfer-pricing` for related-party pricing. Formation and post-incorporation filings: see `india-formation`.
+- Income tax computation, tax audit and the return: outside this Guide; see `india-income-tax` for individuals and `india-transfer-pricing` for related-party pricing. Formation and post-incorporation filings: see `india-formation`.
 
 ## Sources
 
@@ -361,21 +359,3 @@ Source: ICAI chapter on accounts of companies, https://resource.cdn.icai.org/747
 ## Disclaimer
 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

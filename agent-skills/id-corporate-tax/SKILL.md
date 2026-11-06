@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "RILIA PUTRI, CA, CPA"
   reviewed_by: "RILIA PUTRI"
-  trust_label: "Checked by RILIA PUTRI"
-  review_status: "current"
 ---
 
 # ID Corporate Tax
@@ -22,7 +19,7 @@ metadata:
 >
 > This skill is for informational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a licensed Indonesian tax consultant (Konsultan Pajak) before filing or acting upon.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -85,7 +82,6 @@ metadata:
 | Filing portal | **Coretax DJP** (from tax year 2025); previously DJP Online / e-Filing |
 | Tax authority | DJP (Direktorat Jenderal Pajak — Directorate General of Taxes), Ministry of Finance |
 | Bookkeeping retention | 10 years (Pasal 28(11) UU KUP) |
-| Validated by | Pending — sign-off by a licensed Konsultan Pajak (USKP) |
 | Skill version | 1.0 |
 
 ### 1.1 Conservative Defaults
@@ -475,24 +471,6 @@ This skill and its outputs are for informational and computational purposes only
 ## OpenAccountants footer
 
 *OpenAccountants — open-source accounting skills for AI*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-transfer-pricing"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Hungary transfer pricing (szokásos piaci ár): 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 **What changed for 2026.** A new ministerial decree, 45/2025. (XII. 23.) NGM rendelet on transfer pricing records and data supply, replaced 32/2017. (X. 18.) NGM rendelet on 23 January 2026 (45/2025, 14. § and 16. §: in force on the 31st day after its 23 December 2025 promulgation). It applies first to records and data supply for tax years starting in calendar 2026 (decree 45/2025, 15. § (1)). The main changes for a typical client:
 
@@ -310,26 +305,6 @@ expected:
 
 Not yet confirmed: the layout of the 2629 return's transfer pricing sheets for tax year 2026 (not yet published by NAV); whether a 2025 taxpayer opting into 45/2025 under its 15. § (2) can also use the HUF 150 million local file exemption for 2025, or only the new content rules; the Ptk. 8:2. § text on the official site (read in the net.jogtar.hu reprint only); NAV's audit practice on choosing a point other than the median; MAP filing details now that the Minister is the competent authority (whether NAV's TPMAP form is still used, whether the request is free of fees, and which treaties set a 2-year deadline: NAV's archived 2020 guide named Canada, Indonesia, the Philippines and Portugal); whether a request is accepted where a good-faith foreign self-revision caused the double taxation (stated only in the archived NAV guide).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

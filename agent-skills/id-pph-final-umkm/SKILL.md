@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "RILIA PUTRI, CA, CPA"
   reviewed_by: "RILIA PUTRI"
-  trust_label: "Checked by RILIA PUTRI"
-  review_status: "current"
 ---
 
 # ID Pph Final Umkm
@@ -20,7 +17,7 @@ metadata:
 
 > Load alongside `foundation.md` and `intake.md`. For employment withholding see `id-payroll-pph21.md`; for VAT/PPN see `indonesia-vat.md`. Covers ONLY the PPh Final UMKM facility under PP 23/2018 as superseded and revised by PP 55/2022.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -67,7 +64,6 @@ metadata:
 | Annual SPT (entity) | SPT Tahunan PPh Badan 1771, "Lampiran PPh Final" — due **30 April 2026** for FY2025 |
 | MAP/KJS payment code | **411128 / 420** — TBC, verify with Indonesian accountant |
 | Individual NPWP | NIK-as-NPWP since 1 July 2024 (PMK 136/2023) |
-| Validated by | Pending — Konsultan Pajak sign-off required |
 | Skill version | 1.0 |
 
 ### Who qualifies — at a glance
@@ -344,24 +340,6 @@ NEVER assume the Coretax DJP entry URL is unchanged — verify before filing.
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions, or outcomes arising from use of this skill. All outputs must be reviewed and signed off by a licensed Indonesian tax consultant (Konsultan Pajak) before filing or acting. Indonesian tax law — and in particular the PP 55/2022 framework, the Coretax DJP rollout, and the kode billing MAP/KJS structure — has been changing rapidly in 2023–2025; always verify with primary sources.
 
 The up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review, and track updates as Indonesian tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-cross-border"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Hungary: cross-border tax for people and companies (2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 This is the hub for the Hungarian cross-border (XB) domain. It links rather than repeats:
 
@@ -233,26 +228,6 @@ expected:
 
 Not yet confirmed: NAV's 2026 list of applicable treaties (the "Adózói tájékoztató" page named in information sheet 4) was not read, so this skill names no treaty partner or treaty rate other than the US position; which Hungarian treaties use the credit method rather than exemption for employment income; whether the NAV office handling non-resident refund claims is still the one named on NAV's 2017 English page (not relied on); the absence of an individual exit tax rests on two independent full-text searches of the 2026 Szja tv. including its annexes (the only deemed-gain rule found, 65/C. §, covers transfers into a trust or private foundation), not on a NAV statement; payroll withholding for non-resident employees is left to the pack's payroll skill.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `er-company-formation.md`
-4. `er-corporate-income-tax.md`
-5. `er-income-tax.md`
-6. `er-payroll-social.md`
-7. `er-tax-overview.md`
-8. `er-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `er-company-formation.md`
+5. `er-corporate-income-tax.md`
+6. `er-income-tax.md`
+7. `er-payroll-social.md`
+8. `er-tax-overview.md`
+9. `er-vat-gst.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

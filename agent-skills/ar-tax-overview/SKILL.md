@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AR"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Argentina Tax Overview
@@ -28,24 +26,6 @@ metadata:
 - **Provincial turnover tax (Ingresos Brutos)** — Each province levies a gross-receipts/turnover tax, commonly in the range of roughly 1%–6% depending on activity and province (approx — confirm; varies by province and activity) %  _(Provincial tax codes (Códigos Fiscales provinciales — Impuesto sobre los Ingresos Brutos))_
 - **Personal assets tax (Bienes Personales)** — Annual wealth tax on worldwide assets of resident individuals above an exempt minimum; progressive rates  _(Personal Assets Tax Law (Ley de Impuesto sobre los Bienes Personales, Ley 23.966))_
 - **Main annual corporate filing deadline** — Corporate income tax returns are generally due in the fifth/sixth month after fiscal year-end (deadline extended to June of the following year for calendar-year filers under recent resolutions) (approx — confirm exact CUIT-based dates for the year)  _(ARCA General Resolution (Resolución General — annual filing-calendar resolution; e.g. RG 5648/2025))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

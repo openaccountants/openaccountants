@@ -1,14 +1,13 @@
 ---
 name: mt-residence-programmes-for-wealthy-families
 description: "Compare Malta residence routes for wealthy, internationally mobile families and family offices: non-domiciled ordinary residence and the remittance basis with its minimum tax, the Global Residence Programme and the EU/EEA/Swiss Residence Programme (flat rate on remitted foreign income, minimum tax, property and rent thresholds, dependants, the day rule, cessation), the Malta Permanent Residence Programme as an immigration status with its fees, contribution, property and capital tests and due diligence, and the nomad residence permit tax rule. Includes a worked family example and referral points."
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-05
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
+last_updated: 2026-11-04
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Malta residence programmes for wealthy families: non-dom residence, the Global Residence Programme, permanent residence and the nomad permit
@@ -59,7 +58,7 @@ The minimum tax. Art. 56(27) of [Cap. 123](https://legislation.mt/eli/cap/123/en
 | Item | Value | Note (verbatim) |
 | --- | --- | --- |
 | Source | all figures below | https://legislation.mt/eli/sl/123.148/eng/pdf |
-| Rate on foreign income received in Malta (rule 5(1)) | 15% | "(0.15) on every 15% rate." |
+| Rate on foreign income received in Malta (rule 5(1)) | 15% | "rate of fifteen cents (0.15) on every euro" |
 | Minimum tax per year of assessment (rule 5(1) proviso) | EUR 15,000 | "shall be fifteen thousand euro (€15,000) for any year of assessment" |
 | Other chargeable income of the same persons (rule 5(2)) | EUR 0.35 per euro | "at the rate of thirty-five cents (0.35) on every euro" |
 | Owned property, Malta (rule 2) | EUR 275,000 | "seventy-five thousand euro (€275,000) for a property situated in Malta" |
@@ -74,7 +73,7 @@ The minimum tax. Art. 56(27) of [Cap. 123](https://legislation.mt/eli/cap/123/en
 | Item | Value | Note (verbatim) |
 | --- | --- | --- |
 | Source | all figures below | https://legislation.mt/eli/sl/123.160/eng/pdf |
-| Rate on foreign income received in Malta (rule 5(1)) | 15% | "(0.15) on every 15% rate." |
+| Rate on foreign income received in Malta (rule 5(1)) | 15% | "rate of fifteen cents (0.15) on every euro" |
 | Minimum tax per year of assessment | EUR 15,000 | "shall be fifteen thousand euro (€15,000) for any year of assessment" |
 | Other chargeable income of the same persons (rule 5(2)) | EUR 0.35 per euro | "at the rate of thirty-five cents (0.35) on every euro" |
 | Owned property, Malta | EUR 275,000 | "seventy-five thousand euro (€275,000) for a property situated in Malta" |
@@ -189,31 +188,55 @@ The daughter. Under Route A she can live in the property as a paragraph (c) depe
 
 ## Sources
 
-- Income Tax Act, Cap. 123 (consolidated): https://legislation.mt/eli/cap/123/eng/pdf
-- Global Residence Programme Rules, S.L. 123.148: https://legislation.mt/eli/sl/123.148/eng/pdf
-- Residence Programme Rules, S.L. 123.160: https://legislation.mt/eli/sl/123.160/eng/pdf
-- Malta Permanent Residence Programme Regulations, S.L. 217.26: https://legislation.mt/eli/sl/217.26/eng/pdf
-- Malta Permanent Residence Programme (Amendment) Regulations, 2025, L.N. 146 of 2025: https://legislation.mt/eli/ln/2025/146/eng/pdf
-- Nomad Residence Permits (Income Tax) Rules, S.L. 123.210: https://legislation.mt/eli/sl/123.210/eng/pdf
-- Residency Malta, MPRP brochure (English): https://residencymalta.gov.mt/wp-content/uploads/2026/08/MPRP-Brochure-English.pdf
-- Residency Malta home page: https://residencymalta.gov.mt/
+- Income Tax Act, Cap. 123 (consolidated): https://legislation.mt/eli/cap/123/eng/pdf (read 2026-11-04, articles 5, 5A and 31D for the targeted corrections; unchanged wider claims not re-certified).
+- Global Residence Programme Rules, S.L. 123.148: https://legislation.mt/eli/sl/123.148/eng/pdf (read 2026-11-04; read for rules 2 to 6 programme conditions, figures and hypothetical).
+- Residence Programme Rules, S.L. 123.160: https://legislation.mt/eli/sl/123.160/eng/pdf (read 2026-11-04; read for rules 2 to 6 comparative programme conditions and figures).
+- Malta Permanent Residence Programme Regulations, S.L. 217.26: https://legislation.mt/eli/sl/217.26/eng/pdf (read 2026-11-04; read for regulations 3, 9, 15 and First Schedule current programme figures).
+- Malta Permanent Residence Programme (Amendment) Regulations, 2025, L.N. 146 of 2025: https://legislation.mt/eli/ln/2025/146/eng/pdf (read 2026-11-04; read for regulation 16 applicability of amended fees to pending applications).
+- Nomad Residence Permits (Income Tax) Rules, S.L. 123.210: https://legislation.mt/eli/sl/123.210/eng/pdf (read 2026-11-04; read for rules 2 to 4 authorised work and income-tax conditions).
+- Residency Malta, MPRP brochure (English): https://residencymalta.gov.mt/wp-content/uploads/2026/08/MPRP-Brochure-English.pdf (not read: 2026-11-04 fetch exceeded browser size limit; brochure-only claims remain unverified in this audit).
+- Residency Malta home page: https://residencymalta.gov.mt/ (not independently read in the 2026-11-04 audit; retained as an unverified legacy reference, not current acceptance).
 
 This Guide is general information for tax year 2026, not advice on a particular family's affairs. Confirm current figures on the official sources above before acting.
 
-<!-- openaccountants-cta-block -->
 
----
+### Targeted audit source checks, 4 November 2026
 
-## Talk to a verified accountant
+Removed the PDF marginal-heading extraction artifact from the quoted notes; rates and eligibility rules are unchanged. Previous review metadata is not carried onto this revised text. Unread immigration and brochure-only conditions remain held. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+- S.L. 123.148 rule 5(1): https://legislation.mt/eli/sl/123.148/eng/pdf (read 2026-11-04; read for rule 5(1), rate quotation).
+- S.L. 123.160 rule 5(1): https://legislation.mt/eli/sl/123.160/eng/pdf (read 2026-11-04; read for rule 5(1), rate quotation).
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+Not yet confirmed: all legacy-source claims outside the targeted read scopes above, including unread portal, subsidiary-rule and immigration conditions, retain their stated holds. A reference retained here is not proof of a fresh read.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+## Targeted executable checks of the existing family hypothetical
+
+These preserve the existing hypothetical assumptions: no foreign tax, no double-tax relief, and no qualifying-child table for the ordinary married computation. They compare the stated amounts, not immigration eligibility.
+
+```oa-check
+name: Family GRP minimum plus Malta fees
+inputs:
+  remitted_foreign_income: 80000
+  malta_fees: 10000
+steps:
+  - foreign_tax: max(pct(remitted_foreign_income,15),15000)
+  - local_tax: pct(malta_fees,35)
+  - total: foreign_tax + local_tax
+expected:
+  foreign_tax: 15000
+  local_tax: 3500
+  total: 18500
+```
+
+```oa-check
+name: Family ordinary married table without qualifying-child table
+inputs:
+  remitted_foreign_income: 80000
+  malta_fees: 10000
+steps:
+  - chargeable_income: remitted_foreign_income + malta_fees
+  - tax: pct(chargeable_income,35) - 10550
+expected:
+  chargeable_income: 90000
+  tax: 20950
+```

@@ -4,11 +4,9 @@ description: Becoming a non-resident Indian is a day-count game with three statu
 jurisdiction: IN
 tax_year: 2025
 last_updated: 2026-08-03
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # Leaving India for the UAE or Singapore: the NRI tax map
@@ -219,21 +217,3 @@ Singapore: IRAS individual residence and taxation of foreign income.
 tax and a built-in soft-landing (RNOR) for returners — the entire corridor is won or lost on
 day counts, account re-designation and treaty paperwork. An Indian accountant on one end and a
 UAE/Singapore accountant on the other turns that from anxiety into a checklist.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

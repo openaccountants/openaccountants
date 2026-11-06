@@ -15,14 +15,13 @@ version: 0.2
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Australia Dividend Substitution Share Plans (DSSP) v0.2
@@ -31,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## What this file is
 
-**This file is a content skill that loads on top of a workflow base**, [workflow-base](../../foundation/workflow-base.md). It determines the treatment of an existing DSSP allotment and updates acquisition records. Pass the reconciled parcels to [au-capital-gains](au-capital-gains.md) when a later disposal needs calculation; verify that companion's coverage for the disposal period.
+**This file is a content skill that loads on top of a workflow base**, [workflow-base](../foundation/workflow-base.md). It determines the treatment of an existing DSSP allotment and updates acquisition records. Pass the reconciled parcels to [au-capital-gains](au-capital-gains.md) when a later disposal needs calculation; verify that companion's coverage for the disposal period.
 
 **Tax year coverage.** This skill is current for tax year 2026-27 as of 18 October 2026. Its numerical example reproduces historical ATO facts to demonstrate allocation, not current share prices or allotment terms. Check the operative law, ruling status and actual scheme for the transaction date before applying a position.
 
@@ -162,24 +161,4 @@ Before delivering output, verify:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

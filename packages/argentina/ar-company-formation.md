@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Argentin
 jurisdiction: AR
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Argentina Company Formation & Entity Choice
@@ -25,21 +24,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Incorporation timeline** — Roughly 30–60 days for a standard SA/SRL via IGJ; an SAS can be faster (often a few days to weeks where the digital process is available) ((approx — confirm current IGJ processing times)) (approx — confirm current IGJ processing times)  _(IGJ regulations (Resoluciones Generales IGJ))_
 - **Core annual compliance** — Prepare and file annual financial statements, hold the shareholders'/partners' meeting, file annual income-tax and (where applicable) wealth-tax returns, file monthly VAT and payroll (F.931) returns, and pay provincial turnover tax  _(General Companies Law (Ley General de Sociedades, Ley 19.550); Income Tax Law (Ley 20.628))_
 - **Foreign shareholders / directors** — Foreign individuals/entities may own Argentine companies; a foreign shareholder entity generally must register with the IGJ, and at least one director with a local domicile/representation is typically required ((approx — confirm current local-director and IGJ registration requirements)) (approx — confirm current local-director and IGJ registration requirements)  _(General Companies Law (Ley General de Sociedades, Ley 19.550), arts. 118/123)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

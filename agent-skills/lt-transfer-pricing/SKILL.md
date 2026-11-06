@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "LT"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Lithuania: transfer pricing (2026) v0.1
@@ -253,24 +251,6 @@ expected:
 Not yet confirmed: the text of the FR0528 form and rules that apply to 2026 returns (VMI's answer KM1402, dated 16 July 2024, cites VMI order VA-27 of 2005; a search shows VA-27 still in force in a consolidated version from 1 January 2026 as amended by order VA-78 of 4 September 2025, but that text sits behind a CAPTCHA on e-seimas.lrs.lt and was not read); whether the FR0528 EUR 90,000 total is counted per associated person or across all of them; the late payment interest rate after 31 October 2026 (it is reset each quarter); the VMI procedure, form and any fee for an APA request, and whether VMI charges for bilateral APAs; the country-by-country notification duty, the VMI filing rules and the penalty for not filing; any separate administrative fine for not preparing or not handing over TP documentation; the Minister of Finance's list of target territories in force for 2026; whether Lithuania makes a secondary adjustment (for example a deemed dividend) after a primary TP adjustment; and the procedure for a downward corresponding adjustment after a foreign adjustment.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,17 +7,13 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-tax-optimization"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
+  reviewed_by: "James Power"
 ---
 
 # UK Tax Optimization
 
-## UK Tax Optimization -- Self-Employed Skill v1.1
-
-> Source-cited draft: not reviewed by an accountant.
+## UK Tax Optimization -- Self-Employed Skill v1.2
 
 Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): every figure moved to 2026/27 with the year named; dividend rates 10.75% / 35.75% / 39.35%; employer NIC 15% above GBP 5,000; 55p mileage; 14% main pool and 40% first-year allowance (Finance Act 2026 ss.28 and 29); VCT relief 20% (FA 2026 s.15); voluntary Class 2 abroad withdrawn; Example 2 (incorporation) recomputed, it previously applied corporation tax to the dividend instead of the profit; accountant attribution removed; Sources table added. Review fixes (2026-10-23): Capital Goods Scheme values taken from VAT Regulations 1995 reg 113; simplified expenses no longer tied to the cash basis; the List 3 condition for traders removed; the zero-emission car allowance dated; em dashes removed.
 
@@ -61,10 +57,10 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 | Band | Taxable income | Rate |
 | --- | --- | --- |
-| Personal Allowance | £0 -- £12,570 | 0% |
-| Basic rate | £12,571 -- £50,270 | 20% |
-| Higher rate | £50,271 -- £125,140 | 40% |
-| Additional rate | Over £125,140 | 45% |
+| Personal Allowance | £0 -- £12,570 | 0% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
+| Basic rate | £12,571 -- £50,270 | 20% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
+| Higher rate | £50,271 -- £125,140 | 40% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
+| Additional rate | Over £125,140 | 45% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
 
 - **Personal Allowance taper**: Personal Allowance tapers: reduced by £1 for every £2 of adjusted net income above £100,000. Fully withdrawn at £125,140.
 
@@ -90,7 +86,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 | --- | --- |
 | Optimal salary level | A salary at the Primary Threshold (£12,570 for 2026/27) builds State Pension entitlement without employee NIC. Employer NIC at 15% applies above the Secondary Threshold (£5,000). Where the Employment Allowance is not available (for example a company whose only employee is a director), compare a salary at the Secondary Threshold. |
 | Dividend allowance | First £500 of dividend income is taxed at 0% (2026/27). |
-| Dividend tax rates | 10.75% (basic), 35.75% (higher), 39.35% (additional) for 2026/27. See `uk-dividends`. |
+| Dividend tax rates | 10.75% (basic), 35.75% (higher), 39.35% (additional) for 2026/27. See `uk-dividends`. Source: https://www.gov.uk/tax-on-dividends (tax year 2026) (read 2026-10-31) |
 
 ### Family Employment
 
@@ -135,8 +131,8 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 | Pool | Rate (before April 2026) | Rate (from April 2026: 1 April for companies, 6 April for income tax) | Assets |
 | --- | --- | --- | --- |
-| Main pool | 18% (reducing balance) | 14% | General plant & machinery |
-| Special rate pool | 6% | 6% | Long-life assets, integral features, thermal insulation, cars with CO2 > 50g/km |
+| Main pool | 18% (reducing balance) | 14% | General plant & machinery Source: https://www.gov.uk/capital-allowances/business-cars (tax year 2026) (read 2026-10-31) |
+| Special rate pool | 6% | 6% | Long-life assets, integral features, thermal insulation, cars with CO2 > 50g/km Source: https://www.gov.uk/capital-allowances/business-cars (tax year 2026) (read 2026-10-31) |
 
 ### New 40% First-Year Allowance (from 1 January 2026)
 
@@ -184,7 +180,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 | Defer income | If using the cash basis (the default for the self-employed since 2024/25), delay invoicing to after 5 April to push income into the next tax year. Useful if expecting lower income next year or approaching a rate threshold. |
 | Accelerate expenses | Prepay annual subscriptions, make planned purchases, and pay outstanding invoices before 5 April. |
 | Personal Allowance recovery | If adjusted net income is between £100,000 and £125,140, the effective marginal rate is 60%. Make pension contributions or Gift Aid donations to bring income below £100,000 and recover the full Personal Allowance. |
-| Payment on account management | Payments on account (31 January and 31 July) are based on prior year's liability. If current-year income will be lower, apply to reduce payments on account (SA303). |
+| Payment on account management | Payments on account (31 January and 31 July) are based on prior year's liability. If current-year income will be lower, apply to reduce payments on account (SA303). Source: https://www.gov.uk/understand-self-assessment-bill/payments-on-account (tax year 2026) (read 2026-10-31) |
 | Spouse transfers | Transfer savings income or rental property ownership to a lower-earning spouse to use their Personal Allowance, savings allowance, or basic rate band. |
 
 ## Section 7 -- VAT Optimization
@@ -195,13 +191,13 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 | Strategy | Detail |
 | --- | --- |
-| VAT registration threshold | £90,000 (2026/27). Below this, registration is voluntary. |
-| Flat Rate Scheme (FRS) | Fixed percentage of gross turnover as VAT. Can be simpler and may result in lower VAT if input VAT is low. 1% discount in first year of VAT registration. |
+| VAT registration threshold | £90,000 (2026/27). Below this, registration is voluntary. Source: https://www.gov.uk/vat-registration/when-to-register (tax year 2026) (read 2026-10-31) |
+| Flat Rate Scheme (FRS) | Fixed percentage of gross turnover as VAT. Can be simpler and may result in lower VAT if input VAT is low. 1% discount in first year of VAT registration. Source: https://www.gov.uk/simpler-income-tax-simplified-expenses/print (tax year 2026) (read 2026-10-31) |
 | Cash accounting scheme | Pay VAT only when paid by customers (not when invoiced). Helps cash flow and avoids paying VAT on bad debts. |
 | Annual accounting scheme | One VAT return per year instead of quarterly. Nine monthly instalments based on estimate, balancing payment with annual return. |
 | Partial exemption | If making both taxable and exempt supplies, optimize the allocation method to maximize input VAT recovery. Standard method vs special method. |
 | Capital Goods Scheme | For land and buildings (and civil engineering works) of £600,000 or more (exclusive of VAT) and aircraft, ships, boats and other vessels of £50,000 or more, input VAT is adjusted over later intervals (VAT Regulations 1995 reg 113). Computers are no longer capital items: reg 113(2)(d) is repealed, and HMRC notice 706/2 was updated on 29 July 2026 to match. |
-| De-registration | If turnover falls below £88,000 (de-registration threshold), consider voluntary de-registration if clients are VAT-exempt consumers. |
+| De-registration | If turnover falls below £88,000 (de-registration threshold), consider voluntary de-registration if clients are VAT-exempt consumers. Source: https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 (tax year 2026) (read 2026-10-31) |
 
 ## Section 8 -- Social Security Optimization
 
@@ -213,8 +209,8 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 | Class | Who pays | Rate | Threshold |
 | --- | --- | --- | --- |
-| Class 2 | Self-employed | Treated as paid (no charge) if profits ≥ £7,105 | Voluntary (£3.65 a week) if below |
-| Class 4 | Self-employed | 6% on profits £12,570-£50,270; 2% above £50,270 | Lower Profits Limit £12,570 |
+| Class 2 | Self-employed | Treated as paid (no charge) if profits ≥ £7,105 | Voluntary (£3.65 a week) if below Source: https://www.gov.uk/self-employed-national-insurance-rates (tax year 2026) (read 2026-10-31) |
+| Class 4 | Self-employed | 6% on profits £12,570-£50,270; 2% above £50,270 | Lower Profits Limit £12,570 Source: https://www.gov.uk/self-employed-national-insurance-rates (tax year 2026) (read 2026-10-31) |
 
 ### Optimization Strategies
 
@@ -222,7 +218,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 | Strategy | Detail |
 | --- | --- |
-| Voluntary Class 2 | If profits are below £7,105, voluntary Class 2 (£3.65 a week for 2026/27) protects State Pension entitlement. From 2026/27, voluntary Class 2 is no longer available for periods abroad for most people. |
+| Voluntary Class 2 | If profits are below £7,105, voluntary Class 2 (£3.65 a week for 2026/27) protects State Pension entitlement. From 2026/27, voluntary Class 2 is no longer available for periods abroad for most people. Source: https://www.gov.uk/self-employed-national-insurance-rates (tax year 2026) (read 2026-10-31) |
 | NIC holiday (incorporation) | Directors of Ltd companies can set salary below the Primary Threshold (£12,570), but at or above the Lower Earnings Limit (£6,708 for 2026/27), to avoid employee NIC while still earning a qualifying year. |
 | Maximize pension contributions | Pension contributions reduce income for the Personal Allowance taper calculation but do not reduce NIC-liable profits. |
 
@@ -393,19 +389,17 @@ expected:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| GOV.UK, Income Tax rates 2026/27 | https://www.gov.uk/income-tax-rates | 2026-10-23 |
-| GOV.UK, Tax on dividends | https://www.gov.uk/tax-on-dividends | 2026-10-23 |
+| GOV.UK, Income Tax rates 2026/27 | https://www.gov.uk/income-tax-rates | 2026-10-31 |
+| GOV.UK, Tax on dividends | https://www.gov.uk/tax-on-dividends | 2026-10-31 |
 | Finance Act 2026 s.4 (dividend rates) | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-10-23 |
-| GOV.UK, Self-employed National Insurance rates | https://www.gov.uk/self-employed-national-insurance-rates | 2026-10-23 |
+| GOV.UK, Self-employed National Insurance rates | https://www.gov.uk/self-employed-national-insurance-rates | 2026-10-31 |
 | GOV.UK, Rates and thresholds for employers 2026 to 2027 | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 | 2026-10-23 |
 | GOV.UK, Corporation Tax rates | https://www.gov.uk/corporation-tax-rates | 2026-10-23 |
-| GOV.UK, Simplified expenses (mileage, use of home) | https://www.gov.uk/simpler-income-tax-simplified-expenses/print | 2026-10-23 |
+| GOV.UK, Simplified expenses (mileage, use of home) | https://www.gov.uk/simpler-income-tax-simplified-expenses/print | 2026-10-31 |
 | GOV.UK, Annual Investment Allowance | https://www.gov.uk/capital-allowances/annual-investment-allowance | 2026-10-23 |
 | Finance Act 2026 s.28 (main pool 14%) | https://www.legislation.gov.uk/ukpga/2026/11/section/28 | 2026-10-23 |
 | Finance Act 2026 s.29 (40% first-year allowance) | https://www.legislation.gov.uk/ukpga/2026/11/section/29 | 2026-10-23 |
@@ -415,32 +409,16 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | GOV.UK, Individual Savings Accounts | https://www.gov.uk/individual-savings-accounts | 2026-10-23 |
 | GOV.UK, Venture capital schemes: tax relief for investors | https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors | 2026-10-23 |
 | Finance Act 2026 s.15 (VCT relief 20%) | https://www.legislation.gov.uk/ukpga/2026/11/section/15 | 2026-10-23 |
-| VATA 1994 Sch 1 para 1 (registration threshold) | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 | 2026-10-23 |
+| VATA 1994 Sch 1 para 1 (registration threshold) | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 | 2026-10-31 |
 | HMRC, Capital Goods Scheme (VAT Notice 706/2) | https://www.gov.uk/guidance/capital-goods-scheme-notice-7062 | 2026-10-23 |
 | VAT Regulations 1995 reg 113 (capital items and values) | https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 | 2026-10-23 |
-| GOV.UK, Business cars (40% FYA, 100% FYA before April 2027) | https://www.gov.uk/capital-allowances/business-cars | 2026-10-23 |
+| GOV.UK, Business cars (40% FYA, 100% FYA before April 2027) | https://www.gov.uk/capital-allowances/business-cars | 2026-10-31 |
 | GOV.UK, Voluntary National Insurance abroad from 6 April 2026 | https://www.gov.uk/government/publications/voluntary-national-insurance-contributions-for-periods-abroad-from-6-april-2026/voluntary-national-insurance-contributions-abroad-from-6-april-2026 | 2026-10-23 |
+| Official page | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-10-31 |
+| Official page | https://www.gov.uk/vat-registration/when-to-register | 2026-10-31 |
 
 Not yet confirmed: nothing in this skill depends on a figure not read from the sources above.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,20 +7,24 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `audit-quality-assurance-aqa.md`
-4. `export-declaration-requirement-for-imported-goods.md`
-5. `ke-company-formation.md`
-6. `ke-corporate-income-tax.md`
-7. `ke-income-tax-2.md`
+3. `README.md`
+4. `audit-quality-assurance-aqa.md`
+5. `export-declaration-requirement-for-imported-goods.md`
+6. `ke-company-formation.md`
+7. `ke-corporate-income-tax.md`
 8. `ke-income-tax.md`
 9. `ke-nhif-nssf.md`
-10. `ke-tax-overview.md`
-11. `kenya-vat.md`
-12. `non-resident-rental-income-tax-on-kenyan-property.md`
-13. `set-up-your-company-in-kenya-we-handle-it-from-abroad.md`
-14. `tax-amnesty.md`
-15. `the-burden-of-proof-in-tax-cases.md`
-16. `company-formation-workflow-base.md`
+10. `ke-payroll-paye-nssf-shif-ahl.md`
+11. `ke-tax-overview.md`
+12. `ke-transfer-pricing.md`
+13. `kenya-vat.md`
+14. `non-resident-rental-income-tax-on-kenyan-property.md`
+15. `set-up-your-company-in-kenya-we-handle-it-from-abroad.md`
+16. `tax-amnesty.md`
+17. `the-burden-of-proof-in-tax-cases.md`
+18. `payroll-workflow-base.md`
+19. `company-formation-workflow-base.md`
+20. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

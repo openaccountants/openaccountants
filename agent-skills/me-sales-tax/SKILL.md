@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/me-sales-tax"
   jurisdiction: "US-ME"
   tax_year: "2025"
-  last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-03"
 ---
 
 # ME Sales Tax
@@ -21,14 +19,14 @@ metadata:
 | Field | Value |
 | --- | --- |
 | Jurisdiction | Maine |
-| State rate | 5.50% (general); 8.00% (short-term auto rental); 9.00% (lodging/prepared food) |
+| State rate | 5.50% (general); 8.00% (prepared food); 9.00% (lodging); 10.00% (short-term auto rental) |
 | Local taxes | None |
 | Sourcing | Destination-based |
-| Economic nexus | $100,000 OR 200 transactions |
+| Economic nexus | More than $100,000 in gross sales delivered into Maine in the previous or current calendar year (same test for marketplace facilitators). No transaction-count test. 36 MRSA s.1754-B(1-B)(B) and (K) |
 | Tax authority | Maine Revenue Services (MRS) |
 | Portal | https://www.maine.gov/revenue |
 | SST member | No |
-| Skill version | 2.0 |
+| Skill version | 2.1 |
 
 ## Section 3 -- Transaction pattern library
 
@@ -51,9 +49,9 @@ metadata:
 
 ## Section 10 -- Prohibitions
 
-- **Prohibition on using 5.50% for prepared food or lodging** — NEVER use the 5.50% rate for prepared food or lodging -- they have higher rates (9%).  _(Section 10 -- Prohibitions)_
-- **Prohibition on forgetting short-term auto rental rate** — NEVER forget the 8% short-term auto rental rate.  _(Section 10 -- Prohibitions)_
-- **Prohibition on computing numbers** — NEVER compute any number.  _(Section 10 -- Prohibitions)_
+- **Prohibition on using 5.50% for prepared food or lodging** -- NEVER use the 5.50% rate for prepared food or lodging -- they have higher rates (8% prepared food, 9% lodging).  _(Section 10 -- Prohibitions)_
+- **Prohibition on forgetting short-term auto rental rate** -- NEVER forget the 10% short-term auto rental rate.  _(Section 10 -- Prohibitions)_
+- **Prohibition on computing numbers** -- NEVER compute any number.  _(Section 10 -- Prohibitions)_
 
 ## Disclaimer
 
@@ -63,26 +61,33 @@ Informational only. Review by qualified professional required before filing.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+## Checked examples
 
-<!-- openaccountants-cta-block -->
+```oa-check
+name: Prepared food at 8%
+inputs:
+  sale: 100
+steps:
+  - tax: sale * 0.08
+expected:
+  tax: 8.00
+```
 
----
+```oa-check
+name: Short-term auto rental at 10%
+inputs:
+  rental: 300
+steps:
+  - tax: rental * 0.10
+expected:
+  tax: 30.00
+```
 
-## Talk to a verified accountant
+## Sources
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+1. 36 MRSA s.1811(1)(D), read 2026-11-01 -- https://legislature.maine.gov/statutes/36/title36sec1811.html
+2. 36 MRSA s.1754-B(1-B)(B) and (K), read 2026-11-03 -- https://legislature.maine.gov/statutes/36/title36sec1754-B.html (the earlier transaction-count test was removed by PL 2021, c.181, Pt. B, ss.4 and 5, for sales from 1 January 2022; LD 1216 fiscal summary, 130th Legislature: https://legislature.maine.gov/doc/6615)
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `me-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/me-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-03. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `me-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/me-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

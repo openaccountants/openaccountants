@@ -4,12 +4,11 @@ description: ALWAYS read this skill before touching any Sri Lanka Social Securit
 jurisdiction: LK
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Lal kumarasiri, CA
-reviewed_by: Lal kumarasiri
-review_status: current
-trust_label: Checked by Lal kumarasiri
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Lal kumarasiri"
+reviewed_on: 2026-11-03
+tier: 1
+domain: payroll
 ---
 
 # Sri Lanka Sscl
@@ -32,7 +31,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Status | **In force** (most recently amended by the SSCL Amendment Act No. 24 of 2025) |
 | Principal statute | Social Security Contribution Levy Act (2022), as amended — VERIFY the exact principal-Act number/year |
 | Registration threshold | **Not asserted — VERIFY** (a quarterly liable-turnover threshold applies; confirm current LKR figure with the IRD) |
-| Validated by | Pending — Sri Lankan CA / IRD-registered practitioner |
 | Skill version | 1.0 |
 
 ### Conservative defaults
@@ -103,21 +101,3 @@ SSCL is administered by the IRD. Return/payment frequency and due dates — VERI
 ## Disclaimer
 
 This skill and its outputs are for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Sri Lankan professional (CA / IRD-registered tax practitioner) before filing or acting upon. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

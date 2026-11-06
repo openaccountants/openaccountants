@@ -7,21 +7,17 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/poland-vat-return"
   jurisdiction: "PL"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Poland VAT return (2026)
-
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
 
 This skill covers Polish VAT for a business registered in Poland: when to register, the rates, the monthly or quarterly JPK_V7 file, KSeF e-invoicing, split payment and the white list. It links to the other Poland skills and does not repeat them:
 
 - [poland-einvoice](poland-einvoice.md): the FA(3) structured invoice, KSeF access, offline modes.
 - [pl-income-tax](pl-income-tax.md) and [pl-cit-corporate-tax](pl-cit-corporate-tax.md): income tax of sole traders and companies, including the cost rules tied to the white list.
 - [pl-cross-border](pl-cross-border.md): income tax for people moving in or out of Poland.
-- EU rules on place of supply, intra-EU supplies and OSS are in [eu-vat-directive](../eu/eu-vat-directive.md); the general return workflow is in [vat-workflow-base](../../foundation/vat-workflow-base.md).
+- EU rules on place of supply, intra-EU supplies and OSS are in [eu-vat-directive](../eu/eu-vat-directive.md); the general return workflow is in [vat-workflow-base](../foundation/vat-workflow-base.md).
 
 **Which text of the law.** VAT Act (ustawa z dnia 11 marca 2004 r. o podatku od towarów i usług), consolidated text Dz.U. 2026 poz. 1263, the law as at 26 August 2026. The next amendment, Dz.U. 2026 poz. 1270, takes effect on 1 January 2027 and is not covered here. Tax Ordinance, Dz.U. 2026 poz. 622.
 
@@ -190,26 +186,6 @@ expected:
 
 Not yet confirmed: the PLN 8,517,000 small-taxpayer limit is computed here from the NBP rate; the Ministry page states the EUR 2,000,000 rule but no PLN figure. The CIT Act article on split payment and the white list (art. 15d) was not re-read for this version. When a business that has lost the small-business exemption must have filed VAT-R (before the crossing sale or before the next one) was not settled from the text of art. 96. The date the EU SME scheme (art. 113a-113b) first applied is not given in the consolidated text.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `poland-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/poland-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `poland-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/poland-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

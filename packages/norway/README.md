@@ -7,16 +7,22 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `no-capital-gains.md`
-4. `no-company-formation.md`
-5. `no-corporate-income-tax.md`
-6. `no-income-tax.md`
-7. `no-social-contributions.md`
-8. `no-tax-overview.md`
-9. `no-vat-return.md`
-10. `norway-mva.md`
-11. `norway-to-switzerland-wealth-tax-exit.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `no-capital-gains.md`
+5. `no-company-formation.md`
+6. `no-corporate-income-tax.md`
+7. `no-employer-payroll.md`
+8. `no-income-tax.md`
+9. `no-individual-residence.md`
+10. `no-social-contributions.md`
+11. `no-tax-overview.md`
+12. `no-transfer-pricing.md`
+13. `no-vat-return.md`
+14. `norway-mva.md`
+15. `norway-to-switzerland-wealth-tax-exit.md`
+16. `payroll-workflow-base.md`
+17. `company-formation-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

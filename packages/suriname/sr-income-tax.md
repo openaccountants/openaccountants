@@ -4,10 +4,10 @@ description: "Source-cited draft: personal income tax for Suriname (tax year 202
 jurisdiction: SR
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: income-tax
 ---
 
 # Suriname Personal Income Tax
@@ -28,21 +28,3 @@ Personal income tax is progressive with a 0% tax-free band and rates from 8% to 
 - **Non-resident taxation** — Non-residents taxed on Suriname-source income only; the same progressive rate schedule applies ((approx — confirm non-resident threshold treatment))  _(Income Tax Act 1922 (Inkomstenbelasting 1922))_
 - **Annual return filing deadline** — 30 June following the tax year ((approx — confirm))  _(Income Tax Act 1922 (Inkomstenbelasting 1922))_
 - **Provisional/advance payments** — Self-employed taxpayers make provisional payments during the year; final assessment settles the balance ((approx — confirm schedule))  _(Income Tax Act 1922 (Inkomstenbelasting 1922))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

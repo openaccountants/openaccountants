@@ -4,10 +4,9 @@ description: "Source-cited draft: payroll & social contributions for Trinidad an
 jurisdiction: TT
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Trinidad and Tobago Payroll & Social Contributions
@@ -26,21 +25,3 @@ Employers withhold income tax under PAYE and remit National Insurance (NIS) and 
 - **PAYE withholding** — Employers deduct income tax from emoluments under the PAYE system based on each employee's TD1 declaration  _([Income Tax (Employment) Regulations](https://taxsummaries.pwc.com/trinidad-and-tobago/individual/tax-administration))_
 - **PAYE and Health Surcharge remittance deadline** — By the 15th of the month following the deduction  _([Income Tax (Employment) Regulations](https://www.ird.gov.tt/health-surcharge))_
 - **NIS remittance deadline** — By the 15th of the month following the contribution period (approx — confirm)  _([National Insurance Act (Chap. 32:01)](https://www.nibtt.net/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

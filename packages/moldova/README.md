@@ -7,16 +7,23 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `md-company-formation.md`
-4. `md-corporate-income-tax.md`
-5. `md-tax-overview.md`
-6. `moldova-income-tax.md`
-7. `moldova-payroll.md`
-8. `moldova-social-contributions.md`
-9. `moldova-tax-optimization.md`
-10. `moldova-vat.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `md-company-formation.md`
+5. `md-corporate-income-tax.md`
+6. `md-cross-border.md`
+7. `md-property-tax.md`
+8. `md-tax-overview.md`
+9. `md-transfer-pricing.md`
+10. `md-vat-refund.md`
+11. `md-wealth-tax.md`
+12. `moldova-income-tax.md`
+13. `moldova-payroll.md`
+14. `moldova-social-contributions.md`
+15. `moldova-tax-optimization.md`
+16. `moldova-vat.md`
+17. `payroll-workflow-base.md`
+18. `company-formation-workflow-base.md`
+19. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -7,8 +7,9 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bl-annual-business-contribution.md`
-4. `bl-tourist-stay-tax.md`
+3. `README.md`
+4. `bl-annual-business-contribution.md`
+5. `bl-tourist-stay-tax.md`
 
 ## How to use
 

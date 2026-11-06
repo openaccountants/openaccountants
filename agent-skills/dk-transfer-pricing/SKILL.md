@@ -7,13 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/dk-transfer-pricing"
   jurisdiction: "DK"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Denmark: transfer pricing (armslængdeprincippet) v0.1
+# Denmark: transfer pricing (armslængdeprincippet) v0.2
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, transactions or filings. Do not rely on it to file, price a transaction or take a tax position without review by a qualified professional in Denmark.
 
@@ -28,7 +25,7 @@ Tax year: income year 2026 (indkomståret 2026). Currency: Danish kroner (DKK). 
 
 The same law added LL § 2 B (Amount B, see Cross-border points).
 
-See also: dk-corporate-tax (rates, base, interest limitation, return and payment), dk-income-tax (individuals), dk-capital-gains, dk-vat-return.
+See also: dk-corporate-tax (rates, base, interest limitation, return and payment), dk-income-tax (individuals), dk-capital-gains, denmark-vat-return.
 
 ## Who this applies to
 
@@ -250,26 +247,6 @@ expected:
 
 Not yet confirmed: (1) whether the documentation deadline moves when the 60th day falls on a weekend. SKL § 39, stk. 3 counts the 60 days from the return deadline "jf. §§ 11-13", but the § 13 weekend rule itself covers only the return deadlines, and Juridisk Vejledning C.D.11.13.1.3.2 gives 29 August for calendar years without a weekend rule. For calendar year 2026, 29 August 2027 is a Sunday, so file by Friday 27 August 2027. (2) The rules for the EU Dispute Resolution Directive and the EU Arbitration Convention in Danish law, and any time limits in specific Danish treaties, were not read for this skill. (3) Whether Skattestyrelsen offers unilateral APAs, beyond binding rulings (bindende svar), was not confirmed. (4) Which characterisation applies to a given secondary adjustment (for example whether an overpayment by a Danish subsidiary to its foreign parent is a dividend with Danish withholding tax) was not researched.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

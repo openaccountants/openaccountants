@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/crypto-accounting"
   jurisdiction: "GB"
   last_updated: "2026-09-02"
-  authored_by: "Nadir Khan, OTHER"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Nadir Khan"
 ---
 
 # Crypto Accounting in United Kingdom: Bookkeeping & Record-Keeping for Crypto Transactions, how I do it
@@ -69,24 +67,6 @@ This applies to accountants building or reviewing the underlying transaction led
 - HMRC Cryptoassets Manual, CRYPTO10400 — Introduction to cryptoassets: record keeping — https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto10400 - HMRC Cryptoassets Manual, CRYPTO10000 — Introduction to cryptoassets: contents — https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto10000 - HMRC Cryptoassets Manual, CRYPTO22200 — Capital Gains Tax: pooling, section 104 — https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200 - Taxation of Chargeable Gains Act 1992, ss.104, 105, 106A - HMRC, Self Assessment tax returns: Keeping your pay and tax records — https://www.gov.uk/self-assessment-tax-returns/keeping-your-pay-and-tax-records
 
 > Contributed by Nadir Khan.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

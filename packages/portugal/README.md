@@ -22,10 +22,10 @@
 15. `pt-income-tax.md`
 16. `pt-irs-employees-investment.md`
 17. `pt-nhr-ifici.md`
-18. `pt-return-assembly.md`
-19. `pt-social-contributions.md`
-20. `pt-transfer-pricing.md`
-21. `pt-vat-return.md`
+18. `pt-return-assembly-filing.md`
+19. `pt-return-assembly.md`
+20. `pt-social-contributions.md`
+21. `pt-transfer-pricing.md`
 22. `eu-vat-directive.md`
 23. `bookkeeping-workflow-base.md`
 24. `einvoice-workflow-base.md`

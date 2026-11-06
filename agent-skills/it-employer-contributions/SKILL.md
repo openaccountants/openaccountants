@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-employer-contributions"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Italy: employer INPS and INAIL contributions and the cost of an employee (2026)
@@ -269,26 +266,6 @@ expected:
 
 Not yet confirmed: no INPS publication for 2026 prints the full rate set for industry and commerce, so the totals are built from the 2022 and 2024 INPS circulars, the INPS 2010 rate tables (CUAF 0.68% for industry and commerce, sickness 2.44% for commerce impiegati) and the statutes; L. 199/2025 was not read line by line for changes to these smaller contributions. The 0.50% of L. 297/1982 is an increase in the employer's FPLD pension rate (art. 3, and INPS Circolare 55/2026 para. 5 calls it the employer's "contributo aggiuntivo IVS"), so it sits inside the 23.81%; no INPS table prints that split. The INAIL rate a given firm pays (its tasso applicato after oscillation and prevention cuts) and any general INAIL premium cut for 2026 were not read; the examples use the voce 0722 tasso medio. The 2026/2027 INAIL autoliquidazione dates, the decree text of D.L. 62/2026 and Circolare 57/2026 on the Bonus donne (read only from the INPS news item; Circolari 55 and 56/2026 were read) and the 2026 rules for foreign employers registering with INPS were not read.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-employer-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-employer-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-employer-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-employer-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

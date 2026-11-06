@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UZ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Uzbekistan Corporate Income Tax
@@ -33,24 +31,6 @@ Corporate income tax (CIT) in Uzbekistan is charged at a standard 15% rate, with
 - **Annual CIT return deadline** — 1 March following the reporting year  _(Tax Code of the Republic of Uzbekistan — https://taxsummaries.pwc.com/republic-of-uzbekistan/corporate/tax-administration)_
 - **Quarterly CIT reports** — Due by the 20th of the month following the quarter; tax payable by the same date  _(Tax Code of the Republic of Uzbekistan — https://taxsummaries.pwc.com/republic-of-uzbekistan/corporate/tax-administration)_
 - **Monthly advance payments** — Companies with prior-year income over UZS 20 billion make monthly advance payments by the 23rd of each month UZS  _(Tax Code of the Republic of Uzbekistan — https://taxsummaries.pwc.com/republic-of-uzbekistan/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

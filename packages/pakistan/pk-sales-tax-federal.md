@@ -4,11 +4,11 @@ description: ALWAYS read this skill before touching any Pakistan FEDERAL sales t
 jurisdiction: PK
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ibrar Ali"
+reviewed_on: 2026-11-03
+tier: 1
+domain: vat-gst
 ---
 
 # PK Sales Tax Federal
@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 >
 > **Out of scope.** Provincial sales tax on **services** (Sindh Revenue Board / SRB, Punjab Revenue Authority / PRA, Khyber Pakhtunkhwa Revenue Authority / KPRA, Balochistan Revenue Authority / BRA, and Islamabad Capital Territory services tax administered by FBR) is handled by the companion skill `pk-sales-tax-services`. Federal Excise Duty (FED), customs duty, and income tax / withholding tax are also out of scope.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -84,7 +84,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Input credit cap | **90% of output tax** maximum credit per period (Sec 8B STA 1990); excess carries forward |
 | Refund | Available primarily to exporters and zero-rated suppliers via Annex-H / FASTER / ERS systems |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a Pakistan-registered Chartered Accountant or tax practitioner |
 | Skill version | 2.0 |
 
 ### Key STR sections (federal sales tax return on IRIS)
@@ -493,23 +492,3 @@ Input tax cross-credit between federal goods ST and provincial services ST is **
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Pakistan-registered Chartered Accountant (ICAP / ICMAP), licensed tax practitioner, or equivalent) before filing with FBR or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes (Finance Acts, SROs, and FBR notifications are issued frequently).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

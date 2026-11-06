@@ -17,8 +17,9 @@ depends_on:
   - eu-directives-cross-border
   - oecd-model-treaty-defaults
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
+domain: cross-border
 ---
 
 # Cross-Border Workflow Base — Master Multi-Jurisdiction Orchestrator
@@ -554,5 +555,3 @@ This file is v1.0 of `cross-border-workflow-base`, drafted May 2026 as part of t
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. Cross-border tax matters are inherently complex and fact-specific. All outputs must be reviewed and signed off by a qualified international tax professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

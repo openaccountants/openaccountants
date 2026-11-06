@@ -24,7 +24,6 @@ metadata:
 | Core records | Income/receipts, expenses, bank statements, invoices, asset register |
 | IT exporter must keep | Bank credit advices / **PRC (Proceeds Realization Certificate)** for every foreign remittance |
 | Retention | Generally 6 years (verify s.174 Income Tax Ordinance) |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — What to keep (Tier 1)

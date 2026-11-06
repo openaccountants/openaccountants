@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "DE"
   tax_year: "2026"
   last_updated: "2026-10-04"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # A UK company’s first employee in Germany: what the employer needs to arrange
@@ -51,7 +48,7 @@ These facts establish the route. The payroll provider can then request the speci
 
    Where the employer has no German withholding obligation, the employee still needs advice on German income-tax reporting and advance payments. German residence can establish unlimited income-tax liability, and the tax office sets advances by assessment. Any UK payroll consequences need separate UK advice. [§ 1 EStG](https://www.gesetze-im-internet.de/estg/__1.html), [§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html)
 
-9. **Agree who runs payroll and funds the payments.** The employer is responsible for the total social-insurance contribution. Employee shares are normally recovered through wage deduction, subject to statutory limits for missed deductions. The company should agree responsibility for calculations, returns, payment funding and notice reconciliation with its provider. Salary, benefits, variable pay, hours and contract terms are needed to calculate the payslip after the insurance and tax decisions are settled. The German payroll Guide (`germany-payroll`) covers those calculations and the routine payroll cycle. [§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)
+9. **Agree who runs payroll and funds the payments.** The employer is responsible for the total social-insurance contribution. Employee shares are normally recovered through wage deduction, subject to statutory limits for missed deductions. The company should agree responsibility for calculations, returns, payment funding and notice reconciliation with its provider. Salary, benefits, variable pay, hours and contract terms are needed to calculate the payslip after the insurance and tax decisions are settled. The German payroll Guide (`de-payroll`) covers those calculations and the routine payroll cycle. [§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)
 
    Contributions can fall due before salary is paid: the statement precedes the due date by two working days; the expected contribution is generally due by the third-last bank working day of the month, with the statutory following-month reconciliation. The provider’s collection calendar should give the company enough time to fund those payments. [§ 28f(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html), [§ 23 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html)
 
@@ -79,24 +76,6 @@ Keep the registrations, mandates, relevant certificates and tax advice together 
 - Temporary UK postings, regular work in several countries and certificate disputes need an assessment under the applicable coordination rules. EU telework arrangements cannot simply be assumed to cover a UK case.
 - Labour leasing, directors and shareholders, employment-status disputes, equity remuneration and regulated sectors need specialist advice beyond this ordinary direct-hire route.
 - Company tax presence, profit attribution, corporate residence, employment-law terms and immigration permission need their own conclusions alongside payroll registration.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

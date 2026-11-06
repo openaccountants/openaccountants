@@ -2,16 +2,14 @@
 name: gd-vat-registration
 description: >
   Grenada VAT registration and return administration reference checked for 2026. Covers the ordinary taxable-supplies threshold, aggregation of activities, public-entertainment registration, backward and forward turnover monitoring, return timing and deregistration requests. Use for Grenada VAT registration, EC$300,000 threshold, taxable turnover or VAT compliance administration. This Guide deliberately does not calculate output tax because the retrieved current summary is insufficient to establish all applicable rates and classifications. Input deductions, imports, reverse charge and supply exemptions require separate sourced work. Indexed official guidance and the underlying statutory provisions still need direct verification before release.
-version: 0.1
+version: 0.2
 jurisdiction: GD
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Grenada VAT registration and returns
@@ -45,23 +43,3 @@ The G-TAX FAQ directs a person seeking cancellation to submit a written request 
 ## Unresolved scope
 
 Confirm registration timing, payment deadlines, rates, zero-rating and exemption schedules, invoices, deductions, imports, refunds and special-sector rules before completing a return. The retrieved VAT page describes tourism/accommodation at 10% in an ambiguously worded general-rate answer; it is not used to establish a universal rate. Do not substitute an assumed VAT percentage for research. Independent review and direct source verification remain pending.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

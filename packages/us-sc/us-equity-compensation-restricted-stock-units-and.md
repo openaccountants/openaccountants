@@ -4,11 +4,8 @@ description: How US employers and their advisers withhold and report federal tax
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Equity compensation: RSUs, stock options, supplemental wage withholding and the section 83(i) deferral election in United States
@@ -268,21 +265,3 @@ The employee should pay the shortfall through estimated tax or a higher Form W-4
 - https://www.irs.gov/instructions/i8949 (Instructions for Form 8949 (2025): basis of compensatory option stock, code B)
 - https://www.irs.gov/instructions/i3921 (Instructions for Forms 3921 and 3922)
 - https://www.irs.gov/pub/irs-drop/n-18-97.pdf (Notice 2018-97: section 83(i) guidance)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

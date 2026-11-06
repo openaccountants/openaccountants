@@ -1,10 +1,10 @@
 ---
 name: australia-references
 jurisdiction: AU
-tier: 2
 last_updated: 2026-08-20
 version: 1.1
 description: Primary source references and related open-source projects for this jurisdiction.
+tier: 2
 ---
 
 # Australia — Related Open-Source Projects

@@ -5,13 +5,12 @@ version: 0.3
 jurisdiction: AM
 tax_year: 2026
 last_updated: 2026-10-28
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
 category: payroll
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Armenia payroll: 2026 ordinary salary and statutory reconciliation
@@ -257,21 +256,3 @@ Targeted commencement recheck, **25 October 2026**: [current Health Law arts. 16
 **Not yet confirmed:** operative Government procedure/commencement for Health 14(12) mistaken/no-liability payments and the specified suspended/age-65 entrepreneur refund implementation. Ordinary working-time, minimum-pay, leave and termination methods and the current statutory health transition are supplied; the ordinary benefit method now states the explicit statutory tax-inclusive calculation and uses the Service notice for payment, with the statutory inputs reconciled separately. Specialist employment/R&D/foreign-status branches, actual portal signatures/rounding/acceptance and enforcement/remedies remain separate boundaries. These are conditional exceptional-payment/refund boundaries, distinct from the ordinary contribution/payroll method and supplied participant-excess procedure. No country approval or professional attestation is claimed.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

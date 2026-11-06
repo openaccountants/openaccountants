@@ -5,14 +5,12 @@ version: 1.2
 jurisdiction: NL
 tax_year: 2026
 last_updated: 2026-10-24
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: transfer-pricing
 ---
 
 # Netherlands transfer pricing: pricing, documentation and reporting, 2026 v1.2
@@ -200,21 +198,3 @@ Other checks in short, all from the articles above: revenue of exactly EUR 50,00
 No later decree amending the Verrekenprijsbesluit 2022 was found in a search of officielebekendmakingen.nl on 23 October 2026.
 
 Not yet confirmed: how the Belastingdienst sets the amount of an article 29h fine in practice (BBBB § 28h leaves it to the formal-law coordinator and publishes no percentage); whether the Beleidsbesluit toepassing internationaal belastingrecht in de winstsfeer 2026 (6 August 2026) changes permanent establishment profit allocation used in the local file.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

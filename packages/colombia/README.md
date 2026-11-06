@@ -7,15 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `co-company-formation.md`
-4. `co-corporate-income-tax.md`
-5. `co-income-tax.md`
+3. `README.md`
+4. `co-company-formation.md`
+5. `co-corporate-income-tax.md`
 6. `co-social-contributions.md`
 7. `co-tax-overview.md`
 8. `co-vat-return.md`
-9. `colombia-iva.md`
-10. `formalizing-small-informal-businesses-in-colombia.md`
-11. `company-formation-workflow-base.md`
+9. `colombia-income-tax.md`
+10. `colombia-iva.md`
+11. `formalizing-small-informal-businesses-in-colombia.md`
+12. `company-formation-workflow-base.md`
 
 ## Also known as
 

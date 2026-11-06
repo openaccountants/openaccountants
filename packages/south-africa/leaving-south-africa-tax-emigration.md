@@ -4,11 +4,9 @@ description: South Africa replaced 'financial emigration' with a purely tax-driv
 jurisdiction: ZA
 tax_year: 2025
 last_updated: 2026-08-03
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
 # Leaving South Africa: tax emigration, the exit charge, and the three-year locks
@@ -202,21 +200,3 @@ becomes your passport for every rand that follows you. The people who suffer on 
 corridor are almost never the ones who declared — they're the ones who assumed leaving was
 something that happened to them. Declare the date, fund the charge, and keep the file clean —
 with a named accountant on each end.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

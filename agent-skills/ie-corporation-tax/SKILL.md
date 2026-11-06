@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Irish corporation tax (CT1): 2026 rates, preliminary tax, losses, reliefs and filing
@@ -284,24 +281,6 @@ expected:
 | Taxes Consolidation Act 1997 | https://www.irishstatutebook.ie/eli/1997/act/39/enacted/en/html | 2026-10-23 |
 
 Not yet confirmed: whether the Finance (No. 2) Bill 2026 enacts the 31% CGT rate as in Financial Resolution No. 3 (if it does not, gains on disposals from 7 October 2026 go back to 33%); the other Bill proposals listed under "Deadlines and filing"; the preliminary tax due date for a large company with a period of less than seven months (Revenue's page gives none; see TDM Part 41A-07-02); the current car cost limit for capital allowances (TDM Part 11-00-01 not re-read); the earlier version's R&D condition that the spending must not be deductible abroad (not found in TDM Part 29-02-03 as read on 27 October 2026); the earlier version's point that a 2025 CT1 filed on exactly 23 November 2026 gets the 5% surcharge but the 50% relief restriction (section 1084 was not read in full; TDM Part 47-06-04 gives only "less than two months" and "two months or more").
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

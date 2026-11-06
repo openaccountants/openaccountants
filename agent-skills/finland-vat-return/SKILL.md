@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "FI"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Finland VAT return v2.7
@@ -47,8 +44,6 @@ Vero's 13.5% examples include groceries and food, animal feed, restaurant and me
 5. The normal tax period is one calendar month. A business with annual turnover of no more than €100,000 may request a quarter; one with annual turnover of no more than €30,000 may request a quarter or a calendar year. Conditions: a longer period is refused if the business has failed to file VAT returns on time or failed to pay its taxes; a granted longer period starts at the beginning of the year after the request; a tax period must stay unchanged for at least 12 months; and if turnover goes over the limit for the longer period, the business must tell Vero immediately so the period is shortened (Vero can shorten it on its own decision). Until Vero's decision on a new period arrives, file on the current period. Agricultural and forestry operators, primary producers and visual artists with no other VAT-liable activity use a calendar-year period whatever their turnover. [Vero tax-period guidance](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/tax-period/)
 6. File a VAT return for **every** allocated period. For a period with no VAT activity, select the no-activity declaration in MyTax rather than omitting the return. Do **not** file a no-activity return if the period had zero-rate sales on which related purchases are deductible; report them under “Turnover taxable at zero VAT rate”. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/)
 7. The former VAT relief for small businesses (the reduction for accounting-period turnover under €30,000) is **abolished**: it is not available for accounting periods starting on or after 1 January 2025. Do not claim it for any 2026 period. An accounting period that began before 1 January 2025 is an old-period question; refer it. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/); [Vero small-business exemption guidance](https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/)
-
-
 
 ### Taxable consideration, tax point and deductions
 
@@ -225,24 +220,6 @@ Not yet confirmed: transaction-specific special margin/travel/group/marketplace 
 [deduct]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/deducting-vat-on-purchases/
 [vehicles]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/vat-on-vehicles/
 [interest]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 [margin]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48682/kaytettyjen-tavaroiden-arvonlisaverotus3/
 

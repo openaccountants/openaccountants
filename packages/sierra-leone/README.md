@@ -7,14 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `sl-company-formation.md`
-4. `sl-corporate-income-tax.md`
-5. `sl-income-tax.md`
-6. `sl-payroll-social.md`
-7. `sl-tax-overview.md`
-8. `sl-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `sl-company-formation.md`
+5. `sl-corporate-income-tax.md`
+6. `sl-cross-border.md`
+7. `sl-income-tax.md`
+8. `sl-payroll-social.md`
+9. `sl-tax-overview.md`
+10. `sl-transfer-pricing.md`
+11. `sl-vat-gst.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

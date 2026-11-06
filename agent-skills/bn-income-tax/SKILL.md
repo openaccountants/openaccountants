@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Brunei Personal Income Tax
@@ -24,24 +22,6 @@ metadata:
 - **Personal deductions / credits** — Not applicable (no personal income tax return is filed, so there are no personal deductions or credits)  _(Income Tax Act (Cap. 35))_
 - **Individual filing / payment deadline** — None (individuals do not file a personal income tax return in Brunei)  _(Income Tax Act (Cap. 35))_
 - **Mandatory deductions for individuals** — Only citizens and permanent residents make TAP/SCP contributions; foreign workers are generally not enrolled in TAP/SCP ((approx — confirm))  _([Tabung Amanah Pekerja Act (Cap. 167)](https://www.agc.gov.bn/AGC%20Images/LOB/pdf/Chp.167.pdf))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

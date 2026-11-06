@@ -4,10 +4,9 @@ description: "Source-cited draft: corporate income tax for Barbados (tax year 20
 jurisdiction: BB
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Barbados Corporate Income Tax
@@ -29,21 +28,3 @@ Barbados moved to a 9% general corporation tax rate from 1 January 2024, with re
 - **WHT on royalties (non-residents)** — 0% domestic rate before treaty relief ((confirm — historically royalties to non-residents carried a domestic WHT; verify current rate)) %  _([Income Tax Act, Cap. 73](https://taxsummaries.pwc.com/barbados/corporate/withholding-taxes))_
 - **Corporate income tax prepayments** — From income year 2025, all companies (except approved small businesses) prepay monthly 1/12 of the tax payable on taxable income of the income year before the preceding year, due by the 15th of each month  _([Income Tax Act, Cap. 73](https://bra.gov.bb/Popular-Topics/Companies/Filing-and-Payment))_
 - **Corporation tax return deadline** — Generally within 3-6 months of fiscal year end; BRA set 31 July 2025 for income year 2024 returns ((deadlines subject to BRA extension notices — confirm current year))  _([Income Tax Act, Cap. 73](https://bra.gov.bb/Popular-Topics/Companies/Filing-and-Payment))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
