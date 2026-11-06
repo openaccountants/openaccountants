@@ -27,6 +27,7 @@ A pack README.md with an `applicable:` / `not_applicable:` block narrows the
 domains that count as missing for that jurisdiction.
 
 Usage:
+    python3 -m pip install -r scripts/requirements-validation.txt
     python3 scripts/coverage-report.py               # full table
     python3 scripts/coverage-report.py --summary     # counts only
     python3 scripts/coverage-report.py --missing-only
@@ -49,6 +50,7 @@ DATA_PATH = os.path.join(REPO_ROOT, "scripts", "data", "jurisdictions.json")
 sys.path.insert(0, os.path.join(REPO_ROOT, "scripts"))
 
 import skill_checks  # noqa: E402
+from frontmatter_yaml import FrontmatterError, load_frontmatter  # noqa: E402
 
 # Codes that are not jurisdictions. Canonical list; docs/COVERAGE.md points here.
 PSEUDO_CODES = {"NONE", "GENERAL", "GLOBAL", "INTL", "EU", "EU-27", "EU/EEA/CH/UK", "EG-AE", "EG-SA"}
@@ -141,7 +143,8 @@ def read_pack_readme(pack_dir):
     covered_by maps a domain code to the slug that covers it when the slug
     tokens would not say so (for example IT-CORP: mt-company-tax).
     partial maps a domain code to what its skills leave out (for example
-    SC: self-employed only); such a domain counts as missing until the gap
+    SC: self-employed only), or lists domains with no individual reason;
+    such a domain counts as missing until the gap
     is closed, because a skill's presence is not coverage."""
     if not pack_dir:
         return None, {}, {}, {}
@@ -155,7 +158,23 @@ def read_pack_readme(pack_dir):
     block = text.split("---", 2)[1] if text.count("---") >= 2 else ""
     applicable = None
     covered_by = _domain_map(block, "covered_by")
-    partial = _domain_map(block, "partial")
+    try:
+        metadata = load_frontmatter(block)
+    except FrontmatterError as exc:
+        raise ValueError(f"{path}: {exc}") from exc
+    if "partial" not in metadata:
+        partial = {}
+    else:
+        declared_partial = metadata["partial"]
+        if not isinstance(declared_partial, (dict, list)) or any(
+            not isinstance(code, str) or code not in DOMAIN_CODES
+            for code in declared_partial
+        ):
+            raise ValueError(f"{path}: partial must be a mapping or list of tax domain codes")
+        partial = (
+            dict.fromkeys(declared_partial, "Declared partial in pack README")
+            if isinstance(declared_partial, list) else declared_partial
+        )
     m = re.search(r"^applicable:\s*\[([^\]]*)\]", block, re.MULTILINE)
     if m:
         applicable = [x.strip().strip("'\"") for x in m.group(1).split(",") if x.strip()]
