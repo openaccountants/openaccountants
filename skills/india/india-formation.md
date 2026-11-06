@@ -4,7 +4,7 @@ description: Use this skill whenever asked about forming, incorporating, or regi
 version: 1.0
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 depends_on:
   - company-formation-workflow-base
 category: formation
@@ -44,7 +44,7 @@ This Guide covers setting up a private limited company, a One Person Company (OP
 
 Sources for this table: sections 2(62) and 2(68), the One Person Company and private company definitions (ICAI study material, chapter 1: https://resource.cdn.icai.org/74729bos60488-m1-cp1.pdf); LLP sections 6, 7 and 34 (ICAI study material, chapter 12: https://resource.cdn.icai.org/74743bos60488-m3-cp12.pdf); annual return forms under rule 11 (ICAI study material, chapter 7: https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf); auditor appointment under section 139 (ICAI study material, chapter 10: https://resource.cdn.icai.org/74738bos60488-m2-cp10.pdf).
 
-A sole proprietorship is not a company or an LLP and is not covered by this Guide; its income is taxed as the owner's income (see `in-income-tax`).
+A sole proprietorship is not a company or an LLP and is not covered by this Guide; its income is taxed as the owner's income (see `india-income-tax`).
 
 **Which form to choose.** A private limited company is the usual vehicle for a business that will raise equity or bring in foreign investors. Rule 3 limits who may form an OPC (check it). An LLP suits a professional or partnership business that wants limited liability without share capital. This is a practical default, not a legal rule; the client's facts decide.
 

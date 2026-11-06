@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Indian professional tax (profes
 version: "1.0"
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -111,7 +111,7 @@ Section 202(1) of the 2025 Act sets the default rates for individuals, HUFs, ass
 - On the default regime, profession tax paid is NOT deducted from salary. The standard deduction does not "cover" it; it is simply not allowed.
 - Only a person who has opted out of section 202(1) under section 202(4) deducts profession tax paid from salary under section 19(1), Table serial 1.
 
-The standard deduction is a separate serial (Table serial 2) with its own amounts for each regime: see the Guide `in-income-tax`.
+The standard deduction is a separate serial (Table serial 2) with its own amounts for each regime: see the Guide `india-income-tax`.
 
 ### Business or profession income
 

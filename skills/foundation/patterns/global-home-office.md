@@ -4,7 +4,7 @@ description: Home office expense patterns and deduction rules across the top 10 
 version: 0.1
 jurisdiction: GLOBAL
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-06
 category: patterns
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -167,7 +167,7 @@ This skill does not state rates for other countries. Use the country Guide:
 | Malta | `malta-income-tax` |
 | France | `fr-personal-income-tax` |
 | Spain (suministros, IRPF deductions) | `es-irpf-deductions` |
-| India | `in-income-tax` |
+| India | `india-income-tax` |
 | Netherlands (werkruimte) | `nl-zzp-deductions` |
 | Switzerland | `ch-federal-income-tax` |
 

@@ -1,10 +1,10 @@
 ---
-name: in-income-tax
-description: Use this skill whenever asked about Indiana individual income tax. Trigger on phrases like "Indiana income tax", "IN income tax", "IT-40", "Indiana county tax", "IC 6-3". Indiana has a flat 2.95% state rate plus mandatory county income taxes (0.5%–3.38%). ALWAYS load us-tax-workflow-base first.
-version: "0.1"
+name: india-income-tax
+description: Use this skill whenever asked about Indian income tax for a resident individual with salary, interest, house property, or business or professional income, including freelancers and sole proprietors. Trigger on phrases like "how much tax do I pay in India", "India income tax", "new tax regime", "old tax regime", "section 87A rebate", "44AD", "44ADA", "presumptive taxation", "advance tax India", "Form 26AS", "AIS", "ITR-1", "ITR-3", "ITR-4", "Sugam", "Form 10-IEA", "Income-tax Act 2025", "Tax Year 2026-27" or "AY 2026-27". It covers both regimes, slabs, rebate and marginal relief, surcharge and cess, standard deduction and key deductions, presumptive income, regime choice, advance tax and interest, residence tests, TDS credits, the ITR form and the return deadlines, for Tax Year 2026-27 under the Income-tax Act, 2025 and AY 2026-27 returns under the 1961 Act. Non-residents, RNORs, capital gains beyond the ITR-1/ITR-4 limits, foreign income, firms, LLPs and companies are referred.
+version: "0.2"
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-06
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -251,6 +251,7 @@ Sources: [Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-
 - Foreign income, foreign assets or treaty relief (Form 67 must be filed by the s.139(1) due date): refer.
 - Turnover or receipts above the presumptive limits, profit declared below the presumptive rate, or a client who has moved in and out of 44AD: refer for books, audit and re-entry rules not covered here.
 - Any tax audit case, transfer pricing, firm, LLP, company or trust: refer.
+- Money or assets passed to a spouse or minor child, or a spouse or minor child earning from the client's business or assets: refer. Whether that income is added to the client's own (clubbing) is not covered here.
 - Pending notice, scrutiny, reassessment or search: refer. Proceedings for AY 2026-27 and earlier stay under the 1961 Act (s.536(2)(c)).
 - Income above ₹50 lakh: compute surcharge and marginal relief carefully and have it checked ([surcharge table](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1)).
 - Never present a figure as final: the Tax Year 2026-27 figures here are the AY 2026-27 figures pending confirmation under the 2025 Act.

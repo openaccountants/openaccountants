@@ -1,10 +1,10 @@
 ---
 name: in-return-assembly
-description: Final orchestrator skill that assembles the complete India filing package for India-resident self-employed individuals and professionals. Consumes outputs from all India content skills (india-gst for GSTR-3B/GSTR-1, in-income-tax for ITR-3/ITR-4, in-advance-tax for quarterly instalments, in-tds-freelance for TDS reporting) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all India content skills listed above. India full-year residents only. Self-employed individuals and professionals only.
+description: Final orchestrator skill that assembles the complete India filing package for India-resident self-employed individuals and professionals. Consumes outputs from all India content skills (india-gst for GSTR-3B/GSTR-1, india-income-tax for ITR-3/ITR-4, in-advance-tax for quarterly instalments, in-tds-freelance for TDS reporting) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all India content skills listed above. India full-year residents only. Self-employed individuals and professionals only.
 version: 0.1
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -12,7 +12,7 @@ domain: income-tax
 
 # India Return Package Assembly for Self-Employed Residents
 
-This Guide assembles the complete India filing package for a resident individual who is self-employed or practises a profession as a sole proprietor: the income-tax return, the advance tax and TDS reconciliation and the GST position, checked against each other and handed to a Chartered Accountant for review. Figures are for tax year 2026. That means the tax year from 1 April 2026 to 31 March 2027 under the Income-tax Act 2025, which replaced the Income-tax Act 1961 from 1 April 2026. GST is not year-based: the GST rules here are those in force on 17 October 2026, with their start dates. Income of 1 April 2025 to 31 March 2026 (assessment year 2026-27) stays under the 1961 Act and its return is not covered by this Guide; use `in-income-tax` and `in-freelance-intake` for it.
+This Guide assembles the complete India filing package for a resident individual who is self-employed or practises a profession as a sole proprietor: the income-tax return, the advance tax and TDS reconciliation and the GST position, checked against each other and handed to a Chartered Accountant for review. Figures are for tax year 2026. That means the tax year from 1 April 2026 to 31 March 2027 under the Income-tax Act 2025, which replaced the Income-tax Act 1961 from 1 April 2026. GST is not year-based: the GST rules here are those in force on 17 October 2026, with their start dates. Income of 1 April 2025 to 31 March 2026 (assessment year 2026-27) stays under the 1961 Act and its return is not covered by this Guide; use `india-income-tax` and `in-freelance-intake` for it.
 
 This Guide runs last. It does not repeat the computations of the content Guides; it orders them, checks that their outputs agree, and builds the reviewer package. A Chartered Accountant must review and sign off the package before anything is filed.
 
@@ -215,7 +215,7 @@ Out of scope: income of 1 April 2025 to 31 March 2026 (1961 Act, assessment year
 Run the content Guides in this order:
 
 1. **`india-gst`**: GSTR-3B and GSTR-1 reconciliation. Runs first because GST turnover feeds the income-tax return. Reconcile GSTR-3B summaries with the books; check GSTR-1 outward supplies against invoices; reconcile input tax credit claimed with the auto-populated GSTR-2B. Output: GST turnover, output tax, input tax credit used, cash GST paid, reverse charge.
-2. **`in-income-tax`**: the return (ITR-3, or SUGAM ITR-4 for presumptive income). Depends on the GST output: gross receipts must agree with GST turnover (excluding GST for a regular registrant). For presumptive income under section 58(2) Table serial 3 (specified profession), deemed profit is 50% of gross receipts, or a higher profit actually earned; no expense schedule. For actual profit: full profit and loss account, depreciation schedule and balance sheet. Output: total income, tax at the applicable rates, regime comparison if requested.
+2. **`india-income-tax`**: the return (ITR-3, or SUGAM ITR-4 for presumptive income). Depends on the GST output: gross receipts must agree with GST turnover (excluding GST for a regular registrant). For presumptive income under section 58(2) Table serial 3 (specified profession), deemed profit is 50% of gross receipts, or a higher profit actually earned; no expense schedule. For actual profit: full profit and loss account, depreciation schedule and balance sheet. Output: total income, tax at the applicable rates, regime comparison if requested.
 3. **`in-advance-tax`**: advance tax reconciliation. Depends on the return: final tax decides whether advance tax was enough. Reconcile advance tax paid against the liability, compute section 424 interest (default) and section 425 interest (deferment). Output: advance tax schedule, shortfalls, interest.
 4. **`in-tds-freelance`**: TDS credit reconciliation. Depends on the return: TDS credits reduce final tax. Reconcile the tax credit statement and Form No. 168 (the Annual Information Statement from tax year 2026-27) with income declared; flag mismatches. If that Guide cannot produce output, compute the reconciliation from the tax credit statement collected at intake and flag in the reviewer brief that the dedicated Guide was not used. Output: TDS credit summary, mismatches.
 
@@ -342,7 +342,7 @@ The rules are in section 58 of the [Income-tax Act 2025](https://egazette.gov.in
 - Aggregate turnover for the year
 
 ## Income-tax Return (ITR-3 / SUGAM ITR-4)
-[From in-income-tax output]
+[From india-income-tax output]
 - Gross receipts from business or profession
 - Deemed profit (section 58) or actual profit and loss
 - Depreciation schedule (actual profit only)
@@ -446,11 +446,11 @@ The rules are in section 58 of the [Income-tax Act 2025](https://egazette.gov.in
 - **R-IN-3**: cross-Guide reconciliation failed. Name it and describe the difference. Flag for the reviewer and continue.
 - **R-IN-4**: intake incomplete. Specific missing items prevent computation. List them and ask the user for each.
 - **R-IN-5**: out-of-scope item found during assembly, for example capital gains beyond what SUGAM (ITR-4) allows, rental income, foreign assets or income, or partnership income. Flag it and exclude it from the computation.
-- **R-IN-6**: wrong year. The client's income is for 1 April 2025 to 31 March 2026. Stop: that return is under the 1961 Act; use `in-income-tax`.
+- **R-IN-6**: wrong year. The client's income is for 1 April 2025 to 31 March 2026. Stop: that return is under the 1961 Act; use `india-income-tax`.
 
 ## Section 6: Self-checks
 
-- **Check IN-A1**: all upstream Guides ran. `india-gst`, `in-income-tax`, `in-advance-tax` produced output; `in-tds-freelance` produced output or the reconciliation was computed from the tax credit statement.
+- **Check IN-A1**: all upstream Guides ran. `india-gst`, `india-income-tax`, `in-advance-tax` produced output; `in-tds-freelance` produced output or the reconciliation was computed from the tax credit statement.
 - **Check IN-A2**: GST turnover agrees with gross receipts in the return, or every difference is explained.
 - **Check IN-A3**: if section 58(2) serial 3: profit declared is at least 50% of gross receipts, and no expenses are deducted.
 - **Check IN-A4**: advance tax and TDS reconciled against the final liability. Credits (advance tax plus TDS plus self-assessment tax) match the payment or refund position.
@@ -481,7 +481,7 @@ Save the three files and present them to the user.
 
 - `in-freelance-intake`: structured intake package
 - `india-gst`: GSTR-3B and GSTR-1 reconciliation output
-- `in-income-tax`: return computation
+- `india-income-tax`: return computation
 - `in-advance-tax`: advance tax reconciliation and interest
 - `in-tds-freelance`: TDS credit reconciliation (or the fallback computation from the tax credit statement)
 - `in-tax-residency`: only if residence is in doubt
@@ -505,13 +505,13 @@ Save the three files and present them to the user.
 
 ## The method, step by step
 
-1. **Fix the year and the Act.** Tax year 2026-27, Income-tax Act 2025 ([new Act FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq)). If the income is for the year to 31 March 2026, stop and use `in-income-tax`.
+1. **Fix the year and the Act.** Tax year 2026-27, Income-tax Act 2025 ([new Act FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq)). If the income is for the year to 31 March 2026, stop and use `india-income-tax`.
 2. **Take the intake package** from `in-freelance-intake`: residence, structure, PAN, age, regime history, presumptive history, GST status, documents.
 3. **Run `india-gst`** and fix GST turnover, output tax and input tax credit for the months of the year ([rule 61](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule61_v1.00.html), [rule 80](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule80_v1.00.html)).
 4. **Choose the basis** under section 58 of the [Income-tax Act 2025](https://egazette.gov.in/WriteReadData/2025/265620.pdf): serial 3 for a specified profession, serial 1 for an eligible business, or actual profit. Test receipts against the limits in the Act table, using the cash share to pick the limit.
 5. **Test for tax audit** under section 63 of the [Income-tax Act 2025](https://egazette.gov.in/WriteReadData/2025/265620.pdf): business turnover above one crore rupees (ten crore rupees where cash receipts and cash payments each stay within the section 63 cash share), professional gross receipts above fifty lakh rupees, or presumptive cases claiming lower profit. A cheque or bank draft that is not account payee counts as cash for both cash tests (sections 58(9) and 63(5)(b)). Section 63(2): no audit where profit is declared under section 58(2). If an audit is required, the report (Form No. 26 under rule 47 of the [Income-tax Rules 2026](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf)) is due one month before the return due date (section 63(5)(a)), and the return is due 31 October.
 6. **Fix the regime** under section 202 of the [Income-tax Act 2025](https://egazette.gov.in/WriteReadData/2025/265620.pdf). The new regime applies unless the client opts out under section 202(4). With business or profession income, the option must be exercised on or before the section 263(1) due date, carries to later years, and can be withdrawn only once; after withdrawal it cannot be exercised again unless the person stops having business or profession income. An opt-out made under the 1961 Act carries over: "An option exercised under a provision of the old Act ... is treated as if it was made under the equivalent provision of the new Act" ([new Act FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq), questions 23 and 26).
-7. **Run `in-income-tax`** for total income and tax: slabs, rebate, surcharge and cess from the tables above ([Finance Act 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf)).
+7. **Run `india-income-tax`** for total income and tax: slabs, rebate, surcharge and cess from the tables above ([Finance Act 2026](https://egazette.gov.in/WriteReadData/2026/271439.pdf)).
 8. **Pick the return form** under rule 164 of the [Income-tax Rules 2026](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf): SUGAM (ITR-4) for a resident (not RNOR) individual with section 58 income and, if it has capital gains, only long-term capital gains under section 198 within the limit in the Rules table (rule 164(5)(b)), and none of the rule 164(6) bars; otherwise ITR-3. The bars include foreign assets, signing authority or income, being a company director, holding unlisted equity shares at any time in the year, total income exceeding fifty lakh rupees, more than two house properties, agricultural income above INR 5,000, and any loss brought forward or to carry forward.
 9. **Run `in-advance-tax`** and compute section 424 and 425 interest ([Income-tax Act 2025](https://egazette.gov.in/WriteReadData/2025/265620.pdf)).
 10. **Run `in-tds-freelance`** and match every credit to the tax credit statement and Form No. 168 ([tax payments FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments-faq)).
@@ -534,7 +534,7 @@ Ask only what the intake package and documents do not already answer.
 
 Refuse and refer to a Chartered Accountant:
 
-- Income of 1 April 2025 to 31 March 2026 (1961 Act). Use `in-income-tax` or refer.
+- Income of 1 April 2025 to 31 March 2026 (1961 Act). Use `india-income-tax` or refer.
 - Non-resident, not ordinarily resident, or residence in doubt: use `in-tax-residency` first.
 - HUF, firm, LLP or company.
 - Section 172 (transfer pricing report) applies.

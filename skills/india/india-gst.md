@@ -4,7 +4,7 @@ description: Use this skill whenever asked to prepare, review, classify, or advi
 version: 2.2
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-06
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -1052,7 +1052,7 @@ Items 1 to 6 were read on 16 or 17 October 2026; items 7 and 8 on 31 October 202
 8. Portals: GST common portal https://www.gst.gov.in ; Invoice Registration Portal (e-invoice) https://einvoice1.gst.gov.in ; e-way bill https://ewaybillgst.gov.in
 9. Named by the earlier Guide `in-gst-return` and not read for this version: Circular 98/17/2019-GST (order of credit use; rule 88A is used above instead), Circular 140/10/2020-GST (director services under reverse charge), Circular 164/20/2021-GST (restaurant services), Notification 10/2017-Integrated Tax (Rate) (import of services under reverse charge), Notification 84/2020-Central Tax (QRMP entry test).
 
-Related Guides: `india-einvoice` (e-invoicing), `in-tds-freelance` (TDS on contractor and professional payments), `in-income-tax` (income tax), `in-return-assembly` (full filing package).
+Related Guides: `india-einvoice` (e-invoicing), `in-tds-freelance` (TDS on contractor and professional payments), `india-income-tax` (income tax), `in-return-assembly` (full filing package).
 
 ## Disclaimer
 

@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Indian advance tax for self-emp
 version: 2.0
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -98,7 +98,7 @@ Before computing any advance tax figure, you must know:
 2. Age: whether the person is sixty years or more at any time during the tax year (not on a fixed date).
 3. Nature of income: business or profession, salary, house property, capital gains, dividends, winnings, other sources. Any business or profession income removes the senior citizen exemption.
 4. Whether the person declares presumptive income under section 58(2) Table serial 1 (business) or serial 3 (profession). This changes the instalment schedule. Serial 2 (goods carriages) does not.
-5. Estimated total income for the tax year and the regime (the default regime under section 202 or the old regime). The regime changes the tax, not the instalment dates. Rates, slabs and the rebate are in `in-income-tax`.
+5. Estimated total income for the tax year and the regime (the default regime under section 202 or the old regime). The regime changes the tax, not the instalment dates. Rates, slabs and the rebate are in `india-income-tax`.
 6. Tax deductible or collectible at source during the year on income included in the estimate (section 405(1), item C).
 7. Any order from the Assessing Officer under section 407 to pay advance tax.
 
@@ -208,11 +208,11 @@ Legislation: Income-tax Act, 2025, section 425 (https://egazette.gov.in/WriteRea
 
 Legislation: section 58(2) and section 408(2) of the 2025 Act (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 
-A person who declares profits under section 58(2) Table serial 1 (eligible business) or serial 3 (specified profession) pays the whole advance tax by 15 March (section 408(2)). The limits and deemed profit rates are in the Section 1 table. The higher turnover limits apply only where cash receipts are not more than the cash share in that table. Who qualifies, and what counts as a specified profession, is in `in-income-tax`. A goods carriage owner under serial 2 is not covered by section 408(2) and pays four instalments.
+A person who declares profits under section 58(2) Table serial 1 (eligible business) or serial 3 (specified profession) pays the whole advance tax by 15 March (section 408(2)). The limits and deemed profit rates are in the Section 1 table. The higher turnover limits apply only where cash receipts are not more than the cash share in that table. Who qualifies, and what counts as a specified profession, is in `india-income-tax`. A goods carriage owner under serial 2 is not covered by section 408(2) and pays four instalments.
 
 ### 4.6 Regime choice (Tier 1)
 
-The choice between the default regime in section 202 and the old regime changes the tax for the year and so the advance tax amount. It does not change the instalment dates, the threshold or the interest rules. Rates, slabs and the rebate: see `in-income-tax`.
+The choice between the default regime in section 202 and the old regime changes the tax for the year and so the advance tax amount. It does not change the instalment dates, the threshold or the interest rules. Rates, slabs and the rebate: see `india-income-tax`.
 
 ### 4.7 Worked examples (hypothetical amounts)
 
@@ -420,7 +420,7 @@ Expected: section 425 interest for June, September and December as in Example B;
 
 1. Fix the year and the law: tax year 2026-27 (1 April 2026 to 31 March 2027), Income-tax Act, 2025 (https://egazette.gov.in/WriteReadData/2025/265620.pdf). For 2025-26 or earlier, refer (R-IN-AT-3).
 2. Check the senior citizen exemption under section 403(3): resident, sixty or more at any time in the tax year, AND no business or profession income. If both hold, stop: no advance tax (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
-3. Estimate current income and compute the tax for the year under the chosen regime (rates in `in-income-tax`). Deduct the tax deductible or collectible at source on income in the estimate (section 405(1)) (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
+3. Estimate current income and compute the tax for the year under the chosen regime (rates in `india-income-tax`). Deduct the tax deductible or collectible at source on income in the estimate (section 405(1)) (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 4. Compare the net figure with the section 404 threshold in the Section 1 table. At or above it, advance tax is payable (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 5. Pick the schedule under section 408: four instalments, or one payment by 15 March for a section 58(2) serial 1 or 3 presumptive taxpayer. Set the cumulative amounts from the Section 1 table (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 6. Pay each instalment through e-Pay Tax with a CRN under the 2025 Act, tax year 2026-27, advance tax; keep the Challan Receipt (https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax).
