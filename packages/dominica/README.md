@@ -7,10 +7,11 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `dm-corporate-income-tax.md`
-4. `dm-income-tax-paye.md`
-5. `dm-social-contributions.md`
-6. `dm-vat.md`
+3. `README.md`
+4. `dm-corporate-income-tax.md`
+5. `dm-income-tax-paye.md`
+6. `dm-social-contributions.md`
+7. `dm-vat.md`
 
 ## How to use
 

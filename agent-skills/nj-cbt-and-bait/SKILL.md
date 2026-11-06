@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-NJ"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # New Jersey Corporation Business Tax (CBT) and Pass-Through Business Alternative Income Tax (BAIT)
@@ -294,24 +291,6 @@ All amounts are hypothetical. Rates and thresholds come from the tables above.
 - [ ] Estimated tax pattern chosen ($1,500 test, per member for a group, fee included; $50,000,000 receipts test); extension with 90% paid; return by the 15th of the month after the federal due date; all electronic.
 - [ ] BAIT: eligibility (at least one individual, estate or trust member; New Jersey S status), election made by the original due date before any payment, base built by member type, brackets applied to the aggregate, estimates if more than $400, PTE-K-1s issued.
 - [ ] Owners: BAIT credit on NJ-BUS-1 and line 63; nonresident filing and composite decided; Schedule NJ-COJ for substantially similar other-state PTET with the entity's statement.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

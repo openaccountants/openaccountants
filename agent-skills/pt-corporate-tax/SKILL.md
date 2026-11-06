@@ -8,14 +8,9 @@ metadata:
   jurisdiction: "PT"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Portugal: corporate income tax (IRC), tax year 2026 v0.2
-
-> Source-cited draft: not reviewed by an accountant.
 
 This skill computes Portuguese corporate income tax (Imposto sobre o Rendimento das Pessoas Coletivas, IRC) for a 2026 tax period. It covers the rates, the two surcharges (derrama municipal and derrama estadual), autonomous taxation, losses, the interest limit, the participation exemption, payments on account, the Modelo 22 and the IES, fines and interest, and the two main investment credits (SIFIDE II and RFAI). Every figure comes from the consolidated Código do IRC (CIRC) and other codes on the Portal das Finanças, read on 24 October 2026, or from the Diário da República.
 
@@ -226,24 +221,6 @@ expected:
 | CFI art. 22, 23 (RFAI) and 35, 38, 39, 40 (SIFIDE II) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cfi/Pages/cfi-38.aspx | 2026-10-24 |
 
 Not yet confirmed: the Madeira and Azores derrama regional rates and the Madeira rules for allocating income to the region (DLR 2/2001/M art. 2(2) to (4) not read); whether Madeira's 2026 rates follow the start of the tax period, as the national rates do, for a non-calendar period; the Madeira startup rate; the fine for a late or missing IES (RGIT art. 116(1) or art. 117 not settled); that AT applies the municipality's normal derrama rate when the IES was not filed (AT's older field 364 help sheet says so; not re-read for 2026); the derrama municipal rates of each municipality for 2026 (AT's Ofício Circulado for 2026 profits is not yet out); the legal interest rate that sets compensatory interest (Civil Code art. 559 ordinance not read); the SME size thresholds in the annex to Decreto-Lei 372/2007; the fully electric car cost limit in the art. 34(1)(e) ordinance; the minimum tax scope, rate and deadlines under Lei 41/2024; group taxation computations under RETGS (conditions only: 75% holding, art. 69); whether "turnover not above EUR 150,000" in a municipality's reduced rate includes exactly EUR 150,000 (the Annex A instructions say "não ultrapasse", the AT field 364 help sheet says "inferior a"; Lei 73/2013 art. 18 not read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

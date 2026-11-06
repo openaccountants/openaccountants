@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "SE"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Sweden: self-employed social contributions (egenavgifter)
@@ -212,24 +209,6 @@ Working paper output: income year; classification and coverage evidence; base be
 | Skatteverket, ränta på skattekontot (basränta 2.5%, high rate 17.5%) | https://www.skatteverket.se/rantapaskattekontot | 2026-10-24 |
 
 Not yet confirmed: the support-area annex to Lag 2001:1170 was not listed here, and the de minimis conditions in its 6 c § were not worked through; the statutory basis of the sickness rates for waiting periods other than 7 days (SAL 3 kap. 17 § delegates them; the figures are Skatteverket's); the statutory basis of the 10% schablonavdrag on the 10.21% route (IL sets only the 25% and 20% maximums); the later filing date for returns filed through a tax agent; and how the regional and special deductions interact when both apply to the same base.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

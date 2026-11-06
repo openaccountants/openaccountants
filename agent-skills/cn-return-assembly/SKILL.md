@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # CN Return Assembly
@@ -730,24 +728,6 @@ metadata:
 OpenAccountants — 面向 AI 的开源会计技能集
 
 本技能产出物不构成税务建议。所有产出物须经具备资质的复核员（中国注册会计师 CICPA / 税务师 CTA / ACCA-CN 中国执业人士）审核签字后，由纳税人或其授权代理人通过电子税务局（https://etax.chinatax.gov.cn）完成提交。本技能不替代法定审计、税务鉴证或专业税务师事务所服务。
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

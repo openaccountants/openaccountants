@@ -7,19 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `mm-company-formation.md`
-4. `mm-income-tax.md`
-5. `mm-payroll-social.md`
-6. `mm-tax-overview.md`
-7. `mm-vat-gst.md`
-8. `myanmar-company-formation-entity-choice.md`
-9. `myanmar-ct.md`
-10. `myanmar-personal-income-tax-2.md`
-11. `myanmar-personal-income-tax-4.md`
-12. `myanmar-vat-gst-2.md`
-13. `myanmar-vat-gst.md`
-14. `payroll-workflow-base.md`
-15. `company-formation-workflow-base.md`
+3. `README.md`
+4. `mm-company-formation.md`
+5. `mm-income-tax.md`
+6. `mm-payroll-social.md`
+7. `mm-tax-overview.md`
+8. `mm-vat-gst.md`
+9. `myanmar-company-formation-entity-choice.md`
+10. `myanmar-ct.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## How to use
 

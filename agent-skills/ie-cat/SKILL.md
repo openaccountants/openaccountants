@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland Capital Acquisitions Tax (CAT), 2026
@@ -217,24 +215,6 @@ expected:
 Not yet confirmed: enactment of Finance (No. 2) Bill 2026 s.66 (the EUR 420,000 / 44,000 / 22,000 thresholds are in the Bill as initiated and applied by Revenue, but the Bill is at First Stage in the Dáil, initiated 19 October 2026, per the Oireachtas bill record checked on 26 October 2026); whether a commencement order has been made for s.89A (Notes for Guidance, Finance Act 2025 edition, says it is still subject to a Ministerial order); Finance (No. 2) Bill 2026 s.65 (wording change to s.101(4)) and s.64 (support payments to children under s.82(4)), not yet law; rules carried from the previous version but not re-read in the law this time: valuation methods for quoted and unquoted shares, the situs rules for each asset class, the Schedule 1 Tables A and B for limited interests, s.27 valuation of shares in private companies, the s.811C TCA 1997 general anti-avoidance rule as applied to CAT, the penalty for a fraudulent or negligent CAT return, and anti-avoidance on property passed back or onward within a short period.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

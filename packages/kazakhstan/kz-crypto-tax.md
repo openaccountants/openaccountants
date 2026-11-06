@@ -10,11 +10,12 @@ description: >
 version: 1.0
 jurisdiction: KZ
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: crypto
 ---
 
 # Kazakhstan Cryptocurrency & Digital Mining Tax — Skill v1.0
@@ -33,7 +34,6 @@ depends_on:
 | Regulated trading | Only via exchanges licensed in the Astana International Financial Centre (AIFC / МФЦА); trading outside the AIFC is restricted |
 | Tax authority | State Revenue Committee (КГД, kgd.gov.kz); AIFC for licensing |
 | Legislation | Tax Code of Kazakhstan (2026); Law "On Digital Assets in the Republic of Kazakhstan" |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Skill version | 1.0 |
 
 ### Conservative defaults

@@ -4,12 +4,11 @@ description: Sri Lanka stamp duty — central-government instruments and provinc
 jurisdiction: LK
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Lal kumarasiri, CA
-reviewed_by: Lal kumarasiri
-review_status: current
-trust_label: Checked by Lal kumarasiri
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Lal kumarasiri"
+reviewed_on: 2026-11-03
+tier: 1
+domain: estate-wealth-tax
 ---
 
 # Sri Lanka Stamp Duty
@@ -36,21 +35,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Non-payment / underpayment** — Failure to pay stamp duty or underpaying it is treated as tax evasion. The IRD has the authority to investigate and take legal action against offenders. Penalties may include fines and surcharges.  _(Stamp Duty (Special Provisions) Act; IRD enforcement powers)_
 - **Unstamped instruments** — An instrument that is not properly stamped may be inadmissible in legal proceedings (e.g. an unstamped promissory note may be difficult to enforce in court).  _(Stamp Duty Act)_
 - **TIN requirement for share transfers (from 1 April 2026)** — Under IRA (Amendment) Act No. 11 of 2026, TIN verification is now required before permitting the transfer of shares and for obtaining building plan approval. Non-compliance by the relevant official may result in penalties.  _(IRA (Amendment) Act No. 11 of 2026)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

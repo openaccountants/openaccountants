@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "EE"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Estonia cross-border tax: residence, non-residents, withholding, exit (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Estonia taxes individuals on the calendar year. Companies pay income tax only when they distribute profit, monthly, on form TSD. The law is the Income Tax Act (tulumaksuseadus, TuMS); paragraph numbers below are to the Estonian consolidated text on Riigi Teataja in force from 1 October 2026 to 31 December 2026. A superscript paragraph number such as 54⁵ is written "54^5". The Estonian text is the law; the English translations are for information. The authority is the Estonian Tax and Customs Board (Maksu- ja Tolliamet, ETCB).
 
@@ -214,24 +210,6 @@ Out of scope: treaty withholding rates for individual countries; use the treaty 
 Not yet confirmed: the number of the act that cancelled the 24% rate. The Ministry of Finance confirms the cancellation, and the consolidated § 4(1) in force for 2026 still carries the 22% wording from RT I, 30.06.2023, 107; the cancelling act itself was not read.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

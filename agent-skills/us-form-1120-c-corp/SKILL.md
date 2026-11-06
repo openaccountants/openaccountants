@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "James Wallach"
   reviewed_by: "Christopher Aryee"
-  trust_label: "Checked by Christopher Aryee"
-  review_status: "current"
 ---
 
 # US Form 1120 C Corp
@@ -804,24 +801,6 @@ This skill provides a structured walkthrough for preparing Form 1120 for tax yea
 **State tax warning:** Federal taxable income is the starting point for most state corporate income tax computations, but virtually every state adjusts away from federal in specific areas (state-specific decoupling from bonus depreciation, §163(j), §168(k), §250, §174). Always run the state return alongside the federal, not after.
 
 **End of skill.**
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

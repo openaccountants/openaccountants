@@ -1,19 +1,17 @@
 ---
 name: cz-cross-border
 description: "Hub skill for crossing the Czech border in tax year 2026. Covers tax residence for individuals (domicile or 183 days in the calendar year, Income Tax Act section 2) and companies (seat or place of management, section 17); arriving (no special inbound regime); leaving (no exit tax for individuals; corporate exit tax under section 23g, payable over up to 5 years inside the EU and EEA); non-residents taxed on Czech-source income (section 22); 15% withholding on dividends, interest, royalties and service fees, 35% to non-cooperative states (section 36); the 10% and 1% tax security (section 38e); treaty relief (section 38f). Tax year is the calendar year. Trigger on: moving to the Czech Republic, leaving Czechia, non-resident, expat, exit tax, digital nomad, srážková daň, zajištění daně. Out of scope: self-employed income tax (cz-income-tax), corporate tax (cz-corporate-income-tax), social and health insurance (cz-social-health), VAT (cz-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: cross-border
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: cross-border
 ---
 
-# Czech Republic: cross-border tax for people and companies (2026) v0.1
+# Czech Republic: cross-border tax for people and companies (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Income Tax Act and the Tax Code as published on zakonyprolidi.cz (versions in force for 2026), financnisprava.gov.cz, cssz.gov.cz and cnb.cz, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -216,23 +214,3 @@ expected:
 | ČSSZ, Vyslaní pracovníci (posting, A1, Regulation 883/2004) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-10-22 |
 
 Not yet confirmed: the exact filing dates for the 2026 return (in 2027), which the Financial Administration had not published on the page read; registration duties for an arriving self-employed person or a foreign company (Tax Code § 125 and following, not read); the rounding of the final tax to whole koruna (Tax Code § 146, not read); the 25% ownership threshold and other conditions for the EU interest and royalty exemption in ITA § 19 (only summarised here); individual treaty rates and relief methods.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

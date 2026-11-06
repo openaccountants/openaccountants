@@ -4,11 +4,11 @@ description: "Alabama Form 40 (full-year resident): how I do it"
 jurisdiction: US-AL
 tax_year: 2025
 last_updated: 2026-08-06
-authored_by: Anthony Bandura
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Anthony Bandura"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # Alabama Income Tax
@@ -85,21 +85,3 @@ Credit for taxes paid to a foreign country: Alabama Administrative Rule 810-3-21
 §40-18-15.8 and §40-29-112, Code of Alabama 1975
 
 > Contributed by Anthony Bandura, AL-10921.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

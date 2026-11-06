@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Omolola Fasasi, CA"
   reviewed_by: "Omolola Fasasi"
-  trust_label: "Checked by Omolola Fasasi"
-  review_status: "current"
 ---
 
 # NG Personal Income Tax
@@ -24,7 +21,7 @@ Nigeria — Personal Income Tax (PIT) — Skill v1.0
 
 **Relationship to `ng-income-tax.md`.** A prior skill `ng-income-tax.md` (v2.0) existed in this package covering the same self-employed PIT territory with a strong bookkeeping / bank-statement bias. This new skill is the canonical "Personal Income Tax for individuals and sole traders" reference and should be treated as the primary source going forward. The older `ng-income-tax.md` retains useful Nigerian bank-statement reading guidance and a transaction pattern library, which remain valid as a bookkeeping companion. Where the two skills overlap (CRA computation, progressive brackets, minimum tax, capital allowances, filing authority), this skill controls. Recommendation: retire `ng-income-tax.md` once the bank-statement pattern library has been re-homed into a separate `ng-bookkeeping.md` skill; until then, treat `ng-income-tax.md` as deprecated for tax-rule purposes and load it only for its bank-narration patterns.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -490,26 +487,6 @@ NTA 2025 restructures FIRS into the Nigeria Revenue Service (NRS) and reaffirms 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified Nigerian tax practitioner (CITN-registered Chartered Tax Practitioner or ICAN-registered accountant) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -1,21 +1,17 @@
 ---
 name: hu-corporate-tax
 description: "Hungarian corporate income tax (társasági adó, TAO) for tax year 2026: resident companies and Hungarian permanent establishments (telephely) of foreign companies. Covers the 9% flat rate (Tao. tv. 19. §), the taxable base from pre-tax profit, the income minimum, development reserve, participation exemption, the interest limitation rule, loss carry-forward (5 years, 50% cap), group taxation (csoportos társasági adó), the 2629 return due on the last day of the fifth month after year end, monthly or quarterly advances, penalties and late payment interest, outbound withholding, CFC and exit tax. Also short sections on local business tax (HIPA), the innovation contribution and KIVA. Trigger phrases: Hungarian corporate tax, TAO, társasági adó, Kft tax, 9% Hungary, 2629 bevallás, HIPA, KIVA. Out of scope: individual income tax (hu-income-tax), social contributions (hu-social-contributions), VAT (hungary-vat-return), e-invoicing (hungary-einvoice)."
-version: 0.1
+version: 0.2
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: corporate-tax
 ---
 
 # Hungary corporate income tax (társasági adó): 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The law is Act LXXXI of 1996 on corporate tax and dividend tax (the Tao. tv.). The tax authority is the Nemzeti Adó- és Vámhivatal (NAV). Section references below come from NAV's own guidance, which cites the Act paragraph by paragraph. The rate (19. §), the loss rules (17. §), the interest limitation threshold (8. § (1) j)), the development reserve (7. § (1) f), (15)), the group rules (2/A. §, 17. §) and the advances (26. §) were read in the official Nemzeti Jogszabálytár at njt.jog.gov.hu, in the version in force from 1 October 2026 (the short address njt.hu refused connections on 2026-10-22 and 2026-10-23).
 
@@ -224,23 +220,3 @@ expected:
 | MNB: central bank base rate history | https://www.mnb.hu/Jegybanki_alapkamat_alakulasa | 2026-10-22 |
 
 Not yet confirmed: the group application window, which is in the Art. (Act CL of 2017) and taken from NAV information sheet 41; the Pillar Two revenue threshold and start dates in Hungarian law; the full CFC definition in Tao. tv. 4. § 11.; individual municipalities' HIPA rates and HIPA filing dates.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

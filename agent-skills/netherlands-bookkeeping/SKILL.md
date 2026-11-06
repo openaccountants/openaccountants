@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "NL"
   tax_year: "2026"
   last_updated: "2026-09-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Netherlands bookkeeping and year-end reporting — 2026
@@ -152,24 +149,6 @@ All amounts below are hypothetical and do not establish eligibility on their own
 Deliver the reconciled trial balance, transaction exceptions, draft balance sheet/P&L, asset schedule, VAT/payroll reconciliations, tax bridge, size-class assessment and filing calendar. Show the chosen period, evidence references, assumptions and unresolved decisions. Obtain the responsible person's approval before filing.
 
 - Stop and request the missing evidence where the opening balance cannot be reconciled, an invoice or business purpose is unsupported, a group/size boundary is unclear, private-use records are missing or a contract requires specialist accounting judgment. Do not invent amounts to balance the books. Use the Netherlands VAT, income-tax, corporate-tax and payroll Guides for their complete calculations; a bookkeeping classification alone does not establish the tax result.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: KZ
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: e-invoicing
 ---
 
 # Kazakhstan E-Invoicing & Fiscal Compliance — Skill v1.0
@@ -31,7 +32,6 @@ depends_on:
 | Who must issue ЭСФ | VAT-registered taxpayers; participants in goods-traceability; certain regimes — verify current scope |
 | Tax authority | State Revenue Committee (КГД) |
 | Currency | KZT |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Skill version | 1.0 |
 
 ### Conservative defaults

@@ -1,17 +1,16 @@
 ---
 name: japan-bookkeeping
 description: Use this skill whenever asked about Japanese bookkeeping for sole proprietors (個人事業主), small corporations (中小企業), or any entity using Japanese GAAP. Trigger on phrases like "勘定科目", "chart of accounts", "bookkeeping Japan", "損益計算書", "P&L", "貸借対照表", "balance sheet", "青色申告", "白色申告", "確定申告", "仕訳", "複式簿記", "消費税", "減価償却", "少額減価償却資産", "中小会計要領", "freee", "弥生", "bank reconciliation", "expense classification", "revenue recognition", or any question about day-to-day transaction recording, financial statement preparation, or account coding for a Japanese business.
-version: 1.0
+version: 1.1
 jurisdiction: JP
 tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: bookkeeping
 ---
 
 # Japan Bookkeeping
@@ -519,21 +518,3 @@ The Japanese balance sheet traditionally uses the horizontal (account) format (�
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a 公認会計士, 税理士, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

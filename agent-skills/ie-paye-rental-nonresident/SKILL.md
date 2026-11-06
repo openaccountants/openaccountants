@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland: PAYE-only returns (Form 12), rental income (Case V) and non-residents (2026)
@@ -268,24 +266,6 @@ expected:
 Not yet confirmed: (1) whether a non-resident gets the full standard rate band or a share of it (Revenue's section 1032 examples stay within the band, so Example 2 is not affected); (2) whether the EUR 13,000 USC exemption for a non-resident is tested on Irish income only; (3) the ROS pay-and-file date for 2026 returns, announced each year; (4) changes announced in Budget 2027 on 6 October 2026 are not reflected; they are for 2027 onwards and the Finance Bill is not yet enacted; (5) which treaties cover USC.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

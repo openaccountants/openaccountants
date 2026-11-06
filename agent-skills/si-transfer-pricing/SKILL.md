@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "SI"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Slovenia transfer pricing (transferne cene): 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The rules sit in four places. The Corporate Income Tax Act (Zakon o davku od dohodkov pravnih oseb, ZDDPO-2) arts. 16 to 19 set who is related, the arm's length test and the interest rule. The Rules on transfer prices (Pravilnik o transfernih cenah) set the methods, comparability and the range. The Rules on the recognised interest rate (Pravilnik o priznani obrestni meri) set the loan rate. The Tax Procedure Act (Zakon o davčnem postopku, ZDavP-2) sets documentation, fines, APAs, CbCR and MAP. All statute text below was read on PisRS (pisrs.si) on 2026-10-23, in the unofficial consolidated versions shown there: ZDDPO-2 NPB 23, ZDavP-2 NPB 32, Rules on transfer prices NPB 1, Rules on the recognised interest rate NPB 3. The rate, the general tax base and the return are in `si-corporate-income-tax`; this skill does not repeat them.
 
@@ -275,24 +271,6 @@ expected:
 Not yet confirmed: the November and December 2026 variable parts are not yet published; the Slovenia-Germany treaty rate on the withholding in example 1 was not worked through; whether a loan principal counts towards the EUR 50,000 turnover test for attachment 16 is not stated in FURS 0920-18321/2025-1.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

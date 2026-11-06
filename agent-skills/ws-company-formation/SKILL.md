@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "WS"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Samoa Company Formation & Entity Choice
@@ -29,24 +27,6 @@ Domestic businesses incorporate under the Companies Act 2001, which is modelled 
 - **Business licence** — A business licence from the Ministry of Customs and Revenue is generally required to trade, renewed annually ((approx — confirm))  _(Business Licences Act 1998)_
 - **Core annual compliance** — Annual return to the Companies Office, annual income tax return (within 3 months of balance date), VAGST and PAYE returns where registered, and business-licence renewal  _(Companies Act 2001 / Tax Administration Act 2012)_
 - **Offshore International Company tax rate on offshore profits** — 0% (International Companies under the International Companies Act 1987 are exempt from Samoa income tax on offshore profits but cannot generally carry on domestic business ((offshore regime; confirm restrictions)))  _(International Companies Act 1987 (https://ovza.com/samoas-tax-regime-for-offshore-companies/))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

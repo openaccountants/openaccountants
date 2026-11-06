@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CU"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cuba Payroll & Social Contributions
@@ -25,24 +23,6 @@ metadata:
 - **Payroll income-tax withholding** — Employers withhold personal income tax / the employee social-security contribution from wages and remit to ONAT ((approx — confirm)) (approx — confirm)  _(Ley No. 113 del Sistema Tributario)_
 - **Remittance frequency** — Payroll withholdings and contributions are remitted to ONAT monthly ((approx — confirm)) (approx — confirm)  _(Ley No. 113 del Sistema Tributario)_
 - **Territorial contribution for local development** — 1% of gross income payable by employing entities (Contribución Territorial para el Desarrollo Local) %  _([Ley No. 113 del Sistema Tributario](https://en.granma.cu/cuba/2025-05-28/dispersed-destinations-of-a-contribution-for-local-development))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

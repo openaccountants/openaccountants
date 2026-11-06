@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "LV"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Latvian transfer pricing (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Latvia taxes company profit only when it is distributed, or treated as distributed. A transfer pricing adjustment is one of the "deemed distributions" (nosacīti sadalītā peļņa) in the Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums, the CIT Law). The documentation duties sit in a different act, the Law on Taxes and Fees (likums "Par nodokļiem un nodevām"), article 15.2. That article was rewritten by the amending laws of 3 April 2025 and 6 November 2025, in force from 1 January 2026. The new rules apply to controlled transactions from the reporting year that starts during calendar year 2025 (transitional provision 249). The methods are in Cabinet Regulation No. 677 of 14 November 2017. The tax authority is the State Revenue Service (Valsts ieņēmumu dienests, VID).
 
@@ -219,24 +215,6 @@ expected:
 Not yet confirmed: the current Cabinet regulation on the APA procedure and its fee (the 2013 Regulation No. 16 fee of EUR 7,114 ended in 2018 and its successor was not read); the Cabinet regulation setting the detailed content of the master and local files and the simplified documentation; whether Regulation No. 397 was amended after August 2024; the Cabinet list of low-tax and no-tax territories for 2026; VID guidance on how loans and cash pools are measured for the EUR 250,000 threshold; and VID's practice on adjustments in purely domestic related-party transactions. vid.gov.lv and fm.gov.lv refused connections on 2026-10-23, so no VID guidance was read.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

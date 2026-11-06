@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "JM"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Jamaica Payroll & Social Contributions
@@ -29,24 +27,6 @@ Jamaican employers deduct PAYE income tax plus several statutory payroll contrib
 - **PAYE income tax withholding** — 25% / 30% per the personal income tax bands, after the tax-free threshold %  _(Income Tax Act — https://www.jamaicatax.gov.jm/income-tax)_
 - **Statutory payroll deductions remittance deadline** — By the 14th day of the month following the month of deduction (combined S01 monthly return)  _(Income Tax Act — https://www.jamaicatax.gov.jm/)_
 - **Annual employer payroll return** — Form S02 annual return of statutory deductions due 31 March of the following year ((approx — confirm exact date))  _(Income Tax Act — https://www.jamaicatax.gov.jm/)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

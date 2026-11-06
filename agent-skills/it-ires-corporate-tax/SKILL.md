@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-ires-corporate-tax"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Italian corporate income tax (IRES): tax year 2026
@@ -288,26 +285,6 @@ expected:
 
 Not yet confirmed: the exact filing date for the 2026 return (Modello Redditi SC 2027 and its instructions are not yet published; 2 November 2027 is inferred from the weekend and holiday rule); how D.Lgs. 117/2026, D.Lgs. 33/2025 and D.Lgs. 173/2024 (all applying from 1 January 2027) affect the 2026 return, payments and penalties made in 2027; the interest rate on assessed tax; the euro figure of the ISA revenue limit that decides 50/50 acconti (the general instructions 4.2 say only that each ISA approval decree sets it); the "taxable part" of royalties under DPR 600/1973 art. 25(4); treaty withholding rates; the super-depreciation measure in L. 199/2025 art. 1(427)-(436).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-ires-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-ires-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-ires-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-ires-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

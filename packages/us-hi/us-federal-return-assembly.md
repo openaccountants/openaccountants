@@ -5,11 +5,9 @@ version: 0.2
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # US Federal Return Assembly
@@ -225,21 +223,3 @@ For 2026 thresholds see the 2026 table above. Confirm the 2026 Form 8995 thresho
 - Filing date, extension (Form 4868) and payment plan confirmed. Next year's estimated payments scheduled.
 - State handoff prepared: federal AGI, taxable income, QBI deduction, depreciation detail, and the SE health insurance and retirement amounts.
 - A credentialed preparer reviews and signs before filing.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

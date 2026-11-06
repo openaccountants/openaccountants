@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "CH"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Swiss VAT return (MWST-Abrechnung), tax year 2026 v2.2
@@ -168,24 +166,6 @@ expected:
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form, so amounts are not mapped to boxes; the list of industries per net tax rate and the individual flat tax rates; the fine amount under Art. 98; the day-count basis for default interest; the changes in the MWSTV version in force from 1 January 2027 (not read; this skill uses the 2025 version for 2026); Liechtenstein treatment.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

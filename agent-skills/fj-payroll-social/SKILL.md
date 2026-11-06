@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "FJ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # fiji-payroll
@@ -33,7 +31,6 @@ metadata:
 | Key legislation | Income Tax Act 2015; Tax Administration Act 2009; Fiji National Provident Fund Act 2011; Employment Relations Act 2007 |
 | Filing portal | FRCS Taxpayer Online Services (TPOS) |
 | Has personal income tax? | YES -- collected via PAYE as a final tax |
-| Validated by | Pending -- requires sign-off by a Fiji-licensed accountant |
 | Skill version | 0.1 |
 
 ### Statutory Payroll Components at a Glance (resident employee)
@@ -463,26 +460,6 @@ If the minimum viable inputs (Section 2) are not available:
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed accountant or tax practitioner in Fiji) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

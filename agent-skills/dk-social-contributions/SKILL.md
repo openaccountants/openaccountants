@@ -1,25 +1,22 @@
 ---
 name: dk-social-contributions
-description: "Danish social contributions for 2026 for employees, employers and the self-employed. Covers the 8% labour market contribution (arbejdsmarkedsbidrag, AM-bidrag), its base and the new 2026 rule that nobody pays it before the year they turn 18; ATP Livslang Pension by hours band (DKK 297 a month in total for 117 hours or more, one third employee, two thirds employer); the employer contributions collected through Samlet Betaling (AUB, Barsel.dk, finansieringsbidrag FIB, AES by branch group) and the duty to insure work accidents; voluntary ATP, AES and AM-bidrag for the self-employed; and the 2026 a-kasse and efterløn contributions as context. Trigger on: AM-bidrag, arbejdsmarkedsbidrag, ATP-bidrag, Samlet Betaling, AUB, Barsel.dk, FIB, AES-bidrag, arbejdsskadeforsikring, a-kasse, efterlønsbidrag, employer cost Denmark. Out of scope, see: dk-income-tax (A-skat, bundskat, B-skat), dk-corporate-tax, dk-capital-gains, dk-vat-return. Payroll withholding of A-skat is not covered."
+description: "Danish social contributions for 2026 for employees, employers and the self-employed. Covers the 8% labour market contribution (arbejdsmarkedsbidrag, AM-bidrag), its base and the new 2026 rule that nobody pays it before the year they turn 18; ATP Livslang Pension by hours band (DKK 297 a month in total for 117 hours or more, one third employee, two thirds employer); the employer contributions collected through Samlet Betaling (AUB, Barsel.dk, finansieringsbidrag FIB, AES by branch group) and the duty to insure work accidents; voluntary ATP, AES and AM-bidrag for the self-employed; and the 2026 a-kasse and efterløn contributions as context. Trigger on: AM-bidrag, arbejdsmarkedsbidrag, ATP-bidrag, Samlet Betaling, AUB, Barsel.dk, FIB, AES-bidrag, arbejdsskadeforsikring, a-kasse, efterlønsbidrag, employer cost Denmark. Out of scope, see: dk-income-tax (A-skat, bundskat, B-skat), dk-corporate-tax, dk-capital-gains, denmark-vat-return. Payroll withholding of A-skat is not covered."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/dk-social-contributions"
   jurisdiction: "DK"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Denmark: social contributions (AM-bidrag, ATP and employer contributions) v0.1
+# Denmark: social contributions (AM-bidrag, ATP and employer contributions) v0.2
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's or employer's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Denmark.
 
 Tax year: calendar year 2026. Currency: Danish kroner (DKK). Denmark funds most social security from general taxation, so the payroll-linked charges are small flat amounts plus one percentage charge, the 8% AM-bidrag. AM-bidrag is a tax collected by Skattestyrelsen. ATP and the employer contributions are collected by ATP through Samlet Betaling (virk.dk).
 
-See also: dk-income-tax (state and municipal income tax, personal allowance, B-skat for the self-employed), dk-corporate-tax (companies), dk-capital-gains, dk-vat-return.
+See also: dk-income-tax (state and municipal income tax, personal allowance, B-skat for the self-employed), dk-corporate-tax (companies), dk-capital-gains, denmark-vat-return.
 
 ## Who this applies to
 
@@ -234,26 +231,6 @@ expected:
 
 Not yet confirmed: whether an A1 from another country removes Danish AM-bidrag, rather than only giving a deduction for foreign contributions, was not settled from an official source. Whether Samlet Betaling charges exactly a quarter of the yearly AES amount each quarter on the ATP-based full-time count was not stated on the pages read, so Example 1 shows AES as a yearly figure. How AUB counts "every 50th employee" when the full-time count is a fraction was not read. The SMV payment date rests on Opkrævningsloven § 2, stk. 5 as consolidated in 2024; skat.dk does not publish the 2026 SMV table on the page read. The Samlet Betaling late interest rate from 1 July 2026 was not published on the page read. The commencement order for the 0.85-point addition under lov nr. 1694/2024, § 18, stk. 2 was not located; Den juridiske vejledning 2026-2 applies it. The monthly a-kasse admin fee charged by each a-kasse and work accident insurance premiums were not read.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

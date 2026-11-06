@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UA"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # UA Einvoice
@@ -40,7 +38,6 @@ The single most important split: a **non-VAT ФОП** has *light* duties (keep p
 | ЄРПН deadline (peacetime Tax Code baseline) | 1st–15th → by last day of same month; 16th–end → by 15th of next month *(suspended under martial law)* |
 | SAF-T UA | On-demand only (no general mandatory periodic filing as of May 2026 — *verify*) |
 | Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a Ukrainian accountant/auditor |
 | Skill version | 1.0 |
 
 > **Wartime note.** Martial law has been in force since 24 Feb 2022 and remains in force in 2026. Several deadlines below run on the *special martial-law schedule*, which differs from the peacetime Tax Code baseline. When martial law ends the peacetime ЄРПН deadlines resume. Always confirm the current regime before quoting a date.
@@ -242,24 +239,6 @@ Registration is temporarily permitted on weekends during martial law (so a deadl
 This skill is **research-verified** open-source guidance produced by the Open Accountants Community for use by AI agents assisting self-employed people. It reflects Ukrainian rules as understood for **tax year 2026 as of May 2026**, under martial law. Ukrainian e-invoicing and digital-reporting rules — ЄРПН deadlines, СМКОР criteria, ПРРО thresholds, penalties, and the SAF-T UA timeline — change frequently and are affected by martial-law measures. Figures and deadlines must be verified against the State Tax Service (tax.gov.ua / dps.gov.ua) before any filing.
 
 It is **pending sign-off by a qualified Ukrainian accountant or auditor** and is **not** a substitute for professional advice or for credentialed review of any specific filing. Use at your own risk. Part of the openaccountants.com open-source skill library.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

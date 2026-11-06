@@ -7,9 +7,12 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `km-electronic-filing-and-tax-procedure.md`
-4. `km-personal-tax-domicile.md`
-5. `km-registration-and-tax-clearance.md`
+3. `README.md`
+4. `km-electronic-filing-and-tax-procedure.md`
+5. `km-personal-tax-domicile.md`
+6. `km-registration-and-tax-clearance.md`
+7. `km-transfer-pricing.md`
+8. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

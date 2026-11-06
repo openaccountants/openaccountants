@@ -4,10 +4,9 @@ description: "Source-cited draft: company formation & entity choice for Belize (
 jurisdiction: BZ
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # Belize Company Formation & Entity Choice
@@ -27,21 +26,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Beneficial ownership / attestation** — Managers, members and Ultimate Beneficial Owners (UBOs) must be filed; an annual attestation of current status is required ((approx — confirm post-2023 amendment scope)) (approx — confirm post-2023 amendment scope)  _(Belize Limited Liability Companies Act)_
 - **Tax registration** — Companies must register with the Belize Tax Service and file applicable business/income tax returns  _([[Income and Business Tax Act (Cap. 55)](https://bts.gov.bz/)](https://bts.gov.bz/))_
 - **Economic substance** — Relevant entities (incl. certain IBCs) are subject to economic substance requirements ((approx — confirm applicability)) (approx — confirm applicability)  _(Economic Substance Act)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

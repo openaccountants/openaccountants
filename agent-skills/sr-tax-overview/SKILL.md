@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "SR"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Suriname Tax Overview
@@ -28,24 +26,6 @@ Suriname operates a Dutch-derived direct-tax system administered by the Belastin
 - **Annual personal income tax return deadline** — 30 June following the tax year ((approx — confirm))  _(Income Tax Act 1922 (Inkomstenbelasting 1922))_
 - **Mandatory online income tax filing** — From 1 January 2025, income tax returns must be filed through the Tax Administration's online portal  _(Belastingdienst Suriname administrative notice)_
 - **Personal/wage tax-free amount** — SRD 108,000 per year (SRD 9,000 per month) SRD  _(Wage Tax Act (Loonbelasting) / Income Tax Act 1922)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

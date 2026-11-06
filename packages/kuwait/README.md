@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `kuwait-tax.md`
-4. `kw-company-formation.md`
-5. `kw-corporate-income-tax.md`
-6. `kw-payroll-social.md`
-7. `kw-tax-overview.md`
-8. `kw-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `kuwait-tax.md`
+5. `kw-company-formation.md`
+6. `kw-corporate-income-tax.md`
+7. `kw-payroll-social.md`
+8. `kw-tax-overview.md`
+9. `kw-vat-gst.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

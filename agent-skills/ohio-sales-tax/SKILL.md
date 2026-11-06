@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-OH"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ohio sales and use tax: 2026 rates, sourcing, nexus, taxable services, exemptions and filing
@@ -271,24 +268,6 @@ Only services listed in Ohio law are taxable. Common ones, and the conditions th
 - [ ] Electronic and accelerated payments made if tax was $75,000 or more in a calendar year.
 - [ ] CAT considered separately (oh-cat skill).
 - [ ] Any late period: interest at 7.0% (2026) computed, penalties confirmed against the Revised Code, and VDA eligibility considered before any Department contact.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,14 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `td-company-formation.md`
-4. `td-corporate-income-tax.md`
-5. `td-income-tax.md`
-6. `td-payroll-social.md`
-7. `td-tax-overview.md`
-8. `td-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `td-company-formation.md`
+5. `td-corporate-income-tax.md`
+6. `td-import-exemption-eligibility.md`
+7. `td-income-tax.md`
+8. `td-payroll-social.md`
+9. `td-tax-overview.md`
+10. `td-transfer-pricing.md`
+11. `td-vat-gst.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

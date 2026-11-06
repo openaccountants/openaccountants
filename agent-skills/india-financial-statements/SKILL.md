@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/india-financial-statements"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-10-17"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-06"
 ---
 
 # India Company Financial Statements: Framework, Formats, Audit and Filing
@@ -340,7 +337,7 @@ Source: ICAI chapter on accounts of companies, https://resource.cdn.icai.org/747
 - Restatement, reopening or voluntary revision of earlier accounts (sections 130 and 131): refer.
 - A company that has missed filings for several years and needs condonation or a compounding application: refer to a company secretary.
 - Any question that turns on the Corporate Laws (Amendment) Bill, 2026 or a proposed rule: say it is not law and refer for the position on the filing date.
-- Income tax computation, tax audit and the return: outside this Guide; see `in-income-tax` for individuals and `india-transfer-pricing` for related-party pricing. Formation and post-incorporation filings: see `india-formation`.
+- Income tax computation, tax audit and the return: outside this Guide; see `india-income-tax` for individuals and `india-transfer-pricing` for related-party pricing. Formation and post-incorporation filings: see `india-formation`.
 
 ## Sources
 
@@ -360,24 +357,6 @@ Source: ICAI chapter on accounts of companies, https://resource.cdn.icai.org/747
 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.

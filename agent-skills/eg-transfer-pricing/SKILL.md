@@ -1,347 +1,181 @@
 ---
 name: eg-transfer-pricing
-description: "Use this skill whenever asked about Egyptian transfer pricing documentation, benchmarking, or related-party transaction review — for residents with cross-border or domestic related-party dealings. Trigger on \"Egypt TP\", \"Egypt transfer pricing\", \"Master File Egypt\", \"CbCR Egypt\", \"ضريبة نفقات الشركات المرتبطة مصر\". ALWAYS read this skill before touching any Egypt TP work."
+description: "Use this skill whenever asked about Egyptian transfer pricing for tax year 2026, for resident companies, permanent establishments of non-resident companies and Egyptian-parented groups with domestic or cross-border related-party dealings. Covers the arm's length rule in Income Tax Law 91 of 2005 art. 30 and executive regulation arts. 38 to 40, the related-person definition (art. 1 as replaced by Law 30 of 2023), the master file, local file and country-by-country report under Unified Tax Procedures Law 206 of 2020 arts. 12 and 13 and its executive regulations, the 1%, 2% and 3% charges and their 3% cap, advance pricing agreements, the debt to equity limit and interest-rate cap that hit related-party loans. Trigger on \"Egypt TP\", \"Egypt transfer pricing\", \"Master File Egypt\", \"Local File Egypt\", \"CbCR Egypt\", \"تسعير المعاملات\", \"الأشخاص المرتبطة\", \"الملف المحلى\". ALWAYS read this skill before touching any Egypt TP work."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/eg-transfer-pricing"
   jurisdiction: "EG"
-  tax_year: "2025"
-  last_updated: "2026-07-22"
-  authored_by: "Ahmed Hassan"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  tax_year: "2026"
+  last_updated: "2026-11-02"
+  reviewed_by: "Ahmed Hassan"
 ---
 
-# Egypt Transfer Pricing (تسعير المعاملات بين الشركات المرتبطة) Skill v0.1
+# Egypt Transfer Pricing (تسعير المعاملات بين الأشخاص المرتبطة) Skill v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Jurisdiction is required.** Set `jurisdiction: EG` in frontmatter even when the folder path implies it. Sync to openaccountants.com skips files without a resolvable jurisdiction.
+This skill covers Egyptian transfer pricing (TP) for tax year 2026 (calendar year, or the company's financial year). The Egyptian Tax Authority (ETA, مصلحة الضرائب المصرية) administers it. Reply in the user's language, English or Arabic. All amounts are in EGP. It loads on top of `transfer-pricing-workflow-base`; the output is working papers and a brief for a reviewer, not a filed return.
 
-This skill covers Egyptian **transfer pricing (TP)** compliance for resident companies, permanent establishments of non-residents, and Egyptian-parented MNE groups. Egypt was the first country in the Middle East to introduce TP legislation (Article 30, Income Tax Law No. 91 of 2005). The framework is OECD-aligned, following BEPS Action 13's three-tier documentation model. The AI must reply in the user's language (English or Arabic / Egyptian Arabic) and may use the native tax terms shown throughout.
+## Who this applies to
 
-> **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م).
-> **YMYL — verify before relying.** Egyptian TP guidelines, thresholds, and penalty rates are subject to amendment (most recently Laws 5, 6, 7 of 2025). Where this skill says "verify current value," re-confirm against the Egyptian Tax Authority (ETA — eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt), or a Big-4 alert before filing.
+- **The arm's length rule** (Law 91 art. 30): where related persons set conditions in their commercial or financial dealings that differ from those between independent parties, and this reduces the tax base or shifts the tax burden from a taxable to an exempt or non-taxable person, ETA may set taxable profit on the arm's length price. It applies to domestic and cross-border dealings alike.
+- **Related person (الشخص المرتبط)** (Law 91 art. 1, as replaced by Law 30/2023 art. 1): anyone linked to the taxpayer by a relationship that affects the tax base directly or indirectly, through management, control or ownership, so that one can act on the directions, requests, proposals or will of the other or of a third person. Always related:
+  1. husband, wife, ascendants and descendants;
+  2. a partnership and its general and limited partners;
+  3. a capital company and a person owning, directly or indirectly, at least 50% of its voting or management rights, profit rights or capital rights;
+  4. two or more companies in which another person owns at least 50% of those rights.
+  For items 2 to 4, a holding attributed to one person through a related person may not be attributed again to another related person. Being an employee or client of another does not by itself make two persons related, unless the link affects the tax base. The executive regulations of Law 206 repeat this definition (MoF decree 286/2021, definitions article).
+- **Who documents** (Law 206 art. 12; ER 206 art. 14): every person with commercial or financial transactions with related persons, including permanent establishments of non-resident legal persons. Transactions include sales and purchases of goods and services, assets, expense recharges, royalties, loans of every kind including credit facilities, securities, contracts and intangibles.
+- **Not here:** the corporate tax computation (`eg-corporate-tax`); withholding on payments to non-residents (`eg-withholding-tax`); residence, permanent establishment and treaty relief (`eg-cross-border`).
 
----
+## Rates, bands and thresholds
 
-## What this file is
+| Item | Amount | Conditions | Tax year | Official URL |
+|---|---|---|---|---|
+| Documentation set | Master file, local file and country-by-country report or notification | Required of every person with related-party commercial or financial transactions (Law 206 art. 12 first para.) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf |
+| Exemption from master file and local file | Total related-party transactions in the tax period not over EGP 8,000,000 | Law 206 art. 12 fourth para.; the Minister may raise the figure by decision. Measured on gross related-party income plus expenses, not the net (ER 206 art. 14). The exemption covers only the master file and local file (art. 12 fourth para. names items (a) and (b)); the art. 30 arm's length rule, the disclosure in the return and the CbC report or notification still apply. The figure in force after any ministerial decision is on "Not yet confirmed" | 2026 | same |
+| Country-by-country report, Egyptian-parented group | Consolidated group revenue of EGP 3 billion or more, and at least one foreign subsidiary | ETA TP Guidelines 2018 s. 5.5 and 5.8; the Minister or his delegate may exempt a company from the CbC report in line with international practice (Law 206 art. 12 second para.) | 2026 | https://www.eta.gov.eg/sites/default/files/2026-03/egyptian-transfer-pricing-en-guidelines-2019-view.pdf |
+| Country-by-country report, foreign-parented group | Consolidated group revenue of EUR 750 million or more; report filed in the parent's country | ETA TP Guidelines 2018 s. 5.5 and 5.8; the report or notification duty on all legal persons, free zone companies and PEs is in ER 206 art. 14 | 2026 | same |
+| Non-disclosure in the return | 1% of the undisclosed related-party transactions | Law 206 art. 13 last para. as replaced by Law 211/2020; due even if the transactions appear in the local or master file (ER 206 art. 16) | 2026 | https://eta.gov.eg/sites/default/files/2026-05/law_no.211-2020.pdf |
+| Local file not filed | 3% of related-party transactions | Same article; base is total related-party transactions (ER 206 art. 18) | 2026 | same |
+| Master file not filed | 3% of related-party transactions | Same article and base | 2026 | same |
+| Country-by-country report or notification not filed | 2% of related-party transactions | Same article and base | 2026 | same |
+| Cap where several failures combine | 3% of related-party transactions | Same article, last sentence | 2026 | same |
+| Debt to equity limit, tax year 2026 | Interest on loans above 3 times average equity is not deductible | Law 30/2023 art. 5 (transition: 4:1 for 2023, 3:1 for 2024 to 2027, 2:1 for 2028); permanent rule is 2 times average equity (Law 91 art. 52 item 1, as replaced by Law 151/2026). Equity per Egyptian Accounting Standards financial statements. Not for banks, insurers and finance companies named by the Minister | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf |
+| National infrastructure projects | 4 times average equity | Loans from unrelated lenders, projects named by Prime Minister decision, company's share at least 25% of its investments; ends when the term of the loans for carrying out the project's main works ends (Law 91 art. 52 item 1 second para., Law 151/2026, as corrected by the Gazette erratum of 8 Aug 2026) | From 29 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
+| Interest rate cap | Interest above twice the Central Bank credit and discount rate on 1 January of the year in which the tax period ends is not deductible; 2 x 20.50% = 41% for a period ending in 2026 | Law 91 art. 24 item 4 (2005 text); rate from ETA circular 1/2026 | 2026 | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf |
 
-**This file is a content skill that loads on top of a workflow base** (here: `transfer-pricing-workflow-base`). It provides Egypt-specific TP rules, documentation thresholds, methods, filing deadlines, penalty regimes, and APA procedure.
+## The base
 
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+**Methods** (ER 91 art. 39, as replaced by MoF decree 221/2018; text as printed in the ETA Guidelines): comparable uncontrolled price (CUP), cost plus, resale price, profit split, and transactional net margin (TNMM). **Choice** (ER 91 art. 40, same decree): the taxpayer applies the method that fits the nature and conditions of the transaction; if none fits, any other method, provided documents and records support it. The Guidelines work on the most appropriate method (s. 4, p. 42), with CUP preferred for commodities and quoted-price goods (p. 44) and resale price usually suited to distributors (p. 48). The pre-2018 text gave CUP first priority; that hierarchy is gone. ETA treats the Minister's guidelines as its basic reference (art. 40).
 
-**The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+**Scope of the check** (ER 91 art. 38, same decree): exchange of goods and services, allocation of shared expenses, royalties, interest and any other commercial or financial transaction. The Guidelines read "financial transactions" to include share transfers, loans and guarantees (p. 12, note 5).
 
----
+**Comparables** (Guidelines s. 5.7.3.1, p. 65): search Egyptian comparables first, then Middle East and Africa, then global; disclose the search strategy in the local file. Differences that affect price or margin are adjusted. Where comparables leave unquantified defects, statistical tools narrow the range (p. 84). ETA audits with a specialised financial database (p. 65, note 17).
 
-## Section 1 — Quick Reference
+**Documents, in the four steps** (Guidelines s. 5.7): master file (group structure, business and supply chain, five largest products or services, intangibles and their owners, intra-group financing, consolidated accounts and existing APAs or rulings); local file (local business and industry, controlled transactions with contracts and amounts by country, functional analysis, method choice and reasons, comparability study, adjustments, financial calculations, segmented accounts and profitability against the range, ideally three years). Local files are entity by entity, not one file for several Egyptian companies. The Guidelines leave intangibles, intra-group services and cost contribution arrangements to separate guidance (p. 11). A filing that lacks the sections the Minister's guide prescribes does not count as filed (ER 206 art. 19).
 
-| Field | Value |
-|---|---|
-| Country | Egypt (جمهورية مصر العربية) |
-| Tax authority | Egyptian Tax Authority (ETA — مصلحة الضرائب المصرية, eta.gov.eg) |
-| Primary TP legislation | Article 30, Income Tax Law No. 91 of 2005 (قانون الضريبة على الدخل) |
-| Executive Regulations | Articles 38, 39, 40 of the Executive Regulations of Law 91/2005 |
-| TP Guidelines | Egyptian Transfer Pricing Guidelines, Ministerial Decree No. 547 of 2018 (circulating as the ETA TP circulars) |
-| Related-party definition | Article 1, Executive Regulations of Unified Tax Procedures Law No. 206 of 2020 (amended by Law No. 211 of 2020) |
-| APA basis | Ministerial Decree No. 221 of 2018 (amended Art 30 ITL); bilateral/multilateral available |
-| OECD member? | No |
-| BEPS Inclusive Framework? | Yes (member) |
-| OECD TPG adoption | Egyptian TPG modeled on OECD TPG (2017 ed., acknowledged as global standard) |
-| Currency | EGP (ج.م) |
-| Documentation language | Arabic; English accepted for MNE groups with non-Arabic parents |
-| Skill version | 0.1 |
+**When nothing is filed** (Law 206 art. 12 third para.; ER 206 art. 14): ETA may set pricing rules it considers suitable from the information it has; the taxpayer may object, and then carries the burden of proof (Law 206 art. 40).
 
----
+**Financial transactions.** Apply the debt to equity limit and the rate cap from the table, then test the rate itself at arm's length. Interest on loans of any kind paid to natural persons who are not taxable or are exempt is not deductible (Law 91 art. 24 item 5). Dividends, board remuneration and employees' profit share are not deductible costs of a legal person (art. 52 items 3 to 5).
 
-## Section 2 — Legal Foundation
+## Deadlines and filing
 
-### 2.1 Primary Articles
-
-| Source | Scope |
-|---|---|
-| **Law 91/2005 Art 30** | Arm's length principle applied to transactions between related parties — commercial, financial, goods, services, cost contributions, royalties, interest, other commercial/financial transactions |
-| **Law 91/2005 Executive Regs Art 38** | Related-party scope; application of arm's length principle |
-| **Law 91/2005 Executive Regs Art 39** | Recognised TP methods (CUP, RPM, CPM, TNMM, PSM); other appropriate methods permitted with supporting documentation |
-| **Law 91/2005 Executive Regs Art 40** | Documentation requirements; comparability analysis; documentation retention |
-| **Ministerial Decree 547/2018** | Egyptian Transfer Pricing Guidelines — a guide to the application of Art 30 of Law 91/2005 (modeled on OECD TPG 2017) |
-| **Ministerial Decree 221/2018** | Amendments to Art 30 ITL — added TNMM and PSM as permissible methods; authorised APAs; authorised ETA guidance on documentation |
-| **Unified Tax Procedures Law 206/2020 Art 1** | Related-party definition (replaces prior definitions in scattered regs) |
-| **Law 91/2005 Arts 24, 52, 56** | Non-TP rules relevant to related-party transactions: interest deductibility (Art 24 — interest on loans exceeding 2× CBE rate non-deductible), thin-cap interaction, Art 56 WHT on payments to non-residents at 20% |
-
-### 2.2 Arm's Length Principle
-
-Article 30 of Law 91/2005 applies the arm's length principle: where a transaction between related parties is not at arm's length, the ETA may adjust taxable profit to reflect what independent parties would have agreed. The 2018 Decree expanded the scope to explicitly include commercial and financial transactions for goods, services, cost contribution allocations, royalties, interest, and other commercial/financial transactions.
-
-### 2.3 Related Party Definition (Law 206/2020 Art 1)
-
-Related parties exist where the relationship affects, directly or indirectly (through management, control, or ownership), the determination of the tax base. Two persons are related where one or both can make dispositions according to the directions, requests, proposals, or will of the other or a third party. Specifically:
-
-1. Husband, wife, ascendants, descendants, or inter se
-2. Partnerships, general partners, and limited partners therein
-3. Companies and the person who owns, directly or indirectly, at least 50% of the voting rights, management, dividends, or capital rights
-4. Two or more companies in which another person owns or acquired at least 50% of voting rights, management, or dividends/capital rights
-
-> **Note.** Ownership attributed by a related party may not be reassigned to another. Employees/clients are not related parties solely by virtue of that relationship unless it affects the tax base.
-
----
-
-## Section 3 — Documentation Requirements
-
-Egypt follows the OECD BEPS Action 13 three-tier documentation model.
-
-### 3.1 Documentation Threshold
-
-| Item | Detail |
-|---|---|
-| Master File + Local File required | Aggregated annual related-party transactions > **EGP 15 million** |
-| Below threshold | Arm's length pricing must still be substantiated; TP policy/strategy recommended but documentation not mandatory |
-| Individual transaction records | Maintain records of material controlled transactions (> EGP 1m individually as a practical benchmark; no statutory individual threshold) |
-
-> **Threshold verification.** The EGP 15m threshold is the widely-cited figure in professional practice (Andersen 2025, ETA guidance). Earlier sources cited EGP 8m; verify current threshold against ETA before filing — the threshold may have been amended by Laws 5, 6, 7 of 2025.
-
-### 3.2 Master File
-
-| Item | Detail |
-|---|---|
-| Required? | Yes, where EGP 15m threshold met |
-| Format | OECD-aligned per BEPS Action 13 |
-| Content | Group organisational structure; description of business; intangibles ownership and strategy; intercompany financial activities; consolidated financial and tax positions |
-| Filing | Filed with ETA — align with ultimate parent's Master File filing date in its home jurisdiction |
-| Language | Arabic; English accepted for non-Arabic parent groups |
-| Size | No statutory MB cap; ETA may set practical limits |
-
-### 3.3 Local File
-
-| Item | Detail |
-|---|---|
-| Required? | Yes, where EGP 15m threshold met |
-| Format | OECD-aligned; entity-specific analysis of material transactions |
-| Content | Local entity business description; FAR analysis (functions, assets, risks); controlled transaction descriptions; method selection; comparability analysis and benchmarking; financial data |
-| Filing | Due **within two months** of filing the CIT return |
-| Revised return interaction | If a revised CIT return is filed within 30 days, Local File deadline resets to two months from the new submission date |
-| Comparables preference | Egyptian comparables searched first; then Middle Eastern/African regional; then global (per Egyptian TPG §5.7.3.1) |
-
-### 3.4 Country-by-Country Report (CbCR)
-
-| Item | Detail |
-|---|---|
-| Egyptian-parent threshold | MNE groups with consolidated group revenue ≥ **EGP 3 billion** (≈ EUR 750m; aligned with OECD CbCR threshold) |
-| Non-Egyptian-parent threshold | OECD EUR 750m applies; Egyptian subsidiaries must file CbCR Notification in each tax year |
-| Surrogate filing | Egyptian subsidiary may be required to file locally if the parent's jurisdiction does not require CbCR, does not have automatic exchange with Egypt, or fails to file |
-| Filing deadline | **12 months** after the last day of the reporting fiscal year of the MNE group |
-| Format | Per BEPS Action 13 / OECD CbC template (Annex III) |
-| Notification | Required for each Egyptian subsidiary of an MNE group meeting the threshold |
-| Effective | From fiscal years beginning on/after 1 January 2018 |
-
----
-
-## Section 4 — Transfer Pricing Methods
-
-### 4.1 Accepted Methods (Executive Regs Art 39)
-
-| Method | Accepted | Best suited for |
+| Step | Rule | Source |
 |---|---|---|
-| Comparable Uncontrolled Price (CUP) | Yes | Commodities, standard goods with public prices; must be applied where reliable comparables available |
-| Resale Price Method (RPM) | Yes | Distributors that add limited value to goods purchased from related parties |
-| Cost Plus Method (CPM) | Yes | Manufacturers; service providers; routine back-office functions |
-| Transactional Net Margin Method (TNMM) | Yes | Most common in practice; acceptable for a wide range of transactions |
-| Profit Split Method (PSM) | Yes | Highly integrated operations; unique intangibles; both parties contribute significant value |
-| Other appropriate methods | Yes | Per 2018 Decree — permitted with supporting documentation |
+| Disclose related-party transactions | In the annual corporate return, in the form's tables | Law 206 art. 13 last para.; ER 206 art. 16 |
+| Corporate return | Before 1 May, or within four months after the financial year end | Law 206 art. 31(c) |
+| Local file | Within two months after the date the annual return is filed | Law 206 art. 13(b) |
+| Master file | On the parent's filing date in the parent's country; if the parent is in Egypt, or its country does not require a master file, by the local file deadline | Law 206 art. 13(a); ER 206 art. 15 |
+| Country-by-country report | Within one year after the end of the tax year | Law 206 art. 13(c); first report for financial years ending 31 Dec 2018 (Guidelines s. 5.9) |
+| Records | Keep books, records and documents for five years after the period the return covers | Law 206 art. 38 third para. (Law 150/2026 replaced only the first para.) |
+| Information requests | Provide data and documents within 15 days of a written request; the ETA head may extend once by the same period | Law 206 art. 41 |
+| Penalty demand | ETA claims the TP charge on form 3 سداد | ER 206 art. 17 |
 
-### 4.2 Method Selection
+**APA** (Law 91 art. 30 second para.; ER 91 art. 40; Guidelines Part Two): the ETA Commissioner may agree one or more methods in advance. Unilateral, bilateral and multilateral APAs exist; bilateral and multilateral ones run through the treaty mutual agreement article. Steps: written request for a pre-filing meeting at least six months before the covered period starts (form 1 APA); formal application on form 2 APA within two months of ETA's notice after that meeting; ETA review and negotiation; signature; annual compliance report. ETA puts a unilateral APA at three to six months. APA documents should ideally be in English and Arabic; English may be filed first and ETA says if an Arabic version is needed (p. 97). Term depends on the case and can be renewed; a missed critical assumption can lead to revision or cancellation and a TP audit (pp. 91 to 97). Open to all taxpayers, PEs included.
 
-Egypt applies the **"most appropriate method"** criterion (Egyptian TPG §2.3.2) — not a strict hierarchy. The method most directly producing an arm's length result for the specific transaction must be selected, consistent with OECD TPG Chapter II.
+**Steps for a 2026 local file:**
+1. Total related-party income and expenses for the year (gross) and test the exemption threshold.
+2. Fill the related-party tables in the corporate return on the ETA portal (https://workspace.eta.gov.eg/workspace/dashboard) and file before 1 May (calendar year).
+3. Build the local file on the Guidelines' four steps and the Minister's guide; file it with ETA's TP department within two months of the return.
+4. Obtain the group master file and file it by its date; check whether the group meets a CbCR threshold.
 
-### 4.3 Comparability Analysis
+## Penalties and interest
 
-| Requirement | Detail |
-|---|---|
-| OECD TPG Chapter III alignment | Yes, Egypt follows the OECD approach |
-| Comparability adjustments | Required where differences between controlled and uncontrolled transactions affect price/margin (Egyptian TPG Chapter 4) |
-| Arm's length range | Permitted; statistical measures (interquartile range) applied where sufficient comparables exist |
-| Domestic vs foreign comparables | Egyptian comparables preferred; regional (Middle East/Africa) secondary; global tertiary (Egyptian TPG §5.7.3.1) |
-| Secret comparables | **Not used** (confirmed in OECD TP Country Profile — Egypt, 2022) |
-| Commodity transactions | Follows OECD TPG ¶¶2.18-2.22 (Egyptian TPG §4.4.1) |
-
-### 4.4 Intra-Group Services
-
-| Field | Detail |
-|---|---|
-| Dedicated guidance in Egyptian TPG? | No (OECD TPG consulted for detail) |
-| Low-value-adding services safe harbour? | No |
-| Benefit test | Apply OECD TPG Chapters IV and VII principles — services must provide economic/commercial value; shareholder-type costs generally not chargeable |
-| Charge-out vs cost-only | Both accepted in practice; charge-out (cost + markup) most common for routine shared services; cost-only acceptable where services are duplicative |
-| WHT interaction | Payments to non-resident affiliates subject to Art 56 WHT at 20% (before treaty relief) |
-| Documentation | FAR analysis; benefit test; cost allocation keys; benchmarking of charge-out rates |
-
-### 4.5 Financial Transactions / Thin Capitalisation
-
-| Field | Detail |
-|---|---|
-| Dedicated TP guidance for financial transactions? | No (OECD TPG consulted) |
-| Thin-cap rule | Law 91/2005 Art 24 — interest on loans exceeding **2× the Central Bank of Egypt (CBE) credit/discount rate** at the start of the calendar year is non-deductible |
-| BEPS Action 4 implementation | Not fully implemented; Egypt relies on the Art 24 interest cap |
-| Other financial rules | Art 52 (no deduction of distributions to owners); Art 56 (20% WHT on payments to non-residents) |
-
----
-
-## Section 5 — Filing Obligations and Deadlines
-
-### 5.1 Filing Matrix
-
-| Obligation | File | Deadline |
+| Failure | Consequence | Source |
 |---|---|---|
-| CIT return | CITR | Within 30 April following the fiscal year-end (standard fiscal year 1 Jan – 31 Dec) unless an extension applies; ETA returns may be filed up to 30 days late with revised return (preserves Local File deadline) |
-| Local File | TP documentation | **Within 2 months** of filing the CITR (or revised CITR) |
-| Master File | TP documentation | Aligns with the ultimate parent's own Master File filing deadline in its home jurisdiction |
-| CbCR | CbC report | **12 months** after the last day of the MNE group's reporting fiscal year |
-| CbCR Notification | Notification from Egyptian subsidiaries | Due at the same time as the CIT return for the year in which the MNE group's fiscal year ends |
+| TP documentation failures | 1%, 3%, 3%, 2%, capped at 3% of related-party transactions (table above) | Law 206 art. 13, Law 211/2020 |
+| Other sanctions | Paying the TP charge does not stop other fines or penalties under the law (ER 206 art. 20). Breach of arts. 12 or 13 is itself an offence: fine EGP 3,000 to 50,000 on top of the tax due, tripled on repeat | ER 206 art. 20; Law 206 art. 69(d) |
+| Tax from a TP adjustment paid late | Delay charge at the Central Bank rate plus 2% a year (`eg-income-tax`), capped at 100% of the principal tax | Law 91 art. 110; Law 206 art. 45 bis (Law 7/2025) |
+| Assessment window | Five years from the end of the statutory return deadline; interrupted by notice of assessment, demand or referral to appeal committees | Law 206 art. 44 as replaced by Law 211/2020 (the six-year evasion limb of the 2020 text was dropped) |
+| Wrong return, obstruction, evasion | Fines and prison under Law 206 arts. 69 to 72; settlement possible under arts. 75, 75 bis | Law 206; Law 7/2025 |
 
-### 5.2 Retention and Language
+## Cross-border points
 
-| Item | Detail |
-|---|---|
-| Documentation retention | Retain during the tax statute of limitations (5 years per Unified Tax Procedures Law; longer if audit open) |
-| Language | Arabic; supplementary English accepted for MNE groups |
-| Production on audit | Must be produced on ETA request; failure to produce is a basis for ETA estimation |
+- Payments to non-resident related persons also carry withholding (Law 91 art. 56) and dividend tax (art. 56 bis); see `eg-withholding-tax` and `eg-cross-border`.
+- Bilateral and multilateral APAs and relief from double taxation after an adjustment run through the treaty's mutual agreement article; the ETA treaty list is in `eg-cross-border`.
+- Egypt is a member of the OECD Inclusive Framework on BEPS and its Guidelines endorse the OECD Transfer Pricing Guidelines' documentation principles (Guidelines p. 11).
+- CbC reports of foreign-parented groups reach ETA through automatic exchange between tax administrations (Guidelines s. 5.5); Law 206 art. 78 lets ETA exchange information with treaty partners.
 
----
+## Two worked examples that recompute
 
-## Section 6 — Penalties
+**Case 1. Several documentation failures in one year.** Company with EGP 50,000,000 of related-party transactions in 2026. It left EGP 10,000,000 of them out of the return and never filed the local file. Non-disclosure: 1% x 10,000,000 = 100,000. Local file: 3% x 50,000,000 = 1,500,000. Sum 1,600,000, but the cap is 3% x 50,000,000 = 1,500,000. Charge: 1,500,000.
 
-### 6.1 Percentage-Based TP Penalties
+```oa-check
+name: TP charges with the 3% cap, transactions EGP 50m
+inputs:
+  rpt_total: 50000000
+  undisclosed: 10000000
+steps:
+  - nondisclosure: undisclosed * 0.01
+  - local_file: rpt_total * 0.03
+  - uncapped: nondisclosure + local_file
+  - cap: rpt_total * 0.03
+  - charge: min(uncapped, cap)
+expected:
+  nondisclosure: 100000.00
+  local_file: 1500000.00
+  charge: 1500000.00
+```
 
-Egypt's TP penalty regime follows a percentage-of-transaction-value model, capped at **3% of total related-party transactions** per year (per Law 206/2020 and ETA practice):
+**Case 2. Decision: fund with a group loan or with equity.** Average equity EGP 10,000,000. Option A: group loan of 45,000,000 at 10% (interest 4,500,000; 10% is under the 41% rate cap). 2026 limit is 3 x 10,000,000 = 30,000,000, so 30/45 of the interest is deductible: 3,000,000; 1,500,000 is disallowed. Option B: inject 15,000,000 as equity and borrow 30,000,000: average equity 25,000,000 (if held all year), limit 75,000,000, interest 3,000,000 all deductible. The same loan in 2028 at 2:1 would allow only 20/45, so plan for the step-down.
 
-| Violation | Penalty Rate |
-|---|---|
-| Failure to disclose related-party transactions in the tax return | **1%** of the transaction value |
-| Failure to submit the Local File | **3%** of the transaction value |
-| Failure to submit the Master File | **3%** of the transaction value |
-| Failure to file CbCR or notification | **2%** of the transaction value |
-| Aggregate cap | **3%** of total related-party transactions (per year), even if multiple violations occur |
+```oa-check
+name: Debt to equity 3:1 in 2026, loan against equity funding
+inputs:
+  equity_a: 10000000
+  loan_a: 45000000
+  equity_b: 25000000
+  loan_b: 30000000
+  rate: 0.10
+steps:
+  - interest_a: loan_a * rate
+  - deductible_a: interest_a * min(1, (3 * equity_a) / loan_a)
+  - disallowed_a: interest_a - deductible_a
+  - interest_b: loan_b * rate
+  - deductible_b: interest_b * min(1, (3 * equity_b) / loan_b)
+  - deductible_a_2028: interest_a * min(1, (2 * equity_a) / loan_a)
+expected:
+  deductible_a: 3000000.00
+  disallowed_a: 1500000.00
+  deductible_b: 3000000.00
+  deductible_a_2028: 2000000.00
+```
 
-### 6.2 General CIT Late Filing / Late Payment Penalties (Law 91/2005)
+Disallowing interest on the excess loan at the loan rate gives the same figure as the proportional split above when one rate applies. How equity and average loans are measured (Executive Regulations arts. 58 and 59) is set out in `eg-corporate-tax`.
 
-| Provision | Detail |
-|---|---|
-| Late filing penalty | Art 110 CIT Law — **2%/month** on tax due, from the day following the legal deadline |
-| Late payment penalty | Art 111 CIT Law — **1.5%/month** from the deadline until full payment |
-| TP audit-driven assessments | Adjusted tax follows general CIT penalty rules above, on top of TP percentage penalties in §6.1 |
+## Ask the client first
 
-### 6.3 Additional Risks
+1. Total related-party income and expenses for 2026, gross, and who the related persons are (which test in art. 1).
+2. Financial year end and the date the corporate return was or will be filed.
+3. Group structure: parent's country, consolidated revenue, whether the parent files a master file and a CbC report.
+4. Related-party loans: amounts, rates, average equity, any national infrastructure project.
+5. Any APA, ruling or open TP audit, and documents already filed for earlier years.
 
-| Risk | Detail |
-|---|---|
-| ETA estimation | Without sufficient documentation, the ETA may estimate arm's length prices — the burden shifts to the taxpayer to disprove the estimate |
-| Reassessment window | 5 years from filing (or 6 years if fraud); extended by Unified Tax Procedures Law 206/2020 in certain cases |
-| Criminal exposure | Introduced by Law 7/2025 — tax evasion including deliberate mis-statement of related-party prices may attract criminal liability; qualified professional review strongly advised |
-
----
-
-## Section 7 — Advance Pricing Agreements (APA)
-
-| Item | Detail |
-|---|---|
-| Availability | Yes — available under Ministerial Decree 221/2018 (amending Art 30 ITL) |
-| Types | Unilateral, bilateral, and multilateral APAs |
-| Administrator | Egyptian Tax Authority (ETA) — competent authority function |
-| Bilateral / multilateral | Available through mutual agreement procedure (MAP) provisions in Egypt's tax treaties (~60 treaties) |
-| Detailed administrative procedure? | No specific APA procedural regulations published; ETA discretion applies |
-| Process in practice | Taxpayer files an APA request with ETA; ETA evaluates the proposed methodology and comparables; for bilateral/multilateral, ETA enters into MAP discussions with the other jurisdiction(s) |
-| Duration | Typically 3-5 years (aligned with OECD practice) |
-| Roll-back | Not explicitly provided for; may be negotiated with ETA on a case-by-case basis |
-| Fees | No statutory fee structure; professional fees apply |
-| Practical use | Limited uptake; advance tax rulings and bilateral negotiations more common in practice |
-
----
-
-## Section 8 — Safe Harbours and Simplified Approaches
-
-| Area | Detail |
-|---|---|
-| Low-value-adding services safe harbour | **No** — full arm's length analysis required; OECD TPG Chapter VII consulted |
-| Interest rate safe harbour | **No** — thin-cap governed by Art 24 (2× CBE rate) and arm's length principle; no reduced-rate safe harbour |
-| Thin cap | 2× CBE credit/discount rate (cost not deductible beyond this) — a deduction cap, not a TP method |
-| CbCR safe harbour | **No** — full OECD template required |
-| General position | All cross-border and domestic related-party transactions must meet the arm's length standard |
-
----
-
-## Section 9 — Recent Developments
-
-| Date | Development |
-|---|---|
-| 2005 | Law 91/2005 Art 30 enacted — Egypt becomes the first ME country with TP legislation (CUP, RPM, CPM initially) |
-| 2010 | First Egyptian TP Guidelines issued (closely follow OECD TPG) |
-| May 2018 | Ministerial Decree 221/2018 — added TNMM and PSM; authorised APAs; broadened scope of related-party transactions |
-| May 2018 | Ministerial Decree 547/2018 — Egyptian Transfer Pricing Guidelines re-issued (modeled on OECD TPG 2017 ed.) |
-| 2020 | Unified Tax Procedures Law 206/2020 — provided a single definition of related parties, CbCR filing mechanism, TP documentation framework |
-| 2022 | OECD TP Country Profile — Egypt updated (confirmed the 5 methods, most-appropriate-method rule, no secret comparables) |
-| 2022 | OECD TPG (January 2022 ed.) — Egypt's TPG should be updated to reflect Actions 8-10 and the 2022 changes; preparation in progress |
-| 2025 | Laws 5, 6, 7 of 2025 amended CIT — verify thresholds, rates, and penalty interactions before filing |
-| Ongoing | ETA building TP audit capacity; increased audit focus on royalties, management fees, and IP |
-| Ongoing | CbCR used for risk assessment and audit selection; exchange of CbC reports under MCAA |
-
----
-
-## Section 10 — Interaction with Other Skills
-
-| Related skill | Interaction |
-|---|---|
-| eg-corporate-tax | TP adjustments directly affect taxable income and CIT liability; adjustments flow through the CITR |
-| eg-withholding-tax | Art 56 WHT at 20% applies to payments to non-resident affiliates (before treaty relief); royalty/interest/fees in scope |
-| eg-income-tax | Related-party transactions affect individual income tax for owners/partners |
-| eg-tax-optimization | TP structuring and APA considerations feed tax planning; document benefits test |
-| eg-financial-statements | TP documentation builds on IFRS / Egyptian Accounting Standards-compliant records |
-| eg-formation | New entities must consider TP policy from formation; related-party agreements should be in place from day one |
-| transfer-pricing-workflow-base | Workflow base for this content skill — controls documentation and formatting |
-| Cross-border treaty skills | Egypt's ~60 tax treaties provide WHT relief and MAP/APA pathways for related-party cross-border transactions |
-
----
+Refuse to help price transactions to shift profit, backdate documentation or hide related-party dealings. Do not present output as a filed local file or a professional sign-off.
 
 ## Sources
 
-- **Law 91/2005** (Income Tax Law) Arts 24, 30, 38-40, 52, 56, 110-111 — mof.gov.eg
-- **Ministerial Decree 221 of 2018** — amendment to Art 30 ITL (TP methods, APAs)
-- **Ministerial Decree 547 of 2018** — Egyptian Transfer Pricing Guidelines (ETA TP circulars)
-- **Unified Tax Procedures Law No. 206 of 2020** Art 1 (related-party definition), Art 12-13 (TP procedures, CbCR)
-- **Executive Regulations of Law 91/2005** Arts 38, 39, 40 — TP methods, documentation, comparability
-- **OECD Transfer Pricing Country Profile: Egypt (June 2022)** — oecd.org
-- **OECD Transfer Pricing Guidelines (January 2022 edition)** — acknowledged by ETA as a reference
-- **Andersen in Egypt "Transfer Pricing Regulations in Egypt and India" (Dec 2025)** — eg.andersen.com
-- **Thomson Reuters "Egypt Enhances Transfer Pricing Rules" (Jul 2018)** — tax.thomsonreuters.com
-- **PwC Worldwide Tax Summaries — Egypt** — taxsummaries.pwc.com/egypt
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Law 91 of 2005, original text: arts. 1, 2, 24 items 4 and 5, 30, 47, 52, 54, 56 (page images read; pp. 6 to 8, 18, 30 to 35 of the Gazette) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-02 |
+| Law 30 of 2023: art. 1 (art. 1 related person, art. 4, art. 52 item 1, art. 56 third para., art. 56 bis), art. 2 (art. 4 bis), arts. 5, 6, 12 (text layer read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf | 2026-11-02 |
+| Law 151 of 2026, arts. 1, 2, 6, 7 (art. 52 item 1, art. 56 fourth para.; text layer read); Gazette 30 bis (a), 28 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-02 |
+| Gazette erratum to Laws 149, 150 and 151 of 2026, Gazette 32 bis, 8 Aug 2026 (page images read; corrects art. 52 item 1 and art. 56 fourth para.) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-02 |
+| Law 150 of 2026 amending Law 206 (art. 38 first para., art. 27 bis; text layer read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf | 2026-11-02 |
+| Unified Tax Procedures Law 206 of 2020: arts. 12, 13, 31, 33, 38, 40, 41, 44, 53, 68 to 81 (page images read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-02 |
+| Law 211 of 2020: arts. 1 to 3 (art. 13 last para., arts. 44, 70, 73, 73 bis, 74 bis; text layer read) | https://eta.gov.eg/sites/default/files/2026-05/law_no.211-2020.pdf | 2026-11-02 |
+| Law 7 of 2025, whole text (arts. 45 bis, 75 bis, 75 bis 1) | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-11-02 |
+| MoF decree 286 of 2021, executive regulations of Law 206: definitions and arts. 13 to 21 (text layer read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.286-2021.pdf | 2026-11-02 |
+| ETA Egyptian Transfer Pricing Guidelines (2018 edition, file dated 2019): pp. 11 to 13 (law and ER arts. 30, 38 to 40, decree 221/2018 note), 42 to 48, 61 to 67, 84, 91 to 97 | https://www.eta.gov.eg/sites/default/files/2026-03/egyptian-transfer-pricing-en-guidelines-2019-view.pdf | 2026-11-02 |
+| ETA circular 1 of 2026, Central Bank rates on 1 January (page image read) | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf | 2026-11-02 |
+| ETA income tax laws page, read for the list of instruments ETA publishes | https://www.eta.gov.eg/ar/content/qwanyn-aldrybt-ly-aldkhl | 2026-11-02 |
 
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: the documentation threshold in force for 2026 (the law says EGP 8,000,000 and lets the Minister raise it; MoF decisions reported as 52/2024 raising it to EGP 15,000,000 and 534/2025 of 17 Dec 2025 raising it to EGP 30,000,000 were not found on eta.gov.eg and were not read; the old skill used EGP 15,000,000). The number and date of the ministerial decree that issued the TP Guidelines (the old skill said 547/2018; the ETA file does not print it). The ETA Explanatory Instructions 78 of 2023 on TP and the Minister's documentation guide (not found on eta.gov.eg). Whether a revised return filed within 30 days of the deadline (Law 206 art. 33) moves the local file deadline. The CbC notification deadline, and whether an Egyptian subsidiary must file the CbC report locally when the parent's country does not exchange it (the old skill said it may). Whether the TP charge also carries the delay charge. Whether the 2:1 base rule in Law 151/2026 or the 3:1 transition in Law 30/2023 art. 5 governs a period straddling 29 Jul 2026 (this skill applies the transition, which Law 151 did not repeal). Whether art. 24 item 4 was amended after 2005. Corresponding adjustments: no domestic provision was found. Documentation language (the old skill said Arabic, English accepted). Safe harbours for low-value services or interest, the benefit test for intra-group services, APA roll-back and fees: none found in the texts read. The "no secret comparables" statement (from the OECD country profile, a secondary source).
 
 > Contributed by Ahmed Hassan.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-02. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

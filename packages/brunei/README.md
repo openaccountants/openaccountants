@@ -7,15 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bn-company-formation.md`
-4. `bn-corporate-income-tax.md`
-5. `bn-income-tax.md`
-6. `bn-payroll-social.md`
-7. `bn-tax-overview.md`
-8. `bn-vat-gst.md`
-9. `brunei-tax.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+3. `README.md`
+4. `bn-company-formation.md`
+5. `bn-corporate-income-tax.md`
+6. `bn-income-tax.md`
+7. `bn-payroll-social.md`
+8. `bn-tax-overview.md`
+9. `bn-vat-gst.md`
+10. `brunei-tax.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## How to use
 

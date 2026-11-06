@@ -7,14 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-crypto-tax"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Portugal: IRS on crypto assets (tax year 2026) v1.2
-
-> Source-cited draft: not reviewed by an accountant.
 
 This skill computes the IRS of a Portuguese resident individual on crypto: gains on sale, rewards, mining and trading as a business, and the charge on leaving Portugal. Crypto gains have been taxable since 1 January 2023 (Lei 24-D/2022). Decreto-Lei 97/2026, de 20 de maio, renumbered CIRS art. 10 with effect from 1 January 2026 (DL 97/2026 art. 18(2)). The crypto rules did not change in substance: the 365-day exclusion moved from n.º 19 to n.º 22, swaps from n.º 20 to n.º 23, the carve-out from n.º 21 to n.º 24, and the exit charge from n.º 22 to n.º 25. Older material citing art. 10(17), (19) or (22) uses the old numbers.
 
@@ -219,28 +215,8 @@ expected:
 
 Not yet confirmed: the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; airdrops received free (earlier versions assumed acquisition value EUR 0 and tax only on sale; no AT guidance read); hard forks (earlier versions assumed the new coin has acquisition value EUR 0 and a 365-day period starting at the fork; no AT guidance read); DeFi liquidity pools, yield farming, governance-token rewards and impermanent loss (earlier versions treated a deposit into a pool as a non-taxable swap and losses as recognised only on sale to fiat; no AT guidance read); whether creating and selling NFTs, or NFT royalties, is Category B or Category E income when done regularly (not read); when regular staking or validation becomes a Category B business (art. 3 and 28 not tested against crypto; no AT guidance read); whether AT can extend the four-year document period beyond art. 128(3) during an inspection (earlier versions said 12 years; no source read); that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
 
-> Contributed by Ryan Duguid.
-
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

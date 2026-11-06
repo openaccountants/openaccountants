@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "US-KS"
   tax_year: "2026"
   last_updated: "2026-10-29"
-  authored_by: "Jeff Watts"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Jeff Watts"
 ---
 
 # Kansas transfer pricing, tax year 2026
@@ -126,24 +124,6 @@ expected:
 Not yet confirmed: that Kansas has no standalone transfer-pricing documentation statute and no state country-by-country report; the combined-report ownership test (v0.1 expected an 80%-type test) and form ID (v0.1 named K-120M); whether Kansas has an intangible / royalty addback for payments to related low-tax affiliates, its statute (v0.1 guessed the 79-32.140 series) and scope; a management-fee / service-fee addback; any related-party interest addback beyond federal §163(j); whether combined reporting applies to S corporations; the accuracy-penalty tiers under K.S.A. 79-32 and whether any Kansas-specific TP documentation penalty exists; the linkage between federal §6662(e) documentation and Kansas penalties.
 
 > Contributed by Jeff Watts.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

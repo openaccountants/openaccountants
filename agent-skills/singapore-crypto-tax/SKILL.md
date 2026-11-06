@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "SG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Singapore Crypto Tax
@@ -32,7 +30,6 @@ metadata:
 | Corporate tax rate | Flat 17% on chargeable income |
 | Top personal rate | 24% (on income above S$1,000,000, from YA 2024) |
 | Capital gains tax | **None** — Singapore does not impose capital gains tax |
-| Validated by | Pending — requires sign-off by a Singapore-accredited tax agent |
 | Skill version | 1.0 |
 
 ### Key Principle
@@ -376,26 +373,6 @@ Before finalising any Singapore crypto tax computation:
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an IRAS-accredited tax agent, Singapore chartered accountant, or equivalent licensed practitioner) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

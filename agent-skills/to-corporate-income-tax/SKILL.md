@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Tonga Corporate Income Tax
@@ -26,24 +24,6 @@ metadata:
 - **Withholding tax base** — Imposed on the gross amount; no deductions, losses, or credits reduce the taxable amount  _(Income Tax Act 2007 (https://tonga.tradeportal.org/media/IncomeTaxAct_2.pdf))_
 - **Company income tax return deadline** — On or about 30 April following the tax year ((approx — confirm))  _(Income Tax Act 2007 (https://www.revenue.gov.to/Tax-Due-Dates-and-Extensions))_
 - **Small business tax regime** — A simplified small business tax may apply to smaller taxpayers below set turnover limits ((approx — confirm scope and rate))  _(Income Tax Act 2007 (https://www.revenue.gov.to/small-business-tax))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

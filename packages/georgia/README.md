@@ -9,14 +9,16 @@
 2. `intake.md`
 3. `ge-company-formation.md`
 4. `ge-corporate-income-tax.md`
-5. `ge-tax-overview.md`
-6. `georgia-income-tax.md`
-7. `georgia-payroll.md`
-8. `georgia-social-contributions.md`
-9. `georgia-tax-optimization.md`
-10. `georgia-vat.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+5. `ge-cross-border.md`
+6. `ge-transfer-pricing.md`
+7. `georgia-income-tax.md`
+8. `georgia-payroll.md`
+9. `georgia-social-contributions.md`
+10. `georgia-tax-optimization.md`
+11. `georgia-vat.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

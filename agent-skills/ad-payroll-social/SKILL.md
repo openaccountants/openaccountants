@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AD"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Andorra payroll and social security, 2026
@@ -230,24 +228,6 @@ expected:
 Not yet confirmed: the old universal 7%-maximum gross-salary bands, EUR 750 ascendant reduction, salaried CASS ceiling, five-day post-hire grace period, twenty-day separate payroll remittance and blanket EUR 500–10,000 minimum-wage fine have no current primary support and are not applied. Legacy numbered DTF form mappings (300/310/311/312/315/316/317/340/341 and annexes) require the actual current approved form rather than inference from a number; the statutory CASS/non-CASS workflow above is confirmed. No complete current CASS enforcement-interest assessment is calculated from the regulation's partly superseded article 29: use the actual CASS notice and operative enforcement rule, not the tax 4.05% rate. For partial-month health complements, CASS expressly supplies the actual amount. Treaty/foreign social-coverage matrices and precise termination entitlement, food/lodging administrative valuations or special benefits require the actual relevant instrument and worker facts. Individual savings, capital gains and annual relief methods are in `ad-income-tax` rather than duplicated as payroll deductions. Portal consolidations lack official legal status; retain operative amendment annotations when checking historical periods.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

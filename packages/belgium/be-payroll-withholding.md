@@ -1,16 +1,14 @@
 ---
 name: be-payroll-withholding
 description: "Belgian payroll withholding (bedrijfsvoorheffing / précompte professionnel) on employees' and directors' pay for 2026, computed with the key formula (sleutelformule) of Annex III to the KB/WIB 92. Covers the five steps: pay after employee social security, annualisation, flat-rate professional expenses (30%, capped at EUR 6,070), the withholding scale (which builds in a 7% local surcharge), the tax-free amount, the marital quotient, reductions for children, dependants and single parents, and the work bonus and overtime reductions. Two rule sets apply in 2026: the KB of 11 December 2025 (January to October) and the KB of 27 September 2026 (from 1 November). Also covers holiday pay and bonus rates, the withholding return and payment dates, interest and fines. Trigger on: bedrijfsvoorheffing, précompte professionnel, sleutelformule, formule-clé, Bijlage III, net pay Belgium. Out of scope: belgium-payroll (social security, work bonus amounts), be-employee-income-tax, be-cross-border."
-version: 0.1
+version: 0.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: payroll
 ---
 
 # Belgium: payroll withholding (bedrijfsvoorheffing / précompte professionnel), 2026 key formula
@@ -221,23 +219,3 @@ expected:
 | FOD Financiën, vennootschapsbelasting betalen (late payment interest 4%) | https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/betaling | 2026-10-23 |
 
 Not yet confirmed: no consolidated key formula for the rules from 1 November 2026 was published at the date read; the November figures come from the KB of 27 September 2026 and the FOD simulator. The FOD aangifte page still gives the quarterly threshold as EUR 50,240 "in 2025"; the EUR 51,480 figure is the income 2026 text of art. 412. The form number of the withholding return (274) and the royal decree scale of fines under art. 445 were not read. The exceptional pay rates of nr. 53, 55 to 57 and 69 are from the January 2026 Annex III; the KB of 27 September 2026 changes only the nr. 54 limits. Annex III does not say in nr. 53 whether the rate is applied to the payment before or after employee social security; nr. 25.1 deducts social security only for monthly pay. The rule that an employer who fails to withhold stays liable was removed because no source was read. The work bonus amounts that feed step 5 are in `belgium-payroll`.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

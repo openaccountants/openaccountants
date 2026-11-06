@@ -5,14 +5,12 @@ version: 2.0
 jurisdiction: NZ
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # New Zealand individual income tax return (IR3)
@@ -338,21 +336,3 @@ No IETC: income is over $70,000 ([IRD IETC](https://www.ird.govt.nz/income-tax/i
 - [ ] Next year's provisional tax option and instalments set.
 - [ ] Filing and terminal tax dates confirmed, including any tax agent's extension of time.
 - [ ] Penalties and interest explained if a date was missed; figures labelled as estimates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

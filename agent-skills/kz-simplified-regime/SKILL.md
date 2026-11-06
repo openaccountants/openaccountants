@@ -52,7 +52,6 @@ writes in** (Russian, Kazakh, or English).
 | MCI / МРП (2026) | **4,325 ₸** (месячный расчётный показатель) *(verify on 1 Jan 2026 budget law)* |
 | MZP / МЗП (2026) | **85,000 ₸** (minimum monthly wage, unchanged from 2025) |
 | Regime-choice deadline | Notification (уведомление) by **1 March 2026**; no notice → auto-moved to ОУР |
-| Quality tier | **Research-verified — pending sign-off by a Kazakhstan accountant** |
 | Skill version | **1.0** |
 
 ### Conservative defaults

@@ -7,11 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `cameroon-income-tax.md`
-4. `cameroon-payroll.md`
-5. `cameroon-social-contributions.md`
-6. `cameroon-vat.md`
-7. `payroll-workflow-base.md`
+3. `README.md`
+4. `cameroon-corporate-income-tax.md`
+5. `cameroon-cross-border.md`
+6. `cameroon-income-tax.md`
+7. `cameroon-payroll.md`
+8. `cameroon-social-contributions.md`
+9. `cameroon-transfer-pricing.md`
+10. `cameroon-vat.md`
+11. `payroll-workflow-base.md`
+12. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

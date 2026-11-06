@@ -5,11 +5,10 @@ version: 1.3
 jurisdiction: MC
 tax_year: 2026
 last_updated: 2026-10-27
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: transfer-pricing
 ---
 
 # Monaco transfer pricing and normal foreign conditions
@@ -123,21 +122,3 @@ expected:
 **Not yet confirmed:** a separate prescribed master/local-file instrument, safe harbours and advance/corresponding-agreement procedures. No exemption from article 14 or ordinary books/evidence duties is inferred. These specialist instruments and multinational minimum-tax calculations require a separate determination; the ordinary pricing working paper and CbCR filing screen above still apply.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

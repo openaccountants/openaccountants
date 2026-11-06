@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-cgt"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-06"
 ---
 
 # Ireland Capital Gains Tax (CGT) for individuals, 2026
@@ -92,7 +89,7 @@ Built by Michael Cutajar and the OpenAccountants team. Checked against the law: 
 
 **Retirement Relief (s.598, s.599).** No need to retire. Age 55 or over, or younger only on ill health with medical evidence, reaching 55 within 12 months, and all other conditions met ([Retirement Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx)). Assets: chargeable business assets (not tangible movable property) owned for 10 years to the disposal; family company shares held 10 years by a working director of 10 years, 5 of them full time; farm land has its own letting rules ([TDM 19-06-03](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-19/19-06-03.pdf)).
 - To a child (s.599): relief restricted to EUR 10 million (55 to 69) or EUR 3 million (70 or older), aggregated across transfers. A child includes a stepchild or civil partner's child, an adopted child, a deceased child's child, a niece or nephew who worked full time in the business for five years, and a foster child maintained for five years before 18. Clawback if the child disposes within six years. Above EUR 10 million the parent may claim deferral on the return; it crystallises if the child disposes within 12 years. Refer deferral and clawback.
-- Outside the family (s.598): full relief where market value does not exceed EUR 750,000 (55 to 69) or EUR 500,000 (70 or older), lifetime. Above that, marginal relief limits the CGT to half the excess over the threshold. For 2014 to 2024 disposals the age split was 66. Illustration (hypothetical): aged 60, sold March 2026 for 900,000, cost 200,000. Without relief: (700,000 less 1,270) at 33% = 230,910.90. Marginal limit: half of 150,000 = 75,000, so CGT is 75,000, with no EUR 1,270 exemption (s.601(5)).
+- Outside the family (s.598): full relief where market value does not exceed EUR 750,000 (55 to 69) or EUR 500,000 (70 or older), lifetime. Above that, marginal relief limits the CGT to half the excess over the threshold. For 2014 to 2024 disposals the age split was 66. Illustration (hypothetical): aged 60, sold March 2026 for 900,000, cost 200,000. Without relief: (700,000 less 1,270) at 33% = 230,580.90. Marginal limit: half of 150,000 = 75,000, so CGT is 75,000, with no EUR 1,270 exemption (s.601(5)).
 
 **Site to a child (s.603A).** No CGT on land to a child to build their only or main home, where the site is one acre or less and worth EUR 500,000 or less, including a joint transfer by both parents. The child pays the CGT if they dispose of the land without building, or without living in the house for three years (not on a disposal to their spouse or civil partner) ([site to a child](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/transfer-of-a-site-from-a-parent-to-a-child.aspx)).
 
@@ -227,24 +224,6 @@ expected:
 
 Not yet confirmed: (1) whether the Finance (No. 2) Act 2026 is enacted with the 31% rate unchanged (Bill 98 had completed only Dáil First Stage on 26 October 2026); (2) s.601(3) and (5) were read as enacted, with no official consolidated TCA text to confirm later Finance Acts changed only the amount (Revenue TDM 19-07-01 confirms EUR 1,270 and subsection (5)); (3) the s.1084 surcharge figures come from Revenue's Form 11 guide and Notes for Guidance; no Revenue page was found applying them to a stand-alone Form CG1; (4) Revenue's rate table prints the 33% start date as 6 December 2021, read as a misprint of 6 December 2012 (Finance Act 2013 s.43); (5) the CGT indexation multipliers are not reproduced here; (6) no record retention period is stated.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-cgt` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-cgt. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-cgt` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-cgt. If neither is available, confirm every figure against the official source pages cited above before relying on it.

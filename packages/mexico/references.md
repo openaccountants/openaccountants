@@ -2,8 +2,8 @@
 name: mexico-references
 jurisdiction: MX
 tier: 2
-last_updated: 2026-06-12
-version: 1.0
+last_updated: 2026-11-05
+version: 1.1
 description: Primary source references and related open-source projects for this jurisdiction.
 ---
 

@@ -4,11 +4,11 @@ description: "Source-cited draft: corporate income tax for Malaysia (tax year 20
 jurisdiction: MY
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: MUHAMMAD HANIS MAT HUSSIN, CA-53636
-review_status: current
-trust_label: Checked by MUHAMMAD HANIS MAT HUSSIN, CA-53636
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "MUHAMMAD HANIS MAT HUSSIN"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # Malaysia Corporate Income Tax
@@ -35,21 +35,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Estimate of tax payable (Form CP204)** — Companies must submit an estimate of tax payable not later than 30 days before the start of the basis period  _(Income Tax Act 1967, Section 107C)_
 - **Payment of estimated tax** — Paid in monthly instalments (generally 12) by the 15th of each month during the basis period  _(Income Tax Act 1967, Section 107C)_
 - **Annual return filing (Form C)** — Within 7 months after the close of the financial year-end (via e-Filing)  _([Income Tax Act 1967, Section 77A](https://www.pwc.com/my/en/publications/mtb/important-filing-furnishing-dates.html))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

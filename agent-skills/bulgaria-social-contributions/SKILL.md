@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BG"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bulgaria social and health insurance contributions (2026)
@@ -197,24 +195,6 @@ expected:
 Not yet confirmed: how the NRA's 2026 reconciliation annex sums the annual minimum and maximum across the two 2026 periods (this skill adds the monthly limits for each month of activity, which follows KSO art. 6(9) but the 2026 form was not read; nra.bg served a human check); the treatment of advances paid on more than the final income; the amending ДВ issues of Ordinance N-13 were not read on dv.parliament.bg (a secondary consolidation to ДВ бр. 90/2026 was used); the self-insured ordinance after its latest amendments; the statutory late-payment interest rate after the euro changeover.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

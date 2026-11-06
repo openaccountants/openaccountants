@@ -7,14 +7,17 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ae-corporate-tax.md`
-4. `ae-income-tax.md`
-5. `ae-payroll-social.md`
-6. `ae-tax-overview.md`
-7. `ae-tax-residency.md`
-8. `general-uae-corporate-tax-guide.md`
-9. `uae-vat.md`
-10. `payroll-workflow-base.md`
+3. `README.md`
+4. `ae-company-formation.md`
+5. `ae-corporate-tax.md`
+6. `ae-income-tax.md`
+7. `ae-payroll-social.md`
+8. `ae-tax-overview.md`
+9. `ae-tax-residency.md`
+10. `general-uae-corporate-tax-guide.md`
+11. `uae-vat.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
 
 ## Also known as
 

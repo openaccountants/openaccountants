@@ -7,14 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `cd-company-formation.md`
-4. `cd-corporate-income-tax.md`
-5. `cd-income-tax.md`
-6. `cd-payroll-social.md`
-7. `cd-tax-overview.md`
-8. `cd-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `cd-company-formation.md`
+5. `cd-corporate-income-tax.md`
+6. `cd-cross-border.md`
+7. `cd-income-tax.md`
+8. `cd-payroll-social.md`
+9. `cd-tax-overview.md`
+10. `cd-transfer-pricing.md`
+11. `cd-vat-gst.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

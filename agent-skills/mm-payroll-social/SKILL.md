@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "MM"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Myanmar Payroll & Social Contributions
@@ -27,24 +25,6 @@ metadata:
 - **Salary income tax withholding** — Employers withhold personal income tax monthly from employees' salaries and remit to the IRD  _(Income Tax Law (Myanmar) (https://taxsummaries.pwc.com/myanmar/individual/taxes-on-personal-income))_
 - **Salary tax remittance deadline** — Withheld salary tax remitted to the IRD within 15 days from the date of deduction ((approx — confirm))  _(Income Tax Law (Myanmar) (https://taxsummaries.pwc.com/myanmar/corporate/withholding-taxes))_
 - **Annual salary statement** — Employers file an annual statement of salaries paid and tax withheld after the end of the financial year  _(Income Tax Law (Myanmar) (https://taxsummaries.pwc.com/myanmar/individual/taxes-on-personal-income))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

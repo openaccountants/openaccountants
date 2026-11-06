@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UA"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # UA Bookkeeping
@@ -32,7 +30,6 @@ This skill covers how a Ukrainian sole proprietor (ФОП / FOP — фізичн
 | Portal | Електронний кабінет платника (cabinet.tax.gov.ua) |
 | Retention period | Generally **1095 days (3 years)** from the deadline/date of the related filing; longer in defined cases — see Section 6 |
 | Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a Ukrainian accountant |
 | Skill version | 1.0 |
 
 **Wartime note:** Martial law suspends the running of statute-of-limitation periods for tax audits, which in practice **extends** how long documents should be kept (see Section 6). Treat all retention periods as *minimums*. Figures and form references are as of **May 2026**.
@@ -156,24 +153,6 @@ Tax Code of Ukraine (ПКУ): Art. 44 (record-keeping, retention, 1095/1825/2555
 ## Disclaimer
 
 This skill is research-verified against the State Tax Service of Ukraine (tax.gov.ua / dps.gov.ua), the Tax Code of Ukraine, Law №265, MoF Order №261, and reputable Ukrainian accounting sources, current to May 2026. It has not yet been signed off by a qualified Ukrainian accountant or auditor. Ukrainian record-keeping and PRRO rules change frequently and are affected by martial-law measures; verify the current position before relying on it. This is general information, not tax or legal advice — a credentialed Ukrainian professional must review any output before it is used for filing or compliance. Part of the open-source library at openaccountants.com. Contributions and corrections from qualified Ukrainian practitioners are welcome.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

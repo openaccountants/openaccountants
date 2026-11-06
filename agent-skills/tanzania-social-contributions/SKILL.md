@@ -8,17 +8,14 @@ metadata:
   jurisdiction: "TZ"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  authored_by: "Baraka Cassian, CPA, CA, CTA"
   reviewed_by: "Baraka Cassian"
-  trust_label: "Checked by Baraka Cassian"
-  review_status: "current"
 ---
 
 # Tanzania (Mainland) Social Security & Payroll Contributions
 
 ## Tanzania (Mainland) Social Security & Payroll Contributions Skill v0.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Baraka Cassian** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -69,7 +66,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | SDL | 3.5% of gross emoluments, employer ≥10 employees (TRA) |
 | WCF | 0.5%–0.6% of cash paid to employees, employer-only (see gap) |
 | Currency | TZS only |
-| Validated by | Pending — requires sign-off by a Tanzanian tax practitioner |
 | Validation date | Verified by Baraka Cassian (ACPA 3158) on 2026-06-12 |
 
 **Contribution overview (private-sector Mainland employee)**
@@ -503,26 +499,6 @@ If the client provides only a bank statement and no other information:
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

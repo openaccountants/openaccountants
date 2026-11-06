@@ -5,14 +5,12 @@ version: 2.0
 jurisdiction: US-PA
 tax_year: 2026
 last_updated: 2026-09-25
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - us-sales-tax
 category: us-states
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Pennsylvania sales and use tax: 2026 collection, nexus and filing
@@ -302,21 +300,3 @@ DOR sets the interest rate each 1 January at the rate set by the U.S. Secretary 
 - [ ] Payments of $1,000 or more made electronically.
 - [ ] Vendor discount taken only on timely returns and within the $25, $75 or $150 cap.
 - [ ] Any late period costed: 5% per month up to 25% (at least $2) plus 7% interest.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

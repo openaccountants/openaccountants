@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BG"
   tax_year: "2026"
   last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bulgaria cross-border tax: residence, non-residents, withholding, treaties and exit (2026)
@@ -203,24 +201,6 @@ expected:
 Not yet confirmed: treaty rates for any treaty (the NRA treaty texts are PDFs this session could not read, so no treaty rate is given); the current statutory interest rate on late tax after the euro changeover (the interest law refers to "законна лихва", whose rate is set outside that law); the withholding or advance-tax mechanics for fees a non-resident individual earns for services physically performed in Bulgaria that are not on the PITA art. 37 list; whether a split-year rule applies to an individual who arrives or leaves mid-year (PITA art. 4 states none); whether the Russia treaty is applied in practice (it is still on the NRA list); the instalment allocation formula in CITA art. 155г(4), which lex.bg shows without the formula itself.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

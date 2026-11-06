@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BB"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Barbados Payroll & Social Contributions
@@ -26,24 +24,6 @@ metadata:
 - **PAYE income tax withholding** — Employers withhold income tax from salaries under the PAYE system at the personal income tax rates (12.5% / 28.5% after allowances)  _(Income Tax Act, Cap. 73 — https://taxsummaries.pwc.com/barbados/individual/tax-administration)_
 - **PAYE remittance deadline** — On or before the 15th of the month following the month of deduction  _(Income Tax Act, Cap. 73 — https://bra.gov.bb/Popular-Topics/Companies/Filing-and-Payment)_
 - **NIS remittance deadline** — Contributions due by the 15th of the month following the contribution month ((confirm exact NIS due date))  _(National Insurance and Social Security Act, Cap. 47 — https://www.nis.gov.bb/contribution-rates/)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
