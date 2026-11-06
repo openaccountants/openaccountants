@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2319,
+ "count": 2297,
  "jurisdictions": [
   "AD",
   "AE",
@@ -31,7 +31,6 @@
   "BS",
   "BT",
   "BW",
-  "BY",
   "BZ",
   "CA",
   "CA-AB",
@@ -45,7 +44,6 @@
   "CN",
   "CO",
   "CR",
-  "CU",
   "CV",
   "CW",
   "CY",
@@ -101,7 +99,6 @@
   "IN",
   "INTL",
   "IQ",
-  "IR",
   "IS",
   "IT",
   "JM",
@@ -2122,69 +2119,6 @@
    "tax_year": 2026
   },
   {
-   "name": "belarus-cross-border-tax",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/belarus-cross-border-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "belarus-income-tax",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/belarus-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "belarus-payroll",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/belarus-payroll.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "belarus-social-contributions",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/belarus-social-contributions.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "belarus-tax-optimization",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/belarus-tax-optimization.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "belarus-transfer-pricing",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/belarus-transfer-pricing.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "belarus-vat",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/belarus-vat.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
    "name": "belgium-bookkeeping",
    "jurisdiction": "BE",
    "path": "skills/belgium/belgium-bookkeeping.md",
@@ -3214,33 +3148,6 @@
    "name": "bw-vat-gst",
    "jurisdiction": "BW",
    "path": "skills/botswana/bw-vat-gst.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "by-company-formation",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/by-company-formation.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "by-corporate-income-tax",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/by-corporate-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "by-tax-overview",
-   "jurisdiction": "BY",
-   "path": "skills/belarus/by-tax-overview.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -4564,60 +4471,6 @@
    "name": "ct-sales-tax",
    "jurisdiction": "US-CT",
    "path": "skills/us/states/ct/ct-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "cu-company-formation",
-   "jurisdiction": "CU",
-   "path": "skills/cuba/cu-company-formation.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "cu-corporate-income-tax",
-   "jurisdiction": "CU",
-   "path": "skills/cuba/cu-corporate-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "cu-income-tax",
-   "jurisdiction": "CU",
-   "path": "skills/cuba/cu-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "cu-payroll-social",
-   "jurisdiction": "CU",
-   "path": "skills/cuba/cu-payroll-social.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "cu-tax-overview",
-   "jurisdiction": "CU",
-   "path": "skills/cuba/cu-tax-overview.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "cu-vat-gst",
-   "jurisdiction": "CU",
-   "path": "skills/cuba/cu-vat-gst.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -9662,60 +9515,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "ir-company-formation",
-   "jurisdiction": "IR",
-   "path": "skills/iran/ir-company-formation.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "ir-corporate-income-tax",
-   "jurisdiction": "IR",
-   "path": "skills/iran/ir-corporate-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "ir-income-tax",
-   "jurisdiction": "IR",
-   "path": "skills/iran/ir-income-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "ir-payroll-social",
-   "jurisdiction": "IR",
-   "path": "skills/iran/ir-payroll-social.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "ir-tax-overview",
-   "jurisdiction": "IR",
-   "path": "skills/iran/ir-tax-overview.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "iran-vat",
-   "jurisdiction": "IR",
-   "path": "skills/iran/iran-vat.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "iraq-tax",
