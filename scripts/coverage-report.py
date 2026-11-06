@@ -27,6 +27,7 @@ A pack README.md with an `applicable:` / `not_applicable:` block narrows the
 domains that count as missing for that jurisdiction.
 
 Usage:
+    python3 -m pip install -r scripts/requirements-validation.txt
     python3 scripts/coverage-report.py               # full table
     python3 scripts/coverage-report.py --summary     # counts only
     python3 scripts/coverage-report.py --missing-only
@@ -158,12 +159,13 @@ def read_pack_readme(pack_dir):
     applicable = None
     covered_by = _domain_map(block, "covered_by")
     try:
-        declared_partial = load_frontmatter(block).get("partial")
+        metadata = load_frontmatter(block)
     except FrontmatterError as exc:
         raise ValueError(f"{path}: {exc}") from exc
-    if declared_partial is None:
+    if "partial" not in metadata:
         partial = {}
     else:
+        declared_partial = metadata["partial"]
         if not isinstance(declared_partial, (dict, list)) or any(
             not isinstance(code, str) or code not in DOMAIN_CODES
             for code in declared_partial

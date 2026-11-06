@@ -65,10 +65,17 @@ class PartialDomainsTest(unittest.TestCase):
                 fh.write(README.replace("partial:\n  SC: self-employed only", "partial: []"))
             self.assertEqual(cr.read_pack_readme(d)[3], {})
 
+    def test_absent_partial_key_does_not_add_gaps(self):
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "README.md"), "w") as fh:
+                fh.write(README.replace("partial:\n  SC: self-employed only\n", ""))
+            self.assertEqual(cr.read_pack_readme(d)[3], {})
+
     def test_invalid_partial_declarations_do_not_silently_report_no_gaps(self):
         for declaration in [
             "partial: SC", "partial: [SC, TYPO]", "partial: [SC, false]",
             "partial:\n  TYPO: gap", "partial: [SC,", "partial: [SC]\npartial: []",
+            "partial:", "partial: null",
         ]:
             with self.subTest(declaration=declaration), tempfile.TemporaryDirectory() as d:
                 with open(os.path.join(d, "README.md"), "w") as fh:

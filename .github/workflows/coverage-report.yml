@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
+      - name: Install validation dependencies
+        run: python3 -m pip install -r scripts/requirements-validation.txt
       - name: Build the report
         run: python3 scripts/coverage-report.py --markdown > report.md
       - name: Post it on the pinned issue
