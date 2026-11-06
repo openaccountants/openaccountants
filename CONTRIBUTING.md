@@ -1,6 +1,29 @@
 # Contributing to OpenAccountants
 
-OpenAccountants is a free, open-source plugin that gives AI the instructions accountants follow. Each instruction set is a **skill**: **one task, in one country, for one tax year** (for example, *UK VAT return, 2026*), built from the law.
+OpenAccountants is a free, open-source plugin that gives AI the instructions accountants follow. Each instruction set is a **skill**: **one task, in one place, kept current** (for example, *UK VAT return, 2026* or *IFRS 18 presentation*), built from the official source.
+
+## What can I contribute?
+
+Any accounting topic. Each skill needs three things:
+
+1. **A place.** The folder: a country (`skills/germany/`), the EU (`skills/eu/`), or `skills/global/` when it belongs to no one place.
+2. **A domain.** Write one of these as `domain:` at the top of the file:
+   - `tax`: taxes, returns, withholding and contributions
+   - `financial-reporting`: accounting standards, such as IFRS or US GAAP
+   - `audit-assurance`: auditing standards and statutory audits
+   - `bookkeeping`: keeping the books, charts of accounts, records
+   - `payroll`: running payroll (the tax figures in it stay under `tax`)
+   - `practice-management`: running an accounting practice, such as engagement letters and ethics
+   - `advisory`: advice to a business, such as choosing a structure
+3. **A job.** The one task it does, in its file name.
+
+The domain decides how the skill shows it is up to date and which websites count as official. A tax skill names its tax year; an accounting or auditing standard names the standard and its effective date; the other domains give `checked_on`, the day you checked the content, within the last 12 months. The full rules are in [docs/domains.yml](docs/domains.yml). Is your topic not on the list? Open an issue titled "Propose a domain: ..." and we add it.
+
+**Example: IFRS 18.**
+- File: `skills/global/financial-reporting/ifrs/ifrs18-presentation.md`. IFRS applies everywhere, so it goes in `global` and says `jurisdiction: GLOBAL`.
+- Label: `domain: financial-reporting` and `type: situation-rules`.
+- Up to date: name the standard and the date it takes effect, not a tax year: `standard: "IFRS 18 Presentation and Disclosure in Financial Statements"` and `effective_date: 2027-01-01`.
+- Sources: ifrs.org, cited by paragraph number. The standard's text is copyrighted, so explain it in your own words and keep any quote to 40 words or fewer.
 
 Anyone can improve a skill. Only an accountant can approve one.
 

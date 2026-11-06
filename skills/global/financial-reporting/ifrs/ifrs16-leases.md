@@ -10,7 +10,9 @@ depends_on:
 category: financial-reporting
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: financial-statements
+domain: financial-reporting
+standard: "IFRS 16 Leases"
+effective_date: 2019-01-01
 ---
 
 # Ifrs16 Leases

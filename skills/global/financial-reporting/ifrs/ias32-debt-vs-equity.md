@@ -10,7 +10,9 @@ depends_on:
 category: financial-reporting
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: financial-statements
+domain: financial-reporting
+standard: "IAS 32 Financial Instruments: Presentation"
+effective_date: 2018-01-01  # the IFRS 9 conforming changes this skill covers; ifrs.org IFRS 9 page, read 2026-11-06: "effective for annual periods beginning on or after 1 January 2018"
 ---
 
 # Ias32 Debt Vs Equity

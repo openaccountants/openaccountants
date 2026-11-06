@@ -4,6 +4,8 @@
 
 The repository is treated as tax law. Every figure must be traceable to the law that sets it.
 
+Tax is the first domain; [domains.yml](domains.yml) lists the others (financial reporting, audit, bookkeeping, payroll, running a practice, advisory). A skill in another domain follows this standard too, with two changes the file sets: it is dated by its domain's keys instead of `tax_year`, and its official sources are its domain's hosts (an IFRS skill cites ifrs.org by paragraph). Where this page says "tax year" or "the law", read those for that domain.
+
 ## What a skill is
 
 A skill is a set of instructions that lets an AI do one tax job correctly, in one place, for one tax year, and shows who stands behind it.
@@ -273,6 +275,9 @@ Edit `skills/**` only. Never edit `packages/`, `index.json` or `llms-full.txt`, 
 | `reviewed_by` | `Name` | The approving accountant's name, matching their openaccountants.com account. Set only by them, with `reviewed_on` (`YYYY-MM-DD`) and `tier: 1`. No licence number in the file |
 | `status` | `needs_sources` | Set when a tax skill cites no official source yet. The site keeps it off the site and out of the AI plugin until sources are added and this line is removed. CI requires it on an edited tax skill with no source link |
 | `type` | one of `situation-rules`, `filing-howto`, `computation`, `decision`, `rates-card`, `cross-country-method`, `router` | The skill's shape ("The fixed core and the seven shapes"). The checks test the body against it. Missing or unknown: checked as before, with a warning |
+| `domain` | an id from [domains.yml](domains.yml) | What the skill is about: `tax`, `financial-reporting`, `audit-assurance`, `bookkeeping`, `payroll`, `practice-management`, `advisory`. It picks how the skill is dated (check a) and which hosts are official (check m). Tax, no domain, and the values the website already writes keep every rule on this page. A value not in the file warns: propose it there |
+| `standard`, `effective_date` | quoted string; `YYYY-MM-DD` | Instead of `tax_year`, for `financial-reporting` and `audit-assurance`: the standard as its setter names it, and the date from which the version described applies. Repeat both in the body, since the export may drop keys it does not store |
+| `checked_on` | `YYYY-MM-DD` | Instead of `tax_year`, for the other non-tax domains: the day the content was last checked against its official sources |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change. Keep any body-heading version in step |
 

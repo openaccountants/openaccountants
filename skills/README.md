@@ -30,4 +30,6 @@ Every skill lives under a place. Look for it in this order.
 | [global/expense-patterns/](global/expense-patterns/) | How common vendors on a bank statement are usually classified |
 | [global/planning-tools/](global/planning-tools/) | Deadlines, thresholds and planning checks that work across countries |
 
+**Folder = place, label = domain + job.** The folder says where a skill applies. Its `domain:` (from [docs/domains.yml](../docs/domains.yml)) and its job (the file name) say what it does. IFRS and ISA skills are global, under `global/financial-reporting/` and `global/audit/`.
+
 When a file moves between folders its name stays the same, so its slug does not change. Every move is listed in [docs/PATH-MOVES.md](../docs/PATH-MOVES.md).

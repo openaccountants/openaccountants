@@ -32,6 +32,7 @@ def _load(name, filename):
 
 
 repo_layout = _load("repo_layout", "repo_layout.py")
+domains = _load("domains", "domains.py")
 _build_index = _load("build_index", "build-index.py")
 _coverage = _load("coverage_report", "coverage-report.py")
 try:
@@ -154,7 +155,7 @@ def read_frontmatter(text):
     except Exception:
         pass
     fields = _build_index.parse_known_keys(block)
-    for key in ("tax_year_notes", "reviewed_on", "version"):
+    for key in ("tax_year_notes", "reviewed_on", "version", "domain", "standard", "effective_date", "checked_on"):
         m = re.search(rf"^{key}:[ \t]*(.*)$", block, re.MULTILINE)
         if m:
             fields[key] = _build_index.clean_value(m.group(1))
@@ -189,6 +190,39 @@ def scope_of(path, frontmatter):
     if domains_of(path, frontmatter) or (repo_layout.is_country_path(rel) and not rel.startswith("skills/us/federal/")):
         return "tax"
     return "other"
+
+
+def names_a_tax(path, frontmatter):
+    """True when the file name or category names a tax: a tax-domain word from
+    scripts/coverage-report.py, or a word in the tax domain's ``slug_words``
+    (docs/domains.yml). Such a skill is checked as tax whatever ``domain:`` says."""
+    if domains_of(path, frontmatter):
+        return True
+    try:
+        words = {str(w).lower() for w in domains.get(domains.TAX).get("slug_words") or []}
+    except Exception:
+        words = set()
+    return bool(words & set(slug_of(path).lower().split("-")))
+
+
+def applied_domain(path, frontmatter):
+    """``(domain, status)``: the active non-tax domain whose rules apply (docs/domains.yml),
+    or ``None`` when the skill is checked as before (tax rules). ``status`` is what
+    ``domains.resolve`` said, ``website`` for a website value with none of the domain's
+    date keys, or ``names-tax`` when a tax file name overrides the domain."""
+    frontmatter = frontmatter or {}
+    status, domain = domains.resolve(frontmatter.get("domain"))
+    if status != "active" or domain["id"] == domains.TAX:
+        return None, status
+    if domains.is_website_value(domain["id"]) and not any(
+        str(frontmatter.get(key) or "").strip() for key in domains.date_fields(domain)
+    ):
+        # payroll and bookkeeping are also values the website writes: a file the website
+        # labelled is checked as before until it carries the domain's own date field.
+        return None, "website"
+    if names_a_tax(path, frontmatter):
+        return None, "names-tax"
+    return domain, status
 
 
 FRONTMATTER_RE = re.compile(r"\A---[ \t]*\n.*?^(?:---|\.\.\.)[ \t]*$\n?", re.MULTILINE | re.DOTALL)
@@ -244,7 +278,18 @@ def _table_rows(section):
 # ---------------------------------------------------------------------------
 
 def check_tax_year_current(path, text, fm):
-    """(a) ``tax_year`` is the current year, or ``tax_year_notes`` explains the label."""
+    """(a) the skill says it is current, the way its domain dates things (docs/domains.yml).
+
+    Tax, and every skill with no active non-tax domain: ``tax_year`` is the current
+    year, or ``tax_year_notes`` explains the label. Another active domain: the keys
+    in its ``date_field`` are present (``standard`` and ``effective_date`` for an
+    accounting or auditing standard, ``checked_on`` for the rest); a key ending in
+    ``_date`` or ``_on`` is a YYYY-MM-DD date, and an ``_on`` date (the day a person
+    checked it) is not in the future and not older than the domain's ``max_age_days``."""
+    domain, _status = applied_domain(path, fm)
+    fields = domains.date_fields(domain) if domain else ["tax_year"]
+    if fields != ["tax_year"]:
+        return _domain_date_problems(domain, fields, fm)
     year = fm.get("tax_year")
     if year is None or str(year).strip() == "":
         return ["no tax_year"]
@@ -253,6 +298,26 @@ def check_tax_year_current(path, text, fm):
     if fm.get("tax_year_notes"):
         return []
     return [f"tax_year {year} is not {CURRENT_TAX_YEAR} and no tax_year_notes"]
+
+
+def _domain_date_problems(domain, fields, fm):
+    problems = []
+    for key in fields:
+        value = fm.get(key)
+        value = "" if value is None else str(value).strip()
+        if not value:
+            problems.append(f"no {key} (domain {domain['id']} is dated by {' and '.join(fields)}, docs/domains.yml)")
+        elif domains.is_date_key(key):
+            if not DATE_RE.fullmatch(value) or not _real_date(value):
+                problems.append(f"{key} {value!r} is not a YYYY-MM-DD date")
+            elif key.endswith("_on") and value > _today():
+                problems.append(f"{key} {value} is in the future")
+            elif key.endswith("_on") and domain.get("max_age_days") is not None:
+                age = (datetime.date.fromisoformat(_today()) - datetime.date.fromisoformat(value)).days
+                if age > int(domain["max_age_days"]):
+                    problems.append(f"{key} {value} is more than {domain['max_age_days']} days old "
+                                    f"(domain {domain['id']}, max_age_days in docs/domains.yml)")
+    return problems
 
 
 def check_sources_read_dates(path, text, fm):
@@ -329,6 +394,9 @@ def check_rates_rows_sourced(path, text, fm):
     if not c["total"]:
         shape = skill_type(fm)
         if shape and not SKILL_TYPES[shape]["rates_table"]:
+            return []
+        domain, _status = applied_domain(path, fm)
+        if domain and domain.get("rates_table") == "optional":
             return []
         return ["no rates table"]
     if c["missing"]:
@@ -633,7 +701,9 @@ def check_sources_columns(path, text, fm):
 
 def check_source_hosts(path, text, fm):
     """(m) the URL host fits the row: no barred secondary host, a named authority
-    links to its own site, and no other country's domain in a one-country skill."""
+    links to its own site, and no other country's domain in a one-country skill.
+    A skill in an active non-tax domain (docs/domains.yml) also cites only that
+    domain's official hosts; a tax skill is checked exactly as before."""
     home = _home(path, fm)
     home_tld = {"GB": "uk"}.get(home.split("-")[0], home.split("-")[0].lower())
     cross_border = _is_cross_border(path, fm)
@@ -658,6 +728,16 @@ def check_source_hosts(path, text, fm):
         problems.append(f"row names an authority but links elsewhere: {', '.join(sorted(set(wrong_authority))[:3])}")
     if foreign:
         problems.append(f"another country's domain: {', '.join(sorted(set(foreign))[:3])}")
+    domain, _status = applied_domain(path, fm)
+    if domain:
+        unofficial = sorted({
+            host for _line, urls in _source_entries(text) for host in map(_host, urls)
+            if host and not domains.host_is_official(host, domain["id"])
+        })
+        if unofficial:
+            problems.append(
+                f"not an official source for domain {domain['id']} (docs/domains.yml): {', '.join(unofficial[:3])}"
+            )
     return problems
 
 
@@ -986,6 +1066,23 @@ def check_figure_in_library(path, text, fm):
     return [f"{len(found)} rates row(s) differ from library/{folder}/figures.json: " + "; ".join(found[:3])]
 
 
+def check_domain_known(path, text, fm):
+    """(r) a ``domain:`` value is an active domain in docs/domains.yml (or a value the
+    website writes). Anything else warns and the skill is checked as before."""
+    value = str((fm or {}).get("domain") or "").strip()
+    status, _domain = domains.resolve(value)
+    if status == "unknown":
+        return [f"domain {value!r} is not in docs/domains.yml: propose it there "
+                f"(open an issue \"Propose a domain: {value}\"); checked as before until then"]
+    if status == "proposed":
+        return [f"domain {value!r} is proposed, not active, in docs/domains.yml: checked as before until it is active"]
+    if status == "unreadable":
+        return ["docs/domains.yml could not be read: checked as before"]
+    if applied_domain(path, fm)[1] == "names-tax":
+        return [f"the file name names a tax, so it is checked as tax whatever domain {value!r} says"]
+    return []
+
+
 #: Warnings in both modes, outside the register. Letters follow CHECKS.
 LESSON_CHECKS = [
     ("k", "read_date_evidence", check_read_date_evidence),
@@ -995,6 +1092,7 @@ LESSON_CHECKS = [
     ("o", "year_matches_link", check_year_matches_link),
     ("p", "type_declared", check_type_declared),
     ("q", "figure_in_library", check_figure_in_library),
+    ("r", "domain_known", check_domain_known),
 ]
 
 #: (letter in the standard's list, column name, function). Order is the report order.

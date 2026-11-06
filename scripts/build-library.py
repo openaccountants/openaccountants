@@ -38,9 +38,14 @@ another rule; a skill that writes the same number another way (``4.20%`` for
 figures citing each.
 
 Official sources only: a figure whose ``source_url`` host is not on the allow-list
-(``official_host``: a government, legislature, official gazette, tax authority or
-other public body, or a statutory body's own legal text) is refused and printed.
-To add a host, add it to ``OFFICIAL_HOSTS`` with a comment saying whose it is.
+for its domain (``official_host``) is refused and printed. The allow-list is in
+docs/domains.yml, under ``official_sources``: for tax (every figure without a
+``domain``) a government domain or a named host of a legislature, official gazette,
+tax authority or other public body, or a statutory body's own legal text. A figure
+may carry ``domain`` (an active domain id in docs/domains.yml, such as
+``financial-reporting``); its own domain's hosts then apply, so a standard setter
+counts for an accounting-standard figure and never for a tax figure. To add a host,
+add it to that domain in docs/domains.yml with whose it is.
 
 ``read_on`` is the pack's ``checked_at`` unless the entry carries its own
 ``read_on`` (an entry read again later than the rest of the pack).
@@ -75,6 +80,7 @@ def _load(name, filename):
 sys.path.insert(0, SCRIPTS_DIR)
 skill_checks = _load("skill_checks", "skill_checks.py")
 _build_index = _load("build_index", "build-index.py")
+domains = _load("domains", "domains.py")
 
 #: The merged country pack: two capital letters and .json, nothing between.
 PACK_FILE_RE = re.compile(r"^([A-Z]{2})\.json$")
@@ -82,36 +88,10 @@ PACK_FILE_RE = re.compile(r"^([A-Z]{2})\.json$")
 REQUIRED = ("pack_id", "item", "value", "source_url", "quote", "year")
 #: Government second-level domains: anything.gov, x.gov.ie, x.gob.mx, x.gouv.fr,
 #: x.govt.nz, x.gv.at, x.go.jp.
-GOVERNMENT_HOST_RE = re.compile(r"(?:^|\.)(?:gov|(?:gov|gob|gouv|govt|gv|go)\.[a-z]{2})$")
-#: Official hosts outside a government domain. A host matches itself and its subdomains.
-OFFICIAL_HOSTS = {
-    "boe.es": "Spain, Boletín Oficial del Estado (official gazette)",
-    "seg-social.es": "Spain, Seguridad Social",
-    "ipyme.org": "Spain, Dirección General de Industria y de la PYME portal",
-    "gesetze-im-internet.de": "Germany, Federal Ministry of Justice, federal law",
-    "recht.bund.de": "Germany, Bundesgesetzblatt (official gazette)",
-    "bundesfinanzministerium.de": "Germany, Federal Ministry of Finance",
-    "bundesgesundheitsministerium.de": "Germany, Federal Ministry of Health",
-    "bundesregierung.de": "Germany, Federal Government",
-    "bundesjustizamt.de": "Germany, Federal Office of Justice",
-    "deutsche-rentenversicherung.de": "Germany, statutory pension insurance",
-    "minijob-zentrale.de": "Germany, Minijob-Zentrale (statutory pension insurance)",
-    "gkv-spitzenverband.de": "Germany, statutory health insurance federation (public-law body)",
-    "existenzgruendungsportal.de": "Germany, Federal Ministry for Economic Affairs portal",
-    "urssaf.fr": "France, URSSAF (social security collection)",
-    "legislation.mt": "Malta, official legislation",
-    "revenue.ie": "Ireland, Revenue Commissioners",
-    "irishstatutebook.ie": "Ireland, Irish Statute Book (Attorney General)",
-    "oireachtas.ie": "Ireland, Houses of the Oireachtas (bills and debates)",
-    "skatturinn.is": "Iceland, tax authority",
-    "stjornarradid.is": "Iceland, Government Offices",
-    "normattiva.it": "Italy, official legislation database",
-    "inps.it": "Italy, national social security institute",
-    "svs.at": "Austria, social insurance for the self-employed",
-    "chinhphu.vn": "Vietnam, Government portal and official gazette",
-    "zimra.co.zw": "Zimbabwe Revenue Authority",
-    "inegi.org.mx": "Mexico, national statistics institute (constitutional body)",
-}
+GOVERNMENT_HOST_RE = domains.GOVERNMENT_HOST_RE
+#: Official hosts outside a government domain, for tax figures (docs/domains.yml).
+#: A host matches itself and its subdomains.
+OFFICIAL_HOSTS = domains.official_hosts(domains.TAX)
 #: The statuses an announced figure may carry; a figure in force has none.
 STATUSES = ("announced, Finance Bill not yet enacted",)
 #: The id of an announced figure is the id of the figure in force plus this.
@@ -119,12 +99,23 @@ ANNOUNCED_SUFFIX = ".announced"
 TRAILING_PUNCT = ".,;:'\"`*_"
 
 
-def official_host(url):
-    """True when the URL's host is a government domain or on ``OFFICIAL_HOSTS``."""
-    host = re.sub(r"^https?://", "", url.strip().lower()).split("/", 1)[0].split(":", 1)[0]
-    if GOVERNMENT_HOST_RE.search(host):
-        return True
-    return any(host == h or host.endswith("." + h) for h in OFFICIAL_HOSTS)
+def official_host(url, domain=domains.TAX):
+    """True when the URL's host is official for ``domain`` (docs/domains.yml): for tax,
+    a government domain or one of the tax hosts, exactly as before the file existed."""
+    return domains.host_is_official(domains.url_host(url), domain)
+
+
+def figure_domain(entry):
+    """``(domain id, problem)`` for a pack entry: ``tax`` when it names none."""
+    value = str(entry.get("domain") or "").strip()
+    if not value:
+        return domains.TAX, None
+    status, domain = domains.resolve(value)
+    if status == "active":
+        return domain["id"], None
+    if status == "website":
+        return domains.TAX, None
+    return None, f"domain {value!r} is not an active domain in docs/domains.yml, skipped"
 
 
 def clean_url(url):
@@ -216,9 +207,13 @@ def build_country(code, pack, folder):
         if entry["pack_id"] in seen:
             problems.append(f"{entry['pack_id']}: duplicate id, second one skipped")
             continue
-        if not official_host(entry["source_url"]):
+        domain, problem = figure_domain(entry)
+        if problem:
+            problems.append(f"{entry['pack_id']}: {problem}")
+            continue
+        if not official_host(entry["source_url"], domain):
             problems.append(f"{entry['pack_id']}: {entry['source_url'].strip()} is not on the official "
-                            f"allow-list, refused")
+                            f"allow-list for {domain}, refused")
             continue
         status = entry.get("status")
         if status is not None and (status not in STATUSES or not entry["pack_id"].endswith(ANNOUNCED_SUFFIX)):
@@ -239,6 +234,8 @@ def build_country(code, pack, folder):
         }
         if status is not None:
             figure["status"] = status
+        if domain != domains.TAX:
+            figure["domain"] = domain
         figure["used_by"] = used_by
         figures.append(figure)
     figures_doc = {"country": folder, "code": code, "figure_count": len(figures), "figures": figures}
