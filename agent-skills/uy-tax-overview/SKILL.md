@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "UY"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Uruguay Tax Overview
@@ -29,24 +27,6 @@ Uruguay operates a territorial-source tax system administered by the Direccion G
 - **Does Uruguay have a VAT/GST?** — Yes — Impuesto al Valor Agregado (IVA), standard rate 22% %  _(Titulo 10 Texto Ordenado 1996 (IVA))_
 - **Net wealth tax (Impuesto al Patrimonio, IP)** — Annual net wealth tax applies — 1.5% for companies (3% for low/no-tax-jurisdiction entities); progressive scale for individuals %  _(Titulo 14 Texto Ordenado 1996 (Impuesto al Patrimonio))_
 - **Main annual filing pattern** — Corporate IRAE filed annually after fiscal year-end (typically within ~4 months); IRPF labour-income annual return generally filed mid-year (around May-July) following the calendar year ((approx — DGI publishes the exact due-date calendar each year by taxpayer group))  _(Resoluciones DGI - calendario de vencimientos)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

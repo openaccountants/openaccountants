@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Christopher Aryee, ACCA, CA, EA, CPA-CA"
   reviewed_by: "James Wallach"
-  trust_label: "Checked by James Wallach"
-  review_status: "current"
 ---
 
 # US Form 941 940 Payroll
@@ -826,24 +823,6 @@ This skill is based on the following primary sources, all current as of November
 **Verification status**: The $176,100 wage base, the 0.6%/1.5% effective FUTA rates, the credit reduction state list (CA, NY, VI for 2024), and the 0.9% Additional Medicare employer withholding threshold of $200,000 are all verified against the cited primary sources as of November 15, 2025. The 2025 final credit reduction state list (for Form 940 to be filed January 2026) must be re-verified against the DOL November 2025 announcement before any 2025 Form 940 is finalized. The 2026 backup withholding rate, 2026 SS wage base, and 2026 OBBBA-driven 1099-NEC threshold are referenced as scope notes; this skill does not produce 2026 returns.
 
 **Reviewer**: pending. This skill has not yet been reviewed by a Circular 230-credentialed practitioner. No Form 941, Form 940, W-2, or W-3 output should be filed without independent review and signature by a CPA, EA, or attorney licensed to practice before the IRS.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

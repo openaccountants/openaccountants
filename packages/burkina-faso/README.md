@@ -7,16 +7,22 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bf-company-formation.md`
-4. `bf-corporate-tax.md`
-5. `bf-income-tax.md`
-6. `bf-payroll.md`
-7. `bf-social-contributions.md`
-8. `bf-tax-optimization.md`
-9. `bf-tax-overview.md`
-10. `bf-vat.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `bf-company-formation.md`
+5. `bf-company-property-tax.md`
+6. `bf-corporate-tax.md`
+7. `bf-income-tax.md`
+8. `bf-investment-income.md`
+9. `bf-nonresident-services-withholding.md`
+10. `bf-payroll.md`
+11. `bf-social-contributions.md`
+12. `bf-tax-optimization.md`
+13. `bf-tax-overview.md`
+14. `bf-transfer-pricing.md`
+15. `bf-vat.md`
+16. `payroll-workflow-base.md`
+17. `company-formation-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

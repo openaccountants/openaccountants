@@ -5,15 +5,14 @@ version: 0.1
 jurisdiction: VE
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Jose Padilla, CPA
-reviewed_by: Jose Padilla
-review_status: current
-trust_label: Checked by Jose Padilla
 depends_on:
   - payroll-workflow-base
 category: payroll
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jose Padilla"
+reviewed_on: 2026-11-03
+tier: 1
+domain: payroll
 ---
 
 # Venezuela Payroll
@@ -24,7 +23,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **Hyperinflation / UT context (READ FIRST).** Almost every statutory figure in Venezuelan tax law is expressed in **Tax Units (Unidad Tributaria — UT)**, not bolívares. The current value is **VES 43.00 per UT**, effective **2 June 2025** (Providencia Administrativa SNAT/2025/0048, Gaceta Oficial No. 43,140). Using the wrong UT value invalidates every ISLR computation. Separately, the **legal minimum wage is frozen at VES 130/month** (since March 2022); the bulk of worker compensation is paid as **explicitly non-salary USD-indexed bonuses** that do NOT enter the contribution or ISLR base. Both distortions are statutory and must be modelled as written below, not "corrected."
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Jose Padilla** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -565,23 +564,3 @@ Each test recomputes end-to-end. Expected values use the 2025 Art. 50 tariff and
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed contador público colegiado in Venezuela) before implementation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

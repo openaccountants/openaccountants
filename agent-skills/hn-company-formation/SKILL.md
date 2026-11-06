@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "HN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Honduras Company Formation & Entity Choice
@@ -28,24 +26,6 @@ metadata:
 - **Typical incorporation timeline** — Approximately 2 to 6 weeks depending on bank account opening and registry processing ((approx - confirm))  _([BizLatin Hub - Company Formation in Honduras — https://www.bizlatinhub.com/company-formation-honduras/](https://www.bizlatinhub.com/company-formation-honduras/))_
 - **Core annual compliance** — Annual ISR return, monthly ISV and withholding returns, monthly IHSS/RAP/INFOP filings, and renewal of the municipal operating permit  _(Ley del Impuesto sobre la Renta (Income Tax Law))_
 - **Municipal industry/commerce tax** — Progressive levy on gross income ranging roughly from 0.15 to 0.40 per thousand depending on annual income band per thousand of gross income  _([Ley de Municipalidades (Municipalities Law) — https://taxsummaries.pwc.com/honduras/corporate/taxes-on-corporate-income](https://taxsummaries.pwc.com/honduras/corporate/taxes-on-corporate-income))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

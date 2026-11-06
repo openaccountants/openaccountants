@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BB"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Barbados Tax Overview
@@ -28,24 +26,6 @@ Barbados taxes individuals and companies under the Income Tax Act, administered 
 - **Does VAT exist?** — Yes — Value Added Tax (VAT) at a standard rate of 17.5% %  _([Value Added Tax Act, Cap. 87](https://bra.gov.bb/Popular-Topics/Value-Added-Tax/VAT-Rates))_
 - **Personal income tax return deadline** — 30 April following the income year  _([Income Tax Act, Cap. 73](https://bra.gov.bb/News/Press-Releases/Personal-Income-Tax-Filing-Deadlin_1))_
 - **Corporation tax return deadline** — Generally within 3-6 months after fiscal year end; BRA set a 31 July 2025 filing deadline for income year 2024 returns (deadlines are subject to BRA extension notices — confirm current year)  _([Income Tax Act, Cap. 73](https://bra.gov.bb/Popular-Topics/Companies/Filing-and-Payment))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

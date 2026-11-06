@@ -8,14 +8,9 @@ metadata:
   jurisdiction: "CY"
   tax_year: "2026"
   last_updated: "2026-10-29"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cyprus Social Insurance and GHS (GESY) contributions (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Cyprus has two contribution systems. Social Insurance, under the Social Insurance Law 59(I)/2010 and the Social Insurance (Contributions) Regulations 2010 (K.D.P. 289/2010), is run by Social Insurance Services of the Ministry of Labour. The General Healthcare System (GHS, in Greek ΓεΣΥ), under the GHS Law 89(I)/2001, is run by the Health Insurance Organisation; Social Insurance Services collects GHS on pay and self-employed insurable earnings, the Tax Department collects the rest. Figures are for 2026, the calendar year. Article numbers are to the Greek consolidated texts on CyLaw, which is not the official gazette.
 
@@ -258,24 +253,6 @@ expected:
 | Income Tax Law 118(I)/2002, consolidated (CyLaw): art. 14 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-10-24 |
 
 Not yet confirmed: the instrument that applies 8.8% / 16.6% / 15% in place of the 8.9% / 16.8% / 15.2% printed in SIL arts. 5, 12 and 15 (actuarial-study proviso); the amending law that extends the HRDA 0.5% to the self-employed from 5 January 2026 (the Social Insurance Services 2026 table note is the only source read), its payment route and due date, and whether it counts toward the one-fifth income tax cap; whether the Reg. 21 charge of 3% to 27% also applies to the GHS and HRDA amounts paid with self-employed contributions (Example 2 charges it on Social Insurance only); from when the 10 years in Table I categories 1, 2 and 4 run (the table does not say); the 2026 deadline for self-assessed GHS on self-employed income and on rent with no withholding (the calendar shows 1 August for 2024 audited accounts only); Regulations 8 and 10 to 12 of K.D.P. 289/2010 (employer payment rules, not read in this pass); the Central Holiday Fund rate above 40 days of leave; whether the 3% to 27% charge applies to Redundancy, HRDF and Central Holiday contributions; the Tax Department self-assessment codes for GHS (code 315 on employee pay, officers' earnings and other income; code 316 on interest, dividends and rents) from the 2025 return guide (v0.1, not re-read for 2026); the bank-statement pattern library, Greek terminology list, Excel working-paper template, test suite and onboarding checklist from v0.1 (practice notes, not law, not carried).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

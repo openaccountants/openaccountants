@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "VN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Vietnam Corporate Income Tax
@@ -36,24 +34,6 @@ The standard CIT rate is 20%. A new Corporate Income Tax Law effective 1 October
 - **Annual CIT finalisation return and final payment deadline** — Last day of the 3rd month after the financial year-end  _(Law on Tax Administration (No. 38/2019/QH14) (https://taxsummaries.pwc.com/vietnam/corporate/tax-administration))_
 
 Vietnam taxes cross-border payments to foreign parties mainly through the Foreign Contractor Tax (FCT) regime, which bundles VAT and CIT/PIT. Dividends paid to corporate shareholders are generally not subject to further withholding; payments to individuals are. Treaty relief may reduce these rates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

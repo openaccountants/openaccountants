@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "US-NC"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # NC Payroll
@@ -510,24 +508,6 @@ Before finalizing any NC payroll deliverable produced under this skill, the cred
 - IRC §3509 (reduced employment tax for misclassification)
 - IRS Rev. Rul. 87-41 (20-factor common-law test)
 - Section 530 of the Revenue Act of 1978 (federal safe harbor)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

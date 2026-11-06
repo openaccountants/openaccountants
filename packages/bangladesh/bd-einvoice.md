@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: BD
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: e-invoicing
 ---
 
 # Bangladesh E-Invoicing & Fiscal Compliance — Skill v1.0
@@ -30,7 +31,6 @@ depends_on:
 | Income tax | Filed via the NBR e-Return (etaxnbr.gov.bd) — no universal mandatory e-invoicing for income tax |
 | Authority | National Board of Revenue (NBR) |
 | Currency | BDT (৳) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

@@ -7,22 +7,25 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ng-cgt.md`
-4. `ng-cit.md`
-5. `ng-formation.md`
-6. `ng-freelance-intake.md`
-7. `ng-income-tax.md`
-8. `ng-payroll.md`
-9. `ng-personal-income-tax.md`
-10. `ng-return-assembly.md`
-11. `ng-vat-return.md`
-12. `ng-vat.md`
-13. `ng-wht.md`
-14. `nigeria-vat.md`
-15. `references.md`
-16. `taxes-and-small-businesses-in-nigeria-a-simple-guide-2.md`
-17. `payroll-workflow-base.md`
-18. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ng-cgt.md`
+5. `ng-cit.md`
+6. `ng-formation.md`
+7. `ng-freelance-intake.md`
+8. `ng-income-tax.md`
+9. `ng-non-resident-cross-border.md`
+10. `ng-payroll.md`
+11. `ng-pension-nhf-social-contributions.md`
+12. `ng-personal-income-tax.md`
+13. `ng-return-assembly.md`
+14. `ng-vat-return.md`
+15. `ng-vat.md`
+16. `ng-wht.md`
+17. `nigeria-vat.md`
+18. `references.md`
+19. `taxes-and-small-businesses-in-nigeria-a-simple-guide-2.md`
+20. `payroll-workflow-base.md`
+21. `company-formation-workflow-base.md`
 
 ## Also known as
 

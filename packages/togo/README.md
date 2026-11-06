@@ -7,14 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `tg-company-formation.md`
-4. `tg-corporate-income-tax.md`
-5. `tg-income-tax.md`
-6. `tg-payroll-social.md`
-7. `tg-tax-overview.md`
-8. `tg-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `tg-company-formation.md`
+5. `tg-corporate-income-tax.md`
+6. `tg-cross-border.md`
+7. `tg-income-tax.md`
+8. `tg-payroll-social.md`
+9. `tg-property-tax.md`
+10. `tg-rental-withholding.md`
+11. `tg-tax-overview.md`
+12. `tg-transfer-pricing.md`
+13. `tg-vat-gst.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

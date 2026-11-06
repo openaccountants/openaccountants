@@ -7,14 +7,22 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bj-company-formation.md`
-4. `bj-corporate-income-tax.md`
-5. `bj-income-tax.md`
-6. `bj-payroll-social.md`
-7. `bj-tax-overview.md`
-8. `bj-vat-gst.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `bj-business-income-tax.md`
+5. `bj-company-formation.md`
+6. `bj-corporate-income-tax.md`
+7. `bj-cross-border-withholding.md`
+8. `bj-income-tax.md`
+9. `bj-payroll-social.md`
+10. `bj-property-gains-tax.md`
+11. `bj-property-tfu.md`
+12. `bj-rental-income-tax.md`
+13. `bj-tax-overview.md`
+14. `bj-transfer-pricing.md`
+15. `bj-vat-gst.md`
+16. `payroll-workflow-base.md`
+17. `company-formation-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

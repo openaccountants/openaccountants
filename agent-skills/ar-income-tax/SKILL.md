@@ -1,544 +1,188 @@
 ---
 name: ar-income-tax
-description: "Use this skill whenever asked about Argentine income tax (Impuesto a las Ganancias) for self-employed individuals (autónomos / profesionales independientes). Trigger on phrases like \"Ganancias\", \"impuesto a las ganancias\", \"autónomo Argentina\", \"monotributo vs responsable inscripto\", \"cuarta categoría\", \"deducciones personales\", \"ganancia no imponible\", \"bienes personales\", \"DDJJ Ganancias\", \"ARCA\", \"AFIP\", \"CUIT\", \"income tax Argentina\", \"anticipos ganancias\", or any question about filing or computing income tax for a self-employed client in Argentina. This skill covers progressive rates (5-35%), personal deductions (ganancia no imponible, cargas de familia, deducción especial), Bienes Personales interaction, advance payments (anticipos), percepciones as credits, and ARCA filing. ALWAYS read this skill before touching any Argentine income tax work."
+description: "Use this skill whenever asked about Arkansas individual income tax for self-employed individuals or sole proprietors — filing Form AR1000F, AR estimated tax, Arkansas tax brackets, Arkansas deductions, or any query involving Arkansas state income tax compliance. Trigger on phrases like \"Arkansas income tax\", \"AR income tax\", \"Form AR1000F\", \"Arkansas estimated tax\", \"Arkansas self-employed tax\", \"DFA income tax\", or \"Ark. Code Ann. §26-51\"."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ar-income-tax"
-  jurisdiction: "AR"
-  last_updated: "2026-06-12"
+  jurisdiction: "US-AR"
+  tax_year: "2026"
+  last_updated: "2026-09-25"
 ---
 
-# Argentine Income Tax — Autónomo / Profesional Independiente (Ganancias) v2.0
-
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
-
-## Section 1 — Quick Reference
-
-### Progressive Tax Scale — First Semester 2025 (Illustrative)
-
-WARNING: Argentina adjusts these thresholds semi-annually (January and July) by the IPC (Consumer Price Index). You MUST verify the current semester's thresholds with ARCA before applying. The amounts below are for the first semester 2025 only.
-
-| Ganancia Neta Imponible Acumulada (ARS) | Rate | Cumulative Fixed Amount |
-|---|---|---|
-| 0 -- 1,750,026 | 5% | -- |
-| 1,750,027 -- 3,500,053 | 9% | 87,501 |
-| 3,500,054 -- 5,250,079 | 12% | 245,004 |
-| 5,250,080 -- 7,000,106 | 15% | 455,007 |
-| 7,000,107 -- 10,500,159 | 19% | 717,511 |
-| 10,500,160 -- 14,000,211 | 23% | 1,382,521 |
-| 14,000,212 -- 21,000,317 | 27% | 2,187,033 |
-| 21,000,318 -- 28,000,423 | 31% | 4,077,062 |
-| 28,000,424+ | 35% | 6,247,095 |
-
-Formula: Tax = Cumulative Fixed Amount + (Ganancia Neta Imponible - Lower Limit) x Rate
-
-### Personal Deductions (Deducciones Personales) — First Semester 2025 (Illustrative)
-
-| Deduction | Annual Amount (ARS, approx) | Notes |
-|---|---|---|
-| Ganancia no imponible (GNI) | ~3,916,268 | Minimum non-taxable income |
-| Deducción especial — autónomos | GNI x 2.5 = ~9,790,671 | For autónomos under art. 53 |
-| Deducción especial — empleados | GNI x 3.8 = ~14,881,819 | NOT for autónomos |
-| Cónyuge | ~3,688,339 | Spouse with income below GNI |
-| Hijo/a menor de 18 | ~1,860,043 per child | Per child under 18 |
-| Hijo/a con discapacidad | ~3,720,086 per child | No age limit |
-
-### General Deductions (Deducciones Generales, art. 85)
-
-| Deduction | Limit |
-|---|---|
-| Aportes jubilatorios (retirement) | Actual amount paid |
-| Obra social / prepaga (health) | 5% of ganancia neta |
-| Seguros de vida / retiro | Annual cap (adjusted semi-annually) |
-| Servicio doméstico | Up to GNI amount |
-| Alquiler vivienda habitual | 40% of rent, capped at GNI |
-| Donaciones (to exempt entities) | 5% of ganancia neta |
-
-### Computation Structure
-
-| Step | Description |
-|---|---|
-| A | Ganancia bruta (gross income from all categories) |
-| B | Less: Gastos deducibles (allowable business expenses, art. 83-87) |
-| C | Ganancia neta (A minus B) |
-| D | Less: Deducciones generales (art. 85) |
-| E | Less: Deducciones personales (art. 30 — GNI + deducción especial + cargas de familia) |
-| F | Ganancia neta imponible (C minus D minus E) |
-| G | Apply progressive scale to F |
-| H | Less: Anticipos paid |
-| I | Less: Retenciones sufridas |
-| J | Less: Percepciones (e.g., on foreign currency purchases) |
-| K | Tax due / (refund) |
-
-### Conservative Defaults
-
-| Situation | Default Assumption |
-|---|---|
-| Autónomo vs empleado unclear | STOP — multiplier differs (2.5x vs 3.8x) |
-| Semi-annual thresholds uncertain | Verify with ARCA — never use stale thresholds |
-| Undocumented expenses | NOT deductible + 35% punitive tax (art. 38) |
-| Spouse claimed but income uncertain | Do NOT claim unless confirmed below GNI |
-| Percepciones from USD purchases | Include as credit against final DDJJ |
-| Monotributo vs Responsable Inscripto | STOP — entirely different regime |
-| Bienes Personales threshold | Flag — always check alongside Ganancias |
-
-### Red Flag Thresholds
-
-| Flag | Threshold |
-|---|---|
-| No aportes jubilatorios claimed | Verify — mandatory for autónomos |
-| Gastos sin factura detected | Non-deductible + 35% punitive tax |
-| Single client > 80% of income | Employment relationship risk |
-| Large percepciones claimed as credit | Verify certificates from ARCA account |
-| Bienes Personales threshold may be exceeded | Flag for concurrent filing |
-
----
-
-## Section 2 — Required Inputs + Refusal Catalogue
-
-### Required Inputs
-
-Before computing Argentine Ganancias, collect:
-
-1. **Tax category** — 4ta categoría autónomo (art. 53) or relación de dependencia
-2. **Marital / family status** — for cargas de familia deductions
-3. **Gross annual income from self-employment** — total honorarios / ingresos brutos
-4. **Business expenses** — documented with facturas electrónicas
-5. **Retirement contributions (jubilación autónomos)** — mandatory contributions paid
-6. **Obra social and prepaga contributions** — health insurance paid
-7. **Other income sources** — employment, rental (1ra cat.), financial (2da cat.)
-8. **Bienes Personales status** — assets above threshold
-9. **CUIT** — tax identification number
-10. **Bank statements** — 12 months (calendar year)
-11. **Percepciones suffered** — from foreign currency purchases, imports
-12. **Anticipos paid** — advance payments from prior DDJJ
-
-### Refusal Catalogue
-
-| Code | Situation | Action |
-|---|---|---|
-| R-AR-1 | Client is Monotributo | Stop — Monotributo is a separate simplified regime; use ar-monotributo skill |
-| R-AR-2 | Tax category unknown (autónomo vs empleado) | Stop — deducción especial multiplier differs; category is mandatory |
-| R-AR-3 | Gastos sin factura (undocumented expenses) claimed | Reject + flag 35% punitive tax under art. 38 |
-| R-AR-4 | Foreign-source income with treaty implications | Escalate — worldwide income applies but foreign tax credits need treaty analysis |
-| R-AR-5 | Trust taxation or corporate reorganisation | Escalate — outside scope |
-| R-AR-6 | No CUIT provided | Stop — cannot determine filing schedule |
-
----
-
-## Section 3 — Transaction Pattern Library
-
-### 3.1 Income Patterns
-
-| # | Narration Pattern | Tax Line | Notes |
-|---|---|---|---|
-| I-01 | `TRANSFERENCIA DE [client]` / `TRF CR [client]` | Gross income — Ganancias 4ta cat. | Standard inter-bank transfer from client |
-| I-02 | `ACREDITACIÓN CVU [client]` / `CVU CRÉDITO` | Gross income — Ganancias 4ta cat. | CVU (fintech wallet) credit from client |
-| I-03 | `MERCADOPAGO COBRO` / `MP COBRO [client]` | Gross income — gross-up | Mercado Pago settlement; fee deductible with factura |
-| I-04 | `DEBIN RECIBIDO [client]` | Gross income — Ganancias 4ta cat. | DEBIN (instant debit request) payment received |
-| I-05 | `PAYPAL RETIRO` / `PAYPAL TRANSFER` | Gross income — foreign source | PayPal withdrawal; convert at ARCA exchange rate |
-| I-06 | `STRIPE PAYOUT` / `STRIPE AR` | Gross income — foreign source | Stripe payout; classify by payer country |
-| I-07 | `RAPIPAGO COBRO` / `PAGO FÁCIL COBRO` | Gross income — Ganancias 4ta cat. | Cash collection network receipt |
-| I-08 | `DEVOLUCIÓN GANANCIAS ARCA` / `REINTEGRO ARCA` | NOT income — tax refund | Refund of overpaid tax |
-| I-09 | `INTERESES PLAZO FIJO` / `RENDIMIENTO FCI` | 2da categoría — financial income | Interest/fund returns; separate treatment |
-| I-10 | `DIVIDENDOS [company]` | Renta exenta or gravada | Dividends; verify current treatment |
-| I-11 | `ALQUILER COBRADO` / `RENTA INMUEBLE` | 1ra categoría — rental income | Separate category; aggregates in Ganancias |
-
-### 3.2 Expense Patterns
-
-| # | Narration Pattern | Tax Line | Notes |
-|---|---|---|---|
-| E-01 | `ALQUILER OFICINA` / `LOCACIÓN COMERCIAL` | Rent — fully deductible | Require factura electrónica |
-| E-02 | `EDESUR` / `EDENOR` / `EPEC` / `EPE` | Utilities — deductible (business proportion) | Electricity; require factura |
-| E-03 | `METROGAS` / `NATURGY` / `CAMUZZI` | Gas — deductible (business proportion) | Require factura |
-| E-04 | `PERSONAL` / `CLARO` / `MOVISTAR` / `TELECOM` | Phone/internet — deductible (business %) | Require factura |
-| E-05 | `ADOBE` / `MICROSOFT 365` / `GOOGLE WORKSPACE` | Software — fully deductible | Professional tools |
-| E-06 | `CONTADOR` / `ESTUDIO CONTABLE` / `HONORARIOS CPN` | Accounting fees — fully deductible | Require factura |
-| E-07 | `AEROLÍNEAS ARGENTINAS` / `FLYBONDI` / `JETSMART` | Air travel — deductible (business purpose) | Document purpose |
-| E-08 | `HOTEL` / `BOOKING.COM` / `AIRBNB` | Accommodation — deductible (business travel) | Business purpose required |
-| E-09 | `MONOTRIBUTO APORTES` / `JUBILACIÓN AUTÓNOMOS` | Retirement contributions — deducción general | Fully deductible |
-| E-10 | `OBRA SOCIAL` / `PREPAGA` / `OSDE` / `SWISS MEDICAL` | Health insurance — deducción general (5% cap) | Cap at 5% of ganancia neta |
-| E-11 | `SEGURO PROFESIONAL` / `RC PROFESIONAL` | Professional insurance — fully deductible | |
-| E-12 | `COLEGIO PROFESIONAL` / `CPACF` / `MATRÍCULA` | Professional body fees — fully deductible | |
-| E-13 | `PAGO GANANCIAS ARCA` / `VEP GANANCIAS` | Tax payment — NOT deductible | Credit against liability |
-| E-14 | `ANTICIPO GANANCIAS` / `VEP ANTICIPO` | Advance payment — NOT deductible | Credit against annual DDJJ |
-| E-15 | `PERCEPCIÓN RG 4815` / `PERC. DÓLAR` / `IMP. PAÍS` | Percepción — NOT deductible | Credit against Ganancias DDJJ |
-| E-16 | `MARKETING` / `PUBLICIDAD` / `GOOGLE ADS` | Marketing — fully deductible | Require factura or foreign invoice |
-| E-17 | `PAPELERÍA` / `INSUMOS OFICINA` | Office supplies — fully deductible | Require factura |
-| E-18 | `SERVICIO DOMÉSTICO` | Domestic staff — deducción general | Capped at GNI amount |
-| E-19 | `ALQUILER VIVIENDA` / `INQUILINO` | Housing rent (personal) — deducción general | 40% of rent, capped at GNI |
-
-### 3.3 Bank Fees and Financial (Exclude)
-
-| Pattern | Treatment | Notes |
-|---|---|---|
-| BANCO NACIÓN, BNA | EXCLUDE for bank charges/fees | Financial service |
-| BANCO GALICIA, GALICIA | EXCLUDE for bank charges/fees | Financial service |
-| SANTANDER ARGENTINA | EXCLUDE for bank charges/fees | Financial service |
-| BBVA ARGENTINA | EXCLUDE for bank charges/fees | Financial service |
-| MACRO, BANCO MACRO | EXCLUDE for bank charges/fees | Financial service |
-| BRUBANK, UALA, NARANJA X | EXCLUDE for fintech fees | Check for separate taxable subscription |
-| COMISIÓN BANCARIA, MANTENIMIENTO CTA | EXCLUDE | Bank maintenance fee |
-| INTERESES, INTERÉS PRÉSTAMO | EXCLUDE | Interest on loan — out of scope |
-
-### 3.4 Government and Statutory (Exclude)
-
-| Pattern | Treatment | Notes |
-|---|---|---|
-| ARCA, AFIP | EXCLUDE | Tax payment |
-| ANSES | EXCLUDE | Social security system payment |
-| RENTAS [province] | EXCLUDE | Provincial tax (Ingresos Brutos — separate) |
-| ARBA, AGIP, DGIP | EXCLUDE | Provincial revenue agency payment |
-| MUNICIPALIDAD | EXCLUDE | Municipal fee/tax |
-
-### 3.5 Internal Transfers and Exclusions
-
-| Pattern | Treatment | Notes |
-|---|---|---|
-| TRANSFERENCIA PROPIA, CUENTA PROPIA | EXCLUDE | Internal movement |
-| EXTRACCIÓN ATM, RETIRO EFECTIVO | TIER 2 — ask | Default exclude; ask purpose |
-| PRÉSTAMO PERSONAL | EXCLUDE | Loan principal, out of scope |
-| CUOTA PRÉSTAMO | EXCLUDE | Loan repayment, out of scope |
-
----
-
-## Section 4 — Worked Examples
-
-### Example 1 — Banco Nación (Buenos Aires, IT Consultant)
-
-**Bank:** Banco de la Nación Argentina statement
-**Client:** Martín López, IT consultant, Buenos Aires, Responsable Inscripto
-
-```
-Fecha;Concepto;Débito;Crédito;Saldo
-05/01/2025;TRANSFERENCIA CR EMPRESA TECH SA;;1.200.000;
-15/01/2025;COMISIÓN BANCARIA;1.500;;
-10/02/2025;TRANSFERENCIA CR STARTUP DIGITAL SRL;;850.000;
-28/02/2025;VEP JUBILACIÓN AUTÓNOMOS;180.000;;
-15/03/2025;PAYPAL RETIRO;;420.000;
-31/03/2025;ANTICIPO GANANCIAS VEP;250.000;;
-20/04/2025;MERCADOPAGO COBRO;;380.000;
-05/06/2025;TRANSFERENCIA CR GAMMA CONSULTING SA;;1.500.000;
-10/07/2025;ESTUDIO CONTABLE PÉREZ;120.000;;
-10/10/2025;AEROLÍNEAS ARGENTINAS;95.000;;
-```
-
-**Step 1 — Income Classification**
-
-| Narration | Pattern | Amount (ARS) | Notes |
-|---|---|---|---|
-| EMPRESA TECH SA | I-01 | 1,200,000 | Domestic PJ — check retención |
-| STARTUP DIGITAL SRL | I-01 | 850,000 | Domestic PJ — check retención |
-| PAYPAL RETIRO | I-05 | 420,000 | Foreign source — convert at ARCA rate |
-| MERCADOPAGO COBRO | I-03 | 380,000 | Gross up for MP fees |
-| GAMMA CONSULTING SA | I-01 | 1,500,000 | Domestic PJ — check retención |
+# Arkansas individual income tax (Form AR1000F and AR1000NR): 2026 method, with 2025 return notes
+
+Figures are for tax year 2026 unless a line says 2025. The 2026 rates come from Act 2 of the First Extraordinary Session of 2026, which cut the top rate to 3.7% ([Act 2](https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf)). The 2025 figures come from the Arkansas Department of Finance and Administration (DFA) 2025 instructions and tax tables. A separate section covers 2025 returns, which are still being filed on extension.
+
+## Scope
+
+- **Covers:** individuals who file an Arkansas return: full-year residents (Form AR1000F), and part-year residents and nonresidents (Form AR1000NR). It covers wage earners, retirees, and self-employed people and sole proprietors who report a federal Schedule C.
+- **Covers these topics:** filing thresholds, income and exempt income, the Arkansas adjustments on Form AR1000ADJ, the standard deduction, the tax tables and rates, personal tax credits, capital gains (Form AR1000D), the retirement exemption, military pay, part-year proration, estimated tax, the extension, and penalties.
+- **Does not cover:** fiduciary returns (AR1002), corporations, the electing pass-through entity tax (PET) return itself, composite returns, business incentive credits, or a multistate business's apportionment. See "When to refuse or refer".
+- **Arkansas does not start from the federal return's AGI.** The AR1000F lists each type of income on its own line (wages on line 8, Schedule C on line 13, capital gains on line 14, and so on), subtracts only the adjustments printed on Form AR1000ADJ, and reaches its own Arkansas AGI on line 25. Federal amounts feed in line by line, often with Arkansas changes ([2025 AR1000F/AR1000NR instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)).
 
-Total gross annualised: ARS 28,000,000 (example)
+## Ask the client first
 
-**Step 2 — Deductible Expenses**
+- Which tax year is this: a 2026 estimate, or a 2025 return that is still open? The top rates differ between the two years.
+- Where was the client domiciled during the year? Did they move into or out of Arkansas during the year? Did they live inside the city limits of Texarkana, Arkansas or Texarkana, Texas, at a street address (not a PO box)?
+- Filing status. If married, do both spouses have income? Arkansas lets married couples file jointly, separately on the same return (status 4), or separately on different returns (status 5). If one spouse had a negative total income, they must file jointly.
+- For each income type: wages (and Arkansas withholding), Schedule C net profit, Schedule E and K-1 income, farm income, interest and dividends, capital gains and holding periods, retirement distributions (employer plan or traditional IRA, the client's age, and whether it was a rollover), Social Security, unemployment, gambling winnings.
+- Is either spouse on active duty in the armed forces, National Guard or Reserves, or receiving military retirement? What is the Home of Record?
+- For the self-employed: federal Schedule C, any bonus depreciation or section 179 deduction claimed federally, health insurance paid through the business, and SEP, SIMPLE or Keogh contributions.
+- Is the client a member of an entity that elected the Arkansas pass-through entity tax?
+- Income taxed by another state (the client will need a signed copy of that state's return), and income from Arkansas sources for a nonresident.
+- Estimated tax paid for the year, the prior year's Arkansas tax liability, and any overpayment carried forward.
+- Did the client file a federal extension (Form 4868) or an Arkansas extension (Form AR1055-IT)?
 
-Accounting: ARS 1,440,000; jubilación: ARS 2,160,000; travel: ARS 1,140,000; software: ARS 480,000; bank fees excluded.
+## The method, step by step
 
-**Step 3 — Computation**
+1. **Decide whether a return is needed and which form.** Full-year residents use AR1000F. Part-year residents and nonresidents use AR1000NR. A nonresident with any Arkansas-source gross income must file, whatever the amount; a part-year resident must file if they had any gross income while an Arkansas resident. A full-year resident files if gross income is at least the threshold for their status (see the 2025 section), or to claim a refund or the military pay exemption ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)).
+2. **List income line by line**, using Arkansas rules. Leave out exempt income (Social Security, VA benefits, child support, gifts and inheritances, interest on US and Arkansas government obligations, active-duty military pay). Enter Schedule C net profit on line 13. Run capital gains through Form AR1000D before they reach line 14. Put federal/state depreciation differences on line 22 through Form AR-OI.
+3. **Apply the retirement and military exemptions.** Military retirement pay is fully exempt. Part of an employer-plan distribution, or of a traditional IRA distribution taken at age 59½ or later, is exempt, with one cap per taxpayer across all plans (see the figures and the boundary table).
+4. **Subtract only the adjustments printed on Form AR1000ADJ** (line 24). These include IRA, HSA, self-employed health insurance, Keogh/SEP/SIMPLE contributions, student loan interest, alimony paid under a court order, and the Texarkana exemption. The form says: "Do not enter amounts from categories that are not printed on this form." So do not carry across other federal adjustments, such as the deductible part of self-employment tax ([AR1000ADJ](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000ADJ_AdjustmentsSchedule.pdf)). The result is Arkansas AGI (line 25).
+5. **Choose the tax table.** If the client qualifies for a Low Income Tax Table, the standard deduction is already built in: enter zero deduction and read the tax from Arkansas AGI. Otherwise use the Regular Tax Table and deduct the larger of the standard deduction or Arkansas itemized deductions (Form AR3). Net taxable income is line 28.
+6. **Compute the tax** from the Regular Tax Table. The same table applies to every filing status. Married couples filing status 4 compute each spouse's tax separately on the same return. For 2026, see the rate tables below.
+7. **Subtract credits:** personal tax credits (line 34), the child care credit (AR2441), and the credits on Form AR1000TC (credit for tax paid to another state, the additional credit for qualified individuals, and others). Credits beyond the total tax are not refundable.
+8. **Part-year residents and nonresidents only:** prorate the net tax by Arkansas AGI (column C) divided by total AGI (columns A and B), as a decimal rounded to six places and capped at 100% ([DFA Subject 802](https://www.dfa.arkansas.gov/wp-content/uploads/802-HowToApportionTaxLiability.pdf)).
+9. **Subtract payments** (withholding, estimated tax, extension payment), then work out the underestimate penalty on Form AR2210 or AR2210A.
 
-```
-Ganancia bruta:              ARS 28,000,000
-Less gastos deducibles:      ARS  5,220,000
-Ganancia neta:               ARS 22,780,000
-Less deducciones generales:  ARS  2,160,000 (jubilación)
-Less deducciones personales:
-  GNI:                       ARS  3,916,268
-  Deducción especial (2.5x): ARS  9,790,671
-  Total personal:            ARS 13,706,939
-Ganancia neta imponible:     ARS  6,913,061
-Tax (apply scale):           ~ARS 1,012,000
-Less anticipos + retenciones + percepciones
-```
+## Figures with years
 
-### Example 2 — Banco Galicia (Córdoba, Architect)
+### 2026 rates: Act 2 of the First Extraordinary Session of 2026 ([Act 2](https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf))
 
-**Bank:** Banco Galicia statement
-**Client:** Lucía Fernández, architect, Córdoba, married with 2 children
+The Act applies "for tax years beginning on or after January 1, 2026". It was approved on 6 May 2026.
 
-Gross income: ARS 35,000,000
-Expenses: ARS 8,000,000 (staff, office rent, software, materials)
-Jubilación: ARS 2,400,000
-Obra social: ARS 600,000 (check 5% cap)
+| Net taxable income of $94,700 or less: from | to | rate |
+| --- | --- | --- |
+| $0 | $5,599 | 0% |
+| $5,600 | $11,199 | 2% |
+| $11,200 | $15,999 | 3% |
+| $16,000 | $26,399 | 3.4% |
+| $26,400 | $94,700 | 3.7% |
 
-Personal deductions: GNI + DE (2.5x) + cónyuge + 2 hijos = ARS 13,706,939 + ARS 3,688,339 + ARS 3,720,086 = ARS 21,115,364
+| Net taxable income over $94,700: from | to | rate |
+| --- | --- | --- |
+| $0 | $4,700 | 2% |
+| $4,701 | and above | 3.7% |
+
+- If net taxable income is from $94,701 to $97,600, the tax from the upper table is reduced by a "bracket adjustment amount". This starts at $290 at $94,701–$94,800 and falls by $10 for each $100 band, down to $10 at $97,501–$97,600 and $0 from $97,601.
+- DFA's fiscal impact statement confirms these as the tables for "the 2026 and following tax years" ([DFA fiscal impact, SB1](https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2025%2F2026S1%2FFiscal+Impacts%2FSB1-DFA1.pdf)).
+- The same Act says the tables "shall be adjusted annually". DFA's 2026 withholding formula and 2026 estimated-tax worksheet use the unadjusted amounts above. **The 2026 AR1000F tax table is not published yet.** Treat 2026 computations as estimates until it is.
+- DFA's 2026 bracket formula ([2026 withholding formula](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf)): for income of $26,400 to $94,700, tax = income × 3.7% minus $367.16. For income of $97,601 and over, tax = income × 3.7% minus $79.90. The return's table is worked at the midpoint of each $100 band, so a table figure can differ from the formula by a few dollars.
 
-Ganancia neta imponible: ARS 35,000,000 - 8,000,000 - 3,000,000 - 21,115,364 = ARS 2,884,636
-
-Tax: bracket 1,750,027–3,500,053 at 9% = ARS 87,501 + (2,884,636 - 1,750,027) x 9% = ARS 87,501 + ARS 102,115 = ARS 189,616
-
-Flag: Verify spouse income is below GNI. Verify Bienes Personales.
-
-### Example 3 — Santander Argentina (CABA, Digital Creator with Percepciones)
-
-**Bank:** Santander Argentina
-**Client:** Diego Ruiz, digital creator, receives foreign payments, large percepciones from USD purchases
-
-Gross income: ARS 18,000,000 (mix of domestic and foreign)
-Percepciones from USD purchases: ARS 3,500,000 (RG 4815 + adelanto Ganancias)
-
-After deductions and personal allowances, tax per scale: ARS 1,200,000
-Less percepciones: ARS 3,500,000
-Result: Saldo a favor (credit balance) ARS 2,300,000
-
-Flag: Percepciones exceed computed tax. Client has saldo a favor. Verify all percepción certificates.
-
-### Example 4 — Brubank (CABA, Freelance Developer, Low Income)
-
-**Bank:** Brubank (digital bank)
-**Client:** Ana García, freelance developer, single, no dependants
-
-Gross income: ARS 15,000,000
-Expenses: ARS 4,000,000
-Jubilación: ARS 1,800,000
-
-After GNI + DE (2.5x) = ARS 13,706,939:
-Ganancia neta imponible: ARS 15,000,000 - 4,000,000 - 1,800,000 - 13,706,939 = max(0, -4,506,939) = ARS 0
-
-Tax: ARS 0. Personal deductions fully shelter the income.
-
-### Example 5 — Banco Macro (Tucumán, Physician with Gastos sin Factura)
-
-**Bank:** Banco Macro
-**Client:** Dr. Carlos Méndez, physician, Tucumán
-
-Issue: Client claims ARS 2,000,000 in expenses without facturas.
-
-Resolution: NOT deductible under art. 83. Additionally, art. 38 imposes 35% punitive tax on undocumented expenses = ARS 700,000 additional tax. Remove from deductions and flag.
-
-### Example 6 — BBVA Argentina (Mendoza, Consultant with Mixed Income)
-
-**Bank:** BBVA Argentina
-**Client:** Patricia Vega, consultant, Mendoza, also earns rental income
-
-Self-employment: ARS 22,000,000
-Rental income (1ra categoría): ARS 6,000,000
-Total ganancia bruta: ARS 28,000,000
-
-All income categories aggregate. Apply expenses per category. Apply GNI + DE + cargas to combined ganancia neta. Flag: Bienes Personales likely triggered by real property.
-
----
-
-## Section 5 — Tier 1 Rules (Apply Directly)
-
-**T1-AR-1 — Autónomos use the 2.5x multiplier, NEVER 3.8x**
-The deducción especial multiplier of 3.8x is exclusively for empleados en relación de dependencia. Autónomos use 2.5x the ganancia no imponible. Apply without escalating.
-
-**T1-AR-2 — Undocumented expenses trigger 35% punitive tax**
-Gastos sin factura are not only non-deductible but subject to an additional 35% tax on the gross undocumented amount under art. 38 of Ley 20.628. Always flag and compute the 35% penalty.
-
-**T1-AR-3 — Percepciones are credits, not deductions**
-Percepciones suffered (e.g., RG 4815 on foreign currency purchases, import percepciones) are credits against the annual DDJJ Ganancias. They reduce the final tax balance payable. If percepciones exceed tax, a saldo a favor results.
-
-**T1-AR-4 — Anticipos are credits, not deductions**
-Advance payments (anticipos) paid bimonthly are credits against the final DDJJ. They are NOT deductible expenses.
-
-**T1-AR-5 — Cargas de familia: dependent must earn below GNI**
-The cónyuge and hijo deductions only apply if the dependent's own income is below the ganancia no imponible. Verify before applying.
-
-**T1-AR-6 — Semi-annual threshold adjustment is mandatory**
-Argentina adjusts tax scale thresholds and personal deduction amounts every 6 months by IPC. Each semester's income must use that semester's applicable thresholds. Never use a full-year table from a single semester.
-
-**T1-AR-7 — Bienes Personales must be considered alongside Ganancias**
-Bienes Personales is a separate wealth tax (progressive 0.5% to 1.75%) filed on the same schedule as Ganancias. Always flag when a client's asset base may exceed the threshold.
-
----
-
-## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
-
-| Code | Situation | Escalation Reason | Suggested Treatment |
-|---|---|---|---|
-| T2-AR-1 | Monotributo vs Responsable Inscripto decision | Entire regime differs; depends on turnover, expenses, and client position | Flag for Contador Público; do not compute under wrong regime |
-| T2-AR-2 | Home office expense proportion | Requires documented dedicated space and proportion calculation | Flag — proportional deduction; reviewer must confirm methodology |
-| T2-AR-3 | Motor vehicle business use percentage | Limited deduction under art. 88; acquisition and running costs capped | Flag — vehicle business-use percentage must be documented |
-| T2-AR-4 | Semi-annual threshold application | Each semester may have different amounts; annual DDJJ aggregates both | Flag — confirm correct semester thresholds applied |
-| T2-AR-5 | Bienes Personales interaction | Assets above threshold trigger wealth tax; filed alongside Ganancias | Flag — verify asset base and threshold; separate computation |
-| T2-AR-6 | Foreign-source income for Argentine resident | Worldwide income subject to Ganancias; foreign tax credits may apply | Escalate — treaty analysis required |
-
----
-
-## Section 7 — Excel Working Paper Template
-
-```
-ARGENTINE GANANCIAS WORKING PAPER (AUTÓNOMO / PROFESIONAL INDEPENDIENTE)
-Taxpayer: _______________  CUIT: _______________  FY: 2025 (Calendar Year)
-
-SECTION A — INCOME (GANANCIA BRUTA)
-                                        ARS
-4ta categoría (honorarios/servicios):  ___________
-1ra categoría (rental, if any):        ___________
-2da categoría (financial, if any):     ___________
-Foreign-source income (converted):     ___________
-TOTAL GANANCIA BRUTA                   ___________
-
-SECTION B — GASTOS DEDUCIBLES (Art. 83-87)
-Office rent:                           ___________
-Utilities (business %):                ___________
-Phone/internet (business %):           ___________
-Software:                              ___________
-Accounting/legal fees:                 ___________
-Travel (business purpose):             ___________
-Marketing/advertising:                 ___________
-Staff salaries + cargas sociales:      ___________
-Office supplies:                       ___________
-Professional insurance:                ___________
-Professional body fees:                ___________
-TOTAL GASTOS DEDUCIBLES                ___________
-
-SECTION C — GANANCIA NETA
-Ganancia bruta - gastos deducibles     ___________
-
-SECTION D — DEDUCCIONES GENERALES (Art. 85)
-Aportes jubilatorios:                  ___________
-Obra social / prepaga (5% cap):        ___________
-Seguros de vida:                       ___________
-Servicio doméstico (GNI cap):          ___________
-Alquiler vivienda (40%, GNI cap):      ___________
-Donaciones (5% cap):                   ___________
-TOTAL DEDUCCIONES GENERALES            ___________
-
-SECTION E — DEDUCCIONES PERSONALES (Art. 30)
-Ganancia no imponible (GNI):           ___________
-Deducción especial (2.5x GNI):        ___________
-Cónyuge:                               ___________
-Hijos (x ___):                         ___________
-TOTAL DEDUCCIONES PERSONALES           ___________
-
-SECTION F — GANANCIA NETA IMPONIBLE
-C - D - E (min 0):                     ___________
-
-SECTION G — IMPUESTO DETERMINADO
-Tax per progressive scale:             ___________
-
-SECTION H — CREDITS
-Anticipos paid:                        (___________)
-Retenciones sufridas:                  (___________)
-Percepciones (RG 4815, etc.):          (___________)
-TAX DUE / (SALDO A FAVOR)             ___________
-
-SECTION I — REVIEWER FLAGS
-[ ] Tax category confirmed (autónomo, not empleado or Monotributo)?
-[ ] Semi-annual thresholds verified with ARCA?
-[ ] All expenses documented with facturas electrónicas?
-[ ] No gastos sin factura included (35% penalty check)?
-[ ] Cargas de familia — dependant income below GNI confirmed?
-[ ] Percepciones certificates verified?
-[ ] Bienes Personales obligation assessed?
-[ ] Foreign income converted at ARCA official rate?
-```
-
----
-
-## Section 8 — Bank Statement Reading Guide
-
-### Banco de la Nación Argentina (BNA)
-- Export: PDF or CSV from Home Banking BNA
-- Columns: `Fecha;Concepto;Débito;Crédito;Saldo`
-- Amount format: period thousands separator, comma decimal (e.g., `1.200.000,00`)
-- Date: DD/MM/YYYY
-- Credit narrations: `TRANSFERENCIA CR [sender]`, `ACREDITACIÓN [sender]`
-
-### Banco Galicia
-- Export: CSV/Excel from Online Banking Galicia
-- Columns: `Fecha;Descripción;Débito;Crédito;Saldo`
-- Standard Argentine format; positive credit, negative debit
-- SPEI/CVU narrations: `TRF CVU [sender]`, `TRANSFERENCIA [sender]`
-
-### Santander Argentina
-- Export: CSV/PDF from Santander Online
-- Columns: `Fecha;Concepto;Importe;Saldo`
-- Positive = credit; negative = debit
-
-### BBVA Argentina (ex-Francés)
-- Export: CSV/PDF from BBVA Net
-- Columns: `Fecha;Detalle;Débito;Crédito;Saldo`
-- Narrations: `TRF RECIBIDA DE [sender]`
-
-### Banco Macro
-- Export: CSV from Macro Online
-- Standard format; `Fecha;Movimiento;Débito;Crédito;Saldo`
-
-### Brubank / Ualá / Naranja X (Digital Banks)
-- Export: CSV or PDF from app
-- Simple format; credit/debit in single column (positive/negative) or separate columns
-- CVU transfers: `Transferencia recibida de [sender]`
-- Mercado Pago: `MP COBRO [amount]`
-
-### Mercado Pago
-- Not a bank statement per se; settlements appear in the primary bank statement
-- Look for: `MERCADOPAGO`, `MP COBRO`, `LIQUIDACIÓN MP`
-- Gross-up required for fee deduction
-
-### Key Argentine Banking Notes
-- All amounts in ARS (Argentine pesos); period as thousands separator, comma as decimal
-- CVU (Clave Virtual Uniforme) is the Argentine instant payment identifier for fintech wallets
-- CBU (Clave Bancaria Uniforme) for traditional bank transfers
-- Both CVU and CBU transfers appear as credits with sender identification
-
----
-
-## Section 9 — Onboarding Fallback
-
-**Tax category confirmation:**
-> "Before I can compute your Ganancias, I need to confirm your tax category. Are you registered as an autónomo (Responsable Inscripto) or are you in Monotributo? If Monotributo, you pay a fixed monthly fee (DAS) and do not file a Ganancias return on this income — a different skill applies. If you are a Responsable Inscripto autónomo, this skill applies. Please check your status at www.arca.gob.ar with your Clave Fiscal."
-
-**Missing facturas:**
-> "Argentine tax law requires all deductible expenses to be supported by facturas electrónicas. Expenses without facturas are not only non-deductible but trigger a 35% punitive tax under art. 38 of Ley 20.628. Please ensure all claimed expenses have corresponding facturas. You can verify your received facturas at www.arca.gob.ar → 'Mis Comprobantes'."
-
-**Percepciones verification:**
-> "I see you may have percepciones from foreign currency purchases or imports (RG 4815 / Impuesto PAÍS). These are credits against your Ganancias DDJJ. To claim them, I need the percepción certificates. You can download them from your ARCA account under 'Mis Retenciones' or check your bank statements for percepción line items."
-
-**Bienes Personales reminder:**
-> "As part of your annual tax filing, I also need to assess whether you have a Bienes Personales (wealth tax) obligation. This tax applies to worldwide assets exceeding a threshold updated annually by ARCA. Do you own real estate, vehicles, investments, or bank deposits that in aggregate might exceed the threshold? Bienes Personales is filed on the same schedule as Ganancias."
-
----
-
-## Section 10 — Reference Material
-
-### Key Legislation
-- **Ley 20.628** — Impuesto a las Ganancias (texto ordenado)
-- **Ley 27.743** — Paquete Fiscal 2024 (modified rates and thresholds)
-- **Ley 23.966** — Impuesto sobre los Bienes Personales
-- **Ley 11.683** — Procedimiento Tributario (penalties, interest)
-- **Decreto Reglamentario** — implementing regulations
-
-### Filing Calendar
-
-| Deadline | Event |
-|---|---|
-| June (by last CUIT digit) | DDJJ Ganancias annual return |
-| June (same schedule) | DDJJ Bienes Personales |
-| Bimonthly from June | Anticipos (5 instalments, 20% each of prior year tax) |
-
-### Penalties
-
-| Offence | Penalty |
-|---|---|
-| Late filing (omisión) | 1% per month of unpaid tax (up to 100%) |
-| Material omission (art. 45) | 100% of omitted tax |
-| Tax fraud (art. 46) | 200-1000% of evaded tax + criminal |
-| Undocumented expenses (art. 38) | 35% additional tax on gross amount |
-| Late payment interest | ARCA resolutiva rate (~4-6% monthly) |
-
-### Useful References
-- ARCA Portal: www.arca.gob.ar
-- Clave Fiscal: servicioscf.arca.gob.ar
-- IPC updates: www.indec.gob.ar
-- Bienes Personales thresholds: check ARCA RG annually
-
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+### 2026 deduction and credits ([2026 AR1000ES](https://www.dfa.arkansas.gov/wp-content/uploads/2026_Final_AR1000ES_2.pdf))
+
+- Standard deduction on DFA's 2026 estimated-tax worksheet: $2,470 per taxpayer. Confirm it against the 2026 AR1000F instructions when they are published.
+- Personal tax credits on the 2026 worksheet: $29 for single or married filing on separate forms. $58 for a joint return, head of household, married filing separately on the same return, or a qualifying widow(er). Add $29 for each dependent, and $29 each for blind, deaf, over 65 and "65 Special".
+- Declaration threshold: file a Declaration of Estimated Tax if the estimated tax after withholding and credits is $1,000 or more.
+
+### Figures that stay the same in both years
+
+- **Retirement exemption:** $6,000 per taxpayer, across all employer plans and traditional IRAs combined ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)).
+- **Capital gains:** 50% of the net capital gain is taxed (net long-term gain less net short-term loss). Net capital gain above $10,000,000 is exempt. Net short-term gain is taxed in full ([AR1000D](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000D_CapitalGains.pdf); [DFA Subject 502](https://www.dfa.arkansas.gov/wp-content/uploads/502-CapitalGainsTax.pdf)).
+- **Capital loss limit:** $3,000 a year, or $1,500 per taxpayer for filing status 4 or 5. The unused loss carries forward ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)).
+- **Home sale:** gain on a main home is exempt up to $250,000 per taxpayer, or $500,000 for a married couple filing on the same return, if it was owned and used as the main home for 2 of the 5 years before the sale ([DFA Subject 502](https://www.dfa.arkansas.gov/wp-content/uploads/502-CapitalGainsTax.pdf)).
+
+## Boundary and exception table
+
+| Rule | Who / when | Boundary and conditions | Source |
+| --- | --- | --- | --- |
+| Regular vs upper rate table | Tax year 2026 | Upper table only if net taxable income is **more than** $94,700; bracket adjustment for $94,701–$97,600 | [Act 2](https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf) |
+| Retirement exemption: employer-sponsored plan | Any age; "The recipient does not have to be retired" | First $6,000 of the taxable amount, after recovering after-tax contributions under IRC §72. Caveat: the line 16 instructions treat withdrawals from deferred compensation or thrift savings plans before age 59½ (or disability) as premature distributions; check those before applying the exemption | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Retirement exemption: traditional IRA | Only after reaching age 59½, or an early distribution because of the participant's death or disability | Other early withdrawals do not qualify, even for medical costs, education or a first home; one $6,000 cap across all plans per taxpayer; a surviving spouse gets a single $6,000 | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Military retirement | Uniformed services retirement pay | Fully exempt. If it exceeds $6,000, no exemption for other plans; if less, the rest of the $6,000 can be used on employer-sponsored plans. For traditional IRAs DFA contradicts itself: the exempt-income list allows the remainder for "traditional or employer-sponsored distributions", but the line 17 text says "Retirees cannot claim both the military retirement exemption and the $6,000 exemption for traditional IRA distributions (A.C.A 26-51-307(f))". Confirm with DFA or refer before using the remainder on an IRA | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Active-duty military pay | Tax years from 2014; includes National Guard and Reserves | Fully exempt, but the resident must still file and report it (line 9); nonresidents stationed in Arkansas are not taxed on it | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Low Income Tax Table | Total income from all sources within the table limit | Married couples must file jointly; not available if the client uses the exclusion for active-duty military pay, military retirement, employer-sponsored pension income or a qualified traditional IRA distribution. The client "may elect NOT TO USE the exclusion(s)" and use the Low Income Table if within its limits; not with itemizing | [2025 tax tables](https://www.dfa.arkansas.gov/wp-content/uploads/TaxTables_FI_2025.pdf); [instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Itemizing, status 4 or 5 | Married filing separately | If one spouse itemizes, both must itemize | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Texarkana exemption | Residents inside Texarkana, AR city limits: all income exempt. Residents inside Texarkana, TX: only income earned in Texarkana, AR | Must use a street address in the city limits (a PO box or rural route is disallowed); attach Form AR-TX for W-2 income; file and report all income, then claim it on AR1000ADJ | [DFA Subject 302](https://www.dfa.arkansas.gov/wp-content/uploads/302-BorderCityExemption.pdf) |
+| Capital gain over $10,000,000 | Gain realized on or after 1 January 2014 | Line 7b of AR1000D caps net capital gain at $10,000,000 before the 50% | [AR1000D](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000D_CapitalGains.pdf) |
+| Bonus depreciation | Federal §168(k) | Arkansas did not adopt it; report the depreciation difference on AR-OI and AR1000D | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Section 179 | Purchases after 2022 | Arkansas adopted IRC §179 "as in effect on January 1, 2022"; the 2025 instructions give a $1,250,000 deduction limit and a $3,130,000 cost-of-property limit | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+| Credit for tax paid to another state | Arkansas residents only | Nonresidents cannot claim it; attach a signed copy of the other state's return | [AR1000TC instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000TC_Instructions.pdf) |
+| Net operating loss | Arkansas NOL | Carry forward only ("NOL carrybacks not allowed"); attach AR1000-NOL | [Instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+
+### Federal conformity and P.L. 119-21 (OBBBA)
+
+- Arkansas adopts selected Internal Revenue Code sections as of fixed dates, not the current Code. Two examples from the 2025 instructions: it did not adopt federal bonus depreciation, and it adopted IRC §179 as in effect on 1 January 2022 ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)).
+- The 2025 instructions and DFA's 2026 estimated-tax forms do not add any line for the 2025 federal changes in P.L. 119-21. Form AR1000ADJ accepts only the adjustments printed on it, and tips are reported as wages on line 8. So do not assume any new federal deduction (for tips, overtime, car-loan interest or seniors) reduces Arkansas income. Check DFA's What's New page and the 2026 instructions before filing a 2026 return.
+- The federal qualified business income deduction (§199A) has no Arkansas equivalent and no line on the AR1000F.
+
+## Worked cases
+
+Each case is an illustration with hypothetical inputs. 2026 amounts use DFA's 2026 bracket formula and may differ by a few dollars from the 2026 tax table once it is published.
+
+**C1: 2026, single, self-employed ([2026 withholding formula](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf); [2026 AR1000ES](https://www.dfa.arkansas.gov/wp-content/uploads/2026_Final_AR1000ES_2.pdf)).** Schedule C net profit $60,000, no other income, standard deduction. Arkansas has no line for the deductible part of self-employment tax, so net taxable income = $60,000 − $2,470 = $57,530. Tax ≈ $57,530 × 3.7% − $367.16 = $1,761.45. Less the $29 personal credit = $1,732.45. That is $1,000 or more, so a declaration is due. Four vouchers of about $433 each (15 April, 15 June, 15 September 2026 and 15 January 2027).
+
+**C2: 2025 return, single, table lookup ([2025 brackets](https://www.dfa.arkansas.gov/wp-content/uploads/2025_TaxBrackets.pdf)).** Net taxable income on line 28 is $75,950, in the $75,900–$76,000 band. DFA's own example gives the table tax as $2,542 ($75,950 × .039 = $2,962.05, less $419.96, rounded). Less the $29 personal credit = $2,513.
+
+**C3: 2026, married filing jointly, high income ([Act 2](https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf); [2026 withholding formula](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf)).** Net taxable income is $150,000, which is more than $94,700, so the upper table applies: 2% on the first $4,700 and 3.7% above it. Tax = $150,000 × 3.7% − $79.90 = $5,470.10. Less personal credits of $58 = $5,412.10.
+
+**C4: 2026, capital gains ([AR1000D](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000D_CapitalGains.pdf)).** A resident has net long-term gain of $40,000 (no losses) and net short-term gain of $5,000. Arkansas taxable amount = $40,000 × 50% + $5,000 = $25,000. That goes on line 14.
+
+**C5: gain over $10,000,000 ([AR1000D](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000D_CapitalGains.pdf)).** Net long-term capital gain of $12,000,000 from a sale in 2026. Line 7b caps it at $10,000,000. Line 8 = $10,000,000 × 50% = $5,000,000 taxable. The other $7,000,000 is not taxed.
+
+**C6: 2026, retiree aged 66 ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)).** Taxable employer pension $20,000 and a traditional IRA distribution of $8,000. Social Security is exempt and is left out. There is one $6,000 cap across both plans, so taxable retirement income = $20,000 + $8,000 − $6,000 = $22,000. Because the client uses the pension and IRA exclusions, the Low Income Tax Table is not available unless they elect not to use them.
+
+**C7: 2026, part-year resident ([DFA Subject 802](https://www.dfa.arkansas.gov/wp-content/uploads/802-HowToApportionTaxLiability.pdf); [2026 withholding formula](https://www.dfa.arkansas.gov/wp-content/uploads/Withholding-Tax-Formula.pdf)).** A single person moved to Arkansas on 1 July. Total AGI for the year from all sources is $90,000, and Arkansas AGI (column C: income received as a resident plus Arkansas-source income) is $36,000. Compute tax on the full-year figure: net taxable income $90,000 − $2,470 = $87,530. Tax ≈ $87,530 × 3.7% − $367.16 = $2,871.45. Less the $29 credit = $2,842.45. The ratio is $36,000 ÷ $90,000 = 0.400000. Arkansas tax ≈ $2,842.45 × 0.400000 = $1,136.98.
+
+**C8: estimated tax safe harbor ([AR2210 instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR2210_Instructions.pdf)).** The C1 client expects 2026 tax of $1,732.45 and had a 2025 Arkansas liability of $1,200. The required annual payment is the lesser of 90% of this year's tax ($1,559.21) or last year's liability ($1,200). So the required payment is $1,200, or $300 a quarter. If less is paid, a penalty of 10% a year runs on each quarter's shortfall, day by day.
+
+## When to refuse or refer
+
+- A multistate business that must apportion income. Act 719 of 2025 rewrote Arkansas apportionment and sourcing (market-based sourcing) "for tax years beginning on and after January 1, 2026" ([Act 719](https://arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT719.pdf)). Refer it.
+- A member of an entity that elected the pass-through entity tax. The income is reported and then backed out on AR-OI, and the entity's tax is not withholding. Refer it unless you have the AR-K1 and the PET return.
+- Residency disputes: a claim of a new domicile while the client keeps an Arkansas home, and military spouses who claim a non-Arkansas domicile (Form AR-MS is needed).
+- Arkansas NOL carryforwards, business incentive credits (Form AR1000TC business credits), and lump-sum distribution averaging (AR1000TD).
+- A final 2026 return figure that depends on the 2026 AR1000F tax table, standard deduction or filing thresholds: refer it until DFA publishes them. Estimates for 2026 planning, labelled as estimates, are fine.
+- Any claim that a federal 2025 or 2026 deduction from P.L. 119-21 reduces Arkansas income. We found no Arkansas authority for it.
+- Audits, notices of proposed assessment, offers in compromise, and anything that looks like evasion.
+
+## Filing and payment
+
+- **Due date:** 15 April for calendar-year filers. A return mailed on a Saturday, Sunday or legal holiday due date is timely if it is postmarked the next business day ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)).
+- **Extension:** an accepted federal extension (Form 4868) also extends the Arkansas return, and so does Form AR1055-IT filed by 15 April. The maximum is 210 days, which extends the due date to 15 November. Check the extension box on the return. An extension to file is not an extension to pay. Tax due still has to be paid by 15 April, or the failure-to-pay penalty and interest run.
+- **Penalties on an original return ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)):** failure to pay, 1% a month; failure to file, 5% a month; up to a maximum of 35% of the tax due. Interest is 10% a year from the original due date. A $500 penalty applies to a frivolous return.
+- **Estimated tax ([2026 AR1000ES](https://www.dfa.arkansas.gov/wp-content/uploads/2026_Final_AR1000ES_2.pdf)):** a declaration is due by 15 April if the estimated tax is expected to be $1,000 or more. Later installments are due 15 June, 15 September and 15 January. Someone who first becomes liable later in the year pays in fewer, larger installments. Farmers whose farm income is expected to be at least two-thirds of gross income may pay by the 15th day of the second month after the year ends.
+- **No underestimate penalty ([AR2210 instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR2210_Instructions.pdf))** if the tax shown on the return is less than $1,000. None either if the client had no tax liability in a preceding 12-month tax year and was an Arkansas resident all of that year. The Commissioner can also waive it for casualty, disaster or other unusual circumstances, or where the client retired after age 62 or became disabled and the underpayment had reasonable cause.
+- **Payment:** online through ATAP (atap.arkansas.gov), or by check with voucher AR1000V.
+- **Federal changes:** if the IRS changes net taxable income, file an amended Arkansas return within 180 days of the IRS notice and demand. If you do not, the statute of limitations stays open for three years on that year.
+- **Refund claims:** within three years of filing or two years of payment, whichever is later.
+
+### 2025 returns (tax year 2025, being filed now) ([2025 brackets](https://www.dfa.arkansas.gov/wp-content/uploads/2025_TaxBrackets.pdf))
+
+- **Rates:** Act 1 of the Second Extraordinary Session of 2024 set the top rate at 3.9%. The 2025 indexed brackets are 0% to $5,599; 2% from $5,600; 3% from $11,200; 3.4% from $16,000; and 3.9% from $26,400 to $94,700. Above $94,700, the upper table is 2% on the first $4,700 and 3.9% above, with bracket adjustments up to $97,800. For $100,001 and over: $3,809 + 3.9% of the excess over $100,000.
+- **Use the table.** DFA says a formula result "must match the table exactly", and the table is worked at the midpoint of each $100 band.
+- **Standard deduction 2025 ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)):** $2,470 (single, head of household, surviving spouse, and each spouse filing separately); $4,940 married filing jointly.
+- **Additional tax credit for qualified individuals, 2025 ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)):** up to $60 per person if net income on line 28 is $26,500 or less, stepping down to $0 above $27,600. The return must be timely filed.
+- **Dependents 2025 ([instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf)):** a dependent's gross income must be under $5,200. This limit does not apply to a child under 19, or to a full-time student under 24.
+- **Due dates for 2025 returns:** the original due date was 15 April 2026. Extended returns are due 15 November 2026. That date is a Sunday, so a return postmarked on Monday 16 November 2026 is timely under DFA's weekend rule.
+
+| 2025 filing threshold (full-year resident): must file if gross income is at least | Amount |
+| --- | --- |
+| Single | $14,644 |
+| Head of household or surviving spouse, 1 or no dependents | $20,821 |
+| Head of household or surviving spouse, 2 or more dependents | $24,819 |
+| Married filing jointly, 1 or no dependents | $24,696 |
+| Married filing jointly, 2 or more dependents | $28,723 |
+| Married filing separately | $9,470 |
+| Source | [2025 instructions](https://www.dfa.arkansas.gov/wp-content/uploads/2025_AR1000F_and_AR1000NR_Instructions.pdf) |
+
+## Completion checklist
+
+- [ ] Right form (AR1000F or AR1000NR) and the right year's table (the 2025 table or the 2026 table).
+- [ ] Income entered line by line. Exempt income left out (Social Security, active-duty pay), but active-duty pay shown on line 9.
+- [ ] Capital gains run through AR1000D: the exclusion applies to net long-term gain only, short-term gain is taxed in full, and the cap is applied.
+- [ ] Retirement exemption: one cap per taxpayer across plans, IRA only from age 59½, early deferred-comp/thrift withdrawals checked, military retirement handled first (remainder to employer plans; remainder to an IRA only after confirming with DFA).
+- [ ] Only AR1000ADJ adjustments; no deductible self-employment tax, no QBI.
+- [ ] Depreciation differences (bonus, section 179) reported on AR-OI and AR1000D.
+- [ ] Low Income Table vs Regular Table chosen correctly, and both spouses on the same method.
+- [ ] Personal credits counted: taxpayer, spouse, dependents, 65+, blind, deaf, and HOH or surviving spouse.
+- [ ] Part-year or nonresident: tax computed on full-year income, then prorated by the column C ratio, with a copy of federal Form 1040 pages 1 and 2 attached.
+- [ ] Other-state credit only for residents, with a signed copy of the other state's return.
+- [ ] Estimated tax paid against the lesser of this year's percentage test or last year's liability; AR2210 or AR2210A attached if a penalty or exception applies.
+- [ ] Extension box checked if extended. Balance paid by 15 April.
+- [ ] Before filing a 2026 return: check DFA's 2026 instructions for the final tax table, standard deduction, filing thresholds and any P.L. 119-21 changes.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ar-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ar-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-25. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ar-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ar-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

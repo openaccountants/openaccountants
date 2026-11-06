@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BM"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bermuda Company Formation & Entity Choice
@@ -30,24 +28,6 @@ Bermuda companies are formed and regulated under the Companies Act 1981, adminis
 - **Directors** — At least one director required; companies must also have a secretary and a resident representative or local presence as required ((confirm current director/officer minimums))  _(Companies Act 1981 (https://www.gov.bm/limited-companies))_
 - **Core annual compliance** — Pay annual government fee (January), hold an AGM (or waive by resolution), maintain statutory registers and beneficial ownership register, and file economic substance declaration where applicable  _(Companies Act 1981; Economic Substance Act 2018 (https://www.gov.bm/department/registrar-companies))_
 - **Economic substance** — Entities carrying on relevant activities must meet economic substance requirements and file an annual economic substance declaration  _(Economic Substance Act 2018 (https://www.gov.bm/department/registrar-companies))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "CY"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cyprus VAT return: rates, registration, the return and penalties (2026)
@@ -307,24 +304,6 @@ expected:
 | Tax Department, General VAT Guide (Information Leaflet 10, November 2001) | https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf | 2026-10-02 |
 
 Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

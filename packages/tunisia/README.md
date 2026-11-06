@@ -10,12 +10,15 @@
 3. `irpp-calculation.md`
 4. `tn-company-formation.md`
 5. `tn-corporate-income-tax.md`
-6. `tn-income-tax.md`
-7. `tn-payroll-social.md`
-8. `tn-tax-overview.md`
-9. `tunisia-vat.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+6. `tn-cross-border.md`
+7. `tn-income-tax.md`
+8. `tn-payroll-social.md`
+9. `tn-tax-overview.md`
+10. `tn-transfer-pricing.md`
+11. `tunisia-vat.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

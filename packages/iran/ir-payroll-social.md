@@ -4,10 +4,10 @@ description: "Source-cited draft: payroll & social contributions for Iran (tax y
 jurisdiction: IR
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+status: needs_sources
+domain: payroll
 ---
 
 # Iran Payroll & Social Contributions
@@ -23,21 +23,3 @@ Social insurance is administered by the Social Security Organization (SSO) under
 - **Statutory minimum wage (FY1404)** — (approx — confirm FY1404 figure) IRR (Set annually by the Supreme Labour Council; the FY1404 monthly minimum base wage should be confirmed against the latest Council resolution)  _(Labour Law of Iran; Supreme Labour Council resolution (FY1404))_
 - **Salary tax withholding (PAYE-equivalent)** — Employers withhold monthly salary tax under Article 85 and remit to INTA within 30 days  _(Direct Taxes Act (DTA), Article 86)_
 - **SSO remittance deadline** — Employers file a monthly payroll list with the SSO and pay both employer and employee shares by the end of the following month ((approx — confirm exact monthly deadline))  _(Social Security Law (SSO))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

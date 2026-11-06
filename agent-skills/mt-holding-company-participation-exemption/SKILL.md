@@ -7,13 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-holding-company-participation-exemption"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-10-05"
-  authored_by: "Michael Cutajar, CPA, ACCA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-04"
 ---
 
 # Malta holding companies: participation exemption, tax refunds and dividends to the family
+
+**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/mt-holding-company-participation-exemption.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
 Figures are for tax year 2026. Malta taxes by year of assessment, so income of calendar 2026 is taxed in year of assessment 2027. This Guide covers a company registered in Malta that holds shares for a family: what counts as a participating holding, when its dividends and gains are exempt, the alternative of paying the company rate and letting the shareholder claim a refund, the tax accounts that decide which route a dividend takes, the tax deducted from untaxed dividends paid to the family, and the elective fifteen-cent final tax. Every figure sits in a table that names its page on legislation.mt. The Acts print most rates and fractions in words; this Guide keeps them in words. Pages were read on 4 October 2026.
 
@@ -46,7 +45,7 @@ This Guide does not cover sales of Malta property or the general capital gains r
 
 ## Participating holding (article 2(1))
 
-A holding is a participating holding where ANY ONE of these routes is met (the Act joins them with "or"):
+First apply the article 2(1) definition of **equity holding**: the company must not be a property company, and the holding must carry at least two equity rights (votes, distributable profits, winding-up assets), subject to the Commissioner's express determination power. A five-percent stake alone does not bypass this gate. Then a holding is a participating holding where ANY ONE of these routes is met (the Act joins them with "or"):
 
 - (a) the company "holds directly at least five percent of the equity shares" of a company whose capital is divided into shares, and the holding gives at least five percent of any two of: votes, profits available for distribution, and assets available on a winding up;
 - (b) the company is an equity shareholder and is entitled "at its option to call for and acquire the entire balance of the equity shares" it does not hold, to the extent the law of the subsidiary's country allows;
@@ -159,7 +158,7 @@ Rules, from the [Final Income Tax Without Imputation Regulations, S.L. 123.217](
 
 WHEN IT CAN BEAT THE REFUND ROUTE for a Maltese-resident family, on the wording above:
 
-- Refunds arise only when a dividend is paid and the registered shareholder claims. Profits kept in the company bear the full article 56(6) rate until then. Under the election the company pays the lower final rate whether or not it distributes (subject to the floor below). A family that reinvests profits in the company for years gains on cash flow.
+- Refunds arise only when a dividend is paid and the registered shareholder claims. Profits kept in the company bear the full article 56(6) rate until then. Under the election the company pays the lower final rate whether or not it distributes (subject to the floor below). A cash-flow benefit on retained profits is conditional on establishing the regulation 3(4)(a) floor; it does not follow solely from retaining the profit.
 - The floor stops the election from ever costing less than the ordinary tax less the refunds the shareholders could claim. Where shareholders could claim six-sevenths, the floor is below the elective tax, so the elective tax stands, and on distributed profits it costs more than the refund route (hypothetical 3 below).
 - The election does not help income the Act already exempts (participation exemption) or income already taxed at a final rate.
 - Whether Malta-resident individual shareholders can in practice claim and keep article 48(4A) refunds decides the comparison. See "Ask the client first".
@@ -255,7 +254,44 @@ If one sibling were not resident in Malta and not owned or controlled by an indi
 - Refer controlled foreign company questions to `cfc-and-substance-rules-compared` and residence or substance questions to `mt-company-residence-and-substance`.
 - Quote the company rate as the Act prints it, "thirty-five cents (0.35) on every euro", and the refunds as the fractions in words.
 
-## Sources
+## Executable checks of the distributed-profit hypotheticals
+
+Hypothetical 2 assumes the shareholder is registered and entitled to the six-sevenths refund, the income is eligible Maltese-taxed-account trading profit, and it is distributed. Hypothetical 3 additionally assumes the elective base and refund-entitlement floor have been established. No resident-shareholder or retained-profit ambiguity is resolved by these checks.
+
+```oa-check
+name: Distributed trading profit with established six-sevenths entitlement
+inputs:
+  profit: 100000
+steps:
+  - company_tax: profit * 0.35
+  - refund: company_tax * 6 / 7
+  - tax_left: company_tax - refund
+expected:
+  company_tax: 35000
+  refund: 30000
+  tax_left: 5000
+```
+
+```oa-check
+name: Elective final tax conditional on the established five-percent floor
+inputs:
+  profit: 100000
+  ordinary_tax: 35000
+  claimable_refund: 30000
+steps:
+  - floor: ordinary_tax - claimable_refund
+  - elective_tax: profit * 0.15
+  - payable: max(floor, elective_tax)
+  - extra_vs_refund_route: payable - floor
+expected:
+  floor: 5000
+  elective_tax: 15000
+  payable: 15000
+  extra_vs_refund_route: 10000
+```
+
+
+## Historical source references
 
 - [Income Tax Act, Cap. 123](https://legislation.mt/eli/cap/123/eng/pdf): article 2(1) (participating holding, the five tax accounts), article 12(1)(c)(ii) and (u), article 56(6), articles 61 to 68.
 - [Income Tax Management Act, Cap. 372](https://legislation.mt/eli/cap/372/eng/pdf): article 48(4), (4A), (5), (6), (7) and (10).
@@ -263,24 +299,18 @@ If one sibling were not resident in Malta and not owned or controlled by an indi
 - [Notional Interest Deduction Rules, S.L. 123.176](https://legislation.mt/eli/sl/123.176/eng/pdf): rules 2 to 5.
 - [EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187](https://legislation.mt/eli/sl/123.187/eng/pdf): regulation 7.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Official provision / guidance | URL | Read on | Scope |
+|---|---|---|---|
+| Cap123 art2 equityholding | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| SL123.217 reg3(4)(a) | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap372 art48(4A) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 
-## Talk to a verified accountant
+Prior source-read dates remain historical; this list does not refresh unrelated claims.
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-05. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-holding-company-participation-exemption` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-holding-company-participation-exemption. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-holding-company-participation-exemption` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-holding-company-participation-exemption. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -4,11 +4,11 @@ description: "Source-cited draft: company formation & entity choice for Malaysia
 jurisdiction: MY
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: MUHAMMAD HANIS MAT HUSSIN
-review_status: current
-trust_label: Checked by MUHAMMAD HANIS MAT HUSSIN
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "MUHAMMAD HANIS MAT HUSSIN"
+reviewed_on: 2026-11-03
+tier: 1
+domain: formation
 ---
 
 # Malaysia Company Formation & Entity Choice
@@ -27,21 +27,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Audited financial statements** — Must be prepared and lodged with SSM; first within 18 months of incorporation, then within 6 months of financial year-end, lodged within 30 days of circulation to shareholders  _(Companies Act 2016)_
 - **Audit exemption for qualifying small companies** — Dormant, zero-revenue, and threshold-qualified small companies may be exempt from statutory audit (subject to SSM criteria) ((approx — confirm current revenue/asset/employee thresholds))  _(Companies Act 2016 / SSM Practice Directives)_
 - **Tax registration after incorporation** — Register for an income tax file number with LHDN; register for SST with RMCD if thresholds are met; register employees with EPF/SOCSO/EIS  _(Income Tax Act 1967 / Sales Tax Act 2018 / Service Tax Act 2018)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

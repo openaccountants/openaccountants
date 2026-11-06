@@ -7,15 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gt-company-formation.md`
-4. `gt-corporate-income-tax.md`
-5. `gt-tax-overview.md`
-6. `guatemala-income-tax.md`
-7. `guatemala-iva.md`
-8. `guatemala-payroll.md`
-9. `guatemala-social-contributions.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+3. `README.md`
+4. `gt-company-formation.md`
+5. `gt-corporate-income-tax.md`
+6. `gt-tax-overview.md`
+7. `guatemala-income-tax.md`
+8. `guatemala-iva.md`
+9. `guatemala-payroll.md`
+10. `guatemala-social-contributions.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## How to use
 

@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/india-formation"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-10-17"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-06"
 ---
 
 # Forming a Company or LLP in India
@@ -44,7 +41,7 @@ This Guide covers setting up a private limited company, a One Person Company (OP
 
 Sources for this table: sections 2(62) and 2(68), the One Person Company and private company definitions (ICAI study material, chapter 1: https://resource.cdn.icai.org/74729bos60488-m1-cp1.pdf); LLP sections 6, 7 and 34 (ICAI study material, chapter 12: https://resource.cdn.icai.org/74743bos60488-m3-cp12.pdf); annual return forms under rule 11 (ICAI study material, chapter 7: https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf); auditor appointment under section 139 (ICAI study material, chapter 10: https://resource.cdn.icai.org/74738bos60488-m2-cp10.pdf).
 
-A sole proprietorship is not a company or an LLP and is not covered by this Guide; its income is taxed as the owner's income (see `in-income-tax`).
+A sole proprietorship is not a company or an LLP and is not covered by this Guide; its income is taxed as the owner's income (see `india-income-tax`).
 
 **Which form to choose.** A private limited company is the usual vehicle for a business that will raise equity or bring in foreign investors. Rule 3 limits who may form an OPC (check it). An LLP suits a professional or partnership business that wants limited liability without share capital. This is a practical default, not a legal rule; the client's facts decide.
 
@@ -303,24 +300,6 @@ This Guide and its outputs are provided for informational and computational purp
 
 The most up-to-date version of this Guide is maintained on the OpenAccountants site.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-17. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

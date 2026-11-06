@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "NL"
   tax_year: "2026"
   last_updated: "2026-09-28"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Administrative obligations for employers in the Netherlands — 2026
@@ -136,24 +133,6 @@ The following are hypothetical checks, not complete payroll calculations or prof
 - Deliver a dated employer setup file, complete onboarding checklist, payroll/return/payment reconciliation, correction register, annual-statement checklist and document-specific retention schedule. Identify the period, source version, unresolved facts and responsible approver. Obtain approval before filing or paying.
 
 - Stop for missing identity/data without an established lawful exception, unresolved work permission, uncertain residence/insurance or employment status, unsubstantiated tax-free allowances, unexplained payroll balances, rejected returns or a threatened deadline. Refer these to the responsible payroll specialist, accountant or tax adviser; do not manufacture values or silently assume eligibility. Keep a record of the resolution and whether earlier periods also need correction.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

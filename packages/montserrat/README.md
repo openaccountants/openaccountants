@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ms-corporate-income-tax.md`
-4. `ms-nonresident-withholding.md`
-5. `ms-social-security-contributions.md`
+3. `README.md`
+4. `ms-corporate-income-tax.md`
+5. `ms-nonresident-withholding.md`
+6. `ms-social-security-contributions.md`
 
 ## How to use
 

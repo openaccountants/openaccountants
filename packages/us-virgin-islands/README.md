@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `vi-bona-fide-residence.md`
-4. `vi-gross-receipts-tax.md`
-5. `vi-individual-income-tax-filing.md`
+3. `README.md`
+4. `vi-bona-fide-residence.md`
+5. `vi-gross-receipts-tax.md`
+6. `vi-individual-income-tax-filing.md`
 
 ## How to use
 

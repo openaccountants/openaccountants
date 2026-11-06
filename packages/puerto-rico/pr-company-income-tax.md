@@ -2,16 +2,14 @@
 name: pr-company-income-tax
 description: >
   Puerto Rico regular company income tax reference based on the official legislative-library code revised in May 2026. Separates the normal tax base from the surtax base, sets out the graduated surtax and controlled-group deduction allocation, and explains why alternative minimum tax requires its own calculation. Includes worked examples and the statutory return and payment framework. Identifies special-decree deadlines and financial-statement requirements without treating every company as an ordinary corporation. Later amendments, current administrative filing instructions, incentives, losses, credits and independent accountant review remain outstanding. This source-cited draft does not establish comprehensive Puerto Rico coverage.
-version: 0.1
+version: 0.2
 jurisdiction: PR
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
+last_updated: 2026-11-01
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Puerto Rico: regular company income tax
@@ -69,23 +67,3 @@ Section 1061.15(a)(4) requires the prescribed audited financial statements when 
 ## Remaining review
 
 Checked 22 October 2026. Complete the post-May amendment audit, obtain current filing circulars and forms, and cover losses, incentives, credits, distributions, withholding, related parties and enforcement. No independent accountant review has occurred. These company-tax rules do not settle municipal, sales/use, property, payroll or federal obligations.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

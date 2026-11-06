@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "KE"
   tax_year: "2025"
   last_updated: "2026-07-22"
-  authored_by: "Julian Njoroge Maina, CPA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Julian Njoroge Maina"
 ---
 
 # Setting up a company in Kenya from abroad: how I do it
@@ -103,24 +101,6 @@ A founder abroad wants a wholly foreign-owned Kenyan private company: one direct
 - FFP Consult, Set up your company in Kenya from abroad: https://ffp.co.ke/services/starting-a-company-in-kenya-as-a-foreigner
 
 > Contributed by Julian Njoroge Maina, 25241.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

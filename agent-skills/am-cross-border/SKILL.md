@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AM"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Armenia corporate and personal cross-border preparation v0.2
@@ -275,24 +273,6 @@ Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https:
 **Not yet confirmed:** a separate current unconditional treaty-refund cash-transfer clock and complete internal Treasury posting workflow; the actual taxpayer's treaty/MLI entitlement requires its own facts and operative instruments. The current Code 304/SRC specimen claimant, approval and account-instruction route is supplied above. The ordinary personal source/property, agent/no-agent filing and departure method is supplied above. Specialist treaty-rate tables, restructurings, exit/CFC, securities and social-security instruments remain separate scope. No live return/refund/certificate or named accountant attestation is claimed; independent source-review records are preserved in the country research.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

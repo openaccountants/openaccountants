@@ -8,13 +8,10 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  reviewed_by: "James Power"
 ---
 
 # UK Dividends: income tax on dividends and director pay (2026-27)
-
-> Source-cited draft: not reviewed by an accountant.
 
 ## Who this applies to
 
@@ -227,24 +224,6 @@ expected:
 | HMRC, interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 
 Not yet confirmed: company-law formalities for a valid dividend waiver (v1.2 said a deed before the dividend is declared); settlements treatment of a waiver in favour of a minor child or other relative; UK withholding on dividends paid to non-residents; dividends in specie (v1.2: market value); returns of capital not being income; corporate bond returns as savings interest; tax deducted from REIT property income distributions; GBP conversion at the payment-date rate; foreign withholding rates other than the US (see `uk-foreign-tax-and-withholding`).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

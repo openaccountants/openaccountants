@@ -8,13 +8,9 @@ metadata:
   jurisdiction: "BG"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bulgaria: personal income tax (ДДФЛ), tax year 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Personal income tax is set by the Personal Income Taxes Act (Закон за данъците върху доходите на физическите лица, ZDDFL). Article numbers below refer to the lex.bg consolidated text, amended to State Gazette 85/2026. The tax year is the calendar year (art. 15). The National Revenue Agency (NRA, НАП) administers the tax.
 
@@ -201,24 +197,6 @@ expected:
 Not yet confirmed: the gazette text of the 2026 State Budget Act provision that sets the child reliefs and their monthly use in euro (the amounts above come from the NRA page; the ZDDFL itself still reads BGN 200, 400 and 600 and BGN 2,000; the Act was not reachable on dv.parliament.bg or lex.bg on 2026-10-24); the statutory interest rate on late tax after the euro changeover; whether DOPK fines can apply alongside the ZDDFL fines; the full conditions of the art. 13(1)(1) home-sale exemption; and any rate changes the Ministry of Finance has proposed for later years.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,13 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ga-company-formation.md`
-4. `ga-corporate-income-tax.md`
-5. `ga-payroll-social.md`
-6. `ga-tax-overview.md`
-7. `ga-vat-gst.md`
-8. `payroll-workflow-base.md`
-9. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ga-annual-property-tax.md`
+5. `ga-company-formation.md`
+6. `ga-corporate-income-tax.md`
+7. `ga-cross-border.md`
+8. `ga-income-tax.md`
+9. `ga-payroll-social.md`
+10. `ga-tax-overview.md`
+11. `ga-transfer-pricing.md`
+12. `ga-vat-gst.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

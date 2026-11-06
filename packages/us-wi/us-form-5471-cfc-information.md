@@ -4,13 +4,12 @@ description: US federal content skill for Form 5471 — US Information Return fo
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: James Wallach
-reviewed_by: Christopher Aryee
-review_status: current
-trust_label: Checked by Christopher Aryee
 source_checked: 2026-10-17
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Christopher Aryee"
+reviewed_on: 2026-11-03
+tier: 1
+domain: formation
 ---
 
 # US Form 5471 CFC Information
@@ -396,21 +395,3 @@ Three practitioner disciplines reduce penalty exposure to near-zero:
 3. **High-tax election analysis** — every CFC with effective foreign tax above 18.9% should have a documented analysis of the §954(b)(4) election, with the run-the-math comparison of (a) GILTI + §250 + §960 vs. (b) high-tax exclusion + §245A. The wrong choice — silently defaulting to "no election" because no one ran the analysis — costs real money on high-tax-jurisdiction CFCs.
 
 A reviewer Circular 230 sign-off on a Form 5471 should confirm: filing category correctly identified, all required schedules present, Schedule I reconciles to Schedule J PTEP movements, Schedule E-1 deemed-paid FTC ties to Schedule Q income groups, Schedule M intercompany transactions reconcile to the underlying intercompany agreements, the §954(b)(4) election (or its absence) is documented with the effective rate computation, and any §962 election by an individual shareholder is signed and attached. The skill defers all amount computations to the underlying corporate accounting records and the reviewer's substantive review; this skill provides the structural map.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

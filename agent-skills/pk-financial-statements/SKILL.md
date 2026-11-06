@@ -24,7 +24,6 @@ metadata:
 | Audit | Companies above size thresholds require a statutory audit; small private companies may be exempt (verify) |
 | Authorities | FBR (tax); SECP (companies) |
 | Currency | PKR |
-| Quality tier | Research-verified — pending sign-off by a Pakistani practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Who prepares what (Tier 1)

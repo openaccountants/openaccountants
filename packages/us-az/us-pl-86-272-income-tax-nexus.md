@@ -4,11 +4,9 @@ description: Tier 2 US federal content skill for Public Law 86-272 (15 USC §§3
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # P.L. 86-272 and state income tax nexus for out-of-state sellers
@@ -252,21 +250,3 @@ These cases use hypothetical amounts. Each is for tax year 2026 unless it says o
 - [ ] Throwback, throwout and combined-group effects checked in the origin state and the group's states.
 - [ ] Minimum tax and filing duties checked even where protected.
 - [ ] Items marked **check** resolved or disclosed to the client in writing.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

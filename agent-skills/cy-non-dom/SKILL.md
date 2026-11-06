@@ -8,14 +8,9 @@ metadata:
   jurisdiction: "CY"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cyprus non-domicile status and Special Defence Contribution (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 Non-dom status in Cyprus is about one tax: the Special Defence Contribution (SDC) on dividends and interest. It does not change income tax and it does not change the General Healthcare System (GHS, GESY) contribution. Cyprus taxes on the calendar year. The 2026 reform (Law 245(I)/2025, in force 1 January 2026) cut the SDC rate on dividends for individuals, abolished SDC on rent, ended the deemed dividend distribution for 2026 profits onward and added Article 3D, a fixed-sum option for long-stay residents. Article numbers are to the Greek consolidated SDC Law on CyLaw. Income tax is in `cyprus-income-tax`; residence detail for leavers and non-residents in `cy-cross-border`; GHS rates in `cyprus-social-contributions`.
 
@@ -196,24 +191,6 @@ expected:
 | Tax Department, FAQs on the 2026 reform for individuals (11 May 2026; 2026 return due 31 July 2027) | https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf | 2026-10-24 |
 
 Not yet confirmed: the Tax Department pages on gov.cy (residency page, Form TD 631, the 2026 presentation, the CGT page) blocked automated reads on 26 October 2026, so their figures and form names are carried from the 24 October 2026 read and not re-read; whether a foreigner can form a domicile of choice in Cyprus before 17 years (the law and the page are silent); whether the 17% transitional rate reaches dividends from foreign companies out of pre-2026 profits (art. 3(1)(α) proviso (ii) names Cyprus-resident companies only); CGT indexation and the agricultural-land and main-residence exemptions; the 2026 income tax bands and the 20%, 25% and 50% first-employment exemptions from v1.0 are now only in `cyprus-income-tax` (not re-read here); Circular 02/2026 on Article 3D (named in v1.0, not re-read); the Tax Department presentation's statement (v1.0) that a person who applies late for Article 3D, or pays late, pays SDC on actual income for that year and may apply again the next year (the SDC Law says only that a missed payment means Article 3D applies for none of the five years; whether a fresh application can then start a new period the next year is not stated in art. 3D).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

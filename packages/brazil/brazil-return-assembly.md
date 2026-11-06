@@ -5,11 +5,10 @@ version: 1.0
 jurisdiction: BR
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: orchestrator
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # BR Return Assembly
@@ -459,21 +458,3 @@ O output final consiste em três arquivos:
 Este skill e seus outputs são fornecidos apenas para fins informativos e de cálculo e não constituem aconselhamento tributário, jurídico ou financeiro. A Open Accountants e seus colaboradores não aceitam responsabilidade por quaisquer erros, omissões ou resultados decorrentes do uso deste skill. Todos os outputs devem ser revisados e assinados por um profissional qualificado (como contador registrado no CRC, advogado tributarista ou prático licenciado equivalente em sua jurisdição) antes do envio ou da tomada de ação.
 
 A versão mais atualizada e verificada deste skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para acessar a versão mais recente, solicitar revisão profissional por um contador licenciado e acompanhar atualizações conforme a legislação tributária mudar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

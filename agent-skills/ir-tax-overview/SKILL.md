@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "IR"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Iran Tax Overview
@@ -26,24 +24,6 @@ metadata:
 - **Does VAT exist?** — Yes — standard VAT rate is 9% percent  _(Value Added Tax Act (Permanent VAT Act, in force from 2022))_
 - **Corporate annual return deadline** — Within 4 months after the end of the fiscal year (e.g. by ~22 July for a fiscal year ending 20 March) (approx — confirm exact Gregorian date)  _(Direct Taxes Act (DTA), Article 110)_
 - **Individual (business income) return deadline** — By the end of the fourth month after year-end — typically end of Tir (~22 July) (approx — confirm exact date)  _(Direct Taxes Act (DTA), Article 100)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -4,10 +4,9 @@ description: "Source-cited draft: tax overview for Fiji (tax year 2025) — rate
 jurisdiction: FJ
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Fiji Tax Overview
@@ -24,21 +23,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Does Fiji have a VAT/GST** — Yes — VAT applies; standard rate reduced to 12.5% effective 1 August 2025 %  _([Value Added Tax Act 1991](https://sovos.com/regulatory-updates/vat/beginning-august-1-2025-the-republic-of-fiji-has-announced-that-it-is-reducing-the-standard-vat-rate-to-12-5/))_
 - **Annual income tax return filing deadline** — 31 March following the tax year (for taxpayers required to lodge) (approx — confirm; extensions and tax-agent lodgement programmes may apply)  _(Tax Administration Act 2009)_
 - **Other notable levies** — Environment and Climate Adaptation Levy (ECAL) on prescribed services and Social Responsibility Tax (SRT) on high incomes  _(Environment and Climate Adaptation Levy Act 2015)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

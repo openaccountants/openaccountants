@@ -4,12 +4,11 @@ description: Use this skill whenever asked about filing, invoicing, or submittin
 jurisdiction: ID
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: RILIA PUTRI, CA, CPA
-reviewed_by: RILIA PUTRI
-review_status: current
-trust_label: Checked by RILIA PUTRI
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "RILIA PUTRI"
+reviewed_on: 2026-11-03
+tier: 1
+domain: e-invoicing
 ---
 
 # ID Einvoice Coretax
@@ -18,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This skill is the **platform manual** for the Indonesian tax administration system. It explains how the buttons work and where the filings live. The substantive tax content (rates, base, deductions) is in the per-tax skills (`indonesia-vat`, `id-payroll-pph21`, etc.).
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -65,7 +64,6 @@ This skill is the **platform manual** for the Indonesian tax administration syst
 | Unified withholding | SPT Masa PPh Unifikasi (PPh 23/26/4(2)/15) |
 | Filing channels | Coretax web, Coretax Mobile, Coretax Form upload, PJAP host-to-host |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — Konsultan Pajak sign-off required |
 | Skill version | 1.0 |
 
 ### Conservative defaults
@@ -398,21 +396,3 @@ When Coretax behaves unexpectedly, prefer **document-and-retry** over **guess-an
 Provided for informational purposes only; not tax, legal, or financial advice. Open Accountants and its contributors accept no liability. Coretax behaviour, URLs, and procedures may change without notice — cross-check against the latest DJP `Pengumuman` on pajak.go.id. All outputs must be reviewed by a qualified Konsultan Pajak before lodgement.
 
 The most up-to-date version is maintained at openaccountants.com.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

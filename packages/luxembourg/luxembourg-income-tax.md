@@ -1,17 +1,16 @@
 ---
 name: luxembourg-income-tax
 description: "Luxembourg personal income tax for resident individuals and self-employed people (indépendants) for tax year 2026: the 23-band scale (0% to 42%), tax classes 1, 1a and 2, the employment fund surcharge (7%, or 9% above EUR 150,000 / 300,000), the CIS, CII, CI-CO2, CISSM and single-parent credits, expenses, depreciation (arts. 32 and 34), special expenses and CCSS contributions, Form 100 and Form 163 annual adjustment, quarterly advances, penalties and interest. Trigger on: impôt sur le revenu Luxembourg, modèle 100, décompte annuel 163, classe d'impôt, barème 2026, indépendant Luxembourg, avances trimestrielles. Out of scope: lu-cross-border, luxembourg-payroll, luxembourg-social-contributions, lu-corporate-tax."
-version: 0.4
+version: 0.5
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-27
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Luxembourg personal income tax: residents and the self-employed (2026) v0.4
@@ -292,24 +291,4 @@ expected:
 
 Not yet confirmed: the year-of-acquisition rule rests only on the Guichet.lu page (last changed 2018, and it still says depreciation cannot be deferred, which art. 32(1a) has allowed since 2017); neither the LIR nor an ACD circular states it, so a reviewer must confirm current ACD practice before a part-year charge is filed. Whether the ACD smooths the step from 7% to 9% surcharge just above EUR 150,000 / 300,000 on assessment (the ACD page shows a plain step). The AED rates page was last updated 28 December 2023, and the consolidated VAT law (LTVA) was not read for 2026.
 
-> Contributed by Ryan Duguid.
-
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

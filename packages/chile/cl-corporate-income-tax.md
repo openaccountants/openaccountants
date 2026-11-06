@@ -4,10 +4,9 @@ description: "Source-cited draft: corporate income tax for Chile (tax year 2025)
 jurisdiction: CL
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Chile Corporate Income Tax
@@ -27,21 +26,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Withholding tax on royalties to non-residents** — 30% general; 15% for software/patents/certain IP; standard (non-customised) software may be exempt %  _([LIR Art. 59 — Impuesto Adicional](https://taxsummaries.pwc.com/chile/corporate/withholding-taxes))_
 - **Monthly provisional payments (PPM)** — Monthly advance payments of FCT based on prior-year tax burden; SME PPM rates are halved for FY2025-2027  _([LIR Art. 84 — Pagos Provisionales Mensuales](https://orbitax.com/news/country/article/Chile-Extends-Reduced-Tax-Rate-59395))_
 - **Corporate annual return filing & payment deadline** — April of the year following the tax year (Operacion Renta), with monthly PPM credited (approx — confirm exact April date each year)  _([SII Operacion Renta](https://www.sii.cl))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

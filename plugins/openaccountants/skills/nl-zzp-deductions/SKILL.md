@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-zzp-deductions"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-26"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Netherlands: self-employed deductions and business reliefs (2026)
@@ -35,25 +32,25 @@ This skill takes a self-employed person's fiscal profit and works out the relief
 | Pregnancy: unworked hours that still count | the period of employee pregnancy and maternity leave (16 weeks on the Belastingdienst page) | 2026 | art. 3.6(5); same Belastingdienst page |
 | Zelfstandigenaftrek, below state pension (AOW) age at 1 January | EUR 1,200 | 2026 | art. 3.76(2), https://wetten.overheid.nl/BWBR0011353/2026-02-21 ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 |
 | Zelfstandigenaftrek (for a 2025 return) | EUR 2,470 | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 |
-| Startersaftrek (added to the zelfstandigenaftrek) | EUR 2,123 | 2026 (also 2025) | art. 3.76(3); zelfstandigenaftrek-2026 page above |
+| Startersaftrek (added to the zelfstandigenaftrek) | EUR 2,123 | 2026 (also 2025) | art. 3.76(3); zelfstandigenaftrek-2026 page above Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 (tax year 2026) (read 2026-10-31) |
 | Zelfstandigenaftrek and startersaftrek at or above AOW age on 1 January | 50% (EUR 600 and EUR 1,062) | 2026 | art. 3.76(4); https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek |
-| Carry-forward of unused zelfstandigenaftrek | 9 years, oldest first | 2026 | art. 3.76(5) to (8) |
-| Aftrek speur- en ontwikkelingswerk (S&O), with at least 500 S&O hours | EUR 15,979 | 2026 | art. 3.77(1); Fiscale informatie 2026 ch. 8.3 |
-| S&O starter increase | EUR 7,996 | 2026 | art. 3.77(2) |
+| Carry-forward of unused zelfstandigenaftrek | 9 years, oldest first | 2026 | art. 3.76(5) to (8) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 (tax year 2026) (read 2026-10-31) |
+| Aftrek speur- en ontwikkelingswerk (S&O), with at least 500 S&O hours | EUR 15,979 | 2026 | art. 3.77(1); Fiscale informatie 2026 ch. 8.3 Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
+| S&O starter increase | EUR 7,996 | 2026 | art. 3.77(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
 | Meewerkaftrek, partner works 525 to under 875 / 875 to under 1,225 / 1,225 to under 1,750 / 1,750 or more hours | 1.25% / 2% / 3% / 4% of profit | 2026 | art. 3.78(2) |
 | Partner pay: deductible only if the pay is at least | EUR 5,000 | 2026 | art. 3.16(4); https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner |
-| Startersaftrek bij arbeidsongeschiktheid (reduced hours test 800 hours), by prior uses 0 / 1 / 2 | EUR 12,000 / 8,000 / 4,000, capped at profit | 2026 | art. 3.78a(3), (4) |
-| Stakingsaftrek (lifetime maximum, less earlier use) | EUR 3,630 | 2026 | art. 3.79(2), (4) |
+| Startersaftrek bij arbeidsongeschiktheid (reduced hours test 800 hours), by prior uses 0 / 1 / 2 | EUR 12,000 / 8,000 / 4,000, capped at profit | 2026 | art. 3.78a(3), (4) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
+| Stakingsaftrek (lifetime maximum, less earlier use) | EUR 3,630 | 2026 | art. 3.79(2), (4) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
 | MKB-winstvrijstelling, of profit after ondernemersaftrek | 12.7% | 2026 (also 2025) | art. 3.79a; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling |
-| Tariefsaanpassing: extra tax on deductions above the top-band threshold | 11.94% of the lower of the deductions and the excess over EUR 78,426 | 2026 | art. 2.10(2), (3) |
-| Effective maximum benefit rate of ondernemersaftrek and MKB-winstvrijstelling | 37.56% (2025: 37.48%) | 2026 | art. 2.10(1); zelfstandigenaftrek-2026 page; MKB page |
+| Tariefsaanpassing: extra tax on deductions above the top-band threshold | 11.94% of the lower of the deductions and the excess over EUR 78,426 | 2026 | art. 2.10(2), (3) Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen (tax year 2026) (read 2026-10-31) |
+| Effective maximum benefit rate of ondernemersaftrek and MKB-winstvrijstelling | 37.56% (2025: 37.48%) | 2026 | art. 2.10(1); zelfstandigenaftrek-2026 page; MKB page Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling (tax year 2026) (read 2026-10-31) |
 | KIA: total qualifying investment up to EUR 2,900 | nil | 2026 | art. 3.41(2), https://wetten.overheid.nl/BWBR0011353/2026-02-21 ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 |
-| KIA: EUR 2,901 to EUR 71,683 | 28% of the investment | 2026 | art. 3.41(2) |
-| KIA: EUR 71,684 to EUR 132,746 | EUR 20,072 | 2026 | art. 3.41(2) |
-| KIA: EUR 132,747 to EUR 398,236 | EUR 20,072 less 7.56% of the investment above EUR 132,746 | 2026 | art. 3.41(2) |
-| KIA: above EUR 398,236 | nil | 2026 | art. 3.41(2) |
+| KIA: EUR 2,901 to EUR 71,683 | 28% of the investment | 2026 | art. 3.41(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 (tax year 2026) (read 2026-10-31) |
+| KIA: EUR 71,684 to EUR 132,746 | EUR 20,072 | 2026 | art. 3.41(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 (tax year 2026) (read 2026-10-31) |
+| KIA: EUR 132,747 to EUR 398,236 | EUR 20,072 less 7.56% of the investment above EUR 132,746 | 2026 | art. 3.41(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 (tax year 2026) (read 2026-10-31) |
+| KIA: above EUR 398,236 | nil | 2026 | art. 3.41(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 (tax year 2026) (read 2026-10-31) |
 | KIA for a 2025 return | 28% from EUR 2,901 to EUR 70,602; EUR 19,769 to EUR 130,744; then less 7.56% of the excess; nil above EUR 392,230 | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/investeringsaftrek-2025/kleinschaligheidsinvesteringsaftrek-2025 |
-| KIA: minimum per asset | EUR 450 | 2026 | art. 3.45(2)(b) |
+| KIA: minimum per asset | EUR 450 | 2026 | art. 3.45(2)(b) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
 | Starter free depreciation (willekeurige afschrijving): ceiling on the year's qualifying investment | EUR 398,236 (the top of the KIA table) | 2026 | Uitvoeringsregeling willekeurige afschrijving 2001 art. 7, 8, https://wetten.overheid.nl/BWBR0012035/2025-01-01 ; art. 3.41(2) |
 | Disinvestment addition: disposals in the year above, within 5 years | EUR 2,900 | 2026 | art. 3.47(1), (2) |
 | Fiscale oudedagsreserve (FOR): new additions | none since 1 January 2023 | 2026 | art. 3.67 (repealed 1 January 2023); art. 10a.29 |
@@ -199,21 +196,21 @@ expected:
 |---|---|---|
 | Wet inkomstenbelasting 2001, art. 2.10, 3.6, 3.15 to 3.17, 3.20, 3.30a, 3.34, 3.41 to 3.47, 3.67, 3.74 to 3.79a, 3.150, 7.2, 10a.29 (version from 21 February 2026) | https://wetten.overheid.nl/BWBR0011353/2026-02-21 | 2026-10-24 |
 | Algemene wet inzake rijksbelastingen, art. 6, 8, 9, 30fa to 30fc, 67a | https://wetten.overheid.nl/BWBR0002320/2026-01-01 | 2026-10-24 |
-| Belastingdienst, Fiscale informatie 2026 ch. 8, Ondernemersaftrek en investeringsaftrek | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek | 2026-10-24 |
-| Belastingdienst, Zelfstandigenaftrek 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 | 2026-10-24 |
+| Belastingdienst, Fiscale informatie 2026 ch. 8, Ondernemersaftrek en investeringsaftrek | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek | 2026-10-31 |
+| Belastingdienst, Zelfstandigenaftrek 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 | 2026-10-31 |
 | Belastingdienst, Zelfstandigenaftrek 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 | 2026-10-24 |
 | Belastingdienst, Startersaftrek | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/startersaftrek | 2026-10-24 |
 | Belastingdienst, Verrekenen niet-gerealiseerde zelfstandigenaftrek | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/ondernemersaftrek/zelfstandigenaftrek1/verrekenen_niet_gerealiseerde_zelfstandigenaftrek | 2026-10-24 |
 | Belastingdienst, Voorwaarden urencriterium | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium | 2026-10-24 |
 | Belastingdienst, Wanneer bent u ondernemer voor de inkomstenbelasting? | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/wanneer_bent_u_ondernemer_voor_de_inkomstenbelasting/ | 2026-10-24 |
-| Belastingdienst, Mkb-winstvrijstelling | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling | 2026-10-24 |
-| Belastingdienst, Kleinschaligheidsinvesteringsaftrek 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 | 2026-10-24 |
+| Belastingdienst, Mkb-winstvrijstelling | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling | 2026-10-31 |
+| Belastingdienst, Kleinschaligheidsinvesteringsaftrek 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 | 2026-10-31 |
 | Belastingdienst, Kleinschaligheidsinvesteringsaftrek 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/investeringsaftrek-2025/kleinschaligheidsinvesteringsaftrek-2025 | 2026-10-24 |
 | Belastingdienst, Willekeurige afschrijving startende ondernemer | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/willekeurige_afschrijving/startende_ondernemer | 2026-10-24 |
 | Belastingdienst, Oudedagsreserve | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/fiscale_reserves/oudedagsreserve | 2026-10-24 |
 | Belastingdienst, Arbeidsbeloning aan fiscale partner | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner | 2026-10-24 |
 | Belastingdienst, Drempel beperkt aftrekbare kosten 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026 | 2026-10-24 |
-| Belastingdienst, Afbouw tarief aftrekposten bij hoog inkomen | https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen | 2026-10-24 |
+| Belastingdienst, Afbouw tarief aftrekposten bij hoog inkomen | https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen | 2026-10-31 |
 | Belastingdienst, Aangifte inkomstenbelasting voor ondernemers | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/aangifte_inkomstenbelasting_voor_ondernemers | 2026-10-24 |
 | Belastingdienst, Wanneer moet mijn aangifte inkomstenbelasting binnen zijn? | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wanneer-moet-ik-aangifte-doen | 2026-10-24 |
 | Belastingdienst, Uitstel aanvragen belastingaangifte | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/kan-ik-nog-uitstel-aanvragen-belastingaangifte | 2026-10-24 |
@@ -229,24 +226,6 @@ Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Ka
 
 Not yet confirmed: the commencement clause of the bill as introduced (art. LXIII(1)(a)) lists art. I part G among the parts backdated to 1 January 2026, which conflicts with the memorandum; this skill follows the law in force (EUR 2,123 for 2026) until the enacted text settles it; the statute says the meewerkaftrek partner works "without any remuneration" while the Belastingdienst also accepts pay under EUR 5,000, so that point rests on the authority's reading; the 70% figure for supportive work in a related-person partnership comes from the Belastingdienst page, not the statute.
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-zzp-deductions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-zzp-deductions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-zzp-deductions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-zzp-deductions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

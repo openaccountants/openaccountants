@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "US-KS"
   tax_year: "2026"
   last_updated: "2026-10-29"
-  authored_by: "Jeff Watts"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Jeff Watts"
 ---
 
 # Kansas social contributions, tax year 2026
@@ -111,24 +109,6 @@ expected:
 Not yet confirmed: the 2026 Kansas UI taxable wage base (recent years were described in v0.1 as in the $15,000 range); the experience-rated contribution schedule and the new-employer rate for the first coverage years; that Kansas imposes no employee UI premium; any suspense or financing surcharge (historically added in years with a federal loan balance); the coverage threshold for registration; aggregation of successors and common-owner groups for experience rating; FUTA credit-reduction status for 2026; the quarterly UI report and payment due dates (v0.1: last day of the month after each quarter); the annual rate notice and its protest window; the annual wage report for experience rating with the Q4 filing; late-report and late-payment penalty and interest percentages and misclassification penalty tiers; Kansas adoption of the federal four-part localization-of-work tests for remote workers; which agency administers Kansas UI (v0.1 said the Labor Services division of KDOR, but KDOR's business page does not show it and the UI program pages are on dol.ks.gov); and the statutory citation (v0.1 cited K.S.A. 79-27 and 79-27-105, whose kslegislature.org page served only a JS shell; the Kansas Employment Security Law in K.S.A. chapter 44 should be checked).
 
 > Contributed by Jeff Watts.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

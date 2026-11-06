@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/hu-corporate-tax"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Hungary corporate income tax (társasági adó): 2026
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 The law is Act LXXXI of 1996 on corporate tax and dividend tax (the Tao. tv.). The tax authority is the Nemzeti Adó- és Vámhivatal (NAV). Section references below come from NAV's own guidance, which cites the Act paragraph by paragraph. The rate (19. §), the loss rules (17. §), the interest limitation threshold (8. § (1) j)), the development reserve (7. § (1) f), (15)), the group rules (2/A. §, 17. §) and the advances (26. §) were read in the official Nemzeti Jogszabálytár at njt.jog.gov.hu, in the version in force from 1 October 2026 (the short address njt.hu refused connections on 2026-10-22 and 2026-10-23).
 
@@ -225,26 +220,6 @@ expected:
 
 Not yet confirmed: the group application window, which is in the Art. (Act CL of 2017) and taken from NAV information sheet 41; the Pillar Two revenue threshold and start dates in Hungarian law; the full CFC definition in Tao. tv. 4. § 11.; individual municipalities' HIPA rates and HIPA filing dates.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hu-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hu-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

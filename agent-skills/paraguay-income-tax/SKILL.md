@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "PY"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Paraguay Personal Income Tax (IRP) -- Self-Employed
@@ -34,7 +32,6 @@ metadata:
 | Labour / minimum wage authority | MTESS -- Ministerio de Trabajo, Empleo y Seguridad Social |
 | Filing portal | Marangatú (electronic; RG N° 90/2021) |
 | Filing deadline | Annual return + payment in **March** of the following year; exact day set by last digit of RUC ("calendario perpetuo") [PwC; DNIT IRP] |
-| Validated by | Pending -- requires sign-off by a Paraguayan licensed accountant / DNIT-registered professional |
 | Validation date | Pending |
 | Skill version | 0.1 |
 
@@ -607,26 +604,6 @@ Expected: Employee 11% = ₲1,100,000; employer 17% = ₲1,700,000; total 28% = 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

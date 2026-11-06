@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "James Wallach"
   reviewed_by: "Christopher Aryee"
-  trust_label: "Checked by Christopher Aryee"
-  review_status: "current"
 ---
 
 # US Crypto Reporting
@@ -46,24 +43,6 @@ metadata:
 - **Form 709 required when a gift exceeds the annual exclusion** — $18,000 per donee for 2024; $19,000 per donee for 2025 USD (A gift of digital assets to a single donee (other than a U.S.-citizen spouse) that exceeds the annual gift tax exclusion requires the donor to file Form 709 (U.S. Gift Tax Return), generally due April 15 of the following year. Filing may be required even if no gift tax is owed (offset by the lifetime exemption).)  _([IRC §§ 2503, 6019; 2025 Instructions for Form 709; Rev. Proc. 2024-40](https://www.irs.gov/instructions/i709))_
 - **FMV substantiation and contemporaneous records** — Taxpayers must keep records sufficient to establish the positions taken on their returns, including documentation of receipt, sale, exchange, or other disposition of digital assets and the fair market value (in U.S. dollars) of the digital assets at the time of each transaction. FMV is generally determined by converting at the exchange rate / spot price in a reasonable manner that is consistently applied.  _([IRC § 6001; IRS FAQs on digital asset transactions (Q on records); Notice 2014-21](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions))_
 - **Specific identification — contemporaneous records** — To use specific identification of which digital asset units were disposed of (rather than the default FIFO under Rev. Proc. 2024-28), the taxpayer must have records showing, at the time of the transaction, the unit's acquisition date and time, basis and FMV at acquisition, and the date, time, FMV, and proceeds at disposition. Absent adequate identifying records, the default ordering applies. Rev. Proc. 2024-28 requires wallet-by-wallet (per-account) basis tracking beginning January 1, 2025. (Wallet-by-wallet allocation/safe harbor under Rev. Proc. 2024-28 effective for 2025)  _([Treas. Reg. § 1.1012-1(j); Rev. Proc. 2024-28; IRS FAQs on digital asset transactions](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

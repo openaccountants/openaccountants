@@ -1,21 +1,18 @@
 ---
 name: nl-company-car
-description: "Dutch company car benefit (bijtelling privegebruik auto) in payroll for tax year 2026. Covers when an employer adds private use of a car or van to wage (Wet LB 1964 art. 13bis): the 22% addition on the catalogue value including VAT and BPM, 25% for cars first admitted before 2017, the 2026 zero-emission discount (18% up to EUR 30,000, 22% above), the 60-month rule that fixes the rate in force at first admission, 35% of market value for cars older than 16 years, vans, the 500 km private-use proof (rittenregistratie, Verklaring geen privegebruik), the employee's own contribution (eigen bijdrage), Zvw and employee-insurance effects, and why the werkkostenregeling cannot absorb it. Trigger on: bijtelling, auto van de zaak, company car Netherlands, lease car tax, eigen bijdrage auto, rittenregistratie, bestelauto. Out of scope: general payroll (nl-payroll-tax, netherlands-payroll), entrepreneurs' own cars in box 1 profit (nl-zzp-deductions), VAT on private use (nl-vat-return)."
+description: "Dutch company car benefit (bijtelling privegebruik auto) in payroll for tax year 2026. Covers when an employer adds private use of a car or van to wage (Wet LB 1964 art. 13bis): the 22% addition on the catalogue value including VAT and BPM, 25% for cars first admitted before 2017, the 2026 zero-emission discount (18% up to EUR 30,000, 22% above), the 60-month rule that fixes the rate in force at first admission, 35% of market value for cars older than 16 years, vans, the 500 km private-use proof (rittenregistratie, Verklaring geen privegebruik), the employee's own contribution (eigen bijdrage), Zvw and employee-insurance effects, and why the werkkostenregeling cannot absorb it. Trigger on: bijtelling, auto van de zaak, company car Netherlands, lease car tax, eigen bijdrage auto, rittenregistratie, bestelauto. Out of scope: general payroll (nl-payroll-tax), entrepreneurs' own cars in box 1 profit (nl-zzp-deductions), VAT on private use (nl-vat-return)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nl-company-car"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Netherlands: company car benefit (bijtelling) in payroll, 2026 v0.1
+# Netherlands: company car benefit (bijtelling) in payroll, 2026 v0.2
 
-This skill is the car method that `nl-payroll-tax` and `netherlands-payroll` refer to. It covers the private-use benefit an employer adds to wages. General payroll steps (tables, credits, the return itself) stay in those two skills.
+This skill is the car method that `nl-payroll-tax` refers to. It covers the private-use benefit an employer adds to wages. General payroll steps (tables, credits, the return itself) stay in those two skills.
 
 ## Who this applies to
 
@@ -190,26 +187,6 @@ expected:
 
 Not yet confirmed: (1) the retroactive repair of art. 13bis(5)(b) (market value from 16 instead of 15 years) is announced but was not in the law text on 23 October 2026; (2) no October 2026 edition of the Handboek Loonheffingen 2026 was found, so the March 2026 edition is used.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-company-car` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-company-car. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-company-car` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-company-car. If neither is available, confirm every figure against the official source pages cited above before relying on it.

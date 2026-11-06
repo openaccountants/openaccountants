@@ -6,8 +6,9 @@ description: >
   Integration skill for Amazon Seller Central settlement reports and date range reports. Activate when the user
   uploads an Amazon settlement report, Amazon seller CSV, or mentions Amazon Seller Central, FBA, or Amazon payouts.
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
+domain: references
 ---
 
 # Amazon Seller Central Integration Skill v1.0

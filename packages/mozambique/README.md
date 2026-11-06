@@ -7,11 +7,12 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `mozambique-income-tax.md`
-4. `mozambique-payroll.md`
-5. `mozambique-social-contributions.md`
-6. `mozambique-vat.md`
-7. `payroll-workflow-base.md`
+3. `README.md`
+4. `mozambique-income-tax.md`
+5. `mozambique-payroll.md`
+6. `mozambique-social-contributions.md`
+7. `mozambique-vat.md`
+8. `payroll-workflow-base.md`
 
 ## How to use
 

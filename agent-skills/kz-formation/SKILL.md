@@ -26,7 +26,6 @@ metadata:
 | IT incentive | Astana Hub (astanahub.com) — participants get major tax relief on IT income (verify current relief) |
 | VAT registration threshold | Mandatory once turnover exceeds the threshold (verify the 2026 figure — lowered under the new Tax Code); voluntary below |
 | Tax authority | State Revenue Committee (КГД) |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Skill version | 1.0 |
 
 ### Conservative defaults

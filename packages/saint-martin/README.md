@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `mf-business-licence-and-patente-filing.md`
-4. `mf-company-tax-rates-and-returns.md`
-5. `mf-tgca-scope-and-compliance.md`
+3. `README.md`
+4. `mf-business-licence-and-patente-filing.md`
+5. `mf-company-tax-rates-and-returns.md`
+6. `mf-tgca-scope-and-compliance.md`
 
 ## How to use
 

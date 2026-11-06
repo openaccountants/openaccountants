@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "LY"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Libya Personal Income Tax
@@ -30,24 +28,6 @@ metadata:
 - **Social Unity (Solidarity) Fund** — 1% of monthly gross salary, withheld and collected by the Tax Department percent  _([Income Tax Law No. 7 of 2010](https://taxsummaries.pwc.com/libya/individual/taxes-on-personal-income))_
 - **Collection mechanism** — Personal income tax on salaries is withheld at source by the employer and remitted monthly  _([Income Tax Law No. 7 of 2010](https://taxsummaries.pwc.com/libya/individual/taxes-on-personal-income))_
 - **PAYE remittance deadline** — Withheld payroll tax is generally payable monthly, within ten days after month-end ((approx — confirm))  _([Income Tax Law No. 7 of 2010](https://taxsummaries.pwc.com/libya/individual/taxes-on-personal-income))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BM"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bermuda Payroll & Social Contributions
@@ -31,24 +29,6 @@ metadata:
 - **Social insurance — employees aged 65+** — Only the employer portion is due; no employee contribution  _(Contributory Pensions Act 1970 (https://www.gov.bm/department/social-insurance))_
 - **Social insurance remittance deadline** — Employer billed monthly; payment due by the last Friday of that month  _(Contributory Pensions Act 1970 (https://www.gov.bm/department/social-insurance))_
 - **Occupational (private) pension contribution** — Mandatory for Bermudians/spouses under the National Pension Scheme; typically 5% employer + 5% employee of pensionable earnings (approx — confirm current rate) percent (approx — confirm current rate)  _(National Pension Scheme (Occupational Pensions) Act 1998 (https://www.gov.bm/bermuda-pension))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

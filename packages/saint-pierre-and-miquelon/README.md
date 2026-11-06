@@ -7,8 +7,9 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `pm-company-income-tax.md`
-4. `pm-personal-income-tax-2025.md`
+3. `README.md`
+4. `pm-company-income-tax.md`
+5. `pm-personal-income-tax-2025.md`
 
 ## How to use
 

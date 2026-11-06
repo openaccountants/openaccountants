@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "PH"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Jonathan I. Ruiz, CPA"
-  trust_label: "Checked by Jonathan I. Ruiz, CPA"
-  review_status: "current"
+  reviewed_by: "Jonathan I. Ruiz"
 ---
 
 # Philippines Corporate Income Tax
@@ -33,24 +31,6 @@ Corporate income tax is governed by the NIRC as amended by the CREATE Act (RA 11
 - **Branch profit remittance tax** — 15% on profits remitted by a Philippine branch to its foreign head office. Settled — unchanged by CREATE, CREATE MORE and CMEPA. Treaty relief may reduce the rate where the head office is resident in a country with an applicable Philippine tax treaty. percent  _(NIRC s.28(A)(5). Corrected by Jonathan I. Ruiz (CPA, Philippines))_
 - **Annual income tax return deadline** — 15th day of the 4th month after the close of the taxable year (15 April for calendar-year filers), BIR Form 1702-RT/1702-MX/1702-EX  _(NIRC Section 52(C); BIR Form 1702)_
 - **Quarterly corporate returns** — BIR Form 1702Q filed within 60 days after the close of each of the first three quarters  _(NIRC Section 75; BIR Form 1702Q)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

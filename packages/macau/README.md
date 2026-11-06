@@ -7,13 +7,14 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `mo-company-formation.md`
-4. `mo-corporate-income-tax.md`
-5. `mo-payroll-social.md`
-6. `mo-tax-overview.md`
-7. `mo-vat-gst.md`
-8. `payroll-workflow-base.md`
-9. `company-formation-workflow-base.md`
+3. `README.md`
+4. `mo-company-formation.md`
+5. `mo-corporate-income-tax.md`
+6. `mo-payroll-social.md`
+7. `mo-tax-overview.md`
+8. `mo-vat-gst.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
 
 ## How to use
 

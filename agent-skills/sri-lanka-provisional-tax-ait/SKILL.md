@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "LK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Lal kumarasiri, CA"
   reviewed_by: "Lal kumarasiri"
-  trust_label: "Checked by Lal kumarasiri"
-  review_status: "current"
 ---
 
 # Sri Lanka Provisional Tax / Advance Income Tax (AIT)
@@ -30,24 +27,6 @@ metadata:
 - **Credit against final tax** — AIT instalments paid are credited against the final CIT liability assessed at year-end. Excess AIT (overpayment) may be refunded or carried forward.  _(IRA s 90; IRD Return Processing Guidance)_
 - **WHT credit** — Withholding taxes deducted from income received (e.g. AIT on dividends, interest) are also credited against the final CIT/personal income tax liability.  _(IRA s 90B; First Schedule; IRD AIT/WHT Credit Guidance)_
 - **Payment method** — Via RAMIS (IRD online portal) or through authorised banking channels.  _(IRD RAMIS – www.ird.gov.lk)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

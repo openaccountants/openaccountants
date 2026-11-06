@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "PK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
+  reviewed_by: "Ibrar Ali"
 ---
 
 # PK Payroll Eobi
@@ -21,7 +19,7 @@ metadata:
 >
 > **Tax year 2025-26 note:** Pakistan's tax year runs **1 July – 30 June**. References to "2025-26" mean the year ending **30 June 2026**. Salary tax brackets are set annually by the Finance Act and are applied via `pk-income-tax`. EOBI rates have remained 5% employer / 1% employee on the federal minimum wage base for an extended period; provincial social security thresholds vary by province and are tracked here as ranges, not point estimates, because they are revised by provincial notification.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -407,24 +405,6 @@ Not run through this payslip — computed annually on profit-before-tax in the c
 
 *OpenAccountants — open-source accounting skills for AI*
 *This is not tax advice. All outputs must be reviewed by a qualified Pakistani payroll professional or tax consultant before any payslip is issued or any remittance is made.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

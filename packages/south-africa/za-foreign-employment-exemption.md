@@ -12,14 +12,13 @@ description: >
 version: 0.1
 jurisdiction: ZA
 last_updated: 2026-09-03
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - foundation
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # South Africa — Foreign Employment Income Exemption, s 10(1)(o)(ii)
@@ -224,21 +223,3 @@ where the underlying computation is correct.
 > South Africa.
 
 > Contributed by Brandon Iverach.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

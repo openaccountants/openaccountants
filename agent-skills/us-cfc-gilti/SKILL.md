@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # US controlled foreign corporations: Subpart F and net CFC tested income (formerly GILTI)
@@ -408,24 +405,6 @@ Refuse to give a final figure when the client cannot provide the CFC's income by
 - [ ] The right year's §250 (40% or 50%) and §960(d) (90% or 80%) percentages used.
 - [ ] Form 5471 categories, schedules and prior-year compliance checked; penalty exposure noted.
 - [ ] Output labelled as a draft working paper for sign-off by a credentialed preparer.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

@@ -7,13 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cz-cross-border"
   jurisdiction: "CZ"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Czech Republic: cross-border tax for people and companies (2026) v0.1
+# Czech Republic: cross-border tax for people and companies (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Income Tax Act and the Tax Code as published on zakonyprolidi.cz (versions in force for 2026), financnisprava.gov.cz, cssz.gov.cz and cnb.cz, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -217,26 +214,6 @@ expected:
 
 Not yet confirmed: the exact filing dates for the 2026 return (in 2027), which the Financial Administration had not published on the page read; registration duties for an arriving self-employed person or a foreign company (Tax Code § 125 and following, not read); the rounding of the final tax to whole koruna (Tax Code § 146, not read); the 25% ownership threshold and other conditions for the EU interest and royalty exemption in ITA § 19 (only summarised here); individual treaty rates and relief methods.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cz-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cz-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

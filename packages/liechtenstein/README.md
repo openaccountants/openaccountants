@@ -7,14 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `li-company-formation.md`
-4. `li-corporate-income-tax.md`
-5. `li-income-tax.md`
-6. `li-payroll-social.md`
-7. `li-tax-overview.md`
-8. `liechtenstein-vat.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `li-company-formation.md`
+5. `li-corporate-income-tax.md`
+6. `li-cross-border.md`
+7. `li-income-tax.md`
+8. `li-payroll-social.md`
+9. `li-tax-overview.md`
+10. `li-transfer-pricing.md`
+11. `liechtenstein-vat.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

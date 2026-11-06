@@ -4,15 +4,13 @@ description: Use this Guide for 2026 Spanish resident personal income tax in the
 version: 2.3
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-11-06
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Spain resident personal income tax (IRPF) v2.3
@@ -499,7 +497,7 @@ Classify the actual conduct, unpaid amount, prior request and timing. Art. 191 c
 
 ## Cross-border points
 
-For an ordinary resident employee physically assigned abroad, calculate the [foreign-work salary exemption](#foreign-work-salary-exemption-ordinary-resident-employee) before the residual foreign-tax credit. A treaty exemption,7(p) and an expatriate-excess election are distinct routes. Use the own-territory foreign-assignment method in [foral IRPF](es-foral-income-tax.md#foreign-assignment-employment-local-exemptions), rather than importing State7(p), where a foral system is competent.
+For an ordinary resident employee physically assigned abroad, calculate the [foreign-work salary exemption](#foreign-work-salary-exemption-ordinary-resident-employee) before the residual foreign-tax credit. A treaty exemption,7(p) and an expatriate-excess election are distinct routes. Use the own-territory foreign-assignment method in [foral IRPF](es-foral-income-tax-foreign-assignment.md#foreign-assignment-employment-local-exemptions), rather than importing State7(p), where a foral system is competent.
 
 Ordinary residents include worldwide income in its correct general or savings category. A foreign bank's absence of Spanish withholding is not an exemption. Under [LIRPF art. 80](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a80), the foreign-tax credit is the lower of qualifying foreign tax actually paid and the Spanish effective-rate amount on the corresponding taxable foreign base. Separate general and savings effective rates as the article requires; a corporate participation or PE exemption is not imported into individual IRPF.
 
@@ -638,21 +636,3 @@ For a foreign assignment within question2, obtain each employment contract and i
 **Source discrepancies resolved by statute.** Hacienda's PDF prints Madrid's EUR 21,894.72 band width with a malformed decimal; Madrid art. 1 gives the correct amount. Its Canarias first cumulative quota is EUR 1,237.30, while current art. 18 bis gives **EUR 1,237.32**. The statutory amounts are used here. La Rioja art. 31 bis also preserves the ordinary assistance amount while increasing only the specified disabled-descendant minimum. The 2027 Valencian scale printed alongside the 2026 table is not used for 2026.
 
 Not yet confirmed in this revision: specific interactions within the fifteen 2026 common-territory regional-credit catalogues in es-irpf-deductions; the specifically outstanding foral methods recorded in [foral IRPF Sources](es-foral-income-tax.md#sources); the three-year Ceuta/Melilla extension’s detailed cross-basket attribution where decisive; final average-rate display/truncation and any minimum-spillover allocation in a fact pattern not resolved by the stated art.56/DA20 method; módulos activity computations and case-specific election/return corrections beyond the published 2026 AEAT entry/election route supplied in es-estimated-tax; the final 2026-return schema, campaign dates and payment-option details for filing in 2027; special elections and treaty/exit computations outside the ordinary examples. These remain visible country-pack work. Independent whole-pack review is pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

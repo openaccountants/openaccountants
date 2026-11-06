@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "LT"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Lithuania: payroll and social contributions (2026) v0.1
@@ -208,24 +206,6 @@ expected:
 Not yet confirmed: the text of the 2026 social funds' budget indicators law that fixes the rates and the 2026 VDU (the figures here come from Sodra's tables and its EUR 138,729 ceiling); the late interest rate Sodra charges on employer contributions in 2026 (the law leaves it to the Minister of Finance; VMI's 0.027% a day is confirmed for tax only, and only from 1 August 2026; the rate for January to July 2026 was not read); whether the Guarantee Fund and Long-term Employment Benefit Fund contributions, which rest on separate laws, also stop at the 60 VDU ceiling from 2026; the monthly band thresholds employers use under GPMĮ article 23(7) when a single payment is large; the exact payment date for 2026 self-employed contributions, given that 1 May 2027 is a Saturday; the administrative fine for filing SAM or GPM313 late (Code of Administrative Offences, not read); and the social insurance rules for posted and multi-state workers under the EU coordination regulations.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

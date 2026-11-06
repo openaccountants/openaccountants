@@ -1,711 +1,435 @@
 ---
 name: moldova-income-tax
-description: "Use this skill whenever asked about Moldova (Republic of Moldova) personal income tax for self-employed individuals and individuals. Trigger on phrases like \"how much tax do I pay in Moldova\", \"impozit pe venit\", \"CET18\", \"Declaratia persoanei fizice\", \"flat 12% tax\", \"income tax return Moldova\", \"deductible expenses\", \"personal exemption / scutire personala\", \"CAS / BASS social insurance\", \"CNAM / CAM health insurance\", \"fixed annual contribution\", \"self-employed tax Moldova\", \"freelancer tax Moldova\", \"IT Park 7%\", \"independent retail 1%\", or any question about filing or computing personal income tax for a resident individual or sole proprietor in Moldova. Also trigger when preparing or reviewing a CET18 return, computing the monthly payroll PIT base, or advising on social (CAS) and health (CNAM) contributions. This skill covers the flat 12% PIT, reduced 7% farming rate, final withholding rates (dividends, royalties, winnings), personal/dependent exemptions, employer/employee CAS and"
+description: "Compute Moldova individual income tax for 2026 after classifying residence, citizenship, source, legal activity and the actual tax regime. Covers annual ordinary income, sole-trader and professional profit, personal/spouse/dependent exemptions, actual contribution and personal deductions, capital gains, final withholding, property rentals, foreign-tax credit and separate retail, plant-purchasing and independent-service regimes. Use for CET18, annual personal tax, self-employed tax, freelancer income, taxable investment receipts, exemption eligibility, foreign interest, capital disposals, fixed contributions and income-tax filing. This source-cited draft identifies ordinary and specialist gaps, and has a bounded source-review record linked under Sources. It does not certify every treaty or special-regime implementation or claim accountant attestation."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/moldova-income-tax"
   jurisdiction: "MD"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  tax_year: "2026"
+  last_updated: "2026-10-31"
 ---
 
-# Moldova (Republic of Moldova) Income Tax -- Self-Employed and Individuals
+# Moldova individual income tax and self-employment, 2026 v0.14
 
-## Moldova (Republic of Moldova) Income Tax -- Self-Employed and Individuals Skill v0.1
+## Who this applies to
 
-> **Tier 2 (research-verified).** Figures below were assembled from PwC Worldwide Tax Summaries, the Moldovan State Social Insurance Budget Law for 2025, and corroborating Moldovan secondary sources. They have NOT yet been signed off by a warranted Moldovan accountant. Treat every output as a draft for professional review. See the caveats in Section 10.
+Classify the individual, residence, citizenship, income source, legal activity and actual regime before calculating Moldova's 2026 income tax. This source-cited draft covers ordinary annual individual liability, registered business/professional income, final withholding, capital gains and the separate retail, plant-purchasing and independent-service regimes. It replaces the old 2025 summary, not the need for the correct underlying documents. Bounded source review is recorded under Sources; accountant attestation is not provided. [Fiscal Code arts. 5, 13–15, 39–44, 69^1–69^26, 83][code].
 
-## Section 1 -- Quick Reference
+An individual meets the domestic residence definition through permanent domicile, including the stated temporary overseas treatment/rest/study/duty cases, or at least 183 days in Moldova during the fiscal year. The specific diplomatic/international-organisation, exclusive treatment/rest/study and transit exclusions in art. 5(6) still matter. Do not use a foreign passport, bank account or residence permit alone as the tax conclusion. Actual treaty residence is a separate test under the operative agreement. [Art. 5(5)–(6), 79^3][code].
 
-**Quick Reference table**
+The charge is not identical for every resident. Resident business/professional taxpayers have art. 13(1)(a)/14(1)(a)'s worldwide business/professional scope. For non-business Moldovan citizens, domestic-source income and foreign-source income for activity in Moldova are covered, together with the separately stated foreign investment/financial income. Resident foreign citizens/stateless persons have the stated Moldova-activity/source scope with the statutory exclusion for foreign investment/financial income. Nonresidents use the specified Moldova-source and chapter-11 routes. Do not turn “resident” into an unsupported universal worldwide-income statement. [Arts. 13–14][code].
 
-| Field | Value |
-| --- | --- |
-| Country | Moldova (Republic of Moldova) |
-| Tax | Personal Income Tax (Impozit pe venit) |
-| Currency | MDL (Moldovan leu) only |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Tax Code of the Republic of Moldova (Codul Fiscal, Law No. 1163/1997), Title II -- Income Tax |
-| Supporting legislation | Law No. 489/1999 (public social insurance system); Law No. 1593/2002 (mandatory health insurance contributions); Law on the State Social Insurance Budget for 2025; Law on Mandatory Health Insurance Funds for 2025; Law No. 228 of 10 July 2025 (new simplified independent-activity regime, effective 1 Jan 2026 -- NOT 2025) |
-| Tax authority | Serviciul Fiscal de Stat (State Tax Service, SFS) -- sfs.md [PwC Moldova] |
-| Social-insurance administrator | Casa Națională de Asigurări Sociale (CNAS) -- cnas.gov.md [PwC Moldova] |
-| Health-insurance administrator | Compania Națională de Asigurări în Medicină (CNAM) -- cnam.md [PwC Moldova] |
-| Filing portal | SFS e-services (sfs.md) |
-| Annual return | CET18 -- Declarația persoanei fizice cu privire la impozitul pe venit |
-| Filing & payment deadline | 30 April of the year following the reporting year [PwC Moldova Individual -- Tax administration] |
-| Validated by | Pending -- requires sign-off by a warranted Moldovan accountant |
-| Validation date | Pending |
-| Skill version | 0.1 |
+Keep distinct: ordinary employees; an individual entrepreneur; the statutory peasant farm; a justice/medical professional; independent retail; plant-product purchasing; and an ASP-registered independent service entrepreneur. The new service regime is not a universal 15% election for every freelancer. Professional sector, legal registration, approved activity, payer relationship and dates matter. A company dividend or an employee's pay is not converted into business turnover by the bank description. [Arts. 15, 44, 69^1–69^26, 88–90^1][code].
 
-### Tax Rates (2025)
+Use [payroll](moldova-payroll.md) for cumulative wage withholding and [social/medical contributions](moldova-social-contributions.md) for the contribution categories, minimums, status and reporting. Those connected drafts have explicit gaps and have a bounded source-review record linked under Sources. Use [corporate tax](md-corporate-income-tax.md) for company regimes and the detailed business-expense interface; [VAT](moldova-vat.md), [TP](md-transfer-pricing.md) and [cross-border](md-cross-border.md) retain their own currency/scope until their rewrites. The old “Tier 1/Tier 2” internal headings never established accountant review.
 
-- **Flat tax framing** — Moldova levies a flat personal income tax, not progressive brackets.  _([PwC Moldova Individual -- Taxes on personal income])_
+## Rates, bands and thresholds
 
-**Tax Rates (2025) table**
+All amounts are MDL. Rates apply only after the statutory category/base is established.
 
-| Income type | Rate | Notes |
-| --- | --- | --- |
-| Resident individual -- employment, professional & entrepreneurial income, capital gains, other taxable income | 12% | Flat rate, no brackets [PwC Moldova] |
-| Farming / agricultural enterprises -- entrepreneurial income | 7% | Reduced rate [PwC Moldova] |
-| Dividends (general) -- final withholding | 6% | Withheld at source [PwC Moldova] |
-| Royalties -- final withholding | 12% | Withheld at source [PwC Moldova] |
-| Gambling / lottery / sports-bet winnings -- final withholding | 18% | On the amount exceeding MDL 297 [PwC Moldova] |
-| Independent retail-sale individuals (Chapter 10² regime, in force through 2025) | 1% | 1% of declared income, not less than MDL 3,000/year [PwC Moldova] |
+| Item | 2026 rule | Primary authority |
+|---|---|---|
+| Ordinary individual/individual-entrepreneur/justice/medical professional income tax | 12% of annual taxable income | [Art. 15(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Day worker | 12% of taxable income without chapter-4 exemptions | [Art. 15(a^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Statutory peasant farm | 7% of taxable income; not a general agricultural-company or distribution rate | [Art. 15(c)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Standard personal exemption | 29,700 a year; annual taxable-income test strictly below 360,000, excluding art. 90^1 income and including the stated independent-retail/plant-purchasing income | [Art. 33(1)–(1^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [January version](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro) |
+| Increased personal exemption | 34,620 a year for the exact statutory categories | [Art. 33(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Qualifying spouse exemption | 21,780 a year with art. 33(2)-category spouse and non-use conditions | [Art. 34](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary qualifying dependent | 9,900 a year | [Art. 35(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Specified disabled dependent | 21,780 a year under the exact disability/relationship conditions | [Art. 35](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Dependent's income condition | Not above 12,400 annually, excluding the specified State disability allowances | [Art. 35(2)(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Taxable capital-gain inclusion | 50% of recognised current-period gains exceeding recognised capital losses | [Arts. 40(7), 41](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary resident-individual dividend withholding | 6%; historical 2008–2011 undistributed-profit category 15%; separate pre-2008 exemption/category check | [Art. 90^1(3^1), 20(z^10)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Royalty final withholding | 12% for the covered individual payment, with the independent-service-entrepreneur exception | [Art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Specified domestic bank/credit-issuer and similar interest | 6% final withholding under the stated payer/category rule, excluding art. 20(z^20) cases | [Art. 90^1(3^7)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Other covered interest and preliminary resident withholding | 12% advance/creditable route under arts. 89–90, rather than assuming every interest receipt is finally taxed at 6% | [Arts. 89–90](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Property use paid by art. 90 payers | 12% final withholding for the covered movable/immovable use, excluding agricultural land rent | [Art. 90^1(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Covered resident non-business immovable-property letting to other specified tenants | 7% of monthly contract value, with registration/payment duties | [Art. 90^1(3^4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Covered gambling | 18%, with the exact lottery/sports-bet exemption; 1% of the standard personal exemption = 297 is the relevant statutory lottery/sports reference, not a universal deduction from every gambling receipt | [Arts. 90^1(3^3), 20(p^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Promotional-campaign winnings | 12% on the part above the standard personal exemption, 29,700 | [Arts. 90^1(3^3), 20(p^2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Independent retail | 1% of its income base; ordinary full-year minimum 3,000, with 750 quarterly and 250-per-active-month rules as applicable | [Arts. 69^10–69^12](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Retail eligibility measures | Resident individual without legal organisational form; non-excise retail; commercial area up to 50 m² and period income not above 1.2 million; current art. 69^13 adds its 1 July 2026 registration cut-off | [Arts. 69^6–69^7, 69^13](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [January comparison](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro) |
+| Plant-product purchasing regime | 6% final withholding by covered business purchaser; annual 1.2-million ceiling and separate 12% excess route | [Arts. 69^14–69^19](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Registered independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on the excess | [Arts. 69^20–69^26](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Personal medical/insurance/first-home interest reference caps | One forecast monthly average salary, 17,400, for the separate statutory routes and actual conditions below | [Art. 35^2(3)–(5)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [CNAS point 12.1, Government Decision 773/2025](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Own training/education and dependent-child education deduction | 20,000 cumulatively for the covered institutions/beneficiaries, not 20,000 per child/provider | [Art. 35^2(6), effective 1 January version](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro); [current Code](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 
-- **No progressive band** — Moldova has no separate progressive band -- the 12% applies from the first taxable leu, after exemptions are deducted.
+The January/current selected Code comparison confirms the personal/spouse/dependent amounts, strict personal-exemption gate and the 20,000 education limit. It does not certify every 2026 amendment interaction. The old claim that retail 1% expired at the end of 2025 is wrong: chapter 10^2 remains in the current Code. Keep its July registration condition distinct from the new chapter-10^4 service regime, VAT thresholds and any actual cessation. [Arts. 33–35^2, 69^6–69^26][code]; [January Code][jan].
 
-### Personal & Dependent Exemptions (2025)
+## The base
 
-- **Availability condition** — Available only to residents whose annual taxable income does not exceed MDL 360,000.  _([PwC Moldova Individual -- Deductions; salarii.md])_
+### Ordinary annual income and registered business/professional profit
 
-**Personal & Dependent Exemptions (2025) table**
+1. Establish residence/citizenship, source, legal activity, year and regime. Separate final-withholding income, exempt receipts, non-business annual income, business profit and special-regime turnover. Do not tax every bank credit or apply 12% to every activity labelled “freelance”. [Arts. 13–15, 18–21, 69^1–69^26, 90^1][code].
+2. Apply the proper timing method. Non-business individuals ordinarily use cash accounting. Individual entrepreneurs can use cash or accrual under art. 44; professional-sector individual taxpayers use the specified cash method under art. 69^2, while legal entities use accrual. Do not deduct an unpaid expense simply because an invoice exists under a cash method, and do not ignore accrued income under an accrual method. Method changes require the statutory adjustment to avoid omissions/double counting. [Arts. 44, 69^2][code].
+3. Include the taxable business/professional receipts, salary, rent, interest, royalties, covered debt releases, subsidies and other art. 18 sources under their applicable regime. Exclude only the exact art. 20 category and person entitled to it. State social benefits, qualifying damages/donations/inheritances, contributions to capital, specified grants and other exemptions have different conditions. Foreign payer, grant, gift or private-transfer wording alone is not the exemption. [Arts. 18–21][code].
+4. For ordinary business/professional income, deduct actual ordinary necessary business expenditure under the applicable chapter-3 rules and accounting method. Preserve invoices, contract, business purpose, payment/timing and apportionment. Mixed business/private costs require art. 24(2)'s greater-business-than-private test and only the direct business portion. No default home-office, phone/internet, car, meal or travel percentage is certified. Capital purchases, private expenses, income tax, statutory fines/penalties and exempt-income costs cannot all be deducted as ordinary expenses. [Arts. 24–31, 44, 69^3][code].
+5. Keep operating expenses separate from deductible personal mandatory contributions and personal allowances. Article 35^2(1)–(2) allows actual compulsory medical and social contributions paid by the person in statutory amounts during the period. The employer's social cost is not the employee's payment. Do not deduct the same premium in business expenses and again as a personal deduction. The ordinary employee 6% social deduction in the old Guide is removed. Use the actual fixed category and payments rather than assigning every self-payer the same amount. [Art. 35^2][code]; [CNAS 2026 categories][cnas]; [CET18 instruction points 33–34][cet].
+6. For qualifying ordinary business tax losses, keep the article-32 origin-year ledger, following five periods, remaining amounts and chronological use. Capital losses are restricted separately to capital gains; special turnover taxes do not become profit taxes through an expense/loss deduction. Do not transfer a business loss into every household income category. [Arts. 32, 40–41, 54^2, 69^10, 69^24][code].
+7. Apply actual exemptions and personal deductions only once. Compute ordinary tax at the applicable legal rate, then match allowable creditable domestic withholding/instalments and foreign-tax credit to the same taxable income/period. Final art. 90^1 withholding is not a general credit against ordinary tax. Separate an amount payable from an excess payment/refund request. [Arts. 15–16, 33–35^2, 79, 81–87, 90^1][code].
 
-| Exemption | Annual (MDL) | Monthly (MDL) | Source |
-| --- | --- | --- | --- |
-| Personal exemption (standard) | 29,700 | 2,475 | [PwC; salarii.md] |
-| Personal exemption (increased / major) | 34,620 | 2,885 | [PwC; salarii.md] |
-| Spouse (major) exemption -- transferable if spouse has no income | 21,780 | 1,815 | [PwC Moldova Individual -- Deductions] |
-| Dependent exemption (per dependent) | 9,900 | 825 | [PwC; salarii.md] |
-| Dependent with severe childhood disability | 21,780 | 1,815 | [PwC Moldova Individual -- Deductions] |
-
-Arithmetic check: 2,475 × 12 = 29,700; 2,885 × 12 = 34,620; 825 × 12 = 9,900; 1,815 × 12 = 21,780. ✓
+For expenses, preserve the original Guide's practical categories as evidence questions: software/cloud/SaaS and platform charges; telecom/utilities; home office/rent; travel/transport; banking/professional charges; subcontractors; equipment/capital assets; private expenditure and mixed use. Vendor names such as a software supplier or airline do not establish a deduction or the VAT result. For an asset with life above one year and value above 12,000, test the tangible depreciation regime, separate asset register, commencement, Government life and permitted method. The non-financial accelerated option is a maximum first-year 50% under its conditions, not a universal write-off. Bad debt requires the statutory compromised-debt proof; an uncollected cash-basis receipt never taxed does not automatically create a tax deduction. Interest benchmarks, one-car occupation limits, business-charity caps and supporting procedures require their actual statutory facts. [Arts. 24–26^1, 28, 31–32, 36, 44][code]; [corporate method and remaining procedure gaps](md-corporate-income-tax.md).
 
-### Thresholds (2025)
+Transactions in foreign currency use the official MDL exchange rate at the statutory transaction date, not an invented annual average or net conversion shown by a payment platform. Article 21(3) defines transaction-date evidence, year-end debt revaluation, advances and uncoted-currency conversion. Preserve gross foreign receipts, fees, withholding, original currency, bank/platform dates and the applicable official rate independently. Match the actual accounting method and current-year FX differences rather than treating every bank conversion difference as a deductible cost. [Art. 21(3)][code].
 
-**Thresholds (2025) table**
+For non-cash income, donor transactions and related-person transfers, apply the specific valuation rule. Article 21(4) deems excess cash donations by a non-business donor income to that donor over the period's income, subject to the first-degree relative/affinity and spouse exceptions. Article 40 has its separate donated-capital-asset treatment; recipient exemptions under art. 20 have their own citizenship/category conditions. Internal transfers and loan principal are reconciliation subjects, not automatically business income or an automatic tax exemption for an unexplained receipt. [Arts. 20–21, 40][code].
 
-| Threshold | Amount (MDL) | Notes | Source |
-| --- | --- | --- | --- |
-| Personal-exemption income ceiling | 360,000 | Exemptions only if annual taxable income ≤ this | [PwC; salarii.md] |
-| Mandatory VAT registration | 1,200,000 | Turnover over last 12 consecutive months (2025; raised to 1.5m from 1 Jan 2026, 1.7m from 1 Mar 2026) | [KPMG TaxNewsFlash; PwC] |
-| Independent-retail minimum tax | 3,000 | 1% tax but not less than this per year | [PwC Moldova] |
-| Minimum monthly wage | 5,500 | 169 hrs/month, approx MDL 32.54/hr; from 1 Jan 2025 (rises to 6,300 from 1 Jan 2026) | [Government of Moldova; WageIndicator] |
-| Average monthly forecast salary | 16,100 | Used for benefit ceilings, IT-Park minimum, fine bases (rises to 17,400 for 2026) | [Government of Moldova (gov.md)] |
+For an employee’s concessional MDL loan, use the [payroll Guide’s sourced loan-benefit method](moldova-payroll.md): the observed regulation formula and the November 2025 BNM domestic-currency individual-total over-five-year rate of **8.32%** for the ordinary 2026 calculation. Keep principal, actual interest and the positive deemed benefit separate. The companion’s foreign-currency and collection/rounding gaps remain applicable; this annual-income Guide does not turn the loan principal into salary. [Code art. 19(d)][code]; [regulation point 8(4)][reg]; [BNM DPMC8 report, configured November 2025](https://bnm.md/bdi/pages/reports/dpmc/DPMC8.xhtml?id=0&lang=ro).
 
-### Conservative Defaults
+### Personal, spouse and dependent exemptions
 
-**Conservative Defaults table**
+For the personal exemption, including the increased art. 33(2) amount, verify the resident's statutory annual taxable-income test strictly below 360,000, excluding art. 90^1 income and taking account of the specified chapter-10^2/10^3 income. Exactly 360,000 fails a “less than” test. Do not use only salary or blindly multiply the latest net/gross bank payment by twelve. The employer is not required to track the employee's loss of entitlement under art. 88(1); annual reconciliation remains necessary. [Arts. 33(1)–(2), 83, 88][code]; [Government Decision 693/2018 annex 2 point 21^1][personalreg].
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency | STOP -- do not apply resident rules to a non-resident |
-| Unknown annual taxable income vs MDL 360,000 ceiling | Assume ceiling exceeded -> NO personal exemption (conservative) |
-| Unknown whether self-employed is in justice sector | General fixed CAS (MDL 20,518), flag for reviewer |
-| Unknown whether individual is employed (CNAM via payroll) or pays fixed CNAM | Assume fixed annual CNAM (MDL 12,636), flag for reviewer |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown regime (general 12% vs IT Park vs independent retail 1%) | General 12% regime |
-| Unknown farming status | Standard 12% (not the 7% farming rate) |
+The increased personal amount requires the exact listed Chernobyl/qualifying war/disability or rehabilitated-repression category and evidence. The spouse relief requires a spouse in art. 33(2)'s category who is not using the personal exemption; it is not a standard allowance transferable by every couple. The dependent must meet the cumulative relationship and income requirements, including the specified guardian/curator route; the annual 12,400 income test excludes only the specified State disability allowances. Dependents' age alone does not answer the relationship/income test. Spouse/dependent rights arise from the next month under arts. 34–35. The current regulation applies the personal-exemption annual-income gate to art. 33 and expressly preserves the separate art. 34–35 spouse/dependent tests. The increased personal amount is not an exception to that gate. The personal exemption and dependent/spouse routes must be tested separately. [Annex 2 point 21^1][personalreg]. [Arts. 33–35][code]; [payroll regulation points 9–35 and evidence tables][reg].
 
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
+For payroll, use the actual signed application, one permitted location, supporting documents and start/withdrawal month. No valid claim/evidence means no payroll exemptions; a mid-year hire does not automatically receive twelve months. The annual twelfths are 2,475 standard, 2,885 increased and 825/1,815 for the relevant dependent/spouse categories in eligible months. Special-regime months restrict relief under art. 35^1; the regulation has the separate mixed-month rule. Annual claims, newly acquired residence, divorce, death, maternity and a dependent's income changes need their own reconciliation, not a permanent default amount. [Arts. 34–35^1, 88][code]; [regulation points 9–26, 38–48][reg]; [payroll method](moldova-payroll.md).
 
-**Minimum viable** -- bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of (1) tax residency, (2) regime (general self-employed / employee / IT Park / independent retail), and (3) whether health insurance is paid via payroll (9%) or as the fixed annual premium.
+### Actual personal deductions
 
-**Recommended** -- all sales invoices, purchase invoices/receipts, CNAS/CNAM contribution payment records, prior-year CET18 or tax assessment, VAT registration status, dependent/spouse exemption documentation.
+Article 35^2 permits actual mandatory health premiums and mandatory social contributions paid within the legal amounts. Its separate personal routes cover voluntary medical insurance or qualifying medical services from one provider for an insured person; covered life/health/fire/natural-disaster insurance contracts with the stated combined cap; and interest paid for the first home on a qualifying non-State-programme credit, apportioned by ownership share for jointly owned property. The forecast-salary cap is 17,400 for the stated 2026 routes. Do not create two independent medical caps merely because CET18 has separate E3/E4 fields, deduct a loan's principal as home-loan interest, or deduct a premium paid by somebody else as this person's expenditure. [Art. 35^2(1)–(5)][code]; [CNAS point 12.1][cnas]; [CET18 points 33–35^1][cet].
 
-**Ideal** -- complete income and expenditure account, asset register, exemption certificates lodged with the employer (cerere de scutiri), proof of fixed-contribution payments, employment income statements (if mixed employed + self-employed).
+For own education/professional training and covered dependent-child education at the statutory institutions, art. 35^2(6) sets a **20,000 aggregate cap** for all covered education/training and beneficiaries. The January 2026 version explicitly records this change operative 1 January. Retain provider, beneficiary, contract/invoice and payment evidence. Current CET18 point 34^6 refers to this Code amount, but generic point 34^7 still says one forecast salary for E3–E7. Follow the statute's 20,000 for the 2026 education working paper and record the inconsistency; do not reduce the legal cap to 17,400 or certify the portal's 2026 filing implementation without checking it. The directly read Government proof requirements and January/June change are set out below; the separate current form/portal inconsistency is not certified as resolved. [Art. 35^2(6), January version][jan]; [current Code][code]; [CET18 points 34^6–35^1][cet].
 
-**Refusal if minimum is missing -- SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This CET18 was produced from bank statement alone. The reviewer must verify that all deductions claimed are supported by valid documentation and that each is incurred in the production of income under the Tax Code."
+**Keep an evidence schedule for each personal deduction.** Government Decision 693/2018 annex 2 is the regulation for resident Moldovan citizens; apply its scope and the Code's actual taxpayer/eligibility rules, rather than extending resident relief to every nonresident. Its point 35 permits the article-35^2 claim through the annual return or, from **18 June 2026**, during a tax inspection. That procedural change does not turn an unpaid invoice into an expense or establish a particular taxpayer's eligibility. [Annex 2 points 1–5, 16–18, 35][personalreg]; [Decision 321/2026 points 2.2.2, 3][personalamend]; [Code arts. 13–14, 35^2, 74][code].
 
-### Refusal Catalogue
-
-- **R-MD-1** — Residency determines whether the flat 12% resident rules and exemptions apply. This skill cannot compute tax without knowing whether the client is a Moldovan tax resident. Please confirm before proceeding.
-- **R-MD-2** — Annual taxable income near or above MDL 360,000 removes the personal exemption [PwC]. Confirm exact income and exemption entitlement with a reviewer before claiming any exemption.  _([PwC])_
-- **R-MD-3** — This skill covers resident individuals and sole proprietors only. Legal entities (SRL, SA) file corporate income tax. Escalate to a warranted Moldovan accountant.
-- **R-MD-4** — Non-resident and foreign-citizen taxation has different rules and a 3-day filing trigger on ceasing activity [PwC]. Out of scope. Escalate to a warranted accountant.  _([PwC])_
-- **R-MD-5** — Capital-gains computations require specialised analysis under the Tax Code. Escalate to a warranted accountant.
-- **R-MD-6** — IT Park residents pay a single 7% tax on turnover that already bundles PIT, CAS and CNAM [PwC]. Do not run the general 12% computation. Use the IT-Park regime and escalate to a reviewer.  _([PwC])_
-- **R-MD-7** — Law No. 228/2025 introduces a new simplified freelancer regime (15% up to MDL 1,200,000, 35% above) effective 1 January 2026. It does NOT apply to tax year 2025. For 2025, the legacy rules in this skill apply [EY Tax Alert Moldova, 1 Sep 2025].  _([EY Tax Alert Moldova, 1 Sep 2025])_
-- **R-MD-8** — Tax-evasion fines run 80%-100% of the evaded amount and late-payment interest accrues daily [PwC]. Do not advise. Escalate to a warranted accountant immediately.  _([PwC])_
-- **R-MD-9** — This skill covers personal income tax (CET18) only. For Moldova VAT, use the dedicated Moldova VAT skill.
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. Moldovan statements mix Romanian and Russian terms. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
-
-### 3.1 Income Patterns (Credits on Bank Statement)
-
-**Income Patterns table**
-
-| Pattern | CET18 Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| Client name + TRANSFER, PLATA, INCASARE, ПЛАТЕЖ | Business income | Entrepreneurial/professional income | If VAT-registered, extract net (excl. 20% VAT) |
-| ONORARIU, SERVICII, CONSULTANTA, HONORARIUM | Business income | Professional fees -- typical for self-employed |  |
-| STRIPE PAYOUT, STRIPE TRANSFER | Business income | Platform payout -- match to underlying invoices |  |
-| PAYPAL PAYOUT, PAYPAL TRANSFER | Business income | Platform payout -- verify against invoices |  |
-| WISE PAYOUT, WISE TRANSFER, PAYONEER | Business income | International platform payout |  |
-| UPWORK, FIVERR, FREELANCE | Business income | Freelance platform -- net of platform commission |  |
-| SALARIU, SALARY, ЗАРПЛАТА, EMPLOYER [name] | Employment income | Employment income (PIT/CAS/CNAM already withheld) | NOT self-employment; usually already taxed at source |
-| CHIRIE PRIMITA, RENT RECEIVED, АРЕНДА | Rental income | Other income -- not self-employment |  |
-| DOBANDA, INTEREST, ПРОЦЕНТЫ | Investment income | Interest income |  |
-| DIVIDEND, DIVIDENDE | Investment income -- final WHT 6% | Dividends | 6% withheld at source -- generally final [PwC] |
-| ROYALTY, REDEVENTA | Royalty income -- final WHT 12% | Royalties | 12% withheld at source [PwC] |
-| CASTIG LOTERIE, WINNINGS, ВЫИГРЫШ | Winnings -- final WHT 18% | Gambling/lottery/sports | 18% on amount exceeding MDL 297 [PwC] |
-| RESTITUIRE SFS, TAX REFUND | EXCLUDE | Not income | Tax refund from prior year |
-| GRANT, SUBVENTIE | Check nature | Capital grants EXCLUDE; revenue grants = business income |  |
-
-### 3.2 Expense Patterns (Debits) -- Fully Deductible (business income & expenditure)
-
-**Fully deductible expense patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| CHIRIE BIROU, OFFICE RENT, АРЕНДА ОФИСА | Office rent | Deductible | Dedicated business premises |
-| ASIGURARE PROFESIONALA, PI INSURANCE | Professional insurance | Deductible |  |
-| CONTABIL, AUDIT, BOOKKEEP, ACCOUNTANT | Accountancy fees | Deductible |  |
-| AVOCAT, LAWYER, JURIST, NOTAR (business) | Legal/notary fees | Deductible | Must be business-related |
-| RECHIZITE, OFFICE SUPPLIES, PAPETARIE | Office supplies | Deductible |  |
-| MARKETING, GOOGLE ADS, META ADS, PUBLICITATE | Marketing/advertising | Deductible |  |
-| INSTRUIRE, TRAINING, CURS, SEMINAR, CONFERINTA | Training | Deductible | Must relate to current business |
-| COMISION BANCAR, BANK FEE, SPEZE BANCARE | Bank charges | Deductible | Business account only |
-| STRIPE FEE, PAYPAL FEE, COMISION PROCESARE | Payment processing fees | Deductible |  |
-| POSTA, POSTA MOLDOVEI (business) | Postage | Deductible | Business correspondence |
-| DOMAIN, HOSTING, CLOUDFLARE, AWS, DIGITALOCEAN | IT infrastructure | Deductible (capitalise if large/long-life) | See Tier 2 on capitalisation |
+| Personal deduction | Required proof under regulation point 35^1 | Keep the statutory limit and facts separate |
+|---|---|---|
+| Voluntary medical premium or qualifying medical services | Tax invoice or another document confirming actual payment | Establish insured status, the eligible service/provider route and the article-35^2(3) cap; an unpaid bill or separate E3/E4 boxes does not create a second cap. [Point 35^1(1)][personalreg]; [Code art. 35^2(3)][code] |
+| Covered life/health/fire/natural-disaster insurance premium | Insurance contract **and** tax invoice or another document confirming actual payment | Reconcile the covered contracts and actual personal payments together under article 35^2(4). [Point 35^1(2)][personalreg]; [Code art. 35^2(4)][code] |
+| First-home interest outside State programmes | Credit contract **and** bank-account statement showing interest paid during the tax period | Principal is not interest. Establish first-home and credit eligibility, the person's paid interest, beneficiary status and ownership share before applying the statutory limit. [Point 35^1(3)][personalreg]; [Code art. 35^2(5)][code] |
+| Covered own education/professional training or dependent-child education | From 18 June: provider contract **or another document identifying both provider and beneficiary**, plus actual-payment proof. For cash payment, obtain the provider's confirmation stating the payment date | Identify the qualified institution/service, actual payer, beneficiary/dependency and tax-period payment. The Code's **20,000 aggregate limit** is shared across covered education/training and all beneficiaries. Proof alone does not make every course or family member eligible. [Point 35^1(4)][personalreg]; [Code art. 35^2(6)][code] |
 
-### 3.3 Expense Patterns (Debits) -- SaaS and Software
+**Education commencement.** The January regulation's point 35^1(4) referred only to dependent-child education, a contract with the educational institution and an invoice/other actual-payment proof. The January Code already permits the covered own education/training and the 20,000 aggregate limit from **1 January 2026**. Decision 321/2026 replaces the Government proof paragraph on **18 June**, adding the provider/beneficiary identification alternative and express cash-provider confirmation. Do not start the statutory own-education right or 20,000 limit in June merely because the regulation was aligned then. Retain payment dates and the applicable proof version; the current CET18 generic-cap inconsistency remains a separate implementation gap. [January Code art. 35^2(6)][jan]; [January regulation point 35^1(4)][personalregjan]; [Decision 321/2026 points 2.2.3, 3][personalamend].
 
-**SaaS and Software expense patterns table**
+A voluntary pension-fund contribution, annuity, donation or other deduction needs the actual statutory route and proof. The form's historic examples are not proof that every current payment qualifies. Keep contributions, personal relief, business expenses, final-withholding receipts and credits in separate schedules. [Arts. 21, 24–36, 64–69, 81–82][code]; [CET18 deduction instructions][cet].
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Deductible | Recurring subscription = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Deductible |  |
-| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Deductible |  |
-| Perpetual software licence (large value) | Capital item | Capitalise / depreciate | Flag for reviewer -- depreciation per Tax Code Art. 26-27 [RESEARCH GAP -- reviewer to confirm exact depreciation method] |
+### Capital gains, property and financial receipts
 
-### 3.4 Expense Patterns (Debits) -- Utilities (may need apportionment)
+Identify the capital asset and the type/date of disposal. Article 39 covers the specified participation/debt/property/land/option assets. Under art. 40, gross monetary/non-monetary disposal value less documented adjusted cost produces each recognised gain/loss. Use the broker report for the specified exchange transactions. Only 50% of recognised gains above recognised current-period losses enters the income base; capital losses cannot reduce unrelated ordinary income. Do not apply 12% to the full sale proceeds or assume every investment gain is finally withheld. [Arts. 39–42][code]; [CET18 capital table K, points 60–67][cet].
 
-**Utilities expense patterns table**
+Cost must be established under art. 42 and the applicable documentation rule. Purchase/self-build, gifts/inheritance/lifetime maintenance, exchanges, privatisation, contributions to capital and stock-option awards have different bases. The statute includes zero cost where supporting documents are absent, with its specific self-constructed-property cadastral route rather than an invented estimate. Keep capital changes and historical ownership records; an untaxed receipt's market value is not automatically the cost of every asset. [Art. 42][code].
 
-| Pattern | Category | Tier | Notes |
-| --- | --- | --- | --- |
-| ENERGOCOM, PREMIER ENERGY, GAZ, APA-CANAL | Electricity/gas/water | T2 if home office | 100% if dedicated office; proportional if home |
-| MOLDTELECOM, ORANGE, MOLDCELL, STARNET | Telecoms/broadband | T2 | Business-use portion only; default 0% if mixed |
-| MOBILE, TELEFON | Phone | T2 | Business-use portion only |
+**Allocate proceeds and cost before applying the 50% inclusion.** Government Decision 693/2018 annex 2 point 39 allocates a single acquisition price among multiple capital assets in proportion to each asset's market value on the transaction date. Under point 40, jointly owned disposal proceeds **and adjusted cost** follow each owner's share; for undivided common ownership, the written common agreement identifies one owner as the taxpayer under that route. Do not allocate only proceeds, use the full joint cost for every owner, or infer that a written reporting agreement changes every substantive ownership rule. [Code arts. 40–42][code]; [annex 2 points 38–40][personalreg].
 
-### 3.5 Expense Patterns (Debits) -- Travel
+For instalment consideration spanning tax periods, point 44 requires a calculation in each period according to the contract's shares, or equal shares if it specifies none, with the corresponding proportional cost allocation. Keep cumulative proceeds and cost already used so the same full basis is not deducted against every instalment. Point 43 separately states an arithmetic-average basis for the specified differently valued equity/debt/ownership positions in the same business; do not invent a universal FIFO or apply that paragraph to unrelated property. Post-1998 capital contributions use the documented monetary contribution, including subsequent contributions; older property/shares have their own 1 January 1998/31 December 1997 basis provisions. Adjust actual capital withdrawals/increases under Code art. 42(4). [Code art. 42][code]; [annex 2 points 41–44][personalreg].
 
-**Travel expense patterns table**
+**Obtain the correct cost documents.** MF Order 40/2018 approves the capital-cost proof list; its complete annex has now been retained and read, with the nine-route document map below. For inherited property, the SFS's published Order 13/2025 interpretation, question 29.2.4.18, confirms the legal-heir certificate together with either a competent valuation report establishing market value on acquisition, or the property-value certificate from the State property-register authority. This corroborates the specific inheritance route in the now-read annex. The same official page's question 29.2.4.4 says a cash-register fiscal receipt alone proves cash collection and is insufficient to establish capital-asset cost. Match the acquisition route and Code art. 42 exception before applying a zero basis; the self-built-property cadastral route remains distinct. [Code art. 42(1)][code]; [MF Order 40/2018 approval][capitalorder]; [SFS questions 29.2.4.4, 29.2.4.18][capitalproof].
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| AIR MOLDOVA, WIZZ AIR, TAROM, FLYONE | Flights | Deductible if business travel | Must be wholly business purpose |
-| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel |  |
-| BOLT, UBER, YANGO, TAXI | Local transport | Deductible if business purpose |  |
-| BENZINA, COMBUSTIBIL, PETROM, ROMPETROL, FUEL | Vehicle fuel | T2 -- business % only | Requires mileage log |
-| PARCARE, PARKING | Parking | T2 -- business % only |  |
+### Match capital-cost evidence to the acquisition route
 
-### 3.6 Expense Patterns (Debits) -- NOT Deductible
+The complete, unnumbered annex to MF Order 40/2018 is now retained and read. It lists nine routes. Use it with Code 42 to determine the legal basis, then retain the documents for the applicable route; a document's existence is not itself proof that the claimed amount or acquisition date is correct. [Actual approved list](https://www.legis.md/UserFiles/Image/RO/MF/anexa_40.doc), read 31 October 2026; [Code 42][code].
 
-**NOT deductible expense patterns table**
+| Route in the actual annex | Required evidence map |
+|---|---|
+| 1. Purchase | Sale/purchase contract or construction-investment contract. For those contracts, where the price is not fully paid or differs from the amount stated at conclusion, add evidence of actual payment. The list also specifies the international-invoice/customs-declaration/payment-proof route, and the invoice/delivery-invoice/tax-invoice **plus payment proof** route. Do not replace the full relevant combination with a cash-register receipt alone. |
+| 2. Self-construction | Applicable sale/purchase or service contracts and the specified actual-payment proof where not fully paid; international invoice/customs declaration/payment proof; invoice/delivery/tax invoice plus payment proof; or the property-value certificate from the State property-record authority. Apply Code 42(1)(b)'s particular cadastral valuation fallback where self-built-property cost documents are absent. |
+| 3. Inheritance | Legal-heir certificate **and** either a competent evaluator's report establishing market value at acquisition or the State property-record authority's property-value certificate. A valuation report prepared later must still support the relevant acquisition-date value. |
+| 4. Gift | Donation contract/act **and** either the acquisition-date market-value report or the State property-value certificate. Establish the statutory gift/non-recognition rules separately; the gift document alone does not settle the donor's tax or recipient's basis. |
+| 5. Lifetime maintenance | The property-alienation/lifetime-maintenance contract **and** either the acquisition-date market-value report or the State property-value certificate. |
+| 6. Exchange | Exchange contract **and** either the acquisition-date market-value report or the State property-value certificate. Keep the received asset's basis separate from the disposed asset's proceeds/gain calculation. |
+| 7. Assignment of a receivable | Assignment contract **and** evidence of the amount paid to become the assignee. The face value of the receivable alone is not evidence of that amount. |
+| 8. Other grounds | Documents establishing the acquisition ground and amounts paid to acquire ownership. Match any specific Code 42 basis limb, including capital contributions or stock-option awards; do not assume that this residual row overrides it. |
+| 9. Divorce | The documents for the original acquisition route through which the property entered the spouses' or one spouse's ownership. The divorce document alone does not establish an invented new acquisition price; apply Code 42(1)(c) to the actual division. |
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANT, CINA, PRANZ, ENTERTAINMENT | Entertainment | Generally NOT deductible | Flag any client-hospitality claim for reviewer |
-| PERSONAL, ALIMENTE, SUPERMARKET, LINELLA, KAUFLAND, NR1 | Personal expenses | NOT deductible | Private living costs |
-| AMENDA, PENALITATE, FINE, ШТРАФ | Fines/penalties | NOT deductible | Public policy |
-| IMPOZIT VENIT, INCOME TAX, PLATA SFS (PIT) | Tax payments | NOT deductible | Income tax cannot reduce income |
-| PRELEVARE, DRAWINGS, PERSONAL WITHDRAWAL | Drawings | NOT deductible | Not an expense |
+Table source: [Order 40, complete annex rows 1–9 and all 22 document subitems](https://www.legis.md/UserFiles/Image/RO/MF/anexa_40.doc). The published inheritance and cash-receipt interpretations cited above remain corroboration. CET18 instruction 64 calls this “annex 1”; the actual approval has one unnumbered annex. Neither that naming discrepancy nor missing purchase proof removes the statute's specific self-built-property exception.
 
-### 3.7 Expense Patterns (Debits) -- Capital Items
+Test non-recognition precisely: qualifying spouse/divorce redistribution, specified issuer redemptions, exercise/conversion of options, first-degree/spouse capital gifts, and the main-home and specified car conditions. A main home requires at least three years' ownership and the stated last-three-years domicile/residence test, including its at-most-90-day cancellation rule. The car rule requires at least three years' ownership and excludes historical/ethnographic collector vehicles. Joint marital-property disposal and stock-option transactions have specific calculation rules. Do not infer a home exemption merely from occupancy on sale day. [Arts. 5(46), 39–42][code].
 
-**Capital items expense patterns table**
+For resident non-business rentals, identify the tenant/payer. Covered art. 90 payers withhold 12% finally for the stated property-use income, excluding agricultural land. Covered immovable-property letting to other specified tenants uses the person's 7%-of-monthly-contract-value route, contract registration within seven days and the payment rules below. Do not apply the latter resident route to every foreign/nonresident lessor. Agricultural land and nonresident property income have separate provisions. [Arts. 90^1(3), (3^4), 74][code].
 
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| LAPTOP, COMPUTER, MACBOOK, CALCULATOR | Computer hardware | Capitalise / depreciate | Tax Code depreciation [RESEARCH GAP -- confirm rate/method] |
-| IMPRIMANTA, SCANNER, PRINTER | Office equipment | Capitalise / depreciate | [RESEARCH GAP -- confirm rate] |
-| MOBILIER, BIROU, SCAUN, FURNITURE | Furniture/fittings | Capitalise / depreciate | [RESEARCH GAP -- confirm rate] |
-| AUTO, MASINA, VEHICLE (business) | Motor vehicle | Capitalise / depreciate, business % only | [RESEARCH GAP -- confirm rate] |
+Separate ordinary/preliminary and final withholding. Resident dividends ordinarily use 6%, with 2008–2011 and pre-2008 profit-origin distinctions; royalties use the stated 12% final route and new independent-service exception; specified bank/credit-issuer/crowdfunding interest uses 6% final withholding, while other art. 89 interest uses its 12% preliminary route. Covered cash gifts, natural farm-produce sales, consignment sales and plant-purchaser income have their own final categories. Do not credit an art. 90^1 final tax again or report its covered receipts as ordinary annual income merely because the bank shows gross and net. [Arts. 16, 20(z^10), 69^18, 89–90^1][code].
 
-### 3.8 Exclusions (Neither Income nor Expense)
+Gambling, lottery/sports-bet and promotional winnings are different categories. Apply the exact art. 20(p^1)/90^1(3^3) lottery/sports exemption and electronic-communications exception, rather than deducting 297 from every gambling win. Promotional winnings have the separate 12% rule on the part above 29,700. Confirm the organiser, type, channel, individual winning and withholding evidence; ambiguous lottery boundary/online mechanics are not guessed in this draft. [Arts. 20(p^1)–(p^2), 90^1(3^3)][code].
 
-**Exclusions table**
+### Professional practice and separate turnover regimes
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFER INTERN, CONT PROPRIU, OWN ACCOUNT | EXCLUDE | Own-account transfer |
-| RAMBURSARE CREDIT, LOAN REPAYMENT, CREDIT | EXCLUDE | Loan principal movement |
-| CAS, BASS, CNAS, SOCIAL INSURANCE | Contribution payment | Deductible from PIT base (see Section 5) -- not a business expense |
-| CNAM, CAM, ASIGURARE MEDICALA | Health contribution payment | Deductible from PIT base (see Section 5) -- not a business expense |
-| PLATA TVA, VAT PAYMENT, SFS TVA | EXCLUDE | VAT liability payment, not expense |
+**Justice/medical professionals.** Apply chapter 10^1's actual subject, cash method for individual taxpayers, business deductions and chapter-4 personal relief. Tax is annual; quarterly payments are due by the 25th after the relevant quarter, and the declaration by 25 March following the year. The return and electronic method are separately prescribed; do not label every professional return CET18. Foreign-tax credit remains subject to art. 82. Fixed social/medical categories are a separate liability and deduction schedule. [Arts. 69^1–69^5][code]; [social/medical Guide](moldova-social-contributions.md).
 
-### 3.9 Moldovan Banks -- Statement Format Reference
+**Independent retail.** Verify resident status, absence of a legal organisational form, non-excise retail activity, commercial unit no larger than 50 m², period income no higher than 1.2 million and the actual SFS registration. The January version lacked the later registration cut-off sentence; the current Code requires registration satisfying art. 69^13(3)'s statutory 1 July 2026 cut-off. The 1% regime itself did not expire at the end of 2025. Do not apply a later entry condition retrospectively to a January registration decision without its amendment history. Current-period eligibility after the cut-off requires the actual register record. [Arts. 69^6–69^7, 69^13][code]; [January version][jan].
 
-**Moldovan Banks Statement Format Reference table**
+For qualifying retail, use the defined income base, reducing current-period returns/discounts including those from earlier sales. The ordinary full-year minimum is 3,000. The first three quarterly assessments use 1% of sales with the stated 750 minimum; the fourth reconciles the annual amount against prior assessments. The short-year rule uses at least 250 for each registered active month. The first-period cash-register equipment tax reduction excludes compensated costs; do not assume it is also an ordinary expense deduction. SFS assesses/notifies under art. 69^12; keep the notices, recorded sales, cash-register data, goods-provenance documents and purchase register. Registration, five-day cessation notice, one-year provenance-document retention and annual purchase-register submission are specific duties, not a universal exemption from records. [Arts. 69^7–69^13][code].
 
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| Moldova Agroindbank (MAIB) | TRANSFER, PLATA, INCASARE, COMISION | PDF/CSV; date format DD.MM.YYYY |
-| Moldindconbank (MICB) | PLATA, TRANSFER, RETRAGERE | PDF/CSV; counterparty in description |
-| Victoriabank | PLATA, TRANSFER, COMISION | PDF; Romanian-language descriptions |
-| OTP Bank Moldova | PLATA, TRANSFER, CARD | PDF/CSV |
-| Revolut / Wise (foreign) | PAYMENT, TRANSFER, CARD PAYMENT | CSV; multi-currency -- convert to MDL at the correct rate |
+**Plant-product purchasing.** The regime concerns the listed Moldovan-harvested plant/horticultural/vegetal products bought from non-business individuals for sale to businesses. Check the Ministry's actual product list and SFS registration. The business purchaser withholds 6% finally on the defined sale income; if the person's calendar-year sale income exceeds 1.2 million, the Code requires a return and 12% on the excess without crediting the already withheld tax as though it discharged that excess rule. Preserve the mandated source/quantity/location transaction documents even where the statute disapplies ordinary accounting/statistical requirements. [Arts. 69^14–69^19][code].
 
-## Section 4 -- Worked Examples
+**Independent service entrepreneur.** The 2026 regime requires ASP registration/state identifier and an activity within the Code annex, not a general “freelancer” description. The rendered annex lists the exact CAEM entries 15.1, 23.13, 23.41, 23.44, 23.49, 32.1, 32.2, 32.3, 32.4, 33.1, 43.22, 58.1, 58.2, 59.1, 59.2, 62.01, 62.02, 63.1, 63.91, 70.21, 71.11, 71.12, 73.20, 74.1, 74.2, 74.3, 79.9, 81.2, 81.3, 82.19, 82.3, 85.5, 88.9, 90.01, 90.02, 90.03, 93.11, 93.12, 93.19 and 96.09, with the stated exclusions for the last entry. Match the actual activity description, not only a similar code. [Arts. 69^20–69^21 and annex][code].
 
-### Example 1 -- Client Payment (VAT-registered freelancer)
+SFS records the service activity from the prescribed connected cash-register data and dedicated payment accounts. Cash operations require the approved cash register/receipt, and multiple dedicated accounts in permitted currencies are possible. The no-ordinary-accounting/no-tax/statistical-return rule in art. 69^22 does not waive registration, payment, cash records or evidence of the income base. Compute 15% on annual cumulative income up to 1.2 million and 35% on the excess; current-month returns/discounts reduce the month's defined receipts. Do not deduct ordinary business expenses as if this were a 12% profit regime or charge a second tax merely because the same money moves between dedicated accounts. Keep the statutory base and actual SFS notice reconciled. [Arts. 69^22–69^26][code].
 
-**Input line:**
-`15.03.2025 ; MAIB INCASARE ; SC EXEMPLU SRL ; PLATA FACT 2025-007 ; +12,000.00 ; MDL`
+The single tax includes income tax, social, medical and local taxes, allocated 26.3%/53.3%/15.4%/5.0% respectively. These are portions of the tax, not additional percentages of gross income. SFS sends the next-month notice by the 10th; payment is by the 25th. If annual medical allocation does not cover the statutory reduced fixed amount for the referenced health category, the person pays the difference on the additional notice by 25 February of the following notice year; the notice is sent by 25 January. The current medical-budget art. 4 sets the referenced eligible amount at 2,527. The Finance Ministry's January 2026 overview says 2,572; the statute controls. This top-up is separate from the 15%/35% computation, and category/status/year facts must be verified. [Arts. 69^25–69^26][code]; [medical budget art. 4][medicalbudget].
 
-**Reasoning:**
-Client payment for services. Freelancer is VAT-registered (standard 20% VAT), so MDL 12,000 includes VAT. Net = 12,000 / 1.20 = MDL 10,000 (business income). VAT MDL 2,000 is a liability to SFS, excluded from income.
+Company-payer deductibility and employee reclassification remain distinct checks: art. 24(11^1)'s specific small-employer/payroll-cap or listed-main-activity route and art. 88(8) must be tested before treating a service-entrepreneur payment as outside payroll. IT-park/company SME rules are separate regimes and are not elective substitutes chosen from whichever headline rate is lowest. Full registration/cessation implementing rules, cumulative-band adjustments and actual payment-account/cash-register procedures remain explicit gaps for the country review. [Arts. 24(11^1), 54^1, 69^20–69^26, 88(8)][code].
 
-**Classification:** Business income = MDL 10,000. VAT MDL 2,000 excluded. (If NOT VAT-registered, the full MDL 12,000 is business income.)
+### Bank classification and the annual working paper
 
-### Example 2 -- SaaS Subscription (Fully Deductible)
+Retain gross receipt, original currency, fee, withholding, VAT component where legally established, date, counterparty and purpose for each movement. “SALARIU”/“SALARIZARE”/“AVANS” are wage/advance search hints; invoice/client/platform references are possible business receipts; “DIVIDENDE”, “DOBANDA”, “ROYALTY” and “CHIRIE” require their specific income classification. “CNAS”/“BASS”/“CONTRIBUTIE SOCIALA FIXA” and “CNAM”/“FAOAM”/“PRIMA ASIGURARE MEDICALA” require payer/category/year proof before a deduction. A statutory remittance is not automatically a business expense, and a net platform payout does not prove gross revenue.
 
-**Input line:**
-`01.04.2025 ; MICB CARD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -540.00 ; MDL`
+Use software/cloud/SaaS, utilities, telecom, professional/bank charges, travel, rent, contractors and equipment descriptions to gather invoices/contracts and business-use evidence, not to auto-approve a deduction. Transfers between own accounts, capital injections, loan proceeds/principal repayments, refunds, private gifts and asset sales require their own reconciliation. Do not infer taxable turnover, deductible business expenses or VAT from the direction of the bank movement alone. The old bank-format references (Maib/Moldova Agroindbank, MICB/Moldindconbank, OTP/Mobiasbanca and Victoriabank) are possible statement labels; Romanian debit/credit, sold/balance, comision, transfer, incasare and plata wording are parsing cues, not legal categories.
 
-**Reasoning:**
-Monthly SaaS subscription, recurring, used in producing income. Fully deductible as an operating expense.
+For a bank-only intake, reconcile accounts and transfers, request legal registration/residence/activity facts, gross-versus-net invoices/platform reports and expense documents, then identify what can actually be computed. No unverified maximum business-use percentage, automatic personal exemption, arbitrary “conservative” legal category or guessed fixed contribution is certified. Flag unresolved items individually with the fact/source needed to settle them.
 
-**Classification:** Deductible business expense = MDL 540.00.
+The annual working paper keeps taxpayer identity/residence/citizenship; period and regime registration; income by legal category/source and timing method; original-currency/MDL conversion; ordinary profit and deduction schedules; actual compulsory contributions; personal/spouse/dependent evidence and months; personal education/medical/insurance/home-interest evidence/caps; capital disposals, cost, recognised gains/losses and 50% inclusion; final/preliminary withholding; foreign credit by income and period; instalments; the correct return/form fields; payment/acceptance receipts; and remaining questions. Keep separate retail/plant/service and IT-park schedules. Reconcile cash to taxable income rather than presenting cash flow as the return.
 
-### Example 3 -- Employee Monthly Payroll (Net Pay)
+## Deadlines and filing
 
-**Input:** Employee, gross monthly salary MDL 16,100, standard personal exemption (MDL 2,475/month), no dependents, private sector.
+| Obligation | Method/deadline | Primary source |
+|---|---|---|
+| Ordinary non-business individual annual return | 30 April following the tax year when art. 83 requires filing; 2026 ordinary income therefore uses the following-year deadline | [Art. 83(2), (4)(b)][code] |
+| Individual entrepreneur/other resident organisational form | Separate art. 83(4)(a) 25th-of-third-month route; art. 83(11) unified return applies to the specified non-VAT individual entrepreneur/peasant farm with annual average staff not above 5 | [Art. 83][code] |
+| Justice/medical professional return and payments | Annual return by 25 March; quarterly payments by the 25th after the relevant quarter | [Art. 69^5][code] |
+| Ordinary final payment | By the statutory return due date; a filing extension does not automatically extend payment | [Art. 87(1)][code] |
+| Change of permanent domicile abroad | File for the resident part of the period; CET18 A 2 instructions require filing by the last working day before departure | [Art. 83(7)][code]; [CET18 point 7][cet] |
+| Specified nonresident cessation | Art. 74's covered nonresident files/pays within three days of ending activity; this is not a universal foreign-citizen deadline | [Art. 74(4)][code]; [CET18 point 7][cet] |
+| Covered resident private letting | Register the contract within 7 days; pay the 7% tax by the 25th of the current month, with the specified post-25th first-month exception | [Art. 90^1(3^4)][code] |
+| Retail assessment/payment | SFS quarterly notice by the 25th after the quarter; payment by the 25th of the month following the notice-presentation deadline; preserve quarterly/annual minimum and short-year rules | [Art. 69^12][code] |
+| Retail purchase register/cessation | Register submitted by the 25th after the year; cessation information within 5 days of the decision | [Arts. 69^7–69^8][code] |
+| Independent service entrepreneur | Notice by next-month 10th, tax by next-month 25th; medical top-up notice by following-year 25 January and payment by 25 February of that notice year | [Art. 69^26][code] |
+| Payroll reports/remittance | Separate monthly payment/withholding and contribution-accrual rules in the payroll/social Guides, rather than treating all three components as one bank amount | [Arts. 88, 92][code]; [payroll](moldova-payroll.md) |
 
-**Reasoning (Tax Code Title II; buhgalter.md; playroll):**
-1. Employee CAS 6%: 16,100 × 0.06 = MDL 966.00
-2. Employee CNAM 9%: 16,100 × 0.09 = MDL 1,449.00
-3. PIT taxable base = gross − CAS − CNAM − exemption = 16,100 − 966.00 − 1,449.00 − 2,475.00 = MDL 11,210.00
-4. PIT 12%: 11,210.00 × 0.12 = MDL 1,345.20
-5. Net pay = gross − CAS − CNAM − PIT = 16,100 − 966.00 − 1,449.00 − 1,345.20 = **MDL 12,339.80**
+Article 83 obliges the relevant individuals with tax payable, professionals regardless of tax, the stated percentage-designation cases and other specific categories. Someone entitled to a refund can file under art. 83(5). The separate art. 83(2)(a^2) filing trigger says annual taxable income **above** 360,000 after personal-exemption use; that does not change art. 33's strict entitlement test. At the exact boundary, calculate the actual liability and apply the general tax-payable filing rule rather than inventing an exemption or ignoring an unpaid liability. [Arts. 33, 83][code].
 
-Employer also pays CAS 24% on top: 16,100 × 0.24 = MDL 3,864.00 (employer cost, not deducted from the employee).
+### Select the business or professional return separately from CET18
 
-**Classification:** PIT withheld MDL 1,345.20; net pay MDL 12,339.80; employer CAS MDL 3,864.00.
+| Established legal category and reporting year | Approved form-selection method | Primary source |
+|---|---|---|
+| Individual entrepreneur or peasant farm satisfying art. 83(11) | **UNIF25** from reporting year **2025**, approved by SFS Order 300 of **5 June 2025**, published/effective **12 June 2025**. The last UNIF21 reporting period is **2024** | [SFS Order 300/2025, points 1–3][unif25order]; [Code art. 83(11)][code] |
+| Professional activity within chapter 10^1 | **DAP24** from reporting year **2024**, approved by MF Order 60 of **29 May 2024**, published/effective **7 June 2024**. The final reporting period for the replaced justice **DAJ17** and medical **DASS19** forms is **2023** | [MF Order 60/2024, points 1–3][dap24order]; [Code arts. 69^1–69^5][code] |
 
-### Example 4 -- General Self-Employed Annual Computation
+For the unified route, establish the actual registered individual-entrepreneur/farm category, **average annual staff over the entire tax period not exceeding five**, and absence of VAT registration as required by current article 83(11). The unified income-tax filing deadline is **25 March following the reporting year**. Separately, article 83(9) exempts a farm with no employees and no taxable income during the period from the income-tax declaration duty; that provision alone does not settle reporting of other taxes included in a unified form. Do not substitute an older form’s population for current article 83(11), or assume every self-employed person qualifies for the unified return. The named professional route follows chapter 10^1; a medical/justice business description alone does not establish that statutory status or its accounting method. [Code arts. 69^1–69^5, 83(9), (11)][code]; [SFS Order 300 points 2–3][unif25order]; [MF Order 60 points 1–3][dap24order].
 
-**Input:** Resident sole proprietor, general regime (not IT Park, not justice sector, no employees), net business income MDL 300,000, not VAT-registered, single, no dependents, NOT employed elsewhere. Annual income exceeds MDL 360,000 ceiling? No -- but it does NOT exceed it, so the personal exemption is available. (300,000 ≤ 360,000.)
+Both orders have a **point-4 early-obligation exception**: where the reporting obligation arose before approval/publication, the return uses the forms in force at actual submission. Preserve the reporting year, obligation date, actual submission date and applicable form version; do not turn that transitional exception into a general right to choose a superseded form for 2026. The orders approve separate form and completion-instruction annexes. Both form/instruction pairs are now downloaded and retained. All three DAP24 form pages and all four instruction pages were read and visually inspected. The remaining UNIF25 form pages 3–4 and instructions 36–136 have since been read and visually checked; selected supporting, annual-payment and property-reporting methods are supplied below and in the connected Guides. The actual supplied form has tables 1,3,4,6,7, with no separate social-calculation tables 2/5. Downloading the files does not prove portal acceptance or resolve the inconsistencies identified below. [SFS Order 300 points 1–4][unif25order]; [MF Order 60 points 1–4][dap24order].
 
-**Reasoning:**
-1. PIT base = net business income − personal exemption = 300,000 − 29,700 = MDL 270,300
-2. PIT 12%: 270,300 × 0.12 = MDL 32,436.00
-3. Fixed annual CAS (individual insurance contract, general): MDL 20,518 [State Social Insurance Budget Law 2025]
-4. Fixed annual CNAM (fixed-sum premium): MDL 12,636 [IPN; logos-pres]
-5. Total annual liability = 32,436.00 + 20,518 + 12,636 = **MDL 65,590.00**
+### UNIF25 income-tax worksheet
 
-**Classification:** PIT MDL 32,436.00; CAS MDL 20,518; CNAM MDL 12,636.
+The instructions require electronic filing, **A** for an individual entrepreneur and **B** for a peasant farm, a **year-only AAAA** period, registered taxpayer identity, CUATM locality and four-digit CAEM activity. If the staffing/VAT conditions cease to hold, instruction 3 requires ordinary returns for the nonconforming periods, with each first tax/payment return reporting cumulatively from the first day of the period in which the obligation arose. Instruction 4 requires the unified return for the whole relevant fiscal period when moving from ordinary reporting into the unified class. Establish the actual change dates and liabilities before applying either route. [UNIF25 instructions 1–10][unif25instructions]; [Code art. 83(9),(11)][code].
 
-> Note: whether the personal exemption is deductible against entrepreneurial income (as opposed to employment income) for a sole proprietor should be confirmed by a reviewer. [RESEARCH GAP -- reviewer to confirm exemption applicability to entrepreneurial income.] If unavailable, PIT = 300,000 × 0.12 = MDL 36,000.00 and total = MDL 69,154.00.
+| UNIF25 table-1 field | Income-tax reconciliation | Source |
+|---|---|---|
+| 010–040 | 010 = accounting income 0101 − expenses 0102, keeping a loss negative; income adjustments come from instruction annex 6, expense adjustments from annex 7; **040 = 010 + 020 − 030** | Instructions 11–16 |
+| 050–060 | Actual allowed philanthropic/sponsorship and ordinary undocumented-expense deductions; the instructions specify **040 × 5%** and **040 × 0.2%** ceilings, subject to current Code qualification/evidence | Instructions 17–18; Code arts. 24(10), 36 |
+| 0701; 070; 100 | Eligible founder personal/spouse/dependent relief from table-1 annex 2, unused elsewhere and no more than positive 040−050−060; **070 = max(040−050−060−0701, 0)**. A negative result is reported without a minus sign in **100** | Instructions 19–20, 25, 35 |
+| 080; 0901; 0902; 090 | Qualifying carried loss is capped at 070; **0901 = 070−080**; authorised exempt income 0902 cannot exceed 0901; **090 = 0901−0902** | Instructions 21–24 |
+| 120; 130; 150 | Compute tax through table-1 annex 1 using the actual legal category's Code article-15 rate: ordinary individual entrepreneur **12%**, peasant farm **7%**. Apply only authorised tax relief in 130; **150 = 120−130** | Instructions 26–28, 34; actual form annex 1; Code art. 15(a),(c) |
+| 140; 160–200 | **140 is informational**, not a second tax deduction. Eligible foreign credit 160 comes from instruction annex 10. Positive 170 =150−160; instalments go in 180; payable **190 =150−160−180**, excess payment **200 =160+180−150** | Instructions 29–33; actual form table 1 |
 
-### Example 5 -- Dividend Receipt (Final Withholding)
+Sources: [UNIF25 actual income-tax form and annexes][unif25form], [instructions 11–35][unif25instructions] and cited [current Code][code]. Table-1 annex 2 separates the standard personal **P**, increased personal **M**, qualifying spouse **Sm**, ordinary dependent **N** and qualifying disabled dependent **H** fields. Use the actual Code entitlements once, rather than adding standard and increased personal relief together. The **360,000** strict personal-income gate remains current; apply the full article-33(1^1) income test as well. The supporting schedules below and connected payroll/cross-border/overview methods extend this map; actual category codes, local rates and the stated implementation inconsistencies still require their own evidence. [Instruction 35][unif25instructions]; [Code arts. 33–35][code].
 
-**Input line:**
-`20.06.2025 ; VICTORIABANK ; SC EXEMPLU SRL ; DIVIDENDE 2024 ; +47,000.00 ; MDL`
+### UNIF25 supporting schedules and signed adjustments
 
-**Reasoning:**
-Dividends suffer a 6% final withholding tax at source [PwC]. If MDL 47,000 is the net amount received, the gross was 47,000 / 0.94 = MDL 50,000 and the 6% tax (MDL 3,000) was already withheld. No further PIT is due; this is generally final.
+The remaining approved instructions supply table-1 annexes 3–10. Use these for an actually eligible UNIF25 taxpayer; the current Code still controls the tax category, expense qualification, relief and credit. The full original instructions are retained, including the inconsistencies below. [Instructions 36–118][unif25instructions]; [current Code arts. 15, 82–84][code].
 
-**Classification:** Investment income, final WHT 6% already settled. Exclude from the 12% PIT base. Flag to reviewer whether amount shown is gross or net.
+| Schedule | Filing method |
+|---|---|
+| Annex 3, next-year instalments | If article 84 applies, select forecast current-year tax or preceding-year tax; ordinary instalments are one quarter by 25 March/25 June/25 September/25 December. A qualifying agricultural business/farm can use one quarter by 25 September and three quarters by 25 December. Check the statutory exclusions and reporting period before choosing. [Instructions 36–38][unif25instructions]; [Code 84][code] |
+| Annex 4, territorial allocation | Required for a taxpayer registered in Gagauzia, or registered elsewhere with a subdivision there. Aggregate outside-Gagauzia subdivisions at locality 0100 and use the relevant locality codes inside Gagauzia. The total equals main row 170, before instalments. Current Code 84(3) permits the specified prior-year employee-count or income allocation. For the employee-count route, instructions 43–44 separately address new subdivisions and liquidation: a new subdivision has no prior-year count and its amount goes to headquarters; a liquidated subdivision receives only its full active quarters, excluding its liquidation quarter, with the balance at headquarters. A declared tax loss does not require this annex. [Instructions 39–45][unif25instructions]; [Code 84(3)][code] |
+| Annex 5, founder allocation | Record founder names/identifiers and actual eligible founder relief. Total relief ties to 0701 and cannot exceed positive 040−050−060. Allocate 090 taxable income, 120 tax and 130 tax relief according to participation. The actual form separately shows final tax in column 10 as 6−7; instruction 50 only describes columns 8–9. Preserve the authorised relief working paper rather than treating a taxable-income column as tax payable. [Instructions 46–50][unif25instructions]; [actual form page 2][unif25form] |
+| Annex 6, income adjustment | Column 2 is the financial-accounting amount, 3 is the legally taxable amount, 4 is 3−2. Sum the actual listed rows into 020. The table includes 02041/02042 replacement-property rows, 0206 fixed-asset sale and 0207 donation, with the separate 6.1 valuation schedule. Apply the underlying current law before setting a printed zero or using a corporate-only description for an individual taxpayer. Instruction 67 misnames this annex as 5 and starts its sum at an unprinted 0202; use the actual annex 6 and its listed codes. [Instructions 51–67][unif25instructions] |
+| Annex 7, expense adjustment | Column 2 is book expense, 3 is the allowable tax amount, 4 is 3−2; total 030 is then **subtracted** in main 040. A disallowed cost produces a negative adjustment, which adds it back to accounting profit. Relevant actual codes include 0301 personal/family, 0302 travel, 0303 insurance, 0304 representation, 03012 depreciation, 03015 bad debts, 03019 statutory fines, 03020 fixed-asset sale/donation loss, 03022 intangible amortisation, 03025 qualifying cash philanthropy, 03026 undocumented costs, 03031 wastage and 03034 rented-asset repair. Apply each current substantive condition and the separate main 050/060 deduction route; do not deduct the same cost twice. [Instructions 68–97][unif25instructions] |
+| Annex 7.1, representation | Reconcile financial income 03041 plus income adjustment 03042 into gross income 03043. The ordinary 0.75% ceiling is applied to that base; allowable 03045 is the lesser of actual 03044 and the ceiling, transferred to annex 7/0304 tax column 3; actual expense goes to its book column 2. Instruction 79's separate depreciation citation says 704/2018; the actual governing asset regulation is 704/2019, also named in instruction 54. [Instructions 72–73,79][unif25instructions]; [current business methods](md-corporate-income-tax.md) |
+| Annexes 8–9, authorised relief | Keep the relief code, actual enabling law/date and the income-exemption versus tax-reduction distinction. Annex 8 income cannot exceed 0901 and feeds 0902; its tax-equivalent 140 is informational. Annex 9 computes the authorised tax reduction into 130. Instruction 102 prints a general 12% assumption; do not transplant it into a farm's 7% legal category. Verify the applicable relief and rate against current Code 15 and its own enabling law. [Instructions 98–108][unif25instructions]; [Code 15][code] |
+| Annex 10, foreign credit | Use a separate country column and the approved country classifier.16011 is foreign tax paid; 16012 foreign income; 16013 related costs; 16014=16012−16013; 16015=main 090; 16016=16014/16015×100%; 16017=main 150; 16018=16016×16017/100. Each 1601 credit is the lesser of 16011 and 16018, and total 1601 feeds main 160. Current Code 82 requires qualifying foreign-tax evidence and the same Moldova income-tax period. Do not apply a division-by-zero or loss-country convention that the instructions do not supply. [Instructions 109–118][unif25instructions]; [Code 82][code] |
 
-### Example 6 -- Fixed Contribution Payment (CAS)
+For example, assume accounting profit 100,000, a supported income adjustment+2,000, and these legally established book/tax expense pairs: personal 1,000/0; travel 9,000/8,000; depreciation 20,000/24,000; rented repair 22,000/15,000. Their tax-minus-book differences are−1,000,−1,000,+4,000,−7,000, totalling 030=−5,000. Main 040 is `100,000+2,000−(−5,000)=107,000`, before separate donations, undocumented-cost deductions, founder relief and carried losses. These are assumed eligible amounts, not replacement limits or proof that any particular invoice qualifies. [Actual annex 6/7 columns and instructions 51,68,97][unif25instructions]; [main form 040][unif25form].
 
-**Input line:**
-`31.03.2025 ; MAIB PLATA ; CNAS BASS ; CONTRIBUTIE FIXA 2025 ; -20,518.00 ; MDL`
+### DAP24 professional-income worksheet
 
-**Reasoning:**
-Annual fixed CAS for a self-employed individual under an individual insurance contract, general regime [State Social Insurance Budget Law 2025]. This is a contribution payment, not a business expense; it is tracked separately and reduces the PIT base only to the extent the statute allows (employee CAS/CNAM are deductible; for fixed contributions, confirm with reviewer).
+Use the actual registered professional category. The form lists **A** notary, **B** bailiff, **C** lawyer's individual office, **C1** lawyer within a law office, **D** trainee lawyer, **E** authorised administrator, **F** mediator, **G** judicial expert and **H** the individual family-doctor office. The printed category does not establish that an ordinary clinic or other company is a chapter-10^1 professional. Instructions 1–5 require the actual period, professional registration/name, fiscal code and activity-location CUATM. Instruction **6** requires amounts in MDL rounded to the nearest whole leu; retain the underlying calculation, without inventing a halfway-tie or portal-rounding convention not stated there. [Actual DAP24 form][dap24form]; [instructions 1–6][dap24instructions]; [Code arts. 5(36^2), 69^1–69^5][code].
 
-**Classification:** CAS fixed contribution MDL 20,518. [RESEARCH GAP -- reviewer to confirm deductibility of fixed CAS against the PIT base.]
+| DAP24 field | Professional-income reconciliation | Source |
+|---|---|---|
+| 0101; 01011; 01012; 0102; 010 | Professional income less professional expenses; preserve a loss's negative sign. Health professionals separately identify CNAM primary-care contract receipts in 01011 and other permitted receipts in 01012 | Instructions 7–11 |
+| 020; 030; 040 | Income adjustments and annex-1D expense adjustments; **040 =010+020−030** | Instructions 12–14 |
+| 050; 060; 070; 080 | Allowed charity/ordinary undocumented deductions; unused eligible personal relief **070 ≤ max(040−050−060,0)**; **080 =max(040−050−060−070,0)**. Personal relief cannot create or deepen a tax loss | Instructions 15–18; Code arts. 24(10), 33–36 |
+| 090; 100; 110 | Eligible carried loss 090 cannot exceed 080; taxable **100 =080−090**. Current-period loss is recorded as a positive magnitude in **110** | Instructions 19–21; actual form |
+| 120; 130; 140; 150 | Current article-15(a) **12%** rate in 120; tax **130 =100×120**; eligible article-82 foreign credit in 140; positive **150 =130−140** | Instructions 22–25; Code arts. 15(a), 82 |
+| 160; 170; 180 | Actual qualifying income-tax payments in 160; payable **170 =130−140−160** if positive; excess payment **180 =140+160−130** if the balance is negative | Instructions 26–28; actual form |
 
-### Example 7 -- Internal Transfer (Exclude)
+Sources: [DAP24 form][dap24form], [instructions 7–28][dap24instructions] and the cited [current Code][code]. Do not copy UNIF25 row numbers: professional personal relief is **070**, carried loss **090**, tax **130** and excess payment **180**, whereas the unified form uses different rows.
 
-**Input line:**
-`15.05.2025 ; MAIB TRANSFER ; CONT PROPRIU ECONOMII ; ; -25,000.00 ; MDL`
+**Expense and relief schedules.** Annex 1D records book amounts in column **2**, tax amounts in **3**, and the signed **3−2** adjustment in **4**. Rows **0301–0309**, plus the final other-cost row, cover personal/family costs, interest, premises rent, leased-asset repairs, depreciation, fines, cash philanthropy/sponsorship, ordinary undocumented costs, membership/entry fees and other costs; the total transfers to main row 030. The printed form labels the final “other costs” row **0310**, while instructions 38–39 call it **03010** and describe the total as 0301–03010. Keep the named expense-category amounts and both exact source codes in the working paper; the accepted electronic code remains unconfirmed. Apply the current statutory conditions and the companion corporate Guide's sourced asset/expense methods, rather than treating a printed expense row as permission to deduct it. [Form annex 1D][dap24form]; [instructions 29–39][dap24instructions]; [Code arts. 23–26^1, 30, 36][code].
 
-**Reasoning:**
-Transfer between own accounts. Neither income nor expense. Exclude entirely.
+Annex 2D requires the professional's identity, each dependent's ID on a separate row where needed, qualifying spouse identity and actual allowed relief, with the total transferred to 070 under instruction 51's cap. **The source contains a real cross-reference inconsistency:** instruction 44 says S/H columns 10/11, but the actual form and instructions 49–51 identify ordinary dependent **N in 9**, qualifying disabled dependent **H in 10** and total **11**. The form's total-header formula also includes column 11 itself. Do not compute a self-referential total or copy that defective legend. Keep a named-field working paper containing the actual Code-allowed personal, spouse and dependent amounts once, capped as required; the correct electronic field validation still needs confirmation. Annex 3D records the designated beneficiary's fiscal code under the separate article-15^2 route, rather than creating another business-expense deduction. [Actual form annexes 2D–3D][dap24form]; [instructions 40–52][dap24instructions]; [Code arts. 33–35][code].
 
-**Classification:** EXCLUDE.
+Use the correct annual form for the legal category. CET18 is approved by Order 150/2018 for its stated resident/nonresident individual scope, not every sole-trader/professional/special-regime return. The currently read April 2026 instructions require the relevant identity and category, actual source income even when documentation is incomplete, and amounts in lei/bani. Electronic filing requires an accepted receipt; paper/postal/electronic alternatives have the instruction's identity/signature/acceptance conditions. This Guide does not authorise any filing or message. The form/version applicable to reporting 2026 income must be checked before actual filing. [CET18 points 1–18, 69][cet].
 
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
+For covered resident CET18, C1 records wages and withholding; C2 takes taxable capital gains from K8; C3 records the specified foreign investment/financial income and capped foreign tax; C4 other taxable income; C5 totals. D records actual personal/spouse/dependent relief, E actual legal deductions and evidence; F calculates taxable income, any required donor adjustment, tax, credits/self-paid amounts and payable/excess. Capital table K records asset/type/date/proceeds/cost, gains/losses and the 50% net inclusion. Do not copy final-withholding art. 90^1 receipts into ordinary gross or put an unverified deduction into “other”. Resolve the education-cap instruction conflict above, retain the Government Decision 693 evidence schedule, and use the now-read cost-document annex and actual return map below, keeping named sign/cap/portal questions explicit. [CET18 points 19–46, 60–67][cet]; [Code arts. 21, 33–35^2, 39–42, 81–82, 90^1][code].
 
-### 5.1 The Flat 12% Rate
+### Reconcile the actual current CET18 form
 
-- **Flat 12% rate rule** — Resident individuals pay a flat 12% on employment, professional and entrepreneurial income, capital gains, and other taxable income -- there are no progressive brackets in 2025. Farming/agricultural enterprises are taxed at a reduced 7% on entrepreneurial income.  _(Tax Code, Title II [PwC Moldova Individual -- Taxes on personal income; PwC])_
+The current Order 150 link supplies the form amended by Order 53, effective **3 April 2026**. The complete original DOCX is retained; all five rendered pages and its actual tables have been read. Preserve the Code's taxpayer population and filing route above instead of treating every box as applicable to everyone. [Actual CET18 annex 1](https://www.legis.md/UserFiles/Image/RO/2026/mo148-151ro/an1_150md.docx); [current approval and instructions][cet], attachment read 31 October 2026.
 
-### 5.2 The Monthly Payroll PIT Base
+| Actual form area | Field method |
+|---|---|
+| A and B | Select the actual citizen/departing-citizen/other/nonresident foreign or stateless/foreign tax-resident category, then record identity, domicile/residence, fiscal identifier and applicable spouse/dependent identifiers. The form's non-penalty note for omitting optional B7 contact details does not waive identity or income reporting. |
+| Resident C | Record wages C1, K8 capital inclusion C2, covered foreign income C3 and other taxable income C4. C3's investment/dividend and financial/interest/royalty lines are subdivisions, not additional income to add again. Total C5 is **C1+C2+C3+C4**; keep gross income column 3 separate from eligible tax/credit column 4 and apply the Code's foreign-credit evidence/ceiling rules. |
+| Relief D | D3 is marked `X`. D7 is **(D1 or D2)+D4+D5+D6**, using only actual entitlements. Do not combine ordinary and increased personal relief, revive the crossed-out spouse field or assume that an identifier establishes eligibility. |
+| Deductions E and evidence table 1 | E1 mandatory medical; E2 individually paid fixed social; E3 voluntary medical; E4 qualifying medical services; E5 covered insurance; E6 first-home interest; E7 covered own education/training and dependent-child education; E8 other legally established deductions. E9 totals E1–E8 and DE = D7+E9. For E3–E7, record sequence, deduction code, proof type, document number/date, provider fiscal identifier/name and actual expense. Keep proof of gross spending separate from the legally deductible amount. |
+| Resident calculation F | F1 = C5 column 3−DE; F2 actual monetary donation; F3 the required positive donor-income adjustment under Code 21; F4 = F1+F3; F5 uses the applicable legal rate on F4. F6 subtracts the eligible C5-column-4 total; F7 records self-paid tax. A positive F6−F7 goes to payable F8; a negative result's magnitude goes to excess F9. Preserve the legal treatment of losses, exempt receipts and credits before making these transfers. |
+| Nonresident H and J | H1 is the covered salary less statutory medical premiums; H2 property-use/leasing; H3 capital inclusion; H4 interest; H5 royalty; H6 other covered Moldova income. H7 totals H1–H6; dividend H8 is separate. J1–J5 record applicable tax, eligible withholding, self-payment and payable/excess. The form's generic reference to Code 91 does not create one rate for all nonresident income. Apply the actual collection/treaty route, including its express treaty-applied-income exclusion note, with the cross-border Guide's evidence conditions. |
+| Capital K | K1 asset code; K2 disposal code; K3 proceeds/value recognised for tax; K4 transaction date; K5 documented adjusted basis; K6 gains; K7 losses; K8 statutory taxable inclusion transferred to C2 or H3. The printed asset labels are MT vehicle, ALT other immovable property, TR land, CP participation, OB bonds, AAC other capital assets and AT shares. Disposal labels are VIN sale, DON gift, SCH exchange and AMS other. Preserve the actual source encoding and accepted portal code rather than silently replacing lookalike characters. |
+| Optional M and signature | M1 identifies the beneficiary of the optional percentage designation; eligibility and the statutory designation procedure must be established separately. Record declarant signature/date and the appropriate accepted receipt. Neither a blank form nor the printed receipt area proves a filing was accepted. |
 
-- **Monthly PIT base formula** — Monthly PIT base = gross salary − employee CAS (6%) − employee CNAM (9%) − applicable monthly personal/dependent exemptions. The 12% rate is applied to that base. PIT is withheld and remitted by the employer by the 25th of the following month.  _(Tax Code, Title II; administrative practice [buhgalter.md; playroll])_
+Table source: [complete actual CET18 form](https://www.legis.md/UserFiles/Image/RO/2026/mo148-151ro/an1_150md.docx); statutory conditions and current instruction references remain those above.
 
-### 5.3 Personal and Dependent Exemptions
+**Education field.** The actual E7 label expressly includes own education/professional training and covered dependent-child education, referring to Code 35^2(6). That supports using the same E7 field for the statutory **MDL 20,000 aggregate ceiling**, shared across those beneficiaries. It does not resolve authenticated portal enforcement of that ceiling against the instruction's conflicting generic forecast-salary wording in point 34^7. Apply the Code's 20,000 limit in the working paper and retain the eligibility/payment proofs; do not reduce it to the generic lower forecast cap merely because the instruction says E3–E7 together. [Actual E7 and evidence table](https://www.legis.md/UserFiles/Image/RO/2026/mo148-151ro/an1_150md.docx); [Code 35^2(6)][code]; [instruction points 34^6–34^7][cet].
 
-- **Standard personal exemption** — MDL 29,700/year (MDL 2,475/month)  _([PwC; salarii.md])_
-- **Increased/major personal exemption** — MDL 34,620/year (MDL 2,885/month) for qualifying persons  _([PwC; salarii.md])_
-- **Spouse (major) exemption** — MDL 21,780/year, transferable if the spouse has no income  _([PwC])_
-- **Dependent exemption** — MDL 9,900/year per dependent (MDL 21,780/year for a dependent with a severe childhood disability)  _([PwC; salarii.md])_
-- **Exemption ceiling** — All exemptions are available only if annual taxable income does not exceed MDL 360,000  _([PwC; salarii.md])_
+**Capital-loss sign conflict.** The form prints K7 as K3−K5, and instruction 66 describes a negative difference, while K8 then subtracts K7. The Code permits losses only within gains and taxes 50% of the recognised excess. The statutory working paper therefore records total gains and the **positive magnitude** of total losses, with inclusion **50% × max(gains−losses, 0)**. Do not subtract a negative loss and increase taxable gains. The actual accepted K7 machine-field sign remains untested; this inconsistency is retained rather than presented as a verified portal algorithm. For assumed recognised gains of MDL 30,000 and losses of MDL 10,000, the statutory inclusion is MDL 10,000, not MDL 20,000. [Actual K table](https://www.legis.md/UserFiles/Image/RO/2026/mo148-151ro/an1_150md.docx); [instructions 65–67][cet]; [Code 40(7), 41(1)][code].
 
-### 5.4 Deductibility of Contributions from the PIT Base
+A non-business person can request a reasonable filing extension in writing before the deadline under art. 83(8); final payment still follows art. 87. A refund, amendment, late filing or departure case needs the actual accepted form, assessment and account movements. Do not substitute the historic 2025 filing example for 2026's return period. The enacted UNIF25/DAP24 selection and transition rules are supplied above; the remaining UNIF25 tax sections/later annexes, DAP24 source inconsistencies, special-regime entry/cessation details and portal implementation remain open below.
 
-- **Deductibility of employee CAS/CNAM** — Both employee CAS (6%) and employee CNAM (9%) are deductible when computing the PIT taxable base. This is what makes the Example 3 base lower than gross.  _([PwC Moldova Individual -- Deductions])_
+## Penalties and interest
 
-### 5.5 Social Insurance (CAS / BASS)
+**Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
 
-**Social Insurance (CAS / BASS) table**  _(Law No. 489/1999; State Social Insurance Budget Law for 2025)_
+**Medical and social rates remain separate.** Medical Law 1593 art. 30(1)–(1^1) applies the Code method from **1 January 2026**, as recorded in the January text and Law 146/2025 commencement annotations, so the above 2026 medical daily rate is **0.0301%**. Preserve art. 30(2)'s documented inter-account-transfer examination exception. Social-contribution late charges retain the separate **0.1%** annual-budget rate; do not use it for ordinary tax or medical premiums. [Current Law 1593 art. 30](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro); [January art. 30 and commencement](https://www.legis.md/cautare/getResults?doc_id=149273&lang=ro); [Law 320/2025 art. 4](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro).
 
-| Payer | Rate / amount | Base | Notes |
-| --- | --- | --- | --- |
-| Employer (private sector, standard) | 24% | Gross remuneration, meal tickets, other | No salary ceiling; 32% for special working conditions [PwC] |
-| Employee | 6% | Gross salary | Withheld by employer; deductible from PIT base [buhgalter.md; rivermate; playroll] |
-| Self-employed (individual insurance contract, general) | MDL 20,518/year (fixed) | -- | Annual fixed amount, 2025 [State Social Insurance Budget Law 2025] |
-| Self-employed (justice sector -- lawyers, notaries, bailiffs, forensic experts, mediators, authorised administrators) | MDL 27,772/year (fixed) | -- | Annual fixed amount, 2025 [State Social Insurance Budget Law 2025] |
+For ordinary tax late payment, art. 228 charges from the day after due date through payment inclusive, subject to actual debt movements, the statutory BNM-derived annual daily-rate formula and exceptions. Do not compound by automatically adding late charges to principal. Social and medical contribution arrears have separate statutory routes, with social's annual-budget 0.1% and the medical tax-code reference described in the social Guide. [Code art. 228][code]; [Law 489 art. 28][social]; [Law 1593 art. 30][health].
 
-- **Agriculture CAS split** — Agriculture: 24% total (18% employer-paid + 6% from the state budget)  _([PwC])_
+Identify the art. 232 taxpayer category before a filing fine. Article 260(1) distinguishes 200–400 per declaration and a 2,000 total cap for the specified non-business individual category from 500–1,000 and 10,000 for its other stated categories. Understatement through untrue return information has art. 261(4)'s separate 20%–30% sanction and qualifying self-correction exception; evasion has its 80%–100% rule. A registered entrepreneur or professional cannot assume the non-business fine category merely because the taxpayer is a natural person. Retain the actual notice, period, offence, correction and payment facts. [Arts. 232, 260–261][code].
 
-### 5.6 Health Insurance (CNAM / CAM)
+The special rental registration/assessment, special-regime notice duties and fiscal estimation provisions are not replaced by these ordinary fine summaries. Do not conclude criminal/administrative exposure or complete settlement from a bank statement alone. Full special-offence/appeal implementation remains a gap; use the actual decision and governing provision.
 
-**Health Insurance (CNAM / CAM) table**  _(Law No. 1593/2002; Mandatory Health Insurance Funds Law for 2025)_
+### Assessment, collection and refund limitation
 
-| Payer | Rate / amount | Base | Notes |
-| --- | --- | --- | --- |
-| Employee | 9% | Wages and other remuneration | Fully employee-borne; employers do NOT pay a separate percentage, only withhold and remit; deductible from PIT base [PwC; playroll; salarii.md] |
-| Individual paying fixed sum (notaries, lawyers, bailiffs, family doctors in private practice, etc.) | MDL 12,636/year (fixed) | -- | Fixed annual premium, 2025 (unchanged into 2026) [IPN; logos-pres] |
+Use **current Code 264’s statutory start dates**, rather than the actual date a late return/payment was made. Under 264(1)(a), tax and late charges can be determined within **four years from the last statutory filing date**, or the payment due date if no return is prescribed. Tax-specific sanctions use the corresponding statutory filing/payment date under 264(1)(b); sanctions unrelated to a particular tax use the offence date under 264(1)(c). Paragraph 2 is repealed. Under 264(3), SFS can extend the period subject to control, **not beyond six years from the last statutory filing date**, where no return was submitted or the taxpayer seeks an overpayment/statutory refund. These are conditional powers and clocks, not a universal six-year assessment period. [Code 264](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), read 31 October 2026.
 
-> Some EOR guides report an employer health split of 4.5% / 4.5%. This is OUTDATED -- since 2021 Moldova's CNAM on salaries is a single 9% employee-borne contribution with no separate employer percentage [confirmed by PwC and playroll].
+**Collection is separate.** For an obligation determined within 264, 265(1) requires the specified enforcement action/court referral within six years after determination. The clock is subject to 265(2)’s suspension circumstances, resumes when the circumstance ends under 265(3), and is interrupted under the Civil Code with a fresh period under 265(4)–(5). The suspension list covers the stated detention/absence, deferral/instalment, court, insolvency, special-record and enforcement circumstances. Do not infer expiry solely by adding six calendar years; the applicable Civil Code interruption grounds and case-specific event dates still require verification. [Code 265](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-### 5.7 Contribution & Payroll Totals (Standard Private-Sector Employee)
+**An offset/refund application has its own clock.** Under 266(1), apply within six years from the relevant payment/arising of the amount; filing suspends that period. A late application is invalid unless SFS reinstates/accepts it under 266(2) on evidence that the taxpayer could not comply. Unclaimed amounts are cancelled under the Government procedure in 266(3), whose detailed implementation is not supplied here. This time limit does not itself prove a substantive credit/refund entitlement. Retain statutory due dates, actual filings/refund applications, determination/enforcement dates, suspension/interruption evidence and decisions separately. [Code 266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-**Contribution & Payroll Totals table**
+## Cross-border points
 
-| Component | Employee | Employer | Total |
-| --- | --- | --- | --- |
-| Social insurance (CAS / BASS) | 6% | 24% | 30% |
-| Health insurance (CNAM / CAM) | 9% | 0% | 9% |
-| **Total contributions** | **15%** | **24%** | **39%** |
+Apply the actual residence/citizenship and income-source categories in arts. 5, 13–14. A Moldovan citizen's taxable foreign financial income is not automatically exempt because it was retained abroad; a resident foreign citizen's non-business foreign investment/financial income has the stated statutory exclusion. Business/professional worldwide income, services performed in Moldova for a foreign payer, employment, management remuneration and nonresident Moldova-source income require their distinct statutory/treaty routes. Do not apply the employee “183-day” residence definition as a treaty employment exemption. [Arts. 5, 13–14, 71, 74, 79^3][code].
 
-Arithmetic check -- employee column: 6 + 9 = 15. ✓ Employer column: 24 + 0 = 24. ✓ Total column: 30 + 9 = 39, and 15 + 24 = 39. ✓ (PIT of 12% is additional and is borne by the employee on the post-contribution, post-exemption base.)
+For art. 82 foreign-tax credit, establish that the same foreign income is included in Moldova in the relevant period, obtain actual competent-authority-certified payment/withholding, translate unless English/Russian, and cap the credit at Moldova's tax on that income. Keep gross foreign income and allowable foreign tax separately in the annual schedule. A larger foreign tax does not create an unrestricted Moldova refund, and a final domestic withholding is not an additional foreign credit. [Arts. 16, 81–82][code]; [CET18 point 22][cet].
 
-### 5.8 Final Withholding Taxes
+Treaty relief needs the operative agreement/protocol, income article, entitlement and residence evidence. For an individual nonresident, art. 79^3 requires the competent foreign residence certificate in original paper/electronic form by payment, subject to its translation, validity, changed-status and first-60-days provisions. Without the certificate use domestic law; the later-certificate recalculation/refund route has its own conditions and corrected reporting. Obtain actual coverage/certificates separately for social insurance. No treaty-rate range, country-specific exemption or automatic foreign-tax refund is certified by this draft. [Art. 79^3][code]; [social Guide](moldova-social-contributions.md).
 
-**Final Withholding Taxes table**
+## Two worked examples that recompute
 
-| Income | Rate | Source |
-| --- | --- | --- |
-| Dividends (general) | 6% | [PwC] |
-| Royalties | 12% | [PwC] |
-| Gambling / lottery / sports winnings (on amount exceeding MDL 297) | 18% | [PwC] |
+### 1. Ordinary registered individual entrepreneur, paid contributions and personal relief
 
-- **Withholding finality** — These are withheld at source and are generally final -- exclude from the 12% PIT base.
+Assume a resident ordinary individual entrepreneur using the cash method, outside the retail, plant-purchasing, independent-service, IT-park and other special regimes. The verified business receipts are 300,000 and actually paid qualifying ordinary operating expenses 50,000, excluding the personal contributions below. No loss, capital asset, VAT adjustment or other deduction. The person actually paid the correctly classified compulsory fixed social contribution 22,878 and eligible medical premium 2,527; neither was deducted elsewhere. The standard personal exemption is available for the full period, with the statutory income test satisfied, and amounts to 29,700. Taxable income is 194,895; 12% tax is 23,387.40. Creditable evidenced advances of 20,000 leave 3,387.40 payable. Select the entity's actual return under art. 83 rather than automatically labelling it CET18; the example is the tax working paper. [Arts. 15, 24, 33, 35^2, 44, 81–87][code]; [CNAS fixed category][cnas]; [medical budget art. 4][medicalbudget].
 
-### 5.9 Independent Retail-Sale Regime (Chapter 10², 2025 only)
-
-- **Independent retail-sale regime** — Individuals doing independent retail sales (not legal entities) are taxed at 1% of declared income, not less than MDL 3,000 per year. In force during 2025; superseded by Law No. 228/2025 from 1 Jan 2026.  _([PwC])_
-
-### 5.10 IT Park (MITP) Single Tax
-
-- **IT Park single tax** — Residents of the Moldova Innovation Technology Park pay a single 7% tax on turnover (excl. VAT), covering corporate income tax, employee PIT, social and health contributions, and most local/real-estate/road taxes -- but not less than a per-employee minimum equal to 30% of the average monthly forecast salary. Eligibility requires 70%+ of revenue from qualifying IT activities. If a client is an IT-Park resident, do NOT run the general 12% computation (Refusal R-MD-6).  _([PwC; deschidecompanie.md])_
-
-### 5.11 Filing & Payment
-
-**Filing & Payment table**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Annual return | CET18 -- Declarația persoanei fizice cu privire la impozitul pe venit | [PwC; logos-pres] |
-| Filing deadline | 30 April of the year following the reporting year (e.g., 30 April 2026 for 2025) | [PwC; logos-pres] |
-| PIT settlement | Same deadline -- 30 April of the following year | [PwC] |
-| Payroll PIT/CAS/CNAM remittance | By the 25th of the month following payment | [playroll] |
-| Foreign-citizen return | Within 3 days of ending activity in Moldova | [PwC] |
-
-### 5.12 Penalties
-
-**Penalties table**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Late filing / failure to file | MDL 500 to MDL 1,000 per return, capped at MDL 10,000 total | [PwC Corporate -- Tax administration] |
-| Understatement (incorrect return reducing tax/CAS/CNAM) | 20% to 30% of the under-declared amount | [PwC] |
-| Diminishing taxable income (deferred-payment beneficiaries, 2023-2025 profit) | 12% to 15% of undeclared/diminished income | [PwC; intelcont] |
-| Tax evasion | 80% to 100% of the evaded amount (plus criminal sanctions where evasion exceeds 50 average forecast salaries) | [PwC] |
-| Late-payment interest (majorare de întârziere) | NBM short-term policy rate rounded up + 5 percentage points; set at 9% per annum for 2025; accrues daily | [PwC; intelcont; Orbitax] |
-
-> The 0.0301%/day figure on PwC's individual page reflects a later/2026 rate, not the 2025 9% p.a. figure [caveat].
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office Deduction
-
-- Calculate the proportion of the home used for business (dedicated room(s) as a percentage of total floor area), and apply it to rent, electricity, gas, water, internet.
-- A dual-use room does NOT qualify.
-- **Conservative default:** 0% until the reviewer confirms the room arrangement.
-- **Flag for reviewer:** confirm floor-area basis and that the workspace is genuinely dedicated. [RESEARCH GAP -- confirm Tax Code basis for home-office apportionment for sole proprietors.]
-
-### 6.2 Motor Vehicle Business Use
-
-- Only the business-use percentage of fuel, insurance, maintenance and depreciation is deductible.
-- Client must maintain a mileage log.
-- **Conservative default:** 0% business use until a mileage log is provided.
-- **Flag for reviewer:** confirm the business percentage is documented and reasonable.
-
-### 6.3 Phone / Internet Mixed Use
-
-- Business-use portion only; client must provide a reasonable estimate.
-- **Conservative default:** 0% deduction until the business percentage is confirmed.
-
-### 6.4 Depreciation / Capital Allowances
-
-- Capital assets must be depreciated rather than expensed.
-- The exact depreciation methods, asset categories and rates under the Tax Code (Art. 26-27 and Government regulation) are **[RESEARCH GAP -- reviewer to confirm rates, categories and method for 2025]**. Do not invent rates.
-- **Flag for reviewer** on every capitalised asset.
-
-### 6.5 Personal Exemption Entitlement
-
-- Exemptions vanish above MDL 360,000 annual taxable income, and the application of the personal exemption to entrepreneurial (as opposed to employment) income for sole proprietors should be confirmed.
-- **Flag for reviewer:** confirm exemption entitlement and the precise income definition used for the ceiling test.
-
-### 6.6 Deductibility of Self-Employed Fixed Contributions
-
-- Employee CAS (6%) and CNAM (9%) are explicitly deductible from the PIT base [PwC]. Whether the fixed annual CAS (MDL 20,518) and fixed CNAM (MDL 12,636) reduce a self-employed person's PIT base is **[RESEARCH GAP -- reviewer to confirm]**.
-
-### 6.7 Bad Debt Write-Off
-
-- Deductible only if income was previously declared, recovery steps were taken, and the debt is genuinely irrecoverable. Flag all three conditions for the reviewer.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-MOLDOVA PERSONAL INCOME TAX -- CET18 WORKING PAPER
-Tax Year: 2025
-Client: ___________________________
-Residency: Resident / Non-resident
-Regime: General self-employed / Employee / IT Park / Independent retail
-Annual taxable income <= MDL 360,000 (exemption available)? Yes / No
-
-A. BUSINESS / EMPLOYMENT INCOME
-  A1. Client/professional income (net of VAT if registered)   ___________
-  A2. Platform payouts (Stripe, PayPal, Wise, etc.)           ___________
-  A3. Employment income (PIT usually withheld at source)      ___________
-  A4. Other income (rental, etc.)                             ___________
-  A5. TOTAL income                                            ___________
-
-B. ALLOWABLE BUSINESS EXPENSES
-  B1. Office rent                                             ___________
-  B2. Professional insurance                                  ___________
-  B3. Accountancy / legal / notary fees                       ___________
-  B4. Office supplies                                         ___________
-  B5. Software subscriptions                                  ___________
-  B6. Marketing / advertising                                 ___________
-  B7. Bank / payment processing fees                          ___________
-  B8. Training                                                ___________
-  B9. Travel (business)                                       ___________
-  B10. Telecoms (business %)                                  ___________
-  B11. Home office (% of utilities/rent)                      ___________
-  B12. Vehicle expenses (business %)                          ___________
-  B13. Depreciation (per Tax Code -- reviewer to confirm)     ___________
-  B14. TOTAL expenses                                         ___________
-
-C. NET BUSINESS INCOME (A1+A2 - B14)                          ___________
-
-D. CONTRIBUTIONS DEDUCTIBLE FROM PIT BASE
-  D1. Employee CAS 6% (if employed)                           ___________
-  D2. Employee CNAM 9% (if employed)                          ___________
-  D3. TOTAL deductible contributions                          ___________
-
-E. EXEMPTIONS (only if income <= MDL 360,000)
-  E1. Personal exemption (29,700 / 34,620)                    ___________
-  E2. Spouse exemption (21,780, if applicable)                ___________
-  E3. Dependent exemptions (9,900 x n / 21,780 disabled)      ___________
-  E4. TOTAL exemptions                                        ___________
-
-F. PIT TAXABLE BASE (C + A3 + A4 - D3 - E4)                   ___________
-
-G. PIT AT 12% (7% if farming)                                 ___________
-
-H. SEPARATE SELF-EMPLOYED CONTRIBUTIONS (not via payroll)
-  H1. Fixed annual CAS (20,518 general / 27,772 justice)      ___________
-  H2. Fixed annual CNAM (12,636)                              ___________
-
-I. FINAL WITHHELD ITEMS (informational -- already settled)
-  I1. Dividends (6% WHT)                                      ___________
-  I2. Royalties (12% WHT)                                     ___________
-  I3. Winnings (18% WHT on amount > MDL 297)                  ___________
-
-J. TOTAL ANNUAL LIABILITY (G + H1 + H2 - any PIT withheld)    ___________
-
-REVIEWER FLAGS:
-  [ ] Residency confirmed?
-  [ ] Annual income vs MDL 360,000 ceiling confirmed?
-  [ ] Regime confirmed (general / IT Park / independent retail)?
-  [ ] Justice-sector status confirmed (CAS 20,518 vs 27,772)?
-  [ ] Health insurance route confirmed (9% payroll vs 12,636 fixed)?
-  [ ] Exemption applicability to entrepreneurial income confirmed?
-  [ ] Depreciation rates/methods confirmed against Tax Code?
-  [ ] Home office / vehicle / phone business % confirmed?
-  [ ] Final-withheld items excluded from the 12% base?
+```oa-check
+name: Moldova 2026 ordinary individual entrepreneur with actual paid contributions
+inputs:
+  business_cash_receipts: 300000
+  qualifying_paid_business_expenses: 50000
+  compulsory_social_paid: 22878
+  qualifying_medical_paid: 2527
+  eligible_personal_exemption: 29700
+  pit_rate: 0.12
+  creditable_advances: 20000
+steps:
+  business_profit_before_personal_deductions: business_cash_receipts - qualifying_paid_business_expenses
+  income_after_paid_contributions: business_profit_before_personal_deductions - compulsory_social_paid - qualifying_medical_paid
+  ordinary_taxable_income: max(0, income_after_paid_contributions - eligible_personal_exemption)
+  annual_tax: ordinary_taxable_income * pit_rate
+  balance_payable: max(0, annual_tax - creditable_advances)
+expected:
+  income_after_paid_contributions: 224595
+  ordinary_taxable_income: 194895
+  annual_tax: 23387.40
+  balance_payable: 3387.40
 ```
 
-## Section 8 -- Bank Statement Reading Guide
+### 2. Resident citizen: foreign-interest ceiling and net capital-gain inclusion
 
-### Moldovan Bank Statement Formats
+Assume a resident Moldovan citizen outside business/special regimes receives 450,000 of taxable foreign interest included in the annual ordinary base. Qualifying certified foreign tax is 60,000, no treaty excludes the income and all same-period credit conditions are established. A separate non-exempt capital disposal has proceeds 200,000 and documented adjusted cost 140,000; other recognised current-period capital losses are 10,000. Net capital gain 50,000 gives 25,000 taxable inclusion. No other deduction/exemption is available or claimed on the established facts; the standard personal-income condition is not satisfied. Ordinary taxable income is 475,000 and tax 57,000. Moldova's tax on the same foreign interest is 54,000, so the foreign credit is capped at 54,000, leaving 3,000 payable. The excess foreign tax is not credited against the separate capital-gain tax. [Arts. 13–15, 33, 39–42, 81–82][code]; [CET18 points 21–22, 60–67][cet].
 
-**Moldovan Bank Statement Formats table**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Moldova Agroindbank (MAIB) | PDF, CSV | Data, Descriere, Debit, Credit, Sold | Most common; description contains counterparty + reference; DD.MM.YYYY |
-| Moldindconbank (MICB) | PDF, CSV | Data, Detalii, Suma, Sold | Counterparty in details field |
-| Victoriabank | PDF | Data, Descriere, Retragere, Incasare, Sold | Romanian-language descriptions |
-| OTP Bank Moldova | PDF, CSV | Data, Descriere, Suma, Sold |  |
-| Revolut / Wise (foreign) | CSV | Date, Counterparty, Amount, Currency, Reference | Multi-currency -- convert to MDL |
-
-### Key Moldovan / Romanian Banking Terms
-
-**Key Moldovan / Romanian Banking Terms table**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| TRANSFER / TRANSFERIRE | Transfer | Check direction for income/expense |
-| PLATA | Payment | Outgoing payment -- check counterparty |
-| INCASARE | Receipt / collection | Potential income |
-| RETRAGERE | Withdrawal | Cash withdrawal -- ask what it was for |
-| COMISION / SPEZE | Fee / charges | Deductible (business account) |
-| DOBANDA | Interest | Interest income or bank charge |
-| DEBIT DIRECT | Direct debit | Regular expense (utility, subscription) |
-| SALARIU | Salary | Employment income (usually taxed at source) |
-| IMPOZIT | Tax | Tax payment -- not deductible |
-| CHIRIE | Rent | Office rent (expense) or rent received (income) |
-| CONT PROPRIU | Own account | Internal transfer -- exclude |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- MOLDOVA PERSONAL INCOME TAX
-1. Are you a Moldovan tax resident?
-2. What is your regime: general self-employed, employee, IT Park resident, or independent retail?
-3. Is your annual taxable income at or below MDL 360,000 (so exemptions apply)?
-4. Are you in the justice sector (lawyer, notary, bailiff, mediator, forensic expert, authorised administrator)?
-5. How do you pay health insurance: 9% through payroll, or the MDL 12,636 fixed annual premium?
-6. Are you VAT-registered (turnover over MDL 1.2m in the last 12 months)?
-7. Marital status and number of dependents? Does your spouse have income?
-8. Home office: dedicated room? If yes, what % of floor area?
-9. Vehicle: business use %? Do you keep a mileage log?
-10. Phone/internet: business use %?
-11. Did you receive any dividends (6%), royalties (12%), or winnings (18%) already taxed at source?
-12. Any capital assets purchased during the year?
+```oa-check
+name: Moldova 2026 resident citizen foreign interest and capital gain credit ceiling
+inputs:
+  foreign_interest: 450000
+  certified_foreign_tax: 60000
+  disposal_proceeds: 200000
+  documented_adjusted_cost: 140000
+  recognised_other_capital_losses: 10000
+  capital_inclusion_fraction: 0.50
+  pit_rate: 0.12
+steps:
+  recognised_gain: disposal_proceeds - documented_adjusted_cost
+  net_recognised_capital_gain: max(0, recognised_gain - recognised_other_capital_losses)
+  taxable_capital_inclusion: net_recognised_capital_gain * capital_inclusion_fraction
+  annual_taxable_income: foreign_interest + taxable_capital_inclusion
+  annual_tax: annual_taxable_income * pit_rate
+  moldova_tax_same_foreign_income: foreign_interest * pit_rate
+  allowable_foreign_credit: min(certified_foreign_tax, moldova_tax_same_foreign_income)
+  balance_payable: annual_tax - allowable_foreign_credit
+expected:
+  recognised_gain: 60000
+  net_recognised_capital_gain: 50000
+  taxable_capital_inclusion: 25000
+  annual_taxable_income: 475000
+  annual_tax: 57000
+  allowable_foreign_credit: 54000
+  balance_payable: 3000
 ```
 
-## Section 10 -- Reference Material
+## Ask the client first
 
-### Key Legislation & Authority References
+- What are the person's citizenship, domestic/treaty residence, domicile/travel dates, work locations and any departure/arrival? Supply the supporting records and residence certificates.
+- Which exact legal activity/regime and registration apply, on which dates, with which activity code, unit area, customers/payers, income ceiling, employee count and VAT status?
+- Supply gross income by category/source/date, foreign currency and fees, withholding certificates, business invoices/expenses, accounting method and actual payments. Identify own-account transfers, loans, gifts, benefits and property transactions separately.
+- Supply personal/spouse/dependent evidence and dates, signed payroll applications/non-use, annual-income facts, actual compulsory contributions and medical/insurance/home-interest/education payment/provider documents.
+- Supply asset cost/ownership/main-home records, disposal proceeds, broker reports, gains/losses and certified foreign taxes for the same taxed income/period.
+- Supply accepted returns/notices, instalments/withholding, SFS/CNAS/CNAM account statements, payment/refund receipts and any corrections or assessments. Do not finalise from bank totals alone.
 
-**Key Legislation & Authority References table**
+## Sources
 
-| Topic | Reference |
-| --- | --- |
-| Personal income tax (flat 12%) | Tax Code (Codul Fiscal, Law No. 1163/1997), Title II |
-| Exemptions & deductions | Tax Code, Title II [PwC Moldova Individual -- Deductions] |
-| Social insurance (CAS/BASS) | Law No. 489/1999; State Social Insurance Budget Law for 2025 |
-| Health insurance (CNAM/CAM) | Law No. 1593/2002; Mandatory Health Insurance Funds Law for 2025 |
-| Independent-activity regime (from 2026) | Law No. 228 of 10 July 2025 (NOT 2025) |
-| Annual return | CET18 -- Declarația persoanei fizice cu privire la impozitul pe venit |
-| Tax authority | Serviciul Fiscal de Stat (SFS), sfs.md |
-| Social administrator | CNAS, cnas.gov.md |
-| Health administrator | CNAM, cnam.md |
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
-### Caveats (read before relying on figures)
+Primary-source reads on 30–31 October 2026, with individual dates below.
 
-- PwC Worldwide Tax Summaries pages were last reviewed 14 January 2026 and now display 2026 figures; the 2025 exemption amounts (MDL 29,700 / 34,620 / 21,780 / 9,900), which are unchanged into 2026, were independently confirmed against 2025-specific Moldovan sources (salarii.md, buhgalter.md).
-- The exact 2025 fixed annual CAS amounts (general MDL 20,518; justice MDL 27,772) come from the State Social Insurance Budget Law for 2025 reported via secondary aggregators (cis-legislation, WebSearch); the primary cis-legislation page could not be fetched directly. **The official CNAS / sfs.md figures should be confirmed before publishing.** [RESEARCH GAP -- reviewer to confirm exact 2025 fixed-contribution MDL digits.]
-- The MDL 12,636 fixed annual CNAM premium for 2025 is confirmed unchanged into 2026 [IPN; logos-pres].
-- The 4.5% / 4.5% employer health split seen in some EOR guides is OUTDATED -- CNAM on salaries is a single 9% employee-borne contribution.
-- The late-payment interest rate is set annually (NBM rate +5pp = 9% p.a. for 2025). The 0.0301%/day figure on PwC's individual page reflects a later period.
-- The 1% independent-retail regime and the old independent-activity regime are superseded by Law No. 228/2025 effective 1 Jan 2026 -- for 2025 the legacy rules apply.
-- **Recommend a verified accountant confirm the exact 2025 fixed-contribution MDL figures, the depreciation rates, and the personal-exemption income ceiling against the SFS Tax Code and the 2025 social-insurance budget law before relying on them.**
+| Primary source | Actually read scope and limitation | Read on |
+|---|---|---|
+| [UNIF25 actual full form](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx), [complete instructions](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx) and [current Code interfaces](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Remaining form pages 3–4/instructions 36–136 read and visually checked; selected supporting/payment/property methods applied, with source inconsistencies and implementation limits explicit. Earlier core observation preserved | 2026-10-31 |
+| [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
+| [Current Fiscal Code][code] | Selected residence/source, income/exemption/deduction, capital, professional/special-regime, withholding, credit, filing and enforcement provisions cited above | 2026-10-30 |
+| [January Code][jan] | Personal/spouse/dependent/deduction and retail-registration comparison; current art. 69^13 includes a later cut-off sentence absent in January | 2026-10-30 |
+| [Government Decision 693/2018 current annex 2][personalreg], [January version][personalregjan] and [amending Decision 321/2026][personalamend] | Directly read personal scope, annual-income gate, actual deduction proof and capital-allocation methods; January/June proof change; the statute controls conflicting general summaries | 2026-10-30 |
+| [MF Order 40/2018 approval][capitalorder] and [SFS Order 13/2025 published interpretations][capitalproof] | Approval page and SFS questions 29.2.4.4 and 29.2.4.18 directly support the cash-receipt/inheritance interpretation; complete Order 40 annex separately retained/read on 31 October below | 2026-10-30 |
+| [Order 150/2018 CET18, 3 April 2026 consolidation][cet] | Scope/identity/departure, ordinary resident income/deduction/credit fields, capital table and signature/acceptance instructions; complete current form attachment and remaining nonresident fields are not certified | 2026-10-30 |
+| [Government Decision 697/2014, 2026 payroll regulation][reg] | Applications, exemptions/evidence and cumulative payroll method; attached forms remain unretained; the formula was visually read and the ordinary MDL loan benchmark supplied as stated in the payroll Guide | 2026-10-30 |
+| [CNAS 2026 instructions][cnas] | Contribution categories, actual fixed amounts and forecast salary input; not a substitute for individual income-tax entitlement | 2026-10-30 |
+| [Medical budget Law 321/2025 art. 4][medicalbudget] | Current eligible 2,527/12,636 and 9% category rules; 2,572 overview discrepancy not adopted | 2026-10-30 |
+| [Law 489/1999][social]; [Law 1593/2002][health] | Selected social/medical framework retained in the connected Guide/ledger; full amendment/implementing-chain gaps remain explicit there | 2026-10-30 |
+| [SFS Order 300/2025, actual enacted body][unif25order] | UNIF25 approval, last UNIF21 year, 2025 first reporting year, publication commencement and early-obligation exception; actual attachments now retained; specific methods/read scope and inconsistencies below | 2026-10-30 |
+| [MF Order 60/2024, actual enacted body][dap24order] | DAP24 approval and professional scope, last DAJ17/DASS19 year, 2024 first reporting year, commencement and early-obligation exception; actual attachments now retained; specific methods/read scope and inconsistencies below | 2026-10-30 |
 
-### Test Suite
+| [UNIF25 form][unif25form] and [instructions][unif25instructions] | Actual binaries retained; income-tax form pages 1–2 and instructions 1–35 read/visually inspected. Remaining unified tables/later annexes are not certified by this income-tax map | 2026-10-30 |
+| [DAP24 form][dap24form] and [instructions][dap24instructions] | All 3 form/4 instruction pages read and visually inspected; main/expense/relief methods supplied, defective relief cross-reference/total-header and portal implementation explicit | 2026-10-30 |
+| [Complete MF Order 40 capital-cost annex](https://www.legis.md/UserFiles/Image/RO/MF/anexa_40.doc) | All nine acquisition routes and 22 document subitems read; original DOC retained unchanged, local conversion documented and complete one-page render visually inspected. Code 42 bases/exceptions remain controlling. | 2026-10-31 |
+| [Actual current CET18 annex 1](https://www.legis.md/UserFiles/Image/RO/2026/mo148-151ro/an1_150md.docx) | All five rendered pages/full Word text read; A/B/C/D/E/F/H/J/K/M, evidence table, codes, signature and receipt. Current parent/latest 3 April 2026 header/link checked. K7 sign, generic E7 cap and acceptedportal implementation limits explicit. | 2026-10-31 |
 
-**Test 1 -- Standard private-sector employee, monthly payroll.**
-Input: Gross MDL 16,100/month, standard personal exemption MDL 2,475, no dependents.
-Expected: Employee CAS = MDL 966.00; CNAM = MDL 1,449.00; PIT base = 16,100 − 966 − 1,449 − 2,475 = MDL 11,210.00; PIT 12% = MDL 1,345.20; net pay = MDL 12,339.80; employer CAS 24% = MDL 3,864.00.
+| Source | Read scope | Read on |
+|---|---|---|
+| [Current Code 264–266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Full assessment, collection and refund-limitation provisions read; clocks, statutory start dates and conditional extensions separated. Historical/Civil Code/Government implementation gaps remain | 2026-10-31 |
 
-**Test 2 -- General self-employed, exemption available.**
-Input: Net business income MDL 300,000 (≤ 360,000 ceiling), single, no dependents, general regime, exemption applies.
-Expected: PIT base = 300,000 − 29,700 = MDL 270,300; PIT 12% = MDL 32,436.00; fixed CAS MDL 20,518; fixed CNAM MDL 12,636; total = MDL 65,590.00.
+Not yet confirmed: the accepted DAP24 other-cost code where the printed form uses 0310 and instructions 38–39 use 03010; complete 2026 commencement chain beyond the selected January/current transitions, including the retail-registration cut-off amendment's enactment/application history; UNIF25 actual classifier/portal validation, the named inconsistent-source fields and relief/local-tax implementation beyond the selected now-read supporting/reporting methods, DAP24 relief-column/self-referential-header inconsistency and exact portal/rounding validation beyond the now-read approved form/instructions, and every special-regime registration/cessation/notification procedure; CET18 authenticated portal handling of the 20,000 education cap versus generic point 34^7, accepted K7 loss-sign and lookalike-code encoding, and route-specific cost-evidence exceptions beyond the now-read complete Order 40 list; remaining individual-business home-office/mixed-use, car, bad-debt and charity implementation beyond the statutory tests and the corporate companion’s sourced ordinary travel/asset/benefit methods; unavailable annex values and actual forms remain gaps; voluntary pension/annuity and other specialist deductions; annual form implementation of unused/birth/death-dependent relief, including the apparent tension between regulation point 33 and Code art. 35(4), whose statutory next-month rule controls this draft; precise lottery/sports/online and exceptional final-withholding implementation; all tax/social treaty agreements, posting certificates and foreign-tax refund procedures; full offence/appeal implementation and taxpayer-specific historic medical-penalty transitions; all IT-park/software-worker/special incentive methods. The old 2025 minimum 5,500/forecast 16,100, fixed social 20,518 or justice 27,772 and monthly rounding claims are historical/unconfirmed for their own year, not reused as 2026 rates. Old VAT 20% and registration 1.2/1.5/1.7-million claims require the VAT Guide's statutory reconciliation. The remaining ordinary gaps keep this domain partial.
 
-**Test 3 -- General self-employed, NO exemption (income over ceiling).**
-Input: Net business income MDL 500,000 (> 360,000), general regime.
-Expected: No personal exemption. PIT 12% = 500,000 × 0.12 = MDL 60,000.00; fixed CAS MDL 20,518; fixed CNAM MDL 12,636; total = MDL 93,154.00.
+[unif25form]: https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx
+[unif25instructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx
+[dap24form]: https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n1%20OMF%2060.docx
+[dap24instructions]: https://www.legis.md/UserFiles/Image/RO/2024/Anexa%20n2%20OMF60.docx.rtf
+[unif25order]: https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro
+[dap24order]: https://www.legis.md/cautare/getResults?doc_id=143526&lang=ro
+[code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
+[jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro
+[cet]: https://www.legis.md/cautare/getResults?doc_id=153807&lang=ro
+[reg]: https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro
+[cnas]: https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf
+[medicalbudget]: https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro
+[social]: https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro
+[health]: https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro
 
-**Test 4 -- Farming enterprise (reduced rate).**
-Input: Entrepreneurial income of a farming enterprise MDL 200,000, 7% rate.
-Expected: PIT = 200,000 × 0.07 = MDL 14,000.00.
-
-**Test 5 -- Justice-sector self-employed contributions.**
-Input: Notary, general 12% PIT on net income MDL 400,000 (no exemption, over ceiling).
-Expected: PIT 12% = MDL 48,000.00; fixed CAS MDL 27,772 (justice); fixed CNAM MDL 12,636; total = MDL 88,408.00.
-
-**Test 6 -- Dividend final withholding.**
-Input: Net dividend received MDL 47,000 (6% WHT already taken).
-Expected: Gross = 47,000 / 0.94 = MDL 50,000.00; WHT 6% = MDL 3,000.00; no further PIT; exclude from 12% base.
-
-**Test 7 -- VAT-registered freelancer client payment.**
-Input: Client payment MDL 12,000 incl. 20% VAT.
-Expected: Net business income = 12,000 / 1.20 = MDL 10,000.00; VAT MDL 2,000 excluded.
-
-**Test 8 -- Independent retail minimum tax.**
-Input: Independent retail individual, declared income MDL 200,000 (Chapter 10², 2025).
-Expected: 1% = 200,000 × 0.01 = MDL 2,000.00; but not less than MDL 3,000 -> tax = MDL 3,000.00.
-
-## PROHIBITIONS
-
-- **Confirm residency before applying resident rules** — NEVER apply resident rules without confirming Moldovan tax residency
-- **Personal exemption income limit** — NEVER claim a personal exemption when annual taxable income exceeds MDL 360,000 MDL
-- **Flat PIT rate, no progressive brackets** — NEVER apply progressive brackets -- Moldova PIT is a flat 12% (7% farming) in 2025
-- **IT-Park resident taxation** — NEVER run the general 12% computation for an IT-Park resident (single 7% turnover tax instead)
-- **Law 228/2025 freelancer regime effective date** — NEVER apply the Law 228/2025 freelancer regime (15%/35%) to tax year 2025 -- it begins 1 Jan 2026
-- **CNAM contribution structure** — NEVER add a separate employer health-insurance percentage -- CNAM is a single 9% employee-borne contribution
-- **VAT exclusion from business income** — NEVER include VAT collected on sales in business income for a VAT-registered client
-- **Exclude final-withheld income from PIT base** — NEVER include final-withheld dividends/royalties/winnings in the 12% PIT base
-- **Depreciation rates research gap** — NEVER invent depreciation rates -- they are a RESEARCH GAP pending reviewer confirmation
-- **Non-deductible items** — NEVER allow income tax, fines, drawings, or personal expenses as deductions
-- **Estimates require sign-off** — NEVER present tax calculations as definitive -- always label as estimated and pending accountant sign-off
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+[personalreg]: https://www.legis.md/cautare/getResults?doc_id=154927&lang=ro
+[personalregjan]: https://www.legis.md/cautare/getResults?doc_id=150441&lang=ro
+[personalamend]: https://www.legis.md/cautare/getResults?doc_id=154909&lang=ro
+[capitalorder]: https://www.legis.md/cautare/getResults?doc_id=105006&lang=ro
+[capitalproof]: https://www.sfs.md/ro/ordinele-de-baze-de-date-de-generalizare/1215
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `moldova-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/moldova-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `moldova-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/moldova-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

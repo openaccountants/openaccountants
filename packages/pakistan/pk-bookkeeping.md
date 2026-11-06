@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: PK
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: bookkeeping
 ---
 
 # Pakistan Bookkeeping & Records — Skill v1.0
@@ -30,7 +31,6 @@ depends_on:
 | Core records | Income/receipts, expenses, bank statements, invoices, asset register |
 | IT exporter must keep | Bank credit advices / **PRC (Proceeds Realization Certificate)** for every foreign remittance |
 | Retention | Generally 6 years (verify s.174 Income Tax Ordinance) |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — What to keep (Tier 1)

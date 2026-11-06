@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "GG"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Guernsey GST transition: approved policy and implementation evidence
@@ -29,7 +27,7 @@ For an ordinary 2026 working paper:
 3. **Keep UK VAT claims with the UK supplier/authority.** Guernsey Customs says it cannot refund UK VAT or process its reclaim forms. Its [exported-goods guidance](https://gov.gg/article/120182/Claiming-back-VAT) requires the UK supplier's qualifying export evidence before zero-rating; an address or a customs-union status alone does not prove entitlement. Do not create a Guernsey VAT refund to offset a supplier's UK VAT.
 4. **Keep future-GST readiness separate.** Preserve the adopted policy, implementation assurance and later charging/commencement evidence. Proposed registration thresholds, exclusions, input recovery and return fields are not operative 2026 instructions. Current import/excise rates and every commodity-specific relief remain outside this transition Guide's calculation scope; obtain the official current tariff and declaration instructions for the actual goods. [Current Customs territory](https://gov.gg/article/152732/Constitution-position-and-customs-territory); [tax-package FAQ](https://gov.gg/taxpackagefaqs).
 
-The existing future-price examples below remain unchanged and explicitly hypothetical. The absence of a general domestic VAT/GST does not mean that imported or excisable goods carry no other charge. This added current-scope analysis is checked in the [fresh ordinary-method whole-pack review](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md).
+The existing future-price examples below remain unchanged and explicitly hypothetical. The absence of a general domestic VAT/GST does not mean that imported or excisable goods carry no other charge. This added current-scope analysis is checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md).
 
 ## Rates, bands and thresholds
 
@@ -107,7 +105,7 @@ expected:
 
 ## Sources
 
-All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. The earlier review left current domestic tax scope open. The new current-scope evidence above establishes the independently reviewed 2026 domestic general VAT/GST not-applicable finding; complete customs/excise methods and future GST legislation/operations are separate limits. Independent source review is recorded in the pack README. The reform timetable was re-read on 27 October 2026, and its [current consumption-tax detail page](https://gov.gg/taxpackage) was fetched and read on the same UTC date. It describes implementation from 2029 and the assurance-report condition; it does not itself supply an operative 2026 charging, registration or return regime. The new scope finding uses the additional current primary sources below, rather than a future timetable alone. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; the new current-scope method is checked in the [fresh ordinary-method whole-pack review](../../research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md) and professional attestation remains pending.
+All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. The earlier review left current domestic tax scope open. The new current-scope evidence above establishes the independently reviewed 2026 domestic general VAT/GST not-applicable finding; complete customs/excise methods and future GST legislation/operations are separate limits. Independent source review is recorded in the pack README. The reform timetable was re-read on 27 October 2026, and its [current consumption-tax detail page](https://gov.gg/taxpackage) was fetched and read on the same UTC date. It describes implementation from 2029 and the assurance-report condition; it does not itself supply an operative 2026 charging, registration or return regime. The new scope finding uses the additional current primary sources below, rather than a future timetable alone. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; the new current-scope method is checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md) and professional attestation remains pending.
 
 | Additional official source | Read scope | Read on |
 |---|---|---|
@@ -120,24 +118,6 @@ All three sources in frontmatter were read on 22 October 2026: [official timetab
 General reference and planning material only. A qualified professional must verify the applicable law, commencement and facts before filing, paying or acting on this draft.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

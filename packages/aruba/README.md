@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `aw-individual-income-tax.md`
-4. `aw-social-contributions.md`
-5. `aw-turnover-taxes.md`
+3. `README.md`
+4. `aw-individual-income-tax.md`
+5. `aw-social-contributions.md`
+6. `aw-turnover-taxes.md`
 
 ## How to use
 

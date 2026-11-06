@@ -1,25 +1,22 @@
 ---
 name: dk-corporate-tax
-description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (dk-vat-return), payroll, transf"
+description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (denmark-vat-return), payroll, t"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/dk-corporate-tax"
   jurisdiction: "DK"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
-# Denmark: corporate income tax (selskabsskat) v0.1
+# Denmark: corporate income tax (selskabsskat) v0.2
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, elections, deadlines or filings. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Denmark.
 
 Tax year: income year 2026 (indkomståret 2026). Most companies use the calendar year. A company with a different financial year (forskudt indkomstår) is taxed for the income year that the financial year "replaces" (Selskabsskatteloven § 29 A, stk. 1). Currency: Danish kroner (DKK). Authority: Skattestyrelsen (skat.dk). Statute: Selskabsskatteloven, LBK nr. 279 of 13 March 2025, as later amended (see Sources).
 
-See also: dk-income-tax (individuals and the self-employed), dk-capital-gains (individual share gains), dk-vat-return (VAT).
+See also: dk-income-tax (individuals and the self-employed), dk-capital-gains (individual share gains), denmark-vat-return (VAT).
 
 ## Who this applies to
 
@@ -229,26 +226,6 @@ expected:
 
 Not yet confirmed: the 2026 restskattetillæg, godtgørelse and voluntary acontoskat surcharge rates (Skattestyrelsen publishes them by 15 December 2026; the 2025 rates are shown above); the effective dates of the individual Pillar Two charging rules (income inclusion rule, undertaxed profits rule, Danish top-up tax); the R&D enhanced deduction percentages for 2026; the commencement order the Minister issued under lov nr. 1694/2024, § 18, stk. 2, for the 0.85-point addition (the Ministry table and Den juridiske vejledning apply 0.85 for 2026, but the order itself was not located).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

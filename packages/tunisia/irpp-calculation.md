@@ -4,11 +4,11 @@ description: "IRPP calculation in Tunisia: how I do it"
 jurisdiction: TN
 tax_year: 2025
 last_updated: 2026-08-10
-authored_by: firas masmoudi
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "firas masmoudi"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # IRPP calculation
@@ -51,21 +51,3 @@ Omitting secondary income: Failing to report non-salary income (e.g., rental or 
 Unverified withholding certificates: Claiming tax credits without holding official withholding tax certificates triggers systematic audit red flags—confirm before filing.
 
 > Contributed by firas masmoudi.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

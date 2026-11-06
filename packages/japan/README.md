@@ -7,15 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `japan-bookkeeping.md`
-4. `japan-consumption-tax.md`
-5. `japan-crypto-tax.md`
-6. `japan-financial-statements.md`
-7. `japan-formation.md`
-8. `japan-payroll.md`
-9. `japan-tax-optimization.md`
-10. `japan-transfer-pricing.md`
-11. `jp-bookkeeping.md`
+3. `README.md`
+4. `japan-bookkeeping.md`
+5. `japan-consumption-tax.md`
+6. `japan-crypto-tax.md`
+7. `japan-financial-statements.md`
+8. `japan-formation.md`
+9. `japan-payroll.md`
+10. `japan-tax-optimization.md`
+11. `japan-transfer-pricing.md`
 12. `jp-consumption-tax.md`
 13. `jp-estimated-tax.md`
 14. `jp-etax-filing.md`

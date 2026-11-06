@@ -493,8 +493,6 @@ This skill and its outputs are provided for informational and computational purp
 
 This skill does NOT provide medical, clinical, or healthcare advice. No output from this skill should influence clinical decision-making. Healthcare professionals must exercise independent clinical judgment at all times.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Today's figures and who stands behind this skill
 
 This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `medical-professional` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/medical-professional. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "NL"
   tax_year: "2026"
   last_updated: "2026-10-01"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Netherlands tax planning: sole traders, households and business structure
@@ -174,24 +171,6 @@ A qualifying policy pays periodic disability benefits. Remove its premium from b
 - Refer specialist asset/list eligibility, state-aid combinations, uncertain RVO deadlines, pensions with transition or old-product rights, cessation and FOR calculations when the necessary determination is unavailable.
 - Hold a numerical “saving” if the baseline, dependency, credit base, future tax effect or cash consequence is incomplete. Label estimates and conditional alternatives explicitly.
 - Require the client’s reviewed facts and explicit filing/payment authority before an adviser or authorized system submits anything. A planning comparison supplies neither authority nor professional attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

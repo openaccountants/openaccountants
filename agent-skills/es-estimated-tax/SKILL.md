@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "ES"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Spain: quarterly IRPF advances, 2026
@@ -227,28 +225,9 @@ expected:
 
 | [AEAT Modelo130 payment instructions](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html) | Restore full SEPA/intermediated account, NRC/account-charge/card/Bizum and debt-request/transfer/current-account options; retain explicit2025paper vintage | 2026-10-28 |
 
-
 **Not yet confirmed:** the exact legal reconciliation beyond AEAT's published post-repeal explanation or case-specific correction of a filed election/return; the published 2026 AEAT thresholds and preserved submission routes are supplied above; complete activity-specific/seasonal module computations and exceptional annual-order adjustments; IRNR payment computations, the precise Navarra partial-start annualisation/form-rounding boundaries recorded in [the foral Guide](es-foral-income-tax.md), and period-specific direct-debit cutoffs. These are not replaced with assumed eligibility or invented amounts.
 
 > Contributed by OpenAccountants.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

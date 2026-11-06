@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "ES"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Corporate income tax in Spain v1.3
@@ -249,24 +247,6 @@ expected:
 Not yet confirmed: the specific foral surcharge/minimum and procedure questions recorded in [foral corporate Sources](es-foral-corporate-tax.md#sources); a legislative or binding resolution settling the art. 25 literal 5% overlap beyond AEAT’s now-cited administrative table; the final 2026 annual-return schema/calendar to be published for filing in 2027; full specialist-regime claims outside the ordinary computation. The reduced-rate minimum-tax rounding must be checked against the filing instructions applicable to the actual return. Independent whole-pack review is pending.
 
 > Contributed by OpenAccountants.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

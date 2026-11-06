@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `gd-annual-stamp-tax.md`
-4. `gd-social-contributions.md`
-5. `gd-vat-registration.md`
+3. `README.md`
+4. `gd-annual-stamp-tax.md`
+5. `gd-social-contributions.md`
+6. `gd-vat-registration.md`
 
 ## How to use
 

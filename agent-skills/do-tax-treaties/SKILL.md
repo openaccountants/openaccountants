@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "DO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Miguel Lantigua, CPA"
   reviewed_by: "Miguel Lantigua"
-  trust_label: "Checked by Miguel Lantigua"
-  review_status: "current"
 ---
 
 # Dominican Republic Double-Tax Treaties (CDI)
@@ -32,24 +29,6 @@ metadata:
 - **Tasa interna CT — Pagos generales al exterior (art. 305)** — 27%  _(CT art. 305 — retención 27% pagos generales exterior)_
 - **Cuadro de tasas CDI vs CT — evidencia requerida** — Tabla de análisis de tasas CDI vs CT por tipo de renta y contraparte; certificado de residencia fiscal vigente del beneficiario efectivo, emitido por la autoridad competente del Estado contratante (España o Canadá); documentación que acredite el tipo de renta y el artículo CDI aplicable; análisis de beneficiario efectivo (confirmar que el receptor no es conducto); soporte documental de la transacción. NOTA: la certificación formal de la DGII para aplicar el CDI seguía el procedimiento de NG 11-22, hoy derogada. Hasta que la DGII publique procedimiento sustituto, documentar con el soporte anterior como evidencia de buena fe.  _(CDI España: https://dgii.gov.do/legislacion/acuerdos/2Acuerdos%20internacionales/ConvenioentrelaRep%C3%BAblicaDominicanayelEspa%C3%B1a.pdf | CDI Canadá: https://dgii.gov.do/legislacion/acuerdos/2Acuerdos%20internacionales/ConvenioCanada1976.pdf | CT arts. 305-308: https://dgii.gov.do/legislacion/codigoTributario/Cdigo%20Tributario/Titulo2.pdf)_
 - **Procedimiento para invocar CDI (NG 11-22, derogada) — requiere actualización urgente** — Para obtener los beneficios de un CDI vigente (tasas reducidas o exención del ISR dominicano), el contribuyente debía, conforme a la Norma General 11-22 (hoy DEROGADA por NG 05-2023), presentar ante la DGII una solicitud formal dentro de los 30 días laborables siguientes al pago afectado, con: (a) RNC/cédula; (b) descripción del beneficio CDI y artículo aplicable; (c) certificado de residencia fiscal vigente del beneficiario efectivo; (d) períodos fiscales afectados; (e) descripción documentada de la transacción; recibiendo la DGII 10 días laborables para certificar; y siendo necesaria la declaración informativa en IR-17 si el CDI exime la renta; y por cuanto la NG 11-22 fue derogada por NG 05-2023 (jun-2023) sin que se haya publicado norma general sustituta, el procedimiento actual de invocación del CDI ante la DGII debe confirmarse directamente con la autoridad. NG 11-22 arts. 3, 5, 6, 7, 8 (DEROGADA por NG 05-2023, jun-2023) — procedimiento vigente hasta derogación; NG 05-2023 (deroga NG 11-22 y NG 02-2023): sin norma sustituta publicada a jun-2026; Resolución Min. Hacienda 137-2014 (delegación Autoridad Competente en DGII) — sigue vigente; CDI RD-España y CDI RD-Canadá — base legal de los beneficios; CT art. 67 (potestad DGII de requerir información y documentación). ACCIÓN REQUERIDA: Verificar con DGII si existe procedimiento administrativo vigente para invocación de CDI post-derogación de NG 11-22. Evidencia: Solicitud formal depositada ante la DGII (NG 11-22 art. 6), certificado de residencia fiscal del beneficiario vigente, certificación de aprobación emitida por DGII (máx. 10 días laborables), declaración IR-17 con monto informativo si el CDI exime la renta, copia del CDI con artículos relevantes identificados, análisis documentado de beneficiario efectivo.  _(NG 05-2023 (deroga NG 11-22): https://dgii.gov.do/legislacion/normasGenerales/Documents/Otras%20Normas%20de%20Inter%C3%A9s/Norma%2005-23.pdf | Normas Generales DGII: https://dgii.gov.do/legislacion/normasGenerales/Paginas/default.aspx | Resolución MH 137-2014: https://dgii.gov.do/legislacion/acuerdos | CDI España: https://dgii.gov.do/legislacion/acuerdos/2Acuerdos%20internacionales/ConvenioentrelaRep%C3%BAblicaDominicanayelEspa%C3%B1a.pdf)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

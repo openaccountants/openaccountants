@@ -3,8 +3,9 @@ name: ny-it-201-resident-return
 description: Tier 2 New York content skill for preparing Form IT-201 (Full-Year Resident Income Tax Return) for New York State full-year residents who are sole proprietors or single-member LLCs disregarded for federal tax purposes. Covers the NYAGI computation starting from federal AGI, Form IT-225 addition and subtraction modifications (notably A-201 for unincorporated business taxes deducted federally), Form IT-558 OBBBA decoupling adjustments including the §168(k) bonus depreciation add-back and the §174A R&E expensing uncertainty, the standard vs itemized deduction decision, NY state tax computation including the $107,650 recapture worksheet, NYC resident tax computation (lines 47a-53) including the NYC UBT credit flow via Form IT-219, Yonkers resident surcharge and nonresident earnings tax (lines 55-57), MCTMT for self-employed individuals in the MCTD (lines 54a-54b), credits and payments, and the reviewer brief for the complete NY state-level return package. Does NOT cover part-year or nonresident returns (Form IT-203), itemized deduction limitations above $100,000 NYAGI in detail, PTET election scenarios, convenience-of-the-employer rule cases, NY source income allocation for multi-state activity, or NYC Unincorporated Business Tax computation itself — see Section 7. MUST be loaded alongside us-tax-workflow-base v0.2 or later. Typically loaded alongside ny-llc-filing-fee-it-204-ll (if SMLLC), nyc-unincorporated-business-tax (if NYC resident), and ny-estimated-tax-it-2105. New York State full-year residents only.
 version: 0.1
 jurisdiction: US-NY
-tier: 2
 last_updated: 2026-06-12
+tier: 2
+domain: income-tax
 ---
 
 # New York IT-201 Resident Return Skill v0.1
@@ -2359,5 +2360,3 @@ This turn drafted the final five sections (10-14) of `ny-it-201-resident-return`
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

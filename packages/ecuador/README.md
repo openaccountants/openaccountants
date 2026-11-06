@@ -7,16 +7,17 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ec-company-formation.md`
-4. `ec-corporate-income-tax.md`
-5. `ec-tax-overview.md`
-6. `ecuador-income-tax.md`
-7. `ecuador-iva.md`
-8. `ecuador-payroll.md`
-9. `ecuador-social-contributions.md`
-10. `ecuador-tax-optimization.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ec-company-formation.md`
+5. `ec-corporate-income-tax.md`
+6. `ec-tax-overview.md`
+7. `ecuador-income-tax.md`
+8. `ecuador-iva.md`
+9. `ecuador-payroll.md`
+10. `ecuador-social-contributions.md`
+11. `ecuador-tax-optimization.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
 
 ## How to use
 

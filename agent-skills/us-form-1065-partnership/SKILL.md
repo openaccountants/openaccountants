@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "James Wallach"
   reviewed_by: "Christopher Aryee"
-  trust_label: "Checked by Christopher Aryee"
-  review_status: "current"
 ---
 
 # US Form 1065 Partnership
@@ -702,24 +699,6 @@ However: if the FLP also had a side business of "property management services" c
 This skill produces a reviewer-oriented draft of Form 1065 and supporting schedules. A credentialed tax practitioner under Circular 230 (Enrolled Agent, CPA, or attorney) must review and sign the return before it is filed. The skill is conservative by default; it flags rather than auto-decides on ambiguous allocations, SE tax characterizations, §704(c) methods, and CPAR election questions. The 2025 indexed amounts (§6698 penalty, §199A thresholds, §461(l) thresholds, §163(j) small-business gross-receipts threshold) must be verified against the final Rev. Proc. 2024-40 (or its successor) before final filing. This skill is federal-only. State partnership returns, state pass-through entity tax (PTET) elections, and state withholding on nonresident partners are out of scope and must be handled by the relevant state skill or a state-licensed practitioner. The skill does not, and cannot, replace partnership counsel for drafting allocation provisions, DRO clauses, QIO provisions, partnership-representative indemnification, or §704(c) method elections. Where the skill flags a structural issue, the reviewer should refer to qualified partnership-law counsel.
 
 — End of skill —
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

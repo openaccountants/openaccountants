@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "James Wallach"
-  trust_label: "Checked by James Wallach"
-  review_status: "current"
+  reviewed_by: "Vladimir Andjelic"
 ---
 
 # US GAAP Asc606 Revenue
@@ -186,24 +184,6 @@ Trigger and produce as relevant:
 ## Section 10 — Disclaimer
 
 Provides computational and interpretive guidance on ASC 606 / ASC 340-40 only. Not an audit and not assurance. Revenue recognition turns heavily on entity-specific facts and significant judgment. Have outputs reviewed and signed by a qualified accountant before they are reflected in financial statements relied upon by third parties.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
