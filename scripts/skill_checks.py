@@ -54,10 +54,19 @@ SKILL_TYPES = {
     "filing-howto": {"min_examples": 1, "rates_table": False, "headings": None},
     "computation": {"min_examples": 2, "rates_table": True, "headings": None},
     "decision": {"min_examples": 2, "rates_table": False, "headings": None},
-    "rates-card": {"min_examples": 0, "rates_table": True, "headings": ["Rates, bands and thresholds", "Sources"]},
+    "rates-card": {"min_examples": 1, "rates_table": True, "headings": ["Rates, bands and thresholds", "Sources"]},
     "cross-country-method": {"min_examples": 1, "rates_table": False, "headings": ["The method, step by step", "Sources"]},
     "router": {"min_examples": 0, "rates_table": False, "headings": ["The method, step by step", "When to refuse or refer", "Sources"]},
 }
+
+
+#: A zero-example shape (router) that carries any of these headings is doing a tax skill's job,
+#: so check e asks it for one example: declaring ``router`` must not dodge the example rule.
+ZERO_EXAMPLE_GUARD_RE = re.compile(
+    r"^##+\s*(?:\d+[.)]\s*)?(Deadlines and filing|Filing and payment|Rates, bands and thresholds|"
+    r"Two worked examples that recompute|Worked examples|Worked cases|The base|The taxable base)\b",
+    re.MULTILINE | re.IGNORECASE,
+)
 
 
 def skill_type(fm):
@@ -374,6 +383,8 @@ def check_two_oa_checks(path, text, fm):
     declared ``type:`` sets in SKILL_TYPES."""
     shape = skill_type(fm)
     need = SKILL_TYPES[shape]["min_examples"] if shape else 2
+    if need == 0 and ZERO_EXAMPLE_GUARD_RE.search(text):
+        need = 1  # a router that holds deadlines, rates or worked cases is a tax skill: it needs an example
     n = len(OA_CHECK_BLOCK_RE.findall(text))
     return [] if n >= need else [f"{n} oa-check block(s), need {need}"]
 

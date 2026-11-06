@@ -40,23 +40,23 @@ Each of the twelve lines below is in the standard because a measurement says so.
 3. Every figure with its official URL on the row and a read date in `## Sources` (lines 1 and 2).
 4. The conditions next to each figure (line 3).
 5. Who stands behind it, honestly (line 11).
-6. An answer layer at the top: the key figures and the facts to ask before anything else. When a model can choose sections, "Quick reference" and "Required inputs" are the two it asks for first (section demand, 60 days to 6 Nov 2026). **Unmeasured** as a ranking effect: the shape tests owe it a result.
+6. An answer layer at the top: the key figures and the facts to ask before anything else. In the plugin's usage logs (60 days to 6 Nov 2026, not public), the sections models most often asked for by name were a quick-reference section and a required-inputs section. **Unmeasured** as an effect on answers, and not yet checked by a script: the shape tests owe it a result.
 
 **The body follows one of seven shapes.** Declare it with `type:` in the frontmatter. The checks then test the body against its own shape (`SKILL_TYPES` in `scripts/skill_checks.py`); a skill with no `type:` is checked as before.
 
-| `type:` | The job | What the body must hold | Worked examples | Example in use |
+| `type:` | The job | What the body must hold | Worked examples | Closest skill today (not yet checked to this shape) |
 |---|---|---|---|---|
 | `situation-rules` | "Does this apply to me, and how": the rule applied to a set of facts | Who is in and out, the rule, conditions, an exception table, the facts to ask | 2 | `nl-corporate-tax` |
 | `filing-howto` | Register, file, pay | The steps in the order the filer meets them: portal, form, box or field, what happens after (line 4) | 1 | `uk-vat-return` |
 | `computation` | Work out the figure | Inputs, the computation in order, the form lines it lands on | 2, recomputing | `us-schedule-c-and-se-computation` |
 | `decision` | "Which should I" | The options side by side, the figure that decides, a worked decision both ways | 2, one a decision | `us-s-corp-election-decision` |
-| `rates-card` | Figures for one country and year | The rates tables, every row linked; no method needed | 0 | `au-rates-2026-27` |
+| `rates-card` | Figures for one country and year | The rates tables, every row linked; no method needed | 1 | `au-rates-2026-27` |
 | `cross-country-method` | One topic across several countries | One method, then a section per country with its values | 1 | `global-home-office` |
-| `router` | Which skills to load, in what order | The routing steps, what is out of scope, the handoff | 0 | `cross-border-tax-router` |
+| `router` | Which skills to load, in what order | The routing steps, what is out of scope, the handoff | 0, or 1 if it carries rates, deadlines or worked cases | `cross-border-tax-router` |
 
-`situation-rules`, `filing-howto`, `computation` and `decision` keep either canonical heading set (line 7). `rates-card` needs `## Rates, bands and thresholds` and `## Sources`; `cross-country-method` needs `## The method, step by step` and `## Sources`; `router` needs `## The method, step by step`, `## When to refuse or refer` and `## Sources`.
+`situation-rules`, `filing-howto`, `computation` and `decision` keep either canonical heading set (line 7). A `router` that carries rates, deadlines or worked cases is doing a tax skill's job and needs one worked example, so declaring a shape cannot dodge line 9. `python3 scripts/check-examples.py --require` still asks every skill whose slug names a tax (vat, gst, income-tax, payroll and the rest) for at least one example, whatever its shape. `rates-card` needs `## Rates, bands and thresholds` and `## Sources`; `cross-country-method` needs `## The method, step by step` and `## Sources`; `router` needs `## The method, step by step`, `## When to refuse or refer` and `## Sources`.
 
-- **Evidence:** a study of 6 Nov 2026 (all 2,376 skills, 60 days of plugin use, 60 real questions read by hand). About 60% of real questions are a person's situation, 15% a figure, 10% developers building on the data, 10% a return or computation. The scoreboard of 30 Oct 2026 scored figure questions 100% and condition questions 95% with our skills, decisions 56% and how-tos 21%: the gaps are the content a shape needs (steps, decision cases), not the layout. 1,370 skills (58%) use neither canonical heading set, including most of the 44 most-used; the single most-used skill (`global-home-office`, 156 loads by 78 people in 60 days) is a cross-country method, a shape the earlier standard did not have.
+- **Evidence:** a study of 6 Nov 2026: all 2,376 skill files on main (public), plus 60 days of plugin usage and 60 real questions read by hand (usage logs, not public). In that sample about 60% of questions were a person's situation and about 15% a figure; the rest were developers building on the data, return preparation, or too vague to place. The scoreboard of 30 Oct 2026 scored figure questions 100% and condition questions 95% with our skills, decisions 56% and how-tos 21%: the gaps are the content a shape needs (steps, decision cases), not the layout. 1,370 skills (58%) use neither canonical heading set, including most of the 44 most-used; the single most-used skill in the logs (`global-home-office`) is a cross-country method, a shape the earlier standard did not have.
 - **Unmeasured:** that each shape beats the others for its own questions. The next step is a question set by shape, a baseline, then two skills per shape rewritten and re-run; a shape stays only if `right` rises and confident-wrong does not.
 - **Check:** `check_type_declared` (p, a warning) for the key; checks c, d and e read the declared shape.
 
@@ -85,7 +85,7 @@ Every row of the rates table carries the URL of the official text it comes from.
 
 - **Evidence:** year-boundary test: a skill that points at the law plus a live fetch answered 4 of 5; stored facts with no link, 0 of 5. Citations to an official source 76% with the skill against 20% without (4 Aug 2026). The section-demand read of 31 Oct 2026 (453 loads in 28 days, 6.4% with any section held back) showed `get_skill` almost always sends the Sources table, so the row URL is for the other read paths, not for `get_skill`.
 - **Host and column:** the URL is the page that holds the row's figure, on the site of the authority the row names, in the column the header says. Citing a secondary host or a neighbour's domain in a one-country skill warns.
-- **Check:** `check_rates_rows_sourced` (c), `check_sources_columns` (l) and `check_source_hosts` (m), both warnings.
+- **Check:** `check_rates_rows_sourced` (c), `check_sources_columns` (l) and `check_source_hosts` (m), both warnings. A skill whose shape has no rates table (`filing-howto`, `decision`, `cross-country-method`, `router`) passes c when it has none; any rates table it does carry is checked.
 
 ### 3. Every rule states its conditions next to the figure
 
@@ -152,7 +152,7 @@ The method set (about 250 skills, the October waves):
 In the method set, six headings are required (Scope, which may read "Scope and who this is for"; Ask the client first; The method, step by step; Worked cases; When to refuse or refer; the standard closing block) and three are optional (Boundary and exception table; Filing and payment; Completion checklist). The rates, base and deadline material lives under "The method, step by step" as sub-headings, each carrying its source link in the heading text, which is why a bracketed link after a heading is tolerated. What each set holds: residence and scope (who is in, who is out); the rates table with item, amount, tax year and official URL per row; what is taxed, what is deductible or exempt, how losses work; registration, returns, payments, instalments, form, portal, box; late filing, late payment, under-declaration figures; non-residents, treaties, withholding, exit rules that touch this domain; the worked examples (line 9); the facts to ask (line 10); the sources table (line 1). There is no length rule: the model reads the whole skill.
 
 - **Evidence:** shape test, 31 Oct 2026, 30 questions, two models: cutting a fifth of the text changed nothing on Claude (50% right either way) and cost GPT 7 points; the rewritten skills beat their pre-September versions by 16 points on Claude (56% against 40%) and 8 on GPT, and cut confident-wrong from 20% to 0% (Claude). Split by set on the same run: reference set 54% right, 0% confident-wrong (10 skills); method set 50%, 6% (8 skills); skills on neither set 28%, 11% (9 skills, the US, Australia and Canada ones). The two sets are within noise of each other; being on neither is what costs. Section demand, 31 Oct 2026: 6.4% of loads had any section held back, so the earlier inline-budget rule (core sections under a character budget) measured nothing and is dropped. Picking one set for everything is a decision for after the loop has measured both on a full Monday run.
-- **Check:** `check_canonical_headings` (d), which accepts either full set. The two older spellings it still accepts in the reference set ("The taxable base", "Worked examples") go once the backlog is rewritten.
+- **Check:** `check_canonical_headings` (d), which accepts either full set, or the short set of a `rates-card`, `cross-country-method` or `router`. The two older spellings it still accepts in the reference set ("The taxable base", "Worked examples") go once the backlog is rewritten.
 
 ### 8. One figure, one home
 
@@ -181,7 +181,7 @@ expected:
 Arithmetic only: inputs, named steps, `+ - * /`, and `min max abs round floor ceil pct clamp`. Decimal maths; a value matches within `tolerance` (default 0.01). A wrong expected value fails the PR.
 
 - **Evidence:** arithmetic was right in every benchmark answer where the skill carried a recomputing example (baseline 30 Oct 2026). Decision questions sat between floor and ceiling in the shape test of 31 Oct 2026 (31% right with the skill, 13% closed book, 56% web): the worked cases did not cover the "which should I" questions people ask.
-- **Check:** `check_two_oa_checks` (e) for the two blocks; `python3 scripts/check-examples.py --require` for the arithmetic. Whether one case is a decision: reviewer.
+- **Check:** `check_two_oa_checks` (e) for the number of blocks the shape needs (two when no `type:` is declared); `python3 scripts/check-examples.py --require` for the arithmetic. Whether one case is a decision: reviewer.
 
 ### 10. "Ask the client first" lists the three to six facts that change the answer
 

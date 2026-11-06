@@ -23,15 +23,21 @@ class SkillTypes(unittest.TestCase):
         self.assertEqual(skill_checks.skill_type(fm), None)
         self.assertEqual(skill_checks.check_two_oa_checks("x.md", "", fm), ["0 oa-check block(s), need 2"])
 
-    def test_rates_card_needs_no_examples_but_a_table(self):
+    def test_rates_card_needs_one_example_and_a_table(self):
         fm = {"type": "rates-card"}
-        self.assertEqual(skill_checks.check_two_oa_checks("x.md", "", fm), [])
+        self.assertEqual(skill_checks.check_two_oa_checks("x.md", EXAMPLE, fm), [])
+        self.assertEqual(skill_checks.check_two_oa_checks("x.md", "", fm), ["0 oa-check block(s), need 1"])
         self.assertEqual(skill_checks.check_rates_rows_sourced("x.md", "no table", fm), ["no rates table"])
 
     def test_router_needs_no_table_and_no_examples(self):
         fm = {"type": "router"}
         self.assertEqual(skill_checks.check_two_oa_checks("x.md", "", fm), [])
         self.assertEqual(skill_checks.check_rates_rows_sourced("x.md", "no table", fm), [])
+
+    def test_router_cannot_dodge_examples(self):
+        fm = {"type": "router"}
+        text = "## Deadlines and filing\n\nFile by 31 January.\n"
+        self.assertEqual(skill_checks.check_two_oa_checks("x.md", text, fm), ["0 oa-check block(s), need 1"])
 
     def test_filing_howto_needs_one_example(self):
         fm = {"type": "filing-howto"}
