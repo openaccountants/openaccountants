@@ -17,8 +17,8 @@
 # contributions become unmergeable.
 #
 # Contributors accept the CLA by commenting "I have read the CLA Document and I
-# hereby sign the CLA" on their PR, or by ticking the CLA box in the pull
-# request template (see CLA.md).
+# hereby sign the CLA" on their PR (see CLA.md). A checkbox or statement in
+# the PR description does not satisfy the automated check.
 
 name: "CLA Assistant"
 

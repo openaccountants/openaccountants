@@ -143,7 +143,13 @@ Maintainers listed in [docs/OWNERS.md](docs/OWNERS.md) merge. An approved accoun
 
 OpenAccountants is a **mixed-licence** project: software is **AGPL-3.0-only** and the skills are under the source-available **OA Guide License**, with a commercial track for both (see [LICENSING.md](LICENSING.md)). The [Contributor License Agreement](CLA.md) lets Glimpse Ltd distribute your contribution under **all** of these tracks. You **retain copyright**; you are granting a license, not handing over ownership.
 
-**GitHub pull requests:** we rely on an **explicit opt-in**. When you open a PR, you must **tick the CLA checkbox** in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) (and leave it checked on updates to the same PR). That single action is how you record agreement. Maintainers should not merge PRs where the contributor has not confirmed the CLA.
+**GitHub pull requests:** read [CLA.md](CLA.md). If you agree, post this exact comment on your pull request:
+
+```text
+I have read the CLA Document and I hereby sign the CLA
+```
+
+Wait for the **CLA Assistant** check. It records signature comments from contributors; a checkbox or statement in the PR description does not satisfy the automated check. Maintainers should not merge PRs where a required contributor has not confirmed the CLA.
 
 **Website / other channels:** follow whatever acceptance flow that channel provides, or contact **info@openaccountants.com** for a formal signed agreement.
 

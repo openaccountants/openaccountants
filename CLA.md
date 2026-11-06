@@ -14,7 +14,7 @@ This CLA does **not** take away your rights to your contribution. You retain ful
 
 ## The agreement
 
-Once you have **accepted this CLA** as described under **[How to sign](#how-to-sign)** — including by ticking the Contributor License Agreement confirmation on a pull request that contains your work — the following terms apply to that **Contribution** (your code, documentation, or other copyrightable material submitted for inclusion in the repository):
+Once you have **accepted this CLA** as described under **[How to sign](#how-to-sign)**, the following terms apply to that **Contribution** (your code, documentation, or other copyrightable material submitted for inclusion in the repository):
 
 ### 1. Grant of copyright license
 
@@ -43,9 +43,13 @@ Glimpse Ltd is under no obligation to accept, merge, or use your Contribution.
 
 ## How to sign
 
-**GitHub (pull requests):** tick the **Contributor License Agreement** checkbox in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) when you open or update your PR. **Checking that box is your explicit opt-in** and confirms that you agree to this CLA for the contribution in that PR.
+**GitHub (pull requests):** read this CLA. If you agree, post this exact comment on the pull request that contains your work:
 
-You may instead include a clear statement in the PR description (for example: “I agree to the CLA at CLA.md”) if you cannot use the checkbox, but the checkbox is the default path maintainers will look for.
+```text
+I have read the CLA Document and I hereby sign the CLA
+```
+
+The **CLA Assistant** records the signature under the commenting contributor's GitHub account. A checkbox or statement in the PR description does not satisfy the automated check.
 
 If you prefer a formal signed agreement, contact **info@openaccountants.com** and we will provide one.
 
