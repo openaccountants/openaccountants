@@ -4,9 +4,9 @@ description: Use this skill whenever asked about India cryptocurrency or virtual
 version: 1.0
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 depends_on:
-  - in-income-tax
+  - india-income-tax
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -432,7 +432,7 @@ Refuse to:
 - Apply a capital gains exemption or a holding-period rate to VDA income.
 - Present any crypto computation as final without an accountant's review.
 
-For the general income-tax computation (slabs, regimes, rebate) see `in-income-tax`. For instalments see `in-advance-tax`.
+For the general income-tax computation (slabs, regimes, rebate) see `india-income-tax`. For instalments see `in-advance-tax`.
 
 ## Self-Checks
 

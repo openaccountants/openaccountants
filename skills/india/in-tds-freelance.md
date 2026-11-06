@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Indian TDS (Tax Deducted at Sou
 version: 1.0
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -368,7 +368,7 @@ A person who does not deduct, or deducts but does not pay, is an assessee in def
 
 ### EC9: Presumptive-scheme professional with excess TDS [T1]
 
-**Situation:** A freelancer under the presumptive scheme for professions (section 58 of the 2025 Act; see `in-income-tax`) had more TDS deducted than the tax due for the year.
+**Situation:** A freelancer under the presumptive scheme for professions (section 58 of the 2025 Act; see `india-income-tax`) had more TDS deducted than the tax due for the year.
 **Resolution:** The excess is refundable under section 431, and section 433 says every refund claim is made by furnishing the return under section 263. The freelancer MUST file the return to get it back.
 
 ### EC10: Benefit or perquisite given to a freelancer [T2]

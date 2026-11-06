@@ -13,10 +13,10 @@
 ## Files in this folder
 | File | What it covers |
 |---|---|
-| `in-income-tax.md` | Indiana individual income tax (flat 2.95% state rate + county income taxes) for self-employed / sole proprietors. Form IT-40. |
 | `in-sales-tax.md` | Indiana sales and use tax — 7% flat statewide rate, no local sales taxes. |
 
 ## What's NOT covered
+- Individual income tax (Form IT-40): no skill yet. The file that was here as `in-income-tax.md` held India income tax text under Indiana frontmatter; it moved to `skills/india/india-income-tax.md` on 6 Nov 2026. An Indiana income tax skill is left for a later wave.
 - Corporate income tax (Form IT-20)
 - Partnership and S-corp pass-through returns (Form IT-65, IT-20S)
 - Part-year and nonresident returns (Form IT-40PNR)

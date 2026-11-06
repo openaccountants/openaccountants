@@ -4,7 +4,7 @@ description: Use this skill when preparing, reviewing, or advising on annual fin
 version: 1.0
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
@@ -340,7 +340,7 @@ Source: ICAI chapter on accounts of companies, https://resource.cdn.icai.org/747
 - Restatement, reopening or voluntary revision of earlier accounts (sections 130 and 131): refer.
 - A company that has missed filings for several years and needs condonation or a compounding application: refer to a company secretary.
 - Any question that turns on the Corporate Laws (Amendment) Bill, 2026 or a proposed rule: say it is not law and refer for the position on the filing date.
-- Income tax computation, tax audit and the return: outside this Guide; see `in-income-tax` for individuals and `india-transfer-pricing` for related-party pricing. Formation and post-incorporation filings: see `india-formation`.
+- Income tax computation, tax audit and the return: outside this Guide; see `india-income-tax` for individuals and `india-transfer-pricing` for related-party pricing. Formation and post-incorporation filings: see `india-formation`.
 
 ## Sources
 

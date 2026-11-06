@@ -4,7 +4,7 @@ description: Use this skill whenever asked about India transfer pricing rules, d
 version: 1.0
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+last_updated: 2026-11-06
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
@@ -331,7 +331,7 @@ The reference rate for foreign currency loans is defined in rule 89(3)(a): for e
 | --- | --- |
 | `india-financial-statements` | Company accounts under the Companies Act 2013 support the documentation and the master file |
 | `india-gst` | Related-party supplies also raise GST valuation questions; GST is not covered here |
-| `in-income-tax` | Return due dates and fees for individuals; this Guide covers the transfer pricing layer only |
+| `india-income-tax` | Return due dates and fees for individuals; this Guide covers the transfer pricing layer only |
 
 No live Guide in this library covers Indian corporate income tax. For company rates and the return itself, refer to a professional.
 
