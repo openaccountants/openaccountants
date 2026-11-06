@@ -4,13 +4,13 @@ Generated from the skill tree on 2026-10-31 by `scripts/build-register.py`. One 
 
 ## Totals
 
-- Skills: 2280
-- Jurisdictions: 273 (265 countries or states, the rest pseudo-codes)
-- Tax year 2026: 994; still 2025: 1160; no year: 121
+- Skills: 2258
+- Jurisdictions: 270 (262 countries or states, the rest pseudo-codes)
+- Tax year 2026: 984; still 2025: 1148; no year: 121
 - Signed by a named accountant (tier 1): 30, in US (21), PH (7), CA (1), MY (1)
-- Scope: 2048 tax skills (deep-tax shape applies), 89 accounting-pack skills (general template), 143 other (routers, templates, patterns)
-- Domain from the README `covered_by`: 194; from the slug: 1205; no tax domain: 881
-- Pass all 10 checks: 205 of 2048 tax skills
+- Scope: 2027 tax skills (deep-tax shape applies), 88 accounting-pack skills (general template), 143 other (routers, templates, patterns)
+- Domain from the README `covered_by`: 187; from the slug: 1197; no tax domain: 874
+- Pass all 10 checks: 199 of 2027 tax skills
 - Duplicates: 396 skills in 142 (country, domain) cells where the README does not name which skill covers the job
 
 ## Pass rate per check
@@ -102,7 +102,6 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | AZ | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 8 | 10 | 0 | 10 |
 | BA | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 10 | 0 | 10 |
 | BG | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 10 | 0 | 10 |
-| BY | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 6 | 10 | 0 | 10 |
 | EE | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 10 | 0 | 10 |
 | GE | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 10 | 0 | 10 |
 | GG | 1 | 1 | 1 | 1 | 2! | 1 | 1 | 2 | 10 | 0 | 10 |
@@ -178,7 +177,6 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | CD | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | CF | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | CG | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
-| CU | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | CV | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | CW | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 1 | 0 | 6 |
 | DJ | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
@@ -190,7 +188,6 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | GW | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | GY | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | HT | 1 | 1 | 1 |  | 2! |  |  | 0 | 6 | 0 | 6 |
-| IR | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | JM | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | JO | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
 | KG | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 6 |
@@ -779,7 +776,6 @@ For each country, the 3 tax skills with the fewest rates rows neither linked nor
 | BR | `br-indirect-tax` | 23 | 23 | 0.0 | 0.0 |
 | BS | `bahamas-vat` | 21 | 22 | 4.5 | 0.0 |
 | BS | `bs-income-tax` | 43 | 44 | 2.3 | 0.0 |
-| BY | `belarus-income-tax` | 5 | 21 | 76.2 | 0.0 |
 | CA | `ab-corporate-tax` | 7 | 7 | 0.0 | 0.0 |
 | CA | `nt-payroll-tax` | 7 | 7 | 0.0 | 0.0 |
 | CA | `leaving-canada-departure-tax` | 9 | 12 | 25.0 | 0.0 |
@@ -896,7 +892,6 @@ For each country, the 3 tax skills with the fewest rates rows neither linked nor
 | IN | `in-tax-residency` | 9 | 9 | 0.0 | 0.0 |
 | IN | `in-professional-tax` | 21 | 23 | 8.7 | 0.0 |
 | IQ | `iraq-tax` | 19 | 19 | 0.0 | 0.0 |
-| IR | `iran-vat` | 11 | 12 | 8.3 | 0.0 |
 | IS | `iceland-payroll` | 3 | 18 | 83.3 | 0.0 |
 | IS | `is-transfer-pricing` | 6 | 6 | 0.0 | 0.0 |
 | IS | `is-cross-border` | 12 | 13 | 7.7 | 0.0 |

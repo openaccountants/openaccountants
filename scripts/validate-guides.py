@@ -48,6 +48,11 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      unless the PR body names it and has `## Moved` and `## Not moved` tables;
      WARN for a heading of the deleted skill those tables do not cover. Outside
      GitHub Actions there is no PR body, so it WARNs.
+ 10. Sanctioned countries (scripts/data/sanctioned.yml: Russia, Belarus, Cuba,
+     Iran, North Korea, Syria). ERROR for any file the PR adds or edits under
+     skills/, library/ or evidence/ in one of their folders, or a skill or
+     library file whose `jurisdiction:` is one of their codes. A deletion is
+     fine. The full run (no --changed-only) checks the whole tree the same way.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -63,6 +68,7 @@ import sys
 import job_identity
 import label_boilerplate
 import repo_layout
+import sanctioned
 import skill_checks
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
@@ -278,6 +284,52 @@ def changed_files_vs_main():
     except Exception as e:  # pragma: no cover
         print(f"WARN: could not compute changed files ({e}); validating everything")
         return None
+
+
+def added_or_edited_vs_main():
+    """Every path the PR adds or edits vs origin/main, moves included (a move shows
+    as its new path), deletions left out. None when git cannot say."""
+    try:
+        out = subprocess.run(
+            ["git", "diff", "--name-only", "--no-renames", "--diff-filter=d", "origin/main...HEAD"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+    except Exception as e:  # pragma: no cover
+        print(f"WARN: could not compute changed files ({e}); checking the whole tree for sanctioned countries")
+        return None
+    return [line.strip() for line in out.splitlines() if line.strip()]
+
+
+def _read_or_none(rel):
+    try:
+        with open(os.path.join(REPO_ROOT, rel), encoding="utf-8", errors="replace") as fh:
+            return fh.read()
+    except OSError:
+        return None
+
+
+def sanctioned_tree_paths():
+    """Every file under skills/, library/ and evidence/ in the working tree."""
+    out = []
+    for root in ("skills", "library", "evidence"):
+        for dirpath, _dirs, files in os.walk(os.path.join(REPO_ROOT, root)):
+            for name in files:
+                out.append(os.path.relpath(os.path.join(dirpath, name), REPO_ROOT).replace(os.sep, "/"))
+    return sorted(out)
+
+
+def check_sanctioned(errors, paths=None, read=_read_or_none):
+    """Line 10: no file for a sanctioned country. `paths` are the PR's added or
+    edited files; None checks the whole tree."""
+    paths = sanctioned_tree_paths() if paths is None else paths
+    for rel in sorted(paths):
+        if not rel.startswith(sanctioned.GUARDED_ROOTS):
+            continue
+        # Only skills and library files carry a jurisdiction worth reading.
+        text = read(rel) if rel.startswith(("skills/", "library/")) and rel.endswith((".md", ".json")) else None
+        message = sanctioned.problem(rel, text)
+        if message:
+            errors.append(message)
 
 
 def added_and_deleted_vs_main():
@@ -731,6 +783,9 @@ def main():
         print(f"wrote skills/DUPLICATES.md: {len(groups)} same-job groups")
         return
     only = None
+    # Line 10 runs first, on every added or edited path (library and evidence
+    # included), so a PR that touches no guide cannot skip it.
+    check_sanctioned(errors, added_or_edited_vs_main() if changed_only else None)
     if changed_only:
         changed = changed_files_vs_main()
         if changed is not None:

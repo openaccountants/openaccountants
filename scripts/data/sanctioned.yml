@@ -1,0 +1,34 @@
+# Countries this repository does not cover: no skill, library or evidence file for them.
+#
+# These six are under broad embargo. Their packs were removed from skills/ (Git history
+# keeps them; see docs/PATH-MOVES.md), and scripts/validate-guides.py fails any pull
+# request that adds or edits a file in their folders or with their `jurisdiction:` code.
+#
+# Read by scripts/sanctioned.py (validate-guides.py, coverage-report.py,
+# build-country-index.py). The platform's GitHub ingest (Accora-ai/githubaccountingskills)
+# keeps the same six codes as a constant that points here: change both together.
+
+decided_on: "2026-11-06"
+decided_by: "Michael 6 Nov 2026"
+
+countries:
+  - code: RU
+    name: Russia
+    folder: russia
+  - code: BY
+    name: Belarus
+    folder: belarus
+  - code: CU
+    name: Cuba
+    folder: cuba
+  - code: IR
+    name: Iran
+    folder: iran
+  - code: KP
+    name: North Korea
+    folder: north-korea
+  - code: SY
+    name: Syria
+    folder: syria
+
+stay_live: "Countries under targeted sanctions only (Myanmar, Venezuela, Afghanistan, Sudan, South Sudan, Libya) stay covered."

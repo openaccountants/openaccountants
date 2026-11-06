@@ -87,7 +87,7 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 | BA | Bosnia and Herzegovina | Claude (from ChatGPT, 30 Oct) | 2026 | All ten skills rebuilt or refreshed (#964, #971, #976 to #979, #981, #985, #989, #993). Issue #381 open. |
 | BE | Belgium | Claude | 2026 | Issue #382 closed. |
 | BG | Bulgaria | Claude | 2026 | Issue #383 closed. |
-| BY | Belarus | ChatGPT | 2025 | Draft PR #835 open. Issue #384 open. |
+| BY | Belarus | none | none | Not covered (sanctioned). Pack removed 6 Nov 2026; see `scripts/data/sanctioned.yml`. |
 | CH | Switzerland | Claude | 2026 | Issue #385 closed. |
 | CY | Cyprus | Claude | 2026 | Issue #386 closed. |
 | CZ | Czech Republic | Claude | 2026 | Issue #387 closed. |
@@ -162,7 +162,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | jeff | americas | CL | Chile | 8 | 0 | 0 | PR, TP, XB |
 | jeff | americas | CO | Colombia | 8 | 0 | 0 | PR, TP, XB |
 | jeff | americas | CR | Costa Rica | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
-| jeff | americas | CU | Cuba | 6 | 0 | 0 | TP, XB |
+| jeff | americas | CU | Cuba | 0 | 0 | 0 | not covered (sanctioned) |
 | jeff | americas | CW | Cura Ao | 6 | 0 | 0 | TP, XB |
 | jeff | americas | DM | Dominica | 4 | 0 | 0 | TP, XB |
 | jeff | americas | DO | Dominican Republic | 22 | 0 | 0 | none |
@@ -260,7 +260,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | michael | europe | BA | Bosnia | 10 | 0 | 0 | IT-IND, SC, PR, TP, XB |
 | michael | europe | BE | Belgium | 15 | 0 | 0 | none |
 | michael | europe | BG | Bulgaria | 10 | 0 | 0 | none |
-| michael | europe | BY | Belarus | 8 | 0 | 0 | TP, XB |
+| michael | europe | BY | Belarus | 0 | 0 | 0 | not covered (sanctioned) |
 | michael | europe | CH | Switzerland | 14 | 0 | 0 | none |
 | michael | europe | CY | Cyprus | 9 | 0 | 0 | none |
 | michael | europe | CZ | Czech Republic | 13 | 0 | 0 | none |
@@ -311,7 +311,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | michael | middle-east | EG | Egypt | 17 | 0 | 0 | XB |
 | michael | middle-east | IL | Israel | 10 | 0 | 0 | SC, TP, XB |
 | michael | middle-east | IQ | Iraq | 7 | 0 | 0 | TP, XB |
-| michael | middle-east | IR | Iran | 6 | 0 | 0 | TP, XB |
+| michael | middle-east | IR | Iran | 0 | 0 | 0 | not covered (sanctioned) |
 | michael | middle-east | JO | Jordan | 6 | 0 | 0 | TP, XB |
 | michael | middle-east | KW | Kuwait | 6 | 0 | 0 | TP, XB |
 | michael | middle-east | LB | Lebanon | 6 | 0 | 0 | TP, XB |

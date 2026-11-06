@@ -203,13 +203,6 @@
   "dir": "skills/botswana"
  },
  {
-  "code": "BY",
-  "name": "Belarus",
-  "region": "europe",
-  "owner": "michael",
-  "dir": "skills/belarus"
- },
- {
   "code": "BZ",
   "name": "Belize",
   "region": "americas",
@@ -299,13 +292,6 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/costa-rica"
- },
- {
-  "code": "CU",
-  "name": "Cuba",
-  "region": "americas",
-  "owner": "jeff",
-  "dir": "skills/cuba"
  },
  {
   "code": "CV",
@@ -642,13 +628,6 @@
   "region": "middle-east",
   "owner": "michael",
   "dir": "skills/iraq"
- },
- {
-  "code": "IR",
-  "name": "Iran",
-  "region": "middle-east",
-  "owner": "michael",
-  "dir": "skills/iran"
  },
  {
   "code": "IS",
