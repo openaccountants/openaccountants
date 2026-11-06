@@ -1,0 +1,511 @@
+{
+  "country": "mexico",
+  "code": "MX",
+  "url_count": 52,
+  "sources": [
+    {
+      "url": "http://omawww.sat.gob.mx/informacion_fiscal/obligaciones_fiscales/personas_morales/regimen_general/Paginas/declaraciones_mensuales.aspx",
+      "skills": [
+        "mexico-iva",
+        "mx-corporate-income-tax",
+        "mx-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf",
+      "skills": [
+        "mexico-einvoice",
+        "mexico-transfer-pricing",
+        "mx-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo8_RMF2025-30122024.pdf",
+      "skills": [
+        "mexico-crypto-tax",
+        "mx-income-tax",
+        "mx-payroll-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/rmf/RMF_2025-30122024.pdf",
+      "skills": [
+        "mexico-einvoice",
+        "mx-cfdi"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://www.sat.gob.mx/cfd/4",
+      "skills": [
+        "mexico-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5777219&fecha=28/12/2025",
+      "skills": [
+        "mx-payroll-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/NeoRazorX/facturascripts",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/phpcfdi/cfdi-sat-scraper",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://portalmx.infonavit.org.mx/wps/portal/infonavitmx/mx2/patrones/centro_ayuda/preguntas_frecuentes/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zizTxdDAwtnA2MLA0NDAzM_J193ZxMTQ09w0z1C7IdFQHkqnMl/",
+      "skills": [
+        "mx-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://reposipot.imss.gob.mx/normatividad/DNMR/Procedimiento/9210-003-612.pdf",
+      "skills": [
+        "mx-imss"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5547485",
+      "skills": [],
+      "figures": [
+        "mx.iva.border.credit",
+        "mx.iva.border.effective",
+        "mx.iva.border.isr_credit"
+      ]
+    },
+    {
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5772357",
+      "skills": [],
+      "figures": [
+        "mx.isr.interest.withholding",
+        "mx.lif.recargos.prorroga",
+        "mx.lif.recargos.installments12",
+        "mx.lif.recargos.installments24"
+      ]
+    },
+    {
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5772358",
+      "skills": [],
+      "figures": [
+        "mx.cfdi.cancel.deadline"
+      ]
+    },
+    {
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5777649",
+      "skills": [],
+      "figures": [
+        "mx.subsidio.pct",
+        "mx.subsidio.pct.january",
+        "mx.subsidio.amount",
+        "mx.subsidio.income_limit"
+      ]
+    },
+    {
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5777697",
+      "skills": [],
+      "figures": [
+        "mx.iva.border.validity"
+      ]
+    },
+    {
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+      "skills": [
+        "mexico-crypto-tax",
+        "mexico-einvoice",
+        "mexico-transfer-pricing",
+        "mx-cfdi",
+        "mx-corporate-income-tax",
+        "mx-cross-border",
+        "mx-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
+      "skills": [
+        "mx-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+      "skills": [
+        "mexico-crypto-tax",
+        "mexico-einvoice",
+        "mexico-iva",
+        "mexico-transfer-pricing",
+        "mx-corporate-income-tax",
+        "mx-cross-border",
+        "mx-estimated-tax",
+        "mx-imss",
+        "mx-income-tax",
+        "mx-payroll-withholding",
+        "mx-social-contributions",
+        "mx-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
+      "skills": [
+        "mexico-einvoice",
+        "mexico-iva",
+        "mx-income-tax",
+        "mx-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "skills": [
+        "mx-imss",
+        "mx-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
+      "skills": [
+        "mexico-einvoice",
+        "mexico-iva",
+        "mx-income-tax",
+        "mx-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gob.mx/conasami/articulos/incremento-a-los-salarios-minimos-para-2026?idiom=es",
+      "skills": [],
+      "figures": [
+        "mx.salmin.general",
+        "mx.salmin.zlfn"
+      ]
+    },
+    {
+      "url": "https://www.gob.mx/sat/articulos/deduce-la-colegiatura-de-tus-hijos?idiom=es",
+      "skills": [
+        "mx-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.imss.gob.mx/derechoH/segurosalud-familia",
+      "skills": [
+        "mx-imss"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.imss.gob.mx/sites/all/statics/pdf/procedimientos/9210-003-209.pdf",
+      "skills": [
+        "mx-imss"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf",
+      "skills": [],
+      "figures": [
+        "mx.uma.daily",
+        "mx.uma.monthly",
+        "mx.uma.annual",
+        "mx.uma.start",
+        "mx.uma.change"
+      ]
+    },
+    {
+      "url": "https://www.inegi.org.mx/temas/uma/",
+      "skills": [
+        "mexico-crypto-tax",
+        "mx-imss"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.sat.gob.mx",
+      "skills": [
+        "mexico-iva",
+        "mx-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461173770379&ssbinary=true",
+      "skills": [
+        "mexico-iva",
+        "mx-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "skills": [
+        "mx-estimated-tax",
+        "mx-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/06071/articulo-2-a",
+      "skills": [],
+      "figures": [
+        "mx.iva.zero"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/18243/articulo-1-a",
+      "skills": [],
+      "figures": [
+        "mx.iva.retention.deadline"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/18353/articulo-126",
+      "skills": [],
+      "figures": [
+        "mx.isr.pf.sale_goods.provisional",
+        "mx.isr.pf.sale_goods.exception"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/19848/articulo-1",
+      "skills": [],
+      "figures": [
+        "mx.iva.general"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/32450/articulo-140",
+      "skills": [],
+      "figures": [
+        "mx.isr.dividends.additional.resident",
+        "mx.isr.dividends.grossup"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/36658/articulo-106",
+      "skills": [],
+      "figures": [
+        "mx.isr.pf.provisional.deadline",
+        "mx.isr.pf.fees.withholding"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/58780/articulo-113-e",
+      "skills": [],
+      "figures": [
+        "mx.resico.pf.monthly_deadline"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/58872/articulo-113-f",
+      "skills": [],
+      "figures": [
+        "mx.resico.pf.annual_deadline"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/59511/articulo-113-j",
+      "skills": [],
+      "figures": [
+        "mx.resico.pf.retention"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/73134/articulo-5-d",
+      "skills": [],
+      "figures": [
+        "mx.iva.monthly_deadline"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/76538/articulo-164",
+      "skills": [],
+      "figures": [
+        "mx.isr.dividends.nonresident"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/82615/articulo-151",
+      "skills": [],
+      "figures": [
+        "mx.isr.pf.deductions.cap.pct",
+        "mx.isr.pf.deductions.cap.uma",
+        "mx.isr.pf.deductions.donations",
+        "mx.isr.pf.deductions.retirement"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/83662/articulo-150",
+      "skills": [],
+      "figures": [
+        "mx.isr.pf.annual_return.month",
+        "mx.isr.pf.annual_return.exempt_threshold",
+        "mx.isr.pf.annual_return.interest_threshold",
+        "mx.isr.pf.annual_return.report_all_income"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/articulo/93578/articulo-9",
+      "skills": [],
+      "figures": [
+        "mx.isr.pm.rate"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461172362674&ssbinary=true",
+      "skills": [],
+      "figures": [
+        "mx.iva.retention.fees"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "skills": [],
+      "figures": [
+        "mx.resico.pf.monthly.band1.rate",
+        "mx.resico.pf.monthly.band1.upper",
+        "mx.resico.pf.monthly.band2.rate",
+        "mx.resico.pf.monthly.band2.upper",
+        "mx.resico.pf.monthly.band3.rate",
+        "mx.resico.pf.monthly.band3.upper",
+        "mx.resico.pf.monthly.band4.rate",
+        "mx.resico.pf.monthly.band4.upper",
+        "mx.resico.pf.monthly.band5.rate",
+        "mx.resico.pf.monthly.band5.upper",
+        "mx.resico.pf.ceiling"
+      ]
+    },
+    {
+      "url": "https://wwwmat.sat.gob.mx/declaracion/79571/declaracion-pais-por-pais",
+      "skills": [],
+      "figures": [
+        "mx.tp.cbcr.deadline"
+      ]
+    },
+    {
+      "url": "https://wwwmatnp.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20",
+      "skills": [
+        "mx-cfdi"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://wwwnp.sat.gob.mx/minisitio/Factura/documentos/EsquemaCancelacionCFDI.pdf",
+      "skills": [],
+      "figures": [
+        "mx.cfdi.cancel.acceptance_days",
+        "mx.cfdi.global.resico.cancel"
+      ]
+    },
+    {
+      "url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf",
+      "skills": [],
+      "figures": [
+        "mx.tp.local_file.threshold",
+        "mx.tp.dictamen.threshold",
+        "mx.cff.penalty.late_return.min",
+        "mx.cff.penalty.late_return.max",
+        "mx.cff.penalty.undeclared.min",
+        "mx.cff.penalty.undeclared.max"
+      ]
+    },
+    {
+      "url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "skills": [],
+      "figures": [
+        "mx.isr.pf.annual.band1.lower",
+        "mx.isr.pf.annual.band1.rate",
+        "mx.isr.pf.annual.band2.lower",
+        "mx.isr.pf.annual.band2.cuota",
+        "mx.isr.pf.annual.band2.rate",
+        "mx.isr.pf.annual.band3.lower",
+        "mx.isr.pf.annual.band3.cuota",
+        "mx.isr.pf.annual.band3.rate",
+        "mx.isr.pf.annual.band4.lower",
+        "mx.isr.pf.annual.band4.cuota",
+        "mx.isr.pf.annual.band4.rate",
+        "mx.isr.pf.annual.band5.lower",
+        "mx.isr.pf.annual.band5.cuota",
+        "mx.isr.pf.annual.band5.rate",
+        "mx.isr.pf.annual.band6.lower",
+        "mx.isr.pf.annual.band6.cuota",
+        "mx.isr.pf.annual.band6.rate",
+        "mx.isr.pf.annual.band7.lower",
+        "mx.isr.pf.annual.band7.cuota",
+        "mx.isr.pf.annual.band7.rate",
+        "mx.isr.pf.annual.band8.lower",
+        "mx.isr.pf.annual.band8.cuota",
+        "mx.isr.pf.annual.band8.rate",
+        "mx.isr.pf.annual.band9.lower",
+        "mx.isr.pf.annual.band9.cuota",
+        "mx.isr.pf.annual.band9.rate",
+        "mx.isr.pf.annual.band10.lower",
+        "mx.isr.pf.annual.band10.cuota",
+        "mx.isr.pf.annual.band10.rate",
+        "mx.isr.pf.annual.band11.lower",
+        "mx.isr.pf.annual.band11.cuota",
+        "mx.isr.pf.annual.band11.rate",
+        "mx.isr.pf.monthly.band1.lower",
+        "mx.isr.pf.monthly.band1.rate",
+        "mx.isr.pf.monthly.band2.lower",
+        "mx.isr.pf.monthly.band2.cuota",
+        "mx.isr.pf.monthly.band2.rate",
+        "mx.isr.pf.monthly.band3.lower",
+        "mx.isr.pf.monthly.band3.cuota",
+        "mx.isr.pf.monthly.band3.rate",
+        "mx.isr.pf.monthly.band4.lower",
+        "mx.isr.pf.monthly.band4.cuota",
+        "mx.isr.pf.monthly.band4.rate",
+        "mx.isr.pf.monthly.band5.lower",
+        "mx.isr.pf.monthly.band5.cuota",
+        "mx.isr.pf.monthly.band5.rate",
+        "mx.isr.pf.monthly.band6.lower",
+        "mx.isr.pf.monthly.band6.cuota",
+        "mx.isr.pf.monthly.band6.rate",
+        "mx.isr.pf.monthly.band7.lower",
+        "mx.isr.pf.monthly.band7.cuota",
+        "mx.isr.pf.monthly.band7.rate",
+        "mx.isr.pf.monthly.band8.lower",
+        "mx.isr.pf.monthly.band8.cuota",
+        "mx.isr.pf.monthly.band8.rate",
+        "mx.isr.pf.monthly.band9.lower",
+        "mx.isr.pf.monthly.band9.cuota",
+        "mx.isr.pf.monthly.band9.rate",
+        "mx.isr.pf.monthly.band10.lower",
+        "mx.isr.pf.monthly.band10.cuota",
+        "mx.isr.pf.monthly.band10.rate",
+        "mx.isr.pf.monthly.band11.lower",
+        "mx.isr.pf.monthly.band11.cuota",
+        "mx.isr.pf.monthly.band11.rate"
+      ]
+    },
+    {
+      "url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
+      "skills": [],
+      "figures": [
+        "mx.resico.pm.ceiling",
+        "mx.iva.diot.deadline",
+        "mx.cfdi.cancel.no_acceptance",
+        "mx.tp.doc_exempt.business",
+        "mx.tp.doc_exempt.professional"
+      ]
+    }
+  ]
+}

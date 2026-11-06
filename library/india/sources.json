@@ -1,0 +1,1471 @@
+{
+  "country": "india",
+  "code": "IN",
+  "url_count": 146,
+  "sources": [
+    {
+      "url": "https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf",
+      "skills": [
+        "india-gst",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.gst.reg.threshold.services",
+        "in.gst.reg.threshold.services.special",
+        "in.gst.reg.threshold.goods",
+        "in.gst.reg.threshold.goods.lower",
+        "in.gst.comp.limit",
+        "in.gst.comp.limit.special",
+        "in.gst.comp.rate.manufacturer",
+        "in.gst.comp.rate.trader",
+        "in.gst.comp.rate.restaurant",
+        "in.gst.comp.services.rate",
+        "in.gst.comp.services.limit",
+        "in.gst.comp.return.annual",
+        "in.gst.comp.payment.quarterly"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2019/210356.pdf",
+      "skills": [
+        "india-payroll"
+      ],
+      "figures": [
+        "in.labour.bonus.minimum",
+        "in.labour.bonus.minimum_rupees",
+        "in.labour.bonus.maximum",
+        "in.labour.bonus.min_days",
+        "in.labour.bonus.applicability"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2020/222111.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-financial-statements",
+        "india-payroll"
+      ],
+      "figures": [
+        "in.labour.epf.applicability",
+        "in.labour.esi.applicability",
+        "in.labour.gratuity.qualifying_service",
+        "in.labour.gratuity.rate",
+        "in.labour.gratuity.divisor",
+        "in.labour.gratuity.ceiling"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2023/245642.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2025/265620.pdf",
+      "skills": [
+        "in-advance-tax",
+        "in-professional-tax",
+        "in-tds-freelance",
+        "india-crypto-tax",
+        "india-financial-statements",
+        "india-formation",
+        "india-payroll",
+        "india-tax-optimization",
+        "india-transfer-pricing"
+      ],
+      "figures": [
+        "in.income.new.nil",
+        "in.income.new.5",
+        "in.income.new.t800k",
+        "in.income.new.10",
+        "in.income.new.t1200k",
+        "in.income.new.15",
+        "in.income.new.t1600k",
+        "in.income.new.20",
+        "in.income.new.t2000k",
+        "in.income.new.25",
+        "in.income.new.t2400k",
+        "in.income.new.30",
+        "in.rebate.old.amount",
+        "in.rebate.old.limit",
+        "in.rebate.new.amount",
+        "in.rebate.new.limit",
+        "in.salary.std.new",
+        "in.salary.std.old",
+        "in.salary.family-pension.new",
+        "in.ded.123",
+        "in.ded.124.employer.govt",
+        "in.ded.124.employer.other",
+        "in.ded.124.own",
+        "in.ded.126.health",
+        "in.ded.126.senior",
+        "in.ded.153.savings",
+        "in.ded.153.senior",
+        "in.hp.interest.self",
+        "in.hp.loss-setoff",
+        "in.presumptive.business.limit",
+        "in.presumptive.business.limit-digital",
+        "in.presumptive.business.cash-share",
+        "in.presumptive.business.digital-rate",
+        "in.presumptive.business.cash-rate",
+        "in.presumptive.profession.rate",
+        "in.presumptive.profession.limit",
+        "in.presumptive.profession.limit-digital",
+        "in.presumptive.goods.heavy",
+        "in.presumptive.goods.other",
+        "in.presumptive.lock-in",
+        "in.vda.rate",
+        "in.tds.commission.rate",
+        "in.tds.commission.threshold",
+        "in.tds.rent.individual",
+        "in.tds.rent.threshold",
+        "in.tds.rent.machinery",
+        "in.tds.rent.land-building",
+        "in.tds.property.rate",
+        "in.tds.contractor.individual",
+        "in.tds.contractor.other",
+        "in.tds.contractor.single",
+        "in.tds.contractor.aggregate",
+        "in.tds.individual-payer.rate",
+        "in.tds.fts.rate",
+        "in.tds.professional.rate",
+        "in.tds.professional.threshold",
+        "in.tds.ecommerce.rate",
+        "in.tds.ecommerce.exempt",
+        "in.tds.vda.rate",
+        "in.tds.vda.exempt.specified",
+        "in.tds.vda.exempt.other",
+        "in.tds.no-pan.rate",
+        "in.tds.no-pan.ecommerce",
+        "in.tds.interest.not-deducted",
+        "in.tds.interest.not-paid",
+        "in.advance.threshold",
+        "in.advance.i1",
+        "in.advance.i2",
+        "in.advance.i3",
+        "in.advance.i4",
+        "in.interest.default",
+        "in.interest.default.share",
+        "in.interest.deferment.3",
+        "in.interest.deferment.1",
+        "in.interest.late-return",
+        "in.return.updated",
+        "in.cit.s200.rate",
+        "in.cit.s201.rate",
+        "in.tp.sdt.threshold",
+        "in.tp.penalty.docs",
+        "in.tp.penalty.masterfile",
+        "in.tp.report.old-penalty-omitted",
+        "in.tp.cbcr.penalty.first-month",
+        "in.tp.cbcr.penalty.after",
+        "in.tp.cbcr.penalty.after-order",
+        "in.tp.cbcr.penalty.inaccurate",
+        "in.salary.standard_deduction.new_regime",
+        "in.salary.standard_deduction.other",
+        "in.salary.tax_on_employment.deduction"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2025/267882.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-financial-statements",
+        "india-payroll"
+      ],
+      "figures": [
+        "in.labour.css.commencement"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2025/267885.pdf",
+      "skills": [
+        "india-payroll"
+      ],
+      "figures": [
+        "in.labour.cow.commencement"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2025/268124.pdf",
+      "skills": [
+        "india-financial-statements",
+        "india-formation"
+      ],
+      "figures": [
+        "in.co.small.paid-up-capital",
+        "in.co.small.turnover"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2025/268694.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2025/268970.pdf",
+      "skills": [
+        "india-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/271201.pdf",
+      "skills": [
+        "india-financial-statements",
+        "india-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/271439.pdf",
+      "skills": [
+        "in-advance-tax",
+        "in-tds-freelance",
+        "india-crypto-tax",
+        "india-financial-statements",
+        "india-formation",
+        "india-payroll",
+        "india-tax-optimization",
+        "india-transfer-pricing"
+      ],
+      "figures": [
+        "in.income.new.nil-band.fa",
+        "in.income.old.nil.u60",
+        "in.income.old.5",
+        "in.income.old.base-500k",
+        "in.income.old.20",
+        "in.income.old.base-1m",
+        "in.income.old.30",
+        "in.income.old.t1m",
+        "in.income.old.nil.60-79",
+        "in.income.old.base-500k.60-79",
+        "in.income.old.base-1m.60-79",
+        "in.income.old.nil.80plus",
+        "in.income.old.base-1m.80plus",
+        "in.income.agri.threshold",
+        "in.income.firm.rate",
+        "in.income.firm.surcharge",
+        "in.surcharge.new.t50l",
+        "in.surcharge.new.10",
+        "in.surcharge.new.t1cr",
+        "in.surcharge.new.15",
+        "in.surcharge.new.25",
+        "in.surcharge.new.t2cr",
+        "in.surcharge.cg-cap",
+        "in.surcharge.old.37",
+        "in.surcharge.old.t5cr",
+        "in.cess",
+        "in.tds.statement.late-fee",
+        "in.interest.demand",
+        "in.return.due.other",
+        "in.return.due.business",
+        "in.return.due.audit",
+        "in.return.due.tp",
+        "in.return.revised",
+        "in.return.late-fee.small",
+        "in.return.late-fee.limit",
+        "in.return.late-fee",
+        "in.cit.rate.domestic-turnover-400cr",
+        "in.cit.rate.domestic-turnover-limit",
+        "in.cit.rate.domestic-other",
+        "in.cit.rate.foreign-company-balance",
+        "in.cit.surcharge.domestic.low",
+        "in.cit.surcharge.domestic.high",
+        "in.cit.surcharge.domestic.threshold-low",
+        "in.cit.surcharge.domestic.threshold-high",
+        "in.cit.surcharge.s200-201",
+        "in.cit.surcharge.foreign.low",
+        "in.cit.surcharge.foreign.high",
+        "in.cit.cess",
+        "in.mat.rate-2025act",
+        "in.mat.old-rate-replaced",
+        "in.mat.credit-setoff-cap-s200-201",
+        "in.mat.credit-carry-forward-limit",
+        "in.cit.1961.turnover-test-ay2026-27",
+        "in.return.due.company",
+        "in.return.due.business-no-audit",
+        "in.return.revised-window",
+        "in.tp.report.fee.first-month",
+        "in.tp.report.fee.after",
+        "in.audit-report.fee.first-month",
+        "in.audit-report.fee.after",
+        "in.return.late-fee.high",
+        "in.return.late-fee.low"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/271973.pdf",
+      "skills": [
+        "india-formation"
+      ],
+      "figures": [
+        "in.co.dir3kyc.late-fee",
+        "in.co.dir3kyc.change-fee"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/272366.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.labour.ssrules.commencement",
+        "in.labour.esi.rate.employer",
+        "in.labour.esi.rate.employee",
+        "in.labour.esi.confinement_bonus"
+      ]
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/273406.pdf",
+      "skills": [
+        "india-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/273942.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/273951.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/273957.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.epf.scheme2026.commencement",
+        "in.epf.rate.standard",
+        "in.epf.rate.reduced",
+        "in.epf.due_date",
+        "in.epf.wage_ceiling",
+        "in.epf.damages.under2m",
+        "in.epf.damages.2to4m",
+        "in.epf.damages.over4m",
+        "in.epf.enrolment_campaign.end"
+      ]
+    },
+    {
+      "url": "https://einvoice1.gst.gov.in",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://ewaybillgst.gov.in",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/Ammar-32-dev/indian-financial-calculators",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/amrajacivil/taxcalcindia",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/debjitl45/aikar",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/resilient-tech/india-compliance",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-04/notfctn-13-central-tax-english.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.interest.late-payment",
+        "in.gst.interest.wrong-itc"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/05_2022-ctr-eng_1.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/07_eng.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.latefee.gstr9.small.daily",
+        "in.gst.latefee.gstr9.small.cap",
+        "in.gst.latefee.gstr9.mid.daily",
+        "in.gst.latefee.gstr9.band.upper"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf",
+      "skills": [
+        "india-einvoice",
+        "india-gst",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.gst.einv.aato",
+        "in.gst.einv.aato.start"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/15_2022-ctr-eng.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/17-2022-ct-eng_1_1.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/download_2024-05-17t161051.835.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/download_5.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.exempt.electricity"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/download_8_0.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.rcm.gta",
+        "in.gst.rcm.advocate",
+        "in.gst.rcm.sponsorship",
+        "in.gst.rcm.director"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/gst-ct-32-2023.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.ret.gstr9.exempt.fy2223"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/nn_01_2022_english.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-05-central-tax-english-2021.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2019.pdf",
+      "skills": [],
+      "figures": [
+        "in.gst.comp.limit.words",
+        "in.gst.comp.limit.special.words",
+        "in.gst.comp.excluded"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2020.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-19-central-tax-english-2021.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.latefee.gstr3b.cap.nil",
+        "in.gst.latefee.gstr3b.cap.small",
+        "in.gst.latefee.gstr3b.cap.mid",
+        "in.gst.latefee.band.lower",
+        "in.gst.latefee.band.upper"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-20-central-tax-english-2021.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.latefee.gstr1.cap.nil",
+        "in.gst.latefee.gstr1.cap.small",
+        "in.gst.latefee.gstr1.cap.mid"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-69-central-tax-english-2019.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf",
+      "skills": [
+        "india-einvoice",
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-71-central-tax-english-2020.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-76-central-tax-english-2018.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.latefee.gstr3b.daily",
+        "in.gst.latefee.gstr3b.daily.nil"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-78-central-tax-english-2020.pdf",
+      "skills": [
+        "india-einvoice",
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-83-central-tax-english-2020.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.ret.gstr1.monthly",
+        "in.gst.ret.gstr1.quarterly"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-88-central-tax-english-2020.pdf",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-05/notification-4-2018-central_tax-english.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.latefee.gstr1.daily",
+        "in.gst.latefee.gstr1.daily.nil"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-09/central-tax-12-2024-11072024.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2024-10/ctr-09-2024.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.rcm.commercial-rent",
+        "in.gst.rcm.commercial-rent.start"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2025-01/ctr01-2025.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2025-01/ctr07-2025.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.rcm.commercial-rent.composition"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2025-09/faq_0.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.rate.small-cars",
+        "in.gst.rate.large-cars"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf",
+      "skills": [
+        "india-einvoice",
+        "india-gst",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.gst.rate.standard",
+        "in.gst.rate.merit",
+        "in.gst.rate.demerit",
+        "in.gst.rate.four-tier-retired",
+        "in.gst.rate.start.services",
+        "in.gst.rate.start.goods",
+        "in.gst.exempt.life-insurance",
+        "in.gst.exempt.health-insurance",
+        "in.gst.rate.hotel.threshold",
+        "in.gst.rate.hotel.low",
+        "in.gst.rate.beauty",
+        "in.gst.rate.cement",
+        "in.gst.rate.eco-9-5",
+        "in.gst.reg.rule14a.limit",
+        "in.gst.reg.rule14a.start"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2026-01/monthly_newsletter_december_2025_1_0.pdf",
+      "skills": [
+        "india-einvoice",
+        "india-gst",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.gst.rate.tobacco.start",
+        "in.gst.rate.tobacco.40",
+        "in.gst.rate.bidi",
+        "in.gst.comp-cess.tobacco-withdrawn"
+      ]
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2026-10/faqs_on_recommendations_made_in_57th_gst_council_meeting.pdf",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://gstcouncil.gov.in/sites/default/files/2026-10/press_release_0.pdf",
+      "skills": [
+        "india-einvoice",
+        "india-gst",
+        "india-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://resource.cdn.icai.org/60117aasb48979-a.pdf",
+      "skills": [
+        "india-financial-statements",
+        "india-formation"
+      ],
+      "figures": [
+        "in.caro.excl.capital",
+        "in.caro.excl.borrowings",
+        "in.caro.excl.revenue",
+        "in.caro.excl.small-opc"
+      ]
+    },
+    {
+      "url": "https://resource.cdn.icai.org/74729bos60488-m1-cp1.pdf",
+      "skills": [
+        "india-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://resource.cdn.icai.org/74730bos60488-m1-cp2.pdf",
+      "skills": [
+        "india-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf",
+      "skills": [
+        "india-financial-statements",
+        "india-formation"
+      ],
+      "figures": [
+        "in.co.mgt7.due",
+        "in.co.mgt7.penalty-base",
+        "in.co.mgt7.penalty-cap-company"
+      ]
+    },
+    {
+      "url": "https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf",
+      "skills": [
+        "india-financial-statements",
+        "india-formation"
+      ],
+      "figures": [
+        "in.co.aoc4.due"
+      ]
+    },
+    {
+      "url": "https://resource.cdn.icai.org/74738bos60488-m2-cp10.pdf",
+      "skills": [
+        "india-financial-statements",
+        "india-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://resource.cdn.icai.org/74743bos60488-m3-cp12.pdf",
+      "skills": [
+        "india-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://resource.cdn.icai.org/87811bos-280825-final-ch1.pdf",
+      "skills": [
+        "india-financial-statements"
+      ],
+      "figures": [
+        "in.indas.phase1.net-worth"
+      ]
+    },
+    {
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251121701501.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll"
+      ],
+      "figures": [
+        "in.labour.esi.voluntary_small",
+        "in.labour.gratuity.fte"
+      ]
+    },
+    {
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251122702601.pdf",
+      "skills": [
+        "in-pf-esi-employer",
+        "india-payroll"
+      ],
+      "figures": [
+        "in.labour.wages.exclusion_cap",
+        "in.labour.epf.appeal_deposit",
+        "in.labour.maternity.medical_bonus",
+        "in.labour.creche.allowance"
+      ]
+    },
+    {
+      "url": "https://taxationupdates.com/CA-Prompt-Library.html",
+      "skills": [
+        "ca-prompt-library-and-tax-updates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter1/section2_v1.00.html",
+      "skills": [
+        "india-einvoice",
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter10/section49_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter10/section50_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.interest.statute.max",
+        "in.gst.interest.statute.itc-max"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section125_v1.00.html",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter3/section10_v1.00.html",
+      "skills": [
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.gst.comp.services.limit.statute",
+        "in.gst.comp.services-allowance",
+        "in.gst.comp.services-allowance.floor"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter3/section9_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter5/section16_v1.00.html",
+      "skills": [
+        "india-einvoice",
+        "india-gst",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.gst.itc.time-limit"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter5/section17_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter6/section22_v1.00.html",
+      "skills": [
+        "india-gst",
+        "india-tax-optimization"
+      ],
+      "figures": [
+        "in.gst.reg.threshold.general.statute",
+        "in.gst.reg.threshold.special.statute",
+        "in.gst.reg.threshold.goods.ceiling"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter7/section31_v1.00.html",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter9/section37_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter9/section39_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter9/section44_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter9/section47_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.latefee.statute.daily",
+        "in.gst.latefee.statute.cap",
+        "in.gst.latefee.annual.statute.cap"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_IGST_Act/active/chapteriii/section5_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_IGST_Act/active/chapterv/section14_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_IGST_Act/active/chaptervii/section16_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter10/rule89_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter10/rule96a_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter16/rule138_v1.00.html",
+      "skills": [
+        "india-einvoice",
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.ewb.threshold"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter2/rule7_v1.00.html",
+      "skills": [],
+      "figures": [
+        "in.gst.comp.rate.manufacturer.cgst",
+        "in.gst.comp.rate.trader.cgst",
+        "in.gst.comp.rate.restaurant.cgst",
+        "in.gst.comp.services.cgst"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter5/rule36_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter5/rule37_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter5/rule37a_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter5/rule42_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter5/rule43_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html",
+      "skills": [
+        "india-einvoice",
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule54_v1.00.html",
+      "skills": [
+        "india-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule59_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.ret.iff.window",
+        "in.gst.ret.iff.cap",
+        "in.gst.gstr1.b2cl"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule60_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule61_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.ret.gstr3b.monthly",
+        "in.gst.ret.gstr3b.qrmp.group1",
+        "in.gst.ret.gstr3b.qrmp.group2"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule61a_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule80_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": [
+        "in.gst.ret.gstr9.due",
+        "in.gst.ret.gstr9c.threshold"
+      ]
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter9/rule88a_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter9/rule88c_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter9/rule88d_v1.00.html",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gst.gov.in",
+      "skills": [
+        "india-gst"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/",
+      "skills": [
+        "in-advance-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/formsfaqs",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/%20income%20tax%20returns-faq",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax",
+      "skills": [
+        "in-advance-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty",
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/company/return-applicable",
+      "skills": [
+        "india-transfer-pricing"
+      ],
+      "figures": [
+        "in.cit.1961.rate.115baa",
+        "in.cit.1961.rate.115bab",
+        "in.cit.1961.mat",
+        "in.cit.1961.mat.ifsc"
+      ]
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty",
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1",
+      "skills": [
+        "in-tax-residency",
+        "india-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-faq",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/help/statutory-forms/popular-form/form67-um",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty",
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf",
+      "skills": [
+        "in-advance-tax",
+        "in-tds-freelance",
+        "india-crypto-tax",
+        "india-payroll",
+        "india-tax-optimization",
+        "india-transfer-pricing"
+      ],
+      "figures": [
+        "in.tp.report.form",
+        "in.tp.report.due",
+        "in.tp.docs.exemption",
+        "in.tp.docs.retention",
+        "in.tp.masterfile.group-revenue",
+        "in.tp.masterfile.intl-transactions",
+        "in.tp.masterfile.intangibles",
+        "in.tp.masterfile.form",
+        "in.tp.masterfile.designation-form",
+        "in.tp.cbcr.threshold",
+        "in.tp.cbcr.form",
+        "in.tp.cbcr.due-constituent",
+        "in.tp.cbcr.notification-form",
+        "in.tp.cbcr.designated-entity-form",
+        "in.tp.sh.it-services.margin",
+        "in.tp.sh.it-services.revenue-cap",
+        "in.tp.sh.it-services.term",
+        "in.tp.sh.form",
+        "in.tp.sh.corporate-guarantee",
+        "in.tp.sh.generic-pharma-crd.margin",
+        "in.tp.sh.generic-pharma-crd.cap",
+        "in.tp.sh.core-auto",
+        "in.tp.sh.noncore-auto",
+        "in.tp.sh.lvas.markup",
+        "in.tp.sh.lvas.cap",
+        "in.tp.sh.data-centre",
+        "in.tp.sh.inr-loan.175bp",
+        "in.tp.sh.inr-loan.325bp",
+        "in.tp.sh.inr-loan.475bp",
+        "in.tp.sh.inr-loan.625bp",
+        "in.tp.sh.inr-loan.425bp",
+        "in.tp.sh.inr-loan.unrated-cap",
+        "in.tp.sh.fx-loan.band"
+      ]
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf",
+      "skills": [
+        "in-cross-border-india-dual-resident-treaty",
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/Navigator%201.pdf",
+      "skills": [
+        "in-tax-residency"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct.aspx",
+      "skills": [
+        "in-professional-tax",
+        "india-payroll"
+      ],
+      "figures": [
+        "in.pt.constitution.max"
+      ]
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/02Definitions.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/04Levy.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/05Employer.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/06Registration.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/07Returns.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/10Payment.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/11Consequences.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/12Penalty.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/17Accounts.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/21Refund.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTAct/31Power.html",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTRules.aspx",
+      "skills": [
+        "in-professional-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tgct.gov.in/tgportal/AllActs/APPT/APPTSchedule.aspx",
+      "skills": [
+        "in-professional-tax",
+        "india-payroll"
+      ],
+      "figures": [
+        "in.pt.tg.salary.nil",
+        "in.pt.tg.salary.band2.amount",
+        "in.pt.tg.salary.band2.lower",
+        "in.pt.tg.salary.band2.upper",
+        "in.pt.tg.salary.top",
+        "in.pt.tg.directors",
+        "in.pt.tg.professionals"
+      ]
+    }
+  ]
+}

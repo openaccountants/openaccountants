@@ -1,0 +1,1497 @@
+{
+  "country": "mexico",
+  "code": "MX",
+  "figure_count": 133,
+  "figures": [
+    {
+      "id": "mx.uma.daily",
+      "item": "UMA (Unidad de Medida y Actualización) DAILY value in force from 1 February 2026 (INEGI). From 1 January to 31 January 2026 the 2025 UMA still applies. The UMA is the reference unit for tax exemptions, caps and fines; it is NOT the minimum wage (salario mínimo).",
+      "value": "MXN 117.31",
+      "tax_year": 2026,
+      "source_url": "https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf",
+      "quote": "Diario 117.31 pesos mexicanos",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.uma.monthly",
+      "item": "UMA MONTHLY value from 1 February 2026 (INEGI). Used for example by the subsidio para el empleo (a percentage of the monthly UMA). Not the minimum wage.",
+      "value": "MXN 3,566.22",
+      "tax_year": 2026,
+      "source_url": "https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf",
+      "quote": "Mensual 3 566.22 pesos mexicanos",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.uma.annual",
+      "item": "UMA ANNUAL value from 1 February 2026 (INEGI). Art. 151 LISR caps personal deductions at the LOWER of five times this annual UMA or 15% of total income; the Guide must not state a computed peso cap unless SAT prints it.",
+      "value": "MXN 42,794.64",
+      "tax_year": 2026,
+      "source_url": "https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf",
+      "quote": "Anual 42 794.64 pesos mexicanos",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.uma.start",
+      "item": "Date from which the 2026 UMA values apply. January 2026 still uses the 2025 UMA.",
+      "value": "1 February 2026",
+      "tax_year": 2026,
+      "source_url": "https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf",
+      "quote": "entrarán en vigor a partir del 1 de febrero de 2026",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.uma.change",
+      "item": "Increase of the UMA for 2026 over 2025, as published by INEGI. Informational only.",
+      "value": "3.69%",
+      "tax_year": 2026,
+      "source_url": "https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf",
+      "quote": "la variación de la Unidad de Medida y Actualización (UMA) fue de 3.69 %",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.salmin.general",
+      "item": "General minimum wage (salario mínimo general) per DAY from 1 January 2026 (CONASAMI), for all of Mexico except the Zona Libre de la Frontera Norte. It is NOT the UMA: tax caps and exemptions are set in UMA, not in minimum wages.",
+      "value": "MXN 315.04",
+      "tax_year": 2026,
+      "source_url": "https://www.gob.mx/conasami/articulos/incremento-a-los-salarios-minimos-para-2026?idiom=es",
+      "quote": "se incremente de 278.80 a 315.04 pesos diarios",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.salmin.zlfn",
+      "item": "Minimum wage per DAY from 1 January 2026 in the Zona Libre de la Frontera Norte (ZLFN) (CONASAMI). Different from the general minimum wage.",
+      "value": "MXN 440.87",
+      "tax_year": 2026,
+      "source_url": "https://www.gob.mx/conasami/articulos/incremento-a-los-salarios-minimos-para-2026?idiom=es",
+      "quote": "se incremente de 419.88 a 440.87 pesos diarios",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.subsidio.pct",
+      "item": "Subsidio para el empleo 2026 (Decree modifying the subsidy decree, DOF 31 Dec 2025): the monthly subsidy is the monthly UMA times this percentage, for February to December 2026. For January 2026 the percentage was 15.59% of the 2025 UMA. Applies only to employees (salaries), credited against the ISR withheld.",
+      "value": "15.02%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5777649",
+      "quote": "multiplicar el valor mensual de la Unidad de Medida y Actualización por 15.02%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.subsidio.pct.january",
+      "item": "Subsidio para el empleo: percentage applied ONLY for January 2026, on the monthly UMA of 2025 (because the 2026 UMA starts 1 February). Not the percentage for the rest of 2026.",
+      "value": "15.59%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5777649",
+      "quote": "se aplicará el porcentaje de 15.59% de la Unidad de Medida y Actualización vigente en 2025",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.subsidio.amount",
+      "item": "Monthly subsidio para el empleo amount stated in the decree recitals for 2026 (15.02% of the monthly UMA). Maximum monthly amount per employee, February to December 2026.",
+      "value": "MXN 536.22",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5777649",
+      "quote": "a 15.02%, el cual representa un monto de $536.22",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.subsidio.income_limit",
+      "item": "Subsidio para el empleo 2026: only employees whose MONTHLY income used as the ISR base does not exceed this amount receive the subsidy (a cliff, not a phase-out). Decree in force 1 January 2026.",
+      "value": "MXN 11,492.66",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5777649",
+      "quote": "no excedan de $11,492.66",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.monthly.band1.rate",
+      "item": "RESICO personas físicas (art. 113-E LISR) MONTHLY rate on income actually collected (cobrado) in the month, without IVA and without any deduction, for monthly income from MXN 0.01 up to MXN 25,000.00. The rate applies to the WHOLE monthly income, not to the excess (flat rate by band). The table is statutory and not inflation-indexed; the SAT filling guide (dated December 2024) prints it in digits because the law page shows it as an image.",
+      "value": "1.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "0.01 25,000.00 1.00%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-estimated-tax",
+        "mx-imss",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.resico.pf.monthly.band1.upper",
+      "item": "RESICO personas físicas monthly table: upper limit of band 1 (income cobrado in the month), rate 1.00%. Source: SAT filling guide, statutory table of art. 113-E LISR.",
+      "value": "MXN 25,000.00",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "0.01 25,000.00 1.00%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.monthly.band2.rate",
+      "item": "RESICO personas físicas (art. 113-E LISR) MONTHLY rate on income actually collected (cobrado) in the month, without IVA and without any deduction, for monthly income from MXN 25,000.01 up to MXN 50,000.00. The rate applies to the WHOLE monthly income, not to the excess (flat rate by band). The table is statutory and not inflation-indexed; the SAT filling guide (dated December 2024) prints it in digits because the law page shows it as an image.",
+      "value": "1.10%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "25,000.01 50,000.00 1.10%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-estimated-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.resico.pf.monthly.band2.upper",
+      "item": "RESICO personas físicas monthly table: upper limit of band 2 (income cobrado in the month), rate 1.10%. Source: SAT filling guide, statutory table of art. 113-E LISR.",
+      "value": "MXN 50,000.00",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "25,000.01 50,000.00 1.10%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.monthly.band3.rate",
+      "item": "RESICO personas físicas (art. 113-E LISR) MONTHLY rate on income actually collected (cobrado) in the month, without IVA and without any deduction, for monthly income from MXN 50,000.01 up to MXN 83,333.33. The rate applies to the WHOLE monthly income, not to the excess (flat rate by band). The table is statutory and not inflation-indexed; the SAT filling guide (dated December 2024) prints it in digits because the law page shows it as an image.",
+      "value": "1.50%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "50,000.01 83,333.33 1.50%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-estimated-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.resico.pf.monthly.band3.upper",
+      "item": "RESICO personas físicas monthly table: upper limit of band 3 (income cobrado in the month), rate 1.50%. Source: SAT filling guide, statutory table of art. 113-E LISR.",
+      "value": "MXN 83,333.33",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "50,000.01 83,333.33 1.50%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.monthly.band4.rate",
+      "item": "RESICO personas físicas (art. 113-E LISR) MONTHLY rate on income actually collected (cobrado) in the month, without IVA and without any deduction, for monthly income from MXN 83,333.34 up to MXN 208,333.33. The rate applies to the WHOLE monthly income, not to the excess (flat rate by band). The table is statutory and not inflation-indexed; the SAT filling guide (dated December 2024) prints it in digits because the law page shows it as an image.",
+      "value": "2.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "83,333.34 208,333.33 2.00%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-estimated-tax",
+        "mx-imss",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.resico.pf.monthly.band4.upper",
+      "item": "RESICO personas físicas monthly table: upper limit of band 4 (income cobrado in the month), rate 2.00%. Source: SAT filling guide, statutory table of art. 113-E LISR.",
+      "value": "MXN 208,333.33",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "83,333.34 208,333.33 2.00%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.monthly.band5.rate",
+      "item": "RESICO personas físicas (art. 113-E LISR) MONTHLY rate on income actually collected (cobrado) in the month, without IVA and without any deduction, for monthly income from MXN 208,333.34 up to MXN 3,500,000.00. The rate applies to the WHOLE monthly income, not to the excess (flat rate by band). The table is statutory and not inflation-indexed; the SAT filling guide (dated December 2024) prints it in digits because the law page shows it as an image.",
+      "value": "2.50%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "208,333.34 3,500,000.00 2.50%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-estimated-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.resico.pf.monthly.band5.upper",
+      "item": "RESICO personas físicas monthly table: upper limit of band 5 (income cobrado in the month), rate 2.50%. Source: SAT filling guide, statutory table of art. 113-E LISR.",
+      "value": "MXN 3,500,000.00",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "208,333.34 3,500,000.00 2.50%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.ceiling",
+      "item": "RESICO personas físicas income ceiling (art. 113-E LISR): income of the prior year must not exceed this amount to enter; exceeding it at any time in the year takes the taxpayer out of RESICO from the following month. Printed in words in art. 113-E ('tres millones quinientos mil pesos'); RMF 2026 prints $3’500,000.00 with an apostrophe separator that the gate cannot read, so the digits are proved on the SAT RESICO filling guide table.",
+      "value": "MXN 3,500,000",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461176378829&ssbinary=true",
+      "quote": "208,333.34 3,500,000.00 2.50% 3,500,000.01 En adelante 2.50%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.retention",
+      "item": "RESICO personas físicas: ISR a persona moral must withhold on payments to a RESICO individual for business, professional or rental activity, on the amount without IVA (art. 113-J LISR). Counts as part of the individual's monthly payment. Remitted by day 17 of the following month.",
+      "value": "1.25%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/59511/articulo-113-j",
+      "quote": "la tasa del 1.25% sobre el monto de los pagos",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-einvoice",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.resico.pf.monthly_deadline",
+      "item": "RESICO personas físicas pay monthly by day 17 of the following month (art. 113-E LISR).",
+      "value": "day 17",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/58780/articulo-113-e",
+      "quote": "a más tardar el día 17 del mes inmediato posterior",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.resico.pf.annual_deadline",
+      "item": "RESICO personas físicas annual return: in April of the following year (art. 113-F LISR).",
+      "value": "April",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/58872/articulo-113-f",
+      "quote": "presentar su declaración anual en el mes de abril del año siguiente",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-iva",
+        "mx-cfdi",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.resico.pm.ceiling",
+      "item": "RESICO personas morales (arts. 206 and 214 LISR): prior-year income must not exceed this amount; RMF 2026 rule says the SAT checks it against the prior annual return and can move the company out of the regime. The RMF prints $35’000,000.00 (apostrophe separator, unreadable to the gate as one number), so write it as MXN 35 million.",
+      "value": "MXN 35 million",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
+      "quote": "no hayan excedido de $35’000,000.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.deductions.cap.pct",
+      "item": "Cap on personal deductions (deducciones personales, art. 151 LISR): the total cannot exceed the LOWER of five times the ANNUAL UMA or 15% of the taxpayer's total income (including exempt income). Some items (e.g. donations, retirement contributions) have their own separate limits.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/82615/articulo-151",
+      "quote": "o del 15% del total de los ingresos del contribuyente",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.deductions.cap.uma",
+      "item": "Cap on personal deductions (art. 151 LISR): five times the annual UMA (the law prints the multiple in words), or 15% of total income if lower. With the 2026 annual UMA from INEGI; do not state a computed peso figure as official.",
+      "value": "five times the annual UMA",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/82615/articulo-151",
+      "quote": "cinco veces el valor anual de la Unidad de Medida y Actualización",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.deductions.donations",
+      "item": "Donations to authorised donees (donatarias autorizadas) are deductible up to 7% of the prior year's taxable income (art. 151 fr. III LISR); separate from the general cap.",
+      "value": "7%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/82615/articulo-151",
+      "quote": "no exceda del 7% de los ingresos acumulables",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.deductions.retirement",
+      "item": "Voluntary retirement contributions (art. 151 fr. V LISR): deductible up to 10% of taxable income for the year, with an additional cap of five annual UMA (printed in words).",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/82615/articulo-151",
+      "quote": "será de hasta el 10% de los ingresos acumulables",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-einvoice",
+        "mx-corporate-income-tax",
+        "mx-cross-border",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual_return.month",
+      "item": "Individuals file the annual ISR return in April of the following year (art. 150 LISR).",
+      "value": "April",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/83662/articulo-150",
+      "quote": "presentarán en el mes de abril del año siguiente",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-iva",
+        "mx-cfdi",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual_return.exempt_threshold",
+      "item": "Individuals with ONLY salary (Cap. I) and interest (Cap. VI) income may skip the annual return if the total does not exceed this amount AND real interest does not exceed MXN 100,000 with withholding applied (art. 150 LISR). Both conditions.",
+      "value": "MXN 400,000",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/83662/articulo-150",
+      "quote": "cuya suma no exceda de $400,000.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mx-payroll-withholding"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual_return.interest_threshold",
+      "item": "Second condition to skip the annual return (art. 150 LISR): real interest (intereses reales) not over this amount, with withholding applied.",
+      "value": "MXN 100,000",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/83662/articulo-150",
+      "quote": "intereses reales no excedan de $100,000.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-iva",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual_return.report_all_income",
+      "item": "Individuals with total income (including exempt and final-tax income) above this amount must report ALL income in the annual return, including certain exempt items (art. 150 LISR).",
+      "value": "MXN 500,000",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/83662/articulo-150",
+      "quote": "superiores a $500,000.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.provisional.deadline",
+      "item": "Actividad empresarial y profesional (general regime): monthly provisional ISR payments by day 17 of the following month (art. 106 LISR). Payments are cumulative (year-to-date) using the Anexo 8 monthly accumulated tarifas.",
+      "value": "day 17",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/36658/articulo-106",
+      "quote": "a más tardar el día 17 del mes inmediato posterior",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.fees.withholding",
+      "item": "ISR withholding by a persona moral paying professional fees (servicios profesionales) to an individual in the general regime (art. 106 LISR), on the amount without deduction. Different from the RESICO 1.25% withholding.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/36658/articulo-106",
+      "quote": "aplicar la tasa del 10% sobre el monto de los pagos",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-einvoice",
+        "mx-corporate-income-tax",
+        "mx-cross-border",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.sale_goods.provisional",
+      "item": "Sale of goods other than real estate by individuals (art. 126 LISR): provisional payment of 20% on the total amount of the operation, withheld by the buyer if a persona moral, unless the exception applies.",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/18353/articulo-126",
+      "quote": "aplicar la tasa del 20% sobre el monto total de la operación",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.sale_goods.exception",
+      "item": "Art. 126 LISR: no 20% withholding on sales of movable goods other than securities or shares where the operation is below this amount. Amount as printed on the SAT article page (not confirmed as inflation-updated for 2026).",
+      "value": "MXN 227,400",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/18353/articulo-126",
+      "quote": "el monto de la operación sea menor a $227,400.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.interest.withholding",
+      "item": "Annual ISR withholding rate on interest paid by the financial system (arts. 54 and 135 LISR) for 2026, set by the Ley de Ingresos de la Federación 2026 art. 24. Applied to capital, not to the interest amount.",
+      "value": "0.90%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5772357",
+      "quote": "será del 0.90 por ciento",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pm.rate",
+      "item": "Corporate income tax (ISR personas morales, general regime) rate on the fiscal result (art. 9 LISR).",
+      "value": "30%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/93578/articulo-9",
+      "quote": "la tasa del 30%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-corporate-income-tax",
+        "mx-cross-border",
+        "mx-imss"
+      ]
+    },
+    {
+      "id": "mx.isr.dividends.additional.resident",
+      "item": "Additional ISR of 10% on dividends paid by Mexican companies to resident INDIVIDUALS (art. 140 LISR), withheld by the company; final payment. Separate from the corporate tax credit mechanism.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/32450/articulo-140",
+      "quote": "una tasa adicional del 10% sobre los dividendos",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-einvoice",
+        "mx-corporate-income-tax",
+        "mx-cross-border",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.dividends.grossup",
+      "item": "Gross-up factor (art. 140 LISR) used to compute the corporate ISR credit an individual can take on dividends in the annual return.",
+      "value": "1.4286",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/32450/articulo-140",
+      "quote": "por el factor de 1.4286",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mx-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.dividends.nonresident",
+      "item": "Withholding of 10% on dividends paid by Mexican companies to non-residents (art. 164 fr. IV LISR), subject to treaties.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/76538/articulo-164",
+      "quote": "aplicar la tasa del 10% sobre dichos dividendos",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-einvoice",
+        "mx-corporate-income-tax",
+        "mx-cross-border",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.iva.general",
+      "item": "IVA general rate (art. 1 LIVA) on sales of goods, independent services, rental and imports.",
+      "value": "16%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/19848/articulo-1",
+      "quote": "la tasa del 16%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-einvoice",
+        "mexico-iva",
+        "mx-income-tax",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.iva.zero",
+      "item": "IVA zero rate (art. 2-A LIVA): e.g. most unprocessed food and medicines, menstrual products, exports (art. 29). Zero-rated sales keep the right to credit input IVA; exempt sales do not.",
+      "value": "0%",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/06071/articulo-2-a",
+      "quote": "Actos o actividades gravadas a la tasa 0%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-einvoice",
+        "mexico-iva",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.iva.monthly_deadline",
+      "item": "Monthly IVA payment (definitive monthly payment) is due by day 17 of the following month (art. 5-D LIVA).",
+      "value": "day 17",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/73134/articulo-5-d",
+      "quote": "a más tardar el día 17 del mes siguiente al que corresponda el pago",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.iva.retention.fees",
+      "item": "A persona moral that receives professional services (or rental, etc.) from an INDIVIDUAL withholds two-thirds of the IVA charged (RLIVA art. 3 fr. I), not the full 16%. Source: SAT-hosted RLIVA compilation (original text of 4 Dec 2006 carries this rule).",
+      "value": "two-thirds",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461172362674&ssbinary=true",
+      "quote": "La retención se hará por las dos terceras partes del impuesto que se les traslade",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.iva.retention.deadline",
+      "item": "IVA withheld (art. 1-A LIVA) must be paid with the monthly payment or at the latest by day 17 of the following month.",
+      "value": "day 17",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/articulo/18243/articulo-1-a",
+      "quote": "a más tardar el día 17 del mes siguiente",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.iva.diot.deadline",
+      "item": "DIOT (declaración informativa de operaciones con terceros): under RMF 2026 rule 4.5.1, personas morales and personas físicas file it DURING the month following the month reported. The LIVA art. 32 text says day 17; the RMF rule gives the whole following month.",
+      "value": "the month following the period",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
+      "quote": "durante el mes inmediato posterior al que corresponda dicha información",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-iva",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.iva.border.credit",
+      "item": "Región fronteriza norte (and sur) IVA stimulus: a credit equal to 50% of the IVA rate on qualifying sales/services delivered in the region, for registered taxpayers (Decree of 31 Dec 2018; southern decree 30 Dec 2020). Extended to 31 Dec 2026.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5547485",
+      "quote": "un crédito equivalente al 50% de la tasa del impuesto al valor agregado",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-iva",
+        "mx-cross-border",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.iva.border.effective",
+      "item": "Región fronteriza norte: the decree recitals state the buyer bears an IVA burden of 8% on qualifying acts (the result of the 50% credit). Only for taxpayers in the padrón of beneficiaries.",
+      "value": "8%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5547485",
+      "quote": "únicamente se traslade al adquirente de los bienes o servicios una carga fiscal del 8%",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-iva",
+        "mx-vat-return"
+      ]
+    },
+    {
+      "id": "mx.iva.border.isr_credit",
+      "item": "Región fronteriza norte ISR stimulus: credit of one third of ISR for taxpayers earning income exclusively in the region from business activity, if registered in the padrón. Extended to 31 Dec 2026.",
+      "value": "one third",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5547485",
+      "quote": "un crédito fiscal equivalente a la tercera parte del impuesto sobre la renta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.iva.border.validity",
+      "item": "The northern border decree (in force from 1 Jan 2019) and southern border decree (from 1 Jan 2021) were extended to 31 December 2026 by the Decree published in the DOF on 31 Dec 2025. Nothing proves they run in 2027.",
+      "value": "31 December 2026",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5777697",
+      "quote": "estará vigente hasta el 31 de diciembre de 2026",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cfdi.cancel.no_acceptance",
+      "item": "CFDI may be cancelled WITHOUT the receiver's acceptance when the total is up to this amount (RMF 2026 rule 2.7.1.35 fr. I), among other listed cases (nómina, egresos, traslado, etc.).",
+      "value": "MXN 1,000",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
+      "quote": "montos totales de hasta $1,000.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cfdi.cancel.deadline",
+      "item": "CFDI cancellation deadline (art. 29-A CFF as amended by DOF 7 Nov 2025, in force 1 Jan 2026): at the latest in the month in which the annual ISR return for the year of issue must be filed, and with the receiver's acceptance. The SAT article page for 29-A shows a different, outdated wording.",
+      "value": "the month of the annual ISR return",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5772358",
+      "quote": "se podrán cancelar a más tardar en el mes en el cual se deba presentar la declaración anual",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cfdi.cancel.acceptance_days",
+      "item": "If the receiver does not answer a cancellation request, the SAT cancels the CFDI automatically after three business days (SAT Esquema de cancelación de CFDI 2026, rule 2.7.1.34 RMF).",
+      "value": "three business days",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/Factura/documentos/EsquemaCancelacionCFDI.pdf",
+      "quote": "una vez transcurrido el plazo de tres días hábiles",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cfdi.global.resico.cancel",
+      "item": "RESICO individuals may cancel their global CFDI (factura global) at the latest on the last day of April of the year after issue (rule 3.13.29 RMF, as printed in the SAT 2026 cancellation scheme).",
+      "value": "last day of April",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/Factura/documentos/EsquemaCancelacionCFDI.pdf",
+      "quote": "a más tardar el último día de abril del ejercicio fiscal",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.tp.doc_exempt.business",
+      "item": "Transfer pricing: companies with related-party operations with residents in MEXICO whose prior-year business income did not exceed this amount may skip keeping TP documentation (RMF 2026). Art. 76 fr. IX LISR has the same thresholds for the TP study; not applicable to operations with preferential-regime (REFIPRE) entities or hydrocarbon contractors. The RMF prints $13’000,000.00 with an apostrophe separator, so write MXN 13 million.",
+      "value": "MXN 13 million",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
+      "quote": "no hayan excedido de $13’000,000.00 (trece millones de pesos 00/100 M.N.), así como aquellas",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.tp.doc_exempt.professional",
+      "item": "Transfer pricing: companies whose prior-year income from PROFESSIONAL SERVICES did not exceed this amount may skip keeping TP documentation for operations with Mexican related parties (RMF 2026). Same figure as the art. 76 fr. IX LISR professional-services threshold. Not the business-activity threshold (MXN 13 million). Printed $3’000,000.00; write MXN 3 million.",
+      "value": "MXN 3 million",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf",
+      "quote": "$3’000,000.00 (tres millones de pesos 00/100 M.N.), podrán dejar de obtener",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.tp.local_file.threshold",
+      "item": "Art. 32-H fr. I CFF threshold, updated for 2026 (Anexo 5 RMF 2026, in force 1 Jan 2026): companies with prior-year taxable income at or above this amount file the ISSIF and are among those obliged to file the local and master related-party returns (art. 76-A LISR).",
+      "value": "MXN 1,103,204,520",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf",
+      "quote": "iguales o superiores a un monto equivalente a $1,103,204,520.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.tp.dictamen.threshold",
+      "item": "Art. 32-A CFF threshold for 2026: companies with prior-year taxable income at or above this amount must have their financial statements audited for tax purposes (dictamen fiscal).",
+      "value": "MXN 2,013,710,870",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf",
+      "quote": "iguales o superiores a un monto equivalente a $2,013,710,870.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.tp.cbcr.deadline",
+      "item": "Country-by-country return (art. 76-A fr. III LISR) is filed at the latest by 31 December of the year following the fiscal year (SAT page). The revenue threshold for CbCR was NOT found on a readable page.",
+      "value": "31 December",
+      "tax_year": 2026,
+      "source_url": "https://wwwmat.sat.gob.mx/declaracion/79571/declaracion-pais-por-pais",
+      "quote": "A más tardar el 31 de diciembre del año inmediato posterior",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cff.penalty.late_return.min",
+      "item": "Fine (art. 82 fr. I d) CFF, amount updated for 2026 by Anexo 5 RMF): not filing returns electronically when obliged, filing late, or answering requirements late. Range lower end; upper end MXN 41,590. Reduced amounts apply for spontaneous compliance (art. 75/78 CFF, not proved here).",
+      "value": "MXN 20,790",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf",
+      "quote": "d) De $20,790.00 a $41,590.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cff.penalty.late_return.max",
+      "item": "Upper end of the art. 82 fr. I d) CFF fine range for 2026 (late or non-electronic returns).",
+      "value": "MXN 41,590",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf",
+      "quote": "d) De $20,790.00 a $41,590.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cff.penalty.undeclared.min",
+      "item": "Fine (art. 82 fr. I a) CFF, 2026 amount): not filing returns, per obligation not declared. Range MXN 2,050 to MXN 25,360.",
+      "value": "MXN 2,050",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf",
+      "quote": "a) De $2,050.00 a $25,360.00, tratándose de declaraciones",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.cff.penalty.undeclared.max",
+      "item": "Upper end of the art. 82 fr. I a) CFF fine range for 2026.",
+      "value": "MXN 25,360",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf",
+      "quote": "a) De $2,050.00 a $25,360.00, tratándose de declaraciones",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.lif.recargos.prorroga",
+      "item": "Monthly surcharge (recargos) rate on extended tax debts (prórroga) for 2026 (LIF 2026 art. 11). Late-payment surcharges under art. 21 CFF are derived from this rate; do NOT state a computed late-payment rate.",
+      "value": "1.38%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5772357",
+      "quote": "Al 1.38 por ciento mensual sobre los saldos insolutos",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.lif.recargos.installments12",
+      "item": "Monthly surcharge for authorised payment in installments of up to 12 months (LIF 2026 art. 11).",
+      "value": "1.42%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5772357",
+      "quote": "la tasa de recargos será del 1.42 por ciento mensual",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.lif.recargos.installments24",
+      "item": "Monthly surcharge for installments of more than 12 and up to 24 months (LIF 2026 art. 11).",
+      "value": "1.63%",
+      "tax_year": 2026,
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/5772357",
+      "quote": "la tasa de recargos será de 1.63 por ciento mensual",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band1.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 1 (from MXN 0.01 up to MXN 10,135.11). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 0.01",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "0.01 10,135.11 0 1.92",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mx-payroll-withholding"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band1.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 1 (from MXN 0.01 up to MXN 10,135.11). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "1.92%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "0.01 10,135.11 0 1.92",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax",
+        "mx-payroll-withholding"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band2.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 2 (from MXN 10,135.12 up to MXN 86,022.11). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 10,135.12",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "10,135.12 86,022.11 194.59 6.40",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band2.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 2 (from MXN 10,135.12 up to MXN 86,022.11). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 194.59",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "10,135.12 86,022.11 194.59 6.40",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band2.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 2 (from MXN 10,135.12 up to MXN 86,022.11). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "6.40%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "10,135.12 86,022.11 194.59 6.40",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band3.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 3 (from MXN 86,022.12 up to MXN 151,176.19). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 86,022.12",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "86,022.12 151,176.19 5,051.37 10.88",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band3.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 3 (from MXN 86,022.12 up to MXN 151,176.19). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 5,051.37",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "86,022.12 151,176.19 5,051.37 10.88",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band3.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 3 (from MXN 86,022.12 up to MXN 151,176.19). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "10.88%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "86,022.12 151,176.19 5,051.37 10.88",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band4.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 4 (from MXN 151,176.20 up to MXN 175,735.66). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 151,176.20",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "151,176.20 175,735.66 12,140.13 16.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band4.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 4 (from MXN 151,176.20 up to MXN 175,735.66). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 12,140.13",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "151,176.20 175,735.66 12,140.13 16.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band4.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 4 (from MXN 151,176.20 up to MXN 175,735.66). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "16.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "151,176.20 175,735.66 12,140.13 16.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band5.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 5 (from MXN 175,735.67 up to MXN 210,403.69). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 175,735.67",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "175,735.67 210,403.69 16,069.64 17.92",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band5.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 5 (from MXN 175,735.67 up to MXN 210,403.69). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 16,069.64",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "175,735.67 210,403.69 16,069.64 17.92",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band5.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 5 (from MXN 175,735.67 up to MXN 210,403.69). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "17.92%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "175,735.67 210,403.69 16,069.64 17.92",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band6.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 6 (from MXN 210,403.70 up to MXN 424,353.97). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 210,403.70",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "210,403.70 424,353.97 22,282.14 21.36",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band6.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 6 (from MXN 210,403.70 up to MXN 424,353.97). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 22,282.14",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "210,403.70 424,353.97 22,282.14 21.36",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band6.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 6 (from MXN 210,403.70 up to MXN 424,353.97). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "21.36%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "210,403.70 424,353.97 22,282.14 21.36",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band7.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 7 (from MXN 424,353.98 up to MXN 668,840.14). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 424,353.98",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "424,353.98 668,840.14 67,981.92 23.52",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band7.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 7 (from MXN 424,353.98 up to MXN 668,840.14). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 67,981.92",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "424,353.98 668,840.14 67,981.92 23.52",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band7.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 7 (from MXN 424,353.98 up to MXN 668,840.14). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "23.52%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "424,353.98 668,840.14 67,981.92 23.52",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band8.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 8 (from MXN 668,840.15 up to MXN 1,276,925.98). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 668,840.15",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "668,840.15 1,276,925.98 125,485.07 30.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band8.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 8 (from MXN 668,840.15 up to MXN 1,276,925.98). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 125,485.07",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "668,840.15 1,276,925.98 125,485.07 30.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band8.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 8 (from MXN 668,840.15 up to MXN 1,276,925.98). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "30.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "668,840.15 1,276,925.98 125,485.07 30.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band9.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 9 (from MXN 1,276,925.99 up to MXN 1,702,567.97). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 1,276,925.99",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "1,276,925.99 1,702,567.97 307,910.81 32.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band9.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 9 (from MXN 1,276,925.99 up to MXN 1,702,567.97). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 307,910.81",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "1,276,925.99 1,702,567.97 307,910.81 32.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band9.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 9 (from MXN 1,276,925.99 up to MXN 1,702,567.97). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "32.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "1,276,925.99 1,702,567.97 307,910.81 32.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band10.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 10 (from MXN 1,702,567.98 up to MXN 5,107,703.92). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 1,702,567.98",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "1,702,567.98 5,107,703.92 444,116.23 34.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band10.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 10 (from MXN 1,702,567.98 up to MXN 5,107,703.92). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 444,116.23",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "1,702,567.98 5,107,703.92 444,116.23 34.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band10.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 10 (from MXN 1,702,567.98 up to MXN 5,107,703.92). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "34.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "1,702,567.98 5,107,703.92 444,116.23 34.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.annual.band11.lower",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 11 (from MXN 5,107,703.93 with no upper limit (En adelante)). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 5,107,703.93",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "5,107,703.93 En adelante 1,601,862.46 35.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band11.cuota",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 11 (from MXN 5,107,703.93 with no upper limit (En adelante)). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 1,601,862.46",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "5,107,703.93 En adelante 1,601,862.46 35.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.annual.band11.rate",
+      "item": "ISR personas físicas ANNUAL tarifa for tax year 2026 (arts. 97 and 152 LISR, Anexo 8 RMF 2026 section C.II), used in the annual return (declaración anual) of individuals and in the employer annual adjustment, band 11 (from MXN 5,107,703.93 with no upper limit (En adelante)). Anexo 8 was published in the DOF on 28 Dec 2025. Do not use the 2025 table (C.I), which sits right above it in the same annex and has lower limits. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "35.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "5,107,703.93 En adelante 1,601,862.46 35.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band1.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 1 (from MXN 0.01 up to MXN 844.59). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 0.01",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "0.01 844.59 0.00 1.92",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mx-payroll-withholding"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band1.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 1 (from MXN 0.01 up to MXN 844.59). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "1.92%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "0.01 844.59 0.00 1.92",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax",
+        "mx-payroll-withholding"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band2.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 2 (from MXN 844.60 up to MXN 7,168.51). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 844.60",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "844.60 7,168.51 16.22 6.40",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band2.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 2 (from MXN 844.60 up to MXN 7,168.51). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 16.22",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "844.60 7,168.51 16.22 6.40",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band2.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 2 (from MXN 844.60 up to MXN 7,168.51). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "6.40%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "844.60 7,168.51 16.22 6.40",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band3.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 3 (from MXN 7,168.52 up to MXN 12,598.02). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 7,168.52",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "7,168.52 12,598.02 420.95 10.88",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band3.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 3 (from MXN 7,168.52 up to MXN 12,598.02). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 420.95",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "7,168.52 12,598.02 420.95 10.88",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band3.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 3 (from MXN 7,168.52 up to MXN 12,598.02). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "10.88%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "7,168.52 12,598.02 420.95 10.88",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band4.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 4 (from MXN 12,598.03 up to MXN 14,644.64). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 12,598.03",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "12,598.03 14,644.64 1,011.68 16.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band4.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 4 (from MXN 12,598.03 up to MXN 14,644.64). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 1,011.68",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "12,598.03 14,644.64 1,011.68 16.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band4.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 4 (from MXN 12,598.03 up to MXN 14,644.64). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "16.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "12,598.03 14,644.64 1,011.68 16.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band5.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 5 (from MXN 14,644.65 up to MXN 17,533.64). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 14,644.65",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "14,644.65 17,533.64 1,339.14 17.92",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band5.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 5 (from MXN 14,644.65 up to MXN 17,533.64). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 1,339.14",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "14,644.65 17,533.64 1,339.14 17.92",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band5.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 5 (from MXN 14,644.65 up to MXN 17,533.64). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "17.92%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "14,644.65 17,533.64 1,339.14 17.92",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band6.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 6 (from MXN 17,533.65 up to MXN 35,362.83). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 17,533.65",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "17,533.65 35,362.83 1,856.84 21.36",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band6.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 6 (from MXN 17,533.65 up to MXN 35,362.83). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 1,856.84",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "17,533.65 35,362.83 1,856.84 21.36",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band6.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 6 (from MXN 17,533.65 up to MXN 35,362.83). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "21.36%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "17,533.65 35,362.83 1,856.84 21.36",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band7.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 7 (from MXN 35,362.84 up to MXN 55,736.68). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 35,362.84",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "35,362.84 55,736.68 5,665.16 23.52",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band7.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 7 (from MXN 35,362.84 up to MXN 55,736.68). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 5,665.16",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "35,362.84 55,736.68 5,665.16 23.52",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band7.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 7 (from MXN 35,362.84 up to MXN 55,736.68). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "23.52%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "35,362.84 55,736.68 5,665.16 23.52",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band8.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 8 (from MXN 55,736.69 up to MXN 106,410.50). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 55,736.69",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "55,736.69 106,410.50 10,457.09 30.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band8.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 8 (from MXN 55,736.69 up to MXN 106,410.50). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 10,457.09",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "55,736.69 106,410.50 10,457.09 30.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band8.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 8 (from MXN 55,736.69 up to MXN 106,410.50). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "30.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "55,736.69 106,410.50 10,457.09 30.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band9.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 9 (from MXN 106,410.51 up to MXN 141,880.66). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 106,410.51",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "106,410.51 141,880.66 25,659.23 32.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band9.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 9 (from MXN 106,410.51 up to MXN 141,880.66). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 25,659.23",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "106,410.51 141,880.66 25,659.23 32.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band9.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 9 (from MXN 106,410.51 up to MXN 141,880.66). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "32.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "106,410.51 141,880.66 25,659.23 32.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band10.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 10 (from MXN 141,880.67 up to MXN 425,641.99). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 141,880.67",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "141,880.67 425,641.99 37,009.69 34.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band10.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 10 (from MXN 141,880.67 up to MXN 425,641.99). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 37,009.69",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "141,880.67 425,641.99 37,009.69 34.00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "mx.isr.pf.monthly.band10.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 10 (from MXN 141,880.67 up to MXN 425,641.99). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "34.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "141,880.67 425,641.99 37,009.69 34.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band11.lower",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 11 (from MXN 425,642.00 with no upper limit (En adelante)). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the band LOWER limit (límite inferior).",
+      "value": "MXN 425,642.00",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "425,642.00 En adelante 133,488.54 35.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mx-payroll-withholding"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band11.cuota",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 11 (from MXN 425,642.00 with no upper limit (En adelante)). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the CUOTA FIJA (fixed amount) of the band, added to the percentage on the excess over the lower limit.",
+      "value": "MXN 133,488.54",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "425,642.00 En adelante 133,488.54 35.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mx-payroll-withholding"
+      ]
+    },
+    {
+      "id": "mx.isr.pf.monthly.band11.rate",
+      "item": "ISR MONTHLY tarifa 2026 for withholding on salaries (art. 96 LISR, Anexo 8 RMF 2026 section B.V); the art. 106 table for January 2026 (actividad empresarial y profesional provisional payments) prints the same figures, band 11 (from MXN 425,642.00 with no upper limit (En adelante)). Art. 106 provisional payments are CUMULATIVE: each later month has its own accumulated table in Anexo 8 (the December table equals the annual tarifa), so this monthly table is only right for a single month or for January. This is the percentage applied to the excess over the band lower limit (por ciento sobre el excedente del límite inferior), not an average rate.",
+      "value": "35.00%",
+      "tax_year": 2026,
+      "source_url": "https://wwwnp.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf",
+      "quote": "425,642.00 En adelante 133,488.54 35.00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "mexico-crypto-tax",
+        "mx-income-tax"
+      ]
+    }
+  ]
+}

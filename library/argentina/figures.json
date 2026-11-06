@@ -1,0 +1,1063 @@
+{
+  "country": "argentina",
+  "code": "AR",
+  "figure_count": 104,
+  "figures": [
+    {
+      "id": "ar.cit.2026.period",
+      "item": "Company income tax (Ganancias, sociedades): ARCA prints a separate scale for each start year. The 2026 scale applies to fiscal years (ejercicios) STARTING on or after 1 January 2026; a year that started in 2025 (e.g. July 2025 to June 2026) uses the 2025 scale.",
+      "value": "fiscal years starting from 1 January 2026",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/escala.asp",
+      "quote": "Para ejercicios fiscales iniciados a partir del 1º de enero de 2026",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2026.band1.rate",
+      "item": "Company income tax 2026 scale (art. 73 LIG): rate on cumulative taxable net income from ARS 0 up to ARS 133,514,185.74. Progressive: each rate applies to the excess over the band start plus the fixed amount; it is not a cliff.",
+      "value": "25%",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "quote": "0,00 133.514.185,74 0,00 25",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2026.band1.top",
+      "item": "Company income tax 2026 scale: top of the first (25%) band of taxable net income.",
+      "value": "ARS 133,514,185.74",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "quote": "0,00 133.514.185,74 0,00 25",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2026.band2.rate",
+      "item": "Company income tax 2026 scale: marginal rate on taxable net income over ARS 133,514,185.74 up to ARS 1,335,141,857.38, paid on top of the fixed amount ARS 33,378,546.43.",
+      "value": "30%",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "quote": "133.514.185,74 1.335.141.857,38 33.378.546,43 30",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2026.band2.top",
+      "item": "Company income tax 2026 scale: top of the second (30%) band.",
+      "value": "ARS 1,335,141,857.38",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "quote": "133.514.185,74 1.335.141.857,38 33.378.546,43 30",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2026.band2.fixed",
+      "item": "Company income tax 2026 scale: fixed tax (\"Pagarán $\") for income in the second band, plus 30% on the excess over ARS 133,514,185.74.",
+      "value": "ARS 33,378,546.43",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "quote": "133.514.185,74 1.335.141.857,38 33.378.546,43 30",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2026.band3.rate",
+      "item": "Company income tax 2026 scale: marginal rate on taxable net income over ARS 1,335,141,857.38 (\"En adelante\"), on top of the fixed amount ARS 393,866,847.93.",
+      "value": "35%",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "quote": "En adelante 393.866.847,93 35 1.335.141.857,38",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "argentina-income-tax"
+      ]
+    },
+    {
+      "id": "ar.cit.2026.band3.fixed",
+      "item": "Company income tax 2026 scale: fixed tax for income in the top band, plus 35% on the excess over ARS 1,335,141,857.38.",
+      "value": "ARS 393,866,847.93",
+      "tax_year": "fiscal years starting on or after 1 January 2026 (ARCA 'Escala 2026'; amounts indexed annually)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2026.pdf",
+      "quote": "En adelante 393.866.847,93 35 1.335.141.857,38",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2025.band1.top",
+      "item": "Company income tax 2025 scale (years starting in 2025): top of the 25% band. Kept so a Guide still showing 2025 figures can be recognised as the prior-year scale.",
+      "value": "ARS 101,679,575.26",
+      "tax_year": "fiscal years starting on or after 1 January 2025 (ARCA 'Escala 2025'); superseded for years starting in 2026",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2025.pdf",
+      "quote": "0,00 101.679.575,26 0,00 25",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2025.band2.top",
+      "item": "Company income tax 2025 scale: top of the 30% band.",
+      "value": "ARS 1,016,795,752.62",
+      "tax_year": "fiscal years starting on or after 1 January 2025 (ARCA 'Escala 2025'); superseded for years starting in 2026",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2025.pdf",
+      "quote": "101.679.575,26 1.016.795.752,62 25.419.893,82 30",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2025.band2.fixed",
+      "item": "Company income tax 2025 scale: fixed tax for the 30% band.",
+      "value": "ARS 25,419,893.82",
+      "tax_year": "fiscal years starting on or after 1 January 2025 (ARCA 'Escala 2025'); superseded for years starting in 2026",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2025.pdf",
+      "quote": "101.679.575,26 1.016.795.752,62 25.419.893,82 30",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.2025.band3.fixed",
+      "item": "Company income tax 2025 scale: fixed tax for the 35% band (income over ARS 1,016,795,752.62).",
+      "value": "ARS 299,954,747.02",
+      "tax_year": "fiscal years starting on or after 1 January 2025 (ARCA 'Escala 2025'); superseded for years starting in 2026",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/determinacion/documentos/Ganancias-Escala-PJ-2025.pdf",
+      "quote": "En adelante 299.954.747,02 35 1.016.795.752,62",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.indexation",
+      "item": "Company income tax: the peso amounts of the art. 73 scale are adjusted ANNUALLY from 1 January 2022 by the annual change in the INDEC consumer price index (IPC). So the thresholds change every year; the 25/30/35 rates do not. InfoLEG does not print the scale table itself (only the text around it): take amounts from ARCA.",
+      "value": "annual IPC adjustment from 1 January 2022",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "quote": "se ajustar�n anualmente, a partir del 1� de enero de 2022",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.dividends.rate",
+      "item": "Tax on dividends and profit distributions (arts. 49 and 50 LIG) paid by companies taxed under art. 73 to resident individuals and to foreign beneficiaries: 7% (was 13%; replaced by Ley 27.630 art. 7 for years from 1 January 2021). Same number as the branch-remittance rate.",
+      "value": "7%",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "quote": "del siete por ciento (7%), no resultando de aplicaci",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.branch.remittance",
+      "item": "Permanent establishments (branches, art. 22 LIG) pay the company scale and an ADDITIONAL 7% when they remit profits to the head office (art. 73 b, Ley 27.630). Same 7% as the dividend rate, but a different rule.",
+      "value": "7%",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "quote": "la tasa adicional del siete por ciento (7%) al momento de remesar",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.gambling.rate",
+      "item": "Income from casino gambling, electronic gaming machines and online betting platforms is taxed at 41.50% (art. 73 LIG), for individuals and companies alike. Not the general company rate.",
+      "value": "41.5%",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "quote": "CUARENTA Y UNO COMA CINCUENTA POR CIENTO (41,50 %)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.return.deadline",
+      "item": "Company income tax return (form F.713): due by the fifth month after the month the fiscal year closes, on a date set by CUIT last digit; any balance is paid the next business day after the filing due date.",
+      "value": "fifth month after year end",
+      "tax_year": "2026 calendar (ARCA Vencimientos 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/declaracion-jurada/documentos/Ganancias-vencimientos-PJ.pdf",
+      "quote": "La declaración jurada se debe presentar hasta el quinto mes posterior al del cierre del ejercicio",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.return.dec2025",
+      "item": "Company income tax return for a fiscal year closing in December 2025: filing due 13 May 2026 (CUIT ending 0-3), 14 May 2026 (4-6), 15 May 2026 (7-9).",
+      "value": "13 May 2026 to 15 May 2026 (by CUIT last digit)",
+      "tax_year": "fiscal year closing December 2025",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/declaracion-jurada/documentos/Ganancias-vencimientos-PJ.pdf",
+      "quote": "0-1-2-3 13/05/2026 Diciembre 2025 4-5-6 14/05/2026 7-8-9 15/05/2026",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.anticipos.count",
+      "item": "Companies pay 9 income tax advance payments (anticipos); the first falls in the month after the general due date of the return for the base year.",
+      "value": "9 advance payments",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/declaracion-jurada/anticipos.asp",
+      "quote": "deben determinar e ingresar 9 anticipos del impuesto a las ganancias",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.anticipos.pct",
+      "item": "Each company advance payment is 11.11% of the base: prior-year tax determined less computable withholdings, perceptions and other credits listed by ARCA.",
+      "value": "11.11%",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/declaracion-jurada/anticipos.asp",
+      "quote": "Al saldo resultante se le aplica el porcentaje del 11,11%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.cit.anticipos.minimum",
+      "item": "Advance payments are due only when the amount determined is ARS 2,500 or more.",
+      "value": "ARS 2,500",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-juridicas/declaracion-jurada/anticipos.asp",
+      "quote": "Corresponde pagar anticipos cuando el importe que se determine sea igual o superior a $ 2.500",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.band1.top",
+      "item": "Individual income tax (art. 94 LIG) 2026 ANNUAL scale: top of the first band (rate 5%). This is the table ARCA publishes for the annual and final liquidation of 2026 and lists first under \"Período 2026\" for the annual return. Different from the January-June and July-December 2026 withholding tables.",
+      "value": "ARS 2,336,953.69",
+      "tax_year": "2026, annual liquidation table (liquidación anual y final 2026, IPC-indexed)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-liquidacion-anual-y-final-2026.pdf",
+      "quote": "0,00 2.336.953,69 0,00 5 0,00",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.band1.rate",
+      "item": "Individual income tax 2026 annual scale: lowest marginal rate (first band). The scale has nine bands: 5, 9, 12, 15, 19, 23, 27, 31 and 35 per cent.",
+      "value": "5%",
+      "tax_year": "2026, annual liquidation table (liquidación anual y final 2026, IPC-indexed)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-liquidacion-anual-y-final-2026.pdf",
+      "quote": "0,00 2.336.953,69 0,00 5 0,00",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "argentina-income-tax"
+      ]
+    },
+    {
+      "id": "ar.pit.2026.annual.top.threshold",
+      "item": "Individual income tax 2026 annual scale: cumulative net taxable income above which the top rate applies (\"en adelante\").",
+      "value": "ARS 70,984,968.25",
+      "tax_year": "2026, annual liquidation table (liquidación anual y final 2026, IPC-indexed)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-liquidacion-anual-y-final-2026.pdf",
+      "quote": "70.984.968,25 en adelante 17.144.476,49 35 70.984.968,25",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.top.fixed",
+      "item": "Individual income tax 2026 annual scale: fixed tax at the start of the top band, plus 35% of the excess over ARS 70,984,968.25.",
+      "value": "ARS 17,144,476.49",
+      "tax_year": "2026, annual liquidation table (liquidación anual y final 2026, IPC-indexed)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-liquidacion-anual-y-final-2026.pdf",
+      "quote": "70.984.968,25 en adelante 17.144.476,49 35 70.984.968,25",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.top.rate",
+      "item": "Individual income tax 2026: top marginal rate (art. 94 LIG).",
+      "value": "35%",
+      "tax_year": "2026, annual liquidation table (liquidación anual y final 2026, IPC-indexed)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-liquidacion-anual-y-final-2026.pdf",
+      "quote": "70.984.968,25 en adelante 17.144.476,49 35 70.984.968,25",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "argentina-income-tax"
+      ]
+    },
+    {
+      "id": "ar.pit.2026.h1.band1.top",
+      "item": "Individual income tax, withholding table for pay RECEIVED January to June 2026 (annualised to December): top of the 5% band. Superseded from July 2026 by the July-December table.",
+      "value": "ARS 2,000,030.09",
+      "tax_year": "January to June 2026 (withholding regime, RG 4003)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-ene-a-jun-2026.pdf",
+      "quote": "0,00 2.000.030,09 0,00 5 0,00 2.000.030,09 4.000.060,17",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.h1.top.threshold",
+      "item": "Individual income tax, January-June 2026 withholding table: threshold of the 35% band.",
+      "value": "ARS 60,750,913.96",
+      "tax_year": "January to June 2026 (withholding regime, RG 4003)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-ene-a-jun-2026.pdf",
+      "quote": "40.500.609,30 60.750.913,96 en adelante 14.672.720,74 35 60.750.913,96",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.h2.band1.top",
+      "item": "Individual income tax, withholding table for pay RECEIVED July to December 2026: top of the 5% band.",
+      "value": "ARS 2,168,491.89",
+      "tax_year": "July to December 2026 (withholding regime, RG 4003)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-jul-a-dic-2026.pdf",
+      "quote": "0,00 2.168.491,89 0,00 5 0,00 2.168.491,89",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.h2.top.threshold",
+      "item": "Individual income tax, July-December 2026 withholding table: threshold of the 35% band.",
+      "value": "ARS 65,867,941.10",
+      "tax_year": "July to December 2026 (withholding regime, RG 4003)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-jul-a-dic-2026.pdf",
+      "quote": "43.911.960,73 65.867.941,10 en adelante 15.908.598,62 35 65.867.941,10",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.gni",
+      "item": "Individual income tax: ganancia no imponible (art. 30 a LIG), the basic personal allowance, 2026 annual amount. An allowance deducted from income, not an exemption threshold.",
+      "value": "ARS 6,019,671.36",
+      "tax_year": "2026, annual liquidation (período anual 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "quote": "[Artículo 30, 6.019.671,36 inciso a)]",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.spouse",
+      "item": "Individual income tax: family charge deduction for a spouse (art. 30 b.1), 2026 annual amount. Subject to the dependant's own income limit set by the law.",
+      "value": "ARS 5,669,323.06",
+      "tax_year": "2026, annual liquidation (período anual 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "quote": "1. Cónyuge: 5.669.323,06",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.child",
+      "item": "Individual income tax: family charge deduction per child (art. 30 b.2), 2026 annual amount. A child unable to work: ARS 5,718,120.60.",
+      "value": "ARS 2,859,060.31",
+      "tax_year": "2026, annual liquidation (período anual 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "quote": "2. Hijo: 2.859.060,31",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.child.disabled",
+      "item": "Individual income tax: family charge deduction per child incapacitated for work (art. 30 b.2.1), 2026 annual amount.",
+      "value": "ARS 5,718,120.60",
+      "tax_year": "2026, annual liquidation (período anual 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "quote": "2.1. Hijo incapacitado para el trabajo 5.718.120,60",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.special.ap1",
+      "item": "Individual income tax: deducción especial art. 30 c) apartado 1 (self-employed with own business or profession who pay their social security), 2026 annual amount.",
+      "value": "ARS 21,068,849.78",
+      "tax_year": "2026, annual liquidation (período anual 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "quote": "Deducción Especial [Artículo 30, inciso c), 21.068.849,78",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.special.new",
+      "item": "Individual income tax: deducción especial art. 30 c) apartado 1 for \"nuevos profesionales/emprendedores\", 2026 annual amount.",
+      "value": "ARS 24,078,685.46",
+      "tax_year": "2026, annual liquidation (período anual 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "quote": "nuevos 24.078.685,46",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.annual.special.ap2",
+      "item": "Individual income tax: deducción especial art. 30 c) apartado 2 (employees and pensioners), 2026 annual amount.",
+      "value": "ARS 28,894,422.56",
+      "tax_year": "2026, annual liquidation (período anual 2026)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-liq-anual-2026.pdf",
+      "quote": "Deducción Especial [Artículo 30, inciso c), 28.894.422,56",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.h1.gni",
+      "item": "Individual income tax: ganancia no imponible in the January-June 2026 withholding table (annualised to December). Differs from the annual 2026 amount because of the July indexation; do not mix the two.",
+      "value": "ARS 5,151,802.50",
+      "tax_year": "January to June 2026 (withholding regime)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-ene-a-jun-2026.pdf",
+      "quote": "Ganancias no imponibles [Artículo 30, inciso a)]: 5.151.802,50",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.2026.h2.gni",
+      "item": "Individual income tax: ganancia no imponible in the July-December 2026 withholding table (annualised to December).",
+      "value": "ARS 5,585,736.93",
+      "tax_year": "July to December 2026 (withholding regime)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-jul-dic-2026.pdf",
+      "quote": "[Artículo 30, 5.585.736,93 inciso a)]",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.return.2026.filing",
+      "item": "Individual income tax annual return (declaración jurada determinativa) filed in 2026: filing due 13 October 2026 for all CUIT endings. The page does not name the fiscal period; it is the return filed in 2026.",
+      "value": "13 October 2026",
+      "tax_year": "return filed in 2026 (period not named on the page)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/determinativa/vencimientos.asp",
+      "quote": "Presentación Terminación de CUIT Fecha de vencimiento Todas 13/10/2026, inclusive",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.return.2026.payment",
+      "item": "Individual income tax annual return filed in 2026: PAYMENT due 27 July 2026 for all CUIT endings, i.e. before the filing date printed on the same page. Quote both dates as printed; do not infer which is a typo.",
+      "value": "27 July 2026",
+      "tax_year": "return filed in 2026 (period not named on the page)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/determinativa/vencimientos.asp",
+      "quote": "Pago Terminación de CUIT Fecha de vencimiento Todas 27/07/2026, inclusive",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.pit.anticipos.count",
+      "item": "Individuals and undivided estates pay 5 income tax advance payments: August, October and December of the year after the base year, then February and April of the following year.",
+      "value": "5 advance payments",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/determinativa/anticipos.asp",
+      "quote": "deben determinar e ingresar 5 anticipos del impuesto a las ganancias",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.mni",
+      "item": "Personal assets tax (Bienes Personales): non-taxable minimum (mínimo no imponible) for período 2025. Tax applies to the value of assets EXCEEDING this amount (an allowance, not a cliff); residents must register and file when total assets exceed it.",
+      "value": "ARS 384,728,044.57",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/que-es.asp",
+      "quote": "Período 2025 : $ 384.728.044,57",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.home",
+      "item": "Bienes Personales período 2025: a home used as the dwelling (casa-habitación) is not taxed when its value is at or below this amount.",
+      "value": "ARS 1,346,548,155.99",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/que-es.asp",
+      "quote": "no estarán alcanzados por el impuesto cuando su valuación resulte igual o inferior a $ 1.346.548.155,99",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.band1.rate",
+      "item": "Bienes Personales período 2025, general scale: rate on the first ARS 52,664,283.73 of value above the mínimo no imponible.",
+      "value": "0.5%",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "- 52.664.283,73 - 0,50% - 52.664.283,73 114.105.948,16",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.band1.top",
+      "item": "Bienes Personales período 2025: top of the first (0.50%) band, measured on the value exceeding the MNI.",
+      "value": "ARS 52,664,283.73",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "- 52.664.283,73 - 0,50% - 52.664.283,73 114.105.948,16",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.band2.rate",
+      "item": "Bienes Personales período 2025: rate on value (above the MNI) from ARS 52,664,283.73 to ARS 114,105,948.16, plus fixed ARS 263,321.42.",
+      "value": "0.75%",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "52.664.283,73 114.105.948,16 263.321,42 0,75%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.band2.top",
+      "item": "Bienes Personales período 2025: top of the 0.75% band (value above the MNI).",
+      "value": "ARS 114,105,948.16",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "52.664.283,73 114.105.948,16 263.321,42 0,75%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.band3.rate",
+      "item": "Bienes Personales período 2025: top rate, on value above the MNI exceeding ARS 114,105,948.16, plus fixed ARS 724,133.89. The 2025 scale has three bands (the 2024 scale had four, up to 1.25%).",
+      "value": "1%",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "114.105.948,16 en adelante 724.133,89 1,00% 114.105.948,16",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.band3.fixed",
+      "item": "Bienes Personales período 2025: fixed tax at the start of the top (1.00%) band.",
+      "value": "ARS 724,133.89",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "114.105.948,16 en adelante 724.133,89 1,00% 114.105.948,16",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2025.compliant.top",
+      "item": "Bienes Personales período 2025, \"contribuyentes cumplidores\" (reduced-rate benefit): top rate 0.50% on value above the MNI over ARS 114,105,948.16; the first band is 0.00% and the second 0.25%.",
+      "value": "0.5%",
+      "tax_year": "período fiscal 2025 (assets held at 31 December 2025, return filed in 2026); 2026 amounts not yet published",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "En adelante 153.604,17 0,50% 114.105.948,16",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.reibp.rate",
+      "item": "Bienes Personales, taxpayers who joined the REIBP (special advance-payment regime): assets held at 31 December 2023 (not regularised) are taxed at 0.45%; the ordinary MNI and home exemption still apply.",
+      "value": "0.45%",
+      "tax_year": "REIBP (assets at 31 December 2023)",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "aplicarán una alícuota de 0,45%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.reibp.regularised",
+      "item": "Bienes Personales: assets regularised under the asset regularisation regime are taxed at 0.50% from período 2024.",
+      "value": "0.5%",
+      "tax_year": "from período 2024",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/alicuotas.asp",
+      "quote": "la alícuota a aplicar, desde el período fiscal 2024, será de 0,50%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.bp.2024.mni",
+      "item": "Bienes Personales: mínimo no imponible for período 2024 (prior year, for recognising stale figures).",
+      "value": "ARS 292,994,964.89",
+      "tax_year": "período fiscal 2024",
+      "source_url": "https://www.afip.gob.ar/gananciasYBienes/bienes-personales/conceptos-basicos/que-es.asp",
+      "quote": "Período 2024 : $ 292.994.964,89",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.iva.general",
+      "item": "VAT (IVA) general rate, art. 28 of the IVA law (t.o. 1997). Also used by the overview.",
+      "value": "21%",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42701/texact.htm",
+      "quote": "del veintiuno por ciento (21%)",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "ar-vat-return",
+        "argentina-iva"
+      ]
+    },
+    {
+      "id": "ar.ref.iva.increased",
+      "item": "VAT increased rate: 27% on gas, electricity and metered water and certain telecom services (art. 3 e) points 4-6) supplied outside homes to a registered VAT payer (responsable inscripto) or a monotributista.",
+      "value": "27%",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42701/texact.htm",
+      "quote": "al veintisiete por ciento (27%) para las ventas de gas",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "ar-vat-return",
+        "argentina-income-tax",
+        "argentina-iva"
+      ]
+    },
+    {
+      "id": "ar.ref.iva.reduced.rule",
+      "item": "VAT reduced rate rule: the goods and services listed in art. 28 (e.g. certain animals, meats, housing construction) bear 50% of the general rate. The law states the fraction, not 10.5; see ar.ref.iva.reduced for the printed digit.",
+      "value": "50% of the general rate",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42701/texact.htm",
+      "quote": "equivalente al cincuenta por ciento (50%) de la establecida en el primer p",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.iva.reduced",
+      "item": "VAT reduced rate as printed by ARCA (Libro IVA Digital rate table, code 0004). The same table lists codes for 0%, 21%, 27%, 5% and 2.5%.",
+      "value": "10.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/iva/documentos/Libro-IVA-Digital-Tablas-del-Sistema.pdf",
+      "quote": "0004 10,50 % 0005 21,00 % 0006 27,00 %",
+      "read_on": "2026-09-23",
+      "used_by": [
+        "ar-vat-return",
+        "argentina-iva"
+      ]
+    },
+    {
+      "id": "ar.icd.rate.general",
+      "item": "Tax on bank account credits and debits (Ley 25.413, Decreto 380/2001 art. 7): general rate 6 per thousand on each CREDIT and 6 per thousand on each DEBIT (separately, not combined).",
+      "value": "6 per thousand",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/66561/texact.htm",
+      "quote": "SEIS POR MIL (6�) para los cr�ditos y del SEIS POR MIL (6�) para los d�bitos",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.icd.rate.doubled",
+      "item": "Tax on credits and debits: 12 per thousand where the proceeds of the operations are not debited or credited to a current account in the name of the ordering party or beneficiary (art. 7 Decreto 380/2001).",
+      "value": "12 per thousand",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/66561/texact.htm",
+      "quote": "DOCE POR MIL (12�)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.icd.law.max",
+      "item": "Ley 25.413 art. 1: the Executive sets the rate up to a maximum of 6 per thousand.",
+      "value": "6 per thousand",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/66533/texact.htm",
+      "quote": "hasta un m�ximo del SEIS POR MIL (6�)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.icd.credit.ganancias",
+      "item": "Tax on credits and debits: 33% of the tax actually paid may be credited against income tax (Ganancias). Resulting balances are not freely available; they carry forward against the same tax.",
+      "value": "33%",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/creditosyDebitos/casos-especiales/computo-en-ganancias.asp",
+      "quote": "el 33% del Impuesto sobre los Créditos y Débitos",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.icd.credit.pyme",
+      "item": "Tax on credits and debits: micro and small companies may credit 100% of the tax paid against income tax (manufacturing \"medianas tramo 1\": 60%); only 33% may be carried forward.",
+      "value": "100%",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/creditosyDebitos/casos-especiales/computo-en-ganancias.asp",
+      "quote": "podrán computar contra el Impuesto a las Ganancias el 100%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.icd.credit.medianas",
+      "item": "Tax on credits and debits: manufacturing companies classed \"medianas tramo 1\" credit 60% of the tax paid against income tax.",
+      "value": "60%",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/creditosyDebitos/casos-especiales/computo-en-ganancias.asp",
+      "quote": "este porcentaje se reducirá a un 60%",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.sa.capital",
+      "item": "Sociedad anónima (SA): minimum share capital, art. 186 Ley General de Sociedades 19.550, as fixed by Decreto 209/2024 (in force from 1 March 2024, still the amount in the consolidated text read on 23 Sep 2026). Capital must be fully subscribed at incorporation.",
+      "value": "ARS 30,000,000",
+      "tax_year": "2026 (Decreto 209/2024, from 1 March 2024)",
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25553/texact.htm",
+      "quote": "ser inferior a PESOS TREINTA MILLONES ($30.000.000)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.sa.capital.decree",
+      "item": "Decreto 209/2024 (Boletín Oficial 1 March 2024) fixes the art. 186 LGS capital; it replaced the ARS 100,000 of Decreto 1331/2012. The Executive may update it whenever it sees fit.",
+      "value": "ARS 30,000,000",
+      "tax_year": "from 1 March 2024",
+      "source_url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/304167/20240301",
+      "quote": "Fíjase en PESOS TREINTA MILLONES ($30.000.000) el capital social exigido",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.sau.paidin",
+      "item": "Sociedad anónima unipersonal (SAU): must prove 100% of the subscribed capital paid in at incorporation (IGJ, City of Buenos Aires). Other SAs: the cash paid in may not be below 25% per the contract.",
+      "value": "100%",
+      "tax_year": 2026,
+      "source_url": "https://www.argentina.gob.ar/servicio/constituir-una-sociedad-por-acciones",
+      "quote": "acreditar la integración del 100% del capital suscripto",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.srl.quota",
+      "item": "SRL: each quota (cuota) has equal value of ARS 10 or multiples (art. 148 LGS). The law sets no minimum SRL capital figure; capital must be fully subscribed at formation (art. 149). Maximum 50 partners (art. 146, in words).",
+      "value": "ARS 10",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25553/texact.htm",
+      "quote": "ser� de pesos diez ($ 10) o sus m�ltiplos",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.sas.capital.rule",
+      "item": "SAS (Ley 27.349 art. 40): at incorporation the capital may not be less than two times the salario mínimo vital y móvil (SMVM). The peso amount therefore moves with the SMVM; do not multiply it out in a Guide.",
+      "value": "2 times the SMVM",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/texact.htm",
+      "quote": "dos (2) veces el salario m�nimo vital y m�vil",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.sas.capital.igj",
+      "item": "IGJ (Buenos Aires City register) restates the SAS minimum capital as 2 salarios mínimos vitales y móviles; SAS registration in 72 hours with CUIT issued on registration.",
+      "value": "2 SMVM",
+      "tax_year": 2026,
+      "source_url": "https://www.argentina.gob.ar/justicia/igj/sociedad-por-acciones-simplificada",
+      "quote": "capital mínimo equivalente a 2 salarios mínimos vitales y móviles",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.sas.cash.paidin",
+      "item": "SAS: cash contributions must be at least 25% paid in at subscription, the rest within at most two years; in-kind contributions 100% at subscription (Ley 27.349 art. 41).",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/texact.htm",
+      "quote": "en un veinticinco por ciento (25 %)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.sas.inkind",
+      "item": "SAS: in-kind contributions must be 100% paid in at subscription (Ley 27.349 art. 41).",
+      "value": "100%",
+      "tax_year": 2026,
+      "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/texact.htm",
+      "quote": "en un cien por ciento (100 %)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.smvm.2026-09",
+      "item": "Salario mínimo vital y móvil (full-time monthly worker) from 1 September 2026 (Resolución 4/2026 CNEPYSMVYM). Needed for the SAS minimum capital (two times this). Changes monthly: see the next entries.",
+      "value": "ARS 383,800",
+      "tax_year": "from 1 September 2026",
+      "source_url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346775/20260902",
+      "quote": "PESOS TRESCIENTOS OCHENTA Y TRES MIL OCHOCIENTOS ($383.800)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.smvm.2026-10",
+      "item": "SMVM from 1 October 2026 (Resolución 4/2026).",
+      "value": "ARS 391,200",
+      "tax_year": "from 1 October 2026",
+      "source_url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346775/20260902",
+      "quote": "PESOS TRESCIENTOS NOVENTA Y UN MIL DOSCIENTOS ($ 391.200)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.smvm.2026-11",
+      "item": "SMVM from 1 November 2026 (Resolución 4/2026).",
+      "value": "ARS 398,800",
+      "tax_year": "from 1 November 2026",
+      "source_url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346775/20260902",
+      "quote": "PESOS TRESCIENTOS NOVENTA Y OCHO MIL OCHOCIENTOS ($398.800)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.form.smvm.2026-12",
+      "item": "SMVM from 1 December 2026 (Resolución 4/2026).",
+      "value": "ARS 406,400",
+      "tax_year": "from 1 December 2026",
+      "source_url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346775/20260902",
+      "quote": "PESOS CUATROCIENTOS SEIS MIL CUATROCIENTOS ($ 406.400)",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.iibb.provincial",
+      "item": "Ingresos Brutos (turnover tax) is levied by the PROVINCIAL tax administrations, not by ARCA; ARCA only collects it for monotributistas in provinces that joined the Monotributo Unificado. Rates are provincial and are not in this pack.",
+      "value": "provincial tax",
+      "tax_year": 2026,
+      "source_url": "https://www.afip.gob.ar/monotributo/ayuda/monotributo-unificado.asp",
+      "quote": "impuesto sobre los Ingresos Brutos de las administraciones tributarias provinciales",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.arca.decree",
+      "item": "Decreto 953/2024 dissolved AFIP and created ARCA (Agencia de Recaudación y Control Aduanero) as its legal successor. Write ARCA; ARCA pages are still served from afip.gob.ar.",
+      "value": "Decreto 953/2024",
+      "tax_year": "from October 2024",
+      "source_url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/316055/20241025",
+      "quote": "PODER EJECUTIVO - Decreto 953/2024",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.period",
+      "item": "Monotributo: the category table currently in force on ARCA applies from 1 August 2026. Any monotributo amount stated from an earlier table (e.g. the February 2026 one) has lapsed.",
+      "value": "from 1 August 2026",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "Valores de aplicación desde el 1/08/2026",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-a.limit",
+      "item": "Monotributo category A: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 12,009,410.45",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "A $12.009.410,45 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-b.limit",
+      "item": "Monotributo category B: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 17,595,182.74",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "B $17.595.182,74 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-c.limit",
+      "item": "Monotributo category C: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 24,670,494.31",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "C $24.670.494,31 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-d.limit",
+      "item": "Monotributo category D: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 30,628,651.43",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "D $30.628.651,43 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-e.limit",
+      "item": "Monotributo category E: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 36,028,231.33",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "E $36.028.231,33 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-f.limit",
+      "item": "Monotributo category F: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 45,151,659.41",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "F $45.151.659,41 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-g.limit",
+      "item": "Monotributo category G: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 53,995,798.87",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "G $53.995.798,87 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-h.limit",
+      "item": "Monotributo category H: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 81,924,660.37",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "H $81.924.660,37 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-i.limit",
+      "item": "Monotributo category I: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 91,699,761.90",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "I $91.699.761,90 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-j.limit",
+      "item": "Monotributo category J: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 105,012,519.20",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "J $105.012.519,20 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-k.limit",
+      "item": "Monotributo category K: maximum annual gross income (ingresos brutos) for the category. Above the category K limit the taxpayer leaves the monotributo for the general regime.",
+      "value": "ARS 126,610,838.75",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "K $126.610.838,75 Hasta",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-a.total",
+      "item": "Monotributo category A: total monthly payment (impuesto integrado ARS 5,585.77 + SIPA pension ARS 18,246.86 + health insurance ARS 25,694.55), same for services and for sales of goods.",
+      "value": "ARS 49,527.18",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "$18.246,86 $25.694,55 $49.527,18 $49.527,18",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-a.sipa",
+      "item": "Monotributo category A: monthly pension contribution (aporte al SIPA).",
+      "value": "ARS 18,246.86",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "$5.585,77 $5.585,77 $18.246,86 $25.694,55",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-a.obrasocial",
+      "item": "Monotributo categories A to C: monthly health insurance contribution (obra social), per affiliate; each adherent adds the same amount again.",
+      "value": "ARS 25,694.55",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "$18.246,86 $25.694,55 $49.527,18",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-k.total.services",
+      "item": "Monotributo category K: total monthly payment for services (locaciones y prestaciones de servicios).",
+      "value": "ARS 1,614,446.04",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "$158.049,02 $87.882,82 $1.614.446,04 $702.103,24",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-k.total.goods",
+      "item": "Monotributo category K: total monthly payment for sales of goods (venta de cosas muebles).",
+      "value": "ARS 702,103.24",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "$158.049,02 $87.882,82 $1.614.446,04 $702.103,24",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.cat-k.integrado.services",
+      "item": "Monotributo category K: monthly impuesto integrado (tax component) for services; for goods ARS 456,171.40.",
+      "value": "ARS 1,368,514.20",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "$1.368.514,20 $456.171,40 $158.049,02",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.mono.unit.price",
+      "item": "Monotributo: maximum unit sale price for goods (precio unitario máximo), same in all categories.",
+      "value": "ARS 716,840.77",
+      "tax_year": "from 1 August 2026 (ARCA 'Valores de aplicación desde el 1/08/2026'; updated semiannually)",
+      "source_url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "quote": "$2.792.886,15 $716.840,77 $5.585,77",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.aut.period",
+      "item": "Autónomos (self-employed pension contributions): ARCA publishes new amounts every month in 2026; the table in force is the one from 15 September 2026.",
+      "value": "from 15 September 2026",
+      "tax_year": "from 15 September 2026 (ARCA 'Valores vigentes a partir de septiembre 2026'); updated monthly",
+      "source_url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "quote": "Estos valores entrarán en vigencia a partir del día 15/09/2026",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.aut.min.i",
+      "item": "Autónomos: monthly contribution, minimum category I (categorías mínimas de revista, general activities). Also the amount for voluntary affiliation and under-21s.",
+      "value": "ARS 76,993.48",
+      "tax_year": "from 15 September 2026 (ARCA 'Valores vigentes a partir de septiembre 2026'); updated monthly",
+      "source_url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "quote": "I $ 76.993,48 II $ 107.789,20",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.aut.min.ii",
+      "item": "Autónomos: monthly contribution, minimum category II.",
+      "value": "ARS 107,789.20",
+      "tax_year": "from 15 September 2026 (ARCA 'Valores vigentes a partir de septiembre 2026'); updated monthly",
+      "source_url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "quote": "I $ 76.993,48 II $ 107.789,20",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.aut.min.iii",
+      "item": "Autónomos: monthly contribution, minimum category III.",
+      "value": "ARS 153,985.59",
+      "tax_year": "from 15 September 2026 (ARCA 'Valores vigentes a partir de septiembre 2026'); updated monthly",
+      "source_url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "quote": "III $ 153.985,59 IV $ 246.376,84",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.aut.min.iv",
+      "item": "Autónomos: monthly contribution, minimum category IV.",
+      "value": "ARS 246,376.84",
+      "tax_year": "from 15 September 2026 (ARCA 'Valores vigentes a partir de septiembre 2026'); updated monthly",
+      "source_url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "quote": "III $ 153.985,59 IV $ 246.376,84",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.aut.min.v",
+      "item": "Autónomos: monthly contribution, minimum category V (highest).",
+      "value": "ARS 338,766.81",
+      "tax_year": "from 15 September 2026 (ARCA 'Valores vigentes a partir de septiembre 2026'); updated monthly",
+      "source_url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "quote": "V $ 338.766,81",
+      "read_on": "2026-09-23",
+      "used_by": []
+    },
+    {
+      "id": "ar.ref.aut.pensioner",
+      "item": "Autónomos: monthly contribution for Ley 24.241 pensioners who carry on self-employed activity (category I).",
+      "value": "ARS 64,963.25",
+      "tax_year": "from 15 September 2026 (ARCA 'Valores vigentes a partir de septiembre 2026'); updated monthly",
+      "source_url": "https://www.afip.gob.ar/autonomos/documentos/Valores-autonomos-desde-septiembre-2026.pdf",
+      "quote": "I $ 64.963,25",
+      "read_on": "2026-09-23",
+      "used_by": []
+    }
+  ]
+}

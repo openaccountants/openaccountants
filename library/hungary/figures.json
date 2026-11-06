@@ -1,0 +1,1326 @@
+{
+  "country": "hungary",
+  "code": "HU",
+  "figure_count": 106,
+  "figures": [
+    {
+      "id": "hu.vat.rate.standard",
+      "item": "VAT (ÁFA) standard rate: applies to every supply of goods and services unless an annex of the VAT Act (Áfa tv.) gives a lower rate or an exemption applies.",
+      "value": "27%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "általános adómértéke az adó alapjának 27 százaléka",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-einvoice",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rate.reduced.18",
+      "item": "VAT reduced rate 18%: certain foodstuffs listed by customs tariff number in the VAT Act annex (e.g. some dairy and bakery products) AND admission to occasional open-air events. Not the 5% list.",
+      "value": "18%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "A 18 százalékos adómértékű termékeket – ilyenek egyes élelmiszerek",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-einvoice",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rate.reduced.18.events",
+      "item": "VAT 18% also covers admission to occasional open-air events (alkalmi szabadtéri rendezvény); the Act does not tie this service to a statistical code.",
+      "value": "18%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "a szintén 18 százalékos adómértékű, az alkalmi szabadtéri rendezvényre",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-einvoice",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rate.reduced.5.goods",
+      "item": "VAT reduced rate 5% on goods: e.g. books, sheet music, periodicals published at least once a year, certain medical products and aids, certain pork, beef, sheep, goat, poultry, eggs, milk products and fish for human consumption (list by tariff code in the annex).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "5 százalékos adómérték alá tartozik például a könyv, a kotta, a folyóirat",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-cross-border",
+        "hu-transfer-pricing",
+        "hu-vat-return",
+        "hungary-einvoice",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rate.reduced.5.services",
+      "item": "VAT 5% on certain services: district heating, some performing-arts services, internet access, restaurant food and on-the-spot non-alcoholic drinks in catering, and commercial accommodation (kereskedelmi szálláshely-szolgáltatás).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "Néhány szolgáltatás is az 5 százalékos adómérték alá tartozik, például a távhőszolgáltatás",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-cross-border",
+        "hu-transfer-pricing",
+        "hu-vat-return",
+        "hungary-einvoice",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rate.zero.newspapers",
+      "item": "VAT 0% rate: daily newspapers (published at least four times a week). Periodicals published less often are 5%, not 0%.",
+      "value": "0%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "A 0 százalékos kulcs alá tartozik a napilap (hetente legalább négyszer",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-vat-return",
+        "hungary-einvoice",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.subjective_exemption.threshold",
+      "item": "Subjective (small business) VAT exemption, alanyi adómentesség: may be chosen for 2026 only if annual domestic supplies of goods and services (cumulated, in HUF) did not exceed this amount in 2025 actually AND are not reasonably expected to and do not actually exceed it in 2026. Raised from HUF 18 million (2025).",
+      "value": "HUF 20 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "quote": "2026-tól 18 millió forintról 20 millió forintra",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-corporate-tax",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.subjective_exemption.threshold.2025",
+      "item": "Subjective VAT exemption threshold that applied in 2025 (replaced by HUF 20 million from 2026). A business that exceeded it in 2025 may still choose the exemption for 2026 if it meets the 2026 test.",
+      "value": "HUF 18 million",
+      "tax_year": 2025,
+      "source_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "quote": "2026-tól 18 millió forintról 20 millió forintra",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.subjective_exemption.threshold.2027",
+      "item": "Subjective VAT exemption threshold already legislated for 2027 (not 2026).",
+      "value": "HUF 22 million",
+      "tax_year": "2027 (legislated)",
+      "source_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "quote": "2027-től 22 millió forintra",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.subjective_exemption.threshold.2028",
+      "item": "Subjective VAT exemption threshold already legislated for 2028 (not 2026).",
+      "value": "HUF 24 million",
+      "tax_year": "2028 (legislated)",
+      "source_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "quote": "2028-tól pedig 24 millió forintra",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.subjective_exemption.threshold.2024",
+      "item": "Subjective VAT exemption threshold that applied in 2024. Exceeding it in 2024 does not bar choosing the exemption for 2026 (transitional rule).",
+      "value": "HUF 12 million",
+      "tax_year": 2024,
+      "source_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "quote": "abban az évben érvényes, 12 millió forintos értékhatárát",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.subjective_exemption.notice",
+      "item": "Deadline to notify NAV that the subjective exemption is chosen for 2026 (on the F sheet of the registration/change forms). A business already exempt on that date that stays eligible need not notify again.",
+      "value": "31 December 2025",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "quote": "2025. december 31-éig kell bejelenteni a Nemzeti Adó- és Vámhivatalhoz",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.cash_accounting.threshold",
+      "item": "Cash accounting (pénzforgalmi elszámolás) may be chosen only if total supplies, net of VAT, annualised, did not exceed this amount in the previous calendar year actually AND are not expected to and do not exceed it in the current year. Invoices must carry the words \"pénzforgalmi elszámolás\".",
+      "value": "HUF 125,000,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "nem haladja meg a 125.000.000 forintnak megfelelő pénzösszeget",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.monthly.threshold",
+      "item": "VAT returns are MONTHLY if the VAT to be accounted for (output VAT less deducted input VAT) for the SECOND year before the tax year, annualised, was positive AND reached this amount. For 2026 that reference year is 2024.",
+      "value": "HUF 1 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "összege pozitív előjelű, és az 1 millió forintot elérte",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.reference_year",
+      "item": "For 2026 the monthly / quarterly / annual VAT frequency is set from the returns and self-revisions filed for 2024 (the second year before the tax year), not 2025.",
+      "value": "2024",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "quote": "akinek/amelynek a 2024. évre vonatkozóan",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.monthly.new_business",
+      "item": "Businesses formed without a legal predecessor file VAT returns monthly in the year of registration and in the following year. VAT groups also file monthly.",
+      "value": "monthly",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "az adóalanynak a bejelentkezés évének, valamint az azt követő évnek",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.monthly.group",
+      "item": "A VAT group (csoportos adóalany) files monthly in 2026 regardless of the amount of VAT.",
+      "value": "monthly",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "Havonta kell a csoportos adóalanynak benyújtania a 2026. évben",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.annual.vat_threshold",
+      "item": "ANNUAL VAT returns apply only if ALL three hold: (1) the VAT to be accounted for in the second year before the tax year, annualised, was below this amount in absolute value (positive or negative); AND (2) net supplies did not exceed HUF 50 million; AND (3) the business has no EU (community) VAT number. Page prints the amount in words (\"250 ezer\").",
+      "value": "HUF 250 thousand",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "előjelétől függetlenül nem érte el a 250 ezer forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.annual.turnover_cap",
+      "item": "Second condition for annual VAT returns: net (VAT-exclusive) supplies of goods and services, annualised, not above this amount. Also the mid-year trigger to move from annual to quarterly.",
+      "value": "HUF 50 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "éves szinten összesített összege nem haladja meg az 50 millió forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.annual.no_eu_number",
+      "item": "Third condition for annual VAT returns: no EU (community) VAT number. An otherwise annual filer that holds an EU VAT number files QUARTERLY.",
+      "value": "quarterly if EU VAT number held",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "quote": "de közösségi adószámmal rendelkeznek szintén",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.frequency.quarterly.default",
+      "item": "Quarterly is the residual frequency: VAT payers who are neither monthly nor annual filers file quarterly.",
+      "value": "quarterly",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "quote": "sem a havonkénti, sem az évenkénti bevallásra ig kötelezettek közé nem tartoznak, negyedévente",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-corporate-tax",
+        "hu-other-independent-income",
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.switch.to_monthly",
+      "item": "Mid-year switch: a quarterly (or annual) filer must move to monthly returns once its VAT to be accounted for since 1 January, cumulated with sign, is positive and reaches HUF 1 million.",
+      "value": "HUF 1 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "előjel helyesen – éves szinten összesítve pozitív előjelű és az 1 millió forintot elérte",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.frequency.switch.annual_to_quarterly",
+      "item": "Mid-year switch: an annual filer moves to quarterly once VAT to be accounted for since 1 January reaches HUF 250 thousand (plus or minus), or net supplies exceed HUF 50 million, or NAV issues an EU VAT number. Amount printed in words. Booklet 24 prints the same test as \"a +/- 250 ezer forintot elérte\" (https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26); the 2665 form guide words it as sign-correct (\"előjelhelyesen\") with no \"+/-\".",
+      "value": "HUF 250 thousand",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "felszámított adó különbözete a 250 ezer forintot elérte",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.due.monthly",
+      "item": "Monthly VAT return AND payment due by the 20th of the month after the month. A refund can be claimed from the same date.",
+      "value": "20th of the following month",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "a tárgyhónapot követő hónap 20-ig",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.due.quarterly",
+      "item": "Quarterly VAT return and payment due by the 20th of the month after the quarter.",
+      "value": "20th of the month after the quarter",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "a negyedéves adóbevallásra kötelezett adóalanynak a negyedévet követő hónap 20-ig",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.due.annual",
+      "item": "Annual VAT return and payment due by 25 February of the year after the tax year.",
+      "value": "25 February",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "a tárgyévet követő év február 25-ig",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.return.form.2026",
+      "item": "VAT return form number for 2026 periods: the year digits followed by 65 (so 2665 for 2026). Filed electronically (with few exceptions) or replaced by approving the eÁfa draft.",
+      "value": "2665",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "(2026-ra a 2665. számú nyomtatvány)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.return.form.sheets",
+      "item": "The 2665 return's main sheets are the 2665A sheets; the domestic summary report sheets are 2665M (2665M-02 and corrections 2665M-02-K). 2665A-07, -08, -03 and the 2665M-02 / -K sheets are filled in forints; the rest in thousand forints.",
+      "value": "2665A / 2665M",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "Kivétel a 2665A-07, 2665A-08, 2665A-03 valamint a 2665M-02 és 2665M-02-K lapok",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.return.rounding",
+      "item": "Most 2665 amounts are entered in thousand forints, rounded: up to 499 forints down, from 500 forints up.",
+      "value": "thousand HUF, 500 rounds up",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "(499 forintig lefelé, 500 forinttól felfelé",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.return.nil",
+      "item": "A VAT return must be filed whether the VAT to be accounted for is positive, negative or zero (for normal VAT payers; exempt special filers have occasional-only filing).",
+      "value": "file even if zero",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "Bevallást attól függetlenül be kell nyújtani, hogy az elszámolandó adó összege pozitív vagy negatív előjelű vagy esetleg nulla",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.esl.form.2026",
+      "item": "EU sales list (recapitulative statement, összesítő nyilatkozat) form number for 2026; electronic only. Using eÁfa does NOT replace it.",
+      "value": "26A60",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "2026-ban a 26A60-as számú összesítő nyilatkozat kizárólag elektronikusan",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.esl.due",
+      "item": "EU sales list due by the 20th of the month after the month (monthly) or quarter (quarterly), independent of the VAT return frequency rules.",
+      "value": "20th of the following month",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "quote": "Havi a tárgyhónapot követő hó 20-ig Negyedéves a negyedévet követő hó 20-ig",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.esl.monthly_switch",
+      "item": "EU sales list must move from quarterly to monthly when intra-EU supplies of goods (and acquisitions, triangulation) in the quarter, net of VAT, exceed this amount. Returns to quarterly after four quarters below it if not a monthly VAT filer.",
+      "value": "EUR 50,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "quote": "meghaladja az 50 000 eurónak megfelelő pénzösszeget",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.refund.min.monthly",
+      "item": "NAV pays a VAT refund only if the negative balance in a return reaches this amount for a MONTHLY filer; below it, the credit is carried forward against later VAT.",
+      "value": "HUF 1 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "a havi bevallásra kötelezett adóalanynál az 1 millió forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.refund.min.quarterly",
+      "item": "Minimum negative balance for a VAT refund for a QUARTERLY filer (printed in words: 250 ezer).",
+      "value": "HUF 250 thousand",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "negyedéves bevallásra kötelezett adóalanynál a 250 ezer forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.refund.min.annual",
+      "item": "Minimum negative balance for a VAT refund for an ANNUAL filer (printed in words: 50 ezer).",
+      "value": "HUF 50 thousand",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "éves bevallásra kötelezett adóalanynál az 50 ezer forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.refund.days.general",
+      "item": "General VAT refund payment deadline: within 75 days (counted from receipt of the return, at the earliest from the due date). Also the deadline for a 'risky' taxpayer.",
+      "value": "75 days",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "A visszaigényelt általános forgalmi adót 75 napon belül kell kiutalni",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.refund.days.risky",
+      "item": "Refund deadline for a taxpayer rated risky (kockázatos adózó); risky taxpayers may not tick the faster-payment box.",
+      "value": "75 days",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "A kockázatos adózó által visszaigényelt általános forgalmi adó kiutalási határideje 75 nap",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.refund.days.reliable",
+      "item": "Refund deadline for a taxpayer rated reliable (megbízható adózó), other than a listed company, in the Art. 64(1) case.",
+      "value": "30 days",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "szerinti esetben 30 napon belül, a megbízható nyilvánosan",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.refund.days.reliable_listed",
+      "item": "Refund deadline for a reliable listed public company (Nyrt.), which must tick the box on the main sheet (D) block.",
+      "value": "20 days",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "által visszaigényelt általános forgalmi adót a NAV 20 napon belül utalja ki",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.refund.days.liquidation",
+      "item": "Refund claimed in the return closing a liquidation (felszámolás / végelszámolás) is paid within 60 days; in a simplified procedure within 45 days.",
+      "value": "60 days",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "felszámolás vagy végelszámolás esetén 60, egyszerűsített felszámolás",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.m_sheets.threshold",
+      "item": "Domestic summary report (belföldi összesítő jelentés) on the 2665M-02 sheets: the BUYER reports EVERY received domestic invoice on which it deducts input VAT, with NO value threshold. The old HUF 100,000 VAT-content threshold no longer applies. Invoices with 0% VAT are not listed.",
+      "value": "no threshold",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "értékhatártól függetlenül minden olyan befogadott, egyenes adózás alá tartozó számláról",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.m_sheets.eafa",
+      "item": "Taxpayers who file through the eÁfa system (approving NAV's draft return) are exempt from the 2665M domestic summary report.",
+      "value": "exempt when filing via eÁfa",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "E kötelezettség alól mentesül az az adóalany, aki (amely) bevallási kötelezettségét az eÁfa rendszer használatával teljesíti",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.rtir.software",
+      "item": "Online invoice data reporting (Online Számla / RTIR): invoices issued with invoicing software are reported to NAV immediately, machine to machine. Applies to every invoice under the VAT Act, B2B and B2C.",
+      "value": "immediately",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "kiállított számlák adattartalmáról azonnal",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.rtir.manual.days",
+      "item": "Paper (pre-printed form) invoices are reported on NAV's online interface within 4 days.",
+      "value": "4 days",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "4 napon belül, vagy ha a számla adótartalma eléri vagy meghaladja",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rtir.manual.large",
+      "item": "Paper invoices whose VAT content reaches or exceeds this amount must be reported within 1 day (not 4).",
+      "value": "HUF 500,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "adótartalma eléri vagy meghaladja az 500.000 forintot, akkor 1 napon belül",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rtir.manual.large.days",
+      "item": "Reporting deadline for paper invoices with VAT content of HUF 500,000 or more.",
+      "value": "1 day",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "quote": "500.000 forintot, akkor 1 napon belül kell teljesítenie",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.invoice.deadline",
+      "item": "Where an exception to immediate invoicing applies (e.g. payment after supply by transfer), the invoice must be issued within 8 days of supply, i.e. at the latest on the 8th day.",
+      "value": "8 days",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/18.-A-szamla-nyugta-kibocsatasanak-alapveto-szabalyai-2026.-03.-02.",
+      "quote": "a számlát a teljesítéstől számított 8 napon belül",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.invoice.b2c_limit",
+      "item": "No invoice is required for a sale to a non-taxable private person (not a legal person) below this amount INCLUDING VAT, unless the customer asks for one (a receipt applies instead). Same figure for advances from such persons.",
+      "value": "HUF 900,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/18.-A-szamla-nyugta-kibocsatasanak-alapveto-szabalyai-2026.-03.-02.",
+      "quote": "Áfával számítottan 900 000 forint értékhatár alatt nem kell számlát",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.eu.distance_sales",
+      "item": "EU-wide threshold for intra-EU distance sales of goods plus telecom/broadcast/e-services to consumers in other Member States (current and previous calendar year). Above it, VAT is due in the customer's Member State (OSS available).",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26",
+      "quote": "túllépi a 10 000 euró küszöbértéket, vagyis a 3 100 000 forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.eu.distance_sales.huf",
+      "item": "Forint equivalent NAV prints for the EUR 10,000 distance-sales threshold.",
+      "value": "HUF 3,100,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26",
+      "quote": "vagyis a 3 100 000 forintot",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.eu.acquisitions.special",
+      "item": "Intra-EU acquisitions of goods by special taxpayers (e.g. subjectively exempt businesses) are not taxed in Hungary if their net value did not exceed this amount in the previous year and does not in the current year (option to tax available). Excise goods and new means of transport are always taxed.",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26",
+      "quote": "a tárgyévet megelőző évben és a tárgyévben a 10 000 eurót nem haladta meg",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rc.invoice_wording",
+      "item": "Where the customer pays the VAT (reverse charge) and the supplier must invoice, the invoice must state \"fordított adózás\" (reverse charge).",
+      "value": "\"fordított adózás\"",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26",
+      "quote": "a számlán a „fordított adózás” kifejezést kell szerepeltetni",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.vat.rc.domestic.real_estate",
+      "item": "Domestic reverse charge (Áfa tv. 142. §): the buyer pays VAT on purchases of real estate where reverse charge applies (2665 row 51; § 142(1) a), e), f), g)).",
+      "value": "buyer pays (reverse charge)",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "fordított adózás szabályai szerint ingatlan beszerzése után",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.rc.domestic.waste",
+      "item": "Domestic reverse charge on waste listed in Annex 6 of the VAT Act sold to a taxable person (2665 row 52; § 142(1) d)). Sold to a non-taxable person, the normal 27% applies.",
+      "value": "buyer pays (reverse charge)",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "fordított adózás szabályai szerint hulladék beszerzése után",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.rc.domestic.emissions",
+      "item": "Domestic reverse charge on transfers of greenhouse gas emission allowances (2665 row 53; § 142(1) h)).",
+      "value": "buyer pays (reverse charge)",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "fordított adózás szabályai szerint az üvegházhatású gáz kibocsátására",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.vat.rc.domestic.services",
+      "item": "Domestic reverse charge on services under § 142(1) b), c), g) (2665 row 54; e.g. construction work, labour hire per the Act).",
+      "value": "buyer pays (reverse charge)",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "quote": "fordított adózás szabályai alapján szolgáltatás igénybevétele",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.pit.rate",
+      "item": "Personal income tax (SZJA) rate, flat, on both consolidated income (wages, self-employment) and separately taxed income.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "The rate of the personal income tax is 15 percent",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.pit.rate.hu",
+      "item": "Personal income tax rate on income from self-employment (önálló tevékenység), printed in the Hungarian booklet.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/02.-az-onallo-tevekenysegbol-szarmazo-jovedelem-es-adozasa-2026.-01.-09",
+      "quote": "Az önálló tevékenységből származó jövedelem után fizetendő adó mértéke 15 százalék",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.pit.self_employment.flat_cost",
+      "item": "Self-employed private persons (not sole traders) may deduct a flat 10% of revenue as costs instead of itemised costs; one method per year. 90% of revenue is then income.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/02.-az-onallo-tevekenysegbol-szarmazo-jovedelem-es-adozasa-2026.-01.-09",
+      "quote": "levonható 10 százalék a költséghányad, és a bevétel 90 százaléka a jövedelem",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-corporate-tax",
+        "hu-other-independent-income",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.pit.dividend",
+      "item": "Tax on dividends received by individuals (non-treaty rate for non-residents too). Can trigger 13% SZOCHO up to the cap.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "In the absence of such treaty, the applicable tax rate is 15 percent",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.pit.interest",
+      "item": "Tax on interest income of individuals (plus 13% SZOCHO on interest since 1 July 2023).",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "A 15 percent tax rate is applied to interest income as well",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.pit.esop",
+      "item": "Shares acquired under an employee share scheme generate no taxable income if their total market value is below this amount.",
+      "value": "HUF 1 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "lower than HUF 1 million",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.pit.foreign_tax_credit",
+      "item": "Unilateral foreign tax credit for individuals (no treaty): consolidated-income tax is reduced by 90% of the foreign tax, capped at the Hungarian tax on that income.",
+      "value": "90%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "reduced by 90 per cent of the tax paid on the income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income"
+      ]
+    },
+    {
+      "id": "hu.pit.allowances.foreigners",
+      "item": "Foreign individuals may claim Hungarian tax base allowances only if Hungary-taxable earned income reaches at least this share of total worldwide income for the year.",
+      "value": "75%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "reaches at least 75 per cent of his/her total income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border"
+      ]
+    },
+    {
+      "id": "hu.pit.return.due",
+      "item": "Annual personal income tax return AND payment due by 20 May of the following year (NAV draft return becomes final if not amended).",
+      "value": "20 May",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "Private individuals must file their annual tax returns by the 20 May",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-other-independent-income"
+      ]
+    },
+    {
+      "id": "hu.pit.return.due.2025",
+      "item": "Deadline for the 2025 personal income tax return and payment.",
+      "value": "20 May 2026",
+      "tax_year": 2025,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "quote": "A 2025. évi személyijövedelemadó-bevallás benyújtásának és az adó megfizetésének határideje 2026. május 20.",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.pit.return.form.2026",
+      "item": "Personal income tax return form for 2026 income (filed in 2027).",
+      "value": "26SZJA",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "in the case of income for the year 2026 on 26SZJA form",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.ev.entrepreneur_tax",
+      "item": "Sole trader (egyéni vállalkozó) under the entrepreneurial income regime: tax rate on the entrepreneurial tax base (not the 15% PIT).",
+      "value": "9%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "The rate of income tax for the self-employed is 9 percent",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-corporate-tax",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-transfer-pricing"
+      ]
+    },
+    {
+      "id": "hu.ev.entrepreneur_dividend",
+      "item": "Sole trader under the entrepreneurial income regime: tax on the entrepreneurial dividend base (vállalkozói osztalékalap).",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+      "quote": "A vállalkozói osztalékalap után az adó mértéke 15 százalék",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.atalany.revenue_cap",
+      "item": "Flat-rate taxation (átalányadózás) for sole traders: available while revenue in the tax year does not exceed ten times the annual minimum wage, i.e. this amount in 2026 (pro rata for part years).",
+      "value": "HUF 38,736,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+      "quote": "azaz a 38 736 000 forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-income-tax",
+        "hu-other-independent-income"
+      ]
+    },
+    {
+      "id": "hu.atalany.revenue_cap.retail",
+      "item": "Flat-rate taxation revenue cap for sole traders doing only retail (with limited postal agency work): fifty times the annual minimum wage.",
+      "value": "HUF 193,680,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+      "quote": "azaz a 193 680 000 forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-income-tax"
+      ]
+    },
+    {
+      "id": "hu.atalany.tax_free",
+      "item": "Flat-rate sole traders pay no PIT if their flat-rate income for 2026 does not exceed this amount (half the annual minimum wage); not pro-rated on a mid-year switch.",
+      "value": "HUF 1,936,800",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+      "quote": "nem haladja meg az 1 936 800 forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.atalany.cost.general",
+      "item": "Flat-rate sole traders: deemed cost ratio for any activity not in the 80% or 90% lists (so 55% of revenue is income).",
+      "value": "45%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+      "quote": "1. A 2-3. pontba nem tartozó bármely tevékenység 45%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-income-tax"
+      ]
+    },
+    {
+      "id": "hu.atalany.cost.80",
+      "item": "Flat-rate sole traders: 80% deemed cost for the industrial, agricultural and service activities in § 53(2) PIT Act (e.g. construction, hairdressing, car repair, catering, taxi).",
+      "value": "80%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+      "quote": "Az Szja tv. 53. § (2) bekezdésében meghatározott ipari, 80%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-cross-border",
+        "hu-income-tax"
+      ]
+    },
+    {
+      "id": "hu.atalany.cost.90",
+      "item": "Flat-rate sole traders: 90% deemed cost for exclusively retail activity (excluding catering).",
+      "value": "90%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+      "quote": "Kizárólag kiskereskedelmi tevékenység – kivéve a 90%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income"
+      ]
+    },
+    {
+      "id": "hu.szocho.rate",
+      "item": "Social contribution tax (SZOCHO), paid by the employer / payer (and by sole traders on themselves): rate on the tax base.",
+      "value": "13%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16",
+      "quote": "Az adó mértéke az adóalap 13 százaléka",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.szocho.interest",
+      "item": "SZOCHO also applies to interest income of individuals since 1 July 2023, on top of 15% PIT (deposits fixed before that date are excluded).",
+      "value": "13%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16",
+      "quote": "15 százalék személyi jövedelemadó (szja) mellett 13 százalék szociális",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.szocho.cap",
+      "item": "Upper limit for SZOCHO on dividends, capital gains, withdrawals and the sole trader's entrepreneurial dividend base: SZOCHO stops once the person's income reaches 24 times the minimum wage, which is this amount in 2026.",
+      "value": "HUF 7,747,200",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+      "quote": "Az adófizetési felső határ 2026-ban: 7 747 200 forint",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.szocho.cap.multiple",
+      "item": "The SZOCHO cap equals 24 times the minimum wage (HUF 7,747,200 in 2026).",
+      "value": "24 times the minimum wage",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "24 times value of the minimum wage",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.szocho.ev.min_base",
+      "item": "Sole trader SZOCHO minimum monthly base is the minimum wage (guaranteed minimum wage if the main activity needs secondary qualification); from 1 January 2026 the former 112.5% multiplier no longer applies.",
+      "value": "112.5% multiplier abolished from 2026",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+      "quote": "2026. január 1-jétől nem kell alkalmazni a 112,5 százalékos szorzót",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.tb.rate",
+      "item": "Social security contribution (TB járulék) withheld from the insured person (employee, insured sole trader); single rate since 1 July 2020.",
+      "value": "18.5%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/social-security-contributions-payable",
+      "quote": "from 1 July 20201 18,5%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.tb.rate.ev",
+      "item": "Insured sole traders pay TB contribution at 18.5% (on withdrawals, or on flat-rate income).",
+      "value": "18.5%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+      "quote": "18,5 százalékos mértékű társadalombiztosítási járulékot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.eho.healthcare_service.monthly",
+      "item": "Healthcare service contribution (egészségügyi szolgáltatási járulék) paid by uninsured residents to keep healthcare cover, per month in 2026.",
+      "value": "HUF 12,300",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/social-security-contributions-payable",
+      "quote": "HUF 12,300 / month",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.eho.healthcare_service.daily",
+      "item": "Healthcare service contribution, daily amount in 2026.",
+      "value": "HUF 410",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/social-security-contributions-payable",
+      "quote": "(HUF 410 / day)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.min_wage.monthly",
+      "item": "Monthly minimum wage (minimálbér) from 1 January 2026 (Government Decree 426/2025.).",
+      "value": "HUF 322,800",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+      "quote": "a havi minimálbér összege 2026-ban 322 800 forint",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.min_wage.guaranteed",
+      "item": "Guaranteed minimum wage (garantált bérminimum) for jobs needing at least secondary qualification, monthly, 2026.",
+      "value": "HUF 373,200",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+      "quote": "garantált bérminimum havi összege (2026-ban 373 200 forint)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-income-tax",
+        "hu-payroll",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.payroll.due",
+      "item": "Employer pays withheld contributions (and payroll taxes) by the 12th of the month after the payroll month.",
+      "value": "12th of the following month",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "quote": "A munkáltató az általa levont járulékot az elszámolt hónapot követő hó 12-ig",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.cit.rate",
+      "item": "Corporate income tax (TAO, társasági adó) rate on the positive tax base, since tax year 2017.",
+      "value": "9%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-business-associations",
+      "quote": "the corporate tax rate is 9 % of the positive tax base",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-corporate-tax",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-transfer-pricing"
+      ]
+    },
+    {
+      "id": "hu.cit.return.due",
+      "item": "Corporate tax return and balancing payment due by 31 May of the following year for calendar-year companies (other years: last day of the 5th month after year end).",
+      "value": "31 May",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-business-associations",
+      "quote": "by 31 May of the year following the tax year",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.cit.minimum_profit",
+      "item": "Income (profit) minimum: if pre-tax profit or the tax base, whichever is higher, is below 2% of adjusted total income, the company pays tax on that 2% or files a statement instead.",
+      "value": "2%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-business-associations",
+      "quote": "does not reach 2% of the adjusted total income",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-corporate-tax",
+        "hu-income-tax"
+      ]
+    },
+    {
+      "id": "hu.cit.losses",
+      "item": "Tax losses carried forward up to five tax years, usable up to 50% of the tax base before loss relief.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-business-associations",
+      "quote": "(up to 50% of the tax base calculated without losses)",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-corporate-tax",
+        "hu-other-independent-income",
+        "hu-transfer-pricing"
+      ]
+    },
+    {
+      "id": "hu.cit.advance.threshold",
+      "item": "Corporate tax advances are MONTHLY if the previous year's tax payable exceeded this amount, otherwise QUARTERLY (non-agricultural taxpayers). First applied on 2025 tax for the July 2026 to June 2027 advances.",
+      "value": "HUF 20 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02",
+      "quote": "ha az előző adóévi fizetendő adó meghaladja a 20 millió forintot",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-corporate-tax",
+        "hungary-vat-return"
+      ]
+    },
+    {
+      "id": "hu.cit.advance.due",
+      "item": "Monthly corporate tax advance payment due by the 20th of each month.",
+      "value": "20th of each month",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02",
+      "quote": "minden hónap 20. napjáig fizeti meg",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.lbt.max_rate",
+      "item": "Local business tax (helyi iparűzési adó) set by municipalities, at most this rate.",
+      "value": "2%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-business-associations",
+      "quote": "at a maximum rate of 2%",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-corporate-tax",
+        "hu-income-tax"
+      ]
+    },
+    {
+      "id": "hu.kiva.rate",
+      "item": "Small business tax (KIVA, kisvállalati adó): replaces corporate tax and SZOCHO; rate on the KIVA base (personnel payments plus capital/dividend adjustments).",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+      "quote": "Az adó mértéke az adóalap 10 százaléka",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-capital-and-rental-income",
+        "hu-corporate-tax",
+        "hu-other-independent-income",
+        "hu-social-contributions"
+      ]
+    },
+    {
+      "id": "hu.kiva.entry.headcount",
+      "item": "KIVA entry condition: average headcount in the year before not expected to exceed this number (with related companies).",
+      "value": "100 employees",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+      "quote": "várhatóan nem haladja meg a 100 főt",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.kiva.entry.revenue",
+      "item": "KIVA entry condition: revenue (and balance sheet total) in the year before not expected to exceed this amount.",
+      "value": "HUF 6 billion",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+      "quote": "nem haladja meg a 6 milliárd forintot",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.kiva.exit.headcount",
+      "item": "KIVA status ends once headcount exceeds this number (exit limit is higher than the entry limit).",
+      "value": "200 employees",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+      "quote": "a létszám meghaladja a 200 főt",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.kiva.exit.revenue",
+      "item": "KIVA status ends once revenue exceeds this amount (related companies not counted).",
+      "value": "HUF 12 billion",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+      "quote": "a bevétel meghaladja a 12 milliárd forintot",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.kata.monthly",
+      "item": "KATA (kisadózó vállalkozók tételes adója): fixed monthly tax per started month, only for full-time sole traders. NAV's Hungarian booklet prints \"havi 50 ezer forint\"; the English summary prints the digits.",
+      "value": "HUF 50,000",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "quote": "pay a specific monthly tax of HUF 50.000",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-income-tax",
+        "hu-other-independent-income"
+      ]
+    },
+    {
+      "id": "hu.kata.eligibility",
+      "item": "Only a full-time (főfoglalkozású) sole trader may choose KATA; not one employed at least 36 hours a week.",
+      "value": "full-time sole traders only",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20",
+      "quote": "A katát a főfoglalkozású, az Evectv.3 szerinti egyéni vállalkozói",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.kata.payer_rule",
+      "item": "KATA status ends from the day before revenue is received from a business payer (kifizető, incl. a foreign payer) for goods or services, except taxi services; so KATA is effectively B2C only.",
+      "value": "ends on income from a business payer",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20",
+      "quote": "ha a kisadózó egyéni vállalkozó az Art. szerinti kifizetőtől",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.kata.revenue_cap",
+      "item": "KATA revenue frame per calendar year for a full year of KATA months; revenue above it bears the 40% extra tax.",
+      "value": "HUF 18 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20",
+      "quote": "a 18 millió forintos keretösszeget meghaladó része után",
+      "read_on": "2026-10-05",
+      "used_by": []
+    },
+    {
+      "id": "hu.kata.excess_rate",
+      "item": "KATA extra tax on revenue above the frame.",
+      "value": "40%",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20",
+      "quote": "40 százalékos különadót kell fizetnie",
+      "read_on": "2026-10-05",
+      "used_by": [
+        "hu-income-tax"
+      ]
+    },
+    {
+      "id": "hu.kata.monthly_frame",
+      "item": "KATA revenue frame per KATA month for part years (one twelfth of HUF 18 million).",
+      "value": "HUF 1.5 million",
+      "tax_year": 2026,
+      "source_url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20",
+      "quote": "vagyis 1,5 millió forint",
+      "read_on": "2026-10-05",
+      "used_by": []
+    }
+  ]
+}

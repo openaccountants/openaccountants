@@ -1,0 +1,5730 @@
+{
+  "country": "uk",
+  "code": "GB",
+  "url_count": 752,
+  "sources": [
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/5a7e0a5ce5274a2e8ab4573c/ct61-notes-2010.pdf",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/5a7f1a77e5274a2e87db3d01/spain-dtc_-_in_force.pdf",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/5b05425fed915d1317445ed2/DT_Digest_April_2018.pdf",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/5b853e67e5274a4a8fbf169d/1993_India_-_UK_Double_Taxation_Agreement__as_amended_in_2013_-_in_force.pdf",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6331a05f8fa8f51d29278ebc/Starter_checklist.pdf",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6996e9b3b33a4db7ff889e08/P9X_2026_Tax_codes_to_use_from_6_April_2026.pdf",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69bbb455bfd6895605dad865/HS300-WS-2026.pdf",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69bd8990cfa346b9d47049e4/SA108-2026.pdf",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69c14d07cfa346b9d4704a8d/SA100-2026.pdf",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69c2635b13101e9908704b36/SA103F_2026.pdf",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69cbb66fa60a12ca3913c62a/UK_property_notes.pdf",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69cd19d6eafd66b876458ba9/SA105_2026_v0.1.pdf",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6a02e5df4fb0713aa63ea77c/SA108-Notes-2026.pdf",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0/oas/file",
+      "skills": [
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32003H0361",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/BittyTax/BittyTax",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/SavingTool/hmrc-income-tax",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/hmrc/paye-estimator",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/hmrc/tax-kalculator",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://mof.gov.ae/en/public-finance/public-debt/retail-t-sukuk/",
+      "skills": [
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://record.senedd.wales/Motion/9117",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://record.senedd.wales/Plenary/15728",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.scot/taxes/land-buildings-transaction-tax/additional-dwelling-supplement-ads",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.scot/taxes/land-buildings-transaction-tax/non-residential-property",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://revenue.scot/taxes/land-buildings-transaction-tax/residential-property",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/aliquote-irpef-e-agevolazioni2",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/0/Circolare+n.+21E+del+17.07.2020.pdf/96191701-87ef-ce63-e163-a8a6e37e64ad",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/241456/Articolo+24+bis+del+Testo+Unico_24bisTuir.pdf/7cc66a01-df4c-67b0-ddfd-f13bc80a5ae3?t=1489738101421",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/297873/Circolare+n.+17+del+23+maggio+2017_CIRCOLARE+REGIMI+AGEVOLATIVI+PER+PERSONE+FISICHE+CHE+TRASFERISCONO+LA+RESIDENZA+FISCALE+IN+ITALIA+-REGISTRO+CIRCOLARI.0000017.23-05-2017-U+%282%29.pdf/8c361223-0cf1-b41b-be4a-db33664d5855?t=1497872005315",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/6519685/circolare+n.+20+de+4+novembre+2024+residenza+pdf.pdf/978517e4-aa40-d14c-be79-19028c0f8785?t=1730715943926",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/lavoratori-impatriati-209-2023/infogen-lavoratori-impatriati-209-2023-cittadini",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/opzione-per-i-neo-residenti/infogen-opzionale-neo-residenti",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/opzione-per-i-neo-residenti/normativa-e-prassi-regi-opz-neo-residenti",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/regime-opzionale-per-i-pensionati-esteri-che-cose-cittadini",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate",
+      "skills": [
+        "uk-payments-on-account",
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.frc.org.uk/documents/7128/Amendments_to_FRS_102_and_other_FRSs.pdf",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.frc.org.uk/documents/7668/FRS_102_September_2024_tmKYWO6.pdf",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-101/",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.frc.org.uk/library/supervision/professional-bodies-supervision/supervision-of-audit/recognition-of-rsbs-and-rqbs/",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.scot/publications/scottish-income-tax-rates-and-bands/pages/2026-to-2027/",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.scot/publications/scottish-rate-resolution-2026-2027-draft-motion-explanatory-note/pages/2/",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/annual-accounts/penalties-for-late-filing",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/apply-tax-free-interest-on-savings",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/apply-tax-free-interest-on-savings/how-much-is-tax-free",
+      "skills": [],
+      "figures": [
+        "gb.it.savings.starting-rate-band",
+        "gb.it.savings.starting-rate-limit",
+        "gb.it.savings.psa.basic",
+        "gb.it.savings.psa.higher",
+        "gb.it.savings.psa.additional"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/become-sole-trader",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/business-asset-disposal-relief/print",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/business-legal-structures",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/capital-allowances/40-first-year-allowance",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-self-employment-sa103"
+      ],
+      "figures": [
+        "gb.ca.fya.40-percent"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/capital-allowances/annual-investment-allowance",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-corporation-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ],
+      "figures": [
+        "gb.ca.aia"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/capital-allowances/business-cars",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/capital-allowances/first-year-allowances",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/capital-allowances/full-expensing",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-self-employment-sa103"
+      ],
+      "figures": [
+        "gb.ca.full-expensing",
+        "gb.ca.fya.special-rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/capital-gains-tax/allowances",
+      "skills": [],
+      "figures": [
+        "gb.cgt.annual-exempt-amount"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/capital-gains-tax/gifts",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/capital-gains-tax/losses",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/capital-gains-tax/print",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/capital-gains-tax/rates",
+      "skills": [
+        "real-estate-and-property",
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/child-benefit-tax-charge",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": [
+        "gb.hicbc.threshold",
+        "gb.hicbc.full-clawback",
+        "gb.hicbc.rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/claim-employment-allowance",
+      "skills": [
+        "uk-national-insurance",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/claim-employment-allowance/eligibility",
+      "skills": [
+        "uk-dividends",
+        "uk-national-insurance",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/company-tax-returns",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-corporation-tax",
+        "uk-formation",
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/company-tax-returns/penalties-for-late-filing",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/corporation-tax-rates",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-formation",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/defer-national-insurance",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/difficulties-paying-hmrc",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/dormant-company/dormant-for-corporation-tax",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/employee-directors",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/employer-reporting-expenses-benefits/deadlines",
+      "skills": [
+        "uk-national-insurance",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/employer-reporting-expenses-benefits/reporting-and-paying",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/employers-maternity-pay-leave/eligibility-and-proof-of-pregnancy",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/employers-paternity-pay-leave/eligibility",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/employers-sick-pay/eligibility-and-form-ssp1",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/consultations/the-taxation-of-decentralised-finance-involving-the-lending-and-staking-of-cryptoassets/outcome/the-taxation-of-decentralised-finance-defi-involving-the-lending-and-staking-of-cryptoassets-summary-of-responses",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/consultations/transfer-pricing-international-controlled-transactions-schedule",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/consultations/transfer-pricing-scope-and-documentation/outcome/transfer-pricing-scope-and-documentation-summary-of-responses",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-financial-statements",
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/calculating-foreign-tax-credit-relief-on-income-hs263-self-assessment-helpsheet/relief-for-foreign-tax-paid-2026-hs263",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/changes-to-reporting-of-benefits-in-kind-from-april-2027/mandatory-reporting-of-benefits-in-kind-in-real-time-information-rti-from-april-2027",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-and-dividend-income/change-to-tax-rates-for-property-savings-and-dividend-income-technical-note",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/changes-to-tax-rates-for-property-savings-dividend-income/changes-to-tax-rates-for-property-savings-dividend-income",
+      "skills": [
+        "property-management-2",
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/china-tax-treaties/2011-uk-china-double-taxation-agreement-as-amended-in-2013-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": [
+        "gb.ch.fee.incorporation.online",
+        "gb.ch.fee.confirmation-statement"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/corporation-tax-company-tax-return-ct600-2015-version-3",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/corporation-tax-return-of-income-tax-on-company-payments-ct61",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/double-taxation-treaty-relief-form-dt-individual",
+      "skills": [
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/entrepreneurs-relief-hs275-self-assessment-helpsheet/hs275-business-asset-disposal-relief-2026",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/filing-your-companies-house-accounts",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/france-tax-treaties/2008-uk-and-france-double-taxation-convention-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/furnished-holiday-lettings-tax-regime-abolition/abolition-of-the-furnished-holiday-lettings-tax-regime",
+      "skills": [
+        "property-management-2",
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/furnished-holiday-lettings-tax-regime-abolition/clarification-on-abolition-of-the-furnished-holiday-lettings-tax-regime",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": [
+        "gb.it.savings.rates.2026",
+        "gb.it.savings.rates.2027",
+        "gb.it.property.rates.2027"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/income-tax-declaration-of-beneficial-interests-in-joint-property-and-income-17",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/international-tax-double-taxation-treaty-relief-form-dt-company",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/investors-relief-2020-hs308/investors-relief-2026-hs308",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/ireland-tax-treaties/1976-uk-ireland-double-taxation-convention-as-amended-by-the-1998-protocol-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/italy-tax-treaties/1988-uk-italy-double-taxation-convention-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding",
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/japan-tax-treaties/2006-uk-japan-double-taxation-convention-as-amended-by-the-2013-protocol-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/late-filing-penalties/late-filing-penalties",
+      "skills": [],
+      "figures": [
+        "gb.ch.late-filing.private.1month",
+        "gb.ch.late-filing.private.3month",
+        "gb.ch.late-filing.private.6month",
+        "gb.ch.late-filing.private.over6month"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/luxembourg-tax-treaties",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/luxembourg-tax-treaties/uk-luxembourg-double-taxation-convention-and-protocol-not-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/netherlands-tax-treaties/2008-netherlands-double-taxation-convention-as-amended-by-the-2013-protocol-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/non-resident-landord-guidance-notes-for-letting-agents-and-tenants-non-resident-landlords-scheme-guidance-notes/what-the-non-resident-landlords-scheme-is",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/non-residents-and-investment-income-hs300-self-assessment-helpsheet/hs300-non-residents-and-investment-income-2026",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/private-residence-relief-hs283-self-assessment-helpsheet/hs283-private-residence-relief-2026",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme",
+        "uk-corporation-tax"
+      ],
+      "figures": [
+        "gb.ct.main-rate",
+        "gb.ct.small-profits-rate",
+        "gb.ct.lower-limit",
+        "gb.ct.upper-limit",
+        "gb.ct.marginal-relief.fraction"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-scottish-income-tax",
+        "uk-self-employment-sa103",
+        "uk-statutory-residence-test",
+        "uk-transfer-pricing",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk",
+        "xero-uk-vat-close"
+      ],
+      "figures": [
+        "gb.hmrc.interest.late-payment.margin",
+        "gb.hmrc.interest.late-payment.rate",
+        "gb.hmrc.interest.repayment.margin",
+        "gb.hmrc.interest.repayment.rate",
+        "gb.hmrc.interest.repayment.floor"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past",
+      "skills": [],
+      "figures": [
+        "gb.it.basic-rate.band"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions",
+      "skills": [
+        "uk-national-insurance",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates",
+      "skills": [
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3",
+      "skills": [
+        "uk-statutory-residence-test",
+        "uk-to-italy-flat-tax-relocation",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet/hs264-remittance-of-pre-6-april-2025-foreign-income-and-gains-and-the-temporary-repatriation-facility-trf",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": [
+        "gb.nondom.trf.rate.2025-26",
+        "gb.nondom.trf.rate.2026-27",
+        "gb.nondom.trf.rate.2027-28"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet/hs223-rent-a-room-scheme-2026",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/research-development-rd-tax-relief-reforms/merger-of-current-small-or-medium-enterprise-sme-and-research-and-development-expenditure-credit-rdec-schemes",
+      "skills": [],
+      "figures": [
+        "gb.rd.rdec.notional-tax.loss-maker"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/self-assessment-foreign-sa106",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109",
+      "skills": [
+        "uk-non-resident-sa109",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/shares-and-capital-gains-tax-hs284-self-assessment-helpsheet/hs284-shares-and-capital-gains-tax-2026",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/switzerland-tax-treaties/1977-uk-switzerland-double-taxation-convention-as-amended-by-the-2017-protocol-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/temporary-non-residents-and-capital-gains-tax-hs278-self-assessment-helpsheet/hs278-temporary-non-residents-and-capital-gains-tax-2026",
+      "skills": [
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/united-arab-emirates-tax-treaties/2016-uk-uae-double-taxation-convention",
+      "skills": [
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/usa-tax-treaties/2001-uk-usa-double-taxation-convention-as-amended-by-the-2002-protocol-in-force",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/vat-notice-7001-should-i-be-registered-for-vat/vat-notice-7001-supplement--2",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-vat-return",
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/voluntary-national-insurance-contributions-for-periods-abroad-from-6-april-2026/voluntary-national-insurance-contributions-abroad-from-6-april-2026",
+      "skills": [
+        "uk-tax-optimization",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/adjusted-net-income",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/apply-as-an-individual-to-receive-uk-rental-income-without-uk-tax-deducted",
+      "skills": [
+        "uk-non-resident-sa109",
+        "uk-rental-sa105",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/capital-gains-tax-for-non-residents-calculating-taxable-gain-or-loss",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/capital-gains-tax-for-non-residents-uk-residential-property",
+      "skills": [
+        "uk-non-resident-sa109",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax",
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/capital-goods-scheme-notice-7062",
+      "skills": [
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ],
+      "figures": [
+        "gb.vat.cgs.land-buildings",
+        "gb.vat.cgs.vessels-aircraft"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/changes-to-reporting-income-from-self-employment-and-partnerships",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/changes-to-tax-relief-for-residential-landlords-how-its-worked-out-including-case-studies",
+      "skills": [
+        "property-management-2",
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime",
+      "skills": [
+        "uk-non-dom",
+        "uk-statutory-residence-test",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/check-if-you-need-to-pay-tax-when-you-receive-cryptoassets",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/check-if-you-need-to-pay-tax-when-you-sell-cryptoassets",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-formation"
+      ],
+      "figures": [
+        "gb.mtd.itsa.threshold.50000",
+        "gb.mtd.itsa.threshold.30000",
+        "gb.mtd.itsa.threshold.20000"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return",
+      "skills": [
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/claiming-capital-allowances-for-structures-and-buildings",
+      "skills": [],
+      "figures": [
+        "gb.ca.sba.rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat",
+      "skills": [
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/confirmation-statement-guidance",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/corporation-tax-marginal-relief",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/corporation-tax-paying-in-instalments",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": [
+        "gb.ct.instalments.large",
+        "gb.ct.instalments.very-large",
+        "gb.ct.instalments.deminimis"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/double-taxation-relief-for-companies",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/double-taxation-treaty-passport-scheme",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/draft-guidance-and-legislation-to-aid-preparation-for-reporting-benefits-in-kind-in-real-time/the-phased-introduction-of-mandatory-payrolling-for-benefits-in-kind",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/filing-your-companies-house-information-online",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax",
+      "skills": [
+        "property-management-2",
+        "uk-income-tax-sa100",
+        "uk-payments-on-account",
+        "uk-rental-sa105",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/get-help-with-basis-period-reform",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/get-your-postponed-import-vat-statement",
+      "skills": [
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late",
+      "skills": [
+        "close-the-uk-vat-quarter-from-xero",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk",
+        "xero-uk-vat-close"
+      ],
+      "figures": [
+        "gb.vat.late-payment.first-penalty",
+        "gb.vat.late-payment.second-penalty"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045",
+      "skills": [
+        "uk-vat-return",
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-vat-return",
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/income-tax-when-you-rent-out-a-property-working-out-your-rental-income",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/information-youll-need-to-give-to-uk-cryptoasset-service-providers",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/inheritance-tax-if-youre-a-long-term-uk-resident",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/late-payment-interest-if-you-do-not-pay-vat-or-penalties-on-time",
+      "skills": [
+        "uk-vat-return",
+        "xero-uk-vat-close"
+      ],
+      "figures": [
+        "gb.vat.late-payment.interest.margin"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/making-tax-digital-for-vat",
+      "skills": [
+        "close-the-uk-vat-quarter-from-xero",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/negligible-value-agreements",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/partial-exemption-vat-notice-706",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": [
+        "gb.vat.partial-exemption.deminimis.monthly",
+        "gb.vat.partial-exemption.deminimis.share"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/pay-corporation-tax-if-youre-a-very-large-company",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/paying-tax-on-rent-to-landlords-abroad",
+      "skills": [
+        "uk-non-resident-sa109",
+        "uk-rental-sa105",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/penalties-and-interest-on-a-late-stamp-duty-land-tax-return",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late",
+      "skills": [
+        "close-the-uk-vat-quarter-from-xero",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk",
+        "xero-uk-vat-close"
+      ],
+      "figures": [
+        "gb.vat.late-submission.points.annual",
+        "gb.vat.late-submission.points.quarterly",
+        "gb.vat.late-submission.points.monthly",
+        "gb.vat.late-submission.penalty"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/pension-schemes-work-out-your-tapered-annual-allowance",
+      "skills": [
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/people-with-significant-control-pscs",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025",
+      "skills": [
+        "uk-student-loan-repayment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026",
+      "skills": [
+        "uk-payroll",
+        "uk-student-loan-repayment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "skills": [
+        "uk-dividends",
+        "uk-national-insurance",
+        "uk-payroll",
+        "uk-scottish-income-tax",
+        "uk-student-loan-repayment",
+        "uk-tax-optimization"
+      ],
+      "figures": [
+        "gb.ni.class1.primary-threshold.yearly",
+        "gb.ni.class1.secondary-threshold.yearly",
+        "gb.ni.class1.uel.yearly",
+        "gb.ni.class1.employee.main-rate",
+        "gb.ni.class1.employee.upper-rate",
+        "gb.ni.class1.employer.rate",
+        "gb.ni.class1a.rate",
+        "gb.ni.employment-allowance",
+        "gb.amap.car.first-10000",
+        "gb.amap.car.after-10000",
+        "gb.amap.motorcycle",
+        "gb.amap.cycle"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021",
+      "skills": [
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/relief-from-vat-on-bad-debts-notice-70018",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/remove-penalty-points-youve-received-after-submitting-your-vat-return-late",
+      "skills": [
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/reporting-cryptoasset-user-and-transaction-data",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": [
+        "gb.rd.rdec.rate",
+        "gb.rd.eris.intensity-condition",
+        "gb.rd.eris.additional-deduction",
+        "gb.rd.eris.total-deduction",
+        "gb.rd.eris.payable-credit",
+        "gb.rd.paye-cap.fixed",
+        "gb.rd.paye-cap.multiple"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/sickness-absences-that-start-before-and-end-on-or-after-6-april-2026",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/stamp-duty-land-tax-corporate-bodies",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/supplementary-pages-ct600h-cross-border-royalties",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income",
+      "skills": [
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-bookkeeping",
+        "uk-rental-sa105",
+        "uk-self-employment-sa103"
+      ],
+      "figures": [
+        "gb.it.trading-allowance",
+        "gb.it.property-allowance"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/tell-hmrc-about-unpaid-tax-on-cryptoassets",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-payments-on-account",
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/submit-your-tax-return",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-and-overseas-goods-sent-to-the-uk-and-returned-to-the-seller",
+      "skills": [
+        "gb-vat-eu-goods-sellers"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk",
+      "skills": [
+        "gb-vat-eu-goods-sellers"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-and-overseas-goods-sold-to-customers-in-the-uk-using-online-marketplaces",
+      "skills": [
+        "gb-vat-eu-goods-sellers"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-domestic-reverse-charge-for-building-and-construction-services",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-guide-notice-700",
+      "skills": [
+        "gb-vat-eu-goods-sellers",
+        "uk-vat-return",
+        "xero-uk-vat-close"
+      ],
+      "figures": [
+        "gb.vat.simplified-invoice.limit"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-on-motoring-expenses-notice-70064",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/vat-reverse-charge-technical-guide",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+      "skills": [
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/verifying-your-identity-for-companies-house",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/what-happens-if-you-dont-pay-paye-and-national-insurance-on-time",
+      "skills": [
+        "uk-national-insurance",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/what-happens-if-you-dont-report-payroll-information-on-time",
+      "skills": [
+        "uk-national-insurance",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house",
+      "skills": [
+        "uk-financial-statements",
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/work-out-your-capital-gains-tax-adjustment-for-the-2024-to-2025-tax-year",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-rental-sa105",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72005",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim72035",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim81201",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim81320",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23195a",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg-app18-320",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg10250",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg51560",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03910",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03925",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm03950",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm35050",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm80150",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm92805",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch14700",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird111000",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800",
+      "skills": [
+        "gb-tax-relief-under-the-merged-scheme"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cotax-manual/com60040",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto10000",
+      "skills": [
+        "crypto-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto10400",
+      "skills": [
+        "crypto-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto10410",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21100",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21150",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21200",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21250",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto21300",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22100",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22150",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22200",
+      "skills": [
+        "crypto-accounting",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22280",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22300",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22350",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22400",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22450",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto22500",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto61110",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto61212",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto61214",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto61620",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/cryptoassets-manual/crypto61650",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt1922",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43560",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43600",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": [
+        "gb.nondom.owr.cap.amount",
+        "gb.nondom.owr.cap.percentage"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43605",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm47020",
+      "skills": [
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161000",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161090",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161110",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161150",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm190000",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412080",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412090",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414020",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414310",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414320",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm421010",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm421080",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm483030",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm483110",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm484090",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm485120",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489105",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489135",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489150",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489205",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01010",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01100",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim01297",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim12001",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye82000",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye93066",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm044220",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1030",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1092",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1101",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2220",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4210",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20720",
+      "skills": [
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20960",
+      "skills": [
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21500",
+      "skills": [
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21600",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig42300",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig43000",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig44000",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis/rdrm32210",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": [
+        "gb.nondom.rbc.30000.history",
+        "gb.nondom.rbc.60000.history"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis/rdrm73320",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis/rdrm73400",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim1170",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim5120",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance/sttg4100",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance/sttg4400",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance/sttg4500",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam121665",
+      "skills": [
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/stamp-duty-land-tax-manual/sdltm29901",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9846",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9848",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9850",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem9852",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/holiday-entitlement-rights",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/how-vat-works/vat-thresholds",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": [
+        "gb.vat.registration.threshold",
+        "gb.vat.deregistration.threshold",
+        "gb.vat.frs.join-threshold",
+        "gb.vat.frs.leave-threshold",
+        "gb.vat.cash-accounting.join",
+        "gb.vat.cash-accounting.leave",
+        "gb.vat.annual-accounting.join",
+        "gb.vat.annual-accounting.leave"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/income-tax-rates",
+      "skills": [
+        "property-management-2",
+        "uk-corporation-tax",
+        "uk-crypto-tax",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-rental-sa105",
+        "uk-scottish-income-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": [
+        "gb.it.tax-year",
+        "gb.it.personal-allowance",
+        "gb.it.personal-allowance.income-limit",
+        "gb.it.personal-allowance.taper",
+        "gb.it.personal-allowance.zero-at",
+        "gb.it.basic-rate",
+        "gb.it.basic-rate.income-top",
+        "gb.it.higher-rate",
+        "gb.it.additional-rate",
+        "gb.it.additional-rate.threshold"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/income-tax-rates/income-over-100000",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/income-tax-rates/previous-tax-years",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/individual-savings-accounts",
+      "skills": [
+        "uk-tax-optimization",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/keeping-your-pay-tax-records/how-long-to-keep-your-records",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/limited-company-formation/print",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/log-in-file-self-assessment-tax-return",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/marriage-allowance",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": [
+        "gb.it.marriage-allowance.transfer",
+        "gb.it.marriage-allowance.benefit"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/maximum-weekly-working-hours",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/national-insurance-credits",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/national-insurance-if-you-go-abroad",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/national-insurance-rates-letters/category-letters",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/national-minimum-wage-accommodation",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/new-employee/print",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/new-state-pension",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-class-1a-national-insurance",
+      "skills": [
+        "uk-national-insurance",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-class-2-national-insurance/if-you-work-or-live-abroad",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-corporation-tax",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-paye-tax",
+      "skills": [
+        "uk-national-insurance",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-self-assessment-tax-bill",
+      "skills": [
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-self-assessment-tax-bill/bank-details",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code",
+      "skills": [
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/pay-vat/print",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/paye-settlement-agreements/deadlines-and-payment",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/payroll-annual-reporting",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/payslips",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/recover-statutory-payments",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/register-employer",
+      "skills": [
+        "uk-formation",
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/register-for-self-assessment",
+      "skills": [
+        "uk-formation",
+        "uk-income-tax-sa100",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/register-for-vat",
+      "skills": [
+        "gb-vat-eu-goods-sellers",
+        "uk-bookkeeping",
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/register-for-vat/cancel-your-registration",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme",
+      "skills": [
+        "property-management-2",
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/renting-out-a-property/paying-tax",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/repaying-your-student-loan/print",
+      "skills": [
+        "uk-student-loan-repayment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/repaying-your-student-loan/what-you-pay",
+      "skills": [
+        "uk-student-loan-repayment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/repaying-your-student-loan/which-repayment-plan-you-are-on",
+      "skills": [
+        "uk-student-loan-repayment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-sold-a-property-in-the-uk-on-or-after-6-april-2020",
+      "skills": [
+        "real-estate-and-property",
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/report-and-pay-your-capital-gains-tax/print",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/running-a-limited-company/company-and-accounting-records",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/running-payroll",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/running-payroll/fps-after-payday",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/running-payroll/reporting-to-hmrc",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/running-payroll/reporting-to-hmrc-eps",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/scottish-income-tax",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/scottish-income-tax/if-you-live-in-more-than-one-home",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/scottish-income-tax/if-you-move-to-or-from-scotland",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/scottish-income-tax/who-pays",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/self-assessment-tax-returns",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/self-assessment-tax-returns/corrections",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/self-assessment-tax-returns/deadlines",
+      "skills": [
+        "property-management-2",
+        "uk-bookkeeping",
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-non-dom",
+        "uk-rental-sa105",
+        "uk-self-employment-sa103",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/self-assessment-tax-returns/keeping-your-pay-and-tax-records",
+      "skills": [
+        "crypto-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/self-assessment-tax-returns/penalties",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-income-tax-sa100",
+        "uk-national-insurance",
+        "uk-non-dom",
+        "uk-non-resident-sa109",
+        "uk-payments-on-account",
+        "uk-rental-sa105",
+        "uk-scottish-income-tax",
+        "uk-self-employment-sa103",
+        "uk-statutory-residence-test"
+      ],
+      "figures": [
+        "gb.sa.penalty.late-filing.initial",
+        "gb.sa.penalty.late-filing.daily",
+        "gb.sa.penalty.late-filing.daily-max",
+        "gb.sa.penalty.late-filing.6-month",
+        "gb.sa.penalty.late-filing.12-month",
+        "gb.sa.penalty.late-payment"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": [
+        "gb.it.self-assessment.trigger"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/self-employed-national-insurance-rates",
+      "skills": [
+        "uk-national-insurance",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ],
+      "figures": [
+        "gb.ni.class2.small-profits-threshold",
+        "gb.ni.class2.rate",
+        "gb.ni.class4.lower-profits-limit",
+        "gb.ni.class4.main-rate",
+        "gb.ni.class4.upper-profits-limit",
+        "gb.ni.class4.upper-rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/self-employed-records",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/self-employed-records/how-long-to-keep-your-records",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": [
+        "gb.records.retention.self-employed"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/self-employed-records/what-records-to-keep",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/set-up-business-partnership/print",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-cash-basis",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-cash-basis/print",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-cash-basis/who-can-use-cash-basis",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-simplified-expenses",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/living-at-your-business-premises",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": [
+        "gb.expenses.simplified.premises.1",
+        "gb.expenses.simplified.premises.2",
+        "gb.expenses.simplified.premises.3plus"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/print",
+      "skills": [
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-tax-optimization"
+      ],
+      "figures": [
+        "gb.expenses.simplified.mileage.car-first",
+        "gb.expenses.simplified.mileage.car-after",
+        "gb.expenses.simplified.mileage.motorcycle"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/simpler-income-tax-simplified-expenses/working-from-home",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": [
+        "gb.expenses.simplified.home.25-50",
+        "gb.expenses.simplified.home.51-100",
+        "gb.expenses.simplified.home.101-plus"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/stamp-duty-land-tax",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/stamp-duty-land-tax/residential-property-rates",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/state-pension-if-you-retire-abroad/rates-of-state-pension",
+      "skills": [
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/submit-vat-return",
+      "skills": [
+        "vat-returns-for-small-businesses-in-the-uk"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-codes",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-codes/emergency-tax-codes",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-codes/what-your-tax-code-means",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-on-dividends",
+      "skills": [
+        "uk-dividends",
+        "uk-income-tax-sa100",
+        "uk-tax-optimization"
+      ],
+      "figures": [
+        "gb.it.dividend.allowance",
+        "gb.it.dividend.ordinary-rate",
+        "gb.it.dividend.upper-rate",
+        "gb.it.dividend.additional-rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/tax-on-dividends/how-to-report-tax-on-dividends",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-sell-home/print",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-sell-property/print",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-sell-shares/print",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-uk-income-live-abroad",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/tax-uk-income-live-abroad/rent",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/understand-self-assessment-bill/payments-on-account",
+      "skills": [
+        "uk-payments-on-account",
+        "uk-rental-sa105",
+        "uk-scottish-income-tax",
+        "uk-student-loan-repayment",
+        "uk-tax-optimization"
+      ],
+      "figures": [
+        "gb.sa.poa.threshold",
+        "gb.sa.poa.paye-share",
+        "gb.sa.poa.instalment"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/vat-annual-accounting-scheme/eligibility",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-annual-accounting-scheme/return-and-payment-deadlines",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-cash-accounting-scheme/eligibility",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-flat-rate-scheme",
+      "skills": [],
+      "figures": [
+        "gb.vat.frs.capital-asset-limit"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/vat-flat-rate-scheme/how-much-you-pay",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": [
+        "gb.vat.frs.limited-cost.rate",
+        "gb.vat.frs.limited-cost.goods-test",
+        "gb.vat.frs.limited-cost.amount-test",
+        "gb.vat.frs.first-year-discount",
+        "gb.vat.frs.rate.accountancy"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/vat-flat-rate-scheme/if-your-circumstances-change",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-flat-rate-scheme/print",
+      "skills": [
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-flat-rate-scheme/who-can-join",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-rates",
+      "skills": [
+        "gb-vat-eu-goods-sellers",
+        "uk-bookkeeping",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ],
+      "figures": [
+        "gb.vat.standard-rate",
+        "gb.vat.reduced-rate",
+        "gb.vat.zero-rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/vat-registration/print",
+      "skills": [
+        "vat-returns-for-small-businesses-in-the-uk"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-registration/when-to-register",
+      "skills": [
+        "uk-formation",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-returns",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-returns/deadlines",
+      "skills": [
+        "close-the-uk-vat-quarter-from-xero",
+        "uk-vat-return",
+        "xero-uk-vat-close"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/vat-returns/how-to-send-your-vat-return",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/voluntary-national-insurance-contributions",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/voluntary-national-insurance-contributions/deadlines",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/voluntary-national-insurance-contributions/if-you-live-or-work-abroad",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/voluntary-national-insurance-contributions/rates",
+      "skills": [
+        "uk-national-insurance",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": [
+        "gb.ni.class3.rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/welsh-income-tax",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/work-out-capital-allowances/rates-and-pools",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-self-employment-sa103"
+      ],
+      "figures": [
+        "gb.ca.wda.main-rate",
+        "gb.ca.wda.main-rate.previous",
+        "gb.ca.wda.special-rate"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/work-out-capital-allowances/work-out-what-you-can-claim",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": [
+        "gb.ca.small-pools"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/workplace-pensions/joining-a-workplace-pension",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.wales/land-transaction-tax-rates-and-bands",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.wales/written-statement-draft-budget-2026-27-welsh-taxes",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/anaw/2017/1/section/44",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/asp/2013/11/section/29",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ssi/2024/367/article/2/made",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/schedule/3ZB",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/12B",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": [
+        "gb.records.penalty.max"
+      ]
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/59A",
+      "skills": [
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/59B",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/59D",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/7",
+      "skills": [
+        "uk-formation",
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/8",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-self-employment-sa103",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/86",
+      "skills": [
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/87",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1970/9/section/98",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1978/30/schedule/1",
+      "skills": [
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1984/51/section/6A",
+      "skills": [
+        "uk-non-dom",
+        "uk-statutory-residence-test",
+        "uk-to-italy-flat-tax-relocation",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/schedule/4AA",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/schedule/7AC",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/169N",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/17",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/18",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/185",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/1A",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/1H",
+      "skills": [
+        "real-estate-and-property",
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/1M",
+      "skills": [
+        "uk-non-resident-sa109",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/222",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/223",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/24",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/262",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/28",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/section/62",
+      "skills": [
+        "uk-capital-gains-sa108"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/10",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/10A",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/11",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/13",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/15",
+      "skills": [
+        "uk-national-insurance",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/157",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/8",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/9",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/9A",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1992/4/section/9B",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1",
+      "skills": [
+        "uk-tax-optimization",
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/4",
+      "skills": [
+        "uk-vat-return",
+        "vat-returns-for-small-businesses-in-the-uk"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/2",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/26A",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/29A",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/36",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/69",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/17",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/18",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/21",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/23",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/46/section/80C",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/46/section/80D",
+      "skills": [
+        "uk-non-resident-sa109",
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/46/section/80E",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/1998/46/section/80F",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2000/12/section/2",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2000/12/section/8",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2001/2/section/45D",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2001/2/section/45S",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2001/2/section/51A",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/1/section/27",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/1/section/681C",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/1/section/684",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/1",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/schedule/10/part/2",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/schedule/4A/paragraph/1",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/schedule/4ZA/paragraph/1",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/schedule/6ZA",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/schedule/9A",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/section/55",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/section/75ZA",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/section/76",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2003/14/section/87",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2004/12/section/190",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2004/12/section/192",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2004/12/section/55",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/25",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/25B",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/272A",
+      "skills": [
+        "property-management-2",
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/274A",
+      "skills": [
+        "property-management-2"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/274AA",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/34",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/389",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/412",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/415",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/45",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/53",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/6",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/624",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/7",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/783AD",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/845A",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/845B",
+      "skills": [
+        "uk-non-dom",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/845C",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/845E",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/845F",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2005/5/section/94F",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/32/section/116E",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/113",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/154",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/155",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/157",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/271",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/382",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-financial-statements"
+      ],
+      "figures": [
+        "gb.co.small.turnover",
+        "gb.co.small.balance-sheet",
+        "gb.co.small.employees"
+      ]
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/384A",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-financial-statements"
+      ],
+      "figures": [
+        "gb.co.micro.turnover",
+        "gb.co.micro.balance-sheet",
+        "gb.co.micro.employees"
+      ]
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/386",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/387",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/388",
+      "skills": [
+        "uk-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/392",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/393",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/395",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/403",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/414A",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/415",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/442",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/444",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/445",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/453",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/465",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": [
+        "gb.co.medium.turnover",
+        "gb.co.medium.balance-sheet",
+        "gb.co.medium.employees"
+      ]
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/476",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/477",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-financial-statements"
+      ],
+      "figures": [
+        "gb.co.audit-exemption"
+      ]
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/478",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/479A",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/586",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/7",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/761",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/763",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/830",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/847",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/86",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/88A",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2006/46/section/9",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/11/schedule/24",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/contents",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/10",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-non-dom",
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/11A",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/11C",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/12",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/12B",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/13",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/13A",
+      "skills": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/19",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/24A",
+      "skills": [
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/35",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/414",
+      "skills": [
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/55B",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/56",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/64",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/66",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/72",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/74A",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/8",
+      "skills": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/811",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/812",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/813",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/814",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/825",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/83",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/837",
+      "skills": [
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/847",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/874",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/879",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/882",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/888A",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/89",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/903",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/906",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/907",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/911",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/914",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/930",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/946",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/947",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/949",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/951",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/971",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/section/974",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/10/schedule/55",
+      "skills": [
+        "real-estate-and-property",
+        "uk-dividends",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-payroll",
+        "uk-self-employment-sa103",
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/3",
+      "skills": [
+        "uk-capital-gains-sa108",
+        "uk-dividends",
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/4",
+      "skills": [
+        "uk-dividends",
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/5",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/6",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/10/schedule/56",
+      "skills": [
+        "uk-payments-on-account",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/10/schedule/56/paragraph/3",
+      "skills": [
+        "uk-dividends",
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/4/part/9A/chapter/3",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/14",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/5",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/9",
+      "skills": [
+        "uk-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2009/4/section/931B",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/152",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/18A",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/18B",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/18D",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/18L",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/269DA",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/269ZB",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/269ZR",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/37",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/455",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/458",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/45A",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/4/section/548",
+      "skills": [
+        "uk-dividends"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/contents",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/112",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/147",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/164",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/166",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/172",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/173",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/174",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/18",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/19",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/218",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/26",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/27",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/31",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/33",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/36",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/392",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/397",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/42",
+      "skills": [
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2010/8/section/9",
+      "skills": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2011/25/section/144",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2013/29/schedule/45",
+      "skills": [
+        "uk-non-resident-sa109",
+        "uk-statutory-residence-test",
+        "uk-to-italy-flat-tax-relocation",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2014/7/section/1",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2014/7/section/2",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2019/1/schedule/2/paragraph/3",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2020/14/section/109",
+      "skills": [
+        "uk-statutory-residence-test"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2021/26/schedule/24",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2021/26/schedule/26",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2021/26/schedule/26/paragraph/5",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2022/3/schedule/1",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2022/9/section/1",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2022/9/section/6",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2022/9/section/7",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2022/9/section/8",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2023/57/section/3",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2024/12/section/12",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2024/3/schedule/10",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2025/8/contents",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2025/8/schedule/10",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2025/8/schedule/11",
+      "skills": [
+        "uk-non-dom"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2025/8/section/13",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2025/8/section/14",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2025/8/section/3",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/contents",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/schedule/1/paragraph/29",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-foreign-tax-and-withholding"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/schedule/3",
+      "skills": [
+        "uk-statutory-residence-test",
+        "uk-to-uae-relocation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/schedule/5",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/schedule/6",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/schedule/7",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/10",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/11",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/12",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/15",
+      "skills": [
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/2",
+      "skills": [
+        "real-estate-and-property",
+        "uk-corporation-tax",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/265",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/275",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/28",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/29",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-self-employment-sa103",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/3",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/4",
+      "skills": [
+        "uk-dividends",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-scottish-income-tax",
+        "uk-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/46",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/48",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/5",
+      "skills": [
+        "uk-corporation-tax",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/6",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/7",
+      "skills": [
+        "property-management-2",
+        "real-estate-and-property",
+        "uk-foreign-tax-and-withholding",
+        "uk-income-tax-sa100",
+        "uk-non-resident-sa109",
+        "uk-rental-sa105"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/ukpga/2026/11/section/9",
+      "skills": [
+        "uk-income-tax-sa100"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1992/3222/article/5",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1992/3222/article/7",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1995/2518/part/XIX",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1995/2518/part/XV",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1995/2518/regulation/113",
+      "skills": [
+        "uk-tax-optimization",
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1995/2518/regulation/25",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1995/2902/regulation/9",
+      "skills": [
+        "uk-non-resident-sa109"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1996/1654/regulation/3",
+      "skills": [
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1996/1654/regulation/4",
+      "skills": [
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1997/2491/made",
+      "skills": [
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1998/1833/regulation/15B",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/1998/1833/regulation/16A",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2001/1004/regulation/10",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2001/1004/regulation/8",
+      "skills": [
+        "uk-national-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2001/1004/regulation/91",
+      "skills": [
+        "uk-national-insurance",
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2003/2682/regulation/67B",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2003/2682/regulation/69",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2008/409/schedule/1",
+      "skills": [
+        "uk-bookkeeping",
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2008/497/regulation/4",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2008/838/made",
+      "skills": [
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2016/237/regulation/12",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2016/237/regulation/14",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2016/237/regulation/2",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2016/237/regulation/3",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2016/237/regulation/3A",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2017/1072/made",
+      "skills": [
+        "uk-corporation-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2023/818/regulation/2",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2023/818/regulation/4",
+      "skills": [
+        "uk-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2024/1303/made",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2024/269/made",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2025/589/made",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2025/744/made",
+      "skills": [
+        "uk-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/148/made",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/231/made",
+      "skills": [
+        "uk-national-insurance",
+        "uk-payments-on-account"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/336/contents/made",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/336/regulation/27/made",
+      "skills": [
+        "uk-self-employment-sa103"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/357/made",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/373/made",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/427/made",
+      "skills": [
+        "uk-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/576/made",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/765/made",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2026/987/made",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legislation.gov.uk/wsi/2024/1311/contents/made",
+      "skills": [
+        "real-estate-and-property"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/do/atto/vediAggiornamentiAllArticolo?art.dataPubblicazioneGazzetta=1986-12-31%2000:00:00.0&art.codiceRedazionale=086U0917&art.flagTipoArticolo=0&art.idArticolo=24&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.versione=5",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art24bis",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art24ter",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "skills": [
+        "uk-to-italy-flat-tax-relocation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.openaccountants.com/contact",
+      "skills": [
+        "close-the-uk-vat-quarter-from-xero"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.openaccountants.com/skills/uk-vat-return",
+      "skills": [
+        "close-the-uk-vat-quarter-from-xero"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844",
+      "skills": [
+        "uk-income-tax-sa100",
+        "uk-scottish-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.tax.service.gov.uk/submissions/new-form/notification-errors-vat-returns",
+      "skills": [
+        "uk-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.thepensionsregulator.gov.uk/en/employers/new-employers/im-an-employer-who-has-to-provide-a-pension/declare-your-compliance/ongoing-duties-for-employers/earnings-thresholds",
+      "skills": [
+        "uk-payroll"
+      ],
+      "figures": []
+    }
+  ]
+}

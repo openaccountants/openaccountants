@@ -1,0 +1,5674 @@
+{
+  "country": "germany",
+  "code": "DE",
+  "url_count": 688,
+  "sources": [
+    {
+      "url": "https://e-rechnung-bund.de/",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://e-rechnung-bund.de/ubertragungskanale/e-mail/",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://e-rechnung-bund.de/ubertragungskanale/upload/",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/IV-Tarif-31-34b/Paragraf-32b/inhalt.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-01a/II/inhalt.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-27b/I/inhalt.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/0-k/netto",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/MarcelLehmann/Lohnsteuer",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/horstoeko/zugferd",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/jenner/LstGen",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/taxcalcs/taxjs",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://grsth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/II-Einkommen-2-24b/8-Die-einzelnen-Einkunftsarten-13-24b/b-Gewerbebetrieb-15-17/Paragraf-15/paragraf-15.html",
+      "skills": [
+        "de-partners-and-part-year",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://lsth.bundesfinanzministerium.de/lsth/2026/A-Einkommensteuergesetz/II-Einkommen-2-24b/4-Ueberschuss-d-Einnahmen-ueber-die-Werbungsk-8-9a/Paragraf-8/r-8-1-9.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://lsth.bundesfinanzministerium.de/lsth/2026/B-Anhaenge/Anhang-23a/inhalt.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://lsth.bundesfinanzministerium.de/lsth/2026/B-Anhaenge/Anhang-24/IV/IV-1/anhang-24-IV-1.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://lsth.bundesfinanzministerium.de/lsth/2026/B-Anhaenge/Anhang-24/IV/IV-6/anhang-24-IV-6.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://magazin.minijob-zentrale.de/minijob-beitraege-2026/",
+      "skills": [],
+      "figures": [
+        "de.social.insolvency-levy",
+        "de.minijob.employer.health",
+        "de.minijob.employer.pension",
+        "de.minijob.employee.pension-share",
+        "de.minijob.household.employee.pension-share",
+        "de.minijob.u1",
+        "de.minijob.u2",
+        "de.minijob.household.employer.health",
+        "de.minijob.household.employer.pension",
+        "de.minijob.household.accident"
+      ]
+    },
+    {
+      "url": "https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/erstattung_abzugsteuer_kapitalertraege_50c_estg.html",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/vorabverstaendigungsverfahren_in_verrechnungspreisfaellen.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://stadt.muenchen.de/service/info/gewerbesteuer/1074725/",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige",
+      "skills": [
+        "de-uk-employer-first-hire",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige/beantragung",
+      "skills": [
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.berlin.de/politik-und-verwaltung/rundschreiben/download.php/4330060",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bsg.bund.de/SharedDocs/Entscheidungen/DE/2018/2018_03_14_B_12_KR_13_17_R.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bsg.bund.de/SharedDocs/Verhandlungen/DE/2026/2026_07_23_B_12_BA_10_24_R.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesbank.de/de/statistiken/geld-und-kapitalmaerkte/zinssaetze-und-renditen/abzinsungszinssaetze/abzinsungszinssaetze-772396",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/STRE202210200/",
+      "skills": [
+        "de-partners-and-part-year",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765",
+      "skills": [
+        "de-partners-and-part-year",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2026-01-07-stand-DBA-1-januar-2026.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Abgeltungsteuer/2025-05-14-einzelfragen-zur-abgeltungsteuer.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-capital-gains",
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-12-02-beruecks-auslaendischer-verhaeltnisse.pdf",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "germany-bookkeeping",
+        "germany-formation",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.business.entertainment.nondeductible-share",
+        "de.vat.small-business.startup-year"
+      ]
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2025-01-10-basiszins-vorabpauschale-zum-2-1-2025.pdf?__blob=publicationFile&v=6",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2026-01-13-basiszins-berechnung-vorabpauschale.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2025-12-05-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5",
+      "skills": [
+        "de-einkommensteuer-freelancer"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "skills": [
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-12-22-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf",
+      "skills": [
+        "de-employee-income-tax",
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-payroll",
+        "de-trade-tax",
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.church-tax.low",
+        "de.church-tax.high",
+        "de.income-tax.rate.entry",
+        "de.income-tax.rate.top",
+        "de.income-tax.rate.highest",
+        "de.vat.rate.reduced",
+        "de.trade-tax.multiplier.minimum"
+      ]
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-01-22-geaenderte-PAP-2025-anlage-1.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-einvoice",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Grossbritannien/2010-11-23-Grossbritannien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2012-12-10-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2023-12-13-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-10-25-nichtrueckkehr-eines-grenzgaengers-aufgrund-der-arbeitsausuebung-nach-artikel-15a-asbsatz-2-DBA-Schweiz.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2022-07-26-konsultationsvereinbarung-betreffend-der-grenzgaengerregelung-artikel-15a-des-deutsch-schweizerischen-DBS.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-04-25-konsultationsvereinbarung-zu-artikel-15-absatz-4-des-deutsch-schweizerischen-DBA.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-12-07-ansaessigkeitsbescheinigungen-und-arbeitgeberbescheinigung-ueber-die-nichtrueckkehr.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-12-23-Schweiz-DBA-Bekanntmachung-Protokoll.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "skills": [
+        "de-treaty-withholding-rates",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Steuerarten/Gewerbesteuer/2025-11-05-gle-aufhebung-gle-01-10-20-anl.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Weitere_Steuerthemen/Betriebspruefung/AfA-Tabellen/Ergaenzende-AfA-Tabellen/AfA-Tabelle_AV.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "germany-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/das-aendert-sich-2026.html",
+      "skills": [],
+      "figures": [
+        "de.child.allowance.ministry-total",
+        "de.vat.rate.restaurant-food"
+      ]
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-5-wichtigste-steuerliche-aenderungen-2026.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/beitraege",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.social.health.additional-average",
+        "de.health.voluntary.min-base",
+        "de.health.voluntary.min-contribution.no-sick-pay",
+        "de.health.voluntary.min-contribution.sick-pay",
+        "de.health.voluntary.max-contribution.no-sick-pay",
+        "de.health.voluntary.max-contribution.sick-pay"
+      ]
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/beitraege/seite",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/die-pflegeversicherung/finanzierung",
+      "skills": [],
+      "figures": [
+        "de.social.care.rate",
+        "de.social.care.rate.childless",
+        "de.social.care.childless-surcharge",
+        "de.social.care.rate.half",
+        "de.social.care.saxony.employee",
+        "de.social.care.saxony.employer",
+        "de.social.care.employee-share.childless"
+      ]
+    },
+    {
+      "url": "https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Aktuelles/Aktuelles_node.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Fragen/Fragen_node.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Pflichten/Pflichten_node.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html",
+      "skills": [
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": [
+        "de.hgb.335.fine.min",
+        "de.hgb.335.fine.max"
+      ]
+    },
+    {
+      "url": "https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Verstoesse/InhaltJahresabschluss/Bestandteile/Bestandteile_node.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bundesregierung.de/breg-de/aktuelles/beitragsgemessungsgrenzen-2386514",
+      "skills": [],
+      "figures": [
+        "de.social.ceiling.health.year",
+        "de.social.ceiling.health.month"
+      ]
+    },
+    {
+      "url": "https://www.bundesregierung.de/breg-de/aktuelles/mindestlohn-steigt-2391010",
+      "skills": [],
+      "figures": [
+        "de.minijob.limit.month",
+        "de.minijob.limit.month.2027"
+      ]
+    },
+    {
+      "url": "https://www.bzst.de",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html",
+      "skills": [
+        "de-non-resident-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Umsatzsteuer-Identifikationsnummer/Vergabe_USt_IdNr/vergabe_ust_idnr_node.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Country_by_Country_Reporting/cbcr.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/ElektronischeDatenuebermittlung/elektronische_Datenuebermittlung.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/FAQ/FAQ_node.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Steuererklaerungen/steuererklaerungen_node.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Freistellungsverfahren_50c/freistellungsverfahren_50c_node.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/kapitalertragsteuerentlastung_node.html",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/One-Stop-Shop_EU/one_stop_shop_eu_node.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_369_712.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260420-vorsorgen-und-steuern-sparen",
+      "skills": [
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.deutsche-rentenversicherung.de/KnappschaftBahnSee/DE/Aktuelles/Meldungen/2026/2026_01_02_Sozialversicherungsrechengroessen2026.html",
+      "skills": [],
+      "figures": [
+        "de.social.pension.rate.half",
+        "de.social.unemployment.rate.half"
+      ]
+    },
+    {
+      "url": "https://www.deutsche-rentenversicherung.de/Nord/DE/Presse/Pressemitteilungen-und-Pressearchiv/Pressemitteilungen/20251218_Aenderung-RV-01012026",
+      "skills": [],
+      "figures": [
+        "de.social.pension.rate",
+        "de.minijob.limit.year",
+        "de.midijob.lower-limit",
+        "de.pension.voluntary.min",
+        "de.pension.voluntary.max"
+      ]
+    },
+    {
+      "url": "https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0091.pdf?__blob=publicationFile&v=4",
+      "skills": [],
+      "figures": [
+        "de.pension.self-employed.standard",
+        "de.pension.self-employed.half-standard",
+        "de.pension.min-base"
+      ]
+    },
+    {
+      "url": "https://www.dguv.de/de/ihr_partner/unternehmen/index.jsp",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dvka.de/de/arbeitgeber-erwerbstaetige/faq/",
+      "skills": [
+        "de-payroll-benefits",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.dvka.de/de/arbeitgeber-erwerbstaetige/geltungsbereiche/koordination.html",
+      "skills": [
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.e-rechnung-bund.de/",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/e-rechnung",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg",
+      "skills": [
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_fein_2025",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_kst_2025",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.existenzgruendungsportal.de/Navigation/DE/Gruendungswissen/Behoerden/behoerden",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Gruendungswissen/Behoerden/Handelsregister/inhalt",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": [
+        "de.gmbh.min-capital",
+        "de.gmbh.paid-in-before-registration"
+      ]
+    },
+    {
+      "url": "https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Kleine-Aktiengesellschaft-AG/inhalt.html",
+      "skills": [],
+      "figures": [
+        "de.ag.min-capital"
+      ]
+    },
+    {
+      "url": "https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": [
+        "de.ug.min-capital",
+        "de.ug.reserve-share"
+      ]
+    },
+    {
+      "url": "https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de",
+      "skills": [
+        "de-treaty-withholding-rates",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ferd-net.de/standards/zugferd-faq",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/",
+      "skills": [
+        "de-payroll",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aktg/__1.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aktg/__175.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aktg/__33a.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aktg/__36.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aktg/__36a.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": [
+        "de.ag.cash-paid-in"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aktg/__7.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-payroll",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__1.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__10.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "de-payroll",
+        "de-rental-income",
+        "de-trade-tax",
+        "de-vat-annual-and-special-schemes",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__109.html",
+      "skills": [
+        "de-einkommensteuer-freelancer"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__11.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__12.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__124.html",
+      "skills": [
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__13.html",
+      "skills": [
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__137.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "de-trade-tax",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": [
+        "de.tp.cbcr.revenue"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__139c.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__140.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "germany-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__141.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "germany-bookkeeping",
+        "germany-formation"
+      ],
+      "figures": [
+        "de.ao.bookkeeping.turnover",
+        "de.ao.bookkeeping.profit"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__146.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__147.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__147a.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-non-resident-tax",
+        "de-partners-and-part-year",
+        "de-rental-income",
+        "de-trade-tax",
+        "de-vat-annual-and-special-schemes",
+        "germany-formation",
+        "germany-income-tax",
+        "germany-tax-optimization",
+        "germany-transfer-pricing",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__150.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "de-partners-and-part-year",
+        "de-payroll",
+        "de-rental-income",
+        "de-trade-tax",
+        "de-vat-annual-and-special-schemes",
+        "germany-income-tax",
+        "germany-to-switzerland-cross-border-tax",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.ao.late-filing.rate",
+        "de.ao.late-filing.minimum.general",
+        "de.ao.late-filing.minimum.annual",
+        "de.ao.late-filing.partnership-rate",
+        "de.ao.late-filing.maximum"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__153.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__158.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__162.html",
+      "skills": [
+        "de-crypto-tax",
+        "germany-einvoice",
+        "germany-transfer-pricing"
+      ],
+      "figures": [
+        "de.tp.penalty.base",
+        "de.tp.penalty.min-share",
+        "de.tp.penalty.max-share",
+        "de.tp.penalty.late.max",
+        "de.tp.penalty.late.per-day"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+      "skills": [
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__168.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__169.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__179.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__180.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__181.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__184.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__19.html",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__222.html",
+      "skills": [
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__224.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-estimated-tax",
+        "de-trade-tax",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "de-rental-income",
+        "de-trade-tax",
+        "de-vat-annual-and-special-schemes",
+        "germany-income-tax",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+      "skills": [
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "de-rental-income",
+        "de-trade-tax",
+        "de-vat-annual-and-special-schemes",
+        "germany-tax-optimization",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.ao.interest.assessment.monthly",
+        "de.ao.interest.assessment.yearly"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "de-payroll-benefits",
+        "de-payroll",
+        "de-trade-tax",
+        "de-treaty-withholding-rates",
+        "de-vat-annual-and-special-schemes",
+        "germany-income-tax",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.ao.late-payment.rate",
+        "de.ao.late-payment.rounding"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__3.html",
+      "skills": [
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__378.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__379.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__42.html",
+      "skills": [
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__8.html",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__89.html",
+      "skills": [
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__89a.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__90.html",
+      "skills": [
+        "de-crypto-tax",
+        "germany-transfer-pricing"
+      ],
+      "figures": [
+        "de.tp.master-file.turnover"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__93c.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__19a.html",
+      "skills": [
+        "germany-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__31.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-estimated-tax",
+        "de-rental-income",
+        "de-trade-tax",
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/astg/__1a.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/astg/__2.html",
+      "skills": [
+        "leaving-germany-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/astg/__21.html",
+      "skills": [
+        "germany-transfer-pricing",
+        "leaving-germany-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "skills": [
+        "de-capital-gains",
+        "leaving-germany-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/astg/__7.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/astg/__8.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aufag/",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aufag/__1.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": [
+        "de.payroll.u1.refund-share"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aufag/__7.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/aufag/__9.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/awv_2013/__55.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/beitrvv/__1.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/beitrvv/__2.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/betravg/__1a.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/beurkg/__16a.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/beurkg/__16c.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__705.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__707.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__707b.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__719.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/brkg_2005/__5.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-rental-income"
+      ],
+      "figures": [
+        "de.business-trip.car-rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/de_v/",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/de_v/__10.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/de_v/__12.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/de_v/__6.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/de_v/__8.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/de_v/__9.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/drittelbg/__1.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/entgbv/__1.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/entgbv/__2.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/entgfg/__3.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/entgfg/__4.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__2.html",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/erechv/__11.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/erechv/__3.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/erechv/__4.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/erechv/__5.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estdv_1955/",
+      "skills": [
+        "de-einkommensteuer-freelancer"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estdv_1955/__56.html",
+      "skills": [
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "germany-income-tax",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estdv_1955/__60.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "germany-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estdv_1955/__82b.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/BJNR010050934.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-non-resident-tax",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-estimated-tax",
+        "de-partners-and-part-year",
+        "de-social-contributions",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.childcare.share",
+        "de.childcare.cap",
+        "de.training.own.cap",
+        "de.school-fees.share",
+        "de.school-fees.cap",
+        "de.ex-spouse-maintenance.cap",
+        "de.insurance.other.cap",
+        "de.insurance.other.cap-reduced"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__100.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__10a.html",
+      "skills": [
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__10b.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": [
+        "de.donations.cap.income-share"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__10c.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-payroll",
+        "germany-income-tax"
+      ],
+      "figures": [
+        "de.special-expenses.lump-sum"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__10d.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "de-rental-income",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.loss.carryback.single",
+        "de.loss.carryback.joint",
+        "de.loss.carryforward.share-above-base"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__11.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-rental-income",
+        "germany-einvoice",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__12.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "skills": [
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "de-partners-and-part-year",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__15a.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__16.html",
+      "skills": [],
+      "figures": [
+        "de.business-sale.allowance",
+        "de.business-sale.allowance-taper"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "skills": [
+        "de-capital-gains",
+        "leaving-germany-exit-tax"
+      ],
+      "figures": [
+        "de.s17.threshold",
+        "de.s17.allowance",
+        "de.s17.allowance-taper"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__18.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-partners-and-part-year",
+        "de-trade-tax",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__19.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": [
+        "de.wage-tax.company-event.allowance"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__19a.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__1a.html",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__2.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-non-resident-tax",
+        "de-partners-and-part-year",
+        "de-trade-tax",
+        "germany-bookkeeping",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "skills": [
+        "de-capital-gains",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.invest.allowance.single",
+        "de.invest.allowance.joint"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__21.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": [
+        "de.rental.rent-ratio.split-below",
+        "de.rental.rent-ratio.full-at"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__22.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": [
+        "de.other-income.services-limit"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "skills": [
+        "de-capital-gains",
+        "de-crypto-tax",
+        "de-rental-income"
+      ],
+      "figures": [
+        "de.s23.limit"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__24b.html",
+      "skills": [
+        "de-employee-income-tax",
+        "de-payroll"
+      ],
+      "figures": [
+        "de.single-parent.relief",
+        "de.single-parent.relief.extra-child"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__25.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-non-resident-tax",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__26.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__3.html",
+      "skills": [
+        "de-capital-gains",
+        "de-payroll-benefits",
+        "de-payroll",
+        "germany-tax-optimization",
+        "leaving-germany-exit-tax"
+      ],
+      "figures": [
+        "de.partial-income.exempt",
+        "de.wage-tax.exempt.active-pension",
+        "de.wage-tax.exempt.trainer",
+        "de.wage-tax.exempt.volunteer",
+        "de.wage-tax.exempt.health-promotion",
+        "de.wage-tax.exempt.emergency-care",
+        "de.wage-tax.exempt.employee-shares",
+        "de.wage-tax.exempt.company-pension"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__31.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__32.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": [
+        "de.child.allowance.per-parent",
+        "de.child.care-allowance.per-parent"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+      "skills": [
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-non-resident-tax",
+        "de-partners-and-part-year",
+        "de-payroll",
+        "germany-income-tax",
+        "germany-tax-optimization",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": [
+        "de.income-tax.basic-allowance",
+        "de.income-tax.zone2.start",
+        "de.income-tax.zone2.end",
+        "de.income-tax.zone3.start",
+        "de.income-tax.zone3.end",
+        "de.income-tax.zone4.start",
+        "de.income-tax.zone4.end",
+        "de.income-tax.zone5.start"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__32b.html",
+      "skills": [
+        "de-non-resident-tax",
+        "de-partners-and-part-year",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "skills": [
+        "de-capital-gains",
+        "de-crypto-tax",
+        "de-non-resident-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.invest.flat-rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__33.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__33a.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__33b.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__34.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__34a.html",
+      "skills": [
+        "de-partners-and-part-year",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.retained-profit.rate",
+        "de.retained-profit.follow-up-rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__34c.html",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__34d.html",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__35.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-partners-and-part-year",
+        "de-trade-tax",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__35a.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": [
+        "de.household.credit.rate",
+        "de.household.minijob.cap",
+        "de.household.services.cap",
+        "de.household.craftsmen.cap"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__35c.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-employee-income-tax",
+        "de-estimated-tax",
+        "germany-income-tax",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax",
+        "de-rental-income",
+        "de-uk-employer-first-hire",
+        "germany-income-tax",
+        "germany-tax-optimization",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": [
+        "de.income-tax.prepayment.min-year",
+        "de.income-tax.prepayment.min-date",
+        "de.income-tax.prepayment.late-increase-min"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__37b.html",
+      "skills": [
+        "de-payroll-benefits",
+        "germany-bookkeeping"
+      ],
+      "figures": [
+        "de.income-tax.flat.benefits-in-kind",
+        "de.income-tax.flat.benefits-in-kind.cap"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__38.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__38b.html",
+      "skills": [
+        "de-non-resident-tax",
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__39.html",
+      "skills": [
+        "de-non-resident-tax",
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__39a.html",
+      "skills": [
+        "de-payroll",
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__39b.html",
+      "skills": [
+        "de-employee-income-tax",
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__39c.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__39e.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__39f.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__3b.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__3c.html",
+      "skills": [
+        "de-capital-gains",
+        "leaving-germany-exit-tax"
+      ],
+      "figures": [
+        "de.partial-income.costs"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-trade-tax",
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-income-tax",
+        "germany-tax-optimization",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.home-office.yearly-flat",
+        "de.home-office.day-rate",
+        "de.home-office.day-cap",
+        "de.business.gift-limit",
+        "de.business.entertainment.deductible-share",
+        "de.business.overdrawing.interest-rate",
+        "de.business.overdrawing.floor",
+        "de.car.commute.monthly-per-km",
+        "de.car.family-trip.per-km"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__40.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": [
+        "de.wage-tax.flat.other-pay-cap",
+        "de.wage-tax.flat.s40-2",
+        "de.wage-tax.flat.commute",
+        "de.wage-tax.flat.public-transport",
+        "de.wage-tax.flat.recreation-aid.employee",
+        "de.wage-tax.flat.recreation-aid.spouse",
+        "de.wage-tax.flat.recreation-aid.child",
+        "de.wage-tax.flat.meal-allowance-excess"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__40a.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": [
+        "de.wage-tax.flat.short-term",
+        "de.wage-tax.flat.short-term.daily-limit",
+        "de.wage-tax.flat.hourly-limit",
+        "de.wage-tax.flat.minijob",
+        "de.wage-tax.flat.minijob-no-flat-pension",
+        "de.wage-tax.flat.farm-helpers",
+        "de.wage-tax.flat.foreign-pe-short-term"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__40b.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": [
+        "de.wage-tax.flat.pension-fund",
+        "de.wage-tax.flat.pension-fund.cap",
+        "de.wage-tax.flat.pension-fund.average-exclusion",
+        "de.wage-tax.flat.group-accident",
+        "de.wage-tax.flat.special-payments"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__41.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__41a.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": [
+        "de.wage-tax.return.yearly-limit",
+        "de.wage-tax.return.quarterly-limit"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__41b.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__42b.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__42d.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__42e.html",
+      "skills": [
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__43.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__43a.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-non-resident-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__43b.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "skills": [
+        "de-capital-gains",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__44a.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-non-resident-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__46.html",
+      "skills": [
+        "de-crypto-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-non-resident-tax",
+        "de-payroll",
+        "de-rental-income"
+      ],
+      "figures": [
+        "de.side-income.assessment-threshold",
+        "de.side-income.hardship-limit"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__49.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-non-resident-tax",
+        "de-rental-income",
+        "de-treaty-withholding-rates",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__4a.html",
+      "skills": [
+        "germany-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__4g.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__4h.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": [
+        "de.interest-barrier.ebitda-share"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__4j.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__5.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__50.html",
+      "skills": [
+        "de-non-resident-tax",
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__50a.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-non-resident-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": [
+        "de.nonresident.withholding.rate",
+        "de.nonresident.withholding.supervisory-board",
+        "de.nonresident.withholding.performance-floor"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-non-resident-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__50d.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-non-resident-tax",
+        "de-treaty-withholding-rates",
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__50g.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__50j.html",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "skills": [
+        "de-capital-gains",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-estimated-tax",
+        "de-payroll",
+        "de-trade-tax",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-employee-income-tax",
+        "de-estimated-tax",
+        "de-payroll-benefits",
+        "de-rental-income",
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__5b.html",
+      "skills": [
+        "de-corporate-tax",
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__6.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-payroll-benefits",
+        "de-rental-income",
+        "germany-bookkeeping",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.gwg.limit",
+        "de.gwg.register",
+        "de.gwg.pool.lower",
+        "de.gwg.pool.upper",
+        "de.car.business-use-min",
+        "de.car.private-use.monthly",
+        "de.car.ev.list-price-limit",
+        "de.provisions.discount-rate",
+        "de.rental.post-purchase-works"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__66.html",
+      "skills": [
+        "de-employee-income-tax"
+      ],
+      "figures": [
+        "de.child.benefit.monthly"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__7.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-rental-income",
+        "germany-bookkeeping",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.depreciation.declining.cap",
+        "de.depreciation.ev.first-year",
+        "de.depreciation.building.business",
+        "de.depreciation.building.after-2022",
+        "de.depreciation.building.1925-2022",
+        "de.depreciation.building.pre-1925",
+        "de.depreciation.residential-declining"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__7a.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__7b.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": [
+        "de.special-depreciation.rental-newbuild.rate",
+        "de.special-depreciation.rental-newbuild.cost-cap",
+        "de.special-depreciation.rental-newbuild.base-cap",
+        "de.special-depreciation.rental-newbuild.cost-cap-old",
+        "de.special-depreciation.rental-newbuild.base-cap-old"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__7g.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.investment-deduction.rate",
+        "de.investment-deduction.profit-limit",
+        "de.investment-deduction.total-cap",
+        "de.investment-deduction.special-depreciation"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__8.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": [
+        "de.wage-tax.benefit-in-kind.monthly-limit",
+        "de.wage-tax.staff-discount.allowance",
+        "de.wage-tax.staff-discount.price-reduction",
+        "de.wage-tax.company-car.commute",
+        "de.wage-tax.company-car.family-trip"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-rental-income",
+        "germany-bookkeeping",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.commute.rate-per-km",
+        "de.commute.cap",
+        "de.second-home.trip-rate-per-km",
+        "de.second-home.rent-cap.domestic",
+        "de.second-home.rent-cap.abroad",
+        "de.meals.full-day",
+        "de.meals.travel-day",
+        "de.meals.over-8-hours",
+        "de.meals.cut.breakfast",
+        "de.meals.cut.lunch-dinner"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__9a.html",
+      "skills": [
+        "de-employee-income-tax",
+        "de-partners-and-part-year",
+        "de-payroll"
+      ],
+      "figures": [
+        "de.employee.lump-sum",
+        "de.pension-income.lump-sum",
+        "de.other-income.lump-sum"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/__9b.html",
+      "skills": [
+        "de-einkommensteuer-freelancer"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estg/anlage_3.html",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/estzustv/__1.html",
+      "skills": [
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gaufzv_2017/__1.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gaufzv_2017/__2.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gaufzv_2017/__3.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gaufzv_2017/__4.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gaufzv_2017/__5.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gaufzv_2017/__6.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": [
+        "de.tp.small.goods",
+        "de.tp.small.services"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewo/__108.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewo/__14.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewo/__146.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewo/__6.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstdv_1955/__25.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/",
+      "skills": [
+        "de-einkommensteuer-freelancer"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/BJNR009790936.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__10.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__10a.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-trade-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.trade-tax.loss.share-above-base"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__11.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-partners-and-part-year",
+        "de-trade-tax",
+        "germany-formation",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.trade-tax.allowance",
+        "de.trade-tax.allowance.associations",
+        "de.trade-tax.base-rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__14.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__14a.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__14b.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__16.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-trade-tax",
+        "germany-formation",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.trade-tax.multiplier.minimum.from-2027"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__19.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": [
+        "de.trade-tax.prepayment.minimum"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__2.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-trade-tax",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__20.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__28.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__29.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__3.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__31.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__35a.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__35b.html",
+      "skills": [
+        "de-partners-and-part-year"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__36.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-trade-tax",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__4.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__5.html",
+      "skills": [
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__7.html",
+      "skills": [
+        "de-partners-and-part-year",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__8.html",
+      "skills": [
+        "de-trade-tax",
+        "germany-bookkeeping"
+      ],
+      "figures": [
+        "de.trade-tax.addback.allowance"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-partners-and-part-year",
+        "de-trade-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__11.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__13.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__19.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__2.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__3.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__35a.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__4.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__40.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__42a.html",
+      "skills": [
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__5.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__57e.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__5a.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__6.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__7.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": [
+        "de.gmbh.share-paid-in"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__8.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/anlage_2.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gnotkg/__105.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gnotkg/__107.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gnotkg/__125.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gnotkg/__126.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gnotkg/anlage_1.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gnotkg/anlage_2.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gwg_2017/__20.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gwg_2017/__3.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gwg_2017/__56.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gwg_2017/__59.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hdlregvfg/__3.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__1.html",
+      "skills": [
+        "germany-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__105.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__107.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__12.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__123.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__176.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__238.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__240.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__241a.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": [
+        "de.hgb.241a.revenue",
+        "de.hgb.241a.profit"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__242.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__243.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__244.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__245.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__246.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__247.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__249.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__250.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__251.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__252.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__253.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__255.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__256.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__256a.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__257.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__264.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__264a.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__264b.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__264d.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__265.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__266.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__267.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": [
+        "de.hgb.size.small.total",
+        "de.hgb.size.small.revenue",
+        "de.hgb.size.small.employees",
+        "de.hgb.size.medium.total",
+        "de.hgb.size.medium.revenue",
+        "de.hgb.size.medium.employees"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__267a.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": [
+        "de.hgb.size.micro.total",
+        "de.hgb.size.micro.revenue",
+        "de.hgb.size.micro.employees"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__268.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__274.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__274a.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__275.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__276.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__277.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__284.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__285.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__286.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__288.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__289.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__289b.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__290.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__293.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__297.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__315e.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__316.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__316a.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__318.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__319.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__321.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__325.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__325a.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__326.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__327.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__328.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__329.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__334.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__335.html",
+      "skills": [
+        "germany-financial-statements",
+        "germany-formation"
+      ],
+      "figures": [
+        "de.hgb.335.fine.reduced.micro",
+        "de.hgb.335.fine.reduced.small",
+        "de.hgb.335.fine.reduced.other"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__335b.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__342b.html",
+      "skills": [
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__342r.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__6.html",
+      "skills": [
+        "germany-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__9.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgbeg/art_88.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgbeg/art_92.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgbeg/art_93.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hreggebv/anlage.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ihkg/__2.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ihkg/__3.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/invstg_2018/__16.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/invstg_2018/__18.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/invstg_2018/__19.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": [
+        "de.exit-tax.funds.share",
+        "de.exit-tax.funds.cost"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/invstg_2018/__20.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": [
+        "de.funds.exempt.equity",
+        "de.funds.exempt.property",
+        "de.funds.exempt.foreign-property"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/invstg_2018/__21.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/invstg_2018/__56.html",
+      "skills": [
+        "de-capital-gains"
+      ],
+      "figures": [
+        "de.funds.old-units.allowance"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/jvkostg/anlage.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/konsverchev/",
+      "skills": [
+        "germany-to-switzerland-cross-border-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.artists-levy.rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__1.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__10.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__12.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__14.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__17.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__1a.html",
+      "skills": [
+        "de-partners-and-part-year",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__2.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__23.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-non-resident-tax",
+        "germany-formation",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.corp-tax.rate",
+        "de.corp-tax.rate.2028",
+        "de.corp-tax.rate.2029",
+        "de.corp-tax.rate.2030",
+        "de.corp-tax.rate.2031",
+        "de.corp-tax.rate.from-2032"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__24.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": [
+        "de.corp-tax.allowance.associations"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__31.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__32.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-non-resident-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__5.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__7.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__8.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__8a.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__8b.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": [
+        "de.corp-tax.participation.nondeductible-share",
+        "de.corp-tax.participation.min-holding"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__8c.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__8d.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksttg/__10.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksttg/__11.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksttg/__21.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksttg/__8.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksttg/__9.html",
+      "skills": [
+        "de-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__1.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__11.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__12.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__15.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__16.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__16a.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__24.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__25.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__27.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ksvg/__3.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/milog/__1.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/milog/__17.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/milog/__2.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/milog/__22.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/milov4/__1.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/milov5/__1.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.minimum-wage.2026",
+        "de.minimum-wage.2027"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/minstg/__1.html",
+      "skills": [
+        "de-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/minstg/__101.html",
+      "skills": [
+        "de-corporate-tax",
+        "germany-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/muschg_2018/__20.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2022/j1988_0010.jpg",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/partgg/__1.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/partgg/__4.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/partgg/__8.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/pbav_2025/__1.html",
+      "skills": [
+        "de-employee-income-tax",
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/publg/__1.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/publg/__2.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/publg/__3.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/publg/__5.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/publg/__6.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/publg/__9.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_10/__26.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__20.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__55.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__57.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__58.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_11/__59.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__25.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__28.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__28a.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__341.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.social.unemployment.rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__345b.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__346.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__349a.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__358.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_3/__360.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__14.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__18i.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__20.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.midijob.upper-limit",
+        "de.social.apprentice-low-pay-limit"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__22.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__23.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__23a.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__24.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__28a.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__28e.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__28f.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__28g.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__28h.html",
+      "skills": [
+        "de-social-contributions",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__28i.html",
+      "skills": [
+        "de-payroll",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__3.html",
+      "skills": [
+        "de-social-contributions",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__4.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__5.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__6.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions",
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__7.html",
+      "skills": [
+        "de-social-contributions",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__7a.html",
+      "skills": [
+        "de-payroll-benefits",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__8.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__188.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__223.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__226.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__234.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__240.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__241.html",
+      "skills": [
+        "de-employee-income-tax",
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.social.health.general-rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__242.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__243.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.social.health.reduced-rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__249.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__249b.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__250.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__257.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__44.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__5.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__6.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_5/__9.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__1.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__161.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__165.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__167.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__168.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__169.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__172.html",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__190a.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__197.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__2.html",
+      "skills": [
+        "de-social-contributions",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__4.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__5.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__6.html",
+      "skills": [
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_6/__7.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__130.html",
+      "skills": [
+        "de-uk-employer-first-hire"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__150.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__152.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__164.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__192.html",
+      "skills": [
+        "de-social-contributions",
+        "de-uk-employer-first-hire",
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__2.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__209.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__3.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/sgb_7/__6.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-estimated-tax",
+        "de-non-resident-tax",
+        "de-partners-and-part-year",
+        "de-payroll",
+        "de-trade-tax",
+        "de-treaty-withholding-rates",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.soli.exempt.single",
+        "de.soli.exempt.joint"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-estimated-tax",
+        "de-non-resident-tax",
+        "de-partners-and-part-year",
+        "de-payroll-benefits",
+        "de-payroll",
+        "germany-formation",
+        "germany-income-tax",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.soli.rate",
+        "de.soli.mitigation-rate"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__6.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-estimated-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svbezgrv_2025/__1.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svbezgrv_2025/__2.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svbezgrv_2025/__4.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html",
+      "skills": [
+        "de-employee-income-tax",
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-employee-income-tax",
+        "de-social-contributions",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svev/",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svev/__1.html",
+      "skills": [
+        "de-payroll-benefits",
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/svev/__2.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": [
+        "de.payroll.in-kind.meals.month",
+        "de.payroll.in-kind.breakfast.month",
+        "de.payroll.in-kind.lunch-dinner.month",
+        "de.payroll.in-kind.lodging.month"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__17a.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__31.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__33.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-formation",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.vat.small-invoice"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__34.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__34a.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__44.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__46.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__47.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__48.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/",
+      "skills": [
+        "de-einkommensteuer-freelancer"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/BJNR119530979.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__10.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__12.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-rental-income",
+        "de-vat-annual-and-special-schemes",
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.vat.rate.standard",
+        "de.vat.rate.zero-solar"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-bookkeeping",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-formation",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__14a.html",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__14b.html",
+      "skills": [
+        "germany-bookkeeping",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-vat-annual-and-special-schemes",
+        "germany-einvoice",
+        "germany-tax-optimization",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__16.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__17.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-bookkeeping",
+        "germany-formation",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.vat.returns.monthly-above",
+        "de.vat.returns.release-up-to",
+        "de.vat.returns.monthly-option-surplus"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18a.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.vat.recap.quarterly-limit",
+        "de.vat.recap.yearly.total-supplies",
+        "de.vat.recap.yearly.eu-supplies"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18j.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "skills": [
+        "de-einkommensteuer-freelancer",
+        "de-vat-annual-and-special-schemes",
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-formation",
+        "germany-income-tax",
+        "germany-tax-optimization",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.vat.small-business.prior-year",
+        "de.vat.small-business.current-year",
+        "de.vat.small-business.eu-turnover"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__19a.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__20.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-tax-optimization"
+      ],
+      "figures": [
+        "de.vat.cash-accounting.turnover"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__24.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+      "skills": [
+        "de-rental-income",
+        "de-vat-annual-and-special-schemes",
+        "germany-bookkeeping",
+        "germany-einvoice",
+        "germany-formation",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.vat.einvoice.transition-turnover"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__27a.html",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__3.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__3a.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__3c.html",
+      "skills": [
+        "de-vat-annual-and-special-schemes",
+        "germany-vat-return"
+      ],
+      "figures": [
+        "de.vat.distance-sales.threshold"
+      ]
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__4.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__6a.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__9.html",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/vermbg_2/__1.html",
+      "skills": [
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/vvg_2008/__193.html",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/wipro/__66a.html",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gkv-spitzenverband.de/media/dokumente/presse/zahlen_und_grafiken/20260101_Faktenblatt_Rechengroessen_Beitragsrecht.pdf",
+      "skills": [],
+      "figures": [
+        "de.social.care.child-reduction",
+        "de.social.total-rate",
+        "de.social.factor-f",
+        "de.minijob.pension-min-base",
+        "de.health.family-insurance.income-limit",
+        "de.health.employer-subsidy.max",
+        "de.care.employer-subsidy.max",
+        "de.care.employer-subsidy.max.saxony"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force",
+      "skills": [
+        "de-treaty-withholding-rates"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.handelsregister.de/rp_web/welcome.xhtml",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.minijob-zentrale.de/DE/die-minijobs/midijob",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.minijob-zentrale.de/DE/die-minijobs/minijob-mit-verdienstgrenze",
+      "skills": [
+        "de-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.minijob-zentrale.de/DE/fuer-gewerbetreibende/abgaben-und-steuern/detailseite",
+      "skills": [],
+      "figures": [
+        "de.minijob.commercial.total-max"
+      ]
+    },
+    {
+      "url": "https://www.minijob-zentrale.de/DE/fuer-haushalte/abgaben-und-fristen/detailseite.html",
+      "skills": [],
+      "figures": [
+        "de.minijob.household.total-max"
+      ]
+    },
+    {
+      "url": "https://www.recht.bund.de/bgbl/1/2023/240/regelungstext.pdf",
+      "skills": [
+        "de-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.recht.bund.de/bgbl/1/2024/108/VO.html",
+      "skills": [
+        "de-capital-gains",
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-payroll-benefits",
+        "germany-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf",
+      "skills": [
+        "de-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3",
+      "skills": [
+        "de-payroll-benefits",
+        "de-payroll",
+        "de-social-contributions"
+      ],
+      "figures": [
+        "de.social.ceiling.pension.year",
+        "de.social.ceiling.pension.month",
+        "de.social.ceiling.miners.year",
+        "de.social.ceiling.miners.month",
+        "de.social.jaeg.general.year",
+        "de.social.jaeg.general.month",
+        "de.social.jaeg.special.year",
+        "de.social.jaeg.special.month",
+        "de.social.reference-amount.year",
+        "de.social.reference-amount.month",
+        "de.social.average-earnings.provisional"
+      ]
+    },
+    {
+      "url": "https://www.recht.bund.de/bgbl/1/2025/363/VO.html",
+      "skills": [
+        "germany-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.recht.bund.de/bgbl/1/2026/14/VO.html",
+      "skills": [
+        "de-payroll-benefits"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.recht.bund.de/bgbl/1/2026/197/VO.html",
+      "skills": [
+        "de-corporate-tax",
+        "de-einkommensteuer-freelancer",
+        "de-trade-tax",
+        "germany-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.unternehmensregister.de/de",
+      "skills": [
+        "germany-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.unternehmensregister.de/de/so-gehts/uebermitteln",
+      "skills": [
+        "germany-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://xeinkauf.de/xrechnung/versionen-und-bundles/",
+      "skills": [
+        "germany-einvoice"
+      ],
+      "figures": []
+    }
+  ]
+}

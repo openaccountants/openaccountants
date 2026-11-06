@@ -1,0 +1,1161 @@
+{
+  "country": "austria",
+  "code": "AT",
+  "figure_count": 89,
+  "figures": [
+    {
+      "id": "at.it.bracket.zero.upper",
+      "item": "Income tax 2026, first bracket: taxable yearly income up to and including this amount is taxed at 0%. Indexed yearly for cold progression; 2025 was EUR 13,308. Per person (Austria taxes individuals, no joint filing).",
+      "value": "EUR 13,539",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "Grenzsteuersatz 2026 13.539  und darunter 0 Prozent über  13.539  bis",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-tax-overview"
+      ]
+    },
+    {
+      "id": "at.it.bracket.20.upper",
+      "item": "Income tax 2026: marginal rate 20% applies to taxable income over EUR 13,539 up to this amount.",
+      "value": "EUR 21,992",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "über  13.539  bis  21.992 20 Prozent über  21.992  bis  36.4",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.rate.20",
+      "item": "Income tax 2026: marginal rate of the second bracket (over EUR 13,539 to EUR 21,992).",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "bis  21.992 20 Prozent über  21.992  bis",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-svs-contributions",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.it.bracket.30.upper",
+      "item": "Income tax 2026: marginal rate 30% applies to taxable income over EUR 21,992 up to this amount.",
+      "value": "EUR 36,458",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "über  21.992  bis  36.458 30 Prozent über  36.458  bis  70.3",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.rate.30",
+      "item": "Income tax 2026: marginal rate of the third bracket (over EUR 21,992 to EUR 36,458).",
+      "value": "30%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "bis  36.458 30 Prozent über  36.458  bis",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.bracket.40.upper",
+      "item": "Income tax 2026: marginal rate 40% applies to taxable income over EUR 36,458 up to this amount. (The rate of this bracket was 41% in 2023 and 42% before.)",
+      "value": "EUR 70,365",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "über  36.458  bis  70.365 40 Prozent über  70.365  bis  104.",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.rate.40",
+      "item": "Income tax 2026: marginal rate of the fourth bracket (over EUR 36,458 to EUR 70,365).",
+      "value": "40%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "bis  70.365 40 Prozent über  70.365  bis",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.bracket.48.upper",
+      "item": "Income tax 2026: marginal rate 48% applies to taxable income over EUR 70,365 up to this amount.",
+      "value": "EUR 104,859",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "über  70.365  bis  104.859 48 Prozent über  104.859  bis  1.",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.rate.48",
+      "item": "Income tax 2026: marginal rate of the fifth bracket (over EUR 70,365 to EUR 104,859).",
+      "value": "48%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "bis  104.859 48 Prozent über  104.859  b",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.bracket.50.upper",
+      "item": "Income tax: the top threshold, NOT indexed. Income over EUR 104,859 up to this amount is taxed at 50%; income above it at 55%.",
+      "value": "EUR 1,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "über  104.859  bis  1.000.000 50 Prozent über  1.000.000 1)",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-income-tax",
+        "at-tax-overview"
+      ]
+    },
+    {
+      "id": "at.it.rate.50",
+      "item": "Income tax 2026: marginal rate of the sixth bracket (over EUR 104,859 to EUR 1,000,000).",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "bis  1.000.000 50 Prozent über  1.000.00",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.it.rate.55",
+      "item": "Income tax: marginal rate on the part of income over EUR 1 million a year. Temporary, for the years 2016 to 2029; afterwards 50%.",
+      "value": "55%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "ein höherer Steuersatz von 55 Prozent zur Anwendung. Um",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-tax-overview"
+      ]
+    },
+    {
+      "id": "at.it.indexation.2026",
+      "item": "Cold-progression indexation for 2026: the bracket limits were raised by two thirds of the calculated inflation rate. This is the uplift, not the inflation rate (2.6%).",
+      "value": "1.7333%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "um zwei Drittel der Inflationsrate, also um 1,7333 Prozent, angehoben:",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.it.example.40000",
+      "item": "Worked example on the official page: tariff income tax on taxable income of EUR 40,000 in 2026, before any tax credits (Absetzbeträge).",
+      "value": "EUR 7,447.20",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "quote": "Einkommensteuer 2026 7.447,20 Euro Einko",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.it.credit.verkehr",
+      "item": "Verkehrsabsetzbetrag (employee tax credit), 2026, per year, deducted from the tax, not from income. Employees only.",
+      "value": "EUR 496",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Verkehrsabsetzbetrag 496 Euro/Jahr  im Jahr 2026 (im Jahr 20",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.credit.verkehr.zuschlag",
+      "item": "Zuschlag zum Verkehrsabsetzbetrag (supplement for low-income employees), 2026, per year; granted in full if income does not exceed EUR 19,761 and phased out to nil at EUR 30,259. Only in the assessment.",
+      "value": "EUR 804",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Einschleifregelung) 804 Euro/Jahr  im Ja",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.credit.verkehr.zuschlag.full-limit",
+      "item": "Income up to which the full Zuschlag zum Verkehrsabsetzbetrag is given in the 2026 assessment; above it the supplement tapers (not a cliff).",
+      "value": "EUR 19,761",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "19.761 Euro (im Jahr 2025: 19.424 Euro) im Kalenderjahr nich",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.credit.verkehr.zuschlag.zero-at",
+      "item": "Income at which the Zuschlag zum Verkehrsabsetzbetrag has tapered to nil in 2026 (taper runs from EUR 19,761 to this amount).",
+      "value": "EUR 30,259",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "19.761 und 30.259 Euro (im Jah",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.credit.pensionist",
+      "item": "Pensionistenabsetzbetrag (pensioner tax credit), basic amount, 2026, per year, with phase-out rules.",
+      "value": "EUR 1,020",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Einschleifregelungen) 1.020 Euro/Jahr  i",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.credit.alleinverdiener.1child",
+      "item": "Alleinverdienerabsetzbetrag / Alleinerzieherabsetzbetrag (sole earner / single parent credit) with one child, 2026, per year.",
+      "value": "EUR 612",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Alleinverdienerabsetzbetrag mit einem Kind 4) 612 Euro/Jahr  im Jahr 2",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.credit.alleinverdiener.2children",
+      "item": "Alleinverdiener- / Alleinerzieherabsetzbetrag with two children, 2026, per year.",
+      "value": "EUR 828",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Alleinverdienerabsetzbetrag mit zwei Kindern 3) 4) 828 Euro/Jahr  im J",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.credit.alleinverdiener.each-further-child",
+      "item": "Increase of the Alleinverdiener- or Alleinerzieherabsetzbetrag for each further child, 2026.",
+      "value": "EUR 273",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "jeweils 273 Euro (im Jahr 2025: 268 Euro) für jede",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.familienbonus.minor",
+      "item": "Familienbonus Plus per minor child, per year (unchanged since 2022). A tax credit, deducted from the tax.",
+      "value": "EUR 2,000.16",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Familienbonus Plus pro minderjährigem Kind 4) 2.000,16 Euro/Jahr ab de",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.familienbonus.adult",
+      "item": "Familienbonus Plus per adult child (volljährig, with family allowance), per year, since 2024.",
+      "value": "EUR 700.08",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Familienbonus Plus pro volljährigem Kind 4) 700,08 Euro/Jahr ab dem Ja",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.kinderabsetzbetrag",
+      "item": "Kinderabsetzbetrag per child per MONTH, paid with the family allowance; frozen for 2025, 2026 and 2027 (no indexation in 2026 and 2027).",
+      "value": "EUR 70.90",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Kinderabsetzbetrag 4) 70,90 Euro/Monat und Kind  in den Jahr",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.kindermehrbetrag",
+      "item": "Kindermehrbetrag per child per year (since 2024), for low earners.",
+      "value": "EUR 700",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Kindermehrbetrag pro Kind 4) 700 Euro/Jahr ab dem",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.pendlereuro",
+      "item": "Pendlereuro from 2026: per km of the one-way distance home to work, per year, only if the commuter allowance (Pendlerpauschale) is due. Up to 2025 it was EUR 2.",
+      "value": "EUR 6",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "quote": "Pendlereuro (wenn Anspruch auf Pendlerpauschale besteht) 6 Euro (bis z",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.werbungskostenpauschale",
+      "item": "Werbungskostenpauschale: flat employment-expense allowance every active employee gets, per year, already built into payroll tax. From the Steuerbuch 2026, which covers the 2025 assessment.",
+      "value": "EUR 132",
+      "tax_year": "2025 assessment (Steuerbuch 2026); no 2026 change shown",
+      "source_url": "https://www.bmf.gv.at/dam/jcr:436f8c01-38e0-41bf-b904-c0e62a862bf1/251117_Steuerbuch2026_DE_BF.pdf",
+      "quote": "kostenpauschale in der Höhe von 132 Euro jährlich zu. Dieses",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.kirchenbeitrag.cap",
+      "item": "Church contributions (Kirchenbeiträge) deductible as Sonderausgaben up to this amount per year. From the Steuerbuch 2026 (2025 assessment).",
+      "value": "EUR 600",
+      "tax_year": "2025 assessment (Steuerbuch 2026)",
+      "source_url": "https://www.bmf.gv.at/dam/jcr:436f8c01-38e0-41bf-b904-c0e62a862bf1/251117_Steuerbuch2026_DE_BF.pdf",
+      "quote": "Kirchenbeiträge – bis zu 600 Euro Rz 558",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.kest.rates",
+      "item": "Special flat income tax on capital income (KESt): 25% (bank deposits and accounts) or 27.5% (other capital income, e.g. shares, crypto); generally final. The page prints both rates together.",
+      "value": "25% or 27.5%",
+      "tax_year": "2025 assessment (Steuerbuch 2026)",
+      "source_url": "https://www.bmf.gv.at/dam/jcr:436f8c01-38e0-41bf-b904-c0e62a862bf1/251117_Steuerbuch2026_DE_BF.pdf",
+      "quote": "der 25 %igen oder 27,5 %igen KESt und si",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.it.gfb.grundfreibetrag.profit-limit",
+      "item": "Gewinnfreibetrag: the basic part (Grundfreibetrag) is given on profits up to this amount, without any investment; once per person even with several businesses. Business years from 1 January 2024.",
+      "value": "EUR 33,000",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "Grundfreibetrag maximal für Gewinne bis 33.000 Euro (vor dem",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.gfb.rate.first",
+      "item": "Gewinnfreibetrag rate on profits up to EUR 33,000 (the Grundfreibetrag).",
+      "value": "15%",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "Gewinne bis zu 33.000 Euro: 15 Prozent die nä",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.gfb.grundfreibetrag.max",
+      "item": "Maximum Grundfreibetrag (15% of EUR 33,000); also available with flat-rate profit (Pauschalierung).",
+      "value": "EUR 4,950",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "Grundfreibetrag daher bis 4.950 Euro (vor dem",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.gfb.rate.second",
+      "item": "Investment-based Gewinnfreibetrag: rate on the next EUR 145,000 of profit above EUR 33,000; requires investment in qualifying assets and is NOT available with Pauschalierung.",
+      "value": "13%",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "die nächsten 145.000 Euro: 13 Prozent die näc",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.it.gfb.rate.third",
+      "item": "Investment-based Gewinnfreibetrag: rate on the next EUR 175,000 of profit.",
+      "value": "7%",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "die nächsten 175.000 Euro: 7 Prozent die näch",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.gfb.rate.fourth",
+      "item": "Investment-based Gewinnfreibetrag: rate on the next EUR 230,000 of profit.",
+      "value": "4.5%",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "die nächsten 230.000 Euro: 4,5 Prozent Für Ge",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.gfb.no-gfb-above",
+      "item": "Profit above which no Gewinnfreibetrag is available.",
+      "value": "EUR 583,000",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "Für Gewinne über 583.000 Euro (vor dem 1. Jän",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.it.gfb.max",
+      "item": "Maximum total Gewinnfreibetrag under the rate ladder.",
+      "value": "EUR 46,400",
+      "tax_year": "business years beginning on or after 1 January 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "quote": "Staffelung somit 46.400 Euro (vor dem 1.",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.basispausch.turnover-limit",
+      "item": "Basispauschalierung (flat-rate business expenses, income tax): prior-year turnover limit from 2026 (EUR 320,000 in 2025, EUR 220,000 before).",
+      "value": "EUR 420,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsliste/basispauschalierung-hoehere-grenzen-ab-2025-und-2026.html",
+      "quote": "ab 2026 sogar bei 420.000 Euro (jeweils Vorja",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.basispausch.rate.general",
+      "item": "Basispauschalierung flat expense rate for all other activities from 2026 (13.5% in 2025, 12% before).",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsliste/basispauschalierung-hoehere-grenzen-ab-2025-und-2026.html",
+      "quote": "auf 15 Prozent ab 2026 . Damit",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.basispausch.rate.6",
+      "item": "Basispauschalierung flat expense rate for consulting, supervisory board work, scientific, literary, teaching activities (unchanged).",
+      "value": "6%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsliste/basispauschalierung-hoehere-grenzen-ab-2025-und-2026.html",
+      "quote": "bleibt bei 6 Prozent. Für alle",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax",
+        "at-payroll-and-social-insurance"
+      ]
+    },
+    {
+      "id": "at.it.basispausch.max-expenses",
+      "item": "Maximum flat business expenses under Basispauschalierung from 2026.",
+      "value": "EUR 63,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsliste/basispauschalierung-hoehere-grenzen-ab-2025-und-2026.html",
+      "quote": "ab 2026 sind dies bis zu 63.000 Euro. Mehr Sp",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.vat.vorsteuerpausch.rate",
+      "item": "Vorsteuerpauschalierung (flat input VAT) that can accompany Basispauschalierung: share of yearly net turnover.",
+      "value": "1.8%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsliste/basispauschalierung-hoehere-grenzen-ab-2025-und-2026.html",
+      "quote": "Diese beträgt 1,8 Prozent des Jahresnettoumsatzes . Durch di",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.vat.vorsteuerpausch.max",
+      "item": "Maximum flat input VAT under Vorsteuerpauschalierung from 2026.",
+      "value": "EUR 7,560",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsliste/basispauschalierung-hoehere-grenzen-ab-2025-und-2026.html",
+      "quote": "ab 2026 bis zu 7.560 Euro. Welche Ausgab",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.it.gwg.limit",
+      "item": "Geringwertige Wirtschaftsgüter (low-value assets): a depreciable asset costing not more than this can be expensed immediately. Net of VAT if input VAT is deductible; gross for small businesses under the VAT exemption. Business years from 1 January 2023 (EUR 800 before).",
+      "value": "EUR 1,000",
+      "tax_year": "business years beginning on or after 1 January 2023",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/geringwertige-wirtschaftsgueter.html",
+      "quote": "nicht mehr als 1.000 Euro  (erstmals für",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.it.car.angemessenheitsgrenze",
+      "item": "Angemessenheitsgrenze (luxury limit) for cars and estate cars: acquisition cost recognised for tax at most this amount; depreciation and other value-based costs only on this amount.",
+      "value": "EUR 40,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html",
+      "quote": "grundsätzlich mit 40.000 Euro (\"Angemessenheitsgrenze\") limi",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.it.car.max-afa",
+      "item": "Resulting maximum yearly depreciation on a car (EUR 40,000 over the required 8-year life), as the page prints it.",
+      "value": "EUR 5,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html",
+      "quote": "höchstens 40.000/8 = 5.000 Euro). Auch a",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-transfer-pricing",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.it.car.business-use",
+      "item": "Car running costs are business expenses only if more than this share of yearly km is business travel.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html",
+      "quote": "Werden mehr als 50 Prozent der jährlichen Kilometer für betr",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.rate.standard",
+      "item": "VAT (Umsatzsteuer) standard rate (Normalsteuersatz).",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html",
+      "quote": "Der Normalsteuersatz der Umsatzsteuer beträgt 20 Prozent. Fü",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-svs-contributions",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.rate.4-9",
+      "item": "Reduced VAT rate for selected basic foods (e.g. bread, butter, eggs, milk) listed in Anlage 3 by Combined Nomenclature code. Deliveries only, not restaurant services. In force from 1 July 2026; before that these foods were at 10%.",
+      "value": "4.9%",
+      "tax_year": "from 1 July 2026",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html",
+      "quote": "Der 4,9-prozentige Steuersatz gilt für ausgewählte Nahrungsmittel, wie",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.rate.4-9.start",
+      "item": "Start date of the 4.9% food rate, from the BMF information page (written before enactment in 'soll' form; the USP rate page, updated 1 July 2026, lists 4.9% as current).",
+      "value": "1 July 2026",
+      "tax_year": "from 1 July 2026",
+      "source_url": "https://www.bmf.gv.at/rechtsnews/steuern-rechtsnews/aktuelle-infos-und-erlaesse/fachinformationen---umsatzsteuer/umsatzsteuersenkung-auf-ausgewaehlte-nahrungsmittel.html",
+      "quote": "Ab 1. Juli 2026 soll (zeitlich unbefristet) ein ermäßigter Steuersatz iHv 4,9% für ausgewä",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.rate.10",
+      "item": "Reduced VAT rate 10%: e.g. residential letting, accommodation, camping pitches, waste collection, books, newspapers, food (other than the 4.9% list).",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html",
+      "quote": "Der 10-prozentige Steuersatz gilt z.B. für: Die Ve",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-income-tax",
+        "at-tax-overview",
+        "at-transfer-pricing",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.rate.13",
+      "item": "Reduced VAT rate 13%: e.g. live animals, live plants, firewood, artists' turnover, film and circus shows, sports event tickets.",
+      "value": "13%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html",
+      "quote": "Der 13-prozentige Steuersatz gilt z.B. für Die Lie",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.klu.limit",
+      "item": "Kleinunternehmerregelung (small business VAT exemption, regime since 1 January 2025): the limit must not be exceeded in the previous NOR the current calendar year. Gross: the whole agreed consideration counts, no notional VAT is deducted. Was EUR 35,000 net to 31 December 2024.",
+      "value": "EUR 55,000",
+      "tax_year": "since 1 January 2025, applies 2026",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html",
+      "quote": "Kleinunternehmergrenze in Höhe von 55.000 Euro (bis 31. Deze",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.klu.tolerance",
+      "item": "Kleinunternehmer tolerance: in the year the limit is exceeded, the exemption still applies to the end of that year if the limit is exceeded by not more than 10%; it is lost from the following year in any case. Above 10%, the exemption ends with the transaction that crosses it and all later ones (no retroactive loss).",
+      "value": "10%",
+      "tax_year": "since 1 January 2025, applies 2026",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html",
+      "quote": "wenn die Grenze um nicht mehr als 10 Prozent überschritten wird. Beisp",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-income-tax",
+        "at-tax-overview",
+        "at-transfer-pricing",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.klu.old-limit",
+      "item": "HISTORY: Kleinunternehmergrenze up to 31 December 2024, net with notional VAT and retroactive loss for the whole year. Do not use for 2026.",
+      "value": "EUR 35,000",
+      "tax_year": "to 31 December 2024",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html",
+      "quote": "Die Kleinunternehmergrenze beträgt 35.000 Euro netto, wobei",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.vat.klu.option-binding",
+      "item": "Waiver of the small business exemption (Option zur Steuerpflicht, form U12) binds for this many years.",
+      "value": "five years",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html",
+      "quote": "bindet für fünf Jahre. Hinweis",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.vat.uva.monthly-threshold",
+      "item": "UVA (VAT return) filing period: monthly if prior-year turnover exceeded this amount; otherwise quarterly. A new business estimating first-year turnover above it files monthly from the start.",
+      "value": "EUR 100,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html",
+      "quote": "Kalenderjahr 100.000 Euro überstiegen haben, sind zur monatlichen Abga",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.uva.quarterly-band",
+      "item": "UVA quarterly obligation: prior-year turnover over EUR 55,000 but not over EUR 100,000. At or below EUR 55,000 no UVA is required unless the tax office orders it, or there is a refund (Überschuss), or payment is late.",
+      "value": "EUR 55,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html",
+      "quote": "Übersteigt der Vorjahresumsatz 55.000 Euro, aber nicht 100.000 Euro, sind vierte",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.uva.due",
+      "item": "UVA due date and payment date: the 15th of the second month after the period (quarterly: 15 May, 15 August, 15 November, 15 February).",
+      "value": "15th of the second following month",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html",
+      "quote": "spätestens am 15. (Fälligkeitstag) des zweitfolgenden Kalendermonats einzureiche",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.vat.annual-return.due",
+      "item": "Annual VAT return (U1) due 30 April of the following year on paper, 30 June if filed electronically via FinanzOnline (electronic filing is the rule). Tax advisers usually have longer.",
+      "value": "30 June",
+      "tax_year": "2026 return due in 2027",
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/umsatzsteuervoranmeldung-und-umsatzsteuererklaerung.html",
+      "quote": "bis 30. April des Folgejahres bzw. bei elektronischer Übermittlung über FinanzOnline bis 30. Juni des Folgejah",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-income-tax"
+      ]
+    },
+    {
+      "id": "at.vat.annual-return.threshold",
+      "item": "Annual VAT return obligation in principle where yearly turnover exceeds this amount (small businesses under the exemption file no UVA and no annual return).",
+      "value": "EUR 55,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/umsatzsteuervoranmeldung-und-umsatzsteuererklaerung.html",
+      "quote": "deren Jahresumsatz 55.000 Euro übersteigt, sind gr",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.cit.rate",
+      "item": "Körperschaftsteuer (corporate income tax) rate, flat, from 2024 (25% to 2022, 24% in 2023).",
+      "value": "23%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html",
+      "quote": "Die Körperschaftsteuer beträgt 23 Prozent  (bis zu",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-tax-overview",
+        "at-transfer-pricing"
+      ]
+    },
+    {
+      "id": "at.cit.prepayment.dates",
+      "item": "KöSt prepayments (set by notice) fall due on 15 February, 15 May, 15 August and 15 November.",
+      "value": "15 February, 15 May, 15 August, 15 November",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html",
+      "quote": "15. Februar, 15. Mai, 15. August und 15. November. Die",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.cit.kest.dividend",
+      "item": "Dividends paid by a company to individual shareholders bear KESt at this rate; final unless the shareholder opts for regular assessment.",
+      "value": "27.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html",
+      "quote": "Kapitalertragsteuer (das sind 27,5 Prozent) belast",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-income-tax",
+        "at-tax-overview",
+        "at-transfer-pricing"
+      ]
+    },
+    {
+      "id": "at.cit.min.rate",
+      "item": "Mindestkörperschaftsteuer: per calendar year 5% of the statutory minimum share capital, paid quarterly; due even with a loss; credited against later KöSt above the minimum.",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html",
+      "quote": "Sie beträgt pro Kalenderjahr 5 Prozent des gesetzlichen Mind",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-income-tax",
+        "at-transfer-pricing"
+      ]
+    },
+    {
+      "id": "at.cit.min.gmbh",
+      "item": "Mindestkörperschaftsteuer for a GmbH: per calendar year (5% of the EUR 10,000 minimum share capital), paid in quarterly instalments. Per YEAR, not per quarter.",
+      "value": "EUR 500",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html",
+      "quote": "Mindeststammkapitals von 10.000 Euro, insgesamt somit 500 Euro. Weiter",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-transfer-pricing"
+      ]
+    },
+    {
+      "id": "at.cit.min.ag",
+      "item": "Mindestkörperschaftsteuer for an AG: 5% of the EUR 70,000 minimum capital. The page's wording says 'kalendervierteljährlich zu entrichtende'; 5% of EUR 70,000 is a YEARLY amount paid in quarterly instalments, like the GmbH figure.",
+      "value": "EUR 3,500",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html",
+      "quote": "beträgt somit 3.500 Euro. Das Mindeststa",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "at.co.ag.min-capital",
+      "item": "Minimum share capital (Mindestgrundkapital) of an Aktiengesellschaft.",
+      "value": "EUR 70,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html",
+      "quote": "Aktiengesellschaft (AG) beträgt 70.000 Euro. Die d",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax"
+      ]
+    },
+    {
+      "id": "at.co.gmbh.min-capital",
+      "item": "Minimum share capital (Stammkapital) of a GmbH (as KöSt page states it, basis of the minimum tax).",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html",
+      "quote": "beschränkter Haftung) beträgt 10.000 Euro. Die kal",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-tax-overview",
+        "at-transfer-pricing",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.co.gmbh.min-capital.lexikon",
+      "item": "GmbH: share capital must be at least this amount; in principle half of it must be paid in cash at formation (the page says 'die Hälfte', it does not print EUR 5,000).",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html",
+      "quote": "Das Stammkapital einer GmbH muss mindestens 10.000 Euro betragen. Davo",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-tax-overview",
+        "at-transfer-pricing",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.svs.min-base.gsvg",
+      "item": "SVS minimum contribution base (Mindestbeitragsgrundlage) 2026, per MONTH, pension and health insurance, trade (Gewerbetreibende) and other freelancers under GSVG. Also the provisional base in the first three years.",
+      "value": "EUR 551.10",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "quote": "Mindest 551,10 101,95 1 Gewerbetreibende",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-payroll-and-social-insurance",
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.max-base",
+      "item": "SVS maximum contribution base (Höchstbeitragsgrundlage) 2026, per MONTH, pension and health insurance.",
+      "value": "EUR 8,085.00",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "quote": "Höchst 8.085,00 1.495,73 Mindest 551,10",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.pv.rate.gsvg",
+      "item": "SVS pension insurance rate under GSVG (trade and other freelancers).",
+      "value": "18.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "quote": "Gewerbetreibende/-gesellschafter 18,5 % Höchst 8.0",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.pv.min-contribution",
+      "item": "Monthly pension contribution at the 2026 minimum base, GSVG (18.5% of EUR 551.10), as the SVS table prints it.",
+      "value": "EUR 101.95",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "quote": "Mindest 551,10 101,95 1 Gewerbetreibende",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.pv.max-contribution",
+      "item": "Monthly pension contribution at the 2026 maximum base, GSVG, as the SVS table prints it.",
+      "value": "EUR 1,495.73",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "quote": "Höchst 8.085,00 1.495,73 Mindest 551,10",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.pv.rate.fsvg",
+      "item": "SVS pension insurance rate under FSVG (doctors, pharmacists, patent attorneys, civil engineers).",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816638",
+      "quote": "beträgt der Beitragssatz in der Pensionsversicherung 20 Prozent . Beit",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-cross-border",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-svs-contributions",
+        "at-tax-overview",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.svs.kv.rate",
+      "item": "SVS health insurance rate for trade and active freelancers under GSVG (from 2020).",
+      "value": "6.8%",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816638",
+      "quote": "in der Krankenversicherung 6,8 Prozent . Sind",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.kv.min-contribution",
+      "item": "Monthly health contribution at the 2026 minimum base (6.8% of EUR 551.10), as printed. In the first two years fixed for Gewerbetreibende.",
+      "value": "EUR 37.48",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "quote": "Mindest1) 551,10 37,48 1 Aktive Freiberu",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.kv.max-contribution",
+      "item": "Monthly health contribution at the 2026 maximum base, as printed.",
+      "value": "EUR 549.79",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "quote": "Höchst 8.085,00 549,79 Bruttopension ink",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.uv.monthly",
+      "item": "SVS accident insurance, fixed monthly amount 2026, independent of income. NOTE: the SVS web pages print 12,96; the SVS 2026 contribution PDF prints 12,95. Confirm before use.",
+      "value": "EUR 12.96",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816638",
+      "quote": "Er beträgt im Jahr 2026 EUR 12,96 monatlich. Der B",
+      "read_on": "2026-09-22",
+      "used_by": []
+    },
+    {
+      "id": "at.svs.vorsorge.rate",
+      "item": "Selbständigenvorsorge (self-employed severance provision): share of the provisional health insurance contribution base.",
+      "value": "1.53%",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816638",
+      "quote": "Der Beitrag zur Selbständigenvorsorge beträgt 1,53 Prozent der vorläuf",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-corporate-income-tax",
+        "at-income-tax",
+        "at-payroll-and-social-insurance",
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.first3.min-base",
+      "item": "Provisional base in the first three years of self-employment 2026: the minimum base, per month, pension and health, for Gewerbetreibende.",
+      "value": "EUR 551.10",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816638",
+      "quote": "im Jahr 2026 EUR 551,10 monatlich in der Pensionsversicherung und EUR",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-payroll-and-social-insurance",
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.provisional.factor",
+      "item": "Revaluation factor 2026 used to derive the provisional contribution base from the income of the third prior year (2023 income for 2026).",
+      "value": "1.181",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal",
+      "quote": "Faktor 2026 : 1,181 ). Diesen",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.versicherungsgrenze.neue-selbstaendige",
+      "item": "Versicherungsgrenze 2026 for Neue Selbständige: yearly income threshold for compulsory SVS insurance.",
+      "value": "EUR 6,613.20",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal",
+      "quote": "Versicherungsgrenze im Jahr 2026 - EUR 6.613,20 Ge",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.kleinunternehmer.income",
+      "item": "SVS exemption for small sole traders and doctors (Ausnahme von der Pflichtversicherung) 2026: yearly income limit (AND the turnover limit below).",
+      "value": "EUR 6,613.20",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal",
+      "quote": "Einkommensgrenze: EUR 6.613,20 Umsa",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.svs.kleinunternehmer.turnover",
+      "item": "SVS exemption for small sole traders and doctors 2026: yearly turnover limit (AND the income limit). Same number as the VAT Kleinunternehmer limit, but a separate social insurance rule.",
+      "value": "EUR 55,000.00",
+      "tax_year": 2026,
+      "source_url": "https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal",
+      "quote": "Umsatzgrenze: EUR 55.000,00 Hier fi",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-svs-contributions"
+      ]
+    },
+    {
+      "id": "at.vat.invoice.kleinbetrag",
+      "item": "Kleinbetragsrechnung: simplified invoice allowed where the invoice total (GROSS, including VAT) does not exceed this amount, OR (since the 2024 amendment) whatever the amount if the business is an exempt small business. Recipient name/address, invoice number and VAT ID may be omitted; gross amount plus rate suffices.",
+      "value": "EUR 400",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/vorsteuerabzug-und-rechnung/kleinbetragsrechnungen.html",
+      "quote": "Bruttobetrag inkl. Umsatzsteuer) von 400 Euro oder ist das U",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-payroll-and-social-insurance",
+        "at-vat-return"
+      ]
+    },
+    {
+      "id": "at.vat.oss.threshold",
+      "item": "EU-wide threshold for intra-Community distance sales plus electronic/telecom/broadcast services to consumers: a business established in only one member state may tax them at home while the combined total is at most this amount per year; above it, destination-country VAT applies (declared via EU-OSS or local registration). EU-wide, not per country.",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/innergemeinschaftlicher-versandhandel.html",
+      "quote": "von insgesamt maximal 10.000 Euro tätigt. Auf",
+      "read_on": "2026-09-22",
+      "used_by": [
+        "at-company-formation",
+        "at-corporate-income-tax",
+        "at-tax-overview",
+        "at-transfer-pricing",
+        "at-vat-return"
+      ]
+    }
+  ]
+}

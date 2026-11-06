@@ -1,0 +1,842 @@
+{
+  "country": "vietnam",
+  "code": "VN",
+  "figure_count": 74,
+  "figures": [
+    {
+      "id": "vn.vat.law.current",
+      "item": "The VAT law in force: Law on Value Added Tax No. 48/2024/QH15 of 26 November 2024, in force from 1 July 2025. It replaced Law 13/2008/QH12 and its amendments. Cite it as Law 48/2024/QH15 as amended (by Resolution 204/2025/QH15, Law 90/2025/QH15, Law 149/2025/QH15 and Law 09/2026/QH16). Source is the National Assembly Office consolidated text 12/VBHN-VPQH (February 2026), which does NOT yet include Law 09/2026/QH16.",
+      "value": "Law 48/2024/QH15, in force 1 July 2025",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Luật Thuế giá trị gia tăng số 48/2024/QH15 ngày 26 tháng 11 năm 2024 của Quốc hội, có hiệu lực kể từ ngày 01 tháng 7 năm 2025",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.law.old-repealed",
+      "item": "The old VAT Law 13/2008/QH12 (as amended by Laws 31/2013/QH13, 71/2014/QH13 and others) ceased to have effect when Law 48/2024/QH15 took effect on 1 July 2025. A Guide must not cite Law 13/2008/QH12 or its decrees (209/2013, 49/2022) or Circular 219/2013 as current law. Quote is from the effective-date article of the consolidated text (OCR-damaged diacritics on that page, the article reads 'Luật Thuế giá trị gia tăng số 13/2008/QH12 ... hết hiệu lực').",
+      "value": "Law 13/2008/QH12 repealed",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Lu~t Thu~ gia tri gia tang s6 13/2008/QH 12",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.law.149-2025",
+      "item": "Law 149/2025/QH15 of 11 December 2025 amended the VAT Law (among other things it repealed Art. 12(3) and rewrote Art. 5(25)); in force from 1 January 2026.",
+      "value": "Law 149/2025/QH15, in force 1 January 2026",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Luật số 149/2025/QH15 ngày 11 tháng 12 năm 2025 của Quốc hội sửa đổi, bổ sung một số điều của Luật Thuế giá trị gia tăng, có hiệu lực kể từ ngày 01 tháng 01 năm 2026",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.law.09-2026",
+      "item": "Law 09/2026/QH16 (passed 24 April 2026) amended Art. 5(25) of the VAT Law: the household/individual business revenue threshold is no longer a figure in the law but a level set by the Government. Its Articles 1, 2 and 3 apply from 1 January 2026 (retroactively); the rest from the date it was passed.",
+      "value": "VAT change applies from 1 January 2026",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/27/469536-1779329464_v1_1779843299_signed.pdf",
+      "quote": "Quy định tại các điều 1, 2 và 3 của Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.decree.181",
+      "item": "Implementing decree for the VAT Law: Decree 181/2025/ND-CP of 1 July 2025 (in force 1 July 2025), amended by Decree 359/2025/ND-CP (31 Dec 2025) and Decree 144/2026/ND-CP (in force 20 June 2026). It replaced Decree 209/2013 and Decree 49/2022. Detailed MOF guidance is Circular 69/2025/TT-BTC.",
+      "value": "Decree 181/2025/ND-CP of 1 July 2025",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "Số: 181/2025/NĐ-CP Hà Nội, ngày 01 tháng 7 năm 2025",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.decree.144-2026.start",
+      "item": "Decree 144/2026/ND-CP (5 May 2026) amends Decree 181/2025 (already amended by Decree 359/2025): adds insurance types to the not-subject list, rewrites the agent-commission rule, the revenue base for input-VAT apportionment and the deferred-payment rule for input credit. In force from 20 June 2026.",
+      "value": "20 June 2026",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/18/469482-1778814209_v1_1779067294_signed.pdf",
+      "quote": "Nghị định này có hiệu lực thi hành kể từ ngày 20 tháng 6 năm 2026",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.zero",
+      "item": "0% rate: exported goods and services (goods sold to persons abroad and consumed outside Vietnam, sales into non-tariff zones, international transport, etc.), subject to the exclusions in Art. 9(1)(d). 0% is a taxable rate with input credit and refund, not an exemption.",
+      "value": "0%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Điều 9. Thuế suất 1. Mức thuế suất 0% áp dụng đối với hàng hóa, dịch vụ sau đây",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.zero.exclusions",
+      "item": "Cases where 0% does NOT apply even if supplied abroad: technology transfer and IP transfers abroad, reinsurance abroad, credit services, capital transfers, derivatives, postal and telecom services, certain exported resources/minerals (Art. 5(23)), tobacco/alcohol/beer imported then re-exported, domestic fuel sold into non-tariff zones, cars sold into non-tariff zones.",
+      "value": "not 0%: listed exclusions",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "d) Các trường hợp không áp dụng thuế suất 0% bao gồm: chuyển giao công nghệ, chuyển nhượng quyền sở hữu trí tuệ ra nước ngoài",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.rate.reduced",
+      "item": "5% (reduced) rate for listed goods and services in Art. 9(2): clean water (not bottled), fertiliser and pesticides, agricultural dredging services, unprocessed agricultural produce at the commercial stage, rubber latex, handicrafts of jute/bamboo etc., fishing vessels and farm machinery, medical equipment and medicines, teaching aids, traditional performing arts, children's toys and books, science and technology services, social housing.",
+      "value": "5%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "2. Mức thuế suất 5% áp dụng đối với hàng hóa, dịch vụ sau đây: a) Nước sạch",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.standard",
+      "item": "Standard rate (statutory) for goods and services not at 0% or 5%, INCLUDING services supplied by foreign suppliers without a permanent establishment to Vietnamese buyers through e-commerce and digital platforms. See vn.vat.rate.temporary-8 for the temporary cut to 8% that applies to many 10% supplies until 31 Dec 2026.",
+      "value": "10%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Mức thuế suất 10% áp dụng đối với hàng hóa, dịch vụ không quy định tại khoản 1 và khoản 2 Điều này",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.standard.foreign-digital",
+      "item": "Foreign suppliers without a permanent establishment selling services to organisations and individuals in Vietnam via e-commerce and digital platforms fall under the 10% rate (Art. 9(3)). The pack does not prove whether the temporary 8% applies to them; do not state it.",
+      "value": "10%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "10% áp dụng đối với hàng hóa, dịch vụ không quy định tại khoản 1 và khoản 2 Điều này, bao gồm cả dịch vụ được các nhà cung cấp nước ngoài",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.temporary-8",
+      "item": "Temporary reduction: 2 percentage points off the rate for the goods and services in Art. 9(3) (the 10% group), leaving 8%, from 1 July 2025 to 31 December 2026, under National Assembly Resolution 204/2025/QH15 and Decree 174/2025/ND-CP. Excluded groups stay at 10%: telecoms, finance, banking, securities, insurance, real estate, metal products, mining products (except coal), goods and services subject to special consumption tax (except petrol). The detailed lists are in the annexes to Decree 174/2025/ND-CP.",
+      "value": "8%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "(còn 8%), trừ một số nhóm hàng hóa, dịch vụ sau: viễn thông",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.temporary-8.cut",
+      "item": "Size of the temporary reduction for credit-method businesses: 2 percentage points off the 10% rate (Resolution 204/2025/QH15). Same rule as vn.vat.rate.temporary-8; this entry is the cut, not the resulting rate.",
+      "value": "2% cut",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Giảm 2% thuế suất thuế giá trị gia tăng, áp dụng đối với các nhóm hàng hóa",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.temporary-8.period",
+      "item": "Period of the temporary 8% rate and the 20% cut in direct-method percentages: 1 July 2025 to 31 December 2026 inclusive (Decree 174/2025/ND-CP effective dates). After 31 Dec 2026 the rate reverts to 10% unless a new resolution extends it; none was found on 17 Oct 2026.",
+      "value": "1 July 2025 to 31 December 2026",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45374/57334-1-2025895-896174-2025-nd-cp.pdf",
+      "quote": "Nghị định này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2025 đến hết ngày 31 tháng 12 năm 2026",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.temporary-8.decree",
+      "item": "Credit-method businesses apply 8% to the goods and services that qualify for the reduction under Decree 174/2025/ND-CP Art. 1(1).",
+      "value": "8%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45374/57334-1-2025895-896174-2025-nd-cp.pdf",
+      "quote": "huế giá trị gia tăng 8% đối với hàng hóa, dịch vụ quy định tại khoản 1 Điều này",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.rate.temporary-direct-cut",
+      "item": "Direct-method businesses (including household and individual businesses) that pay VAT as a percentage of revenue get a 20% reduction of that percentage on invoices for goods and services that qualify for the cut, 1 July 2025 to 31 December 2026. It is 20% OF the percentage (e.g. of the 1% or 5% rate), not 20 percentage points. Do not compute the reduced percentage in a Guide.",
+      "value": "20% reduction of the direct-method percentage",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45374/57334-1-2025895-896174-2025-nd-cp.pdf",
+      "quote": "được giảm 20% mức tỷ lệ % để tính thuế giá trị gia tăng khi thực hiện xuất hóa đơn",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.zero.conditions.goods",
+      "item": "Conditions for 0% on exported goods (Decree 181 Art. 18(1)): (a) a contract for the sale, processing or export entrustment; (b) non-cash payment documents; (c) a customs declaration. All three are needed (AND).",
+      "value": "contract, non-cash payment and customs declaration",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "1. Đối với hàng hóa xuất khẩu, phải có: a) Hợp đồng bán, gia công hàng hóa xuất khẩu",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.zero.conditions.goods.customs",
+      "item": "Third condition for 0% on exported goods: a customs declaration as prescribed (same rule as vn.vat.zero.conditions.goods).",
+      "value": "customs declaration required",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "b) Chứng từ thanh toán không dùng tiền mặt đối với hàng hóa xuất khẩu. c) Tờ khai hải quan theo quy định.",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.zero.conditions.services",
+      "item": "Conditions for 0% on exported services (Decree 181 Art. 18(2), other than transport, aviation and maritime services which have their own lists): (a) a service contract with an organisation or individual abroad or in a non-tariff zone; AND (b) non-cash payment documents. No customs declaration is needed for services.",
+      "value": "contract with foreign party and non-cash payment",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "2. Đối với dịch vụ xuất khẩu, trừ quy định tại khoản 3, 4, 5 Điều này, phải có: a) Hợp đồng cung cấp dịch vụ",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.zero.credit-conditions.export",
+      "item": "Input-VAT credit on exports additionally needs (Law Art. 14(2)(c)): a contract with the foreign party, a sales invoice, non-cash payment documents, the customs declaration for goods, and packing list, bill of lading and insurance documents (if any).",
+      "value": "contract, invoice, non-cash payment, customs declaration",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "hợp đồng ký kết với bên nước ngoài về việc bán, gia công hàng hóa, cung cấp dịch vụ; hóa đơn bán hàng hóa, cung cấp dịch vụ; chứng từ thanh toán không dùng tiền mặt",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.exempt.household-threshold",
+      "item": "Household and individual businesses with annual revenue up to the threshold are NOT SUBJECT to VAT (and not subject to PIT). Since Law 09/2026/QH16 the law no longer fixes the amount; the Government sets it. Decree 141/2026/ND-CP replaced 'VND 500 million' with 'VND 1 billion' ('01 tỷ đồng') in Decree 68/2026/ND-CP Art. 3 and elsewhere, with effect from 1 January 2026. Revenue AT the threshold is still not subject ('trở xuống' = or less). This is an annual revenue test per household/individual, not a registration threshold for companies.",
+      "value": "VND 1 billion",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf",
+      "quote": "Sửa đổi cụm từ “500 triệu đồng” thành “01 tỷ đồng” tại Điều 3",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.household-threshold.start",
+      "item": "Start date of the VND 1 billion household threshold: Decree 141/2026/ND-CP has effect from 1 January 2026 (issued 29 April 2026, retroactive).",
+      "value": "1 January 2026",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf",
+      "quote": "Nghị định này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.household-threshold.superseded",
+      "item": "TRAP: Decree 68/2026/ND-CP as published (5 March 2026) and the consolidated VAT Law 12/VBHN-VPQH both print 500 million (from Law 149/2025/QH15). That figure was replaced by 1 billion from 1 January 2026 (see vn.vat.exempt.household-threshold). Never state 500 million or any older figure as current. Quote shows the old wording in Decree 68.",
+      "value": "VND 500 million (superseded)",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/18/469047-1773796836_v1_1773803477_signed.pdf",
+      "quote": "Hộ kinh doanh, cá nhân kinh doanh có hoạt động sản xuất, kinh doanh có mức doanh thu năm từ 500 triệu đồng trở xuống",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.exempt.household-threshold.law-delegation",
+      "item": "VAT Law Art. 5(25) as amended by Law 09/2026/QH16: goods and services of households and individuals with annual revenue up to the level set by the Government are not subject to VAT.",
+      "value": "level set by the Government",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/27/469536-1779329464_v1_1779843299_signed.pdf",
+      "quote": "25. Hàng hóa, dịch vụ của hộ, cá nhân sản xuất, kinh doanh có doanh thu năm từ mức quy định của Chính phủ trở xuống",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.household.above-threshold",
+      "item": "Household and individual businesses with annual revenue ABOVE the threshold are subject to VAT and must use the direct method on revenue (percentage x revenue), using the Art. 12 percentages. They cannot use the credit method (Law Art. 11(2) excludes them).",
+      "value": "direct method: percentage x revenue",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/18/469047-1773796836_v1_1773803477_signed.pdf",
+      "quote": "h doanh có mức doanh thu năm trên 500 triệu đồng thuộc đối tượng chịu thuế giá trị gia tăng và áp dụng phương pháp tính trực tiếp",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.exempt.land-use-rights",
+      "item": "Transfer of land use rights is not subject to VAT (Art. 5(7)).",
+      "value": "not subject to VAT",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "7. Chuyển quyền sử dụng đất.",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.insurance",
+      "item": "Life insurance, health insurance, student insurance and other person-related insurance (and, per Art. 5(8), listed agricultural insurance and reinsurance) are not subject to VAT. Decree 144/2026 restated the list in Decree 181 Art. 4(3a) from 20 June 2026.",
+      "value": "not subject to VAT",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "8. Bảo hiểm nhân thọ, bảo hiểm sức khỏe, bảo hiểm người học",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.financial",
+      "item": "Listed financial, banking, securities and commercial services are not subject to VAT (Art. 5(9)): credit services, securities business, capital transfer, derivatives, debt sales and others listed.",
+      "value": "not subject to VAT",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "9. Các dịch vụ tài chính, ngân hàng, kinh doanh chứng khoán, thương mại sau đây: a) Dịch vụ cấp tín dụng",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.medical",
+      "item": "Medical and veterinary services (examination, treatment, prevention for people and animals) are not subject to VAT (Art. 5(10)).",
+      "value": "not subject to VAT",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "10. Các dịch vụ y tế, dịch vụ thú y sau đây",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.education",
+      "item": "Teaching and vocational training under the education laws are not subject to VAT (Art. 5(13)).",
+      "value": "not subject to VAT",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "13. Hoạt động dạy học, dạy nghề theo quy định của pháp luật về giáo dục",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.public-transport",
+      "item": "Public passenger transport by bus, tram/metro and inland waterway is not subject to VAT (Art. 5(16)).",
+      "value": "not subject to VAT",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "16. Vận chuyển hành khách công cộng bằng xe buýt, tàu điện",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.tech-transfer",
+      "item": "Technology transfer under the Technology Transfer Law and transfers of intellectual property rights are not subject to VAT (Art. 5(21)); exported, they are also excluded from 0% (see vn.vat.rate.zero.exclusions).",
+      "value": "not subject to VAT",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "21. Chuyển giao công nghệ theo quy định của Luật Chuyển giao công nghệ",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.exempt.construction-50pct",
+      "item": "Maintenance, repair and construction of historic/cultural sites, public works, infrastructure and housing for social-policy beneficiaries funded by people's contributions or humanitarian aid is not subject to VAT where such funds make up 50% or more of the capital used for the work.",
+      "value": "50%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "vốn viện trợ nhân đạo (chiếm từ 50% tổng số vốn sử dụng cho công trình trở lên)",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.exempt.no-credit",
+      "item": "A business supplying only not-subject goods/services cannot credit or get a refund of input VAT on them, except where the 0% rate applies (exports). 'Not subject to VAT' (không chịu thuế) works like an exemption without credit.",
+      "value": "no input credit or refund",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "không được khấu trừ, không được hoàn thuế giá trị gia tăng đầu vào, trừ trường hợp được áp dụng mức thuế suất 0%",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.credit-method.threshold",
+      "item": "Credit (deduction) method is mandatory for businesses with annual revenue from sales of goods and services of VND 1 billion ('01 tỷ đồng') or more that keep full accounts, invoices and records, except household and individual businesses. Below VND 1 billion a company may opt in voluntarily. 'từ ... trở lên' = at or above.",
+      "value": "VND 1 billion",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Cơ sở kinh doanh có doanh thu hằng năm từ bán hàng hóa, cung cấp dịch vụ từ 01 tỷ đồng trở lên, trừ hộ, cá nhân sản xuất, kinh doanh",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.direct-method.below-threshold",
+      "item": "Direct method on revenue applies to enterprises and cooperatives with annual revenue BELOW the VND 1 billion threshold, unless they opt for the credit method; also to household and individual businesses (above the not-subject threshold), to foreign organisations/individuals without full accounting (other than the foreign e-commerce suppliers in Art. 4(4)), and to other organisations. Same VND 1 billion figure as vn.vat.credit-method.threshold, seen from below.",
+      "value": "below VND 1 billion",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã có doanh thu hằng năm dưới mức ngưỡng doanh thu 01 tỷ đồng",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.direct-method.new-business-2yrs",
+      "item": "A newly started business whose annualised revenue estimate is below VND 1 billion uses the direct method on revenue for 2 years ('02 năm'), unless it registers voluntarily for the credit method.",
+      "value": "2 years",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "chưa đến 01 tỷ đồng thì cơ sở kinh doanh áp dụng phương pháp tính trực tiếp theo doanh thu trong 02 năm",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.direct.pct.distribution",
+      "item": "Direct-method VAT percentage of revenue for distribution and supply of goods. Percentage is applied to revenue (VAT-inclusive invoice total including surcharges), not to value added. Temporarily reduced by 20% of the percentage on qualifying supplies until 31 Dec 2026 (vn.vat.rate.temporary-direct-cut).",
+      "value": "1%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "b1) Phân phối, cung cấp hàng hóa: 1%",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.direct.pct.services",
+      "item": "Direct-method VAT percentage of revenue for services, and construction without supply of materials.",
+      "value": "5%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "b2) Dịch vụ, xây dựng không bao thầu nguyên vật liệu: 5%",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.direct.pct.manufacturing",
+      "item": "Direct-method VAT percentage of revenue for manufacturing, transport, services attached to goods, and construction including supply of materials.",
+      "value": "3%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "b3) Sản xuất, vận tải, dịch vụ có gắn với hàng hóa, xây dựng có bao thầu nguyên vật liệu: 3%",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.direct.pct.other",
+      "item": "Direct-method VAT percentage of revenue for other business activities.",
+      "value": "2%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "b4) Hoạt động kinh doanh khác: 2%",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.direct.gold",
+      "item": "Buying, selling and working gold, silver and precious stones: direct method on VALUE ADDED (value added x VAT rate), not on revenue.",
+      "value": "direct method on value added",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Số thuế giá trị gia tăng phải nộp theo phương pháp tính trực tiếp trên giá trị gia tăng bằng giá trị gia tăng nhân với thuế suất",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.input.noncash-threshold",
+      "item": "Input VAT on purchases (including imports) of VND 5 million ('05 triệu đồng') or more, VAT-inclusive, is creditable only with non-cash payment documents. The old law's figure was VND 20 million; do not use it. Several purchases from the same seller on the same day are added together (vn.vat.input.noncash-same-day).",
+      "value": "VND 5 million",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "Cơ sở kinh doanh phải có chứng từ thanh toán không dùng tiền mặt đối với hàng hóa, dịch vụ mua vào (bao gồm cả hàng hóa nhập khẩu) từ 05 triệu đồng trở lên đã bao gồm thuế giá trị gia tăng",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.input.noncash-same-day",
+      "item": "Purchases from one taxpayer each under VND 5 million but bought several times on the same day with a total of VND 5 million or more: input credit only with non-cash payment documents.",
+      "value": "VND 5 million",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "Trường hợp mua hàng hóa, dịch vụ của một người nộp thuế có giá trị dưới 05 triệu đồng nhưng mua nhiều lần trong cùng một ngày",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.input.noncash.law",
+      "item": "Statutory condition for input credit (Law Art. 14(2)(b)): non-cash payment documents for purchased goods and services, except special cases set by the Government. The VND amount is in Decree 181 (vn.vat.input.noncash-threshold), not in the law.",
+      "value": "non-cash payment documents required",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "b) Có chứng từ thanh toán không dùng tiền mặt đối với hàng hóa, dịch vụ mua vào, trừ một số trường hợp đặc thù",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.input.car-cap",
+      "item": "Passenger cars of 9 seats or fewer (not used in transport, tourism, hotel business or as demo cars): input VAT is creditable only on the part of the value up to VND 1.6 billion ('1,6 tỷ đồng'), excluding VAT, per car.",
+      "value": "VND 1.6 billion",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "có trị giá vượt trên 1,6 tỷ đồng (giá chưa có thuế giá trị gia tăng) thì số thuế giá trị gia tăng đầu vào được khấu trừ tương ứng với phần trị giá đến 1,6 tỷ đồng",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.refund.export.min",
+      "item": "Export refund: a business with exports in the month or quarter and uncredited input VAT of VND 300 million or more may claim a monthly or quarterly refund (not for goods imported then re-exported). Mixed export/domestic: the export share remaining after offset against domestic VAT payable must be VND 300 million or more.",
+      "value": "VND 300 million",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "nếu có số thuế giá trị gia tăng đầu vào chưa được khấu trừ hết từ 300 triệu đồng trở lên thì được hoàn thuế giá trị gia tăng theo tháng, quý",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.refund.export.cap",
+      "item": "Cap on the export refund: the VAT refunded for exports may not exceed 10% of export revenue of the refund period; the excess carries forward to the next period. This 10% is a cap, not a VAT rate.",
+      "value": "10%",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Số thuế giá trị gia tăng được hoàn của hàng hóa, dịch vụ xuất khẩu không vượt quá 10% doanh thu",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-pit",
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.refund.investment.min",
+      "item": "Investment-project refund: after offsetting against VAT payable on current business, uncredited input VAT of the investment project of VND 300 million or more is refundable (conditions and excluded projects in Art. 15(2)). Same VND 300 million as the export refund.",
+      "value": "VND 300 million",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Sau khi bù trừ nếu số thuế giá trị gia tăng đầu vào của dự án đầu tư chưa được khấu trừ hết từ 300 triệu đồng trở lên",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.refund.five-pct.min",
+      "item": "Businesses that only supply goods/services at 5%: refund if uncredited input VAT is VND 300 million or more after 12 consecutive months or 4 consecutive quarters (new in Law 48/2024).",
+      "value": "VND 300 million",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "nếu có số thuế giá trị gia tăng đầu vào chưa được khấu trừ hết từ 300 triệu đồng trở lên sau 12 tháng liên tục",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.refund.five-pct.period",
+      "item": "Waiting period for the 5%-supplier refund: 12 consecutive months OR 4 consecutive quarters ('04 quý').",
+      "value": "12 consecutive months or 4 consecutive quarters",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "sau 12 tháng liên tục hoặc 04 quý liên tục thì được hoàn thuế",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.refund.tourists",
+      "item": "Foreigners and overseas Vietnamese with a passport may get a VAT refund on goods bought in Vietnam and taken out on departure (procedure by Government; MOF Circular 84/2026/TT-BTC).",
+      "value": "VAT refund for departing foreigners",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "Người nước ngoài, người Việt Nam định cư ở nước ngoài mang hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế được hoàn thuế",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.taxpayer.reverse-charge",
+      "item": "Vietnamese businesses buying services (including services attached to goods) from a foreign organisation without a permanent establishment or a non-resident individual are VAT taxpayers for those services (withhold and pay on behalf, foreign contractor regime), Art. 4(3).",
+      "value": "Vietnamese buyer pays VAT on behalf",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "3. Tổ chức, cá nhân sản xuất, kinh doanh tại Việt Nam mua dịch vụ (kể cả trường hợp mua dịch vụ gắn với hàng hóa)",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.taxpayer.foreign-digital-b2b",
+      "item": "Where a Vietnamese business using the credit method buys services from a foreign supplier without a PE through e-commerce or digital platforms, the Vietnamese business withholds and pays the foreign supplier's VAT (Art. 4(4)). Foreign digital-platform operators may also withhold and pay on behalf of foreign suppliers.",
+      "value": "Vietnamese credit-method buyer withholds",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "tổ chức kinh doanh tại Việt Nam áp dụng phương pháp tính thuế giá trị gia tăng là phương pháp khấu trừ thuế mua dịch vụ của nhà cung cấp nước ngoài",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.taxpayer.platform-withholding",
+      "item": "Operators of e-commerce exchanges and digital platforms with a payment function withhold, pay and declare VAT on behalf of household and individual businesses selling on them (Law Art. 4(5)).",
+      "value": "platform withholds for household sellers",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "quote": "5. Tổ chức là nhà quản lý sàn giao dịch thương mại điện tử, nhà quản lý nền tảng số có chức năng thanh toán thực hiện khấu trừ",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.platform.decree-252",
+      "item": "From 1 July 2026 the platform withholding rules are in Decree 252/2026/ND-CP Art. 43 (which REPLACES Decree 117/2025/ND-CP): platforms with online ordering AND payment functions (domestic and foreign) withhold VAT per transaction on domestic revenue of household/individual sellers, at the rates of the VAT law. Decree 252 does not itself print percentages; the VAT-law direct-method percentages apply (vn.vat.direct.pct.*). Do not cite Decree 117/2025 as current.",
+      "value": "per-transaction withholding by platforms with payment function",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "Chủ quản nền tảng thương mại điện tử có chức năng đặt hàng trực tuyến và chức năng thanh toán (trong nước và ngoài nước)",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.platform.decree-117-replaced",
+      "item": "Decree 117/2025/ND-CP (platform withholding, from 1 July 2025) is replaced by Decree 252/2026/ND-CP from 1 July 2026, together with Decree 126/2020/ND-CP, Decree 91/2022/ND-CP and Decree 373/2025/ND-CP.",
+      "value": "Decree 117/2025/ND-CP replaced",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "d) Nghị định số 117/2025/NĐ-CP ngày 09 tháng 6 năm 2025 của Chính phủ quy định quản lý thuế đối với hoạt động kinh doanh trên nền tảng",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.foreign-supplier.registration",
+      "item": "Foreign suppliers (including foreign e-commerce and digital platform operators) with taxable revenue in Vietnam register for electronic tax transactions together with first tax registration and get a tax code through the tax administration system. No registration is needed if all their Vietnamese tax is withheld by credit-method Vietnamese buyers or by a platform.",
+      "value": "register online and get a tax code",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "thực hiện đăng ký giao dịch thuế điện tử cùng với đăng ký thuế lần đầu và được cơ quan thuế cấp mã số thuế",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.foreign-supplier.monthly",
+      "item": "Foreign suppliers doing business regularly declare and pay monthly; those trading irregularly declare per transaction (Decree 252 Art. 40(2)(a)).",
+      "value": "monthly (regular) or per transaction (irregular)",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "a.1) Đối với nhà cung cấp nước ngoài kinh doanh thường xuyên: thực hiện khai thuế, nộp thuế theo tháng",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.foreign-supplier.two-data-points",
+      "item": "A foreign supplier identifies a Vietnamese sale from 2 non-contradictory pieces of information: one about payment and one about residence or access (IP address, SIM country code, etc.).",
+      "value": "2 non-contradictory pieces of information",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "nhà cung cấp nước ngoài thực hiện sử dụng 02 thông tin không mâu thuẫn nhau",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.admin.law-108",
+      "item": "The Law on Tax Administration 108/2025/QH15 is in force from 1 July 2026 (some household provisions from 1 January 2026), replacing Law 38/2019/QH14. Its implementing decree is Decree 252/2026/ND-CP (replacing Decree 126/2020/ND-CP).",
+      "value": "1 July 2026",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf",
+      "quote": "hiệu lực thi hành từ ngày 01 tháng 7 năm 2026, trừ quy định tại khoản 2 Điều này",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.admin.decree-252.replaces-126",
+      "item": "Decree 252/2026/ND-CP replaces Decree 126/2020/ND-CP on tax administration from 1 July 2026. Filing deadlines and tax periods must be cited to Decree 252, not Decree 126.",
+      "value": "Decree 126/2020/ND-CP replaced",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "Nghị định này thay thế: a) Nghị định số 126/2020/NĐ-CP",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.filing.monthly-deadline",
+      "item": "Monthly returns: filed no later than the 20th day of the month after the month in which the tax obligation arises.",
+      "value": "20th day of the following month",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "thời hạn nộp hồ sơ khai thuế chậm nhất là ngày thứ 20 của tháng tiếp theo tháng phát sinh nghĩa vụ thuế",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.filing.quarterly-deadline",
+      "item": "Quarterly returns: filed no later than the last day of the first month of the following quarter (e.g. Q3 by 31 October).",
+      "value": "last day of the first month of the following quarter",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "Đối với loại thuế khai theo quý, thời hạn nộp hồ sơ khai thuế chậm nhất là ngày cuối cùng của tháng đầu của quý tiếp theo",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.filing.per-transaction",
+      "item": "Per-transaction returns: filed no later than the 10th day from the day after the tax obligation arises.",
+      "value": "10th day",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "quote": "thời hạn nộp hồ sơ khai thuế chậm nhất là ngày thứ 10 kể từ ngày tiếp theo ngày phát sinh nghĩa vụ thuế",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.payment.deadline",
+      "item": "Payment deadline for self-assessed tax: no later than the last day of the filing deadline for that return (so the 20th of the following month for monthly VAT, the last day of the first month of the next quarter for quarterly VAT).",
+      "value": "same day as the filing deadline",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf",
+      "quote": "thời hạn nộp thuế, khoản thu khác chậm nhất là ngày cuối cùng của thời hạn nộp hồ sơ khai thuế",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.late-interest",
+      "item": "Late-payment interest ('tiền chậm nộp'): 0.03% per day on the late tax (written '0,03%/ngày' in Vietnamese). It is a daily charge, not an annual rate; do not annualise it.",
+      "value": "0.03% per day",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf",
+      "quote": "Mức tính tiền chậm nộp bằng 0,03%/ngày tính trên số tiền thuế",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.filing.amendment-window",
+      "item": "A taxpayer may file a supplementary (amended) return within 5 years ('05 năm') from the filing deadline of the period with the error, before a tax inspection is announced (and in the other listed cases).",
+      "value": "5 years",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf",
+      "quote": "được khai bổ sung hồ sơ khai thuế, khoản thu khác trong thời hạn 05 năm",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.filing.force-majeure-extension",
+      "item": "Force-majeure extension of the filing deadline: up to 30 days for monthly, quarterly, annual and per-transaction returns; up to 60 days for finalisation returns.",
+      "value": "30 days",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf",
+      "quote": "thời gian gia hạn không quá 30 ngày kể từ ngày hết thời hạn nộp hồ sơ khai thuế",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.currency",
+      "item": "Tax is declared and calculated in Vietnamese dong (VND); the Government sets the cases where foreign currency may be used.",
+      "value": "Vietnamese dong",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf",
+      "quote": "Đồng tiền khai thuế, khoản thu khác là Đồng Việt Nam",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.einvoice.household-1bn",
+      "item": "Household and individual businesses with annual revenue above VND 1 billion must use e-invoices with a tax-authority code or e-invoices generated from cash registers connected to the tax authority (Decree 68/2026 Art. 8(5) as rewritten by Decree 141/2026, from 1 January 2026). Those at or below VND 1 billion may opt in. Same VND 1 billion as the not-subject threshold.",
+      "value": "VND 1 billion",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf",
+      "quote": "Hộ kinh doanh, cá nhân kinh doanh có doanh thu năm trên 01 tỷ đồng thì phải áp dụng hóa đơn điện tử có mã của cơ quan thuế",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.einvoice.household-30days",
+      "item": "A household/individual business whose cumulative revenue passes VND 1 billion during the year must register for e-invoices within 30 days from the last day of the tax period in which it passed the threshold.",
+      "value": "30 days",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf",
+      "quote": "đăng ký sử dụng hóa đơn điện tử trong thời gian 30 ngày kể từ ngày cuối cùng của kỳ tính thuế",
+      "read_on": "2026-10-17",
+      "used_by": [
+        "vietnam-vat"
+      ]
+    },
+    {
+      "id": "vn.vat.decree.181.replaces-209",
+      "item": "Decree 181/2025/ND-CP replaced Decree 209/2013/ND-CP (and Decree 49/2022/ND-CP and others) from 1 July 2025. Do not cite Decree 209/2013 as current.",
+      "value": "Decree 209/2013/ND-CP replaced",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "quote": "Nghị định này thay thế: a) Nghị định số 209/2013/NĐ-CP",
+      "read_on": "2026-10-17",
+      "used_by": []
+    },
+    {
+      "id": "vn.vat.circular.69-replaces-219",
+      "item": "MOF Circular 69/2025/TT-BTC (in force 1 July 2025) guides the VAT Law and Decree 181 and replaced Circular 219/2013/TT-BTC. Do not cite Circular 219/2013 as current.",
+      "value": "Circular 219/2013/TT-BTC replaced",
+      "tax_year": "in force 17 Oct 2026",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45440/57458-1-2025923-92469-2025-tt-btc.pdf",
+      "quote": "Thông tư này thay thế: a) Thông tư số 219/2013/TT-BTC",
+      "read_on": "2026-10-17",
+      "used_by": []
+    }
+  ]
+}

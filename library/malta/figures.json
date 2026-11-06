@@ -1,0 +1,1616 @@
+{
+  "country": "malta",
+  "code": "MT",
+  "figure_count": 119,
+  "figures": [
+    {
+      "id": "mt.it.single.zero-band.top",
+      "item": "Resident individual, single rates (art. 56(1)(b)(i), Cap. 123): chargeable income up to this amount is taxed at 0%. Applies to income of calendar 2026 (year of assessment 2027). Not the married or parent table.",
+      "value": "EUR 12,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income does not exceed €12,000, the tax shall be determined by multiplying the chargeable income by 0%",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.it.single.zero-band.rate",
+      "item": "Resident individual, single rates: rate on chargeable income up to EUR 12,000 (2026 income, year of assessment 2027).",
+      "value": "0%",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income does not exceed €12,000, the tax shall be determined by multiplying the chargeable income by 0%",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-crypto-tax",
+        "mt-reverse-charge-acquisition-intra"
+      ]
+    },
+    {
+      "id": "mt.it.single.15.upper",
+      "item": "Resident individual, single rates: the 15% band runs from above EUR 12,000 to below this amount (2026 income, year of assessment 2027).",
+      "value": "EUR 16,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income exceeds €12,000 but is less than €16,000",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization"
+      ]
+    },
+    {
+      "id": "mt.it.single.15.rate",
+      "item": "Resident individual, single rates: rate for chargeable income above EUR 12,000 and below EUR 16,000; the Act computes tax as income times 15% minus EUR 1,800 (2026 income, year of assessment 2027).",
+      "value": "15%",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 15% and then subtracting €1,800 from the result",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-corporate-tax",
+        "mt-crypto-tax",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.it.single.15.subtract",
+      "item": "Resident individual, single rates: amount subtracted after multiplying income by 15% in the EUR 12,000 to EUR 16,000 band (formula amount, not a credit).",
+      "value": "EUR 1,800",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 15% and then subtracting €1,800 from the result",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-estimated-tax"
+      ]
+    },
+    {
+      "id": "mt.it.single.25.rate",
+      "item": "Resident individual, single rates: rate for chargeable income above EUR 16,000 and below EUR 60,000 (income times 25% minus EUR 3,400).",
+      "value": "25%",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 25% and then subtracting €3,400 from the result",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-formation",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-crypto-tax"
+      ]
+    },
+    {
+      "id": "mt.it.single.25.subtract",
+      "item": "Resident individual, single rates: amount subtracted after multiplying income by 25% in the EUR 16,000 to EUR 60,000 band.",
+      "value": "EUR 3,400",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 25% and then subtracting €3,400 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.top-band.threshold",
+      "item": "Resident individual: the top 35% rate applies where chargeable income exceeds this amount, in every resident table (single, married, parent).",
+      "value": "EUR 60,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income exceeds €60,000, the tax shall be determined by multiplying the chargeable income by 35% and then subtracting €9,400",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.it.top-rate",
+      "item": "Resident individual: top rate of income tax on chargeable income above EUR 60,000. Same number as the company rate but a different rule.",
+      "value": "35%",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income exceeds €60,000, the tax shall be determined by multiplying the chargeable income by 35% and then subtracting €9,400",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-formation",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax",
+        "mt-crypto-tax",
+        "mt-foundations-and-trusts",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.it.single.35.subtract",
+      "item": "Resident individual, single rates: amount subtracted after multiplying income by 35% where income exceeds EUR 60,000.",
+      "value": "EUR 9,400",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 35% and then subtracting €9,400 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.zero-band.top",
+      "item": "Married couple resident in Malta taxed jointly (art. 56(1)(a)(i), no qualifying children): chargeable income up to this amount is taxed at 0%.",
+      "value": "EUR 15,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "exceed €15,000, the tax shall be determined by",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-nomad-residence-permit",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.it.married.15.upper",
+      "item": "Married couple, joint computation, no qualifying children: the 15% band runs from above EUR 15,000 to below this amount (income times 15% minus EUR 2,250).",
+      "value": "EUR 23,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "€15,000 but is less than €23,000, the tax shall be",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization"
+      ]
+    },
+    {
+      "id": "mt.it.married.15.subtract",
+      "item": "Married couple, joint computation, no qualifying children: amount subtracted after multiplying income by 15%.",
+      "value": "EUR 2,250",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "15% and then subtracting €2,250 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.25.subtract",
+      "item": "Married couple, joint computation, no qualifying children: amount subtracted after multiplying income by 25% (band above EUR 23,000 and below EUR 60,000).",
+      "value": "EUR 4,550",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "and then subtracting €4,550 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.35.subtract",
+      "item": "Married couple, joint computation, no qualifying children: amount subtracted after multiplying income by 35% (income above EUR 60,000).",
+      "value": "EUR 10,550",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "chargeable income by 35% and then subtracting €10,550",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.it.parent.single.zero-band.top",
+      "item": "Individual (not joint) who in the preceding year was a parent maintaining a child under 18, or under 23 in full-time education (art. 56(1)(b)(ii)): chargeable income up to this amount taxed at 0%.",
+      "value": "EUR 13,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income does not exceed €13,000",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.one-child.zero-band.top",
+      "item": "Married couple, joint computation, with one qualifying child under 18 (or under 23 in full-time education) and an EU/EEA or long-term resident spouse (art. 56(1)(a)(ii)): income up to this amount taxed at 0%.",
+      "value": "EUR 17,500",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income does not exceed €17,500",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.two-children.zero-band.top",
+      "item": "Married couple, joint computation, with at least two qualifying children (art. 56(1)(a)(iii)): income up to this amount taxed at 0%.",
+      "value": "EUR 22,500",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income does not exceed €22,500",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.nondom.min-tax.amount",
+      "item": "Minimum tax for a person ordinarily resident but NOT domiciled in Malta, taxed on the remittance basis (art. 56(27), Cap. 123): yearly tax liability of at least this amount, for a person who 'derives income ... not less than EUR 35,000 ... arising outside Malta ... but which is not received or not fully received in Malta' and is not under another minimum-tax scheme (for example the Global Residence Programme). READING OPEN (4 Oct 2026, Michael to rule): literally the EUR 35,000 is foreign income derived, which may be partly received in Malta; a narrower reading counts only the unremitted part. Quote the statute and name both readings.",
+      "value": "EUR 5,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "not less than five thousand euro (€5,000) per annum (hereinafter \"the minimum tax\")",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-family-office-setup",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-nomad-residence-permit",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.nondom.min-tax.income-threshold",
+      "item": "Trigger for the non-dom minimum tax (art. 56(27)): the person 'derives income ... amounting to not less than EUR 35,000 ... arising outside Malta ... but which is not received or not fully received in Malta' (married couple taxed jointly: both spouses counted together). READING OPEN (4 Oct 2026, Michael to rule): literally the threshold is foreign income derived, which may be partly received in Malta; a narrower reading counts only the unremitted part. Quote the statute and name both readings.",
+      "value": "EUR 35,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "amounting to not less than thirty five thousand euro (€35,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.rate",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: flat tax rate on foreign-source income remitted to Malta by the beneficiary, spouse and qualifying children (rule 5(1)). The rule prints \"fifteen cents (0.15) on every euro\"; the margin note prints \"15% rate\". Foreign capital gains are outside this charge.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "(0.15) on every 15% rate.",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-corporate-tax",
+        "mt-crypto-tax",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.min-tax",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: minimum tax on foreign-source income, per year of assessment, for the beneficiary and family together (rule 5(1) proviso). Payable in full in the year status is granted and in the year it ends.",
+      "value": "EUR 15,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "shall be fifteen thousand euro (€15,000) for any year of assessment",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-nomad-residence-permit",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.other-income-rate",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: Malta-source income and other income not taxed at the 15% rate is charged as separate income at 35 cents per euro (rule 5(2)). The rule prints the rate as 0.35 per euro, not as a percentage.",
+      "value": "EUR 0.35 per euro",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "at the rate of thirty-five cents (0.35) on every euro",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.property.buy.malta",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: minimum purchase price of a \"qualifying owned property\" in Malta (outside the south of Malta).",
+      "value": "EUR 275,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "seventy-five thousand euro (€275,000) for a property situated in Malta",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.property.buy.gozo-south",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: minimum purchase price of a qualifying owned property in Gozo or in the south of Malta (localities designated under the Local Government Act).",
+      "value": "EUR 220,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "two hundred and twenty thousand euro (€220,000) for a property situated in Gozo or in the south of",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.property.rent.malta",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: minimum yearly rent of a \"qualifying rented property\" in Malta (outside the south of Malta), per annum.",
+      "value": "EUR 9,600",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "nine thousand and six hundred euro (€9,600) per annum for a property situated in Malta",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.property.rent.gozo-south",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: minimum yearly rent of a qualifying rented property in Gozo or in the south of Malta, per annum.",
+      "value": "EUR 8,750",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "eight thousand and seven hundred and fifty euro (€8,750) per annum for a property situated in Gozo",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.fee",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: non-refundable administrative fee paid once on application (standard case).",
+      "value": "EUR 6,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "non-refundable administrative fee of six thousand euro (€6,000) upon application",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-inheritance-and-succession",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.fee.south",
+      "item": "Global Residence Programme Rules, S.L. 123.148 (L.N. 167 of 2013, last amended L.N. 69 of 2020), for non-EU/EEA/Swiss nationals: reduced one-off application fee where the qualifying property is an OWNED property in the south of Malta (not Gozo, not rented).",
+      "value": "EUR 5,500",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "five thousand and five hundred euro (€5,500)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.rate",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: flat tax rate on foreign-source income remitted to Malta by the beneficiary, spouse and qualifying children (rule 5(1)). The rule prints \"fifteen cents (0.15) on every euro\"; the margin note prints \"15% rate\". Foreign capital gains are outside this charge.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "(0.15) on every 15% rate.",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-corporate-tax",
+        "mt-crypto-tax",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.min-tax",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: minimum tax on foreign-source income, per year of assessment, for the beneficiary and family together (rule 5(1) proviso). Payable in full in the year status is granted and in the year it ends.",
+      "value": "EUR 15,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "shall be fifteen thousand euro (€15,000) for any year of assessment",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-nomad-residence-permit",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.other-income-rate",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: Malta-source income and other income not taxed at the 15% rate is charged as separate income at 35 cents per euro (rule 5(2)). The rule prints the rate as 0.35 per euro, not as a percentage.",
+      "value": "EUR 0.35 per euro",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "at the rate of thirty-five cents (0.35) on every euro",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.property.buy.malta",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: minimum purchase price of a \"qualifying owned property\" in Malta (outside the south of Malta).",
+      "value": "EUR 275,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "seventy-five thousand euro (€275,000) for a property situated in Malta",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.property.buy.gozo-south",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: minimum purchase price of a qualifying owned property in Gozo or in the south of Malta (localities designated under the Local Government Act).",
+      "value": "EUR 220,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "two hundred and twenty thousand euro (€220,000) for a property situated in Gozo or in the south of",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.property.rent.malta",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: minimum yearly rent of a \"qualifying rented property\" in Malta (outside the south of Malta), per annum.",
+      "value": "EUR 9,600",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "nine thousand and six hundred euro (€9,600) per annum for a property situated in Malta",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.property.rent.gozo-south",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: minimum yearly rent of a qualifying rented property in Gozo or in the south of Malta, per annum.",
+      "value": "EUR 8,750",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "eight thousand and seven hundred and fifty euro (€8,750) per annum for a property situated in Gozo",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.fee",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: non-refundable administrative fee paid once on application (standard case).",
+      "value": "EUR 6,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "non-refundable administrative fee of six thousand euro (€6,000) upon application",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-inheritance-and-succession",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.rp.fee.south",
+      "item": "Residence Programme Rules, S.L. 123.160 (L.N. 270 of 2014, last amended L.N. 69 of 2020), the parallel scheme for EU/EEA/Swiss nationals: reduced one-off application fee where the qualifying property is an OWNED property in the south of Malta (not Gozo, not rented).",
+      "value": "EUR 5,500",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.160/eng/pdf",
+      "quote": "five thousand and five hundred euro (€5,500)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.grp.mandatary-penalty",
+      "item": "Global Residence Programme Rules: administrative penalty charged to the authorised registered mandatary when required notifications are not made in time.",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "an administrative penalty of ten thousand euro (€10,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.admin-fee.main",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: total non-refundable administration fee for the main applicant, paid in two parts (EUR 15,000 within one month of applying, EUR 45,000 within two months of approval in principle).",
+      "value": "EUR 60,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "a non-refundable administration fee in respect of the main applicant of sixty thousand euro (€60,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.admin-fee.first-instalment",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: first part of the main applicant fee, due within one month of submitting the application.",
+      "value": "EUR 15,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "fifteen thousand euro (€15,000) of which need to be paid within one (1) month",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-nomad-residence-permit",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.admin-fee.balance",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: balance of the main applicant fee, due within two months of the Letter of Approval in Principle.",
+      "value": "EUR 45,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "remaining forty five thousand euro (€45,000) payable within two (2) months",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-nomad-residence-permit",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.admin-fee.dependant",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: non-refundable administration fee for each dependant. The schedule exempts the spouse, minor children and certified incapacitated adult children (paragraphs (a), (b) and (e) of \"dependant\"), so in practice it falls on adult dependent children and parents or grandparents.",
+      "value": "EUR 7,500",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "a non-refundable administration fee of seven thousand five hundred euro (€7,500) for each and every dependant",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.contribution",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: government contribution for the main applicant, the same amount whether the qualifying property is owned or rented, payable within eight months of approval in principle.",
+      "value": "EUR 37,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "a contribution of thirty seven thousand euro (€37,000) in respect of the main applicant where the necessary title to a qualifying property is a qualifying owned property",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.donation",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: donation the applicant must make to a local registered philanthropic, cultural, sport, scientific, animal welfare or artistic NGO.",
+      "value": "EUR 2,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "\"donation\" means a financial contribution of two thousand euro (€2,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.property.buy",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: minimum purchase price of a qualifying owned residential property, the same for Malta and Gozo (no south of Malta reduction since L.N. 310 of 2024).",
+      "value": "EUR 375,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "three hundred and seventy-five thousand euro (€375,000) for a property situated in Malta or Gozo",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.property.rent",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: minimum yearly rent of a qualifying rented residential property, per annum, Malta or Gozo.",
+      "value": "EUR 14,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "fourteen thousand euro (€14,000) per annum for a property situated in Malta or Gozo",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.capital.option-a.total",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: capital test, option (a): assets of at least this value, of which at least EUR 150,000 in financial assets. Alternative to option (b) (OR, not AND). Must be held for five years from the appointed day.",
+      "value": "EUR 500,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "(a) having a value of not less than five hundred thousand euro (€500,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-inheritance-and-succession",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.capital.option-a.financial",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: capital test option (a): minimum financial assets within the EUR 500,000.",
+      "value": "EUR 150,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "one hundred and fifty thousand euro (€150,000) shall be in the form of financial assets",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.capital.option-b.total",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: capital test, option (b): assets of at least this value, of which at least EUR 75,000 in financial assets.",
+      "value": "EUR 650,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "(b) having a value of not less than six hundred and fifty thousand euro (€650,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.capital.option-b.financial",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: capital test option (b): minimum financial assets within the EUR 650,000.",
+      "value": "EUR 75,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "seventy-five thousand euro (€75,000) shall be in the form of financi",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-company-residence-and-substance",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.agent-pi-cover",
+      "item": "Malta Permanent Residence Programme Regulations, S.L. 217.26 (L.N. 121 of 2021 as amended by L.N. 57 and 310 of 2024 and 146 of 2025), First Schedule as substituted by L.N. 146 of 2025: minimum professional indemnity cover a licensed MPRP agent must hold (agent rule, not an applicant cost).",
+      "value": "EUR 500,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/217.26/eng/pdf",
+      "quote": "with a cover of not less than five hundred thousand euro (€500,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-inheritance-and-succession",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.nomad.tax-rate",
+      "item": "Nomad Residence Permits (Income Tax) Rules, S.L. 123.210 (L.N. 277 of 2023, from 7 December 2023): income tax rate on the eligible main applicant's income from authorised (remote) work, with double tax relief available. Under rule 3(3), no tax on that income for the first twelve months from the permit date or 1 January 2024, whichever is later, unless the person declares residence is not casual.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.210/eng/pdf",
+      "quote": "income tax at the rate of ten percent (10%) on his chargeable income derived from authorised work",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "malta-payroll",
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-nomad-residence-permit",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-rental-income",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.nomad.foreign-tax-test",
+      "item": "Nomad Residence Permits (Income Tax) Rules, S.L. 123.210 (L.N. 277 of 2023, from 7 December 2023): where the applicant proves foreign tax paid on the authorised-work income at a rate of at least this, the reporting rule in the rules is relaxed. Same number as the nomad tax rate, different rule.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.210/eng/pdf",
+      "quote": "he has paid tax in a country outside Malta at a rate of at least ten percent (10%)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "malta-payroll",
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-nomad-residence-permit",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-rental-income",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.mprp.residence-card-fee",
+      "item": "Residency Malta MPRP brochure (English, uploaded August 2026): residence card fee per person. Not in the S.L. 217.26 First Schedule; brochure figure only.",
+      "value": "EUR 500",
+      "tax_year": 2026,
+      "source_url": "https://residencymalta.gov.mt/wp-content/uploads/2026/08/MPRP-Brochure-English.pdf",
+      "quote": "pay a residence card fee of €500 per p",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.co.rate",
+      "item": "Income Tax Act, Cap. 123, art. 56(6): standard tax rate on the chargeable income of every company (and of a trust or foundation taxed as a company). The Act prints the rate as thirty-five cents (0.35) on every euro.",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "at the rate of thirty-five cents (0.35) on every euro of the chargeable income of every",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-formation",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax",
+        "mt-crypto-tax",
+        "mt-foundations-and-trusts",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.co.fitwi.rate",
+      "item": "Final Income Tax Without Imputation Regulations, S.L. 123.217 (L.N. 188 of 2025): an entity (company, body electing to be a company, or a trust under art. 27D(1)) may elect to be taxed at fifteen cents (0.15) per euro of chargeable income instead of the art. 56(6) rate. The tax is final: no imputation credit, no shareholder refund. Available for income of the fiscal year preceding year of assessment 2025 and later years.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.217/eng/pdf",
+      "quote": "at the rate of fifteen cents (0.15) on every euro of the chargeable income",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-corporate-tax",
+        "mt-crypto-tax",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.co.fitwi.lock-in",
+      "item": "Final Income Tax Without Imputation Regulations, S.L. 123.217, reg. 3(3): once elected, the entity cannot revert before the end of a five-year period from the first year of assessment the election applied; after reverting, the ordinary system applies for at least five consecutive years of assessment.",
+      "value": "five (5) years",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.217/eng/pdf",
+      "quote": "shall not be made before the end of the five (5)- year period",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts"
+      ]
+    },
+    {
+      "id": "mt.co.fitwi.floor",
+      "item": "Final Income Tax Without Imputation Regulations, S.L. 123.217, reg. 3(4)(a): the 15% final tax is never lower than the ordinary tax less the refunds (art. 48(4) or (4A), Cap. 372) claimable by all shareholders on the same profits. No number: a floor rule.",
+      "value": "floor: ordinary tax less shareholder refunds",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.217/eng/pdf",
+      "quote": "shall in no case be lower than the tax charged in terms of sub-",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.px.holding.min-equity",
+      "item": "Participating holding definition, art. 2(1) Cap. 123, limb (a): a company holds directly at least five percent of the equity shares of a company, carrying at least five percent of any two of votes, profits and assets on a winding up. The Act prints the figure in words only. Other limbs (b) to (f) are alternatives (OR).",
+      "value": "five percent",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "a company holds directly at least five percent of the equity shares",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.px.holding.min-investment",
+      "item": "Participating holding, art. 2(1) Cap. 123, limb (e): alternatively, an equity holding with a total value at acquisition of at least this amount, held for an uninterrupted period of at least 183 days.",
+      "value": "EUR 1,164,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "one million, one hundred and sixty-four thousand euro (€1,164,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-holding-company-participation-exemption"
+      ]
+    },
+    {
+      "id": "mt.px.holding.min-period",
+      "item": "Participating holding, art. 2(1) Cap. 123, limb (e) only: minimum uninterrupted holding period for the EUR 1,164,000 test. Not a general holding period for the participation exemption.",
+      "value": "183 days",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "held for an uninterrupted period of not less than 183 days",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-holding-company-participation-exemption"
+      ]
+    },
+    {
+      "id": "mt.px.anti-abuse.foreign-tax",
+      "item": "Participation exemption anti-abuse, art. 12(1)(u) proviso Cap. 123, for dividends from participating holdings acquired on or after 1 January 2007: safe harbour (i)(2), the subsidiary is subject to foreign tax of at least this rate. The three safe harbours (EU resident, 15% foreign tax, passive income test) are alternatives: any ONE suffices.",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "it is subject to any foreign tax of at least fifteen per cent (15%)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-corporate-tax",
+        "mt-crypto-tax",
+        "mt-foundations-and-trusts",
+        "mt-global-residence-programme",
+        "mt-holding-company-participation-exemption",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.px.anti-abuse.passive-income",
+      "item": "Participation exemption anti-abuse, art. 12(1)(u)(i)(3): safe harbour where the subsidiary does not have more than this share of its income from passive interest or royalties.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "it does not have more than fifty per cent (50%) of its income derived from passive interes",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax",
+        "mt-estimated-tax",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.refund.participating",
+      "item": "Income Tax Management Act, Cap. 372, art. 48(4)(b): on dividends from foreign income account profits derived from a participating holding (or its disposal), the shareholder may claim a refund of ALL the Malta tax paid on those profits, subject to the same anti-abuse conditions. Only relevant where the company did not claim the participation exemption.",
+      "value": "full refund (all of the Malta tax paid)",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/372/eng/pdf",
+      "quote": "a claim may be made for a refund of all of the Malta tax paid in respect of those profits",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.refund.six-sevenths",
+      "item": "Income Tax Management Act, Cap. 372, art. 48(4A): general shareholder refund on dividends from Maltese taxed account or foreign income account profits (trading income). The Act prints the fraction in words.",
+      "value": "six-sevenths",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/372/eng/pdf",
+      "quote": "may claim a refund of six-sevenths of the Advance Company Income Tax",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption"
+      ]
+    },
+    {
+      "id": "mt.refund.five-sevenths",
+      "item": "Cap. 372 art. 48(4A) proviso (i): reduced refund where the dividend is paid from passive interest or royalties, or from dividends of a participating holding failing the art. 12(1)(u) anti-abuse conditions.",
+      "value": "five-sevenths",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/372/eng/pdf",
+      "quote": "the rate of refund shall be of five-sevenths of the said Advance Company Income Tax",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-holding-company-participation-exemption"
+      ]
+    },
+    {
+      "id": "mt.refund.two-thirds",
+      "item": "Cap. 372 art. 48(4)(a): two-thirds refund on foreign income account profits (who may claim: non-residents, Malta companies wholly owned by them, and registered shareholders). Art. 48(4)(a) itself sets NO double-tax-relief condition: the DTR bar sits in art. 48(4A)(a) proviso (ii) (\"no claim for refund may be made under this sub-article\"), so where DTR was claimed the six-sevenths route is closed and the two-thirds route is what remains. Never label the two-thirds row \"where the company claimed double tax relief\" as if that were its condition (reader, 4 Oct 2026).",
+      "value": "two-thirds",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/372/eng/pdf",
+      "quote": "may claim a refund of two-thirds of the Malta tax paid by the company",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-holding-company-participation-exemption"
+      ]
+    },
+    {
+      "id": "mt.nid.premium",
+      "item": "Notional Interest Deduction Rules, S.L. 123.176 (L.N. 37 of 2018): the reference rate is the yield to maturity on Malta Government Stocks with about 20 years remaining plus this premium. The deduction is optional (election).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.176/eng/pdf",
+      "quote": "with a remaining term of approximately 20 years plus a premium of 5%",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "malta-vat-return",
+        "mt-capital-gains",
+        "mt-corporate-tax",
+        "mt-family-office-setup",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-rental-income",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ]
+    },
+    {
+      "id": "mt.nid.cap",
+      "item": "Notional Interest Deduction Rules, S.L. 123.176, rule 4(2)(a): the notional interest deduction is capped at this share of the undertaking's chargeable income before the deduction; any excess is carried forward.",
+      "value": "90%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.176/eng/pdf",
+      "quote": "exceeds ninety per cent (90%) of the undertaking’s chargeable income",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-corporate-tax",
+        "mt-estimated-tax",
+        "mt-holding-company-participation-exemption"
+      ]
+    },
+    {
+      "id": "mt.atad.cfc.control",
+      "item": "EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (L.N. 411 of 2018, amended L.N. 348 of 2019 and 29 of 2020), reg. 7 CFC: a foreign entity is a CFC where the Maltese taxpayer (with associated enterprises) holds more than this share of votes, capital or profit entitlement, AND its actual tax is lower than the difference between Malta tax and that actual tax.",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "quote": "participation of more than fifty per cent (50%) of the voting rights",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax",
+        "mt-estimated-tax",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.atad.cfc.exempt.profits",
+      "item": "EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (L.N. 411 of 2018, amended L.N. 348 of 2019 and 29 of 2020), reg. 7(3)(a): CFC carve-out for an entity or PE with accounting profits of no more than this amount AND non-trading income of no more than EUR 75,000.",
+      "value": "EUR 750,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "quote": "no more than seven hundred and fifty thousand euro (€750,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-company-residence-and-substance"
+      ]
+    },
+    {
+      "id": "mt.atad.cfc.exempt.non-trading",
+      "item": "EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (L.N. 411 of 2018, amended L.N. 348 of 2019 and 29 of 2020), reg. 7(3)(a): the non-trading income limit that goes with the EUR 750,000 profits limit (both must be met).",
+      "value": "EUR 75,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "quote": "non-trading income of no more than seventy-five thousand euro (€75,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-company-residence-and-substance",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.atad.cfc.exempt.margin",
+      "item": "EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (L.N. 411 of 2018, amended L.N. 348 of 2019 and 29 of 2020), reg. 7(3)(b): alternative CFC carve-out where accounting profits are no more than this share of operating costs for the period.",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "quote": "of which the accounting profits amount to no more than ten per cent (10%) of its operating costs",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "malta-payroll",
+        "malta-ssc",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-nomad-residence-permit",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-rental-income",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.atad.ilr.ebitda",
+      "item": "EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (L.N. 411 of 2018, amended L.N. 348 of 2019 and 29 of 2020), reg. 4(1): exceeding borrowing costs deductible only up to this share of tax-adjusted EBITDA.",
+      "value": "30%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "quote": "only up to thirty per cent (30%)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax",
+        "mt-estimated-tax"
+      ]
+    },
+    {
+      "id": "mt.atad.ilr.safe-harbour",
+      "item": "EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (L.N. 411 of 2018, amended L.N. 348 of 2019 and 29 of 2020), reg. 4(3)(a): exceeding borrowing costs deductible in any case up to this amount (for a group treated as one taxpayer, for the whole group).",
+      "value": "EUR 3,000,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "quote": "deduct exceeding borrowing costs up to three million euro (€3,000,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-company-residence-and-substance",
+        "mt-corporate-tax"
+      ]
+    },
+    {
+      "id": "mt.atad.associated",
+      "item": "EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187 (L.N. 411 of 2018, amended L.N. 348 of 2019 and 29 of 2020): \"associated enterprise\" threshold for votes, capital or profits (CFC and interest rules). Replaced by 50% for the hybrid mismatch rules.",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.187/eng/pdf",
+      "quote": "twenty- five per cent (25%) or more of the profits of that entity",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-formation",
+        "malta-tax-optimization",
+        "mt-capital-gains",
+        "mt-company-residence-and-substance",
+        "mt-crypto-tax"
+      ]
+    },
+    {
+      "id": "mt.co.residence.incorporation-date",
+      "item": "Cap. 123 art. 2(1) \"resident in Malta\" for a body of persons: managed and controlled in Malta; and a company incorporated in Malta on or after this date is always resident (other Maltese-incorporated companies from 1 January 1995).",
+      "value": "1 July 1994",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "provided that a company incorporated in Malta on or after 1st July 1994 shall be resident in Malta",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-family-office-setup"
+      ]
+    },
+    {
+      "id": "mt.trust.company-election.deadline",
+      "item": "Cap. 123 art. 27D(1): a resident trustee of an authorised trust holding only investment income (royalties, dividends, capital gains, interest, rents) may irrevocably elect to have trust income taxed as if derived by a Malta company (art. 56(6) rate, dividend treatment for distributions). The election form goes to the Commissioner within this period from establishment or appointment of a resident trustee, whichever is later.",
+      "value": "thirty days",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "not later than thirty days from the date of the establishment of such trust",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts",
+        "mt-property-transfer-tax-the-sale-immovable"
+      ]
+    },
+    {
+      "id": "mt.foundation.trust-election",
+      "item": "Foundations (Income Tax) Regulations, S.L. 123.114 (L.N. 312 of 2010), reg. 4: by default a foundation is taxed like a company (distributions treated as dividends); its administrators may irrevocably elect by written notice to be taxed under the trust rules instead. No number.",
+      "value": "irrevocable election",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.114/eng/pdf",
+      "quote": "irrevocably elect that a foundation",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.duty.immovable.rate",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 32(1): duty on transfers of immovable property, including the declaration of a transfer causa mortis (on death), for deaths on or after 23 November 1999: five euro for every one hundred euro or part of the higher of consideration and value. Printed as \"five euro (5.00) for every one hundred euro (100)\"; not printed as a percentage.",
+      "value": "five euro per one hundred euro",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "a duty of five euro (5.00) for every one",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts"
+      ]
+    },
+    {
+      "id": "mt.duty.cm.home.exempt-first",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 35(1)(a)(i): on a transfer causa mortis of the deceased's ordinary residence, the first slice of its value is not taken into account (or a greater amount if prescribed); pro rata where the home was not fully owned or passes to several heirs.",
+      "value": "EUR 35,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "The first thirty-five thousand euro (35,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-tax-optimization",
+        "mt-family-office-setup",
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.duty.cm.home.reduced-rate",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 35(2)(i): where the deceased's ordinary residence is occupied at death by an heir as their ordinary residence, duty on that heir's share of the value above EUR 35,000 and up to EUR 200,000 is three euro fifty per one hundred euro.",
+      "value": "EUR 3.50 per EUR 100",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "three euro and fifty cents (€3.50) for every one hundred euro (€100)",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.duty.cm.home.reduced-rate.ceiling",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 35(2)(i): upper end of the slice of the dwelling house value taxed at the reduced EUR 3.50 per EUR 100 rate (value above it bears the normal rate).",
+      "value": "EUR 200,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "which exceeds thirty-five thousand euro (€35,000) but not two hundred thousand euro (€200,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.duty.cm.home.spouse",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 35(2)(iii): no duty is levied at the time of the transfer causa mortis where the deceased's ordinary residence passes to the surviving spouse or cohabitant. Art. 35(2)(v) gives the same for the ordinary residence passing to descendants in the direct line, if its conditions are met. No number.",
+      "value": "no duty at the time of the transfer",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "the beneficiary of such residence is the surviving spouse or cohabitant, no duty shall be levied at the time of the transfer",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.duty.cm.usufruct-spouse",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 35(1)(b): the value of a usufruct bequeathed to the surviving spouse or cohabitant is not taken into account for duty. No number.",
+      "value": "not taken into account",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "The value of the usufruct of any property chargeable under this Act bequeathed",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.duty.shares.rate",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 42(1): duty on transfers of marketable securities (including the notice of a transfer causa mortis of company shares under art. 45): two euro for every one hundred euro of the higher of consideration and real value. Printed in words only.",
+      "value": "two euro per one hundred euro",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "A duty of two euro for every one hundred euro or part",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts"
+      ]
+    },
+    {
+      "id": "mt.duty.shares.property-company-uplift",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 42(2)(a) and (b): where the company (or a company it holds) has 75 percent or more of non-current assets in immovable property, the share duty is increased by three euro per one hundred euro. Printed in words only.",
+      "value": "three euro per one hundred euro",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "shall be increased by three euro for every one hundred euro",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts"
+      ]
+    },
+    {
+      "id": "mt.duty.family-business.property.cap",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 41C(1): transfer of a registered family business (Family Business Act, Cap. 565) as a going concern by an individual to family members, including a commercial tenement used in the business for at least three years: reduced duty on the first slice of the property value. Rate printed in words: three euro and fifty cents per one hundred euro.",
+      "value": "EUR 500,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "duty shall be charged on the first five hundred thousand euro (€500,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-inheritance-and-succession",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.duty.family-business.shares.exempt",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 41C(2): transfer by an individual to family members of shares or interests in a partnership, trust or foundation held in a registered family business: the first slice of value is not taken into account (or a greater amount if prescribed). Conditions include more than 85 percent family control and a Commissioner certificate.",
+      "value": "EUR 150,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "no account shall be taken of the first one hundred and fifty thousand euro (€150,000)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts",
+        "mt-holding-company-participation-exemption",
+        "mt-inheritance-and-succession",
+        "mt-permanent-residence-programme",
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.duty.family-business.claw-back",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 41C(1) provisos: if the property is transferred inter vivos or stops being used in the business within this period from acquisition, the duty saved becomes payable.",
+      "value": "three years",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
+      "quote": "during the first three years from the date of acquisition",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "mt-capital-gains",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.it.parent.single.15.upper",
+      "item": "Individual taxed separately under art. 56(1)(b)(ii) (parent maintaining a child under 18, or under 23 in full-time education, where (iii) to (v) do not apply): upper end of the 15% band (exclusive); 25% applies above it up to EUR 60,000.",
+      "value": "EUR 17,500",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "exceeds €13,000 but is less than €17,500",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.single.15.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(ii) (parent maintaining a child under 18, or under 23 in full-time education, where (iii) to (v) do not apply): amount subtracted after multiplying income by 15%.",
+      "value": "EUR 1,950",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 15% and then subtracting €1,950 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.single.25.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(ii) (parent maintaining a child under 18, or under 23 in full-time education, where (iii) to (v) do not apply): amount subtracted after multiplying income by 25%.",
+      "value": "EUR 3,700",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 25% and then subtracting €3,700 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.single.35.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(ii) (parent maintaining a child under 18, or under 23 in full-time education, where (iii) to (v) do not apply): amount subtracted after multiplying income above EUR 60,000 by 35%.",
+      "value": "EUR 9,700",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 35% and then subtracting €9,700 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.one-child.15.upper",
+      "item": "Married couple, joint computation, one qualifying child (art. 56(1)(a)(ii)): upper end of the 15% band (exclusive); 25% applies above it up to EUR 60,000.",
+      "value": "EUR 26,500",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "exceeds €17,500 but is less than €26,500",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.one-child.15.subtract",
+      "item": "Married couple, joint computation, one qualifying child (art. 56(1)(a)(ii)): amount subtracted after multiplying income by 15%.",
+      "value": "EUR 2,625",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 15% and then subtracting €2,625 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.one-child.25.subtract",
+      "item": "Married couple, joint computation, one qualifying child (art. 56(1)(a)(ii)): amount subtracted after multiplying income by 25%.",
+      "value": "EUR 5,275",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 25% and then subtracting €5,275 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.one-child.35.subtract",
+      "item": "Married couple, joint computation, one qualifying child (art. 56(1)(a)(ii)): amount subtracted after multiplying income above EUR 60,000 by 35%.",
+      "value": "EUR 11,275",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 35% and then subtracting €11,275 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.two-children.15.upper",
+      "item": "Married couple, joint computation, at least two qualifying children (art. 56(1)(a)(iii)): upper end of the 15% band (exclusive); 25% applies above it up to EUR 60,000.",
+      "value": "EUR 32,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "exceeds €22,500 but is less than €32,000",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.two-children.15.subtract",
+      "item": "Married couple, joint computation, at least two qualifying children (art. 56(1)(a)(iii)): amount subtracted after multiplying income by 15%.",
+      "value": "EUR 3,375",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 15% and then subtracting €3,375 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.two-children.25.subtract",
+      "item": "Married couple, joint computation, at least two qualifying children (art. 56(1)(a)(iii)): amount subtracted after multiplying income by 25%.",
+      "value": "EUR 6,575",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 25% and then subtracting €6,575 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.married.two-children.35.subtract",
+      "item": "Married couple, joint computation, at least two qualifying children (art. 56(1)(a)(iii)): amount subtracted after multiplying income above EUR 60,000 by 35%.",
+      "value": "EUR 12,575",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 35% and then subtracting €12,575 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.one-child.zero-band.top",
+      "item": "Individual taxed separately under art. 56(1)(b)(iv): parent maintaining (or paying maintenance for) one qualifying child, with an EU/EEA or long-term resident condition: top of the 0% band.",
+      "value": "EUR 14,500",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income does not exceed €14,500",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.one-child.15.upper",
+      "item": "Individual taxed separately under art. 56(1)(b)(iv): parent maintaining (or paying maintenance for) one qualifying child, with an EU/EEA or long-term resident condition: upper end of the 15% band (exclusive); 25% applies above it up to EUR 60,000.",
+      "value": "EUR 21,000",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "exceeds €14,500 but is less than €21,000",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.one-child.15.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(iv): parent maintaining (or paying maintenance for) one qualifying child, with an EU/EEA or long-term resident condition: amount subtracted after multiplying income by 15%.",
+      "value": "EUR 2,175",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 15% and then subtracting €2,175 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.one-child.25.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(iv): parent maintaining (or paying maintenance for) one qualifying child, with an EU/EEA or long-term resident condition: amount subtracted after multiplying income by 25%.",
+      "value": "EUR 4,275",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 25% and then subtracting €4,275 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.one-child.35.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(iv): parent maintaining (or paying maintenance for) one qualifying child, with an EU/EEA or long-term resident condition: amount subtracted after multiplying income above EUR 60,000 by 35%.",
+      "value": "EUR 10,270",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 35% and then subtracting €10,270 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.two-children.zero-band.top",
+      "item": "Individual taxed separately under art. 56(1)(b)(v): parent maintaining (or paying maintenance for) at least two qualifying children: top of the 0% band.",
+      "value": "EUR 18,500",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "where the chargeable income does not exceed €18,500",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.two-children.15.upper",
+      "item": "Individual taxed separately under art. 56(1)(b)(v): parent maintaining (or paying maintenance for) at least two qualifying children: upper end of the 15% band (exclusive); 25% applies above it up to EUR 60,000.",
+      "value": "EUR 25,500",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "exceeds €18,500 but is less than €25,500",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.two-children.15.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(v): parent maintaining (or paying maintenance for) at least two qualifying children: amount subtracted after multiplying income by 15%.",
+      "value": "EUR 2,775",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 15% and then subtracting €2,775 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.two-children.25.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(v): parent maintaining (or paying maintenance for) at least two qualifying children: amount subtracted after multiplying income by 25%.",
+      "value": "EUR 5,325",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 25% and then subtracting €5,325 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.it.parent.two-children.35.subtract",
+      "item": "Individual taxed separately under art. 56(1)(b)(v): parent maintaining (or paying maintenance for) at least two qualifying children: amount subtracted after multiplying income above EUR 60,000 by 35%.",
+      "value": "EUR 11,325",
+      "tax_year": "2026 income, year of assessment 2027 (art. 56(1) as substituted by Act III of 2026, applicable from year of assessment 2027)",
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "by 35% and then subtracting €11,325 from the result",
+      "read_on": "2026-10-04",
+      "used_by": []
+    },
+    {
+      "id": "mt.ptt.general",
+      "item": "Income Tax Act art. 5A(5)(a): final tax on transfers of Malta immovable property made on or after 1 January 2015, as a share of the transfer value (general case; many special rates exist).",
+      "value": "8%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "shall be chargeable at the rate of 8% of the transfer value",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "mt-capital-gains",
+        "mt-inheritance-and-succession",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-rental-income"
+      ]
+    },
+    {
+      "id": "mt.ptt.inherited",
+      "item": "Income Tax Act art. 5A(5)(b): where the property sold was inherited (transfer causa mortis after 24 November 1992) or donated more than five years earlier, the tax is this rate on the excess of transfer value over acquisition value, unless the seller elects otherwise in the deed. Not the 12% of transfer value in art. 5A(5)(a).",
+      "value": "12%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "shall be chargeable at 12% of the excess, if any, of the transfer value over its acquisition value",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "malta-vat-return",
+        "mt-capital-gains",
+        "mt-inheritance-and-succession",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ]
+    },
+    {
+      "id": "mt.ptt.inherited-pre-1992",
+      "item": "Income Tax Act art. 5A(5)(c): property inherited causa mortis before 25 November 1992 (or sold by judicial auction): tax at this rate of the transfer value.",
+      "value": "7%",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "shall be chargeable at the rate of 7% of the transfer value. (d)",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "malta-income-tax",
+        "malta-vat-return",
+        "mt-capital-gains",
+        "mt-inheritance-and-succession",
+        "mt-property-transfer-tax-the-sale-immovable",
+        "mt-reverse-charge-acquisition-intra",
+        "mt-reverse-charge-vat-services-received-from",
+        "mt-vat3-quarterly-return-malta"
+      ]
+    },
+    {
+      "id": "mt.grp.stay-limit",
+      "item": "Global Residence Programme Rules, rule 6(1)(f): special tax status ends if the individual stays in any other jurisdiction for more than one hundred and eighty-three days in a calendar year. Printed in words.",
+      "value": "one hundred and eighty-three days",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/sl/123.148/eng/pdf",
+      "quote": "stays in any other jurisdiction for more than one hundred and eighty-three days in a calendar year",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.nondom.cg-foreign",
+      "item": "Income Tax Act art. 4(1) proviso (ii): no tax on capital gains arising outside Malta for a person not ordinarily resident or not domiciled in Malta, even if remitted. No number.",
+      "value": "no tax",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "no tax shall be payable on capital gains arising outside Malta to a person who is not ordinarily resident in Malta or not domiciled",
+      "read_on": "2026-10-04",
+      "used_by": [
+        "mt-residence-programmes-for-wealthy-families"
+      ]
+    },
+    {
+      "id": "mt.nondom.remittance",
+      "item": "Income Tax Act art. 4(1) proviso (i): for a person not ordinarily resident or not domiciled in Malta, foreign income is taxed only on the amount received in Malta (remittance basis). No number.",
+      "value": "taxed on amount received in Malta",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/cap/123/eng/pdf",
+      "quote": "the tax shall be payable on the amount received in Malta",
+      "read_on": "2026-10-04",
+      "used_by": []
+    }
+  ]
+}

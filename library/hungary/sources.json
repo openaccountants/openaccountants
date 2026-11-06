@@ -1,0 +1,784 @@
+{
+  "country": "hungary",
+  "code": "HU",
+  "url_count": 88,
+  "sources": [
+    {
+      "url": "http://schemas.nav.gov.hu/NTCA/1.0/common",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://schemas.nav.gov.hu/OSA/3.0/annul",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://schemas.nav.gov.hu/OSA/3.0/api",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://schemas.nav.gov.hu/OSA/3.0/base",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "http://schemas.nav.gov.hu/OSA/3.0/data",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://api-test.onlineszamla.nav.gov.hu/invoiceService/v3/",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://api.onlineszamla.nav.gov.hu/invoiceService/v3/",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/nav-gov-hu/Online-Invoice",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/nav-gov-hu/Online-Invoice/tree/master/docs/API%20docs/en",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/nav-gov-hu/Online-Invoice/tree/master/src/schemas/nav/gov/hu/OSA",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "skills": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ],
+      "figures": [
+        "hu.vat.subjective_exemption.threshold",
+        "hu.vat.subjective_exemption.threshold.2025",
+        "hu.vat.subjective_exemption.threshold.2027",
+        "hu.vat.subjective_exemption.threshold.2028",
+        "hu.vat.subjective_exemption.threshold.2024",
+        "hu.vat.subjective_exemption.notice"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/ado/egyeb/map_tajekoztato",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ado/tarsasagi/Megszunt_a_feltoltesi20191205",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/08E",
+      "skills": [
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2608",
+      "skills": [
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations",
+      "skills": [
+        "hu-corporate-tax",
+        "hu-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F25SZJA%2F25szja-kitoltesi-utmutato",
+      "skills": [
+        "hu-capital-and-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato",
+      "skills": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ],
+      "figures": [
+        "hu.vat.frequency.monthly.group",
+        "hu.vat.frequency.switch.to_monthly",
+        "hu.vat.frequency.switch.annual_to_quarterly",
+        "hu.vat.return.form.sheets",
+        "hu.vat.return.rounding",
+        "hu.vat.refund.days.general",
+        "hu.vat.refund.days.risky",
+        "hu.vat.refund.days.reliable",
+        "hu.vat.refund.days.reliable_listed",
+        "hu.vat.refund.days.liquidation",
+        "hu.vat.m_sheets.threshold",
+        "hu.vat.rc.domestic.real_estate",
+        "hu.vat.rc.domestic.waste",
+        "hu.vat.rc.domestic.emissions",
+        "hu.vat.rc.domestic.services"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2F3011-2025_20250930_m.pdf",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2Fe3006-2018",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-business-associations",
+      "skills": [],
+      "figures": [
+        "hu.cit.rate",
+        "hu.cit.return.due",
+        "hu.cit.minimum_profit",
+        "hu.cit.losses",
+        "hu.lbt.max_rate"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/a-short-summary-on-the-taxation-of-private-persons",
+      "skills": [
+        "hu-cross-border"
+      ],
+      "figures": [
+        "hu.pit.rate",
+        "hu.pit.dividend",
+        "hu.pit.interest",
+        "hu.pit.esop",
+        "hu.pit.foreign_tax_credit",
+        "hu.pit.allowances.foreigners",
+        "hu.pit.return.due",
+        "hu.pit.return.form.2026",
+        "hu.ev.entrepreneur_tax",
+        "hu.szocho.cap.multiple",
+        "hu.kata.monthly"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/social-security-contributions-payable",
+      "skills": [],
+      "figures": [
+        "hu.tb.rate",
+        "hu.eho.healthcare_service.monthly",
+        "hu.eho.healthcare_service.daily"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/tax-residence-certificate",
+      "skills": [
+        "hu-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato",
+      "skills": [
+        "hu-corporate-tax",
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/02.-az-onallo-tevekenysegbol-szarmazo-jovedelem-es-adozasa-2026.-01.-09",
+      "skills": [
+        "hu-other-independent-income"
+      ],
+      "figures": [
+        "hu.pit.rate.hu",
+        "hu.pit.self_employment.flat_cost"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31",
+      "skills": [
+        "hu-income-tax",
+        "hu-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.",
+      "skills": [],
+      "figures": [
+        "hu.ev.entrepreneur_dividend",
+        "hu.szocho.cap",
+        "hu.szocho.ev.min_base",
+        "hu.tb.rate.ev",
+        "hu.min_wage.monthly",
+        "hu.min_wage.guaranteed"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/04.-Maganszemelyek-kulfoldrol-szarmazo-jovedelme-2026.02.20",
+      "skills": [
+        "hu-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/06.-a-mezogazdasagi-ostermelo-adozasa-2026-05-12",
+      "skills": [
+        "hu-other-independent-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/09.-Az-ingatlanertekesitesbol-es-a-vagyoni-erteku-jog-atruhazasabol-szarmazo-jovedelem-2026.02.04",
+      "skills": [
+        "hu-capital-and-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/10.-Ingatlan-berbeadasanak-es-egyeb-hasznositasanak-adozasa-2026.02.03",
+      "skills": [
+        "hu-capital-and-rental-income",
+        "hu-other-independent-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20",
+      "skills": [
+        "hu-income-tax",
+        "hu-social-contributions"
+      ],
+      "figures": [
+        "hu.atalany.revenue_cap",
+        "hu.atalany.revenue_cap.retail",
+        "hu.atalany.tax_free",
+        "hu.atalany.cost.general",
+        "hu.atalany.cost.80",
+        "hu.atalany.cost.90"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03",
+      "skills": [
+        "hu-vat-return",
+        "hungary-vat-return"
+      ],
+      "figures": [
+        "hu.vat.rate.standard",
+        "hu.vat.rate.reduced.18",
+        "hu.vat.rate.reduced.18.events",
+        "hu.vat.rate.reduced.5.goods",
+        "hu.vat.rate.reduced.5.services",
+        "hu.vat.rate.zero.newspapers",
+        "hu.vat.cash_accounting.threshold",
+        "hu.vat.frequency.monthly.threshold",
+        "hu.vat.frequency.monthly.new_business",
+        "hu.vat.frequency.annual.vat_threshold",
+        "hu.vat.frequency.annual.turnover_cap",
+        "hu.vat.due.monthly",
+        "hu.vat.due.quarterly",
+        "hu.vat.due.annual",
+        "hu.vat.return.form.2026",
+        "hu.vat.return.nil",
+        "hu.vat.esl.form.2026",
+        "hu.vat.refund.min.monthly",
+        "hu.vat.refund.min.quarterly",
+        "hu.vat.refund.min.annual",
+        "hu.vat.m_sheets.eafa",
+        "hu.vat.rtir.software",
+        "hu.vat.rtir.manual.days",
+        "hu.vat.rtir.manual.large",
+        "hu.vat.rtir.manual.large.days"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/18.-A-szamla-nyugta-kibocsatasanak-alapveto-szabalyai-2026.-03.-02",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/18.-A-szamla-nyugta-kibocsatasanak-alapveto-szabalyai-2026.-03.-02.",
+      "skills": [],
+      "figures": [
+        "hu.vat.invoice.deadline",
+        "hu.vat.invoice.b2c_limit"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "skills": [
+        "hu-cross-border",
+        "hu-payroll",
+        "hu-vat-return",
+        "hungary-vat-return"
+      ],
+      "figures": [
+        "hu.vat.frequency.reference_year",
+        "hu.vat.frequency.annual.no_eu_number",
+        "hu.vat.frequency.quarterly.default",
+        "hu.vat.esl.due",
+        "hu.vat.esl.monthly_switch",
+        "hu.pit.return.due.2025",
+        "hu.payroll.due"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26",
+      "skills": [
+        "hungary-vat-return"
+      ],
+      "figures": [
+        "hu.vat.eu.distance_sales",
+        "hu.vat.eu.distance_sales.huf",
+        "hu.vat.eu.acquisitions.special",
+        "hu.vat.rc.invoice_wording"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02",
+      "skills": [],
+      "figures": [
+        "hu.cit.advance.threshold",
+        "hu.cit.advance.due"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16",
+      "skills": [
+        "hu-capital-and-rental-income",
+        "hu-payroll"
+      ],
+      "figures": [
+        "hu.szocho.rate",
+        "hu.szocho.interest"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/73.-Szja-adoalap-kedvezmenyek-2026.-03.19",
+      "skills": [
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/91.-informacios-fuzet---az-egeszsegugyi-szolgaltatasi-jarulek-2026.01.09",
+      "skills": [
+        "hu-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+      "skills": [],
+      "figures": [
+        "hu.kiva.rate",
+        "hu.kiva.entry.headcount",
+        "hu.kiva.entry.revenue",
+        "hu.kiva.exit.headcount",
+        "hu.kiva.exit.revenue"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20",
+      "skills": [
+        "hu-income-tax",
+        "hu-social-contributions"
+      ],
+      "figures": [
+        "hu.kata.eligibility",
+        "hu.kata.payer_rule",
+        "hu.kata.revenue_cap",
+        "hu.kata.excess_rate",
+        "hu.kata.monthly_frame"
+      ]
+    },
+    {
+      "url": "https://nav.gov.hu/print/sajtoszoba/hirek/A_napokban_csaknem_400_ezren_kapnak_potlekertesitest_a_NAV-tol",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ugyfeliranytu/jegybank",
+      "skills": [
+        "hu-corporate-tax",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-social-contributions",
+        "hu-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/23._informacios_fuzet_-_Onellenorzes",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02",
+      "skills": [
+        "hu-corporate-tax",
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/68.-Az-innovacios-jarulek-legfontosabb-szabalyai-2026.-02.-02",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/92.-Kisvallalati-ado-szabalyozasa-2026.-05.-18",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://net.jogtar.hu/jogszabaly?docid=99600081.tv",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://net.jogtar.hu/jogszabaly?docid=a0000100.tv",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://net.jogtar.hu/jogszabaly?docid=a0700127.tv",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://net.jogtar.hu/jogszabaly?docid=a1300005.tv",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://net.jogtar.hu/jogszabaly?docid=a1400023.ngm",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://net.jogtar.hu/jogszabaly?docid=a1700150.tv",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.hu/jogszabaly/1995-117-00-00",
+      "skills": [
+        "hu-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.hu/jogszabaly/1996-81-00-00",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/1990-100-00-00",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/1995-117-00-00",
+      "skills": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/1996-81-00-00",
+      "skills": [
+        "hu-corporate-tax",
+        "hu-cross-border",
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2004-34-00-00",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2007-127-00-00",
+      "skills": [
+        "hu-vat-return",
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2011-155-00-00",
+      "skills": [
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2013-37-00-00",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2017-150-00-00",
+      "skills": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions",
+        "hu-transfer-pricing",
+        "hu-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2017-32-20-2X",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2017-465-20-22",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2018-52-00-00",
+      "skills": [
+        "hu-capital-and-rental-income",
+        "hu-cross-border",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2019-122-00-00",
+      "skills": [
+        "hu-cross-border",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2020-123-00-00",
+      "skills": [
+        "hu-other-independent-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2022-13-00-00",
+      "skills": [
+        "hu-income-tax",
+        "hu-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2024-394-20-22",
+      "skills": [
+        "hu-other-independent-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2024-55-00-00",
+      "skills": [
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2025-13-00-00",
+      "skills": [
+        "hu-income-tax",
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2025-14-00-00",
+      "skills": [
+        "hu-income-tax",
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2025-15-00-00",
+      "skills": [
+        "hu-income-tax",
+        "hu-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2025-426-20-22",
+      "skills": [
+        "hu-capital-and-rental-income",
+        "hu-income-tax",
+        "hu-other-independent-income",
+        "hu-payroll",
+        "hu-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2025-45-20-2X",
+      "skills": [
+        "hu-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2025-84-00-00",
+      "skills": [
+        "hu-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://njt.jog.gov.hu/jogszabaly/2026-40-00-00",
+      "skills": [
+        "hu-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://onlineszamla-test.nav.gov.hu",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://onlineszamla.nav.gov.hu",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://openaccountants.com",
+      "skills": [
+        "hungary-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mnb.hu/Jegybanki_alapkamat_alakulasa",
+      "skills": [
+        "hu-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mnb.hu/en/monetary-policy/the-monetary-council/press-releases/2026/press-release-on-the-monetary-council-meeting-of-20-october-2026",
+      "skills": [
+        "hu-capital-and-rental-income",
+        "hu-other-independent-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol",
+      "skills": [
+        "hu-income-tax",
+        "hu-payroll",
+        "hu-social-contributions"
+      ],
+      "figures": []
+    }
+  ]
+}

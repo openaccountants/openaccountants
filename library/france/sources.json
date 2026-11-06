@@ -1,0 +1,3954 @@
+{
+  "country": "france",
+  "code": "FR",
+  "url_count": 478,
+  "sources": [
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1013-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "france-einvoice"
+      ],
+      "figures": [
+        "fr.vat.rate.standard",
+        "fr.vat.rate.intermediate",
+        "fr.vat.rate.reduced"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/10389-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": [
+        "fr.transfer-pricing.penalty.share-of-transactions",
+        "fr.transfer-pricing.penalty.share-of-adjustments",
+        "fr.transfer-pricing.penalty.minimum",
+        "fr.transfer-pricing.2257.late-filing-fine",
+        "fr.transfer-pricing.2257.omission-fine",
+        "fr.transfer-pricing.2257.omission-fine.floor",
+        "fr.transfer-pricing.2257.omission-fine.cap"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1053-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217",
+      "skills": [
+        "fr-income-tax",
+        "fr-personal-income-tax"
+      ],
+      "figures": [
+        "fr.income-tax.salary-deduction.rate",
+        "fr.income-tax.salary-deduction.minimum",
+        "fr.income-tax.salary-deduction.ceiling"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1100-PGP.html",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1111-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11247-PGP.html/identifiant=BOI-IR-PAS-20-20-10-20260407",
+      "skills": [
+        "fr-cross-border",
+        "fr-income-tax",
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11252-PGP.html/identifiant%3DBOI-IR-PAS-20-20-30-10-20181228",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11255-PGP.html",
+      "skills": [
+        "fr-income-tax",
+        "fr-personal-income-tax",
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11400-PGP.html",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11462-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": [
+        "fr.transfer-pricing.declaration-2257.threshold",
+        "fr.transfer-pricing.declaration-2257.de-minimis"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11463-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": [
+        "fr.transfer-pricing.documentation.threshold"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11471-PGP.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11787-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1190-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1192-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1194-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1196-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11964-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11967-PGP.html",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11968-PGP.html",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/11969-PGP.html",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": [
+        "fr.crypto.foreign-account.penalty.per-account",
+        "fr.crypto.foreign-account.penalty.per-omission",
+        "fr.crypto.foreign-account.penalty.cap",
+        "fr.crypto.foreign-account.high-value.threshold",
+        "fr.crypto.foreign-account.penalty.per-account.high",
+        "fr.crypto.foreign-account.penalty.per-omission.high"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1255-PGP.html",
+      "skills": [
+        "fr-cfe"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/13223-PGP.html",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/13631-PGP.html/identifiant=BOI-BAREME-000043-20260402",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/13897-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1396-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/140-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/142-PGP.html/identifiant=BOI-TVA-DECLA-30-20-20-20-20220119",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1449-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "france-einvoice",
+        "france-vat-return"
+      ],
+      "figures": [
+        "fr.vat.rate.special"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1458-PGP.html",
+      "skills": [
+        "fr-income-tax",
+        "fr-tax-audit",
+        "france-transfer-pricing"
+      ],
+      "figures": [
+        "fr.penalty.late-interest.monthly"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1479-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/14954-PGP.html",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/14954-PGP.html/ACTU-2026-00022",
+      "skills": [],
+      "figures": [
+        "fr.income-tax.indexation.2026"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/15011-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/15092-PGP.html/ACTU-2026-00097",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/15095-PGP.html/identifiant=BOI-IR-CDHR-10-20260630",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": [
+        "fr.cdhr.minimum-rate",
+        "fr.cdhr.threshold.single",
+        "fr.cdhr.threshold.couple",
+        "fr.cdhr.decote.limit.single",
+        "fr.cdhr.decote.limit.couple",
+        "fr.cdhr.decote.factor",
+        "fr.cdhr.allowance.per-dependant",
+        "fr.cdhr.allowance.couple"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/15140-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1531-PGP.html",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/1683-PGP.html",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2033-PGP.html/identifiant=BOI-TVA-LIQ-30-10-10-20251119",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2102-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "fr-cfe"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2109-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "fr-tax-audit",
+        "france-bookkeeping",
+        "france-tax-optimization",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2113-PGP.html",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2114-PGP.html",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/236-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2418-PGP.html/identifiant=BOI-TVA-DECLA-20-20-30-10-20230118",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/243-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407",
+      "skills": [
+        "fr-income-tax",
+        "fr-personal-income-tax",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.income-tax.quotient.cap-per-half-share",
+        "fr.income-tax.quotient.cap-first-child-single-parent",
+        "fr.income-tax.quotient.cap-shared-custody-half",
+        "fr.income-tax.quotient.cap-single-no-dependants",
+        "fr.income-tax.quotient.extra-reduction-veteran-invalid",
+        "fr.income-tax.quotient.extra-reduction-single-parent"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407",
+      "skills": [
+        "fr-income-tax",
+        "fr-personal-income-tax"
+      ],
+      "figures": [
+        "fr.income-tax.decote.threshold.single",
+        "fr.income-tax.decote.threshold.couple",
+        "fr.income-tax.decote.ceiling.single",
+        "fr.income-tax.decote.ceiling.couple",
+        "fr.income-tax.decote.rate"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/2594-PGP.html",
+      "skills": [
+        "fr-cfe"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3412-PGP.html",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3491-PGP.html",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": [
+        "fr.corporate-tax.social-contribution.turnover-exemption"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3492-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "fr-corporate-tax"
+      ],
+      "figures": [
+        "fr.corporate-tax.social-contribution.rate",
+        "fr.corporate-tax.social-contribution.abatement"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3610-PGP.html",
+      "skills": [
+        "fr-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3648-PGP.html",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3750-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3848-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/3973-PGP.html",
+      "skills": [
+        "fr-personal-income-tax",
+        "fr-rental-income"
+      ],
+      "figures": [
+        "fr.rental.micro-foncier.threshold",
+        "fr.rental.micro-foncier.abattement"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4212-PGP.html",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4332-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4355-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4520-PGP.html",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4627-PGP.html",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4627-PGP.html/identifiant=BOI-BNC-BASE-40-60-50-20-20141007",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4628-PGP.html",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4658-PGP.html",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4659-PGP.html",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/468-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4682-PGP.html",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4684-PGP.html",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4698-PGP.html",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4699-PGP.html",
+      "skills": [
+        "france-bookkeeping",
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4750-PGP.html",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/4911-PGP.html",
+      "skills": [
+        "fr-income-tax",
+        "fr-tax-audit",
+        "france-tax-optimization",
+        "france-transfer-pricing"
+      ],
+      "figures": [
+        "fr.penalty.late-filing",
+        "fr.penalty.deliberate-breach",
+        "fr.penalty.fraud"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/5505-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/5510-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/5654-PGP.html",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/5677-PGP.html/identifiant=BOI-RSA-GEO-40-10-20-20250811",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/5956-PGP.html",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/5956-PGP.html/identifiant%3DBOI-RSA-BASE-30-10-20-20260217",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/597-PGP.html/identifiant=BOI-CTX-PREA-10-30-20260422",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/6560-PGP.html",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/7804-PGP.html/identifiant=BOI-IR-CHR-20170711",
+      "skills": [
+        "fr-income-tax",
+        "fr-personal-income-tax"
+      ],
+      "figures": [
+        "fr.cehr.rate.low",
+        "fr.cehr.threshold.single.lower",
+        "fr.cehr.threshold.single.upper",
+        "fr.cehr.rate.high",
+        "fr.cehr.threshold.couple.upper"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/8020-PGP.html",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/839-PGP.html",
+      "skills": [
+        "fr-cfe",
+        "france-bookkeeping",
+        "france-financial-statements"
+      ],
+      "figures": [
+        "fr.cvae.rate.max.2026",
+        "fr.cvae.rate.max.2025",
+        "fr.cvae.turnover.first-band",
+        "fr.cvae.liability.threshold",
+        "fr.cvae.relief.2026",
+        "fr.cvae.relief.turnover-condition",
+        "fr.cvae.franchise",
+        "fr.cvae.relief.2025"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/8420-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/8597-PGP.html",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": [
+        "fr.property-gains.surtax.threshold"
+      ]
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/873-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/9026-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "fr-tax-audit",
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/9028-PGP.html",
+      "skills": [
+        "fr-business-accounting",
+        "fr-tax-audit",
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/9368-PGP.html/identifiant=BOI-BAREME-000036-20260701",
+      "skills": [
+        "france-financial-statements",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/937-PGP.html",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/bofip/9389-PGP.html",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://bofip.impots.gouv.fr/export/pdf/1963",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F10029",
+      "skills": [
+        "france-bookkeeping",
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F21746",
+      "skills": [
+        "france-bookkeeping",
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F21852",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23208",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23266",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23267",
+      "skills": [
+        "fr-crypto-tax",
+        "fr-income-tax",
+        "france-bookkeeping",
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23460",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23547",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23566",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F23575",
+      "skills": [
+        "france-bookkeeping",
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F24024",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F31214",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F31440",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F31808",
+      "skills": [
+        "france-bookkeeping",
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F32105",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F32232",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F32333",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F32886",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F32919",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F35934",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F35957",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F37169",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F37366",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F37369",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F37396",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F37398",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F37402",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.fr/vosdroits/F37411",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/actualites/A17100",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/actualites/A18259",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F10029",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F21746",
+      "skills": [
+        "fr-business-accounting",
+        "fr-tax-audit",
+        "france-tax-optimization",
+        "france-vat-return"
+      ],
+      "figures": [
+        "fr.vat.franchise.goods.base",
+        "fr.vat.franchise.goods.tolerance",
+        "fr.vat.franchise.services.base",
+        "fr.vat.franchise.services.tolerance",
+        "fr.vat.franchise.lawyers-authors.base",
+        "fr.vat.franchise.lawyers-authors.tolerance",
+        "fr.vat.franchise.lawyers-authors.other.base",
+        "fr.vat.franchise.lawyers-authors.other.tolerance",
+        "fr.vat.franchise.eu-turnover-limit",
+        "fr.vat.intra-eu-acquisitions.threshold"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+      "skills": [
+        "fr-cfe",
+        "fr-personal-income-tax",
+        "fr-rental-income",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.micro.threshold.goods.2026",
+        "fr.micro.threshold.services.2026",
+        "fr.micro.threshold.tourism-unclassified",
+        "fr.micro.threshold.goods.2025",
+        "fr.micro.threshold.services.2025",
+        "fr.micro.abattement.goods",
+        "fr.micro.abattement.services-bic",
+        "fr.micro.abattement.bnc",
+        "fr.micro.abattement.tourism-classified",
+        "fr.micro.abattement.tourism-unclassified",
+        "fr.micro.abattement.minimum",
+        "fr.micro.abattement.minimum.mixed",
+        "fr.micro.vfl.rate.goods",
+        "fr.micro.vfl.rate.services-bic",
+        "fr.micro.vfl.rate.bnc",
+        "fr.micro.vfl.rfr.single",
+        "fr.micro.vfl.rfr.couple",
+        "fr.micro.vfl.rfr.couple-one-child",
+        "fr.micro.vfl.rfr.couple-two-children"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23282",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23460",
+      "skills": [
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23547",
+      "skills": [
+        "fr-cfe",
+        "fr-rental-income"
+      ],
+      "figures": [
+        "fr.cfe.minimum-base.floor",
+        "fr.cfe.minimum-base.band1.turnover",
+        "fr.cfe.minimum-base.band1.ceiling",
+        "fr.cfe.minimum-base.band2.turnover",
+        "fr.cfe.minimum-base.band2.ceiling",
+        "fr.cfe.minimum-base.band3.turnover",
+        "fr.cfe.minimum-base.band3.ceiling",
+        "fr.cfe.minimum-base.band4.turnover",
+        "fr.cfe.minimum-base.band4.ceiling",
+        "fr.cfe.minimum-base.band5.turnover",
+        "fr.cfe.minimum-base.band5.ceiling",
+        "fr.cfe.minimum-base.band6.ceiling",
+        "fr.cfe.exemption.small-turnover",
+        "fr.cfe.furnished-letting.threshold",
+        "fr.cfe.bare-letting.threshold",
+        "fr.cfe.base-reduction.industrial"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23548",
+      "skills": [
+        "fr-cfe"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23566",
+      "skills": [
+        "fr-business-accounting",
+        "france-vat-return"
+      ],
+      "figures": [
+        "fr.vat.simplified.instalment.july",
+        "fr.vat.simplified.instalment.december",
+        "fr.vat.simplified.instalment.exemption",
+        "fr.vat.normal.quarterly-threshold"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23575",
+      "skills": [
+        "fr-business-accounting",
+        "fr-corporate-tax",
+        "fr-tax-audit",
+        "france-financial-statements",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.vat.simplified.goods.lower",
+        "fr.vat.simplified.goods.upper",
+        "fr.vat.simplified.services.lower",
+        "fr.vat.simplified.services.upper",
+        "fr.vat.simplified.goods.tolerance",
+        "fr.vat.simplified.services.tolerance",
+        "fr.vat.simplified.vat-due-limit",
+        "fr.corporate-tax.efiling-penalty.rate",
+        "fr.corporate-tax.efiling-penalty.minimum",
+        "fr.corporate-tax.rate.standard",
+        "fr.corporate-tax.rate.reduced",
+        "fr.corporate-tax.reduced.profit-band",
+        "fr.corporate-tax.reduced.turnover-limit",
+        "fr.corporate-tax.reduced.ownership",
+        "fr.corporate-tax.instalments.exemption"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F24013",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F24024",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": [
+        "fr.company.legal-reserve.rate",
+        "fr.company.legal-reserve.cap"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "skills": [
+        "fr-business-accounting",
+        "france-financial-statements"
+      ],
+      "figures": [
+        "fr.accounts.filing.penalty",
+        "fr.accounts.filing.penalty.repeat"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31440",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": [
+        "fr.audit.threshold.balance-sheet",
+        "fr.audit.threshold.turnover",
+        "fr.audit.threshold.headcount",
+        "fr.audit.size-test",
+        "fr.audit.mandate.length",
+        "fr.audit.failure-to-appoint.fine",
+        "fr.audit.request-by-partners"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31808",
+      "skills": [
+        "fr-business-accounting",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31973",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F32105",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F33754",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F35103",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F36249",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37169",
+      "skills": [
+        "fr-business-accounting",
+        "france-financial-statements"
+      ],
+      "figures": [
+        "fr.accounting.micro.balance-sheet",
+        "fr.accounting.micro.turnover",
+        "fr.accounting.micro.headcount",
+        "fr.accounting.small.balance-sheet",
+        "fr.accounting.small.turnover",
+        "fr.accounting.small.headcount",
+        "fr.accounting.medium.balance-sheet",
+        "fr.accounting.medium.turnover",
+        "fr.accounting.medium.headcount",
+        "fr.accounting.size-test",
+        "fr.accounting.records.retention",
+        "fr.accounting.records.retention.penalty",
+        "fr.accounting.simplified-regime.sales-turnover",
+        "fr.accounting.simplified-regime.services-turnover",
+        "fr.accounting.simplified-regime.vat-limit"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37366",
+      "skills": [],
+      "figures": [
+        "fr.company.sas.min-capital",
+        "fr.company.sas.paid-in-balance-period"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37402",
+      "skills": [],
+      "figures": [
+        "fr.company.sa.min-capital",
+        "fr.company.sa.min-shareholders"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37411",
+      "skills": [],
+      "figures": [
+        "fr.company.sarl.paid-in-at-creation",
+        "fr.company.sarl.max-partners",
+        "fr.company.sarl.contribution-auditor.threshold"
+      ]
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37777",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F559",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://fnfe-mpe.org/factur-x/",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://fnfe-mpe.org/factur-x/factur-x-et-zugferd/",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/GouvernementFR/calculette-impots-m-source-code",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/openfisca/calculette-impots-python",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/openfisca/openfisca-france",
+      "skills": [
+        "references"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/romainsimon/paperasse",
+      "skills": [
+        "fr-business-accounting",
+        "fr-capital-gains",
+        "fr-rental-income",
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.agirc-arrco.fr/particuliers/ma-retraite/comprendre-ma-retraite/points-de-retraite-comment-sont-ils-obtenus/",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/Plans%20comptables/2026/PCG--1er-janvier-2026.pdf",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf",
+      "skills": [
+        "france-bookkeeping",
+        "france-financial-statements",
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html",
+      "skills": [
+        "fr-income-tax",
+        "fr-social-contributions",
+        "france-formation",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.micro.rate.sales",
+        "fr.micro.rate.services-bic",
+        "fr.micro.rate.services-bnc",
+        "fr.micro.rate.cipav",
+        "fr.micro.rate.classified-tourist-rental",
+        "fr.micro.acre.rate.sales.until-jun2026",
+        "fr.micro.acre.rate.sales.from-jul2026",
+        "fr.micro.acre.rate.services-bic.until-jun2026",
+        "fr.micro.acre.rate.services-bic.from-jul2026",
+        "fr.micro.acre.rate.services-bnc.until-jun2026",
+        "fr.micro.acre.rate.services-bnc.from-jul2026",
+        "fr.micro.acre.rate.cipav.until-jun2026",
+        "fr.micro.acre.rate.cipav.from-jul2026",
+        "fr.micro.cfp.artisan",
+        "fr.micro.cfp.trader",
+        "fr.micro.cfp.liberal",
+        "fr.micro.chamber-tax.services",
+        "fr.micro.chamber-tax.sales",
+        "fr.micro.chamber-tax.craft-services"
+      ]
+    },
+    {
+      "url": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/toutes-les-actualites/2026--modification-des-seuils-de.html",
+      "skills": [],
+      "figures": [
+        "fr.micro.threshold.sales",
+        "fr.micro.threshold.services"
+      ]
+    },
+    {
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2004-81111",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-81651",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cleiss.fr/reglements/a1.html",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.coe.int/en/web/conventions/full-list?module=declarations-by-treaty&numSte=127&codeNature=0",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.economie.gouv.fr/particuliers/gerer-mon-argent/gerer-mon-budget-et-mon-epargne/comment-fonctionne-le-plan-depargne-retraite-individuel",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/impot-sur-le-revenu-corrigez-votre-declaration-en-ligne-jusquau-30-novembre-2026",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.formalites.entreprises.gouv.fr",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/actualite/contribution-differentielle-sur-les-hauts-revenus-cdhr",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/charte-des-droits-et-obligations-du-contribuable-verifie",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/fichiers-standards-des-ecritures-comptables",
+      "skills": [
+        "fr-business-accounting",
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/formulaire/2033-sd/liasse-bicsi-regime-rsi-tableaux-ndeg-2033-sd-2033-g-sd",
+      "skills": [
+        "fr-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/formulaire/2042/declaration-des-revenus",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/international-particulier/le-regime-des-impatries",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/international-particulier/questions/comment-comprendre-mon-avis-dimposition",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-suis-je-redevable-des-contributions",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/international-particulier/questions/je-vends-un-bien-immobilier-comment-et-quel-taux-suis-je-impose",
+      "skills": [
+        "fr-capital-gains",
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/la-declaration-pays-par-pays",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/le-regime-reel-normal-dates-limites-de-transmission-des-ca3",
+      "skills": [
+        "fr-business-accounting",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026",
+      "skills": [
+        "fr-income-tax",
+        "fr-personal-income-tax",
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/les-modalites-du-prelevement-la-source-0",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/lassurance-vie-et-le-pea-0",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/location-meublee",
+      "skills": [
+        "fr-rental-income"
+      ],
+      "figures": [
+        "fr.rental.furnished.micro.threshold.longterm.2025",
+        "fr.rental.furnished.micro.threshold.unclassified.2025",
+        "fr.rental.furnished.abattement.longterm",
+        "fr.rental.furnished.abattement.unclassified",
+        "fr.rental.furnished.abattement.minimum",
+        "fr.rental.lmp.receipts-threshold"
+      ]
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": [
+        "fr.crypto.pfu.total",
+        "fr.crypto.pfu.income-tax-part",
+        "fr.crypto.pfu.social-part",
+        "fr.crypto.exemption.annual-disposals"
+      ]
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/comment-puis-je-beneficier-de-la-deduction-forfaitaire-de-10",
+      "skills": [
+        "fr-income-tax",
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/dirigeant-de-pme-partant-la-retraite-comment-sera-imposee-la-plus-value-que-je",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/jai-des-stock-options-comment-est-impose-le-gain-levee-doptions",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/jai-realise-des-plus-values-ai-je-droit-un-abattement-pour-duree-de-detention",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": [
+        "fr.shares.abattement.common.2-to-8-years",
+        "fr.shares.abattement.common.8-years",
+        "fr.shares.abattement.enhanced.8-years",
+        "fr.shares.retirement.fixed-allowance",
+        "fr.shares.young-farmer.fixed-allowance"
+      ]
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/jai-vendu-des-bons-de-souscription-de-parts-de-createurs-dentreprise-ou-bspce",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/particulier/questions/mon-entreprise-ma-attribue-des-actions-gratuites-comment-sera-impose-le-gain",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/impot-sur-les-societes",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique",
+      "skills": [
+        "fr-business-accounting",
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/je-passe-la-facturation-electronique",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/les-regimes-dimposition-la-tva",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-sous-quelles-conditions-puis-je-opter-pour-l",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/questions/ma-societe-situee-en-france-fait-partie-dun-groupe-international-comment",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
+      "skills": [
+        "fr-business-accounting",
+        "france-einvoice",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/professionnel/questions/quels-sont-les-differents-taux-de-tva-applicables-dans-les-dom",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": [
+        "fr.vat.rate.dom.standard",
+        "fr.vat.rate.dom.reduced"
+      ]
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/2257-sd/2017/2257-sd_1338.pdf",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/2258-sd/2025/2258-sd_4927.pdf",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5377.pdf",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf",
+      "skills": [
+        "fr-tax-audit",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/3517-s-sd/2026/3517-s-sd_5291.pdf",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/formulaires/3517-s-sd/2026/3517-s-sd_5424.pdf",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/royaume-uni/convention_avec_le_ru_modifiee_par_la_cml.pdf",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/impot_mondial_15pc_pilier2/gu-2259-sd---2025-v1.pdf",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/210_declarer_payer/tva_a_limportation_-_notice.pdf",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_japprofondis-la-facturation-electronique.pdf",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_je-decouvre-la-facturation-electronique.pdf",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq_tout_savoir_facturation-electronique.pdf",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/fiche-3_tpe_a-partir-de-quand-mon-entreprise-doit-etre-prete.pdf",
+      "skills": [
+        "france-einvoice",
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/japprof_frequences-et-delais-de-transmission.pdf",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/3_Documentation/depliants/nid_4002_gp_120.pdf",
+      "skills": [
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/sites/default/files/media/3_Documentation/depliants/pro_fiche_cet-ifer_2026.pdf",
+      "skills": [
+        "fr-cfe"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/specifications-externes-b2b",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/04-declaration_revenus_64a73.pdf",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/05-situation_foyer_75a84.pdf",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/06-traitements_salaires_85a114.pdf",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/08-RCM_121a136.pdf",
+      "skills": [
+        "fr-capital-gains",
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/09-plus_values_137a156.pdf",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/10-rev_fonciers_157a160.pdf",
+      "skills": [
+        "fr-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf",
+      "skills": [
+        "fr-rental-income",
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf",
+      "skills": [
+        "fr-personal-income-tax",
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/13-RICI_2042_237a256.pdf",
+      "skills": [
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/19-decla_rev_fonciers_341a364.pdf",
+      "skills": [
+        "fr-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/21-calcul_impot_369a382.pdf",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/aide_memoire.pdf",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf",
+      "skills": [
+        "fr-capital-gains",
+        "fr-crypto-tax",
+        "fr-rental-income",
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/plafonnement.pdf",
+      "skills": [
+        "fr-personal-income-tax",
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/affichCode.do?cidTexte=LEGITEXT000006069577&idSectionTA=LEGISCTA000006179663",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/ceta/id/CETATEXT000051141457",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006302200",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006302662",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006307676",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006308201",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006312863",
+      "skills": [
+        "fr-capital-gains",
+        "fr-cfe",
+        "fr-corporate-tax",
+        "fr-cross-border",
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019225874/2026-03-07",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019291719/2026-10-26",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904",
+      "skills": [
+        "fr-corporate-tax",
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-24",
+      "skills": [
+        "fr-capital-gains",
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-29",
+      "skills": [
+        "fr-tax-audit",
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020763620/2026-07-23",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000024453202",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027804775",
+      "skills": [
+        "france-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027978330",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028312309/2026-10-24",
+      "skills": [
+        "fr-capital-gains",
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029355562/2026-10-24",
+      "skills": [
+        "fr-capital-gains",
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029355753",
+      "skills": [
+        "fr-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029355796",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030061684",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031011715",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031815417",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031815505",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033812315",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033836779",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034387974",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036354358",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036384999",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036385041",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036427364/2026-10-29",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037312536/2026-10-30",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037313425",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037526745",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037526846",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037949145",
+      "skills": [
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037985788",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037985917",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038610232/2026-01-01",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038611013/",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038681470",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039222466/2026-03-26",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039222527",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039382322",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041467574/2026-06-18",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042159010",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042907688",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044045593/2026-09-25",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044983610/2026-03-21",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044983701/2026-01-01",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045765660",
+      "skills": [
+        "fr-corporate-tax",
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045765660/2026-10-29",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046197457",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046860839/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562",
+      "skills": [
+        "fr-corporate-tax",
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562/2026-02-20",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562/2026-10-29",
+      "skills": [
+        "fr-tax-audit",
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047288764",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047288764/2026-05-08",
+      "skills": [
+        "france-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756",
+      "skills": [
+        "fr-capital-gains",
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047983348/2026-09-29",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048803788",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806252",
+      "skills": [
+        "fr-capital-gains",
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806274",
+      "skills": [
+        "fr-capital-gains",
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806379",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048831340",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048834056",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048846056",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048847486",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049641637",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049641637/2026-10-29",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049803758",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051200525",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051202565",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051203497",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051213330",
+      "skills": [
+        "fr-corporate-tax",
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051213330/2026-10-29",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051218166",
+      "skills": [
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051218411",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051218440",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051219475",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051219475/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051219510",
+      "skills": [
+        "fr-cfe",
+        "fr-corporate-tax",
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051284232/2026-10-30",
+      "skills": [
+        "fr-social-contributions",
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051322706/2026-05-12",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051322888",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051322888/",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051765018",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053278668/2026-05-26",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053278678/2026-10-09",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053282399/2026-06-16",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053293950/2999-01-01",
+      "skills": [
+        "france-einvoice",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/2026-05-02",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542636/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542708/2026-05-07",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542827/2026-04-01",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544785",
+      "skills": [
+        "fr-rental-income"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544910",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546693/2026-09-22",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546784",
+      "skills": [
+        "fr-corporate-tax",
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546896",
+      "skills": [
+        "fr-capital-gains",
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546896/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053560738",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053560738/2026-10-29",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053561826/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053576899",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053584839",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623",
+      "skills": [
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623/2026-10-29",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054339286/2026-10-29",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373444",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373444/2026-10-29",
+      "skills": [
+        "fr-tax-audit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373514",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373568",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373571",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373628",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373979/2026-10-29",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054374042/2026-07-01",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGIARTI000006745464/2026-07-11",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006161292",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162005",
+      "skills": [
+        "france-bookkeeping",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162534/",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179484/",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006191656",
+      "skills": [
+        "fr-business-accounting"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006161295/",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069569/LEGISCTA000006179225/2026-10-29",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006147309/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006162567/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006162567/2026-10-29",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006162758/2025-12-31",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006162921/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006163002/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006163056/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006179663/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006179987/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006179995/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191654/",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191654/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191656/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191662/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191854/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191855/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191928/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191928/2026-10-29",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000025049019/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000026890501/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000033779948/2026-10-24",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000036384995/",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000037943229/2025-12-31",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000037943229/2026-10-29",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000021019133/2026-10-30",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000035609798/2026-06-14/",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006073189/LEGISCTA000006156797/?anchor=LEGIARTI000006749178",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000044598127/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000049803748/2026-10-24",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006073189",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000033734387",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000048727469",
+      "skills": [
+        "france-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053177561",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053226452",
+      "skills": [
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000054309935",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000533051",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000537402",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021645398",
+      "skills": [
+        "fr-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048727345",
+      "skills": [
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049888566",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052129841",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053226384",
+      "skills": [
+        "fr-capital-gains",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053449085",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/juri/id/CETATEXT000043704443",
+      "skills": [
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019970722",
+      "skills": [
+        "france-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000033020705/2026-03-03",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000048847605/2026-03-15",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053265270/2026-10-29",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053283560/2026-02-15",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053546715",
+      "skills": [
+        "france-einvoice",
+        "france-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFARTI000051168626",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFARTI000051168626/2026-10-29",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000190291",
+      "skills": [
+        "fr-cross-border",
+        "leaving-france-exit-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053226384/",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/LEGIARTI000053511649/2026-02-21",
+      "skills": [
+        "fr-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/LEGIARTI000054312191/2026-06-27",
+      "skills": [
+        "fr-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.net-entreprises.fr",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.net-entreprises.fr/declaration/mentions-legales/",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.fr/particuliers/vosdroits/F12",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.fr/particuliers/vosdroits/F1419",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.fr/particuliers/vosdroits/F2705",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.fr/particuliers/vosdroits/F34009",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.fr/particuliers/vosdroits/F8",
+      "skills": [
+        "fr-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "skills": [
+        "fr-capital-gains",
+        "fr-rental-income"
+      ],
+      "figures": [
+        "fr.property-gains.income-tax-rate",
+        "fr.property-gains.abattement.ir.years-6-to-21",
+        "fr.property-gains.abattement.ir.year-22",
+        "fr.property-gains.exemption.ir.years",
+        "fr.property-gains.abattement.social.years-6-to-21",
+        "fr.property-gains.abattement.social.year-22",
+        "fr.property-gains.abattement.social.after-22",
+        "fr.property-gains.exemption.social.years",
+        "fr.property-gains.exemption.small-sale",
+        "fr.property-gains.exemption.non-resident-cap",
+        "fr.property-gains.surtax.rate.lowest",
+        "fr.property-gains.surtax.rate.highest"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "skills": [
+        "fr-personal-income-tax",
+        "france-payroll",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.income-tax.band1.ceiling",
+        "fr.income-tax.band2.start",
+        "fr.income-tax.band2.end",
+        "fr.income-tax.band2.rate",
+        "fr.income-tax.band3.start",
+        "fr.income-tax.band3.end",
+        "fr.income-tax.band3.rate",
+        "fr.income-tax.band4.start",
+        "fr.income-tax.band4.end",
+        "fr.income-tax.band4.rate",
+        "fr.income-tax.band5.rate"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15396",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.agirc-arrco.t1.total",
+        "fr.social.agirc-arrco.t1.employee",
+        "fr.social.agirc-arrco.t1.employer",
+        "fr.social.agirc-arrco.t2.total",
+        "fr.social.agirc-arrco.t2.employee",
+        "fr.social.agirc-arrco.t2.employer",
+        "fr.social.agirc-arrco.t2.ceiling",
+        "fr.social.agirc-arrco.point-rate.t1",
+        "fr.social.agirc-arrco.point-rate.t2",
+        "fr.social.agirc-arrco.point-price"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1911",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.labour.week.legal-hours",
+        "fr.labour.month.legal-hours",
+        "fr.labour.year.legal-hours"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2141",
+      "skills": [
+        "france-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2142",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21618",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22414",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22449",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.labour.paid-leave.per-month",
+        "fr.labour.paid-leave.per-year",
+        "fr.labour.paid-leave.sick-leave-accrual"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2265",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "skills": [
+        "fr-capital-gains",
+        "fr-cross-border",
+        "fr-personal-income-tax",
+        "fr-rental-income",
+        "fr-social-contributions",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.social-levies.placement.2026",
+        "fr.social-levies.placement.2025",
+        "fr.social-levies.csg.patrimoine",
+        "fr.social-levies.crds",
+        "fr.social-levies.solidarity",
+        "fr.social-levies.rental.total",
+        "fr.social-levies.property-gains.total"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "skills": [
+        "fr-capital-gains"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2391",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.labour.overtime.premium.first8",
+        "fr.labour.overtime.premium.beyond8",
+        "fr.labour.overtime.premium.agreement-floor",
+        "fr.labour.overtime.annual-quota",
+        "fr.labour.complementary-hours.premium.within-tenth",
+        "fr.labour.complementary-hours.premium.beyond-tenth"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2613",
+      "skills": [
+        "fr-capital-gains",
+        "fr-personal-income-tax",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.pfu.income-tax-part",
+        "fr.dividends.abattement-if-scale"
+      ]
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2705",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3053",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33885",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34009",
+      "skills": [
+        "fr-personal-income-tax",
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F8",
+      "skills": [
+        "fr-personal-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F987",
+      "skills": [],
+      "figures": [
+        "fr.labour.severance.service-condition",
+        "fr.labour.severance.fraction.first10years",
+        "fr.labour.severance.fraction.after10years"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr",
+      "skills": [
+        "france-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/actualites/augmentation-smic.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.pay.smic.hourly.jun2026",
+        "fr.pay.smic.monthly.jun2026",
+        "fr.pay.smic.mayotte.hourly.jun2026",
+        "fr.pay.smic.mayotte.monthly.jun2026",
+        "fr.pay.minimum-garanti.jun2026"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.employer.oldage.uncapped.previous",
+        "fr.social.rgdu.tmin",
+        "fr.social.rgdu.tdelta.under50",
+        "fr.social.rgdu.tdelta.50plus",
+        "fr.social.rgdu.max-coefficient.under50",
+        "fr.social.rgdu.max-coefficient.50plus",
+        "fr.social.rgdu.exponent",
+        "fr.social.overtime.employer-deduction.under20",
+        "fr.social.overtime.employer-deduction.20plus",
+        "fr.labour.forfait-jours.cap",
+        "fr.social.rupture-conventionnelle.employer-contribution"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/choisir-forme-juridique/creer-societe.html",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.agirc-arrco.ceg.t1.employee",
+        "fr.social.overtime.employee-reduction"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.pay.ppv.cap",
+        "fr.pay.ppv.cap.enhanced",
+        "fr.pay.ppv.pay-condition",
+        "fr.pay.ppv.forfait-social"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.employer.atmp.rgdu-cap",
+        "fr.social.rgdu.pay-ceiling",
+        "fr.social.rgdu.pay-ceiling.jun2026",
+        "fr.social.rgdu.pay-ceiling.mayotte",
+        "fr.social.rgdu.covered.health",
+        "fr.social.rgdu.covered.oldage",
+        "fr.social.rgdu.covered.agirc-arrco",
+        "fr.social.rgdu.mayotte.max-coefficient",
+        "fr.social.rgdu.dfs-cap"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/assurance-chomage-ags.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.employer.unemployment.effective-date",
+        "fr.social.employer.unemployment.bonus-malus.floor",
+        "fr.social.employer.unemployment.bonus-malus.ceiling"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/cotisation-allocation-familiale.html",
+      "skills": [],
+      "figures": [
+        "fr.social.employer.family.reduced.threshold",
+        "fr.social.employer.family.reduced.threshold.jan2026-equivalent",
+        "fr.social.employer.family.reduced.threshold.jun2026-equivalent",
+        "fr.social.employer.family.special-regime.threshold",
+        "fr.social.employer.family.reduction.size"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.csg.total-rate",
+        "fr.social.csg-crds.base",
+        "fr.social.csg-crds.allowance",
+        "fr.social.csg-crds.allowance.cap",
+        "fr.social.employee.health.non-resident"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/formation-professionnelle.html",
+      "skills": [],
+      "figures": [
+        "fr.social.employer.training.under11",
+        "fr.social.employer.training.11plus",
+        "fr.social.employer.cpf-cdd"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/maladie-maternite-invalidite.html",
+      "skills": [],
+      "figures": [
+        "fr.social.employer.health.reduced.threshold",
+        "fr.social.employer.health.reduced.threshold.jan2026-equivalent",
+        "fr.social.employer.health.reduced.threshold.jun2026-equivalent",
+        "fr.social.employer.health.special-regime.threshold",
+        "fr.social.employer.health.reduction.size"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/gerer-fin-relation-travail/licenciement-motif-personnel.html",
+      "skills": [],
+      "figures": [
+        "fr.social.severance.full-liability",
+        "fr.social.severance.full-liability.director"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/gerer-fin-relation-travail/rupture-conventionnelle.html",
+      "skills": [],
+      "figures": [
+        "fr.social.severance.exempt-cap"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/employeur/gerer-entreprise/declaration-sociale-nominative.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/calendrier-paiement-cotisations.html",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html",
+      "skills": [
+        "fr-social-contributions",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.selfemployed.base.allowance",
+        "fr.selfemployed.base.micro-fiscal-allowance",
+        "fr.selfemployed.health.top-rate"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.pay.bik.meal.one",
+        "fr.pay.bik.meal.two",
+        "fr.pay.bik.meal.hcr.jan2026",
+        "fr.pay.bik.meal.hcr.jun2026",
+        "fr.pay.luncheon-voucher.employer-exemption",
+        "fr.pay.luncheon-voucher.value.min",
+        "fr.pay.luncheon-voucher.value.max",
+        "fr.pay.bik.housing.one-room.lowest-band",
+        "fr.pay.bik.housing.per-room.lowest-band",
+        "fr.pay.bik.housing.one-room.top-band",
+        "fr.pay.bik.housing.per-room.top-band",
+        "fr.pay.bik.vehicle.bought.under5years",
+        "fr.pay.bik.vehicle.bought.over5years",
+        "fr.pay.bik.vehicle.bought.under5years.with-fuel",
+        "fr.pay.bik.vehicle.leased",
+        "fr.pay.bik.vehicle.leased.with-fuel"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.pay.meal-allowance.at-workplace",
+        "fr.pay.meal-allowance.restaurant",
+        "fr.pay.meal-allowance.away-no-restaurant",
+        "fr.pay.long-travel.meal.first3months",
+        "fr.pay.long-travel.lodging.paris.first3months",
+        "fr.pay.long-travel.lodging.other.first3months",
+        "fr.pay.long-travel.meal.3to24months",
+        "fr.pay.long-travel.lodging.paris.3to24months",
+        "fr.pay.long-travel.lodging.other.3to24months",
+        "fr.pay.long-travel.meal.24to72months",
+        "fr.pay.long-travel.lodging.paris.24to72months",
+        "fr.pay.long-travel.lodging.other.24to72months",
+        "fr.pay.telework.allowance.per-day",
+        "fr.pay.telework.allowance.monthly-cap",
+        "fr.pay.telework.allowance.per-week-day",
+        "fr.pay.telework.allowance.agreement.per-day",
+        "fr.pay.telework.allowance.agreement.monthly-cap",
+        "fr.pay.telework.allowance.agreement.per-week-day",
+        "fr.pay.sustainable-mobility.cap",
+        "fr.pay.sustainable-mobility.cap.with-transit"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.pay.smic.hourly.jan2026",
+        "fr.pay.smic.monthly.jan2026",
+        "fr.pay.smic.hourly.age17to18.jan2026",
+        "fr.pay.smic.hourly.age17to18.jun2026",
+        "fr.pay.smic.hourly.under17.jan2026",
+        "fr.pay.smic.hourly.under17.jun2026"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html",
+      "skills": [
+        "fr-social-contributions",
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.pass.annual",
+        "fr.social.pass.quarterly",
+        "fr.social.pass.monthly",
+        "fr.social.pass.fortnightly",
+        "fr.social.pass.weekly",
+        "fr.social.pass.daily",
+        "fr.social.pass.hourly",
+        "fr.social.pass.mayotte.annual",
+        "fr.social.pass.mayotte.monthly"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html",
+      "skills": [
+        "fr-social-contributions",
+        "france-tax-optimization"
+      ],
+      "figures": [
+        "fr.selfemployed.health.band1.threshold",
+        "fr.selfemployed.health.band2.threshold",
+        "fr.selfemployed.health.band3.threshold",
+        "fr.selfemployed.health.band4.threshold",
+        "fr.selfemployed.health.band5.threshold",
+        "fr.selfemployed.health.band6.threshold",
+        "fr.selfemployed.health.above-300pass",
+        "fr.selfemployed.health2.rate",
+        "fr.selfemployed.health2.cap",
+        "fr.selfemployed.pension.base.capped",
+        "fr.selfemployed.pension.base.uncapped",
+        "fr.selfemployed.pension.supplementary.t1",
+        "fr.selfemployed.pension.supplementary.t2",
+        "fr.selfemployed.invalidity-death",
+        "fr.selfemployed.family.rate",
+        "fr.selfemployed.family.zero-threshold",
+        "fr.selfemployed.family.full-rate-threshold",
+        "fr.selfemployed.csg-crds",
+        "fr.selfemployed.cfp.trader",
+        "fr.selfemployed.cfp.craftsman",
+        "fr.selfemployed.cfp.with-collaborating-spouse",
+        "fr.selfemployed.minimum-base.pension",
+        "fr.selfemployed.minimum-base.invalidity",
+        "fr.selfemployed.minimum-contribution.pension",
+        "fr.selfemployed.minimum-contribution.invalidity",
+        "fr.selfemployed.acre.full-threshold",
+        "fr.selfemployed.acre.cut-off",
+        "fr.selfemployed.startup.flat-base"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html",
+      "skills": [
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.agirc-arrco.split.employer",
+        "fr.social.agirc-arrco.split.employee",
+        "fr.social.agirc-arrco.ceg.t1.employer",
+        "fr.social.agirc-arrco.ceg.t2.employee",
+        "fr.social.agirc-arrco.ceg.t2.employer",
+        "fr.social.agirc-arrco.cet.employee",
+        "fr.social.agirc-arrco.cet.employer"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-hors-cipav.html",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html",
+      "skills": [
+        "fr-social-contributions",
+        "france-payroll"
+      ],
+      "figures": [
+        "fr.social.employer.health.full",
+        "fr.social.employer.health.reduced",
+        "fr.social.employer.csa",
+        "fr.social.employer.oldage.uncapped",
+        "fr.social.employer.oldage.capped",
+        "fr.social.employer.family.full",
+        "fr.social.employer.family.reduced",
+        "fr.social.employer.social-dialogue",
+        "fr.social.employer.unemployment",
+        "fr.social.unemployment.cap",
+        "fr.social.employer.ags",
+        "fr.social.employer.ags.temp-agency",
+        "fr.social.employer.fnal.under50",
+        "fr.social.employer.fnal.50plus",
+        "fr.social.employer.apprenticeship-tax.main",
+        "fr.social.employer.apprenticeship-tax.balance",
+        "fr.social.employer.apprenticeship-tax.alsace-moselle",
+        "fr.social.employee.oldage.uncapped",
+        "fr.social.employee.oldage.capped",
+        "fr.social.employee.csg.taxable",
+        "fr.social.employee.csg.deductible",
+        "fr.social.employee.crds",
+        "fr.social.employee.health.alsace-moselle"
+      ]
+    },
+    {
+      "url": "https://www.urssaf.fr/files/live/sites/urssaffr/files/outils-documentation/formulaires-modeles/independant-notice-revenus-2026.pdf",
+      "skills": [
+        "fr-social-contributions"
+      ],
+      "figures": []
+    }
+  ]
+}

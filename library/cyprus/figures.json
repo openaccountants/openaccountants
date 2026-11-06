@@ -1,0 +1,1398 @@
+{
+  "country": "cyprus",
+  "code": "CY",
+  "figure_count": 105,
+  "figures": [
+    {
+      "id": "cy.it.band.0.upper",
+      "item": "Personal income tax: top of the 0% band (tax-free slice of chargeable income), from tax year 2026 (raised from EUR 19,500). Applies to chargeable income after deductions, per person (Cyprus taxes individuals separately).",
+      "value": "EUR 22,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "0% από €0 μέχρι €22.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.rate.0",
+      "item": "Personal income tax rate on chargeable income up to EUR 22,000 (tax year 2026 scale)",
+      "value": "0%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "0% από €0 μέχρι €22.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.it.rate.20",
+      "item": "Personal income tax rate on chargeable income from EUR 22,001 to EUR 32,000 (tax year 2026 scale)",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "20% από €22.001 μέχρι €32.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.band.20.upper",
+      "item": "Personal income tax: top of the 20% band (tax year 2026 scale)",
+      "value": "EUR 32,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "20% από €22.001 μέχρι €32.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.rate.25",
+      "item": "Personal income tax rate on chargeable income from EUR 32,001 to EUR 42,000 (tax year 2026 scale)",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "25% από €32.001 μέχρι €42.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.band.25.upper",
+      "item": "Personal income tax: top of the 25% band (tax year 2026 scale)",
+      "value": "EUR 42,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "25% από €32.001 μέχρι €42.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.rate.30",
+      "item": "Personal income tax rate on chargeable income from EUR 42,001 to EUR 72,000 (tax year 2026 scale)",
+      "value": "30%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "30% από €42.001 μέχρι €72.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.band.30.upper",
+      "item": "Personal income tax: top of the 30% band; income above this is taxed at 35% (tax year 2026 scale)",
+      "value": "EUR 72,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "30% από €42.001 μέχρι €72.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.rate.35",
+      "item": "Top personal income tax rate, on chargeable income from EUR 72,001 upward (tax year 2026 scale)",
+      "value": "35%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "35% από €72.001 και άνω",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.band.35.lower",
+      "item": "Personal income tax: chargeable income from which the 35% top rate starts (tax year 2026 scale)",
+      "value": "EUR 72,001",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "35% από €72.001 και άνω",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.it.tax-free.previous",
+      "item": "Previous tax-free amount (0% band) that applied up to tax year 2025; NOT the 2026 figure (2026 is EUR 22,000)",
+      "value": "EUR 19,500",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "έχει αυξηθεί από €19.500 σε €22.000 με εφαρμογή από το φορολογικό έτος 2026",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.filing.age-from",
+      "item": "Filing obligation from tax year 2026 (wording): a person must file if they have any gross income within article 5 of the Income Tax Law, OR, regardless of income, if they are a Cyprus tax resident who by 31 December of the tax year has completed their 25th year of age but not their 71st. There is no longer an income-amount filing threshold. The digits here are ages, not money.",
+      "value": "25th year completed, not 71st",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "έχει συμπληρώσει το 25ο έτος της ηλικίας του αλλά όχι το 71ο έτος",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.it.filing.deadline-2026",
+      "item": "Deadline for the individual income tax return for tax year 2026 (filed during 2027), per the Tax Department FAQ",
+      "value": "31 July 2027",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "Η προθεσμία υποβολής είναι μέχρι την 31η Ιουλίου 2027",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.it.ded.child.first",
+      "item": "Personal deduction for the first dependent child, per parent, from tax year 2026; subject to the family/single income criteria; doubled for single-parent families",
+      "value": "EUR 1,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "€1.000 για το πρώτο εξαρτώμενο τέκνο, • €1.250 για το δεύτερο",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.child.second",
+      "item": "Personal deduction for the second dependent child, per parent, from tax year 2026; subject to the income criteria",
+      "value": "EUR 1,250",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "€1.250 για το δεύτερο εξαρτώμενο τέκνο, • €1.500 για το τρίτο",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.child.third-plus",
+      "item": "Personal deduction for the third and each further dependent child, per parent, from tax year 2026; subject to the income criteria",
+      "value": "EUR 1,500",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "€1.500 για το τρίτο και κάθε επιπρόσθετο εξαρτώμενο τέκνο",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.income-criterion.family-0-2",
+      "item": "Income criterion for the 2026 personal deductions (children, rent/housing-loan interest, green spending): total GROSS family income must not exceed this for families with no children or one or two children (a cliff, not a taper)",
+      "value": "EUR 100,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "€100.000 για οικογένειες χωρίς τέκνα ή με ένα (1) ή δύο (2) τέκνα",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.it.ded.income-criterion.family-3-4",
+      "item": "Income criterion for the 2026 personal deductions: gross family income ceiling for families with three or four children",
+      "value": "EUR 150,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "€150.000 για οικογένειες με τρία (3) ή τέσσερα (4) τέκνα",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.income-criterion.family-5-plus",
+      "item": "Income criterion for the 2026 personal deductions: gross family income ceiling for families with five or more children",
+      "value": "EUR 200,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "€200.000 για οικογένειες με πέντε (5) ή περισσότερα τέκνα",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.income-criterion.single",
+      "item": "Income criterion for the 2026 personal deductions for a single person (no dependent children, no spouse or civil partner): total gross income must not exceed this",
+      "value": "EUR 40,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf",
+      "quote": "το συνολικό του μεικτό εισόδημα δεν υπερβαίνει τις €40.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.housing",
+      "item": "Personal deduction from 2026 for rent paid on, or interest on a serviced housing loan for, a main residence in Cyprus: up to this amount per spouse, civil partner or single person, under the income criteria",
+      "value": "EUR 2,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "a deduction of a) up to €2.000, under conditions, is granted to each spouse, civil partner or single person for interest on a serviced housing loan",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.green",
+      "item": "Personal deduction from 2026 for capital spending on energy upgrades of the main residence, renewable systems or storage batteries, or an electric vehicle: up to this amount a year per spouse, civil partner or single person, under the income criteria (unused spending can be carried forward)",
+      "value": "EUR 1,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "b) up to €1.000, under conditions, to each spouse or civil partner or single person for capital expenditure",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.home-insurance",
+      "item": "Deduction for home insurance against natural disasters: cap per tax year (TD59A 2026 line B3)",
+      "value": "EUR 500",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "Home Insurance for natural disasters (up to €500)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-transfer-pricing",
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.rent-expenses",
+      "item": "Deduction for expenses of let buildings: a flat share of the GROSS rents of buildings (on top of capital allowances and interest)",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "twenty per cent (20%) of the gross rents of building only is allowed as a deduction",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.ded.contributions-cap",
+      "item": "Overall cap on deductions for life insurance, approved medical funds, GHS, pension and provident funds and social insurance contributions: one fifth of taxable income (the intermediary calculation B6). Written as a fraction on the form; not a percentage on the page.",
+      "value": "1/5",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "must not exceed one fifth of your taxable income (i.e.1/5th of the intermediary calculation Β6)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll"
+      ]
+    },
+    {
+      "id": "cy.it.ded.life-insurance-cap",
+      "item": "Life and disability insurance premiums are deductible only up to this share of the capital sum insured (within the overall one-fifth cap)",
+      "value": "7%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "must not exceed 7% of the capital sum insured",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.ded.medical-fund-cap",
+      "item": "Contributions to a medical fund count only up to this share of gross income (circular 3/30.5.24), within the one-fifth cap",
+      "value": "2%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "maximum 2% of gross income per circular 3/30.5.24",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.it.aif-carried-interest.rate",
+      "item": "Optional special income tax rate for AIF carried interest and UCITS performance fees (articles 20b and 20c), elected yearly; minimum tax EUR 10,000",
+      "value": "8%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "special tax rate of 8% with a minimum tax of €10.000 for AIF carried interest",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.aif-carried-interest.min-tax",
+      "item": "Minimum tax under the optional 8% special rate for AIF carried interest and UCITS performance fees",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "special tax rate of 8% with a minimum tax of €10.000 for AIF carried interest",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.res.183-day",
+      "item": "Tax residence, 183-day rule (wording): an individual is resident if they stay in Cyprus for one or more periods EXCEEDING 183 days in total in the tax year. Day of arrival counts as a day in Cyprus; day of departure counts as a day outside.",
+      "value": "more than 183 days",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/",
+      "quote": "one or more periods exceeding 183 days in total during a tax year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border"
+      ]
+    },
+    {
+      "id": "cy.res.60-day",
+      "item": "Tax residence, 60-day rule (wording): resident without 183 days if ALL of: at least 60 days in Cyprus in the year; not resident more than 183 days in any other country; carries on business and/or is employed or holds office in Cyprus; keeps a permanent residence in Cyprus, owned or rented. Ceasing the Cyprus business or employment in the year ends residence for that year.",
+      "value": "at least 60 days",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/",
+      "quote": "They remain in Cyprus for at least 60 days during the tax year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border"
+      ]
+    },
+    {
+      "id": "cy.dom.deemed-17-of-20",
+      "item": "Deemed domicile for Special Defence Contribution (wording): whatever the domicile of origin, an individual resident in Cyprus for at least 17 of the 20 years immediately before the tax year is deemed domiciled in Cyprus, and keeps that until completing 20 years of non-residence.",
+      "value": "17 out of the last 20 years",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/",
+      "quote": "at least 17 out of the last 20 years immediately before the tax year",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.dom.origin-exception-20",
+      "item": "Domicile-of-origin exception (wording): a person with a Cypriot domicile of origin is treated as non-domiciled if they acquired and keep a domicile of choice abroad and were not Cyprus tax resident for at least 20 consecutive years immediately before the tax year, OR resided abroad for more than 20 consecutive years before 16 July 2015.",
+      "value": "20 consecutive years",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/",
+      "quote": "was not a Cyprus tax resident for at least 20 consecutive years immediately before the relevant tax year",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.sdc.nondom-exemption",
+      "item": "Non-dom exemption (wording): an individual who is non-domiciled OR non-resident is not subject to Special Defence Contribution on rental, interest or dividend income. Rental income was subject to SDC only up to and including tax year 2025; it was then abolished.",
+      "value": "up to and including the 2025 tax year",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/",
+      "quote": "Rental income was subject to Special Defence Contribution up to and including the 2025 tax year",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.sdc.dividend.individual",
+      "item": "Special Defence Contribution rate on dividends received by a Cyprus-resident AND domiciled individual, for dividends out of profits of 2026 onward (reduced from 17%). Dividends paid out of pre-2026 profits stay at 17% (see cy.sdc.dividend.pre-2026-profits).",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "Άτομα σε ποσοστό 5% (μείωση από το 17%)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.sdc.dividend.pre-2026-profits",
+      "item": "SDC rate still charged on a dividend received by an individual (for example in 2027) when it is paid out of profits of 2025 or earlier; the official example taxes a 2025-profit dividend at 17% and a 2026-profit dividend at 5%",
+      "value": "17%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "σε ποσοστό 17% επί του (α) και ➢ σε ποσοστό 5% επί του (β)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.sdc.interest.individual",
+      "item": "Special Defence Contribution rate on interest received or credited to a Cyprus-resident (domiciled) individual; companies are exempt from SDC on interest",
+      "value": "17%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "αναφορικά με τόκο που λαμβάνει ή πιστώνεται, σε 17%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.sdc.interest.reduced",
+      "item": "Reduced SDC rate on interest (article 3B(b)): interest received by any person from Cyprus or other EU government savings certificates or development bonds, or from corporate or public-body bonds listed on a recognised stock exchange, and interest received by state bodies, local authorities and non-economic general-government entities. NOT the general rate on interest (17%).",
+      "value": "3%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "σε ποσοστό τρία τοις εκατό (3%)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-non-dom",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.sdc.rent.abolished",
+      "item": "SDC on rental income abolished from 1 January 2026 (wording; no 2026 rate)",
+      "value": "abolished from 1/1/2026",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "Κατάργηση από 1/1/2026 της ΕΕΑ σε εισόδημα από ενοίκια",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.sdc.deemed-distribution.share",
+      "item": "Deemed dividend distribution: a Cyprus-resident company is deemed to have distributed this share of its profits of tax years 2024 and 2025 only; the rule is abolished for profits of 2026 onward. Applies only to profits attributable to Cyprus-resident domiciled individual shareholders.",
+      "value": "70%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "εβδομήντα τοις εκατό (70%) των κερδών της που κτήθηκαν ή προέκυψαν στα φορολογικά έτη 2024 και 2025",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.sdc.deemed-distribution.rate",
+      "item": "SDC rate on the deemed dividend distribution (profits of 2024 and 2025)",
+      "value": "17%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "Η λογιζόμενη διανομή φορολογείται στο 17%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.sdc.hidden-distribution.rate",
+      "item": "SDC rate on a disguised (hidden) dividend distribution, such as a shareholder's personal use of a company asset, new article 3A from 2026",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "Η συγκεκαλυμμένη διανομή μερίσματος φορολογείται στο 10%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.sdc.nondom-lump.5yr",
+      "item": "Optional non-dom extension (article 3D): an individual without a Cypriot domicile of origin who becomes deemed domiciled (17 of 20 years) may pay a lump-sum SDC for each 5-year period, irrevocable, up to two such periods; application by 30 June of the first year of the period. This is the amount for the whole 5-year period.",
+      "value": "EUR 250,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/Application-Extension-of-Non-Dom.pdf",
+      "quote": "The Special Defence Contribution for the entire 5‑year period (€250,000)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-non-dom",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.sdc.nondom-lump.annual",
+      "item": "Optional non-dom extension (article 3D): the lump-sum SDC expressed per year (for two 5-year periods); the 5-year amount EUR 250,000 is paid in one go",
+      "value": "EUR 50,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "κατ’ αποκοπή ετήσιο ποσό ΕΕΑ ύψους €50.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-non-dom",
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.cgt.general-exemption.extra",
+      "item": "Capital gains tax: additional general lifetime exemption amount available for disposals made from 1 January 2026 (reform raised the exemption amounts; read the page for the full set)",
+      "value": "EUR 12,914",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "από 1/1/2026 ύψους €12.914",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.it.exempt.21b.rate",
+      "item": "New-resident employment/business exemption, article 8(21B) (from 2026 law): 25% of remuneration from employment in Cyprus or profits of business in Cyprus, for a returning former resident who was non-resident for the 7 years before starting (2019 to 2025), started between 1/1/2025 and 31/12/2030, with a degree plus 36 months abroad, or 84 months abroad. Granted for 7 consecutive years, only in years with earnings above EUR 30,000.",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/Article-8-21B-of-the-Income-Tax-Law-N.118-I-2002.pdf",
+      "quote": "can claim an income tax exemption of 25% on- a. his/her remuneration",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.exempt.21b.min-earnings",
+      "item": "Article 8(21B) 25% exemption: gross earnings must exceed this in the year (and in the first 12 months)",
+      "value": "EUR 30,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/Article-8-21B-of-the-Income-Tax-Law-N.118-I-2002.pdf",
+      "quote": "has gross earnings exceeding €30.000 in the relevant year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.exempt.21b.cap",
+      "item": "Article 8(21B) 25% exemption: maximum exemption per tax year",
+      "value": "EUR 25,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/Article-8-21B-of-the-Income-Tax-Law-N.118-I-2002.pdf",
+      "quote": "The exemption cannot exceed €25.000 in a tax year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.exempt.23a.rate",
+      "item": "50% exemption of remuneration from ANY employment in Cyprus, article 8(23A), where remuneration exceeds EUR 55,000, for 17 years or until the first employment ends. Non-residence test by START DATE: employment started 1 Jan 2022 to 29 Jun 2023 = at least 10 years non-resident before first employment (Law 121(I)/2022 limb); employment started on or after 30 Jun 2023 = at least 15 consecutive years with no Cyprus employment (Law 51(I)/2023 limb), the ONLY limb for current starters. Corrected 2 Oct 2026 after the cyprus-income-tax reader (official 8(23)/(23A) applicability table).",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/%CE%A0%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%B1%CF%80%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CF%8E%CE%BD-823-%CE%BA%CE%B1%CE%B9-823%CE%91.pdf",
+      "quote": "50% απαλλαγή της αμοιβής από 50% απαλλαγή της αμοιβής από την",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.it.exempt.23.min-pay",
+      "item": "Old article 8(23) 50% exemption (employment started up to 2021): minimum remuneration. NOT the 8(23A) threshold (EUR 55,000).",
+      "value": "EUR 100,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/%CE%A0%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%B1%CF%80%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CF%8E%CE%BD-823-%CE%BA%CE%B1%CE%B9-823%CE%91.pdf",
+      "quote": "Ελάχιστη αμοιβή > €100.000 > €55.000 > €55.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.it.exempt.23a.min-pay",
+      "item": "Article 8(23A) 50% exemption (employment from 1 January 2022): minimum remuneration",
+      "value": "EUR 55,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/%CE%A0%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%B1%CF%80%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CF%8E%CE%BD-823-%CE%BA%CE%B1%CE%B9-823%CE%91.pdf",
+      "quote": "Ελάχιστη αμοιβή > €100.000 > €55.000 > €55.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.exempt.23a.duration",
+      "item": "Exemption periods for the 50% exemption: 10 years under old 8(23); 17 years under 8(23A) (or until the first employment ends, whichever is earlier, for the first-employment limb). Years, not money.",
+      "value": "10 years (8(23)); 17 years (8(23A))",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/%CE%A0%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%B1%CF%80%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CF%8E%CE%BD-823-%CE%BA%CE%B1%CE%B9-823%CE%91.pdf",
+      "quote": "Περίοδος απαλλαγής 10 έτη 17 έτη",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.it.exempt.21a.rate",
+      "item": "20% exemption on remuneration from first employment in Cyprus, articles 8(21) and 8(21A): 8(21A) applies to employment starting from 26/7/2022 for a person employed abroad by a non-resident employer for the 3 years before; granted for 7 years from the year after employment starts (5 years under old 8(21)); capped at EUR 8,550 a year; no minimum pay.",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/01/implementation-of-sections-21-and-21A-of-article-8-24072023.pdf",
+      "quote": "20% exemption of the remuneration from the first",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.exempt.21a.cap",
+      "item": "20% first-employment exemption (8(21) and 8(21A)): maximum exemption per tax year",
+      "value": "EUR 8,550",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "20% of your emoluments from any employment with a maximum of €8.550",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.vat.rate.standard",
+      "item": "Standard VAT rate: every taxable supply of goods or services and import of goods, except those listed under the reduced and zero rates",
+      "value": "19%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/",
+      "quote": "Κανονικός συντελεστής (19%)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.rate.reduced-9",
+      "item": "Reduced VAT rate covering: passenger transport by urban, intercity and rural taxis and tourist and intercity buses; restaurant and catering services; accommodation in hotels, tourist lodgings and similar; supplies by old people's homes (except exempt ones)",
+      "value": "9%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/",
+      "quote": "Μειωμένος συντελεστής (9%) Μεταφορά επιβατών με αστικά",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.rate.reduced-5",
+      "item": "Reduced VAT rate covering, among others: food and non-alcoholic drinks (excluding alcohol, beer, carob spirit and soft drinks, and items at 0%), water, medicines and vaccines, bottled gas, fertilisers and animal feed, children's car seats, tariff-08 electricity, funeral services, authors' and composers' services, urban and rural buses, camping, admission to shows, cinemas, museums, zoos and sports events, hairdressing, renovation of private homes (under conditions), school canteens, and the purchase or construction of a main and permanent residence with the Commissioner's approval",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/",
+      "quote": "Μειωμένος συντελεστής (5%) Φέρετρα",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.rate.super-reduced-3",
+      "item": "Super-reduced VAT rate covering: books, newspapers and magazines including electronic, talking books for people with disabilities, lifting devices and wheelchairs for people with disabilities, orthopaedic and hearing devices, street cleaning, refuse collection and waste treatment (other than by local authorities), sewage disposal and tank emptying, admission to the first performance only of theatre, music and dance works",
+      "value": "3%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/",
+      "quote": "Μειωμένος συντελεστής (3%) Βιβλία, εφημερίδες, περιοδικά",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-non-dom",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.rate.zero",
+      "item": "Zero VAT rate: exports of goods; supply, repair and hire of sea-going ships and airline aircraft; services for the direct needs of sea-going ships; and a TEMPORARY zero rate on basic goods (baby milk, children's and adult nappies, meat, fish, cuttlefish, squid, octopus, certain vegetables and fruit) up to and including 30/9/2026, so already expired for most of the 2026 year-end (those items revert to their normal rate)",
+      "value": "0%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/",
+      "quote": "Μηδενικός συντελεστής (0%) Εξαγωγή αγαθών",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.zero-basic-goods.end",
+      "item": "End date of the temporary zero VAT rate on basic goods (baby milk, nappies, meat, fish, certain fruit and vegetables), as printed on the Tax Department rates page",
+      "value": "30/9/2026",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/",
+      "quote": "συγκεκριμένα λαχανικά και φρούτα μέχρι και 30/9/2026",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.vat.registration.threshold",
+      "item": "Compulsory VAT registration threshold for a person established in Cyprus: taxable supplies (standard, reduced and zero-rated) in the 12 months ending at the end of any month exceed this, OR there are reasonable grounds to expect it to be exceeded in the next 30 days. Capital assets of the business are not counted.",
+      "value": "EUR 15,600",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/",
+      "quote": "έχει υπερβεί τις €15.600",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.registration.late-penalty",
+      "item": "Penalty for late notification of the obligation to register for VAT: per month the failure lasts (article 45(1)); notify within 30 days",
+      "value": "EUR 85",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/",
+      "quote": "χρηματική επιβάρυνση €85 για κάθε μήνα που διαρκεί η παράλειψη",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.registration.ic-acquisitions",
+      "item": "VAT registration threshold for intra-Community acquisitions of goods by an unregistered person: acquisitions from other EU member states in the calendar year from 1 January exceed this, or are expected to in the next 30 days. NOT the general supply threshold (EUR 15,600).",
+      "value": "EUR 10,251.61",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/",
+      "quote": "έχουν υπερβεί το όριο των €10.251,61",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.registration.b2b-services-eu",
+      "item": "VAT registration for services to taxable persons in other EU states (wording): an unregistered business must register from the day it supplies services to a taxable person in another member state where the customer accounts for the VAT there (no threshold); notify within 30 days",
+      "value": "no threshold, from the day of the supply",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/sychnes-erotiseis-gia-tin-eggrafi-f-p-a/",
+      "quote": "καθίσταται υπόχρεο για εγγραφή την ημέρα που αυτό το πρόσωπο παρέχει υπηρεσίες σε ΥΦΠ σε άλλο ΚΜ",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.vat.return.period",
+      "item": "VAT return period (wording): returns normally cover QUARTERLY tax periods set at registration by the business's NACE activity code; the Commissioner may set monthly or annual returns. Filed through Tax For All (TFA).",
+      "value": "quarterly",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/",
+      "quote": "Οι Δηλώσεις ΦΠΑ αφορούν συνήθως τριμηνιαίες φορολογικές περιόδους",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.vat.return.deadline-example",
+      "item": "VAT return and payment deadline: the 10th day of the second month after the quarter ends (example from the official deadline calendar: quarter June to August 2026 due 10 October 2026; if it falls on a weekend or holiday, the next working day)",
+      "value": "10 October 2026",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/prothesmies/",
+      "quote": "2026-10-10 Προθεσμία Υποβολής Δήλωσης και Πληρωμής Φ.Π.Α. για την τριμηνία Ιουνίου – Αυγούστου 2026",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.vat.return.late-filing-penalty",
+      "item": "Penalty for failing to submit a VAT return: a fixed charge per return, plus additional tax equal to 10% of the tax due, plus default interest",
+      "value": "EUR 100",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-dilosis-f-p-a/",
+      "quote": "χρηματική επιβάρυνση ύψους 100€, επιπρόσθετος φόρος ίσο προς το 10% του οφειλόμενου φόρου",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.vat.return.late-additional-tax",
+      "item": "Additional tax on a VAT return not submitted: share of the tax due (on top of the EUR 100 charge and interest)",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/documents/ypovoli-tropopoiisi-diloseon-f-p-a/sychnes-erotiseis-dilosis-f-p-a/",
+      "quote": "επιπρόσθετος φόρος ίσο προς το 10% του οφειλόμενου φόρου",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.vat.first-residence.value-cap",
+      "item": "Reduced 5% VAT on purchase or construction of a main and permanent residence (rules in force from 16 June 2023, planning applications from 1 November 2023): the 5% rate applies to the first 130 square metres of buildable area and up to a value of EUR 350,000; NO 5% rate at all if total buildable area exceeds 190 square metres or total value exceeds EUR 475,000. This entry is the value limit for the 5% portion.",
+      "value": "EUR 350,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/01/%CE%95%CE%95-11_2023.pdf",
+      "quote": "η αξία είναιμέχρι €350.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.first-residence.total-value-cliff",
+      "item": "First-residence reduced VAT: if the total value of the purchase or construction exceeds this, the standard rate applies to the WHOLE amount (a cliff)",
+      "value": "EUR 475,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/01/%CE%95%CE%95-11_2023.pdf",
+      "quote": "πέντε χιλιάδες ευρώ (€475.000), επιβάλλεται Φ.Π.Α. με τον εκάστοτε ισχύοντα κανονικό συντελεστή",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.vat.first-residence.area-cliff",
+      "item": "First-residence reduced VAT: no 5% rate if the total buildable area exceeds 190 square metres (area limit raised by 15 square metres per child beyond three for large families; for a person with a disability the 5% covers the first 190 square metres regardless of total area). Area, not money.",
+      "value": "190 square metres",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/01/%CE%95%CE%95-11_2023.pdf",
+      "quote": "υπερβαίνει τα 190 τετραγωνικά μέτρα",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.payroll.paye.monthly-deadline",
+      "item": "Monthly PAYE return and payment (income tax and contributions withheld by employers): due by the end of the month following the month of withholding (example: December 2026 due 31 January 2027)",
+      "value": "end of the following month",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/prothesmies/",
+      "quote": "2027-01-31 Προθεσμία Υποβολής Δήλωσης PAYE για τον Δεκέμβριο 2026 Τέλος του μήνα που ακολουθεί τον μήνα παρακράτησης",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.payroll.paye.annual-deadline-2026",
+      "item": "Employer's annual PAYE return (income tax and contributions withheld) for tax year 2026: due 31 March 2027 (end of March after the year, per the calendar note). The 2025 annual return had been extended to 30 November 2026.",
+      "value": "31 March 2027",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/prothesmies/",
+      "quote": "2027-03-31 Προθεσμία Υποβολής Ετήσιας Δήλωσης Παρακράτησης Φ.Ε. και Εισφορών (PAYE) για το έτος 2026 Τέλος Μαρτίου",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.it.deadline.self-employed-no-audit",
+      "item": "Return deadline for self-employed individuals NOT required to prepare audited accounts: end of July after the tax year (for 2025: 31 July 2026, with an extension announced). By analogy the 2026 return falls due in 2027, but only the 2025 row is printed.",
+      "value": "end of July after the tax year",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/prothesmies/",
+      "quote": "Προθεσμία υποβολής δήλωσης εισοδήματος από αυτοεργοδοτούμενο χωρίς υποχρέωση υποβολής εξελεγμένων οικονομικών καταστάσεων για το έτος 2025",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.it.provisional-tax.instalments",
+      "item": "Provisional tax: computation submitted and first of two instalments paid by 31 July, second by 31 December of the tax year, for companies and for individuals with audited accounts or employees with income from other sources. Trap: the official calendar rows dated 2026 are labelled 'for 2025'.",
+      "value": "31 July and 31 December",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/mof-tax/prothesmies/",
+      "quote": "2026-07-31 Υποβολή υπολογισμού προσωρινής φορολογίας και πληρωμή της πρώτης (από δύο) δόσεις προσωρινού φόρου",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.cit.rate",
+      "item": "Corporate income tax rate from 1 January 2026 (raised from 12.5%; the 12.5% rate applies to tax years up to 2025 only)",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "εταιρικό φόρο με συντελεστή ύψους 15%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.foreign-pension.rate",
+      "item": "Optional special rate on pensions from services rendered abroad, on the amount above the annual threshold (threshold raised by the 2026 reform from EUR 3,420 to EUR 5,000); the person may instead choose normal scale taxation",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "συντελεστή ύψους 5%, από €3.420 σε €5.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-non-dom",
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization",
+        "cyprus-vat-return"
+      ]
+    },
+    {
+      "id": "cy.it.foreign-pension.threshold",
+      "item": "Annual foreign-services pension amount above which the optional 5% rate applies, from 2026 (was EUR 3,420)",
+      "value": "EUR 5,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "συντελεστή ύψους 5%, από €3.420 σε €5.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-transfer-pricing",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.crypto.rate",
+      "item": "Special rate on gains from disposal of crypto-assets (new article 20E, from 2026), for individuals and companies; crypto losses offset only against crypto gains of the same year (no carry-forward); mined crypto is taxed normally",
+      "value": "8%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "Τα κέρδος υπόκεινται σε φορολογία με συντελεστή ύψους 8%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.share-options.rate",
+      "item": "Special rate on the benefit from approved employee/director share option or share award plans (new article 20D), taxed separately, not added to other income; capped at twice the employee's income from that employer and EUR 1,000,000 per rolling ten years",
+      "value": "8%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "υπόκειται σε φορολογία με συντελεστή ύψους 8%, και δεν προστίθεται σε οποιοδήποτε άλλο εισόδημα",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.share-options.decade-cap",
+      "item": "Cap on the share-option benefit taxable at 8% under article 20D: total per rolling ten-year period",
+      "value": "EUR 1,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "του ενός εκατομμυρίου ευρώ (€1.000.000)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.cit.entertainment-cap",
+      "item": "Maximum deduction for business entertainment expenses, raised by the 2026 reform (from GBP-era 10,000) to this amount",
+      "value": "EUR 30,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "από £10.000 σε €30.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.cit.rd-super-deduction",
+      "item": "Additional (super) deduction for scientific research and R&D expenditure, extended up to and including tax year 2030",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "επιπρόσθετης έκπτωσης 20% αναφορικά με δαπάνη για επιστημονική έρευνα",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.it.ded.cultural-donations",
+      "item": "Deduction for donations or contributions to cultural institutions approved by the Deputy Minister of Culture, from 2026: up to this amount, and only to the extent it creates no loss",
+      "value": "EUR 50,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf",
+      "quote": "μέχρι €50.000 αναφορικά με δωρεές/συνεισφορές σε πολιτιστικά ιδρύματα",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-non-dom",
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.payroll.thirteenth-salary",
+      "item": "Thirteenth salary in PAYE (wording): the employer spreads the annual tax as monthly deductions of the annual tax divided by 13 or by 12 'accordingly' (13 where a thirteenth salary is paid), or by 52 for weekly pay. The form gives no separate tax rule for the 13th salary.",
+      "value": "annual tax divided by 13 or 12",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "DEDUCTION OF TAX: MONTHLY (C2 ÷13 or C2 ÷12 accordingly)",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "cy.ghs.employee",
+      "item": "General Healthcare System (GHS/GESY) contribution withheld by the employer from employees' emoluments (TD59A 2026); also the rate on pensions, rents, interest, dividends and other income",
+      "value": "2.65%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "you must withhold 2.65% G.H.S.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cy-non-dom",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.ghs.cap",
+      "item": "GHS contributions are payable only on annual income up to this amount (all sources added together in a priority order); withholding stops once the year's income passes it",
+      "value": "EUR 180,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf",
+      "quote": "exceeds the amount of €180.000, stop withholding",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cy-non-dom",
+        "cyprus-payroll",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.ghs.self-employed",
+      "item": "GHS contribution rate on self-employed profits (printed in the 2025 return guide; the 2026 TD59A shows the employee rate unchanged at 2.65%)",
+      "value": "4%",
+      "tax_year": "2025 return guide (same rates on the 2026 forms where printed)",
+      "source_url": "https://www.gov.cy/media/sites/167/2026/06/Guide-for-completion-of-tax-return-2025.pdf",
+      "quote": "2,65% for all income and periods throughout the year except for self- employed taxpayers which is 4,00%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.si.employee",
+      "item": "Social insurance contribution of an EMPLOYEE on insurable earnings (employer pays the same; the state adds 5.2%; total 22.8%)",
+      "value": "8.8%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "proportion of 8.8%, 8.8% and 5.2%, respectively",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.si.employer",
+      "item": "Social insurance contribution of the EMPLOYER on the employee's insurable earnings (same as the employee share)",
+      "value": "8.8%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "proportion of 8.8%, 8.8% and 5.2%, respectively",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.si.state",
+      "item": "State share of social insurance contributions for employees (and for the self-employed); paid by the state, not by employer or employee",
+      "value": "5.2%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "proportion of 8.8%, 8.8% and 5.2%, respectively",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.si.total-employee",
+      "item": "Total social insurance contribution on an employee's insurable earnings (employee 8.8% + employer 8.8% + state 5.2%). Do not tell an employer it costs 22.8%.",
+      "value": "22.8%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "Employees must contribute 22.8% on their insurable earnings",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.si.self-employed",
+      "item": "Social insurance contribution paid by a self-employed person on insurable income (deemed income set per occupational category), of a 21.8% total of which the state pays 5.2%",
+      "value": "16.6%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "21.8% on their insurable income; 16.6% of which is paid by the self-employed",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.si.self-employed-total",
+      "item": "Total social insurance contribution on self-employed insurable income (self-employed 16.6% + state 5.2%)",
+      "value": "21.8%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "The self-employed must contribute 21.8% on their insurable income",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.si.voluntary",
+      "item": "Voluntary social insurance contributor's own share on declared earnings (total 19.7%, state 4.7%)",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "19.7% on their declared earnings, 15% of which is paid by the voluntary",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cy-transfer-pricing",
+        "cyprus-social-contributions",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.payroll.redundancy-fund",
+      "item": "Employer-only contribution to the Redundancy Fund, on insurable earnings up to the maximum",
+      "value": "1.2%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "employers must contribute 1.2% to the Redundancy Fund",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.payroll.hrdf",
+      "item": "Employer-only contribution to the Human Resources Development Fund (HRDA levy), on insurable earnings up to the maximum",
+      "value": "0.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "0.5% to the Human Resources Development Fund",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.payroll.social-cohesion",
+      "item": "Employer-only contribution to the Social Cohesion Fund. The 2026 maximum-insurable-earnings notice lists only the Social Insurance, Annual Paid Leave, Redundancy and HRDA funds, so do not apply that ceiling to this fund; this page states only the rate",
+      "value": "2%",
+      "tax_year": 2026,
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "2% to the Social Cohesion Fund for their employees",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.si.max-insurable.monthly",
+      "item": "Maximum insurable earnings for monthly-paid employees from 1/1/2026: the ceiling for Social Insurance, Annual Paid Leave, Redundancy Fund and HRDA contributions (NOT for GHS or the Social Cohesion Fund)",
+      "value": "EUR 5,742",
+      "tax_year": 2026,
+      "source_url": "https://sisweb.mlsi.gov.cy/anotato2025/",
+      "quote": "€5.742 από 1/1/2026",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-cross-border",
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.si.max-insurable.weekly",
+      "item": "Maximum insurable earnings for weekly-paid employees from 5/1/2026 (same funds as the monthly ceiling)",
+      "value": "EUR 1,325",
+      "tax_year": 2026,
+      "source_url": "https://sisweb.mlsi.gov.cy/anotato2025/",
+      "quote": "€1.325 από 5/1/2026",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-payroll",
+        "cyprus-social-contributions"
+      ]
+    },
+    {
+      "id": "cy.payroll.minimum-wage",
+      "item": "PRE-2026 minimum wage (EUR 1,000 after six months, EUR 900 on hiring; businessincyprus page, 2024 levels). From 1 January 2026 the levels are EUR 1,088 and EUR 979 per the gov.cy press release of 27 December 2025 (Council of Ministers decision of 23 December 2025 to issue the Amending Minimum Wage Order of 2025); the Order itself was not found on an allowed page. Do not state EUR 1,000 as the 2026 figure. Corrected 2 Oct 2026 after the cyprus-payroll reader.",
+      "value": "EUR 1,000",
+      "tax_year": "2024 to 2025 (superseded 1 Jan 2026)",
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "initial monthly wage of at least €1000 gross",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.it.audited-accounts-threshold",
+      "item": "PRE-2026 RULE, superseded: audited financial statements were required above this annual income under the old Assessment and Collection Law. From 1 January 2026 the accounts thresholds are EUR 120,000 (prepare accounts), reviewed accounts up to EUR 200,000 turnover and EUR 500,000 assets, audited above (collection presentation). Do not state EUR 70,000 as a 2026 rule. Corrected 2 Oct 2026 after the cyprus-income-tax reader.",
+      "value": "EUR 70,000",
+      "tax_year": "2025 and earlier (superseded from 2026)",
+      "source_url": "https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/",
+      "quote": "If your annual income exceeds €70,000, then you must submit audited financial statements",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.cgt.property-rich-shares",
+      "item": "Capital gains tax on shares of companies that indirectly (through other companies) hold Cyprus immovable property: from the 2026 reform such shares count as property if at least this share of their market value derives from Cyprus property (previously 50%); a double tax treaty requiring 50% overrides",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "τουλάχιστον το 20% (αντί του 50%) της αγοραίας αξίας",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-corporate-tax",
+        "cy-cross-border",
+        "cyprus-income-tax",
+        "cyprus-payroll",
+        "cyprus-tax-optimization"
+      ]
+    },
+    {
+      "id": "cy.cgt.non-regulated-listed-shares",
+      "item": "CGT exemption for disposals of shares listed on a NON-regulated market of a recognised stock exchange: applies only if total disposals in the year do not exceed this; once exceeded, CGT is due on ALL the year's disposals (a cliff). Shares on a regulated market stay fully exempt.",
+      "value": "EUR 50,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "δεν υπερβαίνει σωρευτικά τις €50.000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "cy-non-dom",
+        "cyprus-income-tax"
+      ]
+    },
+    {
+      "id": "cy.cgt.main-residence-restructuring",
+      "item": "CGT exemption on disposal of a main residence in loan restructuring, bankruptcy, insolvency or foreclosure: value limit raised to this from EUR 350,000. NOT the general main-residence lifetime exemption.",
+      "value": "EUR 450,000",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf",
+      "quote": "στις €450.000 (από €350.000)",
+      "read_on": "2026-10-02",
+      "used_by": []
+    }
+  ]
+}

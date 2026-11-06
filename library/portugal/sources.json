@@ -1,0 +1,2024 @@
+{
+  "country": "portugal",
+  "code": "PT",
+  "url_count": 237,
+  "sources": [
+    {
+      "url": "https://at.madeira.gov.pt/ficheiros/IISerie-016-2026-01-23Supl3.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668",
+      "skills": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2002-303252",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/127-2025-967317021",
+      "skills": [
+        "portugal-payroll",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/139-2025-992879809",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177",
+      "skills": [
+        "portugal-payroll",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/lei/73-a-2025-993270096",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/portaria/268-2021-174969198",
+      "skills": [
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/portaria/291-2003-223663",
+      "skills": [
+        "portugal-payroll",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/detalhe/portaria/480-a-2025-993056222",
+      "skills": [
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/1999-164477580",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975",
+      "skills": [
+        "portugal-financial-statements",
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975-66858136",
+      "skills": [
+        "portugal-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2001-34475775",
+      "skills": [
+        "portugal-financial-statements",
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2007-34526275",
+      "skills": [
+        "portugal-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2009-34517175",
+      "skills": [
+        "portugal-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2017-108086636",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2019-119662485",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575",
+      "skills": [
+        "portugal-payroll",
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2017-108031925",
+      "skills": [
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://faturas.portaldasfinancas.gov.pt",
+      "skills": [
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2009/09/17800/0627006285.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2014/12/25202/0032000338.pdf",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2015/06/10600/0347003493.pdf",
+      "skills": [
+        "portugal-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2017/08/16802/0189402052.pdf",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2025/04/07500/0005800061.pdf",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2025/12/23501/0000400005.pdf",
+      "skills": [
+        "portugal-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2025/12/25001/0000200002.pdf",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2025/12/25002/0000200271.pdf",
+      "skills": [
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.diariodarepublica.pt/1s/2026/01/02103/0001100011.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://files.dre.pt/1s/2022/02/02200/0000300003.pdf",
+      "skills": [
+        "pt-foreign-source-treaties"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/IRS_RNH_PT.pdf",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/incentivos_investigacao.pdf",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/convencoes_dupla_trib_internacional/Pages/dupla-tributacao-internacional.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/irc/Documents/M22ANA.PDF",
+      "skills": [
+        "pt-corporate-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": [
+        "pt.derrama-municipal.max",
+        "pt.derrama-municipal.reduced.threshold"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/modelos_formularios/irc/Documents/Mod_22_Q_7_Campo_364_derrama_ajudas_preench.pdf",
+      "skills": [],
+      "figures": [
+        "pt.derrama-municipal.example"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/Pages/faqs-00309.aspx",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/Pages/faqs-00457.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-01018.aspx",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc104.aspx",
+      "skills": [
+        "pt-corporate-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": [
+        "pt.ppc.dispense",
+        "pt.ppc.min-settlement",
+        "pt.ppc.due-dates",
+        "pt.refund.deadline"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": [
+        "pt.ppc.small",
+        "pt.ppc.large",
+        "pt.ppc.threshold"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc105a.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": [
+        "pt.ppa.band1",
+        "pt.ppa.band2",
+        "pt.ppa.band3"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc106.aspx",
+      "skills": [],
+      "figures": [
+        "pt.pec.status"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc118.aspx",
+      "skills": [
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx",
+      "skills": [
+        "portugal-formation",
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-transfer-pricing"
+      ],
+      "figures": [
+        "pt.filing.m22",
+        "pt.filing.m22.cessation"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-financial-statements",
+        "portugal-formation",
+        "pt-transfer-pricing"
+      ],
+      "figures": [
+        "pt.filing.ies"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121a.aspx",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc126.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc130.aspx",
+      "skills": [
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc138.aspx",
+      "skills": [
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc14.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": [
+        "pt.outbound-div.holding",
+        "pt.outbound-div.subject-to-tax"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc18.aspx",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc2.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc23a.aspx",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc31a.aspx",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc34.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc4.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc45a.aspx",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc48.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc51.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": [
+        "pt.pex.holding",
+        "pt.pex.period",
+        "pt.pex.subject-to-tax"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc51c.aspx",
+      "skills": [],
+      "figures": [
+        "pt.pex.gains.period",
+        "pt.pex.gains.realestate"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc52.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-corporate-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": [
+        "pt.losses.cap",
+        "pt.losses.ownership-change"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc63.aspx",
+      "skills": [
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc66.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc67.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": [
+        "pt.interest.fixed",
+        "pt.interest.ebitda",
+        "pt.interest.carryforward"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc69.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": [
+        "pt.group.threshold"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc8.aspx",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc83.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc84.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-financial-statements",
+        "portugal-formation",
+        "portugal-tax-optimization",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-transfer-pricing"
+      ],
+      "figures": [
+        "pt.irc.rate.2026",
+        "pt.irc.rate.2027",
+        "pt.irc.rate.code-text",
+        "pt.irc.sme.rate",
+        "pt.irc.sme.threshold",
+        "pt.irc.startup.rate",
+        "pt.irc.nonresident.rate",
+        "pt.irc.nonresident.blacklist",
+        "pt.irc.smallcap-restructuring"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "pt-corporate-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-transfer-pricing"
+      ],
+      "figures": [
+        "pt.derrama-estadual.start",
+        "pt.derrama-estadual.band1",
+        "pt.derrama-estadual.band1.top",
+        "pt.derrama-estadual.band2",
+        "pt.derrama-estadual.band2.top",
+        "pt.derrama-estadual.band3",
+        "pt.derrama-estadual.slice1",
+        "pt.derrama-estadual.slice2"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "pt-corporate-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": [
+        "pt.ta.undocumented",
+        "pt.ta.undocumented.exempt",
+        "pt.ta.cars.low",
+        "pt.ta.cars.threshold1",
+        "pt.ta.cars.mid",
+        "pt.ta.cars.threshold2",
+        "pt.ta.cars.high",
+        "pt.ta.cars.phev.low",
+        "pt.ta.cars.phev.mid",
+        "pt.ta.cars.phev.high",
+        "pt.ta.cars.electric",
+        "pt.ta.representation",
+        "pt.ta.blacklist-payments",
+        "pt.ta.blacklist-payments.exempt",
+        "pt.ta.allowances",
+        "pt.ta.dividends-exempt",
+        "pt.ta.manager-payments",
+        "pt.ta.manager-bonus.amount",
+        "pt.ta.manager-bonus.share",
+        "pt.ta.loss-uplift",
+        "pt.ta.phev.range"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": [
+        "pt.wht.irc.resident",
+        "pt.wht.irc.board-members",
+        "pt.wht.irc.payment-deadline"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc98.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/ra/Pages/irc87ra_20251107.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf-artigo-21-ordm-.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf-artigo-36-ordm-a.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx",
+      "skills": [
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cfi/Pages/cfi-23.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cfi/Pages/cfi-38.aspx",
+      "skills": [
+        "pt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cimi/Pages/cimi120.aspx",
+      "skills": [
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs100.aspx",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx",
+      "skills": [
+        "portugal-payroll",
+        "pt-cross-border",
+        "pt-income-tax",
+        "pt-nhr-ifici",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "pt-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101c.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-income-tax",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs116.aspx",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs119.aspx",
+      "skills": [
+        "portugal-payroll",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs128.aspx",
+      "skills": [
+        "portugal-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx",
+      "skills": [
+        "portugal-payroll",
+        "portugal-tax-optimization",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs130.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs15.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs151.aspx",
+      "skills": [
+        "pt-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "pt-cross-border",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs17a.aspx",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs18.aspx",
+      "skills": [
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs2.aspx",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs23.aspx",
+      "skills": [
+        "pt-foreign-source-treaties"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-tax-optimization",
+        "pt-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-income-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs40a.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs41.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs44.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs5.aspx",
+      "skills": [
+        "portugal-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs50.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx",
+      "skills": [
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs57.aspx",
+      "skills": [
+        "pt-cross-border",
+        "pt-irs-employees-investment",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58.aspx",
+      "skills": [
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58a.aspx",
+      "skills": [
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs59.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": [
+        "pt.irs.band1",
+        "pt.irs.band2",
+        "pt.irs.band3",
+        "pt.irs.band4",
+        "pt.irs.band5",
+        "pt.irs.band6",
+        "pt.irs.band7",
+        "pt.irs.band8",
+        "pt.irs.band9"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-return-assembly"
+      ],
+      "figures": [
+        "pt.irs.solidarity.1",
+        "pt.irs.solidarity.2",
+        "pt.irs.solidarity.start"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs69.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx",
+      "skills": [
+        "portugal-payroll",
+        "portugal-tax-optimization",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": [
+        "pt.wht.irs.capital-28",
+        "pt.wht.irs.nonresident-25",
+        "pt.wht.irs.blacklist-35"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": [
+        "pt.irs.special-28",
+        "pt.irs.housing-rent"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx",
+      "skills": [
+        "portugal-einvoice",
+        "portugal-tax-optimization",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78c.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78d.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78e.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78f.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs81.aspx",
+      "skills": [
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs83a.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs84.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs98.aspx",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99.aspx",
+      "skills": [
+        "portugal-payroll",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99b.aspx",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99c.aspx",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99e.aspx",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99f.aspx",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/PublishingImages/irs78_Lei_12_2022.PNG",
+      "skills": [
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs10ra_202605.aspx",
+      "skills": [
+        "portugal-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs16bra_202312.aspx",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs43ra_202605.aspx",
+      "skills": [
+        "portugal-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs68ra_202512.aspx",
+      "skills": [
+        "pt-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs72ra_202312.aspx",
+      "skills": [
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs81ra_202003.aspx",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs81ra_202312.aspx",
+      "skills": [
+        "pt-foreign-source-treaties",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "portugal-vat-return",
+        "pt-income-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva12.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-einvoice",
+        "portugal-tax-optimization",
+        "portugal-vat-return"
+      ],
+      "figures": [
+        "pt.iva.reduced",
+        "pt.iva.intermediate",
+        "pt.iva.standard"
+      ]
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva2.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva21.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva22.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva24.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva27.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva29.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva3.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva31.aspx",
+      "skills": [
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva40.aspx",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-formation",
+        "portugal-tax-optimization",
+        "portugal-vat-return",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva52.aspx",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva54.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva58.aspx",
+      "skills": [
+        "portugal-tax-optimization",
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva6.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cppt/Pages/cppt20.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cppt/Pages/cppt63.aspx",
+      "skills": [
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt19.aspx",
+      "skills": [
+        "portugal-formation",
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "pt-corporate-tax",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt38.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx",
+      "skills": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt45.aspx",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt57.aspx",
+      "skills": [
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit-artigo-128-ordm-ra2021_02.aspx",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit114.aspx",
+      "skills": [
+        "portugal-payroll",
+        "portugal-vat-return",
+        "pt-corporate-tax",
+        "pt-cross-border",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-vat-return",
+        "pt-cross-border",
+        "pt-foreign-source-treaties",
+        "pt-income-tax",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx",
+      "skills": [
+        "portugal-einvoice",
+        "portugal-financial-statements",
+        "pt-cross-border",
+        "pt-nhr-ifici",
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx",
+      "skills": [
+        "portugal-crypto-tax",
+        "pt-income-tax",
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit120.aspx",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit121.aspx",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit123.aspx",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx",
+      "skills": [
+        "portugal-einvoice",
+        "portugal-financial-statements",
+        "portugal-vat-return",
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit29.aspx",
+      "skills": [
+        "pt-foreign-source-treaties",
+        "pt-irs-employees-investment",
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/rendimento/cirs/Documents/PIV_16493.pdf",
+      "skills": [
+        "pt-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-einvoice",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto_Lei_28_2019.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-1179-2026.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei-73-A-2025.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_120_2019.pdf",
+      "skills": [
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_27_A_2020.pdf",
+      "skills": [
+        "portugal-tax-optimization",
+        "pt-corporate-tax",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_195_2020.pdf",
+      "skills": [
+        "portugal-einvoice"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_267_2021.pdf",
+      "skills": [
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_292_2025_1.pdf",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_352_2024_1.pdf",
+      "skills": [
+        "pt-nhr-ifici"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_39_B_2024.pdf",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_467-2010.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf",
+      "skills": [
+        "portugal-crypto-tax",
+        "portugal-payroll",
+        "pt-income-tax",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_72_B_2025_1.pdf",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/decreto-lei-97-2026.pdf",
+      "skills": [
+        "portugal-crypto-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12523-a-2026.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12610-a-2026.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-320-2026.pdf",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria-104-2026-1.pdf",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria-136-c-2026-1.pdf",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria_291_de_8_de_abril_de_2003_serie_i_b.pdf",
+      "skills": [
+        "pt-irs-employees-investment"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Circular-3-2026.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Circular_2_2026.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio-Circulado-25119-2026.pdf",
+      "skills": [
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_20274_2025.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/Dec_Regulamentar25_2009.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://justica.gov.pt/Como-criar-uma-empresa-online/Capital-social",
+      "skills": [
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://justica.gov.pt/Servicos/Empresa-Online",
+      "skills": [
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://justica.gov.pt/Servicos/Empresa-na-Hora",
+      "skills": [
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://openaccountants.com",
+      "skills": [
+        "portugal-einvoice",
+        "portugal-formation",
+        "portugal-tax-optimization"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8255_2015_29Jul_NC_ME.pdf",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8256_2015_29Jul_NCRF_RG.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-financial-statements"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnc.min-financas.pt/pdf/SNC/2016/DL_98_2015_2_jun.pdf",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnc.min-financas.pt/pdf/SNC/2016/Portaria_218_2015_23Jul_CContas.pdf",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnc.min-financas.pt/pdf/SNC/2016/Portaria_220_2015_24Jul_DF.pdf",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.cnc.min-financas.pt/pdf/SNC/DL126_B_2025_05Dez.pdf",
+      "skills": [
+        "portugal-bookkeeping"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gov.pt/servicos/pedir-o-certificado-de-admissibilidade-de-firma-ou-denominacao",
+      "skills": [
+        "portugal-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/Decreto%20Legislativo%20Regional%20n.%C2%BA%208_2025_M%2C%20de%2030%20de%20dezembro.pdf",
+      "skills": [
+        "portugal-vat-return",
+        "pt-corporate-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-formation",
+        "pt-return-assembly-filing",
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.parlamento.pt/ActividadeParlamentar/Paginas/DetalheIniciativa.aspx?BID=377272",
+      "skills": [
+        "portugal-payroll"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.portaldasfinancas.gov.pt",
+      "skills": [
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.seg-social.pt",
+      "skills": [
+        "pt-return-assembly"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft",
+      "skills": [
+        "portugal-bookkeeping",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw",
+      "skills": [
+        "portugal-bookkeeping",
+        "portugal-tax-optimization",
+        "pt-income-tax",
+        "pt-return-assembly-filing",
+        "pt-return-assembly",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.seg-social.pt/ptss/pssd/documento/cmc1y95ap00dkkl2yk3g4tdla",
+      "skills": [
+        "portugal-payroll",
+        "pt-social-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.seg-social.pt/ptss/pssd/documento/cmc21059n00tbkl2yjgp69iw9",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.seg-social.pt/ptss/pssd/documento/cmc2117bg00thkl2y1r0iz21r",
+      "skills": [
+        "pt-cross-border"
+      ],
+      "figures": []
+    }
+  ]
+}

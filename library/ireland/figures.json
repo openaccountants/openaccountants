@@ -1,0 +1,1745 @@
+{
+  "country": "ireland",
+  "code": "IE",
+  "figure_count": 121,
+  "figures": [
+    {
+      "id": "ie.it.rate.standard",
+      "item": "Income tax standard rate, charged on income up to the person's standard rate band (the band depends on personal circumstances)",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Single or widowed or surviving civil partner, without qualifying children €44,000 @ 20%, balance @ 40%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-vat-return"
+      ]
+    },
+    {
+      "id": "ie.it.rate.higher",
+      "item": "Income tax higher rate, charged on the balance of income above the standard rate band",
+      "value": "40%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Single or widowed or surviving civil partner, without qualifying children €44,000 @ 20%, balance @ 40%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.it.band.single",
+      "item": "Standard rate band 2026, single, widowed or surviving civil partner WITHOUT qualifying children (taxed at 20%, balance at 40%)",
+      "value": "EUR 44,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Single or widowed or surviving civil partner, without qualifying children €44,000 @ 20%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.it.band.single-parent",
+      "item": "Standard rate band 2026, single, widowed or surviving civil partner who qualifies for the Single Person Child Carer Credit",
+      "value": "EUR 48,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Single or widowed or surviving civil partner, qualifying for Single Person Child Carer Credit €48,000 @ 20%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.it.band.married-one-income",
+      "item": "Standard rate band 2026, married couple or civil partners where only ONE spouse or partner has income",
+      "value": "EUR 53,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Married or in a civil partnership (one spouse or civil partner with income) €53,000 @ 20%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.it.band.married-two-incomes",
+      "item": "Standard rate band 2026, married couple or civil partners where BOTH have income: base band, before the increase for the second earner",
+      "value": "EUR 53,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Married or in a civil partnership (both spouses or civil partners with income) €53,000 @ 20% (with an increase of 35,000 max)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.it.band.married-increase-max",
+      "item": "Maximum increase in the standard rate band for a two-income married couple or civil partners: capped at the LOWER of this amount or the lower earner's income, and not transferable between spouses. The page prints the 2026 column without the euro sign; the note below the table prints EUR 35,000.",
+      "value": "EUR 35,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Note: The increase in the rate band is capped at the lower of €35,000 or the income of the lower earner.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.credit.single",
+      "item": "Single Person Tax Credit 2026 (also the credit for a widowed person or surviving civil partner WITH dependent children)",
+      "value": "EUR 2,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Single Person 2,000 2,000 1,875",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.credit.married",
+      "item": "Married Person or Civil Partner Tax Credit 2026 (per couple, jointly assessed)",
+      "value": "EUR 4,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Married Person or Civil Partner 4,000 4,000 3,750",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-transfer-pricing",
+        "ie-vat-return"
+      ]
+    },
+    {
+      "id": "ie.credit.widowed-no-children",
+      "item": "Widowed Person or Surviving Civil Partner Tax Credit 2026, without dependent children (not in the year of bereavement)",
+      "value": "EUR 2,540",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Widowed Person or Surviving Civil Partner without dependent child(ren) 2,540 2,540",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt"
+      ]
+    },
+    {
+      "id": "ie.credit.spcc",
+      "item": "Single Person Child Carer Credit 2026 (maximum)",
+      "value": "EUR 1,900",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Single Person Child Carer Credit 1,900 1,900 1,750",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11"
+      ]
+    },
+    {
+      "id": "ie.credit.age.single",
+      "item": "Age Tax Credit 2026, single, widowed or surviving civil partner (age condition not printed on the charts page)",
+      "value": "EUR 245",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Age Tax Credit if single, widowed or surviving civil partner 245 245",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11"
+      ]
+    },
+    {
+      "id": "ie.credit.age.married",
+      "item": "Age Tax Credit 2026, married or in a civil partnership",
+      "value": "EUR 490",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Age Tax Credit if married or in a civil partnership 490 490",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11"
+      ]
+    },
+    {
+      "id": "ie.credit.home-carer",
+      "item": "Home Carer Tax Credit 2026, MAXIMUM amount (it is reduced where the home carer has their own income)",
+      "value": "EUR 1,950",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Home Carer's Tax Credit (max.) 1,950 1,950 1,800",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11"
+      ]
+    },
+    {
+      "id": "ie.credit.paye",
+      "item": "Employee (PAYE) Tax Credit 2026. Same figure as the Single Person Credit and the Earned Income Credit maximum: three different credits.",
+      "value": "EUR 2,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Employee PAYE Tax Credit 2,000 2,000 1,875",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.credit.earned-income",
+      "item": "Earned Income Tax Credit 2026, MAXIMUM, for self-employed and proprietary directors; combined with the Employee Tax Credit the two cannot exceed the maximum Employee Tax Credit (see ie.credit.earned-income.rate-cap)",
+      "value": "EUR 2,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Earned Income Tax Credit (max.) 2,000 2,000 1,875",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.credit.rent.single",
+      "item": "Rent Tax Credit 2026, single person, MAXIMUM",
+      "value": "EUR 1,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Rent Tax Credit - single person (max) 1,000 1,000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident"
+      ]
+    },
+    {
+      "id": "ie.credit.rent.couple",
+      "item": "Rent Tax Credit 2026, jointly assessed married couple or civil partners, MAXIMUM",
+      "value": "EUR 2,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Rent Tax Credit - jointly assessed married couple or civil partners (max) 2,000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.credit.incapacitated-child",
+      "item": "Incapacitated Child Tax Credit 2026",
+      "value": "EUR 3,800",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Incapacitated Child Tax Credit 3,800 3,800",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.credit.dependent-relative",
+      "item": "Dependent Relative Tax Credit 2026",
+      "value": "EUR 305",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Dependent Relative 305 305 245",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.credit.dependent-relative.income-limit",
+      "item": "Dependent Relative income limit 2026: the relative's own income must not exceed this for the credit",
+      "value": "EUR 18,548",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Dependent Relative Income Limit 18,548 18,028",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.credit.blind.single",
+      "item": "Blind Tax Credit 2026, single person (also one spouse or partner blind)",
+      "value": "EUR 1,950",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Blind Tax Credit - single person 1,950 1,950",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11"
+      ]
+    },
+    {
+      "id": "ie.credit.mortgage-interest",
+      "item": "Mortgage Interest Tax Credit, MAXIMUM, printed in the 2026 column of the charts",
+      "value": "EUR 1,250",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Mortgage Interest Tax Credit 1,250 (max) 1,250 (max)",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.dwt.rate",
+      "item": "Dividend withholding tax rate (Schedule F withholding), 2026 column",
+      "value": "25%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+      "quote": "Tax Rate: Schedule F (WH = Withholding Tax) 25% WH",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-payroll",
+        "ie-prsi-cross-border",
+        "ie-transfer-pricing"
+      ]
+    },
+    {
+      "id": "ie.usc.exemption-threshold",
+      "item": "USC exemption threshold: if total income is NOT MORE than this, no USC; if it exceeds it, USC is due on the FULL income (a cliff, not an allowance)",
+      "value": "EUR 13,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx",
+      "quote": "If your total income exceeds €13,000, you pay USC on your full income.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.band1",
+      "item": "USC 2026 standard rates: first band of income, charged at 0.5%",
+      "value": "EUR 12,012",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+      "quote": "Standard rates and thresholds of USC for 2026 Threshold for 2026 Rate First €12,012 0.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.rate1",
+      "item": "USC 2026 standard rate on the first EUR 12,012",
+      "value": "0.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+      "quote": "Standard rates and thresholds of USC for 2026 Threshold for 2026 Rate First €12,012 0.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-formation",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.band2",
+      "item": "USC 2026 second band: the NEXT EUR 16,688 (a band width, not a cumulative threshold), charged at 2%",
+      "value": "EUR 16,688",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+      "quote": "Threshold for 2026 Rate First €12,012 0.5% Next €16,688 2%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.rate2",
+      "item": "USC 2026 rate on the second band (next EUR 16,688)",
+      "value": "2%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+      "quote": "Threshold for 2026 Rate First €12,012 0.5% Next €16,688 2%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-formation",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.band3",
+      "item": "USC 2026 third band: the NEXT EUR 41,344 (band width), charged at 3%",
+      "value": "EUR 41,344",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+      "quote": "Next €16,688 2% Next €41,344 3% Balance 8% Standard rates and thresholds of USC for 2025",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.rate3",
+      "item": "USC 2026 rate on the third band (next EUR 41,344). 2025 also 3%; 2024 was 4%.",
+      "value": "3%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+      "quote": "Next €16,688 2% Next €41,344 3% Balance 8% Standard rates and thresholds of USC for 2025",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-formation",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-transfer-pricing",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.rate4",
+      "item": "USC 2026 rate on the balance above the three bands",
+      "value": "8%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+      "quote": "Next €16,688 2% Next €41,344 3% Balance 8% Standard rates and thresholds of USC for 2025",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-formation",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.reduced.income-limit",
+      "item": "Reduced USC rates apply only if income is EUR 60,000 or LESS AND the person is aged 70 or older OR holds a full Medical Card (not a GP visit card). Above it, standard rates apply.",
+      "value": "EUR 60,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx",
+      "quote": "Reduced rates of USC will apply if your income is €60,000 or less and: you are aged 70 or older or hold a full Medical Card",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-payroll",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.reduced.rate-first",
+      "item": "Reduced USC rate 2026 on the first EUR 12,012 (over 70s and full medical card holders with income EUR 60,000 or less)",
+      "value": "0.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx",
+      "quote": "The reduced rates for 2026 are: 0.5% on the first €12,012 and 2% on the balance.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-formation",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.reduced.rate-balance",
+      "item": "Reduced USC rate 2026 on the balance above EUR 12,012 (over 70s and full medical card holders with income EUR 60,000 or less)",
+      "value": "2%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx",
+      "quote": "The reduced rates for 2026 are: 0.5% on the first €12,012 and 2% on the balance.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-formation",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.surcharge.rate",
+      "item": "USC surcharge on non-PAYE income (self-employed income etc.) when non-PAYE income is MORE than EUR 100,000 a year",
+      "value": "3%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx",
+      "quote": "There is a USC surcharge of 3% if your non-PAYE income is more than €100,000 a year.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-formation",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-transfer-pricing",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.usc.surcharge.threshold",
+      "item": "Non-PAYE income threshold for the 3% USC surcharge (surcharge applies if non-PAYE income is MORE than this). Same figure as the property relief surcharge gross-income floor: two different rules.",
+      "value": "EUR 100,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx",
+      "quote": "There is a USC surcharge of 3% if your non-PAYE income is more than €100,000 a year.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cross-border",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-return-assembly",
+        "ie-usc",
+        "ie-vat-return"
+      ]
+    },
+    {
+      "id": "ie.usc.property-surcharge.rate",
+      "item": "Additional USC rate on taxable income sheltered by property or area-based incentive reliefs (incl. Section 23); does not apply if gross income is less than EUR 100,000",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx",
+      "quote": "An additional 5% rate of USC applies to taxable income that is",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-transfer-pricing",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.employee.to-sep",
+      "item": "PRSI Class A EMPLOYEE rate for weekly pay over EUR 352, period 1 January to 30 September 2026 (subclasses AX, AL, A1; nil for A0, EUR 38 to EUR 352)",
+      "value": "4.2%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "€352.01 - €424 (**) AX All 4.20 9.00",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.employee.from-oct",
+      "item": "PRSI Class A EMPLOYEE rate for weekly pay over EUR 352, period from 1 October 2026",
+      "value": "4.35%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "Class A from 1 October 2026 Weekly income band PRSI Subclass How much of weekly income Employee %(*) Employer % €38 - €352 A0 All Nil 9.15 €352.01 - €424 (**) AX All 4.35",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.employer.low.to-sep",
+      "item": "PRSI Class A EMPLOYER lower rate, weekly pay EUR 38 to EUR 552 (subclasses A0, AX, AL), to 30 September 2026",
+      "value": "9%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "€38 - €352 A0 All Nil 9.00",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-vat-return"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.employer.high.to-sep",
+      "item": "PRSI Class A EMPLOYER higher rate, weekly pay MORE than EUR 552 (subclass A1), to 30 September 2026",
+      "value": "11.25%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "More than €552 A1 All 4.20 11.25",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.employer.low.from-oct",
+      "item": "PRSI Class A EMPLOYER lower rate, weekly pay EUR 38 to EUR 552, from 1 October 2026",
+      "value": "9.15%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "€38 - €352 A0 All Nil 9.15",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.employer.high.from-oct",
+      "item": "PRSI Class A EMPLOYER higher rate, weekly pay MORE than EUR 552 (subclass A1), from 1 October 2026",
+      "value": "11.40%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "More than €552 A1 All 4.35 11.40",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.band.floor",
+      "item": "Class A applies to reckonable pay of EUR 38 or more a week from all employments; also the bottom of band A0",
+      "value": "EUR 38",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "reckonable pay of €38 or more per week from all employments",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.band.a0-top",
+      "item": "Top of weekly band A0 (employee nil, employer lower rate); weekly pay up to this amount pays no employee PRSI. Same weekly band in both 2026 periods.",
+      "value": "EUR 352",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "€38 - €352 A0 All Nil 9.00",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.band.ax-top",
+      "item": "Top of weekly band AX (EUR 352.01 to EUR 424), where the tapered PRSI credit applies",
+      "value": "EUR 424",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "€352.01 - €424 (**) AX All 4.20 9.00",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.a.band.employer-threshold",
+      "item": "Weekly pay threshold for the employer higher rate: MORE than this is subclass A1 (the whole week's pay at the higher employer rate, \"All\"). Same in both 2026 periods.",
+      "value": "EUR 552",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/",
+      "quote": "€424.01 - €552 AL All 4.20 9.00 More than €552 A1",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.credit.max",
+      "item": "Maximum weekly PRSI Credit for Class A and H employees, at gross weekly earnings of EUR 352.01; reduced by one sixth of earnings over EUR 352.01, nil once earnings exceed EUR 424",
+      "value": "EUR 12",
+      "tax_year": 2026,
+      "source_url": "https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf",
+      "quote": "At gross weekly earnings of €352.01 the maximum PRSI Credit of €12 per week applies.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.credit.range.low",
+      "item": "Bottom of the earnings range for the tapered PRSI Credit (weekly)",
+      "value": "EUR 352.01",
+      "tax_year": 2026,
+      "source_url": "https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf",
+      "quote": "employees earning between €352.01 and €424 a week",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.s.rate.to-sep",
+      "item": "PRSI Class S rate (self-employed, certain company directors, certain people with investment and rental income), to 30 September 2026",
+      "value": "4.2%",
+      "tax_year": 2026,
+      "source_url": "https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf",
+      "quote": "pay Class S PRSI at the rate of 4.2% until 30 September 2026 (4.35% from 1 October 2026)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.prsi.s.rate.from-oct",
+      "item": "PRSI Class S rate from 1 October 2026",
+      "value": "4.35%",
+      "tax_year": 2026,
+      "source_url": "https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf",
+      "quote": "pay Class S PRSI at the rate of 4.2% until 30 September 2026 (4.35% from 1 October 2026)",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.prsi.s.threshold",
+      "item": "Self-employed contributors pay Class S if annual income is EUR 5,000 OR OVER",
+      "value": "EUR 5,000",
+      "tax_year": 2026,
+      "source_url": "https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf",
+      "quote": "Self-employed contributors with annual income of €5,000 or over pay Class S PRSI",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.prsi.s.minimum",
+      "item": "Minimum annual Class S contribution",
+      "value": "EUR 650",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/",
+      "quote": "the minimum annual contribution for Class S is €650",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.prsi.s.blended-2026",
+      "item": "Blended (proportionate) Class S rate for those returning PRSI through Revenue self-assessment on 2026 self-employed income, because the rate changed during 2026; or minimum payment EUR 650",
+      "value": "4.2375%",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/",
+      "quote": "for 2026 income the rate will be 4.2375% or min payment of €650",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.prsi.s.blended-2025",
+      "item": "Blended Class S rate for self-assessed 2025 annual income (filed in 2026), or minimum EUR 650. Not the 2026 rate.",
+      "value": "4.125%",
+      "tax_year": "2025 self-employed income, returned in 2026",
+      "source_url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/",
+      "quote": "a blended or proportionate rate of 4.125% or a minimum payment of €650 will apply on their self-employed 2025 annual income",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-income-tax-form11",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border"
+      ]
+    },
+    {
+      "id": "ie.cgt.rate",
+      "item": "Capital gains tax rate for most gains (since 6 December 2012)",
+      "value": "33%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx",
+      "quote": "The rate of CGT is 33% for most gains.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-non-dom",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.cgt.rate.foreign-life",
+      "item": "CGT rate on gains from foreign life policies and foreign investment products",
+      "value": "40%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx",
+      "quote": "40% for gains from foreign life policies and foreign investment products.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.cgt.rate.vc-individual",
+      "item": "CGT rate on gains from venture capital funds, individuals and partnerships",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx",
+      "quote": "15% for gains from venture capital funds for individuals and partnerships.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.cgt.exemption.personal",
+      "item": "CGT personal (annual) exemption: first EUR 1,270 of an individual's gains each tax year, after losses. Per individual, residents and non-residents; NOT transferable between spouses; not for companies or trusts.",
+      "value": "EUR 1,270",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx",
+      "quote": "Each tax year, the first €1,270 of your gain or gains (after deducting losses) are exempt from CGT.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-cross-border",
+        "ie-non-dom",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.cgt.exempt.chattels",
+      "item": "Gain on moveable property (such as furniture) is exempt where the gain does not exceed this amount",
+      "value": "EUR 2,540",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx",
+      "quote": "moveable property (such as furniture), where the gain does not exceed €2,540",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt"
+      ]
+    },
+    {
+      "id": "ie.cgt.pay.initial",
+      "item": "CGT payment date for disposals made 1 January to 30 November (initial period): 15 December of the same year",
+      "value": "15 December",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx",
+      "quote": "1 January and 30 November (the initial period), you must pay CGT by 15 December of the same year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake"
+      ]
+    },
+    {
+      "id": "ie.cgt.pay.later",
+      "item": "CGT payment date for disposals made 1 December to 31 December (later period): 31 January of the next year",
+      "value": "31 January",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx",
+      "quote": "1 December and 31 December (the later period), you must pay CGT by 31 January of the next year.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake"
+      ]
+    },
+    {
+      "id": "ie.cgt.file",
+      "item": "CGT return due on or before 31 October of the year FOLLOWING the year of disposal, even if no tax is due",
+      "value": "31 October",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx",
+      "quote": "You must file your CGT return on or before 31 October of the year that follows the date of disposal.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax"
+      ]
+    },
+    {
+      "id": "ie.cgt.retirement.age",
+      "item": "Retirement Relief minimum age (no need to actually retire); under 55 only on ill health and reaching 55 within 12 months of disposal",
+      "value": "55",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx",
+      "quote": "If you are 55 years of age or older, you might be able to claim Retirement Relief.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-income-tax-form11",
+        "ie-payroll",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.cgt.retirement.child.55-69",
+      "item": "Retirement Relief, transfer of business or farm to a CHILD on or after 1 January 2025, owner aged 55 to 69: relief restricted to EUR 10 million (the page writes the figure in words)",
+      "value": "EUR 10 million",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx",
+      "quote": "between 55 and 69, the relief is restricted to €10 million",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt"
+      ]
+    },
+    {
+      "id": "ie.cgt.retirement.child.70plus",
+      "item": "Retirement Relief, transfer to a CHILD on or after 1 January 2025, owner aged 70 or older: relief restricted to EUR 3 million",
+      "value": "EUR 3 million",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx",
+      "quote": "70 or older, the relief is restricted to €3 million.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt"
+      ]
+    },
+    {
+      "id": "ie.cgt.retirement.outside.55-69",
+      "item": "Retirement Relief, disposal OUTSIDE the family on or after 1 January 2025, owner aged 55 to 69: full relief if market value does not exceed this LIFETIME threshold; above it marginal relief limits CGT to half the excess",
+      "value": "EUR 750,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx",
+      "quote": "€750,000 for disposals made: from 1 January 2014 to 31 December 2024 (inclusive) and you are between 55 and 65 or on, or after, 1 January 2025 and you are between 55 and 69.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt"
+      ]
+    },
+    {
+      "id": "ie.cgt.retirement.outside.70plus",
+      "item": "Retirement Relief, disposal OUTSIDE the family on or after 1 January 2025, owner aged at least 70: lifetime threshold for full relief",
+      "value": "EUR 500,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx",
+      "quote": "€500,000 for disposals made from 1 January 2014 to 31 December 2024 (inclusive) and you are at least 66 or on, or after, 1 January 2025 and you are at least 70 years old.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-cross-border"
+      ]
+    },
+    {
+      "id": "ie.cgt.retirement.clawback-years",
+      "item": "Retirement Relief on transfer to a child is clawed back if the child disposes of the asset within this many years (written in words on the page: six years)",
+      "value": "six years",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx",
+      "quote": "your child disposes of the asset within six years",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.cgt.entrepreneur.rate",
+      "item": "Revised Entrepreneur Relief: CGT rate on gains from disposal of chargeable business assets, up to the lifetime limit",
+      "value": "10%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx",
+      "quote": "This relief gives a CGT rate of 10% on gains from the disposal of chargeable business assets.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-income-tax-form11",
+        "ie-non-dom",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s"
+      ]
+    },
+    {
+      "id": "ie.cgt.entrepreneur.limit-2026",
+      "item": "Revised Entrepreneur Relief lifetime limit on gains arising on or after 1 January 2026 (prior qualifying gains since 1 January 2016 count towards it)",
+      "value": "EUR 1,500,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx",
+      "quote": "For gains arising on or after 1 January 2026, the lifetime limit increases to €1,500,000.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-non-dom"
+      ]
+    },
+    {
+      "id": "ie.cgt.entrepreneur.limit-to-2025",
+      "item": "Revised Entrepreneur Relief lifetime limit for gains arising 1 January 2016 to 31 December 2025. Not the 2026 figure.",
+      "value": "EUR 1,000,000",
+      "tax_year": "1 January 2016 to 31 December 2025",
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx",
+      "quote": "You can claim the relief on the first €1,000,000 of gains arising between 1 January 2016 and 31 December 2025.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-cross-border",
+        "ie-non-dom"
+      ]
+    },
+    {
+      "id": "ie.cgt.entrepreneur.share-min",
+      "item": "Revised Entrepreneur Relief: minimum holding of ordinary shares, owned for a continuous three years",
+      "value": "5%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx",
+      "quote": "you must have owned at least 5% of the ordinary shares for a continuous period of three years.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-transfer-pricing",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.cgt.entrepreneur.time-min",
+      "item": "Revised Entrepreneur Relief: working director or employee must spend no less than this share of time in a managerial or technical capacity, for a continuous three years within the five years before disposal",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx",
+      "quote": "spent no less than 50% of your time in the service of the company",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-prsi-class-s"
+      ]
+    },
+    {
+      "id": "ie.cat.rate",
+      "item": "Capital acquisitions tax rate on gifts and inheritances above the group threshold (on or after 6 December 2012)",
+      "value": "33%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx",
+      "quote": "The current rate of CAT is 33%.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-non-dom",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.cat.group-a",
+      "item": "CAT Group A tax-free threshold, gifts and inheritances on or after 2 October 2024 (mainly children of the disponer); lifetime aggregate since 5 December 1991 within the group",
+      "value": "EUR 400,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
+      "quote": "On or after 2 October 2024 €400,000 €40,000 €20,000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat"
+      ]
+    },
+    {
+      "id": "ie.cat.group-b",
+      "item": "CAT Group B tax-free threshold on or after 2 October 2024",
+      "value": "EUR 40,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
+      "quote": "On or after 2 October 2024 €400,000 €40,000 €20,000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-corporation-tax",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.cat.group-c",
+      "item": "CAT Group C tax-free threshold on or after 2 October 2024",
+      "value": "EUR 20,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
+      "quote": "On or after 2 October 2024 €400,000 €40,000 €20,000",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-payroll",
+        "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.cat.filing-trigger",
+      "item": "IT38 return required if total taxable value of benefits within a group EXCEEDS 80% of the group threshold (or if claiming agricultural or business relief)",
+      "value": "80%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/index.aspx",
+      "quote": "exceeds 80% of the relevant group threshold",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat"
+      ]
+    },
+    {
+      "id": "ie.cat.small-gift",
+      "item": "CAT small gift exemption: first EUR 3,000 from EACH disponer in each calendar year; gifts only, NOT inheritances",
+      "value": "EUR 3,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-exemptions/small-gift-exemption/index.aspx",
+      "quote": "the first €3,000 from each disponer is exempt from CAT.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-vat-return"
+      ]
+    },
+    {
+      "id": "ie.cat.pay-file.jan-aug",
+      "item": "CAT pay and file date where valuation date falls 1 January to 31 August: 31 October in that year",
+      "value": "31 October",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/important-dates-for-cat.aspx",
+      "quote": "between 1 January and 31 August, the pay and file deadline is 31 October in that year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax"
+      ]
+    },
+    {
+      "id": "ie.cat.pay-file.sep-dec",
+      "item": "CAT pay and file date where valuation date falls 1 September to 31 December: 31 October in the FOLLOWING year",
+      "value": "31 October",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/important-dates-for-cat.aspx",
+      "quote": "between 1 September and 31 December, the pay & file deadline is 31 October in the following year.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax"
+      ]
+    },
+    {
+      "id": "ie.levy.amount",
+      "item": "Domicile levy amount, per year",
+      "value": "EUR 200,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf",
+      "quote": "The amount of the levy is €200,000.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-non-dom",
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.levy.income",
+      "item": "Domicile levy condition: world-wide income in the tax year EXCEEDS EUR 1,000,000 (one of four conditions, ALL must be met: Irish domiciled AND income test AND Irish income tax less than EUR 200,000 AND Irish property over EUR 5,000,000 on 31 December)",
+      "value": "EUR 1,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf",
+      "quote": "an individual must have “world-wide income” in excess of €1,000,000 for a tax year.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-cross-border",
+        "ie-non-dom"
+      ]
+    },
+    {
+      "id": "ie.levy.tax-test",
+      "item": "Domicile levy condition: liability to Irish income tax in the tax year is LESS than this. Same figure as the levy amount: two rules.",
+      "value": "EUR 200,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf",
+      "quote": "whose liability to Irish income tax in the tax year is less than €200,000; and",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-non-dom",
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.levy.property",
+      "item": "Domicile levy condition: market value of Irish property on 31 December in the tax year must exceed this (no deduction for debts; certain trading-company shares excluded)",
+      "value": "EUR 5,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf",
+      "quote": "Irish property to which the individual is beneficially entitled in possession on 31 December in the tax year must exceed €5,000,000.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-non-dom"
+      ]
+    },
+    {
+      "id": "ie.levy.pay-date",
+      "item": "Domicile levy pay and file: on or before 31 October of the year following the tax year (valuation date 31 December); Irish income tax paid may be offset, USC may not",
+      "value": "31 October",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx",
+      "quote": "You need to file the return and pay on, or before, 31 October of the following year.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax"
+      ]
+    },
+    {
+      "id": "ie.nondom.remittance",
+      "item": "Remittance basis: DOMICILE is the only test. A person resident in Ireland who is NOT Irish domiciled pays Irish tax on Irish source income in full and on foreign income only to the extent remitted into Ireland, whether or not they are ordinarily resident (TDM 05-01-21A para 2 and example 8; TDM 34-00-01 para 4.2). Since 2010 an Irish citizen who is not ordinarily resident does NOT get it. The quoted web-page sentence describes one case, not a condition. No figure; wording entry. Reworded 2 Oct 2026 after the ie-non-dom reader.",
+      "value": "remittance basis",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx",
+      "quote": "You may be Irish tax resident, but non-ordinarily resident and not domiciled in Ireland for a tax year.",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.prelim.90",
+      "item": "Preliminary tax safe harbour: at least 90% of the tax due for the CURRENT tax year (preliminary tax covers income tax, PRSI and USC; must equal or exceed the LOWEST of the three options)",
+      "value": "90%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx",
+      "quote": "90% of the tax due for that tax year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-formation",
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-return-assembly",
+        "ie-vat-return"
+      ]
+    },
+    {
+      "id": "ie.prelim.100",
+      "item": "Preliminary tax safe harbour: 100% of the tax due for the immediately PREVIOUS tax year",
+      "value": "100%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx",
+      "quote": "100% of the tax due for the immediately previous tax year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.prelim.105",
+      "item": "Preliminary tax safe harbour: 105% of the tax due for the PRE-PRECEDING year; ONLY when paying by direct debit, and NOT if pre-preceding year tax was nil",
+      "value": "105%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx",
+      "quote": "105% of the tax due for the tax year preceding the immediately previous tax year",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax",
+        "ie-prsi-class-s",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.prelim.due",
+      "item": "Preliminary tax due date: 31 October of the tax year in question (ROS pay-and-file extension is a separate date)",
+      "value": "31 October",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx",
+      "quote": "You must pay this by 31 October of the tax year in question.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax"
+      ]
+    },
+    {
+      "id": "ie.sbe.limit",
+      "item": "Small Benefit Exemption from 1 January 2025: up to five non-cash benefits a year, combined value not more than EUR 1,500; a single benefit over EUR 1,500 is taxable in FULL (cliff); unused allowance not carried over",
+      "value": "EUR 1,500",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/valuation-of-benefits/small-benefit-exemption.aspx",
+      "quote": "These benefits must not be in cash and the combined value of the five benefits cannot exceed €1,500.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.sbe.count",
+      "item": "Small Benefit Exemption: maximum number of qualifying benefits per employee per year (written in words on the page)",
+      "value": "five",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/valuation-of-benefits/small-benefit-exemption.aspx",
+      "quote": "you can give employees up to five small benefits, tax-free, each year.",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.bik.car.omv-reduction",
+      "item": "Company car BIK: for 2026 deduct EUR 10,000 from Original Market Value for cars in categories A1, A, B, C and D (NOT category E) before applying the percentage; tapers to EUR 5,000 for 2027 and EUR 2,500 for 2028",
+      "value": "EUR 10,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "For 2023, 2024, 2025 and 2026, a reduction of €10,000 can be applied to the Original Market Value of cars in categories A1, A, B, C and D.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-vat-return"
+      ]
+    },
+    {
+      "id": "ie.bik.car.omv-reduction-2027",
+      "item": "Company car BIK OMV reduction for 2027 (tapered); not the 2026 figure",
+      "value": "EUR 5,000",
+      "tax_year": "2027",
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "2027 - reduction of €5,000.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-prsi-class-s",
+        "ie-prsi-cross-border",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.bik.car.a1",
+      "item": "Company car BIK percentage of OMV, category A1 (0g/km CO2, new from 1 January 2026), business mileage 0 to 26,000 km",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "0 26,000 15% 22.5% 26.25% 30% 33.75% 37.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.bik.car.a",
+      "item": "Company car BIK percentage, category A (more than 0 up to 59g/km), business mileage 0 to 26,000 km",
+      "value": "22.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "0 26,000 15% 22.5% 26.25% 30% 33.75% 37.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.bik.car.b",
+      "item": "Company car BIK percentage, category B (more than 59 up to 99g/km), business mileage 0 to 26,000 km",
+      "value": "26.25%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "0 26,000 15% 22.5% 26.25% 30% 33.75% 37.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.bik.car.c",
+      "item": "Company car BIK percentage, category C (more than 99 up to 139g/km), business mileage 0 to 26,000 km",
+      "value": "30%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "0 26,000 15% 22.5% 26.25% 30% 33.75% 37.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-income-tax-form11",
+        "ie-payroll",
+        "ie-transfer-pricing"
+      ]
+    },
+    {
+      "id": "ie.bik.car.d",
+      "item": "Company car BIK percentage, category D (more than 139 up to 179g/km), business mileage 0 to 26,000 km",
+      "value": "33.75%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "0 26,000 15% 22.5% 26.25% 30% 33.75% 37.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.bik.car.e",
+      "item": "Company car BIK percentage, category E (more than 179g/km), business mileage 0 to 26,000 km; no EUR 10,000 OMV reduction for category E",
+      "value": "37.5%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "0 26,000 15% 22.5% 26.25% 30% 33.75% 37.5%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.bik.car.top-band.floor",
+      "item": "Company car BIK: lower limit of the highest business mileage band (48,001 km and above), made permanent from 1 January 2026",
+      "value": "48,001 km",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "the lower limit in the highest mileage band is reduced by 4,000 km to 48,001 km.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.bik.car.top-band.e",
+      "item": "Company car BIK percentage, category E, business mileage 48,001 km and above",
+      "value": "15%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "48,001* And above 6% 9% 10.5% 12% 13.5% 15%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.bik.car.top-band.a1",
+      "item": "Company car BIK percentage, category A1, business mileage 48,001 km and above",
+      "value": "6%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx",
+      "quote": "48,001* And above 6% 9% 10.5% 12% 13.5% 15%",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.nmw.adult",
+      "item": "National minimum wage from 1 January 2026, employees aged 20 and above, per hour",
+      "value": "EUR 14.15",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/",
+      "quote": "The national minimum hourly rate will become €14.15 on 1 January 2026.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.nmw.19",
+      "item": "National minimum wage from 1 January 2026, aged 19, per hour",
+      "value": "EUR 12.74",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/",
+      "quote": "Aged 19 €12.74",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.nmw.18",
+      "item": "National minimum wage from 1 January 2026, aged 18, per hour",
+      "value": "EUR 11.32",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/",
+      "quote": "Aged 18 €11.32",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.nmw.under-18",
+      "item": "National minimum wage from 1 January 2026, aged under 18, per hour",
+      "value": "EUR 9.91",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/",
+      "quote": "Aged under 18 €9.91",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.nmw.board",
+      "item": "Maximum amount for board only that may count towards minimum wage from 1 January 2026, per hour worked",
+      "value": "EUR 1.27",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/",
+      "quote": "board only €1.27 per hour worked",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.nmw.lodging-week",
+      "item": "Maximum amount for accommodation only that may count towards minimum wage from 1 January 2026, per week (or EUR 4.77 per day)",
+      "value": "EUR 33.42",
+      "tax_year": 2026,
+      "source_url": "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/",
+      "quote": "accommodation only €33.42 per week or €4.77 per day.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-payroll"
+      ]
+    },
+    {
+      "id": "ie.payfile.ros-extension-2026",
+      "item": "ROS pay-and-file extended date in 2026 for the 2025 Form 11 balance AND 2026 preliminary tax (also CAT, valuation dates in year to 31 August 2026); only if BOTH filed AND paid through ROS, otherwise 31 October 2026",
+      "value": "18 November 2026",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx",
+      "quote": "the due date is extended to Wednesday 18 November 2026.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-income-tax-form11",
+        "ie-preliminary-tax"
+      ]
+    },
+    {
+      "id": "ie.payfile.standard-2026",
+      "item": "Standard pay-and-file date in 2026 (2025 return and balance, 2026 preliminary tax) where not both filed and paid on ROS",
+      "value": "31 October 2026",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx",
+      "quote": "the required date to submit both returns and payments is no later than 31 October 2026.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-freelance-intake",
+        "ie-preliminary-tax"
+      ]
+    },
+    {
+      "id": "ie.it.exemption.single-65",
+      "item": "Income tax exemption limit, single, widowed or surviving civil partner aged 65 or older: exempt if total income does NOT exceed this (applies since 2020; income tax only, not USC or PRSI)",
+      "value": "EUR 18,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/marital-and-civil-status/exemption-and-marginal-relief/exemption-limits.aspx",
+      "quote": "Single, widowed or a surviving civil partner €18,000",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.it.exemption.married-65",
+      "item": "Income tax exemption limit, married or civil partners jointly assessed where either is 65 or older",
+      "value": "EUR 36,000",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/marital-and-civil-status/exemption-and-marginal-relief/exemption-limits.aspx",
+      "quote": "Married or in a civil partnership €36,000",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.it.exemption.child-1-2",
+      "item": "Increase in the age exemption limit for each of the first two dependent children",
+      "value": "EUR 575",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/marital-and-civil-status/exemption-and-marginal-relief/exemption-limits.aspx",
+      "quote": "€575 per child for your first two children",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.it.exemption.child-3plus",
+      "item": "Increase in the age exemption limit for each additional dependent child (third and later)",
+      "value": "EUR 830",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/marital-and-civil-status/exemption-and-marginal-relief/exemption-limits.aspx",
+      "quote": "€830 per child for each additional child.",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.credit.home-carer.full-limit",
+      "item": "Home Carer Tax Credit: home carer's income threshold; at or below it the full credit; above it the credit is reduced by HALF the excess over this figure (Carer's Allowance and Carer's Benefit not counted)",
+      "value": "EUR 7,200",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/home-carer-credit/home-carer-tax-credit-rates.aspx",
+      "quote": "If you earn more than €7,200, you will receive a reduced tax credit.",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.credit.home-carer.cutoff-2026",
+      "item": "Home Carer Tax Credit: income of EUR 11,100 or more during 2026 means no credit",
+      "value": "EUR 11,100",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/home-carer-credit/home-carer-tax-credit-rates.aspx",
+      "quote": "If your income is €11,100 or more during 2026, you cannot claim the tax credit.",
+      "read_on": "2026-10-02",
+      "used_by": []
+    },
+    {
+      "id": "ie.credit.earned-income.rate-cap",
+      "item": "Earned Income Tax Credit available is the LOWER of EUR 2,000 or this share of qualifying earned income (self-employed income, proprietary directors' pay; not rental or deposit interest). Where income qualifies for both, Employee plus Earned Income credits combined cannot exceed the maximum Employee Tax Credit; not transferable to a spouse",
+      "value": "20%",
+      "tax_year": 2026,
+      "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx",
+      "quote": "The credit available is the lower of: €2,000 or 20% of your qualifying earned income.",
+      "read_on": "2026-10-02",
+      "used_by": [
+        "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly",
+        "ie-vat-return"
+      ]
+    }
+  ]
+}

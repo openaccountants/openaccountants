@@ -1,0 +1,272 @@
+{
+  "country": "vietnam",
+  "code": "VN",
+  "url_count": 25,
+  "sources": [
+    {
+      "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.admin.law-108",
+        "vn.vat.payment.deadline",
+        "vn.vat.late-interest",
+        "vn.vat.filing.amendment-window",
+        "vn.vat.filing.force-majeure-extension",
+        "vn.vat.currency"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/18/469047-1773796836_v1_1773803477_signed.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.exempt.household-threshold.superseded",
+        "vn.vat.household.above-threshold"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.exempt.household-threshold",
+        "vn.vat.exempt.household-threshold.start",
+        "vn.vat.einvoice.household-1bn",
+        "vn.vat.einvoice.household-30days"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/18/469482-1778814209_v1_1779067294_signed.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.decree.144-2026.start"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/27/469536-1779329464_v1_1779843299_signed.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.law.09-2026",
+        "vn.vat.exempt.household-threshold.law-delegation"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/16/469958-1784169386_v1_1784170386_signed.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.platform.decree-252",
+        "vn.vat.platform.decree-117-replaced",
+        "vn.vat.foreign-supplier.registration",
+        "vn.vat.foreign-supplier.monthly",
+        "vn.vat.foreign-supplier.two-data-points",
+        "vn.vat.admin.decree-252.replaces-126",
+        "vn.vat.filing.monthly-deadline",
+        "vn.vat.filing.quarterly-deadline",
+        "vn.vat.filing.per-transaction"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45374/57334-1-2025895-896174-2025-nd-cp.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.rate.temporary-8.period",
+        "vn.vat.rate.temporary-8.decree",
+        "vn.vat.rate.temporary-direct-cut"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45379/57344-1-2025899-900181-2025-nd-cp.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.decree.181",
+        "vn.vat.zero.conditions.goods",
+        "vn.vat.zero.conditions.goods.customs",
+        "vn.vat.zero.conditions.services",
+        "vn.vat.direct-method.new-business-2yrs",
+        "vn.vat.input.noncash-threshold",
+        "vn.vat.input.noncash-same-day",
+        "vn.vat.input.car-cap",
+        "vn.vat.decree.181.replaces-209"
+      ]
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45440/57458-1-2025923-92469-2025-tt-btc.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.circular.69-replaces-219"
+      ]
+    },
+    {
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/12-vbhn-vpqh.pdf",
+      "skills": [
+        "vietnam-vat"
+      ],
+      "figures": [
+        "vn.vat.law.current",
+        "vn.vat.law.old-repealed",
+        "vn.vat.law.149-2025",
+        "vn.vat.rate.zero",
+        "vn.vat.rate.zero.exclusions",
+        "vn.vat.rate.reduced",
+        "vn.vat.rate.standard",
+        "vn.vat.rate.standard.foreign-digital",
+        "vn.vat.rate.temporary-8",
+        "vn.vat.rate.temporary-8.cut",
+        "vn.vat.zero.credit-conditions.export",
+        "vn.vat.exempt.land-use-rights",
+        "vn.vat.exempt.insurance",
+        "vn.vat.exempt.financial",
+        "vn.vat.exempt.medical",
+        "vn.vat.exempt.education",
+        "vn.vat.exempt.public-transport",
+        "vn.vat.exempt.tech-transfer",
+        "vn.vat.exempt.construction-50pct",
+        "vn.vat.exempt.no-credit",
+        "vn.vat.credit-method.threshold",
+        "vn.vat.direct-method.below-threshold",
+        "vn.vat.direct.pct.distribution",
+        "vn.vat.direct.pct.services",
+        "vn.vat.direct.pct.manufacturing",
+        "vn.vat.direct.pct.other",
+        "vn.vat.direct.gold",
+        "vn.vat.input.noncash.law",
+        "vn.vat.refund.export.min",
+        "vn.vat.refund.export.cap",
+        "vn.vat.refund.investment.min",
+        "vn.vat.refund.five-pct.min",
+        "vn.vat.refund.five-pct.period",
+        "vn.vat.refund.tourists",
+        "vn.vat.taxpayer.reverse-charge",
+        "vn.vat.taxpayer.foreign-digital-b2b",
+        "vn.vat.taxpayer.platform-withholding"
+      ]
+    },
+    {
+      "url": "https://github.com/googlesky/thue-2026",
+      "skills": [
+        "references",
+        "vietnam-pit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://github.com/thangtd-0050/pit",
+      "skills": [
+        "references",
+        "vietnam-pit"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam",
+      "skills": [
+        "vn-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/corporate/income-determination",
+      "skills": [
+        "vn-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/corporate/other-taxes",
+      "skills": [
+        "vn-company-formation",
+        "vn-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/corporate/tax-administration",
+      "skills": [
+        "vn-corporate-income-tax",
+        "vn-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/corporate/taxes-on-corporate-income",
+      "skills": [
+        "vn-corporate-income-tax",
+        "vn-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/corporate/withholding-taxes",
+      "skills": [
+        "vn-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/individual/other-taxes",
+      "skills": [
+        "vn-payroll-social"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/individual/tax-administration",
+      "skills": [
+        "vn-payroll-social",
+        "vn-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://taxsummaries.pwc.com/vietnam/individual/taxes-on-personal-income",
+      "skills": [
+        "vn-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://vietanlaw.com/vietnam-employee-social-insurance-contribution-rate-2025/",
+      "skills": [
+        "vn-payroll-social"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://vietnam.incorp.asia/vietnam-tax-reform-2025/",
+      "skills": [
+        "vn-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ey.com/en_gl/technical/tax-alerts/vietnam-passes-new-corporate-income-tax-law",
+      "skills": [
+        "vn-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.vietnam-briefing.com/doing-business-guide/vietnam",
+      "skills": [
+        "vn-company-formation"
+      ],
+      "figures": []
+    }
+  ]
+}

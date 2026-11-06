@@ -1,0 +1,2266 @@
+{
+  "country": "us/federal",
+  "code": "US",
+  "figure_count": 178,
+  "figures": [
+    {
+      "id": "us.brackets.mfj.10-top",
+      "item": "Married filing jointly and surviving spouses, 2026: taxable income taxed at 10% up to this amount (top of the 10% band). Rev. Proc. 2025-32 Table 1.",
+      "value": "USD 24,800",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Not over $24,800 10% of the taxable income",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.mfj.12-top",
+      "item": "Married filing jointly, 2026: top of the 12% band (taxable income over USD 24,800 but not over this amount). The PDF text prints the band edges out of order; the Rev. Proc. table is the source.",
+      "value": "USD 100,800",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $24,800 but not over $2,480 plus 12% of the excess $100,800",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.mfj.22-top",
+      "item": "Married filing jointly, 2026: top of the 22% band.",
+      "value": "USD 211,400",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $100,800 but not over $11,600 plus 22% of the excess $211,400",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.mfj.24-top",
+      "item": "Married filing jointly, 2026: top of the 24% band.",
+      "value": "USD 403,550",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $211,400 but not over $35,932 plus 24% of the excess $403,550",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.mfj.32-top",
+      "item": "Married filing jointly, 2026: top of the 32% band.",
+      "value": "USD 512,450",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $403,550 but not over $82,048 plus 32% of the excess $512,450",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.mfj.37-start",
+      "item": "Married filing jointly, 2026: taxable income above this amount is taxed at 37% (top of the 35% band).",
+      "value": "USD 768,700",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $768,700 $206,583.50 plus 37% of the excess over $768,700",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.hoh.10-top",
+      "item": "Head of household, 2026: top of the 10% band.",
+      "value": "USD 17,700",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Not over $17,700 10% of the taxable income",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.hoh.12-top",
+      "item": "Head of household, 2026: top of the 12% band.",
+      "value": "USD 67,450",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $17,700 but $1,770 plus 12% of not over $67,450",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.hoh.22-top",
+      "item": "Head of household, 2026: top of the 22% band.",
+      "value": "USD 105,700",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $67,450 but $7,740 plus 22% of not over $105,700",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.hoh.24-top",
+      "item": "Head of household, 2026: top of the 24% band.",
+      "value": "USD 201,750",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $105,700 but $16,155 plus 24% of not over $201,750",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.hoh.32-top",
+      "item": "Head of household, 2026: top of the 32% band.",
+      "value": "USD 256,200",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $201,750 but $39,207 plus 32% of not over $256,200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.hoh.37-start",
+      "item": "Head of household, 2026: taxable income above this amount is taxed at 37%.",
+      "value": "USD 640,600",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $640,600 $191,171 plus 37% of the excess over $640,600",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.single.10-top",
+      "item": "Single (unmarried, not head of household or surviving spouse), 2026: top of the 10% band. Married filing separately uses the same edges up to the 35% band.",
+      "value": "USD 12,400",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Not over $12,400 10% of the taxable income Over $12,400 but $1,240 plus 12%",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.single.12-top",
+      "item": "Single, 2026: top of the 12% band (same for married filing separately).",
+      "value": "USD 50,400",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $12,400 but $1,240 plus 12% of not over $50,400",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.single.22-top",
+      "item": "Single, 2026: top of the 22% band (same for married filing separately). Note USD 105,700 is ALSO the top of the head-of-household 22% band.",
+      "value": "USD 105,700",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $50,400 but $5,800 plus 22% of not over $105,700",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.single.24-top",
+      "item": "Single, 2026: top of the 24% band (same for married filing separately). Not the head-of-household figure (USD 201,750).",
+      "value": "USD 201,775",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $105,700 but $17,966 plus 24% of not over $201,775",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.single.32-top",
+      "item": "Single, 2026: top of the 32% band (same for married filing separately). Not the head-of-household figure (USD 256,200).",
+      "value": "USD 256,225",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $201,775 but $41,024 plus 32% of not over $256,225",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.single.37-start",
+      "item": "Single, 2026: taxable income above this amount is taxed at 37%. Same number as head of household.",
+      "value": "USD 640,600",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $640,600 $192,979.25 plus 37% of the excess over $640,600",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.mfs.37-start",
+      "item": "Married filing separately, 2026: taxable income above this amount is taxed at 37% (the 35% band ends here, not at USD 640,600).",
+      "value": "USD 384,350",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $384,350 $103,291.75 plus 37% of the excess over $384,350",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.brackets.trust.37-start",
+      "item": "Estates and trusts, 2026: taxable income above this amount is taxed at 37% (four rates only: 10%, 24%, 35%, 37%).",
+      "value": "USD 16,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $16,000 $3,851 plus 37% of the excess over $16,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.brackets.top-rate",
+      "item": "Top individual income tax rate, 2026 (seven rates 10%, 12%, 22%, 24%, 32%, 35%, 37% made permanent by OBBBA section 70101).",
+      "value": "37%",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Over $768,700 $206,583.50 plus 37% of the excess over $768,700",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-crypto-tax",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-estate-gift-706-709",
+        "us-federal-income-tax-return-1040",
+        "us-form-1040-individual-return",
+        "us-form-1041-trust-and-estate-income"
+      ]
+    },
+    {
+      "id": "us.kiddie.unearned-amount",
+      "item": "Kiddie tax, 2026: amount used to reduce a child's net unearned income subject to the kiddie tax (§ 1(g)(4)(A)(ii)(I)); also the dependent standard deduction floor.",
+      "value": "USD 1,350",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "subject to the \"kiddie tax,\" is $1,350",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-hiring-your-children-and-accountable-plans"
+      ]
+    },
+    {
+      "id": "us.cg.zero-top.mfj",
+      "item": "Long-term capital gains / qualified dividends, 2026: maximum zero-rate amount, married filing jointly and surviving spouse. Gains above it up to the 15% amount are taxed at 15%.",
+      "value": "USD 98,900",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Married Individuals Filing Joint Returns and $98,900 $613,700",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.cg.15-top.mfj",
+      "item": "Long-term capital gains, 2026: maximum 15%-rate amount, married filing jointly (20% above it).",
+      "value": "USD 613,700",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Married Individuals Filing Joint Returns and $98,900 $613,700",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.cg.zero-top.single",
+      "item": "Long-term capital gains, 2026: maximum zero-rate amount, 'all other individuals' (single). Same number for married filing separately.",
+      "value": "USD 49,450",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "All Other Individuals $49,450 $545,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.cg.15-top.single",
+      "item": "Long-term capital gains, 2026: maximum 15%-rate amount, 'all other individuals' (single).",
+      "value": "USD 545,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "All Other Individuals $49,450 $545,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.cg.zero-top.hoh",
+      "item": "Long-term capital gains, 2026: maximum zero-rate amount, head of household.",
+      "value": "USD 66,200",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Heads of Household $66,200 $579,600",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.cg.15-top.hoh",
+      "item": "Long-term capital gains, 2026: maximum 15%-rate amount, head of household.",
+      "value": "USD 579,600",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Heads of Household $66,200 $579,600",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.adoption.max",
+      "item": "Adoption credit, 2026: maximum qualified adoption expenses (and the special-needs credit amount).",
+      "value": "USD 17,670",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "the credit allowed for an adoption of a child with special needs is $17,670",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.adoption.phaseout-start",
+      "item": "Adoption credit, 2026: phase-out starts above this modified AGI; fully phased out at USD 305,080.",
+      "value": "USD 265,080",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "modified adjusted gross income in excess of $265,080",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.adoption.refundable",
+      "item": "Adoption credit, 2026: refundable portion (new § 23(a)(4), OBBBA section 70402).",
+      "value": "USD 5,120",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "may be refundable is $5,120",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.ctc.max",
+      "item": "Child tax credit, 2026: maximum credit per qualifying child (§ 24(a)). OBBBA set USD 2,200 for 2025 and indexed it from 2026; the 2026 indexed figure is still USD 2,200.",
+      "value": "USD 2,200",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "the maximum amount of the credit allowed under § 24(a) is $2,200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.ctc.refundable",
+      "item": "Child tax credit, 2026: refundable portion per child (additional child tax credit, § 24(d)(1)(A)).",
+      "value": "USD 1,700",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "may be refundable is $1,700",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.eitc.max.three",
+      "item": "Earned income credit, 2026: maximum credit with three or more qualifying children.",
+      "value": "USD 8,231",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Maximum Amount of Credit $4,427 $7,316 $8,231 $664",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.eitc.max.two",
+      "item": "Earned income credit, 2026: maximum credit with two qualifying children.",
+      "value": "USD 7,316",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Maximum Amount of Credit $4,427 $7,316 $8,231 $664",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.eitc.max.one",
+      "item": "Earned income credit, 2026: maximum credit with one qualifying child.",
+      "value": "USD 4,427",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Maximum Amount of Credit $4,427 $7,316 $8,231 $664",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.eitc.max.none",
+      "item": "Earned income credit, 2026: maximum credit with no qualifying children.",
+      "value": "USD 664",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Maximum Amount of Credit $4,427 $7,316 $8,231 $664",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.eitc.investment-income",
+      "item": "Earned income credit, 2026: no credit if investment income exceeds this amount (§ 32(i)). A cliff, not a phase-out.",
+      "value": "USD 12,200",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "certain investment income exceeds $12,200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.amt.exemption.mfj",
+      "item": "AMT exemption, 2026, married filing jointly and surviving spouses (§ 55(d)(1)).",
+      "value": "USD 140,200",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Joint Returns or Surviving Spouses $140,200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.amt.exemption.single",
+      "item": "AMT exemption, 2026, unmarried individuals (other than surviving spouses).",
+      "value": "USD 90,100",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Unmarried Individuals (other than Surviving Spouses) $90,100",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.amt.exemption.mfs",
+      "item": "AMT exemption, 2026, married filing separately.",
+      "value": "USD 70,100",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Married Individuals Filing Separate Returns $70,100",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.amt.28-threshold",
+      "item": "AMT, 2026: excess taxable income above which the 28% AMT rate applies (all taxpayers other than married filing separately; MFS USD 122,250).",
+      "value": "USD 244,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "All Other Taxpayers $244,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ]
+    },
+    {
+      "id": "us.amt.phaseout.mfj",
+      "item": "AMT exemption phase-out threshold, 2026, joint returns: exemption reduced above this AMTI (fully phased out at USD 1,280,400). OBBBA: not indexed before 2027.",
+      "value": "USD 1,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Joint Returns or Surviving Spouses $1,000,000 $1,280,400",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.amt.phaseout.single",
+      "item": "AMT exemption phase-out threshold, 2026, unmarried individuals (fully phased out at USD 680,200).",
+      "value": "USD 500,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Unmarried Individuals (other than $500,000 $680,200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.std.mfj",
+      "item": "Standard deduction, 2026, married filing jointly and surviving spouses.",
+      "value": "USD 32,200",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Married Individuals Filing Joint Returns and Surviving Spouses $32,200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.std.hoh",
+      "item": "Standard deduction, 2026, head of household.",
+      "value": "USD 24,150",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Heads of Households (§ 1(j)(2)(B)) $24,150",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.std.single",
+      "item": "Standard deduction, 2026, single (unmarried, not surviving spouse or head of household); same for married filing separately.",
+      "value": "USD 16,100",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Unmarried Individuals (other than Surviving Spouses and Heads of $16,100",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-hiring-your-children-and-accountable-plans"
+      ]
+    },
+    {
+      "id": "us.std.aged-blind",
+      "item": "Additional standard deduction, 2026, per aged (65+) or blind person, married. This is NOT the OBBBA senior deduction (USD 6,000, § 151(d)(5)), which is separate and additional.",
+      "value": "USD 1,650",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "the aged or the blind is $1,650",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.std.aged-blind.unmarried",
+      "item": "Additional standard deduction, 2026, aged or blind, unmarried and not a surviving spouse.",
+      "value": "USD 2,050",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "increased to $2,050 if the individual is also unmarried",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.fsa.health",
+      "item": "Health FSA salary-reduction limit, 2026 (§ 125(i)).",
+      "value": "USD 3,400",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "spending arrangements is $3,400",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.fsa.carryover",
+      "item": "Health FSA maximum carryover of unused amounts into the next plan year, 2026 (if the plan permits).",
+      "value": "USD 680",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "the maximum carryover amount is $680",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.fringe.transit-parking",
+      "item": "Qualified transportation fringe, 2026: monthly exclusion for transit pass/commuter vehicle, and separately for qualified parking (same figure each).",
+      "value": "USD 340",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "commuter highway vehicle and any transit pass is $340",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.s179.limit",
+      "item": "Section 179 expensing limit, 2026 (taxable years beginning in 2026). OBBBA raised the base to USD 2,500,000 for property placed in service in years beginning after 31 December 2024; this is the indexed 2026 figure.",
+      "value": "USD 2,560,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "cannot exceed $2,560,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.s179.phaseout",
+      "item": "Section 179, 2026: limit reduced dollar for dollar by the cost of § 179 property placed in service above this amount.",
+      "value": "USD 4,090,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "during the 2026 taxable year exceeds $4,090,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.s179.suv-cap",
+      "item": "Section 179, 2026: maximum cost of a sport utility vehicle that may be taken into account under § 179 (§ 179(b)(5)(A)). Caps the 179 deduction only; bonus depreciation is a separate question.",
+      "value": "USD 32,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "sport utility vehicle that may be taken into account under § 179 cannot exceed $32,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.qbi.threshold.mfj",
+      "item": "QBI (§ 199A), 2026: threshold amount, married filing jointly. Above it the wage/property limits and SSTB exclusion phase in.",
+      "value": "USD 403,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Married Individuals Filing Joint Returns $403,500 $553,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.qbi.phasein-end.mfj",
+      "item": "QBI (§ 199A), 2026: end of the phase-in range, married filing jointly (column 'phase-in range amount'). Above it, limits apply in full and SSTB income gets no deduction.",
+      "value": "USD 553,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "Married Individuals Filing Joint Returns $403,500 $553,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.qbi.threshold.other",
+      "item": "QBI (§ 199A), 2026: threshold amount, all other returns (single, head of household). Married filing separately: USD 201,775.",
+      "value": "USD 201,750",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "All Other Returns $201,750 $276,750",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.qbi.phasein-end.other",
+      "item": "QBI (§ 199A), 2026: end of the phase-in range, all other returns.",
+      "value": "USD 276,750",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "All Other Returns $201,750 $276,750",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.cash-method.gross-receipts",
+      "item": "Gross receipts test, 2026 (§ 448(c)): average annual gross receipts over the prior 3 years not exceeding this amount. Same small-business test is used for § 174A retroactive election, § 163(j) and inventory exceptions.",
+      "value": "USD 32,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "does not exceed $32,000,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ebl.threshold",
+      "item": "Excess business loss threshold, 2026 (§ 461(l)), single; USD 512,000 joint.",
+      "value": "USD 256,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "is $256,000 ($512,000 for joint returns)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.ebl.threshold.joint",
+      "item": "Excess business loss threshold, 2026 (§ 461(l)), joint returns.",
+      "value": "USD 512,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "is $256,000 ($512,000 for joint returns)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.feie",
+      "item": "Foreign earned income exclusion, 2026 (§ 911), per qualifying individual.",
+      "value": "USD 132,900",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "§ 911(b)(2)(D)(i) is $132,900",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.gift.annual-exclusion",
+      "item": "Gift tax annual exclusion, 2026: per donee, per donor, present-interest gifts only.",
+      "value": "USD 19,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "the first $19,000 of gifts to any person",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.estate.basic-exclusion",
+      "item": "Estate and gift tax basic exclusion amount, calendar 2026 (OBBBA section 70106 set it at USD 15,000,000 for 2026, indexed from 2027). Same figure is the GST exemption for 2026.",
+      "value": "USD 15,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "increasing the basic exclusion amount to $15,000,000 for calendar year 2026",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.qbi.min-deduction",
+      "item": "QBI (§ 199A(i), OBBBA section 70105): minimum deduction for taxable years beginning after 31 December 2025, for a taxpayer with at least USD 1,000 of QBI from active businesses. Indexed only after 2026.",
+      "value": "USD 400",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "amended § 199A(i) to add a minimum deduction of $400",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.qbi.min-qbi",
+      "item": "QBI minimum deduction (§ 199A(i)): the qualified business income needed to qualify, from 2026.",
+      "value": "USD 1,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "a minimum of $1,000 of qualified business income",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.1099.threshold-2026",
+      "item": "Form 1099-NEC/MISC (§ 6041(a)) reporting threshold for payments made after 31 December 2025 (OBBBA section 70433). Indexed from returns filed in 2027.",
+      "value": "USD 2,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "quote": "For payments made after December 31, 2025, the base threshold under section 6041(a) is $2,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-augusta-rule-home-rental-to-your-business",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.ret.415c",
+      "item": "Defined contribution total annual additions limit, 2026 (§ 415(c)(1)(A)): employee deferrals plus employer contributions per participant (catch-ups are on top). Also the cap on a SEP-IRA contribution, which is further limited to a share of compensation.",
+      "value": "USD 72,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased in 2026 from $70,000 to $72,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ret.415b",
+      "item": "Defined benefit plan annual benefit limit, 2026 (§ 415(b)(1)(A)).",
+      "value": "USD 290,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $280,000 to $290,000. For a participant",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ret.402g",
+      "item": "401(k)/403(b)/TSP elective deferral limit, 2026 (§ 402(g)(1)), per person across all plans (a solo 401(k) employee deferral uses this limit).",
+      "value": "USD 24,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "Thrift Savings Plan, is increased from $23,500 to $24,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.ret.catchup-50",
+      "item": "401(k)/403(b)/governmental 457 catch-up, 2026, age 50 or over (§ 414(v)(2)(B)(i)).",
+      "value": "USD 8,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "applies for individuals aged 50 or over is increased from $7,500 to $8,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ret.catchup-60-63",
+      "item": "401(k)/403(b) super catch-up, 2026, for people who attain age 60, 61, 62 or 63 in 2026 (§ 414(v)(2)(E)(i)); replaces, not adds to, the age-50 catch-up.",
+      "value": "USD 11,250",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "61, 62, or 63 in 2026 remains $11,250",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.ret.roth-catchup-wage",
+      "item": "Roth catch-up rule: if 2025 FICA wages exceeded this amount, 2026 catch-up contributions must be designated Roth (§ 414(v)(7)(A)). Does not apply to SEP or SIMPLE IRAs.",
+      "value": "USD 150,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $145,000 to $150,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.ret.simple",
+      "item": "SIMPLE IRA / SIMPLE 401(k) salary-reduction limit, 2026 (§ 408(p)(2)(E)(i)(III)); USD 18,100 for plans eligible for the higher SECURE 2.0 limit.",
+      "value": "USD 17,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $16,500 to $17,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-hiring-your-children-and-accountable-plans"
+      ]
+    },
+    {
+      "id": "us.ret.simple.higher",
+      "item": "SIMPLE higher deferral limit, 2026 (§ 408(p)(2)(E)(i)(I) or (II)), for certain plans (small employers or elected higher contributions).",
+      "value": "USD 18,100",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $17,600 to $18,100",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ret.simple.catchup-50",
+      "item": "SIMPLE catch-up, 2026, age 50 or over (§ 414(v)(2)(B)(ii)).",
+      "value": "USD 4,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "aged 50 or over is increased from $3,500 to $4,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.ret.simple.catchup-60-63",
+      "item": "SIMPLE catch-up, 2026, for people who attain age 60 to 63 in 2026 (§ 414(v)(2)(E)(ii)).",
+      "value": "USD 5,250",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "who attain age 60, 61, 62, or 63 in 2026 remains $5,250",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.ret.hce",
+      "item": "Highly compensated employee threshold (§ 414(q)(1)(B)), 2026 notice: unchanged.",
+      "value": "USD 160,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "under section 414(q)(1)(B) remains $160,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.ret.key-employee",
+      "item": "Key employee (top-heavy) officer compensation threshold, 2026 (§ 416(i)(1)(A)(i)).",
+      "value": "USD 235,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $230,000 to $235,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ret.comp-cap",
+      "item": "Annual compensation limit, 2026 (§§ 401(a)(17), 404(l), 408(k)(3)(C), 408(k)(6)(D)(ii)): maximum compensation counted for qualified plan and SEP contributions.",
+      "value": "USD 360,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $350,000 to $360,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ret.sep-min-comp",
+      "item": "SEP participation compensation threshold, 2026 (§ 408(k)(2)(C)): employees paid at least this amount in the year must be covered (with the age and service tests).",
+      "value": "USD 800",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $750 to $800",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.ira.limit",
+      "item": "IRA contribution limit, 2026 (§ 219(b)(5)(A)), traditional and Roth combined.",
+      "value": "USD 7,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $7,000 to $7,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.ira.catchup",
+      "item": "IRA catch-up, 2026, age 50 before year end (§ 219(b)(5)(B)(ii)).",
+      "value": "USD 1,100",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $1,000 to $1,100. The applicable",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.roth.phaseout.mfj",
+      "item": "Roth IRA, 2026: AGI limitation amount for married filing jointly (start of the contribution phase-out range).",
+      "value": "USD 242,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $236,000 to $242,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.roth.phaseout.single",
+      "item": "Roth IRA, 2026: AGI limitation amount for other taxpayers (single, head of household; not married filing separately) (start of the phase-out range).",
+      "value": "USD 153,000",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+      "quote": "is increased from $150,000 to $153,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.hsa.self",
+      "item": "HSA contribution limit, calendar 2026, self-only HDHP coverage (§ 223(b)(2)(A)).",
+      "value": "USD 4,400",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "quote": "self-only coverage under a high -2- deductible health plan is $4,400",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.hsa.family",
+      "item": "HSA contribution limit, calendar 2026, family HDHP coverage.",
+      "value": "USD 8,750",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "quote": "family coverage under a high deductible health plan is $8,750",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.hsa.hdhp-min-deductible",
+      "item": "HDHP minimum annual deductible, 2026: USD 1,700 self-only, USD 3,400 family.",
+      "value": "USD 1,700",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "quote": "not less than $1,700 for self-only coverage or $3,400 for family coverage",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.hsa.hdhp-oop-max",
+      "item": "HDHP maximum out-of-pocket, 2026: USD 8,500 self-only, USD 17,000 family.",
+      "value": "USD 8,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "quote": "do not exceed $8,500 for self-only coverage or $17,000 for family coverage",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.obbba.salt.cap-2025",
+      "item": "SALT deduction cap (§ 164(b)(6)-(7), OBBBA section 70120) for taxable years beginning in 2025; half for married filing separately. Applies from taxable years beginning after 31 December 2024. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 40,000",
+      "tax_year": 2025,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "in the case of any taxable year beginning in calendar year 2025, $40,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies"
+      ]
+    },
+    {
+      "id": "us.obbba.salt.cap-2026",
+      "item": "SALT deduction cap for taxable years beginning in 2026 (half for married filing separately). Rises by 1% a year for 2027 to 2029; reverts to USD 10,000 from 2030. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 40,400",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "in the case of any taxable year beginning in calendar year 2026, $40,400",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.salt.indexing",
+      "item": "SALT cap for taxable years beginning after 2026 and before 2030: 101 percent of the prior year's cap (the Act prints the yearly cap only for 2025 and 2026; later years are not printed as digits). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "101 percent",
+      "tax_year": "2027 to 2029",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "after calendar year 2026 and before 2030, 101 percent of the dollar amount",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.obbba.salt.cap-2030",
+      "item": "SALT cap reversion: for taxable years beginning after calendar year 2029 the cap is again USD 10,000 (USD 5,000 married filing separately) with no MAGI phase-down. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 10,000",
+      "tax_year": "2030 onward",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "in the case of any taxable year beginning after calendar year 2029, $10,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.salt.phasedown-rate",
+      "item": "SALT cap phase-down (taxable years beginning before 1 January 2030): the cap is reduced by 30 percent of MAGI over the threshold amount (half the threshold for married filing separately). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "30 percent",
+      "tax_year": "2025 to 2029",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "reduced by 30 percent of the excess (if any) of the taxpayer's modified adjusted gross income over the threshold amount",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.salt.threshold-2025",
+      "item": "SALT cap phase-down MAGI threshold, taxable years beginning in 2025. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 500,000",
+      "tax_year": 2025,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "in the case of any taxable year beginning in calendar year 2025, $500,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.salt.threshold-2026",
+      "item": "SALT cap phase-down MAGI threshold, taxable years beginning in 2026 (101% indexing after 2026). Half for married filing separately. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 505,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "in the case of any taxable year beginning in calendar year 2026, $505,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.salt.floor",
+      "item": "SALT phase-down floor: the reduction cannot take the cap below this amount (so the cap never drops below USD 10,000 in 2025 to 2029). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 10,000",
+      "tax_year": "2025 to 2029",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall not result in the applicable limitation amount being less than $10,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.tips.cap",
+      "item": "No tax on tips (§ 224, OBBBA section 70201): maximum yearly deduction for qualified tips, per return (the Act prints no separate joint amount). Taxable years 2025 to 2028: applies to years beginning after 31 December 2024; no deduction for years beginning after 31 December 2028. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 25,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "for any taxable year shall not exceed $25,000. ``(2) Limitation based on adjusted gross income",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.tips.phaseout",
+      "item": "No tax on tips: deduction reduced by USD 100 for each USD 1,000 of MAGI above this amount (USD 300,000 joint). Same thresholds as the overtime deduction. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 150,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "by which the taxpayer's modified adjusted gross income exceeds $150,000 ($300,000 in the case of a joint return)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.tips.phaseout-joint",
+      "item": "No tax on tips and no tax on overtime: MAGI phase-out start for a joint return. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 300,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "exceeds $150,000 ($300,000 in the case of a joint return)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.obbba.overtime.cap",
+      "item": "No tax on overtime (§ 225, OBBBA section 70202): maximum yearly deduction for qualified overtime compensation (the FLSA premium portion only); USD 25,000 on a joint return. Married people must file jointly. Taxable years beginning after 31 December 2024 and not after 31 December 2028. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 12,500",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall not exceed $12,500 ($25,000 in the case of a joint return)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.overtime.cap-joint",
+      "item": "No tax on overtime: maximum yearly deduction on a joint return. Note USD 25,000 is ALSO the tips cap (per return); different rules. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 25,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall not exceed $12,500 ($25,000 in the case of a joint return)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.terminate-2028",
+      "item": "No tax on tips and no tax on overtime: no deduction for any taxable year beginning after this date. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "December 31, 2028",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "No deduction shall be allowed under this section for any taxable year beginning after December 31, 2028",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.obbba.senior.amount",
+      "item": "Senior deduction (§ 151(d)(5)(C), OBBBA section 70103): per qualified individual aged 65 or over by year end (both spouses on a joint return); taxable years beginning after 31 December 2024 and before 1 January 2029. Separate from, and on top of, the additional standard deduction for age.",
+      "value": "USD 6,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "there shall be allowed a deduction in an amount equal to $6,000 for each qualified individual",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.senior.phaseout",
+      "item": "Senior deduction: reduced by 6 percent of MAGI above USD 75,000 (USD 150,000 joint). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "6 percent",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall be reduced (but not below zero) by 6 percent of so much of the taxpayer's modified adjusted gross income as exceeds $75,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.senior.threshold",
+      "item": "Senior deduction MAGI phase-out threshold, single; USD 150,000 joint. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 75,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "as exceeds $75,000 ($150,000 in the case of a joint return)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.carloan.cap",
+      "item": "Car loan interest deduction (§ 163(h)(4), OBBBA section 70203): maximum qualified passenger vehicle loan interest per taxable year; loans incurred after 31 December 2024 for a new vehicle with final assembly in the United States, personal use, first lien; taxable years 2025 to 2028; VIN on the return. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 10,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "for any taxable year shall not exceed $10,000. ``(ii) Limitation based on modified",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.carloan.phaseout",
+      "item": "Car loan interest: deduction reduced by USD 200 per USD 1,000 (or part) of MAGI above USD 100,000 (USD 200,000 joint). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 100,000",
+      "tax_year": "2025 to 2028",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "exceeds $100,000 ($200,000 in the case of a joint return)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.bonus.rate",
+      "item": "Bonus depreciation (§ 168(k), OBBBA section 70301): 100 percent made permanent for property ACQUIRED after 19 January 2025 (no phase-down). Taxpayers may elect 40 percent (60 percent for longer-production property) for the first taxable year ending after 19 January 2025. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "100 percent",
+      "tax_year": "property acquired after 19 January 2025",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "by striking ``the applicable percentage'' and inserting ``100 percent''",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.obbba.bonus.start",
+      "item": "Bonus depreciation 100%: start date. The amendments apply to property acquired after this date (binding-contract acquisition rules apply). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "January 19, 2025",
+      "tax_year": "property acquired after 19 January 2025",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall apply to property acquired after January 19, 2025",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-cost-segregation",
+        "us-section-179-and-bonus-depreciation",
+        "us-state-bonus-depreciation-conformity-matrix"
+      ]
+    },
+    {
+      "id": "us.obbba.bonus.transition-40",
+      "item": "Bonus depreciation transition election: for the first taxable year ending after 19 January 2025, a taxpayer may elect 40 percent instead of 100 percent (60 percent for longer-production and certain aircraft property). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "40 percent",
+      "tax_year": "first taxable year ending after 19 January 2025",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "by substituting `40 percent' for `100 percent'",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.obbba.174a.start",
+      "item": "Domestic research expensing (new § 174A, OBBBA section 70302): applies to amounts paid or incurred in taxable years beginning after this date. Foreign research stays capitalised over 15 years under § 174. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "December 31, 2024",
+      "tax_year": "2025 onward",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall apply to amounts paid or incurred in taxable years beginning after December 31, 2024",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.obbba.174a.amortize",
+      "item": "§ 174A(c) election: instead of expensing, a taxpayer may capitalise domestic research and amortise it ratably over a period of not less than this many months, from the month benefits are first realised. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "60 months",
+      "tax_year": "2025 onward",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "ratably over such period of not less than 60 months",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-r-and-d-section-174-and-41"
+      ]
+    },
+    {
+      "id": "us.obbba.174a.small-retro",
+      "item": "§ 174A small-business retroactive election (section 70302(f)(1)): an eligible taxpayer (meets the § 448(c) gross receipts test for its first taxable year beginning after 31 December 2024, not a tax shelter) may apply § 174A to taxable years beginning after 31 December 2021, by amended returns; the election must be made not later than 1 year after enactment (enacted 4 July 2025). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "December 31, 2021",
+      "tax_year": "2022 to 2024 (retroactive)",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall each be applied by substituting ``December 31, 2021'' for ``December 31, 2024''",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.obbba.qbi.phasein-range",
+      "item": "QBI (§ 199A(b)(3)(B) and (d)(3), OBBBA section 70105): phase-in range widened from USD 50,000 to USD 75,000 (USD 150,000 joint) for taxable years beginning after 31 December 2025. The Rev. Proc. 2025-32 thresholds plus this range give the printed phase-in end amounts. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 75,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "inserting ``$75,000 ($150,000 in the case of a joint return)''",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.qbi.phasein-range-joint",
+      "item": "QBI phase-in range for a joint return from 2026. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 150,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "inserting ``$75,000 ($150,000 in the case of a joint return)''",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.obbba.charity.nonitemizer",
+      "item": "Charitable deduction for NON-itemizers (§ 170(p), OBBBA section 70424): cash gifts to public charities up to USD 1,000 (USD 2,000 joint), permanent, taxable years beginning after 31 December 2025. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 1,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "by striking ``$300 ($600'' and inserting ``$1,000 ($2,000''",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.charity.nonitemizer-joint",
+      "item": "Charitable deduction for non-itemizers, joint return, from 2026. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 2,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "by striking ``$300 ($600'' and inserting ``$1,000 ($2,000''",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-augusta-rule-home-rental-to-your-business",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.charity.floor-individual",
+      "item": "Charitable floor for individuals who itemize (§ 170(b)(1)(I), OBBBA section 70425): contributions are deductible only above 0.5 percent of the contribution base (roughly AGI); taxable years beginning after 31 December 2025. Disallowed amounts carry forward only from years in which a percentage limit is exceeded. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "0.5 percent",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "exceeds 0.5 percent of the taxpayer's contribution base",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.charity.cash-60",
+      "item": "Individual cash gifts to public charities: 60 percent of contribution base limit made permanent (OBBBA section 70425). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "60 percent",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "60 percent of the taxpayer's contribution base for the taxable year",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.obbba.charity.corp-floor",
+      "item": "Corporate charitable deduction (§ 170(b)(2)(A), OBBBA section 70426): allowed only above 1 percent and up to 10 percent of taxable income; taxable years beginning after 31 December 2025. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "1 percent",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "exceeds 1 percent of the taxpayer's taxable income for the taxable year",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.obbba.charity.corp-cap",
+      "item": "Corporate charitable deduction ceiling, from 2026: 10 percent of taxable income (excess carried forward 5 years). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "10 percent",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "does not exceed 10 percent of the taxpayer's taxable income for the taxable year",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-augusta-rule-home-rental-to-your-business",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.itemized.2-37",
+      "item": "Itemized deduction limitation for top-bracket taxpayers (new § 68, OBBBA section 70111): itemized deductions reduced by 2/37 of the lesser of the deductions or taxable income above the start of the 37% bracket; taxable years beginning after 31 December 2025. The page prints the fraction with backslashes. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "2/37",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall be reduced by \\2/37\\ of the lesser of",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.obbba.1099k",
+      "item": "Form 1099-K (§ 6050W(e), OBBBA section 70432): third party settlement organisations report only if payments exceed USD 20,000 AND the number of transactions exceeds 200; restored as if the 2021 change had never been made. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 20,000",
+      "tax_year": "retroactive (as if included in ARPA 2021)",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "exceeds $20,000, and ``(2) the aggregate number of such transactions exceeds 200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies"
+      ]
+    },
+    {
+      "id": "us.obbba.1099k.count",
+      "item": "Form 1099-K transaction-count test that applies together with the USD 20,000 amount test. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "200",
+      "tax_year": "retroactive (as if included in ARPA 2021)",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "the aggregate number of such transactions exceeds 200",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-pl-86-272-income-tax-nexus",
+        "us-sales-tax"
+      ]
+    },
+    {
+      "id": "us.obbba.qsbs.cap",
+      "item": "QSBS § 1202 per-issuer gain cap for stock acquired AFTER the applicable date (4 July 2025, date of enactment): USD 15,000,000 (or 10 times basis if greater), indexed from 2027. Stock acquired on or before that date keeps USD 10,000,000. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 15,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "if such stock was acquired by the taxpayer after the applicable date, $15,000,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.obbba.qsbs.cap-old",
+      "item": "QSBS per-issuer cap for stock acquired on or before the applicable date (4 July 2025). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 10,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "acquired by the taxpayer on or before the applicable date, $10,000,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.qsbs.3yr",
+      "item": "QSBS tiered exclusion for stock acquired after 4 July 2025: held 3 years, 50% of gain excluded. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "50%",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "3 years................................................ 50%",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-estate-gift-706-709",
+        "us-form-1120-c-corp",
+        "us-gilti-fdii-beat",
+        "us-pte-state-matrix",
+        "us-qbi-deduction",
+        "us-s-corp-election-decision",
+        "us-schedule-c-and-se-computation",
+        "us-secure-2-and-retirement-updates",
+        "us-sole-prop-bookkeeping",
+        "us-state-payroll-matrix"
+      ]
+    },
+    {
+      "id": "us.obbba.qsbs.4yr",
+      "item": "QSBS tiered exclusion for stock acquired after 4 July 2025: held 4 years, 75% excluded. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "75%",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "4 years................................................ 75%",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-irs-collections-and-controversy"
+      ]
+    },
+    {
+      "id": "us.obbba.qsbs.5yr",
+      "item": "QSBS tiered exclusion for stock acquired after 4 July 2025: held 5 years or more, 100% excluded. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "100%",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "5 years or more........................................ 100%",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-cost-segregation",
+        "us-irs-collections-and-controversy",
+        "us-pte-state-matrix",
+        "us-quarterly-estimated-tax",
+        "us-schedule-c-and-se-computation",
+        "us-self-employed-health-insurance",
+        "us-sole-prop-bookkeeping",
+        "us-state-bonus-depreciation-conformity-matrix",
+        "us-state-payroll-matrix"
+      ]
+    },
+    {
+      "id": "us.obbba.qsbs.assets",
+      "item": "QSBS aggregate gross assets limit (§ 1202(d)(1)): raised from USD 50,000,000 to USD 75,000,000 for stock issued after enactment (4 July 2025); indexed from 2027. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "USD 75,000,000",
+      "tax_year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "by striking ``$50,000,000'' and inserting ``$75,000,000''",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.obbba.oz.start",
+      "item": "Opportunity Zones 2.0 (§ 1400Z-2, OBBBA section 70421): the new deferral and basis rules apply to amounts invested in qualified opportunity funds after 31 December 2026, i.e. from 1 January 2027. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "December 31, 2026",
+      "tax_year": "investments after 31 December 2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall apply to amounts invested in qualified opportunity funds after December 31, 2026",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.obbba.oz.basis-5yr",
+      "item": "OZ 2.0: investment held at least 5 years gets a basis increase of 10 percent of deferred gain (30 percent for a qualified rural opportunity fund). Deferred gain is included at the earlier of sale or 5 years after the investment. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "10 percent",
+      "tax_year": "investments after 31 December 2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "shall be increased by an amount equal to 10 percent (30 percent in the case of any investment in a qualified rural opportunity fund)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-augusta-rule-home-rental-to-your-business",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.oz.basis-rural",
+      "item": "OZ 2.0: 5-year basis increase for a qualified rural opportunity fund. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "30 percent",
+      "tax_year": "investments after 31 December 2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "10 percent (30 percent in the case of any investment in a qualified rural opportunity fund)",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.obbba.oz.30yr",
+      "item": "OZ 2.0, 10-year election: basis equals fair market value at sale if sold before 30 years after the investment, otherwise fair market value on the date 30 years after the investment (gain freezes at 30 years). (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "30 years",
+      "tax_year": "investments after 31 December 2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "in the case of an investment sold before the date that is 30 years after the date of the investment",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.obbba.oz.decennial",
+      "item": "OZ 2.0 designation rounds: first decennial determination date for new zone designations, then every 10 years. (OBBBA, Public Law 119-21, text on govinfo.gov.)",
+      "value": "July 1, 2026",
+      "tax_year": "2026",
+      "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "quote": "decennial determination date' means-- ``(i) July 1, 2026",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.469.allowance",
+      "item": "Passive loss special allowance (§ 469(i)): up to USD 25,000 of rental real estate losses a year may offset non-passive income for a natural person who ACTIVELY participates (a lower bar than material participation). USD 12,500 for married filing separately living apart all year; nil if living together. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 25,000",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "quote": "The aggregate amount to which paragraph (1) applies for any taxable year shall not exceed $25,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.469.phaseout-start",
+      "item": "§ 469(i) allowance phase-out: reduced by 50 percent of AGI (modified) above this amount. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 100,000",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "quote": "reduced (but not below zero) by 50 percent of the amount by which the adjusted gross income of the taxpayer for the taxable year exceeds $100,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.469.phaseout-rate",
+      "item": "§ 469(i) allowance: reduction rate per dollar of modified AGI above USD 100,000. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "50 percent",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "quote": "reduced (but not below zero) by 50 percent of the amount by which the adjusted gross income",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-charitable-giving-strategies",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-opportunity-zones",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.469.phaseout-end",
+      "item": "§ 469(i): at modified AGI of this amount or more (USD 75,000 married filing separately) the special allowance is generally unavailable. Printed in Pub. 925 (2025 edition); the statutory rule is not indexed and is unchanged for 2026.",
+      "value": "USD 150,000",
+      "tax_year": "2026 (statutory, not indexed; digit printed in the 2025 edition of Pub. 925)",
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p925.pdf",
+      "quote": "gross income is $150,000 or more ($75,000 or more if",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.469.mfs",
+      "item": "§ 469(i) for a married individual filing separately (living apart all year): USD 12,500 replaces USD 25,000 and USD 50,000 replaces USD 100,000. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 12,500",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "quote": "(i) “$12,500” for “$25,000” each place it appears, (ii) “$50,000” for “$100,000”",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040",
+        "us-real-estate-professional-and-short-term-rentals"
+      ]
+    },
+    {
+      "id": "us.469.rep-hours",
+      "item": "Real estate professional (§ 469(c)(7)(B)), wording: BOTH tests each year: (i) more than one-half of personal services in all trades or businesses are performed in real property trades or businesses in which the taxpayer materially participates, AND (ii) more than 750 hours in those real property trades or businesses. On a joint return ONE spouse must meet both tests separately (no combining). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "750 hours",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "quote": "(ii) such taxpayer performs more than 750 hours of services during the taxable year in real property trades or businesses",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.469.rep-half",
+      "item": "Real estate professional test (i), wording: more than one-half of all personal services in trades or businesses must be in real property trades or businesses with material participation. Applies AND with the 750-hour test. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "more than one-half",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "quote": "(i) more than one-half of the personal services performed in trades or businesses by the taxpayer during such taxable year are performed in real property trades",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.469.str-7day",
+      "item": "Short-term rental exception (Reg. § 1.469-1T(e)(3)(ii)(A)), wording: an activity is NOT a rental activity if the average period of customer use is seven days or less (printed in words). Then the passive tests turn on material participation, not the rental rules. Pub. 925 prints the digit form '7 days or less'.",
+      "value": "seven days or less",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR3dff4ee5ffb0ae6/section-1.469-1T",
+      "quote": "verage period of customer use for such property is seven days or less",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.469.str-30day",
+      "item": "Short-term rental exception (Reg. § 1.469-1T(e)(3)(ii)(B)), wording: average customer use of 30 days or less is NOT a rental activity only IF significant personal services are provided by or for the owner (both conditions).",
+      "value": "30 days or less",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR3dff4ee5ffb0ae6/section-1.469-1T",
+      "quote": "The average period of customer use for such property is 30 days or less, and significant personal services",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.280a.augusta-14",
+      "item": "Augusta rule (§ 280A(g)), wording: if a dwelling used as a residence is rented for less than 15 days in the year, no rental deductions are allowed AND the rental income is excluded from gross income (i.e. 14 days or fewer). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "less than 15 days",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/280A",
+      "quote": "such dwelling unit is actually rented for less than 15 days during the taxable year",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ]
+    },
+    {
+      "id": "us.280a.residence-14",
+      "item": "§ 280A(d)(1), wording: a dwelling is used as a residence if personal-use days exceed the greater of 14 days or 10 percent of fair-rental days. Do not confuse with the § 280A(g) under-15-days rental rule. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "14 days",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/280A",
+      "quote": "for a number of days which exceeds the greater of— (A) 14 days, or (B) 10 percent",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-augusta-rule-home-rental-to-your-business"
+      ]
+    },
+    {
+      "id": "us.121.single",
+      "item": "Home sale exclusion (§ 121): gain excluded up to USD 250,000 if the home was owned AND used as principal residence for periods aggregating 2 years or more in the 5 years before sale. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 250,000",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/121",
+      "quote": "with respect to any sale or exchange shall not exceed $250,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.121.joint",
+      "item": "§ 121: USD 500,000 on a joint return if either spouse meets ownership, BOTH meet use, and neither used the exclusion in the prior 2 years. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 500,000",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/121",
+      "quote": "Paragraph (1) shall be applied by substituting “$500,000” for “$250,000” if",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.121.2yrs",
+      "item": "§ 121 ownership and use test: periods aggregating 2 years or more during the 5-year period ending on the sale date. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "2 years",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/121",
+      "quote": "as the taxpayer’s principal residence for periods aggregating 2 years or more",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-amended-return-form-1040-including-capital",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-tax-return-review-supporting-documents-findings"
+      ]
+    },
+    {
+      "id": "us.1031.45day",
+      "item": "§ 1031 like-kind exchange (real property only, held for business or investment, not held primarily for sale): replacement property must be identified within 45 days after transferring the relinquished property. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "45 days",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1031",
+      "quote": "on or before the day which is 45 days after the date on which the taxpayer transfers the property relinquished",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.1031.180day",
+      "item": "§ 1031: replacement property must be received by the earlier of 180 days after the transfer or the due date (with extensions) of the return for the year of transfer. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "180 days",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1031",
+      "quote": "the day which is 180 days after the date on which the taxpayer transfers the property relinquished",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-federal-income-tax-return-1040",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.se.oasdi",
+      "item": "Self-employment tax, Social Security (OASDI) part (§ 1401(a)): rate on self-employment income up to the wage base. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "12.4 percent",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "quote": "a tax equal to 12.4 percent of the amount of the self-employment income",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.se.medicare",
+      "item": "Self-employment tax, Medicare (HI) part (§ 1401(b)(1)): on all self-employment income, no cap. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "2.9 percent",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "quote": "a tax equal to 2.9 percent of the amount of the self-employment income",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.se.total",
+      "item": "Self-employment tax rate (IRS page): 15.3% = 12.4% social security + 2.9% Medicare. CAUTION: the same IRS page still prints the 2024 wage base; use the 2026 Pub. 15 figure.",
+      "value": "15.3%",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+      "quote": "The self-employment tax rate is 15.3%",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-qbi-deduction",
+        "us-s-corp-election-decision",
+        "us-schedule-c-and-se-computation"
+      ]
+    },
+    {
+      "id": "us.se.addl-medicare",
+      "item": "Additional Medicare tax on self-employment income and wages above the threshold (§ 1401(b)(2)): 0.9 percent; thresholds USD 250,000 joint, USD 125,000 married separate, USD 200,000 others; not indexed. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "0.9 percent",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "quote": "a tax equal to 0.9 percent of the self-employment income for such taxable year which is in excess of",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.se.addl-medicare.joint",
+      "item": "Additional Medicare tax threshold, married filing jointly (combined wages and SE income). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 250,000",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "quote": "(i) in the case of a joint return, $250,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-1120-corporation-return-schedule-ordinary-business",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-opportunity-zones"
+      ]
+    },
+    {
+      "id": "us.se.addl-medicare.single",
+      "item": "Additional Medicare tax threshold, single, head of household and qualifying surviving spouse. Also the amount above which an EMPLOYER must withhold it, regardless of filing status. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 200,000",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "quote": "(iii) in any other case, $200,000",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.se.addl-medicare.mfs",
+      "item": "Additional Medicare tax threshold, married filing separately (IRS Q&A page).",
+      "value": "USD 125,000",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/questions-and-answers-for-the-additional-medicare-tax",
+      "quote": "Married filing separate $125,000",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.se.min-400",
+      "item": "No self-employment tax if net earnings from self-employment for the year are less than USD 400 (§ 1402(b)). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "value": "USD 400",
+      "tax_year": "2026 (statutory amount, not indexed)",
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/1402",
+      "quote": "if such net earnings for the taxable year are less than $400",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-federal-income-tax-return-1040"
+      ]
+    },
+    {
+      "id": "us.ss.wage-base",
+      "item": "Social Security wage base, 2026: maximum wages (and combined self-employment income) subject to the 6.2% employee / 6.2% employer (12.4% SE) social security tax. From Pub. 15 (2026); ssa.gov refuses the fetcher (403).",
+      "value": "USD 184,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+      "quote": "The social security wage base limit is $184,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-equity-compensation-restricted-stock-units-and"
+      ]
+    },
+    {
+      "id": "us.ss.rate",
+      "item": "Social security tax rate 2026, each for employer and employee (12.4% total).",
+      "value": "6.2%",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+      "quote": "For 2026, the social security tax rate is 6.2%",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-form-941-940-payroll",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-state-payroll-matrix"
+      ]
+    },
+    {
+      "id": "us.medicare.rate",
+      "item": "Medicare tax rate 2026, each for employer and employee; no wage base limit.",
+      "value": "1.45%",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+      "quote": "The Medicare tax rate is 1.45% each for the employee",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-equity-compensation-restricted-stock-units-and",
+        "us-form-941-940-payroll",
+        "us-hiring-your-children-and-accountable-plans"
+      ]
+    },
+    {
+      "id": "us.child-employee.fica",
+      "item": "Hiring your children (Pub. 15, 2026), wording: wages paid to a child under age 18 working for a parent's sole proprietorship (or partnership in which each partner is a parent) are NOT subject to social security and Medicare taxes; under age 21 not subject to FUTA. Does NOT apply to a corporation, including an S corporation.",
+      "value": "under age 18",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+      "quote": "of a child under age 18 who works for their parent in a trade or business aren’t subject to social security",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-hiring-your-children-and-accountable-plans"
+      ]
+    },
+    {
+      "id": "us.child-employee.futa",
+      "item": "Hiring your children: services of a child under 21 working for a parent are not subject to FUTA tax (Pub. 15, 2026).",
+      "value": "under age 21",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+      "quote": "ments for the services of a child under age 21 who works",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-hiring-your-children-and-accountable-plans"
+      ]
+    },
+    {
+      "id": "us.fringe.dependent-care",
+      "item": "Dependent care assistance exclusion (§ 129), 2026: raised from USD 5,000 to USD 7,500 (USD 3,750 married filing separately) by OBBBA from 2026 (Pub. 15-B, 2026).",
+      "value": "USD 7,500",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15b.pdf",
+      "quote": "Dependent care assistance Exempt up to certain limits, $7,500",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.fringe.educational",
+      "item": "Educational assistance exclusion (§ 127), 2026: up to USD 5,250 a year per employee (includes student loan repayments, made permanent by OBBBA; indexed only after 2026) (Pub. 15-B, 2026).",
+      "value": "USD 5,250",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15b.pdf",
+      "quote": "Educational assistance Exempt up to $5,250 of benefits each year",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.fringe.achievement",
+      "item": "Employee achievement awards (Pub. 15-B, 2026): excludable up to USD 1,600 for qualified plan awards (USD 400 nonqualified).",
+      "value": "USD 1,600",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p15b.pdf",
+      "quote": "Achievement awards Exempt2 up to $1,600 for qualified plan awards",
+      "read_on": "2026-10-03",
+      "used_by": []
+    },
+    {
+      "id": "us.mileage.business-h1",
+      "item": "Business standard mileage rate, 1 January to 30 June 2026 (IRS standard mileage rates page, table row 2026 Jan. 1 to June 30; Notice 2026-10).",
+      "value": "72.5 cents",
+      "tax_year": "2026, 1 January to 30 June",
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-26-10.pdf",
+      "quote": "The standard mileage rate for transportation or travel expenses for 2026 is 72.5 cents per mile",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.mileage.business-h2",
+      "item": "Business standard mileage rate, 1 July to 31 December 2026 (mid-year increase announced in IR-2026-29). Two rates apply in 2026: split miles by date.",
+      "value": "76 cents",
+      "tax_year": "2026, 1 July to 31 December",
+      "source_url": "https://www.irs.gov/tax-professionals/standard-mileage-rates",
+      "quote": "Self-employed and business: 76 cents/mile",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes",
+        "us-hiring-your-children-and-accountable-plans",
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.mileage.charity",
+      "item": "Charitable standard mileage rate, 2026 (fixed by § 170(i), not indexed).",
+      "value": "14 cents",
+      "tax_year": "2026",
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-26-10.pdf",
+      "quote": "The standard mileage rate is 14 cents per mile for use of an automobile in rendering gratuitous services",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-2026-federal-tax-changes"
+      ]
+    },
+    {
+      "id": "us.mileage.depreciation",
+      "item": "Portion of the 2026 business standard mileage rate treated as depreciation (reduces basis).",
+      "value": "35 cents",
+      "tax_year": "2026",
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-26-10.pdf",
+      "quote": "and 35 cents per mile for 2026",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.auto.cap-y1-bonus",
+      "item": "Luxury auto depreciation cap (§ 280F), passenger automobiles placed in service in 2026 WITH bonus depreciation: first-year limit (Rev. Proc. 2026-15 Table 1). Year 2 USD 19,800, year 3 USD 11,900, later years USD 7,160.",
+      "value": "USD 20,300",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-26-15.pdf",
+      "quote": "1st Tax Year $ 20,300 2nd Tax Year $ 19,800",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.auto.cap-y1-nobonus",
+      "item": "Luxury auto depreciation cap, placed in service in 2026 WITHOUT bonus depreciation: first-year limit (Rev. Proc. 2026-15 Table 2).",
+      "value": "USD 12,300",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-26-15.pdf",
+      "quote": "1st Tax Year $ 12,300 2nd Tax Year $ 19,800",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.auto.cap-y2",
+      "item": "Luxury auto depreciation cap, 2026 placements: second tax year (both tables).",
+      "value": "USD 19,800",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-26-15.pdf",
+      "quote": "2nd Tax Year $ 19,800 3rd Tax Year $ 11,900",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.auto.cap-y3",
+      "item": "Luxury auto depreciation cap, 2026 placements: third tax year.",
+      "value": "USD 11,900",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-26-15.pdf",
+      "quote": "3rd Tax Year $ 11,900 Each Succeeding Year $ 7,160",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-section-179-and-bonus-depreciation"
+      ]
+    },
+    {
+      "id": "us.auto.cap-later",
+      "item": "Luxury auto depreciation cap, 2026 placements: each succeeding year.",
+      "value": "USD 7,160",
+      "tax_year": 2026,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-26-15.pdf",
+      "quote": "Each Succeeding Year $ 7,160",
+      "read_on": "2026-10-03",
+      "used_by": [
+        "us-section-179-and-bonus-depreciation"
+      ]
+    }
+  ]
+}

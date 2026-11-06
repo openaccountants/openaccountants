@@ -1,0 +1,1402 @@
+{
+  "country": "austria",
+  "code": "AT",
+  "url_count": 180,
+  "sources": [
+    {
+      "url": "https://findok.bmf.gv.at/findok/iwg/19/19974/19974.21.pdf",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://findok.bmf.gv.at/findok/iwg/19/19974/19974.26.pdf",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://findok.bmf.gv.at/findok/iwg/84/84659/84659.1.pdf",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://findok.bmf.gv.at/findok/resources/pdf/35436263-c864-4e44-b7f1-d8b242ef00e3/83497.1.1.pdf",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://findok.bmf.gv.at/findok/resources/pdf/450cc0c6-d106-4f65-ba18-e3d0d33d2227/80297.1.1.pdf",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://formulare.bmf.gv.at/service/formulare/inter-Steuern/pdfd/2025/E8.pdf",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://formulare.bmf.gv.at/service/formulare/inter-Steuern/pdfs/2026/U30.pdf?open=download",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://formulare.bmf.gv.at/service/formulare/inter-steuern/pdfd/9999/u13a.pdf",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://service.bmf.gv.at/service/anwend/formulare/show_mast.asp?s=g4",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bmf.gv.at/dam/jcr:05f303a4-befb-48d1-88af-2a35a452cfa7/Fachliche_News_WiEReG_2024-04-26.pdf",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bmf.gv.at/dam/jcr:436f8c01-38e0-41bf-b904-c0e62a862bf1/251117_Steuerbuch2026_DE_BF.pdf",
+      "skills": [],
+      "figures": [
+        "at.it.werbungskostenpauschale",
+        "at.it.kirchenbeitrag.cap",
+        "at.it.kest.rates"
+      ]
+    },
+    {
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/juli-2026/dba-schweiz.html",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bmf.gv.at/rechtsnews/steuern-rechtsnews/aktuelle-infos-und-erlaesse/fachinformationen---umsatzsteuer/umsatzsteuersenkung-auf-ausgewaehlte-nahrungsmittel.html",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": [
+        "at.vat.rate.4-9.start"
+      ]
+    },
+    {
+      "url": "https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/familienbonus-plus.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bmf.gv.at/themen/steuern/fristen-verfahren/fristen-faelligkeiten.html",
+      "skills": [
+        "at-payroll-and-social-insurance",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bmf.gv.at/themen/steuern/fuer-unternehmen/umsatzsteuer/informationen/faq-umsatzsteuerbetrugsbekaempfungsverordnung-(ustbbkv",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/doppelbesteuerungsabkommen/dba-allgemeines.html",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/rueckerstattung/rueckerstattung-oesterreichischer-abzugsteuer.html",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesundheitskasse.at/cdscontent/load?contentid=10008.784766&version=1752580359",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.gesundheitskasse.at/cdscontent/load?contentid=10008.802672&version=1775628844",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oenb.at/isawebstat/stabfrage/createReport?lang=DE&report=2.1",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE",
+      "skills": [
+        "at-income-tax",
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.oesterreich.gv.at/de/lexicon/P/Seite.991428",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.parlament.gv.at/dokument/XXVIII/I/561/fname_1768090.pdf",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2013_II_369/BGBLA_2013_II_369.html",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2024_II_318/BGBLA_2024_II_318.html",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_II_191/BGBLA_2025_II_191.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_I_97/BGBLA_2025_I_97.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_II_260/BGBLA_2026_II_260.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_37/BGBLA_2026_I_37.html",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_43/BGBLA_2026_I_43.html",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_62/BGBLA_2026_I_62.html",
+      "skills": [
+        "at-income-tax",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40210216/NOR40210216.html",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003898",
+      "skills": [
+        "at-transfer-pricing",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940",
+      "skills": [
+        "at-income-tax",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570",
+      "skills": [
+        "at-income-tax",
+        "at-svs-contributions",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&FassungVom=2026-06-30",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004841",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004929",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004944",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119",
+      "skills": [
+        "at-income-tax",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008156",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008422",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008431",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003027",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003797",
+      "skills": [
+        "at-income-tax",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20005197",
+      "skills": [
+        "at-income-tax",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009608",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009641",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009754",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20010606",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20010728",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrW&Gesetzesnummer=20000133",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001702&Paragraf=189a",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001702&Paragraf=221",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001702&Paragraf=222",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001720&Paragraf=6",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002070&Paragraf=7",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=118",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=131",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=132",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=134",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=134a",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=135",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=205",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=210",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=217",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=240",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=26",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=1",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=10",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=10a",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=12a",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=22",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=26c",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=7",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=8",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=9",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=1",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=100",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=101",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=102",
+      "skills": [
+        "at-cross-border",
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=103",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=124b",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=16",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-cross-border",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=33",
+      "skills": [
+        "at-cross-border",
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=41",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=45",
+      "skills": [
+        "at-corporate-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=47",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=6",
+      "skills": [
+        "at-cross-border",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=62",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=66",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=67",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=68",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=70",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=76",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=79",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=82",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=84",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=93",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=94",
+      "skills": [
+        "at-corporate-income-tax",
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=95",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=96",
+      "skills": [
+        "at-transfer-pricing"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=98",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=99",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004841&Paragraf=5",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873&Anlage=1",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873&Anlage=2",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005799&Paragraf=4",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147&Paragraf=11",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147&Paragraf=33",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147&Paragraf=49",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147&Paragraf=53a",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147&Paragraf=54",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008220&Paragraf=41",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008220&Paragraf=43",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=14",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=17",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=46",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=47",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=6",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.sozialversicherung.at/cdscontent/load?contentid=10008.806858",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816326",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": [
+        "at.svs.provisional.factor"
+      ]
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816635&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816638",
+      "skills": [],
+      "figures": [
+        "at.svs.pv.rate.fsvg",
+        "at.svs.kv.rate",
+        "at.svs.uv.monthly",
+        "at.svs.vorsorge.rate",
+        "at.svs.first3.min-base"
+      ]
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816647&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816678&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": [
+        "at.svs.versicherungsgrenze.neue-selbstaendige",
+        "at.svs.kleinunternehmer.income",
+        "at.svs.kleinunternehmer.turnover"
+      ]
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816734&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816735&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.846813&portal=svsportal",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/?contentid=10007.899587&portal=svsportal",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": [
+        "at.svs.min-base.gsvg",
+        "at.svs.max-base",
+        "at.svs.pv.rate.gsvg",
+        "at.svs.pv.min-contribution",
+        "at.svs.pv.max-contribution",
+        "at.svs.kv.min-contribution",
+        "at.svs.kv.max-contribution"
+      ]
+    },
+    {
+      "url": "https://www.svs.at/selbstaendigenvorsorge",
+      "skills": [
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/aktuelles/newsliste/basispauschalierung-hoehere-grenzen-ab-2025-und-2026.html",
+      "skills": [],
+      "figures": [
+        "at.it.basispausch.turnover-limit",
+        "at.it.basispausch.rate.general",
+        "at.it.basispausch.rate.6",
+        "at.it.basispausch.max-expenses",
+        "at.vat.vorsteuerpausch.rate",
+        "at.vat.vorsteuerpausch.max"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/aktuelles/newsreihen/Gesellschaftsrecht-f-r-Arbeitgeber/gesellschaftsrecht-fuer-arbeitgeber-teil-10.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": [
+        "at.it.car.angemessenheitsgrenze",
+        "at.it.car.max-afa",
+        "at.it.car.business-use"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/gruendung/EAP/gewerbeanmeldung.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/services/egruendung.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html",
+      "skills": [
+        "at-company-formation",
+        "at-tax-overview"
+      ],
+      "figures": [
+        "at.co.gmbh.min-capital.lexikon"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/services/suchen-und-finden/lexikon/kapitalgesellschaft.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/services/suchen-und-finden/lexikon/kommanditgesellschaft-kg.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/services/suchen-und-finden/lexikon/offene-gesellschaft-og.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/firmenbuch.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/weitere-informationen-laufender-betrieb/bilanzveroeffentlichung.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/mitarbeiter-und-gesundheit/einstellung-mitarbeiter-und-arten-der-beschaeftigung/weitere-informationen-einstellen-von-personal/arbeiten-im-ausland/entsendung-in-eu-ewr-staaten-aus-oesterreich/sozialversicherung--entsendung-.html",
+      "skills": [
+        "at-cross-border"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/einkommensteuerpflicht.html",
+      "skills": [
+        "at-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuererklaerung.html",
+      "skills": [
+        "at-income-tax",
+        "at-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuervorauszahlungen.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/kapitalertragsteueranmeldung.html",
+      "skills": [
+        "at-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": [
+        "at.it.credit.verkehr",
+        "at.it.credit.verkehr.zuschlag",
+        "at.it.credit.verkehr.zuschlag.full-limit",
+        "at.it.credit.verkehr.zuschlag.zero-at",
+        "at.it.credit.pensionist",
+        "at.it.credit.alleinverdiener.1child",
+        "at.it.credit.alleinverdiener.2children",
+        "at.it.credit.alleinverdiener.each-further-child",
+        "at.it.familienbonus.minor",
+        "at.it.familienbonus.adult",
+        "at.it.kinderabsetzbetrag",
+        "at.it.kindermehrbetrag",
+        "at.it.pendlereuro"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+      "skills": [
+        "at-income-tax",
+        "at-tax-overview"
+      ],
+      "figures": [
+        "at.it.bracket.zero.upper",
+        "at.it.bracket.20.upper",
+        "at.it.rate.20",
+        "at.it.bracket.30.upper",
+        "at.it.rate.30",
+        "at.it.bracket.40.upper",
+        "at.it.rate.40",
+        "at.it.bracket.48.upper",
+        "at.it.rate.48",
+        "at.it.bracket.50.upper",
+        "at.it.rate.50",
+        "at.it.rate.55",
+        "at.it.indexation.2026",
+        "at.it.example.40000"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html",
+      "skills": [
+        "at-company-formation",
+        "at-tax-overview"
+      ],
+      "figures": [
+        "at.cit.rate",
+        "at.cit.prepayment.dates",
+        "at.cit.kest.dividend"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuererklaerung.html",
+      "skills": [
+        "at-tax-overview"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": [
+        "at.cit.min.rate",
+        "at.cit.min.gmbh",
+        "at.cit.min.ag",
+        "at.co.ag.min-capital",
+        "at.co.gmbh.min-capital"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebliches-rechnungswesen/buchfuehrungspflicht-und-buchfuehrung.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/geringwertige-wirtschaftsgueter.html",
+      "skills": [],
+      "figures": [
+        "at.it.gwg.limit"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": [
+        "at.it.gfb.grundfreibetrag.profit-limit",
+        "at.it.gfb.rate.first",
+        "at.it.gfb.grundfreibetrag.max",
+        "at.it.gfb.rate.second",
+        "at.it.gfb.rate.third",
+        "at.it.gfb.rate.fourth",
+        "at.it.gfb.no-gfb-above",
+        "at.it.gfb.max"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/reisekosten.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/basispauschalierung-einkommensteuer.html",
+      "skills": [
+        "at-income-tax",
+        "at-svs-contributions"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/organisatorische-massnahmen.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/pflichten-des-unternehmers.html",
+      "skills": [
+        "at-company-formation"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/einreichen-von-steuererklaerungen.html",
+      "skills": [
+        "at-income-tax",
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/fristen-und-faelligkeiten.html",
+      "skills": [
+        "at-income-tax"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/steuersaetze-und-steuerbefreiungen-der-umsatzsteuer.html",
+      "skills": [
+        "at-tax-overview"
+      ],
+      "figures": [
+        "at.vat.rate.standard",
+        "at.vat.rate.4-9",
+        "at.vat.rate.10",
+        "at.vat.rate.13"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/umsatzsteuervoranmeldung-und-umsatzsteuererklaerung.html",
+      "skills": [
+        "at-tax-overview"
+      ],
+      "figures": [
+        "at.vat.annual-return.due",
+        "at.vat.annual-return.threshold"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html",
+      "skills": [
+        "at-tax-overview",
+        "at-vat-return"
+      ],
+      "figures": [
+        "at.vat.uva.monthly-threshold",
+        "at.vat.uva.quarterly-band",
+        "at.vat.uva.due"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/innergemeinschaftlicher-versandhandel.html",
+      "skills": [],
+      "figures": [
+        "at.vat.oss.threshold"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/zusammenfassende-meldung-zm.html",
+      "skills": [
+        "at-vat-return"
+      ],
+      "figures": []
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/vorsteuerabzug-und-rechnung/kleinbetragsrechnungen.html",
+      "skills": [],
+      "figures": [
+        "at.vat.invoice.kleinbetrag"
+      ]
+    },
+    {
+      "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html",
+      "skills": [
+        "at-company-formation",
+        "at-tax-overview"
+      ],
+      "figures": [
+        "at.vat.klu.limit",
+        "at.vat.klu.tolerance",
+        "at.vat.klu.old-limit",
+        "at.vat.klu.option-binding"
+      ]
+    },
+    {
+      "url": "https://www.wko.at/lohnverrechnung/zuschlag-dienstgeberbeitrag",
+      "skills": [
+        "at-payroll-and-social-insurance"
+      ],
+      "figures": []
+    }
+  ]
+}
