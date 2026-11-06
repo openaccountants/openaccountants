@@ -1,7 +1,7 @@
 ---
 name: india-gst
 description: Use this skill whenever asked to prepare, review, classify, or advise on India's Goods and Services Tax (GST) for a self-employed individual, freelancer, or small business. Trigger on phrases like "GST return", "GSTR-1", "GSTR-3B", "GSTR-9", "file GST", "GST classification", "HSN code", "SAC code", "input tax credit", "ITC", "reverse charge", "e-invoicing", "e-way bill", "CGST", "SGST", "IGST", "inter-state supply", "intra-state supply", "place of supply", or any request involving Indian indirect tax compliance. This skill covers regular (non-composition) GST-registered taxpayers with a single state GSTIN only. Composition scheme, multi-state, SEZ, e-commerce operator, and ISD registrations are in the refusal catalogue. ALWAYS read this skill before touching any India GST work.
-version: 2.2
+version: 2.3
 jurisdiction: IN
 tax_year: 2026
 last_updated: 2026-11-06
@@ -1000,10 +1000,6 @@ Not inferable from one period. Always ask: "What are your electronic credit ledg
 
 ## Section 10: Reference material
 
-### Validation status
-
-Team rewrite of October 2026. Every figure was re-proven on a CBIC or GST Council page saved on 16 and 17 October 2026, and every rule sentence names its section or rule. Rates follow the 56th GST Council structure (in force 22 September 2025; tobacco 1 February 2026). Notifications served only as unreadable files by CBIC (including the rate schedules 9/2025, 19/2025 and 01/2026-Central Tax (Rate)) were not read; where a rule depends on one, the Guide says so.
-
 ### Known gaps
 
 1. The pattern library covers common Indian and foreign vendors only. Add patterns as they emerge.
@@ -1035,8 +1031,6 @@ Team rewrite of October 2026. Every figure was re-proven on a CBIC or GST Counci
 - **October 2026 (team rewrite):** rates moved to the 56th Council structure with start dates; electricity and individual life and health insurance corrected to exempt; GSTR-1 B2C large limit corrected; late fees rewritten as central tax with the turnover-band caps and the GSTR-9 bands; ITC conditions expanded (GSTR-2B, rules 36(4), 37, 37A, 88C, 88D); section 17(5) rewritten from the current text; credit use order corrected under rule 88A; import-of-services credit moved to table 4(A)(2); export on payment of IGST limited to notified classes; QRMP, IFF, GSTR-1A and the three-year bar added; residential and commercial rent reverse charge added; 57th Council recommendations marked pending.
 - **31 October 2026 (v2.1, merge):** the duplicate Guide `in-gst-return` (the April 2026 v2.0 text this Guide was rewritten from) was merged in and retired. Added from it, each re-proven on an official page on 31 October 2026: security services under reverse charge (Notification 29/2018-Central Tax (Rate)), the e-invoicing years test (Notification 70/2020-Central Tax), named 40%, 5% and nil items from the 56th Council press release, the GSTIN format check, and the portal addresses. Not carried over: its 12% and 28% slabs, electricity at 18%, combined central-plus-State late fees with the old INR 10,000 cap, the INR 2.5 lakh B2C large limit, the IGST-then-CGST-then-SGST credit order, the "transport of goods" motor vehicle exception, and the computed tax figures in its worked examples; each is superseded or wrong, as this Guide's sections note.
 - **31 October 2026 (v2.2, merge):** restored from `in-gst-return`, each checked on an official page: the CGST and SGST split at 18% and 5%, and rule 89 with Form GST RFD-01. Added two recomputed invoice examples. The rule on arithmetic now bars guessing rates, not calculating tax.
-- **v2.0 (April 2026):** Rewrite to the three-tier structure (quick reference, supplier pattern library, worked examples, Tier 1 and Tier 2 rules, working paper, bank statement guide, onboarding fallback, five refusals).
-- **v1.0 (April 2026):** Initial version.
 
 ## Sources
 
@@ -1057,5 +1051,3 @@ Related Guides: `india-einvoice` (e-invoicing), `in-tds-freelance` (TDS on contr
 ## Disclaimer
 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date version of this Guide is maintained on the OpenAccountants site. Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
