@@ -426,8 +426,8 @@ jobs:
             case "$p" in
               skills/*.md)
                 echo "### $p"
-                python3 -I scripts/skill_checks.py "$p"
-                python3 -I scripts/check-examples.py --require "$p"
+                python3 -I scripts/skill_checks.py "$p" || echo "(skill_checks exit $? : findings above)"
+                python3 -I scripts/check-examples.py --require "$p" || echo "(check-examples exit $? : findings above)"
                 ;;
             esac
           done < "$D/changed.txt" > "$D/checks.txt" 2>&1
@@ -436,7 +436,7 @@ jobs:
           while read -r p; do
             case "$p" in
               skills/*.md)
-                if [ -f "$p" ]; then echo "### $p (main)"; python3 -I scripts/skill_checks.py "$p"; fi
+                if [ -f "$p" ]; then echo "### $p (main)"; python3 -I scripts/skill_checks.py "$p" || echo "(skill_checks exit $? : findings above)"; fi
                 ;;
             esac
           done < "$D/changed.txt" > "$D/checks-main.txt" 2>&1
