@@ -10906,3 +10906,4 @@ Shared folders grouped under `skills/foundation/` and `skills/reference/`, and s
 | skills/us/states/ma/maine-sales-tax.md | skills/us/states/me/me-sales-tax.md (duplicate, folded) |
 | skills/us/states/in/in-income-tax.md | skills/india/india-income-tax.md (India text under Indiana frontmatter; slug in-income-tax -> india-income-tax) |
 | skills/india/in-income-tax.md | skills/india/india-income-tax.md (duplicate, folded) |
+| skills/us/states/ny/ny-income-tax.md | skills/us/states/ny/ny-it-201-resident-return.md (duplicate, folded; slug ny-income-tax -> ny-it-201-resident-return) |

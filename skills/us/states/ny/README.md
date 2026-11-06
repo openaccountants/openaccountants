@@ -26,7 +26,6 @@ covered_by:
 | `ny-llc-filing-fee-it-204-ll.md` | LLC filing fee (Form IT-204-LL) |
 | `ny-payroll.md` | Payroll |
 | `ny-pte-tax-ptet.md` | Pass-through entity tax |
-| `ny-income-tax.md` | Individual income tax for self-employed / sole proprietors |
 | `ny-estimated-tax.md` | Estimated tax payments |
 | `ny-sales-tax.md` | State and local sales & use tax compliance |
 | `ny-llc-filing-fee.md` | Annual LLC filing fee |
