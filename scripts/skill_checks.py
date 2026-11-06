@@ -285,7 +285,7 @@ def check_tax_year_current(path, text, fm):
     in its ``date_field`` are present (``standard`` and ``effective_date`` for an
     accounting or auditing standard, ``checked_on`` for the rest); a key ending in
     ``_date`` or ``_on`` is a YYYY-MM-DD date, and an ``_on`` date (the day a person
-    checked it) is not in the future."""
+    checked it) is not in the future and not older than the domain's ``max_age_days``."""
     domain, _status = applied_domain(path, fm)
     fields = domains.date_fields(domain) if domain else ["tax_year"]
     if fields != ["tax_year"]:
@@ -312,6 +312,11 @@ def _domain_date_problems(domain, fields, fm):
                 problems.append(f"{key} {value!r} is not a YYYY-MM-DD date")
             elif key.endswith("_on") and value > _today():
                 problems.append(f"{key} {value} is in the future")
+            elif key.endswith("_on") and domain.get("max_age_days") is not None:
+                age = (datetime.date.fromisoformat(_today()) - datetime.date.fromisoformat(value)).days
+                if age > int(domain["max_age_days"]):
+                    problems.append(f"{key} {value} is more than {domain['max_age_days']} days old "
+                                    f"(domain {domain['id']}, max_age_days in docs/domains.yml)")
     return problems
 
 

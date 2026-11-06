@@ -4,7 +4,7 @@ description: "IFRS classification of issued financial instruments as financial l
 version: 0.1
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-11-06
+last_updated: 2026-07-13
 depends_on:
   - financial-reporting-workflow-base
 category: financial-reporting
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: financial-reporting
 standard: "IAS 32 Financial Instruments: Presentation"
-effective_date: 2018-01-01
+effective_date: 2018-01-01  # the IFRS 9 conforming changes this skill covers; ifrs.org IFRS 9 page, read 2026-11-06: "effective for annual periods beginning on or after 1 January 2018"
 ---
 
 # Ias32 Debt Vs Equity

@@ -43,7 +43,9 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      check (a) and the official hosts of check (m). Tax, no domain, and the
      values the website writes keep the tax rules exactly as before; an
      active non-tax domain is dated by its own keys (an IFRS skill by
-     `standard` and `effective_date`, not `tax_year`). An unknown domain warns.
+     `standard` and `effective_date`, not `tax_year`; a `checked_on` domain by
+     a date within its max_age_days). On a PR that changes a skill's text,
+     that date rule is an ERROR in every domain. An unknown domain warns.
   8. PR mode only: one job in one jurisdiction has one skill
      (docs/skill-template.md, scripts/job_identity.py). ERROR if an added or
      renamed skill has the job or stripped name of another skill there, unless
@@ -511,6 +513,18 @@ def check_packages_frontmatter(bi, errors, only_files=None):
     print(f"checked {checked} generated package frontmatter block(s)")
 
 
+def is_pr_error(name, scope, dated_by_tax_year, content_untouched):
+    """In PR mode, whether a failed skill_checks check is an ERROR rather than a warning.
+
+    A tax skill fails the PR on PR_ERROR_CHECKS. An active non-tax domain's date rule
+    (check a, docs/domains.yml) fails the PR too, as the tax year does for a tax skill.
+    Both only when the PR changes the skill's text; the label checks always."""
+    label_check = name in ("tier_honest", "reviewed_on")
+    domain_date = name == "tax_year_current" and not dated_by_tax_year
+    return ((scope == "tax" or domain_date) and name in PR_ERROR_CHECKS
+            and (label_check or not content_untouched))
+
+
 def check_guides(bi, errors, warnings, only_files=None):
     from collections import Counter
     from datetime import date
@@ -604,9 +618,7 @@ def check_guides(bi, errors, warnings, only_files=None):
             if not problems:
                 continue
             message = f"{rel}: ({letter}) {name}: {'; '.join(problems)}"
-            label_check = name in ("tier_honest", "reviewed_on")
-            if (only_files is not None and scope == "tax" and name in PR_ERROR_CHECKS
-                    and (label_check or not content_untouched)):
+            if only_files is not None and is_pr_error(name, scope, dated_by_tax_year, content_untouched):
                 errors.append(message)
             else:
                 check_counts[f"({letter}) {name}"] += 1

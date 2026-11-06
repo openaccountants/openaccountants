@@ -4,7 +4,7 @@ description: "Tier 1 workflow base for statutory audit skills. Covers the audit 
 version: 0.1
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-11-06
+last_updated: 2026-07-13
 category: foundation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2

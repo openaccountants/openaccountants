@@ -4,7 +4,7 @@ description: "IFRS lease accounting under IFRS 16 (Leases). Covers the lessee si
 version: 0.1
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-11-06
+last_updated: 2026-07-13
 depends_on:
   - financial-reporting-workflow-base
 category: financial-reporting

@@ -2,6 +2,7 @@
 hosts (check m, scripts/build-library.py). Tax keeps exactly the rules it had before."""
 
 import datetime
+import hashlib
 import importlib.util
 import json
 import os
@@ -237,24 +238,39 @@ class TaxUnchanged(unittest.TestCase):
             fm = {"jurisdiction": "FR", **({"domain": domain} if domain else {})}
             self.assertEqual(skill_checks.check_source_hosts("skills/france/fr-x.md", table, fm), [])
 
-    def test_every_skill_on_main_is_checked_as_before(self):
-        """No file outside the domain-labelled ones changes its date rule or gains a warning."""
-        labelled = []
+    def test_files_unchanged_since_main_are_checked_as_before(self):
+        """Every skill file still byte-identical to main before this change (a frozen list of
+        fingerprints) gets no domain rule, no new warning and the old date rule. Files edited or
+        added later are not in the list, so a new contribution in any domain cannot break this."""
+        with open(os.path.join(REPO_ROOT, "tests", "data", "domains-baseline.txt"), encoding="utf-8") as fh:
+            baseline = {line.strip() for line in fh if line.strip() and not line.startswith("#")}
+        self.assertEqual(len(baseline), 2396)
+        matched = 0
+        for path in skill_checks._build_index.guide_files():
+            if not path.startswith("skills/"):
+                continue
+            with open(os.path.join(REPO_ROOT, path), "rb") as fh:
+                data = fh.read()
+            if hashlib.sha1(path.encode() + b"\0" + data).hexdigest()[:16] not in baseline:
+                continue
+            matched += 1
+            text = data.decode("utf-8", errors="replace")
+            fm = skill_checks.read_frontmatter(text)
+            self.assertEqual(skill_checks.applied_domain(path, fm)[0], None, path)
+            self.assertEqual(skill_checks.check_domain_known(path, text, fm), [], path)
+            self.assertEqual(skill_checks.check_tax_year_current(path, text, fm), legacy_tax_year_current(fm), path)
+        self.assertGreater(matched, 0)
+
+    def test_no_domain_rule_means_the_old_date_rule(self):
+        """Live tree, any file: without an active non-tax domain, check (a) is the old rule."""
         for path in skill_checks._build_index.guide_files():
             if not path.startswith("skills/"):
                 continue
             with open(os.path.join(REPO_ROOT, path), encoding="utf-8", errors="replace") as fh:
                 text = fh.read()
             fm = skill_checks.read_frontmatter(text)
-            if not fm:
-                continue
-            if skill_checks.applied_domain(path, fm)[0] is not None:
-                labelled.append(path)
-                continue
-            self.assertEqual(skill_checks.check_tax_year_current(path, text, fm), legacy_tax_year_current(fm), path)
-            self.assertEqual(skill_checks.check_domain_known(path, text, fm), [], path)
-        for path in labelled:
-            self.assertTrue(path.startswith(("skills/global/financial-reporting/", "skills/global/audit/")), path)
+            if fm and skill_checks.applied_domain(path, fm)[0] is None:
+                self.assertEqual(skill_checks.check_tax_year_current(path, text, fm), legacy_tax_year_current(fm), path)
 
     def test_pr_error_checks_unchanged(self):
         self.assertEqual(validate_guides.PR_ERROR_CHECKS, {
@@ -313,12 +329,19 @@ class IfrsSkill(unittest.TestCase):
         self.assertIn("iasplus.com", problems[1])
 
     def test_standard_setters_are_official(self):
-        for host in ("www.ifrs.org", "eifrs.ifrs.org", "fasb.org", "asc.fasb.org", "www.efrag.org",
+        for host in ("www.ifrs.org", "eifrs.ifrs.org", "fasb.org", "asc.fasb.org",
                      "eur-lex.europa.eu", "www.frc.org.uk", "socpa.org.sa", "www.icai.org", "www.sec.gov"):
             self.assertTrue(domains.host_is_official(host, "financial-reporting"), host)
         for host in ("www.iaasb.org", "www.ifac.org", "pcaobus.org"):
             self.assertTrue(domains.host_is_official(host, "audit-assurance"), host)
         self.assertFalse(domains.host_is_official("www.iasplus.com", "financial-reporting"))
+
+    def test_professional_bodies_and_advisers_are_not_setters(self):
+        for domain_id in ("financial-reporting", "audit-assurance", "practice-management"):
+            for host in ("www.icaew.com", "www.accaglobal.com", "www.aicpa-cima.com"):
+                self.assertFalse(domains.host_is_official(host, domain_id), (domain_id, host))
+        self.assertFalse(domains.host_is_official("www.efrag.org", "financial-reporting"))
+        self.assertTrue(domains.host_is_official("www.efrag.org", "sustainability-reporting"))
 
     def test_rates_table_is_optional(self):
         self.assertEqual(skill_checks.check_rates_rows_sourced(IFRS_PATH, "no table", IFRS_FM), [])
@@ -331,13 +354,40 @@ class IfrsSkill(unittest.TestCase):
 class OtherDomains(unittest.TestCase):
     def test_checked_on(self):
         path = "skills/global/methods/engagement-letters.md"
-        fm = {"domain": "practice-management", "checked_on": "2026-11-01"}
+        recent = (datetime.date.today() - datetime.timedelta(days=30)).isoformat()
+        fm = {"domain": "practice-management", "checked_on": recent}
         self.assertEqual(skill_checks.check_tax_year_current(path, "", fm), [])
         self.assertEqual(skill_checks.check_tax_year_current(path, "", {"domain": "advisory"}),
                          ["no checked_on (domain advisory is dated by checked_on, docs/domains.yml)"])
         future = (datetime.date.today() + datetime.timedelta(days=3)).isoformat()
         self.assertEqual(skill_checks.check_tax_year_current(path, "", {"domain": "advisory", "checked_on": future}),
                          [f"checked_on {future} is in the future"])
+
+    def test_checked_on_window(self):
+        path = "skills/global/methods/engagement-letters.md"
+        self.assertEqual(domains.get("practice-management")["max_age_days"], 365)
+        today = datetime.date.today()
+        edge = (today - datetime.timedelta(days=365)).isoformat()
+        old = (today - datetime.timedelta(days=366)).isoformat()
+        self.assertEqual(skill_checks.check_tax_year_current(path, "", {"domain": "practice-management", "checked_on": edge}), [])
+        self.assertEqual(skill_checks.check_tax_year_current(path, "", {"domain": "advisory", "checked_on": "2019-01-01"}),
+                         ["checked_on 2019-01-01 is more than 365 days old (domain advisory, max_age_days in docs/domains.yml)"])
+        self.assertEqual(len(skill_checks.check_tax_year_current(path, "", {"domain": "advisory", "checked_on": old})), 1)
+
+    def test_domain_date_rule_is_a_pr_error_when_the_text_changes(self):
+        pr_error = validate_guides.is_pr_error
+        # A non-tax domain's date rule fails the PR, whatever the scope, once the text changed.
+        self.assertTrue(pr_error("tax_year_current", "other", False, False))
+        self.assertTrue(pr_error("tax_year_current", "general", False, False))
+        self.assertFalse(pr_error("tax_year_current", "other", False, True))  # frontmatter-only relabel
+        # Only the date rule: the other checks keep the old scope rule.
+        self.assertFalse(pr_error("two_oa_checks", "other", False, False))
+        self.assertFalse(pr_error("domain_known", "tax", True, False))
+        # Tax: exactly as before.
+        self.assertTrue(pr_error("tax_year_current", "tax", True, False))
+        self.assertFalse(pr_error("tax_year_current", "tax", True, True))
+        self.assertTrue(pr_error("tier_honest", "tax", True, True))
+        self.assertFalse(pr_error("tax_year_current", "general", True, False))
 
     def test_payroll_and_bookkeeping_apply_once_they_carry_checked_on(self):
         path = "skills/germany/de-payslip-contents.md"
