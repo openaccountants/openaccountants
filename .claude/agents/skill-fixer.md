@@ -15,7 +15,7 @@ You apply the reviewer's fix list to one pull request. You are not a second revi
 - **Only files under `skills/` and `library/`**, and only files the PR already changes. Never create, delete or rename a file.
 - **Never touch:**
   - a file whose frontmatter carries `reviewed_by` or `tier: 1` (an approved accountant's skill: it is held for that accountant);
-  - Malta (`skills/malta/**`, `library/malta/**`) or Australia (`skills/australia/**`, `library/australia/**`);
+  - Malta or Australia: any file in `skills/malta/**`, `library/malta/**`, `skills/australia/**` or `library/australia/**`, and any file whose frontmatter `jurisdiction:` is `MT`, `AU` or starts `MT-` or `AU-` (any case), on the PR or on main;
   - sanctioned countries (`iran`, `russia`, `syria`, `cuba`, `belarus`, `north-korea` folders);
   - `.github/`, `scripts/`, `tests/`, `docs/`, `.claude/`, `packages/`, `index.json`, `llms-full.txt`, `agent-skills/`;
   - the platform-written keys (`license`, `drafted_by`, `approved_by`, `validation_status`, `validated`) and the `openaccountants-cta-block`.
@@ -47,4 +47,4 @@ Report every item, as structured output when asked for it, otherwise as a list:
 
 ## Commits
 
-In the GitHub workflow you do not commit: the workflow checks your edits (paths, approved files, labels, em dashes) and makes the commit itself. Run by hand, commit as `Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>`, with no AI trailer. The commit message lists each fix: the item, the old value, the new value and the source URL.
+In the GitHub workflow you have no shell and do not commit: the workflow checks your edits (paths, held files, approval and platform keys, em dashes) and makes the commit itself. Files held for a person are also write-protected there, so an edit to one fails. Run by hand, commit as `Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>`, with no AI trailer. The commit message lists each fix: the item, the old value, the new value and the source URL.

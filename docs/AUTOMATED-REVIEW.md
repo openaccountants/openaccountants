@@ -7,8 +7,12 @@ A GitHub workflow reviews every PR that changes `skills/**` or `library/**`, pos
 
 ## What runs, and when
 
-1. **Gate** (no AI). Runs when a skill PR is opened, reopened, marked ready or pushed to; when someone with write access comments `/review`; or when the workflow is run by hand. It skips drafts, closed PRs, PRs not aimed at `main`, and PRs that change `.github/`, `scripts/`, `.claude/`, a `CLAUDE.md` or an `AGENTS.md` (those stay human-only). It also skips once 25 reviews have run in the UTC day, with a short comment saying so.
-2. **Review** (Claude, read-only). Checks figures against official sources (10 spot checks, or a quote check when the PR gives a URL and quote per figure), content lost against main (the 25% rule), worked examples, honest labels, scope (sanctioned countries; Malta and Australia are comment-only) and duplicates. It asks only for objective fixes: a wrong figure, a missing or unofficial or undated source, arithmetic, lost content, a stale tax year, a missing core item. Style and layout are optional notes, never fixes.
+1. **Gate** (no AI). Runs when a skill PR is opened, reopened, marked ready or pushed to; when someone with write access comments `/review`; or when the workflow is run by hand. It skips drafts, closed PRs and PRs not aimed at `main`. It reviews a PR only if **every** file it changes is under `skills/` or `library/` (an allow-list); anything else stays human-only, and so does a PR with more files than GitHub can list. Limits, all of which fail closed (if GitHub cannot be read, nothing runs):
+   - 25 review and fix runs a day in total (UTC);
+   - 5 a day per person without write access;
+   - one automatic review per commit (reopening a PR does not buy another; `/review` and a manual run can);
+   - a `/review` comment from someone without write access neither starts nor cancels anything.
+2. **Review** (Claude, read-only, no shell). Main's scripts run first, in plain shell, and their output is staged as files with the PR's files and main's version of each. Claude then checks figures against official sources (10 spot checks, or a quote check when the PR gives a URL and quote per figure), content lost against main (the 25% rule), worked examples, honest labels, scope (sanctioned countries; Malta and Australia are comment-only) and duplicates. It asks only for objective fixes: a wrong figure, a missing or unofficial or undated source, arithmetic, lost content, a stale tax year, a missing core item. Style and layout are optional notes, never fixes.
    The verdict judges only what the PR changes (its added, changed and removed lines and what they directly feed). Faults in lines the PR does not touch go under "Found on main (not caused by this PR)" and never change the verdict.
 3. **Publish** (no AI). Posts the comment, starting `VERDICT: MERGE`, `FIX` or `HOLD`, with a figures table and, for FIX, a numbered list of exact changes. Each file listed under "Found on main" gets one open issue, "Found by review: <path>", labelled `found-by-review`: a new issue the first time, a comment on the same issue after that.
 4. **Fix** (Claude, only on FIX). Applies exactly the numbered `[auto]` items to a copy of the PR's files. Nothing else.
@@ -28,14 +32,16 @@ It cannot, and the push-fix job refuses a patch that tries:
 
 - files outside `skills/` and `library/`, or files the PR does not change;
 - new, deleted or renamed files;
-- Malta, Australia or sanctioned-country files;
+- Malta or Australia files, by folder or by frontmatter `jurisdiction:` (`MT`, `AU`, `MT-...`, `AU-...`, on the PR or on main), and sanctioned-country files;
 - a file carrying `reviewed_by` or `tier: 1` (it is held for that accountant);
-- adding or changing `reviewed_by`, `reviewed_on`, `verified_by` or `tier`;
+- changing `reviewed_by`, `reviewed_on`, `verified_by`, `tier`, `jurisdiction` or a platform-written key (`approved_by`, `drafted_by`, `validation_status`, `validated`, `license`), compared by parsing the frontmatter;
 - adding an em dash; breaking library JSON.
 
-It never pushes to a fork. For a fork PR, the fixes go on a branch `claude/fix-pr-<n>` in this repository, and the bot comments on the original PR.
+It never pushes to a fork, and no commit from a fork ever lands on a branch here. For a fork PR, the bot makes branch `claude/fix-pr-<n>`: one new commit on `main` holding the PR's `skills/` and `library/` files with the fixes, crediting the PR's author as co-author. It refuses if `main` changed any of those files since the PR branched (the PR needs a rebase first). For a same-repo PR it adds the fix on top of the branch, never on `main`, `test`, the CLA branch, a release or bot branch, or any branch a ruleset protects.
 
-It never runs the PR's code. Claude never holds a token that can write; the comment, labels and commit are made by plain shell steps in separate jobs.
+It never runs the PR's code. Claude never holds a token that can write and has no shell; the comment, labels and commit are made by plain shell steps in separate jobs.
+
+**What Claude can see.** It reads only the main checkout and the staged PR folder, and fetches web pages (WebFetch, needed to open official sources). It never sees a secret: the subscription token and the GitHub token are not in any file or tool it can reach, and the GitHub token it runs beside can only read this public repository. WebFetch could still send out anything Claude can read, which is public repository content.
 
 ## How to stop it
 
@@ -74,5 +80,6 @@ and paste the token when asked. Until the secret exists the workflow does nothin
 
 - **CI does not start on a bot commit.** GitHub does not run workflows for commits made with `GITHUB_TOKEN`, so after an automatic fix the required checks (validate, unit-tests, guard-derived-trees, cla) wait. Close and reopen the PR to run them. The re-review itself is started by the bot.
 - **Fork PRs get a link, not a PR, by default.** The repository setting "Allow GitHub Actions to create and approve pull requests" is off, so the bot cannot open "Fixes for #<n>". It comments a ready-made link instead; whoever opens that PR starts its review, and the fix rounds carry over. Turning the setting on lets the bot open the PR itself, but it also lets any workflow approve PRs, so it is left off.
-- **The daily cap counts every review**, including the re-review after a fix.
+- **The daily cap counts every review and fix run**, including the re-review after a fix.
+- **Follow-up: network egress.** `step-security/harden-runner` with an egress allow-list was considered for the review and fix jobs. Block mode cannot work for the reviewer, which must open official pages on hundreds of government hosts, and audit mode sends runner telemetry to a third party. It is not added; revisit if a fixed list of official hosts becomes practical (for example from `library/` source hosts).
 - **Reviews use the subscription's limits.** If they run out, the review job fails and the PR gets a HOLD comment saying no verdict came back.

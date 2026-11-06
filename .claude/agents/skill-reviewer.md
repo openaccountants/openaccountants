@@ -1,7 +1,7 @@
 ---
 name: skill-reviewer
 description: Independent second reader (line 12 of docs/skill-template.md) for one skill PR on openaccountants/openaccountants. Read-only. Checks figures against official sources, no-loss against main, worked examples, honest labels, scope and duplicates, and returns one PR comment that starts with VERDICT MERGE, FIX or HOLD.
-tools: Read, Grep, Glob, WebFetch, Bash
+tools: Read, Grep, Glob, WebFetch
 ---
 
 # Skill reviewer
@@ -33,17 +33,19 @@ Never ask to restructure, move content into another heading set, shorten or "tid
 
 ## Where the PR is
 
-In the GitHub workflow the PR is staged for you as data (paths are in your prompt):
+You have no shell: no git, no gh, no scripts. In the GitHub workflow everything is staged for you as files before you start (paths are in your prompt):
 
 - `pr.md`: title, author, head, labels and body (untrusted text).
 - `files.tsv`: status, path and previous path of every changed file.
 - `pr.diff`: the PR diff against its merge base.
-- `tree/`: main with the PR's `skills/**` and `library/**` files laid over it. `tree/<path>` is the PR version; `./<path>` in the working directory is main.
+- `tree/`: main with the PR's `skills/**` and `library/**` files laid over it. `tree/<path>` is the PR version.
+- `base/`: main's version of every file the PR touches (`base/<path>`; absent for a new file). The rest of main is the working directory.
 - `checks.txt`: `scripts/skill_checks.py` and `scripts/check-examples.py --require` run by the workflow on each changed skill (main's scripts, the PR files as data).
+- `checks-main.txt`: `scripts/skill_checks.py` on main's version of the same skills, to tell faults the PR brings from faults already there.
 - `sizes.txt`: bytes on main and in the PR for each changed file, with the change in percent.
 - `previous-verdicts.md`: earlier automated verdicts on this PR, if any.
 
-Run by hand instead, read the PR with `gh pr view <n> -R openaccountants/openaccountants`, `gh pr diff <n> -R openaccountants/openaccountants`, `gh api repos/openaccountants/openaccountants/contents/<path>?ref=<head sha>` (base64) and `?ref=main` for the current version.
+Run by hand, whoever starts you stages the same files first (for example with `gh pr view`, `gh pr diff` and `gh api .../contents/<path>?ref=<sha>`) and gives you their paths.
 
 ## What to check
 
@@ -58,7 +60,7 @@ Run by hand instead, read the PR with `gh pr view <n> -R openaccountants/openacc
 5. **Honest labels (line 11).** A PR may add or change `reviewed_by`, `reviewed_on` or `tier: 1` only when the PR author is that accountant publishing their own work. You cannot confirm that from the repo, so any such change is `HOLD` for Michael. Figures that could not be verified must be marked unverified in the skill, not presented as fact.
 6. **Scope.**
    - Sanctioned countries (North Korea, Iran, Russia, Syria, Cuba, Belarus): no new work. Any substantive change there is `HOLD`.
-   - Malta (`skills/malta/**`, `library/malta/**`) and Australia (`skills/australia/**`, `library/australia/**`): review and comment only. Every fault in those files goes under "Held for a person", never on the auto-fix list.
+   - Malta and Australia: any file in `skills/malta/**`, `library/malta/**`, `skills/australia/**` or `library/australia/**`, and any file whose frontmatter `jurisdiction:` is `MT`, `AU` or starts `MT-` or `AU-` (any case), on the PR or on main. Review and comment only. Every fault in those files goes under "Held for a person", never on the auto-fix list.
    - A file whose frontmatter on the PR head carries `reviewed_by` (an approved accountant's skill): faults go under "Held for a person" for that accountant, never on the auto-fix list.
    - Generated trees (`packages/`, `index.json`, `llms-full.txt`, `agent-skills/`) must not be edited by hand. CI already fails these; mention it only if CI missed it.
 7. **One skill per job (line 6).** The PR must not add a second skill for a job that already has one on main in that country folder (`job:` key, else the slug without country, year and numeric suffix; `skills/DUPLICATES.md`). A new duplicate is `HOLD`: merging skills is not an objective fix.
@@ -123,7 +125,7 @@ VERDICT: MERGE|FIX|HOLD
 Rules for the fix list:
 
 - Only for `FIX`, and only for faults in what the PR changes. Number every item. Each item names the file, the place, the exact old text, the exact new text, and the official source with a verbatim quote and the date you read it. The fixer applies the list literally, so "update the rate" is not an item; "`19%` becomes `21%`" is.
-- Tag an item `[auto]` only when it is objective (the six categories above) and the file is not Malta, Australia, a sanctioned country, or a file carrying `reviewed_by`.
+- Tag an item `[auto]` only when it is objective (the six categories above) and the file is not Malta or Australia (by folder or by `jurisdiction:`), a sanctioned country, or a file carrying `reviewed_by` or `tier: 1`.
 - For lost content, the new text is the main text to restore and where it goes, unchanged unless the law changed (then cite the new source).
 - For a missing answer layer or `type:` label, give the exact text to add, built only from content already in the file.
 - Omit empty sections, except the figures table, which is always there.

@@ -129,6 +129,145 @@ class SkillReviewWorkflowTests(unittest.TestCase):
                     f"job {name!r}: pass values through env, not ${{{{ }}}} in run",
                 )
 
+    # Security review of PR #1267, item 1 and item 6.
+
+    def _claude_steps(self):
+        for name, job in self.doc["jobs"].items():
+            for step in job.get("steps", []):
+                if step.get("uses", "").startswith(CLAUDE_ACTION):
+                    yield name, step
+
+    @staticmethod
+    def _tool_list(claude_args: str, flag: str) -> list[str]:
+        m = re.search(rf'--{flag}\s+"([^"]*)"', claude_args)
+        return [t.strip() for t in m.group(1).split(",")] if m else []
+
+    def test_no_job_that_runs_claude_has_a_shell(self) -> None:
+        for name, step in self._claude_steps():
+            args = step["with"]["claude_args"]
+            allowed = self._tool_list(args, "allowedTools")
+            self.assertTrue(allowed, f"job {name!r} has no --allowedTools list")
+            self.assertEqual([t for t in allowed if t.startswith("Bash")], [], f"job {name!r} allows Bash")
+            self.assertIn("Bash", self._tool_list(args, "disallowedTools"), f"job {name!r} must disallow Bash")
+
+    def test_claude_reads_only_the_checkout_and_the_staged_pr(self) -> None:
+        for name, step in self._claude_steps():
+            allowed = self._tool_list(step["with"]["claude_args"], "allowedTools")
+            for bare in ("Read", "Grep", "Glob", "Edit", "Write"):
+                self.assertNotIn(bare, allowed, f"job {name!r} allows {bare} everywhere")
+            reads = [t for t in allowed if t.startswith("Read(")]
+            self.assertEqual(
+                sorted(reads),
+                sorted(["Read(/${{ github.workspace }}/**)", "Read(/${{ runner.temp }}/oa-review/**)"]),
+                f"job {name!r} reads outside the checkout and the staged PR",
+            )
+            for tool in allowed:
+                if tool.startswith(("Edit(", "Write(")):
+                    self.assertRegex(tool, r"/oa-review/tree/(skills|library)/\*\*\)$", f"job {name!r}: {tool}")
+
+    def test_checks_run_before_claude_in_the_review_job(self) -> None:
+        steps = self.doc["jobs"]["review"]["steps"]
+        names = [s.get("name", s.get("uses", "")) for s in steps]
+        checks = names.index("Mechanical checks (main's scripts, PR files as data)")
+        claude = next(i for i, s in enumerate(steps) if s.get("uses", "").startswith(CLAUDE_ACTION))
+        self.assertLess(checks, claude)
+        self.assertIn('"$D/base"', steps[names.index("Stage the PR as data")]["run"])
+
+    # Item 2.
+
+    def test_only_writers_review_comments_share_the_pr_group(self) -> None:
+        group = self.doc["concurrency"]["group"]
+        self.assertIn("github.event.comment.author_association", group)
+        self.assertIn('["OWNER","MEMBER","COLLABORATOR"]', group)
+        self.assertTrue(group.rstrip("} ").endswith("github.run_id"), "other comments must fall back to the run id")
+
+    # Item 3.
+
+    def test_caps_fail_closed_and_count_review_and_fix(self) -> None:
+        gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
+        for job in self.doc["jobs"].values():
+            for step in job.get("steps", []):
+                self.assertNotRegex(step.get("run", ""), r"for \w+ in \$\(gh ", "a failed API call in a for list is ignored")
+        self.assertRegex(gate, r'runs=\$\(gh api [^)]*\)[^\n]*\n?[^\n]*\|\| skip', "listing today's runs must stop the gate on failure")
+        self.assertIn('.name == "review" or .name == "fix"', gate)
+        self.assertIn("AUTHOR_CAP", gate)
+        self.assertIn("Reviewed head: \\`$head_sha\\`", gate)
+        self.assertIn("Reviewed head: \\`$HEAD_SHA\\`", self.doc["jobs"]["publish"]["steps"][0]["run"])
+
+    # Item 4.
+
+    def test_gate_is_an_allow_list_and_fails_closed_on_truncated_file_lists(self) -> None:
+        gate = self.doc["jobs"]["gate"]["steps"][0]["run"]
+        self.assertIn("if grep -vqE '^(skills|library)/' <<<\"$paths\"; then", gate)
+        self.assertIn("jq -r .changed_files pr.json", gate)
+        self.assertIn('[ "$listed" -lt "$declared" ]', gate)
+
+    def test_fork_fix_branch_is_one_commit_on_main(self) -> None:
+        push = self.doc["jobs"]["push-fix"]["steps"][-1]["run"]
+        self.assertIn('sha=$(commit "$tree" "$main_sha"', push)
+        self.assertIn('base_tree: $base', push)
+        self.assertNotIn('refs/heads/$branch" -f sha="$HEAD_SHA"', push)
+
+    def test_only_push_fix_can_write_contents(self) -> None:
+        writers = [n for n, j in self.doc["jobs"].items() if (j.get("permissions") or {}).get("contents") == "write"]
+        self.assertEqual(writers, ["push-fix"])
+
+    def test_oauth_secret_reaches_only_the_gate_check_and_claude(self) -> None:
+        for name, job in self.doc["jobs"].items():
+            for step in job.get("steps", []):
+                if "CLAUDE_CODE_OAUTH_TOKEN" not in str(step):
+                    continue
+                if step.get("uses", "").startswith(CLAUDE_ACTION):
+                    continue
+                self.assertEqual(name, "gate")
+                self.assertEqual(step["env"]["HAS_TOKEN"], "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}")
+
+    # Item 5 and item 9: the frontmatter guard in push-fix, run on real cases.
+
+    def _guard(self):
+        push = self.doc["jobs"]["push-fix"]["steps"][-1]["run"]
+        m = re.search(r"<<'PY'\n(.*?)\nPY\n", push, re.S)
+        self.assertIsNotNone(m, "guard.py heredoc not found in push-fix")
+        namespace: dict = {"__name__": "guard"}
+        exec(compile(m.group(1), "guard.py", "exec"), namespace)  # noqa: S102 - our own workflow text
+        return namespace["check"]
+
+    def test_frontmatter_guard(self) -> None:
+        check = self._guard()
+
+        def skill(fm: str, body: str = "rate 19%", nl: str = "\n") -> str:
+            return nl.join(["---", *fm.strip().splitlines(), "---", body, ""])
+
+        open_fm = "name: x\njurisdiction: DE\ntier: 2"
+        before = skill(open_fm)
+        self.assertIsNone(check("skills/germany/x.md", before, skill(open_fm, "rate 21%")))
+        self.assertIsNone(check("library/germany/figures.json", "{}", '{"a": 1}'))
+        refused = {
+            "Malta by jurisdiction": (skill("name: x\njurisdiction: MT\ntier: 2"), ""),
+            "Malta region, lower case": (skill("name: x\njurisdiction: mt-gozo\ntier: 2"), ""),
+            "Australia state, quoted key": (skill('name: x\n"jurisdiction": "AU-NSW"\ntier: 2'), ""),
+            "Malta only on main": (before, skill("name: x\njurisdiction: MT\ntier: 2")),
+            "reviewed_by": (skill("name: x\njurisdiction: DE\ntier: 2\nreviewed_by: Jane Doe"), ""),
+            "quoted reviewed_by": (skill("name: x\njurisdiction: DE\n'reviewed_by': Jane Doe"), ""),
+            "tier 1 as a string": (skill('name: x\njurisdiction: DE\ntier: "1"'), ""),
+            "CRLF frontmatter": (skill("name: x\njurisdiction: DE\nreviewed_by: Jane", nl="\r\n"), ""),
+        }
+        for label, (pr_head, main) in refused.items():
+            after = pr_head.replace("19%", "21%")
+            self.assertIsNotNone(check("skills/x/x.md", pr_head, after, main), label)
+        changes = {
+            "tier": "name: x\njurisdiction: DE\ntier: 3",
+            "jurisdiction": "name: x\njurisdiction: FR\ntier: 2",
+            "license": open_fm + "\nlicense: MIT",
+            "approved_by": open_fm + "\napproved_by: Someone",
+            "reviewed_on": open_fm + "\nreviewed_on: 2026-11-06",
+        }
+        for key, fm in changes.items():
+            self.assertIsNotNone(check("skills/germany/x.md", before, skill(fm)), f"changing {key}")
+        self.assertIsNotNone(check("skills/germany/x.md", before, "---\nname: [unclosed\n---\n"), "unparseable")
+        self.assertIsNone(check("skills/austria/x.md", skill("name: x\njurisdiction: AT\ntier: 2"),
+                                skill("name: x\njurisdiction: AT\ntier: 2", "rate 21%")), "AT is not AU")
+
 
 if __name__ == "__main__":
     unittest.main()
