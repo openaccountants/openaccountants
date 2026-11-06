@@ -124,7 +124,8 @@ Independent, open-source review aids and calculation tools that complement the O
 - **[div7a-loan-review](https://github.com/ryanduguid/australian-accounting/tree/main/packages/div7a-loan-review)** (Apache-2.0): Reviews Division 7A loan terms and minimum yearly repayments against the ATO benchmark interest rate, with fabricated inputs and explicit refusal boundaries.
 - **[xero-trial-balance-export](https://github.com/ryanduguid/accounting-review-pipeline/tree/main/packages/xero-trial-balance-export)** (Apache-2.0): Exports a Xero trial balance to CSV only when month-movement and YTD column pairs both balance exactly.
 - **[ato-benchmark-compare](https://github.com/ryanduguid/australian-accounting/tree/main/packages/ato-benchmark-compare)** (Apache-2.0): Evaluates business P&L statements locally against the Australian Taxation Office (ATO) small business performance benchmarks, surfacing variance flags and ratio analyses.
-
+- **[OsaBooks](https://github.com/hidicker/osabooks)** (AGPL-3.0): Free bookkeeping for businesses, rental properties and households in Australia, New Zealand, South Korea and the United States, with Xero and QuickBooks imports. Use it as a standard bookkeeping platform, or with several AI features: coding suggestions, year-end checks against the OpenAccountants guides, and an MCP connector so Claude, ChatGPT or another AI app can read your books. Runs on your own computer or online on your own Supabase. [Home page and demo](https://nbparagliding.nz/osabooks/home/).
+  
 *(External tools provide computational review assistance and do not constitute tax or legal advice.)*
 
 ---
