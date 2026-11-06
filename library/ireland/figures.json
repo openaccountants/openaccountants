@@ -1,7 +1,7 @@
 {
   "country": "ireland",
   "code": "IE",
-  "figure_count": 121,
+  "figure_count": 139,
   "figures": [
     {
       "id": "ie.it.rate.standard",
@@ -50,7 +50,7 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Single or widowed or surviving civil partner, without qualifying children €44,000 @ 20%",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-cat",
         "ie-cross-border",
@@ -62,18 +62,40 @@
       ]
     },
     {
+      "id": "ie.it.band.single.announced",
+      "item": "Standard rate band from 2027, single, widowed or surviving civil partner WITHOUT qualifying children (Part 1 of the section 15 TCA table: taxed at 20%, balance at 40%), as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.it.band.single.",
+      "value": "EUR 46,500",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf",
+      "quote": "The first €46,500 20 per cent the standard rate",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
+    },
+    {
       "id": "ie.it.band.single-parent",
       "item": "Standard rate band 2026, single, widowed or surviving civil partner who qualifies for the Single Person Child Carer Credit",
       "value": "EUR 48,000",
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Single or widowed or surviving civil partner, qualifying for Single Person Child Carer Credit €48,000 @ 20%",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11",
         "ie-payroll",
         "ie-return-assembly"
       ]
+    },
+    {
+      "id": "ie.it.band.single-parent.announced",
+      "item": "Standard rate band from 2027, single, widowed or surviving civil partner who qualifies for the Single Person Child Carer Credit (Part 2 of the section 15 TCA table), as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.it.band.single-parent.",
+      "value": "EUR 50,500",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf",
+      "quote": "The first €50,500 20 per cent the standard rate",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.it.band.married-one-income",
@@ -82,13 +104,24 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Married or in a civil partnership (one spouse or civil partner with income) €53,000 @ 20%",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11",
         "ie-paye-rental-nonresident",
         "ie-payroll",
         "ie-return-assembly"
       ]
+    },
+    {
+      "id": "ie.it.band.married-one-income.announced",
+      "item": "Standard rate band from 2027, married couple or civil partners where only ONE spouse or partner has income (Part 3 of the section 15 TCA table), as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.it.band.married-one-income.",
+      "value": "EUR 55,500",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf",
+      "quote": "The first €55,500 20 per cent the standard rate",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.it.band.married-two-incomes",
@@ -97,13 +130,24 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Married or in a civil partnership (both spouses or civil partners with income) €53,000 @ 20% (with an increase of 35,000 max)",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11",
         "ie-paye-rental-nonresident",
         "ie-payroll",
         "ie-return-assembly"
       ]
+    },
+    {
+      "id": "ie.it.band.married-two-incomes.announced",
+      "item": "Standard rate band from 2027, married couple or civil partners where BOTH have income: base band (Part 3 of the section 15 TCA table), before the increase for the second earner, as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.it.band.married-two-incomes.",
+      "value": "EUR 55,500",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf",
+      "quote": "The first €55,500 20 per cent the standard rate",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.it.band.married-increase-max",
@@ -112,7 +156,7 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Note: The increase in the rate band is capped at the lower of €35,000 or the income of the lower earner.",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11",
         "ie-paye-rental-nonresident",
@@ -121,13 +165,24 @@
       ]
     },
     {
+      "id": "ie.it.band.married-increase-max.announced",
+      "item": "Maximum increase in the standard rate band from 2027 for a two-income married couple or civil partners (the cap in section 15(3)(i) TCA, the lower of this amount or the lower earner's income), as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.it.band.married-increase-max.",
+      "value": "EUR 37,500",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf",
+      "quote": "in subsection (3)(i), by the substitution of “€37,500” for “€35,000”",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
+    },
+    {
       "id": "ie.credit.single",
       "item": "Single Person Tax Credit 2026 (also the credit for a widowed person or surviving civil partner WITH dependent children)",
       "value": "EUR 2,000",
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Single Person 2,000 2,000 1,875",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-corporation-tax",
         "ie-cross-border",
@@ -139,13 +194,24 @@
       ]
     },
     {
+      "id": "ie.credit.single.announced",
+      "item": "Single Person Tax Credit from 2027 (the personal tax credit for a single person), as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.credit.single.",
+      "value": "EUR 2,125",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "The personal tax credit will be increased by €125 to €2,125 for single persons",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
+    },
+    {
       "id": "ie.credit.married",
       "item": "Married Person or Civil Partner Tax Credit 2026 (per couple, jointly assessed)",
       "value": "EUR 4,000",
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Married Person or Civil Partner 4,000 4,000 3,750",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11",
         "ie-paye-rental-nonresident",
@@ -154,6 +220,17 @@
         "ie-transfer-pricing",
         "ie-vat-return"
       ]
+    },
+    {
+      "id": "ie.credit.married.announced",
+      "item": "Married Person or Civil Partner Tax Credit from 2027 (per couple, jointly assessed), as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.credit.married.",
+      "value": "EUR 4,250",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "by €250 to €4,250 in the case of married persons and civil partners jointly assessed to tax",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.credit.widowed-no-children",
@@ -210,10 +287,21 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Home Carer's Tax Credit (max.) 1,950 1,950 1,800",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11"
       ]
+    },
+    {
+      "id": "ie.credit.home-carer.announced",
+      "item": "Home Carer Tax Credit from 2027, MAXIMUM amount (reduced where the home carer has their own income), as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.credit.home-carer.",
+      "value": "EUR 2,050",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "the home carer tax credit will be increased by €100 to €2,050.",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.credit.paye",
@@ -222,7 +310,7 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Employee PAYE Tax Credit 2,000 2,000 1,875",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-corporation-tax",
         "ie-cross-border",
@@ -232,6 +320,17 @@
         "ie-payroll",
         "ie-return-assembly"
       ]
+    },
+    {
+      "id": "ie.credit.paye.announced",
+      "item": "Employee (PAYE) Tax Credit from 2027, as proposed by Bill section 3. Same figure as the Earned Income Credit maximum: two different credits. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.credit.paye.",
+      "value": "EUR 2,125",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "Both the employee tax credit and earned income tax credit will also be increased from €2,000 to €2,125.",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.credit.earned-income",
@@ -240,7 +339,7 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Earned Income Tax Credit (max.) 2,000 2,000 1,875",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-corporation-tax",
         "ie-cross-border",
@@ -250,6 +349,17 @@
         "ie-payroll",
         "ie-return-assembly"
       ]
+    },
+    {
+      "id": "ie.credit.earned-income.announced",
+      "item": "Earned Income Tax Credit from 2027, MAXIMUM, for self-employed and proprietary directors; combined with the Employee Tax Credit the two cannot exceed this amount, as proposed by Bill section 3. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.credit.earned-income.",
+      "value": "EUR 2,125",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "Both the employee tax credit and earned income tax credit will also be increased from €2,000 to €2,125.",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.credit.rent.single",
@@ -258,12 +368,23 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Rent Tax Credit - single person (max) 1,000 1,000",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-corporation-tax",
         "ie-income-tax-form11",
         "ie-paye-rental-nonresident"
       ]
+    },
+    {
+      "id": "ie.credit.rent.single.announced",
+      "item": "Rent Tax Credit for 2027 and 2028, single person, MAXIMUM, as proposed by Bill section 4. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.credit.rent.single.",
+      "value": "EUR 1,150",
+      "tax_year": "2027 and 2028 (years of assessment 2027 and 2028)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "increase the maximum amount of the rent tax credit from €1,000 to €1,150 for single persons",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.credit.rent.couple",
@@ -272,7 +393,7 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
       "quote": "Rent Tax Credit - jointly assessed married couple or civil partners (max) 2,000",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-corporation-tax",
         "ie-cross-border",
@@ -282,6 +403,17 @@
         "ie-payroll",
         "ie-return-assembly"
       ]
+    },
+    {
+      "id": "ie.credit.rent.couple.announced",
+      "item": "Rent Tax Credit for 2027 and 2028, jointly assessed married couple or civil partners, MAXIMUM, as proposed by Bill section 4. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.credit.rent.couple.",
+      "value": "EUR 2,300",
+      "tax_year": "2027 and 2028 (years of assessment 2027 and 2028)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "in the case of jointly assessed couples, from €2,000 to €2,300 for the years of assessment 2027 and 2028",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.credit.incapacitated-child",
@@ -410,7 +542,7 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
       "quote": "Threshold for 2026 Rate First €12,012 0.5% Next €16,688 2%",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11",
         "ie-paye-rental-nonresident",
@@ -418,6 +550,17 @@
         "ie-return-assembly",
         "ie-usc"
       ]
+    },
+    {
+      "id": "ie.usc.band2.announced",
+      "item": "USC from 2027, second band: the NEXT EUR 18,288 (a band width, not a cumulative threshold; the 2% band now ends at EUR 30,300), charged at 2%, as proposed by Bill section 2. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.usc.band2.",
+      "value": "EUR 18,288",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf",
+      "quote": "The next €18,288 2 per cent",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.usc.rate2",
@@ -443,7 +586,7 @@
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
       "quote": "Next €16,688 2% Next €41,344 3% Balance 8% Standard rates and thresholds of USC for 2025",
-      "read_on": "2026-10-02",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-income-tax-form11",
         "ie-paye-rental-nonresident",
@@ -451,6 +594,17 @@
         "ie-return-assembly",
         "ie-usc"
       ]
+    },
+    {
+      "id": "ie.usc.band3.announced",
+      "item": "USC from 2027, third band: the NEXT EUR 39,744 (band width), charged at 3%, as proposed by Bill section 2. Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.usc.band3.",
+      "value": "EUR 39,744",
+      "tax_year": "2027 onwards (year of assessment 2027 and later)",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf",
+      "quote": "The next €39,744 3 per cent",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": []
     },
     {
       "id": "ie.usc.rate3",
@@ -862,14 +1016,31 @@
     },
     {
       "id": "ie.cgt.rate",
-      "item": "Capital gains tax rate for most gains (since 6 December 2012)",
+      "item": "Capital gains tax rate for most gains (since 6 December 2012), as enacted in section 28(3) TCA by Finance Act 2013 section 43. The law in force for disposals up to 6 October 2026; for later disposals see ie.cgt.rate.announced (31%), which Revenue's CGT page already applies.",
       "value": "33%",
       "tax_year": 2026,
-      "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx",
-      "quote": "The rate of CGT is 33% for most gains.",
-      "read_on": "2026-10-02",
+      "source_url": "https://www.irishstatutebook.ie/eli/2013/act/8/section/43/enacted/en/html",
+      "quote": "in section 28(3) by substituting “33 per cent” for “30 per cent”",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-cat",
+        "ie-cgt",
+        "ie-corporation-tax",
+        "ie-cross-border",
+        "ie-non-dom",
+        "ie-return-assembly"
+      ]
+    },
+    {
+      "id": "ie.cgt.rate.announced",
+      "item": "Capital gains tax rate for most gains, disposals on or after 7 October 2026, as proposed by Bill section 36 (Revenue's CGT page already gives 31%). Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.cgt.rate.",
+      "value": "31%",
+      "tax_year": "2026, disposals on or after 7 October 2026",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "The amendment reduces the rate of capital gains tax by 2% to 31% for disposals of assets made on or after 7 October 2026.",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": [
         "ie-cgt",
         "ie-corporation-tax",
         "ie-cross-border",
@@ -969,8 +1140,8 @@
       "value": "31 October",
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx",
-      "quote": "You must file your CGT return on or before 31 October of the year that follows the date of disposal.",
-      "read_on": "2026-10-02",
+      "quote": "You must file your CGT Return on, or before, 31 October of the year that follows the date of disposal.",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-freelance-intake",
         "ie-income-tax-form11",
@@ -1153,24 +1324,37 @@
     },
     {
       "id": "ie.cat.group-a",
-      "item": "CAT Group A tax-free threshold, gifts and inheritances on or after 2 October 2024 (mainly children of the disponer); lifetime aggregate since 5 December 1991 within the group",
+      "item": "CAT Group A tax-free threshold, gifts and inheritances taken 2 October 2024 to 6 October 2026 (mainly children of the disponer); lifetime aggregate since 5 December 1991 within the group. The law in force; for benefits on or after 7 October 2026 see ie.cat.group-a.announced (EUR 420,000), which Revenue's table already applies.",
       "value": "EUR 400,000",
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
-      "quote": "On or after 2 October 2024 €400,000 €40,000 €20,000",
-      "read_on": "2026-10-02",
+      "quote": "2 October 2024 - 6 October 2026 €400,000 €40,000 €20,000",
+      "read_on": "2026-11-06",
+      "used_by": [
+        "ie-cat"
+      ]
+    },
+    {
+      "id": "ie.cat.group-a.announced",
+      "item": "CAT Group A tax-free threshold, gifts and inheritances taken on or after 7 October 2026 (mainly children of the disponer), as proposed by Bill section 66 (Revenue's threshold table already gives it). Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.cat.group-a.",
+      "value": "EUR 420,000",
+      "tax_year": "2026, gifts and inheritances taken on or after 7 October 2026",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "the Group A threshold increases from €400,000 to €420,000",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
       "used_by": [
         "ie-cat"
       ]
     },
     {
       "id": "ie.cat.group-b",
-      "item": "CAT Group B tax-free threshold on or after 2 October 2024",
+      "item": "CAT Group B tax-free threshold, gifts and inheritances taken 2 October 2024 to 6 October 2026. The law in force; for benefits on or after 7 October 2026 see ie.cat.group-b.announced (EUR 44,000), which Revenue's table already applies.",
       "value": "EUR 40,000",
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
-      "quote": "On or after 2 October 2024 €400,000 €40,000 €20,000",
-      "read_on": "2026-10-02",
+      "quote": "2 October 2024 - 6 October 2026 €400,000 €40,000 €20,000",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-cat",
         "ie-corporation-tax",
@@ -1178,17 +1362,49 @@
       ]
     },
     {
+      "id": "ie.cat.group-b.announced",
+      "item": "CAT Group B tax-free threshold, gifts and inheritances taken on or after 7 October 2026, as proposed by Bill section 66 (Revenue's threshold table already gives it). Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.cat.group-b.",
+      "value": "EUR 44,000",
+      "tax_year": "2026, gifts and inheritances taken on or after 7 October 2026",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "the Group B threshold increases from €40,000 to €44,000",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": [
+        "ie-cat",
+        "ie-cross-border",
+        "ie-foreign-tax-and-withholding",
+        "ie-income-tax-form11",
+        "ie-paye-rental-nonresident",
+        "ie-payroll",
+        "ie-return-assembly"
+      ]
+    },
+    {
       "id": "ie.cat.group-c",
-      "item": "CAT Group C tax-free threshold on or after 2 October 2024",
+      "item": "CAT Group C tax-free threshold, gifts and inheritances taken 2 October 2024 to 6 October 2026. The law in force; for benefits on or after 7 October 2026 see ie.cat.group-c.announced (EUR 22,000), which Revenue's table already applies.",
       "value": "EUR 20,000",
       "tax_year": 2026,
       "source_url": "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx",
-      "quote": "On or after 2 October 2024 €400,000 €40,000 €20,000",
-      "read_on": "2026-10-02",
+      "quote": "2 October 2024 - 6 October 2026 €400,000 €40,000 €20,000",
+      "read_on": "2026-11-06",
       "used_by": [
         "ie-cat",
         "ie-payroll",
         "ie-usc"
+      ]
+    },
+    {
+      "id": "ie.cat.group-c.announced",
+      "item": "CAT Group C tax-free threshold, gifts and inheritances taken on or after 7 October 2026, as proposed by Bill section 66 (Revenue's threshold table already gives it). Finance (No. 2) Bill 2026, initiated 19 October 2026 and at Dáil First Stage on the Oireachtas bill page (last updated 3 November 2026): not yet law. The figure in force is ie.cat.group-c.",
+      "value": "EUR 22,000",
+      "tax_year": "2026, gifts and inheritances taken on or after 7 October 2026",
+      "source_url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "quote": "the Group C threshold increases from €20,000 to €22,000",
+      "read_on": "2026-11-06",
+      "status": "announced, Finance Bill not yet enacted",
+      "used_by": [
+        "ie-cat"
       ]
     },
     {

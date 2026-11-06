@@ -14,8 +14,13 @@ One folder per country, named as under `skills/`: `library/ireland/` for `skills
 | `tax_year` | The year the figure applies to. A number means that calendar year; a string says the exact period (`2026 to 2027, from 6 April 2026`, `in force 17 Oct 2026`). Read it before using an entry: some are history or a future change. |
 | `source_url` | The official page: a government, tax authority, official gazette or other public body of the country. Never a firm, a vendor or Wikipedia. |
 | `quote` | Verbatim text from that page, in the page's own language and number style, containing the figure. |
-| `read_on` | The date the page was read and the quote checked. |
+| `read_on` | The date the page was read and the quote checked. An entry read again after the rest of its country carries its own later date. |
+| `status` | Only on an announced figure: a change that has been announced or put in a bill but is not yet law. The one value today is `announced, Finance Bill not yet enacted`. |
 | `used_by` | Skills in the folder with a rates-table row containing the exact value. Best effort: a common value such as `20%` also lists skills that use 20% for another rule. |
+
+## Announced figures
+
+When a budget or a bill changes a figure before it is law, the library keeps the figure in force and adds the announced one next to it. The announced entry has the same id plus `.announced` (`ie.cat.group-a.announced` next to `ie.cat.group-a`), a `status`, and its start date in `tax_year` (`2026, gifts and inheritances taken on or after 7 October 2026`). Its quote comes from the bill or its official explanatory memorandum. Once the bill is law, the new value replaces the old one in the entry in force and the announced entry is removed.
 
 ## sources.json
 
@@ -31,7 +36,7 @@ The saved copies of the pages (with retrieval date and fingerprint) are kept pri
 
 `scripts/build-library.py <path to the research packs> --write` writes both files for each country that has a pack (dry run without `--write`). It reads each country's merged pack only and skips family and superseded pack files. Do not edit the JSON by hand: fix the pack and rebuild.
 
-`scripts/skill_checks.py`, check (q) `figure_in_library`, warns when a rates row states a different number for a figure the library holds. It is a warning, not an error, and only compares a row with a figure when the match is plain; the rule is in the check's docstring.
+`scripts/skill_checks.py`, check (q) `figure_in_library`, warns when a rates row states a different number for a figure the library holds. A row that states either the figure in force or its announced value passes. It is a warning, not an error, and only compares a row with a figure when the match is plain; the rule is in the check's docstring.
 
 ## Licence
 

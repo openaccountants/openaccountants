@@ -799,6 +799,9 @@ LIBRARY_NUMBER_RE = re.compile(
 LIBRARY_VALUE_RE = re.compile(r"(?:([A-Z]{3}) )?(\d+(?:[.,]\d+)*)(?: (million|billion|thousand|lakh|crore))?(%?)")
 LIBRARY_SCALE = {"million": 1e6, "m": 1e6, "billion": 1e9, "bn": 1e9, "thousand": 1e3, "lakh": 1e5, "crore": 1e7}
 LIBRARY_ID_RE = re.compile(r"\b[a-z]{2}(?:\.[a-z0-9_-]+)+")
+#: An announced figure (status set, not yet law) has the id of the figure in force
+#: plus this suffix; a row stating either value of the pair passes (build-library.py).
+LIBRARY_ANNOUNCED_SUFFIX = ".announced"
 YEAR_IN_TEXT_RE = re.compile(r"\b(20\d{2})\b")
 
 
@@ -879,7 +882,13 @@ def library_figures(folder):
                 fig["_unit"] = _value_unit(fig["value"])
                 fig["_numbers"] = _numbers(fig["value"])
                 fig["_url"] = _norm_url(fig.get("source_url", ""))
-            lib = {"figures": figures, "by_id": {f["id"]: f for f in figures}}
+            by_id = {f["id"]: f for f in figures}
+            for fig in figures:
+                partner = (fig["id"][: -len(LIBRARY_ANNOUNCED_SUFFIX)]
+                           if fig["id"].endswith(LIBRARY_ANNOUNCED_SUFFIX)
+                           else fig["id"] + LIBRARY_ANNOUNCED_SUFFIX)
+                fig["_partners"] = [by_id[partner]] if partner in by_id else []
+            lib = {"figures": figures, "by_id": by_id}
         _library_cache[key] = lib
     return _library_cache[key]
 
@@ -918,7 +927,11 @@ def check_figure_in_library(path, text, fm):
     in it equals a matched figure, or any figure the library read on the same page
     (``4.20%`` equals ``4.2%``). A row whose years are all different from the figure's
     tax year is about another year and is skipped. Otherwise it warns, naming the most
-    specific matched figure (the longest id)."""
+    specific matched figure (the longest id).
+
+    Announced figures: where the library holds both a figure in force and its
+    announced change (same id plus ``.announced``, with a ``status``), a row stating
+    either value passes, in both the explicit and the implicit match."""
     folder = library_folder(path)
     lib = library_figures(folder) if folder else None
     if not lib:
@@ -936,7 +949,7 @@ def check_figure_in_library(path, text, fm):
         named = [lib["by_id"][i] for i in LIBRARY_ID_RE.findall(plain) if i in lib["by_id"]]
         if named:
             for fig in named:
-                if not value_in_text(fig["value"], plain):
+                if not any(value_in_text(f["value"], plain) for f in [fig, *fig["_partners"]]):
                     found.append(f"row names {fig['id']} but does not state {fig['value']}")
             continue
         page_urls = {_norm_url(u) for u in urls}
@@ -954,6 +967,8 @@ def check_figure_in_library(path, text, fm):
             continue
         row_numbers = _numbers(plain)
         if any(f["_numbers"] & row_numbers for f in page if f["_unit"]):  # matched is part of page
+            continue
+        if any(p["_numbers"] & row_numbers for f in matched for p in f["_partners"]):
             continue
         row_years = set(YEAR_IN_TEXT_RE.findall(DATE_RE.sub("", plain)))
         if row_years:

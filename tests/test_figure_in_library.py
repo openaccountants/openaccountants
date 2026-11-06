@@ -105,9 +105,73 @@ class FigureInLibrary(unittest.TestCase):
         self.assertEqual(self.run_check(text, path="skills/latvia/lv-cat.md"), [])
         self.assertEqual(self.run_check(text, path="docs/x.md"), [])
 
+    def test_announced_value_passes_and_other_values_still_warn(self):
+        bill = "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf"
+        announced = {
+            "id": "ie.cat.group-a.announced",
+            "item": "CAT Group A tax-free threshold from 7 October 2026, as proposed by the Finance Bill.",
+            "value": "EUR 420,000",
+            "tax_year": "gifts and inheritances taken on or after 7 October 2026",
+            "source_url": bill,
+            "quote": "the Group A threshold increases from €400,000 to €420,000",
+            "read_on": "2026-11-06",
+            "status": "announced, Finance Bill not yet enacted",
+            "used_by": [],
+        }
+        with open(os.path.join(self.tmp.name, "ireland", "figures.json"), "w", encoding="utf-8") as fh:
+            json.dump({"country": "ireland", "code": "IE", "figures": FIGURES + [announced]}, fh)
+        skill_checks._library_cache.clear()
+        self.assertEqual(self.run_check(skill(f"Group A threshold | EUR 400,000 | 2026 | {URL}")), [])
+        self.assertEqual(self.run_check(skill(f"Group A threshold | EUR 420,000 | 2026 | {URL}")), [])
+        self.assertEqual(self.run_check(skill("Group A (`ie.cat.group-a`) | EUR 420,000 | 2026 | see Sources")), [])
+        self.assertEqual(self.run_check(skill("Group A (`ie.cat.group-a.announced`) | EUR 400,000 | 2026 | see Sources")), [])
+        problems = self.run_check(skill(f"Group A threshold | EUR 410,000 | 2026 | {URL}"))
+        self.assertEqual(len(problems), 1)
+        self.assertIn("ie.cat.group-a", problems[0])
+        problems = self.run_check(skill("Group A (`ie.cat.group-a`) | EUR 410,000 | 2026 | see Sources"))
+        self.assertIn("names ie.cat.group-a", problems[0])
+
     def test_in_lesson_checks(self):
         self.assertIn(("q", "figure_in_library", skill_checks.check_figure_in_library), skill_checks.LESSON_CHECKS)
         self.assertNotIn("figure_in_library", skill_checks.CHECK_NAMES)
+
+
+class BuildLibraryStatus(unittest.TestCase):
+    """scripts/build-library.py publishes status and a per-entry read_on, and nothing else new."""
+
+    def setUp(self):
+        import importlib.util
+        path = os.path.join(os.path.dirname(__file__), "..", "scripts", "build-library.py")
+        spec = importlib.util.spec_from_file_location("build_library", path)
+        self.bl = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.bl)
+
+    def entry(self, pack_id, **extra):
+        return {"pack_id": pack_id, "item": "Group A threshold", "value": "EUR 420,000",
+                "source_url": URL, "quote": "Group A €420,000", "year": 2026, **extra}
+
+    def test_status_and_read_on_are_published(self):
+        pack = {"checked_at": "2026-10-02", "entries": [
+            self.entry("ie.cat.group-a", value="EUR 400,000"),
+            self.entry("ie.cat.group-a.announced", status="announced, Finance Bill not yet enacted", read_on="2026-11-06"),
+        ]}
+        figures, _sources, problems = self.bl.build_country("IE", pack, "no-such-folder")
+        self.assertEqual(problems, [])
+        in_force, announced = figures["figures"]
+        self.assertNotIn("status", in_force)
+        self.assertEqual(in_force["read_on"], "2026-10-02")
+        self.assertEqual(announced["status"], "announced, Finance Bill not yet enacted")
+        self.assertEqual(announced["read_on"], "2026-11-06")
+        self.assertEqual(list(announced), ["id", "item", "value", "tax_year", "source_url", "quote", "read_on", "status", "used_by"])
+
+    def test_unknown_status_or_id_without_suffix_is_skipped(self):
+        pack = {"checked_at": "2026-10-02", "entries": [
+            self.entry("ie.cat.group-a.announced", status="rumoured"),
+            self.entry("ie.cat.group-a", status="announced, Finance Bill not yet enacted"),
+        ]}
+        figures, _sources, problems = self.bl.build_country("IE", pack, "no-such-folder")
+        self.assertEqual(figures["figures"], [])
+        self.assertEqual(len(problems), 2)
 
 
 class ValueInText(unittest.TestCase):

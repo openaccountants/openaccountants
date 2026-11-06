@@ -1,7 +1,7 @@
 {
   "country": "ireland",
   "code": "IE",
-  "url_count": 355,
+  "url_count": 356,
   "sources": [
     {
       "url": "https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf",
@@ -71,7 +71,32 @@
         "ie-non-dom",
         "ie-transfer-pricing"
       ],
-      "figures": []
+      "figures": [
+        "ie.it.band.single.announced",
+        "ie.it.band.single-parent.announced",
+        "ie.it.band.married-one-income.announced",
+        "ie.it.band.married-two-incomes.announced",
+        "ie.it.band.married-increase-max.announced",
+        "ie.usc.band2.announced",
+        "ie.usc.band3.announced"
+      ]
+    },
+    {
+      "url": "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/memo/b9826d-memo.pdf",
+      "skills": [],
+      "figures": [
+        "ie.credit.single.announced",
+        "ie.credit.married.announced",
+        "ie.credit.home-carer.announced",
+        "ie.credit.paye.announced",
+        "ie.credit.earned-income.announced",
+        "ie.credit.rent.single.announced",
+        "ie.credit.rent.couple.announced",
+        "ie.cgt.rate.announced",
+        "ie.cat.group-a.announced",
+        "ie.cat.group-b.announced",
+        "ie.cat.group-c.announced"
+      ]
     },
     {
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731",
@@ -385,7 +410,9 @@
       "skills": [
         "ie-cgt"
       ],
-      "figures": []
+      "figures": [
+        "ie.cgt.rate"
+      ]
     },
     {
       "url": "https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html",
@@ -1242,7 +1269,6 @@
         "ie-return-assembly"
       ],
       "figures": [
-        "ie.cgt.rate",
         "ie.cgt.rate.foreign-life",
         "ie.cgt.rate.vc-individual"
       ]

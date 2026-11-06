@@ -36,6 +36,16 @@ another rule; a skill that writes the same number another way (``4.20%`` for
 ``sources.json`` lists every distinct http(s) URL cited by the skills in the folder
 (text before the platform CTA block) plus every pack URL, with the skills and the
 figures citing each.
+
+``read_on`` is the pack's ``checked_at`` unless the entry carries its own
+``read_on`` (an entry read again later than the rest of the pack).
+
+An announced figure (a change a government has announced or put in a bill that is
+not yet law) carries ``status``, one of ``STATUSES``, and its id is the id of the
+figure in force plus ``.announced`` (``ie.cat.group-a.announced`` next to
+``ie.cat.group-a``). The figure in force stays in the library unchanged; check
+``figure_in_library`` accepts either value. Any other status, or a status on an id
+without the suffix, is reported and the entry skipped.
 """
 
 import argparse
@@ -65,6 +75,10 @@ _build_index = _load("build_index", "build-index.py")
 PACK_FILE_RE = re.compile(r"^([A-Z]{2})\.json$")
 #: The only pack entry fields that are published.
 REQUIRED = ("pack_id", "item", "value", "source_url", "quote", "year")
+#: The statuses an announced figure may carry; a figure in force has none.
+STATUSES = ("announced, Finance Bill not yet enacted",)
+#: The id of an announced figure is the id of the figure in force plus this.
+ANNOUNCED_SUFFIX = ".announced"
 TRAILING_PUNCT = ".,;:'\"`*_"
 
 
@@ -157,19 +171,27 @@ def build_country(code, pack, folder):
         if entry["pack_id"] in seen:
             problems.append(f"{entry['pack_id']}: duplicate id, second one skipped")
             continue
+        status = entry.get("status")
+        if status is not None and (status not in STATUSES or not entry["pack_id"].endswith(ANNOUNCED_SUFFIX)):
+            problems.append(f"{entry['pack_id']}: status {status!r} needs one of {STATUSES} "
+                            f"and an id ending {ANNOUNCED_SUFFIX}, skipped")
+            continue
         seen.add(entry["pack_id"])
         value = str(entry["value"]).strip()
         used_by = [slug for slug, texts in rows.items() if any(skill_checks.value_in_text(value, t) for t in texts)]
-        figures.append({
+        figure = {
             "id": entry["pack_id"],
             "item": entry["item"],
             "value": value,
             "tax_year": entry["year"],
             "source_url": entry["source_url"].strip(),
             "quote": entry["quote"],
-            "read_on": pack.get("checked_at"),
-            "used_by": used_by,
-        })
+            "read_on": entry.get("read_on") or pack.get("checked_at"),
+        }
+        if status is not None:
+            figure["status"] = status
+        figure["used_by"] = used_by
+        figures.append(figure)
     figures_doc = {"country": folder, "code": code, "figure_count": len(figures), "figures": figures}
 
     by_url = collections.OrderedDict()
