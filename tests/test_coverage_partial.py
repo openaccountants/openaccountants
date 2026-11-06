@@ -39,6 +39,50 @@ class PartialDomainsTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             self.assertEqual(cr.read_pack_readme(d), (None, {}, {}, {}))
 
+    def test_inline_partial_list_preserves_all_declared_gaps(self):
+        text = README.replace("partial:\n  SC: self-employed only", "partial: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]")
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "README.md"), "w") as fh:
+                fh.write(text)
+            _, na, covered, partial = cr.read_pack_readme(d)
+        self.assertEqual(set(partial), set(cr.DOMAIN_CODES))
+        self.assertEqual(na, {"TP": "no documentation regime"})
+        self.assertEqual(covered, {"XB": "moving-to-xx"})
+
+    def test_yaml_list_layout_does_not_change_coverage(self):
+        for declaration in [
+            "partial:\n  - SC\n  - VAT",
+            "partial: [\n  'SC',\n  \"VAT\"\n] # declared gaps",
+        ]:
+            with self.subTest(declaration=declaration), tempfile.TemporaryDirectory() as d:
+                with open(os.path.join(d, "README.md"), "w") as fh:
+                    fh.write(README.replace("partial:\n  SC: self-employed only", declaration))
+                self.assertEqual(set(cr.read_pack_readme(d)[3]), {"SC", "VAT"})
+
+    def test_empty_partial_list_does_not_add_gaps(self):
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "README.md"), "w") as fh:
+                fh.write(README.replace("partial:\n  SC: self-employed only", "partial: []"))
+            self.assertEqual(cr.read_pack_readme(d)[3], {})
+
+    def test_invalid_partial_declarations_do_not_silently_report_no_gaps(self):
+        for declaration in [
+            "partial: SC", "partial: [SC, TYPO]", "partial: [SC, false]",
+            "partial:\n  TYPO: gap", "partial: [SC,", "partial: [SC]\npartial: []",
+        ]:
+            with self.subTest(declaration=declaration), tempfile.TemporaryDirectory() as d:
+                with open(os.path.join(d, "README.md"), "w") as fh:
+                    fh.write(README.replace("partial:\n  SC: self-employed only", declaration))
+                with self.assertRaisesRegex(ValueError, "README.md"):
+                    cr.read_pack_readme(d)
+
+    def test_real_malta_report_keeps_the_pack_in_writing(self):
+        row = next(row for row in cr.build_report()["rows"] if row["code"] == "MT")
+        self.assertEqual(set(row["partial"]), set(cr.DOMAIN_CODES))
+        self.assertEqual(set(row["missing"]), set(cr.DOMAIN_CODES))
+        self.assertFalse(row["complete"])
+        self.assertEqual(row["state"], "needs_writing")
+
 
 if __name__ == "__main__":
     unittest.main()
