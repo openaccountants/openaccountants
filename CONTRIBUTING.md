@@ -14,7 +14,7 @@ You don't need to be an accountant, and you don't need an account with us. Many 
 2. **Check it doesn't exist.** One task in one country has one skill. Search [skills/REGISTER.csv](skills/REGISTER.csv). If it exists, improve it.
 3. **Write it** to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law, a `## Sources` section, two worked examples that recompute.
 4. **Run the checks:** `python3 scripts/validate-guides.py --changed-only` and `python3 scripts/check-examples.py --changed-only`.
-5. **Open a pull request** and tick the [CLA](CLA.md) box.
+5. **Open a pull request.** There is nothing to sign: opening it means you accept the [contributor terms](CONTRIBUTOR-TERMS.md).
 
 Before merging, a separate reviewer (a person, or a separate AI agent) re-reads the law, checks every figure and recomputes both examples. Once merged, the skill goes live as **Built from the law**, and your GitHub name is in its history.
 
@@ -53,6 +53,6 @@ Always set `jurisdiction:` in the frontmatter too. The full spec (frontmatter ke
 
 **Edit `skills/` only.** `packages/`, `index.json` and `llms-full.txt` are generated after merge (except the hand-written `packages/us-federal/`). Don't run the generators.
 
-**Licence.** Software is AGPL-3.0-only. Skills are under the [OA Guide License](LICENSING.md). The [CLA](CLA.md) lets Glimpse Ltd distribute your contribution under these licences. You keep your copyright. Questions: info@openaccountants.com.
+**Licence and terms.** Code is AGPL-3.0-only. Skills are under the Open Accountants Skills License ([LICENSING.md](LICENSING.md)). By opening a pull request you accept the [contributor terms](CONTRIBUTOR-TERMS.md): the work is yours to give, it is published on openaccountants.com and served to AI tools, an accountant may check and approve it under their name, and you keep your copyright and credit. Contributions made before 6 November 2026 under the earlier [CLA](CLA.md) keep those terms. Questions: info@openaccountants.com.
 
 **Merging.** Maintainers in [docs/OWNERS.md](docs/OWNERS.md) merge. A skill is live once the website has received it and checked it against this repository.
