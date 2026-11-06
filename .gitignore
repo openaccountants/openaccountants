@@ -1,5 +1,6 @@
 skills/.claude/
-.claude/
+.claude/*
+!/.claude/agents/
 contrib/
 .DS_Store
 **/.DS_Store
