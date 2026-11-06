@@ -16,7 +16,7 @@ Copyright (c) 2026 Glimpse Ltd. All rights reserved.
 - **Accountants and tax professionals:** using the skills as a reference for client work.
 - **Small businesses:** using the skills inside your own business (your own AI assistant, agents, Slack or Teams, internal knowledge base), if you and your affiliates have **5 or fewer** people working for you.
 - **Education and research:** teaching, study, journalism and non-commercial academic research.
-- **Contributors:** improving the skills under the [CLA](CLA.md).
+- **Contributors:** improving the skills under the [contributor terms](CONTRIBUTOR-TERMS.md).
 - **Open source:** projects that follow AGPL-3.0-only (software) and the Skills License (content).
 
 ## Paid: the three licences

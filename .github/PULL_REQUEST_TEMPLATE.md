@@ -6,13 +6,9 @@
 
 <!-- e.g., Malta, Germany, all EU -->
 
-## Legal — Contributor License Agreement (CLA)
+## Contributor terms
 
-OpenAccountants is a mixed-licence project: code is AGPL-3.0-only, skills are under the OpenAccountants Guide License v1.0, and a commercial licence exists for both (see [LICENSING.md](https://github.com/openaccountants/openaccountants/blob/main/LICENSING.md)). We need a clear **yes** from you before we can merge your contribution.
-
-- [ ] **I have read [CLA.md](https://github.com/openaccountants/openaccountants/blob/main/CLA.md) and agree to the Contributor License Agreement** for everything included in this pull request. *(Checking this box is your explicit opt-in.)*
-
-If you cannot agree, do not open this PR — contact **info@openaccountants.com** to discuss alternatives (including a formal signed agreement).
+By opening this pull request you accept the [contributor terms](https://github.com/openaccountants/openaccountants/blob/main/CONTRIBUTOR-TERMS.md): the work is yours to give and is shared under this repository's licences. Your skill will be published, served to AI tools through the OpenAccountants plugin, and may be checked, improved and approved by a licensed accountant. You keep your authorship. There is nothing to sign.
 
 ## Checklist
 
