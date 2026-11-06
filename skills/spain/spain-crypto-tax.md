@@ -4,7 +4,7 @@ description: Compute 2026 common-territory Spanish individual tax on cryptocurre
 version: 1.3
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-06
 depends_on:
   - es-income-tax
 category: crypto

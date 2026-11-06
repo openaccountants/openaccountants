@@ -4,7 +4,7 @@ description: Use this Guide for 2026 Spanish resident personal income tax in the
 version: 2.3
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-06
 depends_on:
   - income-tax-workflow-base
 category: international
