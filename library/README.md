@@ -29,6 +29,6 @@ The saved copies of the pages (with retrieval date and fingerprint) are kept pri
 
 ## How it is built and checked
 
-`scripts/build-library.py <path to the research packs> --write` writes both files for every country with a pack (dry run without `--write`). It reads each country's merged pack only and skips family and superseded pack files. Do not edit the JSON by hand: fix the pack and rebuild.
+`scripts/build-library.py <path to the research packs> --write` writes both files for each country that has a pack (dry run without `--write`). It reads each country's merged pack only and skips family and superseded pack files. Do not edit the JSON by hand: fix the pack and rebuild.
 
 `scripts/skill_checks.py`, check (q) `figure_in_library`, warns when a rates row states a different number for a figure the library holds. It is a warning, not an error, and only compares a row with a figure when the match is plain; the rule is in the check's docstring.
