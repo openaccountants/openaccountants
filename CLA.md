@@ -1,5 +1,7 @@
 # Contributor License Agreement — Open Accountants
 
+> **No longer required for new contributions (6 November 2026).** New contributions follow the [contributor terms](CONTRIBUTOR-TERMS.md). This agreement is kept for the contributions accepted under it, by a signature comment or, earlier, by a ticked checkbox in the pull request template. Those acceptances remain valid for the contributions they covered.
+
 Version 1.0 — Effective April 2026
 
 ---

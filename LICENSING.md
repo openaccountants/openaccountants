@@ -42,9 +42,11 @@ additional/unknown licences — that is expected for a mixed-licence repo.
 
 ## Contributions
 
-All contributions are governed by the [Contributor License Agreement](CLA.md),
-which grants Glimpse Ltd the right to distribute contributions under **both** the
-AGPL and the Guide/commercial tracks. You keep your copyright.
+Contributions are made under the [contributor terms](CONTRIBUTOR-TERMS.md): each
+contribution is shared under this repository's licences, the contributor keeps
+copyright and authorship, and Glimpse Ltd does not relicense it without asking.
+Contributions made before 6 November 2026 under the earlier
+[Contributor License Agreement](CLA.md) keep those terms.
 
 ## Third-party copyleft material
 
@@ -54,8 +56,8 @@ under a copyleft licence (AGPL-3.0 / GPL-3.0), with attribution (see the
 several Canadian provinces). Copyleft material cannot be relicensed: any Guide
 that contains or derives from it **remains under its original AGPL/GPL terms**,
 notwithstanding the general mapping above. The Guide License applies to the rest
-of the Guides, which are Glimpse Ltd's own work, work-for-hire, or covered by an
-accepted [CLA](CLA.md).
+of the Guides, which are Glimpse Ltd's own work, work-for-hire, covered by an
+accepted [CLA](CLA.md), or contributed under the [contributor terms](CONTRIBUTOR-TERMS.md).
 
 ## Third-party MIT material
 

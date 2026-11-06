@@ -1,6 +1,6 @@
 # Contributing to OpenAccountants
 
-Anyone can contribute. Pick your door. There are no fees and no minimum. Every contribution needs the [CLA](#contributor-license-agreement-cla).
+Anyone can contribute. Pick your door. There are no fees and no minimum. Contributions follow the short [contributor terms](CONTRIBUTOR-TERMS.md). There is nothing to sign.
 
 **Keep it public.** This repository is read by every AI that crawls it. No client names, no prices, no internal plans, no private contact details in any file.
 
@@ -139,21 +139,16 @@ If you add a `references.md` to a country's source directory, it will be include
 
 Maintainers listed in [docs/OWNERS.md](docs/OWNERS.md) merge. An approved accountant publishing their own work records their approval in that publishing PR with `tier: 1`, `reviewed_by` and `reviewed_on`. They do not need a separate approval PR. A merged skill without an accountant's approval remains `tier: 2`, **Not yet approved**. The name must match an approved accountant account on openaccountants.com. A merge records acceptance on GitHub; the skill is live only after delivery and a check against the published content.
 
-## Contributor License Agreement (CLA)
+## Contributor terms
 
-OpenAccountants is a **mixed-licence** project: software is **AGPL-3.0-only** and the skills are under the source-available **OA Guide License**, with a commercial track for both (see [LICENSING.md](LICENSING.md)). The [Contributor License Agreement](CLA.md) lets Glimpse Ltd distribute your contribution under **all** of these tracks. You **retain copyright**; you are granting a license, not handing over ownership.
+There is nothing to sign. By opening a pull request you accept the [contributor terms](CONTRIBUTOR-TERMS.md):
 
-**GitHub pull requests:** read [CLA.md](CLA.md). If you agree, post this exact comment on your pull request:
+- The work is yours to give, and it is shared under this repository's licences: code under **AGPL-3.0-only**, skills under the **Open Accountants Skills License** (see [LICENSING.md](LICENSING.md)).
+- Your skill is published on openaccountants.com and served to AI tools through the OpenAccountants plugin.
+- A licensed accountant may check, improve and approve it under their name.
+- You keep your copyright and your authorship credit. We do not relicense your work; if we ever want it in a paid licence, we ask you first.
 
-```text
-I have read the CLA Document and I hereby sign the CLA
-```
-
-Wait for the **CLA Assistant** check. It records signature comments from contributors; a checkbox or statement in the PR description does not satisfy the automated check. Maintainers should not merge PRs where a required contributor has not confirmed the CLA.
-
-**Website / other channels:** follow whatever acceptance flow that channel provides, or contact **info@openaccountants.com** for a formal signed agreement.
-
-If anything in [CLA.md](CLA.md) is unclear, ask before contributing.
+Contributions made before 6 November 2026 under the earlier [Contributor License Agreement](CLA.md) keep those terms.
 
 ## What you get
 
