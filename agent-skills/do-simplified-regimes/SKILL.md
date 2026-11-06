@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "DO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Miguel Lantigua, CPA"
   reviewed_by: "Miguel Lantigua"
-  trust_label: "Checked by Miguel Lantigua"
-  review_status: "current"
 ---
 
 # Dominican Republic Simplified Tax Regimes (RST)
@@ -26,24 +23,6 @@ metadata:
 - **Exención del pago de anticipos del ISR para contribuyentes RST** — ¿La normativa exime a los contribuyentes acogidos al RST del pago de anticipos del Impuesto Sobre la Renta? Evidencia: Constancia de acogimiento al RST; declaración RS1/RS2/RS3/RS4 sin determinación de anticipos.  _(Decreto 265-19 art. 10 lit. b (exención del pago de anticipos del ISR para contribuyentes RST); Guía DGII No. 16 RST — https://dgii.gov.do/legislacion/reglamentos/Documents/2019/Decreto-265-19.pdf; https://dgii.gov.do/publicacionesOficiales/bibliotecaVirtual/contribuyentes/rst/Documents/Guia%20de%20Regimen%20Simplificado%20de%20Tributacion%20(RST).pdf)_
 - **Exención del Impuesto sobre Activos para contribuyentes RST** — ¿La normativa exime a los contribuyentes acogidos al RST del pago del Impuesto sobre Activos, siempre que dichos activos estén relacionados con su actividad económica? Evidencia: Constancia de acogimiento al RST; relación de activos vinculados a la actividad económica.  _(Decreto 265-19 art. 10 lit. c (exención del Impuesto sobre Activos para contribuyentes RST); Guía DGII No. 16 RST — https://dgii.gov.do/legislacion/reglamentos/Documents/2019/Decreto-265-19.pdf; https://dgii.gov.do/publicacionesOficiales/bibliotecaVirtual/contribuyentes/rst/Documents/Guia%20de%20Regimen%20Simplificado%20de%20Tributacion%20(RST).pdf)_
 - **Exención de la remisión de formatos informativos (606, 607, 608) para contribuyentes RST** — ¿La normativa exime a los contribuyentes acogidos al RST de la remisión de los formatos informativos de envío de datos (606, 607, 608, entre otros) establecidos por la DGII para el régimen ordinario, respecto de sus operaciones cotidianas bajo el RST? Evidencia: Constancia de acogimiento al RST; declaración RS1/RS2/RS3/RS4 presentada en sustitución de envíos del régimen ordinario.  _(Decreto 265-19 art. 10 lit. a (exención del remisión de formatos informativos para contribuyentes RST); Guía DGII No. 16 RST — https://dgii.gov.do/legislacion/reglamentos/Documents/2019/Decreto-265-19.pdf; https://dgii.gov.do/publicacionesOficiales/bibliotecaVirtual/contribuyentes/rst/Documents/Guia%20de%20Regimen%20Simplificado%20de%20Tributacion%20(RST).pdf)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

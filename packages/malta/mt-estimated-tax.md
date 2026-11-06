@@ -1,26 +1,27 @@
 ---
 name: mt-estimated-tax
 description: 'Use this skill whenever asked about Malta provisional tax (estimated tax) for self-employed or self-occupied individuals. Trigger on phrases like "provisional tax Malta", "estimated tax", "PT instalments", "how much provisional tax do I pay", "20% 30% 50%", "April instalment", "August instalment", "December instalment", "PT benchmark", "PT reduction form", "refund of provisional tax", "Chapter 372", "ITMA article 42", or any question about Malta''s advance income tax payment obligations. Covers basis year 2026: the three-instalment schedule (20/30/50 on 30 April, 31 August, 21 December), the PT benchmark taken from the self-assessment two years earlier, first-year rules, the PT reduction form, interest of 0.6% a month on late payment, and settlement with the tax return by 30 June. ALWAYS read this skill before touching any Malta provisional tax work.'
-version: 2.1
+version: 2.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-11-04
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # MT Estimated Tax
 
-## Malta Provisional Tax (PT) -- Self-Employed Skill v2.1
-
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
+## Malta Provisional Tax (PT) -- Self-Employed Skill v2.3
 
 Tax year: basis year 2026 (year of assessment 2027). The PT benchmark for 2026 comes from the self-assessment for basis year 2024. Rates are in [malta-income-tax](malta-income-tax.md); rental income is in [mt-rental-income](mt-rental-income.md).
+
+## Year-specific filing override
+
+**Year-specific override, read 4 November 2026:** MTCA extended both manual and electronic individual returns for year of assessment 2026 (basis 2025), and the related tax payment, to **31 July 2026**. Use that actual date for late charges, not the general 30 June date. The statutory date for basis 2026 / assessment 2027 remains **30 June 2027** unless a later notice changes it. [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline).
 
 ## Section 1 -- Quick reference
 
@@ -37,7 +38,7 @@ Tax year: basis year 2026 (year of assessment 2027). The PT benchmark for 2026 c
 | Payment schedule | Three instalments: 20% by 30 April, 30% by 31 August, 50% by 21 December |
 | Computation basis | PT benchmark: the tax payable in the self-assessment for the basis year two years earlier, adding back the PT paid for that year (for 2026: basis year 2024, YA 2025). The Commissioner may set a higher benchmark by written notice |
 | Who pays | Every company; an individual liable to tax in Malta for the benchmark year of assessment, except one who could elect under Article 12 ITMA (no return) for that year; any other person that is not a company or an individual. The Commissioner can exempt by written notice (S.L. 372.18, rule 2(1)) |
-| First year of business | No PT; the tax for that year is paid with the return by 30 June of the next year |
+| New business | Test existing benchmark-year tax liability and any notice first. A business start alone does not create an exemption. With no benchmark liability and no overriding notice, no PT is due; settle the actual annual tax by its applicable return/payment date |
 | Late payment | Additional tax of 0.6% of the unpaid PT for each calendar month or part (S.L. 372.18, rule 14(1), for periods from 1 June 2022; MTCA pages say from 1 September 2022). Cut by 90% on the part of the benchmark above the tax the self-assessment shows. Stops at the tax settlement date |
 | Tax year | Basis year 2026 |
 | Review status | Source-cited draft: not reviewed by an accountant |
@@ -80,7 +81,7 @@ Tax year: basis year 2026 (year of assessment 2027). The PT benchmark for 2026 c
 
 ## Section 3 -- Payment pattern library
 
-This is the deterministic pre-classifier for bank statement transactions. When a debit matches a pattern below, classify it as a provisional tax payment. Do not second-guess.
+These patterns identify candidate transactions only. An MTCA/CFR payee, a YA reference or April/August/December timing does not prove PT: the same authority collects SSC and other taxes. Confirm the allocation/reference against the PT notice or tax account before including a payment. Unallocated debits remain unreconciled, not PT credits.
 
 ### 3.1 CFR provisional tax debits
 
@@ -88,10 +89,10 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| MTCA, CFR, COMMISSIONER FOR REVENUE | PT payment | Match with April/August/December timing to identify which instalment |
-| INLAND REVENUE MALTA | PT payment | Legacy name, same authority |
-| PROVISIONAL TAX, PROV TAX, PT PAYMENT | PT payment | Explicit description |
-| TAX INSTALMENT, TAX INST | PT payment | Generic instalment label |
+| MTCA, CFR, COMMISSIONER FOR REVENUE | Candidate PT; confirm allocation | Match with April/August/December timing to identify which instalment |
+| INLAND REVENUE MALTA | Candidate PT; confirm allocation | Legacy name, same authority |
+| PROVISIONAL TAX, PROV TAX, PT PAYMENT | Candidate PT; confirm allocation | Explicit description |
+| TAX INSTALMENT, TAX INST | Candidate PT; confirm allocation | Generic instalment label |
 
 ### 3.2 Timing-based identification
 
@@ -123,7 +124,7 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 | Reference pattern | Treatment | Notes |
 | --- | --- | --- |
 | PT followed by year (e.g., PT2025) | PT payment for that year | Common bank transfer reference format |
-| YA followed by year | PT payment for that year of assessment | Alternative reference format |
+| YA followed by year | Candidate tax payment; distinguish basis year from year of assessment and confirm PT allocation | Alternative reference format |
 | INSTALMENT 1, INSTALMENT 2, INSTALMENT 3 | PT payment, specific instalment | Self-identified |
 
 ## Section 4 -- Worked examples
@@ -218,7 +219,7 @@ expected:
 
 ### 5.3 First year and new businesses
 
-- **First year and new businesses**: In the first year of business there is no PT; the tax is paid with the return by 30 June of the following year. The benchmark year of assessment is the last one for which a return was due before 1 January of the year of the first instalment (S.L. 372.18, rule 2(1)). An individual whose business starts in 2025 files the first return for YA 2026 by 30 June 2026, so the first PT is for basis year 2027, on a benchmark from basis year 2025. The Commissioner may exempt a person, or set a benchmark, by written notice.  _(S.L. 372.18, rule 2(1); MTCA PT booklet Q2, Q11)_
+- **First year and new businesses**: For a new business, inspect the individual's existing benchmark-year tax liability and any Commissioner notice. There is no automatic first-business-year exemption if the individual was already a provisional taxpayer on other income. With no relevant benchmark liability or overriding notice, no PT is due; annual tax is settled by the applicable return/payment date. The benchmark year of assessment is the last one for which a return was due before 1 January of the year of the first instalment (S.L. 372.18, rule 2(1)). For an individual with no prior benchmark liability or overriding notice, a business starting in 2025 files its first return for YA 2026 by the extended 31 July 2026 date, so the first PT is for basis year 2027, on a benchmark from basis year 2025. The Commissioner may exempt a person, or set a benchmark, by written notice.  _(S.L. 372.18, rule 2(1); MTCA PT booklet Q2, Q11)_
 
 ### 5.4 Excluded income
 
@@ -250,7 +251,7 @@ expected:
 
 **EC1 -- No self-assessment for the benchmark year.** Client has been self-employed for 3 years but never filed a return. The benchmark is the tax in the Commissioner's estimated tax statement. Filing the return replaces it with the self-assessed figure. Flag for reviewer -- client must regularise filing history urgently.
 
-**EC2 -- Benchmark year resulted in zero tax.** Tax liability = EUR 0. PT = EUR 0. No instalments required. However, if current year income is expected to exceed the personal allowance, voluntary PT payments are prudent.
+**EC2 -- Benchmark year resulted in zero tax.** With no overriding Commissioner benchmark notice, tax liability = EUR 0 gives PT = EUR 0 and no instalments. However, if current year income is expected to exceed the personal allowance, voluntary PT payments are prudent.
 
 **EC3 -- Mid-year switch from employment to self-employment.** First year of self-employment. If the benchmark year had no return due (employment only, taxed under FSS), there is no PT benchmark yet. Tax on the self-employed income is settled with the return. Flag for reviewer.
 
@@ -260,7 +261,7 @@ expected:
 
 **EC6 -- Client ceases self-employment mid-year.** File a PT reduction form with the estimated tax for the year. The return reconciles the actual liability.
 
-**EC7 -- PT notice differs from client calculation.** The notice sets the benchmark. Pay the stated amount, or file a PT reduction form, and query separately. Paying less without a reduction form triggers interest on the shortfall.
+**EC7 -- PT notice differs from client calculation.** Reconcile the notice to the statutory benchmark and any written determination; do not treat an unexplained mismatch as resolved. Pay the stated amount, or file a PT reduction form, and query separately. Paying less without a reduction form triggers interest on the shortfall.
 
 **EC8 -- Foreign source income with DTR.** The benchmark is the tax payable in the benchmark-year self-assessment, which already reflects double taxation relief. Flag for reviewer to confirm DTR availability in the current year.
 
@@ -341,8 +342,6 @@ Before delivering output, verify:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Sources
 
 | Source | URL | Read on |
@@ -359,22 +358,16 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 Not yet confirmed: the start date of the 0.6% rate for PT (rule 14(1) says periods from 1 June 2022; MTCA pages say 1 September 2022; this does not change any 2026 figure); the 31 December refund date and refund interest, taken from the MTCA Tax Return Cycle page rather than Article 48 ITMA.
 
-> Contributed by Michael Cutajar.
+> OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
 
-<!-- openaccountants-cta-block -->
 
----
+### Correction source reads, 4 November 2026
 
-## Talk to a verified accountant
+Only the identified passages were read for this delta; historical source rows keep their prior dates and are not a blanket re-verification.
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+| Source and passage actually read | URL | Read on |
+|---|---|---|
+| Benchmark eligibility/fallback/reduction rules2,6,7,10 read | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-04 |
+| MTCA actual YA2026 filing/payment extension read | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Correction ledger and complete old-topic destinations: [personal-mt-estimated-tax](../../evidence/malta-deep-audit-20261104/ledgers/personal-mt-estimated-tax.md). Full original research is archived there; this correction is not professional attestation.

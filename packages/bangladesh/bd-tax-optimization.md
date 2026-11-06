@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: BD
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: tax-optimization
 ---
 
 # Bangladesh Tax Optimization (Self-Employed) — Skill v1.0
@@ -28,7 +29,6 @@ depends_on:
 | Currency | BDT (৳) |
 | Main levers | Investment tax rebate · file the return (avoid higher withholding + penalties) · ICT export cash incentive · allowable expense documentation |
 | Tax authority | National Board of Revenue (NBR) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — The levers (Tier 1)

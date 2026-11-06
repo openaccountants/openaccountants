@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland preliminary tax for self-assessed individuals, tax year 2026
@@ -188,24 +185,6 @@ expected:
 | DSP, PRSI Class S rates | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
 
 Not yet confirmed: (1) whether the 3 and 8 instalment minimums still apply in 2026 as a Collector-General condition under s.959AP(1)(b) after Finance Act 2025 s.100 removed them from the law (TDM 41-00-28, August 2026, still prints them; the October 2025 direct debit guidelines do not); (2) the exact commencement of Finance Act 2025 s.100 (Part 6 has no date of its own in s.107; taken as the date of passing, 23 December 2025); (3) amendments to ss.959AN to 959AP between Finance Act 2013 and Finance Act 2024, not read one by one (Revenue's Finance Act 2025 Notes for Guidance agree with the text used here); (4) the text of s.579(4)(b) on non-residents, not read; (5) whether s.1080 interest also runs on the late return surcharge; (6) the legal basis of the 10% LPT surcharge on the income tax liability (Revenue page only); (7) the S.I. for Budget 2027 or a Finance Bill 2026 change to preliminary tax, not read; (8) a minimum below which no preliminary tax is needed: none found in the law, so none is given. (9) where a direct debit payer fails every test, whether the s.959AP(5) deemed date of 31 October also sets the s.1080 interest start for debits actually collected in November and December (s.959AP(5) is stated to be for the purposes of s.959AO only); Example 2 avoids the point by ending the debits in October.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

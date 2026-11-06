@@ -3,11 +3,11 @@ name: amending-an-individual-income-tax-return-in-australia
 description: "Amend an Australian individual income tax assessment: establish the time limit, reconcile corrections, lodge the request and check interest and penalties."
 jurisdiction: AU
 last_updated: 2026-09-08
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
+domain: income-tax
 ---
 
 # Amending an individual income tax return in Australia
@@ -55,21 +55,3 @@ Voluntary disclosure can reduce penalties, but does not guarantee that tax, inte
 When the amended assessment arrives, compare it with the submitted reconciliation. Check the tax difference, interest, penalties, credits, payment date and any effect on later returns. Retain the assessment and the evidence supporting each corrected figure.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

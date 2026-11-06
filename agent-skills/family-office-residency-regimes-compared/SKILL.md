@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "general"
   tax_year: "2026"
   last_updated: "2026-10-12"
-  authored_by: "Michael Cutajar, CPA, ACCA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
 ---
 
 # Residency regimes for wealthy families compared: Malta, Italy, Portugal, Switzerland, UAE, Singapore, UK, Ireland and Cyprus
@@ -252,24 +249,6 @@ The 2026 reform keeps the non-dom status and adds an option (new article 3D of t
 - Cyprus: [Tax Department, tax residency and domicile](https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/); [Tax Department, SDC presentation 2026](https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf); [Application form, article 3D](https://www.gov.cy/media/sites/167/2026/06/Application-Extension-of-Non-Dom.pdf)
 
 This Guide is a reference for professional advisers. It is not advice for any particular family. Tax law changes; check each source before acting.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

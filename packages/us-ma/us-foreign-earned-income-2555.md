@@ -4,11 +4,11 @@ description: Tier 2 US federal content skill for §911 Foreign Earned Income Exc
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: James Wallach
-review_status: current
-trust_label: Checked by James Wallach
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Wallach"
+reviewed_on: 2026-11-03
+tier: 1
+domain: cross-border
 ---
 
 # US Foreign Earned Income 2555
@@ -523,21 +523,3 @@ Tax-Court / case law (selected):
 Skill author's note: Every numeric figure in this skill (the $130,000 cap, the 16% base, the 30% cap, the locality figures, the bracket amounts) MUST be verified against the IRS-published 2025 instructions and the successor to Notice 2024-44 before any return is filed. Inflation indexing and locality updates are published annually; this skill captures the 2025 expected values but the reviewer overrides on any discrepancy.
 
 End of skill.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

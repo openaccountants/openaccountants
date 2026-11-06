@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "US-GA"
   tax_year: "2025"
   last_updated: "2026-08-10"
-  authored_by: "Jeff Watts"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  reviewed_by: "Jeff Watts"
 ---
 
 # Georgia Corporate Income Tax Returns (Form 600)
@@ -87,24 +85,6 @@ E-file and payment portal documentation: citation to confirm
 State tax authority — corporate income tax pages: citation to confirm Form 600 instructions, current year: citation to confirm State statute / regulations on corporate income and net worth tax: citation to confirm E-file and payment portal documentation: citation to confirm
 
 > Contributed by Jeff Watts, ACF-04080.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

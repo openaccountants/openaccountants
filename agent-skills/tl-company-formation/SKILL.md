@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TL"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Timor-Leste Company Formation & Entity Choice
@@ -30,24 +28,6 @@ Business registration in Timor-Leste is centralised through SERVE, I.P. (Serviç
 - **Tax identification number** — Businesses must obtain a Tax Identification Number (TIN) from the Timor-Leste Tax Authority before trading  _([Taxes and Duties Act (Law No. 8/2008)](https://attl.gov.tl/))_
 - **Core annual compliance — CIT return** — File annual corporate income tax return by the last day of the third month after year-end  _([Taxes and Duties Act (Law No. 8/2008)](https://taxsummaries.pwc.com/timor-leste/corporate/tax-administration))_
 - **Core annual compliance — monthly returns** — Monthly WIT, services tax, sales tax and withholding tax returns filed by the 15th of the following month  _([Taxes and Duties Act (Law No. 8/2008)](https://taxsummaries.pwc.com/timor-leste/corporate/tax-administration))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

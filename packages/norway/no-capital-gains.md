@@ -5,12 +5,10 @@ version: 1.0
 jurisdiction: "NO"
 tax_year: 2026
 last_updated: 2026-09-25
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Norway capital gains — individual investment method
@@ -159,21 +157,3 @@ Official guidance retrieved 24 and 25 September 2026. Rates are tied to income y
 - [Purchase](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/digital-currency/purchases/)
 - [Report](https://www.skatteetaten.no/en/forms/the-shareholders-tax-report/)
 - [Return](https://www.skatteetaten.no/en/person/taxes/tax-return/tax-return-person/)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

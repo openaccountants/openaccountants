@@ -8,17 +8,14 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "RILIA PUTRI, CA, CPA"
   reviewed_by: "RILIA PUTRI"
-  trust_label: "Checked by RILIA PUTRI"
-  review_status: "current"
 ---
 
 # ID Formation
 
 ## Indonesia Company Formation Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -323,24 +320,6 @@ Where a specific monetary threshold or sectoral capital floor is uncertain at th
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice under Indonesian law. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified Indonesian advokat, konsultan pajak, or notaris before acting upon. Foreign founders should additionally engage immigration counsel for KITAS / RPTKA matters, which are out of scope.
 
 The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

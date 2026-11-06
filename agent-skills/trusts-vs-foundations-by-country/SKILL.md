@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "general"
   tax_year: "2026"
   last_updated: "2026-10-05"
-  authored_by: "Michael Cutajar, CPA, ACCA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
 ---
 
 # Trusts versus foundations for family wealth, compared by country
@@ -245,24 +242,6 @@ For foreign trusts, "a U.S. person who is treated as the owner of a foreign trus
 - Cyprus: [CySEC CyTBOR Q&A](https://www.cysec.gov.cy/CMSPages/GetFile.aspx?guid=90c7427d-da2c-40d7-981f-0a52877b9155)
 - United States: [26 U.S.C. 671, LII mirror](https://www.law.cornell.edu/uscode/text/26/671); [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [IRS foreign trust page](https://www.irs.gov/businesses/international-businesses/foreign-trust-reporting-requirements-and-tax-consequences)
 - Ireland: [DTT overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/discretionary-trust-tax/index.aspx); [initial charge](https://www.revenue.ie/en/gains-gifts-and-inheritance/discretionary-trust-tax/initial-once-off-6-charge.aspx); [annual charge](https://www.revenue.ie/en/gains-gifts-and-inheritance/discretionary-trust-tax/annual-1-charge.aspx); [exemptions](https://www.revenue.ie/en/gains-gifts-and-inheritance/discretionary-trust-tax/exemptions-from-dtt.aspx); [CRBOT](https://www.revenue.ie/en/crbot/trusts-that-must-register/index.aspx); [What do you pay CAT on?](https://www.revenue.ie/en/gains-gifts-and-inheritance/gift-and-inheritance-tax-cat/what-do-you-pay-cat-on.aspx)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

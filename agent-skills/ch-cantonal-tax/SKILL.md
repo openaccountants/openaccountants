@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ch-cantonal-tax"
   jurisdiction: "CH"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Switzerland: cantonal and communal income and wealth tax (2026)
@@ -298,26 +296,6 @@ The edge case: Zug's city multiplier was 52.11% in 2025 (54% less a 3.5% rebate)
 
 Not yet confirmed: the 2026 filing dates for Zug, Basel-Stadt and Bern (only the 2025-return dates were published; the rules suggest 30 April, 31 March and 15 March / 15 May 2027); filing dates for the other 20 cantons; the 2026 multipliers of Solothurn, Appenzell Innerrhoden and other communes not in the tables; whether Basel-Stadt and Bern indexed any deduction for 2026 beyond the amounts shown in the February 2026 Kantonsblätter; the Geneva, Vaud, Bern and Basel-Stadt 2026 income tariffs (not worked here); the Vaud commuting rules beyond the flat rates; due dates, instalments and interest rates outside Zurich; the Zurich rule for church tax when someone leaves the church during the year; ESTV footnote detail for Basel-Landschaft church tax and the Geneva 12% deduction.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ch-cantonal-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ch-cantonal-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ch-cantonal-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ch-cantonal-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

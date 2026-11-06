@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "AM"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Armenia individual income tax preparation v0.4
@@ -298,24 +296,6 @@ Read on **24 October 2026**: targeted current Armenian Articles 20, 25, 140–15
 **Not yet confirmed:** actual electronic handling of the stated entrepreneur rate/form and personal settlement-sign discrepancies. The ordinary social-expense, mortgage and dividend-reinvestment refund methods are supplied above. No live taxpayer return was accessed; this does not substitute for the statutory method or independent review.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

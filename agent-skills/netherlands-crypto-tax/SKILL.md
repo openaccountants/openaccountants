@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "NL"
   tax_year: "2026"
   last_updated: "2026-09-28"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Netherlands crypto and digital assets: classification, valuation and income tax
@@ -169,24 +166,6 @@ DAC8 requires crypto service providers to report client and transaction data fro
 Return the tax year, ownership/residence scope, classification reasoning, complete asset inventory, ordinary calculation, actual-return comparison or missing evidence, partner allocation, rounding, assumptions, source URLs and required referrals. Label a partial calculation as partial and keep any provisional 2026 parameters visible. Do not present a source review as an accountant's attestation.
 
 Sources: [crypto return fields](https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/aangifte-doen-en-belasting-betalen-met-cryptos), [DAC8 summary](https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/cryptovaluta), [retention guidance](https://www.rijksoverheid.nl/vraag-en-antwoord/inkomstenbelasting/hoe-lang-moet-ik-mijn-financiele-administratie-bewaren).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

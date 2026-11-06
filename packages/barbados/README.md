@@ -7,14 +7,15 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `barbados-vat.md`
-4. `bb-company-formation.md`
-5. `bb-corporate-income-tax.md`
-6. `bb-income-tax.md`
-7. `bb-payroll-social.md`
-8. `bb-tax-overview.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `barbados-vat.md`
+5. `bb-company-formation.md`
+6. `bb-corporate-income-tax.md`
+7. `bb-income-tax.md`
+8. `bb-payroll-social.md`
+9. `bb-tax-overview.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

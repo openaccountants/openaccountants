@@ -1,27 +1,24 @@
 ---
 name: poland-vat-return
 description: "Polish VAT (podatek od towarów i usług) for tax year 2026: who must register, the 23%, 8%, 5% and 0% rates, the small-business exemption of PLN 240,000 (raised from PLN 200,000 on 1 January 2026) and the EU SME scheme, the JPK_V7M and JPK_V7K files due on the 25th, refunds in 40 days, KSeF structured e-invoicing (mandatory from 1 February 2026 for businesses with 2024 sales over PLN 200 million, from 1 April 2026 for the rest, with a PLN 10,000 a month carve-out to the end of 2026), split payment above PLN 15,000 for Annex 15 goods, the white list, reverse charge, the 30% additional liability and 10.50% late interest. Trigger on: Polish VAT, JPK_V7, KSeF, zwolnienie podmiotowe, MPP, biała lista, VAT-R. Out of scope: KSeF schema detail (poland-einvoice), income tax (pl-income-tax, pl-cit-corporate-tax), cross-border income (pl-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-23
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-10-31
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: vat-gst
 ---
 
 # Poland VAT return (2026)
-
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
 
 This skill covers Polish VAT for a business registered in Poland: when to register, the rates, the monthly or quarterly JPK_V7 file, KSeF e-invoicing, split payment and the white list. It links to the other Poland skills and does not repeat them:
 
 - [poland-einvoice](poland-einvoice.md): the FA(3) structured invoice, KSeF access, offline modes.
 - [pl-income-tax](pl-income-tax.md) and [pl-cit-corporate-tax](pl-cit-corporate-tax.md): income tax of sole traders and companies, including the cost rules tied to the white list.
 - [pl-cross-border](pl-cross-border.md): income tax for people moving in or out of Poland.
-- EU rules on place of supply, intra-EU supplies and OSS are in [eu-vat-directive](../eu/eu-vat-directive.md); the general return workflow is in [vat-workflow-base](../../foundation/vat-workflow-base.md).
+- EU rules on place of supply, intra-EU supplies and OSS are in [eu-vat-directive](../eu/eu-vat-directive.md); the general return workflow is in [vat-workflow-base](../foundation/vat-workflow-base.md).
 
 **Which text of the law.** VAT Act (ustawa z dnia 11 marca 2004 r. o podatku od towarów i usług), consolidated text Dz.U. 2026 poz. 1263, the law as at 26 August 2026. The next amendment, Dz.U. 2026 poz. 1270, takes effect on 1 January 2027 and is not covered here. Tax Ordinance, Dz.U. 2026 poz. 622.
 
@@ -189,23 +186,3 @@ expected:
 | NBP EUR mid rate of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
 
 Not yet confirmed: the PLN 8,517,000 small-taxpayer limit is computed here from the NBP rate; the Ministry page states the EUR 2,000,000 rule but no PLN figure. The CIT Act article on split payment and the white list (art. 15d) was not re-read for this version. When a business that has lost the small-business exemption must have filed VAT-R (before the crossing sale or before the next one) was not settled from the text of art. 96. The date the EU SME scheme (art. 113a-113b) first applied is not given in the consolidated text.
-
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

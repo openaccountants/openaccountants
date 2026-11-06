@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "LT"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Lithuania: VAT (2026) v2.2
@@ -190,24 +188,6 @@ expected:
 Not yet confirmed: how VAT is computed on a supply that crossed the EUR 45,000 limit where the price was agreed without VAT and cannot be increased (on top of, or within, the price); the rate for accommodation booked and paid in 2025 but supplied in 2026 (VMI answer KM3670, title only read); the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing FR0600, FR0564 or i.SAF late (Code of Administrative Offences, not read); the Government list of extra domestic reverse charge cases under art. 96(1)(4); the exemptions in art. 20 to 40 and the zero-rate evidence rules (not read in detail); the OSS and IOSS rules and the EUR 10,000 distance sales limit; VAT refunds to foreign businesses (art. 116 to 119); and the PVMĮ version in force from 1 January 2027 (law XV-1036 of 18 June 2026 changes art. 78, 88-1 and others from 2027; not read in detail).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

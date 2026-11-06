@@ -7,14 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pl-zus-contributions"
   jurisdiction: "PL"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Poland: ZUS and health contributions for the self-employed (2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
 This skill covers what a sole trader in Poland pays to ZUS on themself in 2026: the social contributions (pension, disability, sickness, accident), the Labour Fund (Fundusz Pracy, FP) and Solidarity Fund (Fundusz Solidarnościowy, FS), and the health contribution (składka zdrowotna). It links to the other Poland skills and does not repeat them:
 
@@ -198,26 +194,6 @@ expected:
 
 Not yet confirmed: the minimum wage regulation (Dz.U. 2025 poz. 1242) is an image-only PDF, so PLN 4,806 is taken from zus.pl, not from the regulation text. The 1.67% accident rate applies to payers with up to 9 insured persons; others use their own rate from the Accident Insurance Act.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pl-zus-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pl-zus-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pl-zus-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pl-zus-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

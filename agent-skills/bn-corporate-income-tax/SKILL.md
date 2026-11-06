@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BN"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Brunei Corporate Income Tax
@@ -34,24 +32,6 @@ Brunei's standard corporate income tax rate is 18.5% for resident and non-reside
 - **Estimated Chargeable Income (ECI) deadline** — Within 3 months after the end of the accounting period  _(Income Tax Act (Cap. 35) — https://taxsummaries.pwc.com/brunei-darussalam/corporate/tax-administration)_
 - **Corporate return filing and payment deadline** — Return filed and tax paid by 30 June of the year of assessment  _(Income Tax Act (Cap. 35) — https://taxsummaries.pwc.com/brunei-darussalam/corporate/tax-administration)_
 - **Late payment penalty** — 5% penalty on unpaid tax, plus an additional 1% per month if unpaid after 60 days, capped at 12% additional (approx — confirm)  _(Income Tax Act (Cap. 35) — https://taxsummaries.pwc.com/brunei-darussalam/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

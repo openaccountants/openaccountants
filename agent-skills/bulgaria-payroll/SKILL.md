@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "BG"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Bulgaria payroll (2026)
@@ -205,24 +203,6 @@ expected:
 Not yet confirmed: the amending ДВ issues of Ordinance N-13 were not read on dv.parliament.bg (the consolidated text used is a secondary consolidation; arts. 4(1)(1)(a), 4(3)(1), 4(3)(5) and 9(5) read the same in the original 2020 text); the NRA's own 2026 payroll guidance (nra.bg served a human check, so it was not read); the statutory late-payment interest rate after the euro changeover; the minimum wage for 2027 (no decree had been published when this was read).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

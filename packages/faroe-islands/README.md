@@ -7,12 +7,21 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `fo-company-registration-reporting.md`
-4. `fo-cross-border-payments.md`
-5. `fo-individual-income-tax.md`
-6. `fo-payroll-contributions.md`
-7. `fo-vat.md`
-8. `payroll-workflow-base.md`
+3. `README.md`
+4. `fo-company-registration-reporting.md`
+5. `fo-corporate-income-tax.md`
+6. `fo-country-by-country-reporting.md`
+7. `fo-cross-border-payments.md`
+8. `fo-estate-income-tax.md`
+9. `fo-individual-income-tax.md`
+10. `fo-inheritance-duty.md`
+11. `fo-payroll-contributions.md`
+12. `fo-payroll-levy.md`
+13. `fo-property-transfer-registration.md`
+14. `fo-transfer-pricing.md`
+15. `fo-vat.md`
+16. `payroll-workflow-base.md`
+17. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

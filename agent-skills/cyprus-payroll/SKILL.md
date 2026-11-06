@@ -8,14 +8,9 @@ metadata:
   jurisdiction: "CY"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Cyprus payroll: PAYE and employer contributions (tax year 2026)
-
-Source-cited draft: not reviewed by an accountant, not for filing.
 
 This skill covers running payroll for employees in Cyprus in 2026: income tax withheld under PAYE, the employee's Social Insurance and GHS (GESY) contributions the employer deducts, the employer's own contributions and funds, the minimum wage, and the employer's returns and deadlines. The tax year is the calendar year. The 2026 tax reform (Law 244(I)/2025, in force 1 January 2026) applies to every 2026 pay period. Article numbers are to the Greek consolidated texts on CyLaw, which is not the official gazette.
 
@@ -209,24 +204,6 @@ expected:
 | Ministry of Labour, minimum wage statement (27 December 2025) | https://www.gov.cy/ergasia-kai-koinonikes-asfaliseis/dilosi-tou-ypourgou-ergasias-kai-koinonikon-asfaliseon-gia-tin-afxisi-tou-ethnikou-katotatou-misthou/ | 2026-10-26 |
 
 Not yet confirmed: the extended deadline for the 2025 annual PAYE return (T.D.7; reported as 30 November 2026 by secondary sources, not shown on the Tax Department deadlines calendar read); the instrument that sets 8.8% / 8.8% / 5.2% in place of the 8.9% / 8.9% / 5.3% printed in Social Insurance Law art. 5(1)(στ) (the actuarial-study proviso; the Order was not found on CyLaw); the Minimum Wage (Amending) Order of 2025 itself (only the ministry statement was read); whether the employer may apply the 25% art. 8(21B) exemption through PAYE; the 13 divisor reading for a thirteenth salary (the form says only "accordingly"); how the monthly ceiling applies in a month in which a thirteenth salary is paid; the Central Holiday Fund rate above 40 days of leave ("increased accordingly"); that the employer may issue the T.D.63 on the Tax Department's template or its own with the same details (v0.1, T.D.63 page, not re-read); the bank-statement pattern library, payslip glossary, Excel working-paper template and onboarding checklist from v0.1 (practice notes, not law, not carried).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

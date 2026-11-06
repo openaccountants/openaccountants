@@ -5,13 +5,12 @@ version: 1.0
 jurisdiction: MX
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - mx-freelance-intake
 category: orchestrator
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # MX Return Assembly
@@ -33,7 +32,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing portal | sat.gob.mx -- Declaraciones |
 | Filing deadline | April 30 of following year (personas físicas) |
 | Required credential | e.firma (FIEL) or Contraseña SAT |
-| Validated by | Pending — requires sign-off by a Mexican Contador Público |
 | Skill version | 1.0 |
 
 ### ISR Annual Table -- Actividad Empresarial y Profesional (Art. 152 LISR, 2025)
@@ -317,23 +315,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Contador Público Certificado, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 ## Section 2 -- Assembly Workflow
 
 0. **Data Gathering** — Download CFDI emitidos/recibidos, bank statements, acuses, constancias, IMSS receipts, prior year return
@@ -373,21 +354,3 @@ also see the full list of verified accountants at
 ## Section 5 -- Filing Procedure
 
 0. **Filing Procedure** — Complete pre-filing checklist and file via SAT portal
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -7,15 +7,16 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `pe-company-formation.md`
-4. `pe-corporate-income-tax.md`
-5. `pe-tax-overview.md`
-6. `peru-igv.md`
-7. `peru-income-tax.md`
-8. `peru-payroll.md`
-9. `peru-social-contributions.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+3. `README.md`
+4. `pe-company-formation.md`
+5. `pe-corporate-income-tax.md`
+6. `pe-tax-overview.md`
+7. `peru-igv.md`
+8. `peru-income-tax.md`
+9. `peru-payroll.md`
+10. `peru-social-contributions.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## How to use
 

@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/myanmar-company-formation-entity-choice"
   jurisdiction: "MM"
   tax_year: "2025"
-  last_updated: "2026-08-22"
-  authored_by: "Mr Moe Lwin Tun"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Myanmar Company Formation & Entity Choice
@@ -33,28 +30,8 @@ Companies are incorporated under the Myanmar Companies Law 2017 and registered o
 
 ## Sources
 
-https://mm.linkedin.com/in/mr-moe-lwin-tun-johndoe-john-smith-2b649b428
-
-> Contributed by Mr Moe Lwin Tun, CPA-123456.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+> Contributed by Mr Moe Lwin Tun.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-08-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `myanmar-company-formation-entity-choice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/myanmar-company-formation-entity-choice. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `myanmar-company-formation-entity-choice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/myanmar-company-formation-entity-choice. If neither is available, confirm every figure against the official source pages cited above before relying on it.

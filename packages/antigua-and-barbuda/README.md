@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ag-abst.md`
-4. `ag-medical-benefits.md`
-5. `ag-social-security.md`
+3. `README.md`
+4. `ag-abst.md`
+5. `ag-medical-benefits.md`
+6. `ag-social-security.md`
 
 ## How to use
 

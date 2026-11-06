@@ -1,18 +1,16 @@
 ---
 name: mt-crypto-tax
 description: Use this skill whenever asked about Malta cryptocurrency or digital asset taxation. Trigger on phrases like "crypto tax Malta", "Bitcoin Malta", "DLT assets", "cryptocurrency gains", "crypto income Malta", "Binance Malta tax", "staking Malta", "mining income Malta", "NFT tax Malta", "Coinbase Malta", "Revolut crypto Malta", "token tax", "distributed ledger", "MFSA crypto", "DAC8", or any question about the income tax, capital gains, or VAT treatment of cryptocurrency, tokens, or digital assets for Malta tax residents or Malta-source crypto income. Covers the CfR DLT asset guidelines, classification of coins/tokens, trading vs investment distinction, VAT treatment, and DAC8 reporting. ALWAYS read this skill before touching any Malta crypto work.
-version: 1.0
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-11-04
 depends_on:
   - malta-income-tax
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: crypto
 ---
 
 # Malta tax on crypto-assets: income tax, capital gains, VAT and duty for individuals and companies
@@ -26,7 +24,7 @@ This skill covers how Malta taxes coins, tokens and other crypto-assets (the Com
 
 **How the law is built.** The Income Tax Act has no crypto-specific rule. Crypto is taxed through the general rules: trading income under article 4(1)(a), other income under article 4(1), and capital gains only on the assets listed in article 5. The Commissioner has published guidelines on the income tax, VAT and duty treatment of DLT assets. Under article 96(2), published guidelines "shall have the same effect as the rules" as long as they do not conflict with the Act.
 
-**What we could not check.** The guidelines sit on mtca.gov.mt, which refused our automated source checks on 25 September 2026. So this skill sources every figure from the Laws of Malta (legislation.mt). Anything that rests only on the guidelines (the exact coin/utility/financial token definitions, the guideline dates, and the VAT and duty positions on specific crypto transactions) is marked **"check on mtca.gov.mt"**. Do not quote guideline wording from memory.
+**Primary guidance read 4 November 2026.** The [MTCA income-tax DLT guidelines](https://mtca.gov.mt/docs/default-source/documents/guidelines--dlts-income-tax.pdf?sfvrsn=c74e28fc_1) were fetched and read: asset classification, market valuation, ordinary income recognition, coins, and token/securities analysis. The 2018 income-tax guidance does not itself settle every modern DeFi receipt, source/situs issue, or specific VAT/duty position. Unverified branches below remain held rather than automatically taxable.
 
 **Companion Skills.** For rate tables in full, residence rules, provisional tax, interest and penalties, use the Malta income tax Guide (malta-income-tax). For registration, returns and input tax, use the Malta VAT return Guide (malta-vat-return).
 
@@ -49,9 +47,9 @@ This skill covers how Malta taxes coins, tokens and other crypto-assets (the Com
 
 1. **Fix the taxpayer and the year.** For an individual, the basis year is the calendar year; add one for the year of assessment. A company uses its accounting period.
 2. **Build the ledger.** Every acquisition and disposal, in euro at the date of the transaction, with fees. Take out transfers between the client's own wallets and exchanges; they are not disposals.
-3. **Classify each asset.** Is it "securities" as defined in article 5 of the Act (shares and similar instruments that share in profits with a return not limited to a fixed rate, or units in a collective investment scheme)? If yes, its disposal can be a capital gain under article 5. Coins and utility tokens are not in the article 5 list. The Commissioner's coin/utility/financial/hybrid labels come from the guidelines: check on mtca.gov.mt.
+3. **Classify each asset.** Is it "securities" as defined in article 5 of the Act (shares and similar instruments that share in profits with a return not limited to a fixed rate, or units in a collective investment scheme)? If yes, its disposal can be a capital gain under article 5. Coins and utility tokens are not in the article 5 list. The Commissioner's labels and their contextual limits were checked in the official DLT income-tax guidance on 4 November 2026.
 4. **Decide trading or capital for each disposal.** If the client trades, or bought "for the purpose of profit-making by sale", the profit is income under article 4(1)(a). Otherwise a gain on a coin or utility token is a capital gain outside article 5, and the Act does not tax it.
-5. **Tax other receipts.** Mining, staking, lending, rewards and crypto received for work are income when received, at euro market value, under article 4(1)(a) if it is a business, or otherwise the head the Commissioner applies (check).
+5. **Tax other receipts.** Determine the applicable income head and recognition event before valuing any mining, staking, lending, reward or work payment. Crypto does not create a cash basis: ordinary revenue-recognition rules continue, so accrued business fees cannot universally be delayed until wallet receipt. Unsettled receipt classes remain on HOLD pending specific authority.
 6. **Apply residence rules.** A non-dom or not-ordinarily-resident individual is taxed on foreign income only when received in Malta, and never on foreign capital gains. Then test the €5,000 minimum tax ([ITA art. 4(1) and 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
 7. **Compute the tax.** Individuals: add crypto income to other chargeable income and apply the rate table. Companies: 35% of chargeable income ([ITA art. 56(6)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
 8. **Check VAT and duty.** Is any supply taxable (goods or services paid in crypto, NFTs, services to identified customers)? Was any share-type token transferred?
@@ -91,7 +89,7 @@ Married (joint), parent and the new qualifying-child tables have different bands
 
 A crypto-asset that is not in that list is outside article 5. Its disposal is taxed only if the profit is income, mainly trading income under article 4(1)(a).
 
-**The Commissioner's labels** (from the DLT guidelines; the definitions and wording are to check on mtca.gov.mt):
+**The Commissioner's labels** (official DLT income-tax guidance, read 4 November 2026; categorisation does not override purpose and context):
 
 | Label | Typical example | Article 5 capital gains? | Trading profit taxable? |
 | --- | --- | --- | --- |
@@ -100,7 +98,7 @@ A crypto-asset that is not in that list is outside article 5. Its disposal is ta
 | Financial token | Shares in profits like a share, or pays a return like a bond or fund unit | Yes, if it meets the "securities" definition | Yes, under art. 4(1)(a) if dealt in |
 | Hybrid token | Starts as utility, later gains profit rights | Treat by its features at the time of transfer; check | Yes, under art. 4(1)(a) |
 
-A token that pays only a fixed return does not meet the "securities" wording ("not limited to a fixed rate of return"). Its non-trading gain is then outside article 5. Check the guideline treatment before relying on this.
+A share-like instrument whose return is limited to a fixed rate does not meet that profit-participation limb merely through its fixed return. **Still test the separate collective-investment-scheme unit and linked long-term insurance unit alternatives** in the article 5 definition and the official DLT guideline. A fixed-return label alone does not establish that a token is outside article 5. Hold the actual token classification until its rights and every relevant statutory alternative have been checked.
 
 **Listed shares.** Article 5(6)(b) takes out of the capital gains rule any "transfer of shares listed, or in consequence of a listing, on a stock exchange recognised by the Commissioner for the purpose of this provision not being securities in a collective investment scheme". Whether a crypto trading venue is a recognised stock exchange: check.
 
@@ -129,7 +127,7 @@ There is no bright-line test in the Act. Weigh the facts:
 
 **Working default.** When the facts are unclear, treat the profit as taxable income and tell the client why. This is a prudent default, not a rule of law; a well-documented investment position can be defended.
 
-**What the Act does not do.** A genuine capital gain on a coin or utility token held as an investment is not in article 5, so it is not taxed. The guidelines take the same line on coins held as investments (check on mtca.gov.mt).
+**What the Act does not do.** A genuine capital gain on a coin or utility token held as an investment is not in article 5, so it is not taxed. The official guidance confirms coins fall outside capital-gains taxation; trading/revenue-account profit remains income.
 
 ## Other crypto receipts ([Income Tax Act art. 4(1)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
@@ -137,25 +135,25 @@ The Act has no specific rules for these. The treatments below follow the general
 
 | Receipt | Working treatment | Status |
 | --- | --- | --- |
-| Crypto received as salary or fees | Income at euro market value when received: employment under art. 4(1)(b), or business under art. 4(1)(a) | Statute |
+| Crypto received as salary or fees | Employment under art. 4(1)(b), or business under art. 4(1)(a); apply ordinary recognition timing, then market value at the relevant event | Statute |
 | Selling goods or services for crypto | Business income at the euro value of the crypto received; later disposal of the crypto is a separate event | Statute |
-| Mining as a business (organised, for profit) | Business income under art. 4(1)(a), at market value when received; costs deductible if wholly and exclusively incurred | Statute; valuation check |
-| Hobby-scale mining | Income at market value when received is the prudent view | Check |
-| Staking and validator rewards | Income at market value when received; art. 4(1)(a) if a business, otherwise the head the Commissioner applies | Check |
-| Lending interest (DeFi or platform) | Income when received; whether it is "interest" under art. 4(1)(c) or other income | Check |
+| Mining as a business (organised, for profit) | Revenue-account mining profit is income under art. 4(1)(a); apply ordinary recognition/valuation and allowable costs, not an assumed universal cash basis | Official DLT income-tax guidance; ordinary recognition and market valuation |
+| Hobby-scale mining | HOLD: whether a receipt is income and its recognition event are not verified | Unverified |
+| Staking and validator rewards | HOLD: classify the arrangement and verify recognition before taxing any reward | Unverified |
+| Lending interest (DeFi or platform) | HOLD: confirm whether interest or another income head, source and recognition apply | Unverified |
 | Airdrops | Taxable if received for doing something (a service or task); a purely gratuitous airdrop may not be income | Check |
-| Hard fork coins | Cost of the original coin unchanged; new coin has nil cost; disposal classified like any other | Check |
-| Liquidity pools | Adding to a pool may be a disposal; LP tokens get a new cost; impermanent loss is not a recognised deduction | Check; evolving |
+| Hard fork coins | HOLD: entitlement, recognition and acquisition basis not verified; do not automatically assign nil cost | Unverified |
+| Liquidity pools | HOLD: ownership/disposal, token basis and any loss deduction require specific analysis; no categorical impermanent-loss conclusion is verified | Unverified |
 | NFTs bought and sold | Disposal of an asset; taxable if trading or bought to resell | Statute |
 | NFTs created and sold by the artist | Business income | Statute |
 
-Whatever is taxed on receipt becomes the cost of that crypto for any later disposal.
+Record the amount already brought into taxable income as part of the acquisition-cost analysis, with evidence of the actual recognition event; do not invent a basis for an unclassified or untaxed receipt.
 
 ## Cost, ledger and records ([Income Tax Management Act art. 19](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b))
 
 - **Cost** is the euro price at the acquisition date, plus exchange fees and commissions, plus network (gas) fees directly attributable to the acquisition. Disposal fees reduce the proceeds.
-- **Matching method.** First in, first out is the common working method. Specific identification is acceptable if clearly documented. The Act prescribes no method; whether the Commissioner accepts others: check. Use one method consistently.
-- **Not disposals:** transfers between the client's own wallets or exchanges. Wrapping (ETH to WETH) is generally treated as no change of ownership; check.
+- **Matching method.** HOLD: this audit has not verified authority acceptance of FIFO, specific identification or another matching method for the actual arrangement. Preserve transaction-level acquisition evidence and obtain a supported method before finalising gains.
+- **Not disposals:** transfers between the client's own wallets or exchanges. Wrapping (ETH to WETH): HOLD pending verification of rights and beneficial ownership; do not assume it is equivalent to an own-wallet transfer.
 - **Disposals:** crypto-to-fiat, crypto-to-crypto swaps (including into a stablecoin, even if the gain is small), and spending crypto on goods or services.
 - **Unknown cost: stop.** Do not compute a gain without the acquisition cost.
 - **Records.** A person carrying on a trade or business must keep "proper and sufficient records of his income and expenditure" ([ITMA art. 19(1)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b)). They must be kept "for a period of not less than nine years after the completion of the transactions" (art. 19(5)). Keep exchange CSV exports, wallet addresses, on-chain links, the matching ledger, and staking or mining logs. The burden of proving cost and classification is on the client in practice.
@@ -227,7 +225,7 @@ The VAT Act has no crypto-specific rule. The Maltese exemption for money is Fift
 | Loss on a coin held as an investment | No relief | Outside art. 5; art. 5(10) losses cover only art. 5 assets |
 | Trading loss | Business loss rules apply (see malta-income-tax) | Art. 4(1)(a) and 14 |
 | Token that shares in profits with no fixed cap on return | Art. 5 "securities": capital gain even if held as investment | Art. 5(1) definition |
-| Token paying only a fixed return | Not "securities" (return "limited to a fixed rate"); non-trading gain not taxed; income it pays is taxed | Art. 5(1) definition; check guideline |
+| Token described as paying a fixed return | Fixed return alone fails the share-like profit-participation limb, but does not exclude the separate CIS/linked-insurance unit alternatives; HOLD until all rights and definition limbs are checked | Art. 5(1); official DLT income-tax guidance |
 | Listed shares (not fund units) on a recognised exchange | Outside the capital gains rule | Art. 5(6)(b) |
 | Non-dom, foreign crypto income kept abroad | Not taxed unless received in Malta; minimum tax test at €35,000 | Art. 4(1) proviso (i); art. 56(27) |
 | Non-dom whose spouse is ordinarily resident and domiciled in Malta | Taxed on worldwide income | Art. 4(1) provisos do not apply |
@@ -253,7 +251,7 @@ All cases are hypothetical. Individuals are resident, ordinarily resident and do
 - If the client actually bought to resell at a profit, the gain is income and goes into the return. Record the evidence for the capital view (purchase notes, holding pattern, no leverage).
 
 **Case 3: staking rewards on top of a salary (basis year 2026).** Chargeable employment income €30,000. Staking rewards worth €1,750 at the dates received.
-- Treating the rewards as income when received (check the head): total €31,750.
+- Illustrative arithmetic only, conditional on €1,750 being properly classified and recognised as taxable income for 2026: total €31,750. This example does not resolve the held staking classification or timing.
 - Tax with staking = €31,750 × 25% − €3,400 = €7,937.50 − €3,400 = €4,537.50. Without staking = €30,000 × 25% − €3,400 = €4,100. Extra tax €437.50.
 - The staked coins received have a cost of €1,750 for any later disposal.
 
@@ -284,8 +282,8 @@ All cases are hypothetical. Individuals are resident, ordinarily resident and do
 | Exchange buy, "crypto buy", card purchase of crypto | Acquisition | Record cost with fees |
 | Gas, network or transaction fee | Cost of the related acquisition or disposal | Add to cost or deduct from proceeds |
 | Trading fee, commission | Cost of acquisition or disposal | Same |
-| Mining reward, pool payout | Receipt | Income at market value when received (see "Other crypto receipts") |
-| Staking reward, validator reward, "earn" interest | Receipt | Income at market value when received; head to check |
+| Mining reward, pool payout | Receipt | HOLD until classification and ordinary recognition are established (see "Other crypto receipts") |
+| Staking reward, validator reward, "earn" interest | Receipt | HOLD until income head and recognition are verified |
 | Airdrop, token distribution | Possible income | Taxable if received for a task or service |
 | Transfer, withdrawal or deposit between the client's own accounts | Not a disposal | Exclude; keep the on-chain proof |
 | P2P transfer | Sale, purchase or own transfer | Ask the client which |
@@ -312,10 +310,13 @@ All cases are hypothetical. Individuals are resident, ordinarily resident and do
 - apply the remittance basis without checking the exceptions (long-term resident, permanent residence, Maltese-domiciled spouse);
 - say the non-dom minimum tax applies regardless of income. It needs foreign income of at least €35,000 that is not fully brought into Malta ([ITA art. 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c));
 - treat transfers between the client's own wallets as disposals;
-- quote the MTCA guidelines from memory. Point to them and mark the point "check";
+- quote a guideline from memory or extend the income-tax guideline to unverified VAT/DeFi facts;
 - present an answer as final without a professional review.
 
 ## Filing and payment ([Income Tax (Statutory Dates) Rules, S.L. 372.16](https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2))
+
+
+**Year-specific override, read 4 November 2026:** MTCA extended both manual and electronic individual returns for year of assessment 2026 (basis 2025), and the related tax payment, to **31 July 2026**. Use that actual date for late charges, not the general 30 June date. The statutory date for basis 2026 / assessment 2027 remains **30 June 2027** unless a later notice changes it. [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline).
 
 | What | When | Source |
 | --- | --- | --- |
@@ -332,7 +333,7 @@ All cases are hypothetical. Individuals are resident, ordinarily resident and do
 
 ### Returns being filed now: 2025 income (year of assessment 2026) ([Act IX of 2025](https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5))
 
-- The statutory return date was 30 June 2026. A 2025 return not filed yet is late: interest and additional tax run (see malta-income-tax). Check whether MTCA announced an online extension.
+- The general statutory date was 30 June 2026, but MTCA extended both manual/electronic individual filing and related payment to **31 July 2026**. Apply actual dates to late charges; see the MTCA notice below.
 - Rate tables: Act IX of 2025. The single table has the same bands and subtractions as 2026. The qualifying-child tables do not apply to 2025 income.
 - DAC8 data starts with 2026, so it does not cover 2025. That changes nothing about what must be reported.
 - The classification rules above are unchanged for 2025.
@@ -343,28 +344,62 @@ All cases are hypothetical. Individuals are resident, ordinarily resident and do
 - Full ledger in euro, own-wallet transfers removed, cost known for every disposal, one matching method used throughout.
 - Each asset classified: coin, utility, share-type or fixed-return token, and whether it meets the article 5 "securities" definition.
 - Each disposal classified trading or capital, with the reasons written down, including whether it was bought to resell.
-- Mining, staking, lending, airdrops and crypto pay valued at receipt and taxed.
+- Each crypto receipt classified and its ordinary recognition event established before valuation; unresolved mining/staking/lending/airdrop or DeFi branches held, not automatically taxed.
 - Remittance basis applied only to income arising outside Malta and only where no exception applies; minimum tax tested against €35,000.
 - Tax computed on the right table for the right year (Act III of 2026 for 2026; Act IX of 2025 for 2025), or at 35% for a company.
 - VAT checked on any business supplies paid in crypto, NFT sales and services to identified customers.
 - Duty checked on any token that is a holding of share capital.
 - Return reconciled to exchange data; records kept for nine years.
-- Every point that rests on the MTCA guidelines marked "check" and confirmed on mtca.gov.mt before filing.
+- Checked income-tax guidance separated from held VAT/duty/DeFi/source questions; no held treatment used to finalise a computation.
 
-<!-- openaccountants-cta-block -->
+## Executable worked checks
 
----
+These verify arithmetic only after trading status or the recognition head has independently been established; they do not clear held DeFi receipts.
 
-## Talk to a verified accountant
+```oa-check
+name: Resident single2026revenueaccountcryptoexample
+inputs:
+  proceeds: 45000
+  cost: 25000
+  fees: 100
+steps:
+  - profit: proceeds - cost - fees
+  - tax: profit * 0.25 - 3400
+expected:
+  profit: 19900
+  tax: 1575
+```
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+```oa-check
+name: Conditional2026taxadditionproperlyrecognised1750income
+inputs:
+  salary: 30000
+  already_classified_income: 1750
+steps:
+  - without: salary * 0.25 - 3400
+  - with_income: (salary + already_classified_income) * 0.25 - 3400
+  - extra: with_income - without
+expected:
+  without: 4100
+  with_income: 4537.50
+  extra: 437.50
+```
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+## Sources
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Earlier section citations and research are preserved in the full evidence archive; the dated rows below identify this correction's actual reads.
+
+
+### Correction source reads, 4 November 2026
+
+Only the identified passages were read for this delta; historical source rows keep their prior dates and are not a blanket re-verification.
+
+| Source and passage actually read | URL | Read on |
+|---|---|---|
+| DLT income classification, valuation and unchanged ordinary recognition read | https://mtca.gov.mt/docs/default-source/documents/guidelines--dlts-income-tax.pdf?sfvrsn=c74e28fc_1 | 2026-11-04 |
+| Cap123ordinaryresidentrates and remittanceexclusions read | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-04 |
+| MTCA actual YA2026 individual deadline read | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
+
+Correction ledger and complete old-topic destinations: [personal-mt-crypto-tax](../../evidence/malta-deep-audit-20261104/ledgers/personal-mt-crypto-tax.md). Full original research is archived there; this correction is not professional attestation.
+
+Not yet confirmed: unresolved branches explicitly marked HOLD or check in this Guide; see the correction ledger and personal audit for the exact remaining scope. No whole-pack professional review is claimed.

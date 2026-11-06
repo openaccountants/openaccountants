@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "general"
   tax_year: "2026"
   last_updated: "2026-10-12"
-  authored_by: "Michael Cutajar, CPA, ACCA"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
 ---
 
 # Will the family's home country tax the holding company anyway? CFC and substance rules compared
@@ -272,24 +269,6 @@ Same HoldCo, owner is an Irish, Cypriot or Luxembourg company. Control is met in
 - United States: [26 U.S.C. section 951](https://www.law.cornell.edu/uscode/text/26/951); [26 U.S.C. section 951A](https://www.law.cornell.edu/uscode/text/26/951A); [26 U.S.C. section 957](https://www.law.cornell.edu/uscode/text/26/957)
 - Singapore: [FSIE e-Tax Guide](https://www.iras.gov.sg/media/docs/default-source/e-tax/tax-exemption-for-foreign-sourced-income285e5d43d6af4001b3ce35da1e9005b5.pdf)
 - UAE: [Federal Decree-Law No. 47 of 2022](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/CT%20law%20final/Federal%20Decree-Law%20No.%2047%20of%202022%20-%20For%20publishing.pdf); [General Corporate Tax Guide](https://tax.gov.ae/DataFolder/Files/Guides/CT/CT%20General%20Guide%20-%20EN%20-%2010%2009%202023.pdf)
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

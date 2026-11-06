@@ -9,11 +9,12 @@ description: >
 version: 1.0
 jurisdiction: KZ
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: tax-optimization
 ---
 
 # Kazakhstan Tax Optimization (Self-Employed) — Skill v1.0
@@ -28,7 +29,6 @@ depends_on:
 | Currency | KZT; MRP (МРП) ₸4,325, min wage ₸85,000 for 2026 (verify) |
 | Main levers | Regime choice · VAT threshold · Astana Hub (IT) · contribution minimums |
 | Tax authority | State Revenue Committee (КГД) |
-| Quality tier | Research-verified — pending sign-off by a Kazakhstan accountant |
 | Skill version | 1.0 |
 
 > **2026 Tax Code context:** the patent and retail-tax special regimes were abolished and the special-regime menu cut to three; the simplified declaration is now a single **4%** rate (maslikhat-adjustable 2–6%). VAT rate and registration threshold changed — verify the current figures.

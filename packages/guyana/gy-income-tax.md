@@ -4,10 +4,9 @@ description: "Source-cited draft: personal income tax for Guyana (tax year 2025)
 jurisdiction: GY
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
 ---
 
 # Guyana Personal Income Tax
@@ -26,21 +25,3 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Individual return filing & payment deadline** — 30 April following the income year  _(Income Tax Act (Cap 81:01) — https://gra.gov.gy/optimal/individual-income-tax-return/)_
 - **Self-employed advance (quarterly) payments** — Quarterly advance instalments due 1 April, 1 July, 1 October and 31 December; balance by 30 April of the following year  _(Income Tax Act (Cap 81:01) — https://taxsummaries.pwc.com/guyana/individual/tax-administration)_
 - **Late filing/payment surcharge** — Additional 10% charge on outstanding tax where return not filed and balance not paid by 30 April  _(Income Tax Act (Cap 81:01) — https://taxsummaries.pwc.com/guyana/corporate/tax-administration)_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

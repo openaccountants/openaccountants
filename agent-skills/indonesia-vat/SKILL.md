@@ -8,17 +8,14 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "RILIA PUTRI, CA, CPA"
   reviewed_by: "RILIA PUTRI"
-  trust_label: "Checked by RILIA PUTRI"
-  review_status: "current"
 ---
 
 # Indonesia VAT
 
 ## Indonesia PPN (Pajak Pertambahan Nilai / VAT) Skill v2.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -76,7 +73,6 @@ metadata:
 | Tax invoice | Faktur Pajak — required for input credit |
 | NPWP | Nomor Pokok Wajib Pajak (15-digit taxpayer ID) |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a licensed Indonesian tax consultant (Konsultan Pajak) |
 | Skill version | 2.0 |
 
 ### Key SPT Masa PPN form lines
@@ -609,24 +605,6 @@ INDONESIA PPN ONBOARDING — PERTANYAAN MINIMUM
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional before filing.
 
 The most up-to-date version is maintained at openaccountants.com.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

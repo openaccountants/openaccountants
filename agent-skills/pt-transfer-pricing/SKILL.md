@@ -7,10 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pt-transfer-pricing"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Portugal transfer pricing (preços de transferência), 2026
@@ -231,26 +228,6 @@ Both headroom figures are zero or more, so the exemption applies. A negative fig
 
 Not yet confirmed: whether the 2026 State Budget law (Orçamento do Estado 2026) touched any rule here (its text was not read; the consolidated CIRC pages read on 2026-10-22 show no 2025 or 2026 change to arts. 63, 87-A, 121-A, 130 or 138, and art. 87 shows Lei 64/2025 as the last change); the APA fee amounts in Portaria 923/99 (not read); which IES annex and table carries the art. 63(7) disclosure for 2026 filings (the current IES instructions were not read); the legal interest rate under art. 559 of the Civil Code that sets compensatory interest; the base of the "5% for each day of delay" in RGIT art. 117(6) (the text does not say 5% of what); the SME size tests in the annex to Decree-Law 372/2007; and the Madeira and Azores rates, which are outside this skill.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

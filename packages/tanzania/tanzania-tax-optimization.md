@@ -4,12 +4,11 @@ description: Tanzania Mainland tax-optimization, statutory reliefs, and incentiv
 jurisdiction: TZ
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Baraka Cassian, CPA, CA, CTA
-reviewed_by: Baraka Cassian
-review_status: current
-trust_label: Checked by Baraka Cassian
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Baraka Cassian"
+reviewed_on: 2026-11-03
+tier: 1
+domain: tax-optimization
 ---
 
 # Tanzania Tax Optimization
@@ -18,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Scope note.** This skill covers **Tanzania Mainland** tax-optimization, statutory reliefs, and incentive regimes administered by the **Tanzania Revenue Authority (TRA)**, plus the Export Processing Zones Authority (EPZA) for zone-based incentives. All figures are TZS (Tanzanian Shilling) unless stated. Tax year = calendar year (1 January – 31 December) unless an entity has an approved substituted accounting period. **Zanzibar** runs a separate administration (Zanzibar Revenue Authority — ZRA) with its own VAT/levy regime; Zanzibar differentials are flagged where relevant but Zanzibar-specific filings are out of scope — escalate. Several positions below changed under the **Finance Act 2025 (in force 1 July 2025 unless a later date is stated)** — those are flagged **FA2025**.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Baraka Cassian** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -349,7 +348,7 @@ Contribution (15,000,000) exceeds the ceiling → deductible amount capped at **
 - NEVER treat EPZ/SEZ **domestic-market** sales as income-tax exempt on or after **1 Jul 2025** — FA2025 removed that exemption; only export sales retain the holiday.
 - NEVER shelter more than **60%** of a year's taxable profit with carried-forward losses — the residual 40% is always taxable.
 - NEVER assume perpetual losses are costless — **3 consecutive loss years trigger 1% AMT on turnover** (unless agriculture/health/education, or tea processing to 30 Jun 2027).
-- NEVER ignore the **12-month** distribution window — undistributed/​unapplied after-tax profit risks a deemed 30% distribution and 10% WHT.
+- NEVER ignore the **12-month** distribution window — undistributed/unapplied after-tax profit risks a deemed 30% distribution and 10% WHT.
 - NEVER deduct charitable/CSR contributions above **2% of taxable income**.
 - NEVER apply the **16%** electronic-payment VAT rate before **1 Sep 2025**, or to non-qualifying (non-electronic / non-B2C) supplies.
 - NEVER claim a treaty WHT rate without a valid **residence certificate** — apply the domestic rate by default.
@@ -361,23 +360,3 @@ Contribution (15,000,000) exceeds the ceiling → deductible amount capped at **
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

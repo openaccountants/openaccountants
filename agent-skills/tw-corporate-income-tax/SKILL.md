@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "TW"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Taiwan Corporate Income Tax
@@ -36,24 +34,6 @@ metadata:
 - **Overview of filing and payment** — Enterprises self-assess annually and make an interim (provisional) payment mid-year.
 - **Annual return deadline** — By 31 May following the fiscal year-end (or the last day of the fifth month after a non-calendar year-end)  _(Income Tax Act (https://taxsummaries.pwc.com/taiwan/corporate/tax-administration))_
 - **Provisional (interim) tax payment** — Generally 50% of the prior year's tax, payable in the ninth month of the fiscal year (by end of September for calendar-year taxpayers) (approx — confirm exact window)  _(Income Tax Act (https://taxsummaries.pwc.com/taiwan/corporate/tax-administration))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

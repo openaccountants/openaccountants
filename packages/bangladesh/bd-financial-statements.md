@@ -10,11 +10,12 @@ description: >
 version: 1.0
 jurisdiction: BD
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
+domain: financial-statements
 ---
 
 # Bangladesh Financial Statements & Reporting — Skill v1.0
@@ -31,7 +32,6 @@ depends_on:
 | Audit | Companies require a statutory audit; the financial statements + audit are filed with RJSC and the NBR |
 | Authorities | NBR (tax); RJSC (companies); ICAB (audit profession) |
 | Currency | BDT (৳) |
-| Quality tier | Research-verified — pending sign-off by a Bangladeshi practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Who prepares what (Tier 1)

@@ -7,9 +7,10 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `pr-company-income-tax.md`
-4. `pr-federal-residence-and-filing.md`
-5. `pr-self-employment-tax-2025.md`
+3. `README.md`
+4. `pr-company-income-tax.md`
+5. `pr-federal-residence-and-filing.md`
+6. `pr-self-employment-tax-2025.md`
 
 ## How to use
 

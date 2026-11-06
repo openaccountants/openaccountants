@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "GT"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Guatemala Social Contributions (IGSS) & Payroll Income Tax (ISR)
@@ -40,7 +38,6 @@ metadata:
 | Min wage non-agri C2 (rest of country), 2026 | Q3,816.90/month + Q250 bono = Q4,066.90 (Prensa Libre / Acuerdo 256-2025) |
 | ISR refund / annual liquidation deadline | 28 February of following year (oficsa / vescco) |
 | Constancia de retención deadline | Within 10 business days of final/annual payment (vescco) |
-| Validated by | Pending — requires sign-off by a Guatemalan licensed contador / perito contador |
 | Validation date | Pending |
 
 **IGSS programme split (2025--2026)**  _(IGSS official "Cuotas" (igssgt.org/cuotas); Acuerdo 1118; FUNDESA; Banco Industrial 2026; Prensa Libre.)_
@@ -469,26 +466,6 @@ If the client provides only a bank statement and no other information:
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

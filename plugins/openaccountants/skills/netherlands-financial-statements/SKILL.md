@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "NL"
   tax_year: "2026"
   last_updated: "2026-09-28"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Netherlands financial statements: prepare, adopt and file
@@ -146,31 +143,12 @@ Late filing can lead to fines/prosecution and director-liability consequences in
 
 ## Deliverable
 
-
 Deliver the entity/period/framework and size memo, reconciled adjusted trial balance, supported adjustments, full draft statements, framework-specific notes checklist, audit/exemption assessment, signatures/adoption record, dated filing plan and public filing package with acceptance evidence. List unresolved matters with their financial effect and required evidence. Retain the underlying accounting records under the applicable retention rules; BW2's ordinary records period is **seven years**, subject to other longer obligations. [BW2 article 10](https://wetten.overheid.nl/BWBR0003045).
 
 ## When to refuse or refer
 
 - Do not present accounts as final when material balances, going concern, the applicable standard, group perimeter, exemptions or required audit evidence remain unresolved.
 - Refer listed/regulated entities, complex consolidations, foreign-parent exemptions, uncertain recognition/disclosure, serious misstatements and threatened deadlines/liability to an appropriately qualified accountant or legal specialist. The guide is a preparation and control method; it is not an audit opinion.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

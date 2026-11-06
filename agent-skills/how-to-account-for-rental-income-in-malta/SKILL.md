@@ -7,15 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/how-to-account-for-rental-income-in-malta"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-11-04"
 ---
 
-# How to Account for Rental Income in Malta v1.1
-
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
+# How to Account for Rental Income in Malta v1.2
 
 Tax year 2026: rent received in basis year 2026 is reported by 30 April 2027 (TA24) or 30 June 2027 (tax return). The full computation, worked examples and short-let VAT points are in `mt-rental-income`.
 
@@ -23,7 +18,7 @@ Tax year 2026: rent received in basis year 2026 is reported by 30 April 2027 (TA
 
 ### [method:scope_gate] Who this skill is for, and who to refuse
 
-This skill covers a landlord with Malta **rental income** from residential or commercial property choosing whether to pay the flat 15% final tax on gross rent or add the net rent to their income at normal rates. The 15% option covers residential property (from 1 January 2014) and commercial property (from 1 January 2016), for residents and non-residents, individuals and companies. It is NOT for: commercial rent to or from a related body of persons (the 15% option does not apply to it); foreign-situs property; property held through a trust or other structure; or short-stay / serviced-apartment operations large enough to constitute a trade. Send those to a specialist. For a residential long let, check registration with the Housing Authority (Private Residential Leases Act, Cap. 604) before you file: the long-lease rebate depends on it, and an unregistered lease is a compliance problem in its own right.
+This skill covers a landlord with Malta **rental income** from residential or commercial property choosing whether to pay the flat 15% final tax on gross rent or add the net rent to their income at normal rates. The 15% option covers residential property (from 1 January 2014) and commercial property (from 1 January 2016), for residents and non-residents, individuals and companies. It is NOT for: commercial rent to or from a related body of persons (the 15% option does not apply to it); foreign-situs property; property held through a trust or other structure; or a mixed accommodation/services business whose receipts cannot yet be separated into rent and other services. Refer the classification of those receipts. Trading classification alone does not remove the article 31D option for rental receipts: MTCA’s specific guidance allows it under both article 4(1)(a) and article 4(1)(e). For a residential long let, check registration with the Housing Authority (Private Residential Leases Act, Cap. 604) before you file: the long-lease rebate depends on it, and an unregistered lease is a compliance problem in its own right.
 
 ### [method:sequence] Order of operations
 
@@ -69,7 +64,7 @@ Rent credited to the bank must match the declared lease. Reconcile declared rent
 
 ### [method:edge_case] When side income reshapes the return
 
-A client presenting as a landlord but providing cleaning, linen, and guest turnover is running a trade, not earning passive rent. The whole return changes: business income, likely VAT registration, and no 15% option. Reclassify before computing anything.
+Cleaning, linen and guest turnover require a facts-based review of the activity and its receipts. If the letting constitutes a trade, that does not itself exclude the 15% article 31D option on rental receipts: MTCA’s Guidance Note paragraph (b) includes both article 4(1)(a) trading rent and article 4(1)(e) investment rent. Separate non-rental service receipts and check VAT and MTA licensing independently; do not treat the rent election as resolving those questions.
 
 ### [method:filing_mechanics] How submission works
 
@@ -123,24 +118,45 @@ Not yet confirmed:
 - The period over which the 0.6% late-TA24 interest runs: the manual gives 0.6% without the period; the general MTCA rate is 0.6% per month.
 - Budget 2027 is presented on 26 October 2026; any change to the 15% rent regime for 2027 is not reflected here.
 
-<!-- openaccountants-cta-block -->
+## Targeted hypothetical checks
 
----
+A trading landlord with EUR 24,000 of qualifying rent elects article 31D; trading status alone does not deny the election. A separate EUR 3,000 service receipt is not assumed to qualify. These cases assume the statutory tenement and unrelated-commercial conditions are met.
 
-## Talk to a verified accountant
+```oa-check
+name: Trading rental receipts: article 31D election
+inputs:
+  rent: 24000
+steps:
+  - tax: pct(rent,15)
+expected:
+  tax: 3600
+```
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+For EUR 24,000 rent and EUR 3,000 separately identified services, the rent-only illustration does not apply the final rate to the services. The services’ tax is outside this calculation.
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+```oa-check
+name: Separate services are not silently added to rent election
+inputs:
+  rent: 24000
+  services: 3000
+steps:
+  - tax_on_rent: pct(rent,15)
+  - unsupported_combined_tax: pct(rent + services,15)
+  - difference: unsupported_combined_tax - tax_on_rent
+expected:
+  tax_on_rent: 3600
+  unsupported_combined_tax: 4050
+  difference: 450
+```
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+
+### Targeted audit source checks, 4 November 2026
+
+Corrected the trading-rent exclusion only; immigration, tourism licensing, VAT and service-income classification remain separate gates. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- MTCA Article 31D Guidance Note paragraph (b): https://mtca.gov.mt/docs/default-source/documents/mtca-guidance-note-art31d.pdf (read 2026-11-04).
+- Cap. 123 article 31D(2): https://legislation.mt/eli/cap/123/eng/pdf (read 2026-11-04).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `how-to-account-for-rental-income-in-malta` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/how-to-account-for-rental-income-in-malta. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `how-to-account-for-rental-income-in-malta` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/how-to-account-for-rental-income-in-malta. If neither is available, confirm every figure against the official source pages cited above before relying on it.

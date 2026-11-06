@@ -8,15 +8,11 @@ metadata:
   jurisdiction: "SE"
   tax_year: "2026"
   last_updated: "2026-09-25"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Sweden: bookkeeping — 2026 editorial draft
 
 Use for tax year 2026 and the entity’s actual financial year. This method covers who must keep books, recording, vouchers, timing, reconciliation, correction, archiving and an ordinary K1/K2 annual close with its deadlines. It draws on the Book-keeping Act (BFL), the Annual Accounts Act (ÅRL) and BFN guidance.
-
 
 ## Ask the client first
 
@@ -241,24 +237,6 @@ These working-paper controls operationalize the requirement to record closing en
 - A software migration, scanning routine or foreign archive that cannot preserve readable access and a complete audit trail: resolve the archive conditions before retiring the old system or destroying originals.
 - Booking later than the deferral windows allow: record the backlog now and note the breach; only a temporary special obstacle justifies a short further delay.
 - Missing VAT, payroll or income-tax analysis: keep the accounting working paper separate from the return decision; a ledger correction alone does not amend a filed return.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

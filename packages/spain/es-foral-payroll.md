@@ -14,9 +14,12 @@ description: >
 jurisdiction: ES
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-28
 version: 0.2
+reviewed_by: "Jeff Watts"
+reviewed_on: 2026-11-03
+tier: 1
+domain: payroll
 ---
 
 # Spain: foral wage withholding for2026
@@ -37,7 +40,6 @@ version: 0.2
 ## The base
 
 ### Basque2026 general employee table
-
 
 The following **flat withholding percentages**, rather than marginal tax brackets, are identical in all three independently read 2026 regulations: Bizkaia DF 47/2014 art. 88.1 (amended DF 134/2025), Álava DF 40/2014 art. 84.1 (DF 42/2025), Gipuzkoa DF 33/2014 art. 100.1 (DF 27/2025). Each row applies to the annual forecast within its inclusive cent boundaries, and to the column for the qualifying descendant count. A total of 20,000.00 has zero under the table, but a statutory contract minimum can override it. The first nonzero row begins at 20,000.01. Do not apply the percentage only to the excess over the lower boundary.
 

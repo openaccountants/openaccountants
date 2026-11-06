@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-PA"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Pennsylvania employer payroll: PA withholding, local EIT (Act 32), LST, unemployment compensation, minimum wage and new hires (2026, with 2025 notes)
@@ -307,24 +304,6 @@ The dollar amounts and all local EIT rates in these cases are made up for illust
 - Deposits made on the right frequency, and electronically where required.
 - Quarterly PA, local and UC returns filed; W-2s, REV-1667 and W2-R filed at year end.
 - Pay rates at or above the state minimum wage, with tip credits only where allowed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

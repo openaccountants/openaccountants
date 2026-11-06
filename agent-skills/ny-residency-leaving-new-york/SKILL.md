@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-NY"
   tax_year: "2026"
   last_updated: "2026-10-03"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Leaving New York: domicile, the statutory resident test and part-year returns
@@ -222,24 +219,6 @@ In both cases the Department can still argue she never changed domicile at all. 
 - 20 NYCRR [105.20](https://www.law.cornell.edu/regulations/new-york/20-NYCRR-105.20), [154.10](https://www.law.cornell.edu/regulations/new-york/20-NYCRR-154.10) and [154.11](https://www.law.cornell.edu/regulations/new-york/20-NYCRR-154.11), Legal Information Institute mirror of the New York regulations.
 
 This Guide is a working method for professional use. It is not legal or tax advice for any person's situation; residency turns on facts that need a professional's review.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

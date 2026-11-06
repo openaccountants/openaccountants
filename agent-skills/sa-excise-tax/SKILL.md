@@ -8,17 +8,14 @@ metadata:
   jurisdiction: "SA"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Mehran Habib, CA"
   reviewed_by: "Mehran Habib"
-  trust_label: "Checked by Mehran Habib"
-  review_status: "current"
 ---
 
 # SA Excise Tax
 
 ## Saudi Arabia — Excise Tax — Skill v1.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 Reviewed against the cited tax authorities by **Mehran Habib** on 2026-06-06.
 Items flagged for further clarification are tracked separately and excluded here.
@@ -51,7 +48,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Tax base | Higher of (a) retail selling price declared by the taxpayer or (b) "standard price" published by ZATCA for the product |
 | Filing frequency | Monthly excise return via ZATCA e-portal |
 | Filing & payment deadline | Within 15 days of month-end (verify against current ZATCA bylaw — historically the 15th of the following month) |
-| Validated by | Pending — requires sign-off by a Saudi licensed tax practitioner (SOCPA member) |
 | Skill version | 1.0 |
 
 ### Taxable products and rates at a glance
@@ -338,24 +334,6 @@ Penalty amounts are subject to ZATCA's published schedule and may be amended by 
 9. **SOCPA practitioner guidance** — Saudi Organisation for Chartered and Professional Accountants commentary on excise tax compliance.
 
 ## End of Skill — Saudi Arabia Excise Tax v1.0
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

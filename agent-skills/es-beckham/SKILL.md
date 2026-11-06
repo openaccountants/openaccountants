@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "ES"
   tax_year: "2026"
   last_updated: "2026-10-28"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Spain: incoming-worker special tax regime v1.3
@@ -181,26 +179,7 @@ expected:
 | RIRPF arts.89.B/116.3 and AEAT general incoming-worker page linked above | Prior special ordinary-withholding procedure bars the incoming-worker special-regime election; Modelo147 distinguished from149 | 2026-10-28 |
 | [LIRPF art. 80.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a80) and [RIRPF art. 114.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a114) | Effective percentage expressed to two decimal places in the general salary-only method and second example; additional cap and final result unchanged | 2026-10-28 |
 
-
 **Not yet confirmed:** the exact allocation of a complex multi-period equity award or mixed-category foreign-credit ceiling without its supporting service/source records; case-specific treaty residence entitlement and wealth-tax calculation. The ordinary employment and Spanish-source savings computations above are supplied; specialist PE/activity and family boundary cases need their actual eligibility evidence. Independent whole-pack review remains outstanding.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

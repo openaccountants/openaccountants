@@ -8,9 +8,7 @@ metadata:
   jurisdiction: "PE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
+  reviewed_by: "Maria Clemencia Valverde Rios"
 ---
 
 # Peru Income Tax (Impuesto a la Renta — Rentas de Trabajo)
@@ -19,7 +17,7 @@ metadata:
 
 > **DISAMBIGUATION.** This skill is for **PERU** (the Andean republic, capital **Lima**). Currency is the **sol (S/ / PEN)** — **NOT** the Panamanian balboa. The tax authority is **SUNAT** (Superintendencia Nacional de Aduanas y de Administración Tributaria). The tax is **Impuesto a la Renta**. If you find content referencing Panama, the balboa, or a flat-rate Panamanian scale, it is wrong — discard it and use this file.
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
 > Reviewed against the cited tax authorities by **Maria Clemencia Valverde Rios** on 2026-06-29.
 > Items flagged for further clarification are tracked separately and excluded here.
@@ -591,8 +589,6 @@ Expected: STOP (R-PE-3). Flat 30% on gross with no deductions — out of scope.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Peru-licensed Contador Público Colegiado, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ### Key Peruvian Tax Terms
 
 - **Renta bruta** — Gross income (Before deductions)
@@ -610,24 +606,6 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 - **UIT 2025** — S/ 5,350  _(TY2025 annual return (FV 709, filed 2026))_
 - **UIT 2026** — S/ 5,500  _(2026 monthly withholding / 2026 computations (DS N° 301-2025-EF, eff. 1 Jan 2026))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

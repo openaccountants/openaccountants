@@ -7,9 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-cas-cass"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
 # Romania: CAS and CASS for the self-employed (PFA, II, IF, liberal professions), 2026
@@ -184,26 +182,6 @@ expected:
 
 Not yet confirmed: whether the 2026 state budget law grants an early-payment discount on 2026 CAS and CASS paid in 2027 (art. 151(14), art. 174(17)). The amending texts of Legea 239/2025 and Legea 141/2025 were not read; the 72-wage cap is taken from the consolidated Fiscal Code and the ANAF summary. Which professional pension systems count for the art. 150(1) exemption was not checked.
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-cas-cass` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-cas-cass. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-cas-cass` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-cas-cass. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,499 +1,149 @@
 ---
 name: eg-stamp-duty
-description: "Use this skill whenever asked about Egyptian stamp duty, document duty, or any tax-stamped contract question — including company formation capital duty, employment contracts, lease stamping, and electronic document stamping. Trigger on \"Egypt stamp duty\", \"ضريبة الدمغة\", \"document tax Egypt\", \"capital duty Egypt\", \"e-stamp Egypt\", \"stamp tax Egypt\". ALWAYS read this skill before computing or discussing Egypt stamp duty."
+description: "Use this skill whenever asked about Egyptian stamp tax (ضريبة الدمغة) under Law 111 of 1980 for tax year 2026, in particular the proportional stamp tax on sales of securities listed on the Egyptian Exchange (rates changed on 29 July 2026 by Law 153 of 2026), the 33% acquisition and exit rule, the end of stamp tax on advertising (now VAT), the Investment Law exemption for incorporation and credit facility contracts, and who withholds and remits. Trigger on \"Egypt stamp duty\", \"ضريبة الدمغة\", \"stamp tax on shares Egypt\", \"EGX stamp duty\", \"stamp duty same-day trades Egypt\", \"document tax Egypt\", \"capital duty Egypt\". ALWAYS read this skill before computing or discussing Egypt stamp tax."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/eg-stamp-duty"
   jurisdiction: "EG"
-  tax_year: "2025"
-  last_updated: "2026-07-22"
-  authored_by: "Ahmed Hassan"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  tax_year: "2026"
+  last_updated: "2026-11-02"
+  reviewed_by: "Ahmed Hassan"
 ---
 
-# Egypt Stamp Duty (ضريبة الدمغة) Skill v0.1
+# Egypt Stamp Duty (ضريبة الدمغة) Skill v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Jurisdiction is required.** Set `jurisdiction: EG` in frontmatter even when the folder path implies it. Sync to openaccountants.com skips files without a resolvable jurisdiction.
+This skill covers Egyptian stamp tax (ضريبة الدمغة) under the Stamp Tax Law issued by Law 111 of 1980, for tax year 2026 (calendar year). It is administered by the Egyptian Tax Authority (ETA, مصلحة الضرائب المصرية). Reply in the user's language, English or Arabic. All amounts are in EGP. The tax has two kinds: a specific (نوعية) tax fixed per document and a proportional (نسبية) tax on a value. Only the figures listed in the rates table were confirmed from the law for this version; every other rate is on the "Not yet confirmed:" line, so say so instead of quoting a number.
 
-This skill covers Egyptian **stamp duty** (ضريبة الدمغة / ضريبة الأختام) imposed under **Law No. 111 of 1980** (قانون ضريبة الدمغة) on legal documents, instruments, contracts, banking transactions, insurance premiums, company formation documents, and securities transactions. The AI must reply in the user's language (English or Arabic / Egyptian Arabic) and may use the native tax terms shown throughout.
+## Who this applies to
 
-> **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م).
-> **YMYL — verify before relying.** Egyptian stamp duty rates are frequently amended by decree (most recently Laws 30/2023, 157/2025). Where this skill says "verify current value," re-confirm against the Egyptian Tax Authority (ETA — eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt), or a Big-4 alert before filing.
+- **Scope of the tax** (ETA Services Guide, 2nd ed., service 2/11): certificates and declarations; contracts and similar documents; personal status documents; judicial documents; insurance premiums; commercial papers; receipts, settlements and invoices; banking acts and documents; transport services; betting and lottery winnings; sums paid by government bodies and public sector companies; securities and their trading; administrative permits and licences; water, electricity and gas supply; telecoms subscriptions. Advertising is in that list but its stamp tax was repealed in 2022 (see the rates table).
+- **Securities sales** (art. 83 bis as replaced by Law 153/2026): buyer and seller, resident or non-resident, on every sale of securities listed on the Egyptian Exchange (EGX). Units of investment funds listed on the EGX are out. Approved market makers licensed under the Capital Market Law 95/1992 are out.
+- **Unlisted securities and company shares:** since 29 July 2026 their sale is outside the stamp tax and is taxed under income tax instead (Law 153/2026 limits art. 83 bis to listed securities; ETA notice of 26 July 2026). See `eg-income-tax` and `eg-corporate-tax`.
+- **Linked elsewhere:** the proportional stamp tax on pay (Stamp Tax Law art. 79, form 21 (kh)) is run through payroll, see `eg-payroll`; the stamp tax exemption for enterprises in the Law 6/2025 turnover regime is in `eg-sme-tax`.
+- **Procedure:** the Unified Tax Procedures Law 206/2020 governs assessment and collection of stamp tax where the Stamp Tax Law has no special rule (Law 206 issuing art. 1).
+- **Not here:** annual built property tax and the 2.5% real estate disposal tax (`eg-real-estate-tax`); income tax on securities gains (`eg-income-tax`); VAT on advertising (`egypt-vat`); the State Financial Resources Development Fee under Law 147/1984, which ETA also administers.
 
----
+## Rates, bands and thresholds
 
-## What this file is
+| Item | Rate or amount | Conditions | Tax year | Official URL |
+|---|---|---|---|---|
+| Listed securities, ordinary sale | 0.5 per thousand (0.05%) on the buyer and 0.5 per thousand on the seller, of the gross sale value, no costs deducted | Art. 83 bis as replaced by Law 153/2026 art. 1; resident or non-resident alike; listed EGX securities other than listed investment fund units | From 29 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf |
+| Listed securities, bought and sold the same day | 0.25 per thousand (0.025%) on the buyer and 0.25 per thousand on the seller | Same article; purchase and sale on the same day | From 29 Jul 2026 | same |
+| Approved market makers | Not subject | Companies licensed as approved market maker under Law 95/1992 | From 29 Jul 2026 | same |
+| Resident exemption under Law 199/2020 art. 5 | Repealed | Law 153/2026 art. 2; residents now pay the rates above | From 29 Jul 2026 | same |
+| All securities, 1 Jan to 28 Jul 2026 (old text) | Non-resident: 1.25 per thousand on the buyer and 1.25 per thousand on the seller. Resident: 0.5 per thousand each side in the text, but residents were not subject while Law 199/2020 art. 5 stood (art. 5 runs from the day after the art. 4 deferral of resident capital gains tax on listed securities ends; art. 4 set that end at end 2021, so on the text residents stopped paying from 1 Jan 2022, on listed and unlisted securities alike). Same-day trades not subject | Art. 83 bis as replaced by Law 199/2020 art. 1; covered Egyptian and foreign, listed and unlisted securities | 1 Jan to 28 Jul 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.199-2020.pdf |
+| Acquisition or exit of 33% or more | 3 per thousand (0.3%) on the seller and 3 per thousand on the buyer | Art. 83 bis (1), added by Law 76/2017 art. 3: a deal in 33% or more of the shares or voting rights of a resident company, or 33% or more of its assets or liabilities taken over by another resident company in exchange for shares in the acquiring company; purchases or sales by one person in one company within two years from the first purchase are added together; not deductible for income tax | 2026 (text unchanged) | https://eta.gov.eg/sites/default/files/2024-03/law_no.76-2017.pdf |
+| Advertising | No stamp tax (it was 20% before the repeal); advertising services pay VAT at 14% | Law 3/2022 art. 5 repealed arts. 60 and 64 of the Stamp Tax Law. Public-authority, public-awareness and election advertisements, among others, are now listed as VAT-exempt, not stamp-exempt (ETA news, 13 Mar 2022; see `egypt-vat`) | From 27 Jan 2022 | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.3-2022.pdf |
+| Investment Law projects | Exempt from stamp tax, notarisation and registration fees on company and establishment incorporation contracts, and on credit facility and mortgage contracts linked to their business, for five years from entry in the commercial register; land registration contracts needed to set up the company also exempt | Investment Law 72/2017 art. 10; art. 9 gives the general incentives to all projects under the law except free zone projects | 2026 | https://eta.gov.eg/sites/default/files/2024-10/law-72-2017.pdf |
 
-**This file is a content skill** that loads on top of a workflow base. It provides Egypt-specific stamp duty rules, rate schedules, exemptions, payment mechanics, and penalty regimes.
+## The base
 
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+1. **Securities (art. 83 bis):** the tax is on the total value of each sale of listed securities, with no costs deducted. Each sale is one base, charged once on the buyer and once on the seller.
+2. **33% deals (art. 83 bis (1)):** the base is the value of the acquisition or exit in one deal; once one person's purchases (or sales) in one company reach the 33% acquisition (or exit) line within two years from the first purchase, the tax applies to them, borne by the buyer on reaching the acquisition line and by the seller on reaching the exit line, less any of this tax already paid on them.
+3. **Not a cost for income tax:** the 33% tax may not be deducted as a cost under the Income Tax Law (art. 83 bis (1)).
+4. **Other documents and acts** (contracts, banking, insurance, receipts and the rest of the scope list): use the schedule of the Stamp Tax Law as last amended. Its current figures were not confirmed for this version, so do not quote one; ask for the document type and send the client to ETA's stamp tax research service (Services Guide, service 2/11), which answers stamp tax questions in writing free of charge.
 
-**The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs any filing. The skill produces working papers and a brief, not a filed return.
+## Deadlines and filing
 
----
-
-## Section 1 — Quick Reference
-
-| Field | Value |
-|---|---|
-| Country | Egypt (جمهورية مصر العربية) |
-| Tax authority | Egyptian Tax Authority (ETA — مصلحة الضرائب المصرية, eta.gov.eg) |
-| Primary legislation | **Law No. 111 of 1980** (قانون ضريبة الدمغة) — Tax Stamps Law |
-| Key amendments | Laws 140/2006, 110/2018, 147/2019, 174/2019, 199/2020, 30/2023 |
-| Currency | EGP (ج.م) |
-| Two types of stamp duty | **(1) Nominal (fixed)** — per-document/page; **(2) Proportional (percentage)** — based on transaction value |
-| Nominal rate (contracts) | ~EGP 1 per page per copy |
-| Proportional range | 0.05%–0.6% (varies by transaction type) |
-| Securities — resident (<33%) | 0.05% on total proceeds (buyer + seller each) — **suspended for listed shares since 1 Jan 2022** |
-| Securities — non-resident (<33%) | 0.125% on total proceeds (buyer + seller each) |
-| Securities — ≥33% of company | 0.3% on gross transaction value (buyer + seller each) |
-| Bank loan stamp tax | 0.4% annual (shared 50/50 bank + client), quarterly |
-| Insurance — life | 1% of premium |
-| Insurance — health/injury/compulsory | 2% of premium |
-| Insurance — transport (land/sea/air) | 11% of consideration, min EGP 1 |
-| Insurance — other (incl. war risk) | 11% of premium, min EGP 1 |
-| Company formation — GAFI authentication | 0.25% of paid-in capital, capped at EGP 10,000 |
-| Company formation — GAFI service fee | 0.1% of capital, min EGP 1,000, max EGP 10,000 |
-| Investment Law incentive | Articles of association, loan agreements, pledge contracts **exempt** from stamp duty for 5 years from registration (Investment Law 72/2017) |
-| Same-day securities | Stamp duty **does not apply** on sale/purchase of securities occurring on the same day |
-| Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by Egypt-licensed CPA (محاسب قانوني) |
-| Skill version | 0.1 |
-
-### Key rate schedule — nominal (fixed) stamp duty
-
-| Document type | Nominal stamp duty | Notes |
+| Step | Rule | Source |
 |---|---|---|
-| Contracts (general) | ~EGP 1 per page per copy | Applied regardless of document value |
-| Commercial contracts | ~EGP 1 per page per copy | Check if proportional also applies |
-| Employment contracts | Nominal per page | Verify specific rate per current schedule |
-| Notarised documents (أشهر) | Nominal + possible proportional | Depends on document type |
-| Court documents / petitions | Fixed per document | Varies by document type |
-| Powers of attorney (توكيل) | Fixed per document | Varies by type |
-| Lease agreements | Nominal + proportional on annual rent | See proportional schedule |
-| Certificates / extracts | Fixed per copy | Commercial register, tax certificate, etc. |
+| Listed securities | The body that settles the sale withholds the tax from buyer and seller and remits it to the competent tax office within five days from the start of the month after the trade, on the prescribed form. It is jointly liable with buyer and seller for the tax and the delay charge | Art. 83 bis as replaced by Law 153/2026 |
+| 33% deals | Misr for Clearing (شركة مصر للمقاصة) or any other body responsible for settling the deal withholds and remits to ETA by the procedure and dates the Minister of Finance sets by decision, jointly liable with the party in whose favour the deal was made | Art. 83 bis (1), Law 76/2017 |
+| Stamp returns | Filed on the ETA electronic tax system with the other returns (income, VAT, payroll, withholding, stamp, development fee) | ETA Services Guide, service 1/2 |
+| Forms | ETA's stamp forms page lists form 21 (kh): table 3 for pay (columns for each employee's amount due, base and the "ordinary tax art. 79") and table 4 for sums paid out by a body (ordinary and additional tax under art. 80); and forms 9 and 10, 2021 upload templates for advertising (advertiser and advertising agency), which date from before advertising left stamp tax | ETA stamp forms page and the templates linked from it |
 
-> **Verify** all nominal rates against the current schedule annexed to Law 111/1980 — rates have been adjusted by multiple amendments. The ~EGP 1 per page figure is the commonly cited baseline as reported by PwC and Lloyd's Bank trade portal.
+**Steps for a taxpayer with stamp tax to file:**
+1. Log in on the ETA tax system (https://workspace.eta.gov.eg/workspace/dashboard).
+2. For pay or for sums paid out under art. 80, download form 21 (kh) table 3 or table 4 from ETA's stamp forms page and complete it.
+3. Upload the return, keep the confirmation, and pay through the payment claim linked to the system (Services Guide, service 1/2). The filing frequency and due date for the general stamp return were not confirmed; see "Not yet confirmed".
 
-### Key rate schedule — proportional stamp duty
+## Penalties and interest
 
-| Transaction type | Rate | Basis | Notes |
-|---|---|---|---|
-| Securities — resident (<33%) | 0.05% each side | Total proceeds (gross) | Suspended for **listed** shares since 1 Jan 2022 (Law 199/2020 Art 5 repeal); still applies to **unlisted** shares |
-| Securities — non-resident (<33%) | 0.125% each side | Total proceeds (gross) | Applies to both listed and unlisted |
-| Securities — ≥33% of company | 0.3% each side | Gross transaction value | Buyer and seller each pay 0.3% = 0.6% aggregate |
-| Bank loans / credit facilities | 0.4% annually | Beginning-of-quarter balance | Shared 50/50 between bank and client; paid quarterly; applies to Egyptian banks and foreign bank branches only |
-| Insurance — life | 1% | Premium | Per Law 30/2023 amendment |
-| Insurance — health/injury/compulsory | 2% | Premium | Per Law 30/2023 amendment |
-| Insurance — land/river/sea/air transport | 11% | Insurance consideration | Min EGP 1; increased from 10% by Law 30/2023 |
-| Insurance — other (incl. war risk) | 11% | Premium | Min EGP 1; increased from 10% by Law 30/2023 |
-| Advertising tax | 20% | Advertising spend | Differentiated by medium (billboard, newspaper, radio, TV); public authority ads exempt |
-
-### Conservative defaults
-
-| Ambiguity | Default |
-|---|---|
-| Unknown whether document requires stamp duty | Assume it does — Egypt has broad document coverage |
-| Unknown whether nominal or proportional applies | Apply both if uncertain; nominal never hurts |
-| Unknown securities transaction size relative to 33% | Apply 0.3% rate (conservative — higher duty) |
-| Unknown whether listed or unlisted security | Treat as unlisted (0.05% applies for residents) |
-| Unknown whether bank loan qualifies for exemption | Assume 0.4% annual applies |
-| Unknown insurance type | Apply 11% (other insurance rate — conservative) |
-| Unknown whether Investment Law 72/2017 exemption applies | Assume stamp duty applies (exemption is project-specific) |
-| Unknown whether same-day exception applies | Do not apply same-day exemption without evidence |
-
-### Red flag thresholds
-
-| Threshold | Value |
-|---|---|
-| HIGH single stamp duty exposure | EGP 100,000 |
-| HIGH securities transaction (33% trigger) | ≥33% of company shares/voting rights/assets |
-| MEDIUM bank loan quarterly stamp | EGP 25,000/quarter |
-| MEDIUM formation capital (GAFI cap reached) | Paid-in capital ≥ EGP 4,000,000 (authentication fee hits EGP 10,000 cap) |
-| LOW absolute stamp duty payable | EGP 500,000 |
-
----
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-Before starting any Egypt stamp duty work, obtain:
-
-1. The specific document/ instrument type (contract, lease, formation docs, securities disposition, insurance policy, bank loan agreement)
-2. Document value or transaction amount (for proportional duty calculation)
-3. Number of pages and copies (for nominal duty)
-4. Whether the document is notarised (موثق) or informal
-5. For securities: whether the security is listed on the EGX or unlisted; whether the transaction involves ≥33% of the company
-6. For company formation: paid-in capital amount, entity type (LLC, JSC, etc.)
-7. For bank loans: beginning-of-quarter balance, loan type, utilisation within the quarter
-8. For insurance: policy type (life, health, transport, other), premium amount
-9. Whether Investment Law 72/2017 incentives apply (project registered with GAFI)
-10. Whether the transaction is between related parties or arm's length
-
-### Refusal catalogue
-
-Refuse and escalate to a licensed Egyptian tax consultant for:
-
-- Complex securities transactions involving multiple tranches, derivatives, or structured products
-- Stamp duty on real estate transactions (overlaps with real estate tax — see `eg-real-estate-tax`)
-- Investment Law 72/2017 exemption eligibility determination (project-specific)
-- Free zone company formation stamp duty treatment (special regimes apply)
-- Cross-border transactions where double stamp duty may arise
-- Disputes with ETA regarding understamping penalties
-- Historical transactions pre-dating the 2020–2023 amendments (transition rules)
-- Banking transactions involving Islamic finance (موراجحة / مرابحة) — special stamp treatment may apply
-
----
-
-## Section 3 — Document category library
-
-### 3.1 Company formation documents
-
-| Document | Stamp duty treatment | Notes |
+| Failure | Consequence | Source |
 |---|---|---|
-| Articles of association (عقد تأسيس) | Exempt under Investment Law 72/2017 for qualifying projects (5 years from registration) | Otherwise subject to GAFI authentication fee 0.25% of paid-in capital (cap EGP 10,000) |
-| Loan agreements | Exempt under Investment Law 72/2017 for qualifying projects (5 years) | Otherwise may attract proportional duty |
-| Pledge contracts | Exempt under Investment Law 72/2017 for qualifying projects (5 years) | Otherwise subject to stamp duty |
-| GAFI authentication fee | 0.25% of paid-in capital, capped at EGP 10,000 | Paid at incorporation |
-| GAFI service fee | 0.1% of capital, min EGP 1,000, max EGP 10,000 | Paid at incorporation |
-| Commercial register extract | Nominal stamp per copy | **Verify** current rate |
+| Settlement body fails to withhold or remit on securities | Jointly liable with buyer and seller for the tax and the delay charge | Art. 83 bis, Law 153/2026 |
+| Clearing body fails on a 33% deal | Jointly liable with the party in whose favour the deal was made for the tax and the delay charge | Art. 83 bis (1), Law 76/2017 |
+| Late payment | Delay charge at the Central Bank credit and discount rate on 1 January before the due date plus 2%, part months and pounds dropped; 20.50% on 1 Jan 2026, so 22.50% a year on amounts due in 2026 | Law 206/2020 art. 53, as stated in ETA circular 1/2026 |
+| Late returns, wrong returns, evasion | The offences and fines of Law 206/2020, Part 9, apply to stamp tax through Law 206 issuing art. 1; the figures are in `eg-income-tax` and are not repeated here | Law 206/2020 |
 
-### 3.2 Securities transactions
+## Cross-border points
 
-| Transaction | Stamp duty rate | Basis |
-|---|---|---|
-| Sale/purchase — resident, listed, <33% | **0%** (suspended since 1 Jan 2022) | Total proceeds |
-| Sale/purchase — resident, unlisted, <33% | 0.05% each side | Total proceeds (gross, no cost deduction) |
-| Sale/purchase — non-resident, listed or unlisted, <33% | 0.125% each side | Total proceeds (gross) |
-| Sale/purchase — ≥33% of company | 0.3% each side | Gross transaction value |
-| Same-day buy + sell of same securities | **0%** (exempt) | N/A |
-| T-bills / T-bonds transactions | Limited exemptions | **Verify** current treatment |
+- From 29 July 2026 a non-resident pays the same stamp rate on listed securities as a resident (0.05% each side, 0.025% same day). Before that date, non-residents paid 0.125% each side while residents did not pay.
+- Securities gains of non-residents are an income tax question; see `eg-income-tax` (listed gains exempt, unlisted shares taxed with a 60-day payment rule for non-resident sellers).
+- No treaty relief from stamp tax was found in the texts read.
 
-### 3.3 Banking and financial services
+## Two worked examples that recompute
 
-| Transaction | Stamp duty | Notes |
-|---|---|---|
-| Bank loans / credit facilities | 0.4% annually (shared 50/50 bank + client) | Quarterly: based on beginning-of-quarter balance + amounts utilised within the quarter |
-| Loans from non-bank entities | Not subject to 0.4% stamp | Only Egyptian banks and foreign bank branches |
-| Bank guarantees | Nominal stamp | **Verify** current rate |
-| Letters of credit | Nominal + possible proportional | **Verify** current treatment |
+**Case 1. Listed shares sold for EGP 2,000,000 in September 2026, held overnight.** Seller pays 0.05% = 1,000; buyer pays 0.05% = 1,000; total stamp tax 2,000. Under the old text, if the seller had been a non-resident before 29 July 2026, the seller's share would have been 0.125% = 2,500.
 
-### 3.4 Insurance
-
-| Insurance type | Stamp duty rate | Notes |
-|---|---|---|
-| Life insurance | 1% of premium | Per Law 30/2023 |
-| Health / bodily injury / civil liability / compulsory insurance | 2% of premium | Per Law 30/2023 |
-| Land / river / sea / air transport insurance | 11% of insurance consideration | Min EGP 1; increased from 10% by Law 30/2023 |
-| Other insurance (incl. war risk) | 11% of premium | Min EGP 1; increased from 10% by Law 30/2023 |
-
-### 3.5 Property and leases
-
-| Document | Stamp duty treatment | Notes |
-|---|---|---|
-| Lease agreements | Nominal per page + possible proportional on annual rent | **Verify** specific proportional rate |
-| Property sale contracts | Subject to proportional stamp duty | Overlaps with real estate tax — see `eg-real-estate-tax` |
-| Mortgage contracts | Subject to stamp duty | **Verify** current rate |
-
-### 3.6 Court and legal documents
-
-| Document | Stamp duty | Notes |
-|---|---|---|
-| Court petitions / claims | Fixed per document | Varies by court type |
-| Judgments | Nominal | **Verify** current rate |
-| Powers of attorney (توكيل) | Fixed per document | Varies by type (general, special, banking) |
-| Notarised declarations (إقرار موثق) | Nominal + possible proportional | Depends on subject matter |
-| Affidavits | Nominal | **Verify** current rate |
-
-### 3.7 Advertising
-
-| Medium | Stamp duty rate | Notes |
-|---|---|---|
-| General advertising | 20% | Increased from 15% by Law 104/2012 |
-| Differentiated by medium | Varies (billboard, newspaper, radio, TV) | **Verify** current per-medium rates |
-| Public authority ads | Exempt | Government/ public service announcements |
-| Election ads | Exempt | Per amendment |
-
----
-
-## Section 4 — Worked examples
-
-### Example 1 — Company formation (LLC)
-
-**Scenario:** An Egyptian LLC is formed with paid-in capital of EGP 2,000,000 through GAFI.
-
-**Working:**
-- GAFI authentication fee: EGP 2,000,000 × 0.25% = EGP 5,000 (below EGP 10,000 cap)
-- GAFI service fee: EGP 2,000,000 × 0.1% = EGP 2,000 (above EGP 1,000 min, below EGP 10,000 max)
-- Articles of association: Exempt from stamp duty if qualifying Investment Law project
-- **Total stamp duty / formation fees: EGP 7,000** (if Investment Law exemption does not apply, articles of association may attract additional nominal stamp per page)
-
----
-
-### Example 2 — Securities sale (resident, unlisted, <33%)
-
-**Scenario:** A resident investor sells unlisted Egyptian company shares for EGP 10,000,000 (represents 15% of company).
-
-**Working:**
-- Transaction < 33% of company → 0.05% rate applies
-- Seller stamp duty: EGP 10,000,000 × 0.05% = EGP 5,000
-- Buyer stamp duty: EGP 10,000,000 × 0.05% = EGP 5,000
-- **Total stamp duty: EGP 10,000** (0.1% aggregate)
-- Executing body collects and remits within 5 days of start of following month
-
----
-
-### Example 3 — Securities sale (non-resident, ≥33%)
-
-**Scenario:** A non-resident investor sells 40% of an Egyptian company for EGP 50,000,000.
-
-**Working:**
-- Transaction ≥ 33% of company → 0.3% rate applies
-- Seller stamp duty: EGP 50,000,000 × 0.3% = EGP 150,000
-- Buyer stamp duty: EGP 50,000,000 × 0.3% = EGP 150,000
-- **Total stamp duty: EGP 300,000** (0.6% aggregate)
-- No cost deductions from gross transaction value
-
----
-
-### Example 4 — Bank loan quarterly stamp duty
-
-**Scenario:** A company has a bank credit facility with Egyptian bank. Beginning-of-quarter balance: EGP 20,000,000. Amount utilised within quarter: EGP 5,000,000.
-
-**Working:**
-- Stamp base: EGP 20,000,000 + EGP 5,000,000 = EGP 25,000,000
-- Annual rate: 0.4% → quarterly rate: 0.1%
-- Stamp duty for quarter: EGP 25,000,000 × 0.1% = EGP 25,000
-- Shared 50/50: Bank pays EGP 12,500, Client pays EGP 12,500
-- **Total quarterly stamp duty: EGP 25,000**
-
----
-
-### Example 5 — Insurance premium stamp duty
-
-**Scenario:** A company purchases transport insurance (marine cargo) with annual premium of EGP 100,000 and property insurance (other) with annual premium of EGP 50,000.
-
-**Working:**
-- Transport insurance: EGP 100,000 × 11% = EGP 11,000 (min EGP 1 satisfied)
-- Other insurance (property): EGP 50,000 × 11% = EGP 5,500 (min EGP 1 satisfied)
-- **Total stamp duty: EGP 16,500**
-- Insurer collects and remits to ETA
-
----
-
-### Example 6 — Same-day securities exception
-
-**Scenario:** A day trader buys and sells the same unlisted Egyptian shares on the same day. Purchase: EGP 1,000,000; Sale: EGP 1,050,000.
-
-**Working:**
-- Same-day buy + sell of same securities → exempt from stamp duty
-- **Stamp duty: EGP 0** (both buyer and seller sides exempt)
-- Must be genuinely same-day transactions; **verify** with executing body
-
----
-
-## Section 5 — Tier 1 rules (compressed)
-
-**Two types of stamp duty:**
-- **Nominal (fixed):** imposed per-document/per-page, regardless of value. Contracts ~EGP 1 per page per copy.
-- **Proportional (percentage):** levied based on transaction value, ranging 0.05%–0.6%.
-
-**Securities:**
-- Resident + listed + <33%: suspended since 1 Jan 2022 (formerly 0.05%)
-- Resident + unlisted + <33%: 0.05% each side
-- Non-resident + any + <33%: 0.125% each side
-- ≥33% of company: 0.3% each side (0.6% aggregate)
-- Same-day: exempt
-- No cost deductions from gross proceeds
-
-**Bank loans:**
-- 0.4% annual (0.1% quarterly) on beginning-of-quarter balance + in-quarter utilisation
-- Only Egyptian banks and foreign bank branches
-- Shared 50/50 between bank and client
-
-**Insurance:**
-- Life: 1%; Health/injury/compulsory: 2%; Transport: 11%; Other: 11%
-- All with minimum EGP 1 for proportional insurance stamps
-
-**Company formation:**
-- GAFI authentication: 0.25% of paid-in capital, cap EGP 10,000
-- GAFI service: 0.1% of capital, min EGP 1,000, max EGP 10,000
-- Investment Law 72/2017: articles of association, loan agreements, pledge contracts exempt for qualifying projects (5 years from registration)
-
-**Payment mechanics:**
-- Securities: executing body (broker) collects and remits within 5 days of start of following month
-- Bank loan stamp: quarterly payment
-- Insurance: insurer collects and remits
-- Company formation: paid at GAFI at incorporation
-- Stamp duty on documents: paid at tax office or through e-stamp system
-
-**Penalties:**
-- Understamping: penalty proportional to the shortfall (verify current penalty rate)
-- Late payment: interest accrues
-- Non-remitting executing bodies: jointly liable with buyer and seller for tax + penalties
-
----
-
-## Section 6 — Tier 2 catalogue (genuinely data-unknowable items)
-
-| Item | Why unknowable | What to ask |
-|---|---|---|
-| Nominal rate per specific document type | Rate schedule adjusted by multiple amendments; per-document rates vary | "Provide the exact document type and I will verify against the current Article 51 schedule of Law 111/1980." |
-| Investment Law 72/2017 exemption | Project-specific; depends on GAFI registration and qualifying activity | "Is the project registered under Investment Law 72/2017? What is the GAFI registration number?" |
-| Listed vs unlisted security | Determines whether 0.05% suspension applies (listed only) | "Is the security listed on the Egyptian Exchange (EGX)? Provide the ticker." |
-| Free zone company stamp treatment | Special regimes apply; different from mainland | "Is the company in a free zone or mainland? Which free zone authority?" |
-| Islamic finance stamp treatment | May differ from conventional banking products | "Is the financing structure conventional or Islamic (Murabaha, Musharaka, etc.)? Provide contract type." |
-| Historical transaction (pre-2020) | Transition rules from pre-199/2020 and pre-30/2023 regimes | "What was the transaction date? Pre- or post-30 Sep 2020? Pre- or post-Law 30/2023?" |
-| Real estate transaction overlap | May attract both stamp duty and real estate tax | "Is this a property sale? See `eg-real-estate-tax` skill for the real estate tax component." |
-| Advertising sub-category | Differentiated by medium (billboard, newspaper, radio, TV) | "What medium is the advertisement? Different rates apply per medium." |
-
----
-
-## Section 7 — Excel working paper
-
-**Columns:** Date | Document/Transaction Type | Counterparty | Value (EGP) | Duty Type (Nominal/Proportional) | Rate | Pages/Copies | Nominal Duty (EGP) | Proportional Duty (EGP) | Total Duty (EGP) | Tier 2 flag | Notes
-
-**Tab structure:**
-1. `Formation_Documents` — company formation stamp duty
-2. `Securities_Transactions` — buy/sale of shares/securities
-3. `Bank_Loans` — quarterly bank loan stamp
-4. `Insurance_Premiums` — insurance stamp duty
-5. `General_Documents` — contracts, leases, notarised documents (nominal)
-6. `StampDuty_Summary` — total stamp duty payable
-7. `Tier2_Items` — awaiting client response
-
-**Key formulas:**
-```
-Nominal_Duty = Pages × Copies × Rate_Per_Page
-Proportional_Duty = Transaction_Value × Rate
-Total_Duty = Nominal_Duty + Proportional_Duty
-Quarterly_Bank_Stamp = (BOQ_Balance + In_Quarter_Utilisation) × 0.1%
-Securities_Stamp = Gross_Proceeds × Applicable_Rate × 2 (buyer + seller)
+```oa-check
+name: Listed sale EGP 2,000,000 after 29 Jul 2026, against old non-resident rate
+inputs:
+  value: 2000000
+steps:
+  - seller: value * 0.0005
+  - buyer: value * 0.0005
+  - total: seller + buyer
+  - old_nonresident_seller: value * 0.00125
+expected:
+  seller: 1000.00
+  buyer: 1000.00
+  total: 2000.00
+  old_nonresident_seller: 2500.00
 ```
 
----
+**Case 2. Decision: close a trade the same day or hold overnight.** A trader buys listed shares for EGP 1,000,000 and sells them for EGP 1,050,000. The trader is buyer on the first sale and seller on the second. Same day: 0.025% x 1,000,000 + 0.025% x 1,050,000 = 250 + 262.50 = 512.50. Next day: 0.05% on each = 500 + 525 = 1,025. Closing the same day halves the trader's stamp tax, saving 512.50; the trading decision should still turn on price risk, not on this.
 
-## Section 8 — Legislative timeline
+```oa-check
+name: Round trip 1,000,000 buy and 1,050,000 sell, same day against next day
+inputs:
+  buy: 1000000
+  sell: 1050000
+steps:
+  - same_day: buy * 0.00025 + sell * 0.00025
+  - next_day: buy * 0.0005 + sell * 0.0005
+  - saving: next_day - same_day
+expected:
+  same_day: 512.50
+  next_day: 1025.00
+  saving: 512.50
+```
 
-| Year | Law | Change |
+## Ask the client first
+
+1. What is the document or transaction, and its date (before or after 29 July 2026 for securities)?
+2. For securities: listed on the EGX or not, an investment fund unit or not, bought and sold on the same day or not, and is the party an approved market maker?
+3. Does the deal reach 33% of shares, voting rights or assets of a resident company, alone or with purchases in the last two years?
+4. Is the company a project under the Investment Law 72/2017, and when was it entered in the commercial register (five-year window)? Is it a free zone project?
+5. For any other document (contract, bank facility, insurance policy, receipt): the type, the value, and the number of copies.
+6. Any open dispute or unremitted tax?
+
+Do not present output as a filed return or a professional sign-off.
+
+## Sources
+
+| Source | URL | Read on |
 |---|---|---|
-| 1980 | Law No. 111/1980 | Original Stamp Tax Law enacted |
-| 2006 | Law No. 140/2006 | Various rate adjustments |
-| 2012 | Law No. 104/2012 | Advertising tax increased from 15% to 20%; differentiated by medium |
-| 2014 | Decree-Law No. 53/2014 | Amendments to both Income Tax Law 91/2005 and Stamp Duty Law 111/1980 |
-| 2018 | Law No. 110/2018 | Various amendments to stamp duty schedule |
-| 2019 | Law No. 147/2019 | Resource development fee adjustments |
-| 2019 | Law No. 174/2019 | Further stamp duty amendments |
-| 2020 | Law No. 199/2020 | Securities stamp duty reformed: resident rate cut to 0.05% (from 0.15%); non-resident 0.125%; suspended for listed shares from 1 Jan 2022; same-day exemption introduced |
-| 2021 | Draft amendments | Proposed 1% additional on insurance premiums (not enacted in original form) |
-| 2023 | Law No. 30/2023 | Insurance stamp duty revised: life 1%, health/injury 2%, transport 11% (from 10%), other 11% (from 10%); replaced capital gains tax on listed securities with unified proportional stamp duty; repealed Art 5 of Law 199/2020 |
-| 2025 | Law No. 157/2025 | Primarily VAT amendments; some stamp-adjacent changes in financial services |
+| Stamp Tax Law 111 of 1980, Gazette 22 bis (a), 31 May 1980: issuing articles 1 to 4 only (page image read); the schedule pages are 1980 amounts since amended and were not relied on | https://eta.gov.eg/sites/default/files/2026-05/law.no_.111.of_.1981.pdf | 2026-11-02 |
+| Law 153 of 2026, arts. 1 to 3 (art. 83 bis, repeal of Law 199/2020 art. 5, start date); Gazette 30 bis (a), 28 Jul 2026; text layer read | https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf | 2026-11-02 |
+| Law 199 of 2020, arts. 1, 4, 5, 9 (old art. 83 bis rates, resident exemption); Gazette 39 bis (z), 30 Sep 2020; text layer read | https://eta.gov.eg/sites/default/files/2024-03/law_no.199-2020.pdf | 2026-11-02 |
+| Law 76 of 2017, art. 3 (art. 83 bis (1), 33% rule) and arts. 4, 5; Gazette 24 bis (b), 19 Jun 2017; page images 3 and 4 read | https://eta.gov.eg/sites/default/files/2024-03/law_no.76-2017.pdf | 2026-11-02 |
+| Law 3 of 2022, art. 5 (advertising to VAT, repeal of Stamp Tax Law arts. 60 and 64) and art. 7 (start date); Gazette 3 bis (h), 26 Jan 2022; page image 11 read | https://eta.gov.eg/sites/default/files/2024-03/vat-law_no.3-2022.pdf | 2026-11-02 |
+| ETA news, 13 Mar 2022, advertising moved from 20% stamp tax to 14% VAT (read for the former 20% rate and the list of advertisements now exempt from VAT) | https://www.eta.gov.eg/ar/news/afa-alalanat-mn-drybt-aldmght-albalght-20-alty-kant-tkhd-lha-sabqana-wakhdaha-llsr-alam-ldrybt | 2026-11-02 |
+| ETA news, 26 Jul 2026, income tax and stamp tax amendments (read for unlisted securities leaving stamp tax, market makers) | https://eta.gov.eg/ar/news/tdylat-jwhryt-ly-qanwn-aldrybt-ly-aldkhl-wqanwn-aldrybt-ly-aldmght-llqda-ly-alazdwaj-aldryby | 2026-11-02 |
+| Investment Law 72 of 2017, arts. 9 and 10 (page image 11 read) | https://eta.gov.eg/sites/default/files/2024-10/law-72-2017.pdf | 2026-11-02 |
+| Unified Tax Procedures Law 206 of 2020, issuing art. 1 (page image 1 read) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-02 |
+| ETA Services Guide, 2nd edition: services 1/2 (e-filing help, activity 2) and 2/11 (stamp tax enquiries and scope, activity 11) only | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-02 |
+| ETA circular 1 of 2026, Central Bank rates and the Law 206 art. 53 delay charge (page image read) | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf | 2026-11-02 |
+| ETA stamp forms page (read for the list of forms) | https://www.eta.gov.eg/ar/content/nmadhj-aldmght | 2026-11-02 |
+| Form 21 (kh) table 3 and table 4 templates (column headers read: art. 79 pay tax; art. 80 ordinary and additional tax); forms 9 and 10 templates (column headers read: advertiser, agency, advertising cost) | https://eta.gov.eg/sites/default/files/2023-05/ETA_Stamp_21_table_3_Template_V.01.csv | 2026-11-02 |
+| Law 30 of 2023 (amends Income Tax Law 91/2005 and Law 182/2020), Gazette 24 (cont.), 15 Jun 2023: text layer searched, no stamp tax provision found (art. 4 waives unpaid capital gains tax on listed shares from January 2022) | https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf | 2026-11-02 |
+| ETA "income tax laws" and "other related laws" listing pages (read to find the amending laws; Laws 143/2006 and 9/2013 are not listed there) | https://www.eta.gov.eg/ar/content/qwanyn-aldrybt-ly-aldkhl | 2026-11-02 |
 
----
-
-## Section 9 — E-stamp and digital integration
-
-Egypt's digital tax ecosystem is evolving rapidly:
-
-### ETA e-invoicing (منظومة الفواتير الإلكترونية)
-- Mandatory for all VAT-registered businesses since July 2023
-- ETA e-invoices carry UUIDs; only e-invoices recognised for deductible costs
-- Stamp duty on e-invoices: nominal stamp applies; the e-invoice system is separate from stamp duty collection but both are administered by ETA
-- **Verify** whether e-invoice stamp is automatically applied or requires separate payment
-
-### E-signature and e-seal (التوقيع والإ士م الإلكتروني)
-- Electronic Signature Law No. 15 of 2004 established ITIDA as regulatory authority
-- Egypt Trust (إيجيبت تراست) and other licensed providers issue digital signature and e-seal certificates
-- E-seal (الختم الإلكتروني) is the digital equivalent of a company rubber stamp
-- Digital stamp certificates integrate with ETA, customs, and social security systems
-- Time-stamp services added to e-signature law (2020s)
-
-### E-stamp / electronic stamping
-- ETA is progressively integrating stamp duty collection into electronic systems
-- Company formation: GAFI's electronic portal handles authentication and service fees in one transaction
-- Securities: stamp duty collected and remitted electronically by executing bodies (brokers)
-- Insurance: insurers rem stamp duty through ETA's electronic systems
-- Bank loan stamp: remitted quarterly through banking system integration
-- **Verify** current status of ETA's dedicated e-stamp portal for general documents
-
-### Document and life cycle integration
-- Egypt is building integrated government services through digital.gov.eg (مصر الرقمية)
-- Long-term goal: stamp duty automatically assessed and collected at point of document registration/ notarisation
-- Notarisation offices (الشهر العقاري) are being digitised; stamp duty will be integrated
-- **This is an evolving area — verify current digital channels with ETA.**
-
----
-
-## Section 10 — Exempt documents
-
-The following are exempt from stamp duty under Law 111/1980 and subsequent amendments:
-
-| Exempt document | Legal basis | Notes |
-|---|---|---|
-| Articles of association, loan agreements, pledge contracts (Investment Law projects) | Investment Law 72/2017 | 5 years from company registration; qualifying projects only |
-| Government / public authority advertisements | Law 104/2012 amendment | Public service announcements |
-| Election campaign advertisements | Law 104/2012 amendment | During election periods |
-| Same-day securities transactions | Law 199/2020 | Buy and sell on same day |
-| Payroll payslips / salary documents | General exemption | Labour/social insurance documents |
-| Constitutional guarantees and documents | Constitutional provisions | Constitutional rights documents |
-| Certain diplomatic documents | International conventions | Verify per document type |
-| Documents issued by charities and religious institutions | Exemption provisions | Verify qualifying entities |
-| Marriage / birth / death certificates | Civil status documents | Government-issued civil registry |
-
-> **Verify** all exemptions against the current schedule — exemption lists are updated by amendment.
-
----
-
-## Section 11 — Reference material
-
-| Resource | Reference |
-|---|---|
-| ETA main portal | https://www.eta.gov.eg |
-| ETA e-invoice portal | https://invoicing.eta.gov.eg |
-| GAFI portal | https://www.gafi.gov.eg |
-| Digital Egypt portal | https://digital.gov.eg |
-| Law No. 111/1980 (Stamp Tax Law) | ETA website — legislation section |
-| Law No. 199/2020 (Securities stamp duty reform) | Official Gazette, 29 Sep 2020 |
-| Law No. 30/2023 (Insurance stamp duty revision) | Official Gazette Issue 25, 15 Jun 2023 |
-| Investment Law No. 72/2017 | GAFI website / legislation |
-| PwC Worldwide Tax Summaries — Egypt | taxsummaries.pwc.com/egypt |
-| EY Global Tax News — Egypt stamp duty | globaltaxnews.ey.com |
-| ITIDA (e-signature regulator) | https://www.itida.gov.eg |
-| Egypt Trust (e-seal provider) | https://egypttrust.com |
-
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
----
-
-<!-- openaccountants-cta-block -->
-
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://www.openaccountants.com/network).
-
-<!-- openaccountants-mcp-cta -->
+Not yet confirmed: the current schedule of specific (per document) and proportional stamp tax outside securities, because the amending laws that set it (Law 143/2006 and later) are not published on eta.gov.eg and no Gazette copy was read. That covers every item the old version carried from secondary sources: about EGP 1 per page per copy on contracts; the 0.4% a year stamp tax on bank credit facilities, loans and advances (old text: on the balance at the start of each quarter plus amounts used in the quarter, shared half and half between bank and client, Egyptian banks and branches of foreign banks only, loans from non-banks out); insurance premiums at 1% (life), 2% (health, injury, compulsory), 11% (land, river, sea and air transport, minimum EGP 1) and 11% (other, including war risk, minimum EGP 1), which the old version wrongly tied to Law 30/2023 (that law amends the Income Tax Law and Law 182/2020); rates for bank guarantees, letters of credit, leases, property sale and mortgage contracts, court documents, powers of attorney, notarised declarations, affidavits, commercial register extracts and certificates; the exempt document list (payslips, civil status certificates, diplomatic, charity and religious bodies). Whether art. 83 bis (1) (33% rule) still reaches deals in unlisted shares now that art. 83 bis covers listed securities only. Whether the Law 199/2020 art. 4 deferral, which fixed the start of the resident exemption, was later extended by any instrument (Law 30/2023 art. 4, waiving unpaid capital gains tax on listed shares from January 2022, is consistent with a 1 Jan 2022 start, but no extension decision was searched). The content of the other stamp amending laws the old version named (Laws 140/2006, 53/2014, 110/2018, 147/2019, 174/2019) and its claim that a nominal stamp applies to e-invoices. Whether the Law 7/2025 cap of the delay charge at 100% of the principal (see `eg-income-tax`) applies to stamp tax; it is a Law 206 rule, so it probably does, but the text was not read for this skill. The filing frequency, due date and form number of the general stamp return, and the due date for form 21 (kh). GAFI authentication fee (0.25% of paid-in capital, cap EGP 10,000) and GAFI service fee (0.1%, minimum EGP 1,000, maximum EGP 10,000), which are GAFI fees, not stamp tax, and were not read. Treatment of treasury bills and bonds (the old version said limited exemptions apply). Who remits outside securities (the old version said insurers collect and remit the insurance stamp, banks remit the credit stamp quarterly, and formation documents are paid at GAFI) and the old version's unsourced "understamping penalty proportional to the shortfall". Free zone and Islamic finance treatment. ETA e-stamp channels for general documents.
 
 ## The accountant-verified version lives in the connector
 
@@ -521,4 +171,4 @@ verified rules together with the name of the accountant who signed them off.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-stamp-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-stamp-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-02. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-stamp-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-stamp-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.

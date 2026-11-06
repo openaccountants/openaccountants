@@ -7,14 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-tax-overview"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-27"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
+  last_updated: "2026-10-31"
 ---
 
-# Finland tax overview v0.4
+# Finland tax overview v0.5
 
-## Start with the question and the taxpayer
+## Scope
 
 Use the existing topic skill and its source/read-date record before applying a figure. Distinguish tax residence, legal entity, income or transaction category and the relevant year. The [pack README](README.md) records coverage and remaining gaps; the revised ordinary pack’s review evidence is recorded there.
 
@@ -34,52 +32,94 @@ Use the existing topic skill and its source/read-date record before applying a f
 | Acquisition of real estate or housing-company shares | [Property-transfer tax](fi-property-transfer-tax.md) | Acquisition base, debt, earnouts, filing and sanctions; annual tax and rent/gains use separate linked computations. |
 | Entity formation | [Formation draft](fi-company-formation.md) | Current PRH setup/fee and selected statutory checks; broader entity, accounting and specialist review remain open. |
 
-## Finland at a glance (2026)
+## Ask the client first
 
-| Point | 2026 position | Where it is computed |
-|---|---|---|
-| Levels of tax | State income tax, municipal tax and, for church members, parish tax; administered by the Finnish Tax Administration (Vero), e-services in MyTax (OmaVero) | [Individual income tax](fi-income-tax.md) |
-| Tax year and currency | Calendar year; euro | [Individual income tax](fi-income-tax.md); [Corporate income tax](fi-corporate-income-tax.md) |
-| Basis | Residents on worldwide income; non-residents on Finnish-source income | [Individual cross-border residence](fi-individual-cross-border-residence.md); [Income Tax Act 1535/1992, sections 9–10][ita] |
-| Individual rates | Progressive state tax on earned income plus municipal/parish tax; capital income 30% up to EUR 30,000, 34% above | [Individual income tax](fi-income-tax.md); [Income Tax Act, section 124][ita] |
-| Corporate rate | 20% | [Corporate income tax](fi-corporate-income-tax.md); [Income Tax Act, section 124][ita] |
-| VAT rates | 25.5% general; 13.5% reduced from 1 January 2026 (formerly 14%); 10% newspapers/magazines | [VAT return](finland-vat-return.md); [VAT Act 1501/1993, sections 84–85a][vat] |
-| Individual return | Review and correct the pre-completed return in MyTax by the date allocated on it | [Individual income tax](fi-income-tax.md) |
-| Corporate return | Within four months after the end of the calendar month in which the financial period ends | [Corporate income tax](fi-corporate-income-tax.md) |
+- Is the taxpayer resident in Finland for the year, and an individual or an entity?
+- What type of income or transaction is it, and in which year?
+- For an individual: is the taxable capital income above EUR 30,000?
+- For VAT: which rate class does the supply fall into?
+
+## The method, step by step
+
+Classify the question with the Scope table, open the named skill, and take the computation from it. The table below is for orientation only.
+
+### Finland at a glance (2026)
+
+| Point | 2026 rate or position | Where it is computed | Official source |
+|---|---|---| --- |
+| Levels of tax | State income tax, municipal tax and, for church members, parish tax; administered by the Finnish Tax Administration (Vero), e-services in MyTax (OmaVero) | [Individual income tax](fi-income-tax.md) | https://www.finlex.fi/fi/lainsaadanto/1992/1535 |
+| Tax year and currency | Calendar year; euro | [Individual income tax](fi-income-tax.md); [Corporate income tax](fi-corporate-income-tax.md) | same |
+| Basis | Residents on worldwide income; non-residents on Finnish-source income | [Individual cross-border residence](fi-individual-cross-border-residence.md); [Income Tax Act 1535/1992, sections 9–10][ita] | same |
+| Individual rates | Progressive state tax on earned income plus municipal/parish tax; capital income 30% up to EUR 30,000, 34% above | [Individual income tax](fi-income-tax.md); [Income Tax Act, section 124][ita] | same |
+| Corporate rate | 20% | [Corporate income tax](fi-corporate-income-tax.md); [Income Tax Act, section 124][ita] | same |
+| VAT rates | 25.5% general; 13.5% reduced from 1 January 2026 (formerly 14%); 10% newspapers/magazines | [VAT return](finland-vat-return.md); [VAT Act 1501/1993, sections 84–85a][vat] | https://www.finlex.fi/fi/lainsaadanto/1993/1501 |
+| Individual return | Review and correct the pre-completed return in MyTax by the date allocated on it | [Individual income tax](fi-income-tax.md) | The linked skill |
+| Corporate return | Within four months after the end of the calendar month in which the financial period ends | [Corporate income tax](fi-corporate-income-tax.md) | The linked skill |
 
 ## Workpaper handoff
 
 Record the facts, selected skill/version, source passages, assumptions, calculations and unresolved points together. Separate preparation from a return submitted or a payment made. File count, executable arithmetic and an HTTP success response do not establish country completeness or named accountant review.
 
-## Sources and review limits
+## Worked cases
+
+### Case 1: Capital income of EUR 40,000
+
+The first EUR 30,000 bears 30% and the remaining EUR 10,000 bears 34%.
+
+```oa-check
+name: Capital income EUR 40,000 (2026)
+inputs:
+  income: 40000
+steps:
+  - tax: min(income, 30000) * 0.30 + max(income - 30000, 0) * 0.34
+expected:
+  tax: 12400.00
+```
+
+### Case 2: Keep EUR 50,000 in a company or draw it as capital income
+
+Corporate income tax on EUR 50,000 is 20%. The same amount as capital income of an individual is taxed at 30% and 34%. This compares the rates only; dividends and earned income rules sit in the topic skills and can reverse the answer.
+
+```oa-check
+name: EUR 50,000 at the corporate rate against the capital income rates
+inputs:
+  amount: 50000
+steps:
+  - corporate: amount * 0.20
+  - capital: min(amount, 30000) * 0.30 + max(amount - 30000, 0) * 0.34
+  - difference: capital - corporate
+expected:
+  corporate: 10000.00
+  capital: 15800.00
+  difference: 5800.00
+```
+
+## When to refuse or refer
+
+Refer specialist regimes, treaty outcomes and anything the linked skills scope out. This overview does not produce a filing figure.
+
+## Review limits
 
 This router was reconciled to the existing Finland source pack on 26 October 2026. Tax rules and official URLs belong to the linked topic skills; no independent legal conclusion is supplied by this index. Earlier 2025 summary figures remain in Git history and must not substitute for current topic-source checks.
 
-The independent source review, corrections and remaining gaps are recorded in the [country README](README.md#evidence-and-next-action). See [OWNERS.md](../../../OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.
+The independent source review, corrections and remaining gaps are recorded in the [country README](README.md#evidence-and-next-action). See [OWNERS.md](../../docs/OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.
 
 [ita]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [vat]: https://www.finlex.fi/fi/lainsaadanto/1993/1501
 
 > Contributed by Michael Cutajar.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Source | URL | Read on |
+| --- | --- | --- |
+| Income Tax Act 1535/1992, section 124 (capital income, corporate rate) | https://www.finlex.fi/fi/lainsaadanto/1992/1535 | 2026-10-31 |
+| VAT Act 1501/1993, sections 84, 85 and 85a | https://www.finlex.fi/fi/lainsaadanto/1993/1501 | 2026-10-31 |
+| Vero, VAT rates | https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/ | 2026-10-31 |
+| Vero, tax rates on capital income | https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/ | 2026-10-31 |
 
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the individual and corporate return dates in the table were not re-read here and belong to the linked skills.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.

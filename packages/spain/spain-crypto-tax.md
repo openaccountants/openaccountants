@@ -4,14 +4,13 @@ description: Compute 2026 common-territory Spanish individual tax on cryptocurre
 version: 1.3
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+last_updated: 2026-11-06
 depends_on:
   - es-income-tax
 category: crypto
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: crypto
 ---
 
 # Spain cryptocurrency: 2026 individual income tax and foreign-custody reporting v1.3
@@ -20,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This Guide covers **2026** common-territory IRPF for an individual investing in cryptocurrency, including sales, swaps, qualifying staking income, losses and foreign-custody information reporting. Spanish residents ordinarily bring worldwide income into IRPF under [LIRPF arts. 2 and 8–9](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a2). A foreign platform does not exempt its income. Foral law, a valid incoming-worker election and non-residence require their own route; see [es-income-tax](es-income-tax.md), [es-beckham](es-beckham.md) and [IRNR/cross-border](es-non-resident-income-tax-irnr-and.md).
 
-**Foral ordinary disposals use their own method.** For Bizkaia, Álava, Gipuzkoa or Navarra, use [the foral PIT crypto method](es-foral-income-tax.md#ordinary-nonbusiness-crypto-sales-swaps-and-loss-timing) and [dated local foreign-custody reporting route](es-foral-income-tax.md#foreign-crypto-custody2026-balances-and-the2027-procedure). Those additions supply local fiat-sale costs/update, Basque fungible FIFO, statutory different-coin swap valuation, source-specific loss treatment and local annual savings routing. The common-territory DGT/AEAT explanations below do not establish another territory's rules. The foral method supplies labelled own-law B/G/Navarra received-swap-basis derivations, evidenced mixed-fee and separate fee-token ledgers, and Navarra actual-provenance calculations. It preserves Álava's loss-release cross-reference conflict, Navarra indistinguishable-unit identification and fungible reacquisition questions, plus2027 model/procedure boundaries; these ordinary limits are distinct from the special-token/wealth work reserved below.
+**Foral ordinary disposals use their own method.** For Bizkaia, Álava, Gipuzkoa or Navarra, use [the foral PIT crypto method](es-foral-income-tax-savings.md#ordinary-nonbusiness-crypto-sales-swaps-and-loss-timing) and [dated local foreign-custody reporting route](es-foral-income-tax-savings.md#foreign-crypto-custody2026-balances-and-the2027-procedure). Those additions supply local fiat-sale costs/update, Basque fungible FIFO, statutory different-coin swap valuation, source-specific loss treatment and local annual savings routing. The common-territory DGT/AEAT explanations below do not establish another territory's rules. The foral method supplies labelled own-law B/G/Navarra received-swap-basis derivations, evidenced mixed-fee and separate fee-token ledgers, and Navarra actual-provenance calculations. It preserves Álava's loss-release cross-reference conflict, Navarra indistinguishable-unit identification and fungible reacquisition questions, plus2027 model/procedure boundaries; these ordinary limits are distinct from the special-token/wealth work reserved below.
 
 Classify each transaction by its actual contract and activity. A platform's “earn”, “staking”, “airdrop” or “yield” label is insufficient. Own-account investment is distinct from organised production/services under [art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27); frequent purchases alone are not the complete legal test. Company holdings use corporate tax and accounting, not this individual rate computation. Security tokens, NFTs and a transfer of a claim against an insolvent exchange can have different legal rights from an ordinary fungible coin.
 
@@ -240,21 +239,3 @@ expected:
 | [B current NF13/2013 arts.43–47/63/66/76](https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068), [A current NF33/2013 same articles](https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf), [G current NF3/2014 same articles](https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc), [N current DFL4/2008 arts.39–43/54/60](https://www.boe.es/buscar/act.php?id=BON-n-2008-90013&p=20260420&tn=1) | Selected ordinary local crypto/gain/loss/savings provisions; actual amendments, administrative bridges and local reporting source scopes are recorded in the linked foral method. This row supports routing, not application of common DGT rulings to a foral taxpayer. | 2026-10-28 |
 
 **Not yet confirmed:** specific common-territory art. 33.5.e reacquisition application to fungible coin units; the foral Guide supplies ordinary sale/swap/savings methods and dated local reporting gates, with labelled own-law B/G/Navarra received-basis derivations and evidenced mixed-fee/fee-token calculations now supplied; Álava's43(i) release conflict, Navarra indistinguishable-unit identification and fungible reacquisition, unsupported fee allocation or simultaneous ordering, and applicable2027 reporting-procedure limits remain unconfirmed; complete wealth/solidarity calculations; fork/bridge/wrapping/liquid-staking/LP-token/NFT and individual insolvency-case outcomes; Spanish DAC8 implementation/procedures and final 2026-income Modelo 100 schema/campaign dates. No blanket conclusion on these points is certified. Independent whole-pack review remains pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

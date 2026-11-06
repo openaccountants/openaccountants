@@ -8,8 +8,6 @@ metadata:
   jurisdiction: "JM"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Jamaica Tax Overview
@@ -28,24 +26,6 @@ Jamaica taxes income on a residence basis and runs a value-added tax called Gene
 - **Value-added tax (GCT)** — Yes — General Consumption Tax (GCT), standard rate 15% %  _([General Consumption Tax Act](https://taxsummaries.pwc.com/jamaica/corporate/other-taxes))_
 - **Annual income tax return deadline (individuals and companies)** — 15 March of the year following the tax year  _([Income Tax Act](https://taxsummaries.pwc.com/jamaica/individual/tax-administration))_
 - **Estimated/quarterly tax payment dates** — 15 March, 15 June, 15 September and 15 December  _([Income Tax Act](https://taxsummaries.pwc.com/jamaica/individual/tax-administration))_
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

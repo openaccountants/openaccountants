@@ -4,10 +4,9 @@ description: Tier 2 New York content skill for entity formation covering tax yea
 jurisdiction: US-NY
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
 ---
 
 # NY Formation
@@ -426,21 +425,3 @@ Do not cite secondary sources (treatises, blog posts, online formation services)
 - **R-NY-FORM-7** — Advice that recommends ignoring the LLC publication requirement on the theory that "no one enforces it"  _(R-NY-FORM-7)_
 
 Every output produced under this skill must be reviewed and signed off by a credentialed reviewer (NY-admitted attorney, CPA, or Enrolled Agent operating within Circular 230 scope where federal items intersect) before reaching the client or being acted upon.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

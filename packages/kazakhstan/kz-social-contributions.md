@@ -16,10 +16,11 @@ description: >
 version: 1.0
 jurisdiction: KZ
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on: [social-contributions-workflow-base]
+tier: 2
+domain: payroll
 ---
 
 # Kazakhstan Mandatory Social Payments — Self-Employed (ИП) & Employers (2026)
@@ -50,7 +51,6 @@ legal terms used on filings.
 | МРП (monthly calculation index / МРП / айлық есептік көрсеткіш) | **4,325 ₸** for 2026 (was 3,932 ₸ in 2025) |
 | Collection portal | https://cabinet.salyk.kz (КГД); ЕНПФ for pension |
 | Legal basis | New Tax Code of RK (eff. 1 Jan 2026); Law "On Compulsory Social Health Insurance"; Law "On Compulsory Social Insurance"; Social Code of RK |
-| Quality tier | **Research-verified — pending sign-off by a Kazakhstan accountant** |
 | Version | 1.0 |
 | Companion skill | **social-contributions-workflow-base — MUST be loaded** |
 

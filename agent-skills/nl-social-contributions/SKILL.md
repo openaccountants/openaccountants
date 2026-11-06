@@ -1,21 +1,18 @@
 ---
 name: nl-social-contributions
-description: "Dutch social contributions for tax year 2026, for employees, employers and the self-employed. Covers who is insured for the national insurances (AOW, Anw, Wlz) and the employee insurances (WW, WIA, ZW); the 2026 national insurance premiums of 27.65% in the first box 1 band (EUR 38,883) and the AOW-age variant; employer premiums AWf (2.74% / 7.74%), Aof (6.27% / 7.63%), Wko, Whk and the Zvw employer levy (6.10%) up to the maximum premium wage of EUR 79,409; the 4.85% Zvw contribution for the self-employed; the premium base, deadlines, fines and interest; and cross-border rules (Regulation 883/2004, A1, the 25% test, telework). Trigger on: premies volksverzekeringen, premies werknemersverzekeringen, bijdrage Zvw, werkgeversheffing Zvw, maximumpremieloon, AWf, Aof, Whk, social security Netherlands, zzp Zvw, A1 Netherlands. Out of scope: the payroll run itself (nl-payroll-tax, netherlands-payroll) and the income tax computation (nl-income-tax)."
+description: "Dutch social contributions for tax year 2026, for employees, employers and the self-employed. Covers who is insured for the national insurances (AOW, Anw, Wlz) and the employee insurances (WW, WIA, ZW); the 2026 national insurance premiums of 27.65% in the first box 1 band (EUR 38,883) and the AOW-age variant; employer premiums AWf (2.74% / 7.74%), Aof (6.27% / 7.63%), Wko, Whk and the Zvw employer levy (6.10%) up to the maximum premium wage of EUR 79,409; the 4.85% Zvw contribution for the self-employed; the premium base, deadlines, fines and interest; and cross-border rules (Regulation 883/2004, A1, the 25% test, telework). Trigger on: premies volksverzekeringen, premies werknemersverzekeringen, bijdrage Zvw, werkgeversheffing Zvw, maximumpremieloon, AWf, Aof, Whk, social security Netherlands, zzp Zvw, A1 Netherlands. Out of scope: the payroll run itself (nl-payroll-tax) and the income tax computation (nl-income-tax)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nl-social-contributions"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-23"
-  authored_by: "Ryan Duguid"
-  trust_label: "Accountant-authored"
-  review_status: "pending_review"
+  last_updated: "2026-11-01"
 ---
 
 # Netherlands social contributions (2026)
 
-This skill says which Dutch social contributions apply to a person or a business in 2026, at what rate, on what base, and when they are paid. It does not run a payroll. For the monthly payroll calculation (tables, cumulative calculation, WKR, corrections) use `nl-payroll-tax` or `netherlands-payroll`. For the income tax computation of a sole trader use `nl-income-tax`, with `nl-zzp-deductions` for taxable profit. For residence and the expat scheme use `nl-cross-border` and `nl-30-percent-ruling`.
+This skill says which Dutch social contributions apply to a person or a business in 2026, at what rate, on what base, and when they are paid. It does not run a payroll. For the monthly payroll calculation (tables, cumulative calculation, WKR, corrections) use `nl-payroll-tax`. For the income tax computation of a sole trader use `nl-income-tax`, with `nl-zzp-deductions` for taxable profit. For residence and the expat scheme use `nl-cross-border` and `nl-30-percent-ruling`.
 
 The Netherlands has three layers of contributions:
 
@@ -241,26 +238,6 @@ These are annual checks before the Belastingdienst's own rounding on the assessm
 
 Not yet confirmed: the filing deadline for the 2026 income tax return (the page read covers the 2025 return); the fine for a late income tax return by a self-employed person (not on the pages read); the AOW-age band 1 rate split for a person who reaches AOW age during 2026 (month-by-month; use the official tables); the DGA employee insurance test (no source read for the criteria).
 
-> Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

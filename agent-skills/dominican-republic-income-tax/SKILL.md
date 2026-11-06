@@ -8,10 +8,7 @@ metadata:
   jurisdiction: "DO"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  authored_by: "Miguel Lantigua, CPA"
   reviewed_by: "Miguel Lantigua"
-  trust_label: "Checked by Miguel Lantigua"
-  review_status: "current"
 ---
 
 # Dominican Republic Income Tax (ISR) -- Self-Employed and Individuals
@@ -37,7 +34,6 @@ metadata:
 | Filing portal | DGII Oficina Virtual (OFV); TSS / SUIRPLUS for SDSS |
 | Individual filing deadline | 31 March of the following year (IR-1). FY2025 due 31 March 2026 [DGII] |
 | Tax system | Territorial -- residents taxed on DR-source income [PwC] |
-| Validated by | Pending -- requires sign-off by a Dominican Contador Público Autorizado (CPA) |
 | Validation date | Pending |
 | Skill version | 0.1 |
 
@@ -626,26 +622,6 @@ Expected: Withhold 10% = **RD$5,555.56** on Form IR-17; pay net RD$50,000.00. Ex
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

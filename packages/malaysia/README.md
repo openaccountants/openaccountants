@@ -7,16 +7,17 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `malaysia-einvoice.md`
-4. `malaysia-sst.md`
-5. `my-company-formation.md`
-6. `my-corporate-income-tax.md`
-7. `my-epf-socso.md`
-8. `my-income-tax.md`
-9. `my-pcb.md`
-10. `my-tax-overview.md`
-11. `einvoice-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `malaysia-einvoice.md`
+5. `malaysia-sst.md`
+6. `my-company-formation.md`
+7. `my-corporate-income-tax.md`
+8. `my-epf-socso.md`
+9. `my-income-tax.md`
+10. `my-pcb.md`
+11. `my-tax-overview.md`
+12. `einvoice-workflow-base.md`
+13. `company-formation-workflow-base.md`
 
 ## Also known as
 

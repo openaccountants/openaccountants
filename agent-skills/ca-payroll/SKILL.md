@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "US-CA"
   tax_year: "2026"
   last_updated: "2026-10-16"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # California payroll for employers: PIT withholding, SDI, UI, ETT, filings and final pay
@@ -584,24 +581,6 @@ Misapplication risk is high in three areas:
 3. **Supplemental wages.** The flat rate applies only to separate payments and does not match the employee's tax.
 
 A taxpayer or employer relying on this skill without credentialed review proceeds at their own risk.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 

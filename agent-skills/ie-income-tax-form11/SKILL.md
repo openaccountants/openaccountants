@@ -8,9 +8,6 @@ metadata:
   jurisdiction: "IE"
   tax_year: "2026"
   last_updated: "2026-10-24"
-  authored_by: "Michael Cutajar and the OpenAccountants team"
-  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
-  review_status: "pending_review"
 ---
 
 # Ireland Form 11 (2026): self-assessment for self-employed and other chargeable persons
@@ -231,24 +228,6 @@ Refer to a practitioner: partnerships' own accounts (Form 1 (Firms)), the High I
 | Department of Social Protection, PRSI Class S rates | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
 
 Not yet confirmed: (1) the consolidated TCA text: the Law Reform Commission's Revised Acts do not include the TCA, so sections are cited through the amending Finance Act and Revenue's Notes for Guidance; amendments before Finance Act 2024 were not read in their enacting acts; (2) the 2027 ROS extension date for the 2026 Form 11; (3) the conditions the Collector-General now sets for preliminary tax direct debits after FA 2025 s.100 (the old version's rules of 8 or more payments, or at least 3 for a mid-year start, were in the deleted subsections); (4) the rule letting a new trader file the first two years' returns by the second year's return date (old version, Tax and Duty Manual 41-00-28, not re-read); (5) the DIRT rate on deposit interest (the old version said 33%; the USC exemption for DIRT-paid interest is in `ie-usc`); (6) the statutory section behind the EUR 250 penalty for an incomplete self-assessment panel; (7) whether the PRSI exemption above age 66 in Revenue's 2025 guide still applies after the age limit moved to 70 from 1 January 2024 (see `ie-prsi-class-s`); (8) whether the s.1084 surcharge base includes USC and PRSI; (9) the home office apportionment and the "treat unclear items as capital" practice points from the old version; (10) Budget 2027 changes, not yet law.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 ## Today's figures and who stands behind this skill
 
