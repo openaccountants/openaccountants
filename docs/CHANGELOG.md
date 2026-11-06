@@ -2,6 +2,14 @@
 
 All notable changes to OpenAccountants will be documented in this file.
 
+## 2026-11-06
+
+### Every skill lives under a place
+
+- **Moved** 163 files so each skill sits under a country, a region (`skills/eu/`) or `skills/global/`. The intake and return-assembly files went from `skills/orchestrator/` to their country's folder (US ones to `skills/us/federal/` and `skills/us/states/<code>/`); the US expat files went from `skills/cross-border/us-expat/` to `skills/us/federal/`; `skills/cross-border/`, `skills/foundation/` and `skills/reference/` became `skills/global/cross-border/`, `methods/`, `audit/`, `expense-patterns/`, `planning-tools/`, `financial-reporting/` (`ifrs/`, `us-gaap/`), `industries/` and `integrations/`.
+- **Unchanged:** every file name, so every slug, and every skill's text. Each move is listed in [`PATH-MOVES.md`](PATH-MOVES.md).
+- **Scripts** follow the new folders (`repo_layout.py`, `build-packages.py`, `build-agent-skills.py`, `validate-guides.py`, `skill_checks.py`, `backfill-metadata.py`).
+
 ## 2026-10-16
 
 ### Guides are now called AI skills

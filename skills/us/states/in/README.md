@@ -27,4 +27,4 @@
 - Withholding agent filings (WH-1, WH-3)
 
 ## How to use
-Upload all `.md` files in this folder PLUS the federal skills from `skills/foundation/` and `skills/federal/` to your LLM.
+Upload all `.md` files in this folder PLUS the federal skills from `skills/global/methods/` and `skills/us/federal/` to your LLM.

@@ -1,7 +1,9 @@
 # Path moves
 
-Every file moved by `scripts/migrate-layout.py`: old path, new path. Slugs did not change.
-Use this to update `skills.github_path` on the platform.
+Every file moved by `scripts/migrate-layout.py` (the first table), then every later move
+(one section each, at the end): old path, new path. Slugs did not change.
+Use this to update `skills.github_path` on the platform (`scripts/reconnect-github-paths.ts`
+in the platform repo reads every two-column row of this file).
 
 | Old path | New path |
 |---|---|
@@ -10907,3 +10909,174 @@ Shared folders grouped under `skills/foundation/` and `skills/reference/`, and s
 | skills/us/states/in/in-income-tax.md | skills/india/india-income-tax.md (India text under Indiana frontmatter; slug in-income-tax -> india-income-tax) |
 | skills/india/in-income-tax.md | skills/india/india-income-tax.md (duplicate, folded) |
 | skills/us/states/ny/ny-income-tax.md | skills/us/states/ny/ny-it-201-resident-return.md (duplicate, folded; slug ny-income-tax -> ny-it-201-resident-return) |
+
+## 2026-11-06: every skill under a place
+
+Moved with `git mv`, no text changed. Orchestrators went to their country's folder, US expat files to
+`skills/us/federal/`, and `cross-border/`, `foundation/` and `reference/` to `skills/global/`.
+
+| Old path | New path |
+|---|---|
+| skills/orchestrator/au-freelance-intake.md | skills/australia/au-freelance-intake.md |
+| skills/orchestrator/au-return-assembly.md | skills/australia/au-return-assembly.md |
+| skills/orchestrator/bd-freelance-intake.md | skills/bangladesh/bd-freelance-intake.md |
+| skills/orchestrator/bd-return-assembly.md | skills/bangladesh/bd-return-assembly.md |
+| skills/orchestrator/br-freelance-intake.md | skills/brazil/br-freelance-intake.md |
+| skills/orchestrator/br-return-assembly.md | skills/brazil/br-return-assembly.md |
+| skills/orchestrator/ca-freelance-intake.md | skills/canada/ca-freelance-intake.md |
+| skills/orchestrator/ca-return-assembly.md | skills/canada/ca-return-assembly.md |
+| skills/orchestrator/de-freelance-intake.md | skills/germany/de-freelance-intake.md |
+| skills/orchestrator/de-return-assembly.md | skills/germany/de-return-assembly.md |
+| skills/orchestrator/eg-freelance-intake.md | skills/egypt/eg-freelance-intake.md |
+| skills/orchestrator/eg-return-assembly.md | skills/egypt/eg-return-assembly.md |
+| skills/orchestrator/es-freelance-intake.md | skills/spain/es-freelance-intake.md |
+| skills/orchestrator/es-return-assembly.md | skills/spain/es-return-assembly.md |
+| skills/orchestrator/fr-freelance-intake.md | skills/france/fr-freelance-intake.md |
+| skills/orchestrator/fr-return-assembly.md | skills/france/fr-return-assembly.md |
+| skills/orchestrator/in-freelance-intake.md | skills/india/in-freelance-intake.md |
+| skills/orchestrator/in-return-assembly.md | skills/india/in-return-assembly.md |
+| skills/orchestrator/jp-freelance-intake.md | skills/japan/jp-freelance-intake.md |
+| skills/orchestrator/jp-return-assembly.md | skills/japan/jp-return-assembly.md |
+| skills/orchestrator/kz-freelance-intake.md | skills/kazakhstan/kz-freelance-intake.md |
+| skills/orchestrator/kz-return-assembly.md | skills/kazakhstan/kz-return-assembly.md |
+| skills/orchestrator/ma-freelance-intake.md | skills/morocco/ma-freelance-intake.md |
+| skills/orchestrator/ma-return-assembly.md | skills/morocco/ma-return-assembly.md |
+| skills/orchestrator/mt-freelance-intake.md | skills/malta/mt-freelance-intake.md |
+| skills/orchestrator/mt-return-assembly.md | skills/malta/mt-return-assembly.md |
+| skills/orchestrator/mx-freelance-intake.md | skills/mexico/mx-freelance-intake.md |
+| skills/orchestrator/mx-return-assembly.md | skills/mexico/mx-return-assembly.md |
+| skills/orchestrator/nl-freelance-intake.md | skills/netherlands/nl-freelance-intake.md |
+| skills/orchestrator/nl-return-assembly.md | skills/netherlands/nl-return-assembly.md |
+| skills/orchestrator/pk-freelance-intake.md | skills/pakistan/pk-freelance-intake.md |
+| skills/orchestrator/pk-return-assembly.md | skills/pakistan/pk-return-assembly.md |
+| skills/orchestrator/ua-freelance-intake.md | skills/ukraine/ua-freelance-intake.md |
+| skills/orchestrator/ua-return-assembly.md | skills/ukraine/ua-return-assembly.md |
+| skills/orchestrator/uk-freelance-intake.md | skills/uk/uk-freelance-intake.md |
+| skills/orchestrator/uk-return-assembly.md | skills/uk/uk-return-assembly.md |
+| skills/orchestrator/us-ca-freelance-intake.md | skills/us/states/ca/us-ca-freelance-intake.md |
+| skills/orchestrator/us-ca-return-assembly.md | skills/us/states/ca/us-ca-return-assembly.md |
+| skills/orchestrator/us-federal-return-assembly.md | skills/us/federal/us-federal-return-assembly.md |
+| skills/orchestrator/us-ny-freelance-intake.md | skills/us/states/ny/us-ny-freelance-intake.md |
+| skills/orchestrator/us-ny-return-assembly.md | skills/us/states/ny/us-ny-return-assembly.md |
+| skills/orchestrator/us-tx-freelance-intake.md | skills/us/states/tx/us-tx-freelance-intake.md |
+| skills/orchestrator/us-tx-return-assembly.md | skills/us/states/tx/us-tx-return-assembly.md |
+| skills/cross-border/README.md | skills/global/cross-border/README.md |
+| skills/cross-border/cbam-carbon-border-adjustment.md | skills/global/cross-border/cbam-carbon-border-adjustment.md |
+| skills/cross-border/cfc-and-substance-rules-compared.md | skills/global/cross-border/cfc-and-substance-rules-compared.md |
+| skills/cross-border/cross-border-invoicing-compliance.md | skills/global/cross-border/cross-border-invoicing-compliance.md |
+| skills/cross-border/cross-border-payroll-coordination.md | skills/global/cross-border/cross-border-payroll-coordination.md |
+| skills/cross-border/cross-border-tax-router.md | skills/global/cross-border/cross-border-tax-router.md |
+| skills/cross-border/cross-border-tax-workflow-base.md | skills/global/cross-border/cross-border-tax-workflow-base.md |
+| skills/cross-border/cross-border-vat-gst.md | skills/global/cross-border/cross-border-vat-gst.md |
+| skills/cross-border/dac6-mdr-reportable-arrangements.md | skills/global/cross-border/dac6-mdr-reportable-arrangements.md |
+| skills/cross-border/digital-services-tax-matrix.md | skills/global/cross-border/digital-services-tax-matrix.md |
+| skills/cross-border/eu-directives-cross-border.md | skills/global/cross-border/eu-directives-cross-border.md |
+| skills/cross-border/eu-oss-digital.md | skills/global/cross-border/eu-oss-digital.md |
+| skills/cross-border/eu-reverse-charge.md | skills/global/cross-border/eu-reverse-charge.md |
+| skills/cross-border/eu-social-security-coordination.md | skills/global/cross-border/eu-social-security-coordination.md |
+| skills/cross-border/exit-taxes-when-a-family-moves.md | skills/global/cross-border/exit-taxes-when-a-family-moves.md |
+| skills/cross-border/family-holding-company-location-compared.md | skills/global/cross-border/family-holding-company-location-compared.md |
+| skills/cross-border/family-office-residency-regimes-compared.md | skills/global/cross-border/family-office-residency-regimes-compared.md |
+| skills/cross-border/fatca-crs-automatic-exchange.md | skills/global/cross-border/fatca-crs-automatic-exchange.md |
+| skills/cross-border/forex-controls.md | skills/global/cross-border/forex-controls.md |
+| skills/cross-border/free-zones-sez-matrix.md | skills/global/cross-border/free-zones-sez-matrix.md |
+| skills/cross-border/ifrs-local-gaap-reconciliation.md | skills/global/cross-border/ifrs-local-gaap-reconciliation.md |
+| skills/cross-border/inheritance-estate-gift-matrix.md | skills/global/cross-border/inheritance-estate-gift-matrix.md |
+| skills/cross-border/international-incorporation.md | skills/global/cross-border/international-incorporation.md |
+| skills/cross-border/ip-patent-box-matrix.md | skills/global/cross-border/ip-patent-box-matrix.md |
+| skills/cross-border/non-eu-export-services.md | skills/global/cross-border/non-eu-export-services.md |
+| skills/cross-border/oecd-model-treaty-defaults.md | skills/global/cross-border/oecd-model-treaty-defaults.md |
+| skills/cross-border/permanent-establishment-risk.md | skills/global/cross-border/permanent-establishment-risk.md |
+| skills/cross-border/pillar-two-globe-minimum-tax.md | skills/global/cross-border/pillar-two-globe-minimum-tax.md |
+| skills/cross-border/property-transfer-tax-matrix.md | skills/global/cross-border/property-transfer-tax-matrix.md |
+| skills/cross-border/rd-tax-credits-matrix.md | skills/global/cross-border/rd-tax-credits-matrix.md |
+| skills/cross-border/saf-t-realtime-ereporting-matrix.md | skills/global/cross-border/saf-t-realtime-ereporting-matrix.md |
+| skills/cross-border/stamp-duty-matrix.md | skills/global/cross-border/stamp-duty-matrix.md |
+| skills/cross-border/succession-and-forced-heirship-compared.md | skills/global/cross-border/succession-and-forced-heirship-compared.md |
+| skills/cross-border/tax-controversy-map-apa.md | skills/global/cross-border/tax-controversy-map-apa.md |
+| skills/cross-border/tax-research-with-your-ai-how-to-do-it-defensibly.md | skills/global/cross-border/tax-research-with-your-ai-how-to-do-it-defensibly.md |
+| skills/cross-border/tax-residency-planning.md | skills/global/cross-border/tax-residency-planning.md |
+| skills/cross-border/trusts-vs-foundations-by-country.md | skills/global/cross-border/trusts-vs-foundations-by-country.md |
+| skills/cross-border/vat-place-of-supply-master.md | skills/global/cross-border/vat-place-of-supply-master.md |
+| skills/cross-border/wealth-tax-matrix.md | skills/global/cross-border/wealth-tax-matrix.md |
+| skills/cross-border/withholding-tax-matrix.md | skills/global/cross-border/withholding-tax-matrix.md |
+| skills/cross-border/treaty-corridors/americas-corridors.md | skills/global/cross-border/treaty-corridors/americas-corridors.md |
+| skills/cross-border/treaty-corridors/asia-pacific-corridors.md | skills/global/cross-border/treaty-corridors/asia-pacific-corridors.md |
+| skills/cross-border/treaty-corridors/emerging-market-corridors.md | skills/global/cross-border/treaty-corridors/emerging-market-corridors.md |
+| skills/cross-border/treaty-corridors/eu-intra-rates.md | skills/global/cross-border/treaty-corridors/eu-intra-rates.md |
+| skills/cross-border/treaty-corridors/uk-major-partners.md | skills/global/cross-border/treaty-corridors/uk-major-partners.md |
+| skills/cross-border/treaty-corridors/us-major-partners.md | skills/global/cross-border/treaty-corridors/us-major-partners.md |
+| skills/cross-border/treaty-corridors/_templates/dtt-template.md | skills/global/cross-border/treaty-corridors/_templates/dtt-template.md |
+| skills/cross-border/treaty-corridors/eg-ae/dtt-summary.md | skills/global/cross-border/treaty-corridors/eg-ae/dtt-summary.md |
+| skills/cross-border/treaty-corridors/eg-sa/dtt-summary.md | skills/global/cross-border/treaty-corridors/eg-sa/dtt-summary.md |
+| skills/cross-border/us-expat/us-cfc-gilti.md | skills/us/federal/us-cfc-gilti.md |
+| skills/cross-border/us-expat/us-expatriation-exit-tax.md | skills/us/federal/us-expatriation-exit-tax.md |
+| skills/cross-border/us-expat/us-fbar-fatca-reporting.md | skills/us/federal/us-fbar-fatca-reporting.md |
+| skills/cross-border/us-expat/us-feie-ftc.md | skills/us/federal/us-feie-ftc.md |
+| skills/cross-border/us-expat/us-foreign-trust-reporting.md | skills/us/federal/us-foreign-trust-reporting.md |
+| skills/reference/financial-reporting/financial-reporting-router.md | skills/global/financial-reporting/financial-reporting-router.md |
+| skills/reference/financial-reporting/financial-reporting-workflow-base.md | skills/global/financial-reporting/financial-reporting-workflow-base.md |
+| skills/reference/financial-reporting/business-combinations/ifrs3-business-combinations.md | skills/global/financial-reporting/ifrs/ifrs3-business-combinations.md |
+| skills/reference/financial-reporting/business-combinations/us-gaap-asc805-business-combinations.md | skills/global/financial-reporting/us-gaap/us-gaap-asc805-business-combinations.md |
+| skills/reference/financial-reporting/debt-vs-equity/ias32-debt-vs-equity.md | skills/global/financial-reporting/ifrs/ias32-debt-vs-equity.md |
+| skills/reference/financial-reporting/debt-vs-equity/us-gaap-debt-vs-equity.md | skills/global/financial-reporting/us-gaap/us-gaap-debt-vs-equity.md |
+| skills/reference/financial-reporting/leases/ifrs16-leases.md | skills/global/financial-reporting/ifrs/ifrs16-leases.md |
+| skills/reference/financial-reporting/leases/us-gaap-asc842-leases.md | skills/global/financial-reporting/us-gaap/us-gaap-asc842-leases.md |
+| skills/reference/financial-reporting/revenue-recognition/ifrs15-revenue.md | skills/global/financial-reporting/ifrs/ifrs15-revenue.md |
+| skills/reference/financial-reporting/revenue-recognition/us-gaap-asc606-revenue.md | skills/global/financial-reporting/us-gaap/us-gaap-asc606-revenue.md |
+| skills/reference/integrations/amazon-seller-integration.md | skills/global/integrations/amazon-seller-integration.md |
+| skills/reference/integrations/freeagent-integration.md | skills/global/integrations/freeagent-integration.md |
+| skills/reference/integrations/paypal-integration.md | skills/global/integrations/paypal-integration.md |
+| skills/reference/integrations/quickbooks-integration.md | skills/global/integrations/quickbooks-integration.md |
+| skills/reference/integrations/revolut-business-integration.md | skills/global/integrations/revolut-business-integration.md |
+| skills/reference/integrations/sage-integration.md | skills/global/integrations/sage-integration.md |
+| skills/reference/integrations/shopify-integration.md | skills/global/integrations/shopify-integration.md |
+| skills/reference/integrations/stripe-integration.md | skills/global/integrations/stripe-integration.md |
+| skills/reference/integrations/wise-integration.md | skills/global/integrations/wise-integration.md |
+| skills/reference/integrations/xero-integration.md | skills/global/integrations/xero-integration.md |
+| skills/reference/verticals/README.md | skills/global/industries/README.md |
+| skills/reference/verticals/banking-sector.md | skills/global/industries/banking-sector.md |
+| skills/reference/verticals/charity-nonprofit.md | skills/global/industries/charity-nonprofit.md |
+| skills/reference/verticals/construction-sector.md | skills/global/industries/construction-sector.md |
+| skills/reference/verticals/consultant-professional.md | skills/global/industries/consultant-professional.md |
+| skills/reference/verticals/content-creator.md | skills/global/industries/content-creator.md |
+| skills/reference/verticals/ecommerce-seller.md | skills/global/industries/ecommerce-seller.md |
+| skills/reference/verticals/freelance-developer.md | skills/global/industries/freelance-developer.md |
+| skills/reference/verticals/insurance-sector.md | skills/global/industries/insurance-sector.md |
+| skills/reference/verticals/investment-funds-reits.md | skills/global/industries/investment-funds-reits.md |
+| skills/reference/verticals/medical-professional.md | skills/global/industries/medical-professional.md |
+| skills/reference/verticals/oil-gas-extractives.md | skills/global/industries/oil-gas-extractives.md |
+| skills/reference/verticals/property-investor.md | skills/global/industries/property-investor.md |
+| skills/reference/verticals/saas-digital-products.md | skills/global/industries/saas-digital-products.md |
+| skills/reference/verticals/shipping-aviation-tonnage-tax.md | skills/global/industries/shipping-aviation-tonnage-tax.md |
+| skills/foundation/README.md | skills/global/methods/README.md |
+| skills/foundation/bookkeeping-workflow-base.md | skills/global/methods/bookkeeping-workflow-base.md |
+| skills/foundation/company-formation-workflow-base.md | skills/global/methods/company-formation-workflow-base.md |
+| skills/foundation/corporate-income-tax-workflow-base.md | skills/global/methods/corporate-income-tax-workflow-base.md |
+| skills/foundation/cross-border-workflow-base.md | skills/global/methods/cross-border-workflow-base.md |
+| skills/foundation/crypto-tax-workflow-base.md | skills/global/methods/crypto-tax-workflow-base.md |
+| skills/foundation/customs-duties-workflow-base.md | skills/global/methods/customs-duties-workflow-base.md |
+| skills/foundation/einvoice-workflow-base.md | skills/global/methods/einvoice-workflow-base.md |
+| skills/foundation/excise-tax-workflow-base.md | skills/global/methods/excise-tax-workflow-base.md |
+| skills/foundation/financial-statements-workflow-base.md | skills/global/methods/financial-statements-workflow-base.md |
+| skills/foundation/global-router.md | skills/global/methods/global-router.md |
+| skills/foundation/payroll-workflow-base.md | skills/global/methods/payroll-workflow-base.md |
+| skills/foundation/statutory-audit-workflow-base.md | skills/global/audit/statutory-audit-workflow-base.md |
+| skills/foundation/transfer-pricing-workflow-base.md | skills/global/methods/transfer-pricing-workflow-base.md |
+| skills/foundation/us-tax-workflow-base.md | skills/global/methods/us-tax-workflow-base.md |
+| skills/foundation/vat-workflow-base.md | skills/global/methods/vat-workflow-base.md |
+| skills/foundation/wealth-estate-tax-workflow-base.md | skills/global/methods/wealth-estate-tax-workflow-base.md |
+| skills/foundation/workflow-base.md | skills/global/methods/workflow-base.md |
+| skills/foundation/intelligence/deadline-engine.md | skills/global/planning-tools/deadline-engine.md |
+| skills/foundation/intelligence/optimisation-advisor.md | skills/global/planning-tools/optimisation-advisor.md |
+| skills/foundation/intelligence/threshold-alerts.md | skills/global/planning-tools/threshold-alerts.md |
+| skills/foundation/patterns/README.md | skills/global/expense-patterns/README.md |
+| skills/foundation/patterns/global-ad-platforms.md | skills/global/expense-patterns/global-ad-platforms.md |
+| skills/foundation/patterns/global-cloud-infrastructure.md | skills/global/expense-patterns/global-cloud-infrastructure.md |
+| skills/foundation/patterns/global-home-office.md | skills/global/expense-patterns/global-home-office.md |
+| skills/foundation/patterns/global-marketplaces-banking-fees.md | skills/global/expense-patterns/global-marketplaces-banking-fees.md |
+| skills/foundation/patterns/global-payment-processors.md | skills/global/expense-patterns/global-payment-processors.md |
+| skills/foundation/patterns/global-productivity-tools.md | skills/global/expense-patterns/global-productivity-tools.md |
+| skills/foundation/patterns/global-saas-vendors.md | skills/global/expense-patterns/global-saas-vendors.md |
+| skills/foundation/patterns/global-travel-expenses.md | skills/global/expense-patterns/global-travel-expenses.md |
+| skills/foundation/patterns/global-vehicle-expenses.md | skills/global/expense-patterns/global-vehicle-expenses.md |

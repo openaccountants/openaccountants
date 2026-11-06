@@ -558,7 +558,7 @@ def _host_is(host, domain):
 
 
 def _is_cross_border(path, fm):
-    return rel_path(path).startswith("skills/cross-border/") or bool(
+    return rel_path(path).startswith("skills/global/cross-border/") or bool(
         CROSS_BORDER_RE.search(slug_of(path) + " " + str(fm.get("category") or ""))
     )
 

@@ -78,7 +78,7 @@ class PackReadmeTests(unittest.TestCase):
 
 
 class GuideComparisonTests(unittest.TestCase):
-    path = "skills/foundation/synthetic-guide.md"
+    path = "skills/global/methods/synthetic-guide.md"
 
     def compare(self, before: str, after: str, mode: str = "audit"):
         return sync_integrity.compare_existing_guides(self.path, before, after, mode)
@@ -257,7 +257,7 @@ class GuideComparisonTests(unittest.TestCase):
 
 
 class GitBackedIntegrityTests(unittest.TestCase):
-    path = "skills/foundation/synthetic-guide.md"
+    path = "skills/global/methods/synthetic-guide.md"
 
     def setUp(self) -> None:
         self.tempdir = tempfile.TemporaryDirectory()
@@ -364,7 +364,7 @@ class GitBackedIntegrityTests(unittest.TestCase):
         self.assertIn("missing-provenance", codes(findings, "error"))
 
     def test_new_guide_requires_null_blob_and_valid_revision(self) -> None:
-        new_path = "skills/foundation/new-synthetic-guide.md"
+        new_path = "skills/global/methods/new-synthetic-guide.md"
         candidate = self.repo / new_path
         candidate.write_text(
             guide(
@@ -555,7 +555,7 @@ class GitBackedIntegrityTests(unittest.TestCase):
         self.assertIn("unversioned-body-change", codes(findings, "error"))
 
     def test_non_guide_markdown_edit_is_ignored(self) -> None:
-        readme_path = "skills/foundation/README.md"
+        readme_path = "skills/global/methods/README.md"
         candidate = self.repo / readme_path
         candidate.write_text("# Foundation docs\n", encoding="utf-8", newline="\n")
         self.git("add", readme_path)
@@ -592,7 +592,7 @@ class GitBackedIntegrityTests(unittest.TestCase):
         self.assertIn("source-removal-needs-review", codes(strict_findings, "error"))
 
     def test_source_rename_fails_strict_main_audit(self) -> None:
-        renamed = "skills/foundation/renamed-synthetic-guide.md"
+        renamed = "skills/global/methods/renamed-synthetic-guide.md"
         self.git("mv", self.path, renamed)
         findings, count = sync_integrity.run_integrity_check(
             self.repo,
@@ -619,13 +619,13 @@ class GitBackedIntegrityTests(unittest.TestCase):
         feature_head = self.git("rev-parse", "HEAD").strip()
 
         self.git("checkout", "main")
-        main_only_path = self.repo / "skills" / "foundation" / "main-only-guide.md"
+        main_only_path = self.repo / "skills" / "global" / "methods" / "main-only-guide.md"
         main_only_path.write_text(
             guide(version="1.0", heading_version="1.0", body="Main-only guide."),
             encoding="utf-8",
             newline="\n",
         )
-        self.git("add", "skills/foundation/main-only-guide.md")
+        self.git("add", "skills/global/methods/main-only-guide.md")
         self.git("commit", "-m", "add unrelated guide on main")
         current_main = self.git("rev-parse", "HEAD").strip()
         merge_base = self.git("merge-base", current_main, feature_head).strip()

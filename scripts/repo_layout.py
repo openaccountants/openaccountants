@@ -2,7 +2,9 @@
 
 skills/<country>/   one folder per country (skills/eu is the EU layer, same level)
 skills/us/          federal/, states/<code>/ and a few national files at its top
-skills/<topic>/     the shared folders named in TOPIC_DIRS
+skills/global/      skills that belong to no one place: cross-border/, methods/, audit/,
+                    financial-reporting/, industries/, integrations/, expense-patterns/,
+                    planning-tools/
 """
 
 import os
@@ -11,9 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ROOT / "skills"
 
-TOPIC_DIRS = frozenset({
-    "cross-border", "foundation", "orchestrator", "reference", "templates",
-})
+TOPIC_DIRS = frozenset({"global", "templates"})
 
 
 def country_dirs(skills: Path = SKILLS) -> list[Path]:

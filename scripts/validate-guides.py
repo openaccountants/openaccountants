@@ -89,12 +89,12 @@ PR_ERROR_CHECKS = {
 # can be strict for everything new. Never add to this list — remove entries as
 # the files gain descriptions.
 LEGACY_MISSING_DESCRIPTION = {
-    "skills/cross-border/treaty-corridors/americas-corridors.md",
-    "skills/cross-border/treaty-corridors/asia-pacific-corridors.md",
-    "skills/cross-border/treaty-corridors/emerging-market-corridors.md",
-    "skills/cross-border/treaty-corridors/eu-intra-rates.md",
-    "skills/cross-border/treaty-corridors/uk-major-partners.md",
-    "skills/cross-border/treaty-corridors/us-major-partners.md",
+    "skills/global/cross-border/treaty-corridors/americas-corridors.md",
+    "skills/global/cross-border/treaty-corridors/asia-pacific-corridors.md",
+    "skills/global/cross-border/treaty-corridors/emerging-market-corridors.md",
+    "skills/global/cross-border/treaty-corridors/eu-intra-rates.md",
+    "skills/global/cross-border/treaty-corridors/uk-major-partners.md",
+    "skills/global/cross-border/treaty-corridors/us-major-partners.md",
 }
 
 # Dirs whose deliberate convention is "no jurisdiction key" — the content is
@@ -103,8 +103,8 @@ LEGACY_MISSING_DESCRIPTION = {
 # `jurisdiction` here is a WARN, not an ERROR. Everywhere else it is required
 # (scripts/backfill-metadata.py did the one-time sweep).
 JURISDICTION_OPTIONAL_DIRS = {
-    "skills/cross-border/treaty-corridors",
-    "skills/foundation/intelligence",
+    "skills/global/cross-border/treaty-corridors",
+    "skills/global/planning-tools",
     "skills/eu",
 }
 

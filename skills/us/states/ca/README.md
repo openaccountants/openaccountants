@@ -41,4 +41,4 @@ covered_by:
 - Estate / inheritance tax (California has none)
 
 ## How to use
-Upload all `.md` files in this folder PLUS the federal skills from `skills/foundation/` and `skills/federal/` to your LLM. See the main README for details.
+Upload all `.md` files in this folder PLUS the federal skills from `skills/global/methods/` and `skills/us/federal/` to your LLM. See the main README for details.
