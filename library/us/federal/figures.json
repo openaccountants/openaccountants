@@ -1753,12 +1753,12 @@
     },
     {
       "id": "us.469.allowance",
-      "item": "Passive loss special allowance (§ 469(i)): up to USD 25,000 of rental real estate losses a year may offset non-passive income for a natural person who ACTIVELY participates (a lower bar than material participation). USD 12,500 for married filing separately living apart all year; nil if living together. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Passive loss special allowance (§ 469(i)): up to USD 25,000 of rental real estate losses a year may offset non-passive income for a natural person who ACTIVELY participates (a lower bar than material participation). USD 12,500 for married filing separately living apart all year; nil if living together. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 25,000",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
       "quote": "The aggregate amount to which paragraph (1) applies for any taxable year shall not exceed $25,000",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-1120-corporation-return-schedule-ordinary-business",
         "us-2026-federal-tax-changes",
@@ -1768,12 +1768,12 @@
     },
     {
       "id": "us.469.phaseout-start",
-      "item": "§ 469(i) allowance phase-out: reduced by 50 percent of AGI (modified) above this amount. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 469(i) allowance phase-out: reduced by 50 percent of AGI (modified) above this amount. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 100,000",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
       "quote": "reduced (but not below zero) by 50 percent of the amount by which the adjusted gross income of the taxpayer for the taxable year exceeds $100,000",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-2026-federal-tax-changes",
         "us-equity-compensation-restricted-stock-units-and",
@@ -1784,12 +1784,12 @@
     },
     {
       "id": "us.469.phaseout-rate",
-      "item": "§ 469(i) allowance: reduction rate per dollar of modified AGI above USD 100,000. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 469(i) allowance: reduction rate per dollar of modified AGI above USD 100,000. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "50 percent",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
       "quote": "reduced (but not below zero) by 50 percent of the amount by which the adjusted gross income",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-2026-federal-tax-changes",
         "us-charitable-giving-strategies",
@@ -1815,12 +1815,12 @@
     },
     {
       "id": "us.469.mfs",
-      "item": "§ 469(i) for a married individual filing separately (living apart all year): USD 12,500 replaces USD 25,000 and USD 50,000 replaces USD 100,000. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 469(i) for a married individual filing separately (living apart all year): USD 12,500 replaces USD 25,000 and USD 50,000 replaces USD 100,000. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 12,500",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
-      "quote": "(i) “$12,500” for “$25,000” each place it appears, (ii) “$50,000” for “$100,000”",
-      "read_on": "2026-10-03",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
+      "quote": "(i) \"$12,500\" for \"$25,000\" each place it appears, (ii) \"$50,000\" for \"$100,000\"",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-2026-federal-tax-changes",
         "us-federal-income-tax-return-1040",
@@ -1829,22 +1829,22 @@
     },
     {
       "id": "us.469.rep-hours",
-      "item": "Real estate professional (§ 469(c)(7)(B)), wording: BOTH tests each year: (i) more than one-half of personal services in all trades or businesses are performed in real property trades or businesses in which the taxpayer materially participates, AND (ii) more than 750 hours in those real property trades or businesses. On a joint return ONE spouse must meet both tests separately (no combining). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Real estate professional (§ 469(c)(7)(B)), wording: BOTH tests each year: (i) more than one-half of personal services in all trades or businesses are performed in real property trades or businesses in which the taxpayer materially participates, AND (ii) more than 750 hours in those real property trades or businesses. On a joint return ONE spouse must meet both tests separately (no combining). Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "750 hours",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
       "quote": "(ii) such taxpayer performs more than 750 hours of services during the taxable year in real property trades or businesses",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": []
     },
     {
       "id": "us.469.rep-half",
-      "item": "Real estate professional test (i), wording: more than one-half of all personal services in trades or businesses must be in real property trades or businesses with material participation. Applies AND with the 750-hour test. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Real estate professional test (i), wording: more than one-half of all personal services in trades or businesses must be in real property trades or businesses with material participation. Applies AND with the 750-hour test. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "more than one-half",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/469",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
       "quote": "(i) more than one-half of the personal services performed in trades or businesses by the taxpayer during such taxable year are performed in real property trades",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": []
     },
     {
@@ -1869,36 +1869,36 @@
     },
     {
       "id": "us.280a.augusta-14",
-      "item": "Augusta rule (§ 280A(g)), wording: if a dwelling used as a residence is rented for less than 15 days in the year, no rental deductions are allowed AND the rental income is excluded from gross income (i.e. 14 days or fewer). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Augusta rule (§ 280A(g)), wording: if a dwelling used as a residence is rented for less than 15 days in the year, no rental deductions are allowed AND the rental income is excluded from gross income (i.e. 14 days or fewer). Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "less than 15 days",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/280A",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280A.htm",
       "quote": "such dwelling unit is actually rented for less than 15 days during the taxable year",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-augusta-rule-home-rental-to-your-business"
       ]
     },
     {
       "id": "us.280a.residence-14",
-      "item": "§ 280A(d)(1), wording: a dwelling is used as a residence if personal-use days exceed the greater of 14 days or 10 percent of fair-rental days. Do not confuse with the § 280A(g) under-15-days rental rule. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 280A(d)(1), wording: a dwelling is used as a residence if personal-use days exceed the greater of 14 days or 10 percent of fair-rental days. Do not confuse with the § 280A(g) under-15-days rental rule. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "14 days",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/280A",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280A.htm",
       "quote": "for a number of days which exceeds the greater of— (A) 14 days, or (B) 10 percent",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-augusta-rule-home-rental-to-your-business"
       ]
     },
     {
       "id": "us.121.single",
-      "item": "Home sale exclusion (§ 121): gain excluded up to USD 250,000 if the home was owned AND used as principal residence for periods aggregating 2 years or more in the 5 years before sale. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Home sale exclusion (§ 121): gain excluded up to USD 250,000 if the home was owned AND used as principal residence for periods aggregating 2 years or more in the 5 years before sale. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 250,000",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/121",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm",
       "quote": "with respect to any sale or exchange shall not exceed $250,000",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-1120-corporation-return-schedule-ordinary-business",
         "us-equity-compensation-restricted-stock-units-and",
@@ -1907,12 +1907,12 @@
     },
     {
       "id": "us.121.joint",
-      "item": "§ 121: USD 500,000 on a joint return if either spouse meets ownership, BOTH meet use, and neither used the exclusion in the prior 2 years. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 121: USD 500,000 on a joint return if either spouse meets ownership, BOTH meet use, and neither used the exclusion in the prior 2 years. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 500,000",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/121",
-      "quote": "Paragraph (1) shall be applied by substituting “$500,000” for “$250,000” if",
-      "read_on": "2026-10-03",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm",
+      "quote": "Paragraph (1) shall be applied by substituting \"$500,000\" for \"$250,000\" if",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-2026-federal-tax-changes",
         "us-equity-compensation-restricted-stock-units-and",
@@ -1922,12 +1922,12 @@
     },
     {
       "id": "us.121.2yrs",
-      "item": "§ 121 ownership and use test: periods aggregating 2 years or more during the 5-year period ending on the sale date. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 121 ownership and use test: periods aggregating 2 years or more during the 5-year period ending on the sale date. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "2 years",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/121",
-      "quote": "as the taxpayer’s principal residence for periods aggregating 2 years or more",
-      "read_on": "2026-10-03",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm",
+      "quote": "as the taxpayer's principal residence for periods aggregating 2 years or more",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-amended-return-form-1040-including-capital",
         "us-equity-compensation-restricted-stock-units-and",
@@ -1936,22 +1936,22 @@
     },
     {
       "id": "us.1031.45day",
-      "item": "§ 1031 like-kind exchange (real property only, held for business or investment, not held primarily for sale): replacement property must be identified within 45 days after transferring the relinquished property. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 1031 like-kind exchange (real property only, held for business or investment, not held primarily for sale): replacement property must be identified within 45 days after transferring the relinquished property. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "45 days",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1031",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partIII-sec1031.htm",
       "quote": "on or before the day which is 45 days after the date on which the taxpayer transfers the property relinquished",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": []
     },
     {
       "id": "us.1031.180day",
-      "item": "§ 1031: replacement property must be received by the earlier of 180 days after the transfer or the due date (with extensions) of the return for the year of transfer. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "§ 1031: replacement property must be received by the earlier of 180 days after the transfer or the due date (with extensions) of the return for the year of transfer. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "180 days",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1031",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partIII-sec1031.htm",
       "quote": "the day which is 180 days after the date on which the taxpayer transfers the property relinquished",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-federal-income-tax-return-1040",
         "us-opportunity-zones"
@@ -1959,22 +1959,22 @@
     },
     {
       "id": "us.se.oasdi",
-      "item": "Self-employment tax, Social Security (OASDI) part (§ 1401(a)): rate on self-employment income up to the wage base. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Self-employment tax, Social Security (OASDI) part (§ 1401(a)): rate on self-employment income up to the wage base. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "12.4 percent",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm",
       "quote": "a tax equal to 12.4 percent of the amount of the self-employment income",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": []
     },
     {
       "id": "us.se.medicare",
-      "item": "Self-employment tax, Medicare (HI) part (§ 1401(b)(1)): on all self-employment income, no cap. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Self-employment tax, Medicare (HI) part (§ 1401(b)(1)): on all self-employment income, no cap. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "2.9 percent",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm",
       "quote": "a tax equal to 2.9 percent of the amount of the self-employment income",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": []
     },
     {
@@ -1993,22 +1993,22 @@
     },
     {
       "id": "us.se.addl-medicare",
-      "item": "Additional Medicare tax on self-employment income and wages above the threshold (§ 1401(b)(2)): 0.9 percent; thresholds USD 250,000 joint, USD 125,000 married separate, USD 200,000 others; not indexed. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Additional Medicare tax on self-employment income and wages above the threshold (§ 1401(b)(2)): 0.9 percent; thresholds USD 250,000 joint, USD 125,000 married separate, USD 200,000 others; not indexed. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "0.9 percent",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm",
       "quote": "a tax equal to 0.9 percent of the self-employment income for such taxable year which is in excess of",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": []
     },
     {
       "id": "us.se.addl-medicare.joint",
-      "item": "Additional Medicare tax threshold, married filing jointly (combined wages and SE income). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Additional Medicare tax threshold, married filing jointly (combined wages and SE income). Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 250,000",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm",
       "quote": "(i) in the case of a joint return, $250,000",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-1120-corporation-return-schedule-ordinary-business",
         "us-equity-compensation-restricted-stock-units-and",
@@ -2017,12 +2017,12 @@
     },
     {
       "id": "us.se.addl-medicare.single",
-      "item": "Additional Medicare tax threshold, single, head of household and qualifying surviving spouse. Also the amount above which an EMPLOYER must withhold it, regardless of filing status. Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "Additional Medicare tax threshold, single, head of household and qualifying surviving spouse. Also the amount above which an EMPLOYER must withhold it, regardless of filing status. Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 200,000",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1401",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm",
       "quote": "(iii) in any other case, $200,000",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-2026-federal-tax-changes",
         "us-equity-compensation-restricted-stock-units-and",
@@ -2041,12 +2041,12 @@
     },
     {
       "id": "us.se.min-400",
-      "item": "No self-employment tax if net earnings from self-employment for the year are less than USD 400 (§ 1402(b)). Source is the LII (Cornell) mirror of the U.S. Code.",
+      "item": "No self-employment tax if net earnings from self-employment for the year are less than USD 400 (§ 1402(b)). Source: the U.S. Code, 2024 edition, on govinfo.gov (not amended by Public Law 119-21).",
       "value": "USD 400",
       "tax_year": "2026 (statutory amount, not indexed)",
-      "source_url": "https://www.law.cornell.edu/uscode/text/26/1402",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1402.htm",
       "quote": "if such net earnings for the taxable year are less than $400",
-      "read_on": "2026-10-03",
+      "read_on": "2026-11-06",
       "used_by": [
         "us-2026-federal-tax-changes",
         "us-federal-income-tax-return-1040"

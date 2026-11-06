@@ -174,6 +174,26 @@ class BuildLibraryStatus(unittest.TestCase):
         self.assertEqual(len(problems), 2)
 
 
+    def test_unofficial_host_is_refused(self):
+        pack = {"checked_at": "2026-10-02", "entries": [
+            self.entry("us.121.single", source_url="https://www.law.cornell.edu/uscode/text/26/121"),
+            self.entry("us.121.joint", source_url="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/x.htm"),
+        ]}
+        figures, _sources, problems = self.bl.build_country("US", pack, "no-such-folder")
+        self.assertEqual([f["id"] for f in figures["figures"]], ["us.121.joint"])
+        self.assertIn("us.121.single", problems[0])
+        self.assertIn("allow-list", problems[0])
+
+    def test_official_hosts(self):
+        for url in ["https://www.revenue.ie/x", "https://data.oireachtas.ie/x.pdf", "https://www.irs.gov/x",
+                    "https://usp.gv.at/x", "https://wwwnp.sat.gob.mx/x", "https://www.ird.govt.nz/x",
+                    "https://bofip.impots.gouv.fr/x", "https://indiacode.gov.in/server/api/x"]:
+            self.assertTrue(self.bl.official_host(url), url)
+        for url in ["https://www.law.cornell.edu/uscode/text/26/121", "https://resource.cdn.icai.org/x.pdf",
+                    "https://en.wikipedia.org/wiki/Tax", "https://taxationupdates.com/x", "https://revenue.ie.example.com/x"]:
+            self.assertFalse(self.bl.official_host(url), url)
+
+
 class ValueInText(unittest.TestCase):
     def test_whole_figures_only(self):
         self.assertTrue(skill_checks.value_in_text("EUR 1,000", "a cap of EUR 1,000."))

@@ -1,7 +1,7 @@
 {
   "country": "india",
   "code": "IN",
-  "url_count": 146,
+  "url_count": 148,
   "sources": [
     {
       "url": "https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf",
@@ -739,17 +739,32 @@
       "figures": []
     },
     {
-      "url": "https://resource.cdn.icai.org/60117aasb48979-a.pdf",
-      "skills": [
-        "india-financial-statements",
-        "india-formation"
-      ],
+      "url": "https://indiacode.gov.in/server/api/core/bitstreams/2ff3773e-e557-4add-9df5-28b3353635b4/content",
+      "skills": [],
       "figures": [
         "in.caro.excl.capital",
         "in.caro.excl.borrowings",
         "in.caro.excl.revenue",
         "in.caro.excl.small-opc"
       ]
+    },
+    {
+      "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+      "skills": [],
+      "figures": [
+        "in.co.mgt7.due",
+        "in.co.mgt7.penalty-base",
+        "in.co.mgt7.penalty-cap-company",
+        "in.co.aoc4.due"
+      ]
+    },
+    {
+      "url": "https://resource.cdn.icai.org/60117aasb48979-a.pdf",
+      "skills": [
+        "india-financial-statements",
+        "india-formation"
+      ],
+      "figures": []
     },
     {
       "url": "https://resource.cdn.icai.org/74729bos60488-m1-cp1.pdf",
@@ -771,11 +786,7 @@
         "india-financial-statements",
         "india-formation"
       ],
-      "figures": [
-        "in.co.mgt7.due",
-        "in.co.mgt7.penalty-base",
-        "in.co.mgt7.penalty-cap-company"
-      ]
+      "figures": []
     },
     {
       "url": "https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf",
@@ -783,9 +794,7 @@
         "india-financial-statements",
         "india-formation"
       ],
-      "figures": [
-        "in.co.aoc4.due"
-      ]
+      "figures": []
     },
     {
       "url": "https://resource.cdn.icai.org/74738bos60488-m2-cp10.pdf",
@@ -807,9 +816,7 @@
       "skills": [
         "india-financial-statements"
       ],
-      "figures": [
-        "in.indas.phase1.net-worth"
-      ]
+      "figures": []
     },
     {
       "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251121701501.pdf",

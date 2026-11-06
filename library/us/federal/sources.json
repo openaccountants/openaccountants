@@ -1,7 +1,7 @@
 {
   "country": "us/federal",
   "code": "US",
-  "url_count": 752,
+  "url_count": 757,
   "sources": [
     {
       "url": "https://arsstc.org",
@@ -1842,6 +1842,61 @@
         "us.obbba.oz.basis-rural",
         "us.obbba.oz.30yr",
         "us.obbba.oz.decennial"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIII-sec121.htm",
+      "skills": [],
+      "figures": [
+        "us.121.single",
+        "us.121.joint",
+        "us.121.2yrs"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partIX-sec280A.htm",
+      "skills": [],
+      "figures": [
+        "us.280a.augusta-14",
+        "us.280a.residence-14"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapE-partII-subpartC-sec469.htm",
+      "skills": [],
+      "figures": [
+        "us.469.allowance",
+        "us.469.phaseout-start",
+        "us.469.phaseout-rate",
+        "us.469.mfs",
+        "us.469.rep-hours",
+        "us.469.rep-half"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partIII-sec1031.htm",
+      "skills": [],
+      "figures": [
+        "us.1031.45day",
+        "us.1031.180day"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm",
+      "skills": [],
+      "figures": [
+        "us.se.oasdi",
+        "us.se.medicare",
+        "us.se.addl-medicare",
+        "us.se.addl-medicare.joint",
+        "us.se.addl-medicare.single"
+      ]
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1402.htm",
+      "skills": [],
+      "figures": [
+        "us.se.min-400"
       ]
     },
     {
@@ -4032,10 +4087,7 @@
       "skills": [
         "us-section-1031-like-kind-exchange"
       ],
-      "figures": [
-        "us.1031.45day",
-        "us.1031.180day"
-      ]
+      "figures": []
     },
     {
       "url": "https://www.law.cornell.edu/uscode/text/26/1045",
@@ -4070,11 +4122,7 @@
       "skills": [
         "us-section-1031-like-kind-exchange"
       ],
-      "figures": [
-        "us.121.single",
-        "us.121.joint",
-        "us.121.2yrs"
-      ]
+      "figures": []
     },
     {
       "url": "https://www.law.cornell.edu/uscode/text/26/1211",
@@ -4141,25 +4189,12 @@
       "figures": []
     },
     {
-      "url": "https://www.law.cornell.edu/uscode/text/26/1401",
-      "skills": [],
-      "figures": [
-        "us.se.oasdi",
-        "us.se.medicare",
-        "us.se.addl-medicare",
-        "us.se.addl-medicare.joint",
-        "us.se.addl-medicare.single"
-      ]
-    },
-    {
       "url": "https://www.law.cornell.edu/uscode/text/26/1402",
       "skills": [
         "us-crypto-income-events",
         "us-nft-tax"
       ],
-      "figures": [
-        "us.se.min-400"
-      ]
+      "figures": []
     },
     {
       "url": "https://www.law.cornell.edu/uscode/text/26/1411",
@@ -4296,10 +4331,7 @@
         "us-hiring-your-children-and-accountable-plans",
         "us-real-estate-professional-and-short-term-rentals"
       ],
-      "figures": [
-        "us.280a.augusta-14",
-        "us.280a.residence-14"
-      ]
+      "figures": []
     },
     {
       "url": "https://www.law.cornell.edu/uscode/text/26/280C",
@@ -4404,14 +4436,7 @@
         "us-federal-cost-segregation",
         "us-real-estate-professional-and-short-term-rentals"
       ],
-      "figures": [
-        "us.469.allowance",
-        "us.469.phaseout-start",
-        "us.469.phaseout-rate",
-        "us.469.mfs",
-        "us.469.rep-hours",
-        "us.469.rep-half"
-      ]
+      "figures": []
     },
     {
       "url": "https://www.law.cornell.edu/uscode/text/26/4966",

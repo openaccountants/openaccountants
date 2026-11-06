@@ -1,7 +1,7 @@
 {
   "country": "india",
   "code": "IN",
-  "figure_count": 334,
+  "figure_count": 333,
   "figures": [
     {
       "id": "in.gst.rate.standard",
@@ -3914,12 +3914,12 @@
     },
     {
       "id": "in.co.mgt7.due",
-      "item": "Annual return (Form MGT-7 / MGT-7A) under section 92(4) Companies Act 2013: within sixty days from the date the AGM is held, or, if no AGM is held, from the date it should have been held, with a statement of reasons. Statute text reproduced by ICAI study material. Printed in words.",
+      "item": "Annual return (Form MGT-7 / MGT-7A) under section 92(4) Companies Act 2013: within sixty days from the date the AGM is held, or, if no AGM is held, from the date it should have been held, with a statement of reasons. Text of the Companies Act 2013 as updated on India Code; the bracketed figure marks a later amendment. Printed in words.",
       "value": "sixty days",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf",
-      "quote": "every company shall file with the Registrar a copy of the annual return, within sixty days from the date on which the annual general meeting is held",
-      "read_on": "2026-10-17",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+      "quote": "Every company shall file with the Registrar a copy of the annual return, within sixty days from the date on which the annual general meeting is held",
+      "read_on": "2026-11-06",
       "used_by": [
         "india-financial-statements",
         "india-formation"
@@ -3930,9 +3930,9 @@
       "item": "Penalty under section 92(5) for failing to file the annual return in time: on the company and every officer in default, plus one hundred rupees for each day of continuing failure, capped at two lakh rupees for the company and fifty thousand rupees for an officer. Separate from the section 403 additional filing fee. Printed in words.",
       "value": "ten thousand rupees",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf",
-      "quote": "such company and its every officer who is in default shall be liable to a penalty of ten thousand rupees",
-      "read_on": "2026-10-17",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+      "quote": "such company and its every officer who is in default shall be liable to a penalty of 3[ten thousand rupees]",
+      "read_on": "2026-11-06",
       "used_by": [
         "india-formation"
       ]
@@ -3942,21 +3942,21 @@
       "item": "Maximum section 92(5) penalty for the company (continuing failure to file the annual return). Same words cap the section 137(3) penalty on the company.",
       "value": "two lakh rupees",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/74735bos60488-m2-cp7.pdf",
-      "quote": "subject to a maximum of two lakh rupees in case of a company and fifty thousand rupees in case of an officer who is in default",
-      "read_on": "2026-10-17",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+      "quote": "subject to a maximum of 4[two lakh rupees in case of a company and fifty thousand rupees in case of an officer who is an default]",
+      "read_on": "2026-11-06",
       "used_by": [
         "india-formation"
       ]
     },
     {
       "id": "in.co.aoc4.due",
-      "item": "Financial statements (Form AOC-4, with the consolidated statements in AOC-4 CFS) under section 137(1) Companies Act 2013: filed with the Registrar within thirty days of the date of the AGM; un-adopted statements are also filed within thirty days. Statute text reproduced by ICAI study material. Printed in words.",
+      "item": "Financial statements (Form AOC-4, with the consolidated statements in AOC-4 CFS) under section 137(1) Companies Act 2013: filed with the Registrar within thirty days of the date of the AGM; un-adopted statements are also filed within thirty days. Text of the Companies Act 2013 as updated on India Code; the bracketed figure marks a later amendment. Printed in words.",
       "value": "thirty days",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/74737bos60488-m2-cp9.pdf",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
       "quote": "shall be filed with the Registrar within thirty days of the date of annual general meeting in such manner, with such fees or additional fees as may be prescribed",
-      "read_on": "2026-10-17",
+      "read_on": "2026-11-06",
       "used_by": [
         "india-financial-statements",
         "india-formation",
@@ -3992,12 +3992,12 @@
     },
     {
       "id": "in.caro.excl.capital",
-      "item": "CARO 2020 does NOT apply to a private limited company (not a subsidiary or holding company of a public company) whose paid-up capital and reserves and surplus are not more than this on the balance sheet date, AND borrowings from banks/FIs never exceeded one crore rupees in the year, AND revenue did not exceed ten crore rupees. All three tests together. Order S.O. 849(E) of 25 Feb 2020 reproduced verbatim in the ICAI Guidance Note. Printed in words.",
+      "item": "CARO 2020 does NOT apply to a private limited company (not a subsidiary or holding company of a public company) whose paid-up capital and reserves and surplus are not more than this on the balance sheet date, AND borrowings from banks/FIs never exceeded one crore rupees in the year, AND revenue did not exceed ten crore rupees. All three tests together. Order S.O. 849(E) of 25 Feb 2020, Gazette text on India Code. Printed in words.",
       "value": "one crore rupees",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/60117aasb48979-a.pdf",
-      "quote": "having a paid-up capital and reserves and surplus not more than one crore rupees as on the balance sheet date",
-      "read_on": "2026-10-17",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/2ff3773e-e557-4add-9df5-28b3353635b4/content",
+      "quote": "having a paid up capital and reserves and surplus not more than one crore rupees as on the balance sheet date",
+      "read_on": "2026-11-06",
       "used_by": [
         "in-tds-freelance",
         "india-crypto-tax",
@@ -4010,9 +4010,9 @@
       "item": "CARO 2020 private company exclusion, test 2: total borrowings from any bank or financial institution not exceeding this at ANY point of time during the financial year.",
       "value": "one crore rupees",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/60117aasb48979-a.pdf",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/2ff3773e-e557-4add-9df5-28b3353635b4/content",
       "quote": "which does not have total borrowings exceeding one crore rupees from any bank or financial institution at any point of time",
-      "read_on": "2026-10-17",
+      "read_on": "2026-11-06",
       "used_by": [
         "in-tds-freelance",
         "india-crypto-tax",
@@ -4025,9 +4025,9 @@
       "item": "CARO 2020 private company exclusion, test 3: total revenue as disclosed in Schedule III (including discontinuing operations) not exceeding this during the financial year. The Order prints 'ten crores rupees' in one place and 'ten crore rupees' in another.",
       "value": "ten crore rupees",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/60117aasb48979-a.pdf",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/2ff3773e-e557-4add-9df5-28b3353635b4/content",
       "quote": "exceeding ten crore rupees during the financial year as per the financial statements",
-      "read_on": "2026-10-17",
+      "read_on": "2026-11-06",
       "used_by": [
         "india-financial-statements",
         "india-gst",
@@ -4039,24 +4039,12 @@
       "item": "CARO 2020 also does not apply to a one person company or a small company as defined in section 2(85). Since 1 December 2025 the small company limits are rupees ten crores paid-up capital and rupees one hundred crores turnover, so the CARO exclusion follows those new limits. Also excluded: banking companies, insurance companies, section 8 companies.",
       "value": "small company",
       "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/60117aasb48979-a.pdf",
-      "quote": "a one person company as defined under clause (62) of section 2 of the Act and a small company as defined under clause (85) of section 2",
-      "read_on": "2026-10-17",
+      "source_url": "https://indiacode.gov.in/server/api/core/bitstreams/2ff3773e-e557-4add-9df5-28b3353635b4/content",
+      "quote": "a One Person Company as defined in clause (62) of section 2 of the Companies Act and a small company as defined in clause (85) of section 2 of the Companies Act",
+      "read_on": "2026-11-06",
       "used_by": [
         "india-financial-statements",
         "india-formation"
-      ]
-    },
-    {
-      "id": "in.indas.phase1.net-worth",
-      "item": "Ind AS mandatory (Companies (Indian Accounting Standards) Rules 2015, rule 4(1)(ii)) for companies, listed or unlisted, with net worth of this amount OR MORE, plus their holding, subsidiary, joint venture and associate companies. Rule text reproduced verbatim in ICAI study material. Printed in words.",
-      "value": "rupees five hundred crore or more",
-      "tax_year": "in force 17 Oct 2026",
-      "source_url": "https://resource.cdn.icai.org/87811bos-280825-final-ch1.pdf",
-      "quote": "companies other than those covered by sub-clause (a) above and having net worth of rupees five hundred crore or more",
-      "read_on": "2026-10-17",
-      "used_by": [
-        "india-financial-statements"
       ]
     },
     {
