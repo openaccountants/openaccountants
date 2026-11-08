@@ -3,7 +3,7 @@ jurisdiction: CA
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial: {IT-IND: "ca-fed-t1-return and the provincial and territorial return skills other than on-individual-return still carry 2025 figures"}
+partial: {IT-IND: "ca-fed-t1-return and the provincial and territorial return skills other than Ontario, British Columbia, Alberta and Quebec still carry 2025 figures"}
 ---
 
 # Canada: tax pack
@@ -14,7 +14,7 @@ Tax years: not stated (1 skill), 2026 (5 skills), 2025 (15 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Capital gains](ca-capital-gains.md), [Fed t1 return](ca-fed-t1-return.md), [Freelance intake](ca-freelance-intake.md), [Return assembly](ca-return-assembly.md) | 2026, 2025 | Partly covered: ca-fed-t1-return and the provincial and territorial return skills other than on-individual-return still carry 2025 figures |
+| Income tax | [Capital gains](ca-capital-gains.md), [Fed t1 return](ca-fed-t1-return.md), [Freelance intake](ca-freelance-intake.md), [Return assembly](ca-return-assembly.md), [Quebec individual return (TP-1)](quebec/qc-individual-return.md) | 2026, 2025 | Partly covered: ca-fed-t1-return and the provincial and territorial return skills other than Ontario, British Columbia, Alberta and Quebec still carry 2025 figures |
 | Company tax | [Qc corporate tax co17](qc-corporate-tax-co17.md) | 2025 | Needs updating |
 | VAT or sales tax | [GST HST](canada-gst-hst.md) | 2025 | Needs updating |
 | Social contributions | | | Missing |
