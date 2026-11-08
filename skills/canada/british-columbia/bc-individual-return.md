@@ -133,7 +133,7 @@ Rates apply on a cumulative basis to taxable income (T1 line 26000). The "tax on
 
 The BC climate action tax credit "has ended", and the April 2025 payment was the final one. It was a quarterly payment paid with the GST/HST credit. For the last benefit year (July 2024 to June 2025, based on 2023 income) the maximums were $504 for the individual, $252 for a spouse or common-law partner (or the first child of a single parent) and $126 for each other child, reduced by 2% of adjusted family net income above $41,071 (individuals) or $57,288 (families). Someone who has not filed a 2023 or earlier return may still get the credit for those years when they file. Do not compute it for 2025 or 2026. Source: https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/credits/climate-action
 
-## The taxable base
+## The base
 
 BC tax is a tax on the federal taxable income from T1 line 26000. Nothing is added or deducted for BC: income, deductions, the capital gains inclusion and losses are all federal (see `ca-fed-t1-return` and `ca-capital-gains`).
 
@@ -190,7 +190,7 @@ Source: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/
 - **Foreign tax.** Where the federal foreign tax credit on non-business income is less than the foreign tax paid, a provincial foreign tax credit may be claimed on Form T2036 and entered on BC428 line 71.
 - **Emigrants and immigrants.** CRA's package refers to residence in BC "on December 31, 2025 (or your departure date)": a person who leaves Canada uses the province of residence on the departure date. Departure tax and part-year rules are in `ca-tax-residency` and `leaving-canada-departure-tax`.
 
-## Worked examples
+## Two worked examples that recompute
 
 ### Example 1: 2026, single BC resident, taxable income $42,000
 
