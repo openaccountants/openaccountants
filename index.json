@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T13:16:02+00:00",
+ "generated_at": "2026-11-06T16:26:02+00:00",
  "counts": {
   "guides": 2402,
   "jurisdictions": 270,
@@ -15364,7 +15364,7 @@
    "verified_by": null,
    "reviewed_by": "Michael Cutajar",
    "tax_year": "2026",
-   "last_updated": "2026-11-08"
+   "last_updated": "2026-11-04"
   },
   {
    "slug": "malta-payroll",
@@ -15436,7 +15436,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-08"
+   "last_updated": "2026-11-04"
   },
   {
    "slug": "mt-capital-gains",
@@ -15592,7 +15592,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-08"
+   "last_updated": "2026-11-04"
   },
   {
    "slug": "mt-permanent-residence-programme",
@@ -15640,7 +15640,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-08"
+   "last_updated": "2026-11-04"
   },
   {
    "slug": "mt-return-assembly",
