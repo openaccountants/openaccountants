@@ -1,0 +1,75 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "organisation",
+    "role": "owner",
+    "name": "OpenAccountants (Glimpse Ltd, Malta)",
+    "email": "michael@openaccountants.com",
+    "description": "OpenAccountants is the tax layer for AI: open infrastructure so AI assistants answer tax questions from cited, accountant-checked rules instead of guessing. Founded by Michael Cutajar, a Maltese CPA (ACCA) who writes the code, and owned by Glimpse Ltd, Malta.",
+    "webpageUrl": {
+      "url": "https://github.com/openaccountants"
+    }
+  },
+  "projects": [
+    {
+      "guid": "openaccountants",
+      "name": "OpenAccountants",
+      "description": "People now ask their AI about tax, and it answers with confidence: often last year's rate, no source, and no one accountable. I'm a Maltese accountant who also writes code. In 2025 I built an AI accounting app, and by the end of that year it was clear the AI itself would swallow apps like mine. So in April 2026 I started over and built for the AI instead.\n\nOpenAccountants is an open server that plugs into ChatGPT, Claude, Gemini and Cursor and hands the model tax rules for 190+ countries and states. Each rule names its official source, and calculators do the tax maths so the model computes instead of guessing. Over 200 approved accountants in 73 jurisdictions write and check the rules under their own names.\n\nSeven months in, it has answered 25,000+ AI tool calls, been accepted as a ChatGPT plugin, and become one of the most-starred 'tax' repositories on GitHub.\n\nThe server, tools and calculator code are AGPL-3.0. The tax rule content is published alongside under a separate source-available licence. We are open to feedback on this licensing split.\n\nThis grant pays for the open parts: keeping the server working as every AI app changes how it calls tools, releasing the calculator engine as a standalone library, and publishing an open format for tax rules so anyone can ship rules an AI can cite.",
+      "webpageUrl": {
+        "url": "https://www.openaccountants.com"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/openaccountants/openaccountants"
+      },
+      "licenses": [
+        "spdx:AGPL-3.0-only"
+      ],
+      "tags": [
+        "tax",
+        "accounting",
+        "mcp",
+        "ai",
+        "llm",
+        "fintech",
+        "open-data"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "bank-transfer",
+        "type": "bank",
+        "address": "Bank transfer to Glimpse Ltd (Malta). Details on request: michael@openaccountants.com",
+        "description": "Company bank account of Glimpse Ltd, the owner of the OpenAccountants code."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "maintenance-2027",
+        "status": "active",
+        "name": "Open server and calculator engine, 2027",
+        "description": "One year of: maintaining the AGPL MCP server across ChatGPT, Claude, Gemini and Cursor as their tool protocols change; releasing the calculator engine as a standalone open library; and publishing an open, machine-readable format for tax rules with a validator, so anyone can ship tax rules an AI can cite.",
+        "amount": 100000,
+        "currency": "USD",
+        "frequency": "yearly",
+        "channels": [
+          "bank-transfer"
+        ]
+      },
+      {
+        "guid": "any-amount",
+        "status": "active",
+        "name": "Support the project",
+        "description": "One-off support of any size.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": [
+          "bank-transfer"
+        ]
+      }
+    ]
+  }
+}
