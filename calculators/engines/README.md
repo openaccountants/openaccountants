@@ -11,6 +11,7 @@ The calculation engines behind the compute tool of the OpenAccountants plugin, p
 | [`au_sbito_2026_27`](au_sbito_2026_27/) | AU | 2026-27 | Australia 2026-27 small business income tax offset for an individual resident: 16% of the tax on net small business income, capped at $1,000, aggregated turnover under $5m. | `au-rates-2026-27`, `au-individual-return` | 11 |
 | [`au_resident_tax_2026_27`](au_resident_tax_2026_27/) | AU | 2026-27 | Australia, resident for the full 2026-27 year: income tax on taxable income less LITO, plus 2% Medicare levy, plus MLS check; take-home = gross income less those. | `au-rates-2026-27` | 23 |
 | [`ie_income_tax_usc_2026`](ie_income_tax_usc_2026/) | IE | 2026 | Ireland 2026: income tax (after personal + PAYE credits) and USC for a single PAYE employee for the full year, cumulative basis. | `ie-payroll` | 17 |
+| [`mt_household_comparison_2026`](mt_household_comparison_2026/) | MT | 2025, 2026 | Malta resident married couple, basis year 2026 (year of assessment 2027) or basis year 2025 (year of assessment 2026): compares the joint computation on the married table, separate computation (article 49A or 50) with each spouse on the single or parent table, and either of those with spouse B's part-time self-employment profit taxed at the final 10% (article 90A, up to EUR 12,000), and says which gives the least tax. | `malta-income-tax` | 2 |
 | [`mt_income_tax_2026`](mt_income_tax_2026/) | MT | 2025, 2026 | Malta resident income tax on chargeable income for basis year 2026 (year of assessment 2027) or basis year 2025 (year of assessment 2026): picks the single, married or parent table, including the 2026 qualifying-child tables, from the person's facts. | `malta-income-tax` | 5 |
 | [`de_est_tariff_2026`](de_est_tariff_2026/) | DE | 2026 | Germany 2026 income tax from the § 32a EStG tariff on taxable income (zu versteuerndes Einkommen), Grundtarif or splitting. Excludes solidarity surcharge and church tax. | `germany-income-tax` | 24 |
 | [`pt_ss_independent_2026`](pt_ss_independent_2026/) | PT | 2026 | Portugal 2026: monthly social security contribution of a self-employed worker (quarterly regime) from the quarter's declared service/goods income; applies to the declaration month and the next two. | `pt-social-contributions` | 15 |
@@ -28,4 +29,4 @@ Results are computed from the figures in `rules.json`, not advice on anyone's si
 
 Licence: code AGPL-3.0-only; figures and wording in `rules.json` under the OpenAccountants Guide License v1.0, like the skills.
 
-Source commit: `4878966e4e6107589f33598ee0fb4ac0a3ad69d6`.
+Source commit: `42416e20`.

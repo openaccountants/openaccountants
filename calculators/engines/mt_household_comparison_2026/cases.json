@@ -1,0 +1,299 @@
+{
+  "engine": "mt_household_comparison_2026",
+  "source_commit": "42416e20",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-MT-HH-01",
+      "from": "python-parity",
+      "inputs": {
+        "spouse_a_chargeable_income": 94070.42,
+        "spouse_b_chargeable_income": 3986,
+        "married_resident_living_together": true,
+        "children": 2,
+        "eu_eea_or_long_term_resident": true,
+        "separate_computation_available": true,
+        "spouse_a_parent": true,
+        "spouse_b_parent": true,
+        "spouse_b_part_time_profit": 3986,
+        "part_time_eligible": true,
+        "separate_route": "article_50",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "mt_household_comparison_2026",
+        "headline": {
+          "label": "Lowest total tax for the couple, basis year 2026 (year of assessment 2027): joint computation with spouse B's part-time profit at the 10% final tax",
+          "value": 20748.25,
+          "currency": "EUR"
+        },
+        "lines": {
+          "options": {
+            "A_joint": {
+              "status": "computed",
+              "chargeable_income": 98056.42,
+              "table": "MARRIED_2_CHILDREN_2026",
+              "tax_on_return": 21744.75,
+              "final_tax": 0,
+              "total": 21744.75
+            },
+            "B_separate": {
+              "status": "computed",
+              "spouse_a": {
+                "chargeable_income": 94070.42,
+                "table": "PARENT_2_CHILDREN_2026",
+                "tax": 21599.65
+              },
+              "spouse_b": {
+                "chargeable_income": 3986,
+                "table": "PARENT_2_CHILDREN_2026",
+                "tax": 0
+              },
+              "final_tax": 0,
+              "total": 21599.65
+            },
+            "C_joint_10pct": {
+              "status": "computed",
+              "part_time_at_10pct": 3986,
+              "final_tax": 398.6,
+              "excess_to_return": 0,
+              "chargeable_income": 94070.42,
+              "table": "MARRIED_2_CHILDREN_2026",
+              "tax_on_return": 20349.65,
+              "total": 20748.25
+            },
+            "C_separate_10pct": {
+              "status": "computed",
+              "part_time_at_10pct": 3986,
+              "final_tax": 398.6,
+              "excess_to_return": 0,
+              "spouse_a": {
+                "chargeable_income": 94070.42,
+                "table": "PARENT_2_CHILDREN_2026",
+                "tax": 21599.65
+              },
+              "spouse_b": {
+                "chargeable_income": 0,
+                "table": "PARENT_2_CHILDREN_2026",
+                "tax": 0
+              },
+              "total": 21998.25
+            }
+          },
+          "lowest": [
+            "C_joint_10pct"
+          ],
+          "lowest_tax": 20748.25,
+          "saving_against_joint": 996.5
+        },
+        "steps": [
+          "Basis year 2026 is year of assessment 2027; status, custody and residence are tested in the basis year",
+          "Joint: 2 child(ren) in the couple's custody, 2 qualifying: the married 2 children table",
+          "A, joint: EUR 98,056.42 on the married 2 children table: EUR 98,056.42 x 35% - EUR 12,575.00 = EUR 21,744.75",
+          "Separate: each spouse uses the article 56(1)(b) tables: spouse A the parent 2 children table, spouse B the parent 2 children table",
+          "B, separate, spouse A: EUR 94,070.42 on the parent 2 children table: EUR 94,070.42 x 35% - EUR 11,325.00 = EUR 21,599.65",
+          "B, separate, spouse B: EUR 3,986.00 on the parent 2 children table is within the 0% band (up to EUR 18,500.00): EUR 0.00",
+          "Part-time: EUR 3,986.00 of spouse B's EUR 3,986.00 part-time profit (cap EUR 12,000.00) x 10% = EUR 398.60 final tax; EUR 0.00 stays in the return",
+          "C, joint: EUR 94,070.42 on the married 2 children table: EUR 94,070.42 x 35% - EUR 12,575.00 = EUR 20,349.65",
+          "C, separate, spouse A: EUR 94,070.42 on the parent 2 children table: EUR 94,070.42 x 35% - EUR 11,325.00 = EUR 21,599.65",
+          "C, separate, spouse B: EUR 0.00 on the parent 2 children table is within the 0% band (up to EUR 18,500.00): EUR 0.00",
+          "A_joint (joint computation on the married table): total EUR 21,744.75",
+          "B_separate (separate computation, each spouse on the single or parent table): total EUR 21,599.65",
+          "C_joint_10pct (joint computation with spouse B's part-time profit at the 10% final tax): total EUR 20,748.25",
+          "C_separate_10pct (separate computation with spouse B's part-time profit at the 10% final tax): total EUR 21,998.25",
+          "Lowest: C_joint_10pct, EUR 20,748.25, EUR 996.50 less than the joint computation"
+        ],
+        "inputs_used": {
+          "spouse_a_chargeable_income": 94070.42,
+          "spouse_b_chargeable_income": 3986,
+          "married_resident_living_together": true,
+          "credits_or_other_deductions": false,
+          "children": 2,
+          "eu_eea_or_long_term_resident": true,
+          "separate_computation_available": true,
+          "spouse_b_part_time_profit": 3986,
+          "part_time_eligible": true,
+          "income_or_deductions_to_allocate": false,
+          "spouse_a_parent": true,
+          "spouse_b_parent": true,
+          "separate_route": "article_50"
+        },
+        "constants_used": [
+          {
+            "name": "QUALIFYING_CHILD_NATIONALITY",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Who gets which table",
+            "quote": "a spouse, the individual, or the individual's spouse must be an EU/EEA national or hold long-term resident status;\nif nobody is an EU/EEA national, the child (or each of the two children) must have been born in Malta and be resident in Malta."
+          },
+          {
+            "name": "MARRIED_CHILD_TABLES_CUSTODY",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Who gets which table",
+            "quote": "for the married tables (a)(ii) and (a)(iii), the couple kept the child (or the two children) in their custody. Maintenance does not count for these tables"
+          },
+          {
+            "name": "MARRIED_2_CHILDREN_2026",
+            "value": {
+              "zero": 22500,
+              "bands": [
+                [
+                  32000,
+                  0.15,
+                  3375
+                ],
+                [
+                  60000,
+                  0.25,
+                  6575
+                ],
+                [
+                  null,
+                  0.35,
+                  12575
+                ]
+              ]
+            },
+            "slug": "malta-income-tax",
+            "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+            "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, 2 or more qualifying children, art. 56(1)(a)(iii) | €22,500 | over €22,500 and under €32,000 (€3,375) | over €32,000 and under €60,000 (€6,575) | over €60,000 (€12,575)"
+          },
+          {
+            "name": "PART_TIME_OPT_OUT",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Part-time work final tax",
+            "quote": "Opting out: the person may declare all part-time income in the return at progressive rates. Any final tax already paid is then credited or refunded (article 90A(2))."
+          },
+          {
+            "name": "SEPARATE_COMPUTATION_TABLES",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Who gets which table",
+            "quote": "Married tables (article 56(1)(a)) apply to a married couple resident in Malta and taxed jointly under article 49. If either spouse elected a separate return (article 49A), or the responsible spouse opted for a separate computation (article 50), each spouse uses the article 56(1)(b) tables instead."
+          },
+          {
+            "name": "PARENT_TABLE_TEST",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Who gets which table",
+            "quote": "Parent table (article 56(1)(b)(ii)): the individual was a parent who kept a child in custody, or paid maintenance for the child under article 12(1)(t). The child must be not over 18, or not over 23 if in full-time education."
+          },
+          {
+            "name": "PARENT_CHILD_TABLES_CUSTODY",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Who gets which table",
+            "quote": "for the parent tables (b)(iv) and (b)(v), the individual kept the child in custody (their own child, a spouse's child or a certified cohabitant's child) or paid maintenance for their own child under article 12(1)(t)"
+          },
+          {
+            "name": "PARENT_2_CHILDREN_2026",
+            "value": {
+              "zero": 18500,
+              "bands": [
+                [
+                  25500,
+                  0.15,
+                  2775
+                ],
+                [
+                  60000,
+                  0.25,
+                  5325
+                ],
+                [
+                  null,
+                  0.35,
+                  11325
+                ]
+              ]
+            },
+            "slug": "malta-income-tax",
+            "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+            "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, 2 or more qualifying children, art. 56(1)(b)(v) | €18,500 | over €18,500 and under €25,500 (€2,775) | over €25,500 and under €60,000 (€5,325) | over €60,000 (€11,325)"
+          },
+          {
+            "name": "PART_TIME_SPOUSE_EXTENSION",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Part-time work final tax",
+            "quote": "Article 90A(9) extends this to a spouse living with a qualifying spouse."
+          },
+          {
+            "name": "PART_TIME_FINAL_RATE",
+            "value": 0.1,
+            "slug": "malta-income-tax",
+            "section": "Part-time work final tax",
+            "quote": "Rate: 10% from year of assessment 2023 (article 90A(11)). Before that it was 15%. The tax is final, and the income is not declared in the return."
+          },
+          {
+            "name": "PART_TIME_SELF_EMPLOYED_CAP",
+            "value": 12000,
+            "slug": "malta-income-tax",
+            "section": "Part-time work final tax",
+            "quote": "Caps (rule 3(2)): the rate covers self-employed profit (article 4(1)(a)) up to €12,000 ... Any excess is declared in the return at normal rates."
+          },
+          {
+            "name": "PART_TIME_PAYMENT_DATE",
+            "value": "30 April",
+            "slug": "malta-income-tax",
+            "section": "Part-time work final tax",
+            "quote": "Paying as a self-employed part-timer: pay the tax by 30 April of the year after the income was earned."
+          }
+        ],
+        "assumptions": [
+          "Each spouse's chargeable income is their own, after their own expenses and capital allowances, and leaves out other final-tax income (15% rent option, property transfers)",
+          "The children are the couple's children in their custody; a child outside the household for whom a spouse pays maintenance is not handled",
+          "Spouse B's part-time income is self-employment profit; part-time employment income (EUR 10,000 cap) and part-time income of spouse A are not handled",
+          "No tax credits; social security contributions are not included; resident, not under a special residence programme, no double tax relief"
+        ],
+        "skill_anchors_reproduced": [
+          "malta-income-tax Case 2: married, two children, EUR 40,000 joint -> EUR 3,425 (2026) against EUR 5,450 (2025)",
+          "malta-income-tax Case 3: part-time profit EUR 15,000 -> final tax EUR 1,200 on EUR 12,000, EUR 3,000 into the return"
+        ],
+        "notes": [
+          "The 10% part-time tax is paid by 30 April 2027 with a statement of accounts; the return and its balance by 30 June 2027"
+        ],
+        "defaults_assumed": {
+          "income_or_deductions_to_allocate": false,
+          "credits_or_other_deductions": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "d37c666fbfdf2652a2daa3e95976eed43a6cda7dd2e0a9ef6769d04fd4c44218"
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "spouse_a_chargeable_income": 94070.42,
+        "spouse_b_chargeable_income": 3986,
+        "married_resident_living_together": true,
+        "children": 2,
+        "eu_eea_or_long_term_resident": true,
+        "separate_computation_available": true,
+        "spouse_a_parent": true,
+        "spouse_b_parent": true,
+        "spouse_b_part_time_profit": 3986,
+        "part_time_eligible": true,
+        "separate_route": "article_50",
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "mt_household_comparison_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2025 and 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "8f73647992ea8f17693a7cb19659e2364941a4b0b4b5284796bdb87cd0d808e2"
+    }
+  ]
+}
