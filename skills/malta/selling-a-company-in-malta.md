@@ -11,7 +11,7 @@ tier: 2
 domain: formation
 ---
 
-# Selling a company in Malta v1.2
+# Selling a company in Malta v1.3
 
 **4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/selling-a-company-in-malta.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
