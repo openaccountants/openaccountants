@@ -3,7 +3,8 @@ jurisdiction: CA
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial: {}
+partial:
+  IT-IND: "Quebec TP-1 (quebec/qc-individual-return) is on 2026; the federal T1 and most other provincial individual returns still carry pre-2026 figures"
 ---
 
 # Canada: tax pack
@@ -14,7 +15,7 @@ Tax years: not stated (1 skill), 2026 (5 skills), 2025 (13 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Capital gains](ca-capital-gains.md), [Fed t1 return](ca-fed-t1-return.md) | 2026, 2025 | Needs updating |
+| Income tax | [Capital gains](ca-capital-gains.md), [Fed t1 return](ca-fed-t1-return.md), [Quebec individual return (TP-1)](quebec/qc-individual-return.md) | 2026, 2025 | Needs updating |
 | Company tax | [Qc corporate tax co17](qc-corporate-tax-co17.md) | 2025 | Needs updating |
 | VAT or sales tax | [GST HST](canada-gst-hst.md) | 2025 | Needs updating |
 | Social contributions | | | Missing |
