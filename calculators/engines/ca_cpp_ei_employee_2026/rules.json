@@ -1,0 +1,111 @@
+{
+  "engine": "ca_cpp_ei_employee_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/ca_cpp_ei_employee_2026",
+  "generated_from": "src/lib/engines/ca-cpp-ei-employee-2026.ts",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "ca_cpp_ei_employee_2026",
+    "version": "1.2.0",
+    "jurisdiction": "CA",
+    "tax_years": [
+      "2026"
+    ],
+    "summary": "Canada (outside Quebec) employee CPP (base + first additional), CPP2 and EI premiums for a full calendar year 2026 with one employer.",
+    "facts": {
+      "annual_pensionable_earnings": {
+        "type": "number",
+        "required": true,
+        "description": "CAD (salary)"
+      },
+      "province": {
+        "type": "string",
+        "required": true,
+        "description": "province of employment, two-letter code, e.g. ON (QC is refused: Quebec uses QPP)"
+      },
+      "months_employed": {
+        "type": "number",
+        "required": false,
+        "default": 12,
+        "description": "integer 1-12"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "cpp_base_and_first_additional": "CAD",
+      "cpp2": "CAD",
+      "ei_premium": "CAD",
+      "total": "CAD"
+    }
+  },
+  "anchors": [
+    "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+    "Max EI premium $1,123.07 reproduced",
+    "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+  ],
+  "rules": [
+    {
+      "name": "CPP_EMPLOYEE_RATE",
+      "value": 0.0595,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "CPP employee rate — 5.95%",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "BASIC_EXEMPTION",
+      "value": 3500,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "Basic exemption — $3,500",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "YMPE_2026",
+      "value": 74600,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "YMPE (2026) — $74,600",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "YAMPE_2026",
+      "value": 85000,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "YAMPE (2026) — $85,000",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "CPP2_EMPLOYEE_RATE",
+      "value": 0.04,
+      "slug": "canada-payroll",
+      "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+      "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "EI_EMPLOYEE_RATE_NON_QC",
+      "value": 0.0163,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "EI employee rate (non-QC) — 1.63%",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "EI_MAX_INSURABLE_EARNINGS",
+      "value": 68900,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "Max insurable earnings — $68,900",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    }
+  ]
+}

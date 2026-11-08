@@ -1,0 +1,158 @@
+{
+  "engine": "uk_paye_take_home_2026_27",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/uk_paye_take_home_2026_27",
+  "generated_from": "src/lib/engines/uk-paye-take-home-2026-27.ts",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "uk_paye_take_home_2026_27",
+    "version": "1.2.0",
+    "jurisdiction": "GB",
+    "tax_years": [
+      "2026-27"
+    ],
+    "summary": "UK employee annual income tax (rUK rates: England, Wales, Northern Ireland) and employee Class 1 NIC (category A) on salary for 2026-27, and take-home pay. Annual basis.",
+    "facts": {
+      "annual_salary": {
+        "type": "number",
+        "required": true,
+        "description": "GBP"
+      },
+      "region": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "england",
+          "wales",
+          "northern_ireland",
+          "scotland"
+        ],
+        "description": "where the employee lives for tax: england|wales|northern_ireland|scotland (Scottish taxpayers are refused: no Scottish engine yet)"
+      },
+      "nic_category": {
+        "type": "string",
+        "required": false,
+        "default": "A",
+        "description": "A (only A supported)"
+      },
+      "other_income": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "GBP, non-savings, no NIC"
+      },
+      "gross_pension_contributions_ras": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "GBP gross relief-at-source contributions"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2026-27"
+        ],
+        "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "adjusted_net_income": "GBP",
+      "personal_allowance": "GBP",
+      "taxable_income": "GBP",
+      "income_tax": "GBP",
+      "employee_nic": "GBP",
+      "take_home_pay": "GBP"
+    }
+  },
+  "anchors": [
+    "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+    "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+  ],
+  "rules": [
+    {
+      "name": "PERSONAL_ALLOWANCE",
+      "value": 12570,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "BASIC_RATE_BAND",
+      "value": 37700,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "ADDITIONAL_RATE_START",
+      "value": 125140,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "40% £37,701 to £125,140; 45% above",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "RATES",
+      "value": [
+        0.2,
+        0.4,
+        0.45
+      ],
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "TAPER_START",
+      "value": 100000,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "TAPER_ROUNDING",
+      "value": "round reduction up to whole pound",
+      "slug": "uk-income-tax-sa100",
+      "section": "The taxable base / Step 4: the Personal Allowance",
+      "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))",
+      "skill_url": "https://www.openaccountants.com/skills/uk-income-tax-sa100"
+    },
+    {
+      "name": "NIC_PRIMARY_THRESHOLD",
+      "value": 12570,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "NIC_UPPER_EARNINGS_LIMIT",
+      "value": 50270,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "EE_NIC_MAIN_RATE",
+      "value": 0.08,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    },
+    {
+      "name": "EE_NIC_UPPER_RATE",
+      "value": 0.02,
+      "slug": "uk-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above",
+      "skill_url": "https://www.openaccountants.com/skills/uk-payroll"
+    }
+  ]
+}

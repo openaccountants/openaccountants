@@ -1,0 +1,796 @@
+{
+  "engine": "nl_vpb_2026",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-01",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 800000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 192800,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 154800,
+          "vpb_total": 192800,
+          "effective_rate": 0.241
+        },
+        "steps": [
+          "19% on the first EUR 200,000.00 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 600,000.00) = EUR 154,800.00",
+          "Vpb payable = EUR 192,800.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 800000
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "6d6a52acf68158bf6509f88105ce0a1022c0ccbf06a1320260dec5a75f6796fa"
+    },
+    {
+      "id": "NL-0",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 0,
+          "tax_at_25_8pct": 0,
+          "vpb_total": 0,
+          "effective_rate": 0
+        },
+        "steps": [
+          "19% on the first EUR 0.00 = EUR 0.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 0.00) = EUR 0.00",
+          "Vpb payable = EUR 0.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 0
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "f236126d786fe017c696674ff66129d9b6baf063a1e26e4e2bf6237f7fa0e3bc"
+    },
+    {
+      "id": "NL-1",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 1,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 0.19,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 0.19,
+          "tax_at_25_8pct": 0,
+          "vpb_total": 0.19,
+          "effective_rate": 0.19
+        },
+        "steps": [
+          "19% on the first EUR 1.00 = EUR 0.19",
+          "25.8% on the excess over EUR 200,000.00 (EUR 0.00) = EUR 0.00",
+          "Vpb payable = EUR 0.19"
+        ],
+        "inputs_used": {
+          "taxable_amount": 1
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "68b8a26ed23faf40c100cc87055ca0fdaf984594e6776efa7ef432d9bb51df04"
+    },
+    {
+      "id": "NL-2",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 199999.99,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 38000,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 0,
+          "vpb_total": 38000,
+          "effective_rate": 0.19
+        },
+        "steps": [
+          "19% on the first EUR 199,999.99 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 0.00) = EUR 0.00",
+          "Vpb payable = EUR 38,000.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 199999.99
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "5e8728d197f63752e7e4b60e95585dd5722cf21816c69ff5111dea1f105498cf"
+    },
+    {
+      "id": "NL-3",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 200000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 38000,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 0,
+          "vpb_total": 38000,
+          "effective_rate": 0.19
+        },
+        "steps": [
+          "19% on the first EUR 200,000.00 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 0.00) = EUR 0.00",
+          "Vpb payable = EUR 38,000.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 200000
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "5e269223374291520338bbba1659531e0825641902f5d759502dd6315806f8aa"
+    },
+    {
+      "id": "NL-4",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 200000.01,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 38000,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 0,
+          "vpb_total": 38000,
+          "effective_rate": 0.19
+        },
+        "steps": [
+          "19% on the first EUR 200,000.00 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 0.01) = EUR 0.00",
+          "Vpb payable = EUR 38,000.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 200000.01
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "fc3cb77c5e5fe8938cb8e6871fdc90c26f5c713c6db31b7d3fb96f7bf631e162"
+    },
+    {
+      "id": "NL-5",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 425000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 96050,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 58050,
+          "vpb_total": 96050,
+          "effective_rate": 0.226
+        },
+        "steps": [
+          "19% on the first EUR 200,000.00 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 225,000.00) = EUR 58,050.00",
+          "Vpb payable = EUR 96,050.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 425000
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "475dc0ad3bd535b35b73695c785d904b4c7e0ed99dbc4fe12d6bb37e21667a42"
+    },
+    {
+      "id": "NL-6",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 2020000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 507560,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 469560,
+          "vpb_total": 507560,
+          "effective_rate": 0.251267
+        },
+        "steps": [
+          "19% on the first EUR 200,000.00 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 1,820,000.00) = EUR 469,560.00",
+          "Vpb payable = EUR 507,560.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 2020000
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "db8e056a000da0491247bc626ac47fa71243eb59620e13406a35f079873d1a2b"
+    },
+    {
+      "id": "NL-7",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 1234567.89,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 304918.52,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 266918.52,
+          "vpb_total": 304918.52,
+          "effective_rate": 0.246984
+        },
+        "steps": [
+          "19% on the first EUR 200,000.00 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 1,034,567.89) = EUR 266,918.52",
+          "Vpb payable = EUR 304,918.52"
+        ],
+        "inputs_used": {
+          "taxable_amount": 1234567.89
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "209663bcef37292d4919d0aa4850317e64edfb59e8a0f4e3aff713145f79c836"
+    },
+    {
+      "id": "NL-8",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": 333333.33,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "nl_vpb_2026",
+        "headline": {
+          "label": "Vpb payable for 2026",
+          "value": 72400,
+          "currency": "EUR"
+        },
+        "lines": {
+          "tax_at_19pct": 38000,
+          "tax_at_25_8pct": 34400,
+          "vpb_total": 72400,
+          "effective_rate": 0.2172
+        },
+        "steps": [
+          "19% on the first EUR 200,000.00 = EUR 38,000.00",
+          "25.8% on the excess over EUR 200,000.00 (EUR 133,333.33) = EUR 34,400.00",
+          "Vpb payable = EUR 72,400.00"
+        ],
+        "inputs_used": {
+          "taxable_amount": 333333.33
+        },
+        "constants_used": [
+          {
+            "name": "BRACKET",
+            "value": 200000,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%"
+          },
+          {
+            "name": "LOW_RATE",
+            "value": 0.19,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "up to and including EUR 200,000 ... 19% | 2026"
+          },
+          {
+            "name": "HIGH_RATE",
+            "value": 0.258,
+            "slug": "nl-corporate-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026"
+          }
+        ],
+        "assumptions": [
+          "Calendar-year 2026 financial year",
+          "Input is the taxable amount after loss offset, participation exemption and innovation box"
+        ],
+        "skill_anchors_reproduced": [
+          "Rates table: tax at EUR 200,000 = EUR 38,000",
+          "Example 1: EUR 425,000 -> EUR 96,050",
+          "Example 2: EUR 2,020,000 -> EUR 507,560"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "a95f0a438ac1454888e4462370a9826d5119c359955a41382a444f9231d8e0a9"
+    },
+    {
+      "id": "NL-neg",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": -1,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "nl_vpb_2026",
+        "what": "input 'taxable_amount' must not be negative",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "taxable_amount": {
+              "type": "number",
+              "description": "EUR, taxable amount after losses/participation exemption/innovation box"
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "taxable_amount",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "NL-text",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_amount": "abc",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "nl_vpb_2026",
+        "what": "input 'taxable_amount' must be a number",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "taxable_amount": {
+              "type": "number",
+              "description": "EUR, taxable amount after losses/participation exemption/innovation box"
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "taxable_amount",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "NL-missing",
+      "from": "python-parity",
+      "inputs": {
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "nl_vpb_2026",
+        "what": "missing input 'taxable_amount'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "taxable_amount": {
+              "type": "number",
+              "description": "EUR, taxable amount after losses/participation exemption/innovation box"
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "taxable_amount",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "taxable_amount": 800000,
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "nl_vpb_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "214282cf0af4d1832e783d61b1d8ee87f10f6d91857e9c63c5992c9781651a63"
+    }
+  ]
+}

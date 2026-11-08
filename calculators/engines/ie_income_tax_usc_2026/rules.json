@@ -1,0 +1,129 @@
+{
+  "engine": "ie_income_tax_usc_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/ie_income_tax_usc_2026",
+  "generated_from": "src/lib/engines/ie-income-tax-usc-2026.ts",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "ie_income_tax_usc_2026",
+    "version": "1.2.0",
+    "jurisdiction": "IE",
+    "tax_years": [
+      "2026"
+    ],
+    "summary": "Ireland 2026: income tax (after personal + PAYE credits) and USC for a single PAYE employee for the full year, cumulative basis.",
+    "facts": {
+      "gross_pay": {
+        "type": "number",
+        "required": true,
+        "description": "EUR"
+      },
+      "employee_pension_contribution": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "EUR (relieved for income tax, not USC)"
+      },
+      "status": {
+        "type": "string",
+        "required": true,
+        "description": "single, married, etc. (only single without children is computed; others are refused)"
+      },
+      "age_70_or_full_medical_card": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "aged 70+ or holds a full medical card"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "taxable_pay": "EUR",
+      "gross_income_tax": "EUR",
+      "tax_credits": "EUR",
+      "income_tax": "EUR",
+      "usc": "EUR",
+      "income_tax_plus_usc": "EUR"
+    }
+  },
+  "anchors": [
+    "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+  ],
+  "rules": [
+    {
+      "name": "INCOME_TAX_RATES",
+      "value": [
+        0.2,
+        0.4
+      ],
+      "slug": "ie-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-payroll"
+    },
+    {
+      "name": "CUTOFF_SINGLE",
+      "value": 44000,
+      "slug": "ie-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000",
+      "skill_url": "https://www.openaccountants.com/skills/ie-payroll"
+    },
+    {
+      "name": "SINGLE_PERSON_CREDIT",
+      "value": 2000,
+      "slug": "ie-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000",
+      "skill_url": "https://www.openaccountants.com/skills/ie-payroll"
+    },
+    {
+      "name": "EMPLOYEE_PAYE_CREDIT",
+      "value": 2000,
+      "slug": "ie-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "Employee (PAYE) Tax Credit | EUR 2,000",
+      "skill_url": "https://www.openaccountants.com/skills/ie-payroll"
+    },
+    {
+      "name": "USC_BANDS",
+      "value": [
+        [
+          12012,
+          0.005
+        ],
+        [
+          16688,
+          0.02
+        ],
+        [
+          41344,
+          0.03
+        ],
+        [
+          null,
+          0.08
+        ]
+      ],
+      "slug": "ie-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance",
+      "skill_url": "https://www.openaccountants.com/skills/ie-payroll"
+    },
+    {
+      "name": "USC_EXEMPT_LIMIT",
+      "value": 13000,
+      "slug": "ie-payroll",
+      "section": "Rates, bands and thresholds",
+      "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)",
+      "skill_url": "https://www.openaccountants.com/skills/ie-payroll"
+    }
+  ]
+}

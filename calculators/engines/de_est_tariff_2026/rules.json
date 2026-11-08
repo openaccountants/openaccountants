@@ -1,0 +1,123 @@
+{
+  "engine": "de_est_tariff_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/de_est_tariff_2026",
+  "generated_from": "src/lib/engines/de-est-tariff-2026.ts",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "de_est_tariff_2026",
+    "version": "1.2.0",
+    "jurisdiction": "DE",
+    "tax_years": [
+      "2026"
+    ],
+    "summary": "Germany 2026 income tax from the § 32a EStG tariff on taxable income (zu versteuerndes Einkommen), Grundtarif or splitting. Excludes solidarity surcharge and church tax.",
+    "facts": {
+      "taxable_income_zve": {
+        "type": "number",
+        "required": true,
+        "description": "EUR"
+      },
+      "assessment": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "single",
+          "joint"
+        ],
+        "description": "single (Grundtarif) or joint (splitting)"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "zve": "EUR (whole euros)",
+      "zone": "tariff zone 1-5",
+      "income_tax": "EUR (whole euros)"
+    }
+  },
+  "anchors": [
+    "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+    "Example 2: zvE EUR 79,964 -> EUR 22,449"
+  ],
+  "rules": [
+    {
+      "name": "ZONE1_GRUNDFREIBETRAG",
+      "value": 12348,
+      "slug": "germany-income-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax",
+      "skill_url": "https://www.openaccountants.com/skills/germany-income-tax"
+    },
+    {
+      "name": "ZONE2",
+      "value": {
+        "top": 17799,
+        "a": "914.51",
+        "b": "1400"
+      },
+      "slug": "germany-income-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000",
+      "skill_url": "https://www.openaccountants.com/skills/germany-income-tax"
+    },
+    {
+      "name": "ZONE3",
+      "value": {
+        "top": 69878,
+        "a": "173.10",
+        "b": "2397",
+        "c": "1034.87"
+      },
+      "slug": "germany-income-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000",
+      "skill_url": "https://www.openaccountants.com/skills/germany-income-tax"
+    },
+    {
+      "name": "ZONE4",
+      "value": {
+        "top": 277825,
+        "r": "0.42",
+        "c": "11135.63"
+      },
+      "slug": "germany-income-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63",
+      "skill_url": "https://www.openaccountants.com/skills/germany-income-tax"
+    },
+    {
+      "name": "ZONE5",
+      "value": {
+        "r": "0.45",
+        "c": "19470.38"
+      },
+      "slug": "germany-income-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "From EUR 277,826: 0.45 × x − 19,470.38",
+      "skill_url": "https://www.openaccountants.com/skills/germany-income-tax"
+    },
+    {
+      "name": "ROUNDING",
+      "value": "floor x and tax to whole euros",
+      "slug": "germany-income-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "Taxable income x and the tax are both rounded down to whole euros",
+      "skill_url": "https://www.openaccountants.com/skills/germany-income-tax"
+    },
+    {
+      "name": "SPLITTING",
+      "value": "2 x tariff(x/2)",
+      "slug": "germany-income-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)",
+      "skill_url": "https://www.openaccountants.com/skills/germany-income-tax"
+    }
+  ]
+}

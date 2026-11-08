@@ -1,0 +1,669 @@
+{
+  "engine": "uk_ani_pension_target_2026_27",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-06",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 110000,
+        "target": "tax_free_childcare",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "uk_ani_pension_target_2026_27",
+        "what": "Tax-Free Childcare adjusted net income limit (UK, 2026-27)",
+        "why": "No OpenAccountants skill states the Tax-Free Childcare income limit. The method is served (gross needed = ANI - limit; net paid = gross x 0.8) but not the limit.",
+        "partial": {
+          "adjusted_net_income_now": 110000,
+          "formula": "gross_needed = ANI - limit; net_payment = gross_needed x 0.8"
+        },
+        "inputs_used": {
+          "total_taxable_income": 110000,
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0,
+          "target": "tax_free_childcare"
+        },
+        "constants_used": [
+          {
+            "name": "RAS_NET_TO_GROSS",
+            "value": 0.8,
+            "slug": "uk-income-tax-sa100",
+            "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+            "quote": "pension_gross: pension_net / 0.8"
+          },
+          {
+            "name": "ANI_DEFINITION",
+            "value": "total taxable income less reliefs, less grossed-up Gift Aid and grossed-up relief-at-source pension contributions",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+            "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+          },
+          {
+            "name": "PA_TAPER_START",
+            "value": 100000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+          },
+          {
+            "name": "HICBC_START",
+            "value": 60000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "dde66e84c2171e031e2dab03c855b9404e8d0d92e838163363c5c217f0055406"
+    },
+    {
+      "id": "ANI-pa",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 110000,
+        "target": "personal_allowance_taper",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_ani_pension_target_2026_27",
+        "headline": {
+          "label": "Net relief-at-source payment needed to reach ANI limit (personal_allowance_taper)",
+          "value": 8000,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income_now": 110000,
+          "limit": 100000,
+          "gross_contribution_needed": 10000,
+          "net_payment_needed": 8000,
+          "basic_rate_relief_added_by_provider": 2000
+        },
+        "steps": [
+          "Adjusted net income now = GBP 110,000.00 less gross pension contributions GBP 0.00 less gross Gift Aid GBP 0.00 = GBP 110,000.00",
+          "Limit = GBP 100,000.00 (OpenAccountants skill)",
+          "Gross contribution needed = GBP 10,000.00; the person pays 80% of that = GBP 8,000.00 and the provider adds GBP 2,000.00 basic rate relief"
+        ],
+        "inputs_used": {
+          "total_taxable_income": 110000,
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0,
+          "target": "personal_allowance_taper",
+          "limit": 100000,
+          "limit_source": "uk-income-tax-sa100 / Rates, bands and thresholds",
+          "limit_origin": "OpenAccountants skill"
+        },
+        "constants_used": [
+          {
+            "name": "RAS_NET_TO_GROSS",
+            "value": 0.8,
+            "slug": "uk-income-tax-sa100",
+            "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+            "quote": "pension_gross: pension_net / 0.8"
+          },
+          {
+            "name": "ANI_DEFINITION",
+            "value": "total taxable income less reliefs, less grossed-up Gift Aid and grossed-up relief-at-source pension contributions",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+            "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+          },
+          {
+            "name": "PA_TAPER_START",
+            "value": 100000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+          },
+          {
+            "name": "HICBC_START",
+            "value": 60000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+          }
+        ],
+        "assumptions": [
+          "No other ANI deductions beyond those entered",
+          "Contribution within the annual allowance (not checked)",
+          "Exactly at the limit; whether the test is 'over' or 'at or over' the limit is not decided here"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-income-tax-sa100 Example 2: net GBP 4,000 -> gross GBP 5,000; ANI GBP 107,000; further gross GBP 7,000 restores the allowance at GBP 100,000"
+        ],
+        "notes": [
+          "limit origin: OpenAccountants skill"
+        ],
+        "defaults_assumed": {
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "56bb982cb8261d8eb970bea5e7fd4bff3e1c7a658742a44d49a3d67051788987"
+    },
+    {
+      "id": "ANI-pa-existing",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 112000,
+        "existing_gross_ras_contributions": 5000,
+        "target": "personal_allowance_taper",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_ani_pension_target_2026_27",
+        "headline": {
+          "label": "Net relief-at-source payment needed to reach ANI limit (personal_allowance_taper)",
+          "value": 5600,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income_now": 107000,
+          "limit": 100000,
+          "gross_contribution_needed": 7000,
+          "net_payment_needed": 5600,
+          "basic_rate_relief_added_by_provider": 1400
+        },
+        "steps": [
+          "Adjusted net income now = GBP 112,000.00 less gross pension contributions GBP 5,000.00 less gross Gift Aid GBP 0.00 = GBP 107,000.00",
+          "Limit = GBP 100,000.00 (OpenAccountants skill)",
+          "Gross contribution needed = GBP 7,000.00; the person pays 80% of that = GBP 5,600.00 and the provider adds GBP 1,400.00 basic rate relief"
+        ],
+        "inputs_used": {
+          "total_taxable_income": 112000,
+          "existing_gross_ras_contributions": 5000,
+          "gross_gift_aid": 0,
+          "target": "personal_allowance_taper",
+          "limit": 100000,
+          "limit_source": "uk-income-tax-sa100 / Rates, bands and thresholds",
+          "limit_origin": "OpenAccountants skill"
+        },
+        "constants_used": [
+          {
+            "name": "RAS_NET_TO_GROSS",
+            "value": 0.8,
+            "slug": "uk-income-tax-sa100",
+            "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+            "quote": "pension_gross: pension_net / 0.8"
+          },
+          {
+            "name": "ANI_DEFINITION",
+            "value": "total taxable income less reliefs, less grossed-up Gift Aid and grossed-up relief-at-source pension contributions",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+            "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+          },
+          {
+            "name": "PA_TAPER_START",
+            "value": 100000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+          },
+          {
+            "name": "HICBC_START",
+            "value": 60000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+          }
+        ],
+        "assumptions": [
+          "No other ANI deductions beyond those entered",
+          "Contribution within the annual allowance (not checked)",
+          "Exactly at the limit; whether the test is 'over' or 'at or over' the limit is not decided here"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-income-tax-sa100 Example 2: net GBP 4,000 -> gross GBP 5,000; ANI GBP 107,000; further gross GBP 7,000 restores the allowance at GBP 100,000"
+        ],
+        "notes": [
+          "limit origin: OpenAccountants skill"
+        ],
+        "defaults_assumed": {
+          "gross_gift_aid": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "4f3590e915c75b5f0146272427177c34b1f764e090365b02c292595d8a3f2697"
+    },
+    {
+      "id": "ANI-cb",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 75000,
+        "gross_gift_aid": 1250,
+        "target": "child_benefit_charge_nil",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_ani_pension_target_2026_27",
+        "headline": {
+          "label": "Net relief-at-source payment needed to reach ANI limit (child_benefit_charge_nil)",
+          "value": 11000,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income_now": 73750,
+          "limit": 60000,
+          "gross_contribution_needed": 13750,
+          "net_payment_needed": 11000,
+          "basic_rate_relief_added_by_provider": 2750
+        },
+        "steps": [
+          "Adjusted net income now = GBP 75,000.00 less gross pension contributions GBP 0.00 less gross Gift Aid GBP 1,250.00 = GBP 73,750.00",
+          "Limit = GBP 60,000.00 (OpenAccountants skill)",
+          "Gross contribution needed = GBP 13,750.00; the person pays 80% of that = GBP 11,000.00 and the provider adds GBP 2,750.00 basic rate relief"
+        ],
+        "inputs_used": {
+          "total_taxable_income": 75000,
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 1250,
+          "target": "child_benefit_charge_nil",
+          "limit": 60000,
+          "limit_source": "uk-income-tax-sa100 / Rates, bands and thresholds",
+          "limit_origin": "OpenAccountants skill"
+        },
+        "constants_used": [
+          {
+            "name": "RAS_NET_TO_GROSS",
+            "value": 0.8,
+            "slug": "uk-income-tax-sa100",
+            "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+            "quote": "pension_gross: pension_net / 0.8"
+          },
+          {
+            "name": "ANI_DEFINITION",
+            "value": "total taxable income less reliefs, less grossed-up Gift Aid and grossed-up relief-at-source pension contributions",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+            "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+          },
+          {
+            "name": "PA_TAPER_START",
+            "value": 100000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+          },
+          {
+            "name": "HICBC_START",
+            "value": 60000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+          }
+        ],
+        "assumptions": [
+          "No other ANI deductions beyond those entered",
+          "Contribution within the annual allowance (not checked)",
+          "Exactly at the limit; whether the test is 'over' or 'at or over' the limit is not decided here"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-income-tax-sa100 Example 2: net GBP 4,000 -> gross GBP 5,000; ANI GBP 107,000; further gross GBP 7,000 restores the allowance at GBP 100,000"
+        ],
+        "notes": [
+          "limit origin: OpenAccountants skill"
+        ],
+        "defaults_assumed": {
+          "existing_gross_ras_contributions": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "f2e2880d02809dc2fc55a1fc64cb643c0bb1b0fc4db5a5647f7117d1a5b0da19"
+    },
+    {
+      "id": "ANI-below",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 50000,
+        "target": "child_benefit_charge_nil",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_ani_pension_target_2026_27",
+        "headline": {
+          "label": "Net relief-at-source payment needed to reach ANI limit (child_benefit_charge_nil)",
+          "value": 0,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income_now": 50000,
+          "limit": 60000,
+          "gross_contribution_needed": 0,
+          "net_payment_needed": 0,
+          "basic_rate_relief_added_by_provider": 0
+        },
+        "steps": [
+          "Adjusted net income now = GBP 50,000.00 less gross pension contributions GBP 0.00 less gross Gift Aid GBP 0.00 = GBP 50,000.00",
+          "Limit = GBP 60,000.00 (OpenAccountants skill)",
+          "Gross contribution needed = GBP 0.00; the person pays 80% of that = GBP 0.00 and the provider adds GBP 0.00 basic rate relief"
+        ],
+        "inputs_used": {
+          "total_taxable_income": 50000,
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0,
+          "target": "child_benefit_charge_nil",
+          "limit": 60000,
+          "limit_source": "uk-income-tax-sa100 / Rates, bands and thresholds",
+          "limit_origin": "OpenAccountants skill"
+        },
+        "constants_used": [
+          {
+            "name": "RAS_NET_TO_GROSS",
+            "value": 0.8,
+            "slug": "uk-income-tax-sa100",
+            "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+            "quote": "pension_gross: pension_net / 0.8"
+          },
+          {
+            "name": "ANI_DEFINITION",
+            "value": "total taxable income less reliefs, less grossed-up Gift Aid and grossed-up relief-at-source pension contributions",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+            "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+          },
+          {
+            "name": "PA_TAPER_START",
+            "value": 100000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+          },
+          {
+            "name": "HICBC_START",
+            "value": 60000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+          }
+        ],
+        "assumptions": [
+          "No other ANI deductions beyond those entered",
+          "Contribution within the annual allowance (not checked)",
+          "Exactly at the limit; whether the test is 'over' or 'at or over' the limit is not decided here"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-income-tax-sa100 Example 2: net GBP 4,000 -> gross GBP 5,000; ANI GBP 107,000; further gross GBP 7,000 restores the allowance at GBP 100,000"
+        ],
+        "notes": [
+          "limit origin: OpenAccountants skill"
+        ],
+        "defaults_assumed": {
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "df6100acb92e073a23a264fb1ad84b37b3836bdd395f2c44eaafa272eedc2434"
+    },
+    {
+      "id": "ANI-tfc-supplied",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 104321.5,
+        "target": "tax_free_childcare",
+        "caller_supplied_limit": 100000,
+        "caller_supplied_limit_source": "https://www.gov.uk/tax-free-childcare",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "uk_ani_pension_target_2026_27",
+        "what": "Tax-Free Childcare adjusted net income limit (UK, 2026-27)",
+        "why": "No OpenAccountants skill states the Tax-Free Childcare income limit. The method is served (gross needed = ANI - limit; net paid = gross x 0.8) but not the limit.",
+        "partial": {
+          "adjusted_net_income_now": 104321.5,
+          "formula": "gross_needed = ANI - limit; net_payment = gross_needed x 0.8"
+        },
+        "inputs_used": {
+          "total_taxable_income": 104321.5,
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0,
+          "target": "tax_free_childcare"
+        },
+        "constants_used": [
+          {
+            "name": "RAS_NET_TO_GROSS",
+            "value": 0.8,
+            "slug": "uk-income-tax-sa100",
+            "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+            "quote": "pension_gross: pension_net / 0.8"
+          },
+          {
+            "name": "ANI_DEFINITION",
+            "value": "total taxable income less reliefs, less grossed-up Gift Aid and grossed-up relief-at-source pension contributions",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+            "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+          },
+          {
+            "name": "PA_TAPER_START",
+            "value": 100000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+          },
+          {
+            "name": "HICBC_START",
+            "value": 60000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "64b499e8347469261aecda719e24e419c9457701f686f88a9bab2f870db5978e"
+    },
+    {
+      "id": "ANI-tfc-nosource",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 104321.5,
+        "target": "tax_free_childcare",
+        "caller_supplied_limit": 100000,
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "uk_ani_pension_target_2026_27",
+        "what": "Tax-Free Childcare adjusted net income limit (UK, 2026-27)",
+        "why": "No OpenAccountants skill states the Tax-Free Childcare income limit. The method is served (gross needed = ANI - limit; net paid = gross x 0.8) but not the limit.",
+        "partial": {
+          "adjusted_net_income_now": 104321.5,
+          "formula": "gross_needed = ANI - limit; net_payment = gross_needed x 0.8"
+        },
+        "inputs_used": {
+          "total_taxable_income": 104321.5,
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0,
+          "target": "tax_free_childcare"
+        },
+        "constants_used": [
+          {
+            "name": "RAS_NET_TO_GROSS",
+            "value": 0.8,
+            "slug": "uk-income-tax-sa100",
+            "section": "Worked examples / Example 2: Personal Allowance taper and the Child Benefit charge, England, 2026-27",
+            "quote": "pension_gross: pension_net / 0.8"
+          },
+          {
+            "name": "ANI_DEFINITION",
+            "value": "total taxable income less reliefs, less grossed-up Gift Aid and grossed-up relief-at-source pension contributions",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 3: adjusted net income (ITA 2007 s.58)",
+            "quote": "deduct grossed-up Gift Aid and grossed-up relief-at-source pension contributions"
+          },
+          {
+            "name": "PA_TAPER_START",
+            "value": 100000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal Allowance taper (ITA 2007 s.35(2)) | Reduced by half the adjusted net income over GBP 100,000"
+          },
+          {
+            "name": "HICBC_START",
+            "value": 60000,
+            "slug": "uk-income-tax-sa100",
+            "section": "Rates, bands and thresholds",
+            "quote": "High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "existing_gross_ras_contributions": 0,
+          "gross_gift_aid": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "ae398d54ebc9a8d6bb9791a17a9e555d3463ebd83bd754cc554d4d185b5febbe"
+    },
+    {
+      "id": "ANI-badtarget",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 104321.5,
+        "target": "isa",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "uk_ani_pension_target_2026_27",
+        "what": "input 'target' must be one of ['personal_allowance_taper', 'child_benefit_charge_nil', 'tax_free_childcare']",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "total_taxable_income": {
+              "type": "number",
+              "description": "GBP"
+            },
+            "existing_gross_ras_contributions": {
+              "type": "number",
+              "description": "GBP",
+              "default": 0
+            },
+            "gross_gift_aid": {
+              "type": "number",
+              "description": "GBP",
+              "default": 0
+            },
+            "target": {
+              "type": "string",
+              "description": "personal_allowance_taper|child_benefit_charge_nil|tax_free_childcare",
+              "enum": [
+                "personal_allowance_taper",
+                "child_benefit_charge_nil",
+                "tax_free_childcare"
+              ]
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused",
+              "enum": [
+                "2026-27"
+              ]
+            }
+          },
+          "required": [
+            "total_taxable_income",
+            "target",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ANI-notarget",
+      "from": "python-parity",
+      "inputs": {
+        "total_taxable_income": 104321.5,
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "uk_ani_pension_target_2026_27",
+        "what": "missing input 'target'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "total_taxable_income": {
+              "type": "number",
+              "description": "GBP"
+            },
+            "existing_gross_ras_contributions": {
+              "type": "number",
+              "description": "GBP",
+              "default": 0
+            },
+            "gross_gift_aid": {
+              "type": "number",
+              "description": "GBP",
+              "default": 0
+            },
+            "target": {
+              "type": "string",
+              "description": "personal_allowance_taper|child_benefit_charge_nil|tax_free_childcare",
+              "enum": [
+                "personal_allowance_taper",
+                "child_benefit_charge_nil",
+                "tax_free_childcare"
+              ]
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused",
+              "enum": [
+                "2026-27"
+              ]
+            }
+          },
+          "required": [
+            "total_taxable_income",
+            "target",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "total_taxable_income": 110000,
+        "target": "tax_free_childcare",
+        "tax_year": "2019-20"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "uk_ani_pension_target_2026_27",
+        "what": "no OpenAccountants figures for tax year 2019-20",
+        "why": "This engine holds figures for tax year 2026-27 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019-20"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "a6d8aab3fd871b2a9dd5ec43cabf5633290d4935ffd2151cb7f7851257028eea"
+    }
+  ]
+}
