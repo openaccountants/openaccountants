@@ -1,10 +1,10 @@
 ---
 name: ca-fed-cpp-ei
 description: Use this skill whenever asked about Canada Pension Plan (CPP) or Employment Insurance (EI) contributions for self-employed individuals. Trigger on phrases like "CPP self-employed", "Schedule 8", "CPP2", "YAMPE", "EI opt-in self-employed", "how much CPP do I pay", "self-employed EI benefits", "CPP contribution calculation", or any question about CPP/EI obligations for a self-employed sole proprietor or single-member entity in Canada. This skill covers CPP1 rates, CPP2 second ceiling, Schedule 8 computation, EI voluntary opt-in, tax treatment (line 22200 deduction and non-refundable credit), age exemptions, overpayment recovery, and edge cases. ALWAYS read this skill before touching any CPP/EI-related work.
-version: 2.0
+version: 2.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-08
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -17,7 +17,7 @@ domain: payroll
 
 # CA Fed CPP EI
 
-## Canada CPP/EI Self-Employed Skill v2.0
+## Canada CPP/EI Self-Employed Skill v2.1
 
 ## Rates and thresholds
 
@@ -66,7 +66,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Contributor | Open Accountants community |
 | Validated By | Verified by Nathan Wiebe on 2026-06-21 |
 | Validation Date | Verified by Nathan Wiebe on 2026-06-21 |
-| Skill Version | 2.0 |
+| Skill Version | 2.1 |
 | Confidence Coverage | Tier 1: CPP/CPP2 rate calculation, Schedule 8 mechanics, EI opt-in rules, tax treatment. Tier 2: mid-year status changes, partial-year contributions, Quebec QPP interactions. Tier 3: disability pension interactions, international social security agreements. |
 
 Read this whole section before computing anything.
@@ -205,16 +205,16 @@ This is the deterministic pre-classifier for bank statement entries related to C
 
 ### 4.5 Tax treatment of self-employed CPP (Tier 1)
 
-- **CPP1 split** — Employer-equivalent half of the BASE contribution (4.95% of the 9.9%) is a deduction from net income (line 22200), together with ALL first-additional enhancement contributions. Only the employee-equivalent half of the BASE is a non-refundable tax credit (line 30800, 15% federal credit).  _(Income Tax Act, s. 60(e), s. 118.7)_
+- **CPP1 split** — Employer-equivalent half of the BASE contribution (4.95% of the 9.9%) is a deduction from net income (line 22200), together with ALL first-additional enhancement contributions. Only the employee-equivalent half of the BASE is a non-refundable tax credit (line 30800, federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026).  _(Income Tax Act, s. 60(e), s. 118.7)_
 - **CPP2 split** — CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable — no portion of CPP2 is a line 30800 credit.  _(Income Tax Act, s. 60(e), s. 118.7)_
 
-The deduction is more valuable at higher marginal rates. The credit is worth a flat 15% regardless of income.
+The deduction is more valuable at higher marginal rates. The credit is worth a flat 14.5% for 2025 (14% for 2026), the lowest federal rate, regardless of income.
 
 ### 4.6 EI for self-employed (Tier 1)
 
 - **EI voluntary opt-in rules** — EI is voluntary for self-employed. To opt in, register with Service Canada. 12-month waiting period before claiming benefits. Once benefits are claimed, cannot opt out. Self-employed EI covers SPECIAL BENEFITS ONLY (maternity, parental, sickness, compassionate care, family caregiver). It does NOT cover regular unemployment benefits.  _(Employment Insurance Act, Part VII.1, s. 152.07-152.21)_
 - **EI premium formula** — ei_premium = min(net_self_employment_income, $65,700) x 1.64% ei_premium = min(ei_premium, $1,077.48)
-- **EI premium credit** — EI premiums are claimed as a non-refundable tax credit on line 31200 (15% federal credit).
+- **EI premium credit** — EI premiums are claimed as a non-refundable tax credit on line 31200 (federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026).
 
 ## Section 5 -- Age exemptions and pro-rata rules
 
