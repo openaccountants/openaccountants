@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/malta-income-tax"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
   reviewed_by: "Michael Cutajar"
 ---
 
@@ -65,10 +65,10 @@ Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, re
 | Parent, art. 56(1)(b)(ii) | €13,000 | over €13,000 and under €17,500 (€1,950) | over €17,500 and under €60,000 (€3,700) | over €60,000 (€9,700) |
 | Married, 1 qualifying child, art. 56(1)(a)(ii) | €17,500 | over €17,500 and under €26,500 (€2,625) | over €26,500 and under €60,000 (€5,275) | over €60,000 (€11,275) |
 | Married, 2 or more qualifying children, art. 56(1)(a)(iii) | €22,500 | over €22,500 and under €32,000 (€3,375) | over €32,000 and under €60,000 (€6,575) | over €60,000 (€12,575) |
-| Parent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000: **HOLD**, Act €10,270 / MTCA €10,275 |
+| Parent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000 (€10,270; MTCA's table shows €10,275) |
 | Parent, 2 or more qualifying children, art. 56(1)(b)(v) | €18,500 | over €18,500 and under €25,500 (€2,775) | over €25,500 and under €60,000 (€5,325) | over €60,000 (€11,325) |
 
-**Calculation HOLD: parent with one qualifying child above €60,000.** The consolidated Act, article 56(1)(b)(iv), prints a subtraction of **€10,270**, while MTCA's amended 13 April 2026 communication and current 2026 table publish **€10,275**. Both primary texts were read on 4 November 2026. Do not silently choose a subtraction or issue a final calculation for this branch until the discrepancy is resolved. Record both candidate amounts and obtain legal/authority clarification. [Consolidated Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c); [MTCA amended table](https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5).
+**Parent with one qualifying child above €60,000: use €10,270, the figure in the Act.** Act III of 2026, article 19, sets the subtraction in article 56(1)(b)(iv) at **€10,270**, and the consolidated Act prints the same figure. MTCA's amended 13 April 2026 communication and its current 2026 table publish **€10,275**. The Act is the law, so compute with €10,270. Tell the user that MTCA's table shows €10,275: the Act's figure gives €5 more tax at every income in this band, and €10,275 is the figure that joins the 25% and 35% bands at €60,000. Act III of 2026 and the consolidated Act were read on 8 November 2026. [Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430); [Consolidated Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c); [MTCA amended table](https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5).
 
 ### Who gets which table ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
@@ -364,7 +364,7 @@ expected:
 - Refer property transfers involving projects, companies, trusts, special designated areas, intra-group transfers or share transfers.
 - Refer companies, partnerships and group structures.
 - Refer arrears, enquiries, assessments and objections, and any omission already under enquiry.
-- Hold final calculations for the parent-one-child 35% branch: Act €10,270 versus MTCA €10,275 remains unresolved. ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
+- For a parent with one qualifying child above €60,000, compute with the Act's €10,270 and say that MTCA's table shows €10,275. ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
 - Refer any question that turns on an MTCA notice you cannot see, such as an online-filing extension.
 
 ## Filing and payment ([Income Tax (Statutory Dates) Rules, S.L. 372.16](https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2))
@@ -413,6 +413,7 @@ Only the identified passages were read for this delta; historical source rows ke
 |---|---|---|
 | Cap123: status/rate/minimum and expense framework | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-04 |
 | MTCA parent-rate discrepancy: amended2026table read, not a resolved legal choice | https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5 | 2026-11-04 |
+| Act III of 2026, article 19: parent with one qualifying child, 35% band, subtraction €10,270 (the Act governs; MTCA's table shows €10,275) | https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430 | 2026-11-08 |
 | MTCA actual YA2026 filing AND payment extension | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
 | S.L.372.18 benchmark fallback: rules2,6,7 read | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-04 |
 | S.L.372.16 future statutory date | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-04 |
@@ -424,4 +425,4 @@ Not yet confirmed: unresolved branches explicitly marked HOLD or check in this G
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malta-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malta-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malta-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malta-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
