@@ -1,9 +1,0 @@
-{
-  "base": "e0f2a6d492373c6532eda048ceef2559332a82aa",
-  "path": "skills/dr-congo/cd-vat-gst.md",
-  "before_sha256": "0b82d6106341930c9fac0d948deaaba28b659aaf464bbdf2ec48d663f20b0c14",
-  "candidate_sha256": "f040359e81f62239889607cbeaaf6220ca7c99dca3435b2e94fd239653b81e68",
-  "scope": "One example assumption plus matching version/H1/update date; all code blocks unchanged.",
-  "prior_review": "PR1213 final independent review requested same-rice clarification; original source rows8/30/31 retained.",
-  "writer_checks": "15shape and2exampleblocks PASS; initial evidence-directory creation failed before writing evidence; fixed parent-directory creation, no Guide changes after checks."
-}

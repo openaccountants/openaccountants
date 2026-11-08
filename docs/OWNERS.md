@@ -174,7 +174,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | jeff | americas | GT | Guatemala | 7 | 0 | 0 | VAT, TP, XB |
 | jeff | americas | GY | Guyana | 6 | 0 | 0 | TP, XB |
 | jeff | americas | HN | Honduras | 7 | 0 | 0 | VAT, TP, XB |
-| jeff | americas | HT | Haiti | 6 | 0 | 0 | VAT, SC, TP, XB |
+| jeff | americas | HT | Haiti | 0 | 0 | 0 | not covered (sanctioned) |
 | jeff | americas | JM | Jamaica | 6 | 0 | 0 | VAT, TP, XB |
 | jeff | americas | KN | Saint Kitts And Nevis | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
 | jeff | americas | KY | Cayman Islands | 6 | 0 | 0 | TP, XB |
@@ -310,11 +310,11 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | michael | middle-east | BH | Bahrain | 6 | 0 | 0 | TP, XB |
 | michael | middle-east | EG | Egypt | 17 | 0 | 0 | XB |
 | michael | middle-east | IL | Israel | 10 | 0 | 0 | SC, TP, XB |
-| michael | middle-east | IQ | Iraq | 7 | 0 | 0 | TP, XB |
+| michael | middle-east | IQ | Iraq | 0 | 0 | 0 | not covered (sanctioned) |
 | michael | middle-east | IR | Iran | 0 | 0 | 0 | not covered (sanctioned) |
 | michael | middle-east | JO | Jordan | 6 | 0 | 0 | TP, XB |
 | michael | middle-east | KW | Kuwait | 6 | 0 | 0 | TP, XB |
-| michael | middle-east | LB | Lebanon | 6 | 0 | 0 | TP, XB |
+| michael | middle-east | LB | Lebanon | 0 | 0 | 0 | not covered (sanctioned) |
 | michael | middle-east | OM | Oman | 6 | 0 | 0 | TP, XB |
 | michael | middle-east | QA | Qatar | 8 | 0 | 0 | none |
 | michael | middle-east | SA | Saudi Arabia | 12 | 0 | 0 | SC, TP, XB |
@@ -323,8 +323,8 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | BI | Burundi | 6 | 0 | 0 | TP, XB |
 | ryan | africa | BJ | Benin | 6 | 0 | 0 | TP, XB |
 | ryan | africa | BW | Botswana | 6 | 0 | 0 | TP, XB |
-| ryan | africa | CD | Dr Congo | 6 | 0 | 0 | TP, XB |
-| ryan | africa | CF | Central African Republic | 6 | 0 | 0 | TP, XB |
+| ryan | africa | CD | Dr Congo | 0 | 0 | 0 | not covered (sanctioned) |
+| ryan | africa | CF | Central African Republic | 0 | 0 | 0 | not covered (sanctioned) |
 | ryan | africa | CG | Republic Of Congo | 6 | 0 | 0 | TP, XB |
 | ryan | africa | CI | Ivory Coast | 4 | 0 | 0 | IT-CORP, TP, XB |
 | ryan | africa | CM | Cameroon | 4 | 0 | 0 | IT-CORP, TP, XB |
@@ -338,12 +338,12 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | GM | Gambia | 6 | 0 | 0 | TP, XB |
 | ryan | africa | GN | Guinea | 6 | 0 | 0 | TP, XB |
 | ryan | africa | GQ | Equatorial Guinea | 6 | 0 | 0 | TP, XB |
-| ryan | africa | GW | Guinea Bissau | 6 | 0 | 0 | TP, XB |
+| ryan | africa | GW | Guinea Bissau | 0 | 0 | 0 | not covered (sanctioned) |
 | ryan | africa | KE | Kenya | 14 | 0 | 0 | SC, PR, TP |
 | ryan | africa | KM | Comoros | 3 | 0 | 0 | IT-CORP, VAT, SC, PR, TP, XB |
 | ryan | africa | LR | Liberia | 6 | 0 | 0 | TP, XB |
 | ryan | africa | LS | Lesotho | 6 | 0 | 0 | TP, XB |
-| ryan | africa | LY | Libya | 6 | 0 | 0 | TP, XB |
+| ryan | africa | LY | Libya | 0 | 0 | 0 | not covered (sanctioned) |
 | ryan | africa | MA | Morocco | 16 | 0 | 0 | IT-CORP, TP, XB |
 | ryan | africa | MG | Madagascar | 6 | 0 | 0 | TP, XB |
 | ryan | africa | ML | Mali | 6 | 0 | 0 | TP, XB |
@@ -357,12 +357,12 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | RE | Reunion | 1 | 0 | 0 | IT-IND, IT-CORP, VAT, SC, PR, TP, XB |
 | ryan | africa | RW | Rwanda | 8 | 0 | 0 | TP, XB |
 | ryan | africa | SC | Seychelles | 5 | 0 | 0 | TP, XB |
-| ryan | africa | SD | Sudan | 6 | 0 | 0 | TP, XB |
+| ryan | africa | SD | Sudan | 0 | 0 | 0 | not covered (sanctioned) |
 | ryan | africa | SH | Saint Helena | 4 | 0 | 0 | IT-CORP, VAT, SC, TP, XB |
 | ryan | africa | SL | Sierra Leone | 6 | 0 | 0 | TP, XB |
 | ryan | africa | SN | Senegal | 7 | 0 | 0 | TP, XB |
-| ryan | africa | SO | Somalia | 6 | 0 | 0 | TP, XB |
-| ryan | africa | SS | South Sudan | 6 | 0 | 0 | TP, XB |
+| ryan | africa | SO | Somalia | 0 | 0 | 0 | not covered (sanctioned) |
+| ryan | africa | SS | South Sudan | 0 | 0 | 0 | not covered (sanctioned) |
 | ryan | africa | ST | S O Tom And Pr Ncipe | 6 | 0 | 0 | TP, XB |
 | ryan | africa | SZ | Eswatini | 6 | 0 | 0 | TP, XB |
 | ryan | africa | TD | Chad | 6 | 0 | 0 | TP, XB |
@@ -374,7 +374,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | ryan | africa | ZA | South Africa | 20 | 0 | 0 | IT-CORP, SC, PR |
 | ryan | africa | ZM | Zambia | 6 | 0 | 0 | TP, XB |
 | ryan | africa | ZW | Zimbabwe | 6 | 0 | 0 | TP, XB |
-| ryan | apac | AF | Afghanistan | 6 | 0 | 0 | TP, XB |
+| ryan | apac | AF | Afghanistan | 0 | 0 | 0 | not covered (sanctioned) |
 | ryan | apac | AU | Australia | 61 | 0 | 0 | none |
 | ryan | apac | BD | Bangladesh | 18 | 0 | 0 | TP, XB |
 | ryan | apac | BN | Brunei | 7 | 0 | 0 | TP, XB |

@@ -14,13 +14,6 @@
   "dir": "skills/uae"
  },
  {
-  "code": "AF",
-  "name": "Afghanistan",
-  "region": "apac",
-  "owner": "ryan",
-  "dir": "skills/afghanistan"
- },
- {
   "code": "AG",
   "name": "Antigua And Barbuda",
   "region": "americas",
@@ -222,20 +215,6 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/canada/alberta"
- },
- {
-  "code": "CD",
-  "name": "Dr Congo",
-  "region": "africa",
-  "owner": "ryan",
-  "dir": "skills/dr-congo"
- },
- {
-  "code": "CF",
-  "name": "Central African Republic",
-  "region": "africa",
-  "owner": "ryan",
-  "dir": "skills/central-african-republic"
  },
  {
   "code": "CG",
@@ -539,13 +518,6 @@
   "dir": "skills/guatemala"
  },
  {
-  "code": "GW",
-  "name": "Guinea Bissau",
-  "region": "africa",
-  "owner": "ryan",
-  "dir": "skills/guinea-bissau"
- },
- {
   "code": "GY",
   "name": "Guyana",
   "region": "americas",
@@ -572,13 +544,6 @@
   "region": "europe",
   "owner": "michael",
   "dir": "skills/croatia"
- },
- {
-  "code": "HT",
-  "name": "Haiti",
-  "region": "americas",
-  "owner": "jeff",
-  "dir": "skills/haiti"
  },
  {
   "code": "HU",
@@ -621,13 +586,6 @@
   "region": "apac",
   "owner": "ryan",
   "dir": "skills/india"
- },
- {
-  "code": "IQ",
-  "name": "Iraq",
-  "region": "middle-east",
-  "owner": "michael",
-  "dir": "skills/iraq"
  },
  {
   "code": "IS",
@@ -735,13 +693,6 @@
   "dir": "skills/laos"
  },
  {
-  "code": "LB",
-  "name": "Lebanon",
-  "region": "middle-east",
-  "owner": "michael",
-  "dir": "skills/lebanon"
- },
- {
   "code": "LC",
   "name": "Saint Lucia",
   "region": "americas",
@@ -796,13 +747,6 @@
   "region": "europe",
   "owner": "michael",
   "dir": "skills/latvia"
- },
- {
-  "code": "LY",
-  "name": "Libya",
-  "region": "africa",
-  "owner": "ryan",
-  "dir": "skills/libya"
  },
  {
   "code": "MA",
@@ -1134,13 +1078,6 @@
   "dir": "skills/seychelles"
  },
  {
-  "code": "SD",
-  "name": "Sudan",
-  "region": "africa",
-  "owner": "ryan",
-  "dir": "skills/sudan"
- },
- {
   "code": "SE",
   "name": "Sweden",
   "region": "europe",
@@ -1204,25 +1141,11 @@
   "dir": "skills/senegal"
  },
  {
-  "code": "SO",
-  "name": "Somalia",
-  "region": "africa",
-  "owner": "ryan",
-  "dir": "skills/somalia"
- },
- {
   "code": "SR",
   "name": "Suriname",
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/suriname"
- },
- {
-  "code": "SS",
-  "name": "South Sudan",
-  "region": "africa",
-  "owner": "ryan",
-  "dir": "skills/south-sudan"
  },
  {
   "code": "ST",
