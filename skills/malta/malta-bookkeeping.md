@@ -11,7 +11,7 @@ category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 1
 reviewed_by: Michael Cutajar
-reviewed_on: 2026-11-05
+reviewed_on: 2026-11-08
 domain: bookkeeping
 ---
 
