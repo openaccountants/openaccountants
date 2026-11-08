@@ -1,7 +1,7 @@
 ---
 name: malta-transfer-pricing
 description: 'Use this skill whenever asked about Malta transfer pricing rules, documentation requirements, or arm''s length pricing for cross-border related-party transactions. Trigger on phrases like "transfer pricing Malta", "TP documentation", "master file Malta", "local file Malta", "arm''s length Malta", "related party transactions Malta", "CbCR Malta", "country-by-country report Malta", "BEPS Malta", "intercompany pricing Malta", or any question about transfer pricing compliance for Maltese entities within multinational groups. Covers basis year 2026: the Transfer Pricing Rules (S.L. 123.207) and the MTCA guidelines, the EUR 6,000,000 revenue and EUR 20,000,000 capital exceptions, grandfathering of pre-2024 arrangements, master file and local file on request, the TRA 135 attachment to the YA 2026 company return, unilateral rulings and APAs.'
-version: 1.4
+version: 1.5
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-11-08
@@ -35,7 +35,7 @@ Tax year: basis year 2026 (year of assessment 2027). Company tax computation is 
 | Currency | EUR |
 | Documentation language | English or Maltese |
 | Tax year | Basis year 2026 |
-| Skill version | 1.4 |
+| Skill version | 1.5 |
 
 ## Section 2 -- Documentation Requirements
 
@@ -48,7 +48,7 @@ Tax year: basis year 2026 (year of assessment 2027). Company tax computation is 
 | Required? | Yes, where thresholds met |
 | Format | OECD Annex I to Chapter V of the TP Guidelines |
 | Filing | Not filed annually; made available on MTCA request within a reasonable timeframe, in English or Maltese |
-| Retention period | Ten years for a Malta company. Article 19(5) ITMA sets at least nine years after completion of the transactions, but it "shall not apply where effect has been given to the provisions of ... article 163(5)" of the Companies Act, which requires a company's accounting records to be kept for ten years ([Cap. 372 art. 19(5)](https://legislation.mt/eli/cap/372/eng/pdf); [Cap. 386 art. 163(5)](https://legislation.mt/eli/cap/386/eng/pdf)). TP documentation is part of the Article 19(1) ITMA records, and the nine years run from the end of the period the arrangement refers to, or the date of the arrangement, whichever is later (MTCA guidelines, Rule 6) |
+| Retention period | Ten years for a Malta company. Article 19(5) ITMA sets at least nine years after completion of the transactions, but it "shall not apply where effect has been given to the provisions of ... article 163(5)" of the Companies Act, which requires a company's accounting records to be kept for ten years ([Cap. 372 art. 19(5)](https://legislation.mt/eli/cap/372/eng/pdf); [Cap. 386 art. 163(5)](https://legislation.mt/eli/cap/386/eng/pdf)). TP documentation is part of the Article 19(1) ITMA records, and the retention period runs from the end of the period the arrangement refers to, or the date of the arrangement, whichever is later (MTCA guidelines, Rule 6) |
 
 ### 2.2 Local File
 
