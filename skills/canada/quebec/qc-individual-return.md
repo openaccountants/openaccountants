@@ -21,7 +21,7 @@ type: computation
 
 ## Who this applies to
 
-An individual who was resident in Quebec on 31 December of the tax year. Quebec is the only province that runs its own personal income tax. A Quebec resident files two returns: the federal T1 with the CRA, and the TP-1 with Revenu Québec. There is no provincial tax form inside the federal return for Quebec, and the CRA does not collect Quebec tax. Compute Quebec income on its own: Quebec deductions (the worker deduction, the line 248 QPP and QPIP deduction) differ from the federal ones, so do not copy federal taxable income across.
+An individual who was resident in Quebec on 31 December of the tax year. Quebec is the only province that administers and collects its own personal income tax. A Quebec resident files two returns: the federal T1 with the CRA, and the TP-1 with Revenu Québec. There is no provincial tax form inside the federal return for Quebec, and the CRA does not collect Quebec tax. Compute Quebec income on its own: Quebec deductions (the worker deduction, the line 248 QPP and QPIP deduction) differ from the federal ones, so do not copy federal taxable income across.
 
 The TP-1 guide (TP-1.G, 2025) says you must file if you were resident in Quebec on 31 December 2025 and you owe any of these: income tax, a QPP contribution, a QPIP premium or a health services fund (FSS) contribution. You must also file if, among other cases, you disposed of capital property, you owe the drug insurance premium, you were resident in Quebec on the day you stopped being resident in Canada, or you lived elsewhere in Canada and carried on a business in Quebec.
 
@@ -31,7 +31,7 @@ Out of this skill: the federal tax computation (see `ca-fed-t1-return`), CPP and
 
 ### Tax year 2026 (primary)
 
-Revenu Québec indexed the personal tax system by 2.05% for 2026. Rates did not change; thresholds did. The 2026 TP-1 forms are not yet published (they come out in December), so line references below follow the 2025 forms.
+Revenu Québec indexed the personal tax system by 2.05% for 2026. Rates did not change; thresholds did. The 2026 TP-1 forms are not yet published, so line references below follow the 2025 forms.
 
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Revenu Québec indexed the personal tax system by 2.05% for 2026. Rates did not 
 | QPP self-employed: base 10.6% + first additional 2% = 12.6%; second additional 8% | 12.6% and 8% | 2026 | https://www.revenuquebec.ca/fr/citoyens/declaration-de-revenus/payer-ou-etre-rembourse/paiement-des-cotisations/cotisations-du-travailleur-autonome-ou-du-membre-dune-societe-de-personnes/cotisation-du-travailleur-autonome-ou-du-membre-dune-societe-de-personnes-au-regime-de-rentes-du-quebec/ |
 | QPP self-employed maximums (computed: 71,100 $ x 12.6%; 10,400 $ x 8%) | 8,958.60 $; 832.00 $ | 2026 | https://www.revenuquebec.ca/fr/citoyens/declaration-de-revenus/produire-votre-declaration-de-revenus/travailleurs-autonomes-preparez-votre-declaration/travailleurs-autonomes-tables-dimpot-et-de-cotisations/ (computed from the rates above; the 2026 estimate table shows 9,791 $ in total at high income) |
 | QPIP: maximum insurable earnings / employee rate / employee maximum | 103,000 $ / 0.430% / 442.90 $ | 2026 | https://www.revenuquebec.ca/fr/entreprises/retenues-a-la-source-et-cotisations-de-lemployeur/calcul-des-retenues-et-des-cotisations/cotisations-au-rqap/maximum-de-revenus-assurables-et-taux-de-cotisation/ |
-| QPIP self-employed maximum shown in Revenu Québec's 2026 estimate table | 787 $ | 2026 | https://www.revenuquebec.ca/fr/citoyens/declaration-de-revenus/produire-votre-declaration-de-revenus/travailleurs-autonomes-preparez-votre-declaration/travailleurs-autonomes-tables-dimpot-et-de-cotisations/ |
+| QPIP self-employed rate, maximum premium (on up to 103,000 $) | 0.764%, 786.92 $ | 2026 | https://www.quebec.ca/entreprises-et-travailleurs-autonomes/administrer-gerer/embauche-gestion-personnel/assurance-parentale/taux-cotisations |
 | FSS (health services fund) on non-employment income, caps shown in the 2026 estimate table | 150 $ in the middle band, 1,000 $ maximum | 2026 | same page |
 | Interest on amounts owed to Revenu Québec, compounded daily | 8% (Jan to Mar), 7% (Apr to Dec) | 2026 | https://www.revenuquebec.ca/fr/une-mission-des-actions/assurer-la-conformite-fiscale/penalites-et-interets/taux-dinteret-sur-les-creances/ |
 | Quebec abatement on the federal T1 (line 44000) | 16.5% of basic federal tax | 2026 | https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/pyrll/t4032/2026/t4032-qc-1-26e.pdf |
@@ -66,6 +66,8 @@ Revenu Québec indexed the personal tax system by 2.05% for 2026. Rates did not 
 Credit rate. The basic personal amount and the other amounts on lines 350 to 376 are added at line 377 and multiplied by 14% (line 377.1 of the TP-1). The 14% is the lowest bracket rate. Other credit rates on the 2025 return: medical expenses 20% (line 389), union and professional dues 10% (line 397), donations 20% on the first 200 $ and 24% or 25.75% above it.
 
 No separate QPP, QPIP or EI credit. Revenu Québec says the basic personal amount "tient compte des cotisations payées" to the QPP, QPIP, the FSS and EI. An employee's base QPP contributions and QPIP and EI premiums give no separate Quebec credit. Only the enhanced QPP parts and, for the self-employed, the employer-equivalent parts are deducted at line 248.
+
+The line 248 factors are 2025 figures. The Schedule U factors (0.156250 for an employee; 0.421875 and 0.156250 for the self-employed) and the Schedule R share (43.736%) are on the 2025 forms and match the 2025 rates (6.4% employee QPP, 12.8% self-employed QPP, 0.878% self-employed QPIP). The 2026 rates differ (6.30%, 12.6%, 0.764%), so do not apply the 2025 factors to a 2026 contribution; the 2026 schedules are not yet published.
 
 ### Tax year 2025 (dated section: the return filed in 2026)
 
@@ -105,7 +107,7 @@ No separate QPP, QPIP or EI credit. Revenu Québec says the basic personal amoun
 | Solidarity tax credit, July 2026 to June 2027 (based on 31 December 2025): no credit at family income of | 64,545 $ single; 70,395 $ couple; 64,545 $ single parent; plus 2,634 $ per child for couples and single parents | 2025 | https://www.revenuquebec.ca/fr/citoyens/credits-dimpot/credit-dimpot-pour-solidarite/calcul-du-credit-dimpot-pour-solidarite/ |
 | Quebec abatement on the federal T1 (line 44000) | 16.5% of basic federal tax | 2025 | https://www.canada.ca/en/department-finance/programs/federal-transfers/quebec-abatement.html |
 
-## The taxable base
+## The base
 
 The TP-1 builds up in this order (2025 line numbers):
 
@@ -118,11 +120,11 @@ The TP-1 builds up in this order (2025 line numbers):
 7. Line 432 is Quebec income tax after the remaining credits.
 8. Contributions added on top (line 450 total): QPIP for self-employment or work outside Quebec (line 439, Schedule R), QPP for self-employment (line 445, Schedule U), FSS (line 446, Schedule F), drug insurance premium (line 447, Schedule K).
 
-QPP for an employee. The employer withholds QPP on the RL-1. On the TP-1 the employee deducts at line 248 only the enhanced part: Schedule U Part B takes 1% of pensionable salary above the 3,500 $ exemption (capped at the maximum pensionable earnings), plus the second additional contribution (4% band).
+QPP for an employee. The employer withholds QPP on the RL-1. On the TP-1 the employee deducts at line 248 only the enhanced part: Schedule U Part B takes the smaller of the QPP contribution x 0.156250 (2025) and 1% of pensionable salary (capped at the maximum pensionable earnings) above the 3,500 $ exemption, plus the second additional contribution (4% band). For 2026 the first additional rate is still 1% of contributory earnings (the 2026 employee rate is 5.30% base plus 1% first additional).
 
 QPP for the self-employed (Schedule U Part C). Quebec residents contribute to the QPP, never the CPP, on Quebec work. The contribution is 12.8% (2025) or 12.6% (2026) of net business income above 3,500 $, up to the maximum pensionable earnings, plus 8% on the band up to the additional maximum. It goes on line 445. The line 248 deduction is 0.421875 + 0.156250 of the line 48 contribution (the employer-equivalent base part plus the whole first additional part) plus the whole second additional contribution. If the client also had CPP earnings outside Quebec (lines 96 to 96.2), use form LE-35 instead.
 
-QPIP for the self-employed (Schedule R). QPIP pays maternity, paternity, adoption and parental benefits in Quebec in place of those EI benefits. The 2025 premium is 0.878% of net business income up to 98,000 $ less insurable employment income already in RL-1 box I. 43.736% of the premium is deductible at line 248.
+QPIP for the self-employed (Schedule R). QPIP pays maternity, paternity, adoption and parental benefits in Quebec in place of those EI benefits. The 2025 premium is 0.878% of net business income up to 98,000 $ less insurable employment income already in RL-1 box I; for 2026 the self-employed rate is 0.764% on up to 103,000 $ (maximum 786.92 $). 43.736% of the premium is deductible at line 248.
 
 FSS (Schedule F). The base is total income less employment income and less listed amounts (old age security, dividends grossed up, support, social assistance and others), less some deductions, including the QPIP deduction (Schedule R line 26) and the QPP deduction amounts (Schedule U lines 101, 103 and 115). Employment income is never in the FSS base. The FSS paid cannot be claimed as a medical expense.
 
@@ -133,7 +135,7 @@ QPP stops. Since 1 January 2024 a worker aged 65 or over who receives a QPP or C
 - Return for 2025: file by 30 April 2026. If you or your spouse carried on a business in 2025, the filing deadline is 15 June 2026. The 2026 return follows the same pattern (30 April 2027, or 15 June 2027 with business income) once the 2026 guide confirms it.
 - Payment: any balance for 2025 was due 30 April 2026, even for the self-employed. Interest runs from 1 May 2026.
 - Electronic filing for 2025 opened mid-February 2026; processing began 9 March 2026.
-- Instalments: four a year, by 15 March, 15 June, 15 September and 15 December. They are required where net tax payable is over 1,800 $; Revenu Québec sends form TPZ-1026.A in February and August. Instalments also cover QPP, QPIP, FSS and the drug insurance premium.
+- Instalments: four a year, by 15 March, 15 June, 15 September and 15 December. They are required for 2026 if the net tax you expect to owe for 2026 is over 1,800 $ and your net tax payable for 2025 or 2024 was over 1,800 $ (net tax payable is tax for the year less Quebec tax withheld and refundable credits). Revenu Québec sends form TPZ-1026.A in February and August; without it, compute instalments on form TP-1026. Instalments also cover QPP, QPIP, FSS and the drug insurance premium.
 - Reassessment: Revenu Québec generally has three years from the notice of assessment.
 - Refund or reduction requests: generally up to ten calendar years back (in 2026, years 2016 to 2025).
 - Foreign property: from 2025, report specified foreign property costing more than 100,000 $ CA at any time in the year on form TP-1079.8.BE (line 25).
@@ -155,7 +157,7 @@ QPP stops. Since 1 January 2024 a worker aged 65 or over who receives a QPP or C
 - CPP contributions from work outside Quebec: compute QPP and the deduction on form LE-35, not Schedule U.
 - Federal EI for Quebec employees is covered in `ca-fed-cpp-ei`.
 
-## Worked examples
+## Two worked examples that recompute
 
 Example 1 (2026, employee). A single employee under 65, not living alone, with 60,000 $ of salary on the RL-1, no other income, covered by a group drug plan. Worker deduction: 6% of 60,000 $ is 3,600 $, capped at 1,450 $. Line 248: the enhanced QPP part, 1% of (60,000 $ minus 3,500 $) = 565 $ (the 2025 Schedule U Part B method with 2026 figures). Taxable income (line 299) is 57,985 $. Line 401: 14% of 54,345 $ is 7,608.30 $, plus 19% of the 3,640 $ above it, 691.60 $, total 8,299.90 $. Line 377.1: 18,952 $ x 14% = 2,653.28 $. Quebec tax at line 432 is 5,646.62 $. No FSS: Schedule F takes out employment income. On the federal T1, if basic federal tax is 6,000 $, the Quebec abatement on line 44000 is 990 $.
 
@@ -216,7 +218,7 @@ expected:
 
 1. Where did you live on 31 December, and did you arrive in or leave Canada during the year?
 2. What income did you have: RL-1 employment, net business income (TP-80), pension, investment? Did any business have a place of business outside Quebec?
-3. Did you have a spouse on 31 December, and what was their net income (line 275)? Did you live alone all year? Your age? Your address and rent or property tax situation (for the solidarity credit)?
+3. Did you have a spouse on 31 December, and what was their net income (line 275)? Any dependants, and their ages? Did you live alone all year? Your age? Your address and rent or property tax situation (for the solidarity credit)?
 4. Are you covered by a private group drug plan all year, or by the RAMQ public plan?
 5. Did you pay CPP outside Quebec, or have you elected to stop QPP at 65 or over?
 6. Did you pay instalments, and did you hold foreign property costing over 100,000 $ CA?
@@ -236,8 +238,9 @@ expected:
 | Revenu Québec, TP-1.D return, grilles de calcul and Schedules B, F, L, R, U (2025-12), read in full for the lines cited | https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/details-courant/tp-1/ | 2026-11-08 |
 | Revenu Québec, Taux d'intérêt sur les créances and intérêt supplémentaire sur acomptes, read for the 2025 and 2026 quarters | https://www.revenuquebec.ca/fr/une-mission-des-actions/assurer-la-conformite-fiscale/penalites-et-interets/taux-dinteret-sur-les-creances/ | 2026-11-08 |
 | Revenu Québec, Calcul du crédit d'impôt pour solidarité, read for the July 2026 to June 2027 thresholds | https://www.revenuquebec.ca/fr/citoyens/credits-dimpot/credit-dimpot-pour-solidarite/calcul-du-credit-dimpot-pour-solidarite/ | 2026-11-08 |
+| Gouvernement du Québec, Taux de cotisations au RQAP, read for the 2025 and 2026 employee, employer and self-employed rates | https://www.quebec.ca/entreprises-et-travailleurs-autonomes/administrer-gerer/embauche-gestion-personnel/assurance-parentale/taux-cotisations | 2026-11-08 |
 | CRA, T4032-QC Payroll Deductions Tables, January 2026, read for the Quebec tax abatement part | https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/bsnss/tpcs/pyrll/t4032/2026/t4032-qc-1-26e.pdf | 2026-11-08 |
 | Finance Canada, Quebec Abatement, read in full | https://www.canada.ca/en/department-finance/programs/federal-transfers/quebec-abatement.html | 2026-11-08 |
 | CRA, Line 44000 Refundable Quebec abatement, read in full | https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-44000-refundable-quebec-abatement.html | 2026-11-08 |
 
-Not yet confirmed: the Taxation Act (CQLR c. I-3) and the Act respecting the RAMQ (c. R-5) articles behind these figures, because legisquebec.gouv.qc.ca returned 502 errors on 8 November 2026 (the old references, s. 750 for rates, s. 752 and following for credits, s. 1029.8.116.12 and following for the solidarity credit, R-5 s. 34 for the FSS, and ITA s. 120(2) for the abatement, are not re-checked). 2026 figures not yet on a 2026 form: the QPIP self-employed rate (the 2026 estimate table implies a 787 $ maximum), the FSS thresholds (2025: 18,130 $ and 63,060 $), the drug insurance premium maximum, the Schedule U and R deduction factors, and the 2026 filing dates. Solidarity credit component amounts (QST, housing, northern village) and its reduction rate. Work premium (Schedule P) parameters. Other 2025 credit amounts not listed above (other dependants, post-secondary child). Detailed TP-22 and TP-25 allocation rules.
+Not yet confirmed: the Taxation Act (CQLR c. I-3) and the Act respecting the RAMQ (c. R-5) articles behind these figures, because legisquebec.gouv.qc.ca returned 502 errors on 8 November 2026 (the old references, s. 750 for rates, s. 752 and following for credits, s. 1029.8.116.12 and following for the solidarity credit, R-5 s. 34 for the FSS, and ITA s. 120(2) for the abatement, are not re-checked). 2026 figures not yet on a 2026 form: the FSS thresholds (2025: 18,130 $ and 63,060 $), the drug insurance premium maximum, the Schedule U and R deduction factors, and the 2026 filing dates. Solidarity credit component amounts (QST, housing, northern village) and its reduction rate. Work premium (Schedule P) parameters. Other 2025 credit amounts not listed above (other dependants, post-secondary child). Detailed TP-22 and TP-25 allocation rules.
