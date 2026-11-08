@@ -187,7 +187,7 @@ The T1 skill consumes outputs from the T2125 skill (net business income) and T-s
 **Computation:**
 - CPP + CPP2: $8,860.20. CPP deduction (line 22200): $5,504.10
 - Net income: $300,000 - $32,490 - $5,504.10 = $262,005.90
-- Federal tax through brackets: $8,319.38 + $11,761.88 + $16,414.32 + $21,904.28 + $8,591.90 x 33% ($2,835.33) = $61,235.18
+- Federal tax through brackets: $58,399.85 (tax on the first $253,414) + $8,591.90 x 33% ($2,835.33) = $61,235.18
 - BPA: $14,538 (reduced for high income). Credit: $2,108.01
 - CPP credit: $3,356.10 x 14.5% = $486.63
 - Basic federal tax: $61,235.18 - $2,108.01 - $486.63 = $58,640.54
@@ -196,7 +196,7 @@ The T1 skill consumes outputs from the T2125 skill (net business income) and T-s
 
 ### 5.1 T1 Income Flow
 
-- **T1 Income Flow** — Total income (line 15000) -> Net income (line 23600, after deductions including CPP employer-half) -> Taxable income (line 26000) -> Federal tax (Schedule 1).
+- **T1 Income Flow** — Total income (line 15000) -> Net income (line 23600, after deductions including the line 22200 CPP deduction: half of base CPP plus all first and second additional contributions) -> Taxable income (line 26000) -> Federal tax (Schedule 1).
 
 ### 5.2 CPP Self-Employed Computation
 
@@ -242,7 +242,7 @@ A. TOTAL INCOME
 
 B. NET INCOME
   B1. RRSP deduction                               ___________
-  B2. CPP employer-half (line 22200)               ___________
+  B2. CPP deduction (line 22200)                   ___________
   B3. Other deductions                             ___________
   B4. Net income (line 23600)                      ___________
 
@@ -310,7 +310,7 @@ ONBOARDING QUESTIONS -- CANADA T1
 ## PROHIBITIONS
 
 - NEVER apply tax brackets without first computing net income and taxable income
-- NEVER forget the CPP employer-half deduction from net income
+- NEVER forget the line 22200 CPP deduction from net income (half of base CPP plus all first and second additional contributions)
 - NEVER apply the Canada employment amount to self-employment income
 - NEVER treat EI as mandatory for self-employed
 - NEVER compute provincial tax in this skill
