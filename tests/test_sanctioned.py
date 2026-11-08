@@ -25,8 +25,10 @@ def _load(name, filename):
 
 vg = _load("validate_guides_sanctioned", "validate-guides.py")
 
-SIX = {"RU", "BY", "CU", "IR", "KP", "SY"}
-TARGETED = {"MM", "VE", "AF", "SD", "SS", "LY"}
+SIX = {"RU", "BY", "CU", "IR", "KP", "SY"}  # broad embargo, 6 Nov 2026
+UN_ELEVEN = {"AF", "CF", "CD", "HT", "IQ", "LB", "LY", "SO", "SS", "SD", "GW"}  # UN Security Council, 8 Nov 2026
+LISTED = SIX | UN_ELEVEN
+TARGETED = {"MM", "VE"}  # US or EU sanctions only: stay covered
 
 
 def skill(jurisdiction):
@@ -41,16 +43,18 @@ def guard(files):
 
 
 class DataFileTest(unittest.TestCase):
-    def test_six_codes_and_folders(self):
-        self.assertEqual(sanctioned.codes(), SIX)
+    def test_listed_codes_and_folders(self):
+        self.assertEqual(sanctioned.codes(), LISTED)
         self.assertEqual(set(sanctioned.folders()),
-                         {"russia", "belarus", "cuba", "iran", "north-korea", "syria"})
+                         {"russia", "belarus", "cuba", "iran", "north-korea", "syria",
+                          "afghanistan", "central-african-republic", "dr-congo", "haiti", "iraq", "lebanon",
+                          "libya", "somalia", "south-sudan", "sudan", "guinea-bissau"})
 
     def test_decision_recorded(self):
         data = sanctioned.load()
-        self.assertEqual(data["decided_on"], "2026-11-06")
-        self.assertEqual(data["decided_by"], "Michael 6 Nov 2026")
-        for name in ("Myanmar", "Venezuela", "Afghanistan", "Sudan", "South Sudan", "Libya"):
+        self.assertEqual(data["decided_on"], "2026-11-08")
+        self.assertEqual(data["decided_by"], "Michael 6 Nov 2026 (six), 8 Nov 2026 (eleven)")
+        for name in ("Myanmar", "Venezuela"):
             self.assertIn(name, data["stay_live"])
 
     def test_targeted_sanction_countries_are_not_listed(self):
@@ -64,7 +68,7 @@ class DataFileTest(unittest.TestCase):
     def test_registry_has_no_sanctioned_entry(self):
         import json
         data = json.loads((SCRIPTS / "data" / "jurisdictions.json").read_text(encoding="utf-8"))
-        self.assertFalse({row["code"] for row in data} & SIX)
+        self.assertFalse({row["code"] for row in data} & LISTED)
 
 
 class GuardTest(unittest.TestCase):
@@ -95,7 +99,7 @@ class GuardTest(unittest.TestCase):
         files = {f"skills/x/{c.lower()}.md": skill(c) for c in TARGETED | {"DE", "MT", "GLOBAL", "INTL", "US-NY"}}
         files["skills/myanmar/mm-vat.md"] = skill("MM")
         files["skills/venezuela/ve-vat.md"] = skill("VE")
-        files["skills/iraq/iq-vat.md"] = skill("IQ")
+        files["skills/jordan/jo-vat.md"] = skill("JO")
         files["skills/cyprus/cy-vat.md"] = skill("CY")
         self.assertEqual(guard(files), [])
 
@@ -190,9 +194,9 @@ class CoverageTest(unittest.TestCase):
     def test_listed_apart_never_as_a_pack_to_finish(self):
         cr = _load("coverage_report_sanctioned", "coverage-report.py")
         report = cr.build_report()
-        self.assertFalse({r["code"].split("-")[0] for r in report["rows"]} & SIX)
+        self.assertFalse({r["code"].split("-")[0] for r in report["rows"]} & LISTED)
         listed = {c["code"]: c["state"] for c in report["not_covered_sanctioned"]}
-        self.assertEqual(set(listed), SIX)
+        self.assertEqual(set(listed), LISTED)
         self.assertEqual(set(listed.values()), {"Not covered (sanctioned)"})
         self.assertIn("Not covered (sanctioned", "\n".join(cr.summary_lines(report)))
 

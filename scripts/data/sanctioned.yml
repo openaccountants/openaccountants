@@ -1,15 +1,16 @@
 # Countries this repository does not cover: no skill, library or evidence file for them.
 #
-# These six are under broad embargo. Their packs were removed from skills/ (Git history
+# The first six are under broad embargo (Michael 6 Nov 2026); the other eleven are under a
+# UN Security Council sanctions regime (Michael 8 Nov 2026). Their packs were removed from skills/ (Git history
 # keeps them; see docs/PATH-MOVES.md), and scripts/validate-guides.py fails any pull
 # request that adds or edits a file in their folders or with their `jurisdiction:` code.
 #
 # Read by scripts/sanctioned.py (validate-guides.py, coverage-report.py,
 # build-country-index.py). The platform's GitHub ingest (Accora-ai/githubaccountingskills)
-# keeps the same six codes as a constant that points here: change both together.
+# keeps the same codes as a constant that points here: change both together.
 
-decided_on: "2026-11-06"
-decided_by: "Michael 6 Nov 2026"
+decided_on: "2026-11-08"
+decided_by: "Michael 6 Nov 2026 (six), 8 Nov 2026 (eleven)"
 
 countries:
   - code: RU
@@ -31,4 +32,39 @@ countries:
     name: Syria
     folder: syria
 
-stay_live: "Countries under targeted sanctions only (Myanmar, Venezuela, Afghanistan, Sudan, South Sudan, Libya) stay covered."
+  # Under a UN Security Council sanctions regime (Michael 8 Nov 2026, "hide 11").
+  - code: AF
+    name: Afghanistan
+    folder: afghanistan
+  - code: CF
+    name: Central African Republic
+    folder: central-african-republic
+  - code: CD
+    name: DR Congo
+    folder: dr-congo
+  - code: HT
+    name: Haiti
+    folder: haiti
+  - code: IQ
+    name: Iraq
+    folder: iraq
+  - code: LB
+    name: Lebanon
+    folder: lebanon
+  - code: LY
+    name: Libya
+    folder: libya
+  - code: SO
+    name: Somalia
+    folder: somalia
+  - code: SS
+    name: South Sudan
+    folder: south-sudan
+  - code: SD
+    name: Sudan
+    folder: sudan
+  - code: GW
+    name: Guinea-Bissau
+    folder: guinea-bissau
+
+stay_live: "Countries under US or EU sanctions only, with no UN Security Council regime (such as Myanmar and Venezuela), stay covered."

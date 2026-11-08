@@ -4,13 +4,13 @@ Generated from the skill tree on 2026-10-31 by `scripts/build-register.py`. One 
 
 ## Totals
 
-- Skills: 2258
-- Jurisdictions: 270 (262 countries or states, the rest pseudo-codes)
-- Tax year 2026: 984; still 2025: 1148; no year: 121
+- Skills: 2191
+- Jurisdictions: 259 (251 countries or states, the rest pseudo-codes)
+- Tax year 2026: 978; still 2025: 1087; no year: 121
 - Signed by a named accountant (tier 1): 30, in US (21), PH (7), CA (1), MY (1)
-- Scope: 2027 tax skills (deep-tax shape applies), 88 accounting-pack skills (general template), 143 other (routers, templates, patterns)
-- Domain from the README `covered_by`: 187; from the slug: 1197; no tax domain: 874
-- Pass all 10 checks: 199 of 2027 tax skills
+- Scope: 1960 tax skills (deep-tax shape applies), 88 accounting-pack skills (general template), 143 other (routers, templates, patterns)
+- Domain from the README `covered_by`: 186; from the slug: 1153; no tax domain: 852
+- Pass all 10 checks: 199 of 1960 tax skills
 - Duplicates: 396 skills in 142 (country, domain) cells where the README does not name which skill covers the job
 
 ## Pass rate per check
