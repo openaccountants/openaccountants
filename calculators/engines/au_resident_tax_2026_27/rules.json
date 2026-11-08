@@ -1,0 +1,160 @@
+{
+  "engine": "au_resident_tax_2026_27",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/au_resident_tax_2026_27",
+  "generated_from": "src/lib/engines/au-resident-tax-2026-27.ts",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "au_resident_tax_2026_27",
+    "version": "1.2.0",
+    "jurisdiction": "AU",
+    "tax_years": [
+      "2026-27"
+    ],
+    "summary": "Australia, resident for the full 2026-27 year: income tax on taxable income less LITO, plus 2% Medicare levy, plus MLS check; take-home = gross income less those.",
+    "facts": {
+      "gross_income": {
+        "type": "number",
+        "required": true,
+        "description": "AUD (salary etc.)"
+      },
+      "other_deductions": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "AUD"
+      },
+      "has_salary_or_wage_income": {
+        "type": "boolean",
+        "required": true,
+        "description": "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction itself"
+      },
+      "actual_work_expenses_claimed": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "work-related expenses the person chooses to claim with records"
+      },
+      "has_private_hospital_cover": {
+        "type": "boolean",
+        "required": true,
+        "description": "private patient hospital cover for the full year"
+      },
+      "has_help_debt": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "HELP (study loan) debt"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2026-27"
+        ],
+        "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "taxable_income": "AUD",
+      "gross_tax": "AUD",
+      "lito": "AUD",
+      "income_tax_after_offsets": "AUD",
+      "medicare_levy": "AUD",
+      "medicare_levy_surcharge": "AUD",
+      "income_tax_plus_medicare": "AUD",
+      "take_home_pay": "AUD"
+    }
+  },
+  "anchors": [
+    "Tax on full bands 2026-27: $4,020 / $31,020 / $51,370",
+    "au-deductions-offsets example: TI $88,340 -> gross tax $17,022, Medicare $1,766.80",
+    "LITO nil at $66,667"
+  ],
+  "rules": [
+    {
+      "name": "RESIDENT_BRACKETS_2026_27",
+      "value": [
+        [
+          0,
+          18200,
+          0
+        ],
+        [
+          18200,
+          45000,
+          0.15
+        ],
+        [
+          45000,
+          135000,
+          0.3
+        ],
+        [
+          135000,
+          190000,
+          0.37
+        ],
+        [
+          190000,
+          null,
+          0.45
+        ]
+      ],
+      "slug": "au-rates-2026-27",
+      "section": "Individual income tax / Resident brackets",
+      "quote": "Taxable income | 2025-26 rate | 2026-27 rate\n$0 -- $18,200 | 0% | 0%\n$18,201 -- $45,000 | 16% | **15%**\n$45,001 -- $135,000 | 30% | 30%\n$135,001 -- $190,000 | 37% | 37%\n$190,001+ | 45% | 45%",
+      "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
+    },
+    {
+      "name": "LITO",
+      "value": {
+        "max": 700,
+        "t1": 37500,
+        "taper1": 0.05,
+        "t2": 45000,
+        "taper2": 0.015,
+        "nil_at": 66667
+      },
+      "slug": "au-rates-2026-27",
+      "section": "Individual income tax / Offsets and deductions",
+      "quote": "LITO | $700 to $37,500; taper 5c/$1 to $45,000; then 1.5c/$1 to nil at $66,667",
+      "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
+    },
+    {
+      "name": "MEDICARE_LEVY_RATE",
+      "value": 0.02,
+      "slug": "au-rates-2026-27",
+      "section": "Medicare",
+      "quote": "Levy | 2% of taxable income",
+      "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
+    },
+    {
+      "name": "MEDICARE_LOW_INCOME_SINGLE_2025_26",
+      "value": [
+        28011,
+        35013
+      ],
+      "slug": "au-rates-2026-27",
+      "section": "Medicare",
+      "quote": "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031",
+      "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
+    },
+    {
+      "name": "MLS_BASE_TIER_SINGLE",
+      "value": 101000,
+      "slug": "au-rates-2026-27",
+      "section": "Medicare",
+      "quote": "MLS base tier | Single $101,000 / family $202,000 (then 1% / 1.25% / 1.5%)",
+      "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
+    },
+    {
+      "name": "STANDARD_WRE_DEDUCTION",
+      "value": 1000,
+      "slug": "au-rates-2026-27",
+      "section": "Individual income tax / Offsets and deductions",
+      "quote": "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners",
+      "skill_url": "https://www.openaccountants.com/skills/au-rates-2026-27"
+    }
+  ]
+}

@@ -1,0 +1,3029 @@
+{
+  "engine": "uk_paye_take_home_2026_27",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-02",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 60000,
+        "region": "england",
+        "nic_category": "A",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 45357.4,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 60000,
+          "personal_allowance": 12570,
+          "taxable_income": 47430,
+          "income_tax": 11432,
+          "employee_nic": 3210.6,
+          "take_home_pay": 45357.4
+        },
+        "steps": [
+          "Adjusted net income = GBP 60,000.00 less gross relief-at-source contributions GBP 0.00 = GBP 60,000.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 47,430.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 11,432.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 3,210.60",
+          "Take-home = GBP 60,000.00 less income tax and NIC = GBP 45,357.40"
+        ],
+        "inputs_used": {
+          "annual_salary": 60000,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "5d95e8c31fc5ac0df02919dd3540c7c42c8b6b9e59f9558323d7a7d798d0e558"
+    },
+    {
+      "id": "UKP-0",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 0,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 0,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 0,
+          "personal_allowance": 12570,
+          "taxable_income": 0,
+          "income_tax": 0,
+          "employee_nic": 0,
+          "take_home_pay": 0
+        },
+        "steps": [
+          "Adjusted net income = GBP 0.00 less gross relief-at-source contributions GBP 0.00 = GBP 0.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 0.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 0.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 0.00",
+          "Take-home = GBP 0.00 less income tax and NIC = GBP 0.00"
+        ],
+        "inputs_used": {
+          "annual_salary": 0,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "ccaabe9fdd3b4781e968812882d20c72839457044e395dcdc9b290b3ead5c6f4"
+    },
+    {
+      "id": "UKP-1",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 12570,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 12570,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 12570,
+          "personal_allowance": 12570,
+          "taxable_income": 0,
+          "income_tax": 0,
+          "employee_nic": 0,
+          "take_home_pay": 12570
+        },
+        "steps": [
+          "Adjusted net income = GBP 12,570.00 less gross relief-at-source contributions GBP 0.00 = GBP 12,570.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 0.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 0.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 0.00",
+          "Take-home = GBP 12,570.00 less income tax and NIC = GBP 12,570.00"
+        ],
+        "inputs_used": {
+          "annual_salary": 12570,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "a966b32a9523b71a509c7053d02eab3e5fe02d4d61a1d8d6290785fb5d48dc52"
+    },
+    {
+      "id": "UKP-2",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 12571,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 12570.72,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 12571,
+          "personal_allowance": 12570,
+          "taxable_income": 1,
+          "income_tax": 0.2,
+          "employee_nic": 0.08,
+          "take_home_pay": 12570.72
+        },
+        "steps": [
+          "Adjusted net income = GBP 12,571.00 less gross relief-at-source contributions GBP 0.00 = GBP 12,571.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 1.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 0.20",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 0.08",
+          "Take-home = GBP 12,571.00 less income tax and NIC = GBP 12,570.72"
+        ],
+        "inputs_used": {
+          "annual_salary": 12571,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "96fde5471736005300fbbb7d5515e091a8c8ccc1e6353d0cb996b3ad3a9b22d7"
+    },
+    {
+      "id": "UKP-3",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 42000,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 33759.6,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 42000,
+          "personal_allowance": 12570,
+          "taxable_income": 29430,
+          "income_tax": 5886,
+          "employee_nic": 2354.4,
+          "take_home_pay": 33759.6
+        },
+        "steps": [
+          "Adjusted net income = GBP 42,000.00 less gross relief-at-source contributions GBP 0.00 = GBP 42,000.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 29,430.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 5,886.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 2,354.40",
+          "Take-home = GBP 42,000.00 less income tax and NIC = GBP 33,759.60"
+        ],
+        "inputs_used": {
+          "annual_salary": 42000,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "4a9f23704577e218b3b7ec0cd7072c32e0260384d4fe3cd63146f53480b109a0"
+    },
+    {
+      "id": "UKP-4",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 50270,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 39714,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 50270,
+          "personal_allowance": 12570,
+          "taxable_income": 37700,
+          "income_tax": 7540,
+          "employee_nic": 3016,
+          "take_home_pay": 39714
+        },
+        "steps": [
+          "Adjusted net income = GBP 50,270.00 less gross relief-at-source contributions GBP 0.00 = GBP 50,270.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 37,700.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 7,540.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 3,016.00",
+          "Take-home = GBP 50,270.00 less income tax and NIC = GBP 39,714.00"
+        ],
+        "inputs_used": {
+          "annual_salary": 50270,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "1828c5d86905be9303b3c11799d34f34f92a5f2d716c30b1a21cec2cc5619027"
+    },
+    {
+      "id": "UKP-5",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 50271,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 39714.58,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 50271,
+          "personal_allowance": 12570,
+          "taxable_income": 37701,
+          "income_tax": 7540.4,
+          "employee_nic": 3016.02,
+          "take_home_pay": 39714.58
+        },
+        "steps": [
+          "Adjusted net income = GBP 50,271.00 less gross relief-at-source contributions GBP 0.00 = GBP 50,271.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 37,701.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 7,540.40",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 3,016.02",
+          "Take-home = GBP 50,271.00 less income tax and NIC = GBP 39,714.58"
+        ],
+        "inputs_used": {
+          "annual_salary": 50271,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "b4d48f2a8c17489be10722713f7b388e338f30e9493508a2b66041c52f4ffc0c"
+    },
+    {
+      "id": "UKP-6",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 60000,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 45357.4,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 60000,
+          "personal_allowance": 12570,
+          "taxable_income": 47430,
+          "income_tax": 11432,
+          "employee_nic": 3210.6,
+          "take_home_pay": 45357.4
+        },
+        "steps": [
+          "Adjusted net income = GBP 60,000.00 less gross relief-at-source contributions GBP 0.00 = GBP 60,000.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 47,430.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 11,432.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 3,210.60",
+          "Take-home = GBP 60,000.00 less income tax and NIC = GBP 45,357.40"
+        ],
+        "inputs_used": {
+          "annual_salary": 60000,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "fa461ae2331f243d4ed2de6c64430395786ee3163eb5f149846dc9f96b9950e9"
+    },
+    {
+      "id": "UKP-7",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 99999,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 68556.82,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 99999,
+          "personal_allowance": 12570,
+          "taxable_income": 87429,
+          "income_tax": 27431.6,
+          "employee_nic": 4010.58,
+          "take_home_pay": 68556.82
+        },
+        "steps": [
+          "Adjusted net income = GBP 99,999.00 less gross relief-at-source contributions GBP 0.00 = GBP 99,999.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 87,429.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 27,431.60",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 4,010.58",
+          "Take-home = GBP 99,999.00 less income tax and NIC = GBP 68,556.82"
+        ],
+        "inputs_used": {
+          "annual_salary": 99999,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "747799c4d5f20a66027580925d98b956fb9cfc74ef1b95ffe95e629d411e0f97"
+    },
+    {
+      "id": "UKP-8",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 100000,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 68557.4,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 100000,
+          "personal_allowance": 12570,
+          "taxable_income": 87430,
+          "income_tax": 27432,
+          "employee_nic": 4010.6,
+          "take_home_pay": 68557.4
+        },
+        "steps": [
+          "Adjusted net income = GBP 100,000.00 less gross relief-at-source contributions GBP 0.00 = GBP 100,000.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 87,430.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 27,432.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 4,010.60",
+          "Take-home = GBP 100,000.00 less income tax and NIC = GBP 68,557.40"
+        ],
+        "inputs_used": {
+          "annual_salary": 100000,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "744becfd77e9da560594b70a4d8389d0717b914ebccf6fed655ec85a7f4a745b"
+    },
+    {
+      "id": "UKP-9",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 100001,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 68557.58,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 100001,
+          "personal_allowance": 12569,
+          "taxable_income": 87432,
+          "income_tax": 27432.8,
+          "employee_nic": 4010.62,
+          "take_home_pay": 68557.58
+        },
+        "steps": [
+          "Adjusted net income = GBP 100,001.00 less gross relief-at-source contributions GBP 0.00 = GBP 100,001.00",
+          "Personal allowance tapered: GBP 12,570.00 less half the excess over GBP 100,000.00 (rounded up) = GBP 12,569.00",
+          "Taxable income = GBP 87,432.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 27,432.80",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 4,010.62",
+          "Take-home = GBP 100,001.00 less income tax and NIC = GBP 68,557.58"
+        ],
+        "inputs_used": {
+          "annual_salary": 100001,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "a989cb6fdbda89122213fc47479e5d18c51f4774bd391821ad61a72cc0932d25"
+    },
+    {
+      "id": "UKP-10",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 100002,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 68558.16,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 100002,
+          "personal_allowance": 12569,
+          "taxable_income": 87433,
+          "income_tax": 27433.2,
+          "employee_nic": 4010.64,
+          "take_home_pay": 68558.16
+        },
+        "steps": [
+          "Adjusted net income = GBP 100,002.00 less gross relief-at-source contributions GBP 0.00 = GBP 100,002.00",
+          "Personal allowance tapered: GBP 12,570.00 less half the excess over GBP 100,000.00 (rounded up) = GBP 12,569.00",
+          "Taxable income = GBP 87,433.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 27,433.20",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 4,010.64",
+          "Take-home = GBP 100,002.00 less income tax and NIC = GBP 68,558.16"
+        ],
+        "inputs_used": {
+          "annual_salary": 100002,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "c0a882335d271bab2a60a95beaf859161c2333e32ab57bb61f4299f16b2d5a13"
+    },
+    {
+      "id": "UKP-11",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 125140,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 78110.6,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 125140,
+          "personal_allowance": 0,
+          "taxable_income": 125140,
+          "income_tax": 42516,
+          "employee_nic": 4513.4,
+          "take_home_pay": 78110.6
+        },
+        "steps": [
+          "Adjusted net income = GBP 125,140.00 less gross relief-at-source contributions GBP 0.00 = GBP 125,140.00",
+          "Personal allowance tapered: GBP 12,570.00 less half the excess over GBP 100,000.00 (rounded up) = GBP 0.00",
+          "Taxable income = GBP 125,140.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 42,516.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 4,513.40",
+          "Take-home = GBP 125,140.00 less income tax and NIC = GBP 78,110.60"
+        ],
+        "inputs_used": {
+          "annual_salary": 125140,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "29d4203454cae551ae7be380d95d0ab2054ed51fb0b0bea4ca825bc83197373b"
+    },
+    {
+      "id": "UKP-12",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 125141,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 78111.13,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 125141,
+          "personal_allowance": 0,
+          "taxable_income": 125141,
+          "income_tax": 42516.45,
+          "employee_nic": 4513.42,
+          "take_home_pay": 78111.13
+        },
+        "steps": [
+          "Adjusted net income = GBP 125,141.00 less gross relief-at-source contributions GBP 0.00 = GBP 125,141.00",
+          "Personal allowance tapered: GBP 12,570.00 less half the excess over GBP 100,000.00 (rounded up) = GBP 0.00",
+          "Taxable income = GBP 125,141.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 42,516.45",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 4,513.42",
+          "Take-home = GBP 125,141.00 less income tax and NIC = GBP 78,111.13"
+        ],
+        "inputs_used": {
+          "annual_salary": 125141,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "543dc9e8a5c5222618af8e44f3ccf353110b13bb5bd97f61f81fd777ed124155"
+    },
+    {
+      "id": "UKP-13",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 150000,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 91286.4,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 150000,
+          "personal_allowance": 0,
+          "taxable_income": 150000,
+          "income_tax": 53703,
+          "employee_nic": 5010.6,
+          "take_home_pay": 91286.4
+        },
+        "steps": [
+          "Adjusted net income = GBP 150,000.00 less gross relief-at-source contributions GBP 0.00 = GBP 150,000.00",
+          "Personal allowance tapered: GBP 12,570.00 less half the excess over GBP 100,000.00 (rounded up) = GBP 0.00",
+          "Taxable income = GBP 150,000.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 53,703.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 5,010.60",
+          "Take-home = GBP 150,000.00 less income tax and NIC = GBP 91,286.40"
+        ],
+        "inputs_used": {
+          "annual_salary": 150000,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "5177061dcbc6b244f658777ac0c51c9f65605a51d5f49b7512ea345338c9d993"
+    },
+    {
+      "id": "UKP-14",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 250000.55,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 144286.69,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 250000.55,
+          "personal_allowance": 0,
+          "taxable_income": 250000.55,
+          "income_tax": 98703.25,
+          "employee_nic": 7010.61,
+          "take_home_pay": 144286.69
+        },
+        "steps": [
+          "Adjusted net income = GBP 250,000.55 less gross relief-at-source contributions GBP 0.00 = GBP 250,000.55",
+          "Personal allowance tapered: GBP 12,570.00 less half the excess over GBP 100,000.00 (rounded up) = GBP 0.00",
+          "Taxable income = GBP 250,000.55; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 98,703.25",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 7,010.61",
+          "Take-home = GBP 250,000.55 less income tax and NIC = GBP 144,286.69"
+        ],
+        "inputs_used": {
+          "annual_salary": 250000.55,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "9732c3f573664537f623d9fbb2849abbe1a9107011c56cfd23db748c5951137b"
+    },
+    {
+      "id": "UKP-ras",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 112000,
+        "region": "england",
+        "gross_pension_contributions_ras": 5000,
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 75117.4,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 107000,
+          "personal_allowance": 9070,
+          "taxable_income": 102930,
+          "income_tax": 32632,
+          "employee_nic": 4250.6,
+          "take_home_pay": 75117.4
+        },
+        "steps": [
+          "Adjusted net income = GBP 112,000.00 less gross relief-at-source contributions GBP 5,000.00 = GBP 107,000.00",
+          "Personal allowance tapered: GBP 12,570.00 less half the excess over GBP 100,000.00 (rounded up) = GBP 9,070.00",
+          "Taxable income = GBP 102,930.00; basic rate band GBP 42,700.00 at 20%, then 40% to GBP 130,140.00, then 45%",
+          "Income tax = GBP 32,632.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 4,250.60",
+          "Take-home = GBP 112,000.00 less income tax and NIC = GBP 75,117.40"
+        ],
+        "inputs_used": {
+          "annual_salary": 112000,
+          "region": "england",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 5000
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "eb803f7cf526336f9b18abccb1ede196e56e84f59c44c2abf25d185affc7c901"
+    },
+    {
+      "id": "UKP-other",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 45000,
+        "other_income": 10000,
+        "region": "wales",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 42973.6,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 55000,
+          "personal_allowance": 12570,
+          "taxable_income": 42430,
+          "income_tax": 9432,
+          "employee_nic": 2594.4,
+          "take_home_pay": 42973.6
+        },
+        "steps": [
+          "Adjusted net income = GBP 55,000.00 less gross relief-at-source contributions GBP 0.00 = GBP 55,000.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 42,430.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 9,432.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 2,594.40",
+          "Take-home = GBP 55,000.00 less income tax and NIC = GBP 42,973.60"
+        ],
+        "inputs_used": {
+          "annual_salary": 45000,
+          "region": "wales",
+          "nic_category": "A",
+          "other_income": 10000,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "nic_category": "A",
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "10d3d01ef688db97b7c0794d64611e689397de3f620f95b63701793d5419268e"
+    },
+    {
+      "id": "UKP-ni",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 30000,
+        "region": "northern_ireland",
+        "nic_category": "A",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "uk_paye_take_home_2026_27",
+        "headline": {
+          "label": "Take-home pay after income tax and employee NIC, 2026-27",
+          "value": 25119.6,
+          "currency": "GBP"
+        },
+        "lines": {
+          "adjusted_net_income": 30000,
+          "personal_allowance": 12570,
+          "taxable_income": 17430,
+          "income_tax": 3486,
+          "employee_nic": 1394.4,
+          "take_home_pay": 25119.6
+        },
+        "steps": [
+          "Adjusted net income = GBP 30,000.00 less gross relief-at-source contributions GBP 0.00 = GBP 30,000.00",
+          "Personal allowance = GBP 12,570.00",
+          "Taxable income = GBP 17,430.00; basic rate band GBP 37,700.00 at 20%, then 40% to GBP 125,140.00, then 45%",
+          "Income tax = GBP 3,486.00",
+          "Employee NIC = 8% of pay between GBP 12,570.00 and GBP 50,270.00 plus 2% above = GBP 1,394.40",
+          "Take-home = GBP 30,000.00 less income tax and NIC = GBP 25,119.60"
+        ],
+        "inputs_used": {
+          "annual_salary": 30000,
+          "region": "northern_ireland",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "assumptions": [
+          "Annual basis (cumulative PAYE over a full year gives the same total; per-period rounding can differ by pennies)",
+          "Category A, under State Pension age",
+          "Take-home ignores pension, student loan and salary sacrifice unless entered"
+        ],
+        "skill_anchors_reproduced": [
+          "uk-payroll Example 1: £42,000 -> PAYE £490.50/month; ee NIC £196.16/month",
+          "uk-income-tax-sa100 Example 2: salary £112,000, RAS gross £5,000 -> PA £9,070, taxable £102,930, tax £32,632"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "3a59169caee9f1d026277c4f41387d1665646aae9d29822474629f80ba20f2bd"
+    },
+    {
+      "id": "UKP-scot",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 30000,
+        "region": "scotland",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "uk_paye_take_home_2026_27",
+        "what": "Scottish income tax engine",
+        "why": "This engine implements rUK bands only; the Scottish bands are in uk-payroll but no Scottish engine was built for this test.",
+        "partial": {},
+        "inputs_used": {
+          "annual_salary": 30000,
+          "region": "scotland",
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "nic_category": "A",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "224887f6c14baaf649470a6958d9820dde9cb88fb244227b0e2166b4f5f550ae"
+    },
+    {
+      "id": "UKP-catB",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 30000,
+        "region": "england",
+        "nic_category": "B",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "uk_paye_take_home_2026_27",
+        "what": "NIC category B",
+        "why": "Only category A is implemented.",
+        "partial": {},
+        "inputs_used": {
+          "annual_salary": 30000,
+          "region": "england",
+          "nic_category": "B",
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "constants_used": [
+          {
+            "name": "PERSONAL_ALLOWANCE",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Personal allowance (code 1257L) | £12,570 a year, £1,048 a month"
+          },
+          {
+            "name": "BASIC_RATE_BAND",
+            "value": 37700,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% to £37,700; 40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "ADDITIONAL_RATE_START",
+            "value": 125140,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "40% £37,701 to £125,140; 45% above"
+          },
+          {
+            "name": "RATES",
+            "value": [
+              0.2,
+              0.4,
+              0.45
+            ],
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "PAYE, England, NI and Wales | 20% ... 40% ... 45%"
+          },
+          {
+            "name": "TAPER_START",
+            "value": 100000,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Allowance taper | £1 lost per £2 of adjusted net income above £100,000; nil at £125,140"
+          },
+          {
+            "name": "TAPER_ROUNDING",
+            "value": "round reduction up to whole pound",
+            "slug": "uk-income-tax-sa100",
+            "section": "The taxable base / Step 4: the Personal Allowance",
+            "quote": "A result that is not a whole pound rounds up (ITA 2007 s.35(2)-(3))"
+          },
+          {
+            "name": "NIC_PRIMARY_THRESHOLD",
+            "value": 12570,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "NIC_UPPER_EARNINGS_LIMIT",
+            "value": 50270,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "NIC primary threshold / UEL | ... £12,570 / £50,270 a year"
+          },
+          {
+            "name": "EE_NIC_MAIN_RATE",
+            "value": 0.08,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          },
+          {
+            "name": "EE_NIC_UPPER_RATE",
+            "value": 0.02,
+            "slug": "uk-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee Class 1 (category A) | 8% PT to UEL, 2% above"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "other_income": 0,
+          "gross_pension_contributions_ras": 0
+        },
+        "tax_year": "2026-27"
+      },
+      "receipt_id": "6b72b53c852d5a0c20ac9a435136fb24917f5e112a35b0781d08eba6d31cba65"
+    },
+    {
+      "id": "UKP-badregion",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 30000,
+        "region": "france",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "uk_paye_take_home_2026_27",
+        "what": "input 'region' must be one of ['england', 'wales', 'northern_ireland', 'scotland']",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "annual_salary": {
+              "type": "number",
+              "description": "GBP"
+            },
+            "region": {
+              "type": "string",
+              "description": "where the employee lives for tax: england|wales|northern_ireland|scotland (Scottish taxpayers are refused: no Scottish engine yet)",
+              "enum": [
+                "england",
+                "wales",
+                "northern_ireland",
+                "scotland"
+              ]
+            },
+            "nic_category": {
+              "type": "string",
+              "description": "A (only A supported)",
+              "default": "A"
+            },
+            "other_income": {
+              "type": "number",
+              "description": "GBP, non-savings, no NIC",
+              "default": 0
+            },
+            "gross_pension_contributions_ras": {
+              "type": "number",
+              "description": "GBP gross relief-at-source contributions",
+              "default": 0
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused",
+              "enum": [
+                "2026-27"
+              ]
+            }
+          },
+          "required": [
+            "annual_salary",
+            "region",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "UKP-boolsalary",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": true,
+        "region": "england",
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "uk_paye_take_home_2026_27",
+        "what": "input 'annual_salary' must be a number",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "annual_salary": {
+              "type": "number",
+              "description": "GBP"
+            },
+            "region": {
+              "type": "string",
+              "description": "where the employee lives for tax: england|wales|northern_ireland|scotland (Scottish taxpayers are refused: no Scottish engine yet)",
+              "enum": [
+                "england",
+                "wales",
+                "northern_ireland",
+                "scotland"
+              ]
+            },
+            "nic_category": {
+              "type": "string",
+              "description": "A (only A supported)",
+              "default": "A"
+            },
+            "other_income": {
+              "type": "number",
+              "description": "GBP, non-savings, no NIC",
+              "default": 0
+            },
+            "gross_pension_contributions_ras": {
+              "type": "number",
+              "description": "GBP gross relief-at-source contributions",
+              "default": 0
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused",
+              "enum": [
+                "2026-27"
+              ]
+            }
+          },
+          "required": [
+            "annual_salary",
+            "region",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "UKP-no-region",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 30000,
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "uk_paye_take_home_2026_27",
+        "what": "missing input 'region'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "annual_salary": {
+              "type": "number",
+              "description": "GBP"
+            },
+            "region": {
+              "type": "string",
+              "description": "where the employee lives for tax: england|wales|northern_ireland|scotland (Scottish taxpayers are refused: no Scottish engine yet)",
+              "enum": [
+                "england",
+                "wales",
+                "northern_ireland",
+                "scotland"
+              ]
+            },
+            "nic_category": {
+              "type": "string",
+              "description": "A (only A supported)",
+              "default": "A"
+            },
+            "other_income": {
+              "type": "number",
+              "description": "GBP, non-savings, no NIC",
+              "default": 0
+            },
+            "gross_pension_contributions_ras": {
+              "type": "number",
+              "description": "GBP gross relief-at-source contributions",
+              "default": 0
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused",
+              "enum": [
+                "2026-27"
+              ]
+            }
+          },
+          "required": [
+            "annual_salary",
+            "region",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "UKP-null-region",
+      "from": "python-parity",
+      "inputs": {
+        "annual_salary": 30000,
+        "region": null,
+        "tax_year": "2026-27"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "uk_paye_take_home_2026_27",
+        "what": "missing input 'region'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "annual_salary": {
+              "type": "number",
+              "description": "GBP"
+            },
+            "region": {
+              "type": "string",
+              "description": "where the employee lives for tax: england|wales|northern_ireland|scotland (Scottish taxpayers are refused: no Scottish engine yet)",
+              "enum": [
+                "england",
+                "wales",
+                "northern_ireland",
+                "scotland"
+              ]
+            },
+            "nic_category": {
+              "type": "string",
+              "description": "A (only A supported)",
+              "default": "A"
+            },
+            "other_income": {
+              "type": "number",
+              "description": "GBP, non-savings, no NIC",
+              "default": 0
+            },
+            "gross_pension_contributions_ras": {
+              "type": "number",
+              "description": "GBP gross relief-at-source contributions",
+              "default": 0
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about, written YYYY-YY. This engine has figures for 2026-27 only; any other year is refused",
+              "enum": [
+                "2026-27"
+              ]
+            }
+          },
+          "required": [
+            "annual_salary",
+            "region",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "annual_salary": 60000,
+        "region": "england",
+        "nic_category": "A",
+        "tax_year": "2019-20"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "uk_paye_take_home_2026_27",
+        "what": "no OpenAccountants figures for tax year 2019-20",
+        "why": "This engine holds figures for tax year 2026-27 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019-20"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "4a045f72d00f144dcaa4b8113f770475db911a52d47426dd7f4a5762c876087d"
+    }
+  ]
+}

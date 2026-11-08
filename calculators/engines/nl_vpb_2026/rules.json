@@ -1,0 +1,68 @@
+{
+  "engine": "nl_vpb_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/nl_vpb_2026",
+  "generated_from": "src/lib/engines/nl-vpb-2026.ts",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "nl_vpb_2026",
+    "version": "1.2.0",
+    "jurisdiction": "NL",
+    "tax_years": [
+      "2026"
+    ],
+    "summary": "Netherlands corporate income tax (vennootschapsbelasting) for 2026 on a BV/NV's taxable amount (after loss offset and exemptions).",
+    "facts": {
+      "taxable_amount": {
+        "type": "number",
+        "required": true,
+        "description": "EUR, taxable amount after losses/participation exemption/innovation box"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "tax_at_19pct": "EUR",
+      "tax_at_25_8pct": "EUR",
+      "vpb_total": "EUR",
+      "effective_rate": "fraction"
+    }
+  },
+  "anchors": [
+    "Rates table: tax at EUR 200,000 = EUR 38,000",
+    "Example 1: EUR 425,000 -> EUR 96,050",
+    "Example 2: EUR 2,020,000 -> EUR 507,560"
+  ],
+  "rules": [
+    {
+      "name": "BRACKET",
+      "value": 200000,
+      "slug": "nl-corporate-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19%",
+      "skill_url": "https://www.openaccountants.com/skills/nl-corporate-tax"
+    },
+    {
+      "name": "LOW_RATE",
+      "value": 0.19,
+      "slug": "nl-corporate-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "up to and including EUR 200,000 ... 19% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/nl-corporate-tax"
+    },
+    {
+      "name": "HIGH_RATE",
+      "value": 0.258,
+      "slug": "nl-corporate-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/nl-corporate-tax"
+    }
+  ]
+}

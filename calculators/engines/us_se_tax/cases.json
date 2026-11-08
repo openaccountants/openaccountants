@@ -1,0 +1,1075 @@
+{
+  "engine": "us_se_tax",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-10",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 120000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 16955.46,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 110820,
+          "social_security_part": 13741.68,
+          "medicare_part": 3213.78,
+          "se_tax": 16955.46,
+          "deductible_half": 8477.73
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 120,000.00 = USD 110,820.00",
+          "Social security part = 12.4% x min(net earnings, wage base USD 184,500.00 less W-2 wages USD 0.00) = USD 13,741.68",
+          "Medicare part = 2.9% x net earnings = USD 3,213.78",
+          "SE tax = USD 16,955.46; deductible half = USD 8,477.73"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 120000,
+          "w2_social_security_wages": 0,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "w2_social_security_wages": 0
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "015d1aec60027599a4573cc7a4730f373e6b440087adb5f9b7a5c35a00ee06dc"
+    },
+    {
+      "id": "US-0",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 120000,
+        "w2_social_security_wages": 0,
+        "tax_year": "2025"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2025",
+          "value": 16955.46,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 110820,
+          "social_security_part": 13741.68,
+          "medicare_part": 3213.78,
+          "se_tax": 16955.46,
+          "deductible_half": 8477.73
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 120,000.00 = USD 110,820.00",
+          "Social security part = 12.4% x min(net earnings, wage base USD 176,100.00 less W-2 wages USD 0.00) = USD 13,741.68",
+          "Medicare part = 2.9% x net earnings = USD 3,213.78",
+          "SE tax = USD 16,955.46; deductible half = USD 8,477.73"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 120000,
+          "w2_social_security_wages": 0,
+          "tax_year": "2025"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2025"
+      },
+      "receipt_id": "2e2f23c4dcf8bde6e47f30768862294de622a780fb35318429c766d907d2d45e"
+    },
+    {
+      "id": "US-1",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 102500,
+        "w2_social_security_wages": 0,
+        "tax_year": "2025"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2025",
+          "value": 14482.79,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 94658.75,
+          "social_security_part": 11737.68,
+          "medicare_part": 2745.1,
+          "se_tax": 14482.79,
+          "deductible_half": 7241.4
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 102,500.00 = USD 94,658.75",
+          "Social security part = 12.4% x min(net earnings, wage base USD 176,100.00 less W-2 wages USD 0.00) = USD 11,737.68",
+          "Medicare part = 2.9% x net earnings = USD 2,745.10",
+          "SE tax = USD 14,482.79; deductible half = USD 7,241.40"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 102500,
+          "w2_social_security_wages": 0,
+          "tax_year": "2025"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2025"
+      },
+      "receipt_id": "cca834bb3605ef22263dedbcba81068b3279fbb812f7b23287ad9f66cdbddcdf"
+    },
+    {
+      "id": "US-2",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 433,
+        "w2_social_security_wages": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 0,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 399.88,
+          "social_security_part": 0,
+          "medicare_part": 0,
+          "se_tax": 0,
+          "deductible_half": 0
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 433.00 = USD 399.88",
+          "Net earnings under USD 400.00: no SE tax",
+          "Medicare part = 2.9% x net earnings = USD 0.00",
+          "SE tax = USD 0.00; deductible half = USD 0.00"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 433,
+          "w2_social_security_wages": 0,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "2dbaa1005f4508778db9e60a36810abaf5a1a0f3d8bd56bf95cb493fed559dcf"
+    },
+    {
+      "id": "US-3",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 434,
+        "w2_social_security_wages": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 61.32,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 400.8,
+          "social_security_part": 49.7,
+          "medicare_part": 11.62,
+          "se_tax": 61.32,
+          "deductible_half": 30.66
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 434.00 = USD 400.80",
+          "Social security part = 12.4% x min(net earnings, wage base USD 184,500.00 less W-2 wages USD 0.00) = USD 49.70",
+          "Medicare part = 2.9% x net earnings = USD 11.62",
+          "SE tax = USD 61.32; deductible half = USD 30.66"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 434,
+          "w2_social_security_wages": 0,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "fa5f49d137862cbe2dcdb34d57ff53cf7cff849db11eaebcd2a35fc25a3d0b6c"
+    },
+    {
+      "id": "US-4",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 200000,
+        "w2_social_security_wages": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 28234.3,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 184700,
+          "social_security_part": 22878,
+          "medicare_part": 5356.3,
+          "se_tax": 28234.3,
+          "deductible_half": 14117.15
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 200,000.00 = USD 184,700.00",
+          "Social security part = 12.4% x min(net earnings, wage base USD 184,500.00 less W-2 wages USD 0.00) = USD 22,878.00",
+          "Medicare part = 2.9% x net earnings = USD 5,356.30",
+          "SE tax = USD 28,234.30; deductible half = USD 14,117.15"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 200000,
+          "w2_social_security_wages": 0,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "4052a63103d6abefca14cfff7ecfed3c70f4862bab26c3a6d5ab8e869b4ad37e"
+    },
+    {
+      "id": "US-5",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 250000,
+        "w2_social_security_wages": 100000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 17173.38,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 230875,
+          "social_security_part": 10478,
+          "medicare_part": 6695.38,
+          "se_tax": 17173.38,
+          "deductible_half": 8586.69
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 250,000.00 = USD 230,875.00",
+          "Social security part = 12.4% x min(net earnings, wage base USD 184,500.00 less W-2 wages USD 100,000.00) = USD 10,478.00",
+          "Medicare part = 2.9% x net earnings = USD 6,695.38",
+          "SE tax = USD 17,173.38; deductible half = USD 8,586.69"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 250000,
+          "w2_social_security_wages": 100000,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "0fcbff6a809d41e929633ed857d5c35cc569db10da01008671b877b1eaeb2486"
+    },
+    {
+      "id": "US-6",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 150000,
+        "w2_social_security_wages": 200000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 4017.23,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 138525,
+          "social_security_part": 0,
+          "medicare_part": 4017.23,
+          "se_tax": 4017.23,
+          "deductible_half": 2008.62
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 150,000.00 = USD 138,525.00",
+          "Social security part = 12.4% x min(net earnings, wage base USD 184,500.00 less W-2 wages USD 200,000.00) = USD 0.00",
+          "Medicare part = 2.9% x net earnings = USD 4,017.23",
+          "SE tax = USD 4,017.23; deductible half = USD 2,008.62"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 150000,
+          "w2_social_security_wages": 200000,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "4215f11ee3adbf643ac2ac961b099f29d37f09f3f8c7b1ecac2ac5a964724912"
+    },
+    {
+      "id": "US-7",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 199783.7,
+        "w2_social_security_wages": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 28228.51,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 184500.25,
+          "social_security_part": 22878,
+          "medicare_part": 5350.51,
+          "se_tax": 28228.51,
+          "deductible_half": 14114.25
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 199,783.70 = USD 184,500.25",
+          "Social security part = 12.4% x min(net earnings, wage base USD 184,500.00 less W-2 wages USD 0.00) = USD 22,878.00",
+          "Medicare part = 2.9% x net earnings = USD 5,350.51",
+          "SE tax = USD 28,228.51; deductible half = USD 14,114.25"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 199783.7,
+          "w2_social_security_wages": 0,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "5dcb14a8980187ca9935c1a41abe168c0bf2b9a98c5345389c581c4fce3eb274"
+    },
+    {
+      "id": "US-8",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 199783.81,
+        "w2_social_security_wages": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2026",
+          "value": 28228.51,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 184500.35,
+          "social_security_part": 22878,
+          "medicare_part": 5350.51,
+          "se_tax": 28228.51,
+          "deductible_half": 14114.25
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 199,783.81 = USD 184,500.35",
+          "Social security part = 12.4% x min(net earnings, wage base USD 184,500.00 less W-2 wages USD 0.00) = USD 22,878.00",
+          "Medicare part = 2.9% x net earnings = USD 5,350.51",
+          "SE tax = USD 28,228.51; deductible half = USD 14,114.25"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 199783.81,
+          "w2_social_security_wages": 0,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "421a6327338a44fe3226a87adf250595b91859b68965333785691c01aa6362fe"
+    },
+    {
+      "id": "US-year-number",
+      "from": "python-parity",
+      "inputs": {
+        "schedule_c_net_profit": 80000,
+        "tax_year": 2025
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "us_se_tax",
+        "headline": {
+          "label": "Self-employment tax 2025",
+          "value": 11303.64,
+          "currency": "USD"
+        },
+        "lines": {
+          "net_earnings_from_se": 73880,
+          "social_security_part": 9161.12,
+          "medicare_part": 2142.52,
+          "se_tax": 11303.64,
+          "deductible_half": 5651.82
+        },
+        "steps": [
+          "Net earnings from self-employment = 92.35% x USD 80,000.00 = USD 73,880.00",
+          "Social security part = 12.4% x min(net earnings, wage base USD 176,100.00 less W-2 wages USD 0.00) = USD 9,161.12",
+          "Medicare part = 2.9% x net earnings = USD 2,142.52",
+          "SE tax = USD 11,303.64; deductible half = USD 5,651.82"
+        ],
+        "inputs_used": {
+          "schedule_c_net_profit": 80000,
+          "w2_social_security_wages": 0,
+          "tax_year": "2025"
+        },
+        "constants_used": [
+          {
+            "name": "NET_EARNINGS_FACTOR",
+            "value": 0.9235,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Net earnings | Schedule C net profit × 92.35%"
+          },
+          {
+            "name": "MIN_NET_EARNINGS",
+            "value": 400,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+          },
+          {
+            "name": "SS_RATE",
+            "value": 0.124,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+          },
+          {
+            "name": "WAGE_BASE",
+            "value": {
+              "2025": 176100,
+              "2026": 184500
+            },
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+          },
+          {
+            "name": "MEDICARE_RATE",
+            "value": 0.029,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+          },
+          {
+            "name": "DEDUCTIBLE_SHARE",
+            "value": 0.5,
+            "slug": "us-federal-return-assembly",
+            "section": "Self-employment tax",
+            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+          }
+        ],
+        "assumptions": [
+          "Regular Schedule SE method; no church employee income, no optional methods",
+          "Additional Medicare Tax (0.9%, Form 8959) not included"
+        ],
+        "skill_anchors_reproduced": [
+          "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+          "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "w2_social_security_wages": 0
+        },
+        "tax_year": "2025"
+      },
+      "receipt_id": "e1feb9cf80c4caf2aa794cd6cbbda3561da748d8d80c245eed15dd42e5831cd0"
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "schedule_c_net_profit": 120000,
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "us_se_tax",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2025 and 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "b00e3121f7f8e895a8f7cc8389e3456a7c87c14e5218a05186dcad66f5561d99"
+    }
+  ]
+}

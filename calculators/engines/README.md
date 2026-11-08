@@ -1,0 +1,31 @@
+# Tax engines
+
+The calculation engines behind the compute tool of the OpenAccountants plugin, published so anyone can read the code, check every figure against the skill it was quoted from, and rerun the tests. Each folder is generated from the OpenAccountants platform (`src/lib/engines`) by `scripts/export-engines.mjs`; do not edit them by hand. A compute answer links to its engine's folder (`inspect.code_url`).
+
+| Engine | Jurisdiction | Tax years | What it computes | Skills behind it | Test cases |
+|---|---|---|---|---|---|
+| [`nl_vpb_2026`](nl_vpb_2026/) | NL | 2026 | Netherlands corporate income tax (vennootschapsbelasting) for 2026 on a BV/NV's taxable amount (after loss offset and exemptions). | `nl-corporate-tax` | 14 |
+| [`uk_ani_pension_target_2026_27`](uk_ani_pension_target_2026_27/) | GB | 2026-27 | UK 2026-27: how much to pay (net) into a relief-at-source personal pension to bring adjusted net income down to a limit. Targets: personal_allowance_taper (GBP 100,000), child_benefit_charge_nil (GBP 60,000), tax_free_childcare (limit not served by any skill: always returns missing_rule until a skill serves it). | `uk-income-tax-sa100` | 10 |
+| [`uk_paye_take_home_2026_27`](uk_paye_take_home_2026_27/) | GB | 2026-27 | UK employee annual income tax (rUK rates: England, Wales, Northern Ireland) and employee Class 1 NIC (category A) on salary for 2026-27, and take-home pay. Annual basis. | `uk-payroll`, `uk-income-tax-sa100` | 26 |
+| [`ca_cpp_ei_employee_2026`](ca_cpp_ei_employee_2026/) | CA | 2026 | Canada (outside Quebec) employee CPP (base + first additional), CPP2 and EI premiums for a full calendar year 2026 with one employer. | `canada-payroll` | 19 |
+| [`au_sbito_2026_27`](au_sbito_2026_27/) | AU | 2026-27 | Australia 2026-27 small business income tax offset for an individual resident: 16% of the tax on net small business income, capped at $1,000, aggregated turnover under $5m. | `au-rates-2026-27`, `au-individual-return` | 11 |
+| [`au_resident_tax_2026_27`](au_resident_tax_2026_27/) | AU | 2026-27 | Australia, resident for the full 2026-27 year: income tax on taxable income less LITO, plus 2% Medicare levy, plus MLS check; take-home = gross income less those. | `au-rates-2026-27` | 23 |
+| [`ie_income_tax_usc_2026`](ie_income_tax_usc_2026/) | IE | 2026 | Ireland 2026: income tax (after personal + PAYE credits) and USC for a single PAYE employee for the full year, cumulative basis. | `ie-payroll` | 17 |
+| [`mt_income_tax_2026`](mt_income_tax_2026/) | MT | 2025, 2026 | Malta resident income tax on chargeable income for basis year 2026 (year of assessment 2027) or basis year 2025 (year of assessment 2026): picks the single, married or parent table, including the 2026 qualifying-child tables, from the person's facts. | `malta-income-tax` | 5 |
+| [`de_est_tariff_2026`](de_est_tariff_2026/) | DE | 2026 | Germany 2026 income tax from the § 32a EStG tariff on taxable income (zu versteuerndes Einkommen), Grundtarif or splitting. Excludes solidarity surcharge and church tax. | `germany-income-tax` | 24 |
+| [`pt_ss_independent_2026`](pt_ss_independent_2026/) | PT | 2026 | Portugal 2026: monthly social security contribution of a self-employed worker (quarterly regime) from the quarter's declared service/goods income; applies to the declaration month and the next two. | `pt-social-contributions` | 15 |
+| [`us_se_tax`](us_se_tax/) | US | 2025, 2026 | US self-employment tax (Schedule SE regular method) for tax year 2025 or 2026: 92.35% of net profit, 12.4% social security up to the wage base less W-2 SS wages, 2.9% Medicare uncapped. Excludes the 0.9% Additional Medicare Tax (Form 8959). | `us-federal-return-assembly` | 12 |
+
+Run every engine's tests (Node 20+, no dependencies):
+
+```sh
+node --test calculators/engines/
+```
+
+Each folder holds `index.mjs` (the engine as one ES module, exporting `run(facts)`), `source/` (the TypeScript it was built from), `rules.json` (every figure, with its skill, section and quoted line), `cases.json` and `index.test.mjs` (the tests), and a README.
+
+Results are computed from the figures in `rules.json`, not advice on anyone's situation. An engine refuses (`missing_rule`) rather than guess when no skill serves a figure it needs, and refuses any tax year it has no figures for.
+
+Licence: code AGPL-3.0-only; figures and wording in `rules.json` under the OpenAccountants Guide License v1.0, like the skills.
+
+Source commit: `4878966e4e6107589f33598ee0fb4ac0a3ad69d6`.

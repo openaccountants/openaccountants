@@ -1,0 +1,1756 @@
+{
+  "engine": "ca_cpp_ei_employee_2026",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-03",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 60000,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 4339.75,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 3361.75,
+          "cpp2": 0,
+          "ei_premium": 978,
+          "total": 4339.75
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 3,361.75",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 978.00",
+          "Total = CAD 4,339.75"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 60000,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "70ffde4ff2e7da5b34cb6b11f21b612df40b576bd1928852f6be5eeb2b2cc135"
+    },
+    {
+      "id": "CA-0",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 0,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 0,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 0,
+          "cpp2": 0,
+          "ei_premium": 0,
+          "total": 0
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 0.00",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 0.00",
+          "Total = CAD 0.00"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 0,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "090dbbc58d62a0dc49ecb957b855533c3ddb8bc3dcdb3da6db232808e00ec035"
+    },
+    {
+      "id": "CA-1",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 3500,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 57.05,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 0,
+          "cpp2": 0,
+          "ei_premium": 57.05,
+          "total": 57.05
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 0.00",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 57.05",
+          "Total = CAD 57.05"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 3500,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "9f5feb301bf0e02d84b21bb392c5c6a931a87934bc9a02cfd8ad40cf39e599f5"
+    },
+    {
+      "id": "CA-2",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 3501,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 57.13,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 0.06,
+          "cpp2": 0,
+          "ei_premium": 57.07,
+          "total": 57.13
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 0.06",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 57.07",
+          "Total = CAD 57.13"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 3501,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "619771343bc2fd8dcfbf5ee498aaaf40bf00da04f6978e6ad76c862d024b3605"
+    },
+    {
+      "id": "CA-3",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 60000,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 4339.75,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 3361.75,
+          "cpp2": 0,
+          "ei_premium": 978,
+          "total": 4339.75
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 3,361.75",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 978.00",
+          "Total = CAD 4,339.75"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 60000,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "70ffde4ff2e7da5b34cb6b11f21b612df40b576bd1928852f6be5eeb2b2cc135"
+    },
+    {
+      "id": "CA-4",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 68900,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 5014.37,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 3891.3,
+          "cpp2": 0,
+          "ei_premium": 1123.07,
+          "total": 5014.37
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 3,891.30",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 1,123.07",
+          "Total = CAD 5,014.37"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 68900,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "630fb9769a4e169889b3f0ac538fc718f830daad7d8898b42f39e358ccef4eb3"
+    },
+    {
+      "id": "CA-5",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 68901,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 5014.43,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 3891.36,
+          "cpp2": 0,
+          "ei_premium": 1123.07,
+          "total": 5014.43
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 3,891.36",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 1,123.07",
+          "Total = CAD 5,014.43"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 68901,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "cd352a9176e07a2f896a0b2e45c825625401506aba235bbdbfe128c324d613c4"
+    },
+    {
+      "id": "CA-6",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 74600,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 5353.52,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 4230.45,
+          "cpp2": 0,
+          "ei_premium": 1123.07,
+          "total": 5353.52
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 4,230.45",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 1,123.07",
+          "Total = CAD 5,353.52"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 74600,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "daf805dfa808ca611654d507a82e5968aebd8be52f55645906237978c9a28216"
+    },
+    {
+      "id": "CA-7",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 74601,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 5353.56,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 4230.45,
+          "cpp2": 0.04,
+          "ei_premium": 1123.07,
+          "total": 5353.56
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 4,230.45",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.04",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 1,123.07",
+          "Total = CAD 5,353.56"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 74601,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "0b4baaf433058be10ea961ff06c2231c6aab11ee83ef5bf9f72a19c383ef779f"
+    },
+    {
+      "id": "CA-8",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 85000,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 5769.52,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 4230.45,
+          "cpp2": 416,
+          "ei_premium": 1123.07,
+          "total": 5769.52
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 4,230.45",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 416.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 1,123.07",
+          "Total = CAD 5,769.52"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 85000,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "963f36039d0e163c52b5b1a4d4f5fa6527760bdc33947031b1bb311a67c2a957"
+    },
+    {
+      "id": "CA-9",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 85001,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 5769.52,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 4230.45,
+          "cpp2": 416,
+          "ei_premium": 1123.07,
+          "total": 5769.52
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 4,230.45",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 416.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 1,123.07",
+          "Total = CAD 5,769.52"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 85001,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "54328cca5133ee8a866fe9f7f5e095620962882f51e3cb7e510844d082d12c11"
+    },
+    {
+      "id": "CA-10",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 120000,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 5769.52,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 4230.45,
+          "cpp2": 416,
+          "ei_premium": 1123.07,
+          "total": 5769.52
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 4,230.45",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 416.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 1,123.07",
+          "Total = CAD 5,769.52"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 120000,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "904b88ec51a3803d30c575d5f6c0a05e9318fda3c3714940907dda497f350ab9"
+    },
+    {
+      "id": "CA-11",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 45678.91,
+        "province": "ON",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 3254.22,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 2509.65,
+          "cpp2": 0,
+          "ei_premium": 744.57,
+          "total": 3254.22
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 2,509.65",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 744.57",
+          "Total = CAD 3,254.22"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 45678.91,
+          "province": "ON",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "8d66c4f6d0883107b4b9799a73d61c6c8fa899a46598f540f26d36a10345240c"
+    },
+    {
+      "id": "CA-bc-lower",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 50000,
+        "province": "bc",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 3581.75,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 2766.75,
+          "cpp2": 0,
+          "ei_premium": 815,
+          "total": 3581.75
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 2,766.75",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 815.00",
+          "Total = CAD 3,581.75"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 50000,
+          "province": "BC",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "cb2d7f4a5160d0aab6433757217e76a432015834467d2c535d10a58c0619b5df"
+    },
+    {
+      "id": "CA-no-province",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 50000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "ca_cpp_ei_employee_2026",
+        "what": "missing input 'province'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "annual_pensionable_earnings": {
+              "type": "number",
+              "description": "CAD (salary)"
+            },
+            "province": {
+              "type": "string",
+              "description": "province of employment, two-letter code, e.g. ON (QC is refused: Quebec uses QPP)"
+            },
+            "months_employed": {
+              "type": "number",
+              "description": "integer 1-12",
+              "default": 12
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "annual_pensionable_earnings",
+            "province",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "CA-qc",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 50000,
+        "province": "QC",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ca_cpp_ei_employee_2026",
+        "what": "Quebec QPP rates",
+        "why": "Quebec uses QPP and a reduced EI rate; this engine covers CPP provinces only.",
+        "partial": {},
+        "inputs_used": {
+          "annual_pensionable_earnings": 50000,
+          "province": "QC",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "months_employed": 12
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "bae92472100fc9483b070076db3011672b3d5da9f21dc64dcac67afb2488bbaa"
+    },
+    {
+      "id": "CA-6m",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 50000,
+        "province": "ON",
+        "months_employed": 6,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ca_cpp_ei_employee_2026",
+        "what": "part-year basic exemption proration",
+        "why": "The skill says the exemption is pro-rated per pay period but this engine only implements a full year.",
+        "partial": {},
+        "inputs_used": {
+          "annual_pensionable_earnings": 50000,
+          "province": "ON",
+          "months_employed": 6
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "74ad043c731075f7f2d49aac75832b529f50561bc11456e440935b694cf38c69"
+    },
+    {
+      "id": "CA-12.0",
+      "from": "python-parity",
+      "inputs": {
+        "annual_pensionable_earnings": 50000,
+        "province": "AB",
+        "months_employed": 12,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_cpp_ei_employee_2026",
+        "headline": {
+          "label": "Employee CPP + CPP2 + EI for 2026",
+          "value": 3581.75,
+          "currency": "CAD"
+        },
+        "lines": {
+          "cpp_base_and_first_additional": 2766.75,
+          "cpp2": 0,
+          "ei_premium": 815,
+          "total": 3581.75
+        },
+        "steps": [
+          "CPP = 5.95% x (min(earnings, YMPE CAD 74,600.00) less basic exemption CAD 3,500.00) = CAD 2,766.75",
+          "CPP2 = 4% x earnings between YMPE CAD 74,600.00 and YAMPE CAD 85,000.00 = CAD 0.00",
+          "EI = 1.63% x min(earnings, CAD 68,900.00) = CAD 815.00",
+          "Total = CAD 3,581.75"
+        ],
+        "inputs_used": {
+          "annual_pensionable_earnings": 50000,
+          "province": "AB",
+          "months_employed": 12
+        },
+        "constants_used": [
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          }
+        ],
+        "assumptions": [
+          "Age 18 to 70, not receiving CPP disability, no CPT30 election",
+          "One employer for the whole year (no overcontribution across employers)",
+          "Annual totals; per-pay-period rounding can differ by cents"
+        ],
+        "skill_anchors_reproduced": [
+          "Max CPP 2026 $4,230.45 and max CPP2 $416.00 reproduced",
+          "Max EI premium $1,123.07 reproduced",
+          "Pattern 1 (biweekly $2,884.62): EI $47.02 exact; CPP $163.60 stated vs $163.625 from the skill's own inputs (skill arithmetic off ~3 cents)"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "316a9b45b524f825f6f57ac7b421f3a135a3ceacf54bdb301c7303b1339a9ef2"
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "annual_pensionable_earnings": 60000,
+        "province": "ON",
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ca_cpp_ei_employee_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "689362acd1181d8c3895e8a9f77736bd9d78b10a6a69059bf3dd91ecb65cda99"
+    }
+  ]
+}

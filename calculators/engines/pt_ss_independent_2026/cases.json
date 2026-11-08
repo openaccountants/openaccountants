@@ -1,0 +1,1529 @@
+{
+  "engine": "pt_ss_independent_2026",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-09",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 449.4,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 6300,
+          "monthly_base": 2100,
+          "rate": 0.214,
+          "monthly_contribution": 449.4,
+          "three_months_total": 1348.2
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 9,000.00 + 20% of goods EUR 0.00 = EUR 6,300.00",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 2,100.00",
+          "Monthly contribution = 21.4% x EUR 2,100.00 = EUR 449.40 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 1,348.20"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 9000,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "92510cb7bdc3fe49d398b56abda19ac29b24a97056b55bf4778560983cda326b"
+    },
+    {
+      "id": "PT-0",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 20,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 0,
+          "monthly_base": 0,
+          "rate": 0.214,
+          "monthly_contribution": 20,
+          "three_months_total": 60
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 0.00 + 20% of goods EUR 0.00 = EUR 0.00",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 0.00",
+          "Monthly contribution = 21.4% x EUR 0.00 = EUR 20.00 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 60.00"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 0,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "f1493259309cd9d1a0f91532fd0e8425a91686ef16df7d75de9854b81c3e0289"
+    },
+    {
+      "id": "PT-1",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 100,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 20,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 70,
+          "monthly_base": 23.33,
+          "rate": 0.214,
+          "monthly_contribution": 20,
+          "three_months_total": 60
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 100.00 + 20% of goods EUR 0.00 = EUR 70.00",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 23.33",
+          "Monthly contribution = 21.4% x EUR 23.33 = EUR 20.00 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 60.00"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 100,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "07c803a69e17c393764c6c28fddc6d9cb3d2e397cfd1dd0120220231b44fe8e3"
+    },
+    {
+      "id": "PT-2",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 449.4,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 6300,
+          "monthly_base": 2100,
+          "rate": 0.214,
+          "monthly_contribution": 449.4,
+          "three_months_total": 1348.2
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 9,000.00 + 20% of goods EUR 0.00 = EUR 6,300.00",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 2,100.00",
+          "Monthly contribution = 21.4% x EUR 2,100.00 = EUR 449.40 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 1,348.20"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 9000,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "92510cb7bdc3fe49d398b56abda19ac29b24a97056b55bf4778560983cda326b"
+    },
+    {
+      "id": "PT-3",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 27623.83,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 1379.35,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 19336.68,
+          "monthly_base": 6445.56,
+          "rate": 0.214,
+          "monthly_contribution": 1379.35,
+          "three_months_total": 4138.05
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 27,623.83 + 20% of goods EUR 0.00 = EUR 19,336.68",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 6,445.56",
+          "Monthly contribution = 21.4% x EUR 6,445.56 = EUR 1,379.35 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 4,138.05"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 27623.83,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "394d60d060fdf5882a316693cef15c9ca43bcf639a107bd4a6ea0b68d1eacb42"
+    },
+    {
+      "id": "PT-4",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 100000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 1379.35,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 70000,
+          "monthly_base": 6445.56,
+          "rate": 0.214,
+          "monthly_contribution": 1379.35,
+          "three_months_total": 4138.05
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 100,000.00 + 20% of goods EUR 0.00 = EUR 70,000.00",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 6,445.56",
+          "Monthly contribution = 21.4% x EUR 6,445.56 = EUR 1,379.35 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 4,138.05"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 100000,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "cbec001c1cdc3e4b38576e1593c924527ee3ee158bcec9214fe0c3298e4a4856"
+    },
+    {
+      "id": "PT-5",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 1234.56,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 61.65,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 864.19,
+          "monthly_base": 288.06,
+          "rate": 0.214,
+          "monthly_contribution": 61.65,
+          "three_months_total": 184.95
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 1,234.56 + 20% of goods EUR 0.00 = EUR 864.19",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 288.06",
+          "Monthly contribution = 21.4% x EUR 288.06 = EUR 61.65 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 184.95"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 1234.56,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "0ef9d5598ef576d542fa3fac2b54396fb4c327f0fbcd6c04a93f0fa47535f20b"
+    },
+    {
+      "id": "PT-goods",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 3000,
+        "quarter_goods_income": 5000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 221.13,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 3100,
+          "monthly_base": 1033.33,
+          "rate": 0.214,
+          "monthly_contribution": 221.13,
+          "three_months_total": 663.39
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 3,000.00 + 20% of goods EUR 5,000.00 = EUR 3,100.00",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 1,033.33",
+          "Monthly contribution = 21.4% x EUR 1,033.33 = EUR 221.13 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 663.39"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 3000,
+          "quarter_goods_income": 5000,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "c58d116369af50d083cc1012a5df26a7c4f2e73f1d93170bf207a025ede84d21"
+    },
+    {
+      "id": "PT-eni",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "is_eni_or_eirl": true,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 529.2,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 6300,
+          "monthly_base": 2100,
+          "rate": 0.252,
+          "monthly_contribution": 529.2,
+          "three_months_total": 1587.6
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 9,000.00 + 20% of goods EUR 0.00 = EUR 6,300.00",
+          "Monthly base = one third of relevant income, capped at EUR 6,445.56 = EUR 2,100.00",
+          "Monthly contribution = 25.2% x EUR 2,100.00 = EUR 529.20 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 1,587.60"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 9000,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": true,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "base_adjustment_pct": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "a3712414b01eb603e156bed4153e8ca7e8e4d041eb6461b5ad0ba131c0d9ac8c"
+    },
+    {
+      "id": "PT-adj25",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "base_adjustment_pct": 25,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 561.75,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 6300,
+          "monthly_base": 2625,
+          "rate": 0.214,
+          "monthly_contribution": 561.75,
+          "three_months_total": 1685.25
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 9,000.00 + 20% of goods EUR 0.00 = EUR 6,300.00",
+          "Monthly base = one third of relevant income, adjusted by 25%, capped at EUR 6,445.56 = EUR 2,625.00",
+          "Monthly contribution = 21.4% x EUR 2,625.00 = EUR 561.75 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 1,685.25"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 9000,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 25,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "ce033a0ccabced9a7928b5319d032e9cb44eca61d374358f7f8b0b10ef7034ba"
+    },
+    {
+      "id": "PT-adj-25",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "base_adjustment_pct": -25,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 337.05,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 6300,
+          "monthly_base": 1575,
+          "rate": 0.214,
+          "monthly_contribution": 337.05,
+          "three_months_total": 1011.15
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 9,000.00 + 20% of goods EUR 0.00 = EUR 6,300.00",
+          "Monthly base = one third of relevant income, adjusted by -25%, capped at EUR 6,445.56 = EUR 1,575.00",
+          "Monthly contribution = 21.4% x EUR 1,575.00 = EUR 337.05 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 1,011.15"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 9000,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": -25,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "e63f952ee48b0d739557944faf1195741f5d76b080d425bf833d8b27869f8b3f"
+    },
+    {
+      "id": "PT-adj10-eni",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 7777.77,
+        "base_adjustment_pct": 10,
+        "is_eni_or_eirl": true,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution for the declaration month and the next two",
+          "value": 503.07,
+          "currency": "EUR"
+        },
+        "lines": {
+          "relevant_income": 5444.44,
+          "monthly_base": 1996.29,
+          "rate": 0.252,
+          "monthly_contribution": 503.07,
+          "three_months_total": 1509.21
+        },
+        "steps": [
+          "Relevant income = 70% of services EUR 7,777.77 + 20% of goods EUR 0.00 = EUR 5,444.44",
+          "Monthly base = one third of relevant income, adjusted by 10%, capped at EUR 6,445.56 = EUR 1,996.29",
+          "Monthly contribution = 25.2% x EUR 1,996.29 = EUR 503.07 (minimum EUR 20.00)",
+          "For the declaration month and the next two: EUR 1,509.21"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 7777.77,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": true,
+          "base_adjustment_pct": 10,
+          "exempt": false
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [
+          "Quarterly regime (simplified regime, not organised accounts)",
+          "Paid between the 10th and 20th of the following month (art. 155(2))"
+        ],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "exempt": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "e0e72a13149c7b31afc13183a0e425632fe7eadaa748dbf5914007e126c62130"
+    },
+    {
+      "id": "PT-adj30",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "base_adjustment_pct": 30,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "pt_ss_independent_2026",
+        "what": "base_adjustment_pct must be between -25 and 25",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "quarter_services_income": {
+              "type": "number",
+              "description": "EUR"
+            },
+            "quarter_goods_income": {
+              "type": "number",
+              "description": "EUR",
+              "default": 0
+            },
+            "is_eni_or_eirl": {
+              "type": "boolean",
+              "description": "empresário em nome individual or EIRL holder (or their spouse)",
+              "default": false
+            },
+            "base_adjustment_pct": {
+              "type": "number",
+              "description": "between -25 and 25 (art. 164 option)",
+              "default": 0
+            },
+            "exempt": {
+              "type": "boolean",
+              "description": "first 12 months, employment exemption, pension, etc.",
+              "default": false
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "quarter_services_income",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "PT-exempt",
+      "from": "python-parity",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "exempt": true,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "pt_ss_independent_2026",
+        "headline": {
+          "label": "Monthly contribution",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "monthly_contribution": 0,
+          "reason": "exempt"
+        },
+        "steps": [
+          "Exempt from contributions: EUR 0.00 a month"
+        ],
+        "inputs_used": {
+          "quarter_services_income": 9000,
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0,
+          "exempt": true
+        },
+        "constants_used": [
+          {
+            "name": "IAS_2026",
+            "value": 537.13,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1"
+          },
+          {
+            "name": "SELF_EMPLOYED_RATE",
+            "value": 0.214,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Self-employed rate | 21.4% | 2026 | Code art. 168(1)"
+          },
+          {
+            "name": "ENI_EIRL_RATE",
+            "value": 0.252,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4)"
+          },
+          {
+            "name": "SERVICES_FACTOR",
+            "value": 0.7,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a)"
+          },
+          {
+            "name": "GOODS_FACTOR",
+            "value": 0.2,
+            "slug": "pt-social-contributions",
+            "section": "The taxable base",
+            "quote": "Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1))"
+          },
+          {
+            "name": "MONTHLY_BASE_FRACTION",
+            "value": 0.3333333333333333,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1)"
+          },
+          {
+            "name": "BASE_CEILING",
+            "value": 6445.56,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5)"
+          },
+          {
+            "name": "MIN_CONTRIBUTION",
+            "value": 20,
+            "slug": "pt-social-contributions",
+            "section": "Rates, bands and thresholds",
+            "quote": "Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2)"
+          }
+        ],
+        "assumptions": [],
+        "skill_anchors_reproduced": [
+          "pt-social-contributions Example 1: EUR 9,000 services in a quarter -> relevant EUR 6,300, base EUR 2,100, EUR 449.40 a month",
+          "Ceiling 12 x IAS = EUR 6,445.56"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "quarter_goods_income": 0,
+          "is_eni_or_eirl": false,
+          "base_adjustment_pct": 0
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "e345c329f3473eee5686b188ebf5983850adeb53b31f0885e96ba5f94904f01b"
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "quarter_services_income": 9000,
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "pt_ss_independent_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "896ee644c5e17a922ec96f6ae3bc4675f9c73f0db95a473fb753dead91570155"
+    }
+  ]
+}
