@@ -1,7 +1,7 @@
 ---
 name: malta-income-tax
 description: "Use this skill whenever asked about Malta income tax for self-employed individuals. Trigger on phrases like \"how much tax do I pay\", \"income tax return\", \"self-assessment\", \"allowable deductions\", \"capital allowances\", \"provisional tax\", \"TA22 regime\", \"TA24\", \"chargeable income\", \"tax credits\", \"self-employed tax Malta\", or any question about filing or computing income tax for a self-employed or part-time self-employed client. Also trigger when preparing or reviewing the annual income tax return or a TA22, computing deductible expenses, or advising on provisional tax instalments. NOTE: TA24 is the 15% final tax form for RENTAL income (ITA Art. 31D) ; if the user means rental income, see Section 5.11; the self-employed annual filing is the personal Income Tax Return. This skill covers tax rates (single/married/parent), the return working-paper structure, allowable deductions, capital allowances, provisional tax, the TA22 part-time regime, penalties, and interaction with VAT and SSC. ALWAYS read this skill before touching any income tax work."
-version: 2.2
+version: 2.3
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-11-08
@@ -28,7 +28,7 @@ Marital and family status is tested "in the year immediately preceding the year 
 
 **Source scope.** The law and the specific official pages identified in Sources were read on 4 November 2026 for this correction. Historical source-access failures are preserved in the evidence archive, not used as a present unavailability claim. Only the listed changed claims were rechecked; remaining specialist or form-layout gaps are explicitly held.
 
-**Not covered:** companies and partnerships, a full non-resident computation, the special residence programmes (Global Residence Programme, Residents Scheme, highly qualified persons), double tax relief, VAT (see the Malta VAT Guide) and the detail of social security contributions.
+**Not covered:** companies and partnerships, a full non-resident computation, the special residence programmes (Global Residence Programme, Residents Scheme, and the Highly Skilled Individuals Rules, [L.N. 20 of 2026](https://legislation.mt/eli/ln/2026/20/eng/pdf), which replaced the Highly Qualified Persons Rules from 1 January 2026), double tax relief, VAT (see the Malta VAT Guide) and the detail of social security contributions.
 
 ## Ask the client first
 
@@ -53,7 +53,7 @@ Marital and family status is tested "in the year immediately preceding the year 
 6. **Pick the rate table** for the basis year and status, then apply: chargeable income × rate − subtraction. A table does not apply unless every one of its conditions is met.
 7. **Credit tax already paid.** This means FSS tax deducted by employers, provisional tax, and part-time tax paid on income the person opted to declare. The balance is due on the tax settlement date, which is the return date.
 8. **File the return** by 30 June of the year of assessment. Pay the final taxes and file their statements by their own dates, most of them 30 April.
-9. **Add interest and additional tax** for anything late. Interest is 0.6% a month, capped at the tax. Late-return additional tax follows Table A. ([ITMA art. 44](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b))
+9. **Add interest and additional tax** for anything late. Interest is 0.6% a month, capped at the tax ([ITMA art. 44(2A)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b)). Late-return additional tax follows Table A ([ITA art. 56(12)(c) and Schedule, item 2](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
 10. **Set up next year's provisional tax.** The benchmark comes from the specified benchmark year, normally the basis year two years before the payment year. Pay 20%, 30% and 50% on 30 April, 31 August and 21 December. File a reduction form if this year's liability will be lower. ([P.T. Rules](https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4))
 
 Order matters. If you apply the rate table before removing final-tax income, that income is taxed twice. If you pick a table without checking nationality and custody, the tax can be understated.
@@ -79,7 +79,8 @@ Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, re
 - **Married tables** (article 56(1)(a)) apply to a married couple resident in Malta and taxed jointly under article 49. If either spouse elected a separate return (article 49A), or the responsible spouse opted for a separate computation (article 50), each spouse uses the article 56(1)(b) tables instead. An EU/EEA national whose spouse is not resident can still use the married tables if the Commissioner is satisfied that at least 90% of the couple's worldwide income is from Malta.
 - **Parent table** (article 56(1)(b)(ii)): the individual was a parent who kept a child in custody, or paid maintenance for the child under article 12(1)(t). The child must be not over 18, or not over 23 if in full-time education.
 - **Qualifying-child tables** (married (ii) and (iii), parent (iv) and (v)) need **all** of the following:
-  - custody of the child, or maintenance under article 12(1)(t). For the parent tables, custody can also cover a spouse's child or a certified cohabitant's child;
+  - for the married tables (a)(ii) and (a)(iii), the couple kept the child (or the two children) in their custody. Maintenance does not count for these tables (article 56(1)(a)(ii)(A) and (iii)(A));
+  - for the parent tables (b)(iv) and (b)(v), the individual kept the child in custody (their own child, a spouse's child or a certified cohabitant's child) or paid maintenance for their own child under article 12(1)(t) (article 56(1)(b)(iv)(A) and (v)(A));
   - the same age test;
   - a spouse, the individual, or the individual's spouse must be an EU/EEA national or hold long-term resident status;
   - if nobody is an EU/EEA national, the child (or each of the two children) must have been born in Malta and be resident in Malta.
@@ -363,7 +364,7 @@ expected:
 
 - Refuse to pick a rate table without marital status, children's ages, custody or maintenance, and nationality or long-term resident status.
 - Refer non-residents, part-year residents and dual residents, and all double tax relief claims.
-- Refer the special schemes (Global Residence Programme, Residents Scheme, returning migrants, highly qualified persons) and anyone taxed at the article 56(11) flat rate.
+- Refer the special schemes (Global Residence Programme, Residents Scheme, returning migrants, and the Highly Skilled Individuals Rules, [L.N. 20 of 2026](https://legislation.mt/eli/ln/2026/20/eng/pdf), which replaced the Highly Qualified Persons Rules from 1 January 2026) and anyone taxed at the article 56(11) flat rate.
 - Refer disputed domicile or ordinary residence.
 - Refer property transfers involving projects, companies, trusts, special designated areas, intra-group transfers or share transfers.
 - Refer companies, partnerships and group structures.
@@ -380,7 +381,7 @@ expected:
 | --- | --- | --- |
 | Individual return and self-assessment | 30 June of the year of assessment (30 June 2027 for 2026 income) | S.L. 372.16 rule 2(c)(ii) |
 | Balance of tax (tax settlement date) | Same date as the return | S.L. 372.16 rule 5(b) |
-| 2025 income (year of assessment 2026) | Filing and related payment extended to **31 July 2026**, both manual and electronic, by the MTCA 3 June 2026 notice | S.L. 372.16 |
+| 2025 income (year of assessment 2026) | Filing and related payment extended to **31 July 2026**, both manual and electronic, by the MTCA 3 June 2026 notice | [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline) |
 | Article 12 election (no return) | 30 April of the year of assessment | S.L. 372.16 rule 4(b) |
 | Part-time self-employed tax | 30 April after the basis year | ITMA art. 42(4)(a) |
 | 15% rental tax | 30 April after the basis year | ITMA art. 42(4)(c) |
@@ -422,7 +423,10 @@ Only the identified passages were read for this delta; historical source rows ke
 | S.L.372.18 benchmark fallback: rules2,6,7 read | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-04 |
 | S.L.372.16 future statutory date | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-04 |
 | MTCA part-time cap and excess read | https://mtca.gov.mt/personal-tax/individual/faqs/faqs1 | 2026-11-04 |
+| Cap123 art. 56(1)(a)(ii)(A), (a)(iii)(A), (b)(iv)(A), (b)(v)(A): custody and maintenance conditions of the qualifying-child tables; Schedule item 2 (Table A) | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-08 |
+| ITMA art. 44(2A): interest on late tax | https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b | 2026-11-08 |
+| L.N. 20 of 2026, Highly Skilled Individuals Rules, rules 1(2) and 12 | https://legislation.mt/eli/ln/2026/20/eng/pdf | 2026-11-08 |
 
-Correction ledger and complete old-topic destinations: [personal-malta-income-tax](../../evidence/malta-deep-audit-20261104/ledgers/personal-malta-income-tax.md). Full original research is archived there; this correction is not professional attestation.
+Correction ledger and complete old-topic destinations: [personal-malta-income-tax](../../evidence/malta-deep-audit-20261104/ledgers/personal-malta-income-tax.md). Full original research is archived there.
 
-Not yet confirmed: unresolved branches explicitly marked HOLD or check in this Guide; see the correction ledger and personal audit for the exact remaining scope. No whole-pack professional review is claimed.
+Not yet confirmed: unresolved branches explicitly marked HOLD or check in this Guide; see the correction ledger and personal audit for the exact remaining scope.
