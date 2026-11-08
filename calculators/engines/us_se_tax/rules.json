@@ -1,0 +1,103 @@
+{
+  "engine": "us_se_tax",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/us_se_tax",
+  "generated_from": "src/lib/engines/us-se-tax.ts",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "us_se_tax",
+    "version": "1.2.0",
+    "jurisdiction": "US",
+    "tax_years": [
+      "2025",
+      "2026"
+    ],
+    "summary": "US self-employment tax (Schedule SE regular method) for tax year 2025 or 2026: 92.35% of net profit, 12.4% social security up to the wage base less W-2 SS wages, 2.9% Medicare uncapped. Excludes the 0.9% Additional Medicare Tax (Form 8959).",
+    "facts": {
+      "schedule_c_net_profit": {
+        "type": "number",
+        "required": true,
+        "description": "USD (total of all Schedule C/F)"
+      },
+      "w2_social_security_wages": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2025",
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2025 and 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "net_earnings_from_se": "USD",
+      "social_security_part": "USD",
+      "medicare_part": "USD",
+      "se_tax": "USD",
+      "deductible_half": "USD"
+    }
+  },
+  "anchors": [
+    "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
+    "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+  ],
+  "rules": [
+    {
+      "name": "NET_EARNINGS_FACTOR",
+      "value": 0.9235,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Net earnings | Schedule C net profit × 92.35%",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "MIN_NET_EARNINGS",
+      "value": 400,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "SS_RATE",
+      "value": 0.124,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "WAGE_BASE",
+      "value": {
+        "2025": 176100,
+        "2026": 184500
+      },
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Wage base | $176,100 for 2025; $184,500 for 2026",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "MEDICARE_RATE",
+      "value": 0.029,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Medicare part | 2.9% of all net earnings, with no cap",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "DEDUCTIBLE_SHARE",
+      "value": 0.5,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    }
+  ]
+}

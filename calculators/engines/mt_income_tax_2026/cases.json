@@ -1,0 +1,382 @@
+{
+  "engine": "mt_income_tax_2026",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-MT-01",
+      "from": "python-parity",
+      "inputs": {
+        "chargeable_income": 31625,
+        "status": "single",
+        "resident": true,
+        "tax_paid": 3500,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "mt_income_tax_2026",
+        "headline": {
+          "label": "Malta income tax, basis year 2026 (year of assessment 2027)",
+          "value": 4506.25,
+          "currency": "EUR"
+        },
+        "lines": {
+          "chargeable_income": 31625,
+          "table": "SINGLE_2026",
+          "tax": 4506.25,
+          "tax_paid": 3500,
+          "balance_due": 1006.25
+        },
+        "steps": [
+          "Basis year 2026 is year of assessment 2027",
+          "Status single: the single (other individual) table",
+          "Tax = EUR 31,625.00 x 25% - EUR 3,400.00 = EUR 4,506.25",
+          "Less tax already paid EUR 3,500.00 = balance due EUR 1,006.25"
+        ],
+        "inputs_used": {
+          "chargeable_income": 31625,
+          "resident": true,
+          "status": "single",
+          "tax_paid": 3500,
+          "table": "SINGLE_2026"
+        },
+        "constants_used": [
+          {
+            "name": "SINGLE_2026",
+            "value": {
+              "zero": 12000,
+              "bands": [
+                [
+                  16000,
+                  0.15,
+                  1800
+                ],
+                [
+                  60000,
+                  0.25,
+                  3400
+                ],
+                [
+                  null,
+                  0.35,
+                  9400
+                ]
+              ]
+            },
+            "slug": "malta-income-tax",
+            "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+            "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nSingle (other individual), art. 56(1)(b)(i) | €12,000 | over €12,000 and under €16,000 (€1,800) | over €16,000 and under €60,000 (€3,400) | over €60,000 (€9,400)"
+          }
+        ],
+        "assumptions": [
+          "Chargeable income excludes income taxed at a final rate (part-time 10%, 15% rent option, property transfers)",
+          "Resident in Malta, not under a special residence programme, no double tax relief",
+          "Social security contributions are not included"
+        ],
+        "skill_anchors_reproduced": [
+          "malta-income-tax Case 1: single, chargeable EUR 31,625 -> tax EUR 4,506.25, balance EUR 1,006.25 after EUR 3,500 paid",
+          "malta-income-tax Case 2: married, two children, EUR 40,000 -> EUR 3,425 (2026) against EUR 5,450 (2025)"
+        ],
+        "notes": [
+          "Return and balance due by 30 June 2027"
+        ],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "0271a37614eec7be93ad2c4c4fa67b3d12038a8978dc0f4312dce377fdf8c32a"
+    },
+    {
+      "id": "MT-02",
+      "from": "python-parity",
+      "inputs": {
+        "chargeable_income": 40000,
+        "status": "married_joint",
+        "resident": true,
+        "children": 2,
+        "eu_eea_or_long_term_resident": true,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "mt_income_tax_2026",
+        "headline": {
+          "label": "Malta income tax, basis year 2026 (year of assessment 2027)",
+          "value": 3425,
+          "currency": "EUR"
+        },
+        "lines": {
+          "chargeable_income": 40000,
+          "table": "MARRIED_2_CHILDREN_2026",
+          "tax": 3425,
+          "tax_paid": 0,
+          "balance_due": 3425
+        },
+        "steps": [
+          "Basis year 2026 is year of assessment 2027",
+          "Status married, joint with 2 child(ren), 2 qualifying: the married 2 children table",
+          "Tax = EUR 40,000.00 x 25% - EUR 6,575.00 = EUR 3,425.00",
+          "Less tax already paid EUR 0.00 = balance due EUR 3,425.00"
+        ],
+        "inputs_used": {
+          "chargeable_income": 40000,
+          "resident": true,
+          "status": "married_joint",
+          "tax_paid": 0,
+          "children": 2,
+          "eu_eea_or_long_term_resident": true,
+          "table": "MARRIED_2_CHILDREN_2026"
+        },
+        "constants_used": [
+          {
+            "name": "MARRIED_2_CHILDREN_2026",
+            "value": {
+              "zero": 22500,
+              "bands": [
+                [
+                  32000,
+                  0.15,
+                  3375
+                ],
+                [
+                  60000,
+                  0.25,
+                  6575
+                ],
+                [
+                  null,
+                  0.35,
+                  12575
+                ]
+              ]
+            },
+            "slug": "malta-income-tax",
+            "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+            "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, 2 or more qualifying children, art. 56(1)(a)(iii) | €22,500 | over €22,500 and under €32,000 (€3,375) | over €32,000 and under €60,000 (€6,575) | over €60,000 (€12,575)"
+          },
+          {
+            "name": "QUALIFYING_CHILD_NATIONALITY",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Who gets which table",
+            "quote": "a spouse, the individual, or the individual's spouse must be an EU/EEA national or hold long-term resident status;\nif nobody is an EU/EEA national, the child (or each of the two children) must have been born in Malta and be resident in Malta."
+          }
+        ],
+        "assumptions": [
+          "Chargeable income excludes income taxed at a final rate (part-time 10%, 15% rent option, property transfers)",
+          "Resident in Malta, not under a special residence programme, no double tax relief",
+          "Social security contributions are not included"
+        ],
+        "skill_anchors_reproduced": [
+          "malta-income-tax Case 1: single, chargeable EUR 31,625 -> tax EUR 4,506.25, balance EUR 1,006.25 after EUR 3,500 paid",
+          "malta-income-tax Case 2: married, two children, EUR 40,000 -> EUR 3,425 (2026) against EUR 5,450 (2025)"
+        ],
+        "notes": [
+          "Return and balance due by 30 June 2027"
+        ],
+        "defaults_assumed": {
+          "tax_paid": 0
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "b24420d82e277259e1284ae850b276e31961c5dae2afea8409436344f8152ad6"
+    },
+    {
+      "id": "MT-10",
+      "from": "python-parity",
+      "inputs": {
+        "chargeable_income": 70000,
+        "status": "parent",
+        "resident": true,
+        "children": 1,
+        "eu_eea_or_long_term_resident": true,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "mt_income_tax_2026",
+        "headline": {
+          "label": "Malta income tax, basis year 2026 (year of assessment 2027)",
+          "value": 14230,
+          "currency": "EUR"
+        },
+        "lines": {
+          "chargeable_income": 70000,
+          "table": "PARENT_1_CHILD_2026",
+          "tax": 14230,
+          "tax_paid": 0,
+          "balance_due": 14230
+        },
+        "steps": [
+          "Basis year 2026 is year of assessment 2027",
+          "Status parent with 1 child(ren), 1 qualifying: the parent 1 child table",
+          "Tax = EUR 70,000.00 x 35% - EUR 10,270.00 = EUR 14,230.00",
+          "Less tax already paid EUR 0.00 = balance due EUR 14,230.00"
+        ],
+        "inputs_used": {
+          "chargeable_income": 70000,
+          "resident": true,
+          "status": "parent",
+          "tax_paid": 0,
+          "children": 1,
+          "eu_eea_or_long_term_resident": true,
+          "table": "PARENT_1_CHILD_2026"
+        },
+        "constants_used": [
+          {
+            "name": "PARENT_1_CHILD_2026",
+            "value": {
+              "zero": 14500,
+              "bands": [
+                [
+                  21000,
+                  0.15,
+                  2175
+                ],
+                [
+                  60000,
+                  0.25,
+                  4275
+                ],
+                [
+                  null,
+                  0.35,
+                  10270
+                ]
+              ]
+            },
+            "slug": "malta-income-tax",
+            "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+            "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000 (€10,270; MTCA's table shows €10,275)"
+          },
+          {
+            "name": "QUALIFYING_CHILD_NATIONALITY",
+            "value": true,
+            "slug": "malta-income-tax",
+            "section": "Who gets which table",
+            "quote": "a spouse, the individual, or the individual's spouse must be an EU/EEA national or hold long-term resident status;\nif nobody is an EU/EEA national, the child (or each of the two children) must have been born in Malta and be resident in Malta."
+          },
+          {
+            "name": "PARENT_1_CHILD_35_ACT_FIGURE",
+            "value": 10270,
+            "slug": "malta-income-tax",
+            "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+            "quote": "The Act is the law, so compute with €10,270. Tell the user that MTCA's table shows €10,275"
+          }
+        ],
+        "assumptions": [
+          "Chargeable income excludes income taxed at a final rate (part-time 10%, 15% rent option, property transfers)",
+          "Resident in Malta, not under a special residence programme, no double tax relief",
+          "Social security contributions are not included"
+        ],
+        "skill_anchors_reproduced": [
+          "malta-income-tax Case 1: single, chargeable EUR 31,625 -> tax EUR 4,506.25, balance EUR 1,006.25 after EUR 3,500 paid",
+          "malta-income-tax Case 2: married, two children, EUR 40,000 -> EUR 3,425 (2026) against EUR 5,450 (2025)"
+        ],
+        "notes": [
+          "Return and balance due by 30 June 2027",
+          "MTCA's 2026 table shows a subtraction of EUR 10,275 for this band; the Act (Act III of 2026, article 19) says EUR 10,270, which is used here and gives EUR 5 more tax"
+        ],
+        "defaults_assumed": {
+          "tax_paid": 0
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "84ea4b70aca157aa334a33f7fb63db01cee4d90d6524a1cb962a0d81b18932dd"
+    },
+    {
+      "id": "MT-15",
+      "from": "python-parity",
+      "inputs": {
+        "chargeable_income": 25000,
+        "status": "parent",
+        "resident": true,
+        "children": 0,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "mt_income_tax_2026",
+        "what": "status 'parent' needs at least one child in 'children'; with no child use status 'single'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "chargeable_income": {
+              "type": "number",
+              "description": "EUR, after allowable expenses and capital allowances, and WITHOUT income taxed at a final rate (part-time 10%, rent on the 15% option, property transfers). For a joint return, the couple's combined chargeable income"
+            },
+            "resident": {
+              "type": "boolean",
+              "description": "resident in Malta in the basis year (non-residents are refused)"
+            },
+            "status": {
+              "type": "string",
+              "description": "status in the basis year: single; married_joint (married, living together, joint return, the default for a couple); parent (has custody of, or pays maintenance for, a child not over 18, or not over 23 in full-time education); single_parent_sole_custody (refused for now). Spouses filing separately (art. 49A or 50): run once per spouse as single or parent",
+              "enum": [
+                "single",
+                "married_joint",
+                "parent",
+                "single_parent_sole_custody"
+              ]
+            },
+            "children": {
+              "type": "number",
+              "description": "needed for married_joint and parent: how many children the person or couple had custody of or paid maintenance for, each not over 18, or not over 23 and in full-time education"
+            },
+            "eu_eea_or_long_term_resident": {
+              "type": "boolean",
+              "description": "needed when there are children in basis year 2026: the individual or their spouse is an EU/EEA national or holds long-term resident status"
+            },
+            "children_born_and_resident_in_malta": {
+              "type": "number",
+              "description": "needed only when nobody is an EU/EEA national or long-term resident: how many of those children were born in Malta and are resident in Malta"
+            },
+            "tax_paid": {
+              "type": "number",
+              "description": "EUR already paid for the year: FSS tax deducted by employers plus provisional tax",
+              "default": 0
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the BASIS year: the calendar year the income was earned (2026 income is year of assessment 2027). This engine has figures for basis years 2025 and 2026 only; any other year is refused",
+              "enum": [
+                "2025",
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "chargeable_income",
+            "resident",
+            "status",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "chargeable_income": 31625,
+        "status": "single",
+        "resident": true,
+        "tax_paid": 3500,
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "mt_income_tax_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2025 and 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "e6b949f2154c5d0de2ddb4acf351ed5481656a31935a941a5133308bb1779f97"
+    }
+  ]
+}

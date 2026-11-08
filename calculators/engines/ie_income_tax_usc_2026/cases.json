@@ -1,0 +1,1797 @@
+{
+  "engine": "ie_income_tax_usc_2026",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-07",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 60000,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 12532.82,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 60000,
+          "gross_income_tax": 15200,
+          "tax_credits": 4000,
+          "income_tax": 11200,
+          "usc": 1332.82,
+          "income_tax_plus_usc": 12532.82
+        },
+        "steps": [
+          "Taxable pay = EUR 60,000.00 less pension contribution EUR 0.00 = EUR 60,000.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 15,200.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 11,200.00",
+          "USC on EUR 60,000.00 through the standard bands = EUR 1,332.82",
+          "Income tax + USC = EUR 12,532.82"
+        ],
+        "inputs_used": {
+          "gross_pay": 60000,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "905fb7d1399a77d122547e7c72c90c7961f29c2f50357995cb025dc28df2d52b"
+    },
+    {
+      "id": "IE-0",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 0,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 0,
+          "gross_income_tax": 0,
+          "tax_credits": 4000,
+          "income_tax": 0,
+          "usc": 0,
+          "income_tax_plus_usc": 0
+        },
+        "steps": [
+          "Taxable pay = EUR 0.00 less pension contribution EUR 0.00 = EUR 0.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 0.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 0.00",
+          "USC: total income at or below EUR 13,000.00, so exempt",
+          "Income tax + USC = EUR 0.00"
+        ],
+        "inputs_used": {
+          "gross_pay": 0,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "e6f601d3829f976c71fc3704af7493054974aba3f2d5765408643934d0a4ea89"
+    },
+    {
+      "id": "IE-1",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 12012,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 12012,
+          "gross_income_tax": 2402.4,
+          "tax_credits": 4000,
+          "income_tax": 0,
+          "usc": 0,
+          "income_tax_plus_usc": 0
+        },
+        "steps": [
+          "Taxable pay = EUR 12,012.00 less pension contribution EUR 0.00 = EUR 12,012.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 2,402.40",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 0.00",
+          "USC: total income at or below EUR 13,000.00, so exempt",
+          "Income tax + USC = EUR 0.00"
+        ],
+        "inputs_used": {
+          "gross_pay": 12012,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "c3cd612f8987bf603dcc96fe83e7e16b0a99712e9185663d4226d7fac2a853ac"
+    },
+    {
+      "id": "IE-2",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 13000,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 13000,
+          "gross_income_tax": 2600,
+          "tax_credits": 4000,
+          "income_tax": 0,
+          "usc": 0,
+          "income_tax_plus_usc": 0
+        },
+        "steps": [
+          "Taxable pay = EUR 13,000.00 less pension contribution EUR 0.00 = EUR 13,000.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 2,600.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 0.00",
+          "USC: total income at or below EUR 13,000.00, so exempt",
+          "Income tax + USC = EUR 0.00"
+        ],
+        "inputs_used": {
+          "gross_pay": 13000,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "9f87d85c2de46f69ef8238919e808c8e873aa292be27c668948d8696d4c69203"
+    },
+    {
+      "id": "IE-3",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 13001,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 79.84,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 13001,
+          "gross_income_tax": 2600.2,
+          "tax_credits": 4000,
+          "income_tax": 0,
+          "usc": 79.84,
+          "income_tax_plus_usc": 79.84
+        },
+        "steps": [
+          "Taxable pay = EUR 13,001.00 less pension contribution EUR 0.00 = EUR 13,001.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 2,600.20",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 0.00",
+          "USC on EUR 13,001.00 through the standard bands = EUR 79.84",
+          "Income tax + USC = EUR 79.84"
+        ],
+        "inputs_used": {
+          "gross_pay": 13001,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "04cfd4a5f91edca2a11eda2ce4b8deb804923d4cc4477442dd923783d91e2c2a"
+    },
+    {
+      "id": "IE-4",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 28700,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 2133.82,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 28700,
+          "gross_income_tax": 5740,
+          "tax_credits": 4000,
+          "income_tax": 1740,
+          "usc": 393.82,
+          "income_tax_plus_usc": 2133.82
+        },
+        "steps": [
+          "Taxable pay = EUR 28,700.00 less pension contribution EUR 0.00 = EUR 28,700.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 5,740.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 1,740.00",
+          "USC on EUR 28,700.00 through the standard bands = EUR 393.82",
+          "Income tax + USC = EUR 2,133.82"
+        ],
+        "inputs_used": {
+          "gross_pay": 28700,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "4595704fdf305ac9e41dcd81a9e9cc94545621e7cd73e4b10074720b7582cb1f"
+    },
+    {
+      "id": "IE-5",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 44000,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 5652.82,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 44000,
+          "gross_income_tax": 8800,
+          "tax_credits": 4000,
+          "income_tax": 4800,
+          "usc": 852.82,
+          "income_tax_plus_usc": 5652.82
+        },
+        "steps": [
+          "Taxable pay = EUR 44,000.00 less pension contribution EUR 0.00 = EUR 44,000.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 8,800.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 4,800.00",
+          "USC on EUR 44,000.00 through the standard bands = EUR 852.82",
+          "Income tax + USC = EUR 5,652.82"
+        ],
+        "inputs_used": {
+          "gross_pay": 44000,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "1c2ba5b7ce2812bb6865c6a648b79860514932c3e8551cb46091b053aef4c97a"
+    },
+    {
+      "id": "IE-6",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 44001,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 5653.25,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 44001,
+          "gross_income_tax": 8800.4,
+          "tax_credits": 4000,
+          "income_tax": 4800.4,
+          "usc": 852.85,
+          "income_tax_plus_usc": 5653.25
+        },
+        "steps": [
+          "Taxable pay = EUR 44,001.00 less pension contribution EUR 0.00 = EUR 44,001.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 8,800.40",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 4,800.40",
+          "USC on EUR 44,001.00 through the standard bands = EUR 852.85",
+          "Income tax + USC = EUR 5,653.25"
+        ],
+        "inputs_used": {
+          "gross_pay": 44001,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "8a94dcedf05ae9ee5901dabd311763de461ae0aad3bd5fbb6e38e38628980d7b"
+    },
+    {
+      "id": "IE-7",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 70044,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 16851.74,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 70044,
+          "gross_income_tax": 19217.6,
+          "tax_credits": 4000,
+          "income_tax": 15217.6,
+          "usc": 1634.14,
+          "income_tax_plus_usc": 16851.74
+        },
+        "steps": [
+          "Taxable pay = EUR 70,044.00 less pension contribution EUR 0.00 = EUR 70,044.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 19,217.60",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 15,217.60",
+          "USC on EUR 70,044.00 through the standard bands = EUR 1,634.14",
+          "Income tax + USC = EUR 16,851.74"
+        ],
+        "inputs_used": {
+          "gross_pay": 70044,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "1e87270352be02bf27a955ff7590d999d6351446cfa1b9b9300e8febfeedbb52"
+    },
+    {
+      "id": "IE-8",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 70045,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 16852.22,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 70045,
+          "gross_income_tax": 19218,
+          "tax_credits": 4000,
+          "income_tax": 15218,
+          "usc": 1634.22,
+          "income_tax_plus_usc": 16852.22
+        },
+        "steps": [
+          "Taxable pay = EUR 70,045.00 less pension contribution EUR 0.00 = EUR 70,045.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 19,218.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 15,218.00",
+          "USC on EUR 70,045.00 through the standard bands = EUR 1,634.22",
+          "Income tax + USC = EUR 16,852.22"
+        ],
+        "inputs_used": {
+          "gross_pay": 70045,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "e0b0a2b0686b5f97812007be922f4293c4871c94ec2bc40670b57fb474241e6a"
+    },
+    {
+      "id": "IE-9",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 100000,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 31230.62,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 100000,
+          "gross_income_tax": 31200,
+          "tax_credits": 4000,
+          "income_tax": 27200,
+          "usc": 4030.62,
+          "income_tax_plus_usc": 31230.62
+        },
+        "steps": [
+          "Taxable pay = EUR 100,000.00 less pension contribution EUR 0.00 = EUR 100,000.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 31,200.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 27,200.00",
+          "USC on EUR 100,000.00 through the standard bands = EUR 4,030.62",
+          "Income tax + USC = EUR 31,230.62"
+        ],
+        "inputs_used": {
+          "gross_pay": 100000,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "3aaed001076ef000d01e463e2631f51f8ebce163a4d9cf5cd4a6cdb1dfe8948c"
+    },
+    {
+      "id": "IE-10",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 33333.33,
+        "status": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 3199.49,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 33333.33,
+          "gross_income_tax": 6666.67,
+          "tax_credits": 4000,
+          "income_tax": 2666.67,
+          "usc": 532.82,
+          "income_tax_plus_usc": 3199.49
+        },
+        "steps": [
+          "Taxable pay = EUR 33,333.33 less pension contribution EUR 0.00 = EUR 33,333.33",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 6,666.67",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 2,666.67",
+          "USC on EUR 33,333.33 through the standard bands = EUR 532.82",
+          "Income tax + USC = EUR 3,199.49"
+        ],
+        "inputs_used": {
+          "gross_pay": 33333.33,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "f42623a068ae26d43d772862b3d8a4e066ff24ffd54c0cbfb7f8892c9a854de2"
+    },
+    {
+      "id": "IE-example1",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 60000,
+        "status": "single",
+        "employee_pension_contribution": 3000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_income_tax_usc_2026",
+        "headline": {
+          "label": "Income tax + USC for 2026",
+          "value": 11332.82,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_pay": 57000,
+          "gross_income_tax": 14000,
+          "tax_credits": 4000,
+          "income_tax": 10000,
+          "usc": 1332.82,
+          "income_tax_plus_usc": 11332.82
+        },
+        "steps": [
+          "Taxable pay = EUR 60,000.00 less pension contribution EUR 3,000.00 = EUR 57,000.00",
+          "Income tax before credits = 20% up to the EUR 44,000.00 cut-off, 40% above = EUR 14,000.00",
+          "Less personal and PAYE credits EUR 4,000.00 = income tax EUR 10,000.00",
+          "USC on EUR 60,000.00 through the standard bands = EUR 1,332.82",
+          "Income tax + USC = EUR 11,332.82"
+        ],
+        "inputs_used": {
+          "gross_pay": 60000,
+          "employee_pension_contribution": 3000,
+          "status": "single",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "assumptions": [
+          "Full-year cumulative basis",
+          "Under 70, no full medical card (standard USC)",
+          "PRSI not included (not asked)"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-payroll Example 1: EUR 5,000/month, EUR 4,750 taxable -> income tax EUR 833.33, USC EUR 111.07 a month"
+        ],
+        "notes": [],
+        "defaults_assumed": {
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "375d5e9e769617f45684ef3e74f2a23173ead29f53d04984e28fe20ec2f6991f"
+    },
+    {
+      "id": "IE-no-status",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 60000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "ie_income_tax_usc_2026",
+        "what": "missing input 'status'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "gross_pay": {
+              "type": "number",
+              "description": "EUR"
+            },
+            "employee_pension_contribution": {
+              "type": "number",
+              "description": "EUR (relieved for income tax, not USC)",
+              "default": 0
+            },
+            "status": {
+              "type": "string",
+              "description": "single, married, etc. (only single without children is computed; others are refused)"
+            },
+            "age_70_or_full_medical_card": {
+              "type": "boolean",
+              "description": "aged 70+ or holds a full medical card",
+              "default": false
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "gross_pay",
+            "status",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "IE-married",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 60000,
+        "status": "married",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ie_income_tax_usc_2026",
+        "what": "cut-off and credits for status 'married'",
+        "why": "Only single without children is implemented.",
+        "partial": {},
+        "inputs_used": {
+          "gross_pay": 60000,
+          "employee_pension_contribution": 0,
+          "status": "married",
+          "age_70_or_full_medical_card": false
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "employee_pension_contribution": 0,
+          "age_70_or_full_medical_card": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "64a8c6771e5842a33393502556bf94f46a6776104bd1a4aa7f8b90514cfa7380"
+    },
+    {
+      "id": "IE-70",
+      "from": "python-parity",
+      "inputs": {
+        "gross_pay": 60000,
+        "status": "single",
+        "age_70_or_full_medical_card": true,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ie_income_tax_usc_2026",
+        "what": "USC reduced rates engine",
+        "why": "Reduced USC rates are in the skill but not implemented in this engine.",
+        "partial": {},
+        "inputs_used": {
+          "gross_pay": 60000,
+          "employee_pension_contribution": 0,
+          "status": "single",
+          "age_70_or_full_medical_card": true
+        },
+        "constants_used": [
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income Tax standard rate / higher rate | 20% / 40% | 2026"
+          },
+          {
+            "name": "CUTOFF_SINGLE",
+            "value": 44000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate cut-off point: single, widowed or surviving civil partner, no qualifying children | EUR 44,000"
+          },
+          {
+            "name": "SINGLE_PERSON_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit | EUR 2,000 / EUR 4,000"
+          },
+          {
+            "name": "EMPLOYEE_PAYE_CREDIT",
+            "value": 2000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "Employee (PAYE) Tax Credit | EUR 2,000"
+          },
+          {
+            "name": "USC_BANDS",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                16688,
+                0.02
+              ],
+              [
+                41344,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC bands (standard) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance"
+          },
+          {
+            "name": "USC_EXEMPT_LIMIT",
+            "value": 13000,
+            "slug": "ie-payroll",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC exemption: total income at or below | EUR 13,000 (above it, USC on all income)"
+          }
+        ],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "employee_pension_contribution": 0
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "5190911264bf5d36cdafc1a7cb427b2b01469c9960fddfe5604c5e9caacecd48"
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "gross_pay": 60000,
+        "status": "single",
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ie_income_tax_usc_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "4dce8507cb5d74649c223c5301ede15f50c83cb09f1ce7a1a025f19923076092"
+    }
+  ]
+}

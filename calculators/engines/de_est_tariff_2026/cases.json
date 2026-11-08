@@ -1,0 +1,2403 @@
+{
+  "engine": "de_est_tariff_2026",
+  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-08",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 50000,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 10548,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 50000,
+          "zone": 3,
+          "income_tax": 10548
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 50,000.00",
+          "Grundtarif: zone 3 formula of § 32a(1) EStG gives EUR 10,548.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 50000,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "630a68ccbf1d13ec9e7015c953b3bd3181f4affeb29696d3a15e8427f0596b22"
+    },
+    {
+      "id": "DE-0",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 0,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 0,
+          "zone": 1,
+          "income_tax": 0
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 0.00",
+          "Grundtarif: zone 1 formula of § 32a(1) EStG gives EUR 0.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 0,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "6862dda54363b047526b6c0f86370f74c673c9786e2984ac000ab4906283249c"
+    },
+    {
+      "id": "DE-1",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 12348,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 12348,
+          "zone": 1,
+          "income_tax": 0
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 12,348.00",
+          "Grundtarif: zone 1 formula of § 32a(1) EStG gives EUR 0.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 12348,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "eb9821fe21ed197fa3e7c481670ff9a2011cc86649bf03cdcd4feabc7e2a8d50"
+    },
+    {
+      "id": "DE-2",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 12348.99,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 12348,
+          "zone": 2,
+          "income_tax": 0
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 12,348.00",
+          "Grundtarif: zone 2 formula of § 32a(1) EStG gives EUR 0.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 12348.99,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "7a3ed8ff2f776e4a3caeac1cbc86bce13382687bbad916b94915b67789f6a311"
+    },
+    {
+      "id": "DE-3",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 12349,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 12349,
+          "zone": 2,
+          "income_tax": 0
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 12,349.00",
+          "Grundtarif: zone 2 formula of § 32a(1) EStG gives EUR 0.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 12349,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "1943f555836f64cbacc9d3a17f20b235d2d2353a43dae47169b0990b16903723"
+    },
+    {
+      "id": "DE-4",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 15000,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 435,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 15000,
+          "zone": 2,
+          "income_tax": 435
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 15,000.00",
+          "Grundtarif: zone 2 formula of § 32a(1) EStG gives EUR 435.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 15000,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "b75b137ef48b67d0a46bb69e318f8595b53a31b7cba59f75d5389e9f7af12950"
+    },
+    {
+      "id": "DE-5",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 17799,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 1034,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 17799,
+          "zone": 2,
+          "income_tax": 1034
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 17,799.00",
+          "Grundtarif: zone 2 formula of § 32a(1) EStG gives EUR 1,034.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 17799,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "fcf0ecd791924e4ee0b98159b5fb6a9af3256668057bbf005131c1bf59410ce5"
+    },
+    {
+      "id": "DE-6",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 17800,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 1035,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 17800,
+          "zone": 3,
+          "income_tax": 1035
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 17,800.00",
+          "Grundtarif: zone 3 formula of § 32a(1) EStG gives EUR 1,035.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 17800,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "a19c8774a3a1b473dfe6bed988a49f0d96ce8c5cc4d4ec49afe5e62d1ba835d2"
+    },
+    {
+      "id": "DE-7",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 49844,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 10493,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 49844,
+          "zone": 3,
+          "income_tax": 10493
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 49,844.00",
+          "Grundtarif: zone 3 formula of § 32a(1) EStG gives EUR 10,493.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 49844,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "36f90f8f50a880b3a676466f6a21e1e898f9ab6200f392b4753f1a00626a290f"
+    },
+    {
+      "id": "DE-8",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 69878,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 18213,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 69878,
+          "zone": 3,
+          "income_tax": 18213
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 69,878.00",
+          "Grundtarif: zone 3 formula of § 32a(1) EStG gives EUR 18,213.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 69878,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "3016f3221317c65ed4db39070c639320f7b7f615d8c2d71d59e1a49ba93d3ee4"
+    },
+    {
+      "id": "DE-9",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 69879,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 18213,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 69879,
+          "zone": 4,
+          "income_tax": 18213
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 69,879.00",
+          "Grundtarif: zone 4 formula of § 32a(1) EStG gives EUR 18,213.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 69879,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "70dab52b2312762608bf1553ef11d87756172434444c1b3184b9b6c85b29b10c"
+    },
+    {
+      "id": "DE-10",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 79964,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 22449,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 79964,
+          "zone": 4,
+          "income_tax": 22449
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 79,964.00",
+          "Grundtarif: zone 4 formula of § 32a(1) EStG gives EUR 22,449.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 79964,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "c206fc8dbfe1ccac97717bd6acfc66e03e816f0ad57537a1a25859e9348f38d1"
+    },
+    {
+      "id": "DE-11",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 277825,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 105550,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 277825,
+          "zone": 4,
+          "income_tax": 105550
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 277,825.00",
+          "Grundtarif: zone 4 formula of § 32a(1) EStG gives EUR 105,550.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 277825,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "ab161f562f5aae63b0e68e9628728ee9694bff6534598f53e85eac341c6c89d3"
+    },
+    {
+      "id": "DE-12",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 277826,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 105551,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 277826,
+          "zone": 5,
+          "income_tax": 105551
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 277,826.00",
+          "Grundtarif: zone 5 formula of § 32a(1) EStG gives EUR 105,551.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 277826,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "2ebd43088feec8f6c6ad37234d5a0232a142fd2aed0b536f4587b852538042df"
+    },
+    {
+      "id": "DE-13",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 1000000,
+        "assessment": "single",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, Grundtarif), before Soli and church tax",
+          "value": 430529,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 1000000,
+          "zone": 5,
+          "income_tax": 430529
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 1,000,000.00",
+          "Grundtarif: zone 5 formula of § 32a(1) EStG gives EUR 430,529.00 (rounded down)"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 1000000,
+          "assessment": "single"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "0fd3c2e7d919223429a218c46b1ecece38af328420a5bbc7ecca25420107d5d5"
+    },
+    {
+      "id": "DE-joint-0",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 24696,
+        "assessment": "joint",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, splitting), before Soli and church tax",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 24696,
+          "zone": 1,
+          "income_tax": 0
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 24,696.00",
+          "Splitting: twice the tariff on half the joint zvE (EUR 12,348.00, zone 1) = EUR 0.00"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 24696,
+          "assessment": "joint"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "8a1d373591d22292dcc02f12796c63e2df8e682492f0605a4785215285cf62f9"
+    },
+    {
+      "id": "DE-joint-1",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 24697,
+        "assessment": "joint",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, splitting), before Soli and church tax",
+          "value": 0,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 24697,
+          "zone": 2,
+          "income_tax": 0
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 24,697.00",
+          "Splitting: twice the tariff on half the joint zvE (EUR 12,348.50, zone 2) = EUR 0.00"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 24697,
+          "assessment": "joint"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "daace497891a07d8f877abdc0b7bbf73135084d11b0eb90b294b8e8aa25c1e27"
+    },
+    {
+      "id": "DE-joint-2",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 35599,
+        "assessment": "joint",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, splitting), before Soli and church tax",
+          "value": 2068,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 35599,
+          "zone": 3,
+          "income_tax": 2068
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 35,599.00",
+          "Splitting: twice the tariff on half the joint zvE (EUR 17,799.50, zone 3) = EUR 2,068.00"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 35599,
+          "assessment": "joint"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "dd05a70c2756d482058c8ced41c41632440e412de751166c4c949d8e244b2660"
+    },
+    {
+      "id": "DE-joint-3",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 50000.7,
+        "assessment": "joint",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, splitting), before Soli and church tax",
+          "value": 5700,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 50000,
+          "zone": 3,
+          "income_tax": 5700
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 50,000.00",
+          "Splitting: twice the tariff on half the joint zvE (EUR 25,000.00, zone 3) = EUR 5,700.00"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 50000.7,
+          "assessment": "joint"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "4ec384dd141890828cc5b1a3559a1023fc7a4011dd0e86af551775009767c404"
+    },
+    {
+      "id": "DE-joint-4",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 100000,
+        "assessment": "joint",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, splitting), before Soli and church tax",
+          "value": 21096,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 100000,
+          "zone": 3,
+          "income_tax": 21096
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 100,000.00",
+          "Splitting: twice the tariff on half the joint zvE (EUR 50,000.00, zone 3) = EUR 21,096.00"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 100000,
+          "assessment": "joint"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "81ca2077c619ccd4bf47646b97830920aabe096643bebc1a3eddaa6c8098de31"
+    },
+    {
+      "id": "DE-joint-5",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 600000,
+        "assessment": "joint",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "de_est_tariff_2026",
+        "headline": {
+          "label": "Income tax 2026 (§ 32a EStG, splitting), before Soli and church tax",
+          "value": 231058,
+          "currency": "EUR"
+        },
+        "lines": {
+          "zve": 600000,
+          "zone": 5,
+          "income_tax": 231058
+        },
+        "steps": [
+          "zvE rounded down to whole euros = EUR 600,000.00",
+          "Splitting: twice the tariff on half the joint zvE (EUR 300,000.00, zone 5) = EUR 231,058.00"
+        ],
+        "inputs_used": {
+          "taxable_income_zve": 600000,
+          "assessment": "joint"
+        },
+        "constants_used": [
+          {
+            "name": "ZONE1_GRUNDFREIBETRAG",
+            "value": 12348,
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Tariff zone 1 ... EUR 0 to 12,348: no tax"
+          },
+          {
+            "name": "ZONE2",
+            "value": {
+              "top": 17799,
+              "a": "914.51",
+              "b": "1400"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 12,349 to 17,799: (914.51 × y + 1,400) × y, y = (x − 12,348) / 10,000"
+          },
+          {
+            "name": "ZONE3",
+            "value": {
+              "top": 69878,
+              "a": "173.10",
+              "b": "2397",
+              "c": "1034.87"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 17,800 to 69,878: (173.10 × z + 2,397) × z + 1,034.87, z = (x − 17,799) / 10,000"
+          },
+          {
+            "name": "ZONE4",
+            "value": {
+              "top": 277825,
+              "r": "0.42",
+              "c": "11135.63"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "EUR 69,879 to 277,825: 0.42 × x − 11,135.63"
+          },
+          {
+            "name": "ZONE5",
+            "value": {
+              "r": "0.45",
+              "c": "19470.38"
+            },
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "From EUR 277,826: 0.45 × x − 19,470.38"
+          },
+          {
+            "name": "ROUNDING",
+            "value": "floor x and tax to whole euros",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income x and the tax are both rounded down to whole euros"
+          },
+          {
+            "name": "SPLITTING",
+            "value": "2 x tariff(x/2)",
+            "slug": "germany-income-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5)"
+          }
+        ],
+        "assumptions": [
+          "zvE is given; no deductions computed here"
+        ],
+        "skill_anchors_reproduced": [
+          "germany-income-tax Example 1: zvE EUR 49,844 -> EUR 10,493",
+          "Example 2: zvE EUR 79,964 -> EUR 22,449"
+        ],
+        "notes": [],
+        "defaults_assumed": {},
+        "tax_year": "2026"
+      },
+      "receipt_id": "4c4a7e7cf84acc69ed7729fc79369819a8adc43195a04f0df60b274ba031bf9f"
+    },
+    {
+      "id": "DE-no-assessment",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 50000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "de_est_tariff_2026",
+        "what": "missing input 'assessment'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "taxable_income_zve": {
+              "type": "number",
+              "description": "EUR"
+            },
+            "assessment": {
+              "type": "string",
+              "description": "single (Grundtarif) or joint (splitting)",
+              "enum": [
+                "single",
+                "joint"
+              ]
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "taxable_income_zve",
+            "assessment",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DE-bad",
+      "from": "python-parity",
+      "inputs": {
+        "taxable_income_zve": 50000,
+        "assessment": "married",
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "de_est_tariff_2026",
+        "what": "input 'assessment' must be one of ['single', 'joint']",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "taxable_income_zve": {
+              "type": "number",
+              "description": "EUR"
+            },
+            "assessment": {
+              "type": "string",
+              "description": "single (Grundtarif) or joint (splitting)",
+              "enum": [
+                "single",
+                "joint"
+              ]
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2026 only; any other year is refused",
+              "enum": [
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "taxable_income_zve",
+            "assessment",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "taxable_income_zve": 50000,
+        "assessment": "single",
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "de_est_tariff_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "c6d44f34f15f0f02d02d1ddffc8c838f61cd097be01ea127a349669bd6a745f2"
+    }
+  ]
+}
