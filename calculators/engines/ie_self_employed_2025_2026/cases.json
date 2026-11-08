@@ -1,0 +1,291 @@
+{
+  "engine": "ie_self_employed_2025_2026",
+  "source_commit": "9931ceb6",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-IE-SE-01",
+      "from": "python-parity",
+      "inputs": {
+        "tax_year": "2025",
+        "status": "single",
+        "trading_profit": 36500
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ie_self_employed_2025_2026",
+        "headline": {
+          "label": "Income tax + USC + PRSI for 2025",
+          "value": 5446.63,
+          "currency": "EUR"
+        },
+        "lines": {
+          "taxable_income": 36500,
+          "rate_band": 44000,
+          "gross_income_tax": 7300,
+          "tax_credits": 4000,
+          "income_tax": 3300,
+          "usc": 641,
+          "prsi_class_s": 1505.63,
+          "total_liability": 5446.63,
+          "tax_deducted_at_source": 0,
+          "net_liability": 5446.63,
+          "preliminary_tax_paid": 0,
+          "balance_due": 5446.63,
+          "preliminary_tax": {
+            "year": "2026",
+            "previous_year_100": 5446.63,
+            "minimum": 5446.63,
+            "due": "31 October 2026, or 18 November 2026 if the 2025 return is filed and the 2025 balance and 2026 preliminary tax are paid through ROS"
+          },
+          "pay_by_return_date": 10893.26
+        },
+        "steps": [
+          "Taxable income = trading profit EUR 36,500.00 = EUR 36,500.00",
+          "Rate band EUR 44,000.00: 20% up to it, 40% above = EUR 7,300.00",
+          "Credits: personal EUR 2,000.00 + earned income EUR 2,000.00 = EUR 4,000.00; income tax EUR 3,300.00",
+          "USC on EUR 36,500.00 (after capital allowances, before pension) = EUR 641.00",
+          "PRSI Class S: EUR 36,500.00 x 4.125% = EUR 1,505.63, at least EUR 650.00 = EUR 1,505.63",
+          "Total 2025 liability = EUR 5,446.63",
+          "Balance for 2025 after preliminary tax paid EUR 0.00 = EUR 5,446.63",
+          "Preliminary tax for 2026: 100% of 2025 = EUR 5,446.63; minimum EUR 5,446.63, due 31 October 2026, or 18 November 2026 if the 2025 return is filed and the 2025 balance and 2026 preliminary tax are paid through ROS"
+        ],
+        "inputs_used": {
+          "tax_year": "2025",
+          "status": "single",
+          "trading_profit": 36500,
+          "capital_allowances": 0,
+          "other_income": 0,
+          "pension_contributions": 0,
+          "age_65_plus": false,
+          "medical_card": false,
+          "home_carer_credit": false,
+          "preliminary_tax_paid": 0,
+          "pays_by_direct_debit": false
+        },
+        "constants_used": [
+          {
+            "name": "BAND_SINGLE",
+            "value": 44000,
+            "slug": "ie-income-tax-form11",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate band, single or widowed, no qualifying children (s.15, Table Part 1) | first EUR 44,000 at 20%, balance at 40% | 2025 and 2026"
+          },
+          {
+            "name": "INCOME_TAX_RATES",
+            "value": [
+              0.2,
+              0.4
+            ],
+            "slug": "ie-income-tax-form11",
+            "section": "Rates, bands and thresholds",
+            "quote": "Standard rate band, single or widowed, no qualifying children (s.15, Table Part 1) | first EUR 44,000 at 20%, balance at 40%"
+          },
+          {
+            "name": "PERSONAL_CREDITS",
+            "value": {
+              "single": 2000,
+              "married": 4000
+            },
+            "slug": "ie-income-tax-form11",
+            "section": "Rates, bands and thresholds",
+            "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit (s.461) | EUR 2,000 / EUR 4,000 | 2025 and 2026"
+          },
+          {
+            "name": "EARNED_INCOME_CREDIT",
+            "value": {
+              "max": 2000,
+              "rate": 0.2
+            },
+            "slug": "ie-income-tax-form11",
+            "section": "Rates, bands and thresholds",
+            "quote": "Earned Income Tax Credit (s.472AB) | lower of EUR 2,000 or 20% of qualifying earned income; with the Employee credit, the two together cannot exceed EUR 2,000 | 2025 and 2026"
+          },
+          {
+            "name": "EARNED_INCOME_CREDIT_SCOPE",
+            "value": true,
+            "slug": "ie-income-tax-form11",
+            "section": "The taxable base",
+            "quote": "Then subtract credits; credits reduce tax, not income ... The Earned Income Credit is for self-employed earned income and a proprietary director's pay, not rent or interest."
+          },
+          {
+            "name": "USC_PRSI_BEFORE_PENSION",
+            "value": true,
+            "slug": "ie-income-tax-form11",
+            "section": "The taxable base",
+            "quote": "USC: on total income after capital allowances (active traders) but before pension contributions; the surcharge tests non-PAYE income only.\nPRSI Class S: on gross income after capital allowances, before pension contributions; minimum EUR 650"
+          },
+          {
+            "name": "USC_BANDS_2025",
+            "value": [
+              [
+                12012,
+                0.005
+              ],
+              [
+                27382,
+                0.02
+              ],
+              [
+                70044,
+                0.03
+              ],
+              [
+                null,
+                0.08
+              ]
+            ],
+            "slug": "ie-income-tax-form11",
+            "section": "Rates, bands and thresholds",
+            "quote": "USC for the 2025 return due now | 0.5% on first EUR 12,012; 2% from EUR 12,012 to EUR 27,382; 3% to EUR 70,044; 8% on the balance | 2025"
+          },
+          {
+            "name": "USC_EXEMPTION_LIMIT_2026",
+            "value": 13000,
+            "slug": "ie-usc",
+            "section": "Rates, bands and thresholds",
+            "quote": "Exemption: no USC if aggregate income does not exceed (s.531AM(2)); above it, USC on the full income | EUR 13,000 | 2026"
+          },
+          {
+            "name": "USC_MEDICAL_CARD_2026",
+            "value": {
+              "limit": 60000,
+              "standard_up_to": 28700,
+              "rate": 0.02
+            },
+            "slug": "ie-usc",
+            "section": "Rates, bands and thresholds",
+            "quote": "Reduced rate, full medical card holder under 70, aggregate income EUR 60,000 or less (s.531AN(3)) | Standard bands up to EUR 28,700, then 2% at most on the excess (same result as the reduced rates) | 2026\nAbove EUR 60,000 the standard rates apply to all income, not just the excess"
+          },
+          {
+            "name": "USC_NON_PAYE_SURCHARGE_2026",
+            "value": {
+              "over": 100000,
+              "rate": 0.03
+            },
+            "slug": "ie-usc",
+            "section": "Rates, bands and thresholds",
+            "quote": "Surcharge on relevant (non-PAYE) income over EUR 100,000 (s.531AN(2)) | 3% on the excess, so 11% in total on it | 2026"
+          },
+          {
+            "name": "CLASS_S_2025",
+            "value": {
+              "rate": 0.04125,
+              "minimum": 650
+            },
+            "slug": "ie-income-tax-form11",
+            "section": "Rates, bands and thresholds",
+            "quote": "PRSI Class S on 2025 income | 4.125% blended, minimum EUR 650 | 2025"
+          },
+          {
+            "name": "CLASS_S_FLOOR_2026",
+            "value": 5000,
+            "slug": "ie-prsi-class-s",
+            "section": "Rates, bands and thresholds",
+            "quote": "Income floor: below this, no Class S (total before capital allowances) | under EUR 5,000 | 2026"
+          },
+          {
+            "name": "CLASS_S_FLOOR_TEST",
+            "value": true,
+            "slug": "ie-prsi-class-s",
+            "section": "Who this applies to",
+            "quote": "a person whose total reckonable income, emoluments and earnings, before capital allowances, is below EUR 5,000"
+          },
+          {
+            "name": "CLASS_S_RECKONABLE_INCOME",
+            "value": true,
+            "slug": "ie-prsi-class-s",
+            "section": "The taxable base",
+            "quote": "Reckonable income is the aggregate income from all sources for the contribution year, as estimated under the Income Tax Acts, after capital allowances. It leaves out reckonable earnings and reckonable emoluments\nso each spouse or civil partner's Class S is worked out on their own income"
+          },
+          {
+            "name": "PRELIMINARY_TAX_TESTS_2026",
+            "value": {
+              "current": 0.9,
+              "preceding": 1,
+              "pre_preceding": 1.05
+            },
+            "slug": "ie-preliminary-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Safe harbour 1: current year | 90% of the income tax payable for 2026 | 2026\nSafe harbour 2: preceding year | 100% of the income tax payable for 2025 | 2026\nSafe harbour 3: pre-preceding year, direct debit payers only | 105% of the income tax payable for 2024; not available if that was nil"
+          },
+          {
+            "name": "PRELIMINARY_TAX_WORKING_RULE",
+            "value": true,
+            "slug": "ie-preliminary-tax",
+            "section": "The taxable base",
+            "quote": "Working rule. For each option: income tax + USC + PRSI for that year, after credits and after tax deducted at source."
+          },
+          {
+            "name": "PRELIMINARY_TAX_DUE_2026",
+            "value": "2026-10-31",
+            "slug": "ie-preliminary-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "Preliminary tax due date (not direct debit) | 31 October of the tax year: 31 October 2026 for 2026 | 2026\nROS extension, 2025 Form 11 balance and 2026 preliminary tax | Wednesday 18 November 2026, only if the person both pays and files through ROS | 2026"
+          },
+          {
+            "name": "PRELIMINARY_TAX_SHORTFALL_2026",
+            "value": true,
+            "slug": "ie-preliminary-tax",
+            "section": "Penalties and interest",
+            "quote": "The whole 2026 income tax (with USC and PRSI) is treated as due on 31 October 2026 if (a) preliminary tax was not paid, (b) it was less than the lowest test that applies, or (c) it was paid after 31 October 2026 (s.959AO(3))."
+          }
+        ],
+        "assumptions": [
+          "Irish resident, an active sole trader, aged under 65, insured in Ireland (no A1 certificate for another country)",
+          "Only the personal, single person child carer, employee and earned income credits; no other credits or reliefs (rent, medical expenses, Home Carer, HIER)",
+          "Jointly assessed if married or in a civil partnership; the spouse's own USC and PRSI on their salary are deducted by their employer and not included",
+          "Amounts read to the cent; each charge rounded to the cent, half up"
+        ],
+        "skill_anchors_reproduced": [
+          "ie-income-tax-form11 Example 1: single, profit EUR 60,000 (2026) -> income tax EUR 11,200, USC EUR 1,332.82, PRSI EUR 2,542.50, total EUR 15,075.32",
+          "ie-income-tax-form11 Example 2: profit EUR 93,500 after capital allowances, rent EUR 12,000, PRSA EUR 8,000 (2026) -> income tax EUR 26,200, USC EUR 4,635.62, PRSI EUR 4,470.56, total EUR 35,306.18",
+          "ie-usc Example 1: income for USC EUR 56,000 -> USC EUR 1,212.82",
+          "ie-prsi-class-s Example 1: reckonable income EUR 80,000 (2026) -> Class S EUR 3,390.00",
+          "ie-prsi-class-s Example 2: 2025 reckonable income EUR 14,000 -> Class S EUR 650 (minimum)",
+          "ie-preliminary-tax Example 1: 2025 liability EUR 18,400, 2026 estimate EUR 21,000 -> minimum EUR 18,400, pay EUR 20,800",
+          "ie-preliminary-tax Example 2: direct debit, 2024 EUR 12,000, 2025 EUR 30,000, 2026 EUR 15,000 -> minimum EUR 12,600"
+        ],
+        "notes": [
+          "The 90% test was not used: give next_year_liability_estimate (run this engine for 2026). If the estimate turns out low, that test fails.",
+          "If 2026 preliminary tax is not paid by the due date, or is less than the lowest test, the whole 2026 liability is treated as due on 31 October 2026 and interest runs from then.",
+          "The skill states the 2025 USC bands but no 2025 exemption limit or non-PAYE surcharge, and the PRSI floor for 2026 only. This 2025 figure is given only because income is above EUR 13,000, non-PAYE income is not above EUR 100,000 and income is at least EUR 5,000, where those rules cannot change it."
+        ],
+        "defaults_assumed": {
+          "capital_allowances": 0,
+          "other_income": 0,
+          "pension_contributions": 0,
+          "age_65_plus": false,
+          "medical_card": false,
+          "home_carer_credit": false,
+          "preliminary_tax_paid": 0,
+          "pays_by_direct_debit": false
+        },
+        "tax_year": "2025"
+      },
+      "receipt_id": "de31c2d32d7474831beafcab7f370f72bbcd1105f5bc516db19c65e8af4edcfc"
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "tax_year": "2019",
+        "status": "single",
+        "trading_profit": 36500
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ie_self_employed_2025_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2025 and 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "5e651fa25e4fd277b660b094a97077f6d5258d03727f9f5510ca6917e350fcef"
+    }
+  ]
+}

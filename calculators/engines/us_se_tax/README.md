@@ -4,7 +4,7 @@ US self-employment tax (Schedule SE regular method) for tax year 2025 or 2026: 9
 
 Jurisdiction US. Tax years 2025 and 2026. Engine version 1.2.0.
 
-This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/us-se-tax.ts` in the OpenAccountants platform at commit `42416e20`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
+This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/us-se-tax.ts` in the OpenAccountants platform at commit `9931ceb6`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
 
 ## Files
 
@@ -88,4 +88,4 @@ The platform's tests recompute these from the skills' own worked examples (`work
 
 Code (`index.mjs`, `index.test.mjs`, `source/`): AGPL-3.0-only, like every calculator in this repository. Figures and wording in `rules.json`: the OpenAccountants Guide License v1.0, like the skills. See [LICENSING.md](../../../LICENSING.md).
 
-Source commit: `42416e20` (OpenAccountants platform, `src/lib/engines`).
+Source commit: `9931ceb6` (OpenAccountants platform, `src/lib/engines`).

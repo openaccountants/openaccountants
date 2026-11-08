@@ -1,0 +1,527 @@
+{
+  "engine": "ie_self_employed_2025_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/ie_self_employed_2025_2026",
+  "generated_from": "src/lib/engines/ie-self-employed-2025-2026.ts",
+  "source_commit": "9931ceb6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "ie_self_employed_2025_2026",
+    "version": "1.0.0",
+    "jurisdiction": "IE",
+    "tax_years": [
+      "2025",
+      "2026"
+    ],
+    "summary": "Ireland, self-employed sole trader, tax year 2025 or 2026: income tax (bands, personal, earned income and employee credits, pension relief), USC, PRSI Class S, the Form 11 balance, and the minimum preliminary tax for the next year (lowest of 90% of next year, 100% of this year, 105% of the year before for direct debit).",
+    "facts": {
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2025",
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2025 and 2026 only; any other year is refused"
+      },
+      "status": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "single",
+          "married_one_income",
+          "married_two_incomes",
+          "single_parent"
+        ],
+        "description": "single (not widowed); single_parent (single and qualifies for the Single Person Child Carer Credit); married_one_income (married or civil partners, jointly assessed, the spouse has no income); married_two_incomes (jointly assessed, the spouse has a PAYE salary)"
+      },
+      "trading_profit": {
+        "type": "number",
+        "required": true,
+        "description": "EUR, this person's adjusted Case I or II trading profit for the year after capital allowances, before pension contributions (an active sole trader)"
+      },
+      "capital_allowances": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "EUR capital allowances already deducted in trading_profit (used only for the PRSI EUR 5,000 floor, which is tested before capital allowances)"
+      },
+      "other_income": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "EUR this person's other taxable income: a PAYE salary (set other_income_is_paye true) or non-PAYE income such as Irish rental profit. Leave out social welfare payments, DIRT-paid deposit interest and other income exempt from USC or PRSI"
+      },
+      "other_income_is_paye": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed when other_income is more than 0: true if it is a PAYE salary from an employment"
+      },
+      "spouse_income": {
+        "type": "number",
+        "required": false,
+        "description": "needed for married_two_incomes: EUR the spouse's PAYE salary for the year"
+      },
+      "spouse_income_is_paye": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed for married_two_incomes: true if the spouse's income is all PAYE salary (any other spouse income is refused)"
+      },
+      "paye_income_tax_deducted": {
+        "type": "number",
+        "required": false,
+        "description": "needed when a PAYE salary is included: EUR income tax deducted under PAYE in the year from the salaries in this assessment (this person's and, for married_two_incomes, the spouse's)"
+      },
+      "paye_usc_deducted": {
+        "type": "number",
+        "required": false,
+        "description": "needed when this person has a PAYE salary: EUR USC deducted from it in the year"
+      },
+      "pension_contributions": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "EUR this person paid into a personal pension (RAC or PRSA) for the year; relieved for income tax only, within the age limit (2026 only)"
+      },
+      "age": {
+        "type": "number",
+        "required": false,
+        "description": "needed when pension_contributions is more than 0: this person's age, for the pension relief percentage"
+      },
+      "age_65_plus": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "this person or the spouse is aged 65 or over in the year (refused: the skills do not settle these cases)"
+      },
+      "medical_card": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "this person held a full medical card (not a GP visit card) at any time in the year and told Revenue"
+      },
+      "home_carer_credit": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "the couple claims the Home Carer Tax Credit (refused: the skill states only its maximum)"
+      },
+      "preliminary_tax_paid": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "EUR preliminary tax already paid for tax_year"
+      },
+      "next_year_liability_estimate": {
+        "type": "number",
+        "required": false,
+        "description": "EUR expected income tax + USC + PRSI for the year after tax_year, after credits and tax deducted at source (for the 90% test). For 2026, run this engine for tax_year 2026 with the expected 2026 figures. Left out, the 90% test is not used"
+      },
+      "pays_by_direct_debit": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "pays next year's preliminary tax by monthly direct debit (the 105% test applies only then)"
+      },
+      "liability_year_before": {
+        "type": "number",
+        "required": false,
+        "description": "EUR final income tax + USC + PRSI for the year before tax_year (2024 for tax_year 2025), after credits and tax deducted at source; needed for the 105% direct debit test"
+      }
+    },
+    "outputs": {
+      "taxable_income": "EUR",
+      "rate_band": "EUR at 20%",
+      "gross_income_tax": "EUR",
+      "tax_credits": "EUR",
+      "income_tax": "EUR",
+      "usc": "EUR",
+      "prsi_class_s": "EUR",
+      "total_liability": "EUR",
+      "tax_deducted_at_source": "EUR",
+      "net_liability": "EUR",
+      "balance_due": "EUR (negative = overpaid)",
+      "preliminary_tax": "options, minimum and due date for the next year",
+      "pay_by_return_date": "EUR balance due plus minimum preliminary tax"
+    }
+  },
+  "anchors": [
+    "ie-income-tax-form11 Example 1: single, profit EUR 60,000 (2026) -> income tax EUR 11,200, USC EUR 1,332.82, PRSI EUR 2,542.50, total EUR 15,075.32",
+    "ie-income-tax-form11 Example 2: profit EUR 93,500 after capital allowances, rent EUR 12,000, PRSA EUR 8,000 (2026) -> income tax EUR 26,200, USC EUR 4,635.62, PRSI EUR 4,470.56, total EUR 35,306.18",
+    "ie-usc Example 1: income for USC EUR 56,000 -> USC EUR 1,212.82",
+    "ie-prsi-class-s Example 1: reckonable income EUR 80,000 (2026) -> Class S EUR 3,390.00",
+    "ie-prsi-class-s Example 2: 2025 reckonable income EUR 14,000 -> Class S EUR 650 (minimum)",
+    "ie-preliminary-tax Example 1: 2025 liability EUR 18,400, 2026 estimate EUR 21,000 -> minimum EUR 18,400, pay EUR 20,800",
+    "ie-preliminary-tax Example 2: direct debit, 2024 EUR 12,000, 2025 EUR 30,000, 2026 EUR 15,000 -> minimum EUR 12,600"
+  ],
+  "rules": [
+    {
+      "name": "BAND_SINGLE",
+      "value": 44000,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Standard rate band, single or widowed, no qualifying children (s.15, Table Part 1) | first EUR 44,000 at 20%, balance at 40% | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "BAND_SINGLE_PARENT",
+      "value": 48000,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Band, single person qualifying for the Single Person Child Carer Credit (s.15, Part 2) | first EUR 48,000 at 20%, balance at 40% | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "BAND_MARRIED",
+      "value": 53000,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Band, married or civil partners (s.15, Part 3) | first EUR 53,000 at 20%, balance at 40% | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "BAND_SECOND_INCOME_INCREASE",
+      "value": 35000,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Increase for a second income (s.15(3)(i)) | lower of EUR 35,000 or the lower earner's income; not transferable | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "INCOME_TAX_RATES",
+      "value": [
+        0.2,
+        0.4
+      ],
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Standard rate band, single or widowed, no qualifying children (s.15, Table Part 1) | first EUR 44,000 at 20%, balance at 40%",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "PERSONAL_CREDITS",
+      "value": {
+        "single": 2000,
+        "married": 4000
+      },
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Single Person Tax Credit / Married or Civil Partner Tax Credit (s.461) | EUR 2,000 / EUR 4,000 | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "SINGLE_PERSON_CHILD_CARER_CREDIT",
+      "value": 1900,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Single Person Child Carer Credit (s.462B) | EUR 1,900 | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "EMPLOYEE_CREDIT",
+      "value": 2000,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Employee (PAYE) Tax Credit (s.472) | EUR 2,000 | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "EARNED_INCOME_CREDIT",
+      "value": {
+        "max": 2000,
+        "rate": 0.2
+      },
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Earned Income Tax Credit (s.472AB) | lower of EUR 2,000 or 20% of qualifying earned income; with the Employee credit, the two together cannot exceed EUR 2,000 | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "EARNED_INCOME_CREDIT_SCOPE",
+      "value": true,
+      "slug": "ie-income-tax-form11",
+      "section": "The taxable base",
+      "quote": "Then subtract credits; credits reduce tax, not income ... The Earned Income Credit is for self-employed earned income and a proprietary director's pay, not rent or interest.",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "HOME_CARER_CREDIT_MAX",
+      "value": 1950,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Home Carer Tax Credit, maximum (s.466A) | EUR 1,950 | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "AGE_CREDIT",
+      "value": {
+        "single": 245,
+        "married": 490
+      },
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Age Tax Credit, single / married | EUR 245 / EUR 490 | 2025 and 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "PENSION_RELIEF_PERCENT_BY_AGE",
+      "value": [
+        [
+          30,
+          0.15
+        ],
+        [
+          40,
+          0.2
+        ],
+        [
+          50,
+          0.25
+        ],
+        [
+          55,
+          0.3
+        ],
+        [
+          60,
+          0.35
+        ],
+        [
+          null,
+          0.4
+        ]
+      ],
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Pension relief (RAC, PRSA), % of net relevant earnings by age | under 30: 15%; 30-39: 20%; 40-49: 25%; 50-54: 30%; 55-59: 35%; 60+: 40% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "PENSION_EARNINGS_LIMIT",
+      "value": 115000,
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Pension relief earnings limit | EUR 115,000 a year | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "RENT_NOT_RELEVANT_EARNINGS",
+      "value": true,
+      "slug": "ie-income-tax-form11",
+      "section": "The taxable base",
+      "quote": "Deduct pension contributions (Panel I) within the age percentage of net relevant earnings and the EUR 115,000 earnings limit. Rental income is not relevant earnings.",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "USC_PRSI_BEFORE_PENSION",
+      "value": true,
+      "slug": "ie-income-tax-form11",
+      "section": "The taxable base",
+      "quote": "USC: on total income after capital allowances (active traders) but before pension contributions; the surcharge tests non-PAYE income only.\nPRSI Class S: on gross income after capital allowances, before pension contributions; minimum EUR 650",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "USC_BANDS_2026",
+      "value": [
+        [
+          12012,
+          0.005
+        ],
+        [
+          16688,
+          0.02
+        ],
+        [
+          41344,
+          0.03
+        ],
+        [
+          null,
+          0.08
+        ]
+      ],
+      "slug": "ie-usc",
+      "section": "Rates, bands and thresholds",
+      "quote": "Standard band 1 (s.531AN, Table Part 1) | 0.5% on the first EUR 12,012 | 2026\nStandard band 2 | 2% on the next EUR 16,688 | 2026\nStandard band 3 | 3% on the next EUR 41,344 | 2026\nBalance | 8% on the remainder (above EUR 70,044) | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-usc"
+    },
+    {
+      "name": "USC_BANDS_2025",
+      "value": [
+        [
+          12012,
+          0.005
+        ],
+        [
+          27382,
+          0.02
+        ],
+        [
+          70044,
+          0.03
+        ],
+        [
+          null,
+          0.08
+        ]
+      ],
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "USC for the 2025 return due now | 0.5% on first EUR 12,012; 2% from EUR 12,012 to EUR 27,382; 3% to EUR 70,044; 8% on the balance | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "USC_EXEMPTION_LIMIT_2026",
+      "value": 13000,
+      "slug": "ie-usc",
+      "section": "Rates, bands and thresholds",
+      "quote": "Exemption: no USC if aggregate income does not exceed (s.531AM(2)); above it, USC on the full income | EUR 13,000 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-usc"
+    },
+    {
+      "name": "USC_MEDICAL_CARD_2026",
+      "value": {
+        "limit": 60000,
+        "standard_up_to": 28700,
+        "rate": 0.02
+      },
+      "slug": "ie-usc",
+      "section": "Rates, bands and thresholds",
+      "quote": "Reduced rate, full medical card holder under 70, aggregate income EUR 60,000 or less (s.531AN(3)) | Standard bands up to EUR 28,700, then 2% at most on the excess (same result as the reduced rates) | 2026\nAbove EUR 60,000 the standard rates apply to all income, not just the excess",
+      "skill_url": "https://www.openaccountants.com/skills/ie-usc"
+    },
+    {
+      "name": "USC_NON_PAYE_SURCHARGE_2026",
+      "value": {
+        "over": 100000,
+        "rate": 0.03
+      },
+      "slug": "ie-usc",
+      "section": "Rates, bands and thresholds",
+      "quote": "Surcharge on relevant (non-PAYE) income over EUR 100,000 (s.531AN(2)) | 3% on the excess, so 11% in total on it | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-usc"
+    },
+    {
+      "name": "CLASS_S_RATE_2026",
+      "value": 0.042375,
+      "slug": "ie-prsi-class-s",
+      "section": "Rates, bands and thresholds",
+      "quote": "Blended rate for 2026 self-assessed income: ((4.2 x 9) + (4.35 x 3)) / 12 | 4.2375% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-prsi-class-s"
+    },
+    {
+      "name": "CLASS_S_MINIMUM_2026",
+      "value": 650,
+      "slug": "ie-prsi-class-s",
+      "section": "Rates, bands and thresholds",
+      "quote": "Minimum annual contribution (reckonable income, emoluments, or both together) | EUR 650 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-prsi-class-s"
+    },
+    {
+      "name": "CLASS_S_FLOOR_2026",
+      "value": 5000,
+      "slug": "ie-prsi-class-s",
+      "section": "Rates, bands and thresholds",
+      "quote": "Income floor: below this, no Class S (total before capital allowances) | under EUR 5,000 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-prsi-class-s"
+    },
+    {
+      "name": "CLASS_S_2025",
+      "value": {
+        "rate": 0.04125,
+        "minimum": 650
+      },
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "PRSI Class S on 2025 income | 4.125% blended, minimum EUR 650 | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "CLASS_S_FLOOR_TEST",
+      "value": true,
+      "slug": "ie-prsi-class-s",
+      "section": "Who this applies to",
+      "quote": "a person whose total reckonable income, emoluments and earnings, before capital allowances, is below EUR 5,000",
+      "skill_url": "https://www.openaccountants.com/skills/ie-prsi-class-s"
+    },
+    {
+      "name": "CLASS_S_RECKONABLE_INCOME",
+      "value": true,
+      "slug": "ie-prsi-class-s",
+      "section": "The taxable base",
+      "quote": "Reckonable income is the aggregate income from all sources for the contribution year, as estimated under the Income Tax Acts, after capital allowances. It leaves out reckonable earnings and reckonable emoluments\nso each spouse or civil partner's Class S is worked out on their own income",
+      "skill_url": "https://www.openaccountants.com/skills/ie-prsi-class-s"
+    },
+    {
+      "name": "CLASS_S_AGE",
+      "value": 66,
+      "slug": "ie-prsi-class-s",
+      "section": "Who this applies to",
+      "quote": "Every person aged over 16 and under pensionable age (66) who has reckonable income or reckonable emoluments is a self-employed contributor",
+      "skill_url": "https://www.openaccountants.com/skills/ie-prsi-class-s"
+    },
+    {
+      "name": "PRELIMINARY_TAX_TESTS_2026",
+      "value": {
+        "current": 0.9,
+        "preceding": 1,
+        "pre_preceding": 1.05
+      },
+      "slug": "ie-preliminary-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "Safe harbour 1: current year | 90% of the income tax payable for 2026 | 2026\nSafe harbour 2: preceding year | 100% of the income tax payable for 2025 | 2026\nSafe harbour 3: pre-preceding year, direct debit payers only | 105% of the income tax payable for 2024; not available if that was nil",
+      "skill_url": "https://www.openaccountants.com/skills/ie-preliminary-tax"
+    },
+    {
+      "name": "PRELIMINARY_TAX_WORKING_RULE",
+      "value": true,
+      "slug": "ie-preliminary-tax",
+      "section": "The taxable base",
+      "quote": "Working rule. For each option: income tax + USC + PRSI for that year, after credits and after tax deducted at source.",
+      "skill_url": "https://www.openaccountants.com/skills/ie-preliminary-tax"
+    },
+    {
+      "name": "PRELIMINARY_TAX_DUE_2026",
+      "value": "2026-10-31",
+      "slug": "ie-preliminary-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "Preliminary tax due date (not direct debit) | 31 October of the tax year: 31 October 2026 for 2026 | 2026\nROS extension, 2025 Form 11 balance and 2026 preliminary tax | Wednesday 18 November 2026, only if the person both pays and files through ROS | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-preliminary-tax"
+    },
+    {
+      "name": "PRELIMINARY_TAX_SHORTFALL_2026",
+      "value": true,
+      "slug": "ie-preliminary-tax",
+      "section": "Penalties and interest",
+      "quote": "The whole 2026 income tax (with USC and PRSI) is treated as due on 31 October 2026 if (a) preliminary tax was not paid, (b) it was less than the lowest test that applies, or (c) it was paid after 31 October 2026 (s.959AO(3)).",
+      "skill_url": "https://www.openaccountants.com/skills/ie-preliminary-tax"
+    },
+    {
+      "name": "PRELIMINARY_TAX_TESTS",
+      "value": {
+        "current": 0.9,
+        "preceding": 1,
+        "pre_preceding": 1.05
+      },
+      "slug": "ie-income-tax-form11",
+      "section": "Rates, bands and thresholds",
+      "quote": "Preliminary tax safe harbours (s.959AO) | lowest of 90% of current year, 100% of previous year, 105% of pre-preceding year (direct debit only, not if that year was nil) | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "RETURN_2026_AND_PRELIMINARY_2027",
+      "value": "2027-10-31",
+      "slug": "ie-income-tax-form11",
+      "section": "Deadlines and filing",
+      "quote": "The 2026 return is due by 31 October 2027, with 2027 preliminary tax. Revenue has not yet announced the 2027 ROS date.",
+      "skill_url": "https://www.openaccountants.com/skills/ie-income-tax-form11"
+    },
+    {
+      "name": "BALANCE_2026_DUE",
+      "value": "2027-10-31",
+      "slug": "ie-preliminary-tax",
+      "section": "Rates, bands and thresholds",
+      "quote": "Balance of 2026 tax (if preliminary tax was sufficient and on time) | Specified return date: 31 October 2027 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ie-preliminary-tax"
+    }
+  ]
+}
