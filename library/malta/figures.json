@@ -1202,12 +1202,25 @@
     },
     {
       "id": "mt.duty.cm.home.reduced-rate.ceiling",
-      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 35(2)(i): upper end of the slice of the dwelling house value taxed at the reduced EUR 3.50 per EUR 100 rate (value above it bears the normal rate).",
+      "item": "Duty on Documents and Transfers Act, Cap. 364, art. 35(2)(i): upper end of the slice of the dwelling house value taxed at the reduced EUR 3.50 per EUR 100 rate, for transfers causa mortis before 28 October 2025 (value above it bears the normal rate). From 28 October 2025 the ceiling is EUR 400,000: see mt.duty.cm.home.reduced-rate.ceiling.2025-10-28.",
       "value": "EUR 200,000",
       "tax_year": 2026,
       "source_url": "https://legislation.mt/eli/cap/364/eng/pdf",
       "quote": "which exceeds thirty-five thousand euro (€35,000) but not two hundred thousand euro (€200,000)",
       "read_on": "2026-10-04",
+      "used_by": [
+        "mt-foundations-and-trusts",
+        "mt-inheritance-and-succession"
+      ]
+    },
+    {
+      "id": "mt.duty.cm.home.reduced-rate.ceiling.2025-10-28",
+      "item": "Reduced Rate of Duty on Transfers Causa Mortis of a Dwelling House Rules, 2025 (L.N. 306 of 2025, S.L. 364.22), rule 2(a): for a transfer causa mortis on or after 28 October 2025 of the deceased's ordinary residence occupied by an heir as their ordinary residence, the EUR 3.50 per EUR 100 rate applies to the value above EUR 35,000 up to EUR 400,000, notwithstanding art. 35(2)(i) and (ii). Rule 2(b): the first EUR 400,000 where the home was not the deceased's residence but is the heir's.",
+      "value": "EUR 400,000",
+      "tax_year": 2026,
+      "source_url": "https://legislation.mt/eli/ln/2025/306/eng",
+      "quote": "which exceeds thirty-five thousand euro (€35,000), but does not exceed four hundred thousand euro (€400,000)",
+      "read_on": "2026-11-08",
       "used_by": [
         "mt-foundations-and-trusts",
         "mt-inheritance-and-succession"
