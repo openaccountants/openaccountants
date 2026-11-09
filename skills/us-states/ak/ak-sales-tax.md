@@ -3,7 +3,8 @@ name: ak-sales-tax
 description: Use this skill whenever asked about Alaska sales and use tax. Trigger on phrases like "Alaska sales tax", "AK sales tax", "Alaska local sales tax", "ARSSTC", "Alaska Remote Seller Sales Tax Commission", "Alaska economic nexus", "do I charge sales tax in Alaska". ALWAYS load us-sales-tax first.
 version: 1.0
 jurisdiction: US-AK
-tax_year: 2025
+tax_year: 2026
+tax_year_notes: Local rates cite the ARSSTC rate sheet effective 2025-12-01, the current sheet for 2026; no statewide rate exists.
 last_updated: 2026-11-04
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -86,7 +87,35 @@ Penalty and interest rules are set by each municipality's code and by the ARSSTC
 
 ## Worked examples
 
-No worked examples are provided for Alaska: rates, bases, and exemptions are set municipality by municipality, and this skill does not compute numbers. Confirm the rate and base with the specific municipality or the ARSSTC member-rate table before working any example.
+Alaska has no statewide rate; the examples below use single-jurisdiction rates from the ARSSTC rate sheet effective 2025-12-01 (read 2026-11-01). Hypothetical client facts.
+
+Example 1: a remote seller delivers goods to a customer in Juneau. Juneau levies 5%. On a $1,000 sale the local tax is 0.05 x 1,000 = $50, collected and remitted through ARSSTC.
+
+```oa-check
+name: Remote sale delivered to Juneau (hypothetical)
+inputs:
+  sale: 1000
+  rate: 5
+steps:
+  - tax: pct(sale, rate)
+expected:
+  tax: 50
+```
+
+Example 2: a sale delivered to Kodiak City (7%). On the same $1,000 sale the local tax is 0.07 x 1,000 = $70.
+
+```oa-check
+name: Sale delivered to Kodiak City (hypothetical)
+inputs:
+  sale: 1000
+  rate: 7
+steps:
+  - tax: pct(sale, rate)
+expected:
+  tax: 70
+```
+
+Confirm the current rate with the specific municipality or the ARSSTC member-rate table before filing.
 
 ## Ask the client first
 
