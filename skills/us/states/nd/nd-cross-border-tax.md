@@ -17,7 +17,7 @@ tax_year: 2026
 tier: 2
 verified_by: pending
 last_updated: 2026-11-09
-version: 0.3
+version: 0.4
 ---
 
 # North Dakota cross-border tax (nonresidents, reciprocity, military, credits)

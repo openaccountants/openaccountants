@@ -1,7 +1,7 @@
 ---
 name: nd-income-tax
 description: Use this skill whenever asked about North Dakota individual income tax for self-employed / sole proprietors. Trigger on phrases like "North Dakota income tax", "ND income tax", "Form ND-1", "ND Tax Commissioner", "ND self-employment tax".
-version: 0.2
+version: 0.3
 jurisdiction: US-ND
 tax_year: 2026
 last_updated: 2026-11-09

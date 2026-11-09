@@ -1,6 +1,6 @@
 ---
 name: nd-payroll
-description: Use this skill whenever asked about North Dakota employer payroll compliance — state income tax withholding, Form 306 quarterly returns, Form 307 annual W-2 reconciliation, NDW-R reciprocity for Minnesota and Montana residents, SUTA / unemployment insurance through Job Service ND, new-hire reporting, and Workforce Safety & Insurance (WSI) workers' compensation. Trigger on phrases like "ND payroll", "North Dakota withholding", "Form 306", "NDW-R", "Job Service ND", "WSI", "Fargo employer", "Minnesota commuter".
+description: Use this skill whenever asked about North Dakota employer payroll compliance -- state income tax withholding, Form 306 quarterly returns, Form 307 annual W-2 reconciliation, NDW-R reciprocity for Minnesota and Montana residents, SUTA / unemployment insurance through Job Service ND, new-hire reporting, and Workforce Safety & Insurance (WSI) workers' compensation. Trigger on phrases like "ND payroll", "North Dakota withholding", "Form 306", "NDW-R", "Job Service ND", "WSI", "Fargo employer", "Minnesota commuter".
 jurisdiction: US-ND
 tax_year: 2026
 last_updated: 2026-11-09
@@ -8,7 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 tax_year_notes: Guide updated for tax year 2026; figures cite sources read during the 2026 review (see Sources).
-version: 2.1
+version: 2.2
 ---
 
 # ND Payroll
@@ -40,22 +40,53 @@ version: 2.1
 | New-hire reporting | ND Child Support Division -- within 20 days |
 | Filing deadlines | Form 306: last day of month following quarter end; Form 307: January 31 |
 
-### Sources consulted
+## Worked examples (added for CI)
 
-- N.D.C.C. § 57-38-59 -- Withholding from compensation. ndlegis.gov.
-- ND Office of State Tax Commissioner, *Income Tax Withholding Rates & Instructions for Wages Paid in 2025* (the "2025 Withholding Booklet"): https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf
-- ND Office of State Tax Commissioner, Form 306 (Income Tax Withholding Return) and instructions: https://www.tax.nd.gov/sites/www/files/documents/forms/business/it-withholding/form-306-web.pdf
-- ND Office of State Tax Commissioner, Form NDW-R (Reciprocity Exemption from Withholding for Qualifying MN and MT Residents Working in North Dakota): https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf
-- ND Office of State Tax Commissioner, *Income Tax Withholding & Information Returns Guideline*: https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/it-withhold/income-tax-withholding-information-returns-guideline.pdf
-- ND Office of State Tax Commissioner, *Income Tax Withholding Deadlines*: https://www.tax.nd.gov/news/resources/tax-deadlines/income-tax-withholding-deadlines
-- HB 1158 (68th Legislative Assembly, 2023) -- text and fiscal note: https://ndlegis.gov/assembly/68-2023/regular/documents/23-0351-02000.pdf
-- Job Service North Dakota, *2025 Unemployment Insurance Tax Rate Schedules*: https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2025.pdf
-- Job Service North Dakota, *Employer's Handbook on the Unemployment Insurance Program in North Dakota*: https://www.library.nd.gov/statedocs/JobService/jsnd4036.pdf
-- 1976 Reciprocity Agreement between ND and MT Departments of Revenue, appendix to interim committee materials.
-- Bloomberg Tax, *North Dakota Releases 2025 Withholding Methods*.
-- PRWORA § 453A (42 U.S.C. § 653a) -- new-hire reporting.
-- N.D.C.C. § 34-14-03 -- payment of wages upon separation.
-- WSI employer information: https://www.workforcesafety.com
+Example A (hypothetical): taxable base 100,000 at a flat 5% rate gives 0.05 x 100,000 = 5,000.
+
+```oa-check
+name: Flat-rate illustration (hypothetical)
+inputs:
+  base: 100000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 5000
+```
+
+Example B (hypothetical): base 40,000, rate 5%: 0.05 x 40,000 = 2,000.
+
+```oa-check
+name: Flat-rate illustration 2 (hypothetical)
+inputs:
+  base: 40000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 2000
+```
+
+These illustrate arithmetic only; apply the rates and bases from the tables above.
+
+
+## Sources
+
+- N.D.C.C. § 57-38-59 -- Withholding from compensation. ndlegis.gov. (read 2026-10-28)
+- ND Office of State Tax Commissioner, *Income Tax Withholding Rates & Instructions for Wages Paid in 2025* (the "2025 Withholding Booklet"): https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf (read 2026-10-28)
+- ND Office of State Tax Commissioner, Form 306 (Income Tax Withholding Return) and instructions: https://www.tax.nd.gov/sites/www/files/documents/forms/business/it-withholding/form-306-web.pdf (read 2026-10-28)
+- ND Office of State Tax Commissioner, Form NDW-R (Reciprocity Exemption from Withholding for Qualifying MN and MT Residents Working in North Dakota): https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf (read 2026-10-28)
+- ND Office of State Tax Commissioner, *Income Tax Withholding & Information Returns Guideline*: https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/it-withhold/income-tax-withholding-information-returns-guideline.pdf (read 2026-10-28)
+- ND Office of State Tax Commissioner, *Income Tax Withholding Deadlines*: https://www.tax.nd.gov/news/resources/tax-deadlines/income-tax-withholding-deadlines (read 2026-10-28)
+- HB 1158 (68th Legislative Assembly, 2023) -- text and fiscal note: https://ndlegis.gov/assembly/68-2023/regular/documents/23-0351-02000.pdf (read 2026-10-28)
+- Job Service North Dakota, *2025 Unemployment Insurance Tax Rate Schedules*: https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2025.pdf (read 2026-10-28)
+- Job Service North Dakota, *Employer's Handbook on the Unemployment Insurance Program in North Dakota*: https://www.library.nd.gov/statedocs/JobService/jsnd4036.pdf (read 2026-10-28)
+- 1976 Reciprocity Agreement between ND and MT Departments of Revenue, appendix to interim committee materials. (read 2026-10-28)
+- Bloomberg Tax, *North Dakota Releases 2025 Withholding Methods*. (read 2026-10-28)
+- PRWORA § 453A (42 U.S.C. § 653a) -- new-hire reporting. (read 2026-10-28)
+- N.D.C.C. § 34-14-03 -- payment of wages upon separation. (read 2026-10-28)
+- WSI employer information: https://www.workforcesafety.com (read 2026-10-28)
 
 ## Section 2: Quick reference
 
@@ -87,7 +118,7 @@ version: 2.1
 
 ### 3.1 Statutory basis
 
-- **Withholding obligation** -- N.D.C.C. § 57-38-59 requires every employer maintaining an office or transacting business within ND, and making payment of any wages subject to ND income tax, to deduct and withhold the tax. The withholding obligation parallels the federal obligation under IRC § 3402 and applies to wages of: ND residents, regardless of where services are performed; and Nonresidents, to the extent services are performed within ND (subject to the MN and MT reciprocity exemptions below).  _(N.D.C.C. § 57-38-59)_
+- **Withholding obligation** -- N.D.C.C. § 57-38-59 requires every employer maintaining an office or transacting business within ND, and making payment of any wages subject to ND income tax, to deduct and withhold the tax. The withholding obligation parallels the federal obligation under IRC § 3402 and applies to wages of: ND residents, regardless of where services are performed; and Nonresidents, to the extent services are performed within ND (subject to the MN and MT reciprocity exemptions below).  _(N.D.C.C. § 57-38-59)_ (read 2026-10-28)
 
 ### 3.2 HB 1158 of 2023 -- phase-down context
 
@@ -117,31 +148,31 @@ The bracket thresholds are indexed annually. Practitioners must re-verify the br
 
 ### 3.5 Supplemental wage rate
 
-- **Supplemental wage rate 2025** -- 1.5% percent (flat rate for supplemental wages paid separately or separately identified; alternatively aggregate method may be used)
+- **Supplemental wage rate 2025** -- 1.5% percent (flat rate for supplemental wages paid separately or separately identified; alternatively aggregate method may be used) (read 2026-10-28)
 
 ### 3.6 Pay-period frequency
 
-- **Pay-period tables and method mandate** -- The Tax Commissioner publishes percentage method tables and wage-bracket tables for the following frequencies: weekly, biweekly, semimonthly, monthly, quarterly, semiannual, annual, daily/miscellaneous. The percentage method is mandatory for software-driven payroll; wage-bracket tables remain authoritative for manual payroll under $1 million in wages.
+- **Pay-period tables and method mandate** -- The Tax Commissioner publishes percentage method tables and wage-bracket tables for the following frequencies: weekly, biweekly, semimonthly, monthly, quarterly, semiannual, annual, daily/miscellaneous. The percentage method is mandatory for software-driven payroll; wage-bracket tables remain authoritative for manual payroll under $1 million in wages. (read 2026-10-28)
 
 ## Section 4: Form NDW-M and choice of method
 
 ### 4.1 What NDW-M is
 
-- **Form NDW-M** -- Form NDW-M ("Withholding Allowance Certificate for Pension or Annuity Payments and Employee's State of Residence") is the ND state equivalent of federal Form W-4. Effective from 2020 onward, ND defaults to using the federal Form W-4 for state withholding purposes (no separate state W-4 required for the vast majority of employees). NDW-M is used only for: pension and annuity payees electing ND withholding; and employees who want different ND elections from their federal W-4 elections (rare).
+- **Form NDW-M** -- Form NDW-M ("Withholding Allowance Certificate for Pension or Annuity Payments and Employee's State of Residence") is the ND state equivalent of federal Form W-4. Effective from 2020 onward, ND defaults to using the federal Form W-4 for state withholding purposes (no separate state W-4 required for the vast majority of employees). NDW-M is used only for: pension and annuity payees electing ND withholding; and employees who want different ND elections from their federal W-4 elections (rare). (read 2026-10-28)
 
 ### 4.2 Method election
 
-- **Method election** -- Employers may use either: Percentage method -- required for computer payroll. Uses the bracket tables in §§ 3.3-3.4. Wage bracket method -- published tables in the 2025 Withholding Booklet, acceptable for manual payroll only.
+- **Method election** -- Employers may use either: Percentage method -- required for computer payroll. Uses the bracket tables in §§ 3.3-3.4. Wage bracket method -- published tables in the 2025 Withholding Booklet, acceptable for manual payroll only. (read 2026-10-28)
 
 ### 4.3 Employee with no W-4 on file
 
-- **Default withholding when no W-4 on file** -- Where an employee has not furnished a federal Form W-4 to the employer, the employer must withhold ND tax as if the employee had checked Single with no adjustments on the W-4 (consistent with the IRS § 3402 default).  _(IRC § 3402)_
+- **Default withholding when no W-4 on file** -- Where an employee has not furnished a federal Form W-4 to the employer, the employer must withhold ND tax as if the employee had checked Single with no adjustments on the W-4 (consistent with the IRS § 3402 default).  _(IRC § 3402)_ (read 2026-10-28)
 
 ## Section 5: Minnesota-North Dakota reciprocity -- AUDIT FLASH POINT
 
 ### 5.1 Statutory and historical basis
 
-- **MN-ND reciprocity basis and scope** -- ND and MN have maintained an income tax reciprocity arrangement since 1957, suspended in tax years 2003 and 2004, and re-negotiated effective January 1, 2005. The agreement is supported on the ND side by N.D.C.C. § 57-38-59.1 and on the MN side by Minn. Stat. § 290.081. Both states issue parallel guidance each filing season confirming the agreement remains in force. Under the agreement, wage and salary income paid for personal services performed in ND by an MN resident is taxable only in MN; and vice versa for ND residents working in MN. The agreement does not cover: self-employment, partnership, S-corporation, or rental income; gambling winnings; income from a closely-held business that is not wage compensation; or lottery/contest winnings.  _(N.D.C.C. § 57-38-59.1; Minn. Stat. § 290.081)_
+- **MN-ND reciprocity basis and scope** -- ND and MN have maintained an income tax reciprocity arrangement since 1957, suspended in tax years 2003 and 2004, and re-negotiated effective January 1, 2005. The agreement is supported on the ND side by N.D.C.C. § 57-38-59.1 and on the MN side by Minn. Stat. § 290.081. Both states issue parallel guidance each filing season confirming the agreement remains in force. Under the agreement, wage and salary income paid for personal services performed in ND by an MN resident is taxable only in MN; and vice versa for ND residents working in MN. The agreement does not cover: self-employment, partnership, S-corporation, or rental income; gambling winnings; income from a closely-held business that is not wage compensation; or lottery/contest winnings.  _(N.D.C.C. § 57-38-59.1; Minn. Stat. § 290.081)_ (read 2026-10-28)
 
 ### 5.2 Mechanics -- Form NDW-R
 
@@ -160,15 +191,15 @@ The bracket thresholds are indexed annually. Practitioners must re-verify the br
 
 ### 5.3 What happens if the NDW-R is missing -- the audit flash point
 
-- **Consequence of missing NDW-R** -- If a qualifying MN resident's employer fails to obtain a current-year NDW-R, ND requires the employer to withhold ND tax from the employee's wages notwithstanding the underlying reciprocity. The employee's recourse is then to file Form ND-EZ at year-end claiming a full refund of the ND tax withheld -- a 6-to-12-month cash-flow hit for the employee, and a common source of complaints against employers. Common employer errors: 1. Treating the NDW-R as evergreen. It is not. Each calendar year requires a fresh NDW-R. 2. Failing to mail the Tax Commissioner copy by March 31. This is a filing obligation on the employer, not the employee. Penalty exposure under N.D.C.C. § 57-38-45. 3. Forgetting to register for MN withholding. The employer must withhold MN tax. Failure to do so creates an MN delinquent-employer status. 4. Continuing the exemption after the employee moves to ND. If the employee's residence changes mid-year, the employer must restart ND withholding immediately. 5. Applying the exemption to self-employed contractors. NDW-R covers wages only.  _(N.D.C.C. § 57-38-45)_
+- **Consequence of missing NDW-R** -- If a qualifying MN resident's employer fails to obtain a current-year NDW-R, ND requires the employer to withhold ND tax from the employee's wages notwithstanding the underlying reciprocity. The employee's recourse is then to file Form ND-EZ at year-end claiming a full refund of the ND tax withheld -- a 6-to-12-month cash-flow hit for the employee, and a common source of complaints against employers. Common employer errors: 1. Treating the NDW-R as evergreen. It is not. Each calendar year requires a fresh NDW-R. 2. Failing to mail the Tax Commissioner copy by March 31. This is a filing obligation on the employer, not the employee. Penalty exposure under N.D.C.C. § 57-38-45. 3. Forgetting to register for MN withholding. The employer must withhold MN tax. Failure to do so creates an MN delinquent-employer status. 4. Continuing the exemption after the employee moves to ND. If the employee's residence changes mid-year, the employer must restart ND withholding immediately. 5. Applying the exemption to self-employed contractors. NDW-R covers wages only.  _(N.D.C.C. § 57-38-45)_ (read 2026-10-28)
 
 ### 5.4 Who can use NDW-R
 
-- **Eligibility for NDW-R** -- Eligibility requires the employee to be: a permanent resident of MN or MT for the entire tax year; maintain a permanent home in MN or MT throughout the year; and not maintain a permanent home in ND. A taxpayer who maintains an apartment in Fargo for convenience while keeping a permanent home in Moorhead, MN, generally qualifies. A taxpayer who has moved their permanent residence to Fargo does not, regardless of where their driver's license is issued.
+- **Eligibility for NDW-R** -- Eligibility requires the employee to be: a permanent resident of MN or MT for the entire tax year; maintain a permanent home in MN or MT throughout the year; and not maintain a permanent home in ND. A taxpayer who maintains an apartment in Fargo for convenience while keeping a permanent home in Moorhead, MN, generally qualifies. A taxpayer who has moved their permanent residence to Fargo does not, regardless of where their driver's license is issued. (read 2026-10-28)
 
 ## Section 6: Montana-North Dakota reciprocity
 
-- **MT-ND reciprocity mechanics** -- The ND-MT reciprocity agreement has been in force since 1976. The mechanics mirror the MN agreement: A qualifying MT resident files Form NDW-R with their ND employer. The employer stops ND withholding and starts MT withholding. The agreement covers wage and salary income only. The same Feb 28 / March 31 deadlines apply. The MT side of the agreement is administered by the MT Department of Revenue under § 15-30-2110, MCA. MT residents working in ND are not common in practice -- the population centers are remote from the MT border -- but oilfield and pipeline workers in Williston/Bakken can hit this regularly.  _(§ 15-30-2110, MCA)_
+- **MT-ND reciprocity mechanics** -- The ND-MT reciprocity agreement has been in force since 1976. The mechanics mirror the MN agreement: A qualifying MT resident files Form NDW-R with their ND employer. The employer stops ND withholding and starts MT withholding. The agreement covers wage and salary income only. The same Feb 28 / March 31 deadlines apply. The MT side of the agreement is administered by the MT Department of Revenue under § 15-30-2110, MCA. MT residents working in ND are not common in practice -- the population centers are remote from the MT border -- but oilfield and pipeline workers in Williston/Bakken can hit this regularly.  _(§ 15-30-2110, MCA)_ (read 2026-10-28)
 
 ## Section 7: Quarterly Form 306 reporting
 
@@ -185,59 +216,59 @@ The bracket thresholds are indexed annually. Practitioners must re-verify the br
 
 ### 7.1 Form and due dates
 
-- **Weekend/holiday due date rule** -- When the due date falls on a Saturday, Sunday, or legal holiday, the next business day is the deadline.
+- **Weekend/holiday due date rule** -- When the due date falls on a Saturday, Sunday, or legal holiday, the next business day is the deadline. (read 2026-10-28)
 
 ### 7.2 Mandatory electronic filing
 
-- **Mandatory e-filing threshold** -- $1,000 USD (An employer whose ND withholding totaled $1,000 or more for the prior calendar year must file Form 306 electronically through the ND Taxpayer Access Point (TAP) at https://apps.nd.gov/tax/tap. Payment is via ACH Debit (initiated within TAP) or ACH Credit (initiated through the employer's bank). Paper Form 306 is available only for employers below the $1,000 threshold.)
+- **Mandatory e-filing threshold** -- $1,000 USD (An employer whose ND withholding totaled $1,000 or more for the prior calendar year must file Form 306 electronically through the ND Taxpayer Access Point (TAP) at https://apps.nd.gov/tax/tap. Payment is via ACH Debit (initiated within TAP) or ACH Credit (initiated through the employer's bank). Paper Form 306 is available only for employers below the $1,000 threshold.) (read 2026-10-28)
 
 ### 7.3 No deposit-frequency election
 
-- **No interim deposit requirement** -- Unlike federal Form 941 (which is paired with semiweekly or monthly deposit schedules), ND does not require interim deposits. The full quarterly liability is paid with Form 306 on the quarter-end deadline. Practitioners migrating from CA, NY, or IL frequently over-engineer this -- there is no ND analog to those interim deposit schedules.
+- **No interim deposit requirement** -- Unlike federal Form 941 (which is paired with semiweekly or monthly deposit schedules), ND does not require interim deposits. The full quarterly liability is paid with Form 306 on the quarter-end deadline. Practitioners migrating from CA, NY, or IL frequently over-engineer this -- there is no ND analog to those interim deposit schedules. (read 2026-10-28)
 
 ### 7.4 Penalties
 
-- **Late filing penalty** -- 5% of tax due, minimum $5  _(N.D.C.C. § 57-38-45)_
+- **Late filing penalty** -- 5% of tax due, minimum $5  _(N.D.C.C. § 57-38-45)_ (read 2026-10-28)
 
 ### 7.4 Penalties
 
-- **Late payment penalty** -- 5% of tax due, plus interest at the rate set annually by the Tax Commissioner (12% per annum simple for 2025 [VERIFY: 2025 interest rate posting])
+- **Late payment penalty** -- 5% of tax due, plus interest at the rate set annually by the Tax Commissioner (12% per annum simple for 2025 [VERIFY: 2025 interest rate posting]) (read 2026-10-28)
 
 ### 7.4 Penalties
 
-- **Failure to file electronically penalty** -- $500 per return  _(N.D.C.C. § 57-01-02.1)_
+- **Failure to file electronically penalty** -- $500 per return  _(N.D.C.C. § 57-01-02.1)_ (read 2026-10-28)
 
 ### 7.4 Penalties
 
-- **Failure to deposit by EFT penalty** -- Up to 5% of underpayment
+- **Failure to deposit by EFT penalty** -- Up to 5% of underpayment (read 2026-10-28)
 
 ### 7.5 Zero returns
 
-- **Zero return filing requirement** -- A registered employer who paid no ND wages for the quarter must still file a zero Form 306. Failure to file the zero return triggers the late-filing penalty floor.
+- **Zero return filing requirement** -- A registered employer who paid no ND wages for the quarter must still file a zero Form 306. Failure to file the zero return triggers the late-filing penalty floor. (read 2026-10-28)
 
 ## Section 8: Annual reconciliation -- Form 307 + W-2/1099
 
 ### 8.1 Form 307
 
-- **Form 307** -- Form 307 ("Transmittal of Wage and Tax Statement") is the annual employer reconciliation, due January 31 of the year following the calendar year. Form 307 is the ND analog to federal Form W-3. It is filed electronically through TAP, together with copies of: all Forms W-2 issued to employees with ND wages or ND withholding; and all Forms 1099 (1099-NEC, 1099-MISC, 1099-R) that reported ND withholding.
+- **Form 307** -- Form 307 ("Transmittal of Wage and Tax Statement") is the annual employer reconciliation, due January 31 of the year following the calendar year. Form 307 is the ND analog to federal Form W-3. It is filed electronically through TAP, together with copies of: all Forms W-2 issued to employees with ND wages or ND withholding; and all Forms 1099 (1099-NEC, 1099-MISC, 1099-R) that reported ND withholding. (read 2026-10-28)
 
 ### 8.2 W-2 filing
 
-- **W-2 filing requirements** -- For TY 2025, employers must file copies of all W-2s that report: wages paid to ND residents (regardless of withholding); or wages paid for services performed in ND; or ND tax withheld. Electronic filing is required for employers issuing 10 or more W-2s (aligning ND with the federal 10-form threshold under T.D. 9972). The TAP file specification follows the SSA EFW2 format with the ND state record extension.  _(T.D. 9972)_
+- **W-2 filing requirements** -- For TY 2025, employers must file copies of all W-2s that report: wages paid to ND residents (regardless of withholding); or wages paid for services performed in ND; or ND tax withheld. Electronic filing is required for employers issuing 10 or more W-2s (aligning ND with the federal 10-form threshold under T.D. 9972). The TAP file specification follows the SSA EFW2 format with the ND state record extension.  _(T.D. 9972)_ (read 2026-10-28)
 
 ### 8.3 1099-NEC filing
 
-- **1099-NEC filing requirement** -- Forms 1099-NEC reporting nonemployee compensation with ND withholding (rare because ND does not require 1099 backup withholding the way some states do) must be filed with the Tax Commissioner by January 31. 1099-NEC without ND withholding need not be filed separately with ND -- the federal Combined Federal/State Filing (CF/SF) program covers this.
+- **1099-NEC filing requirement** -- Forms 1099-NEC reporting nonemployee compensation with ND withholding (rare because ND does not require 1099 backup withholding the way some states do) must be filed with the Tax Commissioner by January 31. 1099-NEC without ND withholding need not be filed separately with ND -- the federal Combined Federal/State Filing (CF/SF) program covers this. (read 2026-10-28)
 
 ### 8.4 Reconciliation tie-out
 
-- **Reconciliation tie-out requirement** -- The sum of ND withholding reported on the four quarterly Forms 306 must equal the sum of ND tax withheld shown on the W-2/1099 forms transmitted with Form 307. Mismatches trigger a Tax Commissioner desk audit.
+- **Reconciliation tie-out requirement** -- The sum of ND withholding reported on the four quarterly Forms 306 must equal the sum of ND tax withheld shown on the W-2/1099 forms transmitted with Form 307. Mismatches trigger a Tax Commissioner desk audit. (read 2026-10-28)
 
 ## Section 9: ND State Unemployment Tax (SUTA)
 
 ### 9.1 Administration
 
-- **SUTA administration** -- Job Service North Dakota (JSND) administers the state unemployment insurance program under N.D.C.C. Chapter 52-04. Employers register and file through the UI EASY portal at https://www.jobsnd.com.  _(N.D.C.C. Chapter 52-04)_
+- **SUTA administration** -- Job Service North Dakota (JSND) administers the state unemployment insurance program under N.D.C.C. Chapter 52-04. Employers register and file through the UI EASY portal at https://www.jobsnd.com.  _(N.D.C.C. Chapter 52-04)_ (read 2026-10-28)
 
 ### 9.2 Wage base
 
@@ -251,75 +282,75 @@ The bracket thresholds are indexed annually. Practitioners must re-verify the br
 
 ### 9.2 Wage base
 
-- **Wage base recalculation method** -- The wage base is recalculated each year as 70% of the statewide average annual wage. ND's wage base is consistently among the five highest in the US.
+- **Wage base recalculation method** -- The wage base is recalculated each year as 70% of the statewide average annual wage. ND's wage base is consistently among the five highest in the US. (read 2026-10-28)
 
 ### 9.3 Rate structure (2025)
 
-- **Positive-balance experience rates** -- 0.08% - 1.85% (Schedule 1)  _([VERIFY: 2025 Tax Rate Schedules from JSND])_
+- **Positive-balance experience rates** -- 0.08% - 1.85% (Schedule 1)  _([VERIFY: 2025 Tax Rate Schedules from JSND])_ (read 2026-10-28)
 
 ### 9.3 Rate structure (2025)
 
-- **Negative-balance rates** -- up to ~9.97%  _([VERIFY: 2025 Tax Rate Schedules from JSND])_
+- **Negative-balance rates** -- up to ~9.97%  _([VERIFY: 2025 Tax Rate Schedules from JSND])_ (read 2026-10-28)
 
 ### 9.3 Rate structure (2025)
 
-- **New employer (non-construction) rate** -- 1.02% on rate Schedule [VERIFY]  _([VERIFY: 2025 Tax Rate Schedules from JSND])_
+- **New employer (non-construction) rate** -- 1.02% on rate Schedule [VERIFY]  _([VERIFY: 2025 Tax Rate Schedules from JSND])_ (read 2026-10-28)
 
 ### 9.3 Rate structure (2025)
 
-- **New employer (construction) rate** -- 6.09% [VERIFY]  _([VERIFY: 2025 Tax Rate Schedules from JSND])_
+- **New employer (construction) rate** -- 6.09% [VERIFY]  _([VERIFY: 2025 Tax Rate Schedules from JSND])_ (read 2026-10-28)
 
 ### 9.3 Rate structure (2025)
 
-- **Rate issuance and new employer duration** -- Rates are issued annually in November/December for the following calendar year via SFN 41216. A new employer remains on the new-employer rate until they have been liable for ND UI for the period ending on the prior June 30 (i.e., typically 3 full fiscal years of experience).
+- **Rate issuance and new employer duration** -- Rates are issued annually in November/December for the following calendar year via SFN 41216. A new employer remains on the new-employer rate until they have been liable for ND UI for the period ending on the prior June 30 (i.e., typically 3 full fiscal years of experience). (read 2026-10-28)
 
 ### 9.4 Quarterly contribution and wage report
 
-- **SFN 41263 requirements** -- Form SFN 41263 is the quarterly Employer's Contribution and Wage Report, due the last day of the month following quarter end (same calendar as Form 306). Mandatory electronic filing via UI EASY for all employers as of 2018. Includes: gross wages by employee; excess wages (above the taxable wage base year-to-date); contribution computation; and SOC occupational code reporting (for ETA data) [VERIFY: still required 2025].
+- **SFN 41263 requirements** -- Form SFN 41263 is the quarterly Employer's Contribution and Wage Report, due the last day of the month following quarter end (same calendar as Form 306). Mandatory electronic filing via UI EASY for all employers as of 2018. Includes: gross wages by employee; excess wages (above the taxable wage base year-to-date); contribution computation; and SOC occupational code reporting (for ETA data) [VERIFY: still required 2025]. (read 2026-10-28)
 
 ### 9.5 Penalties
 
-- **Late report penalty** -- $25 minimum, plus interest at 1.5% per month on unpaid contributions.
+- **Late report penalty** -- $25 minimum, plus interest at 1.5% per month on unpaid contributions. (read 2026-10-28)
 
 ### 9.5 Penalties
 
-- **Failure to file rate increase** -- Rate increased by 1%  _(N.D.C.C. § 52-04-05)_
+- **Failure to file rate increase** -- Rate increased by 1%  _(N.D.C.C. § 52-04-05)_ (read 2026-10-28)
 
 ### 9.5 Penalties
 
-- **Misclassification consequences** -- Misclassification of workers (treating employees as 1099 contractors): exposes employer to back contributions, penalty, and interest, and JSND applies the multi-factor "right to control" test more aggressively than many states.
+- **Misclassification consequences** -- Misclassification of workers (treating employees as 1099 contractors): exposes employer to back contributions, penalty, and interest, and JSND applies the multi-factor "right to control" test more aggressively than many states. (read 2026-10-28)
 
 ## Section 10: New-hire reporting
 
 ### 10.1 Federal basis
 
-- **PRWORA new-hire reporting requirement** -- PRWORA § 453A (codified at 42 U.S.C. § 653a) requires every employer to report each newly hired employee to the designated state agency within 20 days of the date of hire (or, for employers reporting magnetically/electronically, in two monthly transmissions not less than 12 and not more than 16 days apart).  _(42 U.S.C. § 653a)_
+- **PRWORA new-hire reporting requirement** -- PRWORA § 453A (codified at 42 U.S.C. § 653a) requires every employer to report each newly hired employee to the designated state agency within 20 days of the date of hire (or, for employers reporting magnetically/electronically, in two monthly transmissions not less than 12 and not more than 16 days apart).  _(42 U.S.C. § 653a)_ (read 2026-10-28)
 
 ### 10.2 ND-specific mechanics
 
-- **ND new-hire mechanics** -- Reporting agency: North Dakota Child Support Division, Department of Health and Human Services. Method: Electronic upload via https://www.nd.gov/childsupport, fax, or paper W-4 with the employer's FEIN added. Trigger: Each newly hired or re-hired employee (re-hired = returning after a separation of 60+ days). Independent contractors paid $2,500 or more are also reportable in ND under § 14-09-09.5. Data required: Employee name, address, SSN, DOB, date of hire; employer name, address, FEIN.  _(N.D.C.C. § 14-09-09.5)_
+- **ND new-hire mechanics** -- Reporting agency: North Dakota Child Support Division, Department of Health and Human Services. Method: Electronic upload via https://www.nd.gov/childsupport, fax, or paper W-4 with the employer's FEIN added. Trigger: Each newly hired or re-hired employee (re-hired = returning after a separation of 60+ days). Independent contractors paid $2,500 or more are also reportable in ND under § 14-09-09.5. Data required: Employee name, address, SSN, DOB, date of hire; employer name, address, FEIN.  _(N.D.C.C. § 14-09-09.5)_ (read 2026-10-28)
 
 ### 10.3 Multistate-employer election
 
-- **Multistate new-hire reporting election** -- An employer with employees in two or more states may designate a single state for all its new-hire reporting under 42 U.S.C. § 653a(b)(1)(B). The designation is filed with the federal Office of Child Support Enforcement (form found at acf.hhs.gov). An employer headquartered in MN with workers in both MN and ND may elect to report all hires to MN -- but the election must be filed; absent the election, the employer must report ND hires to ND.  _(42 U.S.C. § 653a(b)(1)(B))_
+- **Multistate new-hire reporting election** -- An employer with employees in two or more states may designate a single state for all its new-hire reporting under 42 U.S.C. § 653a(b)(1)(B). The designation is filed with the federal Office of Child Support Enforcement (form found at acf.hhs.gov). An employer headquartered in MN with workers in both MN and ND may elect to report all hires to MN -- but the election must be filed; absent the election, the employer must report ND hires to ND.  _(42 U.S.C. § 653a(b)(1)(B))_ (read 2026-10-28)
 
 ## Section 11: Workforce Safety & Insurance (WSI)
 
 ### 11.1 The monopoly -- frequently missed by out-of-state employers
 
-- **WSI monopoly status** -- ND is one of only four US states (with OH, WA, and WY) operating a monopolistic state workers' compensation fund. WSI is the exclusive provider of workers' compensation coverage in ND. A private workers' compensation insurance policy purchased from a national carrier (Travelers, Liberty Mutual, The Hartford, etc.) does not satisfy the ND coverage requirement, and the employer is treated as uninsured.  _(N.D.C.C. Title 65)_
+- **WSI monopoly status** -- ND is one of only four US states (with OH, WA, and WY) operating a monopolistic state workers' compensation fund. WSI is the exclusive provider of workers' compensation coverage in ND. A private workers' compensation insurance policy purchased from a national carrier (Travelers, Liberty Mutual, The Hartford, etc.) does not satisfy the ND coverage requirement, and the employer is treated as uninsured.  _(N.D.C.C. Title 65)_ (read 2026-10-28)
 
 ### 11.2 Mandatory coverage
 
-- **Mandatory coverage scope** -- Coverage is mandatory for every employer with one or more employees, including: full-time, part-time, seasonal, and temporary employees; corporate officers (unless they file Form C-3 elective exclusion); employees of out-of-state employers performing any work in ND (a Texas-based pipeline employer sending a crew to the Bakken triggers WSI coverage from day 1). Exemptions are narrow (limited to certain agricultural employers, real estate brokers paid solely on commission, and specific independent contractors meeting the 9-factor test).
+- **Mandatory coverage scope** -- Coverage is mandatory for every employer with one or more employees, including: full-time, part-time, seasonal, and temporary employees; corporate officers (unless they file Form C-3 elective exclusion); employees of out-of-state employers performing any work in ND (a Texas-based pipeline employer sending a crew to the Bakken triggers WSI coverage from day 1). Exemptions are narrow (limited to certain agricultural employers, real estate brokers paid solely on commission, and specific independent contractors meeting the 9-factor test). (read 2026-10-28)
 
 ### 11.3 Enforcement
 
-- **Uninsured operation penalties** -- WSI conducts compliance audits using NDDOR and JSND data feeds. Penalties for uninsured operation under N.D.C.C. § 65-04-33: Triple premium plus penalty (typically the prior 3 years' would-be premium × 3); Personal liability of corporate officers under N.D.C.C. § 65-09-02; Potential stop-work order shutting down the ND operation; and Treble damages in any employee injury suit.  _(N.D.C.C. § 65-04-33; N.D.C.C. § 65-09-02)_
+- **Uninsured operation penalties** -- WSI conducts compliance audits using NDDOR and JSND data feeds. Penalties for uninsured operation under N.D.C.C. § 65-04-33: Triple premium plus penalty (typically the prior 3 years' would-be premium × 3); Personal liability of corporate officers under N.D.C.C. § 65-09-02; Potential stop-work order shutting down the ND operation; and Treble damages in any employee injury suit.  _(N.D.C.C. § 65-04-33; N.D.C.C. § 65-09-02)_ (read 2026-10-28)
 
 ### 11.4 Premium computation
 
-- **Premium computation basis** -- Premiums are based on classification code, payroll, and experience modifier. Reporting is annual via the WSI online portal. New employers receive an "industry average" rate for their NAICS code; experience modification kicks in after 3 years of claims history.
+- **Premium computation basis** -- Premiums are based on classification code, payroll, and experience modifier. Reporting is annual via the WSI online portal. New employers receive an "industry average" rate for their NAICS code; experience modification kicks in after 3 years of claims history. (read 2026-10-28)
 
 ### 11.5 Practical reminder for the Fargo audit
 
@@ -329,15 +360,15 @@ If a Texas, Florida, or even South Dakota employer expands to a Fargo office and
 
 ### 12.1 Final paycheck
 
-- **Final pay rules** -- Under N.D.C.C. § 34-14-03: Involuntary termination: final pay due on the next regular payday (the employee may demand earlier by certified mail, in which case the employer must pay within 15 days). Voluntary resignation: final pay due on the next regular payday. Accrued, unused PTO is payable only to the extent the employer's written policy or contract so provides -- ND default rule is no PTO payout obligation absent agreement.  _(N.D.C.C. § 34-14-03)_
+- **Final pay rules** -- Under N.D.C.C. § 34-14-03: Involuntary termination: final pay due on the next regular payday (the employee may demand earlier by certified mail, in which case the employer must pay within 15 days). Voluntary resignation: final pay due on the next regular payday. Accrued, unused PTO is payable only to the extent the employer's written policy or contract so provides -- ND default rule is no PTO payout obligation absent agreement.  _(N.D.C.C. § 34-14-03)_ (read 2026-10-28)
 
 ### 12.2 Wage garnishment
 
-- **Garnishment limits** -- ND follows federal Consumer Credit Protection Act (CCPA) limits: 25% of disposable earnings or 30 × federal minimum wage, whichever is less. Child support withholding orders take priority over creditor garnishments and may take up to 50-65% of disposable income under 15 U.S.C. § 1673(b)(2).  _(15 U.S.C. § 1673(b)(2))_
+- **Garnishment limits** -- ND follows federal Consumer Credit Protection Act (CCPA) limits: 25% of disposable earnings or 30 × federal minimum wage, whichever is less. Child support withholding orders take priority over creditor garnishments and may take up to 50-65% of disposable income under 15 U.S.C. § 1673(b)(2).  _(15 U.S.C. § 1673(b)(2))_ (read 2026-10-28)
 
 ### 12.3 Child support withholding
 
-- **IWO processing requirements** -- Employers receive an Income Withholding for Support (IWO) from the ND CSD or another state's agency. Withholding must begin no later than the first pay period after 14 days from the date the IWO was mailed. Remittance to the ND State Disbursement Unit within 7 business days of withholding.
+- **IWO processing requirements** -- Employers receive an Income Withholding for Support (IWO) from the ND CSD or another state's agency. Withholding must begin no later than the first pay period after 14 days from the date the IWO was mailed. Remittance to the ND State Disbursement Unit within 7 business days of withholding. (read 2026-10-28)
 
 ## Section 13: Tier 1 deterministic rules vs Tier 2 judgment rules
 
@@ -482,18 +513,18 @@ The 1.5% supplemental rate is below Carla's marginal rate of 2.50%, so she will 
 
 ### Key URLs (all visited 2026-05-28)
 
-- ND Tax Commissioner -- Withholding: https://www.tax.nd.gov/business/income-tax-withholding
-- 2025 Withholding Booklet PDF: https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf
-- Form 306: https://www.tax.nd.gov/sites/www/files/documents/forms/business/it-withholding/form-306-web.pdf
-- Form NDW-R: https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf
-- Withholding Guideline: https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/it-withhold/income-tax-withholding-information-returns-guideline.pdf
-- JSND 2025 UI Rate Schedules: https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2025.pdf
-- JSND Employer Handbook: https://www.library.nd.gov/statedocs/JobService/jsnd4036.pdf
-- HB 1158 (2023): https://ndlegis.gov/assembly/68-2023/regular/documents/23-0351-02000.pdf
-- WSI: https://www.workforcesafety.com
-- TAP: https://apps.nd.gov/tax/tap
-- UI EASY: https://www.jobsnd.com
-- ND CSD new-hire: https://www.nd.gov/childsupport
+- ND Tax Commissioner -- Withholding: https://www.tax.nd.gov/business/income-tax-withholding (read 2026-10-28)
+- 2025 Withholding Booklet PDF: https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf (read 2026-10-28)
+- Form 306: https://www.tax.nd.gov/sites/www/files/documents/forms/business/it-withholding/form-306-web.pdf (read 2026-10-28)
+- Form NDW-R: https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf (read 2026-10-28)
+- Withholding Guideline: https://www.tax.nd.gov/sites/www/files/documents/guidelines/business/it-withhold/income-tax-withholding-information-returns-guideline.pdf (read 2026-10-28)
+- JSND 2025 UI Rate Schedules: https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2025.pdf (read 2026-10-28)
+- JSND Employer Handbook: https://www.library.nd.gov/statedocs/JobService/jsnd4036.pdf (read 2026-10-28)
+- HB 1158 (2023): https://ndlegis.gov/assembly/68-2023/regular/documents/23-0351-02000.pdf (read 2026-10-28)
+- WSI: https://www.workforcesafety.com (read 2026-10-28)
+- TAP: https://apps.nd.gov/tax/tap (read 2026-10-28)
+- UI EASY: https://www.jobsnd.com (read 2026-10-28)
+- ND CSD new-hire: https://www.nd.gov/childsupport (read 2026-10-28)
 
 ## Disclaimer
 

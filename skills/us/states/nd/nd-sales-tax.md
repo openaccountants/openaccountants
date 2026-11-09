@@ -1,7 +1,7 @@
 ---
 name: nd-sales-tax
 description: Use this skill whenever asked about North Dakota sales and use tax. Trigger on phrases like "North Dakota sales tax", "ND sales tax", "NDCC §57-39.2", "ND SST". ALWAYS load us-sales-tax first.
-version: 2.1
+version: 2.2
 jurisdiction: US-ND
 tax_year: 2026
 last_updated: 2026-11-09

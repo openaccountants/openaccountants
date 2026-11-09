@@ -9,7 +9,7 @@ tier: 2
 status: needs_sources
 domain: income-tax
 tax_year_notes: Guide updated for tax year 2026; figures cite sources read during the 2026 review (see Sources).
-version: 2.1
+version: 2.2
 ---
 
 # ND Corporate Tax

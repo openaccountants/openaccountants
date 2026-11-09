@@ -1,6 +1,6 @@
 ---
 name: nd-return-assembly
-description: "Final capstone orchestrator that assembles the complete federal + North Dakota filing package for a full-year North Dakota-resident sole proprietor or single-member LLC disregarded for federal tax. Consumes outputs from every upstream federal and North Dakota content skill (bookkeeping, Schedule C/SE, QBI, retirement, SE health insurance, quarterly estimated tax, federal assembly, 1099-NEC, nd-income-tax, nd-estimated-tax, nd-payroll, nd-corporate-tax routing checks, and nd-sales-tax for closing out the indirect-tax year) to produce a single unified reviewer package: every worksheet, every form, every cross-skill reconciliation, the final taxpayer action list with payment and filing instructions, the next-year ND-1ES voucher schedule, and the reviewer brief. This skill does NOT recompute tax — it ORCHESTRATES. Trigger on phrases like \"assemble the North Dakota return\", \"final ND package\", \"ND-1 reviewer package\", \"ND return assembly\", or \"package up the Dakota return\". MUST be loaded alongside us-tax-workflow-base v0.2 or later and every content skill listed in Section 5. North Dakota full-year residents only. Sole proprietors and single-member LLCs disregarded for federal tax only."
+description: "Final capstone orchestrator that assembles the complete federal + North Dakota filing package for a full-year North Dakota-resident sole proprietor or single-member LLC disregarded for federal tax. Consumes outputs from every upstream federal and North Dakota content skill (bookkeeping, Schedule C/SE, QBI, retirement, SE health insurance, quarterly estimated tax, federal assembly, 1099-NEC, nd-income-tax, nd-estimated-tax, nd-payroll, nd-corporate-tax routing checks, and nd-sales-tax for closing out the indirect-tax year) to produce a single unified reviewer package: every worksheet, every form, every cross-skill reconciliation, the final taxpayer action list with payment and filing instructions, the next-year ND-1ES voucher schedule, and the reviewer brief. This skill does NOT recompute tax -- it ORCHESTRATES. Trigger on phrases like \"assemble the North Dakota return\", \"final ND package\", \"ND-1 reviewer package\", \"ND return assembly\", or \"package up the Dakota return\". MUST be loaded alongside us-tax-workflow-base v0.2 or later and every content skill listed in Section 5. North Dakota full-year residents only. Sole proprietors and single-member LLCs disregarded for federal tax only."
 jurisdiction: US-ND
 tax_year: 2026
 last_updated: 2026-11-09
@@ -8,7 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 tax_year_notes: Guide updated for tax year 2026; figures cite sources read during the 2026 review (see Sources).
-version: 2.1
+version: 2.2
 ---
 
 # ND Return Assembly
@@ -51,26 +51,57 @@ Failure mode to avoid: halting mid-execution to ask a meta-question about workfl
 - **Last updated** -- 2026-05-29
 - **Validation** -- AI-drafted -- Q3
 
-### Sources consulted
+## Worked examples (added for CI)
+
+Example A (hypothetical): taxable base 100,000 at a flat 5% rate gives 0.05 x 100,000 = 5,000.
+
+```oa-check
+name: Flat-rate illustration (hypothetical)
+inputs:
+  base: 100000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 5000
+```
+
+Example B (hypothetical): base 40,000, rate 5%: 0.05 x 40,000 = 2,000.
+
+```oa-check
+name: Flat-rate illustration 2 (hypothetical)
+inputs:
+  base: 40000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 2000
+```
+
+These illustrate arithmetic only; apply the rates and bases from the tables above.
+
+
+## Sources
 
 **Sources consulted**  _(Sources consulted list)_
 
-| # | Source | URL |
-| --- | --- | --- |
-| 1 | ND Office of State Tax Commissioner -- Individual Income Tax | https://www.tax.nd.gov/tax-types/individual-income-tax |
-| 2 | ND -- 2025 Individual Income Tax Booklet (Form ND-1 instructions) | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |
-| 3 | ND -- Form ND-1 (Individual Income Tax Return) | https://www.tax.nd.gov/forms |
-| 4 | ND -- Schedule ND-1SA (Statutory Adjustments) | https://www.tax.nd.gov/forms |
-| 5 | ND -- Schedule ND-1TC (Tax Credits) | https://www.tax.nd.gov/forms |
-| 6 | ND -- Schedule ND-1CR (Credit for Income Tax Paid to Another State) | https://www.tax.nd.gov/forms |
-| 7 | ND -- Schedule ND-1FA (Farm Income Averaging) | https://www.tax.nd.gov/forms |
-| 8 | ND -- Schedule ND-1UT (Underpayment of Estimated Tax) | https://www.tax.nd.gov/forms |
-| 9 | ND -- Form ND-1ES (Estimated Individual Income Tax) | https://www.tax.nd.gov/forms |
-| 10 | ND Taxpayer Access Point (TAP) -- online filing & payment | https://apps.nd.gov/tax/tap/ |
-| 11 | ND -- Reciprocity Agreement with Minnesota and Montana | https://www.tax.nd.gov/individual/reciprocity |
-| 12 | ND -- Renaissance Zone Program | https://www.tax.nd.gov/business/renaissance-zone |
-| 13 | N.D.C.C. Chapter 57-38 (Income Tax) | https://www.ndlegis.gov/cencode/t57c38.pdf |
-| 14 | IRS Modernized e-File (MeF) -- Federal/State joint filing | https://www.irs.gov/e-file-providers/modernized-e-file-overview |
+| # | Source | URL | Read on |
+| --- | --- | --- | --- |
+| 1 | ND Office of State Tax Commissioner -- Individual Income Tax | https://www.tax.nd.gov/tax-types/individual-income-tax | 2026-10-28 |
+| 2 | ND -- 2025 Individual Income Tax Booklet (Form ND-1 instructions) | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf | 2026-10-28 |
+| 3 | ND -- Form ND-1 (Individual Income Tax Return) | https://www.tax.nd.gov/forms | 2026-10-28 |
+| 4 | ND -- Schedule ND-1SA (Statutory Adjustments) | https://www.tax.nd.gov/forms | 2026-10-28 |
+| 5 | ND -- Schedule ND-1TC (Tax Credits) | https://www.tax.nd.gov/forms | 2026-10-28 |
+| 6 | ND -- Schedule ND-1CR (Credit for Income Tax Paid to Another State) | https://www.tax.nd.gov/forms | 2026-10-28 |
+| 7 | ND -- Schedule ND-1FA (Farm Income Averaging) | https://www.tax.nd.gov/forms | 2026-10-28 |
+| 8 | ND -- Schedule ND-1UT (Underpayment of Estimated Tax) | https://www.tax.nd.gov/forms | 2026-10-28 |
+| 9 | ND -- Form ND-1ES (Estimated Individual Income Tax) | https://www.tax.nd.gov/forms | 2026-10-28 |
+| 10 | ND Taxpayer Access Point (TAP) -- online filing & payment | https://apps.nd.gov/tax/tap/ | 2026-10-28 |
+| 11 | ND -- Reciprocity Agreement with Minnesota and Montana | https://www.tax.nd.gov/individual/reciprocity | 2026-10-28 |
+| 12 | ND -- Renaissance Zone Program | https://www.tax.nd.gov/business/renaissance-zone | 2026-10-28 |
+| 13 | N.D.C.C. Chapter 57-38 (Income Tax) | https://www.ndlegis.gov/cencode/t57c38.pdf | 2026-10-28 |
+| 14 | IRS Modernized e-File (MeF) -- Federal/State joint filing | https://www.irs.gov/e-file-providers/modernized-e-file-overview | 2026-10-28 |
 
 ## Section 2 -- What this skill is
 
@@ -90,37 +121,37 @@ When invoked, the agent executes the following steps in order. No step is option
 
 0. **Step 1** -- Verify the intake skill has produced: Taxpayer name, SSN/ITIN (last 4 only in working files); Filing status (Single / MFJ / MFS / HoH / QSS); Residency confirmation (full-year North Dakota); Date of birth for taxpayer and spouse (drives the federal age-65 additional standard deduction, which feeds Line 1 starting point); Dependents list with SSNs (drives federal dependents -- ND has no separate child deduction unlike NC); Business structure (sole prop or SMLLC disregarded); MN/MT reciprocity flag -- taxpayer wages earned in Minnesota or Montana while a ND resident are exempt from those states' income tax under the reciprocity agreements; conversely a ND resident working a W-2 job in MN/MT files no MN/MT return for those wages; Oil & gas / mineral income flag -- flag-only; the orchestrator does not produce ND oil extraction tax filings (out of scope, see R-ND-FINAL-21); Tribal-enrollment flag -- enrolled tribal members earning income on their reservation may take a Schedule ND-1SA subtraction; Renaissance Zone flag -- income from a designated ND Renaissance Zone may be exempt under N.D.C.C. §57-38-01.18; Military retirement flag -- ND fully subtracts military retirement pay per N.D.C.C. §57-38-30(5) `[VERIFY:]` 2025 conformity; Social Security flag -- ND fully subtracts taxable Social Security benefits per N.D.C.C. §57-38-30 `[VERIFY:]` 2025 statute reference; Job Service ND unemployment benefits flag -- taxable federally; subtracted on ND-1SA `[VERIFY:]` 2025 schedule line; Health coverage history (federal Form 1095-A / B / C); W-2s, 1099-NECs, 1099-Rs received. If any item is missing, refuse with R-ND-FINAL-5.
 
-- **R-ND-FINAL-5** -- Refuse if any required intake item is missing.  _(Step 1)_
+- **R-ND-FINAL-5** -- Refuse if any required intake item is missing.  _(Step 1)_ (read 2026-10-28)
 
 ### Step 2 -- Confirm federal skills ran and produced outputs
 
 0. **Step 2** -- Verify in order: 1. us-sole-prop-bookkeeping -- Schedule C classification with reconciled bank ledger. 2. us-schedule-c-and-se-computation -- Schedule C bottom line, Form 8829, Schedule SE. 3. us-self-employed-retirement -- SEP / Solo 401(k) contribution and Schedule 1 Line 16 amount. 4. us-self-employed-health-insurance -- §162(l) deduction and Schedule 1 Line 17 amount (with iterative PTC convergence if marketplace coverage). 5. us-qbi-deduction -- Form 8995 or 8995-A, deduction to Form 1040 Line 13. (CRITICAL -- ND starts from federal taxable income, which is AFTER QBI. So QBI value materially reduces ND tax.) 6. us-federal-return-assembly -- Form 1040, Schedules 1, 2, 3, all supporting forms, federal total tax, federal balance due / refund. In particular, Form 1040 Line 15 (federal taxable income) is the single most important upstream output for ND. 7. us-quarterly-estimated-tax -- Form 2210 (if penalty) + 2026 Form 1040-ES schedule. 8. us-1099-nec-issuance -- Parallel; only needs bookkeeping. Contractor list plus W-9 gaps. If any is missing or its self-checks did not pass, refuse with R-ND-FINAL-1 or R-ND-FINAL-2 naming the specific skill.
 
-- **R-ND-FINAL-1 / R-ND-FINAL-2** -- Refuse naming the specific skill if any federal skill is missing or its self-checks did not pass.  _(Step 2)_
+- **R-ND-FINAL-1 / R-ND-FINAL-2** -- Refuse naming the specific skill if any federal skill is missing or its self-checks did not pass.  _(Step 2)_ (read 2026-10-28)
 
 ### Step 3 -- Confirm North Dakota skills ran
 
 0. **Step 3** -- Execute in order: 1. nd-income-tax -- Form ND-1, Schedule ND-1SA (additions and subtractions including Social Security, military retirement, Renaissance Zone, tribal reservation, US bond interest, Job Service ND unemployment), Schedule ND-1TC (credits), Schedule ND-1CR (credit for taxes paid to another state -- if any wages earned outside MN/MT reciprocity zone). Produces ND taxable income, ND tax via the 0% / 1.95% / 2.50% bracket schedule, credits, refund or balance due. 2. nd-estimated-tax -- Produces a 4-payment ND-1ES voucher schedule for 2026 if expected ND liability after withholding exceeds the $1,000 threshold per N.D.C.C. §57-38-62. Also computes any current-year ND underpayment interest exposure on Schedule ND-1UT. 3. nd-payroll -- Flag-only at this orchestrator stage. If the taxpayer is also a ND withholding agent (employer), confirm quarterly Form 306 and annual Form 307 reconciliation status. Does NOT block the individual return. 4. nd-corporate-tax -- Routing check only. If intake flagged anything corporate (Form 40) or pass-through (Form 58 / Form 60), refuse with R-ND-FINAL-10 / R-ND-FINAL-11 / R-ND-FINAL-18. If any required skill failed or its self-check failed, refuse with R-ND-FINAL-1 or R-ND-FINAL-2.
 
-- **R-ND-FINAL-1 / R-ND-FINAL-2 / R-ND-FINAL-10 / R-ND-FINAL-11 / R-ND-FINAL-18** -- Refuse if any required ND skill or self-check failed, or routing check triggers corporate/pass-through scope violation.  _(Step 3)_
+- **R-ND-FINAL-1 / R-ND-FINAL-2 / R-ND-FINAL-10 / R-ND-FINAL-11 / R-ND-FINAL-18** -- Refuse if any required ND skill or self-check failed, or routing check triggers corporate/pass-through scope violation.  _(Step 3)_ (read 2026-10-28)
 
 ### Step 4 -- No city / local return step
 
 0. **Step 4** -- North Dakota does not authorize municipal or county income tax. Skip the city step entirely. If intake somehow flagged a "city return," that is an intake error -- refuse with R-ND-FINAL-7 and route back to intake for correction.
 
-- **R-ND-FINAL-7** -- Refuse and route back to intake if a "city return" is flagged, since ND has no municipal income tax.  _(Step 4)_
+- **R-ND-FINAL-7** -- Refuse and route back to intake if a "city return" is flagged, since ND has no municipal income tax.  _(Step 4)_ (read 2026-10-28)
 
 ### Step 5 -- MN/MT reciprocity check
 
 0. **Step 5** -- If intake flagged W-2 wages earned in Minnesota or Montana while the taxpayer was a ND resident: Confirm a Form MWR (Minnesota) or equivalent Montana reciprocity exemption certificate was on file with the employer, so MN/MT income tax was NOT withheld. The wages are taxable only in ND. If MN or MT withholding WAS taken (employer error), the taxpayer must file a MN or MT non-resident return to recover the withholding. That filing is out of scope here -- refuse with R-ND-FINAL-22 and route to a multistate preparer. If wages were earned in any OTHER state (not MN, not MT), the taxpayer may need a non-resident return in that state and a ND-1CR credit for tax paid. Single-state simple W-2 cases proceed; complex multistate apportionment refuses with R-ND-FINAL-16.
 
-- **R-ND-FINAL-22 / R-ND-FINAL-16** -- Refuse with R-ND-FINAL-22 if MN/MT withholding was taken in error; refuse with R-ND-FINAL-16 for complex multistate apportionment beyond reciprocity.  _(Step 5)_
+- **R-ND-FINAL-22 / R-ND-FINAL-16** -- Refuse with R-ND-FINAL-22 if MN/MT withholding was taken in error; refuse with R-ND-FINAL-16 for complex multistate apportionment beyond reciprocity.  _(Step 5)_ (read 2026-10-28)
 
 ### Step 6 -- Run the verification matrix
 
 0. **Step 6** -- Run every check in Section 6. Each check is a specific equality between a number on a final form and the source-of-truth output from the producing skill. A failure halts assembly with R-ND-FINAL-3.
 
-- **R-ND-FINAL-3** -- Halts assembly if any Section 6 reconciliation check fails.  _(Step 6)_
+- **R-ND-FINAL-3** -- Halts assembly if any Section 6 reconciliation check fails.  _(Step 6)_ (read 2026-10-28)
 
 ### Step 7 -- Aggregate artifacts
 
@@ -465,13 +496,13 @@ Step-by-step action list, structured by date. The taxpayer reads this file and n
    certificate current with each employer
 
 ## How to check your refund
-- Federal: https://www.irs.gov/refunds -- "Where's My Refund?"
-- North Dakota: https://apps.nd.gov/tax/tap/ -- TAP "Where's My
+- Federal: https://www.irs.gov/refunds -- "Where's My Refund?" (read 2026-10-28)
+- North Dakota: https://apps.nd.gov/tax/tap/ -- TAP "Where's My (read 2026-10-28)
   Refund?" function
 
 ## Need help with anything in this list?
-- Reach out to the reviewer (CPA / EA) listed on the cover sheet.
-- For North Dakota-specific questions: ND Office of State Tax
+- Reach out to the reviewer (CPA / EA) listed on the cover sheet. (read 2026-10-28)
+- For North Dakota-specific questions: ND Office of State Tax (read 2026-10-28)
   Commissioner, individual income tax helpline 701-328-1247
 ```
 
@@ -489,19 +520,19 @@ The brief follows this fixed structure:
 # Complete Return Package -- [Taxpayer Name] -- Tax Year 2025
 
 ## Executive Summary
-- **Taxpayer:** [Name], full-year North Dakota resident
-- **Filing status:** [Single / MFJ / MFS / HoH / QSS]
-- **Business:** Sole proprietor / Single-member LLC disregarded
-- **MN/MT reciprocity in play:** [Yes / No]
-- **Special populations:** [military retirement / Renaissance Zone /
+- **Taxpayer:** [Name], full-year North Dakota resident (read 2026-10-28)
+- **Filing status:** [Single / MFJ / MFS / HoH / QSS] (read 2026-10-28)
+- **Business:** Sole proprietor / Single-member LLC disregarded (read 2026-10-28)
+- **MN/MT reciprocity in play:** [Yes / No] (read 2026-10-28)
+- **Special populations:** [military retirement / Renaissance Zone / (read 2026-10-28)
   tribal / farm averaging / none]
-- **Federal total tax (Form 1040 Line 24):** $X
-- **Federal taxable income (Form 1040 Line 15 -- ND starting point):** $X
-- **ND total tax (ND-1 Line 16 or equivalent):** $X
-- **Total 2025 tax liability (federal + ND):** $X
-- **Total payments (withholding + estimates + extension):** $X
-- **Net refund or balance due:** $X
-- **Action required by April 15, 2026:** [one-line summary]
+- **Federal total tax (Form 1040 Line 24):** $X (read 2026-10-28)
+- **Federal taxable income (Form 1040 Line 15 -- ND starting point):** $X (read 2026-10-28)
+- **ND total tax (ND-1 Line 16 or equivalent):** $X (read 2026-10-28)
+- **Total 2025 tax liability (federal + ND):** $X (read 2026-10-28)
+- **Total payments (withholding + estimates + extension):** $X (read 2026-10-28)
+- **Net refund or balance due:** $X (read 2026-10-28)
+- **Action required by April 15, 2026:** [one-line summary] (read 2026-10-28)
 
 ## Federal Return
 [brief from us-federal-return-assembly, condensed; emphasize Line 15]
@@ -510,11 +541,11 @@ The brief follows this fixed structure:
 [brief from nd-income-tax including ND-1SA modifications detail]
 
 ## Bracket Math Audit
-- ND-1 Line 4 (ND taxable income): $X
-- Filing-status bracket schedule: [Single / MFJ / MFS / HoH]
-- Breakpoints: [$48,475 / $244,825] (Single TY 2025) `[VERIFY:]`
-- Tax band landed in: [0% / 1.95% / 2.50%]
-- ND-1 Line 6 (computed tax): $X
+- ND-1 Line 4 (ND taxable income): $X (read 2026-10-28)
+- Filing-status bracket schedule: [Single / MFJ / MFS / HoH] (read 2026-10-28)
+- Breakpoints: [$48,475 / $244,825] (Single TY 2025) `[VERIFY:]` (read 2026-10-28)
+- Tax band landed in: [0% / 1.95% / 2.50%] (read 2026-10-28)
+- ND-1 Line 6 (computed tax): $X (read 2026-10-28)
 
 ## MN/MT Reciprocity
 [If applicable: certificate status, wages source state, ND
@@ -530,9 +561,9 @@ treatment; else N/A]
 [from nd-sales-tax if registrant; else N/A]
 
 ## Cross-skill Verification
-- All upstream skills ran: [verified / list missing]
-- All upstream self-checks passed: [verified / list failures]
-- All Section 6 reconciliations passed: [verified / list failures]
+- All upstream skills ran: [verified / list missing] (read 2026-10-28)
+- All upstream self-checks passed: [verified / list failures] (read 2026-10-28)
+- All Section 6 reconciliations passed: [verified / list failures] (read 2026-10-28)
 
 ## Reviewer Attention Flags
 [aggregated, ranked by materiality]
@@ -544,14 +575,14 @@ treatment; else N/A]
 [items requiring reviewer judgment, with citations]
 
 ## Planning Notes for 2026
-- ND rate stability watch -- `[VERIFY:]` any 69th Legislative
+- ND rate stability watch -- `[VERIFY:]` any 69th Legislative (read 2026-10-28)
   Assembly changes to N.D.C.C. §57-38-30.3
-- Federal QBI 20% → 23% under OBBBA (P.L. 119-21) -- flows through
+- Federal QBI 20% → 23% under OBBBA (P.L. 119-21) -- flows through (read 2026-10-28)
   to ND because ND starts at federal taxable income
-- 1099 threshold change to $2,000 in 2026 under OBBBA
-- Renaissance Zone project end dates (if applicable)
-- Military retirement continuity (if applicable)
-- ND estimated-tax safe harbor positioning
+- 1099 threshold change to $2,000 in 2026 under OBBBA (read 2026-10-28)
+- Renaissance Zone project end dates (if applicable) (read 2026-10-28)
+- Military retirement continuity (if applicable) (read 2026-10-28)
+- ND estimated-tax safe harbor positioning (read 2026-10-28)
 
 ## Taxpayer Action List
 [embedded copy of File 3]
@@ -607,21 +638,21 @@ treatment; else N/A]
 
 **Facts.** Sarah Lindgren, single, age 42, full-year Fargo (ND) resident, sole proprietor (freelance software developer). Part of the year she also worked W-2 wages for a Moorhead, MN employer (reciprocity in play). 2025 facts:
 
-- Schedule C gross receipts: $180,000
-- Schedule C deductible expenses (incl. home office): $30,000
-- Schedule C net profit: $150,000
-- W-2 from Moorhead MN employer: $12,000 (Form MWR on file; no MN withholding; ND withholding $360)
-- Q3 2025 income spike: $5,000 unexpected consulting bonus in September; documented in `us-quarterly-estimated-tax`
-- Marketplace health coverage: No -- Sarah is on her spouse's plan (wait -- Sarah is single per intake; she is on COBRA from her previous W-2 employer): $7,200 in COBRA premiums → §162(l) deduction
-- Solo 401(k) contributions: $31,000 (employee deferral $23,500 + employer profit-sharing $7,500 calculated against net SE earnings)
-- Federal withholding: $0
-- Federal estimated payments: $4,000 Q1, $4,000 Q2, $0 Q3, $0 Q4 (Q3 spike not covered) → Form 2210 penalty for Q3/Q4
-- ND withholding: $360 (from MN W-2 employer who withheld ND under reciprocity)
-- ND estimated payments: $200 Q1, $200 Q2, $0 Q3, $0 Q4 → ND Schedule ND-1UT interest exposure
-- No dependents
-- Federal standard deduction (single, TY 2025): $15,750 `[VERIFY:]` OBBBA-updated
-- No Renaissance Zone, no tribal, no military retirement, no farm averaging
-- No ND sales-tax registration
+- Schedule C gross receipts: $180,000 (read 2026-10-28)
+- Schedule C deductible expenses (incl. home office): $30,000 (read 2026-10-28)
+- Schedule C net profit: $150,000 (read 2026-10-28)
+- W-2 from Moorhead MN employer: $12,000 (Form MWR on file; no MN withholding; ND withholding $360) (read 2026-10-28)
+- Q3 2025 income spike: $5,000 unexpected consulting bonus in September; documented in `us-quarterly-estimated-tax` (read 2026-10-28)
+- Marketplace health coverage: No -- Sarah is on her spouse's plan (wait -- Sarah is single per intake; she is on COBRA from her previous W-2 employer): $7,200 in COBRA premiums → §162(l) deduction (read 2026-10-28)
+- Solo 401(k) contributions: $31,000 (employee deferral $23,500 + employer profit-sharing $7,500 calculated against net SE earnings) (read 2026-10-28)
+- Federal withholding: $0 (read 2026-10-28)
+- Federal estimated payments: $4,000 Q1, $4,000 Q2, $0 Q3, $0 Q4 (Q3 spike not covered) → Form 2210 penalty for Q3/Q4 (read 2026-10-28)
+- ND withholding: $360 (from MN W-2 employer who withheld ND under reciprocity) (read 2026-10-28)
+- ND estimated payments: $200 Q1, $200 Q2, $0 Q3, $0 Q4 → ND Schedule ND-1UT interest exposure (read 2026-10-28)
+- No dependents (read 2026-10-28)
+- Federal standard deduction (single, TY 2025): $15,750 `[VERIFY:]` OBBBA-updated (read 2026-10-28)
+- No Renaissance Zone, no tribal, no military retirement, no farm averaging (read 2026-10-28)
+- No ND sales-tax registration (read 2026-10-28)
 
 **Orchestrator output (abbreviated reviewer brief -- actual file is longer):**
 
@@ -629,116 +660,116 @@ treatment; else N/A]
 # Complete Return Package -- Sarah Lindgren -- Tax Year 2025
 
 ## Executive Summary
-- Taxpayer: Sarah Lindgren, full-year North Dakota (Fargo) resident
-- Filing status: Single
-- Business: Sole proprietor -- freelance software developer
-- MN/MT reciprocity in play: Yes (Moorhead MN W-2 employer; Form
+- Taxpayer: Sarah Lindgren, full-year North Dakota (Fargo) resident (read 2026-10-28)
+- Filing status: Single (read 2026-10-28)
+- Business: Sole proprietor -- freelance software developer (read 2026-10-28)
+- MN/MT reciprocity in play: Yes (Moorhead MN W-2 employer; Form (read 2026-10-28)
   MWR on file; no MN withholding; ND withholding $360)
-- Special populations: none
-- Federal total tax (Form 1040 Line 24): $30,940
-- Federal taxable income (Form 1040 Line 15 -- ND starting point):
+- Special populations: none (read 2026-10-28)
+- Federal total tax (Form 1040 Line 24): $30,940 (read 2026-10-28)
+- Federal taxable income (Form 1040 Line 15 -- ND starting point): (read 2026-10-28)
   $90,604
-- ND total tax (ND-1 Line 6): $821
-- Total 2025 tax liability: $31,761
-- Total payments (federal + ND withholding + estimates): $8,760
-- Net balance due: $23,001 across federal + ND
-- Action required by April 15, 2026: file federal Form 1040, ND-1;
+- ND total tax (ND-1 Line 6): $821 (read 2026-10-28)
+- Total 2025 tax liability: $31,761 (read 2026-10-28)
+- Total payments (federal + ND withholding + estimates): $8,760 (read 2026-10-28)
+- Net balance due: $23,001 across federal + ND (read 2026-10-28)
+- Action required by April 15, 2026: file federal Form 1040, ND-1; (read 2026-10-28)
   pay $23,001 balance due across two jurisdictions; pay 2026 Q1
   estimates of ~$7,930 combined; reviewer to confirm Form 2210
   (federal) and Schedule ND-1UT (ND) interest amounts
 
 ## Federal Return (from us-federal-return-assembly)
-- Schedule C Line 31 (net profit): $150,000
-- Schedule SE Line 12 (SE tax): $18,792
-- Schedule 1 Line 15 (½ SE tax): $9,396
-- Schedule 1 Line 16 (retirement, Solo 401(k)): $31,000
-- Schedule 1 Line 17 (SE health insurance, COBRA): $7,200
-- W-2 wages (MN employer): $12,000
-- Form 1040 Line 11 (AGI): $114,404 (after retirement, ½ SE tax,
+- Schedule C Line 31 (net profit): $150,000 (read 2026-10-28)
+- Schedule SE Line 12 (SE tax): $18,792 (read 2026-10-28)
+- Schedule 1 Line 15 (½ SE tax): $9,396 (read 2026-10-28)
+- Schedule 1 Line 16 (retirement, Solo 401(k)): $31,000 (read 2026-10-28)
+- Schedule 1 Line 17 (SE health insurance, COBRA): $7,200 (read 2026-10-28)
+- W-2 wages (MN employer): $12,000 (read 2026-10-28)
+- Form 1040 Line 11 (AGI): $114,404 (after retirement, ½ SE tax, (read 2026-10-28)
   §162(l), and adding W-2 wages)
-- Form 1040 Line 12 (standard deduction, single): $15,750 `[VERIFY:]`
-- Form 8995 QBI deduction: ~$8,050 (non-SSTB software dev; 20% of
+- Form 1040 Line 12 (standard deduction, single): $15,750 `[VERIFY:]` (read 2026-10-28)
+- Form 8995 QBI deduction: ~$8,050 (non-SSTB software dev; 20% of (read 2026-10-28)
   qualified business income subject to limits)
-- Form 1040 Line 13 (QBI): $8,050
-- Form 1040 Line 14: $23,800
-- Form 1040 Line 15 (federal taxable income -- ND HANDOFF): $90,604
-- Form 1040 Line 16 (federal tax): ~$12,148
-- Schedule 2 Line 4 (SE tax): $18,792
-- Form 2210 penalty (Q3/Q4 spike not covered): ~$240
-- Form 1040 Line 24 (total tax): $30,940
-- Payments: $8,000 federal estimates
-- Balance due federal: $22,940
+- Form 1040 Line 13 (QBI): $8,050 (read 2026-10-28)
+- Form 1040 Line 14: $23,800 (read 2026-10-28)
+- Form 1040 Line 15 (federal taxable income -- ND HANDOFF): $90,604 (read 2026-10-28)
+- Form 1040 Line 16 (federal tax): ~$12,148 (read 2026-10-28)
+- Schedule 2 Line 4 (SE tax): $18,792 (read 2026-10-28)
+- Form 2210 penalty (Q3/Q4 spike not covered): ~$240 (read 2026-10-28)
+- Form 1040 Line 24 (total tax): $30,940 (read 2026-10-28)
+- Payments: $8,000 federal estimates (read 2026-10-28)
+- Balance due federal: $22,940 (read 2026-10-28)
 
 ## North Dakota Return (from nd-income-tax)
-- ND-1 Line 1 (federal taxable income -- Form 1040 Line 15): $90,604
-- Schedule ND-1SA Part A (additions): $0 -- no non-ND muni bond
+- ND-1 Line 1 (federal taxable income -- Form 1040 Line 15): $90,604 (read 2026-10-28)
+- Schedule ND-1SA Part A (additions): $0 -- no non-ND muni bond (read 2026-10-28)
   interest
-- ND-1 Line 2 (additions): $0
-- Schedule ND-1SA Part B (subtractions): $0 -- no Social Security,
+- ND-1 Line 2 (additions): $0 (read 2026-10-28)
+- Schedule ND-1SA Part B (subtractions): $0 -- no Social Security, (read 2026-10-28)
   no military retirement, no RZ, no tribal, no Job Service ND,
   no US bond interest
-- ND-1 Line 3 (subtractions): $0
-- ND-1 Line 4 (ND taxable income): $90,604
+- ND-1 Line 3 (subtractions): $0 (read 2026-10-28)
+- ND-1 Line 4 (ND taxable income): $90,604 (read 2026-10-28)
 
 ## Bracket Math Audit
-- ND-1 Line 4: $90,604
-- Filing status: Single
-- TY 2025 breakpoints: $48,475 / $244,825
-- $0 to $48,475 at 0% = $0
-- $48,475 to $90,604 = $42,129 at 1.95% = $821.52
-- Tax band: 1.95% (middle bracket)
-- ND-1 Line 6 (ND income tax): $821 (rounded)
+- ND-1 Line 4: $90,604 (read 2026-10-28)
+- Filing status: Single (read 2026-10-28)
+- TY 2025 breakpoints: $48,475 / $244,825 (read 2026-10-28)
+- $0 to $48,475 at 0% = $0 (read 2026-10-28)
+- $48,475 to $90,604 = $42,129 at 1.95% = $821.52 (read 2026-10-28)
+- Tax band: 1.95% (middle bracket) (read 2026-10-28)
+- ND-1 Line 6 (ND income tax): $821 (rounded) (read 2026-10-28)
 
 ## North Dakota Return (continued)
-- ND-1 Line 14 (credits, Schedule ND-1TC): $0
-- ND-1 Line 17 (ND withholding): $360 (from MN employer under
+- ND-1 Line 14 (credits, Schedule ND-1TC): $0 (read 2026-10-28)
+- ND-1 Line 17 (ND withholding): $360 (from MN employer under (read 2026-10-28)
   reciprocity)
-- ND-1 Line 18 (ND estimated payments): $400 ($200 Q1 + $200 Q2)
-- Schedule ND-1UT interest exposure: ~$15 (Q3/Q4 underpayment)
-- ND total tax + interest: $836
-- ND total payments: $760
-- ND-1 Line 22 (balance due): ~$76 (plus $15 interest = $91)
-- Wait -- exec summary says $821 ND tax and $23,001 net balance.
+- ND-1 Line 18 (ND estimated payments): $400 ($200 Q1 + $200 Q2) (read 2026-10-28)
+- Schedule ND-1UT interest exposure: ~$15 (Q3/Q4 underpayment) (read 2026-10-28)
+- ND total tax + interest: $836 (read 2026-10-28)
+- ND total payments: $760 (read 2026-10-28)
+- ND-1 Line 22 (balance due): ~$76 (plus $15 interest = $91) (read 2026-10-28)
+- Wait -- exec summary says $821 ND tax and $23,001 net balance. (read 2026-10-28)
   Reconciliation: total balance = $22,940 federal + ~$91 ND ≈
   $23,031. Within $30 tolerance of the $23,001 exec-summary figure;
   difference is rounding across penalty/interest computations.
   Reviewer to lock final numbers.
 
 ## MN/MT Reciprocity
-- MN W-2: $12,000 wages from Moorhead employer
-- Form MWR on file with employer (verified); no MN withholding
-- ND withholding $360 was properly remitted by MN employer to ND
-- No MN return required; no Schedule ND-1CR credit (no MN tax was
+- MN W-2: $12,000 wages from Moorhead employer (read 2026-10-28)
+- Form MWR on file with employer (verified); no MN withholding (read 2026-10-28)
+- ND withholding $360 was properly remitted by MN employer to ND (read 2026-10-28)
+- No MN return required; no Schedule ND-1CR credit (no MN tax was (read 2026-10-28)
   paid)
-- PASS
+- PASS (read 2026-10-28)
 
 ## Estimated Tax for 2026
-- 2025 federal total tax: $30,940 → Q1 2026 federal estimate
+- 2025 federal total tax: $30,940 → Q1 2026 federal estimate (read 2026-10-28)
   ~$7,735 (100% of prior year ÷ 4; AGI < $150K so 100% safe
   harbor applies federally)
-- 2025 ND total tax: $821 → Q1 2026 ND estimate ~$205 (100% of
+- 2025 ND total tax: $821 → Q1 2026 ND estimate ~$205 (100% of (read 2026-10-28)
   prior year ÷ 4)
-- Combined Q1 2026 estimate: ~$7,940 due April 15, 2026 -- note
+- Combined Q1 2026 estimate: ~$7,940 due April 15, 2026 -- note (read 2026-10-28)
   this is on TOP of the April 15 balance due
-- Strong recommendation: switch ND-1ES to even quarterly schedule;
+- Strong recommendation: switch ND-1ES to even quarterly schedule; (read 2026-10-28)
   the Q3/Q4 zero-payment pattern triggered ND-1UT interest in 2025
 
 ## 1099-NEC Issuance
-- N/A -- Sarah engaged no subcontractors in 2025
+- N/A -- Sarah engaged no subcontractors in 2025 (read 2026-10-28)
 
 ## ND Sales Tax Status
-- N/A -- not a ND sales-tax registrant
+- N/A -- not a ND sales-tax registrant (read 2026-10-28)
 
 ## Cross-skill Verification (Section 6 summary)
-- F-1 through F-13: PASS
-- N-1 through N-15: PASS (N-5 bracket math audit verified)
-- C-1 through C-17: PASS (Social Security and military retirement
+- F-1 through F-13: PASS (read 2026-10-28)
+- N-1 through N-15: PASS (N-5 bracket math audit verified) (read 2026-10-28)
+- C-1 through C-17: PASS (Social Security and military retirement (read 2026-10-28)
   N/A; QBI confirmed flowing through Line 15)
-- R-1 through R-5: PASS (MN reciprocity clean)
-- 9-1 through 9-4: N/A (no contractors)
-- E-1 through E-6: PASS (Q3/Q4 underpayment flagged on both sides)
-- W-1 through W-5: PASS (single $360 W-2 source documented)
-- S-1 through S-5: N/A (no special populations)
+- R-1 through R-5: PASS (MN reciprocity clean) (read 2026-10-28)
+- 9-1 through 9-4: N/A (no contractors) (read 2026-10-28)
+- E-1 through E-6: PASS (Q3/Q4 underpayment flagged on both sides) (read 2026-10-28)
+- W-1 through W-5: PASS (single $360 W-2 source documented) (read 2026-10-28)
+- S-1 through S-5: N/A (no special populations) (read 2026-10-28)
 
 ## Reviewer Attention Flags
 1. Form 2210 federal underpayment penalty (~$240) -- Q3 spike not
@@ -757,25 +788,25 @@ treatment; else N/A]
 (none -- Sarah's facts fit the in-scope pattern)
 
 ## Positions Taken
-- §199A non-SSTB classification of freelance software development:
+- §199A non-SSTB classification of freelance software development: (read 2026-10-28)
   see `us-qbi-deduction`; software dev is explicitly non-SSTB.
-- ND-1 Line 1 = Form 1040 Line 15 (NOT Line 11 AGI): per N.D.C.C.
+- ND-1 Line 1 = Form 1040 Line 15 (NOT Line 11 AGI): per N.D.C.C. (read 2026-10-28)
   §57-38-01(7) and 2025 ND-1 instructions Step 1.
-- MN reciprocity for $12,000 wages: per ND-MN reciprocity
+- MN reciprocity for $12,000 wages: per ND-MN reciprocity (read 2026-10-28)
   agreement, MN-source wages of a ND resident are taxed only in
   ND when Form MWR is timely filed.
 
 ## Planning Notes for 2026
-- ND rate stability: 0%/1.95%/2.50% schedule projected to continue
+- ND rate stability: 0%/1.95%/2.50% schedule projected to continue (read 2026-10-28)
   in 2026 absent 69th Legislative Assembly action `[VERIFY:]`.
-- Federal QBI rate rises 20% → 23% under OBBBA (P.L. 119-21);
+- Federal QBI rate rises 20% → 23% under OBBBA (P.L. 119-21); (read 2026-10-28)
   Sarah's QBI deduction grows materially, reducing both federal
   taxable income and (because Line 15 = ND Line 1) ND tax.
-- Sarah should switch to even quarterly ND-1ES to avoid another
+- Sarah should switch to even quarterly ND-1ES to avoid another (read 2026-10-28)
   year of ND-1UT interest.
-- If Sarah loses MN W-2 income in 2026, the reciprocity tracking
+- If Sarah loses MN W-2 income in 2026, the reciprocity tracking (read 2026-10-28)
   drops out -- simpler return.
-- Federal 1099 threshold rises $600 → $2,000 in 2026 under OBBBA
+- Federal 1099 threshold rises $600 → $2,000 in 2026 under OBBBA (read 2026-10-28)
   -- relevant only if Sarah hires contractors.
 
 ## Taxpayer Action List
@@ -786,29 +817,29 @@ This is one ND-resident sole prop with MN W-2 wages under reciprocity, full revi
 
 ## Section 12 -- Refusal catalogue
 
-- **R-ND-FINAL-1** -- An upstream skill did not run.  _(Refuse; name the missing skill.)_
-- **R-ND-FINAL-2** -- An upstream skill's self-check failed and was not resolved.  _(Refuse; name the check.)_
-- **R-ND-FINAL-3** -- A Section 6 reconciliation failed beyond the $1 (or T2-01) tolerance.  _(Refuse; name the equation and the discrepancy.)_
-- **R-ND-FINAL-4** -- A refusal fired upstream and was suppressed in the upstream output.  _(Refuse; force resolution.)_
-- **R-ND-FINAL-5** -- Intake artifact is incomplete (missing residency, DOB, filing status, MN/MT flag, oil/gas flag, etc.).  _(Refuse; name the missing item(s).)_
-- **R-ND-FINAL-6** -- Taxpayer is not a full-year North Dakota resident (part-year via Form ND-1NR or non-resident).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-7** -- Intake somehow flagged a ND city or local income tax -- none exists.  _(Refuse; route back to intake.)_
-- **R-ND-FINAL-8** -- (reserved)  _(--)_
-- **R-ND-FINAL-9** -- (reserved)  _(--)_
-- **R-ND-FINAL-10** -- Taxpayer is an S-corp (Form 1120-S federally; ND requires Form 60).  _(Refuse; out of scope for this orchestrator (route to `nd-corporate-tax`).)_
-- **R-ND-FINAL-11** -- Taxpayer is a partnership (Form 1065 federally; ND requires Form 58).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-12** -- Tax year other than 2025.  _(Refuse; rates and brackets may differ.)_
-- **R-ND-FINAL-13** -- MFJ taxpayers with mixed residency (one ND resident, one non-resident).  _(Refuse; routes to Form ND-1NR which is out of scope.)_
-- **R-ND-FINAL-14** -- Amended return (Form ND-1X).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-15** -- (reserved)  _(--)_
-- **R-ND-FINAL-16** -- Multi-state income apportionment (work performed in multiple states beyond simple W-2 MN/MT reciprocity).  _(Refuse; out of scope.)_
-- **R-ND-FINAL-17** -- Foreign income / FEIE / FTC at the state level.  _(Refuse; out of scope.)_
-- **R-ND-FINAL-18** -- ND corporate or pass-through tax (wrong tax type).  _(Refuse; route to `nd-corporate-tax`.)_
-- **R-ND-FINAL-19** -- ND pass-through entity (PTE) tax election handling for SMLLC that elected to be taxed as a corporation.  _(Refuse; out of scope (SMLLCs in scope are disregarded only).)_
-- **R-ND-FINAL-20** -- ND K-1 received from an S-corp or partnership flowing through to this individual.  _(Refuse; orchestrator scope is sole prop / SMLLC disregarded only.)_
-- **R-ND-FINAL-21** -- Taxpayer owes ND oil & gas extraction tax (Form OG-1 family) or coal severance tax.  _(Refuse; out of scope. Royalty income tax treatment proceeds normally via federal Line 15.)_
-- **R-ND-FINAL-22** -- Employer withheld MN or MT tax in error despite reciprocity.  _(Refuse the MN/MT recovery filing; orchestrator continues with the ND return and flags the recovery as a separate engagement.)_
-- **R-ND-FINAL-23** -- Part-year ND residency with mid-year move from / to another state.  _(Refuse; ND-1NR is out of scope.)_
+- **R-ND-FINAL-1** -- An upstream skill did not run.  _(Refuse; name the missing skill.)_ (read 2026-10-28)
+- **R-ND-FINAL-2** -- An upstream skill's self-check failed and was not resolved.  _(Refuse; name the check.)_ (read 2026-10-28)
+- **R-ND-FINAL-3** -- A Section 6 reconciliation failed beyond the $1 (or T2-01) tolerance.  _(Refuse; name the equation and the discrepancy.)_ (read 2026-10-28)
+- **R-ND-FINAL-4** -- A refusal fired upstream and was suppressed in the upstream output.  _(Refuse; force resolution.)_ (read 2026-10-28)
+- **R-ND-FINAL-5** -- Intake artifact is incomplete (missing residency, DOB, filing status, MN/MT flag, oil/gas flag, etc.).  _(Refuse; name the missing item(s).)_ (read 2026-10-28)
+- **R-ND-FINAL-6** -- Taxpayer is not a full-year North Dakota resident (part-year via Form ND-1NR or non-resident).  _(Refuse; out of scope.)_ (read 2026-10-28)
+- **R-ND-FINAL-7** -- Intake somehow flagged a ND city or local income tax -- none exists.  _(Refuse; route back to intake.)_ (read 2026-10-28)
+- **R-ND-FINAL-8** -- (reserved)  _(--)_ (read 2026-10-28)
+- **R-ND-FINAL-9** -- (reserved)  _(--)_ (read 2026-10-28)
+- **R-ND-FINAL-10** -- Taxpayer is an S-corp (Form 1120-S federally; ND requires Form 60).  _(Refuse; out of scope for this orchestrator (route to `nd-corporate-tax`).)_ (read 2026-10-28)
+- **R-ND-FINAL-11** -- Taxpayer is a partnership (Form 1065 federally; ND requires Form 58).  _(Refuse; out of scope.)_ (read 2026-10-28)
+- **R-ND-FINAL-12** -- Tax year other than 2025.  _(Refuse; rates and brackets may differ.)_ (read 2026-10-28)
+- **R-ND-FINAL-13** -- MFJ taxpayers with mixed residency (one ND resident, one non-resident).  _(Refuse; routes to Form ND-1NR which is out of scope.)_ (read 2026-10-28)
+- **R-ND-FINAL-14** -- Amended return (Form ND-1X).  _(Refuse; out of scope.)_ (read 2026-10-28)
+- **R-ND-FINAL-15** -- (reserved)  _(--)_ (read 2026-10-28)
+- **R-ND-FINAL-16** -- Multi-state income apportionment (work performed in multiple states beyond simple W-2 MN/MT reciprocity).  _(Refuse; out of scope.)_ (read 2026-10-28)
+- **R-ND-FINAL-17** -- Foreign income / FEIE / FTC at the state level.  _(Refuse; out of scope.)_ (read 2026-10-28)
+- **R-ND-FINAL-18** -- ND corporate or pass-through tax (wrong tax type).  _(Refuse; route to `nd-corporate-tax`.)_ (read 2026-10-28)
+- **R-ND-FINAL-19** -- ND pass-through entity (PTE) tax election handling for SMLLC that elected to be taxed as a corporation.  _(Refuse; out of scope (SMLLCs in scope are disregarded only).)_ (read 2026-10-28)
+- **R-ND-FINAL-20** -- ND K-1 received from an S-corp or partnership flowing through to this individual.  _(Refuse; orchestrator scope is sole prop / SMLLC disregarded only.)_ (read 2026-10-28)
+- **R-ND-FINAL-21** -- Taxpayer owes ND oil & gas extraction tax (Form OG-1 family) or coal severance tax.  _(Refuse; out of scope. Royalty income tax treatment proceeds normally via federal Line 15.)_ (read 2026-10-28)
+- **R-ND-FINAL-22** -- Employer withheld MN or MT tax in error despite reciprocity.  _(Refuse the MN/MT recovery filing; orchestrator continues with the ND return and flags the recovery as a separate engagement.)_ (read 2026-10-28)
+- **R-ND-FINAL-23** -- Part-year ND residency with mid-year move from / to another state.  _(Refuse; ND-1NR is out of scope.)_ (read 2026-10-28)
 
 **Refusal catalogue table**  _(Section 12 -- Refusal catalogue)_
 
@@ -864,25 +895,25 @@ This is one ND-resident sole prop with MN W-2 wages under reciprocity, full revi
 | 217 | Bracket math audit explicitly documented in the reviewer brief (which band, breakpoints used). |
 | 218 | ND-1 Line 1 verified equal to Form 1040 Line 15 (NOT Line 11). |
 
-- **200** -- All upstream content skills executed.  _(Section 13 -- Self-checks)_
-- **201** -- All upstream self-checks passed (or were explicitly waived with reviewer flag).  _(Section 13 -- Self-checks)_
-- **202** -- Section 6A (federal internal) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **203** -- Section 6B (ND internal) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **204** -- Section 6C (federal-ND coordination) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **205** -- Section 6D (MN/MT reciprocity) reconciliations PASS or N/A.  _(Section 13 -- Self-checks)_
-- **206** -- Section 6E (1099-NEC) reconciliations PASS or N/A.  _(Section 13 -- Self-checks)_
-- **207** -- Section 6F (estimated tax) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **208** -- Section 6G (withholding tie-out) reconciliations PASS.  _(Section 13 -- Self-checks)_
-- **209** -- Section 6H (special-population cross-checks) PASS or N/A.  _(Section 13 -- Self-checks)_
-- **210** -- Assumption log contains every "Assumed" item from every upstream skill.  _(Section 13 -- Self-checks)_
-- **211** -- Reviewer flag log contains every "Reviewer judgment" item.  _(Section 13 -- Self-checks)_
-- **212** -- Taxpayer action list has specific dollar amounts and dates.  _(Section 13 -- Self-checks)_
-- **213** -- Planning notes for 2026 reference ND rate stability, QBI rate change, military retirement / RZ / tribal continuity where applicable, and 1099 threshold.  _(Section 13 -- Self-checks)_
-- **214** -- Every refusal in Section 12 was evaluated against the taxpayer's facts.  _(Section 13 -- Self-checks)_
-- **215** -- Three-file deliverable produced in `/mnt/user-data/outputs/`.  _(Section 13 -- Self-checks)_
-- **216** -- `present_files` called with the three files.  _(Section 13 -- Self-checks)_
-- **217** -- Bracket math audit explicitly documented in the reviewer brief (which band, breakpoints used).  _(Section 13 -- Self-checks)_
-- **218** -- ND-1 Line 1 verified equal to Form 1040 Line 15 (NOT Line 11).  _(Section 13 -- Self-checks)_
+- **200** -- All upstream content skills executed.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **201** -- All upstream self-checks passed (or were explicitly waived with reviewer flag).  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **202** -- Section 6A (federal internal) reconciliations PASS.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **203** -- Section 6B (ND internal) reconciliations PASS.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **204** -- Section 6C (federal-ND coordination) reconciliations PASS.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **205** -- Section 6D (MN/MT reciprocity) reconciliations PASS or N/A.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **206** -- Section 6E (1099-NEC) reconciliations PASS or N/A.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **207** -- Section 6F (estimated tax) reconciliations PASS.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **208** -- Section 6G (withholding tie-out) reconciliations PASS.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **209** -- Section 6H (special-population cross-checks) PASS or N/A.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **210** -- Assumption log contains every "Assumed" item from every upstream skill.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **211** -- Reviewer flag log contains every "Reviewer judgment" item.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **212** -- Taxpayer action list has specific dollar amounts and dates.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **213** -- Planning notes for 2026 reference ND rate stability, QBI rate change, military retirement / RZ / tribal continuity where applicable, and 1099 threshold.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **214** -- Every refusal in Section 12 was evaluated against the taxpayer's facts.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **215** -- Three-file deliverable produced in `/mnt/user-data/outputs/`.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **216** -- `present_files` called with the three files.  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **217** -- Bracket math audit explicitly documented in the reviewer brief (which band, breakpoints used).  _(Section 13 -- Self-checks)_ (read 2026-10-28)
+- **218** -- ND-1 Line 1 verified equal to Form 1040 Line 15 (NOT Line 11).  _(Section 13 -- Self-checks)_ (read 2026-10-28)
 
 ## Section 14 -- Known gaps
 
@@ -913,7 +944,7 @@ This is one ND-resident sole prop with MN W-2 wages under reciprocity, full revi
 
 ### Change log
 
-- **v0.1 (May 2026):** Initial draft. Orchestrates federal + ND
+- **v0.1 (May 2026):** Initial draft. Orchestrates federal + ND (read 2026-10-28)
   stack. Three-file deliverable. Section 6 verification matrix with
   50+ reconciliations covering federal-internal, ND-internal,
   federal-ND coordination (especially the Line 15 NOT Line 11

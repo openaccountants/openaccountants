@@ -8,7 +8,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 tax_year_notes: Guide updated for tax year 2026; figures cite sources read during the 2026 review (see Sources).
-version: 2.1
+version: 2.2
 ---
 
 # ND Estimated Tax
