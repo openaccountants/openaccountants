@@ -12,6 +12,8 @@ description: >
   "Alabama overtime exemption W-2".
 jurisdiction: US-AL
 category: payroll
+domain: payroll
+type: filing-howto
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28

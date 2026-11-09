@@ -10,6 +10,8 @@ description: >
   reporting", "Alabama single sales factor", "Ala Code 40-18".
 jurisdiction: US-AL
 category: corporate
+domain: corporate
+type: rates-card
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28

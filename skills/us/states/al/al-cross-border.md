@@ -11,6 +11,8 @@ description: >
   individual income tax pages read 2026-10-28.
 jurisdiction: US-AL
 category: cross-border
+domain: cross-border
+type: cross-country-method
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28

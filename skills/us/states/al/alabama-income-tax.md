@@ -5,9 +5,11 @@ jurisdiction: US-AL
 tax_year: 2026
 last_updated: 2026-10-28
 authored_by: Anthony Bandura
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
+tier: 1
+reviewed_by: "Anthony Bandura"
+reviewed_on: 2026-11-03  # body updated 2026-11-09; approval re-confirmation pending from Anthony Bandura
+domain: income-tax
+type: filing-howto
 version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -26,7 +28,7 @@ You may use Form 40A instead only if all of these hold: "You were a resident of 
 
 This guide does not cover part-year residents or nonresidents -- those are a different return and a different allocation, and a part-year resident who also had Alabama-source income while a nonresident may need both Form 40 and Form 40NR. Send elsewhere: multi-state residency disputes, foreign income and treaty positions, and anyone with an open Alabama audit or collections matter.
 
-Before you start, ask the client: Were you a legal resident of Alabama for the whole of the year, and did you move at any point? Filing status at December 31, and your spouse's residency. Any income taxed by another state, or by a foreign country? Any income not on a W-2 or 1099 -- rents, royalties, gains on sales of property, K-1s, farm? Any Alabama estimated payments or an extension payment, and how much? Any out-of-state purchases on which no sales tax was collected?
+Before you start, ask the client: Were you a legal resident of Alabama for the whole of the year, and did you move at any point? Filing status at December 31, and your spouse's residency. Alabama is not a community property state, and you cannot file a joint Alabama return if you are a resident and your spouse is a resident of another state -- that is married filing separate (2025 Form 40 booklet, "NOTE: Alabama is not a community property state"). Any income taxed by another state, or by a foreign country? Any income not on a W-2 or 1099 -- rents, royalties, gains on sales of property, K-1s, farm? Any Alabama estimated payments or an extension payment, and how much? Any out-of-state purchases on which no sales tax was collected?
 
 ## Rates, bands and thresholds
 

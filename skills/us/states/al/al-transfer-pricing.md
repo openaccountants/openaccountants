@@ -10,6 +10,8 @@ description: >
   intercompany elimination", "Alabama addback".
 jurisdiction: US-AL
 category: transfer-pricing
+domain: transfer-pricing
+type: situation-rules
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28

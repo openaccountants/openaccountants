@@ -10,6 +10,8 @@ description: >
   "Alabama employer taxes".
 jurisdiction: US-AL
 category: payroll
+domain: payroll
+type: rates-card
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
@@ -37,11 +39,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | 2026 amount | Source |
 |---|---|---|
-| UI taxable wage base | unconfirmed |
-| Experience rate range | unconfirmed |
-| New-employer assigned rate | unconfirmed |
-| Solvency/add-on surtaxes | unconfirmed |
-| FUTA credit reduction | unconfirmed |
+| UI taxable wage base | unconfirmed | [ADOL UC Division page](https://adol.alabama.gov/divisions/unemployment-compensation/) (figures not extractable from the archived copy) |
+| Experience rate range | unconfirmed | [ADOL UC Division page](https://adol.alabama.gov/divisions/unemployment-compensation/) (figures not extractable from the archived copy) |
+| New-employer assigned rate | unconfirmed | [ADOL UC Division page](https://adol.alabama.gov/divisions/unemployment-compensation/) (figures not extractable from the archived copy) |
+| Solvency/add-on surtaxes | unconfirmed | [ADOL UC Division page](https://adol.alabama.gov/divisions/unemployment-compensation/) (figures not extractable from the archived copy) |
+| FUTA credit reduction | unconfirmed | [ADOL UC Division page](https://adol.alabama.gov/divisions/unemployment-compensation/) (figures not extractable from the archived copy) |
 
 No 2026 UI figures should be used from this guide until ADOL's current rate notice is archived and tied out.
 

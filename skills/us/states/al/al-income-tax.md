@@ -2,6 +2,8 @@
 name: al-income-tax
 description: Use this skill whenever asked about Alabama individual income tax for self-employed individuals or sole proprietors -- filing Form 40, AL estimated tax (Form 40ES), Alabama tax brackets, Alabama deductions, federal income tax deduction on AL return, or any query involving Alabama state income tax compliance. Trigger on phrases like "Alabama income tax", "AL income tax", "Form 40", "Alabama estimated tax", "Alabama self-employed tax", "ADOR income tax", or "Code of Ala. §40-18".
 jurisdiction: US-AL
+domain: income-tax
+type: filing-howto
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
@@ -46,7 +48,7 @@ The personal exemption is set by filing status (booklet: "If you check box 2, en
 
 1. **Starting point:** Alabama begins from federal adjusted gross income.
 2. **Additions:** income excluded federally but taxable in Alabama (e.g., interest on other states' obligations).
-3. **Subtractions:** Alabama-exempt income -- "Interest on obligations of the State of Alabama or any county, city, or municipality of Alabama, and interest on obligations of the United States, or any of its possessions" (ALDOR FAQ); Social Security benefits are excluded (confirm entitlement against the exemption list).
+3. **Subtractions:** Alabama-exempt income -- "Interest on obligations of the State of Alabama or any county, city, or municipality of Alabama, and interest on obligations of the United States, or any of its possessions" (ALDOR FAQ); Social Security benefits: not archived in a primary source this run, so treat as unconfirmed until the ALDOR exempt-income list is checked.
 4. **Federal income tax deduction:** deduct federal income taxes actually paid (or accrued) during the tax year (Amendment 225; booklet line 12 worksheet).
 5. **Standard deduction or itemized:** the standard deduction chart is keyed to Alabama AGI (line 10), not federal AGI; compute both ways. "A dependent or student may take the standard deduction even if claimed as a dependent by someone else" (booklet).
 6. **Personal exemption** (line 13) and **dependent exemption** (line 14, Schedule DS): the dependent exemption steps down with Alabama AGI per the chart above.
@@ -77,7 +79,7 @@ Form 40 line mapping confirmed in the booklet: line 11 itemized/standard deducti
 
 - Residents taxed on all-source income; non-residents on Alabama-source income (ALDOR Individual Income Tax page).
 - Credit for taxes paid to another state runs through Schedule CR (see `alabama-income-tax` for mechanics; limitation rules are tied out there).
-- Multistate allocation and part-year proration: see `al-cross-border` mechanics unconfirmed.
+- Multistate allocation and part-year proration: see `al-cross-border`. The mechanics there are marked unconfirmed.
 
 ## Worked examples
 
