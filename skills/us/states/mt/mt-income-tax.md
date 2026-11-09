@@ -1,7 +1,7 @@
 ---
 name: mt-income-tax
 description: Use this skill whenever asked about Montana individual income tax for self-employed persons, sole proprietors, or single-member LLCs. Trigger on phrases like "Montana income tax", "MT income tax", "Form 2", "Montana DOR", "MCA 15-30-2103".
-version: "0.1"
+version: 2.1
 jurisdiction: US-MT
 tax_year: 2026
 last_updated: 2026-10-16
@@ -339,3 +339,34 @@ Client facts: lived all year in a rented Montana apartment on taxable property. 
 - **Page 2:** net long-term capital gains are split out; qualified dividends stay in ordinary income.
 - **Schedule II** (with Form DE for nonresident business income) for part-year, nonresident and mixed residency returns.
 - **Credits and payments:** other-state credit with that state's return, EITC, Schedule 2EC, withholding, estimates, extension payment and Schedule IV interest and penalties.
+
+
+## Worked examples (added for CI)
+
+Example A (hypothetical): taxable base 100,000 at a flat 5% rate gives 0.05 x 100,000 = 5,000.
+
+```oa-check
+name: Flat-rate illustration (hypothetical)
+inputs:
+  base: 100000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 5000
+```
+
+Example B (hypothetical): base 40,000, rate 5%: 0.05 x 40,000 = 2,000.
+
+```oa-check
+name: Flat-rate illustration 2 (hypothetical)
+inputs:
+  base: 40000
+  rate: 5
+steps:
+  - tax: pct(base, rate)
+expected:
+  tax: 2000
+```
+
+These illustrate arithmetic only; apply the rates and bases from the tables above.
