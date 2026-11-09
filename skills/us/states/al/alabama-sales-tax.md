@@ -1,203 +1,136 @@
 ---
 name: alabama-sales-tax
 description: Use this skill whenever asked about Alabama sales tax, Alabama use tax, Alabama sales tax nexus, ADOR sales tax filing, self-administered city taxes in Alabama, or Alabama grocery food taxation. Trigger on phrases like "Alabama sales tax", "AL sales tax", "ADOR", "Code of Ala. §40-23", "Alabama local tax", "Alabama grocery tax", "self-administered cities Alabama", or any request involving Alabama state and local sales and use tax compliance. ALWAYS load us-sales-tax first for federal context.
+version: 2.2
 jurisdiction: US-AL
-tax_year: 2025
-last_updated: 2026-07-13
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
-domain: vat-gst
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Alabama Sales Tax
 
-## Section 1 -- Quick reference
+> **Source-cited draft.** Built from ALDOR's Sales Tax authority page, Sales and Use Tax Incentives page, the food-rate reduction notice (Act 2023-554) and the remote-seller registration FAQ, read 2026-10-28. No accountant has reviewed it. Do not advise a client from it without review by a qualified Alabama professional.
 
-**Quick reference**
+See also: `us-sales-tax` (load first), `al-cross-border` (remote sellers), `al-corporate-income-tax`.
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Alabama, United States |
-| Jurisdiction code | US-AL |
-| Tax type | Sales and Use Tax (state + local) |
-| State rate | 4.00% |
-| Local rate range | 0% -- 7% (county + city + special district) |
-| Maximum combined rate | ~11.00% |
-| Sourcing | Destination-based |
-| Economic nexus | $250,000 in sales (revenue only) |
-| Primary legislation | Code of Alabama §40-23 (Sales Tax); §40-23-60 (Use Tax) |
-| Tax authority | Alabama Department of Revenue (ADOR) |
-| Filing portal | https://myalabamataxes.alabama.gov |
-| SST member | No |
-| Self-administered cities | ~200+ cities administer their own local sales tax separately |
-| Grocery food | FULLY TAXABLE at state level (reduced to 2% effective Sep 2023) |
-| Federal framework skill | us-sales-tax |
-| Skill version | 2.0 |
+## Who this applies to
 
-**CRITICAL: Alabama has ~200+ self-administered cities. Sellers must register SEPARATELY with each self-administered city where they have nexus.**
+- **Every retailer** selling tangible personal property at retail in Alabama: the tax applies to "gross proceeds from sale of all taxable items for consumption or other use to consumers ... within Alabama" (ALDOR Sales Tax page, Application). The sales and use tax law is found in Chapter 23, Title 40, Code of Alabama 1975 (ALDOR Sales and Use Tax Incentives page).
+- **Remote and out-of-state sellers:** economic nexus over the $250,000 retail-sales threshold, collect from October 1, 2018 (ALDOR remote-seller FAQ).
+- **Local tax administration:** "Some of the local sales taxes are collected by ALDOR, third party administrators, and others are self-administered" (ALDOR Sales Tax page) -- a seller may need to register with self-administered cities individually.
 
-### Required inputs
+## Rates, bands and thresholds
 
-**Required inputs**
+| Item | Rate or amount | Tax year | Source |
+|---|---|---|---|
+| State general rate | "4% of gross proceeds of sale of tangible personal property" | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Amusement/entertainment | 4% of gross receipts from public places of amusement or entertainment | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Food (SNAP definition) | 2% of gross proceeds of sale of food, as defined in 7 U.S.C. § 2011 | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Food rate history | Reduced from 4% to 3% on September 1, 2023, and to 2% on September 1, 2024, under Act 2023-554 | current | [ALDOR food-rate notice](https://www.revenue.alabama.gov/notice-state-sales-and-use-tax-rate-reduced-on-food-beginning-september-1-2023/) |
+| Manufacturing machinery | 1.5% of selling price of machinery used in mining or manufacturing tangible personal property | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Farm machinery | 1.5% of net trade difference of new or used farm machines, machinery and equipment | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Automotive | 2% of net trade difference of new or used automotive vehicles, truck trailers, semi-trailers or house trailers | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Vending-machine food products | 3% of retail selling price | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Local sales taxes | Counties and municipalities may levy local sales taxes "ranging in rate between .10% to 5%" | current | [ALDOR Sales Tax page](https://www.revenue.alabama.gov/tax-types/sales-tax/) |
+| Remote-seller economic nexus | Over $250,000 of total retail sales delivered into Alabama the previous calendar year | current | [ALDOR remote-seller FAQ](https://www.revenue.alabama.gov/faqs/are-all-remote-sellers-required-to-register-in-alabama/) |
 
-| # | Question | Why it matters |
-| --- | --- | --- |
-| 1 | Alabama sales tax registration / tax ID? | Required for state filing |
-| 2 | Filing frequency? | Monthly, quarterly, annual |
-| 3 | Nexus type? | $250K threshold |
-| 4 | Marketplace seller? | Facilitators collect on facilitated sales |
-| 5 | Products/services sold? | Taxability classification |
-| 6 | Sell to exempt entities? | Exemption certificates required |
-| 7 | Locations/employees/inventory in AL? | Physical nexus |
-| 8 | Sell into multiple local jurisdictions? | Self-administered city complexity |
+**Food note:** under Act 2023-554, "the state sales and use tax rates on food will be reduced from 4 percent to 3 percent on September 1, 2023" and "will be further reduced to 2 percent on September 1, 2024, if there is sufficient growth in the state Education Trust Fund" (ALDOR notice). The current ALDOR Sales Tax page lists the food rate as 2%. "Food has the same meaning as defined in 7 U.S.C. § 2011, for the purposes of the federal Supplemental Nutrition Assistance Program (SNAP)" -- hot foods and hot food products ready for immediate consumption are not SNAP food, so they stay at the general rate. "The city and county sales and use tax rates on food will be equal to their general sales tax rate in effect as of June 15, 2023" (ALDOR notice).
 
-### Refusal catalogue
+## The taxable base
 
-- **R-AL-1 -- Self-administered city detailed compliance** — Each city has separate registration, returns, and rates. Specific city compliance requires individual research.  _(R-AL-1)_
+- **General tangible personal property:** 4% state on gross proceeds of retail sales for consumption or use in Alabama (ALDOR Sales Tax page).
+- **Food (unprepared, SNAP-definition):** 2% state after the Act 2023-554 reductions; local governments tax food at their general rate in effect on June 15, 2023 (ALDOR notice).
+- **Prepared/hot food, candy, soft drinks, alcoholic beverages, tobacco:** not SNAP food -- the general rate applies (ALDOR notice carve-outs).
+- **Exemptions confirmed on archived ALDOR pages (Sales and Use Tax Incentives):** pollution-control equipment (§§40-23-4(a)(16), 40-23-62(3)); raw materials "used by manufacturers or compounders as an ingredient or component part" (§§40-23-1(a)(9)b, 40-23-60(4)b); quality-control testing withdrawals and donations to charitable entities (§40-23-1(e), Regulation 810-6-5-.26).
+- Taxability of clothing, canned/downloaded software, SaaS, digital goods and professional services is unconfirmed. The prior draft's transaction-pattern table carried these as taxable/not taxable without archived sources and is now.
 
-### 3.1 Tangible personal property
+## Deadlines and filing
 
-**Tangible personal property**  _(Code of Ala. §40-23-2)_
+- State returns are filed with ALDOR (My Alabama Taxes portal); self-administered cities are filed separately with each city, and ALDOR-administered locals with the state (ALDOR Sales Tax page on the administration split). Current form IDs and filing frequencies are unconfirmed here, confirm with ALDOR.
 
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| General TPP | TAXABLE | Code of Ala. §40-23-2 |
-| Clothing and footwear | TAXABLE | No general exemption; holiday exemption only |
+## Penalties and interest
 
-### 3.2 Food and beverages
+- The prior draft carried late-filing 10% of tax due and fraud 50% of deficiency; these percentages are not tied to an archived primary source -- see Not yet confirmed.
+- Confirm current penalty and interest provisions (Title 40 / Chapter 23) with ALDOR before advising.
 
-**Food and beverages**
+## Cross-border points
 
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| Grocery food (unprepared) | TAXABLE at reduced state rate 2% | State rate reduced from 4% to 2% (effective Sep 2023); local rates still apply at full rate |
-| Prepared food | TAXABLE at full 4% |  |
-| Candy, soft drinks | TAXABLE |  |
+- **Economic nexus:** "All remote sellers directly selling over the $250,000 threshold of total retail sales delivered into Alabama the previous calendar year are required to collect and remit taxes on sales into Alabama beginning on October 1, 2018" (ALDOR remote-seller FAQ). A small-seller exception applies to remote sellers "who do not have annual sales of products and services into the state of more than $250,000" -- and does not apply to sellers with a physical presence in Alabama.
+- **Threshold computation:** "should only include retail sales made directly by the seller, whether taxable or non-taxable," excluding wholesale sales for resale with an Alabama resale certificate and sales through a participating SSUT marketplace (ALDOR FAQ).
+- Below-threshold sellers "may still apply to participate in the simplif[ied] sellers use tax program" (ALDOR FAQ).
+- Sourcing (destination-based) and Alabama's Streamlined Sales Tax status are unconfirmed.
 
-### 3.3 SaaS and digital goods
+## Worked examples
 
-**SaaS and digital goods**
+Client facts in these examples are hypothetical. Only rates from the confirmed table above are used; specific local rates are not confirmed, so local tax is discussed qualitatively.
 
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| Canned software (physical) | TAXABLE | TPP |
-| Canned software (download) | TAXABLE |  |
-| Custom software | Varies | Escalate to reviewer |
-| SaaS (cloud-hosted) | TAXABLE | Alabama taxes SaaS |
-| Digital goods (downloads) | TAXABLE |  |
+**Example 1: general retail sale, state rate only**
 
-### 3.4 Services
+A seller (hypothetical) sells $1,000 of tangible personal property in Alabama; the state tax is 4% of $1,000 = $40. Local tax, if any, is additional and must be read from ALDOR's local rate lookup.
 
-**Services**
+```oa-check
+name: AL sales tax, general state rate
+inputs:
+  price: 1000
+  state_rate: 0.04
+steps:
+  - tax: price * state_rate
+expected:
+  tax: 40.00
+```
 
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| Most services | NOT TAXABLE | Alabama taxes only enumerated services |
-| Rental of TPP | TAXABLE |  |
-| Amusement/recreation | TAXABLE |  |
-| Professional services | NOT TAXABLE |  |
+**Example 2: SNAP-definition groceries, state food rate**
 
-### 3.5 Exemptions
+$200 (hypothetical) of unprepared groceries: the state food rate is 2%, so $4 state tax. Local governments tax food at their general rate in effect on June 15, 2023, so local tax is additional and must be confirmed per jurisdiction.
 
-**Exemptions**
+```oa-check
+name: AL sales tax, food rate
+inputs:
+  price: 200
+  state_food_rate: 0.02
+steps:
+  - tax: price * state_food_rate
+expected:
+  tax: 4.00
+```
 
-| Pattern | Status | Notes |
-| --- | --- | --- |
-| Prescription drugs | EXEMPT |  |
-| Manufacturing machinery (directly in manufacturing) | REDUCED RATE | State rate 1.5%; local applies |
-| Farm equipment | EXEMPT |  |
-| Resale | EXEMPT | Valid certificate required |
-| Interstate commerce | EXEMPT | Shipped out of state |
-| Government purchases | EXEMPT |  |
+**Example 3: economic nexus test (prose only -- not a counted worked example)**
 
-## Section 4 -- Rate lookup
+A remote seller (hypothetical) with $300,000 of retail sales delivered into Alabama in the previous calendar year and no physical presence exceeds the $250,000 threshold, so the seller must register and collect (ALDOR FAQ; threshold in the rates table above).
 
-**Rate lookup**
+## Ask the client first
 
-| Jurisdiction | Approximate combined rate |
-| --- | --- |
-| Birmingham | ~10% |
-| Montgomery | ~10% |
-| Huntsville | ~9% |
-| Mobile | ~10% |
-| Tuscaloosa | ~9% |
+- What products or services are sold (food at 2% state vs. general 4%; machinery at 1.5%; vehicles at 2%)?
+- Are Alabama retail sales (direct, taxable or not) over $250,000 in the previous calendar year?
+- Any physical presence in Alabama (locations, employees, inventory)? The small-seller exception does not apply.
+- Which self-administered cities have nexus -- separate registration and filing may be required?
+- Are exemption certificates on file (resale, pollution control, ingredient/component)?
 
-**Use ADOR rate lookup for exact rate by address.**
+## Sources
 
-### 5.1 Self-administered cities
+| Source | URL | Read on |
+|---|---|---|
+| ALDOR Sales Tax page (authority, rates: 4% general, 2% food, 1.5% manufacturing and farm machinery, 2% automotive, 3% vending food, local .10%–5%, administration split) | https://www.revenue.alabama.gov/tax-types/sales-tax/ | 2026-10-28 |
+| ALDOR Sales and Use Tax Incentives page (state rate 4%, manufacturing/farm 1.5%, automotive 2%, exemptions with Code sections) | https://revenue.alabama.gov/taxes-fees/sales-use-tax/ | 2026-10-28 |
+| ALDOR notice: State Sales and Use Tax Rate Reduced on Food Beginning September 1, 2023 (Act 2023-554, 4%→3%→2% phase-down, SNAP food definition, local food rates) | https://www.revenue.alabama.gov/notice-state-sales-and-use-tax-rate-reduced-on-food-beginning-september-1-2023/ | 2026-10-28 |
+| ALDOR FAQ: Are all remote sellers required to register in Alabama? ($250,000 threshold, October 1, 2018, threshold computation, SSUT) | https://www.revenue.alabama.gov/faqs/are-all-remote-sellers-required-to-register-in-alabama/ | 2026-10-28 |
 
-~200+ Alabama cities self-administer their local sales tax. Sellers must register separately with each. Birmingham, Montgomery, Huntsville, Mobile, Tuscaloosa are all self-administered.
+Not yet confirmed: the local rate range previously carried as "0%–7%" and the maximum combined rate previously carried as "~11.00%" (the archived ALDOR page says counties and municipalities may levy between .10% and 5%; the maximum combined figure is not on an archived page); city-by-city combined rates (Birmingham/Montgomery/Huntsville/Mobile/Tuscaloosa previously carried as ~9%–10%); the number of self-administered cities (previously carried as ~200+; the administration split is confirmed but not the count); destination-based sourcing and Alabama's Streamlined Sales Tax membership; marketplace-facilitator rules; the late-filing penalty (previously carried as 10% of tax due) and the fraud penalty (previously carried as 50% of deficiency) -- confirm against the statute; the taxability of clothing, canned/downloaded software, SaaS, digital goods, professional services, rentals of tangible personal property, prescription drugs and farm-equipment exemptions (previously carried in a transaction-pattern table without archived sources); filing frequencies and current return form IDs.
 
-### 5.2 Grocery food reduced rate
+<!-- openaccountants-cta-block -->
 
-- **Grocery food reduced rate** — State rate on grocery food reduced from 4% to 2% effective September 1, 2023. Local rates apply at full local rate on top.
+---
 
-## Section 6 -- Return form and filing
+## Talk to a verified accountant
 
-**Return form and filing**
+This guide is maintained by the OpenAccountants network -- accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at openaccountants.com.
 
-| Level | Return | Portal |
-| --- | --- | --- |
-| State | Filed via ADOR | https://myalabamataxes.alabama.gov |
-| Self-administered cities | Filed separately with each city | Individual city portals |
-| ADOR-administered locals | Filed with state return | Same as state |
-
-### 7.1 Economic nexus
-
-**Economic nexus**
-
-| Parameter | Value |
-| --- | --- |
-| Revenue threshold | $250,000 in sales into Alabama |
-| Transaction threshold | None |
-| Effective date | October 1, 2018 |
-
-### 7.2 Penalties
-
-**Penalties**
-
-| Penalty | Rate |
-| --- | --- |
-| Late filing | 10% of tax due |
-| Fraud | 50% of deficiency |
-
-### EC1 -- Self-administered city registration
-
-**Situation:** Online seller meets nexus in Alabama.
-**Resolution:** Must register with ADOR for state tax. Must ALSO register separately with each self-administered city where nexus exists. ADOR does not administer these cities' taxes.
-
-### EC2 -- Grocery food dual rates
-
-**Situation:** Customer buys groceries in Birmingham.
-**Resolution:** State rate 2% on food + full local Birmingham rate. Combined rate on food may be ~8%.
-
-### Test 1 -- Basic sale
-
-**Input:** $1,000 item in Birmingham. Combined rate: ~10%.
-**Expected:** Tax = ~$100.
-
-### Test 2 -- Grocery food
-
-**Input:** $200 groceries. State 2% + local ~6%.
-**Expected:** Tax = ~$16. Food taxable at reduced state + full local.
-
-### Test 3 -- Economic nexus
-
-**Input:** $300K Alabama sales, no physical presence.
-**Expected:** Exceeds $250K. Must register.
-
-## Section 10 -- Prohibitions
-
-- NEVER assume Alabama exempts grocery food -- it taxes it (reduced state rate 2% + full local).
-- NEVER ignore self-administered cities -- ~200+ cities require separate registration and filing.
-- NEVER assume ADOR handles all local taxes -- many cities self-administer.
-- NEVER apply one city's local rate to another jurisdiction.
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude.
-
-## Disclaimer
-
-This skill is provided for informational and computational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional before filing.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

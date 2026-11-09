@@ -1,189 +1,145 @@
 ---
 name: al-income-tax
-description: Use this skill whenever asked about Alabama individual income tax for self-employed individuals or sole proprietors — filing Form 40, AL estimated tax (Form 40-ES), Alabama tax brackets, Alabama deductions, federal income tax deduction on AL return, or any query involving Alabama state income tax compliance. Trigger on phrases like "Alabama income tax", "AL income tax", "Form 40", "Alabama estimated tax", "Alabama self-employed tax", "ADOR income tax", or "Code of Ala. §40-18".
+description: Use this skill whenever asked about Alabama individual income tax for self-employed individuals or sole proprietors -- filing Form 40, AL estimated tax (Form 40ES), Alabama tax brackets, Alabama deductions, federal income tax deduction on AL return, or any query involving Alabama state income tax compliance. Trigger on phrases like "Alabama income tax", "AL income tax", "Form 40", "Alabama estimated tax", "Alabama self-employed tax", "ADOR income tax", or "Code of Ala. §40-18".
 jurisdiction: US-AL
-last_updated: 2026-06-12
-version: "0.1"
-validation_status: ai-drafted-q3
+tax_year: 2026
 tier: 2
-domain: income-tax
+last_updated: 2026-10-28
+version: 0.3
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Alabama Individual Income Tax Skill — Self-Employed / Sole Proprietor
+# Alabama individual income tax -- self-employed / sole proprietor
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **Source-cited draft.** Built from the ALDOR individual income tax rate FAQ and Individual Income Tax page and the 2025 Form 40 booklet (25f40bk), read 2026-10-28. No accountant has reviewed it. Do not file from it without review by a qualified Alabama professional.
 
-> **Scope.** This skill covers Alabama individual income tax for self-employed individuals and sole proprietors filing Form 40. It addresses tax computation, deductions, estimated payments, and form mapping.
-> **Quality tier.** Q3 — AI-drafted with citations; not independently verified by a licensed professional.
+Tax year: the calendar year. Authority: Alabama Department of Revenue (ALDOR), My Alabama Taxes portal (myalabamataxes.alabama.gov, per the Form 40 booklet). Governing provisions: Code of Alabama §§40-18-1 through 40-18-30 and 40-18-40 through 40-18-59, as cited on the ALDOR Individual Income Tax page.
 
-## Section 1: Metadata
+See also: `alabama-income-tax` (the full Form 40 walkthrough), `al-cross-border`, `al-payroll-withholding`.
 
-| Field | Value |
-|---|---|
-| Jurisdiction | Alabama, United States |
-| Jurisdiction code | US-AL |
-| Tax authority | Alabama Department of Revenue (ADOR) |
-| Filing portal | https://myalabamataxes.alabama.gov |
-| Legislation citation | Code of Alabama §40-18 (Income Tax) |
-| Primary form | Form 40 — Alabama Individual Income Tax Return |
-| Filing deadline | April 15 (follows federal deadline) |
-| Version | 0.1 |
-| Generated | 2026-05-22 |
-| Validation status | AI-drafted — Q3 |
+## Who this applies to
 
-### Sources consulted
+- Self-employed individuals and sole proprietors who are Alabama residents file Form 40 (the long return), reporting income from all sources unless Alabama specifically exempts it (ALDOR Individual Income Tax page: "Taxable net income earned from all sources by residents"; 2025 Form 40 booklet, Who Must File).
+- The booklet: "All income is subject to Alabama income tax unless specifically exempted by state law" (ALDOR FAQ, What income must I report).
+- Part-year residents and non-residents use Form 40/40NR under different allocation rules -- see `al-cross-border`.
 
-1. Alabama Department of Revenue — Individual Income Tax Rates: https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate/
-2. Alabama Form 40 Instruction Booklet (TY 2025): https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf
-3. Alabama Form 40-ES (Estimated Tax): https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26f40esblk.pdf
-4. Code of Alabama §40-18: https://www.legislature.state.al.us/
+## Rates, bands and thresholds
 
----
+| Item | Rate or amount | Tax year | Source |
+|---|---|---|---|
+| Single, head of family, married filing separately | 2% on the first $500 of taxable income; 4% on the next $2,500; 5% on all over $3,000 | current | [ALDOR rate FAQ](https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate/) |
+| Married filing jointly | 2% on the first $1,000; 4% on the next $5,000; 5% on all over $6,000 | current | [ALDOR rate FAQ](https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate/) |
+| Filing requirement (gross income) | Single: gross income at least $4,500; head of family: $8,200; married filing joint: $11,500; married filing separate: $5,750 | 2025 | [2025 Form 40 booklet](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf), p.5 |
+| Minimum personal exemptions | $1,500 for single taxpayers, $3,000 for joint filers; minimum dependent exemption of $300 for each dependent (Amendment 25) | current | [ALDOR Individual Income Tax page](https://revenue.alabama.gov/taxes-fees/individual-income-tax/) |
+| Dependent exemption by Alabama AGI | $1,000 at AGI $0–50,000; $500 at $50,001–100,000; $300 over $100,000 | 2025 | [2025 Form 40 booklet](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf), p.8 dependent exemption chart |
+| Standard deduction, married filing joint | $8,500 at Alabama AGI $0–25,999, stepping down in bands to $5,000 at $35,500 and above | 2025 | [2025 Form 40 booklet](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf), p.9 chart |
+| Standard deduction, married filing separate | $4,250 stepping down to $2,500 at $17,750 and above | 2025 | [2025 Form 40 booklet](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf), p.9 chart |
+| Standard deduction, head of family | $5,200 stepping down to $2,500 at $35,500 and above | 2025 | [2025 Form 40 booklet](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf), p.9 chart |
+| Standard deduction, single | $3,000 stepping down to $2,500 at $35,500 and above | 2025 | [2025 Form 40 booklet](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf), p.9 chart |
+| Estimated tax threshold | "Every individual who reasonably expects to owe at least $500 in tax in 2026 is required to file and pay estimated tax" | 2026 | [2025 Form 40 booklet](https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf), Payment of Estimated Tax |
 
-## Section 2: Quick reference — rates and thresholds
+The personal exemption is set by filing status (booklet: "If you check box 2, enter $3,000 on line 13"; a dependent or student "can claim a personal exemption of $1,500"). Alabama is one of the few states allowing a deduction for federal income taxes paid (Amendment 225, ALDOR Individual Income Tax page: "provided deduction for federal income taxes paid by individual taxpayers").
 
-### Tax rates (TY 2025)
+## The taxable base
 
-**Single, Head of Family, and Married Filing Separately:**
+1. **Starting point:** Alabama begins from federal adjusted gross income.
+2. **Additions:** income excluded federally but taxable in Alabama (e.g., interest on other states' obligations).
+3. **Subtractions:** Alabama-exempt income -- "Interest on obligations of the State of Alabama or any county, city, or municipality of Alabama, and interest on obligations of the United States, or any of its possessions" (ALDOR FAQ); Social Security benefits are excluded (confirm entitlement against the exemption list).
+4. **Federal income tax deduction:** deduct federal income taxes actually paid (or accrued) during the tax year (Amendment 225; booklet line 12 worksheet).
+5. **Standard deduction or itemized:** the standard deduction chart is keyed to Alabama AGI (line 10), not federal AGI; compute both ways. "A dependent or student may take the standard deduction even if claimed as a dependent by someone else" (booklet).
+6. **Personal exemption** (line 13) and **dependent exemption** (line 14, Schedule DS): the dependent exemption steps down with Alabama AGI per the chart above.
+7. Result: Alabama taxable income -- apply the graduated rates.
 
-| Taxable income | Rate |
-|---|---|
-| $0 – $500 | 2% |
-| $501 – $3,000 | 4% |
-| Over $3,000 | 5% |
+Self-employed specifics: Alabama computes income on the federal pattern, so Schedule C business deductions, the self-employed health-insurance deduction, SEP-IRA and solo-401(k) contributions and the federal home-office deduction flow through federal AGI into the Alabama starting point. The federal QBI deduction (§199A) reduces federal tax -- and therefore reduces the federal income tax available for the Alabama line-12 deduction -- but does not itself change Alabama taxable income.
 
-**Married Filing Jointly:**
+Form 40 line mapping confirmed in the booklet: line 11 itemized/standard deduction, line 12 federal income tax deduction, line 13 personal exemption, line 14 dependent exemption; Schedule B is required where taxable and nontaxable interest and dividends reach $1,500 or more (booklet: interest and dividends "cannot exceed $1,500" as a Form 40A condition). The remaining line-by-line mapping previously carried here is unconfirmed.
 
-| Taxable income | Rate |
-|---|---|
-| $0 – $1,000 | 2% |
-| $1,001 – $6,000 | 4% |
-| Over $6,000 | 5% |
+## Deadlines and filing
 
-### Personal exemptions
+- **Filing deadline:** the same date as the federal return -- "You should file as soon as you can after January 1, 2026, but no later than the due date of the federal return" (2025 Form 40 booklet, When To File).
+- **Automatic extension:** "You will automatically be granted an extension until October 15, 2026" with no form to file; pay expected tax with Form 40V, "Automatic Extension Payment" box checked, by the federal due date. "An extension means only that you will not be assessed a penalty for filing your return after the due date" -- interest still runs (booklet).
+- **Estimated tax:** Form 40ES; "The due dates for making estimated tax payments are the same as required by Federal Income Tax Law" (booklet) -- the specific calendar dates are federal law and are not stated in the booklet (see Not yet confirmed).
+- **Refund window:** "Original returns must be filed within two years of the date the taxes are paid to be eligible for a refund" (booklet).
+- Payment by mail (Form 40 payment to the booklet's Montgomery address) or through My Alabama Taxes.
 
-| Filing status | Exemption |
-|---|---|
-| Single | $1,500 |
-| Married Filing Jointly | $3,000 |
-| Married Filing Separately | $1,500 |
-| Head of Family | $3,000 |
-| Dependent exemption | $300 per dependent (min, higher amounts per statute) |
+## Penalties and interest
 
-### Standard deduction
+- **Failure to timely file:** "Alabama law provides a penalty of 10% of the tax due or $50, whichever is greater, if filed late. The penalty does not apply to a tax return filed indicating no tax due or a refund" (booklet, p.17).
+- **Failure to timely pay:** "The penalty for not paying the tax when due is 1% of the unpaid amount for each month or fraction of a month that the tax remains unpaid. The maximum penalty is 25%" (booklet, p.17).
+- **Underpayment (estimated tax):** where 2025 tax due is $500 or more and withholding plus timely estimates fell short of "the smaller of: 1. 90% of your 2025 tax (66-2/3% for farmers), or 2. 100% of your 2024 tax" (12-month period), computed on Form 2210AL (booklet, p.17).
+- **Interest:** "Alabama law provides that the same rate of interest shall be collected as currently prescribed by the Internal Revenue Service," running from the due date even where an extension was granted (booklet).
+- **ABLE deduction:** contributions up to $5,000 per individual per year under §40-18-15.8, Code of Alabama 1975 (booklet).
+- **Criminal liability:** §40-29-112, Code of Alabama 1975 -- willful failure to file is a misdemeanor punishable by a fine up to $25,000 or imprisonment up to 1 year, or both (booklet, p.17).
 
-Alabama does **not** use a fixed standard deduction amount. The allowable standard deduction is determined from the Standard Deduction Chart published by ADOR, which varies by filing status and Alabama Adjusted Gross Income. Taxpayers must consult the chart in the Form 40 instruction booklet.
+## Cross-border points
 
-**Key feature:** Alabama is one of only three states that allows a deduction for **federal income taxes paid** from state taxable income.
+- Residents taxed on all-source income; non-residents on Alabama-source income (ALDOR Individual Income Tax page).
+- Credit for taxes paid to another state runs through Schedule CR (see `alabama-income-tax` for mechanics; limitation rules are tied out there).
+- Multistate allocation and part-year proration: see `al-cross-border` mechanics unconfirmed.
 
----
+## Worked examples
 
-## Section 3: How this skill works with the federal return
+Client facts in these examples are hypothetical. Only rates from the confirmed table above are used.
 
-1. **Starting point:** Alabama begins with **federal adjusted gross income** (federal Form 1040, Line 11).
-2. **Alabama additions:** Add back any income excluded federally but taxable in Alabama (e.g., certain interest income from other states' obligations).
-3. **Alabama subtractions:** Subtract Alabama-exempt income (e.g., Social Security benefits, certain retirement income, interest on U.S. obligations).
-4. **Federal income tax deduction:** Deduct federal income taxes actually paid (or accrued) during the tax year. This is a significant benefit unique to Alabama.
-5. **Standard deduction or itemized:** Apply the standard deduction (from chart) or Alabama itemized deductions.
-6. **Personal exemption:** Subtract the personal exemption amount.
-7. **Result:** Alabama taxable income → apply graduated rates.
+**Example 1: single filer with $2,000 taxable income**
 
----
+A single self-employed filer (hypothetical) with Alabama taxable income of $2,000 after deductions and exemptions:
 
-## Section 4: Self-employed specific rules
+```oa-check
+name: AL individual tax, single brackets
+inputs:
+  taxable: 2000
+steps:
+  - tax: 0.02 * 500 + 0.04 * (taxable - 500)
+expected:
+  tax: 70.00
+```
 
-### Federal conformity
-- Alabama generally conforms to federal IRC for computing income, including Schedule C business deductions.
-- The QBI deduction (§199A) is a **federal** deduction that reduces federal tax paid, thereby indirectly reducing the Alabama federal tax deduction — but it does not directly affect Alabama taxable income computation.
+**Example 2: married-filing-joint with $8,000 taxable income**
 
-### SE health insurance deduction
-- Alabama follows the federal deduction for self-employed health insurance premiums (above-the-line on federal return), which flows through to AL AGI.
+MFJ (hypothetical) with Alabama taxable income of $8,000:
 
-### Retirement contributions
-- SEP-IRA and Solo 401(k) contributions reduce federal AGI and therefore reduce Alabama starting income.
+```oa-check
+name: AL individual tax, MFJ brackets
+inputs:
+  taxable: 8000
+steps:
+  - tax: 0.02 * 1000 + 0.04 * 5000 + 0.05 * (taxable - 6000)
+expected:
+  tax: 320.00
+```
 
-### Home office deduction
-- Federal home office deduction (simplified or actual) flows through Schedule C and is reflected in federal AGI.
+## Ask the client first
 
-### Estimated tax payments (Form 40-ES)
-- **Threshold:** Must pay estimated tax if you expect to owe ≥ $500 after withholding and credits.
-- **Safe harbor:** Pay the lesser of 90% of current year tax or 100% of prior year tax.
-- **Due dates:** April 15, June 15, September 15, January 15.
-- **Payment methods:** Mail (Form 40-ES voucher to P.O. Box 327485, Montgomery, AL 36132-7485) or electronically via My Alabama Taxes portal.
+- Filing status, Alabama residency dates, and the spouse's residency (where the spouses' residencies differ, confirm the joint-return eligibility rules before filing).
+- Any income taxed by another state or a foreign country (Schedule CR / Schedule OC)?
+- Income not on a W-2 or 1099 -- rents, royalties, gains, K-1s, farm (Schedule C flow-through)?
+- Alabama estimated payments or extension payments made, and how much?
+- Expected tax at least $500 for the year (estimated-tax trigger)?
+- Multistate business activity, NOL carryforwards, Business Privilege Tax questions, municipal occupational taxes, Alabama credits, audit matters -- refer out (see the refusal points in `alabama-income-tax`).
 
----
+## Sources
 
-## Section 5: Tier 1 rules — deterministic
-
-| # | Rule | Logic |
+| Source | URL | Read on |
 |---|---|---|
-| T1-01 | Apply graduated rates to Alabama taxable income | Use bracket table above based on filing status |
-| T1-02 | Subtract personal exemption from AL adjusted income | Fixed amounts by filing status |
-| T1-03 | Federal income tax deduction | Deduct actual federal income tax paid (or liability if accrual) from AL gross income |
-| T1-04 | Quarterly estimated tax required if expected liability ≥ $500 | Binary threshold |
-| T1-05 | Filing requirement | Single: AGI ≥ $4,000; HOF: AGI ≥ $7,700; MFS: AGI ≥ $5,250; MFJ: AGI ≥ $10,500 |
-| T1-06 | Social Security benefits not taxed | Always exclude from AL taxable income |
+| ALDOR FAQ: What is Alabama's individual income tax rate? (2%/4%/5% brackets by filing status) | https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate | 2026-10-28 |
+| ALDOR Individual Income Tax page (authority sections, application, Amendments 25/61/225, minimum exemptions, filing AGI thresholds) | https://revenue.alabama.gov/taxes-fees/individual-income-tax/ | 2026-10-28 |
+| 2025 Alabama Form 40 booklet, 25f40bk (filing thresholds, exemptions, standard-deduction chart, deadlines, penalties, estimated tax, ABLE, criminal liability) | https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf | 2026-10-28 |
+
+Not yet confirmed: the full Form 40 line-by-line mapping beyond lines 11–14 (previously carried: federal AGI line 7, additions line 8, subtractions line 9, AL AGI line 10, tax line 15, credits lines 16–18, estimates line 23, balance/refund lines 27–28 -- confirm against the form); the estimated-tax installment calendar dates (previously carried as April 15, June 15, September 15, January 15 -- the booklet says only "the same as required by Federal Income Tax Law"); the treatment of Social Security benefits as a specific exclusion (the exempt-income list was not archived); the tiered filing-threshold schedule by AGI for lower incomes; supplier-pattern interpretations of bank-statement labels.
+
+<!-- openaccountants-cta-block -->
 
 ---
 
-## Section 6: Tier 2 rules — requires judgment
+## Talk to a verified accountant
 
-| # | Rule | Why judgment needed |
-|---|---|---|
-| T2-01 | Standard deduction vs. itemized | Taxpayer must compare both methods; chart-based standard deduction varies by income level |
-| T2-02 | Federal tax deduction — paid vs. accrued method | Choice of method affects timing and amount |
-| T2-03 | Allocation of income for part-year residents | Requires analysis of residency dates and income sourcing |
-| T2-04 | Business vs. hobby determination | Same federal analysis, but affects AL Schedule C flow-through |
-| T2-05 | Multistate income allocation | If taxpayer has income from other states, credit for taxes paid elsewhere (Schedule CR) |
+This guide is maintained by the OpenAccountants network -- accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at openaccountants.com.
 
----
-
-## Section 7: Supplier pattern library
-
-| Pattern on bank/CC statement | Likely meaning |
-|---|---|
-| `ALABAMA DOR` / `AL DEPT OF REVENUE` | Alabama income tax payment (estimated or balance due) |
-| `ADOR TAX PAYMENT` | Alabama Department of Revenue electronic payment |
-| `STATE OF AL TAX` | State tax payment |
-| `MY ALABAMA TAXES` | Payment via MAT portal |
-
----
-
-## Section 8: Form mapping
-
-| Computed value | Form 40 line |
-|---|---|
-| Federal AGI | Line 7 |
-| Alabama additions | Line 8 |
-| Alabama subtractions | Line 9 |
-| Alabama adjusted gross income | Line 10 |
-| Itemized or standard deduction | Line 11 |
-| Federal income tax deduction | Line 12 |
-| Personal exemption | Line 13 |
-| Alabama taxable income | Line 14 |
-| Tax from tax table / rate schedule | Line 15 |
-| Credits | Lines 16–18 |
-| Estimated tax payments | Line 23 |
-| Balance due / refund | Lines 27–28 |
-
----
-
-## Section 9: Refusal catalogue
-
-This skill must refuse and recommend professional review when:
-
-| # | Condition |
-|---|---|
-| R-01 | Taxpayer has multistate business activity requiring apportionment |
-| R-02 | Taxpayer is a part-year resident with complex sourcing questions |
-| R-03 | Taxpayer has Alabama net operating loss (NOL) carryforward |
-| R-04 | Business Privilege Tax (BPT) applicability for entities beyond sole proprietorship |
-| R-05 | Taxpayer questions involve Alabama municipal/city income taxes |
-| R-06 | Issues involving Alabama credits (Historic Rehabilitation, Growing Alabama, etc.) |
-| R-07 | Audit representation or controversy matters |
-| R-08 | Any question about tax fraud, evasion, or aggressive positions |
-
----
-
-## Disclaimer
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
