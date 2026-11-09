@@ -370,3 +370,25 @@ expected:
 ```
 
 These illustrate arithmetic only; apply the rates and bases from the tables above.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| 2025 Form 2 instructions | https://revenue.mt.gov/files/forms/Montana-Individual-Income-Tax-Return-Form-2-Instructions/2025_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf | 2026-10-16 |
+| DOR filing requirements | https://revenue.mt.gov/taxes/individual-income-tax/filing-requirements | 2026-10-16 |
+| DOR residency | https://revenue.mt.gov/taxes/individual-income-tax/residency | 2026-10-16 |
+| HB 337, DOR | https://revenue.mt.gov/news/recent-news/HB-337 | 2026-10-16 |
+| DOR tax simplification hub | https://revenue.mt.gov/montana-tax-simplification-resource-hub | 2026-10-16 |
+| DOR elderly credit | https://revenue.mt.gov/property/property-tax-help/montana-elderly-homeowner-renter-credit | 2026-10-16 |
+| 2025 Form 2 | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2025_Montana_Individual_Income_Tax_Return_Form_2.pdf | 2026-10-16 |
+| 2025 Schedule II | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_II.pdf | 2026-10-16 |
+| MCA 15-30-2103 | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html | 2026-10-16 |
+| DOR 2025 tax tables | https://revenue.mt.gov/taxes/tax-tables-and-deductions/2025 | 2026-10-16 |
+| MCA 15-30-2120 | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0200/0150-0300-0210-0200.html | 2026-10-16 |
+| Schedule 2EC | https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/Form_2_2025_Schedule_2EC.pdf | 2026-10-16 |
+| MCA 15-30-2101 | https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0010/0150-0300-0210-0010.html | 2026-10-16 |
+| Rev. Proc. 2025-32, section 4.14 | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-10-16 |
+| 2025 Form 1040 | https://www.irs.gov/pub/irs-pdf/f1040.pdf | 2026-10-16 |
+
+Not yet confirmed: none outstanding; every figure above carries its own cite.
