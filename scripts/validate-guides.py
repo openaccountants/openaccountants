@@ -61,6 +61,14 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      skills/, library/ or evidence/ in one of their folders, or a skill or
      library file whose `jurisdiction:` is one of their codes. A deletion is
      fine. The full run (no --changed-only) checks the whole tree the same way.
+ 11. Deliverable to the website. After a merge, scripts/deliver-to-platform.py
+     sends only `skills/**/<name>.md` files, and the website refuses a skill
+     over PLATFORM_MAX_SKILL_BYTES. Both used to fail silently after the
+     merge. PR mode: ERROR for an added or edited file under skills/ that is
+     not a `.md` file (or the generated skills/REGISTER.csv), for a skill file
+     whose name is not lowercase letters, digits and hyphens, and for a skill
+     file over the size limit; each message says what to rename or split. The
+     full run WARNs for the same files, so old content never fails on them.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -342,6 +350,90 @@ def check_sanctioned(errors, paths=None, read=_read_or_none):
         message = sanctioned.problem(rel, text)
         if message:
             errors.append(message)
+
+
+#: The website refuses a skill file larger than this, after the merge
+#: (the limit in its ingest lint). Mirror of the platform's value: change both
+#: together. Checked here so the contributor hears it on the PR instead.
+PLATFORM_MAX_SKILL_BYTES = 102_400
+
+#: Files under skills/ that are not skills and not Markdown. Generated.
+NON_MARKDOWN_ALLOWED = {"skills/REGISTER.csv"}
+
+SKILL_FILENAME_RE = re.compile(r"[a-z0-9][a-z0-9-]*\.md")
+FRONTMATTER_NAME_RE = re.compile(r"^name:[ \t]*[\"']?([^\"'\n#]+?)[\"']?[ \t]*$", re.MULTILINE)
+
+
+def is_delivered_skill(rel):
+    """Same rule as is_skill in scripts/deliver-to-platform.py: what the website receives."""
+    if not re.fullmatch(r"skills/.+/[^/]+\.md", rel):
+        return False
+    basename = rel.rsplit("/", 1)[-1].lower()
+    return not (basename.startswith("readme") or basename == "references.md"
+                or re.search(r"/_?templates/", rel))
+
+
+def _kebab(text):
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def suggested_skill_filename(rel, text):
+    """`<name>.md` from the file's own `name:` when it is a usable slug, else from the file name."""
+    match = FRONTMATTER_NAME_RE.search(text or "")
+    name = match.group(1).strip() if match else ""
+    if re.fullmatch(r"[a-z0-9][a-z0-9-]*", name):
+        return f"{name}.md"
+    basename = rel.rsplit("/", 1)[-1]
+    stem = basename[:-3] if basename.lower().endswith(".md") else basename
+    return f"{_kebab(stem) or 'skill'}.md"
+
+
+def _size_or_none(rel):
+    try:
+        return os.path.getsize(os.path.join(REPO_ROOT, rel))
+    except OSError:
+        return None
+
+
+def deliverable_problems(paths, read=_read_or_none, size=_size_or_none):
+    """Line 11: why a file under skills/ would never reach the website, one message each."""
+    problems = []
+    for rel in sorted(paths):
+        if not rel.startswith("skills/") or rel in NON_MARKDOWN_ALLOWED:
+            continue
+        folder, basename = rel.rsplit("/", 1)
+        if not basename.lower().endswith(".md"):
+            target = f"{folder}/{suggested_skill_filename(rel, read(rel))}"
+            problems.append(
+                f"{rel}: this file is not a `.md` file, so the website will never receive it. "
+                f"Rename `{rel}` to `{target}`"
+            )
+            continue
+        if not is_delivered_skill(rel):
+            continue  # READMEs, references, templates and the generated lists
+        if not SKILL_FILENAME_RE.fullmatch(basename):
+            target = f"{folder}/{suggested_skill_filename(rel, read(rel))}"
+            problems.append(
+                f"{rel}: a skill file name is lowercase letters, digits and hyphens, ending in `.md`. "
+                f"Rename `{rel}` to `{target}`"
+            )
+        nbytes = size(rel)
+        if nbytes is not None and nbytes > PLATFORM_MAX_SKILL_BYTES:
+            problems.append(
+                f"{rel}: the skill is {nbytes:,} bytes and the website's limit is "
+                f"{PLATFORM_MAX_SKILL_BYTES:,} bytes, so it would be refused after the merge. "
+                f"Split it into a base skill and a child skill that depends on it "
+                f"(`depends_on:` in the child), each under the limit"
+            )
+    return problems
+
+
+def check_deliverable(errors, warnings, paths=None, read=_read_or_none, size=_size_or_none):
+    """`paths` are the PR's added or edited files (errors); None checks the whole tree (warnings)."""
+    if paths is None:
+        warnings.extend(deliverable_problems(sanctioned_tree_paths(), read, size))
+    else:
+        errors.extend(deliverable_problems(paths, read, size))
 
 
 def added_and_deleted_vs_main():
@@ -808,7 +900,11 @@ def main():
     only = None
     # Line 10 runs first, on every added or edited path (library and evidence
     # included), so a PR that touches no guide cannot skip it.
-    check_sanctioned(errors, added_or_edited_vs_main() if changed_only else None)
+    touched = added_or_edited_vs_main() if changed_only else None
+    check_sanctioned(errors, touched)
+    # Line 11 runs here too: a file that is not `.md` is not a guide, so no
+    # later check would ever look at it.
+    check_deliverable(errors, warnings, touched)
     if changed_only:
         changed = changed_files_vs_main()
         if changed is not None:

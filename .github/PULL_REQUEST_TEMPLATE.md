@@ -18,7 +18,7 @@ By opening this pull request you accept the [contributor terms](https://github.c
 - [ ] Jurisdiction is clear (folder path or `jurisdiction:` in frontmatter)
 - [ ] I only edited files under `skills/**` (generated trees rebuild automatically)
 - [ ] **Name for attribution** (as it should appear on the skill): ______
-- [ ] If publishing as an accountant, I have connected this GitHub account in my OpenAccountants skills workspace
+- [ ] If I am an accountant and want my name on this skill, I followed [CONTRIBUTING.md, "Approve a skill (accountants)"](https://github.com/openaccountants/openaccountants/blob/main/CONTRIBUTING.md#2-approve-a-skill-accountants)
 
 ### Content quality
 
