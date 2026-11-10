@@ -1,10 +1,10 @@
 ---
 name: mt-corporate-tax
 description: "Malta corporate income tax for basis year 2026 (year of assessment 2027): companies resident in Malta and Malta permanent establishments of foreign companies. Covers the 35% company rate, the full imputation system and the five tax accounts, shareholder refunds (six-sevenths, five-sevenths, two-thirds, full), the elective 15% final tax without imputation (LN 188 of 2025), the taxable base, loss carry-forward, group loss relief (51%) and fiscal units (95%), notional interest deduction, provisional tax, the company return and its deadline, interest and additional tax, outbound withholding, and Pillar Two status. Trigger on: Malta corporate tax, Malta company tax rate, 35% Malta, six-sevenths refund, Malta tax accounts, Malta fiscal unit, Malta group relief, Malta provisional tax company, Malta 15% final tax election. Out of scope: participation exemption detail (mt-holding-company-participation-exemption), company residence, CFC and exit tax (mt-company-residence-and-substance), transfer pricing (malta-transfer-pricing), individuals (malta-income-tax)."
-version: 0.3
+version: 0.4
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -129,7 +129,7 @@ The Commissioner may remit late-return additional tax for "reasonable excuse"; l
 
 ## Cross-border points
 
-- **Dividends paid abroad.** Malta does not withhold tax on dividends paid to non-residents. Tax is deducted only from untaxed account dividends paid to a "recipient" (art. 61 and 62 Cap. 123), and a non-resident is a recipient only if owned and controlled by, or acting for, an individual ordinarily resident and domiciled in Malta. A non-recipient is not charged on an untaxed dividend (art. 66). Dividends from taxed accounts bear no further tax for non-residents (art. 68(1)). A non-resident shareholder registered for refunds can claim the article 48 refunds.
+- **Dividends paid abroad.** Malta does not withhold tax on dividends paid to non-residents. Tax is deducted only from untaxed account dividends paid to a "recipient" (art. 61 and 62 Cap. 123), and a non-resident is a recipient only if owned and controlled by, or acting for, an individual ordinarily resident and domiciled in Malta, or is an EU/EEA individual (and spouse where applicable) taxed at resident rates under the first and second provisos to art. 56(1)(c), where at least 90% of their (or the couple's) worldwide income comes from Malta (art. 61(a)(iv)). Untaxed dividends to them bear the 15% deduction. A non-recipient is not charged on an untaxed dividend (art. 66). Dividends from taxed accounts bear no further tax for non-residents (art. 68(1)). A non-resident shareholder registered for refunds can claim the article 48 refunds.
 - **Interest and royalties paid abroad.** Article 12(1)(c)(i) exempts interest, discount, premium and royalties "accruing to or derived by any person not resident in Malta", unless they are effectively connected with a Malta permanent establishment of that person. The proviso requires the beneficial owner to be non-resident and not owned and controlled by, or acting for, individuals ordinarily resident and domiciled in Malta. So there is no domestic withholding on these payments in the ordinary case.
 - **EU directives.** The participation exemption carries the Parent-Subsidiary Directive anti-hybrid rule: profits that benefit from the directive's withholding exemption are exempt only to the extent the subsidiary cannot deduct them (art. 12(1)(u) Cap. 123). The ATAD rules (interest limitation, exit tax, CFC, hybrids) are in S.L. 123.187.
 - **CFC rules.** Regulation 7 of [S.L. 123.187](https://legislation.mt/eli/sl/123.187/eng/pdf) can attribute undistributed income of a low-taxed controlled foreign company to the Malta parent. Thresholds and carve-outs are in `mt-company-residence-and-substance`.

@@ -1,10 +1,10 @@
 ---
 name: malta-transfer-pricing
 description: 'Use this skill whenever asked about Malta transfer pricing rules, documentation requirements, or arm''s length pricing for cross-border related-party transactions. Trigger on phrases like "transfer pricing Malta", "TP documentation", "master file Malta", "local file Malta", "arm''s length Malta", "related party transactions Malta", "CbCR Malta", "country-by-country report Malta", "BEPS Malta", "intercompany pricing Malta", or any question about transfer pricing compliance for Maltese entities within multinational groups. Covers basis year 2026: the Transfer Pricing Rules (S.L. 123.207) and the MTCA guidelines, the EUR 6,000,000 revenue and EUR 20,000,000 capital exceptions, grandfathering of pre-2024 arrangements, master file and local file on request, the TRA 135 attachment to the YA 2026 company return, unilateral rulings and APAs.'
-version: 1.3
+version: 1.5
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
@@ -29,13 +29,13 @@ Tax year: basis year 2026 (year of assessment 2027). Company tax computation is 
 | Tax authority | Commissioner for Tax and Customs (MTCA) |
 | Key TP legislation | Transfer Pricing Rules, S.L. 123.207 (Legal Notice 284 of 2022), read with the MTCA Guidelines in relation to the Transfer Pricing Rules |
 | Enabling provision | Article 51A, Income Tax Act (Chapter 123) |
-| OECD member? | No (enhanced engagement partner) |
+| OECD member? | No. Malta is not an OECD member or an OECD Key Partner; it takes part through the Inclusive Framework on BEPS ([OECD members and partners](https://www.oecd.org/en/about/members-partners.html)) |
 | BEPS signatory? | Yes (Inclusive Framework member; MLI signatory) |
 | Effective date | Basis years commencing on or after 1 January 2024. Arrangements entered into before 1 January 2024 and not materially altered on or after that date come in for basis years commencing on or after 1 January 2027 (Rule 1(2) proviso, added by L.N. 9 of 2024) |
 | Currency | EUR |
 | Documentation language | English or Maltese |
 | Tax year | Basis year 2026 |
-| Skill version | 1.3 |
+| Skill version | 1.5 |
 
 ## Section 2 -- Documentation Requirements
 
@@ -48,7 +48,7 @@ Tax year: basis year 2026 (year of assessment 2027). Company tax computation is 
 | Required? | Yes, where thresholds met |
 | Format | OECD Annex I to Chapter V of the TP Guidelines |
 | Filing | Not filed annually; made available on MTCA request within a reasonable timeframe, in English or Maltese |
-| Retention period | At least nine years (Article 19(5) ITMA). TP documentation is part of the Article 19(1) ITMA records, and the nine years run from the end of the period the arrangement refers to, or the date of the arrangement, whichever is later (MTCA guidelines, Rule 6) |
+| Retention period | Ten years for a Malta company. Article 19(5) ITMA sets at least nine years after completion of the transactions, but it "shall not apply where effect has been given to the provisions of ... article 163(5)" of the Companies Act, which requires a company's accounting records to be kept for ten years ([Cap. 372 art. 19(5)](https://legislation.mt/eli/cap/372/eng/pdf); [Cap. 386 art. 163(5)](https://legislation.mt/eli/cap/386/eng/pdf)). TP documentation is part of the Article 19(1) ITMA records, and the retention period runs from the end of the period the arrangement refers to, or the date of the arrangement, whichever is later (MTCA guidelines, Rule 6) |
 
 ### 2.2 Local File
 
@@ -149,7 +149,7 @@ The Transfer Pricing Rules apply first, then the Notional Interest Deduction Rul
 | Documentation submission on request | Within reasonable timeframe upon MTCA request |
 | CbCR filing | Within 12 months of end of reporting FY |
 | CbCR notification | Held: confirm the Malta-specific notification date and reporting-entity condition under S.L. 123.127 before filing |
-| Corporate tax return | For a person to whom Article 11(2) ITA applies, the last day of the ninth month after the accounting date, or 31 March of the year of assessment if later (S.L. 372.16, rule 2(c)(i)); see mt-corporate-tax |
+| Corporate tax return | For a person to whom Article 11(2) ITA applies, the last day of the ninth month after the accounting date, or 31 March of the year of assessment if later (S.L. 372.16, rule 2(c)(i)). For a 31 December 2025 year end that is 30 September 2026; see mt-corporate-tax |
 
 ## Section 6 -- Penalties
 
@@ -290,7 +290,7 @@ This skill and its outputs are provided for informational and computational purp
 | Income Tax Management Act, Cap. 372, Article 19(5) | https://legislation.mt/eli/cap/372/eng | 2026-10-23 |
 | Income Tax (Statutory Dates) Rules, S.L. 372.16 | https://legislation.mt/eli/sl/372.16/eng | 2026-10-23 |
 
-Not yet confirmed: CbCR penalty amounts (not checked against S.L. 123.127); the content of TRA 135; the CbCR deadline and notification rules (not re-read in this update); how the S.L. 372.16 return date applies to a company with a 31 December accounting date (see mt-corporate-tax).
+Not yet confirmed: CbCR penalty amounts (not checked against S.L. 123.127); the content of TRA 135; the CbCR deadline and notification rules (not re-read in this update).
 
 > OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
 
@@ -302,6 +302,8 @@ Not yet confirmed: CbCR penalty amounts (not checked against S.L. 123.127); the 
 | MTCA TPguidelines rule6 | https://mtca.gov.mt/docs/default-source/documents/business-tax/international-affairs/international-direct-taxation/transfer-pricing/useful-links/guidelines---transfer-pricing-rules.pdf | 2026-11-04 | Changed claim only; see ledger |
 | SL123.127 reg48 | https://legislation.mt/eli/sl/123.127/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | SL123.212 reg2 | https://legislation.mt/eli/sl/123.212/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap372 art19(5) proviso; Cap386 art163(5) | https://legislation.mt/eli/cap/372/eng/pdf ; https://legislation.mt/eli/cap/386/eng/pdf | 2026-11-08 | Retention: ten years for a Malta company |
+| SL372.16 rule2(c)(i) | https://legislation.mt/eli/sl/372.16/eng/pdf | 2026-11-08 | Return date for a 31 December year end |
 
 Prior source-read dates remain historical; this list does not refresh unrelated claims.
 
