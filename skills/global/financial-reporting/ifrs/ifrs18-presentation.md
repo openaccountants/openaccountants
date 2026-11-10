@@ -10,7 +10,7 @@ depends_on:
   - financial-reporting-workflow-base
 category: financial-reporting
 tier: 2
-verified_by: Source-cited draft (checked against IFRS 18 and IAS 7 official texts on 2026-11-08)
+sources_checked: IFRS 18 and IAS 7 official texts, checked 2026-11-08
 authored_by: Talha Mehmood, ACA, FCCA
 domain: financial-reporting
 standard: "IFRS 18 Presentation and Disclosure in Financial Statements"
@@ -386,7 +386,7 @@ Because IFRS 18 does not alter general ledger recognition or measurement balance
 4. **Note 18 (Finance costs — FY2026: SAR -86,500; FY2025: SAR -78,900):** Comprises interest on borrowings (-61,300 / -56,200), amortisation of borrowing transaction costs (-2,200 / -1,900), interest on lease liabilities (-11,800 / -10,900), unwinding of discount on decommissioning provision (-3,100 / -2,800), net interest on employee EOSB obligation (-6,900 / -6,100), and net loss on interest rate swap over borrowings (-1,200 / -1,000).
 5. **Note 24 (Zakat and Income Tax):** Zakat of **SAR -18,200** (FY2025: **SAR -15,600**) is assessed on NAIC's net-worth Zakat base outside the scope of IAS 12 and was presented in the tax section under IAS 1. Income tax expense under IAS 12 is **SAR -31,400** (FY2025: **SAR -26,300**).
 
-```oa-check
+```yaml
 example_id: ifrs18-naic-full-restatement-fy2026
 currency: "SAR '000"
 inputs:
@@ -587,7 +587,7 @@ Continuing from NAIC's FY2026 financial statements:
 2. **Tax and NCI parameters ([IFRS 18.123(d)–(e)](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs18.html)):** Income tax effects are determined using the applicable statutory income tax rate of **20%** in the jurisdiction where each adjusting item arises ([IFRS 18.B141(a)](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs18.html)). Zakat is non-deductible and carries **0%** income tax effect and **0%** NCI effect (wholly-owned parent level). PP&E impairment (`12,400`), inventory write-downs (`8,900`), and insurance recoveries (`-9,700`) arise in a **90%-owned subsidiary** (**10% NCI**); the litigation provision (`3,900`) arises in a **100%-owned subsidiary** (**0% NCI**).
 3. **Functional expense presentation:** NAIC presents four functional operating expense lines on the face (*Cost of sales*, *Selling and distribution*, *General and administrative*, and *Research and development*) totalling **SAR 2,132,600 thousand** in FY2026 (FY2025: **SAR 1,935,600 thousand**), triggering the mandatory single-note disclosure under [IFRS 18.83](https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2026/issued/ifrs18.html).
 
-```oa-check
+```yaml
 example_id: ifrs18-naic-mpm-and-nature-matrix-fy2026
 currency: "SAR '000"
 inputs:
