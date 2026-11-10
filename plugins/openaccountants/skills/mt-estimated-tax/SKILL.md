@@ -1,18 +1,18 @@
 ---
 name: mt-estimated-tax
-description: "Use this skill whenever asked about Malta provisional tax (estimated tax) for self-employed or self-occupied individuals. Trigger on phrases like \"provisional tax Malta\", \"estimated tax\", \"PT instalments\", \"how much provisional tax do I pay\", \"20% 30% 50%\", \"April instalment\", \"August instalment\", \"December instalment\", \"PT benchmark\", \"PT reduction form\", \"refund of provisional tax\", \"Chapter 372\", \"ITMA article 42\", or any question about Malta's advance income tax payment obligations. Covers basis year 2026: the three-instalment schedule (20/30/50 on 30 April, 31 August, 21 December), the PT benchmark taken from the self-assessment two years earlier, first-year rules, the PT reduction form, interest of 0.6% a month on late payment, and settlement with the tax return by 30 June. ALWAYS read this skill before touching any Malta provisional tax work."
+description: "Use this skill whenever asked about Malta provisional tax (estimated tax) for self-employed or self-occupied individuals. Trigger on phrases like \"provisional tax Malta\", \"estimated tax\", \"PT instalments\", \"how much provisional tax do I pay\", \"20% 30% 50%\", \"April instalment\", \"August instalment\", \"December instalment\", \"PT benchmark\", \"PT reduction form\", \"refund of provisional tax\", \"Chapter 372\", \"ITMA article 42\", or any question about Malta's advance income tax payment obligations. Covers basis year 2026: the three-instalment schedule (20/30/50 on 30 April, 31 August, 21 December), the PT benchmark taken from the self-assessment two years earlier, first-year rules, the PT reduction form, additional tax of 0.6% a month on late payment, and settlement with the tax return by 30 June. ALWAYS read this skill before touching any Malta provisional tax work."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/mt-estimated-tax"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
 ---
 
 # MT Estimated Tax
 
-## Malta Provisional Tax (PT) -- Self-Employed Skill v2.3
+## Malta Provisional Tax (PT) -- Self-Employed Skill v2.4
 
 Tax year: basis year 2026 (year of assessment 2027). The PT benchmark for 2026 comes from the self-assessment for basis year 2024. Rates are in [malta-income-tax](malta-income-tax.md); rental income is in [mt-rental-income](mt-rental-income.md).
 
@@ -36,7 +36,7 @@ Tax year: basis year 2026 (year of assessment 2027). The PT benchmark for 2026 c
 | Computation basis | PT benchmark: the tax payable in the self-assessment for the basis year two years earlier, adding back the PT paid for that year (for 2026: basis year 2024, YA 2025). The Commissioner may set a higher benchmark by written notice |
 | Who pays | Every company; an individual liable to tax in Malta for the benchmark year of assessment, except one who could elect under Article 12 ITMA (no return) for that year; any other person that is not a company or an individual. The Commissioner can exempt by written notice (S.L. 372.18, rule 2(1)) |
 | New business | Test existing benchmark-year tax liability and any notice first. A business start alone does not create an exemption. With no benchmark liability and no overriding notice, no PT is due; settle the actual annual tax by its applicable return/payment date |
-| Late payment | Additional tax of 0.6% of the unpaid PT for each calendar month or part (S.L. 372.18, rule 14(1), for periods from 1 June 2022; MTCA pages say from 1 September 2022). Cut by 90% on the part of the benchmark above the tax the self-assessment shows. Stops at the tax settlement date |
+| Late payment | Additional tax of 0.6% of the unpaid PT for each calendar month or part (S.L. 372.18, rule 14(1), for periods from 1 June 2022; 1 September 2022 is the start of 0.6% refund interest under ITMA art. 48(2D), not of this charge). Cut by 90% on the part of the benchmark above the tax the self-assessment shows. Stops at the tax settlement date |
 | Tax year | Basis year 2026 |
 | Review status | Source-cited draft: not reviewed by an accountant |
 
@@ -180,9 +180,9 @@ expected:
 
 The benchmark is EUR 3,000: the 15% tax on rent was paid with the TA24 and never entered the return.
 
-### Example 5 -- Late payment interest
+### Example 5 -- Late payment additional tax
 
-The first 2026 instalment of EUR 1,800 was due 30 April 2026 and paid 15 July 2026. Interest is 0.6% for each calendar month or part of a month. May, June and the part of July give 3 months, so EUR 32.40. This assumes the 2026 tax is not below the benchmark; otherwise the 90% cut in rule 14(1) applies to the difference.
+The first 2026 instalment of EUR 1,800 was due 30 April 2026 and paid 15 July 2026. Additional tax is 0.6% for each calendar month or part of a month (S.L. 372.18, rule 14(1)). May, June and the part of July give 3 months, so EUR 32.40. This assumes the 2026 tax is not below the benchmark; otherwise the 90% cut in rule 14(1) applies to the difference.
 
 ```oa-check
 name: Late April 2026 PT instalment, paid 15 July, 0.6% per month or part
@@ -192,10 +192,10 @@ inputs:
   months_part: 2.5
 steps:
   - months: ceil(months_part)
-  - interest: pct(unpaid, rate_pct) * months
+  - additional_tax: pct(unpaid, rate_pct) * months
 expected:
   months: 3
-  interest: 32.40
+  additional_tax: 32.40
 ```
 
 ### Example 6 -- Bank statement classification
@@ -224,25 +224,27 @@ expected:
 
 ## Section 6 -- Penalties and interest
 
-### 6.1 Late payment interest
+### 6.1 Additional tax on late provisional tax
 
-**Late payment interest**
+**Additional tax on late provisional tax**
 
 | Element | Rate |
 | --- | --- |
-| Interest rate | 0.6% per month or part thereof (from 1 September 2022) |
+| Additional tax rate | 0.6% per month or part thereof, for periods from 1 June 2022 (S.L. 372.18, rule 14(1); charged as provided in ITMA art. 44(1)) |
 | Runs from | Due date of each instalment |
 | Stops | No further additional tax on unpaid PT for any month starting after the tax settlement date, 30 June of the year of assessment (S.L. 372.18, rule 14(2); S.L. 372.16, rule 5) |
 | 90% reduction | Where the self-assessed tax is below the PT benchmark, the additional tax on the difference is cut by 90% (S.L. 372.18, rule 14(1), last proviso) |
+| No interest on top | No interest under ITMA art. 44(2A) runs on tax that bears this additional tax (ITMA art. 44(2B)(d)) |
+| Remission | The Commissioner may remit the additional tax only where absence from Malta, serious sickness or another cause the Minister prescribes prevented payment (ITMA art. 44(2)) |
 | Shortfall after the year | Tax unpaid after the 30 June settlement date bears interest of 0.6% for each month or part; total interest cannot exceed the tax (S.L. 372.28, rule 2) |
 
-### 6.2 Interest computation
+### 6.2 Additional tax computation
 
-- **Interest computation**: ``` interest = unpaid_amount x 0.6% x months_or_part_overdue ``` Interest accrues per instalment independently. The charge on the part of the benchmark above the tax actually due is cut by 90% (rule 14(1), last proviso, still in force after L.N. 99 of 2022).  _(S.L. 372.18, rule 14)_
+- **Additional tax computation**: ``` additional_tax = unpaid_amount x 0.6% x months_or_part_overdue ``` Additional tax accrues per instalment independently. The charge on the part of the benchmark above the tax actually due is cut by 90% (rule 14(1), last proviso, still in force after L.N. 99 of 2022).  _(S.L. 372.18, rule 14)_
 
 ## Section 7 -- Adjustments and reductions
 
-- **Adjustments and reductions**: If the taxpayer expects the tax for the year to be lower than the benchmark, they file the PT reduction form in the Schedule to S.L. 372.18 giving the estimated tax. No approval is needed, and the form can be filed more than once in a year (rule 10(2)). Each later instalment is the lower of the normal 20/30/50 amount and the estimate less PT already paid (rule 10(3)). The instalments still follow the original benchmark (20% and 30%) until the reduced total is reached; the last instalment is the balance. Example: benchmark EUR 1,000, estimate EUR 800: pay EUR 200, EUR 300, then EUR 300. Risk: if the tax for the year exceeds the reduced total, interest runs on the shortfall. Flag for reviewer before advising any PT reduction.  _(S.L. 372.18, rules 10 to 12; MTCA PT booklet Q9; MTCA FAQ 5)_
+- **Adjustments and reductions**: If the taxpayer expects the tax for the year to be lower than the benchmark, they file the PT reduction form in the Schedule to S.L. 372.18 giving the estimated tax. No approval is needed, and the form can be filed more than once in a year (rule 10(2)). Each later instalment is the lower of the normal 20/30/50 amount and the estimate less PT already paid (rule 10(3)). The instalments still follow the original benchmark (20% and 30%) until the reduced total is reached; the last instalment is the balance. Example: benchmark EUR 1,000, estimate EUR 800: pay EUR 200, EUR 300, then EUR 300. Risk: if the tax for the year exceeds the reduced total, additional tax under rule 14 runs on the shortfall (rule 12(2)). Flag for reviewer before advising any PT reduction.  _(S.L. 372.18, rules 10 to 12; MTCA PT booklet Q9; MTCA FAQ 5)_
 
 ## Section 8 -- Edge cases
 
@@ -258,7 +260,7 @@ expected:
 
 **EC6 -- Client ceases self-employment mid-year.** File a PT reduction form with the estimated tax for the year. The return reconciles the actual liability.
 
-**EC7 -- PT notice differs from client calculation.** Reconcile the notice to the statutory benchmark and any written determination; do not treat an unexplained mismatch as resolved. Pay the stated amount, or file a PT reduction form, and query separately. Paying less without a reduction form triggers interest on the shortfall.
+**EC7 -- PT notice differs from client calculation.** Reconcile the notice to the statutory benchmark and any written determination; do not treat an unexplained mismatch as resolved. Pay the stated amount, or file a PT reduction form, and query separately. Paying less without a reduction form triggers additional tax on the shortfall (rule 14).
 
 **EC8 -- Foreign source income with DTR.** The benchmark is the tax payable in the benchmark-year self-assessment, which already reflects double taxation relief. Flag for reviewer to confirm DTR availability in the current year.
 
@@ -304,7 +306,7 @@ Before delivering output, verify:
 ### Test 5 -- Late payment penalty
 
 **Input:** 1st instalment EUR 1,800 due 30 April. Paid 15 July (2.5 months, counted as 3).
-**Expected:** Interest = EUR 1,800 x 0.6% x 3 = EUR 32.40.
+**Expected:** Additional tax = EUR 1,800 x 0.6% x 3 = EUR 32.40.
 
 ### Test 6 -- First year, no prior assessment
 
@@ -353,7 +355,9 @@ This skill and its outputs are provided for informational and computational purp
 | Income Tax (Rate of Interest) Rules, S.L. 372.28, rule 2 | https://legislation.mt/eli/sl/372.28/eng | 2026-10-23 |
 | Income Tax (Statutory Dates) Rules, S.L. 372.16, rules 2 and 5 | https://legislation.mt/eli/sl/372.16/eng | 2026-10-23 |
 
-Not yet confirmed: the start date of the 0.6% rate for PT (rule 14(1) says periods from 1 June 2022; MTCA pages say 1 September 2022; this does not change any 2026 figure); the 31 December refund date and refund interest, taken from the MTCA Tax Return Cycle page rather than Article 48 ITMA.
+Refund date and refund interest: for an individual the refund date is 1 January of the year after the year of assessment (S.L. 372.16, rule 6(b)(ii)); a return filed after its due date moves it later (ITMA art. 48(2B)); refund interest is 0.6% for each month or part for periods from 1 September 2022 (ITMA art. 48(2D)).
+
+Not yet confirmed: the refund conditions (all income tax and VAT returns filed, bank details in My Account) and the PT1 form name, which come from MTCA pages, not the law.
 
 > OpenAccountants research. This Guide has no named maintainer assigned in the Malta audit closeout.
 
@@ -365,10 +369,13 @@ Only the identified passages were read for this delta; historical source rows ke
 | Source and passage actually read | URL | Read on |
 |---|---|---|
 | Benchmark eligibility/fallback/reduction rules2,6,7,10 read | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-04 |
+| S.L. 372.18 rules 12(2) and 14(1): additional tax on late PT, 0.6% from 1 June 2022 | https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4 | 2026-11-08 |
+| ITMA art. 44(1), 44(2), 44(2B)(d) and 48(2A)-(2D): additional tax, remission, no interest on top, refund date and refund interest | https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b | 2026-11-08 |
+| S.L. 372.16 rule 6(b)(ii): refund date | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-08 |
 | MTCA actual YA2026 filing/payment extension read | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
 
 Correction ledger and complete old-topic destinations: [personal-mt-estimated-tax](../../evidence/malta-deep-audit-20261104/ledgers/personal-mt-estimated-tax.md). Full original research is archived there; this correction is not professional attestation.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-estimated-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-estimated-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-estimated-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-estimated-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
