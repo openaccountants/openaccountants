@@ -1,11 +1,11 @@
 ---
 name: ifrs18-presentation
 description: IFRS financial statement presentation, disclosure, and IAS 1-to-IFRS 18 restatement under IFRS 18 (Presentation and Disclosure in Financial Statements) and consequential amendments to IAS 7, IAS 8, IAS 33, and IAS 34. Covers the five statement of profit or loss categories (operating, investing, financing, income taxes, discontinued operations), the two mandatory subtotals (operating profit or loss; profit or loss before financing and income taxes), the four classification overlays (foreign exchange, derivatives and hedging, specified main business activities, held-for-sale), management-defined performance measures (MPMs) with single-note tax and NCI reconciliations, the mandatory nature-of-expense matrix when presenting expenses by function, amended IAS 7 cash flow classification rules, balance sheet goodwill disaggregation, retrospective transition reconciliations, and the 57-point Class A/B/C integrity check battery. Produces restatement conclusions, reclassification entries, working paper matrices, and a reviewer brief. Issued as the IFRS edition of the financial statement presentation topic; see us-gaap-asc220-presentation for the US GAAP edition. MUST load alongside financial-reporting-workflow-base.
-version: 1.0.0
+version: 1.0.1
 jurisdiction: GLOBAL
 tax_year: 2027
 tax_year_notes: Effective for annual reporting periods beginning on or after 1 January 2027, applied retrospectively under IAS 8; earlier application permitted (including FY2026 early adopters).
-last_updated: 2026-11-08
+last_updated: 2026-11-10
 depends_on:
   - financial-reporting-workflow-base
 category: financial-reporting
