@@ -1,0 +1,897 @@
+{
+  "engine": "us_federal_income_tax_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/us_federal_income_tax_2026",
+  "generated_from": "src/lib/engines/us-federal-income-tax-2026.ts",
+  "source_commit": "9931ceb6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "us_federal_income_tax_2026",
+    "version": "1.0.0",
+    "jurisdiction": "US",
+    "tax_years": [
+      "2025",
+      "2026"
+    ],
+    "summary": "US federal individual income tax on Form 1040 for tax year 2025 or 2026: AGI, standard or itemized deduction, the simplified QBI deduction, bracket tax with the 0%/15%/20% rates on qualified dividends and long-term gains, the child tax credit, self-employment tax, Additional Medicare Tax and net investment income tax, plus the estimated-tax safe harbour and due dates. Refuses the alternative minimum tax when it cannot be shown to be zero, QBI above the threshold, the child tax credit above its phase-out start, and 2025 married filing separately.",
+    "facts": {
+      "filing_status": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "single",
+          "married_filing_jointly",
+          "married_filing_separately",
+          "head_of_household"
+        ],
+        "description": "filing status at the end of the year (a qualifying surviving spouse is not covered)"
+      },
+      "wages": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, Form W-2 box 1 (taxable wages)"
+      },
+      "w2_social_security_wages": {
+        "type": "number",
+        "required": false,
+        "description": "USD, Form W-2 box 3. Left out, it is taken as equal to wages. Used only for the self-employment tax wage base"
+      },
+      "w2_medicare_wages": {
+        "type": "number",
+        "required": false,
+        "description": "USD, Form W-2 box 5. Left out, it is taken as equal to wages. Used only for the Additional Medicare Tax"
+      },
+      "self_employment_net_profit": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, Schedule C line 31 net profit (all Schedule C businesses together; a loss is not covered)"
+      },
+      "self_employed_retirement_and_health_deductions": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, Schedule 1 lines 16 and 17 for that business: SEP, SIMPLE or solo 401(k) deduction plus self-employed health insurance. They reduce AGI and QBI"
+      },
+      "other_adjustments": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, other Schedule 1 adjustments not tied to the business (HSA, IRA, student loan interest, educator expenses)"
+      },
+      "interest": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, taxable interest (Form 1040 line 2b)"
+      },
+      "ordinary_dividends": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, ordinary dividends (line 3b), qualified dividends included"
+      },
+      "qualified_dividends": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, qualified dividends (line 3a), part of ordinary_dividends"
+      },
+      "short_term_capital_gains": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, net short-term capital gain (taxed as ordinary income). If short-term losses exceed short-term gains, subtract the net loss from long_term_capital_gains and enter 0"
+      },
+      "long_term_capital_gains": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, net long-term capital gain on assets held more than one year, after any net short-term loss, with no 28% collectibles or 25% section 1250 gain. A net capital loss is not covered"
+      },
+      "other_ordinary_income": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, other taxable income that is not investment income (unemployment compensation, taxable pensions and IRA distributions, prizes). Rents, royalties and passive income are not covered"
+      },
+      "itemized_deductions": {
+        "type": "number",
+        "required": false,
+        "description": "USD, Schedule A total after the SALT cap and every other Schedule A limit. Left out, the standard deduction is used; given, the larger of the two is used"
+      },
+      "itemized_state_and_local_taxes": {
+        "type": "number",
+        "required": false,
+        "description": "USD, the state and local taxes included in itemized_deductions (after the cap). Used only to show the alternative minimum tax is zero; left out, all itemized deductions are treated as taxes (the cautious reading)"
+      },
+      "cash_charitable_gifts": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "USD, cash gifts to public charities. Used only in 2026 when the standard deduction is taken (up to USD 1,000, or USD 2,000 married filing jointly); an itemizer includes gifts in itemized_deductions"
+      },
+      "dependents_under_17": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "qualifying children under 17 at the end of the year, each with a social security number (child tax credit)"
+      },
+      "materially_participates": {
+        "type": "boolean",
+        "required": false,
+        "description": "2026 only, asked when it changes the answer: the taxpayer materially participates in the Schedule C business (for the USD 400 minimum QBI deduction)"
+      },
+      "prior_year_tax": {
+        "type": "number",
+        "required": false,
+        "description": "USD, total tax on last year's return (Form 1040 line 24), for the estimated-tax safe harbour. Left out, no safe harbour is computed"
+      },
+      "prior_year_agi": {
+        "type": "number",
+        "required": false,
+        "description": "USD, last year's AGI (Form 1040 line 11b), needed with prior_year_tax for the 100% or 110% test"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2025",
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2025 and 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "agi": "USD, adjusted gross income",
+      "deduction_used": "standard or itemized",
+      "deduction": "USD",
+      "qbi_deduction": "USD",
+      "taxable_income": "USD",
+      "ordinary_tax": "USD, bracket tax on ordinary taxable income",
+      "preferential_tax": "USD, tax on qualified dividends and long-term gains at 0%/15%/20%",
+      "income_tax": "USD, Form 1040 line 16",
+      "child_tax_credit": "USD, the non-refundable part used",
+      "se_tax": "USD",
+      "additional_medicare_tax": "USD",
+      "net_investment_income_tax": "USD",
+      "total_tax": "USD, Form 1040 line 24",
+      "estimated_tax": "required annual payment, instalment and due dates (when prior_year_tax is given)"
+    }
+  },
+  "anchors": [
+    "us-form-1040-individual-return Example A (2025, single): taxable income $83,400, tax $12,716",
+    "us-form-1040-individual-return Example B (2025, MFJ, itemized $67,300, two children): tax $37,852, CTC $4,400, NIIT $236, Additional Medicare $270, total tax $33,958",
+    "us-form-1040-individual-return Example D (2025, single): regular tax $40,840, NIIT about $1,210 (the ISO AMT is outside this engine)",
+    "us-federal-return-assembly Case A (2025): AGI $86,922.27, QBI deduction $14,234.45, taxable income $56,937.82, SE tax $16,955.46",
+    "us-federal-return-assembly Case C (2026): QBI $1,500 -> $400 minimum; QBI $999 -> $199.80",
+    "us-federal-income-tax-return-1040 worked decision (2026, MFJ, AGI $200,000): standard route $34,200 -> tax $25,900; itemized $30,000 -> $26,824",
+    "us-capital-gains Case 1 (2026, single, taxable income $70,000 with $40,000 gain): $3,082.50 on the gain",
+    "us-capital-gains Case 2 (2026, MFJ, MAGI $300,000, NII $80,000): NIIT $1,900",
+    "us-capital-gains Case 7 (2025, MFJ, taxable income $120,000 with $30,000 gain): $3,495 on the gain",
+    "us-quarterly-estimated-tax Examples 1 and 2: required annual payment $18,000 (quarterly $4,500); $46,200 (quarterly $11,550)"
+  ],
+  "rules": [
+    {
+      "name": "RATE_SCHEDULE_SINGLE_2026",
+      "value": [
+        [
+          12400,
+          0.1
+        ],
+        [
+          50400,
+          0.12
+        ],
+        [
+          105700,
+          0.22
+        ],
+        [
+          201775,
+          0.24
+        ],
+        [
+          256225,
+          0.32
+        ],
+        [
+          640600,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Tax year 2026 rate schedules",
+      "quote": "Single, and married filing separately, up to USD 12,400 | 10% of taxable income\nSingle, and married filing separately, over USD 12,400 up to USD 50,400 | USD 1,240 plus 12% of the excess over USD 12,400\nSingle, and married filing separately, over USD 50,400 up to USD 105,700 | USD 5,800 plus 22% of the excess over USD 50,400\nSingle, and married filing separately, over USD 105,700 up to USD 201,775 | USD 17,966 plus 24% of the excess over USD 105,700\nSingle, and married filing separately, over USD 201,775 up to USD 256,225 | USD 41,024 plus 32% of the excess over USD 201,775\nSingle only, over USD 256,225 up to USD 640,600 | USD 58,448 plus 35% of the excess over USD 256,225\nSingle only, over USD 640,600 | USD 192,979.25 plus 37% of the excess over USD 640,600",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "RATE_SCHEDULE_MFJ_2026",
+      "value": [
+        [
+          24800,
+          0.1
+        ],
+        [
+          100800,
+          0.12
+        ],
+        [
+          211400,
+          0.22
+        ],
+        [
+          403550,
+          0.24
+        ],
+        [
+          512450,
+          0.32
+        ],
+        [
+          768700,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Tax year 2026 rate schedules",
+      "quote": "Married filing jointly and surviving spouses, up to USD 24,800 | 10% of taxable income\nMarried filing jointly, over USD 24,800 up to USD 100,800 | USD 2,480 plus 12% of the excess over USD 24,800\nMarried filing jointly, over USD 100,800 up to USD 211,400 | USD 11,600 plus 22% of the excess over USD 100,800\nMarried filing jointly, over USD 211,400 up to USD 403,550 | USD 35,932 plus 24% of the excess over USD 211,400\nMarried filing jointly, over USD 403,550 up to USD 512,450 | USD 82,048 plus 32% of the excess over USD 403,550\nMarried filing jointly, over USD 512,450 up to USD 768,700 | USD 116,896 plus 35% of the excess over USD 512,450\nMarried filing jointly, over USD 768,700 | USD 206,583.50 plus 37% of the excess over USD 768,700",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "RATE_SCHEDULE_MFS_2026",
+      "value": [
+        [
+          12400,
+          0.1
+        ],
+        [
+          50400,
+          0.12
+        ],
+        [
+          105700,
+          0.22
+        ],
+        [
+          201775,
+          0.24
+        ],
+        [
+          256225,
+          0.32
+        ],
+        [
+          384350,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Tax year 2026 rate schedules",
+      "quote": "Single, and married filing separately, up to USD 12,400 | 10% of taxable income\nSingle, and married filing separately, over USD 12,400 up to USD 50,400 | USD 1,240 plus 12% of the excess over USD 12,400\nSingle, and married filing separately, over USD 50,400 up to USD 105,700 | USD 5,800 plus 22% of the excess over USD 50,400\nSingle, and married filing separately, over USD 105,700 up to USD 201,775 | USD 17,966 plus 24% of the excess over USD 105,700\nSingle, and married filing separately, over USD 201,775 up to USD 256,225 | USD 41,024 plus 32% of the excess over USD 201,775\nMarried filing separately only, over USD 256,225 up to USD 384,350 | USD 58,448 plus 35% of the excess over USD 256,225\nMarried filing separately only, over USD 384,350 | USD 103,291.75 plus 37% of the excess over USD 384,350",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "RATE_SCHEDULE_HOH_2026",
+      "value": [
+        [
+          17700,
+          0.1
+        ],
+        [
+          67450,
+          0.12
+        ],
+        [
+          105700,
+          0.22
+        ],
+        [
+          201750,
+          0.24
+        ],
+        [
+          256200,
+          0.32
+        ],
+        [
+          640600,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Tax year 2026 rate schedules",
+      "quote": "Head of household, up to USD 17,700 | 10% of taxable income\nHead of household, over USD 17,700 up to USD 67,450 | USD 1,770 plus 12% of the excess over USD 17,700\nHead of household, over USD 67,450 up to USD 105,700 | USD 7,740 plus 22% of the excess over USD 67,450\nHead of household, over USD 105,700 up to USD 201,750 | USD 16,155 plus 24% of the excess over USD 105,700\nHead of household, over USD 201,750 up to USD 256,200 | USD 39,207 plus 32% of the excess over USD 201,750\nHead of household, over USD 256,200 up to USD 640,600 | USD 56,631 plus 35% of the excess over USD 256,200\nHead of household, over USD 640,600 | USD 191,171 plus 37% of the excess over USD 640,600",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "RATE_SCHEDULE_SINGLE_2025",
+      "value": [
+        [
+          11925,
+          0.1
+        ],
+        [
+          48475,
+          0.12
+        ],
+        [
+          103350,
+          0.22
+        ],
+        [
+          197300,
+          0.24
+        ],
+        [
+          250525,
+          0.32
+        ],
+        [
+          626350,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "slug": "us-form-1040-individual-return",
+      "section": "2.2 Ordinary income tax brackets — §1(j) (post-TCJA, OBBBA-permanent)",
+      "quote": "Single (2025) tax brackets\nRate | Taxable income\n10% | $0 – $11,925\n12% | $11,925 – $48,475\n22% | $48,475 – $103,350\n24% | $103,350 – $197,300\n32% | $197,300 – $250,525\n35% | $250,525 – $626,350\n37% | over $626,350",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "RATE_SCHEDULE_MFJ_2025",
+      "value": [
+        [
+          23850,
+          0.1
+        ],
+        [
+          96950,
+          0.12
+        ],
+        [
+          206700,
+          0.22
+        ],
+        [
+          394600,
+          0.24
+        ],
+        [
+          501050,
+          0.32
+        ],
+        [
+          751600,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "slug": "us-form-1040-individual-return",
+      "section": "2.2 Ordinary income tax brackets — §1(j) (post-TCJA, OBBBA-permanent)",
+      "quote": "MFJ (2025) tax brackets\nRate | Taxable income\n10% | $0 – $23,850\n12% | $23,850 – $96,950\n22% | $96,950 – $206,700\n24% | $206,700 – $394,600\n32% | $394,600 – $501,050\n35% | $501,050 – $751,600\n37% | over $751,600",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "RATE_SCHEDULE_HOH_2025",
+      "value": [
+        [
+          17000,
+          0.1
+        ],
+        [
+          64850,
+          0.12
+        ],
+        [
+          103350,
+          0.22
+        ],
+        [
+          197300,
+          0.24
+        ],
+        [
+          250500,
+          0.32
+        ],
+        [
+          626350,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "slug": "us-form-1040-individual-return",
+      "section": "2.2 Ordinary income tax brackets — §1(j) (post-TCJA, OBBBA-permanent)",
+      "quote": "HoH (2025) tax brackets\nRate | Taxable income\n10% | $0 – $17,000\n12% | $17,000 – $64,850\n22% | $64,850 – $103,350\n24% | $103,350 – $197,300\n32% | $197,300 – $250,500\n35% | $250,500 – $626,350\n37% | over $626,350",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "STANDARD_DEDUCTION_2026",
+      "value": {
+        "single": 16100,
+        "married_filing_jointly": 32200,
+        "married_filing_separately": 16100,
+        "head_of_household": 24150
+      },
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Tax year 2026 deductions, credits and other amounts",
+      "quote": "Standard deduction, married filing jointly and surviving spouses | USD 32,200\nStandard deduction, head of household | USD 24,150\nStandard deduction, single and married filing separately | USD 16,100",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "STANDARD_DEDUCTION_2025",
+      "value": {
+        "single": 15750,
+        "married_filing_jointly": 31500,
+        "married_filing_separately": 15750,
+        "head_of_household": 23625
+      },
+      "slug": "us-form-1040-individual-return",
+      "section": "2.1 Standard deduction (§63(c))",
+      "quote": "Filing status | 2025 amount\nSingle | $15,750\nMarried filing jointly (MFJ) | $31,500\nMarried filing separately (MFS) | $15,750\nHead of household (HoH) | $23,625",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "NON_ITEMIZER_CASH_GIFTS_2026",
+      "value": {
+        "other": 1000,
+        "joint": 2000
+      },
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Changes made by Public Law 119-21 that apply to a tax year 2026 return",
+      "quote": "Charitable deduction for a taxpayer who does not itemize, taxable years beginning after 31 December 2025 | up to USD 1,000 (USD 2,000 joint)",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "ITEMIZED_LIMIT_37_PERCENT_BAND_2026",
+      "value": 0.05405405405405406,
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Changes made by Public Law 119-21 that apply to a tax year 2026 return",
+      "quote": "Limit on itemized deductions in the 37% bracket, taxable years beginning after 31 December 2025 | itemized deductions reduced by 2/37 of the lesser of (1) the itemized deductions, or (2) taxable income, computed before this reduction and increased by those itemized deductions, above the dollar amount at which the 37% bracket begins for the taxpayer",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "QBI_RATE",
+      "value": 0.2,
+      "slug": "us-qbi-deduction",
+      "section": "Section 3 — Year-specific figures table for tax year 2025",
+      "quote": "§199A QBI deduction rate | 20%\n§199A QBI deduction rate (2026 onward) | 20% — unchanged",
+      "skill_url": "https://www.openaccountants.com/skills/us-qbi-deduction"
+    },
+    {
+      "name": "QBI_SIMPLIFIED_METHOD",
+      "value": true,
+      "slug": "us-federal-return-assembly",
+      "section": "QBI deduction: which form, and the thresholds for 2025",
+      "quote": "At or below the threshold, a specified service business (for example consulting) is treated as a qualified business, and there is no limit based on W-2 wages or property.\nForm 8995 computes 20% of QBI, then caps it at 20% of (taxable income before QBI − net capital gain, including qualified dividends).",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "QBI_DEFINITION",
+      "value": true,
+      "slug": "us-federal-return-assembly",
+      "section": "The method, step by step",
+      "quote": "\"Taxable income before the QBI deduction\" = line 11a − line 12e − line 13b. ... QBI itself is net profit reduced by the deductible half of SE tax, the health insurance deduction and the retirement contribution attributable to the business.",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "QBI_THRESHOLD_2026",
+      "value": {
+        "single": 201750,
+        "married_filing_jointly": 403500,
+        "married_filing_separately": 201775,
+        "head_of_household": 201750
+      },
+      "slug": "us-federal-return-assembly",
+      "section": "Figures for tax year 2026",
+      "quote": "QBI threshold (MFJ / MFS / all others) | $403,500 / $201,775 / $201,750",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "QBI_THRESHOLD_2025",
+      "value": {
+        "single": 197300,
+        "married_filing_jointly": 394600,
+        "married_filing_separately": 197300,
+        "head_of_household": 197300
+      },
+      "slug": "us-qbi-deduction",
+      "section": "Section 3 — Year-specific figures table for tax year 2025",
+      "quote": "Taxable income threshold (single / HoH / QSS) | $197,300\nTaxable income threshold (MFJ) | $394,600\nTaxable income threshold (MFS) | $197,300",
+      "skill_url": "https://www.openaccountants.com/skills/us-qbi-deduction"
+    },
+    {
+      "name": "QBI_MINIMUM_2026",
+      "value": {
+        "minimum": 400,
+        "qbi_needed": 1000
+      },
+      "slug": "us-federal-return-assembly",
+      "section": "What changed for 2026",
+      "quote": "Starting in 2026, an \"applicable taxpayer\" gets a minimum QBI deduction of $400. An applicable taxpayer has at least $1,000 of qualified business income, in total, from active trades or businesses in which the taxpayer materially participates. The deduction is the larger of the normal computation and $400.",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "CAPITAL_GAIN_RATES_2026",
+      "value": {
+        "rates": [
+          0,
+          0.15,
+          0.2
+        ],
+        "ceilings": {
+          "single": [
+            49450,
+            545500
+          ],
+          "married_filing_jointly": [
+            98900,
+            613700
+          ],
+          "married_filing_separately": [
+            49450,
+            306850
+          ],
+          "head_of_household": [
+            66200,
+            579600
+          ]
+        }
+      },
+      "slug": "us-capital-gains",
+      "section": "Rates and thresholds for 2026",
+      "quote": "Filing status (2026) | 0% up to taxable income of | 15% up to taxable income of | 20% above\nSingle | $49,450 | $545,500 | $545,500\nMarried filing jointly / surviving spouse | $98,900 | $613,700 | $613,700\nMarried filing separately | $49,450 | $306,850 | $306,850\nHead of household | $66,200 | $579,600 | $579,600",
+      "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
+    },
+    {
+      "name": "CAPITAL_GAIN_RATES_2025",
+      "value": {
+        "rates": [
+          0,
+          0.15,
+          0.2
+        ],
+        "ceilings": {
+          "single": [
+            48350,
+            533400
+          ],
+          "married_filing_jointly": [
+            96700,
+            600050
+          ],
+          "married_filing_separately": [
+            48350,
+            300000
+          ],
+          "head_of_household": [
+            64750,
+            566700
+          ]
+        }
+      },
+      "slug": "us-capital-gains",
+      "section": "2025 returns: tax year 2025, extended deadline October 15, 2026",
+      "quote": "Filing status (2025) | 0% up to taxable income of | 15% up to taxable income of | 20% above\nSingle | $48,350 | $533,400 | $533,400\nMarried filing jointly / surviving spouse | $96,700 | $600,050 | $600,050\nMarried filing separately | $48,350 | $300,000 | $300,000\nHead of household | $64,750 | $566,700 | $566,700",
+      "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
+    },
+    {
+      "name": "CAPITAL_GAIN_STACKING",
+      "value": true,
+      "slug": "us-capital-gains",
+      "section": "The method, step by step",
+      "quote": "Qualified dividends go in the 0%/15%/20% group.\nStack. Ordinary taxable income fills the brackets first, and the preferential gain sits on top of it. The 0% and 15% ceilings are measured against total taxable income, not against the gain alone. Use the Qualified Dividends and Capital Gain Tax Worksheet.",
+      "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
+    },
+    {
+      "name": "CHILD_TAX_CREDIT_2026",
+      "value": {
+        "per_child": 2200,
+        "refundable_per_child": 1700
+      },
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Tax year 2026 deductions, credits and other amounts",
+      "quote": "Child tax credit, maximum per qualifying child | USD 2,200\nChild tax credit, refundable amount per child | USD 1,700",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "CHILD_TAX_CREDIT_2025",
+      "value": {
+        "per_child": 2200,
+        "refundable_per_child": 1700
+      },
+      "slug": "us-form-1040-individual-return",
+      "section": "2.9 Other OBBBA changes",
+      "quote": "Child Tax Credit — $2,200 per qualifying child under 17 (§24(h)), refundable portion $1,700 in 2025",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "CHILD_TAX_CREDIT_PHASEOUT_START",
+      "value": {
+        "joint": 400000,
+        "other": 200000
+      },
+      "slug": "us-form-1040-individual-return",
+      "section": "2.9 Other OBBBA changes",
+      "quote": "Child Tax Credit — $2,200 per qualifying child under 17 (§24(h)), ... made permanent by OBBBA §70104. Phaseout begins $400k MFJ / $200k other.",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "CHILD_TAX_CREDIT_PERMANENT",
+      "value": true,
+      "slug": "us-2026-federal-tax-changes",
+      "section": "Child tax credit (permanent from 2025)",
+      "quote": "The higher child tax credit no longer expires after 2025 (section 70104, taxable years beginning after 31 December 2024).",
+      "skill_url": "https://www.openaccountants.com/skills/us-2026-federal-tax-changes"
+    },
+    {
+      "name": "AMT_EXEMPTION_2026",
+      "value": {
+        "exemption": {
+          "single": 90100,
+          "married_filing_jointly": 140200,
+          "married_filing_separately": 70100,
+          "head_of_household": 90100
+        },
+        "phaseout_start": {
+          "single": 500000,
+          "married_filing_jointly": 1000000,
+          "married_filing_separately": 500000,
+          "head_of_household": 500000
+        }
+      },
+      "slug": "us-federal-income-tax-return-1040",
+      "section": "Tax year 2026 deductions, credits and other amounts",
+      "quote": "Alternative minimum tax exemption, married filing jointly and surviving spouses | USD 140,200\nAlternative minimum tax exemption, unmarried (not surviving spouse) | USD 90,100\nAlternative minimum tax exemption, married filing separately | USD 70,100\nAlternative minimum tax exemption, phase-out starts and ends, joint returns | USD 1,000,000; USD 1,280,400\nAlternative minimum tax exemption, phase-out starts and ends, unmarried | USD 500,000; USD 680,200\nAlternative minimum tax exemption, phase-out starts and ends, married filing separately | USD 500,000; USD 640,200",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-income-tax-return-1040"
+    },
+    {
+      "name": "AMT_EXEMPTION_2025",
+      "value": {
+        "exemption": {
+          "single": 88100,
+          "married_filing_jointly": 137000,
+          "married_filing_separately": 68500,
+          "head_of_household": 88100
+        },
+        "phaseout_start": {
+          "single": 626350,
+          "married_filing_jointly": 1252700,
+          "married_filing_separately": 626350,
+          "head_of_household": 626350
+        }
+      },
+      "slug": "us-form-1040-individual-return",
+      "section": "2.4 AMT exemption — §55(d) (post-TCJA, OBBBA-permanent)",
+      "quote": "Filing status | Exemption | Phaseout begins | Fully phased out\nSingle / HoH | $88,100 | $626,350 | $978,750\nMFJ / QSS | $137,000 | $1,252,700 | $1,800,700\nMFS | $68,500 | $626,350 | $900,350",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "AMT_TOP_RATE",
+      "value": 0.28,
+      "slug": "us-form-1040-individual-return",
+      "section": "2.4 AMT exemption — §55(d) (post-TCJA, OBBBA-permanent)",
+      "quote": "AMT rates — 26% on AMTI up to ... 28% above.",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "AMT_COMPUTATION_STEPS",
+      "value": true,
+      "slug": "us-form-1040-individual-return",
+      "section": "9.2 AMT computation flow",
+      "quote": "AMT computation steps — 1. Start with regular taxable income (Line 15). 2. Add back the standard deduction (if claimed). 3. Add AMT adjustments and preferences (Form 6251 Lines 2a-2t). 4. Subtract the AMT exemption (with phaseout if AMTI > threshold). 5. Apply 26%/28% AMT rates. 6. Subtract AMT foreign tax credit. 7. Compare to regular tax.",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "ADDITIONAL_MEDICARE_2026",
+      "value": {
+        "rate": 0.009,
+        "threshold": {
+          "single": 200000,
+          "married_filing_jointly": 250000,
+          "married_filing_separately": 125000,
+          "head_of_household": 200000
+        }
+      },
+      "slug": "us-federal-return-assembly",
+      "section": "Additional taxes on higher income",
+      "quote": "Additional Medicare Tax (Form 8959) on wages plus SE income | 0.9% | $200,000 single, head of household or qualifying surviving spouse; $250,000 MFJ; $125,000 MFS",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "ADDITIONAL_MEDICARE_2025",
+      "value": {
+        "rate": 0.009,
+        "threshold": {
+          "single": 200000,
+          "married_filing_jointly": 250000,
+          "married_filing_separately": 125000,
+          "head_of_household": 200000
+        }
+      },
+      "slug": "us-form-1040-individual-return",
+      "section": "2.6 Additional Medicare Tax — §3101(b)(2) and §1401(b)(2)",
+      "quote": "Additional Medicare Tax thresholds\nFiling status | Threshold\nSingle / HoH | $200,000\nMFJ | $250,000\nMFS | $125,000\nAdditional Medicare Tax rate — 0.9% on wages/SE income over threshold",
+      "skill_url": "https://www.openaccountants.com/skills/us-form-1040-individual-return"
+    },
+    {
+      "name": "NET_INVESTMENT_INCOME_TAX",
+      "value": {
+        "rate": 0.038,
+        "threshold": {
+          "single": 200000,
+          "married_filing_jointly": 250000,
+          "married_filing_separately": 125000,
+          "head_of_household": 200000
+        }
+      },
+      "slug": "us-capital-gains",
+      "section": "Net investment income tax",
+      "quote": "Filing status | MAGI threshold (same for 2025 and 2026)\nMarried filing jointly / qualifying surviving spouse | $250,000\nMarried filing separately | $125,000\nSingle / head of household | $200,000\nRate: 3.8% of the smaller of net investment income or MAGI above the threshold",
+      "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
+    },
+    {
+      "name": "NET_INVESTMENT_INCOME_ITEMS",
+      "value": true,
+      "slug": "us-capital-gains",
+      "section": "Net investment income tax",
+      "quote": "Net investment income includes capital gains, interest, dividends, rents, royalties, ... It excludes wages and most self-employment income.",
+      "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
+    },
+    {
+      "name": "NIIT_SAME_FOR_2025",
+      "value": true,
+      "slug": "us-capital-gains",
+      "section": "2025 returns: tax year 2025, extended deadline October 15, 2026",
+      "quote": "The NIIT thresholds, the 3.8% rate and the $3,000 / $1,500 loss limit are the same as for 2026.",
+      "skill_url": "https://www.openaccountants.com/skills/us-capital-gains"
+    },
+    {
+      "name": "SAFE_HARBOUR_2026",
+      "value": {
+        "current": 0.9,
+        "prior": 1,
+        "prior_high": 1.1,
+        "agi_limit": 150000,
+        "agi_limit_mfs": 75000
+      },
+      "slug": "us-federal-return-assembly",
+      "section": "Estimated tax and the Form 2210 penalty",
+      "quote": "Estimated tax is required for 2026 when ... the smaller of 90% of the 2026 tax and 100% of the 2025 tax. The 2025 return must cover 12 months.\nUse 110% instead of 100% if 2025 AGI (line 11b) was more than $150,000 ($75,000 if filing separately for 2026).",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "ESTIMATED_TAX_DUE_DATES_2026",
+      "value": [
+        "2026-04-15",
+        "2026-06-15",
+        "2026-09-15",
+        "2027-01-15"
+      ],
+      "slug": "us-federal-return-assembly",
+      "section": "Estimated tax and the Form 2210 penalty",
+      "quote": "2026 due dates: April 15, 2026; June 15, 2026; September 15, 2026; January 15, 2027.",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "SAFE_HARBOUR_2025",
+      "value": {
+        "current": 0.9,
+        "prior": 1,
+        "prior_high": 1.1,
+        "agi_limit": 150000,
+        "agi_limit_mfs": 75000
+      },
+      "slug": "us-quarterly-estimated-tax",
+      "section": "Rates and thresholds",
+      "quote": "Prior-year AGI <= $150,000 -> 100% prior-year safe harbor\nPrior-year AGI > $150,000 -> 110% prior-year safe harbor\nCurrent — 90% of current-year tax\nAGI > $150,000 ($75,000 MFS) | 110% of prior year tax\nRequired = lesser of: Method A (current year): 90% of TY2025 tax; Method B (prior year): 100% of TY2024 tax (110% if AGI > $150K / $75K MFS)",
+      "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
+    },
+    {
+      "name": "ESTIMATED_TAX_DUE_DATES_2025",
+      "value": [
+        "2025-04-15",
+        "2025-06-16",
+        "2025-09-15",
+        "2026-01-15"
+      ],
+      "slug": "us-quarterly-estimated-tax",
+      "section": "Section 1 -- Quick reference",
+      "quote": "1st | April 15, 2025\n2nd | June 16, 2025\n3rd | September 15, 2025\n4th | January 15, 2026",
+      "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
+    },
+    {
+      "name": "QUARTERLY_INSTALMENT_SHARE",
+      "value": 0.25,
+      "slug": "us-quarterly-estimated-tax",
+      "section": "5.4 Quarterly instalments",
+      "quote": "Quarterly instalments — Each instalment = required annual payment / 4 (25% each).",
+      "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
+    },
+    {
+      "name": "ZERO_PRIOR_YEAR_TAX",
+      "value": true,
+      "slug": "us-quarterly-estimated-tax",
+      "section": "5.3 Prior year safe harbour requirements",
+      "quote": "Prior year must be 12-month tax year. Prior year return must be filed. If prior year tax was zero: required annual payment under Method B = $0",
+      "skill_url": "https://www.openaccountants.com/skills/us-quarterly-estimated-tax"
+    },
+    {
+      "name": "NET_EARNINGS_FACTOR",
+      "value": 0.9235,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Net earnings | Schedule C net profit × 92.35%",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "MIN_NET_EARNINGS",
+      "value": 400,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "SS_RATE",
+      "value": 0.124,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "WAGE_BASE",
+      "value": {
+        "2025": 176100,
+        "2026": 184500
+      },
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Wage base | $176,100 for 2025; $184,500 for 2026",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "MEDICARE_RATE",
+      "value": 0.029,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Medicare part | 2.9% of all net earnings, with no cap",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    },
+    {
+      "name": "DEDUCTIBLE_SHARE",
+      "value": 0.5,
+      "slug": "us-federal-return-assembly",
+      "section": "Self-employment tax",
+      "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15",
+      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+    }
+  ]
+}

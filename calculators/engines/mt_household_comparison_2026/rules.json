@@ -1,0 +1,496 @@
+{
+  "engine": "mt_household_comparison_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/mt_household_comparison_2026",
+  "generated_from": "src/lib/engines/mt-household-comparison-2026.ts",
+  "source_commit": "9931ceb6",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "mt_household_comparison_2026",
+    "version": "1.0.0",
+    "jurisdiction": "MT",
+    "tax_years": [
+      "2025",
+      "2026"
+    ],
+    "summary": "Malta resident married couple, basis year 2026 (year of assessment 2027) or basis year 2025 (year of assessment 2026): compares the joint computation on the married table, separate computation (article 49A or 50) with each spouse on the single or parent table, and either of those with spouse B's part-time self-employment profit taxed at the final 10% (article 90A, up to EUR 12,000), and says which gives the least tax.",
+    "facts": {
+      "spouse_a_chargeable_income": {
+        "type": "number",
+        "required": true,
+        "description": "EUR, spouse A's own chargeable income (after their own expenses and capital allowances), without income taxed at a final rate (15% rent option, property transfers)"
+      },
+      "spouse_b_chargeable_income": {
+        "type": "number",
+        "required": true,
+        "description": "EUR, spouse B's own chargeable income on the same basis, INCLUDING any part-time self-employment profit given in spouse_b_part_time_profit"
+      },
+      "married_resident_living_together": {
+        "type": "boolean",
+        "required": true,
+        "description": "the two spouses were married to each other, both resident in Malta, and living together in the basis year (anything else is refused)"
+      },
+      "children": {
+        "type": "number",
+        "required": false,
+        "description": "how many children the couple kept in their custody in the basis year, each not over 18, or not over 23 and in full-time education (0 if none). Maintenance alone does not count for the married tables"
+      },
+      "eu_eea_or_long_term_resident": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed when there are children in basis year 2026: at least one spouse is an EU/EEA national or holds long-term resident status"
+      },
+      "children_born_and_resident_in_malta": {
+        "type": "number",
+        "required": false,
+        "description": "needed only when neither spouse is an EU/EEA national or long-term resident: how many of those children were born in Malta and are resident in Malta"
+      },
+      "separate_computation_available": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed: the couple can be taxed separately this year (the responsible spouse may opt for a separate computation under article 50, or a separate return election under article 49A is open to them). If false, only the joint options are compared"
+      },
+      "spouse_a_parent": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed for separate computation when there are children: spouse A kept those children in custody (own child, spouse's child or certified cohabitant's child) or paid maintenance for their own child under article 12(1)(t)"
+      },
+      "spouse_b_parent": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed for separate computation when there are children: the same test for spouse B"
+      },
+      "spouse_b_part_time_profit": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "EUR, the part of spouse_b_chargeable_income that is part-time SELF-EMPLOYMENT profit (article 4(1)(a)). Part-time employment income is not handled"
+      },
+      "part_time_eligible": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed when there is part-time profit: spouse B meets the skill's part-time conditions (resident; in full-time employment registered with Jobsplus, a pensioner taxed in Malta, or a full-time student or apprentice, or living with a spouse who is; the work registered with Jobsplus, at most two part-time employees, proper books, done for someone other than the full-time employer, VAT-registered unless not required or exempt)"
+      },
+      "separate_route": {
+        "type": "string",
+        "required": false,
+        "choices": [
+          "article_50",
+          "article_49A"
+        ],
+        "description": "needed when separate computation and the part-time 10% are both in play: article_50 (the responsible spouse opts for a separate computation) or article_49A (a separate return election)"
+      },
+      "spouse_b_part_time_in_own_right": {
+        "type": "boolean",
+        "required": false,
+        "description": "needed for the article_49A route with part-time profit: spouse B is in full-time employment registered with Jobsplus, a pensioner taxed in Malta, or a full-time student or apprentice, and does not qualify only as the spouse of such a person"
+      },
+      "income_or_deductions_to_allocate": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "either spouse has income other than their own employment or business income (rent, interest, dividends, jointly owned income) or a deduction not tied to one spouse's own income. The skill does not say how these are allocated on separate computation, so the separate options are then refused"
+      },
+      "credits_or_other_deductions": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "a spouse claims a tax credit (for example a pension or personal retirement scheme credit) or a deduction not already taken off the chargeable incomes above (for example a child or school-fee deduction). Not in the skill, so the whole comparison is refused"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2025",
+          "2026"
+        ],
+        "description": "the BASIS year: the calendar year the income was earned (2026 income is year of assessment 2027). This engine has figures for basis years 2025 and 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "options": "each option: status (computed, not_available, missing_rule), the table(s), chargeable income, tax on the return, the 10% final tax, total",
+      "lowest": "the option key(s) with the least total tax",
+      "lowest_tax": "EUR",
+      "saving_against_joint": "EUR, joint total less the lowest total"
+    }
+  },
+  "anchors": [
+    "malta-income-tax Case 2: married, two children, EUR 40,000 joint -> EUR 3,425 (2026) against EUR 5,450 (2025)",
+    "malta-income-tax Case 3: part-time profit EUR 15,000 -> final tax EUR 1,200 on EUR 12,000, EUR 3,000 into the return"
+  ],
+  "rules": [
+    {
+      "name": "SINGLE_2026",
+      "value": {
+        "zero": 12000,
+        "bands": [
+          [
+            16000,
+            0.15,
+            1800
+          ],
+          [
+            60000,
+            0.25,
+            3400
+          ],
+          [
+            null,
+            0.35,
+            9400
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nSingle (other individual), art. 56(1)(b)(i) | €12,000 | over €12,000 and under €16,000 (€1,800) | over €16,000 and under €60,000 (€3,400) | over €60,000 (€9,400)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "MARRIED_NO_CHILD_2026",
+      "value": {
+        "zero": 15000,
+        "bands": [
+          [
+            23000,
+            0.15,
+            2250
+          ],
+          [
+            60000,
+            0.25,
+            4550
+          ],
+          [
+            null,
+            0.35,
+            10550
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, joint, no qualifying child, art. 56(1)(a)(i) | €15,000 | over €15,000 and under €23,000 (€2,250) | over €23,000 and under €60,000 (€4,550) | over €60,000 (€10,550)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PARENT_2026",
+      "value": {
+        "zero": 13000,
+        "bands": [
+          [
+            17500,
+            0.15,
+            1950
+          ],
+          [
+            60000,
+            0.25,
+            3700
+          ],
+          [
+            null,
+            0.35,
+            9700
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, art. 56(1)(b)(ii) | €13,000 | over €13,000 and under €17,500 (€1,950) | over €17,500 and under €60,000 (€3,700) | over €60,000 (€9,700)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "MARRIED_1_CHILD_2026",
+      "value": {
+        "zero": 17500,
+        "bands": [
+          [
+            26500,
+            0.15,
+            2625
+          ],
+          [
+            60000,
+            0.25,
+            5275
+          ],
+          [
+            null,
+            0.35,
+            11275
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, 1 qualifying child, art. 56(1)(a)(ii) | €17,500 | over €17,500 and under €26,500 (€2,625) | over €26,500 and under €60,000 (€5,275) | over €60,000 (€11,275)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "MARRIED_2_CHILDREN_2026",
+      "value": {
+        "zero": 22500,
+        "bands": [
+          [
+            32000,
+            0.15,
+            3375
+          ],
+          [
+            60000,
+            0.25,
+            6575
+          ],
+          [
+            null,
+            0.35,
+            12575
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, 2 or more qualifying children, art. 56(1)(a)(iii) | €22,500 | over €22,500 and under €32,000 (€3,375) | over €32,000 and under €60,000 (€6,575) | over €60,000 (€12,575)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PARENT_1_CHILD_2026",
+      "value": {
+        "zero": 14500,
+        "bands": [
+          [
+            21000,
+            0.15,
+            2175
+          ],
+          [
+            60000,
+            0.25,
+            4275
+          ],
+          [
+            null,
+            0.35,
+            10270
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000 (€10,270; MTCA's table shows €10,275)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PARENT_2_CHILDREN_2026",
+      "value": {
+        "zero": 18500,
+        "bands": [
+          [
+            25500,
+            0.15,
+            2775
+          ],
+          [
+            60000,
+            0.25,
+            5325
+          ],
+          [
+            null,
+            0.35,
+            11325
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent, 2 or more qualifying children, art. 56(1)(b)(v) | €18,500 | over €18,500 and under €25,500 (€2,775) | over €25,500 and under €60,000 (€5,325) | over €60,000 (€11,325)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "SINGLE_2025",
+      "value": {
+        "zero": 12000,
+        "bands": [
+          [
+            16000,
+            0.15,
+            1800
+          ],
+          [
+            60000,
+            0.25,
+            3400
+          ],
+          [
+            null,
+            0.35,
+            9400
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "2025 income (year of assessment 2026)",
+      "quote": "Status (basis year 2025) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nSingle | €12,000 | €12,000 to €16,000 (€1,800) | €16,000 to €60,000 (€3,400) | over €60,000 (€9,400)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "MARRIED_2025",
+      "value": {
+        "zero": 15000,
+        "bands": [
+          [
+            23000,
+            0.15,
+            2250
+          ],
+          [
+            60000,
+            0.25,
+            4550
+          ],
+          [
+            null,
+            0.35,
+            10550
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "2025 income (year of assessment 2026)",
+      "quote": "Status (basis year 2025) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nMarried, joint | €15,000 | €15,000 to €23,000 (€2,250) | €23,000 to €60,000 (€4,550) | over €60,000 (€10,550)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PARENT_2025",
+      "value": {
+        "zero": 13000,
+        "bands": [
+          [
+            17500,
+            0.15,
+            1950
+          ],
+          [
+            60000,
+            0.25,
+            3700
+          ],
+          [
+            null,
+            0.35,
+            9700
+          ]
+        ]
+      },
+      "slug": "malta-income-tax",
+      "section": "2025 income (year of assessment 2026)",
+      "quote": "Status (basis year 2025) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract)\nParent | €13,000 | €13,000 to €17,500 (€1,950) | €17,500 to €60,000 (€3,700) | over €60,000 (€9,700)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "NO_CHILD_TABLES_2025",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "2025 income (year of assessment 2026)",
+      "quote": "The four qualifying-child tables do not apply to 2025 income.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "QUALIFYING_CHILD_NATIONALITY",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Who gets which table",
+      "quote": "a spouse, the individual, or the individual's spouse must be an EU/EEA national or hold long-term resident status;\nif nobody is an EU/EEA national, the child (or each of the two children) must have been born in Malta and be resident in Malta.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PARENT_1_CHILD_35_ACT_FIGURE",
+      "value": 10270,
+      "slug": "malta-income-tax",
+      "section": "Resident rate tables, basis year 2026 (year of assessment 2027)",
+      "quote": "The Act is the law, so compute with €10,270. Tell the user that MTCA's table shows €10,275",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "SEPARATE_COMPUTATION_TABLES",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Who gets which table",
+      "quote": "Married tables (article 56(1)(a)) apply to a married couple resident in Malta and taxed jointly under article 49. If either spouse elected a separate return (article 49A), or the responsible spouse opted for a separate computation (article 50), each spouse uses the article 56(1)(b) tables instead.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PARENT_TABLE_TEST",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Who gets which table",
+      "quote": "Parent table (article 56(1)(b)(ii)): the individual was a parent who kept a child in custody, or paid maintenance for the child under article 12(1)(t). The child must be not over 18, or not over 23 if in full-time education.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "MARRIED_CHILD_TABLES_CUSTODY",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Who gets which table",
+      "quote": "for the married tables (a)(ii) and (a)(iii), the couple kept the child (or the two children) in their custody. Maintenance does not count for these tables",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PARENT_CHILD_TABLES_CUSTODY",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Who gets which table",
+      "quote": "for the parent tables (b)(iv) and (b)(v), the individual kept the child in custody (their own child, a spouse's child or a certified cohabitant's child) or paid maintenance for their own child under article 12(1)(t)",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "CHILD_TABLES_FALLBACK",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Who gets which table",
+      "quote": "If any condition fails, fall back to the married (i) or parent (ii) table.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PART_TIME_FINAL_RATE",
+      "value": 0.1,
+      "slug": "malta-income-tax",
+      "section": "Part-time work final tax",
+      "quote": "Rate: 10% from year of assessment 2023 (article 90A(11)). Before that it was 15%. The tax is final, and the income is not declared in the return.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PART_TIME_SELF_EMPLOYED_CAP",
+      "value": 12000,
+      "slug": "malta-income-tax",
+      "section": "Part-time work final tax",
+      "quote": "Caps (rule 3(2)): the rate covers self-employed profit (article 4(1)(a)) up to €12,000 ... Any excess is declared in the return at normal rates.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PART_TIME_SPOUSE_EXTENSION",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Part-time work final tax",
+      "quote": "Article 90A(9) extends this to a spouse living with a qualifying spouse.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PART_TIME_OPT_OUT",
+      "value": true,
+      "slug": "malta-income-tax",
+      "section": "Part-time work final tax",
+      "quote": "Opting out: the person may declare all part-time income in the return at progressive rates. Any final tax already paid is then credited or refunded (article 90A(2)).",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    },
+    {
+      "name": "PART_TIME_PAYMENT_DATE",
+      "value": "30 April",
+      "slug": "malta-income-tax",
+      "section": "Part-time work final tax",
+      "quote": "Paying as a self-employed part-timer: pay the tax by 30 April of the year after the income was earned.",
+      "skill_url": "https://www.openaccountants.com/skills/malta-income-tax"
+    }
+  ]
+}

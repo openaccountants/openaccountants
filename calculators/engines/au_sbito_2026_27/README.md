@@ -4,7 +4,7 @@ Australia 2026-27 small business income tax offset for an individual resident: 1
 
 Jurisdiction AU. Tax year 2026-27. Engine version 1.2.0.
 
-This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/au-sbito-2026-27.ts` in the OpenAccountants platform at commit `4878966e4e6107589f33598ee0fb4ac0a3ad69d6`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
+This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/au-sbito-2026-27.ts` in the OpenAccountants platform at commit `9931ceb6`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
 
 ## Files
 
@@ -87,4 +87,4 @@ The platform's tests recompute these from the skills' own worked examples (`work
 
 Code (`index.mjs`, `index.test.mjs`, `source/`): AGPL-3.0-only, like every calculator in this repository. Figures and wording in `rules.json`: the OpenAccountants Guide License v1.0, like the skills. See [LICENSING.md](../../../LICENSING.md).
 
-Source commit: `4878966e4e6107589f33598ee0fb4ac0a3ad69d6` (OpenAccountants platform, `src/lib/engines`).
+Source commit: `9931ceb6` (OpenAccountants platform, `src/lib/engines`).

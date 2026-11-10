@@ -2,7 +2,7 @@
   "engine": "us_se_tax",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/us_se_tax",
   "generated_from": "src/lib/engines/us-se-tax.ts",
-  "source_commit": "4878966e4e6107589f33598ee0fb4ac0a3ad69d6",
+  "source_commit": "9931ceb6",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "us_se_tax",

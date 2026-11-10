@@ -120,10 +120,35 @@ export function taxOn(table: Table, income: number): number {
   return income * rate - sub;
 }
 
-function wholeCount(f: FactReader, key: string): number {
+export function wholeCount(f: FactReader, key: string): number {
   const n = f.number(key);
   if (!Number.isInteger(n)) throw new NeedsInput(`input '${key}' must be a whole number`);
   return n;
+}
+
+/**
+ * How many of `kids` children qualify for the basis-year-2026 child tables: all of them when the
+ * individual or a spouse is an EU/EEA national or long-term resident, otherwise those born in and
+ * resident in Malta. Basis year 2025 has no child tables (0). Records the facts read in `used`;
+ * returns the rules relied on.
+ */
+export function qualifyingChildren(f: FactReader, year: string, kids: number, used: Record<string, unknown>): { qualifying: number; consts: Rule[] } {
+  const consts: Rule[] = [];
+  let qualifying = 0;
+  if (year === "2025") {
+    if (kids > 0) consts.push(NO_CHILD_TABLES_2025);
+  } else if (kids > 0) {
+    const eu = f.bool("eu_eea_or_long_term_resident");
+    used.eu_eea_or_long_term_resident = eu;
+    if (eu) qualifying = kids;
+    else {
+      const born = wholeCount(f, "children_born_and_resident_in_malta");
+      used.children_born_and_resident_in_malta = born;
+      qualifying = Math.min(born, kids);
+    }
+    consts.push(CHILD_NATIONALITY);
+  }
+  return { qualifying, consts };
 }
 
 export function run(facts: Record<string, unknown>) {
@@ -157,20 +182,9 @@ export function run(facts: Record<string, unknown>) {
     if (status === "parent" && kids < 1) {
       throw new NeedsInput("status 'parent' needs at least one child in 'children'; with no child use status 'single'");
     }
-    let qualifying = 0;
-    if (year === "2025") {
-      if (kids > 0) consts.push(NO_CHILD_TABLES_2025);
-    } else if (kids > 0) {
-      const eu = f.bool("eu_eea_or_long_term_resident");
-      used.eu_eea_or_long_term_resident = eu;
-      if (eu) qualifying = kids;
-      else {
-        const born = wholeCount(f, "children_born_and_resident_in_malta");
-        used.children_born_and_resident_in_malta = born;
-        qualifying = Math.min(born, kids);
-      }
-      consts.push(CHILD_NATIONALITY);
-    }
+    const child = qualifyingChildren(f, year, kids, used);
+    const qualifying = child.qualifying;
+    consts.push(...child.consts);
     const n = Math.min(qualifying, 2);
     if (status === "married_joint") {
       table = year === "2025" ? MARRIED_25 : [MARRIED0_26, MARRIED1_26, MARRIED2_26][n];
