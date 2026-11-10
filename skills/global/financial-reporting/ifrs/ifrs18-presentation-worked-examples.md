@@ -5,11 +5,12 @@ version: 1.0.0
 jurisdiction: GLOBAL
 tax_year: 2027
 tax_year_notes: Effective for annual reporting periods beginning on or after 1 January 2027, applied retrospectively under IAS 8; earlier application permitted (including FY2026 early adopters).
-last_updated: 2026-11-08
+last_updated: 2026-11-10
 depends_on:
   - ifrs18-presentation
   - financial-reporting-workflow-base
 category: financial-reporting
+type: computation
 tier: 2
 sources_checked: IFRS 18 and IAS 7 official texts, checked 2026-11-08
 authored_by: Talha Mehmood, ACA, FCCA
