@@ -20,7 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v2.0 (content)
 
 # IFRS 18 Presentation and Disclosure in Financial Statements (`ifrs18-presentation`)
 
-## IFRS Financial Statement Presentation & IAS 1 Restatement — IFRS 18 v1.0.0
+## IFRS Financial Statement Presentation & IAS 1 Restatement — IFRS 18 v1.0.1
 
 ### What this file is
 
