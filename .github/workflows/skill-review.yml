@@ -212,7 +212,7 @@ jobs:
             say "agent or git config file" "Automated review skipped: this PR adds or changes an AI agent or git configuration file. A maintainer reviews it by hand."
           fi
           if grep -vqE '^[A-Za-z0-9._/+-]+$' <<<"$paths" || grep -q '\.\.' <<<"$paths"; then
-            say "unusual file names" "Automated review skipped: a file name has characters the bot does not handle. A maintainer reviews this PR by hand."
+            say "unusual file names" "Automated review skipped: a file name has a space or another character the bot does not handle. Rename each skill file to lowercase letters, digits and hyphens, ending in .md (for example ifrs18-presentation.md), and push again. Until then a maintainer reviews this PR by hand."
           fi
           out head_sha "$head_sha"
           out head_ref "$head_ref"
