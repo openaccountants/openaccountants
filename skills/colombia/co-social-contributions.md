@@ -73,7 +73,7 @@ Related Colombia skills, linked rather than repeated:
 **Step 2: monthly income.**
 
 - *Contractor:* the contract value without IVA, spread over the months of the contract ("valor mensualizado"). No costs are deducted.
-- *Cuenta propia and other contracts:* gross monthly income without IVA (accrued if the person must keep books, received if not; a person not obliged who keeps proper books may use either), minus costs that meet ET art. 107 and the support rules, not exceeding the costs in the income tax return for the year. The UGPP activity-based presumption is an alternative; actual costs above the presumption require statutory support. Resolución 532/2024 as amended by 566/2025 applies from 9 May 2026, one month after Decreto 379/2026 was published on 9 April 2026. Earlier 2026 periods require the preceding annex, whose coefficients are not supplied here. Under the current procedure the UGPP uses presumed costs for the activity (DUR 780 art. 3.2.7.5, as amended by Decreto 379 de 2026; Ley 2277 art. 89 par. 1). The UGPP may ask for the supports and, if there are none, applies its coefficient for the main activity reported in the income tax return (art. 3.2.7.5 par.).
+- *Cuenta propia and other contracts:* gross monthly income without IVA (accrued if the person must keep books, received if not; a person not obliged who keeps proper books may use either), minus costs that meet ET art. 107 and the support rules, not exceeding the costs in the income tax return for the year. The UGPP activity-based presumption is an alternative; actual costs differing from the presumption require statutory support. Resolución 532/2024 as amended by 566/2025 applies from 9 May 2026, one month after Decreto 379/2026 was published on 9 April 2026. Earlier 2026 periods require the preceding annex, whose coefficients are not supplied here. Under the current procedure the UGPP uses presumed costs for the activity (DUR 780 art. 3.2.7.5, as amended by Decreto 379 de 2026; Ley 2277 art. 89 par. 1). The UGPP may ask for the supports and, if there are none, applies its coefficient for the main activity reported in the income tax return (art. 3.2.7.5 par.).
 
 **Step 3: the test.** If net monthly income is under 1 SMMLV, the art. 89 base does not apply. A person with income of 1 SMMLV or more is presumed obliged to join the contributory health regime (DUR 780 art. 3.2.7.4).
 
@@ -103,7 +103,7 @@ The steps, in the order the independent meets them: affiliate to an EPS and a pe
 
 ## Penalties and interest
 
-- **Late payment.** Interest at the rate for late income tax (Ley 100 art. 23); see [colombia-payroll](colombia-payroll.md).
+- **Late payment.** Interest at the ET late-payment rate under Ley 1066/2006 art. 3, which expressly covers parafiscal contribution taxpayers and responsible persons; Ley 100 art. 23 alone is framed for employers; see [colombia-payroll](colombia-payroll.md).
 - **Health cover suspended.** Two consecutive unpaid periods can suspend affiliation/services where the EPS has not accepted the arrears, subject to payment agreements and exceptions (DUR 780 art. 2.1.9.3). Ongoing treatment can continue for up to four consecutive arrears periods under that article; art. 2.1.9.5 protects pregnant women and minors. Article 2.1.9.4 prevents new contribution/interest debt during suspension while preserving earlier unpaid contributions and interest. This is not unconditional cessation of all care.
 - **UGPP.** Failure to file, under-declaration and failure to supply information carry the Ley 1607 art. 179 penalties; the scale is in [colombia-payroll](colombia-payroll.md).
 
@@ -225,5 +225,7 @@ expected:
 | Resolución 0010/2026 art. 16, combined-source FSP | https://www.minsalud.gov.co/Normatividad_Nuevo/Resolucion%20No%20010%20de%202026.pdf | 2026-11-11 |
 | Resolución 1529/2026, current PILA, cotizante 59, FSP and implementation | https://normativa.colpensiones.gov.co/colpensiones/compilacion/docs/resolucion_minsaludps_1529_2026.htm | 2026-11-11 |
 | Sentencia C-264/2026, pension reform commencement | https://normativa.colpensiones.gov.co/compilacion/docs/c-264_2026.htm | 2026-11-11 |
+| Ley 1066/2006 art. 3, parafiscal late-payment interest | https://normograma.dian.gov.co/dian/compilacion/docs/ley_1066_2006.htm | 2026-11-11 |
+| DANE official CIIU 7410 classification, section M | https://clasificaciones.dane.gov.co/ciiu4-0/clasificacion/24928/ | 2026-11-11 |
 
 Not yet confirmed: preceding presumed-cost coefficients for periods before 9 May 2026; all current activity coefficients other than section M used here; detailed mixed class IV/V multi-contract filing cases beyond the stated Planilla Y/I rules; the final Consejo de Estado judgment on Decreto 1469 de 2025; how health for a pensioner is split between pension and independent income; social security agreements.
