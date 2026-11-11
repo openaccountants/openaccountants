@@ -18,7 +18,7 @@ partial:
 
 <!-- Maintained coverage map. Preserve its source-verified partial and out-of-scope notes. -->
 
-Tax years: 2026 (7 skills), 2025 (2 skills).
+Tax years: 2026 (8 skills), 2025 (1 skill).
 
 Coverage and professional approval are separate. The table reports the
 merged skills plus this corporate update; pending PRs are listed below.
@@ -36,7 +36,7 @@ merged skills plus this corporate update; pending PRs are listed below.
 ## What still needs doing
 
 - Income tax: complete the ordinary rental and capital-income methods alongside the merged 2026 work-income method.
-- Corporate income: confirm the current 621 fields and the 2026 annual 710 version, fields and dates before a live filing.
+- Corporate income: confirm current 621 fields and the 2026 annual 710 version, fields and dates before a live filing.
 - Social contributions and payroll: confirm other 2026 AFP devengue schedules before applying the verified November snapshot to another month.
 - Confirm the current nonresident filing instructions and fields before treating the cross-border method as a completed filing workflow.
 
@@ -45,7 +45,7 @@ Pending PRs are not merged coverage. Tracked in [\[PE\] Complete the pack](https
 ## Other skills
 
 - [Company formation](pe-company-formation.md) (2025)
-- [Tax overview](pe-tax-overview.md) (2025)
+- [Tax overview](pe-tax-overview.md) (2026)
 
 ## Out of scope
 
