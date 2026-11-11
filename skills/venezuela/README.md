@@ -16,7 +16,7 @@ partial:
 
 This map is maintained with the country pack. Coverage includes only Guides on main; pending work is identified separately.
 
-Tax years: 2025 (5 skills), 2026 (1 skill).
+Tax years: 2025 (4 skills), 2026 (2 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
