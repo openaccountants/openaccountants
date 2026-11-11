@@ -1,17 +1,17 @@
 ---
 name: mt-freelance-intake
 description: "Neutral document intake and routing for Malta personal-tax research. Does not compute tax, assemble a filing-ready package, map official return boxes, file, pay or certify compliance."
-version: 0.2
+version: 0.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 category: orchestrator
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Malta personal-tax intake v0.2
+# Malta personal-tax intake v0.3
 
 **Source-cited draft. Restricted to neutral document collection and routing.** The former automated filing workflow is quarantined because it used the rental TA24 as the annual business return, unsupported box mappings, the wrong provisional-tax benchmark and quarterly Class 2 scheduling. This router does not produce filing instructions, return-box values, payment amounts or a filing-ready package.
 
@@ -42,7 +42,7 @@ Read provided documents first. Ask only for missing facts that affect the comput
 
 | Question | Destination | Boundary |
 |---|---|---|
-| Personal business/employment income, deductions, family table | [Malta income tax](../malta/malta-income-tax.md) | Parent-one-child top-rate subtraction is held where Act and MTCA differ |
+| Personal business/employment income, deductions, family table | [Malta income tax](../malta/malta-income-tax.md) | Parent with one qualifying child above €60,000: compute with the Act's €10,270 and say that MTCA's table shows €10,275 ([Act III of 2026, art. 19](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430)) |
 | Provisional tax | [Estimated tax](../malta/mt-estimated-tax.md) | Actual benchmark-year return and notice, not the latest profit figure |
 | Personal contributions | [Social security](../malta/malta-ssc.md) | No unsupported personal SSC deduction or fictitious return box |
 | Payroll records | [Payroll](../malta/malta-payroll.md) | Actual FS forms and applicable annual tables |
@@ -78,5 +78,6 @@ The complete superseded body is retained at [personal archive](../../evidence/ma
 | Social Security Act, article 11 | https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c | 2026-11-04 |
 | MTCA assessment-2026 filing/payment extension | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
 | Statutory Dates Rules, S.L. 372.16, rules 2 and 5 | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-04 |
+| Act III of 2026, art. 19: ITA art. 56(1)(b)(iv)(d), subtraction €10,270 | https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430 | 2026-11-08 |
 
 Not yet confirmed: no official personal-return box mapping, complete tax computation, payment allocation or professional approval is supplied by this neutral router. Do not treat it as a filing package.

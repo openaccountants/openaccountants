@@ -1,17 +1,17 @@
 ---
 name: malta-bookkeeping
-description: "Use this skill whenever asked about bookkeeping, a chart of accounts, expense classification, asset capitalisation, depreciation against tax wear and tear, bank reconciliation, record keeping or management accounts for a Maltese company or self-employed person in 2026. Covers a recommended chart of accounts mapped to GAPSME statements, revenue and VAT recording, which expenses fail the Income Tax Act test, the S.L. 123.01 minimum years for wear and tear and the EUR 14,000 car cap, the EUR 1,160 VAT capital goods threshold, record retention (10 years Companies Act, 9 years income tax, 6 years VAT), and the GAPSME and Companies Act size tests. Trigger on: chart of accounts Malta, nominal codes, bookkeeping Malta, capitalise or expense, depreciation Malta, wear and tear, bank reconciliation, GAPSME, small company accounts Malta."
+description: "Use this skill whenever asked about bookkeeping, a chart of accounts, expense classification, asset capitalisation, depreciation against tax wear and tear, bank reconciliation, record keeping or management accounts for a Maltese company or self-employed person in 2026. Covers a recommended chart of accounts mapped to GAPSME statements, revenue and VAT recording, which expenses fail the Income Tax Act test, the S.L. 123.01 minimum years for wear and tear and the EUR 14,000 car cap, the EUR 1,160 VAT capital goods threshold, record retention (10 years for a company under the Companies Act, 9 years for income tax where the Companies Act rule does not apply, 6 years VAT), and the GAPSME and Companies Act size tests. Trigger on: chart of accounts Malta, nominal codes, bookkeeping Malta, capitalise or expense, depreciation Malta, wear and tear, bank reconciliation, GAPSME, small company accounts Malta."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/malta-bookkeeping"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-05"
+  last_updated: "2026-11-08"
   reviewed_by: "Michael Cutajar"
 ---
 
-# Malta Bookkeeping v1.4
+# Malta Bookkeeping v1.5
 
 **4 November audit correction scope:** that correction addressed only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-bookkeeping.md). Unchanged claims outside that ledger were not rechecked during that correction. Other stated holds and specialist questions remain unresolved.
 
@@ -27,7 +27,7 @@ Tax year 2026. This skill is the day-to-day bookkeeping workflow. Statutory acco
 | Chart of accounts | None prescribed. Records must show and explain the transactions and let the directors prepare compliant accounts | Cap. 386 art. 163(1), (2) |
 | Records to keep (companies) | Receipts and payments, assets and liabilities, stock statements where goods are dealt in | Cap. 386 art. 163(1) |
 | Records to keep (any business, for tax) | Proper accounts of receipts, payments and all transactions; a profit and loss account; a statement of assets and liabilities (a balance sheet for a company) | Income Tax Management Act, Cap. 372, art. 19(1), (2) |
-| Retention | Companies: 10 years (art. 163(5) Cap. 386). Income tax: at least 9 years after the transaction (art. 19(5) Cap. 372). VAT: at least 6 years (VAT Act art. 48) | as stated |
+| Retention | Companies: 10 years. The 9-year income tax rule does not apply where this rule applies, so a company keeps its records 10 years. Others, such as the self-employed: at least 9 years after the transaction is completed. VAT: at least 6 years from the end of the year the records relate to. For a late return or a correction, the 6 years run from the date the return is filed or the correction request is received. For capital goods, they run from the end of the 5-year or 20-year adjustment period, and the capital goods list is part of the records | [Cap. 386 art. 163(5)](https://legislation.mt/eli/cap/386/eng/pdf); [Cap. 372 art. 19(5) and proviso](https://legislation.mt/eli/cap/372/eng/pdf); [Cap. 406 art. 48(4)](https://legislation.mt/eli/cap/406/eng/pdf); [S.L. 406.12 regs 6 and 7](https://legislation.mt/eli/sl/406.12/eng/pdf) |
 | VAT standard rate | 18% | VAT Act, Cap. 406, art. 19 |
 
 ## Section 2: Recommended Chart of Accounts
@@ -188,7 +188,7 @@ The tax test is article 14(1) of the Income Tax Act: outgoings "wholly and exclu
 | Leased car listed above EUR 14,000 | 6330 | Lease payments × 14,000 ÷ listed price, then business share | S.L. 123.07 rule 3(2) |
 | Wages | 6100 | Deductible if run through FSS | S.L. 123.07 rule 4 |
 | Entertainment | 6700 | No specific rule in the Act; treat as private unless the article 14(1) test is clearly met, and flag | art. 14(1), 26 |
-| Fines and penalties | 6710 | Not deductible | art. 26 |
+| Fines and penalties | 6710 | Not deductible: not wholly and exclusively incurred in the production of the income | art. 14(1), 26(b) |
 | Depreciation | 6500 | Added back; wear and tear deducted instead | art. 14(1)(f); S.L. 123.01 |
 | General bad debt provision | 6610 | Added back; specific bad debts proved to the Commissioner are deductible | art. 14(1)(d) |
 | SSC Class 2 | 6120 | Held: no positive authority for a personal Class 2 deduction was established in this audit. Keep as a memo, not an automatic deduction or a proved statutory disallowance; see `malta-income-tax` | Cap. 123 Part IV |
@@ -208,9 +208,9 @@ These are tax minimums, not accounting lives. Accounting depreciation follows th
 
 | Category | Minimum years |
 | --- | --- |
-| Computers and electronic equipment; computer software | 4 |
+| Computers and electronic equipment; computer software; aircraft airframes, aircraft engines, aircraft engine or airframe overhaul, and aircraft interiors and other parts | 4 |
 | Motor vehicles; other machinery | 5 |
-| Catering equipment; air-conditioners; medical equipment; communication and broadcasting equipment; construction and excavation equipment | 6 |
+| Catering equipment; air-conditioners; medical equipment; communication and broadcasting equipment; construction and excavation equipment; equipment mainly designed or used for the production of water or electricity | 6 |
 | Furniture, fixtures, fittings and soft furnishings; lifts and escalators; ships; other plant | 10 |
 | Electrical and plumbing installations and sanitary fittings | 15 |
 | Cable and pipeline infrastructure | 20 |
@@ -306,8 +306,8 @@ Two separate tests apply. The detail and the two-year rules are in `malta-financ
 | --- | --- | --- | --- | --- | --- |
 | GAPSME small entity | EUR 4,000,000 | EUR 8,000,000 | 50 | Balance sheet, income statement, notes | S.L. 281.05 reg. 5(1)(a) |
 | GAPSME medium-sized entity | EUR 20,000,000 | EUR 40,000,000 | 250 | Adds statement of changes in equity and cash flow statement | S.L. 281.05 reg. 5(1)(b) |
-| Companies Act small company, new limits (in force 20 March 2026) | EUR 5,000,000 | EUR 10,000,000 | 50 | No directors' report | Cap. 386 art. 185(1), as substituted by Act I of 2026 art. 26; L.N. 61 of 2026 |
-| Companies Act small company, previous limits | EUR 4,000,000 | EUR 8,000,000 | 50 | No directors' report | Cap. 386 art. 185(1) before Act I of 2026 |
+| Companies Act small company, periods starting on or after 20 March 2026 | EUR 5,000,000 | EUR 10,000,000 | 50 | No directors' report | Cap. 386 art. 185(1), as substituted by Act I of 2026 art. 26; L.N. 61 of 2026; [MBR instruction](https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1) |
+| Companies Act small company, periods starting before 20 March 2026 (all calendar 2025 and 2026 periods) | EUR 4,000,000 | EUR 8,000,000 | 50 | No directors' report | Cap. 386 art. 185(1) before Act I of 2026 |
 | Companies Act micro, private companies only | EUR 46,600 | EUR 93,000 | 2 | No audit under the Act | Cap. 386 art. 185(2) |
 
 A limit is met when the entity does not exceed at least two of the three. Every company not micro-exempt is audited. A self-employed person files no GAPSME accounts but keeps the article 19 records.
@@ -422,6 +422,9 @@ This skill and its outputs are provided for informational and computational purp
 | Cap123 arts14/26 | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | SL123.01 rule7(b) | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | MBR commencement instruction | https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1 | 2026-11-04 | Changed claim only; see ledger |
+| Cap386 art163(5); Cap372 art19(5) proviso | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-08 | Retention, 8 November correction only |
+| Cap406 art48(4); SL406.12 regs6-7 | https://legislation.mt/eli/sl/406.12/eng/pdf | 2026-11-08 | VAT retention, 8 November correction only |
+| Cap123 arts14(1)/26(b); SL123.01 Schedule | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-11-08 | Fines row and wear and tear categories, 8 November correction only |
 
 Prior source-read dates remain historical; this list does not refresh unrelated claims.
 
@@ -429,4 +432,4 @@ Not yet confirmed: all scopes held in the 4 November correction ledger and the e
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-05. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malta-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malta-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `malta-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/malta-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.

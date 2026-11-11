@@ -9,9 +9,7 @@ depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Jose Padilla"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 
@@ -21,7 +19,6 @@ domain: payroll
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Jose Padilla** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -96,8 +93,6 @@ domain: payroll
 | Legal minimum monthly wage (salario mínimo) | **VES 130** since 15 March 2022 — unchanged through 2025 (PwC; CloudPay) |
 | Tax Unit (UT/TU) value 2025 | **VES 43** per Administrative Ruling SNAT/2025/000048, Official Gazette 2 June 2025 (Orbitax) |
 | Annual ISLR (personal income tax) return deadline | **31 March** following the tax year — cannot be extended (PwC Tax administration) |
-| Validated by | Verified by Jose Padilla (CPA) on 2026-06-21 |
-| Validation date | Verified by Jose Padilla (CPA) on 2026-06-21 |
 
 ### CRITICAL Venezuela-specific caveat — read FIRST
 

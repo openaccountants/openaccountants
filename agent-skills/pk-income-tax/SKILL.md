@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "PK"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Ibrar Ali"
 ---
 
 # PK Income Tax
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Ibrar Ali** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -67,7 +65,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Payment instrument | Computerised Payment Receipt (CPR) generated from IRIS, paid at SBP / NBP / authorised bank |
 | Filer status register | Active Taxpayers List (ATL), published weekly by FBR every Monday |
 | NTN format | 7-digit NTN for AOP; CNIC (13-digit) functions as NTN for individuals |
-| Validation date | Verified by Ibrar Ali (8907) on 2026-06-12 |
 | Skill version | 1.0 |
 
 ### Salary Brackets (TY 2024-25 baseline — likely revised by Finance Act 2025; TBC under Finance Act 2025)
