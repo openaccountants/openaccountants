@@ -11,9 +11,9 @@ covered_by:
   TP: argentina-transfer-pricing
   XB: argentina-cross-border
 partial:
-  IT-IND: "Mixed employment and self-employment deduction computation remains unresolved."
+  IT-IND: "Mixed employment/self-employment computation and complete simplified-return protection tests remain unresolved."
   SC: "November and December employee bases and autonomous tables after the October publication remain unconfirmed."
-  PR: "Employer SICORE payment dates/codes and indexed insurance/retirement deduction caps remain unconfirmed."
+  PR: "Employer SICORE payment dates/codes remain unconfirmed; payroll application of annual insurance/retirement caps is not supplied."
 ---
 
 # Argentina: tax pack
@@ -31,6 +31,8 @@ The individual tax year is the calendar year; companies use their fiscal year. T
 | PR, payroll withholding | [Payroll income tax](argentina-payroll.md); payment/cap gaps listed in `partial` | checked against the law |
 | TP, transfer pricing | [Transfer pricing](argentina-transfer-pricing.md), separating calendar-2026 rules from the new regime for fiscal years starting from October | checked against the law |
 | XB, cross-border | [Residence, source, foreign tax credits and non-resident withholding](argentina-cross-border.md) | checked against the law |
+
+Annual insurance/private-retirement cap amounts are supplied by the [individual-income Guide](argentina-income-tax.md); the payroll Guide does not supply them, and its period-by-period application is not claimed verified here.
 
 These are Tier 2 source-cited drafts. The status records checking against primary sources; it does not mean accountant approval. Each Guide identifies its read scope, source dates and unconfirmed figures. Dates, elections and extensions must match the taxpayer and period.
 
