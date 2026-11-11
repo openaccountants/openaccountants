@@ -5,6 +5,7 @@ not_applicable: {}
 covered_by:
   VAT: peru-igv
   TP: peru-transfer-pricing
+  XB: peru-cross-border-tax
 partial:
   PR: "Other 2026 AFP devengue schedules still need primary-source confirmation before the November snapshot can be used for another month."
 ---
@@ -13,7 +14,7 @@ partial:
 
 <!-- Maintained coverage map. Preserve its source-verified partial and out-of-scope notes. -->
 
-Tax years: 2026 (4 skills), 2025 (4 skills).
+Tax years: 2026 (5 skills), 2025 (4 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
@@ -23,7 +24,7 @@ Tax years: 2026 (4 skills), 2025 (4 skills).
 | Social contributions | [Social contributions](peru-social-contributions.md) | 2026 | Ready |
 | Payroll | [Payroll](peru-payroll.md) | 2026 | Partial: other AFP devengue schedules need confirmation |
 | Transfer pricing | [Transfer pricing](peru-transfer-pricing.md) | 2026 | Built from the law; not yet approved |
-| Cross-border | | | Missing |
+| Cross-border | [Cross-border income tax](peru-cross-border-tax.md) | 2026 | Built from the law; not yet approved |
 
 Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
@@ -35,7 +36,6 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 - Company tax: bring [Corporate income tax](pe-corporate-income-tax.md) up to the current tax year.
 - VAT: ordinary computation, credit allocation, registration and filing are covered by [IGV and IPM](peru-igv.md).
 - Transfer pricing: independent source review is recorded on the skill PR before merge.
-- Write the cross-border skill.
 
 Tracked in [\[PE\] Complete the pack](https://github.com/openaccountants/openaccountants/issues/309).
 
