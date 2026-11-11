@@ -17,7 +17,7 @@ version: 2.3
 jurisdiction: IT
 tax_year: 2026
 tax_year_notes: "Coverage starts with the 2025 period (Modello Redditi PF 2026, read at 5 November 2026) and includes the 2026 period, whose return form (Redditi PF 2027) was not available. Only the TUIR text in force to 31 December 2026 is covered; D.Lgs. 117/2026 replaces arts 1-191 for later periods and is not mapped here. The 2027 budget bill is not law."
-last_updated: 2026-11-05
+last_updated: 2026-11-11
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -505,7 +505,7 @@ Modello Redditi PF is filed online through the Agenzia delle Entrate services Fi
 - **Late return.** A return filed within 90 days is valid, with sanctions for delay. After 90 days it counts as omitted but is a title for collection (DPR 322/1998 art. 2(7)).
 - **Modello 730.** A person obliged to file IRAP, annual IVA or sostituto returns cannot use it (DM 164/1999 art. 13(5)(a)); the annual decree can exclude other income (art. 13(5)(b)). The Agenzia page sends everyone other than employees and pensioners to Redditi PF. So a professional under this file files Redditi PF, not 730. The prior version's statement that the 30 September date is absolute was not confirmed by any text read, and its fallback to Redditi PF was not tested: both are held.
 
-For the 2026 period: Redditi PF 2027 and its dates are held. See Sources.
+For the 2026 period: Redditi PF 2027 and its form are not yet published. Under DPR 322/1998 art. 2(1) the online filing window runs 15 April to 31 October 2027; 31 October 2027 is a Sunday, so it moves to the first working day after. Paper at a post office: to 30 June 2027. Saldo 2026 and first acconto 2027: 30 June 2027, or the next 30 days with 0.40%. These dates are statutory and unconfirmed against the Agenzia 2027 pages (unverified).
 
 ## Penalties and interest
 
@@ -521,7 +521,7 @@ These rates apply to violations committed from 1 September 2024 (D.Lgs. 87/2024 
 | Late payment | 25% of the unpaid amount. Halved to 12.5% within 90 days. Within 15 days, one fifteenth of the 12.5% for each day | [D.Lgs. 471/1997 art. 13(1)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=) |
 | Failure to document a taxable operation (IVA), such as no invoice | 70% of the IVA, minimum EUR 300. EUR 250 to EUR 2,000 when the violation did not affect correct settlement of the tax | [D.Lgs. 471/1997 art. 6(1) and (4)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=) |
 
-Ravvedimento follows D.Lgs. 472/1997 art. 13: for instance 1/9 of the minimum within 90 days under (1)(a-bis) and 1/8 within the return term under (1)(b). The reduction is excluded for a return filed more than 90 days late (art. 13(2-ter)). Tax and interest at the legal rate must be paid with it (art. 13(2)). Lawful ravvedimento rates depend on the facts; send them to the reviewer. No form-level answer on current legal interest was read.
+Ravvedimento follows D.Lgs. 472/1997 art. 13: for instance 1/9 of the minimum within 90 days under (1)(a-bis) and 1/8 within the return term under (1)(b). The reduction is excluded for a return filed more than 90 days late (art. 13(2-ter)). Tax and interest at the legal rate must be paid with it (art. 13(2)). Lawful ravvedimento rates depend on the facts; send them to the reviewer. Ravvedimento: unpaid tax or acconto paid within 30 days: one tenth of the minimum penalty (D.Lgs. 472/1997 art. 13(1)(a)). Ravvedimento: after the return deadline for the year of the violation: one seventh of the minimum (D.Lgs. 472/1997 art. 13(1)(b-bis)). Interest with ravvedimento: legal rate, day by day: 1.60% a year from 1 January 2026 (D.Lgs. 472/1997 art. 13(2); D.M. 10 December 2025, GU n. 289 of 13 December 2025) (unverified: the D.M. was not opened). Ravvedimento is barred once a notice of assessment or liquidation is served (art. 13(1-ter)). Smaller reductions (one sixth, one fifth, one quarter) apply after an audit report or a draft assessment (art. 13(1)(b-ter) to (b-quinquies)); refer those.
 
 ## Cross-border points
 
