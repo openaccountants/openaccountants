@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Omolola Fasasi"
 ---
 
 # NG Return Assembly
@@ -106,7 +105,6 @@ The output is a reviewer-ready package: line-by-line return working paper, cross
 | Confirmation receipt | Tax Pro-Max acknowledgement (Federal); SIRS portal acknowledgement (State); Remita RRR / e-receipt for payment |
 | Governing law | Companies Income Tax Act (CITA, Cap C21 LFN 2004 as amended); Personal Income Tax Act (PITA, Cap P8 LFN 2004 as amended); Value Added Tax Act (Cap V1 LFN 2004 as amended); Capital Gains Tax Act (Cap C1 LFN 2004 as amended); Tertiary Education Trust Fund Act 2011; FIRS Establishment Act 2007; **Nigeria Tax Act 2025 (NTA 2025)** — assented June 2025, key provisions effective 1 January 2026 |
 | Skill version | 1.0 |
-| Validated by | Verified by Omolola Fasasi (MB058950) on 2026-06-21 |
 
 ## Section 2 — Required inputs from upstream skills
 
