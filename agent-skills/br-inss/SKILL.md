@@ -8,14 +8,12 @@ metadata:
   jurisdiction: "BR"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Ariane Marrocos"
 ---
 
 # BR Inss
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by Ariane Marrocos on 2026-06-03.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 

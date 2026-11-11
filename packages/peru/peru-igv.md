@@ -9,9 +9,7 @@ depends_on:
   - vat-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Maria Clemencia Valverde Rios"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: vat-gst
 ---
 
@@ -21,7 +19,6 @@ domain: vat-gst
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Maria Clemencia Valverde Rios** on 2026-06-29.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -73,7 +70,6 @@ domain: vat-gst
 | e-Invoice | CPE (Comprobante de Pago Electrónico) mandatory for most businesses (factura electrónica, boleta electrónica) |
 | RUC | Registro Único de Contribuyentes — 11-digit Peruvian taxpayer ID |
 | Contributor | Open Accountants Community |
-| Validated by | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
 | Skill version | 2.0 |
 
 ### Key PDT 621 fields
