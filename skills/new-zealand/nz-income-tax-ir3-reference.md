@@ -5,7 +5,7 @@ version: 2.2
 jurisdiction: NZ
 tax_year: 2026
 tax_year_notes: "Label 2026 means the tax year starting 1 April 2026 (2026-27, Inland Revenue's 2027 income year), whose annual rates are at Bill stage. Returns for 2024-25 and 2025-26 are also covered."
-last_updated: 2026-11-05
+last_updated: 2026-11-11
 depends_on:
   - nz-income-tax-ir3
   - income-tax-workflow-base
@@ -13,6 +13,7 @@ category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
+type: filing-howto
 ---
 
 # nz-income-tax-ir3: reference sections
