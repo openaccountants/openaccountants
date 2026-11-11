@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "EG"
   tax_year: "2026"
   last_updated: "2026-11-02"
-  reviewed_by: "Ahmed Hassan"
 ---
 
 # EG Corporate Tax v0.2

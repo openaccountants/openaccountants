@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "KE"
   tax_year: "2025"
   last_updated: "2026-07-21"
-  reviewed_by: "Julian Njoroge Maina"
 ---
 
 # The Burden of Proof in Kenyan Tax Disputes

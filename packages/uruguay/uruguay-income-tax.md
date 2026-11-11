@@ -1,568 +1,262 @@
 ---
 name: uruguay-income-tax
-description: Use this skill whenever asked about Uruguay personal income tax (IRPF) for resident individuals, employees, and the self-employed. Trigger on phrases like "how much IRPF do I pay", "Impuesto a la Renta de las Personas Físicas", "Categoría I", "Categoría II", "rentas del trabajo", "rentas del capital", "declaración jurada IRPF", "Formulario 1102", "Formulario 1103", "núcleo familiar", "deducciones IRPF", "aportes BPS", "FONASA", "monotributo", "unipersonal", "servicios personales", "IRNR", "non-resident Uruguay tax", or any question about computing or filing income tax for a Uruguayan-resident individual. Also trigger when preparing or reviewing an IRPF annual return, computing the deduction credit, or advising on BPS social-security contributions. This skill covers the IRPF dual scheme (Category I capital income at 12% flat; Category II labour income on a 0%–36% progressive scale), the deduction-credit mechanic, BPS contributions, monotributo, filing forms/deadlines, and DGI penalties. ALWAYS read this skill before touching any Uruguay income tax work.
-version: 0.1
+description: "Uruguay personal income tax (IRPF, Impuesto a la Renta de las Personas Físicas) for tax year 2026 under Título 7 of the Texto Ordenado 2023 as amended by Ley 20.446 of 16 December 2025. Covers residence (183 days, centre of interests), the dual system, Categoría II labour income on the 0% to 36% scale in BPC (BPC 2026 UYU 6,864, Decreto 11/026), the aguinaldo and salario vacacional rate, the family-unit (núcleo familiar) scales, the deduction credit at 14% or 8%, the 20 BPC child deduction, the mortgage and rent credits, the 30% expense deduction for independent work, Categoría I capital income at 12%, 7% and the reduced interest rates, foreign capital income taxed from 1 January 2026, filing on forms 1101, 1102 and 1103, the five balance instalments and DGI penalties. Trigger on: IRPF 2026, franjas IRPF, deducciones IRPF, declaración jurada IRPF, núcleo familiar, rentas del exterior, Uruguay income tax. Out of scope: payroll withholding and BPS contributions, IRAE, IRNR, IASS."
+version: 0.2
 jurisdiction: UY
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-11
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: income-tax
+type: computation
 ---
 
-# Uruguay Income Tax (IRPF) -- Resident Individual
-
-## Uruguay Income Tax (IRPF) -- Resident Individual Skill v0.1
-
-## Section 1 -- Quick Reference
-
-**Quick Reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Uruguay (República Oriental del Uruguay) |
-| Tax | IRPF -- Impuesto a la Renta de las Personas Físicas |
-| Currency | UYU (Uruguayan peso, $U) only |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Reference unit | BPC (Base de Prestaciones y Contribuciones) = UYU 6,576/month for 2025 (Decreto N° 5/025, 10 Jan 2025) |
-| Tax authority (income tax) | DGI -- Dirección General Impositiva |
-| Social security authority | BPS -- Banco de Previsión Social |
-| Basis of taxation | Quasi-territorial -- Uruguayan-source income; limited foreign capital income for residents (PwC Tax Summaries, TY2025) |
-| System | Dual / scheduler -- Category I (capital) and Category II (labour) taxed separately |
-| Filing portal | DGI servicios en línea |
-| Annual return forms | Formulario 1102 (individual); Formulario 1103 (núcleo familiar) (EY UY, May 2025) |
-| Filing window (FY2024 filed 2025) | 7 July -- 28 August 2025, staggered by RUT/CI ending (EY UY; DGI vencimientos 2025) |
-| Validation date | Pending |
-| Skill version | 0.1 |
-
-### IRPF Category II -- Labour Income (Rentas del Trabajo) -- Resident, Individual Filing
-
-**Category II resident individual progressive scale**  _(PwC Tax Summaries (Uruguay, individual taxes, TY2025); brackets are BPC multiples (84/120/180/360/600/900/1,380 BPC) confirmed against BPC = UYU 6,576 and corroborated by BPS Comunicado R 2/2025.)_
-
-| Annual taxable income (UYU) | BPC multiple | Rate | Cumulative tax at top of band (UYU) |
-| --- | --- | --- | --- |
-| 0 -- 552,384 | 0 -- 84 | 0% | 0.00 |
-| 552,384 -- 789,120 | 84 -- 120 | 10% | 23,673.60 |
-| 789,120 -- 1,183,680 | 120 -- 180 | 15% | 82,857.60 |
-| 1,183,680 -- 2,367,360 | 180 -- 360 | 24% | 366,940.80 |
-| 2,367,360 -- 3,945,600 | 360 -- 600 | 25% | 761,500.80 |
-| 3,945,600 -- 5,918,400 | 600 -- 900 | 27% | 1,294,156.80 |
-| 5,918,400 -- 9,074,880 | 900 -- 1,380 | 31% | 2,272,665.60 |
-| Over 9,074,880 | > 1,380 | 36% | -- |
-
-Progressive scale, 8 brackets, 0%–36%. Figures = annual UYU, TY2025 (BPC = UYU 6,576). Source: PwC Tax Summaries (Uruguay, individual taxes, TY2025); brackets are BPC multiples (84/120/180/360/600/900/1,380 BPC) confirmed against BPC = UYU 6,576 and corroborated by BPS Comunicado R 2/2025. Cumulative figures recomputed band-by-band (see Section 5.1).
-
-### IRPF Category II -- Núcleo Familiar (Family-Unit Filing)
-
-**Núcleo familiar progressive scale**  _(PwC Tax Summaries (Uruguay, individual).)_
-
-| Annual taxable income (UYU) | BPC multiple | Rate |
-| --- | --- | --- |
-| 0 -- 1,104,768 | 0 -- 168 | 0% |
-| 1,104,768 -- 1,183,680 | 168 -- 180 | 15% |
-| 1,183,680 -- 2,367,360 | 180 -- 360 | 24% |
-| 2,367,360 -- 3,945,600 | 360 -- 600 | 25% |
-| 3,945,600 -- 5,918,400 | 600 -- 900 | 27% |
-| 5,918,400 -- 9,074,880 | 900 -- 1,380 | 31% |
-| Over 9,074,880 | > 1,380 | 36% |
-
-Optional when all members earn ≥ 12 minimum salaries; the lowest non-taxable band roughly doubles. Note: the 10% band is collapsed in family-unit filing; income above the 0% band enters at 15% then follows the same 24%–36% scale.
-
-### IRPF Category I -- Capital Income (Rentas del Capital)
-
-**Category I rates**  _(PwC Tax Summaries (Uruguay, individual).)_
-
-| Item | Rate |
-| --- | --- |
-| General capital income (interest, rents, royalties, capital gains) | 12% flat |
-| Certain interest income (specific instruments) | 3% / 5% / 7% (item-specific) |
-| Dividends | 7% |
-
-The headline rate is a flat 12%; the reduced rates are item-specific exceptions. [RESEARCH GAP — reviewer to confirm exact instrument lists and conditions for the 3%/5%/7% interest rates against DGI / Título 7.]
-
-### Conservative Defaults
-
-**Conservative defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown filing unit (individual vs núcleo familiar) | Individual (Formulario 1102) |
-| Unknown residency | STOP -- do not apply resident scale without confirming tax residency |
-| Unknown income category | STOP -- Category I (capital) and Category II (labour) use different scales |
-| Unknown deduction-credit rate (8% vs 10%) | 8% (higher-income default; less favourable to taxpayer) |
-| Unknown dependent-child status | 0 children (no fictitious child deduction) |
-| Unknown self-employment regime | IRPF general (servicios personales), NOT monotributo |
-| Unknown business-use % (vehicle, phone, home) | 0% |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-**Minimum viable** -- confirmation of tax residency, income category (labour Category II and/or capital Category I), filing unit (individual vs núcleo familiar), and either payroll/recibos de sueldo or a bank statement for the full tax year (CSV, PDF, or pasted text).
-
-**Recommended** -- BPS contribution records (aportes), FONASA family situation, number of dependent children (and disability status), housing rent or mortgage-interest documentation, prior-year IRPF declaración jurada.
-
-**Ideal** -- complete income statement, full BPS aportes detail by month, prior-year Formulario 1102/1103, withholding certificates from employers (retenciones), and any IRNR / foreign-income documentation.
-
-**Refusal if minimum is missing -- SOFT WARN.** No income data at all = hard stop. Bank statement without payroll records = proceed with reviewer warning: "This IRPF computation was produced from a bank statement alone. The reviewer must confirm that BPS aportes, FONASA family situation, and the deduction credit are correctly captured, and that nothing belongs to Category I vs Category II in error."
-
-### Refusal Catalogue
-
-- **R-UY-1** — Tax residency unknown. (Residency determines whether the resident IRPF scale or the non-resident IRNR regime applies. This skill cannot compute tax without confirming the client is a Uruguayan tax resident. Please confirm before proceeding.)
-- **R-UY-2** — Non-resident income (IRNR). (Non-resident taxation under IRNR (general rates 7%–25%; 25% for low/no-tax jurisdiction residents) has different rules and is out of scope. Escalate to a contador público.)
-- **R-UY-3** — Companies / corporate income (IRAE). (Corporate and business income under IRAE is a separate tax and is out of scope. This skill covers individuals only. Escalate to a contador público.)
-- **R-UY-4** — Capital gains on real estate / complex disposals. (Property and complex capital-gains computations under Category I require specialised analysis. Escalate to a contador público.)
-- **R-UY-5** — New-resident tax holiday / global mobility. (Tax-holiday elections for new residents and inbound expat planning are highly fact-specific and subject to proposed 2026 changes. Out of scope. Escalate to a contador público.)
-- **R-UY-6** — IASS (pension income tax) requested. (IASS (Impuesto de Asistencia a la Seguridad Social) on pensions/retirement income is a separate tax from IRPF and is out of scope for this skill.)
-- **R-UY-7** — Arrears / DGI enforcement. (Client has outstanding tax arrears or is subject to DGI enforcement. Mora and recargos compound and are severe. Do not advise. Escalate to a contador público immediately.)
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement (Spanish terms common in Uruguayan statements). If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
-
-### 3.1 Income Patterns (Credits / Créditos)
-
-**Income patterns table**
-
-| Pattern | IRPF Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| SUELDO, HABERES, NÓMINA, REMUNERACIÓN, EMPLEADOR [name] | Category II | Labour income | Employee salary -- normally withheld at source |
-| HONORARIOS, FACTURA, SERVICIOS PROFESIONALES | Category II | Labour income (servicios personales) | Independent professional fees |
-| AGUINALDO, SALARIO VACACIONAL | Category II | Labour income | 13th-salary / holiday salary -- taxable |
-| ALQUILER COBRADO, RENTA INMUEBLE | Category I | Capital income (rents) | 12% flat band (Section 1) |
-| INTERESES, INTERÉS GANADO | Category I | Capital income (interest) | 12% headline; some instruments 3%/5%/7% |
-| DIVIDENDOS, UTILIDADES | Category I | Capital income (dividends) | 7% (Section 1) |
-| DEVOLUCIÓN DGI, REINTEGRO IRPF | EXCLUDE | Not income | Prior-year tax refund |
-| TRANSFERENCIA PROPIA, CUENTA PROPIA | EXCLUDE | Own-account transfer | Not income |
-
-### 3.2 Deductible / Credit Items (Debits feeding the deduction credit)
-
-The Uruguayan IRPF does NOT subtract deductions from the base; allowable deductions are summed and multiplied by the deduction rate (8% or 10%), and that credit reduces gross tax (Section 5.3). Capture these for the credit calculation, not as base reductions.
-
-**Deductible/credit items table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| BPS, APORTE JUBILATORIO, MONTEPÍO | Deduction credit | Personal BPS pension contribution | 15% jubilatorio (Section 4) |
-| FONASA, APORTE FONASA | Deduction credit | Personal health contribution | Rate depends on income / family (Section 4) |
-| FRL, FONDO RECONVERSIÓN LABORAL | Deduction credit | 0.10% employee FRL | Component of personal aportes |
-| ALQUILER VIVIENDA, ARRENDAMIENTO (housing) | Deduction credit | 6% of housing rent | Deductible item per DGI (Section 5.3) |
-| HIPOTECA, INTERÉS PRÉSTAMO VIVIENDA | Deduction credit | Mortgage interest (capped) | Deductible item, capped |
-
-### 3.3 Non-Deductible / Personal (Debits)
-
-**Non-deductible items table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SUPERMERCADO, TIENDA INGLESA, DISCO, DEVOTO | NOT deductible | Personal groceries |
-| MULTA, SANCIÓN, RECARGO | NOT deductible | Fines/penalties |
-| IRPF, PAGO DGI, DECLARACIÓN JURADA | NOT deductible | Tax payment is not an expense |
-| RETIRO PERSONAL, CAJERO (personal), ATM | NOT deductible | Personal drawings |
-
-### 3.4 Exclusions (Neither Income nor Deduction)
-
-**Exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERENCIA ENTRE CUENTAS, CUENTA PROPIA | EXCLUDE | Own-account transfer |
-| PRÉSTAMO, CUOTA PRÉSTAMO, AMORTIZACIÓN | EXCLUDE | Loan principal movement |
-| IVA, PAGO IVA | EXCLUDE | VAT liability, not income/expense |
-| PAGO A CUENTA IRPF, ANTICIPO | Credit against liability | Advance/withholding -- credit, not expense |
-
-### 3.5 Uruguayan Banks -- Statement Format Reference
-
-**Bank statement format reference table**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| BROU (Banco República) | TRANSFERENCIA, DÉBITO, CRÉDITO, SUELDO | PDF/CSV; date format DD/MM/YYYY |
-| Itaú Uruguay | TRANSF, DÉBITO AUTOMÁTICO, COMPRA | PDF/CSV; merchant in description |
-| Santander Uruguay | TRANSFERENCIA, PAGO, COBRO | PDF; counterparty in description |
-| BBVA Uruguay | TRANSF, DÉBITO, ABONO | PDF/CSV |
-| Scotiabank Uruguay | TRANSFER, DEBIT, PAYMENT | PDF/CSV; some English labels |
-| Prex / Mi Dinero (wallets) | RECARGA, PAGO, TRANSFERENCIA | CSV export; clean counterparty names |
-
-## Section 4 -- BPS Social Security Contributions (Industria y Comercio, dependent workers, 2025)
-
-These are NOT income tax but are deductible items feeding the IRPF deduction credit (Section 5.3) and must be captured.
-
-### 4.1 Jubilatorio (Pension)
-
-**Jubilatorio rates table**  _(BPS, Tasas de aportación (bps.gub.uy/835/tasas.html).)_
-
-| Party | Rate |
-| --- | --- |
-| Employee (personal) | 15% |
-| Employer (patronal) | 7.5% |
-
-### 4.2 FONASA (Health) -- Employee Personal Rate
-
-**FONASA employee rate table**  _(BPS, Tasas FONASA (bps.gub.uy/10314/tasas-fonasa.html).)_
-
-| Monthly income | Family situation | Employee rate |
-| --- | --- | --- |
-| ≤ 2.5 BPC | single, no children | 3% |
-| ≤ 2.5 BPC | single, with children | 3% |
-| ≤ 2.5 BPC | with spouse (no SNIS cover), ± children | 5% |
-| > 2.5 BPC | single, no children | 4.5% |
-| > 2.5 BPC | single, with children | 6% |
-| > 2.5 BPC | with spouse, no children | 6.5% |
-| > 2.5 BPC | with spouse, with children | 8% |
-
-- **Employer FONASA rate** — 5% (plus Complemento de Cuota Mutual where applicable)  _(BPS, Tasas FONASA (bps.gub.uy/10314/tasas-fonasa.html).)_
-- **2.5 BPC monthly threshold value** — UYU 16,440/month UYU (at BPC 6,576)  _(BPS, Tasas FONASA (bps.gub.uy/10314/tasas-fonasa.html).)_
-
-### 4.3 Other BPS Funds
-
-**Other BPS funds table**  _(BPS, Tasas de aportación (bps.gub.uy/835/tasas.html).)_
-
-| Fund | Employee | Employer |
-| --- | --- | --- |
-| FRL (Fondo de Reconversión Laboral) | 0.10% | 0.10% |
-| FGCL (Fondo de Garantía de Créditos Laborales) | -- | 0.025% |
-
-[RESEARCH GAP — reviewer to confirm the exact FRL employee/employer split and the FGCL 0.025% against the BPS official tasas page; secondary guides vary.]
-
-### 4.4 Approximate Totals (Industria y Comercio)
-
-**Approximate totals table**
-
-| Party | Component breakdown | Approx. total |
-| --- | --- | --- |
-| Employee (personal) | 15% jubilatorio + 3%–8% FONASA + 0.10% FRL | 18.10% – 23.10% |
-| Employer (patronal) | 7.5% jubilatorio + 5% FONASA + 0.10% FRL + 0.025% FGCL | 12.625% |
-
-Employee total range arithmetic: minimum = 15 + 3 + 0.10 = 18.10%; maximum = 15 + 8 + 0.10 = 23.10%. Employer total = 7.5 + 5 + 0.10 + 0.025 = 12.625%. Employer figure excludes BSE (accident insurance), which varies by activity. Sources: BPS tasas pages above; aggregation corroborated by secondary calculators (calculame.uy). [RESEARCH GAP — reviewer to confirm employee FRL inclusion and BSE rate by activity.]
-
-### 4.5 Contribution Ceiling (Tope Jubilatorio) 2025
-
-**Contribution ceiling table**
-
-| Item | Value |
-| --- | --- |
-| Max nominal monthly income subject to jubilatorio | UYU 272,564/month |
-| Max personal jubilatorio contribution | UYU 40,885/month |
-
-[RESEARCH GAP — reviewer to confirm the 2025 tope jubilatorio (UYU 272,564 income / UYU 40,885 contribution) against the BPS official ceiling table; this figure was found only in a secondary calculator (misalario.uy) and must be re-verified before reliance.]
-
-### 4.6 Minimum Wage
-
-- **Salario Mínimo Nacional 2025** — UYU 23,604/month UYU (effective 1 Jan 2025 (+6%); used as reference for the '12 minimum salaries' núcleo-familiar eligibility test)  _(MTSS (gub.uy/ministerio-trabajo-seguridad-social))_
-
-### 5.1 Category II Progressive Tax -- Cumulative Computation
-
-**Cumulative computation table**  _(PwC Tax Summaries; band widths from BPC multiples.)_
-
-| Band top (UYU) | Band rate | Band width (UYU) | Tax on band (UYU) | Cumulative (UYU) |
-| --- | --- | --- | --- | --- |
-| 552,384 | 0% | 552,384 | 0.00 | 0.00 |
-| 789,120 | 10% | 236,736 | 23,673.60 | 23,673.60 |
-| 1,183,680 | 15% | 394,560 | 59,184.00 | 82,857.60 |
-| 2,367,360 | 24% | 1,183,680 | 284,083.20 | 366,940.80 |
-| 3,945,600 | 25% | 1,578,240 | 394,560.00 | 761,500.80 |
-| 5,918,400 | 27% | 1,972,800 | 532,656.00 | 1,294,156.80 |
-| 9,074,880 | 31% | 3,156,480 | 978,508.80 | 2,272,665.60 |
-| above | 36% | -- | -- | -- |
-
-- **Band tax computation formula** — tax = cumulative-at-previous-band-top + (X − previous-band-top) × band-n-rate  _(PwC Tax Summaries; band widths from BPC multiples.)_
-
-### 5.2 Category I Capital Income
-
-- **Category I taxed separately** — Capital income is taxed separately at a flat 12% (with item-specific 3%/5%/7% interest rates and 7% dividends per Section 1). It is NOT pooled with Category II labour income.  _(PwC Tax Summaries.)_
-
-### 5.3 The Deduction Credit Mechanic (Key Uruguayan Specificity)
-
-- **Deduction credit mechanic** — Uruguayan IRPF does NOT subtract deductions from the taxable base. Instead: 1. Sum all allowable deductions (personal BPS, FONASA, FRL, fictitious child deduction, 6% of housing rent, capped mortgage interest). 2. Multiply that sum by the deduction rate: 10% if annual labour income ≤ the 15 BPC/month equivalent; 8% if income above that threshold. 3. Subtract the resulting credit from the gross Category II tax (from Section 5.1).  _(certificadodeingresos.uy (unipersonal guide 2025); corroborated by etti.edu.uy.)_
-- **15 BPC/month equivalent threshold** — UYU 98,640/month UYU (at BPC 6,576)  _(certificadodeingresos.uy (unipersonal guide 2025); corroborated by etti.edu.uy.)_
-
-[RESEARCH GAP — reviewer to confirm the 8%/10% threshold and the exact annual mechanic against DGI; some 2025 payroll guides phrase the monthly mechanic as 14%/8%.]
-
-### 5.4 Deductible Items (for the credit)
-
-**Deductible items table**  _(certificadodeingresos.uy; etti.edu.uy.)_
-
-| Item | Amount |
-| --- | --- |
-| Personal BPS jubilatorio contribution | Actual (15%) |
-| FONASA + FRL personal contributions | Actual |
-| Fictitious deduction per dependent child | 13 BPC/year (UYU 85,488 at BPC 6,576) |
-| Fictitious deduction per disabled child | 26 BPC/year (UYU 170,976 at BPC 6,576) |
-| Housing rent | 6% of rent paid |
-| Mortgage interest | Capped (see DGI cap) |
-
-Peso conversions are 13 BPC × 6,576 = 85,488 and 26 BPC × 6,576 = 170,976. [RESEARCH GAP — reviewer to confirm the mortgage-interest cap amount against DGI.]
-
-### 5.5 Self-Employed / Independent Regimes
-
-**Self-employed regimes table**  _(certificadodeingresos.uy; auren.com/uy; BPS monotributo pages (bps.gub.uy/4659, /10444, /844).)_
-
-| Regime | Treatment |
-| --- | --- |
-| Servicios personales (independent professionals) | IRPF Category II base; BPS computed on 70% of billed income (real); total contribution burden ≈ 29.6%–33.1% of invoicing |
-| Unipersonal owner without employees | Minimum fictitious base (ficto) = 11 BPC |
-| Monotributo (micro-business simplified) | Replaces most national taxes; e.g. 8% on 1 BPC without medical coverage; replaces IRPF/IVA below revenue caps |
-
-[RESEARCH GAP — reviewer to confirm the unipersonal ficto minimum peso value; the source's UYU 12,094 figure appears to use a prior BPC. At BPC 6,576, 11 BPC = UYU 72,336/year, but the monthly ficto base differs — re-verify against BPS aportes mínimos.]
-
-### 5.6 Non-Resident Income (IRNR) -- Reference Only
-
-- **IRNR rates, out of scope** — General rates 7%–25%; 25% for residents of low/no-tax jurisdictions; technical services 12% or 25%. Out of scope (see R-UY-2).  _(PwC Tax Summaries.)_
-
-### 5.7 Filing and Payment
-
-**Filing and payment table**  _(EY UY (May 2025); DGI vencimientos 2025; Montevideo Portal.)_
-
-| Item | Detail |
-| --- | --- |
-| Forms | Formulario 1102 (individual); Formulario 1103 (núcleo familiar) |
-| Filing window (FY2024 / 2025) | 7 July -- 28 August 2025, staggered by RUT/CI ending |
-| Balance payment | Up to 5 equal monthly instalments; 1st on 29 Aug 2025, 5th by 30 Dec 2025 |
-| Pure-wage single-employer earners | Generally NOT required to file -- employer withholds; automatic devolution |
-
-### 5.8 Penalties (DGI)
-
-**Penalties table**  _(DGI publicación, Resolución DGI 97/026.)_
-
-| Item | Detail |
-| --- | --- |
-| Late filing of a sworn return (contravención) | Fixed fine UYU 870/return (2025); UYU 910/return (2026) -- applies even with zero balance |
-| Mora (late payment) | Graduated 5% / 10% / 20% of unpaid tax (20% after ~90 days late) |
-| Recargos (interest) | ~1% monthly, capitalised every 4 months; rate set periodically by DGI |
-
-[RESEARCH GAP — reviewer to confirm the mora tiers (5/10/20%) and current recargo rate against the Código Tributario / DGI recargo calculator; the tier breakdown is from a secondary summary (memory.com.uy).]
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Individual vs Núcleo Familiar Election
-
-- Núcleo familiar filing is optional and only beneficial in specific income splits; it doubles the lowest non-taxable band but collapses the 10% bracket.
-- Eligibility requires all members to earn ≥ 12 minimum salaries.
-- **Conservative default:** individual filing (Formulario 1102) until reviewer models both.
-- **Flag for reviewer:** run both computations and elect the lower total.
-
-### 6.2 Deduction-Credit Rate (8% vs 10%)
-
-- The rate depends on whether annual labour income exceeds the 15 BPC/month equivalent.
-- **Conservative default:** 8% (less favourable) until income level confirmed.
-- **Flag for reviewer:** confirm the threshold crossing and applicable rate.
-
-### 6.3 FONASA Family Situation
-
-- The personal FONASA rate (3%–8%) depends on income relative to 2.5 BPC and on spouse/child coverage.
-- **Conservative default:** confirm family situation before applying any rate above 3%.
-- **Flag for reviewer:** confirm spouse SNIS coverage and number of covered children.
-
-### 6.4 Dependent-Child Fictitious Deduction
-
-- 13 BPC/child/year (26 BPC if disabled), splittable between parents.
-- **Flag for reviewer:** confirm number of children, disability status, and any split with the other parent.
-
-### 6.5 Servicios Personales vs Monotributo vs IRPF
-
-- The optimal regime depends on revenue, whether the client has employees, and revenue caps.
-- **Conservative default:** IRPF general (servicios personales).
-- **Flag for reviewer:** confirm monotributo eligibility against current revenue caps.
-
-### 6.6 Foreign Capital Income (Residents)
-
-- Uruguay's quasi-territorial system taxes certain foreign capital income for residents.
-- **Flag for reviewer:** confirm scope of any foreign interest/dividend income and available foreign-tax credits.
-
-### 6.7 Housing Rent / Mortgage Interest Deduction
-
-- 6% of housing rent and capped mortgage interest feed the deduction credit.
-- **Flag for reviewer:** confirm documentation and the mortgage-interest cap.
-
-## Section 7 -- Excel Working Paper Template
-
-URUGUAY IRPF -- WORKING PAPER
-Tax Year: 2025  (BPC = UYU 6,576/month)
-Client: ___________________________
-Filing unit: Individual (F.1102) / Núcleo Familiar (F.1103)
-
-A. CATEGORY II -- LABOUR INCOME (annual, UYU)
-  A1. Salary / haberes                            ___________
-  A2. Aguinaldo / salario vacacional              ___________
-  A3. Honorarios / servicios personales           ___________
-  A4. TOTAL gross Category II                      ___________
-
-B. TAXABLE BASE (Category II)
-  B1. Less: items excluded from base (per DGI)     ___________
-  B2. Category II taxable income                   ___________
-
-C. GROSS CATEGORY II TAX (pass to deterministic engine, Section 5.1)
-  C1. Gross tax on B2                              ___________
-
-D. DEDUCTION CREDIT (Section 5.3)
-  D1. Personal BPS jubilatorio (15%)              ___________
-  D2. FONASA + FRL personal                        ___________
-  D3. Fictitious child deduction (13/26 BPC each)  ___________
-  D4. 6% of housing rent                           ___________
-  D5. Mortgage interest (capped)                   ___________
-  D6. SUM of deductions (D1..D5)                   ___________
-  D7. Deduction rate (8% or 10%)                   ___________
-  D8. Deduction credit (D6 x D7)                   ___________
-
-E. CATEGORY II TAX DUE (C1 - D8, floored at 0)    ___________
-
-F. CATEGORY I -- CAPITAL INCOME (separate)
-  F1. Rents / interest / capital gains             ___________
-  F2. Rate (12% / 7% / item-specific)              ___________
-  F3. Category I tax                               ___________
-
-G. CREDITS
-  G1. Less: withholdings / anticipos (retenciones) ___________
-  G2. TOTAL IRPF DUE / REFUND (E + F3 - G1)        ___________
-
-REVIEWER FLAGS:
-  [ ] Tax residency confirmed?
-  [ ] Filing unit modelled both ways (1102 vs 1103)?
-  [ ] Deduction rate (8% vs 10%) confirmed?
-  [ ] FONASA family situation confirmed?
-  [ ] Dependent-child deduction confirmed?
-  [ ] Category I vs Category II split correct?
-  [ ] Tope jubilatorio applied if income > ceiling?
-  [ ] Monotributo eligibility checked (self-employed)?
-
-## Section 8 -- Bank Statement Reading Guide
-
-### Uruguayan Bank Statement Formats
-
-**Bank statement formats table**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| BROU (Banco República) | PDF, CSV | Fecha, Concepto/Detalle, Débito, Crédito, Saldo | Most common; description holds counterparty + reference |
-| Itaú Uruguay | PDF, CSV | Fecha, Descripción, Importe, Saldo | Card transactions show merchant |
-| Santander Uruguay | PDF | Fecha, Concepto, Débito, Crédito, Saldo | Counterparty in concepto field |
-| BBVA Uruguay | PDF, CSV | Fecha, Movimiento, Importe, Saldo |  |
-| Scotiabank Uruguay | PDF, CSV | Date/Fecha, Description, Amount | Some English labels |
-| Prex / Mi Dinero | CSV | Fecha, Detalle, Monto | Wallet exports; clean names |
-
-### Key Uruguayan Banking / Tax Terms
-
-**Banking/tax terms table**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| SUELDO / HABERES | Salary / wages | Category II income |
-| HONORARIOS | Professional fees | Category II (servicios personales) |
-| AGUINALDO | 13th-month salary | Category II income |
-| ALQUILER | Rent | Category I if received; deduction-credit item if housing paid |
-| INTERESES | Interest | Category I income |
-| DIVIDENDOS / UTILIDADES | Dividends | Category I income (7%) |
-| APORTE / MONTEPÍO | BPS contribution | Deduction-credit item (Box D) |
-| FONASA | Health contribution | Deduction-credit item |
-| DÉBITO AUTOMÁTICO | Direct debit | Regular expense -- check counterparty |
-| TRANSFERENCIA | Transfer | Check direction for income/expense |
-| RETENCIÓN | Withholding | Credit against IRPF liability |
-| DEVOLUCIÓN DGI | Tax refund | Exclude -- not income |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3), separating Category I from Category II.
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm".
-3. Apply conservative defaults (Section 1) -- individual filing, 8% deduction rate, 0 children, FONASA 3% floor.
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions to the client:
-
-ONBOARDING QUESTIONS -- URUGUAY IRPF
-1. Are you a Uruguayan tax resident for the full year?
-2. Filing unit: individual or núcleo familiar (and does your spouse earn >= 12 minimum salaries)?
-3. Income types: salary, professional fees (honorarios), rents, interest, dividends?
-4. Do you have a single employer who withholds IRPF, or multiple income sources?
-5. Number of dependent children (and any with a disability)?
-6. FONASA family situation: single or with spouse? Does your spouse have their own SNIS coverage?
-7. Do you pay housing rent or a mortgage? Amounts?
-8. Self-employed? If so: servicios personales, unipersonal, or monotributo?
-9. Any foreign capital income (interest/dividends abroad)?
-10. Total BPS aportes and any withholdings (retenciones) for the year?
-
-## Section 10 -- Reference Material
-
-### Key References
-
-**Key references table**
-
-| Topic | Reference |
-| --- | --- |
-| IRPF rates (Category I & II) | PwC Tax Summaries -- Uruguay, individual; Título 7 Texto Ordenado DGI |
-| IRPF scale (official) | BPS Comunicado R 2/2025 (PDF) -- valores y escalas IRPF 2025 |
-| BPC 2025 value | Decreto N° 5/025 (10 Jan 2025); BPS Comunicado R 2/2025 |
-| BPS contribution rates | BPS Tasas de aportación (bps.gub.uy/835/tasas.html) |
-| FONASA rates | BPS Tasas FONASA (bps.gub.uy/10314/tasas-fonasa.html) |
-| Monotributo | BPS (bps.gub.uy/4659, /10444, /844) |
-| Minimum wage 2025 | MTSS (gub.uy/ministerio-trabajo-seguridad-social) |
-| Filing forms / deadlines | EY UY (May 2025); DGI vencimientos 2025 |
-| Penalties (contravención) | DGI publicación; Resolución DGI 97/026 |
-| Self-employed regimes | certificadodeingresos.uy; auren.com/uy |
-| Non-resident (IRNR) | PwC Tax Summaries -- Uruguay |
-
-### BPC Reference Values
-
-**BPC reference values table**
-
-| Year | BPC (UYU/month) | Source |
-| --- | --- | --- |
-| 2024 | 6,177 | Secondary (misalario.uy / datosUruguay) |
-| 2025 | 6,576 | Decreto N° 5/025 (primary) |
-| 2026 | 6,864 | Secondary (misalario.uy / datosUruguay) |
-
-Only the 2025 value is decree-confirmed; 2024 and 2026 are secondary citations.
-
-### Forthcoming Changes (NOT 2025-effective)
-
-The Budget bill 2025–2029 proposes IRPF/IASS changes and stricter new-resident tax-holiday conditions from 2026. Sources: KPMG TaxNewsFlash (Oct 2025); Vialto Partners regional alert. Treat as proposals, NOT enacted 2025 law. Do not apply.
-
-### Test Suite
-
-Input: Resident, individual, Category II taxable income UYU 552,384.
-Expected: Gross tax = 0.00 (top of 0% band).
-
-Input: Resident, individual, Category II taxable income UYU 1,000,000.
-Expected: Cumulative to 789,120 = 23,673.60; plus (1,000,000 − 789,120 = 210,880) × 15% = 31,632.00. Gross tax = 55,305.60.
-
-Input: Category II taxable income UYU 1,500,000.
-Expected: Cumulative to 1,183,680 = 82,857.60; plus (1,500,000 − 1,183,680 = 316,320) × 24% = 75,916.80. Gross tax = 158,774.40.
-
-Input: Gross Category II tax = 55,305.60 (from Test 2); allowable deductions sum = 180,000; deduction rate = 8%.
-Expected: Credit = 180,000 × 8% = 14,400.00. Tax due = 55,305.60 − 14,400.00 = 40,905.60.
-
-Input: Rental income UYU 240,000 (Category I, general 12%).
-Expected: Category I tax = 240,000 × 12% = 28,800.00. Taxed separately from Category II.
-
-Input: Dividends UYU 100,000 (Category I).
-Expected: Tax = 100,000 × 7% = 7,000.00.
-
-Input: Núcleo familiar, combined Category II taxable income UYU 1,104,768.
-Expected: Gross tax = 0.00 (top of the doubled 0% band, 168 BPC).
-
-Input: Industria y Comercio employer rates.
-Expected: 7.5% + 5% + 0.10% + 0.025% = 12.625%.
-
-## PROHIBITIONS
-
-- NEVER apply the resident IRPF scale without confirming tax residency
-- NEVER pool Category I (capital) and Category II (labour) income -- they are taxed separately
-- NEVER subtract deductions from the IRPF base -- deductions feed a credit (sum × 8% or 10%) against gross tax
-- NEVER assume the 10% deduction rate -- default to 8% until the income threshold is confirmed
-- NEVER apply a FONASA rate above 3% without confirming income level and family situation
-- NEVER apply monotributo without confirming revenue-cap eligibility
-- NEVER treat IRNR (non-resident) or IRAE (corporate) income with this skill -- escalate
-- NEVER treat a BPS or FONASA payment as a base reduction -- it is a deduction-credit item
-- NEVER rely on a [RESEARCH GAP] figure without reviewer confirmation
-- NEVER present tax calculations as definitive -- always label as estimated
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, contador público, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+# Uruguay: personal income tax (IRPF) for 2026 v0.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+This skill computes the annual IRPF of a resident individual (or a family unit that opts to file jointly) for the 2026 calendar year. It links to the other Uruguay skills and does not repeat them:
+
+- [uruguay-payroll](uruguay-payroll.md): the employer's monthly IRPF withholding (anticipos).
+- [uruguay-social-contributions](uruguay-social-contributions.md): BPS, FONASA and FRL contribution rates. Those contributions feed the deduction credit below, but their rates live there.
+- [uy-corporate-income-tax](uy-corporate-income-tax.md): IRAE, including the option for independent workers to pay IRAE instead of IRPF.
+
+**Which text of the law.** Título 7 (IRPF) of the Texto Ordenado 2023 approved by Decreto 101/024, as published by IMPO with the amendments of Ley 20.446 of 16 December 2025 (Budget Law, Diario Oficial 8 January 2026) already integrated. The regulation is Decreto 148/007, amended for foreign income by Decreto 95/026 of 6 May 2026. The law sets amounts in BPC (Base de Prestaciones y Contribuciones) or UI (Unidad Indexada); this skill converts BPC amounts at the 2026 value.
+
+**Quick reference, 2026**
+
+| Item | Figure |
+|---|---|
+| Tax year | Calendar year 2026; the tax arises on 31 December 2026 (T7 art. 7) |
+| BPC 2026 | UYU 6,864 from 1 January 2026 (Decreto 11/026) |
+| Labour income (Categoría II), individual | 0% up to 84 BPC (UYU 576,576), then 10%, 15%, 24%, 25%, 27%, 31%, and 36% above 1,380 BPC (UYU 9,472,320) |
+| Deduction credit | 14% of allowable deductions if nominal income is 180 BPC (UYU 1,235,520) or less, otherwise 8% |
+| Capital income (Categoría I) | 12% general; 7% on taxable dividends and author's rights; lower rates on some local interest |
+| Annual return for 2025 income | Filed 29 June to 31 August 2026; balance in 5 instalments, the last on 30 December 2026 |
+
+## Who this applies to
+
+- **Residents.** An individual is resident in Uruguay for the calendar year if they stay more than 183 days in Uruguay (sporadic absences count, unless they prove tax residence in another country), or if the main core or base of their activities or of their economic or vital interests is in Uruguay. Vital interests are presumed, unless proven otherwise, when the spouse and dependent minor children habitually live in Uruguay (T7 art. 2). Uruguayan nationals on diplomatic, consular or official postings abroad are resident (same article).
+- **Who pays.** Resident individuals, and family units (núcleos familiares) of resident spouses or judicially recognised cohabitants who opt to file jointly (T7 art. 8). The joint option covers only Categoría II, is made once a year, and is not available if either member pays IRAE, IRNR, IMEBA or IASS, or if the marriage or union starts or ends during the year. Spouses must be under the community property regime (sociedad conyugal).
+- **What is taxed.** Uruguayan-source income: activities carried out, assets situated or rights used in Uruguay (T7 art. 6(1)). From 1 January 2026 also capital yields from non-resident entities and gains on those assets (T7 art. 6(2), as replaced by Ley 20.446 art. 653), except the rentals of movable and intangible property, image rights and derivative income listed in art. 18 A), C) and D). The DGI lists the new heads as foreign movable capital yields, foreign real-estate yields and gains on both. Derivative income is taxed under art. 6(3).
+- **Two categories, taxed separately** (T7 art. 11). Categoría I: capital yields, capital gains and imputed income. Categoría II: labour income, inside or outside employment, and compensated inactivity subsidies. Losses stay in their own category and carry forward at most two years.
+- **Out of scope.** Non-residents (IRNR), business income taxed under IRAE, pensions taxed under IASS, and the employer's monthly withholding. Clients in arrears or under DGI enforcement go to a contador público.
+
+## Rates, bands and thresholds
+
+All BPC amounts are at UYU 6,864 for 2026. The annual scale applies to the annual renta computable.
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| BPC value from 1 January 2026 | UYU 6,864 a month (UYU 6,576 in 2025 under Decreto 5/025; increase 4.38%) | 2026 | https://www.impo.com.uy/bases/decretos/11-2026 |
+| Categoría II individual: up to 84 BPC (UYU 576,576), the mínimo no imponible general | Exempt | 2026 | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 48 A) |
+| Over 84 BPC up to 120 BPC (UYU 823,680) | 10% | 2026 | same, art. 48 A |
+| Over 120 BPC up to 180 BPC (UYU 1,235,520) | 15% | 2026 | same, art. 48 A |
+| Over 180 BPC up to 360 BPC (UYU 2,471,040) | 24% | 2026 | same, art. 48 A |
+| Over 360 BPC up to 600 BPC (UYU 4,118,400) | 25% | 2026 | same, art. 48 A |
+| Over 600 BPC up to 900 BPC (UYU 6,177,600) | 27% | 2026 | same, art. 48 A |
+| Over 900 BPC up to 1,380 BPC (UYU 9,472,320) | 31% | 2026 | same, art. 48 A |
+| Over 1,380 BPC | 36% | 2026 | same, art. 48 A |
+| Núcleo familiar where each member's Categoría II income exceeds 12 SMN: exempt up to 168 BPC (UYU 1,153,152); 15% to 180 BPC; then 24%, 25%, 27%, 31%, 36% at the individual band edges | as stated | 2026 | same, art. 48 B |
+| Núcleo familiar where one member's Categoría II income does not exceed 12 SMN: exempt up to 96 BPC (UYU 658,944); 10% to 144 BPC (UYU 988,416); 15% to 180 BPC; then 24%, 25%, 27%, 31%, 36% at the individual band edges | as stated | 2026 | same, art. 48 C |
+| National minimum wage (SMN), used for the 12 SMN test | UYU 24,572 a month from 1 January 2026; UYU 25,383 from 1 July 2026 | 2026 | https://www.impo.com.uy/bases/decretos/319-2025 |
+| Aguinaldo (sueldo anual complementario) and salario vacacional required by law | Kept out of the scale; taxed at the rate of the highest band the other income reaches | 2026 | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 47, art. 48 last paragraph) |
+| Deduction credit rate, nominal annual income (without aguinaldo and salario vacacional) up to 180 BPC (UYU 1,235,520) | 14% of the deductions in art. 49 A) to F) | 2026 | same, art. 49 |
+| Deduction credit rate, nominal annual income above 180 BPC | 8% of the same deductions | 2026 | same, art. 49 |
+| Child deduction (education, food, housing, health not covered by FONASA), per minor child in the taxpayer's care, including minors placed for adoption | 20 BPC a year (UYU 137,280) | 2026 | same, art. 49 D) |
+| Child deduction, child legally declared incapable or with a severe disability (BPS criteria), any age | 40 BPC a year (UYU 274,560), double the above | 2026 | same, art. 49 D) |
+| Mortgage instalments on the only permanent home, home cost not over UI 1,000,000 | Instalments paid, capped at 36 BPC a year (UYU 247,104) | 2026 | same, art. 49 E) |
+| Rent credit, tenant of a permanent home, landlord identified | Up to 8% of the rent, credited against IRPF | 2026 | same, art. 51 |
+| Independent work (servicios personales fuera de la relación de dependencia), not under IRAE | 30% of income deducted as expenses, plus bad debts | 2026 | same, art. 45 |
+| Categoría I, restantes rentas (rents, most interest, foreign capital income, gains) | 12% | 2026 | same, art. 37 B) |
+| Dividends and profits paid by IRAE taxpayers out of IRAE-taxed income, and deemed dividends (art. 19) | 7% | 2026 | same, art. 37 B) |
+| Income from author's rights on literary, artistic or scientific works | 7% | 2026 | same, art. 37 B) |
+| Foreign capital income of people resident from 2020 who opted under art. 24 second paragraph b) | 7% | 2026 | same, art. 37 B) |
+| Interest on local bank deposits and on publicly issued, listed debt of resident issuers, in pesos at a fixed nominal rate: 1 year or less / over 1 to 3 years / over 3 years | 5.5% / 2.5% / 0.5% | 2026 | same, art. 37 A) |
+| Same, pesos with an adjustment clause (for example UI): 1 year or less / over 1 to 3 years / over 3 years | 10% / 7% / 5% | 2026 | same, art. 37 A) |
+| Same, foreign currency: 1 year or less / over 3 years | 12% / 7% | 2026 | same, art. 37 A) |
+| Same, foreign currency, over 1 to 3 years | unverified: the rate cell is blank in the IMPO consolidated text | 2026 | same, art. 37 A) |
+| Rental income exemption | Exempt if all rents are 40 BPC a year (UYU 274,560) or less and the owner lifts bank secrecy; lost if other capital yields exceed 3 BPC (UYU 20,592) | 2026 | same, art. 38 J) |
+| Small disposals exemption | Each disposal UI 30,000 or less, and the year's total of such disposals under UI 90,000 | 2026 | same, art. 38 I) |
+| Sale of permanent home exemption | Sale UI 1,200,000 or less, at least 50% reinvested in a new permanent home within 12 months, new home UI 1,800,000 or less | 2026 | same, art. 38 L) |
+| Optional gain on property bought before 1 July 2007 (non-rural) and on property abroad | 15% of the sale price (never below the cadastral value for Uruguayan property) | 2026 | same, art. 29 |
+| Other disposals without a provable cost, and the optional rule for foreign assets | Gain = 20% of the sale price | 2026 | same, art. 32 |
+| Late filing of a return (contravención) | UYU 910 per return; UYU 2,730 maximum for several no-activity returns filed together | 2026 | https://www.impo.com.uy/bases/resoluciones-dgi/97-2026 |
+| Late payment fine (mora) | 5% if paid within 5 working days; 10% up to 90 calendar days; 20% after that; plus a monthly surcharge (recargo) set by the Executive | 2026 | https://www.impo.com.uy/bases/codigo-tributario/14306-1974/94 |
+
+## The base
+
+**Categoría II, labour income.**
+
+- **Employment** (T7 art. 42): all regular or extraordinary pay in cash or kind, including allowances and per diems without accounts, the salario vacacional, and severance above the legal minimum (only the excess is taxed). FONASA and similar health benefits are not taxable (art. 40).
+- **Independent work** (T7 art. 45): fees for personal services outside employment that are not under IRAE. Deduct a flat 30% for expenses plus bad debts; actual expenses are not deducted. An independent worker who opts into IRAE under T4 art. 14 leaves IRPF for that income (see the corporate skill).
+- **Timing** (art. 41): accrual. Aguinaldo and salario vacacional count in the month they must be paid. Irregular income generated over more than two years can be spread over up to three years (independent) or taxed when paid at the rate of the spread amount (employed).
+- **Computation, in order** (arts. 46 to 49 and 51):
+  1. Add the year's renta computable, leaving out aguinaldo and salario vacacional.
+  2. Apply the scale (individual art. 48 A, or the family scale B or C) band by band.
+  3. Tax the aguinaldo and salario vacacional at the rate of the highest band reached in step 2.
+  4. Add the deductions: BPS and other pension-fund contributions (art. 49 A), FONASA, FRL and similar health contributions (B), the Fondo de Solidaridad and its additional (C), child deductions (D), capped mortgage instalments (E) and CJPB items (F).
+  5. Multiply the total by 14% or 8% (the 180 BPC test on nominal income without aguinaldo and salario vacacional) and subtract the result from the tax of steps 2 and 3.
+  6. Subtract the rent credit (up to 8% of rent, art. 51) and the withholdings (anticipos) the employer or paying agent already made.
+- **Child deduction sharing** (art. 49): parents who agree give it in full to one of them or split it equally; otherwise the regulation sets an order.
+
+**Categoría I, capital income.**
+
+- **Real-estate rents** (T7 arts. 15, 16): gross rent accrued minus bad debts, the agency commission, the fees for drawing up or renewing the lease and their IVA, Contribución Inmobiliaria and Impuesto de Enseñanza Primaria. A sub-landlord also deducts the rent paid. Leases under 12 months take the property taxes pro rata.
+- **Movable capital** (art. 18): interest on deposits and loans, rent of movables and intangibles, royalties, image rights, trust distributions, and profits withdrawn by owners of sole-trader businesses under IRAE for years from 2017. Taxable dividends are those paid out of IRAE-taxed income (art. 38 C).
+- **Capital gains** (arts. 26 to 34): sale price minus the UI-indexed cost, with the 15% and 20% options above. Losses offset only gains, and only if provable (art. 34).
+- **Exempt** (art. 38) include public debt interest and gains, exchange differences, inflation adjustments, dividends from listed companies and from profits not taxed by IRAE, the small-disposal, rental and home-sale exemptions in the table, and transfers of shares into a resident holding company that the seller keeps owning at least 95% of for four years (art. 38 Q).
+- **Foreign capital income from 1 January 2026** (arts. 6(2), 21, 25, 32; Decreto 95/026). Taxed at 12%. Income earned through a non-resident entity (or a resident entity listed in T4 art. 12 A 1 to 8) is imputed directly to a resident individual who is its beneficial owner, with a 5% minimum holding (art. 21). Foreign tax paid on the same income is a credit, capped at the Uruguayan tax on it (art. 25). For listed securities held at 31 December 2025, the cost is their quoted value on that date (art. 32). Foreign property gains may use 15% of the price, other foreign assets 20% of the price, as an annual option (arts. 29, 32). The DGI collects this income on form 1146.
+- **Impatriates** (arts. 24, 24 bis). People who become resident from 1 January 2026 may opt to pay IRNR instead of IRPF on foreign capital income in the year of arrival and the next ten years. They qualify through one of three routes: property investment over UI 12,500,000, capitalising investment funds with at least UI 625,000 a year, or staying more than 183 days in each year. They must not have been resident in the two previous years. Afterwards they may pay IRPF at half the rate for five years, or a fixed annual amount of UI 1,875,000 (UI 1,250,000 in years with more than 183 days' stay). Other residents may elect the same fixed UI 1,875,000 under art. 39 bis. These are elections; refer the client before relying on one.
+
+## Deadlines and filing
+
+| Step | What and where | Source |
+|---|---|---|
+| Who must file | Employees with more than one employer, or who exceeded the annual threshold and had no December income, or who exceeded the mínimo no imponible with several simultaneous payers without form 3100, or who took the 5% family-unit reduction in withholding. For 2025 income the thresholds were UYU 963,510 nominal and UYU 552,384. Also all independent workers not under IRAE, and anyone with capital income that was not withheld. Most employees do not file | [DGI, obligados](https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/estan-obligados-presentar-declaracion-irpf) |
+| Forms | 1102 individual, 1103 family unit (Categoría II); 1101 capital income (Categoría I); independent workers also file 1302 (IVA servicios personales) | same |
+| Portal | DGI Servicios en Línea or the DGI app, signed in with a digital identity; the return comes pre-filled; a third party can file through Asignación de roles | [DGI, calendario campaña 2026](https://www.gub.uy/direccion-general-impositiva/comunicacion/noticias/calendario-campana-2026-irpf) |
+| Filing window, 2025 income | 29 June to 31 August 2026 (pre-filled form from 26 June). Refunds paid from 28 July 2026; a return filed by the 15th is paid within that month | same |
+| Payment of the balance, 2025 income | Five equal instalments: 31 August, 30 September, 30 October, 30 November and 30 December 2026. Tax codes 101 (Cat. I), 109 (Cat. II), 117 (family unit); month charged December 2025; boleto 2908 at Abitab, Red Pagos or online banking | [DGI, saldo a pagar](https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/declaracion-irpf-surge-saldo-pagar-se-efectua-pago-del-saldo) |
+| Foreign income payments on account | Half-yearly: January to June paid in August, July to December paid in February of the next year | [Res. DGI 1517/026, num. 21, 22](https://www.impo.com.uy/bases/resoluciones-dgi/1517-2026) |
+| 2026 income | Return due in the 2027 campaign; the DGI has not yet published that calendar | not yet published |
+
+## Penalties and interest
+
+- **Late filing.** Fixed fine of UYU 910 per return in 2026 (Res. DGI 97/026), within the contravención range of UYU 680 to UYU 13,220 set for 2026 by [Decreto 344/025](https://www.impo.com.uy/bases/decretos/344-2025) under Código Tributario art. 95. It applies even if no tax is due.
+- **Late payment** (Código Tributario art. 94). Fine of 5%, 10% or 20% of the tax paid late depending on the delay, plus a monthly surcharge calculated day by day at the rate the Executive sets. Asking for a payment plan within the payment term costs 10%.
+
+## Cross-border points
+
+- **Non-residents** pay IRNR, not IRPF. The IRNR option for employment income of foreign free-zone workers and incoming IT professionals (art. 43) applies to IT contracts started up to 28 February 2025 only.
+- **Residents with foreign capital income** are taxed from 1 January 2026, with the foreign tax credit and imputation rules above.
+- **Uruguayan-source by rule** (art. 6): pay from the Uruguayan State to officials posted abroad; employment services performed abroad for IRAE or IRPF taxpayers; technical and advertising services from abroad to IRAE taxpayers.
+
+## Two worked examples that recompute
+
+### Example 1: employee with one child and rental income
+
+Lucía is resident and employed all of 2026. Her salary, without aguinaldo and salario vacacional, is UYU 1,200,000; aguinaldo and salario vacacional together are UYU 100,000. Her payslips show UYU 180,000 of BPS pension contributions and UYU 54,000 of FONASA and FRL. She has one child aged 8. She also rents out a flat for UYU 300,000 a year and pays UYU 20,000 of Contribución Inmobiliaria on it.
+
+Categoría II. UYU 1,200,000 is in the 15% band: 24,710.40 on the 10% band plus 15% of (1,200,000 - 823,680) = 56,448, so UYU 81,158.40. The highest band reached is 15%, so aguinaldo and salario vacacional pay 15%: UYU 15,000. Deductions are 180,000 + 54,000 + 137,280 (20 BPC for the child) = UYU 371,280. Her nominal income without aguinaldo is under 180 BPC (UYU 1,235,520), so the rate is 14%: credit UYU 51,979.20. Categoría II tax: 81,158.40 + 15,000 - 51,979.20 = UYU 44,179.20, before her employer's withholdings.
+
+Categoría I. Her rents exceed 40 BPC, so the exemption does not apply. The base is 300,000 - 20,000 = UYU 280,000; at 12% the tax is UYU 33,600, taxed separately, on form 1101 if not withheld.
+
+```oa-check
+name: UY IRPF 2026, employee, one child, rental income
+inputs:
+  bpc: 6864
+  salary: 1200000
+  aguinaldo_vacacional: 100000
+  bps_contributions: 180000
+  fonasa_frl: 54000
+  children: 1
+  rent: 300000
+  property_tax: 20000
+steps:
+  - edge_84: 84 * bpc
+  - edge_120: 120 * bpc
+  - edge_180: 180 * bpc
+  - band_10: (min(salary, edge_120) - edge_84) * 0.10
+  - band_15: (min(salary, edge_180) - edge_120) * 0.15
+  - scale_tax: band_10 + band_15
+  - sac_tax: aguinaldo_vacacional * 0.15
+  - deductions: bps_contributions + fonasa_frl + children * 20 * bpc
+  - credit: deductions * 0.14
+  - cat2_tax: scale_tax + sac_tax - credit
+  - rent_exempt_limit: 40 * bpc
+  - cat1_tax: (rent - property_tax) * 0.12
+expected:
+  edge_84: 576576
+  edge_120: 823680
+  edge_180: 1235520
+  band_10: 24710.40
+  band_15: 56448.00
+  scale_tax: 81158.40
+  sac_tax: 15000.00
+  deductions: 371280
+  credit: 51979.20
+  cat2_tax: 44179.20
+  rent_exempt_limit: 274560
+  cat1_tax: 33600.00
+```
+
+### Example 2: should the couple file as a núcleo familiar?
+
+Martín has Categoría II renta computable of UYU 1,500,000 and his wife Ana UYU 400,000 in 2026. They are married under sociedad conyugal, both resident, and neither pays IRAE, IRNR, IMEBA or IASS. Ana's income exceeds 12 SMN, so if they opt to file jointly, scale B applies.
+
+Filed separately (scale A): Martín pays 86,486.40 up to 180 BPC plus 24% of (1,500,000 - 1,235,520), so UYU 149,961.60; Ana is under 84 BPC and pays nothing. Total UYU 149,961.60.
+
+Filed jointly (scale B) on UYU 1,900,000: exempt to UYU 1,153,152; 15% from there to UYU 1,235,520 = 12,355.20; 24% on the rest = 159,475.20. Total UYU 171,830.40.
+
+The decision: filing separately saves UYU 21,868.80 before deductions, so they file separately. The joint option pays when one spouse has little or no labour income: if Ana earned nothing (scale C), joint tax on Martín's UYU 1,500,000 would be UYU 133,488, which is UYU 16,473.60 less than filing separately. If Ana earned UYU 200,000 (still under 12 SMN, scale C), joint tax on UYU 1,700,000 would be UYU 181,488, more than the UYU 149,961.60 separately. Recompute the deduction credit under each option before electing (see Not yet confirmed).
+
+```oa-check
+name: UY IRPF 2026, individual vs núcleo familiar decision
+inputs:
+  bpc: 6864
+  martin: 1500000
+  ana: 400000
+  ana_low: 200000
+steps:
+  - e84: 84 * bpc
+  - e96: 96 * bpc
+  - e120: 120 * bpc
+  - e144: 144 * bpc
+  - e168: 168 * bpc
+  - e180: 180 * bpc
+  - tax_to_180: (e120 - e84) * 0.10 + (e180 - e120) * 0.15
+  - martin_tax: tax_to_180 + (martin - e180) * 0.24
+  - ana_tax: max(0, min(ana, e120) - e84) * 0.10
+  - separate_total: martin_tax + ana_tax
+  - joint_b: (e180 - e168) * 0.15 + (martin + ana - e180) * 0.24
+  - saving_separate: joint_b - separate_total
+  - joint_c_zero: (e144 - e96) * 0.10 + (e180 - e144) * 0.15 + (martin - e180) * 0.24
+  - saving_joint_zero: separate_total - joint_c_zero
+  - joint_c_low: (e144 - e96) * 0.10 + (e180 - e144) * 0.15 + (martin + ana_low - e180) * 0.24
+expected:
+  tax_to_180: 86486.40
+  martin_tax: 149961.60
+  ana_tax: 0
+  separate_total: 149961.60
+  joint_b: 171830.40
+  saving_separate: 21868.80
+  joint_c_zero: 133488.00
+  saving_joint_zero: 16473.60
+  joint_c_low: 181488.00
+```
+
+## Ask the client first
+
+1. Residence in 2026: days in Uruguay, where the spouse and minor children live, any certificate of residence elsewhere. Did they become resident in 2026, or earlier under an impatriate or IRNR option?
+2. Labour income: each employer and paying institution, pay by month, aguinaldo and salario vacacional separately, and any independent fees. Has an independent worker opted into IRAE?
+3. Deductions: BPS (or other fund), FONASA, FRL and Fondo de Solidaridad paid; children (dates of birth, disability, which parent claims); mortgage on the only home (home cost in UI, instalments paid); rent paid and the landlord's identity.
+4. Spouse or cohabitant: the marriage regime, each one's Categoría II income (12 SMN test), and whether either pays IRAE, IRNR, IMEBA or IASS. If unknown, compute individually.
+5. Capital income: rents and their costs; interest by instrument, currency and term; dividends and their source; sales of property or shares with dates and costs; every foreign account, fund, company or property held from 1 January 2026, with foreign tax paid.
+6. Withholdings and payments already made, including foreign-income payments on account.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Texto Ordenado 2023 (Decreto 101/024), Título 7 IRPF, IMPO consolidated text with Ley 20.446 integrated: arts. 1 to 52 read in full | https://www.impo.com.uy/bases/todgi-2023/7-2024 | 2026-11-11 |
+| Decreto 11/026 of 20 January 2026, art. 1: BPC UYU 6,864 from 1 January 2026 | https://www.impo.com.uy/bases/decretos/11-2026 | 2026-11-11 |
+| Decreto 319/025, arts. 1 and 2: salario mínimo nacional from 1 January and 1 July 2026 | https://www.impo.com.uy/bases/decretos/319-2025 | 2026-11-11 |
+| Decreto 95/026 of 6 May 2026, foreign capital income regulation (arts. 1 to 18 read) | https://www.impo.com.uy/bases/decretos-originales/95-2026 | 2026-11-11 |
+| Resolución DGI 1517/026, numerals 20 to 25 (payments on account, simplified regime) | https://www.impo.com.uy/bases/resoluciones-dgi/1517-2026 | 2026-11-11 |
+| Resolución DGI 2294/026, numeral 7 read for the transitional fixed-amount payment for 2026 | https://www.impo.com.uy/bases/resoluciones-dgi/2294-2026 | 2026-11-11 |
+| BPS ATYR, Comunicado R 5/2026, parts 1 to 4 read for the IRPF 2026 monthly values (monthly scale 7 to 115 BPC, the 14% / 8% test at 15 BPC a month, child 20 and 40 BPC): cross-check of the BPC conversions | https://www.bps.gub.uy/23860/2026---comunicado-r-5---valores-escalas-irpf-2026.html | 2026-11-11 |
+| DGI, who must file the IRPF return (guide of 12 May 2026), read for the filing tests and forms | https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/estan-obligados-presentar-declaracion-irpf | 2026-11-11 |
+| DGI, 2026 IRPF campaign calendar (news of 1 June 2026), read for the filing window and refunds | https://www.gub.uy/direccion-general-impositiva/comunicacion/noticias/calendario-campana-2026-irpf | 2026-11-11 |
+| DGI, payment of the IRPF balance (guide of 25 May 2026), read for the instalment dates and tax codes | https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/declaracion-irpf-surge-saldo-pagar-se-efectua-pago-del-saldo | 2026-11-11 |
+| DGI, new categories of foreign income and form 1146 (news of 24 July 2026), read in full | https://www.gub.uy/direccion-general-impositiva/comunicacion/noticias/irpf-nuevas-categorias-rentas-obtenidas-exterior-personas-fisicas-residentes | 2026-11-11 |
+| Código Tributario (Decreto-Ley 14.306), arts. 94 and 95 | https://www.impo.com.uy/bases/codigo-tributario/14306-1974/94 | 2026-11-11 |
+| Decreto 344/025, arts. 1 and 2: contravención minimum and maximum for 2026 | https://www.impo.com.uy/bases/decretos/344-2025 | 2026-11-11 |
+| Resolución DGI 97/026, numeral 1 read for the late-return fine for 2026 | https://www.impo.com.uy/bases/resoluciones-dgi/97-2026 | 2026-11-11 |
+
+Not yet confirmed: the art. 37 A) rate for foreign-currency interest over one and up to three years (blank in the consolidated text); the monthly recargo rate for 2026; how the 180 BPC deduction-rate test and the deductions apply to a núcleo familiar return; whether a deduction credit larger than the tax is lost; which SMN figure (January or July) the 12 SMN test uses in a year with two values; the filing calendar for 2026 income (2027 campaign); monotributo and the unipersonal minimum base, which sit in BPS rules not read for this skill; the employer withholding mechanics in Decreto 148/007, left to uruguay-payroll.
+
+> Contributed by Michael Cutajar.

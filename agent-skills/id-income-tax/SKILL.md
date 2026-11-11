@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "ID"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "RILIA PUTRI"
 ---
 
 # ID Income Tax
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -85,7 +83,6 @@ metadata:
 | Annual SPT filing deadline | 31 March of the following year (individuals) |
 | Payment instrument | Surat Setoran Elektronik via kode billing → bank/post |
 | NPWP format | NIK 16-digit (effective 1 July 2024 per PMK 112/2022 for Indonesian citizens) |
-| Validation date | Verified by RILIA PUTRI (11.D43411) on 2026-06-03 |
 | Skill version | 1.0 |
 
 ### Article 17 Progressive Brackets (UU HPP, effective 2022+)

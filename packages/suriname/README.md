@@ -10,12 +10,13 @@
 3. `README.md`
 4. `sr-company-formation.md`
 5. `sr-corporate-income-tax.md`
-6. `sr-income-tax.md`
-7. `sr-payroll-social.md`
-8. `sr-tax-overview.md`
-9. `sr-vat-gst.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+6. `sr-cross-border.md`
+7. `sr-income-tax.md`
+8. `sr-payroll-social.md`
+9. `sr-tax-overview.md`
+10. `sr-vat-gst.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## How to use
 
