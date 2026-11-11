@@ -106,7 +106,7 @@ These are Annex II D rules, not extra personal allowances. For the 5% caps, use 
 | Domestic staff | Documented remuneration, employer contributions and mandatory work-risk insurance for staff under Ley 26.844, capped at GNI | Annex II D(m), same |
 | Education/tools | Cap 40% of GNI; qualifying dependent children or children up to 24 inclusive who study regularly/professionally, cannot support themselves and meet the GNI net-income test; documented and entered in SiRADIG | Annex II D(r), same |
 | Mortgage interest on own home | Up to ARS 20,000 annually for a qualifying purchase/construction mortgage; a co-owner is limited to their ownership share of that cap | LIG art. 85(a); https://biblioteca.arca.gob.ar/dcp/LEY_C_020628_2019_12_05 |
-| Insurance/retirement, funeral costs | Apply the relevant statutory/annual cap before any claim; caps are not confirmed here, so stop these claim lines until read from the current official source | Annex II D(d),(e),(p), same |
+| Insurance/retirement, funeral costs | Apply the relevant statutory/annual cap before any claim; caps are not confirmed here, so stop these claim lines until read from the current official source | Annex II D(d),(e),(p); https://biblioteca.arca.gob.ar/dcp/REAG01004003_2017_03_02 |
 
 Do not confuse eligibility for education costs for a student over 18 with entitlement to the ordinary child personal deduction. Do not deduct unsupported expenditure merely because the payroll software offers a field.
 
