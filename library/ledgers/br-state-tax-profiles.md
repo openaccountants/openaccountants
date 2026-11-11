@@ -1,8 +1,8 @@
 # Brazil state tax profiles: writer ledger
 
-Guide: `skills/brazil/br-state-tax-profiles.md`  
-SHA256: `fcb2e3ee29caf54bb5b6beb56889e94a6e2ba0f282a7e29bb0ff49106cbfaa9a`  
-Base: `0de5bb04d2cdf0714609c5c910ff6e7cd9a7dc5c`  
+Guide: `skills/brazil/br-state-tax-profiles.md`
+SHA256: `fcb2e3ee29caf54bb5b6beb56889e94a6e2ba0f282a7e29bb0ff49106cbfaa9a`
+Base: `0de5bb04d2cdf0714609c5c910ff6e7cd9a7dc5c`
 Read date: 2026-11-11. New distinct job; not a rewrite. No approval removed. No push before independent review.
 
 This BEFORE-review ledger contains 96 source/rule/derived/workflow groups. A group cites the rule and neighbouring conditions, not a claim to have read the entire statute. Exact quotes are unmodified original-language anchors, with whitespace-only normalization allowed for PDF/HTML extraction. The independent reviewer must verify every claim and condition against the actual primary portion, including the detailed list and effective-date paragraphs, and recompute both examples. No source is certified solely from an HTTP response. Failed/unopened sources are expressly unconfirmed and have no read date.
