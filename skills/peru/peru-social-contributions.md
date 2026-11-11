@@ -153,9 +153,9 @@ Non-domiciled employment uses the domestic-law 30% rate on Peruvian-source work 
 
 ### 8. CTS and gratificaciones are benefits, not interchangeable contributions
 
-For ordinary CTS, first test the private-sector four-hour average daily service gate in CTS TUO art. 4, the worker's regime and credited time. Arts. 9-18 identify regular computable pay, the April/October reference remuneration, qualifying variable-pay averages and the one-sixth inclusion of semestral gratificación actually received. Art. 21 uses monthly twelfths and daily thirtieths of a twelfth: `CTS = base × complete months / 12 + base × remaining credited days / 360`. Do not treat an approximate annual cost percentage as the deposit formula. Obtain regular family allowance and variable-pay records rather than using basic salary alone. The extraordinary non-remunerative health-replacement bonus is not simply added as another sixth of gratificación.
+For ordinary CTS, first test the private-sector four-hour average daily service gate in CTS TUO art. 4, the worker's regime and credited time. Arts. 9-18 identify regular computable pay, the April/October reference remuneration, qualifying variable-pay averages and the one-sixth inclusion of semestral gratificación actually received. Art. 21 uses monthly twelfths and daily thirtieths of a twelfth: `CTS = base × complete months / 12 + base × remaining credited days / 360`. Do not treat an approximate annual cost percentage as the deposit formula. Obtain regular family allowance and variable-pay records rather than using basic salary alone. For complementary variable/imprecise pay, CTS TUO art. 16 requires receipts in at least three months of the six-month period, then adds the sum received divided by six to the computable base; the same regularity gate applies to a shorter liquidation period. For principal imprecise remuneration such as commissions or piecework, art. 17 uses the semester average, or the daily average over the actual period if shorter than six months. Periodic pay has the distinct art. 18 rules: semestral pay enters by sixths, longer periods by twelfths of the amount received in the semester, and periods exceeding a year are excluded; fixed pay with periods above a month but below a semester uses art. 16 incorporation without the three-month receipt gate. The extraordinary non-remunerative health-replacement bonus is not simply added as another sixth of gratificación.
 
-For gratificaciones, Law 27735 and DS 005-2002-TR distinguish the January-June and July-December semesters; use the computable remuneration at 30 June or 30 November, respectively. Complete qualifying semesters give one computable monthly remuneration; shorter service is calculated by complete calendar months with the regulatory treatment of non-credited days. Paid vacation/leave and qualifying subsidised time have the statutory service treatment, so absence is not automatically an exclusion. A truncated benefit requires the cessation rules and at least a complete qualifying month. Add the health-replacement extraordinary bonus at 9%, or 6.75% for qualifying EPS coverage, as provided by Law 30334 and DS 012-2016-TR. Do not deduct ordinary ONP/AFP/EsSalud from the exempt statutory gratificación; retain employment income tax and permitted deductions.
+For gratificaciones, Law 27735 and DS 005-2002-TR distinguish the January-June and July-December semesters; use the computable remuneration at 30 June or 30 November, respectively. Complete qualifying semesters give one computable monthly remuneration; shorter service is calculated by complete calendar months with the regulatory treatment of non-credited days. Paid vacation/leave and qualifying subsidised time have the statutory service treatment, so absence is not automatically an exclusion. For complementary variable pay, Law 27735 art. 3 requires receipt in at least three months of the semester and adds the sum divided by six. For principal variable remuneration, apply DS 005-2002-TR art. 3.1 with the CTS art. 17 average rule and the specified service period. For a shorter ordinary entitlement, calculate one sixth of the computable remuneration per complete calendar month and deduct non-credited days at one thirtieth of that monthly fraction; do not remove credited paid leave or subsidy days. Under DS 005-2002-TR art. 5, truncated gratificación requires at least one complete service month, uses the computable remuneration of the month immediately before cessation and complete calendar months in the relevant semester, and is paid with the social benefits within 48 hours of cessation. Truncated CTS instead uses cessation-date remuneration under CTS TUO art. 3 and is paid directly by the employer within 48 hours. Add the health-replacement extraordinary bonus at 9%, or 6.75% for qualifying EPS coverage, as provided by Law 30334 and DS 012-2016-TR. Do not deduct ordinary ONP/AFP/EsSalud from the exempt statutory gratificación; retain employment income tax and permitted deductions.
 
 ### 9. Reconcile the bank and produce the working paper
 
@@ -424,6 +424,37 @@ expected:
 ```
 
 The old illustrative bank line `14.05.2026; CTS DEPOSITO; DEBIT; -2500.00 PEN` remains a candidate CTS deposit, not proof the legal amount is 2,500. Obtain that worker's actual computation. The bank date is consistent with payment before the ordinary May deadline, but does not establish eligibility, base or full settlement.
+
+### Case 7: variable-pay benefits and cessation are ordinary cases
+
+Ordinary eligible worker has fixed computable salary 5,000 and complementary variable payments 300, 600 and 900 in three separate months of the six-month period, zero in the other months. The three-month gate is met; the computable average is 300. With a qualifying received semestral gratificación of 5,000, six credited months produce CTS 3,066.67. A complete ordinary gratificación based on salary plus this average is 5,300, with ordinary health-replacement bonus 477. In a separate cessation scenario, computable remuneration in the immediately preceding month is 5,300 and the worker has three complete credited calendar months in the relevant semester: truncated gratificación is 2,650, plus ordinary bonus 238.50, payable under the 48-hour rule. There are no non-credited days or EPS cover in these hypothetical cases; do not substitute the cessation-month salary for the previous-month gratificación base.
+
+```oa-check
+name: Complementary variable pay and truncated ordinary gratification
+inputs:
+  salary: 5000
+  variable_one: 300
+  variable_two: 600
+  variable_three: 900
+  received_gratificacion: 5000
+  previous_month_base: 5300
+  complete_credited_months: 3
+steps:
+  variable_average: (variable_one + variable_two + variable_three) / 6
+  cts_base: salary + variable_average + received_gratificacion / 6
+  cts: round(cts_base * 6 / 12, 2)
+  ordinary_gratificacion: salary + variable_average
+  ordinary_bonus: ordinary_gratificacion * 0.09
+  truncated_gratificacion: previous_month_base * complete_credited_months / 6
+  truncated_bonus: truncated_gratificacion * 0.09
+expected:
+  variable_average: 300.00
+  cts: 3066.67
+  ordinary_gratificacion: 5300.00
+  ordinary_bonus: 477.00
+  truncated_gratificacion: 2650.00
+  truncated_bonus: 238.50
+```
 
 ### Bank-only and refusal regression cases
 
