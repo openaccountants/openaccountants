@@ -1,431 +1,215 @@
 ---
 name: paraguay-iva
-description: Use this skill whenever asked to prepare, review, or create a Paraguay IVA (Impuesto al Valor Agregado) return for any client. Trigger on phrases like "prepare IVA return", "do the IVA", "Paraguay VAT", or any request involving Paraguay value added tax filing. ALWAYS read this skill before touching any Paraguay IVA-related work.
+description: "Paraguay value added tax (Impuesto al Valor Agregado, IVA) for 2026 under Ley N° 6380/2019 Libro II Título I (as amended by Ley N° 7067/2023) and its regulation Decreto N° 3107/2019. Covers who pays (businesses, independent professionals, landlords, importers; not RESIMPLE payers), when the tax arises, the 10% general rate and the 5% rate (residential rent, real estate on a 30% base, basic food basket, listed farm and livestock products, registered medicines), exemptions, the monthly Form 120 (obligation 211), IVA credit rules and the six-month proration, the restricted credit list for professionals and the 30% car rule, withholding and perception (State bodies, exporters, card processors, payments abroad, digital services), exporter refunds, the RUC-digit due dates and penalties. Trigger on: Paraguay VAT, IVA Paraguay, Formulario 120, IVA crédito, IVA débito, retención IVA, servicios digitales IVA Paraguay, saldo técnico, devolución IVA exportador. Out of scope: income taxes (paraguay-corporate-income-tax, paraguay-income-tax), excise (ISC), customs."
+version: 1.1
 jurisdiction: PY
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-11
+category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: computation
 tier: 2
 domain: vat-gst
 ---
 
-# Paraguay IVA
+# Paraguay IVA: 2026 rates, credit, withholding and the monthly return v1.1
 
-## Skill Metadata
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-- **Jurisdiction** — Paraguay
-- **Jurisdiction Code** — PY
-- **Primary Legislation** — Ley 125/91 (Ley de Reforma Tributaria), Libro III -- IVA (as amended by Ley 6380/2019)
-- **Supporting Legislation** — Decreto 1030/2020 (Reglamento IVA); Resoluciones SET
-- **Tax Authority** — Subsecretaria de Estado de Tributacion (SET)
-- **Filing Portal** — https://www.set.gov.py (Marangatú System)
-- **Contributor** — Open Accounting Skills Registry
-- **Validated By** — Deep research verification, April 2026
-- **Validation Date** — April 2026
-- **Skill Version** — 1.0
-- **Confidence Coverage** — Tier 1: rate classification, return form, input recovery. Tier 2: partial exemption, maquila, IVA agropecuario. Tier 3: complex structures, rulings.
+The law is Ley N° 6380/2019 "De Modernización y Simplificación del Sistema Tributario Nacional", Libro II, Título I (arts. 80 to 106), read in the text published by the Biblioteca y Archivo Central del Congreso Nacional (BACN). Since 2020 it replaces the IVA of Ley 125/1991. Article 100(3)(h) (passenger transport) was replaced by Ley N° 7067/2023. The regulation is the Anexo to Decreto N° 3107/2019, read in the scanned copy published by the Dirección Nacional de Ingresos Tributarios (DNIT, which replaced the Subsecretaría de Estado de Tributación under Ley N° 7143/2023); its art. 19 was replaced by Decreto N° 8175/2022. For 2026 the budget law, Ley N° 7609/2025, suspends exemptions in other laws but expressly keeps those of Ley 6380 (art. 244(n)), and suspends the progressive cut in IVA withholding percentages (art. 266). Amounts are in guaraníes (G). IVA is computed monthly (art. 86).
 
-## Confidence Tier Definitions
+## Who this applies to
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
+- **IVA taxpayers** (art. 82): individuals who provide personal or professional services outside employment, or let real estate; individuals running a sole-owner business (empresa unipersonal); companies, associations, cooperatives, foundations and every other private entity; consortia for a public work; branches of foreign entities; public enterprises with commercial activity; habitual and casual importers; transparent legal structures; non-resident (INR) taxpayers; undivided estates.
+- **Not taxpayers** (Decreto 3107 art. 3): central-government bodies, and sole-owner businesses in the IRE RESIMPLE, unless they also provide personal or professional services (Ley 6380 art. 27).
+- **What is taxed** (arts. 80 and 81): sales of goods, services (except employment) and imports. A sale includes private use of business goods by owners, partners, directors and staff, leasing with a purchase option, the transfer of a business or of shares and quotas, consignment, and the transfer of rights. Services include loans and financing, works contracts, insurance, intermediation, letting of movables, property and intangibles, professions, transport, digital services, obligations not to act, and derivatives where the investor is in Paraguay.
+- **Territory** (art. 84): goods located in Paraguay, services performed in Paraguay, and imports. Technical assistance and other services performed abroad are taxed when used in Paraguay. Loans are Paraguayan when the borrower is resident; insurance when the risk or person is in Paraguay; digital services when any one of the IP address or SIM country, billing address, paying bank account, card issuer is Paraguayan; international transport is 25% taxed in Paraguay (Decreto 3107 art. 7: freight to Paraguay and tickets from or to Paraguay).
 
-## Step 0: Client Onboarding Questions
+**When to refer.** Refer to a specialist for: maquila (Ley N° 7547/2025, which repealed the maquila law Ley 1064/1997); investment-incentive projects under Ley N° 7548/2025 or the old Ley 60/1990 regime; free zones; the Régimen de Turismo and the shopping-tourism regime (Decreto 2063/2024); reorganisations; exporter refund claims and the accelerated-refund guarantee; excise (ISC). Income tax: [paraguay-corporate-income-tax](paraguay-corporate-income-tax.md) and [paraguay-income-tax](paraguay-income-tax.md).
 
-1. **Entity name and RUC** [T1]
-2. **Tax regime** [T1] -- IRE General, IRE Simple, RESIMPLE, or IRP
-3. **Filing period** [T1] -- monthly (standard)
-4. **Industry/sector** [T2] -- agriculture (IVA Agropecuario), manufacturing, maquila
-5. **Does the business make exempt supplies?** [T2]
-6. **Does the business import goods?** [T1]
-7. **Is the business under maquila regime?** [T2]
-8. **Credit balance brought forward** [T1]
+## Rates, bands and thresholds
 
-**If items 1-3 are unknown, STOP.**
+Quick answer: **10% unless the item is on the 5% list or exempt.** The tax is added to a base that includes other taxes (such as ISC) but not IVA itself (art. 85).
 
-## Step 1: IVA Rate Structure [T1]
-
-- **Legislation** — Ley 125/91, Article 91 (as amended by Ley 6380/2019).  _(Ley 125/91, Article 91)_
-
-### Standard Rate
-
-**Standard Rate**  _(Ley 125/91, Article 91)_
-
-| Rate | Application |
-| --- | --- |
-| 10% | Standard rate on most taxable supplies of goods and services [T1] |
-
-### Reduced Rate
-
-**Reduced Rate**  _(Ley 125/91, Article 91)_
-
-| Rate | Application |
-| --- | --- |
-| 5% | Agricultural products (unprocessed), pharmaceutical products, certain basic goods, residential rental, interest on loans, sale of real estate [T1] |
-
-### Items at Reduced Rate (5%) [T1]
-
-- **Items at Reduced Rate (5%)** — - Unprocessed agricultural and livestock products (first sale) - Pharmaceutical and medicinal products - Capital goods (machinery, equipment for production) - Residential rental income - Interest and commissions on financial loans - Sale of real estate (first transfer) - Public passenger transportation  _(Ley 125/91, Article 91)_
-
-### Exempt Supplies [T1]
-
-- **Exempt goods and services** — **Exempt goods:** - Fresh fruits and vegetables (in their natural state, sold by producer) - Live animals (sold by producer) - Basic food products: bread, yerba mate, fresh milk, eggs (specific list) - Fuel and petroleum derivatives (subject to specific tax -- ISC) - Books, newspapers, educational materials - Agricultural inputs (certain seeds, fertilizers) **Exempt services:** - Educational services (authorized institutions) - Health/medical services (public institutions, hospitals) - Financial intermediation (deposits, certain banking services) - Residential rental (up to certain value -- but NOTE: rental above threshold is at 5%) [T2] - Public services (water, electricity -- domestic consumption below threshold)  _(Ley 125/91, Article 83)_
-
-### 2a. Determine Transaction Type [T1]
-
-- **Determine Transaction Type** — - Sale (IVA debito -- output) or Purchase (IVA credito -- input) - Salaries, IPS (social security), dividends, loans = OUT OF SCOPE
-
-### 2b. Determine Counterparty Location [T1]
-
-- **Determine Counterparty Location** — - Domestic (Paraguay) - MERCOSUR: Argentina, Brazil, Uruguay - International
-
-### 2c. Determine IVA Rate [T1]
-
-- **Determine IVA Rate** — - 0% (export), 5% (reduced), 10% (standard), or exempt
-
-## Step 3: IVA Return Form Structure (Formulario 120) [T1]
-
-**Filed monthly via Marangatú system.**
-
-### IVA Debito (Output)
-
-**IVA Debito (Output)**
-
-| Line | Description |
-| --- | --- |
-| 1 | Ventas gravadas al 10% |
-| 2 | IVA debito al 10% |
-| 3 | Ventas gravadas al 5% |
-| 4 | IVA debito al 5% |
-| 5 | Exportaciones (0%) |
-| 6 | Ventas exentas |
-| 7 | Total ventas |
-| 8 | Total IVA debito (Line 2 + Line 4) |
-
-### IVA Credito (Input)
-
-**IVA Credito (Input)**
-
-| Line | Description |
-| --- | --- |
-| 9 | IVA en compras al 10% |
-| 10 | IVA en compras al 5% |
-| 11 | IVA en importaciones |
-| 12 | Total IVA credito |
-| 13 | Ajustes |
-| 14 | IVA credito neto |
-
-### Liquidacion
-
-**Liquidacion**
-
-| Line | Description |
-| --- | --- |
-| 15 | IVA a pagar (Line 8 - Line 14) |
-| 16 | Saldo a favor anterior |
-| 17 | Retenciones |
-| 18 | Total a pagar / saldo a favor |
-
-## Step 4: IVA Withholding [T1]
-
-- **Legislation** — Resoluciones SET.  _(Resoluciones SET)_
-
-### Withholding Agents [T1]
-
-**Withholding Agents**  _(Resoluciones SET)_
-
-| Agent Type | Rate |
-| --- | --- |
-| Government entities | 30% of IVA invoiced [T1] |
-| Designated large taxpayers | 30% of IVA [T1] |
-| Exporters | 30% of IVA on local purchases [T1] |
-| Purchasers from occasional taxpayers | 100% of IVA [T1] |
-
-## Step 5: Reverse Charge on Imported Services [T1]
-
-- **Reverse Charge on Imported Services** — When a Paraguay registered person receives services from a non-resident: 1. Self-assess IVA at applicable rate (10% or 5%) [T1] 2. Report as output IVA [T1] 3. Claim as input if for taxable operations [T1] 4. Net = zero for fully taxable businesses [T1]  _(Ley 125/91, Article 82)_
-
-## Step 6: Deductibility Check
-
-### Blocked Input IVA (No Recovery) [T1]
-
-- **Blocked Input IVA categories** — - **Motor vehicles** -- passenger vehicles (exception: rental, taxi, transport) [T1] - **Entertainment** -- meals, recreation (unless hospitality) [T1] - **Personal use** [T1] - **Exempt operations** -- costs attributable to exempt supplies [T1] - **Purchases without valid comprobante (factura, boleta, autofactura)** [T1]  _(Ley 125/91, Article 86)_
-
-### Invoice Requirement [T1]
-
-- **Invoice Requirement** — - Paraguay has implemented SIFEN (Sistema Integrado de Facturacion Electronica) - Electronic documents (DE -- Documento Electronico) required for most taxpayers - Valid timbrado (authorization) required for paper invoices (being phased out) - Input IVA only deductible with valid fiscal document
-
-### Partial Exemption [T2]
-
-- **Recovery %** — Recovery % = (Taxable Sales / Total Sales) * 100
-
-## Step 7: Key Thresholds [T1]
-
-**Key Thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| Mandatory IVA registration | All IRE taxpayers (companies, sole proprietors above threshold) |
-| RESIMPLE | Micro and small enterprises with income up to PYG 80,000,000/year -- simplified regime [T2] |
-| Electronic invoicing (SIFEN) | Mandatory phased rollout |
-
-## Step 8: Filing Deadlines and Penalties [T1]
-
-- **Legislation** — Ley 125/91; Ley 6380/2019; Codigo Tributario.  _(Ley 125/91; Ley 6380/2019; Codigo Tributario)_
-
-### Filing Deadlines [T1]
-
-**Filing Deadlines**
-
-| Last Digit of RUC | Due Date (of following month) |
-| --- | --- |
-| 0 | 7th |
-| 1 | 9th |
-| 2 | 11th |
-| 3 | 13th |
-| 4 | 15th |
-| 5 | 17th |
-| 6 | 19th |
-| 7 | 21st |
-| 8 | 23rd |
-| 9 | 25th |
-
-### Penalties
-
-**Penalties**
-
-| Violation | Penalty |
-| --- | --- |
-| Late filing | Multa (fine) per SET resolution [T1] |
-| Late payment | Interest at rate set by Central Bank + recargo [T1] |
-| Failure to register | Fines + back-assessment [T1] |
-| Failure to issue comprobante | Fines + potential closure [T1] |
-| Fraud | Criminal penalties [T1] |
-
-## Step 9: Classification Matrix [T1]
-
-### Domestic Purchases
-
-**Domestic Purchases**
-
-| Category | IVA Rate | Input Credit | Notes |
-| --- | --- | --- | --- |
-| Office supplies | 10% | Yes |  |
-| Commercial rent | 10% | Yes |  |
-| Residential rent | 5% | Yes (if for business) | Tasa reducida |
-| Electricity (commercial) | 10% | Yes |  |
-| Telephone/internet | 10% | Yes |  |
-| Motor car | 10% | BLOCKED |  |
-| Entertainment | 10% | BLOCKED |  |
-| Professional services | 10% | Yes |  |
-| Agricultural products (first sale) | 5% | Yes |  |
-| Medicines | 5% | Yes | Tasa reducida |
-| Capital goods (machinery) | 5% | Yes | Tasa reducida |
-| Insurance (general) | 10% | Yes |  |
-| Financial interest | 5% | Yes (if for business) |  |
-
-### Sales
-
-**Sales**
-
-| Category | IVA | Return Line |
-| --- | --- | --- |
-| Domestic sale (standard) | 10% | Line 1, Line 2 |
-| Domestic sale (reduced) | 5% | Line 3, Line 4 |
-| Export | 0% | Line 5 |
-| Exempt | Exempt | Line 6 |
-
-## Step 10: Agricultural (IVA Agropecuario) Rules [T2]
-
-- **Agricultural (IVA Agropecuario) Rules** — - Agricultural producers selling unprocessed products: 5% IVA [T1] - Purchasers from small unregistered producers: issue autofactura and self-assess IVA [T1] - Agricultural cooperatives: may have special treatments [T2] - Agricultural inputs: some exempt, some at 5% [T2] - Flag for reviewer: agricultural sector has numerous special provisions  _(Ley 125/91; Ley 6380/2019)_
-
-## Step 11: Maquila Regime [T2]
-
-- **Maquila Regime** — - Maquila companies: special IVA treatment on imports and exports - Inputs imported for maquila processing: may be exempt from IVA - Finished goods exported: zero-rated - Flag for reviewer: maquila benefits require CNIME authorization  _(Ley 1064/97 (Ley de Maquila))_
-
-## Step 11a: SIFEN Electronic Invoicing [T1]
-
-**Legislation:** Decreto 3585/2020; SET Resoluciones.
-
-Paraguay is implementing SIFEN (Sistema Integrado de Facturacion Electronica):
-
-### Types of Electronic Documents (DE)
-
-**Types of Electronic Documents (DE)**  _(Decreto 3585/2020; SET Resoluciones)_
-
-| Document | Code | Use | Supports IVA Credit |
-| --- | --- | --- | --- |
-| Factura Electronica | FE | Standard sales | YES [T1] |
-| Autofactura Electronica | AFE | Purchase from informal sector | YES [T1] |
-| Nota de Credito Electronica | NCE | Returns, corrections | YES (reduces IVA) [T1] |
-| Nota de Debito Electronica | NDE | Additional charges | YES [T1] |
-| Nota de Remision Electronica | NRE | Transport documents | NO [T1] |
-
-### SIFEN Requirements [T1]
-
-- **SIFEN Requirements** — 1. Phased mandatory rollout based on taxpayer size 2. Documents authorized electronically by SET 3. Each DE has a unique CDC (Codigo de Control Digital) 4. XML format with digital signature 5. Paper timbrado still valid for non-SIFEN taxpayers (transitional)  _(Decreto 3585/2020; SET Resoluciones)_
-
-### Timbrado (Paper Authorization) [T1]
-
-- **Timbrado (Paper Authorization)** — For taxpayers not yet on SIFEN: - All invoices must have valid timbrado (authorization number from SET) - Timbrado has a validity period (fecha de inicio / fecha de vencimiento) - Expired timbrado = invalid factura = NO credito fiscal [T1] - Verify timbrado validity on SET website
-
-### Agriculture and Livestock
-
-- **Agriculture and Livestock** — - Paraguay is a major agricultural exporter (soybeans, beef, grains) - First sale of unprocessed agricultural products: IVA at 5% [T1] - Processed agricultural products: IVA at 10% [T1] - Exports of agricultural products: zero-rated [T1] - Autofactura: used when purchasing from small unregistered producers [T1] - Agricultural cooperatives: IVA applies normally, but cooperative structure may affect income tax [T2]
-
-### Real Estate
-
-- **Real Estate** — - First sale of new real estate: IVA at 5% [T1] - Subsequent sales: IVA at 5% [T2] - Commercial rental: IVA at 10% [T1] - Residential rental: IVA at 5% [T1] - Construction services: IVA at 10% [T1] - Land (bare): exempt [T2]
-
-### Financial Services
-
-- **Financial Services** — - Interest on loans: IVA at 5% [T1] - Banking commissions and fees: IVA at 10% [T1] - Insurance premiums (life): exempt [T1] - Insurance premiums (general): IVA at 10% [T1] - Leasing (arrendamiento financiero): IVA at 5% [T1]
-
-### Telecommunications
-
-- **Telecommunications** — - All telecom services: IVA at 10% [T1] - Internet services: IVA at 10% [T1] - Prepaid cards: IVA included [T1]
-
-### Digital Services [T2]
-
-- **Digital Services** — - Digital services from non-residents: subject to IVA at 10% via reverse charge - Streaming, cloud computing, digital advertising: buyer self-assesses - Flag for reviewer: digital taxation rules are evolving
-
-## Step 11c: RESIMPLE Regime [T2]
-
-- **RESIMPLE Regime** — - Micro and small enterprises with annual income up to PYG 80,000,000 - Simplified regime substituting IVA, IRACIS, and other obligations - RESIMPLE taxpayers do NOT charge IVA separately - Buyers CANNOT claim IVA credit on RESIMPLE purchases - Fixed periodic payments based on income bracket  _(Ley 6380/2019)_
-
-## Step 11d: Libro de Compras y Ventas [T1]
-
-- **Libro de Compras y Ventas** — All IVA taxpayers must maintain: - **Libro de Compras**: purchases with factura/DE details, RUC of supplier, date, base (by rate 5%/10%), IVA, total - **Libro de Ventas**: sales with factura/DE details, RUC of customer, date, base (by rate), IVA, total - Electronic submission via Marangatú system (HECHAUKA) - Summary totals reconcile to Formulario 120 - Retention: minimum 5 years
-
-## PROHIBITIONS [T1]
-
-- **PROHIBITIONS** — - NEVER let AI guess IVA classification - NEVER allow input credit on blocked categories - NEVER allow input credit without valid fiscal document (timbrado or SIFEN) - NEVER confuse 10% standard with 5% reduced rate - NEVER apply reverse charge to out-of-scope categories - NEVER confuse zero-rated exports with exempt supplies - NEVER compute any number -- all arithmetic is handled by the deterministic engine
-
-## Step 12: Edge Case Registry
-
-### EC1 -- Agricultural first sale at 5% [T1]
-
-**Situation:** Farmer sells soybeans to processor.
-**Resolution:** First sale of unprocessed agricultural product at 5%. Processor claims input IVA credit at 5%.
-
-### EC2 -- Imported software [T1]
-
-**Situation:** Paraguay company subscribes to US cloud service. No IVA.
-**Resolution:** Self-assess IVA at 10%. Output and input. Net = zero.
-
-### EC3 -- Capital goods purchase at 5% [T1]
-
-**Situation:** Company purchases industrial machinery.
-**Resolution:** Capital goods (machinery, equipment for production) are at reduced rate of 5%. Input IVA at 5% is fully recoverable.
-
-### EC4 -- Credit notes [T1]
-
-**Situation:** Client issues nota de credito.
-**Resolution:** Reduce output IVA. Must be valid fiscal document. Report net.
-
-### EC5 -- Residential rental at 5% [T1]
-
-**Situation:** Company rents apartment for employee housing.
-**Resolution:** Residential rental is at 5% IVA. Input credit available if for business purposes. If personal use, BLOCKED.
-
-### EC6 -- Financial interest received [T1]
-
-**Situation:** Company earns interest on a loan made to another company.
-**Resolution:** Interest on loans is taxable at 5%. Report on Line 3/Line 4.
-
-### EC7 -- Autofactura for informal purchases [T1]
-
-**Situation:** Business purchases agricultural products from unregistered farmer.
-**Resolution:** Issue autofactura. Self-assess IVA at 5%. Input credit available. Withhold and remit IVA on behalf of seller.
-
-### EC8 -- MERCOSUR import [T1]
-
-**Situation:** Company imports goods from Brazil.
-**Resolution:** IVA paid at customs on CIF + duties at 10%. Input credit available. No special MERCOSUR IVA treatment -- each country applies own IVA.
-
-## Step 13: Test Suite
-
-### Test 1 -- Standard local purchase, 10%
-
-**Input:** PY supplier, office supplies, gross PYG 11,000,000, IVA PYG 1,000,000, net PYG 10,000,000. Valid SIFEN document.
-**Expected output:** Line 9 = PYG 1,000,000 input IVA. Full recovery.
-
-### Test 2 -- Export, zero-rated
-
-**Input:** Exporter ships soybeans to Argentina, net PYG 500,000,000.
-**Expected output:** Line 5 = PYG 500,000,000. No output IVA. Input IVA fully recoverable.
-
-### Test 3 -- Motor vehicle, blocked
-
-**Input:** Purchase sedan PYG 150,000,000, IVA PYG 15,000,000.
-**Expected output:** IVA PYG 15,000,000 BLOCKED. No input credit.
-
-### Test 4 -- Agricultural sale at 5%
-
-**Input:** Farmer sells cattle PYG 50,000,000 (PYG 47,619,048 + IVA PYG 2,380,952 at 5%).
-**Expected output:** Line 3 = PYG 47,619,048. Line 4 = PYG 2,380,952.
-
-### Test 5 -- Capital goods at 5%
-
-**Input:** Industrial machinery PYG 100,000,000 + IVA PYG 5,000,000 (5%).
-**Expected output:** Line 10 = PYG 5,000,000 input IVA at reduced rate. Full recovery.
-
-### Test 6 -- Imported services, reverse charge
-
-**Input:** US consulting, USD 5,000 (~ PYG 37,000,000). No IVA.
-**Expected output:** Self-assess output IVA = PYG 3,700,000 (10%). Input = PYG 3,700,000. Net = zero.
-
-### Test 7 -- Exempt supply (education)
-
-**Input:** School earns PYG 20,000,000 from tuition.
-**Expected output:** Line 6 = PYG 20,000,000. No output IVA. Input IVA NOT recoverable.
-
-### Test 8 -- Entertainment, blocked
-
-**Input:** Client dinner PYG 1,100,000 inclusive of IVA PYG 100,000.
-**Expected output:** IVA PYG 100,000 BLOCKED. No input credit.
-
-## Contribution Notes
-
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
-
-## Appendix A: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed CPA must confirm before filing.
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| General rate, all other cases (art. 90(g)) | 10% | 2026 | https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional |
+| Letting of property used **exclusively** as a home, including use and usufruct (art. 90(a)) | 5%; commercial lettings at 10% | 2026 | same |
+| Sale of real estate (art. 90(b)) on a base of 30% of the price or of each monthly instalment (art. 85(3)) | 5% of 30%: 1.5% of the price | 2026 | same |
+| Basic basket: rice, pasta, vegetable oil, yerba mate, milk, eggs, flour, iodised salt (art. 90(c); detail in Decreto 3107 art. 23) | 5% on sale and import | 2026 | same |
+| Listed agricultural, horticultural and fruit products, including soya, maize, wheat, cotton and their primary derivatives (flours, crude oils, expellers, pellets) (art. 90(d)) | 5% on sale and import | 2026 | same |
+| Live cattle, horses, goats, buffalo, sheep, fish, poultry, pigs, rabbits and primary derivatives (meat, offal, wool, hides, horns, bones) unaltered except to preserve them (art. 90(e)); seafood at 10% (Decreto 3107 art. 24) | 5% | 2026 | same |
+| Medicines for human use registered with the Ministry of Health, and prescribed magistral formulations (art. 90(f); Decreto 3107 art. 25) | 5% | 2026 | same |
+| Casual importer (art. 85(7)) | Customs base increased by 30%; IVA paid is final | 2026 | same |
+| Movables used in a professional's personal services, when sold (art. 85(9)) | Base of 30% of the sale value | 2026 | same |
+| IVA credit for a professional on buying a car (art. 88) | Up to 30% of the IVA on the car | 2026 | same |
+| Exporter refund ceiling (art. 101) | Not above 10% of the export customs value; any excess goes to later claims | 2026 | same |
+| Public passenger transport: national urban, metropolitan, short, medium and long distance (art. 100(3)(h) as replaced by Ley 7067/2023) | Exempt | 2026 | https://www.dnit.gov.py/documents/20123/277628/LEY+N%C2%B0+7067+-+35322+-+2023+-+REF.+QUE+MODIFICA+ART+100+DE+LEY+6380-2019.pdf/7015a0a7-8481-091d-3bd2-4e063894f283 |
+| Withholding on IVA, ceiling from the fourth year of the law (Ley 6380 art. 136) | Not above 10% of the IVA on the invoice; the progressive cut is suspended for 2026 (Ley 7609/2025 art. 266) | 2026 | https://www.mef.gov.py/sites/default/files/2026-01/LEY_7609_PGN_2026_OCR.pdf |
+| Withholding by public bodies on suppliers (Decreto 3107 art. 36) | 30% of the IVA; 100% on court-set fees and, as a final payment, on unregistered non-professional individuals who opt for it | 2026 | https://www.dnit.gov.py/documents/47797/47809/Decreto+N%C2%B0+3107-19.pdf/d723b322-e502-e34b-18bc-3df7bfd0f785 |
+| Withholding by registered exporters on local suppliers (Decreto 3107 art. 37) | 70% of the IVA at 10%; 30% on goods at 5%; 10% on art. 90(d)(1) farm products | 2026 | same |
+| Withholding by designated agents (Decreto 3107 art. 38) | 30% of the IVA; 10% on art. 90(d)(1) farm products | 2026 | same |
+| Withholding by card processors (Decreto 3107 art. 39) | 0.90909% of total transactions | 2026 | same |
+| Withholding on payments to non-residents without a branch, by IRE General payers and public bodies (Decreto 3107 art. 41) | 100% of the IVA, final for the non-resident; if the price includes IVA, divide by 11 (10%) or 21 (5%) | 2026 | same |
+| Perception on digital services from abroad paid by card or transfer (Decreto 3107 art. 31) | 100% of 10% of the price, added on top; final for the foreign provider | 2026 | same |
+| Withholding by property managers on rent for unregistered individual owners (Decreto 3107 art. 42) | 100% of the IVA, final | 2026 | same |
+| No withholding below (Decreto 3107 art. 44) | Purchases in the month under 10 daily minimum wages, before IVA | 2026 | same |
+| Proration period for common input IVA (Decreto 3107 art. 18) | Taxed income over total income of the last 6 months, including the current month | 2026 | same |
+| Bad debts (Decreto 3107 art. 17) | Output IVA recoverable after 36 months unpaid, or on bankruptcy, a general inhibition or a court-approved composition | 2026 | same |
+
+The rates in Decreto 3107 arts. 36 to 41 are those of the 2019 text; later decrees on the DNIT list that amend Decreto 3107 (3322, 3477, 3529, 3667, 3739, 3881 and 3967 of 2020) were not read, and art. 136 caps withholding at 10% of the IVA "from the fourth year". Confirm the percentage in force with the withholding agent's certificate.
+
+## The base
+
+**When the tax arises** (art. 83): the first of delivery, payment (full or partial) or the due date for a service. Utilities and telecoms: the payment due date. Imports: when the customs declaration is numbered. Services from abroad: payment or the due date, whichever is first. Loans: payment or the instalment due date of the interest and charges. Private use: when the goods are taken. Continuing services are monthly; building works at each payment or progress certificate; leasing at each instalment (Decreto 3107 art. 4). The invoice must be issued at the same time.
+
+**The base** (art. 85): the accrued price with everything charged to the buyer, including interest and surcharges and other taxes, less returns and market discounts shown on the invoice. Special bases: interest and charges (not capital) on loans; the monthly rent; 30% of the price for real estate; cost for private use and free supplies; customs value plus duties and taxes before release for imports (plus 30% for a casual importer). Foreign-currency prices convert at the BCP buying or selling rate at the close of the previous day (Decreto 3107 art. 13). A barter is two sales (Decreto 3107 art. 9).
+
+**Exempt** (art. 100, kept in force for 2026 by Ley 7609 art. 244(n)): sales of foreign currency, securities, shares and quotas; assignment of receivables; books, newspapers and educational magazines; laptops for free school programmes; goods donated to recognised education and sports bodies; games of chance; petroleum fuels and biofuels; business reorganisations; contributions in kind to capital; **exports of goods** (keep the documents, or the sale is deemed domestic); interest on securities; derivatives; international freight for exports; bank, finance and cooperative deposits; education by recognised institutions and teaching for them; public passenger transport (Ley 7067/2023); travellers' baggage and diplomatic imports; non-profit and religious bodies on their non-business activities (the exemption does not cover the listed business activities, such as restaurants, transport, lending and letting); supplies to recognised education bodies of lab, classroom, library and IT equipment (with a Ministry release); and transactions of cooperatives with each other and their members.
+
+**IVA credit** (arts. 88 and 89): IVA on local purchases in the month, IVA paid at customs, and IVA withheld or perceived on payments to non-residents. To deduct it the purchase must serve taxed operations directly or in part, be a real outlay, and be supported by a document naming the buyer and its RUC with a precise description; the buyer must check that the supplier's timbrado is valid (Decreto 3107 art. 22). Common inputs that serve taxed, untaxed and exempt operations are prorated by taxed income over total income of the last six months (art. 88; Decreto 3107 art. 18); the non-creditable part becomes a cost for the IRE or IRP (art. 91). Goods destroyed or stolen: the credit is reversed. In a reorganisation, the credit passes to the successor in proportion to net worth transferred.
+
+**Professionals' restricted credit** (Decreto 3107 art. 19 as replaced by Decreto 8175/2022, as summarised in the [DNIT IVA guide](https://www.dnit.gov.py/documents/20123/224724/IVA+Cartilla+6.08.24.pdf/c23f9d9f-8747-815f-28c2-4d0c1fa9e6d6)): an individual providing personal or professional services deducts IVA credit only on personal health (including medicines and prepaid medicine for their share); food and non-alcoholic drinks (up to 30% of that IVA); training related to the service; utilities and telecoms used only for the service; office rent and upkeep; office supplies, furniture, professional equipment and tools; work clothing; spare parts, lubricants, maintenance, repairs and insurance of a car used only for the service; and subcontracted professional services for the service. A car purchase gives up to 30% of its IVA (law art. 88).
+
+**Excess credit** (art. 88; Decreto 3107 art. 20): an excess of credit over debit carries forward as the "saldo técnico" with no refund, except for exporters. A taxpayer may waive the balance to the DNIT (it then becomes a non-deductible cost for income tax, art. 91). No refund on ceasing activity.
+
+**Exporters** (arts. 101 to 103): IVA credit on goods and services linked to exports is set first against domestic IVA debit, then refunded or carried forward. Exports of farm products in their natural state and first-processing derivatives get no refund of the IVA on buying those goods, but do for other inputs. Claims run month by month in order, from the month after the return's due date, within the limitation period, with the exporter's authorisation to its banks to report to the DNIT. The DNIT refunds within 90 working days of accepting the claim and credits the RUC current account; an accelerated refund against a bank guarantee is available (art. 102). An export is declared in the month of the "cumplido de embarque" (Decreto 3107 arts. 27 and 30).
+
+**Digital services and services from abroad.** A Paraguayan bank, card processor, exchange house, cooperative, payment processor or phone company that pays a foreign digital provider (streaming, apps, platforms) on the customer's card or transfer perceives 10% on top; for an IVA-taxpayer customer using it for taxed activity, the perception shown on the card statement is IVA credit in that month (Decreto 3107 arts. 31 and 33; [Resolución General 76/2020](https://www.dnit.gov.py/documents/20123/221869/RESOLUCION+GENERAL+N%C2%B0+76_2020_SERVICIOS+DIGITALES.pdf/8025edb7-e1cd-0f8e-7267-5ade0fa98e0e) arts. 3 and 4). Other services from a non-resident without a branch are subject to 100% withholding by an IRE General payer or public body (Decreto 3107 art. 41); the withheld IVA is the payer's credit (art. 88(3)). A resident that buys digital services abroad to resell them withholds IVA and INR itself (RG 76/2020 art. 6).
+
+## Deadlines and filing
+
+1. **Register** in the RUC with the IVA obligation (obligation 211, IVA General) before invoicing ([DNIT, IVA page](https://www.dnit.gov.py/web/portal-institucional/iva)).
+2. **Issue and demand documents.** Every sale, exempt or not, needs a sales document with the buyer's name and RUC or ID (art. 92). Documents are pre-printed with a timbrado, virtual or electronic (e-Kuatia). Goods in transit travel with a remission note or invoice (art. 94). Prices are advertised IVA included (art. 93).
+3. **Register purchases and sales in Marangatu** ("Registro de Comprobantes", RG 90/2021) through the month, by hand or by import ([DNIT IVA guide](https://www.dnit.gov.py/documents/20123/224724/IVA+Cartilla+6.08.24.pdf/c23f9d9f-8747-815f-28c2-4d0c1fa9e6d6)).
+4. **File Form 120 "IVA, Versión 4" every month**, even with no operations (Decreto 3107 art. 30), including exempt operations and exports, with the Exporter Annex where relevant. Shares sold above par, foreign-currency trading margins and derivatives are reported even though exempt (art. 96).
+5. **Due day**: the month after the period, on the day set by the last digit of the RUC, ignoring the check digit: 0 = 7th, 1 = 9th, 2 = 11th, 3 = 13th, 4 = 15th, 5 = 17th, 6 = 19th, 7 = 21st, 8 = 23rd, 9 = 25th; a non-working day moves it to the next working day. The purchases and sales book informative return follows the informative calendar (0 = 8th through 9 = 26th) ([DNIT, deadlines under Ley 6380](https://www.dnit.gov.py/web/portal-institucional/w/vencimiento-ley-n-6380/19)).
+6. **Compute**: IVA debit (output on the month's taxed operations, less IVA on returns, discounts and bad debts) less IVA credit (art. 86), less the saldo técnico brought forward, less IVA withheld from the taxpayer in the month (withholdings above the tax due carry forward until used, Decreto 3107 art. 47). Pay the result through the DNIT channels.
+7. **Withholding agents** issue withholding certificates through Tesakã, confirm the DNIT's pro-forma settlement on Form 122 within the first six calendar days of the month, and pay by the 7th; if they do not confirm, the DNIT treats it as accepted (DNIT IVA guide).
+8. **Imports**: IVA is paid at customs before release (art. 98). Customs also perceives 30% (imports) or 100% (exports) of the IVA on customs brokers' fees (Decreto 3107 art. 32).
+
+## Penalties and interest
+
+From Ley N° 125/1991, Libro V, in the DNIT copy of the 1991 text ([Ley 125/91, arts. 170 to 179](https://www.dnit.gov.py/documents/47797/47809/P+-+Ley+N%C2%BA+125-91.pdf/63cf3ff2-2b45-5920-cfc0-e562ff41ced9)):
+
+- **Late payment (mora, art. 171).** 4% of the unpaid tax if up to one month late, rising by 2 points a month to 14% at five months or more, plus a monthly surcharge or interest day by day at the rate the Executive fixes every four months. A return filed on time but paid late carries only the mora charges (DNIT deadlines page).
+- **Late return (contravención, art. 176).** **G 50,000** for a determinative return filed late, and **G 100,000** for a late informative return such as the purchases and sales book (Resolución General 13/2019, Anexo, items 4.a and 4.b, [DNIT page](https://www.dnit.gov.py/web/portal-institucional/w/resolucion-general-n-13-19-anexo)).
+- **Underpayment (omisión de pago, art. 177).** Up to 50% of the tax omitted.
+- **Fraud (defraudación, arts. 172 to 175).** One to three times the tax evaded. Not issuing invoices, and a withholding agent paying over withheld IVA more than 30 days late, are presumed fraud (art. 174). Goods moving without a remission note can be seized (Ley 6380 art. 94).
+- **Refund delays** by the DNIT carry interest at the late-payment rate (art. 103).
+
+## Cross-border points
+
+- **Exports** of goods are exempt with refund of linked input IVA (arts. 100(2) and 101); services are not "exports" in the law, so a service used in Paraguay is taxed even if the provider is abroad (art. 84(1)), and a service performed in Paraguay is taxed even for a foreign client.
+- **Imports** are taxed at customs; casual importers pay on a base increased by 30%, as a final payment (art. 85(7)).
+- **Non-resident providers**: withholding of 100% of the IVA by the Paraguayan payer, and INR on top (see [paraguay-corporate-income-tax](paraguay-corporate-income-tax.md)); digital services by perception through the payment channel.
+- **Real estate and registrable goods of non-residents**: the notary withholds 100% of the IVA on the sale (Decreto 3107 art. 41).
+
+## Worked examples
+
+### Example 1: monthly Form 120 for a trading company
+
+Ferretería Sur S.R.L. (an IRE General payer) has these figures for March 2026, all supported by valid documents:
+
+- Sales of hardware at 10%: G 110,000,000 including IVA (base 100,000,000, IVA 10,000,000).
+- Sales of rice at 5%: G 21,000,000 including IVA (base 20,000,000, IVA 1,000,000).
+- Purchases for the business: IVA at 10% of G 6,000,000 and at 5% of G 500,000; IVA paid at customs G 1,200,000; IVA perceived on a cloud subscription G 100,000.
+- Saldo técnico from February: G 400,000. IVA withheld by a customer that is a designated agent: G 900,000.
+
+IVA debit is 10,000,000 plus 1,000,000 = G 11,000,000. IVA credit is 6,000,000 plus 500,000 plus 1,200,000 plus 100,000 = G 7,800,000. Net G 3,200,000, less the G 400,000 saldo técnico, G 2,800,000, less the G 900,000 withheld: **G 1,900,000** to pay by the RUC-digit day in April 2026.
+
+```oa-check
+name: Trading company, Form 120, March 2026
+inputs:
+  sales_10_gross: 110000000
+  sales_5_gross: 21000000
+  credit_10: 6000000
+  credit_5: 500000
+  credit_customs: 1200000
+  credit_digital: 100000
+  saldo_tecnico: 400000
+  withheld: 900000
+steps:
+  - base_10: sales_10_gross / 1.10
+  - base_5: sales_5_gross / 1.05
+  - debit: base_10 * 0.10 + base_5 * 0.05
+  - credit: credit_10 + credit_5 + credit_customs + credit_digital
+  - net: debit - credit
+  - after_saldo: net - saldo_tecnico
+  - payable: max(0, after_saldo - withheld)
+expected:
+  base_10: 100000000
+  base_5: 20000000
+  debit: 11000000
+  credit: 7800000
+  net: 3200000
+  after_saldo: 2800000
+  payable: 1900000
 ```
 
-When a [T3] situation is identified, output:
+### Example 2: mixed activities, a foreign consultant and a property sale (includes a decision)
 
+Instituto Delta S.A. runs recognised courses (exempt) and a taxed consultancy. Over October 2025 to March 2026 its taxed income was G 600,000,000 and its total income G 1,000,000,000. In March 2026:
+
+- **Proration.** Common inputs (rent, power, IT) carry IVA of G 10,000,000. Creditable: 60% = G 6,000,000; the other G 4,000,000 is an IRE cost (art. 91).
+- **Foreign consultant, the pricing decision.** It hires a consultant abroad, with no branch in Paraguay, for G 55,000,000. If the contract is silent, IVA is not in the price: Delta withholds and pays 10% on top, G 5,500,000, so the deal costs G 60,500,000 and the consultant gets G 55,000,000. If the contract says the price includes IVA, IVA is 55,000,000 / 11 = G 5,000,000 and the consultant gets G 50,000,000. The withheld IVA is Delta's credit (art. 88(3)), but here only in the 60% proportion if the service serves both activities: G 3,300,000 or G 3,000,000. The figure that decides it is who bears the IVA; write it into the contract.
+- **Property sale.** It sells an office for G 1,000,000,000. IVA at 5% on a base of 30%: G 15,000,000, an effective 1.5%.
+
+```oa-check
+name: Mixed activities, proration, foreign consultant both ways, property sale, 2026
+inputs:
+  taxed_income_6m: 600000000
+  total_income_6m: 1000000000
+  common_iva: 10000000
+  consultant_price: 55000000
+  property_price: 1000000000
+steps:
+  - proration: taxed_income_6m / total_income_6m
+  - common_credit: common_iva * proration
+  - common_cost: common_iva - common_credit
+  - iva_on_top: consultant_price * 0.10
+  - cost_on_top: consultant_price + iva_on_top
+  - iva_inside: consultant_price / 11
+  - consultant_net_inside: consultant_price - iva_inside
+  - credit_on_top: iva_on_top * proration
+  - credit_inside: iva_inside * proration
+  - property_iva: property_price * 0.30 * 0.05
+expected:
+  proration: 0.60
+  common_credit: 6000000
+  common_cost: 4000000
+  iva_on_top: 5500000
+  cost_on_top: 60500000
+  iva_inside: 5000000
+  consultant_net_inside: 50000000
+  credit_on_top: 3300000
+  credit_inside: 3000000
+  property_iva: 15000000
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed CPA. Document gap.
-```
 
-### Self-Supply (Autoconsumo) [T1]
+## Ask the client first
 
-- **Self-Supply (Autoconsumo)** — - Withdrawal of goods for personal use: taxable event at applicable rate (10% or 5%) [T1] - Report as output IVA [T1]
+1. Who is the taxpayer: company, sole-owner business (which IRE regime; RESIMPLE is outside IVA), or an individual professional or landlord (restricted credit list)?
+2. What does it sell, and is each line at 10%, 5% or exempt (the 5% lists are closed lists)? Any residential versus commercial lettings, real estate sales, exports?
+3. Does it have exempt or untaxed income? Then the six-month proration applies.
+4. Is it a withholding agent (public body, exporter, designated agent, card processor), and what was withheld from it in the month?
+5. Any payments to non-residents or digital services from abroad, and does the contract say whether IVA is included?
+6. The last digit of the RUC, the saldo técnico brought forward, and whether it is in the Exporters Register.
 
-### Installment Sales [T1]
+## Sources
 
-- **Installment Sales** — - IVA due at time of delivery, not at payment [T1] - Full IVA reported in the delivery period [T1]
+| Source | URL | Read on |
+|---|---|---|
+| Ley N° 6380/2019, BACN text: Libro II Título I arts. 80 to 106 (IVA), arts. 27, 136 | https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional | 2026-11-11 |
+| Ley N° 7067/2023 (DNIT copy, scanned, read by OCR): new art. 100 numeral 3(h), national public passenger transport | https://www.dnit.gov.py/documents/20123/277628/LEY+N%C2%B0+7067+-+35322+-+2023+-+REF.+QUE+MODIFICA+ART+100+DE+LEY+6380-2019.pdf/7015a0a7-8481-091d-3bd2-4e063894f283 | 2026-11-11 |
+| Ley N° 7609/2025, Presupuesto General de la Nación 2026 (MEF copy): arts. 244 (exemptions suspended, Ley 6380 excepted) and 266 (IVA withholding cut suspended) | https://www.mef.gov.py/sites/default/files/2026-01/LEY_7609_PGN_2026_OCR.pdf | 2026-11-11 |
+| Decreto N° 3107/2019 (IVA regulation), DNIT copy, scanned, read by OCR: Anexo arts. 3, 4, 7 to 25, 27, 30 to 47 | https://www.dnit.gov.py/documents/47797/47809/Decreto+N%C2%B0+3107-19.pdf/d723b322-e502-e34b-18bc-3df7bfd0f785 | 2026-11-11 |
+| DNIT, IVA guide (V 08/24), read for the Decreto 8175/2022 credit list for professionals, Form 120 v4 and obligation 211, Form 122, withholding exceptions | https://www.dnit.gov.py/documents/20123/224724/IVA+Cartilla+6.08.24.pdf/c23f9d9f-8747-815f-28c2-4d0c1fa9e6d6 | 2026-11-11 |
+| DNIT, IVA page, read for the obligation and regimes | https://www.dnit.gov.py/web/portal-institucional/iva | 2026-11-11 |
+| Resolución General 76/2020 (digital services), DNIT copy: arts. 2 to 6 | https://www.dnit.gov.py/documents/20123/221869/RESOLUCION+GENERAL+N%C2%B0+76_2020_SERVICIOS+DIGITALES.pdf/8025edb7-e1cd-0f8e-7267-5ade0fa98e0e | 2026-11-11 |
+| DNIT, deadlines under Ley 6380 (RG 38/2020), read for the RUC-digit calendar and informative returns | https://www.dnit.gov.py/web/portal-institucional/w/vencimiento-ley-n-6380/19 | 2026-11-11 |
+| Ley N° 125/1991, DNIT copy of the 1991 text (scanned; arts. 170 to 179 read by OCR) | https://www.dnit.gov.py/documents/47797/47809/P+-+Ley+N%C2%BA+125-91.pdf/63cf3ff2-2b45-5920-cfc0-e562ff41ced9 | 2026-11-11 |
+| Resolución General 13/2019, Anexo, DNIT page: items 4.a and 4.b | https://www.dnit.gov.py/web/portal-institucional/w/resolucion-general-n-13-19-anexo | 2026-11-11 |
+| DNIT, list of tax laws, read for amendments to Ley 6380 (Ley 7067/2023; Leyes 7547 and 7548 of 2025) | https://www.dnit.gov.py/web/portal-institucional/leyes | 2026-11-11 |
 
-### ISC (Impuesto Selectivo al Consumo) Interaction [T1]
-
-- **ISC Interaction** — - ISC applies to specific goods (fuel, alcohol, tobacco, vehicles, soft drinks) - ISC is separate from IVA - IVA base INCLUDES ISC amount [T1]
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the IVA withholding percentages in force in 2026 (Decreto 3107 arts. 36 to 41 are the 2019 text; the 2020 amending decrees 3322, 3477, 3529, 3667, 3739, 3881 and 3967 were not read; art. 136 caps withholding at 10% of the IVA from the fourth year); the full text of Decreto 8175/2022 (read through the DNIT guide; the scanned decree is only partly legible); the Form 120 v4 box numbers (the earlier skill's line numbers 1 to 18 are not from a DNIT source); the SIFEN/e-Kuatia document types and the rollout schedule; whether a purchase from a non-taxpayer documented by autofactura gives any IVA credit (the earlier skill said yes at 5%; the law gives credit only for IVA included in the document); the current mora surcharge rate; whether later laws changed Ley 125 arts. 171 to 177; the value of the daily minimum wage used for the withholding floor.

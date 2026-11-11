@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/selling-a-company-in-malta"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
 ---
 
-# Selling a company in Malta v1.2
+# Selling a company in Malta v1.3
 
 **4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/selling-a-company-in-malta.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
@@ -33,7 +33,7 @@ This skill covers the sale, by an individual or a company, of shares in a Maltes
 5. Compute the seller's **income tax position** on the gain, using `mt-capital-gains` (or confirm the exemption that applies, in writing).
 6. Pay the seller's **provisional tax** within 15 days of the transfer (7%; see filing mechanics), or file the prescribed form claiming that the transfer is not taxable.
 7. Notify the **Commissioner** (MTCA Property Tax Directorate) and get evidence of notification.
-8. File **Form T** with the Malta Business Registry within 14 days, with due diligence documents and, if beneficial ownership changes, form BO2.
+8. File **Form T** with the Malta Business Registry within 14 days after the transfer is registered with the company ([Cap. 386 art. 120(3)](https://legislation.mt/eli/cap/386/eng/pdf)), with due diligence documents and, if beneficial ownership changes, form BO2.
 
 Never start with the seller's gain. The price on the term sheet is not the base for duty or tax if the market value is higher, and a property in the company changes the duty rate.
 
@@ -64,7 +64,7 @@ Duty is due on the higher of the price and the market value of the shares, and t
 - **Duty on the price only.** Duty is on the higher of price and market value.
 - **No site plan.** Since LN 156/2026 and LN 158/2026, a share transfer in a company holding immovable property needs a Land Registry site plan wherever an architect's valuation is required.
 - **Filing Form T before notifying the Commissioner.** The Registrar will not register a share transfer without evidence that it was notified to the Commissioner under the Duty on Documents and Transfers Act.
-- **Missing the 14-day window.** Form T is due within 14 days of the transfer (one month for a transmission on death). Late filing brings penalties on company officers, plus daily penalties while the default continues.
+- **Missing the 14-day window.** Form T is due within 14 days after the transfer is registered with the company (one month after a transmission on death is registered; 90 days for listed public companies) ([Cap. 386 art. 120(3)](https://legislation.mt/eli/cap/386/eng/pdf)). Late filing brings penalties on company officers, plus daily penalties while the default continues.
 - **Forgetting provisional tax.** The seller remits provisional tax within 15 days of the transfer: 7% of the consideration, or 7% of the higher of market value and consideration where a controlling interest is transferred; for shares in a property company the prescribed amount, up to 35%. Where the gain is not taxable, the seller files the prescribed form instead. Provisional tax is not due on shares in public companies.
 - **Forgetting the seller's return.** A taxable gain on shares is reported in the seller's income tax return, with form RA2 or a capital gains computation attached.
 
@@ -78,7 +78,7 @@ If the company is stripped of cash or property before the sale, if new shares ar
 
 ### [method:filing_mechanics] How submission works
 
-The share transfer documents and the market value working are submitted to the Property Tax Directorate of the MTCA, which vets them and receipts the notification. Form T (transfer of shares) is then filed with the Malta Business Registry within 14 days, with the evidence of notification, due diligence documents and, if applicable, form BO2. From 1 December 2025, Form T for exempt share transfers with a valid article 47 determination, and for transactions exempt from a capital gains schedule, goes through a single point of online submission on BAROS. The duty-paying sale for money that this skill covers stays on the existing MTCA and MBR procedure; BAROS submission does not apply to it. Within 15 days of the transfer the seller remits provisional tax to the MTCA (Income Tax Management Act art. 43(1)(b)), which is credited against the tax on the gain. The seller reports a taxable gain in their income tax return; for an individual the return and payment are due by 30 June of the year after the sale, with interest of 0.6% a month on tax unpaid after that date.
+The share transfer documents and the market value working are submitted to the Property Tax Directorate of the MTCA, which vets them and receipts the notification. Form T (transfer of shares) is then filed with the Malta Business Registry within 14 days after the transfer is registered with the company ([Cap. 386 art. 120(3)](https://legislation.mt/eli/cap/386/eng/pdf)), with the evidence of notification, due diligence documents and, if applicable, form BO2. From 1 December 2025, Form T for exempt share transfers with a valid article 47 determination, and for transactions exempt from a capital gains schedule, goes through a single point of online submission on BAROS. The duty-paying sale for money that this skill covers stays on the existing MTCA and MBR procedure; BAROS submission does not apply to it. Within 15 days of the transfer the seller remits provisional tax to the MTCA (Income Tax Management Act art. 43(1)(b)), which is credited against the tax on the gain. The seller reports a taxable gain in their income tax return; for an individual the return and payment are due by 30 June of the year after the sale, with interest of 0.6% a month on tax unpaid after that date.
 
 ### [method:handback_protocol] Working paper contents
 
@@ -94,7 +94,7 @@ The market value working, the duty computation, the property valuation and site 
 | provisional_tax | (none) | Within 15 days of the transfer: 7% of the consideration; 7% of the higher of market value and consideration on a transfer of a controlling interest; prescribed amount up to 35% for property-company shares; not payable where the prescribed form shows no tax, or on public company shares | Income Tax Management Act art. 43(1)(b), 43(2) |
 | market_value | (none) | Market value of the shares worked out by an accountant under the Capital Gains Rules; vetted by the Property Tax Directorate | MTCA Share Transfers FAQ; MTCA Share Transfers |
 | site_plan_2026 | (none) | Land Registry site plan, signed and stamped by a Perit, to accompany the Perit's valuation of the company's immovable property in the share valuation | LN 156/2026 (Capital Gains Rules r. 5(10), 5A(5)); LN 158/2026 (S.L. 364.06 r. 11(3), 12(5)) |
-| form_t | (none) | Notice to the Registrar within 14 days (transmissions 1 month; listed public companies 90 days); evidence of notification to the Commissioner; due diligence documents; BO2 if applicable | MBR Change in Company Details |
+| form_t | (none) | Notice to the Registrar within 14 days after the transfer is registered with the company (transmissions 1 month; listed public companies 90 days); evidence of notification to the Commissioner; due diligence documents; BO2 if applicable | Companies Act art. 120(3); MBR Change in Company Details |
 | baros | (none) | From 1 December 2025, single point of online submission on BAROS for Form T only on exempt transfers with an article 47 determination and transactions exempt from a capital gains schedule; transfers paying duty or capital gains tax stay on the existing procedure | MBR notice, 28 November 2025 |
 | return | (none) | Taxable gains on securities reported in the individual's return with form RA2 or a computation; return and payment by 30 June; 0.6% a month interest after | MTCA tax return booklet 2026; MTCA Tax Return Cycle |
 
@@ -171,7 +171,7 @@ Not yet confirmed:
 - Income tax treatment of the gain under articles 5 and 12 of the Income Tax Act was not re-read; see `mt-capital-gains`.
 - The amount prescribed for provisional tax on property-company shares (capped at 35% by the Act) was not looked up.
 - The deadline for notifying the Commissioner of a share transfer, and the late-notification duty penalty.
-- Budget 2027 is presented on 26 October 2026; nothing from it is reflected here.
+- Budget 2027 was presented on 26 October 2026. Nothing from it is reflected here.
 
 ## Sources
 
@@ -179,6 +179,7 @@ Not yet confirmed:
 |---|---|---|---|
 | Cap372 art43 | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | Cap364 art42(1) | https://legislation.mt/eli/cap/364/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap386 art120(3) | https://legislation.mt/eli/cap/386/eng/pdf | 2026-11-08 | Form T date: 14 days after the transfer is registered with the company |
 
 Prior source-read dates remain historical; this list does not refresh unrelated claims.
 
@@ -186,4 +187,4 @@ Not yet confirmed: all scopes held in the 4 November correction ledger and the e
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `selling-a-company-in-malta` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/selling-a-company-in-malta. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `selling-a-company-in-malta` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/selling-a-company-in-malta. If neither is available, confirm every figure against the official source pages cited above before relying on it.

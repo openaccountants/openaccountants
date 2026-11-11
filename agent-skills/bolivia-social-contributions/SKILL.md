@@ -1,552 +1,216 @@
 ---
 name: bolivia-social-contributions
-description: "Use this skill whenever asked about Bolivia social-security (seguridad social) contributions and dependent-employee payroll taxation for the 2025 tax year. Trigger on phrases like \"how much do I pay to the Gestora\", \"aportes AFP Bolivia\", \"12.71% worker contribution\", \"aporte solidario\", \"Aporte Nacional Solidario\", \"ANS calculation\", \"Caja de Salud employer contribution\", \"Pro-Vivienda housing fund\", \"RC-IVA withholding\", \"Form 110 invoices\", \"Form 608\", \"total ganado contributions\", \"Bolivia payroll cost\", \"Gestora Pública contribution\", or any question about Bolivian employer/employee social-security obligations. Also trigger when classifying bank statement transactions that relate to Gestora Pública, Caja de Salud (CNS), APS, or SIN/SIAT payments from Bolivian banks (Banco Unión, BNB, Banco Mercantil Santa Cruz, Banco BISA, Banco de Crédito BCP). Also trigger when preparing or reconciling RC-IVA (personal income tax) where social-contribution deductibility is relevant. This skill c"
+description: "Bolivia social-security contributions for employees and employers in 2026: the long-term pension system (Sistema Integral de Pensiones, Ley 065 de Pensiones as amended by Ley 1582) collected by the Gestora Pública, and the short-term health insurance paid to the Caja Nacional de Salud or another health fund. Covers the employee's 12.71% (10% monthly contribution, 1.71% common-risk premium, 0.5% solidarity contribution, 0.5% commission), the Aporte Nacional Solidario of 1.15%, 5.74% and 11.48% above Bs 13,000, Bs 25,000 and Bs 35,000, the employer's 10% health contribution, 1.71% professional-risk premium, 2% housing contribution and 3.5% employer solidarity contribution, the 2.3% mining solidarity contribution, the total ganado base, the 2026 minimum wage of Bs 3,300, the Gestora payment deadline, foreign employees, late-payment rules and bank-statement patterns. Trigger on: aportes Gestora, aporte laboral 12.71%, aporte patronal, Aporte Nacional Solidario, ANS, Caja Nacional de Salud "
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/bolivia-social-contributions"
   jurisdiction: "BO"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-11"
 ---
 
-# Bolivia Social Security Contributions & RC-IVA — Dependent Employment
+# Bolivia social-security contributions for 2026: Gestora pensions, health fund, housing and solidarity v0.2
 
-## Bolivia Social Security Contributions & RC-IVA — Dependent Employment Skill v0.1
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Tier 2 (research-verified) skill.** Figures below are corroborated by PwC Worldwide Tax Summaries and reputable Bolivian law firms/consultancies (Rigoberto Paredes, Planifica) and primary norms (Ley 065, Ley 1582, DS 5383). Where a figure is unconfirmed against the primary statute it is marked **[RESEARCH GAP — reviewer to confirm]**. This skill must be signed off by a Bolivian-qualified professional before any output is filed or acted upon.
+The law is Ley N° 065 de Pensiones of 10 December 2010 (the Sistema Integral de Pensiones, SIP), as amended by Ley N° 1582 of 1 October 2024, with its contributions regulation (DS 0778 of 26 January 2011, its attachment replaced by DS 5280 of 20 November 2024). Short-term health insurance is financed under DS 21637 of 25 June 1987. The 2026 minimum wage is in DS 5516. All texts were read in the Gaceta Oficial de Bolivia. The pension contributions are collected by the Gestora Pública de la Seguridad Social de Largo Plazo (the Gestora) and supervised by the APS; health contributions go to the employer's health fund (Caja Nacional de Salud, CNS, or another caja). All amounts are in bolivianos (Bs). Tax year 2026, contributions monthly.
 
-## Section 1 — Quick reference
+This skill owns the contribution rates. The employee's RC-IVA withholding, which deducts these contributions, is in [bolivia-income-tax](bolivia-income-tax.md). The monthly payroll run, the aguinaldo, severance and other labour items are in [bolivia-payroll](bolivia-payroll.md).
 
-**Read this whole section before computing or classifying anything.**
-
-**Quick reference table**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Bolivia (Estado Plurinacional de Bolivia) |
-| Primary social-security legislation | Ley N° 065 de Pensiones (2010), Sistema Integral de Pensiones (SIP) |
-| Amending legislation | Ley N° 1582 de 01/10/2024 (raised employer solidarity 3% → 3.5%; revised ANS thresholds/rates) |
-| Tax legislation | Ley N° 843 (Texto Ordenado) — RC-IVA, IVA, IT, IUE; DS 5383 de 01/05/2025 (2025 SMN, RC-IVA presumed deduction) |
-| Long-term pensions administrator | Gestora Pública de la Seguridad Social de Largo Plazo |
-| Pension/insurance regulator | Autoridad de Fiscalización y Control de Pensiones y Seguros (APS, www.aps.gob.bo) |
-| Short-term health | Cajas de Salud (e.g. Caja Nacional de Salud — CNS) |
-| Tax authority | Servicio de Impuestos Nacionales (SIN, www.impuestos.gob.bo / siat.impuestos.gob.bo) |
-| Labour/wage policy | Ministerio de Trabajo (mintrabajo.gob.bo) |
-| Contribution base | Total ganado (total monthly gross remuneration) |
-| Employee social-security rate | 12.71% of total ganado (PwC) |
-| ANS (high earners) | 1.15% / 5.74% / 11.48% above Bs 13,000 / 25,000 / 35,000 per month (Ley 1582; PwC) |
-| Employer social-security rate | 17.21% general / 19.51% mining (PwC) |
-| Personal income tax | RC-IVA — flat 13%, no progressive brackets (Ley 843; PwC) |
-| Corporate income tax | IUE — 25% (Ley 843; PwC) |
-| 2025 minimum wage (SMN) | Bs 2,750/month, from 1 May 2025 retroactive to Jan 2025 (DS 5383) |
-| Currency | Boliviano (BOB / Bs) only |
-| Tax year | 2025 |
-| Validation date | Pending |
+- **Dependent employees (asegurados dependientes)** in the private and public sectors, and their employers. The employer registers with the Gestora and the health fund, deducts the employee's share from the total ganado and pays both shares (Ley 065 arts. 83 and 94).
+- **Foreign employees** with an employment relationship in Bolivia must contribute to the SIP like nationals (Ley 065 art. 104 I a). A foreign insured person who leaves Bolivia for good without a pension can have the balance in their account transferred to the pension body of their country or another one they name (art. 105).
+- **Mining and metallurgical employers** pay an extra 2.3% for their productive-area workers (Ley 065 art. 87 d, text of Ley 1582).
+- **Out of scope:** independent workers and consultants contributing on their own (asegurados independientes, Ley 065 art. 101, with a common-risk and a labour-risk premium on their contribution income); mining cooperatives; voluntary contributors; pensioners who keep working. Refer these.
 
-- **Who Bolivia taxes** — Bolivia taxes on a territorial basis — only Bolivian-source income is taxed, regardless of nationality or residence.  _(PwC, Bolivia — Individual — Taxes on personal income)_
-- **Important framing — RC-IVA** — Bolivia's personal income tax is the RC-IVA (Régimen Complementario al Impuesto al Valor Agregado — Complementary Regime to VAT), a flat 13% on Bolivian-source dependent and capital income, with NO progressive bracket schedule. It is largely offsettable against the 13% VAT credit generated by purchase invoices the employee submits on Form 110. This skill therefore covers BOTH (a) the social-security contribution stack and (b) the RC-IVA withholding mechanics that sit on top of payroll.  _(PwC; Ley 843)_
+**When to refer.** Refer for: very high earners where a contribution ceiling may apply (not confirmed here); people with several employers (the Aporte Nacional Solidario is then declared on the combined total through a Declaración Jurada Previsional, Ley 065 art. 95); arrears and the Gestora's interest for late payment; mining cooperatives; workers aged 65 or over (the risk premiums stop at 65, Ley 065 art. 83).
 
-## Section 1A — Contribution & rate tables
-
-### Employee contributions (deducted from total ganado)
-
-**Employee contributions table**
-
-| Class | Spanish name | Rate | Base |
-| --- | --- | --- | --- |
-| Pension individual account | Aporte de Vejez | 10% | Total ganado |
-| Common-risk insurance (disability/death) | Riesgo Común | 1.71% | Total ganado |
-| Administration commission | Comisión Gestora | 0.5% | Total ganado |
-| Worker solidarity contribution | Aporte Solidario del Asegurado | 0.5% | Total ganado |
-| **EMPLOYEE TOTAL (base)** |  | **12.71%** | **Total ganado** |
-
-- **Arithmetic check** — 10% + 1.71% + 0.5% + 0.5% = 12.71%. The pension portion (10%) goes to the worker's individual capitalisation account in the SIP managed by the Gestora Pública. The 12.71% excludes the ANS, which applies only to high earners.  _(Planifica; Rigoberto Paredes; PwC)_
-
-### National Solidarity Contribution (ANS) — high-earning employees only
-
-Per Ley 1582 (effective October 2024). Applied to the positive difference of total ganado above each threshold, cumulatively (marginal slices). Pre-2024 sources citing 1% / 5% / 10% are obsolete — do not use them.
-
-**ANS tranches table**  _(Ley 1582; Bolivia Impuestos)_
-
-| Tranche | Rate | Applies to monthly total ganado above |
-| --- | --- | --- |
-| Tranche 1 | 1.15% | Bs 13,000 |
-| Tranche 2 (cumulative, on top of T1) | 5.74% | Bs 25,000 |
-| Tranche 3 (cumulative, on top of T1+T2) | 11.48% | Bs 35,000 |
-
-PwC summarises the scale as "1.15% up to 11.48%". **[RESEARCH GAP — reviewer to confirm]** the exact mechanism — whether each rate applies to the marginal slice above each threshold (cumulative, as modelled here) or to a single aggregate "Total Solidario" amount. Confirm against the Ley 1582 text / APS regulation before filing.
-
-### Employer contributions (paid on top of total ganado)
-
-**Employer contributions table**
-
-| Class | Spanish name | Rate | Base |
-| --- | --- | --- | --- |
-| Short-term health insurance | Seguro Social a Corto Plazo / Caja de Salud (e.g. CNS) | 10% | Total ganado |
-| Professional-risk insurance | Riesgo Profesional | 1.71% | Total ganado |
-| Housing fund | Aporte Patronal Pro-Vivienda (PROVIVIENDA) | 2% | Total ganado |
-| Employer solidarity contribution | Aporte Patronal Solidario | 3.5% | Total ganado |
-| **EMPLOYER TOTAL (general)** |  | **17.21%** | **Total ganado** |
-| **EMPLOYER TOTAL (mining sector)** |  | **19.51%** | **Total ganado** |
-
-- **Arithmetic check and notes** — 10% + 1.71% + 2% + 3.5% = 17.21% (Planifica; PwC). The employer solidarity contribution was raised from 3.0% to 3.5% by Ley 1582, effective October 2024 (Ley 1582; CISS). The mining-sector total of 19.51% (PwC) is 2.30 pp above the general rate; [RESEARCH GAP — reviewer to confirm] the composition of the extra 2.30 pp — not itemised by sources. The 10% Caja de Salud rate is the standard CNS rate; some cajas/sectors may differ ([RESEARCH GAP — reviewer to confirm] sector-specific cajas).  _(Planifica; PwC; Ley 1582; CISS)_
-
-### Tax rates (for context — see Section 1B for RC-IVA mechanics)
-
-**Tax rates table**
-
-| Tax | Type | Rate | Notes |
-| --- | --- | --- | --- |
-| RC-IVA (personal income tax) | Flat | 13% | On dependent/capital income net of social contributions and ANS; offsettable with Form 110 VAT credit (Ley 843; PwC) |
-| IUE (corporate income tax) | Flat | 25% | General CIT. Mining +12.5%/+7.5% surtax + 1%–7% royalties; high-ROE financial/insurance +25% surtax (PwC) |
-| IVA (VAT) | — | 13% nominal (14.94% effective tax-inclusive) | (SIN; PwC) |
-| IT (Transactions Tax) | — | 3% of gross income | Offsettable only against IUE, not against purchase invoices (SIN; PwC) |
-
-## Section 1B — Thresholds & key figures
-
-**Thresholds & key figures table**
-
-| Name | Value | Source |
-| --- | --- | --- |
-| Minimum wage (SMN) 2025 | Bs 2,750/month, from 1 May 2025 retroactive to Jan 2025 (+10% vs Bs 2,500 in 2024) | DS 5383; Orbitax |
-| Minimum wage (SMN) 2026 | Bs 3,300/month | DS 5503 |
-| Mandatory salary increase 2025 | 5% on basic salary (private sector); free negotiation above; senior management excluded | DS 5383 / wage policy |
-| RC-IVA non-taxable allowance | 2 × SMN = Bs 5,500/month (2 × Bs 2,750) | Ley 843; Rigoberto Paredes |
-| RC-IVA presumed deduction (DS 5383) | 13% of 1 SMN = Bs 357.50/month (reduced from 13% of 2 SMN) | DS 5383; Rigoberto Paredes |
-| RC-IVA practical threshold 2025 | ≈ Bs 9,451–9,456/month gross above which RC-IVA becomes payable absent invoice offset | Rigoberto Paredes; Visión360 |
-| ANS entry threshold | Bs 13,000/month total ganado (then 25,000 / 35,000) | Ley 1582; PwC |
-| Pension contribution ceiling (tope) | 60 national minimum salaries/month (≈ USD 28,450 per PwC) | PwC — **see caveat below** |
-| VAT (IVA) rate | 13% nominal (14.94% effective tax-inclusive) | SIN; PwC |
-| Transactions Tax (IT) rate | 3% of gross income | SIN; PwC |
-
-**Pension ceiling caveat — [RESEARCH GAP — reviewer to confirm].** PwC states a cap of 60 national minimum salaries/month (≈ USD 28,450). At the 2025 SMN of Bs 2,750 that nominally implies ≈ Bs 165,000/month, but the exact Bs figure — and whether the SMN multiplier was restated for 2025 — was not independently confirmed against an APS/Gestora circular. Verify the exact Bs cap before applying it to any high earner.
-
-## Section 1C — Conservative defaults
-
-**Conservative defaults table**
-
-| Ambiguity | Default | Rationale |
-| --- | --- | --- |
-| Employee social-security deduction | 12.71% of total ganado | Standard worker rate (PwC; Planifica; Rigoberto Paredes); excludes ANS |
-| Whether ANS applies | Only if total ganado > Bs 13,000/month; otherwise 0 | Ley 1582; PwC |
-| ANS rates to use | 1.15% / 5.74% / 11.48% (Ley 1582, eff. Oct 2024) | Post-Ley-1582 official rates; PwC confirms scale. Older 1%/5%/10% figures are pre-2024 — do NOT use |
-| Employer social-security cost | 17.21% of total ganado (general); 19.51% if mining | PwC corporate other-taxes |
-| RC-IVA | 13% flat on income net of social contributions and ANS, with 2-SMN exemption and invoice-based VAT offset | Ley 843; PwC; DS 5383 |
-| Unknown sector | Assume general (17.21%), not mining; flag for reviewer | Conservative — lower of the two only if confirmed non-mining |
-| Unknown total ganado | STOP — do not compute contributions without the gross | Base is total ganado; no default gross |
-| 2025 vs 2026 SMN | Use Bs 2,750 (DS 5383) for the 2025 tax year | This skill is for tax_year 2025 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Minimum viable / Recommended / Ideal inputs** — **Minimum viable** — monthly total ganado (gross remuneration) and employment status (dependent employee vs self-employed/independent). Without total ganado, STOP. Do not compute contributions. **Recommended** — sector (mining vs general), whether the worker is above the ANS threshold (Bs 13,000), birth/age context for pension, and whether the employee submits Form 110 invoices for RC-IVA offset. **Ideal** — the employer's planilla de pago de aportes, payslips showing each contribution line, the Caja de Salud affiliation, and prior-month RC-IVA Form 608 filings.
-
-### Refusal catalogue
-
-- **R-BO-SS-1 — Total ganado unknown** — Trigger: gross monthly remuneration not provided. Message: "Monthly total ganado is mandatory. All Bolivian social-security contributions (12.71% employee, 17.21%/19.51% employer) and RC-IVA are computed on it. Cannot proceed without the gross figure."
-- **R-BO-SS-2 — ANS mechanism / high earner** — Trigger: total ganado above Bs 13,000/month and the client needs a definitive ANS figure. Message: "The National Solidarity Contribution (ANS) under Ley 1582 uses thresholds at Bs 13,000 / 25,000 / 35,000 at 1.15% / 5.74% / 11.48%. The exact application mechanism (marginal-slice vs aggregate) is not fully confirmed against the statute in this skill. Escalate to a Bolivian-qualified professional before filing."
-- **R-BO-SS-3 — Pension ceiling for very high earners** — Trigger: total ganado near/above 60 SMN (≈ Bs 165,000/month). Message: "The pension contribution ceiling (PwC: 60 minimum salaries, ≈ USD 28,450) is not confirmed in exact Bs terms in this skill. Do not cap contributions without confirming the precise APS/Gestora ceiling. Escalate to a Bolivian-qualified professional."
-- **R-BO-SS-4 — Contribution arrears / penalties** — Trigger: unpaid contributions or late RC-IVA from prior periods. Message: "Penalty and surcharge percentages for late contributions (APS) and tax non-compliance (Código Tributario, Ley 2492) are not captured authoritatively in this skill. Do not quantify arrears or penalties. Escalate to a Bolivian-qualified professional with the APS/SIN statements."
-- **R-BO-SS-5 — Independent/voluntary affiliates** — Trigger: self-employed, independent (trabajador independiente), or voluntary SIP affiliate. Message: "This skill covers dependent (employee) payroll. Independent and voluntary SIP affiliation uses a different declared base and rate structure. Escalate to a Bolivian-qualified professional."
-
-## Section 3 — Payment pattern library
-
-This is the deterministic pre-classifier for bank statement transactions related to Bolivian social security and payroll tax. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. Social-security and RC-IVA remittances EXCLUDE from any IVA (VAT) return classification — they are statutory payroll obligations, not VATable business supplies. The employer portion (17.21%/19.51%) is a deductible business cost; the employee portion (12.71% + ANS) and RC-IVA withheld are amounts withheld from staff and remitted on their behalf.
-
-### 3.1 Gestora Pública / pension & solidarity contributions
-
-**Gestora Pública patterns table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GESTORA, GESTORA PUBLICA, GESTORA SEGURIDAD SOCIAL | EXCLUDE — SIP contribution remittance | Monthly aportes to the long-term pension fund |
-| APORTE DE VEJEZ, RIESGO COMUN | EXCLUDE — SIP contribution | Pension / common-risk component |
-| APORTE SOLIDARIO, ANS, APORTE NACIONAL SOLIDARIO | EXCLUDE — solidarity contribution | Worker / employer / ANS solidarity |
-| PLANILLA APORTES, COMISION GESTORA | EXCLUDE — SIP contribution | Contribution payroll remittance |
-
-### 3.2 Caja de Salud / short-term health (employer)
-
-**Caja de Salud patterns table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CNS, CAJA NACIONAL DE SALUD | EXCLUDE — employer health contribution (10%) | Short-term health remittance |
-| CAJA DE SALUD, SEGURO CORTO PLAZO | EXCLUDE — employer health contribution | Same |
-| RIESGO PROFESIONAL | EXCLUDE — employer professional-risk (1.71%) | Work-accident cover |
-
-### 3.3 Housing fund
-
-**Housing fund pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PRO VIVIENDA, PROVIVIENDA, APORTE PRO-VIVIENDA | EXCLUDE — employer housing fund (2%) | Aporte Patronal Pro-Vivienda |
-
-### 3.4 SIN / SIAT — tax payments (NOT social security)
-
-**SIN/SIAT patterns table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SIN, SERVICIO DE IMPUESTOS NACIONALES, SIAT | EXCLUDE — tax payment, not SS | Could be RC-IVA, IVA, IT or IUE |
-| RC-IVA, FORM 608, FORMULARIO 608 | EXCLUDE — RC-IVA withholding remittance | Employer remits withheld RC-IVA |
-| IVA, FORM 200, IT, FORM 400 | EXCLUDE — VAT / Transactions Tax | Not a contribution |
-| IUE, FORM 500 | EXCLUDE — corporate income tax | Annual CIT |
-
-### 3.5 Salary / payroll (exclude from contribution classification)
-
-**Salary/payroll patterns table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SUELDO, SALARIO, HABERES, PLANILLA SUELDOS (outgoing) | EXCLUDE — payroll/wages expense | Net wage paid to employee, not a contribution |
-| AGUINALDO (outgoing) | EXCLUDE — 13th-salary payroll cost | Statutory year-end bonus |
-| INDEMNIZACION, DESAHUCIO | EXCLUDE — severance payroll cost | Not a contribution |
-
-## Section 4 — Worked examples
-
-Six bank-statement / payroll classifications for a hypothetical La Paz-based services employer and its employees. All figures in Bs (Bolivianos), 2025 tax year (SMN = Bs 2,750).
-
-### Example 1 — Standard worker below ANS and RC-IVA thresholds
-
-**Input line:**
-`30.06.2025 ; GESTORA PUBLICA SEG SOCIAL ; DEBITO ; APORTES MAYO 2025 ; -1.016,80 ; BOB`
-
-**Reasoning:**
-Employee on total ganado of Bs 8,000/month. Employee social security = 8,000 × 12.71% = Bs 1,016.80. Below the ANS threshold (Bs 13,000) so ANS = 0. RC-IVA: base after SS = 8,000 − 1,016.80 = 6,983.20; less 2-SMN exemption (Bs 5,500) = 1,483.20; × 13% = Bs 192.82; less presumed deduction (Bs 357.50) → negative → RC-IVA = Bs 0. Consistent with the ≈ Bs 9,451 practical threshold (below it, no RC-IVA). Matches "GESTORA" (pattern 3.1).
-
-**Classification:** EXCLUDE from IVA. Employee net pay = 8,000 − 1,016.80 = Bs 6,983.20; no RC-IVA withheld.
-
-### Example 2 — Worker above the RC-IVA threshold, still below ANS
-
-**Input line:**
-`15.07.2025 ; SIN SIAT FORM 608 RC-IVA ; DEBITO ; RETENCION JUNIO 2025 ; -289,22 ; BOB`
-
-**Reasoning:**
-Employee on Bs 12,000/month. Employee SS = 12,000 × 12.71% = Bs 1,525.20. Below ANS threshold (12,000 < 13,000) so ANS = 0. RC-IVA base = 12,000 − 1,525.20 = 10,474.80; less 5,500 = 4,974.80; × 13% = Bs 646.72; less presumed Bs 357.50 = Bs 289.22 RC-IVA payable (before any Form 110 invoice offset). Above the ≈ Bs 9,451 threshold, so RC-IVA is due. Matches "FORM 608 RC-IVA" (pattern 3.4).
-
-**Classification:** EXCLUDE from IVA — RC-IVA withholding remitted via Form 608. Employee net pay before invoice offset = 12,000 − 1,525.20 − 289.22 = Bs 10,185.58. Employee can submit Form 110 purchase invoices (13% VAT credit) to reduce the Bs 289.22.
-
-### Example 3 — High earner, ANS tranches 1 and 2 apply
-
-**Input line:**
-`30.07.2025 ; GESTORA - APORTE NACIONAL SOLIDARIO ; DEBITO ; ANS JUNIO 2025 ; -482,50 ; BOB`
-
-**Reasoning:**
-Employee on Bs 30,000/month. Base employee SS = 30,000 × 12.71% = Bs 3,813.00. ANS (marginal-slice model, Ley 1582):
-- Tranche 1: (30,000 − 13,000) × 1.15% = 17,000 × 1.15% = Bs 195.50
-- Tranche 2: (30,000 − 25,000) × 5.74% = 5,000 × 5.74% = Bs 287.00
-- Tranche 3: 0 (below 35,000)
-- ANS total = 195.50 + 287.00 = Bs 482.50
-
-Matches "APORTE NACIONAL SOLIDARIO" (pattern 3.1). [RESEARCH GAP — reviewer to confirm] the marginal-slice mechanism vs an aggregate "Total Solidario" application.
-
-**Classification:** EXCLUDE from IVA — ANS remitted to the Gestora. Total employee deduction = 3,813.00 + 482.50 = Bs 4,295.50 (before RC-IVA).
-
-### Example 4 — Employer health + risk + housing + solidarity remittance (general sector)
-
-**Input line:**
-`31.07.2025 ; CAJA NACIONAL DE SALUD / GESTORA ; DEBITO ; APORTE PATRONAL JUNIO ; -1.376,80 ; BOB`
-
-**Reasoning:**
-For an Bs 8,000 employee, employer social cost = 8,000 × 17.21% = Bs 1,376.80, composed of: health 10% = 800.00; professional risk 1.71% = 136.80; housing 2% = 160.00; employer solidarity 3.5% = 280.00. Sum = 800 + 136.80 + 160 + 280 = Bs 1,376.80 ✓. Matches "CAJA NACIONAL DE SALUD" / "GESTORA" (patterns 3.1/3.2).
-
-**Classification:** EXCLUDE from IVA. Deductible employer payroll cost. (If this were a mining employer, the rate would be 19.51% = Bs 1,560.80.)
-
-### Example 5 — SIN tax payment (NOT social security)
-
-**Input line:**
-`13.08.2025 ; SERVICIO DE IMPUESTOS NACIONALES ; DEBITO ; IVA FORM 200 JULIO ; -4.500,00 ; BOB`
-
-**Reasoning:**
-Matches "SERVICIO DE IMPUESTOS NACIONALES" / "IVA FORM 200" (pattern 3.4). This is a VAT (IVA) payment, not a social-security contribution and not RC-IVA. Do not classify as social security. IVA is a tax payment, not a payroll obligation.
-
-**Classification:** EXCLUDE from social-security classification — this is the monthly IVA (VAT, 13%) remittance, not a contribution.
-
-### Example 6 — Aguinaldo (13th salary) payroll cost
-
-**Input line:**
-`20.12.2025 ; PLANILLA AGUINALDO 2025 ; DEBITO ; SUELDO 13 ; -8.000,00 ; BOB`
-
-**Reasoning:**
-Matches "AGUINALDO" (pattern 3.5). The aguinaldo is a statutory one-month (13th) salary paid in December — a payroll cost, not a contribution. A second aguinaldo is due only if GDP growth exceeds 4.5% ([RESEARCH GAP — reviewer to confirm] whether the 2025 GDP trigger was met). Contributions on the aguinaldo follow the regulations on includable items ([RESEARCH GAP — reviewer to confirm] exact aguinaldo contribution treatment).
-
-**Classification:** EXCLUDE from IVA. Payroll cost, not a contribution.
-
-## Section 5 — Tier 1 rules
-
-These rules apply when payroll data is clear and all required inputs are available. Apply exactly as written.
-
-### Rule 1 — Contribution base
-
-- **Contribution base** — The base for all contributions and the pension is total ganado — total monthly remuneration (salary, overtime, bonuses, commissions, etc.), up to the pension ceiling (see Rule 7).  _(PwC; Ley 065)_
-
-### Rule 2 — Employee contribution
-
-- **Employee SS formula** — Employee SS = total_ganado × 12.71% = 10% (pension) + 1.71% (common risk) + 0.5% (admin) + 0.5% (worker solidarity)  _(Planifica; Rigoberto Paredes; PwC)_
-
-### Rule 3 — National Solidarity Contribution (ANS), high earners only
-
-- **ANS formula** — If total_ganado > 13,000: ANS += (total_ganado − 13,000) × 1.15% If total_ganado > 25,000: ANS += (total_ganado − 25,000) × 5.74% If total_ganado > 35,000: ANS += (total_ganado − 35,000) × 11.48% Rates per Ley 1582 (eff. Oct 2024). Marginal-slice model — [RESEARCH GAP — reviewer to confirm] the exact statutory mechanism.  _(Ley 1582)_
-
-### Rule 4 — Employer contribution
-
-- **Employer SS formula** — Employer SS (general) = total_ganado × 17.21% = 10% (health) + 1.71% (professional risk) + 2% (housing) + 3.5% (employer solidarity) Employer SS (mining) = total_ganado × 19.51%  _(Planifica; PwC; Ley 1582)_
-
-### Rule 5 — RC-IVA (personal income tax) is flat 13%
-
-- **RC-IVA flat rate rule** — Bolivia has no progressive bracket schedule. RC-IVA = 13% on dependent income net of social-security contributions and ANS, after the 2-SMN exemption and the presumed deduction, offsettable with Form 110 invoice VAT credit.  _(Ley 843; PwC)_
-
-### Rule 6 — RC-IVA withholding formula (dependent employee, 2025)
-
-- **RC-IVA withholding formula** — RC-IVA base       = total_ganado − employee_SS − ANS Taxable amount    = max(0, RC-IVA base − (2 × SMN))            ; 2 × SMN = Bs 5,500 RC-IVA gross      = Taxable amount × 13% RC-IVA payable    = max(0, RC-IVA gross − presumed_deduction − Form_110_VAT_credit) ; presumed_deduction = 13% × 1 SMN = Bs 357.50  (DS 5383) Practically, RC-IVA becomes payable above roughly Bs 9,451–9,456/month gross absent invoices (Rigoberto Paredes; Visión360). DS 5383 (May 2025) reduced the presumed deduction from 13% of 2 SMN to 13% of 1 SMN, increasing the effective tax.  _(DS 5383; Rigoberto Paredes; Visión360)_
-
-### Rule 7 — Pension contribution ceiling
-
-- **Pension ceiling** — Contributions are levied on total ganado up to a ceiling of 60 national minimum salaries/month (≈ USD 28,450 per PwC). [RESEARCH GAP — reviewer to confirm] the exact Bs figure and SMN multiplier for 2025.  _(PwC)_
-
-### Rule 8 — Employer is the withholding agent
-
-- **Employer withholding agent rule** — Employers withhold and remit both the employee contributions (12.71% + ANS) and the employer contributions (17.21%/19.51%) monthly to the Gestora Pública, and withhold/remit RC-IVA monthly to SIN.  _(PwC; SIN/SIAT; APS)_
-
-### Rule 9 — Minimum wage
-
-- **Minimum wage rule** — The 2025 SMN is Bs 2,750/month (DS 5383, eff. 1 May 2025 retroactive to January; +10% vs Bs 2,500 in 2024). 2026 SMN is Bs 3,300 (DS 5503). The 2025 mandatory private-sector basic-salary increase is 5%, with free negotiation above; senior management is excluded.  _(DS 5383; DS 5503)_
-
-### Rule 10 — Filing & payment schedule
-
-**Filing & payment schedule table**
-
-| Obligation | Form | Frequency / deadline |
-| --- | --- | --- |
-| Employee declares purchase invoices (13% VAT credit) | Formulario 110 | Monthly to employer; invoices dated within 120 calendar days before submission (SIAT) |
-| Employer declares/pays RC-IVA withheld | Formulario 608 (V.4) | Monthly, by date set by last digit of employer's NIT; not required when no Form 110, no credit balances and no amount due (SIN) |
-| Contribution payment to SIP/Gestora + ANS | Planilla de pago de aportes | Monthly. 2025 retroactive SMN reintegro to SIP/ANS was due by last business day of August 2025 (APS Circular APS/DP/DJ/N°100/2025) |
-| VAT (IVA) / Transactions Tax (IT) | Form 200 / Form 400 | Monthly, by last NIT digit (SIN) |
-| Corporate income tax (IUE) | IUE return | 120 days after fiscal year-end; CIT fully paid by deadline to qualify for offsets (DS 5327) |
-
-### Rule 11 — Aguinaldo and severance are payroll costs, not contributions
-
-- **Aguinaldo and severance rule** — Aguinaldo = one month's salary (13th), paid December; a second aguinaldo only if GDP growth exceeds 4.5%. Severance (indemnización) = one month's salary per year of service, plus desahucio (3 months) for unjustified dismissal. These are payroll/employment costs, not SIP/Caja contributions.
-
-## Section 6 — Tier 2 catalogue (reviewer judgement)
-
-When data is ambiguous or client circumstances are unclear, flag these situations for reviewer confirmation.
-
-### T2-1 — ANS application mechanism
-
-**Trigger:** Worker with total ganado above Bs 13,000/month needing a definitive ANS figure.
-**Issue:** Whether the 1.15% / 5.74% / 11.48% rates apply to marginal slices above each threshold (as modelled here) or to a single aggregate "Total Solidario" is not confirmed against the Ley 1582 text.
-**Action:** Flag for reviewer; confirm against Ley 1582 / APS regulation.
-
-### T2-2 — Mining-sector employer composition
-
-**Trigger:** Mining employer; client needs the 19.51% breakdown.
-**Issue:** PwC gives 19.51% but does not itemise the extra 2.30 pp over the 17.21% general rate.
-**Action:** Flag for reviewer; obtain the sector-specific contribution schedule.
-
-### T2-3 — Very high earner near the pension ceiling
-
-**Trigger:** Total ganado near/above ≈ 60 SMN (~Bs 165,000/month).
-**Issue:** Exact Bs ceiling and SMN multiplier unconfirmed.
-**Action:** Flag for reviewer; confirm APS/Gestora ceiling before capping.
-
-### T2-4 — Contribution / RC-IVA arrears and penalties
-
-**Trigger:** Unpaid prior-period contributions or late RC-IVA.
-**Issue:** Penalty/surcharge percentages (APS; Código Tributario Ley 2492) not captured authoritatively.
-**Action:** Do not quantify. Escalate to a Bolivian-qualified professional with the APS/SIN statements.
-
-### T2-5 — Aguinaldo / variable-pay contribution base
-
-**Trigger:** Whether aguinaldo, bonuses, or in-kind items form part of total ganado for contributions.
-**Issue:** Includable-items rules vary by regulation; second-aguinaldo GDP trigger is year-specific.
-**Action:** Flag for reviewer; confirm the includable base and the 2025 GDP trigger.
-
-### T2-6 — Form 110 invoice eligibility
-
-**Trigger:** Employee offsetting RC-IVA with purchase invoices.
-**Issue:** Invoices must be valid, in the employee's name where required, and dated within 120 days; eligibility/credit caps need confirmation.
-**Action:** Flag for reviewer; verify invoice validity and the resulting VAT credit before relying on it.
-
-## Section 7 — Excel working paper template
-
-When producing a Bolivian payroll/contribution computation, structure the working paper as follows:
-
-```
-BOLIVIA PAYROLL / SOCIAL-CONTRIBUTION & RC-IVA WORKING PAPER
-Client: [name]                         Employee: [name]
-Tax Year: 2025                         Prepared: [date]
-
-INPUT DATA
-  Total ganado (monthly gross):     Bs [____]
-  Sector (general / mining):        [____]
-  Above ANS threshold (Bs 13,000)?  [YES/NO]
-  SMN (2025):                       Bs 2,750
-  Form 110 VAT credit submitted:    Bs [____]
-
-EMPLOYEE CONTRIBUTIONS
-  Pension (10%):                    Bs [____]
-  Common risk (1.71%):              Bs [____]
-  Admin commission (0.5%):          Bs [____]
-  Worker solidarity (0.5%):         Bs [____]
-  Employee SS (12.71%):             Bs [____]
-  ANS (if applicable):              Bs [____]
-  Total employee deduction:         Bs [____]
-
-EMPLOYER CONTRIBUTIONS
-  Health / Caja de Salud (10%):     Bs [____]
-  Professional risk (1.71%):        Bs [____]
-  Housing / Pro-Vivienda (2%):      Bs [____]
-  Employer solidarity (3.5%):       Bs [____]
-  Employer SS (17.21% / 19.51%):    Bs [____]
-
-RC-IVA (PERSONAL INCOME TAX)
-  RC-IVA base (gross − SS − ANS):   Bs [____]
-  Less 2 × SMN exemption (5,500):   Bs [____]
-  Taxable amount:                   Bs [____]
-  RC-IVA gross (× 13%):             Bs [____]
-  Less presumed deduction (357.50): Bs [____]
-  Less Form 110 VAT credit:         Bs [____]
-  RC-IVA payable:                   Bs [____]
-
-NET PAY
-  Total ganado − employee SS − ANS − RC-IVA payable = Bs [____]
-
-REVIEWER FLAGS
-  [List any Tier 2 / research-gap flags here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+## Rates, bands and thresholds
+
+Quick answer: the **employee pays 12.71%** of total ganado, plus the Aporte Nacional Solidario (ANS) on the slices above Bs 13,000. The **employer pays 17.21%** (10% health, 1.71% professional risk, 2% housing, 3.5% solidarity), or 19.51% for mining productive-area workers.
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Employee: monthly contribution (cotización mensual) to the personal pension account (Ley 065 art. 88) | 10% of total ganado | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/138860 |
+| Employee: common-risk premium (prima por riesgo común), deducted from total ganado (Ley 065 art. 83 b), paid until age 65 | 1.71% of total ganado | 2026 | https://gestora.bo/pdf/folletos/3/4.jpg |
+| Employee: solidarity contribution (aporte solidario del asegurado) (Ley 065 art. 87 b) | 0.5% of total ganado | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/138860 |
+| Employee: Gestora commission (comisión) (Ley 065 art. 151 a), reviewable every three years | 0.5% of total ganado | 2026 | same |
+| Employee total (aportes laborales) | 12.71% of total ganado | 2026 | https://gestora.bo/pdf/folletos/3/3.jpg |
+| Employee: Aporte Nacional Solidario, slice of total ganado above Bs 13,000 (Ley 065 art. 87 f iii, text of Ley 1582) | 1.15% | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280468 |
+| ANS, slice above Bs 25,000 (art. 87 f ii) | a further 5.74% (6.89% in all on that slice) | 2026 | same |
+| ANS, slice above Bs 35,000 (art. 87 f i) | a further 11.48% (18.37% in all on that slice) | 2026 | same |
+| Employer: health contribution to the health fund (DS 21637 art. 8) | 10% of all pay of insured workers | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/18031 |
+| Employer: professional-risk premium (prima por riesgo profesional) (Ley 065 art. 83 a), paid until the worker is 65 | 1.71% of total ganado | 2026 | https://gestora.bo/pdf/folletos/3/4.jpg |
+| Employer: housing contribution (aporte patronal para vivienda), collected by the Gestora (DS 4942 art. 1) | 2% of total ganado | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/169107 |
+| Employer: employer solidarity contribution (aporte patronal solidario) (Ley 065 art. 87 c, text of Ley 1582, from gestión 2024) | 3.5% of total ganado | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280468 |
+| Employer, mining and metallurgical sector, productive-area workers only: aporte solidario minero (art. 87 d, text of Ley 1582; DS 0778 art. 15, text of DS 5280) | 2.3% of total ganado | 2026 | same |
+| Employer total, general (sum of the four rows above it) | 17.21% of total ganado | 2026 | same |
+| Employer total, mining productive-area workers | 19.51% of total ganado | 2026 | same |
+| National minimum wage (SMN), public and private sectors, retroactive to 1 January 2026 (DS 5516 art. 23) | Bs 3,300 a month | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281033 |
+| Payment deadline to the Gestora (DS 0778 art. 6 I, cited in DS 5280; Gestora leaflet) | Last working day of the month after the month the pay was earned | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280548 |
+| Declaración Jurada Previsional for ANS contributors (Ley 065 art. 95) | Required when total solidario is Bs 13,000 or more | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/138860 |
+
+The two 1.71% premiums come from the Gestora's own employer leaflet, an image on gestora.bo. The same leaflet shows the employer solidarity contribution at 3%, the figure before Ley 1582; the law (3.5%) governs. Ley 1582 lets the Executive update the ANS thresholds every five years.
+
+## The base
+
+**Total ganado.** Every contribution is a percentage of the worker's total ganado, the gross pay for the month (Ley 065 arts. 83, 87, 88 and 94). Take the gross from the payroll (salary plus the other pay items the payroll includes). The health contribution is on "la totalidad de las remuneraciones" of insured workers (DS 21637 art. 8).
+
+**Employee share, step by step:**
+
+1. Monthly contribution 10%, common-risk premium 1.71%, solidarity contribution 0.5% and commission 0.5%: 12.71% of total ganado. The employer deducts it from pay as withholding agent (Ley 065 art. 94).
+2. Aporte Nacional Solidario. If total ganado is above Bs 13,000, add 1.15% of the excess over Bs 13,000; if above Bs 25,000, add 5.74% of the excess over Bs 25,000; if above Bs 35,000, add 11.48% of the excess over Bs 35,000 (art. 87 f). Each percentage applies to the difference over its threshold "cuando la diferencia sea positiva", so they stack on the top slices. A dependent pays it through the employer on their total ganado (art. 94 a).
+3. The employee's contributions are deducted from the RC-IVA base in the employer's monthly RC-IVA computation ([bolivia-income-tax](bolivia-income-tax.md)).
+
+**Employer share, step by step:**
+
+1. Health 10%, to the CNS or the health fund the employer is registered with.
+2. Professional-risk premium 1.71%, housing 2% and employer solidarity 3.5%, to the Gestora.
+3. Mining and metallurgical employers add 2.3% for productive-area workers.
+4. These are the employer's own cost, never deducted from the worker. Unpaid contributions and interest can never be charged to the worker later (Ley 065 art. 107).
+
+**Where the money goes.** The 10% goes to the worker's personal pension account (art. 88). The solidarity contributions and the ANS finance the Solidarity Fund (art. 87). The risk premiums finance disability and death benefits (art. 83). The commission pays the Gestora (art. 151).
+
+## Deadlines and filing
+
+**Steps, in the order the employer meets them:**
+
+1. **Register as an employer with the Gestora** through the electronic employer registration form on gestora.bo or at its offices, with the legal representative's ID, power of attorney, the employer's identification documents and a location sketch (Gestora employer leaflet).
+2. **Register each worker** with the SIP on the electronic registration form (same leaflet).
+3. **Register as an employer with the health fund.** For the CNS: forms AVC-01, AVC-02 and RCI-1A, the NIT certificate, an opening balance sheet signed by the departmental college of accountants, the company deed if a company, the payroll (one original and five copies signed by the workers), a list of staff with dates of birth, a location sketch and a pre-employment medical receipt of Bs 100 per worker (CNS employer page). Report each worker who leaves on the "Aviso de Baja de Asegurado" form within 30 calendar days (Decreto Ley 13214 art. 8, text of Ley 890).
+4. **Each month,** compute both shares on the month's total ganado and deduct the employee's 12.71% and any ANS from pay.
+5. **Declare and pay the Gestora** through the Formulario de Pago de Contribuciones (FPC), online in the Gestora's virtual office or at a bank, by the **last working day of the month after the pay month**. July 2026 pay is due by Monday 31 August 2026 (DS 0778 art. 6 I; Gestora employer leaflet).
+6. **Pay the health fund** its 10% under its own planilla.
+7. From the day after the deadline the employer is in arrears (mora) and owes interest for late payment and an incremental interest, under the regulation (Ley 065 art. 107).
+
+## Penalties and interest
+
+- **Late payment to the Gestora:** the employer is in arrears from the day after the deadline and owes the contributions, the interés por mora, the interés incremental and surcharges (Ley 065 arts. 106 and 107). The Gestora collects through an administrative procedure, a coercive social-security procedure (its debit note is an enforceable title) and, where it applies, criminal proceedings (arts. 106, 109 and 110). The interest rates are set by regulation and were not read here.
+- **ANS contributors in arrears** owe the same interest (art. 108).
+- **No charge to the worker:** contributions and interest the employer failed to pay can never be collected from the insured worker (art. 107).
+
+## Cross-border points
+
+- **Foreign employees** working for an employer in Bolivia contribute in full (Ley 065 art. 104 I a). On leaving Bolivia for good without a pension they may transfer their account balance abroad (art. 105).
+- **Bolivians employed by foreign embassies and international organisations accredited in Bolivia** also contribute; the employer acts as withholding agent (art. 104 I b).
+- **No social-security agreement** was read for this skill. Posted workers and totalisation of periods with other countries: refer.
+- Tax on pay for work in Bolivia by non-domiciled individuals: [bolivia-income-tax](bolivia-income-tax.md). Payments for services from abroad: [bolivia-cross-border](bolivia-cross-border.md).
+
+## Two worked examples that recompute
+
+### Example 1: employee on Bs 8,000 a month, general employer
+
+July 2026. Total ganado Bs 8,000, below the ANS threshold.
+
+- Employee: 10% Bs 800.00; 1.71% Bs 136.80; 0.5% Bs 40.00; 0.5% Bs 40.00; total Bs 1,016.80 (12.71%). ANS: none.
+- Employer: health 10% Bs 800.00; professional risk 1.71% Bs 136.80; housing 2% Bs 160.00; solidarity 3.5% Bs 280.00; total Bs 1,376.80 (17.21%).
+- Pay before RC-IVA: Bs 6,983.20. Employer cost: Bs 9,376.80.
+- The Gestora FPC for July (Bs 1,016.80 employee plus Bs 576.80 employer, Bs 1,593.60) is due by Monday 31 August 2026; the Bs 800 goes to the health fund.
+
+```oa-check
+name: Employee Bs 8,000, July 2026, general employer
+inputs:
+  total_ganado: 8000
+steps:
+  - pension_10: total_ganado * 0.10
+  - riesgo_comun: total_ganado * 0.0171
+  - solidario_asegurado: total_ganado * 0.005
+  - comision: total_ganado * 0.005
+  - employee_total: pension_10 + riesgo_comun + solidario_asegurado + comision
+  - health: total_ganado * 0.10
+  - riesgo_profesional: total_ganado * 0.0171
+  - vivienda: total_ganado * 0.02
+  - patronal_solidario: total_ganado * 0.035
+  - employer_total: health + riesgo_profesional + vivienda + patronal_solidario
+  - to_gestora: employee_total + riesgo_profesional + vivienda + patronal_solidario
+  - pay_before_rc_iva: total_ganado - employee_total
+  - employer_cost: total_ganado + employer_total
+expected:
+  employee_total: 1016.80
+  employer_total: 1376.80
+  to_gestora: 1593.60
+  pay_before_rc_iva: 6983.20
+  employer_cost: 9376.80
 ```
 
-## Section 8 — Bank statement / terminology reading guide
+### Example 2: high earner on Bs 40,000 a month, general and mining employer
 
-### How contribution and tax debits appear on Bolivian bank statements
+Total ganado Bs 40,000. All three ANS slices apply.
 
-**Banks:** Banco Unión, Banco Nacional de Bolivia (BNB), Banco Mercantil Santa Cruz, Banco BISA, Banco de Crédito BCP. Statements are in Bs (BOB) and Spanish; debits are typically labelled "DEBITO" / "CARGO" and credits "ABONO" / "CREDITO". Decimal comma and thousands dot are common (e.g. `-1.016,80`).
+- Employee 12.71%: Bs 5,084.00.
+- ANS: (40,000 - 13,000) x 1.15% = Bs 310.50; (40,000 - 25,000) x 5.74% = Bs 861.00; (40,000 - 35,000) x 11.48% = Bs 574.00. ANS Bs 1,745.50.
+- Employee deductions: Bs 6,829.50. Pay before RC-IVA: Bs 33,170.50.
+- Employer, general: 17.21% = Bs 6,884.00. The edge: a mining employer, for a productive-area worker, adds 2.3% (Bs 920.00): Bs 7,804.00 (19.51%).
 
-**Gestora Pública (SIP contributions):**
-- Description: "GESTORA", "GESTORA PUBLICA", "APORTES", "APORTE DE VEJEZ", "APORTE SOLIDARIO", "ANS"
-- Timing: monthly, on or around the contribution due date
-- Amount: 12.71% (+ ANS) employee and employer solidarity portions
+```oa-check
+name: Employee Bs 40,000, ANS three slices, general and mining employer (2026)
+inputs:
+  total_ganado: 40000
+steps:
+  - employee_base: total_ganado * 0.1271
+  - ans_1: max(total_ganado - 13000, 0) * 0.0115
+  - ans_2: max(total_ganado - 25000, 0) * 0.0574
+  - ans_3: max(total_ganado - 35000, 0) * 0.1148
+  - ans: ans_1 + ans_2 + ans_3
+  - employee_deductions: employee_base + ans
+  - pay_before_rc_iva: total_ganado - employee_deductions
+  - employer_general: total_ganado * 0.1721
+  - employer_mining: employer_general + total_ganado * 0.023
+expected:
+  employee_base: 5084.00
+  ans_1: 310.50
+  ans_2: 861.00
+  ans_3: 574.00
+  ans: 1745.50
+  employee_deductions: 6829.50
+  pay_before_rc_iva: 33170.50
+  employer_general: 6884.00
+  employer_mining: 7804.00
+```
 
-**Caja de Salud (short-term health):**
-- Description: "CNS", "CAJA NACIONAL DE SALUD", "CAJA DE SALUD", "SEGURO CORTO PLAZO"
-- Employer 10% (+ professional risk 1.71%)
+### Bank-statement patterns
 
-**Housing fund:** "PRO VIVIENDA", "PROVIVIENDA" — employer 2%
+| Pattern in the narrative | What it is |
+|---|---|
+| GESTORA, GESTORA PUBLICA, FPC, APORTES, PLANILLA APORTES, COMISION GESTORA | Monthly payment to the Gestora: employee 12.71%, ANS, professional risk, housing, employer solidarity |
+| APORTE NACIONAL SOLIDARIO, ANS, APORTE SOLIDARIO | Solidarity contributions, inside the Gestora payment |
+| CNS, CAJA NACIONAL DE SALUD, CAJA DE SALUD, SEGURO CORTO PLAZO | Employer health contribution, 10% |
+| PRO VIVIENDA, PROVIVIENDA, VIVIENDA | Housing 2%, collected by the Gestora |
+| RIESGO PROFESIONAL, RIESGO COMUN | Risk premiums, inside the Gestora payment |
+| SIN, IMPUESTOS NACIONALES, SIAT, FORM 608, RC-IVA | RC-IVA withheld from pay ([bolivia-income-tax](bolivia-income-tax.md)), not a contribution |
+| IVA, FORM 200, IT, FORM 400, IUE, FORM 500 | Tax payments ([bolivia-iva](bolivia-iva.md), [bolivia-corporate-income-tax](bolivia-corporate-income-tax.md)), not contributions |
+| SUELDO, SALARIO, HABERES, PLANILLA SUELDOS, AGUINALDO, INDEMNIZACION, DESAHUCIO | Pay to workers ([bolivia-payroll](bolivia-payroll.md)), not contributions |
 
-**SIN / SIAT (tax):** "SIN", "SERVICIO DE IMPUESTOS NACIONALES", "SIAT", form references "FORM 608" (RC-IVA), "FORM 200" (IVA), "FORM 400" (IT), "FORM 500" (IUE) — these are taxes, NOT contributions.
+Bolivian bank exports (Banco Unión, BNB, Banco Mercantil Santa Cruz, Banco BISA, BCP) usually show dates as DD/MM/YYYY and amounts with a comma for decimals and a point for thousands (1.016,80).
 
-**Key terminology:**
-- Total ganado — total monthly gross remuneration (the contribution base)
-- Aporte — contribution
-- Aporte Nacional Solidario (ANS) — high-earner solidarity surcharge
-- RC-IVA — the flat-13% personal income tax (Complementary Regime to VAT)
-- Aguinaldo — 13th-month salary
-- Indemnización / desahucio — severance / dismissal compensation
-- NIT — taxpayer ID (Número de Identificación Tributaria); the last digit sets the filing due date
+## Ask the client first
 
-**Key identification tips:**
-1. Contribution debits are outgoing (DEBITO/CARGO), recurring monthly.
-2. Do not confuse Gestora/Caja contribution remittances with SIN tax payments — both are "EXCLUDE from IVA" but are different obligations.
-3. RC-IVA (Form 608) is a tax withholding; the 12.71% is a social-security contribution — keep them separate on the working paper.
-4. Inbound DSS/pension credits are benefits received, not contributions paid.
+1. Monthly total ganado of each worker, and whether anyone has a second employer (ANS on the combined total, Declaración Jurada Previsional).
+2. The employer's sector: mining and metallurgical (2.3% extra for productive-area workers) or not.
+3. Which health fund the employer is registered with (CNS or another caja).
+4. Each worker's age (the risk premiums stop at 65) and whether anyone already draws a pension.
+5. Whether any worker is foreign, posted from abroad, or works for an embassy or international organisation.
+6. Any months not yet paid to the Gestora or the health fund.
 
-## Section 9 — Onboarding fallback
+## Sources
 
-If the client provides only a bank statement and no other information:
+| Source | URL | Read on |
+|---|---|---|
+| Gaceta Oficial, Ley N° 065 de Pensiones of 10 December 2010 (HTML text): read arts. 83, 87, 88, 94, 95, 101, 104 to 110 and 151 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/138860 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1582 of 1 October 2024 (HTML text): read art. 2 II (new art. 87 c, d and f) and Disposición Final Segunda (applies from gestión 2024) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280468 | 2026-11-11 |
+| Gaceta Oficial, Decreto Supremo N° 5280 of 20 November 2024 (HTML text): read the recitals (DS 0778 art. 6 I deadline) and art. 2 (new DS 0778 art. 15, 2.3% mining); the attachment it replaces is not in the HTML | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280548 | 2026-11-11 |
+| Gaceta Oficial, Decreto Supremo N° 21637 of 25 June 1987 (HTML text): read art. 8 (10% employer health contribution) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/18031 | 2026-11-11 |
+| Gaceta Oficial, Decreto Supremo N° 4942 of 17 May 2023 (HTML text): read art. 1 (Gestora collects the 2% employer housing contribution) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/169107 | 2026-11-11 |
+| Gaceta Oficial, Decreto Supremo N° 5516 (HTML text): read art. 23 (SMN Bs 3,300 from 1 January 2026) and art. 21 (salary negotiation) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281033 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 890 of 26 January 2017 (HTML text): read the new art. 8 of Decreto Ley 13214 (30-day leaver notice) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/154386 | 2026-11-11 |
+| Gestora, employer leaflet, page 3 (image): who is an employer, registration, the 12.71% employee total | https://gestora.bo/pdf/folletos/3/3.jpg | 2026-11-11 |
+| Gestora, employer leaflet, page 4 (image): employee and employer percentage tables, FPC, last working day of the following month | https://gestora.bo/pdf/folletos/3/4.jpg | 2026-11-11 |
+| Caja Nacional de Salud, employer page: documents to register an employer and report changes | https://www.cns.gob.bo/Site/empleador | 2026-11-11 |
 
-1. **Scan for Gestora / Caja / Pro-Vivienda debits** — identify all outgoing payments matching Section 3 patterns.
-2. **Separate the three streams** — (a) Gestora SIP (pension + solidarity + ANS), (b) Caja de Salud + professional risk, (c) Pro-Vivienda.
-3. **Reverse-engineer the gross** — if a Gestora employee debit ≈ X, then total ganado ≈ X / 12.71% (only valid below the ANS threshold; above it, ANS distorts the ratio).
-4. **Identify RC-IVA** — Form 608 / SIN RC-IVA debits are the personal income tax, separate from contributions.
-5. **Flag for reviewer:** "Contribution and RC-IVA figures derived from bank statement amounts only. Total ganado, sector, ANS applicability, and Form 110 offsets have not been independently verified. Reviewer must confirm before filing."
-
-### Worked computation table (2025, general sector, SMN = Bs 2,750)
-
-**Worked computation table (2025, general sector, SMN = Bs 2,750)**  _(rates per PwC / Ley 1582 / DS 5383; arithmetic computed in this skill)_
-
-| Total ganado (Bs) | Employee SS (12.71%) | ANS | Employer SS (17.21%) | RC-IVA payable (no invoices) |
-| --- | --- | --- | --- | --- |
-| 8,000 | 1,016.80 | 0 | 1,376.80 | 0 |
-| 12,000 | 1,525.20 | 0 | 2,065.20 | 289.22 |
-| 13,000 | 1,652.30 | 0 | 2,237.30 | 402.70 |
-| 30,000 | 3,813.00 | 482.50 | 5,163.00 | 2,269.09 |
-
-Notes on the table (rates per PwC / Ley 1582 / DS 5383; arithmetic computed in this skill):
-- 8,000: see Example 1. RC-IVA 0 (below practical threshold).
-- 12,000: see Example 2. RC-IVA = Bs 289.22.
-- 13,000: SS = 13,000 × 12.71% = 1,652.30; employer = 13,000 × 17.21% = 2,237.30; RC-IVA base = 13,000 − 1,652.30 = 11,347.70; less 5,500 = 5,847.70; × 13% = 760.20; less presumed 357.50 = **Bs 402.70**.
-- 30,000: SS = 3,813.00; ANS = 482.50 (Example 3); employer = 30,000 × 17.21% = 5,163.00. RC-IVA base = 30,000 − 3,813.00 − 482.50 = 25,704.50; less 5,500 = 20,204.50; × 13% = 2,626.59 (rounds to 2,626.59); less presumed 357.50 = **Bs 2,269.09** (before invoices).
-
-### Tax framework (context)
-
-- **RC-IVA** — 13% percent (personal income tax, flat, territorial, offsettable with Form 110 invoices)  _(Ley 843; PwC)_
-- **IUE** — 25% percent (corporate income tax; mining +12.5%/+7.5% surtax + 1%–7% royalties; high-ROE financial/insurance +25% surtax)  _(PwC)_
-- **IVA** — 13% nominal (14.94% effective tax-inclusive) percent  _(SIN; PwC)_
-- **IT** — 3% of gross income, offsettable only against IUE percent  _(SIN; PwC)_
-
-### Penalties
-
-**Penalties**  _(APS; Código Tributario (Ley 2492))_
-
-| Type | Detail | Source |
-| --- | --- | --- |
-| Late/omitted contribution to Gestora | Surcharges, interest, maintenance-of-value (mantenimiento de valor) + APS fines; employer liable for unremitted employee contributions | APS — **[RESEARCH GAP — reviewer to confirm]** exact percentages |
-| Tax (RC-IVA/IVA/IT/IUE) non-compliance | Updated tax (mantenimiento de valor), interest, fines for omisión de pago and contravention; evasion penalties | Código Tributario (Ley 2492) — **[RESEARCH GAP — reviewer to confirm]** exact percentages |
-
-### Sources
-
-- PwC Worldwide Tax Summaries — *Bolivia — Individual — Other taxes* (employee 12.71%; 60-min-salary ceiling ≈ USD 28,450; ANS scale 1.15%–11.48%), *Corporate — Other taxes* (employer 17.21% general / 19.51% mining; IVA 13%/14.94%; IT 3%), *Corporate — Taxes on corporate income* (IUE 25%; mining surtaxes/royalties; DS 5327 offset), *Individual — Taxes on personal income* (RC-IVA 13%; territorial).
-- Planifica Consultores — employee 10/1.71/0.5/0.5 = 12.71%; employer 10+1.71+2+3.5 = 17.21%; APS Circular APS/DP/DJ/N°100/2025 (retroactive reintegro due last business day Aug 2025).
-- Rigoberto Paredes & Asociados — worker/employer components; RC-IVA mechanics; DS 5383 presumed deduction reduced to 13% of 1 SMN; ≈ Bs 9,451 threshold.
-- Ley N° 1582 de 01/10/2024 (MEFP/Gaceta Oficial) — employer solidarity 3%→3.5%; ANS thresholds/rates.
-- Bolivia Impuestos — ANS post-Ley-1582 rates 1.15% / 5.74% / 11.48% (source returned HTTP 403 on direct fetch; corroborated via PwC + search snippet).
-- Orbitax — 2025 SMN Bs 2,750 (+10%, eff. 1 May 2025 retroactive to January, DS 5383).
-- SIN / SIAT — RC-IVA, Form 110 / Form 608 V.4 monthly filing by last NIT digit; 120-day invoice validity.
-- CISS — confirms employer solidarity raised to 3.5% under Ley 1582.
-
-### Test suite
-
-**Test 1:** Total ganado Bs 8,000, general sector. → Employee SS = 8,000 × 12.71% = **Bs 1,016.80**; ANS = 0; employer SS = 8,000 × 17.21% = **Bs 1,376.80**; RC-IVA = **Bs 0**.
-
-**Test 2:** Total ganado Bs 12,000, general sector. → Employee SS = **Bs 1,525.20**; ANS = 0; employer SS = 12,000 × 17.21% = **Bs 2,065.20**; RC-IVA payable (no invoices) = **Bs 289.22**.
-
-**Test 3:** Total ganado Bs 30,000, general sector. → Employee SS = **Bs 3,813.00**; ANS = (17,000 × 1.15%) + (5,000 × 5.74%) = 195.50 + 287.00 = **Bs 482.50**; employer SS = **Bs 5,163.00**; RC-IVA payable (no invoices) = **Bs 2,269.09**.
-
-**Test 4:** Total ganado Bs 40,000, general sector — ANS all three tranches. → ANS = (27,000 × 1.15%) + (15,000 × 5.74%) + (5,000 × 11.48%) = 310.50 + 861.00 + 574.00 = **Bs 1,745.50**. Employee SS = 40,000 × 12.71% = **Bs 5,084.00**. **[RESEARCH GAP — reviewer to confirm]** ANS mechanism.
-
-**Test 5:** Total ganado Bs 8,000, mining sector. → Employer SS = 8,000 × 19.51% = **Bs 1,560.80** (employee unchanged at Bs 1,016.80).
-
-**Test 6:** Total ganado Bs 5,000 (below 2-SMN exemption after SS? check). → Employee SS = 5,000 × 12.71% = Bs 635.50; RC-IVA base = 5,000 − 635.50 = 4,364.50; less 2-SMN exemption (5,500) → negative → **RC-IVA = Bs 0**. Net pay = 5,000 − 635.50 = **Bs 4,364.50**.
-
-**Test 7:** Employer remitting for an Bs 8,000 employee — verify employer breakdown sums. → 800.00 (health) + 136.80 (risk) + 160.00 (housing) + 280.00 (solidarity) = **Bs 1,376.80** = 17.21% ✓.
-
-**Test 8:** RC-IVA on Bs 13,000. → base 11,347.70; less 5,500 = 5,847.70; × 13% = 760.20; less 357.50 = **Bs 402.70** payable (before invoices).
-
-### Prohibitions
-
-- **Never compute without total ganado** — NEVER compute contributions without the monthly total ganado.  _(unsure)_
-- **Never use pre-2024 ANS rates** — NEVER use the pre-2024 ANS rates of 1% / 5% / 10% — Ley 1582 (Oct 2024) raised them to 1.15% / 5.74% / 11.48%.  _(Ley 1582)_
-- **Never apply ANS below threshold** — NEVER apply ANS to a worker at or below Bs 13,000/month.  _(unsure)_
-- **Never assume mining rate without confirming sector** — NEVER assume the mining rate (19.51%) without confirming the sector — default to general (17.21%) and flag.  _(unsure)_
-- **Never treat RC-IVA as progressive** — NEVER treat RC-IVA as progressive — it is a flat 13% (and largely offsettable with Form 110 invoices).  _(unsure)_
-- **Never omit 2-SMN exemption or presumed deduction** — NEVER omit the 2-SMN (Bs 5,500) exemption or the DS 5383 presumed deduction (Bs 357.50) from RC-IVA.  _(DS 5383)_
-- **Never cap contributions without confirming ceiling** — NEVER cap contributions at the pension ceiling without confirming the exact Bs figure (research gap).  _(unsure)_
-- **Never quantify penalties/arrears** — NEVER quantify contribution or tax penalties/arrears — escalate to a Bolivian-qualified professional.  _(unsure)_
-- **Never conflate obligations** — NEVER conflate Gestora SIP contributions, Caja de Salud, Pro-Vivienda, and SIN tax payments — they are separate obligations.  _(unsure)_
-- **Never present figures as definitive** — NEVER present figures as definitive — this is a Tier 2 skill; all output must be reviewer-confirmed before filing.  _(unsure)_
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the regulation that sets the 1.71% common-risk and professional-risk premiums (the DS 0778 attachment as replaced by DS 5280 is not in the Gaceta HTML; the figures come from the Gestora's leaflet); whether a contribution ceiling (tope) applies to total ganado, and at what amount, for 2026; the definitions of total ganado and total solidario in Ley 065's glossary; the health fund's payment deadline and its late-payment surcharges; the Gestora's interest rates for late payment; the treatment of the aguinaldo and severance in the contribution base; any social-security agreement with another country; whether the Executive has updated the ANS thresholds since Ley 1582.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bolivia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bolivia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bolivia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bolivia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
