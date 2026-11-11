@@ -54,7 +54,7 @@ This skill covers what Suriname taxes when income, people or companies cross its
 | Indonesia treaty (signed 14 October 2003, effective 1 January 2014 per the Indonesian tax authority): dividends to the beneficial owner (art. 10) | At most 15% | 2026 | https://pajak.go.id/en/p3b/republic-suriname |
 | Indonesia treaty: interest (art. 11), royalties to the beneficial owner (art. 12); branch profits tax on a permanent establishment's after-tax profit (art. 10) | At most 15% each | 2026 | same |
 | Indonesia treaty: construction site or project is a permanent establishment (art. 5) | Over 6 months | 2026 | same |
-| Curacao treaty (signed 1 July 2024): dividends (art. 10(2)) | 5% for a company holding directly at least 10%; 10% otherwise. Not in force when read (Verdragenbank shows no entry-into-force date); applies only from 1 January of the year after entry into force (art. 30(2)) | 2026 | https://zoek.officielebekendmakingen.nl/trb-2024-90.pdf |
+| Curacao treaty (signed 1 July 2024): dividends (art. 10(2), (3)) | Nil to a company holding directly at least 10% for a 365-day period that includes the payment date, or to a recognised pension fund (art. 10(3)); otherwise 5% for a company holding directly at least 10%, 10% in other cases (art. 10(2)). Not in force when read (Verdragenbank shows no entry-into-force date); applies only from 1 January of the year after entry into force (art. 30(2)) | 2026 | https://zoek.officielebekendmakingen.nl/trb-2024-90.pdf |
 
 ## The base
 
