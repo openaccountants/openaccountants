@@ -1,7 +1,7 @@
 ---
 name: paraguay-payroll
 description: "Paraguay payroll for private-sector employees in 2026: the two minimum wages of the year (G 2,899,048 a month to 30 June under Decreto N° 4122/2025 and G 3,044,000 from 1 July 2026 under Decreto N° 6225/2026 and Resolución MTESS N° 670/2026), the daily, hourly, night, part-time and apprentice minimums, working hours, overtime at 50%, night work at 30%, night overtime and holidays at 100%, the aguinaldo (13th salary, one twelfth of the year's pay, before 31 December, free of IPS and IRP), the family allowance (5% of the minimum wage per child), the payslip, permitted deductions, gross-to-net with the 9% IPS withholding, the employer's cost, and why a private employer withholds no income tax (IRP) from salaries. Also holidays, notice and the dismissal indemnity. Trigger on: Paraguay payroll, planilla de sueldos, salario mínimo 2026 Paraguay, aguinaldo, sueldo neto, horas extras Paraguay, bonificación familiar, asignación familiar, costo del empleado Paraguay. Out of scope: IPS rates in detail (paraguay-social-contributions), the employee's own IRP return (paraguay-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: PY
 tax_year: 2026
 last_updated: 2026-11-11
@@ -12,7 +12,7 @@ tier: 2
 domain: payroll
 ---
 
-# Paraguay payroll: minimum wage, overtime, aguinaldo and gross-to-net, 2026 v0.2
+# Paraguay payroll: minimum wage, overtime, aguinaldo and gross-to-net, 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -42,11 +42,11 @@ Out of scope: public servants, bank employees' pension contributions (Caja Banca
 | Part-time hourly minimum from 1 July 2026 (Res. 670 art. 2) | G 14,635 day hour; G 21,743 night hour | 2026 (from 1 July) | same |
 | Apprentice and dual apprenticeship minimum from 1 July 2026 (Res. 670 art. 3) | G 1,826,400 a month; G 70,246 a day | 2026 (from 1 July) | same |
 | How the minimum daily and hourly amounts are derived (Res. 670 art. 1) | monthly paid: monthly / 30 per day, then / 8 per day hour or / 7 per night hour; jornaleros and piece work: monthly / 26 per day | 2026 | same |
-| Maximum ordinary hours (Labour Code art. 194 as replaced by Ley 496; arts. 195 and 196) | day work (06:00 to 20:00) 8 a day, 48 a week; night work (20:00 to 06:00) 7 a day, 42 a week; mixed 7.5 a day, 45 a week | 2026 | https://www.bacn.gov.py/leyes-paraguayas/2514/ley-n-496-modifica-amplia-y-deroga-articulos-de-la-ley-213-93-codigo-del-trabajo |
+| Maximum ordinary hours (Labour Code art. 194 as replaced by Ley 496; arts. 195 and 196) | day work (06:00 to 20:00) 8 a day, 48 a week; night work (20:00 to 06:00) 7 a day, 42 a week; mixed 7.5 a day, 45 a week | 2026 | [Ley 496, amended hours](https://www.bacn.gov.py/leyes-paraguayas/2514/ley-n-496-modifica-amplia-y-deroga-articulos-de-la-ley-213-93-codigo-del-trabajo); [Labour Code art. 195, times](https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-establece-el-codigo-del-trabajo) |
 | Overtime, night work, night overtime, holidays (art. 234) | overtime at least +50% of the ordinary rate; night work +30% over day pay; night overtime +100% of the night hourly rate; hours on public holidays +100% of the ordinary working-day hourly rate | 2026 | https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-establece-el-codigo-del-trabajo |
 | Aguinaldo (arts. 243 to 245) | one twelfth of all pay earned in the calendar year (salary, overtime, commissions and other); before 31 December, or on leaving; cannot be attached | 2026 | same |
-| Family allowance (arts. 261 to 263, 268 and 269) | 5% of the minimum wage per child under 17 (no age limit if fully disabled), living in Paraguay and maintained by the worker; lost if the worker's salary exceeds 200% of the minimum wage; if both parents are employees, paid to only one and not payable if either parent's wage exceeds that threshold (art. 266); not salary for the aguinaldo or IPS; paid with the salary | 2026 | same |
-| Pay in kind (art. 231) | at most 30% of pay, and only where suited to the worker's and family's personal use | 2026 | same |
+| Family allowance (arts. 261 to 263, 268 and 269) | 5% of the minimum wage per child under 17 (no age limit if fully disabled), living in Paraguay, under the worker's parental authority and maintained by the worker; lost if the worker's salary exceeds 200% of the minimum wage; if both parents are employees, paid to only one and not payable if either parent's wage exceeds that threshold (art. 266); not salary for the aguinaldo or IPS; paid with the salary | 2026 | same |
+| Pay in kind (art. 231) | exceptionally at most 30% of pay, with fair and reasonable valuation, and only where suited to the worker's and family's personal use | 2026 | same |
 | Recovery of debts to the employer (art. 242) | at most 30% of the month's pay | 2026 | same |
 | Paid holidays (art. 218 as replaced by Ley 496) | after each completed continuous year with the same employer: up to 5 years' service 12 working days; over 5 to 10 years 18; over 10 years 30 | 2026 | https://www.bacn.gov.py/leyes-paraguayas/2514/ley-n-496-modifica-amplia-y-deroga-articulos-de-la-ley-213-93-codigo-del-trabajo |
 | Notice for an open-ended contract (art. 87) | after probation up to 1 year 30 days; over 1 to 5 years 45; over 5 to 10 years 60; over 10 years 90 | 2026 | https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-establece-el-codigo-del-trabajo |
@@ -60,7 +60,9 @@ Out of scope: public servants, bank employees' pension contributions (Caja Banca
 
 **Hourly rate for overtime.** Resolución 670 art. 1 expressly derives minimum hourly rates from the monthly minimum: /30 per day, then /8 for day work or /7 for night work. Its application to an agreed above-minimum monthly salary was not established from a primary provision here. Use the verified applicable minimum hourly amount in the example below; obtain the correct contractual/legal hourly base before computing above-minimum overtime.
 
-**Gross to net, each month.**
+**Full-time general-regime gross to net, each month.**
+
+For part-time or special pension regimes, use the corresponding base and rates in [paraguay-social-contributions](paraguay-social-contributions.md); this algorithm's floor and 9%/16.5% are not universal.
 
 1. Gross pay for the month (without the family allowance).
 2. Employee's IPS: 9% of gross pay, never on less than the minimum wage (rate and base rules in [paraguay-social-contributions](paraguay-social-contributions.md)).
@@ -168,7 +170,7 @@ expected:
 1. Is the worker paid monthly, by the day, by the hour (part-time) or by the piece, and is the work by day, night or mixed?
 2. The month and year of the pay (before or from 1 July 2026), the agreed salary in guaraníes and any occupation-specific minimum in Resolución MTESS 670/2026.
 3. Overtime, night and holiday hours worked, commissions, bonuses and pay in kind.
-4. Children under 17 (or disabled) living in Paraguay and maintained by the worker, whether both parents are employees, each parent's wage, and whether the other parent already receives the allowance.
+4. Children under 17 (or disabled) living in Paraguay, under the worker's parental authority and maintained by the worker, whether both parents are employees, each parent's wage, and whether the other parent already receives the allowance.
 5. Start date (for holidays, notice and indemnity) and, for a leaver, the end date and the reason.
 6. Whether the employer is a bank (Caja Bancaria) or a household employing a domestic worker.
 
