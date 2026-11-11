@@ -123,14 +123,14 @@ This skill runs a monthly payroll for an employee of a private-sector employer i
 
 | Step | What | When | Where |
 |---|---|---|---|
-| Before the first hire | Register the company's wage-council group and subgroup; register each worker (alta) | Before work starts | BPS online services, GAFI ([BPS](https://www.bps.gub.uy/818/declarar-al-personal.html)) |
+| Before the first hire | Register the company's wage-council group and subgroup; register each worker (alta) | Alta from 10 days before the start date up to the start date itself ([BPS guide, Industria y Comercio](https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf)) | BPS online services, GAFI, or the BPS Empresas app ([BPS](https://www.bps.gub.uy/818/declarar-al-personal.html)) |
 | Monthly | Nómina (declaración nominada) of all staff and pay for the work month, with the IRPF data from form 3100 | Month after the work month, by the BPS calendar date | BPS online services, declaración nominada |
 | Monthly | Pay the BPS bill (jubilatorio, FONASA, FRL, FGCL) and the IRPF bill | Same calendar; the IRPF bill carries the DGI due date ([BPS, pago](https://www.bps.gub.uy/10357/pago-de-aportes.html)) | BPS service "Emitir facturas, declaración jurada de no pago y pagar aportes", or the collection network |
 | If you cannot pay | File the nómina with a declaración jurada de no pago (DJNP) and pay at least the personal contributions withheld | By the due date | Same service |
 | Leavers and changes | Register the baja or the change; a worker returning early from unemployment benefit within 5 working days | When it happens | GAFI |
 | Year end | Ajuste anual of IRPF | December 2026 pay | December nómina |
 
-**2026 calendar for most private employers** ("todos los demás contribuyentes", by the last digit of the BPS company number), [Resolución de Directorio 37-15/2025](https://www.bps.gub.uy/bps/file/23709/1/calendario-de-vencimientos-2026.pdf): in the month of payment, digits 0 to 4 / 5 to 9 are due on January 19 / 20, February 18 / 19, March 16 / 17, April 20 / 21, May 19 / 20, June 15 / 16, July 15 / 16, August 17 / 18, September 15 / 16, October 16 / 19, November 17 / 18, December 15 / 16. Paying by internet extends the payment date (not the nómina date) to January 23, February 24, March 20, April 24, May 25, June 22, July 21, August 21, September 21, October 22, November 23 and December 21. Seasonal companies are due on the fifth working day of the month.
+**2026 calendar for most private employers** ("todos los demás contribuyentes", by the last digit of the BPS company number), [Resolución de Directorio 37-15/2025](https://www.bps.gub.uy/bps/file/23709/1/calendario-de-vencimientos-2026.pdf): in the month of payment, digits 0 to 4 / 5 to 9 are due on January 19 / 20, February 18 / 19, March 16 / 17, April 20 / 21, May 19 / 20, June 15 / 16, July 15 / 16, August 17 / 18, September 15 / 16, October 16 / 19, November 17 / 18, December 15 / 16. Paying by internet extends the payment date (not the nómina date) to January 23, February 24, March 20, April 24, May 25, June 22, July 21, August 21, September 21, October 22, November 23 and December 21. Seasonal companies are due on the fifth working day of the month. Large taxpayers ("mayores contribuyentes") and public bodies have earlier dates in the same calendar (for example November 12 for large taxpayers).
 
 ## Penalties and interest
 
@@ -271,6 +271,7 @@ expected:
 | BPS, valores históricos, 2025 and 2026 entries read for tope C, nivel B, minimum wage, cuota mutual and recargo | https://www.bps.gub.uy/5479/valores-historicos.html | 2026-11-11 |
 | BPS, IRPF page read (form 3100 timing, BPS collection, 30 April closing) | https://www.bps.gub.uy/10323/impuesto-a-la-renta-de-las-personas-fisicas-irpf.html | 2026-11-11 |
 | BPS, declarar al personal page read (GAFI, nómina) | https://www.bps.gub.uy/818/declarar-al-personal.html | 2026-11-11 |
+| BPS, Guía de obligaciones Industria y Comercio (January 2025 edition, page updated 21 May 2026), all pages read: alta deadline, nómina, payment | https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf | 2026-11-11 |
 | BPS, pago de aportes page read (monthly payment, DJNP, minimum payment, IRPF bills) | https://www.bps.gub.uy/10357/pago-de-aportes.html | 2026-11-11 |
 | BPS, calendario de vencimientos 2026 (Resolución de Directorio 37-15/2025), full table read | https://www.bps.gub.uy/bps/file/23709/1/calendario-de-vencimientos-2026.pdf | 2026-11-11 |
 | BPS, multas y recargos por mora page read (fine percentages) | https://www.bps.gub.uy/18132/multas-y-recargos-por-mora.html | 2026-11-11 |
