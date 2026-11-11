@@ -22,7 +22,9 @@ last_updated: 2026-11-05
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
+tier: 1
+reviewed_by: "Yeong Min Lee"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
 ---
