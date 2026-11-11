@@ -18,7 +18,7 @@ Tax years: 2026 (4 skills), 2025 (4 skills).
 |---|---|---|---|
 | Income tax | [Income tax](peru-income-tax.md) | 2025 | Needs updating |
 | Company tax | [Corporate income tax](pe-corporate-income-tax.md) | 2025 | Needs updating |
-| VAT or sales tax | [IGV and IPM](peru-igv.md) | 2026 | Checked against the law; not yet approved |
+| VAT or sales tax | [IGV and IPM](peru-igv.md) | 2026 | Built from the law; not yet approved |
 | Social contributions | [Social contributions](peru-social-contributions.md) | 2026 | Ready |
 | Payroll | [Payroll](peru-payroll.md) | 2026 | Ready |
 | Transfer pricing | [Transfer pricing](peru-transfer-pricing.md) | 2026 | Built from the law; not yet approved |
