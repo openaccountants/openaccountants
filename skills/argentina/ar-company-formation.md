@@ -11,7 +11,7 @@ description: >
   government fees or universal completion times. Provincial procedures,
   regulated industries, complex contributions and future AML implementation
   require their own official-source review.
-version: 0.1
+version: 0.2
 jurisdiction: AR
 tax_year: 2026
 last_updated: 2026-11-11
@@ -21,13 +21,13 @@ domain: formation
 type: decision
 ---
 
-# Argentina: company formation and entity choice 2026 v0.1
+# Argentina: company formation and entity choice 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to
 
-Ordinary companies formed under Ley General de Sociedades 19.550 (LGS) and the SAS provisions of Ley 27.349. This is a Tier 2 source-cited draft without professional approval. National substantive rules and CABA IGJ procedures are distinguished; the registry of the company's actual domicile governs. IGJ is not the provincial registry for the whole country.
+Ordinary companies formed under Ley General de Sociedades 19.550 (LGS) and the SAS provisions of Ley 27.349. This Guide is **Not yet approved**. National substantive rules and CABA IGJ procedures are distinguished; the registry of the company's actual domicile governs. IGJ is not the provincial registry for the whole country.
 
 **Quick answer:** identify owners, activities, domicile, governance and funding before choosing SA/SAU, SRL or SAS. Ordinary SA has a fixed statutory peso minimum, SAS a current minimum-wage multiple, and SRL no fixed national peso minimum in its provisions. The cash-payment percentage is not the same for SAU. Obtain incorporation date, owners and foreign-company status, capital/source, intended objects, managers' actual domiciles and registry first.
 
