@@ -8,9 +8,7 @@ tax_year: 2026
 last_updated: 2026-10-23
 source_checked: 2026-10-23
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Nadir Khan"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: income-tax
 ---
 
