@@ -85,9 +85,13 @@ Linked skills, not repeated here:
 
 **Exporters (art. 36).** Exporters recover the IVA on purchases for export, by setting it against débitos or by refund (arts. 80 onward). The same applies to services qualified as exports (art. 12 E No. 16).
 
-**Electronic documents.** SII's DTE format gives the type codes: 33 factura electrónica, 34 factura no afecta o exenta electrónica, 39 boleta electrónica, 41 boleta exenta electrónica, 43 liquidación-factura electrónica, 46 factura de compra electrónica, 52 guía de despacho electrónica, 56 nota de débito electrónica, 61 nota de crédito electrónica, 110 factura de exportación electrónica, 111 and 112 export debit and credit notes. The purchase and sales register (RCV) built from these documents feeds the F29 proposal (DL 825 art. 59).
+**Electronic documents.** SII's DTE format gives the type codes: 33 factura electrónica, 34 factura no afecta o exenta electrónica, 39 boleta electrónica, 41 boleta exenta electrónica, 43 liquidación-factura electrónica, 46 factura de compra electrónica, 52 guía de despacho electrónica, 56 nota de débito electrónica, 61 nota de crédito electrónica, 110 factura de exportación electrónica, 111 and 112 export debit and credit notes. The purchase and sales register (RCV) built from these documents feeds the F29 proposal (DL 825 art. 59). Input credit needs an invoice: the law grants crédito fiscal on "el impuesto ... recargado en las facturas" (art. 23 No. 1), so a boleta (39, 41), which shows no separate IVA, gives the buyer no credit.
 
-**Withholding by buyers (cambio de sujeto, art. 3).** SII can make the buyer withhold all or part of the IVA. The DTE format lists the codes and usual rates: legumes, rice and hydrobiological products usually 10%; cattle and timber usually 8%; wheat usually 4%; raspberries and raisins 14%; scrap, construction, gold, cartons and wild products total withholding. Confirm the rate in the SII resolution for the sector before applying it.
+**Withholding by buyers (cambio de sujeto, art. 3).** SII can make the buyer withhold all or part of the IVA. The DTE format lists the codes and usual rates: code 15, total IVA withheld on purchase invoices (types 45, 46); legumes (30), rice (36) and hydrobiological products (37) usually 10%; cattle (32) and timber (33) usually 8%; wheat (34) usually 4%; raspberries and raisins (48) 14%; scrap (38), PPA (39), construction (41), gold (46), cartons (47) and wild products (31) total withholding. Confirm the rate in the SII resolution for the sector before applying it.
+
+**IVA anticipado.** Sellers of meat and flour charge an advance IVA to the buyer, shown on the invoice under its own DTE tax code: slaughter (faenamiento) of meat 5% on the base amount (code 17), meat 5% (code 18), flour 12% (code 19). Source: SII DTE format, tax code table; the underlying SII resolutions were not read.
+
+**Conservative defaults when facts are missing.** Treat a sale as taxed at 19% until the exemption is shown (arts. 8, 12, 13); treat an export as domestic until the export document (DUS, or Customs qualification of a service under art. 12 E No. 16) is in hand; give no credit on a purchase without an electronic invoice to the buyer's RUT (art. 23 Nos. 1, 5), or for cars and their fuel (No. 4), or for a business-use share that is not documented (No. 2).
 
 ## Deadlines and filing
 
@@ -204,6 +208,10 @@ expected:
 4. Are any purchases for cars, their fuel or repairs, for exempt activity, or for mixed use (proportional credit)?
 5. What remanente came from last month, and from which period?
 6. Any imports, services bought from abroad, or sales to consumers abroad or from abroad (reverse charge, simplified regime, USD 500 rule)?
+
+**Documents to collect:** the RUT and start-of-activities record; the month's RCV, or the XML of every DTE issued and received; last month's F29 (for the remanente); import declarations (DIN) and export declarations (DUS) with transport documents; bank statements only to reconcile.
+
+**Refer to an accountant, do not compute here:** proportional credit for mixed taxed and exempt activity (art. 23 No. 3 and the Reglamento); IVA on real estate and construction contracts (arts. 8 e), 8 l), 23 No. 6); buyer withholding (cambio de sujeto) as withholding agent; the exporter refund procedure (art. 36, arts. 80 onward); leasing and leaseback; free-trade zones (Iquique, Punta Arenas); a foreign provider's own registration in the simplified regime (arts. 35 A to 35 N).
 
 ## Sources
 
