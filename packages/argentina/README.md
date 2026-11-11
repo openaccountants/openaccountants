@@ -14,10 +14,11 @@
 7. `ar-social-contributions.md`
 8. `ar-tax-overview.md`
 9. `ar-vat-return.md`
-10. `argentina-income-tax.md`
-11. `argentina-iva.md`
-12. `references.md`
-13. `company-formation-workflow-base.md`
+10. `argentina-cross-border.md`
+11. `argentina-income-tax.md`
+12. `argentina-iva.md`
+13. `references.md`
+14. `company-formation-workflow-base.md`
 
 ## Also known as
 
