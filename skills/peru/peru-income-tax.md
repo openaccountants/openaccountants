@@ -58,7 +58,7 @@ The table is for **2026** unless a row explicitly says historical comparison. Ra
 | Item and conditions | 2026 figure or boundary | Official source and short Spanish extract |
 |---|---|---|
 | UIT for 2026 computations | PEN 5,500; 2025 historical UIT was PEN 5,350 and belongs only to 2025 work | [SUNAT UIT table, DS 301-2025-EF](https://www.sunat.gob.pe/indicestasas/uit.html): `2026 ... 5,500` |
-| Calendar exercise | 1 January to 31 December | [LIR art. 57](https://www.sunat.gob.pe/legislacion/renta/ley/capviii.pdf): `primero de enero`; `31 de diciembre` |
+| Calendar exercise | 1 January to 31 December | [LIR art. 57](https://www.sunat.gob.pe/legislacion/renta/ley/capviii.pdf): `1 de enero`; `31 de diciembre` |
 | Art. 33(a) gross fourth-category deduction | 20%, deduction capped at 24 UIT = PEN 132,000; no deduction for art. 33(b) income | [LIR art. 45](https://www.sunat.gob.pe/legislacion/renta/ley/capvi.pdf): `veinte por ciento (20%)`; `24 Unidades` |
 | Fixed combined fourth/fifth-category deduction | 7 UIT = PEN 38,500, once in total and limited to those net domestic work categories | [LIR art. 46](https://www.sunat.gob.pe/legislacion/renta/ley/capvi.pdf), [Regulation art. 26](https://www.sunat.gob.pe/legislacion/renta/regla/cap6.pdf): `hasta el límite` |
 | Evidenced additional work-expense deduction | Combined maximum 3 UIT = PEN 16,500, only amounts actually qualifying and paid; not automatic | [LIR art. 46](https://www.sunat.gob.pe/legislacion/renta/ley/capvi.pdf), [SUNAT 2026 guidance](https://personas.sunat.gob.pe/devoluciones/gastos-deducibles-para-ano-2026): `S/ 16,500 para el 2026` |
