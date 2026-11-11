@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "VE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Jose Padilla"
 ---
 
 # Venezuela IVA
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Jose Padilla** on 2026-06-21.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -83,7 +81,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Filing frequency | Monthly (Contribuyente Ordinario) |
 | Filing deadline | Calendar published by SENIAT based on last digit of RIF |
 | Contributor | Open Accountants Community |
-| Validated by | Verified by Jose Padilla (CPA) on 2026-06-21 |
 | Skill version | 2.0 |
 
 ### CRITICAL WARNING
