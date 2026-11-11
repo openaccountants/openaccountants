@@ -13,7 +13,7 @@ description: >
   Guides. Residence changes, other company regimes and special activities receive
   component referrals while supported preparation continues. This is an intake
   method, not permission to file, pay or make an election.
-version: 1.1
+version: 1.2
 jurisdiction: BR
 tax_year: 2026
 last_updated: 2026-11-11
@@ -24,7 +24,7 @@ domain: tax
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Brazil freelance intake v1.1
+# Brazil freelance intake v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -316,4 +316,4 @@ Not yet confirmed: complete exercise 2027 annual-return publication/calendar/sof
 
 ## Talk to a verified accountant
 
-Use the draft intake and evidence trail for professional review before filing or taking a tax position. Find Brazil Guides and professional-review options at [OpenAccountants](https://openaccountants.com). This source-cited draft does not record accountant approval of the taxpayer's facts or return.
+Use the draft intake and evidence trail for professional review before filing or taking a tax position. Find Brazil Guides and professional-review options at [OpenAccountants](https://openaccountants.com). This Guide is **Not yet approved** and does not record accountant approval of the taxpayer's facts or return.
