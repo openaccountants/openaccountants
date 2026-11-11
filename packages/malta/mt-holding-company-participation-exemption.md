@@ -1,10 +1,10 @@
 ---
 name: mt-holding-company-participation-exemption
 description: "Malta holding company for a family, in depth: the participating holding test, the participation exemption on dividends and gains with its anti-abuse conditions and the beneficial owner test for selling a Malta subsidiary, the company rate with shareholder refunds, the five tax accounts, tax deducted from untaxed dividends to Malta-resident family members, the elective final tax without imputation, and the notional interest deduction. Trigger on: Malta holding company, participation exemption Malta, Malta tax refund six-sevenths, Malta family holding, Malta untaxed account dividend, Malta final tax without imputation election."
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -128,7 +128,7 @@ A "recipient" (article 61(a)) is any ONE of:
 - (iii) "a trustee of a trust where the beneficiaries of such trust are persons referred to in subparagraphs (i) and (ii)";
 - (iv) an EU/EEA individual (and spouse where applicable) in the circumstances of the first and second provisos to article 56(1)(c).
 
-Who is NOT a recipient: a company resident in Malta; a non-resident person not owned and controlled by, and not acting for, an individual ordinarily resident and domiciled in Malta; a trustee whose beneficiaries are not within (i) or (ii). An untaxed dividend paid to a person who is not a recipient is not "charged to tax under this Act in the hands of such person" (article 66).
+Who is NOT a recipient: a company resident in Malta; a non-resident person not owned and controlled by, and not acting for, an individual ordinarily resident and domiciled in Malta, unless that person is an EU/EEA individual within (iv); a trustee whose beneficiaries are not within (i) or (ii). An untaxed dividend paid to a person who is not a recipient is not "charged to tax under this Act in the hands of such person" (article 66).
 
 Other rules:
 
