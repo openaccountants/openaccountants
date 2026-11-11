@@ -15,6 +15,7 @@ version: 3.1
 jurisdiction: BR
 tax_year: 2026
 last_updated: 2026-11-11
+source_checked: 2026-11-11
 category: international
 type: situation-rules
 domain: tax
