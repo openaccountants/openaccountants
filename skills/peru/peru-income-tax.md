@@ -9,9 +9,7 @@ depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Maria Clemencia Valverde Rios"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: income-tax
 ---
 
@@ -23,7 +21,6 @@ domain: income-tax
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Maria Clemencia Valverde Rios** on 2026-06-29.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -89,8 +86,6 @@ domain: income-tax
 | Filing portal | SUNAT Operaciones en Línea (SOL) — https://www.sunat.gob.pe — and the SUNAT Personas APP |
 | Annual return form | **Formulario Virtual N° 709 — Renta Anual — Persona Natural** |
 | Filing deadline | TY2025: staggered by last RUC digit, **27 May 2026 — 10 June 2026** (Res. Sup. N° 386-2025/SUNAT) — see Section 5.6 |
-| Validated by | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
-| Validation date | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
 | Skill version | 0.1 |
 
 ### Progressive Scale — Rentas de Trabajo (4ta + 5ta + foreign-source)
