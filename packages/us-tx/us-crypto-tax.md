@@ -8,9 +8,7 @@ last_updated: 2026-07-13
 source_checked: 2026-10-17
 category: federal
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "James Wallach"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: crypto
 ---
 
