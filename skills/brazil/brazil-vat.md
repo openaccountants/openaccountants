@@ -1,900 +1,311 @@
 ---
 name: brazil-vat
-description: Use this skill whenever asked about Brazilian indirect taxes, VAT, consumption taxes, PIS, COFINS, ICMS, ISS, IPI, CBS, IBS, Imposto Seletivo, NF-e (Nota Fiscal Eletronica), Simples Nacional, CNPJ registration, tax reform (EC 132/2023), or any request involving Brazilian goods and services taxation, filing, compliance, or classification. Trigger on phrases like "Brazil tax", "Brazilian VAT", "PIS/COFINS", "ICMS", "ISS", "IPI", "CBS", "IBS", "NF-e", "nota fiscal", "Simples Nacional", "CNPJ", "tax reform Brazil", or any request involving Brazilian indirect tax compliance. This skill contains the complete Brazilian indirect tax framework covering both the current multi-tax system (PIS/COFINS/ICMS/ISS/IPI) and the new unified system (CBS/IBS/IS) under Constitutional Amendment 132/2023. ALWAYS read this skill before touching any Brazilian indirect tax work.
-version: 2.0
+description: >
+  Use this Guide for a Brazilian company or business reviewing calendar-2026 federal
+  consumption taxes, PIS/Pasep, Cofins, imported services and the phased CBS/IBS reform.
+  It establishes cumulative versus noncumulative treatment, statutory output and credit
+  bases, exclusion of ICMS and the current ISS judgment, electronic-document phases,
+  conditional test-year payment waiver and actual-payment offsets. It includes supplier
+  and bank reconciliation patterns, ordinary compliance routes and worked cases, while
+  identifying concrete local or specialised facts still needed. Trigger phrases include
+  Brazilian VAT, PIS, Cofins, CBS, IBS, Imposto Seletivo, nota fiscal, imported SaaS,
+  EFD-Contribuições and consumption tax reform. Load br-indirect-tax for ICMS/ISS/IPI
+  computation and br-simples-nacional for annexes, thresholds, DAS and the Simples election.
+version: 3.1
 jurisdiction: BR
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-11
+category: international
+type: situation-rules
+domain: tax
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: vat-gst
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# Brazil VAT
-
-## Brasil — Tributos Indiretos (Sistema Antigo PIS/Cofins/ICMS/IPI/ISS + Sistema Novo CBS/IBS) — Skill v3.0
-
-## Rates and thresholds
-
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### Tributos Indiretos (PIS-Cofins-
-
-- **PIS não cumulativo (Lucro Real)** — 1,65% sobre o total das receitas auferidas pela pessoa jurídica, com créditos previstos no art. 3º da Lei nº 10.637/2002; aplicável predominantemente a Lucro Real percent  _(Lei 10.637/2002)_
-- **Cofins não cumulativo** — 7,60% incidente sobre o total das receitas auferidas pela pessoa jurídica, admitindo créditos previstos no art. 3º da Lei nº 10.833/2003 percent  _(Lei 10.833/2003)_
-- **PIS+Cofins não cumulativo combinado** — 9,25% (com créditos de entrada) percent  _(Leis 10.637/10.833)_
-- **PIS cumulativo (Lucro Presumido)** — 0,65% sobre receita bruta, sem direito a créditos, aplicável em regra às pessoas jurídicas tributadas pelo Lucro Presumido percent  _(Lei nº 10.637/2002 instituiu a sistemática não cumulativa do PIS. Principal fundamento: Lei nº 9.718/1998)_
-- **Cofins cumulativo** — 3,00% sobre receita bruta, sem direito a créditos, aplicável em regra às pessoas jurídicas tributadas pelo Lucro Presumido percent  _(Lei nº 10.833/2003 (Art. 1º base de cálculo; Art. 2º alíquota 7,6%; Art. 3º créditos); Principal fundamento: Lei nº 9.718/1998)_
-- **PIS+Cofins cumulativo combinado** — 3,65% (sem créditos) percent  _(Lei nº 10.637/2002; Lei nº 10.833/2003; Lei nº 9.718/1998; Lei nº 9.715/1998)_
-- **Sao Paulo** — 18%
-- **Rio de Janeiro (RJ)** — A alíquota interna geral do ICMS no Estado do Rio de Janeiro é de 20%, acrescida em regra do adicional de 2% destinado ao FECP, resultando em carga tributária geral de 22%. percent  _(Lei Estadual nº 2.657/1996 Art. 14; Lei Estadual nº 10.253/2023; LC Estadual nº 210/2023)_
-- **Minas Gerais** — 18%
-- **Bahia (BA)** — A alíquota interna geral do ICMS no Estado da Bahia é de 20,5%, conforme a Lei nº 14.629/2023, aplicável quando não houver previsão de alíquota específica percent  _(Lei nº 7.014/1996; Lei nº 14.629/2023)_
-- **Paraná (PR)** — A alíquota interna geral do ICMS no Estado do Paraná é de 19,5%, aplicável quando não houver previsão específica, conforme o art. 17, inciso V, do RICMS/PR percent  _(RICMS/PR Art. 17, inciso V; Lei nº 11.580/1996)_
-- **Rio Grande do Sul (RS)** — 17%
-- **Santa Catarina (SC)** — 17%
-- **Sul/Sudeste → Sul/Sudeste (exceto ES)** — 12% percent  _(CF Art. 155; Resolução SF 22/89)_
-- **South/Southeast to North/Northeast/Center-West/ES** — 7%
-- **N/NE/CO/ES → qualquer estado** — Nas operações interestaduais originadas nos estados das regiões Norte, Nordeste, Centro-Oeste e no Espírito Santo, aplica-se, como regra geral, a alíquota interestadual de 12% percent  _(Constituição Federal de 1988; Resolução do Senado Federal nº 22/1989; CF Art. 155)_
-- **Mercadorias importadas (interestadual)** — Aplica-se a alíquota interestadual de 4% às operações com bens e mercadorias importados do exterior ou com conteúdo de importação superior a 40%, observadas as exceções previstas na Resolução do Senado Federal nº 13/2012 percent  _(Resolução do Senado Federal nº 13/2012; Lei Complementar nº 87/1996)_
-- **Alíquota ISS** — 2% a 5% (definida por município, mínimo 2%) percent  _(LC 116/2003; LC 157/2016)_
-- **Alíquota IPI** — 0% a 300%+ (por NCM via tabela TIPI). As alíquotas do IPI são definidas por NCM na TIPI, variando conforme o produto, observadas as regras do RIPI percent  _(Decreto nº 7.212/2010 (RIPI); TIPI - Tabela de Incidência do IPI)_
-- **CBS alíquota-teste 2026** — 0,9% percent  _(EC 132/2023; LC 214/2025)_
-- **IBS alíquota-teste 2026** — 0,1% percent  _(EC 132/2023; LC 214/2025)_
-- **CBS+IBS estimada (plena)** — ~26,5% (sujeita a ajuste), podendo sofrer ajustes conforme os mecanismos de revisão previstos na Reforma Tributária e na LC nº 214/2025 percent  _(Emenda Constitucional nº 132/2023; Lei Complementar nº 214/2025)_
-- **CBS plena (extinção PIS/Cofins)** — A partir de 2027, a CBS passa a substituir o PIS/Pasep e a COFINS, que serão extintos, conforme as regras de transição estabelecidas pela EC nº 132/2023 e regulamentadas pela LC nº 214/2025  _(Emenda Constitucional nº 132/2023; Lei Complementar nº 214/2025)_
-- **ICMS/ISS totalmente extintos** — O ICMS e o ISS serão gradualmente substituídos pelo IBS durante o período de transição da Reforma Tributária, sendo totalmente extintos em 2033  _(Emenda Constitucional nº 132/2023; Lei Complementar nº 214/2025)_
-- **MEI** — Até R$ 81.000/ano BRL  _(LC 123/2006)_
-- **Sublimite ICMS/ISS** — O sublimite para recolhimento de ICMS e ISS no âmbito do Simples Nacional é de R$ 3.600.000,00 BRL  _(Lei Complementar nº 123/2006 Arts. 19 e 20)_
-- **Limite EPP** — R$ 4.800.000 BRL  _(LC 123/2006 Art. 3)_
-
-## Seção 1 — Referência rápida
-
-**Leia esta seção inteira antes de classificar qualquer transação. O Brasil NÃO possui um IVA unificado. Possui cinco tributos indiretos em três níveis de governo, atualmente em processo de reforma para um IVA dual (CBS+IBS) com adição de um Imposto Seletivo (IS).**
-
-**Tabela de referência rápida**
-
-| Campo | Valor |
-| --- | --- |
-| País | República Federativa do Brasil |
-| Sistema tributário (atual) | Cinco tributos indiretos principais: PIS, Cofins, ICMS, ISS, IPI |
-| Sistema tributário (novo, em transição) | CBS + IBS + Imposto Seletivo (IS), sob EC 132/2023, LC 214/2025 e LC 227/2026 |
-| Período de transição | 2026 a 2032; sistema novo plenamente vigente em 1º de janeiro de 2033 |
-| Alíquota PIS (não cumulativo / Lucro Real) | 1,65% sobre a receita bruta |
-| Alíquota PIS (cumulativo / Lucro Presumido) | 0,65% sobre a receita bruta |
-| Alíquota Cofins (não cumulativo / Lucro Real) | 7,60% sobre a receita bruta |
-| Alíquota Cofins (cumulativo / Lucro Presumido) | 3,00% sobre a receita bruta |
-| PIS+Cofins combinados (não cumulativo) | 9,25% (com créditos de entrada) |
-| PIS+Cofins combinados (cumulativo) | 3,65% (sem créditos, tributo em cascata) |
-| Alíquota geral ICMS | 17% a 23% por estado (interno); 4%, 7% ou 12% (interestadual) |
-| Alíquota ISS | 2% a 5% (definida por cada município, mínimo 2% — LC 157/2016) |
-| Alíquota IPI | 0% a 300%+ (específica por produto via tabela TIPI, por NCM) |
-| Alíquota CBS (transição 2026) | 0,9% (alíquota-teste em paralelo a PIS/Cofins) |
-| Alíquota IBS (transição 2026) | 0,1% (alíquota-teste em paralelo a ICMS/ISS) |
-| Alíquota CBS+IBS estimada (plena implementação) | ~26,5% (não definitiva, sujeita a ajuste regulamentar) |
-| Nota fiscal eletrônica | NF-e (Modelo 55, mercadorias); NFS-e (serviços); NFC-e (Modelo 65, varejo ao consumidor); CT-e (Modelo 57, transporte) |
-| Portal de envio (federal) | https://www.gov.br/receitafederal (Receita Federal) |
-| Portal de envio (estadual) | Portal da SEFAZ de cada estado |
-| Portal de envio (municipal) | Portal de NFS-e de cada município |
-| Moeda | BRL (Real brasileiro) |
-| Identificador | CNPJ (formato XX.XXX.XXX/YYYY-ZZ) |
-| Legislação primária | Constituição Federal Arts. 153-156; LC 87/1996 (ICMS — Lei Kandir); Lei 10.637/2002 (PIS); Lei 10.833/2003 (Cofins); LC 116/2003 (ISS); LC 157/2016 (alíquota mínima ISS); Decreto 7.212/2010 (RIPI); LC 123/2006 (Simples Nacional); EC 132/2023; LC 214/2025; LC 227/2026 |
-| Contribuidor | Open Accounting Skills Registry |
-| Validado por | Pendente — requer assinatura de contador brasileiro registrado no CRC |
-| Versão da skill | 3.0 |
-
-**Alíquotas-chave do sistema atual em um relance**
-
-| Tributo | Esfera | Alíquota | Gera crédito? |
-| --- | --- | --- | --- |
-| PIS (não cumulativo) | Federal | 1,65% | Sim |
-| Cofins (não cumulativo) | Federal | 7,60% | Sim |
-| PIS (cumulativo) | Federal | 0,65% | Não |
-| Cofins (cumulativo) | Federal | 3,00% | Não |
-| ICMS (interno, geral) | Estadual | 17% a 23% por estado | Sim (débito/crédito) |
-| ICMS (interestadual, S/SE para N/NE/CO) | Estadual | 7% | Sim |
-| ICMS (interestadual, demais) | Estadual | 12% | Sim |
-| ICMS (mercadorias importadas com >40% conteúdo estrangeiro) | Estadual | 4% (Resolução SF 13/2012) | Sim |
-| ISS | Municipal | 2% a 5% | Não (cumulativo, em cascata) |
-| IPI | Federal | Específica por NCM (TIPI) | Sim (na cadeia industrial) |
-
-**Faixa de alíquotas internas de ICMS por estado (amostra principal)**
-
-| Estado | Alíquota interna padrão |
-| --- | --- |
-| São Paulo (SP) | 18% |
-| Rio de Janeiro (RJ) | 20% (18% + FECP 2%) |
-| Minas Gerais (MG) | 18% |
-| Bahia (BA) | 19% |
-| Paraná (PR) | 19% |
-| Rio Grande do Sul (RS) | 17% |
-| Santa Catarina (SC) | 17% |
-| Demais estados | 17% a 20% (média) |
-| Estados com adicional FECP/FECOEP | Acrescentar 1% a 4% conforme estado e produto |
+# Brazil federal consumption taxes and CBS/IBS transition v 3.1
 
-**Matriz de alíquotas interestaduais de ICMS**
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-| Rota | Alíquota |
-| --- | --- |
-| Sul/Sudeste para Sul/Sudeste (exceto ES) | 12% |
-| Sul/Sudeste (exceto ES) para Norte/Nordeste/Centro-Oeste/ES | 7% |
-| Norte/Nordeste/Centro-Oeste/ES para qualquer estado | 12% |
-| Mercadorias importadas (qualquer interestadual) | 4% |
-
-A EC 132/2023 substitui PIS+Cofins pela CBS (federal), e ICMS+ISS pelo IBS (estadual + municipal compartilhado). A LC 214/2025 regulamenta a primeira fase. A LC 227/2026 (segunda fase, janeiro de 2026) detalha o Comitê Gestor do IBS e regras de partilha. O Imposto Seletivo (IS) tributa bens e serviços específicos prejudiciais à saúde ou ao meio ambiente.
-
-**Cronograma detalhado da transição**
-
-| Ano | Evento |
-| --- | --- |
-| 2026 | Fase de teste. As notas fiscais devem trazer CBS (0,9%) + IBS (0,1%) = 1% simbólico. O pagamento fica suspenso por 3 meses sem multa após a publicação dos regulamentos. |
-| 2027 | CBS plenamente vigente. PIS e Cofins extintos. IPI extinto (com exceções limitadas para a Zona Franca de Manaus). |
-| 2028 | CBS plena; IPI residual apenas para ZFM. |
-| 2029 | IBS começa cobrança gradual, com redução proporcional de ICMS/ISS. |
-| 2030 a 2032 | Aumento progressivo do IBS e redução do ICMS/ISS, em escala anual. |
-| 2033 | Transição completa. ICMS, ISS, PIS, Cofins, IPI todos eliminados. Sistema Dual VAT pleno: CBS (federal) + IBS (subnacional) + IS (seletivo). |
-
-- **MEI (Microempreendedor Individual):** continua isento de IBS/CBS.
-- **Simples Nacional:** permanece com opção de regime híbrido (art. 21-A da LC 123/2006, incluído pela LC 214/2025) — permitindo recolher CBS/IBS separadamente para transferir créditos aos clientes adquirentes que estejam fora do Simples.
-- **Zona Franca de Manaus (ZFM):** mantém regime diferenciado de IPI residual e fundo de compensação previsto na EC 132/2023.
-
-Todas as regras relativas à reforma estão marcadas como de julgamento exigido do revisor, pois os regulamentos ainda estão sendo publicados pelo Comitê Gestor do IBS, pela Receita Federal e pelo CONFAZ.
-
-**Limites do Simples Nacional**
-
-| Faixa de receita (BRL, últimos 12 meses) | Elegibilidade |
-| --- | --- |
-| Até BRL 81.000 | MEI (Microempreendedor Individual) — regime simplificado |
-| Até BRL 3.600.000 | Sublimite estadual/municipal — ICMS e ISS dentro do DAS |
-| Acima de BRL 3.600.000 até BRL 4.800.000 | Permanece no Simples para tributos federais; ICMS e ISS recolhidos fora do DAS conforme regras estaduais e municipais (LC 123/2006, Art. 13, §1º, e Art. 18) |
-| Acima de BRL 4.800.000 | Deve utilizar Lucro Presumido ou Lucro Real |
-
-**Defaults conservadores — específicos do Brasil**
-
-| Ambiguidade | Default |
-| --- | --- |
-| Regime tributário desconhecido | Lucro Presumido (PIS/Cofins cumulativos, sem créditos) |
-| Alíquota de ICMS desconhecida | Maior alíquota interna plausível para o estado (conservador) |
-| Alíquota de ISS desconhecida | 5% (máximo legal) |
-| Não se sabe se é Simples Nacional | Não é Simples Nacional (aplicar alíquotas plenas) |
-| Elegibilidade de crédito de PIS/Cofins desconhecida | Não creditável |
-| ICMS-ST aplicável desconhecido | Presumir que não está sujeito a ST (sinalizar para revisor) |
-| Interestadual ou interno desconhecido | Interno (aplicar alíquota interna) |
-| Operação com serviço ou mercadoria desconhecida | Mercadoria (ICMS, alíquota maior) |
-| Código NCM desconhecido para IPI | 0% IPI (conservador para o comprador; sinalizar para revisor) |
-| Proporção de uso empresarial desconhecida | 0% de recuperação |
-| Não se sabe se a transação está no escopo | Dentro do escopo |
-| Classificação CNAE desconhecida | Serviços (ISS) |
-| Rota interestadual desconhecida | 7% (mais conservador para fins de crédito) |
-
-**Limiares de alerta (red flag)**
-
-| Limiar | Valor |
-| --- | --- |
-| ALTO — valor de transação individual | BRL 50.000 |
-| ALTO — delta tributário de um default conservador | BRL 5.000 |
-| MÉDIO — concentração de contraparte | >40% do output OU input |
-| MÉDIO — número de defaults conservadores | >4 ao longo da apuração |
-| BAIXO — posição líquida absoluta de tributo | BRL 100.000 |
-
-## Seção 2 — Entradas obrigatórias e catálogo de recusas
-
-### Entradas obrigatórias
-
-**Mínimo viável** — extrato bancário do mês em PDF, CSV, OFX ou texto colado. Deve cobrir o período integralmente. Aceitável de qualquer banco brasileiro: Banco do Brasil, Itaú Unibanco, Bradesco, Santander Brasil, Caixa Econômica Federal, Nubank, Inter, BTG Pactual, Sicoob, ou qualquer outro. Os XMLs de NF-e são fortemente preferíveis para verificação de créditos de ICMS e PIS/Cofins.
-
-**Recomendado** — arquivos XML de NF-e para todas as vendas e compras (ou o arquivo SPED Fiscal do mês), CNPJ e inscrição estadual/municipal, comprovantes de pagamento de DARF/DAS do mês anterior, declaração de opção pelo Simples Nacional (se aplicável), regime tributário confirmado (Simples / Lucro Presumido / Lucro Real), tipo de atividade (serviços / mercadorias / industrialização) e códigos CNAE.
-
-**Ideal** — download completo de NF-e via portal da SEFAZ, arquivo SPED Fiscal, EFD-Contribuições (PIS/Cofins), DCTF, apurações de períodos anteriores, cartão CNPJ com todas as inscrições, ledger de créditos de ICMS, registros de retenção de ISS, XMLs de NF-e/NFS-e.
-
-**Política de recusa em caso de falta do mínimo — SOFT WARN.** Se não houver nem extrato bancário nem XMLs de NF-e, parada absoluta. Se houver apenas extrato bancário sem NF-e: prosseguir, mas registrar no informe ao revisor: "Esta apuração foi produzida a partir apenas do extrato bancário. O revisor deve verificar que todos os créditos de PIS/Cofins estão respaldados por NF-e/NFS-e válida, que os créditos de ICMS conferem com o SPED Fiscal, e que as regras específicas do estado foram corretamente aplicadas."
-
-### Catálogo de recusas específicas do Brasil
-
-- **R-BR-1** — Gatilho: produto sujeito a ICMS Substituição Tributária com necessidade de MVA (Margem de Valor Agregado) ou MVA ajustada. Mensagem: "Os cálculos de margem de ICMS-ST exigem consulta a protocolos CONFAZ específicos do produto e fórmulas de ajuste da MVA. Isto está fora do escopo da classificação automatizada. Escalar para Contador inscrito no CRC com experiência em ICMS-ST para o par produto/estado em questão."
-- **R-BR-2** — Gatilho: cliente opera ou despacha para a Zona Franca de Manaus. Mensagem: "Os incentivos da ZFM (isenção de IPI, redução de ICMS, créditos SUFRAMA) requerem verificação de PPB e procedimentos específicos da SUFRAMA. Escalar para especialista."
-- **R-BR-3** — Gatilho: cliente se beneficia de incentivo estadual de ICMS que pode não ser reconhecido pelo CONFAZ. Mensagem: "Incentivos estaduais de ICMS não reconhecidos carregam risco de glosa no estado de destino. Escalar para advogado tributarista."
-- **R-BR-4** — Gatilho: operações intercompany com partes vinculadas estrangeiras que afetem a base dos tributos indiretos. Mensagem: "Ajustes de preços de transferência que afetam a base de tributo indireto requerem análise especializada. Escalar."
-- **R-BR-5** — Gatilho: cliente em fiscalização ou buscando redução de multa. Mensagem: "Defesa em fiscalização e redução de multa estão fora do escopo desta skill. Engajar advogado tributarista."
-- **R-BR-6** — Gatilho: usuário pergunta sobre IRPJ/CSLL (pessoa jurídica) ou IRPF (pessoa física). Mensagem: "Esta skill cobre apenas tributos indiretos (PIS, Cofins, ICMS, ISS, IPI, CBS, IBS, IS). Para imposto de renda, utilizar a skill apropriada."
-- **R-BR-7** — Gatilho: cadeias de crédito de IPI em industrialização em múltiplas etapas. Mensagem: "Cadeias de crédito de IPI em industrialização em múltiplas etapas exigem análise especializada. Escalar."
-- **R-BR-8** — Gatilho: perguntas sobre questões controvertidas da transição CBS/IBS ainda pendentes de regulamento. Mensagem: "A reforma CBS/IBS ainda está sendo regulamentada (LC 214/2025 e LC 227/2026). Regras de transição não estão totalmente publicadas. Escalar todas as perguntas controversas de transição."
-
-## Seção 3 — Biblioteca de padrões de fornecedores (tabela de consulta)
-
-Este é o pré-classificador determinístico. Quando o contraparte de uma transação combinar com um padrão desta tabela, aplicar o tratamento diretamente. Se nenhum padrão combinar, descer para as regras Tier 1 da Seção 5.
-
-**Como ler esta tabela.** Combinar por substring case-insensitive sobre o nome do contraparte como aparece no extrato bancário. Se múltiplos padrões combinarem, usar o mais específico.
-
-### 3.1 Bancos brasileiros (tarifas — serviço financeiro, isentas de PIS/Cofins)
-
-**Padrões de bancos brasileiros**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| BANCO DO BRASIL, BB | EXCLUIR para tarifas | Serviço financeiro, isento. Sem PIS/Cofins, sem ICMS, sem ISS. |
-| ITAU, ITAU UNIBANCO | EXCLUIR para tarifas | Idem |
-| BRADESCO | EXCLUIR para tarifas | Idem |
-| SANTANDER BRASIL, SANTANDER BR | EXCLUIR para tarifas | Idem |
-| CAIXA, CAIXA ECONOMICA FEDERAL, CEF | EXCLUIR para tarifas | Idem |
-| NUBANK, NU PAGAMENTOS | EXCLUIR para tarifas | Idem |
-| BANCO INTER, INTER | EXCLUIR para tarifas | Idem |
-| BTG PACTUAL | EXCLUIR para tarifas | Idem |
-| SICOOB, SICREDI, BANCOOB | EXCLUIR para tarifas | Tarifas de banco cooperativo, mesmo tratamento |
-| BANCO SAFRA, BANCO VOTORANTIM | EXCLUIR para tarifas | Idem |
-| JUROS, RENDIMENTO, IOF | EXCLUIR | Juros, rendimento, IOF — financeiro, fora do escopo de tributo indireto |
-| EMPRESTIMO, FINANCIAMENTO | EXCLUIR | Movimento de principal de empréstimo, fora do escopo |
-| TARIFA BANCARIA, TAXA DE MANUTENCAO | EXCLUIR | Tarifa de manutenção bancária, serviço financeiro isento |
-| TED, DOC (linhas de tarifa) | EXCLUIR | Tarifas de transferência, serviço financeiro isento |
-
-### 3.2 Governo brasileiro, autoridades fiscais e entidades estatutárias (excluir integralmente)
-
-**Padrões governo brasileiro**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| RECEITA FEDERAL, RFB, DARF | EXCLUIR | Pagamento de tributo federal (IRPJ, CSLL, PIS, Cofins, IPI) |
-| SEFAZ, SECRETARIA DA FAZENDA | EXCLUIR | Pagamento de tributo estadual (ICMS) |
-| PREFEITURA, SECRETARIA DE FINANCAS | EXCLUIR | Pagamento de tributo municipal / ISS |
-| SIMPLES NACIONAL, DAS | EXCLUIR | DAS unificado do Simples Nacional |
-| INSS, PREVIDENCIA | EXCLUIR | Contribuição previdenciária |
-| FGTS | EXCLUIR | Depósito do Fundo de Garantia |
-| CRC, CONSELHO REGIONAL DE CONTABILIDADE | EXCLUIR | Anuidade de órgão de classe, não sujeita a tributo indireto |
-| JUNTA COMERCIAL | EXCLUIR | Taxa do registro mercantil, ato soberano |
-| DETRAN, IPVA | EXCLUIR | Licenciamento/tributo veicular, não é tributo indireto |
-| IPTU | EXCLUIR | Tributo predial municipal, não é tributo indireto |
-
-### 3.3 Serviços públicos brasileiros (concessionárias)
-
-**Padrões serviços públicos**
-
-| Padrão | Tratamento | Tributos | Notas |
-| --- | --- | --- | --- |
-| CPFL, CPFL ENERGIA | ICMS aplica (alíquota estadual) | ICMS + PIS/Cofins | Energia elétrica — ICMS varia por estado; PIS/Cofins sobre fatura. NF-e emitida. |
-| CEMIG | ICMS aplica | ICMS + PIS/Cofins | Energia — Minas Gerais |
-| LIGHT, LIGHT SA | ICMS aplica | ICMS + PIS/Cofins | Energia — Rio de Janeiro |
-| ENEL, ENEL DISTRIBUICAO | ICMS aplica | ICMS + PIS/Cofins | Energia — SP, RJ, CE, GO |
-| ENERGISA | ICMS aplica | ICMS + PIS/Cofins | Energia — múltiplos estados |
-| SABESP | ISS ou isento | ISS (depende do município) | Água/esgoto — São Paulo. Tratamento varia; alguns serviços de água são isentos. |
-| COPASA | ISS ou isento | ISS | Água — Minas Gerais |
-| CLARO, CLARO BRASIL | ICMS aplica | ICMS + PIS/Cofins | Telecom (ICMS, não ISS — transporte/comunicação) |
-| VIVO, TELEFONICA BRASIL | ICMS aplica | ICMS + PIS/Cofins | Idem — telecom |
-| TIM, TIM BRASIL | ICMS aplica | ICMS + PIS/Cofins | Idem |
-| OI, OI SA | ICMS aplica | ICMS + PIS/Cofins | Idem |
-| NET, NET SERVICOS | ICMS aplica | ICMS + PIS/Cofins | TV a cabo/internet — telecom sujeito a ICMS |
-
-### 3.4 Seguros (isento — excluir do tributo indireto)
-
-**Padrões seguros**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| PORTO SEGURO | EXCLUIR | Prêmio de seguro — isento de ICMS/ISS; sujeito a IOF (separado) |
-| BRADESCO SEGUROS, BRADESCO AUTO | EXCLUIR | Idem |
-| SULAMERICA, SUL AMERICA | EXCLUIR | Idem |
-| ITAU SEGUROS | EXCLUIR | Idem |
-| ZURICH, ALLIANZ, MAPFRE BRASIL | EXCLUIR | Idem |
-| SEGURO, APOLICE, SINISTRO | EXCLUIR | Todas as operações de seguro — isentas de tributo indireto |
-
-### 3.5 Transporte e logística
-
-**Padrões transporte e logística**
-
-| Padrão | Tratamento | Tributos | Notas |
-| --- | --- | --- | --- |
-| CORREIOS, ECT | ICMS (serviço postal é ICMS, não ISS) | ICMS + PIS/Cofins | Postal/courier — CT-e emitido para transporte |
-| JADLOG, TOTAL EXPRESS | ICMS | ICMS + PIS/Cofins | Frete expresso |
-| AZUL CARGO, LATAM CARGO | ICMS | ICMS + PIS/Cofins | Frete aéreo |
-| 99, 99 TECNOLOGIA, 99POP | ISS | ISS + PIS/Cofins | App de transporte — serviço sujeito a ISS (alíquota municipal) |
-| UBER, UBER BRASIL | ISS | ISS + PIS/Cofins | Idem — app de transporte é serviço |
-| IFOOD, IFOOD AGENCIA | ISS | ISS + PIS/Cofins | Plataforma de delivery — ISS sobre a comissão. Itens de comida podem ter tratamento próprio. |
-| RAPPI | ISS | ISS + PIS/Cofins | Idem iFood |
-| GOL, LATAM, AZUL (companhia aérea) | ICMS isento ou zero |  | Voos domésticos — transporte interestadual de passageiros possui tratamento específico de ICMS (geralmente não tributável de ICMS; ISS não se aplica a transporte) |
-
-### 3.6 Grandes varejistas e e-commerce brasileiros
-
-**Padrões varejistas e e-commerce**
-
-| Padrão | Tratamento | Tributos | Notas |
-| --- | --- | --- | --- |
-| MAGAZINE LUIZA, MAGALU | ICMS + PIS/Cofins | Cadeia completa | Mercadoria geral — NF-e emitida. Verificar NCM para IPI se industrializado. |
-| CASAS BAHIA, PONTO (VIA) | ICMS + PIS/Cofins | Cadeia completa | Idem |
-| AMERICANAS, B2W | ICMS + PIS/Cofins | Cadeia completa | Idem |
-| MERCADO LIVRE, MERCADO PAGO | ICMS + PIS/Cofins (mercadorias); ISS (taxa de marketplace) | Misto | Marketplace: compras de mercadoria têm ICMS; taxas de plataforma têm ISS. Separar as linhas. |
-| AMAZON BR, AMAZON BRASIL | ICMS + PIS/Cofins | Cadeia completa | Verificar se o vendedor é a Amazon diretamente ou marketplace de terceiros |
-| SHOPEE BRASIL | ICMS + PIS/Cofins | Cadeia completa | Mesmo cuidado com marketplace |
-| CARREFOUR, ATACADAO | ICMS + PIS/Cofins | Cadeia completa | Supermercado/atacado — alimentos podem ter PIS/Cofins reduzido/zero (cesta básica) |
-| PAO DE ACUCAR, EXTRA, GPA | ICMS + PIS/Cofins | Cadeia completa | Idem |
-| KALUNGA | ICMS + PIS/Cofins | Cadeia completa | Material de escritório |
-
-### 3.7 SaaS e serviços digitais — fornecedores estrangeiros
-
-**Padrões SaaS estrangeiros**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | ISS-Importação + PIS/Cofins-Importação + IRRF + IOF | Serviço digital estrangeiro. Adquirente brasileiro deve reter/auto-apurar. ISS por município (2-5%). PIS-Importação 1,65%, Cofins-Importação 7,60%, IRRF 15% (ou 25% se paraíso fiscal), IOF 0,38%. |
-| MICROSOFT (365, Azure) | Igual ao Google | Verificar se faturado pela Microsoft Brasil (doméstico) ou Microsoft Corp (importação) |
-| ADOBE | Idem | Verificar entidade emissora |
-| META, FACEBOOK ADS | Idem |  |
-| AWS, AMAZON WEB SERVICES | Idem | Verificar se AWS Brasil ou AWS Inc |
-| SLACK, NOTION, FIGMA, CANVA | ISS-Importação + PIS/Cofins-Importação + IRRF + IOF | Entidades dos EUA — tributação plena de importação de serviço |
-| ANTHROPIC, OPENAI, CHATGPT | Idem | Entidades dos EUA |
-| SPOTIFY, NETFLIX, APPLE (B2C) | Estas plataformas podem recolher tributos diretamente para B2C | Para B2B: verificar nota e obrigações de retenção |
-
-### 3.8 Processadores de pagamento
-
-**Padrões processadores de pagamento**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| PAGSEGURO, PAGBANK | EXCLUIR (serviço financeiro) ou ISS | Comissão de processamento — pode ser serviço financeiro isento ou sujeita a ISS dependendo da caracterização |
-| STONE, STONE PAGAMENTOS | Idem |  |
-| CIELO | Idem |  |
-| REDE, GETNET | Idem |  |
-| MERCADO PAGO (taxas de transação) | EXCLUIR (financeiro) | Comissão de processamento de transação |
-| PAYPAL BRASIL | EXCLUIR (financeiro) | Processamento de pagamento |
-| STRIPE (se entidade brasileira) | ISS | Se Stripe Brasil: ISS sobre a comissão. Se estrangeiro: tratamento de importação de serviço. |
-
-### 3.9 Serviços profissionais
-
-**Padrões serviços profissionais**
-
-| Padrão | Tratamento | Tributos | Notas |
-| --- | --- | --- | --- |
-| CONTADOR, CONTABILIDADE, ESCRITORIO CONTABIL | ISS | ISS + PIS/Cofins | Serviços contábeis — ISS à alíquota municipal. NFS-e emitida. |
-| ADVOGADO, ADVOCACIA, ESCRITORIO DE ADVOCACIA | ISS | ISS + PIS/Cofins | Serviços jurídicos |
-| CONSULTORIA | ISS | ISS + PIS/Cofins | Serviços de consultoria |
-| CARTORIO, TABELIONATO | ISS | ISS | Serviços notariais |
-
-### 3.10 Folha de pagamento e relações de trabalho (excluir integralmente)
-
-**Padrões folha de pagamento**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| FOLHA, SALARIO, HOLERITE | EXCLUIR | Salários — fora do escopo de tributo indireto |
-| INSS, PREVIDENCIA | EXCLUIR | Contribuição previdenciária |
-| FGTS, FUNDO DE GARANTIA | EXCLUIR | Fundo de garantia |
-| VALE TRANSPORTE, VT | EXCLUIR | Vale-transporte |
-| VALE REFEICAO, VR, VALE ALIMENTACAO, VA | EXCLUIR | Vale-refeição/alimentação |
-| FERIAS, 13o SALARIO, RESCISAO | EXCLUIR | Férias, 13º, rescisão — trabalhistas, não tributo indireto |
-
-### 3.11 Transferências internas e exclusões
-
-**Padrões transferências internas**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| TRANSFERENCIA PROPRIA, MESMA TITULARIDADE | EXCLUIR | Movimento interno entre contas |
-| TED PROPRIA, PIX PROPRIO | EXCLUIR | Transferência de mesma titularidade via PIX ou TED |
-| APLICACAO, RESGATE, CDB, LCI, LCA | EXCLUIR | Aplicação/resgate de investimento — financeiro, fora do escopo |
-| DIVIDENDO, LUCRO DISTRIBUIDO | EXCLUIR | Distribuição de lucros, fora do escopo |
-| EMPRESTIMO, MUTUO | EXCLUIR | Empréstimo, fora do escopo |
-| SAQUE, SAQUE ATM | Perguntar | Saque em espécie — perguntar finalidade |
-
-### 3.12 Padrões de receita (vendas e prestação)
-
-**Padrões de receita**
-
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| VENDA MERCADORIA, NF-E | ICMS sobre venda de mercadoria | Aplica alíquota interna |
-| PRESTACAO SERVICO, NFS-E | ISS sobre o serviço | Aplica alíquota municipal |
-| VENDA INTERESTADUAL | ICMS à alíquota interestadual | 7% ou 12% conforme rota |
-| EXPORTACAO | Imune/zero ICMS e ISS | Imunidade constitucional (CF/88 Art. 155 §2º, X, "a") |
-| VENDA CONSUMIDOR FINAL (interestadual) | DIFAL aplica | Vendedor recolhe o diferencial de alíquota |
-| PLATAFORMA DIGITAL, MARKETPLACE | ISS ou ICMS | Depende de mercadoria vs serviço |
+## Who this applies to
 
-### 3.13 Padrões de entradas/insumos
+This Guide owns the 2026 PIS/Cofins and CBS/IBS transition computation. A Brazilian legal person's actual revenue category and regime control PIS/Cofins; an individual service importer can also have import obligations. Determine the taxpayer and establishment, legal form/CNPJ or CPF, actual activity/CNAE and contracts, assessment period, goods/service and NCM/local service item, tax-regime/election records, invoice bases, business use and supporting payments before computing. The purchaser's regime is a different question from the seller's output liability. [Leis 10637 arts.1,8;10833 arts.1,10](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html), [Lei 10833](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [Lei 10865 arts.1,3–5](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html).
 
-**Padrões de entradas/insumos**
+[br-indirect-tax](br-indirect-tax.md) owns the ordinary ICMS/ISS/IPI rates, base, local responsibility, DIFAL and credits; use it for each corresponding local-tax line. [br-simples-nacional](br-simples-nacional.md) owns eligibility, RBT12, annexes, factorR, sublimit/exit dates and DAS/MEI amounts. Their interactions remain below without repeating independent national/local rate tables. This Guide covers the dual-system work in 2026 and clearly dated later law; it does not replace the legacy taxes early. [LC214 art.348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| COMPRA MERCADORIA, NF-E ENTRADA | Crédito de ICMS (se fora do Simples) | Crédito não cumulativo |
-| MATERIA PRIMA, INSUMO | Crédito de ICMS + IPI | Insumos para industrialização |
-| SERVICO TOMADO, NFS-E | ISS pode ser retido na fonte | Verificar regras de retenção |
-| ENERGIA ELETRICA | Crédito de ICMS (parcial) | Apenas uso industrial em alguns estados |
-| TELECOMUNICACOES | Crédito de ICMS (parcial) | Varia por estado |
-| ALUGUEL COMERCIAL | Sem crédito de ICMS/ISS | Aluguel não é sujeito a tributo indireto |
+The facts to obtain first are the six groups in Ask the client first. An unknown income-tax regime does not establish cumulative treatment; an unknown local rate does not justify the highest plausible rate, an unknown NCM does not mean zeroIPI, and an unknown counterparty or route does not justify a tax classification. Continue supported reconciliations and state the unresolved computation specifically.
 
-### 3.14 Padrões do Simples Nacional
+## Rates, bands and thresholds
 
-**Padrões Simples Nacional**
+Amounts are in BRL. These are ordinary legal rates and their scope, not a promise that a printed invoice percentage is a recoverable credit.
 
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| DAS SIMPLES NACIONAL | Pagamento unificado, inclui ICMS/ISS | A menos que acima do sublimite (BRL 3.600.000) |
-| ICMS-ST SEPARADO | Pago fora do Simples mesmo dentro do Simples | Produtos com substituição tributária |
-| ICMS IMPORTACAO | Pago separadamente no desembaraço | Mesmo no Simples |
+| Item |2026 rule and conditions | Official source |
+|---|---|---|
+| Noncumulative PIS |1.65% ordinary rate on the statutory revenue base; art.8 leaves particular entities/revenues outside this system. LucroReal alone does not put every revenue in it | [Lei 10637 arts.1–3,8](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html) |
+| Noncumulative Cofins |7.6% ordinary rate, subject to art.10 exceptions and special product/revenue treatment | [Lei 10833 arts.1–3,10](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html) |
+| Noncumulative combined |9.25%=1.65%+7.6% only where both ordinary components apply to the same base; eligible statutory credits calculated separately | [Lei 10637 art.2](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 art.2](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html) |
+| Cumulative PIS |0.65% ordinary revenue rate under Lei 9715 art.8 I, subject to the actual entity/revenue rules; not an unconditional rate for every business described as LucroPresumido | [Lei 9715 arts.2,8 I](https://www2.camara.leg.br/legin/fed/lei/1998/lei-9715-25-novembro-1998-372111-normaatualizada-pl.html); [Lei 10637 art.8](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html) |
+| Cumulative Cofins |3% ordinary rate; financial institutions and special products/receipts have different provisions | [Lei 9718 arts.2–3,8,8-A](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm) |
+| Cumulative combined |3.65% on the qualifying common base; no ordinary noncumulative input subtraction | [Lei 9715 art.8 I](https://www2.camara.leg.br/legin/fed/lei/1998/lei-9715-25-novembro-1998-372111-normaatualizada-pl.html); [Lei 9718 art.8](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm) |
+| Ordinary goods-import PIS/Cofins |2.1% and 9.65% on the statutory customs value, subject to actual NCM, nonincidence, exemption, special base/rate and customs-regime checks. For the goods listed in art.8 §21, the additional Cofins rate in calendar 2026 is 0.6 percentage points under §21-A II; it is not a universal surcharge | [Lei 10865 arts.2,7 I,8 I/§§21–21-A,9](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html) |
+| Ordinary service-import PIS/Cofins |1.65% and 7.6%, on the art.7 II base including the specified ISS and own contributions, before income-tax withholding. Apply nonincidence, special-base/rate and exemption provisions before computation | [Lei 10865 arts.1–9,especially 7 II,8 II](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html) |
+|2026 CBS test |0.9%, with the statutory differentiated reductions/specific bases and exclusions; conditional payment waiver below | [LC214 arts.346,348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+|2026 IBS test |State 0.1%, with the same art.348 qualifications. This is not a municipal test component as well | [LC214 arts.343,348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+| Simples operations |The 2026 test rates do not apply; actual legacy DAS and outside-DAS liabilities remain | [LC214 art.348 IIIc](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+| Actually paid 2026 test taxes |Both IBS and CBS paid are offset against the same-period statutory PIS/Cofins liabilities; insufficient liabilities permit other federal offset under the law or refund upon request within 60 days | [LC214 art.348 I–II](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+|2026 accessory-failure assessment cure |60 days from intimation to remedy the assessed omission; compliant cure extinguishes the imposed penalty. This is not a blanket suspension of legacy taxes | [LC214 art.348§§3–4 asLC227](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+| Full future standard rate |No combined standard percentage is certified here. The 26.5% in art.475§11 is a future evaluation/legislative-response trigger, not today's enacted tax rate | [LC214 art.475§§9–12](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+|2027 reference-rate status at this read date |TCU announced an 11.3% CBS calculation on 10 November 2026; the Senate announcement says a resolution is still to be prepared. It is not an enacted rate to insert into a 2027 filing | [TCU notice](https://portal.tcu.gov.br/imprensa/noticias/presidente-do-tcu-entrega-ao-senado-acordao-sobre-aliquota-de-referencia-da-cbs); [Senate notice](https://www12.senado.leg.br/institucional/presidencia/consultarnoticia?noticia_id=davi-alcolumbre-recebe-do-presidente-do-tcu-relatorio-sobre-aliquota-da-cbs-para-2027) |
 
-## Seção 4 — Exemplos resolvidos
+The ICMS internal/interstate matrix, imported-content exception, local ISS boundaries and TIPI product rates are in the ICMS/ISS/IPI owner, with actual missing local/product figures identified there. The old conflicting figures for RJ, BA and PR and a generic national 17%–23% range are not adopted as a current countrywide rate. Thresholds and local sublimit timing belong to the Simples owner, not to a second copied table here.
 
-Estes são exemplos integralmente resolvidos baseados em um extrato bancário hipotético de um consultor de software pessoa jurídica, sediado em São Paulo, Lucro Presumido, com CNPJ ativo, e em exemplos adicionais para cobrir cenários estaduais e municipais distintos.
+## The base
 
-### Exemplo 1 — Venda de serviço doméstico padrão com NFS-e
+### Legacy PIS/Cofins: compute output and each eligible credit
 
-**Linha de entrada:**
-`05.04.2026 ; EMPRESA ALFA LTDA ; CRÉDITO ; NFS-e 2026/041 Consultoria TI abril ; BRL 10.000,00`
+1. Establish the actual PIS and Cofins regime for each revenue stream from law and prior returns. Lei 10637 art.8 and Lei 10833 art.10 retain particular entities/receipts in the older system; special and monophase products have their own treatment. An invoice or an income-tax label does not settle every stream. Keep taxable, zero, nonincident, export, substitution and other supported categories distinct. [Lei 10637 arts.1–3,8](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 arts.1–3,10](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html).
+2. Reconcile earned gross revenue and the legally applicable recognition method with invoices, cancellations, unconditional discounts and other exclusions. Net bank settlement after a platform fee is not automatically the seller's revenue base. ICMS highlighted on the relevant output is excluded under STF Tema 69; do not leave it inside and apply the combined contribution percentage to the entire gross invoice. The current statutory noncumulative credit base also excludes acquisition ICMS under the amended art.3§2. [Lei 10637 arts.1,3§2 III](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 arts.1,3](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [STF Tema 69](https://portal.stf.jus.br/jurisprudenciarepercussao/verandamentoprocesso.asp?classeprocesso=re&incidente=2585258&numeroprocesso=574706&numerotema=69); [RFB binding guidance](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/jurisprudencia-vinculante/pis-cofins).
+3. **ISS judgment at this read date:** on 21 October 2026 STF Tema 118 decided that ISS does not enter the PIS/Cofins base; the minutes were published 23 October, and the latest 6 November docket entry awaited publication of the acórdão. The current holding matters, but do not invent a final modulation/refund procedure, a granted suspension from a party's filing, or an automatic amendment of every earlier return. Establish actual service/ISS, affected period and case/procedural position for historical adjustments. The earlier assertion that ISS always remains in the base is no longer current. [STF Tema 118 decision/docket](https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?classeProcesso=RE&incidente=2637509&numeroProcesso=592616&numeroTema=118); [STF Informativo 1236](https://www.stf.jus.br/arquivo/informativo/documento/informativo.htm).
+4. Apply the applicable output rates to the supported statutory base. For noncumulative contributions, build separate credit schedules from the legally qualifying acquisition/cost base, not simply the PIS/Cofins printed on the supplier's invoice. Art.3 covers qualifying resale, production/service inputs and specified energy, rent and assets, subject to its exclusions, timing and allocation rules. Reconcile taxable/other revenue use and actual evidence; an expense being deductible for income tax does not make it a contribution credit. [Lei 10637 art.3](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 art.3](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html).
+5. Energy consumed at the establishment and rent of buildings/machinery/equipment paid to a legal person for business activities can fall within the express credit categories, even though a rent payment has no ordinary ISS/ICMS credit. Imported inputs have Lei 10865 art.15's actual-payment and credit conditions. A qualifying acquisition from a Simples supplier is not automatically denied legacy noncumulative PIS/Cofins credit; apply the regular purchaser's right and actual eligible basis, as the official FAQ explains. [Lei 10833 art.3 III–IV](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [Lei 10865 art.15](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html); [CGSN FAQ7.5 note 2](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf).
+6. Compute output contributions, qualified credits, supported retained amounts/other adjustments and prior balances separately. Keep liabilities, refundable/offsettable credits and ordinary carryforwards distinct; a negative spreadsheet total does not itself authorise a refund. Reconcile to EFD-Contribuições and the debt declaration/payment route below. [Lei 10637 arts.3,5](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 arts.3,6](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [RFB EFD guidance](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/sped/efd-contribuicoes/efdc).
 
-**Raciocínio:**
-Serviço de consultoria em software. Sujeito a ISS (não a ICMS, pois consta da lista da LC 116/2003). Alíquota de ISS em São Paulo para consultoria em TI: 2-5% (varia conforme código municipal). Também sujeito a PIS/Cofins: regime cumulativo (Lucro Presumido) = 0,65% PIS + 3% Cofins = 3,65% sobre a receita. NFS-e emitida pelo prestador.
+###2026 CBS/IBS: base, waiver, actual payments and credit simulation
 
-**Saída Exemplo 1**
+For an ordinary transaction, establish the LC214 art.11 place and art.12 operation value. The base ordinarily includes the integral consideration and specified charges/conditional discounts; it excludes its own IBS/CBS, IPI, unconditional discounts, qualifying third-party reimbursements and the specified legacy taxes during the statutory transition. These exclusions mean a PIS/Cofins base, ICMS base and IBS/CBS base need not be the same number. Foreign amounts use the prescribed conversion, not an arbitrary statement exchange rate. Specific regimes can replace the ordinary base or rate. [LC214 arts.11–12,348 III](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-| Data | Contraparte | Bruto | Base ISS | Alíquota ISS | PIS | Cofins | Notas |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | EMPRESA ALFA LTDA | +10.000 | 10.000 | 5% (padrão SP) | 65,00 | 300,00 | Confirmar alíquota de ISS para o município de SP |
+The regular regime includes qualifying taxpayers outside Simples and permitted optants under art.41. Computation is consolidated across establishments and monthly under arts.42–43. A qualifying electronic document and the statutory debit-extinction condition matter for credits; art.48 provides the implementation contingency where the relevant payment mechanisms have not been implemented. Keep IBS and CBS credit/debt accounts separate. The full-DAS Simples seller has no own regular input credit, but the regular buyer has the law's limited credit for the amount due through Simples. [LC214 arts.41–48](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-### Exemplo 2 — Venda interestadual de mercadoria
+For 2026, follow this order:
 
-**Linha de entrada:**
-`10.04.2026 ; DISTRIBUIDORA BETA SA (RJ) ; CRÉDITO ; NF-e 001-12345 venda mercadorias ; BRL 50.000,00`
+- Establish whether the transaction is excluded from the test rates, including Simples operations and the stated fuel/biofuel specific-regime exclusion, or has a differentiated reduction/specific base. [LC214 art.348 III](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
+- Establish the actual accessory-duty start, compliance and any lawful exemption. LC214 art.348§1 waives payment for compliant taxpayers; CBSRegart.464 expressly includes those lawfully exempt from accessory duties and makes 2026 assessment informational subject to the stated compliance conditions. The corresponding IBS regulation's original arts.465–466 provide its test-year waiver/saldo rules; later acts and current requirements must also be applied. [LC214](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm); [current CBSReg](https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html); [IBSReg 6 original arts.465–466](https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf).
+- A waived taxpayer still pays the full legacy PIS/Cofins liability. No test amount paid means no paid-test offset. Do not call the combined test percentage an extra unavoidable 2026 surcharge, or treat waived informational credits as cash tax already paid. [LC214 art.348§2](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
+- If IBS/CBS was actually collected, reconcile the receipt and use art.348 I for the same-period contribution offset. If those debts are insufficient, art.348 II permits other federal offset under the applicable legislation or a request for refund within 60 days. Keep this real-payment route distinct from the 2026 informational credit balance: CBSRegart.465 says the latter is not carried into 2027 or refunded. [LC214 art.348 I–II](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm); [CBSRegarts.464–465](https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html).
 
-**Raciocínio:**
-Venda de mercadoria de SP para RJ. Alíquota interestadual de ICMS: SP (Sul/Sudeste) para RJ (Sul/Sudeste) = 12%. PIS/Cofins cumulativo = 3,65% sobre o bruto. IPI: depende do NCM; presumir 0% para revenda (IPI incide apenas em mercadorias industrializadas/importadas). DIFAL pode aplicar se comprador for consumidor final (não é o caso — comprador é distribuidor com IE).
+**Initial grace is not a three-month payment holiday.** JointAct 1 art.3 ran until the first day of the fourth month following publication of the common regulatory part: no penalties for the stated missing new invoice fields, and the payment-waiver compliance condition deemed met. Its informational-assessment condition and art.4 preservation of legacy documents remain material. The common regulations were published 30 April 2026; actual phased obligations are now governed by JointAct 4 and other current instruments. Do not restart this grace whenever a later technical note appears. [JointAct 1 arts.3–4](https://cgibs.gov.br/upload/arquivos/202609/09104120-ato-conjunto-rfb-cgibs-n-1-de-22-de-dezembro-de-2025.pdf); [CBS official publication metadata](https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-norma-pe.html); [IBSReg 6 original](https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf); [JointAct 4](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf).
 
-**Saída Exemplo 2**
+**PNCT conditions.** A taxpayer complying with accessory duties is ordinarily in the 2026 programme unless it manifests otherwise. If that ordinary criterion is not met, JointAct 5 art.2§1 requires all four fallback conditions: continuously/progressively more correctly completed invoices, timely responses to notices/communications, correction by 31 December 2026 of notified inconsistencies, and an appointed continuing accounting professional responsible for fiscal conformity. The communications retain spontaneity only within the specified monitoring/data-cross-check context without commencement of an audit; the statutory 60-day cure remains. These programme guarantees do not prove an unrelated legacy tax debt was waived, nor justify inferring that every noncompliant programme participant satisfied every payment-waiver condition. [JointAct 5 arts.1–3](https://cgibs.gov.br/upload/arquivos/202608/13065932-ato-conjunto-rfb-cgibs-n-c2-ba-5-2026-regulamenta-o-programa-nacional-de-conformidade-tributaria-docx-assinado.pdf); [LC214 arts.348,471-A–471-C](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-| Data | Contraparte | Bruto | Alíquota ICMS | ICMS | PIS/Cofins | IPI | Notas |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | DISTRIBUIDORA BETA SA (RJ) | +50.000 | 12% (interestadual SP>RJ) | Incluso no preço (por dentro) | 3,65% | 0% (revenda) | Verificar NF-e e NCM |
+**Nanoentrepreneur is distinct from MEI.** LC214 art.26 IV defines the non-MEI individual below 50% of the ordinary MEI limit, subject to the stated MEI activity/structural conditions; see the owning Guide for the current limit. For qualifying individual private passenger transport/delivery, §10 counts 25% of monthly gross receipts for this classification, including the amended non-platform wording. A regular-regime option changes the result. The official signed attachment labelled JointAct 6 retains a “MINUTA” header. Its proposed registration/document exemption, regular-option exception and stated duration are **not yet confirmed as operative law** here: obtain the final published original before applying them. The LC214 classification alone does not establish an exemption from every existing local or invoice duty. [LC214 art.26 IV,§§1,10–11](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm); [JointAct 6 arts.2–3](https://cgibs.gov.br/upload/arquivos/202608/28193542-ade-rfb-cgibs-n-6-28-8-2026-com-paragrafo-unico-assinado.pdf).
 
-### Exemplo 3 — Importação de serviço digital (SaaS dos EUA)
+### Transaction and supplier evidence catalogue
 
-**Linha de entrada:**
-`15.04.2026 ; NOTION LABS INC ; DÉBITO ; Monthly subscription ; USD 15,00 ; BRL 85,00`
+These are investigation routes, not classifications by merchant name. Separate the provider's output tax, the buyer's credit right, payment withholding and bank settlement.
 
-**Raciocínio:**
-Notion é entidade dos EUA. Importação de serviço. Adquirente brasileiro deve auto-apurar: ISS-Importação (alíquota SP, ex. 2,9% para serviços de TI), PIS-Importação (1,65%), Cofins-Importação (7,60%), IRRF (15% de retenção sobre a remessa), IOF (0,38% sobre o câmbio). Tributação efetiva total na remessa pode ultrapassar 25%. Sem NFS-e do fornecedor; obrigação do adquirente recolher e remeter.
+| Old transaction family and retained search clues | Evidence and corrected treatment | Official basis |
+|---|---|---|
+| Banks: Banco do Brasil/BB, Itaú/Unibanco, Bradesco, Santander, Caixa/CEF, Nubank/Nu Pagamentos, Inter, BTG, Sicoob/Sicredi/Bancoob, Safra/Votorantim; tarifa/manutenção/TED/DOC/juros/IOF | Separate loan principal, financial yield, transfer charge and actual service. Financial institutions have statutory PIS/Cofins treatment; listed banking services can bear ISS. “Bank fee means exempt from PIS/Cofins/ISS” is false. The purchaser still needs an eligible credit category | [Lei 9718 arts.3,8-A](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm); [Lei 10833 art.10](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [LC116 list 15](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html) |
+| Government: RFB/DARF, SEFAZ, prefeitura, DAS, INSS, FGTS, CRC, Junta Comercial, DETRAN/IPVA, IPTU | Identify tax/levy or registration payment and code/period separately from an actual purchased supply. Paying a tax is not acquiring a recoverable input. A public body's name alone does not resolve a commercial supply | [Lei 10637 art.3 eligible categories](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [LC116 arts.1–2](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html) |
+| Energy: CPFL, CEMIG, Light, Enel, Energisa | Obtain actual energy invoice, period and use. Legacy noncumulative contribution credit has an express category; ordinary office ICMS credit is not automatic. Do not assume the seller's printed rate equals the credit | [Lei 10833 art.3 III](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [LC87 art.33 II](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html) |
+| Water/sewer: Sabesp, Copasa; telecom: Claro, Vivo/Telefônica, TIM, Oi, NET | Separate water/sanitation, communication, connectivity/add-on and other listed services from the actual contract. The old blanket water=ISS/exempt and every internet product=ICMS shortcuts are not certified. Apply the actual local tax through its owner; use NFAg/NFCom phases below for new duties | [LC87 art.2 III](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [LC116 art.1/list](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html); [JointAct 4 art.1](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Insurance: Porto, Bradesco Seguros/Auto, SulAmérica, Itaú Seguros, Zurich, Allianz, Mapfre; apólice/sinistro | Separate premium, indemnity, brokerage and other service. Insurance entities are not universally exempt from contributions; brokerage is a distinct listed service. Check actual federal/IOF treatment and buyer credit category instead of deleting every line | [Lei 10833 art.10 I](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [Lei 9718 arts.3,8-A](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm); [LC116 list 10](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html) |
+| Postal/freight: Correios/ECT, Jadlog, Total Express, Azul Cargo, LATAM Cargo | Private interstate/intermunicipal freight requires its actual route/document and tax rules. ECT parcel carriage has STF reciprocal ICMS immunity; the old “postal service is ICMS” rule is wrong. Immunity is not automatically transferred to a private courier | [LC87 art.2 II](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [STF RE627051/Tema 402](https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=402); [official ruling account](https://noticias.stf.jus.br/postsnoticias/nao-incide-icms-sobre-transporte-de-mercadorias-pelos-correios/) |
+| Passenger/delivery platforms:99/99 Pop, Uber, iFood, Rappi; airlinesGol/LATAM/Azul | Separate ride/carriage, restaurant goods, platform commission and delivery. Determine operator/driver, route and statutory service; no universal airline zero rate or platform-name ISS rule is certified | [LC87 art.2](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [LC116 list 10,16,17,26](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html); [LC214 art.26§10](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+| Retail/marketplace: Magalu/Magazine Luiza, Casas Bahia/Ponto/Via, Americanas/B2 W, Mercado Livre/Pago, Amazon BR, Shopee, Carrefour/Atacadão, Pão de Açúcar/Extra/GPA, Kalunga | Identify actual seller and goods/NCM, customer use, platform fee, gross sale and settlement. Food, fuel and other monophase/zero products require their own rule, not the retail brand. Importer/equivalent status can create IPI even on resale | [Lei 10637 arts.1–3](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [LC87 art.2](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [RIPIarts.9,24,35](https://www2.camara.leg.br/legin/fed/decret/2010/decreto-7212-15-junho-2010-606731-normaatualizada-pe.html) |
+| Foreign digital: GoogleAds/Workspace/Cloud, Microsoft 365/Azure, Adobe, Meta/FacebookAds, AWS, Slack, Notion, Figma, Canva, Anthropic/OpenAI/ChatGPT, Spotify/Netflix/Apple | Read the actual issuing legal entity, contract and location/result. A Brazilian issuer can be domestic; a foreign-name card line does not prove import, treaty treatment, gross-up, IRRF/CIDE or IOF. Apply the service-import method below where its facts hold | [Lei 10865 arts.1–8](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html); [LC116 arts.1,3,6](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html) |
+| Processors: PagSeguro/PagBank, Stone, Cielo, Rede/Getnet, Mercado Pago, PayPal, Stripe | Separate underlying seller receipts, financing, acquiring/processing fees and foreign service. Financial/fee treatment cannot be inferred from the brand; listed card/banking/intermediation services require the actual contract and regime | [LC116 list 10,15](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html); [Lei 9718](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm); [Lei 10865](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html) |
+| Professional: contador/contabilidade, advogado/advocacia, consultoria, cartório/tabelionato | Apply actual listed service, establishment/place, responsible party and own contribution/Simples regime. NFS-e and CNAE are evidence, not a universal rate/retention rule | [LC116 arts.1,3,6/list 17,21](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html); [LC123 art.18](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Payroll: salário/holerite, INSS, FGTS, vale-transporte/refeição/alimentação, férias,13 th/rescisão | Separate employment payments from purchased services/benefit-provider fees. Wages paid to individuals are not an ordinary noncumulative input credit; a provider's service needs its own test | [Lei 10637 art.3§2 I](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [LC116 art.2 II](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html) |
+| Transfers/finance: própria/mesma titularidade, PIX/TED, aplicações/resgates/CDB/LCI/LCA, dividendos, empréstimo/mútuo; round amounts/saqueATM | Reconcile principal, earnings, capital/distribution and own transfers to underlying accounts. An unidentified deposit or cash withdrawal is unresolved, not automatically revenue or a credit. A financial earning can require its own contribution regime | [Lei 10637 arts.1,3](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 9718 arts.2–3](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm) |
+| Sales/inputs: NF-e/NFS-e, prestação, exportação, final consumer, matéria-prima/insumo, serviço tomado, energia/telecom, aluguel; Simples invoices | Apply the actual goods/service route and credit rule. Foreign customer does not automatically prove service export; final consumer differs from resale; customer's Simples status does not determine seller's liability | [Lei 10637 arts.3,5](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 arts.3,6](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [LC87 arts.2,4](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [LC116 art.2](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html) |
 
-**Saída Exemplo 3**
+### Later transition enacted at the read date
 
-| Data | Contraparte | Bruto BRL | ISS-Imp | PIS-Imp | Cofins-Imp | IRRF | IOF | Notas |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | NOTION LABS INC | -85,00 | ~2,47 | ~1,40 | ~6,46 | ~12,75 | ~0,32 | Serviço importado — auto-apurar todos os tributos. Confirmar alíquota ISS. |
+| Period | Actual rule and boundary | Official source |
+|---|---|---|
+|2026 |Conditional test year described above; legacy PIS/Cofins/ICMS/ISS/IPI still operate as applicable | [ADCT125](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html); [LC214 art.348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm) |
+|2027–2028 |CBS transition replaces the specified legacy contributions when the constitutional condition is fulfilled; IBS state 0.05% plus municipal 0.05%, and CBS rate reduced by 0.1 percentage point in that period. This does not set the unconfirmed CBS reference rate | [ADCT126–127](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html) |
+|IPI from 2027 |Rates reduced to zero except products with industrialisation incentivised in ZFM under complementary-law criteria; not legal extinction of every IPI rule or an elimination of ZFM treatment | [ADCT126 III](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html) |
+|Selective tax |MP1399/2026, published 4 November, sets a provisional 2027 implementation regime with effects from**2 February 2027**, not a 2026 levy. Product classification, initial/conversion/adjustment annexes, relief and temporary rules must be applied to the actual supply | [MP1399 arts.1–19 and AnnexesI–VI](https://www2.camara.leg.br/legin/fed/medpro/2026/medidaprovisoria-1399-4-novembro-2026-800091-publicacaooriginal-181743-pe.html); [annexes](https://www2.camara.leg.br/legin/fed/medpro/2026/medidaprovisoria-1399-4-novembro-2026-800091-anexo-pe.pdf) |
+|2029–2032 |ICMS/ISS rates at 9/10 in 2029,8/10 in 2030,7/10 in 2031 and 6/10 in 2032 of their legislative rates, with the benefit-transition rules. Do not apply those fractions to 2026 invoices | [ADCT128](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html) |
+|2033 |ICMS/ISS constitutionally extinguished; the old claim that every IPI liability is thereby eliminated is not supported | [ADCT129](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html) |
 
-### Exemplo 4 — Venda a cliente do Simples Nacional
+MP1399 includes differing vehicle/product bases and adjustments, zero/reduced and nonincidence conditions, temporary rules for 2027 and import adjustments. It is not a universal sin-tax rate. This 2026 Guide does not certify any individual future product's final percentage. Its art.19 commences effects 2 February 2027; art.15 requires a later bill for rates applicable from 2028. Preserve the MP's provisional status and check subsequent law before any 2027 transaction. [MP1399 arts.3–10,15–19](https://www2.camara.leg.br/legin/fed/medpro/2026/medidaprovisoria-1399-4-novembro-2026-800091-publicacaooriginal-181743-pe.html).
 
-**Linha de entrada:**
-`18.04.2026 ; CLIENTE VAREJO ; CRÉDITO ; NFC-e venda balcão ; BRL 5.000,00`
+Simples/MEI are not simply abolished by reform. The separate 2027 regular IBS/CBS option, semester and refund-exit restriction, and the limited regular-buyer credit from a full-DAS seller are in [br-simples-nacional](br-simples-nacional.md). The former art.21-A attribution, annual-election claim and zero-buyer-credit blanket were incorrect. ZFM/specific regimes and individual product benefits need their actual law and documents; ordinary 2026 reform questions can still be answered using the supported method above. [LC214 arts.41,47,517,544](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-**Raciocínio:**
-Se o cliente é Simples Nacional (pagador de DAS), todos os tributos (ICMS, ISS, PIS, Cofins, IRPJ, CSLL, CPP) são pagos pelo DAS unificado, conforme a faixa de receita. Anexo I (comércio) ou Anexo III/V (serviços). Não há cálculo separado de PIS/Cofins/ICMS/ISS — o DAS cobre tudo. A alíquota efetiva depende da receita dos últimos 12 meses (RBT12).
+## Deadlines and filing
 
-**Saída Exemplo 4**
+### Keep the three legacy federal jobs separate
 
-| Data | Contraparte | Bruto | Tratamento | Notas |
-| --- | --- | --- | --- | --- |
-| 18.04.2026 | CLIENTE VAREJO | +5.000 | Simples Nacional — incluído no DAS | Calcular DAS com base no Anexo e na faixa de RBT12. Sem linhas separadas de ICMS/PIS/Cofins. |
+| Obligation | Ordinary date and scope | Official source |
+|---|---|---|
+| Ordinary monthly noncumulative PIS/Cofins payment |25 th of following month, moving to the preceding business day if non-business. Special regimes, withholding/import and published extensions have their own rules | [Lei 10637 art.10](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 art.11](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html) |
+| EFD-Contribuições, where required |10 th business day of second following month; centralised matrix file, not one transmission per establishment | [RFB EFDFAQ](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/sped/efd-contribuicoes/efdc) |
+| DCTFWeb via MIT, where required |Last business day of following month; later declaration deadline does not postpone the tax payment. The legacy PGD route is for old periods, not the ordinary 2026 debt | [RFB current service](https://www.gov.br/pt-br/servicos/declarar-debitos-e-creditos-tributarios-federais); [MIT manual §§2–7](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf/@@download/file) |
 
-### Exemplo 5 — Despesa com entretenimento / pessoal
+For the filing work covered here, obtain the authorised representative, assessment period, actual regime, full fiscal XML/documents and bookkeeping/credit workpaper first. Screen labels below are those in the official manuals; no private login or live transmission was performed.
 
-**Linha de entrada:**
-`22.04.2026 ; RESTAURANTE FOGO DE CHAO ; DÉBITO ; Jantar ; BRL 800,00`
+1. **EFD-Contribuições:** prepare the centralised establishment-matrix file in the current official SPED application from the actual fiscal records. Include establishments through record 0140 and the applicable document/operation blocksA/C/D/F, with corresponding establishment recordsA010/C010/D010/F010. Validate, correct identified issues, sign with the authorised valid ICP-Brasil credential and transmit; retain the accepted file and receipt. The RFB FAQ provides recovery through ReceitanetBX if the receipt is missing. This Guide does not invent individual tax-code/field values without the actual operation and current layout. [RFB EFDFAQ](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/sped/efd-contribuicoes/efdc).
+2. **MIT:** in authorised e-CAC/gov.br access, open **Declarações e Demonstrativos → Assinar e Transmitir DCTFWeb → Módulo de Inclusão de Tributos**, representing the correct CNPJ. Start **Nova Apuração**, enter month/year, then **Dados Iniciais**: actual PJ qualification, income-tax form and PIS/Cofins regime. The application's default is not legal evidence. Identify the responsible preparer and save. [MIT manual §§2–3](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf/@@download/file).
+3. In **Débitos**, select actual tributes/revenue codes, periodicity and supported debt amounts. Apply any required establishment/SCP attribute and actual suspension-process details; do not import retained PIS/Cofins again where EFD-Reinf supplies them. Resolve **Pendências**, save and **Encerrar Apuração**. The system assigns an ID and sends it to DCTFWeb in progress. Closing MIT alone is not final declaration transmission. [MIT manual §§2.1,4–7](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf/@@download/file).
+4. Review DCTFWeb's consolidated debt/credit and actual suspension links, transmit under the authorised signature, retain declaration/receipt, and generate/check the applicable DARF. A payment reference or generated PDF is not payment confirmation; reconcile the bank settlement and official debt status. Import/withholding duties and payment dates may occur before the ordinary declaration deadline. [RFB current DCTFWeb service](https://www.gov.br/pt-br/servicos/declarar-debitos-e-creditos-tributarios-federais); [MIT manual §§5–7](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf/@@download/file).
 
-**Raciocínio:**
-Refeição em restaurante. Para PIS/Cofins não cumulativo, créditos de entrada estão disponíveis apenas em insumos de produção, mercadorias para revenda, energia, aluguel, depreciação e outras categorias específicas. Refeições em restaurante não geram crédito. Para ICMS: não se aplica (restaurante é serviço). Para Lucro Presumido (PIS/Cofins cumulativos): sem créditos em nenhum caso. Default: sem recuperação de crédito.
+Ordinary ICMS/ISS/IPI state/municipal books, calendars and local payment fields are handled through their owning Guide and actual jurisdiction. Simples uses its actual PGDAS-D/PGMEI/annual routes. CNPJ/CPF, legal name and establishment must match the actual registration; preserve letters and digits in source data rather than assume all new CNPJs are numeric.
 
-**Saída Exemplo 5**
+###2026 new-system electronic-document phases
 
-| Data | Contraparte | Bruto | Recuperação de crédito | Notas |
-| --- | --- | --- | --- | --- |
-| 22.04.2026 | RESTAURANTE FOGO DE CHAO | -800,00 | Nenhuma | Entretenimento — sem crédito de PIS/Cofins. Não é compra creditável de ICMS. |
+Use the actual supply category and taxpayer, not a single “all invoices from January” rule. JointAct 4's dates are **new-system duty starts**, not permission to stop legacy invoices/taxes.
 
-### Exemplo 6 — Fatura de energia elétrica com ICMS
+| Document/supply category | New-system start/condition | Official source |
+|---|---|---|
+| NF-e 55, NFC-e 65, CT-e 57/CT-eOS67, MDF-e 58, GTV-e 64, NF3 e 66, DC-e 99, NFS-eVia; BP-e 63 outside the stated later passenger categories |3 August 2026, subject to the actual exceptions below | [JointAct 4 art.1 I–II,IV–IX,XII–XIII](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Ordinary ISS-listed NFS-e services other than art.1 IIIa–c |1 October 2026 | [JointAct 4 art.1 IIId](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Platform/intermediated cases in art.1 IIIa; ISSitems 1.03,1.05,1.09 and 16.01; other listed later NFS-e categories, including specified intangible/condominium/rental/other services |1 December 2026 with the exact statutory supply exception applied | [JointAct 4 art.1 IIIa–c,e–h](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Semiurban/metropolitan or air passenger BP-e; NFGas 76; NFAg 75; NF-eABI77 |1 December 2026 | [JointAct 4 art.1 VIa–b,XI,XVI,XVIII](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| NFCom 62; import DIR |1 October 2026 | [JointAct 4 art.1 X,XV](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Import Duimp; material-goods import substituted NF-e start; NF-e monophase supplies |1 January 2027 under the respective conditions | [JointAct 4 art.1 XIV,§§2–3](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Non-ICMS taxpayer's stated NF-e supplies/movements/returns |1 December 2026 under §4, rather than the ordinary August start | [JointAct 4 art.1§4](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Simples taxpayer |1 January 2027 new-system schedule; actual MEI rules separately checked | [JointAct 4 art.1§1](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| DeRE table events |1 October 2026; actual specific-regime duty and technical event apply | [JointAct 4 art.1 XVIIa](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
+| Listed DeRE monthly events |First 15 November 2026 for October data; then 15 th following month. Events D-1101,D-1106,D-1121,D-2101,D-1198,D-1199 listed in the act. Other events start 1 January 2027 | [JointAct 4 art.1 XVIIb–c,§5](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf) |
 
-**Linha de entrada:**
-`28.04.2026 ; ENEL DISTRIBUICAO SP ; DÉBITO ; Fatura energia elétrica ; BRL 1.500,00`
+Retain XML/authorisation/cancellation and corrections, actual accessory-duty submission/receipt, PNCT response evidence and accountant designation where relevant. Compare the general schedule with actual platform/sector specifications and current exception. The signed official JointAct 6 PDF retains a “MINUTA” header; it is linked in the official CGIBS acts collection, and this Guide identifies the exact source rather than presenting a private draft as a certified DOU copy. Its proposed nanoentrepreneur exemption remains a named partial item pending the final published original; no exemption is applied from this attachment. The full operative CGSN194/195 MEI provisions were not readable, so the draft does not certify a universal new MEI invoice exception.
 
-**Raciocínio:**
-Fatura de energia. Sujeita a ICMS na alíquota interna de SP (18% geral, mas a energia pode ter alíquota específica de ICMS — frequentemente 25% para consumidor comercial em SP). PIS/Cofins também incidem na fatura. No regime não cumulativo, PIS/Cofins sobre energia gera crédito (Lei 10.637/2002, Art. 3º, III). No regime cumulativo: sem crédito. ICMS sobre energia gera crédito pelo regime normal de débito/crédito se o adquirente for contribuinte do ICMS.
+## Penalties and interest
 
-**Saída Exemplo 6**
+Separate legacy late-payment interest, filing penalties and assessment penalties by tax and period. The 2026 test-year cure/PNCT/grace rules above concern their stated duties; they are not a cancellation of legacy ICMS/ISS/IPI/PIS/Cofins debts or a general defence to every return failure. Quantify the actual late liability only from its applicable current provision and notice. This Guide does not certify a single national all-tax penalty rate. MIT/DCTFWeb and EFD failures have distinct rules; a later return deadline does not extend ordinary contribution payment. [LC214 art.348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm); [JointAct 1 art.4](https://cgibs.gov.br/upload/arquivos/202609/09104120-ato-conjunto-rfb-cgibs-n-1-de-22-de-dezembro-de-2025.pdf); [RFB DCTFWeb service](https://www.gov.br/pt-br/servicos/declarar-debitos-e-creditos-tributarios-federais).
 
-| Data | Contraparte | Bruto | Crédito de ICMS | Crédito PIS/Cofins | Notas |
-| --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | ENEL DISTRIBUICAO SP | -1.500,00 | Sim (se contribuinte ICMS) | Sim (Lucro Real) / Não (Lucro Presumido) | Conferir NF-e quanto a valores exatos de ICMS e PIS/Cofins |
+Review materiality, potential tax difference, counterparty concentration, missing facts and net positions in the workpaper. The old arbitrary 50,000/5,000/40%/four-default/100,000 alert thresholds were internal workflow suggestions without a primary-law basis, not legal safe harbours; no tax decision depends on them here. Use the engagement's actual review criteria and record any unresolved difference.
 
-### Exemplo 7 — Apuração de ICMS intra-SP (Lucro Real, comércio)
+## Cross-border points
 
-**Entrada:** Varejista em SP, vendas de mercadoria R$ 100.000. Alíquota interna 18%. Compras R$ 60.000 com 18% de ICMS.
+**Legacy goods/services exports.** Apply the actual statutory export conditions and documentation. Noncumulative PIS/Cofins export treatment and credit maintenance/recovery follow Lei 10637 art.5 and Lei 10833 art.6. For services, foreign recipient and qualifying payment/result facts matter; the foreign customer's name or a bank conversion is insufficient. ICMS goods-export and ISS service-result rules are in [br-indirect-tax](br-indirect-tax.md). [Lei 10637 art.5](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html); [Lei 10833 art.6](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html); [LC116 art.2](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html).
 
-**Cômputo:**
-- ICMS sobre vendas: R$ 100.000 × 18% = R$ 18.000
-- Créditos de ICMS sobre compras: R$ 60.000 × 18% = R$ 10.800
-- ICMS a recolher: R$ 18.000 − R$ 10.800 = R$ 7.200
+**Legacy goods imports.** Identify the actual importer, goods/NCM, customs regime, taxable entry event and import documentation. Start the ordinary federal calculation from the customs value under Lei10865 art.7 I: PIS-Importação = that value × 2.1%; Cofins-Importação = that value × 9.65%, after testing the actual nonincidence, exemption and special-base/rate provisions. This goods base is distinct from the service-import own-tax/ISS gross-up below. Check the current art.8 §21 product list: only a matching listed import has the §21-A II additional Cofins of 0.6 percentage points in calendar 2026. The old blanket 10.65% Cofins figure is not adopted. Specific products/customs benefits remain partial until their actual classification and operative rule are established. [Lei10865 arts.2,3 I,7 I,8 I/§§21–21-A,9](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html).
 
-### Exemplo 8 — Venda interestadual SP → BA com DIFAL
+A qualifying noncumulative legal person computes any goods-import credit under art.15's actual eligible category, statutory basis/rates and timing, with contributions actually paid. Section15 §3 includes linked import IPI when it forms acquisition cost; fixed-asset credits have their own timing rules. The additional Cofins paid under art.8 §21/§21-A **does not generate that credit**, under art.15 §1-A. Keep assessment, payment and allowed credit separate; no automatic full import-bill credit or cash refund follows. [Lei10865 art.15 I–V,§§1–4,7–8](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html).
 
-**Entrada:** Empresa de SP vende R$ 10.000 em mercadorias para empresa BA. Alíquota interestadual 7%. Alíquota interna BA 19%.
+**Legacy service imports.** First determine an actual foreign provider and whether the service is executed in Brazil or has its result there. Lei 10865 arts.3–5 set the relevant remittance/credit/payment event and contracting/beneficiary taxpayer. Art.7 II starts from value before IRRF, adds ISS and the own import contributions. For ordinary service rates, if V is the supported pre-IRRF value and I is the actual applicable ISS amount, the federal contribution base is **(V+I)/(1−PISrate−Cofinsrate)**. This is a conditional algebraic computation of the statutory own-tax inclusion, not proof of a municipality's ISS rate or a contract gross-up. Special insurance/rental/other rules and exemptions can change it. [Lei 10865 arts.1–9](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html).
 
-**Cômputo:**
-- ICMS destacado na NF-e: R$ 10.000 × 7% = R$ 700 (vendedor recolhe à SEFAZ-SP)
-- Se B2B (comprador é contribuinte): comprador recolhe DIFAL de 12% (19% − 7%) à BA
-- Se B2C (consumidor final não contribuinte): vendedor coleta o DIFAL de 12% e remete à BA (partilha estadual conforme EC 87/2015, atualmente integralmente devida ao estado de destino)
+Determine any IRRF, treaty, CIDE and IOF from the actual nature, intellectual rights/technical assistance, country, recipient status, contract tax-bearing clause, foreign-exchange operation and event date. The old automatic 15%/25% IRRF,10%CIDE and 0.38%IOF package for every SaaS bill is not certified. Preserve these tax checks and source the actual rate/base before a full landed-cost computation. Credit eligibility is separate; for a qualifying noncumulative taxpayer art.15 requires import contributions actually paid and an eligible category. [Lei 10865 art.15](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html); [LC116 arts.1,3,6](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html).
 
-### Exemplo 9 — Retenção de ISS na fonte
+**New-system place and imports.** Apply LC214 art.11's actual delivery, property, personal-service, transport, terminal and residual domicile rules and the specific cross-border/import provisions when applicable. A foreign platform or a Brazilian purchaser may have responsibilities depending on the actual facts and effective duties; this Guide does not certify that a brand always collects or a card payer always owes every tax. Observe JointAct 4's actual import document phases. [LC214 art.11](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm); [JointAct 4 art.1 XIV–XV,§3](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf).
 
-**Entrada:** Fatura de consultoria de R$ 20.000 emitida a grande cliente corporativo. Alíquota ISS 5%. Sujeita a retenção.
+## Two worked examples that recompute
 
-**Cômputo:**
-- ISS: R$ 20.000 × 5% = R$ 1.000
-- O cliente retém R$ 1.000 e remete diretamente ao município
-- O prestador recebe R$ 19.000 líquidos
-- O prestador NÃO recolhe o ISS separadamente sobre essa fatura
-- O prestador escritura a fatura com indicação de "ISS retido na fonte"
+### Cumulative goods sale: exclude highlighted ICMS
 
-## Seção 5 — Regras Tier 1 (comprimidas)
+A continuing ordinary cumulative-regime seller makes a qualifying SP→RJ resale supply for 50,000 inclusive, with actual invoice ICMS6,000 under the local-tax owner. No IPI-equivalent event, other excluded amount, exemption, credit or retention changes these federal facts. PIS/Cofins base=44,000, PIS286, Cofins 1,320, total 1,606. Applying 3.65% to the whole 50,000 would produce 1,825, overstating federal contributions by 219. A reseller's label alone still does not establish zeroIPI or the purchaser's final use. [STF Tema 69](https://portal.stf.jus.br/jurisprudenciarepercussao/verandamentoprocesso.asp?classeprocesso=re&incidente=2585258&numeroprocesso=574706&numerotema=69); [Lei 9715 art.8 I](https://www2.camara.leg.br/legin/fed/lei/1998/lei-9715-25-novembro-1998-372111-normaatualizada-pl.html); [Lei 9718 art.8](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm); [ICMS/IPI owner](br-indirect-tax.md).
 
-### 5.1 Árvore de decisão de classificação
-
-- **Árvore de decisão** — Mercadoria = ICMS + IPI (se manufaturada/importada) + PIS/Cofins. Serviço = ISS + PIS/Cofins. Transporte/comunicação = ICMS (não ISS) + PIS/Cofins. ICMS e ISS são mutuamente excludentes (exceto em fornecimento misto, hipótese específica de aplicação).
-
-### 5.2 Determinação do regime de PIS/Cofins
-
-- **Determinação do regime** — Lucro Real = não cumulativo (1,65% + 7,60% = 9,25%, com créditos de entrada). Lucro Presumido = cumulativo (0,65% + 3,00% = 3,65%, sem créditos de entrada). Simples Nacional = incluído no DAS (sem apuração separada de PIS/Cofins). Determinar o regime PRIMEIRO — ele muda toda a apuração.
-
-### 5.3 Alíquotas internas de ICMS
-
-- **Alíquotas internas de ICMS** — Variam por estado, de 17% a 23%. Aplicar a alíquota interna do estado em que ocorre a operação. Para operações interestaduais, usar 7% (S/SE → N/NE/CO) ou 12% (demais combinações). Mercadorias importadas com >40% de conteúdo de importação: 4% interestadual (Resolução SF 13/2012). Atenção a adicionais FECP/FECOEP em estados específicos.  _(Resolução SF 13/2012)_
-
-### 5.4 Cálculo "por dentro" do ICMS
-
-- **Cálculo por dentro do ICMS** — O ICMS é calculado por dentro do preço. Uma alíquota nominal de 18% sobre um preço bruto de R$ 100 significa que R$ 18 de ICMS já está incluído (R$ 100 × 18% = R$ 18). A base tributo-excluída é R$ 82; a alíquota efetiva sobre a base tributo-excluída é ~21,95%.
-
-### 5.5 Classificação do ISS
-
-- **Classificação do ISS** — Serviços previstos na lista da LC 116/2003 (cerca de 200 itens em ~40 subitens). Alíquota definida pelo município (2% a 5%, com piso de 2% por força da LC 157/2016). ISS devido no local do estabelecimento do prestador, exceto em ~20 categorias específicas (construção civil, segurança, limpeza, etc.) em que o ISS é devido no local da prestação (LC 116/2003, Art. 3º, incisos).  _(LC 116/2003; LC 157/2016)_
-
-### 5.6 Classificação do IPI
-
-- **Classificação do IPI** — Aplica-se apenas a produtos industrializados e importados. Alíquota por NCM, conforme tabela TIPI. Cobrado por fora (acrescido ao preço). Gera créditos sobre insumos da industrialização. Não incide sobre revenda por estabelecimento meramente comercial.
-
-### 5.7 Tratamento de exportações
-
-- **Tratamento de exportações** — Exportações são isentas/imunes em todos os tributos indiretos: ICMS imune (Lei Kandir, LC 87/1996, Art. 3º; imunidade constitucional CF/88 Art. 155 §2º, X, "a"), IPI imune, PIS/Cofins alíquota zero com manutenção dos créditos, ISS isento (se o resultado ocorrer no exterior — LC 116/2003, Art. 2º, I). Preservação integral dos créditos de entrada.  _(LC 87/1996 Art. 3º; CF/88 Art. 155 §2º, X, "a"; LC 116/2003 Art. 2º, I)_
-
-### 5.8 Tratamento de importações
-
-- **Tratamento de importações** — Importação de mercadorias: II (imposto de importação) + IPI + ICMS + PIS-Importação (2,1%) + Cofins-Importação (9,65% ou 10,65%). Importação de serviços: ISS-Importação + PIS-Importação (1,65%) + Cofins-Importação (7,60%) + IRRF (15%/25%) + IOF (0,38%) + eventualmente CIDE (10% para transferência de tecnologia). A tributação efetiva sobre serviços importados pode ultrapassar 40%.
-
-### 5.9 Requisitos de NF-e para créditos de ICMS / PIS / Cofins
-
-- **Requisitos de NF-e para créditos** — Créditos exigem NF-e válida (Modelo 55 para mercadorias) ou NFS-e (para ISS em serviços, onde relevante). Crédito de ICMS = ICMS destacado na NF-e. Crédito de PIS/Cofins (apenas não cumulativo) = valores na NF-e ou calculados a partir dos itens creditáveis previstos na Lei 10.637/2002 Art. 3º e Lei 10.833/2003 Art. 3º.  _(Lei 10.637/2002 Art. 3º; Lei 10.833/2003 Art. 3º)_
-
-### 5.10 Créditos de entrada de PIS/Cofins (apenas não cumulativo)
-
-- **Créditos de entrada PIS/Cofins** — Itens creditáveis: mercadorias para revenda, insumos para industrialização/produção, energia consumida na produção, aluguel de imóveis/máquinas usados no negócio, depreciação de bens do ativo, frete sobre compras. NÃO creditáveis: entretenimento, despesas pessoais, itens não diretamente vinculados à atividade geradora de receita.
-
-### 5.11 Tratamento no Simples Nacional
-
-- **Tratamento no Simples Nacional** — Todos os tributos (ICMS, ISS, PIS, Cofins, IRPJ, CSLL, CPP) recolhidos pela guia DAS. Alíquota efetiva determinada pelo Anexo (I-V) e pela faixa de receita dos últimos 12 meses (RBT12). Sem apuração separada de ICMS/ISS/PIS/Cofins, exceto: - **Sublimite estadual/municipal de BRL 3.600.000** (LC 123/2006, Art. 13, §1º, e Art. 18): acima desse sublimite, ICMS e ISS são recolhidos fora do DAS, pelas regras normais do estado/município. - **ICMS-ST**, **ICMS na importação** e **DIFAL** são pagos separadamente, mesmo no Simples. Comprador que recebe nota de fornecedor do Simples: crédito de ICMS limitado (percentual destacado na NF-e) e crédito de PIS/Cofins limitado.  _(LC 123/2006, Art. 13, §1º, e Art. 18)_
-
-### 5.12 Regras de transição (CBS/IBS, 2026+)
-
-- **Regras de transição** — **2026**: CBS 0,9% + IBS 0,1% aplicam-se como alíquotas-teste, em paralelo aos tributos existentes. São creditáveis contra PIS/Cofins e ICMS/ISS, respectivamente. Pagamento suspenso por 3 meses, sem multa, após a publicação dos regulamentos. **2027**: CBS substitui PIS/Cofins integralmente (tributos antigos extintos); IPI extinto, com exceções para a Zona Franca de Manaus. **2029-2032**: IBS substitui gradualmente ICMS/ISS. **2033**: restam apenas CBS + IBS + IS. Todas as regras de transição são marcadas como julgamento exigido do revisor.
-
-### 5.13 DIFAL (Diferencial de Alíquota)
-
-- **DIFAL** — DIFAL aplica-se quando há venda interestadual a não contribuinte (consumidor final). DIFAL = alíquota interna do estado de destino menos a alíquota interestadual. Recolhido ao estado de destino por força da EC 87/2015 (atualmente partilha de 100% para destino, conforme LC 190/2022). Sinalizar para revisor todos os cálculos de DIFAL.  _(EC 87/2015; LC 190/2022)_
-
-### 5.14 Classificação de software
-
-- **Classificação de software** — SaaS / serviços em nuvem são, em geral, ISS (STF ADIs 1.945 e 5.659). Software empacotado era historicamente ICMS, mas modernamente é predominantemente ISS por força das mesmas ADIs. Sinalizar para revisor — exigir verificação da legislação estadual e municipal aplicável.  _(STF ADIs 1.945 e 5.659)_
-
-### 5.15 Tipos de nota fiscal eletrônica
-
-- **Tipos de nota fiscal eletrônica** — NF-e (mercadorias / ICMS), NFS-e (serviços / ISS), NFC-e (venda ao consumidor no varejo), CT-e (transporte). NFS-e é emitida pelo portal municipal, contendo CNPJ do prestador, CNPJ/CPF do tomador, código de serviço, valor, alíquota de ISS e valor do ISS.
-
-## Seção 6 — Catálogo Tier 2 (comprimido)
-
-### 6.1 Determinação de regime tributário
-
-- **Determinação de regime tributário** — *Padrão:* cliente não sabe se está em Lucro Real, Lucro Presumido ou Simples Nacional. *Default:* Lucro Presumido (cumulativo, sem créditos). *Pergunta:* "Qual seu regime tributário? Verifique o cartão CNPJ ou consulte seu Contador."
-
-### 6.2 Aplicabilidade de ICMS-ST
-
-- **Aplicabilidade de ICMS-ST** — *Padrão:* o produto pode estar sujeito a ICMS Substituição Tributária. *Default:* presumir que não está sujeito a ST (sinalizar para revisor). *Pergunta:* "Este produto está sujeito a ICMS-ST no seu estado? Qual é a MVA aplicável segundo o protocolo CONFAZ?"
-
-### 6.3 Operação interestadual ou interna
-
-- **Operação interestadual ou interna** — *Padrão:* venda ou compra em que origem/destino não é claro. *Default:* interna (aplicar alíquota interna). *Pergunta:* "Em qual estado está o comprador/vendedor?"
-
-### 6.4 Alíquota de ISS por município
-
-- **Alíquota de ISS por município** — *Padrão:* serviço em que a alíquota municipal exata não é conhecida. *Default:* 5% (máximo, com piso de 2% por LC 157/2016). *Pergunta:* "Qual município é competente para o ISS dessa prestação? Qual é a alíquota aplicável?"  _(LC 157/2016)_
-
-### 6.5 Tratamento de transição CBS/IBS
-
-- **Tratamento de transição CBS/IBS** — *Padrão:* transação em 2026 em que as alíquotas-teste CBS/IBS possam aplicar. *Default:* aplicar apenas o sistema atual (não adicionar CBS/IBS sem confirmação). *Pergunta:* "Seu sistema de NF-e/NFS-e está atualizado para incluir os campos de CBS/IBS? Seu Contador confirmou o tratamento de transição?"
-
-### 6.6 Retenção sobre serviço importado
-
-- **Retenção sobre serviço importado** — *Padrão:* pagamento a prestador estrangeiro. *Default:* aplicar tributação plena de importação (ISS, PIS/Cofins-Importação, IRRF 15%, IOF). *Pergunta:* "O prestador é de país com tratado tributário? É jurisdição de paraíso fiscal (IRRF 25%)?"
-
-### 6.7 Fornecimento misto (mercadoria + serviço)
-
-- **Fornecimento misto** — *Padrão:* transação que inclui mercadoria e serviço. *Default:* tratar como mercadoria (ICMS, alíquota maior). *Pergunta:* "Pode separar os componentes de mercadoria e serviço? A parte de mercadoria sujeita-se a ICMS e a de serviço a ISS."
-
-### 6.8 Veículos e combustível
-
-- **Veículos e combustível** — *Padrão:* compra de combustível, manutenção de veículo. *Default:* sem crédito (sinalizar para revisor). *Pergunta:* "Esse veículo é de uso exclusivo do negócio? O combustível é para veículo da empresa?"
-
-### 6.9 Transferências de entrada com valores redondos
-
-- **Transferências com valores redondos** — *Padrão:* grande crédito de valor redondo proveniente de contraparte com nome do sócio. *Default:* excluir como aporte de sócio. *Pergunta:* "Esse valor é pagamento de cliente, aporte de capital ou empréstimo?"
-
-### 6.10 Saques em espécie
-
-- **Saques em espécie** — *Padrão:* "saque", "saque ATM", "saque caixa". *Default:* excluir. *Pergunta:* "Para que foi usado o caixa?"
-
-### 6.11 Local de tributação do ISS
-
-- **Local de tributação do ISS** — *Padrão:* o serviço é prestado em município diferente do município de registro do prestador. *Default:* tributar no município do prestador. *Pergunta:* "O serviço se enquadra em alguma das hipóteses do Art. 3º da LC 116/2003 (construção, segurança, limpeza etc.), em que o ISS é devido no local da prestação?"  _(LC 116/2003 Art. 3º)_
-
-### 6.12 Computação do DIFAL
-
-- **Computação do DIFAL** — *Padrão:* venda interestadual a consumidor final. *Default:* aplicar DIFAL (alíquota interna do estado de destino menos alíquota interestadual). *Pergunta:* "O comprador é contribuinte (com IE) ou consumidor final? Em qual estado?"
-
-### 6.13 Classificação de software (SaaS vs licenciado)
-
-- **Classificação de software (SaaS vs licenciado)** — *Padrão:* fornecimento de software. *Default:* ISS (conforme STF ADIs 1.945 e 5.659). *Pergunta:* "É SaaS, software de prateleira (entrega física), ou licença por download? Sinalizar para revisor."  _(STF ADIs 1.945 e 5.659)_
-
-## Seção 7 — Modelo de papel de trabalho em Excel (específico para Brasil)
-
-### Aba "Transactions"
-
-Colunas: A (Data), B (Contraparte/CNPJ), C (nº NF-e/NFS-e), D (Bruto BRL), E (Valor ICMS), F (Valor PIS), G (Valor Cofins), H (Valor ISS), I (Valor IPI), J (Tipo: ICMS/ISS/Misto), K (Direção: Interna/Interestadual/Importação/Exportação), L (Default S/N), M (Pergunta), N (Notas).
-
-### Aba "Tax Summary"
-
-Seções separadas para cada tributo:
-
-```
-PIS/COFINS:
-| Receita (PIS/Cofins output) | =SUMIFS sobre entradas de crédito |
-| PIS devido | =Receita * alíquota PIS |
-| Cofins devida | =Receita * alíquota Cofins |
-| Créditos PIS (se não cumulativo) | =SUMIFS sobre entradas de débito com crédito PIS |
-| Créditos Cofins (se não cumulativo) | =SUMIFS sobre entradas de débito com crédito Cofins |
-| PIS líquido | =PIS devido - créditos PIS |
-| Cofins líquida | =Cofins devida - créditos Cofins |
-
-ICMS (se aplicável):
-| ICMS output | =SUMIFS sobre vendas ICMS |
-| Créditos ICMS (entrada) | =SUMIFS sobre créditos ICMS de compras |
-| ICMS líquido | =Output - Input |
-
-ISS (se aplicável):
-| ISS sobre serviços prestados | =SUMIFS sobre receita de serviço * alíquota ISS |
+```oa-check
+name: Cumulative goods sale with ICMS excluded
+inputs:
+  invoice_inclusive: 50000
+  highlighted_icms: 6000
+  pis_rate: 0.0065
+  cofins_rate: 0.03
+steps:
+  - contribution_base: invoice_inclusive - highlighted_icms
+  - pis: contribution_base * pis_rate
+  - cofins: contribution_base * cofins_rate
+  - total: pis + cofins
+  - unreconciled_gross_method: invoice_inclusive * (pis_rate + cofins_rate)
+  - overstatement: unreconciled_gross_method - total
+expected:
+  contribution_base: 44000
+  pis: 286
+  cofins: 1320
+  total: 1606
+  overstatement: 219
 ```
 
-### Modelo simplificado (uma página)
+###2026 waiver versus actually paid test taxes
 
-```
-BRASIL — TRIBUTOS INDIRETOS — Papel de trabalho
-Período: [Mês / Trimestre]
+Assume independently supported ordinary test-tax base 100,000 and same-period legacy contribution liability 3,650; these are distinct verified workpaper inputs, not a claim that both taxes always share a base. CBS900 and IBS100 are informational if the taxpayer qualifies for the payment waiver; it pays the full 3,650 legacy liability. If both test amounts were actually paid and the lawful paid-tax offset route applies,1,000 offset leaves 2,650 legacy payable, for the same total 3,650 cash including the test taxes. If same-period legacy debt were only 350, the eligible excess would be 650 for the separate other-federal-offset/refund-request route; it is not a phantom refundable 2026 informational credit. Prove compliance or actual collection before selecting the route. [LC214 arts.343,346,348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm); [CBSRegarts.464–465](https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html).
 
-A. ISS
-  A1. Receita total de serviço                     ___________
-  A2. Alíquota ISS                                 ___________
-  A3. ISS devido                                   ___________
-  A4. ISS retido na fonte                          ___________
-  A5. ISS a recolher (A3 - A4)                     ___________
-
-B. ICMS
-  B1. Receita total de mercadoria (interna)        ___________
-  B2. Alíquota ICMS (interna)                      ___________
-  B3. ICMS output                                  ___________
-  B4. Créditos de ICMS                             ___________
-  B5. ICMS a recolher (B3 - B4)                    ___________
-  B6. Vendas interestaduais                        ___________
-  B7. DIFAL (se B2C interestadual)                 ___________
-
-C. SIMPLES NACIONAL — VERIFICAÇÃO
-  C1. Receita últimos 12 meses (RBT12)             ___________
-  C2. Acima do sublimite BRL 3.600.000? (S/N)      ___________
-  C3. Se sim: ICMS/ISS recolhidos fora do Simples  ___________
-
-FLAGS DE REVISOR:
-  [ ] Regime tributário confirmado?
-  [ ] Códigos CNAE verificados?
-  [ ] Operações interestaduais sinalizadas?
-  [ ] Produtos ICMS-ST identificados?
-  [ ] Verificação do sublimite efetuada?
+```oa-check
+name: Test-year waiver versus paid-tax offset and insufficient debt
+inputs:
+  test_base: 100000
+  cbs_rate: 0.009
+  ibs_rate: 0.001
+  legacy_debt: 3650
+  small_legacy_debt: 350
+steps:
+  - cbs: test_base * cbs_rate
+  - ibs: test_base * ibs_rate
+  - actual_test_payment: cbs + ibs
+  - waived_total: legacy_debt
+  - offset: min(actual_test_payment, legacy_debt)
+  - legacy_after_paid_offset: legacy_debt - offset
+  - paid_route_total: actual_test_payment + legacy_after_paid_offset
+  - eligible_excess_small_debt: max(0, actual_test_payment - small_legacy_debt)
+expected:
+  cbs: 900
+  ibs: 100
+  waived_total: 3650
+  offset: 1000
+  legacy_after_paid_offset: 2650
+  paid_route_total: 3650
+  eligible_excess_small_debt: 650
 ```
 
-### Convenções de cor e formatação
-
-Azul para valores travados do extrato/NF-e. Preto para fórmulas. Verde para referências entre abas. Fundo amarelo em qualquer linha em que Default = "S". Fundo vermelho em linhas que exigem verificação de alíquota específica do estado.
-
-## Seção 8 — Guia de leitura de extrato bancário brasileiro
-
-**Convenções de formato.** Bancos brasileiros exportam extratos em PDF (mais comum), OFX, CSV ou via internet banking. Formato de data: DD/MM/AAAA. Colunas comuns: Data, Histórico ou Descrição, Valor (negativo para débitos), Saldo. Alguns bancos exibem Documento (número de documento) e Agência/Conta.
-
-**Formatos de extrato por banco**
-
-| Banco | Formatos | Campos-chave |
-| --- | --- | --- |
-| Banco do Brasil, Caixa, Itaú | CSV, PDF, OFX | Data, Histórico, Valor, Saldo |
-| Bradesco, Santander | CSV, PDF | Data, Descrição, Débito, Crédito |
-| Nubank, Inter, C6 | CSV | Data, Descrição, Valor |
-
-**Termos bancários-chave (pistas de classificação)**
-
-| Termo | Pista de classificação |
-| --- | --- |
-| TED, DOC, PIX | Transferência — checar direção |
-| BOLETO | Pagamento de boleto — provável despesa |
-| DAS, SIMPLES | Pagamento de Simples Nacional |
-| SEFAZ, ICMS | Pagamento de tributo estadual |
-| PREFEITURA, ISS | Pagamento de tributo municipal |
-| NF-E, NOTA FISCAL | Vinculado a nota fiscal |
-
-**Transferências via PIX.** PIX é o meio dominante (24/7 instantâneo). Lançamentos como "PIX RECEBIDO" ou "PIX ENVIADO" com nome do contraparte ou CNPJ/CPF. Conferir contraparte contra Seção 3.
-
-**TED e DOC.** Métodos mais antigos. TED com nome do contraparte e banco. DOC está em descontinuação. Ambos com referência de transferência.
-
-**Boletos.** Lançamentos como "PAGAMENTO BOLETO" ou "LIQUIDACAO BOLETO" com referência de código de barras. O nome do beneficiário pode não aparecer na descrição — cruzar com as faturas.
-
-**Débito automático.** Débitos automáticos para concessionárias e pagamentos recorrentes. Exibem o nome do prestador: CPFL, VIVO, CLARO etc.
-
-**Transferências internas e exclusões.** Entre contas do próprio cliente. Rotuladas "TRANSFERENCIA MESMA TITULARIDADE", "TED PROPRIA", "PIX PROPRIO". Sempre excluir.
-
-**Retiradas do sócio (pró-labore).** Sócio ou autônomo retirando pró-labore ou dividendos. Rotuladas "PRO-LABORE", "DISTRIBUICAO LUCROS", "RETIRADA SOCIO". Excluir — trabalhista/distribuição, não tributo indireto.
-
-**Estornos e devoluções.** Identificados por "ESTORNO", "DEVOLUCAO", "CREDITO ESTORNO". Lançar como valor negativo no mesmo tratamento da transação original.
-
-**Operações em moeda estrangeira.** Converter para BRL pela taxa PTAX (Banco Central) na data. IOF (0,38% no câmbio) sobre a conversão.
-
-**Lançamentos de investimento.** "APLICACAO CDB", "RESGATE LCI", "RENDIMENTO POUPANCA". Tudo financeiro — excluir do tributo indireto.
-
-**Pagamentos de DAS / DARF.** "PAGAMENTO DAS" (Simples Nacional), "PAGAMENTO DARF" (federal). Excluir — pagamento de tributo, não fornecimento.
-
-## Seção 9 — Fallback de onboarding (apenas quando a inferência falhar)
-
-### 9.1 CNPJ e tipo de entidade jurídica
-
-- **9.1 CNPJ e tipo de entidade jurídica** — Regra de inferência: o formato CNPJ (XX.XXX.XXX/YYYY-ZZ) pode aparecer em descrições de transferência. Filial 0001 = matriz. Pergunta fallback: "Qual seu CNPJ?"
-
-### 9.2 Regime tributário
-
-- **9.2 Regime tributário** — Regra de inferência: pagamentos de DAS sugerem Simples Nacional. DARF código 5952 sugere PIS não cumulativo (Lucro Real). DARF código 8109 sugere PIS cumulativo (Lucro Presumido). Pergunta fallback: "Você é Lucro Real, Lucro Presumido ou Simples Nacional?"
-
-### 9.3 Estado(s) de atuação
-
-- **9.3 Estado(s) de atuação** — Regra de inferência: localização da agência bancária, concessionárias de utilities (CPFL = SP, CEMIG = MG, LIGHT = RJ). Pergunta fallback: "Em quais estados você possui inscrição estadual?"
-
-### 9.4 Período de apuração
-
-- **9.4 Período de apuração** — Regra de inferência: primeira e última data de transação. Apuração mensal é padrão. Pergunta fallback: "A qual mês refere-se este extrato?"
-
-### 9.5 Setor e atividade principal
-
-- **9.5 Setor e atividade principal** — Regra de inferência: mix de contrapartes, descrições de NF-e, código CNAE no cartão CNPJ. Pergunta fallback: "Qual sua atividade principal — mercadoria, serviço, indústria ou misto?"
-
-### 9.6 Status de Simples Nacional
-
-- **9.6 Status de Simples Nacional** — Regra de inferência: pagamentos de DAS no extrato. Pergunta fallback: "Você é optante do Simples Nacional? Em caso afirmativo, qual Anexo se aplica?"
-
-### 9.7 Operações interestaduais
-
-- **9.7 Operações interestaduais** — Regra de inferência: contrapartes com agências bancárias ou endereços fora do estado. Pergunta fallback: "Você vende para ou compra de outros estados? Quais?"
-
-### 9.8 Atividades de exportação
-
-- **9.8 Atividades de exportação** — Regra de inferência: créditos em moeda estrangeira, contrapartes com nomes estrangeiros. Pergunta fallback: "Você exporta mercadorias ou serviços?"
-
-### 9.9 Créditos de períodos anteriores
-
-- **9.9 Créditos de períodos anteriores** — Regra de inferência: não inferível de um único período. Sempre perguntar. Pergunta: "Você possui créditos de PIS/Cofins ou ICMS transportados de meses anteriores?"
-
-### 9.10 Disponibilidade de NF-e
-
-- **9.10 Disponibilidade de NF-e** — Regra de inferência: se o cliente fornecer XMLs de NF-e ou arquivo SPED, está respondido. Pergunta fallback: "Pode fornecer os XMLs de NF-e ou o arquivo SPED Fiscal deste período?"
-
-### 9.11 Códigos CNAE
-
-- **9.11 Códigos CNAE** — Regra de inferência: não inferível do extrato isolado; confirmar no cartão CNPJ. Pergunta fallback: "Quais são seus códigos CNAE? Algum deles altera o tratamento de ISS ou anexo do Simples?"
-
-### 9.12 Retenção de ISS na fonte
-
-- **9.12 Retenção de ISS na fonte** — Regra de inferência: faturas a entes públicos ou grandes corporativos podem implicar retenção. Pergunta fallback: "Você teve faturas com ISS retido na fonte no período?"
-
-### 9.13 RBT12 (se Simples)
-
-- **9.13 RBT12 (se Simples)** — Regra de inferência: não inferível de um único mês. Pergunta fallback: "Qual é seu RBT12 (receita dos últimos 12 meses) atual?"
-
-### 9.14 ICMS-ST
-
-- **9.14 ICMS-ST** — Regra de inferência: observar NF-e de entrada com indicação de ST. Pergunta fallback: "Algum de seus produtos está sujeito a ICMS Substituição Tributária?"
-
-## Seção 10 — Material de referência
-
-### Fontes
-
-**Legislação primária (sistema atual):**
-1. Constituição Federal — Arts. 153 (IPI, PIS, Cofins), 155 (ICMS), 156 (ISS), 156-A (IBS)
-2. Lei Complementar 87/1996 (Lei Kandir) — ICMS
-3. Lei 10.637/2002 — PIS não cumulativo
-4. Lei 10.833/2003 — Cofins não cumulativo
-5. Lei 9.718/1998 — PIS/Cofins cumulativo
-6. Lei Complementar 116/2003 — ISS
-7. Lei Complementar 157/2016 — Alíquota mínima de ISS (2%)
-8. Resolução do Senado Federal 13/2012 — alíquota interestadual de 4% para mercadorias importadas
-9. Decreto 7.212/2010 (RIPI) — regulamentação do IPI
-10. Lei Complementar 123/2006 — Simples Nacional (e art. 21-A, incluído pela LC 214/2025)
-11. Lei Complementar 190/2022 — DIFAL após a EC 87/2015
-
-**Legislação da reforma (sistema novo):**
-12. Emenda Constitucional 132/2023 — base constitucional de CBS/IBS/IS
-13. Lei Complementar 214/2025 — regulamentação de CBS/IBS/IS (primeira fase)
-14. Lei Complementar 227/2026 — segunda fase, regras de Comitê Gestor do IBS e partilha
-
-**Precedentes judiciais:**
-15. STF RE 574.706 — exclusão do ICMS da base de PIS/Cofins
-16. STF ADIs 1.945 e 5.659 — software sujeito a ISS, não a ICMS
-
-**Outros:**
-17. Receita Federal — https://www.gov.br/receitafederal
-18. CONFAZ — https://www.confaz.fazenda.gov.br (convênios e protocolos de ICMS)
-19. Taxa PTAX — Banco Central do Brasil
-
-### Lacunas conhecidas
-
-1. A biblioteca de fornecedores cobre marcas nacionais comuns, mas não negócios regionais ou concessionárias específicas de estado.
-2. Percentuais de MVA em ICMS-ST são por produto e estado; esta skill não contém a base completa de protocolos CONFAZ.
-3. Programas estaduais de incentivo de ICMS (guerra fiscal) não são cobertos.
-4. A transição CBS/IBS está em curso — alíquotas e regras podem mudar conforme regulamentação do Comitê Gestor.
-5. Os exemplos resolvidos usam um consultor de SP. Outras combinações estado/município podem produzir resultados distintos.
-6. Alíquotas municipais de ISS não estão exaustivamente listadas — há mais de 5.500 municípios.
-
-### Change log
-
-- **v3.0 (Maio 2026):** Reescrita completa em PT-BR. Consolida o conteúdo de br-indirect-tax.md em brazil-vat.md. Acrescenta cronograma detalhado de transição CBS/IBS (LC 214/2025, LC 227/2026), regime híbrido do Simples (art. 21-A), matriz ampliada de alíquotas ICMS estaduais, retenção de ISS na fonte, DIFAL, classificação de software (STF ADIs 1.945 e 5.659), sublimite do Simples de BRL 3.600.000 (LC 123/2006), Resolução SF 13/2012, LC 157/2016, LC 190/2022, R-BR-7 (cadeias IPI), R-BR-8 (litígio CBS/IBS) e prohibitions.
-- **v2.0 (Abril 2026):** Reescrita completa na estrutura Malta v2.0. Quick reference (Seção 1), supplier pattern library (Seção 3), exemplos resolvidos (Seção 4), Tier 1 (Seção 5), Tier 2 (Seção 6), modelo Excel (Seção 7), guia de extrato bancário (Seção 8), onboarding fallback (Seção 9).
-- **v1.0 (Abril 2026):** Versão monolítica anterior cobrindo os cinco tributos indiretos e contexto da reforma.
-
-### Self-check (v3.0)
-
-1. Quick reference no topo, com os cinco tributos atuais e contexto da reforma CBS/IBS/IS: sim (Seção 1).
-2. Defaults conservadores com tratamento específico por regime: sim (Seção 1).
-3. Biblioteca de fornecedores como tabelas literais com fornecedores brasileiros: sim (Seção 3, 14 sub-tabelas).
-4. Exemplos resolvidos do consultor SP + exemplos adicionais (interestadual, DIFAL, retenção ISS): sim (Seção 4, 9 exemplos).
-5. Tier 1 comprimido: sim (Seção 5, 15 regras).
-6. Tier 2 comprimido: sim (Seção 6, 13 itens).
-7. Modelo Excel: sim (Seção 7).
-8. Guia de leitura de extrato bancário: sim (Seção 8).
-9. Onboarding como fallback com regras de inferência: sim (Seção 9, 14 itens).
-10. Distinção PIS/Cofins cumulativo vs não cumulativo explícita: sim (Seções 1 e 5.2).
-11. Cálculo por dentro do ICMS explícito: sim (Seção 5.4).
-12. Tributação de importação de serviço (~40% efetivo) explícita: sim (Seções 5.8 e Exemplo 3).
-13. Tratamento de Simples Nacional via DAS explícito: sim (Seções 5.11 e Exemplo 4).
-14. Sublimite Simples BRL 3.600.000 explícito: sim (Seções 1 e 5.11).
-15. Imunidade de exportação em todos os tributos explícita: sim (Seção 5.7).
-16. Catálogo de recusas presente: sim (Seção 2, R-BR-1 a R-BR-8).
-17. Cronograma detalhado CBS/IBS: sim (Seção 1).
-18. Regime híbrido do Simples (art. 21-A LC 123/06 via LC 214/2025): sim (Seção 1).
-
-## Fim da Skill Brasil — Tributos Indiretos v3.0
-
-## PROIBIÇÕES
-
-- NUNCA aplicar ICMS a serviços puros — serviços sujeitam-se a ISS (exceto telecomunicações e transporte interestadual).
-- NUNCA aplicar ISS a venda de mercadoria física — mercadoria sujeita-se a ICMS.
-- NUNCA ignorar o sublimite de BRL 3.600.000 do Simples Nacional para ICMS/ISS.
-- NUNCA presumir que as alíquotas de ICMS são uniformes entre estados — variam de 7% a 25%+.
-- NUNCA presumir que as alíquotas de ISS são iguais em todos os municípios — variam de 2% a 5%.
-- NUNCA computar IPI para prestadores de serviço puro — IPI incide apenas em produtos industrializados.
-- NUNCA ignorar obrigações de ICMS-ST — aplicam-se inclusive a empresas do Simples Nacional.
-- NUNCA opinar sobre a reforma IBS/CBS como se já estivesse plenamente em vigor.
-- NUNCA apresentar cálculos como definitivos — sempre rotular como estimativos e direcionar o cliente a um contador registrado no CRC.
-
-## Disclaimer
-
-Esta skill e seus produtos são fornecidos exclusivamente para fins informativos e de cálculo e não constituem aconselhamento tributário, jurídico ou financeiro. Open Accountants e seus contribuintes não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes do uso desta skill. Todos os resultados devem ser revisados e assinados por profissional qualificado (contador registrado no CRC, advogado tributarista ou profissional licenciado equivalente) antes do envio ou da tomada de decisão.
-
-A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para acessar a versão mais recente, solicitar revisão profissional de contador licenciado e acompanhar atualizações conforme a legislação tributária evolui.
+### All other former worked scenarios retained with their corrections
+
+| Former case and actual facts | Supported current result and missing condition | Source |
+|---|---|---|
+|1. April 2026 domestic software consultancy NFS-e,10,000 gross |Do not default SP ISS to 5% or silently assume the October Tema 118 judgment's precise effect on an earlier filed April return. If the actual municipal assessment were 500 and its exclusion applies to the period/position, base 9,500 gives PIS61.75+Cofins 285=346.75. The former 65+300=365 gross-base output is not a current universal conclusion. Municipal item/rate and historical treatment remain facts to resolve | [STF Tema 118](https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?classeProcesso=RE&incidente=2637509&numeroProcesso=592616&numeroTema=118); [LC116 arts.6–8](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html); [Lei 9715](https://www2.camara.leg.br/legin/fed/lei/1998/lei-9715-25-novembro-1998-372111-normaatualizada-pl.html); [Lei 9718](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm) |
+|3. NotionLabsInc subscription USD15, bank BRL85 |The currency line does not establish the statutory conversion, actual issuer, pre-IRRF fee, ISS, gross-up or all import levies. If ordinary import-contribution conditions hold, use the pre-IRRF value plus actualISS and own-tax algebra above. No 2.9%SPISS, fixedIRRF/IOF or final remittance total is inferred; preserve the 85 andUSD15 as unreconciled source facts | [Lei 10865 arts.1–8](https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html); [LC116 arts.1,3,6](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html) |
+|4. Seller receives 5,000 retail sale from a Simples customer |The **seller's** actual regime controls its output. If the seller is regular, compute its local/federal taxes despite the buyer's Simples status; if the seller is an actual optant, use its own RBT12/annex/segregation and outside-DAS tests. No DAS amount follows from the customer's label | [LC123 arts.13,18](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [Simples owner](br-simples-nacional.md) |
+|5. Fogo de Chão dinner 800 |For the hypothesised cumulative consultant there is no ordinary noncumulative input credit. The restaurant's food/drinks are not automatically an ISS service; LC87 includes them in goods scope. For another purchaser/regime, identify actual business use and statutory credit category rather than use a brand-wide rule | [LC87 art.2 I](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [Leis 10637/10833 art.3](https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html), [Cofins](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html) |
+|6. EnelSP energy invoice 1,500 |Ordinary office use does not automatically give ICMS credit; actual eligible industrial/resale/export category is required. Noncumulative contribution energy credit has its own eligible basis; cumulative case has no such ordinary input subtraction. No universal 25%energy rate or a credit equal to printed invoice PIS/Cofins is assumed | [LC87 art.33 II](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [Lei 10833 art.3 III](https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html) |
+|7. SP regular trader sales 100,000 and supported eligible purchases 60,000 |Under the actual ordinary SP rate and no other balances/adjustments, output 18,000−eligible 10,800=7,200. These supported facts and the full recomputing local example remain in the owner; business use/documentation still govern the credit | [br-indirect-tax worked example](br-indirect-tax.md); [SPart.52 I](https://legislacao.fazenda.sp.gov.br/Paginas/art052.aspx); [LC87 arts.13,19–23](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html) |
+|8. SP→BA goods 10,000 |Supported ordinary interstate debit 700. Resale is not final consumption merely because B2 B. A final-use purchase needs recipient status, actual destination rate/base and FECP; the old BA19%and automatic 12%differential are unconfirmed and not used | [SPart.52 II](https://legislacao.fazenda.sp.gov.br/Paginas/art052.aspx); [LC87 arts.4§2,13](https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html); [local example](br-indirect-tax.md) |
+|9. Consultancy invoice 20,000, assumed actual 5%ISS with valid retention |1,000 ISS,19,000 cash before other deductions. A large corporate customer alone does not establish retention. Prove the actual liable party, withholding and remittance; avoid paying a correctly settled retained liability twice | [LC116 arts.6–8](https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html); [local owner](br-indirect-tax.md) |
+
+The ordinary goods case is former case 2. All nine scenarios remain, including the unresolved historical service and foreign-subscription facts; no incomplete case is silently replaced by a different subject.
+
+## Ask the client first
+
+- What taxpayer/CNPJ or CPF, legal form and establishments, actual regime/elections, CNAEs/contracts and 2026 assessment period are involved? Obtain actual status and previous declarations.
+- What supplies, NCM/service items, invoice XML/keys and cancellation/authorisation records, gross price/discount/tax components and credit balances support revenue and inputs?
+- Where do goods move or services execute/result, who is the actual issuer/recipient, and is an interstate purchase resale/production or final use by a taxpayer/non-taxpayer?
+- What business use, allocation, paid contributions, valid fiscal books and statutory credit category support each claimed input amount, separate from supplier's printed taxes?
+- Which actual 2026 accessory start, compliance/waiver, PNCT notices/accountant appointment, cure, test-tax payment/offset/refund records and legacy returns/payments apply? If Simples, obtain RBT12/segregation and the owning Guide's actual 2027 option receipt.
+- For foreign supplies, what entity/country, contract/licence rights, tax-bearing clause, exchange evidence, pre-IRRF value, localISS and separate withholding/CIDE/IOF analysis establish the import and amounts?
+
+Maintain a transaction sheet with date, source/counterparty, taxpayer/establishment, supply and classification evidence, local/federal bases, each tax/credit/withholding, supporting legal URL/date, document key, business-use allocation, payment and reviewer exception. Summarise legacy PIS/Cofins, ICMS/ISS/IPI and test-year CBS/IBS separately, then reconcile bank gross/fees/retentions/net receipts and payments. This is a suggested working-paper design, not a statutory form or live software integration.
+
+Retain bank/export clues from BB, Caixa, Itaú, Bradesco, Santander, Nubank, Inter, BTG, Sicoob, Sicredi and C6, and terms PIX/TED/DOC/boleto/cartão, tarifas/juros/IOF, DAS/DARF/SEFAZ/prefeitura, aplicações/resgates and saque. Inspect actual CSV/PDF/OFX fields, signs, dates, decimal separators and balances. No brand assures a fixed export format or an automatically correct classification. Preserve source documents and calculation links so a qualified reviewer can reproduce the work; do not describe preparation as an accepted filing.
+
+## Sources
+
+| Source and sections actually read | Official URL | Read on |
+|---|---|---|
+| Lei 10637:arts.1–3,5,8,10, all relevant revenue/credit exclusions and ordinary due date read | https://www2.camara.leg.br/legin/fed/lei/2002/lei-10637-30-dezembro-2002-491384-normaatualizada-pl.html |2026-11-11|
+| Lei 10833:arts.1–3,6,10–11, credit categories/sector exceptions and due date read | https://www2.camara.leg.br/legin/fed/lei/2003/lei-10833-29-dezembro-2003-497045-normaatualizada-pl.html |2026-11-11|
+| Lei 9715:arts.2,8, cumulative PIS scope/rate read | https://www2.camara.leg.br/legin/fed/lei/1998/lei-9715-25-novembro-1998-372111-normaatualizada-pl.html |2026-11-11|
+| Lei 9718:arts.2–3,8–8 A, ordinary versus financial-institution scope read | https://www.planalto.gov.br/ccivil_03/leis/l9718.htm |2026-11-11|
+| Lei 10865:arts.1–9 and15; ordinary goods/service bases/rates, complete art.8 product exceptions/§§21–21-A and art.15 actual-payment/additional-Cofins credit restriction read; specific NCM relief still requires actual classification | https://www2.camara.leg.br/legin/fed/lei/2004/lei-10865-30-abril-2004-531830-normaatualizada-pl.html |2026-11-11|
+| STF Tema 69:thesis and 2021 embargos ICMS highlighted exclusion/modulation read | https://portal.stf.jus.br/jurisprudenciarepercussao/verandamentoprocesso.asp?classeprocesso=re&incidente=2585258&numeroprocesso=574706&numerotema=69 |2026-11-11|
+| RFB binding guidance:read for Tema 69 treatment and corresponding administrative entries | https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao/jurisprudencia-vinculante/pis-cofins |2026-11-11|
+| STF Tema 118:21 October 2026 decision,23 Octminutes/latest 6 Novdocket status read; no final refund/modulation procedure inferred | https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?classeProcesso=RE&incidente=2637509&numeroProcesso=592616&numeroTema=118 |2026-11-11|
+| STF Informativo 1236:read for the full ISS/PIS-Cofins judgment section | https://www.stf.jus.br/arquivo/informativo/documento/informativo.htm |2026-11-11|
+| LC214 current with LC227:arts.11–12,26,41–48,343–349,471 A–C,475,517,543–544 read, historical/struck text distinguished | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm |2026-11-11|
+| CBS Decree 12955 current with 2026 amendments:arts.112,464–465,619–620 and relevant implementation scope read | https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-normaatualizada-pe.html |2026-11-11|
+| IBSReg 6 original 30 AprilPDF:arts.465–466,596–597,617 read; not falsely described as fully consolidated after later amendments | https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf |2026-11-11|
+| JointAct 1 complete act:arts.2–4, initial field grace, waiver and legacy-document preservation read | https://cgibs.gov.br/upload/arquivos/202609/09104120-ato-conjunto-rfb-cgibs-n-1-de-22-de-dezembro-de-2025.pdf |2026-11-11|
+| JointAct 4 complete act:art.1 all document phases,exceptions and DeRE deadlines read | https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf |2026-11-11|
+| JointAct 5 complete act:arts.1–3, all PNCT fallback/notice/authorisation conditions read | https://cgibs.gov.br/upload/arquivos/202608/13065932-ato-conjunto-rfb-cgibs-n-c2-ba-5-2026-regulamenta-o-programa-nacional-de-conformidade-tributaria-docx-assinado.pdf |2026-11-11|
+| JointAct 6 official signed attachment:arts.1–3 read, but retains MINUTA header; proposed nano exemption is unconfirmed pending final published original and is not applied | https://cgibs.gov.br/upload/arquivos/202608/28193542-ade-rfb-cgibs-n-6-28-8-2026-com-paragrafo-unico-assinado.pdf |2026-11-11|
+| RFB chronology 28 October 2026:read for subsequent document phases and distinction from technical-layout forecasts | https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/orientacoes-da-reforma-tributaria/cronograma |2026-11-11|
+| CBS official publication metadata:read for original DOU30 April 2026 publication date | https://www2.camara.leg.br/legin/fed/decret/2026/decreto-12955-29-abril-2026-799019-norma-pe.html |2026-11-11|
+| Current Constitution:ADCT124–130 read with all 126–128 conditions, future phases and IPI residual | https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html |2026-11-11|
+| MP1399 complete original:arts.1–19 read; AnnexesI–VI framework opened, product tables not certified for an individual future supply | https://www2.camara.leg.br/legin/fed/medpro/2026/medidaprovisoria-1399-4-novembro-2026-800091-publicacaooriginal-181743-pe.html |2026-11-11|
+| MP1399 official annex PDF:read for headings/vehicle/conversion/reduction framework only; no final product rate asserted | https://www2.camara.leg.br/legin/fed/medpro/2026/medidaprovisoria-1399-4-novembro-2026-800091-anexo-pe.pdf |2026-11-11|
+| TCU10 November 2026 notice:read for 11.3%calculation and submission to Senate | https://portal.tcu.gov.br/imprensa/noticias/presidente-do-tcu-entrega-ao-senado-acordao-sobre-aliquota-de-referencia-da-cbs |2026-11-11|
+| Senate 10 November 2026 notice:read for pending reference-rate resolution status | https://www12.senado.leg.br/institucional/presidencia/consultarnoticia?noticia_id=davi-alcolumbre-recebe-do-presidente-do-tcu-relatorio-sobre-aliquota-da-cbs-para-2027 |2026-11-11|
+| RFB EFD FAQ13 April 2026:read for signature, centralisation/0140/A-C-D-F records, deadlines and receipt recovery | https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/sped/efd-contribuicoes/efdc |2026-11-11|
+| MIT manualJanuary 2025:§§2–7 ordinary access,initialfields,debt/suspension,validation/closure read; no live screens tested | https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf/@@download/file |2026-11-11|
+| RFB DCTFWeb service 27 July 2026:read for monthly MIT/declaration route, signatures and current deadline | https://www.gov.br/pt-br/servicos/declarar-debitos-e-creditos-tributarios-federais |2026-11-11|
+| LC123:arts.3,13,18–20,23 and CGSNFAQ7.5 note 2 read for legacy Simples interactions; actual Simples figures owned by separate Guide | https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html |2026-11-11|
+| CGSN FAQ:§7.5 note 2 legacy regular-purchaser noncumulative credits on qualifying Simples supplies read | https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf |2026-11-11|
+| LC87:arts.2–9,13,19–24,33; LC116:arts.1–8 A/relevantlist; RIPI:arts.2–5,9,24,35; SP52 operativeI–III read, local figures owned by br-indirect-tax | https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html ; https://www2.camara.leg.br/legin/fed/leicom/2003/leicomplementar-116-31-julho-2003-492028-normaatualizada-pl.html ; https://www2.camara.leg.br/legin/fed/decret/2010/decreto-7212-15-junho-2010-606731-normaatualizada-pe.html ; https://legislacao.fazenda.sp.gov.br/Paginas/art052.aspx |2026-11-11|
+| STF RE627051/Tema 402:read for parcel-carriage reciprocal ICMS immunity and finality status | https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=402 ; https://noticias.stf.jus.br/postsnoticias/nao-incide-icms-sobre-transporte-de-mercadorias-pelos-correios/ |2026-11-11|
+
+Not yet confirmed: the precise final Tema 118 acórdão/modulation and its operational effect on an individual earlier return; actual foreign SaaS IRRF/treaty/CIDE/IOF rates, contract gross-up and localISS; specific legacy financial/insurance/product/monophase credit computations; actual water/sewer/add-on telecom and airline treatment; complete current consolidated IBS regulatory amendments and CGSN194/195 originals; certifiedDOUversion of JointAct 6 notwithstanding the official signed PDF; individual future IS product rates/regulatory implementation and final Senate 2027 CBSresolution; actual local rate/ST/MVA/calendar/form fields through the local-tax owner; precise federal/state/municipal penalty and interest amounts for the client's notice. These are bounded questions, not reasons to decline ordinary supported 2026 computations. No arbitrary bank/merchant-name rule, automatic default or live filing claim is adopted.
+
+Visit [OpenAccountants](https://openaccountants.com) to browse Guides, sign in, request professional review and follow updates. Check the version, date and approval displayed there; this draft does not claim to be the platform’s current verified version.
