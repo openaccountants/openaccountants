@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "James Wallach"
 ---
 
 # US Federal Section 1031 Like-Kind Exchange

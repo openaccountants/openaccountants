@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "GE"
   tax_year: "2026"
   last_updated: "2026-10-31"
-  reviewed_by: "Gvantsa Amiridze"
 ---
 
 # Georgia (country): value added tax (2026) v2.1

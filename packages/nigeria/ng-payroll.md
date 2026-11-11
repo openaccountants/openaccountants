@@ -5,9 +5,7 @@ jurisdiction: NG
 tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Omolola Fasasi"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 
@@ -21,7 +19,6 @@ domain: payroll
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 

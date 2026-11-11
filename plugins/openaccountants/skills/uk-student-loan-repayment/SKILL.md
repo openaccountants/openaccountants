@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-31"
-  reviewed_by: "James Power"
 ---
 
 # UK Student Loan Repayment
