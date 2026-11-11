@@ -6,9 +6,7 @@ jurisdiction: NP
 tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ashish Bista"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: vat-gst
 ---
 
@@ -18,7 +16,6 @@ domain: vat-gst
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Ashish Bista** on 2026-06-06.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -71,7 +68,6 @@ domain: vat-gst
 | Deadline | 25th of the month following the tax period |
 | Registration threshold | NPR 5,000,000 (goods/carriage) · NPR 3,000,000 (services or mixed) — services/mixed raised from NPR 2M eff. Shrawan 1, 2081 (16 Jul 2024) |
 | Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
-| Validated by | Verified by Ashish Bista (ICAN: 1765) on 2026-06-06 |
 
 **Conservative defaults**
 
