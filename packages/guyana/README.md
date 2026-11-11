@@ -10,12 +10,13 @@
 3. `README.md`
 4. `gy-company-formation.md`
 5. `gy-corporate-income-tax.md`
-6. `gy-income-tax.md`
-7. `gy-payroll-social.md`
-8. `gy-tax-overview.md`
-9. `gy-vat-gst.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+6. `gy-cross-border.md`
+7. `gy-income-tax.md`
+8. `gy-payroll-social.md`
+9. `gy-tax-overview.md`
+10. `gy-vat-gst.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## How to use
 

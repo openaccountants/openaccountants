@@ -7,7 +7,6 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/crypto-accounting"
   jurisdiction: "GB"
   last_updated: "2026-09-02"
-  reviewed_by: "Nadir Khan"
 ---
 
 # Crypto Accounting in United Kingdom: Bookkeeping & Record-Keeping for Crypto Transactions, how I do it
