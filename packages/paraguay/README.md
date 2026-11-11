@@ -8,11 +8,15 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `paraguay-income-tax.md`
-5. `paraguay-iva.md`
-6. `paraguay-payroll.md`
-7. `paraguay-social-contributions.md`
-8. `payroll-workflow-base.md`
+4. `paraguay-corporate-income-tax.md`
+5. `paraguay-cross-border.md`
+6. `paraguay-income-tax.md`
+7. `paraguay-iva.md`
+8. `paraguay-payroll.md`
+9. `paraguay-social-contributions.md`
+10. `paraguay-transfer-pricing.md`
+11. `payroll-workflow-base.md`
+12. `transfer-pricing-workflow-base.md`
 
 ## How to use
 
