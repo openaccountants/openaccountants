@@ -4,9 +4,7 @@ description: How to build a defensible crypto transaction ledger for UK clients 
 jurisdiction: GB
 last_updated: 2026-09-02
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Nadir Khan"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: crypto
 ---
 
