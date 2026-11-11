@@ -1,17 +1,17 @@
 ---
 name: how-to-submit-capital-gain-taxes-in-malta
-description: "Working method for the accountant supporting a seller of Malta immovable property at the deed, tax year 2026. Covers the article 5A final withholding tax on the transfer value (8% general, 10% for property acquired before 2004, 5% within five years, 2% for a first home sold within three years, 7% for property inherited before 25 November 1992, 12% on the gain election for later inheritances and donations), the own-residence exemption, brokerage deduction, the notary's DDT1 and payment, the 15% valuation tolerance, and non-resident opt-out at 7% provisional tax. Trigger on: sell property Malta, property transfer tax Malta, 8% final tax, capital gains on a house in Malta, inherited property sale Malta, notary tax Malta."
+description: "Working method for the accountant supporting a seller of Malta immovable property at the deed, tax year 2026. Covers the article 5A final withholding tax on the transfer value (8% general, 10% for property acquired before 2004, 5% within five years, 2% for a first home sold within three years, 7% for property inherited before 25 November 1992, 12% of the gain by default for later inheritances and donations, unless the seller elects the transfer-value rate), the own-residence exemption, brokerage deduction, the notary's DDT1 and payment, the 15% valuation tolerance, and non-resident opt-out at 7% provisional tax. Trigger on: sell property Malta, property transfer tax Malta, 8% final tax, capital gains on a house in Malta, inherited property sale Malta, notary tax Malta."
 jurisdiction: MT
 category: international
 tax_year: 2026
-last_updated: 2026-11-04
-version: 1.2
+last_updated: 2026-11-08
+version: 1.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# How to submit capital gain taxes in Malta v1.2
+# How to submit capital gain taxes in Malta v1.3
 
 Tax year 2026. The rates below are the article 5A rates the Malta Tax and Customs Administration (MTCA) publishes for transfers made on or after 1 January 2015; they apply unchanged to deeds in 2026. Full rules, exclusions and article 5 gains are in `mt-capital-gains` and `mt-property-transfer-tax-the-sale-immovable`.
 
@@ -30,13 +30,13 @@ Do these in order. A wrong order corrupts the rate itself, not just the arithmet
 1. Establish the **acquisition date** and the **means of acquisition** (purchase, inheritance, donation) FIRST. This single fact set, not the sale price, determines the rate (2% / 5% / 7% / 8% / 10% / 12%). Compute anything before this and you may apply the wrong rate to the wrong base.
 2. Establish whether the property is the transferor's **own residence**, owned and occupied for at least 3 consecutive years immediately before the transfer and transferred within 12 months of vacating, and declared as the main residence. This is the exemption gate.
 3. Only then confirm the **transfer value** (the higher of consideration or market value) and deduct brokerage fees paid by the transferor, where the verification conditions of the Tax on Property Transfers Rules are met.
-4. Determine whether the base is the **transfer value** (FWT) or the **gain** (the 12% election on post-24 November 1992 inherited property, or donated property received more than 5 years before the transfer). These are different bases; do not mix them.
+4. Determine whether the base is the **transfer value** (FWT) or the **gain** (12% of the gain is the default for property inherited after 24 November 1992, or donated more than 5 years before the transfer, unless the seller elects on the deed for the transfer-value rate). These are different bases; do not mix them.
 5. Confirm who collects and pays: the **notary** withholds and remits, not the client. Your job is to hand the notary a defensible computation and the supporting evidence.
 
 ### [method:intake_questions] Client intake questions
 
 - When and how did you acquire this property: bought, inherited, or received as a donation? Get the exact date and the deed.
-- If inherited: before 25 November 1992 or after 24 November 1992? (7% final tax vs the 12%-on-gain election.) If donated: more than 5 years before the transfer? (12%-on-gain election available only then.)
+- If inherited: before 25 November 1992 or after 24 November 1992? (7% of the transfer value, or 12% of the gain by default.) If donated: more than 5 years before the transfer? (12% of the gain applies only then; within 5 years the donor's acquisition date counts.)
 - Is this your own residence, and how long have you owned AND lived in it?
 - Did you buy it within the last 3 years declaring it as your sole ordinary residence, and do you own any other residential property? (2% rate.)
 - Have you rented it out, used it in a business, or carried out works needing a development permit in the last 5 years?
@@ -50,7 +50,7 @@ Insist on seeing (file-grade): the original acquisition deed (for date, means, a
 
 ### [method:judgment_rule] Picking between routes
 
-The main election is post-1992 inherited property, or property donated more than 5 years before the transfer: 12% final tax on the *gain* (transfer value minus the value declared in the causa mortis declaration or donation deed) versus the applicable *transfer-value* rate (10% / 8% / 5% by acquisition date). Where the property has appreciated substantially since the declared value, the transfer-value route is cheaper; where the declared value was already close to market, the 12%-on-gain route is cheaper. Model both, in writing, and put the comparison in the working paper. The notary needs to see why you chose. The election is made on the deed and cannot be undone afterwards.
+The main election is for property inherited after 24 November 1992, or donated more than 5 years before the transfer. The default is 12% final tax on the *gain* (transfer value minus the value declared in the causa mortis declaration or donation deed). The seller may elect on the deed that this rule does not apply, and then pays the *transfer-value* rate (10% / 8% / 5% by acquisition date). The law says: "this paragraph (b) shall not apply if the transferor so elects" ([ITA art. 5A(5)(b)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)). MTCA FAQ question 13 says the seller "can elect either"; the statute makes 12% of the gain the default. Where the property has appreciated substantially since the declared value, the transfer-value route is cheaper; where the declared value was already close to market, the 12%-on-gain route is cheaper. Model both, in writing, and put the comparison in the working paper. The notary needs to see why you chose. The election is made on the deed and cannot be undone afterwards.
 
 ### [method:conservative_default] Conservative defaults
 
@@ -179,3 +179,9 @@ Corrected the denominator in the undervalue comparison; prescribed inherited acq
 
 - Cap. 123 article 5A(12)(d): https://legislation.mt/eli/cap/123/eng/pdf (read 2026-11-04).
 - Cap. 364 article 52(1): https://legislation.mt/eli/cap/364/eng/pdf (read 2026-11-04).
+
+### Targeted audit source checks, 8 November 2026
+
+Stated that 12% of the gain is the default for later inheritances and donations, and that the deed election is to leave it for the transfer-value rate. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- [Cap. 123 article 5A(5)(b)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) (read 2026-11-08).

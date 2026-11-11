@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Omolola Fasasi"
 ---
 
 # NG Cgt
@@ -43,7 +42,6 @@ metadata:
 | Headline rate | **10%** on chargeable gains |
 | Tax authority (residents) | Federal Inland Revenue Service (FIRS) for companies and non-residents; relevant State Internal Revenue Service (SIRS) for resident individuals |
 | Filing | Lodged with the annual income tax return — CIT (companies) or PIT (individuals) |
-| Validated by | Verified by Omolola Fasasi (MB058950) on 2026-06-21 |
 | Skill version | 1.0 |
 
 ### CGT rate at a glance
