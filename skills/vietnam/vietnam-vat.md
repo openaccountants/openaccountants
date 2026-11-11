@@ -16,13 +16,14 @@ version: 2.1
 jurisdiction: VN
 tax_year: 2026
 tax_year_notes: "VAT periods from 1 July 2025, read at 5 November 2026. VAT has no tax year: the rate and rules follow the tax point of each supply. Supplies before 1 July 2025 fall under Law 13/2008/QH12 and are not classified here. On the texts read, the 8% rate covers 1 July 2025 to 31 December 2026, and no extension was found."
-last_updated: 2026-11-05
+last_updated: 2026-11-11
 depends_on:
   - vat-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: vat-gst
+type: situation-rules
 ---
 
 # Vietnam VAT v2.1

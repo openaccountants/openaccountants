@@ -18,10 +18,11 @@ version: 2.3
 jurisdiction: AR
 tax_year: 2025
 tax_year_notes: "Fiscal periods (calendar years) 2025 and 2026, read at 5 November 2026. Period 2025 is the coverage start because its return stays open to 16 November 2026 under RG 5918. ARCA's annual tables for 2026 are also shown. Every indexed amount is the figure ARCA publishes for the named period, under arts 30 and 94 as amended by Ley 27.743."
-last_updated: 2026-11-05
+last_updated: 2026-11-11
 category: international
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Argentine Income Tax: Autónomo / Profesional Independiente (Ganancias) v2.3
