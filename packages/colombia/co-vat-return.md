@@ -1,426 +1,218 @@
 ---
 name: co-vat-return
-description: "Colombian VAT return (IVA -- Impuesto sobre las Ventas) for self-employed individuals under the regimen comun/responsable. Covers the standard 19% rate, reduced 5%, excluded goods/services, bimonthly/quarterly filing, electronic invoicing, and Regimen Simple de Tributacion (SIMPLE). Primary source: Estatuto Tributario (E.T.) Libro Tercero; Ley 1819/2016; Ley 2277/2022."
-version: 1.0
+description: >
+  Colombian VAT (IVA, impuesto sobre las ventas) for 2026: who must register as responsable de IVA (the
+  3,500 UVT tests in ET art. 437 par. 3, 4,000 UVT for State contractors), what is taxed (art. 420), the
+  19% general rate (art. 468), the 5% goods and services (arts. 468-1, 468-3), excluded goods and services
+  with no credit (arts. 424, 476: health, education, public transport and freight, utilities, residential
+  rent, interest, hosting and cloud) and exempt supplies with credit and refund (arts. 477, 478, 481:
+  fresh meat, milk, eggs, rice, exports of goods and services), the base and tax point, input IVA and its
+  limits (arts. 485, 488, 490, 491, 496), IVA withholding at 15% (arts. 437-1, 437-2), bimonthly or
+  four-monthly periods at 92,000 UVT (art. 600), Form 300 boxes, 2026 deadlines by NIT and penalties.
+  UVT 2026 COP 52,374. Trigger on: IVA Colombia, declaración de IVA formulario 300, responsable de IVA,
+  no responsable 3.500 UVT, IVA bimestral cuatrimestral, IVA descontable, reteIVA, exportación de
+  servicios IVA, Colombian VAT return.
+version: 1.1
 jurisdiction: CO
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+last_updated: 2026-11-11
+type: computation
 depends_on:
   - vat-workflow-base
-category: international
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# colombia-iva
+# Colombia: IVA (VAT) return, 2026 v1.1
 
-## Section 1 — Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference**
+**Tax year.** Calendar 2026: the bimonthly periods January-February to November-December 2026, or the four-monthly periods January-April to September-December 2026. One UVT is **COP 52,374** for 2026 (DIAN Resolución 000238 of 15 December 2025).
 
-| Field | Value |
-| --- | --- |
-| Country | Colombia (República de Colombia) |
-| Tax | IVA — Impuesto sobre las Ventas (VAT) |
-| Currency | COP (Colombian Peso — $) |
-| Standard rate | 19% |
-| Reduced rates | 5% (medicines, medical devices, agricultural inputs, passenger air transport, accommodation); 0% (basic foods — pan, arroz, leche, huevos, etc.) |
-| Zero rate | 0% (exports of goods, certain services exported to non-residents) |
-| Exempt | Financial services, insurance, education, healthcare, public utilities (residential), land transport, books, newspapers |
-| Registration threshold | Responsable de IVA: annual income/covered contracts at or above 3,500 UVT (COP 174,296,500 for 2025; commonly rounded to COP 174,297,000) or other conditions; below = No Responsable de IVA (formerly "Régimen Simplificado") |
-| Tax authority | DIAN (Dirección de Impuestos y Aduanas Nacionales) |
-| Filing portal | DIAN portal — https://www.dian.gov.co (MUISCA system) |
-| Return form | Declaración del Impuesto sobre las Ventas (Formulario 300) |
-| Filing frequency | Bimonthly (Jan–Feb, Mar–Apr, May–Jun, Jul–Aug, Sep–Oct, Nov–Dec) for Responsables |
-| Deadline | Varies by NIT — typically 10th–23rd of month following period end |
-| e-Invoice | Factura Electrónica mandatory (DIAN authorized — habilitación previa) |
-| NIT | Número de Identificación Tributaria — Colombian taxpayer ID |
-| Contributor | Open Accountants Community |
-| Skill version | 2.0 |
+**Which text of the law.** The Estatuto Tributario (ET) Libro III as consolidated on the Senate's official site, updated there to 15 October 2026. Changes in 2026: Ley 2615 de 2026 rewrote art. 478 (books, magazines and music), and Decreto Legislativo 240 de 2026 moved online gambling out of IVA into a separate 16% tax for 2026 (arts. 420(e), 512-22). Deadlines: Decreto Único Reglamentario 1625 de 2016 (DUR), arts. 1.6.1.13.2.30 and 1.6.1.13.2.31, substituted by Decreto 2229 de 2023.
 
-### Key Formulario 300 fields
+Related skills: [colombia-income-tax](colombia-income-tax.md) (an IVA responsable individual must file income tax), [co-corporate-income-tax](co-corporate-income-tax.md), and the approved [formalizing-small-informal-businesses-in-colombia](formalizing-small-informal-businesses-in-colombia.md) (RUT and Régimen Simple sign-up, not repeated). `colombia-iva.md` in this folder is an older duplicate of this skill.
 
-**Key Formulario 300 fields**
+## Who this applies to
 
-| Field | Meaning |
-| --- | --- |
-| Casilla 27 | Total taxable sales 19% |
-| Casilla 28 | Total taxable sales 5% |
-| Casilla 29 | Total exports |
-| Casilla 30 | Total excluded/exempt |
-| Casilla 67 | IVA generado (output IVA) |
-| Casilla 82 | IVA descontable (input IVA — purchases) |
-| Casilla 88 | Retención IVA a favor (IVA withholding received) |
-| Casilla 89 | Saldo a pagar (net IVA payable) |
-| Casilla 92 | Saldo a favor (excess credit carried forward) |
+- **Responsables de IVA** (art. 437): merchants and anyone habitually selling goods, anyone providing services, importers, and buyers who must self-assess (see Cross-border points).
+- **No responsables** (art. 437 par. 3): individual retailers and artisans, small farmers and stockbreeders, and individuals providing services, but only if they meet **all** of these: gross income from the activity under 3,500 UVT (COP 183,309,000) in 2025 and in 2026; one business premises at most; no franchise, concession or royalty arrangement there; not a customs user; no single taxed contract of 3,500 UVT or more in 2025 or 2026; and bank deposits and investments from taxed activity not over 3,500 UVT. The limit is 4,000 UVT (COP 209,496,000) for individuals whose income comes from contracts with the State (par. 5). A no responsable may not add IVA to its prices; if it does, it takes on all the obligations of a responsable (par. 1). Before signing a taxed contract of more than 3,500 UVT, it must register as responsable.
+- **Companies**: the art. 437 par. 3 exception names individual retailers and artisans, small farmers and stockbreeders and service providers; treat a company making taxed supplies as a responsable unless a source confirms otherwise (see Not yet confirmed).
+- **Régimen Simple members** are not responsables if they only run small shops, minimarkets or hairdressers (art. 908(1)), or are individuals with gross income under 3,500 UVT (art. 437 par. 4).
+- **Out of scope**: the national consumption tax (impuesto nacional al consumo) on restaurants and bars, the special IVA rules for construction (AIU) and gambling, free-zone and international marketing company details, and the IVA refund procedure.
 
-### Conservative defaults
+## Rates, bands and thresholds
 
-**Conservative defaults**
+| Item | Rate or figure | Year | Source URL |
+|---|---|---|---|
+| UVT for 2026 | COP 52,374 (DIAN Resolución 000238 of 15 Dec 2025) | 2026 | https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0238_2025.htm |
+| General rate | 19% | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr019.html (art. 468) |
+| Reduced rate, goods listed by tariff heading (for example coffee, wheat, industrial maize and rice, flours, sugar, table chocolate, dry pasta, animal feed, raw vegetable oils, farm machinery and tools, natural-gas vehicle kits) | 5% | 2026 | same (art. 468-1) |
+| Reduced rate, services (storage of farm products in bonded warehouses, farm insurance, prepaid medicine and complementary health plans, health insurance policies, certain cleaning and security services by solidarity entities employing people with disabilities) | 5% | 2026 | same (art. 468-3) |
+| Domestic passenger air tickets | 19%: the 5% rate in art. 468-3(5) ran only to 31 December 2022; routes with no organised land transport and listed tourist routes are excluded (art. 476(10)) | 2026 | same (arts. 468-3(5), 476(10)) |
+| Excluded services, no IVA and no credit (art. 476): medical, dental, hospital and lab services; recognised education; public land, river and sea passenger transport, and all cargo transport; public energy, water, sewerage, refuse and household gas; residential rent; interest and leasing; web pages, hosting and cloud computing; cinema, sport and cultural tickets; funeral services; internet for stratum 3 homes | 0%, no IVA | 2026 | same (art. 476) |
+| Excluded goods (art. 424), for example fresh potatoes, paddy rice, most medicines, personal computers worth up to 50 UVT (COP 2,618,700) | 0%, no IVA | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html (art. 424) |
+| Exempt goods with right to credit and refund (art. 477), for example fresh or frozen beef, pork, chicken and fish, milk, fresh cheese, fresh eggs, rice for human consumption, infant formula | 0% with credit | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr019.html (art. 477) |
+| Books and magazines of scientific and cultural character, and musical works | exempt; instruments and inputs for luthiers excluded (Ley 2615 de 2026) | 2026 | same (art. 478) |
+| Exports of goods, sales to international marketing companies for export, services used exclusively abroad by non-residents with no business in Colombia, tourist services to non-residents | exempt with bimonthly refund | 2026 | same (art. 481) |
+| No responsable threshold (individuals) | 3,500 UVT (COP 183,309,000); 4,000 UVT (COP 209,496,000) for State contractors | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html (art. 437 par. 3, 5) |
+| IVA withholding (reteIVA), general | 15% of the IVA, unless a decree sets another rate up to 50% | 2026 | same (art. 437-1) |
+| IVA withholding on services from non-residents (art. 437-2(3) and (8)) | 100% of the IVA, by the Colombian buyer | 2026 | same (art. 437-1 par. 1) |
+| Bimonthly filing | grandes contribuyentes, those with gross income of 92,000 UVT (COP 4,818,408,000) or more at 31 Dec 2025, and art. 477 and 481 exporters | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr025.html (art. 600(1)) |
+| Four-monthly filing | everyone else: gross income under 92,000 UVT | 2026 | same (art. 600(2)) |
+| Input IVA timing | in the period of the tax point or the next 3 bimonthly periods (bimonthly filers) or the next 1 four-monthly period | 2026 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr020.html (art. 496) |
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 19% standard |
-| Unknown whether 5% rate applies | 19% until confirmed |
-| Unknown whether food is zero-rated basic or not | 0% if unprocessed basic; 19% if processed/restaurant |
-| Unknown whether export documentation complete | Treat as domestic 19% |
-| Unknown business-use % (vehicle, phone, home) | 0% input credit |
-| Unknown whether Factura Electrónica issued | No input credit until confirmed |
-| Foreign digital service | 19% — DIAN requires foreign providers to register |
-| No Responsable supplier | No IVA credit (they do not charge IVA) |
+## The base
 
-### Red flag thresholds
+**What is taxed (art. 420).** The sale of movable and immovable goods unless excluded; the sale of industrial-property intangibles; services provided in Colombia **or from abroad** unless excluded; imports of goods unless excluded. The sale of fixed assets is not taxed, except residential property, vehicles and assets habitually sold for third parties, and aircraft (par. 1).
 
-**Red flag thresholds**
+**Tax point (art. 429).** Goods: the date of the invoice, or delivery if there is none. Services: the earliest of the invoice date, the end of the service, or payment. Imports: at customs clearance, paid with the customs duties.
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single transaction | COP 50,000,000 |
-| HIGH tax delta on single conservative default | COP 9,500,000 |
-| MEDIUM counterparty concentration | >40% of output or input |
-| MEDIUM conservative default count | >4 per return |
-| LOW absolute net IVA position | COP 100,000,000 |
+**Base (arts. 447, 459).** The full value of the transaction, including financing charges, transport, installation, insurance, commissions and other extras, even if invoiced separately. Interest on financing the IVA itself is not in the base. Imports: the customs value plus customs duty.
 
-## Section 2 — Required inputs and refusal catalogue
+**Excluded and exempt are different.** An **excluded** supply (arts. 424, 476) carries no IVA and the input IVA on it is not creditable: it becomes a cost. An **exempt** supply (arts. 477, 478, 481) is at 0% and its input IVA is creditable and refundable.
 
-### Required inputs
+**Input IVA (impuestos descontables).**
 
-- **Required inputs before starting Colombia IVA work** — 1. NIT (Número de Identificación Tributaria) and RUT (Registro Único Tributario) certificate 2. Bimonthly bank statements in COP (all business accounts) 3. Facturas Electrónicas issued (XML from DIAN-authorized software with CUFE — Código Único de Factura Electrónica) 4. Facturas Electrónicas received from suppliers (with CUFE) 5. Prior period Formulario 300 (for saldo a favor carried forward) 6. Import customs declarations (Declaración de Importación) from DIAN Customs 7. Retención en la fuente de IVA certificates (if subject to withholding)  _(Before starting any Colombia IVA work, obtain)_
+1. Creditable: IVA invoiced on goods and services bought, and IVA paid on imports (art. 485).
+2. Only if the purchase is a cost or expense for income tax and is used for taxed operations (art. 488), and backed by an invoice meeting arts. 617 and 618 (art. 771-2).
+3. IVA on fixed assets is **not** creditable in IVA (art. 491); a responsable can instead take it as a discount against income tax in the year paid or later (art. 258-1).
+4. Common inputs used for both taxed or exempt and excluded operations, that cannot be traced, are credited in proportion to the period's taxed and exempt operations over all operations (art. 490, prorrata). See Example 2.
+5. Book it in the period of the tax point or the next three bimonthly periods (one four-monthly period) and claim it in the return of the period it was booked (art. 496).
+6. Purchases from a no responsable carry no IVA and give no credit.
 
-### Refusal catalogue
+**Withholding (reteIVA).** State entities, grandes contribuyentes, entities DIAN designates, card issuers and responsables buying services from non-residents withhold IVA on payment or crediting, whichever is first (arts. 437-1, 437-2). The general rate is 15% of the IVA. The supplier claims the IVA withheld in box 85 in the period or the next three periods, if booked in the period.
 
-- **Refuse and escalate to Contador Público** — Prorrata / proporcionalidad (partial exemption for mixed taxable/exempt businesses); IVA en construcción (complex rules on real estate and construction); IVA retenciones — complex agent cases; IVA refund for exporters — DIAN process is complex; Free trade zones (Zonas Francas) — special IVA treatment; Industria y Comercio (ICA) — separate municipal tax, not IVA; Impuesto Nacional al Consumo (INC) — separate consumption tax on restaurants, vehicles  _(Refusal catalogue)_
+**E-invoicing.** Invoices and equivalent documents form the invoicing system that DIAN regulates, including electronic documents (art. 616-1). Costs and input IVA need a valid invoice (art. 771-2).
 
-## Section 3 — Supplier pattern library
+## Deadlines and filing
 
-### 3.1 Banking and financial services
+| Period | Due date for 2026 periods | Rule |
+|---|---|---|
+| Bimonthly: Jan-Feb, Mar-Apr, May-Jun, Jul-Aug, Sep-Oct 2026, Nov-Dec 2026 | March, May, July, September, November 2026 and January 2027: 7th business day (NIT ending 1) to 16th business day (ending 0), by the last digit of the NIT, ignoring the check digit | DUR art. 1.6.1.13.2.30 |
+| Four-monthly: Jan-Apr, May-Aug, Sep-Dec 2026 | May 2026, September 2026, January 2027: same day pattern | DUR art. 1.6.1.13.2.31 |
+| No operations in a period | no return is due for a period with no taxed operations and nothing creditable or adjustable | ET art. 601; DUR art. 1.6.1.13.2.31 par. 1 |
 
-**Banking and financial services suppliers**
+**Form 300, step by step.** File online through DIAN's filing service; box 980 (total paid) is always zero on the return, and payment is made separately by the due date. Box 24 is the periodicity (bimonthly 01 to 06, four-monthly 01 to 03).
 
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Bancolombia | Bank fees, transfers | Exempt | No |
-| Davivienda | Account fees, loans | Exempt | No |
-| Banco de Bogotá | Commercial banking | Exempt | No |
-| Banco Popular | Business banking | Exempt | No |
-| BBVA Colombia | Corporate banking | Exempt | No |
-| Nequi (Bancolombia) | Digital wallet | Exempt (payment) | No |
-| Daviplata (Davivienda) | Mobile money | Exempt | No |
-| PayU Colombia | Payment gateway — commission | 19% | Yes |
-| ePayco | Digital payments | 19% | Yes |
-| Wompi (Bancolombia) | E-commerce payments | 19% | Yes |
+| Step | Form 300 boxes |
+|---|---|
+| Income by type | 27 taxed at 5%, 28 taxed at 19%, 29 AIU base, 30 exports of goods (FOB), 31 exports of services, 32 sales to international marketing companies, 33 sales to free zones, 35 exempt, 39 excluded, 40 not taxed; 41 gross; 42 returns; 43 net |
+| Purchases | 44 to 49 imports, 50 to 54 domestic purchases by rate; 55 gross; 56 returns; 57 net |
+| IVA generated | 58 at 5%, 59 at 19%, 60 AIU, 65 own use and gifts, 66 IVA recovered on purchase returns; 67 total |
+| IVA creditable | 68 to 70 imports, 71 to 75 purchases by rate; 77 total; 78 IVA withheld on non-resident services; 79 IVA on sales returns; 80 adjustments; 81 total creditable |
+| Result | 82 balance due for the period (67 minus 81) or 83 credit (81 minus 67); 84 last period's credit; 85 IVA withheld from you; 86 balance due on tax; 87 penalties (at least 10 UVT); 88 total to pay or 89 total credit; 90 to 93 credit balance control |
 
-### 3.2 Electricity and utilities
+## Penalties and interest
 
-**Electricity and utilities suppliers**
+- **Late filing (art. 641):** 5% of the tax per month or part month, up to 100%.
+- **Not filing after a summons (art. 643(2)):** 10% of the higher of the bank deposits or gross income found by DIAN, or gross income in the last IVA return.
+- **Own correction (art. 644):** 10% of the extra tax before a DIAN summons, 20% after.
+- **Inaccuracy (art. 648):** 100% of the difference found by DIAN.
+- **Minimum penalty (art. 639):** 10 UVT (COP 523,740).
+- **Late payment interest (arts. 634, 635):** daily, at the consumer-credit usury rate minus 2 points.
 
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Grupo EPM (EPM Medellín) | Electricity — Medellín/Antioquia | 0% (residential) / 19% (non-residential commercial) | Yes (business) |
-| Codensa (Enel Colombia) | Electricity — Bogotá | 19% (non-residential) | Yes (business) |
-| Electricaribe / Air-e | Electricity — Caribbean coast | 19% (commercial) | Yes |
-| Gas Natural Fenosa Colombia | Natural gas | 0% (residential) / 19% (commercial) | Yes |
-| Triple A | Water — Barranquilla | 0% (residential) | No (residential) |
-| EAAB (Acueducto Bogotá) | Water — Bogotá | 0% (residential) | No (residential) |
+## Cross-border points
 
-### 3.3 Telecommunications
+- **Services from abroad** used in Colombia are taxed (art. 420(c)). When a responsable buys a taxed service from a non-resident, it withholds 100% of the IVA (arts. 437-1 par. 1, 437-2(3)), declares it, and may credit it in box 78. Foreign providers of digital services to non-responsables register and declare under the DIAN procedure, and need not issue invoices (art. 437 par. 2).
+- **Imports**: IVA on the customs value plus duty, paid with the customs declaration (arts. 429(d), 459), credited in boxes 68 to 70.
+- **Exports**: goods and services used exclusively abroad by non-residents with no business in Colombia are exempt with refund (art. 481); keep the documents that prove the export. Exporters file bimonthly (art. 600(1)).
 
-**Telecommunications suppliers**
+## Two worked examples that recompute
 
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Claro Colombia | Mobile, internet, TV | 19% | Yes (business use) |
-| Movistar Colombia (Telefónica) | Mobile, broadband | 19% | Yes (business use) |
-| Tigo Colombia | Mobile, cable | 19% | Yes (business use) |
-| ETB (Empresa de Telecomunicaciones de Bogotá) | Fixed line, fiber | 19% | Yes |
-| DirecTV Colombia | Satellite TV | 19% | Yes (business) |
-| UNE (EPM Telecomunicaciones) | Fiber, mobile — Medellín | 19% | Yes |
+### Example 1: consulting company, bimonthly, with exports and reteIVA
 
-### 3.4 Transport and travel
+Andes Consultores SAS (gross income over 92,000 UVT, so bimonthly) has, in March-April 2026: domestic consulting of COP 100,000,000 at 19%; consulting for a US client with no business in Colombia of COP 80,000,000 (exempt export, art. 481(c)); purchases of taxed services of COP 40,000,000 plus 19% IVA, all used in the business. Its domestic client is a gran contribuyente and withheld 15% of the IVA.
 
-**Transport and travel suppliers**
+- IVA generated (boxes 59, 67): 19% x 100,000,000 = COP 19,000,000. The export goes in box 31 with no IVA.
+- IVA creditable (boxes 75, 81): 19% x 40,000,000 = COP 7,600,000. The export is exempt, not excluded, so no proration is needed.
+- Box 82: 19,000,000 minus 7,600,000 = COP 11,400,000.
+- IVA withheld (box 85): 15% x 19,000,000 = COP 2,850,000.
+- To pay (box 88): **COP 8,550,000**, in May 2026 on the business day for its NIT's last digit.
 
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Avianca | Domestic flights | 5% (passenger air) | Yes |
-| Avianca | International flights | 0% (export) | No |
-| LATAM Colombia | Domestic/international | 5% / 0% | Yes (domestic) |
-| Viva Air Colombia | Domestic | 5% | Yes |
-| Transmilenio (Bogotá BRT) | Bus rapid transit | Exempt | No |
-| Metro de Medellín | Metro | Exempt | No |
-| Uber Colombia | Ride-hailing | 19% | Yes (business use) |
-| InDriver Colombia | Ride-hailing | 19% | Yes |
-| Intermunicipal bus | Long-distance bus | Exempt | No |
-
-### 3.5 Logistics and courier
-
-**Logistics and courier suppliers**
-
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Servientrega | Domestic courier | 19% | Yes |
-| Coordinadora | Domestic courier | 19% | Yes |
-| TCC (Transportes Cargo Colombia) | Domestic freight | 19% | Yes |
-| DHL Colombia | International courier | 0% (export) / 19% (domestic) | Yes |
-| FedEx Colombia | International courier | 0% / 19% | Yes |
-| Efecty (Bancolombia) | Cash courier / payment | 19% (service fee) | Yes |
-
-### 3.6 Retail and office supplies
-
-**Retail and office supplies suppliers**
-
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Éxito (Grupo Éxito) | Supermarket — mixed | 19%/5%/0% mixed | Partial |
-| Jumbo Colombia (Cencosud) | Supermarket | Mixed | Partial |
-| Rappi Colombia | Delivery platform — commission | 19% | Yes |
-| Mercado Libre Colombia | E-commerce | 19% | Yes |
-| Office Depot Colombia | Office supplies | 19% | Yes |
-| Alkosto / Ktronix | Electronics, home | 19% | Yes |
-
-### 3.7 Software and digital services
-
-**Software and digital services suppliers**
-
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Siigo Colombia | Cloud accounting (SME leader) | 19% | Yes |
-| World Office | ERP Colombia | 19% | Yes |
-| ContaFácil | Accounting software | 19% | Yes |
-| Alegra Colombia | Invoicing, accounting | 19% | Yes |
-| Microsoft Colombia (Azure, M365) | Cloud — B2B | 19% (DIAN-registered foreign provider) | Yes |
-| Google Colombia (Workspace, Ads) | Digital — B2B | 19% (DIAN-registered) | Yes |
-| Zoom Colombia | Video — B2B | 19% | Yes |
-| AWS Colombia | Cloud — B2B | 19% | Yes |
-| Netflix Colombia | Streaming — B2C | 19% | No (B2C) |
-
-### 3.8 Professional services
-
-**Professional services suppliers**
-
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Contador Público | Accounting, audit, tax | 19% | Yes |
-| Firma de abogados | Legal services | 19% | Yes |
-| Agencia de publicidad | Advertising | 19% | Yes |
-| Empresa de consultoría | Management consulting | 19% | Yes |
-| Luker (chocolates — example B2B) | FMCG distributor | 19% | Yes |
-
-### 3.9 Insurance
-
-**Insurance suppliers**
-
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Suramericana (SURA) | All lines | Exempt | No |
-| Bolívar Seguros | Property, liability | Exempt | No |
-| Colseguros (Allianz) | Business insurance | Exempt | No |
-| Liberty Colombia | Motor, property | Exempt | No |
-
-### 3.10 Basic food (0% IVA)
-
-**Basic food suppliers**
-
-| Supplier | Typical description | IVA rate | Input credit |
-| --- | --- | --- | --- |
-| Unilever Colombia (basic foods) | Aceite, margarina | 0% | No (0-rate) |
-| Alpina | Leche, queso, yogur | 0% | No |
-| Nutresa (Colanta, etc.) | Basic dairy products | 0% | No |
-| Arroz / pan / huevos / sal | Unprocesados staples | 0% | No |
-
-## Section 4 — Worked examples
-
-### Example 1 — Standard IVA on consulting
-
-**Scenario:** Bogotá consulting firm issues Factura Electrónica to Colombian corporate.
-
-**Bank statement line (Bancolombia format):**
-```
-Fecha       : 15/04/2025
-Tipo        : Abono — Transferencia Electrónica
-Descripción : ACME SA — HONORARIOS CONSULTORÍA — FE CUFE: AB12...
-Valor       : +$119.000.000
-Saldo       : $619.000.000
+```oa-check
+name: CO IVA 2026, bimonthly consulting with export and reteIVA
+inputs:
+  domestic_sales: 100000000
+  export_sales: 80000000
+  taxed_purchases: 40000000
+steps:
+  - iva_generated: domestic_sales * 0.19
+  - iva_export: export_sales * 0
+  - iva_creditable: taxed_purchases * 0.19
+  - box_82: iva_generated - iva_creditable
+  - reteiva: iva_generated * 0.15
+  - to_pay: box_82 - reteiva
+expected:
+  iva_generated: 19000000
+  iva_export: 0
+  iva_creditable: 7600000
+  box_82: 11400000
+  reteiva: 2850000
+  to_pay: 8550000
 ```
 
-**Working:**
-- Factura Electrónica: net $100,000,000 + IVA 19% $19,000,000 = $119,000,000
-- Return entry: Casilla 27 — $100,000,000 | Casilla 67 (IVA generado): $19,000,000
+### Example 2: individual landlord, registration and proration
 
-*Note: COP amounts use period as thousands separator: $119.000.000 = COP 119,000,000*
+Marta, an individual, rents a shop for COP 16,000,000 a month and a flat for COP 5,000,000 a month throughout 2026. She files four-monthly (income under 92,000 UVT).
 
-### Example 2 — Reduced rate (5%) domestic flight
+- **Must she register?** Her taxed income (commercial rent) is 12 x 16,000,000 = COP 192,000,000, above 3,500 UVT (COP 183,309,000), so she is a responsable de IVA (art. 437 par. 3). The residential rent is excluded and does not count as taxed activity. At COP 15,000,000 a month (COP 180,000,000 a year) she would stay a no responsable if she also met the other five conditions.
+- **January-April 2026:** IVA on commercial rent 19% x 64,000,000 = COP 12,160,000. Residential rent 20,000,000 goes in box 39 (excluded).
+- **Common costs:** building maintenance for both properties with IVA of COP 1,900,000 cannot be traced to either. Credit 1,900,000 x 64,000,000 / 84,000,000 = COP 1,447,619 (art. 490); the other COP 452,381 is a cost for income tax.
+- **To pay:** 12,160,000 minus 1,447,619 = COP 10,712,381 (COP 10,712,000 on the form), in May 2026.
 
-**Scenario:** Employee flies Bogotá–Medellín on Avianca.
-
-**Bank statement line (Davivienda format):**
-```
-Fecha       : 10/04/2025
-Tipo        : Débito — Pago online
-Descripción : AVIANCA SA — TIQUETE BOG-MDE APR 2025
-Valor       : -$472.500
-```
-
-**Working:**
-- Domestic flight ticket: net $450,000 + IVA 5% $22,500 = $472,500
-- Input credit: $22,500 (business travel — documented purpose required)
-- Return entry: Casilla 28 — $450,000; Input IVA 5%: $22,500
-
-### Example 3 — Zero-rated basic food
-
-**Scenario:** Company purchases rice and eggs for cafetería.
-
-**Bank statement line (Banco de Bogotá format):**
-```
-Fecha       : 08/04/2025
-Tipo        : Débito — Pago POS
-Descripción : ALMACENES EXITO SA — BOGOTA
-Valor       : -$2.500.000
-```
-
-**Working:**
-- Éxito receipt: rice $800,000 (0%) + eggs $400,000 (0%) + other items $1,300,000 (19%) = $2,500,000
-- Input credit on 19% portion: $1,300,000 × 19/119 = $207,563
-- Zero-rated items: no IVA credit applicable; not in IVA return
-
-### Example 4 — Export of services (0%)
-
-**Scenario:** Colombian IT company exports software development services to US client.
-
-**Bank statement line (Bancolombia format):**
-```
-Fecha       : 20/04/2025
-Tipo        : Abono ME — Reintegro Divisas
-Descripción : TECH CORP USA — SOFTWARE DEV SERVICES Q1 2025
-Valor       : +$380.000.000 (USD 95.000)
+```oa-check
+name: CO IVA 2026, landlord threshold and art. 490 proration
+inputs:
+  uvt: 52374
+  commercial_rent_month: 16000000
+  residential_rent_month: 5000000
+  common_iva: 1900000
+steps:
+  - threshold: 3500 * uvt
+  - taxed_income_year: commercial_rent_month * 12
+  - over_threshold: taxed_income_year - threshold
+  - commercial_period: commercial_rent_month * 4
+  - residential_period: residential_rent_month * 4
+  - iva_generated: commercial_period * 0.19
+  - creditable: common_iva * commercial_period / (commercial_period + residential_period)
+  - not_creditable: common_iva - creditable
+  - to_pay: iva_generated - creditable
+expected:
+  threshold: 183309000
+  taxed_income_year: 192000000
+  over_threshold: 8691000
+  iva_generated: 12160000
+  creditable: 1447619.05
+  not_creditable: 452380.95
+  to_pay: 10712380.95
 ```
 
-**Working:**
-- Export of services consumed outside Colombia — 0% IVA
-- Issue Factura de Exportación Electrónica; file with DIAN
-- Return entry: Casilla 29 — $380,000,000 | IVA: $0
+## Ask the client first
 
-### Example 5 — IVA retenida (withholding)
+1. Individual or company? For an individual: gross income from taxed activity in 2025 and 2026, number of premises, franchises, customs status, largest single contract, and bank deposits from taxed activity (the six art. 437 par. 3 tests).
+2. Gross income at 31 December 2025 (bimonthly at 92,000 UVT or more) and whether DIAN has made it a gran contribuyente.
+3. What it sells: the goods by tariff heading or the services, to classify each at 19%, 5%, excluded or exempt; any exports, with the proof.
+4. Purchases and imports with valid invoices, which are fixed assets, and which inputs serve both taxed and excluded operations.
+5. IVA withheld by customers (certificates), services bought from non-residents, last period's credit balance.
+6. The last digit of the NIT, for the due date.
 
-**Scenario:** Company sells services to a gran contribuyente who retains 50% IVA.
+## Sources
 
-**Bank statement line (BBVA format):**
-```
-Fecha       : 25/04/2025
-Tipo        : Abono — Transferencia
-Descripción : GRAN EMPRESA SA — FE INV-2025-041 NETO RETENCION IVA
-Valor       : +$109.500.000
-```
+| Source | URL | Read on |
+|---|---|---|
+| DIAN Resolución 000238 of 15 Dec 2025: UVT 2026 = COP 52,374 | https://normograma.dian.gov.co/dian/compilacion/docs/resolucion_dian_0238_2025.htm | 2026-11-11 |
+| ET arts. 420, 424, 429, 437 (par. 1 to 5), 437-1, 437-2 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr017.html | 2026-11-11 |
+| ET arts. 447, 459 (base) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr018.html | 2026-11-11 |
+| ET arts. 468, 468-1, 468-3, 476, 477, 478 (as amended by Ley 2615 de 2026), 481, 485, 488 | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr019.html | 2026-11-11 |
+| ET arts. 490, 491, 496 (proration, fixed assets, timing) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr020.html | 2026-11-11 |
+| ET arts. 512-22 (online gambling, Decreto Legislativo 240 de 2026) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr021.html | 2026-11-11 |
+| ET arts. 600, 601, 616-1 (periods, who files, invoicing) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr025.html | 2026-11-11 |
+| ET art. 258-1 (IVA on fixed assets as income tax discount) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr010.html | 2026-11-11 |
+| ET arts. 634, 635, 639, 641, 643, 644, 648 (interest and penalties) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr026.html | 2026-11-11 |
+| ET art. 771-2 (invoices) | http://www.secretariasenado.gov.co/senado/basedoc/estatuto_tributario_pr031.html | 2026-11-11 |
+| DUR 1625 de 2016, arts. 1.6.1.13.2.30 and 1.6.1.13.2.31 (IVA deadlines), DIAN normograma | https://normograma.dian.gov.co/dian/compilacion/docs/decreto_1625_2016.htm | 2026-11-11 |
+| DIAN, Form 300 and instructions (boxes 24 to 102, 980) | https://www.dian.gov.co/atencionciudadano/formulariosinstructivos/Formularios/2025/Formulario_300_2025.pdf | 2026-11-11 |
 
-**Working:**
-- Invoice: net $100,000,000 + IVA 19% $19,000,000 = $119,000,000
-- Gran contribuyente retains 50% IVA = $9,500,000; pays balance: $109,500,000
-- Output IVA: $19,000,000; Less retención received: $9,500,000
-- Casilla 88 (retención a favor): $9,500,000
-
-### Example 6 — Bimonthly return summary (Mar–Apr 2025)
-
-**Bimonthly return summary**
-
-| Item | Net (COP) | IVA (COP) |
-| --- | --- | --- |
-| Domestic sales 19% | 800,000,000 | 152,000,000 |
-| Domestic sales 5% | 50,000,000 | 2,500,000 |
-| Export sales (0%) | 100,000,000 | 0 |
-| Total Output | 950,000,000 | 154,500,000 |
-| Input IVA on purchases | 400,000,000 | 76,000,000 |
-| Retención IVA received | — | 15,000,000 |
-| Total Input + Retención |  | 91,000,000 |
-| **Net IVA payable** |  | **63,500,000** |
-
-## Section 5 — Tier 1 rules (compressed)
-
-### Rate assignment
-
-- **Rate assignment rules** — 19% standard: most goods and services not listed below; 5%: domestic passenger air transport, accommodation/lodging, agricultural inputs, some medicines and medical devices; 0% (excluido/zero-rated): basic unprocessed foods (arroz, maíz, papa, sal, panela, leche, huevos, carne/pescado sin procesar), books, water supply (residential), agricultural animals; Exempt: financial services, insurance, education, healthcare (licensed practitioners), public utilities (residential electricity/gas), land transport, newspapers, public passenger transport  _(Rate assignment)_
-
-### Input credit
-
-- **Input credit rules** — Credit allowed on 19% and 5% purchases for taxable activities; Must have Factura Electrónica with CUFE from Responsable de IVA supplier; No credit from No Responsable suppliers (they do not charge IVA); No credit on excluido (0%) purchases or exempt purchases; IVA retenida: gran contribuyentes and retención agents withhold 15% or 50% of IVA — offset against payable  _(Input credit)_
-
-### Filing mechanics
-
-- **Filing mechanics rules** — File Formulario 300 bimonthly via DIAN MUISCA; deadline varies by NIT last digit; All B2B sales require Factura Electrónica with CUFE (DIAN-authorized software); Saldo a favor carries forward; exporters can request refund after filing  _(Filing mechanics)_
-
-## Section 6 — Tier 2 catalogue (genuinely data-unknowable items)
-
-**Tier 2 catalogue**
-
-| Item | Why unknowable | What to ask |
-| --- | --- | --- |
-| Utility rate | Residential (0%) vs commercial/industrial (19%) depends on usage classification | "Is the utility account registered for residential or commercial use? Provide contract." |
-| Food product (0% vs 19%) | Processed vs unprocessed distinction; restaurant meals (19%) vs basic food (0%) | "Is this a basic unprocessed food? Or restaurant service / processed packaged product?" |
-| Air transport (5% vs 0%) | Domestic (5%) vs international (0%) | "What is the route? Domestic Colombia or international?" |
-| Supplier regime | Responsable (IVA charged, credit allowed) vs No Responsable | "Confirm supplier's RUT — Responsable de IVA or No Responsable?" |
-| Business-use vehicle | DIAN limits on passenger vehicle IVA | "Vehicle type and business use %" |
-| Export documentation | Zero-rate requires DIAN export declaration | "Provide export invoice and DIAN export authorization." |
-
-## Section 7 — Excel working paper
-
-**Columns:** Date | Supplier/Customer | NIT | CUFE | Net (COP) | IVA Rate % | IVA (COP) | In/Out | Zero-rated? | Exempt? | Retención IVA? | Tier 2 flag | Notes
-
-**Tab structure:**
-1. `Output_Sales` — Facturas Electrónicas issued
-2. `Input_Purchases` — Facturas Electrónicas received
-3. `F300_Summary` — bimonthly return totals
-4. `Tier2_Items` — awaiting client response
-
-## Section 8 — Bank statement reading guide
-
-### Bancolombia format
-
-```
-Fecha       : 15/04/2025
-Tipo        : Abono — Transferencia Electrónica
-Descripción : COMPANY NAME — FE INV-2025-041
-Valor       : +$119.000.000
-Saldo       : $619.000.000
-```
-
-### Davivienda format
-
-```
-15/04/2025  |  Crédito  |  COMPANY NAME  |  +119.000.000  |  Saldo: 619.000.000
-```
-
-### Key patterns:
-
-- **COP number format:** Period = thousands; no decimal (whole pesos): $119.000.000 = COP 119,000,000
-- **Abono:** Credit (money in) — match to issued Factura Electrónica
-- **Débito:** Debit (money out) — match to received Factura for input credit
-- **Reintegro Divisas:** Foreign currency conversion — export or foreign service
-
-## Section 9 — Onboarding fallback
-
-When client cannot provide Facturas Electrónicas for all transactions:
-
-1. Use bank statement amounts as IVA-inclusive and back-calculate:
-   - Net = Total ÷ 1.19 | IVA = Total − Net
-   - Net = Total ÷ 1.05 (5% rate)
-2. Conservative defaults: 19% output; 0% input credit without CUFE-valid Factura Electrónica
-3. Flag all items without CUFE in Tier2_Items
-4. Issue data request for missing invoice references
-5. Warn client: DIAN can disallow input credit without Factura Electrónica with valid CUFE
-
-## Section 10 — Reference material
-
-**Reference material**
-
-| Resource | Reference |
-| --- | --- |
-| DIAN portal (MUISCA system) | https://www.dian.gov.co |
-| Estatuto Tributario (IVA — Artículos 420–512) | DIAN — legislación |
-| Resolución DIAN 000042/2020 — Factura Electrónica | DIAN — resoluciones |
-| IVA rate schedule | DIAN — tarifas IVA |
-| Retención en fuente IVA | DIAN — retención IVA guidance |
-| UVT (Unidad de Valor Tributario) — annual update | DIAN resolution each December |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the decree rates of IVA withholding other than the 15% default (up to 50% allowed); the calendar dates of the 2026 and January 2027 deadlines (only the business-day rule was read); the full tariff lists of arts. 424, 468-1 and 477 (only examples are given here, check the heading); whether an individual below the thresholds may register voluntarily; whether a company providing services can use the art. 437 par. 3 exception; the refund procedure and its timing for exporters; the payment form for Form 300 balances.
