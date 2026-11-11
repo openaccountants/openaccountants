@@ -9,7 +9,7 @@ partial:
   VAT: "Existing IVA skill remains on tax year 2025."
   SC: "Existing skill remains on tax year 2025."
   PR: "Existing skill remains on tax year 2025."
-  XB: "2026 domestic cross-border method covered; current withholding and filing instructions not yet confirmed."
+  XB: "2026 source/base and specified individual/proportional methods covered; ordinary-company computation needs a separately reviewed CIT handoff; current withholding and filing instructions not yet confirmed."
 ---
 
 # Venezuela: tax pack
@@ -26,7 +26,7 @@ Tax years: 2025 (5 skills), 2026 (1 skill).
 | Social contributions | [Social contributions](venezuela-social-contributions.md) | 2025 | Needs updating |
 | Payroll | [Payroll](venezuela-payroll.md) | 2025 | Needs updating |
 | Transfer pricing | | | Missing |
-| Cross-border | [Cross-border tax](venezuela-cross-border-tax.md) | 2026 | Partial: withholding and filing instructions unconfirmed |
+| Cross-border | [Cross-border tax](venezuela-cross-border-tax.md) | 2026 | Partial: ordinary-company computation handoff and administrative instructions pending |
 
 Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
