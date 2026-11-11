@@ -1,549 +1,359 @@
 ---
 name: venezuela-social-contributions
-description: "Use this skill whenever asked about Venezuela social security and payroll contributions (IVSS, Paro Forzoso, FAOV, INCES, LOPCYMAT) for employers or employees. Trigger on phrases like \"how much social security do I pay in Venezuela\", \"IVSS contribution\", \"Seguro Social Obligatorio\", \"Paro Forzoso\", \"régimen prestacional de empleo\", \"FAOV housing contribution\", \"INCES training levy\", \"LOPCYMAT\", \"aporte patronal\", \"deducción IVSS\", \"salario mínimo VES 130\", \"cestaticket\", \"bono de guerra\", \"ISLR withholding on salary\", \"Venezuela payroll tax\", or any question about Venezuelan employer/employee statutory contributions. Also trigger when classifying bank statement transactions that relate to IVSS, FAOV/BANAVIH, INCES, or SENIAT debits from Banco de Venezuela, Banesco, Mercantil, or other Venezuelan banks. CRITICAL: Venezuela's legal minimum wage has been frozen at VES 130 since March 2022 and real pay is delivered through NON-salary bonuses (Cestaticket, Bono de Guerra) that are EXCLUDED "
+description: "Reconcile Venezuelan employer and worker social and parafiscal contributions for 2026. Provides the ordinary INCES employer and worker calculations, eligibility, bases and payment periods from the institution's law; IVSS statutory remittance, retention, arrears and specific penalties; LOPCYMAT employer financing, risk formula and transition limits; separate IVSS, unemployment and FAOV workpapers where current primary parameters remain unconfirmed. Covers IVSS, TIUNA, RPE, paro forzoso, BANAVIH, FAOV, INCES, INPSASEL, LOPCYMAT, pension contributions, salary classification, bank-payment matching and the distinction from ISLR and IVA. Use when reviewing payroll deductions, employer costs, contribution statements or ambiguous statutory debits. Never infer a legal base, occupational risk class, current minimum wage, rate, cap or payment deadline from a bank label or the prior Guide."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/venezuela-social-contributions"
   jurisdiction: "VE"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
-  reviewed_by: "Jose Padilla"
+  tax_year: "2026"
+  last_updated: "2026-11-11"
 ---
 
-# Venezuela Social Security & Payroll Contributions
-
-## Venezuela Social Security & Payroll Contributions Skill v0.1
-
-## Rates and thresholds
-
-> Reviewed against the cited tax authorities by **Jose Padilla** on 2026-06-21.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### venezuela-social-contributions
-
-- **Salario mínimo mensual legal (salario mínimo)** — VES 130  _(PwC; CloudPay)_
-- **Valor de la Unidad Tributaria (UT/TU) 2025** — VES 43  _(Administrative Ruling SNAT/2025/000048, Official Gazette 2 June 2025 (Orbitax))_
-- **Annual ISLR (personal income tax) return deadline** — 31 March following the tax year (cannot be extended)  _(PwC Tax administration)_
-- **IVSS (Social Security) — employer contribution rate (by risk class)** — 9% / 10% / 11%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **IVSS (Social Security) — employee contribution rate** — 4%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Techo contributivo del IVSS (trabajadores urbanos)** — 5 salarios mínimos = VES 650/mes (5 × VES 130)  _(PwC; CloudPay)_
-- **Desempleo (Régimen Prestacional de Empleo) — tasa de contribución patronal** — 2%  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desempleo (Régimen Prestacional de Empleo) — tasa de contribución del empleado** — 0.5%  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Techo contributivo del Paro Forzoso (trabajadores urbanos)** — 10 salarios mínimos = VES 1,300/mes (10 × VES 130)  _(PwC)_
-- **FAOV (Housing) — employer contribution rate** — 2%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **FAOV (Housing / Ley de Vivienda y Hábitat) — employee contribution rate** — 1%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **FAOV — tope de cotización** — Maximo 10 salarios minimos  _(El artículo 172 de la Ley de Régimen Prestacional de Vivienda y Hábitat,)_
-- **INCES employer rate (on total salaries paid)** — 2%  _(PwC Worldwide Tax Summaries — Venezuela)_
-- **INCES employee rate (on annual utilidades profit-share bonus)** — 0.5%  _(PwC Worldwide Tax Summaries — Venezuela)_
-- **Tasa patronal de LOPCYMAT (según nivel de riesgo; solo a cargo del patrono)** — 0.75% – 10%  _(PwC Worldwide Tax Summaries — Venezuela)_
-- **Tasa del trabajador de LOPCYMAT** — 0  _(la lopcymat no pide pagos regulares solo establece sanciones por incumplimientos (multas))_
-- **Tope absoluto del IVSS (VES, salario mínimo congelado)** — VES 650/month (5 × VES 130)  _(PwC; CloudPay)_
-- **Tope absoluto del Paro Forzoso (VES, salario mínimo congelado)** — VES 1,300/month (10 × VES 130)  _(PwC)_
-- **Tramo del ISLR: 0 – 1,000 UT** — 6%; subtraction 0 TU  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **Tramo del ISLR: 1,000 – 1,500 UT** — 9%; subtraction 30 TU  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **Tramo del ISLR: 1,500 – 2,000 UT** — 12%; subtraction 75 TU  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **Tramo del ISLR: 2,000 – 2,500 UT** — 16%; subtraction 155 TU  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **Tramo del ISLR: 2,500 – 3,000 UT** — 20%; subtraction 255 TU  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **Tramo del ISLR: 3,000 – 4,000 UT** — 24%; subtraction 375 TU  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **Tramo del ISLR: 4,000 – 6,000 UT** — 29%; sustraendo 575 UT  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **Tramo del ISLR: más de 6,000 UT** — 34%; sustraendo 875 UT  _(PwC — Venezuela, Individual, Taxes on personal income)_
-- **No residente — actividades profesionales no empresariales — tasa legal** — 34% sobre el 90% del ingreso bruto  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Impuesto corporativo (Tarifa 2): 0 – 2,000 UT** — 15%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Impuesto corporativo (Tarifa 2): 2,000 – 3,000 UT** — 22%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Impuesto corporativo (Tarifa 2): más de 3,000 UT** — 34%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Tasa fija especial: explotación petrolera** — 50%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Tasa fija especial: bancos / entidades financieras / seguros** — 40%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Tasa plana especial: corporaciones en consorcio (joint-venture)** — 50%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Umbral para la declaración de impuesto estimado (ingresos calificados del año anterior)** — > 1,500 TU (= VES 64,500 a la UT 43 para 2025)  _(PwC, Tax administration)_
-- **Fórmula del impuesto estimado** — 75% del impuesto calculado sobre el 80% de los ingresos netos del ejercicio anterior; pagadero en una sola cuota o en 6 cuotas iguales, salvo para sujeto pasivo contribuyente especial que sustituye este proceso por el regimen especial de anticipos que es el 1% de las ventas brutas de cada quincena y pagadero en cada quincena  _(PwC, Tax administration)_
-- **Formulario de ISLR para personas naturales (2025, sin confirmar)** — la forma se llama DPN-99025 y actualmente es electronica, tambien llamada forma 25 entre los contadores pero actualmente al ser electronica no se le conoce como forma  _(PwC (no menciona el código para 2025))_
-- **Regla de declaración para cónyuges** — Los cónyuges declaran conjuntamente como un solo contribuyente; la declaración separada solo procede con acuerdo escrito de separación de bienes Y cuando los ingresos se limiten a sueldos/honorarios  _(PwC, Tax administration)_
-- **Sanción: omisión de ingresos / subdeclaración del ISLR** — Multa del 100% – 300% del impuesto omitido  _(Grant Thornton Venezuela penalty schedule; Justia COT)_
-- **Sanción: omisión de presentar una declaración** — Cierre del establecimiento por 10 días más multa de 150× la tasa de la divisa de mayor valor del BCV  _(Grant Thornton Venezuela penalty schedule; Justia COT)_
-- **Sanción: declaración incompleta o presentada con retraso de hasta un año** — Multa de 100× la tasa de la divisa de mayor valor del BCV  _(Grant Thornton Venezuela penalty schedule; Justia COT)_
-- **Special taxpayer penalty multiplier (COT Art. 108)** — Penalties increased by 200%  _(COT Art. 108; Grant Thornton Venezuela)_
-- **Base de indexación de sanciones** — Las sanciones pecuniarias se indexan a la tasa oficial del BCV de la divisa extranjera de mayor valor (indexadas al tipo de cambio, no a la UT)  _(COT 2020 reform)_
-- **Fórmula del tope del IVSS** — 5 × salario mínimo mensual  _(PwC)_
-- **Fórmula del tope del Paro Forzoso** — 10 × salario mínimo mensual  _(PwC)_
-- **Umbral del anticipo de impuesto en VES (2025)** — VES 64,500 (1,500 TU × VES 43)  _(PwC, Tax administration)_
-- **INCES employee contribution base** — Annual utilidades (profit-share) bonus — NOT monthly salary; no cap  _(PwC)_
-- **Base de la contribución al FAOV** — Maximo 10 salarios minimos  _(El artículo 172 de la Ley de Régimen Prestacional de Vivienda y Hábitat,)_
-- **Partidas no salariales excluidas de todas las bases de contribución** — Además la ley establece que no se debe incluir el bono de transporte pero en toda la legislación de Venezuela hay varias caracteristicas que pueden hacer que un bono no tenga caracter salarial y para ello es necesario evaluarlo uno a uno el caso  _(PwC; government non-salary classification)_
-- **Rango de tarifas del ISLR para residentes** — 6% – 34% (progresivo, sobre ingresos mundiales)  _(PwC, Taxes on personal income)_
-
-## Section 1 -- Quick reference
-
-**Read this whole section before computing or classifying anything.**
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Venezuela (Bolivarian Republic of Venezuela) |
-| Currency | Venezuelan bolívar (VES, "bolívar digital") |
-| Social security authority | IVSS — Instituto Venezolano de los Seguros Sociales |
-| Tax authority | SENIAT — Servicio Nacional Integrado de Administración Aduanera y Tributaria |
-| Housing fund authority | BANAVIH (administers FAOV — Fondo de Ahorro Obligatorio para la Vivienda) |
-| Training authority | INCES — Instituto Nacional de Capacitación y Educación Socialista |
-| Primary legislation | Ley del Seguro Social; Ley del Régimen Prestacional de Empleo; Ley del Régimen Prestacional de Vivienda y Hábitat; Ley del INCES; LOPCYMAT |
-| Tax year | Calendar year |
-| Legal minimum monthly wage (salario mínimo) | **VES 130** since 15 March 2022 — unchanged through 2025 (PwC; CloudPay) |
-| Tax Unit (UT/TU) value 2025 | **VES 43** per Administrative Ruling SNAT/2025/000048, Official Gazette 2 June 2025 (Orbitax) |
-| Annual ISLR (personal income tax) return deadline | **31 March** following the tax year — cannot be extended (PwC Tax administration) |
-| Validated by | Verified by Jose Padilla (CPA) on 2026-06-21 |
-| Validation date | Verified by Jose Padilla (CPA) on 2026-06-21 |
-
-### CRITICAL Venezuela-specific caveat — read FIRST
-
-The **legal monthly minimum wage (salario mínimo) has been frozen at VES 130 since 15 March 2022** (PwC; CloudPay). Almost all social-security and payroll contributions are legally computed on the **salary** base, which in practice is tiny. Real worker compensation is delivered through **non-salary bonuses** — the *Bono contra la Guerra Económica* ("Bono de Guerra") and the *Cestaticket Socialista* — which the government explicitly classifies as **non-salary** so they are **EXCLUDED** from the contribution base. As of 30 April 2025 the indexed minimum income totalled ~US$160/month (Cestaticket ~$40 + Bono de Guerra ~$120, paid in VES at the BCV rate), while the underlying VES 130 minimum wage is worth only ~US$2.50.
-
-**You MUST account for the salary vs. non-salary distinction. Mechanically applying rates to "total pay" will be wrong.** See Section 5, Rule 1.
-
-### Contribution overview (2025)
-
-Source: PwC Worldwide Tax Summaries — Venezuela, Individual, Other taxes (taxsummaries.pwc.com/venezuela/individual/other-taxes), corroborated by CloudPay (cloudpay.com/payroll-guide/venezuela-payroll-and-benefits-guide).
-
-**Contribution overview table**
-
-| Regime | Employer | Employee | Base / Ceiling |
-| --- | --- | --- | --- |
-| **IVSS** — Seguro Social Obligatorio (mandatory social security) | 9% / 10% / 11% (by occupational-risk class) | 4% | Capped at **5 minimum salaries** (urban workers) |
-| **Paro Forzoso** — Régimen Prestacional de Empleo (unemployment) | 2% | 0.5% | Capped at **10 minimum salaries** (urban workers) |
-| **FAOV** — Régimen Prestacional de Vivienda y Hábitat (housing) | 2% | 1% | Total monthly **integral salary, capped at 10 minimum salaries** |
-| **INCES** — training levy | 2% (on total salaries paid) | 0.5% (on annual *utilidades* profit-share bonus) | No cap |
-| **LOPCYMAT** — workplace prevention/safety | 0.75% – 10% (risk-dependent) | 0% | Total salaries paid; cap interpretation disputed |
+# Venezuela: social and parafiscal contributions, 2026 v0.2
 
-- The **IVSS** and **Paro Forzoso** ceilings are expressed in *minimum salaries*. With the frozen VES 130 minimum wage, the contributory ceilings are extremely low in absolute terms (IVSS cap = 5 × VES 130 = VES 650/month; Paro Forzoso cap = 10 × VES 130 = VES 1,300/month).
-- **FAOV** uses the *integral salary* (salario integral) capped at **10 minimum salaries** — integral salary includes commissions, gratifications, profit sharing, bonuses, vacation bonus, and shift premiums (PwC).
-- IVSS announced contribution-rate administration changes in Feb 2025 (secondary EOR sources, e.g. Rivermate). PwC still reports the classic 4% employee / 9–11% employer split for 2025 — **treat 4% / 9–11% as authoritative**. [RESEARCH GAP — reviewer to confirm whether the Feb-2025 IVSS administrative change altered the split, against ivss.gob.ve.]
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-### Conservative defaults
+**Answer layer.** Compute each Venezuelan contribution separately, using its own covered persons, legal pay definition, period, ceiling and allocation between employer and worker. For an eligible INCES employer with five or more workers, the opened law supplies the ordinary method: employer contribution of 2% of normal monthly salary actually paid, remitted within five days after each quarter; workers in an entity employing five or more contribute 0.5% of annual utilidades, aguinaldos or year-end bonuses, withheld and remitted within ten days after payment. The employer contribution cannot be deducted from workers. [INCES law arts. 49-50](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52).
 
-**Conservative defaults table**
+**Essential limit.** Current primary IVSS general-regulation parameters, unemployment/RPE parameters, FAOV contribution parameters and the pensions-protection contribution's current operative rate/base/calendar could not all be confirmed. Keep those liabilities open rather than substitute historical defaults. The IVSS law's explicitly initial rates are not a sufficient basis to certify the current rate. LOPCYMAT supplies a statutory financing framework and transition, not evidence of a particular employer's currently payable assessed rate. This is a source-based tier-2 rewrite without an accountant approval. It retains the prior Guide's contribution, bank-classification, workpaper, onboarding and income-tax-reference topics while correcting unsupported defaults.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown occupational-risk class (IVSS) | Use the **lowest** employer rate 9% for estimates; flag for reviewer to confirm class |
-| Unknown LOPCYMAT risk rate | STOP — do not estimate; range is 0.75%–10% and is too wide to default safely. Flag for reviewer |
-| Pay described only as "total pay" or "total income" | STOP — split into salary vs. non-salary (Cestaticket / Bono de Guerra) before applying ANY rate |
-| Unknown whether bonus is salary or non-salary | Treat Cestaticket and Bono de Guerra as **non-salary (EXCLUDED)**; flag everything else for reviewer |
-| Unknown whether worker is "urban" | Assume urban-worker ceilings (5 / 10 minimum salaries); flag for reviewer |
-| Unknown UT for a year other than 2025 | STOP — UT changes by Administrative Ruling; do not assume |
+## Who this applies to
 
-## Section 2 -- Required inputs and refusal catalogue
+Use this Guide to reconcile an employer's payroll, contributions payable, worker deductions and statutory bank payments, or a worker's deductions and contribution records. Establish the employer's legal form, sector, activity, worker count, actual employment relationship, registration and assessment before calculating. A company and an independent worker do not automatically follow the same contribution route. A payment called social security is not enough to identify the regime or period.
 
-### Required inputs
+The 2012 consolidated IVSS law covers permanent dependent workers in urban or rural employment regardless of salary, with the stated extensions for home, domestic, temporary and occasional workers and a facultative route for independent workers. Its public-person/employer coverage in art. 3 has specific benefit conditions; do not apply a private-employer table to every public worker. Art. 6 allows continuation after compulsory coverage ends, with the insured bearing both shares, reverting to the worker's share when dependent employment resumes. [IVSS law arts. 1-3, 6, Gaceta 39.912](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=4).
 
-**Minimum viable** — the worker's **salary** base (the legally-classified *salario*, NOT total compensation) and whether the payment items are salary or non-salary. Without the salary/non-salary split, STOP.
+INCES arts. 49 and 50 have separate wording. Art. 49 covers private-sector work entities and state enterprises with their own self-managed income employing at least five workers. Art. 50 describes workers of entities employing at least five. Do not silently import an employer-sector exception into the worker paragraph, or assume that a small payroll is exempt from every registration, training, occupational-safety or other contribution duty. Other INCES obligations, including training and apprentices, require their own analysis; the contribution headcount is not an all-purpose labor-law exemption. [INCES law arts. 49-52](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52).
 
-**Recommended** — occupational-risk class (for IVSS 9/10/11%), LOPCYMAT risk rate, integral-salary components (for FAOV), and the annual *utilidades* profit-share figure (for the INCES employee 0.5%).
+LOPCYMAT applies to dependent work, public or private, profit-making or otherwise, including domestic/home/conserjería work and the stated cooperative/associative situations; its Armed Forces exception and compatible prevention provisions for independent workers must be respected. The employer-only financing rule is in art. 7. Enrollment, risk assessment, workplace prevention and money contributions are related duties but are not interchangeable transactions. [LOPCYMAT arts. 4, 6-7](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=2).
 
-**Ideal** — the IVSS/BANAVIH/INCES registration records, the payroll register showing salary vs. non-salary line items, and bank statements showing the monthly statutory debits.
+## Rates, bands and thresholds
 
-### Refusal catalogue
+### Confirmed statutory parameters
 
-- **R-VE-SC-1 — Salary vs. non-salary split unknown** — Trigger: only "total pay" is provided, with no breakdown of salary vs. Cestaticket / Bono de Guerra. Message: "Venezuelan contributions are computed on the *salary* base only. The Cestaticket Socialista and Bono contra la Guerra Económica are legally non-salary and are excluded. Applying rates to total pay overstates contributions massively. Provide the salary component before I can compute anything."
-- **R-VE-SC-2 — LOPCYMAT risk rate unknown** — Trigger: LOPCYMAT computation requested without the assigned risk percentage. Message: "LOPCYMAT employer contributions range 0.75%–10% depending on the assigned occupational-risk rate (INPSASEL classification). I cannot default across a 13× range. Provide the assigned rate or escalate to a licensed accountant."
-- **R-VE-SC-3 — IVSS Feb-2025 rate-change query** — Trigger: client asks whether IVSS rates changed in 2025. Message: "Secondary EOR sources reference a Feb-2025 IVSS administrative change, but PwC still reports the 4% employee / 9–11% employer split for 2025. [RESEARCH GAP] This must be confirmed directly against ivss.gob.ve before relying on it. Escalate to a licensed accountant."
-- **R-VE-SC-4 — Penalty / arrears quantification** — Trigger: client asks to quantify contribution arrears or COT penalties. Message: "COT penalties are FX-indexed to the BCV highest-value-currency rate and special-taxpayer penalties increase by 200%. Do not estimate arrears or penalties without authority statements. Escalate to a licensed accountant immediately."
-- **R-VE-SC-5 — Exact SENIAT/IVSS form code as load-bearing** — Trigger: output depends on naming the exact 2025 ISLR individual form code. Message: "The individual ISLR form is DPN-99025, an electronic form also known informally as 'Forma 25' among accountants. If the exact form code is load-bearing, confirm directly against seniat.gob.ve."
+Amounts in the examples below are invented workpaper inputs, not the current minimum wage or the current value of a tax unit. Each row must be read with its eligibility and operative conditions.
 
-## Section 3 -- Payment pattern library
+| Item | Rate, amount or threshold and conditions | Official source |
+|---|---|---|
+| INCES employer eligibility | Art. 49 private-sector work entity or state enterprise with own self-managed income, employing five or more workers | https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52 (art. 49) |
+| INCES employer contribution | 2% of normal monthly salary paid; taxable event is payment; employer bears it, no worker deduction | https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52 (art. 49) |
+| INCES employer remittance | Within five days following each quarter's end; apply governing legal time-computation rules, not an invented calendar date | https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=53 (art. 49 continuation) |
+| INCES worker eligibility and contribution | Workers in entities employing five or more; 0.5% of annual utilidades, aguinaldos or year-end bonuses, withheld by entity | https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=53 (art. 50) |
+| INCES worker remittance | Within ten days after payment of the covered annual remuneration | https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=53 (art. 50) |
+| INCES registration | Within 45 business days following constitution; supply required information | https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=54 (art. 51) |
+| LOPCYMAT financing range | Employer/cooperative/other specified organization exclusively; 0.75% to 10% of each worker's salary or associate's income/rent, subject to actual risk/implementation | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=4 (art. 7) |
+| LOPCYMAT risk classes and degree framework | Classes I-V; degrees range 14-186; no automatic lowest-class assumption | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=65 (art. 94) |
+| LOPCYMAT statutory premium formula | Total salaries × assigned risk degree × 5.375 ÷ 10,000; assessment/operative requirements still apply | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=67 (art. 95) |
+| LOPCYMAT monthly payment provision | Accrues for completed months from worker entry; first five business days of each month, subject to transition/actual implementation | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=68 (art. 98) |
+| IVSS registration infringement | Law identifies failure to enroll workers within three business days after entry as serious; employer-registration wording separately concerns before activity begins | https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=11 (art. 86) |
+| IVSS classified formal fines | Minor 25 U.T.; serious 50 U.T.; very serious 100 U.T., within arts. 85-87 conditions and case procedure | https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=11 (arts. 85-87) |
+| IVSS late-contribution special fine | Five U.T. per week per affected worker, maximum 52 weeks; recidivism closure five days | https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=11 (art. 88) |
+| IVSS recidivism under art. 87 | Minor/serious fine plus 50%; very serious closure three days; distinct from art. 88 | https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=11 (arts. 85, 87-88) |
 
-This is the deterministic pre-classifier for bank statement transactions related to Venezuelan statutory contributions and taxes. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
+The previous table's monetary ceilings derived from an alleged current minimum wage are not confirmed here. Neither an old statutory minimum nor a food/bonus “economic floor” is an interchangeable contribution base. The apparent smallness of a nominal bolívar payment cannot establish compliance. An institution's valid assessment and payroll records must be reconciled even where a statutory rate appears familiar.
 
-**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. Statutory contributions and tax payments always EXCLUDE from any revenue/expense VAT (IVA) classification — they are statutory obligations, not business supplies. Amounts are in VES.
+### Risk degree table: what the LOPCYMAT statute actually supplies
 
-### 3.1 IVSS / social-security debits
+The table below is the statutory framework, not an individualized assessment. Art. 94 requires a motivated resolution based on the listed actuarial/statistical/financial/demographic/epidemiological criteria and consultation. Art. 96 requires the special regulation and placement by the Treasury following INPSASEL qualification; first enrollment or the stated activity changes use the average of the **correct class**, not automatically class I. Art. 97 generally follows the principal activity; separate centers may seek separate placement only on its conditions. [LOPCYMAT arts. 94-97](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=65).
 
-**IVSS / social-security debits table**
+| Risk class | Minimum degree | Weighted average degree | Maximum degree | Official source |
+|---|---|---|---|---|
+| I, minimum | 14 | 21 | 28 | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=66 (art. 94) |
+| II, low | 21 | 35 | 49 | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=66 (art. 94) |
+| III, medium | 35 | 64 | 93 | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=66 (art. 94) |
+| IV, high | 64 | 93 | 122 | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=66 (art. 94) |
+| V, maximum | 93 | 102 | 186 | https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=66 (art. 94) |
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| IVSS, SEGURO SOCIAL, SEGURO SOCIAL OBLIGATORIO | EXCLUDE — IVSS contribution | Monthly employer + employee IVSS |
-| INSTITUTO VENEZOLANO DE LOS SEGUROS SOCIALES | EXCLUDE — IVSS contribution | Full authority name |
-| TIUNA, SISTEMA TIUNA | EXCLUDE — IVSS contribution | IVSS online payment system reference |
+Art. 97's annual qualification adjustment is limited to its printed “veinticinco décimas (0,25)” of the company's current rate and to art. 7's outer limits. Retain that wording with an actual assessment; do not repair or reinterpret its terminology into an invented percentage-point rule. The current implementing risk resolution, Treasury operation and actual employer rate are not yet confirmed. [LOPCYMAT arts. 96-99](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=67).
 
-### 3.2 Other statutory regimes
+## The base
 
-**Other statutory regimes table**
+### The method, step by step
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PARO FORZOSO, REGIMEN PRESTACIONAL DE EMPLEO, RPE | EXCLUDE — unemployment (Paro Forzoso) | Employer 2% / employee 0.5% |
-| FAOV, BANAVIH, VIVIENDA Y HABITAT, AHORRO HABITACIONAL | EXCLUDE — housing (FAOV) | Employer 2% / employee 1%, integral salary, cap 10 minimum salaries |
-| INCES, INCE | EXCLUDE — training levy | Employer 2% / employee 0.5% on utilidades |
-| LOPCYMAT, INPSASEL | EXCLUDE — workplace-safety (LOPCYMAT) | Employer-only 0.75%–10% |
+1. **Identify each obligation.** Create separate accounts for IVSS compulsory/facultative coverage, unemployment/RPE, FAOV housing, INCES employer, INCES worker, occupational-safety contributions and a pensions-protection contribution where legally applicable. Separately identify ISLR withholding, own ISLR, IVA and other taxes. Do not collapse every payment to a government recipient into a social contribution.
+2. **Establish the persons and period.** Reconcile the actual employer, work relationships, hires/leavers, sector, activity, worker count and pay dates against contracts and official records. A worker's independent invoice is not proof that employment rules do not apply, and a worker count on one bank-payment day is not proof of every period's eligibility. The current administrative headcount method for changing/irregular staffing is not established here; obtain the actual primary instruction rather than average or round without authority.
+3. **Classify compensation by obligation.** Build a pay-component matrix with normal recurring salary, variable remuneration, overtime/commissions, in-kind remuneration, vacation pay/bonus, utilidades, aguinaldo/year-end bonus, food benefit, travel reimbursements, Guerra Económica and other bonuses separately. For each contribution identify the legal base, evidence, exclusions and any current interpretation. INCES employer normal monthly salary and INCES worker annual-remuneration bases are distinct. IVSS law art. 60 permits institution determination of variable/in-kind remuneration. [INCES arts. 49-50](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52); [IVSS law arts. 58-60](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=8).
+4. **Apply only established ceilings and periods.** Record each regime's actual cap, statutory reference wage, effective dates, weekly/monthly convention and assessment. Never borrow one regime's cap for another. A constant monthly salary does not prove each monthly invoice has an identical contribution amount. The IVSS general regulation and RPE/FAOV texts needed to confirm current numerical parameters remain unavailable through the permitted routes; do not finalize those amounts from the old Guide.
+5. **Calculate ordinary INCES.** For an art. 49 employer, sum legally classified normal monthly salaries actually paid in the quarter and multiply by 0.02. Do not deduct that sum from workers. For an art. 50 worker contribution, multiply legally identified annual utilidades/aguinaldo/year-end bonus actually paid by 0.005; deduct the worker share and record the employer's remittance payable. Determine all covered workers and amounts, rather than applying the rate only to a single bonus line that happens to match a bank description. [INCES arts. 49-50](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52).
+6. **Keep INCES relief separate.** Arts. 57-61 concern deductions for training/collective self-formation programs, subject to regulation, qualifying costs, prior Board approval, self-assessment and presentation in the first six months, with programmes to be executed in the year following presentation. Do not net all training expenditure against the contribution or invent a relief percentage. Current permitted percentage, regulation, application and approval details are not yet confirmed. [INCES arts. 57-61](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=59).
+7. **Reconcile IVSS retention/remittance.** The employer must remit its own and workers' contributions on the law/regulation's conditions. Art. 63 allows withholding the worker part when salary is paid and prohibits later recovery if not withheld then; payment of salary creates the stated presumption of withholding. Do not treat a missed withholding as authority to deduct an arbitrary arrears lump sum from the next wage. [IVSS law arts. 61-64](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=9).
+8. **Apply the occupational-safety limit.** Keep art. 95's mathematical risk formula with the actual assigned degree and established salary base, but first determine operative implementation/transition and whether the charge is already in another social-insurance assessment. The old assertion that LOPCYMAT always means no regular monetary obligation is not established; neither is an automatic additional payment at the statutory minimum. [LOPCYMAT arts. 7, 94-99, transitional fifth, final second](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=4).
+9. **Match the payment, not just its label.** Reconcile beneficiary/account, official payment order, contribution period, salary/worker detail, principal, interest, fine and bank reference. Split a combined remittance into its legal components. A bank payment proves a cash movement; the institution's account allocation proves the period credited. Keep refunds/reversals and employee reimbursement receipts distinct from original expense and payable movements.
+10. **Close the liabilities with an exception list.** Compare opening payable plus employer expense plus worker amounts withheld plus separately assessed charges less payments actually allocated and valid credits. Document all unresolved differences, payroll adjustments and official rectification steps. Do not label the employer solvent solely because the bank balance reconciles or all visible government debits have a classification.
 
-### 3.3 SENIAT / tax payments (NOT social contributions — do not confuse)
+### Salary, integral salary and benefits: do not reuse a single base
 
-**SENIAT / tax payments table**
+The old Guide correctly treated salary payments as a different cash-flow category from contributions paid, but went further and automatically excluded Cestaticket and Guerra Económica from every base. That result cannot follow from a bank label. A legally nonsalary benefit under one enactment does not settle the definition in every contribution statute. The current pensions-protection regime also needs its own primary-text analysis before assuming the same exclusions. Record the legal pay category and the specific inclusion/exclusion for **each** obligation.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SENIAT | EXCLUDE — tax payment, not a contribution | ISLR, IVA or other SENIAT tax |
-| ISLR, IMPUESTO SOBRE LA RENTA | EXCLUDE — income tax | Not a social contribution |
-| IVA, IMPUESTO AL VALOR AGREGADO | EXCLUDE — VAT | Not a social contribution |
-| RETENCION, RETENCION ISLR | EXCLUDE — withholding tax | Salary/professional-fee withholding |
+For INCES employer contributions, the law expressly says **salario normal mensual pagado**; it does not say every gross cash payment. For its worker contribution it identifies utilidades, aguinaldos and year-end bonuses. A vacation bonus should not be moved into the annual-bonus base merely because both are called BONO; first establish its actual legal category. The law's opened arts. 49-50 give no numeric salary ceiling in those paragraphs. Do not import a minimum-wage multiplier into their formulas. That observation does not certify the absence of every subsequent administrative or judicial rule. [INCES arts. 49-50](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52).
 
-### 3.4 Salary and non-salary payroll (exclude from contribution classification)
+For IVSS, art. 58 uses the insured's earned salary or the limit set in the regulation for contributions and cash benefits. Art. 59 delegates the percentage and allows the stated category/regional distinction; art. 60 permits institution determination for variable and in-kind pay. The 2012 Gazette's arts. 65-67 explicitly describe **initial** contributions and possible changes. They do not resolve today's risk-class rates, ceiling, week convention or the claimed February-2025 change. Current general-regulation and later administrative text are needed for those parameters. [IVSS law arts. 58-67, 78](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=8).
 
-**Salary and non-salary payroll table**
+FAOV's old text contains two inconsistent claims: a minimum-wage-multiplier cap in its table/rule/workpaper and an uncapped integral base in an example. Neither is adopted here without the actual current law. Preserve the workpaper's housing section and component-by-component base analysis, but leave the operative rate, cap/no-cap, integral-salary composition and remittance calendar **not yet confirmed**. The same applies to RPE's exact rate split, salary ceiling, period and remittance instruction. A consistent-looking calculation is not corroboration of its legal parameters.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NOMINA, SUELDO, SALARIO (outgoing) | EXCLUDE — payroll (salary) | Salary base; contributions computed separately |
-| CESTATICKET, CESTA TICKET, CESTATICKET SOCIALISTA | EXCLUDE — **non-salary** benefit | NOT in the contribution base |
-| BONO DE GUERRA, BONO CONTRA LA GUERRA ECONOMICA | EXCLUDE — **non-salary** benefit | NOT in the contribution base |
-| UTILIDADES (outgoing) | EXCLUDE — profit-share bonus | INCES employee 0.5% applies to this figure |
+### Payment pattern library
 
-### 3.5 Benefit payments received (not contributions paid)
+Use these as search clues and provisional coding only. They are not legal conclusions or guaranteed bank formats. Retain original unnormalized text alongside any accent/case normalization, account identifier and matching evidence.
 
-**Benefit payments received table**
+| Bank description clue | Provisional route | Evidence needed before final coding |
+|---|---|---|
+| IVSS, SEGURO SOCIAL, SEGUROS SOCIALES, SSO, TIUNA | Social-insurance remittance candidate | Official order/account, employer registration, period, workers, principal/interest/fine split |
+| PARO FORZOSO, RPE, REGIMEN PRESTACIONAL DE EMPLEO | Unemployment regime candidate | Agency allocation and return; establish whether included in a combined payment |
+| FAOV, BANAVIH, LEY POLITICA HABITACIONAL, LPH | Housing contribution candidate | Distinguish contribution from mortgage payment, loan disbursement, refund, arrears or fine |
+| INCES, INCE | Training contribution candidate | Employer quarter vs worker annual remuneration; payment date and covered entity/workers |
+| LOPCYMAT, INPSASEL | Occupational-safety related candidate | Assessment and reason; contribution, sanction, training/service charge or another transaction |
+| SENIAT, ISLR, IMPUESTO SOBRE LA RENTA | Income tax/withholding candidate | Return/certificate and actual tax account; may also be a separately identified pension-related tax |
+| IVA, IMPUESTO AL VALOR AGREGADO | VAT candidate | VAT return/assessment; never count automatically as a payroll contribution |
+| RETENCION, RETENCION ISLR | Withholding candidate | Recipient, legal tax, period, certificate and remittance; word alone does not identify a rate |
+| NOMINA, SUELDO, SALARIO outgoing | Salary cash payment candidate | Payroll gross-to-net bridge; contribution/withholding deductions occur in separate liabilities |
+| CESTATICKET, CESTA TICKET, CESTATICKET SOCIALISTA | Food-benefit payment candidate | Governing benefit documents and each regime's actual base rule; no universal exclusion |
+| BONO DE GUERRA, BONO CONTRA LA GUERRA ECONOMICA | Named bonus candidate | Payer, entitlement, legal classification and contribution-specific rule |
+| UTILIDADES, AGUINALDO, BONIFICACION FIN DE AÑO outgoing | Annual-remuneration candidate | INCES art. 50 eligibility/base, actual annual payment and retention records |
+| IVSS PENSION, PENSION DE VEJEZ incoming | Pension/benefit receipt candidate | Award/payment record; not an employer contribution payment solely because IVSS appears |
+| PARO FORZOSO PAGO, PRESTACION DESEMPLEO incoming | Unemployment-benefit receipt candidate | Benefit record; do not net against employer contribution expense without legal/accounting basis |
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| IVSS PENSION, PENSION DE VEJEZ | EXCLUDE — pension income received | Not a contribution payment |
-| PARO FORZOSO PAGO, PRESTACION DESEMPLEO | EXCLUDE — unemployment benefit received | Not a contribution payment |
+A refund or returned transfer may appear as a credit from the institution. The old “always debits, never credits” assertion is removed: check direction and substance. A tiny debit may be a real contribution, bank fee, test transfer or erroneous short payment. A large debit may combine arrears, more workers, periods or assessed sanctions. Size is not a safe classifier. Exact bank export layouts and automated description reliability have not been confirmed for Banco de Venezuela, Banesco, Mercantil or BBVA Provincial.
 
-## Section 4 -- Worked examples
+### Working paper and onboarding fallback
 
-Six bank statement classifications for a hypothetical small employer in Caracas. All amounts in VES. Because the minimum wage is frozen at VES 130, salary-base contributions are tiny in absolute terms; FAOV (no cap, integral salary) is usually the largest line.
+Maintain a workbook with raw statement, payroll by worker, pay-component/legal-base matrix, assessments/returns, liability rollforward and unresolved-items tabs. Minimum fields are employer/RIF/registration, worker ID in the protected workpaper, hire/leaving dates, period, actual pay date, gross component, normal-pay classification, each regime's established base, cap/reference and effective date, actual risk class, employer/worker rates and amounts, withholding, institution reference, payment date, cash amount, credited amount, interest, fine and remaining balance. Keep private payroll identifiers out of public review evidence.
 
-> Throughout: the **salary base** used for IVSS/Paro Forzoso is the legally-classified *salario*, which for a minimum-wage worker is VES 130/month, subject to the minimum-salary ceilings. Cestaticket and Bono de Guerra are **excluded**.
+| Workpaper column or equation | Purpose |
+|---|---|
+| `regime`, `employer`, `worker_or_group`, `period`, `paid_date` | Establish which duty/period is being reconciled |
+| `gross_component`, `legal_character`, `base_rule_source`, `included_amount` | Explain each contribution base; a bonus label is not an exclusion |
+| `validated_reference_wage`, `cap_rule`, `cap_effective_date` | Store only a confirmed cap for the specific regime; FAOV cap status remains open |
+| `normal_salary_paid_quarter` | Sum qualifying INCES employer monthly salaries actually paid in that quarter |
+| `inces_employer = normal_salary_paid_quarter * 0.02` | Art. 49 qualifying employer's liability; employer bears it |
+| `covered_annual_bonus_paid`, `inces_worker = covered_annual_bonus_paid * 0.005` | Art. 50 qualifying worker retention and remittance liability |
+| `ivss_assessed_base`, `ivss_assessed_period`, `ivss_assessed_employer_rate`, `ivss_assessed_worker_rate` | Inputs await current primary verification; do not reverse-engineer from net pay |
+| `rpe_assessed_base`, `rpe_rates`, `rpe_period` | Separate unemployment inputs, pending source verification |
+| `faov_established_integral_base`, `faov_rates`, `faov_cap_status` | Separate housing computation, pending current primary law |
+| `lopcymat_assigned_degree`, `implementation_evidence`, `assessed_base` | Mathematical statutory scenario is not evidence of an actually due charge |
+| `opening + employer_expense + worker_withheld + assessed_charges - allocated_payments - valid_credits = closing` | Reconcile liability; refunds/reclassifications require their own entries |
 
-### Example 1 — IVSS monthly contribution, single minimum-wage worker
+Where onboarding documents are incomplete, assemble employer registration, official latest account/payment orders, recent payroll and pay-component evidence, worker register, annual-bonus records, prior return/assessment, bank statements and posted allocations. Produce a provisional exception report. Do not divide the latest IVSS debit by a presumed combined percentage to “infer salary”, choose the lowest risk class, or classify every unrecognized statutory payment as employer expense. A combined payment includes workers' withheld liabilities as well as employer costs. Posting the full payment again as employer expense double counts the worker share and may duplicate an expense already accrued.
 
-**Input line:**
-`05.02.2025 ; IVSS SEGURO SOCIAL OBLIGATORIO ; DEBITO ; ENERO 2025 ; -16,90 ; VES`
+## Deadlines and filing
 
-**Reasoning:**
-Matches "IVSS / SEGURO SOCIAL OBLIGATORIO" (pattern 3.1). Salary base = VES 130 (minimum wage, below the 5-minimum-salary IVSS ceiling of VES 650). Employer 9% (lowest risk class default) + employee 4% = 13% of VES 130 = **VES 16.90**. Excludes from IVA.
+The INCES employer quarter and worker-bonus clocks differ. Determine the actual pay date and applicable contribution before choosing a deadline. Art. 49 says five days following the quarter's expiry; art. 50 says ten days following annual-remuneration payment. The registration paragraph explicitly says 45 **business** days following constitution. For national tax duties, COT arts. 1/10 supply the general counting rule: day periods are business days unless the law says continuous days; a deadline falling on an administrative nonbusiness day extends to the next business day. The business calendar is that of the tax administration, including the stated closed-office and collection-bank conditions. Keep the actual official calendar and any specific contrary provision; the contribution paragraphs do not by themselves establish a calendar-date deadline. [INCES arts. 49-51](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52); [COT arts. 1, 10](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=3).
 
-Check: 130 × 0.09 = 11.70 (employer); 130 × 0.04 = 5.20 (employee); 11.70 + 5.20 = **16.90**. ✓
+An INCES solvency certificate states compliance as of its issue date with training/self-formation, apprentices and tax duties; the law makes it indispensable for state contracting and labor solvency. Verify actual certificate status and underlying duties rather than treating the latest contribution receipt as the certificate. The current RNCP portal and procedural forms, account numbers, actual holiday calendar and electronic correction workflow are not confirmed by reading the statute alone. [INCES art. 52](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=54).
 
-**Classification:** EXCLUDE — IVSS contribution (employer VES 11.70 + employee VES 5.20).
+IVSS law arts. 61-62 require employer/worker shares to be remitted on the law/regulation's timetable. Current IVSS assessment frequency, weekly conversion convention, monthly remittance date and later instructions remain not yet confirmed. The current IVSS institutional employer page states a registration instruction, but its wording is not a substitute for the actual regulation; where it differs from the opened statute's employer-registration infringement, retain the statute and refer the procedural point for primary confirmation. Do not infer an extension, grace period or solvency from a successful bank transfer. [IVSS law arts. 61-62, 85-90](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=9); [IVSS employer information](https://www.ivss.gov.ve/empleador/informacion-general).
 
-### Example 2 — FAOV housing contribution (integral salary, no cap)
+LOPCYMAT art. 6 sets enrollment and hire/leaving notifications within three business days in its Treasury framework. Art. 98 sets the monthly completed-period/first-five-business-day provision. Transitional fifth says employers continue IVSS contributions on the existing laws' conditions until the Treasury is created; final second defers specified cash benefits until its operation. Neither clause proves the Treasury's actual current operation or this employer's current assessed contribution. Confirm operative implementation and authority before paying a second occupational charge or asserting no payment exists. [LOPCYMAT art. 6, art. 98, transitional fifth, final second](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=3).
 
-**Input line:**
-`07.02.2025 ; BANAVIH FAOV AHORRO HABITACIONAL ; DEBITO ; ENERO 2025 ; -3,90 ; VES`
+The RPE/FAOV return and payment timetables, current payroll-withholding remittance calendar, special-taxpayer advance calendar, pensions-protection contribution and current portal/forms are separate open items. A SENIAT special-taxpayer designation does not, without the governing primary rule, prove an uplift or a different calendar for every institution. Preserve the designation and actual relevant notices in the case workpaper.
 
-**Reasoning:**
-Matches "BANAVIH / FAOV" (pattern 3.2). FAOV uses the **integral salary** with **no ceiling**: employer 2% + employee 1% = 3%. On a VES 130 integral salary (no other integral components present), 3% × 130 = **VES 3.90**. If integral-salary components (commissions, bonuses classified as salary) existed, the base would be higher.
+## Penalties and interest
 
-Check: 130 × 0.02 = 2.60 (employer); 130 × 0.01 = 1.30 (employee); 2.60 + 1.30 = **3.90**. ✓
+### IVSS has specific statutory rules
 
-**Classification:** EXCLUDE — FAOV housing contribution (employer VES 2.60 + employee VES 1.30).
+IVSS law art. 62 requires arrears interest without prior demand, based on the BCV active average rate valid when the breach occurs; it still accrues where effects of the act are suspended administratively or judicially. Do not substitute an old fixed monthly percentage or today's exchange rate. Separate the unpaid contribution, governing interest periods/rates and any assessed fine. Current BCV figures, detailed accrual method and actual collection order are not yet confirmed here. [IVSS law art. 62](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=9).
 
-### Example 3 — Paro Forzoso (unemployment)
+Arts. 85-87 classify infringements and specify fines: minor 25 U.T., serious 50 U.T. and very serious 100 U.T. The statute provides a separate infringement for each affected insured/worker except documentary duties that can be treated as collective; art. 85 states valuation by the UT at the offense and defines recidivism within three years following the firm resolution/judgment for the same classification. For recidivism, art. 87 adds 50% to minor/serious fines and gives three-day closure for very serious cases. Preserve actual offense, affected-person count, dates and procedure; no current currency fine is supplied without the legally applicable official unit/valuation analysis. [IVSS law arts. 85-87](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=10).
 
-**Input line:**
-`07.02.2025 ; PARO FORZOSO REGIMEN PRESTACIONAL EMPLEO ; DEBITO ; ENERO 2025 ; -3,25 ; VES`
+Art. 86 distinguishes employer registration before activity, worker enrollment within three business days of entry, employment/salary information, personnel records, excess retentions, obstruction and altered documents. Do not label every mismatch the same offense. Art. 88 separately treats failure to remit contributions: five U.T. per week per affected worker, capped at 52 weeks, without prejudice to arts. 86-87; recidivism carries five-day closure. Art. 89 says sanctions do not discharge contribution/other arrears and interest. [IVSS law arts. 86-89](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=11).
 
-**Reasoning:**
-Matches "PARO FORZOSO / RPE" (pattern 3.2). Salary base VES 130 (below the 10-minimum-salary ceiling of VES 1,300). Employer 2% + employee 0.5% = 2.5% × 130 = **VES 3.25**.
+Art. 90 refers collection/sanction procedure to the COT only insofar as it does not contradict the social-insurance law/regulation and supplies special procedure. Therefore the old blanket “IVSS arrears receive all COT formal fines plus a special-taxpayer increase” is not a completed legal conclusion. Identify the specific applicable offense and controlling special rule, not only the entity's tax designation. Current judicial application, subsequent amendments and actual authority assessment need confirmation where not established by the opened texts. [IVSS law arts. 85-90](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=10).
 
-Check: 130 × 0.02 = 2.60 (employer); 130 × 0.005 = 0.65 (employee); 2.60 + 0.65 = **3.25**. ✓
+### INCES and LOPCYMAT must be analyzed separately
 
-**Classification:** EXCLUDE — Paro Forzoso (employer VES 2.60 + employee VES 0.65).
+INCES art. 55 subjects breach of its tax duties to the COT; art. 56 addresses liquidation/payment under its law and COT. Arts. 53-54 concern training/apprentice duties and their separate sanctions/enforcement. Do not use an apprentice sanction as a flat contribution penalty, or net a sanction against a worker's wages. The COT's duty, offense, amount, special-taxpayer application and procedural conditions must be established for the actual case. [INCES arts. 53-56](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=56).
 
-### Example 4 — Cestaticket paid (non-salary, NOT a contribution and NOT in the base)
+LOPCYMAT art. 128 provides, within its contribution/affiliation framework, fines up to 100 U.T. per worker for nonaffiliation, late affiliation or inaccurate information according to gravity, without prejudice to other responsibility. It also requires unpaid contributions and interest based on the average active rate of the six principal universal banks, and full reimbursement of the specified benefits/expenses where the employer fails to affiliate or maintain contributions and the covered occupational event occurs. The Treasury applies the stated sanction. Its framework is not proof of current operational assessment, and the current UT/bank inputs remain unconfirmed. [LOPCYMAT art. 128](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=84).
 
-**Input line:**
-`10.02.2025 ; CESTATICKET SOCIALISTA ; DEBITO ; FEBRERO 2025 ; -2.080,00 ; VES`
+### Preserved COT tax-reference boundary
 
-**Reasoning:**
-Matches "CESTATICKET" (pattern 3.4). This is a **non-salary** benefit paid to the worker. It is the dominant part of real take-home pay (here ~VES 2,080, far above the VES 130 salary), but it is **EXCLUDED from every contribution base**. Do NOT add it to the salary base when computing IVSS/Paro Forzoso/FAOV. It is also not itself a statutory contribution debit.
+The old reference to income-tax underassessment, nonfiling, late/incomplete filing and special-taxpayer formal sanctions belongs to the relevant tax duty, not automatically every social-security arrear. In the opened 2020 COT, art. 103 distinguishes failure to file from late/incomplete returns and includes the stated closure/fine consequences; art. 108's 200% increase concerns the listed formal offenses by designated special taxpayers, not an invented universal addition to every principal/interest charge. Art. 112's omitted-tax penalty is subject to its actual conditions; arts. 110 and 115 distinguish delayed payment and retention/remittance misconduct. Apply them only after determining the offense, person, timing and governing special law. [COT arts. 103, 108, 110, 112, 115](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf).
 
-**Classification:** EXCLUDE — non-salary benefit. NOT in any contribution base.
+For the retained tax-duty comparison, the following are the opened COT's actual figures. Their presence does not establish that a particular IVSS, INCES or other contribution assessment falls under that offense. In particular, special-taxpayer status does not independently turn every interest, substantive fine or institution-specific sanction into an art. 108 formal penalty.
 
-### Example 5 — SENIAT ISLR payment (tax, NOT a social contribution)
+| Tax-duty offense or condition | Statutory amount and boundary | Official source |
+|---|---|---|
+| No declaration or delay exceeding one year, art. 103(1) | 150 times the official highest-value-currency exchange reference; ten continuous days of establishment closure if an establishment exists; statutory branch rule applies | https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=13 (art. 103) |
+| Incomplete declaration or delay no longer than one year, art. 103(3) | 100 times that exchange reference; distinguish from nonfiling beyond one year and other communication offenses | https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=13 (art. 103) |
+| Chapter's formal offenses committed by designated special taxpayer | Applicable monetary sanctions increased by 200%; does not say every substantive/interest charge receives this increase | https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=14 (art. 108) |
+| Illegitimate reduction of tax revenue by action/omission, including improperly enjoyed benefits | 100%-300% of omitted tax; art. 112's valuation and art. 196 exceptions remain applicable; not a flat fine on every bank difference | https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=15 (art. 112) |
 
-**Input line:**
-`28.03.2025 ; SENIAT ISLR DECLARACION ANUAL ; DEBITO ; EJERCICIO 2024 ; -45.000,00 ; VES`
+Where a COT fine is expressed using the highest-value currency published by BCV, art. 91's currency rule is distinct from the IVSS statute's printed U.T. sanctions and from minimum-wage references in contribution caps. Establish the actual law and valuation before converting. A current exchange-rate/UT figure and an administrative fine schedule have not been confirmed here. A spreadsheet should show the governing unit and unresolved conversion rather than substitute one of those three reference systems for another. [COT art. 91](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=11); [IVSS law art. 85](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=10).
 
-**Reasoning:**
-Matches "SENIAT / ISLR" (pattern 3.3). This is an annual income-tax (ISLR) payment, due by **31 March** following the tax year (PwC Tax administration). It is NOT a social-security contribution — do not classify it as IVSS/FAOV/etc.
+## Cross-border points
 
-**Classification:** EXCLUDE — ISLR income tax payment. NOT a social contribution.
+Determine the actual employment relationship and where services are performed before assuming foreign payroll or an offshore payer eliminates domestic coverage. IVSS law art. 2 covers dependent workers in urban/rural service irrespective of salary; LOPCYMAT art. 4 defines its territorial/work-relationship scope. The current treatment of posted workers, foreign employers, remote work, international social-security coordination, bilateral agreements, detached-worker certificates and refunds has not been confirmed here. A tax treaty or residence certificate is not itself a social-security exemption. Do not transplant another country's contribution rate or assume every foreign worker is outside local payroll. [IVSS law art. 2](https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf#page=4); [LOPCYMAT art. 4](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=2).
 
-### Example 6 — Ambiguous IVSS lump sum (possible arrears/penalty)
+Foreign-currency pay needs both documented remuneration and the specific legally applicable conversion rule. No BCV exchange-rate number, bonus dollar equivalent, minimum wage or “economic floor” is supplied here as a current parameter. Keep original currency, actual dates, legally established contribution currency/base and source alongside every conversion. A card settlement or foreign bank transfer label does not establish either salary character or the official conversion date.
 
-**Input line:**
-`15.06.2025 ; IVSS ; DEBITO ; AJUSTE/RECARGO ; -1.250,00 ; VES`
+### Income-tax reference retained from the old Guide
 
-**Reasoning:**
-Matches "IVSS" (pattern 3.1) but the amount is irregular and the reference says "AJUSTE/RECARGO" (adjustment/surcharge). This may include arrears plus COT-indexed penalties (FX-indexed to the BCV highest-value-currency rate; +200% for special taxpayers). Principal cannot be separated from penalty without an IVSS statement.
+Social contributions are separate from ISLR on the worker or employer. LISLR art. 1 provides residents/domiciliaries' worldwide-income rule and nonresidents' territorial rule, with attributable-income treatment for a PE/fixed base. Art. 31's printed employment wording, and the current controlling interpretation of bonuses, need the individual income-tax analysis; do not calculate ISLR on net cash after all payroll deductions merely because it reconciles to the bank. The current individual Guide/review process must resolve the legally taxable employment amount. No generalized bonus exemption follows from this contribution Guide. [LISLR arts. 1, 31](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
 
-**Classification:** EXCLUDE from IVA. Flag for reviewer — request the IVSS breakdown to split contribution principal from penalty.
+For an already established ordinary resident annual taxable enrichment in U.T., art. 50's Tarifa 1 is marginal. The following subtraction amounts are arithmetic derived from those bands, not contribution allowances. This retains the old reference/test topic without supplying an unsupported bolívar UT conversion. [LISLR art. 50](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
 
-## Section 5 -- Tier 1 rules
+| Annual taxable enrichment U.T. | Marginal rate | Derived subtraction U.T. | Official source |
+|---|---|---|---|
+| Through 1,000 | 6% | 0 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50, visual Tarifa 1) |
+| Over 1,000 through 1,500 | 9% | 30 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
+| Over 1,500 through 2,000 | 12% | 75 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
+| Over 2,000 through 2,500 | 16% | 155 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
+| Over 2,500 through 3,000 | 20% | 255 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
+| Over 3,000 through 4,000 | 24% | 375 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
+| Over 4,000 through 6,000 | 29% | 575 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
+| Over 6,000 | 34% | 875 | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 (art. 50) |
 
-These rules apply when payroll data is clear and the salary/non-salary split is available. Apply exactly as written. Source for all rates: PwC Worldwide Tax Summaries — Venezuela (Individual, Other taxes & Tax administration) unless noted.
+Resident taxable income uses the proper net-enrichment computation and the permitted personal-deduction route; art. 58's optional standard is 774 U.T., alternative to art. 57 itemization, and art. 59 personal/family reductions are applied to tax on their conditions. The old 5,000-U.T. **taxable** test gives `5000 × 0.29 - 575 = 875 U.T.`; taxable 1,000 gives `1000 × 0.06 = 60 U.T.` before personal tax reductions. Neither test says that a gross salary of the same amount has that tax. [LISLR arts. 50, 57-60](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
 
-### Rule 1 — Contributions are computed on the SALARY base, NOT total pay
+A nonresident individual's art. 50 general proportional rate is 34% on the applicable statutory net base, subject to special categories and actual treaty rights. Art. 39 supplies a 90% presumed base for the specified noncommercial professional income, without prejudice to its technical-services rule; it is not a 90% base for every worker or foreign payment. The old 100,000-unit fee example therefore computes `100000 × 0.90 × 0.34 = 30600` only with that exact classification established. [LISLR arts. 39, 50](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=12).
 
-- **Rule 1** — The Cestaticket Socialista and Bono contra la Guerra Económica are non-salary and are EXCLUDED from every contribution base. Always strip these out before applying any rate. This is the single most important rule for Venezuela.  _(PwC; the government's explicit non-salary classification)_
+The old company-tax context is also distinct from payroll: arts. 9 and 52's ordinary company Tarifa 2 applies 15% through 2,000 U.T., 22% to the next fraction through 3,000 and 34% above, on the proper net tax base. Art. 52 separately addresses net banking, financial, insurance or reinsurance enrichment obtained by domestically domiciled juridical persons/entities at 40% and arts. 11-12/53 distinguish the specified hydrocarbon regime at 50% from the specified mining royalties/participations at 60%, with detailed scope/exceptions. There is no blanket “all joint ventures pay the oil rate” rule. Use the reviewed corporate-tax Guide and actual legal entity/activity rather than calculating company tax from a statutory payroll debit. [LISLR arts. 9, 11-12, 52-53](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=6).
 
-### Rule 2 — IVSS (Seguro Social Obligatorio)
+Annual filing, estimates, spouses, tax registrations and IVA were present in the old social Guide and remain separate checks. LISLR art. 77's annual natural-person tests use net enrichment above 1,000 U.T. or gross above 1,500 U.T., with the stated exceptions and primary-activity rule. Art. 80 authorizes the Executive to require estimated declarations for specified taxpayers exceeding the prior-year 1,500-U.T. **net** threshold and delegates the relevant regulatory bases, conditions and procedures; it does not supply a confirmed advance percentage or every administrative schedule. Art. 54's marital-community rule has its actual exceptions; do not require both property separation and a particular income category where the statute does not. Current annual calendar, extensions, instalments, special advances, RIF/forms, withholding and IVA rate/exemption details are not yet confirmed by this Guide. [LISLR arts. 54, 77-81](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-- **Rule 2** — Employer 9% / 10% / 11% by occupational-risk class; employee 4%. Base capped at 5 minimum salaries (urban workers) = 5 × VES 130 = VES 650/month.  _(PwC; CloudPay)_
+## Two worked examples that recompute
 
-### Rule 3 — Paro Forzoso (Régimen Prestacional de Empleo)
+### Example 1: complete ordinary INCES employer quarter and annual worker contribution
 
-- **Rule 3** — Employer 2%; employee 0.5%. Base capped at 10 minimum salaries (urban workers) = 10 × VES 130 = VES 1,300/month.  _(PwC)_
+Assume a private employer continuously employing six workers satisfies art. 49, has no approved training deduction, and paid legally established normal monthly salaries totaling 30,000, 32,000 and 34,000 currency units in the three months of the quarter. The employer contribution is `96000 × 0.02 = 1920`. This is employer expense/payable, not an additional worker deduction. Separately, the same entity pays 24,000 of legally covered annual utilidades; art. 50 worker retentions total `24000 × 0.005 = 120`, giving net utilidades paid of 23,880 if no other deductions. The employer remits both liabilities on their **different** clocks; a coincident payment date does not combine the periods. [INCES arts. 49-50](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52).
 
-### Rule 4 — FAOV (housing) uses integral salary capped at 10 minimum salaries
-
-- **Rule 4** — Employer 2%; employee 1%. Base = total monthly integral salary (commissions, gratifications, profit sharing, bonuses, vacation bonus, shift premiums) — capped at 10 minimum salaries. This is usually the largest contribution line for anyone earning above the salary minimum.  _(PwC)_
-
-### Rule 5 — INCES (training levy)
-
-- **Rule 5** — Employer 2% on total salaries paid; employee 0.5% applied to the annual utilidades (profit-share) bonus — no cap. The employee component is NOT a monthly salary deduction; it attaches to the utilidades payment.  _(PwC)_
-
-### Rule 6 — LOPCYMAT (workplace prevention) is employer-only
-
-- **Rule 6** — Employer 0.75%–10% depending on assigned occupational-risk rate; no employee contribution. Do not default the rate — see R-VE-SC-2.  _(PwC)_
-
-### Rule 7 — Ceilings are expressed in minimum salaries
-
-- **Rule 7** — IVSS = 5 minimum salaries; Paro Forzoso = 10 minimum salaries. With the frozen VES 130 minimum wage, recompute the absolute cap as (multiple × VES 130) whenever the minimum wage figure is current. If the minimum wage changes, the absolute ceilings move with it.
-
-### Rule 8 — ISLR (personal income tax) is separate from contributions
-
-- **Rule 8** — ISLR is progressive 6%–34% on a Tax-Unit (TU) basis for residents (worldwide income); non-residents pay flat 34% on 90% of gross for non-business professional income. The UT value for 2025 is VES 43 (SNAT/2025/000048, Gazette 2 June 2025). See Section 10 for the bracket table.  _(PwC, Taxes on personal income)_
-
-### Rule 9 — ISLR filing deadline is 31 March and cannot be extended
-
-- **Rule 9** — The annual ISLR return is due 31 March following the calendar tax year; late filing triggers penalties plus interest. Major/"special" taxpayers file on SENIAT-set dates.  _(PwC, Tax administration)_
-
-### Rule 10 — Estimated-tax return threshold
-
-- **Rule 10** — An estimated-tax (declaración estimada) return is required if prior-year income from commercial, credit, independent-professional, leasing, or partnership activities exceeded 1,500 TU. Estimated tax = 75% of the tax computed on 80% of estimated income; payable as a single payment or six equal instalments. For 2025, 1,500 TU = 1,500 × VES 43 = VES 64,500.  _(PwC, Tax administration)_
-
-## Section 6 -- Tier 2 catalogue
-
-When data is ambiguous or client circumstances are unclear, flag these situations for reviewer confirmation.
-
-### T2-1 — Occupational-risk class for IVSS (9% vs 10% vs 11%)
-
-**Trigger:** employer IVSS rate must be applied but the risk class is not documented.
-**Issue:** the employer rate is 9%, 10%, or 11% depending on the IVSS-assigned occupational-risk class.
-**Action:** flag for reviewer. Use 9% only as a provisional estimate and label it as such.
-
-### T2-2 — LOPCYMAT risk rate (0.75%–10%)
-
-**Trigger:** LOPCYMAT contribution must be computed.
-**Issue:** the rate spans a 13× range and is assigned per the INPSASEL classification; the cap interpretation is disputed.
-**Action:** flag for reviewer. Do not estimate without the assigned rate.
-
-### T2-3 — Integral-salary composition for FAOV
-
-**Trigger:** worker has commissions, bonuses, or shift premiums that may be salary or non-salary.
-**Issue:** FAOV uses the integral salary (no cap), so misclassifying a component changes the base directly. Cestaticket and Bono de Guerra are non-salary; other items require judgement.
-**Action:** flag for reviewer to confirm which components are integral salary.
-
-### T2-4 — IVSS Feb-2025 administrative change
-
-**Trigger:** client relies on a 2025 IVSS rate.
-**Issue:** secondary EOR sources cite a Feb-2025 IVSS administrative change; PwC still shows 4%/9–11%. [RESEARCH GAP]
-**Action:** flag for reviewer to confirm against ivss.gob.ve before filing.
-
-### T2-5 — Special-taxpayer (contribuyente especial) status
-
-**Trigger:** client is or may be a SENIAT-designated special taxpayer.
-**Issue:** special taxpayers file ISLR on SENIAT-set dates, may make bi-weekly advance payments, and face penalties increased by 200% (COT Art. 108).
-**Action:** flag for reviewer to confirm special-taxpayer designation and the applicable calendar.
-
-### T2-6 — Contribution arrears and FX-indexed penalties
-
-**Trigger:** unpaid contributions or COT penalties.
-**Issue:** COT-2020 penalties are FX-indexed to the BCV highest-value-currency rate, not UT-indexed; quantification requires authority statements.
-**Action:** do not estimate; escalate to a licensed accountant (see R-VE-SC-4).
-
-## Section 7 -- Excel working paper template
-
-When producing a Venezuelan contribution computation, structure the working paper as follows:
-
-```
-VENEZUELA SOCIAL CONTRIBUTIONS -- WORKING PAPER
-Employer / Client: [name]
-Tax Year: [year]            Month: [____]
-Prepared: [date]
-
-INPUT DATA
-  Salary base (salario, VES):          [____]
-  Integral salary (FAOV base, VES):    [____]
-  Non-salary excluded items:
-     Cestaticket (VES):                [____]  (EXCLUDED)
-     Bono de Guerra (VES):             [____]  (EXCLUDED)
-  Occupational-risk class (IVSS):      [9% / 10% / 11%]
-  LOPCYMAT assigned rate:              [0.75%–10% — confirm]
-  Annual utilidades (VES):             [____]  (INCES employee base)
-  Minimum wage in force (VES):         130  (since 15 Mar 2022)
-
-CEILINGS (recompute from minimum wage)
-  IVSS cap (5 x min wage, VES):        650
-  Paro Forzoso cap (10 x min wage):    1,300
-  FAOV cap:                            10 minimum salaries (10 × VES 130 = VES 1,300)
-
-CONTRIBUTIONS                           Employer        Employee
-  IVSS    (9–11% / 4%):                 [____]          [____]
-  Paro Forzoso (2% / 0.5%):            [____]          [____]
-  FAOV    (2% / 1%, integral):         [____]          [____]
-  INCES   (2% salaries / 0.5% util.):  [____]          [____]
-  LOPCYMAT (0.75–10% / nil):           [____]            nil
-  ------------------------------------------------------------
-  TOTAL:                               [____]          [____]
-
-ISLR (if computing income tax)
-  Taxable income (TU = VES / 43):      [____] TU
-  Bracket rate:                        [____]%
-  Subtraction (TU):                    [____]
-  Tax (TU):                            [____]
-  Tax (VES = TU x 43):                 [____]
-
-REVIEWER FLAGS
-  [List any Tier 2 / RESEARCH GAP flags here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+```oa-check
+name: Eligible INCES employer quarter and separate annual worker contribution
+inputs:
+  month_one_normal_paid: 30000
+  month_two_normal_paid: 32000
+  month_three_normal_paid: 34000
+  annual_utilidades_paid: 24000
+steps:
+  - quarter_normal_paid: month_one_normal_paid + month_two_normal_paid + month_three_normal_paid
+  - employer_contribution: quarter_normal_paid * 0.02
+  - worker_retained: annual_utilidades_paid * 0.005
+  - utilidades_cash_after_inces: annual_utilidades_paid - worker_retained
+  - combined_inces_payables: employer_contribution + worker_retained
+expected:
+  quarter_normal_paid: 96000
+  employer_contribution: 1920
+  worker_retained: 120
+  utilidades_cash_after_inces: 23880
+  combined_inces_payables: 2040
 ```
 
-## Section 8 -- Bank statement reading guide
+### Example 2: no salary cap imported into INCES, and bank allocation is reconciled
 
-### How statutory debits appear on Venezuelan bank statements
+Assume the same eligible employer paid normal monthly salaries totaling 200,000 in each of three months, with no approved deduction. Annual covered year-end bonuses are separately 40,000. Employer INCES is `600000 × 0.02 = 12000`; worker retention is `40000 × 0.005 = 200`. An opening INCES liability of 500 and total cash remittances of 12,400 leave 300 payable if the institution credits the whole cash to these liabilities and there are no separately assessed interest/fines. Do not cap INCES using an unconfirmed IVSS/RPE/FAOV minimum-wage multiple; do not book the whole 12,400 as new employer expense. [INCES arts. 49-50](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=52).
 
-**Banco de Venezuela:**
-- Description: "IVSS", "SEGURO SOCIAL OBLIGATORIO", "BANAVIH FAOV", "INCES", "SENIAT"
-- Timing: monthly (contributions); ISLR annually around March
-- Amount: small in VES for salary-base contributions (minimum wage frozen at VES 130)
+```oa-check
+name: INCES separate bases and liability allocation
+inputs:
+  monthly_normal_paid: 200000
+  months: 3
+  annual_covered_bonus: 40000
+  opening_liability: 500
+  allocated_cash: 12400
+steps:
+  - quarter_normal_paid: monthly_normal_paid * months
+  - employer_expense: quarter_normal_paid * 0.02
+  - worker_retention: annual_covered_bonus * 0.005
+  - closing_liability: opening_liability + employer_expense + worker_retention - allocated_cash
+expected:
+  quarter_normal_paid: 600000
+  employer_expense: 12000
+  worker_retention: 200
+  closing_liability: 300
+```
 
-**Banesco:**
-- Description: "IVSS SEGURO SOCIAL", "FAOV AHORRO HABITACIONAL", "PARO FORZOSO", "RETENCION ISLR"
-- Timing: same monthly cycle
+### Preserved legacy bank examples with the source limit made explicit
 
-**Mercantil / BBVA Provincial / Banco Mercantil:**
-- Description: "INSTITUTO VENEZOLANO DE LOS SEGUROS SOCIALES", "BANAVIH", "INCES", "SENIAT"
-- Timing: same monthly cycle
+1. **IVSS payment for a worker paid 130.** The amount 130 is only the old hypothetical pay input, not a confirmed current minimum. Match salary classification, period, official risk/rate/base/cap and order first. Because those current general-regulation parameters remain unconfirmed, no old combined-percentage answer is certified here. Preserve the calculation as `confirmed contribution base for the assessed period × confirmed employer/worker shares`, recording each share separately and the current source.
+2. **FAOV for the same hypothetical pay input.** Identify housing contribution versus loan/fine; establish legally integral base and current rate/cap status before computing. The old example's uncapped answer and rule's capped answer cannot both establish current law. Leave the liability unresolved until its primary parameters are available; do not let one “successful” arithmetic result choose the law.
+3. **RPE/Paro Forzoso for the same pay input.** Reconcile separate unemployment return, actual worker/employer shares, ceiling, period and any combined IVSS allocation. The old split and derived answer remain unconfirmed, not a default.
+4. **Cestaticket payment of 2,080.** Code as a benefit-payment candidate, not a remittance merely because it is payroll-related. Do not automatically remove it from every contribution base; complete the component/rule matrix first. The same caution applies to Guerra Económica and another bonus with a different legal basis.
+5. **SENIAT payment of 45,000.** If return/payment order identifies annual ISLR, it is income tax, not IVSS/FAOV/RPE/INCES. If a different SENIAT-administered duty is actually identified, use that duty. The recipient's name alone cannot exclude every pension-related contribution.
+6. **Irregular IVSS debit of 1,250.** Do not reverse-engineer wages from a presumed percentage or apply an automatic penalty multiplier. Request/match the order/account allocation: workers, periods, principal, interest, fine and any reversal. Preserve the cash amount and unresolved classification; a large payment is not proof of arrears or an illegal deduction.
 
-**Key identification tips:**
-1. Statutory contributions are always outgoing (DEBITO), never credits.
-2. Salary-base contributions (IVSS, Paro Forzoso) are tiny in VES because the salary minimum is frozen at VES 130 — do not assume a small debit is an error.
-3. FAOV (integral salary, capped at 10 minimum salaries) is usually the largest contribution line for higher earners.
-4. **Cestaticket** and **Bono de Guerra** debits are large non-salary payments — they are NOT contributions and NOT in the contribution base.
-5. Do not confuse SENIAT (ISLR/IVA tax) debits with IVSS/FAOV/INCES (social contribution) debits.
-6. Irregular IVSS/SENIAT lump sums with "RECARGO", "AJUSTE", or "MULTA" may include FX-indexed penalties — flag for reviewer.
+The prior test for a pay input of 2,000 with an assumed IVSS cap is preserved as an input-validation case: the actual current reference wage, cap multiplier, rate, period and legal salary base must all be sourced before computing. The old estimate using income of 70,000 divided by an unconfirmed currency value of the U.T. is replaced by `net prior-year enrichment ÷ confirmed applicable U.T.` and the actual art. 80 trigger/implementing instruction, not a guessed “required” verdict. [LISLR art. 80](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=17).
 
-## Section 9 -- Onboarding fallback
+The retained small annual-bonus INCES test assumes an entity employing at least five and a covered utilidades payment of 4,000: worker retention is 20. The tax-reference tests use already established taxable enrichment, not gross salary; they do not apply personal reductions or deductions a second time. [INCES art. 50](https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf#page=53); [LISLR arts. 39, 50](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=12).
 
-If the client provides only a bank statement and no other information:
+```oa-check
+name: Retained annual utilidades and separate ISLR reference arithmetic
+inputs:
+  covered_utilidades: 4000
+  resident_taxable_ut: 5000
+  bottom_band_taxable_ut: 1000
+  classified_nonresident_professional_gross: 100000
+steps:
+  - inces_worker_retention: covered_utilidades * 0.005
+  - resident_tariff_ut: resident_taxable_ut * 0.29 - 575
+  - bottom_band_tariff_ut: bottom_band_taxable_ut * 0.06
+  - nonresident_presumed_base: classified_nonresident_professional_gross * 0.90
+  - nonresident_professional_tax: nonresident_presumed_base * 0.34
+expected:
+  inces_worker_retention: 20
+  resident_tariff_ut: 875
+  bottom_band_tariff_ut: 60
+  nonresident_presumed_base: 90000
+  nonresident_professional_tax: 30600
+```
 
-1. **Scan for statutory debits** — identify all outgoing payments matching Section 3 patterns (IVSS, FAOV/BANAVIH, Paro Forzoso, INCES, LOPCYMAT, SENIAT).
-2. **Separate contributions from tax** — IVSS/FAOV/INCES/Paro Forzoso/LOPCYMAT are social contributions; SENIAT/ISLR/IVA are taxes.
-3. **Identify the salary base** — look for NOMINA/SUELDO/SALARIO outgoing lines. Treat CESTATICKET and BONO DE GUERRA as non-salary (excluded from the base).
-4. **Reverse-check IVSS:** if you can see the salary base, employer+employee IVSS ≈ 13% (9% + 4%) of the capped salary base. A monthly IVSS debit far above 13% of (5 × minimum wage) suggests arrears or a non-default risk class.
-5. **Flag for reviewer:** "Contribution classification derived from bank statement amounts only. Salary vs. non-salary split, occupational-risk class, LOPCYMAT rate, and special-taxpayer status have not been independently verified. Reviewer must confirm before filing."
+### Statutory occupational-risk formula: a conditional scenario
 
-## Section 10 -- Reference material
+Assume an actual operative assessment has already legally established the LOPCYMAT art. 95 formula, a degree of 21 and total relevant salaries of 100,000. Pure multiplication gives `100000 × 21 × 5.375 ÷ 10000 = 1128.75`. This is a conditional statutory arithmetic example, not proof of Treasury implementation, the correct class, a separate currently due charge or the proper base for a real employer. Do not select degree 21 automatically merely because it is class I's average. [LOPCYMAT arts. 94-97](https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf#page=65).
 
-### ISLR personal income tax brackets — residents (2025)
+```oa-check
+name: LOPCYMAT conditional assessed-degree statutory formula
+inputs:
+  legally_assessed_salary_total: 100000
+  actual_assigned_degree: 21
+steps:
+  - statutory_premium: legally_assessed_salary_total * actual_assigned_degree * 5.375 / 10000
+expected:
+  statutory_premium: 1128.75
+```
 
-**ISLR personal income tax brackets — residents (2025)**  _(PwC — Venezuela, Individual, Taxes on personal income)_
+## Ask the client first
 
-| Taxable income (TU) | Rate | Subtraction (TU) |
-| --- | --- | --- |
-| 0 – 1,000 | 6% | 0 |
-| 1,000 – 1,500 | 9% | 30 |
-| 1,500 – 2,000 | 12% | 75 |
-| 2,000 – 2,500 | 16% | 155 |
-| 2,500 – 3,000 | 20% | 255 |
-| 3,000 – 4,000 | 24% | 375 |
-| 4,000 – 6,000 | 29% | 575 |
-| Over 6,000 | 34% | 875 |
+Read the existing payroll/case record before asking for missing information. Obtain only what is absent: employer/RIF/registration and sector; principal activity and actual risk assessment; worker list, employment relationships, hires/leavers and headcount by relevant period; normal and variable salary components; annual utilidades/aguinaldo/bonus payments; food/travel/other benefit legal documents; all institution payment orders, returns, statements, assessed rates/bases/caps, principal/interest/fine splits and credited periods; actual bank statements and payment references; any training deduction approval; relevant special-taxpayer notice; foreign service/work facts and claimed agreement certificate. A payroll net-cash total cannot replace these inputs.
 
-- **Non-residents ISLR rate** — flat 34% on 90% of gross for non-business professional income  _(PwC)_
+Ask separately for actual tax returns and withholding certificates only when reconciling the retained ISLR context. Do not request personal/family residence facts merely to classify an unambiguous employer INCES payment; those facts matter when individual income tax or cross-border coverage is actually being computed. Keep confidentiality and the case's existing records in mind when collecting worker information.
 
-### Corporate income tax (context)
+### When to refuse or refer
 
-**Corporate income tax (context)**  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
+Stop the affected numerical conclusion when a current rate/cap/base/period is unconfirmed, risk class is missing, pay classification is contested, staffing changes require an unconfirmed headcount rule, the institution's allocation disagrees with the bank, foreign coverage is claimed without primary support, or a sanction/arrears assessment cannot be mapped to the actual law. Continue the independent bookkeeping/reconciliation work that does not depend on that missing fact. Say which amount is unresolved and why; do not describe the whole payroll as compliant or solvent.
 
-| Bracket | Rate |
-| --- | --- |
-| 0–2,000 TU | 15% |
-| 2,000–3,000 TU | 22% |
-| over 3,000 TU | 34% |
+**Prohibitions retained:** no foreign-jurisdiction contribution defaults; no blanket total-pay or nonsalary-bonus base; no “lowest risk is conservative” assumption; no reverse calculation from a contribution debit to legally established salary; no automatic FAOV cap/no-cap; no tax-unit/minimum-wage/FX substitution; no double counting worker deductions as employer expense; no bank-label-only final classification; no presumed current nominal minimum or dollar “economic floor”; no automatic use of all COT tax penalties for IVSS; no certificate of solvency inferred from payment. Provisional coding must remain distinguishable from a completed legal calculation.
 
-### Filing & registration thresholds
+## Sources
 
-**Filing & registration thresholds table**
+Primary texts below were actually opened/read on 2026-11-11. The official INCES law book is linked from its current institutional laws page. CEBM's current regulation index links the **July** path of the IVSS Gazette, not the stale August search path. Its 14-page file contains the consolidated 2012 law and the amendment of regulation arts. 7-8, but **not** the complete current general regulation. The INCRET PDF contains LOPCYMAT; its enacted framework and transitional wording do not prove current implementing events.
 
-| Item | Value | Source |
-| --- | --- | --- |
-| Annual ISLR return deadline | 31 March (no extension) | PwC, Tax administration |
-| Estimated-tax return threshold | prior-year income > 1,500 TU (= VES 64,500 at UT 43) | PwC, Tax administration |
-| Estimated tax formula | 75% of tax on 80% of prior-year net income; lump or 6 instalments (special taxpayers: 1% of gross biweekly sales per fortnight) | PwC, Tax administration |
-| Individual ISLR form (2025) | DPN-99025 (electronic form, also historically called "Forma 25" among accountants; as an electronic form it is not commonly referred to by a form name) | PwC (does not name 2025 code) |
-| Spouses | file jointly as one taxpayer; separate only with written property-separation agreement + salary/fees only | PwC, Tax administration |
+| Source | Act/articles and material actually read | Exact native-language anchor | Read on | Status/limit |
+|---|---|---|---|---|
+| https://inces.gob.ve/documents/24/Ley_Inces_webm.pdf | Decree 1.414, INCES law arts. 49-61 | “el dos por ciento del salario normal mensual pagado”; “dentro de los diez días siguientes al pago” | 2026-11-11 | Official institutional law book; arts. 49/50 eligibility and distinct bases retained |
+| https://www.cebm.gob.ve/wp-content/uploads/2025/07/LEY-SEGURO-SOCIAL.pdf | Gaceta 39.912, 30 Apr 2012; IVSS law arts. 1-3, 6, 58-67, 78, 85-90; regulation reform arts. 7-8 | “con base en la tasa activa promedio establecida por el Banco Central de Venezuela”; “cinco Unidades tributarias (5 U.T) por semana” | 2026-11-11 | Official Gazette facsimile; visual readings where OCR is noisy; general regulation absent |
+| https://www.incret.gob.ve/public/documentos/LEY_ORGANICA_DE_PREVENCION_CONDICIONES_Y_MEDIO_AMBIENTE_DE_TRABAJO.pdf | LOPCYMAT arts. 4, 6-7, 94-99, 128; transitional fifth; final second | “estarán a cargo exclusivo del empleador o empleadora”; “Hasta tanto sea creada la Tesorería de Seguridad Social” | 2026-11-11 | Statutory framework; current implementing/assessment state not established |
+| https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf | Gaceta 6.210 Extraordinario, consolidated LISLR, arts. 1, 9, 11-12, 31, 39, 50, 52-54, 57-60, 77-81 | “Por la fracción comprendida entre 4.000,00 y 6.000,00 29,00%”; “noventa por ciento (90%) de los ingresos brutos” | 2026-11-11 | Retained tax-reference topics; first Tarifa 1 rates visually read; no current UT conversion |
+| https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf | Gaceta 6.507 Extraordinario; actual PDF is COT 2020; arts. 1, 10, 91, 103, 108, 110, 112, 115 | “serán aumentadas en un doscientos por ciento (200%)”; apply only its listed formal offenses | 2026-11-11 | Filename differs from actual law; COT is not a universal replacement for IVSS special provisions |
+| https://www.ivss.gov.ve/marco-normativo | Current official law index, links to general regulation and RPE law | “Reglamento General de la Ley del Seguro Social” | 2026-11-11 | Index opened; linked law files returned 404, so their figures unconfirmed |
+| https://www.ivss.gov.ve/empleador/informacion-general | Current employer information | “dentro de los tres días hábiles” | 2026-11-11 | Administrative page read; statute governs conflicting registration wording |
+| https://web.archive.org/web/20261027165300/https://banavih.gob.ve/ | Archived official BANAVIH systems landing page, capture 2026-10-27 | “Seleccione la plataforma a la que desea ingresar” | 2026-11-11 | Archived, current-year capture; contains systems access only, not contribution parameters |
 
-### Penalties (Código Orgánico Tributario / COT, 2020 reform)
+### Not yet confirmed
 
-**Penalties table**  _(Grant Thornton Venezuela penalty schedule; Justia COT)_
+- Current IVSS general-regulation employer/worker rate splits, risk mapping, salary cap/reference wage, week-count/conversion and payment periods, any February-2025 administrative change, continuation/independent-worker current parameters and employer-specific assessment. The law's initial rates are not substituted for those missing parameters.
+- Current RPE/unemployment contribution rate split, base, ceiling, covered-person detail, accrual period and return/remittance instructions. The live official law download failed; an older archived text does not satisfy this Guide's current-year archive condition.
+- Current FAOV housing law/rates, integral-pay definition, cap/no-cap, effective amendments and filing/payment procedure. The conflicting legacy assertions remain unresolved; the opened current-year archived landing page supplies no rate or cap.
+- Pensions-protection contribution's current rate, legal base (including nonsalary payments and any minimum integral income), exemptions, effective year, declaration/payment calendar and interaction with other contributions. No absent figure is filled from a secondary summary.
+- Current statutory minimum wage, food benefit, Guerra Económica, combined “economic floor”, current tax-unit currency value, BCV rates and precise FX conversion rules for each contribution. All associated nominal bolívar ceilings and the old derived economic-floor table are excluded from confirmed parameters.
+- LOPCYMAT implementing risk resolution/regulation, actual Treasury creation/operation and employer assessment, applicable current salary-base interpretation, current occupational-safety interest inputs and administrative sanctions practice. The statutory range/table/formula is conditional on those operative facts.
+- Current INCES administrative staffing-count method, actual holiday calendar and any specific operative procedural departure, RNCP and payment/correction workflow, approved training-deduction percentage/regulation and an actual Board approval. Neither a failed search nor a missing approval is treated as a statutory exemption.
+- Current individual employment/bonus income-tax interpretation, annual/estimated/special advance and withholding calendars, instalments, RIF/forms/portals, specific IVA rate/exemption and actual international agreements. The preserved statutory tax references do not certify those administrative questions.
+- Exact Banco de Venezuela, Banesco, Mercantil and BBVA Provincial statement layouts, automated description accuracy, institution allocation of an ambiguous payment, actual arrears interest/fine and legal classification of any named bonus in a real case.
 
-| Penalty | Rate / basis |
-| --- | --- |
-| Omitting income / underpaying ISLR | fine 100%–300% of the omitted tax |
-| Failure to file a declaration | 10-day closure of the establishment **plus** fine 150× the BCV highest-value-currency rate |
-| Incomplete declaration or delay up to one year | fine 100× the BCV highest-value-currency rate |
-| Special taxpayers (COT Art. 108) | penalties increased by **200%** |
-| Indexation | pecuniary sanctions indexed to the **BCV official rate of the highest-value foreign currency** (FX-indexed, not UT-indexed) |
+### Talk to a verified accountant
 
-### Worked ISLR bracket check (for the test suite)
-
-For taxable income of 5,000 TU (falls in the 4,000–6,000 band): tax = 5,000 × 29% − 575 = 1,450 − 575 = **875 TU**. In VES at UT 43: 875 × 43 = **VES 37,625**.
-
-### Test suite
-
-**Test 1 — IVSS, minimum-wage worker.** Salary base VES 130, risk class lowest (9%). Employer = 130 × 9% = VES 11.70; employee = 130 × 4% = VES 5.20; total = **VES 16.90**.
-
-**Test 2 — FAOV, integral salary VES 130.** Employer = 130 × 2% = VES 2.60; employee = 130 × 1% = VES 1.30; total = **VES 3.90**.
-
-**Test 3 — Paro Forzoso, salary base VES 130.** Employer = 130 × 2% = VES 2.60; employee = 130 × 0.5% = VES 0.65; total = **VES 3.25**.
-
-**Test 4 — IVSS ceiling.** Salary base = VES 2,000 (above the 5-minimum-salary cap). Capped base = 5 × 130 = VES 650. Employer (9%) = VES 58.50; employee (4%) = VES 26.00; total = **VES 84.50** (NOT computed on the uncapped VES 2,000).
-
-**Test 5 — Cestaticket exclusion.** Worker receives salary VES 130 + Cestaticket VES 2,080. Contribution base = **VES 130 only**; Cestaticket VES 2,080 is excluded. IVSS total (per Test 1) = VES 16.90.
-
-**Test 6 — INCES employee on utilidades.** Annual utilidades VES 4,000. Employee INCES = 4,000 × 0.5% = **VES 20.00** (attaches to the utilidades payment, not the monthly salary).
-
-**Test 7 — ISLR resident, taxable income 5,000 TU (2025).** Tax = 5,000 × 29% − 575 = **875 TU** = 875 × VES 43 = **VES 37,625**.
-
-**Test 8 — ISLR resident, taxable income 1,000 TU.** Falls at the top of the 6% band: 1,000 × 6% − 0 = **60 TU** = 60 × VES 43 = **VES 2,580**.
-
-**Test 9 — Estimated-tax threshold (2025).** Prior-year qualifying income of VES 70,000 = 70,000 / 43 = 1,627.9 TU > 1,500 TU → estimated-tax return **required**.
-
-**Test 10 — Non-resident professional fee.** Gross VES 100,000 non-business professional income: tax = 34% × (90% × 100,000) = 34% × 90,000 = **VES 30,600** withheld.
-
-### Prohibitions
-
-- NEVER apply contribution rates to total pay — strip out Cestaticket and Bono de Guerra (non-salary) first.
-- NEVER assume the minimum wage has changed — it has been frozen at VES 130 since 15 March 2022; confirm before relying on a different figure.
-- NEVER default the LOPCYMAT rate — it spans 0.75%–10%; flag for reviewer.
-- NEVER apply IVSS/Paro Forzoso rates to an uncapped base — the ceilings are 5 and 10 minimum salaries respectively.
-- NEVER use a UT value other than VES 43 for 2025 without an Administrative Ruling reference.
-- NEVER conflate SENIAT (ISLR/IVA tax) debits with IVSS/FAOV/INCES (social contribution) debits.
-- NEVER quantify arrears or COT penalties without authority statements — they are FX-indexed and special-taxpayer penalties rise 200%.
-- NEVER rely on the IVSS Feb-2025 rate-change claim without confirming against ivss.gob.ve [RESEARCH GAP].
-- NEVER cite an exact 2025 ISLR form code as definitive without confirming against seniat.gob.ve [RESEARCH GAP].
-- NEVER present contribution or tax figures as definitive — always label as estimated and direct the client to their IVSS/SENIAT statements.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Use a qualified Venezuelan professional to review the actual payroll classification, assessment and disputed/source-gap items before filing, payment, amendment or reliance. Provide the source-linked workpaper and precise unresolved inputs, rather than asking the professional to reconstruct a bank-label assumption. This Guide is general reference material and is not a legal opinion or a solvency certificate.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `venezuela-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/venezuela-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `venezuela-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/venezuela-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Omolola Fasasi"
 ---
 
 # NG Cit
@@ -21,7 +20,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -55,7 +53,6 @@ metadata:
 | Payment | With return, or in instalments up to filing deadline (FIRS approval) |
 | Bookkeeping retention | 6 years (Section 63 CITA); align with NTA 2025 implementing regulations |
 | Skill version | 1.0 |
-| Validated by | Verified by Omolola Fasasi (MB058950) on 2026-06-21 |
 
 ### 1.1 Rate Table
 

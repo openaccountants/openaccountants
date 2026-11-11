@@ -1,96 +1,91 @@
 ---
 name: chile-references
 jurisdiction: CL
-last_updated: 2026-06-12
-version: 1.0
-description: Primary source references and related open-source projects for this jurisdiction.
+category: orchestrator
+tax_year: 2026
+last_updated: 2026-11-11
+version: 1.1
+type: router
+description: >
+  Chile source-routing catalog for 2026 tax and payroll research. Directs income tax, company tax,
+  VAT/DTE, payroll, independent contributions and corporate declarations to the owning Guides and
+  original SII, pension, labour, health and current LeyChile sources. Retains the legacy project links
+  solely as optional engineering references, with their former topic labels separated from verified law.
+  Trigger on Chile tax sources, SII reference, DTE format, Formulario 29, F22, DJ, AFP source,
+  payroll reference and open-source Chile accounting projects. Contains no duplicated operative tax
+  rates or filing deadlines. Excludes code licensing approval, validation of third-party calculations,
+  unverified project integration and complete specialist DFL-2 or equity-compensation advice.
 tier: 2
+domain: income-tax
 ---
 
-# Chile — Related Open-Source Projects
+# Chile: primary tax sources and optional engineering references, 2026 v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-OpenAccountants is AGPL-3.0. All projects below have compatible licenses.
+**Quick answer.** Use the owning Chile Guide and the actual official original for a tax figure. This catalog helps locate those sources; a third-party application's constants, stars, claimed tax compliance or source links do not independently establish the law. The legacy project identities remain below so engineering research is not lost. Their old tax numbers are not carried into a second operative rate table.
 
-## LibreDTE/libredte-lib-core
+## Ask the client first
 
-- Repository: [LibreDTE/libredte-lib-core](https://github.com/LibreDTE/libredte-lib-core)
-- License: AGPL-3.0
-- Language: PHP
-- Stars: 216
-- Scope: Core PHP library for Chilean electronic invoicing (DTE) via SII. Contains authoritative SII classification codes for document types (`tipos_documento.php`), additional taxes and withholdings (`impuestos_adicionales_retenciones.php`), customs codes, payment methods, and commune data. The tax rate constants include IVA retention rates by product category (ganado 8%, trigo 4%, arroz 10%, etc.), excise taxes on alcohol (licores 31.5%, vinos 20.5%, cervezas 20.5%), beverages (analcohólicas 10%, azucaradas 18%), and full DTE document type mappings (factura afecta 33, boleta 39, nota de crédito 61, exportación 110, etc.).
-- Integration: Same license (AGPL-3.0). SII tax codes, withholding rates, and document type classifications directly incorporated into `chile-iva.md`.
+1. Which income/payment year, return period or dated contribution month is being researched?
+2. Is the job legal research, a tax calculation, a filing or implementation of a technical document format?
+3. Which taxpayer, income category, regime and document/return are involved?
+4. Is there an actual source provision, current official table, project commit or failure to reproduce?
+5. Does the question require specialist DFL-2, equity-compensation, customs, industry withholding or corporate-register treatment?
+6. If code will be reused, which exact version, files and licence govern the proposed use?
 
-## LibreDTE/libredte-app-community
+## The method, step by step
 
-- Repository: [LibreDTE/libredte-app-community](https://github.com/LibreDTE/libredte-app-community)
-- License: AGPL-3.0
-- Language: PHP
-- Stars: 38
-- Scope: Community edition web application for Chilean electronic invoicing. Built on `libredte-lib-core`. Provides a full SII-integrated invoicing workflow including Formulario 29 generation, libro de compras/ventas, and DTE management.
-- Integration: Same license. Reference implementation for SII workflow and validation rules.
+1. **Load the owner first.** Use [cl-tax-overview](cl-tax-overview.md) for intake/routing; [cl-income-tax](cl-income-tax.md) for individual tax and F22; [cl-corporate-income-tax](cl-corporate-income-tax.md) for company profit, distributions and records; [cl-vat-return](cl-vat-return.md) for IVA/F29/DTE; [cl-payroll](cl-payroll.md) for employee pay; [cl-social-contributions](cl-social-contributions.md) for independent contributions. Read each owner's scope and unconfirmed items. A link does not mean every specialist topic is fully covered.
+2. **Choose the right original.** Use the dated SII table or instruction for the applicable period and the law/version in force. For LeyChile use the current JSON route, read metadata and all nested article text, and check transitory commencement. Do not rely on an export that silently supplies a future version or stops halfway through an article. [cl-cross-border](cl-cross-border.md), [cl-transfer-pricing](cl-transfer-pricing.md) and [cl-company-formation](cl-company-formation.md) own those separate workflows.
+3. **Keep legal, technical and operator evidence distinct.** SII technical DTE specifications describe a document format; they do not establish every tax rate in an implementation. SP is the pension regulator; AFC is the unemployment-insurance scheme operator. PREVIRED is an operational payment provider, not a government tax-law source. Use the competent regulator and actual law for the rule, then the current operator workflow for payment evidence.
+4. **Retain a research record.** Record the precise official URL, act/article or table, period/version, short exact original-language words and date read. Check neighboring exceptions and effective dates. A project file can help identify a question, but replace its asserted tax authority with the primary text before calculating.
+5. **Bound the answer.** Return the selected owner/source, the question it actually answers and unresolved specialist facts. Do not describe this catalog as a completed tax calculation, successful filing, code audit or licence clearance. Obtain actual acknowledgements and case-specific professional review through the owning workflow.
 
-## grblasquiz/hacecuentas
+## Optional engineering references retained from the earlier catalog
 
-- Repository: [grblasquiz/hacecuentas](https://github.com/grblasquiz/hacecuentas)
-- License: check
-- Language: TypeScript/JSON
-- Scope: Chilean net salary calculator (Calculadora de Sueldo Líquido Chile 2026). Contains Impuesto Único de Segunda Categoría (IUSC) progressive brackets in UTM (same 0%–40% structure as IGC in UTA), AFP commission rates for all seven AFPs (Uno 0.49%, Modelo 0.58%, PlanVital 1.16%, Habitat 1.27%, Capital 1.44%, Cuprum 1.44%, ProVida 1.45%), Fonasa/Isapre health deduction rules, and Seguro de Cesantía rates. Data sourced from SII and Superintendencia de Pensiones.
-- Integration: Cross-validation source for IUSC brackets and AFP rates incorporated into `cl-income-tax.md`.
+These are repository-author sources for project identity only. They are not tax-law authorities or proof that the software currently implements the listed legacy research topics correctly. No popularity, language, licence-compatibility, reuse permission or integration assertion is made. Open the actual project revision and licence before considering reuse; the former blanket statement that all projects have compatible open-source licences was unsupported and must not be used.
 
-## efeoncepro/greenhouse-eo
+| Repository-author link | Legacy research topics retained and their destination |
+|---|---|
+| [LibreDTE/libredte-lib-core](https://github.com/LibreDTE/libredte-lib-core) | DTE type mappings, additional tax/withholding classifications, customs codes, payment methods and communes: begin with the official SII DTE route and VAT owner. Product-specific IVA withholding (ganado, trigo, arroz), alcohol/beverage excise (liquors, wine, beer, non-alcoholic and sugary beverages) and customs classifications require their current original instruments; a library constant is not confirmation. |
+| [LibreDTE/libredte-app-community](https://github.com/LibreDTE/libredte-app-community) | DTE management, F29 and purchase/sales records: route to SII and the VAT owner. Any dependency on the core library, workflow completeness and actual integration must be checked in the selected project version. |
+| [grblasquiz/hacecuentas](https://github.com/grblasquiz/hacecuentas) | Net salary, IUSC, AFP, health and unemployment deductions: official SII/SP/health routes and payroll owner. The earlier AFP commission constants are not reused as current rates. IUSC monthly and IGC annual unit treatment must be checked in their own tables. |
+| [efeoncepro/greenhouse-eo](https://github.com/efeoncepro/greenhouse-eo) | Payroll audit, pension, unemployment by contract, gratificación and honorarios: official SP/DT/SII sources and owning payroll/contribution Guides. This project must not be assumed open source or compatible merely because its repository is readable. |
+| [rcaurasma/nuam-node-react](https://github.com/rcaurasma/nuam-node-react) | Corporate DJ 1922/1949 factor labels, subject to the actual filer and AT instructions, credit vintages, RAP, ISFUT and distribution classifications: use the actual SII form/instructions for the relevant AT and corporate owner. Detailed special-register treatment remains a source-required specialist question. |
+| [UBIOBIO-OpenSource/remusystem](https://github.com/UBIOBIO-OpenSource/remusystem) | Salary/payroll implementation and IUSC computation: current SII monthly table and payroll owner. No software output is certified by its project name or this link. |
+| [nicsoto/ArriendoFacil](https://github.com/nicsoto/ArriendoFacil) | Rental income, DFL-2 and F22: individual owner for ordinary income; DFL-2 property eligibility, acquisition/ownership restrictions and exemption limits require a full current specialist source check. The earlier simplified property-count assertion is not an operative rule here. |
+| [MilkoYunusic/Stock-Options-RSU](https://github.com/MilkoYunusic/Stock-Options-RSU) | Options/RSU exercise or vesting, IGC, foreign employers and DJ reporting: individual/cross-border owners for their stated portions and a specialist source check for equity awards. The earlier association of DJ 1929 with all employer equity reporting is not confirmed; choose the actual form from SII's instructions. |
 
-- Repository: [efeoncepro/greenhouse-eo](https://github.com/efeoncepro/greenhouse-eo)
-- License: check
-- Language: Markdown
-- Scope: Chilean payroll compliance audit reference. Contains detailed Chile payroll law documentation including IUSC tax table formulas, AFP/pension contribution rules (10% mandatory + commission), Seguro de Cesantía rates by contract type (indefinido: worker 0.6% / employer 2.4%; plazo fijo: worker 0% / employer 3%), gratificación legal calculations, and boleta de honorarios retention rate (15.25% for 2026). Cites SII, Dirección del Trabajo, Superintendencia de Pensiones, AFC, and PREVIRED as primary sources.
-- Integration: Cross-validation source for withholding rates and payroll deduction rules.
+The earlier “incorporated into” and “cross-validation” statements do not establish that any current Guide or software passed an integration audit. The duplicate legacy `chile-iva.md` is not the current VAT owner. All former tax topics above retain a destination or explicit source-required boundary; none should be inferred from an unverified code constant.
 
-## rcaurasma/nuam-node-react
+## When to refuse or refer
 
-- Repository: [rcaurasma/nuam-node-react](https://github.com/rcaurasma/nuam-node-react)
-- License: check
-- Language: JavaScript
-- Scope: Implementation of SII Declaraciones Juradas 1922/1949 factor definitions. Contains factor labels for IDPC credits (generated pre/post 2017), RAP register, ISFUT, and dividend distribution classifications used in Operación Renta.
-- Integration: Reference for DJ factor definitions relevant to corporate/dividend income tax reporting.
+Refer source text that is unavailable, truncated or not yet in force; conflicting effective dates; a software output with no reproducible source/version; specialist DFL-2, equity, excise/customs or corporate-register questions not established by the owning Guide; and proposed reuse without the actual licence. Do not replace any missing legal check with a repository's stars, marketing claim or a prior-year table.
 
-## UBIOBIO-OpenSource/remusystem
+AFC remains an operator route at https://www.afc.cl. PREVIRED remains a private operational provider at https://www.previred.com; direct access was blocked during this check, so no current operator screen or payment acceptance is certified. Their appearance here does not put them in the government-source table or make a private indicator an official legal rule.
 
-- Repository: [UBIOBIO-OpenSource/remusystem](https://github.com/UBIOBIO-OpenSource/remusystem)
-- License: check
-- Language: Java
-- Stars: 1
-- Scope: Open-source payroll system (sistema de remuneraciones) built to Chilean labor legislation. Contains Impuesto Único de Segunda Categoría computation logic.
-- Integration: Reference implementation for Chilean payroll tax computation.
+## Sources
 
-## nicsoto/ArriendoFacil
+The catalog identifies the portions actually read on 11 November 2026. A technical title or catalog entry is not a claim that every linked instruction or field was audited. Dated annual pages concern their named tax year; they do not establish a future year's calendar.
 
-- Repository: [nicsoto/ArriendoFacil](https://github.com/nicsoto/ArriendoFacil)
-- License: check
-- Language: JavaScript
-- Scope: Chilean rental property management tool with tax summary features. Implements DFL-2 exemption logic (first 2 qualifying properties exempt from rental income tax), Impuesto Global Complementario references for rental income, and Formulario 22 integration guidance.
-- Integration: Reference for Chilean rental income tax treatment and DFL-2 rules.
+| Primary source / route and portion read | What to use it for and limits | Official URL | Read on |
+|---|---|---|---|
+| SII monthly IUSC tables, 2026 page, read for the scope in the next column | Monthly salary-table source, choose the actual month; use the payroll/income owner for the computation | https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/impuesto2026.htm | 2026-11-11 |
+| SII UTM/UTA 2026 table, read for the scope in the next column | Dated indexed units; UTM, UTA and daily UF are distinct, use the rule's required unit/date | https://www.sii.cl/valores_y_fechas/utm/utm2026.htm | 2026-11-11 |
+| SII DTE format document, title and contents only | Technical format orientation; this older specification alone does not prove a current schema, code/rate list or accepted production workflow | https://www.sii.cl/factura_electronica/factura_mercado/formato_dte.pdf | 2026-11-11 |
+| SII F29 FAQ, read for the scope in the next column | Monthly-tax form identity and route, not a blanket deadline for every taxpayer | https://www.sii.cl/preguntas_frecuentes/impuestos_mensuales/001_130_1060.htm | 2026-11-11 |
+| SII boletas de honorarios portal, read for the scope in the next column | Official independent-receipt/withholding starting point; detailed conditions stay in the owners | https://www.sii.cl/destacados/boletas_honorarios/ | 2026-11-11 |
+| SII AT 2026 declaraciones juradas catalog, read for the scope in the next column | Actual form/instruction lookup for its named AT, including corporate reporting; not the unconfirmed AT 2027 calendar | https://www.sii.cl/ayudas/ayudas_por_servicios/2120-formularios_y_plazos_2026-2171.html | 2026-11-11 |
+| SP AFP system, read for the scope in the next column | Pension/AFP source route; never substitute a salary application's commission constants | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9897.html | 2026-11-11 |
+| SP employer contribution information, read for the scope in the next column | Employer obligations and current stage, read with the effective law and payroll owner | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-10906.html | 2026-11-11 |
+| SP independent workers, read for the scope in the next column | Annual versus monthly contribution distinctions and independent-worker workflow | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9913.html | 2026-11-11 |
+| SP 2026 contribution ceiling publication, read for the scope in the next column | Dated ceiling source; actual January and later-month treatment belongs in the contribution owner | https://www.spensiones.cl/portal/institucional/594/w3-article-16921.html | 2026-11-11 |
+| SP Seguro de Cesantía, read for the scope in the next column | Regulator's unemployment-insurance route, distinguished from AFC's operator workflow | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9894.html | 2026-11-11 |
+| Dirección del Trabajo, read for the scope in the next column | Official labour-law/employment route | https://www.dt.gob.cl/portal/1626/w3-channel.html | 2026-11-11 |
+| DT gratificación topic, read for the scope in the next column | Starting point for legal profit-sharing questions; actual statutory conditions belong in payroll | https://dt.gob.cl/portal/1628/w3-propertyvalue-22107.html | 2026-11-11 |
+| Superintendencia de Salud, read for the scope in the next column | Official health-regulator route; old supersalud root redirects to this host | https://www.superdesalud.gob.cl/ | 2026-11-11 |
+| LeyChile current LIR JSON | Current statute/version route, used with its transitory law, not a future export | https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=6368 | 2026-11-11 |
 
-## MilkoYunusic/Stock-Options-RSU
 
-- Repository: [MilkoYunusic/Stock-Options-RSU](https://github.com/MilkoYunusic/Stock-Options-RSU)
-- License: check
-- Language: HTML
-- Scope: Chilean tax guide for stock options and RSU compensation. Covers IGC treatment of exercise/vesting gains, DJ 1929 employer reporting obligations, and non-resident employer scenarios.
-- Integration: Reference for stock compensation income tax treatment under Chilean law.
-
----
-
-## Authoritative Government Sources
-
-| Source | URL | Data Used |
-|---|---|---|
-| SII (Servicio de Impuestos Internos) | https://www.sii.cl | IGC/IUSC brackets, UTA/UTM values, DTE rules, Formulario 22/29 |
-| SII — IUSC tables | https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/ | Monthly withholding tax brackets |
-| SII — UTA/UTM values | https://www.sii.cl/valores_702/utm_uta_702.html | Tax unit values for bracket computation |
-| Superintendencia de Pensiones | https://www.spensiones.cl | AFP commission rates, pension contribution rules |
-| Dirección del Trabajo | https://www.dt.gob.cl | Labor law, gratificación, employment contracts |
-| AFC Chile | https://www.afc.cl | Seguro de Cesantía funding and rates |
-| PREVIRED | https://www.previred.com | Previsional indicators, cotización tracking |
-| Superintendencia de Salud | https://www.supersalud.gob.cl | Fonasa/Isapre health contribution rules |
+Not yet confirmed: project-version-specific features, licences and compatibility, any claimed incorporation into existing Guides, current code/production-schema completeness, sector withholding/excise/customs classifications, detailed RAP/ISFUT and DJ factor rules, specialist DFL-2 and equity-award treatment, and operator screens not actually read. Tax figures and deadlines must come from the current owner and primary original, not this catalog.

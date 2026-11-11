@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/italy-payroll"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-11"
 ---
 
 # Italian payroll for employees: IRPEF withholding, INPS, TFR, CU and F24 (2026)
@@ -318,10 +318,6 @@ Not yet confirmed:
 - **Criminal thresholds** for unpaid withholding (D.Lgs. 74/2000) were not read.
 - **Moved, not dropped:** employer INPS rates by sector, the Fondo di Tesoreria and its 2026 headcount rule, INAIL autoliquidazione and the 2026 hiring reliefs are in `it-employer-contributions`. Family detrazioni and the 19% detrazioni (including the EUR 440 cut above EUR 200,000) are in `it-irpef-employees` and `it-income-tax`. The Modello Redditi PF deadline is in `it-income-tax`.
 
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-holding-company-participation-exemption"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
 ---
 
 # Malta holding companies: participation exemption, tax refunds and dividends to the family
@@ -128,7 +128,7 @@ A "recipient" (article 61(a)) is any ONE of:
 - (iii) "a trustee of a trust where the beneficiaries of such trust are persons referred to in subparagraphs (i) and (ii)";
 - (iv) an EU/EEA individual (and spouse where applicable) in the circumstances of the first and second provisos to article 56(1)(c).
 
-Who is NOT a recipient: a company resident in Malta; a non-resident person not owned and controlled by, and not acting for, an individual ordinarily resident and domiciled in Malta; a trustee whose beneficiaries are not within (i) or (ii). An untaxed dividend paid to a person who is not a recipient is not "charged to tax under this Act in the hands of such person" (article 66).
+Who is NOT a recipient: a company resident in Malta; a non-resident person not owned and controlled by, and not acting for, an individual ordinarily resident and domiciled in Malta, unless that person is an EU/EEA individual within (iv); a trustee whose beneficiaries are not within (i) or (ii). An untaxed dividend paid to a person who is not a recipient is not "charged to tax under this Act in the hands of such person" (article 66).
 
 Other rules:
 
@@ -313,4 +313,4 @@ Not yet confirmed: all scopes held in the 4 November correction ledger and the e
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-holding-company-participation-exemption` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-holding-company-participation-exemption. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-holding-company-participation-exemption` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-holding-company-participation-exemption. If neither is available, confirm every figure against the official source pages cited above before relying on it.
