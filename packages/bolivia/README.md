@@ -8,12 +8,15 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `bolivia-income-tax.md`
-5. `bolivia-iva.md`
-6. `bolivia-payroll.md`
-7. `bolivia-social-contributions.md`
-8. `bolivia-tax-optimization.md`
-9. `payroll-workflow-base.md`
+4. `bolivia-corporate-income-tax.md`
+5. `bolivia-income-tax.md`
+6. `bolivia-iva.md`
+7. `bolivia-payroll.md`
+8. `bolivia-social-contributions.md`
+9. `bolivia-tax-optimization.md`
+10. `bolivia-transfer-pricing.md`
+11. `payroll-workflow-base.md`
+12. `transfer-pricing-workflow-base.md`
 
 ## How to use
 
