@@ -18,11 +18,12 @@ version: 2.2
 jurisdiction: JP
 tax_year: 2025
 tax_year_notes: "Coverage starts with the 2025 year (令和7年分, filed in 2026) and includes the 2026 year (令和8年分). Some enacted 2027 changes are recorded, not all of them, and no 2027 computation is supported. The law was read at 5 November 2026. The 2026 basic deduction and employment income rules were enacted by 令和8年法律第12号, read only as consolidated e-Gov text, and are in force on 1 December 2026, so they were read in the text dated from that day. No 令和9年度 tax reform outline had been published at the read date."
-last_updated: 2026-11-05
+last_updated: 2026-11-11
 depends_on:
   - income-tax-workflow-base
 category: international
 tier: 2
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
 ---
