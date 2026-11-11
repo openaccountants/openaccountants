@@ -1,7 +1,7 @@
 # Brazil state tax profiles: writer ledger
 
 Guide: `skills/brazil/br-state-tax-profiles.md`
-SHA256: `fcb2e3ee29caf54bb5b6beb56889e94a6e2ba0f282a7e29bb0ff49106cbfaa9a`
+SHA256: `6c5298d6d7b5ef43cdddf2f47314a94f59065db8ebdb88e5ca02e02530f6ef43`
 Base: `0de5bb04d2cdf0714609c5c910ff6e7cd9a7dc5c`
 Read date: 2026-11-11. New distinct job; not a rewrite. No approval removed. No push before independent review.
 
@@ -150,7 +150,7 @@ New file: there is no old text, no lost old topic and no deletion. Lost content 
 | Interstate final-use/noncontributor DIFAL | National responsibility handoff; MT current state note and Example2; no false universal double base |
 | ST, anticipation, product/CEST and agreement boundary | The base/exception table; full state MVA/product/benefit/refund matrices expressly partial |
 | Consumption reform/CBS/IBS | Retained `brazil-vat`; no duplicated transition figures |
-| Simples and state sublimit | Retained `br-simples`; no duplicated threshold |
+| Simples and state sublimit | Retained `br-simples-nacional`; no duplicated threshold |
 | ITCMD/IPVA | Other state taxes intake, actually opened named service catalogs, all-state computations expressly partial |
 | State incentives/free areas/special regimes | Explicit partial handoff requiring current eligibility; no unsupported exemptions |
 | All-UF penalties/interest/payment calendars | Explicit partial; no invented universal charge/date |

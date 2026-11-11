@@ -25,7 +25,7 @@ depends_on: [br-indirect-tax]
 
 ## Who this applies to
 
-Use the destination and transaction facts before selecting a state percentage. This Guide owns state parameters and local operational differences; [br-indirect-tax](br-indirect-tax.md) remains the ordinary national ICMS method and classification owner. It also owns the common interstate-rate selection and detailed credit calculation. [brazil-vat](brazil-vat.md) owns the consumption-reform transition; these current ICMS cards do not settle a CBS/IBS question. [br-simples](br-simples.md) owns the small-business regime and sublimit test.
+Use the destination and transaction facts before selecting a state percentage. This Guide owns state parameters and local operational differences; [br-indirect-tax](br-indirect-tax.md) remains the ordinary national ICMS method and classification owner. It also owns the common interstate-rate selection and detailed credit calculation. [brazil-vat](brazil-vat.md) owns the consumption-reform transition; these current ICMS cards do not settle a CBS/IBS question. [br-simples-nacional](br-simples-nacional.md) owns the small-business regime and sublimit test.
 
 Required inputs: actual origin/destination establishments; tax-event date; product description/NCM and CEST where relevant; taxpayer status and final-use versus resale; tax-included price and freight/other charges; regime, registrations, relief and special terms. Identify the fund separately before computing a total. A residual rate is used only after excluding the state's specific-rate, exempt, reduced-base, ST, anticipation and monophase branches.
 
