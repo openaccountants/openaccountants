@@ -6,9 +6,7 @@ jurisdiction: MY
 tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "MUHAMMAD HANIS MAT HUSSIN"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: vat-gst
 ---
 

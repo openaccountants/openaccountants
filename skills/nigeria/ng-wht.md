@@ -5,9 +5,7 @@ jurisdiction: NG
 tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Omolola Fasasi"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: cross-border
 ---
 
@@ -15,7 +13,6 @@ domain: cross-border
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -57,7 +54,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Individual-payer deadline (where applicable) | **10th** day of the month following the month of deduction |
 | Governing law (current) | Companies Income Tax Act (CITA) Cap C21 LFN 2004 (as amended), Personal Income Tax Act (PITA) Cap P8 LFN 2004 (as amended), Petroleum Profits Tax Act (PPTA), Capital Gains Tax Act, plus the **Withholding Tax (Companies and Persons other than Companies) Regulations 1997 (S.I. No. 28 of 1997)** as amended by FIRS Information Circulars (most recently the 2024 update) |
 | Governing law (from 1 Jan 2026) | **Nigeria Tax Act 2025 (NTA 2025)** — consolidates WHT into a single tax-at-source Schedule (implementing regulations TBC) |
-| Validated by | Verified by Omolola Fasasi (MB058950) on 2026-06-21 |
 | Skill version | 1.0 |
 
 ### Quick-look: payment type → WHT rate (residents vs non-residents)
