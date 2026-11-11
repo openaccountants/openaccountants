@@ -55,8 +55,8 @@ Quick answer: **one rate, 13%**, on monthly taxable income, less credits for the
 | Re-IVA cash refund for individuals with average monthly income up to Bs 9,000, on electronically issued purchase invoices (Ley 1355 arts. 2 and 3) | Up to 5% of the price | 2026 | same |
 | IGF wealth tax threshold: net fortune at 31 December (Ley 1357 art. 5) | Above Bs 30,000,000 | 2026 | same |
 | IGF rates on the whole base, less a fixed discount (Ley 1357 art. 9) | Bs 30,000,001 to 40,000,000: 1.4% less Bs 150,000; Bs 40,000,001 to 50,000,000: 1.9% less Bs 350,000; above Bs 50,000,000: 2.4% less Bs 600,000 | 2026 | same |
-| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448); IGF omission (Ley 1357 art. 15) | 60% of the updated omitted tax; IGF 200% | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
-| Late interest, in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | same |
+| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448); IGF omission (Ley 1357 art. 15) | 60% of the updated omitted tax; IGF 200% | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 |
+| Late interest, in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
 
 ## The base
 
@@ -238,5 +238,7 @@ Bank statement pointers:
 | SIN SIAT, Form 604: box codes 415, 416, 434, 404 to 406, 909 and the annex categories | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/regimen-complementario-al-iva/604-regimen-complementario-del-iva-retenciones | 2026-11-11 |
 | SIN SIAT, list of electronic forms: names of Forms 613, 614, 22 and 23 | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico | 2026-11-11 |
 | Ministerio de Trabajo, Comunicado DGTHSO-014/2026 of 2 April 2026: applies DS 5516 and the Bs 3,300 SMN | https://mintrabajo.gob.bo/wp-content/uploads/2026/04/COMUNICADO-DGTHSO-0014-26.pdf | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1448 of 25 July 2022 (HTML text): new incisos g) and h) of Ley 843 art. 19 and new art. 165 of Ley 2492 (60%) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1733 of 27 May 2026 (HTML text): new art. 59 of Ley 2492, 4-year limitation | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281228 | 2026-11-11 |
 
 Not yet confirmed: the employee social-security contribution rates (left to [bolivia-social-contributions](bolivia-social-contributions.md), not re-read here); which presumed-credit figure the Planillas Tributarias application uses for employees (Form 608 box 215 still says two SMN); the IGF filing deadline and valuation rules in DS 4436, and whether any 2026 law repealed Ley 1357 after the SIN consolidation date; the Re-IVA procedure and payment dates (its regulating decree, not read); how individuals' capital gains are taxed outside the stock exchange (DS 5301 art. 49, reproduced in the consolidated text, makes brokers withhold RC-IVA on gains from securities sold on an exchange; the wider rule was not read); treaty relief for non-domiciled individuals; the UFV values in bolivianos for updating balances (Banco Central de Bolivia, not read).
