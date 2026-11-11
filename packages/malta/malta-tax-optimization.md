@@ -1,10 +1,10 @@
 ---
 name: malta-tax-optimization
 description: "Use this skill when asked how a self-employed individual or small business owner in Malta can lawfully reduce or time income tax for basis year 2026 (year of assessment 2027). Covers the 10% part-time final tax and its EUR 12,000 cap, joint and parent rate tables, the sole trader or company choice (35% with shareholder refunds, the elective 15% final tax), deductions people miss (article 14 test, home for the elderly fees, the car cost cap), wear and tear timing, losses, provisional tax, VAT registration choice, pension tax credits, and the anti-avoidance rule in article 51. Trigger on: reduce tax Malta, tax planning Malta, save tax Malta, pay less tax Malta, deductions I'm missing, part-time 10% Malta, incorporate in Malta, pension tax credit Malta. Links the computation skills instead of repeating them."
-version: 1.4
+version: 1.5
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -15,7 +15,7 @@ domain: tax-optimization
 
 **4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/malta-tax-optimization.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
 
-## Malta Tax Optimization: Self-Employed Skill v1.4
+## Malta Tax Optimization: Self-Employed Skill v1.5
 
 Tax year 2026: basis year 2026, year of assessment 2027. This skill lists the lawful levers and points to the skill that computes each one. It does not repeat the rate tables or the computations:
 
@@ -37,7 +37,7 @@ Tax year 2026: basis year 2026, year of assessment 2027. This skill lists the la
 | Single table, basis year 2026 | 0% to EUR 12,000; 15% to EUR 16,000; 25% to EUR 60,000; 35% above | Cap. 123 art. 56(1)(b)(i) |
 | Married joint table (no qualifying child), basis year 2026 | 0% to EUR 15,000; 15% to EUR 23,000; 25% to EUR 60,000; 35% above | Cap. 123 art. 56(1)(a)(i) |
 | Part-time final tax | 10% on part-time self-employed profit up to EUR 12,000 | Cap. 123 art. 90A; S.L. 123.39 rule 3(2) |
-| Company rate | 35%; six-sevenths refund to shareholders on Malta trading profit in most cases | Cap. 123 art. 56(6); Cap. 372 art. 48(4A) |
+| Company rate | 35%. For a non-resident shareholder, the six-sevenths refund on Malta trading profit usually leaves 5% Malta tax. For a Malta-resident individual shareholder, articles 12(1)(c)(iii) and 43(6) may change this: see `mt-corporate-tax` | Cap. 123 art. 56(6), 12(1)(c)(iii), 43(6); Cap. 372 art. 48(4A) |
 | Anti-avoidance | Article 51: artificial or fictitious schemes are disregarded; schemes whose sole or main purpose is a tax advantage can be nullified by order | Cap. 123 art. 51 |
 | Interest on late tax | 0.6% a month or part month, capped at the tax | Cap. 372 art. 44(2A) |
 
@@ -71,7 +71,7 @@ A salary to a spouse or child is deductible only if it meets the article 14(1) t
 | Factor | Sole trader | Private limited company |
 | --- | --- | --- |
 | Rate on profit | 0% to 35% on the individual tables | 35% at company level |
-| Profit paid out as dividend | Not applicable | Shareholder registered for refunds can claim six-sevenths of the tax on Malta trading profit, leaving 5% Malta tax overall (Cap. 372 art. 48(4A)(a)) |
+| Profit paid out as dividend | Not applicable | For a non-resident shareholder, the six-sevenths refund (Cap. 372 art. 48(4A)(a)) usually leaves 5% Malta tax. For a Malta-resident individual shareholder, articles 12(1)(c)(iii) and 43(6) of Cap. 123 may change this: see `mt-corporate-tax` before relying on it |
 | Profit kept in the company | Taxed in the year earned | 35% until a dividend triggers a refund claim |
 | Elective 15% final tax | Not available | Available for the fiscal year preceding YA 2025 and subsequent years (calendar basis year 2024 onward), under S.L. 123.217; binds for five years of assessment; no refund; floor rules apply |
 | Compliance | Return and provisional tax | Annual accounts (audit unless micro-exempt), company return through a tax practitioner, annual return at MBR |
@@ -198,13 +198,13 @@ Malta Enterprise runs grant and tax-credit schemes for small businesses (for exa
 | --- | --- |
 | January | Receive FS3s for 2025 by 31 January. Review 2026 provisional tax benchmark. |
 | April | **30 April 2026**: first provisional tax instalment (20%). Part-time 10% tax and 15% rental tax for 2025 due. |
-| June | **30 June 2026**: individual return for basis year 2025 (check MTCA's online extension). |
+| July | **31 July 2026**: individual return for basis year 2025, manual and electronic, and the tax due. MTCA moved this from 30 June ([MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline)). |
 | August | **31 August 2026**: second provisional tax instalment (30%). |
 | September to November | Estimate 2026 profit. File the P.T. reduction form if tax will fall. Plan asset purchases. |
 | December | **21 December 2026**: third provisional tax instalment (50%). Buy and start using planned assets. Pay pension contributions. |
 | 2027 | 30 April 2027: part-time 10% tax on 2026 profit. 30 June 2027: return for basis year 2026. |
 
-Sources: S.L. 372.16; S.L. 372.18; Cap. 372 art. 42(4); S.L. 372.14 rule 21.
+Sources: S.L. 372.16; S.L. 372.18; Cap. 372 art. 42(4); S.L. 372.14 rule 21; MTCA notice of 3 June 2026.
 
 ## Section 12: Worked Examples
 
@@ -315,6 +315,8 @@ This skill and its outputs are provided for informational and computational purp
 | SL123.217 reg3(2)(a) | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | SL123.01 rule7(b) | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | Cap123 art14D | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap123 art12(1)(c)(iii)(B) and art43(6); Cap372 art48(1) last proviso | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-08 | Company refund rows only |
+| MTCA notice: YA 2026 individual returns and tax due 31 July 2026 | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-08 | Calendar row only |
 
 Prior source-read dates remain historical; this list does not refresh unrelated claims.
 

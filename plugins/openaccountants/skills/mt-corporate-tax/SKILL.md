@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-corporate-tax"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
 ---
 
 # Malta corporate income tax: 35%, imputation, refunds and filing (basis year 2026)
@@ -128,7 +128,7 @@ The Commissioner may remit late-return additional tax for "reasonable excuse"; l
 
 ## Cross-border points
 
-- **Dividends paid abroad.** Malta does not withhold tax on dividends paid to non-residents. Tax is deducted only from untaxed account dividends paid to a "recipient" (art. 61 and 62 Cap. 123), and a non-resident is a recipient only if owned and controlled by, or acting for, an individual ordinarily resident and domiciled in Malta. A non-recipient is not charged on an untaxed dividend (art. 66). Dividends from taxed accounts bear no further tax for non-residents (art. 68(1)). A non-resident shareholder registered for refunds can claim the article 48 refunds.
+- **Dividends paid abroad.** Malta does not withhold tax on dividends paid to non-residents. Tax is deducted only from untaxed account dividends paid to a "recipient" (art. 61 and 62 Cap. 123), and a non-resident is a recipient only if owned and controlled by, or acting for, an individual ordinarily resident and domiciled in Malta, or is an EU/EEA individual (and spouse where applicable) taxed at resident rates under the first and second provisos to art. 56(1)(c), where at least 90% of their (or the couple's) worldwide income comes from Malta (art. 61(a)(iv)). Untaxed dividends to them bear the 15% deduction. A non-recipient is not charged on an untaxed dividend (art. 66). Dividends from taxed accounts bear no further tax for non-residents (art. 68(1)). A non-resident shareholder registered for refunds can claim the article 48 refunds.
 - **Interest and royalties paid abroad.** Article 12(1)(c)(i) exempts interest, discount, premium and royalties "accruing to or derived by any person not resident in Malta", unless they are effectively connected with a Malta permanent establishment of that person. The proviso requires the beneficial owner to be non-resident and not owned and controlled by, or acting for, individuals ordinarily resident and domiciled in Malta. So there is no domestic withholding on these payments in the ordinary case.
 - **EU directives.** The participation exemption carries the Parent-Subsidiary Directive anti-hybrid rule: profits that benefit from the directive's withholding exemption are exempt only to the extent the subsidiary cannot deduct them (art. 12(1)(u) Cap. 123). The ATAD rules (interest limitation, exit tax, CFC, hybrids) are in S.L. 123.187.
 - **CFC rules.** Regulation 7 of [S.L. 123.187](https://legislation.mt/eli/sl/123.187/eng/pdf) can attribute undistributed income of a low-taxed controlled foreign company to the Malta parent. Thresholds and carve-outs are in `mt-company-residence-and-substance`.
@@ -262,4 +262,4 @@ Not yet confirmed: all scopes held in the 4 November correction ledger and the e
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
