@@ -11,7 +11,7 @@ description: >
   local professional to review. It does not calculate labour-law entitlements,
   employer social contributions, pensioner special deductions, executive
   termination packages or non-resident withholding.
-version: 0.1
+version: 0.2
 jurisdiction: AR
 category: payroll
 domain: tax
@@ -21,13 +21,13 @@ last_updated: 2026-11-11
 tier: 2
 ---
 
-# Argentina: payroll income-tax withholding 2026 v0.1
+# Argentina: payroll income-tax withholding 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to
 
-Resident employees paid income within RG 4003 art. 1 and LIG art. 82(b). This is a Tier 2 source-cited draft, without professional approval. It produces a computation and reporting reconciliation, not an authorised filing. Currency is ARS and the coverage is calendar year 2026. RG 4003 also covers other fourth-category recipients; the pension-specific computation and actors' separate regime are outside this employee Guide.
+Resident employees paid income within RG 4003 art. 1 and LIG art. 82(b). This Guide is **Not yet approved**. It produces a computation and reporting reconciliation, not an authorised filing. Currency is ARS and the coverage is calendar year 2026. RG 4003 also covers other fourth-category recipients; the pension-specific computation and actors' separate regime are outside this employee Guide.
 
 **Quick answer:** use cumulative taxable remuneration and the table for the payment month. Deduct eligible expenses and personal deductions, apply the cumulative scale, then reconcile previous withholdings, refunds and permitted credits. The annual calculation uses different published parameters. Establish the payment date, settlement type, all employers, deductions and prior withholding before computing anything (RG 4003 arts. 3, 5, 7, 11 and 21; source below).
 
