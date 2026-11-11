@@ -18,7 +18,7 @@ partial:
 
 <!-- Maintained coverage map. Preserve its source-verified partial and out-of-scope notes. -->
 
-Tax years: 2026 (8 skills), 2025 (1 skill).
+Tax years: 2026 (9 skills).
 
 Coverage and professional approval are separate. The table reports the
 merged skills plus this corporate update; pending PRs are listed below.
@@ -44,7 +44,7 @@ Pending PRs are not merged coverage. Tracked in [\[PE\] Complete the pack](https
 
 ## Other skills
 
-- [Company formation](pe-company-formation.md) (2025)
+- [Company formation](pe-company-formation.md) (2026)
 - [Tax overview](pe-tax-overview.md) (2026)
 
 ## Out of scope
