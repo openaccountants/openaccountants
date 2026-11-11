@@ -9,9 +9,7 @@ depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Maria Clemencia Valverde Rios"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: payroll
 ---
 
@@ -21,7 +19,6 @@ domain: payroll
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Maria Clemencia Valverde Rios** on 2026-06-29.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -90,8 +87,6 @@ domain: payroll
 | Monthly filing | PLAME (Planilla Electrónica), Formulario Virtual 0601, v4.5 mandatory from Oct 2025 ([SUNAT](https://orientacion.sunat.gob.pe/pdt-plame)) |
 | Filing deadline | Monthly, by last digit of employer RUC per SUNAT cronograma (≈14th–24th of following month) ([SUNAT](https://orientacion.sunat.gob.pe/pdt-plame)) |
 | Annual return (FY2025) | Due 27 May – 10 Jun 2026 by RUC digit ([NVC Abogados](https://nvcabogados.com/annual-income-tax-return-2025-in-peru/)) |
-| Validated by | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
-| Validation date | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
 
 **Who pays what (monthly payroll):**
 
