@@ -320,7 +320,3 @@ Not yet confirmed:
 - **Regional and municipal rates for 2026** and the 2027 acconto: each region and comune sets its own; none read.
 - **Criminal thresholds** for unpaid withholding (D.Lgs. 74/2000) were not read.
 - **Moved, not dropped:** employer INPS rates by sector, the Fondo di Tesoreria and its 2026 headcount rule, INAIL autoliquidazione and the 2026 hiring reliefs are in `it-employer-contributions`. Family detrazioni and the 19% detrazioni (including the EUR 440 cut above EUR 200,000) are in `it-irpef-employees` and `it-income-tax`. The Modello Redditi PF deadline is in `it-income-tax`.
-
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.

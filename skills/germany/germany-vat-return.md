@@ -310,7 +310,3 @@ expected:
 | AO § 152(8) full special-prepayment exclusion and closing discretionary factors; 2026 input instructions are an information route, not a foreign refund entitlement | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-29 |
 
 Not yet confirmed: that the EUR 50 gift limit is counted by calendar year for VAT (UStAE 15.6(4) was not read for this version; the income-tax text counts by financial year); that the entertainment receipt must be machine-produced and signed by the host (an administrative rule, not in § 4(5) EStG); which tax office handles a foreign business, by country (the Umsatzsteuerzuständigkeitsverordnung was not read for this version); the rounding rule for whole-euro tax bases on the advance return (the 2026 instructions say whole euros but not whether to round or cut off the cents).
-
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.
