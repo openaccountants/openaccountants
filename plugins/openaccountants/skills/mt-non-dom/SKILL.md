@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-non-dom"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
 ---
 
 # Malta non-dom tax: residence, domicile, the remittance basis and the minimum tax
@@ -45,7 +45,7 @@ The status tests (residence, domicile, ordinary residence, the minimum tax) are 
 All steps apply the [Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c).
 
 1. **Fix the year.** Work on one basis year at a time. Basis year 2026 is year of assessment 2027.
-2. **Decide residence.** Article 2: an individual is "resident in Malta" if he "resides in Malta except for such temporary absences as to the Commissioner may seem reasonable". There is no day count in the Act. A non-resident is taxed only on Malta-source income; refer that case.
+2. **Decide residence.** Article 2: an individual is "resident in Malta" if he "resides in Malta except for such temporary absences as to the Commissioner may seem reasonable". There is no day count in the Act. MTCA's published practice is that a person present in Malta for more than 183 days in a year is resident for that year ([MTCA, Tax Residence](https://mtca.gov.mt/personal-tax/individual/tax-residence), page updated 29 August 2025). A non-resident is taxed only on Malta-source income; refer that case.
 3. **Decide domicile and ordinary residence.** The Act defines neither term. See "Residence, domicile and ordinary residence" below. Record the facts that support the conclusion.
 4. **Check the exclusions.** The remittance basis does **not** apply to a long-term resident or holder of a permanent residence certificate or card, from the year that status was granted, or to anyone whose spouse is ordinarily resident and domiciled in Malta. If an exclusion applies, the person is taxed on worldwide income and gains like any domiciled resident. Stop here and use the Malta income tax Guide.
 5. **Split the income.** Malta-source income and gains: taxed in full. Foreign income: taxed only on the amount received in Malta (article 4(1) proviso (i)). Foreign capital gains: not taxed, whether brought in or not (proviso (ii)).
@@ -59,7 +59,7 @@ Order matters. Check the exclusions (step 4) before anything else: a non-dom who
 
 ## Residence, domicile and ordinary residence ([Income Tax Act, Cap. 123, art. 2](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-- **Resident.** The Act's only definition: "an individual who resides in Malta except for such temporary absences as to the Commissioner may seem reasonable and not inconsistent with the claim of such individual to be resident in Malta". There is no statutory day count and no split-year rule. Arrival and departure years are decided on the facts; refer them.
+- **Resident.** The Act's only definition: "an individual who resides in Malta except for such temporary absences as to the Commissioner may seem reasonable and not inconsistent with the claim of such individual to be resident in Malta". There is no statutory day count and no split-year rule. MTCA's Tax Residence page (updated 29 August 2025) says a person present in Malta for more than 183 days in a year is resident for that year; that is MTCA practice, not the Act. Arrival and departure years are decided on the facts; refer them.
 - **Domicile.** Not defined in the Act. It is a general-law concept, not a tax test. In broad terms, a person keeps the domicile they had at birth (usually their father's) until they settle in another country intending to stay there permanently. Most people who move to Malta keep their foreign domicile unless they take clear steps to make Malta their permanent home. This is background only; a disputed domicile must be referred.
 - **Ordinary residence.** Not defined in the Act either. In ordinary usage it means Malta is the person's settled, habitual home, year after year, rather than a temporary stay. A newly arrived person may be resident but not yet ordinarily resident. The Act gives no number of years; refer borderline cases.
 
@@ -192,7 +192,7 @@ Relief matters only for foreign income that is taxed in Malta, which for a non-d
 - **Gross-up for the remittance basis** (article 77(5)(b)): "where the income tax chargeable depends on the amount received in Malta the said amount shall be increased by the appropriate amount of the foreign tax". Tax is computed on the grossed-up amount, and the foreign tax is then credited.
 - **Unilateral relief** (articles 80-81): available for foreign income that suffered "tax of a similar character" abroad, again only if the person is resident in Malta for the basis year.
 - **Time limit** (article 77(9)): a treaty credit claim must be made "not later than two years after the end of the year of assessment". For basis year 2026, that is by 31 December 2029.
-- **Minimum tax:** the comparison with €5,000 uses the tax liability before double tax relief (article 56(27)), so the relief does not create or enlarge a top-up. MTCA remittance-basis guidance section 6.2 expressly states that the minimum is reduced by double taxation relief due on income actually remitted to Malta and taxed abroad. Apply the statutory credit conditions and limits; do not claim a credit on unremitted income. Read 4 November 2026.
+- **Minimum tax:** article 56(27) compares with €5,000 the tax liability "before taking into account any relief granted in terms of articles 76 to 89 of the Act". Double tax relief therefore does not reduce the tax being compared, and does not create or enlarge a top-up. The Act does not say that relief is then set against the €5,000. MTCA remittance-basis guidance section 6.2 was recorded on 4 November 2026 as saying the minimum is reduced by relief due on remitted income taxed abroad. Not confirmed: the guidance could not be opened on 8 November 2026, and the Act's words do not say it. Do not rely on it; refer any claim that relief takes the tax below €5,000, and never claim a credit on unremitted income.
 
 ## Boundary and exception table ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
@@ -258,8 +258,8 @@ Articles cited below are in the [Income Tax Act, Cap. 123](https://legislation.m
 - Refer mixed accounts where a transfer cannot be traced to capital, and every borderline remittance (card spending, debts, assets brought in, loans).
 - Refer the worldwide cap claim under article 56(27); it needs a full worldwide computation and proof.
 - Refer separate computation or separate assessment for married non-doms under the minimum tax.
-- Refer all Global Residence Programme, Residence Programme and Nomad Residence Permit cases beyond the rate and minimum shown here, and any other special scheme (highly qualified persons, retirement programme, returned migrants).
-- Refer treaty claims, the flat-rate foreign tax credit, and any credit that would take tax below €5,000 ([ITA art. 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
+- Refer all Global Residence Programme, Residence Programme and Nomad Residence Permit cases beyond the rate and minimum shown here, and any other special scheme: the Highly Skilled Individuals Rules ([L.N. 20 of 2026](https://legislation.mt/eli/ln/2026/20/eng/pdf)), which replaced the Highly Qualified Persons Rules from 1 January 2026 (under the old rules no determination is issued for applications made after 31 December 2025, and no benefit runs after year of assessment 2030, rule 12(2)), the retirement programme and returned migrants.
+- Refer treaty claims, the flat-rate foreign tax credit, and any claim that double tax relief takes the tax below €5,000; the Act compares tax before that relief ([ITA art. 56(27)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c)).
 - Refer gains on Maltese property or Maltese company shares, trusts, and foreign companies you control.
 - Refer anything that turns on an MTCA form, notice or online-filing extension you cannot see.
 
@@ -359,10 +359,18 @@ Only the identified passages were read for this delta; historical source rows ke
 | Cap123article4/56minimum and joint/single tables read | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-04 |
 | MTCAactualYA2026deadline read | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
 
+### Correction source reads, 8 November 2026
+
+| Source and passage actually read | URL | Read on |
+|---|---|---|
+| Income Tax Act, Cap. 123, art. 2 (resident) and art. 56(27) (tax before relief under arts. 76 to 89) | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-08 |
+| LN 20 of 2026, Highly Skilled Individuals Rules, rules 1 and 12 | https://legislation.mt/eli/ln/2026/20/eng/pdf | 2026-11-08 |
+| MTCA, Tax Residence (more than 183 days; page updated 29 August 2025), as read for the 8 November 2026 audit | https://mtca.gov.mt/personal-tax/individual/tax-residence | 2026-11-08 |
+
 Correction ledger and complete old-topic destinations: [personal-mt-non-dom](../../evidence/malta-deep-audit-20261104/ledgers/personal-mt-non-dom.md). Full original research is archived there; this correction is not professional attestation.
 
 Not yet confirmed: unresolved branches explicitly marked HOLD or check in this Guide; see the correction ledger and personal audit for the exact remaining scope. No whole-pack professional review is claimed.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-non-dom` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-non-dom. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-non-dom` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-non-dom. If neither is available, confirm every figure against the official source pages cited above before relying on it.
