@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "VE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Jose Padilla"
 ---
 
 # Venezuela Social Security & Payroll Contributions
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Jose Padilla** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -92,8 +90,6 @@ metadata:
 | Legal minimum monthly wage (salario mínimo) | **VES 130** since 15 March 2022 — unchanged through 2025 (PwC; CloudPay) |
 | Tax Unit (UT/TU) value 2025 | **VES 43** per Administrative Ruling SNAT/2025/000048, Official Gazette 2 June 2025 (Orbitax) |
 | Annual ISLR (personal income tax) return deadline | **31 March** following the tax year — cannot be extended (PwC Tax administration) |
-| Validated by | Verified by Jose Padilla (CPA) on 2026-06-21 |
-| Validation date | Verified by Jose Padilla (CPA) on 2026-06-21 |
 
 ### CRITICAL Venezuela-specific caveat — read FIRST
 

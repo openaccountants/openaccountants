@@ -1,10 +1,10 @@
 ---
 name: mt-crypto-tax
 description: Use this skill whenever asked about Malta cryptocurrency or digital asset taxation. Trigger on phrases like "crypto tax Malta", "Bitcoin Malta", "DLT assets", "cryptocurrency gains", "crypto income Malta", "Binance Malta tax", "staking Malta", "mining income Malta", "NFT tax Malta", "Coinbase Malta", "Revolut crypto Malta", "token tax", "distributed ledger", "MFSA crypto", "DAC8", or any question about the income tax, capital gains, or VAT treatment of cryptocurrency, tokens, or digital assets for Malta tax residents or Malta-source crypto income. Covers the CfR DLT asset guidelines, classification of coins/tokens, trading vs investment distinction, VAT treatment, and DAC8 reporting. ALWAYS read this skill before touching any Malta crypto work.
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 depends_on:
   - malta-income-tax
 category: international
@@ -28,7 +28,7 @@ This skill covers how Malta taxes coins, tokens and other crypto-assets (the Com
 
 **Companion Skills.** For rate tables in full, residence rules, provisional tax, interest and penalties, use the Malta income tax Guide (malta-income-tax). For registration, returns and input tax, use the Malta VAT return Guide (malta-vat-return).
 
-**Not covered:** licensing under the Virtual Financial Assets Act or MiCA; issuing tokens (ICOs, IEOs, STOs); funds; the special residence programmes; double tax relief; and full company refund computations. These are referred (see "When to refuse or refer").
+**Not covered:** licensing of crypto-asset services under MiCA and the [Markets in Crypto-Assets Act, Cap. 647](https://legislation.mt/eli/cap/647/eng/pdf); issuing tokens (ICOs, IEOs, STOs); funds; the special residence programmes; double tax relief; and full company refund computations. These are referred (see "When to refuse or refer").
 
 ## Ask the client first
 
@@ -96,7 +96,7 @@ A crypto-asset that is not in that list is outside article 5. Its disposal is ta
 | Coin | BTC, ETH, LTC used as money or a store of value | No: not "securities" | Yes, under art. 4(1)(a) |
 | Utility token | Gives access to a product or service on a DLT platform | No: not "securities" | Yes, under art. 4(1)(a) |
 | Financial token | Shares in profits like a share, or pays a return like a bond or fund unit | Yes, if it meets the "securities" definition | Yes, under art. 4(1)(a) if dealt in |
-| Hybrid token | Starts as utility, later gains profit rights | Treat by its features at the time of transfer; check | Yes, under art. 4(1)(a) |
+| Hybrid token | Starts as utility, later gains profit rights | Treat it by how it is used in the particular case: as a utility token when used as one, as a coin when used as one. Purpose and context decide, not the label | Yes, under art. 4(1)(a) |
 
 A share-like instrument whose return is limited to a fixed rate does not meet that profit-participation limb merely through its fixed return. **Still test the separate collective-investment-scheme unit and linked long-term insurance unit alternatives** in the article 5 definition and the official DLT guideline. A fixed-return label alone does not establish that a token is outside article 5. Hold the actual token classification until its rights and every relevant statutory alternative have been checked.
 
@@ -174,7 +174,7 @@ Record the amount already brought into taxable income as part of the acquisition
   - not under another scheme that sets a minimum tax;
   - has income arising outside Malta, "not less than thirty five thousand euro (€35,000)", that is not received or not fully received in Malta. For a married couple taxed jointly under article 49, count both spouses' foreign income.
 
-  The tax is then not less than €5,000 for the year. Tax paid under the Act counts towards it, except tax on article 5A property transfers. If the client proves that tax on worldwide income would be lower, the lower amount applies. If foreign income is below €35,000, or all of it is received in Malta, there is no minimum tax. The €35,000 test is on total foreign income, not only the part kept abroad: bringing part of it into Malta does not take the client out.
+  The tax is then not less than €5,000 for the year. Tax paid under the Act counts towards it, except tax on article 5A property transfers. If the client proves that tax on worldwide income would be lower, the lower amount applies. If foreign income is below €35,000, or all of it is received in Malta, there is no minimum tax. The €35,000 test is on total foreign income, not only the part kept abroad: bringing part of it into Malta does not take the client out. Article 56(27)(ii) covers income "amounting to not less than thirty five thousand euro (€35,000) ... arising outside Malta ... but which is not received or not fully received in Malta".
 
 ## Companies holding or trading crypto ([Income Tax Act art. 56(6)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
@@ -183,7 +183,7 @@ Record the amount already brought into taxable income as part of the acquisition
 - **Accounting period.** Accounts are made up to 31 December ("the day immediately preceding the next following year of assessment", article 11(1)) unless the Commissioner permits another date (article 11(2)).
 - **Return date.** "The last day of the ninth month following that to which the accounts for the relative financial period are made or the thirty-first of March of the relative year of assessment, whichever is the later" ([S.L. 372.16 rule 2(c)(i)](https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2)). Tax is due on the same date (rule 5(b)).
 - **Shareholder refunds** on distributed profits, provisional tax and the rest of the company computation are outside this skill. Refer them.
-- **Regulation.** A company offering crypto services may need a licence (MiCA and the [Virtual Financial Assets Act, Cap. 590](https://legislation.mt/getpdf/6a6c60bcab8952298c312cae)). A licence does not change the tax classification. Do not advise on licensing.
+- **Regulation.** A company offering crypto-asset services needs MiCA authorisation (Regulation (EU) 2023/1114, Article 63). In Malta the competent authority is the MFSA, under the [Markets in Crypto-Assets Act, Cap. 647](https://legislation.mt/eli/cap/647/eng/pdf). Licences under the [Virtual Financial Assets Act, Cap. 590](https://legislation.mt/eli/cap/590/eng/pdf) ended: article 66(2) cancelled them on 2 July 2026, or earlier when MiCA authorisation was granted or refused. A licence does not change the tax classification. Do not advise on licensing.
 
 ## VAT on crypto transactions ([VAT Act, Cap. 406](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
 
@@ -302,7 +302,7 @@ All cases are hypothetical. Individuals are resident, ordinarily resident and do
 - the client is a company and shareholder refunds, group relief or participation rules matter;
 - DeFi structures, DAOs, liquidity-pool governance or cross-border arrangements are involved;
 - the client wants a ruling on the Commissioner's guideline position, or the amount at stake justifies one;
-- the client needs licensing advice under MiCA or the Virtual Financial Assets Act (not a tax question).
+- the client needs licensing advice under MiCA and the Markets in Crypto-Assets Act, Cap. 647 (not a tax question).
 
 **Never:**
 - say all crypto gains are tax-free in Malta. Trading profit, and profit on anything bought to resell, is taxable;
@@ -399,6 +399,10 @@ Only the identified passages were read for this delta; historical source rows ke
 | DLT income classification, valuation and unchanged ordinary recognition read | https://mtca.gov.mt/docs/default-source/documents/guidelines--dlts-income-tax.pdf?sfvrsn=c74e28fc_1 | 2026-11-04 |
 | Cap123ordinaryresidentrates and remittanceexclusions read | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-04 |
 | MTCA actual YA2026 individual deadline read | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
+| Virtual Financial Assets Act, Cap. 590, art. 65(5) and 66 (VFA licences end 1 and 2 July 2026) | https://legislation.mt/eli/cap/590/eng/pdf | 2026-11-08 |
+| Markets in Crypto-Assets Act, Cap. 647, art. 2 (MFSA competent authority; MiCA Regulation) | https://legislation.mt/eli/cap/647/eng/pdf | 2026-11-08 |
+| MTCA DLT income-tax guideline, hybrid token and purpose-and-context passages | https://mtca.gov.mt/docs/default-source/documents/guidelines--dlts-income-tax.pdf?sfvrsn=c74e28fc_1 | 2026-11-08 |
+| Income Tax Act, Cap. 123, art. 56(27)(ii) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-08 |
 
 Correction ledger and complete old-topic destinations: [personal-mt-crypto-tax](../../evidence/malta-deep-audit-20261104/ledgers/personal-mt-crypto-tax.md). Full original research is archived there; this correction is not professional attestation.
 

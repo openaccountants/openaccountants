@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "PE"
   tax_year: "2026"
   last_updated: "2026-07-13"
-  reviewed_by: "Maria Clemencia Valverde Rios"
 ---
 
 # Peru Social Security, Health & Payroll Contributions
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Maria Clemencia Valverde Rios** on 2026-06-29.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -86,8 +84,6 @@ metadata:
 | Monthly filing | PLAME (Planilla Electrónica), Formulario Virtual 0601, v4.5 mandatory from Oct 2025 ([SUNAT](https://orientacion.sunat.gob.pe/pdt-plame)) |
 | Filing deadline | Monthly, by last digit of employer RUC per SUNAT cronograma (≈14th–24th of following month) ([SUNAT](https://orientacion.sunat.gob.pe/pdt-plame)) |
 | Annual return (FY2025) | Due 27 May – 10 Jun 2026 by RUC digit ([NVC Abogados](https://nvcabogados.com/annual-income-tax-return-2025-in-peru/)) |
-| Validated by | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
-| Validation date | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
 
 **Who pays what (monthly payroll):**
 
