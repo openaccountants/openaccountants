@@ -9,14 +9,14 @@ partial:
   IT-CORP: "2026 ordinary statutory computation covered; current UT currency value and filing/advance instructions not yet confirmed."
   VAT: "Existing IVA skill remains on tax year 2025."
   SC: "Existing skill remains on tax year 2025."
-  PR: "Existing skill remains on tax year 2025."
+  PR: "2026 payroll method covered; current UT, wage/bonus instruments, contribution assessments and filing instructions unconfirmed."
 ---
 
 # Venezuela: tax pack
 
 This map is maintained with the country pack. Coverage includes only Guides on main; pending work is identified separately.
 
-Tax years: 2025 (5 skills), 2026 (1 skill).
+Tax years: 2025 (4 skills), 2026 (2 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
@@ -24,7 +24,7 @@ Tax years: 2025 (5 skills), 2026 (1 skill).
 | Company tax | [Corporate tax](venezuela-corporate-tax.md) | 2026 | Partial: UT currency value and filing instructions unconfirmed |
 | VAT or sales tax | [IVA](venezuela-iva.md) | 2025 | Needs updating |
 | Social contributions | [Social contributions](venezuela-social-contributions.md) | 2025 | Needs updating |
-| Payroll | [Payroll](venezuela-payroll.md) | 2025 | Needs updating |
+| Payroll | [Payroll](venezuela-payroll.md) | 2026 | Partial: current monetary, contribution and filing inputs unconfirmed |
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
@@ -36,7 +36,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 - Confirm the current UT currency value, filing calendar and implementing instructions for [Corporate tax](venezuela-corporate-tax.md).
 - Bring [IVA](venezuela-iva.md) up to the current tax year.
 - Social contributions: bring [Social contributions](venezuela-social-contributions.md) up to the current tax year.
-- Payroll: bring [Payroll](venezuela-payroll.md) up to the current tax year.
+- Complete the current monetary, contribution and filing inputs listed in [Payroll](venezuela-payroll.md). Its revised text retains Jose Padilla's existing approval metadata and remains held pending his actual approval.
 - Write the transfer pricing skill.
 - Write the cross-border skill.
 
