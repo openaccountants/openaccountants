@@ -12,7 +12,7 @@ description: >
   non-residents at 35%. Trigger on: declaración de renta 2026, renta personas naturales, Formulario 210,
   cédula general, UVT 2026, rentas exentas 25%, 1.340 UVT, independiente costos o 25%, anticipo renta,
   Colombian income tax, freelancer Colombia tax. Out of scope: companies (co-corporate-income-tax),
-  IVA (colombia-iva), social security (co-social-contributions), Régimen Simple.
+  IVA (co-vat-return), social security (co-social-contributions), Régimen Simple.
 version: 2.1
 jurisdiction: CO
 category: international
@@ -34,7 +34,7 @@ domain: income-tax
 Related Colombia skills, linked rather than repeated:
 
 - [co-corporate-income-tax](co-corporate-income-tax.md): companies and the dividend rules from the company side.
-- [colombia-iva](colombia-iva.md): IVA. An individual who is responsable de IVA must file income tax whatever their income (art. 592(1)).
+- [co-vat-return](co-vat-return.md): IVA. An individual who is responsable de IVA must file income tax whatever their income (art. 592(1)).
 - [co-social-contributions](co-social-contributions.md): pension, health and ARL for the self-employed, including the IBC. This skill uses only the contributions actually paid.
 - [formalizing-small-informal-businesses-in-colombia](formalizing-small-informal-businesses-in-colombia.md): RUT, Régimen Simple and formalising a business (approved by Mauro Escudero; not repeated here).
 
