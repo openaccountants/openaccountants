@@ -1,193 +1,188 @@
 ---
 name: ar-vat-return
-description: "Argentine VAT return (IVA -- Impuesto al Valor Agregado) for self-employed individuals under the regimen general. Covers the standard 21% rate, reduced 10.5%, increased 27%, monthly filing via AFIP SIAP/web, debito/credito fiscal computation, and withholding/perception regimes. Primary source: Ley 23.349 (Ley de IVA) and its regulatory decree (Decreto 692/98)."
-version: 1.0
+description: >
+  Prepare and reconcile the Argentina monthly IVA return for 2026 through
+  IVA Simple, Portal IVA and F.2051. Use for Responsable Inscripto filing,
+  Libro ventas/compras, registration adjustments, retenciones/percepciones,
+  technical/free balances, no-movement returns and payment evidence.
+  The ordinary process applies to registered individuals and companies;
+  specialist corporate transactions are routed. argentina-iva owns supply
+  classification, rates, credit restrictions and imported-service computation.
+  Produce a return-to-working-paper reconciliation for professional review,
+  without inventing numbered boxes, current VEP codes or CUIT extensions.
+version: 1.2
 jurisdiction: AR
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-11
 depends_on:
   - vat-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Maria Valeria Benvenuti"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Argentina — IVA (VAT)
+# Argentina: monthly IVA return 2026 v1.2
 
-## Argentina VAT Return (IVA) v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## What this file is
+## Who this applies to
 
-**Obligation category:** CT (Consumption Tax)
-**Functional role:** Return preparation
-**Status:** Complete
+Ordinary Responsables Inscriptos preparing monthly IVA under IVA Law art. 27 and RG 5705. The earlier Guide focused on self-employed general-regime individuals, including a lawful Monotributo transition; this workflow remains applicable to them and to ordinary companies. A company's form does not make F.2051 unavailable. Complex corporate transactions require their specialist analysis before filing.
 
-This is a Tier 2 content skill for preparing the Argentine IVA (Impuesto al Valor Agregado) monthly return for self-employed individuals (autonomos/monotributistas graduating to regimen general). Argentina has a three-rate VAT system with extensive withholding and perception regimes.
+**Quick answer:** for 2026 originals and amendments use **Portal IVA → F.2051**, Clave Fiscal level 3+, completing electronic registration and then determination. Validate prefilled data, reconcile the two distinct credit balances, preview and confirm the actual return, then separately pay/reconcile. Ending the registration module is not final return submission. Get CUIT/status, period, invoices, tax-point ledger, prior balances and suffered-tax certificates first.
 
-## Section 1 -- Scope statement
+This Guide is **Not yet approved**. It loads the VAT workflow base and returns a filing checklist, reconciliation, acknowledgement/payment evidence and unresolved items. [argentina-iva](argentina-iva.md) owns the computation and classification. [ar-monotributo](ar-monotributo.md) owns simplified-regime eligibility/exit; there is no old approximate service ceiling repeated as an IVA registration threshold.
 
-**In scope:**
+Out of scope: agency withholding/perception computation, customs valuation, export-refund applications, construction/developer and agricultural elections, special financial instruments, complex transition-benefit calculations and provincial IIBB returns. Suffered national IVA retentions/perceptions are included. AGIP/ARBA collection is not national IVA merely because it appears on a bank statement.
 
-- Monthly IVA return (DDJJ IVA -- F.2002)
-- Responsable Inscripto (registered taxpayer under the general regime)
-- Three VAT rates: 21%, 10.5%, 27%
-- Debito fiscal (output VAT) and credito fiscal (input VAT)
-- Withholdings (retenciones) and perceptions (percepciones) suffered
-- Filing via AFIP web services or SIAP
-- Electronic invoicing (factura electronica) requirements
+## Rates, bands and thresholds
 
-**Out of scope (refused):**
+Load [IVA computation](argentina-iva.md) for the general/reduced/increased rate conditions, domestic exemptions and export treatment. Do not copy an old 2025 table into the return. The computation distinguishes books, food/medicinal resale, medical payer/provider, utilities/customer/premises, transport/distance, bank/insurance and goods/NCM conditions; no bank or supplier brand fixes a rate.
 
-- Monotributo (simplified small taxpayer regime)
-- Corporate IVA returns
-- IVA on imports (customs VAT) beyond basic classification
-- Transfer pricing implications
-- Percepciones as agent (acting as withholding/perception agent)
-- Provincial gross income tax (Ingresos Brutos)
+| Filing parameter | Rule and condition | Official source |
+|---|---|---|
+| Ordinary tax period | Monthly calendar period; specific annual-payment/deferral cases are separate elections, not permission to omit monthly records | IVA Law art. 27; https://biblioteca.arca.gob.ar/search/query/dcp/TOR_C_020631_1997_03_26 |
+| Current return | F.2051 in Portal IVA, Clave Fiscal level 3 or above | RG 5705 art. 2; https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t%3ARAG%7Cn%3A5705%7Co%3A9%7Ca%3A2025%7Cf%3A30%2F05%2F2025 |
+| Mandatory periods | November 2025 onward, originals and amendments | RG 5705 art. 8; https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t%3ARAG%7Cn%3A5705%7Co%3A9%7Ca%3A2025%7Cf%3A30%2F05%2F2025 |
+| Suffered IVA perception timing | Applicable amended regimes permit the perception period or one of the next five periods; confirm particular regime/exception | RG 5750 and ARCA current guidance; https://www.arca.gob.ar/iva/iva-simple/retenciones-percepciones.asp |
 
-## Section 2 -- Filing requirements
+## The base
 
-### Who must file
+### Build the legal working paper before using prefilled figures
 
-- **Who must file** — Every Responsable Inscripto must file a monthly IVA return, even if there is no activity (zero return). Registration is mandatory once annual revenue exceeds the Monotributo thresholds.  _(Ley 23.349, Art. 4)_
+Reconcile sales/purchases, credit/debit notes, advances, imports/exports and exemptions to the legally correct tax point. Output is not simply every deposit; input is not simply every amount labelled IVA. Use the computation Guide's art. 5 timing, arts. 10-12 base and credit checks, car/service/clothing restrictions, direct/common/private allocation and annual adjustment. Reduced-rate taxable sales remain taxable for allocation. Foreign B2B service IVA can need separate payment and next-period credit; do not place a same-month offset into ordinary output/input just to make it zero.
 
-### Filing schedule
+Document valid invoice/equivalent, issuer/buyer status and authority modality: electronic, authorised controller or permitted contingency/equivalent. A missing CAE is not conclusive if another lawful modality applies; unauthorised paper is not validated merely by appearance. C invoices do not create supplier IVA credit. Current invoice transparency means an IVA breakdown on a B/final-consumer invoice does not itself establish credit entitlement. The old “all paper invalid/all input Factura A” absolutes are replaced by the legal evidence and eligibility tests.
 
-**Filing schedule**  _(see rows)_
+Direct taxable credit is allocated first, direct exempt/non-taxed and private costs excluded, and only inseparable common costs prorated. Keep the annual last-month adjustment. Personal costs are not deductible because the platform accepts a number. The car ceiling, restricted services and tenant utility-in-owner-name exception are in the owning computation Guide; do not replace them with a guessed business-use percentage.
 
-| Item | Detail | Source |
-| --- | --- | --- |
-| Filing period | Monthly | Ley 23.349, Art. 27 |
-| Due date | Determined by CUIT ending digit (AFIP calendar, typically between the 18th and 22nd of the following month) | RG AFIP 3382/2012 |
-| Filing method | Electronic via AFIP web (F.2002 online) | RG AFIP 3711/2015 |
-| Electronic invoicing | Mandatory for all Responsables Inscriptos | RG AFIP 4291/2018 |
+### Keep technical and freely available balances separate
 
-## Section 3 -- Rates and thresholds
+IVA Law art. 24 distinguishes credit generated by the tax computation from excess direct payments. Excess eligible input over output becomes technical credit against future IVA debit, subject to separately authorised recovery regimes. Eligible suffered IVA retentions/perceptions and direct-payment excess have their own freely available balance, subject to actual compensation/refund/transfer rules. Do not automatically offset that balance against any ARCA obligation or describe all negative IVA as cash refundable.
 
-### VAT rates
+A positive technical determination is reduced by eligible suffered IVA amounts and actual admitted payments/balances, avoiding double use. Negative technical credit remains separately identified while direct-payment excess stays in its own account. Reconcile opening, changes and closing balances to the prior filed return and actual tax account. Nominal ARS controls do not imply automatic CPI revaluation or an unconditional no-expiry guarantee; the computation Guide explains the statutory index limitation.
 
-**VAT rates**  _(see rows)_
+### Suffered IVA amounts and timing
 
-| Rate | Applies to | Source |
-| --- | --- | --- |
-| 21% (standard) | Most goods and services | Ley 23.349, Art. 28 |
-| 10.5% (reduced) | Capital goods, certain food products, medical services, newspapers, residential construction, certain transport | Ley 23.349, Art. 28, inc. a) |
-| 27% (increased) | Telecommunications, gas, electricity, water for non-residential use | Ley 23.349, Art. 28, inc. b) |
-| 0% (exempt) | Specified exempt supplies (education, health under certain conditions, financial services, books, bread/milk) | Ley 23.349, Art. 7 |
+ARCA's current [retentions/perceptions instructions](https://www.arca.gob.ar/iva/iva-simple/retenciones-percepciones.asp), read with RG 5750, distinguish:
 
-### Key thresholds
+- Retentions generally belong to the period in which practiced. The prescribed exception permits inclusion in the first return whose due date follows the retention where the underlying tax point arose earlier. Match certificate, transaction and period before using it.
+- Perceptions under the amended regimes may be used in their period or one of the five immediately following periods. The RG 1603 art. 8 previous-period exception requires the underlying operation to belong to that previous period and the perception to be practiced by that previous return's filing deadline. This is not permission to put every late certificate in any old year.
+- Portal IVA displays SIRE/SICORE information. Validate it against real certificates; add/correct/import lawful omissions and prevent duplication. The portal is not proof the buyer applied the correct regime/rate.
 
-**Key thresholds**  _(see rows)_
+Do not use the old universal 50%/100% withholding shortcut. The customer may be a designated agent, but current regime, invoice status and transaction determine the actual withheld amount. Acting as that agent is outside this recipient's return Guide. Bank IIBB, Ganancias or other levy entries must not be relabelled IVA.
 
-| Item | Amount | Source |
-| --- | --- | --- |
-| Monotributo graduation threshold (services, 2025) | ARS ~11,916,410/year (updated periodically) | Ley 24.977, Annex |
-| Credito fiscal carry-forward | Unlimited (no expiry) | Ley 23.349, Art. 24 |
+## Deadlines and filing
 
-## Section 4 -- Computation rules (Step format)
+### Select the legal period and current route
 
-### Step 1: Compute debito fiscal (output VAT)
+RG 5705 arts. 7-8 mandates F.2051 for November 2025 and later. June–October 2025 has the prescribed transitional options; May 2025 and earlier stays with the taxpayer's applicable historical procedure. F.731/F.810/F.2002 and SIAP are not the ordinary 2026 route. An amendment follows its actual period's rules, not automatically today's newest screen.
 
-0. **Compute debito fiscal** — For each sale/service during the month: 1. Classify the transaction: standard (21%), reduced (10.5%), increased (27%), or exempt. 2. Verify the electronic invoice (factura electronica) was issued via AFIP. 3. Debito fiscal = sum of IVA charged on all invoices issued.
+Ordinary schedule is the following month by CUIT ending: 0/1 day 18, 2/3 day 19, 4/5 day 20, 6/7 day 21, 8/9 day 22 (RG 4172 current annex V(a), imported by RG 5705 art. 5). Nonbusiness days/holidays move the affected and successive dates correlatively to following business days under RG 4172 art. 2. Check the actual month's calendar and any applicable extension before stating a calendar date. The old fixed “18th–23rd” range is not the controlling rule. A qualifying MiPyME payment deferral has its own eligibility/timing; do not infer that filing is deferred too.
 
-### Step 2: Compute credito fiscal (input VAT)
+### Follow the official current F.2051 sequence
 
-0. **Compute credito fiscal** — For each purchase/expense during the month: 1. Verify the supplier's invoice is a valid factura electronica. 2. Classify the IVA rate charged. 3. Verify the expense is related to taxable activity (credito fiscal is only recoverable on purchases related to taxable sales). 4. Credito fiscal = sum of IVA on valid purchase invoices.
+The [official 14-step tutorial, Guide 518](https://serviciosweb.afip.gob.ar/genericos/guiasPasoPaso/VerGuia.aspx?id=518), was read through every public step and its displayed screenshots. It supports the field/card labels below; no live authenticated filing or numbered-box test was performed.
 
-### Step 3: Apply pro-rata rule if mixed activities
+1. Sign in with CUIT/Clave Fiscal, open **Portal IVA**. Under **Nueva declaración jurada**, choose **Ingresar**, fiscal period, **Continuar**. Confirm taxpayer and original/amendment context before changing records.
+2. Indicate actual movements and specific operations. If truly no operations, use **Sin movimientos → Registrar sin movimientos** for registration. Continue reviewing determination and opening balances; no activity does not establish that a prior balance or other adjustment vanishes.
+3. Open **Libro ventas**. Review documents including cancellations; import missing records from ARCA, own file or **Agregar comprobante**. For ARCA import, choose carefully whether existing records are retained or replaced. Reconcile net sales, rates/output, exempt/non-taxed/export entries and credit notes. Then **Continuar a Libro compras**.
+4. Review **Libro compras**, add permitted missing documents and import/customs records. Reconcile total and computable IVA to the working paper, including direct/common/private allocation and restricted credits. Software's **Asignación Directa / Prorrateo Global / CF Computable Global** options do not change art. 13. Then **Continuar a Ajustes**.
+5. Under **Ajustes al Crédito Fiscal**, enter only supported applicable adjustments, including qualifying social-security credit/other concepts. Use **Guardar** and **Volver**. Under **Ajustes al Débito Fiscal**, review tax-point adjustments and the applicable debit/restitution cards. Do not enter a generic balancing plug.
+6. Complete compulsory **Apertura de otros conceptos**, using **Editar/Guardar** for **Operaciones que generan Crédito Fiscal**, **Restitución de Crédito Fiscal**, **Débito Fiscal** and **Restitución de Débito Fiscal** as applicable. Reconcile every adjustment to evidence.
+7. Choose **Vista previa** for registration. If correct, **Finalizar presentación y continuar**. This finalises registration and moves to the tax-determination module; it is not by itself submission of the completed F.2051.
+8. Confirm the month's characteristics, including exports, special regimes, prior balances and prepayments. The choices enable the relevant determination cards. **Continuar**.
+9. Reconcile these actual cards: **Débito y crédito fiscal**; **Exportaciones, operaciones exentas y regímenes especiales**; **Retenciones y percepciones**; **Pagos a cuenta**; **Administración de saldos**; **Determinación del impuesto**. Prefilled output/input comes from registration; prefilled technical/free balances come from the prior period. Check both separately. Correct/import suffered-tax data with attention to replacement options and legal timing.
+10. Preview the actual F.2051, reconcile determination and payment/carry balances, then confirm **PRESENTAR**. Save the filed declaration, acknowledgement and actual confirmation/reference. If validation rejects a record, resolve it from the source evidence rather than altering the tax to silence the screen.
+11. Arrange payment through the current authorised mechanism, including VEP where available, by the applicable due date. Retain bank/payment reference and reconcile settlement in the tax account. Filing receipt is not proof of payment. Generic live VEP numeric codes/current payment screens have not been independently confirmed here and must not be invented.
+12. Carry technical/free balances independently into the next period; retain amendments, adjustment explanation and replaced-file history. Reconcile consecutive periods, not only the current month's bank movement.
 
-- **Pro-rata rule for mixed activities** — If the taxpayer makes both taxable and exempt sales: - Credito fiscal must be apportioned between taxable and exempt activities. - Only the portion attributable to taxable activities is recoverable. - Pro-rata = taxable sales / (taxable sales + exempt sales). - Recoverable credito fiscal = total credito fiscal x pro-rata.  _(Ley 23.349, Art. 13)_
+The linked older Libro IVA Digital PDF describes historical Libro IVA/IVA Listo interfaces and was not used to invent current F.2051 buttons. The current specifications require taxable/exempt/non-taxed transactions, imports/exports and credit/debit notes; a foreign goods supplier invoice does not replace a customs despacho. Exact taxpayer-specific special flags/file layouts must be checked before bulk import.
 
-### Step 4: Compute net IVA position
+## Penalties and interest
 
-- **Net IVA position** — Debito fiscal - credito fiscal = net IVA. - If positive: tax to pay. - If negative: carry forward as saldo a favor tecnico (technical credit balance).
+Current 2026 penalty amounts and interest percentages are unconfirmed; no nominal historic fine or guessed daily rate is provided. No-movement filing, payment, adjustment and certificate evidence remain separate obligations. Missing prefilled data does not excuse an incorrect return. Record the actual notice, tax/period, principal, source and payment; refer disputed input-credit, export-recovery or imported-service assessments before finalising an amendment.
 
-### Step 5: Apply withholdings and perceptions suffered
+## Cross-border points
 
-- **Withholdings and perceptions application** — Deduct IVA withholdings (retenciones) and perceptions (percepciones) suffered during the month from the net IVA: - Withholdings: amounts withheld by customers who are designated withholding agents. - Perceptions: additional IVA charged by suppliers who are designated perception agents. Net amount due = net IVA - withholdings - perceptions. If negative: the balance becomes saldo de libre disponibilidad (freely available balance) that can be applied to other AFIP obligations.
+The [IVA computation Guide](argentina-iva.md) owns imported-service base/timing, non-RI digital collection and export eligibility. Do not treat foreign-client service receipts as exports without effective foreign use, or foreign brand names as imports when a local entity supplied the service. Export input recovery under art. 43 is a separate claim procedure; the monthly return does not automatically trigger a refund.
 
-### Step 6: File and pay
+Keep foreign-currency invoice, conversion date/rate evidence, bank proof, customs or E-invoice records as appropriate. Income-tax withholding/treaties/TP are separate and route to [cross-border](argentina-cross-border.md) and [TP](argentina-transfer-pricing.md). A service export does not automatically need a goods customs declaration.
 
-0. **File and pay** — - File F.2002 via AFIP web portal. - Pay via VEP (Volante Electronico de Pago) through authorized banks.
+## Two worked examples that recompute
 
-## Section 5 -- Edge cases and special rules
+### 1. File the ordinary determination and suffered amounts
 
-### E-1: Factura electronica requirement
+Assume valid domestic taxable sales net1,000,000 and eligible purchases net600,000 at the general21% rate, correct period, no prior technical/free balance. Output210,000, input126,000, technical payable84,000. Valid correctly timed suffered IVA retention30,000 and perception10,000 reduce payment to44,000. Reconcile those figures through the output/input, suffered-tax and determination cards; save return acknowledgement and separate44,000 payment proof.
 
-- **Factura electronica requirement** — All invoices (ventas and compras) must be electronic invoices authorized by AFIP. Paper invoices are no longer valid for credito fiscal. Types: - Factura A: between Responsables Inscriptos - Factura B: from Responsable Inscripto to final consumer or exempt subject - Factura C: from Monotributista Only Factura A and certain import documents generate credito fiscal.
-
-### E-2: Saldo a favor tecnico vs. libre disponibilidad
-
-- **Saldo a favor tecnico vs. libre disponibilidad** — **Saldo a favor tecnico:** arises when credito fiscal exceeds debito fiscal. Can only be carried forward against future debito fiscal. **Saldo de libre disponibilidad:** arises from excess withholdings/perceptions. Can be used against any AFIP tax obligation (IVA, Ganancias, etc.) or requested as refund.
-
-### E-3: Non-computable credito fiscal
-
-- **Non-computable credito fiscal** — Credito fiscal is NOT recoverable for: - Personal consumption items (food, clothing for personal use) - Automobiles exceeding a threshold value - Invoices from Monotributistas (Factura C has no IVA discrimination) - Purchases from non-registered suppliers
-
-### E-4: Services exported
-
-- **Services exported treatment** — Services exported (performed for foreign clients, consumed abroad) are treated as zero-rated with credit recovery. The taxpayer can claim a refund of the related credito fiscal.  _(Ley 23.349, Art. 43)_
-
-### E-5: Inflation and currency
-
-All amounts are in Argentine Pesos (ARS). Given high inflation, the real value of credito fiscal carry-forwards erodes over time. There is no inflation adjustment mechanism for VAT credits.
-
-### E-6: Withholding regimes (regimenes de retencion)
-
-- **Withholding regimes** — Large buyers (designated by AFIP) must withhold a percentage of IVA from payments to suppliers. Common rates: 50% or 100% of the IVA. The withheld amount is credited against the supplier's IVA liability.  _(RG AFIP 2854/2010)_
-
-## Section 6 -- Test suite
-
-### Test 1: Standard monthly return
-
-**Input:** Sales at 21%: ARS 1,000,000. Purchases at 21%: ARS 600,000.
-**Expected:** Debito: ARS 210,000. Credito: ARS 126,000. Net IVA: ARS 84,000.
-
-### Test 2: Mixed rates
-
-**Input:** Sales at 21%: ARS 500,000. Sales at 10.5%: ARS 200,000. Purchases at 21%: ARS 400,000.
-**Expected:** Debito: (500,000 x 21%) + (200,000 x 10.5%) = 105,000 + 21,000 = 126,000. Credito: 84,000. Net: ARS 42,000.
-
-### Test 3: Withholdings reduce payment
-
-**Input:** Net IVA: ARS 84,000. Withholdings suffered: ARS 30,000. Perceptions suffered: ARS 10,000.
-**Expected:** Amount due: 84,000 - 30,000 - 10,000 = ARS 44,000.
-
-### Test 4: Saldo a favor
-
-**Input:** Debito: ARS 50,000. Credito: ARS 80,000.
-**Expected:** Saldo a favor tecnico: ARS 30,000. Carry forward to next month. No payment due.
-
-### Test 5: Pro-rata for mixed activities
-
-**Input:** Taxable sales: ARS 800,000. Exempt sales: ARS 200,000. Total credito fiscal: ARS 100,000.
-**Expected:** Pro-rata: 800,000 / 1,000,000 = 80%. Recoverable credito: ARS 80,000.
-
-## Section 7 -- Prohibitions
-
-- **P-1:** Do NOT claim credito fiscal from Factura C (Monotributista invoices). They do not discriminate IVA.
-- **P-2:** Do NOT claim credito fiscal on personal consumption items.
-- **P-3:** Do NOT ignore the pro-rata rule when both taxable and exempt sales exist.
-- **P-4:** Do NOT confuse saldo a favor tecnico with saldo de libre disponibilidad. They have different uses.
-- **P-5:** Do NOT file without verifying all invoices are properly authorized electronic invoices.
-- **P-6:** Do NOT advise on Monotributo eligibility or transition. That is a separate analysis.
-
-## Section 8 -- Self-checks
-
-Before delivering output, verify:
-
-- [ ] All sales invoices are authorized electronic invoices (factura electronica)
-- [ ] Correct VAT rate applied per transaction (21%, 10.5%, 27%, exempt)
-- [ ] Credito fiscal only claimed from valid Factura A or import documents
-- [ ] Pro-rata applied if mixed taxable/exempt activities
-- [ ] Withholdings and perceptions correctly deducted
-- [ ] Saldo a favor correctly classified (tecnico vs. libre disponibilidad)
-- [ ] Filing due date verified against AFIP calendar for CUIT ending digit
-- [ ] Zero return filed if no activity
-
-## Section 9 -- Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+```oa-check
+name: Monthly IVA determination and suffered taxes
+inputs:
+  net_sales: 1000000
+  net_purchases: 600000
+  retention: 30000
+  perception: 10000
+steps:
+  - output_iva: net_sales * 0.21
+  - input_iva: net_purchases * 0.21
+  - technical_payable: output_iva - input_iva
+  - balance_to_pay: technical_payable - retention - perception
+expected:
+  output_iva: 210000
+  input_iva: 126000
+  technical_payable: 84000
+  balance_to_pay: 44000
+```
+
+### 2. Negative computation is not all freely available
+
+Assume output100,000, eligible input120,000 and valid current suffered IVA retention8,000, no other amounts. Technical carryforward is20,000; direct-payment/free balance is8,000. No payment is due, but **Administración de saldos** must not show28,000 freely available. Both balances need separate next-period controls.
+
+```oa-check
+name: Separate technical and freely available balances
+inputs:
+  output_iva: 100000
+  input_iva: 120000
+  suffered_retention: 8000
+steps:
+  - technical_credit: max(0, input_iva - output_iva)
+  - technical_payable: max(0, output_iva - input_iva)
+  - free_balance: max(0, suffered_retention - technical_payable)
+  - amount_to_pay: max(0, technical_payable - suffered_retention)
+expected:
+  technical_credit: 20000
+  technical_payable: 0
+  free_balance: 8000
+  amount_to_pay: 0
+```
+
+The other old tests remain valid only with their stated legal assumptions: taxable sales500,000 at21% plus200,000 at10.5% give output126,000; eligible purchases400,000 at21% give84,000 and technical payable42,000. Output50,000/input80,000 leaves30,000 technical credit. For taxable800,000/exempt200,000,100,000 wholly inseparable common IVA permits estimated80,000; directly identifiable amounts must instead be allocated first, and annual actual-operation adjustment still applies. Do not make a reduced-rate sale exempt for this test.
+
+## Ask the client first
+
+1. CUIT/status, month, original/amended return, fiscal close, activity and actual due-date/election evidence.
+2. Issued/received invoices/equivalents and authorisations, tax-point ledger, imports/exports and credit/debit notes.
+3. Taxable/exempt/non-taxed operations, private/common/direct allocation, restricted assets/services and supporting exceptions.
+4. Prior filed F.2051 and tax account, separately reconciled technical/free balances, paid amounts and adjustments.
+5. Actual IVA retention/perception certificates with regime/date, all ARS/foreign-currency bank/processors and missing documents.
+6. Current portal access/filing reference, notices, special flags and evidence for any deferred payment or specialist transaction.
+
+Completion checklist: all required periods registered; source records validated; legal rates/taxpoints/credits established; direct allocation and annual adjustment checked; suffered taxes timed and not duplicated; technical/free balances separate; actual CUIT deadline checked; final F.2051 acknowledged; payment independently reconciled; next-period schedules saved. An unresolved eligibility/taxpoint/credit gap stops that component, not a request to guess a filing figure.
+
+## Sources
+
+| Source and portions read | Official URL | Read on |
+|---|---|---|
+| Read for monthly period,credit/base/balances and documentary eligibility: IVA Law arts.5,10-13,24,27-28,37,39,41,43; quotation: "sólo deberá aplicarse a los débitos fiscales" | https://biblioteca.arca.gob.ar/search/query/dcp/TOR_C_020631_1997_03_26 | 2026-11-11 |
+| Read for current F.2051 route,modules,validation,effective dates and calendar/payment: RG5705whole; quotation: "deberán ser validados por los contribuyentes" | https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t%3ARAG%7Cn%3A5705%7Co%3A9%7Ca%3A2025%7Cf%3A30%2F05%2F2025 | 2026-11-11 |
+| Read for ordinarycalendarannexV(a)-(b)andholidayruleart.2: RG4172andcurrentannex; quotation: "días hábiles inmediatos siguientes" | https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t:RAG%7Cn:4172%7Co:3%7Ca:2017%7Cf:22/12/2017 | 2026-11-11 |
+| Read for IVA due-daygrid/currentannexsectionV: quotation: "0 y 1" | https://biblioteca.arca.gob.ar/search/query/adjunto.aspx?p=t:RAG%7Cn:4172%7Co:3%7Ca:2017%7Cd:RG4172_efecto4354.pdf | 2026-11-11 |
+| Read for everycurrentF.2051tutorialstep1-14 anddisplayedscreens: Guide518; quotation: "Finalizar presentación y continuar";publicstepresponsesread,notjustshellpage | https://serviciosweb.afip.gob.ar/genericos/guiasPasoPaso/VerGuia.aspx?id=518 | 2026-11-11 |
+| Read for registration specifications/recordscope andallocationoptions: ARCAIVA Simple; quotation: "SIN MOVIMIENTO" | https://www.arca.gob.ar/iva/iva-simple/especificaciones-especiales.asp | 2026-11-11 |
+| Read for sufferingperiod/certificates/SIRE-SICORE: ARCAretentions/perceptions; quotation: "alguno de los 5 períodos fiscales inmediatos siguientes" | https://www.arca.gob.ar/iva/iva-simple/retenciones-percepciones.asp | 2026-11-11 |
+| Read for current amendedregime perceptiontiming: RG 5750 operative articles and art.10: applies to original/amended returns presented from 1 September 2025; quotation: "que se presenten a partir del 1 de septiembre de 2025, inclusive" | https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t:RAG%7Cn:5750%7Co:9%7Ca:2025%7Cf:26/08/2025 | 2026-11-11 |
+| Read for prefilleddatavalidation andtwo modules: ARCAconfectionpage; quotation: "Todos los comprobantes, certificados o datos" | https://www.arca.gob.ar/iva/iva-simple/confeccion-declaracion.asp | 2026-11-11 |
+
+Not yet confirmed: taxpayer-specific current-month dates/extensions and elections; live generic VEP numericcodes/payment screens; numberedboxes not shown by currenttutorial; currentpenalties/interest; detailedbulkimport/specialflags beyondordinarysequence. Old approximate Monotributothreshold, universal50%/100%agent rates, all-electronic/A-only credit, unlimited-credit-life and any-ARCA-tax offset claims are replaced by the owning Guide's verified conditional rules or explicit specialist/unconfirmed route, not repeated as facts.

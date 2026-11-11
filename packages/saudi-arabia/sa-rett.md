@@ -5,9 +5,7 @@ jurisdiction: SA
 tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Mehran Habib"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: estate-wealth-tax
 ---
 
@@ -25,7 +23,6 @@ domain: estate-wealth-tax
 - **Declaration** — Via ZATCA portal BEFORE notarisation  _(RETT Bylaws, Article 4.3 Detailed Guidelines for RETT)_
 - **Taxpayer** — Seller (transferor) is the legal taxpayer  _(Royal Decree A/84, Article 4.5 Detailed Guidelines for RETT)_
 
-Reviewed against the cited tax authorities by Mehran Habib on 2026-06-06. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified skill_facts — edit the facts, not the prose.
 
 ## Section 1 — Quick reference
 
