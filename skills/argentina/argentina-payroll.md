@@ -101,12 +101,14 @@ These are Annex II D rules, not extra personal allowances. For the 5% caps, use 
 | Voluntary medical cover | Up to 5% of the specified cumulative net income, for employee and qualifying dependants; distinguish compulsory health discounts | RG 4003 Annex II D(c); https://biblioteca.arca.gob.ar/dcp/REAG01004003_2017_03_02 |
 | Donations | Up to 5% of the specified cumulative net income; only qualifying public bodies and exempt institutions; excess within the year can carry into later payroll calculations | Annex II D(g), same |
 | Tenant's housing rent | 40% of invoiced rent, capped at GNI; taxpayer must own no property, even partly | Annex II D(h), same |
-| Additional housing-rent deduction | 10% of monthly rent, with invoice and contract registered in RELI; can supplement D(h) where eligible; also available to qualifying landlord | Annex II D(s), same |
+| Additional housing-rent deduction | 10% of monthly rent, with invoice and contract registered in RELI; can supplement D(h) where eligible; also available to a taxable landlord. It does not apply to the 2026 exempt housing rentals under LIG art. 26(n) and Decreto 862 art. 83 | Annex II D(s), same |
 | Medical/paramedical fees | 40% of invoiced eligible services, capped at 5% of the specified annual net income; annual/final only | Annex II D(j), same |
 | Domestic staff | Documented remuneration, employer contributions and mandatory work-risk insurance for staff under Ley 26.844, capped at GNI | Annex II D(m), same |
 | Education/tools | Cap 40% of GNI; qualifying dependent children or children up to 24 inclusive who study regularly/professionally, cannot support themselves and meet the GNI net-income test; documented and entered in SiRADIG | Annex II D(r), same |
 | Mortgage interest on own home | Up to ARS 20,000 annually for a qualifying purchase/construction mortgage; a co-owner is limited to their ownership share of that cap | LIG art. 85(a); https://biblioteca.arca.gob.ar/dcp/LEY_C_020628_2019_12_05 |
 | Insurance/retirement, funeral costs | Apply the relevant statutory/annual cap before any claim; caps are not confirmed here, so stop these claim lines until read from the current official source | Annex II D(d),(e),(p); https://biblioteca.arca.gob.ar/dcp/REAG01004003_2017_03_02 |
+
+For rent accruing from 1 January 2026, current Decreto 862 art. 83 exempts qualifying individual/estate landlord income where the property is the tenant's unique family permanent home, and disallows the landlord's art. 85(k) deduction for that exempt income. Source: https://biblioteca.arca.gob.ar/dcp/DEC_C_000862_2019_12_06 . Do not apply a landlord deduction against exempt rent.
 
 Do not confuse eligibility for education costs for a student over 18 with entitlement to the ordinary child personal deduction. Do not deduct unsupported expenditure merely because the payroll software offers a field.
 
@@ -211,6 +213,7 @@ Read on means the specified text was extracted and read, not merely that its URL
 | Source and text read | Official URL | Read on |
 |---|---|---|
 | Read for RG 4003 consolidated, arts. 1-13, 19, 21-25 and current Annex II A-H; quotation: "en el segundo semestre del año fiscal: acumulados mensualmente en ese período semestral" | https://biblioteca.arca.gob.ar/dcp/REAG01004003_2017_03_02 | 2026-11-11 |
+| Read for Decreto 862 art. 83, qualifying 2026 housing-rent exemption and landlord deduction exclusion; quotation: "única, familiar y de ocupación permanente" | https://biblioteca.arca.gob.ar/dcp/DEC_C_000862_2019_12_06 | 2026-11-11 |
 | Read for LIG arts. 24, 30-33 and 85(a), arrears, family and employee eligibility, mortgage cap; quotation: "se añadirá como deducción especial la doceava parte" | https://biblioteca.arca.gob.ar/dcp/LEY_C_020628_2019_12_05 | 2026-11-11 |
 | Read for ARCA first-semester 2026 deductions, title and monthly/annualised tables; quotation: "5.151.802,50" | https://www.arca.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-ene-a-jun-2026.pdf | 2026-11-11 |
 | Read for ARCA second-semester 2026 deductions, title and cumulative table; quotation: "5.585.736,93" | https://www.arca.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-jul-dic-2026.pdf | 2026-11-11 |
