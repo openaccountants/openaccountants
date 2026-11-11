@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "KE"
   tax_year: "2025"
   last_updated: "2026-07-30"
-  reviewed_by: "Julian Njoroge Maina"
 ---
 
 # Tax amnesty under the Finance Act, 2026: what to do and by when

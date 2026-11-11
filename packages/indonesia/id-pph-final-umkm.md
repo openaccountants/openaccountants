@@ -5,9 +5,7 @@ jurisdiction: ID
 tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "RILIA PUTRI"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: income-tax
 ---
 
@@ -19,7 +17,6 @@ domain: income-tax
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **RILIA PUTRI** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 

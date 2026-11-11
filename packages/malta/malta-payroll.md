@@ -1,10 +1,10 @@
 ---
 name: malta-payroll
 description: Use this skill whenever asked about Malta payroll processing for employed persons. Trigger on phrases like "Malta payroll", "FSS deduction", "employee SSC", "Class 1 contributions", "FS5", "FS3", "FS7", "payslip Malta", "net salary Malta", "PAYE Malta", "tax withholding Malta", "employer SSC Malta", "Maternity Trust Fund", "COLA Malta", "minimum wage Malta", "overtime Malta", "gross to net Malta", "salary calculation Malta", or any question about computing employee pay, withholding tax, or social security contributions for Malta-based employees. This skill covers FSS income tax withholding, Class 1 SSC (employee and employer), statutory bonuses, minimum wage, mandatory benefits, payslip requirements, and filing obligations. ALWAYS read this skill before processing any Malta payroll.
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -24,7 +24,7 @@ This skill covers what a Maltese employer (a "payer") must do for employees (the
 
 **Source scope.** The law and the specific official pages identified in Sources were read on 4 November 2026 for this correction. Historical source-access failures are preserved in the evidence archive, not used as a present unavailability claim. Only the listed changed claims were rechecked; remaining specialist or form-layout gaps are explicitly held.
 
-**Not covered:** the employee's own tax return, part-time final tax and personal reliefs (see the malta-income-tax skill), self-employed Class 2 contributions, fringe-benefit valuation, the special expatriate regimes (highly qualified persons and similar), and sector Regulation Orders beyond what is named here.
+**Not covered:** the employee's own tax return, part-time final tax and personal reliefs (see the malta-income-tax skill), self-employed Class 2 contributions, fringe-benefit valuation, the special expatriate regimes (from 1 January 2026 the [Tax Treatment of Highly Skilled Individuals Rules, L.N. 20 of 2026](https://legislation.mt/eli/ln/2026/20/eng), which take over from the Highly Qualified Persons Rules and similar schemes), and sector Regulation Orders beyond what is named here.
 
 ## Ask the client first
 
@@ -78,7 +78,7 @@ If L is negative, deduct nothing that period. The deduction may not exceed 50% o
 
 ### Rate tables for 2026 emoluments (year of assessment 2027) ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
 
-Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, replaced article 56(1)(a) and (b) from year of assessment 2027. Each band is "exceeds [lower] but is less than [upper]". Most formulas meet continuously at their band edges; the parent-one-child branch has the authority discrepancy described below.
+Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, replaced article 56(1)(a) and (b) from year of assessment 2027. Each band is "exceeds [lower] but is less than [upper]". Every formula meets the next one at the band edge, except the parent-one-child 35% band explained below.
 
 | FS4 status (article 56(1)) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% over €60,000 (subtract) |
 | --- | --- | --- | --- | --- |
@@ -87,10 +87,10 @@ Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, re
 | Parent, (b)(ii) | €13,000 | €13,000–€17,500 (€1,950) | €17,500–€60,000 (€3,700) | €9,700 |
 | Married, 1 qualifying child, (a)(ii) | €17,500 | €17,500–€26,500 (€2,625) | €26,500–€60,000 (€5,275) | €11,275 |
 | Married, 2+ qualifying children, (a)(iii) | €22,500 | €22,500–€32,000 (€3,375) | €32,000–€60,000 (€6,575) | €12,575 |
-| Parent, 1 qualifying child, (b)(iv) | €14,500 | €14,500–€21,000 (€2,175) | €21,000–€60,000 (€4,275) | **HOLD**: Act €10,270 / MTCA €10,275 |
+| Parent, 1 qualifying child, (b)(iv) | €14,500 | €14,500–€21,000 (€2,175) | €21,000–€60,000 (€4,275) | €10,270 (MTCA's table shows €10,275) |
 | Parent, 2+ qualifying children, (b)(v) | €18,500 | €18,500–€25,500 (€2,775) | €25,500–€60,000 (€5,325) | €11,325 |
 
-**Calculation HOLD: parent with one qualifying child above €60,000.** The consolidated Act, article 56(1)(b)(iv), prints a subtraction of **€10,270**, while MTCA's amended 13 April 2026 communication and current 2026 table publish **€10,275**. Both primary texts were read on 4 November 2026. Do not silently choose a subtraction or issue a final calculation for this branch until the discrepancy is resolved. Record both candidate amounts and obtain legal/authority clarification. [Consolidated Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c); [MTCA amended table](https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5).
+**Parent with one qualifying child above €60,000: use €10,270, the figure in the Act.** Act III of 2026, article 19, sets the subtraction in article 56(1)(b)(iv) at **€10,270**, and the consolidated Act prints the same figure. MTCA's amended 13 April 2026 communication and its current 2026 table publish **€10,275**. The Act is the law, so compute with €10,270. Tell the employee that MTCA's table shows €10,275: the Act's figure gives €5 more tax a year at every income in this band, and €10,275 is the figure that joins the 25% and 35% bands at €60,000. Act III of 2026 was read on 8 November 2026. [Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430); [Consolidated Act](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c); [MTCA amended table](https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5).
 
 **Who may use which status.** A payer applies the status the FS4 declares. It still helps to know the conditions, because a wrong FS4 gives the employee a year-end bill.
 
@@ -127,18 +127,18 @@ Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, re
 | D | Basic wage above the Category D point | fixed maximum (higher for born 1962 or later) | same |
 | E / F | Under 18 / over 18 on recognised student-worker or similar schemes | 10%, capped | 10%, capped |
 
-**2026 Class 1 authority table, read 4 November 2026.** Use [MTCA's annual table](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates), not the historical 2024 amounts still printed in the consolidated Act.
+**2026 Class 1 authority table, read 4 November 2026 and checked again on 8 November 2026.** Use [MTCA's 2026 table](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026), not the historical 2024 amounts still printed in the consolidated Act.
 
 | Category / birth cohort | Basic weekly wage (€) | Employee weekly rate (€) | Employer weekly rate (€) | Employer maternity rate (€)  Source |
 |---|---|---|---|------|
-| A, under 18 | 0.10–229.44 | 6.62 | 6.62 | 0.20  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
-| B, 18+ | 0.10–229.44 | 22.94, subject to eligible election below | 22.94 | 0.69  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
-| C, born by 31 December 1961 | 229.45–490.38 | 10% | 10% | 0.3%  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
-| D, born by 31 December 1961 | 490.39 and over | 49.04 | 49.04 | 1.47  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
-| C, born from 1 January 1962 | 229.45–559.30 | 10% | 10% | 0.3%  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
-| D, born from 1 January 1962 | 559.31 and over | 55.93 | 55.93 | 1.68  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
-| E, qualifying student scheme under 18 | scheme category | 10%, maximum 4.38 | 10%, maximum 4.38 | 0.3%, maximum 0.13  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
-| F, qualifying student scheme 18+ | scheme category | 10%, maximum 7.94 | 10%, maximum 7.94 | 0.3%, maximum 0.24  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates) |
+| A, under 18 | 0.10–229.44 | 6.62 | 6.62 | 0.20  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
+| B, 18+ | 0.10–229.44 | 22.94, subject to eligible election below | 22.94 | 0.69  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
+| C, born by 31 December 1961 | 229.45–490.38 | 10% | 10% | 0.3%  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
+| D, born by 31 December 1961 | 490.39 and over | 49.04 | 49.04 | 1.47  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
+| C, born from 1 January 1962 | 229.45–559.30 | 10% | 10% | 0.3%  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
+| D, born from 1 January 1962 | 559.31 and over | 55.93 | 55.93 | 1.68  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
+| E, qualifying student scheme under 18 | scheme category | 10%, maximum 4.38 | 10%, maximum 4.38 | 0.3%, maximum 0.13  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
+| F, qualifying student scheme 18+ | scheme category | 10%, maximum 7.94 | 10%, maximum 7.94 | 0.3%, maximum 0.24  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026) |
 
 The base is basic weekly wage or the weekly equivalent of basic monthly salary. Percentage contributions are rounded to cents. The statute/annual-table distinction is preserved; no claim is made that the older consolidated table itself has been replaced by these administrative figures.
 
@@ -168,7 +168,7 @@ From 1 January 2026, "The wages of whole-time employees shall be increased by fo
 
 ### Statutory bonuses ([Employment and Industrial Relations Act, Cap. 452, art. 23](https://legislation.mt/getpdf/69faf83e2eb86e24207539ec))
 
-- **Statutory bonuses.** Every employer must pay each **whole-time** employee the statutory bonuses. They are paid "between the 15th and the 30th day of the month of June and between the 15th and 23rd day of the month of December". Each payment "shall not be less than one-half of that which the Government shall have announced in the general estimates of any particular year as payable by the Government to each of its employees during that year" (article 23(1)).
+- **Statutory bonuses.** Every employer must pay each **whole-time** employee the statutory bonuses. They are paid "between the 15th and the 30th day of the month of June and between the 15th and 23rd day of the month of December". Each payment "shall not be less than one-half of that which the Government shall have announced in the general estimates of any particular year as payable by the Government to each of its employees during that year" (article 23(1), first proviso).
 - **Income supplements** are a separate obligation. The employer "shall also pay, or cause to be paid, to each of his whole-time employees any income supplements in the amount and at the times as may be established by legal notice" (article 23(1), second proviso). Do not fold them into the bonus or into wages.
 - An employee who has worked for the employer for less than a year gets a proportionate amount of "the bonus or income supplement", "made on the basis of the annual hours worked". Whole-time employees with reduced hours get a pro rata share (article 24). Part-time entitlement follows the part-time employment regulations and the sector Order (check).
 - **Published DIER amounts, read 4 November 2026:** statutory bonus **€135.10** at end of June and between 15–23 December; weekly allowance **€121.16** at end of March and September. DIER gives partial bonus at €0.74 per calendar day and partial allowance at €4.66 per working week or proportion. These are distinct from the weekly COLA wage increase. [DIER official amounts](https://dier.gov.mt/en/services/employment-conditions/wages/bonus-and-weekly-allowances/).
@@ -193,7 +193,7 @@ From 1 January 2026, "The wages of whole-time employees shall be increased by fo
 | Payer files an FS4 late, incomplete or wrong | Schedule C additional tax, plus liability for any under-deduction not recovered by 31 December | FSS rule 3(6) |
 | Ten or more full-time payees | Cumulative formula compulsory. Fewer than ten: may opt for Tables, but not both in one year | FSS rule 7(4) |
 | More than one employment | Only one source can be "main". Others go under Other Emoluments at 20% | FSS rules 7(1), 9 |
-| Deduction would exceed 50% of cash pay | Limit to 50% unless the payee consents, or articles 46 or 71 ITMA apply | FSS rule 11 |
+| Deduction would exceed 50% of cash pay | Limit to 50% unless the payee consents, article 71 of the Income Tax Act applies, or article 46 of the Income Tax Management Act has been applied | FSS rule 11(1) |
 | Termination payment | Taxed under rule 6 and/or rule 10, with no 50% limit | FSS rule 34 |
 | Employer pays the employee's tax (net pay deal) | Gross up: emoluments = net pay + tax paid | FSS rule 33 |
 | Any agreement not to deduct tax | Null and void (except rule 33 arrangements) | FSS rule 36 |
@@ -215,14 +215,14 @@ From 1 January 2026, "The wages of whole-time employees shall be increased by fo
 
 **Case 5: Class 1 and Maternity Fund.** Employee born in 1990, basic weekly wage €400. This falls within the published 2026 post-1961 Category C band (€229.45–€559.30). Employee Class 1 = 10% × 400 = **€40.00**. Employer Class 1 = **€40.00**. Maternity Leave Fund = 0.3% × 400 = **€1.20**. The employer's weekly cost on top of wages is €41.20, and €40.00 is deducted from pay.
 
-**Case 6: parent, one qualifying child, high earner.** Projected annual emoluments €70,000. As enacted, P = 70,000 × 35% − 10,270 = **€14,230**. With the "continuous" €10,275 it would be €14,225. These are candidate amounts only. Do not finalise withholding for this disputed branch until the source discrepancy is resolved; a software setting is not legal clarification.
+**Case 6: parent, one qualifying child, high earner.** Projected annual emoluments €70,000. Using the Act's €10,270, P = 70,000 × 35% − 10,270 = **€14,230**. Tell the employee that MTCA's table shows €10,275, which would give €14,225, €5 less.
 
 **Case 7: second job.** An employee whose main job is elsewhere earns €1,000 in a month from you. Other Emoluments method: deduct 20% = **€200**, unless the employee has directed a higher rate, or (as a pensioner or full-time student) a lower one.
 
 ## When to refuse or refer
 
 - **Refer** questions about the employee's own return, part-time final tax, personal reliefs, or whether the child conditions are met in a disputed case. Use malta-income-tax or a warranted accountant.
-- **Refer** expatriate regimes (highly qualified persons, key employee schemes), cross-border workers, social security for posted workers (A1 certificates), and directors' fees. They are outside this skill.
+- **Refer** expatriate regimes (the Highly Skilled Individuals Rules, L.N. 20 of 2026, which from 1 January 2026 take over from the Highly Qualified Persons Rules; key employee schemes), cross-border workers, social security for posted workers (A1 certificates), and directors' fees. They are outside this skill.
 - **Refuse to extrapolate annual caps or bonuses to another year.** The published 2026 contribution table and DIER amounts are above. Main Tax Deduction Tables, sector terms and form layouts still require the applicable official publication.
 - **Refuse** to set up any arrangement not to deduct FSS tax. It is void under rule 36.
 - **Refer** sector pay-rate, overtime-premium and leave questions to the applicable (Conditions of Work) Regulation Order and the Department for Industrial and Employment Relations.
@@ -238,7 +238,7 @@ From 1 January 2026, "The wages of whole-time employees shall be increased by fo
 | FS7 (Payer's Annual Reconciliation Statement) with the original FS3s | Commissioner | By 15 February of the following year | 22(1) |
 | FS7 when a payer stops paying emoluments | Commissioner | Last working day of the month after the last payment | 22(1) proviso |
 
-The FS5 shows the number of payees and gross emoluments split into part-time, qualifying overtime and other pay. Fringe benefits are shown separately. Tax deducted is shown under each method, plus any arrears collected under rule 10. Class 1 contributions are collected "at the Malta Tax and Customs Administration" (Cap. 318, article 11, as amended by Act III of 2026, article 22). How they appear on the FS5 is **check**. The FS5 form layout and the e-filing duty are **check**, since the Commissioner may direct electronic payment and filing (rules 15(2) and 23).
+The FS5 shows the number of payees and gross emoluments split into part-time, qualifying overtime and other pay. Fringe benefits are shown separately. Tax deducted is shown under each method, plus any arrears collected under rule 10. The employer pays Class 1 monthly in arrears, within the time and in the form and manner the Director determines ([Cap. 318](https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c), article 9). For article 9 the Director is the Commissioner for Tax and Customs (article 2). How Class 1 appears on the FS5 is **check**. Employers with 10 or more FS3 forms must file their end-of-year documents electronically ([MTCA, FSS reporting obligations](https://mtca.gov.mt/personal-tax/fss-system/reporting-obligations)). The FS5 form layout is **check**. The Commissioner may also direct electronic payment and filing (rules 15(2) and 23).
 
 **Tax deducted is a debt to Government** from the last working day of the following month. Late payment carries interest under article 44(2A) of the Income Tax Management Act (rule 25(1)).
 
@@ -268,7 +268,7 @@ The Commissioner serves a default notice. The payer must rectify and pay "within
 - [ ] Payees with no FS4 are taxed at 35% ([FSS rule 3](https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3))
 - [ ] Method chosen per payment: Main, Part-Time, Overtime or Other Emoluments
 - [ ] Cumulative formula used if ten or more full-time payees; Tables (MTCA 2026, check) only if fewer and never mixed
-- [ ] 2026 article 56 table applied (Act III of 2026), with the parent-one-child 35% branch held until Act/MTCA discrepancy is resolved ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
+- [ ] 2026 article 56 table applied (Act III of 2026), with the parent-one-child 35% band computed with the Act's €10,270 and the employee told that MTCA's table shows €10,275 ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
 - [ ] Rounding to the euro and the 50% cap applied ([FSS rules 6 and 11](https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3))
 - [ ] Qualifying overtime tested (€375 basic, non-managerial, €10,000 and maxrate caps) at 15% ([S.L. 123.200](https://legislation.mt/getpdf/62026ae5c9c73a144cfb58eb))
 - [ ] Class 1 on basic weekly wage only, using the published 2026 MTCA category table, and the employer's share not recovered from the employee
@@ -325,12 +325,23 @@ Only the identified passages were read for this delta; historical source rows ke
 
 | Source and passage actually read | URL | Read on |
 |---|---|---|
-| MTCA2026Class1 complete annual table read | https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates | 2026-11-04 |
 | DIER full and proportional bonus/allowance amounts read | https://dier.gov.mt/en/services/employment-conditions/wages/bonus-and-weekly-allowances/ | 2026-11-04 |
-| MTCA parent1child top-rate alternative read; discrepancy held | https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5 | 2026-11-04 |
+| MTCA parent1child top-rate figure €10,275 read (the Act's €10,270 governs) | https://mtca.gov.mt/docs/default-source/documents/2026-tax-rates.pdf?sfvrsn=37563fb2_5 | 2026-11-04 |
 | ConsolidatedAct parent1child10270 read | https://legislation.mt/getpdf/69d8a9187da37f0580d5140c | 2026-11-04 |
 | FSS formula, euro rounding, methods and annual forms read | https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3 | 2026-11-04 |
 | LN2892025 minimum wage2026 read | https://legislation.mt/getpdf/696e2f8c52ff32215ce13d7b | 2026-11-04 |
+
+### Source reads, 8 November 2026
+
+| Source and passage actually read | URL | Read on |
+|---|---|---|
+| MTCA 2026 Class 1 table (the page with no year now shows 2027) | https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-1---social-security-contribution-rates/2026 | 2026-11-08 |
+| Act III of 2026, article 19 (parent with one qualifying child, 35% band, subtract €10,270) and article 22 (amends article 11 of Cap. 318 only) | https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430 | 2026-11-08 |
+| Cap. 318, article 2 ("Director"), article 9 (Class 1 paid monthly in arrears) and article 11 (Class 2) | https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c | 2026-11-08 |
+| FSS Rules, rule 11(1) (50% limit; article 71 ITA, article 46 ITMA) | https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3 | 2026-11-08 |
+| Cap. 452, article 23(1) and its first proviso (bonus payment windows, one-half rule) | https://legislation.mt/getpdf/69faf83e2eb86e24207539ec | 2026-11-08 |
+| MTCA FSS reporting obligations (10 or more FS3 forms: electronic filing) | https://mtca.gov.mt/personal-tax/fss-system/reporting-obligations | 2026-11-08 |
+| L.N. 20 of 2026, Tax Treatment of Highly Skilled Individuals Rules, rules 1 and 12 (in force 1 January 2026; transition from the Highly Qualified Persons Rules) | https://legislation.mt/eli/ln/2026/20/eng | 2026-11-08 |
 
 Correction ledger and complete old-topic destinations: [personal-malta-payroll](../../evidence/malta-deep-audit-20261104/ledgers/personal-malta-payroll.md). Full original research is archived there; this correction is not professional attestation.
 

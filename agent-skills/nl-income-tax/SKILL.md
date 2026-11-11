@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-income-tax"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-09"
 ---
 
 # Netherlands: personal income tax (inkomstenbelasting) 2026
@@ -27,12 +27,13 @@ metadata:
 |---|---|---|---|
 | Box 1, below AOW age: first band | to EUR 38,883: 35.75% (8.10% income tax plus 27.65% national insurance: AOW 17.90%, Anw 0.10%, Wlz 9.65%) | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/BWBR0011353/2026-02-21 ; Wfsv art. 10-11, https://wetten.overheid.nl/BWBR0017745/2026-01-01 ; contribution rates: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
 | Box 1: second band | above EUR 38,883 to EUR 78,426: 37.56% | 2026 | Wet IB art. 2.10(1) |
-| Box 1: third band | above EUR 78,426: 49.50% | 2026 | Wet IB art. 2.10(1) Source: https://zoek.officielebekendmakingen.nl/kst-37022-2.html (tax year 2026) (read 2026-10-31) |
+| Box 1: third band | above EUR 78,426: 49.50% | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=2&afdeling=2.3&artikel=2.10&z=2026-01-01&g=2026-01-01 |
+| Box 1: how the law computes it (use this, not the combined rate across the band) | Income tax per the art. 2.10(1) table: 8.10% to EUR 38,883; above that EUR 3,149 plus 37.56% of the excess; above EUR 78,426, EUR 18,001 plus 49.50% of the excess. The fixed amounts EUR 3,149 and EUR 18,001 are printed in the law (8.10% x 38,883 would give 3,149.52). National insurance is a separate premium: 27.65% of premie-inkomen, which is capped at EUR 38,883, so at most EUR 10,751.15 (Wfsv art. 8(3), 10, 11). Box 1 total = tax + premium. Applying 35.75% and 37.56% straight across the bands overstates by EUR 0.52 above the first band and EUR 0.87 above the second | 2026 | Wet IB art. 2.10(1); Wfsv art. 8(3), 10(1), https://wetten.overheid.nl/jci1.3:c:BWBR0017745&hoofdstuk=2&afdeling=2&paragraaf=3&artikel=10&z=2026-01-01&g=2026-01-01 |
 | Box 1, AOW age all year, born on or after 1 January 1946 | first band to EUR 38,883 at 17.85%; then 37.56% and 49.50% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 |
-| Box 1, born before 1 January 1946 | first band to EUR 41,123 at 17.85% (8.10% tax); 37.56% to EUR 78,426; 49.50% above | 2026 | Wet IB art. 2.10a(1); same Belastingdienst page |
-| Box 1, AOW age reached during 2026 | first band rate by month reached: January 17.85% rising to December 34.26% | 2026 | same Belastingdienst page; Wfsv art. 10(2) |
+| Box 1, born before 1 January 1946 | first band to EUR 41,123 at 17.85% (8.10% tax); 37.56% to EUR 78,426; 49.50% above. Statutory table: above EUR 41,123, EUR 3,330 plus 37.56%; above EUR 78,426, EUR 17,341 plus 49.50%; premium capped at EUR 41,123 | 2026 | Wet IB art. 2.10a(1), https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=2&afdeling=2.3&artikel=2.10a&z=2026-01-01&g=2026-01-01 ; Wfsv art. 8(3) |
+| Box 1, AOW age reached during 2026 | first band rate by month reached: January 17.85% rising to December 34.26%. The AOW premium (17.90%) stops from the first day of the month in which AOW age is reached, so it is due for the months before that month only. The Belastingdienst's two 2026 pages print the in-between months differently in the second decimal (box 1 page 22.33% for April, Fiscale informatie 22.32%); the month table and the part-year credits are not confirmed here | 2026 | same Belastingdienst page; Wfsv art. 10(2) |
 | Tariefsaanpassing | extra 11.94% of the lower of (a) the deductions listed in art. 2.10(3) and (b) box 1 income plus those deductions above EUR 78,426; their value is capped at 37.56% | 2026 | Wet IB art. 2.10(2),(3) |
-| Algemene heffingskorting (general credit), below AOW age | EUR 3,115, less 6.398% of verzamelinkomen above EUR 29,736; nil from EUR 78,426 | 2026 | Wet IB art. 8.10(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
+| Algemene heffingskorting (general credit), below AOW age | EUR 3,115, less 6.398% of verzamelinkomen above EUR 29,736, never below nil (the formula reaches nil at EUR 78,423.09; the Belastingdienst shows nil from EUR 78,426) | 2026 | Wet IB art. 8.10(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
 | Algemene heffingskorting, AOW age all year | EUR 1,556, less 3.195% of verzamelinkomen above EUR 29,736; nil from EUR 78,426 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen ; Wet IB art. 8.3-8.4 |
 | Arbeidskorting (labour credit), below AOW age | 8.324% of labour income (max EUR 996); plus 31.009% above EUR 11,965 (total max EUR 5,300, reached at EUR 25,845); plus 1.950% above EUR 25,845 (total max EUR 5,685, reached at EUR 45,592); less 6.51% above EUR 45,592; nil from EUR 132,920 | 2026 | Wet IB art. 8.11(2) |
 | Arbeidskorting, AOW age all year | 4.156% to EUR 11,965; EUR 498 + 15.483% to EUR 25,845; EUR 2,647 + 0.974% to EUR 45,592; EUR 2,840 less 3.250% above EUR 45,592; nil from EUR 132,920 | 2026 | Belastingdienst heffingskortingen 2026 (above) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen (tax year 2026) (read 2026-10-31) |
@@ -99,7 +100,7 @@ metadata:
 
 ## Worked examples
 
-**Example 1: sole trader, below AOW age, no partner (simple).** Profit before entrepreneur reliefs EUR 50,000. Meets the hours test; not a starter. Zelfstandigenaftrek EUR 1,200 (art. 3.76(2), see `nl-zzp-deductions`). MKB-winstvrijstelling 12.7% of 48,800 = EUR 6,197.60. Taxable profit EUR 42,602.40; no other income or deductions. Box 1: 38,883 x 35.75% = 13,900.67; (42,602.40 - 38,883) x 37.56% = 1,397.01; total EUR 15,297.68. General credit on verzamelinkomen 42,602.40: 3,115 - 6.398% x 12,866.40 = EUR 2,291.81. Labour credit on labour income 50,000 (profit before reliefs): 5,685 - 6.51% x 4,408 = EUR 5,398.04. Income tax and contributions due EUR 7,607.83, before the return software's rounding. No tariefsaanpassing: 42,602.40 + 1,200 + 6,197.60 = 50,000, below EUR 78,426. The bijdrage Zvw comes on top, assessed separately.
+**Example 1: sole trader, below AOW age, no partner (simple).** Profit before entrepreneur reliefs EUR 50,000. Meets the hours test; not a starter. Zelfstandigenaftrek EUR 1,200 (art. 3.76(2), see `nl-zzp-deductions`). MKB-winstvrijstelling 12.7% of 48,800 = EUR 6,197.60. Taxable profit EUR 42,602.40; no other income or deductions. Taxable income is in the second band, so box 1 income tax by the art. 2.10 table is 3,149 + (42,602.40 - 38,883) x 37.56% = 3,149 + 1,397.01 = 4,546.01. National insurance premium: 38,883 x 27.65% = 10,751.15. Total EUR 15,297.16. General credit on verzamelinkomen 42,602.40: 3,115 - 6.398% x 12,866.40 = EUR 2,291.81. Labour credit on labour income 50,000 (profit before reliefs): 5,685 - 6.51% x 4,408 = EUR 5,398.04. Income tax and contributions due EUR 7,607.31, before the return software's rounding. No tariefsaanpassing: 42,602.40 + 1,200 + 6,197.60 = 50,000, below EUR 78,426. The bijdrage Zvw comes on top, assessed separately.
 
 ```oa-check
 name: Sole trader, profit EUR 50,000 before reliefs (2026)
@@ -109,19 +110,20 @@ inputs:
 steps:
   - mkb: (profit - zelfstandigenaftrek) * 0.127
   - taxable: profit - zelfstandigenaftrek - mkb
-  - band1: min(taxable, 38883) * 0.3575
-  - band2: max(min(taxable, 78426) - 38883, 0) * 0.3756
-  - band3: max(taxable - 78426, 0) * 0.495
-  - tax_before_credits: band1 + band2 + band3
+  - income_tax: 3149 + (taxable - 38883) * 0.3756
+  - premium: min(taxable, 38883) * 0.2765
+  - tax_before_credits: income_tax + premium
   - ahk: max(3115 - max(taxable - 29736, 0) * 0.06398, 0)
   - ak: max(5685 - max(profit - 45592, 0) * 0.0651, 0)
   - net: max(tax_before_credits - ahk - ak, 0)
 expected:
   taxable: 42602.40
-  tax_before_credits: 15297.68
+  income_tax: 4546.01
+  premium: 10751.15
+  tax_before_credits: 15297.16
   ahk: 2291.81
   ak: 5398.04
-  net: 7607.83
+  net: 7607.31
 ```
 
 **Example 2: box 3 for fiscal partners, with a lower actual return (edge case).** Whole-year fiscal partners. On 1 January 2026 they hold bank balances EUR 80,000, shares EUR 150,000 and a consumer loan of EUR 10,000. Debts counted: 10,000 - 7,600 = EUR 2,400. Rendement with the provisional 2026 rates: 80,000 x 1.28% + 150,000 x 6.00% - 2,400 x 2.70% = EUR 9,959.20. Rendementsgrondslag 230,000 - 2,400 = EUR 227,600. Grondslag sparen en beleggen 227,600 - 118,714 = EUR 108,886. Joint deemed benefit 9,959.20 x 108,886 / 227,600 = EUR 4,764.58. Their actual return for 2026, worked out on the Belastingdienst's form, is EUR 3,000. That is lower, so EUR 3,000 is taxed (art. 5.25). Box 3 tax 36% = EUR 1,080; split 50/50, EUR 540 each. The bank and debt rates are provisional: recompute once the final 2026 figures are set.
@@ -192,4 +194,4 @@ Not yet confirmed: (1) the final 2026 box 3 bank and debt percentages (set after
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-09. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

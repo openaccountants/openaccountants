@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-26"
-  reviewed_by: "James Power"
 ---
 
 # UK Dividends: income tax on dividends and director pay (2026-27)
