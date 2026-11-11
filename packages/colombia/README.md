@@ -15,8 +15,10 @@
 8. `co-vat-return.md`
 9. `colombia-income-tax.md`
 10. `colombia-iva.md`
-11. `formalizing-small-informal-businesses-in-colombia.md`
-12. `company-formation-workflow-base.md`
+11. `colombia-payroll.md`
+12. `formalizing-small-informal-businesses-in-colombia.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
 
 ## Also known as
 

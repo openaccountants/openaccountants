@@ -12,11 +12,13 @@
 5. `cl-company-formation.md`
 6. `cl-corporate-income-tax.md`
 7. `cl-income-tax.md`
-8. `cl-social-contributions.md`
-9. `cl-tax-overview.md`
-10. `cl-vat-return.md`
-11. `references.md`
-12. `company-formation-workflow-base.md`
+8. `cl-payroll.md`
+9. `cl-social-contributions.md`
+10. `cl-tax-overview.md`
+11. `cl-vat-return.md`
+12. `references.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
 
 ## Also known as
 
