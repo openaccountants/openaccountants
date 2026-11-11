@@ -5,7 +5,6 @@ jurisdiction: US
 category: federal-tax
 tier: 2
 verified_by: pending
-reviewed_by: Christopher Aryee, CPA
 last_updated: 2026-07-04
 version: 0.1
 ---
