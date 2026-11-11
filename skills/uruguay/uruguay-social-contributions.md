@@ -101,9 +101,9 @@ This skill computes the contributions BPS collects in 2026: for dependent worker
 
 | Step | What | When | Where |
 |---|---|---|---|
-| Registration | Register the business with BPS before starting; register each dependent worker (alta) and leaver (baja) | Before activity starts | BPS online services, GAFI ([BPS](https://www.bps.gub.uy/818/declarar-al-personal.html)) |
+| Registration | Register the business with BPS before starting; register each dependent worker (alta) and leaver (baja) | Alta from 10 days before the start date up to the start date itself | BPS online services, GAFI ([BPS](https://www.bps.gub.uy/818/declarar-al-personal.html)) |
 | Monthly, employers | Nómina (declaración nominada) and payment of personal and employer contributions | Month after the work month, on the date for the last digit of the company number in the [2026 BPS calendar](https://www.bps.gub.uy/bps/file/23709/1/calendario-de-vencimientos-2026.pdf) (dates listed in [uruguay-payroll](uruguay-payroll.md)) | BPS online services |
-| Monthly, owners without employees | Payment of the minimum contribution | Month after, on the same calendar | BPS bill, bank network |
+| Monthly, owners without employees | Payment of the minimum contribution; BPS generates the monthly bill automatically and emails it. After three consecutive months unpaid, the automatic bill stops until the owner asks for it again | Month after, on the "Cobranza descentralizada" column of the 2026 calendar: January 23, February 24, March 20, April 24, May 25, June 22, July 21, August 21, September 21, October 22, November 23, December 21 | BPS "Emitir facturas" service, BPS Empresas app, collection network, bank debit ([BPS guide, Industria y Comercio](https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf)) |
 | Cannot pay | Nómina with a declaración jurada de no pago (DJNP); the minimum payment is the personal contributions (jubilatorio, FONASA, FRL) | By the due date | [BPS, pago de aportes](https://www.bps.gub.uy/10357/pago-de-aportes.html) |
 | FONASA annual return, servicios personales | Annual declaration | 16 April (digits 0 to 2), 23 April (3 to 5), 30 April (6 to 9), 2026, available from 9 February | 2026 BPS calendar |
 
@@ -207,6 +207,7 @@ expected:
 | BPS, aportes mínimos Industria y Comercio (vigencia enero 2026), all tables read: unipersonales, SRL, sociedad de hecho | https://www.bps.gub.uy/6665/industria-y-comercio.html | 2026-11-11 |
 | BPS, pago de aportes page read (what the payment covers, minimum payment, DJNP) | https://www.bps.gub.uy/10357/pago-de-aportes.html | 2026-11-11 |
 | BPS, declarar al personal page read | https://www.bps.gub.uy/818/declarar-al-personal.html | 2026-11-11 |
+| BPS, Guía de obligaciones Industria y Comercio (January 2025 edition, page updated 21 May 2026), all pages read: companies with and without employees, alta deadline, billing | https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf | 2026-11-11 |
 | BPS, calendario de vencimientos 2026 (Resolución de Directorio 37-15/2025), full table and FONASA annual return note read | https://www.bps.gub.uy/bps/file/23709/1/calendario-de-vencimientos-2026.pdf | 2026-11-11 |
 | BPS, multas y recargos por mora page read | https://www.bps.gub.uy/18132/multas-y-recargos-por-mora.html | 2026-11-11 |
 | BPS, multa por nómina page read | https://www.bps.gub.uy/10366/multa-por-nomina.html | 2026-11-11 |
