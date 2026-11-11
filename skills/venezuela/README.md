@@ -8,22 +8,22 @@ partial:
   IT-IND: "Existing skill remains on tax year 2025."
   IT-CORP: "2026 ordinary statutory computation covered; current UT currency value and filing/advance instructions not yet confirmed."
   VAT: "Existing IVA skill remains on tax year 2025."
-  SC: "2026 INCES computation and IVSS/LOPCYMAT statutory framework covered; current IVSS, RPE, FAOV and pensions-protection inputs remain unconfirmed."
+  SC: "Existing skill remains on tax year 2025."
   PR: "Existing skill remains on tax year 2025."
 ---
 
 # Venezuela: tax pack
 
-This map is maintained with the country pack. The table reports merged Guides plus this social-contributions update; other pending work is identified separately.
+This map is maintained with the country pack. Coverage includes only Guides on main; pending work is identified separately.
 
-Tax years: 2025 (4 skills), 2026 (2 skills).
+Tax years: 2025 (5 skills), 2026 (1 skill).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
 | Income tax | [Income tax](venezuela-income-tax.md) | 2025 | Needs updating |
 | Company tax | [Corporate tax](venezuela-corporate-tax.md) | 2026 | Partial: UT currency value and filing instructions unconfirmed |
 | VAT or sales tax | [IVA](venezuela-iva.md) | 2025 | Needs updating |
-| Social contributions | [Social contributions](venezuela-social-contributions.md) | 2026 | Partial: current ordinary IVSS, RPE, FAOV and pension inputs unconfirmed |
+| Social contributions | [Social contributions](venezuela-social-contributions.md) | 2025 | Needs updating |
 | Payroll | [Payroll](venezuela-payroll.md) | 2025 | Needs updating |
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
@@ -35,7 +35,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 - Income tax: bring [Income tax](venezuela-income-tax.md) up to the current tax year.
 - Confirm the current UT currency value, filing calendar and implementing instructions for [Corporate tax](venezuela-corporate-tax.md).
 - Bring [IVA](venezuela-iva.md) up to the current tax year.
-- Social contributions: confirm current IVSS/RPE/FAOV and pensions-protection parameters, actual LOPCYMAT implementation/assessment, and current currency/calendar inputs.
+- Social contributions: bring [Social contributions](venezuela-social-contributions.md) up to the current tax year.
 - Payroll: bring [Payroll](venezuela-payroll.md) up to the current tax year.
 - Write the transfer pricing skill.
 - Write the cross-border skill.
