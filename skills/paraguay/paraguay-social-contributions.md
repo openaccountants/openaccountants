@@ -20,7 +20,7 @@ Paraguay's compulsory social insurance (seguro social obligatorio) is run by the
 
 The minimum wage (the contribution floor), gross-to-net pay, the aguinaldo and the family allowance are set out in [paraguay-payroll](paraguay-payroll.md). The employee's own income tax (IRP), from which the employee's IPS contribution is excluded, is in [paraguay-income-tax](paraguay-income-tax.md).
 
-**Quick answer.** For an ordinary employee the employer withholds 9% of the salary, adds 16.5% of its own, and pays 25.5% of the salary to IPS each month through the REI system. The base is the whole monthly remuneration except the aguinaldo and the family allowance, and never less than the minimum wage. Domestic workers are in the same general regime. Bank employees pay into the Caja Bancaria instead (11% employee, 17% bank). A self-employed person may join the IPS pension fund voluntarily at 13%.
+**Quick answer.** For an ordinary employee the employer withholds 9% of the salary, adds 16.5% of its own, and pays 25.5% of the salary to IPS each month through the REI system. The base is the whole monthly remuneration except the aguinaldo and the family allowance, and, for full-time workers, never less than the minimum wage; the part-time exception is below. Domestic workers are in the same general regime. Bank employees pay into the Caja Bancaria instead (11% employee, 17% bank). A self-employed person may join the IPS pension fund voluntarily at 13%.
 
 ## Who this applies to
 
@@ -44,9 +44,9 @@ Out of scope: public servants under the Caja Fiscal, other special pension funds
 | Employer contribution as IPS collects it, general regime and domestic workers | 16.5%; with the worker's 9%, 25.5% in total | 2026 | https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=275 |
 | Additional employer levy and its allocation | 2.5% in addition to the 14% IPS quota, included in the 16.5% collected; phased redirection to IPS under Ley 7446 arts. 7-9, explained below | 2026 | https://silpy.congreso.gov.py/web/descarga/ley-145203 |
 | Domestic workers (Ley 5407 art. 20) | worker 9%, employer 14% of the pay actually received, shared pro rata between employers where the worker has several | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4392/ley-n-5407-del-trabajo-domestico |
-| Private teachers and lecturers (Ley 4370 art. 5 as replaced by Ley 5555/2015) | teacher 9%; school 14% IPS quota, plus applicable additional levies; supersedes the older 5.5%/2.5% | 2026 | https://www.bacn.gov.py/leyes-paraguayas/3727/ley-n-4370-establece-el-seguro-social-para-docentes-dependientes-de-instituciones-educativas-privadas-br |
-| ANDE (national electricity company) staff (art. 17 ll and m) | worker 6%; ANDE 12% | 2026 | same |
-| Pensioners (art. 17 i) | 6% of the pension | 2026 | same |
+| Teachers and lecturers of recognised private educational institutions (Ley 4370 arts. 1 and 5 as replaced by Ley 5555/2015) | teacher 9%; school 14% IPS quota, plus applicable additional levies; supersedes the older 5.5%/2.5% | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4533/ley-n-5555--modifica-la-ley-n-437011-que-establece-el-seguro-social-para-docentes-dependientes-de-instituciones-educativas-privadas |
+| ANDE (national electricity company) staff (art. 17 ll and m) | worker 6%; ANDE 12% | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4394/ley-n-98-establece-el-regimen-unificado-de-jubilaciones-y-pensiones |
+| Pensioners (art. 17 i) | 6% of the pension | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4394/ley-n-98-establece-el-regimen-unificado-de-jubilaciones-y-pensiones |
 | Continuity in the insurance after leaving employment, pension only | 12.5% of the average of the last 36 salaries contributed on, never on less than the minimum wage | 2026 | https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=315 |
 | Voluntary affiliation of independents, employers, homemakers and domestic workers, pension only (Ley 4933 art. 3) | 13% (12.5% pension fund, 0.5% administration) on a base the member chooses, not below one minimum wage for unspecified activities | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4395/ley-n-4933-autoriza-la-incorporacion-voluntaria-de-trabajadores-independientes |
 | Bank employees, Caja Bancaria (Ley 2856 art. 9 a and b, as replaced by Ley 6303/2019) | employee 11%; bank 17%; on all pay except the family allowance and the legal aguinaldo (art. 10) | 2026 | https://www.bacn.gov.py/leyes-paraguayas/8871/ley-n-6303-modifica-el-articulo-1-de-la-ley-n-5762-16 |
@@ -75,7 +75,7 @@ The additional 2.5% was historically split into 1.5% for MSPBS/SENEPA and a shar
 
 **No ceiling.** Art. 17 sets no maximum salary for the contribution, and none was found in the laws read.
 
-**Computation, each month and each worker.**
+**General-regime computation, each month and each worker.**
 
 1. Take the month's remuneration under the salary definition; leave out the aguinaldo and the family allowance.
 2. Raise it to the minimum wage if lower (full-time workers), or apply the part-time rule above.
@@ -198,7 +198,7 @@ expected:
 | Ley N° 6303/2019, BACN text: art. 1 (art. 9 of Ley 2856, 17% and 11%) | https://www.bacn.gov.py/leyes-paraguayas/8871/ley-n-6303-modifica-el-articulo-1-de-la-ley-n-5762-16 | 2026-11-11 |
 | Ley N° 213/1993, Código del Trabajo, BACN text: arts. 240, 261 and 268 | https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-establece-el-codigo-del-trabajo | 2026-11-11 |
 | Ley 7446/2024 arts. 5 and 7-9, continuity and phased fund allocation, original Congress PDF | https://silpy.congreso.gov.py/web/descarga/ley-145203 | 2026-11-11 |
-| Ley 4370 art. 5, consolidated with Ley 5555/2015, private teachers | https://www.bacn.gov.py/leyes-paraguayas/3727/ley-n-4370-establece-el-seguro-social-para-docentes-dependientes-de-instituciones-educativas-privadas-br | 2026-11-11 |
+| Ley 5555/2015, amending Ley 4370 arts. 1 and 5, recognised private teachers | https://www.bacn.gov.py/leyes-paraguayas/4533/ley-n-5555--modifica-la-ley-n-437011-que-establece-el-seguro-social-para-docentes-dependientes-de-instituciones-educativas-privadas | 2026-11-11 |
 | IPS AOP FAQ, historical 2.5% additional employer levy allocation | https://portal.ips.gov.py/sistemas/ipsportal/archivos/archivos/1516730167.pdf | 2026-11-11 |
 | IPS, monthly payment calendar | https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=353 | 2026-11-11 |
 
