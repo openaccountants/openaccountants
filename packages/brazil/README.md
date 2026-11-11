@@ -14,18 +14,19 @@
 7. `br-indirect-tax.md`
 8. `br-inss.md`
 9. `br-simples-nacional.md`
-10. `brazil-crypto-tax.md`
-11. `brazil-einvoice.md`
-12. `brazil-payroll.md`
-13. `brazil-transfer-pricing.md`
-14. `brazil-vat.md`
-15. `references.md`
-16. `einvoice-workflow-base.md`
-17. `payroll-workflow-base.md`
-18. `transfer-pricing-workflow-base.md`
-19. `crypto-tax-workflow-base.md`
-20. `brazil-guided-intake.md`
-21. `brazil-return-assembly.md`
+10. `brazil-corporate-tax.md`
+11. `brazil-crypto-tax.md`
+12. `brazil-einvoice.md`
+13. `brazil-payroll.md`
+14. `brazil-transfer-pricing.md`
+15. `brazil-vat.md`
+16. `references.md`
+17. `einvoice-workflow-base.md`
+18. `payroll-workflow-base.md`
+19. `transfer-pricing-workflow-base.md`
+20. `crypto-tax-workflow-base.md`
+21. `brazil-guided-intake.md`
+22. `brazil-return-assembly.md`
 
 ## Also known as
 
