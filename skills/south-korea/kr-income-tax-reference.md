@@ -5,7 +5,7 @@ version: 2.2
 jurisdiction: KR
 tax_year: 2025
 tax_year_notes: "Coverage starts with the 2025 year (2025년 귀속, filed in 2026) and includes the 2026 year (2026년 귀속, filed in 2027). The law was read at 5 November 2026. Expense rates are those of 국세청고시 제2026-14호, which applies to 2025 only; no rate notice for 2026 was read, so a 2026 computation on 단순경비율 or 기준경비율 is Needs Input. The 2026 revision bills before the National Assembly are not treated as law. The local credit rule in 지방세특례제한법 art. 167의2 has a stated end date of 31 December 2026, and its effect on a 2026 return filed in 2027 is held."
-last_updated: 2026-11-05
+last_updated: 2026-11-11
 depends_on:
   - kr-income-tax
   - income-tax-workflow-base
@@ -13,6 +13,7 @@ category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
+type: computation
 ---
 
 # kr-income-tax: reference sections
