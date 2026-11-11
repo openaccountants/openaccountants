@@ -26,7 +26,7 @@ Paraguay's national tax authority is the Dirección Nacional de Ingresos Tributa
 | IT-CORP, business income tax | [Corporate income tax](paraguay-corporate-income-tax.md) | 2026 | sourced from the law |
 | VAT / IVA | [IVA](paraguay-iva.md) | 2026 | sourced from the law |
 | SC, social contributions | [Social contributions](paraguay-social-contributions.md) | 2026 | checked against the law |
-| PR, payroll | [Payroll](paraguay-payroll.md) | 2026 | sourced from the law; reviewed correction in PR #1411 |
+| PR, payroll | [Payroll](paraguay-payroll.md) | 2026 | sourced from the law |
 | TP, transfer pricing | [Transfer pricing](paraguay-transfer-pricing.md) | 2026 | sourced from the law |
 | XB, cross-border | [Cross-border](paraguay-cross-border.md) | 2026 | checked against the law |
 
