@@ -15,8 +15,10 @@
 8. `uy-company-formation.md`
 9. `uy-corporate-income-tax.md`
 10. `uy-tax-overview.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+11. `uy-transfer-pricing.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 
