@@ -48,7 +48,7 @@ Tracked in [\[VE\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Pending work
 
-[Transfer-pricing PR #1440](https://github.com/openaccountants/openaccountants/pull/1440) is open and is not counted as main-branch coverage. A separate cross-border draft is undergoing independent review and is not counted as main-branch coverage.
+[Transfer-pricing PR #1440](https://github.com/openaccountants/openaccountants/pull/1440) is open and is not counted as main-branch coverage. [Cross-border PR #1452](https://github.com/openaccountants/openaccountants/pull/1452) is open after independent source review and is not counted as main-branch coverage.
 
 ## Out of scope
 
