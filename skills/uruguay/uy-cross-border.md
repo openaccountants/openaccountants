@@ -67,7 +67,7 @@ This skill works out the Uruguayan tax on income a non-resident earns from Urugu
 | Digital services rendered directly to a user in Uruguay | 100% Uruguayan-source | 2026 | same, art. 17(3) |
 | Intermediation through platforms: both parties in Uruguay / one abroad | 100% / 50% Uruguayan-source | 2026 | same, art. 17(6) |
 | Foreign transport companies: fares and freight from Uruguay abroad | 20.83% of gross is Uruguayan-source | 2026 | same, art. 17(2) |
-| Low-tax test in the regulation: effective tax on Uruguayan-source income below 12%, and no information exchange agreement in force (or one not fully applied) | Below 12% | 2026 | https://www.impo.com.uy/bases/decretos/149-2007 (art. 10) |
+| Low-tax test in the regulation: effective tax on Uruguayan-source income below 12%, and no information exchange agreement in force (or one not fully applied) | Below 12% | 2026 | https://www.impo.com.uy/bases/decretos/149-2007 (art. 11 BIS) |
 | Double tax treaties in force (DGI table of 25 April 2024) | 25 treaties | 2026 | https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/convenios-para-evitar-doble-imposicion |
 | Example treaty: Spain (Ley 18.730), royalties | 5% for copyright on literary, artistic or scientific works; 10% otherwise | 2026 | https://www.impo.com.uy/bases/leyes-internacional/18730-2011 (art. 12(2)) |
 | Example treaty: Spain, dividends | 5%; exempt where a company holds directly at least 75% of the paying company | 2026 | same (art. 10(2)) |
@@ -90,7 +90,7 @@ Not Uruguayan-source: pay of foreign diplomats accredited in Uruguay, and non-re
 
 **Exemptions** (T8 art. 19), among others: interest on public debt; interest on loans to IRAE taxpayers whose assets are more than 90% used for untaxed income; dividends out of income not taxed in IRAE, and dividends on shares listed on a Uruguayan exchange (art. 19 C, as replaced by Ley 20.446 art. 657); foreign exchange and adjustment gains; donations to public bodies; foreign shipping and air companies, subject to reciprocity; freight for exports; goods in transit in free zones and customs warehouses; foreign official bodies (reciprocity) and international organisations; pension fund results; income already in IRAE (art. 19 U, added by Ley 20.446 art. 659).
 
-**Low or no-tax jurisdictions** (T8 arts. 5 and 16). The Executive sets the test (Decreto 149/007 art. 10: effective tax on the Uruguayan income below 12% and no information exchange in force) and DGI keeps the list. Such entities pay 25% instead of 12%, a 5.25% complement on real estate income, and their real estate gains are computed on the real basis.
+**Low or no-tax jurisdictions** (T8 arts. 5 and 16). The Executive sets the test (Decreto 149/007 art. 11 BIS: effective tax on the Uruguayan income below 12% and no information exchange in force) and DGI keeps the list. Such entities pay 25% instead of 12%, a 5.25% complement on real estate income, and their real estate gains are computed on the real basis.
 
 **Treaty relief.** A treaty in force caps Uruguayan tax on its residents at the treaty rate. For treaty dividends on fictitious dividends the regulation applies the lower of 7% and the treaty rate, and requires a certificate of tax residence issued by the other state's competent authority (Decreto 149/007 art. 35 bis); DGI sets the conditions. Check the DGI table for the date each treaty applies from and whether the Multilateral Instrument (MLI) modifies it.
 
@@ -208,7 +208,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Texto Ordenado 2023, Título 8 IRNR, IMPO consolidated text with Ley 20.446 integrated: arts. 1 to 20 read in full | https://www.impo.com.uy/bases/todgi-2023/8-2024 | 2026-11-11 |
-| Decreto 149/007, IMPO consolidated text: arts. 8 to 11, 26 to 44 read (low-tax test, withholding agents and rates, fictitious dividends, obligations of agents) | https://www.impo.com.uy/bases/decretos/149-2007 | 2026-11-11 |
+| Decreto 149/007, IMPO consolidated text: arts. 8 to 11 BIS, 26 to 44 read (low-tax test, withholding agents and rates, fictitious dividends, obligations of agents) | https://www.impo.com.uy/bases/decretos/149-2007 | 2026-11-11 |
 | DGI, Estado de los Convenios para evitar la Doble Imposición (table of 25 April 2024), full table read | https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/convenios-para-evitar-doble-imposicion | 2026-11-11 |
 | Ley 18.730, treaty with Spain, IMPO text: arts. 10 to 12 read | https://www.impo.com.uy/bases/leyes-internacional/18730-2011 | 2026-11-11 |
 | DGI, list of forms in the ßeta application, read for form 1246 (IRNR withholding returns, migrated to SIGMA) | https://www.gub.uy/direccion-general-impositiva/sites/direccion-general-impositiva/files/2023-11/Formularios%2Bincluidos%2Ben%2BBeta.pdf | 2026-11-11 |
