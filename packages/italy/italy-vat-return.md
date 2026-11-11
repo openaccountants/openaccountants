@@ -4,7 +4,7 @@ description: "Italian periodic VAT (IVA) for tax year 2026 under the regime ordi
 version: 2.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-11
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
@@ -272,7 +272,3 @@ expected:
 | Agenzia delle Entrate, LIPE instructions (2024 edition, VP rows) | https://www.agenziaentrate.gov.it/portale/documents/20143/5986193/IVA+period_2024.pdf/04990f53-edc9-048a-c953-49592ebea05f | 2026-10-24 |
 
 Not yet confirmed: whether the EU Council has authorised the logistics reverse charge in art. 17(6)(a-quinquies) (none found; it is not treated as in force); the full lists of Tabella A Parts II and III beyond the items named; how comma 60 of L. 190/2014 art. 1 (forfettari pay VAT they owe by the 16th of the following month) sits with the quarterly rule in comma 58(e-bis) for reverse-charge purchases (this skill follows e-bis, the specific rule); the date from which the penalty and payment rules move into the testi unici (D.Lgs. 173/2024 and D.Lgs. 33/2025), so this skill cites D.Lgs. 471/1997 and 472/1997 as in force on 24 October 2026; the Intrastat thresholds and deadlines for services; F24 tax codes and ABI bank causale codes (not given here); whether a later LIPE model replaces the 2024 instructions; the bank-statement reading notes and supplier entities in the classification list are OpenAccountants' working list, not law.
-
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.
