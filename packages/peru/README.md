@@ -15,8 +15,10 @@
 8. `peru-income-tax.md`
 9. `peru-payroll.md`
 10. `peru-social-contributions.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+11. `peru-transfer-pricing.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

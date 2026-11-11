@@ -4,7 +4,7 @@ description: Use this skill whenever asked about bookkeeping, chart of accounts,
 version: 1.1
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-11
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -673,7 +673,3 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 ## Disclaimer
 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater or Wirtschaftsprüfer) before filing or acting upon.
-
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.
