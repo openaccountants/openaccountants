@@ -1,7 +1,7 @@
 ---
 name: bolivia-corporate-income-tax
 description: "Bolivia corporate income tax (Impuesto sobre las Utilidades de las Empresas, IUE) for 2026 under Ley 843 Título III and its regulation DS 24051, as consolidated by the Servicio de Impuestos Nacionales (SIN) to 30 September 2026. Covers who pays (companies, branches, sole-owner businesses), the 25% rate, the 25% additional rate for ASFI and APS regulated financial entities with return on equity above 6%, the base from financial statements in UFV-restated constant currency, non-deductible items, depreciation rates and the 2026 accelerated depreciation option (DS 5563), the 3-year loss carry-forward, the year-end dates by sector and the 120-day deadline, Forms 500, 520, 605 and 570, the IUE credit against the 3% transactions tax (IT), IUE-BE withholding at 12.5% on payments abroad and the reinvestment rates, and penalties under Ley 2492. Trigger on: Bolivia corporate tax, IUE Bolivia, Formulario 500, impuesto sobre las utilidades, IUE-BE, AA-IUE, SRL tax Bolivia. Out of scope: individuals and professionals (bolivia-income-tax), IVA and IT returns (bolivia-iva)."
-version: 0.1
+version: 0.2
 jurisdiction: BO
 tax_year: 2026
 last_updated: 2026-11-11
@@ -11,7 +11,7 @@ tier: 2
 domain: corporate-tax
 ---
 
-# Bolivia corporate income tax (IUE): 2026 rate, base, losses, IT credit and filing v0.1
+# Bolivia corporate income tax (IUE): 2026 rate, base, losses, IT credit and filing v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -38,10 +38,10 @@ Quick answer: **25% of net taxable profit**, one rate, no bands. The IUE paid th
 | Surtax on profit from extractive activities in non-renewable natural resources, after the art. 51 bis deductions (out of scope here) | 25% | 2026 | same |
 | Mining additional rate when prices are at or above the Ley 535 art. 101 table (out of scope here) | 12.5% | 2026 | same |
 | IUE-BE: presumed net profit on Bolivian-source amounts paid, credited or remitted abroad (art. 51) | 50% of the gross, taxed at 25%: 12.5% of the gross, final | 2026 | same |
-| IUE-BE on dividends or branch profits not capitalised, when at least 75% is reinvested (Ley 1613 art. 10 kept by Ley 1705; DS 5563 art. 3 III a) | 3.125% of the amount not capitalised | 2026 | same |
+| IUE-BE on dividends or branch profits not capitalised, when at least 75% is reinvested (Ley 1613 art. 10 kept by Ley 1705; DS 5563 art. 3 III a) | 3.125% of the amount not capitalised | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281098 |
 | Same, reinvestment 50% to 74.99% (DS 5563 art. 3 III b) | 6.25% of the amount not capitalised | 2026 | same |
 | Same, reinvestment 25% to 49.99% (DS 5563 art. 3 III c) | 11.25% of the amount not capitalised | 2026 | same |
-| Agencies of foreign companies with activities partly carried out in Bolivia (transport, communications, news, partly-local services), presumed net profit (DS 24051 art. 42) | 16% of Bolivian gross income, taxed at 25% | 2026 | same |
+| Agencies of foreign companies with activities partly carried out in Bolivia (transport, communications, news, partly-local services), presumed net profit (DS 24051 art. 42) | 16% of Bolivian gross income, taxed at 25% | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf |
 | Withholding on payments to individuals for movable goods without an invoice (DS 24051 art. 3, as amended by DS 4850) | 25% of a presumed 20% profit: 5% of the amount paid | 2026 | same |
 | Transactions tax that the IUE is credited against (art. 75, art. 77) | 3% of gross income, monthly | 2026 | same |
 | Loss carry-forward, general (art. 48, text of Ley 169) | Up to the 3 following years; not indexed | 2026 | same |
@@ -51,13 +51,13 @@ Quick answer: **25% of net taxable profit**, one rate, no bands. The IUE paid th
 | Ordinary repairs deductible in the year (DS 24051 art. 22) | Up to 20% of the asset's value; above that, capitalised | 2026 | same |
 | Interest to owners or partners on their loans (DS 24051 art. 18 k) | Deductible only up to LIBOR + 3% (foreign) or the BCB lending rate (local), and in total up to 30% of the interest the company pays to third parties | 2026 | same |
 | Payments that must be supported by a bank or other ASFI-regulated document (DS 27310 art. 37 as replaced by DS 772, reproduced under DS 24051 art. 8) | Bs 50,000 and above per transaction | 2026 | same |
-| Accelerated depreciation option for fixed assets acquired 1 January to 31 December 2026, not for mining and hydrocarbon extractors (DS 5563 Disposición Adicional Primera a) | Half the useful life in the DS 24051 art. 22 annex | 2026 | same |
-| Annual return and payment deadline (DS 24051 art. 39) | 120 days after the year-end, with or without an external audit opinion | 2026 | same |
+| Accelerated depreciation option for fixed assets acquired 1 January to 31 December 2026, not for mining and hydrocarbon extractors (DS 5563 Disposición Adicional Primera a) | Half the useful life in the DS 24051 art. 22 annex | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281098 |
+| Annual return and payment deadline (DS 24051 art. 39) | 120 days after the year-end, with or without an external audit opinion | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf |
 | IUE-BE and art. 3 withholdings, payment day by last digit of the NIT (DS 24051 arts. 3 and 34) | Day 13 (digit 0) to day 22 (digit 9) of the month after the payment | 2026 | same |
-| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448) | 60% of the updated omitted tax | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
-| Late interest on tax omitted, expressed in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | same |
+| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448) | 60% of the updated omitted tax | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 |
+| Late interest on tax omitted, expressed in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
 | Breach of formal duties, such as a late return (Ley 2492 art. 162 I) | 50 UFV to 5,000 UFV, the amount for each breach set by SIN regulation | 2026 | same |
-| Limitation period for SIN to audit, assess, sanction and enforce (Ley 2492 art. 59 I, text of Ley 1733 of 27 May 2026) | 4 years, plus 2 more if the taxpayer did not register or registered in the wrong regime | 2026 | same |
+| Limitation period for SIN to audit, assess, sanction and enforce (Ley 2492 art. 59 I, text of Ley 1733 of 27 May 2026) | 4 years, plus 2 more if the taxpayer did not register or registered in the wrong regime | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281228 |
 
 Depreciation rates (DS 24051 art. 22 annex), straight line on cost; a selection of the annex, all from the same consolidated Ley 843 edition:
 
@@ -245,5 +245,9 @@ The max() shortcut in this block assumes the IT of the 12 months after payment i
 | SIN SIAT, Form 520 IUE for contributors without accounts: boxes 648 to 1024 | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/impuesto-a-las-utilidades-de-las-empresas/500-iue-contribuyentes-obligados-a-llevar-registros-contables/f-520 | 2026-11-11 |
 | SIN SIAT, list of electronic forms: names of Forms 400, 515, 530, 570 and 591 | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico | 2026-11-11 |
 | SIN SIAT, IUE consultations: Form 605 contents and codes, UFV restatement still applies under DS 24051 art. 38 | https://siatinfo.impuestos.gob.bo/index.php/impuesto-asunto/iue | 2026-11-11 |
+| Gaceta Oficial, Decreto Supremo N° 5563 of 2 March 2026 (HTML text): art. 3 III reinvestment rates and Disposiciones Adicionales Primera to Cuarta | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281098 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1448 of 25 July 2022 (HTML text): new art. 165 of Ley 2492 (60%) and RC-IVA art. 19 g) and h) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1733 of 27 May 2026 (HTML text): Disposición Adicional Primera, new art. 59 of Ley 2492 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281228 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1717 of 10 April 2026, published 11 April 2026 (HTML text): abrogation of the ITF, Ley 3446 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281148 | 2026-11-11 |
 
-Not yet confirmed: the replacement, if any, for LIBOR in DS 24051 art. 18 k); the SIN regulation (RND) that sets each formal-duty fine within the 50 to 5,000 UFV range, and the UFV value in bolivianos on any given date (published daily by the Banco Central de Bolivia, not read here); the SIN form and deadline for the sworn statement notifying the DS 5563 accelerated depreciation election; the exact first IT period against which the IUE credit may be taken; the treaty rates on IUE-BE; the Gaceta Oficial originals of DS 5563, Ley 1705, Ley 1717 and Ley 1733 (read here only as reproduced in the SIN consolidated texts).
+Not yet confirmed: the replacement, if any, for LIBOR in DS 24051 art. 18 k); the SIN regulation (RND) that sets each formal-duty fine within the 50 to 5,000 UFV range, and the UFV value in bolivianos on any given date (published daily by the Banco Central de Bolivia, not read here); the SIN form and deadline for the sworn statement notifying the DS 5563 accelerated depreciation election; the exact first IT period against which the IUE credit may be taken; the treaty rates on IUE-BE; the Gaceta Oficial original of Ley 1705 (PGE 2026), read here only as cited in DS 5563.
