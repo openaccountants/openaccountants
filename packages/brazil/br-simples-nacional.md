@@ -10,9 +10,7 @@ depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ariane Marrocos"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: income-tax
 ---
 
@@ -22,7 +20,6 @@ domain: income-tax
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
 ### Simples Nacional
 

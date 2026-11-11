@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "US"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Christopher Aryee"
 ---
 
 # US Form 1065 Partnership
