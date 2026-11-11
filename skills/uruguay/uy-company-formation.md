@@ -53,7 +53,7 @@ This skill sets out how to choose and form a company in Uruguay in 2026, in the 
 | SRL: maximum number of partners | 50; above that, become an SA within two years or dissolve | 2026 | https://www.impo.com.uy/bases/leyes/16060-1989 (art. 223) |
 | SRL: cash contribution paid in at signing | At least 50%, the rest within two years; in-kind contributions in full | 2026 | same (art. 228) |
 | SRL: partners' guarantee of contributions to third parties | Joint, for two years from each contribution | 2026 | same (art. 229) |
-| SRL: registration and publication | Contract registered at the Registro Público de Comercio within 60 days, then an extract published | 2026 | same (art. 227) |
+| SRL: registration and publication | Contract registered at the Registro Público de Comercio, then an extract published within 60 days | 2026 | same (art. 227) |
 | SA: single-act constitution | At least 25% of capital paid in and 50% subscribed | 2026 | same (art. 280) |
 | SA: currency of capital | Uruguayan pesos; foreign currency may be allowed where the main object is investing in assets abroad | 2026 | same (art. 279) |
 | SA: cash contributions | Deposited in a bank account in the name of the company in formation, "Cuenta integración de capital" | 2026 | same (art. 281) |
@@ -90,7 +90,7 @@ The steps in the order a founder meets them:
 
 1. **Choose the type and draft the statute or contract** with the contents above.
 2. **Sign.** SAS: private or public document, or online with an advanced electronic signature (Ley 19.820 art. 11). SA: pay in at least 25% of the capital into a "Cuenta integración de capital" in a bank and subscribe 50% (Ley 16.060 arts. 280 and 281). SRL: pay in at least 50% of each cash contribution (art. 228).
-3. **Register.** SAS: at the Registro de Personas Jurídicas, Sección Registro Nacional de Comercio, within 30 days; the SAS exists from registration (Ley 19.820 art. 11). SRL: register within 60 days and publish an extract with name, partners, capital and quotas, object, term, address and registration details (Ley 16.060 art. 227).
+3. **Register.** SAS: at the Registro de Personas Jurídicas, Sección Registro Nacional de Comercio, within 30 days; the SAS exists from registration (Ley 19.820 art. 11). SRL: once the contract is registered, publish within 60 days an extract with name, partners, capital and quotas, object, term, address and registration details (Ley 16.060 art. 227).
 4. **Identify and report the beneficial owners** and, for nominative shares or quotas, the holders, to the Banco Central; report later changes within 45 days, or 90 days for non-resident holders (Ley 19.484 arts. 23 to 25).
 5. **Register with DGI and BPS** before starting activity; get a personal BPS user for the owners or representatives and, if needed, delegate permissions ([BPS guide](https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf)).
 6. **First employee.** Declare the company's wage-council group (Consejos de Salarios), then register the worker in GAFI from 10 days before the start date up to that date; send the monthly nómina and pay the month after ([uruguay-payroll](uruguay-payroll.md)).
@@ -160,6 +160,6 @@ expected:
 | Ley 19.484, IMPO consolidated text: arts. 22 to 26 read (beneficial owners, reporting to the Banco Central) | https://www.impo.com.uy/bases/leyes/19484-2017 | 2026-11-11 |
 | BPS, Guía de obligaciones Industria y Comercio (January 2025 edition, page updated 21 May 2026), all pages read: personal BPS user, alta deadline, nómina, payment | https://www.bps.gub.uy/bps/file/10291/13/guia---industria-y-comercio.pdf | 2026-11-11 |
 
-Not yet confirmed: whether an SA or SRL can be formed online like an SAS; registry, publication and notary costs and typical timings (the old file's "days" for an SAS and "around 30 days" for an SA or SRL had no official source); the DGI registration (RUT) procedure and forms; the asset and income levels and terms for registering accounts with the AIN (set by regulation, not read); the SA shareholder liability and balance-payment rules, and whether an SA may continue with a single shareholder; whether the bearer share rules of Ley 18.930 still apply; the 2026 UI value for converting the SAS thresholds.
+Not yet confirmed: whether an SA or SRL can be formed online like an SAS; registry, publication and notary costs and typical timings (the old file's "days" for an SAS and "around 30 days" for an SA or SRL had no official source); the DGI registration (RUT) procedure and forms; the asset and income levels and terms for registering accounts with the AIN (set by regulation, not read); the SA shareholder liability and balance-payment rules, and whether an SA may continue with a single shareholder; whether the bearer share rules of Ley 18.930 still apply; the 2026 UI value for converting the SAS thresholds; whether the company must file the annual Impuesto al Patrimonio (net wealth tax) return (carried from the old file, Texto Ordenado 1996, not read); the publication channels (Diario Oficial and a newspaper) for an SA or SRL extract (carried from the old file, not read).
 
 > Contributed by Michael Cutajar.
