@@ -53,13 +53,14 @@ Each figure is for 2026 unless another period is expressly stated. "IGV" in the 
 | UIT | S/ 5,500 for 2026. Use the UIT year prescribed by the specific rule; IGV Justo uses the preceding year's UIT for its turnover test. | DS 301-2025-EF, [SUNAT UIT table](https://www.sunat.gob.pe/indicestasas/uit.html) |
 | Exports | No output IGV when LIGV art. 33 conditions are satisfied; legally "no están afectos", not an ordinary exempt domestic sale. Qualifying inputs can generate exporter credit under art. 34. | [LIGV arts. 33-35](https://www.sunat.gob.pe/legislacion/igv/ley/capitul9.pdf) |
 | Appendix I and II exemptions | Specific listed goods/services remain exempt through 31 December 2028. Match the description/tariff line and conditions and check any effective Appendix I waiver. | LIGV arts. 5-7 as amended by Ley 32542, [chapter II](https://www.sunat.gob.pe/legislacion/igv/ley/capitul2.pdf); [Appendix I](https://www.sunat.gob.pe/legislacion/igv/ley/apendiceI.pdf); [Appendix II](https://www.sunat.gob.pe/legislacion/igv/ley/apendice2.pdf) |
-| IGV retention received | 3% of the tax-inclusive payment by a designated agent. The S/ 700 exception requires both payment and total relevant invoice amounts not to exceed that amount; inspect other exclusions and partial payments. | RS 037-2002/SUNAT arts. 3, 5-6 as amended by RS 033-2014; [retention rules](https://www.sunat.gob.pe/legislacion/superin/2002/037.htm); [SUNAT detailed FAQ](https://orientacion.sunat.gob.pe/06-preguntas-frecuentes-regimen-de-retenciones) |
+| IGV retention received | 3% of the tax-inclusive payment by a designated agent. The S/ 700 exception requires both payment and total relevant invoice amounts not to exceed that amount. No retention on an operation subject to SPOT; inspect the other exclusions and partial payments. | RS 037-2002/SUNAT arts. 3, 5(f), 6 as amended by RS 033-2014; [retention rules](https://www.sunat.gob.pe/legislacion/superin/2002/037.htm); [SUNAT detailed FAQ, question 15](https://orientacion.sunat.gob.pe/06-preguntas-frecuentes-regimen-de-retenciones) |
 | Import perceptions | 10% for listed importer-risk conditions, including first import as specified in the customs guidance; 5% for used goods where the higher rate does not apply; 3.5% otherwise. Check exclusions and sensitive-goods fixed-amount comparisons. These are advances, not extra input IGV. | Ley 29173 arts. 18-19, [SUNAT customs perception conditions](https://www.sunat.gob.pe/orientacionaduanera/pagosgarantias/) |
 | Internal-goods/fuel perceptions | Listed domestic goods: 2% normally, 0.5% where credit-supporting document and the qualifying perception-agent customer condition apply. Fuel: 1% of price, subject to the customer exclusions, including final consumers who do not trade the fuel. | [SUNAT perception rates and exclusions](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/regimen-percepciones-igv); RS 128-2002 art. 4 [fuel rule](https://www.sunat.gob.pe/legislacion/superin/2002/128.htm) |
 | Construction SPOT | 4% of the total operation for qualifying construction contracts, normally when greater than S/ 700 and no document/other exclusion applies. Equipment-with-operator rental alone is excluded from the construction definition in Annex 3 item 9. | RS 183-2004 arts. 12-16, [rules](https://www.sunat.gob.pe/legislacion/superin/2004/183.htm); [SUNAT Annex 3](https://orientacion.sunat.gob.pe/apendices-del-sistema-de-detracciones) |
+| Ordinary business consulting SPOT | 12% of the total operation under Annex 3 item 5, subject to the greater-than-S/ 700 and document/population tests; residual domestic business services require the actual item 10 classification/exclusions. Do not apply a simultaneous 3% retention. | RS 183-2004 arts. 12-16; [current Annex 3 items 5/10, table effective 1 April 2018](https://orientacion.sunat.gob.pe/apendices-del-sistema-de-detracciones); [RS 037 art. 5(f)](https://www.sunat.gob.pe/legislacion/superin/2002/037.htm) |
 | Required payment means | Obligations from S/ 2,000 or US$ 500 require qualifying payment means, including where split into smaller payments. Check statutory exceptions; failure can defeat IGV credit. | Ley 28194 TUO arts. 3-5, 8, amended by DL 1529, [official consolidation](https://www.sunat.gob.pe/legislacion/itf/ds150_07.pdf) |
 | Ordinary purchase-record timing | Record eligible documents in the issue/payment month, as applicable, or one of the following twelve months and claim in the recorded period, subject to the qualifications below. | Ley 29215 art. 2 [gazette text](https://www.sunat.gob.pe/legislacion/nor_graf/2008/abril/nl20080423.pdf); [SUNAT interpretation 052-2018](https://www.sunat.gob.pe/legislacion/oficios/2018/informe-oficios/i052-2018-7T0000.pdf); [RS 047-2026 recitals](https://www.sunat.gob.pe/legislacion/superin/2026/000047-2026.pdf) |
-| Representation expenditure input credit | Within 0.5% of accumulated gross income for the calendar year through the relevant month, with an annual cumulative 40 UIT ceiling, and the general credit conditions. | IGV Regulation art. 6(10), [chapter V](https://www.sunat.gob.pe/legislacion/igv/regla/cap5.pdf) |
+| Representation expenditure supporting input credit | Qualifying expenditure, rather than the tax credit itself, is limited to 0.5% of accumulated calendar-year gross income through the month, capped cumulatively at 40 UIT annually. Compute credit on the eligible expenditure, subject to all general credit conditions. | IGV Regulation art. 6(10), [chapter V](https://www.sunat.gob.pe/legislacion/igv/regla/cap5.pdf) |
 
 Hospitality eligibility must be tested month by month using the prescribed lookback. SUNAT states that failure or renewed satisfaction of the sales/activity limits changes the rate from the first day of the second month after the last month used for the check ("mes subsiguiente al último que se empleó"). Retain the income schedule and economic-group analysis. An invoice alone does not prove entitlement. Do not use the older 10% combined example in the FV621 help document for 2026; the current hospitality page expressly gives 10.5%.
 
@@ -85,7 +86,7 @@ Further checks:
 - **Utilities:** art. 21 allows electricity, water and final telephone credit at earlier payment/due date, subject to the other conditions. A tenant can use a landlord-addressed utility document only under the lease/document conditions in Regulation art. 6(2.1)(d), not merely because the office uses the supply. [LIGV art. 21](https://www.sunat.gob.pe/legislacion/igv/ley/capitul6.pdf); [Regulation](https://www.sunat.gob.pe/legislacion/igv/regla/cap5.pdf).
 - **Imported services:** pay the tax and record both the foreign document, if issued, and the payment document; credit cannot precede payment. Apply business-use and prorrata restrictions too. [LIGV arts. 18-21](https://www.sunat.gob.pe/legislacion/igv/ley/capitul6.pdf); [Regulation art. 6(11)](https://www.sunat.gob.pe/legislacion/igv/regla/cap5.pdf).
 - **Payment means/SPOT:** enforce bancarización when payment occurs, and retain the required detracción deposit evidence before allowing the corresponding credit period. A supplier's Banco de la Nación balance is not a buyer's input-credit approval. [Ley 28194 art. 8](https://www.sunat.gob.pe/legislacion/itf/ds150_07.pdf); [DL 940 first final provision](https://www.sunat.gob.pe/legislacion/detracciones/).
-- **Corrections and disposals:** use valid notes for returns, discounts and cancellations. Fixed assets sold below cost within two years of commissioning can require proportional credit repayment; technological replacement has a documented technical-report exception and a one-year rule. Loss/destruction can require repayment, subject to the duly supported statutory exclusions, including force majeure, crime, fully depreciated fixed assets and qualifying merma/desmedro. [LIGV art. 22](https://www.sunat.gob.pe/legislacion/igv/ley/capitul6.pdf).
+- **Corrections and disposals:** use valid notes for returns, discounts and cancellations. Fixed assets sold below cost within two years of commissioning can require proportional credit repayment in the sale month. A shorter technological replacement cycle requires a technical report from the relevant sector Ministry; even in that case, sale before one year of operation still requires proportional repayment. A taxpayer's own report alone is insufficient. Loss/destruction can require repayment, subject to the duly supported statutory exclusions, including force majeure, crime, fully depreciated fixed assets and qualifying merma/desmedro. [LIGV art. 22](https://www.sunat.gob.pe/legislacion/igv/ley/capitul6.pdf).
 
 ### Mixed taxable/exempt operations and private use
 
@@ -118,7 +119,7 @@ The names below are recognition keywords from earlier working papers, not proof 
 
 Register the person/entity in the RUC and obtain Clave SOL before doing the taxable business workflow. The RUC is an eleven-digit identifier; record the start date, fiscal address, activity, regime and tax obligations and download the CIR/registration evidence. Eligible natural persons can use SUNAT Virtual/App Personas; entities use the entity registration process or their registered representative. Confirm active status and tax affectation, not just that a number exists. [SUNAT RUC registration](https://www.gob.pe/284-sacar-ruc-persona-natural); [SUNAT updating business obligations](https://centrovirtual.sunat.gob.pe/tramites/actualizar-datos-ruc).
 
-Issue the proper factura for credit-supporting business sales and exports, and boleta for the appropriate consumer sales; follow the designated SEE electronic system and contingency rules. Validate electronic acceptance and issuance/transmission. For SEE del Contribuyente, SFS and OSE facturas and linked notes, SUNAT states transmission by the issue date or next calendar day; document exceptions have different deadlines. Save the CDR/validation and invoice, not merely the bank reference. [Comprobantes Regulation art. 4](https://www.sunat.gob.pe/legislacion/comprob/regla/capituloI.pdf); [SUNAT CPE FAQ, questions 9-14](https://cpe.sunat.gob.pe/informacion_general/preguntas_frecuentes).
+Issue the proper factura for credit-supporting business sales and exports, and boleta for the appropriate consumer sales; follow the designated SEE electronic system and contingency rules. Validate electronic acceptance and issuance/transmission. For SEE del Contribuyente, SFS and OSE facturas and linked notes, transmit on the issue date or within a maximum of three calendar days counted from the following calendar day; other document types have their own deadlines. Save the CDR/validation and invoice, not merely the bank reference. [Comprobantes Regulation art. 4](https://www.sunat.gob.pe/legislacion/comprob/regla/capituloI.pdf); [RS 003-2023 arts. 3-5](https://www.sunat.gob.pe/legislacion/superin/2023/000003-2023.pdf); [SUNAT CPE FAQ, including question 15 correcting the older one-day passage](https://cpe.sunat.gob.pe/informacion_general/preguntas_frecuentes).
 
 ### Monthly return, calendar and payment
 
@@ -165,6 +166,12 @@ If CPEs are missing, hold input credit and request document identifiers, XML/val
 
 ## Penalties and interest
 
+**First test the mandatory preventive-training gate.** Under [Tax Code arts. 165/180, amended by Law 32335](https://www.sunat.gob.pe/legislacion/codigo/textoCompleto-TUO-CT.pdf), a qualifying microenterprise with annual sales up to 150 UIT, in any tax regime, must receive the first-infringement training process before the corresponding fine/closure sanction. This is separate from discretionary relief and ordinary graduality.
+
+Apply [DS 288-2025-EF arts. 3-11](https://www.mef.gob.pe/es/por-instrumento/decreto-supremo/34781-decreto-supremo-n-288-2025-ef/file): test each independent infringement item in arts. 173-178, not one allowance for each broad art. 172 category. Check same-type history, notices and prior relief under art. 5. Use prescribed prior-year declared income and that year's UIT; apply the startup rule when there was no prior-year activity. More than one omitted required monthly return can exclude qualification. Check the owner/partner conviction exclusion, RUC-reactivation history and simultaneous-first-infringement rule. This is not an unconditional waiver for every small business.
+
+Under [RS 010-2026 arts. 5-8](https://www.sunat.gob.pe/legislacion/superin/2026/000010-2026.pdf), read the actual SOL buzón notification for the course URL, credentials and nonextendable five-business-day access window. The taxpayer or entity's legal representative completes the course and final activity, obtains and saves the constancia within that window. Incomplete attendance permits the applicable sanction. Training does not pay tax or interest; DS 288 art. 10(f) bars refund/compensation of relevant payments made before course completion. Record the gate's outcome before treating any table amount below as a payable fine.
+
 | Failure | Rule and limits | Official source |
 |---|---|---|
 | Late payment of PEN tax | TIM currently 0.90% monthly; daily rate is monthly TIM / 30, applied to unpaid tax from the day after due date through payment. Check any applicable statutory suspension and effective rates over the delay. | Código Tributario art. 33; RS 044-2021 sole article; [SUNAT current TIM table](https://www.sunat.gob.pe/indicestasas/tim.html), [resolution](https://www.sunat.gob.pe/legislacion/superin/2021/044-2021.pdf) |
@@ -202,32 +209,41 @@ Nonresident consumer digital supplies are different: LIGV art. 49-A makes the no
 
 All amounts below are hypothetical PEN working-paper inputs. Rate authority: [2026 SUNAT table](https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/impuesto-general-las-ventas); credit authority: [LIGV arts. 18-25](https://www.sunat.gob.pe/legislacion/igv/ley/capitul6.pdf). Calculations show the combined IGV/IPM amount.
 
-### Example 1: consulting sales, electricity input and a valid retention
+### Example 1: consulting SPOT, electricity input and a separate carried retention
 
-A Lima consulting company has a confirmed ordinary domestic factura for S/ 500,000 net, with S/ 90,000 tax, S/ 590,000 total. A designated customer withholds S/ 17,700 (3% of total), paying S/ 572,300 to the company. The company has qualifying electricity input of S/ 40,000 net plus S/ 7,200 tax and other qualifying inputs of S/ 160,000 plus S/ 28,800 tax. All credit conditions and SPOT/payment requirements, where applicable, are met; no exempt/private use or preceding credit applies. Output is S/ 90,000; purchase credit S/ 36,000; tax before retention S/ 54,000; after retention S/ 36,300 payable. FV621 ordinary sale fields are 100/101, not 100/105. Retention authority: [RS 037 arts. 3, 5-6](https://www.sunat.gob.pe/legislacion/superin/2002/037.htm).
+A Lima consulting company has a confirmed domestic business-advisory factura for S/ 500,000 net, S/ 90,000 tax and S/ 590,000 total, subject to Annex 3 item 5 with no exclusion. The customer deposits S/ 70,800 at 12% into the supplier's detracción account and pays S/ 519,200 to the supplier. No 3% retention applies to that operation. The company has qualifying electricity input of S/ 40,000 net plus S/ 7,200 tax and other qualifying inputs of S/ 160,000 plus S/ 28,800 tax. All credit and applicable payment conditions are met; no exempt/private use or preceding **purchase-credit** applies. Output S/ 90,000 less purchase credit S/ 36,000 gives S/ 54,000 before advance credits. [Annex 3 item 5](https://orientacion.sunat.gob.pe/apendices-del-sistema-de-detracciones); [RS 037 art. 5(f)](https://www.sunat.gob.pe/legislacion/superin/2002/037.htm).
+
+Separately, the records establish a previously declared, unused retention balance of S/ 17,700 from a different eligible non-SPOT operation. The underlying historical payment was S/ 590,000: 3% was S/ 17,700 and net cash S/ 572,300. Those amounts do not describe the current consulting collection. With that documented carried retention available, current payable IGV is S/ 36,300; without it, S/ 54,000. FV621 uses 176 for the unused prior retention, not 168 for a current retention on the consulting invoice. Ordinary sales fields remain 100/101, not 100/105. [RS 037 arts. 3, 5-7, 11](https://www.sunat.gob.pe/legislacion/superin/2002/037.htm); [FV621 help, section III](https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ayuda_621_igv_renta_mensual_ccv.pdf).
 
 ```oa-check
-name: Ordinary domestic consulting and eligible inputs, 2026
+name: Consulting SPOT and separately documented carried retention, 2026
 inputs:
   sales_net: 500000
   electricity_net: 40000
   other_inputs_net: 160000
   rate: 0.18
   retention_rate: 0.03
+  spot_rate: 0.12
+  historical_eligible_payment: 590000
+  carried_retention: 17700
 steps:
   output_tax: sales_net * rate
   invoice_total: sales_net + output_tax
-  retention: invoice_total * retention_rate
-  customer_cash: invoice_total - retention
+  current_spot_deposit: invoice_total * spot_rate
+  current_supplier_cash: invoice_total - current_spot_deposit
+  historical_retention: historical_eligible_payment * retention_rate
+  historical_supplier_cash: historical_eligible_payment - historical_retention
   electricity_credit: electricity_net * rate
   purchase_credit: electricity_credit + other_inputs_net * rate
   tax_before_retention: output_tax - purchase_credit
-  payable: tax_before_retention - retention
+  payable: tax_before_retention - carried_retention
 expected:
   output_tax: 90000
   invoice_total: 590000
-  retention: 17700
-  customer_cash: 572300
+  current_spot_deposit: 70800
+  current_supplier_cash: 519200
+  historical_retention: 17700
+  historical_supplier_cash: 572300
   electricity_credit: 7200
   purchase_credit: 36000
   tax_before_retention: 54000
@@ -311,6 +327,7 @@ Read dates mean the operative portions named below were opened and read, not mer
 | SUNAT RUC: read natural-person registration, eleven-digit identifier, start date, regime, SOL and confirmation steps | https://www.gob.pe/284-sacar-ruc-persona-natural | 2026-11-11 |
 | SUNAT business RUC update: read Quiero abrir un negocio route, regime/IGV affectation and CIR download | https://centrovirtual.sunat.gob.pe/tramites/actualizar-datos-ruc | 2026-11-11 |
 | SUNAT CPE FAQ: read transmission/acceptance, NRUS and imported-service module questions | https://cpe.sunat.gob.pe/informacion_general/preguntas_frecuentes | 2026-11-11 |
+| RS 003-2023: read complete arts. 1-5 and final/transitional provisions; three-day factura/linked-note deadline across the three SEE systems, compared FAQ question 15 with superseded one-day passage | https://www.sunat.gob.pe/legislacion/superin/2023/000003-2023.pdf | 2026-11-11 |
 | SUNAT FV621 overview: read covered regimes and SIRE proposal correction | https://orientacion.sunat.gob.pe/01-formulario-virtual-ndeg-621-igv-renta-mensual | 2026-11-11 |
 | SUNAT FV621 help: read sections I-III field definitions, ratio, total-debt formula and old rate captions | https://orientacion.sunat.gob.pe/sites/default/files/inline-files/ayuda_621_igv_renta_mensual_ccv.pdf | 2026-11-11 |
 | SUNAT declaration guidance: read basket, submission/payment and NPS steps | https://orientacion.sunat.gob.pe/declaracion-simplificada-personas | 2026-11-11 |
@@ -321,11 +338,13 @@ Read dates mean the operative portions named below were opened and read, not mer
 | RS 037-2002: read arts. 3, 5-6 and exclusions; SUNAT FAQ: read 700 exception and current 3% payment calculation | https://www.sunat.gob.pe/legislacion/superin/2002/037.htm; https://orientacion.sunat.gob.pe/06-preguntas-frecuentes-regimen-de-retenciones | 2026-11-11 |
 | SUNAT perceptions: read domestic/import/fuel rates, collection moment and exclusions; customs page: read first-import and sensitive-goods rules | https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/regimen-percepciones-igv; https://www.sunat.gob.pe/orientacionaduanera/pagosgarantias/ | 2026-11-11 |
 | RS 128-2002: read arts. 2-4 fuel scope, exclusions, agents and 1% | https://www.sunat.gob.pe/legislacion/superin/2002/128.htm | 2026-11-11 |
-| RS 183-2004 and Annex 3: read arts. 12-16, item 9 construction definition, rate and exclusions | https://www.sunat.gob.pe/legislacion/superin/2004/183.htm; https://orientacion.sunat.gob.pe/apendices-del-sistema-de-detracciones | 2026-11-11 |
+| RS 183-2004 and Annex 3: read arts. 12-16, items 5/9/10, current business-service rate and exclusions alongside construction definition/rate | https://www.sunat.gob.pe/legislacion/superin/2004/183.htm; https://orientacion.sunat.gob.pe/apendices-del-sistema-de-detracciones | 2026-11-11 |
 | SUNAT SPOT: read construction/Annex 3 rate, buyer/supplier deposit timing and exceptions | https://emprender.sunat.gob.pe/principales-impuestos/impuesto-general-las-ventas-igv/sistema-detracciones-igv | 2026-11-11 |
 | DL 940 TUO: read first final provision distinguishing deposit and input-credit timing | https://www.sunat.gob.pe/legislacion/detracciones/ | 2026-11-11 |
 | Ley 28194 TUO: read arts. 3-5, 8 payment threshold, qualifying means and lost-credit effects | https://www.sunat.gob.pe/legislacion/itf/ds150_07.pdf | 2026-11-11 |
 | Código Tributario DS 133-2013-EF: read arts. 33, 174-178, 181 and Tables I-II/note 21; consolidation through 26 June 2026 | https://www.sunat.gob.pe/legislacion/codigo/textoCompleto-TUO-CT.pdf | 2026-11-11 |
+| Tax Code arts. 165/180 as amended by Law 32335, preventive-training gate; DS 288-2025-EF regulation arts. 3-11 and transitions, actual MEF PDF read through web after direct download returned non-PDF HTML | https://www.sunat.gob.pe/legislacion/codigo/textoCompleto-TUO-CT.pdf; https://www.mef.gob.pe/es/por-instrumento/decreto-supremo/34781-decreto-supremo-n-288-2025-ef/file | 2026-11-11 |
+| RS 010-2026, complete four-page resolution, course notice, access period, completion/final activity and constancia | https://www.sunat.gob.pe/legislacion/superin/2026/000010-2026.pdf | 2026-11-11 |
 | SUNAT TIM and RS 044-2021: read current PEN rate and note distinguishing legal interest on fines | https://www.sunat.gob.pe/indicestasas/tim.html; https://www.sunat.gob.pe/legislacion/superin/2021/044-2021.pdf | 2026-11-11 |
 | RS 000047-2026: read arts. 4-8, July commencement and prior-payment transitional rule | https://www.sunat.gob.pe/legislacion/superin/2026/000047-2026.pdf | 2026-11-11 |
 
