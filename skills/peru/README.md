@@ -13,7 +13,7 @@ partial:
 
 <!-- Maintained coverage map. Preserve its source-verified partial and out-of-scope notes. -->
 
-Tax years: 2026 (4 skills), 2025 (4 skills).
+Tax years: 2026 (5 skills), 2025 (3 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
@@ -42,7 +42,7 @@ Tracked in [\[PE\] Complete the pack](https://github.com/openaccountants/openacc
 ## Other skills
 
 - [Company formation](pe-company-formation.md) (2025)
-- [Tax overview](pe-tax-overview.md) (2025)
+- [Tax overview](pe-tax-overview.md) (2026)
 
 ## Out of scope
 
