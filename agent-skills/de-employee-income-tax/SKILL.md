@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-employee-income-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-09"
 ---
 
 # Germany: income tax return for employees, tax year 2026 (Anlage N)
@@ -80,8 +80,8 @@ All amounts are for tax year 2026.
 | Extraordinary burdens: reasonable own share | Total income up to 15,340 / 15,341 to 51,130 / over 51,130: no children, basic tariff 5 / 6 / 7%; no children, splitting 4 / 5 / 6%; one or two children 2 / 3 / 4%; three or more 1 / 1 / 2% | https://www.gesetze-im-internet.de/estg/__33.html (§ 33(3)) |
 | Maintenance of a dependant | Up to EUR 12,348 a year (the basic allowance), less the dependant's own income over EUR 624 | https://www.gesetze-im-internet.de/estg/__33a.html |
 | Disability lump sum | EUR 384 (degree 20) up to EUR 2,840 (degree 100); EUR 7,400 if helpless or blind | https://www.gesetze-im-internet.de/estg/__33b.html |
-| Solidarity surcharge | 5.5% of income tax; nothing while the tax (computed with child allowances) is at most EUR 20,350, or EUR 40,700 under splitting; above that, at most 11.9% of the excess | https://www.gesetze-im-internet.de/solzg_1995/__3.html and https://www.gesetze-im-internet.de/solzg_1995/__4.html |
-| Church tax | 8% or 9% of income tax (computed with child allowances), by state | § 51a EStG https://www.gesetze-im-internet.de/estg/__51a.html; BMF booklet "Steuern von A bis Z" ("je nach Bundesland 8 oder 9 Prozent") |
+| Solidarity surcharge | 5.5% of the base. Base: the income tax recomputed with the child allowances of § 32(6) EStG in every case, even where Kindergeld was kept instead (§ 3(2) SolzG). Nothing is due while the base, less any flat-rate tax on capital income under § 32d(3) and (4) EStG, is at most EUR 20,350, or EUR 40,700 where the splitting tariff applies (§ 32a(5) and (6) EStG, which includes the widow's year). Above that, the surcharge is at most 11.9% of the amount by which that reduced base exceeds the limit. The flat-rate § 32d(3)/(4) tax always carries the full 5.5%. Fractions of a cent are dropped. The 2026 limits apply from assessment year 2026 (§ 6(27) SolzG); 2025 used EUR 19,950 / 39,900 | https://www.gesetze-im-internet.de/solzg_1995/__3.html , https://www.gesetze-im-internet.de/solzg_1995/__4.html , https://www.gesetze-im-internet.de/solzg_1995/__6.html |
+| Church tax | 8% or 9% of income tax (computed with child allowances), by state. Base: the income tax recomputed with the child allowances in every case (§ 51a(2) sentence 1 EStG), with taxable income increased by the amounts tax-free under § 3 no. 40 and reduced by the amounts not deductible under § 3c(2) (partial-income method; sentence 2), and ignoring the § 35 trade tax credit (sentence 3). The rate is set by each church's resolution, not by federal law (Bavaria: Art. 8 BayKirchStG, up to 10%); which states use 8% and which 9% is not confirmed here. Not covered: couples where only one spouse belongs or the spouses belong to different churches (tax split by income ratio, or the special Kirchgeld), the cap on church tax (Kappung) and state rounding. | § 51a EStG https://www.gesetze-im-internet.de/estg/__51a.html; BMF booklet "Steuern von A bis Z" ("je nach Bundesland 8 oder 9 Prozent") |
 
 ## The taxable base
 
@@ -284,4 +284,4 @@ Not yet confirmed: the 2026 form set and line numbers (ELSTER has not published 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-09. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Omolola Fasasi"
 ---
 
 # NG Personal Income Tax
@@ -23,7 +22,6 @@ Nigeria — Personal Income Tax (PIT) — Skill v1.0
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -63,7 +61,6 @@ Nigeria — Personal Income Tax (PIT) — Skill v1.0
 | Annual SPT deadline | **31 March** of the following year (PITA s 41) |
 | Payment deadline | Self-assessed PIT paid in instalments OR full balance by 31 March; tax due **must** be paid on or before filing (PITA s 41(3)) |
 | TIN | Tax Identification Number issued by FIRS / JTB (Joint Tax Board); single national TIN since the JTB consolidation |
-| Validated by | Verified by Omolola Fasasi (MB058950) on 2026-06-21 |
 | Skill version | 1.0 |
 
 ### Progressive Tax Rates — PITA (Sixth Schedule, applies for FY 2025)
