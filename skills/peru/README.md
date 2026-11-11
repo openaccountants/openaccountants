@@ -7,6 +7,7 @@ covered_by:
   TP: peru-transfer-pricing
   XB: peru-cross-border-tax
 partial:
+  IT-IND: "work-income method only; full domestic rental and capital-income return methods still need current primary-source work"
   PR: "Other 2026 AFP devengue schedules still need primary-source confirmation before the November snapshot can be used for another month."
 ---
 
@@ -14,11 +15,11 @@ partial:
 
 <!-- Maintained coverage map. Preserve its source-verified partial and out-of-scope notes. -->
 
-Tax years: 2026 (5 skills), 2025 (4 skills).
+Tax years: 2026 (6 skills), 2025 (3 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Income tax](peru-income-tax.md) | 2025 | Needs updating |
+| Income tax | [Income tax](peru-income-tax.md) | 2026 | Work-income method; not yet approved; capital/rental gap stated above |
 | Company tax | [Corporate income tax](pe-corporate-income-tax.md) | 2025 | Needs updating |
 | VAT or sales tax | [IGV and IPM](peru-igv.md) | 2026 | Built from the law; not yet approved |
 | Social contributions | [Social contributions](peru-social-contributions.md) | 2026 | Ready |
@@ -32,7 +33,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 - Payroll: confirm other 2026 AFP devengue schedules; do not backdate the verified November snapshot.
 
-- Income tax: bring [Income tax](peru-income-tax.md) up to the current tax year.
+- Income tax: complete the domestic rental and capital-income methods alongside the updated work-income method.
 - Company tax: bring [Corporate income tax](pe-corporate-income-tax.md) up to the current tax year.
 - VAT: ordinary computation, credit allocation, registration and filing are covered by [IGV and IPM](peru-igv.md).
 - Transfer pricing: independent source review is recorded on the skill PR before merge.
