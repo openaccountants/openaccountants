@@ -175,7 +175,7 @@ Completion checklist: all required periods registered; source records validated;
 
 | Source and portions read | Official URL | Read on |
 |---|---|---|
-| Read for monthly period,credit/base/balances and documentary eligibility: IVA Law arts.5,10-13,24,27,37,39,41,43; quotation: "sólo deberá aplicarse a los débitos fiscales" | https://biblioteca.arca.gob.ar/search/query/dcp/TOR_C_020631_1997_03_26 | 2026-11-11 |
+| Read for monthly period,credit/base/balances and documentary eligibility: IVA Law arts.5,10-13,24,27-28,37,39,41,43; quotation: "sólo deberá aplicarse a los débitos fiscales" | https://biblioteca.arca.gob.ar/search/query/dcp/TOR_C_020631_1997_03_26 | 2026-11-11 |
 | Read for current F.2051 route,modules,validation,effective dates and calendar/payment: RG5705whole; quotation: "deberán ser validados por los contribuyentes" | https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t%3ARAG%7Cn%3A5705%7Co%3A9%7Ca%3A2025%7Cf%3A30%2F05%2F2025 | 2026-11-11 |
 | Read for ordinarycalendarannexV(a)-(b)andholidayruleart.2: RG4172andcurrentannex; quotation: "días hábiles inmediatos siguientes" | https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t:RAG%7Cn:4172%7Co:3%7Ca:2017%7Cf:22/12/2017 | 2026-11-11 |
 | Read for IVA due-daygrid/currentannexsectionV: quotation: "0 y 1" | https://biblioteca.arca.gob.ar/search/query/adjunto.aspx?p=t:RAG%7Cn:4172%7Co:3%7Ca:2017%7Cd:RG4172_efecto4354.pdf | 2026-11-11 |
