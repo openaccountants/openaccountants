@@ -78,6 +78,8 @@ Calculate `IRPJ = base × 15% + max(0, base - 20,000 × months) × 10%`; calcula
 
 Authority for steps 2-4: [LC 224 art. 4 §§4-5 and art. 14](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm#art4), and RFB V5 Q11, 11.1, 12-14, pp. 10-12, linked in the table.
 
+**Small-service exception.** Before using the general 32% IRPJ percentage, test the 16% exception in the rates table. It excludes hospital, transport and legally regulated professional-service companies; it is not an across-the-board small-company rate. Under [RIR/2018 art. 592 §§3-6](https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html), if accumulated annual gross revenue later exceeds BRL 120,000, recompute the deferred IRPJ difference for each elapsed quarter and pay that difference by the last business day of the month following the quarter in which the limit was exceeded. The regulation says "a diferença deverá ser paga até o último dia útil do mês subsequente ao do trimestre em que ocorreu o excesso". Keep the annual revenue monitor with the quarterly workpaper. This exception does not reduce ordinary service CSLL presumption to 16%.
+
 ## Deadlines and filing
 
 Under [Lei 9.430 arts. 1,5,6](https://www.planalto.gov.br/ccivil_03/leis/l9430.htm#art1), ordinary quarters close on 31 March, 30 June, 30 September and 31 December. A single quarterly payment is due by the last business day of the following month. The optional instalments fall on the last business days of the following three months, subject to the minimums above. Later instalments carry SELIC from the statutory start and 1% in the payment month; a three-instalment election is not interest-free.
@@ -183,6 +185,7 @@ Read dates below record reading the listed provisions and neighbouring exception
 | Lei 7.689/1988 arts. 2-3; CSLL base, ordinary versus special entity rates | https://www.planalto.gov.br/ccivil_03/leis/l7689.htm | 2026-11-11 |
 | Lei 9.718/1998 arts. 13-14; eligibility, annual election and mandatory lucro real categories | https://www.planalto.gov.br/ccivil_03/leis/l9718.htm | 2026-11-11 |
 | Lei 9.250/1995 art. 40 and sole paragraph; small-service-provider IRPJ presumption and excluded activities | https://www2.camara.leg.br/legin/fed/lei/1995/lei-9250-26-dezembro-1995-362566-normaatualizada-pl.html | 2026-11-11 |
+| Decreto 9.580/2018, RIR art. 592 §§1-6; activity exceptions and quarterly small-service catch-up | https://www2.camara.leg.br/legin/fed/decret/2018/decreto-9580-22-novembro-2018-787360-normaatualizada-pe.html | 2026-11-11 |
 | LC 224/2025 art. 4 §§1-9 and art. 14; scope, presumption increase and effective dates | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm | 2026-11-11 |
 | RFB reduction-of-benefits Q&A V5, pp. 5-14, especially Q6 and Q11-14; quarterly allocation, dates and fully included receipts | https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/beneficios-fiscais/perguntas-e-respostas-reducao-dos-incentivos-e-beneficios-tributarios-v5-final.pdf/@@download/file | 2026-11-11 |
 | Lei 9.065/1995 arts. 15-16; separate loss offsets and book/document conditions | https://www.planalto.gov.br/ccivil_03/leis/l9065.htm | 2026-11-11 |
