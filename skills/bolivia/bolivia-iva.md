@@ -57,15 +57,15 @@ Once someone is a taxpayer, every sale of movables linked to that activity is ta
 | Zero rate: domestic gold sales to raise international reserves (Ley 1503 art. 8); soy and similar products for YPFB biodiesel plants (Ley 1613 art. 21) | 0% | 2026 | same |
 | Exempt imports (art. 14; Ley 366 art. 8 I; Ley 1613 art. 9; DS 5533 of 30 January 2026): diplomatic imports, travellers' bona fide goods, printed books, newspapers and magazines, crude oil, gasoline and diesel | Exempt | 2026 | same |
 | Sale below which no invoice is needed (art. 16), with a daily summary invoice at the end of the day | Bs 5.00 | 2026 | same |
-| Fuel purchases: limit of credit to 70% (Ley 1356 art. 18) repealed by Ley 1718 of 10 April 2026 | Full 13% credit | 2026 | same |
-| IT rate (art. 75), on gross income accrued in the month (art. 74), IVA included | 3% | 2026 | same |
+| Fuel purchases: limit of credit to 70% (Ley 1356 art. 18) repealed by Ley 1718 of 10 April 2026 | Full 13% credit | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281149 |
+| IT rate (art. 75), on gross income accrued in the month (art. 74), IVA included | 3% | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf |
 | IT withheld when paying individuals for taxed items without an invoice (DS 21532 art. 10) | 3% of the full amount | 2026 | same |
 | IUE withheld when paying individuals for movable goods without an invoice (DS 24051 art. 3) | 5% of the amount (25% of a presumed 20% profit) | 2026 | same |
 | Payments that must be backed by a bank or other ASFI-regulated document (DS 27310 art. 37 as replaced by DS 772) | Bs 50,000 and above per transaction | 2026 | same |
 | Monthly IVA and IT returns and payment, by last digit of the NIT (DS 21530 art. 10; DS 21532 art. 7) | Digit 0 by day 13, rising one day per digit, to digit 9 by day 22 of the next month | 2026 | same |
 | IT on transfers of registered goods (real estate, vehicles, aircraft, boats, capital quotas) outside the habitual activity (DS 21532 art. 7) | Return and payment within 10 working days of the transfer, one return per asset | 2026 | same |
-| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448) | 60% of the updated omitted tax | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
-| Late interest on tax omitted, in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | same |
+| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448) | 60% of the updated omitted tax | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 |
+| Late interest on tax omitted, in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
 | Breach of formal duties, such as a late return or an unissued invoice (Ley 2492 art. 162) | 50 UFV to 5,000 UFV per breach | 2026 | same |
 
 ## The base
@@ -269,5 +269,9 @@ Transaction pointers, for classifying a bank statement:
 | SIN SIAT, Form 200 IVA: RCV prerequisite, filing module, every box code and formula (13 to 468) | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/impuesto-al-valor-agregado/200-impuesto-al-valor-agregado | 2026-11-11 |
 | SIN SIAT, Form 400 IT: box codes 13, 32, 24, 909, 664, 1001, 622, 640, 996 | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico/impuesto-a-las-transacciones/400-impuesto-a-las-transacciones | 2026-11-11 |
 | SIN SIAT, list of electronic forms: names of Forms 210, 410, 430 and 570 | https://siatinfo.impuestos.gob.bo/index.php/declaraciones-juradas-en-formato-electronico | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1718 of 10 April 2026, published 11 April 2026 (HTML text): sole article repealing Ley 1356 art. 18, no separate commencement date | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281149 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1448 of 25 July 2022 (HTML text): new art. 165 of Ley 2492 (60%) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 | 2026-11-11 |
+| Gaceta Oficial, Decreto Supremo N° 5563 of 2 March 2026 (HTML text): Disposiciones Adicionales Segunda (professionals IVA credit) and Tercera (IUE credit against IT) | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281098 | 2026-11-11 |
+| Gaceta Oficial, Ley N° 1733 of 27 May 2026 (HTML text): new art. 59 of Ley 2492, 4-year limitation | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/281228 | 2026-11-11 |
 
-Not yet confirmed: the first purchase date on which the full fuel credit applies after Ley 1718 of 10 April 2026 (the consolidated text gives only the law's date); any IVA or IT obligation on services bought from non-residents; the SIN resolution listing credits not linked to the activity; the RND amounts for each formal-duty fine; the UFV values in bolivianos for updating balances (published by the Banco Central de Bolivia, not read here); the current SIN invoicing-system rules (modalities and RND numbers); the Gaceta Oficial originals of DS 5563 and Ley 1718.
+Not yet confirmed: whether fuel purchases in April 2026 before Ley 1718 was published (11 April 2026) keep the 70% limit, since the law states no commencement date; any IVA or IT obligation on services bought from non-residents; the SIN resolution listing credits not linked to the activity; the RND amounts for each formal-duty fine; the UFV values in bolivianos for updating balances (published by the Banco Central de Bolivia, not read here); the current SIN invoicing-system rules (modalities and RND numbers); SIN guidance, if any, on the commencement of Ley 1718.
