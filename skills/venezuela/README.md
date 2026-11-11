@@ -4,41 +4,43 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   VAT: venezuela-iva
+  XB: venezuela-cross-border-tax
 partial:
+  XB: "Current administrative return and withholding instructions remain unconfirmed; ordinary company calculations use the merged corporate owner."
   IT-IND: "Existing skill remains on tax year 2025."
+  IT-CORP: "2026 ordinary statutory computation covered; current UT currency value and filing/advance instructions not yet confirmed."
   VAT: "Existing IVA skill remains on tax year 2025."
   SC: "Existing skill remains on tax year 2025."
   PR: "Existing skill remains on tax year 2025."
-  XB: "2026 source/base and specified individual/proportional methods covered; ordinary-company computation needs a separately reviewed CIT handoff; current withholding and filing instructions not yet confirmed."
 ---
 
 # Venezuela: tax pack
 
-This map is maintained with the country pack. Coverage includes only Guides on main; pending work is identified separately.
+This map is maintained with the country pack. The table reports merged Guides plus this cross-border update; other pending work is identified separately.
 
-Tax years: 2025 (5 skills), 2026 (1 skill).
+Tax years: 2025 (5 skills), 2026 (2 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
 | Income tax | [Income tax](venezuela-income-tax.md) | 2025 | Needs updating |
-| Company tax | | | Missing |
+| Company tax | [Corporate tax](venezuela-corporate-tax.md) | 2026 | Partial: UT currency value and filing instructions unconfirmed |
 | VAT or sales tax | [IVA](venezuela-iva.md) | 2025 | Needs updating |
 | Social contributions | [Social contributions](venezuela-social-contributions.md) | 2025 | Needs updating |
 | Payroll | [Payroll](venezuela-payroll.md) | 2025 | Needs updating |
 | Transfer pricing | | | Missing |
-| Cross-border | [Cross-border tax](venezuela-cross-border-tax.md) | 2026 | Partial: ordinary-company computation handoff and administrative instructions pending |
+| Cross-border | [Cross-border tax](venezuela-cross-border-tax.md) | 2026 | Partial: current filing and withholding instructions unconfirmed |
 
 Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
 ## What still needs doing
 
 - Income tax: bring [Income tax](venezuela-income-tax.md) up to the current tax year.
-- Write the company tax skill.
+- Confirm the current UT currency value, filing calendar and implementing instructions for [Corporate tax](venezuela-corporate-tax.md).
 - Bring [IVA](venezuela-iva.md) up to the current tax year.
 - Social contributions: bring [Social contributions](venezuela-social-contributions.md) up to the current tax year.
 - Payroll: bring [Payroll](venezuela-payroll.md) up to the current tax year.
 - Write the transfer pricing skill.
-- Confirm the current primary withholding and filing instructions for [Cross-border tax](venezuela-cross-border-tax.md).
+- Cross-border: confirm current return and withholding instructions before a live filing.
 
 Tracked in [\[VE\] Complete the pack](https://github.com/openaccountants/openaccountants/issues/373).
 
@@ -52,4 +54,4 @@ Tracked in [\[VE\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Out of scope
 
-Treaty-rate tables, specialist mutual-agreement/APA applications and sector-specific shipping, insurance, film and extractive regimes require separate primary-source work.
+Specialist financial and extractive-sector computations, sector exonerations, treaty-rate tables, low-tax-jurisdiction investment calculations, shareholder/branch distribution computations and complex reorganizations require separate primary-source work.
