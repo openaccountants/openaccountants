@@ -7,6 +7,7 @@ covered_by:
   TP: peru-transfer-pricing
   XB: peru-cross-border-tax
 partial:
+  SC: "Other 2026 AFP devengue schedules still need primary-source confirmation; the rewritten calculation currently verifies the November snapshot."
   IT-IND: "work-income method only; full domestic rental and capital-income return methods still need current primary-source work"
   PR: "Other 2026 AFP devengue schedules still need primary-source confirmation before the November snapshot can be used for another month."
 ---
@@ -22,7 +23,7 @@ Tax years: 2026 (6 skills), 2025 (3 skills).
 | Income tax | [Income tax](peru-income-tax.md) | 2026 | Work-income method; not yet approved; capital/rental gap stated above |
 | Company tax | [Corporate income tax](pe-corporate-income-tax.md) | 2025 | Needs updating |
 | VAT or sales tax | [IGV and IPM](peru-igv.md) | 2026 | Built from the law; not yet approved |
-| Social contributions | [Social contributions](peru-social-contributions.md) | 2026 | Ready |
+| Social contributions | [Social contributions](peru-social-contributions.md) | 2026 | Partial: other AFP devengue schedules need confirmation |
 | Payroll | [Payroll](peru-payroll.md) | 2026 | Partial: other AFP devengue schedules need confirmation |
 | Transfer pricing | [Transfer pricing](peru-transfer-pricing.md) | 2026 | Built from the law; not yet approved |
 | Cross-border | [Cross-border income tax](peru-cross-border-tax.md) | 2026 | Built from the law; not yet approved |
@@ -31,6 +32,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 ## What still needs doing
 
+- Social contributions: confirm the other 2026 AFP devengue schedules before applying the November snapshot to another month.
 - Payroll: confirm other 2026 AFP devengue schedules; do not backdate the verified November snapshot.
 
 - Income tax: complete the domestic rental and capital-income methods alongside the updated work-income method.
