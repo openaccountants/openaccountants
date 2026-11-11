@@ -199,4 +199,4 @@ Not yet confirmed: complete exercise 2027 annual calendar/software/form fields; 
 
 ## Talk to a verified accountant
 
-Give the professional the source-linked workbook, reviewer brief and action list with all gaps visible before filing or taking a tax position. Find Brazil Guides and professional-review options at [OpenAccountants](https://openaccountants.com). This source-cited draft does not record approval of a particular return.
+Give the professional the source-linked workbook, reviewer brief and action list with all gaps visible before filing or taking a tax position. Find Brazil Guides and professional-review options at [OpenAccountants](https://openaccountants.com). This Guide is **Not yet approved** and does not record approval of a particular return.
