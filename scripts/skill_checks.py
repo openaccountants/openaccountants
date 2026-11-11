@@ -590,9 +590,10 @@ TERM_SHARED_WITH = {
     "DE": {"AT", "CH", "LI"},
     "NL": {"CW", "SX", "AW", "BQ"},
     "CA": {"NG"},  # CRA is also Nigeria's Consolidated Relief Allowance
+    "FR": {"GF"},  # French Guiana uses French tax law and DGFiP
 }
 #: Territories that lawfully cite a neighbour's law and sites.
-NEIGHBOUR_TLDS = {"GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}}
+NEIGHBOUR_TLDS = {"GF": {"fr"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}}
 #: Jurisdiction values that name no single place.
 NON_PLACE_JURISDICTIONS = {"", "GLOBAL", "INTL", "GENERAL", "EU", "EU-27", "EU/EEA/CH/UK", "?"}
 #: Two-letter endings that say nothing about a country.
