@@ -8,8 +8,13 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `gf-import-octroi-and-vat.md`
-5. `gf-space-sector-octroi.md`
+4. `gf-cross-border-tax.md`
+5. `gf-import-octroi-and-vat.md`
+6. `gf-payroll.md`
+7. `gf-space-sector-octroi.md`
+8. `gf-transfer-pricing.md`
+9. `payroll-workflow-base.md`
+10. `transfer-pricing-workflow-base.md`
 
 ## How to use
 
