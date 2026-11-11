@@ -1,10 +1,10 @@
 ---
 name: mt-family-office-setup
 description: "Hub Guide for setting up a single-family office in Malta: the usual building blocks (family holding company, family investment company, foundation or trust, management company), how each is taxed with links to the deep Guides, the management company's own corporate tax, VAT, payroll and licensing questions, the Family Office Residency programme and the non-dom minimum tax, a setup checklist with the order of steps and documents, what a Malta structure does not do, when another country fits better, and a worked hypothetical family structure."
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -51,7 +51,7 @@ This table states only the headline rule and points to the Guide that proves it.
 | Participating holding, route (a) of the article 2(1) definition (other routes exist; see `mt-holding-company-participation-exemption`) (and carrying at least five percent of any two of the right to vote, profits available for distribution and assets on a winding up) | at least five percent of the equity shares | "a company holds directly at least five percent of the equity shares" |
 | "passive interest or royalties", article 2(1): interest not derived from a trade or business that suffered no foreign tax, or foreign tax at a rate below this | 5% | "at a rate of tax which is less than five per cent (5%)" |
 | Tax deducted by a Malta company from an untaxed dividend paid to a "recipient", article 62(1) | fifteen per cent | "deduct therefrom tax at a rate of fifteen per cent" |
-| Non-dom minimum tax trigger, article 56(27): foreign income derived (both readings below) | EUR 35,000 | "amounting to not less than thirty five thousand euro (€35,000)" |
+| Non-dom minimum tax trigger, article 56(27): total foreign income derived, where it is not received or not fully received in Malta | EUR 35,000 | "amounting to not less than thirty five thousand euro (€35,000)" |
 | Non-dom minimum tax, article 56(27) | EUR 5,000 | "not less than five thousand euro (€5,000) per annum" |
 | Company residence by incorporation, article 2(1) | incorporated in Malta on or after 1 July 1994 | "provided that a company incorporated in Malta on or after 1st July 1994 shall be resident in Malta" |
 
@@ -87,7 +87,7 @@ The Residency Malta home page lists a programme called "Family Office Residency"
 
 The routes whose terms can be read (non-dom ordinary residence, the Global Residence Programme, the Residence Programme, the Malta Permanent Residence Programme and the nomad permit) are in `mt-residence-programmes-for-wealthy-families`, with the individual position in `mt-non-dom` and `moving-to-malta-tax-residence`.
 
-One rule catches family members who move to Malta and keep their wealth abroad. Article 56(27) of the [Income Tax Act](https://legislation.mt/eli/cap/123/eng/pdf) applies to an individual who is ordinarily resident but not domiciled in Malta, to whom provisos (i) and (ii) of article 4(1) apply, who is not taxed under another minimum-tax scheme, and who "derives income (including, in the case of a married couple whose income is chargeable to tax in terms of article 49 of the Act, the income derived by both spouses) amounting to not less than thirty five thousand euro (€35,000) ... arising outside Malta ... but which is not received or not fully received in Malta". That person has a yearly tax liability of at least the minimum tax in the Cap. 123 table. The page can be read two ways. On the literal reading, the trigger counts all the foreign income derived, part of which may have been brought to Malta. On a narrower reading, only the part not received in Malta counts. The accountant has not ruled between them. The tax authority's guidance on this point could not be read for this Guide. Where the two readings give different answers, refer.
+One rule catches family members who move to Malta and keep their wealth abroad. Article 56(27) of the [Income Tax Act](https://legislation.mt/eli/cap/123/eng/pdf) applies to an individual who is ordinarily resident but not domiciled in Malta, to whom provisos (i) and (ii) of article 4(1) apply, who is not taxed under another minimum-tax scheme, and who "derives income (including, in the case of a married couple whose income is chargeable to tax in terms of article 49 of the Act, the income derived by both spouses) amounting to not less than thirty five thousand euro (€35,000) ... arising outside Malta ... but which is not received or not fully received in Malta". That person has a yearly tax liability of at least the minimum tax in the Cap. 123 table. The EUR 35,000 is tested on total foreign income derived. The rule then applies where that income is "not received or not fully received in Malta". The words "not fully received" mean that income partly brought to Malta is still caught. The tax compared with the minimum is the tax before relief under articles 76 to 89, on income other than article 5A property transfers. Tax paid under the Act counts towards the minimum, except article 5A tax. If the individual proves that tax on worldwide income would be lower, the liability is capped at that lower amount.
 
 ## The method, step by step
 
@@ -156,7 +156,7 @@ All amounts in this section are hypothetical. The family members live outside Ma
 - Immigration and any Family Office Residency or other residence permit: refer to the Residency Malta Agency or an immigration adviser. Refuse to state a family office residency condition, fee or tax effect from this Guide; no allowed page prints them.
 - Banking and account opening: refer.
 - Home-country tax of every family member, including exit taxes, controlled foreign company rules and the tax of trusts and foundations abroad: refer to an adviser in that country (`cfc-and-substance-rules-compared`, `exit-taxes-when-a-family-moves`, `succession-and-forced-heirship-compared`).
-- A non-dom family member whose foreign income derived is at least the article 56(27) threshold but who keeps less than that abroad: the two readings differ; refer.
+- A non-dom family member whose foreign income derived is at least the article 56(27) threshold but who keeps less than that abroad is still caught: the rule covers income "not received or not fully received in Malta" ([Cap. 123 art. 56(27)(ii)](https://legislation.mt/eli/cap/123/eng/pdf)).
 - Refer before telling a Malta-resident individual shareholder to rely on a refund under article 48(4) or (4A) of Cap. 372: article 12(1)(c)(iii) of the Income Tax Act and the bar in the last proviso to article 48(1) may reach it, and the text does not settle this (`mt-holding-company-participation-exemption`).
 - VAT on the management company's charges where a family company makes exempt or no supplies: refer (`malta-vat-return`).
 - Any structure whose main purpose is to reduce tax: the Commissioner may disregard a trust used "with the sole or main purpose of reducing the amount of tax payable by a person" ([Cap. 123 art. 27D(10)](https://legislation.mt/eli/cap/123/eng/pdf)). Refer.
@@ -214,6 +214,7 @@ This Guide is a draft from official pages, not tax advice. Rules change and fact
 |---|---|---|---|
 | Cap123 art27D(3)(b) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | Cap372 art48(4A) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap123 art56(27) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-08 | Non-dom minimum tax rows only |
 
 Prior source-read dates remain historical; this list does not refresh unrelated claims.
 

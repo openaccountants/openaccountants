@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-return-assembly"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
 ---
 
-# Malta personal-tax routing v0.2
+# Malta personal-tax routing v0.3
 
 **Source-cited draft. Restricted to neutral document collection and routing.** The former automated filing workflow is quarantined because it used the rental TA24 as the annual business return, unsupported box mappings, the wrong provisional-tax benchmark and quarterly Class 2 scheduling. This router does not produce filing instructions, return-box values, payment amounts or a filing-ready package.
 
@@ -41,7 +41,7 @@ Read provided documents first. Ask only for missing facts that affect the comput
 
 | Question | Destination | Boundary |
 |---|---|---|
-| Personal business/employment income, deductions, family table | [Malta income tax](../malta/malta-income-tax.md) | Parent-one-child top-rate subtraction is held where Act and MTCA differ |
+| Personal business/employment income, deductions, family table | [Malta income tax](../malta/malta-income-tax.md) | Parent with one qualifying child above €60,000: compute with the Act's €10,270 and say that MTCA's table shows €10,275 ([Act III of 2026, art. 19](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430)) |
 | Provisional tax | [Estimated tax](../malta/mt-estimated-tax.md) | Actual benchmark-year return and notice, not the latest profit figure |
 | Personal contributions | [Social security](../malta/malta-ssc.md) | No unsupported personal SSC deduction or fictitious return box |
 | Payroll records | [Payroll](../malta/malta-payroll.md) | Actual FS forms and applicable annual tables |
@@ -77,9 +77,10 @@ The complete superseded body is retained at [personal archive](../../evidence/ma
 | Social Security Act, article 11 | https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c | 2026-11-04 |
 | MTCA assessment-2026 filing/payment extension | https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline | 2026-11-04 |
 | Statutory Dates Rules, S.L. 372.16, rules 2 and 5 | https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2 | 2026-11-04 |
+| Act III of 2026, art. 19: ITA art. 56(1)(b)(iv)(d), subtraction €10,270 | https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430 | 2026-11-08 |
 
 Not yet confirmed: no official personal-return box mapping, complete tax computation, payment allocation or professional approval is supplied by this neutral router. Do not treat it as a filing package.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,12 +8,15 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `venezuela-income-tax.md`
-5. `venezuela-iva.md`
-6. `venezuela-payroll.md`
-7. `venezuela-social-contributions.md`
-8. `venezuela-tax-optimization.md`
-9. `payroll-workflow-base.md`
+4. `venezuela-corporate-tax.md`
+5. `venezuela-income-tax.md`
+6. `venezuela-iva.md`
+7. `venezuela-payroll.md`
+8. `venezuela-social-contributions.md`
+9. `venezuela-tax-optimization.md`
+10. `venezuela-transfer-pricing.md`
+11. `payroll-workflow-base.md`
+12. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

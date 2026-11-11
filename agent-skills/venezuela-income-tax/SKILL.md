@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "VE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Jose Padilla"
 ---
 
 # Venezuela Income Tax (ISLR) — Individual
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Jose Padilla** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -124,8 +122,6 @@ Venezuela is a **hyperinflationary economy with a dual-track measurement system*
 | Tax Unit (UT) value | VES 43.00 per UT (SNAT/2025/000048, Official Gazette 2 June 2025) |
 | Top marginal rate (residents) | 34% (Tarifa Nº 1, LISLR) |
 | Non-resident flat rate | 34% on Venezuelan-source income (PwC, reviewed 12 Jan 2026) |
-| Validated by | Verified by Jose Padilla (CPA) on 2026-06-21 |
-| Validation date | Verified by Jose Padilla (CPA) on 2026-06-21 |
 | Skill version | 0.1 |
 
 ### Tax Unit (UT) — the master variable

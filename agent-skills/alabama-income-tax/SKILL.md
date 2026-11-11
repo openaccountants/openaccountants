@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "US-AL"
   tax_year: "2025"
   last_updated: "2026-08-06"
-  reviewed_by: "Anthony Bandura"
 ---
 
 # Alabama Income Tax

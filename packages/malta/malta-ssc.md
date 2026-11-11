@@ -1,10 +1,10 @@
 ---
 name: malta-ssc
 description: Use this skill whenever asked about Malta Social Security Contributions (SSC) for self-employed or self-occupied individuals. Trigger on phrases like "how much SSC do I pay", "Class 2 contributions", "social security self-employed", "SSC calculation", "SSC arrears", "do I need to pay SSC", "SSC and income tax", "DSS payment", "Class 2 quarterly debit", or any question about Malta SSC obligations for a self-employed client. Also trigger when classifying bank statement transactions that relate to DSS debits, SSC direct debits, or government social security payments from BOV, HSBC, or other Maltese banks. Also trigger when reconciling personal social-security contributions alongside an income tax computation; do not invent a personal contribution deduction or return-box mapping. This skill covers Class 2 rates, min/max caps, payment schedule, registration, penalties, interaction with income tax, TA22 part-time regime, bank statement classification patterns, and edge cases. ALWAYS read this skill before touching any SSC-related work.
-version: 2.1
+version: 2.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -48,7 +48,7 @@ This skill covers Malta social security contributions under the Social Security 
 2. **Check the exclusions and exemptions first** (articles 3(2), 6 and 12; see the boundary table). Some people owe nothing, or can apply for a low-income certificate.
 3. **Measure the base.** For a self-occupied person, use *earnings*: income "from any economic activity ... net of expenses directly incurred", excluding bank interest, investment income, rents and ground rents, income not directly related to the activity, and the spouse's income (article 2). For a self-employed person, use *net income*: "total income net of expenses directly incurred in generating that income". In both cases exclude "Maternity Benefit, Children's Allowance and any ex-gratia Benefit payable under article 88" (Tenth Schedule).
 4. **Use the previous calendar year.** The category for contribution year 2026 depends on 2025 net earnings or income.
-5. **Pick the category** from the [Tenth Schedule](https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c) table for the year (Part II for self-employed, Part III for self-occupied): SA flat minimum, SB 15% band, or SC flat maximum, with the maximum set by date of birth. For 2026 use the published MTCA table above.
+5. **Pick the category** from the [Tenth Schedule](https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c) table for the year (Part II for self-employed, Part III for self-occupied): SA flat minimum, SB 15% band, or SC flat maximum, with the maximum set by date of birth. For 2026 use the published MTCA table below.
 6. **Compute the weekly amount** ([Tenth Schedule](https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c)). In the SB band it is "the weekly equivalent of 15% of their annual net earnings calculated to the nearest cent": 15% of the annual figure divided by the weeks in the year (52 for 2026).
 7. **Schedule payment** four-monthly, in arrears, for the periods ending on the last day of April, August and December, at MTCA (article 11).
 8. **Deal with late or wrong payments** under article 116: interest from 1 January 2026, and the five-year window for the person's own requests.
@@ -57,16 +57,16 @@ This skill covers Malta social security contributions under the Social Security 
 
 **Rates that do not change by year.** Class 2 in the SB band is 15% of the previous year's net earnings or income, as a weekly equivalent. The Government adds a contribution "equivalent to 50% of the contribution paid by the self-employed or self-occupied person" out of the Consolidated Fund (article 10(4)). That State share is not paid by the client.
 
-**2026 Class 2 authority amounts, read 4 November 2026.** [MTCA's 2026 table](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates) supplies current amounts. The historical statutory tables below are retained only as historical research, not a 2026 billing table.
+**2026 Class 2 authority amounts, read 4 November 2026 and checked again on 8 November 2026.** [MTCA's 2026 table](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026) supplies current amounts. The historical statutory tables below are retained only as historical research, not a 2026 billing table.
 
 | Category | Previous calendar-year net income (€) | Weekly rate (€) | Full-time farmer rate (€)  Source |
 |---|---|---|------|
-| SP, single and not self-occupied | 1,006–11,082.72 | 31.97 | not applicable  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates) |
-| SA | 910–12,543.72 | 36.18, subject to eligible reduced option | 24.12  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates) |
-| SB, born by 31 December 1961 | 12,543.73–25,499.99 | 15% weekly equivalent | 10% weekly equivalent  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates) |
-| SC, born by 31 December 1961 | 25,500 and over | 73.56 | 49.04  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates) |
-| SB, born from 1 January 1962 | 12,543.73–29,083.35 | 15% weekly equivalent | 10% weekly equivalent  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates) |
-| SC, born from 1 January 1962 | 29,083.36 and over | 83.89 | 55.93  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates) |
+| SP, single and not self-occupied | 1,006–11,082.72 | 31.97 | not applicable  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026) |
+| SA | 910–12,543.72 | 36.18, subject to eligible reduced option | 24.12  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026) |
+| SB, born by 31 December 1961 | 12,543.73–25,499.99 | 15% weekly equivalent | 10% weekly equivalent  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026) |
+| SC, born by 31 December 1961 | 25,500 and over | 73.56 | 49.04  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026) |
+| SB, born from 1 January 1962 | 12,543.73–29,083.35 | 15% weekly equivalent | 10% weekly equivalent  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026) |
+| SC, born from 1 January 1962 | 29,083.36 and over | 83.89 | 55.93  [MTCA2026](https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026) |
 
 **Student reduced-option HOLD:** the old consolidated statutory table below describes a full-time student without an age limit, but the current MTCA footnote specifies a full-time student **who has not reached 24**. Do not apply the reduced student option at age 24 or older without resolving that source discrepancy. The current footnote also covers part-time self-occupied women and pensioners and warns that paying below €36.18 may reduce benefits. Underlying liability/exemptions still need the status tests below; a printed band is not an independent charge on everyone in it.
 
@@ -143,7 +143,7 @@ These distinguish the published 2026 amounts from historical statutory research.
 
 **Case 4: SA minimum, and the part-time election.** Self-occupied, born 1990, 2025 net earnings €8,000. Below the SA limit, so the published 2026 flat SA applies: **€36.18** a week, subject to the liability/status tests. If she is a part-time self-occupied woman (or a pensioner who is part-time self-occupied, or a full-time student under 24 who meets the current authority footnote; at 24 or older hold the student election pending the statutory/authority discrepancy described above), she may pay 15% instead: €8,000 × 15% ÷ 52 = **€23.08** a week. Warn her that paying less than the SA amount may reduce contributory benefits and pension (Tenth Schedule, Part III, Note 1).
 
-**Case 5: Passive income only.** Single, born 1985, not employed and not self-occupied, 2025 net rental income €9,000. This is a self-employed person. €9,000 is within the SP band (over €1,005, not over €10,567.92), so the 2026 SP amount is **€31.97** a week; €9,000 is also inside the current 2026 SP range. If the same person were married and not separated, article 3(2) says they are not deemed self-employed, so no Class 2 is due. If their means were €900, they could apply for a low-income certificate (limit €1,005) and pay nothing while it lasts.
+**Case 5: Passive income only.** Single, born 1985, not employed and not self-occupied, 2025 net rental income €9,000. This is a self-employed person. €9,000 is within the 2026 SP band (€1,006 to €11,082.72), so the 2026 SP amount is **€31.97** a week. If the same person were married and not separated, article 3(2) says they are not deemed self-employed, so no Class 2 is due. If their means were €900, they could apply for a low-income certificate (limit €1,005) and pay nothing while it lasts.
 
 **Case 6: Late payment in 2026.** €500 of Class 2 due in 2026 is paid three months late. From 1 January 2026, article 116 charges interest per month at the rate in ITMA article 44(2A). That article sets 0.6% "for every month or part thereof", unless the Minister prescribes another rate. On that basis: €500 × 0.6% × 3 = **€9.00**. Confirm the rate applied on the MTCA statement (check).
 
@@ -151,7 +151,7 @@ These distinguish the published 2026 amounts from historical statutory research.
 
 - **Refuse to compute without the date of birth.** The maximum and the top of the SB band depend on it.
 - **Refuse to use historical 2024 figures for a 2026 bill.** Current 2026 Class 2 figures are above; Class 1 is in malta-payroll. A 2025 amount still needs its own annual table; an annual total needs actual contribution weeks and status.
-- **Refer arrears and late charges.** Do not quantify unpaid contributions, interest or older-period additions without an official statement of what is due. Under article 116(4), "a notice by the Director ... showing the number and the amount of contributions" unpaid is "sufficient evidence ... unless the contrary is proved". For article 116 the "Director" is the Director General (Social Security), not the Commissioner for Tax and Customs (article 2), even though MTCA collects the payments. Which office issues the statement in practice is check.
+- **Refer arrears and late charges.** Do not quantify unpaid contributions, interest or older-period additions without an official statement of what is due. Under article 116(4), "a notice by the Director ... showing the number and the amount of contributions" unpaid is "sufficient evidence ... unless the contrary is proved". For article 116 the "Director" means "the Director General (Social Security) or the Commissioner for Tax and Customs, or each of them as the case may require" (article 2, proviso). So the notice can come from either office. Which office issues the statement in practice is check.
 - **Refer** disability, invalidity and carer situations, students and pensioners claiming an exclusion, religious-order and Libya-employment arrears provisions, court-ordered transfers of contributions (articles 8(6), 10(5)), and anyone past pension age.
 - **Refer** cross-border cases: A1 certificates, EU coordination, bilateral agreements, and non-residents.
 - **Flag for a Maltese warranted accountant**: an employee who is also a director drawing fees; a returner restarting self-occupation after years out; a mid-year switch between employment and self-occupation; a first year of self-occupation (see below); two part-time self-occupations with no employment.
@@ -229,9 +229,15 @@ Only the identified passages were read for this delta; historical source rows ke
 
 | Source and passage actually read | URL | Read on |
 |---|---|---|
-| MTCA2026Class2 complete table and student footnote read | https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates | 2026-11-04 |
 | DSS first-yearSA operational passage read; stale1%passage excluded | https://socialsecurity.gov.mt/en/information-and-applications-for-benefits-and-services/social-security-contributions/social-security-contributions/ | 2026-11-04 |
 | Cap318historicalTenthSchedule and article11 read | https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c | 2026-11-04 |
+
+### Source reads, 8 November 2026
+
+| Source and passage actually read | URL | Read on |
+|---|---|---|
+| MTCA 2026 Class 2 table and student footnote (the page with no year now shows 2027) | https://mtca.gov.mt/personal-tax/fss/social-security-contribution-rates/class-2---social-security-contribution-rates/2026 | 2026-11-08 |
+| Cap. 318, article 2, definition of "Director" and its proviso (articles 114(2), 116, 119 to 122 and 125) | https://legislation.mt/getpdf/69d6033d6fe5fd3994d1710c | 2026-11-08 |
 
 Correction ledger and complete old-topic destinations: [personal-malta-ssc](../../evidence/malta-deep-audit-20261104/ledgers/personal-malta-ssc.md). Full original research is archived there; this correction is not professional attestation.
 
