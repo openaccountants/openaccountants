@@ -399,6 +399,13 @@
   "dir": "skills/fiji"
  },
  {
+  "code": "FK",
+  "name": "Falkland Islands",
+  "region": "americas",
+  "owner": "open",
+  "dir": "skills/falkland-islands"
+ },
+ {
   "code": "FO",
   "name": "Faroe Islands",
   "region": "europe",
