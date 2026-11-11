@@ -44,7 +44,7 @@ Tracked in [\[VE\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Other skills
 
-- [Tax optimization](venezuela-tax-optimization.md) (2025)
+- [Tax optimization](venezuela-tax-optimization.md) (2026): statutory ISLR planning decisions; current administrative, treaty, incentive, municipal, IVA and employment inputs remain explicitly unconfirmed. This does not make the country pack comprehensive.
 
 ## Pending work
 
