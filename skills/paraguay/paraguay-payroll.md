@@ -103,7 +103,7 @@ Carla is a full-time monthly employee earning the unspecified-activities day min
 - Gross pay G 3,196,196, above the July minimum.
 - Employee IPS 9%: G 287,657.64; no IRP withheld.
 - Net pay G 2,908,538.36.
-- Employer IPS 16.5%: G 527,371.34; employer cost G 3,723,567.34.
+- Employer IPS 16.5%: G 527,372.34; employer cost G 3,723,568.34.
 
 Fractional guaraníes show exact arithmetic; the filing/payment rounding convention is not established here.
 
@@ -127,8 +127,8 @@ expected:
   gross: 3196196
   employee_ips: 287657.64
   net_pay: 2908538.36
-  employer_ips: 527371.34
-  employer_cost: 3723567.34
+  employer_ips: 527372.34
+  employer_cost: 3723568.34
 ```
 
 ### Example 2: minimum-wage worker, aguinaldo across the July increase, and a leaver
