@@ -226,6 +226,6 @@ expected:
 | Resolución 1529/2026, current PILA, cotizante 59, FSP and implementation | https://normativa.colpensiones.gov.co/colpensiones/compilacion/docs/resolucion_minsaludps_1529_2026.htm | 2026-11-11 |
 | Sentencia C-264/2026, pension reform commencement | https://normativa.colpensiones.gov.co/compilacion/docs/c-264_2026.htm | 2026-11-11 |
 | Ley 1066/2006 art. 3, parafiscal late-payment interest | https://normograma.dian.gov.co/dian/compilacion/docs/ley_1066_2006.htm | 2026-11-11 |
-| DANE official CIIU 7410 classification, section M | https://clasificaciones.dane.gov.co/ciiu4-0/clasificacion/24928/ | 2026-11-11 |
+| DIAN Res. 000114/2020, adopted CIIU classification, original PDF pp. 25-26, section M and 7410 | https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000114%20de%2021-12-2020.pdf | 2026-11-11 |
 
 Not yet confirmed: preceding presumed-cost coefficients for periods before 9 May 2026; all current activity coefficients other than section M used here; detailed mixed class IV/V multi-contract filing cases beyond the stated Planilla Y/I rules; the final Consejo de Estado judgment on Decreto 1469 de 2025; how health for a pensioner is split between pension and independent income; social security agreements.
