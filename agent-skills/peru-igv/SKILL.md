@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "PE"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Maria Clemencia Valverde Rios"
 ---
 
 # Peru Igv
@@ -17,7 +16,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Maria Clemencia Valverde Rios** on 2026-06-29.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -69,7 +67,6 @@ metadata:
 | e-Invoice | CPE (Comprobante de Pago Electrónico) mandatory for most businesses (factura electrónica, boleta electrónica) |
 | RUC | Registro Único de Contribuyentes — 11-digit Peruvian taxpayer ID |
 | Contributor | Open Accountants Community |
-| Validated by | Verified by Maria Clemencia Valverde Rios (CPA) on 2026-06-29 |
 | Skill version | 2.0 |
 
 ### Key PDT 621 fields
