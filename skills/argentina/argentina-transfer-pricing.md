@@ -238,7 +238,7 @@ All entries identify the parts actually read. The cache of official texts is out
 
 | Source and text read | Official URL | Read on |
 |---|---|---|
-| Read for scope and methods: LIG arts. 9, 16-20, 126-127; quotation: "condiciones que se ajusten a las prácticas normales del mercado" | https://biblioteca.arca.gob.ar/dcp/LEY_C_020628_2019_12_05 | 2026-11-11 |
+| Read for scope and methods: LIG arts. 9, 16-20, 126-127; quotation: "condiciones se ajusten a las prácticas normales del mercado" | https://biblioteca.arca.gob.ar/dcp/LEY_C_020628_2019_12_05 | 2026-11-11 |
 | Read for methods/ranges: Decreto 862 arts. 14, 29-30, 40-42, including Decreto 767/2025 amendment; quotation: "es el valor de la mediana" | https://biblioteca.arca.gob.ar/dcp/DEC_C_000862_2019_12_06 | 2026-11-11 |
 | Read for pre-transition reporting: RG 4717 current arts. 1-3, 28-51, especially 44, 45, 47, 48, 51; quotations: "CIENTO CINCUENTA MILLONES", "CIEN MIL MILLONES" | https://biblioteca.arca.gob.ar/dcp/REAG01004717_2020_05_14 | 2026-11-11 |
 | Read for new regime: RG 5903 arts. 1-8, 14, 16-25, 39, 45-49, 51-75 and filing provisions; quotations: "TRES MIL MILLONES", "primer día del mes inmediato siguiente", "1° de enero de 2028" | https://biblioteca.arca.gob.ar/dcp/REAG01005903_2026_09_28 | 2026-11-11 |
