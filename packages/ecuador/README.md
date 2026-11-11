@@ -11,13 +11,15 @@
 4. `ec-company-formation.md`
 5. `ec-corporate-income-tax.md`
 6. `ec-tax-overview.md`
-7. `ecuador-income-tax.md`
-8. `ecuador-iva.md`
-9. `ecuador-payroll.md`
-10. `ecuador-social-contributions.md`
-11. `ecuador-tax-optimization.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+7. `ec-transfer-pricing.md`
+8. `ecuador-income-tax.md`
+9. `ecuador-iva.md`
+10. `ecuador-payroll.md`
+11. `ecuador-social-contributions.md`
+12. `ecuador-tax-optimization.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 
