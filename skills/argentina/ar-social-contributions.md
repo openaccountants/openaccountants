@@ -19,6 +19,7 @@ last_updated: 2026-11-11
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+category: payroll
 type: computation
 ---
 
@@ -78,7 +79,7 @@ Differential I'-V' in the same PDF are respectively 85,609.52; 119,851.50; 171,2
 |---|---|---|
 | Employee SIPA | 11% on applicable employee pension base | Ley 24.241 art. 11; https://biblioteca.arca.gob.ar/dcp/LEY_C_024241_1993_09_23 |
 | Employee PAMI | 3% on applicable employee base | Ley 19.032 art. 8(d); https://biblioteca.arca.gob.ar/dcp/LEY_C_019032_1971_05_13 |
-| Employee health | 3%; additional dependent/status and agreement rules can alter the actual amount | Ley 23.660 arts. 16(b), 18; https://biblioteca.arca.gob.ar/dcp/LEY_C_023660_1988_12_29 |
+| Employee health | 3%, plus 1.5% for each eligible additional adherent under art. 9 final paragraph; ordinary family/status and higher collective-agreement rules must be distinguished | Ley 23.660 arts. 16(b), 18; https://biblioteca.arca.gob.ar/dcp/LEY_C_023660_1988_12_29 |
 | Employer ordinary SUSS aggregate | 20.40% for qualifying private services/commerce above medium-tranche-2 sales ceiling; 18% for remaining covered employers, with required size evidence | Ley 27.541 art. 19; https://biblioteca.arca.gob.ar/dcp/LEY_C_027541_2019_12_21 |
 | Employer health | 6% for 2026; the enacted 5% change applies from 1 January 2027, not retroactively | Ley 23.660 art. 16, Ley 25.565 art. 80 and Ley 27.802 art. 165 note; https://biblioteca.arca.gob.ar/dcp/LEY_C_023660_1988_12_29 |
 | Ordinary per-worker SUSS base detraction | 7,003.68 monthly, prorated for part-month/part-time; SAC has 50% and its own proportional rules; remaining base cannot fall below statutory minimum | Ley 27.541 art. 22; https://biblioteca.arca.gob.ar/dcp/LEY_C_027541_2019_12_21 |
@@ -245,6 +246,8 @@ Retain a category/source-period sheet, autonomous payment reconciliation, employ
 | Read for May employee base table; quotation: "$ 4.303.619,01" | https://www.arca.gob.ar/declaracionenlinea/actualizacion-versiones/version47-6-actualizacion.asp | 2026-11-11 |
 | Read for June employee base table; quotation: "$ 4.414.652,38" | https://www.arca.gob.ar/declaracionenlinea/actualizacion-versiones/version47-7-actualizacion.asp | 2026-11-11 |
 | Read for July-October employee base table, each row; quotation: "$ 4.769.631,49" | https://www.arca.gob.ar/declaracionenlinea/actualizacion-versiones/version47-8-actualizacion.asp | 2026-11-11 |
-| Read for simultaneous-activity classification and low-income credit conditions: Decreto 1866 Annex II and art. 1; quotation: "Compatibilización entre las Tablas I, II y III" | https://biblioteca.arca.gob.ar/dcp/DEC_C_001866_2006_12_12 | 2026-11-11 |
+| Read for simultaneous-activity classification and low-income credit conditions: Decreto 1866 Annex II and art. 1; quotation: "COMPATIBILIZACION ENTRE LAS TABLAS I, II Y III" | https://biblioteca.arca.gob.ar/dcp/DEC_C_001866_2006_12_12 | 2026-11-11 |
+| Read for the restoration of the 6% employer health contribution: Ley 25.565 art. 80; quotation: "Restitúyese la alícuota" | https://biblioteca.arca.gob.ar/dcp/LEY_C_025565_2002_03_06 | 2026-11-11 |
+| Read for ordinary CUIT calendar grids, RG 4186 art. 1(2), read with actual month shifts; quotation: "PRESENTACIÓN DDJJ F. 931 y PAGO" | https://biblioteca.arca.gob.ar/search/query/norma.aspx?p=t%3ARAG%7Cn%3A4186%7Co%3A3%7Ca%3A2018%7Cf%3A05%2F01%2F2018 | 2026-11-11 |
 
 Not yet confirmed: November/December 2026 employee minimum/maximum and post-October autonomous tables; CUIT-specificfuturecalendars/liveVEPnon-FALcodes; currentpenalties/interest; registrationgraceperiod/oldF.885 claim; professional-fundandforeigncoordinationrules; pensionbenefit/retirementcredit/collectionprocedure; exactMonotributotransitioneffective-date facts. Legacydegree/employee-countfloors, September 2025 approximations, ordinaryobra-socialcomponent andCPI-plus-RIPTEmobilityclaim are superseded by the verifiedclassification/components andoriginalperiodtables, not repeated as facts.
