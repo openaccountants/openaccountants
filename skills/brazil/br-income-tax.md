@@ -13,6 +13,7 @@ description: >
   law; complete exercise 2027 filing procedures and specialist minimum-tax cases are partial.
 version: 2.1
 jurisdiction: BR
+category: international
 tax_year: 2026
 last_updated: 2026-11-11
 source_checked: 2026-10-17
