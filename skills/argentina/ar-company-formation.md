@@ -105,7 +105,7 @@ Current government/professional/publication fees and penalty amounts are not con
 
 ## Cross-border points
 
-LGS arts. 118/120 distinguish foreign-company isolated acts from habitual business/branch: establish lawful foreign existence, domestic domicile/publication/registration, board decision and representative; branch capital where special law requires it and separate local accounts. Art. 123 prior registration addresses foreign-company participation in local companies. An individual foreign shareholder is not thereby a foreign company. Art. 124 can treat an overseas company with Argentine seat/main object as local; do not use a foreign certificate as an automatic exclusion.
+LGS arts. 118/120 distinguish foreign-company isolated acts from habitual business/branch: establish lawful foreign existence, domestic domicile/publication/registration, decision of the competent corporate body and appointment of its representative; branch capital where special law requires it and separate local accounts. Art. 123 prior registration addresses foreign-company participation in local companies. An individual foreign shareholder is not thereby a foreign company. Art. 124 can treat an overseas company with Argentine seat/main object as local; do not use a foreign certificate as an automatic exclusion.
 
 For CABA, RG IGJ 4/2026's amended art. 164 requires foreign existence/current certificate not older than six months, statutory documents, decisions/representative powers, acceptance/special address and current PEP/beneficial-owner declarations. Art. 118 has extra branch/permanent-presence, CABA seat, fiscal close, any assigned capital and publication documents. Its registration dispenses with a separate art. 123 file. Permitted joint foreign/local filing remains conditional on full foreign-file compliance.
 
@@ -175,10 +175,10 @@ Produce an entity-choice comparison, dated capital sheet, document checklist, re
 | Read for September-December SMVM rows, art. 1(a)-(d); quotation: "($398.800)" | https://www.argentina.gob.ar/normativa/nacional/norma-429565/texto | 2026-11-11 |
 | Read for current CABA incorporation amendments, RG 11 arts. 2-13; quotation: "No se requiere dictamen de precalificación" | https://www.argentina.gob.ar/normativa/nacional/norma-430346/texto | 2026-11-11 |
 | Read for foreign-company initial registration arts. 2-3, then November amendment; quotation: "SEIS (6) meses" | https://www.argentina.gob.ar/normativa/nacional/norma-426091/texto | 2026-11-11 |
-| Read for RG 13, whole operative amendment/effective provisions; quotation: "estatuto o contrato social vigente" | https://www.argentina.gob.ar/sites/default/files/2026/01/rg_igj_13-2026.pdf | 2026-11-11 |
-| Read for RG 12 effective-date provision only for future boundary; quotation: "TREINTA (30) días corridos" | https://www.argentina.gob.ar/sites/default/files/2026/01/rg_igj_12-2026.pdf | 2026-11-11 |
+| Read for RG 13, whole operative amendment/effective provisions; quotation: "el texto ordenado del estatuto vigente" | https://www.argentina.gob.ar/sites/default/files/2026/01/rg_igj_13-2026.pdf | 2026-11-11 |
+| Read for RG 12 effective-date provision only for future boundary; quotation: "treinta (30) días corridos" | https://www.argentina.gob.ar/sites/default/files/2026/01/rg_igj_12-2026.pdf | 2026-11-11 |
 | Read for CABA SAS published steps and route; quotation: "Trámites a Distancia"; older opinion requirements superseded as explained | https://www.argentina.gob.ar/justicia/igj/paso-paso-para-crear-tu-sas | 2026-11-11 |
-| Read for SA/SRL published urgent route and conditional timing; quotation: "cinco días hábiles" | https://www.argentina.gob.ar/servicio/constituir-sociedades-comerciales-urgente | 2026-11-11 |
+| Read for SA/SRL published urgent route and conditional timing; quotation: "5 días hábiles" | https://www.argentina.gob.ar/servicio/constituir-sociedades-comerciales-urgente | 2026-11-11 |
 | Read for digital delivery implementation page; quotation: "10 de agosto" | https://www.argentina.gob.ar/justicia/igj/digitalizacion-registral | 2026-11-11 |
 | Read for current enabled SODA list, accounts/moratorium; quotation: "Sistema Online de Documentación Abierta" | https://www.argentina.gob.ar/justicia/igj/sistema-online-de-documentacion-abierta-de-igj-soda-0 | 2026-11-11 |
 | Read for corporate CUIT instructions, fields and pending/certification procedure; quotation: "Alta nueva persona jurídica" | https://www.arca.gob.ar/inscripcion/cuit-cdi/solicitud-cuit.asp | 2026-11-11 |
