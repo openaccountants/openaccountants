@@ -22,7 +22,7 @@ This skill computes what a person who is not someone's employee pays to the Inst
 
 - [ecuador-payroll](ecuador-payroll.md): workers in relación de dependencia, the employee 9.45% and employer 11.15% rates, décimos, fondos de reserva and the monthly planilla.
 - [ecuador-income-tax](ecuador-income-tax.md): the self-employed person's income tax, RIMPE and the gastos personales rebate.
-- [ec-cross-border](ec-cross-border.md): Ecuadorians abroad and non-residents for tax purposes.
+- [ec-tax-overview](ec-tax-overview.md): Ecuador tax overview, including the position of non-residents.
 
 **Quick reference (2026).** Salario básico unificado (SBU): USD 482. Self-employed, professionals, business owners and voluntary affiliates: 20.60% of the monthly income they declare, never on less than the SBU, so at least 482 × 20.60% = USD 99.29 a month. Paid within 15 days after the month; unpaid for 30 days after the month and the IESS records the affiliate's exit. Unpaid home work: 13.25% on 25% to 100% of the SBU depending on the household's income, with a state subsidy on the lower tiers.
 
