@@ -17,7 +17,9 @@ jurisdiction: AR
 tax_year: 2026
 last_updated: 2026-11-11
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-tier: 2
+reviewed_by: "Maria Valeria Benvenuti"
+reviewed_on: 2026-11-03
+tier: 1
 domain: payroll
 category: payroll
 type: computation
@@ -29,7 +31,7 @@ type: computation
 
 ## Who this applies to
 
-Ordinary national-regime self-employed contributors and employers/employees within Ley 24.241, Ley 19.032, Ley 23.660 and Ley 27.541. This Tier 2 source-cited draft has no professional approval. It extends the former autonomous-only Guide to ordinary staff social contributions; [argentina-payroll](argentina-payroll.md) owns employee income-tax withholding, and [ar-monotributo](ar-monotributo.md) owns simplified-regime personal components.
+Ordinary national-regime self-employed contributors and employers/employees within Ley 24.241, Ley 19.032, Ley 23.660 and Ley 27.541. Maria Valeria Benvenuti's retained approval metadata records the earlier version; this 2026 revision awaits her actual approval and remains held from publication. It extends the former autonomous-only Guide to ordinary staff social contributions; [argentina-payroll](argentina-payroll.md) owns employee income-tax withholding, and [ar-monotributo](ar-monotributo.md) owns simplified-regime personal components.
 
 **Quick answer:** autónomo category depends on activity and prior-year gross income, not a university degree or employee-count floor. Use the published table for the applicable period/status. Staff contributions require separate employee and employer bases: the employee cap does not cap employer contributions. From December 2026 FAL reallocates specified employer contributions; do not simply add it to an unchanged SUSS total.
 
