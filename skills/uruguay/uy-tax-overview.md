@@ -25,7 +25,7 @@ This skill sends a Uruguay question to the right skill. The rates live in those 
 | Tax year | Calendar year for individuals; IRPF and IRNR arise on 31 December | https://www.impo.com.uy/bases/todgi-2023/8-2024 (T8 art. 8); see uruguay-income-tax for T7 |
 | Currency | Uruguayan peso (UYU); SA capital must be stated in pesos | https://www.impo.com.uy/bases/leyes/16060-1989 (art. 279) |
 | BPC (Base de Prestaciones y Contribuciones), the unit most thresholds use | UYU 6,864 a month from 1 January 2026 | https://www.impo.com.uy/bases/decretos/11-2026 (art. 1) |
-| Tax collector | Dirección General Impositiva (DGI) | https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/convenios-para-evitar-doble-imposicion |
+| Tax collector | Dirección General Impositiva (DGI) | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 1, for IRPF); T8 art. 20 and T14 for IRNR and the wealth tax |
 | Social security collector, also collects IRPF withheld from wages for DGI | Banco de Previsión Social (BPS) | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 1); https://www.bps.gub.uy/10323/impuesto-a-la-renta-de-las-personas-fisicas-irpf.html |
 | Wealth tax (Impuesto al Patrimonio), entities taxed under IRAE rules | 1.5% of taxable net worth | https://www.impo.com.uy/bases/todgi-2023/14-2024 (T14 art. 53 D) |
 | Wealth tax, banks, financial houses and art. 62 entities | 2.8% | same (art. 53 C) |
