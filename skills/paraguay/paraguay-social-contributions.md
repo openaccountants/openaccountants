@@ -106,7 +106,7 @@ The laws read account for 16 points of the 16.5% employer figure (14% IPS, 1% SN
 
 ### Example 1: employee in December 2026, with overtime, family allowance and aguinaldo
 
-Ana works full time for a private company. For December 2026 she is paid a salary of G 4,000,000, overtime of G 600,000, the family allowance for two children of G 304,400 (amount worked out in [paraguay-payroll](paraguay-payroll.md)) and her aguinaldo of G 4,300,000.
+Ana works full time for a private company. For December 2026 she is paid a salary of G 4,000,000, overtime of G 600,000, a family allowance for two children of G 304,400 (an assumed illustrative amount, not a legal figure) and her aguinaldo of G 4,300,000.
 
 - **Base.** Salary plus overtime, G 4,600,000. The family allowance and the aguinaldo are out. The base is above the minimum wage, so the floor does not bite.
 - **Worker's share** 9%: G 414,000, withheld from her pay.
