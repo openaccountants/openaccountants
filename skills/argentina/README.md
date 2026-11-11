@@ -27,14 +27,14 @@ The individual tax year is the calendar year; companies use their fiscal year. T
 | IT-IND, individual income tax | [Income tax](argentina-income-tax.md), with [Monotributo](ar-monotributo.md) as the separate simplified regime; ordinary gaps listed in `partial` | checked against the law |
 | IT-CORP, corporate income tax | [Corporate income tax](ar-corporate-income-tax.md) | checked against the law |
 | VAT | [IVA computation](argentina-iva.md) and [Portal IVA return](ar-vat-return.md) | checked against the law |
-| SC, social contributions | [Employees, employers and autonomous workers](ar-social-contributions.md); unpublished/unconfirmed periods listed in `partial` | checked against the law |
+| SC, social contributions | [Employees, employers and autonomous workers](ar-social-contributions.md); unpublished/unconfirmed periods listed in `partial` | Approved by Maria Valeria Benvenuti (2025 version; a 2026 update waits for her approval) |
 | PR, payroll withholding | [Payroll income tax](argentina-payroll.md); payment/cap gaps listed in `partial` | checked against the law |
 | TP, transfer pricing | [Transfer pricing](argentina-transfer-pricing.md), separating calendar-2026 rules from the new regime for fiscal years starting from October | checked against the law |
 | XB, cross-border | [Residence, source, foreign tax credits and non-resident withholding](argentina-cross-border.md) | checked against the law |
 
 Annual insurance/private-retirement cap amounts are supplied by the [individual-income Guide](argentina-income-tax.md); the payroll Guide does not supply them, and its period-by-period application is not claimed verified here.
 
-These are Tier 2 source-cited drafts. The status records checking against primary sources; it does not mean accountant approval. Each Guide identifies its read scope, source dates and unconfirmed figures. Dates, elections and extensions must match the taxpayer and period.
+Apart from social contributions, these are Tier 2 source-cited drafts. The status records checking against primary sources; it does not mean accountant approval. Each Guide identifies its read scope, source dates and unconfirmed figures. Dates, elections and extensions must match the taxpayer and period.
 
 ## Other Guides
 
