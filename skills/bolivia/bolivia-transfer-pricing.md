@@ -19,7 +19,7 @@ The law is Ley N° 843 (Texto Ordenado), arts. 45, 45 bis and 45 ter, as replace
 
 ## Who this applies to
 
-- **Every IUE taxpayer that deals with a related party** (Ley 843 art. 45; RND 10-0008-15 art. 2). See [bolivia-corporate-income-tax](bolivia-corporate-income-tax.md) for who pays IUE.
+- **Every IUE taxpayer that deals with a related party** (Ley 843 art. 45; RND 10-0008-15 art. 2). See [bolivia-income-tax](bolivia-income-tax.md) for who pays IUE.
 - **Related parties** (art. 45; DS 2227 art. 2 I). Parties are related when a person, natural or legal, takes part in the management, control or administration of a company or holds capital in it, or when a third party does so in two or more companies. DS 2227 lists these cases:
   1. A Bolivian person takes part, directly or through others, in the management, control or capital of a foreign company, or of a branch or subsidiary of one operating in Bolivia.
   2. A foreign person does the same in a Bolivian company or in a branch or subsidiary in Bolivia.
@@ -92,7 +92,7 @@ Both are due with the IUE return.
 - **Allocation:** allocate directly where the service received can be identified. Otherwise split the total by the nature of the service and the benefit each party gets or could get.
 - **Deductibility:** the expense is deductible only if the service was actually rendered and is linked to the taxed activity. The general non-deductible items in DS 24051 art. 18 still apply.
 
-**Payments abroad.** Whatever the price, Bolivian-source amounts paid to a foreign related party also bear IUE-BE withholding at 12.5% ([bolivia-corporate-income-tax](bolivia-corporate-income-tax.md)).
+**Payments abroad.** Whatever the price, Bolivian-source amounts paid to a foreign related party also bear IUE-BE withholding at 12.5% ([bolivia-income-tax](bolivia-income-tax.md)).
 
 ## Deadlines and filing
 
@@ -109,7 +109,7 @@ Steps, in the order the filer meets them:
    - conclusions (art. 4).
 5. **Submit the EPT in the SIAT** as a signed PDF together with the year-end financial statements. This is the April 2026 text of art. 8 I, which replaced the earlier paper filing at the district office.
 6. **Deadline:** both by the IUE return deadline, 120 days after the year-end (art. 9; DS 24051 art. 39). For a 31 December 2026 year-end that is 30 April 2027. The SIN can extend it: for 31 December 2025 year-ends, RND 102600000014 and RND 102600000017 moved the digital filing of the EPT and Form 601 to 30 June 2026.
-7. **Report any adjustment** you make yourself in the IUE return ([bolivia-corporate-income-tax](bolivia-corporate-income-tax.md), Form 500). Paying the fine does not remove the duty to file (art. 12 III).
+7. **Report any adjustment** you make yourself in the IUE return ([bolivia-income-tax](bolivia-income-tax.md), Form 500). Paying the fine does not remove the duty to file (art. 12 III).
 
 ## Penalties and interest
 
