@@ -156,7 +156,7 @@ All reads: **2026-11-11**. A source cache response alone is not a read. Portions
 
 ## Complete old-topic/new-job destination table
 
-This is a new Guide. There is no old file at the exact baseline, so old-file topic count is **0** and lost content restored is **0**. No existing Guide is deleted, shortened, rewritten or attestation-edited. The table records every assigned branch and the unchanged owners it consumes. The author is not claiming approval of existing sibling content.
+This is a new Guide. There is no old file at the exact baseline, so old-file topic count is **0** and lost content restored is **0**. No existing Guide is deleted, shortened or rewritten, and no existing accountant approval is changed. The table records every assigned branch and the unchanged owners it consumes. The author is not claiming approval of existing sibling content.
 
 | Requested/prior-owner topic | Actual destination | Retention / boundary |
 |---|---|---|
