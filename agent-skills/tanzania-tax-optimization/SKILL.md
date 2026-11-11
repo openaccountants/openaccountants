@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "TZ"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Baraka Cassian"
 ---
 
 # Tanzania Tax Optimization
@@ -19,7 +18,6 @@ metadata:
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Baraka Cassian** on 2026-06-12.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -57,7 +55,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Primary legislation | Income Tax Act, Cap. 332; Tax Administration Act, Cap. 438; VAT Act, Cap. 148; EPZ Act, Cap. 373; SEZ Act, Cap. 420 |
 | Tax authority | Tanzania Revenue Authority (TRA); EPZA (zones); ZRA (Zanzibar) |
 | Standard CIT rate | 30% (baseline against which all reduced-rate reliefs are measured) |
-| Verified by | Baraka Cassian (CPA(T), CTA), Cassian & Associates |
 | Skill version | 1.0 |
 
 ### Reduced-Rate CIT Reliefs (Income Tax Act, Cap. 332, First Schedule)

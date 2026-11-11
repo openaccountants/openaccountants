@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "KR"
   tax_year: "2025"
   last_updated: "2026-08-27"
-  reviewed_by: "Yeong Min Lee"
 ---
 
 # Simplified Business Operator Registration under VAT Act
