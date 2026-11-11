@@ -30,7 +30,7 @@ domain: income-tax
 
 **Which text of the law.** The Estatuto Tributario (ET) as consolidated on the Senate's official site, updated there to 15 October 2026. Art. 240 is in the text given by Ley 2277 de 2022. The 2026 emergency decrees (Decretos Legislativos 150, 173 and 240 de 2026) changed the wealth tax and some IVA items; they do not change art. 240. Deadlines: Decreto Único Reglamentario 1625 de 2016 (DUR), arts. 1.6.1.13.2.11 and 1.6.1.13.2.12, substituted by Decreto 2229 de 2023.
 
-Related Colombia skills: [colombia-income-tax](colombia-income-tax.md) (shareholders who are individuals, and how they are taxed on dividends), [colombia-iva](colombia-iva.md) (IVA), [formalizing-small-informal-businesses-in-colombia](formalizing-small-informal-businesses-in-colombia.md) (RUT, registration and Régimen Simple sign-up, approved by Mauro Escudero; this skill only adds the tax comparison and does not repeat it).
+Related Colombia skills: [colombia-income-tax](colombia-income-tax.md) (shareholders who are individuals, and how they are taxed on dividends), [co-vat-return](co-vat-return.md) (IVA), [formalizing-small-informal-businesses-in-colombia](formalizing-small-informal-businesses-in-colombia.md) (RUT, registration and Régimen Simple sign-up, approved by Mauro Escudero; this skill only adds the tax comparison and does not repeat it).
 
 ## Who this applies to
 
