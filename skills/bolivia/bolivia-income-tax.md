@@ -55,7 +55,8 @@ Quick answer: **one rate, 13%**, on monthly taxable income, less credits for the
 | Re-IVA cash refund for individuals with average monthly income up to Bs 9,000, on electronically issued purchase invoices (Ley 1355 arts. 2 and 3) | Up to 5% of the price | 2026 | same |
 | IGF wealth tax threshold: net fortune at 31 December (Ley 1357 art. 5) | Above Bs 30,000,000 | 2026 | same |
 | IGF rates on the whole base, less a fixed discount (Ley 1357 art. 9) | Bs 30,000,001 to 40,000,000: 1.4% less Bs 150,000; Bs 40,000,001 to 50,000,000: 1.9% less Bs 350,000; above Bs 50,000,000: 2.4% less Bs 600,000 | 2026 | same |
-| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448); IGF omission (Ley 1357 art. 15) | 60% of the updated omitted tax; IGF 200% | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 |
+| Omission of payment penalty (Ley 2492 art. 165, text of Ley 1448) | 60% of the updated omitted tax | 2026 | http://gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/168844 |
+| IGF omission of payment (Ley 1357 art. 15) | 200% of the omitted tax | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/1.-LEY-N%C2%B0-843-09-26-1.pdf |
 | Late interest, in UFV at the due date (Ley 2492 art. 47) | 4% a year for years 1 to 4; 6% for years 5 to 7; 10% from year 8 | 2026 | https://www.impuestos.gob.bo/wp-content/uploads/2026/10/2.-LEY-N%C2%B0-2492-09-26-2.pdf |
 
 ## The base
