@@ -11,7 +11,7 @@ description: >
   source-cited working paper for professional review. It does not authorise
   filing or cover commodity contract registration, APA negotiations or a
   valuation of unique intangibles.
-version: 0.1
+version: 0.2
 jurisdiction: AR
 category: transfer-pricing
 domain: tax
@@ -21,7 +21,7 @@ last_updated: 2026-11-11
 tier: 2
 ---
 
-# Argentina: transfer pricing 2026 v0.1
+# Argentina: transfer pricing 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -31,7 +31,7 @@ Argentine business taxpayers within LIG art. 53(a)-(d), including relevant perma
 
 **Quick answer:** get the fiscal year's start and end dates first. Calendar-year 2026 started before the new regime and remains under RG 4717, as amended by RG 5798. RG 5903, published on 30 September 2026, applies to years starting from 1 October 2026. Its higher thresholds must not be used to dispense with a calendar-2026 local file. Below a reporting threshold does not mean prices are exempt from the arm's length rule.
 
-This is a Tier 2 source-cited draft without accountant approval. It produces a transaction inventory, method/threshold memo and reporting checklist. It does not choose comparables without evidence. Corporate tax itself belongs to [ar-corporate-income-tax](ar-corporate-income-tax.md); source and withholding belong to [argentina-cross-border](argentina-cross-border.md).
+This Guide is **Not yet approved**. It produces a transaction inventory, method/threshold memo and reporting checklist. It does not choose comparables without evidence. Corporate tax itself belongs to [ar-corporate-income-tax](ar-corporate-income-tax.md); source and withholding belong to [argentina-cross-border](argentina-cross-border.md).
 
 Relatedness is determined under LIG art. 18 and Decreto 862 art. 14, including management, capital/control and economic influence, not only a shareholding percentage. RG 5903 art. 3 clarifies that a sole/principal customer or supplier relationship is caught where losing it, even temporarily, would paralyse either party's activity. For old-regime years, RG 4717 art. 3 uses the broader absence-might-affect-continuity-or-existence test; do not apply the new paralysis wording to exclude a calendar-2026 counterparty. Use contracts, control charts and actual conduct to apply the test.
 
