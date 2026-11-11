@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-27"
-  reviewed_by: "James Power"
 ---
 
 # UK payments on account (2026-27)
