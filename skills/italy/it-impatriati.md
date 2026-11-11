@@ -4,7 +4,7 @@ description: "Italy's tax regimes for people who move to Italy, tax year 2026. C
 version: 1.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-11
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2

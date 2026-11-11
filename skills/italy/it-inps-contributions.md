@@ -4,7 +4,7 @@ description: "Italian INPS social contributions for the self-employed, tax year 
 version: 2.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-11
 depends_on:
   - social-contributions-workflow-base
 category: international

@@ -4,7 +4,7 @@ description: "Italian payroll for employees, tax year 2026: how the employer, as
 version: 1.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-11
 depends_on:
   - payroll-workflow-base
 category: international

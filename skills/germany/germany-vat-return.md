@@ -4,7 +4,7 @@ description: "German VAT for tax year 2026, centred on the monthly or quarterly 
 version: 2.6
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-11
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
