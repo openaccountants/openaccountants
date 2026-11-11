@@ -19,7 +19,9 @@ last_updated: 2026-11-05
 depends_on:
   - vat-workflow-base
 category: international
-tier: 2
+tier: 1
+reviewed_by: "Jonathan I. Ruiz"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: vat-gst
 ---

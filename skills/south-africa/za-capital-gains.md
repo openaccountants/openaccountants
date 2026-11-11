@@ -19,7 +19,9 @@ tax_year: 2026
 tax_year_notes: "2026/27 (year of assessment 1 March 2026 to 28 February 2027). The Eighth Schedule read still prints the amounts applied for 2025/26. The higher 2026/27 amounts are held because they were announced on 25 February 2026, sit in Bill B34-2026 and no Act read at 5 November 2026 enacts them. Editing in November 2026 does not establish 2026/27 law."
 last_updated: 2026-11-05
 category: international
-tier: 2
+tier: 1
+reviewed_by: "Werner Britz"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
 ---

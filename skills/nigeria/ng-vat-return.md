@@ -22,7 +22,9 @@ depends_on:
   - ng-vat
 job: vat-return
 category: international
-tier: 2
+tier: 1
+reviewed_by: "Omolola Fasasi"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: vat-gst
 ---

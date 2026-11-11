@@ -20,7 +20,9 @@ tax_year_notes: "Planning for tax year 2026, read at 6 November 2026, under PP 5
 last_updated: 2026-11-06
 depends_on: []
 category: tax-optimization
-tier: 2
+tier: 1
+reviewed_by: "RILIA PUTRI"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: tax-optimization
 ---

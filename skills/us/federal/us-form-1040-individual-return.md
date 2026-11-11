@@ -6,7 +6,9 @@ category: federal
 tax_year: 2025
 version: 1.2
 last_updated: 2026-11-05
-tier: 2
+tier: 1
+reviewed_by: "Christopher Aryee"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 depends_on:
   - us-circular-230-disclosure

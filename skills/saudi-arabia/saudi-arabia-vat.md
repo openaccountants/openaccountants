@@ -18,7 +18,9 @@ tax_year: 2026
 tax_year_notes: "VAT tax periods in calendar 2026, read at 5 November 2026. VAT has no year of assessment: each return covers a monthly or 3-month tax period under Implementing Regulations Art 58. Rate 15% in force since 1 July 2020."
 last_updated: 2026-11-05
 category: international
-tier: 2
+tier: 1
+reviewed_by: "Mehran Habib"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: vat-gst
 ---

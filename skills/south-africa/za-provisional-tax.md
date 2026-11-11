@@ -19,7 +19,9 @@ tax_year: 2026
 tax_year_notes: "2026/27 (2027 year of assessment, 1 March 2026 to 28 February 2027). The enacted rate table in Act 3 of 2026 and the rebates in section 6 are shown beside the 2026/27 amounts announced on 25 February 2026 and billed in B34-2026. The R1.8 million paragraph 20 threshold and the late-payment rule are billed in B33-2026 and held. Editing in November 2026 does not establish 2026/27 law."
 last_updated: 2026-11-05
 category: international
-tier: 2
+tier: 1
+reviewed_by: "Werner Britz"
+reviewed_on: 2026-11-03
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
 ---
