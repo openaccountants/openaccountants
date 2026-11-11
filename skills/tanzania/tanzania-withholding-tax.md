@@ -5,9 +5,7 @@ jurisdiction: TZ
 tax_year: 2025
 last_updated: 2026-07-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Baraka Cassian"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: cross-border
 ---
 
@@ -19,7 +17,6 @@ Scope note. This skill covers Tanzania Mainland withholding tax (WHT) administer
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by Baraka Cassian on 2026-06-12. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
 ### tanzania-withholding-tax
 
@@ -69,7 +66,6 @@ Reviewed against the cited tax authorities by Baraka Cassian on 2026-06-12. Item
 | WHT payment deadline | Within **7 days** after the end of the month of deduction (ITA s.84) |
 | WHT return | Monthly; due the **7th** day of the following month (TAA Cap. 438; ITA s.84) |
 | Treaty network | **9** DTTs in force (see Section 1 treaty table) |
-| Verified by | Baraka Cassian (CPA(T), CTA), Cassian & Associates |
 | Skill version | 1.0 |
 
 ### WHT Rate Matrix — Resident vs Non-Resident (ITA Cap. 332)
