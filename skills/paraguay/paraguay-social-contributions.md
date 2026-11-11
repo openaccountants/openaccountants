@@ -52,7 +52,9 @@ Out of scope: public servants under the Caja Fiscal, other special pension funds
 | Voluntary affiliation of independents, employers, homemakers and domestic workers, pension only (Ley 4933 art. 3) | 13% (12.5% pension fund, 0.5% administration) on a base the member chooses, not below one minimum wage for unspecified activities | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4395/ley-n-4933-autoriza-la-incorporacion-voluntaria-de-trabajadores-independientes |
 | Bank employees, Caja Bancaria (Ley 2856 art. 9 a and b, as replaced by Ley 6303/2019) | employee 11%; bank 17%; on all pay except the family allowance and the legal aguinaldo (art. 10) | 2026 | https://www.bacn.gov.py/leyes-paraguayas/8871/ley-n-6303-modifica-el-articulo-1-de-la-ley-n-5762-16 |
 | Use of the contributions (Ley 98, new arts. 23 and 24) | of salaries: 12.5% pensions fund, 9% sickness and maternity fund, 1.5% general administration | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4394/ley-n-98-establece-el-regimen-unificado-de-jubilaciones-y-pensiones |
-| Contribution floor (Decreto-Ley 1860/50 art. 20, as IPS cites it) | not below the legal minimum wage, even for apprentices; the 2026 amounts are in [paraguay-payroll](paraguay-payroll.md) | 2026 | https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=315 |
+| Contribution floor (Decreto-Ley 1860/50 art. 20, as IPS cites it) | not below the legal minimum wage, even for apprentices; the 2026 amounts are the next two rows | 2026 | https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=315 |
+| Minimum monthly wage, unspecified activities, 1 January to 30 June 2026 (Decreto 4122/2025; Resolución MTESS 677/2025) | G 2,899,048 | 2026 (to 30 June) | https://www.mtess.gov.py/?p=30682 |
+| Minimum monthly wage, unspecified activities, from 1 July 2026 (Decreto 6225/2026; Resolución MTESS 670/2026 art. 1) | G 3,044,000 | 2026 (from 1 July) | https://www.mtess.gov.py/wp-content/uploads/2026/07/Resolucion-MTESS-N%C2%B0-670-REGLAMENTACION-SALARIO-2026.pdf |
 | Fine for not registering a worker in time (Decreto-Ley 1860/50 art. 67 as replaced by Ley 98) | one minimum daily jornal for unspecified activities, per worker | 2026 | https://www.bacn.gov.py/leyes-paraguayas/4394/ley-n-98-establece-el-regimen-unificado-de-jubilaciones-y-pensiones |
 | Fine for deducting the worker's share and not paying it in time (art. 68 as replaced by Ley 98) | 2 to 10 times the amount not paid, on top of paying it and the employer's share | 2026 | same |
 | Administrative fine (Ley 5655 art. 3.1) | 10 to 300 días-multa: minor 10 to 30, medium 31 to 100, serious 101 to 200, very serious 201 to 300; one día-multa is between 20% of one minimum daily jornal and 510 jornales | 2026 | https://www.bacn.gov.py/leyes-paraguayas/5169/ley-n-5655-complementa-amplia-y-modifica-disposiciones-del-regimen-legal-del-seguro-social-obligatorio |
@@ -64,7 +66,7 @@ The laws read account for 16 points of the 16.5% employer figure (14% IPS, 1% SN
 
 **Salary (salario).** IPS applies the definition of Decreto-Ley 1860/50 art. 76 a): the total remuneration the worker receives from employers in money, kind or regalías. It includes overtime, extra or piece work, commissions, salary supplements, bonuses (gratificaciones), dismissal indemnities, prizes, fees, profit shares and any other regular accessory pay. It excludes the aguinaldo. The family allowance (bonificación familiar) is also excluded (Ley 430/1973 art. 4 c), as IPS cites it; Labour Code art. 268) ([IPS, contribution base page](https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=315)).
 
-**Floor.** The contribution base may not be below the legal minimum wage, even for apprentices (Decreto-Ley 1860/50 art. 20 as updated by Ley 427/1973, cited by IPS). The minimum wage changed on 1 July 2026; both amounts are in [paraguay-payroll](paraguay-payroll.md).
+**Floor.** The contribution base may not be below the legal minimum wage, even for apprentices (Decreto-Ley 1860/50 art. 20 as updated by Ley 427/1973, cited by IPS). The minimum wage changed on 1 July 2026: G 2,899,048 a month to 30 June and G 3,044,000 from 1 July (rates table). The daily, hourly, night and part-time minimums are in [paraguay-payroll](paraguay-payroll.md).
 
 **Part-time workers.** The base is the pay actually received for each job. Where that pay is below the minimum wage, the employer must make up 100% of the amount that funds the sickness and maternity fund only; the pension fund is covered by what was actually paid in (IPS page).
 
@@ -106,7 +108,7 @@ The laws read account for 16 points of the 16.5% employer figure (14% IPS, 1% SN
 
 ### Example 1: employee in December 2026, with overtime, family allowance and aguinaldo
 
-Ana works full time for a private company. For December 2026 she is paid a salary of G 4,000,000, overtime of G 600,000, a family allowance for two children of G 304,400 (an assumed illustrative amount, not a legal figure) and her aguinaldo of G 4,300,000.
+Ana works full time for a private company. For December 2026 she is paid a salary of G 4,000,000, overtime of G 600,000, the family allowance for two children of G 304,400 (5% of the G 3,044,000 minimum wage per child, Labour Code art. 261) and her aguinaldo of G 4,300,000.
 
 - **Base.** Salary plus overtime, G 4,600,000. The family allowance and the aguinaldo are out. The base is above the minimum wage, so the floor does not bite.
 - **Worker's share** 9%: G 414,000, withheld from her pay.
@@ -143,7 +145,7 @@ expected:
 
 ### Example 2: decision, a self-employed consultant choosing a voluntary base
 
-Luis is an independent consultant, not an employee. He wants an IPS pension and joins the pension fund voluntarily under Ley 4933. He pays 13% on a base he chooses, not below one minimum wage, and may change the base each year (art. 3). At 60 with 25 years of contributions the pension is 100% of the average base of his last 120 months (art. 4 a). He compares two bases from July 2026, when the minimum wage for unspecified activities is G 3,044,000 ([paraguay-payroll](paraguay-payroll.md)):
+Luis is an independent consultant, not an employee. He wants an IPS pension and joins the pension fund voluntarily under Ley 4933. He pays 13% on a base he chooses, not below one minimum wage, and may change the base each year (art. 3). At 60 with 25 years of contributions the pension is 100% of the average base of his last 120 months (art. 4 a). He compares two bases from July 2026, when the minimum wage for unspecified activities is G 3,044,000 (Resolución MTESS 670/2026 art. 1):
 
 - **One minimum wage**: 13% of G 3,044,000 = G 395,720 a month.
 - **Two minimum wages**: 13% of G 6,088,000 = G 791,440 a month, G 395,720 more.
@@ -179,6 +181,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| MTESS, news of Resolución 677/2025 under Decreto 4122/2025 (minimum wage from 1 July 2025, in force to 30 June 2026) | https://www.mtess.gov.py/?p=30682 | 2026-11-11 |
+| Resolución MTESS N° 670/2026 under Decreto 6225/2026, art. 1 read (minimum wage from 1 July 2026) | https://www.mtess.gov.py/wp-content/uploads/2026/07/Resolucion-MTESS-N%C2%B0-670-REGLAMENTACION-SALARIO-2026.pdf | 2026-11-11 |
 | Ley N° 98/1992, BACN text: art. 2 (new art. 17 rates, arts. 23 and 24 funds), new arts. 66, 67 and 68 | https://www.bacn.gov.py/leyes-paraguayas/4394/ley-n-98-establece-el-regimen-unificado-de-jubilaciones-y-pensiones | 2026-11-11 |
 | IPS, Empleo Doméstico page: domestic and part-time rules, 9% and 16.5%, REI worker types, Resolución C.A. 018-001/2020 (the G amounts shown there use an older minimum wage and are not used) | https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=275 | 2026-11-11 |
 | IPS, contribution base page: salary definition (art. 76 a), floor (art. 20), exclusions (Ley 430/73 art. 4 c), continuity at 12.5%, voluntary 13% | https://portal.ips.gov.py/sistemas/ipsportal/contenido.php?c=315 | 2026-11-11 |
@@ -191,7 +195,7 @@ expected:
 | Ley N° 5655/2016, BACN text: arts. 1 and 3 (fund shares, sanctions) | https://www.bacn.gov.py/leyes-paraguayas/5169/ley-n-5655-complementa-amplia-y-modifica-disposiciones-del-regimen-legal-del-seguro-social-obligatorio | 2026-11-11 |
 | Ley N° 2856/2006, Caja Bancaria, BACN text: arts. 7, 9 and 10 | https://www.bacn.gov.py/leyes-paraguayas/715/ley-n-2856-caja-de-jubilaciones-y-pensiones-de-empleados-bancarios | 2026-11-11 |
 | Ley N° 6303/2019, BACN text: art. 1 (art. 9 of Ley 2856, 17% and 11%) | https://www.bacn.gov.py/leyes-paraguayas/8871/ley-n-6303-modifica-el-articulo-1-de-la-ley-n-5762-16 | 2026-11-11 |
-| Ley N° 213/1993, Código del Trabajo, BACN text: arts. 240 and 268 | https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-establece-el-codigo-del-trabajo | 2026-11-11 |
+| Ley N° 213/1993, Código del Trabajo, BACN text: arts. 240, 261 and 268 | https://www.bacn.gov.py/leyes-paraguayas/2608/ley-n-213-establece-el-codigo-del-trabajo | 2026-11-11 |
 
 Not yet confirmed: the law behind the last 0.5 point of the 16.5% employer contribution (14% IPS, 1% SNPP and 1% SINAFOCAL account for 16%; the earlier skill said 14% plus 2.5% for training and health funds); whether bank employees also contribute to IPS for medical care alongside the Caja Bancaria; the IPS monthly payment calendar and due day (the earlier skill said it is staggered by the last digit of the número patronal; Resolución C.A. N° 066/2022 was named but not read); the IPS late-payment surcharge and interest rates (the earlier skill gave 1% to 50% from secondary sources, not used); the current text of Decreto-Ley 1860/50 arts. 20 and 76 (read only as IPS quotes them) and of art. 25 of Ley 430/1973 on continuity, changed by Ley 3404/2007 (not read; the 12.5% rule is taken from the IPS page); whether any law after Ley 98/1992 changed the 9% and 14% quotas (none found; the IPS 2023 table and domestic page still show 9% and 16.5%); the 2026 value of a día-multa as fixed by the IPS board; the special minimum bases for listed occupations (cooks, drivers, rural day workers, maritime stevedores) on the IPS table, which date from 2023; social security agreements for posted workers; the valuation of pay in kind for the base.
 
