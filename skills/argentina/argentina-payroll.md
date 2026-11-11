@@ -94,7 +94,7 @@ Follow [RG 4003 Annex II, current text under RG 5683/2025](https://biblioteca.ar
 
 ### Common general deductions: conditions before computing
 
-These are Annex II D rules, not extra personal allowances. Use the net-income denominator the provision specifies, before the listed deductions, losses and art. 30 amounts; do not apply a percentage to gross salary.
+These are Annex II D rules, not extra personal allowances. For the 5% caps, use net remuneration after the other admissible general deductions but before the three capped deductions (voluntary health cover, donations and medical fees), prior losses and art. 30 personal deductions; do not apply a percentage to gross salary.
 
 | Claim | Limit and eligibility | Official source |
 |---|---|---|
@@ -219,4 +219,4 @@ Read on means the specified text was extracted and read, not merely that its URL
 | Read for ARCA second-semester 2026 scale, title and monthly table layout; quotation: "MES DE PAGO" | https://www.arca.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-jul-a-dic-2026.pdf | 2026-11-11 |
 | Read for ARCA F.1359 v2 manual for 2026, record index, sections 4.6, 4.8 and 5; quotation: "Si el archivo remitido ingresa correctamente, el sistema emitirá un Acuse de Recibo" | https://www.arca.gob.ar/572web/documentos/F1359-Version-00200-Manual-001-a%C3%B1o2026.pdf | 2026-11-11 |
 
-Not yet confirmed: current SICORE deposit calendar and payment codes; 2026 indexed insurance/retirement deduction caps; current penalty amounts and interest rates; exceptional extensions applicable to settlements made in 2027. Special pension, executive, territorial and industry computations are out of scope.
+Not yet confirmed: current SICORE deposit calendar and payment codes; 2026 indexed insurance/retirement deduction caps and mortgage-interest/funeral-cost deduction caps; current penalty amounts and interest rates; exceptional extensions applicable to settlements made in 2027. Special pension, executive, territorial and industry computations are out of scope.
