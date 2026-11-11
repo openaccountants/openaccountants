@@ -355,7 +355,10 @@ def check_sanctioned(errors, paths=None, read=_read_or_none):
 #: The website refuses a skill file larger than this, after the merge
 #: (the limit in its ingest lint). Mirror of the platform's value: change both
 #: together. Checked here so the contributor hears it on the PR instead.
-PLATFORM_MAX_SKILL_BYTES = 102_400
+#: 110 KB since 11 Nov 2026 (was 100 KB): carefully sourced tax skills were being
+#: refused by a few KB, and a tax skill cannot be split into a child file here
+#: (every tax skill needs its own two worked examples, and one job has one skill).
+PLATFORM_MAX_SKILL_BYTES = 112_640
 
 #: Files under skills/ that are not skills and not Markdown. Generated.
 NON_MARKDOWN_ALLOWED = {"skills/REGISTER.csv"}
