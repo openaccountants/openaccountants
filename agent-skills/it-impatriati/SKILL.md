@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-impatriati"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-11"
 ---
 
 # Italy: tax regimes for people moving to Italy (impatriati, flat tax, pensioners), 2026
@@ -199,10 +199,6 @@ expected:
 
 Not yet confirmed: whether the new impatriati regime can be combined with other inbound regimes in the same year (no Agenzia text found saying so); the interest rate on recapture under art. 5 comma 3, and whether the 70% unfaithful-return penalty also applies when the benefit is lost for leaving early (the law names only interest); how payroll applies the EUR 600,000 cap to an employee (the law and the fascicolo 3 instructions were read, the payroll rules were not); Circolare 33/E of 28 December 2020 (old regime) was not read directly, only as cited by the return instructions; no Agenzia circular on the new regime was found (its practice page lists only Circolare 20/E of 4 November 2024, on residence), and no "Circolare 25/E of 2024" on impatriati was found on the Agenzia site; the fascicolo 3 instructions say a five-year commitment where the law says four years (this skill follows the law); the exact boundary day between the EUR 100,000 and EUR 200,000 flat tax amounts (the law ties it to the entry into force of D.L. 113/2024); the Agenzia provvedimento of 3 March 2021 on paying for the old regime extension.
 
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-impatriati` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-impatriati. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-impatriati` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-impatriati. If neither is available, confirm every figure against the official source pages cited above before relying on it.
