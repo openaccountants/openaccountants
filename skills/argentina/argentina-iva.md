@@ -10,7 +10,7 @@ description: >
   Produces a monthly computation and reconciliation for professional review;
   ar-vat-return owns F.2051 filing. Specialist agents, customs valuation,
   export-refund claims, construction and agricultural elections are routed.
-version: 2.1
+version: 2.2
 jurisdiction: AR
 tax_year: 2026
 last_updated: 2026-11-11
@@ -22,7 +22,7 @@ domain: vat-gst
 type: computation
 ---
 
-# Argentina: IVA computation and classification 2026 v2.1
+# Argentina: IVA computation and classification 2026 v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -32,7 +32,7 @@ Responsables Inscriptos (RI), individuals or legal persons, computing ordinary n
 
 **Quick answer:** classify the actual supply and tax point, apply its lawful rate/base, allow only evidenced eligible credit, allocate direct/common/private costs, then keep technical credit and suffered-tax/direct-payment balances separate. Missing facts remain pending; “unknown” is not permission to tax every bank credit or manufacture input credit. Establish taxpayer/month, supplier/buyer status, contracts/invoices, use and prior balances first.
 
-This Tier 2 source-cited draft has no professional approval. It loads the VAT workflow base, produces the transaction ledger and tax bridge, and hands the result to [ar-vat-return](ar-vat-return.md) for current F.2051 filing. The ordinary computation is shared by individuals and companies; corporate form does not itself require an obsolete form.
+This Guide is **Not yet approved**. It loads the VAT workflow base, produces the transaction ledger and tax bridge, and hands the result to [ar-vat-return](ar-vat-return.md) for current F.2051 filing. The ordinary computation is shared by individuals and companies; corporate form does not itself require an obsolete form.
 
 Out of scope: acting as withholding/perception agent, detailed customs values, export-refund applications, complex financial instruments, construction/developer computations, agricultural annual-payment elections, promotion/territorial regimes, intercompany valuation and litigation over inflation/limitations. Ordinary bank fees, medical/insurance/transport classifications, mixed credits and imported services remain covered below. Provincial AGIP/ARBA/IIBB collections are separate taxes.
 
