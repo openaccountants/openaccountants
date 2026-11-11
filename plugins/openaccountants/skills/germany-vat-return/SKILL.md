@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/germany-vat-return"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-11"
 ---
 
 # Germany: VAT and the advance VAT return, tax year 2026
@@ -310,10 +310,6 @@ expected:
 
 Not yet confirmed: that the EUR 50 gift limit is counted by calendar year for VAT (UStAE 15.6(4) was not read for this version; the income-tax text counts by financial year); that the entertainment receipt must be machine-produced and signed by the host (an administrative rule, not in § 4(5) EStG); which tax office handles a foreign business, by country (the Umsatzsteuerzuständigkeitsverordnung was not read for this version); the rounding rule for whole-euro tax bases on the advance return (the 2026 instructions say whole euros but not whether to round or cut off the cents).
 
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
