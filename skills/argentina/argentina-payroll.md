@@ -90,7 +90,24 @@ Follow [RG 4003 Annex II, current text under RG 5683/2025](https://biblioteca.ar
 4. Add a twelfth of the relevant monthly gross amounts for SAC and deduct a twelfth of related deductible contributions under Annex II C. Choose and document one permitted reconciliation: replace twelfths with actual SAC and deductions when instalments are paid, or reconcile actual SAC at annual/final settlement. Do not count actual SAC and unreversed twelfths together.
 5. Deduct eligible Annex II D expenses with evidence: mandatory retirement and health deductions, union dues and other mandatory discounts; permitted voluntary health cover, donations, rent, domestic staff, education, mortgage interest, insurance and retirement plans subject to their individual conditions. Mandatory contributions attributable to exempt income must be allocated out. The general deduction for insurance under D(d), medical fees under D(j) and retirement plans under D(p) is annual/final only. Indexed insurance caps are not reproduced here.
 6. Accumulate the net remuneration for the fiscal year. Subtract eligible cumulative personal deductions including the additional twelfth, using the correct month or settlement table. Floor the taxable base at zero.
-7. Apply the selected cumulative scale. Deduct permitted Annex II G credits and net previous withholdings/autorretenciones under H, accounting for refunds already made. Record a positive result as withholding and a negative result as refund, subject to the ordinary ceiling and the special settlement rules.
+7. Apply the selected cumulative scale. Deduct permitted Annex II G credits only at annual/final settlement, then net previous withholdings/autorretenciones under H, accounting for refunds already made. Do not take Annex II G credits in an ordinary monthly calculation. Record a positive result as withholding and a negative result as refund, subject to the ordinary ceiling and the special settlement rules.
+
+### Common general deductions: conditions before computing
+
+These are Annex II D rules, not extra personal allowances. Use the net-income denominator the provision specifies, before the listed deductions, losses and art. 30 amounts; do not apply a percentage to gross salary.
+
+| Claim | Limit and eligibility | Official source |
+|---|---|---|
+| Voluntary medical cover | Up to 5% of the specified cumulative net income, for employee and qualifying dependants; distinguish compulsory health discounts | RG 4003 Annex II D(c); https://biblioteca.arca.gob.ar/dcp/REAG01004003_2017_03_02 |
+| Donations | Up to 5% of the specified cumulative net income; only qualifying public bodies and exempt institutions; excess within the year can carry into later payroll calculations | Annex II D(g), same |
+| Tenant's housing rent | 40% of invoiced rent, capped at GNI; taxpayer must own no property, even partly | Annex II D(h), same |
+| Additional housing-rent deduction | 10% of monthly rent, with invoice and contract registered in RELI; can supplement D(h) where eligible; also available to qualifying landlord | Annex II D(s), same |
+| Medical/paramedical fees | 40% of invoiced eligible services, capped at 5% of the specified annual net income; annual/final only | Annex II D(j), same |
+| Domestic staff | Documented remuneration, employer contributions and mandatory work-risk insurance for staff under Ley 26.844, capped at GNI | Annex II D(m), same |
+| Education/tools | Cap 40% of GNI; qualifying dependent children or children up to 24 inclusive who study regularly/professionally, cannot support themselves and meet the GNI net-income test; documented and entered in SiRADIG | Annex II D(r), same |
+| Insurance/retirement, mortgage interest, funeral costs | Apply the relevant statutory/annual cap before any claim; caps are not confirmed here, so stop these claim lines until read from the current official source | Annex II D(d),(e),(k),(p), same |
+
+Do not confuse eligibility for education costs for a student over 18 with entitlement to the ordinary child personal deduction. Do not deduct uninsured or unsupported expenditure merely because the payroll software offers a field.
 
 **Exception table**
 
@@ -113,6 +130,10 @@ Upload the annual/final/informative file through **Presentación de DDJJ y Pagos
 Use the [2026 F.1359 version 2 manual](https://www.arca.gob.ar/572web/documentos/F1359-Version-00200-Manual-001-a%C3%B1o2026.pdf), not an older F.1357 layout. It identifies remuneration in records 03/04, general deductions in 05, personal deductions in 06, payments on account in 07 and computation in 08. In record 06, field 12 is employee special deduction, field 13 the additional twelfth and field 15 total art. 30 deductions. Record 08 field 3 is taxable remuneration, field 5 determined tax, field 6 withholding, field 8 self-withholding and field 9 final balance. Cross-check the manual's field formulas. After upload retain the acknowledgement, check subsequent consistency notices and rectify errors. F.1359 is made available to the employee through SiRADIG.
 
 Report and deposit payroll withholding under **SICORE**, RG 2233, as required by RG 4003 art. 24; F.931 social-security filing does not replace this. Where withholding is incomplete, art. 23 requires the May SICORE entry under **Detalle de Retenciones**, **Recibo de Sueldo**, number zero, and **Imposibilidad de Retención**. Current CUIT-specific deposit dates and SICORE payment codes are not confirmed in this Guide; obtain the official calendar before payment.
+
+**Unrecovered withholding and employee payment:** under RG 4003 art. 13, incomplete withholding normally brings annual assessment/payment and, where necessary, registration. If the employer determines the tax and makes F.1359 available, the employee may instead pay the reported shortfall by VEP through **Presentación de DDJJ y Pagos**, Clave Fiscal level 2 or above, tax 11 / concept 708 / subconcept 708. Pay by the ordinary individual income-tax payment deadline and report payment through SiRADIG. The same mechanism permits payment of a current-year amount reported unwithheld on a payslip. Meeting this alternative's conditions removes the registration/annual assessment obligation arising from that shortfall; it does not exempt unrelated income. Keep the VEP receipt and reconcile the employer's balance.
+
+**Arrears:** RG 4003 art. 9 separates current-year adjustments from earlier-year amounts. Current-year adjustments enter the current agent's calculation using other-payer data where relevant. For an election to attribute prior-year arrears to accrual, obtain the prior agent's certificate or the specified substitute information/evidence; the election is unavailable without it. The applicable historic-period withholding must be recalculated, not silently put through the 2026 scale. Without that election, apply the perception-period treatment and art. 9 procedure. Obtain professional review before restating a prior settlement.
 
 ## Penalties and interest
 
@@ -187,7 +208,7 @@ Read on means the specified text was extracted and read, not merely that its URL
 
 | Source and text read | Official URL | Read on |
 |---|---|---|
-| Read for RG 4003 consolidated, arts. 1-11, 19, 21-25 and current Annex II A-H; quotation: "en el segundo semestre del año fiscal: acumulados mensualmente en ese período semestral" | https://biblioteca.arca.gob.ar/dcp/REAG01004003_2017_03_02 | 2026-11-11 |
+| Read for RG 4003 consolidated, arts. 1-13, 19, 21-25 and current Annex II A-H; quotation: "en el segundo semestre del año fiscal: acumulados mensualmente en ese período semestral" | https://biblioteca.arca.gob.ar/dcp/REAG01004003_2017_03_02 | 2026-11-11 |
 | Read for LIG arts. 30-33, family and employee eligibility; quotation: "se añadirá como deducción especial la doceava parte" | https://biblioteca.arca.gob.ar/dcp/LEY_C_020628_2019_12_05 | 2026-11-11 |
 | Read for ARCA first-semester 2026 deductions, title and monthly/annualised tables; quotation: "5.151.802,50" | https://www.arca.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-ene-a-jun-2026.pdf | 2026-11-11 |
 | Read for ARCA second-semester 2026 deductions, title and cumulative table; quotation: "5.585.736,93" | https://www.arca.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-jul-dic-2026.pdf | 2026-11-11 |
