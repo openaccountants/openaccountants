@@ -52,6 +52,7 @@ import yaml
 from mcp.server.mcpserver import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
 from mcp.types import ToolAnnotations
+from .eligibility import needs_sources, publication_holds
 
 log = logging.getLogger(__name__)
 
@@ -345,6 +346,7 @@ def _catalogue() -> tuple[
         quality_tier = _quality_tier(meta)
         rows.append({
             "slug": slug,
+            "metadata": meta,
             "title": _first_h1(body) or slug,
             "own_jur": own,
             "topdir": topdir,
@@ -405,6 +407,12 @@ def _catalogue() -> tuple[
         selected["jurisdiction"] = selected["own_jur"] or _dir_jurisdiction(
             selected["topdir"], dir_codes[selected["topdir"]]
         )
+        selected["publication_paths"] = (
+            [selected["relpath"]] if len(federal) == 1 else [r["relpath"] for r in group]
+        )
+        if len(federal) != 1 and any(needs_sources(r["metadata"]) for r in group):
+            # An older identical alias must not erase an explicit source hold.
+            selected["metadata"] = {**selected["metadata"], "status": "needs_sources"}
         selected.pop("content_hash")
         out[slug] = selected
 
@@ -425,12 +433,59 @@ def _catalogue() -> tuple[
         "ambiguous_slugs": len(ambiguous),
         "rejected_paths": rejected_paths,
     }
+    held = publication_holds({name: rec["metadata"] for name, rec in out.items()})
+    report["publication_holds"] = held
+    for name, reason in held.items():
+        log.warning("skill %r held from publication: %s", name, reason)
+        out.pop(name)
     return out, ambiguous, report
 
 
 def _index() -> dict[str, dict[str, Any]]:
     """Map unambiguous skill slugs to metadata records."""
-    return _catalogue()[0]
+    records = _catalogue()[0]
+    # A process may outlive a package update. Read only frontmatter here, so a
+    # newly applied hold also disappears from lists, search and routing plans.
+    metadata = {}
+    for name, rec in records.items():
+        try:
+            metadata[name] = _live_metadata(rec)
+        except (OSError, ValueError, UnicodeDecodeError):
+            # Preserve the existing unreadable-file reporting in search/read.
+            metadata[name] = rec["metadata"]
+    held = publication_holds(metadata)
+    return {name: rec for name, rec in records.items() if name not in held}
+
+
+def _current_metadata(path: Path) -> dict[str, Any]:
+    lines = []
+    with path.open(encoding="utf-8") as source:
+        first = source.readline()
+        if first.strip() != "---":
+            return {}
+        lines.append(first)
+        for line in source:
+            lines.append(line)
+            if line.strip() in {"---", "..."}:
+                break
+    return _parse_frontmatter("".join(lines), source=path.name)[0]
+
+
+def _live_metadata(rec: dict[str, Any], selected: dict[str, Any] | None = None) -> dict[str, Any]:
+    """An identical alias cannot erase a hold or a mandatory prerequisite."""
+    metadata = dict(selected if selected is not None else _current_metadata(
+        _safe_resolve(PACKAGES_DIR, rec["relpath"])))
+    dependencies = list(metadata.get("depends_on") or [])
+    for relative in rec["publication_paths"]:
+        if relative == rec["relpath"]:
+            continue
+        other = _current_metadata(_safe_resolve(PACKAGES_DIR, relative))
+        if needs_sources(other):
+            metadata["status"] = "needs_sources"
+        dependencies.extend(other.get("depends_on") or [])
+    if dependencies:
+        metadata["depends_on"] = sorted(set(dependencies))
+    return metadata
 
 
 def _clear_index_cache() -> None:
@@ -474,9 +529,13 @@ def _duplicate_report() -> dict[str, Any]:
     }
 
 
-def _read_skill(slug: str) -> tuple[dict[str, Any], str]:
+def _read_skill(slug: str, _parents: frozenset[str] = frozenset()) -> tuple[dict[str, Any], str]:
     """Return (index record, body markdown) for a slug or raise ValueError."""
-    index, ambiguous, _ = _catalogue()
+    index, ambiguous, report = _catalogue()
+    if slug in report.get("publication_holds", {}):
+        raise ToolInputError(f"Skill '{slug}' is held from publication: {report['publication_holds'][slug]}")
+    if slug in _parents:
+        raise ToolInputError(f"Skill '{slug}' has a cyclic required companion")
     if slug in ambiguous:
         paths = ", ".join(ambiguous[slug])
         raise ToolInputError(
@@ -494,7 +553,15 @@ def _read_skill(slug: str) -> tuple[dict[str, Any], str]:
     # (mtime_ns + size) can serve stale guidance when a rewrite preserves both
     # (e.g. a rate correction 21% -> 22%), and can keep serving a body after
     # read permission is revoked. Freshness fails closed here.
-    _, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
+    meta, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
+    meta = _live_metadata(rec, meta)
+    if needs_sources(meta):
+        raise ToolInputError(f"Skill '{slug}' is held from publication: status: needs_sources")
+    for dependency in meta.get("depends_on") or []:
+        try:
+            _read_skill(dependency, _parents | {slug})
+        except (OSError, ValueError) as exc:
+            raise ToolInputError(f"Skill '{slug}' is held: required companion '{dependency}' unavailable: {exc}") from exc
     return rec, body
 
 

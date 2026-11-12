@@ -10,7 +10,7 @@ from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from skill_dependencies import catalogue  # noqa: E402
+from skill_dependencies import publication_catalogue  # noqa: E402
 
 
 def load(name, filename):
@@ -52,12 +52,13 @@ class IndexSkillIdentityTests(unittest.TestCase):
             self.assertNotIn("- references |", text)
 
     def test_real_index_names_cover_the_source_catalogue_exactly(self):
-        _skills, targets, errors = catalogue(ROOT)
+        _skills, targets, held, errors = publication_catalogue(ROOT)
         self.assertEqual(errors, [])
         index = index_builder.build_index()
         names = {g["mcp_slug"] for g in index["guides"] if g["mcp_slug"]}
         self.assertEqual(names, set(targets))
         self.assertEqual(index["counts"]["loadable_skill_names"], len(targets))
+        self.assertEqual({h["name"] for h in index["publication_holds"]}, set(held))
 
 
 if __name__ == "__main__":

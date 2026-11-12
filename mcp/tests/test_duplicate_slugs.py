@@ -202,6 +202,7 @@ class DuplicateSlugTests(unittest.TestCase):
                 "federal_precedence": 0,
                 "ambiguous_slugs": 1,
                 "rejected_paths": [],
+                "publication_holds": {},
                 "ambiguous": [
                     {
                         "slug": "collision",

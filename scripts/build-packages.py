@@ -43,7 +43,7 @@ from pathlib import Path
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 from repo_layout import country_dirs
-from skill_dependencies import add_package_dependencies, catalogue, read_skill
+from skill_dependencies import add_package_dependencies, publication_catalogue, read_skill
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -67,14 +67,24 @@ HAND_AUTHORED_PACKAGES = {"us-federal"}
 
 @lru_cache(maxsize=1)
 def dependency_targets():
-    _skills, targets, errors = catalogue(Path(REPO_ROOT))
+    _skills, targets, held, errors = publication_catalogue(Path(REPO_ROOT))
     if errors:
         raise ValueError("Cannot build incomplete or ambiguous packages:\n" + "\n".join(errors))
+    for name, reason in held.items():
+        print(f"Publication hold: {name}: {reason}")
     return targets
 
 
 def include_dependencies(pkg_dir, files):
-    add_package_dependencies(Path(pkg_dir), files, dependency_targets())
+    # Every generated bundle passes this gate before adding prerequisites or
+    # writing its README. The hand-authored federal source is never deleted.
+    targets = dependency_targets()
+    for filename in list(files):
+        path = Path(pkg_dir) / filename
+        if (skill := read_skill(path)) and skill.name not in targets:
+            path.unlink()
+            files.remove(filename)
+    add_package_dependencies(Path(pkg_dir), files, targets)
 
 
 def include_unshipped_sources():

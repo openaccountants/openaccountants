@@ -33,6 +33,8 @@ from pathlib import Path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from frontmatter_yaml import FrontmatterError, load_frontmatter  # noqa: E402
 from repo_layout import country_dirs  # noqa: E402
+from skill_dependencies import publication_catalogue  # noqa: E402
+from skill_eligibility import needs_sources  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SKILLS_DIR = REPO_ROOT / "skills"
@@ -118,6 +120,8 @@ def yaml_quote(s: str) -> str:
 
 
 def skill_md(slug: str, meta: dict, body: str) -> str:
+    if needs_sources(meta):
+        raise ValueError(f"Cannot convert held skill {slug}: status: needs_sources")
     desc = derive_description(meta, body, slug)
     jurisdiction = str(meta.get("jurisdiction") or "").strip()
     trust = str(meta.get("trust_label") or "").strip()
@@ -205,10 +209,15 @@ def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = Fa
     built: dict[str, dict] = {}
     staged: dict[Path, str] = {}
     reviewed = 0  # tier 1 with a named reviewer: the only accountant-reviewed state
+    _skills, _targets, held, errors = publication_catalogue(REPO_ROOT)
+    if errors:
+        raise ValueError("Invalid source catalogue:\n" + "\n".join(errors))
     for src in iter_source_files():
         text = src.read_text(encoding="utf-8")
         meta, body = split_frontmatter(text)
         slug = str(meta.get("name") or src.stem).strip()
+        if needs_sources(meta) or slug in held:
+            continue
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,63}", slug):
             continue
         if slug in built:
@@ -232,6 +241,7 @@ def build(plugin_countries: set[str], check_only: bool, hermes_plugin: bool = Fa
     index = {
         "generated_by": "scripts/build-agent-skills.py",
         "count": len(built),
+        "publication_holds": [{"name": name, "reason": reason} for name, reason in held.items()],
         "jurisdictions": sorted({v["jurisdiction"] for v in built.values() if v["jurisdiction"]}),
         "skills": [{"name": k, **v} for k, v in sorted(built.items())],
     }
