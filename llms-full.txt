@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,369 AI skills across 260 jurisdictions in this repository, 139 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,372 AI skills across 259 jurisdictions in this repository, 138 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2369 skills, 260 jurisdictions, 139 accountant-reviewed)
+## Skill inventory (2372 skills, 259 jurisdictions, 138 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -205,7 +205,7 @@ https://www.openaccountants.com
 - ar-company-formation | AR | tier 2 | reviewed_by -
 - ar-corporate-income-tax | AR | tier 2 | reviewed_by -
 - ar-monotributo | AR | tier 2 | reviewed_by -
-- ar-social-contributions | AR | tier 1 | reviewed_by Maria Valeria Benvenuti
+- ar-social-contributions | AR | tier 2 | reviewed_by -
 - ar-tax-overview | AR | tier 2 | reviewed_by -
 - ar-vat-return | AR | tier 2 | reviewed_by -
 - argentina-cross-border | AR | tier 2 | reviewed_by -
@@ -422,8 +422,13 @@ https://www.openaccountants.com
 - br-income-tax | BR | tier 2 | reviewed_by -
 - br-indirect-tax | BR | tier 2 | reviewed_by -
 - br-inss | BR | tier 2 | reviewed_by -
+- br-jurisdiction-router | BR | tier 2 | reviewed_by -
+- br-municipal-taxes | BR | tier 2 | reviewed_by -
+- br-regional-incentives | BR | tier 2 | reviewed_by -
+- br-regional-payroll | BR | tier 2 | reviewed_by -
 - br-return-assembly | BR | tier 2 | reviewed_by -
 - br-simples-nacional | BR | tier 2 | reviewed_by -
+- br-state-tax-profiles | BR | tier 2 | reviewed_by -
 - brazil-corporate-tax | BR | tier 2 | reviewed_by -
 - brazil-cross-border-tax | BR | tier 2 | reviewed_by -
 - brazil-crypto-tax | BR | tier 2 | reviewed_by -
@@ -952,7 +957,6 @@ https://www.openaccountants.com
 - dtt-template | GLOBAL | tier 2 | reviewed_by -
 - americas-corridors | GLOBAL | tier 2 | reviewed_by -
 - asia-pacific-corridors | GLOBAL | tier 2 | reviewed_by -
-- dtt-summary | EG-AE | tier 2 | reviewed_by -
 - dtt-summary | EG-SA | tier 2 | reviewed_by -
 - emerging-market-corridors | GLOBAL | tier 2 | reviewed_by -
 - eu-intra-rates | GLOBAL | tier 2 | reviewed_by -
@@ -2311,7 +2315,6 @@ https://www.openaccountants.com
 - hi-sales-tax | US-HI | tier 2 | reviewed_by -
 - ia-income-tax | US-IA | tier 2 | reviewed_by -
 - ia-sales-tax | US-IA | tier 2 | reviewed_by -
-- id-income-tax | ID | tier 2 | reviewed_by -
 - id-sales-tax | US-ID | tier 2 | reviewed_by -
 - idaho-sales-tax | US-ID | tier 2 | reviewed_by -
 - il-estimated-tax | US-IL | tier 2 | reviewed_by -
