@@ -41,6 +41,12 @@ The saved copies of the pages (with retrieval date and fingerprint) are kept pri
 
 `scripts/skill_checks.py`, check (q) `figure_in_library`, warns when a rates row states a different number for a figure the library holds. A row that states either the figure in force or its announced value passes. It is a warning, not an error, and only compares a row with a figure when the match is plain; the rule is in the check's docstring.
 
+## Review ledgers
+
+`library/ledgers/` holds per-Guide research evidence in Markdown: claims and conditions, official URLs, exact original-language quotes, read dates, coverage limits and old-topic destinations. These companion files support review of the corresponding Guide. Their derived examples and explicitly unconfirmed branches are distinguished from supported source rules.
+
+The ledgers do not change the generated `figures.json` or `sources.json` formats or the build process described above. Source snapshots remain in the research packet; a ledger does not confer accountant approval.
+
 ## Licence
 
 The library is licensed like the skills: everything under `library/` is covered by the same Guide licence and annotation as `skills/` (see [LICENSING.md](../LICENSING.md) and [REUSE.toml](../REUSE.toml)).
