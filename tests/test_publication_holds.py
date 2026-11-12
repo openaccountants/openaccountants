@@ -77,6 +77,21 @@ class BuilderHoldTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Cannot convert held skill"):
             agents.skill_md("held", {"status": "needs_sources"}, "Rule body")
 
+    def test_index_refuses_malformed_or_ambiguous_source_catalogue(self):
+        for problem in ("malformed", "ambiguous"):
+            with self.subTest(problem=problem), tempfile.TemporaryDirectory() as temp:
+                root = Path(temp)
+                source = root / "skills/example"
+                source.mkdir(parents=True)
+                if problem == "malformed":
+                    (source / "bad.md").write_text(document("bad", extra="depends_on: not-a-list\n"))
+                else:
+                    (source / "first.md").write_text(document("same"))
+                    (source / "second.md").write_text(document("same").replace("Rule body.", "Different guidance."))
+                with patch.object(index, "REPO_ROOT", str(root)):
+                    with self.assertRaisesRegex(ValueError, "Invalid source catalogue"):
+                        index.build_index()
+
     def test_actual_six_source_files_are_held_without_dependents(self):
         _skills, targets, held, errors = publication_catalogue(ROOT)
         self.assertEqual(errors, [])

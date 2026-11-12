@@ -135,7 +135,9 @@ def guide_files():
 
 def build_index():
     guides = []
-    _skills, _targets, held, _errors = publication_catalogue(Path(REPO_ROOT))
+    _skills, _targets, held, errors = publication_catalogue(Path(REPO_ROOT))
+    if errors:
+        raise ValueError("Invalid source catalogue:\n" + "\n".join(errors))
     for rel_path in guide_files():
         with open(os.path.join(REPO_ROOT, rel_path), encoding="utf-8", errors="replace") as fh:
             text = fh.read()
