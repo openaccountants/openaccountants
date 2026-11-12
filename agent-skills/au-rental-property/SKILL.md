@@ -16,9 +16,9 @@ metadata:
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.7
+## Australia Rental Property -- Income & Deductions Skill v1.8
 
-Australia Rental Property -- Income & Deductions Skill v1.7
+Australia Rental Property -- Income & Deductions Skill v1.8
 
 ## Section 1 -- Quick Reference
 
@@ -35,7 +35,7 @@ Australia Rental Property -- Income & Deductions Skill v1.7
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.7 |
+| Skill version | 1.8 |
 
 ### Select the income year before calculating
 
@@ -202,6 +202,8 @@ expected:
 | Gardening / lawn mowing (if provided to tenant) | Deductible |  |
 | Tax agent fee (rental schedule portion) | Deductible |  |
 | Travel related to residential rental accommodation | Generally denied for a non-business individual under s 26-31 | The business test and specified entity exceptions require checking; see below. [ITAA 1997, s 26-31](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
+
+- **Prepaid rental expenses** -- Check timing separately from the expense classification above. For an individual's non-business expenditure, the ordinary 12 month rule requires an eligible service period of no more than 12 months ending by the end of the following income year. Otherwise, non-excluded expenditure generally needs apportionment. Check excluded expenditure and the separate agreement rules and their exceptions before claiming an immediate deduction. [ITAA 1936 ss 82KZL-82KZMF](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
 
 - **Borrowing expenses** -- Loan establishment fees, lenders mortgage insurance, loan valuation fees and mortgage stamp duty may qualify under s 25-25. Apply the $100 test to the combined income-producing amounts or proportions of borrowing expenditure incurred in the income year, not to one fee or the unadjusted private-use cost. A qualifying total of $100 or less is deductible in that year. Otherwise use the statutory day-based calculation over the shortest of the original loan term, the actual borrowing-to-repayment period and 5 years. Adjust for part years and income-producing use; an early repayment can bring forward the eligible remaining deduction. Apply the selected income year's rental-loss restrictions separately. [ITAA 1997, s 25-25(1)-(6)](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/25-25).
 
@@ -744,6 +746,7 @@ These sources support selected receipt-year, borrowing expense, repair, travel, 
 | ATO TD 2005/47. Read for paragraphs 1-4 and the omitted-claim example on deduction and CGT amendment periods. | https://www.ato.gov.au/law/view/document?DocID=TXD/TD200547/NAT/ATO/00001&PiT=99991231235958 | 2026-11-12 |
 | ATO PS LA 2006/1 (GA). Read for sections 1-3, including both insufficient-information conditions. | https://www.ato.gov.au/law/view/document?DocID=PSR/GA20061/NAT/ATO/00001&PiT=99991231235958 | 2026-11-12 |
 | ATO Rental properties 2026, rental expenses. Read selected travel, interest/renovation, vacant-land, second-hand asset and capital works subsections, linked interpretations, the annual deduction base and changes in building ownership. This annual guide concerns 2025-26; selected statutes and rulings are considered separately for 2026-27. | https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/rental-expenses | 2026-11-12 |
+| ITAA 1936 ss 82KZL-82KZMF, current compilation 193. Read for prepayment service periods, following-income-year limit, excluded expenditure and separate agreement conditions and exceptions. | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-12 |
 | ATO Rental properties 2026, other tax considerations. Read for contract timing, gain/loss definitions, cost base, depreciating-asset apportionment and PAYG instalments. | https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/other-tax-considerations | 2026-11-12 |
 | ATO capital losses and CGT discount. Read for losses before discount, the 12-month test and exclusions. | https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/using-capital-losses-to-reduce-capital-gains | 2026-11-12 |
 | ATO CGT discount. Read for eligibility, acquisition/disposal day exclusion and discount calculation. | https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount | 2026-11-12 |
