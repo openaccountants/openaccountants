@@ -911,7 +911,11 @@ def run_integrity_check(
 
         guide_changes.append(change)
         if change.status in {"D", "R"} or (before_is_guide and not after_is_guide):
-            severity = "error" if mode == "sync" or strict_metadata else "warning"
+            # A human PR's deletion/rename is governed by validate-guides.py's
+            # required Moved/Not moved record. Strict metadata governs dates
+            # and versions, not a ban on every intentional retirement. The
+            # former database exporter still may never remove source files.
+            severity = "error" if mode == "sync" else "warning"
             findings.append(
                 Finding(
                     severity,

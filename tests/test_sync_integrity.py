@@ -589,9 +589,15 @@ class GitBackedIntegrityTests(unittest.TestCase):
         strict_findings, _ = sync_integrity.run_integrity_check(
             self.repo, self.base, None, "audit", strict_metadata=True
         )
-        self.assertIn("source-removal-needs-review", codes(strict_findings, "error"))
+        self.assertIn("source-removal-needs-review", codes(strict_findings, "warning"))
+        self.assertNotIn("source-removal-needs-review", codes(strict_findings, "error"))
 
-    def test_source_rename_fails_strict_main_audit(self) -> None:
+        sync_findings, _ = sync_integrity.run_integrity_check(
+            self.repo, self.base, None, "sync", strict_metadata=True,
+        )
+        self.assertIn("source-removal-needs-review", codes(sync_findings, "error"))
+
+    def test_source_rename_is_reviewed_by_the_required_merge_record_check(self) -> None:
         renamed = "skills/global/methods/renamed-synthetic-guide.md"
         self.git("mv", self.path, renamed)
         findings, count = sync_integrity.run_integrity_check(
@@ -602,7 +608,7 @@ class GitBackedIntegrityTests(unittest.TestCase):
             strict_metadata=True,
         )
         self.assertEqual(1, count)
-        self.assertIn("source-removal-needs-review", codes(findings, "error"))
+        self.assertIn("source-removal-needs-review", codes(findings, "warning"))
 
     def test_merge_base_excludes_unrelated_main_only_changes(self) -> None:
         self.git("checkout", "-b", "feature")
