@@ -1,986 +1,561 @@
 ---
 name: venezuela-tax-optimization
-description: Use this skill whenever asked about reducing tax in Venezuela, tax planning, saving tax, optimizing tax, allowances, deductions the client might be missing, or any question about legal strategies to minimize income tax liability for individuals or companies in Venezuela. Trigger on phrases like "reduce tax", "tax planning", "save tax", "optimize", "allowances", "deductions I'm missing", "pay less tax", "tax-efficient", "tax minimization", "how to lower my tax bill", "ISLR planning", "IVA optimization", "SENIAT", "unidad tributaria". ALWAYS read this skill before advising on any Venezuela tax optimization strategy.
+description: >
+  Compare legal Venezuela tax-planning choices for individuals, sole traders
+  and companies in tax year 2026. Covers personal deductions, income timing,
+  source-separated operating losses, individual versus company computations,
+  related-party finance, municipal-tax deductions, distributions and foreign
+  tax credits. Retains the planning questions for IVA, payroll contributions,
+  LOCTI, special economic zones, cryptocurrency and sector incentives, with
+  explicit limits where current primary evidence is unavailable. Use for
+  reducir impuestos, planificación fiscal, desgravamen único o detallado,
+  pérdidas fiscales, subcapitalización, dividendos, ISAE and Venezuela tax
+  optimization. Produces documented alternatives, recomputing working papers,
+  research gaps and a professional-review brief before a tax position is taken.
 jurisdiction: VE
-tax_year: 2025
-last_updated: 2026-07-13
+category: tax-optimization
+domain: tax-optimization
+type: decision
+tax_year: 2026
+last_updated: 2026-11-11
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: tax-optimization
+version: 0.2
+depends_on:
+  - venezuela-income-tax
+  - venezuela-corporate-tax
+  - venezuela-iva
+  - venezuela-social-contributions
+  - venezuela-payroll
 ---
 
-# Venezuela Tax Optimization
-
-## Venezuela Tax Optimization Skill v0.1
-
-> HYPERINFLATIONARY JURISDICTION — CRITICAL PROTOCOL
->
-> All monetary thresholds and bracket boundaries in Venezuelan law are expressed
-> in Tax Units (Unidades Tributarias / UT). Before quoting ANY bolivar (Bs./VES)
-> figure to a client, confirm the current UT value with SENIAT. The value as of
-> June 2, 2025 is **Bs. 43.00** (SNAT/2025/000048, Gaceta Oficial No. 43,140).
-> This value was raised 377.8% from the previous Bs. 9.00 set in May 2023, and
-> may change again at any time. All bolivar amounts in this skill use the 2025
-> UT of Bs. 43.00 as a reference only.
->
-> Penalties under the Código Orgánico Tributario (COT) 2020 reform are expressed
-> in **USD at the BCV official rate**, NOT in UT. Confirm the BCV rate on the
-> day of the computation.
-
-## Rates and thresholds
-
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### venezuela-tax-optimization
-
-- **Valor de la Unidad Tributaria (UT) — 2025** — Bs. 43.00  _(SNAT/2025/000048, Gaceta Oficial No. 43,140)_
-- **Valor de la Unidad Tributaria (UT) — anterior (mayo 2023)** — Bs. 9.00  _(SNAT/2025/000048)_
-- **UT value increase from 2023 to 2025** — 377.8%  _(SNAT/2025/000048)_
-- **Fecha límite para la declaración anual del ISLR de personas naturales** — 31 de marzo del año siguiente
-- **Umbral de declaración del ISLR para personas naturales** — Renta neta anual ≥ 1,000 UT (= Bs. 43,000 a la UT de 2025)
-- **Fecha límite para la declaración del IVA** — Día 15 del mes siguiente (mensual)
-- **Ejercicio fiscal venezolano** — Año calendario: 1 Jan – 31 Dec  _(PwC — Venezuela individual)_
-- **Desgravamen único (standard personal deduction)** — 774 UT per year (= Bs. 33,282 at 2025 UT)  _(ISLR Law Art. 60 and 61)_
-- **Desgravamen detallado — educación (contribuyente + dependientes menores de 26 años)** — Sin límite  _(ISLR Law Art. 60 and 61)_
-- **Desgravamen detallado — primas de seguros de vida/cirugía/hospitalización/maternidad** — Sin límite  _(ISLR Law Art. 60 and 61)_
-- **Desgravamen detallado — gastos médicos/odontológicos/de hospitalización** — Sin límite  _(ISLR Law Art. 60 and 61)_
-- **Desgravamen detallado — intereses hipotecarios sobre vivienda principal (límite anual)** — 1,000 UT = Bs. 43,000 a la UT de 2025  _(ISLR Law Art. 60 and 61)_
-- **Desgravamen detallado — alquiler de vivienda principal (límite anual)** — 800 UT = Bs. 34,400 a la UT de 2025  _(ISLR Law Art. 60 and 61)_
-- **Período de arrastre de pérdidas comerciales/operativas** — Máximo 3 años  _(ISLR Law)_
-- **Límite anual de aplicación del arrastre de pérdidas** — 25% de la renta gravable de ese año  _(ISLR Law)_
-- **Arrastre retroactivo de pérdidas** — No permitido  _(ISLR Law)_
-- **Regla de compensación de pérdidas de fuente extranjera** — Solo puede compensarse con rentas de fuente extranjera  _(Ley del ISLR)_
-- **Pérdidas por corrección monetaria (ajuste por inflación) — arrastre** — No pueden arrastrarse en absoluto; expiran en el ejercicio en que se generan  _(Ley del ISLR)_
-- **Banda 1: 0–1,000 UT** — 6%; Fixed deduction: 0 UT / Bs. 0  _(Ley del ISLR)_
-- **Banda 2: 1,000–1,500 UT** — 9%; Fixed deduction: 30 UT / Bs. 1,290  _(Ley del ISLR)_
-- **Banda 3: 1,500–2,000 UT** — 12%; Fixed deduction: 75 UT / Bs. 3,225  _(Ley del ISLR)_
-- **Banda 4: 2,000–2,500 UT** — 16%; Fixed deduction: 155 UT / Bs. 6,665  _(Ley del ISLR)_
-- **Banda 5: 2,500–3,000 UT** — 20%; Fixed deduction: 255 UT / Bs. 10,965  _(Ley del ISLR)_
-- **Banda 6: 3,000–4,000 UT** — 24%; Fixed deduction: 375 UT / Bs. 16,125  _(Ley del ISLR)_
-- **Banda 7: 4,000–6,000 UT** — 29%; Deducción fija: 575 UT / Bs. 24,725  _(Ley del ISLR)_
-- **Banda 8: Más de 6,000 UT** — 34%; Deducción fija: 875 UT / Bs. 37,625  _(Ley del ISLR)_
-- **Fórmula del impuesto** — Impuesto = (Renta × Tasa%) − Deducción Fija (en Bs.)  _(Ley del ISLR)_
-- **Banda 1: 0–2,000 UT (corporate)** — 15%; Deducción fija: 0 UT / Bs. 0  _(Ley del ISLR)_
-- **Banda 2: 2,000–3,000 UT (corporate)** — 22%; Deducción fija: 140 UT / Bs. 6,020  _(Ley del ISLR)_
-- **Banda 3: Más de 3,000 UT (corporate)** — 34%; Deducción fija: 500 UT / Bs. 21,500  _(Ley del ISLR)_
-- **Tasa fija especial: explotación petrolera** — 50%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Tasa fija especial: bancos / entidades financieras / seguros** — 40%  _(PwC — Venezuela, Corporate, Taxes on corporate income)_
-- **Tasa de retención en la fuente sobre dividendos domésticos** — 34% fijo  _(Ley del ISLR)_
-- **España — tasa de retención en la fuente sobre dividendos según convenio** — 0% para accionistas corporativos calificados; 10% para los demás
-- **Estados Unidos — tasa de retención en la fuente sobre dividendos según convenio** — 5% para participaciones ≥10%; 15% en los demás casos
-- **México — tasa de retención en la fuente sobre dividendos según convenio** — 5%
-- **Francia — tasa de retención en la fuente sobre dividendos según convenio** — 0% bajo ciertas condiciones; 15% en los demás casos
-- **Canadá — tasa de retención en la fuente sobre dividendos según convenio** — 10% para participaciones ≥25%; 15% en los demás casos
-- **Brasil — tasa de retención en la fuente sobre dividendos según convenio** — 10% para participaciones sustanciales; 15% en los demás casos
-- **Número total de convenios tributarios vigentes (a enero de 2026)** — ~40 convenios  _(PwC Worldwide Tax Summaries — Venezuela Withholding Taxes (January 2026))_
-- **Límite de la razón deuda-capital para subcapitalización** — 1:1 (la deuda con partes relacionadas no debe exceder el patrimonio)  _(ISLR Law Art. 38)_
-- **Consecuencia de exceder el límite 1:1** — Los intereses sobre el exceso de deuda no son deducibles para el ISLR  _(ISLR Law Art. 38)_
-- **Tasa LOCTI — bingos, casinos, alcohol, tabaco** — 2% de los ingresos brutos mensuales  _(LOCTI (Ley Orgánica de Ciencia, Tecnología e Innovación, April 2022))_
-- **Tasa LOCTI — hidrocarburos o minería** — 1% de los ingresos brutos mensuales  _(LOCTI (April 2022))_
-- **Tasa LOCTI — todas las demás actividades** — 0.5% de los ingresos brutos mensuales  _(LOCTI (April 2022))_
-- **Tasa LOCTI — empresas de actividad múltiple** — La tasa más alta aplicable calculada sobre el total de ingresos brutos  _(LOCTI (April 2022))_
-- **Exención LOCTI — sector petrolero (a partir de la Reforma de la Ley de Hidrocarburos de enero de 2026)** — Exento  _(Hydrocarbons Law Reform, January 29, 2026)_
-- **Umbral de activación por ingresos brutos mensuales de la LOCTI** — Ingresos brutos mensuales que superen 150,000 veces la divisa extranjera de mayor valor publicada por el BCV  _(LOCTI (April 2022))_
-- **Frecuencia de pago y sistema de la LOCTI** — Mensual a través del sistema SIDCAI  _(Administrative Ruling No. 015-004-2024, February 2024)_
-- **Rango de tarifas del ISAE** — 1% al 6.5% de los ingresos brutos (varía según el municipio y la actividad)  _(Ley Orgánica del Poder Público Municipal)_
-- **Base imponible mínima del ISAE** — 20 UT (= Bs. 860 a la UT 2025)  _(Ley Orgánica del Poder Público Municipal)_
-- **Tasa estándar del IVA** — 16%  _(Ley de IVA)_
-- **Tasa reducida del IVA** — 8% (caprinos, ovinos y otros menores; carnes refrigeradas; manteca vegetal; servicios profesionales a entes públicos; transporte aéreo nacional de pasajeros; ciertas construcciones)  _(Ley de IVA)_
-- **Tasa del recargo por artículos de lujo** — +15% (efectivo total ~31%) sobre vehículos ≥ USD 40,000; motocicletas ≥ USD 20,000; joyas ≥ USD 300; servicios de restaurante/bar; máquinas de juego  _(Ley de IVA)_
-- **Umbral del recargo por lujo — vehículos** — ≥ USD 40,000  _(Ley de IVA)_
-- **Umbral del recargo por lujo — motocicletas** — ≥ USD 20,000  _(Ley de IVA)_
-- **Umbral del recargo por lujo — joyas** — ≥ USD 300  _(Ley de IVA)_
-- **IVA tasa cero** — Los servicios prestados en Venezuela para personas en el exterior se consideran prestados en Venezuela y por ende se les aplica el iva de 16%  _(Ley de IVA)_
-- **Rango de la tasa del recargo por divisas / criptoactivos** — 5–25% sobre transacciones pagadas en moneda extranjera, criptomonedas o criptoactivos no venezolanos  _(Ley de IVA / IGTF)_
-- **Exención del IVA sobre importaciones de alimentos básicos, medicamentos, fertilizantes, equipos médicos, libros y ciertos combustibles — estatus** — Suspendida a partir del 5 de julio de 2025  _(Presidential Decree No. 5,145, June 30, 2025)_
-- **Exención del IVA para importaciones realizadas por organismos de la Administración Pública Nacional y entidades privadas designadas** — Exención por un año hasta el 30 de junio de 2026  _(Presidential Decree No. 5,146, June 30, 2025)_
-- **IVSS (Social Security) — employer contribution rate (by risk class)** — 9% / 10% / 11%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **IVSS (Social Security) — employee contribution rate** — 4%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Tope de la base salarial del IVSS** — 5 salarios mínimos
-- **Fecha límite de pago del IVSS** — Antes del día 16 de cada mes
-- **FAOV (Housing) — employer contribution rate** — 2%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **FAOV (Housing / Ley de Vivienda y Hábitat) — employee contribution rate** — 1%  _(PwC Worldwide Tax Summaries, reviewed 12 Jan 2026)_
-- **Fecha límite de pago del FAOV** — Dentro de los primeros 5 días hábiles de cada mes
-- **FAV (Vivienda — secundaria / LPH) tasa de contribución patronal** — 2% (base salarial tope: 10 salarios mínimos)
-- **FAV (Vivienda — secundaria / LPH) tasa de contribución del trabajador** — 0.5% (base salarial tope: 10 salarios mínimos)
-- **INCES — tasa de contribución patronal** — 2% del total de salarios  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **INCES (Capacitación laboral) — tasa de contribución del empleado** — 0.5% (sobre las utilidades de fin de año)  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Fecha límite de pago del INCES** — Dentro de los primeros 5 días hábiles después del cierre de cada trimestre
-- **Desempleo (Régimen Prestacional de Empleo) — tasa de contribución patronal** — 2%  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **Desempleo (Régimen Prestacional de Empleo) — tasa de contribución del empleado** — 0.5%  _(PwC Worldwide Tax Summaries, revisado el 12 Jan 2026)_
-- **LOPCYMAT (Riesgo laboral) — tasa de contribución patronal** — 0  _(la lopcymat no pide pagos regulares solo establece sanciones por incumplimientos (multas))_
-- **Contribución Especial de Pensión — tasa patronal (a partir de mayo de 2024)** — 9% (solo patronal)
-- **ZEE Estado La Guaira — reintegro del ISLR** — Hasta el 100% durante los primeros 4 ejercicios fiscales  _(Decretos Presidenciales 4,838–4,841 (August 2023))_
-- **ZEE Militar de Aragua — reintegro del ISLR** — Hasta el 100% durante los primeros 4 ejercicios fiscales  _(Decretos Presidenciales 4,838–4,841 (August 2023))_
-- **ZEE Península de Paraguaná — reintegro del ISLR** — Hasta el 100% durante los primeros 4 ejercicios fiscales  _(Decretos Presidenciales 4,838–4,841 (August 2023))_
-- **ZEE Isla Tortuga — reintegro del ISLR** — Hasta el 100% durante los primeros 20 ejercicios fiscales  _(Decretos Presidenciales 4,838–4,841 (August 2023))_
-- **Requisito de exportación en ZEE (a partir del año 7)** — ≥ 60% de la producción exportada  _(Decretos Presidenciales 4,838–4,841 (August 2023))_
-- **Reembolso de aranceles aduaneros en ZEE sobre insumos, materias primas y maquinaria importados** — 100%  _(Decretos Presidenciales 4,838–4,841 (August 2023))_
-- **Fecha límite de publicación del tope de incentivos en ZEE** — Dentro de los 15 días hábiles siguientes al período de declaración del ISLR  _(Resolution 015-25)_
-- **Certificación de elegibilidad en ZEE** — Se debe obtener la certificación conforme a la Resolution 015-25 (May 9, 2025)  _(Resolution 015-25)_
-- **Denominación de sanciones del COT 2020** — USD al tipo de cambio oficial del BCV (NO en UT)  _(Código Orgánico Tributario (COT) reforma 2020, Art. 91)_
-- **Prescripción del COT / período de conservación de documentos** — 5 años  _(Código Orgánico Tributario (COT))_
-- **Fecha límite de pago de la cuota 1 del ISLR** — 31 March (junto con la declaración anual)
-- **Fecha límite de pago de la cuota 2 del ISLR** — 20 días después de la fecha límite del March 31 (es decir, ~20 April)
-- **Fecha límite de pago de la cuota 3 del ISLR** — 40 días después de la fecha límite del March 31 (es decir, ~10 May)
-- **Doctrina de sustancia económica / base legal de precios de transferencia** — Art. 112–118 ISLR  _(Ley de ISLR (Decreto No. 1.435, Dec 2014))_
-- **Umbral de ratio deuda-capital por defecto para subcapitalización** — 1:1 (cualquier deuda con partes relacionadas que supere este límite se trata como no deducible)  _(ISLR Law Art. 38)_
-- **Ampliación de las obligaciones de retención del IVA — fecha de entrada en vigor de la resolución** — August 1, 2025  _(SNAT/2025/000054)_
-
-## Section 1 — Quick Reference
-
-**Section 1 — Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Bolivarian Republic of Venezuela |
-| Key tax authority | SENIAT (Servicio Nacional Integrado de Administración Aduanera y Tributaria) |
-| Key optimization legislation | Ley de ISLR (Decreto No. 1.435, Dec 2014) + Reglamento; COT 2020; Ley de IVA; LOCTI (Apr 2022) |
-| Tax authority attitude to planning | SENIAT accepts legitimate planning within the ISLR Law. No codified general anti-avoidance rule (GAAR) in domestic law, but economic substance doctrine applied in transfer pricing (Art. 112–118 ISLR). Aggressive structures lacking commercial purpose are challenged. |
-| Currency | Bolívar digital (Bs. / VES) |
-| Unit of account for tax law | Tax Unit (UT) — value set annually by SENIAT administrative ruling. 2025 value: Bs. 43.00 |
-| Tax year | Calendar year (1 Jan – 31 Dec) for most taxpayers |
-| ISLR individual filing deadline | 31 March of the following year |
-| ISLR individual filing threshold | Annual net income ≥ 1,000 UT (= Bs. 43,000 at 2025 UT) |
-| VAT return deadline | 15th of the following month (monthly) |
+# Venezuela tax optimization (2026) v0.2
 
-## Section 2 — When to Use This Skill
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Use this skill when the client:
+**Answer layer.** Compare documented alternatives using the taxpayer's actual legal classification, source, timing and complete tax base. For a resident individual, compare eligible itemized personal deductions with the mutually exclusive 774 U.T. allowance; calculate both complete liabilities, including applicable personal rebates. For business losses, preserve source and vintage: the next three tax periods qualify, with a 25% limit on each period's matching-source enrichment. Related-party interest capacity depends on independent debt as well as related debt. Distributions are not automatically taxed a second time in full. [LISLR arts. 4, 50, 52, 55, 57-59, 64-71, 116](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf).
 
-- Is a Venezuelan-resident individual or company subject to ISLR
-- Has Venezuelan-source income regardless of where they reside (territorial rules apply for non-residents)
-- Is planning a dividend distribution from a Venezuelan entity
-- Is structuring an inbound or outbound payment subject to Venezuelan withholding
-- Asks about LOCTI, ISAE (municipal business tax), IVA structuring, or SEZ incentives
-- Is in the hydrocarbons, banking, or insurance sector (special ISLR rates apply)
-- Holds cryptocurrency with Venezuelan tax obligations
-- Is planning to establish or relocate operations to a Venezuelan Special Economic Zone (SEZ)
+**Required inputs before a recommendation:** fiscal year and RIF; residence/domicile, legal form and activities; actual applicable UT evidence; receipts and invoice dates; source-separated tax reconciliation; personal expenses and dependants; loss vintages; month-end related and independent debt; opening/closing equity; distribution history; foreign tax and treaty evidence; and current taxpayer-specific calendars. Missing evidence is a missing input, not permission to assume a historical bolívar amount.
 
-Do NOT use this skill if the client's primary tax nexus is in another jurisdiction; in that case, use the relevant jurisdiction skill alongside this one for cross-border analysis.
+This Guide produces a planning brief and working papers, not a completed return. The primary gazettes read on 11 November 2026 are identified below with their actual enactment dates. The current UT currency value, administrative filing instructions and several incentives/parafiscal measures were not established from accessible primary text. Those topics remain explicitly tracked in Sources. This version is tier 2 and is not professionally approved.
 
-## Section 3 — Conservative Defaults
+## Who this applies to
 
-When facts are uncertain, this skill defaults to the most conservative (highest-tax) reading unless the client explicitly provides documentation supporting a more favorable position:
+Use this decision workflow for Venezuelan-resident/domiciled individuals and ordinary companies, and alongside the relevant income-tax Guide for non-residents, permanent establishments or fixed bases. Residents/domiciled persons generally pay on income of any origin; non-residents without a PE/fixed base are subject on Venezuelan-source enrichment; a foreign person with a PE/fixed base reports domestic and foreign income attributable to it. The place of a bank account or currency does not determine income source. Identify the causes and use of the activity under art. 6. [LISLR arts. 1, 6](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
 
-1. **UT value**: Use the published SNAT/2025/000048 value of Bs. 43.00 but flag that the agent must verify the current value from SENIAT before quoting bolivar figures.
-2. **Desgravamen**: Default to the standard 774 UT deduction unless the client can document itemized amounts exceed 774 UT.
-3. **Dividend rate**: Default to 34% domestic rate unless a tax treaty is confirmed to apply and the holding structure qualifies under treaty anti-abuse provisions.
-4. **Thin capitalization**: Default to treating any related-party debt exceeding a 1:1 debt-to-equity ratio as non-deductible.
-5. **IGTF**: Default to assuming the tax applies at applicable rates until the client produces an Official Gazette decree confirming full elimination or their SENIAT-confirmed "special taxpayer" exemption.
-6. **SEZ incentives**: Treat incentives as unavailable until the client produces Resolution 015-25 certification from the Ministry of Finance.
-7. **Export drawback**: Per PwC (January 2026), the customs duty drawback program is "not currently being applied in practice." Do not rely on it in a planning scenario without current confirmation.
+A sole trader and a company are different taxpayers. Apply art. 8/50 to the individual and art. 9/52 to a company limited by shares or assimilated entity. Partnerships, communities and consortia within art. 10 generally compute at entity level but income tax is collected from members, subject to that article's mining-royalty exception and formal/joint-liability rules. Do not call every small company transparent. [LISLR arts. 7-10](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=6).
 
-## Section 4 — Refusal Catalogue
+### Scope statement and handoffs
 
-**Refusal Catalogue**
+The scope includes the old Guide's ten planning levers: personal deductions; losses; legal form; special economic zones; treaty/distribution relief; finance; LOCTI; municipal taxes; IVA; and employment contributions. It also retains cryptocurrency, anti-drug/sports/high-net-wealth contributions, sector taxes, ordinary/special filing calendars, record retention, reusable prompts and working-paper controls. A topic without verified current law is recorded as unconfirmed, never silently treated as inapplicable.
 
-| Scenario | Reason |
-| --- | --- |
-| Petroleum sector ISLR structuring (post-January 2026 Hydrocarbons Law Reform) | 180-day transition period ongoing; regime highly fact-specific; requires engagement with Ministry of Hydrocarbons |
-| Transfer pricing documentation preparation | Requires functional analysis, benchmark study, and TP specialist sign-off |
-| APAs (unilateral or bilateral) | Require SENIAT negotiation; outside automated skill scope |
-| Suspected ISLR evasion or undeclared prior years | Regularization requires specialist; criminal exposure under COT Art. 119 |
-| Cryptocurrency income with no booking records | Cannot compute ISLR without market-value records at receipt date; instruct client to reconstruct records first |
-| Special taxpayer (sujeto pasivo especial) calendar compliance | Filing windows are taxpayer-specific under SNAT/2025/000091; do not compute deadlines without the client's specific calendar from SENIAT |
-| Anti-drug, sports, or high-net-wealth (IMPAE) contribution calculations | These require verified accounting profit figures; do not estimate without audited financials |
-| Mixed-company or PSA petroleum contracts | Highly negotiated; outside skill scope |
+Load [individual income tax](venezuela-income-tax.md), [ordinary company tax](venezuela-corporate-tax.md), [IVA](venezuela-iva.md), [social contributions](venezuela-social-contributions.md) and [payroll](venezuela-payroll.md) for their respective computations, checking each file's date and explicit gaps. Detailed transfer-pricing documentation, treaty articles and specialist calculations require the relevant dedicated Guide and underlying law. This file supplies the comparison method and statutory ISLR decisions; it does not assert complete 2026 country coverage.
 
-- **Petroleum sector ISLR structuring (post-January 2026 Hydrocarbons Law Reform)** — 180-day transition period ongoing; regime highly fact-specific; requires engagement with Ministry of Hydrocarbons
-- **Transfer pricing documentation preparation** — Requires functional analysis, benchmark study, and TP specialist sign-off
-- **APAs (unilateral or bilateral)** — Require SENIAT negotiation; outside automated skill scope
-- **Suspected ISLR evasion or undeclared prior years** — Regularization requires specialist; criminal exposure under COT Art. 119
-- **Cryptocurrency income with no booking records** — Cannot compute ISLR without market-value records at receipt date; instruct client to reconstruct records first
-- **Special taxpayer (sujeto pasivo especial) calendar compliance** — Filing windows are taxpayer-specific under SNAT/2025/000091; do not compute deadlines without the client's specific calendar from SENIAT
-- **Anti-drug, sports, or high-net-wealth (IMPAE) contribution calculations** — These require verified accounting profit figures; do not estimate without audited financials
-- **Mixed-company or PSA petroleum contracts** — Highly negotiated; outside skill scope
+**AUDIT FLASH POINT**: artificial forms are not a planning safe harbour. COT art. 16 permits the administration, through its prescribed examination/determination procedure, to disregard companies, contracts or other legal forms manifestly inappropriate to the economic reality pursued when they reduce tax obligations. Document the commercial transaction and beneficial parties, not just the tax saving. A purportedly conservative high-tax default can also be wrong: compute the rule that actually applies or stop the affected calculation. [COT art. 16](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=4).
 
-## Section 5 — Major Optimization Lever 1: Desgravamen Único vs. Itemized Deductions
+## Rates, bands and thresholds
 
-### Mechanism
+All amounts below are statutory tax units (U.T.), unless another unit is expressly named. Apply the annual UT in force at fiscal close; for a nonannual tax period COT art. 3 uses the UT in force at the beginning. This does not authorize using UT for municipal rates or employment benefits. No current bolívar conversion is supplied. [COT art. 3, third paragraph](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=2).
 
-- **Desgravamen único vs. itemized** — Venezuelan ISLR Law (Art. 60 and 61) allows individuals to deduct one of two mutually exclusive sets of personal deductions before applying Tarifa No. 1: - **Desgravamen único (standard):** 774 UT per year. No documentation required. - **Desgravamen detallado (itemized):** Sum of qualifying expenses actually paid to Venezuelan-domiciled entities.  _(ISLR Law Art. 60 and 61)_
+| Item | Amount and conditions | Official source |
+|---|---|---|
+| Resident individual Tarifa 1 | 6% on first 1,000 U.T.; individual/asimilated art. 8 taxpayer outside a separate regime | LISLR arts. 8, 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Individual second band | 9% on portion over 1,000 through 1,500 U.T. | LISLR art. 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Individual third band | 12% on portion over 1,500 through 2,000 U.T. | LISLR art. 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Individual fourth band | 16% on portion over 2,000 through 2,500 U.T. | LISLR art. 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Individual fifth band | 20% on portion over 2,500 through 3,000 U.T. | LISLR art. 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Individual sixth band | 24% on portion over 3,000 through 4,000 U.T. | LISLR art. 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Individual seventh band | 29% on portion over 4,000 through 6,000 U.T. | LISLR art. 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Individual top band | 34% on portion over 6,000 U.T.; non-resident individuals have the separate 34% rule on their statutory enrichment, not these resident bands | LISLR art. 50, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Ordinary company Tarifa 2 | 15% first 2,000 U.T.; 22% portion over 2,000 through 3,000; 34% excess over 3,000; art. 9 taxpayers outside special regimes | LISLR arts. 9, 52, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Domestic financial/insurance activity | 40% proportional tax on specified banking, financial, insurance/reinsurance net enrichment of domiciled legal persons/entities; not ordinary Tarifa 2 | LISLR art. 52, first paragraph, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Sector Tarifa 3 | The statutory text sets 50% for art. 11 activities and 60% for art. 12 mining royalties/participations; taxpayer, activity and source determine applicability. A complete current hydrocarbons computation requires the unconfirmed sector measures | LISLR arts. 11-12, 53, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Standard personal allowance | 774 U.T. for resident individuals opting out of art. 57 itemized deductions; do not combine the methods | LISLR art. 58, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Principal-home loan interest | Actual qualifying payments, capped at 1,000 U.T. for the tax year; art. 57 conditions and no double deduction apply | LISLR art. 57(4), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Permanent-home rent | Actual qualifying payments, capped at 800 U.T. for the tax year; establish the actual housing facts under art. 57 | LISLR art. 57(4), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Personal tax rebate | 10 U.T. for resident individual; additional 10 U.T. for qualifying spouse and each eligible dependant, with separate-return/shared-support conditions | LISLR arts. 59-60, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Operating-loss use | Next three periods after the loss period; no more than 25% of matching-source enrichment in each; keep territorial and foreign loss pools separate | LISLR arts. 4, 55, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Ordinary taxable dividend | 34% on the dividend portion taxable under arts. 64-68; full withholding on payment or book credit. Sector rates and stock dividends have separate rules | LISLR arts. 64-73, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=15 |
+| Resident individual filing trigger | Net annual global enrichment over 1,000 U.T. OR gross income over 1,500 U.T.; exclusively primary agricultural/livestock/fishing/fish-farming activity uses gross income over 2,625 U.T. | LISLR art. 77, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16 |
+| Entity annual declaration | Companies, assimilated entities and the other identified art. 77 entities declare enrichment/loss regardless of amount; non-resident individuals separately declare Venezuelan enrichment/loss regardless of amount | LISLR arts. 77, 79, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16 |
+| Estimated declaration enabling threshold | Prior-year net enrichment over 1,500 U.T. permits prescribed category-based estimated-return requirements; it is not a complete current calendar or universal liability rule | LISLR art. 80, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=17 |
 
-### Itemized Deduction Categories and Limits
+For a mechanical cross-check only, the marginal Tarifa 1 bands produce fixed subtraction amounts of **0, 30, 75, 155, 255, 375, 575 and 875 U.T.** respectively; Tarifa 2 produces **0, 140 and 500 U.T.** These are arithmetic derived from the bands, not additional statutory deductions. For example, at the start of the second company band, tax is 300 U.T., so `0.22 × 2,000 - 300 = 140`. Do not subtract both a fixed subtraction and the lower-band tax. [Derived from LISLR arts. 50, 52](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
 
-**Itemized Deduction Categories and Limits**
+## The base
 
-| Category | Annual Limit | Notes |
-| --- | --- | --- |
-| Education (taxpayer + dependents under 26) | No cap | All levels; must be paid to registered Venezuelan institutions |
-| Life, surgery, hospitalization, maternity insurance premiums | No cap | Policy must be with Venezuelan-domiciled insurer |
-| Medical, dental, and hospitalization expenses | No cap | Must be medically necessary; receipts required |
-| Mortgage interest — primary residence | 1,000 UT = Bs. 43,000 | Only principal dwelling; Venezuelan lender |
-| Rent — primary residence | 800 UT = Bs. 34,400 | Only principal dwelling; Venezuelan lessor |
+### What this file is and the method, step by step
 
-### Eligibility
+1. **Fix the facts and baseline.** Establish legal form, domicile/residence, PE, activities, special-taxpayer status and fiscal year. Reconcile territorial and foreign receipts, costs and deductions. Compute the current-law baseline before considering a change; identify all other taxes, compliance costs and cash-flow effects separately. [LISLR arts. 1, 4, 6-10, 16](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
+2. **Apply actual income and expense timing.** Income is generally available when the producing transaction occurs. Art. 5 separately provides proportional recovery for credit assignments/discount operations recoverable over several annualities; credit income of its enumerated lenders/entities and rental/subrental income is available on accrual. Employment income and fortuitous gains become available when paid. An unpaid ordinary business invoice is not therefore automatically deferred. Under art. 32, deductions for transaction-realization income generally follow expenditure accrued in the tax year, subject to its express art. 27 exceptions; deductions for income available on payment generally require expenditure actually paid that year, without losing the applicable depreciation/casualty-loss deductions. A planned payment or invoice delay alone does not alter these operative conditions. [LISLR arts. 5, 27, 32](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=5).
+3. **Test each deduction before valuing it.** Ordinary business expenses must be non-cost, normal and necessary domestic expenditure to produce enrichment, subject to the law's exceptions. Maintain seller invoices and required RIF; do not deduct capital expenditure immediately simply to absorb a loss. Keep foreign expenses, exempt-income expenses and common costs properly allocated. For employment/remuneration costs comply with employer obligations; interest must finance income production and pass the finance restrictions below. [LISLR arts. 15, 23, 27, 89](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=8).
+4. **Apply each lever below to a genuine alternative.** Calculate the entire alternative liability with marginal bands, correct source and vintage. Show both tax and cash after compliance/financing costs; a deduction reduces the base while a credit reduces tax. Do not multiply an expense by the top rate if the alternative crosses a band. [LISLR arts. 2, 4, 50, 52, 55-59](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
+5. **Reconcile credits and delivery.** Match actual withholding/advances against annual tax under art. 83; an excess under art. 56 can be requested against later declarations, without prejudice to refund rights. Do not count the same tax as expense and credit. Deliver the comparison, evidence, deadline list and unresolved items for professional sign-off. [LISLR arts. 56, 83-85, 88](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-- **Eligibility for desgravamen** — Any individual resident filing under Tarifa No. 1. Non-residents are generally not entitled to these deductions.
+### Lever 1: standard versus itemized personal deductions
 
-### Quantified Savings
+Art. 57 applies to resident individuals. First construct the **eligible** itemized total; then compare it with art. 58's 774 U.T. alternative. The itemized categories have different territorial conditions, so a blanket rule excluding every foreign payee is inaccurate. [LISLR arts. 57-58](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-At the margin, each additional UT of deduction beyond the standard 774 UT saves tax at the marginal rate applicable to the individual's bracket.
+| Eligible item | Condition and documentation | Official source |
+|---|---|---|
+| Education | Payments to educational institutes in Venezuela for taxpayer/descendants not older than 25; the age limit does not apply to special education. Art. 57(1) supplies no separate monetary cap | LISLR art. 57(1), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Insurance | Premiums paid to companies domiciled in Venezuela for hospitalization, surgery and maternity; a stand-alone life policy is not listed in art. 57(2) | LISLR art. 57(2), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Medical, dental, hospitalization | Services provided in Venezuela to taxpayer and the qualifying persons in art. 59; art. 57(3) supplies no separate monetary cap | LISLR art. 57(3), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Housing | Actual principal-home acquisition-loan interest or permanent-home rent within the respective cap; establish the transaction, payment and dwelling rather than assuming all mortgage principal qualifies | LISLR art. 57(4), https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Common gates | Paid within tax year, supporting receipts with recipient RIF, no cost/expense double count, no reimbursable employer/contractor/insurer amounts; divide shared education/insurance expenditure between contributors | LISLR art. 57, first/second paragraphs, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
+| Official-service exception | The listed diplomatic/consular and other public/state representatives' expenses abroad during official duties are treated as domestic for these deductions | LISLR art. 57, third paragraph, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14 |
 
-Example: An individual in the 24% bracket (income 3,000–4,000 UT range) who itemizes Bs. 50,000 in qualifying expenses vs. using the 774 UT standard (= Bs. 33,282) gains an extra deduction of Bs. 16,718 (= ~389 UT), saving:
+The itemized method is not automatically better merely because a client has many receipts. Exclude ineligible life insurance, reimbursement claims, business-deducted amounts and unsupported payments, apply housing limits, then compare both final taxes. A deduction cannot create a personal rebate or a loss entitlement that the law does not supply. Apply art. 59's personal/family rebates separately. Education's descendant age condition in art. 57 is not the same as the dependant-rebate test. [LISLR arts. 55, 57-60](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-389 UT × 24% × Bs. 43 = approximately **Bs. 4,012 in ISLR savings** — but confirm exact UT value first.
+For rebates, art. 59 allows the taxpayer's own 10 U.T., spouse not separated as to property and eligible direct ascendants/descendants resident in Venezuela. Adult descendants qualify only if incapacitated for work or studying and younger than 25. Separate spouse declarations remove the spouse rebate and only one may claim family charges; multiple supporters divide the dependant rebate. Its official-service exception relaxes the residence condition for specified relatives. Spousal aggregation/separate-return treatment must first be determined under arts. 54/78; do not duplicate deductions or rebates across returns. [LISLR arts. 54, 59, 78](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-### Decision Rule
+**Decision:** if eligible itemized total exceeds 774 U.T., itemizing generally lowers the ordinary base; otherwise the standard allowance is at least as large. Run both complete returns where separate-regime income or joint-filing facts make a simple comparison incomplete. Retain the decision and evidence annually; there is no current bolívar threshold in this Guide.
 
-- **Decision rule for itemizing** — Sum all qualifying itemized expenses. If the total exceeds Bs. 33,282 (774 UT × Bs. 43), itemize. Otherwise, use the standard deduction. This calculation must be performed fresh each year because the UT value changes.
+### Lever 2: preserve and use genuine losses
 
-### Source
+Separate Venezuelan and foreign operating losses. Use each only against same-source enrichment within the next three periods after the loss arose, at no more than 25% of that period's enrichment. A 2023 operating loss can therefore be eligible in 2024, 2025 **and 2026**; 2026 is not excluded merely because it is the fourth calendar label in an inclusive list. The law provides forward use, not carryback. [LISLR arts. 4, 55](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-PwC Worldwide Tax Summaries — Venezuela Individual, Deductions (reviewed January 2026). Lstributos.com (2025 brackets). Naymaconsultores (2025 filing guidance).
+Forecast actual expected income by source and vintage before a loss expires. Genuine commercial activity may change the projection; do not shift recognition contrary to arts. 5/32, invent sales, create artificial losses or characterize an expired loss as current. Uncompensated net inflation losses cannot carry forward under art. 181 and are not ordinary operating losses. Banks, financial/insurance/reinsurance businesses and designated special taxpayers are excluded from the statutory inflation-adjustment system under art. 171. [LISLR arts. 5, 32, 55, 171, 181](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=26); [COT art. 16](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=4).
 
-## Section 6 — Major Optimization Lever 2: Loss Carryforward Planning
+Record vintage, source, original amount, previous use, balance, each remaining eligible period and projected cap. Convert real results using the legally applicable measurement evidence; the illustrations below do not assume that a nominal bolívar loss changes just because UT changes. Current inflation implementation and the grammatically incomplete foreign-currency adjustment sentence in printed art. 186 remain unconfirmed.
 
-### Mechanism
+### Lever 3: compare legal forms, not headline rates
 
-- **Loss carryforward mechanism** — ISLR Law permits carrying forward trade/business losses for up to **3 years**. In any single carryforward year, losses applied may not exceed **25% of that year's taxable income**. No carryback is permitted.
+Compute individual and company tax separately on the actual legally attributed bases. A company cannot use the resident individual's 774 U.T. allowance or personal rebates. Nor do the individual and company rates suddenly become equal once business profit exceeds 3,000 or 4,000 U.T.: those are different marginal bands, and lower bands remain relevant. The numeric comparison below demonstrates this. A company may also have different deductible costs, compliance burdens and distribution consequences. [LISLR arts. 8-10, 50, 52, 57-59](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=6).
 
-### Eligibility
+| Alternative | What must be compared | Official source |
+|---|---|---|
+| Genuine individual business | Individual net enrichment, eligible personal deductions, rebates and applicable Tarifa 1; do not misclassify employment as a business | LISLR arts. 8, 27, 50, 57-59, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
+| Ordinary company retaining profit | Company tax under Tarifa 2; future distribution exposure is a separate computation and retention does not by itself erase tax on an already taxable distribution | LISLR arts. 9, 52, 64-71, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=15 |
+| Company distributing profit | Company tax plus only the properly allocated taxable dividend; compare investor-level consequences and any actual in-force treaty, not an assumed second charge on all after-tax profit | LISLR arts. 3, 64-73, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=15 |
+| Member-taxed partnership/consortium | Entity enrichment/control duties plus member tax and joint liability under art. 10; not automatic ordinary-company taxation | LISLR arts. 7, 10, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=6 |
+| Financial or extractive activity | Establish the actual special taxpayer/activity regime first; incorporation is not an election to avoid a statutory sector rate | LISLR arts. 11-12, 52-53, https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13 |
 
-- **Loss carryforward eligibility** — - Individuals and companies subject to Tarifa No. 1 or Tarifa No. 2 respectively. - Losses must arise from legitimate commercial activity. - Foreign-source losses may only offset foreign-source income. - **Monetary correction (inflation adjustment) losses cannot be carried forward at all.**
+**Decision:** recommend a legal form only after modeling actual commercial needs, owner cash requirements, costs and distributions. The old rule that a company is beneficial only with a foreign treaty holding company is not supported by these statutes. Do not establish an artificial conduit to obtain an assumed treaty rate. [LISLR art. 3](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4); [COT art. 16](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=4).
 
-### Quantified Savings
+### Lever 4: special economic zones and incentives
 
-**Loss carryforward quantified savings**
+Preserve La Guaira, military Aragua, Paraguaná and Isla La Tortuga as distinct review cases. Obtain the actual zone decree, authorized activities, geographic perimeter, agreement/admission evidence, current implementing resolution and any annual cap before computing an incentive. Distinguish an exemption from a credit or reimbursement: a future refund is not cash already available to meet a filing/payment obligation. No zone-specific refund rate, duration, export ratio or certification procedure was established from primary text for this rewrite; each is listed in Sources.
 
-| Year | Taxable Income before Loss | Loss Applied (max 25%) | Taxable Income after Loss | Tax at 34% | Tax Saving (vs. no loss) |
-| --- | --- | --- | --- | --- | --- |
-| Y2 | Bs. 172,000 (4,000 UT) | Bs. 43,000 (1,000 UT) | Bs. 129,000 (3,000 UT) | Bs. 43,860 | Bs. 14,620 |
-| Y3 | Bs. 172,000 (4,000 UT) | Bs. 43,000 (1,000 UT) | Bs. 129,000 (3,000 UT) | Bs. 43,860 | Bs. 14,620 |
-| Y4 | Bs. 172,000 (4,000 UT) | Bs. 43,000 (1,000 UT) | Bs. 129,000 (3,000 UT) | Bs. 43,860 | Bs. 14,620 |
-| Remaining unabsorbed | Bs. 43,000 (1,000 UT) | Expired — 3-year limit reached | — | — | Lost |
+LISLR art. 195 permits presidential category/regional exonerations under specified conditions, periods and controls, and ties enjoyment to compliance with the law, regulation and actual decree. That enabling provision does **not** itself prove eligibility for a named zone. The COT reserves exemptions/rebates and authorization of benefits to law. Use a baseline without an assumed incentive and a separately labeled pending alternative; do not report the pending alternative as a current saving. [LISLR art. 195](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=29); [COT art. 3](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=2).
 
-### Planning Implication
+The old Tortuga manufacturing feasibility scenario remains a required workpaper: project tax payable, the legally verified incentive cash flows, setup/running costs and expiry/clawback risks. Its old asserted duration and full-refund computation are unconfirmed and cannot support a recommendation. Export customs drawback is a separate issue from a zone reimbursement; neither availability nor non-operation is inferred from commentary.
 
-- **Loss carryforward planning implication** — Plan income recognition so that profitable years fall within 3 years of the loss year. Do not generate losses in Year N if profitability is not expected until Year N+4 — the loss will expire.
+### Lever 5: distributions and treaty relief
 
-### Source
+Start with the dividend base, not the rate. Art. 64 taxes dividends originating in the payer's net income above taxed fiscal net income; art. 65 addresses untaxed, nonexempt/nonexonerated net income, paid or credited in cash or kind, including the specified own-share capital increases. Under art. 66, reconcile net income, taxed fiscal income and relevant dividends received. Art. 67 allocates distributions first to the preceding period's taxed fiscal income, then its qualifying already-taxed received dividends, then its untaxed excess. Art. 68 works back through earlier profit years once that period's profits are exhausted. A statement that all dividends suffer an additional charge is wrong. [LISLR arts. 64-68](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=15).
 
-PwC Worldwide Tax Summaries — Venezuela Corporate, Deductions (January 2026).
+Ordinary taxable dividend enrichment is subject to 34% with full withholding on payment/book credit. Art. 71 separately addresses stock-dividend advance payment and the special sector dividend rates; art. 72 requires proration where payer income was subject to different tariffs. Credits, deposits and advances to shareholders can be deemed dividends under art. 70, subject to its actual interest-and-cash-repayment exception. A loan label or a stock dividend is therefore not an automatic extraction exemption. [LISLR arts. 70-73](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16).
 
-## Section 7 — Major Optimization Lever 3: Individual vs. Corporate Rate Arbitrage
+For a foreign company/PE, art. 69's deemed distribution is a different rule. Its reinvestment exception requires complete domestic reinvestment of the identified difference, retention for at least five years and annual external-auditor certification with the return. Do not apply this branch exception to every domestic company's retained profits. Foreign dividends under art. 66, first paragraph, have separate proportional taxation and an art. 2 foreign-tax-credit interaction. [LISLR arts. 2, 66, 69](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=15).
 
-### Tarifa No. 1 — Individual Rates (2025)
+For Spain, United States, Mexico, France, Canada and Brazil, preserve the old treaty-review scenarios but quote **no unconfirmed rate or ownership threshold**. Art. 3 requires an in-force treaty, proven residence and compliance with that treaty; foreign residence certificates require official translation and legalization. Read the actual dividend definition, beneficial-owner rule if present, ownership conditions, anti-abuse provisions, effective dates and claim procedure before calculating relief. The number of treaty partners is also unconfirmed. A generic domestic anti-abuse rule does not establish that every treaty contains the same principal-purpose test. [LISLR art. 3](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4); [COT art. 16](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=4).
 
-**Tarifa No. 1 — Individual Rates (2025)**
+### Lever 6: related-party financing and thin capitalization
 
-| Taxable Income (UT) | Taxable Income (Bs., at UT=43) | Rate | Fixed Deduction (UT) | Fixed Deduction (Bs.) |
-| --- | --- | --- | --- | --- |
-| 0 – 1,000 | 0 – 43,000 | 6% | 0 | 0 |
-| 1,000 – 1,500 | 43,000 – 64,500 | 9% | 30 | 1,290 |
-| 1,500 – 2,000 | 64,500 – 86,000 | 12% | 75 | 3,225 |
-| 2,000 – 2,500 | 86,000 – 107,500 | 16% | 155 | 6,665 |
-| 2,500 – 3,000 | 107,500 – 129,000 | 20% | 255 | 10,965 |
-| 3,000 – 4,000 | 129,000 – 172,000 | 24% | 375 | 16,125 |
-| 4,000 – 6,000 | 172,000 – 258,000 | 29% | 575 | 24,725 |
-| Over 6,000 | Over 258,000 | 34% | 875 | 37,625 |
+The operative provision is **LISLR art. 116**, not art. 38. First establish genuine borrowing used to produce income under art. 27(2), arm's-length terms under art. 109 and direct/indirect relatedness under arts. 114-115. Then compute the art. 116 restriction using **both independent and related debt**. Replacing a related loan with bank debt does not automatically restore capacity: independent debt consumes equity headroom. Interposed unrelated persons do not exclude indirect related transactions. [LISLR arts. 27(2), 109, 114-116](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=20).
 
-### Tarifa No. 2 — Corporate Rates (2025)
+- Equity average `E`: opening plus closing net equity divided by two, before that year's inflation adjustment and excluding that year's profit/loss.
+- Debt averages: each month's last-day balances summed and divided by months in the fiscal year; omit that month's accrued interest from its last-day balance.
+- Let `Dind` be average independent debt, `Drel` average direct/indirect related debt, and `Irel` the otherwise qualifying related interest. If `Drel` is positive, headroom is `max(E - Dind, 0)`; the deductible fraction is at most `min(headroom / Drel, 1)`. No positive headroom supplies no capacity under that formula. Reconcile the actual statutory computation and classification before accepting the result.
+- Interest allowed by the ratio still needs all other deduction/arm's-length conditions. Art. 116 can treat nonmarket related debt as equity even when total debt does not exceed equity; consider ability to obtain the loan independently, debt level, amount, rate and terms.
 
-**Tarifa No. 2 — Corporate Rates (2025)**
+These are executable conditions from [LISLR art. 116](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=20). Its equity recharacterization and any resulting distribution effects require professional review rather than a mechanical ratio-only recommendation.
 
-| Taxable Income (UT) | Taxable Income (Bs., at UT=43) | Rate | Fixed Deduction (UT) | Fixed Deduction (Bs.) |
-| --- | --- | --- | --- | --- |
-| 0 – 2,000 | 0 – 86,000 | 15% | 0 | 0 |
-| 2,000 – 3,000 | 86,000 – 129,000 | 22% | 140 | 6,020 |
-| Over 3,000 | Over 129,000 | 34% | 500 | 21,500 |
+**Decision:** compare a genuine equity injection, loan capitalization, repayment, or commercial external borrowing using the **actual dates and annual averaging**. A last-day capitalization does not retroactively alter preceding month-end debt or instantly make all annual interest deductible. Include financing cost, owner liquidity, legal formalities and other tax effects. The former interest-only savings examples are recomputed below under explicit all-year assumptions.
 
-### Special Sector Flat Rates
+### Lever 7: LOCTI sector classification
 
-**Special Sector Flat Rates**
+Retain the separate gambling/bingo/casino, alcohol/tobacco, hydrocarbons/mining, other-activity and multiple-activity cases. Do not select a favorable activity label merely to lower a contribution. Obtain the actual current LOCTI text, threshold, measurement period, highest-currency mechanism, mixed-activity rule and competent collection instructions. The old monthly threshold, rate matrix, asserted petroleum exemption and SIDCAI payment procedure have not been confirmed from primary law for this version and supply no numerical saving. The gambling-versus-other example is retained as a comparison template requiring verified classification/base/rates before computation. A contribution cannot be assumed to be an ISLR credit; test its actual statute and the paid-tax deduction gate separately. [LISLR art. 27(3)](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=9).
 
-| Sector | Flat Rate |
-| --- | --- |
-| Petroleum exploitation, refining, transport, export of hydrocarbons | 50% |
-| Banking and insurance | 40% |
+### Lever 8: municipal ISAE documentation and deduction
 
-### Optimization Logic
+LISLR art. 27(3) allows taxes **paid** by reason of economic activities or income-producing property, excluding the taxes imposed by LISLR. Check the ordinary normal/necessary rule, records and actual payment. The income-tax consequence of a valid municipal levy is a **deduction**, not a credit equal to the levy. Compute the full before/after Tarifa 2 tax; use a marginal-rate multiplication only when the deduction remains within that band. [LISLR arts. 27(3), 32, 52, 89](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=9).
 
-- **Individual vs corporate rate arbitrage logic** — For income levels below ~2,000 UT (Bs. 86,000), the individual progressive rate (6%–12%) is lower than the corporate minimum rate of 15%. Sole-trader structures are more efficient at low income. Once income exceeds ~4,000 UT (Bs. 172,000), individual and corporate rates converge at 34%, and corporate structuring offers no rate advantage at the entity level — but dividend distribution then triggers an additional 34% dividend WHT, creating economic double taxation unless a treaty applies. **Key rule of thumb:** Corporate structuring is only tax-efficient in Venezuela if profits can be retained in the company (avoiding dividend tax) or if a treaty holding structure reduces the dividend WHT to 0–10%.
+Keep municipality, establishment/activity, gross-income allocation, period, current ordinance/tariff, notices, receipts and reconciliation separately. For a business in three municipalities, first establish each jurisdiction's legal allocation and charge under its actual ordinance, avoid duplicate receipts, then aggregate only qualifying paid amounts for the income-tax workpaper. No general national municipal-rate range, UT minimum or negotiable classification is asserted. Those old claims and any national harmonization limits are unconfirmed; a municipal deduction does not establish that the underlying levy was correctly assessed.
 
-### Source
+### Lever 9: IVA, imports, exports and currency settlement
 
-PwC Worldwide Tax Summaries — Venezuela Corporate and Individual (January 2026). icalculator.com/ve income-tax-rates.
+Retain ordinary/reduced/luxury categories, exported goods and exported services, imported basic goods and designated-importer relief, foreign-currency/crypto payment, input credits, withholding and cash-flow planning as separate questions. Read [IVA](venezuela-iva.md) and the actual current VAT law/rate decree, invoice and withholding instructions before assigning a rate. Foreign receipt of an invoice or payment alone does not prove a qualifying exported service; classify actual service/use and statutory conditions. Do not combine a possible IVA currency surcharge with IGTF as if they were the same tax.
 
-## Section 8 — Major Optimization Lever 4: Special Economic Zone (SEZ) Incentives
+The old Guide contradicts itself on exported services and treats an authorized surcharge range as an operative universal payment tax. Its current operative IVA rate/decree combinations, luxury categories/value tests, import measures and currency/crypto treatment are explicitly unconfirmed here. This workflow does not recommend bolívar settlement or a nominal export structure on an assumed tax saving. Compare only legally verified alternatives including output tax, eligible input credit, withholding timing and actual recovery delays; no numerical IVA saving is supplied in this file.
 
-### Mechanism
+### Lever 10: employment contributions and genuine classification
 
-**Mechanism**
+Keep IVSS risk class, employer/employee base and cap, FAOV, historical FAV/LPH, INCES ordinary wages versus utilidades, unemployment/employment regime, LOPCYMAT occupational-risk obligations and the special pension contribution as distinct workpapers. Obtain the current primary enactment, registration/classification decision, salary components, minimum-wage evidence, contribution rates/caps and calendar. The old alternative housing regime must not be charged in addition merely because two labels appeared in a table. Do not assume LOPCYMAT has a universal zero contribution or that INPSASEL can lower an IVSS rate on request.
 
-| SEZ | ISLR Refund | Duration | Export Requirement from Year 7 |
-| --- | --- | --- | --- |
-| La Guaira State SEZ | Up to 100% | First 4 fiscal years | ≥ 60% of production exported |
-| Aragua Military SEZ | Up to 100% | First 4 fiscal years | ≥ 60% of production exported |
-| Paraguaná Peninsula SEZ | Up to 100% | First 4 fiscal years | ≥ 60% of production exported |
-| Tortuga Island SEZ | Up to 100% | First 20 fiscal years | ≥ 60% of production exported |
+Safety improvements are a genuine commercial consideration, but a reduced contribution requires the actual competent authority/classification rule. Distinguish payroll tax, employee deduction and employer cost, and model any allowable cost deduction under LISLR only after employer-compliance conditions are satisfied. A smaller stated salary or a benefit called a bonus does not prove exclusion from tax or social-insurance bases. The current wage/bonus interpretation, contribution rules and dates not confirmed here are retained in Sources. [LISLR art. 27(1)](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=9).
 
-### Eligibility
+The old safety example's claimed combined saving is unsupported and arithmetically double-counted its single IVSS difference. Retain a line for each independently evidenced actual saving; do not sum an unverified second saving. No payroll-saving amount is represented as current.
 
-- **SEZ eligibility** — Company must physically operate within the designated SEZ and obtain certification under Resolution 015-25 (May 9, 2025). Maximum total incentives are capped annually by the Ministry of Finance (cap published within 15 business days after the ISLR filing period).
+### Other old cases: cryptocurrency, special sectors and additional contributions
 
-### Quantified Savings
+Money **or in-kind** annual net available enrichment falls within LISLR art. 1; art. 16 includes regular/incidental receipts and sales/services. Therefore crypto receipts cannot be ignored merely because they were not paid in bolívares. Reconstruct wallet/exchange statements, dates, transaction purpose, invoices, costs, conversion evidence and counterparties. Distinguish service consideration, trading, mining, transfers between own wallets and investment disposal before applying source, availability and cost rules. No crypto-specific valuation safe harbour, blanket market-value-at-receipt rule or year-end revaluation mandate was established here. Art. 186's printed foreign-currency adjustment sentence is incomplete and is not supplied with an invented operative verb. [LISLR arts. 1, 5, 16, 23, 186](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
 
-A manufacturing company earning 5,000 UT (Bs. 215,000) of taxable income per year would ordinarily pay:
+Petroleum/hydrocarbons, mining royalties, banks/insurance, mixed companies and production-sharing arrangements remain specialist cases. The statutory sector framework above does not confirm the old alleged later hydrocarbons reform, transition period or contribution exemptions. Anti-drug, sport and high-net-wealth charges also remain named gaps; accounting profit alone does not prove their liability/base. Use actual applicable enactments and professional review, not unsupported generic percentages.
 
-Tarifa No. 2: (Bs. 215,000 × 34%) − Bs. 21,500 = Bs. 73,100 − Bs. 21,500 = **Bs. 51,600 in ISLR annually**.
+## Deadlines and filing
 
-Under a 100% SEZ refund: ISLR paid = Bs. 51,600; ISLR refunded = Bs. 51,600; **Net ISLR cost = Bs. 0** for the qualifying period.
+### Filing requirements and statutory duties
 
-Over 4 years: **Bs. 206,400 in cumulative ISLR savings** (at 2025 UT; amounts will change as UT adjusts).
+LISLR art. 77 supplies the declaration populations and strict **over** thresholds in the rates table. Do not replace them with a single net-income threshold using greater-than-or-equal. Art. 79 separately covers non-resident individual declarations. Companies and the other named entities declare even losses. These statutory tests are distinct from the amount of tax remaining after deductions/credits. [LISLR arts. 77-79](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16).
 
-Note: These are structured as reimbursements/drawbacks, not direct exemptions. The company must file ISLR, pay the tax, then apply for the refund. Cash-flow implications must be planned.
+Art. 81 refers to the annual taxable period and leaves exceptional shorter-period cases to regulation. Arts. 80/82/85 leave implementing conditions and timing for estimates, self-assessment and payments. A calendar-year assumption cannot establish every taxpayer's fiscal year, March deadline, installment sequence or special-taxpayer calendar. Those old numerical dates remain unconfirmed here. [LISLR arts. 80-85](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=17).
 
-### Source
+### Filing and payment sequence for the planning brief
 
-VATupdate — SEZs tax incentives (September 2023). Lexology — SEZ implementing rules (Resolution 015-25, May 2025). PwC — Tax Credits and Incentives (January 2026). PwC explicitly notes export drawback is "not currently being applied in practice" — SEZ refunds are a distinct mechanism; confirm status with SENIAT before relying on them.
+1. Confirm RIF/representative, actual fiscal period, source/entity classification and special-taxpayer designation from records; RIF registration is addressed by art. 96. Obtain current official SENIAT instructions and taxpayer-specific notices for definitive/estimated returns and applicable withholdings. [LISLR arts. 77-85, 96](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16).
+2. Complete the tax reconciliation and both planning alternatives before using the live form. Document income/expense timing, personal deduction election, rebates, loss vintages, financing, distributions, tax credits and other-tax effects. [LISLR arts. 2, 4-5, 27, 32, 50-59, 64-73, 83, 116](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf).
+3. Map the approved calculation to the **actual authorized return and fields**, preserving computation/input evidence. Portal menus, form numbers, box labels, attachments, payment references and installment elections are not confirmed here; do not fabricate an electronic filing walkthrough. [LISLR arts. 77, 82, 85](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=16).
+4. Preserve filed return, acknowledgement, actual payment evidence, withholding certificates, excess-credit requests and signed working papers. A planning computation is not proof of filing/payment. [LISLR arts. 56, 83-85, 88-89](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-## Section 9 — Major Optimization Lever 5: Treaty Withholding Rate Reduction on Dividends
+**Access record:** official gazette facsimiles on Venezuelan public-body hosts opened successfully. Direct SENIAT/return-portal attempts for current administrative instructions did not yield readable text; ordinary-browser/archive attempts documented in Sources did not establish the missing rules. This is a decision Guide with a partial filing handoff, not a verified current portal manual.
 
-### Mechanism
+### Annual planning calendar without invented statutory dates
 
-- **Domestic dividend withholding rate** — 34% flat  _(ISLR Law)_
+| Stage | Action and evidence to retain |
+|---|---|
+| Start of the actual fiscal period | Confirm taxpayer classification, opening loss vintages, opening equity and current official calendars; assign an owner to every unconfirmed item |
+| Each accounting close | Reconcile realized/accrued/paid income and expenses; preserve debt month-end balances, payroll records, municipal receipts, IVA ledgers and contribution evidence |
+| Before a genuine investment/expense decision | Compare eligible personal expenditure or documented business cost with the baseline; check whether expense timing or a cap actually changes this year's tax |
+| Before a distribution or financing change | Reconcile profit-year tax pools, beneficial parties, treaty proof, debt averages and legal effective dates; do not assume a last-day entry repairs the entire year |
+| Before fiscal close | Project same-source loss absorption and expiry; determine UT evidence applicable at close and inflation eligibility; do not force income contrary to availability rules |
+| Before each verified filing/payment deadline | Finalize professional review, actual form mapping, credits and payment arrangements; preserve acknowledgement and payment evidence |
+| After filing | Reconcile actual amounts/credits, follow evidenced refund requests, preserve records and carry only still-eligible source/vintage balances |
 
-### Treaty Rates (Dividends) — Selected
+This calendar is a working-paper workflow. It replaces the old month-by-month presumed legal dates; it supplies no legal extension or installment concession.
 
-**Treaty Rates (Dividends) — Selected**
+### Retention is not a blanket five-year rule
 
-| Treaty Partner | Reduced WHT Rate | Notes |
-| --- | --- | --- |
-| Spain | 0–10% | 0% for qualifying corporate shareholders; 10% for others |
-| United States | 5–15% | 5% for ≥10% shareholding; 15% otherwise |
-| Mexico | 5% | Beneficial for intra-LatAm structures |
-| France | 0–15% | 0% in certain conditions; treaty contains anti-abuse provisions |
-| Canada | 10–15% | 10% for ≥25% shareholding; 15% otherwise |
-| Brazil | 10–15% | 10% for substantial holdings |
+COT art. 155(3) requires ordered records while the tax is not prescribed. Art. 55 generally specifies six years for its listed rights/actions; art. 56 extends specified cases to ten, including nonfiling, registration failures, foreign-linked facts and deficient accounting/retention. Starting dates, interruption and suspension require arts. 59-63. Do not destroy records simply a fixed number of years after a return, and preserve older records supporting an open loss or tax pool. Criminal limitation rules are separate. [COT arts. 55-63, 155](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=7).
 
-### Eligibility
+## Penalties and interest
 
-- **Treaty WHT eligibility conditions** — To access treaty WHT rates: 1. A qualifying holding company must be established in the treaty country. 2. The holding company must have genuine substance (management, employees, offices) to satisfy treaty anti-abuse provisions. 3. The payment must constitute "dividends" within the treaty definition. 4. Beneficial ownership must rest with a treaty-country resident (conduit structures disqualified).
+COT art. 91 uses the **official exchange rate of the highest-valued currency published by BCV at payment** for the fines expressed in that unit. It does not say to assume USD, euros or UT. Determine the actual applicable penalty and rate evidence before converting. [COT art. 91](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=11).
 
-### Quantified Savings
+For declarations, art. 103(1) covers nonfiling or delay over one year: a fine of 150 times that exchange-rate unit plus ten continuous days' closure where premises exist. Art. 103(3) covers incomplete declarations or delay up to and including one year: 100 times. Its other identified communications/format/substitute-return infringements carry 50 times; low-tax investment information has separate larger sanctions. Closure extends to all establishments/branches. Art. 108 increases pecuniary formal sanctions by 200% for designated special taxpayers, rather than making the total merely 200% of the base. Do not apply the annual-return provision automatically to a withholding offense. [COT arts. 103, 108](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=12).
 
-**Dividend treaty savings example**
+Late-payment interest arises automatically from the due date through extinguishment at **1.2 times** the applicable active bank rate for each relevant period, not a flat annual 1.2%. Art. 66 defines the reference as BCV's prior-month average for the six largest commercial/universal banks by deposits, excluding preferential portfolios, with publication/fallback rules. Actual monthly rates and balances are missing here, so no interest amount is supplied. Underassessment, evasion, withholding and failure to remit require their own facts and statutes; refer suspected fraud/regularization rather than inventing a universal penalty. [COT arts. 66, 109-124](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf#page=8).
 
-| Scenario | WHT Rate | WHT Amount | Net to Parent |
-| --- | --- | --- | --- |
-| No treaty (domestic) | 34% | Bs. 146,200 | Bs. 283,800 |
-| Via Spain holding co. | 10% | Bs. 43,000 | Bs. 387,000 |
-| Via Spain (0% tier) | 0% | Bs. 0 | Bs. 430,000 |
-| **Saving (Spain 0% vs. no treaty)** |  | **Bs. 146,200** |  |
+## Cross-border points
 
-### Source
+A legal alternative must preserve the source of each income and expense. Foreign operating losses cannot offset territorial enrichment. Art. 2 permits foreign income tax actually paid on included foreign enrichment to be credited, capped by Venezuelan global tax in the proportion foreign net enrichment bears to global net enrichment; separately proportional income uses its Venezuelan-item tax cap. Foreign tax is translated at its payment-date rate, distinct from art. 16's fiscal-year-average conversion of foreign gross income. [LISLR arts. 1-4, 16, 55](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=4).
 
-PwC Worldwide Tax Summaries — Venezuela Withholding Taxes (January 2026).
+Foreign-source business expenses require art. 27's normal/necessary test, compliant foreign documents identifying provider/vendor and domicile, transaction nature, date/amount and Spanish translation. Demonstrated PE transaction-purpose and management expenses have their own art. 27 rules and limits for head-office/group payments; foreign technical services available domestically have a separate limitation. Do not replace a disallowed fee with a nominal royalty or loan. [LISLR art. 27, fourteenth, sixteenth and seventeenth paragraphs](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=10).
 
-## Section 10 — Major Optimization Lever 6: Thin Capitalization Management
+Related-party transactions require arm's-length prices under art. 109, import/export methodology under art. 110 and indirect/interposed transactions under art. 115. Low-tax-jurisdiction counterparties raise art. 117's rebuttable presumption; low-tax investments under arts. 98-108 are a distinct regime needing current primary lists and facts. Treaty relief and dividend/branch questions follow the previous levers. Outbound withholding under art. 84 occurs on payment or book credit, whichever is earlier; art. 196 continues Decree 1.808 pending relevant providencias, but no current payment-code/rate table is confirmed here. [LISLR arts. 84, 98-117, 196](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=18).
 
-### Mechanism
+## Two worked examples that recompute
 
-- **Thin capitalization mechanism** — Venezuela has one of the world's most restrictive thin-capitalization rules. ISLR Law (Art. 38): if the **average total related-party debt** of an entity during the fiscal year exceeds its **average equity**, the excess debt is recharacterized as equity and the corresponding interest is **non-deductible** for ISLR. Ratio: **1:1 debt-to-equity** (compared to Canada 1.5:1, Germany 30%-of-EBITDA, OECD best practice).  _(ISLR Law Art. 38)_
+All examples are hypothetical. UT illustrations do not assert a current bolívar conversion. Bolívares used for the fixed nominal financing and municipal-cost illustrations are invented inputs, not statutory thresholds. Personal examples are final ordinary net enrichment before personal allowance, no special income, one resident taxpayer, no spouse/dependants, no credits except the stated personal rebate and no withholding. Statutory inputs come from LISLR arts. 27, 50, 52, 55, 57-59, 64-71 and 116 in the linked gazette. The full cases preserve and correct the old examples/tests.
 
-### Eligibility Scope
+### Case 1: itemizing wins, and the opposite decision
 
-- **Thin cap eligibility scope** — Applies to related-party debt. Third-party arm's-length debt is not explicitly subject to the thin-cap rule. However, SENIAT has challenged back-to-back loan arrangements that route third-party debt through a related party.
+A resident professional has 5,000 U.T. before personal allowance. Eligible paid medical/hospital costs are 1,000 U.T., eligible hospitalization/surgery insurance 200, eligible domestic education 300 and principal-home interest 900. Itemized total is 2,400 U.T.; ordinary base 2,600. Under standard allowance the base is 4,226. Tarifa 1 before the personal rebate is respectively 265 and 650.54 U.T.; after the same 10 U.T. rebate, 255 and 640.54. Itemizing saves 385.54 U.T. No life-insurance payment is included. [LISLR arts. 50, 57-59](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-### Quantified Savings
-
-A company with Bs. 200,000 (4,651 UT) in equity that borrows Bs. 300,000 (6,977 UT) from a related party at 12% annual interest:
-
-- Related-party debt: Bs. 300,000
-- Equity: Bs. 200,000
-- Excess debt: Bs. 100,000 (debt minus equity)
-- Non-deductible interest: Bs. 100,000 × 12% = **Bs. 12,000 of non-deductible interest**
-- Additional ISLR cost at 34%: Bs. 12,000 × 34% = **Bs. 4,080**
-
-If the company restructures to equity = debt = Bs. 250,000 (capitalizing Bs. 50,000 of the loan):
-- Remaining related-party debt: Bs. 250,000 = equity — within the 1:1 ratio
-- All interest now deductible
-- **Annual saving: Bs. 4,080 in ISLR**
-
-### Planning Actions
-
-- **Thin cap planning actions** — 1. Monitor the debt-to-equity ratio at the start of each fiscal year (rule applies to the annual average). 2. Capitalize related-party loans above the 1:1 threshold before year-end. 3. Replace excess related-party debt with third-party bank debt where commercially viable. 4. Do not use back-to-back loan structures where the economic lender is a related party.
-
-### Source
-
-PwC Worldwide Tax Summaries — Venezuela Group Taxation (January 2026).
-
-## Section 11 — Major Optimization Lever 7: LOCTI Contribution — Sector Classification
-
-### Mechanism
-
-- **LOCTI mechanism** — LOCTI (Ley Orgánica de Ciencia, Tecnología e Innovación, April 2022) imposes a monthly contribution on gross income. Rate depends on the company's activity classification.
-
-### Rate Table
-
-**LOCTI Rate Table**
-
-| Sector | LOCTI Rate | Base |
-| --- | --- | --- |
-| Bingos, casinos, alcohol, tobacco | 2% | Monthly gross income |
-| Hydrocarbons or mining | 1% | Monthly gross income |
-| All other activities | 0.5% | Monthly gross income |
-| Multi-activity companies | Highest applicable rate | Assessed on total gross income |
-
-### Quantified Savings
-
-**LOCTI misclassification savings example**
-
-| Classification | Rate | Annual LOCTI | Overpayment if misclassified |
-| --- | --- | --- | --- |
-| Incorrect: gambling | 2% | Bs. 200,000 | — |
-| Correct: other | 0.5% | Bs. 50,000 | **Bs. 150,000/year saved** |
-
-### Administration
-
-- **LOCTI administration** — LOCTI is paid monthly via the SIDCAI system administered by SENIAT (Administrative Ruling No. 015-004-2024, February 2024). This is a contribution, not an ISLR credit.  _(Administrative Ruling No. 015-004-2024, February 2024)_
-
-### Source
-
-PwC Worldwide Tax Summaries — Venezuela Corporate Other Taxes (January 2026). IBA Tax Country Report — Venezuela 2025. Baker McKenzie LOCTI bulletin (2024).
-
-## Section 12 — Major Optimization Lever 8: ISAE (Municipal Business Tax) Deductibility
-
-### Mechanism
-
-- **ISAE mechanism** — The Impuesto sobre Actividades Económicas (ISAE), also called Patente de Industria y Comercio, is levied by each Venezuelan municipality on gross income from economic activities within their jurisdiction. Legal basis: Ley Orgánica del Poder Público Municipal. Key features: - Rates vary by municipality and activity: general range **1% to 6.5%** of gross income. - Minimum taxable base: 20 UT (= Bs. 860 at 2025 UT). - Rates are set by each municipality's Ordenanza — there is no national cap. **ISLR interaction:** ISAE paid to municipalities is **deductible as an operating expense** against ISLR taxable income. This makes proper ISAE documentation and allocation critical for ISLR planning.  _(Ley Orgánica del Poder Público Municipal)_
-
-### Quantified Savings
-
-A company paying Bs. 300,000 in ISAE across multiple municipalities, operating in the 34% ISLR bracket:
-
-ISLR reduction: Bs. 300,000 × 34% = **Bs. 102,000 in annual ISLR savings** from properly deducting ISAE.
-
-If ISAE is not claimed: Bs. 102,000 of avoidable ISLR is paid unnecessarily.
-
-### Planning Actions
-
-- **ISAE planning actions** — 1. Maintain separate records of ISAE paid by municipality and period. 2. Ensure all ISAE payments are supported by official receipts (comprobantes municipales). 3. Review the activity classification in each municipality's tariff schedule annually — misclassification can result in overpayment (ISAE computed on gross income, not net, so errors are magnified). 4. Note that ISAE computed on gross income is a significant burden for low-margin businesses; negotiate favorable tariff classification during municipal business license renewal.
-
-### Source
-
-PwC Worldwide Tax Summaries — Venezuela Corporate Other Taxes (January 2026). Acceso a la Justicia — ISAE explainer.
-
-## Section 13 — Major Optimization Lever 9: VAT Rate Structuring
-
-### Rate Structure
-
-**VAT Rate Structure**
-
-| Category | Rate | Examples |
-| --- | --- | --- |
-| Standard | 16% | Most goods and services |
-| Reduced | 8% | Goats, sheep, minor livestock; refrigerated meats; shortening; professional services to government bodies; domestic air passenger transport; certain construction |
-| Luxury surcharge | +15% (total effective ~31%) | Vehicles ≥ USD 40,000; motorcycles ≥ USD 20,000; jewelry ≥ USD 300; restaurant/bar services; gaming machines |
-| Zero-rated | 0% | Exports of goods and services |
-| Foreign currency / crypto surcharge | 5–25% | Transactions paid in foreign currency, crypto, or non-Venezuelan crypto-assets (rate set by Executive) |
-
-### Key 2025 Change — Import Exemption Suspension
-
-- **Import exemption suspension and replacement exemption** — Presidential Decree No. 5,145 (June 30, 2025; effective July 5, 2025) **suspended** the VAT exemption on imports of basic foods, medicines, fertilizers, medical equipment, books, and certain fuels. Simultaneously, Decree No. 5,146 granted a **one-year VAT exemption until June 30, 2026** for imports by National Public Administration bodies and designated private entities (Appendix I). Companies relying on these exemptions must re-verify their status annually.  _(Presidential Decree No. 5,145, June 30, 2025; Presidential Decree No. 5,146, June 30, 2025)_
-
-### Optimization Actions
-
-- **VAT optimization actions** — 1. **Export structuring:** If services can legitimately be rendered for the benefit of foreign recipients, qualifying as an export of services yields 0% output VAT while input VAT remains recoverable. 2. **Activity classification:** Verify that the reduced 8% rate is claimed for qualifying activities (e.g., government professional services contracts). Overcharging at 16% creates administrative burden; undercharging creates a compliance liability. 3. **Foreign currency transaction planning:** The 5–25% surcharge on transactions paid in foreign currency or crypto is significant. Where contractually possible, structure payment terms to use bolivar settlement. 4. **Special taxpayer withholding (from August 1, 2025):** Ruling SNAT/2025/000054 expanded VAT withholding obligations. Verify whether the client is a designated withholding agent and whether their counterparties are, to correctly account for VAT flows.
-
-### Source
-
-Avalara — Venezuelan VAT Compliance (2025). KPMG — Venezuela VAT changes 2025 (August 2025). PwC — Corporate Other Taxes (January 2026). VATupdate — Exemption until June 2026 (July 2025).
-
-### Rate Table
-
-**Social Security / Payroll Contribution Rate Table**  _(Section 14 — Major Optimization Lever 10)_
-
-| Fund | Employer Rate | Employee Rate | Salary Base Cap | Notes |
-| --- | --- | --- | --- | --- |
-| IVSS (Mandatory Social Security) | 9–11% | 4% | 5 minimum salaries | Employer rate varies by enterprise risk classification |
-| FAOV (Housing Savings — primary) | 2% | 1% | No cap | Based on integral salary |
-| FAV (Housing — secondary / LPH) | 2% | 0.5% | 10 minimum salaries | Employment Benefit Regime |
-| INCES (Training) | 2% (quarterly wages) | 0.5% (profit-sharing/utilidades) | No cap | Employer quarterly; employee on utilidades only |
-| Paro Forzoso (Unemployment) | 2% | 0.5% | No cap | — |
-| LOPCYMAT (Workplace safety) | 0% | — | No cap | Employer only; rate set by INPSASEL risk assessment |
-| Special Pension Contribution (from May 2024) | 9% | — | — | Employer only |
-
-### Payment Deadlines
-
-**Payment Deadlines**  _(Section 14 — Major Optimization Lever 10)_
-
-| Fund | Deadline |
-| --- | --- |
-| IVSS | By the 16th of each month |
-| FAOV | Within first 5 business days of each month |
-| INCES | Within first 5 business days after each quarter closes |
-
-### Optimization Actions
-
-- **IVSS risk tier** — The employer IVSS rate (9–11%) is determined by INPSASEL (the workplace safety authority) based on industry risk classification. Investing in documented workplace safety improvements and obtaining a favorable INPSASEL risk rating can reduce the employer contribution by up to 2 percentage points.  _(Section 14 — Optimization Actions)_
-- **LOPCYMAT rate** — This is 0% per the applicable rate, set by INPSASEL risk assessment.  _(Section 14 — Optimization Actions)_
-- **Integral salary calculation** — Ensure the FAOV base (integral salary) is correctly computed. Overstating the integral salary base (e.g., incorrectly including non-salary benefits) overstates contributions.  _(Section 14 — Optimization Actions)_
-
-### Quantified Example
-
-**IVSS Cost Scenario Table**  _(Section 14 — Quantified Example)_
-
-| Scenario | Annual IVSS Cost | Difference |
-| --- | --- | --- |
-| 11% (high-risk) | Bs. 550,000 | — |
-| 9% (low-risk, after safety investment) | Bs. 450,000 | **Bs. 100,000/year saved** |
-
-**LOPCYMAT Scenario Table**  _(Section 14 — Quantified Example)_
-
-| Scenario | Annual LOPCYMAT | Difference |
-| --- | --- | --- |
-| 0% | Bs. 0 | — |
-
-A company with Bs. 5,000,000 annual payroll at the 11% IVSS rate vs. 9%:
-
-LOPCYMAT: Rate is 0%; no LOPCYMAT cost applies.
-
-**Combined potential payroll saving: Bs. 200,000/year** from safety investment — before considering the ISLR deductibility of the safety investment itself.
-
-### Source
-
-PwC — Venezuela Individual Other Taxes (January 2026). Playroll Venezuela payroll guide. Moore Global — Venezuela Tax Guide.
-
-### Pattern 1: Should an individual use desgravamen único or itemized?
-
-START: Individual ISLR filer, Venezuela resident
-
-Step 1: Sum qualifying itemized expenses:
-  - Education expenses (no cap)
-  - Insurance premiums (life/surgery/hospitalization/maternity) (no cap)
-  - Medical/dental/hospital expenses (no cap)
-  - Mortgage interest on primary residence (cap: 1,000 UT = Bs. 43,000 at 2025 UT)
-  - Rent on primary residence (cap: 800 UT = Bs. 34,400 at 2025 UT)
-
-Step 2: Compare sum to standard desgravamen único: 774 UT (= Bs. 33,282 at 2025 UT)
-
-Step 3:
-  If sum > 774 UT → USE ITEMIZED (desgravamen detallado)
-  If sum ≤ 774 UT → USE STANDARD (desgravamen único)
-
-Step 4: Confirm all itemized expenses were paid to Venezuelan-domiciled entities.
-  If any expense was paid to a foreign entity → EXCLUDE that item from itemized total.
-  Re-run comparison.
-
-Note: Must choose ONE method. Cannot combine. Decision is made per fiscal year.
-
-### Pattern 2: Is a corporate structure beneficial vs. sole trader?
-
-START: Venezuelan entrepreneur considering structuring
-
-Step 1: Estimate annual net income (UT)
-  < 2,000 UT (Bs. 86,000)? → SOLE TRADER likely more efficient
-    Reason: Individual rates 6–12% vs. corporate minimum 15%
-
-  2,000–3,000 UT (Bs. 86,000–129,000)? → DEPENDS on profit retention
-    If profits can be retained in company: Corp rate 22% vs. individual up to 16–20%
-    If profits must be distributed: Add 34% dividend WHT → economic double tax
-    Sole trader likely better unless treaty holding structure available
-
-  > 3,000 UT (Bs. 129,000)? → Both corporate and individual converge at 34%
-    Corporate beneficial ONLY if:
-    (a) Profits retained long-term, AND
-    (b) Treaty holding structure reduces dividend WHT to ≤10%
-    Otherwise: equivalent effective rate, with corporate adding compliance cost
-
-Step 2: Check sector:
-  Banking or insurance? → FLAT 40% corporate rate (worse than individual at most levels)
-  Petroleum? → FLAT 50% (unambiguously the highest; avoid direct ownership if possible)
-
-Step 3: Assess treaty availability:
-  Is there a treaty-country holding company option? (Spain 0–10%, US 5–15%, Mexico 5%)
-  Does the holding company have genuine commercial substance?
-  If YES to both → Corporate structure with treaty holding reduces effective total rate
-  If NO → Avoid corporate structure at income > 2,000 UT
-
-Conclusion: Venezuela's high dividend WHT means sole-trader structures are competitive
-at most income levels unless a qualifying treaty holding structure is in place.
-
-### Pattern 3: Thin capitalization compliance check
-
-START: Venezuelan company with related-party loans
-
-Step 1: Compute average equity for the fiscal year (average of opening and closing equity)
-Step 2: Compute average total related-party debt for the fiscal year
-Step 3: Compare:
-  Related-party debt ≤ equity? → COMPLIANT; all interest deductible
-  Related-party debt > equity? → NON-COMPLIANT
-    Excess = related-party debt − equity
-    Interest on excess = excess × interest rate = NON-DEDUCTIBLE
-    Additional ISLR cost = non-deductible interest × applicable Tarifa No. 2 rate
-
-Step 4: Remediation options:
-  Option A: Capitalize part of the loan (convert to equity) before fiscal year-end
-  Option B: Accelerate loan repayment to bring below 1:1 ratio
-  Option C: Replace related-party loan with third-party bank debt
-  Option D: None viable → Accept non-deductible interest and document
-
-Step 5: Document the average equity and debt calculation in the tax working paper.
-
-### Pattern 4: Which LOCTI rate applies?
-
-START: Company receiving LOCTI assessment
-
-Step 1: Identify primary activity:
-  Bingo, casino, alcohol production/sale, or tobacco? → 2%
-  Hydrocarbons extraction or mining (and NOT exempt under Jan 2026 reform)? → 1%
-  Petroleum company qualifying under 2026 Hydrocarbons Law Reform? → EXEMPT
-  All other activities? → 0.5%
-
-Step 2: Multi-activity company?
-  Yes → Apply HIGHEST rate to ALL gross income
-  No → Apply single applicable rate
-
-Step 3: Is monthly gross income above 150,000× BCV highest foreign currency rate?
-  Below threshold → NOT SUBJECT to LOCTI this month
-  Above threshold → LOCTI applies at the rate from Step 1
-
-Step 4: Pay via SIDCAI by monthly deadline.
-
-### Pattern 5: Loss carryforward — can it be used this year?
-
-START: Company with a prior-year loss carryforward
-
-Step 1: What year was the loss incurred?
-  More than 3 tax years ago? → EXPIRED; cannot use
-  Within 3 years? → PROCEED
-
-Step 2: Is the current year taxable income positive?
-  No (current-year loss) → Cannot use carryforward; carries forward again (if within 3-year limit)
-  Yes → PROCEED
-
-Step 3: Compute 25% of current-year taxable income (before loss application)
-  Amount = current-year taxable income × 25%
-  Loss applied this year = MINIMUM of (remaining carryforward balance, 25% of taxable income)
-
-Step 4: Apply the loss. Remaining balance carries forward if within 3-year window.
-
-Step 5: Is the loss from inflation/monetary correction?
-  Yes → CANNOT be carried forward at all. If not used in the year generated, it expires.
-  No → Standard 3-year carryforward applies.
-
-## Section 16 — Worked Examples
-
-> All examples use UT = Bs. 43.00 (SNAT/2025/000048, June 2, 2025).
-> CONFIRM CURRENT UT VALUE FROM SENIAT BEFORE QUOTING BS. FIGURES TO CLIENTS.
-
-### Worked Example 1: Individual — Desgravamen Comparison (High Medical Spend)
-
-**Facts:** María is a Venezuelan-resident architect. FY 2025. Annual professional income: Bs. 180,000 (approximately 4,186 UT). She paid during 2025:
-- Surgery and hospitalization (Venezuelan clinic): Bs. 22,000
-- Life insurance premium (Venezuelan insurer): Bs. 8,000
-- Daughter's university fees (Venezuelan university): Bs. 14,000
-- Mortgage interest on her Caracas apartment: Bs. 40,000 (but cap is 1,000 UT = Bs. 43,000 so full amount within cap)
-
-**Step 1: Determine gross income in UT**
-Bs. 180,000 ÷ Bs. 43 = 4,186 UT (approximately)
-
-**Step 2: Calculate desgravamen único**
-Standard deduction: 774 UT × Bs. 43 = Bs. 33,282
-
-**Step 3: Itemized deductions table**  _(Worked Example 1)_
-
-| Item | Amount | Within Cap? |
-| --- | --- | --- |
-| Surgery/hospitalization | Bs. 22,000 | No cap — fully included |
-| Life insurance premium | Bs. 8,000 | No cap — fully included |
-| University fees | Bs. 14,000 | No cap — fully included |
-| Mortgage interest | Bs. 40,000 | Cap = Bs. 43,000 — fully included |
-| **Total itemized** | **Bs. 84,000** |  |
-
-Bs. 84,000 ÷ Bs. 43 = 1,953 UT
-
-**Step 4: Compare table**  _(Worked Example 1)_
-
-| Method | Deduction (Bs.) | Deduction (UT) |
-| --- | --- | --- |
-| Desgravamen único | Bs. 33,282 | 774 UT |
-| Itemized | Bs. 84,000 | 1,953 UT |
-| **Advantage of itemized** | **Bs. 50,718 more** | **1,179 UT more** |
-
-**Step 5: Taxable income table**  _(Worked Example 1)_
-
-| Method | Gross Income | Less Desgravamen | Taxable Income |
-| --- | --- | --- | --- |
-| Standard | Bs. 180,000 | Bs. 33,282 | Bs. 146,718 (= ~3,412 UT) |
-| Itemized | Bs. 180,000 | Bs. 84,000 | Bs. 96,000 (= ~2,233 UT) |
-
-- **Step 6: Apply Tarifa No. 1** — _Standard desgravamen (taxable income Bs. 146,718 → ~3,412 UT — in the 3,000–4,000 UT bracket at 24%):_ Tax = (Bs. 146,718 × 24%) − Bs. 16,125 Tax = Bs. 35,212 − Bs. 16,125 = **Bs. 19,087** _Itemized (taxable income Bs. 96,000 → ~2,233 UT — in the 2,000–2,500 UT bracket at 16%):_ Tax = (Bs. 96,000 × 16%) − Bs. 6,665 Tax = Bs. 15,360 − Bs. 6,665 = **Bs. 8,695**  _(Worked Example 1)_
-
-**Reconciliation table**  _(Worked Example 1)_
-
-| Scenario | ISLR Due | Saving |
-| --- | --- | --- |
-| Standard desgravamen | Bs. 19,087 | — |
-| Itemized desgravamen | Bs. 8,695 | — |
-| **Saving from itemizing** |  | **Bs. 10,392** |
-
-Recommendation: María should use itemized deductions. Annual ISLR saving of **Bs. 10,392** (at 2025 UT). All payments must be to Venezuelan-domiciled entities with valid tax receipts (facturas con RIF).
-
-### Worked Example 2: Company — Loss Carryforward Absorption
-
-**Facts:** TechVe C.A. (non-financial company). Results over 4 years:
-
-**Results over 4 years table**  _(Worked Example 2)_
-
-| Year | Net Taxable Income / (Loss) before Carryforward | Notes |
-| --- | --- | --- |
-| FY2023 | (Bs. 120,000) = ~(2,791 UT) | Operating loss |
-| FY2024 | Bs. 50,000 = ~1,163 UT | Recovery year |
-| FY2025 | Bs. 200,000 = ~4,651 UT | Strong year (at 2025 UT) |
-| FY2026 | Bs. 250,000 = ~5,814 UT | Strong year (assumed 2025 UT for illustration) |
-
-- **Carryforward mechanics FY2024-FY2026** — **Carryforward mechanics (annual loss application cap: 25% of taxable income):** **FY2024:** - Current-year taxable income: Bs. 50,000 - 25% cap on loss use: Bs. 12,500 - Loss applied: Bs. 12,500 - Taxable income after loss: Bs. 37,500 (= 872 UT) - Tax at 15% (≤ 2,000 UT bracket): Bs. 5,625 - Without loss: Bs. 50,000 × 15% = Bs. 7,500; Saving Year 2: **Bs. 1,875** - Remaining carryforward: Bs. 107,500 **FY2025:** - Current-year taxable income: Bs. 200,000 - 25% cap: Bs. 50,000 - Loss applied: Bs. 50,000 - Taxable income after loss: Bs. 150,000 (= 3,488 UT — 22% bracket then 34% bracket; use blended calculation) - First 2,000 UT (Bs. 86,000) at 15% = Bs. 12,900 - Next 1,000 UT (Bs. 43,000) at 22% = Bs. 9,460 - Remaining Bs. 21,000 (488 UT) at 34% = Bs. 7,140 - Total ISLR: Bs. 29,500 - Without loss applied (Bs. 200,000): - First 2,000 UT (Bs. 86,000) × 15% = Bs. 12,900 - Next 1,000 UT (Bs. 43,000) × 22% = Bs. 9,460 - Remaining Bs. 71,000 (1,651 UT) × 34% = Bs. 24,140 - Total ISLR: Bs. 46,500 - Saving Year 3: Bs. 46,500 − Bs. 29,500 = **Bs. 17,000** - Remaining carryforward: Bs. 57,500 **FY2026 (Year 4 — beyond 3-year limit from FY2023):** - Loss incurred FY2023; FY2026 is the 4th year → **LOSS EXPIRED**. Remaining Bs. 57,500 cannot be used.  _(Worked Example 2)_
-
-**Reconciliation table**  _(Worked Example 2)_
-
-| Year | Loss Applied | ISLR Saving |
-| --- | --- | --- |
-| FY2024 | Bs. 12,500 | Bs. 1,875 |
-| FY2025 | Bs. 50,000 | Bs. 17,000 |
-| FY2026 | Bs. 0 (expired) | Bs. 0 |
-| **Total** | **Bs. 62,500** | **Bs. 18,875** |
-| Unused loss (expired) | Bs. 57,500 | Bs. 0 |
-
-**Key lesson:** TechVe's profitability recovery was too slow. Had it generated Bs. 240,000 in FY2025 (allowing Bs. 60,000 carryforward = 25% × Bs. 240,000), it would have absorbed more of the loss. Tax planning to accelerate profitability recognition into Year 2/3 windows maximizes loss absorption.
-
-### Worked Example 3: Corporate Dividend Extraction — Treaty vs. No Treaty
-
-**Facts:** InverVE S.A., a Venezuelan operating company with 100% foreign ownership. Annual after-tax profit: Bs. 430,000 (10,000 UT at 2025 UT). The parent intends to distribute all profits.
-
-**Scenario A: No treaty table**  _(Worked Example 3)_
-
-| Step | Amount |
-| --- | --- |
-| Venezuelan ISLR (assume income > 3,000 UT; 34% bracket) | Bs. 430,000 × 34% − Bs. 21,500 = Bs. 124,700 |
-| After-ISLR profit | Bs. 305,300 |
-| Dividend WHT (34% on distributed amount) | Bs. 305,300 × 34% = Bs. 103,802 |
-| Net distributed to foreign parent | Bs. 305,300 − Bs. 103,802 = **Bs. 201,498** |
-| Effective combined rate | (Bs. 430,000 − Bs. 201,498) ÷ Bs. 430,000 = **53.1%** |
-
-**Scenario B: Spanish holding company (10%) table**  _(Worked Example 3)_
-
-| Step | Amount |
-| --- | --- |
-| Venezuelan ISLR (same) | Bs. 124,700 |
-| After-ISLR profit | Bs. 305,300 |
-| Dividend WHT (10% treaty rate, Spain) | Bs. 305,300 × 10% = Bs. 30,530 |
-| Net distributed to Spanish holdco | Bs. 305,300 − Bs. 30,530 = **Bs. 274,770** |
-| Effective combined rate | (Bs. 430,000 − Bs. 274,770) ÷ Bs. 430,000 = **36.1%** |
-
-**Scenario C: Spanish holding company (0%) table**  _(Worked Example 3)_
-
-| Step | Amount |
-| --- | --- |
-| Venezuelan ISLR (same) | Bs. 124,700 |
-| After-ISLR profit | Bs. 305,300 |
-| Dividend WHT (0% treaty rate) | Bs. 0 |
-| Net distributed to Spanish holdco | **Bs. 305,300** |
-| Effective combined rate | (Bs. 430,000 − Bs. 305,300) ÷ Bs. 430,000 = **29.0%** |
-
-**Reconciliation table**  _(Worked Example 3)_
-
-| Scenario | Net to Parent (Bs.) | Effective Rate | Saving vs. No Treaty |
-| --- | --- | --- | --- |
-| No treaty | Bs. 201,498 | 53.1% | — |
-| Spain (10%) | Bs. 274,770 | 36.1% | **Bs. 73,272** |
-| Spain (0%) | Bs. 305,300 | 29.0% | **Bs. 103,802** |
-
-Note: ISLR computed as a simplified illustration. The dividend tax base is the positive difference between book income and fiscal income (LIFO method) — this may differ from the full after-tax profit. Engage a Venezuelan CPA to compute the exact dividend tax base before distribution.
-
-Note on Spain treaty 0% rate: the 10% general dividend rate is confirmed by PwC/Deloitte. The specific shareholding threshold qualifying for the 0% tier is cited in treaty commentary but **must be verified against the treaty text** before client use — do not rely on the 0% rate without confirming the threshold with a tax adviser.
-
-## Section 17 — Tier 1 Prompts (Basic Optimization)
-
-Use these prompts for straightforward individual or small-business clients:
-
-1. "Using Venezuela's ISLR Tarifa No. 1, compute the annual ISLR for an individual with gross income of [X] UT, using the standard 774 UT desgravamen único. Show the bracket calculation."
-
-2. "My client has the following itemized expenses: [list]. Is the desgravamen detallado or the desgravamen único more favorable? Show the comparison."
-
-3. "Calculate the ISLR for a Venezuelan C.A. with taxable income of [X] UT using Tarifa No. 2. Show the bracket computation."
-
-4. "A Venezuelan company paid [X] Bs. in ISAE (municipal business tax) this year. How much does this reduce its ISLR liability, assuming the 34% bracket?"
-
-5. "A Venezuelan company's related-party debt averages [X] Bs. and its equity averages [Y] Bs. Is it within the thin-capitalization limit? How much interest is non-deductible?"
-
-## Section 18 — Tier 2 Prompts (Complex / Multi-Lever Optimization)
-
-Use these prompts for corporate clients, cross-border structures, or multi-year planning:
-
-1. "A Venezuelan company incurred a Bs. [X] operating loss in FY[year]. Project the maximum ISLR savings from carrying this forward, assuming the following income in subsequent years: [Y1, Y2, Y3]. Show the 25%-of-taxable-income cap applied each year and flag the expiry."
-
-2. "Structure a dividend extraction plan for a Venezuelan company with after-tax profits of Bs. [X], owned by a holding company in [country]. Compute the effective combined rate under domestic law and under the treaty, showing the WHT comparison."
-
-3. "A company in [city], Venezuela operates across three municipalities with the following gross income per municipality: [list]. Calculate total ISAE across all municipalities and the ISLR deduction value of that ISAE, assuming the 34% bracket."
-
-4. "Evaluate whether a Special Economic Zone structure (Tortuga Island SEZ) is viable for a manufacturing company projecting annual ISLR of Bs. [X] over 20 years. Show the cumulative ISLR saving against setup and compliance costs (placeholder for client-specific costs)."
-
-5. "A Venezuelan company has related-party loans of Bs. [X] at [Y]% interest and equity of Bs. [Z]. Calculate the thin-capitalization non-deductible interest and the additional ISLR cost. Propose the minimum equity injection or loan repayment to achieve compliance."
-
-6. "A client has cryptocurrency trading profits in FY2025. They received [X] BTC at various dates; provide a framework for computing ISLR in bolivars, identifying the market-value-at-receipt principle, the applicable Tarifa, and the record-keeping required for SENIAT."
-
-## Section 19 — Working Paper Template
-
-Use this template to document Venezuela ISLR computations for individual or corporate clients. Retain all supporting documents for 5 years (COT statute of limitations).
-
-```
-VENEZUELA ISLR WORKING PAPER
-Client: ___________________________
-RIF: ______________________________
-Fiscal Year: _______________________
-UT value used: Bs. _____ (SENIAT Ruling No. _______, G.O. No. ________, Date: _________)
-UT value confirmation: [ ] Confirmed from SENIAT website on __________ / [ ] Using SNAT/2025/000048 (Bs. 43.00)
-
-SECTION A — GROSS INCOME
-1. Employment / professional fees:              Bs. _____________ = _______ UT
-2. Business/commercial income:                  Bs. _____________ = _______ UT
-3. Rental income:                               Bs. _____________ = _______ UT
-4. Dividends received (if applicable):          Bs. _____________ = _______ UT
-5. Cryptocurrency income (market value at receipt): Bs. _________ = _______ UT
-6. Other income:                                Bs. _____________ = _______ UT
-   TOTAL GROSS INCOME:                          Bs. _____________ = _______ UT
-
-SECTION B — DEDUCTIONS / DESGRAVAMEN
-Method selected: [ ] Desgravamen único (774 UT = Bs. _____) | [ ] Desgravamen detallado
-If itemized:
-  Education expenses:                           Bs. _____________
-  Insurance premiums:                           Bs. _____________
-  Medical/dental/hospital:                      Bs. _____________
-  Mortgage interest (cap 1,000 UT = Bs. _____): Bs. _____________
-  Rent (cap 800 UT = Bs. _____):                Bs. _____________
-  TOTAL ITEMIZED:                               Bs. _____________ = _______ UT
-Desgravamen applied:                            Bs. _____________ = _______ UT
-
-SECTION C — LOSS CARRYFORWARD
-Prior-year loss balance:                        Bs. _____________ = _______ UT (incurred FY ____)
-25% of current taxable income:                  Bs. _____________
-Loss applied this year (lesser of above two):   Bs. _____________
-Remaining carryforward:                         Bs. _____________ (expires FY ____)
-
-SECTION D — TAXABLE INCOME
-= Gross income − Desgravamen − Loss applied
-Taxable income:                                 Bs. _____________ = _______ UT
-
-SECTION E — TARIFA COMPUTATION
-For individuals (Tarifa No. 1):
-Applicable bracket: _______ UT to _______ UT at _______ %
-Tax = Bs. _____________ × ____% − Bs. _____________ (fixed deduction)
-     = Bs. _____________
-
-For companies (Tarifa No. 2):
-Layer 1: [0–2,000 UT] Bs. ______ × 15% = Bs. ______
-Layer 2: [2,000–3,000 UT] Bs. ______ × 22% = Bs. ______
-Layer 3: [>3,000 UT] Bs. ______ × 34% = Bs. ______
-TOTAL ISLR:                                     Bs. _____________
-
-SECTION F — MUNICIPAL TAXES (ISAE)
-ISAE paid (Municipality 1 — ____________):      Bs. _____________
-ISAE paid (Municipality 2 — ____________):      Bs. _____________
-TOTAL ISAE (ISLR-deductible):                   Bs. _____________
-ISLR reduction from ISAE deductibility:         Bs. _____________ × ____% = Bs. _____________
-
-SECTION G — SOCIAL SECURITY / LOCTI
-IVSS employer rate: ____% (risk tier confirmed: Y/N)
-LOPCYMAT rate: 0% (INPSASEL assessment date: ________)
-LOCTI rate: ____% (activity: ______________________)
-LOCTI amount: Bs. _____________
-
-SECTION H — WITHHOLDING TAXES ON DIVIDENDS
-Dividend declared: Bs. _____________
-Tax base (book income minus fiscal income per LIFO): Bs. _____________
-Applicable WHT rate: ____% ([ ] Domestic 34% | [ ] Treaty — Country: ____________, Rate: ___%)
-Treaty qualification confirmed: [ ] Yes [ ] No
-WHT amount: Bs. _____________
-
-SECTION I — PENALTY / INTEREST RISK ASSESSMENT
-Filing deadline: ________________
-Estimated filing date: ____________
-Late filing risk: [ ] None | [ ] Possible — days late: ____
-Late payment interest (COT): ____% per annum from ____________
-Penalty currency: USD at BCV rate of Bs. ______/USD (COT Art. 91, 2020 reform)
-
-SECTION J — SIGN-OFF
-Prepared by: _________________________  Date: ____________
-Reviewed by: _________________________ Date: ____________
-CPA/EA signature required before filing: [ ] Pending [ ] Obtained
+```oa-check
+name: Personal deduction decision, itemized wins
+inputs:
+  net_enrichment: 5000
+  medical: 1000
+  eligible_insurance: 200
+  education: 300
+  home_interest: 900
+steps:
+  - itemized: medical + eligible_insurance + education + min(home_interest, 1000)
+  - base_itemized: max(net_enrichment - itemized, 0)
+  - base_standard: max(net_enrichment - 774, 0)
+  - tax_itemized: base_itemized * 0.20 - 255 - 10
+  - tax_standard: base_standard * 0.29 - 575 - 10
+  - saving: tax_standard - tax_itemized
+expected:
+  itemized: 2400
+  base_itemized: 2600
+  base_standard: 4226
+  tax_itemized: 255
+  tax_standard: 640.54
+  saving: 385.54
 ```
 
-## Section 20 — Test Suite
+In the opposite decision, final ordinary enrichment is 3,500 U.T. and all eligible itemized payments total only 500 U.T. Itemizing leaves a 3,000 U.T. base; the standard leaves 2,726. Tax after the personal rebate is 335 versus 280.20 U.T. Choose the standard; the saving is 54.80 U.T. This also replaces the old basic personal test, which omitted the rebate and rounded its bolívar arithmetic prematurely.
 
-> All tests use UT = Bs. 43.00. Answers are verifiable against the Tarifa schedules above.
+```oa-check
+name: Personal deduction decision, standard wins
+inputs:
+  net_enrichment: 3500
+  eligible_itemized: 500
+steps:
+  - standard_base: net_enrichment - 774
+  - itemized_base: net_enrichment - eligible_itemized
+  - standard_tax: standard_base * 0.20 - 255 - 10
+  - itemized_tax: itemized_base * 0.20 - 255 - 10
+  - saving_standard: itemized_tax - standard_tax
+expected:
+  standard_base: 2726
+  itemized_base: 3000
+  standard_tax: 280.20
+  itemized_tax: 335
+  saving_standard: 54.80
+```
 
-### Test 1 — Individual Tarifa No. 1, Basic Bracket Calculation
+### Case 2: loss use through the third following period
 
-- **computation** — **Facts:** Individual gross income = 3,500 UT (= Bs. 150,500). Uses desgravamen único (774 UT = Bs. 33,282). No loss carryforward. **Taxable income:** Bs. 150,500 − Bs. 33,282 = Bs. 117,218 (= approximately 2,726 UT) Bracket: 2,500–3,000 UT at 20%, fixed deduction Bs. 10,965. **Expected ISLR:** Bs. 117,218 × 20% − Bs. 10,965 = Bs. 23,444 − Bs. 10,965 = **Bs. 12,479**  _(Test 1)_
+An ordinary company has a 2023 Venezuelan operating loss of 3,000 U.T. and final Venezuelan enrichment before loss of 2,000, 4,000 and 6,000 U.T. in 2024-2026. Assume the figures have already been properly measured for this illustration; no inflation or foreign loss, credits or later loss exists. The cap permits 500, 1,000 and 1,500 U.T. respectively. The entire loss is used by the end of 2026; 2027 would be outside this vintage's window. Company tax in those years is 225, 520 and 1,030 U.T.; without losses it would be 300, 860 and 1,540. Total saving is 925 U.T. [LISLR arts. 4, 52, 55](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=14).
 
-### Test 2 — Corporate Tarifa No. 2, Multi-Bracket
+```oa-check
+name: Three following periods include the third following year
+inputs:
+  loss_2023: 3000
+  income_2024: 2000
+  income_2025: 4000
+  income_2026: 6000
+steps:
+  - use_2024: min(loss_2023, income_2024 * 0.25)
+  - balance_2024: loss_2023 - use_2024
+  - use_2025: min(balance_2024, income_2025 * 0.25)
+  - balance_2025: balance_2024 - use_2025
+  - use_2026: min(balance_2025, income_2026 * 0.25)
+  - expired_after_2026: balance_2025 - use_2026
+  - tax_2024: (income_2024 - use_2024) * 0.15
+  - tax_2025: (income_2025 - use_2025) * 0.22 - 140
+  - tax_2026: (income_2026 - use_2026) * 0.34 - 500
+  - total_saving: 300 + 860 + 1540 - tax_2024 - tax_2025 - tax_2026
+expected:
+  use_2024: 500
+  use_2025: 1000
+  use_2026: 1500
+  expired_after_2026: 0
+  tax_2024: 225
+  tax_2025: 520
+  tax_2026: 1030
+  total_saving: 925
+```
 
-- **computation** — **Facts:** Company taxable income = 4,500 UT = Bs. 193,500. No carryforward. Layer 1: 2,000 UT × Bs. 43 = Bs. 86,000 × 15% = Bs. 12,900 Layer 2: 1,000 UT × Bs. 43 = Bs. 43,000 × 22% = Bs. 9,460 Layer 3: 1,500 UT × Bs. 43 = Bs. 64,500 × 34% = Bs. 21,930 **Expected ISLR:** Bs. 12,900 + Bs. 9,460 + Bs. 21,930 = **Bs. 44,290**  _(Test 2)_
+For the old final-year-cap test, change the facts to a 2023 loss of 4,000 U.T., none previously used, and 2026 same-source enrichment of 12,000 U.T. Use only 3,000, leaving 1,000 to expire after 2026. Final base is 9,000 and tax 2,560 U.T., against 3,580 without the loss; saving 1,020. A further foreign loss cannot replace or enlarge this domestic claim.
 
-### Test 3 — Thin Capitalization Interest Disallowance
+```oa-check
+name: Final eligible loss year, quarter cap and expiry
+inputs:
+  opening_loss: 4000
+  current_income: 12000
+steps:
+  - allowed_loss: min(opening_loss, current_income * 0.25)
+  - taxable_base: current_income - allowed_loss
+  - tax_without: current_income * 0.34 - 500
+  - tax_with: taxable_base * 0.34 - 500
+  - saving: tax_without - tax_with
+  - expires: opening_loss - allowed_loss
+expected:
+  allowed_loss: 3000
+  taxable_base: 9000
+  tax_without: 3580
+  tax_with: 2560
+  saving: 1020
+  expires: 1000
+```
 
-- **computation** — **Facts:** Company average equity = Bs. 80,000 (1,860 UT). Average related-party debt = Bs. 120,000 (2,791 UT). Interest rate on related-party debt = 10% per annum. Permitted debt (1:1 ratio) = Bs. 80,000 Excess debt = Bs. 120,000 − Bs. 80,000 = Bs. 40,000 Non-deductible interest = Bs. 40,000 × 10% = Bs. 4,000 Additional ISLR (assuming 34% bracket): Bs. 4,000 × 34% = **Bs. 1,360** **Expected additional ISLR cost: Bs. 1,360**  _(Test 3)_
+### Case 3: related finance with independent debt and a genuine alternative
 
-### Test 4 — Loss Carryforward, 25% Cap Application
+Assume opening/closing equity both Bs. 200,000, independent month-end debt Bs. 50,000 and related month-end debt Bs. 300,000 throughout the year. Related interest otherwise qualifies and is paid at a hypothetical 12% contractual rate: Bs. 36,000. Headroom is 150,000; deductible fraction 0.5, deductible interest 18,000, disallowed interest 18,000. If the business is wholly in Tarifa 2's top band for both alternatives, that disallowance adds Bs. 6,120 tax. The rate is the statutory marginal 34%; the contractual interest rate is an invented fact. [LISLR arts. 27, 52, 109, 116](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=20).
 
-- **computation** — **Facts:** Company incurred Bs. 200,000 loss in FY2022. Current year (FY2025) is the last year within the 3-year carryforward window. FY2025 taxable income before loss = Bs. 600,000 (13,953 UT). Company is in the 34% bracket throughout. 25% of Bs. 600,000 = Bs. 150,000 (maximum loss use) Remaining carryforward = Bs. 200,000 > Bs. 150,000 → apply Bs. 150,000 Remaining Bs. 50,000 → EXPIRES (FY2026 would be Year 4, beyond 3-year limit) ISLR without loss: (Bs. 600,000 × 34%) − Bs. 16,125 Wait — use bracket layering: Layer 1: Bs. 86,000 × 15% = Bs. 12,900 Layer 2: Bs. 43,000 × 22% = Bs. 9,460 Layer 3: (Bs. 600,000 − Bs. 129,000) × 34% = Bs. 471,000 × 34% = Bs. 160,140 Total without loss: Bs. 12,900 + Bs. 9,460 + Bs. 160,140 = Bs. 182,500 ISLR with loss (taxable income Bs. 450,000): Layer 1: Bs. 86,000 × 15% = Bs. 12,900 Layer 2: Bs. 43,000 × 22% = Bs. 9,460 Layer 3: (Bs. 450,000 − Bs. 129,000) × 34% = Bs. 321,000 × 34% = Bs. 109,140 Total with loss: Bs. 12,900 + Bs. 9,460 + Bs. 109,140 = Bs. 131,500 **Expected ISLR saving from loss carryforward: Bs. 182,500 − Bs. 131,500 = Bs. 51,000** **Expired loss: Bs. 50,000 (wasted)**  _(Test 4)_
+A **start-of-year** genuine capitalization of Bs. 75,000, maintained throughout, makes equity 275,000 and related debt 225,000; after the same independent debt, capacity is 225,000. Ratio restrictions no longer disallow interest, assuming all other conditions hold. But annual interest is now only 27,000 because less is borrowed. The before/after net interest cost must reflect that difference; it is not correct to call the eliminated disallowance alone the entire economic saving. A year-end-only change requires new average calculations.
 
-### Test 5 — Dividend Withholding: Domestic vs. Treaty
+```oa-check
+name: Financing decision includes independent debt and changed interest cost
+inputs:
+  equity: 200000
+  independent_debt: 50000
+  related_debt: 300000
+  contractual_interest_rate: 0.12
+  capitalization_at_start: 75000
+steps:
+  - original_interest: related_debt * contractual_interest_rate
+  - headroom: max(equity - independent_debt, 0)
+  - allowed_original: original_interest * min(headroom / related_debt, 1)
+  - disallowed_original: original_interest - allowed_original
+  - disallowance_tax: disallowed_original * 0.34
+  - new_equity: equity + capitalization_at_start
+  - new_related_debt: related_debt - capitalization_at_start
+  - new_interest: new_related_debt * contractual_interest_rate
+  - new_capacity: max(new_equity - independent_debt, 0)
+  - allowed_new: new_interest * min(new_capacity / new_related_debt, 1)
+  - net_interest_cost_original: original_interest - allowed_original * 0.34
+  - net_interest_cost_new: new_interest - allowed_new * 0.34
+  - net_cost_reduction: net_interest_cost_original - net_interest_cost_new
+expected:
+  original_interest: 36000
+  headroom: 150000
+  allowed_original: 18000
+  disallowed_original: 18000
+  disallowance_tax: 6120
+  new_equity: 275000
+  new_related_debt: 225000
+  new_interest: 27000
+  allowed_new: 27000
+  net_interest_cost_original: 29880
+  net_interest_cost_new: 17820
+  net_cost_reduction: 12060
+```
 
-- **computation** — **Facts:** Venezuelan C.A. distributes Bs. 86,000 (2,000 UT) to a Spanish corporate parent qualifying for the 0% treaty rate on dividends. Domestic rate: 34% → WHT = Bs. 86,000 × 34% = Bs. 29,240 Treaty rate (Spain, 0%): WHT = Bs. 0 **Expected saving from treaty: Bs. 29,240** **Net received by Spanish parent: Bs. 86,000 (vs. Bs. 56,760 without treaty)**  _(Test 5)_
+The older small-loan test can be retained under its explicit no-independent-debt, all-year balances: equity Bs. 80,000, related debt 120,000, invented contractual interest 10%. Allowed interest is 8,000, disallowed 4,000; top-band incremental tax is 1,360. It is not a universal shortcut when independent debt, nonmarket terms or changing monthly balances exist.
 
-### Test 6 — Desgravamen Comparison
+```oa-check
+name: Small related loan test, independent debt explicitly absent
+inputs:
+  equity: 80000
+  related_debt: 120000
+  independent_debt: 0
+  interest: 12000
+steps:
+  - deductible: interest * min(max(equity - independent_debt, 0) / related_debt, 1)
+  - disallowed: interest - deductible
+  - added_tax: disallowed * 0.34
+expected:
+  deductible: 8000
+  disallowed: 4000
+  added_tax: 1360
+```
 
-- **computation** — **Facts:** Individual with gross income = 5,000 UT (Bs. 215,000). Qualifying itemized expenses: - Medical expenses: Bs. 20,000 - Insurance premiums: Bs. 5,000 - Mortgage interest: Bs. 43,000 (at the 1,000 UT cap exactly) - Education: Bs. 0 - Rent: N/A (owns home) Total itemized: Bs. 68,000 (= 1,581 UT) Standard desgravamen: 774 UT = Bs. 33,282 Itemized exceeds standard by Bs. 34,718 (807 UT) → **use itemized** Taxable income (itemized): Bs. 215,000 − Bs. 68,000 = Bs. 147,000 (= 3,419 UT) Bracket: 3,000–4,000 UT at 24%, fixed deduction Bs. 16,125 ISLR = Bs. 147,000 × 24% − Bs. 16,125 = Bs. 35,280 − Bs. 16,125 = Bs. 19,155 Taxable income (standard): Bs. 215,000 − Bs. 33,282 = Bs. 181,718 (= 4,226 UT) Bracket: 4,000–6,000 UT at 29%, fixed deduction Bs. 24,725 ISLR = Bs. 181,718 × 29% − Bs. 24,725 = Bs. 52,698 − Bs. 24,725 = Bs. 27,973 **Expected saving from itemizing: Bs. 27,973 − Bs. 19,155 = Bs. 8,818**  _(Test 6)_
+### Case 4: legal-form comparison with retained profits
 
-## Section 21 — Prohibitions
+Assume actual net enrichment from the activity is 4,500 U.T. under both genuine legal forms after all applicable ordinary expenses. Individual has no itemized payments, uses 774 allowance and own 10 rebate: taxable base 3,726; tax 509.24. Ordinary company taxable base remains 4,500; tax 1,030. In this example the individual has 520.76 U.T. less current income tax. This is **not** a recommendation without actual legal/commercial facts and all other taxes. No distribution is made in the company alternative, so none is imputed here. This also preserves the old multi-band company test. [LISLR arts. 8-10, 50, 52, 58-59](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=13).
 
-**Prohibitions Table**  _(Section 21)_
+```oa-check
+name: Individual and retained-profit company, complete band comparison
+inputs:
+  final_activity_net: 4500
+steps:
+  - individual_base: final_activity_net - 774
+  - individual_tax: individual_base * 0.24 - 375 - 10
+  - company_tax: min(final_activity_net, 2000) * 0.15 + min(max(final_activity_net - 2000, 0), 1000) * 0.22 + max(final_activity_net - 3000, 0) * 0.34
+  - tax_difference: company_tax - individual_tax
+expected:
+  individual_base: 3726
+  individual_tax: 509.24
+  company_tax: 1030
+  tax_difference: 520.76
+```
 
-| Prohibited Action | Reason |
-| --- | --- |
-| Advising clients to structure transactions solely to create artificial ISLR losses | Economic substance doctrine; SENIAT challenge risk; potential evasion charges under COT |
-| Using UT-denominated figures without confirming the current UT value from SENIAT | Hyperinflationary environment makes stale bolivar figures materially misleading |
-| Recommending treaty holding structures without confirming genuine commercial substance | Anti-abuse provisions in Venezuelan treaties and SENIAT enforcement; principal purpose test applied |
-| Claiming desgravamen detallado for expenses paid to foreign-domiciled entities | ISLR Law requires payment to Venezuelan-domiciled entities for itemized deductions |
-| Carrying forward inflation/monetary correction losses | ISLR Law explicitly prohibits this; such losses expire in the year generated |
-| Applying the thin-cap exception to what is economically a related-party loan routed through a third-party bank | SENIAT has challenged back-to-back arrangements; substance-over-form principle applies |
-| Computing penalties in UT | COT 2020 reform (Art. 91) denominates penalties in USD at the BCV official rate; using UT gives the wrong answer |
-| Recommending SEZ incentives without current Ministry of Finance certification | Incentives require annual Resolution 015-25 certification; uncertified companies receive no refund |
-| Advising reliance on the export drawback program | PwC (January 2026) states this is "not currently being applied in practice" |
-| Providing definitive advice on the January 2026 Hydrocarbons Law Reform for existing petroleum contracts | 180-day transition period ongoing; requires specialist and engagement with Ministry of Hydrocarbons |
+### Case 5: dividend tax is limited to its properly allocated base
 
-## Section 22 — Annual Tax Planning Calendar
+Assume an ordinary domestic payer's preceding-year **approved net income** is 10,000 U.T. and its **net fiscal income already taxed** is 8,000; no relevant dividends received, exemptions or older pools. A 9,000 distribution is allocated under art. 67: 8,000 to taxed income, 1,000 to untaxed excess. Ordinary dividend tax is 340; shareholder receives 8,660. The remaining pool is 1,000 of untaxed excess. Compare an 8,000 distribution: all comes from taxed fiscal income, so this chapter generates zero dividend tax on those facts. These are distribution amounts, not a fresh corporation-tax base. [LISLR arts. 64-68, 71](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=15).
 
-**Annual Tax Planning Calendar Table**  _(Section 22)_
+```oa-check
+name: Distribution decision respects taxed and untaxed income pools
+inputs:
+  approved_net_income: 10000
+  already_taxed_fiscal_income: 8000
+  proposed_dividend: 9000
+  alternative_dividend: 8000
+steps:
+  - untaxed_pool: max(approved_net_income - already_taxed_fiscal_income, 0)
+  - taxable_proposed: min(max(proposed_dividend - already_taxed_fiscal_income, 0), untaxed_pool)
+  - proposed_withholding: taxable_proposed * 0.34
+  - proposed_net: proposed_dividend - proposed_withholding
+  - remaining_untaxed_pool: untaxed_pool - taxable_proposed
+  - taxable_alternative: min(max(alternative_dividend - already_taxed_fiscal_income, 0), untaxed_pool)
+  - alternative_withholding: taxable_alternative * 0.34
+expected:
+  untaxed_pool: 2000
+  taxable_proposed: 1000
+  proposed_withholding: 340
+  proposed_net: 8660
+  remaining_untaxed_pool: 1000
+  alternative_withholding: 0
+```
 
-| Month | Action |
-| --- | --- |
-| January | Confirm new UT value if SENIAT has issued an adjustment ruling. Check for Special Taxpayer calendar (SNAT/2025/000091 for FY2026). Begin assembling FY prior-year income and expense records. |
-| February | Review desgravamen único vs. itemized comparison using FY prior-year receipts. Confirm BCV rate for penalty risk assessment. |
-| March | **31 March: ISLR annual declaration due for individuals.** File on time; late filing triggers USD-denominated penalties under COT Art. 91 2020 reform. Pay 1st instalment if applicable. |
-| April | 2nd instalment of ISLR (due 20 days after the March 31 deadline). Review IVSS risk classification with INPSASEL; initiate reclassification if safety improvements made. |
-| May | 3rd instalment of ISLR (due 40 days after the March 31 deadline). Mid-year income projection for thin-capitalization monitoring (average debt-to-equity check). |
-| June | Verify current UT value (SENIAT ruling often issued mid-year). Check Decree 5,146 VAT import exemption expiry (June 30, 2026 for qualifying importers). |
-| July | VAT exemption suspension (Decree 5,145) operational since July 5, 2025 — confirm import VAT status for basic goods. Expanded VAT withholding rules (SNAT/2025/000054) operational since August 2025; verify withholding agent status. |
-| August | Review LOCTI payments year-to-date. Confirm BCV-based threshold test monthly. Payroll audit: verify IVSS, FAOV, INCES filings. |
-| September | Assess loss carryforward position: is FY[3 years ago] loss at risk of expiry? Accelerate profitability recognition if needed to absorb expiring loss within 25% annual cap. |
-| October | Year-end planning: assess whether itemized deductions will exceed 774 UT. Schedule any remaining qualifying expenditure (insurance renewals, medical procedures) before December 31. |
-| November | Thin-capitalization final check: year-end equity vs. related-party debt average. Capitalize excess related-party loans if needed before December 31. |
-| December | **December 31:** Close fiscal year. Confirm ISAE receipts from all municipalities for ISLR deduction documentation. Review cryptocurrency positions: market values at December 31 needed for ISLR computation. Confirm SEZ certification status if applicable. |
+The old Spain-versus-domestic extraction example and treaty test remain pending. Replace their assumed treaty rates with the actual article and conditions only after primary verification; compare the same **properly computed taxable dividend base** under each law. A combined effective-tax calculation must use consistent pretax profit, corporation tax, distribution and shareholder tax, never subtract company tax again from a figure described as already after tax. No unsourced treaty saving is reproduced.
 
-## Disclaimer
+### Case 6: paid municipal tax is a deduction, not a tax credit
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Venezuela's tax environment is subject to rapid change due to hyperinflation, frequent legislative reforms, and administrative rulings. All monetary figures expressed in bolivars (Bs./VES) are derived from the 2025 Tax Unit value of Bs. 43.00 (SNAT/2025/000048) and will become inaccurate when the UT value is next adjusted by SENIAT.
+Assume a valid paid municipal business levy of Bs. 300,000 passes all art. 27(3) gates. Independent evidence establishes that both company bases, before and after this deduction, remain wholly above the top Tarifa 2 boundary after proper UT conversion. The tax reduction is 102,000 and the net levy cost 198,000. This retains the old municipal example; it is **not** a municipal-rate calculation. A business across three municipalities must first establish the correct assessment/payment in each. [LISLR arts. 27(3), 32, 52](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf#page=9).
 
-Penalty amounts under COT 2020 are denominated in USD at the BCV official rate, not UT. Confirm the BCV rate at the time of any penalty computation.
+```oa-check
+name: Municipal levy deduction, both alternatives wholly in top band
+inputs:
+  qualifying_paid_levy: 300000
+steps:
+  - islr_reduction: qualifying_paid_levy * 0.34
+  - after_tax_levy_cost: qualifying_paid_levy - islr_reduction
+expected:
+  islr_reduction: 102000
+  after_tax_levy_cost: 198000
+```
 
-Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified Venezuelan professional (contador público colegiado or abogado tributarista registered with SENIAT) before filing or acting upon.
+### Remaining scenario controls
+
+The old high-medical-spend architect is represented by Case 1's full eligibility comparison; the multi-year company recovery by Case 2; the final-year loss test by its second block; the two finance examples by Case 3; legal-form/rate and company-band tests by Case 4; ordinary distribution by Case 5; and ISAE savings by Case 6. These examples use corrected law, no historical UT currency default, and explicit rebates/averaging. The old itemized-versus-standard higher-spend test is the same Case 1 decision with different client inputs, not a separate legal entitlement.
+
+The old zone manufacturer, six named treaty-country holding scenarios, LOCTI misclassification, IVA classification/export/import/currency alternatives, IVSS safety reclassification, alleged zero LOPCYMAT cost, combined payroll saving and cryptocurrency-receipt cases remain review tasks under their respective levers and the named gaps below. They do not have numerical outputs because the necessary primary inputs were not confirmed. Never fill a missing rate by copying the old worked example.
+
+## Ask the client first
+
+Before posing a question, read the available client records and latest correspondence. Ask only for missing facts, distinguishing absent evidence from unresolved law.
+
+1. Provide RIF, entity documents, residence/domicile facts, spouse/property regime, fiscal year, actual activities/locations, PE details and special-taxpayer designation. Who owns/manages the business and who needs cash?
+2. Provide source-separated income, transactions/availability dates, actual expenses/payments, compliant invoices/RIF, reimbursements and existing deductions. Which current official UT evidence applies at the actual fiscal close?
+3. For personal planning, identify each domestic education/medical/insurance/housing payment, purpose, recipient, actual payment date, shared contributions, dependants' age/residence/study/incapacity, spouse declarations and official-service facts.
+4. Provide every operating-loss vintage by source, previous use and return, inflation-system history and excluded-taxpayer status. Which profitable periods actually fall before expiry?
+5. Provide full related/independent financing contracts and beneficial parties; each month-end balance; opening/closing equity excluding current profit/loss and inflation adjustment; actual interest payment/accrual; dates and commercial terms of any proposed change.
+6. For dividends, provide approved financial statements, taxed fiscal income and received-dividend pools by profit year, past distributions, shareholder advances, recipient residence, treaty text/status and any branch reinvestment/auditor evidence.
+7. For municipal/IVA/payroll/LOCTI/zone proposals, provide the actual ordinance/law/decree/classification/admission, current calendars, salary/contribution records, import/export/service-use evidence and payment/refund history. A client statement does not substitute for primary legal authority.
+8. For foreign income/crypto, provide contracts, wallet/exchange statements, source/timing facts, costs, conversion records, foreign tax payment evidence and actual foreign residence/treaty claims. Identify prior nonfiling, assessments, audits and unresolved credits.
+
+### Reusable prompts for basic and complex work
+
+- **Personal:** “Given these verified expenses and family facts, compare both allowable personal-deduction methods, full marginal tax and rebates for this fiscal year. Exclude ineligible or reimbursable expenses and explain the decision.”
+- **Company:** “Reconcile these actual source-separated results to Tarifa 2, list eligible paid municipal taxes, apply source/vintage loss caps and reconcile documented advances.”
+- **Finance:** “Using these month-end debts and opening/closing equity, compute art. 116 capacity. Compare actual dated capitalization, repayment and external-financing alternatives, with interest cost and all other deduction gates.”
+- **Distribution:** “Reconstruct taxed and untaxed profit pools by year. Apply arts. 64-73, then separately test a verified treaty's exact conditions. Show cash to shareholder and consistent effective-tax denominators.”
+- **Multi-year:** “Project each genuine operating-loss vintage through its three following periods. Show source, annual cap, unused balance, expiry and a compliant timing alternative, with no artificial revenue shift.”
+- **Municipal:** “For each of three municipalities, establish the actual ordinance, allocation, assessed/paid amount and receipts, then compute only the legally deductible ISLR effect.”
+- **Zone/LOCTI/payroll/IVA:** “List each missing official rate, period, eligibility or administrative instruction before quantifying the proposed classification or incentive. Produce a baseline and an explicitly pending alternative, with cash-flow and compliance costs.”
+- **Crypto:** “Reconstruct transactions and their actual legal character/source/timing; list valuation-law gaps instead of assuming a blanket receipt or year-end rule.”
+
+### Working-paper template and self-checks
+
+```text
+VENEZUELA 2026 TAX-PLANNING BRIEF
+Client / RIF / preparer / reviewer / actual fiscal period:
+Residence, legal form, activities, PE and special-taxpayer status:
+Baseline business facts; proposed commercial change and effective date:
+Primary law/article/official URL/exact quote/read date for each input:
+Applicable UT evidence at fiscal close; unresolved currency conversions:
+A. Source-separated gross receipts, availability, cost and net enrichment
+B. Ordinary expenses: normal/necessary, accrued/paid condition, invoices/RIF
+C. Personal eligible itemized schedule versus standard; rebates separately
+D. Loss source/vintage/opening use/cap/balance/last eligible period
+E. Company or individual marginal bands; proportional items kept separate
+F. Municipality-by-municipality assessment/paid receipt and deduction
+G. Related/independent month-end debt; opening/closing equity; ratio/terms
+H. Distribution profit-year pools, taxable portion, recipient and treaty proof
+I. IVA, LOCTI, employment, zone and other taxes: confirmed basis or pending
+J. Foreign tax inclusion/payment/cap; withholding/advance/credit trail
+K. Baseline and alternative total tax, cash timing and compliance costs
+L. Actual verified deadlines, form/fields, payment and acknowledgement
+M. Penalty/interest facts, applicable unit/date and record-retention review
+N. Unresolved items, recommendation limits, preparer and professional sign-off
+```
+
+Check each input against evidence; recompute arithmetic; verify the actual marginal bands and source/vintage limits; separate deductions from credits; remove duplicate taxes/receipts; check every eligibility exception; and ensure the brief matches the client's actual facts. A signed professional conclusion, filed return and payment evidence are separate records.
+
+### When to refuse or refer
+
+Stop the affected recommendation when its legal input, measurement or client evidence is absent. Refer petroleum/mixed-company/production-sharing regimes, sector reforms, APAs and transfer-pricing benchmarking, contested related finance, low-tax investments, treaty shopping, complex distribution pools, disputed crypto valuation, incentive certification, current special-taxpayer calendar questions, tax disputes and suspected evasion/undeclared years for the specific primary law and qualified professional review. Do not calculate anti-drug, sports or high-net-wealth charges from an assumed accounting-profit rule. Refer facts; do not assert a missing rate is zero.
+
+**Prohibitions:** no artificial losses or sham contracts; no stale UT currency default; no unsourced treaty holding-company rates; no personal deduction for an unlisted insurance product or double-counted/reimbursable expense; no foreign-loss/territorial-income netting; no inflation-loss carryforward; no ratio check ignoring independent debt or actual averages; no universal dividend second charge; no UT/USD assumption for COT fines; no unverified zone/LOCTI/payroll/IVA saving; no unsupported assertion that export drawback does or does not operate; no current sector-transition date inferred from the old Guide. [LISLR arts. 3-5, 27, 32, 55, 57-59, 64-71, 116, 181, 195](https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf); [COT arts. 3, 16, 91](https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf).
+
+### Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional in the relevant jurisdiction before filing or acting upon. The most up-to-date version is maintained at [openaccountants.com](https://www.openaccountants.com).
+
+## Sources
+
+| Primary source | Official URL | Read on | What was actually opened and read |
+|---|---|---|---|
+| LISLR, Gaceta Oficial 6.210 Extraordinario, 30 December 2015, consolidated statute | https://contraloriadebarquisimeto.gob.ve/images/baselegal/LOAFSP.pdf | 2026-11-11 | Actual gazette PDF on the public comptroller's host, including arts. 1-16, 23, 27, 32, 38, 50-60, 64-89, 96, 109-118, 171, 181, 186, 193, 195-196 and neighboring conditions; printed PDF page 13 visually checked for art. 50/52 rate columns. Art. 55: “tres (3) períodos de imposición siguientes”; art. 116: “adicionadas con el monto de las deudas contraídas con partes independientes”. The filename names another law in the same gazette; these claims use the actual LISLR text. |
+| COT, Gaceta Oficial 6.507 Extraordinario, 29 January 2020 | https://www.cmchacao.gob.ve/wp-content/uploads/2025/08/Decreto-con-Rango-Valor-y-Fuerza-de-Ley-que-Reforma-la-Ley-que-Establece-el-Impuesto-al-Valor-Agregado.pdf | 2026-11-11 | Actual gazette PDF hosted by the municipal council; arts. 3, 16, 55-63, 66, 91, 103, 108-109 and 155 with neighboring text. Art. 91: “moneda de mayor valor”; art. 155(3): “mientras el tributo no esté prescrito”. Its filename names the IVA amendment also included in the gazette; the COT was read. |
+
+The enactment dates are historical and stated honestly; the 2026 coverage label is not a claim that a complete current administrative instruction set was obtained. No private commentary supplies missing current figures. The following list preserves unresolved topics from the prior Guide individually so they can be researched without treating historical claims as current law.
+
+**Not yet confirmed:** G01 current UT bolívar value, effective date and claimed historical percentage increase; G02 ordinary/short-period fiscal-year choices, annual filing deadline and installment dates; G03 current special-taxpayer calendars, advances, IVA withholding designations, payment codes and remittance dates; G04 live SENIAT portal/form/field/attachment/payment/credit-refund procedures; G05 each named treaty's in-force status, dividend definition, actual rate/ownership conditions, anti-abuse provisions and claim procedure, including Spain, United States, Mexico, France, Canada and Brazil, and the total treaty count; G06 La Guaira zone refund rate/duration; G07 military Aragua zone refund rate/duration; G08 Paraguaná zone refund rate/duration; G09 Isla La Tortuga zone refund rate/duration and manufacturer cash-flow projection; G10 zone export condition, customs reimbursement, annual cap/publication timing, admission/certification and alleged Resolution 015-25 rules; G11 export customs drawback's current availability or claimed non-operation; G12 LOCTI gambling/bingo/casino/alcohol/tobacco classification and rate; G13 LOCTI hydrocarbons/mining classification/rate and alleged petroleum exemption; G14 LOCTI other/multiple-activity rates, threshold, base, monthly measurement, highest-currency conversion, competent collector and SIDCAI payment procedure; G15 municipal ISAE current ordinance-specific rates, minimum, allocation and national harmonization limits; G16 IVA ordinary/reduced/luxury operative rate/decree combinations, luxury value tests and exact qualifying categories; G17 IVA export-service conditions, input-credit eligibility and recovery procedures; G18 alleged basic-import exemption suspension and replacement designated-importer measures, current duration and eligibility; G19 IVA foreign-currency/crypto additional-rate operation versus distinct IGTF application/exemptions; G20 IVSS employer risk classification, employee rate, bases/caps, competent classification authority and payment dates; G21 FAOV rates/base/cap/payment dates and whether the historical FAV/LPH table refers to any separate current liability; G22 INCES employer/employee rates, ordinary salary versus utilidades bases and payment dates; G23 unemployment/employment contribution rates/bases/caps; G24 LOPCYMAT/risk contribution operation, assessment and rates rather than an assumed zero; G25 special pension contribution scope/base/rate/payment; G26 current minimum wage, non-salary bonus classification and applicable judicial interpretation; G27 crypto-specific valuation/recognition and claimed year-end remeasurement; G28 complete foreign-currency/indexed-asset adjustment rule where printed LISLR art. 186 is grammatically incomplete; G29 inflation-system implementation and current measurement series; G30 current hydrocarbons/PSA/mixed-company reform, transition and contribution exemptions; G31 anti-drug, sports and high-net-wealth charge scope/base/rate/procedure; G32 current BCV highest-valued-currency conversion, monthly interest rates, withholding-specific sanctions and exact case-specific retention/limitation consequences. These are research gaps, not zero rates or exclusions from the client's engagement.

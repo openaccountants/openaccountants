@@ -10,7 +10,7 @@ description: >
   classification, rates, credit restrictions and imported-service computation.
   Produce a return-to-working-paper reconciliation for professional review,
   without inventing numbered boxes, current VEP codes or CUIT extensions.
-version: 1.1
+version: 1.2
 jurisdiction: AR
 tax_year: 2026
 last_updated: 2026-11-11
@@ -23,7 +23,7 @@ domain: vat-gst
 type: filing-howto
 ---
 
-# Argentina: monthly IVA return 2026 v1.1
+# Argentina: monthly IVA return 2026 v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,7 +33,7 @@ Ordinary Responsables Inscriptos preparing monthly IVA under IVA Law art. 27 and
 
 **Quick answer:** for 2026 originals and amendments use **Portal IVA → F.2051**, Clave Fiscal level 3+, completing electronic registration and then determination. Validate prefilled data, reconcile the two distinct credit balances, preview and confirm the actual return, then separately pay/reconcile. Ending the registration module is not final return submission. Get CUIT/status, period, invoices, tax-point ledger, prior balances and suffered-tax certificates first.
 
-This Tier 2 source-cited draft has no professional approval. It loads the VAT workflow base and returns a filing checklist, reconciliation, acknowledgement/payment evidence and unresolved items. [argentina-iva](argentina-iva.md) owns the computation and classification. [ar-monotributo](ar-monotributo.md) owns simplified-regime eligibility/exit; there is no old approximate service ceiling repeated as an IVA registration threshold.
+This Guide is **Not yet approved**. It loads the VAT workflow base and returns a filing checklist, reconciliation, acknowledgement/payment evidence and unresolved items. [argentina-iva](argentina-iva.md) owns the computation and classification. [ar-monotributo](ar-monotributo.md) owns simplified-regime eligibility/exit; there is no old approximate service ceiling repeated as an IVA registration threshold.
 
 Out of scope: agency withholding/perception computation, customs valuation, export-refund applications, construction/developer and agricultural elections, special financial instruments, complex transition-benefit calculations and provincial IIBB returns. Suffered national IVA retentions/perceptions are included. AGIP/ARBA collection is not national IVA merely because it appears on a bank statement.
 

@@ -13,7 +13,7 @@ description: >
   controls and detailed transition-benefit computations require separate
   review. Do not treat a bank credit or foreign payout label as proof of
   taxable revenue or export status.
-version: 2.1
+version: 2.2
 jurisdiction: AR
 tax_year: 2026
 last_updated: 2026-11-11
@@ -26,7 +26,7 @@ domain: income-tax
 type: situation-rules
 ---
 
-# Argentina: Monotributo 2026 v2.1
+# Argentina: Monotributo 2026 v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -36,7 +36,7 @@ Individuals carrying on eligible sales, leases, services, works and primary acti
 
 **Quick answer:** establish the table period and all relevant trailing-period parameters, choose the category required by the highest applicable parameter, then add only the monthly components actually owed. Both services and goods can reach category K; the old services-only H ceiling is obsolete. Physical/rental parameters do not disappear merely because the person provides services; primary activities and services without fixed premises use the revenue-only exception in Annex art. 9 and decree art. 25. Missing inputs stop the calculation; do not assume zero employees or a convenient activity type.
 
-This version is a Tier 2 source-cited draft without accountant approval. It loads the existing income-tax workflow base and produces a category/payment reconciliation, evidence list and exception flags. Monotributo substitutes the national IVA/Ganancias and the specified contribution obligations for the covered activity; provincial gross-receipts obligations can remain, including unified collection where applicable. Use [argentina-income-tax](argentina-income-tax.md), [argentina-iva](argentina-iva.md) and [ar-social-contributions](ar-social-contributions.md) when the general regime applies.
+This version is **Not yet approved**. It loads the existing income-tax workflow base and produces a category/payment reconciliation, evidence list and exception flags. Monotributo substitutes the national IVA/Ganancias and the specified contribution obligations for the covered activity; provincial gross-receipts obligations can remain, including unified collection where applicable. Use [argentina-income-tax](argentina-income-tax.md), [argentina-iva](argentina-iva.md) and [ar-social-contributions](ar-social-contributions.md) when the general regime applies.
 
 Out of scope: detailed Monotributo Social/promoted/cooperative contribution computations, foreign-exchange permissions, provincial unified components, and general-regime transition benefits. The ordinary eligibility and exclusion screening still needs those facts. A general-regime transition or an exclusion cannot be solved by paying a higher Monotributo category.
 

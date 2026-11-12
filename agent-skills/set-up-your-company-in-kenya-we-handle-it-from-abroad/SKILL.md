@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "KE"
   tax_year: "2025"
   last_updated: "2026-07-22"
-  reviewed_by: "Julian Njoroge Maina"
 ---
 
 # Setting up a company in Kenya from abroad: how I do it

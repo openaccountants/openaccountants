@@ -20,10 +20,20 @@ class PayrollTaxTableTest(unittest.TestCase):
 
     def test_rates_card_row(self) -> None:
         text = read("au-rates-2026-27.md")
-        self.assertIn("ACT 6.75% to 8.75% tiered/$1.75m", text)
-        self.assertIn("NT 5.5% (6.5% at $100m+)/$2.5m", text)
-        self.assertNotIn("ACT 6.85%/$2m", text)
-        self.assertNotIn("NT 5.5%/$1.5m", text)
+        # Each jurisdiction now has its own sourced row; pin the figures rather
+        # than the retired compact summary's punctuation.
+        act, = (line for line in text.splitlines() if line.startswith("| Payroll tax ACT |"))
+        nt, = (line for line in text.splitlines() if line.startswith("| Payroll tax NT |"))
+        self.assertIn("$1.75m annual threshold", act)
+        for band in ("above $1.75m to $20m, 6.75%", "above $20m to $50m, 6.85%",
+                     "above $50m to $100m, 7.35%", "above $100m to $150m, 7.85%",
+                     "above $150m, 8.75%"):
+            with self.subTest(band=band):
+                self.assertIn(band, act)
+        self.assertIn("5.5% below $100m", nt)
+        self.assertIn("6.5% at $100m or more", nt)
+        self.assertIn("Maximum annual deduction $2.5m", nt)
+        self.assertIn("reduced by $1 per $2 above $2.5m and nil at $7.5m", nt)
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-inps-contributions"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-11"
 ---
 
 # INPS contributions for the self-employed in Italy (gestione separata, artigiani and commercianti), 2026
@@ -216,10 +216,6 @@ expected:
 
 Not yet confirmed: the 2.65% reference rate (the Circolare 98/2026 page shows no text outside a browser download); how INPS splits a sanzione civile across the 2026 periods before 16 September 2026, when the reference rate was lower (the ECB rate was 2.15% to 16 June and 2.40% from 17 June 2026); the text of L. 207/2024 art. 1(186) and L. 213/2023 art. 1(142) to (155) on Normattiva (both read through INPS documents only, as the article page did not load past its first commi); whether any provision of L. 199/2025 after comma 100 changes self-employed INPS contributions (the February 2026 INPS circulars report none); the rules for amateur sports workers (Quadro RR section III); Reg. (EC) 883/2004 arts. 11 and 13 on which country insures a person working in several states (EUR-Lex blocked scripts); the historic F24 code DPP from the earlier version; the professional fund rates (see `it-inps-artigiani-commercianti`); refunds of excess contributions beyond L. 335/1995 art. 2(30); suspension of contributions for illness or injury; the Quadro RP line number for the deduction in the 2027 form.
 
-> Contributed by OpenAccountants.
-
-> Contributed by Michael Cutajar.
-
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-inps-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-inps-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-inps-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-inps-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

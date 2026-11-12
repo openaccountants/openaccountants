@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/mt-capital-gains"
   jurisdiction: "MT"
   tax_year: "2026"
-  last_updated: "2026-11-04"
+  last_updated: "2026-11-08"
 ---
 
 # Malta capital gains: article 5 gains and the article 5A property transfer tax, for individuals and companies
@@ -140,7 +140,7 @@ For 2025 gains (year of assessment 2026) the single table in [Act IX of 2025](ht
 
 - **Non-resident taxed abroad (5A(3)(h)).** A person not resident in Malta who gives the notary a statement from their home tax authority confirming residence and that they are taxed there on gains from Malta immovable property. It does not apply if the person is owned or controlled by, or acts for, Malta-resident individuals. Provisional tax paid on such a transfer from 1 January 2015 is not refundable.
 - **Business-asset replacement (5A(3)(g)).** Property used in a business for at least three years and replaced within one year by property used solely for a similar purpose, if the transferor elects. The gain reduces the cost of the new property (article 5(8)). The relief is lost if the replacement is disposed of or stops being used in the business within two years.
-- **Judicial sale by auction or winding up by the Court (5A(3)(f)).**
+- **Judicial sale by auction or winding up by the Court (5A(3)(f)).** Exception: a judicial auction of property inherited on a death on or after 25 November 1992 stays in article 5A and is taxed at 7% of the transfer value (5A(3)(f): "except for a transfer to which sub-article (5)(c)(ii) applies").
 - **The twelve-year election (5A(3)(b))** is closed for new transfers: from 1 January 2015 it needed a promise of sale notified before 17 November 2014 and a transfer before 1 January 2016.
 
 ## Article 5 assets: computing the gain ([Income Tax Act art. 5](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
@@ -296,7 +296,7 @@ Do not:
 | Provisional tax on other transfers (article 5 assets, and property outside 5A) | Within fifteen days of the transfer | ITMA art. 43(1)(b) |
 | No provisional tax | Exempt transfers where the prescribed form is filed (but still due where article 33 applies as a result of claiming 12(1)(u)); partition deeds; shares in public companies | ITMA art. 43(2) |
 | Individual return declaring 2026 article 5 gains | 30 June 2027; tax due the same day | [S.L. 372.16](https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2) rules 2(c)(ii), 5(b) |
-| Individual return for 2025 gains | Was due 30 June 2026. MTCA usually announces a later date for online filing: check | S.L. 372.16 rule 2(c)(ii) |
+| Individual return for 2025 gains (year of assessment 2026) | Return and payment extended to 31 July 2026, manual and electronic, by the [MTCA notice of 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline). The rules' date was 30 June 2026. Use 31 July 2026 for late interest | S.L. 372.16 rule 2(c)(ii); MTCA notice |
 | Company return | Later of the last day of the ninth month after the accounting period ends and 31 March of the year of assessment | S.L. 372.16 rule 2(c)(i) |
 | Trust beneficial interest transfer | Transferor to trustee within forty-five days; trustee pays by the fourteenth day after the end of the month of collection | ITA art. 5(19)(d)-(e) |
 | Late tax | 0.6% a month or part of a month, capped at the tax | [ITMA art. 44](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b); ITA art. 5A(12)(g) |
@@ -365,6 +365,13 @@ Repaired misleading retrieval metadata, exact boundaries and the abbreviated dut
 
 Not yet confirmed: the unchanged prescribed acquisition-value adjustments, forms, treaty and restructuring questions remain held where marked above. Links in the original body retain their historical research role; this table records only the targeted current audit reads.
 
+### Targeted audit source checks, 8 November 2026
+
+Added the judicial-auction exception to the article 5A(3)(f) exclusion and the extended 31 July 2026 date for 2025 gains. This is a source-cited draft; the targeted corrections do not certify every unchanged rule.
+
+- [Cap. 123 article 5A(3)(f) and (5)(c)](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c) (read 2026-11-08).
+- [MTCA notice, 3 June 2026](https://mtca.gov.mt/news-results-page/2026/06/03/tax-returns-submission-deadline) (as quoted in malta-income-tax, read 2026-11-04).
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-04. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-capital-gains` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-capital-gains. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-08. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `mt-capital-gains` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/mt-capital-gains. If neither is available, confirm every figure against the official source pages cited above before relying on it.

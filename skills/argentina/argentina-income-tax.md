@@ -14,7 +14,7 @@ description: >
   interaction and filing in Ganancias Personas Humanas - Portal Integrado. This
   Tier 2 draft supports source checking and reviewer questions; it does not
   authorise filing, payment or a tax position.
-version: 2.4
+version: 2.5
 jurisdiction: AR
 tax_year: 2026
 tax_year_notes: "Calendar tax year 2026, with separately labelled 2025 return material retained from Ryan Duguid's merged rewrite. The 2025 return remains open to 16 November 2026 under RG 5918. ARCA's annual tables for 2026 are also shown. Every indexed amount is the figure ARCA publishes for the named period, under arts 30 and 94 as amended by Ley 27.743."
@@ -25,7 +25,7 @@ domain: income-tax
 type: computation
 ---
 
-# Argentine Income Tax: Autónomo / Profesional Independiente (Ganancias) v2.4
+# Argentine Income Tax: Autónomo / Profesional Independiente (Ganancias) v2.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -39,7 +39,7 @@ Monotributo clients are outside this file: use `ar-monotributo`. Social security
 
 ### What this file is
 
-This is a Tier 2 source-cited draft. It has no accountant sign-off. Each figure carries its own citation and should be confirmed against it. It loads no workflow base, because the legacy file named none and none was qualified for this guide in this conversion; do not treat it as a complete operational workflow. Working paper only: nothing here is a filing position, and every output needs review by a Contador Público or equivalent before use.
+This Guide is **Not yet approved**. Each figure carries its own citation and should be confirmed against it. It loads no workflow base, because the legacy file named none and none was qualified for this guide in this conversion; do not treat it as a complete operational workflow. Working paper only: nothing here is a filing position, and every output needs review by a Contador Público or equivalent before use.
 
 ### Refusals and boundaries
 

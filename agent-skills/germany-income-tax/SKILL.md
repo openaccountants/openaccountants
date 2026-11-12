@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/germany-income-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-09"
 ---
 
 # Germany: income tax for the self-employed, from bank statement to tax, tax year 2026
@@ -43,8 +43,8 @@ See also, and do not repeat here:
 | Tariff zone 5 (45%) | From EUR 277,826: 0.45 × x − 19,470.38 | 2026 | Same |
 | Rounding | Taxable income x and the tax are both rounded down to whole euros | 2026 | Same, § 32a(1) sentences 1 and 6 |
 | Splitting (joint assessment) | Twice the tax on half the joint taxable income | 2026 | Same, § 32a(5) |
-| Solidarity surcharge | 5.5% of income tax; nothing while the tax is at most EUR 20,350 (EUR 40,700 under splitting); above that, at most 11.9% of the excess | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html and https://www.gesetze-im-internet.de/solzg_1995/__4.html |
-| Church tax (members only) | 8% or 9% of income tax, by state; base ignores the § 35 credit | 2026 | https://www.gesetze-im-internet.de/estg/__51a.html; BMF booklet "Steuern von A bis Z" (Stand January 2025): "je nach Bundesland 8 oder 9 Prozent" |
+| Solidarity surcharge | 5.5% of the base. Base: the income tax recomputed with the child allowances of § 32(6) EStG in every case, even where Kindergeld was kept instead (§ 3(2) SolzG). Nothing is due while the base, less any flat-rate tax on capital income under § 32d(3) and (4) EStG, is at most EUR 20,350, or EUR 40,700 where the splitting tariff applies (§ 32a(5) and (6) EStG, which includes the widow's year). Above that, the surcharge is at most 11.9% of the amount by which that reduced base exceeds the limit. The flat-rate § 32d(3)/(4) tax always carries the full 5.5%. Fractions of a cent are dropped. The 2026 limits apply from assessment year 2026 (§ 6(27) SolzG); 2025 used EUR 19,950 / 39,900 | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html , https://www.gesetze-im-internet.de/solzg_1995/__4.html , https://www.gesetze-im-internet.de/solzg_1995/__6.html |
+| Church tax (members only) | 8% or 9% of income tax, by state. Base: the income tax recomputed with the child allowances in every case (§ 51a(2) sentence 1 EStG), with taxable income increased by the amounts tax-free under § 3 no. 40 and reduced by the amounts not deductible under § 3c(2) (partial-income method; sentence 2), and ignoring the § 35 trade tax credit (sentence 3). The rate is set by each church's resolution, not by federal law (Bavaria: Art. 8 BayKirchStG, up to 10%); which states use 8% and which 9% is not confirmed here. Not covered: couples where only one spouse belongs or the spouses belong to different churches (tax split by income ratio, or the special Kirchgeld), the cap on church tax (Kappung) and state rounding. | 2026 | https://www.gesetze-im-internet.de/estg/__51a.html; BMF booklet "Steuern von A bis Z" (Stand January 2025): "je nach Bundesland 8 oder 9 Prozent" |
 | Trade tax credit (§ 35) | 4.0 × trade tax base amount (Messbetrag), capped at the tax on trade income and at the trade tax actually payable | 2026 | https://www.gesetze-im-internet.de/estg/__35.html |
 | Trade tax allowance, base rate | EUR 24,500 off trade income (rounded down to EUR 100); base rate 3.5% | 2026 | https://www.gesetze-im-internet.de/gewstg/__11.html |
 | Trade tax multiplier floor | 200% for 2026; 280% from 2027 | 2026 | Law of 29 June 2026 (BGBl. 2026 I Nr. 197), Art. 8: in § 16(4) sentence 2 GewStG "wird die Angabe „200“ durch die Angabe „280“ ersetzt", first applied for 2027 (https://www.gesetze-im-internet.de/gewstg/__36.html, § 36(5b)). The § 16 page already shows only the 2027 wording |
@@ -101,9 +101,9 @@ For a stipulated ordinary car with a EUR 40,000 list price, 20 full km, 12 month
 
 **Mixed and unknown items.** Default to no deduction until the client confirms the business share.
 
-**Step 2: from profit to taxable income** (§ 2 EStG). Profit plus any other income = total income. Less special expenses: pension contributions within the cap; basic health and care cover in full; other insurance only if the cap has room; church tax paid, donations, or the EUR 36 lump sum. Less extraordinary burdens and child allowances (see de-employee-income-tax). Round down to whole euros.
+**Step 2: from profit to taxable income** (§ 2 EStG). Profit plus any other income = total income. Less special expenses: pension contributions within the cap; basic health and care cover in full; other insurance only if the cap has room; church tax paid, donations, or the EUR 36 lump sum. Less extraordinary burdens. Child allowances reduce taxable income only where the § 31 EStG comparison with Kindergeld favours them (see de-employee-income-tax); they always reduce the base for the surcharge and church tax (§ 3(2) SolzG, § 51a(2) EStG). Round down to whole euros.
 
-**Step 3: tax.** Apply the tariff (or splitting). For a trader, subtract the § 35 credit: the lowest of 4.0 × Messbetrag, the tax that falls on trade income (positive trade income / all positive income × tariff tax), and the trade tax actually payable. Unused credit is lost. Then the surcharge on the tax after the credit, and church tax on the tax before the credit (§ 51a(2) EStG). Subtract prepayments paid.
+**Step 3: tax.** Apply the tariff (or splitting). For a trader, subtract the § 35 credit: the lowest of 4.0 × Messbetrag, the tax that falls on trade income (positive trade income / all positive income × tariff tax), and the trade tax actually payable. Unused credit is lost. Then the surcharge on the tax after the credit, recomputed with child allowances, and church tax on the tax before the credit, also recomputed with child allowances (§ 3(2) SolzG, § 51a(2) EStG). Any flat-rate tax on capital income (§ 32d EStG) is left out of the surcharge-free test and carries 5.5% in full (§ 3(3), § 4 SolzG). Subtract prepayments paid.
 
 **Losses.** A loss offsets other income of the same year, then can be carried back, subject to the statutory cap, to the immediately preceding year and any remainder to the second preceding year, or forward without time limit (§ 10d EStG; see de-einkommensteuer-freelancer).
 
@@ -265,4 +265,4 @@ Not yet confirmed: which states charge 8% and which 9% church tax, and their rou
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-09. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

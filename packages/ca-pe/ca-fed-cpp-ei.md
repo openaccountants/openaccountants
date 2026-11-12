@@ -1,10 +1,10 @@
 ---
 name: ca-fed-cpp-ei
 description: Use this skill whenever asked about Canada Pension Plan (CPP) or Employment Insurance (EI) contributions for self-employed individuals. Trigger on phrases like "CPP self-employed", "Schedule 8", "CPP2", "YAMPE", "EI opt-in self-employed", "how much CPP do I pay", "self-employed EI benefits", "CPP contribution calculation", or any question about CPP/EI obligations for a self-employed sole proprietor or single-member entity in Canada. This skill covers CPP1 rates, CPP2 second ceiling, Schedule 8 computation, EI voluntary opt-in, tax treatment (line 22200 deduction and non-refundable credit), age exemptions, overpayment recovery, and edge cases. ALWAYS read this skill before touching any CPP/EI-related work.
-version: 2.0
+version: 2.1
 jurisdiction: CA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-08
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -17,7 +17,7 @@ domain: payroll
 
 # CA Fed CPP EI
 
-## Canada CPP/EI Self-Employed Skill v2.0
+## Canada CPP/EI Self-Employed Skill v2.1
 
 ## Rates and thresholds
 
@@ -46,8 +46,8 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **Receiving CPP disability pension** — EXEMPT from CPP  _(Canada Pension Plan Act s.12(1)(b))_
 - **CPP retirement, age 60-64** — MUST contribute (since 2012)  _(Canada Pension Plan Act s.12; CRA Schedule 8 notes)_
 - **CPP retirement, age 65-69** — MAY elect to stop (Form CPT30)  _(Canada Pension Plan Act s.12(1)(d); Form CPT30)_
-- **Line 7** — CPP on SE (base + first-additional only) = (min(earnings, YMPE) − $3,500) × 11.9% − T4 CPP; CPP2 (8% on earnings between YMPE $71,300 and YAMPE $81,200) is computed separately on Schedule 8 (or Form RC381)  _(CRA — Schedule 8 instructions — canada.ca)_
-- **Deduction** — Not a flat 50% — line 22200 deduction = employer-equivalent half of the BASE contribution (4.95% of the 9.9%) plus ALL enhancement (first-additional and CPP2) contributions; only the employee-equivalent half of the base is the line 30800 credit  _(ITA s.60(e))_
+- **Line 7** — CPP on SE (base + first-additional only) = (min(earnings, YMPE) − $3,500) × 11.9% − 2 × T4 employee CPP (employee share plus the matching employer share, Schedule 8 Part 5 line 48); CPP2 (8% on earnings between YMPE $71,300 and YAMPE $81,200) is computed separately on Schedule 8 (or Form RC381)  _(CRA — Schedule 8 instructions — canada.ca)_
+- **Deduction** — Not a flat 50% — line 22200 deduction = employer-equivalent half of the BASE contribution (4.95% of the 9.9%) plus ALL enhancement (first-additional and CPP2) contributions; only the employee-equivalent half of the base is the line 31000 credit  _(ITA s.60(e))_
 
 ## Section 1 -- Quick reference
 
@@ -66,7 +66,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Contributor | Open Accountants community |
 | Validated By | Verified by Nathan Wiebe on 2026-06-21 |
 | Validation Date | Verified by Nathan Wiebe on 2026-06-21 |
-| Skill Version | 2.0 |
+| Skill Version | 2.1 |
 | Confidence Coverage | Tier 1: CPP/CPP2 rate calculation, Schedule 8 mechanics, EI opt-in rules, tax treatment. Tier 2: mid-year status changes, partial-year contributions, Quebec QPP interactions. Tier 3: disability pension interactions, international social security agreements. |
 
 Read this whole section before computing anything.
@@ -205,16 +205,16 @@ This is the deterministic pre-classifier for bank statement entries related to C
 
 ### 4.5 Tax treatment of self-employed CPP (Tier 1)
 
-- **CPP1 split** — Employer-equivalent half of the BASE contribution (4.95% of the 9.9%) is a deduction from net income (line 22200), together with ALL first-additional enhancement contributions. Only the employee-equivalent half of the BASE is a non-refundable tax credit (line 30800, 15% federal credit).  _(Income Tax Act, s. 60(e), s. 118.7)_
-- **CPP2 split** — CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable — no portion of CPP2 is a line 30800 credit.  _(Income Tax Act, s. 60(e), s. 118.7)_
+- **CPP1 split** — Employer-equivalent half of the BASE contribution (4.95% of the 9.9%) is a deduction from net income (line 22200), together with ALL first-additional enhancement contributions. Only the employee-equivalent half of the BASE is a non-refundable tax credit (line 31000, federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026).  _(Income Tax Act, s. 60(e), s. 118.7)_
+- **CPP2 split** — CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable — no portion of CPP2 is a line 31000 credit.  _(Income Tax Act, s. 60(e), s. 118.7)_
 
-The deduction is more valuable at higher marginal rates. The credit is worth a flat 15% regardless of income.
+The deduction is more valuable at higher marginal rates. The credit is worth a flat 14.5% for 2025 (14% for 2026), the lowest federal rate, regardless of income.
 
 ### 4.6 EI for self-employed (Tier 1)
 
 - **EI voluntary opt-in rules** — EI is voluntary for self-employed. To opt in, register with Service Canada. 12-month waiting period before claiming benefits. Once benefits are claimed, cannot opt out. Self-employed EI covers SPECIAL BENEFITS ONLY (maternity, parental, sickness, compassionate care, family caregiver). It does NOT cover regular unemployment benefits.  _(Employment Insurance Act, Part VII.1, s. 152.07-152.21)_
 - **EI premium formula** — ei_premium = min(net_self_employment_income, $65,700) x 1.64% ei_premium = min(ei_premium, $1,077.48)
-- **EI premium credit** — EI premiums are claimed as a non-refundable tax credit on line 31200 (15% federal credit).
+- **EI premium credit** — EI premiums on self-employment are claimed as a non-refundable tax credit on line 31217, from Schedule 13 (line 31200 is EI through employment) (federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026).
 
 ## Section 5 -- Age exemptions and pro-rata rules
 
@@ -323,12 +323,12 @@ Action Required: Do not advise. Refer to licensed Canadian CPA. Document gap.
 ### Test 1 -- Standard self-employed, mid-range income
 
 Input: Born 1985, Ontario resident, net self-employment income $50,000, no T4 income, no EI opt-in.
-Expected output: CPP1 = ($50,000 - $3,500) x 11.90% = $5,533.50. CPP2 = $0 (below YMPE). EI = $0 (not opted in). Line 22200 deduction = $3,231.75 (half of base $2,301.75 + all first-additional $930.00). Line 30800 credit base = $2,301.75 (half of base only).
+Expected output: CPP1 = ($50,000 - $3,500) x 11.90% = $5,533.50. CPP2 = $0 (below YMPE). EI = $0 (not opted in). Line 22200 deduction = $3,231.75 (half of base $2,301.75 + all first-additional $930.00). Line 31000 credit base = $2,301.75 (half of base only).
 
 ### Test 2 -- High-income, both ceilings hit
 
 Input: Born 1978, Alberta resident, net self-employment income $120,000, no T4 income.
-Expected output: CPP1 = $8,068.20 (capped). CPP2 = $792.00 (capped). Total CPP = $8,860.20. Deductions = $5,504.10 (half of base $3,356.10 + first-additional $1,356.00 + CPP2 $792.00). Line 30800 credit base = $3,356.10 (half of base only).
+Expected output: CPP1 = $8,068.20 (capped). CPP2 = $792.00 (capped). Total CPP = $8,860.20. Deductions = $5,504.10 (half of base $3,356.10 + first-additional $1,356.00 + CPP2 $792.00). Line 31000 credit base = $3,356.10 (half of base only).
 
 ### Test 3 -- Income between YMPE and YAMPE
 
@@ -342,8 +342,8 @@ Expected output: CPP = $0.00 (below $3,500 basic exemption). No Schedule 8 contr
 
 ### Test 5 -- Self-employed with T4 employment income
 
-Input: Born 1988, Ontario, T4 pensionable earnings $45,000, T4 CPP deducted $2,468.25, net self-employment income $40,000.
-Expected output: Combined pensionable earnings exceed YMPE. Self-employed CPP on Schedule 8 = $8,068.20 - $2,468.25 (employee) - $2,468.25 (deemed employer) = $3,131.70.
+Input: Born 1988, Ontario, T4 pensionable earnings $45,000, T4 CPP deducted $2,469.25 (($45,000 - $3,500) x 5.95%), net self-employment income $40,000.
+Expected output: Combined pensionable earnings of $85,000 exceed YMPE and YAMPE. Self-employed CPP1 on Schedule 8 (Part 5) = $8,068.20 - $2,469.25 (employee) - $2,469.25 (deemed employer) = $3,129.70. Plus CPP2 = ($81,200 - $71,300) x 8% = $792.00 (no CPP2 deducted on the T4, as employment earnings are below YMPE). Total CPP payable on self-employment (line 42100) = $3,921.70.
 
 ### Test 6 -- EI opt-in calculation
 
@@ -362,7 +362,7 @@ Expected output: CPP = $0.00. No minimum contribution. No Schedule 8 obligation.
 
 ### Prohibitions
 
-- **Prohibitions list** — - NEVER compute CPP for Quebec residents -- QPP applies, not CPP - NEVER tell a self-employed client they must pay EI -- it is voluntary - NEVER forget to split CPP into deduction (line 22200) and credit (line 30800) -- both halves must be claimed - NEVER apply CPP to a client aged 70 or over at the start of the year - NEVER ignore T4 CPP already deducted when computing self-employed CPP on Schedule 8 - NEVER present CPP2 as optional -- it is mandatory for earnings above YMPE - NEVER combine CPP and EI into a single figure without showing the breakdown - NEVER advise on QPP rates using CPP figures -- they are different - NEVER state that self-employed EI covers regular (unemployment) benefits -- it covers special benefits only - NEVER compute figures without confirming the tax year -- rates change annually
+- **Prohibitions list** — - NEVER compute CPP for Quebec residents -- QPP applies, not CPP - NEVER tell a self-employed client they must pay EI -- it is voluntary - NEVER forget to split CPP into deduction (line 22200) and credit (line 31000) -- both halves must be claimed - NEVER apply CPP to a client aged 70 or over at the start of the year - NEVER ignore T4 CPP already deducted when computing self-employed CPP on Schedule 8 - NEVER present CPP2 as optional -- it is mandatory for earnings above YMPE - NEVER combine CPP and EI into a single figure without showing the breakdown - NEVER advise on QPP rates using CPP figures -- they are different - NEVER state that self-employed EI covers regular (unemployment) benefits -- it covers special benefits only - NEVER compute figures without confirming the tax year -- rates change annually
 
 ### Disclaimer
 

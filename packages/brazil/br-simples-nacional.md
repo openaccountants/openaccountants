@@ -1,451 +1,327 @@
 ---
 name: br-simples-nacional
-description: "[PT-BR] Use esta skill sempre que for solicitado tratar do Simples Nacional brasileiro ou do regime MEI. Acione com expressões como \"Simples Nacional\", \"MEI\", \"microempreendedor individual\", \"DAS\", \"DASN-SIMEI\", \"anexo Simples\", \"tabela do Simples\", \"Fator R\", ou qualquer dúvida sobre o regime unificado de tributação para micro e pequenas empresas no Brasil. Cobre o DAS mensal fixo do MEI, as tabelas progressivas do Simples Nacional (Anexos I-V), os limites de faturamento, o Fator R, as declarações anuais e a interação com a Reforma Tributária 2026 (CBS/IBS). SEMPRE leia esta skill antes de tocar em qualquer trabalho de Simples Nacional ou MEI no Brasil. — [EN] Use this skill whenever asked about the Brazilian Simples Nacional or MEI regime. Triggers include \"Simples Nacional\", \"MEI\", \"DAS\", \"DASN-SIMEI\", \"Anexo Simples\", \"Fator R\", and any question on the unified tax regime for Brazilian micro and small businesses. Covers MEI fixed monthly DAS, Simples Nacional progressive tables (Anexos I-V), revenue thresholds, Fator R, annual declarations, and the interaction with the 2026 CBS/IBS tax reform. ALWAYS read this skill before touching any Brazilian Simples Nacional or MEI work."
-version: 2.0
+description: >
+  Use this Guide for Brazilian microenterprises, small companies and individual
+  microentrepreneurs that need to establish Simples Nacional or SIMEI eligibility and
+  calculate calendar-2026 DAS. It covers the five annex tables, effective-rate formula,
+  activity segregation, factor R, cash-versus-accrual revenue, export ceilings, state
+  sublimits, ordinary and cargo MEI limits, fixed contributions, excess revenue and the
+  declarations and evidence needed for review. Trigger phrases include Simples Nacional,
+  MEI, DAS, PGDAS-D, DEFIS, DASN-SIMEI, anexos and fator R. It distinguishes 2026
+  treatment from enacted future MEI changes and the separate 2027 regular IBS/CBS
+  election. Load br-indirect-tax for ordinary local tax calculations and brazil-vat for
+  federal consumption taxes and the reform transition.
+version: 3.1
 jurisdiction: BR
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-17
+tax_year: 2026
+last_updated: 2026-11-11
+source_checked: 2026-11-11
+category: international
+type: situation-rules
+domain: tax
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 depends_on:
   - income-tax-workflow-base
-category: international
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ariane Marrocos"
-reviewed_on: 2026-11-03
-tier: 1
-domain: income-tax
 ---
 
-# BR Simples Nacional
+# Brazil Simples Nacional and MEI v3.1
+
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Who this applies to
+
+Start with the actual taxpayer, activities and election record. ME/EPP size status does not itself prove a Simples election; SIMEI is a further fixed-payment system for an eligible individual microentrepreneur. A company carrying out a non-eligible activity or with a prohibited ownership structure cannot select an annex to cure that bar. Obtain the actual CNPJ, registered activities and Consulta Optantes result, then apply LC123arts.3,16–18-A. [LC123](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
+
+Before computing, obtain: opening date and prior/current-year revenue separated between domestic and exports; each establishment's earned and received monthly revenue; actual contracts/CNAEs and fiscal qualifications; ownership/domicile/debt/registration facts; paid payroll and contributions; election/exit notices and returns. These facts control eligibility, timing, rate and segregation. Do not default an unknown business to ME, an unknown activity to Annex V, missing payroll to a low factor R or missing revenue to a top band. [LC123arts.3,17–18; official PGDAS-D manual §§1.5,5–6](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html), [manual](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
+
+This Guide owns the Simples/MEI figures. [br-indirect-tax](br-indirect-tax.md) owns ordinary ICMS/ISS/IPI outside DAS. [brazil-vat](brazil-vat.md) owns PIS/Cofins and the general CBS/IBS transition. This is a source-based draft at tier2; no prior accountant's approval is carried into this replacement.
 
-## Brasil — Simples Nacional — Skill v2.1
+## Rates, bands and thresholds
 
-## Rates and thresholds
+Amounts are in BRL. For the annex tables below, the first boundary is inclusive and every subsequent band starts at the stated .01. The nominal rate alone is not the monthly effective rate. Apply the formula and segregation in The base; sixth-band local-tax limitations can change the total charged through DAS. [LC123art.18 and AnnexesI–V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
 
-Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified `skill_facts` — edit the facts, not the prose.
+| Item | Rule for calendar2026 and conditions | Official source |
+|---|---|---|
+| Microempresa | Annual gross revenue at most360,000; registered forms and art.3 exclusions still apply | [LC123art.3I,§4](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Empresa de Pequeno Porte | Annual gross revenue above360,000 and at most4,800,000; a startup uses the proportional limit | [LC123art.3II,§2](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Separate export ceiling | Up to an additional4,800,000 for qualifying goods/services exports, separately from the domestic ceiling; not a single combined4,800,000 test | [LC123art.3§14](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Startup ME/EPP ceiling | Apply1/12 of the relevant annual limit for each month from opening to year-end, counting a fraction as a full month; exclusion timing differs for excess up to20% | [LC123art.3§§2,10–14](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| ICMS/ISS sublimit | 3,600,000 in all states and DF for2026; apply the distinct excess/startup timing before removing local taxes from DAS | [RFB PortariaCGSN54/2025 notice](https://www8.receita.fazenda.gov.br/SimplesNacional/Noticias/NoticiaCompleta.aspx?id=94c10cc2-7eb5-4ef0-bfb2-5479e72caff8); [LC123arts.19–20](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Factor R | Listed services use AnnexIII at ratio at least28%; otherwise AnnexV. It is not an election and does not apply to every service | [LC123art.18§§5-J,5-K,24](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Ordinary MEI ceiling | 81,000 annual; startup6,750 per opening-to-year-end month, including fractions. Positive occupation and other eligibility tests apply | [LC123art.18-A§§1–4](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Cargo MEI ceiling | 251,600 annual or startup20,966.67 per counted month, for the exclusive qualifying cargo occupation route; not a higher limit for every MEI with a van | [LC123art.18-F](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [DASN manual §4.3.1](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf) |
+|2026 minimum wage | 1,621 from1January2026; used below for MEI's own contribution | [Decree12797/2025art.1](https://www2.camara.leg.br/legin/fed/decret/2025/decreto-12797-23-dezembro-2025-798569-publicacaooriginal-177587-pe.html) |
+| Ordinary MEI social contribution |5% of the minimum, giving81.05 monthly, plus1 ICMS and/or5 ISS if liable to the respective tax | [Lei8212art.21§2IIa](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [LC123art.18-A§3V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Cargo MEI social contribution |12% of the minimum, giving194.52, plus the applicable fixed local tax. The exclusive occupation conditions remain necessary | [LC123art.18-FIII](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Ordinary monthly DAS-MEI | Commerce/industry82.05; services86.05; both87.05 when both local components apply. Other taxes outside the fixed system remain separate; an eligible full-calendar-month benefit can remove the own-INSS component under the rule below | [LC123art.18-A](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [Lei8212art.21](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [Decree12797](https://www2.camara.leg.br/legin/fed/decret/2025/decreto-12797-23-dezembro-2025-798569-publicacaooriginal-177587-pe.html) |
 
-### Simples Nacional
+### Annex I
 
-- **MEI** — R$ 81.000/ano (proposta de aumento pendente)  _(LC 123/2006 Art. 18-A)_
-- **Microempresa (ME)** — Considera-se Microempresa (ME), para fins da LC nº 123/2006, a pessoa jurídica com receita bruta anual igual ou inferior a R$ 360.000,00.  _(Lei Complementar nº 123/2006 – art. 3º, inciso I.)_
-- **EPP** — Considera-se Empresa de Pequeno Porte (EPP) a pessoa jurídica com receita bruta anual superior a R$ 360.000,00 e igual ou inferior a R$ 4.800.000,00, nos termos do art. 3º da LC nº 123/2006.  _(Lei Complementar nº 123/2006 – art. 3º, inciso II.)_
-- **Sublimite ICMS/ISS** — O sublimite de receita bruta de R$ 3.600.000, previsto na LC nº 123/2006, pode determinar o recolhimento do ICMS e/ou ISS fora do Simples Nacional em determinados Estados, sem excluir a empresa do regime simplificado.  _(Principal Lei Complementar nº 123/2006 Art. 19. Informou Art. 13 e ele trata dos tributos abrangidos pelo Simples Nacional. O tema sublimite estadual de ICMS/ISS está principalmente relacionado ao: Art. 19 da LC 123/2006.)_
-- **Comércio/Indústria** — R$ 81,05 (INSS) + R$ 1,00 (ICMS)  _([Lei Complementar nº 123/2006 – art. 18-A. Lei nº 8.212/1991.](https://www8.receita.fazenda.gov.br/simplesnacional/Noticias/NoticiaCompleta.aspx?id=c3b2044c-ff97-432a-b33c-ecf2a3df6dc3))_
-- **Serviços** — R$ 86,05 (INSS R$ 81,05 + ISS R$ 5,00).  _([Lei Complementar nº 123/2006 – art. 18-A. Lei nº 8.212/1991.](https://juazeirodonorte.ce.gov.br/informa/31684/contribui-o-mensal-do-microempreendedor-individual))_
-- **Comércio + Serviços** — R$ 87,05 (INSS R$ 81,05 + ICMS R$ 1,00 + ISS R$ 5,00).  _([Lei Complementar nº 123/2006 – art. 18-A. Lei nº 8.212/1991.](https://juazeirodonorte.ce.gov.br/informa/31684/contribui-o-mensal-do-microempreendedor-individual))_
-- **Anexo I** — Comércio, varejo  _(Resolução CGSN nº 140/2018.)_
-- **Anexo II** — Indústria, manufatura (inclui IPI)  _(Resolução CGSN nº 140/2018.)_
-- **Anexo III** — Anexo III – Prestação de serviços em geral, incluindo diversas atividades de manutenção, reparação, saúde, educação e serviços administrativos, conforme o CNAE e as regras da LC nº 123/2006.  _(Resolução CGSN nº 140/2018.)_
-- **Anexo IV** — Anexo IV – Serviços de limpeza, vigilância, segurança, construção civil e atividades correlatas, cuja Contribuição Patronal Previdenciária (CPP) não está incluída no DAS e deve ser recolhida separadamente.  _(Lei nº 8.212/1991.)_
-- **Anexo V (ou III via Fator R)** — Anexo V – Atividades intelectuais e profissionais, incluindo consultoria em TI e diversos serviços técnicos especializados, sujeitas à regra do Fator R. Quando o Fator R for igual ou superior a 28%, a tributação poderá ocorrer pelo Anexo III.  _(Resolução CGSN nº 140/2018.)_
-- **Fator R limiar** — Nas atividades sujeitas ao Fator R, quando a razão entre a folha de salários dos últimos 12 meses e a receita bruta dos últimos 12 meses for igual ou superior a 28%, a tributação ocorre pelo Anexo III; caso contrário, permanece no Anexo V.  _(Resolução CGSN nº 140/2018.)_
-- **DAS mensal** — O DAS do Simples Nacional deve ser recolhido até o dia 20 do mês subsequente ao da apuração da receita, prorrogando-se o vencimento para o primeiro dia útil seguinte quando não houver expediente bancário.  _(Lei Complementar nº 123/2006 – art. 21. Resolução CGSN nº 140/2018.)_
-- **DEFIS anual** — A DEFIS deve ser transmitida pelas empresas optantes pelo Simples Nacional até 31 de março do ano subsequente ao ano-calendário a que se refere a declaração.  _(Resolução CGSN nº 140/2018.)_
-- **DASN-SIMEI** — O Microempreendedor Individual (MEI) deve apresentar a DASN-SIMEI até 31 de maio do ano subsequente ao ano-calendário a que se referem as informações.  _(Resolução CGSN nº 140/2018.)_
-- **Regime híbrido art. 21-A** — O optante pelo Simples Nacional poderá optar, a partir de 2027 (opção em setembro de 2026 para o primeiro semestre de 2027), pelo recolhimento da CBS e do IBS fora do DAS, pelo regime regular, nos termos da LC nº 123/2006, permitindo ao adquirente o aproveitamento dos créditos desses tributos conforme o regime geral.  _([Lei Complementar nº 123/2006 – art. 21-A (incluído pela Reforma Tributária). Lei Complementar nº 214/2025. Emenda Constitucional nº 132/2023.](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf))_
+| RBT12 in BRL | Nominal rate | Deduction in BRL | Official source |
+|---|---|---|---|
+| 1 a Faixa Até 180.000,00 | 4,00% | 0 | [LC123 Annex I](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 2 a Faixa De 180.000,01 a 360.000,00 | 7,30% | 5.940,00 | [LC123 Annex I](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 3 a Faixa De 360.000,01 a 720.000,00 | 9,50% | 13.860,00 | [LC123 Annex I](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 4 a Faixa De 720.000,01 a 1.800.000,00 | 10,70% | 22.500,00 | [LC123 Annex I](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 5 a Faixa De 1.800.000,01 a 3.600.000,00 | 14,30% | 87.300,00 | [LC123 Annex I](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 6 a Faixa De 3.600.000,01 a 4.800.000,00 | 19,00% | 378.000,00 | [LC123 Annex I](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
 
-## Seção 1 — Referência rápida
+### Annex II
 
-**Referência rápida**
+| RBT12 in BRL | Nominal rate | Deduction in BRL | Official source |
+|---|---|---|---|
+| 1 a Faixa Até 180.000,00 | 4,50% | 0 | [LC123 Annex II](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 2 a Faixa De 180.000,01 a 360.000,00 | 7,80% | 5.940,00 | [LC123 Annex II](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 3 a Faixa De 360.000,01 a 720.000,00 | 10,00% | 13.860,00 | [LC123 Annex II](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 4 a Faixa De 720.000,01 a 1.800.000,00 | 11,20% | 22.500,00 | [LC123 Annex II](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 5 a Faixa De 1.800.000,01 a 3.600.000,00 | 14,70% | 85.500,00 | [LC123 Annex II](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 6 a Faixa De 3.600.000,01 a 4.800.000,00 | 30,00% | 720.000,00 | [LC123 Annex II](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
 
-| Campo | Valor |
-| --- | --- |
-| País | Brasil |
-| Tributo | Tributo unificado do Simples Nacional (DAS) que engloba IRPJ, CSLL, PIS, COFINS, CPP, ICMS, ISS, IPI |
-| Moeda | Apenas BRL |
-| Ano-base | Ano-calendário |
-| Legislação principal | Lei Complementar 123/2006 (Estatuto Nacional da Microempresa) |
-| Legislação complementar | Resoluções CGSN; LC 155/2016; EC 132/2023; LC 214/2025; LC 227/2026 |
-| Autoridade fiscal | Receita Federal do Brasil (RFB); Comitê Gestor do Simples Nacional (CGSN) |
-| Portal de entrega | Portal do Simples Nacional (www8.receita.fazenda.gov.br/SimplesNacional) |
-| Prazo de entrega | DAS até o dia 20 do mês seguinte; DEFIS até 31 de março; DASN-SIMEI até 31 de maio |
-| Colaborador | Open Accountants Community |
-| Validação | Verificado por Ariane Marrocos (SP 312052/O-1) em 2026-06-03 |
-| Versão da skill | 2.1 |
+### Annex III
 
-### Limites de faturamento
+| RBT12 in BRL | Nominal rate | Deduction in BRL | Official source |
+|---|---|---|---|
+| 1 a Faixa Até 180.000,00 | 6,00% | 0 | [LC123 Annex III](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 2 a Faixa De 180.000,01 a 360.000,00 | 11,20% | 9.360,00 | [LC123 Annex III](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 3 a Faixa De 360.000,01 a 720.000,00 | 13,50% | 17.640,00 | [LC123 Annex III](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 4 a Faixa De 720.000,01 a 1.800.000,00 | 16,00% | 35.640,00 | [LC123 Annex III](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 5 a Faixa De 1.800.000,01 a 3.600.000,00 | 21,00% | 125.640,00 | [LC123 Annex III](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 6 a Faixa De 3.600.000,01 a 4.800.000,00 | 33,00% | 648.000,00 | [LC123 Annex III](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
 
-**Limites de faturamento**
+### Annex IV
 
-| Categoria | Faturamento anual máximo |
-| --- | --- |
-| MEI | R$ 81.000 (TBC — há propostas para elevar a R$ 144.913,41 ainda não promulgadas) |
-| Microempresa (ME) | R$ 360.000 |
-| Empresa de Pequeno Porte (EPP) | R$ 4.800.000 |
-| Sublimite ICMS/ISS | R$ 3.600.000 |
+| RBT12 in BRL | Nominal rate | Deduction in BRL | Official source |
+|---|---|---|---|
+| 1 a Faixa Até 180.000,00 | 4,50% | 0 | [LC123 Annex IV](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 2 a Faixa De 180.000,01 a 360.000,00 | 9,00% | 8.100,00 | [LC123 Annex IV](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 3 a Faixa De 360.000,01 a 720.000,00 | 10,20% | 12.420,00 | [LC123 Annex IV](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 4 a Faixa De 720.000,01 a 1.800.000,00 | 14,00% | 39.780,00 | [LC123 Annex IV](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 5 a Faixa De 1.800.000,01 a 3.600.000,00 | 22,00% | 183.780,00 | [LC123 Annex IV](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 6 a Faixa De 3.600.000,01 a 4.800.000,00 | 33,00% | 828.000,00 | [LC123 Annex IV](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
 
-### DAS-MEI mensal (2025)
+### Annex V
 
-**DAS-MEI mensal (2025)**
+| RBT12 in BRL | Nominal rate | Deduction in BRL | Official source |
+|---|---|---|---|
+| 1 a Faixa Até 180.000,00 | 15,50% | 0 | [LC123 Annex V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 2 a Faixa De 180.000,01 a 360.000,00 | 18,00% | 4.500,00 | [LC123 Annex V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 3 a Faixa De 360.000,01 a 720.000,00 | 19,50% | 9.900,00 | [LC123 Annex V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 4 a Faixa De 720.000,01 a 1.800.000,00 | 20,50% | 17.100,00 | [LC123 Annex V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 5 a Faixa De 1.800.000,01 a 3.600.000,00 | 23,00% | 62.100,00 | [LC123 Annex V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| 6 a Faixa De 3.600.000,01 a 4.800.000,00 | 30,50% | 540.000,00 | [LC123 Annex V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
 
-| Atividade | INSS (5% do salário mínimo) | ICMS | ISS | Total |
-| --- | --- | --- | --- | --- |
-| Comércio/Indústria | R$ 75,90 | R$ 1,00 | -- | R$ 76,90 |
-| Serviços | R$ 75,90 | -- | R$ 5,00 | R$ 80,90 |
-| Comércio + Serviços | R$ 75,90 | R$ 1,00 | R$ 5,00 | R$ 81,90 |
+### Enacted later MEI changes, not the 2026 computation
 
-Baseado no salário mínimo de R$ 1.518,00 vigente em 2025. A partir de janeiro de 2026 (salário mínimo de R$ 1.621), o INSS passa a R$ 81,05 e o DAS-MEI a R$ 82,05 (Comércio/Indústria), R$ 86,05 (Serviços) e R$ 87,05 (Comércio + Serviços).
+LC238/2026 was enacted on21October2026. Its general ordinary-MEI ceiling becomes140,000, with11,666.67 startup monthly proportional amount, from1January2028. A transitional2027 ceiling is110,000, with9,166.67 startup monthly amount. The revenue-limit expansion for2027–2029 depends on the budget-law conditions in art.3; do not promise the expanded limit before checking them for that year. The change allowing two employees and other non-ceiling changes starts1January2027, subject to their own conditions. The remission/renegotiation chapter is not an unconditional cancellation of every DAS debt. None changes the 2026 ceiling, employee rule or payment computation above. [LC238arts.2–3,5–10](https://www2.camara.leg.br/legin/fed/leicom/2026/leicomplementar-238-21-outubro-2026-800071-publicacaooriginal-181678-pl.html).
 
-### Fórmula da alíquota efetiva
+## The base
 
-- **Alíquota Efetiva** — Alíquota Efetiva = (RBT12 x Alíquota Nominal - Parcela a Deduzir) / RBT12
+### Eligibility and activity classification
 
-### Defaults conservadores
+Apply the complete LC123art.3§4 and art.17 bars and their exceptions. Important ordinary checks are:
 
-**Defaults conservadores**
+| Situation | Treatment and condition | Official source |
+|---|---|---|
+| Another legal entity holds capital; foreign-headquartered branch; company has overseas branch; share corporation | Art.3§4 contains separate structural bars. Corporate participations and the specified cooperative/association exceptions require the full tests | [LC123art.3§§4–6](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Individual owner also owns/administers another business | Apply the particular participation percentage and global-revenue conditions; do not reject every second ownership automatically | [LC123art.3§4III–V,§5](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Owner/partner domiciled abroad; public-entity capital; enforceable tax/social debts; missing/irregular required registration | Distinct art.17 bars. Suspended enforceability is relevant for the debt test; prove regularisation rather than assume a bank payment cured it | [LC123art.17II,III,V,XVI](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Financial/factoring/credit, energy, specified vehicles/fuel, wholesale/production restrictions, property development/own-property letting and labour supply | Apply the actual statutory bar and its exceptions. Particular passenger transport and small alcoholic-drink producers have defined exceptions; AnnexIV activities need §1 and art.18§5-C together | [LC123arts.3§4VIII,17I,VI–XV,§§1,5;18§5-C](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Employment disguised as supplier | Personal service, subordination and habituality together are an art.3§4XI exclusion; a CNPJ or invoice alone does not establish independence | [LC123art.3§4XI](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
 
-| Ambiguidade | Default |
-| --- | --- |
-| Tipo de entidade desconhecido | ME (não MEI — mais conservador) |
-| CNAE desconhecido | Anexo V (alíquotas mais altas) |
-| Folha desconhecida para Fator R | Fator R < 28% (permanece no Anexo V) |
-| Faixa de faturamento desconhecida | Faixa mais alta aplicável |
+For MEI, also establish optant status, only one establishment, no participation in another enterprise as holder/partner/administrator, and ordinarily at most one employee receiving the minimum wage or professional floor under the2026 rule. LC123art.18-C§2 permits a substitute employee, including a fixed-term hire, during the sole employee’s legal absence until the absence conditions cease; this is the statutory replacement exception, not a second permanent position. The statutory startup form is excluded by LC123art.18-A§4V. This legal-form exclusion does not mean every newly opened ordinary business is barred: an otherwise eligible new MEI uses the proportional opening-year limit. Eligibility is a **positive occupation test** against AnnexXI, not the old blanket phrase “all unregulated professions” or generic “IT services”. The current official occupation PDF lists the actual occupation, CNAE and ISS/ICMS flags. Confirm all actual activities against it; a software consultant is not made eligible by calling the work computer maintenance. [LC123arts.18-A,18-C](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [DASN manual §1](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf); [official AnnexXI](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Anexo_XI.pdf).
 
-## Seção 2 — Insumos obrigatórios e catálogo de recusas
+**MEI benefit adjustment.** Under the PGMEI manual, mark **Benefício INSS** only for salary-maternity, sickness or imprisonment benefit as an individual contributor covering the entire calendar month, from first to last day. For that eligible month own-INSS is zero; applicable fixed ICMS/ISS remains and is accumulated into later assessments until the10minimum for collection is reached. A partial month does not remove the whole contribution. Retain the benefit period and actual assessment, and coordinate an authorised automatic debit to avoid duplicate/manual payment. [PGMEI manual §§4.2,4.7](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGMEI_2018.pdf).
 
-### Insumos obrigatórios
+Use the contract and service actually performed to select the annex; CNAE is evidence, not a licence to ignore the statutory activity. AnnexI covers resale, II industrialised goods. AnnexIII includes its expressly listed services, including specified education/training, repairs, accounting offices and other statutory categories. AnnexIV includes construction/engineering works and subcontracts, landscaping/interior decoration, surveillance/cleaning/conservation and legal services. Factor-R professional activities under art.18§5-I, §5-D and related rules need the payroll test to choose III/V; do not send lawyers to V or all maintenance/health/IT work to a single generic annex. [LC123art.18§§4,5-B–5-M](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [manual §§8.1–8.2](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
 
-**Mínimo viável** — tipo de entidade (MEI/ME/EPP), receita bruta dos últimos 12 meses (RBT12), tipo de atividade (CNAE), receita do mês corrente.
+AnnexIV excludes CPP from DAS, with the employer contribution collected under the otherwise applicable law. Do not treat “20% of payroll” as every employer's complete liability: actual contribution base, RAT, employee deductions, other applicable rules and any lawful replacement regime need separate payroll work. Other ordinary annexes include CPP within the annex allocation, subject to the actual exceptions. [LC123arts.13VI,18§5-C](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [Lei8212art.22](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html).
 
-**Recomendado** — folha de salários (para o Fator R), unidade da federação de registro, histórico de pagamentos do DAS.
+### Revenue, effective rate and segregation
 
-**Ideal** — dados completos do PGDAS-D, receita segregada por atividade, confirmação da classificação por Anexo, DEFIS do exercício anterior.
+1. Reconcile gross revenue from underlying supplies, fiscal documents, marketplace reports and earned/received records. Sale value, service price and the result of operations on another's account are treated under the statutory revenue definition; exclude cancelled sales and unconditional discounts, with returns handled in the proper period. A PIX credit can be a sale, capital, loan or transfer. Identify it before inclusion. Marketplace settlement after fees is not automatically the gross sale amount. [LC123art.3§1](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [manual §§1.5,6](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
+2. Keep separate running domestic/export annual-limit totals, prior-year totals, and prior12-month earned revenue for rate calculation. For a continuing company use RBT12, the12months before the assessment month. For a startup opted from opening, annualised RBT12 in the first month is that month’s earned revenue×12; in the next11months it is the average earned revenue of prior activity months×12; from month13 use the ordinary rolling history. A business entering the January after opening follows the latter proportional rule until month13. Domestic and export revenue are separately used for their rate/base calculations under art.3§15, while both are combined for factorR. The calendar-year limit test and rate annualisation are different calculations. If RBT12 is zero, the manual uses1 for the effective-rate formula, avoiding division by zero. [LC123art.18§§1–3](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [manual §§1.5,6,8](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf); [FAQ5.3–5.4,5.24](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf).
+3. Under the annual irrevocable cash option, received revenue is the monthly base, but earned revenue still controls rates and limits. Record both; an unpaid invoice does not disappear from the eligibility/annex-band history. Preserve the actual chosen regime. [LC123art.18§3](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [manual §5](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
+4. Select the annex and its RBT12 band, then compute **effective rate=(RBT12×nominal rate−deduction)/RBT12**. Apply it to the appropriate monthly segregated base and statutory allocation adjustments. Multiple activities share the relevant company domestic/export revenue history but are computed in their actual categories. Apply the effective tax-allocation percentages, cap the ISS component at the statutory5% and transfer the excess proportionately to the same-band federal components; the annex’s total rate is not the ISS rate. No input-cost deduction is allowed merely because the supplier charged tax. [LC123art.18§§1-A,4](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
+5. Segregate domestic/export resale, industrial sales, service categories, ISS location/retention, monophase or substitution, immunity and supported local reductions. A substituted trader's revenue qualification differs from the substituting seller's own ICMS operation. Removing the substituted/monophase tax component does not remove that revenue from every other tax's base. Fixed ICMS/ISS requires an applicable local rule, not a free field election. [LC123art.18§4](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [manual §§6.5–6.6](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
+6. Reconcile final DAS by tax and establishment with prior balances, supported suspension/assessment qualifications and payments. Imports, specified ST/advance/interstate ICMS, retained/imported ISS, AnnexIV CPP and other art.13§1 items may remain outside DAS. “Unified” does not mean every conceivable tax is included. [LC123art.13§1](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
 
-### Catálogo de recusas
+### Factor R, including startups and zero months
 
-- **R-BR-S1 — Transição por exclusão** — Receita superior a R$ 4.800.000. O cliente está excluído do Simples Nacional. Deve migrar para Lucro Presumido ou Lucro Real. Escalar para contador qualificado.
-- **R-BR-S2 — Lucro Presumido / Lucro Real** — Esta skill cobre apenas o Simples Nacional e o MEI. Os demais regimes possuem métodos de apuração distintos.
-- **R-BR-S3 — Regras estaduais específicas de ICMS** — Regras estaduais detalhadas de ICMS para empresas acima do sublimite exigem conhecimento estadual específico. Escalar.
-- **R-BR-S4 — Regime híbrido CBS/IBS com creditamento** — A opção pelo regime híbrido do art. 21-A da LC 123/06 (introduzido pela LC 214/2025) exige análise da composição da clientela B2B versus B2C e simulação de impacto. Escalar para contador para decisão definitiva.
+For covered services only, use **FS12/RBT12r**. FS12 is remuneration paid in the relevant prior12months plus qualifying CPP/FGTS actually collected, including paid pró-labore and the prescribed thirteenth salary; rents and distributed profits are excluded. Do not add all INSS deductions as employer CPP. The denominator includes earned domestic and export revenue in the relevant period even where the monthly DAS uses cash receipts. Reconcile reported payroll and actual payment/contribution evidence. [LC123art.18§§5-K,24](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [manual §§1.5,8.2](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
 
-## Seção 3 — Biblioteca de padrões de transações
+The manual's zero/startup rules matter: no payroll and no revenue gives0.01; no payroll with positive revenue also gives0.01; positive payroll with zero revenue gives0.28. In the opening month use that month's paid payroll and revenue; for fewer than13months of activity use the actual accumulated prior months prescribed by §8.2.1 rather than invent12full months. Express the ratio to two decimal places without rounding for the threshold test, as the manual requires. A ratio exactly0.28 belongs in III. Obtain the underlying figures before deciding. [manual §8.2.1pp75–77](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
 
-### 3.1 Padrões de receita
+### Excess revenue and local sublimit timing
 
-**Padrões de receita**
+| Event | Effective treatment | Official source |
+|---|---|---|
+| Continuing ME/EPP exceeds annual ceiling by at most20% | General exclusion effective following calendar year; exactly20% belongs here | [LC123art.3§9-A](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Continuing ME/EPP exceeds by more than20% | General exclusion from following month; do not label every first over-limit sale an immediate annual exit | [LC123art.3§9](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Startup exceeds proportional ceiling | Ordinarily retroactive to opening, except excess at most20% gives following-year effect | [LC123art.3§§10,12](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| Local sublimit exceeded | Local impediment follows its own art.20 rules: ordinarily following month; at most20% excess following year. Startup retroactivity and its20% exception have separate conditions | [LC123arts.3§§11,13,20§§1,1-A](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
+| MEI exceeds ordinary/proportional ceiling by at most20% | SIMEI exit from following1January, prescribed excess-payment and communication duties still apply | [LC123art.18-A§7IIIa/IVa,§§8,10](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [DASN manual §4.7–4.8](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf) |
+| MEI exceeds by more than20% | Retroactive SIMEI exit to1January of the excess year, or opening for startup; compute ordinary Simples if still eligible, rather than only a fixed top-up | [LC123art.18-A§7IIIb/IVb](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html) |
 
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| VENDA, RECEITA, PIX RECEBIDO | Incluir no RBT12 | Receita bruta para definição de faixa |
-| NF-E EMITIDA, NFS-E EMITIDA | Incluir no RBT12 | Receita por emissão de nota fiscal |
-| MERCADO LIVRE, MARKETPLACE | Incluir no RBT12 | Vendas em plataformas |
-| EXPORTAÇÃO | Incluir no RBT12 | O teste de limite inclui exportações |
-| DEVOLUÇÃO, CANCELAMENTO | Deduzir da receita | Reduz a receita bruta |
-| TRANSFERÊNCIA PRÓPRIA | EXCLUIR | Movimentação interna |
+Above the local sublimit, federal Simples can continue while local taxes leave DAS from the proper effective date. Check separate export totals, prior/current year, sixth-band allocations and all establishments before recomputing. A SIMEI exit is not automatically an exit from Simples Nacional. If an initial MEI excess notification was for at most20% and revenue later crosses more than20% in the same year, a new notification is required by the last business day of the month following that later crossing; its earlier retroactive effective date must be applied. Keep both communication receipts and effective dates, and correct the periods actually affected. [LC123arts.18-A§9,19–20](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
 
-### 3.2 Padrões de pagamento de tributos
+### 2026 transition and the separate 2027 IBS/CBS decision
 
-**Padrões de pagamento de tributos**  _(https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf)_
+Simples operations are excluded from the2026 test-rate collection under LC214art.348IIIc. This is not a general waiver of legacy DAS. The new electronic-document schedule has its own Simples start from1January2027 under JointAct4. Use [brazil-vat](brazil-vat.md) for general grace, waiver, correction and current document phases, rather than the old statement “all penalties suspended for3months”. [LC214art.348](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm); [JointAct4art.1§1](https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf).
 
-| Padrão | Tratamento | Notas |
-| --- | --- | --- |
-| DAS, SIMPLES NACIONAL | Pagamento unificado | Engloba todos os tributos |
-| DAS-MEI, DASN | Pagamento fixo do MEI | Valor fixo mensal |
-| ICMS FORA SIMPLES | ICMS apartado | Acima do sublimite ou ICMS-ST |
-| ISS FORA SIMPLES | ISS apartado | Acima do sublimite |
-| INSS PATRONAL | INSS patronal apartado | Apenas Anexo IV |
-| CBS/IBS APARTADO (2027+) | Recolhimento separado fora do DAS | Apenas na opção pelo regime regular do IBS e CBS no Simples Nacional |
+From2027, a Simples business can keep IBS/CBS within DAS or elect the regular regime for those taxes while preserving the remaining Simples treatment. The election provision is **LC123art.13§§9–11**, inserted by LC214art.517 and amended by LC227; art.21-A concerns CADIN, not this election. Elections apply to semesters beginning January/July, normally elected the preceding September/March. A refund under the regular regime can restrict exit under LC214art.41§5; include that lock in the decision. Full-DAS sellers do not take their own regular IBS/CBS input credits, but a regular buyer can credit the IBS/CBS amount due through Simples, subject to the law. “No transferable credit at all” is therefore wrong. [LC214arts.41,47§9,517,544](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm).
 
-### 3.3 Padrões de definição de Anexo
+For the first2027 semester the actual exceptional timetable was: Simples entry/return1September–15October2026, pending issues regularised by30October; regular IBS/CBS election1September–30October2026; irreversible cancellation3November–20December2026. These are distinct choices. Existing Simples optants need not reapply merely to remain. As of11November2026, the October windows have passed; do not tell a continuing company to make a fresh ordinary election now. New-company/MAT cases follow their actual current route. [CGIBS30September2026 notice](https://cgibs.gov.br/embora-os-periodos-sejam-parecidos-tratam-de-escolhas-diferentes-por-isso-e-importante-entender-cada-situacao); [regular-option manual §§2–4](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual%20op%C3%A7%C3%A3o%20regime%20regular%20IBS%20e%20CBS%20no%20Simples%20Nacional.pdf).
 
-**Padrões de definição de Anexo**
+Compare both methods using actual taxed inputs, expected output bases/rates for the effective period, customers' legally available credits and agreed prices, recovery timing, compliance costs and the remaining DAS. B2B/B2C labels alone do not prove a saving, and an estimated future standard rate cannot complete a binding2027 comparison. State which figures remain unknown and prepare both workpapers for review. This is a decision method, not a recommendation to elect automatically.
 
-| Atividade CNAE | Anexo típico | Notas |
-| --- | --- | --- |
-| Comércio, varejo | Anexo I | Venda de mercadorias |
-| Indústria, manufatura | Anexo II | Inclui IPI |
-| Serviços gerais, manutenção | Anexo III | Verificar Fator R para atividades do V |
-| Limpeza, segurança, construção | Anexo IV | Sem CPP no DAS |
-| Consultoria em TI, serviços profissionais | Anexo V (ou III se Fator R >= 28%) | Fator R é crítico |
+## Deadlines and filing
 
-## Seção 4 — Exemplos resolvidos
+| Obligation | Ordinary deadline and boundary | Official source |
+|---|---|---|
+| Monthly PGDAS-D and DAS |20th of following month; payment moves to next banking business day if no bank service. Check published disaster/other extensions for the actual place/period | [official manual §§1.4,6.1](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf); [FAQ6.4,6.8](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf) |
+| DEFIS |31March of following year; normal calendar2026 due31March2027. Special merger/split/incorporation/extinction: endJune for first-four-month events, otherwise endfollowing month. Ordinary date does not move for weekend/holiday | [FAQ6.10](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf); [manual §9.1](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf) |
+| DASN-SIMEI |Last day of May following year; calendar2026 ordinarily31May2027. Extinction special: endJune for first-four-month events, otherwise endfollowing month | [DASN manual §2.2](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf) |
+| MEI excess communication |Last business day of month after excess, with effective date determined by the20%/startup tests above | [DASN manual §4.8](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf) |
 
-### Exemplo 1 — DAS mensal do MEI (Serviços)
+**ME/EPP monthly route.** Open the [Portal do Simples Nacional](https://www8.receita.fazenda.gov.br/SimplesNacional/Default.aspx), use its authorised Simples service access or e-CAC/gov.br with the correct CNPJ representation, then **Cálculo e Declaração → PGDAS-D e DEFIS**. Follow the current access controls; the cited2025 manual's screen labels are guidance, not a claim that login screens were tested live. [manual §3](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
 
-**Entrada:** MEI prestando serviços de TI. Salário mínimo R$ 1.621 (2026).
+1. Confirm **Regime de Apuração → Optar/Consultar** for the correct year, preserving the annual irrevocable cash/accrual record. The manual specifies the November computation for an existing optant's following-year choice and distinct opening-month/November/December cases. [§5](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
+2. Choose **Declaração Mensal → Declarar/Retificar**, enter month/year and whole-company earned revenue separated domestic/export. Cash optants also enter received revenue. Complete a zero-revenue month with zero; inactivity does not remove the monthly duty. [§§6.1,6.4](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
+3. For each establishment select actual **Atividades** and enter segregated activity revenue. Use the correct ISS municipality and supported qualifications for ST/monophase, retention, suspension, immunity or local relief. A court suspension requires its actual process, not an unchecked reason code. [§§6.5–6.6](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
+4. Check **Resumo da Declaração no Simples Nacional – Valor Devido por Tributo**, then **Transmitir**. Save **Imprimir Recibo** and the submitted declaration. **Gerar DAS** for that PA, continue/check summary, save the PDF and pay through the authorised facility. Keep proof of payment separately. Previously declared outstanding debts may need **Débitos → Consultar/Gerar DAS** so partial payments, offsets and transfers are recognised. [§§6.7–6.8](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
 
-**Cálculo:**
-- INSS: 5% x 1.621 = R$ 81,05
-- ISS: R$ 5,00
-- Total DAS: R$ 86,05/mês
+**Annual DEFIS.** In the same application use **DEFIS → Acessar DEFIS**; choose year and Original/Retificadora, with normal/special event and date only when applicable. Complete missing monthly declarations first. Enter company and establishment economic/fiscal data, owner income and the actual inactivity answer; zero revenue is not itself proof of no patrimonial movement. Use **Salvar Dados → Verificar Pendências → Transmitir → Gravar Recibo/Imprimir**. Correct a false special-event declaration through the manual's actual rectification route because it can block subsequent periods. No annual tax payment is proved merely by transmitting DEFIS. [manual §§9.2–9.8](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
 
-### Exemplo 2 — Simples Nacional, Anexo I Comércio
+**MEI.** Use the Portal's **PGMEI → Emitir Guia de Pagamento (DAS)**, enter CNPJ/year, select PA, choose **Apurar/Gerar DAS → Imprimir/Visualizar PDF**, check the amount/date and pay with separate proof. It remains monthly even without revenue and includes the opening and closing month. Use **Serviços Públicos → DASN SIMEI – Declaração Anual para o MEI** for the annual return. Enter CNPJ, year and original/rectifying normal/special status; complete missing prior returns and PGMEI assessments. Enter **Receita de comércio e indústria**, **Receita de prestação de serviços** and employee answer. Check automatically totalled gross revenue, assessed/paid monthly amounts and any excess; choose **Transmitir**, retain receipt and any excess DAS or MAED/DARF. A DASN is a declaration, not a monthly payment channel. The cargo case also checks exclusive occupations and the compatible contribution. [DASN manual §§2–4.9](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf); [PGMEI manual](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGMEI_2018.pdf).
 
-**Entrada:** RBT12 = R$ 500.000. Receita do mês = R$ 45.000.
+**First-semester2027 regular IBS/CBS record.** For an existing optant, the published manual routes from the Portal's **Opção pelo regime regular de IBS e CBS** or the [consumption portal](https://consumo.tributos.gov.br/) **Escolher Regime de Apuração IBS/CBS**. Use authorised gov.br representation of the CNPJ, verify the displayed entity, **Solicitar Opção**, acknowledge and confirm, then save result PDF and history/effective date. New companies use MAT's actual route; the October manual says later MAT instructions were still to follow, so do not invent those screens. During the published cancellation window, inspect the actual option card/history, cancel only if authorised and retain the receipt; cancellation is irreversible for that semester. [regular-option manual §§3–4](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual%20op%C3%A7%C3%A3o%20regime%20regular%20IBS%20e%20CBS%20no%20Simples%20Nacional.pdf).
 
-**Cálculo:**
-- Faixa 3 (360.001 a 720.000)
-- Alíquota efetiva = (500.000 x 9,50% - 13.860) / 500.000 = 6,728%
-- DAS = 45.000 x 6,728% = R$ 3.027,60
+## Penalties and interest
 
-### Exemplo 3 — Anexo V com Fator R >= 28%
+Monthly PGDAS-D late/omitted information is subject to LC123art.38-A:2% per calendar month or fraction from the day after the original filing deadline, capped at20% of the declared taxes even if paid; minimum50 per reference month. Incorrect/omitted information has20 per group of10. Subject to the statutory minimum, penalties reduce to half before an official procedure or to75% when filed within an intimation's deadline. A technically nonconforming declaration can be treated as not filed, with the prescribed10-day replacement notice. The2025 PGDAS manual's old “April of next year” starting clock is outdated; the current statute and October2026FAQ6.5 control. [LC123art.38-A](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [FAQ6.5](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf).
 
-**Entrada:** Empresa de consultoria, RBT12 = R$ 400.000. Folha dos últimos 12 meses = R$ 130.000.
+DASN-SIMEI lateness generates the applicable MAED notice/DARF, ordinarily2% per month/fraction capped20%, with50minimum; use the notice and legally applicable reductions rather than assuming the DAS balance contains the filing penalty. The manual separates assessment, late-payment charges and notice. The current October2026FAQ6.12 confirms a DEFIS late penalty from calendar2026, notified through Caixa Postal rather than automatically launched; the older manual’s “no fine” statement is obsolete. The precise current art.97-A amounts/reductions remain unconfirmed because its operative consolidated text was inaccessible. Likewise calculate late DAS interest/charges through the actual current authorised debt document, not an invented all-in rate. [DASN manual §4.9](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf); [LC123arts.21§3,38–38-B](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
 
-**Cálculo:**
-- Fator R = 130.000 / 400.000 = 32,5% (>= 28%)
-- Aplica-se Anexo III em vez do V
-- Faixa 3: alíquota efetiva = (400.000 x 13,50% - 17.640) / 400.000 = 9,09%
+## Cross-border points
 
-### Exemplo 4 — Excesso de receita no MEI (dentro de 20%)
+Owner domicile and foreign structures can defeat eligibility even when sales are entirely Brazilian. Domestic/export ceilings are separate; service exports require the actual foreign recipient/payment/result conditions, not simply a foreign currency bank credit. Segregation may remove particular export-tax components while preserving other DAS taxes and the appropriate rate history. Foreign goods/services imports and their outside-DAS taxes require separate analysis under art.13§1. [LC123arts.3§14,13,17II,18§4](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [manual §§1.5,6.5](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf).
 
-**Entrada:** MEI com receita anual de R$ 90.000 (11,1% acima do limite).
+## Two worked examples that recompute
 
-**Classificação:**
-- Excesso = R$ 9.000
-- DAS complementar sobre o excesso pelas alíquotas do Simples ME
-- Migração para ME a partir de janeiro do ano seguinte
+### Ordinary AnnexI commerce
 
-## Seção 5 — Regras de Tier 1 (quando os dados são claros)
+A continuing eligible optant has prior12-month earned revenue500,000 and current ordinary resale revenue45,000, with no ST, monophase, export, relief, local sublimit effect or other segregated revenue. AnnexI's third band supplies9.5% and13,860. Effective rate=(47,500−13,860)/500,000=6.728%; monthly DAS=3,027.60. This is a total-DAS example, not the buyer's separately deductible tax credit. [LC123art.18,AnnexI](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
 
-### 5.1 Elegibilidade do MEI
-
-- **Elegibilidade do MEI** — Receita anual máxima R$ 81.000. Máximo de 1 empregado, que receba exclusivamente 1 (um) salário mínimo ou o piso salarial da categoria profissional. Vedado a profissões regulamentadas. Vedado a sócio de outra empresa. Vedado ter filiais.  _([LC 123/2006, Arts. 18-A a 18-E](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm))_
-
-### 5.2 Anexos do Simples Nacional
-
-- **Anexos do Simples Nacional** — Anexo I: Comércio (4,00% -- 19,00%). Anexo II: Indústria (4,50% -- 30,00%). Anexo III: Serviços I (6,00% -- 33,00%). Anexo IV: Serviços II — limpeza/segurança/construção (4,50% -- 33,00%, sem CPP no DAS). Anexo V: Serviços profissionais (15,50% -- 30,50%).  _(LC 123/2006, Anexos I-V (com redação dada pela LC 155/2016))_
-
-### 5.3 Regra do Fator R
-
-- **Regra do Fator R** — Para atividades do Anexo V, se o Fator R (razão folha/receita dos últimos 12 meses) >= 28%, a atividade passa a ser tributada pelo Anexo III.  _(LC 123/2006, Art. 18, § 5º-J)_
-
-### 5.4 Sublimite de ICMS/ISS
-
-- **Sublimite de ICMS/ISS** — Se a receita ultrapassar R$ 3.600.000 mas permanecer abaixo de R$ 4.800.000: os tributos federais continuam no DAS do Simples, mas ICMS e ISS são recolhidos FORA do Simples às alíquotas normais estaduais/municipais.
-
-### 5.5 Regra especial do Anexo IV
-
-- **Regra especial do Anexo IV** — O Anexo IV NÃO inclui a CPP (INSS patronal) no DAS. O INSS patronal deve ser recolhido em separado (20% sobre a folha).
-
-## Seção 6 — Catálogo Tier 2 (exige julgamento do revisor)
-
-### 6.1 Cálculo do Fator R
-
-- **Cálculo do Fator R** — Exige dados precisos de folha, incluindo pró-labore, salários, FGTS, INSS e 13º salário. Sinalizar para o revisor.
-
-### 6.2 Atividades em múltiplos Anexos
-
-- **Atividades em múltiplos Anexos** — A receita deve ser segregada por atividade. A receita de cada atividade é tributada pelo respectivo Anexo, mas o RBT12 para definição de faixa é a receita TOTAL. Sinalizar para o revisor.
-
-### 6.3 Sublimite ultrapassado
-
-- **Sublimite ultrapassado** — Receita acima de R$ 3.600.000: aumento significativo de complexidade. Sinalizar para contador.
-
-### 6.4 MEI próximo do teto
-
-- **MEI próximo do teto** — Receita próxima de R$ 81.000: se ultrapassar em mais de 20%, o MEI é convertido retroativamente em ME a partir de janeiro. Deve contratar contador.
-
-### 6.5 Decisão entre Simples cheio e regime híbrido CBS/IBS (a partir de 2026)
-
-- **Decisão híbrido vs Simples cheio** — Sinalizar para o revisor sempre que o cliente tiver clientela predominantemente B2B com interesse no creditamento de CBS/IBS. A opção pelo art. 21-A da LC 123/06 implica recolhimento apartado de CBS+IBS e exige simulação comparativa.
-
-## Seção — Simples Nacional e a Reforma Tributária 2026
-
-### Marco legal
-
-- **EC 132/2023** — Emenda Constitucional que institui o IVA dual brasileiro (CBS federal + IBS subnacional) e extingue gradualmente PIS, COFINS, ICMS e ISS.  _(EC 132/2023)_
-- **LC 214/2025** — Lei Complementar que regulamenta a CBS e o IBS, define fato gerador, base de cálculo, não cumulatividade plena, regimes específicos e a opção do art. 21-A da LC 123/06 para optantes do Simples Nacional.  _(LC 214/2025)_
-- **LC 227/2026** — Segunda fase da regulamentação, em vigor a partir de janeiro de 2026, com início efetivo da cobrança simbólica.  _(LC 227/2026)_
-
-### MEI permanece isento
-
-- **MEI permanece isento** — Em 2026 o MEI não recolhe IBS/CBS; a partir de 2027 o DAS-MEI passa a incluir IBS e CBS em valores fixos (Anexo VII da LC 123/2006, na redação da LC 214/2025). Continua recolhendo seus tributos via DAS-MEI, que unifica INSS + ISS/ICMS no valor fixo mensal. Não há qualquer alteração estrutural para o MEI em 2026 e não há repasse de créditos de IBS/CBS aos seus clientes.  _(https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm)_
-
-### Simples Nacional (ME/EPP) — duas opções a partir de 2026
-
-- **Duas opções a partir de 2026** — O Simples Nacional para ME e EPP continua existindo. A partir de 2027 (opção feita em setembro de 2026), o optante pode escolher entre dois caminhos: **(a) Permanecer integralmente no Simples (caminho padrão).** O DAS continua a ser o recolhimento único. IBS e CBS já estão embutidos no DAS, sem créditos transferíveis aos clientes. É a opção mais simples administrativamente e adequada a clientelas predominantemente B2C ou compostas por outros optantes do Simples. **(b) Regime híbrido (opção do art. 21-A da LC 123/06, introduzido pela LC 214/2025).** O contribuinte recolhe CBS e IBS separadamente, fora do DAS, pelas regras gerais do IVA dual, permitindo a transferência de créditos aos adquirentes. Os demais tributos do Simples (IRPJ, CSLL, PIS/COFINS residuais, CPP, ICMS/ISS quando aplicáveis) continuam no DAS. É vantajoso para EPP que vende a empresas B2B do Lucro Real/Presumido interessadas em apropriar créditos integrais.  _(https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf)_
-
-### Período de teste em 2026
-
-- **Período de teste em 2026** — 2026 é ano de teste com alíquotas simbólicas: CBS 0,9% + IBS 0,1% nas notas fiscais, que não se aplicam às operações dos optantes pelo Simples Nacional (LC 214/2025, art. 348). As multas estão suspensas pelos 3 primeiros meses após a regulamentação, permitindo adaptação operacional sem penalização imediata por erros formais.  _(https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm)_
-
-### Decisão híbrido vs Simples cheio
-
-**Decisão híbrido vs Simples cheio**
-
-| Perfil do cliente | Recomendação inicial |
-| --- | --- |
-| Predominantemente B2C ou Simples/MEI | Permanecer no Simples cheio |
-| Predominantemente B2B (Lucro Real/Presumido) que exige créditos | Avaliar regime híbrido do art. 21-A |
-| Misto | Simulação comparativa obrigatória |
-
-- **Sinalização revisor R-BR-S4** — Sinalizar para revisor (R-BR-S4) toda decisão pelo regime híbrido. A escolha é anual e tem impacto direto sobre a precificação, a competitividade B2B e a carga administrativa.  _(R-BR-S4)_
-
-## Seção 7 — Modelo de papel de trabalho em Excel
-
-```
-BRASIL SIMPLES NACIONAL -- Papel de Trabalho
-Período: [Mês]
-
-A. RECEITA
-  A1. RBT12 (receita bruta, últimos 12 meses)       ___________
-  A2. Receita do mês corrente                        ___________
-  A3. Tipo de atividade / CNAE                       ___________
-  A4. Anexo aplicável                                ___________
-
-B. APURAÇÃO DA ALÍQUOTA
-  B1. Faixa de receita                               ___________
-  B2. Alíquota nominal                               ___________
-  B3. Parcela a deduzir                              ___________
-  B4. Alíquota efetiva = (A1 x B2 - B3) / A1         ___________
-
-C. APURAÇÃO DO DAS
-  C1. DAS = A2 x B4                                  ___________
-
-D. FATOR R (se atividade do Anexo V)
-  D1. Folha total (últimos 12 meses)                 ___________
-  D2. Fator R = D1 / A1                              ___________
-  D3. >= 28%? Se sim, aplicar Anexo III              ___________
-
-E. CBS/IBS 2026 (se aplicável)
-  E1. Opção pelo art. 21-A LC 123/06? (S/N)          ___________
-  E2. CBS apartada (apenas a partir de 2027)         ___________
-  E3. IBS apartado (apenas a partir de 2027)         ___________
-
-SINALIZAÇÕES AO REVISOR:
-  [ ] Tipo de entidade confirmado (MEI/ME/EPP)?
-  [ ] CNAE verificado para seleção do Anexo?
-  [ ] Fator R calculado (se Anexo V)?
-  [ ] Verificação de sublimite (R$ 3.600.000)?
-  [ ] Verificação de exclusão (R$ 4.800.000)?
-  [ ] Decisão híbrido vs Simples cheio (2026+)?
+```oa-check
+name: Simples Annex I ordinary commerce
+inputs:
+  rbt12: 500000
+  monthly_revenue: 45000
+  nominal: 0.095
+  deduction: 13860
+steps:
+  - effective: (rbt12 * nominal - deduction) / rbt12
+  - das: monthly_revenue * effective
+expected:
+  effective: 0.06728
+  das: 3027.60
 ```
 
-## Seção 8 — Guia de leitura de extratos bancários
+### Covered consultancy: actual payroll selects III or V
 
-### Formatos de extratos bancários brasileiros
+A continuing eligible company performs a professional consultancy actually subject to factorR. Earned RBT12r400,000 and current ordinary service base30,000 are otherwise unchanged. If paid eligible FS12 is130,000, ratio0.325 satisfies the threshold, so AnnexIII gives9.09% and2,727monthly. If supported FS12 were100,000, ratio0.25 fails, so AnnexV gives17.025% and5,107.50monthly. The DAS difference is2,380.50, before considering any actual payroll cost or other taxes. A missing payroll file does not authorise the lower-payroll assumption. This works both factual routes; it is not permission to choose an annex or manufacture remuneration. [LC123art.18§§5-J,5-K,24; AnnexesIII,V](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html).
 
-**Formatos de extratos bancários brasileiros**
-
-| Banco | Formato | Campos-chave |
-| --- | --- | --- |
-| Banco do Brasil, Caixa, Itaú | CSV, PDF, OFX | Data, Histórico, Valor, Saldo |
-| Bradesco, Santander | CSV, PDF | Data, Descrição, Débito, Crédito |
-| Nubank, Inter, C6 | CSV | Data, Descrição, Valor |
-
-### Termos-chave
-
-**Termos-chave**
-
-| Termo | Indicação |
-| --- | --- |
-| PIX RECEBIDO | Receita — incluir no faturamento |
-| DAS, SIMPLES | Pagamento de tributo |
-| PGDAS-D | Sistema de apuração do Simples |
-| DASN-SIMEI | Declaração anual do MEI |
-| DEFIS | Declaração anual do Simples |
-| CBS, IBS | Tributos do IVA dual (a partir de 2026) |
-
-## Seção 9 — Roteiro de onboarding (fallback)
-
-```
-PERGUNTAS DE ONBOARDING -- BRASIL SIMPLES NACIONAL
-1. Tipo de entidade: MEI, ME ou EPP?
-2. Receita bruta nos últimos 12 meses (RBT12)?
-3. Código(s) CNAE?
-4. Folha de salários — últimos 12 meses?
-5. Estado de registro?
-6. Se MEI: próximo do teto de R$ 81.000?
-7. Possui atividades em múltiplos Anexos?
-8. DEFIS ou DASN-SIMEI do ano anterior disponível?
-9. Há produtos com ICMS-ST?
-10. Possui empregados?
-11. (2026+) Composição da clientela: B2B ou B2C?
-12. (2026+) Pretende optar pelo regime híbrido do art. 21-A LC 123/06?
+```oa-check
+name: Factor R consultancy both factual routes
+inputs:
+  rbt12: 400000
+  revenue: 30000
+  payroll_high: 130000
+  payroll_low: 100000
+  iii_nominal: 0.135
+  iii_deduction: 17640
+  v_nominal: 0.195
+  v_deduction: 9900
+steps:
+  - factor_high: payroll_high / rbt12
+  - factor_low: payroll_low / rbt12
+  - iii_effective: (rbt12 * iii_nominal - iii_deduction) / rbt12
+  - v_effective: (rbt12 * v_nominal - v_deduction) / rbt12
+  - das_iii: revenue * iii_effective
+  - das_v: revenue * v_effective
+  - difference: das_v - das_iii
+expected:
+  factor_high: 0.325
+  factor_low: 0.25
+  iii_effective: 0.0909
+  v_effective: 0.17025
+  das_iii: 2727
+  das_v: 5107.50
+  difference: 2380.50
 ```
 
-## Seção 10 — Material de referência
+The former two other worked topics remain: an **eligible, verified AnnexXI service occupation**, liable only for fixedISS and without the full-month benefit adjustment, pays1,621×5%+5=86.05 monthly in2026; a generic “IT services MEI” does not establish eligibility. A full-year ordinary MEI with90,000earned revenue exceeds81,000by9,000, or11.111…%, below the20% boundary97,200. Its SIMEI exit is next1January with communication and prescribed excess assessment, not immediate retroactive exit. A startup or a different eligibility failure changes that answer. [LC123arts.18-A,18-C](https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html); [Lei8212art.21](https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html); [DASN manual §4.7–4.8](https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf).
 
-### Tabelas dos Anexos (completas)
+```oa-check
+name: Eligible ordinary service MEI fixed 2026 DAS
+inputs:
+  monthly_minimum_wage: 1621
+  own_social_rate: 0.05
+  fixed_iss: 5
+steps:
+  - own_social: monthly_minimum_wage * own_social_rate
+  - fixed_das: own_social + fixed_iss
+expected:
+  own_social: 81.05
+  fixed_das: 86.05
+```
 
-**Anexo I — Comércio**
+```oa-check
+name: Full-year ordinary MEI excess within twenty percent
+inputs:
+  full_year_limit: 81000
+  annual_revenue: 90000
+  excess_margin: 0.20
+steps:
+  - excess: annual_revenue - full_year_limit
+  - excess_percent: excess / full_year_limit * 100
+  - twenty_percent_boundary: full_year_limit * (1 + excess_margin)
+expected:
+  excess: 9000
+  excess_percent: 11.111111111
+  twenty_percent_boundary: 97200
+```
 
-| Faixa | Alíquota | Faixa de Receita | Dedução |
-| --- | --- | --- | --- |
-| Faixa 1 | 4,00% | até 180K | -- |
-| Faixa 2 | 7,30% | 180-360K | 5.940 |
-| Faixa 3 | 9,50% | 360-720K | 13.860 |
-| Faixa 4 | 10,70% | 720K-1,8M | 22.500 |
-| Faixa 5 | 14,30% | 1,8-3,6M | 87.300 |
-| Faixa 6 | 19,00% | 3,6-4,8M | 378.000 |
+## Ask the client first
 
-**Anexo II — Indústria**
+- What are the CNPJ, legal/ownership structure, owner domicile, opening date, establishments, actual election status and notified effective dates?
+- What were earned domestic/export revenues by month for the prior/current years and prior12months, received amounts, cancellations/returns and underlying marketplace/invoice records?
+- Which actual goods/services and contracts/CNAEs establish the annex or exact permitted MEI occupation, with local location, ST, monophase, retention and export evidence?
+- What paid payroll, pró-labore, thirteenth salary, actual CPP and FGTS support factorR, and were employee/MEI conditions met?
+- What PGDAS-D/PGMEI, DEFIS/DASN, DTE notices, debt/registration regularisation, declarations and payments already exist, and what2027 option/cancellation receipt governs?
 
-| Faixa | Alíquota | Dedução |
-| --- | --- | --- |
-| Faixa 1 | 4,50% | -- |
-| Faixa 2 | 7,80% | 5.940 |
-| Faixa 3 | 10,00% | 13.860 |
-| Faixa 4 | 11,20% | 22.500 |
-| Faixa 5 | 14,70% | 85.500 |
-| Faixa 6 | 30,00% | 720.000 |
+Preserve a workpaper with identification/election, earned/received and domestic/export revenue reconciliations, annex lines, factorR numerator/denominator, current/prior-year ceiling tests and effective dates, DAS components, outside-DAS liabilities, prior payments, declarations/receipts and reviewer flags. Banco do Brasil, Caixa, Itaú, Bradesco, Santander, Nubank, Inter and C6 names and supplied CSV/PDF/OFX columns must be inspected rather than assumed compatible. Bank names, PIX, NF-e, NFS-e, marketplace, own-transfer, DAS, DAS-MEI, DASN, INSS and “ICMS/ISS fora Simples” descriptors are search clues; classify from the evidence. If an input is absent, continue supported ordinary work and mark that calculation conditional. Escalate the actual disputed eligibility, occupation, exclusion or special local rule with its documents; do not reject all ordinary reform questions or invent a default.
 
-**Anexo III — Serviços I**
+## Sources
 
-| Faixa | Alíquota | Dedução |
-| --- | --- | --- |
-| Faixa 1 | 6,00% | -- |
-| Faixa 2 | 11,20% | 9.360 |
-| Faixa 3 | 13,50% | 17.640 |
-| Faixa 4 | 16,00% | 35.640 |
-| Faixa 5 | 21,00% | 125.640 |
-| Faixa 6 | 33,00% | 648.000 |
+| Source and sections actually read | Official URL | Read on |
+|---|---|---|
+| LC123 current consolidation: arts.3,13,16–18-F,19–20,23–26,38–38-B and all2026 AnnexesI–V; later-effect amendments distinguished | https://www2.camara.leg.br/legin/fed/leicom/2006/leicomplementar-123-14-dezembro-2006-548099-normaatualizada-pl.html |2026-11-11|
+| LC238 arts.2–10 complete act:2027/2028 commencement, budget conditions, employees and remission scope read | https://www2.camara.leg.br/legin/fed/leicom/2026/leicomplementar-238-21-outubro-2026-800071-publicacaooriginal-181678-pl.html |2026-11-11|
+| Decree12797 art.1 complete act:2026minimum wage read | https://www2.camara.leg.br/legin/fed/decret/2025/decreto-12797-23-dezembro-2025-798569-publicacaooriginal-177587-pe.html |2026-11-11|
+| Lei8212: arts.21–22, ordinary MEI contribution and separate employer-base conditions read | https://www2.camara.leg.br/legin/fed/lei/1991/lei-8212-24-julho-1991-363647-normaatualizada-pl.html |2026-11-11|
+| PortariaCGSN54 official2026sublimit notice, read for all-state2026amount | https://www8.receita.fazenda.gov.br/SimplesNacional/Noticias/NoticiaCompleta.aspx?id=94c10cc2-7eb5-4ef0-bfb2-5479e72caff8 |2026-11-11|
+| PGDAS-D/DEFIS manual17June2025:§§1.4–1.5,3,5–6,8–8.2,9selected workflow pp82–86,89–91,100–102 read; its obsolete MAED clock and DEFIS no-penalty statement not adopted | https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGDAS-D_2018_V4.pdf |2026-11-11|
+| CGSN FAQ partially updated9October2026: eligibility/limits,5.3–5.4,5.24,6.4–6.12,7.5note2 read; reform section warns incomplete, old election timetable displaced by current notice/manual | https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf |2026-11-11|
+| DASN-SIMEI manualSeptember2024: definitions, all ordinary filing/excess/late-declaration workflow§§1–4.9 read; historical limits separated | https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual_DASN-SIMEI.pdf |2026-11-11|
+| Official AnnexXI occupation PDF: read for table framework and occupation/CNAE/ISS/ICMS columns read; actual taxpayer occupation must be matched | https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Anexo_XI.pdf |2026-11-11|
+| PGMEI manual19November2025:§§1–4.2 and4.7 ordinary assessment/payment and full-month benefit adjustment read; no live portal access claimed | https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/MANUAL_PGMEI_2018.pdf |2026-11-11|
+| LC214 current with LC227:arts.41,47–48,348,517,544 read, credit/semester/effective-date conditions | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm |2026-11-11|
+| JointAct4 art.1 complete signed act: Simples document start and exceptions read | https://cgibs.gov.br/upload/arquivos/202607/31091735-20260730-16h30-ato-conjunto-rfb-cgibs-na-c2-ba-4-260731-090909.pdf |2026-11-11|
+| CGIBS30September2026 whole notice read for first-semester2027 option deadlines | https://cgibs.gov.br/embora-os-periodos-sejam-parecidos-tratam-de-escolhas-diferentes-por-isso-e-importante-entender-cada-situacao |2026-11-11|
+| Regular IBS/CBS option manual7October2026 complete14pages read: access, representation, choice, receipt, history/cancellation and then-incomplete later MAT instructions | https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Manual%20op%C3%A7%C3%A3o%20regime%20regular%20IBS%20e%20CBS%20no%20Simples%20Nacional.pdf |2026-11-11|
 
-**Anexo IV — Serviços II**
+Not yet confirmed: the current complete CGSN140 consolidated act and the original CGSN194/195 instruments could not be read through the legacy/SPA route or normal-browser fallback. No unsupported statement that every unregulated activity qualifies for MEI, or generic IT consultancy qualifies, is adopted. The taxpayer's exact AnnexXI occupation and full current electronic-document exceptions, precise current post-reform DEFIS penalty amounts/reductions, event-specific local relief/substitution rules, disaster extensions and any updated post-October MAT screens need their actual current instrument. Later MEI expansion still needs the budget condition for the relevant year. No live return was prepared, transmitted or accepted by this Guide.
 
-| Faixa | Alíquota | Dedução |
-| --- | --- | --- |
-| Faixa 1 | 4,50% | -- |
-| Faixa 2 | 9,00% | 8.100 |
-| Faixa 3 | 10,20% | 12.420 |
-| Faixa 4 | 14,00% | 39.780 |
-| Faixa 5 | 22,00% | 183.780 |
-| Faixa 6 | 33,00% | 828.000 |
-
-**Anexo V — Serviços III**
-
-| Faixa | Alíquota | Dedução |
-| --- | --- | --- |
-| Faixa 1 | 15,50% | -- |
-| Faixa 2 | 18,00% | 4.500 |
-| Faixa 3 | 19,50% | 9.900 |
-| Faixa 4 | 20,50% | 17.100 |
-| Faixa 5 | 23,00% | 62.100 |
-| Faixa 6 | 30,50% | 540.000 |
-
-### Principais referências legais
-
-**Principais referências legais**  _(https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm)_
-
-| Tema | Referência |
-| --- | --- |
-| Estatuto do Simples Nacional | LC 123/2006 |
-| Tabelas dos Anexos | LC 123/2006, Anexos I-V (alterados pela LC 155/2016) |
-| MEI | LC 123/2006, Arts. 18-A a 18-E |
-| Fator R | LC 123/2006, Art. 18, § 5º-J |
-| Limites de faturamento | LC 123/2006, Art. 3º |
-| Sublimite ICMS/ISS | LC 123/2006, Arts. 13 e 18 |
-| Reforma Tributária — IVA dual | EC 132/2023 |
-| Regulamentação CBS/IBS | LC 214/2025 |
-| Segunda fase / vigência 2026 | LC 227/2026 |
-| Opção híbrida do Simples | LC 214/2025, art. 41, § 3º; opção exercida nos termos da LC 123/2006 (efeitos a partir de 2027) |
-
-## PROIBIÇÕES
-
-- NUNCA aplicar as alíquotas do Simples Nacional a empresas acima de R$ 4.800.000
-- NUNCA permitir que profissionais regulamentados se inscrevam como MEI
-- NUNCA ignorar o Fator R no cálculo de atividades do Anexo V
-- NUNCA usar somente a receita da atividade corrente para definir a faixa — usar o RBT12 de TODAS as atividades
-- NUNCA esquecer que o Anexo IV NÃO inclui o INSS patronal no DAS
-- NUNCA tratar os valores do DAS-MEI como fixos entre anos — variam com o salário mínimo
-- NUNCA omitir a verificação do sublimite de ICMS/ISS para empresas acima de R$ 3.600.000
-- NUNCA apresentar cálculos como definitivos — sempre rotular como estimativa e direcionar o cliente a um contador registrado no CRC
-- NUNCA recomendar a opção pelo regime híbrido do art. 21-A da LC 123/06 sem simulação comparativa e revisão por contador
-- NUNCA tratar o MEI como sujeito a CBS/IBS — o MEI permanece isento e continua recolhendo apenas pelo DAS-MEI
-
-## Aviso legal
-
-Esta skill e seus resultados são fornecidos exclusivamente para fins informativos e de cálculo e não constituem aconselhamento tributário, jurídico ou financeiro. A Open Accountants e seus colaboradores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes do uso desta skill. Todos os resultados devem ser revisados e assinados por profissional qualificado (como contador registrado no CRC ou profissional licenciado equivalente no Brasil) antes de qualquer entrega ou tomada de decisão.
-
-A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para acessar a versão mais recente, solicitar revisão profissional por contador licenciado e acompanhar atualizações conforme a legislação evoluir.
+Visit [OpenAccountants](https://openaccountants.com) to browse Guides, sign in, request professional review and follow updates. Check the version, date and approval displayed there; this draft does not claim to be the platform’s current verified version.

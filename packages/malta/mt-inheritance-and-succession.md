@@ -1,9 +1,10 @@
 ---
 name: mt-inheritance-and-succession
 description: "Inheritance and succession in Malta for families: there is no inheritance tax as such, but duty on documents and transfers is due when Maltese property or shares pass on death. Covers the declaration causa mortis and its deadline, who pays, valuation, the family home and surviving spouse reliefs, family business relief, share notices, gifts to children and spouses, the reserved portion under the Civil Code, foreign heirs, and tax when inherited property is sold later."
+version: 1.1
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-05
+last_updated: 2026-11-08
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: estate-wealth-tax
@@ -34,7 +35,7 @@ None of the four texts above names an inheritance tax or an estate tax. What Mal
 | Source | all figures below | https://legislation.mt/eli/cap/364/eng/pdf |
 | Art. 32(1): immovables, including the declaration causa mortis for deaths on or after 23 November 1999 | five euro for every one hundred euro or part of the value or consideration, whichever is higher | "a duty of five euro (5.00) for every one" |
 | Art. 35(1)(a)(i): slice of the deceased's ordinary residence not taken into account, on any transfer causa mortis | EUR 35,000 | "The first thirty-five thousand euro (35,000)" |
-| Art. 35(2)(i): reduced rate for an heir who occupies the deceased's ordinary residence as their own ordinary residence | three euro and fifty cents for every one hundred euro, on that heir's share of the value above EUR 35,000 and up to EUR 200,000 | "three euro and fifty cents" ... "which exceeds thirty-five thousand euro" ... "but not two hundred thousand euro" |
+| Art. 35(2)(i): reduced rate for an heir who occupies the deceased's ordinary residence as their own ordinary residence | three euro and fifty cents for every one hundred euro, on that heir's share of the value above EUR 35,000 and up to EUR 400,000 for a death on or after 28 October 2025 ([S.L. 364.22 rule 2(a)](https://legislation.mt/eli/sl/364.22/eng/pdf), L.N. 306 of 2025); up to EUR 200,000 for an earlier death (art. 35(2)(i)) | "which exceeds thirty-five thousand euro (€35,000), but does not exceed four hundred thousand euro (€400,000)" (S.L. 364.22); "but not two hundred thousand euro" (art. 35(2)(i)) |
 | Art. 32C: gift of immovable property to a descendant in the direct line for their sole ordinary residence | first EUR 250,000 not taken into account, the rest at three euro and fifty cents for every one hundred euro | "no account shall be taken of the first two hundred and" ... "fifty thousand euro" |
 | Art. 41C(1): registered family business transferred as a going concern, commercial tenement used in it for at least three years | first EUR 500,000 at three euro and fifty cents for every one hundred euro | "duty shall be charged on the first five hundred thousand euro" |
 | Art. 41C(2): shares or interests in a registered family business transferred by an individual to family members | first EUR 150,000 of value not taken into account | "no account shall be taken of the first one hundred and fifty thousand euro" |
@@ -56,7 +57,7 @@ None of the four texts above names an inheritance tax or an estate tax. What Mal
 - Surviving spouse or cohabitant (art. 35(2)(iii)): where the deceased's ordinary residence goes to the surviving spouse or cohabitant, "no duty shall be levied at the time of the transfer".
 - Descendants in the direct line (art. 35(2)(v)): where a dwelling house, or part of it or a real right over it, passes to the deceased's descendants in the direct line AND it was the deceased's ordinary residence, no duty is levied at the time of the transfer causa mortis. This relief, and the disability relief in art. 35(2)(iv), apply only if the deed is made within one year from the succession AND notice is given to the Commissioner by the later of fifteen working days after the deed or the end of that year (art. 35(4)(i)).
 - First slice not counted (art. 35(1)(a)(i)): on any transfer causa mortis of the deceased's ordinary residence, the slice in the table above is not taken into account. It is reduced in proportion where the deceased owned only part of the house, and shared in proportion between several heirs.
-- Heir who lives there (art. 35(2)(i)): an heir who occupies the deceased's ordinary residence as their own ordinary residence pays the reduced rate in the table above on their share of the band in the table, and the normal rate above it. An inherited dwelling house that was not the deceased's ordinary residence but is occupied by the heir as their ordinary residence gets the reduced rate on the first EUR 200,000 under art. 35(2)(ii).
+- Heir who lives there (art. 35(2)(i)): an heir who occupies the deceased's ordinary residence as their own ordinary residence pays the reduced rate in the table above on their share of the band in the table, and the normal rate above it. An inherited dwelling house that was not the deceased's ordinary residence but is occupied by the heir as their ordinary residence gets the reduced rate on the first EUR 400,000 for a death on or after 28 October 2025 ([S.L. 364.22 rule 2(b)](https://legislation.mt/eli/sl/364.22/eng/pdf)), or the first EUR 200,000 for an earlier death (art. 35(2)(ii)).
 - Hospital or care home (art. 35(8)): if the deceased was in hospital or living in an old people's home at death, the house they lived in before counts as their ordinary residence.
 - Usufruct to the spouse (art. 35(1)(b)): the value of a usufruct left by the deceased to the surviving spouse or cohabitant is not taken into account.
 - Partition between the spouse and the heirs (art. 32(3)(iv)): on the death of one spouse, no duty is charged on a partition of property held in common between the spouses, between the surviving spouse and the heirs of the deceased spouse.
@@ -96,7 +97,7 @@ The rebate is reduced to the duty itself where it exceeds it, applies cumulative
 ## Gifts during life: to children and to the spouse
 
 A donation is a "transfer" under article 2 of [Cap. 364](https://legislation.mt/eli/cap/364/eng/pdf), so duty applies at the normal rates in the Cap. 364 table, with these reliefs:
-- Home for a child (art. 32C): a gift to a descendant in the direct line who acquires the property to make it, or build on it, their sole ordinary residence: the first slice in the table above is not taken into account and the rest bears the reduced rate. It must be the first such transfer by that person to that descendant, both declare the purpose in the deed, and the descendant must not already own property on which the first-time buyer relief in article 32(4)(a) was claimed. If the descendant transfers it inter vivos "during the first five years from the date of the transfer by a gratuitous title", the duty saved becomes payable.
+- Home for a child (art. 32C): a gift to a descendant in the direct line who acquires the property to make it, or build on it, their sole ordinary residence: the first slice in the table above is not taken into account and the rest bears the reduced rate. It must be the first such transfer by that person to that descendant, both declare the purpose in the deed, and the descendant must not already own property on which the sole-ordinary-residence relief in article 32(4)(a) was claimed. If the descendant transfers it inter vivos "during the first five years from the date of the transfer by a gratuitous title", the duty saved becomes payable.
 - Value for family gifts of a residence: rule 3(2) of [S.L. 364.06](https://legislation.mt/eli/sl/364.6/eng/pdf) takes eighty per centum of market value for a gift to the spouse, descendants, ascendants and their spouses (or, with no descendants, siblings and their descendants) who acquire it as their sole ordinary residence.
 - Between spouses (art. 32(3)(iii)): no duty on a transfer inter vivos of the ordinary residence, or part of it, between persons married to each other.
 - Shares: a gift of shares bears the article 42(1)(b) share rate, plus the property-company increase where it applies; article 41C(2) can apply to a registered family business.
@@ -179,6 +180,54 @@ No relief for the ordinary residence applies because the apartment was let. Had 
 
 Reading the 12% as a charge on the price would give a much larger and wrong figure. The rate applies to the gain.
 
+```oa-check
+name: Example 1, duty on death, two children, let apartment and trading company shares
+inputs:
+  apartment: 800000
+  shares: 600000
+  heirs: 2
+steps:
+  - apartment_half: apartment / heirs
+  - apartment_duty_each: apartment_half / 100 * 5
+  - apartment_duty_total: apartment_duty_each * heirs
+  - shares_half: shares / heirs
+  - share_duty_each: shares_half / 100 * 2
+  - share_duty_total: share_duty_each * heirs
+  - property_company_increase_each: shares_half / 100 * 3
+  - property_company_duty_each: share_duty_each + property_company_increase_each
+expected:
+  apartment_half: 400000
+  apartment_duty_each: 20000
+  apartment_duty_total: 40000
+  shares_half: 300000
+  share_duty_each: 6000
+  share_duty_total: 12000
+  property_company_increase_each: 9000
+  property_company_duty_each: 15000
+```
+
+```oa-check
+name: Example 2, two children sell the inherited apartment in 2032
+inputs:
+  price: 1000000
+  acquisition_each: 400000
+  heirs: 2
+steps:
+  - transfer_value_each: price / heirs
+  - gain_each: transfer_value_each - acquisition_each
+  - tax_each: gain_each * 12 / 100
+  - tax_total: tax_each * heirs
+  - elect_out_total: price * 8 / 100
+  - pre_1992_total: price * 7 / 100
+expected:
+  transfer_value_each: 500000
+  gain_each: 100000
+  tax_each: 12000
+  tax_total: 24000
+  elect_out_total: 80000
+  pre_1992_total: 70000
+```
+
 ## Ask the client first
 
 - When did the person die, and was the property the deceased's ordinary residence at death (or before a move to hospital or a care home)? This decides the article 35 reliefs, the six-month and one-year terms, and the pre-1992 rule on a later sale.
@@ -199,9 +248,10 @@ Reading the 12% as a charge on the price would give a much larger and wrong figu
 
 ## Sources
 
-- Duty on Documents and Transfers Act, Cap. 364 (consolidated): https://legislation.mt/eli/cap/364/eng/pdf
-- Duty on Documents and Transfers Rules, S.L. 364.06 (consolidated): https://legislation.mt/eli/sl/364.6/eng/pdf
-- Income Tax Act, Cap. 123 (consolidated, point in time 10/03/2026): https://legislation.mt/eli/cap/123/eng/pdf
-- Civil Code, Cap. 16 (consolidated): https://legislation.mt/eli/cap/16/eng/pdf
+- Duty on Documents and Transfers Act, Cap. 364 (consolidated), read 2026-11-08: https://legislation.mt/eli/cap/364/eng/pdf
+- Duty on Documents and Transfers Rules, S.L. 364.06 (consolidated), read 2026-11-08: https://legislation.mt/eli/sl/364.6/eng/pdf
+- Reduced Rate of Duty on Transfers Causa Mortis of a Dwelling House Rules, S.L. 364.22 (L.N. 306 of 2025), read 2026-11-08: https://legislation.mt/eli/sl/364.22/eng/pdf
+- Income Tax Act, Cap. 123 (consolidated, point in time 10/03/2026), read 2026-11-08: https://legislation.mt/eli/cap/123/eng/pdf
+- Civil Code, Cap. 16 (consolidated), read 2026-11-08: https://legislation.mt/eli/cap/16/eng/pdf
 
 This Guide is a working reference for a professional. It is not legal or tax advice on a particular estate.

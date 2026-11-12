@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-30"
-  reviewed_by: "Nadir Khan"
 ---
 
 # Real Estate and Property in the United Kingdom: buying, letting and selling

@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "PH"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Jonathan I. Ruiz"
 ---
 
 # Philippines Tax Overview

@@ -12,7 +12,7 @@ description: >
   paper for professional review. It does not give country-specific treaty
   rates, foreign exchange permissions, securities exemptions, indirect
   transfer computations, customs or a complete imported-service VAT return.
-version: 0.1
+version: 0.2
 jurisdiction: AR
 category: cross-border
 domain: tax
@@ -22,13 +22,13 @@ last_updated: 2026-11-11
 tier: 2
 ---
 
-# Argentina: cross-border tax 2026 v0.1
+# Argentina: cross-border tax 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to
 
-Argentine residents receiving foreign-source income and Argentine payers of Argentine-source income to foreign beneficiaries. It also screens inbound businesses for a permanent establishment (PE). This is a Tier 2 source-cited draft without accountant approval. Use it to classify a payment and document the domestic baseline, not to authorise a remittance or filing. Currency is ARS unless a transaction's original currency is expressly stated; examples assume no conversion difference.
+Argentine residents receiving foreign-source income and Argentine payers of Argentine-source income to foreign beneficiaries. It also screens inbound businesses for a permanent establishment (PE). This Guide is **Not yet approved**. Use it to classify a payment and document the domestic baseline, not to authorise a remittance or filing. Currency is ARS unless a transaction's original currency is expressly stated; examples assume no conversion difference.
 
 **Quick answer:** establish residence, source, income category, PE and treaty entitlement before choosing a withholding rate. Ordinary foreign-beneficiary tax is 35% of the statutory presumed net income, not automatically 35% of the invoice. A treaty can change the result only if the actual treaty, protocol, effective date and relief conditions support it. For treaty-documentation payments from the RG 5855 application date in June 2026, a current foreign residence certificate and the new declaration are separate requirements.
 
