@@ -12,14 +12,12 @@
 5. `cameroon-cross-border.md`
 6. `cameroon-income-tax.md`
 7. `cameroon-payroll.md`
-8. `cameroon-social-contributions.md`
-9. `cameroon-transfer-pricing.md`
-10. `cameroon-vat.md`
-11. `payroll-workflow-base.md`
-12. `transfer-pricing-workflow-base.md`
-13. `income-tax-workflow-base.md`
-14. `social-contributions-workflow-base.md`
-15. `workflow-base.md`
+8. `cameroon-transfer-pricing.md`
+9. `cameroon-vat.md`
+10. `payroll-workflow-base.md`
+11. `transfer-pricing-workflow-base.md`
+12. `income-tax-workflow-base.md`
+13. `workflow-base.md`
 
 ## How to use
 

@@ -14,9 +14,8 @@
 7. `bm-income-tax.md`
 8. `bm-payroll-social.md`
 9. `bm-tax-overview.md`
-10. `bm-vat-gst.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+10. `payroll-workflow-base.md`
+11. `company-formation-workflow-base.md`
 
 ## How to use
 

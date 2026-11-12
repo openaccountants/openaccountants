@@ -12,29 +12,24 @@
 5. `bangladesh-vat.md`
 6. `bd-bookkeeping.md`
 7. `bd-company-formation.md`
-8. `bd-corporate-income-tax.md`
-9. `bd-crypto-tax.md`
-10. `bd-einvoice.md`
-11. `bd-financial-statements.md`
-12. `bd-formation.md`
-13. `bd-freelance-intake.md`
-14. `bd-it-freelancer-tax.md`
-15. `bd-payroll-social.md`
-16. `bd-payroll.md`
-17. `bd-return-assembly.md`
-18. `bd-social-contributions.md`
-19. `bd-tax-optimization.md`
-20. `bd-tax-overview.md`
-21. `references.md`
-22. `bookkeeping-workflow-base.md`
-23. `einvoice-workflow-base.md`
-24. `payroll-workflow-base.md`
-25. `company-formation-workflow-base.md`
-26. `financial-statements-workflow-base.md`
-27. `crypto-tax-workflow-base.md`
-28. `workflow-base.md`
-29. `income-tax-workflow-base.md`
-30. `social-contributions-workflow-base.md`
+8. `bd-crypto-tax.md`
+9. `bd-einvoice.md`
+10. `bd-financial-statements.md`
+11. `bd-formation.md`
+12. `bd-freelance-intake.md`
+13. `bd-it-freelancer-tax.md`
+14. `bd-return-assembly.md`
+15. `bd-tax-optimization.md`
+16. `bd-tax-overview.md`
+17. `references.md`
+18. `bookkeeping-workflow-base.md`
+19. `einvoice-workflow-base.md`
+20. `payroll-workflow-base.md`
+21. `company-formation-workflow-base.md`
+22. `financial-statements-workflow-base.md`
+23. `crypto-tax-workflow-base.md`
+24. `workflow-base.md`
+25. `income-tax-workflow-base.md`
 
 ## How to use
 

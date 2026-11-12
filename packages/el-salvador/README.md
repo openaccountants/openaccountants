@@ -8,15 +8,9 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `el-salvador-income-tax.md`
-5. `el-salvador-iva.md`
-6. `el-salvador-payroll.md`
-7. `el-salvador-social-contributions.md`
-8. `el-salvador-tax-optimization.md`
-9. `payroll-workflow-base.md`
-10. `income-tax-workflow-base.md`
-11. `social-contributions-workflow-base.md`
-12. `workflow-base.md`
+4. `el-salvador-iva.md`
+5. `el-salvador-tax-optimization.md`
+6. `payroll-workflow-base.md`
 
 ## How to use
 

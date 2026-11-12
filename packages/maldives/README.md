@@ -11,11 +11,10 @@
 4. `maldives-gst.md`
 5. `mv-company-formation.md`
 6. `mv-corporate-income-tax.md`
-7. `mv-income-tax.md`
-8. `mv-payroll-social.md`
-9. `mv-tax-overview.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+7. `mv-payroll-social.md`
+8. `mv-tax-overview.md`
+9. `payroll-workflow-base.md`
+10. `company-formation-workflow-base.md`
 
 ## How to use
 
