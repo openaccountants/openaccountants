@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "NG"
   tax_year: "2025"
   last_updated: "2026-07-13"
-  reviewed_by: "Omolola Fasasi"
 ---
 
 # NG Payroll
@@ -21,7 +20,6 @@ metadata:
 
 ## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 

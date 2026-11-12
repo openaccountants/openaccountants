@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-payroll-tax"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-09"
 ---
 
 # Netherlands: payroll (loonheffingen), work-cost scheme (WKR) and final levies 2026
@@ -46,6 +46,7 @@ Out of this skill: private use of a company car, see nl-company-car; the expat s
 | Band 1, under AOW age: wage tax 8.10% + AOW 17.90% + Anw 0.10% + Wlz 9.65% | 35.75% up to EUR 38,883 | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
 | Band 2 | 37.56% from EUR 38,883 to EUR 78,426 | 2026 | same |
 | Band 3 | 49.50% above EUR 78,426 | 2026 | same |
+| Annual box 1 amount, exact method | Wage tax per the Wet IB art. 2.10(1) table: 8.10% to EUR 38,883; EUR 3,149 plus 37.56% above it; EUR 18,001 plus 49.50% above EUR 78,426. Plus the national insurance premium of 27.65% on wage up to EUR 38,883 (at most EUR 10,751.15). The combined 35.75% across band 1 is EUR 0.52 too high above band 1 | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=2&afdeling=2.3&artikel=2.10&z=2026-01-01&g=2026-01-01 ; Wfsv art. 8(3), 10 |
 | Band 1, AOW age, born 1946 or later (no AOW premium) | 17.85% up to EUR 38,883 | 2026 | same |
 | Band 1, born 1945 or earlier | 17.85% up to EUR 41,123 | 2026 | same |
 | General credit (algemene heffingskorting), under AOW age | EUR 3,115; reduces 6.398% above EUR 29,736; nil at EUR 78,426 | 2026 | same |
@@ -173,25 +174,26 @@ expected:
   saving: 576
 ```
 
-**Example 3. Annual check of wage tax for a full-year employee.** An employee under AOW age earns EUR 48,000 in 2026 from one employer, asked for the credits there, and has no other income. Band 1 is 38,883 at 35.75%; band 2 is the remaining 9,117 at 37.56%. The general credit falls by 6.398% of the wage above 29,736. The employment credit falls by 6.510% of the wage above 45,592. Over the year the period tables should withhold close to this total; small differences come from period rounding.
+**Example 3. Annual check of wage tax for a full-year employee.** An employee under AOW age earns EUR 48,000 in 2026 from one employer, asked for the credits there, and has no other income. The wage is in the second band, so wage tax by the Wet IB art. 2.10(1) table is EUR 3,149 plus 37.56% of the 9,117 above 38,883, and the national insurance premium is 27.65% of 38,883 (the premium cap). Using 35.75% across the first band instead overstates by EUR 0.52. The general credit falls by 6.398% of the wage above 29,736. The employment credit falls by 6.510% of the wage above 45,592. Over the year the period tables should withhold close to this total; small differences come from period rounding.
 
 ```oa-check
 name: Employee EUR 48,000, under AOW age, credits with this employer (2026)
 inputs:
   wage: 48000
 steps:
-  - band1: min(wage, 38883) * 0.3575
-  - band2: max(min(wage, 78426) - 38883, 0) * 0.3756
-  - band3: max(wage - 78426, 0) * 0.495
-  - gross: band1 + band2 + band3
+  - wage_tax: 3149 + (wage - 38883) * 0.3756
+  - premium: min(wage, 38883) * 0.2765
+  - gross: wage_tax + premium
   - ahk: max(3115 - max(wage - 29736, 0) * 0.06398, 0)
   - ak: max(5685 - max(wage - 45592, 0) * 0.0651, 0)
   - withheld: max(gross - ahk - ak, 0)
 expected:
-  gross: 17325.02
+  wage_tax: 6573.35
+  premium: 10751.15
+  gross: 17324.49
   ahk: 1946.47
   ak: 5528.24
-  withheld: 9850.31
+  withheld: 9849.78
 ```
 
 **Example 4. Employer premiums on a wage above the monthly cap.** A small employer pays EUR 7,000 a month, every month, on a written indefinite contract (AWf low). The employer's Whk notice says 1.5% (an assumed figure for the example). The premium base is capped at EUR 6,617.41 a month. Because every month is over the cap, cumulative calculation gives the same base each month. Zvw uses the same cap.
@@ -254,4 +256,4 @@ Not yet confirmed: the Belastingplan 2027 proposes abolishing the own-products e
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-payroll-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-payroll-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-09. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-payroll-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-payroll-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

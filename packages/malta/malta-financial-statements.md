@@ -1,10 +1,10 @@
 ---
 name: malta-financial-statements
 description: Use this skill when preparing, reviewing, or advising on annual financial statements for a Maltese company. Trigger on phrases like "annual accounts Malta", "financial statements Malta", "Companies Act filing", "MBR filing", "balance sheet format", "profit and loss format", "directors' report", "audit exemption Malta", "small company Malta", "abridged accounts", "year-end adjustments", or any question about preparing statutory accounts under the Malta Companies Act (Cap. 386). Covers reporting frameworks, size thresholds, required statements, P&L and balance sheet formats, notes disclosures, filing deadlines, and audit requirements.
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-04
+last_updated: 2026-11-08
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
@@ -91,7 +91,9 @@ The micro limits in article 185(2) (€46,600, €93,000, 2 employees) did not c
 - **Balance sheet total** is total assets in the GAAP balance sheet (art. 185(4)). **Net turnover** is sales of products and services after rebates, VAT and other taxes linked to turnover (art. 185(9)).
 - **Average employees** (art. 185(10)): full-time staff = total full weeks worked by all full-time staff ÷ full weeks in the period; part-time staff = total hours worked ÷ full weeks in the period ÷ 40. Round each to the nearest whole number.
 - **Parents.** A parent company is small only if its group is a small group (art. 185(5)), unless it is exempt from consolidating under article 174.
-- **Medium and large.** For the Third Schedule, "large undertakings" exceed at least two of €25,000,000 balance sheet total, €50,000,000 net turnover and 250 employees; "medium-sized undertakings" are the rest that are not small. Large and medium groups use €25,000,000 net or €30,000,000 gross, and €50,000,000 net or €60,000,000 gross. ([Cap. 386 Third Schedule para. 1](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
+- **Medium and large.** For the Third Schedule, "large undertakings" exceed at least two of three limits on their balance sheet dates; "medium-sized undertakings" are the rest that are not small. The limits follow the same period-start rule as article 185 ([MBR commencement instruction](https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1)):
+  - periods starting on or after 20 March 2026: €25,000,000 balance sheet total, €50,000,000 net turnover and 250 employees; groups €25,000,000 net or €30,000,000 gross, and €50,000,000 net or €60,000,000 gross ([Cap. 386 Third Schedule para. 1, at 28 April 2026](https://legislation.mt/getpdf/6a1836349844fb1e280ec744));
+  - periods starting before 20 March 2026, including every calendar 2025 and 2026 period: €20,000,000 balance sheet total, €40,000,000 net turnover and 250 employees; groups €20,000,000 net or €24,000,000 gross, and €40,000,000 net or €48,000,000 gross ([Cap. 386 Third Schedule para. 1, at 16 December 2025](https://legislation.mt/getpdf/695277d8cc8c701d50c749db)).
 
 ### GAPSME limits (a different test) ([S.L. 281.05 reg. 5](https://legislation.mt/getpdf/6641e0860419230b5c3872a1))
 
@@ -100,7 +102,7 @@ The micro limits in article 185(2) (€46,600, €93,000, 2 employees) did not c
 | Small entity (reg. 5(1)(a)) | €4,000,000 | €8,000,000 | 50 |
 | Medium-sized entity (reg. 5(1)(b)) | €20,000,000 | €40,000,000 | 250 |
 
-- The GAPSME limits were **not** raised with the Companies Act. A company can be "small" under article 185 (up to €10,000,000 net turnover) yet "medium-sized" under GAPSME (over €8,000,000 revenue). Test both.
+- The GAPSME limits were **not** raised with the Companies Act. For periods starting on or after 20 March 2026, a company can be "small" under article 185 (€5,000,000 and €10,000,000) yet "medium-sized" under GAPSME. Being over one GAPSME limit is not enough: an entity is medium-sized only if it exceeds at least two of the three small limits (€4,000,000 balance sheet total, €8,000,000 revenue, 50 employees) (reg. 5(1)(a)), and after its first period only if that happens in two consecutive years (reg. 5(4)). Test both.
 - GAPSME also has a two-consecutive-years rule (reg. 5(4)). A small entity that exceeds the small limits twice moves to the medium-sized GAPSME rules. A medium-sized entity that exceeds the medium limits twice must stop using GAPSME.
 - In a **first period**, the entity is over the limits if at the end of that period two of the three figures exceed them (reg. 5(6)). If a period is shorter or longer than a year, revenue is scaled to twelve months (reg. 5(7)).
 - GAPSME never applies to a public interest entity (reg. 5(8)).
@@ -141,7 +143,7 @@ The micro limits in article 185(2) (€46,600, €93,000, 2 employees) did not c
 - Every company appoints an auditor at each general meeting where accounts are laid (art. 151), and the auditor reports on every set of annual accounts (art. 179).
 - **Exemption:** a **private** company that, on its balance sheet date, stays at or under at least two of €46,600 balance sheet total, €93,000 net turnover and 2 employees is exempt from Chapter IX (Auditors, articles 151 to 162), from the auditors' report in article 179, and from the Third Schedule (art. 185(2)). The two-consecutive-years rule in article 185(3) applies.
 - The Companies Act has **no review-report tier**. Under the Act, the micro company either qualifies and needs no audit, or it does not and needs a full audit.
-- The auditor must be approved by the Accountancy Board to carry out statutory audits ([Act I of 2026 art. 3](https://legislation.mt/getpdf/6a183289becdc821c019724f), definition of "auditor"). Auditing follows international auditing standards (S.L. 281.02 reg. 4), applied proportionately for small undertakings.
+- The auditor must hold a practising certificate to practise in the field of auditing, or be an audit firm. The Companies Act takes this meaning from the Accountancy Profession Act ([Cap. 386 art. 2(1)](https://legislation.mt/getpdf/6a1836349844fb1e280ec744); [Cap. 281 art. 2(1)](https://legislation.mt/eli/cap/281/eng/pdf)). [Act I of 2026](https://legislation.mt/getpdf/6a183289becdc821c019724f) article 3 substitutes a new definition (an individual approved by the Board to carry out statutory audits, or an audit firm), but [L.N. 61 of 2026](https://legislation.mt/getpdf/69dce8d06fe5fd3994d17860) did not bring article 3 into force and the consolidated Cap. 281 does not show it. Auditing follows international auditing standards (S.L. 281.02 reg. 4), applied proportionately for small undertakings.
 - The **Companies Act (Audit Exemption) Regulations** (S.L. 386.20), a start-up exemption for companies owned by recent graduates, are marked "Not yet in force" on legislation.mt. Do not rely on them. ([S.L. 386.20](https://legislation.mt/getpdf/602258ccbc8272018c0e3b92))
 
 ### Income tax ([ITMA art. 19(4)(a)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b); [Audit Exemption Rules 2025](https://legislation.mt/getpdf/688b3e0cbed0ef08a863ffa1))
@@ -210,8 +212,8 @@ All amounts are illustrations. Each company is private, not a PIE, not a parent,
 - Laying period: ten months after 31 December 2025 is 31 October 2026. Reduce by 184 days: **30 April 2026**. This is later than the three-month floor (31 March 2026), so it stands.
 - Delivery to the Registrar: 42 days after 30 April 2026 = **11 June 2026**. ([Cap. 386 art. 182(3) and 183(1)](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 
-**Case 5: late delivery.** Case 1's company delivers its 2025 accounts 60 days after 12 December 2026.
-- Maximum administrative penalty under article 183(6): €2,329, plus €46 for each day the default continues. Maximum = €2,329 + €46 × 60 = €2,329 + €2,760 = €5,089. The Registrar may impose less. The company is jointly and severally liable with its officers, and recovery lapses after five years. ([Cap. 386 art. 427 and Eleventh Schedule](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
+**Case 5: late delivery.** Case 1's company misses the 12 December 2026 deadline for its 2025 accounts, and the default continues for 60 days after the day on which it occurs.
+- Maximum administrative penalty under article 183(6): €2,329, due on the day the default occurs, plus €46 for each day the default continues, counted from the following day (art. 427(2)). Maximum = €2,329 + €46 × 60 = €2,329 + €2,760 = €5,089. The Registrar may impose less. The company is jointly and severally liable with its officers, and recovery lapses after five years. ([Cap. 386 art. 427 and Eleventh Schedule](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 
 **Case 6: parent company and the group test.** For this case only, assume a financial reporting period starting on or after 20 March 2026, so the higher limits apply; the default 2025-period assumption above does not apply. A parent's own figures are tiny. Its group, consolidated, has net turnover €11,000,000 net and €11,800,000 gross; balance sheet total €5,500,000 net and €5,900,000 gross; 40 employees. ([Cap. 386](https://legislation.mt/getpdf/6a1836349844fb1e280ec744))
 - Net basis: turnover over €10,000,000 and total assets over €5,000,000: fails. Gross basis: turnover under €12,000,000, total assets under €6,000,000, employees under 50: passes. Either basis may be used, so the group is a **small group** (art. 185(5) and (7)).
@@ -242,7 +244,7 @@ All amounts are illustrations. Each company is private, not a PIE, not a parent,
 | Annual return | Made up to each anniversary of registration; filed within forty-two days after that date | [Cap. 386 art. 184](https://legislation.mt/getpdf/6a1836349844fb1e280ec744) |
 | Annual return fee (electronic), authorised capital up to €1,500 | €85 (paper: €100); higher bands rise with capital, up to €1,200 electronic over €2,500,000 | [S.L. 386.03 Schedule (i)](https://legislation.mt/getpdf/6022592ebc8272018c0ede95) |
 | Registering annual accounts | The Fees Regulations list no separate fee; **check** the MBR for current practice | [S.L. 386.03](https://legislation.mt/getpdf/6022592ebc8272018c0ede95) |
-| Keep accounting records | Ten years (Companies Act); nine years for tax records | [Cap. 386 art. 163(5)](https://legislation.mt/getpdf/6a1836349844fb1e280ec744); [ITMA art. 19(5)](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b) |
+| Keep accounting records | Ten years (Companies Act). The nine-year income tax rule does not apply where article 163(5) applies, so a company keeps its records ten years | [Cap. 386 art. 163(5)](https://legislation.mt/getpdf/6a1836349844fb1e280ec744); [ITMA art. 19(5) proviso](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b) |
 
 - **How to file.** Electronic copies must be authenticated under article 82. The [MBR notice](https://www.mbr.mt/post/notice-to-the-public-submission-of-financial-statements-to-the-registrar), read 4 November 2026, confirms BAROS submission by 12 December 2026 for 31 December 2025 year ends. This does not verify every portal field or attachment.
 - **Pending wording change.** Act XVIII of 2025 rewrites article 183(2) so that the second relief refers to a private company "in terms of the provisions of article 211" rather than an "exempt company". That article (25(b)) is not yet in force: the only part of article 25 brought into force is 25(a), by [L.N. 110 of 2026](https://legislation.mt/getpdf/6a183871becdc821c019727f), and the consolidated Act at 28 April 2026 still shows the "exempt company" wording. Apply the consolidated text until a further commencement notice. ([Act XVIII of 2025](https://legislation.mt/getpdf/6a1837c7becdc821c0197266))
@@ -260,7 +262,7 @@ All amounts are illustrations. Each company is private, not a PIE, not a parent,
 | Records not kept for ten years (art. 163(7)) | €1,164 | None |
 | Accounts issued or delivered unsigned (art. 176(5)) | €465 | None |
 
-These are maximums set by the Registrar (art. 427(1)). The penalty is due on the day of default; the daily penalty runs from the next day. The company is jointly and severally liable with its officers (art. 427(4)).
+These are the maximums set by the Eleventh Schedule, which the Registrar may impose (art. 427(1)). The penalty is due on the day of default; the daily penalty runs from the next day. The company is jointly and severally liable with its officers (art. 427(4)).
 
 **2025 year-ends (being filed now):** a private company with a 31 December 2025 year-end lays its accounts by 31 October 2026 and delivers them by 12 December 2026 (Case 1); rule 6 of L.N. 139 of 2025 applies to those accounts.
 
@@ -319,6 +321,11 @@ expected:
 | MBR Oct12 annual-accounts notice | https://www.mbr.mt/post/notice-to-the-public-submission-of-financial-statements-to-the-registrar | 2026-11-04 | Changed claim only; see ledger |
 | LN139/2025 rules3/4 | https://legislation.mt/eli/ln/2025/139/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
 | Cap386 EleventhSchedule art183(6) | https://legislation.mt/eli/cap/386/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
+| Cap386 Third Schedule para1, consolidated 16 Dec 2025 (previous limits) | https://legislation.mt/getpdf/695277d8cc8c701d50c749db | 2026-11-08 | 8 November correction only |
+| Cap386 Third Schedule para1 (new limits), art2(1), art427(1)-(2), consolidated 28 Apr 2026 | https://legislation.mt/getpdf/6a1836349844fb1e280ec744 | 2026-11-08 | 8 November correction only |
+| Cap281 art2(1) "auditor"; LN61/2026 | https://legislation.mt/eli/cap/281/eng/pdf | 2026-11-08 | 8 November correction only |
+| SL281.05 reg5(1), 5(4) | https://legislation.mt/eli/sl/281.5/eng/pdf | 2026-11-08 | 8 November correction only |
+| ITMA art19(5) proviso | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-08 | 8 November correction only |
 
 Prior source-read dates remain historical; this list does not refresh unrelated claims.
 
