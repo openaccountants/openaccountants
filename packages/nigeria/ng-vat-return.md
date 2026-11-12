@@ -9,9 +9,7 @@ depends_on:
   - vat-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Omolola Fasasi"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: vat-gst
 ---
 
@@ -21,7 +19,6 @@ domain: vat-gst
 
 ## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Omolola Fasasi** on 2026-06-21.
 Items flagged for further clarification are tracked separately and excluded here.
 This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
@@ -77,7 +74,6 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Filing frequency | Monthly |
 | Filing deadline | 21st of the following month |
 | Contributor | Open Accountants Community |
-| Validated by | Verified by Omolola Fasasi (MB058950) on 2026-06-21 |
 | Skill version | 2.0 |
 
 ### Rate Table

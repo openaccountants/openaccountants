@@ -8,7 +8,6 @@ metadata:
   jurisdiction: "GB"
   tax_year: "2026"
   last_updated: "2026-10-23"
-  reviewed_by: "Nadir Khan"
 ---
 
 # Close the UK VAT quarter from Xero

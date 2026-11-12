@@ -1,158 +1,209 @@
 ---
 name: br-carn-monthly-income-tax-rental-income
-description: How a Brazilian resident individual who receives rent from another individual calculates, reports and pays the mandatory monthly income tax (carnê-leão), for accountants and advisers preparing that client's monthly DARF and annual return.
+description: >
+  Brazil calendar 2026 rental income received by a resident individual from an individual
+  tenant: identify the taxable recipient and receipt month, establish rental-specific
+  exclusions, allocate co-owned or marital-property rent and prepare Carnê-Leão Web
+  records. Covers an estate agency collecting for an individual tenant, subletting,
+  registered usufruct, tenant improvements offset against rent and judicial release.
+  Load the shared monthly computation and payment owner for current IRPF bands,
+  legal versus simplified deductions, the separate reduction and ordinary late charges.
+  Trigger on aluguel, locador, locatário, imobiliária, sublocação, usufruto, condomínio,
+  comunhão and rental Carnê-Leão. Includes two rental computations and annual handoff;
+  specialist foreign, nonresident, entity and disputed-assessment components remain separate.
+version: 0.1
 jurisdiction: BR
 tax_year: 2026
-last_updated: 2026-09-03
+last_updated: 2026-11-11
 drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+category: international
+type: computation
 domain: income-tax
 ---
 
-# Carnê-leão monthly income tax on rental income received by an individual in Brazil
+# Brazil individual rental income and Carnê-Leão, 2026 v0.1
 
-## Carnê-leão monthly income tax on rental income received by an individual in Brazil
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Carnê-leão is the mandatory monthly self-assessment of personal income tax. 
-The Receita Federal describes it as the monthly income tax on income of an individual resident in Brazil received from another individual or from abroad, and the tax must be paid by the last business day of the month following receipt of the income.
- For a landlord, this means each month in which rent is received from an individual tenant is its own assessment period, with its own DARF. 
-Income already taxed at source (salaries, for example) does not enter the carnê-leão calculation.
- Figures are for tax year 2026.
+**Quick answer.** A Brazilian-resident individual receiving taxable rent from an individual tenant ordinarily brings that rent into Carnê-Leão in the tenant's payment month, including payment to an administrator. Establish the actual taxable owner or usufructuary, gross receipt and permitted rental exclusions first. Keep gross rent and exclusions separately in the Web records, then send the resulting taxable rental receipt and the taxpayer's other relevant monthly receipts to [br-estimated-tax](br-estimated-tax.md). That Guide owns the shared current monthly table, deduction comparison, separate reduction, payment and ordinary late-charge computation. This Guide owns the rental-specific facts and exclusions; it does not maintain a competing general rates card. [RFB scope](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao); [RFB rental rules](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos).
 
-## Who this is for
+## Who this applies to
 
-This Guide is for a natural person resident in Brazil who receives rent from an individual tenant. 
-The Receita Federal states that carnê-leão is the taxation of personal income tax in the form of mandatory monthly collection by the individual taxpayer resident in Brazil who receives income from another individual or from abroad.
+Calendar 2026 rent received by an individual resident in Brazil from an individual tenant, including a property administrator collecting it. Identify the tenant rather than treating the administrator's legal form as the payer's tax classification. If the tenant is a company, use the legal-entity/withholding route and the annual owner, not a second Carnê-Leão calculation for that receipt. RIR art.688 expressly places rent paid by a legal entity to an individual in the source-withholding route. Salary taxed at source is not another Carnê-Leão receipt. [RFB agency guidance](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/malha-fiscal/antecipacao/rendimentos-recebidos-de-empresa/recebo-alugueis-de-uma-imobiliaria); [RIR688](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm); [RFB scope](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao).
 
-It covers the common variants the official pages address expressly: 
-income from subletting received from an individual, less the rent paid to the owner of the sublet property
-; 
-rent received from an individual where the let property belongs to more than one person in condominium, in the proportion falling to each under the contract, and rent from jointly owned property, taxed 50% in the name of each spouse or, optionally, in full in the name of one of them
-; and 
-rent received by a usufructuary from an individual, provided the public deed of usufruct is entered in the property register, failing which the rent is subject to carnê-leão in the hands of the owner
-.
+The rental variants below retain their own conditions. A bank account receiving all the money does not by itself decide beneficial ownership. Use the property documents, contract and actual rights. Nonresident/departure and foreign-property or foreign-tax components go to [brazil-cross-border-tax](brazil-cross-border-tax.md) with the monthly owner. A company or activity treated as an entity needs [brazil-corporate-tax](brazil-corporate-tax.md). Continue confirmed resident-rental components while identifying the separate unresolved branch.
 
-It does not cover rent paid by a company. 
-Rent received from an individual, even where an estate agency administers the letting, is declared as income received from an individual through the Carnê-Leão web; only where the property is let to a company is the income declared as income received from a legal entity.
+## Rates, bands and thresholds
 
-## Rates, thresholds and deadlines
+| Rental decision | Rule and conditions | Official source |
+|---|---|---|
+| Property held in condominium by several people | Allocate the individual-tenant rent in the proportion belonging to each, according to the contractual clause. Do not assume equal shares merely because a single administrator collects it | [RFB, Imóvel em condomínio](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos) |
+| Property in marital communion | Tax 50% in each spouse's name or, optionally, the whole in one spouse's name. Establish that it is common property and reconcile the choice with the actual monthly and annual records | [RFB, Imóvel em comunhão](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos) |
+| Usufruct | Individual-tenant rent is the usufructuary's Carnê-Leão receipt when the public usufruct deed is registered. Without a registered deed, the owner is taxable; preserve the property/beneficiary disclosure described below | [RFB, Usufruto](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos) |
+| Shared monthly table, reduction and personal deductions | Load br-estimated-tax for all bands, rates, current dependent/simplified limits, the legal/simplified comparison and the distinct reduction. Its taxable-earnings input is before personal deductions; the rental exclusions below are separately excluded from rental gross income | [RFB 2026 monthly table/reduction](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026); [RIR art.42](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm); [Lei 15.270 art.3-A](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm) |
+| Annual limits and special pension exemption | Annual dependent, education and simplified limits, annual reduction and minimum-tax interaction belong to br-income-tax. A pension-specific older-person exemption is not an exemption for rent | [RFB 2026 table, distinct monthly pension and annual sections](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026) |
 
-### Monthly progressive table figures
+## The base
 
-**Monthly progressive table figures**  _(https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/exemplos-de-aplicacao-da-lei-15-191-2025)_
+### Identify recipient and receipt month
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/exemplos-de-aplicacao-da-lei-15-191-2025 |
-| Upper limit of the 0% band of the monthly progressive table | R$ 2.428,80 | the page computes the simplified discount as "25% de R$ 2.428,80 = R$ 607,20" |
-| Monthly simplified discount (replaces all legal deductions) | R$ 607,20 | stated as 25% of the maximum limit of the monthly progressive table |
-| 3rd band of the monthly table | 15%, parcela a deduzir R$ 394,16 | "3ª faixa da tabela, com alíquota de 15% (e parcela a deduzir de R$ 394,16)" |
-| 4th band of the monthly table | 22,5%, parcela a deduzir R$ 675,49 | "4ª faixa da tabela, com alíquota de 22,5% (e parcela a deduzir de R$675,49)" |
-| 5th band of the monthly table | 27,5%, parcela a deduzir R$ 908,73 | "5ª faixa da tabela, com alíquota de 27,5% (e parcela a deduzir de R$ 908,73)" |
+Use the tenant's payment to the owner **or administrator** as the receipt date. Delayed remittance, failure to notify the landlord or the administrator appropriating the money does not move that receipt to a later month. Unpaid contractual rent is distinct from money actually received. A rent amount deposited in court enters Carnê-Leão when released by the judicial authority. [RFB, Data do pagamento and Aluguel depositado judicialmente](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos).
 
-### Monthly progressive table figures
+For a registered usufruct, the bare owner's asset declaration identifies the usufruct in favour of the beneficiary. Without a registered deed, the owner reports the property, indicates the income was donated to the beneficiary and remains the rental-income taxpayer under the cited guidance. Any separate gift-tax consequences need their own facts and source work. Condominium proportions and marital-property choices identify whose monthly calculation receives the rent; reconcile the corresponding expenses and do not deduct the same invoice for both people. [RFB, Usufruto/Imóvel em condomínio/Imóvel em comunhão](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos).
 
-The band boundaries between the second, third, fourth and fifth bands are set out on the Receita Federal's own 2026 table page and on the page cited above; they are not reproduced here because they were not read in full, and they must be read on the linked pages before this Guide is approved.
+### Gross rent and rental-specific exclusions
 
-### Monthly and annual deduction limits, 2026
+Include tenant-paid improvements in the month's rent when the lease allows their cost to offset rent due. Do not include every tenant improvement automatically: RIR art.45 distinguishes improvements that contractually compensate the owner from those that do not. Retain the contract, value and offset evidence, not just the smaller cash remittance. Lease premiums, key money and other use/occupation receipts can also be rental income; classify their actual terms. [RFB, Benfeitorias/Luvas](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos); [RIR arts.41 and 45, including §3](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm).
 
-**Monthly and annual deduction limits, 2026**  _(https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026)_
+From rent received, exclude the following amounts **when the burden was exclusively the landlord's**. Retain proof of the charge, payment, property and any tenant reimbursement. [RFB rental exclusions](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos); [RIR art.42](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm).
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026 |
-| Monthly deduction per dependant | R$ 189,59 | "Dedução mensal por dependente: R$ 189,59" , stated as applying from January 2026 |
-| Monthly limit of the simplified discount | R$ 607,20 | "Limite mensal de desconto simplificado: R$ 607,20" |
-| Pension income exempt for persons over 65 | R$ 1.903,98 | "Rendimentos previdenciários isentos para maiores de 65 anos: R$ 1.903,98" |
-| Annual deduction per dependant | R$ 2.275,08 | stated for exercício 2027 (ano-calendário 2026) |
-| Annual limit for education expenses | R$ 3.561,50 | stated for exercício 2027 (ano-calendário 2026) |
-| Annual limit of the simplified discount | R$ 17.640,00 | stated for exercício 2027 (ano-calendário 2026) |
+| Exclusion | Apply only within this scope | Official source |
+|---|---|---|
+| Property taxes, fees and emoluments | Must concern the property producing the rent. A label such as maintenance fee does not make a private charge a tax | [RFB exclusions and Q445](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf); [RIR art.42 I](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm) |
+| Rent paid for the property being sublet | Deduct the rent paid onward to that property's owner from qualifying individual-tenant sublet income. Rent paid for the taxpayer's separate personal home is not this exclusion | [RFB, Sublocação](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos); [RFB Q448](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf) |
+| Collection or receipt costs | Paid costs to collect or receive this rent, including the properly supported administrator's fee. A statement's net bank payment still needs reconciliation to gross rent and this exclusion | [RFB agency guidance](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/malha-fiscal/antecipacao/rendimentos-recebidos-de-empresa/recebo-alugueis-de-uma-imobiliaria); [RIR art.42 III](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm) |
+| Condominium expenses | Actual qualifying landlord-borne condominium charges, with the relevant property/payment evidence. Do not turn every improvement or owners' association charge into a condominium exclusion | [RFB exclusions/Q445](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos); [RFB Q445](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf) |
 
-### Reduction of the tax from 1 January 2026
+The full exclusion list is now read. It is not a general deduction for mortgage capital, depreciation, repairs or every letting-related expense. Q447 denies the stated eviction-lawyer and pre-letting renovation expenses; Q445 excludes the listed separately charged cleaning, parking, pet and similar fees from allowable exclusions and rejects the owners' association maintenance fee. Use actual classification rather than a blanket percentage of rent. Rental income cannot use Livro Caixa; a person's separate eligible professional activity needs its own records and the monthly owner. [RFB Q445/447](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf); [RFB deductions, Livro Caixa restriction](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/deducoes).
 
-**Reduction of the tax from 1 January 2026**  _(https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2025/dezembro/receita-federal-orienta-fontes-pagadoras-e-contribuintes-a-calcular-a-reducao-do-imposto-de-renda-a-partir-de-1o-de-janeiro-de-2026)_
+Maintain an IPTU paid/used/available schedule for the rental property. Q446's expressly calendar-2025 illustrations allow landlord-paid IPTU within the rental-income year, whether paid at once or in instalments, to be used against that year's rental receipts, tracking the remaining paid balance and excluding unpaid instalments. They illustrate allocation, not a current tax band or authority to carry an unused balance into another year. Apply the current monthly owner's table to the actual 2026 receipts. Other cross-month expense categories or a claimed rental loss require the specific rule before creating a carry. [RFB Q446, used only for its stated IPTU method](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf).
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2025/dezembro/receita-federal-orienta-fontes-pagadoras-e-contribuintes-a-calcular-a-reducao-do-imposto-de-renda-a-partir-de-1o-de-janeiro-de-2026 |
-| Monthly income up to which no IRPF is due from January 2026 | R$ 5.000,00 | the page states that from January 2026 taxpayers with monthly income of up to R$ 5.000,00 stop paying IRPF |
-| Maximum monthly reduction | R$ 312,89 | the widening of the 0% band is granted by a mechanism reducing monthly IRPF by up to this amount, limited to the tax determined under the monthly progressive table |
-| Monthly income above which the ordinary table applies in full | R$ 7.350 | "Para rendas mensais acima de R$ 7.350, permanece a cobrança normal de acordo com a tabela progressiva vigente (7,5%, 15%, 22,5%, 27,5%)" |
-| Worked reduction for monthly income of R$ 6.000,00 | R$ 978,62 - (0,133145 x 6000) = R$ 179,75 | the page's own example, applied to a base of R$ 5.392,80 after the simplified discount |
-| Annual taxable income not taxed from January 2026 | R$ 60.000,00 | "A partir de janeiro de 2026, passam a não serem tributados pelo IRPF anual os contribuintes com renda tributável anual de até R$ 60.000,00" |
+### Shared monthly computation and annual handoff
 
-### Deadline, DARF and late payment
+Keep `gross_rent`, `taxable_non_cash_rent`, each `rental_exclusion`, actual ownership allocation and `taxable_rental_receipt` separately. Rental exclusions under RIR art.42 are not the monthly personal deductions exchanged for the simplified alternative. Send the taxable rental receipt, other qualifying monthly receipts and supported personal-deduction facts to br-estimated-tax. Do not run a separate table for each property or ignore another relevant receipt because this rent alone is small. Do not subtract administration fees both from the statement net amount and again as an exclusion. [RIR art.42](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm); [RFB payment calculation](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/pagar).
 
-**Deadline, DARF and late payment**  _(https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dirpf/carne-leao)_
+Official social-security contributions, qualified dependants and qualifying family-law alimony can enter the legal-deduction package only within their actual conditions and without reuse against withholding income. The simplified alternative replaces that personal package; it is not stacked with it. Medical/education annual deductions and the pension-specific exemption are not invented monthly rent deductions. Private-pension annual treatment is not an unrestricted monthly rental deduction: Lei9.250 art.4§1 limits its monthly application to the stated employment/administrator or pension circumstances. Use the monthly owner's complete comparison and the annual owner's separate annual choice. [RFB deductions](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/deducoes); [Lei9.250 art.4 §§1–2](https://www2.camara.leg.br/legin/fed/lei/1995/lei-9250-26-dezembro-1995-362566-normaatualizada-pl.html).
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dirpf/carne-leao |
-| Payment deadline | last business day of the month following receipt | the income subject to carnê-leão obliges the beneficiary to assess and pay the tax by the last business day of the month following receipt |
-| DARF field 04 – código da receita | 0190 | the program enters code 0190 in field 04 of the DARF |
-| DARF field 05 – número de referência | not completed | neither the program nor the taxpayer completes this field |
-| Minimum amount that may be collected | R$ 10,00 | collection of taxes administered by the RFB whose total is below R$ 10,00 is prohibited; if the carnê-leão is below R$ 10,00 the DARF is not printed and the amount is added automatically to the following month's tax |
-| Late payment penalty (DARF field 08) | 0,33% per day of delay, limited to 20% | running from the first business day after the due date |
-| Late payment interest (DARF field 09) | Selic accumulated monthly from the month after the due date, plus 1% in the month of payment | stated as the Selic reference rate for federal securities |
+## Deadlines and filing
 
-### Isolated penalty for failure to pay
+1. Use the official [Apurar carnê-leão service](https://www.gov.br/pt-br/servicos/apurar-carne-leao) and its current authorised GOV.BR route. Configure the actual calendar year and whether the person really has autonomous-work or foreign items. Rental alone does not justify enabling a professional Livro Caixa.
+2. In the current manual's **Rendimentos** entry, select the actual rental nature, receipt date, source and history; provide payer/beneficiary identity where required. Enter gross rent and its rental exclusion/deduction separately. The system calculates net rental income. Preserve the administrator's gross-to-net reconciliation and property/recipient trail.
+3. Maintain eligible personal deductions and actual dependants. Changing the Identificação dependant count also requires the monthly Demonstrativo counts to be checked. Optional import into someone else's return requires that person's CPF authorisation and the taxpayer actually being their dependant; it is not an unrestricted sharing instruction.
+4. Review the **Demonstrativo de Apuração**, its monthly details, exclusions, personal-deduction choice and reduction. Save the resulting records. If importing escrituração, follow the current official layout and analyse errors: imported rows are added, so reconcile duplicates and partial/rejected rows rather than re-importing blindly. This Guide does not certify a taxpayer's actual portal session or submit anything.
+5. Generate supported **DARF 0190** and use br-estimated-tax for the actual due date, minimum-payment accumulation and ordinary late charges. Ordinary payment is due by the last business day of the following receipt month. Preserve the actual assessment period, CPF, principal, maturity, reference-field treatment, charges and receipt. The shared owner covers the small-balance rule and named-field/reference treatment. The former numbered-field layout is not certified against an actual current generated DARF. A generated DARF is not proof it was paid. From calendar 2026 the current manual prohibits manually adding “Imposto Pago”; confirmed payments are imported from Receita's systems. Reconcile any delay or mismatch with the actual payment record.
+6. Reconcile the year to [br-income-tax](br-income-tax.md) and [br-return-assembly](br-return-assembly.md). The current MIR describes recovery of Carnê-Leão data when starting the return; verify the actual exercise's service availability. Monthly **paid principal** is the advance credit, excluding mora/interest. Reconcile gross rent/exclusions, recipient choice, other income, imported principal and outstanding debts; monthly zero tax does not establish annual zero tax. The current MIR also warns imported alimony data are informational and require their actual annual payment entries. Complete exercise-2027 filing thresholds/calendar/screens remain with the annual owners, not assumed from the exercise-2026 manual.
 
-**Isolated penalty for failure to pay**  _(https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/conformidade-tributaria/cartorios/visao-integral-do-segmento/orientacoes-tributarias-de-interesse-do-segmento-cartorios/carne2013leao-obrigatoriedade)_
+These steps use the current [Carnê-Leão manual](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/manual), [payment page](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/pagar) and [MIR Carnê-Leão/deduction sections](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/manual-mir/pagamentos-ou-doacoes/despesas-dedutiveis). Neither this workflow nor the intake/assembly routes grant authority to file, pay or elect for a person.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/conformidade-tributaria/cartorios/visao-integral-do-segmento/orientacoes-tributarias-de-interesse-do-segmento-cartorios/carne2013leao-obrigatoriedade |
-| Isolated penalty for failure to pay carnê-leão | 50% of the monthly payment | stated under art. 44, II, "a" of Lei nº 9.430/1996 as a penalty of 50% on the amount of the monthly payment for failure to collect the carnê-leão |
+## Penalties and interest
 
-## The method, step by step
+Use br-estimated-tax's current Lei9.430 art.61 computation for ordinary mora and SELIC, with the actual maturity, payment date and official calculation. Do not restore the older payment page's “first business day” wording over the statute's first day after maturity. The old daily rate, cap, minimum DARF and interest-month rules remain at that shared owner; this rental Guide does not create a competing formula. [Lei9.430 art.61](https://www2.camara.leg.br/legin/fed/lei/1996/lei-9430-27-dezembro-1996-367738-normaatualizada-pl.html).
 
-- **Step 1 – Identify the payer of the rent** — Identify the payer of the rent, because it decides whether carnê-leão applies at all. Rent received from an individual, including where an estate agency administers the letting, goes through the Carnê-Leão web; rent from a property let to a company is income received from a legal entity.  _([Recebo Aluguéis de uma Imobiliária](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/malha-fiscal/antecipacao/rendimentos-recebidos-de-empresa/recebo-alugueis-de-uma-imobiliaria))_
-- **Step 2 – Fix the date of receipt for each month** — Fix the date of receipt for each month. Receipt means the delivery of funds to the beneficiary, including by deposit in a financial institution in their name, and for rent the date of payment for tax incidence purposes is the date on which the tenant pays the rent to the owner of the property or to the administrator, even if the administrator fails to inform the landlord of the receipt or misappropriates it.  _([Orientações Gerais Carnê-Leão](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dirpf/carne-leao))_
-- **Step 3 – Add to the month's rent anything treated as rent** — Add to the month's rent anything the official page treats as rent. Expenses on improvements made by an individual tenant are subject to carnê-leão together with the rent received in the month, where the lease permits those expenses to be set against the rent due.  _([Orientações Gerais Carnê-Leão](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dirpf/carne-leao))_
-- **Step 4 – Apply the exclusions specific to rent** — Apply the exclusions specific to rent. From the rent received there may be deducted, where the charge fell exclusively on the landlord, amounts relating to taxes, fees and emoluments levied on the property that produces the income, among the further items the page lists; the gross rent is entered and the total of those amounts is entered in the field "Valor Exclusão/Dedução". The remaining items on that list were not read in full here and must be read on the page before approval.  _([Rendimentos sujeitos ao carnê-leão](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos))_
-- **Step 5 – Apply the general monthly deductions** — Apply the general monthly deductions. Provided they have not been used as a deduction against income subject to withholding at source, alimony paid under family law by judicial decision, including provisional maintenance, under a court-approved agreement or a public deed under art. 733 of the Code of Civil Procedure, and expenses recorded in the livro Caixa are admitted; the livro Caixa may be used only by the self-employed worker, auctioneer and holder of notarial and registry services. The livro Caixa cannot be used for rental and transport income.  _([Deduções possíveis no carnê-leão](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/deducoes))_
-- **Step 6 – Calculate the tax** — Calculate the tax. For the calculation of the tax, the program applies the monthly progressive table for the relevant calendar year to the total income received in the month from individuals and from abroad, after subtracting the deductions relating to livro Caixa, dependants, official social security and alimony, then apply the reduction in the reduction table above.  _([Orientações Gerais Carnê-Leão](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dirpf/carne-leao); [Exemplos de Aplicação da Lei 15.270/2025](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/exemplos-de-aplicacao-da-lei-15-191-2025))_
-- **Step 7 – Record the month in the Carnê-Leão web** — Record the month in the Carnê-Leão web. The Demonstrativo de Apuração is the system's opening screen, from which the taxpayer can view the detail, download or print the livro caixa and the demonstrativo itself, and generate the DARF for payment of the tax due, and configuration data must be given per calendar year, including whether the taxpayer authorises the import of the Carnê-Leão data into another person's income tax return.  _([Manual do Carnê-Leão](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/manual); [Apurar carnê-leão](https://www.gov.br/pt-br/servicos/apurar-carne-leao))_
-- **Step 8 – Generate and pay the DARF** — Generate and pay the DARF by the deadline in the deadlines table, using the código da receita in that table; the Total field is the sum of fields 07, 08 and 09, and if the carnê-leão is below R$ 10,00 the DARF is not generated and the amount is added automatically to the following month's tax.  _([Como pagar o carnê-leão](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/pagar))_
-- **Step 9 – Carry the year into the annual return** — Carry the year into the annual return. If the taxpayer uses the Carnê-Leão, the information is recovered when the return begins to be completed.  _([Despesas dedutíveis – Manual MIR](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/manual-mir/pagamentos-ou-doacoes/despesas-dedutiveis))_
+Separately, Lei9.430 art.44 II(a) provides an **isolated assessed fine of 50% of the omitted mandatory monthly payment**, even if the annual adjustment finds no tax payable. This is an assessment rule, not a routine instruction to add 50% to every voluntary late DARF. The actual assessment, procedural position, reductions and any interaction with another penalty need case-specific review. Continue the supported rental/principal reconciliation while isolating that dispute. [Current statutory text, art.44 caput/II(a) and neighbouring paragraphs](https://www2.camara.leg.br/legin/fed/lei/1996/lei-9430-27-dezembro-1996-367738-normaatualizada-pl.html).
+
+## Cross-border points
+
+Resident status, departure, foreign property/source, actual currency dates and foreign-tax evidence can change the result. Foreign tax is not an unrestricted deduction from rent: the manual has a separate monthly foreign-credit limit and same-year excess tracking. Route that calculation to br-estimated-tax with brazil-cross-border-tax; confirm treaty/reciprocity and the actual foreign tax before any credit. Nonresident Brazilian-source rent follows its proper withholding route. This reference does not certify a particular treaty or nonresident calculation. [RFB foreign-income/residence sections](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos); [manual, Compensação de imposto pago no exterior](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/manual).
+
+## Two worked examples that recompute
+
+These fictional cases show rental-specific inputs followed by the **shared** 2026 calculation. They are not rate cards or approved returns. The example coefficients and deduction/reduction values are from the [RFB 2026 monthly table](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026) and [Lei15.270 art.3-A](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm). In both, the individual has no other qualifying monthly receipts, personal legal deductions, foreign credit or small-balance carry. Actual other income or deductions require a new comparison.
+
+### Case 1: administrator receives before remitting
+
+Assume an individual tenant pays 6,000 to the administrator in January. The administrator remits in February. Supported landlord-only charges are administration 300, property tax 200 and condominium 500. January gross rent is 6,000; exclusions are 1,000; taxable rental receipt is 5,000. The simplified personal alternative is 607.20, giving base 4,392.80. Table tax is 312.89 and the distinct reduction is capped at that tax, leaving zero monthly principal. Do not shift receipt to February or deduce the same fees again. Annual results remain separate. [RFB receipt/exclusions](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos).
+
+```oa-check
+name: BR rental agency receipt and separate personal deduction
+inputs:
+  gross_rent: 6000
+  administration: 300
+  property_tax: 200
+  condominium: 500
+  simplified: 607.20
+steps:
+  - rental_exclusions: administration + property_tax + condominium
+  - taxable_rental: gross_rent - rental_exclusions
+  - personal_base: taxable_rental - simplified
+  - table_tax: round(max(0, personal_base * 0.225 - 675.49), 2)
+  - reduction: min(table_tax, 312.89)
+  - principal: table_tax - reduction
+expected:
+  rental_exclusions: 1000
+  taxable_rental: 5000
+  personal_base: 4392.80
+  table_tax: 312.89
+  principal: 0
+```
+
+### Case 2: sublet rent and collection costs
+
+Assume individual subtenants pay 10,000 in the month. The sublessor pays 3,000 rent to the owner of that same property, collection costs 500 and qualifying landlord-borne condominium expenses 500, all supported and not reimbursed. Rental exclusions total 4,000 and taxable rental receipt is 6,000. With the stipulated personal facts above, the simplified base is 5,392.80; table tax 574.29 less the separate reduction 179.75 gives principal 394.54. A separate personal-home rent payment would not be an exclusion. [RFB sublet/exclusion rules](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos); [Q448](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf).
+
+```oa-check
+name: BR rental subletting exclusions and shared monthly reduction
+inputs:
+  subrent: 10000
+  owner_rent: 3000
+  collection_cost: 500
+  condominium: 500
+  simplified: 607.20
+steps:
+  - rental_exclusions: owner_rent + collection_cost + condominium
+  - taxable_rental: subrent - rental_exclusions
+  - personal_base: taxable_rental - simplified
+  - table_tax: round(max(0, personal_base * 0.275 - 908.73), 2)
+  - reduction: round(978.62 - 0.133145 * taxable_rental, 2)
+  - principal: round(max(0, table_tax - min(table_tax, reduction)), 2)
+expected:
+  rental_exclusions: 4000
+  taxable_rental: 6000
+  personal_base: 5392.80
+  table_tax: 574.29
+  reduction: 179.75
+  principal: 394.54
+```
+
+### Boundary checks
+
+| Facts | Required treatment | Official source |
+|---|---|---|
+| Company tenant, individual landlord, agency intermediary | Keep legal-entity income/withholding route; the administrator does not turn it into individual-tenant Carnê-Leão | [RFB agency guidance](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/malha-fiscal/antecipacao/rendimentos-recebidos-de-empresa/recebo-alugueis-de-uma-imobiliaria) |
+| Tenant funds remain in court | Check judicial release before assigning a monthly receipt | [RFB judicial deposit rule](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos) |
+| Two contractual co-owners versus marital common property | Use actual contractual proportions for condominium; only the separate marital-common-property rule supplies the spouse allocation/election | [RFB ownership headings](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos) |
+| Tenant reimburses the charged expense or landlord claims it twice | Reconcile the actual burden and exclusion once; do not assume the landlord-only condition | [RFB exclusion condition](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos) |
+| Tenant improves the property without contractual rent offset | Do not assume every improvement is rent; distinguish RIR45§3 from its contractual-offset rule | [RIR45 IV/§3](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm) |
+| Monthly principal zero, or annual liability zero | Continue annual aggregation and unpaid-month/assessment checks; neither implies all obligations disappear | [MIR Carnê-Leão](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/manual-mir/pagamentos-ou-doacoes/despesas-dedutiveis); [Lei9.430 art.44 II(a)](https://www2.camara.leg.br/legin/fed/lei/1996/lei-9430-27-dezembro-1996-367738-normaatualizada-pl.html) |
 
 ## Ask the client first
 
-- Who pays the rent each month: an individual tenant, or a company? The answer decides whether this Guide applies at all, per the first step above.
-- If an estate agency collects the rent, on what date did the tenant pay the agency, and did the agency remit it? The date of receipt rule in step 2 turns on the tenant's payment date, not the remittance date.
-- Who bore each charge on the property — the landlord or the tenant — and is there documentary proof? Only charges borne exclusively by the landlord fall within the exclusion in step 4.
-- Is the property owned by one person, by spouses, in condominium, or subject to a registered usufruct? Each of these changes who declares what share, as set out under "Who this is for".
-- Is the client subletting, and how much rent is paid onward to the owner? Sublet income is assessed net of that rent.
-- Does the client have dependants, official social security contributions or court-ordered alimony not already used against withheld income, and would the monthly simplified discount be more favourable?
+Read the existing file and supporting records before asking. Request only consequential missing facts:
+
+- Residence/entry/departure dates and actual tenant identity, with contracts and amendments.
+- Each property's ownership, marital-property regime and choice, or registered usufruct deed; distinguish the recipient from the collection account.
+- Tenant-to-owner/administrator payment dates and gross statements, cash/noncash rent offsets, judicial deposit/release documents and remittance reconciliation.
+- Each landlord-only charge, who paid it, reimbursements, sublet-to-owner rent and the IPTU paid/used balance.
+- Other monthly receipts, supported personal deductions already used against withholding, qualifying dependants and the comparison with the simplified alternative.
+- Existing Web records, actual principal payments/receipts, arrears/assessment notices and annual imports or amendments.
 
 ## When to refuse or refer
 
-- Rent received from a company, or from a company tenant through an agency, which is taxed at source and not through carnê-leão.
-- Rent received by a non-resident, or by a landlord who ceased to be resident in Brazil during the year; the pages relied on here address the resident individual.
-- Rent received from abroad, or where foreign tax is to be offset; 
-the Carnê-Leão has a separate mechanism for offsetting tax paid abroad with monthly limits and carry-forward of excess
-, which this Guide does not work through.
-- Letting activity carried on in a way that equates the taxpayer to a legal entity, or letting through a company the client owns.
-- Months already in arrears, or a Receita Federal malha fiscal notice or assessment, where the isolated penalty in the table above and interest calculations are in issue.
-- The Imposto de Renda da Pessoa Física Mínimo for high incomes, and any interaction between it and rental income.
-- Any figure not shown in the tables above, including the band boundaries of the monthly progressive table, which must be read on the linked Receita Federal pages.
+Do not guess recipient, receipt month, exclusion entitlement, monthly deduction or payment credit. Continue established components and isolate unsupported items. Company tenants need the withholding/annual route; nonresidents, foreign receipts/credits and departure require the cross-border/monthly owners; business/entity equivalence requires the company owner. High-income minimum IRPF and the annual reduction/choice belong to br-income-tax. Arrears use the ordinary monthly payment owner; an actual assessment or disputed isolated penalty needs professional review. Consumption-tax consequences are a separate [brazil-vat](brazil-vat.md) component and do not replace this personal-income calculation.
+
+Find the Guide library and professional-review route at [OpenAccountants](https://www.openaccountants.com). Check the displayed year, version and actual review state. Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 
 ## Sources
 
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/exemplos-de-aplicacao-da-lei-15-191-2025 (monthly progressive table figures)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026 (monthly and annual deduction limits, 2026)
-- https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2025/dezembro/receita-federal-orienta-fontes-pagadoras-e-contribuintes-a-calcular-a-reducao-do-imposto-de-renda-a-partir-de-1o-de-janeiro-de-2026 (reduction of the tax from 1 January 2026)
-- https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dirpf/carne-leao (deadline, DARF and late payment)
-- https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/conformidade-tributaria/cartorios/visao-integral-do-segmento/orientacoes-tributarias-de-interesse-do-segmento-cartorios/carne2013leao-obrigatoriedade (isolated penalty for failure to pay)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao (definition and scope)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos (rent exclusions and date of receipt)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/deducoes (deductions and livro Caixa restriction)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/pagar (DARF fields and payment)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/manual (Carnê-Leão web operation)
-- https://www.gov.br/pt-br/servicos/apurar-carne-leao (service page)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/malha-fiscal/antecipacao/rendimentos-recebidos-de-empresa/recebo-alugueis-de-uma-imobiliaria (rent collected by an estate agency)
-- https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/manual-mir/pagamentos-ou-doacoes/despesas-dedutiveis (import into the annual return)
+Actually read on 2026-11-11: the named original portions below. Current Receita rental, deduction and manual content was also rendered in a real browser. The former general orientation URL redirected to a restricted login page; it supplies no current evidence here. Existing cached official statutes/PDFs were read as actual originals, not search snippets. The IRPF exercise-2026 PDF concerns calendar2025; its named rental interpretations/illustrations are distinguished from current2026 table values. No complete exercise2027 filing calendar or portal operation is certified.
 
-Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
+| Source / actual portions read | Official URL | Read date |
+|---|---|---|
+| Read for this Guide: Current Carnê-Leão definition, resident/PF/foreign scope, source-taxed receipts excluded | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao | 2026-11-11 |
+| Read for this Guide: Rendimentos: complete rental/arrendamento paragraphs, date, all exclusions, usufruct, improvements, sublet, ownership and judicial release; foreign/residence paragraphs for referral only | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/rendimentos | 2026-11-11 |
+| Read for this Guide: Deductions: initial legal package, no duplicate withholding use, Livro Caixa restriction; other professional-expense material not applied to rent | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/deducoes | 2026-11-11 |
+| Read for this Guide: Agency guidance: PF/PJ tenant distinction, administrator-fee reconciliation and assessment evidence | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/malha-fiscal/antecipacao/rendimentos-recebidos-de-empresa/recebo-alugueis-de-uma-imobiliaria | 2026-11-11 |
+| Read for this Guide: RIR2018 arts.41–45 and688–689: rent, exclusions, receipt, contractual improvements; cached actual original, not its obsolete tables | https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm | 2026-11-11 |
+| Read for this Guide: RFB original IRPF2026 Q445–448: exclusion limits, same-year IPTU illustrations, eviction/renovation and personal-home rent limits; calendar2025 examples, no2025 tax table adopted | https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf | 2026-11-11 |
+| Read for this Guide: Current2026 monthly table/reduction and annual/pension headings, used to check owner boundary and both example coefficients | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026 | 2026-11-11 |
+| Read for this Guide: Lei9.250 art.4, including monthly private-pension scope and simplified alternative; cached Câmara current compilation | https://www2.camara.leg.br/legin/fed/lei/1995/lei-9250-26-dezembro-1995-362566-normaatualizada-pl.html | 2026-11-11 |
+| Read for this Guide: Lei15.270 adding art.3-A, caput/table/§§1–3: separate2026 reduction; annual provisions read for owner boundary only | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm | 2026-11-11 |
+| Read for this Guide: Current manual: configuration/identification, rental receipt fields, payments including2026 import, Demonstrativo, foreign-credit display and escrituração safeguards | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/manual | 2026-11-11 |
+| Read for this Guide: Current payment page: aggregation, deadline,0190/reference/principal/total and small-balance route; statutory mora wording controls its older shorthand | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao/pagar | 2026-11-11 |
+| Read for this Guide: MIR Carnê-Leão and deduction opening sections: actual paid principal, recovery, alimony-entry warning; not a whole-MIR reading | https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/preenchimento/manual-mir/pagamentos-ou-doacoes/despesas-dedutiveis | 2026-11-11 |
+| Read for this Guide: Official service identity/access route only, not authenticated taxpayer operation | https://www.gov.br/pt-br/servicos/apurar-carne-leao | 2026-11-11 |
+| Read for this Guide: Current Lei9.430 arts.44/61 with neighbouring assessment conditions: isolated fine distinct from ordinary mora; fresh Câmara44 and cached original61 read | https://www2.camara.leg.br/legin/fed/lei/1996/lei-9430-27-dezembro-1996-367738-normaatualizada-pl.html | 2026-11-11 |
+
+Not yet confirmed: actual ownership/marital choice/registered usufruct, receipts and landlord-only burdens for a particular case; disputed allocation of expenses between owners, cross-month exclusions other than the stated IPTU illustration, negative rental amounts and any cross-year carry; special damages, gifts, rural/business/entity equivalence and nonresident/foreign-tax computations; actual portal permissions, payment matching and correction/amendment status; the former DARF field-number layout (code in04, reference in05 and principal/fine/interest mappings in07–09) against an actual current generated document; assessment-specific penalty reductions, cumulative-penalty disputes or relief; complete exercise2027 filing thresholds/calendar/screens and annual high-income interaction, which remain with the annual owners. No unresolved amount is assumed deductible, exempt, paid or professionally approved.
