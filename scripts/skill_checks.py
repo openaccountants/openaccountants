@@ -542,8 +542,8 @@ def check_tier_honest(path, text, fm):
 
 
 def check_reviewed_on(path, text, fm):
-    """(j) a signed skill names the date it was signed (rule 10). No file carries
-    ``reviewed_on`` yet, so this warns until the 184 signed files are backfilled."""
+    """(j) a signed skill names a real, non-future approval date (rule 11).
+    Blocks an invalid approval in PR mode, including metadata-only approval."""
     reviewed_by = _real(fm.get("reviewed_by"))
     reviewed_on = fm.get("reviewed_on")
     if reviewed_by:
@@ -824,7 +824,8 @@ def source_evidence_regressions(old_text, new_text, path=None, fm=None):
             barred = sorted({_host(url) for url in urls if any(_host_is(_host(url), host) for host in SECONDARY_HOSTS)})
             if barred:
                 found["secondary source citation: " + line.strip()] += 1
-            domain = applied_domain(path, fm)[0] if path is not None else None
+            context = read_frontmatter(text) or fm
+            domain = applied_domain(path, context)[0] if path is not None else None
             if domain:
                 unofficial = sorted({_host(url) for url in urls
                                      if _host(url) and not domains.host_is_official(_host(url), domain["id"])})
