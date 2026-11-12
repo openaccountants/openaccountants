@@ -27,6 +27,9 @@ Exit 1 if any expected value does not match or a block cannot be read.
 A skill with no oa-check block passes; `--require` enforces its declared
 shape's example count. Undeclared legacy tax files still need at least one;
 an active non-tax domain follows the same shape rules.
+Generated copies inherit admission from their authored source. Existing blocks
+in those copies are still recomputed; missing-block admission applies to source
+files, including the hand-authored packages/us-federal/ tree.
 
 Usage:
     python3 scripts/check-examples.py                  # every skill
@@ -237,6 +240,13 @@ def is_tax_skill(path):
 
 
 def required_examples(path):
+    # Rebuilding a copy is not writing new guidance. Its original domain/path
+    # can be lost in a package, and exact derivation is checked independently.
+    # Do not force unchanged inherited content through new-author admission.
+    rel = os.path.relpath(path, REPO_ROOT).replace(os.sep, "/")
+    if ((rel.startswith("packages/") and not rel.startswith("packages/us-federal/"))
+            or rel.startswith(("agent-skills/", "plugins/openaccountants/skills/"))):
+        return 0
     # Lazy import: skill_checks also loads this module's arithmetic block regex.
     import skill_checks
     with open(path, encoding="utf-8") as fh:
