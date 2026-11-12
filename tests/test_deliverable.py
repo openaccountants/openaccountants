@@ -76,6 +76,11 @@ class FileNameTest(unittest.TestCase):
 
 
 class DescriptionTest(unittest.TestCase):
+    def test_blank_source_is_not_silently_treated_as_a_non_guide(self):
+        found = problems({f"{IFRS_DIR}/ifrs18-presentation.md": ""})
+        self.assertEqual(len(found), 1)
+        self.assertIn("description has 0 characters", found[0])
+
     def test_short_description_fails_before_website_delivery(self):
         rel = f"{IFRS_DIR}/ifrs18-presentation.md"
         found = problems({rel: SKILL.replace("A complete fictional presentation skill for a test.", "The Dutch owner-occupied home scheme")})

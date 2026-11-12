@@ -406,7 +406,7 @@ def deliverable_problems(paths, read=_read_or_none, size=_size_or_none):
         if not is_delivered_skill(rel):
             continue  # READMEs, references, templates and the generated lists
         text = read(rel)
-        if text:
+        if text is not None:
             description = str(skill_checks.read_frontmatter(text).get("description") or "").strip()
             if len(description) < PLATFORM_MIN_DESCRIPTION_CHARS:
                 problems.append(
