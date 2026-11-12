@@ -1,13 +1,13 @@
 ---
 name: wi-payroll
-description: "Use when asked about WI Payroll. This Tier 2 content skill covers Wisconsin (WI) state payroll obligations for tax year 2025 for employers maintaining a worksite, remote employees, or assigned workers in Wisconsin. It is designed to be loaded alongside us-tax-workflow-base (Tier 1) and us-federal-payroll (Tier 2) when payroll runs include Wisconsin-source wages."
+description: "Wisconsin employer payroll withholding, unemployment insurance and reporting workflow for tax year 2025."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/wi-payroll"
   jurisdiction: "US-WI"
   tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-12"
 ---
 
 # WI Payroll
@@ -446,4 +446,4 @@ This skill produces draft work product for review by a Circular 230-credentialed
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `wi-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/wi-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `wi-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/wi-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

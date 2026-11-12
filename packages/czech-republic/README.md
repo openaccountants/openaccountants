@@ -21,10 +21,11 @@
 14. `cz-vat-return.md`
 15. `czech-republic-vat-return.md`
 16. `references.md`
-17. `eu-vat-directive.md`
-18. `payroll-workflow-base.md`
-19. `company-formation-workflow-base.md`
-20. `transfer-pricing-workflow-base.md`
+17. `eu-vat-base.md`
+18. `eu-vat-directive.md`
+19. `payroll-workflow-base.md`
+20. `company-formation-workflow-base.md`
+21. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

@@ -81,6 +81,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 71. `il-pprt.md`
 72. `il-sales-tax.md`
 73. `illinois-sales-tax.md`
+74. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

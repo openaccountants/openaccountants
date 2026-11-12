@@ -79,6 +79,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 69. `de-franchise-tax-and-llc.md`
 70. `de-gross-receipts-tax.md`
 71. `de-income-tax.md`
+72. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

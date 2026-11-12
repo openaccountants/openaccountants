@@ -40,15 +40,19 @@
 33. `mt-reverse-charge-vat-services-received-from.md`
 34. `mt-vat3-quarterly-return-malta.md`
 35. `selling-a-company-in-malta.md`
-36. `eu-vat-directive.md`
-37. `bookkeeping-workflow-base.md`
-38. `payroll-workflow-base.md`
-39. `company-formation-workflow-base.md`
-40. `financial-statements-workflow-base.md`
-41. `transfer-pricing-workflow-base.md`
-42. `crypto-tax-workflow-base.md`
-43. `malta-guided-intake.md`
-44. `malta-return-assembly.md`
+36. `eu-vat-base.md`
+37. `eu-vat-directive.md`
+38. `bookkeeping-workflow-base.md`
+39. `payroll-workflow-base.md`
+40. `company-formation-workflow-base.md`
+41. `financial-statements-workflow-base.md`
+42. `transfer-pricing-workflow-base.md`
+43. `crypto-tax-workflow-base.md`
+44. `malta-guided-intake.md`
+45. `malta-return-assembly.md`
+46. `income-tax-workflow-base.md`
+47. `social-contributions-workflow-base.md`
+48. `workflow-base.md`
 
 ## Also known as
 

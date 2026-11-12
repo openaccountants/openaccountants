@@ -78,6 +78,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 68. `in-payroll.md`
 69. `in-sales-tax.md`
 70. `indiana-sales-tax.md`
+71. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

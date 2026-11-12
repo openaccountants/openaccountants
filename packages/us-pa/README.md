@@ -80,6 +80,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 70. `pa-payroll.md`
 71. `pa-sales-tax.md`
 72. `pennsylvania-sales-tax.md`
+73. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

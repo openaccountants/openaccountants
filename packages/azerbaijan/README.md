@@ -8,17 +8,22 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `az-corporate-income-tax.md`
-5. `az-tax-overview.md`
-6. `azerbaijan-cross-border.md`
-7. `azerbaijan-income-tax.md`
-8. `azerbaijan-payroll.md`
-9. `azerbaijan-social-contributions.md`
-10. `azerbaijan-tax-optimization.md`
-11. `azerbaijan-transfer-pricing.md`
-12. `azerbaijan-vat.md`
-13. `payroll-workflow-base.md`
-14. `transfer-pricing-workflow-base.md`
+4. `az-company-formation.md`
+5. `az-corporate-income-tax.md`
+6. `az-tax-overview.md`
+7. `azerbaijan-cross-border.md`
+8. `azerbaijan-income-tax.md`
+9. `azerbaijan-payroll.md`
+10. `azerbaijan-social-contributions.md`
+11. `azerbaijan-tax-optimization.md`
+12. `azerbaijan-transfer-pricing.md`
+13. `azerbaijan-vat.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
+17. `income-tax-workflow-base.md`
+18. `social-contributions-workflow-base.md`
+19. `workflow-base.md`
 
 ## How to use
 

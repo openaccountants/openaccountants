@@ -7,12 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/tx-sales-use-tax"
   jurisdiction: "US-TX"
   tax_year: "2025"
-  last_updated: "2026-06-12"
+  last_updated: "2026-07-13"
 ---
 
-# Texas Sales and Use Tax (Form 01-114) v1.0
+# TX Sales Use Tax
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+## Texas Sales and Use Tax (Form 01-114) v1.0
 
 ## What this file is
 
@@ -21,8 +21,6 @@ metadata:
 **Status:** Complete
 
 This is a Tier 2 content skill for preparing the Texas sales and use tax return (Form 01-114) for sole proprietors and small businesses selling taxable goods or services in Texas.
-
----
 
 ## Section 1 -- Scope statement
 
@@ -47,31 +45,31 @@ This is a Tier 2 content skill for preparing the Texas sales and use tax return 
 - Multi-state nexus analysis
 - Tax refund/credit claims
 
----
-
 ## Section 2 -- Filing requirements
 
 ### Who must register
 
-Any person who sells, leases, or rents taxable tangible personal property or taxable services in Texas must obtain a Texas sales tax permit. There is no fee for the permit. **Source:** Texas Tax Code §151.201.
+- **Who must register** — Any person who sells, leases, or rents taxable tangible personal property or taxable services in Texas must obtain a Texas sales tax permit. There is no fee for the permit.  _(Texas Tax Code §151.201)_
 
 ### Filing frequency
 
+**Filing frequency**  _(Texas Comptroller Rule 3.286; Texas Tax Code §151.424)_
+
 | Quarterly tax liability | Filing frequency | Source |
-|------------------------|------------------|--------|
+| --- | --- | --- |
 | $0 -- $500/quarter | Annually (due January 20) | Texas Comptroller Rule 3.286 |
 | $500 -- $1,500/quarter | Quarterly (due 20th after quarter) | Texas Comptroller Rule 3.286 |
 | Over $1,500/quarter | Monthly (due 20th of following month) | Texas Comptroller Rule 3.286 |
 | $500,000+/quarter | Monthly with prepayment option | Texas Tax Code §151.424 |
 
-**Due date:** The 20th of the month following the reporting period. If the 20th falls on a weekend or holiday, the next business day.
-
----
+- **Due date** — The 20th of the month following the reporting period. If the 20th falls on a weekend or holiday, the next business day.  _(Texas Comptroller Rule 3.286)_
 
 ## Section 3 -- Rates and thresholds
 
+**Rates and thresholds**  _(Texas Tax Code §151.051, §321.101, §322.103, §151.101)_
+
 | Item | Rate | Source |
-|------|------|--------|
+| --- | --- | --- |
 | State sales tax | 6.25% | Texas Tax Code §151.051 |
 | Maximum local tax | 2.00% | Texas Tax Code §321.101, §322.103 |
 | Maximum combined rate | 8.25% | Texas Tax Code §151.051 + local caps |
@@ -79,152 +77,135 @@ Any person who sells, leases, or rents taxable tangible personal property or tax
 
 ### Local tax components
 
-The local 2% maximum is composed of:
+**Local tax components**  _(Texas Tax Code §321.101, §323.101, §322.103, Various statutes)_
 
 | Component | Maximum rate | Source |
-|-----------|-------------|--------|
+| --- | --- | --- |
 | City sales tax | 2.00% (within the 2% cap) | Texas Tax Code §321.101 |
 | County sales tax | 0.50% | Texas Tax Code §323.101 |
 | Transit authority tax | 1.00% | Texas Tax Code §322.103 |
 | Special purpose district tax | varies | Various statutes |
 
-Total local taxes cannot exceed 2.00% for any location.
+- **Local tax total cap** — Total local taxes cannot exceed 2.00% for any location.  _(Texas Tax Code §321.101, §322.103)_
 
 ### Timely filing discount (prepayment discount)
 
+**Timely filing discount**  _(Texas Tax Code §151.423)_
+
 | Item | Amount | Source |
-|------|--------|--------|
+| --- | --- | --- |
 | Timely filing discount | 0.5% of tax due (max $500/reporting period for monthly/quarterly filers) | Texas Tax Code §151.423 |
 
-The discount is forfeited if the return is filed or paid late.
-
----
+- **Discount forfeiture** — The discount is forfeited if the return is filed or paid late.  _(Texas Tax Code §151.423)_
 
 ## Section 4 -- Computation rules (Step format)
 
 ### Step 1: Classify all sales
 
-For each transaction, determine:
-1. **Tangible personal property or taxable service?** If yes, taxable unless an exemption applies.
-2. **Exempt?** (See Section 5.)
-3. **Location of sale.** Texas is destination-based for intrastate sales. The rate is determined by the delivery location.
+- **Classify all sales** — For each transaction, determine: 1. Tangible personal property or taxable service? If yes, taxable unless an exemption applies. 2. Exempt? (See Section 5.) 3. Location of sale. Texas local sourcing is not a blanket destination rule. For Texas sellers, local sales tax generally follows the seller's place of business or fulfillment facts; remote/out-of-state sellers generally use destination local use tax or the elected single local use tax rate.  _(Texas Tax Code Chapter 151)_
 
 ### Step 2: Compute total sales (01-114 Item 1)
 
-Sum of all gross sales, rentals, and leases of taxable items.
+- **Total sales** — Sum gross sales, rentals, and leases for the reporting period, including taxable and nontaxable sales but excluding separately collected sales tax.  _(Form 01-114 Item 1)_
 
 ### Step 3: Compute taxable sales (01-114 Item 2)
 
-Total sales minus exempt sales (sales for resale, exempt items, out-of-state sales).
+- **Taxable sales** — Total Texas Sales minus supported deductions/exemptions. Exclude documented resale, exempt-entity, statutory exempt, and out-of-state destination sales from Taxable Sales, but keep them in Total Texas Sales when included in gross receipts.  _(Form 01-114 Item 2)_
 
 ### Step 4: Compute state tax (01-114 Item 3)
 
-Taxable sales x 6.25% = state sales tax.
+- **State tax** — Taxable sales x 6.25% = state sales tax.  _(Form 01-114 Item 3)_
 
 ### Step 5: Compute local tax (01-114 Item 4)
 
-For each delivery location:
-- Look up the combined local rate (city + county + transit + special).
-- Taxable sales to that location x local rate.
-- Sum all local tax amounts.
+- **Local tax** — Determine whether local sales tax or local use tax applies. For Texas places of business, source under Comptroller local-tax rules; for remote/out-of-state fulfillment, use the ship-to local use tax rate or a valid single local use tax rate election. Apply local tax only up to the 2% local cap.  _(Form 01-114 Item 4)_
 
 ### Step 6: Compute use tax (01-114 Item 5)
 
-For purchases on which no Texas tax was collected:
-- Purchase price x (6.25% state + applicable local rate) = use tax.
-- Credit allowed for sales tax paid to another state (limited to the Texas rate).
+- **Use tax** — For purchases on which no Texas tax was collected: - Purchase price x (6.25% state + applicable local rate) = use tax. - Credit allowed for sales tax paid to another state (limited to the Texas rate).  _(Form 01-114 Item 5)_
 
 ### Step 7: Compute total tax (01-114 Item 6)
 
-State tax + local tax + use tax = total tax.
+- **Total tax** — State tax + local tax + use tax = total tax.  _(Form 01-114 Item 6)_
 
 ### Step 8: Apply timely filing discount (01-114 Item 7)
 
-If filing on time: total tax x 0.5%, capped at $500 per period.
+- **Timely filing discount application** — If filing on time: total tax x 0.5%, capped at $500 per period.  _(Form 01-114 Item 7)_
 
 ### Step 9: Compute net tax due (01-114 Item 8)
 
-Total tax - timely filing discount = net tax due.
-
----
+- **Net tax due** — Total tax - timely filing discount = net tax due.  _(Form 01-114 Item 8)_
 
 ## Section 5 -- Edge cases and special rules
 
 ### E-1: Data processing services -- 20% exemption
 
-The sale of data processing services is taxable, BUT 20% of the charge is exempt. Only 80% of the data processing service charge is subject to sales tax. **Source:** Texas Tax Code §151.351.
-
-Data processing services include word processing, data entry, data retrieval, data search, information compilation, payroll processing, and similar computer-based services. **Source:** Texas Tax Code §151.0035.
+- **Data processing services 20% exemption** — The sale of data processing services is taxable, BUT 20% of the charge is exempt. Only 80% of the data processing service charge is subject to sales tax.  _(Texas Tax Code §151.351)_
+- **Data processing services definition** — Data processing services include word processing, data entry, data retrieval, data search, information compilation, payroll processing, and similar computer-based services.  _(Texas Tax Code §151.0035)_
 
 Example: $10,000 data processing invoice. Taxable amount: $10,000 x 80% = $8,000. Tax: $8,000 x 8.25% = $660.
 
 ### E-2: Internet access and web hosting
 
-Internet access services are exempt from Texas sales tax (per the federal Internet Tax Freedom Act). Web hosting is classified as a data processing service and is taxable (at the 80% rate). **Source:** Texas Comptroller Rule 3.330.
+- **Internet access and web hosting** — Internet access services are exempt from Texas sales tax (per the federal Internet Tax Freedom Act). Web hosting is classified as a data processing service and is taxable (at the 80% rate).  _(Texas Comptroller Rule 3.330)_
 
 ### E-3: Software
 
-- Canned software (sold off-the-shelf or downloaded): taxable as tangible personal property.
-- Custom software (written to specific customer specs): exempt.
-- SaaS (Software as a Service): the Comptroller's position treats SaaS as a data processing service (taxable at 80%). Some taxpayers dispute this classification.
+- **Canned software** — Canned software (sold off-the-shelf or downloaded): taxable as tangible personal property.  _(unsure)_
+- **Custom software** — Custom software (written to specific customer specs): exempt.  _(unsure)_
+- **SaaS** — SaaS (Software as a Service): the Comptroller's position treats SaaS as a data processing service (taxable at 80%). Some taxpayers dispute this classification.  _(unsure)_
 
 ### E-4: Manufacturing exemptions
 
-Tangible personal property directly used in manufacturing is exempt. This includes machinery, equipment, and materials that become an ingredient or component of a manufactured product for sale. **Source:** Texas Tax Code §151.318.
+- **Manufacturing exemption** — Tangible personal property directly used in manufacturing is exempt. This includes machinery, equipment, and materials that become an ingredient or component of a manufactured product for sale.  _(Texas Tax Code §151.318)_
 
 ### E-5: Agricultural exemptions
 
-Farm machinery, feed, seed, and fertilizer are exempt when used exclusively in agricultural production. Requires a valid agricultural exemption certificate (Ag/Timber Number). **Source:** Texas Tax Code §151.316.
+- **Agricultural exemption** — Farm machinery, feed, seed, and fertilizer are exempt when used exclusively in agricultural production. Requires a valid agricultural exemption certificate (Ag/Timber Number).  _(Texas Tax Code §151.316)_
 
 ### E-6: Occasional sales
 
-A person who does not regularly sell tangible personal property is not required to collect sales tax on an occasional sale, provided they do not make more than two sales of taxable items in a 12-month period. **Source:** Texas Tax Code §151.304(a).
+- **Occasional sales exemption** — A person who does not regularly sell tangible personal property is not required to collect sales tax on an occasional sale, provided they do not make more than two sales of taxable items in a 12-month period.  _(Texas Tax Code §151.304(a))_
 
 ### E-7: Destination-based sourcing
 
-Texas is destination-based: the local tax rate is determined by the location where the item is received by the purchaser. For shipped goods, this is the ship-to address. For pickup, this is the seller's location. **Source:** Texas Tax Code §321.203.
-
----
+- **Destination-based sourcing** — Texas local sourcing depends on the seller's place of business, fulfillment location, and remote-seller status. Local sales tax generally follows a Texas seller's place of business; local use tax for remote/out-of-state fulfillment generally follows the ship-to location unless the remote seller has elected the single local use tax rate.  _(Texas Tax Code §321.203)_
 
 ## Section 6 -- Test suite
 
 ### Test 1: Basic monthly return
 
-- **Input:** Retailer in Houston (combined rate 8.25%). Taxable sales: $50,000.
-- **Expected:** State tax: $50,000 x 6.25% = $3,125. Local tax: $50,000 x 2.0% = $1,000. Total: $4,125. Discount: $4,125 x 0.5% = $20.63. Net: $4,104.37.
+**Input:** Retailer in Houston (combined rate 8.25%). Taxable sales: $50,000.
+**Expected:** State tax: $50,000 x 6.25% = $3,125. Local tax: $50,000 x 2.0% = $1,000. Total: $4,125. Discount: $4,125 x 0.5% = $20.63. Net: $4,104.37.
 
 ### Test 2: Data processing service
 
-- **Input:** IT consultant in Dallas (combined rate 8.25%). Data processing services: $20,000.
-- **Expected:** Taxable amount: $20,000 x 80% = $16,000. Tax: $16,000 x 8.25% = $1,320. Discount: $1,320 x 0.5% = $6.60. Net: $1,313.40.
+**Input:** IT consultant in Dallas (combined rate 8.25%). Data processing services: $20,000.
+**Expected:** Taxable amount: $20,000 x 80% = $16,000. Tax: $16,000 x 8.25% = $1,320. Discount: $1,320 x 0.5% = $6.60. Net: $1,313.40.
 
 ### Test 3: Mixed sales with exemptions
 
-- **Input:** Retailer selling $30,000 general merchandise + $5,000 sold for resale (with valid resale certificate).
-- **Expected:** Taxable: $30,000. Exempt: $5,000. Tax on $30,000 at applicable combined rate.
+**Input:** Retailer selling $30,000 general merchandise + $5,000 sold for resale (with valid resale certificate).
+**Expected:** Taxable: $30,000. Exempt: $5,000. Tax on $30,000 at applicable combined rate.
 
 ### Test 4: Use tax
 
-- **Input:** Business purchases $3,000 of office supplies from out-of-state vendor, no tax collected. Located in Austin (8.25%).
-- **Expected:** Use tax: $3,000 x 8.25% = $247.50.
+**Input:** Business purchases $3,000 of office supplies from out-of-state vendor, no tax collected. Located in Austin (8.25%).
+**Expected:** Use tax: $3,000 x 8.25% = $247.50.
 
 ### Test 5: Late filing
 
-- **Input:** Same as Test 1 but filed 5 days late.
-- **Expected:** No timely filing discount. Penalty: 5% of tax due ($206.25). Interest applies.
-
----
+**Input:** Same as Test 1 but filed 5 days late.
+**Expected:** No timely filing discount. Penalty: 5% of tax due ($206.25). Interest applies.
 
 ## Section 7 -- Prohibitions
 
-- **P-1:** Do NOT apply origin-based sourcing. Texas is destination-based for local tax.
-- **P-2:** Do NOT tax the full amount of data processing services. Only 80% is taxable.
-- **P-3:** Do NOT classify all software as taxable. Custom software is exempt.
-- **P-4:** Do NOT claim the timely filing discount on a late return.
-- **P-5:** Do NOT apply local tax rates exceeding the 2% cap.
-- **P-6:** Do NOT accept a resale certificate without verifying the purchaser's sales tax permit number.
-
----
+- **P-1** — Do NOT assume Texas local tax is always destination-based or always origin-based; identify Texas place of business, fulfillment facts, remote-seller status, marketplace-provider status, and any single local use tax election.  _(Section 7 -- Prohibitions)_
+- **P-2** — Do NOT tax the full amount of data processing services. Only 80% is taxable.  _(Section 7 -- Prohibitions)_
+- **P-3** — Do NOT classify all software as taxable. Custom software is exempt.  _(Section 7 -- Prohibitions)_
+- **P-4** — Do NOT claim the timely filing discount on a late return.  _(Section 7 -- Prohibitions)_
+- **P-5** — Do NOT apply local tax rates exceeding the 2% cap.  _(Section 7 -- Prohibitions)_
+- **P-6** — Do NOT accept a resale certificate without verifying the purchaser's sales tax permit number.  _(Section 7 -- Prohibitions)_
 
 ## Section 8 -- Self-checks
 
@@ -232,7 +213,7 @@ Before delivering output, verify:
 
 - [ ] All transactions classified as taxable, exempt, or for resale
 - [ ] State rate of 6.25% applied correctly
-- [ ] Local rate verified for each delivery destination (destination-based)
+- [ ] Local sourcing documented: Texas place of business / fulfillment / remote-seller status checked, and rate verified with Comptroller locator or valid single local use tax election
 - [ ] Combined rate does not exceed 8.25%
 - [ ] Data processing services taxed at 80% only
 - [ ] Use tax reported for out-of-state purchases
@@ -240,12 +221,33 @@ Before delivering output, verify:
 - [ ] Filing frequency matches liability thresholds
 - [ ] Resale certificates on file for exempt sales
 
----
-
 ## Section 9 -- Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
+## 
+
+**Exempt customer documentation and return treatment**  _([https://comptroller.texas.gov/taxes/publications/96-122.php](https://comptroller.texas.gov/taxes/publications/96-122.php))_
+
+| Buyer / sale type | Tax treatment | Documentation to retain | Return treatment |
+| --- | --- | --- | --- |
+| Federal government | Exempt on qualifying purchases | Properly completed Form 01-339 or purchase voucher in the government entity name | Include tax-free sale in Total Texas Sales; exclude from Taxable Sales |
+| Texas state/local government and public schools | Exempt on qualifying purchases | Form 01-339 or government purchase voucher; public school/government identity should be clear | Include in Total Texas Sales; exclude from Taxable Sales |
+| Private school, college, university, church, religious/charitable nonprofit | Not automatically exempt; must have Comptroller exempt status | Properly completed Form 01-339 in the exempt organization name; authorized-agent purchases must identify the exempt organization | Include in Total Texas Sales; exclude from Taxable Sales only with support |
+| Federally recognized tribal council or tribal-council-owned business | Treat as exempt federal instrumentality; individual tribe members are not exempt merely by status | Form 01-339 or comparable exemption documentation identifying the tribal entity, not an individual member | Include in Total Texas Sales; exclude from Taxable Sales only for entity purchases |
+| Farm/ranch/agricultural production | Exempt only for qualifying items used directly in commercial agricultural/timber production | Form 01-924 with Ag/Timber Number for ag/timber exemption; do not use Form 01-339 for that exemption | Include in Total Texas Sales; exclude from Taxable Sales only for qualifying documented items |
+| Resale | Exempt when purchased for resale | Properly completed resale certificate (Form 01-339 resale side) and purchaser sales tax permit / resale details | Include in Total Texas Sales; exclude from Taxable Sales |
+| Shipped or delivered out of Texas | Not subject to Texas sales tax when destination is outside Texas; check destination-state nexus separately | Shipping records, bill of lading, delivery address, customer order, and invoice showing out-of-state destination | If included in Texas outlet gross receipts, include in Total Texas Sales and exclude from Taxable Sales as a destination deduction |
+
+**Form 01-114 exempt sales reporting**  _([https://comptroller.texas.gov/taxes/audit/manuals/fundamentals/ch5.php](https://comptroller.texas.gov/taxes/audit/manuals/fundamentals/ch5.php))_
+
+| Return concept | Treatment |
+| --- | --- |
+| Form 01-114 Item 1 / Total Texas Sales | Report gross taxable and nontaxable sales for the outlet/reporting period, excluding separately collected sales tax. Tax-free sales are not omitted from total sales. |
+| Form 01-114 Item 2 / Taxable Sales | Report only sales subject to Texas tax after supported deductions and exemptions. Exempt, resale, and supported out-of-state destination sales are excluded here. |
+| Deductions / exempt-sales reconciliation | There is no separate universal deduction line in the basic return; Comptroller audit reconciles deductions as Total Sales minus Taxable Sales. Keep certificates and shipping records by transaction. |
+| Tax-free sales holidays or statutory exempt items | Include only in Total Texas Sales, not Taxable Sales, unless Comptroller instructions for a special schedule say otherwise. |
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-06-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tx-sales-use-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tx-sales-use-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tx-sales-use-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tx-sales-use-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

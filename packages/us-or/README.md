@@ -78,6 +78,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 68. `or-cat.md`
 69. `or-income-tax.md`
 70. `or-payroll.md`
+71. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

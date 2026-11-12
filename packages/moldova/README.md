@@ -24,6 +24,9 @@
 17. `payroll-workflow-base.md`
 18. `company-formation-workflow-base.md`
 19. `transfer-pricing-workflow-base.md`
+20. `income-tax-workflow-base.md`
+21. `social-contributions-workflow-base.md`
+22. `workflow-base.md`
 
 ## How to use
 

@@ -77,6 +77,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 67. `global-router.md`
 68. `ri-income-tax.md`
 69. `ri-sales-tax.md`
+70. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

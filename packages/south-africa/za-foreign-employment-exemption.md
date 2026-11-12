@@ -13,12 +13,10 @@ version: 0.1
 jurisdiction: ZA
 last_updated: 2026-09-03
 depends_on:
-  - foundation
+  - workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Brandon Iverach"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 ---
 
 # South Africa — Foreign Employment Income Exemption, s 10(1)(o)(ii)

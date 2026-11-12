@@ -83,6 +83,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 73. `tx-margin-tax.md`
 74. `tx-sales-tax.md`
 75. `tx-sales-use-tax.md`
+76. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

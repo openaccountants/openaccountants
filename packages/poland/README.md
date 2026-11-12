@@ -20,10 +20,11 @@
 13. `poland-einvoice.md`
 14. `poland-vat-return.md`
 15. `references.md`
-16. `eu-vat-directive.md`
-17. `einvoice-workflow-base.md`
-18. `payroll-workflow-base.md`
-19. `transfer-pricing-workflow-base.md`
+16. `eu-vat-base.md`
+17. `eu-vat-directive.md`
+18. `einvoice-workflow-base.md`
+19. `payroll-workflow-base.md`
+20. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

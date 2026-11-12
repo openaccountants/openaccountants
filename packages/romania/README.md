@@ -20,11 +20,14 @@
 13. `ro-transfer-pricing.md`
 14. `ro-vat-return.md`
 15. `romania-einvoice.md`
-16. `eu-vat-directive.md`
-17. `einvoice-workflow-base.md`
-18. `payroll-workflow-base.md`
-19. `company-formation-workflow-base.md`
-20. `transfer-pricing-workflow-base.md`
+16. `eu-vat-base.md`
+17. `eu-vat-directive.md`
+18. `einvoice-workflow-base.md`
+19. `payroll-workflow-base.md`
+20. `company-formation-workflow-base.md`
+21. `transfer-pricing-workflow-base.md`
+22. `income-tax-workflow-base.md`
+23. `workflow-base.md`
 
 ## Also known as
 

@@ -78,6 +78,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 68. `ky-income-tax.md`
 69. `ky-payroll.md`
 70. `ky-sales-tax.md`
+71. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

@@ -18,10 +18,12 @@
 11. `slovakia-pit.md`
 12. `slovakia-vat-registration-4-7-7a.md`
 13. `slovakia-vat-return.md`
-14. `eu-vat-directive.md`
-15. `payroll-workflow-base.md`
-16. `company-formation-workflow-base.md`
-17. `transfer-pricing-workflow-base.md`
+14. `eu-vat-base.md`
+15. `eu-vat-directive.md`
+16. `payroll-workflow-base.md`
+17. `company-formation-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
+19. `workflow-base.md`
 
 ## How to use
 

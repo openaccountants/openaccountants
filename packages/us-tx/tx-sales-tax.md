@@ -1,5 +1,5 @@
 ---
-name: tx-sales-use-tax
+name: tx-sales-tax
 description: >
   Texas Sales and Use Tax return (Form 01-114) for self-employed individuals and small businesses. Covers the 6.25% state rate, local tax add-ons (up to 2%), combined maximum of 8.25%, use tax, data processing services exemption under Section 151.351, and filing frequencies. Primary source: Texas Tax Code Chapter 151.
 version: 1.0

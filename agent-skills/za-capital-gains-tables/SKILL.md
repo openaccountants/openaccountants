@@ -7,7 +7,6 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/za-capital-gains-tables"
   jurisdiction: "ZA"
   last_updated: "2026-09-03"
-  reviewed_by: "Brandon Iverach"
 ---
 
 # South Africa — Capital Gains Tax Rate Tables (natural persons)

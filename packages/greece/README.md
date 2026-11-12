@@ -23,11 +23,12 @@
 16. `gr-vat-return.md`
 17. `greece-einvoice.md`
 18. `greece-vat-return.md`
-19. `eu-vat-directive.md`
-20. `einvoice-workflow-base.md`
-21. `payroll-workflow-base.md`
-22. `company-formation-workflow-base.md`
-23. `transfer-pricing-workflow-base.md`
+19. `eu-vat-base.md`
+20. `eu-vat-directive.md`
+21. `einvoice-workflow-base.md`
+22. `payroll-workflow-base.md`
+23. `company-formation-workflow-base.md`
+24. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 
