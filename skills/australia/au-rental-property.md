@@ -36,7 +36,7 @@ Australia Rental Property -- Income & Deductions Skill v1.8
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.7 |
+| Skill version | 1.8 |
 
 ### Select the income year before calculating
 
