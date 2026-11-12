@@ -50,6 +50,8 @@ Run by hand, whoever starts you stages the same files first (for example with `g
 
 ## What to check
 
+For a metadata-only maintenance PR, first prove the body is unchanged against main and the metadata describes that same job. A title, description, dependency-name or credit correction does not need invented new legal research; report zero new legal figures checked and the exact unchanged-body comparison. Do not call it a full source review. Country, period, domain, shape or interpretation changes are substantive and require the full coverage below. Professional approval changes still need the accountant proof in check 5.
+
 1. **Figures right for the skill's date.** A tax skill: the current tax year. A financial-reporting or audit skill: the `standard` and `effective_date` in its frontmatter; check paragraph references, effective dates and any thresholds against the standard setter's text, the same way as figures. Other domains: as at `checked_on`.
    - Inventory every figure in each changed skill (rates, thresholds, deadlines, contribution percentages, conditions and exceptions). Check each against its official source, including unchanged figures; put old faults under “Found on main”. Do not substitute ten spot checks for the complete source review.
    - When the PR supplies a URL and verbatim quote for a figure, open the URL and confirm the quote, figure, period and conditions against the page. A writer’s quote is evidence to check, not independent confirmation. Check every figure the quotes omit too.

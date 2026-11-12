@@ -277,7 +277,7 @@ class TaxUnchanged(unittest.TestCase):
     def test_pr_error_checks_keep_date_and_approval_rules_but_style_warns(self):
         self.assertEqual(validate_guides.PR_ERROR_CHECKS, {
             "tax_year_current", "sources_read_dates", "two_oa_checks", "version_numeric",
-            "tier_honest",
+            "tier_honest", "reviewed_on",
         })
 
     def test_staleness_unchanged_for_tax(self):

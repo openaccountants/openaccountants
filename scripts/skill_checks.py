@@ -173,6 +173,20 @@ def admission_content_unchanged(old_text, new_text):
     return all(old.get(key) == new.get(key) for key in keys)
 
 
+def approved_source_unchanged(old_text, new_text):
+    """Professional approval binds the body and source-owned execution metadata.
+
+    A description or stable-name repair need not inherit old body defects, but
+    it still changes the version a professional approved. Credit-only changes
+    remain exempt under the existing content-normalisation rules.
+    """
+    if not admission_content_unchanged(old_text, new_text):
+        return False
+    old, new = read_frontmatter(old_text), read_frontmatter(new_text)
+    keys = ("name", "description", "category", "depends_on", "tags")
+    return all(old.get(key) == new.get(key) for key in keys)
+
+
 def rel_path(path):
     path = os.path.abspath(path) if not os.path.isabs(path) else path
     try:
@@ -532,8 +546,12 @@ def check_reviewed_on(path, text, fm):
     ``reviewed_on`` yet, so this warns until the 184 signed files are backfilled."""
     reviewed_by = _real(fm.get("reviewed_by"))
     reviewed_on = fm.get("reviewed_on")
-    if reviewed_by and (not reviewed_on or not DATE_RE.fullmatch(str(reviewed_on).strip())):
-        return ["reviewed_by set but no reviewed_on (YYYY-MM-DD)"]
+    if reviewed_by:
+        value = str(reviewed_on or "").strip()
+        if not DATE_RE.fullmatch(value) or not _real_date(value):
+            return ["reviewed_by set but no valid reviewed_on (YYYY-MM-DD)"]
+        if value > _today():
+            return [f"reviewed_on {value} is in the future"]
     return []
 
 

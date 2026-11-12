@@ -92,6 +92,7 @@ PR_ERROR_CHECKS = {
     "two_oa_checks",       # (e)
     "version_numeric",     # (f)
     "tier_honest",         # (g)
+    "reviewed_on",         # (j): approval must have a real, non-future date
 }
 #: New skills must meet their declared shape. Existing files may improve legacy
 #: shape defects incrementally, but may not break a check they previously passed.
@@ -251,14 +252,14 @@ def check_approval_resets(rel, text, errors):
         ).stdout
     except Exception:
         return  # new file: nothing approved yet
-    if label_boilerplate.same_content(old, text):
+    if skill_checks.approved_source_unchanged(old, text):
         return
     key = lambda t, k: (re.search(rf"^{k}:[ \t]*\"?([^\"\n]*)", t, re.M) or [None, ""])[1].strip()
     if not real_reviewer(key(old, "reviewed_by")) or not real_reviewer(key(text, "reviewed_by")):
         return
     if key(text, "reviewed_on") == key(old, "reviewed_on"):
         errors.append(
-            f"{rel}: the text of an approved skill changed, so the approval no longer covers it. "
+            f"{rel}: the text or source-owned metadata of an approved skill changed, so the approval no longer covers it. "
             "Either remove `reviewed_by` and `reviewed_on` and set `tier: 2`, or have the approver "
             "re-approve by setting a new `reviewed_on`."
         )

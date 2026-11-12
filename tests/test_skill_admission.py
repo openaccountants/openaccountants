@@ -100,6 +100,29 @@ class Admission(unittest.TestCase):
                               ("type: router", "type: computation"), ("domain: tax", "domain: advisory")):
             self.assertFalse(sc.admission_content_unchanged(old, old.replace(before, after)))
 
+    def test_source_metadata_changes_reset_approval_without_inheriting_old_body_defects(self):
+        old = document(ROUTER, "type: router\ndepends_on: [workflow-base]\n")
+        for before, after in (("name: fictional-test", "name: corrected-test"),
+                              ("category: foundation", "category: international"),
+                              ("depends_on: [workflow-base]", "depends_on: [another-base]"),
+                              ("description: Fictional", "description: Revised fictional")):
+            new = old.replace(before, after)
+            self.assertTrue(sc.admission_content_unchanged(old, new))
+            self.assertFalse(sc.approved_source_unchanged(old, new))
+
+    def test_metadata_only_approval_needs_real_nonfuture_date(self):
+        old = document("Legacy incomplete body.\n")
+        approved = old.replace("tier: 2", "tier: 1\nreviewed_by: Test Person")
+        for date in ("", '\nreviewed_on: "2026-99-01"', "\nreviewed_on: 2999-01-01"):
+            errors, _ = self.check(approved.replace("reviewed_by: Test Person", "reviewed_by: Test Person" + date), old=old, untouched=True)
+            self.assertTrue(any("reviewed_on" in e for e in errors), date)
+        errors, _ = self.check(approved.replace("reviewed_by: Test Person", "reviewed_by: Test Person\nreviewed_on: 2026-01-01"), old=old, untouched=True)
+        self.assertEqual(errors, [])
+
+    def test_impossible_bare_yaml_date_is_a_validation_error_not_a_crash(self):
+        text = document(ROUTER, "type: router\nreviewed_on: 2026-99-01\n")
+        self.assertTrue(any("invalid YAML frontmatter" in e for e in self.check(text)[0]))
+
     def test_active_non_tax_domain_rejects_new_unofficial_sources(self):
         path = "skills/global/financial-reporting/fictional-standard.md"
         unofficial = SOURCE.replace("www.revenue.ie", "example.com")
