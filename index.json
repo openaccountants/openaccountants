@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-12T11:42:11+00:00",
+ "generated_at": "2026-11-12T13:19:19+00:00",
  "counts": {
-  "guides": 2369,
+  "guides": 2372,
   "jurisdictions": 260,
   "accountant_reviewed": 139
  },
@@ -3355,6 +3355,30 @@
    "last_updated": "2026-11-11"
   },
   {
+   "slug": "br-municipal-taxes",
+   "path": "skills/brazil/br-municipal-taxes.md",
+   "name": "br-municipal-taxes",
+   "jurisdiction": "BR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-regional-payroll",
+   "path": "skills/brazil/br-regional-payroll.md",
+   "name": "br-regional-payroll",
+   "jurisdiction": "BR",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "br-return-assembly",
    "path": "skills/brazil/br-return-assembly.md",
    "name": "br-return-assembly",
@@ -3370,6 +3394,18 @@
    "slug": "br-simples-nacional",
    "path": "skills/brazil/br-simples-nacional.md",
    "name": "br-simples-nacional",
+   "jurisdiction": "BR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-state-tax-profiles",
+   "path": "skills/brazil/br-state-tax-profiles.md",
+   "name": "br-state-tax-profiles",
    "jurisdiction": "BR",
    "category": "international",
    "tier": 2,
