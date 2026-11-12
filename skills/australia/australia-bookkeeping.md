@@ -307,7 +307,7 @@ The DV rates below assume the ordinary post-9 May 2006 factor. Match the asset t
 | --- | --- | --- | --- |
 | Desktop computers | 4 years | 50% | 25% |
 | Laptops | 2 years | 100% | 50% |
-| Printers/Scanners | 5 years | 40% | 20% |
+| Multifunction machines (fax, copy, print and scan functions), general Table B category | 5 years | 40% | 20% |
 | Office chairs | 10 years | 20% | 10% |
 | Office desks | 20 years | 10% | 5% |
 | Cars, general Table B category (hire/rental/taxi categories differ) | 8 years | 25% | 12.5% |
