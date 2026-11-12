@@ -7,13 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-deductions-offsets"
   jurisdiction: "AU"
   tax_year: "2026"
-  last_updated: "2026-09-20"
-  reviewed_by: "Ryan Duguid"
+  last_updated: "2026-11-12"
 ---
 
-# Australia Deductions, Offsets and Concessions v0.2
+# Australia Deductions, Offsets and Concessions v0.3
 
-## Australia Deductions, Offsets and Concessions v0.2
+## Australia Deductions, Offsets and Concessions v0.3
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -90,41 +89,41 @@ This skill does NOT cover:
 
 ## Section 3 - The order of operations
 
-- **Order of operations** — Apply the statutory offset priorities, including the rules for any unused amount. 1. Work out assessable income, including net capital gains. 2. Subtract allowable deductions to get taxable income. 3. Apply the rates for the income year to taxable income, giving basic income tax liability. 4. Calculate the Medicare levy and any Medicare levy surcharge separately. 5. Apply offsets to basic income tax liability in the order in section 63-10. For each unused amount, follow its statutory treatment: application to another liability, transfer, carry-forward, refund or loss. See Section 8.2 for the Medicare levy exceptions. 6. Add the remaining income tax and levy liabilities, then subtract any refundable excess offsets. 7. Subtract amounts already paid: PAYG withholding and PAYG instalments.  _([ITAA 1997 (Cth) s 63-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10))_
-- **Tax losses** — A tax loss arises where deductions exceed assessable income. A loss is carried forward, not converted to a refund, and its use is restricted for individuals by the non-commercial loss rules and for companies by the continuity of ownership and business continuity tests.
+- **Order of operations** -- Apply the statutory offset priorities, including the rules for any unused amount. 1. Work out assessable income, including net capital gains. 2. Subtract allowable deductions to get taxable income. 3. Apply the rates for the income year to taxable income, giving basic income tax liability. 4. Calculate the Medicare levy and any Medicare levy surcharge separately. 5. Apply offsets to basic income tax liability in the order in section 63-10. For each unused amount, follow its statutory treatment: application to another liability, transfer, carry-forward, refund or loss. See Section 8.2 for the Medicare levy exceptions. 6. Add the remaining income tax and levy liabilities, then subtract any refundable excess offsets. 7. Subtract amounts already paid: PAYG withholding and PAYG instalments.  _([ITAA 1997 (Cth) s 63-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10))_
+- **Tax losses** -- A tax loss arises where deductions exceed assessable income. A loss is carried forward, not converted to a refund, and its use is restricted for individuals by the non-commercial loss rules and for companies by the continuity of ownership and business continuity tests.
 
 ## Section 4 - Deductions: the decision steps
 
-- **Deductions decision steps overview** — Identify the provision that allows the deduction before applying these steps. Steps 1 and 2 test general deductions under section 8-1. A specific deduction, such as a qualifying gift under Division 30, follows its own eligibility rules; failure of the section 8-1 test does not decide that claim. For specific deductions, apply steps 3 to 6 using the relevant provision's limits, apportionment, timing and evidence requirements.  _([ITAA 1997 (Cth) s 8-5](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/8-5))_
+- **Deductions decision steps overview** -- Identify the provision that allows the deduction before applying these steps. Steps 1 and 2 test general deductions under section 8-1. A specific deduction, such as a qualifying gift under Division 30, follows its own eligibility rules; failure of the section 8-1 test does not decide that claim. For specific deductions, apply steps 3 to 6 using the relevant provision's limits, apportionment, timing and evidence requirements.  _([ITAA 1997 (Cth) s 8-5](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/8-5))_
 
 ### Step 1 - Is there a nexus with assessable income?
 
-- **Nexus test** — A loss or outgoing is deductible to the extent it is incurred in gaining or producing assessable income, or necessarily incurred in carrying on a business for that purpose.  _([ITAA 1997 s 8-1](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/8-1))_
-- **ATO three conditions for employees** — The ATO states the test for an employee as three conditions: the taxpayer spent the money and was not reimbursed, the expense directly relates to earning income, and there is a record to prove it. An employer instruction to buy something does not by itself make it deductible.  _([ATO, Claiming deductions](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/how-to-claim-deductions))_
+- **Nexus test** -- A loss or outgoing is deductible to the extent it is incurred in gaining or producing assessable income, or necessarily incurred in carrying on a business for that purpose.  _([ITAA 1997 s 8-1](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/8-1))_
+- **ATO three conditions for employees** -- The ATO states the test for an employee as three conditions: the taxpayer spent the money and was not reimbursed, the expense directly relates to earning income, and there is a record to prove it. An employer instruction to buy something does not by itself make it deductible.  _([ATO, Claiming deductions](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/how-to-claim-deductions))_
 
 ### Step 2 - Is it private, domestic or capital in nature?
 
-- **Private, domestic or capital exclusion** — Section 8-1 denies a deduction to the extent the outgoing is private or domestic, or capital or of a capital nature. Ordinary travel between home and work and daily lunches are private. If section 8-1 excludes capital expenditure, check whether it qualifies under another regime: Division 40 decline in value, Division 43 capital works, the CGT cost base, or a specific write-off provision such as section 40-880 for certain business-related capital expenditure.
+- **Private, domestic or capital exclusion** -- Section 8-1 denies a deduction to the extent the outgoing is private or domestic, or capital or of a capital nature. Ordinary travel between home and work and daily lunches are private. If section 8-1 excludes capital expenditure, check whether it qualifies under another regime: Division 40 decline in value, Division 43 capital works, the CGT cost base, or a specific write-off provision such as section 40-880 for certain business-related capital expenditure.
 
 ### Step 3 - Does a specific provision deny or limit it?
 
-- **Specific denial or limit provisions** — Deductibility can be denied even where the nexus exists. Examples include entertainment expenses, penalties and fines, holding costs for vacant land held by most non-business taxpayers, and general interest charge and shortfall interest charge incurred on or after 1 July 2025. Check the specific provision before allowing an unusual item.
+- **Specific denial or limit provisions** -- Deductibility can be denied even where the nexus exists. Examples include entertainment expenses, penalties and fines, holding costs for vacant land held by most non-business taxpayers, and general interest charge and shortfall interest charge incurred on or after 1 July 2025. Check the specific provision before allowing an unusual item.
 
 ### Step 4 - Apportion
 
-- **Apportionment** — Where an expense serves both an income-producing and a private purpose, only the income-producing share is deductible. The apportionment method must be reasonable and documented. A percentage guessed at year end is not a method.
+- **Apportionment** -- Where an expense serves both an income-producing and a private purpose, only the income-producing share is deductible. The apportionment method must be reasonable and documented. A percentage guessed at year end is not a method.
 
 ### Step 5 - Is it incurred in this income year?
 
-- **Timing / incurred** — "Incurred" is not the same as "paid". Prepayment rules can spread a deduction over the period the benefit covers, with a 12 month exception available to individuals for non-business expenditure and to small business entities. For a specific deduction, use its own timing rule. For example, a qualifying gift of money under Division 30 is generally deducted in the income year the gift is made.
+- **Timing / incurred** -- "Incurred" is not the same as "paid". Prepayment rules can spread a deduction over the period the benefit covers, with a 12 month exception available to individuals for non-business expenditure and to small business entities. For a specific deduction, use its own timing rule. For example, a qualifying gift of money under Division 30 is generally deducted in the income year the gift is made.
 
 ### Step 6 - Is there evidence?
 
-- **Evidence** — See Section 6. Substantiation is a condition of the deduction, not an audit formality.
+- **Evidence** -- See Section 6. Substantiation is a condition of the deduction, not an audit formality.
 
 ## Section 5 - The standard deduction for work-related expenses, from 2026-27
 
-- **Standard deduction for work-related expenses** — A standard deduction of up to $1,000 for work-related expenses applies to Australian tax residents who earn income from work. It commences on 1 July 2026 and first applies to the 2026-27 individual tax return. It does not apply to the 2025-26 return. AUD
+- **Standard deduction for work-related expenses** -- A standard deduction of up to $1,000 for work-related expenses applies to Australian tax residents who earn income from work. It commences on 1 July 2026 and first applies to the 2026-27 individual tax return. It does not apply to the 2025-26 return. AUD
 
 A standard deduction of up to $1,000 for work-related expenses applies to Australian tax residents
 who earn income from work. It commences on 1 July 2026 and first applies to the 2026-27 individual
@@ -185,16 +184,53 @@ the rate for the year being prepared rather than carrying last year's forward.
 | --- | --- | --- |
 | Division 40 decline in value | Depreciating assets | Prime cost or diminishing value, over the asset's effective life. The Commissioner's effective life determination is a safe starting point |
 | Immediate deduction for low cost items | Items costing $300 or less used mainly to produce non-business income | Does not apply to a set, or to substantially identical items, that together cost more than $300 |
-| Instant asset write-off | Small business entities using the simplified depreciation rules | The limit is set per income year. It was $20,000 per asset for assets first used or installed ready for use between 1 July 2025 and 30 June 2026, for businesses with aggregated turnover under $10 million |
-| Small business general pool | Assets costing at or above the instant asset write-off limit | 15% in the first year, 30% each year after |
+| Instant asset write-off | Eligible small business entities choosing simplified depreciation, subject to exclusions and prior claims | Full statutory asset cost, adjusted for GST entitlements before private-use apportionment, must be strictly less than $20,000. Deduct only the taxable-use amount. Temporary threshold covers first taxable use or installation in 2025-26; the permanent threshold applies to specified first use or installation from 1 July 2026. [ITAA 1997 ss 328-175 and 328-180](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html), [ITTPA s 328-180(4)(d)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) and [No. 2 Act schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text) |
+| Small business general pool | Covered assets not individually deductible, including exactly $20,000, and continuing pools | Ordinary deduction: 30% of the opening pool balance plus 15% of taxable-purpose adjustable values for assets first used or installed ready for taxable use during the year, with separate rules for second-element costs. If the statutory amount before ordinary depreciation is positive and less than $20,000, deduct it instead and close the pool at zero. [ITAA 1997 ss 328-185, 328-190, 328-210 and 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) and [ITTPA s 328-180(6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | Division 43 capital works | Buildings and structural improvements | A fixed annual rate over a fixed period, claimed separately from Division 40 |
 | Division 40-880 | Certain business-related capital expenditure not deductible elsewhere | Spread over five years |
 | Car limit | Cars used for a business or income-producing purpose | Caps both the depreciation base and the GST credit. Look up the limit for the income year |
 
-**Confirm the instant asset write-off limit for the year being prepared.** The limit has changed
-repeatedly. As at 16 September 2026 the ATO had published the $20,000 limit for 2025-26; the limit
-for 2026-27 must be confirmed on the ATO instant asset write-off page before it is applied.
-[ATO, Instant asset write-off](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/instant-asset-write-off)
+**Check eligibility and the first taxable-use year.** For an individual asset deduction, small business entity status and the required simplified-depreciation choice must apply in both the year you started to hold the asset and the first taxable-use year (s 328-180(1)(a) and (ab)). The temporary 2025-26 asset threshold additionally requires you to have first acquired the asset at or after 7.30 pm ACT time on 12 May 2015. The 2026 permanent threshold was enacted on 26 August 2026. Schedule 2 commenced on 1 October 2026 and item 15 applies to specified assets first used or installed ready for use from 1 July 2026; an acquisition date alone does not establish the year or permit a second deduction. The temporary 2025-26 provisions remain relevant to that year. Existing pools continue under section 328-220 after small business entity status or a later simplified-depreciation choice ceases; new assets cannot enter the pool until an eligible choosing year. See `au-individual-return.md` for the detailed cost, use, allocation and pool calculation. [No. 2 Act schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text), [ITAA 1997 ss 328-175 to 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) and [ITTPA s 328-180](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
+
+**Worked example: strict cost boundary.** Assume eligible assets, the required simplified-depreciation choice, first taxable use in 2026-27, 100% taxable use and no other pool amounts. A $19,999 asset can qualify for the individual write-off. An asset costing exactly $20,000 enters the pool. Its pre-depreciation pool amount is not less than $20,000, so its 15% deduction is $3,000 and closing balance is $17,000. Do not write off that closing balance again in the same year.
+
+```oa-check
+name: Deductions guide distinguishes below and exactly 20000
+inputs:
+  below_cost: 19999
+  exact_cost: 20000
+  taxable_use_percent: 100
+  first_use_rate: 15
+steps:
+  - individual_deduction: pct(below_cost, taxable_use_percent)
+  - pre_depreciation_pool: pct(exact_cost, taxable_use_percent)
+  - pool_deduction: pct(pre_depreciation_pool, first_use_rate)
+  - closing_pool: pre_depreciation_pool - pool_deduction
+expected:
+  individual_deduction: 19999
+  pre_depreciation_pool: 20000
+  pool_deduction: 3000
+  closing_pool: 17000
+```
+
+**Worked example: full cost and low pool.** Assume the same eligibility and timing, no other pool amounts and a $30,000 asset used 60% for taxable purposes. Its full cost fails the individual less-than-$20,000 test. Its taxable-purpose amount of $18,000 enters the pool. The statutory pre-depreciation pool amount is positive and less than $20,000, so the pool deduction is $18,000 and closing balance is zero, instead of an ordinary 15% pool deduction.
+
+```oa-check
+name: Deductions guide keeps full cost separate from low pool value
+inputs:
+  full_cost: 30000
+  taxable_use_percent: 60
+steps:
+  - taxable_amount: pct(full_cost, taxable_use_percent)
+  - pre_depreciation_pool: taxable_amount
+  - low_pool_deduction: pre_depreciation_pool
+  - closing_pool: pre_depreciation_pool - low_pool_deduction
+expected:
+  taxable_amount: 18000
+  pre_depreciation_pool: 18000
+  low_pool_deduction: 18000
+  closing_pool: 0
+```
 
 ## Section 8 - Tax offsets
 
@@ -215,7 +251,7 @@ for 2026-27 must be confirmed on the ATO instant asset write-off page before it 
 
 ### 8.2 Unused offsets and other liabilities
 
-- **Unused offsets and other liabilities** — - An unused non-refundable offset is not paid out as an offset refund. Reducing income tax can still create or increase a refund of PAYG withholding or instalments already paid. - Most offsets do not reduce Medicare levy. However, section 63-10 table items 21 and 22 apply remaining veterans' superannuation (invalidity pension) tax offset and foreign income tax offset to Medicare levy, then Medicare levy (fringe benefits) surcharge. The remaining excess cannot be refunded, transferred or carried forward. See `au-foreign-income.md` for FITO limits. - SAPTO affects the Medicare levy indirectly through the low income threshold; it does not reduce the levy directly. - An offset does not reduce a HELP or other study and training support loan repayment, which is calculated on repayment income, not on tax payable.  _([ITAA 1997 (Cth) s 63-10(1), table items 21 and 22](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10); [ATO, About tax offsets](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/about-tax-offsets))_
+- **Unused offsets and other liabilities** -- - An unused non-refundable offset is not paid out as an offset refund. Reducing income tax can still create or increase a refund of PAYG withholding or instalments already paid. - Most offsets do not reduce Medicare levy. However, section 63-10 table items 21 and 22 apply remaining veterans' superannuation (invalidity pension) tax offset and foreign income tax offset to Medicare levy, then Medicare levy (fringe benefits) surcharge. The remaining excess cannot be refunded, transferred or carried forward. See `au-foreign-income.md` for FITO limits. - SAPTO affects the Medicare levy indirectly through the low income threshold; it does not reduce the levy directly. - An offset does not reduce a HELP or other study and training support loan repayment, which is calculated on repayment income, not on tax payable.  _([ITAA 1997 (Cth) s 63-10(1), table items 21 and 22](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10); [ATO, About tax offsets](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/about-tax-offsets))_
 
 ## Section 9 - Concessions
 
@@ -379,8 +415,13 @@ is outside the standard deduction, so each still reduces tax in full.
 - ATO, Tax rates: Australian resident,
   https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents
 
-Sources were checked on 16 September 2026. The working from home fixed rate and the instant asset
-write-off limit for 2026-27 had not been published at that date.
+Sources other than the selected capital-allowance update below were checked on 16 September 2026. The working from home fixed rate for 2026-27 had not been published at that earlier read date.
+
+Selected simplified-depreciation rules read 2026-11-12:
+
+- [ITAA 1997 ss 328-175, 328-180, 328-185, 328-190, 328-210 and 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html): eligibility, cost, allocation, ordinary rates, low-pool value and continuing pools. Read 2026-11-12.
+- [ITTPA 1997 s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html): temporary 2025-26 asset and pool thresholds. Read 2026-11-12.
+- [Tax Reform No. 2 Act 2026 schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text): application of the permanent threshold. Read 2026-11-12.
 
 ## Section 15 - Disclaimer
 
@@ -397,4 +438,4 @@ The most up-to-date version of this skill is maintained at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-20. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-deductions-offsets` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-deductions-offsets. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-deductions-offsets` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-deductions-offsets. If neither is available, confirm every figure against the official source pages cited above before relying on it.

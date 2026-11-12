@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-12T06:25:56+00:00",
+ "generated_at": "2026-11-12T08:32:36+00:00",
  "counts": {
   "guides": 2369,
   "jurisdictions": 260,
-  "accountant_reviewed": 141
+  "accountant_reviewed": 140
  },
  "guides": [
   {
@@ -1128,11 +1128,11 @@
    "name": "au-deductions-offsets",
    "jurisdiction": "AU",
    "category": "international",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Ryan Duguid",
+   "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-20"
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "au-div7a",
