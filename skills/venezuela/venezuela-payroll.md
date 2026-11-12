@@ -16,21 +16,19 @@ description: >
 version: 0.2
 jurisdiction: VE
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-12
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Jose Padilla"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: tax
 type: computation
 ---
 
 # Venezuela payroll, 2026 v0.2
 
-> **Revision awaiting approval.** Jose Padilla's existing approval metadata is retained. This revised text has not yet received his approval and must remain held from publication until he approves it.
+> **Not yet approved.** This revision is a source-cited draft. The [earlier version approved by Jose Padilla on 3 November 2026](https://github.com/openaccountants/openaccountants/blob/157f7d8be741c4c7347a88c8a2970b529d175741/skills/venezuela/venezuela-payroll.md) is preserved with its original attribution; that approval does not cover this text.
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -394,7 +392,7 @@ Stop the affected calculation, state the missing evidence and produce a partial 
 - A revised estimate is negative, the remaining-remuneration denominator is zero, the worker has left, or an employer cash refund/offset is proposed without the governing procedure. Preserve the arithmetic and refer the implementation.
 - A payment, return or amendment has not been approved by the responsible employer. A prepared packet and a calculation are not authorization to submit or transfer funds.
 
-Do not submit fabricated nil returns, omit a known worker or fund, hide a disputed earning, describe an unresolved contribution as paid, or certify a filing from a screenshot without an authority acknowledgement. Do not use the retained accountant credit to suggest that this revised text has been approved; approval of this revision remains outstanding.
+Do not submit fabricated nil returns, omit a known worker or fund, hide a disputed earning, describe an unresolved contribution as paid, or certify a filing from a screenshot without an authority acknowledgement. Do not describe this source-cited draft as accountant-approved; the earlier approval covers only the archived version.
 
 ## Filing and payment
 
@@ -496,11 +494,11 @@ For ambiguous entries use a review status and preserve the full narration, amoun
 - Initial/revised percentages follow the correct denominator; actual amounts to date reconcile; negative results are preserved without inventing a cash-refund process.
 - Each contribution has its own current coverage, base, cap, assessment and employee/employer split. Missing assessments have not become zero or lowest-risk defaults.
 - Gross-to-net, employer cost, benefit accruals and every authority liability reconcile by currency and period. There is no double counting of ordinary holiday pay, advances or opening-liability payments.
-- Payslips, certificates, current filing instructions, employer approval, submission acknowledgements, payment references and allocation receipts are complete before marking the payroll released or paid. Approval of this revised Guide itself remains outstanding.
+- Payslips, certificates, current filing instructions, employer approval, submission acknowledgements, payment references and allocation receipts are complete before marking the payroll released or paid. This revised Guide remains Not yet approved.
 
 ## Talk to a verified accountant
 
-Have the responsible Venezuelan professional review the unresolved classifications, current authority inputs and employer packet before release. The revision remains held pending Jose Padilla's actual approval.
+Have the responsible Venezuelan professional review the unresolved classifications, current authority inputs and employer packet before release. This revision is published as an unapproved draft; professional approval remains outstanding.
 
 ## Sources
 
