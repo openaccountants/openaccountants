@@ -7,8 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/australia-bookkeeping"
   jurisdiction: "AU"
   tax_year: "2025"
-  last_updated: "2026-09-20"
-  reviewed_by: "Ryan Duguid"
+  last_updated: "2026-11-12"
 ---
 
 # Australia Bookkeeping
@@ -290,22 +289,26 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 | Method | Application |
 | --- | --- |
-| Diminishing value | rate = days held ÷ 365 × (200% ÷ effective life) |
-| Prime cost (straight-line) | rate = days held ÷ 365 × (100% ÷ effective life) |
+| Diminishing value | Base value × (qualifying days / 365) × (applicable 150% or 200% factor / effective life) |
+| Prime cost (straight-line) | Generally cost × (qualifying days / 365) × (100% / effective life), with statutory adjustments |
+
+For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
 
 ### Common effective lives (2025 determination, asset-specific)
 
 **Common effective lives (2025 determination, asset-specific)**  _([Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Table B](https://www.legislation.gov.au/F2025L01097/asmade/text))_
 
+The DV rates below assume the ordinary post-9 May 2006 factor. Match the asset to an applicable industry-specific Table A entry before using general Table B, and select the dated determination under s 40-95; do not reset an existing register to the latest table.
+
 | Asset | Effective Life | DV Rate | PC Rate |
 | --- | --- | --- | --- |
 | Desktop computers | 4 years | 50% | 25% |
 | Laptops | 2 years | 100% | 50% |
-| Printers/Scanners | 5 years | 40% | 20% |
+| Multifunction machines (fax, copy, print and scan functions), general Table B category | 5 years | 40% | 20% |
 | Office chairs | 10 years | 20% | 10% |
 | Office desks | 20 years | 10% | 5% |
-| Motor vehicles | 8 years | 25% | 12.5% |
-| Air conditioning | 10 years | 20% | 10% |
+| Cars, general Table B category (hire/rental/taxi categories differ) | 8 years | 25% | 12.5% |
+| Air conditioning, mini split systems up to 20 kW (excluding pipes, duct work and vents) | 10 years | 20% | 10% |
 | Eligible building capital works | Division 43, subject to use and construction dates | No generic diminishing-value deduction | Commonly 2.5%; verify eligibility and applicable statutory rate |
 
 ### Car Limit
@@ -638,6 +641,13 @@ This skill and its outputs are provided for informational and computational purp
 
 > Contributed by Ryan Duguid.
 
+## Sources
+
+Read 2026-11-12 for the depreciation correction:
+
+- [ITAA 1997, ss 40-25, 40-70, 40-72, 40-75 and 40-95](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html): eligibility, date-specific factors, formulas and effective-life selection. Selected sections of retained current compilation 268 read 2026-11-12.
+- [Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text): asset-specific Table A and Table B lives; select the applicable dated determination. Selected Table A/Table B categories read 2026-11-12.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-20. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `australia-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/australia-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `australia-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/australia-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.

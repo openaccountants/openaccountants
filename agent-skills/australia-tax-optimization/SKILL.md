@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/australia-tax-optimization"
   jurisdiction: "AU"
   tax_year: "2025"
-  last_updated: "2026-09-27"
+  last_updated: "2026-11-12"
 ---
 
 # Australia Tax Optimization
@@ -112,10 +112,12 @@ Discretionary (family) trusts allow income distribution to adult family members 
 
 | Method | How It Works |
 | --- | --- |
-| Diminishing value | Base value × (days held / 365) × (200% / effective life) |
-| Prime cost (straight-line) | Cost × (days held / 365) × (100% / effective life) |
+| Diminishing value | Base value × (qualifying days / 365) × (applicable 150% or 200% factor / effective life) |
+| Prime cost (straight-line) | Generally cost × (qualifying days / 365) × (100% / effective life), with statutory adjustments |
 
-- **Effective life determination** — Effective life determined by ATO schedule (TR 2024/3) or taxpayer's own reasonable estimate. Self-assessed life must be supportable if audited.  _(TR 2024/3)_
+For general Division 40 depreciation, use 150% for assets held before 10 May 2006 and generally 200% for assets first held on or after that date. Check reacquisition, rollover and other special rules before choosing the factor. Apply the statutory base value, qualifying days divided by 365, taxable-use adjustment and decline limits. Prime cost uses its separate cost/effective-life formula, with adjustments where required. These are tax calculations, separate from accounting depreciation. [ITAA 1997, ss 40-25, 40-70, 40-72 and 40-75](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
+
+- **Effective life determination** -- Choose the applicable Commissioner determination under s 40-95, including its contract-date/start-time rules, or a valid self-assessed life. The [2025 determination, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text) is the current instrument at 12 November 2026, but the latest instrument does not automatically replace the life for an existing asset. [ITAA 1997, s 40-95](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html).
 
 ### Motor Vehicles
 
@@ -277,6 +279,13 @@ This skill and its outputs are provided for informational and computational purp
 
 > Contributed by Ryan Duguid.
 
+## Sources
+
+Read 2026-11-12 for the depreciation correction:
+
+- [ITAA 1997, ss 40-25, 40-70, 40-72, 40-75 and 40-95](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html): eligibility, date-specific factors, formulas and effective-life selection. Selected sections of retained current compilation 268 read 2026-11-12.
+- [Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Schedule 2](https://www.legislation.gov.au/F2025L01097/asmade/text): asset-specific Table A and Table B lives; select the applicable dated determination. Selected Table A/Table B categories read 2026-11-12.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `australia-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/australia-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `australia-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/australia-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

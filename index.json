@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-12T04:43:58+00:00",
+ "generated_at": "2026-11-12T06:25:56+00:00",
  "counts": {
   "guides": 2369,
   "jurisdictions": 260,
-  "accountant_reviewed": 144
+  "accountant_reviewed": 141
  },
  "guides": [
   {
@@ -1260,11 +1260,11 @@
    "name": "au-individual-return",
    "jurisdiction": "AU",
    "category": "international",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Ryan Duguid",
+   "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-10-12"
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "au-land-tax",
@@ -1488,11 +1488,11 @@
    "name": "au-sole-trader-schedule",
    "jurisdiction": "AU",
    "category": "international",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Ryan Duguid",
+   "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-10"
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "au-stamp-duty",
@@ -1584,11 +1584,11 @@
    "name": "australia-bookkeeping",
    "jurisdiction": "AU",
    "category": "bookkeeping",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Ryan Duguid",
+   "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-20"
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "australia-financial-statements-2",
@@ -1684,7 +1684,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-27"
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "australia-transfer-pricing",
