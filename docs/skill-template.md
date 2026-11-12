@@ -89,7 +89,7 @@ Every row of the rates table carries the URL of the official text it comes from.
 
 - **Evidence:** year-boundary test: a skill that points at the law plus a live fetch answered 4 of 5; stored facts with no link, 0 of 5. Citations to an official source 76% with the skill against 20% without (4 Aug 2026). The section-demand read of 31 Oct 2026 (453 loads in 28 days, 6.4% with any section held back) showed `get_skill` almost always sends the Sources table, so the row URL is for the other read paths, not for `get_skill`.
 - **Host and column:** the URL is the page that holds the row's figure, on the site of the authority the row names, in the column the header says. Citing a secondary host or a neighbour's domain in a one-country skill warns.
-- **Check:** `check_rates_rows_sourced` (c), `check_sources_columns` (l) and `check_source_hosts` (m), both warnings. A skill whose shape has no rates table (`filing-howto`, `decision`, `cross-country-method`, `router`) passes c when it has none; any rates table it does carry is checked.
+- **Check:** `check_rates_rows_sourced` (c), `check_sources_columns` (l) and `check_source_hosts` (m) report the backlog as warnings. On changed tax content, newly added or edited rate rows without a URL or unverified mark, and newly added or edited citations to a barred secondary host, block the PR. Unchanged legacy defects remain warnings. Unknown official hosts and inferred library matches remain advisory. A skill whose shape has no rates table (`filing-howto`, `decision`, `cross-country-method`, `router`) passes c when it has none; any rates table it does carry is checked.
 
 ### 3. Every rule states its conditions next to the figure
 
@@ -214,7 +214,7 @@ Someone other than the writer (a person or a separate AI agent with no shared co
 
 - **When a site blocks scripts,** open it in a normal browser tab and read it there. Never solve a CAPTCHA or human check. If a site refuses every connection, use an Internet Archive (web.archive.org) copy captured in the current year and say so in the Sources table.
 - **Nothing unconfirmed goes in.** If you cannot confirm a figure or rule from an official source, leave it out and list it on the "Not yet confirmed:" line at the end of `## Sources`. Check: `check_not_yet_confirmed` (i).
-- **No em dash** anywhere in the writer's text. Check: `check_no_em_dash` (h). The platform-stamped `openaccountants-cta-block` is not yours and is not counted.
+- **No em dash** anywhere in the writer's text. Check: `check_no_em_dash` (h), advisory. The platform-stamped `openaccountants-cta-block` is not yours and is not counted.
 - **Sources live in the body**, in the `## Sources` table, not in a frontmatter key, because the platform export re-renders frontmatter and drops keys it does not store:
 
   ```markdown
