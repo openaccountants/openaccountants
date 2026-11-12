@@ -11,7 +11,7 @@ The numeric tiers remain frontmatter metadata:
 
 An approved accountant who writes and publishes a skill as their own professional work approves it themselves. They record their own name and approval date in the publishing PR. No second accountant or separate approval PR is required.
 
-An unresolved name, a withdrawn account, an AI commit, a maintenance assignment or an old credit line does not establish publication of the current version as the accountant's own work. Licence numbers remain private. Follow [CONTRIBUTING.md](../CONTRIBUTING.md) for the GitHub contribution steps.
+An unresolved name, a withdrawn account, an AI commit, a maintenance assignment or an old credit line does not establish publication of the current version as the accountant's own work. One thing does stand in for the accountant's own GitHub account: a review they made signed in on openaccountants.com (see "Approving on the website" below). Licence numbers remain private. Follow [CONTRIBUTING.md](../CONTRIBUTING.md) for the GitHub contribution steps.
 
 ## Rules
 
@@ -45,6 +45,24 @@ Not yet approved
 4. A maintainer listed in [OWNERS.md](OWNERS.md) merges. Delivery checks must pass before the platform reports the skill live.
 
 The accountant is credited publicly on the skill and in [VERIFIERS.md](../VERIFIERS.md).
+
+## Approving on the website
+
+An accountant does not need a GitHub account to approve a skill. They can review it on openaccountants.com instead. Every change still goes through a pull request here.
+
+1. The accountant signs in and opens the skill. The website shows the file as it is on `main`, alongside a checklist of detected figures, method steps and worked examples. The checklist cannot find every rule; the whole file and its sources are available to read.
+2. They mark each item **Right**, or **Wrong** and type the fix. They cannot submit until every item is marked and they confirm that they read the whole Guide.
+3. The website keeps the review as a record: who, which file, the file they reviewed, each item and verdict, and the exact file their approval covers.
+4. The `accountant-review` workflow opens a pull request from the branch `accountant-review/<record id>`, labelled `accountant-review`. It sets `tier: 1`, `reviewed_by`, `reviewed_on` and changes only the lines the accountant fixed. The commit is the bot's. The PR body lists every item and verdict and links the record.
+5. The `validate` check reads the website's signed proof for that record and passes only if it names the one file the PR changes, the name in `reviewed_by`, the date in `reviewed_on`, the file the PR started from, and, byte for byte, the file the PR carries. The receipt is read over HTTPS from the fixed website address. Pull-request jobs receive no private queue or signing key.
+6. The worker requests a merge only after all four required checks succeed. Existing repository review rules still apply. After the merge, the website attaches the name only if the merged file is still exactly the file the accountant approved.
+
+So the rule above still holds: the bot's commit proves nothing. The signed review record is the proof.
+
+What the founder sets once:
+
+- `REVIEW_PROOF_SECRET`: a long random value, set in the main-only production environment here and with the same value on the website's server.
+- The existing `DERIVED_BUILD_TOKEN` opens the PR and requests the merge. No blanket permission for GitHub Actions to approve pull requests is needed. If repository rules require another GitHub review, the PR waits for it.
 
 ## Acceptable sources
 

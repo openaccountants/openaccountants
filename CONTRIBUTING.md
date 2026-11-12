@@ -52,6 +52,8 @@ Approval puts your name on the skill: **Approved by [your name]**, on the websit
 3. **Write your skill, or take one that has no accountant yet**, and review all of it.
 4. **Approve it in the same pull request:** set `tier: 1`, `reviewed_by: Your Name` and `reviewed_on: YYYY-MM-DD`. You can approve a skill you wrote.
 
+**No GitHub account? Approve on the website.** Signed in on openaccountants.com, open "Your skills" and pick a skill under "Put your name on a skill". Mark every figure, step and worked example right, or wrong with the fix. When you submit, we open the pull request here for you; it merges once the checks pass, and your name is live within minutes. Your review on the website is the proof of your approval, not the bot's commit. How it works: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md#approving-on-the-website).
+
 The skill stays yours. When the next tax year comes, you update it and approve it again. If the text of an approved skill changes, its approval clears until you approve the new version. If an accountant does not respond for 30 days, another accountant can ask us to take the skill over.
 
 **What you get:** your name on the answer, a public profile with your skills, and a page that shows how often your skills are used, with a link to share them.
