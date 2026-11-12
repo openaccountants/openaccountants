@@ -11,24 +11,16 @@
 #      `reviewed_by`, `reviewed_on` and the accountant's fixes. The commit is
 #      github-actions[bot]'s, never the accountant's.
 #   3. validate.yml checks the website's signed proof for that review
-#      (scripts/accountant_review.py via validate-guides.py line 12). The PR is
-#      approved by this workflow and set to auto-merge, so it merges only when
-#      the required checks (validate, unit-tests, guard-derived-trees) pass.
+#      (scripts/accountant_review.py via validate-guides.py). The worker requests
+#      a merge only after validate, unit-tests, guard-derived-trees and compare pass.
 #   4. The merge to main runs ingest-to-platform.yml; the website attaches the
 #      name only if the merged file is byte for byte the approved one.
 #
 # Secrets (founder sets them; see docs/QUALITY-TIERS.md):
-#   REVIEW_PROOF_SECRET  repository secret (Settings > Secrets and variables >
-#                        Actions > Repository secrets), the same value as the
-#                        website's REVIEW_PROOF_SECRET. Repository level, not
-#                        the production environment, because validate.yml
-#                        needs it on pull requests too.
-#   DERIVED_BUILD_TOKEN  already in the production environment (rebuild-derived.yml).
-#                        Opens the PR, so the PR starts the required checks
-#                        (a PR opened with GITHUB_TOKEN starts none).
-# Repository setting: Settings > Actions > General > Workflow permissions >
-#   "Allow GitHub Actions to create and approve pull requests" must be ON for the
-#   approve job. Without it the PR waits for a maintainer's approval instead.
+#   REVIEW_PROOF_SECRET  main-only production environment, matching the website.
+#                        Never supplied to pull-request code.
+#   DERIVED_BUILD_TOKEN  existing production environment credential, final writer only.
+# No blanket GitHub Actions PR approval permission is needed. Existing review rules apply.
 
 name: Accountant review
 
@@ -50,8 +42,6 @@ jobs:
     environment: production
     runs-on: ubuntu-24.04
     timeout-minutes: 15
-    outputs:
-      prs: ${{ steps.open.outputs.prs }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -64,8 +54,8 @@ jobs:
           REVIEW_PROOF_SECRET: ${{ secrets.REVIEW_PROOF_SECRET }}
         run: |
           if [ -z "$REVIEW_PROOF_SECRET" ]; then
-            echo "::notice::REVIEW_PROOF_SECRET is not set. Website approvals are off."
-            exit 0
+            echo "::error::REVIEW_PROOF_SECRET is not set. Website reviews cannot be delivered."
+            exit 1
           fi
           python3 scripts/accountant_review.py stage --out "$RUNNER_TEMP/reviews"
 
@@ -79,7 +69,6 @@ jobs:
           : > "$RUNNER_TEMP/opened.txt"
           shopt -s nullglob
           dirs=("$RUNNER_TEMP"/reviews/*/)
-          if [ ${#dirs[@]} -eq 0 ]; then echo "prs=[]" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ -z "$GH_TOKEN" ]; then echo "::error::DERIVED_BUILD_TOKEN is not set."; exit 1; fi
           gh label create accountant-review --color 0e8a16 \
             --description "An approval an accountant gave signed in on openaccountants.com" >/dev/null 2>&1 || true
@@ -90,10 +79,9 @@ jobs:
             [[ "$id" =~ ^[0-9a-f-]{36}$ ]] || continue
             branch="accountant-review/$id"
             path=$(cat "$d/path")
-            if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
-              echo "Branch $branch exists already; skipping."
-              continue
-            fi
+            existing=$(gh pr list --head "$branch" --state all --limit 1 --json number --jq '.[0].number // empty')
+            if [ -n "$existing" ]; then echo "PR #$existing exists already."; continue; fi
+            if ! git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
             # Build the commit without touching the checkout: main plus this one file.
             blob=$(git hash-object -w "$d/file")
             export GIT_INDEX_FILE="$RUNNER_TEMP/index-$id"
@@ -106,29 +94,24 @@ jobs:
               git commit-tree "$tree" -p "$MAIN_SHA" -m "Record an accountant's approval from openaccountants.com review $id")
             git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $AUTH" \
               push origin "$commit:refs/heads/$branch"
+            fi
+            # A branch created before a failed gh call is recovered here on the next run.
             url=$(gh pr create --base main --head "$branch" --title "$(cat "$d/title")" \
               --body-file "$d/body.md" --label accountant-review)
-            gh pr merge "$url" --auto --merge || echo "::warning::Auto-merge could not be enabled on $url"
             echo "$url" >> "$RUNNER_TEMP/opened.txt"
             echo "Opened $url"
           done
-          echo "prs=$(jq -c -R -s 'split("\n") | map(select(length > 0))' "$RUNNER_TEMP/opened.txt")" >> "$GITHUB_OUTPUT"
-
-  approve:
-    needs: open
-    if: needs.open.outputs.prs != '' && needs.open.outputs.prs != '[]'
-    runs-on: ubuntu-24.04
-    timeout-minutes: 5
-    permissions:
-      pull-requests: write
-    steps:
-      - name: Approve (the merge still waits for the proof check)
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PRS: ${{ needs.open.outputs.prs }}
-        run: |
-          for url in $(jq -r '.[]' <<<"$PRS"); do
-            gh pr review "$url" --approve \
-              --body "A signed review record from openaccountants.com is behind this change. The validate check verifies it before merge." \
-              || echo "::warning::Could not approve $url. Turn on 'Allow GitHub Actions to create and approve pull requests', or a maintainer approves it."
-          done
+          # Check every open review PR, including those opened on an earlier run.
+          # Do not rely on this credential's possible ruleset bypass: all four checks
+          # must explicitly succeed before it can request a merge.
+          gh pr list --base main --state open --label accountant-review --limit 100 \
+            --json number,headRefName,headRefOid,isCrossRepository > "$RUNNER_TEMP/review-prs.json"
+          while IFS=$'\t' read -r number branch head; do
+            [[ "$branch" =~ ^accountant-review/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$ ]] || continue
+            if ! checks=$(gh pr checks "$number" --required --json name,state); then continue; fi
+            if ! jq -e 'all(["validate", "unit-tests", "guard-derived-trees", "compare"][];
+              . as $name | any($checks[]; .name == $name and .state == "SUCCESS"))' \
+              --argjson checks "$checks" <<<null >/dev/null; then continue; fi
+            gh pr merge "$number" --auto --merge --match-head-commit "$head" \
+              || echo "::warning::Review PR #$number is waiting for repository merge rules."
+          done < <(jq -r '.[] | select(.isCrossRepository == false) | [.number, .headRefName, .headRefOid] | @tsv' "$RUNNER_TEMP/review-prs.json")

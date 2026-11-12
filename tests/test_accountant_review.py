@@ -110,8 +110,7 @@ class CheckPullRequestTests(unittest.TestCase):
         files = {("HEAD", PATH): AFTER, ("origin/main", PATH): BEFORE}
         show = lambda ref, path: files.get(("HEAD" if ref == "HEAD" else "origin/main", path))
         import os
-        old = os.environ.get("REVIEW_PROOF_SECRET")
-        os.environ["REVIEW_PROOF_SECRET"] = SECRET
+        old = os.environ.pop("REVIEW_PROOF_SECRET", None)
         try:
             ar.check_pull_request(errors, [PATH], pr=pr, fetch=fetch, show=show)
         finally:
@@ -138,6 +137,24 @@ class CheckPullRequestTests(unittest.TestCase):
 
 
 class StageTests(unittest.TestCase):
+    def test_already_open_or_stale_reviews_are_not_staged_again(self):
+        review = {"id": ID, "path": PATH, "branch": f"accountant-review/{ID}", "file_sha": ar.blob_sha(BEFORE),
+                  "result_sha": ar.blob_sha(AFTER), "content": AFTER.decode()}
+        import os
+        from unittest.mock import patch
+        with patch.dict(os.environ, REVIEW_PROOF_SECRET=SECRET):
+            for status in ["pr_open", "merged", "live", "stale", "closed"]:
+                with tempfile.TemporaryDirectory() as tmp:
+                    result = ar.stage(Path(tmp), fetch=lambda *args, **kwargs: {"reviews": [review]},
+                                      refresh=lambda rid: {"status": status}, show=lambda *args: BEFORE)
+                    self.assertEqual(result, [])
+
+    def test_private_key_is_never_given_to_pull_request_code(self):
+        workflow = (REPO_ROOT / ".github/workflows/validate.yml").read_text()
+        self.assertNotIn("REVIEW_PROOF_SECRET", workflow)
+        owners = (REPO_ROOT / ".github/CODEOWNERS").read_text()
+        self.assertIn("/scripts/accountant_review.py @michaelcutajar1995", owners)
+
     def test_stages_only_reviews_whose_file_is_unchanged_and_whose_result_hashes(self):
         good = {"id": ID, "path": PATH, "branch": f"accountant-review/{ID}", "file_sha": ar.blob_sha(BEFORE),
                 "result_sha": ar.blob_sha(AFTER), "content": AFTER.decode(), "title": "Approve X", "body": "Body"}
@@ -150,7 +167,7 @@ class StageTests(unittest.TestCase):
             with tempfile.TemporaryDirectory() as tmp:
                 out = Path(tmp)
                 staged = ar.stage(out, fetch=lambda url, token=None: {"reviews": [good, moved, tampered, escape]},
-                                  show=lambda ref, path: BEFORE if path == PATH else None)
+                                  show=lambda ref, path: BEFORE if path == PATH else None, refresh=lambda rid: {"status": "submitted"})
                 self.assertEqual([s["id"] for s in staged], [ID])
                 self.assertEqual((out / ID / "file").read_bytes(), AFTER)
                 self.assertEqual((out / ID / "path").read_text(), PATH)

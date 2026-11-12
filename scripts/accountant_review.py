@@ -16,8 +16,8 @@ website keeps that review as a record. This repository then needs two things:
 
 2. ``check_pull_request`` (called by scripts/validate-guides.py): a pull request
    from a branch ``accountant-review/<id>``, or labelled ``accountant-review``,
-   passes only if the website's signed proof for that review
-   (GET /api/reviews/<id>/proof, HMAC-SHA256 under REVIEW_PROOF_SECRET) names the
+   passes only if the website's public receipt for that review
+   (GET /api/reviews/<id>/proof over HTTPS to the fixed website) names the
    one skill file the PR changes, the name in its `reviewed_by`, the date in its
    `reviewed_on`, the file the PR started from and the file it carries.
 
@@ -41,7 +41,7 @@ import sys
 import urllib.error
 import urllib.request
 
-SITE = os.environ.get("OA_SITE", "https://www.openaccountants.com")
+SITE = "https://www.openaccountants.com"
 PROOF_VERSION = "oa-review-proof-v1"
 BRANCH_PREFIX = "accountant-review/"
 LABEL = "accountant-review"
@@ -107,9 +107,9 @@ def review_id_for(head_ref: str, labels: list[str], body: str) -> str | None:
 
 
 def problems_for(proof: dict, *, review_id: str, changed: list[str], base_text: bytes | None,
-                 main_text: bytes | None, head_text: bytes | None, secret: str) -> list[str]:
+                 main_text: bytes | None, head_text: bytes | None, secret: str | None = None) -> list[str]:
     """Why a PR does not match its review record. Empty list = it matches. Pure."""
-    if not signature_ok(proof, secret):
+    if secret is not None and not signature_ok(proof, secret):
         return ["the website's proof is not signed with REVIEW_PROOF_SECRET (or the secret is not set)"]
     out = []
     if proof.get("id") != review_id:
@@ -183,12 +183,25 @@ def check_pull_request(errors: list[str], changed: list[str] | None, pr: dict | 
         base_text=show(base, path) if SKILL_PATH.match(path) else None,
         main_text=show("origin/main", path) if SKILL_PATH.match(path) else None,
         head_text=show("HEAD", path) if SKILL_PATH.match(path) else None,
-        secret=os.environ.get("REVIEW_PROOF_SECRET", ""),
+        # Public CI authenticates the receipt through HTTPS to the fixed website,
+        # without exposing the private queue/signing key to pull-request code.
     )
     errors.extend(f"accountant review {review_id}: {p}" for p in found)
 
 
-def stage(out_dir: Path, fetch=get_json, show=_git_show) -> list[dict]:
+def refresh_review(review_id: str) -> dict:
+    secret = os.environ.get("REVIEW_PROOF_SECRET", "")
+    request = urllib.request.Request(
+        f"{SITE}/api/reviews/pending", data=json.dumps({"id": review_id}).encode(),
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {secret}"}, method="POST")
+    with urllib.request.build_opener(NoRedirect()).open(request, timeout=60) as response:
+        data = json.load(response)
+    if not isinstance(data, dict) or data.get("status") not in LIVE_STATES | {"stale", "closed"}:
+        raise ValueError("the website returned no refreshed review status")
+    return data
+
+
+def stage(out_dir: Path, fetch=get_json, show=_git_show, refresh=refresh_review) -> list[dict]:
     """Write one folder per review that can become a PR now: file, title, body.
     Skips (and reports) any review whose file moved on main or whose content does
     not hash to the approved result. Never writes into the repository."""
@@ -210,6 +223,12 @@ def stage(out_dir: Path, fetch=get_json, show=_git_show) -> list[dict]:
             continue
         if review.get("branch") != f"{BRANCH_PREFIX}{rid}" or not SHA.match(str(review.get("file_sha"))) or not SHA.match(str(review.get("result_sha"))):
             print(json.dumps({"message": "Skipped a malformed review", "id": rid}))
+            continue
+        # Reconcile against GitHub even when the accountant never reopens their
+        # dashboard. Existing PRs and stale reviews leave the pending queue.
+        refreshed = refresh(rid)
+        if refreshed["status"] != "submitted":
+            print(json.dumps({"message": "Review already handled", "id": rid, "status": refreshed["status"]}))
             continue
         # The workflow checks out main, so HEAD is main as it is now.
         current = show("HEAD", path)
