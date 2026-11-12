@@ -273,11 +273,11 @@ domain: income-tax
 
 #### Simplified depreciation rules
 
-To enter simplified depreciation or claim an individual new-asset deduction, confirm the eligibility and choice conditions in Subdivision 328-D. An existing general small business pool continues under that Subdivision for the year and later years even if the entity is no longer a small business entity or does not choose it for the year. New assets first used in such a year cannot be allocated to that pool until a year when the entity is eligible and chooses the Subdivision (s 328-220). Check aggregated-turnover eligibility, the required choices for the holding and first taxable-use years, first use or installation ready for taxable use, prior claims and statutory exclusions. Test the asset's full statutory cost, after applicable GST adjustments but before private-use apportionment, against the strict less-than-$20,000 threshold. The deduction is limited to taxable use. Covered assets not individually deductible under s 328-180 generally enter the small business pool; exactly $20,000 is included. General Division 40 rules apply when simplified depreciation does not apply or an exception requires them.
+To enter simplified depreciation or claim an individual new-asset deduction, confirm the eligibility and choice conditions in Subdivision 328-D. An existing general small business pool continues under that Subdivision for the year and later years even if the entity is no longer a small business entity or does not choose it for the year. New assets first used in such a year cannot be allocated to that pool until a year when the entity is eligible and chooses the Subdivision (s 328-220). For an individual asset deduction, confirm small business entity status and the required simplified-depreciation choice in both the year you started to hold the asset and the first taxable-use year (s 328-180(1)(a) and (ab)). Check first use or installation ready for taxable use, prior claims and statutory exclusions. Test the asset's full statutory cost, after applicable GST adjustments but before private-use apportionment, against the strict less-than-$20,000 threshold. The deduction is limited to taxable use. Covered assets not individually deductible under s 328-180 generally enter the small business pool; exactly $20,000 is included. General Division 40 rules apply when simplified depreciation does not apply or an exception requires them.
 
 For ordinary pool depreciation, use 30% of the opening pool balance and 15% of the taxable-purpose adjustable value of assets first used or installed ready for taxable use during the year; relevant later cost additions have their own 15% rule. Do not assign 15% merely because a previously used asset enters the opening pool. First check s 328-210: opening pool balance plus taxable-purpose new-asset amounts and cost additions, less relevant taxable-purpose termination values, with the statutory adjustments. If that amount is more than zero and less than $20,000, deduct it instead of ordinary pool depreciation and close the pool at zero. Test before ordinary depreciation, not against the smaller closing balance after it. Check exclusions and special rules, including assets outside Division 40, relevant primary-production assets, leases and existing pools. [ITAA 1997, ss 328-175 to 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html).
 
-For 2025-26, the temporary asset threshold and pool threshold are supported by [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html); check the acquisition and first-use conditions. For later first use and pool assessments, apply the permanent threshold's specific application rules in [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text).
+For the temporary 2025-26 asset threshold, you must also have first acquired the asset at or after 7.30 pm ACT time on 12 May 2015. The temporary asset threshold and pool threshold are supported by [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html); check the acquisition and first-use conditions. For later first use and pool assessments, apply the permanent threshold's specific application rules in [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text).
 
 #### Small business pool boundary checks
 
@@ -432,6 +432,25 @@ expected:
   marginal_sum: 12476.46
   ten_percent_cap: 15000
   compulsory_repayment: 50
+```
+
+**Worked example: income cap, 2026-27.** A liable resident has repayment income of $186,051 and $50,000 repayable debt, with no section 154-1(2) relief. The marginal sum is $18,605.13. The 10% cap reduces the compulsory repayment before assessment rounding to $18,605.10.
+
+```oa-check
+name: HELP 2026-27 total income cap at its first whole-dollar boundary
+inputs:
+  repayment_income: 186051
+  minimum: 69528
+  second_threshold: 129717
+  repayable_debt: 50000
+steps:
+  - marginal_sum: pct(second_threshold - minimum, 15) + pct(repayment_income - second_threshold, 17)
+  - ten_percent_cap: pct(repayment_income, 10)
+  - compulsory_repayment: min(marginal_sum, ten_percent_cap, repayable_debt)
+expected:
+  marginal_sum: 18605.13
+  ten_percent_cap: 18605.10
+  compulsory_repayment: 18605.10
 ```
 
 ### 5.6 Filing and Penalties [T1]
