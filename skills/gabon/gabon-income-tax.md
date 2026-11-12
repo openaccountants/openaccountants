@@ -1,9 +1,10 @@
 ---
-name: ga-income-tax
+name: gabon-income-tax
 description: >
   Gabon individual income tax reference for IRPP residence, household shares, annual bands, salary deductions and ordinary declaration gateways. Use for personal income tax, quotient familial and Gabon resident or nonresident income questions, with professional-income minimum taxes explicitly separated. Use this Guide to identify the facts, statutory computation and source documents needed before preparing a working paper. It separates the historical code baseline from the enacted finance-law amendments read for this draft. It does not certify the complete 2026 amendment chain or authenticated filing screens. Missing procedures and unresolved old topics are listed explicitly, and the pack remains partial until those gaps and independent review are complete.
 jurisdiction: GA
 category: international
+type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
 last_updated: 2026-11-01

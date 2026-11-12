@@ -1,5 +1,5 @@
 ---
-name: fl-sales-use-tax
+name: fl-sales-tax
 description: >
   Florida Sales and Use Tax return (Form DR-15) for self-employed individuals and small businesses. Covers the 6% state sales tax rate, county discretionary sales surtax, use tax on out-of-state purchases, exempt transactions, filing frequencies, and dealer collection allowance. Primary source: Florida Statutes Chapter 212.
 version: 1.0

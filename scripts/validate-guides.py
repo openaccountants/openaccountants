@@ -78,6 +78,8 @@ import label_boilerplate
 import repo_layout
 import sanctioned
 import skill_checks
+import skill_dependencies
+from pathlib import Path
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -915,6 +917,10 @@ def main():
     # Line 11 runs here too: a file that is not `.md` is not a guide, so no
     # later check would ever look at it.
     check_deliverable(errors, warnings, touched)
+    # Resolve the whole source graph even on a deletion-only PR. A changed-file
+    # scan cannot see unchanged children whose required parent was removed.
+    _skills, _targets, dependency_errors = skill_dependencies.catalogue(Path(REPO_ROOT))
+    errors.extend(dependency_errors)
     if changed_only:
         changed = changed_files_vs_main()
         if changed is not None:

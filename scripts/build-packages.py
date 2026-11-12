@@ -38,9 +38,12 @@ import os
 import re
 import shutil
 import sys
+from functools import lru_cache
+from pathlib import Path
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 from repo_layout import country_dirs
+from skill_dependencies import add_package_dependencies, catalogue
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -60,6 +63,18 @@ US_FEDERAL_DIR = os.path.join(SKILLS_DIR, "us", "federal")
 # ever write into them.
 # ============================================================================
 HAND_AUTHORED_PACKAGES = {"us-federal"}
+
+
+@lru_cache(maxsize=1)
+def dependency_targets():
+    _skills, targets, errors = catalogue(Path(REPO_ROOT))
+    if errors:
+        raise ValueError("Cannot build incomplete or ambiguous packages:\n" + "\n".join(errors))
+    return targets
+
+
+def include_dependencies(pkg_dir, files):
+    add_package_dependencies(Path(pkg_dir), files, dependency_targets())
 
 # Country code → display name mapping
 COUNTRY_NAMES = {
@@ -597,12 +612,14 @@ def build_package(country_dir_name, country_dir):
         shutil.copy2(filepath, dest)
         copied_files.append(filename)
 
-    # Copy EU VAT base if EU member
+    # These are distinct source skills. Renaming the base to eu-vat-directive
+    # hid the article-by-article dependency behind the wrong document.
     if code in EU_MEMBERS:
-        eu_vat = os.path.join(SKILLS_DIR, "eu", "eu-vat-base.md")
-        if os.path.exists(eu_vat):
-            shutil.copy2(eu_vat, os.path.join(pkg_dir, "eu-vat-directive.md"))
-            copied_files.append("eu-vat-directive.md")
+        for filename in ("eu-vat-base.md", "eu-vat-directive.md"):
+            eu_vat = os.path.join(SKILLS_DIR, "eu", filename)
+            if os.path.exists(eu_vat):
+                shutil.copy2(eu_vat, os.path.join(pkg_dir, filename))
+                copied_files.append(filename)
 
     # Copy domain-specific workflow bases when matching skills exist
     DOMAIN_BASES = {
@@ -630,6 +647,8 @@ def build_package(country_dir_name, country_dir):
         shutil.copy2(assembly_file, os.path.join(pkg_dir, f"{country_dir_name}-return-assembly.md"))
         copied_files.append(f"{country_dir_name}-return-assembly.md")
 
+    # Include declared parents, recursively, before listing the package files.
+    include_dependencies(pkg_dir, copied_files)
     # Write README
     with open(os.path.join(pkg_dir, "README.md"), 'w', encoding="utf-8") as f:
         f.write(build_readme(name, copied_files, practitioner, code))
@@ -814,6 +833,7 @@ def build_us_state_package(state_code):
                 copied_files.append(f)
                 state_skill_count += 1
 
+    include_dependencies(pkg_dir, copied_files)
     # 6. Generate README
     with open(os.path.join(pkg_dir, "README.md"), "w", encoding="utf-8") as fh:
         fh.write(build_us_state_readme(state_name, state_code, copied_files))
@@ -997,6 +1017,7 @@ def build_canada_province_package(province_code):
             shutil.copy2(src, os.path.join(pkg_dir, orch_file))
             copied_files.append(orch_file)
 
+    include_dependencies(pkg_dir, copied_files)
     # 7. Generate README
     with open(os.path.join(pkg_dir, "README.md"), "w", encoding="utf-8") as fh:
         fh.write(build_canada_province_readme(province_name, province_code, copied_files))
@@ -1163,6 +1184,7 @@ def main():
                 shutil.copy2(xb_base, os.path.join(xb_pkg, "cross-border-workflow-base.md"))
                 xb_files.append("cross-border-workflow-base.md")
             if xb_files:
+                include_dependencies(xb_pkg, xb_files)
                 with open(os.path.join(xb_pkg, "README.md"), "w", encoding="utf-8") as fh:
                     fh.write("# Cross-Border Accounting Skills\n\n"
                              "Multi-jurisdiction orchestrator for international transactions: "
@@ -1195,6 +1217,7 @@ def main():
                     shutil.copy2(os.path.join(vert_dir, f), os.path.join(vert_pkg, f))
                     vert_files.append(f)
             if vert_files:
+                include_dependencies(vert_pkg, vert_files)
                 with open(os.path.join(vert_pkg, "README.md"), "w", encoding="utf-8") as fh:
                     fh.write("# Industry Vertical Skills\n\n"
                              "Industry-specific accounting patterns for freelancers and small businesses.\n"
@@ -1223,6 +1246,7 @@ def main():
                     shutil.copy2(os.path.join(integ_dir, f), os.path.join(integ_pkg, f))
                     integ_files.append(f)
             if integ_files:
+                include_dependencies(integ_pkg, integ_files)
                 with open(os.path.join(integ_pkg, "README.md"), "w", encoding="utf-8") as fh:
                     fh.write("# Software & Platform Integration Skills\n\n"
                              "Column mappings, export formats, and reconciliation guides for popular\n"
