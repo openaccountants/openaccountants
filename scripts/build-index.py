@@ -13,8 +13,8 @@ the repo root:
                 "verified_by", "reviewed_by", "tax_year", "last_updated" }, ... ]
 }
 
-Dependency-free (stdlib only). Frontmatter is parsed with a simple ---block
-line scanner; malformed YAML is tolerated by regex-extracting the known keys.
+Metadata fields use a tolerant ---block scanner. Publication eligibility uses
+the strict shared source catalogue and the validation requirements' YAML parser.
 
 Usage:
     python3 scripts/build-index.py            # write index.json and restamp the llms.txt counts
@@ -25,7 +25,11 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
 from datetime import datetime, timezone
+
+from skill_dependencies import publication_catalogue
+from skill_eligibility import needs_sources
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -45,6 +49,7 @@ KNOWN_KEYS = [
     "reviewed_by",
     "tax_year",
     "last_updated",
+    "status",
 ]
 
 # `key: value` at column 0. Tolerates malformed YAML elsewhere in the block.
@@ -130,6 +135,7 @@ def guide_files():
 
 def build_index():
     guides = []
+    _skills, _targets, held, _errors = publication_catalogue(Path(REPO_ROOT))
     for rel_path in guide_files():
         with open(os.path.join(REPO_ROOT, rel_path), encoding="utf-8", errors="replace") as fh:
             text = fh.read()
@@ -137,6 +143,8 @@ def build_index():
         if block is None:
             continue  # not a guide (no frontmatter)
         fields = parse_known_keys(block)
+        if needs_sources(fields) or fields["name"] in held:
+            continue
 
         jurisdiction = fields["jurisdiction"]
         if jurisdiction and CODE_RE.match(jurisdiction):
@@ -185,7 +193,9 @@ def build_index():
             "loadable_skill_names": len({g["mcp_slug"] for g in guides if g["mcp_slug"]}),
             "jurisdictions": len(jurisdictions),
             "accountant_reviewed": sum(1 for g in guides if is_reviewed(g)),
+            "held_skill_names": len(held),
         },
+        "publication_holds": [{"name": name, "reason": reason} for name, reason in held.items()],
         "guides": guides,
     }
 

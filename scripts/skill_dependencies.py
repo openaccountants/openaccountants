@@ -14,6 +14,7 @@ import json
 import re
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
+from skill_eligibility import publication_holds
 
 FRONTMATTER = re.compile(r"\A---[ \t]*\n(.*?)^(?:---|\.\.\.)[ \t]*\n?(.*)\Z", re.M | re.S)
 SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
@@ -122,6 +123,13 @@ def catalogue(root: Path) -> tuple[list[Skill], dict[str, Skill], list[str]]:
                 errors.append(f"{skill.path.relative_to(root)}: missing or ambiguous dependency `{dependency}`")
     errors.extend(dependency_cycles(skills))
     return skills, resolved, errors
+
+
+def publication_catalogue(root: Path):
+    """Keep the complete authoring graph, but expose only usable targets."""
+    skills, targets, errors = catalogue(root)
+    held = publication_holds({name: json.loads(skill.context) for name, skill in targets.items()})
+    return skills, {name: skill for name, skill in targets.items() if name not in held}, held, errors
 
 
 def add_package_dependencies(package: Path, files: list[str], targets: dict[str, Skill]) -> None:

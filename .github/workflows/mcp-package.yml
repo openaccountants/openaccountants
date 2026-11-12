@@ -30,12 +30,17 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check "build==1.5.0"
           python -m build mcp --outdir dist
+          python -m pip install -r scripts/requirements-validation.txt
+          python scripts/probe-installed-publication.py --write-expected dist/publication-expectations.json
       - name: Install and exercise the wheel outside the checkout
         run: |
           TEST_ROOT="$(mktemp -d)"
           python -m venv "$TEST_ROOT/venv"
           "$TEST_ROOT/venv/bin/pip" install dist/*.whl
           cd "$TEST_ROOT"
+          "$TEST_ROOT/venv/bin/python" "$GITHUB_WORKSPACE/scripts/probe-installed-publication.py" \
+            --check "$GITHUB_WORKSPACE/dist/publication-expectations.json"
+          "$TEST_ROOT/venv/bin/python" "$GITHUB_WORKSPACE/mcp/tests/test_publication_holds.py"
           "$TEST_ROOT/venv/bin/python" - <<'PY'
           from openaccountants_mcp import server
 
