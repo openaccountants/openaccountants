@@ -269,11 +269,11 @@ metadata:
 
 #### Simplified depreciation rules
 
-To enter simplified depreciation or claim an individual new-asset deduction, confirm the eligibility and choice conditions in Subdivision 328-D. An existing general small business pool continues under that Subdivision for the year and later years even if the entity is no longer a small business entity or does not choose it for the year. New assets first used in such a year cannot be allocated to that pool until a year when the entity is eligible and chooses the Subdivision (s 328-220). Check aggregated-turnover eligibility, the required choices for the holding and first taxable-use years, first use or installation ready for taxable use, prior claims and statutory exclusions. Test the asset's full statutory cost, after applicable GST adjustments but before private-use apportionment, against the strict less-than-$20,000 threshold. The deduction is limited to taxable use. Covered assets not individually deductible under s 328-180 generally enter the small business pool; exactly $20,000 is included. General Division 40 rules apply when simplified depreciation does not apply or an exception requires them.
+To enter simplified depreciation or claim an individual new-asset deduction, confirm the eligibility and choice conditions in Subdivision 328-D. An existing general small business pool continues under that Subdivision for the year and later years even if the entity is no longer a small business entity or does not choose it for the year. New assets first used in such a year cannot be allocated to that pool until a year when the entity is eligible and chooses the Subdivision (s 328-220). For an individual asset deduction, confirm small business entity status and the required simplified-depreciation choice in both the year you started to hold the asset and the first taxable-use year (s 328-180(1)(a) and (ab)). Check first use or installation ready for taxable use, prior claims and statutory exclusions. Test the asset's full statutory cost, after applicable GST adjustments but before private-use apportionment, against the strict less-than-$20,000 threshold. The deduction is limited to taxable use. Covered assets not individually deductible under s 328-180 generally enter the small business pool; exactly $20,000 is included. General Division 40 rules apply when simplified depreciation does not apply or an exception requires them.
 
 For ordinary pool depreciation, use 30% of the opening pool balance and 15% of the taxable-purpose adjustable value of assets first used or installed ready for taxable use during the year; relevant later cost additions have their own 15% rule. Do not assign 15% merely because a previously used asset enters the opening pool. First check s 328-210: opening pool balance plus taxable-purpose new-asset amounts and cost additions, less relevant taxable-purpose termination values, with the statutory adjustments. If that amount is more than zero and less than $20,000, deduct it instead of ordinary pool depreciation and close the pool at zero. Test before ordinary depreciation, not against the smaller closing balance after it. Check exclusions and special rules, including assets outside Division 40, relevant primary-production assets, leases and existing pools. [ITAA 1997, ss 328-175 to 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html).
 
-For 2025-26, the temporary asset threshold and pool threshold are supported by [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html); check the acquisition and first-use conditions. For later first use and pool assessments, apply the permanent threshold's specific application rules in [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text).
+For the temporary 2025-26 asset threshold, you must also have first acquired the asset at or after 7.30 pm ACT time on 12 May 2015. The temporary asset threshold and pool threshold are supported by [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html); check the acquisition and first-use conditions. For later first use and pool assessments, apply the permanent threshold's specific application rules in [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text).
 
 #### Small business pool boundary checks
 
@@ -375,22 +375,79 @@ expected:
 
 ### 5.5 HELP/HECS Repayment [T1]
 
-Use the 2025–26 thresholds below for this return workflow. Use the separately labelled 2026–27 bands only for that requested year. Both years are marginal: nil at or below the minimum threshold; 15c then 17c on the excess; the top band is 10% of **total** repayment income. Do not use the old 1%--10% of whole-of-income rates.
+Use the 2025-26 thresholds for this return workflow. Use the separately labelled 2026-27 thresholds only for that requested year. The following is the domestic compulsory-repayment calculation for a person liable under section 154-1, with a HELP debt on the relevant 1 June. The family Medicare-levy reduction or exemption in section 154-1(2), referring specifically to section 8 of the Medicare Levy Act, can remove that liability. Do not treat every Medicare exemption as a HELP exemption. Foreign residents may also have an overseas levy based on assessed worldwide income under sections 154-16, 154-17 and 154-32. [Higher Education Support Act 2003, ss 154-1 to 154-20 and 154-32](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html).
 
-### 5.5 HELP/HECS Repayment [T1]
+**Repayment income.** Start with taxable income, disregarding the assessable FHSS released amount. Add total net investment losses, the applicable reportable fringe benefits total, exempt foreign income as defined in section 154-5 and reportable superannuation contributions. For this purpose, exempt foreign income is net income exempt under ITAA 1936 section 23AF or 23AG, with capital losses and outgoings disregarded. HELP repayments are not deductible. [Higher Education Support Act 2003, s 154-5](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html).
 
-**5.5 HELP/HECS Repayment [T1]**  _(ATO QC 16176)_
+| Income year | Minimum repayment income | Second threshold | Source |
+| --- | ---: | ---: | --- |
+| 2025-26 | $67,000 | $125,000 | [HESA ss 154-10 and 154-20](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) |
+| 2026-27 | $69,528 | $129,717 | [2026-27 indexation notice, entries for ss 154-10 and 154-20](https://www.legislation.gov.au/C2026G00249/asmade/text) |
 
-| Repayment income (2026-27) | Repayment |
-| --- | --- |
-| $0 -- $69,528 | Nil |
-| $69,529 -- $129,717 | 15c for each $1 over $69,528 |
-| $129,718 -- $186,050 | $9,028 + 17c for each $1 over $129,717 |
-| $186,051+ | 10% of total repayment income |
+**Calculation for both years.** Calculate 15% of repayment income above the minimum up to the second threshold, plus 17% of repayment income above the second threshold. The compulsory repayment is the least of that marginal sum, 10% of total repayment income and the repayable debt for the income year. Determine that debt under section 154-15, allowing for relevant payments and amounts already assessed. At or below the minimum, there is no domestic compulsory repayment. Do not use the former whole-income percentage scale. [HESA ss 154-1, 154-15 and 154-20](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html).
 
-- **2025-26 HELP repayment bands** -- 2025-26: nil to $67,000; 15c over $67,000 to $125,000; $8,700 + 17c over $125,000 to $179,285; 10% of total repayment income from $179,286.  _(ATO QC 16176)_
-- **Marginal basis (from 2025-26)** -- From 2025-26 compulsory repayments are calculated on a marginal basis (only the income above the minimum repayment threshold), substituted by the Universities Accord (Cutting Student Debt by 20 Per Cent) Act 2025.  _(Universities Accord (Cutting Student Debt by 20 Per Cent) Act 2025)_
-- **Repayment income** -- Repayment income = taxable income + reportable fringe benefits + net investment losses + reportable super. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003)_
+The first slice reaches $8,700 in 2025-26 and $9,028.35 in 2026-27. Retain the statutory arithmetic before any applicable assessment rounding; the displayed $9,028 shorthand is not the exact 2026-27 first-slice amount. The 10% cap first becomes smaller than the marginal sum at whole-dollar repayment income of $179,286 in 2025-26 and $186,051 in 2026-27. [HESA ss 154-20 and 154-25](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 notice](https://www.legislation.gov.au/C2026G00249/asmade/text).
+
+**Worked example: repayment-income adjustments, 2025-26.** A resident has $70,000 taxable income including a $10,000 assessable FHSS released amount and $15,000 net section 23AG exempt foreign income. There are no other additions, no section 154-1(2) relief and $20,000 repayable debt. Repayment income is $75,000 and the compulsory repayment before assessment rounding is $1,200.
+
+```oa-check
+name: HELP repayment income excludes FHSS and adds defined exempt foreign income
+inputs:
+  taxable_income: 70000
+  assessable_fhss: 10000
+  net_exempt_foreign_income: 15000
+  minimum: 67000
+  second_threshold: 125000
+  repayable_debt: 20000
+steps:
+  - repayment_income: taxable_income - assessable_fhss + net_exempt_foreign_income
+  - marginal_sum: pct(max(min(repayment_income, second_threshold) - minimum, 0), 15) + pct(max(repayment_income - second_threshold, 0), 17)
+  - compulsory_repayment: min(marginal_sum, pct(repayment_income, 10), repayable_debt)
+expected:
+  repayment_income: 75000
+  marginal_sum: 1200
+  compulsory_repayment: 1200
+```
+
+**Worked example: debt cap, 2026-27.** A liable resident has repayment income of $150,000 and $50 repayable debt, with no section 154-1(2) relief. The marginal sum is $12,476.46, the 10% cap is $15,000 and the debt cap limits the repayment to $50.
+
+```oa-check
+name: HELP 2026-27 exact first slice and repayable debt cap
+inputs:
+  repayment_income: 150000
+  minimum: 69528
+  second_threshold: 129717
+  repayable_debt: 50
+steps:
+  - first_slice: pct(second_threshold - minimum, 15)
+  - marginal_sum: first_slice + pct(repayment_income - second_threshold, 17)
+  - ten_percent_cap: pct(repayment_income, 10)
+  - compulsory_repayment: min(marginal_sum, ten_percent_cap, repayable_debt)
+expected:
+  first_slice: 9028.35
+  marginal_sum: 12476.46
+  ten_percent_cap: 15000
+  compulsory_repayment: 50
+```
+
+**Worked example: income cap, 2026-27.** A liable resident has repayment income of $186,051 and $50,000 repayable debt, with no section 154-1(2) relief. The marginal sum is $18,605.13. The 10% cap reduces the compulsory repayment before assessment rounding to $18,605.10.
+
+```oa-check
+name: HELP 2026-27 total income cap at its first whole-dollar boundary
+inputs:
+  repayment_income: 186051
+  minimum: 69528
+  second_threshold: 129717
+  repayable_debt: 50000
+steps:
+  - marginal_sum: pct(second_threshold - minimum, 15) + pct(repayment_income - second_threshold, 17)
+  - ten_percent_cap: pct(repayment_income, 10)
+  - compulsory_repayment: min(marginal_sum, ten_percent_cap, repayable_debt)
+expected:
+  marginal_sum: 18605.13
+  ten_percent_cap: 18605.10
+  compulsory_repayment: 18605.10
+```
 
 ### 5.6 Filing and Penalties [T1]
 
@@ -618,6 +675,8 @@ Read 2026-11-12 for the depreciation correction:
 - [ITAA 1997, ss 328-175, 328-180, 328-185, 328-190, 328-210 and 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) -- read 2026-11-12 for selected simplified-depreciation eligibility, cost, allocation, rates, low-pool-value and continuing-pool rules.
 - [ITTPA 1997, s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) -- read 2026-11-12 for the temporary 2025-26 asset and pool thresholds.
 - [Tax Reform No. 2 Act 2026, schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text) -- read 2026-11-12 for the permanent threshold application from July 2026.
+
+- [Higher Education Support Act 2003, ss 154-1, 154-5, 154-10, 154-15, 154-20, 154-25 and 154-32](https://www.legislation.gov.au/C2004A01234/2026-10-17/2026-10-17/text/original/epub/OEBPS/document_1/document_1.html) and [2026-27 indexation notice](https://www.legislation.gov.au/C2026G00249/asmade/text) -- selected HELP liability, income, thresholds and caps read 2026-11-12.
 
 ## Today's figures and who stands behind this skill
 
