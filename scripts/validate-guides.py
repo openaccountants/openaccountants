@@ -69,6 +69,13 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      whose name is not lowercase letters, digits and hyphens, and for a skill
      file over the size limit; each message says what to rename or split. The
      full run WARNs for the same files, so old content never fails on them.
+ 12. PR mode only: an approval given signed in on openaccountants.com. A PR from
+     a branch `accountant-review/<id>`, or labelled `accountant-review`, is an
+     approval the website's workflow opened for an accountant. ERROR unless the
+     website's signed proof for review <id> (REVIEW_PROOF_SECRET) names the one
+     skill file the PR changes, its `reviewed_by` and `reviewed_on`, the file
+     the PR started from and, byte for byte, the file it carries
+     (scripts/accountant_review.py). Without the secret it fails closed.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -81,6 +88,7 @@ import re
 import subprocess
 import sys
 
+import accountant_review
 import job_identity
 import label_boilerplate
 import repo_layout
@@ -907,6 +915,8 @@ def main():
     check_deliverable(errors, warnings, touched)
     if changed_only:
         changed = changed_files_vs_main()
+        # Line 12 runs before the early exit below, on the PR's whole file list.
+        accountant_review.check_pull_request(errors, changed)
         if changed is not None:
             only = {f for f in changed if f.startswith(("skills/", "packages/"))}
             print(f"changed-only mode: validating {len(only)} changed guide file(s)")
