@@ -17,9 +17,13 @@
 10. `cyprus-social-contributions.md`
 11. `cyprus-tax-optimization.md`
 12. `cyprus-vat-return.md`
-13. `eu-vat-directive.md`
-14. `payroll-workflow-base.md`
-15. `transfer-pricing-workflow-base.md`
+13. `eu-vat-base.md`
+14. `eu-vat-directive.md`
+15. `payroll-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
+17. `income-tax-workflow-base.md`
+18. `social-contributions-workflow-base.md`
+19. `workflow-base.md`
 
 ## How to use
 

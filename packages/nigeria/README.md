@@ -26,6 +26,7 @@
 19. `taxes-and-small-businesses-in-nigeria-a-simple-guide-2.md`
 20. `payroll-workflow-base.md`
 21. `company-formation-workflow-base.md`
+22. `vat-workflow-base.md`
 
 ## Also known as
 

@@ -18,6 +18,9 @@
 11. `xk-transfer-pricing.md`
 12. `payroll-workflow-base.md`
 13. `transfer-pricing-workflow-base.md`
+14. `income-tax-workflow-base.md`
+15. `social-contributions-workflow-base.md`
+16. `workflow-base.md`
 
 ## How to use
 

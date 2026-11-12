@@ -17,6 +17,10 @@
 10. `honduras-social-contributions.md`
 11. `payroll-workflow-base.md`
 12. `company-formation-workflow-base.md`
+13. `income-tax-workflow-base.md`
+14. `vat-workflow-base.md`
+15. `social-contributions-workflow-base.md`
+16. `workflow-base.md`
 
 ## How to use
 

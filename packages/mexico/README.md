@@ -28,6 +28,9 @@
 21. `crypto-tax-workflow-base.md`
 22. `mexico-guided-intake.md`
 23. `mexico-return-assembly.md`
+24. `income-tax-workflow-base.md`
+25. `vat-workflow-base.md`
+26. `workflow-base.md`
 
 ## Also known as
 

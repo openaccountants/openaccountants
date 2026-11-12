@@ -80,6 +80,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 70. `wa-business-occupation-tax.md`
 71. `wa-sales-tax.md`
 72. `washington-sales-tax.md`
+73. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

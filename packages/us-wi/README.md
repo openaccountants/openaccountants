@@ -79,6 +79,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 69. `wi-payroll.md`
 70. `wi-sales-tax.md`
 71. `wisconsin-sales-tax.md`
+72. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

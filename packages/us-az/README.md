@@ -79,6 +79,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 69. `az-payroll.md`
 70. `az-sales-tax.md`
 71. `az-transaction-privilege-tax.md`
+72. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

@@ -29,16 +29,20 @@
 22. `france-vat-return.md`
 23. `leaving-france-exit-tax.md`
 24. `references.md`
-25. `eu-vat-directive.md`
-26. `bookkeeping-workflow-base.md`
-27. `einvoice-workflow-base.md`
-28. `payroll-workflow-base.md`
-29. `company-formation-workflow-base.md`
-30. `financial-statements-workflow-base.md`
-31. `transfer-pricing-workflow-base.md`
-32. `crypto-tax-workflow-base.md`
-33. `france-guided-intake.md`
-34. `france-return-assembly.md`
+25. `eu-vat-base.md`
+26. `eu-vat-directive.md`
+27. `bookkeeping-workflow-base.md`
+28. `einvoice-workflow-base.md`
+29. `payroll-workflow-base.md`
+30. `company-formation-workflow-base.md`
+31. `financial-statements-workflow-base.md`
+32. `transfer-pricing-workflow-base.md`
+33. `crypto-tax-workflow-base.md`
+34. `france-guided-intake.md`
+35. `france-return-assembly.md`
+36. `income-tax-workflow-base.md`
+37. `social-contributions-workflow-base.md`
+38. `workflow-base.md`
 
 ## Also known as
 

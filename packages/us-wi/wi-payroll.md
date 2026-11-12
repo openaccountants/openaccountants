@@ -1,9 +1,9 @@
 ---
 name: wi-payroll
-description: Wisconsin Payroll Skill (Tax Year 2025)
+description: Wisconsin employer payroll withholding, unemployment insurance and reporting workflow for tax year 2025.
 jurisdiction: US-WI
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-11-12
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources

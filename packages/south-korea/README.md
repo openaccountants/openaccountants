@@ -15,6 +15,8 @@
 8. `south-korea-crypto-tax.md`
 9. `south-korea-vat.md`
 10. `crypto-tax-workflow-base.md`
+11. `income-tax-workflow-base.md`
+12. `workflow-base.md`
 
 ## Also known as
 

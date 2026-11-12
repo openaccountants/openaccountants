@@ -7,7 +7,6 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/za-travel-allowance-tables"
   jurisdiction: "ZA"
   last_updated: "2026-09-03"
-  reviewed_by: "Brandon Iverach"
 ---
 
 # South Africa — Travel Allowance and Logbook Rate Tables

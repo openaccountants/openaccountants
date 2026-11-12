@@ -7,7 +7,6 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/za-income-tax-tables"
   jurisdiction: "ZA"
   last_updated: "2026-09-03"
-  reviewed_by: "Brandon Iverach"
 ---
 
 # South Africa — Income Tax Rate Tables (individuals)

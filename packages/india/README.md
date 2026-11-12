@@ -34,6 +34,8 @@
 27. `crypto-tax-workflow-base.md`
 28. `india-guided-intake.md`
 29. `india-return-assembly.md`
+30. `income-tax-workflow-base.md`
+31. `workflow-base.md`
 
 ## Also known as
 

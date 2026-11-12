@@ -18,6 +18,10 @@
 11. `uzbekistan-vat.md`
 12. `payroll-workflow-base.md`
 13. `company-formation-workflow-base.md`
+14. `income-tax-workflow-base.md`
+15. `social-contributions-workflow-base.md`
+16. `vat-workflow-base.md`
+17. `workflow-base.md`
 
 ## How to use
 

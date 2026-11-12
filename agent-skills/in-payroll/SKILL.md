@@ -1,13 +1,13 @@
 ---
 name: in-payroll
-description: "Use when asked about IN Payroll. This skill covers Indiana (US-IN) employer payroll tax obligations for tax year 2025. It is designed for small employers (1-50 employees) with an Indiana nexus through either: (a) Indiana-resident employees, (b) Indiana work locations, or (c) employees performing services in Indiana on a non-incidental basis."
+description: "Indiana employer payroll obligations for tax year 2025, including state withholding, unemployment insurance and reporting."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/in-payroll"
   jurisdiction: "US-IN"
   tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-11-12"
 ---
 
 # IN Payroll
@@ -481,4 +481,4 @@ Before signing off on an Indiana payroll year-end, confirm:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `in-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/in-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `in-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/in-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

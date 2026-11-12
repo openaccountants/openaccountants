@@ -1,10 +1,10 @@
 ---
 name: netherlands-owner-occupied-home-tax-scheme
-description: The Dutch owner-occupied home scheme
-version: 0.1
+description: Dutch income-tax treatment of an owner-occupied home, qualifying home debt and legacy home-saving products.
+version: 0.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-12
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax

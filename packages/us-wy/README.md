@@ -78,6 +78,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 68. `wy-formation.md`
 69. `wy-sales-tax.md`
 70. `wyoming-sales-tax.md`
+71. `cross-border-tax-workflow-base.md`
 
 ## How to use
 

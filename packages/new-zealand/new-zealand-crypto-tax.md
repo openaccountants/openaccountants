@@ -8,7 +8,7 @@ last_updated: 2026-10-31
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
-  - new-zealand-income-tax
+  - nz-income-tax-ir3
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2

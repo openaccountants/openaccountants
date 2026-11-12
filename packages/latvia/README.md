@@ -18,10 +18,14 @@
 11. `lv-cross-border.md`
 12. `lv-tax-overview.md`
 13. `lv-transfer-pricing.md`
-14. `eu-vat-directive.md`
-15. `payroll-workflow-base.md`
-16. `company-formation-workflow-base.md`
-17. `transfer-pricing-workflow-base.md`
+14. `eu-vat-base.md`
+15. `eu-vat-directive.md`
+16. `payroll-workflow-base.md`
+17. `company-formation-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
+19. `income-tax-workflow-base.md`
+20. `social-contributions-workflow-base.md`
+21. `workflow-base.md`
 
 ## How to use
 

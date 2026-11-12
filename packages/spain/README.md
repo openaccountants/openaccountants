@@ -59,16 +59,20 @@
 52. `spain-payroll.md`
 53. `spain-tax-optimization.md`
 54. `spain-transfer-pricing.md`
-55. `eu-vat-directive.md`
-56. `bookkeeping-workflow-base.md`
-57. `einvoice-workflow-base.md`
-58. `payroll-workflow-base.md`
-59. `company-formation-workflow-base.md`
-60. `financial-statements-workflow-base.md`
-61. `transfer-pricing-workflow-base.md`
-62. `crypto-tax-workflow-base.md`
-63. `spain-guided-intake.md`
-64. `spain-return-assembly.md`
+55. `eu-vat-base.md`
+56. `eu-vat-directive.md`
+57. `bookkeeping-workflow-base.md`
+58. `einvoice-workflow-base.md`
+59. `payroll-workflow-base.md`
+60. `company-formation-workflow-base.md`
+61. `financial-statements-workflow-base.md`
+62. `transfer-pricing-workflow-base.md`
+63. `crypto-tax-workflow-base.md`
+64. `spain-guided-intake.md`
+65. `spain-return-assembly.md`
+66. `income-tax-workflow-base.md`
+67. `social-contributions-workflow-base.md`
+68. `workflow-base.md`
 
 ## Also known as
 

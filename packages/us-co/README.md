@@ -81,6 +81,7 @@ This package contains **federal** tax skills (which apply to all US states) plus
 71. `co-sales-tax.md`
 72. `colorado-sales-tax.md`
 73. `connecticut-sales-tax.md`
+74. `cross-border-tax-workflow-base.md`
 
 ## How to use
 
