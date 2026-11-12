@@ -8,7 +8,9 @@ not proof that the required instructions exist or have the same scope.
 `scripts/validate-guides.py` checks the whole source graph on every run, including
 a PR that only deletes a parent. Missing or ambiguous names fail validation.
 The test uses the source files, so a stale generated index cannot hide a break.
-Documentation such as `README.md` and `references.md` is not a dependency target.
+Documentation such as `README.md` and `references.md`, and authoring files in
+`templates/` or `_templates/`, are not dependency targets or downloadable MCP
+skill entries. They remain available as repository documents.
 
 Two different documents cannot claim one name. Identical guidance for the same
 jurisdiction may be copied. The documented federal exception remains: a
@@ -20,6 +22,12 @@ in the country, state, province or special bundle. The files retain the source
 bytes. An occupied output filename is an error, not permission to overwrite
 other guidance. The generated `foundation.md` is a compressed package helper;
 declare `workflow-base` when a loadable universal method is required.
+
+Source skills outside the historical bundle list are copied byte for byte into
+`packages/_supplemental/`, with their own jurisdictions, scopes and approval
+states. This includes global standards and methods and deeper treaty corridors.
+The build fails if a named packaged copy does not match its source guidance and
+jurisdiction. A reference to a consolidated Act is not a redirect instruction.
 
 The income-tax and social-contributions method names are routing contracts.
 They were once empty stubs removed in April 2026, while many country files kept

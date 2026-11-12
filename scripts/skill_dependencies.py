@@ -30,6 +30,8 @@ class Skill:
 def read_skill(path: Path) -> Skill | None:
     if path.name.lower().startswith("readme") or path.name.lower() == "references.md":
         return None  # package documentation, never an executable dependency
+    if {"templates", "_templates"}.intersection(path.parts):
+        return None  # authoring templates are not usable country guidance
     text = path.read_text(encoding="utf-8")
     match = FRONTMATTER.match(text)
     if not match:

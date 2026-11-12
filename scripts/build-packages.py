@@ -43,7 +43,7 @@ from pathlib import Path
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 from repo_layout import country_dirs
-from skill_dependencies import add_package_dependencies, catalogue
+from skill_dependencies import add_package_dependencies, catalogue, read_skill
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -75,6 +75,49 @@ def dependency_targets():
 
 def include_dependencies(pkg_dir, files):
     add_package_dependencies(Path(pkg_dir), files, dependency_targets())
+
+
+def include_unshipped_sources():
+    """Ship source skills outside the historical country/special builders too.
+
+    Own jurisdiction stays in the copied frontmatter; the supplemental folder
+    is a distribution location, never a country or a quality assertion.
+    """
+    targets = dependency_targets()
+    present = {}
+    for path in Path(PACKAGES_DIR).rglob("*.md"):
+        if skill := read_skill(path):
+            present.setdefault(skill.name, []).append(skill)
+    missing = []
+    for name, target in sorted(targets.items()):
+        copies = present.get(name, [])
+        if copies:
+            if not any((s.body, s.jurisdiction) == (target.body, target.jurisdiction) for s in copies):
+                raise ValueError(f"No generated copy matches source guidance and jurisdiction for `{name}`")
+            continue
+        if not target.jurisdiction:
+            raise ValueError(f"{target.path}: declare jurisdiction before shipping in a mixed supplemental bundle")
+        missing.append(target)
+    if not missing:
+        return
+    package = Path(PACKAGES_DIR) / "_supplemental"
+    package.mkdir(exist_ok=True)
+    files = []
+    for target in missing:
+        destination = package / f"{target.name}.md"
+        destination.write_bytes(target.path.read_bytes())
+        files.append(destination.name)
+    include_dependencies(str(package), files)
+    (package / "README.md").write_text(
+        "# Supplemental source skills\n\n"
+        "Source-owned skills outside the historical country and special bundles.\n"
+        "Each skill keeps its own jurisdiction, scope, date and approval state.\n"
+        "This folder does not establish a shared country or extend a skill's scope.\n"
+        "README/reference documents and authoring templates are not skill entries.\n\n"
+        + "\n".join(f"- `{filename}`" for filename in files) + "\n",
+        encoding="utf-8",
+    )
+    print(f"Supplemental source skills included: {len(missing)}")
 
 # Country code → display name mapping
 COUNTRY_NAMES = {
@@ -504,9 +547,12 @@ def _check_file_content(filepath):
     with open(filepath, 'r', encoding='utf-8', errors='ignore') as fh:
         lines = fh.readlines()
     line_count = len(lines)
-    if line_count <= 50:
+    # A source-cited skill may mention a consolidated Act in its description.
+    # That word is not a retirement instruction. Only a document without skill
+    # frontmatter and with an explicit redirect heading is a redirect stub.
+    if line_count <= 50 and not ''.join(lines).startswith('---'):
         content = ''.join(lines[:20]).lower()
-        if 'consolidated' in content or 'redirect' in content:
+        if re.search(r'^#{1,6}\s+(?:redirect|moved|consolidated)\b', content, re.MULTILINE):
             return True, line_count
     return False, line_count
 
@@ -1324,6 +1370,11 @@ def main():
 
     print(f"\nTotal packages: {len(all_results)}")
     print("packages/manifest.json is deprecated and not written — index.json is the canonical inventory.")
+
+    # Preserve source-owned standards, global methods, deeper treaty corridors
+    # and special jurisdictions omitted by the old fixed bundle list.
+    if not us_only:
+        include_unshipped_sources()
 
     failures = validate_generated_frontmatter()
     if failures:
