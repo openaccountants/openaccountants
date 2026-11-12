@@ -10,23 +10,21 @@ description: >
   "franking credits refund", "substantiation", "do I need a receipt", "capital or revenue",
   "apportion private use", "small business concessions". It routes to the specialist guides
   rather than restating their rules.
-version: 0.2
+version: 0.3
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-20
+last_updated: 2026-11-12
 depends_on:
   - au-individual-return
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-reviewed_by: "Ryan Duguid"
-reviewed_on: 2026-11-03
-tier: 1
+tier: 2
 domain: income-tax
 ---
 
-# Australia Deductions, Offsets and Concessions v0.2
+# Australia Deductions, Offsets and Concessions v0.3
 
-## Australia Deductions, Offsets and Concessions v0.2
+## Australia Deductions, Offsets and Concessions v0.3
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -198,16 +196,53 @@ the rate for the year being prepared rather than carrying last year's forward.
 | --- | --- | --- |
 | Division 40 decline in value | Depreciating assets | Prime cost or diminishing value, over the asset's effective life. The Commissioner's effective life determination is a safe starting point |
 | Immediate deduction for low cost items | Items costing $300 or less used mainly to produce non-business income | Does not apply to a set, or to substantially identical items, that together cost more than $300 |
-| Instant asset write-off | Small business entities using the simplified depreciation rules | The limit is set per income year. It was $20,000 per asset for assets first used or installed ready for use between 1 July 2025 and 30 June 2026, for businesses with aggregated turnover under $10 million |
-| Small business general pool | Assets costing at or above the instant asset write-off limit | 15% in the first year, 30% each year after |
+| Instant asset write-off | Eligible small business entities choosing simplified depreciation, subject to exclusions and prior claims | Full statutory asset cost, adjusted for GST entitlements before private-use apportionment, must be strictly less than $20,000. Deduct only the taxable-use amount. Temporary threshold covers first taxable use or installation in 2025-26; the permanent threshold applies to specified first use or installation from 1 July 2026. [ITAA 1997 ss 328-175 and 328-180](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html), [ITTPA s 328-180(4)(d)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) and [No. 2 Act schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text) |
+| Small business general pool | Covered assets not individually deductible, including exactly $20,000, and continuing pools | Ordinary deduction: 30% of the opening pool balance plus 15% of taxable-purpose adjustable values for assets first used or installed ready for taxable use during the year, with separate rules for second-element costs. If the statutory amount before ordinary depreciation is positive and less than $20,000, deduct it instead and close the pool at zero. [ITAA 1997 ss 328-185, 328-190, 328-210 and 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) and [ITTPA s 328-180(6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | Division 43 capital works | Buildings and structural improvements | A fixed annual rate over a fixed period, claimed separately from Division 40 |
 | Division 40-880 | Certain business-related capital expenditure not deductible elsewhere | Spread over five years |
 | Car limit | Cars used for a business or income-producing purpose | Caps both the depreciation base and the GST credit. Look up the limit for the income year |
 
-**Confirm the instant asset write-off limit for the year being prepared.** The limit has changed
-repeatedly. As at 16 September 2026 the ATO had published the $20,000 limit for 2025-26; the limit
-for 2026-27 must be confirmed on the ATO instant asset write-off page before it is applied.
-[ATO, Instant asset write-off](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/depreciation-and-capital-expenses-and-allowances/simpler-depreciation-for-small-business/instant-asset-write-off)
+**Use the first taxable-use year.** The 2026 permanent threshold was enacted on 26 August 2026. Schedule 2 commenced on 1 October 2026 and item 15 applies to specified assets first used or installed ready for use from 1 July 2026; an acquisition date alone does not establish the year or permit a second deduction. The temporary 2025-26 provisions remain relevant to that year. Existing pools continue under section 328-220 after small business entity status or a later simplified-depreciation choice ceases; new assets cannot enter the pool until an eligible choosing year. See `au-individual-return.md` for the detailed cost, use, allocation and pool calculation. [No. 2 Act schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text), [ITAA 1997 ss 328-175 to 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html) and [ITTPA s 328-180](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
+
+**Worked example: strict cost boundary.** Assume eligible assets, the required simplified-depreciation choice, first taxable use in 2026-27, 100% taxable use and no other pool amounts. A $19,999 asset can qualify for the individual write-off. An asset costing exactly $20,000 enters the pool. Its pre-depreciation pool amount is not less than $20,000, so its 15% deduction is $3,000 and closing balance is $17,000. Do not write off that closing balance again in the same year.
+
+```oa-check
+name: Deductions guide distinguishes below and exactly 20000
+inputs:
+  below_cost: 19999
+  exact_cost: 20000
+  taxable_use_percent: 100
+  first_use_rate: 15
+steps:
+  - individual_deduction: pct(below_cost, taxable_use_percent)
+  - pre_depreciation_pool: pct(exact_cost, taxable_use_percent)
+  - pool_deduction: pct(pre_depreciation_pool, first_use_rate)
+  - closing_pool: pre_depreciation_pool - pool_deduction
+expected:
+  individual_deduction: 19999
+  pre_depreciation_pool: 20000
+  pool_deduction: 3000
+  closing_pool: 17000
+```
+
+**Worked example: full cost and low pool.** Assume the same eligibility and timing, no other pool amounts and a $30,000 asset used 60% for taxable purposes. Its full cost fails the individual less-than-$20,000 test. Its taxable-purpose amount of $18,000 enters the pool. The statutory pre-depreciation pool amount is positive and less than $20,000, so the pool deduction is $18,000 and closing balance is zero, instead of an ordinary 15% pool deduction.
+
+```oa-check
+name: Deductions guide keeps full cost separate from low pool value
+inputs:
+  full_cost: 30000
+  taxable_use_percent: 60
+steps:
+  - taxable_amount: pct(full_cost, taxable_use_percent)
+  - pre_depreciation_pool: taxable_amount
+  - low_pool_deduction: pre_depreciation_pool
+  - closing_pool: pre_depreciation_pool - low_pool_deduction
+expected:
+  taxable_amount: 18000
+  pre_depreciation_pool: 18000
+  low_pool_deduction: 18000
+  closing_pool: 0
+```
 
 ## Section 8 - Tax offsets
 
@@ -392,8 +427,13 @@ is outside the standard deduction, so each still reduces tax in full.
 - ATO, Tax rates: Australian resident,
   https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents
 
-Sources were checked on 16 September 2026. The working from home fixed rate and the instant asset
-write-off limit for 2026-27 had not been published at that date.
+Sources other than the selected capital-allowance update below were checked on 16 September 2026. The working from home fixed rate for 2026-27 had not been published at that earlier read date.
+
+Selected simplified-depreciation rules read 2026-11-12:
+
+- [ITAA 1997 ss 328-175, 328-180, 328-185, 328-190, 328-210 and 328-220](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html): eligibility, cost, allocation, ordinary rates, low-pool value and continuing pools.
+- [ITTPA 1997 s 328-180(4)(d) and (6)(e)](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html): temporary 2025-26 asset and pool thresholds.
+- [Tax Reform No. 2 Act 2026 schedule 2 item 15](https://www.legislation.gov.au/C2026A00071/asmade/text): application of the permanent threshold.
 
 ## Section 15 - Disclaimer
 
