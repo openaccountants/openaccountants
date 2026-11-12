@@ -1059,7 +1059,7 @@ Use available evidence first; ask only unanswered questions. Name and transactio
 
 ### Validation status
 
-This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structure. It supersedes v1.1 (April 2026, standalone monolithic skill). The Australian-specific content (BAS label mappings, rates, thresholds, GST-free food rules, input taxed categories) has been verified against the GST Act 1999, ATO guidance, and GST Regulations 2019.
+Version 2.5 retains the April 2026 structure. Verification covers only the dated source reads and executable examples described here. Whole-guide currency, accountant approval and deployment are not established.
 
 ## Sources
 
@@ -1100,7 +1100,7 @@ Undated background references (no read date asserted): Taxation Administration A
 1. The supplier pattern library in Section 3 covers the most common Australian counterparties but does not cover every local SME or regional brand. Add patterns as they emerge.
 2. The worked examples are drawn from a hypothetical IT consultant in Sydney. They do not cover hospitality, retail, construction, or agriculture specifically.
 3. The GST-free food table covers the most common items but Schedule 1 of the GST Act is detailed -- edge cases (e.g. specific bakery items, health food products) should be flagged [T2].
-4. Car limit and LCT thresholds are 2024-25 values. Verify annually as they are indexed.
+4. Car limit and LCT thresholds depend on the year. Use the applicable dated table and verify later years.
 5. The reverse charge section is not a complete decision procedure. Check every condition of the applicable route, including item 3 of s 84-5(1); fully creditable use alone does not establish an exemption.
 6. Wine Equalisation Tax and Luxury Car Tax are noted but not fully worked -- these are specialist areas.
 7. Red flag thresholds (AUD $5,000 single transaction, $500 tax-delta, $10,000 absolute position) are conservative starting values for a typical Australian self-employed client -- not empirically calibrated.
