@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-12T11:42:11+00:00",
+ "generated_at": "2026-11-12T13:16:17+00:00",
  "counts": {
-  "guides": 2369,
+  "guides": 2371,
   "jurisdictions": 260,
   "accountant_reviewed": 139
  },
@@ -3348,6 +3348,30 @@
    "name": "br-inss",
    "jurisdiction": "BR",
    "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-municipal-taxes",
+   "path": "skills/brazil/br-municipal-taxes.md",
+   "name": "br-municipal-taxes",
+   "jurisdiction": "BR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-regional-payroll",
+   "path": "skills/brazil/br-regional-payroll.md",
+   "name": "br-regional-payroll",
+   "jurisdiction": "BR",
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,

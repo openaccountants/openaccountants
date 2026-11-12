@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2264,
+ "count": 2266,
  "jurisdictions": [
   "AD",
   "AE",
@@ -2841,6 +2841,24 @@
    "name": "br-inss",
    "jurisdiction": "BR",
    "path": "skills/brazil/br-inss.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-municipal-taxes",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-municipal-taxes.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "br-regional-payroll",
+   "jurisdiction": "BR",
+   "path": "skills/brazil/br-regional-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
