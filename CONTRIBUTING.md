@@ -35,11 +35,11 @@ You don't need to be an accountant, and you don't need an account with us. Many 
 
 1. **Pick the work.** Find your country in [skills/COUNTRIES.md](skills/COUNTRIES.md), or take an open issue for it. Comment `taking` so nobody duplicates you. We do not cover Russia, Belarus, Cuba, Iran, North Korea or Syria (broad embargo), or Afghanistan, Central African Republic, DR Congo, Haiti, Iraq, Lebanon, Libya, Somalia, South Sudan, Sudan or Guinea-Bissau (UN Security Council sanctions); the list is [scripts/data/sanctioned.yml](scripts/data/sanctioned.yml), and the checks refuse files for them.
 2. **Check it doesn't exist.** One task in one country has one skill. Search [skills/REGISTER.csv](skills/REGISTER.csv). If it exists, improve it.
-3. **Write it** to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law, a `## Sources` section, two worked examples that recompute.
+3. **Write it** to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law, a `## Sources` section, and the worked examples required by its declared `type:`.
 4. **Run the checks:** `python3 scripts/validate-guides.py --changed-only` and `python3 scripts/check-examples.py --changed-only`.
 5. **Open a pull request.** There is nothing to sign: opening it means you accept the [contributor terms](CONTRIBUTOR-TERMS.md).
 
-Before merging, a separate reviewer (a person, or a separate AI agent) re-reads the law, checks every figure and recomputes both examples. Once merged, the skill goes live as **Built from the law**, and your GitHub name is in its history.
+Before merging, a separate reviewer (a person, or a separate AI agent) re-reads the law, checks every figure and recomputes every example required by its shape. An incomplete or sampled automated review is not that full review record. Once merged, the skill goes live as **Built from the law**, and your GitHub name is in its history.
 
 ## 2. Approve a skill (accountants)
 

@@ -27,7 +27,7 @@ vg = _load("validate_guides_deliverable", "validate-guides.py")
 deliver = _load("deliver_to_platform_deliverable", "deliver-to-platform.py")
 
 IFRS_DIR = "skills/global/financial-reporting/ifrs"
-SKILL = "---\nname: ifrs18-presentation\ndescription: x\ntier: 2\n---\n\n# IFRS 18\n"
+SKILL = "---\nname: ifrs18-presentation\ndescription: A complete fictional presentation skill for a test.\ntier: 2\n---\n\n# IFRS 18\n"
 
 
 def problems(files, sizes=None):
@@ -73,6 +73,20 @@ class FileNameTest(unittest.TestCase):
             "skills/REGISTER.md": "# Register\n",
             "docs/Some Notes": "outside skills/",
         }), [])
+
+
+class DescriptionTest(unittest.TestCase):
+    def test_short_description_fails_before_website_delivery(self):
+        rel = f"{IFRS_DIR}/ifrs18-presentation.md"
+        found = problems({rel: SKILL.replace("A complete fictional presentation skill for a test.", "The Dutch owner-occupied home scheme")})
+        self.assertEqual(len(found), 1)
+        self.assertIn("36 characters", found[0])
+        self.assertIn("at least 40", found[0])
+
+    def test_exact_minimum_and_folded_yaml_description_pass(self):
+        rel = f"{IFRS_DIR}/ifrs18-presentation.md"
+        for value in ("x" * 40, ">-\n  A complete fictional\n  presentation skill for a test."):
+            self.assertEqual(problems({rel: SKILL.replace("A complete fictional presentation skill for a test.", value)}), [])
 
 
 class SizeTest(unittest.TestCase):

@@ -98,7 +98,7 @@ HEADING_ALIASES = {
     "Two worked examples that recompute": {"Worked examples"},
 }
 #: The second canonical set (the October method shape, ~250 skills). Six required headings, in
-#: order; three optional ones may sit between them. docs/skill-template.md line 7 lists both
+#: order; optional headings may sit between them. docs/skill-template.md line 7 lists both
 #: sets; the shape test of 31 Oct 2026 measured them within noise of each other.
 METHOD_HEADINGS = [
     "Scope",
@@ -106,12 +106,12 @@ METHOD_HEADINGS = [
     "The method, step by step",
     "Worked cases",
     "When to refuse or refer",
-    "Talk to a verified accountant",
+    "Sources",
 ]
 METHOD_ALIASES = {"Scope": {"Scope and who this is for"}}
 
 #: Skills that keep the general template (accounting packs). The checks still
-#: run on them, but the caller treats a failure as a warning, never an error.
+#: run on them with the same fixed-core admission rules as other domains.
 GENERAL_TEMPLATE_CATEGORIES = {
     "bookkeeping", "invoicing", "financial-statements", "financial-reporting", "tax-optimization",
 }
@@ -161,6 +161,16 @@ def read_frontmatter(text):
         if m:
             fields[key] = _build_index.clean_value(m.group(1))
     return {k: v for k, v in fields.items() if v is not None}
+
+
+def admission_content_unchanged(old_text, new_text):
+    """Approval-only edits may inherit legacy warnings; scope/date/shape edits may not."""
+    import label_boilerplate
+    if not label_boilerplate.same_content(old_text, new_text):
+        return False
+    old, new = read_frontmatter(old_text), read_frontmatter(new_text)
+    keys = ("tax_year", "tax_year_notes", "domain", "type", "standard", "effective_date", "checked_on", "jurisdiction")
+    return all(old.get(key) == new.get(key) for key in keys)
 
 
 def rel_path(path):
@@ -282,7 +292,9 @@ def check_tax_year_current(path, text, fm):
     """(a) the skill says it is current, the way its domain dates things (docs/domains.yml).
 
     Tax, and every skill with no active non-tax domain: ``tax_year`` is the current
-    year, or ``tax_year_notes`` explains the label. Another active domain: the keys
+    year, or an explicit adjacent-year period in ``tax_year_notes`` starts in
+    ``tax_year`` and includes the current year. A note alone cannot refresh old
+    figures. Another active domain: the keys
     in its ``date_field`` are present (``standard`` and ``effective_date`` for an
     accounting or auditing standard, ``checked_on`` for the rest); a key ending in
     ``_date`` or ``_on`` is a YYYY-MM-DD date, and an ``_on`` date (the day a person
@@ -296,9 +308,31 @@ def check_tax_year_current(path, text, fm):
         return ["no tax_year"]
     if str(year).strip() == str(CURRENT_TAX_YEAR):
         return []
-    if fm.get("tax_year_notes"):
+    if _current_tax_period(year, fm.get("tax_year_notes")):
         return []
+    if fm.get("tax_year_notes"):
+        return [f"tax_year {year}: tax_year_notes must name an adjacent-year period starting in {year} and including {CURRENT_TAX_YEAR}"]
     return [f"tax_year {year} is not {CURRENT_TAX_YEAR} and no tax_year_notes"]
+
+
+def _current_tax_period(year, notes):
+    """Recognise fiscal labels such as 2025-26, 2025/2026 or FY 2025–2026.
+
+    Dates of editing, provenance and a mention of a different year's figures do
+    not establish the period covered. This is a label check, not a legal review.
+    """
+    if not str(year).isdigit():
+        return False
+    for match in re.finditer(r"(?<!\d)(\d{4})\s*[-–—/]\s*(\d{4}|\d{2})(?!\d)", str(notes or "")):
+        start = int(match.group(1))
+        end = int(match.group(2))
+        if end < 100:
+            end += (start // 100) * 100
+            if end < start:
+                end += 100
+        if start == int(year) and end == start + 1 and start <= CURRENT_TAX_YEAR <= end:
+            return True
+    return False
 
 
 def _domain_date_problems(domain, fields, fm):
@@ -390,7 +424,7 @@ def rates_row_counts(text):
 
 def check_rates_rows_sourced(path, text, fm):
     """(c) every row of the rates table is linked to an official URL (``same``
-    inherits the row above) or explicitly marked unverified. An unmarked row fails."""
+    inherits the row above) and confirmed. An unverified row stays visible in audit counts but fails as guidance."""
     c = rates_row_counts(text)
     if not c["total"]:
         shape = skill_type(fm)
@@ -400,12 +434,15 @@ def check_rates_rows_sourced(path, text, fm):
         if domain and domain.get("rates_table") == "optional":
             return []
         return ["no rates table"]
+    problems = []
     if c["missing"]:
-        return [
+        problems.append(
             f"{c['missing']} of {c['total']} {c['where']} row(s) without a URL or an unverified mark "
             f"({c['linked_pct']:g}% linked, {c['unverified_pct']:g}% unverified)"
-        ]
-    return []
+        )
+    if c["unverified"]:
+        problems.append(f"{c['unverified']} unverified {c['where']} row(s); remove from usable guidance and list under Sources: Not yet confirmed")
+    return problems
 
 
 def _heading_set_problems(titles, required, aliases):
@@ -447,13 +484,19 @@ def check_canonical_headings(path, text, fm):
     return [("method set: " if uses_method else "reference set: ") + p for p in (method if uses_method else ref)]
 
 
-def check_two_oa_checks(path, text, fm):
-    """(e) enough ```oa-check blocks (worked examples CI recomputes): two, or the number the
-    declared ``type:`` sets in SKILL_TYPES."""
+def required_example_count(text, fm):
+    """The shape's example requirement, shared by admission and arithmetic CLI."""
     shape = skill_type(fm)
     need = SKILL_TYPES[shape]["min_examples"] if shape else 2
     if need == 0 and ZERO_EXAMPLE_GUARD_RE.search(text):
-        need = 1  # a router that holds deadlines, rates or worked cases is a tax skill: it needs an example
+        need = 1
+    return need
+
+
+def check_two_oa_checks(path, text, fm):
+    """(e) enough ```oa-check blocks (worked examples CI recomputes): two, or the number the
+    declared ``type:`` sets in SKILL_TYPES."""
+    need = required_example_count(text, fm)
     n = len(OA_CHECK_BLOCK_RE.findall(text))
     return [] if n >= need else [f"{n} oa-check block(s), need {need}"]
 
@@ -743,7 +786,7 @@ def check_source_hosts(path, text, fm):
     return problems
 
 
-def source_evidence_regressions(old_text, new_text):
+def source_evidence_regressions(old_text, new_text, path=None, fm=None):
     """Objective new source defects only; unchanged legacy defects stay advisory.
 
     Inherited ``same`` rows retain the source status above them. Unknown official
@@ -754,13 +797,21 @@ def source_evidence_regressions(old_text, new_text):
         previous = None
         for header, cells in _rates_rows(text)[1]:
             status = _row_status(header, cells, previous)
-            if status == "missing":
+            if status == "unverified":
+                found["unverified figure in usable guidance; move to Sources: Not yet confirmed: " + " | ".join(cells)] += 1
+            elif status == "missing":
                 found["rate row without a source URL or unverified mark: " + " | ".join(cells)] += 1
             previous = (header, status)
         for line, urls in _source_entries(text):
             barred = sorted({_host(url) for url in urls if any(_host_is(_host(url), host) for host in SECONDARY_HOSTS)})
             if barred:
                 found["secondary source citation: " + line.strip()] += 1
+            domain = applied_domain(path, fm)[0] if path is not None else None
+            if domain:
+                unofficial = sorted({_host(url) for url in urls
+                                     if _host(url) and not domains.host_is_official(_host(url), domain["id"])})
+                if unofficial:
+                    found[f"not an official source for domain {domain['id']}: " + line.strip()] += 1
         return found
     return list((defects(new_text) - defects(old_text)).elements())
 
