@@ -10,6 +10,12 @@ Tax is the first domain; [domains.yml](domains.yml) lists the others (financial 
 
 A skill is a set of instructions that lets an AI do one tax job correctly, in one place, for one tax year, and shows who stands behind it.
 
+The country or state folder and the declared jurisdiction must agree. For
+example, `skills/us/states/id/` is Idaho (`US-ID`), while `ID` is Indonesia.
+An explicit path/code mismatch blocks a PR changing that skill, for every
+domain and shape, including metadata-only edits. Body-language and currency
+heuristics remain advisory: they are clues for review, not proof of identity.
+
 Every part of a skill answers one of four questions. A field that answers none of them does not belong.
 
 | Question | Variables |

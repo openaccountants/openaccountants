@@ -108,6 +108,19 @@ class Jurisdiction(unittest.TestCase):
         self.assertEqual(sc.check_jurisdiction_body(self.path("india/in-x.md"), body, {"jurisdiction": "IN"}), [])
         self.assertEqual(sc.check_jurisdiction_body(self.path("portugal/pt-x.md"), "IRS " * 9, {"jurisdiction": "PT"}), [])
 
+    def test_idaho_cannot_be_labelled_as_indonesia(self):
+        path = self.path("us/states/id/id-income-tax.md")
+        self.assertEqual(sc.check_jurisdiction_path(path, "", {"jurisdiction": "ID"}),
+                         ["path says US-ID, frontmatter says ID"])
+        self.assertEqual(sc.check_jurisdiction_path(path, "", {"jurisdiction": "US-ID"}), [])
+        self.assertEqual(sc.check_jurisdiction_path(self.path("indonesia/id-x.md"), "", {"jurisdiction": "ID"}), [])
+
+    def test_path_identity_blocks_every_changed_skill_type(self):
+        for scope in ["tax", "general", "other"]:
+            for metadata_only in [True, False]:
+                self.assertTrue(validate.is_pr_error("jurisdiction_path", scope, True, metadata_only))
+        self.assertFalse(validate.is_pr_error("jurisdiction_body", "tax", True, False))
+
 
 class FalklandRegistry(unittest.TestCase):
     def test_falkland_pack_has_a_named_coverage_route(self):
