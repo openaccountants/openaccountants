@@ -94,7 +94,7 @@ domain: income-tax
 | --- | --- | --- |
 | Home office -- fixed rate method | 70 cents per hour (2024-25 and 2025-26) | T2 -- method choice, hours, and records/substantiation required |
 | Motor vehicle -- cents per km method | 88 cents per km (max 5,000 km) | T2 -- method choice and business-km support required |
-| Instant asset write-off (small business) | Eligible asset cost strictly less than $20,000; taxable-use deduction only | T1 only after eligibility, simplified-depreciation choices, first-use dates and cost are confirmed; otherwise escalate |
+| Instant asset write-off (small business) | Eligible asset cost strictly less than $20,000; taxable-use deduction only | T1 only after eligibility, simplified-depreciation choices, first-use dates and cost are confirmed; otherwise escalate. [ITAA 1997, ss 328-180, 328-185 and 328-210](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html); [2025-26 thresholds, ITTPA s 328-180](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | Superannuation (deductible personal contribution) | Up to concessional cap ($30,000 in 2025-26; $32,500 in 2026-27) | T1 rate-cap lookup; notice of intent must be lodged before claiming |
 
 ### Conservative Defaults [T1]
@@ -175,8 +175,8 @@ domain: income-tax
 | PHONE, TELSTRA, OPTUS, VODAFONE | Business expense -- telecom | T2 | Business portion only |
 | INTERNET, NBN | Business expense -- telecom | T2 | Business portion only (or included in home office fixed-rate method) |
 | TRAINING, COURSE, SELF-EDUCATION | Self-education (D4) | T1 | Deductible if directly related to current income-producing activity. NOT deductible if for new career. |
-| COMPUTER, LAPTOP, EQUIPMENT (under $20,000) | Potential instant asset write-off | T1 | Confirm eligibility, required simplified-depreciation choices and first taxable use; test full statutory cost, then deduct only the taxable-purpose amount |
-| COMPUTER, LAPTOP, EQUIPMENT ($20,000 or more) | Small business pool or applicable depreciation regime | T1 | If simplified depreciation applies, allocate covered assets to its pool and check the low-pool-value rule; otherwise apply the relevant Division 40 rules |
+| COMPUTER, LAPTOP, EQUIPMENT (under $20,000) | Potential instant asset write-off | T1 | Confirm eligibility, required simplified-depreciation choices and first taxable use; test full statutory cost, then deduct only the taxable-purpose amount. [ITAA 1997, ss 328-180, 328-185 and 328-210](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html); [2025-26 thresholds, ITTPA s 328-180](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
+| COMPUTER, LAPTOP, EQUIPMENT ($20,000 or more) | Small business pool or applicable depreciation regime | T1 | If simplified depreciation applies, allocate covered assets to its pool and check the low-pool-value rule; otherwise apply the relevant Division 40 rules. [ITAA 1997, ss 328-180, 328-185 and 328-210](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html); [2025-26 thresholds, ITTPA s 328-180](https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
 | SUPER CONTRIBUTION, SUNSUPER, AUSTRALIAN SUPER | Deduction (Item D12) | T1 | Personal deductible super contribution up to the concessional cap ($30,000 in 2025-26; $32,500 in 2026-27). Must lodge notice of intent. |
 | ATO TAX, INCOME TAX, PAYG INSTALMENT | EXCLUDE | Not deductible | Tax payments are not deductions |
 | GST PAYMENT, BAS PAYMENT | EXCLUDE from income tax | T1 | GST is separate. Report net of GST if registered. |
