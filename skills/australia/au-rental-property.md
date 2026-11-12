@@ -1,7 +1,7 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.5"
+version: "1.6"
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-11-12
@@ -17,9 +17,9 @@ domain: income-tax
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.5
+## Australia Rental Property -- Income & Deductions Skill v1.6
 
-Australia Rental Property -- Income & Deductions Skill v1.5
+Australia Rental Property -- Income & Deductions Skill v1.6
 
 ## Section 1 -- Quick Reference
 
@@ -36,7 +36,7 @@ Australia Rental Property -- Income & Deductions Skill v1.5
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.5 |
+| Skill version | 1.6 |
 
 ### Select the income year before calculating
 
@@ -204,7 +204,26 @@ expected:
 | Tax agent fee (rental schedule portion) | Deductible |  |
 | Travel related to residential rental accommodation | Generally denied for a non-business individual under s 26-31 | The business test and specified entity exceptions require checking; see below. [ITAA 1997, s 26-31](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html) |
 
-- **Borrowing expenses** -- Loan establishment fees, lenders mortgage insurance, valuation fees and stamp duty on the mortgage are borrowing expenses, not interest. If they total more than $100, spread them over five years or the loan term, whichever is shorter; $100 or less is deductible in the year incurred.  _([ITAA 1997 (Cth) s 25-25](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/25-25); [ATO, Common property expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/common-property-expenses))_
+- **Borrowing expenses** -- Loan establishment fees, lenders mortgage insurance, loan valuation fees and mortgage stamp duty may qualify under s 25-25. Apply the $100 test to the combined income-producing amounts or proportions of borrowing expenditure incurred in the income year, not to one fee or the unadjusted private-use cost. A qualifying total of $100 or less is deductible in that year. Otherwise use the statutory day-based calculation over the shortest of the original loan term, the actual borrowing-to-repayment period and 5 years. Adjust for part years and income-producing use; an early repayment can bring forward the eligible remaining deduction. Apply the selected income year's rental-loss restrictions separately. [ITAA 1997, s 25-25(1)-(6)](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/25-25).
+
+For example, a $150 borrowing fee with 50% income-producing use gives a $75 qualifying amount. Assuming no other qualifying borrowing expenditure in that income year, s 25-25(6) allows that $75 in the year incurred. At the boundary, a $200 fee with the same use gives $100; a $202 fee gives $101 and falls outside that immediate-deduction exception.
+
+```oa-check
+name: Borrowing expense income-use threshold
+inputs:
+  borrowing_fee: 150
+  boundary_fee: 200
+  above_boundary_fee: 202
+  income_use_percent: 50
+steps:
+  - qualifying_amount: pct(borrowing_fee, income_use_percent)
+  - boundary_qualifying_amount: pct(boundary_fee, income_use_percent)
+  - above_boundary_qualifying_amount: pct(above_boundary_fee, income_use_percent)
+expected:
+  qualifying_amount: 75
+  boundary_qualifying_amount: 100
+  above_boundary_qualifying_amount: 101
+```
 
 - **Travel exceptions** -- Section 26-31 does not deny otherwise eligible travel necessarily incurred in carrying on a business to produce assessable income. Its entity exception applies if, at any time in the income year, the taxpayer is a corporate tax entity, a non-SMSF superannuation plan, a managed investment trust, a public unit trust within s 102P or a unit trust/partnership whose members all meet the specified categories at that time. Establish the actual business/entity facts and ordinary deduction requirements. [ITAA 1997, s 26-31(1)-(2)](https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html).
 
@@ -214,16 +233,16 @@ expected:
 
 | Characteristic | Repair (immediate deduction) | Improvement (capitalise) |
 | --- | --- | --- |
-| Restores to original condition | Yes | No |
-| Replaces with substantially same materials | Yes | No -- better quality/different character |
-| Initial repair on acquisition | NOT deductible (capital) | Capital -- add to cost base |
+| Restores the efficiency of an existing function without changing its character | May be a repair, including minor incidental improvement | Substantial improvement or a new/additional function is capital |
+| Uses the same, different or modern materials | Material choice alone does not determine the result; assess function and the relevant entirety | Different or better materials do not automatically make the work an improvement |
+| Remedies defects, damage or deterioration present on acquisition | Initial repair expenditure is capital under s 25-10; eligible later deterioration may be separable under TR 97/23 paragraphs 63-66 | Check Division 40, Division 43 and CGT cost-base eligibility for the actual work |
 | Replaces a roof | Can be a repair where it restores part of the building without an improvement; the roof is not automatically the relevant entirety | Initial repairs, improvements and replacement of the relevant entirety are capital; apply [TR 97/23](https://www.ato.gov.au/law/view/document?docid=TXR/TR9723/NAT/ATO/00001) to the facts |
 | Example: patching cracked tiles | Repair | -- |
-| Example: replacing all tiles with stone | -- | Improvement |
+| Example: replacing all tiles with stone | Assess the actual effect; different material alone is not decisive | Capital if the work substantially improves the property or replaces the relevant entirety |
 | Example: replacing broken tap with same model | Repair | -- |
-| Example: full kitchen renovation | -- | Improvement |
+| Example: full kitchen renovation | Actual repair work may be deductible if independently separable and its cost accurately quantified | Capital improvements and inseparable repair/improvement work are not deductible under s 25-10 |
 
-- **Identify the entirety and the cause** -- For each repair, identify the asset or entirety repaired, its condition when acquired, the cause of the deterioration and what the work changed. Modern materials can restore an asset without making every job an improvement, and an itemised invoice that separates repair from capital work supports the split.  _([ATO, Repair and maintenance expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/repair-and-maintenance-expenses))_
+- **Identify the entirety and the cause** -- Apply the income-producing-use and capital tests before claiming any example above. Identify the relevant entirety, its condition when acquired, the cause of the deterioration and the work's effect on function and character. A first repair after acquisition is not necessarily an initial repair. Separate actual repair costs from improvement costs only where the work can be separated and its cost accurately quantified; there is no deduction for a notional repair that was not carried out. [TR 97/23, paragraphs 4-5, 16, 35, 43-57 and 59-66](https://www.ato.gov.au/law/view/document?docid=TXR/TR9723/NAT/ATO/00001).
 
 ### 2.5 Division 40 -- Plant & Equipment Depreciation
 
@@ -289,18 +308,18 @@ expected:
 ### 2.7 Interest Deductibility
 
 - **Nexus requirement** -- The loan must have a clear nexus to producing rental income. Key rules follow in the table.
-- **Mixed-purpose loans and redraws** -- A private redraw creates a private component of the loan, and later repayments reduce the rental and private components proportionately; the owner cannot direct every repayment to the private debt. Interest follows the use of the borrowed money, so trace each drawdown and keep the split current.  _([ATO, Interest expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses); [TR 2000/2](https://www.ato.gov.au/law/view/document?docid=TXR/TR20002/NAT/ATO/00001))_
+- **Mixed-purpose loans and redraws** -- Each redraw is a separate borrowing whose interest follows the use of the funds. Ordinary principal repayments on a mixed-purpose debt reduce its rental and private portions proportionately. TR 2000/2 recognises exceptions: recouped borrowed funds repaid to the account reduce the portion previously used for that purpose, with any excess over that debt portion reducing the remaining uses proportionately; qualifying refinancing into 2 separate accounts or sub-accounts for amounts equivalent to the existing income-producing and private portions preserves those respective purposes. Trace each drawdown, recoupment, repayment and refinancing. [TR 2000/2, paragraphs 15-18 and 43-47](https://www.ato.gov.au/law/view/document?docid=TXR/TR20002/NAT/ATO/00001).
 
 **Interest Deductibility Scenarios**
 
 | Scenario | Deductible? |
 | --- | --- |
-| Loan to purchase rental property | Yes -- full interest |
-| Loan to renovate rental property | Yes -- full interest |
+| Loan to purchase rental property | Income-producing portion only, subject to the nexus, private-use and year-specific restrictions |
+| Loan to renovate rental property | Income-producing portion only; apply the pre-income conditions below where relevant |
 | Refinanced loan (same purpose, same or lower amount) | Yes |
 | Loan redrawn for personal use | No -- apportioned |
 | Line of credit (mixed purpose) | Must trace each drawdown |
-| Interest on loan while property vacant (available for rent) | Yes |
+| Interest on loan while property vacant (available for rent) | May be deductible if the income nexus continues; apply private-use and vacant-land restrictions below |
 | Interest before rent starts, including construction/renovation | May be deductible before the property is available for rent; test the income nexus, purpose and applicable restrictions below. Do not automatically defer or capitalise it. [TR 2004/4, paragraphs 8-9](https://www.ato.gov.au/law/view/document?DocID=TXR/TR20044/NAT/ATO/00001&PiT=99991231235958) |
 
 - **Pre-income interest** -- TR 2004/4 paragraph 9 requires that the expense is not too soon/preliminary, is not private or domestic, retains the necessary connection despite the period before income, is incurred with the income-producing end in view and is accompanied by continuing efforts towards that end. Borrowing for a capital asset does not by itself make the interest capital. Eligible renovation-loan interest can start when borrowed; changed private purpose can end deductibility. [TR 2004/4, paragraphs 8-9](https://www.ato.gov.au/law/view/document?DocID=TXR/TR20044/NAT/ATO/00001&PiT=99991231235958) and [ATO, interest on loans](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/rental-expenses).
@@ -653,10 +672,13 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Sources
 
-These sources support selected receipt-year, travel, asset, interest, capital works, 2027 restriction, disposal/foreign-resident and private/holiday-use boundaries in Sections 2.1-2.3, 2.5-2.9 and 6.1-6.3 and their cross-references. They do not establish the currency of every other rule or return field in this guide.
+These sources support selected receipt-year, borrowing expense, repair, travel, asset, interest, capital works, 2027 restriction, disposal/foreign-resident and private/holiday-use boundaries in Sections 2.1-2.9 and 6.1-6.3 and their cross-references. They do not establish the currency of every other rule or return field in this guide.
 
 | Source and reading scope | URL | Read on |
 | --- | --- | --- |
+| ITAA 1997, s 25-25(1)-(6), corroborated against compilation 268 volume 1. Read the aggregate income-producing $100 threshold, day-based method, loan-period definition, private-use apportionment and early repayment. | https://www.ato.gov.au/law/view/document?docid=PAC/19970038/25-25 | 2026-11-12 |
+| ATO TR 97/23. Read selected paragraphs 4-5, 16, 35, 43-57 and 59-66 for function/materials, separable actual repairs, initial repairs and later deterioration. | https://www.ato.gov.au/law/view/document?docid=TXR/TR9723/NAT/ATO/00001 | 2026-11-12 |
+| ATO TR 2000/2. Read paragraphs 15-18 and 43-47 for ordinary proportional repayments, recouped-fund and refinancing exceptions and interest tracing. | https://www.ato.gov.au/law/view/document?docid=TXR/TR20002/NAT/ATO/00001 | 2026-11-12 |
 | ITAA 1997 compilation 268, volume 3. Read for selected operative cost base, proceeds, discount, foreign-resident market-value and absence provisions, including ss 110-25, 110-35, 110-38(8A), 110-45, 110-55 including (9JA), 115-100, 115-105, 115-115, 116-20 and 118-145. The general individual/trust discount is time-limited to events before 1 July 2027. | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2026-11-12 |
 | ATO capital proceeds. Read for money/property proceeds, market-value substitutions and specified reductions. | https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/capital-proceeds-from-disposing-of-assets | 2026-11-12 |
 | ATO cost base. Read for the 5 elements, buying/selling incidental costs and reduced cost base differences. | https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cost-base-of-asset | 2026-11-12 |
