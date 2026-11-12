@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-12T11:42:11+00:00",
+ "generated_at": "2026-11-12T21:28:57+00:00",
  "counts": {
-  "guides": 2369,
-  "jurisdictions": 260,
-  "accountant_reviewed": 139
+  "guides": 2373,
+  "jurisdictions": 259,
+  "accountant_reviewed": 138
  },
  "guides": [
   {
@@ -755,12 +755,12 @@
    "path": "skills/argentina/ar-social-contributions.md",
    "name": "ar-social-contributions",
    "jurisdiction": "AR",
-   "category": null,
-   "tier": 1,
+   "category": "payroll",
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Maria Valeria Benvenuti",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "ar-tax-overview",
@@ -3355,6 +3355,54 @@
    "last_updated": "2026-11-11"
   },
   {
+   "slug": "br-jurisdiction-router",
+   "path": "skills/brazil/br-jurisdiction-router.md",
+   "name": "br-jurisdiction-router",
+   "jurisdiction": "BR",
+   "category": "orchestrator",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-municipal-taxes",
+   "path": "skills/brazil/br-municipal-taxes.md",
+   "name": "br-municipal-taxes",
+   "jurisdiction": "BR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-regional-incentives",
+   "path": "skills/brazil/br-regional-incentives.md",
+   "name": "br-regional-incentives",
+   "jurisdiction": "BR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-regional-payroll",
+   "path": "skills/brazil/br-regional-payroll.md",
+   "name": "br-regional-payroll",
+   "jurisdiction": "BR",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "br-return-assembly",
    "path": "skills/brazil/br-return-assembly.md",
    "name": "br-return-assembly",
@@ -3370,6 +3418,18 @@
    "slug": "br-simples-nacional",
    "path": "skills/brazil/br-simples-nacional.md",
    "name": "br-simples-nacional",
+   "jurisdiction": "BR",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "br-state-tax-profiles",
+   "path": "skills/brazil/br-state-tax-profiles.md",
+   "name": "br-state-tax-profiles",
    "jurisdiction": "BR",
    "category": "international",
    "tier": 2,
@@ -3435,8 +3495,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "brazil-transfer-pricing",
@@ -9713,18 +9773,6 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "dtt-summary",
-   "path": "skills/global/cross-border/treaty-corridors/eg-ae/dtt-summary.md",
-   "name": "eg-ae-dtt-corridor",
-   "jurisdiction": "EG-AE",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-08-02"
   },
   {
    "slug": "dtt-summary",
