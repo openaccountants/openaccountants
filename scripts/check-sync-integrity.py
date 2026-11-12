@@ -879,6 +879,42 @@ def bot_authorship_findings(repo: Path, base: str, head: str) -> list[Finding]:
     return findings
 
 
+
+def declared_coverage_withdrawal(repo: Path, base: str, head: str | None, change: Change) -> bool:
+    """A committed audit deletion with an exact prior blob and coverage decision.
+
+    This is a reviewable withdrawal declaration, not proof of human approval.
+    Maintainers still review the policy and manifest. Exporter sync, renames,
+    uncommitted removals and all ordinary deletions remain blocked.
+    """
+    if head is None or change.status != "D" or not change.before_path:
+        return False
+    try:
+        import yaml
+        manifest = json.loads(read_revision_file(repo, head, "docs/coverage-withdrawals.json") or "{}")
+        policy = yaml.safe_load(read_revision_file(repo, head, "scripts/data/sanctioned.yml") or "") or {}
+        withdrawals = manifest.get("withdrawals", [])
+        excluded = {(c["code"], c["folder"]) for c in policy.get("countries", [])}
+        matches = []
+        for entry in withdrawals:
+            code, folder = entry.get("code"), entry.get("folder")
+            if (code, folder) not in excluded or not isinstance(folder, str):
+                continue
+            if not entry.get("decided_by") or not entry.get("reason"):
+                continue
+            date.fromisoformat(entry["decided_on"])
+            files = entry.get("files", [])
+            paths = [row["path"] for row in files]
+            if len(paths) != len(set(paths)) or any(not path.startswith("skills/" + folder + "/") for path in paths):
+                continue
+            for row in files:
+                if row["path"] == change.before_path and row.get("previous_blob") == revision_blob(repo, base, change.before_path):
+                    matches.append(row)
+        return len(matches) == 1
+    except (ValueError, TypeError, KeyError, AttributeError, yaml.YAMLError):
+        return False
+
+
 def run_integrity_check(
     repo: Path,
     base: str,
@@ -911,6 +947,10 @@ def run_integrity_check(
 
         guide_changes.append(change)
         if change.status in {"D", "R"} or (before_is_guide and not after_is_guide):
+            if mode == "audit" and declared_coverage_withdrawal(repo, base, head, change):
+                findings.append(Finding("notice", "declared-coverage-withdrawal", change.display_path,
+                                        "coverage exclusion and exact prior Git blob recorded; maintainer review required"))
+                continue
             severity = "error" if mode == "sync" or strict_metadata else "warning"
             findings.append(
                 Finding(
