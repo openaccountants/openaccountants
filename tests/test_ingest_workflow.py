@@ -110,7 +110,8 @@ raise SystemExit(module.main(sys.argv[2:]))
                   for line in result.stderr.splitlines() if line.startswith("CAPTURED_BODY=")]
         self.assertEqual(len(bodies), 1)
         self.assertEqual(bodies[0]["headSha"], self.git("rev-parse", "HEAD"))
-        self.assertEqual(bodies[0]["paths"], ["skills/mt/example.md", "skills/mt/new.md", "skills/mt/renamed.md"])
+        self.assertEqual(bodies[0]["paths"], ["skills/mt/example.md", "skills/mt/new.md", "skills/mt/old-name.md", "skills/mt/removed.md", "skills/mt/renamed.md"])
+        self.assertEqual(bodies[0]["deletedPaths"], ["skills/mt/old-name.md", "skills/mt/removed.md"])
         self.assertEqual(bodies[0]["authors"][0]["email"], "alice@example.test")
         self.assertNotIn("synthetic-test-value", result.stdout + result.stderr)
 
@@ -125,7 +126,8 @@ raise SystemExit(module.main(sys.argv[2:]))
         bodies = [json.loads(line.removeprefix("CAPTURED_BODY="))
                   for line in result.stderr.splitlines() if line.startswith("CAPTURED_BODY=")]
         self.assertEqual(bodies[0]["headSha"], self.git("rev-parse", "HEAD"))
-        self.assertEqual(bodies[0]["paths"], ["skills/mt/example.md", "skills/mt/new.md", "skills/mt/renamed.md"])
+        self.assertEqual(bodies[0]["paths"], ["skills/mt/example.md", "skills/mt/new.md", "skills/mt/old-name.md", "skills/mt/removed.md", "skills/mt/renamed.md"])
+        self.assertEqual(bodies[0]["deletedPaths"], ["skills/mt/old-name.md", "skills/mt/removed.md"])
 
     def test_queued_event_uses_the_actual_checkout_head(self):
         result = self.run_workflow(stale_event_head=True)
@@ -228,13 +230,30 @@ class DeliveryPlanTests(GitFixture, unittest.TestCase):
         self.commit({"skills/mt/committer-bot.md": "bot"}, committer=delivery.SYNC_BOT)
         self.assertEqual(self.plan()[0]["paths"], ["skills/mt/human.md"])
 
-    def test_removed_and_non_skill_paths_are_not_delivered(self):
+    def test_removed_skills_are_delivered_but_non_skill_paths_are_not(self):
         self.commit({"skills/mt/removed.md": "old"})
         self.commit({"skills/mt/removed.md": None, "skills/mt/README.md": "index",
                      "skills/mt/references.md": "references", "skills/templates/a.md": "template",
                      "skills/_templates/b.md": "template", "skills/root.md": "index",
                      "skills/mt/real.md": "skill"})
-        self.assertEqual(self.plan()[0]["paths"], ["skills/mt/real.md"])
+        self.assertEqual(self.plan()[0]["paths"], ["skills/mt/real.md", "skills/mt/removed.md"])
+        self.assertEqual(self.plan()[0]["deletedPaths"], ["skills/mt/removed.md"])
+
+    def test_deletion_only_range_still_delivers_a_withdrawal(self):
+        before = self.commit({"skills/mt/retired.md": "old"})
+        head = self.commit({"skills/mt/retired.md": None})
+        self.assertEqual(self.plan(before)[0], {
+            "headSha": head, "paths": ["skills/mt/retired.md"],
+            "deletedPaths": ["skills/mt/retired.md"],
+            "authors": [delivery.author("Alice Writer", "alice@example.test")],
+        })
+
+    def test_a_readded_file_is_never_sent_as_a_withdrawal(self):
+        self.commit({"skills/mt/readded.md": "old"})
+        self.commit({"skills/mt/readded.md": None})
+        self.commit({"skills/mt/readded.md": "new"})
+        self.assertEqual(self.plan()[0]["paths"], ["skills/mt/readded.md"])
+        self.assertNotIn("deletedPaths", self.plan()[0])
 
     def test_sparse_or_dirty_working_copy_does_not_hide_a_committed_file(self):
         self.commit({"skills/mt/a.md": "skill"})
@@ -318,6 +337,12 @@ class DeliveryVerificationTests(unittest.TestCase):
         self.assertTrue(result)
         self.assertEqual([call.args[0] for call in post.call_args_list], [delivery.PLATFORM, delivery.PLATFORM + "/verify", delivery.PLATFORM + "/verify"])
         sleep.assert_called_once_with(2)
+
+    def test_withdrawal_must_be_verified_with_the_same_deleted_paths(self):
+        self.batch["deletedPaths"] = self.batch["paths"]
+        result, post, _ = self.run_delivery(self.reply("match"))
+        self.assertTrue(result)
+        self.assertEqual(post.call_args_list[1].args[1]["deletedPaths"], self.batch["deletedPaths"])
 
     def test_pending_timeout_is_a_failure(self):
         result, _, sleep = self.run_delivery(*[self.reply("pending")] * 3)

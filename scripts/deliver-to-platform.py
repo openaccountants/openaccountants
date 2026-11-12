@@ -68,8 +68,8 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int 
                        check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         revision_range = f"{since_sha}..{head_sha}"
 
-    # Read trees, not working-copy files: a sparse checkout and a later deletion
-    # must not hide a valid path or deliver a file absent at the requested SHA.
+    # Read committed trees, never the working copy. A missing source is a
+    # withdrawal, not a path to silently drop from the delivery plan.
     present = set(git(repo, "ls-tree", "-r", "--name-only", "-z", head_sha, "--", "skills/").split("\0"))
     owners: dict[str, dict] = {}
     merge_owners: dict[str, dict] = {}
@@ -86,9 +86,9 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int 
         destination = merge_owners if len(parents.split()) > 1 else owners
         paths = git(repo, "diff-tree", "--root", "-m", "--first-parent", "-r",
                     "--no-commit-id", "--no-renames", "--name-only", "-z",
-                    "--diff-filter=ACMRT", sha, "--", "skills/").split("\0")
+                    "--diff-filter=ACDMRT", sha, "--", "skills/").split("\0")
         for path in paths:
-            if path in present and is_skill(path):
+            if is_skill(path):
                 destination.setdefault(path, person)
 
     groups: dict[tuple, dict] = {}
@@ -97,10 +97,12 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int 
         key = (person["email"], person["login"], person["name"])
         groups.setdefault(key, {"author": person, "paths": []})["paths"].append(path)
     return [
-        {"headSha": head_sha, "paths": group["paths"][offset:offset + batch_size],
-         "authors": [group["author"]]}
+        {"headSha": head_sha, "paths": batch, "authors": [group["author"]],
+         **({"deletedPaths": deleted} if deleted else {})}
         for group in groups.values()
         for offset in range(0, len(group["paths"]), batch_size)
+        for batch in [group["paths"][offset:offset + batch_size]]
+        for deleted in [[path for path in batch if path not in present]]
     ]
 
 
@@ -135,7 +137,10 @@ def deliver(batch: dict, secret: str, attempts: int = 20) -> bool:
     expected = set(batch["paths"])
     for attempt in range(attempts):
         try:
-            reply = post(PLATFORM + "/verify", {"headSha": batch["headSha"], "paths": batch["paths"]}, secret)
+            verification = {"headSha": batch["headSha"], "paths": batch["paths"]}
+            if batch.get("deletedPaths"):
+                verification["deletedPaths"] = batch["deletedPaths"]
+            reply = post(PLATFORM + "/verify", verification, secret)
             outcomes = reply.get("outcomes")
             if not isinstance(outcomes, list) or any(not isinstance(row, dict) for row in outcomes):
                 raise ValueError("Verification omitted its outcomes")

@@ -16,7 +16,8 @@ The runner:
 
 1. Collects every changed skill from the complete Git range, without depending
    on file lists in an Actions event or a single Commits API response.
-2. Excludes sync-bot authors/committers, removed files, templates and index files.
+2. Excludes sync-bot authors/committers, templates and index files. Removed source
+   skills remain in the plan and are listed explicitly in `deletedPaths`.
 3. Groups paths by their last non-merge human writer. A maintainer's merge does
    not replace the writer; a file created only in the merge uses its author.
 4. Sends 20 paths per workflow request (the API permits at most 200), with one author and the same requested
@@ -29,6 +30,22 @@ passes. Held proposals need action and fail delivery, as do mismatches, failed
 or unsettled paths, missing outcomes and unknown states. This does not bypass
 any source, accountant or repository review. Independent batches still run
 when one fails, and the final job reports failure.
+
+For a withdrawal, `paths` still includes the removed path and `deletedPaths`
+names it in both the delivery and verification requests. The platform checks
+that the commit belongs to main and that the source is absent both at that
+commit and at current main. It unpublishes the exactly bound skill and retires
+its canonical serving document, preserving its content, ownership and history.
+A matching filename is not sufficient authority to withdraw another skill.
+Network and HTTP errors never count as evidence that a source was deleted.
+Verification requires confirmed unpublished state and a withdrawal receipt.
+Deploy the platform's `deletedPaths` support before enabling this sender change;
+an older verifier cannot confirm a withdrawal and the run must remain red.
+
+The mandatory `compare` check enforces version/date integrity. Human source
+removals are governed by the mandatory `validate` check's Moved/Not moved record
+and the human merge decision; they remain visible as warnings in `compare`.
+The former automated exporter (`--mode sync`) still rejects source removal.
 
 Runs share a `queue: max` concurrency group, without cancelling in-progress work.
 The workflow checks out current `main` after acquiring the queue. It does not
