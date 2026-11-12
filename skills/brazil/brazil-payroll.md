@@ -12,7 +12,7 @@ description: >
 version: 1.1
 jurisdiction: BR
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-12
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -38,7 +38,7 @@ This Guide owns the employee progressive table and employer payroll. Load [br-in
 
 > Reviewed against the cited tax authorities by **Ariane Marrocos** on 2026-06-03.
 
-That attestation belongs to the earlier content. This replacement changes figures and rules and remains an unapproved draft awaiting the accountant's review. It must not be published as an approved update on the strength of that historical statement.
+That statement belongs to the [earlier approved version](https://github.com/openaccountants/openaccountants/blob/157f7d8be741c4c7347a88c8a2970b529d175741/skills/brazil/brazil-payroll.md), preserved with its original attribution. This revision is **Not yet approved** and is published as a source-cited draft. The earlier approval does not cover this text.
 
 ## Rates, bands and thresholds
 
