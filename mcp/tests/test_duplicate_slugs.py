@@ -127,6 +127,12 @@ class DuplicateSlugTests(unittest.TestCase):
         server._index.cache_clear()
         self.assertIn("second", server._index())
 
+    def test_reference_and_readme_documents_are_not_exposed_as_skills(self) -> None:
+        self._write("country/references.md", _skill("country-references", "Sources"))
+        self._write("country/README.md", _skill("country-readme", "Package README"))
+        self._write("country/safe.md", _skill("safe", "Usable skill"))
+        self.assertEqual(set(server._index()), {"safe"})
+
     def test_safe_resolve_rejects_a_symlink_escape(self) -> None:
         with tempfile.TemporaryDirectory() as outside_dir:
             outside = Path(outside_dir) / "outside-skill.md"

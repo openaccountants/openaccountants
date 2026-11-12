@@ -317,6 +317,8 @@ def _catalogue() -> tuple[
     rejected_paths: list[str] = []
     denied: list[str] = []
     for path in sorted(PACKAGES_DIR.rglob("*.md")):
+        if path.name.lower().startswith("readme") or path.name.lower() == "references.md":
+            continue  # repository/package documentation is not a usable skill
         relpath = path.relative_to(PACKAGES_DIR)
         try:
             safe_path = _safe_resolve(PACKAGES_DIR, relpath.as_posix())

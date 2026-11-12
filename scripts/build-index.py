@@ -9,7 +9,7 @@ the repo root:
 {
   "generated_at": "<UTC ISO>",
   "counts": { "guides": N, "jurisdictions": N, "accountant_reviewed": N },
-  "guides": [ { "slug", "path", "name", "jurisdiction", "category", "tier",
+  "guides": [ { "slug", "mcp_slug", "path", "name", "jurisdiction", "category", "tier",
                 "verified_by", "reviewed_by", "tax_year", "last_updated" }, ... ]
 }
 
@@ -52,6 +52,17 @@ KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):[ \t]*(.*)$")
 
 # Jurisdiction values that look like codes get uppercased (MT, US, US-CA, CA-ON).
 CODE_RE = re.compile(r"^[A-Za-z]{2,3}(-[A-Za-z0-9]{1,4})*$")
+SKILL_NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
+
+def mcp_slug(rel_path, name):
+    """Loadable frontmatter identity, distinct from the legacy filename slug."""
+    parts = rel_path.replace("\\", "/").split("/")
+    filename = parts[-1].lower()
+    if (filename.startswith("readme") or filename == "references.md"
+            or any(part.lower() in {"templates", "_templates"} for part in parts)):
+        return None
+    return name if isinstance(name, str) and SKILL_NAME_RE.fullmatch(name) else None
 
 
 def extract_frontmatter(text):
@@ -137,6 +148,7 @@ def build_index():
 
         guides.append({
             "slug": os.path.splitext(os.path.basename(rel_path))[0],
+            "mcp_slug": mcp_slug(rel_path, fields["name"]),
             "path": rel_path,
             "name": fields["name"],
             "jurisdiction": jurisdiction,
@@ -170,6 +182,7 @@ def build_index():
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "counts": {
             "guides": len(guides),
+            "loadable_skill_names": len({g["mcp_slug"] for g in guides if g["mcp_slug"]}),
             "jurisdictions": len(jurisdictions),
             "accountant_reviewed": sum(1 for g in guides if is_reviewed(g)),
         },

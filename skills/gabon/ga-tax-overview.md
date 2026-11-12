@@ -6,7 +6,7 @@ jurisdiction: GA
 category: international
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
-last_updated: 2026-11-01
+last_updated: 2026-11-12
 version: 0.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -38,7 +38,7 @@ Individuals, businesses and advisers starting a Gabon working paper. This overvi
 
 Identify the legal person, actual activity, period, residence and source before choosing a computation. Create separate workpapers for income tax, turnover taxes, salary withholding and social contributions. The country's source text expresses monetary amounts in francs CFA; this pack uses the label XAF for its working examples. Do not mix that currency with a neighbouring country's tax rules.
 
-Route ordinary companies, sector rates, minimum-tax comparison and returns to [corporate income tax](ga-corporate-income-tax.md). Route family shares, annual bands and foreign personal income to [individual income tax](ga-income-tax.md). Route turnover, exemptions, rate lists, input deductions, CSS and imported services to [VAT](ga-vat-gst.md). Route pension/health ceilings and wage deductions to [payroll](ga-payroll-social.md). None of these Guides is a source-completeness certificate.
+Route ordinary companies, sector rates, minimum-tax comparison and returns to [corporate income tax](ga-corporate-income-tax.md). Route family shares, annual bands and foreign personal income to [individual income tax](gabon-income-tax.md). Route turnover, exemptions, rate lists, input deductions, CSS and imported services to [VAT](ga-vat-gst.md). Route pension/health ceilings and wage deductions to [payroll](ga-payroll-social.md). None of these Guides is a source-completeness certificate.
 
 ## Deadlines and filing
 
