@@ -149,6 +149,9 @@ jobs:
         env:
           BASE_REF: ${{ github.base_ref }}
           EVENT_NAME: ${{ github.event_name }}
+          # Line 12 of validate-guides.py: checks the website's signed proof on an
+          # accountant-review PR. Empty on forks, so such a PR from a fork fails.
+          REVIEW_PROOF_SECRET: ${{ secrets.REVIEW_PROOF_SECRET }}
         run: |
           if [ "$EVENT_NAME" = "pull_request" ]; then
             git fetch origin "$BASE_REF" --depth 50

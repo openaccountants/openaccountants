@@ -1,0 +1,134 @@
+# Turn approvals that accountants give signed in on openaccountants.com into
+# pull requests, and let them merge on their own once every check passes.
+#
+# How it works (docs/QUALITY-TIERS.md, "Approving on the website"):
+#   1. An approved accountant reviews a skill on the website, claim by claim,
+#      and submits. The website keeps a review record.
+#   2. Every 5 minutes this workflow asks the website for submitted reviews
+#      (GET /api/reviews/pending, bearer REVIEW_PROOF_SECRET). For each one whose
+#      file on main is still the file the accountant reviewed, it opens ONE pull
+#      request from branch accountant-review/<id>: the skill with `tier: 1`,
+#      `reviewed_by`, `reviewed_on` and the accountant's fixes. The commit is
+#      github-actions[bot]'s, never the accountant's.
+#   3. validate.yml checks the website's signed proof for that review
+#      (scripts/accountant_review.py via validate-guides.py line 12). The PR is
+#      approved by this workflow and set to auto-merge, so it merges only when
+#      the required checks (validate, unit-tests, guard-derived-trees) pass.
+#   4. The merge to main runs ingest-to-platform.yml; the website attaches the
+#      name only if the merged file is byte for byte the approved one.
+#
+# Secrets (founder sets them; see docs/QUALITY-TIERS.md):
+#   REVIEW_PROOF_SECRET  repository secret (Settings > Secrets and variables >
+#                        Actions > Repository secrets), the same value as the
+#                        website's REVIEW_PROOF_SECRET. Repository level, not
+#                        the production environment, because validate.yml
+#                        needs it on pull requests too.
+#   DERIVED_BUILD_TOKEN  already in the production environment (rebuild-derived.yml).
+#                        Opens the PR, so the PR starts the required checks
+#                        (a PR opened with GITHUB_TOKEN starts none).
+# Repository setting: Settings > Actions > General > Workflow permissions >
+#   "Allow GitHub Actions to create and approve pull requests" must be ON for the
+#   approve job. Without it the PR waits for a maintainer's approval instead.
+
+name: Accountant review
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: accountant-review
+  cancel-in-progress: false
+
+jobs:
+  open:
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    outputs:
+      prs: ${{ steps.open.outputs.prs }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Stage submitted reviews (no write token here)
+        id: stage
+        env:
+          REVIEW_PROOF_SECRET: ${{ secrets.REVIEW_PROOF_SECRET }}
+        run: |
+          if [ -z "$REVIEW_PROOF_SECRET" ]; then
+            echo "::notice::REVIEW_PROOF_SECRET is not set. Website approvals are off."
+            exit 0
+          fi
+          python3 scripts/accountant_review.py stage --out "$RUNNER_TEMP/reviews"
+
+      - name: Open one pull request per review (git and gh only)
+        id: open
+        env:
+          GH_TOKEN: ${{ secrets.DERIVED_BUILD_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          : > "$RUNNER_TEMP/opened.txt"
+          shopt -s nullglob
+          dirs=("$RUNNER_TEMP"/reviews/*/)
+          if [ ${#dirs[@]} -eq 0 ]; then echo "prs=[]" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ -z "$GH_TOKEN" ]; then echo "::error::DERIVED_BUILD_TOKEN is not set."; exit 1; fi
+          gh label create accountant-review --color 0e8a16 \
+            --description "An approval an accountant gave signed in on openaccountants.com" >/dev/null 2>&1 || true
+          MAIN_SHA=$(git rev-parse HEAD)
+          AUTH=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          for d in "${dirs[@]}"; do
+            id=$(basename "$d")
+            [[ "$id" =~ ^[0-9a-f-]{36}$ ]] || continue
+            branch="accountant-review/$id"
+            path=$(cat "$d/path")
+            if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+              echo "Branch $branch exists already; skipping."
+              continue
+            fi
+            # Build the commit without touching the checkout: main plus this one file.
+            blob=$(git hash-object -w "$d/file")
+            export GIT_INDEX_FILE="$RUNNER_TEMP/index-$id"
+            git read-tree "$MAIN_SHA"
+            git update-index --add --cacheinfo "100644,$blob,$path"
+            tree=$(git write-tree)
+            unset GIT_INDEX_FILE
+            commit=$(GIT_AUTHOR_NAME="github-actions[bot]" GIT_AUTHOR_EMAIL="41898282+github-actions[bot]@users.noreply.github.com" \
+              GIT_COMMITTER_NAME="github-actions[bot]" GIT_COMMITTER_EMAIL="41898282+github-actions[bot]@users.noreply.github.com" \
+              git commit-tree "$tree" -p "$MAIN_SHA" -m "Record an accountant's approval from openaccountants.com review $id")
+            git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $AUTH" \
+              push origin "$commit:refs/heads/$branch"
+            url=$(gh pr create --base main --head "$branch" --title "$(cat "$d/title")" \
+              --body-file "$d/body.md" --label accountant-review)
+            gh pr merge "$url" --auto --merge || echo "::warning::Auto-merge could not be enabled on $url"
+            echo "$url" >> "$RUNNER_TEMP/opened.txt"
+            echo "Opened $url"
+          done
+          echo "prs=$(jq -c -R -s 'split("\n") | map(select(length > 0))' "$RUNNER_TEMP/opened.txt")" >> "$GITHUB_OUTPUT"
+
+  approve:
+    needs: open
+    if: needs.open.outputs.prs != '' && needs.open.outputs.prs != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Approve (the merge still waits for the proof check)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PRS: ${{ needs.open.outputs.prs }}
+        run: |
+          for url in $(jq -r '.[]' <<<"$PRS"); do
+            gh pr review "$url" --approve \
+              --body "A signed review record from openaccountants.com is behind this change. The validate check verifies it before merge." \
+              || echo "::warning::Could not approve $url. Turn on 'Allow GitHub Actions to create and approve pull requests', or a maintainer approves it."
+          done
