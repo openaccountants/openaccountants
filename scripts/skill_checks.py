@@ -844,10 +844,11 @@ def _jurisdiction_dir_codes():
     return _jurisdiction_dirs
 
 
-def check_jurisdiction_body(path, text, fm):
-    """(n) path, frontmatter and body agree on the place. A US state file carrying
-    another code, or a skill written in another jurisdiction's currency and
-    authorities (Indiana with rupees), warns."""
+def check_jurisdiction_path(path, text, fm):
+    """An explicit country/state path must agree with the declared jurisdiction.
+
+    Unlike body-language heuristics, this is an objective identity check.
+    """
     code = str(fm.get("jurisdiction") or "").strip().upper()
     rel = rel_path(path)
     problems = []
@@ -861,7 +862,15 @@ def check_jurisdiction_body(path, text, fm):
         expected = _jurisdiction_dir_codes().get(folder)
         if expected and code and code not in NON_PLACE_JURISDICTIONS and code.split("-")[0] != expected:
             problems.append(f"path says {expected}, frontmatter says {code}")
-    home = expected if state else _home(path, fm)
+    return problems
+
+
+def check_jurisdiction_body(path, text, fm):
+    """(n) Warn when body currency/authority terms contradict the stated place."""
+    rel = rel_path(path)
+    state = re.match(r"skills/us/states/([a-z]{2})/", rel)
+    problems = check_jurisdiction_path(path, text, fm)
+    home = "US-" + state.group(1).upper() if state else _home(path, fm)
     if not home or home in NON_PLACE_JURISDICTIONS or _is_cross_border(path, fm):
         return problems
     family = home.split("-")[0]
@@ -1177,7 +1186,8 @@ def check_domain_known(path, text, fm):
     return []
 
 
-#: Warnings in both modes, outside the register. Letters follow CHECKS.
+#: Outside the register. Heuristics warn in both modes; explicit path identity
+#: is blocking on changed skills. Letters follow CHECKS.
 LESSON_CHECKS = [
     ("k", "read_date_evidence", check_read_date_evidence),
     ("l", "sources_columns", check_sources_columns),
@@ -1187,6 +1197,7 @@ LESSON_CHECKS = [
     ("p", "type_declared", check_type_declared),
     ("q", "figure_in_library", check_figure_in_library),
     ("r", "domain_known", check_domain_known),
+    ("s", "jurisdiction_path", check_jurisdiction_path),
 ]
 
 #: (letter in the standard's list, column name, function). Order is the report order.

@@ -408,7 +408,7 @@ def deliverable_problems(paths, read=_read_or_none, size=_size_or_none):
         if not is_delivered_skill(rel):
             continue  # READMEs, references, templates and the generated lists
         text = read(rel)
-        if text:
+        if text is not None:
             description = str(skill_checks.read_frontmatter(text).get("description") or "").strip()
             if len(description) < PLATFORM_MIN_DESCRIPTION_CHARS:
                 problems.append(
@@ -666,6 +666,10 @@ def is_pr_error(name, scope, dated_by_tax_year, content_untouched):
 
     The fixed core is the same in tax and non-tax domains. Body checks apply
     only when the text changes; label checks always apply."""
+    # Identity applies to every skill type, including metadata-only edits. Do
+    # not let a country code such as ID (Indonesia) masquerade as US-ID (Idaho).
+    if name == "jurisdiction_path":
+        return True
     label_check = name in ("tier_honest", "reviewed_on")
     return name in PR_ERROR_CHECKS and (label_check or not content_untouched)
 
